@@ -30,7 +30,7 @@ async function s(e, t, s) {
     (0, a.mMO)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("10614"), n.e("28936"), n.e("94857"), n.e("3183"), n.e("45586"), n.e("17122"), n.e("13696"), n.e("10117"), n.e("94682"), n.e("12236")]).then(n.bind(n, 779735));
+      } = await Promise.all([n.e("10614"), n.e("28936"), n.e("94857"), n.e("3183"), n.e("45586"), n.e("20545"), n.e("10253"), n.e("13696"), n.e("10117"), n.e("94682"), n.e("12236")]).then(n.bind(n, 779735));
       return n => (0, r.jsx)(t, {
         menu: h,
         reportType: e,

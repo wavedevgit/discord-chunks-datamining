@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 416528, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => M
+  A: () => L
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function D(e) {
     guildId: n
   } = e, l = (0, c.yK)([S.A, I.A], () => {
     let e = Date.now();
-    return o()(S.A.getSpeakers()).map(e => I.A.getParticipant(t, e)).filter(e => null != e && e.type === P.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return o()(S.A.getSpeakers()).map(e => I.A.getParticipant(t, e)).filter(e => null != e && e.type === P.lp.USER && e.speaking && !(0, O.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === l.length ? null : (0, r.jsx)("div", {
     className: R.$U,
@@ -60,15 +60,15 @@ function D(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     channel: t,
     isChatOpen: n
   } = e, i = l.useRef(null), {
     analyticsLocations: a
-  } = (0, f.Ay)(h.A.VOICE_CHANNEL_HEADER), o = t.id, {
+  } = (0, g.Ay)(p.A.VOICE_CHANNEL_HEADER), o = t.id, {
     voiceParticipantsHidden: u,
-    selectedParticipant: _,
+    selectedParticipant: O,
     userParticipantCount: C,
     participantsListOpen: S
   } = (0, c.cf)([I.A], () => ({
@@ -77,10 +77,10 @@ function M(e) {
     userParticipantCount: I.A.getUserParticipantCount(o),
     participantsListOpen: I.A.getParticipantsListOpen(o)
   }), [o]), w = t.isGuildVoiceOrThread() && !n, {
-    hasParticipantsPanel: M
+    hasParticipantsPanel: L
   } = (0, T.A)({
     location: "ChannelCallHeaderToolbar"
-  }), L = !S && M && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
+  }), M = !S && L && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
     enabled: k,
     inInbox: G
   } = A.A.useExperiment({
@@ -92,22 +92,22 @@ function M(e) {
   }, "current-speaker")), U.push((0, r.jsx)(m.A, {
     className: R.x6,
     channelId: o
-  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === P.lp.STREAM && (U.push((0, r.jsx)(O.A, {
+  }, "clips-enabled-indicator")), (null == O ? true : O.type) === P.lp.STREAM && (U.push((0, r.jsx)(_.A, {
     className: R.x6,
-    participant: _
+    participant: O
   }, "warning")), U.push((0, r.jsx)(b.A, {
-    size: g.Ay.Sizes.LARGE,
+    size: f.Ay.Sizes.LARGE,
     className: R.x6,
-    participant: _,
+    participant: O,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == _ ? true : _.type) === P.lp.USER && U.push((0, r.jsx)(j.A, {
+  }, "live-indicator"))), (null == O ? true : O.type) === P.lp.USER && U.push((0, r.jsx)(x.A, {
     className: R.x6,
-    userId: _.id
-  }, "video-warning")), u && !M && U.push((0, r.jsx)(d.YNO, {
+    userId: O.id
+  }, "video-warning")), u && !L && U.push((0, r.jsx)(d.YNO, {
     targetElementRef: i,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(v.A, {
+    renderPopout: () => (0, r.jsx)(j.A, {
       children: (0, r.jsx)(N.A, {
         channel: t
       })
@@ -153,18 +153,18 @@ function M(e) {
     }
   }, "call-members-popout")), k && !G && U.push((0, r.jsx)(y.A, {
     className: R.x6
-  }, "for-later")), L && U.push((0, r.jsx)(E.A, {
+  }, "for-later")), M && U.push((0, r.jsx)(E.A, {
     className: s()(R.x6, {
       [R.Lt]: n
     }),
-    onClick: () => p.A.toggleParticipantsList(t.id, !S)
-  }, "participants-list-button")), w && U.push((0, r.jsx)(x.V, {
+    onClick: () => h.A.toggleParticipantsList(t.id, !S)
+  }, "participants-list-button")), w && U.push((0, r.jsx)(v.V, {
     channelId: t.id,
     className: s()(R.x6, {
       [R.Lt]: S
     }),
     disabled: n
-  }, "chat-spacer")), (0, r.jsx)(f.f5, {
+  }, "chat-spacer")), (0, r.jsx)(g.f5, {
     value: a,
     children: U
   })

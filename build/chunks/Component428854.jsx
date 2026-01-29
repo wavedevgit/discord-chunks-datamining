@@ -1,8 +1,8 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 428854, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g,
-  R: () => _
+  R: () => p
 }), require("./638769.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk64313 = require("./64313.js"),
   Chunk380587 = require("./380587.jsx"),
   Chunk589641 = require("./589641.jsx"),
-  _ = ((r = {}).CONTENT_AND_SOCIAL = "CONTENT_AND_SOCIAL", r.DATA_AND_PRIVACY = "DATA_AND_PRIVACY", r);
+  p = ((r = {}).CONTENT_AND_SOCIAL = "CONTENT_AND_SOCIAL", r.DATA_AND_PRIVACY = "DATA_AND_PRIVACY", r);
 let m = {
   CONTENT_AND_SOCIAL: [{
     order: 100,

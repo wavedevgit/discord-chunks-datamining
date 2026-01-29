@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 447253, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -15,13 +15,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk211170 = require("./211170.js");
 
-function f(e) {
+function g(e) {
   let {
     guildId: t,
     animate: n
   } = e, l = (0, a.bG)([u.A], () => u.A.getGuild(t), [t]), i = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
   return null == l ? (0, r.jsx)("div", {
-    className: s()(h.VL, h.zU),
+    className: s()(p.VL, p.zU),
     children: (0, r.jsx)(o.EpV, {
       color: "currentColor"
     })
@@ -31,12 +31,12 @@ function f(e) {
     size: c.A.Sizes.MINI,
     iconSize: i,
     lossless: true,
-    className: h.VL,
+    className: p.VL,
     tabIndex: false
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     folderNode: t,
     hovered: n,
@@ -44,19 +44,19 @@ function g(e) {
   } = e, {
     children: i
   } = t, a = n && l, c = (0, r.jsx)("div", {
-    className: h.hJ,
+    className: p.hJ,
     children: (0, r.jsx)("div", {
-      className: h.Eh,
+      className: p.Eh,
       children: (0, r.jsx)(o.sjq, {
         size: "sm",
         color: "currentColor"
       })
     })
   }), u = (0, r.jsx)("div", {
-    className: h.qJ,
+    className: p.qJ,
     children: (0, r.jsx)("div", {
-      className: h.jg,
-      children: i.slice(0, 4).map(e => (0, r.jsx)(f, {
+      className: p.jg,
+      children: i.slice(0, 4).map(e => (0, r.jsx)(g, {
         guildId: e.id,
         animate: n
       }, e.id))
@@ -65,8 +65,8 @@ function g(e) {
   return (0, r.jsxs)("div", {
     "aria-hidden": true,
     className: s()({
-      [h.NG]: a,
-      [h.yd]: !a
+      [p.NG]: a,
+      [p.yd]: !a
     }),
     children: [!a && c, u]
   })
@@ -80,18 +80,18 @@ function m(e) {
     sorting: a,
     mediaState: c,
     mentionCount: u = 0,
-    isMentionLowImportance: f,
+    isMentionLowImportance: g,
     tooltipName: m,
     folderGroupId: b,
     folderButtonContent: A,
     onClick: y,
-    onContextMenu: _,
-    onHoverChange: O,
-    onKeyDown: j,
-    treeItemProps: v
+    onContextMenu: O,
+    onHoverChange: _,
+    onKeyDown: x,
+    treeItemProps: j
   } = e, {
-    onFocus: x
-  } = v, E = function(e, t) {
+    onFocus: v
+  } = j, E = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -107,14 +107,14 @@ function m(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(v, ["onFocus"]), {
+  }(j, ["onFocus"]), {
     "aria-setsize": C,
     "aria-posinset": S
   } = e, [I, N] = l.useState(false), T = l.useCallback(() => {
-    a || N(true), null == O || O(true)
-  }, [a, O]), P = l.useCallback(() => {
-    a || N(false), null == O || O(false)
-  }, [a, O]), w = s || null == c ? null : (0, d.oi)(c), R = !s && u > 0 ? (0, d.wN)(u, f ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+    a || N(true), null == _ || _(true)
+  }, [a, _]), P = l.useCallback(() => {
+    a || N(false), null == _ || _(false)
+  }, [a, _]), w = s || null == c ? null : (0, d.oi)(c), R = !s && u > 0 ? (0, d.wN)(u, g ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
   return (0, r.jsx)(o.vN3, {
     children: (0, r.jsxs)(o.DUT, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -134,13 +134,13 @@ function m(e) {
       }
       return e
     }({
-      className: h.H3,
+      className: p.H3,
       onClick: y,
-      onContextMenu: _,
+      onContextMenu: O,
       onMouseEnter: T,
       onMouseLeave: P,
-      onKeyDown: j,
-      onFocus: x,
+      onKeyDown: x,
+      onFocus: v,
       focusProps: {
         enabled: false
       }
@@ -151,7 +151,7 @@ function m(e) {
       "aria-expanded": s,
       "aria-owns": b,
       children: [(0, r.jsx)(o.AC4, {
-        children: p.intl.formatToPlainString(p.t["90/DwM"], {
+        children: h.intl.formatToPlainString(h.t["90/DwM"], {
           folderName: m,
           mentions: u
         })
@@ -164,11 +164,11 @@ function m(e) {
           width: (0, o.o6S)(u)
         },
         children: (0, r.jsx)("div", {
-          className: h.vA,
+          className: p.vA,
           children: null != A ? (0, r.jsx)("div", {
-            className: h.hJ,
+            className: p.hJ,
             children: A
-          }) : (0, r.jsx)(g, {
+          }) : (0, r.jsx)(f, {
             folderNode: i,
             hovered: I,
             sorting: a

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 667285, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -25,26 +25,26 @@ function m(e) {
     children: A
   } = e, y = (0, l.bG)([c.A], () => c.A.isBlocked(b.getRecipientId()));
   (0, a.A)(b.id);
-  let _ = (0, o.A)(b.id),
-    O = b.isSystemDM(),
-    j = y && !O && !b.isMultiUserDM(),
-    v = {};
-  if (O) {
-    let e = _ ? g.intl.string(g.t["+KSnWX"]) : g.intl.string(g.t.hvVgAZ);
-    v.message = g.intl.string(g.t.Bt2N7D), v.subtitle = g.intl.string(g.t["n/Vzkw"]), v.buttonText = e, v.buttonIcon = _ ? i.tfB : true, v.onButtonClick = () => {
-      if (_) {
-        open(f.Do), u.default.track(h.HAw.CHANGE_LOG_CTA_CLICKED, {
+  let O = (0, o.A)(b.id),
+    _ = b.isSystemDM(),
+    x = y && !_ && !b.isMultiUserDM(),
+    j = {};
+  if (_) {
+    let e = O ? f.intl.string(f.t["+KSnWX"]) : f.intl.string(f.t.hvVgAZ);
+    j.message = f.intl.string(f.t.Bt2N7D), j.subtitle = f.intl.string(f.t["n/Vzkw"]), j.buttonText = e, j.buttonIcon = O ? i.tfB : true, j.onButtonClick = () => {
+      if (O) {
+        open(g.Do), u.default.track(p.HAw.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
-          target: f.Do
+          target: g.Do
         });
         return
       }
-      open(d.A.getArticleURL(h.MVz.SYSTEM_DMS))
-    }, v.imageSrc = n(388668)
-  } else j && (v.message = g.intl.string(g.t["9T6N5/"]), v.buttonText = g.intl.string(g.t.XyHpKH), v.onButtonClick = () => {
+      open(d.A.getArticleURL(p.MVz.SYSTEM_DMS))
+    }, j.imageSrc = n(388668)
+  } else x && (j.message = f.intl.string(f.t["9T6N5/"]), j.buttonText = f.intl.string(f.t.XyHpKH), j.onButtonClick = () => {
     s.A.unblockUser(b.getRecipientId())
   });
-  return (0, r.jsx)(p.A, (t = function(e) {
+  return (0, r.jsx)(h.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -61,7 +61,7 @@ function m(e) {
       })
     }
     return e
-  }({}, v), m = m = {
+  }({}, j), m = m = {
     children: A
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
     var n = Object.keys(e);

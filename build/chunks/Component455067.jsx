@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 455067, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,23 +16,23 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk958404 = require("./958404.js");
 
-function f(e) {
+function g(e) {
   var t;
   let {
     joinRequest: n,
     guild: o
   } = e, c = (0, l.bG)([u.default], () => u.default.getUser(n.userId));
   return (0, r.jsxs)("div", {
-    className: h.I8,
+    className: p.I8,
     children: [(0, r.jsxs)("div", {
-      className: h.Ov,
+      className: p.Ov,
       children: [null != o && (0, r.jsxs)("div", {
-        className: h.yB,
+        className: p.yB,
         children: [(0, r.jsx)(s.A, {
           guild: o,
           active: true,
           size: s.A.Sizes.SMOL,
-          className: h.$f
+          className: p.$f
         }), (0, r.jsx)(i.Heading, {
           variant: "heading-sm/semibold",
           color: "text-strong",
@@ -41,7 +41,7 @@ function f(e) {
       }), null != c && (0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
         color: "text-strong",
-        children: p.intl.format(p.t.jDV3i6, {
+        children: h.intl.format(h.t.jDV3i6, {
           username: c.globalName
         })
       })]
@@ -49,9 +49,9 @@ function f(e) {
       let t = e.field_type === a.rX.MULTIPLE_CHOICE && null != e.response ? e.choices[e.response] : e.response;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("hr", {
-          className: h.g2
+          className: p.g2
         }), (0, r.jsxs)("div", {
-          className: h.fs,
+          className: p.fs,
           children: [(0, r.jsx)(i.Text, {
             variant: "text-xs/semibold",
             color: "text-muted",
@@ -67,7 +67,7 @@ function f(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     channel: t
   } = e, {
@@ -77,11 +77,11 @@ function g(e) {
   } = (0, o.A)(t.id);
   return (0, r.jsx)(d.Ay, {
     channelId: t.id,
-    className: h.kL,
+    className: p.kL,
     children: null != l && null != l.formResponses ? (0, r.jsxs)("div", {
-      className: h.KJ,
+      className: p.KJ,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(f, {
+        children: (0, r.jsx)(g, {
           guild: s,
           joinRequest: l
         })

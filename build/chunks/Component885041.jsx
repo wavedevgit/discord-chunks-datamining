@@ -147,9 +147,9 @@ function tl(e) {
 require("./115036.js"), require("./943577.js"), require("./131319.js"), require("./794383.js"), require("./845618.js"), require("./712687.js"), require("./328968.js"), require("./67480.js"), require("./874486.js"), require("./162605.js"), require("./2866.js"), require("./628965.js"), require("./836602.js"), require("./833336.js"), require("./555337.js"), require("./863036.js"), require("./291731.js"), require("./176360.js"), require("./972937.js"), require("./279061.js"), require("./750128.js"), require("./921955.js");
 let ta = false;
 (0, Chunk861638.as)(), Chunk311907.Ay.initialize(), Chunk985986.A.loadServer(), Chunk723702.isPlatformEmbedded && (Chunk837921.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
-  eJ.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
+  e$.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
 }), Chunk837921.Ay.on("LAUNCH_APPLICATION", (e, t) => {
-  let n = e$.A.getActiveLibraryApplication(t);
+  let n = eJ.A.getActiveLibraryApplication(t);
   e3.playApplication(t, n, {
     analyticsParams: {
       location: {
@@ -228,7 +228,7 @@ let ts = (0, Chunk159084.z)(e => {
       let {
         match: e
       } = this.props;
-      null != e && null != e.params.inviteCode && (0, J.q)({
+      null != e && null != e.params.inviteCode && (0, $.q)({
         code: e.params.inviteCode
       })
     }
@@ -341,10 +341,10 @@ let tg = [{
       action: i
     } = t.params;
     return e7.A.whenInitialized(() => {
-      e$.A.whenInitialized(() => {
+      eJ.A.whenInitialized(() => {
         switch (i) {
           case "launch": {
-            let e = e$.A.getActiveLibraryApplication(n);
+            let e = eJ.A.getActiveLibraryApplication(n);
             if (null == e) return;
             e3.playApplication(e.id, e, {
               analyticsParams: {
@@ -360,7 +360,7 @@ let tg = [{
             e6.A.whenInitialized(() => g.q1(n));
             break;
           case "uninstall": {
-            let e = e$.A.getActiveLibraryApplication(n);
+            let e = eJ.A.getActiveLibraryApplication(n);
             if (null == e) return;
             (0, u.z)(e.id, e.branchId, te.ThZ.URI_SCHEME)
           }
@@ -475,7 +475,7 @@ let tg = [{
       guildEventId: i
     } = t.params;
     return (0, X.B)(() => {
-      (0, $.uR)({
+      (0, J.uR)({
         eventId: i
       })
     }), (0, r.jsx)(a.rd, {

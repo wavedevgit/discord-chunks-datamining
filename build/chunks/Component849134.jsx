@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 849134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -17,10 +17,10 @@ function u(e) {
     onRender: n,
     onRequestClose: u,
     onActionClick: d,
-    onActionMouseDown: p,
-    position: h = "right",
-    align: f = "top",
-    caretConfig: g = {
+    onActionMouseDown: h,
+    position: p = "right",
+    align: g = "top",
+    caretConfig: f = {
       align: "start"
     },
     skuImageDetails: m,
@@ -46,11 +46,11 @@ function u(e) {
   return (0, r.jsx)(i.AM, {
     size: "lg",
     shouldShow: true,
-    position: h,
-    caretConfig: g,
+    position: p,
+    caretConfig: f,
     gradientColor: "purple",
     alignmentStrategy: "edge",
-    align: f,
+    align: g,
     badge: {
       type: "new",
       variant: "default"
@@ -60,7 +60,7 @@ function u(e) {
       text: a.intl.string(a.t.RzWDqY),
       variant: "primary",
       onClick: d,
-      onMouseDown: p
+      onMouseDown: h
     }],
     targetElementRef: t,
     title: null != b ? b : a.intl.string(a.t.Ylu2JM),

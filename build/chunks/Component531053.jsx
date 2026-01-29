@@ -1,9 +1,9 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 531053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => O,
-  g4: () => v,
-  qv: () => j
+  Ay: () => _,
+  g4: () => j,
+  qv: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -36,14 +36,14 @@ function b(e) {
 function A(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return o()(t.type !== p.PJ.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
+  return o()(t.type !== h.PJ.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
     accept: e,
-    canDrop: e => e.nodeId !== t.id && (!r || e.type !== p.PJ.FOLDER || t.type !== p.PJ.FOLDER) && (e.type !== p.PJ.FOLDER || null == t.parentId),
+    canDrop: e => e.nodeId !== t.id && (!r || e.type !== h.PJ.FOLDER || t.type !== h.PJ.FOLDER) && (e.type !== h.PJ.FOLDER || null == t.parentId),
     drop(e) {
       let {
         nodeId: l
       } = e;
-      r && t.type !== p.PJ.FOLDER && d.default.track(f.HAw.GUILD_FOLDER_CREATED), u.A.moveById(l, t.id, n, r)
+      r && t.type !== h.PJ.FOLDER && d.default.track(g.HAw.GUILD_FOLDER_CREATED), u.A.moveById(l, t.id, n, r)
     },
     collect: e => ({
       canDrop: e.canDrop(),
@@ -58,25 +58,25 @@ function y(e) {
     targetNode: n,
     combine: i,
     below: s
-  } = e, a = l.useMemo(() => A([p.PJ.GUILD, p.PJ.FOLDER], n, s, i), [n, s, i]), [{
+  } = e, a = l.useMemo(() => A([h.PJ.GUILD, h.PJ.FOLDER], n, s, i), [n, s, i]), [{
     canDrop: o,
     isOver: u
-  }, d] = (0, c.H)(a), h = b([
+  }, d] = (0, c.H)(a), p = b([
     [o, m.OP],
     [u, m.NQ]
   ]);
   return (0, r.jsx)("div", {
     ref: e => {
-      h.current = e, d(e)
+      p.current = e, d(e)
     },
-    "data-dnd-name": g.intl.formatToPlainString(g.t["A5aDw+"], {
+    "data-dnd-name": f.intl.formatToPlainString(f.t["A5aDw+"], {
       itemName: t
     }),
     className: m.aC
   })
 }
 
-function _(e) {
+function O(e) {
   let {
     name: t,
     targetNode: n,
@@ -84,7 +84,7 @@ function _(e) {
   } = e, [{
     canDrop: a,
     isOver: o
-  }, u] = (0, c.H)(() => A([p.PJ.GUILD], n, true, true));
+  }, u] = (0, c.H)(() => A([h.PJ.GUILD], n, true, true));
   l.useEffect(() => {
     null == i || i(o)
   }, [i, o]);
@@ -92,7 +92,7 @@ function _(e) {
     [a, m.OP],
     [o, m.NQ]
   ]);
-  return (0, r.jsx)(h.A, {
+  return (0, r.jsx)(p.A, {
     text: t,
     shouldShow: o,
     forceOpen: o,
@@ -101,14 +101,14 @@ function _(e) {
       ref: e => {
         d.current = e, u(e)
       },
-      "data-dnd-name": g.intl.formatToPlainString(g.t.qiQ0QI, {
+      "data-dnd-name": f.intl.formatToPlainString(f.t.qiQ0QI, {
         itemName: t
       }),
       className: s()(m.dw, {})
     })
   })
 }
-let O = Chunk64700.memo(function(e) {
+let _ = Chunk64700.memo(function(e) {
   let {
     name: t,
     targetNode: n,
@@ -123,7 +123,7 @@ let O = Chunk64700.memo(function(e) {
       name: t,
       targetNode: n,
       below: i
-    }), a ? (0, r.jsx)(_, {
+    }), a ? (0, r.jsx)(O, {
       name: t,
       targetNode: n,
       onDragOverChanged: s
@@ -131,14 +131,14 @@ let O = Chunk64700.memo(function(e) {
   })
 });
 
-function j(e) {
+function x(e) {
   let {
     name: t,
     targetNode: n
   } = e, [{
     canDrop: l,
     isOver: i
-  }, s] = (0, c.H)(() => A([p.PJ.GUILD], n, true, true)), a = b([
+  }, s] = (0, c.H)(() => A([h.PJ.GUILD], n, true, true)), a = b([
     [i, m.a7]
   ]), o = b([
     [i, m.NQ],
@@ -161,7 +161,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     children: t
   } = e, [, n] = (0, c.H)({

@@ -1,7 +1,7 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 742860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => Z
+  A: () => $
 }), require("./896048.js"), require("./228524.js"), require("./801541.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -328,7 +328,7 @@ function X(e) {
     })]
   })
 }
-async function $(e, t, n, a) {
+async function Z(e, t, n, a) {
   (0, T.vv)(e) ? await (0, P.e0)(e, {
     questContent: t,
     questContentCTA: n,
@@ -344,7 +344,7 @@ async function $(e, t, n, a) {
     sourceQuestContent: a
   })
 }
-let Z = Chunk64700.forwardRef(function(e, t) {
+let $ = Chunk64700.forwardRef(function(e, t) {
   var n;
   let {
     children: r,
@@ -361,7 +361,7 @@ let Z = Chunk64700.forwardRef(function(e, t) {
     launchInGameActivity: x
   } = (0, A.zW)(p), g = (0, E.vA)(p), f = l.useCallback(async () => {
     let e = g ? S.Cy.START_QUEST : S.Cy.ACCEPT_QUEST;
-    await $(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
+    await Z(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
   }, [p, x, g]), b = (null == (n = p.userStatus) ? true : n.enrolledAt) != null, j = u && m;
   return (0, a.jsxs)(s.animated.div, {
     "aria-hidden": !j,

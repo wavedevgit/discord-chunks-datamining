@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 336018, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 336018, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   w: () => o
 });
@@ -10,9 +10,9 @@ var Chunk419954 = require("./419954.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zD)(Chunk780964.X.ADVANCED_DEVELOPER_MODE, {
-  useTitle: () => a.intl.string(a.t.ObIb1Q),
-  useSubtitle: () => a.intl.format(a.t["CY6q/Q"], {
-    apiDocsUrl: u.X7G.API_DOCS
+  useTitle: () => u.intl.string(u.t.ObIb1Q),
+  useSubtitle: () => u.intl.format(u.t["CY6q/Q"], {
+    apiDocsUrl: a.X7G.API_DOCS
   }),
   useValue: Chunk253932.Q_.useSetting,
   setValue: Chunk253932.Q_.updateSetting,

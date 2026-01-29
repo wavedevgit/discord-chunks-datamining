@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 157207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,11 +14,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk305711 = require("./305711.js");
 
-function h(e) {
+function p(e) {
   let {
     onOpenClips: t,
     lastClipsSession: n,
-    closePopout: h
+    closePopout: p
   } = e;
   return (l.useEffect(() => () => {
     (0, c.jA)()
@@ -29,12 +29,12 @@ function h(e) {
       hotspot_location: o._2.CLIPS_CHANNEL_ATTACH_REMINDER
     }
   }), null == n) ? null : (0, r.jsxs)("div", {
-    className: p.WG,
+    className: h.WG,
     children: [(0, r.jsx)("div", {
-      className: p.Yt,
+      className: h.Yt,
       children: (0, r.jsx)(u.A, {})
     }), (0, r.jsx)(s.Heading, {
-      className: p.wx,
+      className: h.wx,
       color: "text-strong",
       variant: "heading-md/extrabold",
       children: d.intl.format(d.t["+qxkzC"], {
@@ -42,19 +42,19 @@ function h(e) {
       })
     }), (0, r.jsx)(s.Text, {
       color: "text-default",
-      className: p.__invalid_content,
+      className: h.__invalid_content,
       variant: "text-sm/medium",
       children: d.intl.format(d.t["7XX0/X"], {
         applicationName: n.applicationName
       })
     }), (0, r.jsx)("div", {
-      className: p.NC,
+      className: h.NC,
       children: (0, r.jsxs)(s.ButtonGroup, {
         children: [(0, r.jsx)(s.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["7r5Z19"]),
           onClick: function() {
-            (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), h()
+            (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), p()
           }
         }), (0, r.jsx)(s.Button, {
           variant: "primary",

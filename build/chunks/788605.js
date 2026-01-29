@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 788605, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 788605, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  p: () => T
+  p: () => d
 });
 var Chunk311907 = require("./311907.js"),
   Chunk684013 = require("./684013.js"),
@@ -10,20 +10,20 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk419954.Hn)(Chunk780964.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
+let d = (0, Chunk419954.Hn)(Chunk780964.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
   fieldLayout: "horizontal",
   useTitle: () => o.intl.string(o.t.swsWWC),
   useValue: () => (0, n.bG)([r.default], () => r.default.getDisplayUserMode()),
-  setValue: t => {
-    l.A.setDisplayUserMode(t)
+  setValue: e => {
+    l.A.setDisplayUserMode(e)
   },
   useOptions: () => [{
     id: "always",
     label: o.intl.string(o.t.nBmDrT),
-    value: a.f5z.ALWAYS
+    value: u.f5z.ALWAYS
   }, {
     id: "speaking",
     label: o.intl.string(o.t["2OvIZY"]),
-    value: a.f5z.ONLY_WHILE_SPEAKING
+    value: u.f5z.ONLY_WHILE_SPEAKING
   }]
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 187360, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,19 +51,19 @@ function m(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = l.useRef(null), [b, A] = (0, i.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [y, _] = l.useState(false);
+  } = e, n = l.useRef(null), [b, A] = (0, i.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [y, O] = l.useState(false);
   l.useEffect(() => {
-    let e = () => _(true);
-    return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    let e = () => O(true);
+    return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let O = e => {
+  let _ = e => {
       e.shiftKey ? a.A.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
-      }, u.G_.muted(!b)) : _(e => !e)
+      }, u.G_.muted(!b)) : O(e => !e)
     },
-    j = f.intl.string(f.t.h850Ss);
+    x = g.intl.string(g.t.h850Ss);
   return (0, r.jsx)(s.YNO, {
     targetElementRef: n,
     shouldShow: y,
@@ -71,23 +71,23 @@ function b(e) {
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => _(false),
-    renderPopout: e => (0, r.jsx)(p.A, m(g({}, e), {
+    onRequestClose: () => O(false),
+    renderPopout: e => (0, r.jsx)(h.A, m(f({}, e), {
       channel: t,
       navId: "channel-context",
-      label: f.intl.string(f.t.Xm41aV)
+      label: g.intl.string(g.t.Xm41aV)
     })),
     clickTrap: true,
     children: (e, t) => {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(d.Ay.Icon, m(g({}, e), {
+      return (0, r.jsx)(d.Ay.Icon, m(f({}, e), {
         ref: n,
-        onClick: O,
-        tooltip: l ? null : j,
-        icon: b || A !== h.orn.ALL_MESSAGES ? s.a_I : s.XFE,
-        "aria-label": j,
+        onClick: _,
+        tooltip: l ? null : x,
+        icon: b || A !== p.orn.ALL_MESSAGES ? s.a_I : s.XFE,
+        "aria-label": x,
         selected: l
       }))
     }

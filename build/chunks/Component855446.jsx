@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 855446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => j
+  C: () => x
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,35 +19,35 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk279240 = require("./279240.js");
 let y = ["embedded_cover"],
-  _ = {
+  O = {
     tension: 800,
     friction: 24
   };
-var O = ((r = O || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var _ = ((r = _ || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function j(e) {
+function x(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: s,
-    aspectRatio: O = 0,
-    animatedDivClass: j,
-    commandOrigin: v
+    aspectRatio: _ = 0,
+    animatedDivClass: x,
+    commandOrigin: j
   } = e, {
-    onActivityItemSelected: x,
+    onActivityItemSelected: v,
     imageBackground: E,
     activityAction: C,
     labelType: S
-  } = (0, p.Ay)({
+  } = (0, h.Ay)({
     context: n,
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
     locationObject: {},
     onActivityItemSelected: s,
-    embeddedActivitiesManager: g.A,
+    embeddedActivitiesManager: f.A,
     assetNames: y,
-    commandOrigin: v
+    commandOrigin: j
   }), [I, N] = i.useState(false), T = i.useCallback(() => {
     N(true)
   }, [N]), P = i.useCallback(() => {
@@ -56,13 +56,13 @@ function j(e) {
     className: A.Gz,
     children: (0, l.jsx)("div", {
       className: A.fC,
-      children: (0, l.jsx)(f.A, {
+      children: (0, l.jsx)(g.A, {
         labelType: S
       })
     })
   }), [S]), R = i.useMemo(() => {
     switch (C) {
-      case p.o6.JOIN:
+      case h.o6.JOIN:
         return (0, l.jsx)("div", {
           className: A.m9,
           children: (0, l.jsx)("div", {
@@ -74,7 +74,7 @@ function j(e) {
             })
           })
         });
-      case p.o6.LEAVE:
+      case h.o6.LEAVE:
         return (0, l.jsx)("div", {
           className: A.m9,
           children: (0, l.jsx)("div", {
@@ -86,20 +86,20 @@ function j(e) {
             })
           })
         });
-      case p.o6.START:
+      case h.o6.START:
       default:
         return null
     }
   }, [C]);
   return (0, l.jsx)(u.DUT, {
-    onClick: x,
+    onClick: v,
     onFocus: T,
     onBlur: P,
     onMouseEnter: T,
     onMouseLeave: P,
     className: A.XA,
     children: (0, l.jsx)(u.c7X, {
-      config: _,
+      config: O,
       from: {
         value: 0
       },
@@ -117,14 +117,14 @@ function j(e) {
             questContent: c.u.ACTIVITY_SUGGESTION,
             children: n => (0, l.jsxs)(o.animated.div, {
               ref: n,
-              className: a()(e, A.LM, j, {
-                [A.$g]: 0 === O,
-                [A.J3]: 1 === O
+              className: a()(e, A.LM, x, {
+                [A.$g]: 0 === _,
+                [A.J3]: 1 === _
               }),
               style: {
                 transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
               },
-              children: [(0, l.jsx)(h.A, {
+              children: [(0, l.jsx)(p.A, {
                 imageBackground: E,
                 applicationName: r.application.name,
                 imageClassName: A.jj,
@@ -137,4 +137,4 @@ function j(e) {
     })
   })
 }
-j.AspectRatio = O
+x.AspectRatio = _

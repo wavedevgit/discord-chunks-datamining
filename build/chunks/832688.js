@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 832688, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 832688, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  a: () => E
+  a: () => S
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -12,19 +12,19 @@ var Chunk934551 = require("./934551.js"),
   Chunk922521 = require("./922521.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.t_)(Chunk780964.X.LINUX_PANEL, {
-    useTitle: () => d.intl.string(d.t["7pPjTW"]),
+let c = (0, Chunk419954.t_)(Chunk780964.X.LINUX_PANEL, {
+    useTitle: () => T.intl.string(T.t["7pPjTW"]),
     buildLayout: () => [o.v]
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.LINUX_PANEL, {
-    useTitle: () => d.intl.string(d.t["7pPjTW"]),
+  A = (0, Chunk419954.t_)(Chunk780964.X.LINUX_PANEL, {
+    useTitle: () => T.intl.string(T.t["7pPjTW"]),
     StronglyDiscouragedCustomComponent: Chunk62218.A,
     buildLayout: () => []
   }),
-  E = (0, Chunk419954.i4)(Chunk780964.X.LINUX_SIDEBAR_ITEM, {
-    useTitle: () => d.intl.string(d.t["7pPjTW"]),
-    getLegacySearchKey: () => (0, u.WJ)("LinuxPanel") ? true : T.H.LINUX_SETTINGS,
+  S = (0, Chunk419954.i4)(Chunk780964.X.LINUX_SIDEBAR_ITEM, {
+    useTitle: () => T.intl.string(T.t["7pPjTW"]),
+    getLegacySearchKey: () => (0, a.WJ)("LinuxPanel") ? true : d.H.LINUX_SETTINGS,
     icon: Chunk934551.ScreenIcon,
     usePredicate: () => s.isPlatformEmbedded && (0, s.isLinux)(),
-    buildLayout: () => [(0, u.WJ)("LinuxPanel") ? A : S]
+    buildLayout: () => [(0, a.WJ)("LinuxPanel") ? c : A]
   })

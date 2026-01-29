@@ -1,4 +1,4 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 357864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -17,10 +17,10 @@ function o() {
       className: r.N,
       src: a,
       alt: ""
-    }), (0, i.jsx)(s.EYj, {
+    }), (0, i.jsx)(l.EYj, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: l.intl.string(l.t.H217fV)
+      children: s.intl.string(s.t.H217fV)
     })]
   })
 }

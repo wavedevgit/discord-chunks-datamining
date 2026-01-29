@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 131168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => c
@@ -17,6 +17,6 @@ function c() {
     c = l.A.hasFetchedOffer(),
     d = (0, a.A)(o.q),
     u = (0, a.A)(o.EG),
-    p = null != (e = null != d ? d : u) ? e : null;
-  return (null == t ? true : t.canceledAt) == null ? null : null != p ? p : (n || c || (0, s.Vn)(), null)
+    _ = null != (e = null != d ? d : u) ? e : null;
+  return (null == t ? true : t.canceledAt) == null ? null : null != _ ? _ : (n || c || (0, s.Vn)(), null)
 }

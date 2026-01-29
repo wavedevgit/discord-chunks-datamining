@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 388096, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -15,7 +15,7 @@ function u(e) {
   let {
     defaultValue: t,
     onChange: n
-  } = e, [i, u] = l.useState(t), d = s()(), p = s()().add(365, "days"), h = e => {
+  } = e, [i, u] = l.useState(t), d = s()(), h = s()().add(365, "days"), p = e => {
     e.isValid() && u(e)
   };
   return l.useEffect(() => {
@@ -30,9 +30,9 @@ function u(e) {
         required: true,
         label: o.intl.string(o.t.pSZKvM),
         value: i,
-        onSelect: h,
+        onSelect: p,
         minDate: d,
-        maxDate: p,
+        maxDate: h,
         disabled: false
       })
     }), (0, r.jsx)("div", {
@@ -41,7 +41,7 @@ function u(e) {
         label: o.intl.string(o.t.GOmEb8),
         required: true,
         value: i,
-        onChange: h,
+        onChange: p,
         hideValue: false,
         disabled: false
       })

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 506164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -16,19 +16,19 @@ let o = function(e) {
     disagreement: c,
     onAgree: u,
     onDisagree: d,
-    modalType: p,
-    channelId: h,
-    guildId: f
+    modalType: h,
+    channelId: p,
+    guildId: g
   } = e;
   l.useEffect(() => {
-    (0, s.Bf)(p, h, f)
-  }, [p, h, f]);
-  let g = l.useCallback(() => {
-      (0, s.mU)(s.IY.NSFW_CHANNEL_DISAGREE_CTA, p, h, f), null == d || d()
-    }, [d, p, h, f]),
+    (0, s.Bf)(h, p, g)
+  }, [h, p, g]);
+  let f = l.useCallback(() => {
+      (0, s.mU)(s.IY.NSFW_CHANNEL_DISAGREE_CTA, h, p, g), null == d || d()
+    }, [d, h, p, g]),
     m = l.useCallback(() => {
-      (0, s.mU)(s.IY.NSFW_CHANNEL_AGREE_CTA, p, h, f), null == u || u()
-    }, [u, p, h, f]);
+      (0, s.mU)(s.IY.NSFW_CHANNEL_AGREE_CTA, h, p, g), null == u || u()
+    }, [u, h, p, g]);
   return (0, r.jsxs)(i.BJc, {
     justify: "center",
     align: "center",
@@ -58,7 +58,7 @@ let o = function(e) {
       children: [null != c && null != d ? (0, r.jsx)(i.Button, {
         variant: "secondary",
         text: c,
-        onClick: g
+        onClick: f
       }) : null, null != o && null != u ? (0, r.jsx)(i.Button, {
         onClick: m,
         text: o

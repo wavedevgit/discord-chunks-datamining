@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 318903, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -14,16 +14,16 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   var t, n, d, u;
   let {
-    node: p
+    node: _
   } = e, {
-    destinationKey: _
-  } = p, m = null == (t = p.useSubtitle) ? true : t.call(p), {
+    destinationKey: p
+  } = _, m = null == (t = _.useSubtitle) ? true : t.call(_), {
     accessibleDirectory: g
-  } = (0, l._)(), f = g.entry(_), b = (null == f ? true : f.parentPanelKey) != null ? g.get(f.parentPanelKey) : true, h = null == (n = p.useTitle) ? true : n.call(p), A = null == b || null == (d = b.useTitle) ? true : d.call(b);
-  if (null == b) return null;
-  let E = (null == (u = b.parent) ? true : u.type) === s.Z6.SIDEBAR_ITEM ? b.parent.icon : true;
+  } = (0, l._)(), A = g.entry(p), f = (null == A ? true : A.parentPanelKey) != null ? g.get(A.parentPanelKey) : true, b = null == (n = _.useTitle) ? true : n.call(_), h = null == f || null == (d = f.useTitle) ? true : d.call(f);
+  if (null == f) return null;
+  let E = (null == (u = f.parent) ? true : u.type) === s.Z6.SIDEBAR_ITEM ? f.parent.icon : true;
   return (0, r.jsx)(o.U, {
-    title: null != h ? h : A,
+    title: null != b ? b : h,
     description: m,
     leadingElement: null != E && (0, r.jsx)("div", {
       className: c.z,
@@ -33,7 +33,7 @@ function d(e) {
     }),
     primaryTrailingElement: (0, r.jsx)(i.uhT, {}),
     onClick: () => a.A.setState({
-      requestedTargetKey: _
+      requestedTargetKey: p
     })
   })
 }

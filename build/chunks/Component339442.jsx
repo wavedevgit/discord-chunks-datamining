@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 339442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,9 +14,9 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk93448 = require("./93448.js");
 
-function p(e) {
+function _(e) {
   var t, n;
-  let p = (0, l.L)(c.PremiumTypes.TIER_2);
+  let _ = (0, l.L)(c.PremiumTypes.TIER_2);
   return (0, r.jsxs)(s.A, {
     errors: e.errors,
     disabled: e.disabled,
@@ -28,7 +28,7 @@ function p(e) {
         onChange: e.onGlobalNameChange,
         value: null != (t = null != (n = e.pendingGlobalName) ? n : e.currentGlobalName) ? t : ""
       })
-    }), p && (0, r.jsx)(a.A, {
+    }), _ && (0, r.jsx)(a.A, {
       user: e.user,
       className: u.F
     })]

@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 21117, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 21117, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  b: () => d
+  b: () => T
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -11,29 +11,29 @@ var Chunk64700 = require("./64700.js"),
   Chunk964404 = require("./964404.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.Qx)(Chunk780964.X.HIGH_DYNAMIC_RANGE, {
-  useTitle: () => T.intl.string(T.t.nemtgW),
-  useSubtitle: () => T.intl.string(T.t["O/Gjvn"]),
+let T = (0, Chunk419954.Qx)(Chunk780964.X.HIGH_DYNAMIC_RANGE, {
+  useTitle: () => d.intl.string(d.t.nemtgW),
+  useSubtitle: () => d.intl.string(d.t["O/Gjvn"]),
   useBadge: () => "beta",
   useOptions: function() {
     return n.useMemo(() => [{
-      name: T.intl.string(T.t.D5Fma9),
-      desc: T.intl.string(T.t.Qj75ck),
+      name: d.intl.string(d.t.D5Fma9),
+      desc: d.intl.string(d.t.Qj75ck),
       value: "no-limit"
     }, {
-      name: T.intl.string(T.t.ldcGIH),
-      desc: T.intl.string(T.t["+V/bDk"]),
+      name: d.intl.string(d.t.ldcGIH),
+      desc: d.intl.string(d.t["+V/bDk"]),
       value: "standard"
     }], [])
   },
   usePredicate: function() {
     return (0, r.i)("HDRDynamicRangeSetting")
   },
-  setValue: function(t) {
-    (0, s.FU)(t)
+  setValue: function(e) {
+    (0, s.FU)(e)
   },
   useValue: function() {
-    return (0, l.bG)([a.Ay], () => a.Ay.hdrDynamicRange)
+    return (0, l.bG)([u.Ay], () => u.Ay.hdrDynamicRange)
   },
-  useSearchTerms: () => ["HDR", T.intl.string(T.t["O/Gjvn"])]
+  useSearchTerms: () => ["HDR", d.intl.string(d.t["O/Gjvn"])]
 })

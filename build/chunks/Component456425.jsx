@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 456425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => B
+  $: () => V
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -36,14 +36,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk213398 = require("./213398.js"),
   Chunk537997 = require("./537997.js");
 
-function M(e) {
+function L(e) {
   var t, n, l, i, a;
   let {
     item: c
   } = e, u = null == (n = c.message) ? true : n.content;
   if (null == u) return (0, r.jsx)("div", {});
   let d = null != (t = b.default.getUser(null == (i = c.message) || null == (l = i.author) ? true : l.id)) ? t : new m.A(null == (a = c.message) ? true : a.author),
-    h = p.A.parse(u);
+    p = h.A.parse(u);
   return (0, r.jsxs)("div", {
     className: w.PI,
     children: [(0, r.jsx)(o.A, {
@@ -53,19 +53,19 @@ function M(e) {
       className: w.Bp,
       variant: "text-sm/normal",
       lineClamp: 2,
-      children: h
+      children: p
     })]
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     item: {
       callout: t
     }
   } = e;
   if (null == t) return null;
-  let n = p.A.parse(t);
+  let n = h.A.parse(t);
   return (0, r.jsx)("div", {
     className: w.CD,
     children: (0, r.jsx)(s.Text, {
@@ -99,7 +99,7 @@ function G(e) {
   let {
     applicationId: t
   } = e, n = (0, i.bG)([u.A], () => u.A.getApplication(t));
-  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(h.A, {
+  return null == n ? (0, r.jsx)("div", {}) : (0, r.jsx)(p.A, {
     application: n
   }, n.id)
 }
@@ -110,8 +110,8 @@ let U = Chunk64700.memo(function(e) {
       ackedBeforeId: o
     } = e, {
       analyticsLocations: u
-    } = (0, c.Ay)(), h = (0, C.t)(i, o), g = l.useCallback(async () => {
-      if (h || (0, O.R7)(i), null != i.item_enum && i.item_enum === j.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
+    } = (0, c.Ay)(), p = (0, C.t)(i, o), f = l.useCallback(async () => {
+      if (p || (0, _.R7)(i), null != i.item_enum && i.item_enum === x.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
         let {
           default: e
         } = await n.e("67248").then(n.bind(n, 911539));
@@ -137,16 +137,16 @@ let U = Chunk64700.memo(function(e) {
         }, t))
       });
       if (null != i.deeplink) {
-        let t = _.A.safeParseWithQuery(i.deeplink);
+        let t = O.A.safeParseWithQuery(i.deeplink);
         if (null == t) return;
         let n = t.hostname,
           r = t.path;
         if (null == n || null == r) return;
-        if (_.A.isDiscordHostname(n)) {
+        if (O.A.isDiscordHostname(n)) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
-            (0, f.openUserProfileModal)({
+            (0, g.openUserProfileModal)({
               userId: t[1],
               messageId: null == (e = i.message) ? true : e.id,
               sourceAnalyticsLocations: u
@@ -154,21 +154,21 @@ let U = Chunk64700.memo(function(e) {
           } else await (0, d.A)(r)
         }
         A.default.track(T.HAw.NOTIFICATION_CENTER_ACTION, {
-          action_type: j.e1.CLICKED,
+          action_type: x.e1.CLICKED,
           notification_center_id: i.id,
           item_type: i.type,
-          acked: h
+          acked: p
         })
       }
-    }, [i, h, u]), m = null;
-    i.type === j.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
+    }, [i, p, u]), m = null;
+    i.type === x.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
       userId: i.other_user.id
-    }) : i.type === j.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
+    }) : i.type === x.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
       userId: i.other_user.id,
       applicationId: i.applicationId
     }));
     let b = null != i.local_id,
-      E = (0, x.A)({
+      E = (0, v.A)({
         item: i,
         renderApplication: e => (0, r.jsx)(G, {
           applicationId: e
@@ -191,8 +191,8 @@ let U = Chunk64700.memo(function(e) {
           offset: 4
         },
         "aria-label": E,
-        onClick: g,
-        children: [h ? null : (0, r.jsx)("div", {
+        onClick: f,
+        children: [p ? null : (0, r.jsx)("div", {
           className: w.gy
         }), (0, r.jsx)(S.J, {
           item: i
@@ -202,16 +202,16 @@ let U = Chunk64700.memo(function(e) {
             item: i
           }), (0, r.jsxs)(s.Text, {
             variant: "text-md/normal",
-            color: h ? "text-muted" : "text-default",
-            children: ["string" != typeof E ? E : p.A.parse(E), D]
-          }), (null == (t = i.message) ? true : t.content) != null ? (0, r.jsx)(M, {
+            color: p ? "text-muted" : "text-default",
+            children: ["string" != typeof E ? E : h.A.parse(E), D]
+          }), (null == (t = i.message) ? true : t.content) != null ? (0, r.jsx)(L, {
             item: i
-          }) : null, null != i.callout ? (0, r.jsx)(L, {
+          }) : null, null != i.callout ? (0, r.jsx)(M, {
             item: i
           }) : null, (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
-            color: h ? "text-muted" : "text-default",
-            children: (0, v.jb)(y.default.extractTimestamp(i.id))
+            color: p ? "text-muted" : "text-default",
+            children: (0, j.jb)(y.default.extractTimestamp(i.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.e, {
@@ -219,10 +219,10 @@ let U = Chunk64700.memo(function(e) {
       })]
     })
   }),
-  B = Chunk64700.memo(function(e) {
+  V = Chunk64700.memo(function(e) {
     let {
       items: t
-    } = e, n = g.ns.useSetting();
+    } = e, n = f.ns.useSetting();
     return (0, E.q)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(U, {
         item: e,

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 955454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => O
 }), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,12 +21,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk37411 = require("./37411.js"),
   Chunk357976 = require("./357976.js");
 
-function _(e) {
+function O(e) {
   let {
     channel: t,
     channelRecord: n,
     deleteChannel: i
-  } = e, _ = (0, a.yK)([p.A, f.A], () => s()(p.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, O = (0, a.yK)([h.A, g.A], () => s()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -35,12 +35,12 @@ function _(e) {
     let {
       id: t
     } = e;
-    return f.A.getChannel(t)
-  }).filter(g.Vq).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), O = l.useCallback((e, t) => {
-    (0, h.JA)(e, t, A.H9.INBOX)
+    return g.A.getChannel(t)
+  }).filter(f.Vq).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), _ = l.useCallback((e, t) => {
+    (0, p.JA)(e, t, A.H9.INBOX)
   }, []);
   return l.useEffect(() => {
-    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== _.length || o.h.wait(() => {
+    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== O.length || o.h.wait(() => {
       (0, c.ack)(t.channelId, {
         section: b.JJy.INBOX,
         object: b.ZSU.ACK_INBOX_FORUM_NO_POSTS,
@@ -49,12 +49,12 @@ function _(e) {
     })
   }), (0, r.jsx)("div", {
     className: y.k,
-    children: _.map(e => (0, r.jsx)(d.Cp, {
+    children: O.map(e => (0, r.jsx)(d.Cp, {
       channel: n,
       children: (0, r.jsx)(u.Ay, {
         className: y.u,
         threadId: e.id,
-        goToThread: O
+        goToThread: _
       })
     }, e.id))
   })

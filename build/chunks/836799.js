@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 836799, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 836799, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  $: () => E
+  $: () => S
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -12,19 +12,19 @@ var Chunk934551 = require("./934551.js"),
   Chunk477908 = require("./477908.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.t_)(Chunk780964.X.WINDOWS_PANEL, {
-    useTitle: () => d.intl.string(d.t.ZkDZov),
+let c = (0, Chunk419954.t_)(Chunk780964.X.WINDOWS_PANEL, {
+    useTitle: () => T.intl.string(T.t.ZkDZov),
     buildLayout: () => [o.w]
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.WINDOWS_PANEL, {
-    useTitle: () => d.intl.string(d.t.ZkDZov),
+  A = (0, Chunk419954.t_)(Chunk780964.X.WINDOWS_PANEL, {
+    useTitle: () => T.intl.string(T.t.ZkDZov),
     StronglyDiscouragedCustomComponent: Chunk62218.A,
     buildLayout: () => []
   }),
-  E = (0, Chunk419954.i4)(Chunk780964.X.WINDOWS_SIDEBAR_ITEM, {
-    useTitle: () => d.intl.string(d.t.ZkDZov),
-    getLegacySearchKey: () => (0, u.WJ)("WindowsPanel") ? true : T.H.WINDOW_SETTINGS,
+  S = (0, Chunk419954.i4)(Chunk780964.X.WINDOWS_SIDEBAR_ITEM, {
+    useTitle: () => T.intl.string(T.t.ZkDZov),
+    getLegacySearchKey: () => (0, a.WJ)("WindowsPanel") ? true : d.H.WINDOW_SETTINGS,
     icon: Chunk934551.ScreenIcon,
     usePredicate: () => s.isPlatformEmbedded && (0, s.isWindows)(),
-    buildLayout: () => [(0, u.WJ)("WindowsPanel") ? A : S]
+    buildLayout: () => [(0, a.WJ)("WindowsPanel") ? c : A]
   })

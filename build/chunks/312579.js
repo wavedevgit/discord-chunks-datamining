@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 312579, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 312579, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  i: () => T
+  i: () => d
 });
 var Chunk311907 = require("./311907.js"),
   Chunk684013 = require("./684013.js"),
@@ -10,13 +10,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk256415 = require("./256415.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_SHOW_KEYBIND_INDICATORS_SETTING, {
+let d = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_SHOW_KEYBIND_INDICATORS_SETTING, {
   usePredicate: () => (0, s.A)({
     location: "overlay_user_settings"
   }),
-  useValue: () => (0, n.bG)([u.default], () => u.default.showKeybindIndicators),
-  setValue: t => {
-    l.A.setShowKeybindIndicators(t)
+  useValue: () => (0, n.bG)([a.default], () => a.default.showKeybindIndicators),
+  setValue: e => {
+    l.A.setShowKeybindIndicators(e)
   },
   useTitle: () => o.intl.string(o.t.XZTl9r)
 })

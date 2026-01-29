@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 377045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,25 +16,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk70461 = require("./70461.js");
 
-function g(e) {
+function f(e) {
   let t, {
-    channelId: g
+    channelId: f
   } = e;
   l.useEffect(() => {
-    c.A.loadThread(g)
+    c.A.loadThread(f)
   });
-  let m = (0, s.bG)([d.A], () => d.A.getGuildId()) === p.YYv,
+  let m = (0, s.bG)([d.A], () => d.A.getGuildId()) === h.YYv,
     b = (0, s.bG)([u.A], () => u.A.theme);
   return t = m ? (0, r.jsx)(a.SGT, {
-    note: h.intl.string(h.t["D5SN5/"]),
-    children: h.intl.string(h.t.xVTAdb)
-  }) : null != g ? (0, r.jsx)(a.y$y, {
+    note: p.intl.string(p.t["D5SN5/"]),
+    children: p.intl.string(p.t.xVTAdb)
+  }) : null != f ? (0, r.jsx)(a.y$y, {
     type: a.y$y.Type.SPINNING_CIRCLE
   }) : (0, r.jsx)(a.SGT, {
-    note: h.intl.string(h.t["LTr+x9"]),
-    children: h.intl.string(h.t.ai6Lbr)
+    note: p.intl.string(p.t["LTr+x9"]),
+    children: p.intl.string(p.t.ai6Lbr)
   }), (0, r.jsxs)("div", {
-    className: f.j,
+    className: g.j,
     children: [i.Fr && (0, r.jsx)(o.Ay, {
       children: null
     }), (0, r.jsxs)(a.ppr, {

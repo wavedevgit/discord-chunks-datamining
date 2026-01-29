@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 510898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk20770 = require("./20770.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ function m(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
@@ -48,7 +48,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class f extends Chunk64700.PureComponent {
+class A extends Chunk64700.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       hasError: true
@@ -60,76 +60,76 @@ class f extends Chunk64700.PureComponent {
       style: {
         borderRadius: 0
       },
-      children: [p.intl.format(p.t.IIHUUF, {
+      children: [_.intl.format(_.t.IIHUUF, {
         subscriptionId: this.props.subscription.id
-      }), " ", p.intl.format(p.t.fh65ES, {
+      }), " ", _.intl.format(_.t.fh65ES, {
         helpLink: "https://support.discord.com/hc/en-us"
       })]
     }) : this.props.children
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), p(this, "state", {
       hasError: false
     })
   }
 }
 
-function b(e) {
+function f(e) {
   let {
     subscriptions: t,
     updateHeader: n
-  } = e, [l, _] = i.useState({
+  } = e, [l, p] = i.useState({
     route: d.R.HOME
   }), {
-    route: b
-  } = l, h = () => {
-    _({
+    route: f
+  } = l, b = () => {
+    p({
       route: d.R.HOME
     })
-  }, A = e => {
-    _(m({
+  }, h = e => {
+    p(m({
       route: d.R.SWITCH_APP_PLANS
-    }, e)), n(p.intl.string(p.t.VFqtkP), h)
-  }, [E, x] = i.useState({});
+    }, e)), n(_.intl.string(_.t.VFqtkP), b)
+  }, [E, O] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? true : e.planId;
-      null != t && (x(e => g(m({}, e), {
+      null != t && (O(e => g(m({}, e), {
         [n.id]: c.G.LOADING
       })), (0, a._R)(t).then(() => {
-        x(e => g(m({}, e), {
+        O(e => g(m({}, e), {
           [n.id]: c.G.DONE
         }))
       }).catch(() => {
-        x(e => g(m({}, e), {
+        O(e => g(m({}, e), {
           [n.id]: c.G.ERROR
         }))
       }))
     }
   }, [t]);
   let {
-    loadState: O
-  } = (0, o.E)(), C = O !== o.mJ.LOADED;
-  switch (b) {
+    loadState: C
+  } = (0, o.E)(), x = C !== o.mJ.LOADED;
+  switch (f) {
     case d.R.HOME:
       return (0, r.jsx)(r.Fragment, {
         children: t.map(e => {
           var t;
-          return (0, r.jsx)(f, {
+          return (0, r.jsx)(A, {
             subscription: e,
             children: (0, r.jsx)(c.A, {
               subscription: e,
-              navigateToSwitchPlan: A,
-              loadingState: C ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
+              navigateToSwitchPlan: h,
+              loadingState: x ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })
       });
     case d.R.SWITCH_APP_PLANS:
       let {
-        route: y
-      } = l, j = function(e, t) {
+        route: S
+      } = l, T = function(e, t) {
         if (null == e) return {};
         var n, r, i, l = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -146,10 +146,10 @@ function b(e) {
           for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
       }(l, ["route"]);
-      return (0, r.jsx)(u.A, g(m({}, j), {
-        navigateToHome: h
+      return (0, r.jsx)(u.A, g(m({}, T), {
+        navigateToHome: b
       }));
     default:
-      (0, s.xb)(b)
+      (0, s.xb)(f)
   }
 }

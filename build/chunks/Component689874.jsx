@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 689874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -25,21 +25,21 @@ let m = e => {
     if (null == t) returnfalse;
     let n = u.A.getCurrentUserActiveStream(),
       r = null == (e = c.Ay.getVisibleGame()) ? true : e.windowHandle;
-    return !!(null != n && (0, p.TD)() || null != r && (0, p.Ao)()) || o.A.getParticipants(t).some(e => e.type === h.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
+    return !!(null != n && (0, h.TD)() || null != r && (0, h.Ao)()) || o.A.getParticipants(t).some(e => e.type === p.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
   }) ? (0, r.jsx)(s.m, {
-    text: f.intl.string(f.t.DJXW3G),
+    text: g.intl.string(g.t.DJXW3G),
     children: (0, r.jsxs)("div", {
-      className: g.g0,
+      className: f.g0,
       children: [(0, r.jsx)(a.fkz, {
         icon: a.xgA,
         shape: a.EGs.ROUND_LEFT,
         color: i.A.unsafe_rawColors.PRIMARY_500.css,
-        className: g.Z7
+        className: f.Z7
       }), (0, r.jsx)(a.LpS, {
-        text: f.intl.string(f.t.pCMkDb),
+        text: g.intl.string(g.t.pCMkDb),
         shape: a.EGs.ROUND_RIGHT,
         color: i.A.unsafe_rawColors.PRIMARY_500.css,
-        className: g.lm
+        className: f.lm
       })]
     })
   }) : null

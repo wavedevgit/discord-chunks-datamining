@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 340889, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 340889, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   U: () => o
 });
@@ -10,19 +10,19 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zD)(Chunk780964.X.STREAMING_STREAMER_MODE, {
-  useTitle: () => a.intl.string(a.t.TGNg6T),
-  useSubtitle: () => a.intl.string(a.t["4nXLnE"]),
+  useTitle: () => u.intl.string(u.t.TGNg6T),
+  useSubtitle: () => u.intl.string(u.t["4nXLnE"]),
   useValue: function() {
     return (0, n.bG)([r.A], () => {
       let {
-        enabled: t
+        enabled: e
       } = r.A.getSettings();
-      return t
+      return e
     })
   },
-  setValue: function(t) {
+  setValue: function(e) {
     l.A.update({
-      enabled: t
+      enabled: e
     })
   }
 })

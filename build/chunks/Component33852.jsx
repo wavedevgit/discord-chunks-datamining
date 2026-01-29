@@ -1,4 +1,4 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 33852, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -20,22 +20,22 @@ function c(e) {
     icon: d
   } = e, p = function(e, t) {
     if (null == e) return {};
-    var n, r, i, l = {};
+    var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-      return l
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      return i
     }
-    if (l = function(e, t) {
+    if (i = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          l = Object.getOwnPropertyNames(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
+        var n, r, l = {},
+          i = Object.getOwnPropertyNames(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-    return l
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    return i
   }(e, ["platform", "variant", "size", "onAction", "icon"]);
-  return (0, i.bG)([s.A], () => s.A.getAccounts().some(e => e.type === t.type)) ? null : (0, r.jsx)(l.Button, function(e) {
+  return (0, l.bG)([s.A], () => s.A.getAccounts().some(e => e.type === t.type)) ? null : (0, r.jsx)(i.Button, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

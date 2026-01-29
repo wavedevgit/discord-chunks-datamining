@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 306852, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -26,35 +26,35 @@ function y(e) {
     onContextMenuParticipant: n,
     height: i,
     channel: y,
-    participants: _,
-    onSelectParticipant: O
-  } = e, [j, v] = function() {
-    let [e, t] = l.useState(() => o.w.get(A, f.CUs.BOTTOM_RIGHT));
+    participants: O,
+    onSelectParticipant: _
+  } = e, [x, j] = function() {
+    let [e, t] = l.useState(() => o.w.get(A, g.CUs.BOTTOM_RIGHT));
     return [e, l.useCallback(e => {
       o.w.set(A, e), t(e)
     }, [])]
-  }(), x = l.useRef(null), E = null == y.getGuildId() ? 70 : 50, C = (0, a.bG)([p.A], () => p.A.pipWidth(g.R8.CAMERA_PREVIEW)), S = _.length, I = C * S + 8 * (S - 1), N = l.useMemo(() => ({
-    minWidth: g.mn[g.R8.CAMERA_PREVIEW] * S + 8 * (S - 1),
-    maxWidth: g.cF[g.R8.CAMERA_PREVIEW] * S + 8 * (S - 1)
+  }(), v = l.useRef(null), E = null == y.getGuildId() ? 70 : 50, C = (0, a.bG)([h.A], () => h.A.pipWidth(f.R8.CAMERA_PREVIEW)), S = O.length, I = C * S + 8 * (S - 1), N = l.useMemo(() => ({
+    minWidth: f.mn[f.R8.CAMERA_PREVIEW] * S + 8 * (S - 1),
+    maxWidth: f.cF[f.R8.CAMERA_PREVIEW] * S + 8 * (S - 1)
   }), [S]);
   l.useLayoutEffect(() => {
     var e;
-    null == (e = x.current) || e.ensureIsInPosition()
-  }, [_.length]);
+    null == (e = v.current) || e.ensureIsInPosition()
+  }, [O.length]);
   let T = l.useCallback(e => {
       let t = 0 === S ? e : (e - 8 * (S - 1)) / S;
-      c.EB(t, g.R8.CAMERA_PREVIEW)
+      c.EB(t, f.R8.CAMERA_PREVIEW)
     }, [S]),
     P = l.useCallback((e, t) => {
-      v(t)
-    }, [v]);
+      j(t)
+    }, [j]);
   return (0, r.jsx)("div", {
     className: m.kL,
     children: (0, r.jsx)(d.S, {
-      position: j,
+      position: x,
       id: 0,
       width: I,
-      ref: x,
+      ref: v,
       onMove: P,
       onResize: T,
       maxX: t,
@@ -66,16 +66,16 @@ function y(e) {
       resizeConfig: N,
       children: (0, r.jsx)("div", {
         className: m.iA,
-        children: _.map(e => (0, r.jsx)(h.Ay, {
+        children: O.map(e => (0, r.jsx)(p.Ay, {
           participant: e,
           channel: y,
           onContextMenu: n,
           className: s()(m.Vs, b.a8),
-          fit: h.Yl.COVER,
+          fit: p.Yl.COVER,
           inCall: true,
           popoutType: u.N.NO_POPOUT,
           width: 160,
-          onClick: O
+          onClick: _
         }, e.id))
       })
     })

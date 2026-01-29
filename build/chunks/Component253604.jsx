@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 253604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -16,24 +16,24 @@ function u(e) {
   var t;
   let {
     user: u,
-    disabledInputs: p,
-    containerClassName: _
+    disabledInputs: _,
+    containerClassName: p
   } = e, {
     reducedMotion: m
   } = i.useContext(s.CZY), {
     pendingAvatar: g,
-    pendingBanner: f,
-    pendingAvatarDecoration: b,
-    pendingProfileEffect: h,
-    pendingDisplayNameStyles: A,
+    pendingBanner: A,
+    pendingAvatarDecoration: f,
+    pendingProfileEffect: b,
+    pendingDisplayNameStyles: h,
     pendingThemeColors: E,
-    pendingPronouns: x,
-    pendingBio: O,
-    tryItOutThemeColors: C,
-    tryItOutAvatar: y,
-    tryItOutBanner: j,
-    tryItOutAvatarDecoration: T,
-    tryItOutDisplayNameStyles: v
+    pendingPronouns: O,
+    pendingBio: C,
+    tryItOutThemeColors: x,
+    tryItOutAvatar: S,
+    tryItOutBanner: T,
+    tryItOutAvatarDecoration: I,
+    tryItOutDisplayNameStyles: y
   } = (0, l.cf)([o.A], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,25 +51,25 @@ function u(e) {
       })
     }
     return e
-  })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), S = (0, a.V7)({
+  })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), N = (0, a.V7)({
     userId: u.id,
-    image: null != y ? y : g
+    image: null != S ? S : g
   });
   return (0, r.jsx)(c.A, {
-    containerClassName: _,
+    containerClassName: p,
     user: u,
-    pendingPronouns: x,
-    pendingBio: O,
-    pendingBanner: null != (t = null != j ? j : f) ? t : n(636763),
-    pendingDisplayNameStyles: null != v ? v : A,
-    pendingAvatar: S,
-    pendingThemeColors: null != C ? C : E,
-    pendingAvatarDecoration: true !== T ? T : b,
-    pendingProfileEffect: h,
-    avatarClassName: null != y || null != g || m.enabled ? true : d.W,
+    pendingPronouns: O,
+    pendingBio: C,
+    pendingBanner: null != (t = null != T ? T : A) ? t : n(636763),
+    pendingDisplayNameStyles: null != y ? y : h,
+    pendingAvatar: N,
+    pendingThemeColors: null != x ? x : E,
+    pendingAvatarDecoration: true !== I ? I : f,
+    pendingProfileEffect: b,
+    avatarClassName: null != S || null != g || m.enabled ? true : d.W,
     canUsePremiumCustomization: true,
     isTryItOut: true,
-    disabledInputs: p,
+    disabledInputs: _,
     hideExampleButton: true
   })
 }

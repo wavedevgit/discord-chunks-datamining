@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 509963, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T,
@@ -25,7 +25,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk391523 = require("./391523.js");
 
-function x(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,59 +41,59 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 let C = {
   [Chunk652215.WTw.INSTALLING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk652215.WTw.UPDATING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzC"], {
+    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["6F9QzC"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVq"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["2OVgVq"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1L, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.mgQg1L, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t.aTdq44, {
+    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t.aTdq44, {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk652215.WTw.REPAIRING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
@@ -105,9 +105,9 @@ class S extends Chunk64700.PureComponent {
       state: e,
       isPaused: t
     } = this.props;
-    if (e.type === O.WTw.UPDATING || e.type === O.WTw.REPAIRING || e.type === O.WTw.INSTALLING) {
-      if (t) return j.intl.string(j.t["5oxtFS"]);
-      else if (e.stage === O.OQC.PATCHING || e.stage === O.OQC.REPAIRING) return (0, l.jsx)(_.A, {
+    if (e.type === _.WTw.UPDATING || e.type === _.WTw.REPAIRING || e.type === _.WTw.INSTALLING) {
+      if (t) return x.intl.string(x.t["5oxtFS"]);
+      else if (e.stage === _.OQC.PATCHING || e.stage === _.OQC.REPAIRING) return (0, l.jsx)(O.A, {
         getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -117,10 +117,10 @@ class S extends Chunk64700.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : j.intl.string(j.t.cw57ar)
+    return null != e ? e : x.intl.string(x.t.cw57ar)
   }
   constructor(...e) {
-    super(...e), x(this, "renderProgressBody", (e, t) => {
+    super(...e), v(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -136,12 +136,12 @@ class S extends Chunk64700.PureComponent {
         u = C[a],
         d = null != u ? Object.keys(u) : [],
         {
-          unit: p,
-          time: h
-        } = (0, g.$l)(null != c ? c / 60 : null, d);
-      if (null != u && null != p) {
-        let e = u[p];
-        return null != e ? e(r.name, h) : null
+          unit: h,
+          time: p
+        } = (0, f.$l)(null != c ? c / 60 : null, d);
+      if (null != u && null != h) {
+        let e = u[h];
+        return null != e ? e(r.name, p) : null
       }
       return null
     })
@@ -169,7 +169,7 @@ class I extends(r = Chunk64700.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? j.intl.string(j.t.cw57ar) : (0, l.jsx)(S, {
+    return null == e || null == t ? x.intl.string(x.t.cw57ar) : (0, l.jsx)(S, {
       application: e,
       state: t,
       isPaused: n
@@ -187,20 +187,20 @@ class I extends(r = Chunk64700.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(n, v.L),
+      className: a()(n, j.L),
       onClick: this.handleOnClick,
-      children: (0, l.jsx)(p.m, {
+      children: (0, l.jsx)(h.m, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
         position: "right",
         "aria-label": false,
         children: (0, l.jsx)("div", {
-          children: (0, l.jsx)(h.a3E, {
+          children: (0, l.jsx)(p.a3E, {
             percent: e,
             colorOverride: t ? u.A.unsafe_rawColors.PRIMARY_500.css : null,
-            children: (0, l.jsx)(h.s3U, {
+            children: (0, l.jsx)(p.s3U, {
               size: "md",
               color: "currentColor",
-              className: v.k
+              className: j.k
             })
           })
         })
@@ -208,13 +208,13 @@ class I extends(r = Chunk64700.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), v(this, "state", {
       animationScale: new o.A.Value(0)
-    }), x(this, "handleOnClick", e => {
+    }), v(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.pX)(O.BVt.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.pX)(_.BVt.APPLICATION_LIBRARY)
     })
   }
 }
@@ -228,7 +228,7 @@ function N(e, t) {
     return null != i && e.push(i), e
   }, [])
 }
-x(I, "defaultProps", {
+v(I, "defaultProps", {
   strokeSize: Chunk397927.a3E.StrokeSizes.MEDIUM
 });
 let T = Chunk311907.Ay.connectStores([Chunk966846.A, Chunk194871.A, Chunk587895.A], () => {
@@ -241,7 +241,7 @@ let T = Chunk311907.Ay.connectStores([Chunk966846.A, Chunk194871.A, Chunk587895.
   return {
     percent: y.uA(r, n),
     isPaused: A.A.paused,
-    firstApplication: e.length > 0 ? f.A.getApplication(e[0].applicationId) : null,
+    firstApplication: e.length > 0 ? g.A.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
   }
 })(e => {

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 319610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,25 +16,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk60504 = require("./60504.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function f(e) {
   let {
     channel: t
-  } = e, n = (0, i.bG)([o.A], () => o.A.getDrawMode()), g = (null == n ? true : n.type) === c.Z.EMOJI_HOSE, m = l.useRef(null), b = (e, t) => {
+  } = e, n = (0, i.bG)([o.A], () => o.A.getDrawMode()), f = (null == n ? true : n.type) === c.Z.EMOJI_HOSE, m = l.useRef(null), b = (e, t) => {
     null != e ? (0, a.Ol)({
       type: c.Z.EMOJI_HOSE,
       emojiName: e.name,
       emojiId: e.id
-    }) : g && (0, a.Ol)(null), null == t || t()
+    }) : f && (0, a.Ol)(null), null == t || t()
   };
-  return (0, r.jsx)(h.A, {
+  return (0, r.jsx)(p.A, {
     renderPopout: e => {
       let {
         closePopout: n,
         onFocus: l
       } = e;
       return (0, r.jsx)(u.A, {
-        children: (0, r.jsx)(p.A, {
-          title: f.intl.string(f.t.XYLOyF),
+        children: (0, r.jsx)(h.A, {
+          title: g.intl.string(g.t.XYLOyF),
           channel: t,
           closePopout: n,
           onFocus: l,
@@ -65,7 +65,7 @@ function g(e) {
       }({}, e), n = n = {
         buttonRef: m,
         iconComponent: s.VRj,
-        isActive: g || e.isActive,
+        isActive: f || e.isActive,
         onClick: t => {
           b(null), e.onClick(t)
         }

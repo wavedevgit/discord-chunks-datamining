@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 730253, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -61,49 +61,49 @@ let R = {
 
 function D() {
   var e, t;
-  let i, D, M, L, k, G, U, B, V, F, H, K, W = (0, a.Vd)("favorites"),
+  let i, D, L, M, k, G, U, V, B, H, F, K, Y = (0, a.Vd)("favorites"),
     {
-      favoriteAdded: z,
-      clearFavoriteAdded: Y
+      favoriteAdded: W,
+      clearFavoriteAdded: z
     } = (0, E.CJ)(),
     [q, X] = l.useState(false),
     {
       favoriteServerMuted: J,
       favoriteChannels: Q
-    } = (0, o.cf)([x.A], () => ({
-      favoriteChannels: x.A.getFavoriteChannels(),
-      favoriteServerMuted: x.A.favoriteServerMuted
+    } = (0, o.cf)([v.A], () => ({
+      favoriteChannels: v.A.getFavoriteChannels(),
+      favoriteServerMuted: v.A.favoriteServerMuted
     })),
-    Z = (0, o.bG)([O.A], () => O.A.getChannelId(N.YYv)),
-    $ = (0, o.bG)([_.A], () => _.A.getChannel(Z)),
+    Z = (0, o.bG)([_.A], () => _.A.getChannelId(N.YYv)),
+    $ = (0, o.bG)([O.A], () => O.A.getChannel(Z)),
     ee = (0, A.A)(e => e.guildId) === N.YYv,
     {
       badge: et,
       unread: en
     } = (0, C.A)(Q),
-    er = (D = null != (i = (0, o.bG)([O.A], () => O.A.getVoiceChannelId())) && null != Q[i], M = (0, o.bG)([y.A], () => {
+    er = (D = null != (i = (0, o.bG)([_.A], () => _.A.getVoiceChannelId())) && null != Q[i], L = (0, o.bG)([y.A], () => {
       if (!D) returnfalse;
       let e = y.A.getCurrentUserActiveStream();
       return null != e && null != Q[e.channelId]
-    }), L = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), k = (0, o.bG)([j.A], () => D && null != i && j.A.hasVideo(i), [D, i]), G = (0, o.yK)([p.Ay], () => v.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
+    }), M = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), k = (0, o.bG)([x.A], () => D && null != i && x.A.hasVideo(i), [D, i]), G = (0, o.yK)([h.Ay], () => j.default.keys(Q).reduce((e, t) => (e.push(...h.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([h.Ay], () => Array.from(h.Ay.getSelfEmbeddedActivities().values()).some(e => {
       let {
         location: t
-      } = e, n = (0, h.H)(t);
+      } = e, n = (0, p.H)(t);
       return null != n && null != Q[n]
-    })), B = G.length > 0, V = false, F = false, H = false, K = false, D ? (V = !k, F = k, H = M, K = U) : (H = L, K = B), (0, m.oi)({
-      audio: V,
-      video: F,
-      screenshare: H,
+    })), V = G.length > 0, B = false, H = false, F = false, K = false, D ? (B = !k, H = k, F = L, K = U) : (F = M, K = V), (0, m.oi)({
+      audio: B,
+      video: H,
+      screenshare: F,
       liveStage: false,
       isCurrentUserConnected: D,
       activity: K
     })),
     el = et > 0 ? (0, b.w)(et) : null,
     ei = l.useCallback(() => {
-      Y()
-    }, [Y]);
-  return (0, r.jsxs)(g.c, {
-    children: [(0, r.jsx)(f.A, {
+      z()
+    }, [z]);
+  return (0, r.jsxs)(f.c, {
+    children: [(0, r.jsx)(g.A, {
       selected: ee,
       hovered: q,
       unread: en && !J,
@@ -115,7 +115,7 @@ function D() {
           selected: true,
           upperBadge: er,
           lowerBadge: el,
-          children: (0, r.jsx)(c.jlP, (e = w({}, W), t = t = {
+          children: (0, r.jsx)(c.jlP, (e = w({}, Y), t = t = {
             ariaLabel: T.intl.formatToPlainString(T.t["/uzRss"], {
               guildName: T.intl.string(T.t.wMWyci),
               mentions: et
@@ -141,7 +141,7 @@ function D() {
             },
             children: (0, r.jsx)("div", {
               className: s()(P.hN, {
-                [P.b1]: z
+                [P.b1]: W
               }),
               children: (0, r.jsx)(c.Gg5, {
                 size: "custom",

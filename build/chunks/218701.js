@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 218701, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 218701, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  u: () => _
+  u: () => E
 });
 var Chunk290595 = require("./290595.js"),
   Chunk419954 = require("./419954.js"),
@@ -16,11 +16,11 @@ var Chunk290595 = require("./290595.js"),
   Chunk789643 = require("./789643.js"),
   Chunk719587 = require("./719587.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = (0, Chunk419954.zZ)(Chunk780964.X.DATA_USAGE_CATEGORY, {
-  useTitle: () => g.intl.string(g.t.bvw42E),
+let E = (0, Chunk419954.zZ)(Chunk780964.X.DATA_USAGE_CATEGORY, {
+  useTitle: () => _.intl.string(_.t.bvw42E),
   useInlineNotice: Chunk589641.I,
   initialize: () => {
     s.A.fetchedConsents || (0, n.Q)()
   },
-  buildLayout: () => [E.L, S.X, A.m, d._, a.C, o.g, T.z]
+  buildLayout: () => [S.L, A.X, c.m, T._, u.C, o.g, d.z]
 })

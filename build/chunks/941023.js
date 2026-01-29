@@ -28,23 +28,23 @@ let y = {
     x: 0,
     y: 0
   },
-  A = false;
+  m = false;
 
-function m(e) {
+function _(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
-  A = true, y.x = t, y.y = n
+  m = true, y.x = t, y.y = n
 }
 let b = new Map;
 
-function O(e, t) {
-  if (null == t) b.delete(e), 0 === b.size && (window.removeEventListener("mousemove", m), A = false);
+function A(e, t) {
+  if (null == t) b.delete(e), 0 === b.size && (window.removeEventListener("mousemove", _), m = false);
   else {
     let n = b.get(e);
     if (null != n && (0, a.A)(n.zone, t.zone)) return;
-    0 === b.size && window.addEventListener("mousemove", m), b.set(e, t)
+    0 === b.size && window.addEventListener("mousemove", _), b.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
@@ -63,7 +63,7 @@ function O(e, t) {
       d.A.setClickZones(e)
     } else {
       var n;
-      let e = (0, h.m)();
+      let e = (0, p.m)();
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
@@ -73,19 +73,19 @@ function O(e, t) {
           } = e;
           return t
         })
-      }), n = e, _ || (n.setClickZoneCallback((e, t, n) => {
+      }), n = e, O || (n.setClickZoneCallback((e, t, n) => {
         let i = b.get(e);
-        null != i && (A || (y.x = t, y.y = n), i.instance.click())
-      }), _ = true)
+        null != i && (m || (y.x = t, y.y = n), i.instance.click())
+      }), O = true)
     }
 }
-let _ = false;
+let O = false;
 class v extends(i = Chunk64700.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), O(this.zone, null)
+    this.interval.stop(), A(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -100,8 +100,8 @@ class v extends(i = Chunk64700.PureComponent) {
     this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
   }
   click() {
-    let e = (0, p._)("click", y.x, y.y);
-    (0, p.K)(e, y.x, y.y)
+    let e = (0, h._)("click", y.x, y.y);
+    (0, h.K)(e, y.x, y.y)
   }
   constructor(...e) {
     super(...e), g(this, "zone", l().uniqueId("ClickArea")), g(this, "interval", new c.IX), g(this, "updateZone", () => {
@@ -113,7 +113,7 @@ class v extends(i = Chunk64700.PureComponent) {
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        O(this.zone, {
+        A(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

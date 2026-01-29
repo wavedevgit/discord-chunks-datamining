@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 473564, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 473564, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   L: () => o
 });
@@ -10,7 +10,7 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk536482 = require("./536482.js");
 let o = (0, Chunk419954.zZ)(Chunk780964.X.ACTIVITY_PRIVACY_PER_GUILD_CATEGORY, {
-  useTitle: () => u.intl.string(a.default["1PougL"]),
-  useSubtitle: () => u.intl.string(a.default.OO17Lg),
+  useTitle: () => a.intl.string(u.default["1PougL"]),
+  useSubtitle: () => a.intl.string(u.default.OO17Lg),
   buildLayout: () => [s.I, r.F]
 })

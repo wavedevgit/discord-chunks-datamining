@@ -1,15 +1,16 @@
-/** Chunk was on 78528 **/
-/** chunk id: 70456, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 59461 **/
+/** chunk id: 70456, original params: e,n,t (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  N: () => i
+  N: () => r
 });
 var Chunk353640 = require("./353640.js"),
   Chunk121894 = require("./121894.js");
-let i = (0, Chunk353640.v)(e => ({
+let r = (0, Chunk353640.v)(e => ({
   canCloseModal: true,
-  onUpdateCanCloseModal(t) {
+  onUpdateCanCloseModal(n) {
     (0, l.r)(() => e({
-      canCloseModal: t
+      canCloseModal: n
     }))
   }
 }))

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 663997, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => d,
@@ -17,14 +17,14 @@ function d(e) {
   let {
     guildId: t,
     guildJoinRequests: n
-  } = e, l = r.useRef(false), [d, p] = r.useState(null), h = r.useRef(null), f = r.useRef(false);
+  } = e, l = r.useRef(false), [d, h] = r.useState(null), p = r.useRef(null), g = r.useRef(false);
   return {
     fetchNextPage: r.useCallback(async (e, r) => {
       if (l.current) return;
-      let g = "".concat(e, "-").concat(r),
+      let f = "".concat(e, "-").concat(r),
         m = false;
-      if (g !== h.current && (h.current = g, f.current = false, m = true), f.current) return;
-      null != d && p(null);
+      if (f !== p.current && (p.current = f, g.current = false, m = true), g.current) return;
+      null != d && h(null);
       let b = function(e, t, n, r) {
         let l = n === c.B5.SUBMITTED;
         if (t === c._e.TIMESTAMP_DESC)
@@ -75,10 +75,10 @@ function d(e) {
           let {
             guild_join_requests: t
           } = e.body;
-          t.length < u && (f.current = true)
+          t.length < u && (g.current = true)
         }
       } catch (e) {
-        p(new s.LG(e).getAnyErrorMessage())
+        h(new s.LG(e).getAnyErrorMessage())
       } finally {
         l.current = false
       }

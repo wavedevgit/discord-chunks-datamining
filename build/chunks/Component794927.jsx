@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 794927, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -17,14 +17,14 @@ function d(e) {
   let {
     channel: t,
     guild: d,
-    width: p,
-    inPopout: h
+    width: h,
+    inPopout: p
   } = e;
   return (0, r.jsx)(i.A, {
     className: c.zr,
     children: (0, r.jsx)(s.A, {
       artURL: u,
-      size: (0, s.J)(p),
+      size: (0, s.J)(h),
       header: o.intl.string(o.t.O4FiWi),
       onCTAClick: () => (0, l.mMO)(async () => {
         let {
@@ -65,7 +65,7 @@ function d(e) {
           }), l))
         }
       }, {
-        contextKey: h ? l.KX8 : l.SYi
+        contextKey: p ? l.KX8 : l.SYi
       }),
       callToAction: o.intl.string(o.t.VINpSK)
     })

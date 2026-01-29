@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 18640, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 18640, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  X: () => S
+  X: () => A
 }), require("./65821.js"), require("./457529.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,32 +13,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk602450 = require("./602450.js"),
   Chunk557571 = require("./557571.jsx"),
   Chunk652215 = require("./652215.js");
-let S = () => {
+let A = () => {
   let {
-    connectionStatus: t,
-    setConnectionStatus: e,
+    connectionStatus: e,
+    setConnectionStatus: t,
     connect: i,
-    disconnect: S
-  } = (0, d.lV)(), E = [T.l7.CONNECTED, T.l7.INITIALIZING].includes(t), g = (0, l.useCallback)(() => E ? (e(T.l7.DISCONNECTED), (0, r.u)(A.HAw.NITRO_WARP_TOGGLED, {
+    disconnect: A
+  } = (0, T.lV)(), S = [d.l7.CONNECTED, d.l7.INITIALIZING].includes(e), _ = (0, l.useCallback)(() => S ? (t(d.l7.DISCONNECTED), (0, r.u)(c.HAw.NITRO_WARP_TOGGLED, {
     is_connecting: false
-  }), S()) : ((0, r.u)(A.HAw.NITRO_WARP_TOGGLED, {
+  }), A()) : ((0, r.u)(c.HAw.NITRO_WARP_TOGGLED, {
     is_connecting: true
-  }), e(T.l7.INITIALIZING), i().then(t => {
-    t || e(T.l7.DISCONNECTED)
-  }).catch(t => {
-    a.A.captureException(t, {
+  }), t(d.l7.INITIALIZING), i().then(e => {
+    e || t(d.l7.DISCONNECTED)
+  }).catch(e => {
+    u.A.captureException(e, {
       tags: {
         source: o.q.PRIVATE_BROWSING_PERK_CONNECT
       }
-    }), u.default.track(A.HAw.PREMIUM_FEATURE_ERROR, {
-      error_message: t instanceof Error ? t.message : JSON.stringify(t),
+    }), a.default.track(c.HAw.PREMIUM_FEATURE_ERROR, {
+      error_message: e instanceof Error ? e.message : JSON.stringify(e),
       error_source: o.q.PRIVATE_BROWSING_PERK_CONNECT
-    }), e(T.l7.DISCONNECTED)
-  })), [E, S, i, e]);
+    }), t(d.l7.DISCONNECTED)
+  })), [S, A, i, t]);
   return (0, n.jsx)("div", {
     children: (0, n.jsx)(s.dOG, {
-      onChange: g,
-      checked: E
+      onChange: _,
+      checked: S
     })
   })
 }

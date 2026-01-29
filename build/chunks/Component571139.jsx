@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 571139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -25,20 +25,20 @@ var Chunk503698 = require("./503698.js"),
   Chunk1624 = require("./1624.js");
 let P = () => {
   var e, t;
-  let i = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
-    P = (0, a.bG)([u.A], () => u.A.getGuild(i), [i]),
-    y = (0, a.bG)([I.A], () => null != i ? I.A.getRequest(i) : null, [i]),
-    f = (0, o.zy)(),
-    C = (null == (t = (0, o.B6)(f.pathname, O.BVt.CHANNEL(null == P ? true : P.id, N.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
-  if (null == P || !(0, T.Qd)(P) || C) return null;
-  let m = null != (e = null == y ? true : y.applicationStatus) ? e : A.B5.STARTED,
-    D = null,
+  let i = (0, o.bG)([E.A], () => E.A.getGuildId(), []),
+    P = (0, o.bG)([u.A], () => u.A.getGuild(i), [i]),
+    y = (0, o.bG)([I.A], () => null != i ? I.A.getRequest(i) : null, [i]),
+    m = (0, a.zy)(),
+    f = (null == (t = (0, a.B6)(m.pathname, O.BVt.CHANNEL(null == P ? true : P.id, N.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
+  if (null == P || !(0, T.Qd)(P) || f) return null;
+  let C = null != (e = null == y ? true : y.applicationStatus) ? e : A.B5.STARTED,
     g = null,
+    D = null,
     h = null,
-    b = [R.lm, S.lm];
-  switch (m) {
+    U = [R.lm, S.lm];
+  switch (C) {
     case A.B5.SUBMITTED:
-      D = p.intl.string(p.t["5iLvSx"]), g = p.intl.string(p.t.mqtdmQ), h = () => {
+      g = p.intl.string(p.t["5iLvSx"]), D = p.intl.string(p.t.mqtdmQ), h = () => {
         (0, s.A)({
           title: p.intl.string(p.t.aIz1oV),
           subtitle: p.intl.string(p.t["13tjTU"]),
@@ -49,7 +49,7 @@ let P = () => {
       };
       break;
     case A.B5.REJECTED:
-      D = p.intl.string(p.t.lk30cY), g = p.intl.string(p.t["8RrsHr"]), h = () => {
+      g = p.intl.string(p.t.lk30cY), D = p.intl.string(p.t["8RrsHr"]), h = () => {
         (0, c.mMO)(async () => {
           let {
             default: e
@@ -75,24 +75,24 @@ let P = () => {
             guildId: P.id
           }, t))
         })
-      }, b.push(R.z3);
+      }, U.push(R.z3);
       break;
     default:
-      D = p.intl.string(p.t.G5YKXP), g = p.intl.string(p.t["r8/DT+"]), h = () => {
+      g = p.intl.string(p.t.G5YKXP), D = p.intl.string(p.t["r8/DT+"]), h = () => {
         (0, _.Ze)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...b),
+    className: l()(...U),
     children: [(0, r.jsx)(c.Text, {
       className: R.wx,
       variant: "text-sm/normal",
-      children: D
+      children: g
     }), (0, r.jsx)(c.Button, {
       variant: "overlay-primary",
       size: "sm",
       onClick: h,
-      text: g
+      text: D
     })]
   })
 }

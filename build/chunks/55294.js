@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 55294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b,
@@ -31,7 +31,7 @@ function b(e) {
   } = e, y = r.useCallback((e, t, n, r) => {
     s.A.sendMessage(e.id, d.Ay.parse(e, n), true, {
       eagerDispatch: false,
-      location: g.Hx.THREAD_CREATION,
+      location: f.Hx.THREAD_CREATION,
       stickerIds: r,
       attachmentsToUpload: t,
       onAttachmentUploadError: (r, l, s, c) => {
@@ -39,15 +39,15 @@ function b(e) {
         (0, o.openUploadError)({
           title: m.intl.string(m.t.B3vFdU),
           help: null != (u = null == c ? true : c.message) ? u : m.intl.string(m.t.zMEjJg)
-        }), "" !== n && "" === p.A.getDraft(e.id, p.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, p.C.FirstThreadMessage), 0 === h.A.getUploadCount(e.id, p.C.FirstThreadMessage) && a.A.setUploads({
+        }), "" !== n && "" === h.A.getDraft(e.id, h.C.FirstThreadMessage) && i.A.saveDraft(e.id, n, h.C.FirstThreadMessage), 0 === p.A.getUploadCount(e.id, h.C.FirstThreadMessage) && a.A.setUploads({
           channelId: e.id,
           uploads: t,
-          draftType: p.C.FirstThreadMessage
+          draftType: h.C.FirstThreadMessage
         })
       }
     })
   }, []);
-  return (0, f.r$)({
+  return (0, g.r$)({
     parentChannel: t,
     parentMessageId: n,
     threadSettings: l,
@@ -83,7 +83,7 @@ function y(e) {
       appliedTags: n
     }
   }, l.x);
-  return (0, f.w0)({
+  return (0, g.w0)({
     parentChannel: t,
     name: n,
     appliedTags: r,

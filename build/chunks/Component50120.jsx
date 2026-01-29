@@ -1,7 +1,7 @@
 /** Chunk was on 95153 **/
 /** chunk id: 50120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => D
+  default: () => _
 }), require("./896048.js"), require("./667532.js"), require("./321073.js"), require("./747238.js"), require("./812715.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,24 +28,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk466410 = require("./466410.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let D = (0, Chunk358367.A)(function(e) {
+let _ = (0, Chunk358367.A)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: c
-  } = e, [s, D] = l.useState(false), _ = (0, h.A)(), m = (0, j.A)(), T = (0, f.A)(), L = (0, v.A)(), I = (0, P.A)(), N = (0, S.A)(), k = (0, E.A)(), R = (0, x.A)(), V = (0, A.A)(), M = (0, p.sw)(), {
+  } = e, [s, _] = i.useState(false), D = (0, h.A)(), I = (0, j.A)(), m = (0, v.A)(), T = (0, f.A)(), L = (0, P.A)(), N = (0, S.A)(), k = (0, E.A)(), R = (0, x.A)(), V = (0, A.A)(), M = (0, p.sw)(), {
     analyticsLocations: G
-  } = (0, d.Ay)(), U = l.useMemo(() => (0, g.H)(), []);
+  } = (0, d.Ay)(), U = i.useMemo(() => (0, g.H)(), []);
   async function X() {
     try {
-      D(true), await (0, u.iD)(), window.location.reload(true)
+      _(true), await (0, u.iD)(), window.location.reload(true)
     } catch (e) {
-      D(false)
+      _(false)
     }
   }
   let H = (0, O.getWebUserSettingsByUserSettingsSections)(),
     F = (0, y.Lu)(),
-    Y = l.useMemo(() => {
+    Y = i.useMemo(() => {
       let e = [];
       F.forEach(t => {
         let {
@@ -59,8 +59,13 @@ let D = (0, Chunk358367.A)(function(e) {
         section: w.nc_.STREAMER_MODE,
         label: C.intl.string(C.t.S5GfOW)
       });
-      let n = e.findIndex(e => e.section === w.nc_.CONNECTIONS),
-        r = {
+      let n = e.findIndex(e => e.section === w.nc_.ACCESSIBILITY);
+      false !== n && e.splice(n + 1, 0, {
+        section: w.nc_.VOICE,
+        label: C.intl.string(C.t.B1fFpf)
+      });
+      let r = e.findIndex(e => e.section === w.nc_.CONNECTIONS),
+        i = {
           section: w.nc_.NOTIFICATIONS,
           label: C.intl.string(C.t.HcoRu0)
         },
@@ -68,11 +73,11 @@ let D = (0, Chunk358367.A)(function(e) {
           section: w.nc_.CLIPS,
           label: C.intl.string(C.t.z2jK6X)
         };
-      return false !== n && e.splice(n + 1, 0, r, ...M ? [l] : []), e
+      return false !== r && e.splice(r + 1, 0, i, ...M ? [l] : []), e
     }, [M, H, F]);
   return (0, r.jsx)(d.f5, {
     value: G,
-    children: (0, r.jsxs)(i.W1t, {
+    children: (0, r.jsxs)(l.W1t, {
       "data-menu-migrated": true,
       navId: "user-settings-cog",
       onClose: a.Z_,
@@ -82,11 +87,11 @@ let D = (0, Chunk358367.A)(function(e) {
       children: [Y.map(e => {
         var t, n;
         let {
-          section: l,
+          section: i,
           label: a,
           onClick: o
-        } = e, c = l.replace(/\W/gi, "_");
-        return (0, r.jsx)(i.Drp, (t = function(e) {
+        } = e, c = i.replace(/\W/gi, "_");
+        return (0, r.jsx)(l.Drp, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -110,7 +115,7 @@ let D = (0, Chunk358367.A)(function(e) {
           action: () => {
             var e, t;
             let n;
-            return null != o ? o() : (t = null != (e = H.get(l)) ? e : b.X.ACCOUNT_PANEL, void(null != (n = Object.values(w.nc_).filter(e => e === l)[0]) && (0, O.openUserSettings)(t, {
+            return null != o ? o() : (t = null != (e = H.get(i)) ? e : b.X.ACCOUNT_PANEL, void(null != (n = Object.values(w.nc_).filter(e => e === i)[0]) && (0, O.openUserSettings)(t, {
               section: n,
               analyticsLocations: G
             })))
@@ -119,15 +124,15 @@ let D = (0, Chunk358367.A)(function(e) {
           children: (e => {
             switch (e) {
               case w.nc_.GAMES:
-                return _;
+                return D;
               case w.nc_.STREAMER_MODE:
-                return m;
-              case w.nc_.APPEARANCE:
-                return T;
-              case w.nc_.ACCESSIBILITY:
-                return L;
-              case w.nc_.VOICE:
                 return I;
+              case w.nc_.APPEARANCE:
+                return m;
+              case w.nc_.ACCESSIBILITY:
+                return T;
+              case w.nc_.VOICE:
+                return L;
               case w.nc_.TEXT:
                 return N;
               case w.nc_.EXPERIMENTS:
@@ -137,7 +142,7 @@ let D = (0, Chunk358367.A)(function(e) {
               default:
                 return null
             }
-          })(l)
+          })(i)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -148,11 +153,11 @@ let D = (0, Chunk358367.A)(function(e) {
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), c)
-      }), e.user.isStaff() && V, e.user.isStaff() && U.length > 0 ? (0, r.jsx)(i.Drp, {
+      }), e.user.isStaff() && V, e.user.isStaff() && U.length > 0 ? (0, r.jsx)(l.Drp, {
         label: "Build Overrides",
         id: "build_overrides",
-        children: (0, r.jsx)(i.rXV, {
-          children: U.map(e => (0, r.jsx)(i.iDA, {
+        children: (0, r.jsx)(l.rXV, {
+          children: U.map(e => (0, r.jsx)(l.iDA, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -162,8 +167,8 @@ let D = (0, Chunk358367.A)(function(e) {
             }
           }, "input-".concat(e.payload)))
         })
-      }) : null, null != t ? (0, r.jsx)(i.rXV, {
-        children: (0, r.jsx)(i.Drp, {
+      }) : null, null != t ? (0, r.jsx)(l.rXV, {
+        children: (0, r.jsx)(l.Drp, {
           id: "clear-build-override",
           disabled: s,
           label: C.intl.string(C.t["/Nz9rY"]),

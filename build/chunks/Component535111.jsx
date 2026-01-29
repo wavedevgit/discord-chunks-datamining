@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 535111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => b
@@ -22,7 +22,7 @@ function m(e) {
   let {
     name: t,
     applicationId: n
-  } = e, l = (0, p.A)({
+  } = e, l = (0, h.A)({
     location: "ActivityPanelGameCard",
     applicationId: n,
     source: d.Ob.RtcPanel,
@@ -30,9 +30,9 @@ function m(e) {
   });
   return (0, r.jsx)(s.DUT, {
     onClick: l,
-    className: i()(null != l && g.On),
-    children: (0, r.jsx)(h.A, {
-      className: g.mO,
+    className: i()(null != l && f.On),
+    children: (0, r.jsx)(p.A, {
+      className: f.mO,
       children: t
     })
   })
@@ -45,30 +45,30 @@ function b(e) {
     game: l,
     onClickNotSharing: i,
     isForceShowSharingPopout: d,
-    setIsForceShowSharingPopout: p,
-    ref: h,
+    setIsForceShowSharingPopout: h,
+    ref: p,
     popoutTargetRef: b
-  } = e, A = null != n ? n.name : null != l ? l.name : f.intl.string(f.t["UQMV/E"]);
+  } = e, A = null != n ? n.name : null != l ? l.name : g.intl.string(g.t["UQMV/E"]);
   return (0, c.z)(), (0, r.jsxs)("div", {
-    className: g.cm,
+    className: f.cm,
     children: [(0, r.jsxs)("div", {
-      className: g.f9,
+      className: f.f9,
       children: [(0, r.jsx)(u.A, {
-        className: g.Gt,
+        className: f.Gt,
         game: n,
         pid: null == l ? true : l.pid,
-        ref: h
+        ref: p
       }), t ? (0, r.jsx)(s.npA, {
         size: "md",
         color: "currentColor",
-        className: g.it
+        className: f.it
       }) : null]
     }), (0, r.jsx)(o.M, {
       popoutTargetRef: b,
       isForceShowSharingPopout: d,
-      setIsForceShowSharingPopout: p,
+      setIsForceShowSharingPopout: h,
       children: (0, r.jsxs)("div", {
-        className: g.pq,
+        className: f.pq,
         children: [null != A ? (0, r.jsx)(m, {
           name: A,
           applicationId: null == n ? true : n.id

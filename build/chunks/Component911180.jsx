@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 911180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk567458 = require("./567458.js");
 
-function f(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,30 +49,30 @@ function b(e, t) {
   }), e
 }
 
-function h(e) {
+function b(e) {
   let {
     onChange: t,
     onClose: n,
     color: l,
-    suggestedColors: h,
-    disabled: A,
+    suggestedColors: b,
+    disabled: h,
     label: E,
-    colorPickerMiddle: x,
-    colorPickerFooter: O,
-    showEyeDropper: C
-  } = e, y = i.useRef(null), j = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), T = c.A.colors.BACKGROUND_MOD_MUTED.css, v = (0, p.sN)(l), S = (0, o.Hl)(l), I = S === j ? T : S, N = v ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(x), R = (0, u.A)(O), [D, w] = i.useState((0, a.A)());
+    colorPickerMiddle: O,
+    colorPickerFooter: C,
+    showEyeDropper: x
+  } = e, S = i.useRef(null), T = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), I = c.A.colors.BACKGROUND_MOD_MUTED.css, y = (0, _.sN)(l), N = (0, o.Hl)(l), j = N === T ? I : N, v = y ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(O), R = (0, u.A)(C), [D, L] = i.useState((0, a.A)());
   return i.useEffect(() => {
-    (P !== x || R !== O) && w((0, a.A)())
-  }, [O, x, R, P]), (0, r.jsx)(d.YNO, {
-    targetElementRef: y,
+    (P !== O || R !== C) && L((0, a.A)())
+  }, [C, O, R, P]), (0, r.jsx)(d.YNO, {
+    targetElementRef: S,
     positionKey: D,
-    renderPopout: e => (0, r.jsx)(d.VNw, b(f({}, e), {
+    renderPopout: e => (0, r.jsx)(d.VNw, f(A({}, e), {
       value: l,
       onChange: t,
-      suggestedColors: h,
-      middle: x,
-      footer: O,
-      showEyeDropper: C
+      suggestedColors: b,
+      middle: O,
+      footer: C,
+      showEyeDropper: x
     })),
     onRequestClose: n,
     children: e => {
@@ -96,28 +96,28 @@ function h(e) {
         return l
       }(e, ["onClick"]);
       return (0, r.jsxs)("div", {
-        ref: y,
+        ref: S,
         className: s()(g.oP, {
-          [g.r9]: A
+          [g.r9]: h
         }),
-        children: [(0, r.jsx)(d.DUT, b(f({}, n), {
-          tabIndex: A ? false : 0,
-          onClick: A ? _.tEg : t,
+        children: [(0, r.jsx)(d.DUT, f(A({}, n), {
+          tabIndex: h ? false : 0,
+          onClick: h ? p.tEg : t,
           style: {
-            backgroundColor: S,
-            borderColor: I
+            backgroundColor: N,
+            borderColor: j
           },
           className: g.nf,
           "aria-label": m.intl.string(m.t.Qp04hK),
           focusProps: {
-            ringTarget: y
+            ringTarget: S
           },
           children: (0, r.jsx)(d.R2l, {
             size: "custom",
             className: g.BW,
             width: 14,
             height: 14,
-            color: N
+            color: v
           })
         })), E]
       })

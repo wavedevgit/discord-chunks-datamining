@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 778983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,32 +16,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk641131 = require("./641131.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function f(e) {
   let {
     message: t,
     user: n,
-    guild: g,
+    guild: f,
     channel: m
-  } = e, b = (0, l.bG)([d.A], () => null != n && null != g && (0, a.Kd)(n, g, [d.A])), {
+  } = e, b = (0, l.bG)([d.A], () => null != n && null != f && (0, a.Kd)(n, f, [d.A])), {
     messageReference: A
-  } = t, y = (0, l.bG)([u.A], () => null != A ? u.A.getMessage(A.channel_id, A.message_id) : null), _ = (0, l.bG)([c.A], () => null != y ? c.A.getChannel(y.channel_id) : null), O = (0, l.bG)([c.A], () => {
+  } = t, y = (0, l.bG)([u.A], () => null != A ? u.A.getMessage(A.channel_id, A.message_id) : null), O = (0, l.bG)([c.A], () => null != y ? c.A.getChannel(y.channel_id) : null), _ = (0, l.bG)([c.A], () => {
     var e, t;
     return null != (e = null == (t = c.A.getChannel(m.id)) ? true : t.isArchivedThread()) && e
   });
   if (!b) return null;
-  let j = null == y ? f.intl.string(h.default["0IZbwC"]) : f.intl.string(h.default.Uj6oD4),
-    v = null == y,
-    x = "delete-message-".concat(t.id);
-  return (0, r.jsx)(p.A, {
-    text: j,
+  let x = null == y ? g.intl.string(p.default["0IZbwC"]) : g.intl.string(p.default.Uj6oD4),
+    j = null == y,
+    v = "delete-message-".concat(t.id);
+  return (0, r.jsx)(h.A, {
+    text: x,
     icon: s.ucK,
     onClick: () => {
-      null != _ && null != y && o.A.confirmDelete(_, y, false, {
-        isFlagResolved: O,
+      null != O && null != y && o.A.confirmDelete(O, y, false, {
+        isFlagResolved: _,
         moderatorReportChannelId: m.id
       })
     },
-    disabled: v,
+    disabled: j,
     color: i.$n.Colors.RED
-  }, x)
+  }, v)
 }

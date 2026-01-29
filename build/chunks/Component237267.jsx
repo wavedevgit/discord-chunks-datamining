@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 237267, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -22,8 +22,8 @@ let m = function(e) {
     hasGuildAffinitiesOrInGuild: m,
     subscriptionIsPausedOrPausePending: g
   } = e, {
-    subtitle: f,
-    flavor: b
+    subtitle: A,
+    flavor: f
   } = function(e) {
     let {
       hasAppliedGuildBoosts: t,
@@ -32,27 +32,27 @@ let m = function(e) {
       subscriptionIsPausedOrPausePending: i
     } = e;
     if (i) return {
-      flavor: p.intl.format(p.t.doslJu, {
+      flavor: _.intl.format(_.t.doslJu, {
         onClick: () => (0, c.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
           section: d.nc_.SUBSCRIPTIONS
         })
       })
     };
     if (!r) return {
-      subtitle: p.intl.string(p.t.oiWYAc)
+      subtitle: _.intl.string(_.t.oiWYAc)
     };
     if (t) return {
-      subtitle: p.intl.string(p.t.W5rDjW),
-      flavor: p.intl.format(p.t.cUHcaQ, {
+      subtitle: _.intl.string(_.t.W5rDjW),
+      flavor: _.intl.format(_.t.cUHcaQ, {
         helpdeskArticle: l.A.getArticleURL(d.MVz.GUILD_SUBSCRIPTIONS)
       })
     };
-    let _ = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-      m = s.Ay.getDefaultPrice(_.id, n),
-      g = (0, a.CE)((0, a.$g)(m.amount, m.currency), _.interval, _.intervalCount);
+    let p = u.hd[u.gD.PREMIUM_MONTH_GUILD],
+      m = s.Ay.getDefaultPrice(p.id, n),
+      g = (0, a.CE)((0, a.$g)(m.amount, m.currency), p.interval, p.intervalCount);
     return {
-      subtitle: n ? p.intl.string(p.t.bhPzXR) : p.intl.string(p.t.Zs9h9Z),
-      flavor: p.intl.formatToPlainString(p.t.PGgTdA, {
+      subtitle: n ? _.intl.string(_.t.bhPzXR) : _.intl.string(_.t.Zs9h9Z),
+      flavor: _.intl.formatToPlainString(_.t.PGgTdA, {
         monthlyGuildBoostPrice: g
       })
     }
@@ -63,14 +63,14 @@ let m = function(e) {
     subscriptionIsPausedOrPausePending: g
   });
   return (0, r.jsxs)("div", {
-    className: _.i,
+    className: p.i,
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/bold",
-      className: _.V,
-      children: f
-    }), null != b && (0, r.jsx)(i.Text, {
+      className: p.V,
+      children: A
+    }), null != f && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: b
+      children: f
     })]
   })
 }

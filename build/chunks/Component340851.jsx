@@ -1,9 +1,9 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 340851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => H,
-  LR: () => V,
-  aI: () => F
+  Ay: () => F,
+  LR: () => B,
+  aI: () => H
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -61,7 +61,7 @@ function U(e) {
   return e
 }
 
-function B(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function B(e, t) {
   }), e
 }
 
-function V(e) {
+function B(e) {
   let {
     numUsers: t
   } = e;
@@ -88,7 +88,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -113,18 +113,18 @@ function F(e) {
     })]
   })
 }
-let H = (0, Chunk296216.J)(function(e) {
+let F = (0, Chunk296216.J)(function(e) {
   var t;
   let {
     collapsed: i,
-    user: h,
-    channel: V,
-    mute: F,
-    localMute: H,
+    user: p,
+    channel: B,
+    mute: H,
+    localMute: F,
     localVideoDisabled: K,
-    deaf: W,
-    video: z,
-    embeddedApplication: Y,
+    deaf: Y,
+    video: W,
+    embeddedApplication: z,
     serverMute: q,
     serverDeaf: X,
     nick: J,
@@ -143,175 +143,175 @@ let H = (0, Chunk296216.J)(function(e) {
     shouldShowHoverPopout: ec,
     previewIsOpen: eu,
     otherClientSessionType: ed,
-    voicePlatform: ep,
-    isSelfOnOtherClient: eh = false,
-    tabIndex: ef,
-    location: eg,
+    voicePlatform: eh,
+    isSelfOnOtherClient: ep = false,
+    tabIndex: eg,
+    location: ef,
     isSelf: em,
     application: eb,
     hangStatusActivity: eA,
     requestToStreamActivity: ey,
-    showHangStatus: e_
+    showHangStatus: eO
   } = e, {
-    enableUserHoverActivities: eO
+    enableUserHoverActivities: e_
   } = (0, R.fC)({
-    guildId: V.guild_id,
+    guildId: B.guild_id,
     location: "VoiceUser"
-  }), ej = l.useRef(null), [ev, ex] = l.useState(false), eE = l.useRef(null), [eC, eS] = l.useState(false), [eI, eN] = l.useState(false), [eT, eP] = l.useState(false), [ew, eR] = l.useState(false), eD = eI || ew || eT, eM = eC || eD, eL = (null == ey ? true : ey.session_id) != null, ek = () => {
-    ex(!ev)
+  }), ex = l.useRef(null), [ej, ev] = l.useState(false), eE = l.useRef(null), [eC, eS] = l.useState(false), [eI, eN] = l.useState(false), [eT, eP] = l.useState(false), [ew, eR] = l.useState(false), eD = eI || ew || eT, eL = eC || eD, eM = (null == ey ? true : ey.session_id) != null, ek = () => {
+    ev(!ej)
   }, eG = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
     null != t && n.has(t) && (eT && eP(false), eI && eN(false)), eU()
   }, eU = () => {
-    null == eo || eo(h.id)
-  }, eB = e => {
-    (!eO || em) && (e ? eE.current = setTimeout(() => {
+    null == eo || eo(p.id)
+  }, eV = e => {
+    (!e_ || em) && (e ? eE.current = setTimeout(() => {
       eS(true)
     }, 150 * !!eu) : clearTimeout(eE.current))
   };
   l.useEffect(() => () => clearTimeout(eE.current), []);
-  let eV = e => {
+  let eB = e => {
       e && eS(false)
     },
-    eF = () => {
-      if (!(er && (0, _.eo)(V, w.A, N.A, T.A, b.default)[0])) return;
+    eH = () => {
+      if (!(er && (0, O.eo)(B, w.A, N.A, T.A, b.default)[0])) return;
       let e = {
-        streamType: L.U4.GUILD,
-        ownerId: h.id,
-        channelId: V.id,
-        guildId: V.guild_id
+        streamType: M.U4.GUILD,
+        ownerId: p.id,
+        channelId: B.id,
+        guildId: B.guild_id
       };
-      I.default.getId() !== h.id && d.default.selectVoiceChannel(V.id), el ? ((0, O.A)(e), c.A.selectParticipant(e.channelId, (0, y._z)(e))) : (0, p.Nl)(e), null == eo || eo(h.id)
+      I.default.getId() !== p.id && d.default.selectVoiceChannel(B.id), el ? ((0, _.A)(e), c.A.selectParticipant(e.channelId, (0, y._z)(e))) : (0, h.Nl)(e), null == eo || eo(p.id)
     },
-    eH = e => {
+    eF = e => {
       (0, u.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
-        return t => (0, r.jsx)(e, B(U({}, t), {
-          user: h,
-          guildId: V.guild_id,
-          channel: V,
+        return t => (0, r.jsx)(e, V(U({}, t), {
+          user: p,
+          guildId: B.guild_id,
+          channel: B,
           showMediaItems: true,
-          showStageChannelItems: V.isGuildStageVoice(),
-          onInteraction: (0, m.s)("GuildChannelUserContextMenu", g.A.VOICE_USER, {
-            targetUserId: h.id
+          showStageChannelItems: B.isGuildStageVoice(),
+          onInteraction: (0, m.s)("GuildChannelUserContextMenu", f.A.VOICE_USER, {
+            targetUserId: p.id
           })
         }))
       })
     },
-    eK = e => em ? (0, r.jsx)(v.h, B(U({}, e), {
-      channel: V,
+    eK = e => em ? (0, r.jsx)(j.h, V(U({}, e), {
+      channel: B,
       setIsHangStatusInputFocused: eN,
       setIsEmojiPickerOpen: eR
-    })) : null != eA ? (0, r.jsx)(x.E, B(U({}, e), {
+    })) : null != eA ? (0, r.jsx)(v.E, V(U({}, e), {
       hangStatusActivity: eA,
-      channel: V,
-      userId: h.id
+      channel: B,
+      userId: p.id
     })) : null,
-    eW = () => (0, r.jsx)(E.A, {
-      userId: h.id,
-      channel: V
+    eY = () => (0, r.jsx)(E.A, {
+      userId: p.id,
+      channel: B
     }),
-    ez = () => (0, f.r9)() && (0, f.UK)(V.id) ? null : (0, r.jsx)(j.A, {
-      user: h,
-      channel: V,
-      onWatch: eF,
+    eW = () => (0, g.r9)() && (0, g.UK)(B.id) ? null : (0, r.jsx)(x.A, {
+      user: p,
+      channel: B,
+      onWatch: eH,
       previewIsOpen: eu,
-      location: eg
+      location: ef
     }),
-    eY = (0, r.jsx)("div", {
+    ez = (0, r.jsx)("div", {
       className: G.kZ,
-      "data-dnd-name": V.name,
-      onMouseEnter: eh ? true : () => {
-        eO ? (em && e_ && !ev && !eM && eS(true), ev || null == ea || ea(h.id)) : (er || e_ || eL) && !ev && (null == ea || ea(h.id))
+      "data-dnd-name": B.name,
+      onMouseEnter: ep ? true : () => {
+        e_ ? (em && eO && !ej && !eL && eS(true), ej || null == ea || ea(p.id)) : (er || eO || eM) && !ej && (null == ea || ea(p.id))
       },
-      onMouseLeave: eh ? true : eU,
+      onMouseLeave: ep ? true : eU,
       children: (0, r.jsx)(C.A, {
-        clickTrap: (null == h ? true : h.id) === (null == (t = P.default.getCurrentUser()) ? true : t.id) && ev,
-        targetElementRef: ej,
-        user: h,
-        guildId: V.guild_id,
-        channelId: V.id,
-        newAnalyticsLocations: [g.A.VOICE_USER],
-        shouldShow: ev,
-        onRequestClose: () => ex(false),
+        clickTrap: (null == p ? true : p.id) === (null == (t = P.default.getCurrentUser()) ? true : t.id) && ej,
+        targetElementRef: ex,
+        user: p,
+        guildId: B.guild_id,
+        channelId: B.id,
+        newAnalyticsLocations: [f.A.VOICE_USER],
+        shouldShow: ej,
+        onRequestClose: () => ev(false),
         children: e => (e => {
-          let t = M.hv.has(null != ed ? ed : ""),
+          let t = L.hv.has(null != ed ? ed : ""),
             n = {
-              user: h,
+              user: p,
               speaking: Z,
               latched: $,
               disconnected: ee,
-              mute: F,
-              localMute: H,
+              mute: H,
+              localMute: F,
               localVideoDisabled: K,
               isStreaming: er,
               isGuest: ei,
-              video: z,
+              video: W,
               priority: es,
               ringing: Q,
-              deaf: W,
+              deaf: Y,
               nick: J,
               collapsed: i,
               overlap: i,
               serverMute: q,
               serverDeaf: X,
-              tabIndex: ef,
+              tabIndex: eg,
               otherClientSessionType: ed,
-              voicePlatform: ep,
-              embeddedApplication: Y,
+              voicePlatform: eh,
+              embeddedApplication: z,
               avatarContainerClass: s()({
                 [G.dj]: true
               }),
-              disabled: eh && !t,
-              selected: ev,
+              disabled: ep && !t,
+              selected: ej,
               onClick: t ? true : ek,
-              onDoubleClick: eF,
-              onContextMenu: eH,
-              guildId: V.guild_id,
+              onDoubleClick: eH,
+              onContextMenu: eF,
+              guildId: B.guild_id,
               isSelf: em,
               application: eb,
-              channelId: V.id,
+              channelId: B.id,
               hangStatusActivity: eA,
-              showHangStatus: e_
+              showHangStatus: eO
             };
-          if (eh) {
+          if (ep) {
             var l;
             return (0, r.jsx)(a.m, {
               text: null != (l = (0, A.A)(ed)) ? l : k.intl.string(k.t.IyYqqY),
               children: (0, r.jsx)(S.Ay, U({
-                ref: ej
+                ref: ex
               }, n))
             })
           }
           let c = () => null;
-          return e_ && eM && (!eO || em) ? c = eK : eO ? c = em && e_ ? eK : () => (0, r.jsx)(D.A, {
-            channel: V,
-            user: h,
+          return eO && eL && (!e_ || em) ? c = eK : e_ ? c = em && eO ? eK : () => (0, r.jsx)(D.A, {
+            channel: B,
+            user: p,
             onAction: eU,
-            onWatchStream: er ? eF : true,
+            onWatchStream: er ? eH : true,
             previewIsOpen: eu,
             hangStatusActivity: eA
-          }) : er ? c = ez : eL && h.id !== I.default.getId() ? c = eW : e_ && (c = eK), (0, r.jsx)(o.YNO, {
-            targetElementRef: ej,
+          }) : er ? c = eW : eM && p.id !== I.default.getId() ? c = eY : eO && (c = eK), (0, r.jsx)(o.YNO, {
+            targetElementRef: ex,
             position: "right",
             renderPopout: c,
-            shouldShow: (ec || e_ && eD && (!eO || em)) && !ev,
+            shouldShow: (ec || eO && eD && (!e_ || em)) && !ej,
             onRequestClose: eG,
-            align: e_ && eM && !em && !eO ? "center" : true,
-            spacing: e_ && eM && (!eO || em) ? 8 : 0,
-            children: () => (0, r.jsx)(S.Ay, B(U({}, n), {
-              ref: ej,
+            align: eO && eL && !em && !e_ ? "center" : true,
+            spacing: eO && eL && (!e_ || em) ? 8 : 0,
+            children: () => (0, r.jsx)(S.Ay, V(U({}, n), {
+              ref: ex,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,
-              handleHoverHangStatus: eB,
-              handleHoverIcons: eV,
+              handleHoverHangStatus: eV,
+              handleHoverIcons: eB,
               onAddHangStatusClicked: () => eP(true)
             }))
           })
         })(e)
       })
     });
-  return en ? et(eY) : eY
+  return en ? et(ez) : ez
 })

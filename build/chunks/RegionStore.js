@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 717518, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var r, l, Chunk735438 = require("./735438.js"),
   s = require.n(Chunk735438),
@@ -10,7 +10,7 @@ var r, l, Chunk735438 = require("./735438.js"),
   Chunk71393 = require("./71393.js");
 let u = null,
   d = {};
-class p extends(l = Chunk311907.Ay.Store) {
+class h extends(l = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
@@ -43,13 +43,13 @@ class p extends(l = Chunk311907.Ay.Store) {
   getRegions(e) {
     return null != e ? d[e] : u
   }
-}(r = "displayName") in p ? Object.defineProperty(p, r, {
+}(r = "displayName") in h ? Object.defineProperty(h, r, {
   value: "RegionStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[r] = "RegionStore";
-let h = new p(Chunk73153.h, {
+}) : h[r] = "RegionStore";
+let p = new h(Chunk73153.h, {
   LOAD_REGIONS: function(e) {
     let t = s().sortBy(e.regions, e => e.name);
     null != e.guildId ? d[e.guildId] = t : u = t

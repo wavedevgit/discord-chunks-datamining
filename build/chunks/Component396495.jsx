@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 396495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => A
@@ -17,8 +17,8 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk792427 = require("./792427.js");
 
-function g() {
-  return (g = Object.assign || function(e) {
+function f() {
+  return (f = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -57,43 +57,43 @@ function b(e) {
   }, {
     disableTrack: t
   }, [t]), (0, r.jsxs)("div", {
-    className: i()(f.jC, {
-      [f.R]: t
+    className: i()(g.jC, {
+      [g.R]: t
     }),
     children: [(0, r.jsx)("img", {
-      className: f.Sl,
+      className: g.Sl,
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
       alt: "HD Streaming Nitro Perk"
     }), (0, r.jsx)(a.$n, {
       "data-migration-pending": true,
-      className: f.b,
-      "aria-label": h.intl.string(h.t.cpT0Cq),
+      className: g.b,
+      "aria-label": p.intl.string(p.t.cpT0Cq),
       look: a.$n.Looks.BLANK,
       size: a.$n.Sizes.NONE,
       onClick: () => {
-        n(), u.default.track(p.HAw.HD_STREAMING_POPOUT_DISMISSED)
+        n(), u.default.track(h.HAw.HD_STREAMING_POPOUT_DISMISSED)
       },
       children: (0, r.jsx)(o.PGe, {
         size: "xs",
-        className: f.ut,
+        className: g.ut,
         color: "white"
       })
     }), (0, r.jsx)("div", {
-      className: f.Gm,
+      className: g.Gm,
       children: (0, r.jsxs)("div", {
-        className: f.op,
+        className: g.op,
         children: [(0, r.jsx)(o.Text, {
-          className: f.aV,
+          className: g.aV,
           variant: "text-sm/medium",
-          children: h.intl.format(h.t.ruvD7i, {})
+          children: p.intl.format(p.t.ruvD7i, {})
         }), (0, r.jsxs)("div", {
-          className: f.vX,
+          className: g.vX,
           children: [(0, r.jsx)(o.tvc, {
             size: "xs"
           }), (0, r.jsx)(o.Text, {
-            className: f.aV,
+            className: g.aV,
             variant: "text-sm/medium",
-            children: h.intl.string(h.t["BMw+7I"])
+            children: p.intl.string(p.t["BMw+7I"])
           })]
         })]
       })
@@ -103,7 +103,7 @@ function b(e) {
 
 function A(e) {
   var t, n;
-  let {} = e, l = g({}, e);
+  let {} = e, l = f({}, e);
   return (0, r.jsx)(d.x, (t = m({}, l), n = n = {
     renderComponent: e => (0, r.jsx)(b, m({}, e))
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

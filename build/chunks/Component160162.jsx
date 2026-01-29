@@ -2,7 +2,7 @@
 /** chunk id: 160162, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk463347 = require("./463347.js"),
   Chunk976860 = require("./976860.js"),
   Chunk652215 = require("./652215.js");
-class h extends Chunk64700.Component {
+class p extends Chunk64700.Component {
   componentDidUpdate(e) {
     let {
       location: t
@@ -51,13 +51,13 @@ class h extends Chunk64700.Component {
     return null
   }
 }
-let p = () => (0, i.jsxs)(s.dO, {
+let h = () => (0, i.jsxs)(s.dO, {
   children: [(0, i.jsx)(a.A, {
     path: u.BVt.CHANNEL(c.pv.guildId(), c.pv.channelId({
       optional: true
     }), ":messageId?"),
-    component: h
+    component: p
   }), (0, i.jsx)(a.A, {
-    component: h
+    component: p
   })]
 })

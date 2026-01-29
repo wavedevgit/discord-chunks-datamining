@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 459301, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 459301, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  m: () => Y
+  m: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,118 +38,118 @@ var Chunk627968 = require("./627968.js"),
   Chunk120499 = require("./120499.js"),
   Chunk684399 = require("./684399.js"),
   Chunk446115 = require("./446115.js");
-let Y = () => {
-    let t = (0, o.q)((0, d.Ay)()),
+let x = () => {
+    let e = (0, o.q)((0, T.Ay)()),
       {
-        analyticsLocations: e
-      } = (0, S.Ay)(A.A.CF_WARP_SETTINGS);
+        analyticsLocations: t
+      } = (0, A.Ay)(c.A.CF_WARP_SETTINGS);
     return (0, l.useEffect)(() => {
-      D.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
-        type: G.e.PRIVACY_PERK_SETTINGS,
-        location_stack: e
+      m.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+        type: y.e.PRIVACY_PERK_SETTINGS,
+        location_stack: t
       })
-    }, [e]), (0, n.jsxs)("div", {
-      className: h.V1,
+    }, [t]), (0, n.jsxs)("div", {
+      className: V.V1,
       children: [(0, n.jsxs)(r.hLv, {
         color: "pink",
         children: [(0, n.jsx)("div", {
-          className: h.N1,
+          className: V.N1,
           children: (0, n.jsxs)("div", {
-            className: h.wx,
+            className: V.wx,
             children: [(0, n.jsxs)("div", {
-              className: h.QF,
-              children: [(0, n.jsx)(L.A, {
-                color: t ? "black" : "white"
+              className: V.QF,
+              children: [(0, n.jsx)(p.A, {
+                color: e ? "black" : "white"
               }), (0, n.jsx)("div", {
-                className: h.zN
+                className: V.zN
               }), (0, n.jsx)("img", {
-                src: t ? M : U,
+                src: e ? M : U,
                 alt: "Cloudflare",
                 width: 103,
                 height: 15
               })]
-            }), (0, n.jsx)(c.q, {})]
+            }), (0, n.jsx)(g.q, {})]
           })
         }), (0, n.jsxs)("div", {
-          className: h.hQ,
+          className: V.hQ,
           children: [(0, n.jsx)("img", {
             src: X,
             width: "100",
             alt: "Private browsing perk logo"
           }), (0, n.jsxs)("div", {
-            className: h.Qs,
-            children: [(0, n.jsx)(P.F, {}), (0, n.jsx)(R.q, {})]
+            className: V.Qs,
+            children: [(0, n.jsx)(D.F, {}), (0, n.jsx)(L.q, {})]
           }), (0, n.jsx)("div", {
-            className: h.yP
+            className: V.yP
           }), (0, n.jsx)("div", {
-            className: h.OQ,
+            className: V.OQ,
             children: (0, n.jsx)(k, {})
           })]
         })]
-      }), (0, n.jsx)(m.u, {})]
+      }), (0, n.jsx)(v.u, {})]
     })
   },
   k = () => {
     let {
-      installationStatus: t,
-      isWeb: e,
+      installationStatus: e,
+      isWeb: t,
       setInstallationStatus: i
-    } = (0, O.lV)(), o = (0, g.L)(), d = (0, l.useRef)(false);
+    } = (0, O.lV)(), o = (0, _.L)(), T = (0, l.useRef)(false);
     if ((0, l.useEffect)(() => () => {
-        d.current || C.Ay.fireSurveyAction(o ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
-      }, [d, o]), e) return (0, n.jsx)(I.X, {
+        T.current || N.Ay.fireSurveyAction(o ? s.w.WARP_VPN_SETTINGS_BOUNCE_NITRO : s.w.WARP_VPN_SETTINGS_BOUNCE_NON_NITRO)
+      }, [T, o]), t) return (0, n.jsx)(I.X, {
       onClick: () => {
-        d.current = true
+        T.current = true
       }
     });
     if (!o) return (0, n.jsxs)("div", {
-      className: h._u,
-      children: [(0, n.jsx)(E.A, {
-        buttonTextOverride: y.intl.string(y.t["8x0jKT"]),
-        subscriptionTier: G.pe.TIER_2,
+      className: V._u,
+      children: [(0, n.jsx)(S.A, {
+        buttonTextOverride: G.intl.string(G.t["8x0jKT"]),
+        subscriptionTier: y.pe.TIER_2,
         fullWidth: true,
         size: "sm",
         premiumModalAnalyticsLocation: {
-          page: A.A.CF_WARP_SETTINGS
+          page: c.A.CF_WARP_SETTINGS
         },
         onClick: () => {
-          d.current = true
+          T.current = true
         }
-      }), (0, n.jsx)(a.$nd, {
+      }), (0, n.jsx)(u.$nd, {
         variant: "secondary",
-        text: y.intl.string(y.t.ZnqyZ2),
+        text: G.intl.string(G.t.ZnqyZ2),
         size: "sm",
         onClick: () => {
-          (0, u.closeModal)(p.USER_SETTINGS_MODAL_KEY), (0, b.pX)(f.BVt.APPLICATION_STORE), d.current = true
+          (0, a.closeModal)(f.USER_SETTINGS_MODAL_KEY), (0, b.pX)(P.BVt.APPLICATION_STORE), T.current = true
         }
       })]
     });
-    switch (t) {
-      case _.Lk.ERROR:
-      case _.Lk.NOT_INSTALLED:
-        return (0, n.jsx)(v.y, {
-          onClick: () => d.current = true
+    switch (e) {
+      case E.Lk.ERROR:
+      case E.Lk.NOT_INSTALLED:
+        return (0, n.jsx)(R.y, {
+          onClick: () => T.current = true
         });
-      case _.Lk.INSTALLED:
-        return (0, n.jsx)(N.X, {});
-      case _.Lk.ZERO_TRUST:
+      case E.Lk.INSTALLED:
+        return (0, n.jsx)(C.X, {});
+      case E.Lk.ZERO_TRUST:
         break;
-      case _.Lk.EXISTING_INSTALLATION:
-        return (0, n.jsx)(a.$nd, {
+      case E.Lk.EXISTING_INSTALLATION:
+        return (0, n.jsx)(u.$nd, {
           variant: "primary",
           onClick: () => {
-            (0, T.u)(f.HAw.NITRO_WARP_CTA_CLICKED, {
+            (0, d.u)(P.HAw.NITRO_WARP_CTA_CLICKED, {
               is_enable_warp: true
-            }), i(_.Lk.READY_FOR_LICENSE), d.current = true
+            }), i(E.Lk.READY_FOR_LICENSE), T.current = true
           },
-          text: y.intl.string(V.default.J09UWz)
+          text: G.intl.string(h.default.J09UWz)
         });
-      case _.Lk.INSTALLING:
-      case _.Lk.READY_FOR_LICENSE:
-      case _.Lk.WAITING_FOR_TERMS:
-      case _.Lk.INSTALLING_TIMEOUT:
+      case E.Lk.INSTALLING:
+      case E.Lk.READY_FOR_LICENSE:
+      case E.Lk.WAITING_FOR_TERMS:
+      case E.Lk.INSTALLING_TIMEOUT:
         return (0, n.jsx)("div", {
-          className: h.u1,
+          className: V.u1,
           children: (0, n.jsx)(r.y$y, {
             type: r.tVU.SPINNING_CIRCLE
           })

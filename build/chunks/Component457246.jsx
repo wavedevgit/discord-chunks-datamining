@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 457246, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => d
@@ -33,10 +33,10 @@ function d(e) {
         name: u.intl.string(u.t.JEmsap)
       }
     }, [t, n]),
-    p = l.useCallback(e => {
+    h = l.useCallback(e => {
       null != t && a.A.changeCallRegion(t.channelId, e.id)
     }, [t]),
-    h = l.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
+    p = l.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
       let {
         id: t,
         name: n
@@ -46,13 +46,13 @@ function d(e) {
         group: "region-select",
         label: n,
         checked: t === d.id,
-        action: () => p(e)
+        action: () => h(e)
       }, "region-".concat(t))
-    }), [n, d, p]);
+    }), [n, d, h]);
   return (0, r.jsx)(s.Drp, {
     id: "region-select",
     label: u.intl.string(u.t.w8gMqh),
     subtext: d.name,
-    children: h
+    children: p
   })
 }

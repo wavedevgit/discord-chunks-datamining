@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 593629, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -18,15 +18,15 @@ function u(e) {
   let {
     user: n,
     savedUserColor: u,
-    pendingColor: p,
-    setPendingAccentColor: _
-  } = e, m = n.getAvatarURL(null, 80), g = (0, s.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), f = (0, a.rh)(m, g, false), b = (0, i.LX)(f[0]);
+    pendingColor: _,
+    setPendingAccentColor: p
+  } = e, m = n.getAvatarURL(null, 80), g = (0, s.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), A = (0, a.rh)(m, g, false), f = (0, i.LX)(A[0]);
   return (0, r.jsx)(c.A, {
     title: d.intl.string(d.t["/X3fkf"]),
     children: (0, r.jsx)(o.A, {
-      onChange: e => _(e),
-      color: null != (t = null != p ? p : u) ? t : b,
-      suggestedColors: f,
+      onChange: e => p(e),
+      color: null != (t = null != _ ? _ : u) ? t : f,
+      suggestedColors: A,
       showEyeDropper: true
     })
   })

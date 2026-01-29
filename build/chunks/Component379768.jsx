@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 379768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -37,10 +37,10 @@ var Chunk627968 = require("./627968.js"),
 function R(e) {
   let {
     channel: t
-  } = e, [n, i] = l.useState(false), a = (0, g.Ay)(t, true), R = t.guild_id, D = (0, u.bG)([O.A], () => null != R ? O.A.getSortedRoles(R) : true), M = (0, u.bG)([x.default, j.A], () => {
+  } = e, [n, i] = l.useState(false), a = (0, f.Ay)(t, true), R = t.guild_id, D = (0, u.bG)([_.A], () => null != R ? _.A.getSortedRoles(R) : true), L = (0, u.bG)([v.default, x.A], () => {
     var e;
-    return x.default.getUser(null == (e = j.A.getGuild(R)) ? true : e.ownerId)
-  }), L = l.useMemo(() => null != D ? D.filter(e => !(0, _.Oy)(e)) : [], [D]), k = l.useMemo(() => o()(L).filter(e => {
+    return v.default.getUser(null == (e = x.A.getGuild(R)) ? true : e.ownerId)
+  }), M = l.useMemo(() => null != D ? D.filter(e => !(0, O.Oy)(e)) : [], [D]), k = l.useMemo(() => o()(M).filter(e => {
     if (null == R) returnfalse;
     let n = E.aH({
       forceRoles: {
@@ -49,11 +49,11 @@ function R(e) {
       context: t
     });
     return c.X8(n, c.kg(N.xBc.ADMINISTRATOR, N.xBc.VIEW_CHANNEL))
-  }).value(), [t, R, L]), G = (0, u.yK)([x.default], () => {
+  }).value(), [t, R, M]), G = (0, u.yK)([v.default], () => {
     let e = {};
-    for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
-      if (n.type !== f.r2.MEMBER || null != e[n.id]) continue;
-      let t = x.default.getUser(n.id);
+    for (let n of (null != L && (e[L.id] = L), Object.values(t.permissionOverwrites))) {
+      if (n.type !== g.r2.MEMBER || null != e[n.id]) continue;
+      let t = v.default.getUser(n.id);
       null != t && (e[t.id] = t)
     }
     return o()(e).filter(e => {
@@ -67,7 +67,7 @@ function R(e) {
         i = c.zy(l.allow, N.xBc.VIEW_CHANNEL);
       return r || i
     }).value()
-  }, [t, M]), U = v.A.can(N.xBc.MANAGE_CHANNELS, t) || v.A.can(N.xBc.MANAGE_ROLES, t), B = l.useCallback(() => i(false), []);
+  }, [t, L]), U = j.A.can(N.xBc.MANAGE_CHANNELS, t) || j.A.can(N.xBc.MANAGE_ROLES, t), V = l.useCallback(() => i(false), []);
   return (0, r.jsxs)(S.Ay, {
     channelId: t.id,
     children: [(0, r.jsx)(S.WK, {
@@ -87,20 +87,20 @@ function R(e) {
       })
     }), U ? (0, r.jsxs)("div", {
       className: P.$x,
-      children: [(0, r.jsx)(p.Button, {
+      children: [(0, r.jsx)(h.Button, {
         size: "sm",
         variant: "secondary",
         text: T.intl.string(T.t.dMJ3Y6),
         onClick: () => i(true),
-        icon: p.nFg
-      }), (0, r.jsx)(p.Button, {
+        icon: h.nFg
+      }), (0, r.jsx)(h.Button, {
         size: "sm",
         variant: "secondary",
         text: T.intl.string(T.t["3gUsJb"]),
         onClick: function() {
-          h.Ay.open(t.id)
+          p.Ay.open(t.id)
         },
-        icon: p.R2l
+        icon: h.R2l
       })]
     }) : null, (0, r.jsxs)("div", {
       className: P.ol,
@@ -115,16 +115,16 @@ function R(e) {
           n = C.Ay.getName(e);
         return (0, r.jsxs)("div", {
           className: P.HD,
-          children: [(0, r.jsx)(p.euF, {
+          children: [(0, r.jsx)(h.euF, {
             src: e.getAvatarURL(t.guild_id, 24),
             "aria-label": n,
-            size: p._3J.SIZE_24
-          }), (0, r.jsx)(p.Text, {
+            size: h._3J.SIZE_24
+          }), (0, r.jsx)(h.Text, {
             tag: "span",
             className: P.Jk,
             variant: "text-md/normal",
             children: n
-          }), "\xa0", (0, r.jsx)(p.Text, {
+          }), "\xa0", (0, r.jsx)(h.Text, {
             tag: "span",
             variant: "text-md/normal",
             color: "text-muted",
@@ -155,7 +155,7 @@ function R(e) {
           verified: o
         }, e.id)
       })]
-    }), n ? (0, r.jsx)(p.aFV, {
+    }), n ? (0, r.jsx)(h.aFV, {
       renderModal: e => {
         var n, l;
         return (0, r.jsx)(m.default, (n = function(e) {
@@ -176,7 +176,7 @@ function R(e) {
           }
           return e
         }({}, e), l = l = {
-          onClose: () => (B(), e.onClose()),
+          onClose: () => (V(), e.onClose()),
           channelId: t.id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);

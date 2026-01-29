@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 442671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,22 +13,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk688810 = require("./688810.jsx"),
   Chunk657331 = require("./657331.js"),
   Chunk331011 = require("./331011.js");
-let _ = e => {
+let p = e => {
   let {
     userId: t,
     children: n,
     isLast: l,
-    className: _
+    className: p
   } = e, [m, g] = i.useState(false), {
-    analyticsLocations: f
-  } = (0, d.Ay)(), b = i.useCallback(() => {
+    analyticsLocations: A
+  } = (0, d.Ay)(), f = i.useCallback(() => {
     (0, u.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: f
+      sourceAnalyticsLocations: A
     })
-  }, [t, f]), h = () => {
+  }, [t, A]), b = () => {
     g(true)
-  }, A = () => {
+  }, h = () => {
     g(false)
   };
   return (0, r.jsx)(o.tG, {
@@ -61,13 +61,13 @@ let _ = e => {
           style: {
             opacity: 1
           },
-          className: s()(p.KG, _, {
-            [p.HV]: l,
-            [p.vu]: m
+          className: s()(_.KG, p, {
+            [_.HV]: l,
+            [_.vu]: m
           }),
-          onMouseEnter: h,
-          onMouseLeave: A,
-          onClick: b
+          onMouseEnter: b,
+          onMouseLeave: h,
+          onClick: f
         }, e), i = i = {
           children: n(m)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

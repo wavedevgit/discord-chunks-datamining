@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 347606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,14 +14,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk894858 = require("./894858.js"),
   Chunk270952 = require("./270952.js");
 
-function _(e) {
+function p(e) {
   let {
     node: t,
     children: n
-  } = e, l = i.useRef(false), [_, m] = i.useState(false), g = (0, o.K)(e => {
+  } = e, l = i.useRef(false), [p, m] = i.useState(false), g = (0, o.K)(e => {
     l.current = e, e && m(false)
-  }, .5), f = i.useRef(null), b = i.useCallback(() => {
-    null != f.current && (cancelAnimationFrame(f.current), f.current = null)
+  }, .5), A = i.useRef(null), f = i.useCallback(() => {
+    null != A.current && (cancelAnimationFrame(A.current), A.current = null)
   }, []);
   return i.useEffect(() => {
     let e = u.A.subscribe(e => {
@@ -30,9 +30,9 @@ function _(e) {
       } = e;
       return t
     }, e => {
-      if (b(), null == e || e.targetKey !== t.key || null != e.targetAccordionKey) return;
+      if (f(), null == e || e.targetKey !== t.key || null != e.targetAccordionKey) return;
       let n = e.animateScroll && !c.A.useReducedMotion;
-      n || t.type === d.Z6.CATEGORY || m(true), f.current = requestAnimationFrame(() => {
+      n || t.type === d.Z6.CATEGORY || m(true), A.current = requestAnimationFrame(() => {
         var t, r;
         let i = null != (t = e.scrollBlock) ? t : "start";
         null == (r = g.current) || r.scrollIntoView({
@@ -47,12 +47,12 @@ function _(e) {
       fireImmediately: true
     });
     return () => {
-      e(), b()
+      e(), f()
     }
-  }, [b, t.key, t.type, g]), (0, r.jsx)("div", {
+  }, [f, t.key, t.type, g]), (0, r.jsx)("div", {
     ref: g,
     "data-debug-key": t.key,
-    className: s()(p.k, _ && p.j),
+    className: s()(_.k, p && _.j),
     children: n
   })
 }

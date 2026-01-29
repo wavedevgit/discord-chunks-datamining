@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 998986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -67,8 +67,8 @@ function T(e) {
     guildId: t,
     selected: n,
     handleClick: l
-  } = e, u = (0, f.YZ)(t, "guild_shop_channel_row"), g = (0, s.bG)([_.A], () => _.A.getGuild(t)), x = (null == g ? true : g.features.has(v.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, T = "false" === o.w.get(E.bJ, "false"), P = (0, s.bG)([d.A], () => d.A.useReducedMotion);
-  return (0, r.jsx)(j.G, {
+  } = e, u = (0, g.YZ)(t, "guild_shop_channel_row"), f = (0, s.bG)([O.A], () => O.A.getGuild(t)), v = (null == f ? true : f.features.has(j.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, T = "false" === o.w.get(E.bJ, "false"), P = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+  return (0, r.jsx)(x.G, {
     id: "shop-".concat(t),
     className: i()(S.A2, {
       [S.wH]: n,
@@ -90,17 +90,17 @@ function T(e) {
         text: C.intl.string(C.t.y2b7CA),
         className: S.Ad
       }) : (0, r.jsx)("img", {
-        src: (0, h.n)("server_products/storefront/money.gif"),
+        src: (0, p.n)("server_products/storefront/money.gif"),
         className: S.TG,
         alt: ""
       }), n && (0, r.jsx)(c.DUT, {
         className: S.b,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), O.default.track(v.HAw.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, p.H$)(t)), {
+          if (e.stopPropagation(), (0, b.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), _.default.track(j.HAw.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, h.H$)(t)), {
               action_taken: E.hN.DISMISS_CHANNEL_ROW
-            })), !u || !x) {
+            })), !u || !v) {
             var n;
-            (0, A.bG)(v.BVt.CHANNEL(t, null == (n = y.Ay.getDefaultChannel(t)) ? true : n.id))
+            (0, A.bG)(j.BVt.CHANNEL(t, null == (n = y.Ay.getDefaultChannel(t)) ? true : n.id))
           }
         },
         "aria-label": C.intl.string(C.t.cpT0Cq),
@@ -117,14 +117,14 @@ function P(e) {
   let {
     guild: t,
     selected: l
-  } = e, i = (0, g.P)(t, "guild_shop_channel_row"), s = () => {
-    o.w.set(E.bJ, "true"), (0, A.pX)(v.BVt.CHANNEL(t.id, x.VV.GUILD_SHOP))
+  } = e, i = (0, f.P)(t, "guild_shop_channel_row"), s = () => {
+    o.w.set(E.bJ, "true"), (0, A.pX)(j.BVt.CHANNEL(t.id, v.VV.GUILD_SHOP))
   };
   return i ? (0, r.jsx)(T, {
     guildId: t.id,
     selected: l,
     handleClick: s
-  }) : (0, r.jsx)(j.G, {
+  }) : (0, r.jsx)(x.G, {
     id: "shop-".concat(t.id),
     renderIcon: e => (0, r.jsx)(m.h, {
       width: 20,

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 374873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => k
@@ -92,10 +92,10 @@ let R = Chunk64700.memo(function(e) {
       channel: i,
       participant: s,
       tempDisableOnInit: a = false
-    } = e, m = l.useRef(null), [_, v] = l.useState(a);
-    (0, f.Ay)(() => {
-      if (!_) return;
-      let e = setTimeout(() => v(false), 1e3);
+    } = e, m = l.useRef(null), [O, j] = l.useState(a);
+    (0, g.Ay)(() => {
+      if (!O) return;
+      let e = setTimeout(() => j(false), 1e3);
       return () => clearTimeout(e)
     });
     let C = i.getGuildId();
@@ -103,16 +103,16 @@ let R = Chunk64700.memo(function(e) {
     let {
       isMobile: S,
       status: I
-    } = (0, c.cf)([O.A], () => ({
-      isMobile: O.A.isMobileOnline(s.user.id),
-      status: O.A.getStatus(s.user.id, C)
-    })), R = (0, c.bG)([y.Ay], () => y.Ay.getMember(C, s.user.id)), D = (0, b.gn)(i.guild_id, null == R ? true : R.userId, null != (t = null == R ? true : R.colorStrings) ? t : null), M = l.useMemo(() => ({
+    } = (0, c.cf)([_.A], () => ({
+      isMobile: _.A.isMobileOnline(s.user.id),
+      status: _.A.getStatus(s.user.id, C)
+    })), R = (0, c.bG)([y.Ay], () => y.Ay.getMember(C, s.user.id)), D = (0, b.gn)(i.guild_id, null == R ? true : R.userId, null != (t = null == R ? true : R.colorStrings) ? t : null), L = l.useMemo(() => ({
       [C]: [s.user.id]
     }), [C, s.user.id]);
-    (0, g.E)(M, "RequestToSpeakSidebar");
-    let L = s.rtsState === E.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
+    (0, f.E)(L, "RequestToSpeakSidebar");
+    let M = s.rtsState === E.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
       k = e => {
-        (0, p.L3)(e, async () => {
+        (0, h.L3)(e, async () => {
           let {
             default: e
           } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
@@ -141,7 +141,7 @@ let R = Chunk64700.memo(function(e) {
             className: T.$u,
             onContextMenu: k
           }, e), {
-            children: [(0, r.jsx)(h.A, {
+            children: [(0, r.jsx)(p.A, {
               size: d._3J.SIZE_40,
               className: T.RB,
               user: s.user,
@@ -157,7 +157,7 @@ let R = Chunk64700.memo(function(e) {
               }), (0, r.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: (0, x.g)(s)
+                children: (0, v.g)(s)
               })]
             })]
           }))
@@ -165,16 +165,16 @@ let R = Chunk64700.memo(function(e) {
       }), (0, r.jsxs)("div", {
         className: T.UD,
         children: [(0, r.jsx)(u.m, {
-          text: L ? N.intl.string(N.t.h9rsTd) : N.intl.string(N.t.f0T7hI),
+          text: M ? N.intl.string(N.t.h9rsTd) : N.intl.string(N.t.f0T7hI),
           asContainer: true,
           children: (0, r.jsx)(d.K0, {
             onClick: function() {
-              (0, j.lL)(i, s.user.id, false)
+              (0, x.lL)(i, s.user.id, false)
             },
-            disabled: L || _,
+            disabled: M || O,
             icon: d.LvC,
             variant: "secondary",
-            "aria-label": L ? N.intl.string(N.t.h9rsTd) : N.intl.string(N.t.f0T7hI)
+            "aria-label": M ? N.intl.string(N.t.h9rsTd) : N.intl.string(N.t.f0T7hI)
           })
         }), (0, r.jsx)(u.m, {
           text: N.intl.string(N.t.moABMy),
@@ -182,7 +182,7 @@ let R = Chunk64700.memo(function(e) {
           children: (0, r.jsx)(d.K0, {
             "aria-label": N.intl.string(N.t.moABMy),
             onClick: function() {
-              (0, j.lL)(i, s.user.id, true)
+              (0, x.lL)(i, s.user.id, true)
             },
             icon: d.PGe,
             variant: "secondary"
@@ -191,7 +191,7 @@ let R = Chunk64700.memo(function(e) {
       })]
     })
   }),
-  M = Chunk64700.memo(function(e) {
+  L = Chunk64700.memo(function(e) {
     let {
       channel: t
     } = e, [n, l] = (0, C.X)(t.id);
@@ -201,7 +201,7 @@ let R = Chunk64700.memo(function(e) {
       onChange: l
     })
   }),
-  L = Chunk64700.memo(function() {
+  M = Chunk64700.memo(function() {
     return (0, r.jsxs)("div", {
       className: T.y7,
       children: [(0, r.jsx)(S.A, {}), (0, r.jsx)(d.Text, {
@@ -223,7 +223,7 @@ function k(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: l
-  } = e, i = (0, v.J2)(t.id), a = [+!!(0, c.bG)([_.A], () => _.A.can(I.xB.MANAGE_CHANNELS, t) || _.A.can(I.xB.MANAGE_ROLES, t)), Math.max(1, i.length)];
+  } = e, i = (0, j.J2)(t.id), a = [+!!(0, c.bG)([O.A], () => O.A.can(I.xB.MANAGE_CHANNELS, t) || O.A.can(I.xB.MANAGE_ROLES, t)), Math.max(1, i.length)];
   return (0, r.jsxs)("div", {
     className: s()(T.kL, {
       [T.X_]: l
@@ -254,11 +254,11 @@ function k(e) {
         } = e;
         switch (n) {
           case 0:
-            return (0, r.jsx)(M, {
+            return (0, r.jsx)(L, {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === i.length) return (0, r.jsx)(L, {}, "participants-empty");
+            if (0 === i.length) return (0, r.jsx)(M, {}, "participants-empty");
             let e = i[l];
             return (0, r.jsx)(D, {
               channel: t,

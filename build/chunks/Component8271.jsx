@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 8271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -24,14 +24,14 @@ function m() {
   return (0, r.jsx)(o.h, {
     setting: d.H.PRIVACY_DATA_QUESTS_3P,
     children: (0, r.jsx)(c.Ay, {
-      title: p.intl.string(p.t.CyLYKZ),
-      note: p.intl.format(p.t["2QFDU/"], {
+      title: _.intl.string(_.t.CyLYKZ),
+      note: _.intl.format(_.t["2QFDU/"], {
         helpdeskArticle: s.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !e,
       onChange: e => a.vf.updateSetting(!e),
       disabled: m || t || n,
-      tooltipText: n ? p.intl.string(_.default["6Af/cw"]) : true
+      tooltipText: n ? _.intl.string(p.default["6Af/cw"]) : true
     })
   })
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 177164, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 177164, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   w: () => o
 });
@@ -10,6 +10,6 @@ var Chunk419954 = require("./419954.js"),
   Chunk897027 = require("./897027.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zZ)(Chunk780964.X.NOTIFICATIONS_OVERVIEW_CATEGORY, {
-  useTitle: () => a.intl.string(a.t["/dp6yY"]),
-  buildLayout: () => [s.d, u.H, r.p]
+  useTitle: () => u.intl.string(u.t["/dp6yY"]),
+  buildLayout: () => [s.d, a.H, r.p]
 })

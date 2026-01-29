@@ -1,7 +1,7 @@
 /** Chunk was on 9407 **/
-/** chunk id: 956450, original params: e,t,n (module,exports,require) **/
+/** chunk id: 956450, original params: E,_,I (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => n
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,38 +13,38 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk531525 = require("./531525.js"),
   Chunk524988 = require("./524988.js");
-let p = e => {
+let n = E => {
   let {
-    transitionState: t,
-    onClose: n,
-    classificationId: p,
-    source: m
-  } = e, h = (0, o.A)(), f = () => {
-    n(), (0, r.openUserSettings)(a.X.ACCOUNT_PANEL, {
-      section: c.nc_.ACCOUNT,
-      subsection: d.H.PRIVACY_AND_SAFETY_STANDING
+    transitionState: _,
+    onClose: I,
+    classificationId: n,
+    source: P
+  } = E, i = (0, C.A)(), L = () => {
+    I(), (0, O.openUserSettings)(T.X.ACCOUNT_PANEL, {
+      section: t.nc_.ACCOUNT,
+      subsection: N.H.PRIVACY_AND_SAFETY_STANDING
     })
   };
-  return (0, i.jsxs)(l.EOs, {
-    className: u.CR,
-    transitionState: t,
+  return (0, A.jsxs)(S.EOs, {
+    className: R.CR,
+    transitionState: _,
     parentComponent: "ClassificationDetailModal",
     "data-migration-pending": true,
-    children: [(0, i.jsx)("div", {
-      className: u.Hc,
-      children: (0, i.jsx)(l.s_y, {
+    children: [(0, A.jsx)("div", {
+      className: R.Hc,
+      children: (0, A.jsx)(S.s_y, {
         "data-migration-pending": true,
-        className: u.g8,
-        onClick: n
+        className: R.g8,
+        onClick: I
       })
-    }), (0, i.jsx)(l.$mQ, {
+    }), (0, A.jsx)(S.$mQ, {
       "data-migration-pending": true,
-      className: u.jE,
-      children: h ? (0, i.jsx)(l.y$y, {}) : (0, i.jsx)(s.A, {
-        classificationId: p,
-        source: m,
-        onError: f,
-        onClose: f
+      className: R.jE,
+      children: i ? (0, A.jsx)(S.y$y, {}) : (0, A.jsx)(e.A, {
+        classificationId: n,
+        source: P,
+        onError: L,
+        onClose: L
       })
     })]
   })

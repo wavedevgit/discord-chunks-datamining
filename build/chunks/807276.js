@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 807276, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 807276, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -10,10 +10,10 @@ var Chunk524136 = require("./524136.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zD)(Chunk780964.X.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
-  useTitle: () => a.intl.string(a.t.NjOMvh),
+  useTitle: () => u.intl.string(u.t.NjOMvh),
   useBadge: () => "beta",
   useValue: Chunk253932.oz.useSetting,
   setValue: Chunk524136.O,
-  useSearchTerms: () => [a.intl.string(a.t.hi4dSk)],
+  useSearchTerms: () => [u.intl.string(u.t.hi4dSk)],
   usePredicate: () => (0, l.p)("FriendAnniversaryNotifications")
 })

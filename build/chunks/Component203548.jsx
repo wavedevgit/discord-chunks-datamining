@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 203548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -14,12 +14,12 @@ let c = Math.ceil(Math.sqrt(115200)),
   d = Chunk64700.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, [d, p] = l.useState(false), h = l.useCallback(e => {
-      p(e.contentRect.width)
-    }, []), f = (0, a.w)(h, [], {
+    } = e, [d, h] = l.useState(false), p = l.useCallback(e => {
+      h(e.contentRect.width)
+    }, []), g = (0, a.w)(p, [], {
       fireOnMount: true
     }), [{
-      shineSpring: g
+      shineSpring: f
     }, m] = (0, s.zhh)(() => ({
       from: {
         shineSpring: 0
@@ -44,11 +44,11 @@ let c = Math.ceil(Math.sqrt(115200)),
       let e = (0, r.jsx)(i.animated.div, {
         className: o.q2,
         style: {
-          transform: g.to(e => "translateX(calc(".concat(e * d, "px + ").concat(e * c, "px)) translateY(-50%) rotate(45deg)"))
+          transform: f.to(e => "translateX(calc(".concat(e * d, "px + ").concat(e * c, "px)) translateY(-50%) rotate(45deg)"))
         }
       });
       return n(o.VU, o.Qq, o.Kk, e)
-    }, [n, d, g]);
+    }, [n, d, f]);
     return l.useImperativeHandle(t, () => ({
       onMouseEnter: b,
       onMouseLeave: A
@@ -58,7 +58,7 @@ let c = Math.ceil(Math.sqrt(115200)),
       onMouseLeave: A,
       onFocus: b,
       onBlur: A,
-      ref: f,
+      ref: g,
       style: {
         "--custom-shine-dimensions": "".concat(240, "px"),
         "--custom-shine-rotated-dimensions-delta": "".concat(u, "px")

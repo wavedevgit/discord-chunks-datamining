@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 187582, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => M
+  A: () => L
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -57,8 +57,8 @@ function R(e) {
     user: t,
     channel: a,
     status: d,
-    activities: p
-  } = e, h = (0, s.bG)([_.A], () => null != _.A.getTypingUsers(a.id)[t.id]), g = (0, s.bG)([O.default], () => O.default.getCurrentUser()), j = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), x = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, f.A)(t.id), N = l.useRef(null), P = e => {
+    activities: h
+  } = e, p = (0, s.bG)([O.A], () => null != O.A.getTypingUsers(a.id)[t.id]), f = (0, s.bG)([_.default], () => _.default.getCurrentUser()), x = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), v = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, g.A)(t.id), N = l.useRef(null), P = e => {
     (0, o.L3)(e, async () => {
       let {
         default: e
@@ -85,15 +85,15 @@ function R(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    v._.dispatch(S.jej.TEXTAREA_FOCUS, {
+    j._.dispatch(S.jej.TEXTAREA_FOCUS, {
       channelId: a.id
-    }), v._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
+    }), j._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.A.startTyping(a.id)
   }, D = (0, m.r)({
     user: t
-  }), [M, L] = l.useState(false);
+  }), [L, M] = l.useState(false);
   return (0, r.jsx)(b.A, {
     targetElementRef: N,
     user: t,
@@ -101,8 +101,8 @@ function R(e) {
     position: i.Fr ? "window_center" : "left",
     spacing: 16,
     onShiftClick: R,
-    shouldShow: M,
-    onRequestClose: () => L(false),
+    shouldShow: L,
+    onRequestClose: () => M(false),
     children: e => {
       let {
         onClick: n,
@@ -127,25 +127,25 @@ function R(e) {
       return (0, r.jsx)(u.A, T({
         ref: N,
         user: t,
-        currentUser: g,
+        currentUser: f,
         isOwner: t.id === a.ownerId,
         ownerTooltipText: I.intl.string(I.t["MRXZ+x"]),
         shouldAnimateStatus: w,
-        isTyping: h,
+        isTyping: p,
         status: d,
-        activities: p,
+        activities: h,
         applicationStream: C,
         channel: a,
         onContextMenu: P,
-        selected: M,
-        isMobile: j,
-        nick: x,
+        selected: L,
+        isMobile: x,
+        nick: v,
         nameplate: D,
         onClick: e => {
-          e.shiftKey ? null == R || R() : L(e => !e)
+          e.shiftKey ? null == R || R() : M(e => !e)
         },
         onMouseDown: e => {
-          M ? e.stopPropagation() : null == l || l(e)
+          L ? e.stopPropagation() : null == l || l(e)
         }
       }, i), t.id)
     }
@@ -162,19 +162,19 @@ function D(e, t) {
   returntrue
 }
 
-function M(e) {
+function L(e) {
   let {
     channel: t
-  } = e, n = O.default.getCurrentUser(), i = null == n ? true : n.isStaff(), {
+  } = e, n = _.default.getCurrentUser(), i = null == n ? true : n.isStaff(), {
     analyticsLocations: o
-  } = (0, p.Ay)(d.A.MEMBER_LIST), {
+  } = (0, h.Ay)(d.A.MEMBER_LIST), {
     listItems: c
-  } = (0, s.bG)([y.A, O.default, A.A], () => {
-    let e = (0, x.F)(t.recipients, O.default),
+  } = (0, s.bG)([y.A, _.default, A.A], () => {
+    let e = (0, v.F)(t.recipients, _.default),
       n = {};
     for (let t of e) {
       var r, l, i;
-      y.A.isFriend(t.id) || t.id === (null == (r = O.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+      y.A.isFriend(t.id) || t.id === (null == (r = _.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
         status: null != (l = A.A.getStatus(t.id)) ? l : S.clD.OFFLINE,
         activities: null != (i = A.A.getActivities(t.id)) ? i : P
       } : n[t.id] = {
@@ -196,14 +196,14 @@ function M(e) {
     }
   }, [t], D);
   l.useEffect(() => {
-    j.default.track(S.HAw.MEMBER_LIST_VIEWED, {
+    x.default.track(S.HAw.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id, t.type]);
   let u = i && c.every(e => e.user.isStaff());
-  return (0, r.jsx)(p.f5, {
+  return (0, r.jsx)(h.f5, {
     value: o,
     children: (0, r.jsx)("div", {
       className: N.kL,
@@ -212,10 +212,10 @@ function M(e) {
         children: (0, r.jsxs)(a.HOs, {
           className: N.ol,
           fade: true,
-          children: [(0, r.jsxs)(g.A, {
+          children: [(0, r.jsxs)(f.A, {
             className: N.lL,
-            children: ["".concat(I.intl.string(I.t["9Oq93m"]), "—").concat(c.length, " "), u && (0, r.jsx)(h.A, {
-              type: h.A.Types.STAFF_ONLY_DM
+            children: ["".concat(I.intl.string(I.t["9Oq93m"]), "—").concat(c.length, " "), u && (0, r.jsx)(p.A, {
+              type: p.A.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(R, {
             user: e.user,

@@ -1,7 +1,7 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 803398, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,10 +12,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk736653 = require("./736653.js"),
   Chunk351906 = require("./351906.js"),
   Chunk985018 = require("./985018.jsx");
-let g = () => {
-  let e = (0, l.bG)([d.A], () => d.A.hidePersonalInformation),
+let h = () => {
+  let e = (0, s.bG)([d.A], () => d.A.hidePersonalInformation),
     t = (0, c.Ay)();
-  return (s.useEffect(() => {
+  return (l.useEffect(() => {
     a.A.fetch()
   }, []), e) ? (0, i.jsx)(o.A, {}) : (0, i.jsxs)(r.BJc, {
     gap: 16,

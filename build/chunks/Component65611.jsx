@@ -1,9 +1,9 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 65611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  eW: () => f,
-  em: () => p,
-  oi: () => h,
+  eW: () => g,
+  em: () => h,
+  oi: () => p,
   wN: () => d
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
@@ -24,7 +24,7 @@ function d(e, t, n) {
   })
 }
 
-function p() {
+function h() {
   return (0, r.jsx)(a.fkz, {
     icon: (0, a.kHD)(c.A),
     disableColor: true,
@@ -32,7 +32,7 @@ function p() {
   })
 }
 
-function h(e) {
+function p(e) {
   let t, {
     audio: n,
     video: r,
@@ -51,13 +51,13 @@ function h(e) {
     if (!c) return null;
     t = a.k9F
   }
-  return g({
+  return f({
     icon: t,
     isCurrentUserConnected: i
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     guildJoinRequestStatus: t
   } = e, [n, r] = function(e) {
@@ -72,13 +72,13 @@ function f(e) {
         return [true, a.R2l]
     }
   }(t);
-  return g({
+  return f({
     icon: r,
     color: n
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     icon: t,
     color: n,

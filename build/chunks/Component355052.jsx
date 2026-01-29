@@ -40,14 +40,14 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let P = 10 * Chunk927813.A.Millis.SECOND,
-  T = new Chunk118356.Vy("LegacyOverlayErrorBoundary");
+let T = 10 * Chunk927813.A.Millis.SECOND,
+  P = new Chunk118356.Vy("LegacyOverlayErrorBoundary");
 
 function D() {
-  let e = (0, _.getPID)(),
-    t = (0, _.getRPCAuthToken)();
+  let e = (0, O.getPID)(),
+    t = (0, O.getRPCAuthToken)();
   (0, g.tN)({
-    type: I.kGV.DISPATCH,
+    type: C.kGV.DISPATCH,
     pid: e,
     token: t,
     payloads: [{
@@ -59,7 +59,7 @@ function D() {
 }
 class R extends Chunk64700.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, P), f.A.track(I.HAw.NOTIFICATION_VIEWED, {
+    this.notificationTimer = setTimeout(this.hideNotification, T), f.A.track(C.HAw.NOTIFICATION_VIEWED, {
       notif_type: j.KS.OverlayCrashed
     })
   }
@@ -81,21 +81,21 @@ class R extends Chunk64700.PureComponent {
     return null == r ? null : (0, i.jsx)(x.A, {
       contentDomRef: this.contentDomRef,
       observe: false,
-      children: (0, i.jsx)(p.NPJ, {
-        theme: I.NJ8.DARK,
-        children: r => (0, i.jsxs)(p.DUT, {
+      children: (0, i.jsx)(h.NPJ, {
+        theme: C.NJ8.DARK,
+        children: r => (0, i.jsxs)(h.DUT, {
           innerRef: this.contentDomRef,
           className: l()(r, w.kL),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(A.Ay, {
+          children: [(0, i.jsx)(m.Ay, {
             expand: true,
             icon: (0, i.jsx)(b.A, {
               width: 40,
               height: 40,
               className: w.Lo
             }),
-            title: C.intl.string(C.t.U38qZj),
-            confirmText: C.intl.string(C.t.TzAl1a),
+            title: I.intl.string(I.t.U38qZj),
+            confirmText: I.intl.string(I.t.TzAl1a),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
@@ -131,7 +131,7 @@ class R extends Chunk64700.PureComponent {
     }), N(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), D(), f.A.track(I.HAw.NOTIFICATION_CLICKED, {
+      }), D(), f.A.track(C.HAw.NOTIFICATION_CLICKED, {
         notif_type: j.KS.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
@@ -156,19 +156,19 @@ let k = a().throttle(() => {
 });
 class L extends Chunk64700.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, m.JK)().location;
+    let n = (0, _.JK)().location;
     this.setState({
       error: e,
       info: t
-    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
+    }), P.error("ErrorBoundary caught error: ".concat(e.message), {
       error: e,
       info: t
     });
-    let i = (0, _.getPID)(),
-      r = (0, _.getRPCAuthToken)();
+    let i = (0, O.getPID)(),
+      r = (0, O.getRPCAuthToken)();
     (0, g.tN)({
-      type: I.kGV.DISPATCH,
-      pid: (0, _.getPID)(),
+      type: C.kGV.DISPATCH,
+      pid: (0, O.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -183,7 +183,7 @@ class L extends Chunk64700.PureComponent {
     let s = (0, v.St)(e, E.Ue.Hook, {
       extra: t
     });
-    f.A.track(I.HAw.APP_CRASHED, {
+    f.A.track(C.HAw.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

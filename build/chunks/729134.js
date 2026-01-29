@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 729134, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 729134, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   C: () => o
 });
@@ -10,40 +10,40 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_ENABLE_PHRASE_SIGNALS, {
-  useTitle: () => a.intl.string(a.t.nHsilt),
-  useSubtitle: () => a.intl.string(a.t["s6wq+m"]),
+  useTitle: () => u.intl.string(u.t.nHsilt),
+  useSubtitle: () => u.intl.string(u.t["s6wq+m"]),
   useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipSignals.enablePhraseSignals),
-  setValue: t => {
-    var e, i;
+  setValue: e => {
+    var t, i;
     let n = l.A.getSettings().clipSignals;
-    s.PW((e = function(t) {
-      for (var e = 1; e < arguments.length; e++) {
-        var i = null != arguments[e] ? arguments[e] : {},
+    s.PW((t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var i = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(i);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(i, t).enumerable
-        }))), n.forEach(function(e) {
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(i, e).enumerable
+        }))), n.forEach(function(t) {
           var n;
-          n = i[e], e in t ? Object.defineProperty(t, e, {
+          n = i[t], t in e ? Object.defineProperty(e, t, {
             value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : t[e] = n
+          }) : e[t] = n
         })
       }
-      return t
+      return e
     }({}, n), i = i = {
-      enablePhraseSignals: t
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
-      var i = Object.keys(t);
+      enablePhraseSignals: e
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      var i = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(t);
+        var n = Object.getOwnPropertySymbols(e);
         i.push.apply(i, n)
       }
       return i
-    })(Object(i)).forEach(function(t) {
-      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t))
-    }), e))
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+    }), t))
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 590089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => c
@@ -19,16 +19,16 @@ function c(e) {
     secondaryTrailingElement: c,
     title: d,
     description: u,
-    onClick: p,
-    ref: _,
+    onClick: _,
+    ref: p,
     style: m
   } = e;
   return (0, r.jsxs)(a.DUT, {
     className: l()(o.EA, {
-      [o.vk]: null != p
+      [o.vk]: null != _
     }),
-    onClick: p,
-    innerRef: _,
+    onClick: _,
+    innerRef: p,
     style: m,
     children: [null != n && (0, r.jsx)("div", {
       className: o._y,

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 454148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => _
+  L: () => O
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,41 +21,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _(e) {
+function O(e) {
   let {
     channelId: t,
-    warningId: _,
-    senderId: O
-  } = e, j = (0, b.CW)(), v = l.useCallback(() => {
-    (0, p.xi)(t, [_])
-  }, [t, _]), x = e => {
+    warningId: O,
+    senderId: _
+  } = e, x = (0, b.CW)(), j = l.useCallback(() => {
+    (0, h.xi)(t, [O])
+  }, [t, O]), v = e => {
     a.A.updateChannelOverrideSettings(null, t, {
       muted: true
-    }, m.fd.Muted), c.A.showMuteSuccessToast(O, t), (0, f._$)({
+    }, m.fd.Muted), c.A.showMuteSuccessToast(_, t), (0, g._$)({
       channelId: t,
-      warningId: _,
-      senderId: O,
-      warningType: h._j.LIKELY_ATO,
+      warningId: O,
+      senderId: _,
+      warningType: p._j.LIKELY_ATO,
       cta: e
-    }), v()
+    }), j()
   };
   return l.useEffect(() => {
-    (0, f.mO)(A.HAw.SAFETY_WARNING_VIEWED, {
+    (0, g.mO)(A.HAw.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: _,
-      senderId: O,
-      warningType: h._j.LIKELY_ATO
+      warningId: O,
+      senderId: _,
+      warningType: p._j.LIKELY_ATO
     }), o.A.increment({
       name: i.K.SAFETY_WARNING_VIEW
     })
-  }, [t, _, O]), (0, r.jsx)(g.N, {
+  }, [t, O, _]), (0, r.jsx)(f.N, {
     channelId: t,
-    warningId: _,
-    senderId: O,
-    warningType: h._j.LIKELY_ATO,
+    warningId: O,
+    senderId: _,
+    warningType: p._j.LIKELY_ATO,
     header: y.intl.string(y.t.R8UsiI),
     description: y.intl.string(y.t.lI8nQl),
-    onDismiss: v,
+    onDismiss: j,
     buttons: [{
       text: y.intl.string(y.t.tC1pvL),
       variant: "primary",
@@ -73,10 +73,10 @@ function _(e) {
               transitionState: l,
               onClose: i,
               channelId: t,
-              warningId: _,
-              senderId: O,
+              warningId: O,
+              senderId: _,
               description: y.intl.string(y.t["/uid3p"]),
-              safetyTipRows: j.map((e, t) => (0, r.jsx)(u.B, {
+              safetyTipRows: x.map((e, t) => (0, r.jsx)(u.B, {
                 listType: "numbered",
                 index: t,
                 title: e.title,
@@ -87,16 +87,16 @@ function _(e) {
                 description: y.intl.string(y.t.w2ve0t),
                 buttonText: y.intl.string(y.t.ftIK2A),
                 onButtonPress: () => {
-                  x(f.Wm.USER_MODAL_MUTE), i()
+                  v(g.Wm.USER_MODAL_MUTE), i()
                 }
               }, "likely-ato-mute")],
               learnMore: (0, r.jsx)(s.DUT, {
-                onClick: () => (0, f._$)({
+                onClick: () => (0, g._$)({
                   channelId: t,
-                  warningId: _,
-                  senderId: O,
-                  warningType: h._j.LIKELY_ATO,
-                  cta: f.Wm.USER_MODAL_LEARN_MORE
+                  warningId: O,
+                  senderId: _,
+                  warningType: p._j.LIKELY_ATO,
+                  cta: g.Wm.USER_MODAL_LEARN_MORE
                 }),
                 children: (0, r.jsx)(s.Heading, {
                   variant: "heading-sm/medium",
@@ -108,17 +108,17 @@ function _(e) {
               })
             })
           }
-        }), (0, f._$)({
+        }), (0, g._$)({
           channelId: t,
-          warningId: _,
-          senderId: O,
-          warningType: h._j.LIKELY_ATO,
-          cta: f.Wm.OPEN_MORE_TIPS
+          warningId: O,
+          senderId: _,
+          warningType: p._j.LIKELY_ATO,
+          cta: g.Wm.OPEN_MORE_TIPS
         })
       }
     }, {
       text: y.intl.string(y.t.ftIK2A),
-      onClick: () => x(f.Wm.USER_BANNER_MUTE)
+      onClick: () => v(g.Wm.USER_BANNER_MUTE)
     }]
   })
 }

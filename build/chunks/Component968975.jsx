@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 968975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -25,24 +25,24 @@ function b(e) {
     onClick: b,
     wishlistId: A,
     cardSize: y,
-    title: _
+    title: O
   } = e, {
-    analyticsLocations: O
+    analyticsLocations: _
   } = (0, s.Ay)(), {
-    trackUserProfileWishlistAction: j
-  } = (0, d.NJ)(), v = (0, l.useCallback)(e => {
+    trackUserProfileWishlistAction: x
+  } = (0, d.NJ)(), j = (0, l.useCallback)(e => {
     let {
       wishlistId: t,
       action: n,
       productLines: r
     } = e;
-    null != t && j({
+    null != t && x({
       wishlistId: t,
       action: n,
       productLines: r
     })
-  }, [j]), {
-    cards: x,
+  }, [x]), {
+    cards: v,
     singleItem: E,
     productLines: C
   } = (0, l.useMemo)(() => {
@@ -56,27 +56,27 @@ function b(e) {
       let n = t[e];
       i.push(n), (0, u.$)(n) && (0, a.bF)(n.sku) ? s = true : (0, c.L)(n) && (d = true)
     }
-    let p = s && d;
+    let h = s && d;
     for (let r = 0; r < i.length; r++) {
       let s = i[r],
         a = 3 === r && t.length > 4;
-      (0, c.L)(s) ? (l.add(s.skuProductLine), e.push((0, f.M)(s, {
+      (0, c.L)(s) ? (l.add(s.skuProductLine), e.push((0, g.M)(s, {
         index: r,
         moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: O,
+        analyticsLocations: _,
         onViewWishlist: b,
         wishlistId: A,
-        showTypeTooltip: p,
+        showTypeTooltip: h,
         cardSize: y
       }))) : (0, u.$)(s) && (l.add(s.skuProductLine), e.push((0, o.Z)(s, {
         index: r,
         moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: O,
+        analyticsLocations: _,
         onViewWishlist: b,
         wishlistId: A,
-        showTypeTooltip: p,
+        showTypeTooltip: h,
         cardSize: y
       })))
     }
@@ -85,31 +85,31 @@ function b(e) {
       singleItem: r,
       productLines: l
     }
-  }, [t, n, O, b, A, y]), S = (0, p.A)({
+  }, [t, n, _, b, A, y]), S = (0, h.A)({
     wishlistId: null != A ? A : null,
-    onAction: v,
+    onAction: j,
     productLines: C
   });
-  if (0 === x.length) return null;
-  let I = x;
-  return null != E && ((0, c.L)(E) ? I = (0, f.z)(E, {
+  if (0 === v.length) return null;
+  let I = v;
+  return null != E && ((0, c.L)(E) ? I = (0, g.z)(E, {
     profileOwner: n,
-    analyticsLocations: O,
+    analyticsLocations: _,
     wishlistId: A,
     onViewWishlist: b
   }) : (0, u.$)(E) && (I = (0, o.A)(E, {
     profileOwner: n,
-    analyticsLocations: O,
+    analyticsLocations: _,
     wishlistId: A,
     onViewWishlist: b
-  }))), (0, r.jsxs)(h.A.Overlay, {
+  }))), (0, r.jsxs)(p.A.Overlay, {
     ref: S,
     className: m.kL,
     children: [(0, r.jsx)("div", {
       className: m.wx,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
-        children: null != _ ? _ : g.intl.string(g.t["7lZ31J"])
+        children: null != O ? O : f.intl.string(f.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
       className: m.vY,

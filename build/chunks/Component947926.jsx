@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 947926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => B,
@@ -78,8 +78,8 @@ function U(e) {
   } = (0, v.Gk)(), Y = l.useContext(N.Z) || h && B && !Q && !U, {
     isExpanded: J,
     setIsExpanded: X,
-    expandQuestBar: $,
-    isExpansionAnimationComplete: Z,
+    expandQuestBar: Z,
+    isExpansionAnimationComplete: $,
     isVisibilityAnimationAtRest: ee,
     expansionSpring: et,
     visibilitySpring: en,
@@ -102,7 +102,7 @@ function U(e) {
     quest: r,
     isExpanded: J,
     setIsExpanded: X,
-    expandQuestBar: $,
+    expandQuestBar: Z,
     isQuestCompleted: z,
     isQuestAccepted: H,
     prevIsQuestAccepted: K,
@@ -172,7 +172,7 @@ function U(e) {
                 quest: r,
                 taskDetails: eg,
                 isExpanded: J,
-                isExpansionAnimationComplete: Z,
+                isExpansionAnimationComplete: $,
                 onCtxMenuClose: er,
                 onCtxMenuOpen: el,
                 onCtxMenuSelect: ei,

@@ -2,7 +2,7 @@
 /** chunk id: 611861, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => _
+  default: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,14 +23,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk8088 = require("./8088.jsx"),
   Chunk652215 = require("./652215.js");
 require("./71071.jsx"), require("./939857.jsx"), require("./40876.js"), require("./851341.js"), require("./921955.js"), Chunk311907.Ay.initialize();
-let _ = function() {
-  return r.useEffect(() => (y.A.initialize(), d.A.initialize(), A.A.init(), () => {
+let O = function() {
+  return r.useEffect(() => (y.A.initialize(), d.A.initialize(), m.A.init(), () => {
     y.A.terminate(), d.A.terminate()
   }), []), (0, i.jsxs)(r.Fragment, {
     children: [(0, i.jsx)(u.A, {}), (0, i.jsx)(c.N, {
-      children: (0, i.jsxs)(m.A, {
-        children: [(0, i.jsx)(p.Al, {}), (0, i.jsx)(h.Ay, {}), (0, i.jsx)(g.Wr, {
-          appContext: O.BRT.OVERLAY,
+      children: (0, i.jsxs)(_.A, {
+        children: [(0, i.jsx)(h.Al, {}), (0, i.jsx)(p.Ay, {}), (0, i.jsx)(g.Wr, {
+          appContext: A.BRT.OVERLAY,
           renderWindow: window,
           children: (0, i.jsxs)(f.Yf, {
             children: [(0, i.jsx)(b.A, {}), (0, i.jsx)(o.bM6, {}), (0, i.jsx)(a.A, {}), (0, i.jsx)(s.P, {}), (0, i.jsx)(f.C8, {})]

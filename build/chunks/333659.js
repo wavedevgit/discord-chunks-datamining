@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 333659, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 333659, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -10,17 +10,17 @@ var Chunk955572 = require("./955572.js"),
   Chunk614651 = require("./614651.jsx"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.Qx)(Chunk780964.X.APPEARANCE_MESSAGE_DISPLAY_MODE, {
-  useTitle: () => a.intl.string(a.t.nKRoPv),
-  useSubtitle: () => a.intl.string(a.t.QntEEG),
+  useTitle: () => u.intl.string(u.t.nKRoPv),
+  useSubtitle: () => u.intl.string(u.t.QntEEG),
   useOptions: () => [{
-    name: a.intl.string(a.t.Jqj4cZ),
-    value: u.IE.COZY
+    name: u.intl.string(u.t.Jqj4cZ),
+    value: a.IE.COZY
   }, {
-    name: a.intl.string(a.t["1JNcPS"]),
-    value: u.IE.COMPACT
+    name: u.intl.string(u.t["1JNcPS"]),
+    value: a.IE.COMPACT
   }],
-  useValue: () => s.hH.useSetting() ? u.IE.COMPACT : u.IE.COZY,
-  setValue: t => {
-    s.hH.updateSetting(t === u.IE.COMPACT), (0, n.AC)()
+  useValue: () => s.hH.useSetting() ? a.IE.COMPACT : a.IE.COZY,
+  setValue: e => {
+    s.hH.updateSetting(e === a.IE.COMPACT), (0, n.AC)()
   }
 })

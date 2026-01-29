@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 562991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -26,40 +26,40 @@ function A(e) {
     hovered: i,
     subtitle: A,
     onClick: y,
-    showEmptyChannelTopic: _
-  } = e, O = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), j = null != O && O.length > 0, v = (0, u.Ay)(t, true), x = null != A && A.length > 0;
+    showEmptyChannelTopic: O
+  } = e, _ = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), x = null != _ && _.length > 0, j = (0, u.Ay)(t, true), v = null != A && A.length > 0;
   if (l.useEffect(() => {
-      j && h.default.track(f.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && p.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [j, t.id, t.guild_id]), null == t.guild_id) return null;
-  let E = s()(m.Ui, n && v ? m.BI : null);
-  return j ? (0, r.jsx)(c.DUT, {
+    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
+  let E = s()(m.Ui, n && j ? m.BI : null);
+  return x ? (0, r.jsx)(c.DUT, {
     className: E,
-    onClick: v ? y : true,
+    onClick: j ? y : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: s()(m.qS, b.PT),
       children: (0, r.jsx)(o.A, {
-        children: p.A.parseVoiceChannelStatus(O, true, {
+        children: h.A.parseVoiceChannelStatus(_, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && v && (!x || i) && _ ? (0, r.jsxs)(c.DUT, {
+  }) : n && j && (!v || i) && O ? (0, r.jsxs)(c.DUT, {
     className: E,
     onClick: y,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: m.qS,
-      children: g.intl.string(g.t.Mgpxiw)
+      children: f.intl.string(f.t.Mgpxiw)
     }), (0, r.jsx)(c.R2l, {
       color: "currentColor",
       className: m.rD,
       size: "xxs"
     })]
-  }) : x ? (0, r.jsx)(o.A, {
+  }) : v ? (0, r.jsx)(o.A, {
     children: A
   }) : null
 }

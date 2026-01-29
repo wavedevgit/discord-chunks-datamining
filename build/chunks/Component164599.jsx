@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 164599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -27,58 +27,58 @@ function E(e) {
     guild: n,
     initialSelectedEffect: l,
     className: E,
-    sectionTitle: x,
-    forcedDivider: O = false,
-    withTutorial: C = false,
-    showBorder: y = false
+    sectionTitle: O,
+    forcedDivider: C = false,
+    withTutorial: x = false,
+    showBorder: S = false
   } = e, {
-    analyticsLocations: j
-  } = (0, c.Ay)(), T = p.Ay.canUsePremiumProfileCustomization(t), v = (0, _.N2)({
+    analyticsLocations: T
+  } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), y = (0, p.N2)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingProfileEffect: S,
-    errors: I
-  } = (0, _.nZ)(null == n ? true : n.id);
+    pendingProfileEffect: N,
+    errors: j
+  } = (0, p.nZ)(null == n ? true : n.id);
   i.useEffect(() => {
-    T && u.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
-      type: b.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: j
+    I && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+      type: f.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+      location_stack: T
     })
-  }, [T, j]);
-  let N = C ? o.wLn : a.$n;
+  }, [I, T]);
+  let v = x ? o.wLn : a.$n;
   return (0, r.jsx)(m.A, {
-    forcedDivider: O,
+    forcedDivider: C,
     borderType: g.i.PREMIUM,
     hasBackground: true,
-    title: x,
-    showBorder: y,
-    errors: I,
+    title: O,
+    showBorder: S,
+    errors: j,
     className: E,
     children: (0, r.jsxs)("div", {
-      className: A.NC,
-      children: [(0, r.jsx)(N, {
+      className: h.NC,
+      children: [(0, r.jsx)(v, {
         size: a.$n.Sizes.SMALL,
         onClick: () => {
           (0, d.W)({
-            analyticsLocations: j,
+            analyticsLocations: T,
             guild: n,
             initialSelectedEffect: l
           })
         },
         className: s()({
-          [A.yj]: C
+          [h.yj]: x
         }),
-        children: h.intl.string(h.t["/dRfCf"])
-      }), (true === S ? null != v : null != S) && (0, r.jsx)("div", {
+        children: b.intl.string(b.t["/dRfCf"])
+      }), (true === N ? null != y : null != N) && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: A.DT,
+        className: h.DT,
         children: (0, r.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != n ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.uMuafO),
+          text: null != n ? b.intl.string(b.t.CHf9iJ) : b.intl.string(b.t.uMuafO),
           onClick: () => {
-            (0, _.mZ)(null, null == n ? true : n.id)
+            (0, p.mZ)(null, null == n ? true : n.id)
           }
         })
       })]

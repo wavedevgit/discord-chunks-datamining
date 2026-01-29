@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 214660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y,
@@ -26,16 +26,16 @@ let y = e => {
     guildId: r,
     closePopout: A
   } = e, y = (0, u.GV)(), {
-    notClaimed: _,
-    notEmailVerified: O,
-    notPhoneVerified: j,
-    newAccount: v,
-    newMember: x
-  } = (0, i.bG)([p.A], () => p.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
-  return (0 === t && (_ ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : j ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : O ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : x ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
-    min: f.$8o.MEMBER_AGE
-  }), S = m.intl.string(m.t.BddRzS)) : v && (C = m.intl.formatToPlainString(m.t.sncw41, {
-    min: f.$8o.ACCOUNT_AGE
+    notClaimed: O,
+    notEmailVerified: _,
+    notPhoneVerified: x,
+    newAccount: j,
+    newMember: v
+  } = (0, i.bG)([h.A], () => h.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
+  return (0 === t && (O ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : x ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : _ ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : v ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
+    min: g.$8o.MEMBER_AGE
+  }), S = m.intl.string(m.t.BddRzS)) : j && (C = m.intl.formatToPlainString(m.t.sncw41, {
+    min: g.$8o.ACCOUNT_AGE
   }), S = m.intl.string(m.t.BddRzS))), null == E || null == C) ? null : (0, l.jsxs)(a.lGe, {
     className: b.kL,
     "aria-labelledby": y,
@@ -62,8 +62,8 @@ let y = e => {
             variant: "primary",
             text: S,
             onClick: () => {
-              if (_) c.R();
-              else if (j)(0, a.mMO)(async () => {
+              if (O) c.R();
+              else if (x)(0, a.mMO)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 615715));
@@ -88,21 +88,21 @@ let y = e => {
                   reason: d.d.GUILD_PHONE_REQUIRED
                 }, t))
               }, {
-                modalKey: g.V
+                modalKey: f.V
               });
-              else if (O) {
+              else if (_) {
                 var e;
                 o.A.verifyResend(), (0, s.A)({
                   title: m.intl.string(m.t.LykQYk),
                   subtitle: m.intl.format(m.t.azKEPy, {
-                    email: null == (e = h.default.getCurrentUser()) ? true : e.email
+                    email: null == (e = p.default.getCurrentUser()) ? true : e.email
                   })
                 })
               }
               A()
             }
           })
-        }) : null, _ || j || O ? (0, l.jsx)(a.QWc, {
+        }) : null, O || x || _ ? (0, l.jsx)(a.QWc, {
           onClick: A,
           text: m.intl.string(m.t.oEAioF),
           variant: "secondary"

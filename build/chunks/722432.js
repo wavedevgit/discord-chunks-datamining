@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 722432, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -38,14 +38,14 @@ function d(e) {
         callback: () => requestAnimationFrame(t)
       })
     })
-  }), p = (0, i.A)(() => {
+  }), h = (0, i.A)(() => {
     let e = t.current;
     return null == e ? Promise.resolve() : new Promise(t => {
       e.scrollToTop({
         callback: () => requestAnimationFrame(t)
       })
     })
-  }), h = r.useCallback(e => {
+  }), p = r.useCallback(e => {
     var r, l, i;
     if (!n.keyboardModeEnabled) return;
     let s = null == (l = t.current) || null == (r = l.getScrollerNode()) ? true : r.ownerDocument,
@@ -55,24 +55,24 @@ function d(e) {
       padding: 4 * c.mZ,
       callback: () => null == a ? true : a.focus()
     }))
-  }, [n.keyboardModeEnabled, t]), f = r.useCallback(() => {
+  }, [n.keyboardModeEnabled, t]), g = r.useCallback(() => {
     n.hasMoreAfter || a._.dispatchToLastSubscribed(u.jej.TEXTAREA_FOCUS)
-  }, [n.hasMoreAfter]), g = (0, l.Ay)({
+  }, [n.hasMoreAfter]), f = (0, l.Ay)({
     id: o.D,
     preserveFocusPosition: false,
-    setFocus: h,
+    setFocus: p,
     isEnabled: n.keyboardModeEnabled && !n.isEditing,
-    scrollToStart: p,
+    scrollToStart: h,
     scrollToEnd: d,
-    onNavigateNextAtEnd: f
+    onNavigateNextAtEnd: g
   }), m = r.useCallback(e => {
     let {
       atEnd: t = false
     } = e;
-    t ? g.focusLastVisibleItem() : g.focusFirstVisibleItem()
-  }, [g]);
+    t ? f.focusLastVisibleItem() : f.focusFirstVisibleItem()
+  }, [f]);
   return (0, s.Vo)({
     event: u.jej.FOCUS_MESSAGES,
     handler: m
-  }), g
+  }), f
 }

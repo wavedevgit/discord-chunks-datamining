@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 125040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -83,7 +83,7 @@ function u(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     shouldRenderOwnedTeamsModal: t,
     shouldRenderOwnedGuildsModal: n,
@@ -91,16 +91,16 @@ function p(e) {
     shouldRenderDisableAccountErrorModal: l,
     disableAccountErrorMessage: s,
     onOwnedTeamsWarningModalClose: a,
-    onOwnedGuildsWarningModalClose: p,
-    onDeleteAccountConfirmModalClose: _,
+    onOwnedGuildsWarningModalClose: _,
+    onDeleteAccountConfirmModalClose: p,
     onDisableAccountErrorModalClose: m
   } = e;
   return t ? (0, r.jsx)(o, {
     onClose: a
   }) : n ? (0, r.jsx)(c, {
-    onClose: p
-  }) : i ? (0, r.jsx)(d, {
     onClose: _
+  }) : i ? (0, r.jsx)(d, {
+    onClose: p
   }) : l ? (0, r.jsx)(u, {
     onClose: m,
     errorMessage: s

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 226694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P,
@@ -74,7 +74,7 @@ let N = Chunk64700.memo(function(e) {
       variant: "text-sm/semibold",
       color: "text-strong",
       className: E.Kk,
-      children: x.intl.string(x.t.H9jxS1)
+      children: v.intl.string(v.t.H9jxS1)
     })]
   })
 });
@@ -84,15 +84,15 @@ function T(e) {
     entry: t
   } = e, [i, a] = l.useState(false), u = l.useRef(null), {
     canEdit: d
-  } = (0, O.A)(t);
+  } = (0, _.A)(t);
   return (0, r.jsx)("div", {
     className: s()(E.fc, {
       [E.QX]: i
     }),
-    children: (0, r.jsxs)(h.Ay, {
+    children: (0, r.jsxs)(p.Ay, {
       children: [d ? (0, r.jsx)(o.m, {
-        text: x.intl.string(x.t.XnuOvN),
-        children: (0, r.jsx)(h.$n, {
+        text: v.intl.string(v.t.XnuOvN),
+        children: (0, r.jsx)(p.$n, {
           onClick: () => {
             (0, c.mMO)(async () => {
               let {
@@ -103,14 +103,14 @@ function T(e) {
               }))
             })
           },
-          "aria-label": x.intl.string(x.t.XnuOvN),
+          "aria-label": v.intl.string(v.t.XnuOvN),
           children: (0, r.jsx)(c.R2l, {
             size: "xs",
             color: "currentColor",
             className: E.IQ
           })
         })
-      }) : null, (0, r.jsx)(j.A, {
+      }) : null, (0, r.jsx)(x.A, {
         targetElementRef: u,
         onRequestOpen: () => a(true),
         onRequestClose: () => a(false),
@@ -137,13 +137,13 @@ function T(e) {
             return i
           }(e, ["onClick"]);
           return (0, r.jsx)(o.m, {
-            text: x.intl.string(x.t["UKOtz+"]),
-            children: (0, r.jsx)(h.$n, I(S({}, n), {
+            text: v.intl.string(v.t["UKOtz+"]),
+            children: (0, r.jsx)(p.$n, I(S({}, n), {
               onClick: e => {
                 t(e)
               },
               ref: u,
-              "aria-label": x.intl.string(x.t["UKOtz+"]),
+              "aria-label": v.intl.string(v.t["UKOtz+"]),
               children: (0, r.jsx)(c.jNK, {
                 size: "md",
                 color: "currentColor",
@@ -160,16 +160,16 @@ let P = Chunk64700.memo(function(e) {
   var t;
   let {
     entry: i
-  } = e, [s, o] = l.useState(false), h = null != (0, a.bG)([A.A], () => A.A.getGuild(i.guildId)), O = async () => {
+  } = e, [s, o] = l.useState(false), p = null != (0, a.bG)([A.A], () => A.A.getGuild(i.guildId)), _ = async () => {
     o(true);
     try {
-      h ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
-        source: v.Q4z.DIRECTORY_ENTRY
+      p ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
+        source: j.Q4z.DIRECTORY_ENTRY
       })
     } finally {
       o(false)
     }
-  }, j = y.Ay.getGuildSplashURL({
+  }, x = y.Ay.getGuildSplashURL({
     id: i.guildId,
     splash: i.splash,
     size: 300 * (0, m.mZ)()
@@ -177,8 +177,8 @@ let P = Chunk64700.memo(function(e) {
     id: i.guildId,
     icon: i.icon,
     size: 40
-  })) ? t : true, N = x.intl.string(x.t.VJlc0S);
-  return h && (N = x.intl.string(x.t.cqWE2Z)), (0, r.jsxs)("div", {
+  })) ? t : true, N = v.intl.string(v.t.VJlc0S);
+  return p && (N = v.intl.string(v.t.cqWE2Z)), (0, r.jsxs)("div", {
     className: E.Nr,
     onContextMenu: e => {
       (0, u.L3)(e, async () => {
@@ -194,24 +194,24 @@ let P = Chunk64700.memo(function(e) {
       className: E.MY,
       children: [(0, r.jsx)("div", {
         className: E.Yi,
-        children: null != j && (0, r.jsx)("img", {
-          src: j,
+        children: null != x && (0, r.jsx)("img", {
+          src: x,
           alt: "",
           className: E.j0
         })
       }), (0, r.jsx)("div", {
         className: E.$f,
-        children: (0, r.jsx)(p.Ay, {
-          mask: p.Ay.Masks.SQUIRCLE,
+        children: (0, r.jsx)(h.Ay, {
+          mask: h.Ay.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
             className: E.SA,
-            children: (0, r.jsx)(f.A, {
+            children: (0, r.jsx)(g.A, {
               className: E.rZ,
               iconSrc: C,
-              guild: (0, _.xi)(i),
-              size: f.A.Sizes.MEDIUM,
+              guild: (0, O.xi)(i),
+              size: g.A.Sizes.MEDIUM,
               active: true
             })
           })
@@ -221,7 +221,7 @@ let P = Chunk64700.memo(function(e) {
       className: E.OA,
       children: [(0, r.jsxs)("div", {
         className: E.DD,
-        children: [(0, r.jsx)(g.A, {
+        children: [(0, r.jsx)(f.A, {
           className: E.n2,
           guild: i
         }), (0, r.jsx)(c.Text, {
@@ -244,7 +244,7 @@ let P = Chunk64700.memo(function(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: x.intl.format(x.t["LC+S+m"], {
+            children: v.intl.format(v.t["LC+S+m"], {
               membersOnline: i.approximatePresenceCount
             })
           })]
@@ -255,7 +255,7 @@ let P = Chunk64700.memo(function(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: x.intl.format(x.t.zRl6XR, {
+            children: v.intl.format(v.t.zRl6XR, {
               count: i.approximateMemberCount
             })
           })]
@@ -264,8 +264,8 @@ let P = Chunk64700.memo(function(e) {
         className: E.PD,
         children: (0, r.jsx)(c.Button, {
           loading: s,
-          variant: h ? "secondary" : "active",
-          onClick: O,
+          variant: p ? "secondary" : "active",
+          onClick: _,
           text: N,
           fullWidth: true
         })

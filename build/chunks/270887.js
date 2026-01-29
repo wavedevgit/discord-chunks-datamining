@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 270887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -25,8 +25,8 @@ let g = i().throttle(function() {
       let n = e.indexOf(t);
       return false === n ? false : n
     }(t);
-  if (false !== (n += e) || (0, s.J)(l.A, o.A, c.A) || (n += e), false === n && (n = t.length - 1), n >= t.length || false === n) return void(0, _.a)(p.A.getHomeLink());
+  if (false !== (n += e) || (0, s.J)(l.A, o.A, c.A) || (n += e), false === n && (n = t.length - 1), n >= t.length || false === n) return void(0, p.a)(_.A.getHomeLink());
   let r = false === n ? m.YYv : t[n],
     i = d.A.getChannelId(r);
-  (0, _.i)(r, i === r ? null : i, false)
+  (0, p.i)(r, i === r ? null : i, false)
 }, Chunk652215.ugG)

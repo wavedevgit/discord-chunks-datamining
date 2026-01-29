@@ -1,12 +1,12 @@
-/** Chunk was on 38660 **/
+/** Chunk was on 82277 **/
 /** chunk id: 625841, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => f
+  U: () => I
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk843282 = require("./843282.jsx"),
   Chunk582754 = require("./582754.js"),
@@ -23,164 +23,164 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk534393 = require("./534393.js");
-let v = "SHOW_MORE";
+let w = "SHOW_MORE";
 
-function f(e) {
-  var t, l;
+function I(e) {
+  var t, i;
   let {
-    deviceType: f,
-    location: C,
-    showAllDevices: T = false,
-    selectedDeviceId: y,
-    onSelectDevice: I,
-    hideDeviceTypeIcon: N = false,
-    label: _
-  } = e, D = function(e, t) {
+    deviceType: I,
+    location: j,
+    showAllDevices: D = false,
+    selectedDeviceId: C,
+    onSelectDevice: S,
+    hideDeviceTypeIcon: x = false,
+    label: P
+  } = e, A = function(e, t) {
     if (null == e) return {};
-    var n, i, s, l = {};
+    var n, o, r, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (s = 0, n = Reflect.ownKeys(e); s < n.length; s++) i = n[s], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-      return l
+      for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) o = n[r], !(t.indexOf(o) >= 0) && Object.prototype.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
+      return i
     }
-    if (l = function(e, t) {
+    if (i = function(e, t) {
         if (null == e) return {};
-        var n, i, s = {},
-          l = Object.getOwnPropertyNames(e);
-        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
-        return s
+        var n, o, r = {},
+          i = Object.getOwnPropertyNames(e);
+        for (o = 0; o < i.length; o++) n = i[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+        return r
       }(e, t), Object.getOwnPropertySymbols)
-      for (s = 0, n = Object.getOwnPropertySymbols(e); s < n.length; s++) i = n[s], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-    return l
+      for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) o = n[r], !(t.indexOf(o) >= 0) && Object.prototype.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
+    return i
   }(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]), {
-    setDevice: P,
-    Icon: G,
-    getCanSetDevice: R,
-    getWarningMessage: V,
+    setDevice: E,
+    Icon: T,
+    getCanSetDevice: U,
+    getWarningMessage: N,
     getLocation: L
   } = {
-    [b.oh.AUDIO_INPUT]: {
-      setDevice: u.A.setInputDevice,
-      Icon: d.cNw,
-      getCanSetDevice: e => e.supports(b.O5.AUDIO_INPUT_DEVICE),
-      getWarningMessage: () => E.intl.format(E.t["1iK6UW"], {
-        onDownloadClick: () => (0, x._)("Help Text Input Devices")
+    [y.oh.AUDIO_INPUT]: {
+      setDevice: d.A.setInputDevice,
+      Icon: u.cNw,
+      getCanSetDevice: e => e.supports(y.O5.AUDIO_INPUT_DEVICE),
+      getWarningMessage: () => h.intl.format(h.t["1iK6UW"], {
+        onDownloadClick: () => (0, _._)("Help Text Input Devices")
       }),
       getLocation: e => "".concat(e, ".SingleSelectInputDevices")
     },
-    [b.oh.AUDIO_OUTPUT]: {
-      setDevice: u.A.setOutputDevice,
-      Icon: d.LoC,
-      getCanSetDevice: e => e.supports(b.O5.AUDIO_OUTPUT_DEVICE),
-      getWarningMessage: () => E.intl.format(E.t.Ow0dbF, {
-        onDownloadClick: () => (0, x._)("Help Text Output Devices")
+    [y.oh.AUDIO_OUTPUT]: {
+      setDevice: d.A.setOutputDevice,
+      Icon: u.LoC,
+      getCanSetDevice: e => e.supports(y.O5.AUDIO_OUTPUT_DEVICE),
+      getWarningMessage: () => h.intl.format(h.t.Ow0dbF, {
+        onDownloadClick: () => (0, _._)("Help Text Output Devices")
       }),
       getLocation: e => "".concat(e, ".SingleSelectOutputDevices")
     },
-    [b.oh.VIDEO_INPUT]: {
-      setDevice: u.A.setVideoDevice,
-      Icon: d.xpe,
+    [y.oh.VIDEO_INPUT]: {
+      setDevice: d.A.setVideoDevice,
+      Icon: u.xpe,
       getCanSetDevice: e => e.isVideoAvailable(),
-      getWarningMessage: () => E.intl.format(E.t["1iK6UW"], {
-        onDownloadClick: () => (0, x._)("Help Text Video Devices")
+      getWarningMessage: () => h.intl.format(h.t["1iK6UW"], {
+        onDownloadClick: () => (0, _._)("Help Text Video Devices")
       }),
       getLocation: e => "".concat(e, ".SingleSelectVideoDevices")
     }
-  } [f], {
-    analyticsLocations: k
-  } = (0, g.Ay)(), M = (0, a.bG)([h.A], () => h.A.theme), [w, U] = s.useState(T), H = L(C), [B, Y] = (0, j.tR)(f, {
-    location: H
+  } [I], {
+    analyticsLocations: M
+  } = (0, p.Ay)(), V = (0, l.bG)([g.A], () => g.A.theme), [B, R] = r.useState(D), W = L(j), [H, K] = (0, m.tR)(I, {
+    location: W
   }), {
-    id: F
-  } = (0, j.x5)(f), z = (0, a.bG)([p.A], () => R(p.A)), W = (0, i.jsx)(d.po8, {
-    messageType: d.YCn.WARNING,
-    children: V()
-  }), K = s.useCallback(e => {
-    if (e === v) U(true), m.default.track(O.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
-      device_type: f,
-      location: H,
-      location_stack: k,
-      shown_device_count: B.length,
-      hidden_device_count: Y.length
+    id: G
+  } = (0, m.x5)(I), Q = (0, l.bG)([O.A], () => U(O.A)), J = (0, o.jsx)(u.po8, {
+    messageType: u.YCn.WARNING,
+    children: N()
+  }), q = r.useCallback(e => {
+    if (e === w) R(true), f.default.track(v.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
+      device_type: I,
+      location: W,
+      location_stack: M,
+      shown_device_count: H.length,
+      hidden_device_count: K.length
     });
     else {
       var t;
-      (null == (t = null == I ? true : I(e)) || t) && P(e, {
-        location: H,
-        analyticsLocations: k
+      (null == (t = null == S ? true : S(e)) || t) && E(e, {
+        location: W,
+        analyticsLocations: M
       })
     }
-  }, [f, H, B.length, Y.length, k, I, P]);
+  }, [I, W, H.length, K.length, M, S, E]);
 
-  function J(e) {
-    let t, s, {
-        label: l,
-        value: a
+  function z(e) {
+    let t, r, {
+        label: i,
+        value: l
       } = e,
-      o = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      u = l,
-      g = (0, j.d)(l);
-    null != g && (u = g.prefix, t = g.subName);
-    let h = A.A.getCertifiedDeviceName(a, u);
-    if (A.A.isCertified(a)) {
-      let e = (0, c.qB)(M) ? n(961392) : n(848672);
-      s = (0, i.jsx)("img", {
+      c = arguments.length > 1 && true !== arguments[1] && arguments[1],
+      d = i,
+      p = (0, m.d)(i);
+    null != p && (d = p.prefix, t = p.subName);
+    let g = b.A.getCertifiedDeviceName(l, d);
+    if (b.A.isCertified(l)) {
+      let e = (0, s.qB)(V) ? n(961392) : n(848672);
+      r = (0, o.jsx)("img", {
         src: e,
-        alt: E.intl.string(E.t.smSKsj)
+        alt: h.intl.string(h.t.smSKsj)
       })
     }
-    return (0, i.jsxs)("div", {
-      className: r()(S.Mg, {
-        [S.S2]: o && null != t,
-        [S.Sy]: !N
+    return (0, o.jsxs)("div", {
+      className: a()(k.Mg, {
+        [k.S2]: c && null != t,
+        [k.Sy]: !x
       }),
-      children: [!N && (0, i.jsx)("div", {
-        className: S.Kt,
-        children: (0, i.jsx)(G, {
+      children: [!x && (0, o.jsx)("div", {
+        className: k.Kt,
+        children: (0, o.jsx)(T, {
           size: "custom",
           width: 20,
           height: 20,
-          color: d.LU0.colors.ICON_MUTED
+          color: u.LU0.colors.ICON_MUTED
         })
-      }), (0, i.jsx)(d.Text, {
+      }), (0, o.jsx)(u.Text, {
         lineClamp: 2,
         variant: "text-md/medium",
-        color: o ? "text-subtle" : "text-default",
-        className: S.hV,
-        children: h
-      }), null != t && (0, i.jsx)(d.Text, {
+        color: c ? "text-subtle" : "text-default",
+        className: k.hV,
+        children: g
+      }), null != t && (0, o.jsx)(u.Text, {
         lineClamp: 2,
-        variant: o ? "text-xs/medium" : "text-md/medium",
+        variant: c ? "text-xs/medium" : "text-md/medium",
         color: "text-muted",
-        className: S.VT,
+        className: k.VT,
         children: t
-      }), null != s && (0, i.jsx)("div", {
-        className: S.pN,
-        children: s
+      }), null != r && (0, o.jsx)("div", {
+        className: k.pN,
+        children: r
       })]
     })
   }
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(o.Te, (t = function(e) {
+  return (0, o.jsxs)(o.Fragment, {
+    children: [(0, o.jsx)(c.Te, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          o = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), o.forEach(function(t) {
+          var o;
+          o = n[t], t in e ? Object.defineProperty(e, t, {
+            value: o,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = o
         })
       }
       return e
     }({
-      label: _,
-      value: null != y ? y : F,
-      onChange: K,
+      label: P,
+      value: null != C ? C : G,
+      onChange: q,
       options: function() {
         let e = e => {
             let {
@@ -192,38 +192,38 @@ function f(e) {
               label: n
             }
           },
-          t = B.map(e);
-        if (w || 0 === Y.length) {
-          let n = Y.map(e);
+          t = H.map(e);
+        if (B || 0 === K.length) {
+          let n = K.map(e);
           return t.concat(n)
         } {
           let e = {
-            value: v,
-            label: E.intl.string(E.t.E99UMh),
+            value: w,
+            label: h.intl.string(h.t.E99UMh),
             preventCloseOnSelect: true
           };
           return t.concat(e)
         }
       }(),
-      isDisabled: !z,
+      isDisabled: !Q,
       popoutPosition: "bottom",
-      renderOptionLabel: e => J(e, true),
+      renderOptionLabel: e => z(e, true),
       renderOptionValue: e => {
         let [t] = e;
-        return J(t)
+        return z(t)
       },
-      optionClassName: S.OS
-    }, D), l = l = {
+      optionClassName: k.OS
+    }, A), i = i = {
       "data-migration-pending": true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var o = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, o)
       }
       return n
-    })(Object(l)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-    }), t)), !z && W]
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+    }), t)), !Q && J]
   })
 }

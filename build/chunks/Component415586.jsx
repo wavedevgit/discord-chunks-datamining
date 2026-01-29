@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 415586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -69,10 +69,10 @@ function P(e) {
       baseChannelId: w,
       channelViewSource: R = "Split View"
     } = e,
-    D = (0, a.bG)([_.A], () => _.A.getChannel(P)),
-    M = (0, a.bG)([j.A], () => j.A.getGuild(null == D ? true : D.getGuildId())),
-    L = (0, f.Ay)(D);
-  t = D, i = (0, a.bG)([v.A], () => null != t && !s().isEmpty(v.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
+    D = (0, a.bG)([O.A], () => O.A.getChannel(P)),
+    L = (0, a.bG)([x.A], () => x.A.getGuild(null == D ? true : D.getGuildId())),
+    M = (0, g.Ay)(D);
+  t = D, i = (0, a.bG)([j.A], () => null != t && !s().isEmpty(j.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
     i && null != t && (o.h.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: t.parent_id
@@ -84,28 +84,28 @@ function P(e) {
   if (l.useEffect(() => {
       if (null == D || k.current) return;
       k.current = true;
-      let e = (0, p.C)(_.A.getChannel(D.id), true);
+      let e = (0, h.C)(O.A.getChannel(D.id), true);
       (0, d.zV)(C.HAw.CHANNEL_OPENED, T(N({}, e, (0, d.qL)(D.id)), {
         channel_view: R
-      })), (0, h.k)(C.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, p.k)(C.HAw.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: D.id
       })
-    }, [D, R]), null == D || null == M) return null;
-  let G = (0, r.jsx)(x.A, {
+    }, [D, R]), null == D || null == L) return null;
+  let G = (0, r.jsx)(v.A, {
     channel: D,
     baseChannelId: w
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.A, {
       channel: D,
-      draftType: O.C.ChannelMessage
+      draftType: _.C.ChannelMessage
     }), (0, r.jsx)(b.Ay, {
       toolbar: G,
       "aria-label": S.intl.string(S.t.Pwe8tN),
       children: (0, A.zF)({
         channel: D,
-        channelName: L,
-        guild: M,
+        channelName: M,
+        guild: L,
         inSidebar: true,
         handleContextMenu: function(e) {
           (0, c.L3)(e, async () => {
@@ -123,9 +123,9 @@ function P(e) {
       })
     }), (0, r.jsx)("div", {
       className: I.T,
-      children: (0, r.jsx)(g.A, {
+      children: (0, r.jsx)(f.A, {
         channel: D,
-        guild: M,
+        guild: L,
         chatInputType: m.oU.SIDEBAR
       }, P)
     })]

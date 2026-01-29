@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 227004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -23,21 +23,21 @@ function A(e) {
   let {
     guild: t,
     selected: n
-  } = e, A = (0, i.bG)([f.A], () => f.A.can(m.xBc.KICK_MEMBERS, t)), y = (0, i.bG)([u.A], () => u.A.getSubmittedGuildJoinRequestTotal(t.id)), _ = A && null != y ? y : 0;
+  } = e, A = (0, i.bG)([g.A], () => g.A.can(m.xBc.KICK_MEMBERS, t)), y = (0, i.bG)([u.A], () => u.A.getSubmittedGuildJoinRequestTotal(t.id)), O = A && null != y ? y : 0;
   l.useEffect(() => {
     A && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.A.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.B5.SUBMITTED,
-      limit: p.L
+      limit: h.L
     })
   }, [A, t]);
-  let O = l.useCallback(() => {
-      (0, g.aZ)(t.id)
+  let _ = l.useCallback(() => {
+      (0, f.aZ)(t.id)
     }, [t.id]),
-    j = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
+    x = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
-    ref: j,
-    children: (0, r.jsx)(h.G, {
+    ref: x,
+    children: (0, r.jsx)(p.G, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(a.nFg, {
         size: "md",
@@ -46,9 +46,9 @@ function A(e) {
       }),
       text: b.intl.string(b.t.oclz3Z),
       selected: n,
-      onClick: O,
-      trailing: _ > 0 ? (0, r.jsx)(a.hVq, {
-        count: _
+      onClick: _,
+      trailing: O > 0 ? (0, r.jsx)(a.hVq, {
+        count: O
       }) : null
     })
   })

@@ -1,13 +1,13 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 968898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CS: () => N,
-  GQ: () => T,
+  CS: () => T,
+  GQ: () => N,
   O0: () => w,
-  Pl: () => j,
-  RE: () => I,
-  X1: () => S,
-  we: () => P
+  Pl: () => S,
+  RE: () => x,
+  X1: () => j,
+  we: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,7 +30,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk859804 = require("./859804.js");
 
-function j(e) {
+function S(e) {
   let {
     children: t
   } = e;
@@ -43,45 +43,45 @@ function j(e) {
     })
   })
 }
-let S = 7e3;
-
-function I(e, t) {
-  return x((0, s.bG)([m.A], () => m.A.getWidget(e), [e]), t)
-}
+let j = 7e3;
 
 function x(e, t) {
-  let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
-    [r, l] = i.useState(false),
+  return I((0, s.bG)([m.A], () => m.A.getWidget(e), [e]), t)
+}
+
+function I(e, t) {
+  let n = l.useRef(null == e ? true : e.showExtrasHintTimestamp),
+    [r, i] = l.useState(false),
     a = (0, h.A)(),
-    s = i.useRef(true);
-  return i.useEffect(() => {
+    s = l.useRef(true);
+  return l.useEffect(() => {
     let r = null == e ? true : e.showExtrasHintTimestamp;
-    r !== n.current && (n.current = r, l(true), s.current = setTimeout(() => {
-      l(false)
+    r !== n.current && (n.current = r, i(true), s.current = setTimeout(() => {
+      i(false)
     }, t))
   }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, f.Ay)(() => {
     let n = null == e ? true : e.showExtrasHintTimestamp;
-    return null != n && Date.now() - n < t && (l(true), s.current = setTimeout(() => {
-      l(false)
+    return null != n && Date.now() - n < t && (i(true), s.current = setTimeout(() => {
+      i(false)
     }, t)), () => {
       null != s.current && clearTimeout(s.current)
     }
   }), r && a
 }
-let E = 8e3;
+let P = 8e3;
 
-function P(e) {
+function E(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.bG)([m.A], () => m.A.getWidget(n), [n]);
-  return x(i, E) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.A, {
+  } = e, l = (0, s.bG)([m.A], () => m.A.getWidget(n), [n]);
+  return I(l, P) ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(y.A, {
       className: O.Z,
       children: (0, r.jsx)(u.DUT, {
         className: O.SM,
         onClick: () => {
-          null != i && (p.A.setInputLocked(false, y.A.getTargetPID()), (0, g.YX)(i.type, {
+          null != l && (p.A.setInputLocked(false, b.A.getTargetPID()), (0, g.YX)(l.type, {
             type: g.Z5.KEYBIND_HINT,
             value: g.IP.OVERLAY_UNLOCKED
           }))
@@ -89,7 +89,7 @@ function P(e) {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/semibold",
           color: "text-strong",
-          children: (0, A.sI)((0, b.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
+          children: (0, _.sI)((0, A.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
             useFlexboxLayout: true,
             highlightAdminWarningIfElevated: false,
             keybindClassName: O.P
@@ -109,7 +109,7 @@ function P(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     onClick: t
   } = e;
@@ -129,14 +129,14 @@ function N(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? v.intl.string(v.t.q2B3rh) : v.intl.string(v.t.JKGi6o);
+  } = e, l = n ? v.intl.string(v.t.q2B3rh) : v.intl.string(v.t.JKGi6o);
   return (0, h.A)() ? null : (0, r.jsx)(c.m, {
-    text: i,
-    "aria-label": i,
+    text: l,
+    "aria-label": l,
     children: (0, r.jsx)(u.DUT, {
       className: a()(O.x6, n && O.vu),
       onClick: () => {
@@ -156,15 +156,15 @@ function w(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm), l = (0, h.A)();
+  } = e, l = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm), i = (0, h.A)();
   return (0, r.jsx)(c.m, {
-    text: i,
-    "aria-label": i,
+    text: l,
+    "aria-label": l,
     asContainer: true,
     children: (0, r.jsx)(u.DUT, {
       className: a()(O.x6, n && O.vu),
       onClick: () => {
-        l || (0, d.v0)(t)
+        i || (0, d.v0)(t)
       },
       children: (0, r.jsx)(u.qgw, {
         size: "xxs",

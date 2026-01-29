@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 285745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -22,11 +22,11 @@ function m(e) {
     channel: t,
     user: n,
     guild: m
-  } = e, b = (0, l.bG)([p.default, u.A, d.A], () => null != n && null != m && (0, a.b)(m.id, n.id, [p.default, u.A, d.A])), [A, y] = (0, o.Ay)(null == n ? true : n.id, t.guild_id), _ = (0, l.bG)([c.Ay], () => null != m && null != n && null != c.Ay.getMember(m.id, n.id));
-  if (!b || !_) return null;
-  let O = "timeout-user-".concat(null == n ? true : n.id);
-  return (0, r.jsx)(h.A, {
-    text: y ? g.intl.string(f.default["6uMZbv"]) : g.intl.string(f.default["Sgg/uI"]),
+  } = e, b = (0, l.bG)([h.default, u.A, d.A], () => null != n && null != m && (0, a.b)(m.id, n.id, [h.default, u.A, d.A])), [A, y] = (0, o.Ay)(null == n ? true : n.id, t.guild_id), O = (0, l.bG)([c.Ay], () => null != m && null != n && null != c.Ay.getMember(m.id, n.id));
+  if (!b || !O) return null;
+  let _ = "timeout-user-".concat(null == n ? true : n.id);
+  return (0, r.jsx)(p.A, {
+    text: y ? f.intl.string(g.default["6uMZbv"]) : f.intl.string(g.default["Sgg/uI"]),
     icon: i.O4,
     onClick: () => {
       null != n && (0, s.R)({
@@ -36,5 +36,5 @@ function m(e) {
       })
     },
     disabled: y
-  }, O)
+  }, _)
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 580960, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -53,7 +53,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends Chunk272355.A {
+class O extends Chunk272355.A {
   _initialize() {
     __OVERLAY__ ? i.h.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (i.h.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), i.h.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), i.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), i.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), i.h.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
   }
@@ -107,15 +107,15 @@ class _ extends Chunk272355.A {
     super(...e), b(this, "_premiumPaymentModalCloseResolve", null), b(this, "_premiumPaymentModalCloseReject", null), b(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, p.TW)(e)) && !d.A.isFetchingOffer();
-        await (0, g._D)("PremiumManager", t)
+        let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !d.A.isFetchingOffer();
+        await (0, f._D)("PremiumManager", t)
       }
       i.h.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
     }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, p.TW)(e) && f.A.shouldFetchCheckoutRecovery() && await (0, h.c)()
+      null != e && e.verified && !(0, h.TW)(e) && g.A.shouldFetchCheckoutRecovery() && await (0, p.c)()
     }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -141,4 +141,4 @@ class _ extends Chunk272355.A {
     })
   }
 }
-let O = new _
+let _ = new O

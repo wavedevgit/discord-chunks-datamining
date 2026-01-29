@@ -1,4 +1,4 @@
-/** Chunk was on 75473 **/
+/** Chunk was on 59024 **/
 /** chunk id: 658646, original params: e,t,n (module,exports,require) **/
 module.exports = {
   pz: "sidebar__409aa",

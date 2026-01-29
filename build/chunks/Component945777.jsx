@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 945777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P,
@@ -70,19 +70,19 @@ let I = Chunk64700.memo(function(e) {
     } = e;
     return (0, r.jsxs)("div", {
       className: E.FS,
-      children: [s ? (0, r.jsx)(p.KTN, {
+      children: [s ? (0, r.jsx)(h.KTN, {
         size: "lg",
         className: E.Q6,
         color: d.A.unsafe_rawColors.RED_400.css
-      }) : null, a ? (0, r.jsx)(p.G3N, {
+      }) : null, a ? (0, r.jsx)(h.G3N, {
         size: "lg",
         className: E.Q6
-      }) : null, (0, r.jsx)(p.Text, {
+      }) : null, (0, r.jsx)(h.Text, {
         className: E.Qq,
         variant: "text-sm/normal",
         color: "text-strong",
-        children: j.Ay.getName(t, n, l)
-      }), i ? (0, r.jsx)(p._Jp, {
+        children: x.Ay.getName(t, n, l)
+      }), i ? (0, r.jsx)(h._Jp, {
         className: E.EH,
         color: d.A.unsafe_rawColors.GUILD_BOOSTING_PINK
       }) : null]
@@ -100,15 +100,15 @@ let I = Chunk64700.memo(function(e) {
       blocked: c,
       ignored: u,
       rtsState: d
-    } = n, h = d === v.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = d === v.zF.REQUESTED_TO_SPEAK || h;
+    } = n, p = d === j.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, g = d === j.zF.REQUESTED_TO_SPEAK || p;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: E.H,
-        children: [f && (0, r.jsx)(p.E7M, {
+        children: [g && (0, r.jsx)(h.E7M, {
           size: "md",
           color: "currentColor",
           className: s()(E.Kk, {
-            [E.MD]: h
+            [E.MD]: p
           })
         }), (0, r.jsx)("img", {
           src: null != (t = o.getAvatarURL(i.guild_id, 56, false)) ? t : true,
@@ -138,49 +138,49 @@ let I = Chunk64700.memo(function(e) {
     } = e, {
       user: a,
       blocked: d
-    } = t, j = i.getGuildId(), v = _.default.getId(), {
+    } = t, x = i.getGuildId(), j = O.default.getId(), {
       newestAnalyticsLocation: I
-    } = (0, g.Ay)(f.A.AUDIENCE_TILE), T = (0, A.Us)(), P = (0, u.bG)([O.Ay], () => {
+    } = (0, f.Ay)(g.A.AUDIENCE_TILE), T = (0, A.Us)(), P = (0, u.bG)([_.Ay], () => {
       var e;
-      return null != j && (null == (e = O.Ay.getMember(j, a.id)) ? true : e.premiumSince) != null
-    }, [j, a.id]), w = l.useRef(null);
-    o()(null != j, "Channel cannot be guildless");
+      return null != x && (null == (e = _.Ay.getMember(x, a.id)) ? true : e.premiumSince) != null
+    }, [x, a.id]), w = l.useRef(null);
+    o()(null != x, "Channel cannot be guildless");
     let R = l.useCallback(e => {
       (0, m.x)({
         type: c.ImpressionTypes.MENU,
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: a.id === v,
-          tile_type: x.qs.USER
+          is_tile_owner: a.id === j,
+          tile_type: v.qs.USER
         }
-      }), (0, h.L3)(e, async () => {
+      }), (0, p.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
         return t => (0, r.jsx)(e, S(C({}, t), {
           user: a,
-          guildId: j,
+          guildId: x,
           channel: i,
           showMediaItems: true,
           showStageChannelItems: true,
           showChatItems: false,
           onInteraction: (0, b.s)("GuildChannelUserContextMenu", I, {
             targetUserId: a.id,
-            tileType: x.qs.USER
+            tileType: v.qs.USER
           })
         }))
       }, {
         context: T
       })
-    }, [a, v, T, j, i, I]);
+    }, [a, j, T, x, i, I]);
     return (0, r.jsx)(y.A, {
       targetElementRef: w,
       user: a,
       guildId: i.guild_id,
       channelId: i.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(p.DUT, S(C({
+      children: e => (0, r.jsx)(h.DUT, S(C({
         innerRef: w,
         className: s()(E.iA, {
           [E.wP]: P || d,
@@ -190,7 +190,7 @@ let I = Chunk64700.memo(function(e) {
       }, e), {
         children: (0, r.jsx)(N, {
           participant: t,
-          guildId: j,
+          guildId: x,
           channel: i,
           isPremium: P
         })

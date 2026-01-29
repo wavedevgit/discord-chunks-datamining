@@ -1,8 +1,8 @@
-/** Chunk was on 28979 **/
-/** chunk id: 337313, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 337313, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  S: () => S,
-  T: () => E
+  S: () => A,
+  T: () => S
 });
 var Chunk311907 = require("./311907.js"),
   Chunk233545 = require("./233545.js"),
@@ -15,22 +15,22 @@ var Chunk311907 = require("./311907.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 
-function S() {
-  return (0, n.bG)([a.default, r.A], () => {
-    var t;
-    let e = a.default.getCurrentUser(),
-      i = null != (t = null == e ? true : e.isStaff()) && t,
+function A() {
+  return (0, n.bG)([u.default, r.A], () => {
+    var e;
+    let t = u.default.getCurrentUser(),
+      i = null != (e = null == t ? true : t.isStaff()) && e,
       n = "canary" === o.Ay.releaseChannel || "development" === o.Ay.releaseChannel,
-      l = r.A.supports(d.O5.CONNECTION_REPLAY);
+      l = r.A.supports(T.O5.CONNECTION_REPLAY);
     return i && n && l
   })
 }
-let E = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
-  useTitle: () => A.intl.string(A.t.U4FgFK),
-  useSubtitle: () => A.intl.string(A.t.Lm72RU),
+let S = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
+  useTitle: () => c.intl.string(c.t.U4FgFK),
+  useSubtitle: () => c.intl.string(c.t.Lm72RU),
   useValue: function() {
-    return (0, n.bG)([u.Ay], () => u.Ay.shouldRecordNextConnection())
+    return (0, n.bG)([a.Ay], () => a.Ay.shouldRecordNextConnection())
   },
   setValue: Chunk233545.Et,
-  usePredicate: S
+  usePredicate: A
 })

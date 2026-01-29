@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 790337, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 790337, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  K: () => T
+  K: () => d
 });
 var Chunk827343 = require("./827343.js"),
   Chunk793574 = require("./793574.js"),
@@ -10,18 +10,18 @@ var Chunk827343 = require("./827343.js"),
   Chunk780964 = require("./780964.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk419954.sN)(Chunk780964.X.STREAMING_STREAM_ATTENUATION_STRENGTH, {
+let d = (0, Chunk419954.sN)(Chunk780964.X.STREAMING_STREAM_ATTENUATION_STRENGTH, {
   useTitle: () => o.intl.string(o.t.fhEzfj),
-  setValue: function(t) {
-    let e = [l.A.USER_SETTINGS_VOICE_AND_VIDEO];
-    n.A.setSidechainCompressionStrength(t, {
-      analyticsLocations: e
+  setValue: function(e) {
+    let t = [l.A.USER_SETTINGS_VOICE_AND_VIDEO];
+    n.A.setSidechainCompressionStrength(e, {
+      analyticsLocations: t
     })
   },
   minValue: 1,
   maxValue: 100,
   getInitialValue: Chunk430452.A.getSidechainCompressionStrength,
   usePredicate: function() {
-    return r.A.supports(a.O5.SIDECHAIN_COMPRESSION)
+    return r.A.supports(u.O5.SIDECHAIN_COMPRESSION)
   }
 })

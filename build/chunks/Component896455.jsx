@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 896455, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => d,
@@ -18,8 +18,8 @@ function d(e) {
     channel: t,
     transitionState: n,
     onClose: d,
-    defaultValue: p
-  } = e, [h, f] = l.useState(p);
+    defaultValue: h
+  } = e, [p, g] = l.useState(h);
   return (0, r.jsx)(i.Modal, {
     transitionState: n,
     size: "md",
@@ -35,13 +35,13 @@ function d(e) {
       onClick: () => {
         (0, a.yF)({
           channelId: t.id,
-          scheduledTimestamp: h.toISOString()
+          scheduledTimestamp: p.toISOString()
         }), (0, s.OoC)(u)
       }
     }],
     children: (0, r.jsx)(o.A, {
-      defaultValue: p,
-      onChange: f
+      defaultValue: h,
+      onChange: g
     })
   })
 }

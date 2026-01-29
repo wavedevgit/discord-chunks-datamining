@@ -1,8 +1,8 @@
-/** Chunk was on 72450 **/
+/** Chunk was on 73734 **/
 /** chunk id: 742589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w,
-  I: () => v
+  A: () => D,
+  I: () => m
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,20 +25,20 @@ var Chunk607399 = require("./607399.js"),
   Chunk746080 = require("./746080.js"),
   Chunk892513 = require("./892513.js");
 
-function _(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -48,130 +48,130 @@ function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function v(e) {
-  if (!e && (0, E.isMac)() && E.isPlatformEmbedded) {
-    var t, n, i;
-    let e = null != (t = await (null == (n = (i = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? true : n.call(i))) ? t : "Maximize";
+async function m(e) {
+  if (!e && (0, I.isMac)() && I.isPlatformEmbedded) {
+    var t, n, r;
+    let e = null != (t = await (null == (n = (r = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? true : n.call(r))) ? t : "Maximize";
     "Minimize" === e ? O.Ay.minimize() : "Maximize" === e && O.Ay.maximize()
   }
 }
 
-function S(e) {
+function f(e) {
   let {
     children: t,
     className: n,
     channelId: o,
-    channelType: a,
-    guildId: E,
+    channelType: s,
+    guildId: I,
     innerClassname: O,
-    transparent: _ = false,
+    transparent: P = false,
     hidden: y = false,
-    toolbar: S,
-    mobileToolbar: R,
-    "aria-label": L,
-    "aria-labelledby": w,
-    scrollable: I,
-    role: j,
-    hideSearch: N,
-    showDivider: T,
-    disableDoubleClick: x
-  } = e, k = null == o || (0, b.jq)(o) ? null : o, P = (0, l.bG)([g.A], () => g.A.isInChannel(k) || false), D = (0, l.bG)([c.A], () => null != k && c.A.getParticipantsListOpen(k)), {
-    enabled: U,
-    inInbox: M
-  } = d.A.useExperiment({
+    toolbar: f,
+    mobileToolbar: C,
+    "aria-label": g,
+    "aria-labelledby": D,
+    scrollable: h,
+    role: U,
+    hideSearch: b,
+    showDivider: M,
+    disableDoubleClick: j
+  } = e, v = null == o || (0, R.jq)(o) ? null : o, k = (0, l.bG)([T.A], () => T.A.isInChannel(v) || false), L = (0, l.bG)([c.A], () => null != v && c.A.getParticipantsListOpen(v)), {
+    enabled: x,
+    inInbox: G
+  } = E.A.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: V
+    hasParticipantsPanel: w
   } = (0, u.A)({
     location: "HeaderBar"
   });
-  return (0, i.jsx)(m.Ay, {
+  return (0, r.jsx)(N.Ay, {
     className: n,
     innerClassName: O,
     toolbar: function() {
-      if (null == S) return null;
-      let e = null != o && !N;
-      return r.Fr ? R : (0, i.jsxs)(i.Fragment, {
-        children: [S, e && !(0, b.jq)(o) ? (0, i.jsx)(p.Ay, {
-          guildId: E,
+      if (null == f) return null;
+      let e = null != o && !b;
+      return i.Fr ? C : (0, r.jsxs)(r.Fragment, {
+        children: [f, e && !(0, R.jq)(o) ? (0, r.jsx)(_.Ay, {
+          guildId: I,
           channelId: o,
-          className: A.$P
-        }, null != E ? E : o) : null, T && (0, i.jsx)(m.Ay.Divider, {}), U && !M ? (0, i.jsx)(h.A, {}) : null, V && P && null != k && !D && a === f.rbe.GROUP_DM && (0, i.jsxs)("div", {
-          className: A.pc,
-          children: [(0, i.jsx)(m.Ay.Divider, {}), (0, i.jsx)(C.A, {
-            onClick: () => s.A.toggleParticipantsList(k, !D)
+          className: S.$P
+        }, null != I ? I : o) : null, M && (0, r.jsx)(N.Ay.Divider, {}), x && !G ? (0, r.jsx)(d.A, {}) : null, w && k && null != v && !L && s === p.rbe.GROUP_DM && (0, r.jsxs)("div", {
+          className: S.pc,
+          children: [(0, r.jsx)(N.Ay.Divider, {}), (0, r.jsx)(A.A, {
+            onClick: () => a.A.toggleParticipantsList(v, !L)
           })]
         })]
       })
     }(),
-    transparent: _,
+    transparent: P,
     hidden: y,
-    onDoubleClick: () => v(x),
-    "aria-label": L,
-    "aria-labelledby": w,
-    role: j,
-    scrollable: I,
+    onDoubleClick: () => m(j),
+    "aria-label": g,
+    "aria-labelledby": D,
+    role: U,
+    scrollable: h,
     children: t
   })
 }
 
-function R(e) {
+function C(e) {
   let {
     children: t,
     className: n,
-    "aria-label": r,
+    "aria-label": i,
     "aria-labelledby": l,
-    role: s,
+    role: a,
     disableDoubleClick: o
   } = e;
-  return (0, i.jsx)(m.Ay, {
+  return (0, r.jsx)(N.Ay, {
     className: n,
-    onDoubleClick: () => v(o),
-    "aria-label": r,
+    onDoubleClick: () => m(o),
+    "aria-label": i,
     "aria-labelledby": l,
-    role: s,
+    role: a,
     children: t
   })
 }
 
-function L(e) {
+function g(e) {
   let {
     isAuthenticated: t = true
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, i, r, l = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
       return l
     }
     if (l = function(e, t) {
         if (null == e) return {};
-        var n, i, r = {},
+        var n, r, i = {},
           l = Object.getOwnPropertyNames(e);
-        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
-        return r
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
   }(e, ["isAuthenticated"]), {
-    analyticsLocations: r
-  } = (0, a.Ay)(o.A.HEADER_BAR);
-  return (0, i.jsx)(a.f5, {
-    value: r,
-    children: t ? (0, i.jsx)(S, y(_({}, n), {
+    analyticsLocations: i
+  } = (0, s.Ay)(o.A.HEADER_BAR);
+  return (0, r.jsx)(s.f5, {
+    value: i,
+    children: t ? (0, r.jsx)(f, y(P({}, n), {
       className: n.className
-    })) : (0, i.jsx)(R, y(_({}, n), {
+    })) : (0, r.jsx)(C, y(P({}, n), {
       className: n.className
     }))
   })
 }
-L.Title = Chunk58736.Ay.Title, L.Icon = Chunk58736.Ay.Icon, L.ChannelIcon = Chunk58736.Ay.ChannelIcon, L.Divider = Chunk58736.Ay.Divider, L.Caret = Chunk58736.Ay.Caret;
-let w = L
+g.Title = Chunk58736.Ay.Title, g.Icon = Chunk58736.Ay.Icon, g.ChannelIcon = Chunk58736.Ay.ChannelIcon, g.Divider = Chunk58736.Ay.Divider, g.Caret = Chunk58736.Ay.Caret;
+let D = g

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 914835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk790687 = require("./790687.js");
 
-function j(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function j(e) {
   return e
 }
 
-function v(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,14 +55,14 @@ function v(e, t) {
   }), e
 }
 
-function x(e) {
-  var t, i, p;
+function v(e) {
+  var t, i, h;
   let {
     userId: A,
     channel: y
-  } = e, _ = l.useRef(null), {
-    analyticsLocations: x
-  } = (0, d.Ay)(u.A.USERNAME), E = (0, a.bG)([m.default], () => m.default.getUser(A)), C = (0, a.bG)([g.Ay], () => null != A ? g.Ay.getMember(y.guild_id, A) : null), S = (0, h.gn)(y.guild_id, null != A ? A : true, null != (t = null == C ? true : C.colorStrings) ? t : null);
+  } = e, O = l.useRef(null), {
+    analyticsLocations: v
+  } = (0, d.Ay)(u.A.USERNAME), E = (0, a.bG)([m.default], () => m.default.getUser(A)), C = (0, a.bG)([f.Ay], () => null != A ? f.Ay.getMember(y.guild_id, A) : null), S = (0, p.gn)(y.guild_id, null != A ? A : true, null != (t = null == C ? true : C.colorStrings) ? t : null);
 
   function I(e) {
     if (null == E) return null;
@@ -70,31 +70,31 @@ function x(e) {
       let {
         default: e
       } = await Promise.all([n.e("97262"), n.e("29534"), n.e("67447"), n.e("10905")]).then(n.bind(n, 708202));
-      return t => (0, r.jsx)(e, v(j({}, t), {
+      return t => (0, r.jsx)(e, j(x({}, t), {
         user: E,
         guildId: y.guild_id,
         channel: y
       }))
     })
   }
-  let N = null != (i = null != (p = null == C ? true : C.nick) ? p : b.Ay.getName(E)) ? i : "???",
+  let N = null != (i = null != (h = null == C ? true : C.nick) ? h : b.Ay.getName(E)) ? i : "???",
     T = null == C ? true : C.colorString;
   return null == E ? (0, r.jsx)("span", {
-    className: s()(O.eM, O.sL),
+    className: s()(_.eM, _.sL),
     children: N
   }) : (0, r.jsx)(d.f5, {
-    value: x,
-    children: (0, r.jsx)(f.A, {
-      targetElementRef: _,
+    value: v,
+    children: (0, r.jsx)(g.A, {
+      targetElementRef: O,
       user: E,
       guildId: y.guild_id,
       channelId: y.id,
       roleId: null == C ? true : C.colorRoleId,
       clickTrap: true,
-      children: e => (0, r.jsx)(o.DUT, v(j({}, e), {
-        innerRef: _,
+      children: e => (0, r.jsx)(o.DUT, j(x({}, e), {
+        innerRef: O,
         tag: "span",
-        className: O.eM,
+        className: _.eM,
         onContextMenu: I,
         children: (0, r.jsx)(o.gyj, {
           name: N,
@@ -121,9 +121,9 @@ function E(e) {
       variant: "text-md/normal",
       color: "text-default",
       children: (0, r.jsx)("div", {
-        className: O.VA,
-        children: _.intl.format(_.t.imPXd5, {
-          usernameHook: (e, n) => (0, r.jsx)(x, {
+        className: _.VA,
+        children: O.intl.format(O.t.imPXd5, {
+          usernameHook: (e, n) => (0, r.jsx)(v, {
             userId: t.ownerId,
             channel: t
           }, n)
@@ -132,7 +132,7 @@ function E(e) {
     }), t.type === y.rbe.PRIVATE_THREAD ? (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: _.intl.string(_.t["1awbZG"])
+      children: O.intl.string(O.t["1awbZG"])
     }) : null]
   })
 }
@@ -141,13 +141,13 @@ function C(e) {
   var t;
   let {
     channel: n
-  } = e, l = null != (t = (0, p.gU)(n)) ? t : o.ysw;
+  } = e, l = null != (t = (0, h.gU)(n)) ? t : o.ysw;
   return (0, r.jsxs)(A.Ay, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: O.P0,
+      className: _.P0,
       children: (0, r.jsx)(l, {
-        className: O.Kk
+        className: _.Kk
       })
     }), (0, r.jsx)(A.cr, {
       children: n.name

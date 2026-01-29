@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 859669, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 859669, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  d: () => T
+  d: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,10 +14,10 @@ let o = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_ACCESSIBILITY_LINK, {
     useSearchTerms: () => [],
     Component: () => (0, n.jsx)(l.Text, {
       variant: "text-md/normal",
-      className: a.fK,
-      children: (0, n.jsx)(u.$p, {})
+      className: u.fK,
+      children: (0, n.jsx)(a.$p, {})
     })
   }),
-  T = (0, Chunk419954.zZ)(Chunk780964.X.APPEARANCE_ACCESSIBILITY_LINK_CATEGORY, {
+  d = (0, Chunk419954.zZ)(Chunk780964.X.APPEARANCE_ACCESSIBILITY_LINK_CATEGORY, {
     buildLayout: () => [o]
   })

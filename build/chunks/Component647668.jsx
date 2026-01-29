@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 647668, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => H
+  A: () => F
 }), require("./114821.js"), require("./339614.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -45,7 +45,7 @@ function G(e, t, n) {
     children: [(0, r.jsx)(e, {
       className: k.RI,
       color: "currentColor"
-    }), (0, r.jsx)(h.Ay, {
+    }), (0, r.jsx)(p.Ay, {
       guildId: n,
       users: t,
       max: 6
@@ -62,83 +62,83 @@ function U(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: L.intl.string(L.t.fpKdS1)
-  }) : (0, r.jsx)(j.A, {
+    children: M.intl.string(M.t.fpKdS1)
+  }) : (0, r.jsx)(x.A, {
     muteConfig: t,
     className: n
   })
 }
 
-function B(e) {
-  let t, n, i, a, u, g, m, b, A, y, _, O, j, L, B, V, F, H, K, W, {
-      guild: z
+function V(e) {
+  let t, n, i, a, u, f, m, b, A, y, O, _, x, M, V, B, H, F, K, Y, {
+      guild: W
     } = e,
-    Y = z.id,
+    z = W.id,
     {
       voiceUsersToShow: q,
       stageSpeakers: X,
       numStageListeners: J,
       streamUsersToShow: Q,
       embeddedActivitiesUsers: Z
-    } = (t = z.id, n = (0, c.yK)([T.Ay, C.A], () => [...T.Ay.getChannels(t)[T.vM].filter(e => {
+    } = (t = W.id, n = (0, c.yK)([T.Ay, C.A], () => [...T.Ay.getChannels(t)[T.vM].filter(e => {
       let {
         channel: t
       } = e;
-      return t.type === M.rbe.GUILD_VOICE
+      return t.type === L.rbe.GUILD_VOICE
     }).map(e => {
       let {
         channel: t
       } = e;
       return t.id
-    }), ...Object.values(C.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), i = (0, E.Ay)(t), a = l.useMemo(() => i.map(e => e.id), [i]), u = (0, c.bG)([D.Ay], () => D.Ay.getVoiceStates(t), [t]), g = (0, c.yK)([P.A], () => P.A.getBlockedOrIgnoredIDs()), m = o().flatMap(n, e => {
+    }), ...Object.values(C.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), i = (0, E.Ay)(t), a = l.useMemo(() => i.map(e => e.id), [i]), u = (0, c.bG)([D.Ay], () => D.Ay.getVoiceStates(t), [t]), f = (0, c.yK)([P.A], () => P.A.getBlockedOrIgnoredIDs()), m = o().flatMap(n, e => {
       var t;
-      if (e === z.afkChannelId) return [];
+      if (e === W.afkChannelId) return [];
       let n = (null != (t = u[e]) ? t : []).map(e => {
         let {
           user: t
         } = e;
         return t
       });
-      return (0, f.aw)(n, g)
-    }), b = (0, c.yK)([v.A], () => o().flatMap(a, e => {
-      if (e === z.afkChannelId) return [];
-      let t = v.A.getMutableParticipants(e, x.ip.SPEAKER).filter(e => e.type === x.wY.VOICE).map(e => {
+      return (0, g.aw)(n, f)
+    }), b = (0, c.yK)([j.A], () => o().flatMap(a, e => {
+      if (e === W.afkChannelId) return [];
+      let t = j.A.getMutableParticipants(e, v.ip.SPEAKER).filter(e => e.type === v.wY.VOICE).map(e => {
         let {
           user: t
         } = e;
         return t
       });
-      return (0, f.aw)(t, g)
-    })), A = (0, c.bG)([v.A], () => {
+      return (0, g.aw)(t, f)
+    })), A = (0, c.bG)([j.A], () => {
       let e = 0;
-      for (let t of a) e += v.A.getParticipantCount(t, x.ip.AUDIENCE);
+      for (let t of a) e += j.A.getParticipantCount(t, v.ip.AUDIENCE);
       return e
     }), y = (0, c.yK)([N.A], () => {
       let e = N.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
-      return (0, f.F7)(e, g)
-    }, [g, t]), _ = (0, c.yK)([p.Ay], () => {
-      let e = p.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
-      return (0, f.F7)(e, g)
-    }, [t, g]), O = (0, c.yK)([R.default], () => {
-      let e = _.map(e => R.default.getUser(e));
-      return (0, f.aw)(e)
-    }, [_]), j = (0, c.yK)([R.default], () => y.map(e => R.default.getUser(e)), [y]), L = m.filter(e => !y.includes(e.id) && !_.includes(e.id)), B = (0, f.aw)(L), V = j.filter(e => null != e && !_.includes(e.id)), F = (0, c.bG)([S.A], () => S.A.getUserAffinitiesMap(), []), H = l.useMemo(() => (0, I.L)(B, F, "GuildTooltip - nonBlockedUsers"), [B, F]), K = l.useMemo(() => (0, I.L)(b, F, "GuildTooltip - stageSpeakers"), [b, F]), W = l.useMemo(() => (0, I.L)(V, F, "GuildTooltip - streamUsers"), [V, F]), {
-      voiceUsersToShow: H,
+      return (0, g.F7)(e, f)
+    }, [f, t]), O = (0, c.yK)([h.Ay], () => {
+      let e = h.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
+      return (0, g.F7)(e, f)
+    }, [t, f]), _ = (0, c.yK)([R.default], () => {
+      let e = O.map(e => R.default.getUser(e));
+      return (0, g.aw)(e)
+    }, [O]), x = (0, c.yK)([R.default], () => y.map(e => R.default.getUser(e)), [y]), M = m.filter(e => !y.includes(e.id) && !O.includes(e.id)), V = (0, g.aw)(M), B = x.filter(e => null != e && !O.includes(e.id)), H = (0, c.bG)([S.A], () => S.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, I.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = l.useMemo(() => (0, I.L)(b, H, "GuildTooltip - stageSpeakers"), [b, H]), Y = l.useMemo(() => (0, I.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
+      voiceUsersToShow: F,
       stageSpeakers: K,
       numStageListeners: A,
-      streamUsersToShow: W,
-      embeddedActivitiesUsers: l.useMemo(() => (0, I.L)(O, F, "GuildTooltip - embeddedActivitiesUsers"), [O, F]),
-      hasActivity: b.length > 0 || L.length > 0 || V.length > 0 || O.length > 0
+      streamUsersToShow: Y,
+      embeddedActivitiesUsers: l.useMemo(() => (0, I.L)(_, H, "GuildTooltip - embeddedActivitiesUsers"), [_, H]),
+      hasActivity: b.length > 0 || M.length > 0 || B.length > 0 || _.length > 0
     }),
-    $ = G(d.HKD, q, Y),
+    $ = G(d.HKD, q, z),
     ee = 0 === X.length ? null : (0, r.jsxs)("div", {
       className: k.nM,
       children: [(0, r.jsx)(d.qux, {
         size: "lg",
         color: "currentColor",
         className: k.RI
-      }), (0, r.jsx)(h.Ay, {
-        guildId: Y,
+      }), (0, r.jsx)(p.Ay, {
+        guildId: z,
         users: X,
         max: 3
       }), (0, r.jsxs)("div", {
@@ -154,15 +154,15 @@ function B(e) {
         })]
       })]
     }),
-    et = G(d.Fzq, Q, Y),
-    en = G(d.k9F, Z, Y),
+    et = G(d.Fzq, Q, z),
+    en = G(d.k9F, Z, z),
     {
       isMuted: er,
       muteConfig: el
     } = (0, c.cf)([w.Ay], () => ({
-      isMuted: w.Ay.isMuted(Y),
-      muteConfig: w.Ay.getMuteConfig(Y)
-    }), [Y]);
+      isMuted: w.Ay.isMuted(z),
+      muteConfig: w.Ay.getMuteConfig(z)
+    }), [z]);
   return (0, r.jsxs)(r.Fragment, {
     children: [ee, $, et, en, er ? (0, r.jsx)(U, {
       muteConfig: el,
@@ -173,7 +173,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function B(e) {
   let {
     guildJoinRequestStatus: t
   } = e;
@@ -184,26 +184,26 @@ function V(e) {
     children: function(e) {
       switch (e) {
         case A.B5.SUBMITTED:
-          return L.intl.string(L.t["9KFC98"]);
+          return M.intl.string(M.t["9KFC98"]);
         case A.B5.REJECTED:
-          return L.intl.string(L.t["TQY/Rd"]);
+          return M.intl.string(M.t["TQY/Rd"]);
         case A.B5.APPROVED:
-          return L.intl.string(L.t.WXHcq5);
+          return M.intl.string(M.t.WXHcq5);
         default:
-          return L.intl.string(L.t.fjHFC8)
+          return M.intl.string(M.t.fjHFC8)
       }
     }(t)
   })
 }
 
-function F(e) {
+function H(e) {
   let {
     guild: t
-  } = e, n = (0, g.A)(t), l = (0, y.a)(t), i = null != l ? (0, r.jsx)(V, {
+  } = e, n = (0, f.A)(t), l = (0, y.a)(t), i = null != l ? (0, r.jsx)(B, {
     guildJoinRequestStatus: l
-  }) : null, a = (0, r.jsx)(B, {
+  }) : null, a = (0, r.jsx)(V, {
     guild: t
-  }), o = (0, c.bG)([O.A], () => O.A.isViewingRoles(t.id)), u = (0, _.Ig)(t);
+  }), o = (0, c.bG)([_.A], () => _.A.isViewingRoles(t.id)), u = (0, O.Ig)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()(k.nM, k.Dl),
@@ -222,17 +222,17 @@ function F(e) {
       className: k.Ef,
       color: "text-default",
       variant: "text-sm/medium",
-      children: L.intl.string(L.t["2n0/Fk"])
+      children: M.intl.string(M.t["2n0/Fk"])
     }) : null, o ? (0, r.jsx)(d.Text, {
       className: k.BT,
       color: "text-default",
       variant: "text-xs/normal",
-      children: L.intl.string(L.t["5LwN89"])
+      children: M.intl.string(M.t["5LwN89"])
     }) : null != i ? i : a]
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     guild: t,
     disabled: n = false,
@@ -240,7 +240,7 @@ function H(e) {
     children: s
   } = e, a = l.useMemo(() => n ? null : (0, r.jsx)("div", {
     className: k.A_,
-    children: (0, r.jsx)(F, {
+    children: (0, r.jsx)(H, {
       guild: t
     })
   }), [n, t]);

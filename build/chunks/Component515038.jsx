@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 515038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T
@@ -79,8 +79,8 @@ function T(e) {
     }), T)
   }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, Q = (null == (r = w.userStatus) ? true : r.claimedAt) != null, Y = (0, f.ks)(w.config), J = (0, f._Z)(w.config), {
     completedRatio: X,
-    completedRatioDisplay: $
-  } = (0, x.O9)(w), Z = (0, h.gj)(w, L, m.Ob.QuestHome, U), ee = l.useMemo(() => Q && Y ? C.intl.format(C.t["8Op4c4"], {
+    completedRatioDisplay: Z
+  } = (0, x.O9)(w), $ = (0, h.gj)(w, L, m.Ob.QuestHome, U), ee = l.useMemo(() => Q && Y ? C.intl.format(C.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(E, {
       questId: w.id,
       children: [(0, a.jsx)(p.A, {
@@ -107,13 +107,13 @@ function T(e) {
       children: G
     }, w.id)
   }), [B, Q, G, w.id, J, Y]), et = l.useMemo(() => {
-    if (null != Z) return (0, a.jsx)(c.Text, {
+    if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: S.h_,
-      children: Z
+      children: $
     })
-  }, [Z]), en = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+  }, [$]), en = (0, o.bG)([u.A], () => u.A.useReducedMotion);
   return (0, a.jsxs)("div", {
     className: S.kL,
     ref: U,
@@ -142,7 +142,7 @@ function T(e) {
               quest: w,
               size: 76,
               percentComplete: X,
-              percentCompleteText: P && !(0, g.Ic)(w) ? $ : true,
+              percentCompleteText: P && !(0, g.Ic)(w) ? Z : true,
               children: (0, a.jsx)("div", {
                 className: S.yv,
                 children: (0, a.jsx)(v.A, {

@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 98254, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
@@ -17,12 +17,12 @@ function s(e) {
     useOptions: o,
     fieldLayout: c,
     clearable: d
-  } = t, u = t.setValue, p = s(), _ = null == a ? true : a(), m = n(), g = o();
+  } = t, u = t.setValue, _ = s(), p = null == a ? true : a(), m = n(), g = o();
   return (0, r.jsx)(l.L, {
     children: (0, r.jsx)(i.l6P, {
       selectionMode: "single",
-      label: p,
-      description: _,
+      label: _,
+      description: p,
       options: g,
       value: m,
       clearable: d,

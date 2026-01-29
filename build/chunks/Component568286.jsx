@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 568286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => h
+  q: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,19 +17,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk2242 = require("./2242.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk289324 = require("./289324.js");
-let b = e => {
+let f = e => {
     let {
       transitionState: t,
       groupListing: n,
       listing: l,
-      subscription: b,
-      onClose: h
-    } = e, A = (0, p.GV)(), {
+      subscription: f,
+      onClose: b
+    } = e, h = (0, _.GV)(), {
       analyticsLocations: E
     } = (0, u.Ay)(d.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-      cancelSubscription: x,
-      error: O,
-      submitting: C
+      cancelSubscription: O,
+      error: C,
+      submitting: x
     } = (e => {
       let [t, n] = i.useState(false), [r, l] = i.useState(null);
       return {
@@ -45,44 +45,44 @@ let b = e => {
         error: r,
         submitting: t
       }
-    })(E), y = async () => {
-      await x(b.id) && h()
-    }, j = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), v = s()(b.currentPeriodEnd).format("MMMM Do, YYYY"), S = g.intl.formatToPlainString(g.t.KsMRP5, {
-      numChannels: j.length,
-      numAdditionalBenefits: T.length,
-      subscriptionEndDate: v
+    })(E), S = async () => {
+      await O(f.id) && b()
+    }, T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), y = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), N = g.intl.formatToPlainString(g.t.KsMRP5, {
+      numChannels: T.length,
+      numAdditionalBenefits: I.length,
+      subscriptionEndDate: y
     });
     return (0, r.jsx)(a.Modal, {
       transitionState: t,
-      "aria-labelledby": A,
+      "aria-labelledby": h,
       actions: [{
         text: g.intl.string(g.t.EP6EPb),
         variant: "secondary",
-        onClick: h
+        onClick: b
       }, {
         variant: "critical-primary",
         text: g.intl.string(g.t.F6lUDF),
-        onClick: y,
-        loading: C
+        onClick: S,
+        loading: x
       }],
       title: g.intl.string(g.t.O6l5tM),
-      subtitle: S,
-      onClose: h,
+      subtitle: N,
+      onClose: b,
       children: (0, r.jsxs)(o.BJc, {
         gap: 8,
-        children: [null != O ? (0, r.jsx)(o.wx6, {
+        children: [null != C ? (0, r.jsx)(o.wx6, {
           type: "critical",
-          children: O.message
-        }) : null, (0, r.jsx)(_.x, {
+          children: C.message
+        }) : null, (0, r.jsx)(p.x, {
           listingId: l.id,
           guildId: n.guild_id,
-          className: f.P
+          className: A.P
         })]
       })
     })
   },
-  h = e => {
-    (0, o.qfG)(t => (0, r.jsx)(b, function(e) {
+  b = e => {
+    (0, o.qfG)(t => (0, r.jsx)(f, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 725613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -10,19 +10,19 @@ var r, l, Chunk478437 = require("./478437.js"),
   Chunk142120 = require("./142120.js"),
   Chunk927813 = require("./927813.js"),
   Chunk661470 = require("./661470.js");
-let p = new Set,
-  h = {};
+let h = new Set,
+  p = {};
 
-function f(e) {
+function g(e) {
   return new Date(e * u.A.Millis.SECOND).getTime()
 }
 
-function g() {
-  p.clear()
+function f() {
+  h.clear()
 }
 
 function m(e) {
-  p.delete(e.guild.id)
+  h.delete(e.guild.id)
 }
 class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
@@ -30,10 +30,10 @@ class b extends(r = Chunk311907.Ay.Store) {
   }
   getStartTime(e) {
     var t;
-    if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return null == (t = h[e.guild_id]) ? true : t[e.id]
+    if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return null == (t = p[e.guild_id]) ? true : t[e.id]
   }
   hasRequestedStartTimes(e) {
-    return p.has(e)
+    return h.has(e)
   }
 }(l = "displayName") in b ? Object.defineProperty(b, l, {
   value: "VoiceChannelStartTimeStore",
@@ -44,8 +44,8 @@ class b extends(r = Chunk311907.Ay.Store) {
 let A = new b(Chunk73153.h, {
   GUILD_CREATE: m,
   GUILD_DELETE: m,
-  CONNECTION_RESUMED: g,
-  CONNECTION_OPEN: g,
+  CONNECTION_RESUMED: f,
+  CONNECTION_OPEN: f,
   VOICE_CHANNEL_START_TIME_UPDATE: function(e) {
     let {
       guildId: t,
@@ -56,7 +56,7 @@ let A = new b(Chunk73153.h, {
       location: "VoiceChannelStartTimeStore"
     }).enabled;
     if (((0, s.un)() || (0, s.m0)()) && !l) returnfalse;
-    null == h[t] && (h[t] = {}), h[t][n] = null != r ? f(r) : true
+    null == p[t] && (p[t] = {}), p[t][n] = null != r ? g(r) : true
   },
   CHANNEL_INFO: function(e) {
     let {
@@ -67,12 +67,12 @@ let A = new b(Chunk73153.h, {
         id: e,
         voiceStartTime: r
       }
-      of(h[t] = {}, n)) h[t][e] = null != r ? f(r) : true
+      of(p[t] = {}, n)) p[t][e] = null != r ? g(r) : true
   },
   FETCH_CHANNEL_INFO: function(e) {
     let {
       guildId: t
     } = e;
-    p.add(t), c.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
+    h.add(t), c.A.getSocket().requestChannelInfo(t, ["status", "voice_start_time"])
   }
 })

@@ -11,13 +11,13 @@ require.d(exports, {
   SN: () => H,
   Ub: () => en,
   Yj: () => F,
-  e2: () => $,
+  e2: () => J,
   hk: () => V,
   lG: () => er,
   px: () => X,
   qG: () => Y,
   sq: () => ee,
-  uM: () => J
+  uM: () => $
 }), require("./747238.js"), require("./591487.js"), require("./727858.js"), require("./896048.js"), require("./321073.js"), require("./65821.js"), require("./812715.js"), require("./938796.js"), require("./638769.js"), require("./735438.js");
 var r, i, Chunk567243 = require("./567243.js"),
   Chunk179771 = require("./179771.js"),
@@ -255,7 +255,7 @@ function Z(e) {
     }, "Invalid Client ID")
   })
 }
-async function J(e, t, n) {
+async function $(e, t, n) {
   let r = d.A.getApplication(t);
   if ("string" == typeof n)
     if (e.transport === x.z4.POST_MESSAGE) {
@@ -284,7 +284,7 @@ async function J(e, t, n) {
     flags: o
   }
 }
-async function $(e, t) {
+async function J(e, t) {
   let n = U[e];
   null == n && (n = new o.A(t ? 2 : 60, k), U[e] = n), await n.process()
 }

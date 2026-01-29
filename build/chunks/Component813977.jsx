@@ -15,11 +15,11 @@ var Chunk311907 = require("./311907.js"),
 
 function u(e) {
   let t = !c.isPlatformEmbedded,
-    n = (0, l.bG)([o.A], () => o.A.getMode()),
-    u = (t, l) => (0, r.jsx)(i.iDA, {
+    n = (0, i.bG)([o.A], () => o.A.getMode()),
+    u = (t, i) => (0, r.jsx)(l.iDA, {
       id: t,
       group: "input-modes",
-      label: l,
+      label: i,
       checked: n === t,
       action: () => a.A.setMode(t, true, true, {
         analyticsLocations: e

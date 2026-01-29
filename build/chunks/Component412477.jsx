@@ -1,4 +1,4 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 412477, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => u
@@ -14,10 +14,10 @@ let u = Chunk64700.memo(function(e) {
   let {
     emptyText: t,
     icon: n,
-    absolute: i = false
+    absolute: l = false
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(c.TP, i && c.ys),
+    className: a()(c.TP, l && c.ys),
     children: (0, r.jsx)(s.m, {
       text: t,
       children: (0, r.jsx)("div", {

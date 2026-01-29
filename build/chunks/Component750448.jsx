@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 750448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,14 +26,14 @@ function A() {
 function y(e) {
   var t;
   let n = o.default.getMutableGuildStates();
-  return e === f.sFm.SERVER_DISCOVERY_BADGE && !d.A.hasViewed(f.sFm.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
+  return e === g.sFm.SERVER_DISCOVERY_BADGE && !d.A.hasViewed(g.sFm.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
-let _ = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, b, f.sFm.E3_SERVER_DISCOVERY_BADGE, m]),
-  O = Chunk64700.forwardRef(function(e, t) {
+let O = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, b, g.sFm.E3_SERVER_DISCOVERY_BADGE, m]),
+  _ = Chunk64700.forwardRef(function(e, t) {
     var n, l;
-    let d = (0, i.yK)([u.Ay, c.A, o.default], () => _(u.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
-      h = (0, i.bG)([p.A], () => p.A.isFocused()),
-      f = (0, i.bG)([a.A], () => a.A.getExpandedFolders());
+    let d = (0, i.yK)([u.Ay, c.A, o.default], () => O(u.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
+      p = (0, i.bG)([h.A], () => h.A.isFocused()),
+      g = (0, i.bG)([a.A], () => a.A.getExpandedFolders());
     return (0, r.jsx)(s.A, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -55,11 +55,11 @@ let _ = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, b, f.sFm.E3_SERVER
       ref: t,
       items: d,
       isUnread: A,
-      textUnread: g.intl.string(g.t.y2b7CA),
-      textMention: g.intl.string(g.t.y2b7CA),
+      textUnread: f.intl.string(f.t.y2b7CA),
+      textMention: f.intl.string(f.t.y2b7CA),
       isMentioned: y,
-      animate: h,
-      expandedFolders: f
+      animate: p,
+      expandedFolders: g
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

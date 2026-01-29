@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 912615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,22 +16,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk361151 = require("./361151.js"),
   Chunk473169 = require("./473169.js");
-let f = /^\d+$|^$/;
+let A = /^\d+$|^$/;
 
-function b(e) {
+function f(e) {
   let {
     onClose: t,
     transitionState: n
   } = e, {
-    authorizedApplicationId: b,
-    authorizationError: h,
-    authorizing: A
-  } = (0, s.cf)([p.A], () => ({
-    authorizedApplicationId: p.A.testModeApplicationId,
-    authorizationError: p.A.error,
-    authorizing: p.A.isFetchingAuthorization
-  })), [E, x] = i.useState(null != b ? b : ""), [O, C] = i.useState("8080"), [y, j] = i.useState("localhost"), T = f.test(E);
-  async function v() {
+    authorizedApplicationId: f,
+    authorizationError: b,
+    authorizing: h
+  } = (0, s.cf)([_.A], () => ({
+    authorizedApplicationId: _.A.testModeApplicationId,
+    authorizationError: _.A.error,
+    authorizing: _.A.isFetchingAuthorization
+  })), [E, O] = i.useState(null != f ? f : ""), [C, x] = i.useState("8080"), [S, T] = i.useState("localhost"), I = A.test(E);
+  async function y() {
     c.SH();
     let e = function(e, t, n) {
       if (null == e) return null;
@@ -41,32 +41,32 @@ function b(e) {
         case "proxy":
           return (0, d.Ay)(n)
       }
-    }(y, O, E);
+    }(S, C, E);
     null != await c.q1(E, e) && t()
   }
   i.useEffect(() => () => o.h.wait(() => c.SH()), []);
-  let S = null != b && b === E,
-    I = S ? function() {
-      c.cL(), x(""), j(null)
-    } : v,
-    N = i.useMemo(() => [{
-      loading: A,
-      disabled: !T || 0 === E.length || "localhost" === y && 0 === O.length,
-      variant: S ? "critical-primary" : "active",
-      text: S ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
-      onClick: I
-    }], [E.length, A, S, T, O.length, I, y]);
+  let N = null != f && f === E,
+    j = N ? function() {
+      c.cL(), O(""), T(null)
+    } : y,
+    v = i.useMemo(() => [{
+      loading: h,
+      disabled: !I || 0 === E.length || "localhost" === S && 0 === C.length,
+      variant: N ? "critical-primary" : "active",
+      text: N ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
+      onClick: j
+    }], [E.length, h, N, I, C.length, j, S]);
   return (0, r.jsxs)(l.Modal, {
-    title: _.intl.string(_.t.f8fzky),
-    subtitle: _.intl.string(_.t.a6Vill),
-    actions: N,
+    title: p.intl.string(p.t.f8fzky),
+    subtitle: p.intl.string(p.t.a6Vill),
+    actions: v,
     onClose: t,
     transitionState: n,
-    children: [null == h ? null : (0, r.jsx)("div", {
+    children: [null == b ? null : (0, r.jsx)("div", {
       className: g.SX,
       children: (0, r.jsx)(a.wx6, {
         type: "critical",
-        children: h
+        children: b
       })
     }), (0, r.jsxs)(u.A, {
       direction: u.A.Direction.VERTICAL,
@@ -74,46 +74,46 @@ function b(e) {
       children: [(0, r.jsx)("div", {
         className: m.I,
         children: (0, r.jsx)(a.ksK, {
-          label: _.intl.string(_.t.P6TzgI),
+          label: p.intl.string(p.t.P6TzgI),
           required: true,
           value: E,
           maxLength: 19,
-          error: T ? null : _.intl.string(_.t.gPNgKO),
+          error: I ? null : p.intl.string(p.t.gPNgKO),
           onChange: function(e) {
-            x(e)
+            O(e)
           },
-          disabled: A
+          disabled: h
         })
       }), (0, r.jsx)("div", {
         className: m.I,
         children: (0, r.jsx)(a.l6P, {
           selectionMode: "single",
-          label: _.intl.string(_.t["/GTqXG"]),
-          disabled: !T || "" === E,
-          value: y,
+          label: p.intl.string(p.t["/GTqXG"]),
+          disabled: !I || "" === E,
+          value: S,
           options: [{
             value: "localhost",
-            label: _.intl.string(_.t["+Y9Y6r"]),
+            label: p.intl.string(p.t["+Y9Y6r"]),
             id: "localhost"
           }, {
             value: "proxy",
-            label: _.intl.string(_.t.uaksyW),
+            label: p.intl.string(p.t.uaksyW),
             id: "proxy"
           }],
           onSelectionChange: function(e) {
-            j(e)
+            T(e)
           },
           placeholder: "URL Origin Type"
         })
-      }), "localhost" !== y ? null : (0, r.jsx)("div", {
+      }), "localhost" !== S ? null : (0, r.jsx)("div", {
         className: m.I,
         children: (0, r.jsx)(a.ksK, {
           required: true,
-          label: _.intl.string(_.t.fF4zxq),
-          value: O,
+          label: p.intl.string(p.t.fF4zxq),
+          value: C,
           maxLength: 5,
-          onChange: e => C(e),
-          disabled: A
+          onChange: e => x(e),
+          disabled: h
         })
       })]
     })]

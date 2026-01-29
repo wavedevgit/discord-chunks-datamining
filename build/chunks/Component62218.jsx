@@ -1,7 +1,7 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 62218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -32,26 +32,26 @@ class u extends Chunk64700.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, s = (0, r.isLinux)() ? c.intl.string(c.t["7pPjTW"]) : c.intl.string(c.t.ZkDZov);
-    return (0, i.jsxs)(l.BJc, {
+    } = this.state, l = (0, r.isLinux)() ? c.intl.string(c.t["7pPjTW"]) : c.intl.string(c.t.ZkDZov);
+    return (0, i.jsxs)(s.BJc, {
       gap: 16,
-      children: [(0, i.jsx)(l.Heading, {
+      children: [(0, i.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: s
-      }), (0, i.jsxs)(l.nVY, {
-        children: [(0, i.jsx)(l.dOG, {
+        children: l
+      }), (0, i.jsxs)(s.nVY, {
+        children: [(0, i.jsx)(s.dOG, {
           label: c.intl.string(c.t.WQm4p1),
           description: c.intl.string(c.t["s/cQrU"]),
           checked: e,
           onChange: this.handleToggleOpenOnStartup
-        }), (0, r.isWindows)() ? (0, i.jsx)(l.dOG, {
+        }), (0, r.isWindows)() ? (0, i.jsx)(s.dOG, {
           label: c.intl.string(c.t.n7Yjes),
           description: c.intl.string(c.t.o2FSjB),
           checked: !!e && t,
           disabled: !e,
           onChange: this.handleToggleStartMinimized
-        }) : null, (0, i.jsx)(l.dOG, {
+        }) : null, (0, i.jsx)(s.dOG, {
           label: c.intl.string(c.t.abLFes),
           description: c.intl.string(c.t["mVuX+j"]),
           checked: n,
@@ -83,4 +83,4 @@ class u extends Chunk64700.PureComponent {
     }
   }
 }
-let g = u
+let h = u

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 825244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D,
@@ -73,10 +73,10 @@ function R(e) {
     header: a,
     completed: o,
     onClick: c
-  } = e, [d, h] = l.useState(false), f = (0, p.A)(o);
+  } = e, [d, p] = l.useState(false), g = (0, h.A)(o);
   return l.useEffect(() => {
-    null != f && o !== f && (h(true), setTimeout(() => h(false), 1e3))
-  }, [o, f]), (0, r.jsxs)(u.DUT, {
+    null != g && o !== g && (p(true), setTimeout(() => p(false), 1e3))
+  }, [o, g]), (0, r.jsxs)(u.DUT, {
     className: s()(t, T.Nr, {
       [T.so]: o
     }),
@@ -96,42 +96,42 @@ function R(e) {
       className: s()(T.AI, {
         [T.i0]: d
       })
-    }) : (0, r.jsx)(O.A, {
+    }) : (0, r.jsx)(_.A, {
       className: T.UE,
-      direction: O.A.Directions.RIGHT
+      direction: _.A.Directions.RIGHT
     })]
   })
 }
 
 function D(e) {
-  let t, i, p, O, D, M, {
-      channel: L
+  let t, i, h, _, D, L, {
+      channel: M
     } = e,
-    k = (0, o.bG)([y.A], () => null != L ? y.A.getGuild(L.getGuildId()) : null, [L]),
+    k = (0, o.bG)([y.A], () => null != M ? y.A.getGuild(M.getGuildId()) : null, [M]),
     G = null != k && E.default.extractTimestamp(k.id) < Date.now() - S.NOr,
     U = (0, o.bG)([A.default], () => (null == k ? true : k.ownerId) === A.default.getId(), [k]),
     {
-      canInvite: B,
-      canManageGuild: V,
-      canMessage: F
-    } = (0, f.Sk)(L, k),
-    H = (0, o.bG)([_.default], () => {
+      canInvite: V,
+      canManageGuild: B,
+      canMessage: H
+    } = (0, g.Sk)(M, k),
+    F = (0, o.bG)([O.default], () => {
       var e, t;
-      return (null == (e = _.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = _.default.getCurrentUser()) ? true : t.mobile) === true
+      return (null == (e = O.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = O.default.getCurrentUser()) ? true : t.mobile) === true
     }),
     {
       guildPopulated: K,
-      guildMessaged: W,
-      guildPersonalized: z
-    } = (0, f.lF)(k),
+      guildMessaged: Y,
+      guildPersonalized: W
+    } = (0, g.lF)(k),
     {
-      handleInvite: Y,
+      handleInvite: z,
       handleMessage: q,
       handlePersonalize: X,
       handleDownload: J,
       handleAddApplication: Q
     } = (t = l.useCallback(() => {
-      h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+      p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.INVITE
       }), null != k && (0, u.mMO)(async () => {
@@ -147,26 +147,26 @@ function D(e) {
         }))
       })
     }, [k]), i = l.useCallback(() => {
-      h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+      p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.SEND_MESSAGE
-      }), j._.dispatch(S.jej.TEXTAREA_FOCUS, {
+      }), x._.dispatch(S.jej.TEXTAREA_FOCUS, {
         highlight: true,
         channelId: S.dJq
       })
-    }, []), p = l.useCallback(() => {
-      h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+    }, []), h = l.useCallback(() => {
+      p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.PERSONALIZE_SERVER
-      }), null != k && g.A.open(k.id, (0, b.x)(), {
+      }), null != k && f.A.open(k.id, (0, b.x)(), {
         section: S.JJy.CHANNEL_WELCOME_CTA
       })
     }, [k]), {
       handleInvite: t,
       handleMessage: i,
-      handlePersonalize: p,
+      handlePersonalize: h,
       handleDownload: l.useCallback(() => {
-        h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+        p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.XT.CHANNEL_WELCOME,
           action: I.AG.DOWNLOAD
         }), (0, u.mMO)(async () => {
@@ -179,7 +179,7 @@ function D(e) {
         })
       }, []),
       handleAddApplication: l.useCallback(() => {
-        null != k && (h.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+        null != k && (p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.XT.CHANNEL_WELCOME,
           action: I.AG.ADD_APP
         }), (0, u.mMO)(async () => {
@@ -197,41 +197,41 @@ function D(e) {
         }))
       }, [k])
     }),
-    Z = !(H || K || W || z),
+    Z = !(F || K || Y || W),
     {
       titleAnimatedStyle: $,
       opacities: ee
-    } = (O = (0, d.A)(() => new a.A.Value(0)), D = (0, d.A)(() => new a.A.Value(0)), M = (0, d.A)(() => [new a.A.Value(0), new a.A.Value(0), new a.A.Value(0), new a.A.Value(0)]), l.useEffect(() => {
+    } = (_ = (0, d.A)(() => new a.A.Value(0)), D = (0, d.A)(() => new a.A.Value(0)), L = (0, d.A)(() => [new a.A.Value(0), new a.A.Value(0), new a.A.Value(0), new a.A.Value(0)]), l.useEffect(() => {
       a.A.stagger(300, [a.A.parallel([a.A.timing(D, {
         toValue: 1,
         duration: 450
-      }), a.A.timing(O, {
+      }), a.A.timing(_, {
         toValue: 1,
         duration: 450
-      })]), a.A.stagger(100, [a.A.timing(M[0], {
+      })]), a.A.stagger(100, [a.A.timing(L[0], {
         toValue: 1,
         duration: 300
-      }), a.A.timing(M[1], {
+      }), a.A.timing(L[1], {
         toValue: 1,
         duration: 300
-      }), a.A.timing(M[2], {
+      }), a.A.timing(L[2], {
         toValue: 1,
         duration: 300
-      }), a.A.timing(M[3], {
+      }), a.A.timing(L[3], {
         toValue: 1,
         duration: 300
       })])]).start()
-    }, [D, O, M]), {
+    }, [D, _, L]), {
       titleAnimatedStyle: Z ? {
         transform: [{
-          translateY: O.interpolate({
+          translateY: _.interpolate({
             inputRange: [0, 1],
             outputRange: ["-20px", "0px"]
           })
         }],
         opacity: D
       } : {},
-      opacities: M
+      opacities: L
     }),
     [et, en] = l.useState([]),
     er = et.length > 0;
@@ -245,7 +245,7 @@ function D(e) {
       })()
     }, [null == k ? true : k.id]), null == k) return null;
   let el = [];
-  G || (B && el.push((0, r.jsx)(a.A.div, {
+  G || (V && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -254,9 +254,9 @@ function D(e) {
       iconUrl: u.zNk,
       header: N.intl.string(N.t.q9n0Ta),
       completed: K,
-      onClick: Y
+      onClick: z
     })
-  }, "invite")), V && el.push((0, r.jsx)(a.A.div, {
+  }, "invite")), B && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -264,10 +264,10 @@ function D(e) {
     children: (0, r.jsx)(R, {
       iconUrl: u.nIm,
       header: N.intl.string(N.t.c5kxPh),
-      completed: z,
+      completed: W,
       onClick: X
     })
-  }, "customize")), F && el.push((0, r.jsx)(a.A.div, {
+  }, "customize")), H && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -275,10 +275,10 @@ function D(e) {
     children: (0, r.jsx)(R, {
       iconUrl: u.Tj_,
       header: N.intl.string(N.t["SoP7+l"]),
-      completed: W,
+      completed: Y,
       onClick: q
     })
-  }, "message")), (0, x.isWeb)() && el.push((0, r.jsx)(a.A.div, {
+  }, "message")), (0, v.isWeb)() && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -286,7 +286,7 @@ function D(e) {
     children: (0, r.jsx)(R, {
       iconUrl: u.Gl0,
       header: N.intl.string(N.t.pGVNI9),
-      completed: H,
+      completed: F,
       onClick: J
     })
   }, "download")), el.push((0, r.jsx)(a.A.div, {
@@ -303,9 +303,9 @@ function D(e) {
   }, "addapp")));
   let ei = U ? N.intl.string(N.t["1ach9C"]) : N.intl.string(N.t["ezm+/j"]);
   G && (ei = N.intl.string(N.t["gwyU/J"]));
-  let es = "".concat(v.A.getArticleURL(S.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let es = "".concat(j.A.getArticleURL(S.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(C.Ay, {
-    channelId: L.id,
+    channelId: M.id,
     children: (0, r.jsx)("div", {
       className: T.kL,
       children: (0, r.jsxs)("div", {

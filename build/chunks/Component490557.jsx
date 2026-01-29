@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 490557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => d,
-  l: () => p
+  l: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -24,7 +24,7 @@ function d(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     className: t,
     powerup: n,

@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 156652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g,
-  x: () => h
+  A: () => f,
+  x: () => p
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk919706 = require("./919706.jsx"),
   Chunk985010 = require("./985010.js");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,9 +31,9 @@ function p(e) {
   }
   return e
 }
-var h = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
+var p = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
 
-function f(e) {
+function g(e) {
   let {
     disableGradients: t = false,
     renderHeader: n,
@@ -41,12 +41,12 @@ function f(e) {
     renderBottomCenter: s,
     renderBottomRight: a,
     renderCenter: u
-  } = e, p = i.useRef(null);
+  } = e, h = i.useRef(null);
   return (0, l.jsx)(o.xpW, {
-    containerRef: p,
+    containerRef: h,
     children: (0, l.jsxs)("div", {
       className: d._v,
-      ref: p,
+      ref: h,
       children: [0 !== t && true !== t && (0, l.jsx)("div", {
         className: d.aw
       }), 1 !== t && true !== t && (0, l.jsx)("div", {
@@ -78,7 +78,7 @@ function f(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     screenMessage: t,
     onDoubleClick: n,
@@ -87,8 +87,8 @@ function g(e) {
     idle: s,
     children: o,
     renderChatToasts: c,
-    renderVoiceChannelEffects: h,
-    style: g
+    renderVoiceChannelEffects: p,
+    style: f
   } = e, m = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
@@ -110,13 +110,13 @@ function g(e) {
     className: a()(d.zr, {
       [d.N7]: s
     }),
-    style: g,
+    style: f,
     onMouseMove: r,
     onMouseDown: r,
     onMouseLeave: i,
     onDoubleClick: n,
-    children: [o, null != t ? (0, l.jsx)(u.A, p({
+    children: [o, null != t ? (0, l.jsx)(u.A, h({
       size: "large"
-    }, t)) : null, (0, l.jsx)(f, p({}, m)), null == c ? true : c(), null == h ? true : h()]
+    }, t)) : null, (0, l.jsx)(g, h({}, m)), null == c ? true : c(), null == p ? true : p()]
   })
 }

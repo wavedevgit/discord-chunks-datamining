@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 180491, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 180491, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   m: () => d
 });
@@ -7,26 +7,27 @@ var Chunk827343 = require("./827343.js"),
   Chunk419954 = require("./419954.js"),
   Chunk430452 = require("./430452.js"),
   Chunk780964 = require("./780964.js"),
-  Chunk330688 = require("./330688.jsx"),
-  Chunk903427 = require("./903427.js"),
+  Chunk903427 = require("./903427.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let d = (0, Chunk419954.sN)(Chunk780964.X.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTING, {
-  useTitle: () => T.intl.string(T.t.GCNMM8),
-  useSearchTerms: () => [T.intl.string(T.t["pS+K2L"]), T.intl.string(T.t.nuFtHH)],
-  setValue: function(t) {
-    n.A.setMode(o.TBI.PUSH_TO_TALK, {
-      delay: t
+  useTitle: () => o.intl.string(o.t.GCNMM8),
+  useSearchTerms: () => [o.intl.string(o.t["pS+K2L"]), o.intl.string(o.t.nuFtHH)],
+  setValue: function(e) {
+    n.A.setMode(u.TBI.PUSH_TO_TALK, {
+      delay: e
     })
   },
   minValue: 0,
   maxValue: Chunk652215.IjB,
   getInitialValue: function() {
     let {
-      delay: t
+      delay: e
     } = s.A.getModeOptions();
-    return t
+    return e
   },
-  onValueRender: Chunk330688.hH,
+  onValueRender: function(e) {
+    return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "\xa0ms")
+  },
   usePredicate: Chunk903427.P
 })

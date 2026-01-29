@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 393685, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 393685, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  C: () => d
+  C: () => T
 });
 var Chunk311907 = require("./311907.js"),
   Chunk827343 = require("./827343.js"),
@@ -11,25 +11,25 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, {
-  useTitle: () => T.intl.string(T.t.cUMdH0),
-  useSubtitle: () => T.intl.string(T.t["6EjbvA"]),
+let T = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, {
+  useTitle: () => d.intl.string(d.t.cUMdH0),
+  useSubtitle: () => d.intl.string(d.t["6EjbvA"]),
   useValue: function() {
-    return (0, n.bG)([u.A], () => u.A.getAutomaticGainControl())
+    return (0, n.bG)([a.A], () => a.A.getAutomaticGainControl())
   },
-  setValue: function(t) {
-    l.A.setAutomaticGainControl(t, {
+  setValue: function(e) {
+    l.A.setAutomaticGainControl(e, {
       page: o.liQ.USER_SETTINGS,
       section: o.JJy.SETTINGS_VOICE_AND_VIDEO
     })
   },
   useDisabled: function() {
-    return (0, n.bG)([u.A, r.A], () => {
-      let t = u.A.getInputDeviceId();
-      return r.A.hasAutomaticGainControl(t)
+    return (0, n.bG)([a.A, r.A], () => {
+      let e = a.A.getInputDeviceId();
+      return r.A.hasAutomaticGainControl(e)
     })
   },
   usePredicate: function() {
-    return (0, n.bG)([u.A], () => u.A.isAutomaticGainControlSupported() && u.A.isInputProfileCustom())
+    return (0, n.bG)([a.A], () => a.A.isAutomaticGainControlSupported() && a.A.isInputProfileCustom())
   }
 })

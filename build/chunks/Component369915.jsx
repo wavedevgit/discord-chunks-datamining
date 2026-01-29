@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 369915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -69,27 +69,27 @@ let A = Chunk64700.memo(function(e) {
     return i
   }(e, ["folderNode"]), {
     id: y,
-    name: _,
-    color: O,
-    children: j
-  } = t, v = j.map(e => e.id), x = (0, o.A)(e => e.guildId), E = (0, i.bG)([c.A], () => c.A.isFolderExpanded(y)), C = function(e) {
+    name: O,
+    color: _,
+    children: x
+  } = t, j = x.map(e => e.id), v = (0, o.A)(e => e.guildId), E = (0, i.bG)([c.A], () => c.A.isFolderExpanded(y)), C = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.A.getGuild(t);
         return null != n ? n.name : null
-      }).filter(p.Vq),
-      n = 2 * g.F05,
+      }).filter(h.Vq),
+      n = 2 * f.F05,
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), S = (0, f.A)(t), {
+  }(t), S = (0, g.A)(t), {
     mentionCount: I,
     isMentionLowImportance: N,
     unread: T
   } = (0, i.cf)([u.default], () => ({
-    mentionCount: v.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-    isMentionLowImportance: v.every(e => u.default.getIsMentionLowImportance(e)),
-    unread: v.some(e => u.default.hasUnread(e))
+    mentionCount: j.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+    isMentionLowImportance: j.every(e => u.default.getIsMentionLowImportance(e)),
+    unread: j.some(e => u.default.hasUnread(e))
   })), P = l.useCallback(() => {
     a.A.toggleGuildFolderExpand(y)
   }, [y]), w = l.useCallback(e => {
@@ -99,16 +99,16 @@ let A = Chunk64700.memo(function(e) {
       } = await n.e("32857").then(n.bind(n, 842112));
       return t => (0, r.jsx)(e, b(m({}, t), {
         folderId: y,
-        folderName: _,
-        folderColor: O,
+        folderName: O,
+        folderColor: _,
         unread: T || I > 0
       }))
     })
-  }, [y, _, O, T, I]);
-  return (0, r.jsx)(h.A, b(m({}, A), {
+  }, [y, O, _, T, I]);
+  return (0, r.jsx)(p.A, b(m({}, A), {
     folderNode: t,
     expanded: E,
-    selected: null != x && v.includes(x),
+    selected: null != v && j.includes(v),
     mentionCount: I,
     isMentionLowImportance: N,
     unread: T,

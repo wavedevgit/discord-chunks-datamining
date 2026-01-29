@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 390370, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -18,8 +18,8 @@ function u(e) {
   let {
     otherUser: s,
     status: u
-  } = e, p = (0, a.XC)(s.id, u), {
-    avatarSrc: _,
+  } = e, _ = (0, a.XC)(s.id, u), {
+    avatarSrc: p,
     avatarDecorationSrc: m,
     eventHandlers: g
   } = (0, l.A)({
@@ -48,7 +48,7 @@ function u(e) {
     }({}, g), n = n = {
       children: (0, r.jsx)(d, {
         className: c.my,
-        src: _,
+        src: p,
         avatarDecoration: m,
         size: i._3J.SIZE_40,
         "aria-label": s.username
@@ -72,7 +72,7 @@ function u(e) {
       }), (0, r.jsx)(i.Text, {
         color: "text-muted",
         variant: "text-xs/normal",
-        children: p
+        children: _
       })]
     })]
   })

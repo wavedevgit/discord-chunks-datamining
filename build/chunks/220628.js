@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 220628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,17 +15,17 @@ var Chunk64700 = require("./64700.js"),
   Chunk568065 = require("./568065.js"),
   Chunk652215 = require("./652215.js");
 
-function f(e, t, n) {
+function g(e, t, n) {
   n && (0, i.s7G)(), (0, d.h)(e, t)
 }
 
-function g(e, t) {
+function f(e, t) {
   let {
     analyticsLocations: n
   } = (0, s.Ay)(), {
     onToggle: i,
     isLoading: d,
-    error: g
+    error: f
   } = (0, u.A)(e, t), m = (0, l.bG)([o.A], () => o.A.getGuild(e)), b = (0, c.A)(e, t);
   return {
     onActivate: r.useCallback(function() {
@@ -36,24 +36,24 @@ function g(e, t) {
         } = r;
       if (null != m && null != t) return b < t.cost ? void(0, a.g)({
         analyticsLocation: {
-          page: h.liQ.GUILD_POWERUPS_OVERVIEW,
-          section: h.JJy.GUILD_POWERUPS_OVERVIEW_CARD
+          page: p.liQ.GUILD_POWERUPS_OVERVIEW,
+          section: p.JJy.GUILD_POWERUPS_OVERVIEW_CARD
         },
         numberOfBoostsToAdd: t.cost - b,
         analyticsLocations: n,
         guild: m,
-        intent: t.type === p.o9.LEVEL ? p.Pn.LEVEL : p.Pn.PERK,
+        intent: t.type === h.o9.LEVEL ? h.Pn.LEVEL : h.Pn.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = i(true)) ? true : e.then(() => {
-            f(m.id, t, l)
+            g(m.id, t, l)
           })
         }
       }) : null == (e = i(true)) ? true : e.then(() => {
-        f(m.id, t, l)
+        g(m.id, t, l)
       })
     }, [i, t, b, n, m]),
     isLoading: d,
-    error: g
+    error: f
   }
 }

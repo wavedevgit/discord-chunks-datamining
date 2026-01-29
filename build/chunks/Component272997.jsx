@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 272997, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => h
+  k: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,25 +14,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk266069 = require("./266069.jsx"),
   Chunk709889 = require("./709889.js");
 
-function h(e) {
+function p(e) {
   var t;
   let {
     guildId: n,
-    onSetActivityStatus: h
-  } = e, f = (0, i.bG)([c.default], () => c.default.getId()), g = (0, o.A)(f, n)[0], m = null != (t = (0, s.YY)(null == g ? true : g.application_id).data) ? t : true, b = l.useCallback(() => {
-    null != m && ((0, u.xA)(m.id, true), h())
-  }, [m, h]);
+    onSetActivityStatus: p
+  } = e, g = (0, i.bG)([c.default], () => c.default.getId()), f = (0, o.A)(g, n)[0], m = null != (t = (0, s.YY)(null == f ? true : f.application_id).data) ? t : true, b = l.useCallback(() => {
+    null != m && ((0, u.xA)(m.id, true), p())
+  }, [m, p]);
   return null == m ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.u, {
       label: m.name,
       icon: (0, r.jsx)(a.A, {
         game: m,
-        className: p.K
+        className: h.K
       }),
       setStatus: b
     }), (0, r.jsx)("div", {
       role: "separator",
-      className: p.m
+      className: h.m
     })]
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 645789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,59 +18,59 @@ var Chunk627968 = require("./627968.js"),
   Chunk592074 = require("./592074.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b() {
+function f() {
   let {
     canSubmit: e,
     errors: t
   } = (0, l.cf)([u.A], () => ({
     canSubmit: u.A.canSubmit(),
     errors: u.A.getErrors()
-  })), [n, b] = i.useState(false), h = i.useMemo(() => (null == t ? true : t.message) != null ? null == t ? true : t.message : Object.keys(null != t ? t : {}).length > 0 ? f.intl.string(f.t["84MExs"]) : null, [t]), A = i.useCallback(async () => {
+  })), [n, f] = i.useState(false), b = i.useMemo(() => (null == t ? true : t.message) != null ? null == t ? true : t.message : Object.keys(null != t ? t : {}).length > 0 ? A.intl.string(A.t["84MExs"]) : null, [t]), h = i.useCallback(async () => {
     var e, t, n, r, i;
-    b(true);
+    f(true);
     let l = u.A.getPendingChanges(),
       s = (0, c.Sk)(l),
-      f = (0, c.yX)(l),
-      h = (0, c.yg)(l),
-      A = true;
+      A = (0, c.yX)(l),
+      b = (0, c.yg)(l),
+      h = true;
     if (Object.keys(s).length > 0) {
       let r = await (0, a.yu)(s);
-      if (A = A && null != (e = null == r ? true : r.ok) && e, null == r ? true : r.ok) {
+      if (h = h && null != (e = null == r ? true : r.ok) && e, null == r ? true : r.ok) {
         let e = r.body;
-        true !== l.pendingAvatar && (0, p.t)({
+        true !== l.pendingAvatar && (0, _.t)({
           avatarHash: e.avatar,
           avatarId: s.avatarId,
           avatarAssetOrigin: null == (n = l.pendingAvatar) ? true : n.assetOrigin
         }), (0, a.pZ)()
       } else(null == r || null == (t = r.body) ? true : t.username) != null && (0, g.E)()
     }
-    if (Object.keys(f).length > 0) {
-      let e = await (0, d.gi)(f);
-      A = A && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, d.RE)() : (0, m.m)()
+    if (Object.keys(A).length > 0) {
+      let e = await (0, d.gi)(A);
+      h = h && null != (r = null == e ? true : e.ok) && r, (null == e ? true : e.ok) ? (0, d.RE)() : (0, m.m)()
     }
     if (true !== l.pendingLegacyUsernameDisabled) try {
-      await _.m$.updateSetting(l.pendingLegacyUsernameDisabled), (0, a._e)()
+      await p.m$.updateSetting(l.pendingLegacyUsernameDisabled), (0, a._e)()
     } catch (e) {
-      (0, m.m)(), A = false
+      (0, m.m)(), h = false
     }
-    if (Object.keys(h).length > 0) {
+    if (Object.keys(b).length > 0) {
       let {
         primaryGuildId: e
-      } = h;
+      } = b;
       if (true !== e) {
         let t = await (0, o.m)(e, null !== e);
-        A = A && null != (i = null == t ? true : t.ok) && i, (null == t ? true : t.ok) ? (0, a.fw)() : (0, m.m)()
+        h = h && null != (i = null == t ? true : t.ok) && i, (null == t ? true : t.ok) ? (0, a.fw)() : (0, m.m)()
       }
     }
-    A && (0, a.x8)(), b(false)
+    h && (0, a.x8)(), f(false)
   }, []), E = i.useCallback(() => {
     (0, a.IM)()
   }, []);
   return (0, r.jsx)(s.A, {
     submitting: n,
-    onSave: A,
+    onSave: h,
     onReset: E,
     disabled: !e,
-    errorMessage: null != h ? h : true
+    errorMessage: null != b ? b : true
   })
 }

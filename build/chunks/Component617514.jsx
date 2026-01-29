@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 617514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -17,23 +17,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk518477 = require("./518477.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk133788 = require("./133788.js");
-let b = () => {
-  let [e, t] = (0, o.kn)([l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, b = (0, i.bG)([d.default], () => d.default.getId());
+let f = () => {
+  let [e, t] = (0, o.kn)([l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, f = (0, i.bG)([d.default], () => d.default.getId());
   return (0, r.jsx)(u.A, {
     title: g.intl.string(g.t.Jzj9q4),
     description: g.intl.string(g.t.lfF1Sp),
     titleIcon: n ? (0, r.jsx)(s.LpS, {
-      className: f.A,
+      className: A.A,
       text: g.intl.string(g.t.y2b7CA)
     }) : null,
-    borderType: p.i.LIMITED,
+    borderType: _.i.LIMITED,
     showBorder: n,
     hasBackground: n,
     children: (0, r.jsx)(s.Button, {
       text: g.intl.string(g.t.Geikwq),
       onClick: () => {
-        n && t(_.i.TAKE_ACTION), (0, c.openUserProfileModal)({
-          userId: b,
+        n && t(p.i.TAKE_ACTION), (0, c.openUserProfileModal)({
+          userId: f,
           sourceAnalyticsLocations: [a.A.USER_SETTINGS_USER_PROFILE],
           hideRestrictedProfile: true,
           tabSection: m.RP.WIDGETS

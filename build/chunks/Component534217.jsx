@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 534217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => j
+  S: () => T
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -40,7 +40,7 @@ function E(e) {
   }
   return e
 }
-let x = e => {
+let O = e => {
     let {
       user: t
     } = e, {
@@ -51,37 +51,37 @@ let x = e => {
       size: a._3J.SIZE_24
     });
     return (0, r.jsx)(a.euF, E({
-      className: h.bj,
+      className: b.bj,
       src: n,
       "aria-label": (0, u.mG)(t),
       size: a._3J.SIZE_24
     }, i), t.id)
   },
-  O = e => {
+  C = e => {
     let {
       slotIndex: t
     } = e;
     return (0, r.jsx)("div", {
-      className: h.p,
+      className: b.p,
       children: t
     })
   },
-  C = e => {
+  x = e => {
     let {
       referralSentUsers: t
     } = e;
     return (0, r.jsx)("div", {
-      className: h.L$,
+      className: b.L$,
       children: (() => {
         let e = [];
         for (let n = 0; n < m.Z; n++)
           if ((null == t ? true : t[n]) !== true) {
-            let i = (0, r.jsx)(x, {
+            let i = (0, r.jsx)(O, {
               user: t[n]
             }, t[n].id);
             e.push(i)
           } else {
-            let t = (0, r.jsx)(O, {
+            let t = (0, r.jsx)(C, {
               slotIndex: n + 1
             }, n);
             e.push(t)
@@ -89,71 +89,71 @@ let x = e => {
       })()
     })
   },
-  y = e => {
+  S = e => {
     let {
       nReferralsSent: t
     } = e;
     return (0, r.jsx)(a.a3E, {
       percent: 33.3 * t,
       colorOverride: "#53ac66",
-      background: h.cq,
+      background: b.cq,
       strokeSize: .8,
-      ringColorOverrideClassName: h.e0,
-      overlayClassName: t === m.Z ? h.ys : true,
+      ringColorOverrideClassName: b.e0,
+      overlayClassName: t === m.Z ? b.ys : true,
       children: (0, r.jsx)(a._V3, {
-        src: A.A,
+        src: h.A,
         height: 93,
         width: 93,
         zoomable: false
       })
     })
   },
-  j = e => {
+  T = e => {
     let {
       className: t
     } = e, {
       referralSentUsers: i
-    } = (0, m.J)(), o = (0, s.bG)([_.A], () => _.A.getRecipientStatus()), u = (0, s.bG)([_.A], () => _.A.getHasEligibleFriends()), A = o.size === m.Z && [...o.values()].every(e => e === p.aK.REDEEMED), x = o.size === m.Z;
+    } = (0, m.J)(), o = (0, s.bG)([p.A], () => p.A.getRecipientStatus()), u = (0, s.bG)([p.A], () => p.A.getHasEligibleFriends()), h = o.size === m.Z && [...o.values()].every(e => e === _.aK.REDEEMED), O = o.size === m.Z;
     return (0, r.jsxs)("div", {
-      className: l()(h.kL, t),
+      className: l()(b.kL, t),
       children: [(0, r.jsx)("div", {
-        className: h.G3,
-        children: (0, r.jsx)(y, {
+        className: b.G3,
+        children: (0, r.jsx)(S, {
           nReferralsSent: o.size
         })
       }), (0, r.jsxs)("div", {
-        className: h.IH,
-        children: [(0, r.jsx)(C, {
+        className: b.IH,
+        children: [(0, r.jsx)(x, {
           referralSentUsers: i
         }), (0, r.jsxs)("div", {
-          className: h.n4,
+          className: b.n4,
           children: [(0, r.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: b.intl.string(b.t.USo4s7)
+            children: f.intl.string(f.t.USo4s7)
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "text-subtle",
-            children: false === u ? b.intl.format(b.t["zWhX/Q"], {
-              helpdeskArticle: d.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
-            }) : i.length === m.Z ? true === A ? b.intl.format(b.t["1aEjsH"], {
-              helpdeskArticle: d.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
-            }) : b.intl.format(b.t["+u3AOO"], {
-              helpdeskArticle: d.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
-            }) : b.intl.format(b.t["omMr+V"], {
-              helpdeskArticle: d.A.getArticleURL(f.MVz.REFERRAL_PROGRAM)
+            children: false === u ? f.intl.format(f.t["zWhX/Q"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            }) : i.length === m.Z ? true === h ? f.intl.format(f.t["1aEjsH"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            }) : f.intl.format(f.t["+u3AOO"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
+            }) : f.intl.format(f.t["omMr+V"], {
+              helpdeskArticle: d.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
             })
           })]
         }), (0, r.jsx)(a.Button, {
           variant: "primary",
-          disabled: false === u || true === x,
-          text: b.intl.string(b.t.Lm2nFc),
+          disabled: false === u || true === O,
+          text: f.intl.string(f.t.Lm2nFc),
           onClick: () => (e => {
             let {
               startingScreen: t,
               analyticsLocations: i
             } = e;
-            c.default.track(f.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+            c.default.track(A.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
               location_stack: i
             }), (0, a.mMO)(async () => {
               let {

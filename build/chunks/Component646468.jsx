@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 646468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => A,
-  xc: () => _
+  xc: () => O
 }), require("./896048.js"), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,7 +27,7 @@ function A() {
     loading: n,
     loadMore: l
   } = (0, d.LF)(), s = y(t, (0, i.bG)([o.A], () => o.A.localItems));
-  return (0, r.jsx)(p.A, {
+  return (0, r.jsx)(h.A, {
     initialized: e,
     items: s,
     loading: n,
@@ -36,21 +36,21 @@ function A() {
 }
 
 function y(e, t) {
-  return l.useMemo(() => [...[...e, ...t].sort((e, t) => false * g.default.compare(e.id, t.id))], [e, t])
+  return l.useMemo(() => [...[...e, ...t].sort((e, t) => false * f.default.compare(e.id, t.id))], [e, t])
 }
 
-function _() {
+function O() {
   let {
     items: e
-  } = (0, d.LF)(), t = e.length > 0 ? e[0] : null, n = y(e, (0, i.bG)([o.A], () => o.A.localItems)), p = h.ns.useSetting();
+  } = (0, d.LF)(), t = e.length > 0 ? e[0] : null, n = y(e, (0, i.bG)([o.A], () => o.A.localItems)), h = p.ns.useSetting();
   return l.useMemo(() => {
-    if (null != t && 0 >= g.default.compare(t.id, p)) returnfalse;
+    if (null != t && 0 >= f.default.compare(t.id, h)) returnfalse;
     for (let e of n) {
-      if (0 >= g.default.compare(e.id, p)) break;
-      if (!(0, u.NW)(e, p)) returntrue
+      if (0 >= f.default.compare(e.id, h)) break;
+      if (!(0, u.NW)(e, h)) returntrue
     }
     returnfalse
-  }, [t, p, n]) ? (0, r.jsx)(s.m_, {
+  }, [t, h, n]) ? (0, r.jsx)(s.m_, {
     text: b.intl.string(b.t["8k+6QY"]),
     children: (0, r.jsx)(a.K0, {
       "aria-label": b.intl.string(b.t["8k+6QY"]),
@@ -58,7 +58,7 @@ function _() {
       variant: "secondary",
       size: "sm",
       onClick: () => {
-        null != t && (h.ns.updateSetting(t.id), f.default.track(m.HAw.NOTIFICATION_CENTER_ACTION, {
+        null != t && (p.ns.updateSetting(t.id), g.default.track(m.HAw.NOTIFICATION_CENTER_ACTION, {
           action_type: c.e1.MARK_ALL_READ
         }))
       }

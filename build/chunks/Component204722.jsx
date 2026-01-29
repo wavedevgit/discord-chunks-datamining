@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 204722, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => R,
@@ -40,7 +40,7 @@ function R(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.$pd.PLAYING && (0, h.A)(t, N.jUm.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === N.$pd.PLAYING && (0, p.A)(t, N.jUm.JOIN)
   }
   returnfalse
 }
@@ -49,47 +49,47 @@ let D = Chunk64700.memo(function(e) {
     let {
       stream: a,
       canGoLive: o,
-      isStreaming: h,
+      isStreaming: p,
       channel: y,
-      canStream: v,
-      runningGame: x,
+      canStream: j,
+      runningGame: v,
       embeddedActivity: T,
       frame: D,
       activity: k,
       application: G,
       analyticsContext: U,
-      inviteButtonRef: B,
-      accountLinkButtonRef: V,
-      startAuthorization: F,
-      canStartAuthorization: H,
+      inviteButtonRef: V,
+      accountLinkButtonRef: B,
+      startAuthorization: H,
+      canStartAuthorization: F,
       hasAlreadyLinked: K,
-      connectionApp: W
+      connectionApp: Y
     } = e, {
-      parentAnalyticsLocation: z,
-      analyticsLocations: Y
-    } = (0, g.Ay)(), q = (0, j.A)(G, "rtc-activity-panel"), X = R(G, k, T), J = l.useCallback(() => {
+      parentAnalyticsLocation: W,
+      analyticsLocations: z
+    } = (0, f.Ay)(), q = (0, x.A)(G, "rtc-activity-panel"), X = R(G, k, T), J = l.useCallback(() => {
       var e;
       s()(null != k, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
         action_type: "invite_to_game",
-        game_id: null != (e = null == x ? true : x.id) ? e : null,
+        game_id: null != (e = null == v ? true : v.id) ? e : null,
         application_id: k.application_id
-      }), (0, b.X)(z, b.O.INVITE), S.default.track(N.HAw.OPEN_MODAL, {
+      }), (0, b.X)(W, b.O.INVITE), S.default.track(N.HAw.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: k.application_id,
         location: U.location
       }), (0, d.qf)(k, false)
-    }, [k, U, z, x]), Q = l.useCallback((e, t) => () => {
-      (0, b.X)(z, b.O.LEAVE_ACTIVITY), f.A.leaveActivity({
+    }, [k, U, W, v]), Q = l.useCallback((e, t) => () => {
+      (0, b.X)(W, b.O.LEAVE_ACTIVITY), g.A.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: true
       })
-    }, [z]), Z = l.useCallback(e => () => {
-      (0, b.X)(z, b.O.LEAVE_ACTIVITY), _.A.stopFrame({
+    }, [W]), Z = l.useCallback(e => () => {
+      (0, b.X)(W, b.O.LEAVE_ACTIVITY), O.A.stopFrame({
         applicationId: e
       })
-    }, [z]), $ = l.useCallback(() => {
-      (0, O.A)(a)
+    }, [W]), $ = l.useCallback(() => {
+      (0, _.A)(a)
     }, [a]), ee = l.useCallback(() => {
       (0, u.mMO)(async () => {
         let {
@@ -115,9 +115,9 @@ let D = Chunk64700.memo(function(e) {
             }
             return e
           }({}, t), l = l = {
-            sourcePID: null == x ? true : x.pid,
+            sourcePID: null == v ? true : v.pid,
             selectSource: null != C.A.getVoiceChannelId(),
-            analyticsLocations: Y
+            analyticsLocations: z
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -130,26 +130,26 @@ let D = Chunk64700.memo(function(e) {
           }), n))
         }
       })
-    }, [x, Y]), et = l.useRef(null), [en, er] = l.useState(false);
+    }, [v, z]), et = l.useRef(null), [en, er] = l.useState(false);
     l.useEffect(() => () => {
       null != et.current && clearTimeout(et.current)
     }, []), l.useEffect(() => {
       K && (er(false), null != et.current && (clearTimeout(et.current), et.current = null))
     }, [K]);
-    let el = (null == q ? true : q.guildId) == null || null == G ? null : (0, r.jsx)(L, {
+    let el = (null == q ? true : q.guildId) == null || null == G ? null : (0, r.jsx)(M, {
         guildId: q.guildId,
         applicationId: q.id
       }),
       ei = function() {
         let e, t, n;
-        if (null == x && null != T && !(0, p.f)() || !h && !o) return null;
+        if (null == v && null != T && !(0, h.f)() || !p && !o) return null;
         let l = null;
-        return h ? (e = false, t = () => {
-          $(), (0, b.X)(z, b.O.STREAM, false)
-        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : v ? (e = false, t = () => {
-          ee(), (0, b.X)(z, b.O.STREAM, true)
-        }, n = u.Fzq, l = null != x ? P.intl.formatToPlainString(P.t.AB5gTy, {
-          game: x.name
+        return p ? (e = false, t = () => {
+          $(), (0, b.X)(W, b.O.STREAM, false)
+        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : j ? (e = false, t = () => {
+          ee(), (0, b.X)(W, b.O.STREAM, true)
+        }, n = u.Fzq, l = null != v ? P.intl.formatToPlainString(P.t.AB5gTy, {
+          game: v.name
         }) : P.intl.string(P.t.FeUKeA)) : (e = true, t = null, n = u.Fzq, null != y && (0, E.gV)(y.type) && (l = P.intl.string(P.t.uQn9B8))), (0, r.jsx)("div", {
           className: w.IF,
           children: (0, r.jsx)(I.A, {
@@ -161,7 +161,7 @@ let D = Chunk64700.memo(function(e) {
         })
       }(),
       es = X && null == T ? (0, r.jsx)(I.A, {
-        ref: B,
+        ref: V,
         tooltipText: P.intl.string(P.t["hC/Zey"]),
         onClick: J,
         icon: u.DpX
@@ -177,22 +177,22 @@ let D = Chunk64700.memo(function(e) {
         icon: u.oLl
       }),
       ec = null == a ? null : (0, r.jsx)(A.A, {}),
-      eu = !H || K ? null : (0, r.jsx)(M, {
-        runningGame: x,
+      eu = !F || K ? null : (0, r.jsx)(L, {
+        runningGame: v,
         startAuthorization: () => {
-          F({
-            analyticsLocations: Y
+          H({
+            analyticsLocations: z
           }) === m._M.RPC && (er(true), null != et.current && clearTimeout(et.current), et.current = setTimeout(() => {
             er(false)
           }, 9e4))
         },
-        connectionApp: W,
-        ref: V
+        connectionApp: Y,
+        ref: B
       }),
-      ed = !H || K ? null : (0, r.jsx)(c.AM, {
+      ed = !F || K ? null : (0, r.jsx)(c.AM, {
         title: P.intl.string(P.t.ULvRFd),
         body: P.intl.string(P.t["HJJDr+"]),
-        targetElementRef: V,
+        targetElementRef: B,
         position: "top",
         align: "center",
         caretConfig: {
@@ -208,7 +208,7 @@ let D = Chunk64700.memo(function(e) {
       children: [null != (t = null != el ? el : eu) ? t : es, ei, null != (i = null != ea ? ea : eo) ? i : ec, ed]
     })
   }),
-  M = Chunk64700.forwardRef(function(e, t) {
+  L = Chunk64700.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: l,
@@ -229,7 +229,7 @@ let D = Chunk64700.memo(function(e) {
     })
   });
 
-function L(e) {
+function M(e) {
   let {
     applicationId: t,
     guildId: n
@@ -240,30 +240,30 @@ function L(e) {
     })
   }, [t]);
   let [s, a] = (0, y.kn)([o.M.GAME_SHOP_RTC_POPOVER], T.m.ACCOUNT_NAME_ZONE, true), c = l.useCallback(() => {
-    (0, v.X)({
+    (0, j.X)({
       guildId: n
     })
   }, [n]), d = l.useCallback(() => {
-    (0, v.default)({
+    (0, j.default)({
       guildId: n
     }), a(T.i.USER_DISMISS)
-  }, [n, a]), p = l.useCallback(() => {
+  }, [n, a]), h = l.useCallback(() => {
     S.default.track(N.HAw.RTC_GAME_SHOP_BUTTON_CLICKED, {
       application_id: t
     }), d()
-  }, [t, d]), h = l.useCallback(() => {
+  }, [t, d]), p = l.useCallback(() => {
     a(T.i.USER_DISMISS)
   }, [a]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I.A, {
       tooltipText: P.intl.string(P.t.vyaWs7),
-      onClick: p,
+      onClick: h,
       onMouseDown: c,
       icon: u.U1X,
       ref: i
-    }), s === o.M.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(x.A, {
+    }), s === o.M.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(v.A, {
       onActionClick: d,
-      onRequestClose: h,
+      onRequestClose: p,
       targetElementRef: i,
       position: "top",
       align: "center",

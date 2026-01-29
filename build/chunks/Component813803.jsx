@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 813803, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => O
@@ -38,18 +38,18 @@ let O = e => {
         visibleContent: t,
         markAsDismissed: i
       } = e;
-      if (t === o.M.GIFTING_PROMOTION_REMINDER) return null == N ? null : (0, r.jsxs)(a.$Td, {
-        color: a.Hv$.PREMIUM_TIER_2,
-        children: [(0, r.jsx)(a.PMB, {
+      if (t === a.M.GIFTING_PROMOTION_REMINDER) return null == N ? null : (0, r.jsxs)(o.$Td, {
+        color: o.Hv$.PREMIUM_TIER_2,
+        children: [(0, r.jsx)(o.PMB, {
           onClick: () => i(_.i.USER_DISMISS),
           noticeType: n
-        }), (0, r.jsx)(a.okO, {
+        }), (0, r.jsx)(o.okO, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
           className: I.ez
-        }), N.body, (0, r.jsx)(a.Z_L, {
+        }), N.body, (0, r.jsx)(o.Z_L, {
           onClick: () => {
             (0, c.A)({
               isGift: true,

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 107834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,30 +20,30 @@ var Chunk503698 = require("./503698.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk187585 = require("./187585.js");
-let A = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
-  user: _.default.getCurrentUser()
+let h = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
+  user: p.default.getCurrentUser()
 }))((0, Chunk490415.A)(e => {
   let {
     isAuthenticated: t,
     user: n
-  } = e, i = (0, m.TW)(n, f.PremiumTypes.TIER_2), s = (0, u.Ay)();
+  } = e, i = (0, m.TW)(n, A.PremiumTypes.TIER_2), s = (0, u.Ay)();
   return (0, r.jsx)(c.A, {
     section: g.JJy.NAVIGATION,
     children: (0, r.jsx)(o.NPJ, {
       theme: s,
-      children: e => (0, r.jsxs)(p.A, {
+      children: e => (0, r.jsxs)(_.A, {
         isAuthenticated: t,
         className: l()(e, {
-          [h.xD]: !i && !(0, a.Mw)(s),
-          [h.lO]: !i && (0, a.Mw)(s)
+          [b.xD]: !i && !(0, a.Mw)(s),
+          [b.lO]: !i && (0, a.Mw)(s)
         }),
         role: "navigation",
-        children: [(0, r.jsx)(p.A.Icon, {
+        children: [(0, r.jsx)(_.A.Icon, {
           icon: o.tvc,
           "aria-hidden": true,
           color: i ? true : o.LU0.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
-        }), (0, r.jsx)(p.A.Title, {
-          children: b.intl.string(b.t.Ipxkog)
+        }), (0, r.jsx)(_.A.Title, {
+          children: f.intl.string(f.t.Ipxkog)
         })]
       })
     })

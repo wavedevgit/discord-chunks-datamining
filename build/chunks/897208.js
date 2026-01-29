@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 897208, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 897208, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  p: () => g
+  p: () => _
 });
 var Chunk311907 = require("./311907.js"),
   Chunk55619 = require("./55619.js"),
@@ -10,73 +10,73 @@ var Chunk311907 = require("./311907.js"),
   Chunk351906 = require("./351906.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
+let d = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     useTitle: () => o.intl.string(o.t["yR/d2T"]),
     useSubtitle: () => o.intl.string(o.t.RiIiPw),
-    useValue: () => (0, n.bG)([u.A], () => {
+    useValue: () => (0, n.bG)([a.A], () => {
       let {
-        hidePersonalInformation: t
-      } = u.A.getSettings();
-      return t
+        hidePersonalInformation: e
+      } = a.A.getSettings();
+      return e
     }),
-    setValue: t => l.A.update({
-      hidePersonalInformation: t
+    setValue: e => l.A.update({
+      hidePersonalInformation: e
     })
   }),
-  d = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
+  T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
     useTitle: () => o.intl.string(o.t.uWBOri),
-    useValue: () => (0, n.bG)([u.A], () => {
+    useValue: () => (0, n.bG)([a.A], () => {
       let {
-        hideInstantInvites: t
-      } = u.A.getSettings();
-      return t
+        hideInstantInvites: e
+      } = a.A.getSettings();
+      return e
     }),
-    setValue: t => l.A.update({
-      hideInstantInvites: t
+    setValue: e => l.A.update({
+      hideInstantInvites: e
     })
   }),
-  A = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_SOUNDS, {
+  c = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => o.intl.string(o.t.OrqYDP),
-    useValue: () => (0, n.bG)([u.A], () => {
+    useValue: () => (0, n.bG)([a.A], () => {
       let {
-        disableSounds: t
-      } = u.A.getSettings();
-      return t
+        disableSounds: e
+      } = a.A.getSettings();
+      return e
     }),
-    setValue: t => l.A.update({
-      disableSounds: t
+    setValue: e => l.A.update({
+      disableSounds: e
     })
   }),
-  S = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
+  A = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
     useTitle: () => o.intl.string(o.t.sUAbLd),
-    useValue: () => (0, n.bG)([u.A], () => {
+    useValue: () => (0, n.bG)([a.A], () => {
       let {
-        disableNotifications: t
-      } = u.A.getSettings();
-      return t
+        disableNotifications: e
+      } = a.A.getSettings();
+      return e
     }),
-    setValue: t => l.A.update({
-      disableNotifications: t
+    setValue: e => l.A.update({
+      disableNotifications: e
     })
   }),
-  E = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+  S = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
     useTitle: () => o.intl.string(o.t["iA81+a"]),
     useSubtitle: () => o.intl.string(o.t.P4vj0h),
-    useValue: () => (0, n.bG)([u.A], () => {
+    useValue: () => (0, n.bG)([a.A], () => {
       let {
-        enableContentProtection: t
-      } = u.A.getSettings();
-      return t
+        enableContentProtection: e
+      } = a.A.getSettings();
+      return e
     }),
-    setValue: t => l.A.update({
-      enableContentProtection: t
+    setValue: e => l.A.update({
+      enableContentProtection: e
     }),
     usePredicate: () => {
-      var t, e, i;
-      return null != (t = null === s.A || true === s.A || null == (i = s.A.window) || null == (e = i.supportsContentProtection) ? true : e.call(i)) && t
+      var e, t, i;
+      return null != (e = null === s.A || true === s.A || null == (i = s.A.window) || null == (t = i.supportsContentProtection) ? true : t.call(i)) && e
     }
   }),
-  g = (0, Chunk419954.FW)(Chunk780964.X.STREAMER_MODE_OPTIONS_LIST, {
+  _ = (0, Chunk419954.FW)(Chunk780964.X.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => o.intl.string(o.t.UtW8R6),
-    buildLayout: () => [T, d, A, S, E]
+    buildLayout: () => [d, T, c, A, S]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 533978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,10 +25,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk376086 = require("./376086.js"),
   Chunk985018 = require("./985018.jsx");
 
-function x(e) {
+function v(e) {
   let {
     channel: t,
-    themeable: x,
+    themeable: v,
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: C
   } = e, {
@@ -43,18 +43,18 @@ function x(e) {
   } = (0, a.E)(), w = t.getGuildId(), {
     mute: R,
     suppress: D
-  } = (0, A.A)(t), M = (0, i.bG)([y.A], () => y.A.isDeaf()), L = R || D || M, k = (0, g.VE)({
-    isSoundboardButtonDisabled: L
-  }), [G, U] = (0, h.DP)(k), {
-    analyticsLocations: B
+  } = (0, A.A)(t), L = (0, i.bG)([y.A], () => y.A.isDeaf()), M = R || D || L, k = (0, f.VE)({
+    isSoundboardButtonDisabled: M
+  }), [G, U] = (0, p.DP)(k), {
+    analyticsLocations: V
   } = (0, u.Ay)(), {
-    isHovered: V,
-    setIsHovered: F,
-    onMouseEnter: H,
+    isHovered: B,
+    setIsHovered: H,
+    onMouseEnter: F,
     onMouseLeave: K
-  } = (0, f.A)(200, 300);
+  } = (0, g.A)(200, 300);
 
-  function W(e) {
+  function Y(e) {
     null != w && (0, c.L3)(e, async () => {
       let {
         default: e
@@ -80,9 +80,9 @@ function x(e) {
           return e
         }({
           guildId: w,
-          sourceAnalyticsLocations: B
+          sourceAnalyticsLocations: V
         }, t), l = l = {
-          onInteraction: (0, p.s)("SoundboardContextMenu", S)
+          onInteraction: (0, h.s)("SoundboardContextMenu", S)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -97,28 +97,28 @@ function x(e) {
     })
   }
 
-  function z() {
-    (0, d.X)(S, d.O.SOUNDBOARD), E === j.P.SOUNDBOARD ? (null == C || C(true), K()) : (null != E ? (N(), H()) : N(), null == C || C(j.P.SOUNDBOARD))
+  function W() {
+    (0, d.X)(S, d.O.SOUNDBOARD), E === x.P.SOUNDBOARD ? (null == C || C(true), K()) : (null != E ? (N(), F()) : N(), null == C || C(x.P.SOUNDBOARD))
   }
-  let Y = l.useRef(null);
+  let z = l.useRef(null);
   return (0, r.jsx)(o.Y, {
-    targetElementRef: Y,
-    shouldShow: V && (E === j.P.SOUNDBOARD || null == E) || E === j.P.SOUNDBOARD,
+    targetElementRef: z,
+    shouldShow: B && (E === x.P.SOUNDBOARD || null == E) || E === x.P.SOUNDBOARD,
     animation: o.Y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      F(false), null == C || C(true)
+      H(false), null == C || C(true)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return L ? null : (0, r.jsx)(_.A, {
+      return M ? null : (0, r.jsx)(O.A, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: H,
+          onMouseEnter: F,
           onMouseLeave: K,
           children: (0, r.jsx)(b.A, {
             guildId: w,
@@ -133,23 +133,23 @@ function x(e) {
         })
       })
     },
-    children: () => (0, r.jsx)(O.l, {
-      ref: Y,
+    children: () => (0, r.jsx)(_.l, {
+      ref: z,
       isTrayButton: true,
-      themeable: x,
-      label: R ? v.intl.string(v.t["Ox4/zU"]) : D ? v.intl.string(v.t["+YBKYI"]) : M ? v.intl.string(v.t.X1lQli) : true,
+      themeable: v,
+      label: R ? j.intl.string(j.t["Ox4/zU"]) : D ? j.intl.string(j.t["+YBKYI"]) : L ? j.intl.string(j.t.X1lQli) : true,
       iconComponent: I,
-      disabled: L,
-      onContextMenu: W,
-      onClick: z,
+      disabled: M,
+      onContextMenu: Y,
+      onClick: W,
       onMouseEnter: e => {
-        T(), "focus" !== e.type && H()
+        T(), "focus" !== e.type && F()
       },
       onMouseLeave: () => {
         null == E && (K(), P())
       },
-      isActive: V || E === j.P.SOUNDBOARD,
-      color: V || E === j.P.SOUNDBOARD ? "primaryDark" : true
+      isActive: B || E === x.P.SOUNDBOARD,
+      color: B || E === x.P.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

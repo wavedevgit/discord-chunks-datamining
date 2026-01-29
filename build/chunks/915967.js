@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 915967, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => Z,
@@ -51,26 +51,26 @@ var r, Chunk966597 = require("./966597.js"),
 function F(e) {
   switch (e) {
     case "NAVIGATION":
-      return B.intl.string(B.t["yGE+jg"]);
+      return H.intl.string(H.t["yGE+jg"]);
     case "VOICE_AND_VIDEO":
-      return B.intl.string(B.t.bI8F5u);
+      return H.intl.string(H.t.bI8F5u);
     case "CHAT":
-      return B.intl.string(B.t.hDhbb3);
+      return H.intl.string(H.t.hDhbb3);
     case "MISCELLANEOUS":
-      return B.intl.string(B.t.cBdwqs);
+      return H.intl.string(H.t.cBdwqs);
     case "MESSAGE":
-      return B.intl.string(B.t["5fpmX9"]);
+      return H.intl.string(H.t["5fpmX9"]);
     case "DND":
-      return B.intl.string(B.t["69j6+4"])
+      return H.intl.string(H.t["69j6+4"])
   }
 }
 
 function Y(e) {
   switch (e) {
     case "MESSAGE":
-      return B.intl.string(B.t.iepGDn);
+      return H.intl.string(H.t.iepGDn);
     case "DND":
-      return B.intl.string(B.t.LBsB0a);
+      return H.intl.string(H.t.LBsB0a);
     default:
       return
   }
@@ -138,202 +138,202 @@ let K = {
 
 function z() {
   let e = [{
-      description: B.intl.string(B.t.bx4Uyz),
-      binds: W(H.IWg.SERVER_PREV, H.IWg.SERVER_NEXT),
+      description: H.intl.string(H.t.bx4Uyz),
+      binds: W(B.IWg.SERVER_PREV, B.IWg.SERVER_NEXT),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t["+Wem6h"]),
-      binds: W(H.IWg.CHANNEL_PREV, H.IWg.CHANNEL_NEXT),
+      description: H.intl.string(H.t["+Wem6h"]),
+      binds: W(B.IWg.CHANNEL_PREV, B.IWg.CHANNEL_NEXT),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t["+2fcdz"]),
-      binds: W(H.IWg.NAVIGATE_BACK, H.IWg.NAVIGATE_FORWARD),
+      description: H.intl.string(H.t["+2fcdz"]),
+      binds: W(B.IWg.NAVIGATE_BACK, B.IWg.NAVIGATE_FORWARD),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t.eVmj1H),
-      binds: W(H.IWg.UNREAD_PREV, H.IWg.UNREAD_NEXT),
+      description: H.intl.string(H.t.eVmj1H),
+      binds: W(B.IWg.UNREAD_PREV, B.IWg.UNREAD_NEXT),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t.EcqS7Y),
-      binds: W(H.IWg.MENTION_CHANNEL_PREV, H.IWg.MENTION_CHANNEL_NEXT),
+      description: H.intl.string(H.t.EcqS7Y),
+      binds: W(B.IWg.MENTION_CHANNEL_PREV, B.IWg.MENTION_CHANNEL_NEXT),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t["4I3pwW"]),
-      binds: W(H.IWg.JUMP_TO_CURRENT_CALL),
+      description: H.intl.string(H.t["4I3pwW"]),
+      binds: W(B.IWg.JUMP_TO_CURRENT_CALL),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t.Bqss72),
-      binds: W(H.IWg.TOGGLE_PREVIOUS_GUILD),
+      description: H.intl.string(H.t.Bqss72),
+      binds: W(B.IWg.TOGGLE_PREVIOUS_GUILD),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t.yYsRlD),
-      binds: W(H.IWg.QUICKSWITCHER_SHOW),
+      description: H.intl.string(H.t.yYsRlD),
+      binds: W(B.IWg.QUICKSWITCHER_SHOW),
       group: "NAVIGATION"
     }, {
-      description: B.intl.string(B.t.O7ouXO),
-      binds: W(H.IWg.CREATE_GUILD),
+      description: H.intl.string(H.t.O7ouXO),
+      binds: W(B.IWg.CREATE_GUILD),
       group: "NAVIGATION",
       groupEnd: true
     }, {
-      description: B.intl.string(B.t.Lns0Fc),
+      description: H.intl.string(H.t.Lns0Fc),
       binds: ["mod+d"],
       group: "DND"
     }, {
-      description: B.intl.string(B.t.dmMqay),
+      description: H.intl.string(H.t.dmMqay),
       binds: ["up", "down"],
       group: "DND"
     }, {
-      description: B.intl.string(B.t["cs/HVH"]),
+      description: H.intl.string(H.t["cs/HVH"]),
       binds: ["spacebar", "enter"],
       group: "DND"
     }, {
-      description: B.intl.string(B.t["1ioMJQ"]),
+      description: H.intl.string(H.t["1ioMJQ"]),
       binds: ["esc"],
       group: "DND",
       groupEnd: true
     }, {
-      description: B.intl.string(B.t.UaXAPx),
-      binds: W(H.IWg.MARK_SERVER_READ),
+      description: H.intl.string(H.t.UaXAPx),
+      binds: W(B.IWg.MARK_SERVER_READ),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t["5X9vFj"]),
-      binds: W(H.IWg.MARK_CHANNEL_READ),
+      description: H.intl.string(H.t["5X9vFj"]),
+      binds: W(B.IWg.MARK_CHANNEL_READ),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.wxQFsl),
-      binds: W(H.IWg.CREATE_DM_GROUP),
+      description: H.intl.string(H.t.wxQFsl),
+      binds: W(B.IWg.CREATE_DM_GROUP),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t["C+XV7f"]),
-      binds: W(H.IWg.TOGGLE_CHANNEL_PINS),
+      description: H.intl.string(H.t["C+XV7f"]),
+      binds: W(B.IWg.TOGGLE_CHANNEL_PINS),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t["Q+YV/T"]),
-      binds: W(H.IWg.TOGGLE_INBOX),
+      description: H.intl.string(H.t["Q+YV/T"]),
+      binds: W(B.IWg.TOGGLE_INBOX),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t["YEjV+W"]),
-      binds: W(H.IWg.MARK_TOP_INBOX_CHANNEL_READ),
+      description: H.intl.string(H.t["YEjV+W"]),
+      binds: W(B.IWg.MARK_TOP_INBOX_CHANNEL_READ),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.AcBI9S),
-      binds: W(H.IWg.TOGGLE_USERS),
+      description: H.intl.string(H.t.AcBI9S),
+      binds: W(B.IWg.TOGGLE_USERS),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.JoxNnl),
-      binds: W(H.IWg.SEARCH_EMOJIS),
+      description: H.intl.string(H.t.JoxNnl),
+      binds: W(B.IWg.SEARCH_EMOJIS),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t["3PHxo8"]),
-      binds: W(H.IWg.SEARCH_GIFS),
+      description: H.intl.string(H.t["3PHxo8"]),
+      binds: W(B.IWg.SEARCH_GIFS),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.YFl7eb),
-      binds: W(H.IWg.SEARCH_STICKERS),
+      description: H.intl.string(H.t.YFl7eb),
+      binds: W(B.IWg.SEARCH_STICKERS),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.L3RYYJ),
-      binds: W(H.IWg.SCROLL_UP, H.IWg.SCROLL_DOWN),
+      description: H.intl.string(H.t.L3RYYJ),
+      binds: W(B.IWg.SCROLL_UP, B.IWg.SCROLL_DOWN),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t["3HAurM"]),
-      binds: W(H.IWg.JUMP_TO_FIRST_UNREAD),
+      description: H.intl.string(H.t["3HAurM"]),
+      binds: W(B.IWg.JUMP_TO_FIRST_UNREAD),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.rrYBEu),
-      binds: W(H.IWg.TEXTAREA_FOCUS),
+      description: H.intl.string(H.t.rrYBEu),
+      binds: W(B.IWg.TEXTAREA_FOCUS),
       group: "CHAT"
     }, {
-      description: B.intl.string(B.t.sUJlPL),
-      binds: W(H.IWg.UPLOAD_FILE),
+      description: H.intl.string(H.t.sUJlPL),
+      binds: W(B.IWg.UPLOAD_FILE),
       group: "CHAT",
       groupEnd: true
     }, {
-      description: B.intl.string(B.t.tL6eVW),
-      binds: W(H.IWg.TOGGLE_MUTE),
+      description: H.intl.string(H.t.tL6eVW),
+      binds: W(B.IWg.TOGGLE_MUTE),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: B.intl.string(B.t["QXe/7T"]),
-      binds: W(H.IWg.TOGGLE_DEAFEN),
+      description: H.intl.string(H.t["QXe/7T"]),
+      binds: W(B.IWg.TOGGLE_DEAFEN),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: B.intl.string(B.t.d6UIii),
-      binds: W(H.IWg.CALL_ACCEPT),
+      description: H.intl.string(H.t.d6UIii),
+      binds: W(B.IWg.CALL_ACCEPT),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: B.intl.string(B.t.IcEW06),
-      binds: W(H.IWg.MARK_CHANNEL_READ),
+      description: H.intl.string(H.t.IcEW06),
+      binds: W(B.IWg.MARK_CHANNEL_READ),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: B.intl.string(B.t.WN2dsS),
-      binds: W(H.IWg.CALL_START),
+      description: H.intl.string(H.t.WN2dsS),
+      binds: W(B.IWg.CALL_START),
       group: "VOICE_AND_VIDEO",
       groupEnd: true
     }, {
-      description: B.intl.string(B.t.rUK0kk),
-      binds: W(H.IWg.SEARCH_SOUNDBOARD),
+      description: H.intl.string(H.t.rUK0kk),
+      binds: W(B.IWg.SEARCH_SOUNDBOARD),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: B.intl.string(B.t.vkGkSn),
-      binds: W(H.IWg.TOGGLE_HELP),
+      description: H.intl.string(H.t.vkGkSn),
+      binds: W(B.IWg.TOGGLE_HELP),
       group: "MISCELLANEOUS"
     }, {
-      description: B.intl.string(B.t.FJvZ87),
-      binds: W(H.IWg.FOCUS_SEARCH),
+      description: H.intl.string(H.t.FJvZ87),
+      binds: W(B.IWg.FOCUS_SEARCH),
       group: "MISCELLANEOUS"
     }, {
-      description: B.intl.string(B.t["FiWl/T"]),
-      binds: W(H.IWg.OPEN_CONTEXT_MENU),
+      description: H.intl.string(H.t["FiWl/T"]),
+      binds: W(B.IWg.OPEN_CONTEXT_MENU),
       group: "MISCELLANEOUS"
     }, {
-      description: B.intl.string(B.t.HnNtEI),
+      description: H.intl.string(H.t.HnNtEI),
       binds: ["h+h+right+n+k"],
       group: "MISCELLANEOUS",
       groupEnd: true
     }, {
-      description: B.intl.string(B.t.fsBWmS),
+      description: H.intl.string(H.t.fsBWmS),
       binds: ["e"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.xwMqD7),
+      description: H.intl.string(H.t.xwMqD7),
       binds: ["backspace"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.CvQ18w),
+      description: H.intl.string(H.t.CvQ18w),
       binds: ["p"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.lfIHs4),
+      description: H.intl.string(H.t.lfIHs4),
       binds: ["plus"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t["5IEsGx"]),
+      description: H.intl.string(H.t["5IEsGx"]),
       binds: ["r"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.zSyDdA),
+      description: H.intl.string(H.t.zSyDdA),
       binds: ["f"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.yGLjXF),
+      description: H.intl.string(H.t.yGLjXF),
       binds: ["s"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.JrGD7E),
+      description: H.intl.string(H.t.JrGD7E),
       binds: ["mod+c"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.RpE9k7),
+      description: H.intl.string(H.t.RpE9k7),
       binds: ["alt+enter"],
       group: "MESSAGE"
     }, {
-      description: B.intl.string(B.t.rrYBEu),
+      description: H.intl.string(H.t.rrYBEu),
       binds: ["escape"],
       group: "MESSAGE",
       groupEnd: true
     }, {
-      description: B.intl.string(B.t.z9c6mt),
-      binds: W(H.IWg.VIBE_WITH_WUMPUS),
+      description: H.intl.string(H.t.z9c6mt),
+      binds: W(B.IWg.VIBE_WITH_WUMPUS),
       group: "MISCELLANEOUS"
     }],
     {
@@ -345,8 +345,8 @@ function z() {
       autoTrackExposure: false
     });
   return t && !n && e.push({
-    description: B.intl.string(B.t.IWNSoH),
-    binds: W(H.IWg.TOGGLE_FOR_LATER),
+    description: H.intl.string(H.t.IWNSoH),
+    binds: W(B.IWg.TOGGLE_FOR_LATER),
     group: "CHAT"
   }), e
 }

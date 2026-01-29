@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 404096, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 404096, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  w: () => D
+  w: () => m
 });
 var Chunk421380 = require("./421380.js"),
   Chunk935649 = require("./935649.jsx"),
@@ -23,60 +23,60 @@ var Chunk421380 = require("./421380.js"),
   Chunk355097 = require("./355097.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let L = (t, e) => {
-    o.default.track(C.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
-      default_guilds_restricted: t,
-      applied_to_existing_guilds: e
+let p = (e, t) => {
+    o.default.track(N.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+      default_guilds_restricted: e,
+      applied_to_existing_guilds: t
     })
   },
-  D = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+  m = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: () => b.intl.string(b.t["3o2ojh"]),
-    useSubtitle: () => (0, c.q9)() ? b.intl.format(b.t.WpnWLc, {
-      helpdeskArticle: T.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
+    useSubtitle: () => (0, g.q9)() ? b.intl.format(b.t.WpnWLc, {
+      helpdeskArticle: d.A.getArticleURL(N.MVz.MESSAGE_REQUESTS)
     }) : b.intl.format(b.t.wkm9a3, {
-      helpdeskArticle: T.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
+      helpdeskArticle: d.A.getArticleURL(N.MVz.MESSAGE_REQUESTS)
     }),
     useValue: () => {
-      let t = (0, c.Tx)(),
-        e = (0, S.K)(),
-        i = E.$s.useSetting().includes(t),
-        n = E.YX.useSetting(),
-        l = E.Zr.useSetting().includes(t);
-      return t === _.YG ? !e && !n : !i && !l
+      let e = (0, g.Tx)(),
+        t = (0, A.K)(),
+        i = S.$s.useSetting().includes(e),
+        n = S.YX.useSetting(),
+        l = S.Zr.useSetting().includes(e);
+      return e === E.YG ? !t && !n : !i && !l
     },
     useDisabled: () => {
-      let t = (0, c.Tx)(),
-        e = (0, r.uM)(),
-        i = (0, S.K)(),
-        n = E.$s.useSetting().includes(t);
-      return t === _.YG ? i || e : n
+      let e = (0, g.Tx)(),
+        t = (0, r.uM)(),
+        i = (0, A.K)(),
+        n = S.$s.useSetting().includes(e);
+      return e === E.YG ? i || t : n
     },
-    setValue: t => {
-      let e = _.xk.getState().selectedGuildId;
-      if (!t && (0, A.w)()) return void l.A.showAgeVerificationGetStartedModal({
+    setValue: e => {
+      let t = E.xk.getState().selectedGuildId;
+      if (!e && (0, c.w)()) return void l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.MESSAGE_REQUESTS_SETTINGS
       });
-      if (e === _.YG) {
+      if (t === E.YG) {
         var i;
-        i = !t, (0, I.O)({
+        i = !e, (0, I.O)({
           header: b.intl.string(b.t.yAfu1p),
           body: b.intl.string(b.t.Ry2z74),
           confirmText: b.intl.string(b.t.gm1Vej),
           cancelText: b.intl.string(b.t.p89ACt),
           confirmButtonColor: n.$n.Colors.BRAND,
           onConfirm: () => {
-            E.YX.updateSetting(i), L(i, false)
+            S.YX.updateSetting(i), p(i, false)
           },
           onCancel: () => {
-            E.YX.updateSetting(i), E.Zr.updateSetting(i ? a.A.getGuildIds() : []), L(i, true)
+            S.YX.updateSetting(i), S.Zr.updateSetting(i ? u.A.getGuildIds() : []), p(i, true)
           }
         })
       } else {
-        let i = (0, d.xo)();
-        t ? i.delete(e) : i.add(e), E.Zr.updateSetting(Array.from(i)), o.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+        let i = (0, T.xo)();
+        e ? i.delete(t) : i.add(t), S.Zr.updateSetting(Array.from(i)), o.default.track(N.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
           action: O.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
-          ingress: N.bf.USER_SETTINGS_PRIVACY_SAFETY,
-          guild_id: e
+          ingress: C.bf.USER_SETTINGS_PRIVACY_SAFETY,
+          guild_id: t
         })
       }
     }

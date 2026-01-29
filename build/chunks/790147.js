@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 790147, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 790147, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  z: () => d
+  z: () => T
 });
 var Chunk311907 = require("./311907.js"),
   Chunk926919 = require("./926919.js"),
@@ -11,19 +11,19 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk698723 = require("./698723.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
-  useTitle: () => T.intl.string(T.t["0CEP6e"]),
-  useSubtitle: () => T.intl.string(T.t["kBXuW+"]),
+let T = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
+  useTitle: () => d.intl.string(d.t["0CEP6e"]),
+  useSubtitle: () => d.intl.string(d.t["kBXuW+"]),
   useValue: function() {
     return (0, n.bG)([r.default], () => r.default.isStreamInfoOverlayEnabled)
   },
-  setValue: function(t) {
-    let e = r.default.isStreamInfoOverlayEnabled;
-    (0, o.A)("stream_info_overlay_enabled", t, e), (0, l.x)({
-      isStreamInfoOverlayEnabled: t
+  setValue: function(e) {
+    let t = r.default.isStreamInfoOverlayEnabled;
+    (0, o.A)("stream_info_overlay_enabled", e, t), (0, l.x)({
+      isStreamInfoOverlayEnabled: e
     })
   },
   usePredicate: function() {
-    return u.Q_.useSetting()
+    return a.Q_.useSetting()
   }
 })

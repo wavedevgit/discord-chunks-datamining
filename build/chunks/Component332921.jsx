@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 332921, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk399925 = require("./399925.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _() {
+function p() {
   let e = a.Q$.useSetting(),
     {
       enableViewerClipping: t
@@ -27,18 +27,18 @@ function _() {
     {
       viewerClipsEnabled: n
     } = (0, i.cf)([c.A], () => c.A.getSettings()),
-    _ = (0, d.A)(o.A);
+    p = (0, d.A)(o.A);
   return (0, r.jsxs)(l.lVW, {
     children: [(0, r.jsx)(l.dOG, {
-      label: p.intl.string(p.t.AGDDkH),
-      description: p.intl.string(p.t["wW9/zQ"]),
+      label: _.intl.string(_.t.AGDDkH),
+      description: _.intl.string(_.t["wW9/zQ"]),
       checked: e,
       onChange: e => u.eQ({
         allowVoiceRecording: e
       })
-    }), t && _ && (0, r.jsx)(l.dOG, {
-      label: p.intl.string(p.t.NWw7kY),
-      description: p.intl.string(p.t["0vjy8N"]),
+    }), t && p && (0, r.jsx)(l.dOG, {
+      label: _.intl.string(_.t.NWw7kY),
+      description: _.intl.string(_.t["0vjy8N"]),
       checked: n,
       onChange: e => u.Wn({
         enabled: e,

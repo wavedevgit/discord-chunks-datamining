@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 20737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => W
+  A: () => Y
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -44,7 +44,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk275825 = require("./275825.js");
 
-function H(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,25 +75,25 @@ function K(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = Chunk64700.memo(function(e) {
+let Y = Chunk64700.memo(function(e) {
   var t, i;
   let {
-    className: W,
-    channel: z,
-    draftType: Y,
+    className: Y,
+    channel: W,
+    draftType: z,
     editorTextContent: q,
     setValue: X,
     canOnlyUseTextCommands: J
-  } = e, Q = (0, O.Us)(), Z = l.useRef(null), $ = l.useRef(null), ee = (0, a.bG)([T.A], () => T.A.getActivities()), et = (0, m.Et)(), en = (0, a.bG)([g.A], () => g.A.getLastClipsSession()), er = (0, a.yK)([g.A], () => g.A.getNewClipIds()), el = (0, a.bG)([C.Ay], () => null == C.Ay.getCurrentSidebarChannelId(z.id)), {
+  } = e, Q = (0, _.Us)(), Z = l.useRef(null), $ = l.useRef(null), ee = (0, a.bG)([T.A], () => T.A.getActivities()), et = (0, m.Et)(), en = (0, a.bG)([f.A], () => f.A.getLastClipsSession()), er = (0, a.yK)([f.A], () => f.A.getNewClipIds()), el = (0, a.bG)([C.Ay], () => null == C.Ay.getCurrentSidebarChannelId(W.id)), {
     showClipsHeaderEntrypoint: ei
-  } = f.L_.useExperiment({
+  } = g.L_.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: false
   }), {
     onShareClick: es
-  } = (0, A.A)(z.id), ea = (0, a.bG)([_.HP], () => _.HP.hasHotspot(_._2.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.red)(e => (0, c.fDT)(e, U.nm)), ec = (0, a.bG)([S.A], () => S.A.hasLayers()), eu = (0, a.bG)([g.A], () => g.A.hasClips()), [ed, ep] = l.useState(null), eh = (0, f.sw)() && (et || eu), ef = z.isPrivate(), eg = (0, a.bG)([N.A], () => ef || N.A.can(G.xBc.ATTACH_FILES, z) && N.A.can(G.xBc.SEND_MESSAGES, z)), em = (0, d.A)(en);
-  (null == em ? true : em.newClipIds.length) !== (null == en ? true : en.newClipIds.length) && (null != (t = null == en ? true : en.newClipIds.length) ? t : 0) > 0 && null == ed && ea && el && !eo && !ei && !ec && ep("recentClips");
+  } = (0, A.A)(W.id), ea = (0, a.bG)([O.HP], () => O.HP.hasHotspot(O._2.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.red)(e => (0, c.fDT)(e, U.nm)), ec = (0, a.bG)([S.A], () => S.A.hasLayers()), eu = (0, a.bG)([f.A], () => f.A.hasClips()), [ed, eh] = l.useState(null), ep = (0, g.sw)() && (et || eu), eg = W.isPrivate(), ef = (0, a.bG)([N.A], () => eg || N.A.can(G.xBc.ATTACH_FILES, W) && N.A.can(G.xBc.SEND_MESSAGES, W)), em = (0, d.A)(en);
+  (null == em ? true : em.newClipIds.length) !== (null == en ? true : en.newClipIds.length) && (null != (t = null == en ? true : en.newClipIds.length) ? t : 0) > 0 && null == ed && ea && el && !eo && !ei && !ec && eh("recentClips");
   let eb = (0, a.bG)([I.A], () => I.A.hasCurrentUserSentMessageSinceAppStart());
 
   function eA() {
@@ -101,22 +101,22 @@ let W = Chunk64700.memo(function(e) {
       let {
         default: e
       } = await Promise.all([n.e("4918"), n.e("98184")]).then(n.bind(n, 543428));
-      return t => (0, r.jsx)(e, K(H({}, t), {
-        channelId: z.id,
+      return t => (0, r.jsx)(e, K(F({}, t), {
+        channelId: W.id,
         onClipClick: e => es({
           clips: [e]
         })
       }))
     }, {
       modalKey: U.nm
-    }), ep(null)
+    }), eh(null)
   }
   l.useEffect(() => {
     let e = e => {
       let {
         channelId: t
       } = e;
-      if (t === z.id) {
+      if (t === W.id) {
         var n;
         null == (n = Z.current) || n.activateUploadDialogue()
       }
@@ -125,36 +125,36 @@ let W = Chunk64700.memo(function(e) {
       P._.unsubscribe(G.jej.UPLOAD_FILE, e)
     }
   });
-  let ey = (0, x.n)(z),
-    e_ = (0, x.Tb)(z),
-    eO = !E.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
-    ej = (0, j.I7)(null != z ? z : true),
-    ev = (0, p.t8)(),
-    ex = (0, v.Sc)({
+  let ey = (0, v.n)(W),
+    eO = (0, v.Tb)(W),
+    e_ = !E.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
+    ex = (0, x.I7)(null != W ? W : true),
+    ej = (0, h.t8)(),
+    ev = (0, j.Sc)({
       location: "ChannelAttachButton"
     }),
-    eE = (0, h.b)(),
+    eE = (0, p.b)(),
     eC = null != (i = null == er ? true : er.length) ? i : 0,
     eS = (0, k.A)({
-      canAttachFiles: eg,
-      canStartThreads: ey || e_,
-      useSlate: eO,
-      hasClips: eh,
+      canAttachFiles: ef,
+      canStartThreads: ey || eO,
+      useSlate: e_,
+      hasClips: ep,
       canUseApplicationCommands: !J,
-      channel: z,
+      channel: W,
       activities: ee,
       newClipsCount: eC,
-      canPostPolls: ej,
-      canLaunchActivities: ev,
+      canPostPolls: ex,
+      canLaunchActivities: ej,
       appContext: Q,
-      canSendScheduledMessages: ex,
+      canSendScheduledMessages: ev,
       canSummarizeThreads: eE
     });
   if (0 === eS.length) return null;
   let eI = (0, r.jsx)(c.pa$, {
       size: "refresh_sm",
       color: "currentColor",
-      colorClass: F.dW
+      colorClass: H.dW
     }),
     eN = (0, r.jsx)(c.YNO, {
       targetElementRef: $,
@@ -165,31 +165,31 @@ let W = Chunk64700.memo(function(e) {
       positionKey: null != ed ? ed : "null",
       onRequestOpen: () => {
         eb && (0, y.Dr)(o.M.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: B.i.TAKE_ACTION
-        }), ep("attachMenu")
+          dismissAction: V.i.TAKE_ACTION
+        }), eh("attachMenu")
       },
       onRequestClose: () => {
         (0, c.ueM)() || (eb && (0, y.Dr)(o.M.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: B.i.TAKE_ACTION
-        }), ep(null))
+          dismissAction: V.i.TAKE_ACTION
+        }), eh(null))
       },
       renderPopout: e => {
         switch (ed) {
           case "recentClips":
-            return (0, r.jsx)(b.A, K(H({}, e), {
+            return (0, r.jsx)(b.A, K(F({}, e), {
               onOpenClips: eA,
               lastClipsSession: en
             }));
           case "attachMenu":
-            return (0, r.jsx)(L.A, K(H({}, e), {
-              onClose: () => ep(null),
+            return (0, r.jsx)(M.A, K(F({}, e), {
+              onClose: () => eh(null),
               options: eS,
-              channel: z,
+              channel: W,
               onFileUpload: () => {
                 var e;
                 return null == (e = Z.current) ? true : e.activateUploadDialogue()
               },
-              draftType: Y,
+              draftType: z,
               editorTextContent: q,
               setValue: X,
               openClips: eA
@@ -198,13 +198,13 @@ let W = Chunk64700.memo(function(e) {
             throw Error("Invalid popout type provided")
         }
       },
-      children: e => (0, r.jsx)(M.A, K(H({
+      children: e => (0, r.jsx)(L.A, K(F({
         ref: $,
-        className: s()(F.g$, W),
-        childClassName: F.wh,
+        className: s()(H.g$, Y),
+        childClassName: H.wh,
         isActive: false,
-        "aria-label": V.intl.string(V.t.d56gCa),
-        onDoubleClick: eg ? () => {
+        "aria-label": B.intl.string(B.t.d56gCa),
+        onDoubleClick: ef ? () => {
           var e;
           return null == (e = Z.current) ? true : e.activateUploadDialogue()
         } : true,
@@ -215,30 +215,30 @@ let W = Chunk64700.memo(function(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: F.EJ,
+      className: H.EJ,
       children: (0, r.jsx)(u.A, {
         ref: Z,
         onChange: e => {
           var t, n;
-          t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(z, []) : (0, R.R)(t, z, Y, {
+          t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(W, []) : (0, R.R)(t, W, z, {
             requireConfirm: true,
             origin: "file_picker"
           }), P._.dispatchToLastSubscribed(G.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
         },
-        multiple: z.rateLimitPerUser <= 0,
+        multiple: W.rateLimitPerUser <= 0,
         tabIndex: false,
         "aria-hidden": true
       })
     }), (0, r.jsx)("div", {
-      className: F.Jd,
+      className: H.Jd,
       children: (0, r.jsx)(D.A, {
-        channel: z,
+        channel: W,
         isOmniMenuOpen: "attachMenu" === ed,
-        openOmniMenu: () => ep("attachMenu"),
-        enabled: ev,
-        animationContainerClassName: F.Vk,
-        glowClassName: F.im,
-        trinketsClassName: F.xK,
+        openOmniMenu: () => eh("attachMenu"),
+        enabled: ej,
+        animationContainerClassName: H.Vk,
+        glowClassName: H.im,
+        trinketsClassName: H.xK,
         children: eN
       })
     })]

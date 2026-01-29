@@ -1,9 +1,9 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 12925 **/
 /** chunk id: 298990, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Jb: () => a,
-  b4: () => s,
-  oR: () => i,
+  Jb: () => o,
+  b4: () => i,
+  oR: () => a,
   qf: () => l
 });
 var Chunk73153 = require("./73153.js");
@@ -22,21 +22,21 @@ function l(e, t, n) {
   })
 }
 
-function i(e) {
+function a(e) {
   r.h.dispatch({
     type: "ACTIVITY_INVITE_MODAL_QUERY",
     query: e
   })
 }
 
-function s(e) {
+function i(e) {
   r.h.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     channelId: e
   })
 }
 
-function a(e) {
+function o(e) {
   r.h.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     userId: e

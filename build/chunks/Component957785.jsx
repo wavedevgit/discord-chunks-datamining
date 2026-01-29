@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 957785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,42 +13,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk183555 = require("./183555.jsx"),
   Chunk524380 = require("./524380.js"),
   Chunk733557 = require("./733557.js");
-let h = Chunk64700.forwardRef(function(e, t) {
+let p = Chunk64700.forwardRef(function(e, t) {
   var n, l, i;
   let {
-    onCardClick: h,
-    tooltipConfig: f,
-    shouldScalePreview: g = true,
+    onCardClick: p,
+    tooltipConfig: g,
+    shouldScalePreview: f = true,
     renderPreview: m,
     moreCount: b,
     isSingleCard: A = false,
     wishlistId: y,
-    wishlistItem: _,
-    cardSize: O = d.Y.MEDIUM
+    wishlistItem: O,
+    cardSize: _ = d.Y.MEDIUM
   } = e, {
-    skuId: j,
-    skuProductLine: v
-  } = _, {
-    trackUserProfileWishlistAction: x
-  } = (0, u.NJ)(), E = g ? p.ho : p.C8, C = A ? p.pr : p.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
+    skuId: x,
+    skuProductLine: j
+  } = O, {
+    trackUserProfileWishlistAction: v
+  } = (0, u.NJ)(), E = f ? h.ho : h.C8, C = A ? h.pr : h.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
     onClick: () => {
-      h(), x({
+      p(), v({
         action: S ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: S ? null : j,
+        skuId: S ? null : x,
         wishlistId: y,
-        productLines: new Set([v])
+        productLines: new Set([j])
       })
     },
     className: s()(C, {
-      [p.ax]: O === d.Y.SMALL
+      [h.ax]: _ === d.Y.SMALL
     }),
-    "aria-label": null != (n = f.title) ? n : "",
+    "aria-label": null != (n = g.title) ? n : "",
     innerRef: t,
     children: [(0, r.jsx)("div", {
       className: E,
       children: m()
     }), S && (0, r.jsx)("div", {
-      className: p.sv,
+      className: h.sv,
       children: (0, r.jsxs)(o.Text, {
         variant: "text-xs/medium",
         color: "always-white",
@@ -58,10 +58,10 @@ let h = Chunk64700.forwardRef(function(e, t) {
   });
   return (0, r.jsx)(a.un, {
     asContainer: true,
-    asset: null == (i = f.renderIcon) ? true : i.call(f, _),
+    asset: null == (i = g.renderIcon) ? true : i.call(g, O),
     assetSize: c.Q8,
-    title: f.title,
-    body: null != (l = f.body) ? l : "",
+    title: g.title,
+    body: null != (l = g.body) ? l : "",
     children: I
   })
 })

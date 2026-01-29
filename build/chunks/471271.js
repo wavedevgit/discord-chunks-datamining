@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 471271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => b
@@ -24,74 +24,74 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: l,
     onError: b
-  } = e, A = (0, f.A)(), [y, _] = r.useState(false), [O, j] = r.useState(false), [v, x] = r.useState(false), [E, C] = r.useState(false), [S, I] = r.useState(false), N = y || O || v, T = r.useCallback(async e => {
+  } = e, A = (0, g.A)(), [y, O] = r.useState(false), [_, x] = r.useState(false), [j, v] = r.useState(false), [E, C] = r.useState(false), [S, I] = r.useState(false), N = y || _ || j, T = r.useCallback(async e => {
     if (!N) {
-      _(true);
+      O(true);
       try {
-        await (0, p.RK)(e), C(true), null == n || n()
+        await (0, h.RK)(e), C(true), null == n || n()
       } catch (t) {
         let e = new s.LG(t);
         null == b || b(e)
       } finally {
-        _(false)
+        O(false)
       }
     }
   }, [N, n, b]), P = r.useCallback(async e => {
     if (!N) {
-      j(true);
+      x(true);
       try {
-        await (0, p.UK)(e), I(true), null == l || l()
+        await (0, h.UK)(e), I(true), null == l || l()
       } catch (t) {
         let e = new s.LG(t);
         null == b || b(e)
       } finally {
-        j(false)
+        x(false)
       }
     }
   }, [N, l, b]), w = r.useCallback(async e => {
     if (N) return;
-    j(true);
+    x(true);
     let t = i()(e, 50);
     try {
-      for (let e of t) await (0, p.ST)(e);
+      for (let e of t) await (0, h.ST)(e);
       I(true), null == l || l()
     } catch (t) {
       let e = new s.LG(t);
       null == b || b(e)
     } finally {
-      j(false)
+      x(false)
     }
   }, [N, l, b]), R = r.useCallback(async e => {
     if (N) return;
     if (null != t && null == o.A.getMutualGuilds(t.id)) {
-      x(true);
+      v(true);
       try {
         await (0, c.A)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        x(false)
+        v(false)
       }
     }
     let n = async () => {
       var n;
       let r = null != t ? null == (n = o.A.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
       d.default.track(m.HAw.MESSAGE_REQUEST_ACTION, {
-        action: g.LD.ACCEPT_CONFIRMATION_PROMPT,
+        action: f.LD.ACCEPT_CONFIRMATION_PROMPT,
         channel_id: e,
         mutual_guild_ids: null != r ? r : [],
         other_user_id: null == t ? true : t.id
       }), await T(e)
     };
-    (0, h.o)({
+    (0, p.o)({
       channelId: e,
       onConfirm: n,
       onCancel: () => {
         var n;
         let r = null != t ? null == (n = o.A.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
         d.default.track(m.HAw.MESSAGE_REQUEST_ACTION, {
-          action: g.LD.DISMISS_CONFIRMATION_PROMPT,
+          action: f.LD.DISMISS_CONFIRMATION_PROMPT,
           channel_id: e,
           mutual_guild_ids: null != r ? r : [],
           other_user_id: null == t ? true : t.id
@@ -101,19 +101,19 @@ function b(e) {
   }, [T, N, t]), D = r.useCallback((e, t, n) => {
     let r = (r, l) => {
         l && u.WY.updateSetting(r), r && null != t && (0, a.tJ)(t), T(e.id), d.default.track(m.HAw.MESSAGE_REQUEST_ACTION, {
-          action: g.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
+          action: f.LD.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: l,
           non_spam_retraining_opt_in: r
         }), null != n && n()
       },
       l = u.WY.getSetting();
-    null == l ? (0, h.v)({
+    null == l ? (0, p.v)({
       channel: e,
       onConfirm: r,
       onCancel: () => {
         d.default.track(m.HAw.MESSAGE_REQUEST_ACTION, {
-          action: g.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
+          action: f.LD.DISMISS_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id
         })
       }
@@ -125,8 +125,8 @@ function b(e) {
     rejectAll: w,
     markAsNotSpam: D,
     isAcceptLoading: y,
-    isRejectLoading: O,
-    isUserProfileLoading: v,
+    isRejectLoading: _,
+    isUserProfileLoading: j,
     isOptimisticAccepted: E,
     isOptimisticRejected: S
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 361619, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -16,12 +16,12 @@ function d(e) {
   let t = (0, l.bG)([a.default], () => a.default.getId()),
     n = (0, c.Ay)(t, e.id),
     d = n === c.zF.REQUESTED_TO_SPEAK || n === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
-    [p, h] = r.useState(d);
+    [h, p] = r.useState(d);
   return r.useEffect(() => {
-    h(d)
-  }, [d]), [p, function() {
+    p(d)
+  }, [d]), [h, function() {
     (0, u.Cf)(e.id) ? i.A.showAgeVerificationGetStartedModal({
       entryPoint: s.q1.STAGE_CHANNEL_RAISE_HAND
-    }): (n === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK ? (0, o.e7)(e, true) : (0, o.J7)(e, !p), h(!p))
+    }): (n === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK ? (0, o.e7)(e, true) : (0, o.J7)(e, !h), p(!h))
   }]
 }

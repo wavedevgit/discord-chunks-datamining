@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 923432, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -27,17 +27,17 @@ function A(e) {
   let {
     guildChannels: n,
     jumpToVoiceChannels: i
-  } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), o = (0, u.A)(n.id), p = l.useCallback(e => {
+  } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), o = (0, u.A)(n.id), h = l.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), i()
-  }, [i]), f = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, h.fK)({
-    channels: f,
+  }, [i]), g = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, p.fK)({
+    channels: g,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
     voiceStates: o
   });
   return (0, r.jsxs)(c.DUT, {
     className: s()(m.M0, m.OF),
-    onClick: p,
+    onClick: h,
     children: [(0, r.jsx)(c.HKD, {
       size: "custom",
       className: m.Gs,
@@ -47,7 +47,7 @@ function A(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       className: m.pM,
-      children: g.intl.format(g.t["fDlr+F"], {
+      children: f.intl.format(f.t["fDlr+F"], {
         count: b.length
       })
     }), (0, r.jsx)(d.A, {
@@ -69,20 +69,20 @@ function y(e) {
     jumpToVoiceChannels: u,
     jumpToChannel: d
   } = e, {
-    bottomBar: h,
+    bottomBar: p,
     topBar: y
-  } = (0, o.cf)([f.A], () => f.A.getUnreadStateForGuildId(n.id)), _ = (0, o.bG)([p.A], () => p.A.isFocused()), {
-    mode: O,
-    mentionCount: j,
-    targetChannelId: v
-  } = "bottom" === t ? h : y, x = O === f.k.HIDDEN, E = (0, c.zhh)({
+  } = (0, o.cf)([g.A], () => g.A.getUnreadStateForGuildId(n.id)), O = (0, o.bG)([h.A], () => h.A.isFocused()), {
+    mode: _,
+    mentionCount: x,
+    targetChannelId: j
+  } = "bottom" === t ? p : y, v = _ === g.k.HIDDEN, E = (0, c.zhh)({
     to: {
-      transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: v ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, _ ? "respect-motion-settings" : "animate-never"), C = l.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != v && d(v)
-  }, [d, v]);
+  }, O ? "respect-motion-settings" : "animate-never"), C = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null != j && d(j)
+  }, [d, j]);
   return (0, r.jsx)("div", {
     className: s()(m.kL, {
       [m.Mn]: "top" === t,
@@ -91,10 +91,10 @@ function y(e) {
     children: (0, r.jsx)(a.animated.div, {
       className: m.pK,
       style: E,
-      "aria-hidden": x,
-      children: O === f.k.HIDDEN ? (0, r.jsx)("div", {
+      "aria-hidden": v,
+      children: _ === g.k.HIDDEN ? (0, r.jsx)("div", {
         className: s()(m.M0, m.Te)
-      }) : O === f.k.UNREAD ? (0, r.jsxs)(c.DUT, {
+      }) : _ === g.k.UNREAD ? (0, r.jsxs)(c.DUT, {
         className: m.M0,
         onClick: C,
         children: ["bottom" === t ? (0, r.jsx)(c.abt, {
@@ -113,20 +113,20 @@ function y(e) {
           variant: "text-xs/semibold",
           color: "interactive-text-default",
           className: m.pM,
-          children: g.intl.string(g.t.FCRiT3)
+          children: f.intl.string(f.t.FCRiT3)
         })]
-      }) : O === f.k.MENTIONS ? (0, r.jsx)(c.DUT, {
+      }) : _ === g.k.MENTIONS ? (0, r.jsx)(c.DUT, {
         className: s()(m.M0, m.vU),
         onClick: C,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "badge-text-brand",
           className: m.pM,
-          children: g.intl.format(g.t.EQcLyp, {
-            count: j
+          children: f.intl.format(f.t.EQcLyp, {
+            count: x
           })
         })
-      }) : O === f.k.VOICE_CHANNELS ? (0, r.jsx)(A, {
+      }) : _ === g.k.VOICE_CHANNELS ? (0, r.jsx)(A, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: i

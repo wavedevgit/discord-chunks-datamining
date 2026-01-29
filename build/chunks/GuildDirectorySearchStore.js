@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 938764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./321073.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -43,8 +43,8 @@ function c(e, t) {
 }
 let u = [],
   d = {},
-  p = {};
-class h extends(r = Chunk311907.Ay.Store) {
+  h = {};
+class p extends(r = Chunk311907.Ay.Store) {
   getSearchState(e) {
     var t;
     return null != (t = d[e]) ? t : {
@@ -54,16 +54,16 @@ class h extends(r = Chunk311907.Ay.Store) {
   }
   getSearchResults(e, t) {
     var n, r, l;
-    return null != (n = null == (l = p[e]) || null == (r = l[t]) ? true : r.results) ? n : u
+    return null != (n = null == (l = h[e]) || null == (r = l[t]) ? true : r.results) ? n : u
   }
   shouldFetch(e, t) {
     var n, r;
-    let l = null == (r = p[e]) || null == (n = r[t]) ? true : n.lastSearchedAt;
+    let l = null == (r = h[e]) || null == (n = r[t]) ? true : n.lastSearchedAt;
     return null == l || Date.now() - l > 12e4
   }
 }
-a(h, "displayName", "GuildDirectorySearchStore");
-let f = new h(Chunk73153.h, {
+a(p, "displayName", "GuildDirectorySearchStore");
+let g = new p(Chunk73153.h, {
   GUILD_DIRECTORY_SEARCH_START: function(e) {
     let {
       channelId: t,
@@ -87,7 +87,7 @@ let f = new h(Chunk73153.h, {
     r.forEach(e => {
       let t = (0, s.mR)(e);
       l.push(t)
-    }), p[t] = c(o({}, p[t]), {
+    }), h[t] = c(o({}, h[t]), {
       [n]: {
         results: (0, s.DN)(l),
         lastSearchedAt: Date.now()
@@ -128,10 +128,10 @@ let f = new h(Chunk73153.h, {
       guildId: r
     } = e, l = null == (t = d[n]) ? true : t.mostRecentQuery;
     if (null == l) return;
-    let i = p[n][l];
+    let i = h[n][l];
     if (null == i) return;
     let s = i.results.filter(e => e.guildId !== r);
-    p[n] = c(o({}, p[n]), {
+    h[n] = c(o({}, h[n]), {
       [d[n].mostRecentQuery]: c(o({}, i), {
         results: s
       })

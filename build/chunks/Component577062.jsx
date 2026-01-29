@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 577062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -17,10 +17,10 @@ function d(e) {
     selfMute: t,
     serverMute: n,
     suppress: d,
-    centerButton: p = false,
-    awaitingRemote: h,
-    onMouseEnter: f,
-    onMouseLeave: g,
+    centerButton: h = false,
+    awaitingRemote: p,
+    onMouseEnter: g,
+    onMouseLeave: f,
     onClick: m
   } = e, b = function(e, t) {
     if (null == e) return {};
@@ -40,12 +40,12 @@ function d(e) {
     return i
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]), {
     parentAnalyticsLocation: A
-  } = (0, s.Ay)(), y = t || n || d, _ = p ? u.l : u.A, O = (0, a.A)(t, n, d, h), {
-    events: j,
-    play: v,
-    Component: x
-  } = (0, c.q)(y), E = n || d ? i.O1p : x;
-  return l.useEffect(() => () => v(), [v, y]), (0, r.jsx)(_, function(e) {
+  } = (0, s.Ay)(), y = t || n || d, O = h ? u.l : u.A, _ = (0, a.A)(t, n, d, p), {
+    events: x,
+    play: j,
+    Component: v
+  } = (0, c.q)(y), E = n || d ? i.O1p : v;
+  return l.useEffect(() => () => j(), [j, y]), (0, r.jsx)(O, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -67,12 +67,12 @@ function d(e) {
     isTrayButton: true,
     caretColor: y ? "red" : "primaryDark",
     color: y ? "red" : true,
-    label: O,
+    label: _,
     onMouseEnter: e => {
-      null == f || f(e), j.onMouseEnter()
+      null == g || g(e), x.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == g || g(e), j.onMouseLeave()
+      null == f || f(e), x.onMouseLeave()
     },
     onClick: e => {
       null == m || m(e), (0, o.X)(A, o.O.MIC, t)

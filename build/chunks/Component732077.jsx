@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 732077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,13 +15,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk108197 = require("./108197.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk316945 = require("./316945.js");
-let g = Chunk64700.memo(function(e) {
+let f = Chunk64700.memo(function(e) {
   let {
     channel: t,
     selectedChannel: n,
     selectedVoiceChannelId: l,
     sortedThreadIds: i,
-    withGuildIcon: g
+    withGuildIcon: f
   } = e, {
     density: m
   } = (0, o.wRf)(), b = (0, a.yK)([c.A], () => i.map(e => c.A.getChannel(e)).filter(d.Vq), [i]), A = (0, a.bG)([u.Ay], () => {
@@ -31,25 +31,25 @@ let g = Chunk64700.memo(function(e) {
     return null == t || 0 === t.length ? 0 : l !== e.id ? 40 : 32 * t.length + 8
   });
   return (0, r.jsx)("li", {
-    className: f.kL,
+    className: g.kL,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
+      "aria-label": p.intl.formatToPlainString(p.t.EiyIi6, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(f.eh, {
-          [f.ET]: g
+        className: s()(g.eh, {
+          [g.ET]: f
         }),
         style: {
           bottom: ("cozy" === m ? 28 : 24) + A
         }
-      }), b.map((e, t) => (0, r.jsx)(p.A, {
+      }), b.map((e, t) => (0, r.jsx)(h.A, {
         thread: e,
         isSelectedChannel: (null == n ? true : n.id) === e.id,
         isSelectedVoice: l === e.id,
         isLast: t === b.length - 1,
-        withGuildIcon: g
+        withGuildIcon: f
       }, e.id))]
     })
   })

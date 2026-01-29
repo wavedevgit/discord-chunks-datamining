@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 328808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -85,7 +85,7 @@ function I(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(O.Ay.Icon, S(C({}, e), {
+      return (0, r.jsx)(_.Ay.Icon, S(C({}, e), {
         ref: s,
         onClick: a,
         tooltip: n ? null : c,
@@ -102,10 +102,10 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: l
-  } = e, i = (0, c.A)(t), O = (0, f.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, _.A)({
+  } = e, i = (0, c.A)(t), _ = (0, g.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, O.A)({
     id: t.id,
     label: E.intl.string(E.t.DQ797g)
-  }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, p.A)(t, "Toolbar Overflow"), w = (0, g.A)(t), R = (0, h.A)(t), D = (0, y.A)(t), M = (0, m.A)(t), L = j.SY.useSetting(), k = (0, a.bG)([v.A], () => !s().isEmpty(v.A.getVoiceStatesForChannel(t.id)));
+  }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, h.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, p.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = x.SY.useSetting(), k = (0, a.bG)([j.A], () => !s().isEmpty(j.A.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.W1t, {
     "data-menu-needs-review": true,
     navId: "thread-context",
@@ -115,15 +115,15 @@ function N(e) {
     children: [(0, r.jsxs)(o.rXV, {
       children: [P, R]
     }), (0, r.jsxs)(o.rXV, {
-      children: [S, w, C, L && !k ? (0, r.jsx)(o.Drp, {
+      children: [S, w, C, M && !k ? (0, r.jsx)(o.Drp, {
         id: "open",
         label: E.intl.string(E.t.bX7EaG),
         action: function() {
-          (0, x.JA)(t)
+          (0, v.JA)(t)
         }
-      }) : null, M]
+      }) : null, L]
     }), (0, r.jsxs)(o.rXV, {
-      children: [D, i, O, T]
+      children: [D, i, _, T]
     }), (0, r.jsxs)(o.rXV, {
       children: [N, I]
     })]

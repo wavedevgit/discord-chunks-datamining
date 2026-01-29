@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 984624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -22,18 +22,18 @@ function b(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, b = (0, a.Us)(), A = (0, g.Qs)(t), y = (0, i.bG)([d.A], () => d.A.getChannel(t), [t]), {
-    canManageGuildEvent: _
-  } = (0, o.nr)(y), O = _(A), j = l.useRef(null);
+  } = e, b = (0, a.Us)(), A = (0, f.Qs)(t), y = (0, i.bG)([d.A], () => d.A.getChannel(t), [t]), {
+    canManageGuildEvent: O
+  } = (0, o.nr)(y), _ = O(A), x = l.useRef(null);
   if (null == A) return null;
-  let v = () => {
-      null != y && (0, f.A)(y) ? (0, p.Py)(y, b) : n()
+  let j = () => {
+      null != y && (0, g.A)(y) ? (0, h.Py)(y, b) : n()
     },
-    x = () => {
-      h.A.endEvent(A.id, A.guild_id)
+    v = () => {
+      p.A.endEvent(A.id, A.guild_id)
     };
-  return O ? (0, r.jsx)(s.YNO, {
-    targetElementRef: j,
+  return _ ? (0, r.jsx)(s.YNO, {
+    targetElementRef: x,
     renderPopout: e => {
       let {
         closePopout: t
@@ -48,7 +48,7 @@ function b(e) {
           children: (0, r.jsx)(s.Drp, {
             id: "end-voice-event",
             color: "danger",
-            action: x,
+            action: v,
             label: m.intl.string(m.t.qaYzPA),
             leadingAccessory: {
               type: "icon",
@@ -67,9 +67,9 @@ function b(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(u.A, {
-        buttonRef: j,
+        buttonRef: x,
         label: m.intl.string(m.t["6vrfgt"]),
-        onClick: v,
+        onClick: j,
         onPopoutClick: t
       })
     }

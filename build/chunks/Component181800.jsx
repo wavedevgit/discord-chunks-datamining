@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 181800, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => O
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,18 +24,18 @@ function y(e) {
   let {
     onActivate: t,
     children: n
-  } = e, o = l.useRef(null), d = (0, i.bG)([u.A], () => u.A.hasJoinRequestCoackmark()), p = l.useCallback(() => {
+  } = e, o = l.useRef(null), d = (0, i.bG)([u.A], () => u.A.hasJoinRequestCoackmark()), h = l.useCallback(() => {
     c.Ay.clearCoachmark()
-  }, []), h = (0, a.A)(d), f = l.useRef(null);
+  }, []), p = (0, a.A)(d), g = l.useRef(null);
   return l.useEffect(() => {
-    if (d && d !== h) {
+    if (d && d !== p) {
       var e, n, r, l, i;
-      t(), null == (i = f.current) || null == (l = i.ref) || null == (r = l.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (i = g.current) || null == (l = i.ref) || null == (r = l.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [f, d, h, t]), (0, r.jsxs)("div", {
+  }, [g, d, p, t]), (0, r.jsxs)("div", {
     className: A.kL,
     children: [(0, r.jsx)(s.YNO, {
-      ref: f,
+      ref: g,
       targetElementRef: o,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function y(e) {
             size: "sm",
             text: b.intl.string(b.t["4r+amb"]),
             fullWidth: true,
-            onClick: p
+            onClick: h
           })]
         }), (0, r.jsx)("div", {
           className: A.ed
@@ -104,35 +104,35 @@ function y(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   let {
     onActivate: t
-  } = e, [n, _] = l.useState(false), O = (0, i.bG)([d.A], () => d.A.getGuildId()), j = (0, i.bG)([u.A], () => u.A.hasFetchedRequestToJoinGuilds), v = (0, f.A)(), x = (0, a.A)(O), E = l.useMemo(() => {
-    let e = (0, h.xW)({
-      folderId: p.U.PENDING_JOIN_REQUESTS_FOLDER,
+  } = e, [n, O] = l.useState(false), _ = (0, i.bG)([d.A], () => d.A.getGuildId()), x = (0, i.bG)([u.A], () => u.A.hasFetchedRequestToJoinGuilds), j = (0, g.A)(), v = (0, a.A)(_), E = l.useMemo(() => {
+    let e = (0, p.xW)({
+      folderId: h.U.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of v) e.children.push((0, h.EL)(t, e.id));
+    for (let t of j) e.children.push((0, p.EL)(t, e.id));
     return e
-  }, [v, n]);
+  }, [j, n]);
   l.useEffect(() => {
-    n && !j && o.A.fetchRequestToJoinGuilds()
-  }, [n, j]);
-  let C = null != O && v.includes(O);
+    n && !x && o.A.fetchRequestToJoinGuilds()
+  }, [n, x]);
+  let C = null != _ && j.includes(_);
   return (l.useEffect(() => {
-    !n && C && x !== O && _(true)
-  }, [n, C, x, O]), 0 === v.length) ? null : (0, r.jsx)(y, {
+    !n && C && v !== _ && O(true)
+  }, [n, C, v, _]), 0 === j.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
-    children: (0, r.jsx)(g.A, {
+    children: (0, r.jsx)(f.A, {
       folderNode: E,
       expanded: n,
       selected: C,
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
-        _(!n), c.Ay.clearCoachmark()
+        O(!n), c.Ay.clearCoachmark()
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
@@ -143,7 +143,7 @@ function _(e) {
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== h.PJ.GUILD ? null : (0, r.jsx)(m.A, {
+        return e.type !== p.PJ.GUILD ? null : (0, r.jsx)(m.A, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

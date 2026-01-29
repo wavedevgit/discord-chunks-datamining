@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 61939, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => d
@@ -35,20 +35,20 @@ function d(e, t) {
     location: "trackMentionsOnInitialUnreadChannelLoad"
   });
   if (!d) return;
-  let p = i.Ay.ackMessageId(e.id),
-    h = null != p;
-  if (null == p) {
+  let h = i.Ay.ackMessageId(e.id),
+    p = null != h;
+  if (null == h) {
     let t = l.A.getGuild(e.guild_id);
-    null != t && null != t.joinedAt && (p = o.default.fromTimestamp(t.joinedAt.getTime()))
+    null != t && null != t.joinedAt && (h = o.default.fromTimestamp(t.joinedAt.getTime()))
   }
-  let f = 0;
+  let g = 0;
   t.forAll(e => {
-    o.default.compare(e.id, p) > 0 && (0, i.Wm)(e, n) && f++
+    o.default.compare(e.id, h) > 0 && (0, i.Wm)(e, n) && g++
   }), a.default.track(c.HAw.CHANNEL_WITH_UNREAD_MENTIONS_LOADED, {
     channel_id: e.id,
     channel_type: e.type,
     total_badge_count: r,
-    loaded_mention_count: f,
-    has_previous_ack: h
+    loaded_mention_count: g,
+    has_previous_ack: p
   })
 }

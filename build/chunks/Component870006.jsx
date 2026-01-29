@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 870006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => O
+  u: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -51,16 +51,16 @@ function y(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   var t, n;
   let {
     guild: l
   } = e, {
     analyticsLocations: c
-  } = (0, a.Ay)(s.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.j8)({
-    guildId: null != (t = null == l ? true : l.id) ? t : f.dJq,
+  } = (0, a.Ay)(s.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, p.j8)({
+    guildId: null != (t = null == l ? true : l.id) ? t : g.dJq,
     analyticsLocations: c
-  }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), g = d ? b.intl.string(b.t["/PGQf0"]) : b.intl.string(b.t.WikgZ1);
+  }), h = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), f = d ? b.intl.string(b.t["/PGQf0"]) : b.intl.string(b.t.WikgZ1);
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(o._, {
       bannerIcon: (0, r.jsx)(i._mZ, {
@@ -71,13 +71,13 @@ function _(e) {
       bannerHeader: b.intl.format(b.t.kcYdTq, {
         guildName: null != (n = null == l ? true : l.name) ? n : ""
       }),
-      bannerSubtext: p,
+      bannerSubtext: h,
       textStyles: A.cI,
       headerStyles: A.U_,
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
-        text: g,
+        text: f,
         onClick: () => {
           u()
         }
@@ -86,19 +86,19 @@ function _(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, l.bG)([u.default, d.Ay], () => {
     if (null == t) return new Set;
     let e = u.default.getId();
-    return (0, p.wj)(d.Ay.getMember(t.id, e))
+    return (0, h.wj)(d.Ay.getMember(t.id, e))
   }, [t]);
-  return n.has(g.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(g.D.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(_, {
+  return n.has(f.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(f.D.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(O, {
     guild: t
-  }) : n.has(g.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(y, {
+  }) : n.has(f.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(y, {
     guild: t
-  }) : (0, r.jsx)(_, {
+  }) : (0, r.jsx)(O, {
     guild: t
   })
 }

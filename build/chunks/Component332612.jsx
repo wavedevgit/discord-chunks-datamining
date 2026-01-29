@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 332612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => A
+  L: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,35 +20,35 @@ var Chunk657331 = require("./657331.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk32086 = require("./32086.js");
 
-function b(e) {
+function f(e) {
   let {
     userId: t,
     count: n
   } = e, {
     analyticsLocations: u
-  } = (0, c.Ay)(), b = (0, l.bG)([_.default], () => _.default.getUser(t)), h = m.Ay.getFormattedName(b), A = i.useCallback(() => {
+  } = (0, c.Ay)(), f = (0, l.bG)([p.default], () => p.default.getUser(t)), b = m.Ay.getFormattedName(f), h = i.useCallback(() => {
     (0, d.kj)(t)
-  }, [t]), E = i.useCallback(() => (0, p.openUserProfileModal)({
+  }, [t]), E = i.useCallback(() => (0, _.openUserProfileModal)({
     userId: t,
     sourceAnalyticsLocations: u
   }), [t, u]);
   return i.useEffect(() => {
     (0, a.wz)(t)
   }, [t]), (0, r.jsxs)("div", {
-    className: f.uW,
-    children: [null != b && (0, r.jsx)(o.A, {
-      className: f.my,
-      user: b,
+    className: A.uW,
+    children: [null != f && (0, r.jsx)(o.A, {
+      className: A.my,
+      user: f,
       size: s._3J.SIZE_40
     }), (0, r.jsxs)("div", {
-      className: f.Qq,
+      className: A.Qq,
       children: [(0, r.jsx)(s.DUT, {
-        className: f.Xh,
+        className: A.Xh,
         onClick: E,
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "interactive-text-active",
-          children: h
+          children: b
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
@@ -58,8 +58,8 @@ function b(e) {
         })
       })]
     }), (0, r.jsx)(s.DUT, {
-      onClick: A,
-      className: f.Qz,
+      onClick: h,
+      className: A.Qz,
       children: (0, r.jsx)(s.ucK, {
         size: "xs"
       })
@@ -67,7 +67,7 @@ function b(e) {
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     className: t,
     userId: n,
@@ -79,7 +79,7 @@ function h(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsxs)("div", {
-      className: f.Qq,
+      className: A.Qq,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "interactive-text-active",
@@ -92,7 +92,7 @@ function h(e) {
         children: o
       })]
     }), (0, r.jsx)(s.DUT, {
-      className: f.Kk,
+      className: A.Kk,
       onClick: c,
       children: (0, r.jsx)(s.PGe, {
         size: "md",
@@ -102,22 +102,22 @@ function h(e) {
   })
 }
 
-function A(e) {
+function h(e) {
   let {
     userId: t
   } = e, n = (0, u.k)(t);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(f, {
       userId: t,
       count: n.length
     }), n.map((e, l) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(h, {
-        className: f.nM,
+      children: [(0, r.jsx)(b, {
+        className: A.nM,
         userId: t,
         index: l,
         verification: e
       }), l !== n.length - 1 && (0, r.jsx)("div", {
-        className: f.yF
+        className: A.yF
       })]
     }, "".concat(l, "-").concat(e.timestamp)))]
   })

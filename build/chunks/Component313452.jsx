@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 313452, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -68,7 +68,7 @@ let w = [Chunk849077.Ur.UNREAD, Chunk849077.Ur.TODAY, Chunk849077.Ur.YESTERDAY, 
 function R() {
   let {
     analyticsLocations: e
-  } = (0, f.Ay)(h.A.NOTIFICATIONS_INBOX);
+  } = (0, g.Ay)(p.A.NOTIFICATIONS_INBOX);
   return (0, r.jsx)("div", {
     className: N.y7,
     children: (0, r.jsxs)(d.BJc, {
@@ -92,7 +92,7 @@ function R() {
         })]
       }), (0, r.jsx)(d.Button, {
         variant: "secondary",
-        onClick: () => (0, j.tZ)(e),
+        onClick: () => (0, x.tZ)(e),
         text: I.intl.string(S.default.klSpfs)
       })]
     })
@@ -104,45 +104,45 @@ function D(e) {
       messages: n,
       unreadMessages: i,
       loadMore: a,
-      renderLoadingState: h,
-      renderMessageGroup: f,
+      renderLoadingState: p,
+      renderMessageGroup: g,
       scrollerClassName: S,
       className: I,
       listName: D,
-      ignoreGrouping: M = false
+      ignoreGrouping: L = false
     } = e,
-    L = (0, y.op)(),
+    M = (0, y.op)(),
     k = l.useRef(null),
-    G = (0, p.A)(D, k),
+    G = (0, h.A)(D, k),
     {
       entrypoint: U,
-      notificationCenterVariant: B
+      notificationCenterVariant: V
     } = (0, A.X8)({
       location: "NotificationsInboxSidebarList"
     }),
     {
-      isLoading: V,
-      isLoadingComplete: F,
-      hasLoadedEver: H
-    } = (0, u.cf)([O.A], () => ({
-      isLoading: O.A.isLoading,
-      isLoadingComplete: O.A.isLoadingComplete,
-      hasLoadedEver: O.A.hasLoadedEver
+      isLoading: B,
+      isLoadingComplete: H,
+      hasLoadedEver: F
+    } = (0, u.cf)([_.A], () => ({
+      isLoading: _.A.isLoading,
+      isLoadingComplete: _.A.isLoadingComplete,
+      hasLoadedEver: _.A.hasLoadedEver
     })),
-    K = !H && V,
+    K = !F && B,
     {
-      messageCategoryOpenStates: W,
-      toggleOpenState: z
-    } = (0, _.A)(),
-    Y = (t = (0, u.yK)([O.A], () => {
+      messageCategoryOpenStates: Y,
+      toggleOpenState: W
+    } = (0, O.A)(),
+    z = (t = (0, u.yK)([_.A], () => {
       var e;
-      return null != (e = O.A.getNotifyingChannelIds()) ? e : []
-    }), (0, u.bG)([O.A, g.Ay], () => {
-      let e = O.A.getChannelInfoMap();
+      return null != (e = _.A.getNotifyingChannelIds()) ? e : []
+    }), (0, u.bG)([_.A, f.Ay], () => {
+      let e = _.A.getChannelInfoMap();
       for (let r of t) {
         var n;
         let t = e[r];
-        if ((null == t || t.loadState === E.Ve.UNLOADED) && null != (n = g.Ay.hasUnread(r)) && n) returntrue
+        if ((null == t || t.loadState === E.Ve.UNLOADED) && null != (n = f.Ay.hasUnread(r)) && n) returntrue
       }
       returnfalse
     }, [t]));
@@ -193,7 +193,7 @@ function D(e) {
       return (n.length > 0 || i.length > 0) && (o().each(i, e => {
         e.kind === E.yL.MENTION ? t[E.Ur.UNREAD].push(e) : e.channelId in r[E.Ur.UNREAD] ? r[E.Ur.UNREAD][e.channelId].push(e) : r[E.Ur.UNREAD][e.channelId] = [e]
       }), o().each(n, e => {
-        let n = (0, j.i7)(e);
+        let n = (0, x.i7)(e);
         e.kind === E.yL.MENTION ? t[n].push(e) : e.channelId in r[n] ? r[n][e.channelId].push(e) : r[n][e.channelId] = [e]
       }), o().each(w, n => {
         [...Object.values(r[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => b.default.compare(t[0].id, e[0].id)).forEach(t => {
@@ -201,39 +201,39 @@ function D(e) {
         })
       })), e
     }, [n, i]),
-    J = 0 === n.length && 0 === i.length && F,
-    Q = 0 === n.length && 0 === i.length && !H && V,
+    J = 0 === n.length && 0 === i.length && H,
+    Q = 0 === n.length && 0 === i.length && !F && B,
     Z = l.useMemo(() => {
       let e = [];
-      return Q ? e.push(h()) : J ? e.push((0, r.jsx)(R, {}, "empty-state")) : M ? (e.push(...i.map(e => f([e], true))), e.push(...n.map(e => f([e], false)))) : o().each(w, t => {
+      return Q ? e.push(p()) : J ? e.push((0, r.jsx)(R, {}, "empty-state")) : L ? (e.push(...i.map(e => g([e], true))), e.push(...n.map(e => g([e], false)))) : o().each(w, t => {
         0 !== X[t].length && (e.push((0, r.jsx)(P, {
           group: t,
-          isOpen: W[t],
+          isOpen: Y[t],
           toggleOpenedState: () => {
-            let e = W[t];
-            z(t), (0, y.Ut)({
+            let e = Y[t];
+            W(t), (0, y.Ut)({
               section: t,
               enabled: !e,
-              viewId: L
+              viewId: M
             })
           }
-        }, t)), W[t] && e.push(...X[t].map(e => f(e, t === E.Ur.UNREAD))))
+        }, t)), Y[t] && e.push(...X[t].map(e => g(e, t === E.Ur.UNREAD))))
       }), e
-    }, [n, i, h, W, z, X, M, f, J, Q, L]),
+    }, [n, i, p, Y, W, X, L, g, J, Q, M]),
     $ = Z[Z.length - 1],
     ee = l.isValidElement($) && $.type === P,
-    et = (0, v.S)(e => e.setInboxReadState);
+    et = (0, j.S)(e => e.setInboxReadState);
   l.useEffect(() => {
     Q || et(0 === X.UNREAD.length)
   }, [X, Q, et]);
-  let en = (n.length > 0 || i.length > 0) && null != a && V;
+  let en = (n.length > 0 || i.length > 0) && null != a && B;
   ! function(e) {
     let {
       loadingInitial: t,
       messagesByCategory: n
     } = e, r = l.useRef(false), i = n.UNREAD.length > 0, {
       setOpenStateFromUnreads: s
-    } = (0, _.A)();
+    } = (0, O.A)();
     l.useEffect(() => {
       t || r.current || (s(i), r.current = true)
     }, [s, i, t])
@@ -243,27 +243,27 @@ function D(e) {
   });
   let er = l.useCallback(() => {
     var e;
-    let t = w.filter(e => W[e]).reduce((e, t) => e + X[t].length, 0),
+    let t = w.filter(e => Y[e]).reduce((e, t) => e + X[t].length, 0),
       n = null == (e = k.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
-  }, [W, X]);
+  }, [Y, X]);
   l.useEffect(() => {
-    Q || V || 0 >= er() || (!ee || Y) && (null == a || a(E.VA.FILL_SCROLLER))
-  }, [er, a, Q, V, ee, Y]);
+    Q || B || 0 >= er() || (!ee || z) && (null == a || a(E.VA.FILL_SCROLLER))
+  }, [er, a, Q, B, ee, z]);
   let el = l.useMemo(() => {
     let e = Math.min(Math.max(2, er()), 20);
-    return (0, r.jsx)(x.A, {
+    return (0, r.jsx)(v.A, {
       withHeader: false,
       size: e
     })
   }, [er]);
   return (0, y.Hi)({
-    notificationCenterVariant: B,
+    notificationCenterVariant: V,
     entrypoint: U,
     messages: n,
     unreadMessages: i,
     messagesByCategory: X,
-    viewId: L
+    viewId: M
   }), (0, r.jsx)("div", {
     className: s()(I, N.KQ),
     onClick: T,

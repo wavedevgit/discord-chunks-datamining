@@ -2,8 +2,8 @@
 /** chunk id: 747189, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  V: () => p,
-  t: () => h
+  V: () => h,
+  t: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,24 +16,24 @@ var Chunk397927 = require("./397927.js"),
   Chunk672396 = require("./672396.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h() {
+function p() {
   let {
     trackView: e,
     trackClick: t
   } = (0, s.Y)(d.KS.ClipsReminderNotification, {
     notif_type: d.KS.ClipsReminderNotification
-  }), n = l.Ay.getKeybindForAction(c.hCu.SAVE_CLIP), h = (0, a.TD)();
-  if (null == n || !h) return null;
-  let p = o.dI(n.shortcut, true);
+  }), n = l.Ay.getKeybindForAction(c.hCu.SAVE_CLIP), p = (0, a.TD)();
+  if (null == n || !p) return null;
+  let h = o.dI(n.shortcut, true);
   return {
     title: u.intl.format(u.t.S5uhCN, {
-      keybind: p,
+      keybind: h,
       keybindHook: () => (0, i.jsx)("span", {
         style: {
           display: "inline-block"
         },
         children: (0, i.jsx)(r.e7I, {
-          shortcut: p
+          shortcut: h
         })
       })
     }),
@@ -50,7 +50,7 @@ function h() {
   }
 }
 
-function p(e) {
+function h(e) {
   let {
     trackView: t,
     trackClick: n

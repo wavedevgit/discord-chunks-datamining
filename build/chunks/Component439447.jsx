@@ -1,9 +1,9 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 439447, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => y
 }), require("./65821.js"), require("./896048.js");
-var r, i, Chunk627968 = require("./627968.js"),
+var r, l, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk499979 = require("./499979.js"),
   Chunk451988 = require("./451988.js"),
@@ -31,7 +31,7 @@ function d(e) {
   return e
 }
 var p = ((r = p || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
-  f = ((i = f || {}).START = "START", i.END = "END", i.TIME = "TIME", i);
+  f = ((l = f || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
 let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     time: t
   }, n)),
@@ -162,7 +162,7 @@ let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     }
   };
 
-function _(e) {
+function y(e) {
   var t, n;
   return n = class extends(t = a.PureComponent) {
     componentDidMount() {
@@ -187,8 +187,8 @@ function _(e) {
       } = this.props;
       if (null != n) return n / 1e3 / 60;
       let r = Date.now(),
-        i = 0;
-      return null != e ? i = r - e : null != t && (i = r - t), Math.abs(i) / 1e3 / 60
+        l = 0;
+      return null != e ? l = r - e : null != t && (l = r - t), Math.abs(l) / 1e3 / 60
     }
     getTimeUnit(e, t, n) {
       let r = (0, s.Ul)(e, e => (function(e, t, n) {
@@ -214,39 +214,39 @@ function _(e) {
       var t, n;
       let r = this.props,
         {
-          location: i,
+          location: l,
           messageProps: a,
           isApplicationStreaming: o
         } = r,
         c = function(e, t) {
           if (null == e) return {};
-          var n, r, i, l = {};
+          var n, r, l, i = {};
           if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-            return l
+            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+            return i
           }
-          if (l = function(e, t) {
+          if (i = function(e, t) {
               if (null == e) return {};
-              var n, r, i = {},
-                l = Object.getOwnPropertyNames(e);
-              for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-              return i
+              var n, r, l = {},
+                i = Object.getOwnPropertyNames(e);
+              for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+              return l
             }(e, t), Object.getOwnPropertySymbols)
-            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-          return l
+            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+          return i
         }(r, ["location", "messageProps", "isApplicationStreaming"]),
         {
           time: u
         } = this.state,
         p = this.getType();
       if (null == p) return null;
-      let f = this.getTimeUnit(u, i, p),
-        m = g[i][p];
+      let f = this.getTimeUnit(u, l, p),
+        m = g[l][p];
       if (null == m) return null;
-      let _ = m[f],
-        y = Math.floor((0, s.eZ)(u, f));
-      return (0, l.jsx)(e, (t = d({}, c), n = n = {
-        children: null == _ ? true : _(y, a, o)
+      let y = m[f],
+        b = Math.floor((0, s.eZ)(u, f));
+      return (0, i.jsx)(e, (t = d({}, c), n = n = {
+        children: null == y ? true : y(b, a, o)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

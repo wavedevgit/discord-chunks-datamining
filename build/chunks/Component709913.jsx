@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 709913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,7 +35,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,26 +48,26 @@ function f(e, t) {
   }), e
 }
 
-function b(e) {
+function f(e) {
   let {
     backupCodes: t,
     hasTOTPEnabled: n,
-    currentUser: b
-  } = e, h = i.useCallback(e => {
-    (0, l.qfG)(t => (0, r.jsx)(c.A, f(g({}, t), {
+    currentUser: f
+  } = e, b = i.useCallback(e => {
+    (0, l.qfG)(t => (0, r.jsx)(c.A, A(g({}, t), {
       password: e
     })), {
       stackingBehavior: "stack"
     })
-  }, []), A = i.useCallback(() => {
-    (0, l.qfG)(e => (0, r.jsx)(u.default, f(g({}, e), {
+  }, []), h = i.useCallback(() => {
+    (0, l.qfG)(e => (0, r.jsx)(u.default, A(g({}, e), {
       handleSubmit: e => s.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
-        h(e)
+        b(e)
       }),
       title: m.intl.string(m.t.PsQmzU),
       actionText: m.intl.string(m.t.ajkYcF)
     })))
-  }, [h]), E = i.useCallback(() => {
+  }, [b]), E = i.useCallback(() => {
     let e = t.map(e => {
         let {
           consumed: t,
@@ -76,10 +76,10 @@ function b(e) {
         return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(used)" : "")
       }).join("\r\n"),
       n = m.intl.formatToPlainString(m.t["uYWwh/"], {
-        email: b.email
+        email: f.email
       });
     return "".concat(n, "\r\n\r\n").concat(e)
-  }, [t, b.email]), x = i.useMemo(() => t.length > 0 ? (0, r.jsx)(o.A, {
+  }, [t, f.email]), O = i.useMemo(() => t.length > 0 ? (0, r.jsx)(o.A, {
     fileContents: E,
     contentType: "text/plain",
     fileName: "discord_backup_codes.txt",
@@ -89,14 +89,14 @@ function b(e) {
       text: m.intl.string(m.t.qZZUy6)
     })
   }) : (0, r.jsx)(d.x, {
-    setting: _.H.ACCOUNT_VIEW_BACKUP_CODES,
+    setting: p.H.ACCOUNT_VIEW_BACKUP_CODES,
     children: (0, r.jsx)(l.Button, {
       variant: "primary",
       size: "sm",
       text: m.intl.string(m.t.xZEzbu),
-      onClick: A
+      onClick: h
     })
-  }), [t.length, E, A]), O = i.useCallback(() => {
+  }), [t.length, E, h]), C = i.useCallback(() => {
     a.A.show({
       title: m.intl.string(m.t["D+aE7g"]),
       body: m.intl.string(m.t.EA4ZEk),
@@ -109,21 +109,21 @@ function b(e) {
     description: m.intl.string(m.t.bQwxib),
     children: (0, r.jsxs)(l.ButtonGroup, {
       size: "sm",
-      children: [x, n && (0, r.jsx)(d.x, {
-        setting: _.H.ACCOUNT_REMOVE_2FA,
+      children: [O, n && (0, r.jsx)(d.x, {
+        setting: p.H.ACCOUNT_REMOVE_2FA,
         children: (0, r.jsx)(l.Button, {
           variant: "critical-secondary",
           size: "sm",
           text: m.intl.string(m.t["D+aE7g"]),
-          onClick: O
+          onClick: C
         })
       }), !n && (0, r.jsx)(d.x, {
-        setting: _.H.ACCOUNT_ENABLE_2FA,
+        setting: p.H.ACCOUNT_ENABLE_2FA,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
           text: m.intl.string(m.t.cDgKte),
-          onClick: p.Ay.enableMFA
+          onClick: _.Ay.enableMFA
         })
       })]
     })

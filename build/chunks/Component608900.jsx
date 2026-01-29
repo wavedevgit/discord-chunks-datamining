@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 608900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk529414 = require("./529414.js");
 
-function p(e) {
+function h(e) {
   let {
     width: t = 24,
     height: n = 24,
@@ -44,14 +44,14 @@ function p(e) {
   })
 }
 
-function h(e) {
+function p(e) {
   let {
     className: t,
     numRequestToSpeak: n
   } = e, l = n > 0;
   return (0, r.jsxs)("div", {
     className: s()(d.v, t),
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(h, {
       isBadged: l
     }), l ? (0, r.jsx)(o.Text, {
       className: d.F,
@@ -61,7 +61,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     toggleRequestToSpeakSidebar: t,
     showRequestToSpeakSidebar: n,
@@ -108,7 +108,7 @@ function f(e) {
     onClick: d,
     label: n ? u.intl.string(u.t.gKGz7A) : u.intl.string(u.t.ImQ4dW),
     className: i,
-    iconComponent: () => (0, r.jsx)(h, {
+    iconComponent: () => (0, r.jsx)(p, {
       numRequestToSpeak: s,
       className: i
     })

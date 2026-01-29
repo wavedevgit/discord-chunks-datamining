@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 850729, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => L
+  C: () => M
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -47,32 +47,32 @@ let D = {
   }
 };
 
-function M(e) {
+function L(e) {
   var t, n;
   let {
     selected: s,
     user: d,
-    badge: h,
-    link: f,
+    badge: p,
+    link: g,
     showProgressBadge: b
-  } = e, [A, y] = l.useState(false), [_, O] = l.useState(false), [j, v] = l.useState(null), [x, T] = l.useState(0), M = (0, i.Vd)("home"), L = (0, p.fy)().activePanel === p.HP.APP_ICON, k = () => {
-    v(null), T(0), clearTimeout(j)
+  } = e, [A, y] = l.useState(false), [O, _] = l.useState(false), [x, j] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, h.fy)().activePanel === h.HP.APP_ICON, k = () => {
+    j(null), T(0), clearTimeout(x)
   };
   if (null == d) return null;
   let G = w.intl.string(w.t.YUU0RF);
-  _ && (G = a.w.get(N.wqg) ? w.intl.string(w.t["nkq1l+"]) : w.intl.string(w.t.Be8Q5E));
+  O && (G = a.w.get(N.wqg) ? w.intl.string(w.t["nkq1l+"]) : w.intl.string(w.t.Be8Q5E));
   let U = null;
   !s && b && (U = (0, r.jsx)(c.A, {
     className: R.Cp,
     determineOwnVisibility: false
   }));
-  let B = s || A || L,
-    V = (0, r.jsx)(o.Qk9, {
+  let V = s || A || M,
+    B = (0, r.jsx)(o.Qk9, {
       selected: true,
-      lowerBadge: h > 0 ? (0, I.wN)(h) : null,
+      lowerBadge: p > 0 ? (0, I.wN)(p) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, o.o6S)(h)
+        width: (0, o.o6S)(p)
       },
       children: (0, r.jsx)(o.jlP, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -95,21 +95,21 @@ function M(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), v(setTimeout(k, 500)), T(x + 1), 15 === x)) {
+          if (!__OVERLAY__ && (null != x && clearTimeout(x), j(setTimeout(k, 500)), T(v + 1), 15 === v)) {
             k();
             let e = !a.w.get(N.wqg);
-            a.w.set(N.wqg, e), e && a.w.set(P.L, true), e ? (0, g.Ak)("discodo") : (0, g.Ak)("user_leave"), O(true), setTimeout(() => {
-              O(false)
+            a.w.set(N.wqg, e), e && a.w.set(P.L, true), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), _(true), setTimeout(() => {
+              _(false)
             }, 1e3)
           }
         },
-        selected: B,
+        selected: V,
         ariaLabel: w.intl.string(w.t.YUU0RF),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": s
-      }, M), n = n = {
+      }, L), n = n = {
         to: {
-          pathname: f,
+          pathname: g,
           state: {
             analyticsSource: {
               page: N.liQ.GUILD_CHANNEL,
@@ -145,25 +145,25 @@ function M(e) {
           hideOnClick: true,
           text: G,
           selected: s,
-          children: V
+          children: B
         })]
       })
     })
   })
 }
 
-function L() {
-  let e = (0, x.q)(),
-    t = (0, s.bG)([j.A, O.A], () => {
-      let e = (0, c.v)(j.A.activeItems, O.A),
+function M() {
+  let e = (0, v.q)(),
+    t = (0, s.bG)([x.A, _.A], () => {
+      let e = (0, c.v)(x.A.activeItems, _.A),
         {
           total: t,
           progress: n
-        } = v.zY(e),
-        r = v.uA(n, t);
+        } = j.zY(e),
+        r = j.uA(n, t);
       return r > 0 && r < 100
     }),
-    n = (0, f.kX)(),
+    n = (0, g.kX)(),
     l = Object.keys(T.TP),
     i = (0, d.A)(),
     {
@@ -174,14 +174,14 @@ function L() {
       unviewedDiscountCount: y.A.getUnacknowledgedDiscountOffers().length
     })),
     u = i.fractionalState === T.xc.NONE ? a + o : 0,
-    p = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
-    g = (0, h.W)(),
-    m = n + u + g,
-    E = m === u && u > 0 && n + g === 0,
-    C = _.A.getHomeLink();
-  return E && (C = N.BVt.APPLICATION_STORE), (0, r.jsx)(M, {
+    h = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
+    f = (0, p.W)(),
+    m = n + u + f,
+    E = m === u && u > 0 && n + f === 0,
+    C = O.A.getHomeLink();
+  return E && (C = N.BVt.APPLICATION_STORE), (0, r.jsx)(L, {
     selected: e,
-    user: p,
+    user: h,
     selectedChannelId: b.A.getChannelId(N.ME),
     badge: m,
     link: C,

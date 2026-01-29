@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 713031, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,12 +18,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function b() {
+function f() {
   let e = (0, l.cf)([o.A], () => o.A.hasConsented(m.YAq.PERSONALIZATION)),
     [t, n] = i.useState(e),
-    b = (0, a.uM)();
+    f = (0, a.uM)();
   return (0, r.jsx)(d.h, {
-    setting: _.H.PRIVACY_DATA_PERSONALIZE_V2,
+    setting: p.H.PRIVACY_DATA_PERSONALIZE_V2,
     children: (0, r.jsx)(u.Ay, {
       title: g.intl.string(g.t.MNKzyg),
       note: g.intl.format(g.t["eQL/Mr"], {
@@ -31,18 +31,18 @@ function b() {
       }),
       value: t,
       onChange: e => {
-        e ? (0, s.U)([m.YAq.PERSONALIZATION], []).catch(p.i).then(() => n(true)) : (0, p.O)({
+        e ? (0, s.U)([m.YAq.PERSONALIZATION], []).catch(_.i).then(() => n(true)) : (0, _.O)({
           header: g.intl.string(g.t["9SNpzv"]),
           confirmText: g.intl.string(g.t["9g5UGw"]),
           cancelText: g.intl.string(g.t["+ZLPw9"]),
           onConfirm: () => {
-            (0, s.U)([], [m.YAq.PERSONALIZATION]).catch(p.i).then(() => n(false))
+            (0, s.U)([], [m.YAq.PERSONALIZATION]).catch(_.i).then(() => n(false))
           },
           body: g.intl.string(g.t.gJvDDh)
         })
       },
-      disabled: b,
-      tooltipText: b ? g.intl.string(f.default["6Af/cw"]) : true
+      disabled: f,
+      tooltipText: f ? g.intl.string(A.default["6Af/cw"]) : true
     })
   })
 }

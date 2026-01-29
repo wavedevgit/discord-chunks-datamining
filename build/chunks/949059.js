@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 949059, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 949059, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  p: () => _
+  p: () => E
 });
 var Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -16,17 +16,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk406535 = require("./406535.js"),
   Chunk790782 = require("./790782.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = (0, Chunk419954.zD)(Chunk780964.X.EXPERIMENTAL_UNREADS, {
-  useTitle: () => g.intl.string(g.t["k6m/si"]),
-  useSubtitle: () => g.intl.string(g.t.LGynPs),
-  useValue: () => (0, n.bG)([a.Ay], () => a.Ay.useNewNotifications),
-  setValue: function(t) {
-    s.A.setAccountFlag(S.i.USE_NEW_NOTIFICATIONS, t), t || (l.w.set("turnedOffNewNotifications", true), T.default.track(A.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
-      num_guilds_with_new_setting: u.A.getGuildsArray().filter(t => a.Ay.resolveGuildUnreadSetting(t) === E.e.ONLY_MENTIONS).length
+let E = (0, Chunk419954.zD)(Chunk780964.X.EXPERIMENTAL_UNREADS, {
+  useTitle: () => _.intl.string(_.t["k6m/si"]),
+  useSubtitle: () => _.intl.string(_.t.LGynPs),
+  useValue: () => (0, n.bG)([u.Ay], () => u.Ay.useNewNotifications),
+  setValue: function(e) {
+    s.A.setAccountFlag(A.i.USE_NEW_NOTIFICATIONS, e), e || (l.w.set("turnedOffNewNotifications", true), d.default.track(c.HAw.NOTIFICATION_MIGRATION_OPTOUT, {
+      num_guilds_with_new_setting: a.A.getGuildsArray().filter(e => u.Ay.resolveGuildUnreadSetting(e) === S.e.ONLY_MENTIONS).length
     }))
   },
-  usePredicate: () => (0, n.bG)([o.default, a.Ay], () => {
-    var t;
-    return (null == (t = o.default.getCurrentUser()) ? true : t.isStaff()) || a.Ay.useNewNotifications
+  usePredicate: () => (0, n.bG)([o.default, u.Ay], () => {
+    var e;
+    return (null == (e = o.default.getCurrentUser()) ? true : e.isStaff()) || u.Ay.useNewNotifications
   })
 })

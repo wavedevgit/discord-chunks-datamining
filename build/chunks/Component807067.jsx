@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 807067, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => R
@@ -37,13 +37,13 @@ function w(e) {
   var t;
   let n, i, {
       channel: a,
-      openInPopout: p,
+      openInPopout: h,
       onClick: m
     } = e,
     {
-      fetchState: _,
-      voiceBannerCollection: O
-    } = (n = (0, c.bG)([j.default], () => j.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
+      fetchState: O,
+      voiceBannerCollection: _
+    } = (n = (0, c.bG)([x.default], () => x.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
       (0, b.An)({
         surface: T,
         activeState: n
@@ -58,43 +58,43 @@ function w(e) {
         activeState: n
       }))[0]
     }),
-    v = _ === A.e.FETCHING,
-    x = l.useMemo(() => {
-      let e = null == O ? true : O.application_directory_collection_items[0];
+    j = O === A.e.FETCHING,
+    v = l.useMemo(() => {
+      let e = null == _ ? true : _.application_directory_collection_items[0];
       return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
-    }, [null == O ? true : O.application_directory_collection_items]),
+    }, [null == _ ? true : _.application_directory_collection_items]),
     {
       trackItemImpressionRef: E
-    } = (0, f.A)({
-      applicationId: null != (t = null == x ? true : x.application.id) ? t : "",
-      applicationFlags: null == x ? true : x.application.flags,
+    } = (0, g.A)({
+      applicationId: null != (t = null == v ? true : v.application.id) ? t : "",
+      applicationFlags: null == v ? true : v.application.flags,
       sectionName: "app_launcher_in_voice_banner",
-      sectionPosition: null == x ? true : x.position,
+      sectionPosition: null == v ? true : v.position,
       sectionOverallPosition: 0,
-      promotionalLabel: null != x ? (0, h.Ii)(x.application) : true
+      promotionalLabel: null != v ? (0, p.Ii)(v.application) : true
     });
-  return null == x || null == O || v ? null : (null != x.id && null != x.image_hash && (i = (0, y.DH)({
-    itemId: x.id,
-    hash: x.image_hash,
+  return null == v || null == _ || j ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
+    itemId: v.id,
+    hash: v.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(u.DUT, {
     className: N.V8,
     innerRef: E,
     onClick: () => {
-      m(), (0, g.A)({
+      m(), (0, f.A)({
         context: {
           type: "channel",
           channel: a
         },
-        openInPopout: p,
+        openInPopout: h,
         analyticsLocation: d.A.APP_LAUNCHER_IN_VOICE_BANNER,
         initialState: {
-          applicationId: x.application.id
+          applicationId: v.application.id
         }
       })
     },
     children: [(0, r.jsx)("img", {
-      alt: x.description,
+      alt: v.description,
       src: i,
       className: N.W_
     }), (0, r.jsx)("div", {
@@ -110,35 +110,35 @@ let R = Chunk64700.forwardRef(function(e, t) {
     closePopout: a,
     onMouseEnter: o,
     onMouseLeave: c,
-    onClick: h,
-    className: f
+    onClick: p,
+    className: g
   } = e, {
     id: b,
     guild_id: A
   } = i;
   l.useEffect(() => {
-    v.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+    j.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: b,
       guild_id: A
     })
   }, [b, A]), l.useEffect(() => {
     s || a()
   }, [a, s]);
-  let y = (0, _.Us)(),
+  let y = (0, O.Us)(),
     {
-      analyticsLocations: j,
+      analyticsLocations: x,
       newestAnalyticsLocation: T
-    } = (0, p.Ay)(d.A.ACTIVITIES_MINI_SHELF),
+    } = (0, h.Ay)(d.A.ACTIVITIES_MINI_SHELF),
     R = y === S.BRT.POPOUT,
     D = (n = i.getGuildId(), (0, E.A)({
       guildId: n
     }).slice(0, 5));
   l.useEffect(() => {
-    let e = setTimeout(() => x.LK(), 1e3);
+    let e = setTimeout(() => v.LK(), 1e3);
     return () => clearTimeout(e)
   }, []);
-  let M = l.useCallback(() => {
-      (0, g.A)({
+  let L = l.useCallback(() => {
+      (0, f.A)({
         context: null != i ? {
           type: "channel",
           channel: i
@@ -147,21 +147,21 @@ let R = Chunk64700.forwardRef(function(e, t) {
         },
         openInPopout: R,
         analyticsLocation: T
-      }), c(), h()
-    }, [i, T, h, c, R]),
-    L = l.useCallback(e => {
-      o(), v.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+      }), c(), p()
+    }, [i, T, p, c, R]),
+    M = l.useCallback(e => {
+      o(), j.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: i.id,
         guild_id: i.getGuildId()
       })
     }, [o, i]);
-  return (0, r.jsx)(p.f5, {
-    value: j,
-    children: (0, r.jsx)(O.A, {
+  return (0, r.jsx)(h.f5, {
+    value: x,
+    children: (0, r.jsx)(_.A, {
       children: (0, r.jsxs)(u.lGe, {
         ref: t,
         "aria-labelledby": P,
-        className: f,
+        className: g,
         children: [(0, r.jsx)(u.Fmo, {
           forceLevel: 2,
           children: (0, r.jsx)(u.AC4, {
@@ -172,7 +172,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: N.kL,
-          onMouseEnter: L,
+          onMouseEnter: M,
           onMouseLeave: c,
           children: [(0, r.jsxs)("div", {
             className: N.gn,
@@ -188,7 +188,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(u.DUT, {
               className: N.hc,
-              onClick: M,
+              onClick: L,
               children: [(0, r.jsx)(u.Text, {
                 variant: "eyebrow",
                 children: I.intl.string(I.t["K8+z4S"])
@@ -204,7 +204,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
             openInPopout: R,
             channel: i,
             onClick: () => {
-              h(), a()
+              p(), a()
             }
           }), (0, r.jsx)("div", {
             className: N.ht,
@@ -215,7 +215,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
               },
               activityItem: e,
               onClick: () => {
-                a(), h()
+                a(), p()
               },
               aspectRatio: C.C.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: N.KU,

@@ -1,12 +1,12 @@
-/** Chunk was on 75473 **/
+/** Chunk was on 59024 **/
 /** chunk id: 162396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk975807 = require("./975807.js"),
   Chunk212031 = require("./212031.jsx"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk535790 = require("./535790.js");
 
-function _(e) {
+function f(e) {
   let {
     onClose: t
   } = e;
@@ -29,23 +29,23 @@ function _(e) {
     children: (0, r.jsxs)(i.rXV, {
       children: [(0, r.jsx)(i.Drp, {
         id: "changelog",
-        label: f.intl.string(f.t.LRmNAl),
+        label: y.intl.string(y.t.LRmNAl),
         action: () => (0, s.j)(true)
       }), (0, r.jsx)(i.Drp, {
         id: "acknowledgements",
-        label: f.intl.string(f.t["0nUKy3"]),
+        label: y.intl.string(y.t["0nUKy3"]),
         action: () => (0, c.A)(b.X7G.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(i.Drp, {
         id: "support",
-        label: f.intl.string(f.t["Yl/Riu"]),
+        label: y.intl.string(y.t["Yl/Riu"]),
         action: () => (0, c.A)(u.C)
       })]
     })
   })
 }
 
-function y() {
-  let e = o.useRef(null);
+function g() {
+  let e = l.useRef(null);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(d.A, {
       compact: true
@@ -57,7 +57,7 @@ function y() {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: f.intl.string(f.t["Knf/f/"])
+          children: y.intl.string(y.t["Knf/f/"])
         })
       }), (0, r.jsx)("span", {
         className: p.xE,
@@ -69,7 +69,7 @@ function y() {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: f.intl.string(f.t.uFSTGq)
+          children: y.intl.string(y.t.uFSTGq)
         })
       }), (0, r.jsx)("span", {
         className: p.xE,
@@ -85,13 +85,13 @@ function y() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(_, {
+          return (0, r.jsx)(f, {
             onClose: t
           })
         },
         children: (t, n) => {
-          var o, a;
-          return (0, r.jsx)(i.MzZ, (o = function(e) {
+          var l, o;
+          return (0, r.jsx)(i.MzZ, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -108,28 +108,28 @@ function y() {
               })
             }
             return e
-          }({}, t), a = a = {
+          }({}, t), o = o = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: l()(p.Mj, {
+            className: a()(p.Mj, {
               [p.vu]: n.isShown
             }),
             children: (0, r.jsx)(i.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: f.intl.string(f.t["UKOtz+"])
+              children: y.intl.string(y.t["UKOtz+"])
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
-          }), o))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+          }), l))
         }
       })]
     })]

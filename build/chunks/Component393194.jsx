@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 393194, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,31 +15,31 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk867384 = require("./867384.js");
 
-function h(e) {
+function p(e) {
   var t;
   let {
     channel: n
-  } = e, h = (0, a.kt)(n), {
-    firstMessage: f
-  } = (0, l.cf)([o.A], () => o.A.getMessage(n.id)), g = new Set((0, a.zt)(n, h)), m = null != (t = (0, s.gU)(n)) ? t : i.oyn;
+  } = e, p = (0, a.kt)(n), {
+    firstMessage: g
+  } = (0, l.cf)([o.A], () => o.A.getMessage(n.id)), f = new Set((0, a.zt)(n, p)), m = null != (t = (0, s.gU)(n)) ? t : i.oyn;
   return (0, r.jsxs)(u.Ay, {
     channelId: n.id,
-    className: p.kL,
+    className: h.kL,
     children: [(0, r.jsx)("div", {
-      className: p.P0,
+      className: h.P0,
       children: (0, r.jsx)(m, {
-        className: p.Kk,
+        className: h.Kk,
         strokeWidth: 1.75
       })
     }), (0, r.jsx)(u.cr, {
-      className: p.wx,
+      className: h.wx,
       children: n.name
-    }), null == f && (0, r.jsx)(i.Text, {
+    }), null == g && (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
       children: d.intl.string(d.t.mE3KJN)
     }), (0, r.jsx)(c.A, {
-      appliedTags: g,
+      appliedTags: f,
       wrap: n.isModeratorReportChannel()
     })]
   })

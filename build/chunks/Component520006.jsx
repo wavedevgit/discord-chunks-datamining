@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 520006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -44,11 +44,11 @@ function y(e) {
     applicationId: t,
     stream: l,
     channel: y,
-    exitFullScreen: _,
-    appContext: O,
-    analyticsLocation: j,
-    guildScheduledEvent: v,
-    shouldPrioritizeGroupPlusIcon: x = false,
+    exitFullScreen: O,
+    appContext: _,
+    analyticsLocation: x,
+    guildScheduledEvent: j,
+    shouldPrioritizeGroupPlusIcon: v = false,
     isRichPresenceInvite: E = false,
     iconClassName: C,
     look: S,
@@ -73,10 +73,10 @@ function y(e) {
     return i
   }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]), w = (0, d.Us)(), {
     parentAnalyticsLocation: R
-  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), M = (0, s.bG)([p.A], () => null != D ? p.A.getGuild(D) : null, [D]), L = (0, s.bG)([h.A], () => null != t ? h.A.getApplicationActivity(t) : true), k = null == t || x ? a.DpX : a.dCJ, G = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
-  return null != L && E ? (0, r.jsx)(g.A, {
+  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), L = (0, s.bG)([h.A], () => null != D ? h.A.getGuild(D) : null, [D]), M = (0, s.bG)([p.A], () => null != t ? p.A.getApplicationActivity(t) : true), k = null == t || v ? a.DpX : a.dCJ, G = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+  return null != M && E ? (0, r.jsx)(f.A, {
     onClick: () => {
-      null != R && (0, u.X)(R, u.O.INVITE), o.qf(L, false, w)
+      null != R && (0, u.X)(R, u.O.INVITE), o.qf(M, false, w)
     },
     iconComponent: k,
     label: G,
@@ -85,9 +85,9 @@ function y(e) {
     size: I,
     buttonText: N,
     color: null != T ? T : true
-  }) : null != M && null != y && f.A.can(m.xBc.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(g.A, A({
+  }) : null != L && null != y && g.A.can(m.xBc.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(f.A, A({
     onClick: () => {
-      i()(null != M, "guild cannot be null"), i()(null != y, "channel cannot be null"), null != R && (0, u.X)(R, u.O.INVITE),
+      i()(null != L, "guild cannot be null"), i()(null != y, "channel cannot be null"), null != R && (0, u.X)(R, u.O.INVITE),
         function(e) {
           let {
             guild: t,
@@ -129,14 +129,14 @@ function y(e) {
             contextKey: o === m.BRT.POPOUT ? a.KX8 : a.SYi
           })
         }({
-          guild: M,
+          guild: L,
           channel: y,
           streamUserId: null == l ? true : l.ownerId,
           applicationId: t,
-          appContext: null != O ? O : w,
-          exitFullScreen: _,
-          analyticsLocation: j,
-          guildScheduledEvent: v
+          appContext: null != _ ? _ : w,
+          exitFullScreen: O,
+          analyticsLocation: x,
+          guildScheduledEvent: j
         })
     },
     iconComponent: k,

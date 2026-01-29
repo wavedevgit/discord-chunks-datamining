@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 698126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk790782 = require("./790782.js"),
   Chunk728444 = require("./728444.js");
 
-function O(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,25 +31,25 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function j(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   o.A.preload(n, t.id)
 }
-class x extends Chunk557534.Ay {
+class v extends Chunk557534.Ay {
   render() {
     let {
       channel: e,
@@ -60,15 +60,15 @@ class x extends Chunk557534.Ay {
       canReorderChannel: a
     } = this.props, o = (0, r.jsx)("li", {
       className: s()(this.getClassName(), {
-        [_.r9]: this.isDisabled()
+        [O.r9]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
       children: (0, r.jsxs)(b.Ay, {
-        className: _.Ki,
+        className: O.Ki,
         channel: e,
         selected: t,
         onClick: this.handleClick,
-        onMouseDown: v,
+        onMouseDown: j,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: a ? i : null,
         "aria-label": (0, d.Ay)({
@@ -81,17 +81,17 @@ class x extends Chunk557534.Ay {
     return a ? n(l(o)) : o
   }
   constructor(...e) {
-    super(...e), O(this, "handleContextMenu", e => {
+    super(...e), _(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, l = f.A.getGuild(t.getGuildId());
+      } = this.props, l = g.A.getGuild(t.getGuildId());
       null != l && (0, c.L3)(e, async () => {
         let {
           default: e
         } = await n.e("15669").then(n.bind(n, 313140));
         return n => {
           var i, s;
-          return (0, r.jsx)(e, (i = j({}, n), s = s = {
+          return (0, r.jsx)(e, (i = x({}, n), s = s = {
             channel: t,
             guild: l
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -106,10 +106,10 @@ class x extends Chunk557534.Ay {
           }), i))
         }
       })
-    }), O(this, "handleClick", e => {
+    }), _(this, "handleClick", e => {
       let t = e.getGuildId();
       if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-      (0, p.pX)(A.BVt.CHANNEL(t, e.id), {
+      (0, h.pX)(A.BVt.CHANNEL(t, e.id), {
         state: {
           analyticsSource: {
             page: A.liQ.GUILD_CHANNEL,
@@ -121,18 +121,18 @@ class x extends Chunk557534.Ay {
     })
   }
 }
-let E = (0, Chunk676002.a)(x),
+let E = (0, Chunk676002.a)(v),
   C = Chunk64700.memo(function(e) {
     let {
       channel: t,
       guild: n,
       disableSorting: l
-    } = e, i = (0, a.cf)([h.A, g.A], () => {
-      let e = h.A.getChannel(t.parent_id);
+    } = e, i = (0, a.cf)([p.A, f.A], () => {
+      let e = p.A.getChannel(t.parent_id);
       return {
-        canManageChannel: g.A.can(A.xBc.MANAGE_CHANNELS, t),
-        canReorderChannel: true !== l && null != e ? g.A.can(A.xBc.MANAGE_CHANNELS, e) : g.A.can(A.xBc.MANAGE_CHANNELS, n)
+        canManageChannel: f.A.can(A.xBc.MANAGE_CHANNELS, t),
+        canReorderChannel: true !== l && null != e ? f.A.can(A.xBc.MANAGE_CHANNELS, e) : f.A.can(A.xBc.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, j({}, i, e))
+    return (0, r.jsx)(E, x({}, i, e))
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 113065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,11 +14,11 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk121113 = require("./121113.js"),
   Chunk896498 = require("./896498.js");
-let _ = () => {
+let p = () => {
   let e = d.intl.string(c.default.tr8Gni),
     t = (0, a.y)(d.intl.string(c.default["3xKGSE"]), d.intl.string(c.default.XbgrG7));
   return (0, r.jsxs)(s.BJc, {
-    className: l()(u.k, p.a),
+    className: l()(u.k, _.a),
     gap: 24,
     padding: 24,
     children: [(0, r.jsxs)(s.BJc, {

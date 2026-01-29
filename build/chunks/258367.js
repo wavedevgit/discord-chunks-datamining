@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 258367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -14,33 +14,33 @@ var Chunk64700 = require("./64700.js"),
   Chunk343328 = require("./343328.js"),
   Chunk652215 = require("./652215.js");
 
-function h(e) {
+function p(e) {
   let t = (0, u.A)(e),
     n = (0, l.bG)([s.default], () => s.default.locale),
-    h = (0, l.bG)([c.A], () => c.A.getChangelog(null != t ? t : "", n), [t, n]),
-    f = (0, d.A)(e),
-    g = r.useRef(f ? Date.now() : null),
+    p = (0, l.bG)([c.A], () => c.A.getChangelog(null != t ? t : "", n), [t, n]),
+    g = (0, d.A)(e),
+    f = r.useRef(g ? Date.now() : null),
     m = (0, l.bG)([a.Ay], () => a.Ay.getUnreadCount(e), [e]),
     b = r.useRef(m);
   r.useEffect(() => {
     b.current = m
   }), r.useEffect(() => {
-    g.current = Date.now()
-  }, [f]), r.useEffect(() => {
-    f && null != t && i.A.fetchChangelog(t, n, true)
-  }, [t, n, f]), r.useEffect(() => {
-    f && null != h && o.default.track(p.HAw.CHANGE_LOG_OPENED, {
-      change_log_id: "".concat(h.date, ":").concat(h.revision),
+    f.current = Date.now()
+  }, [g]), r.useEffect(() => {
+    g && null != t && i.A.fetchChangelog(t, n, true)
+  }, [t, n, g]), r.useEffect(() => {
+    g && null != p && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
+      change_log_id: "".concat(p.date, ":").concat(p.revision),
       unread_count: b.current
     })
-  }, [f, h]), r.useEffect(() => {
-    let e = g.current;
+  }, [g, p]), r.useEffect(() => {
+    let e = f.current;
     return () => {
-      f && null != h && null != e && (o.default.track(p.HAw.CHANGE_LOG_CLOSED, {
+      g && null != p && null != e && (o.default.track(h.HAw.CHANGE_LOG_CLOSED, {
         seconds_open: Math.round((Date.now() - e) / 1e3),
-        change_log_id: "".concat(h.date, ":").concat(h.revision),
+        change_log_id: "".concat(p.date, ":").concat(p.revision),
         unread_count: b.current
-      }), g.current = 0)
+      }), f.current = 0)
     }
-  }, [f, h])
+  }, [g, p])
 }

@@ -1,5 +1,6 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 3219 **/
 /** chunk id: 923545, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   M: "flagIcon__45b6e"
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 707251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => G
@@ -46,46 +46,46 @@ function k(e) {
   } = e, {
     analyticsLocations: i,
     newestAnalyticsLocation: o
-  } = (0, p.Ay)(d.A.VOICE_CHANNEL_HEADER), {
+  } = (0, h.Ay)(d.A.VOICE_CHANNEL_HEADER), {
     chatOpen: c,
     participantsListOpen: m
-  } = (0, a.cf)([h.A], () => ({
-    chatOpen: h.A.getChatOpen(t.id),
-    participantsListOpen: h.A.getParticipantsListOpen(t.id)
+  } = (0, a.cf)([p.A], () => ({
+    chatOpen: p.A.getChatOpen(t.id),
+    participantsListOpen: p.A.getParticipantsListOpen(t.id)
   }), [t.id]), A = (0, I.Ni)(t.id), y = (0, C.zy)(t.id, S.ip.REQUESTED_TO_SPEAK_ONLY), {
-    hasParticipantsPanel: _
-  } = (0, f.A)({
+    hasParticipantsPanel: O
+  } = (0, g.A)({
     location: "StageChannelCallHeader"
-  }), v = _ && m;
-  return (0, r.jsxs)(p.f5, {
+  }), j = O && m;
+  return (0, r.jsxs)(h.f5, {
     value: i,
     children: [(0, r.jsx)(b.A, {
       channelId: t.id
     }, "clips-enabled-indicator"), !l && A ? (0, r.jsx)("div", {
-      className: L.x6,
+      className: M.x6,
       children: (0, r.jsx)(P.A, {
         toggleRequestToSpeakSidebar: () => {
-          c && u.A.updateChatOpen(t.id, false), m && u.A.toggleParticipantsList(t.id, false), (0, g.X)(o, g.O.OPEN_REQUEST_TO_SPEAK_SIDEBAR), n()
+          c && u.A.updateChatOpen(t.id, false), m && u.A.toggleParticipantsList(t.id, false), (0, f.X)(o, f.O.OPEN_REQUEST_TO_SPEAK_SIDEBAR), n()
         },
         showRequestToSpeakSidebar: l,
         numRequestToSpeak: y
       })
-    }) : null, !m && _ && (0, r.jsx)(j.A, {
-      className: s()(L.x6, {
-        [L.vc]: c
+    }) : null, !m && O && (0, r.jsx)(x.A, {
+      className: s()(M.x6, {
+        [M.vc]: c
       }),
       onClick: () => {
         l && n(), u.A.toggleParticipantsList(t.id, !m)
       }
     }, "participants-list-button"), !c && (0, r.jsx)("div", {
-      className: s()(L.x6, {
-        [L.vc]: v || l
+      className: s()(M.x6, {
+        [M.vc]: j || l
       }),
-      children: (0, r.jsx)(O.V, {
+      children: (0, r.jsx)(_.V, {
         channelId: t.id,
         showRequestToSpeakSidebar: l,
         toggleRequestToSpeakSidebar: n,
-        iconClassName: L.iA
+        iconClassName: M.iA
       })
     })]
   })
@@ -97,28 +97,28 @@ function G(e) {
     channel: n,
     toggleRequestToSpeakSidebar: i,
     showRequestToSpeakSidebar: d
-  } = e, p = (0, m.Ay)(n), h = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), f = (0, C.uy)(n.id), g = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([v.A], () => v.A.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, j = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? O < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && O <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([x.A], () => x.A.can(N.QY, n)), G = () => {
+  } = e, h = (0, m.Ay)(n), p = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), g = (0, C.uy)(n.id), f = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([j.A], () => j.A.getGuild(n.guild_id), [n.guild_id]), _ = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? _ < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && _ <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([v.A], () => v.A.can(N.QY, n)), G = () => {
     u.A.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(R.HAw.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: D.e.VIDEO_STAGE_LIMIT,
       is_moderator: P,
       action: D.pd.DISMISS
     })
-  }, B = {
+  }, V = {
     canModerate: P,
-    audienceCount: g,
+    audienceCount: f,
     channel: n,
-    speakerCount: f
-  }, V = l.useRef(B);
+    speakerCount: g
+  }, B = l.useRef(V);
   l.useEffect(() => {
-    V.current = B
+    B.current = V
   }), l.useEffect(() => {
     let {
       canModerate: e,
       audienceCount: t,
       channel: n,
       speakerCount: r
-    } = V.current;
+    } = B.current;
     I && E.default.track(R.HAw.BOOSTING_UPSELL_VIEWED, {
       guild_id: n.guild_id,
       type: D.e.VIDEO_STAGE_LIMIT,
@@ -126,7 +126,7 @@ function G(e) {
       listener_count: r + t
     })
   }, [I]);
-  let F = (0, r.jsx)(c.NPJ, {
+  let H = (0, r.jsx)(c.NPJ, {
     theme: R.NJ8.DARK,
     children: e => {
       var t;
@@ -136,21 +136,21 @@ function G(e) {
           showRequestToSpeakSidebar: d,
           channel: n
         }),
-        onDoubleClick: _.I,
+        onDoubleClick: O.I,
         transparent: true,
-        className: s()(e, L.lF),
+        className: s()(e, M.lF),
         children: [(0, r.jsx)(y.Ay.Icon, {
           icon: c.qux,
           disabled: true,
-          "aria-label": M.intl.string(M.t.EErMzA),
-          className: L.Kk,
-          color: null != h ? o.A.colors.TEXT_MUTED.css : true
+          "aria-label": L.intl.string(L.t.EErMzA),
+          className: M.Kk,
+          color: null != p ? o.A.colors.TEXT_MUTED.css : true
         }), (0, r.jsx)(y.Ay.Title, {
-          className: L.HA,
-          wrapperClassName: L.KD,
-          children: null != (t = null == h ? true : h.topic) ? t : p
+          className: M.HA,
+          wrapperClassName: M.KD,
+          children: null != (t = null == p ? true : p.topic) ? t : h
         }), (0, r.jsx)(y.Ay.Divider, {
-          className: L.yF
+          className: M.yF
         }), (0, r.jsxs)(y.Ay.Title, {
           children: [(0, r.jsx)(c.cNw, {
             size: "xs",
@@ -158,20 +158,20 @@ function G(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            className: L.N_,
-            children: M.intl.format(M.t.chmM9N, {
-              count: f
+            className: M.N_,
+            children: L.intl.format(L.t.chmM9N, {
+              count: g
             })
           }), (0, r.jsx)(c.nFg, {
             size: "xs",
-            className: L.Kk,
+            className: M.Kk,
             color: "currentColor"
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            className: L.N_,
-            children: M.intl.format(M.t["+v2pN2"], {
-              count: g
+            className: M.N_,
+            children: L.intl.format(L.t["+v2pN2"], {
+              count: f
             })
           })]
         })]
@@ -179,27 +179,27 @@ function G(e) {
     }
   });
   return I ? (0, r.jsxs)("div", {
-    children: [F, (0, r.jsxs)("div", {
-      className: L.bp,
+    children: [H, (0, r.jsxs)("div", {
+      className: M.bp,
       children: [(0, r.jsx)(U, {}), (0, r.jsxs)("div", {
-        className: L.Qq,
+        className: M.Qq,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-strong",
-          children: j ? M.intl.string(M.t["T+zF9M"]) : M.intl.string(M.t["IZ+SVv"])
+          children: x ? L.intl.string(L.t["T+zF9M"]) : L.intl.string(L.t["IZ+SVv"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: j ? M.intl.string(M.t.Izgpmv) : M.intl.string(M.t["7FHbPG"])
+          children: x ? L.intl.string(L.t.Izgpmv) : L.intl.string(L.t["7FHbPG"])
         })]
       }), (0, r.jsx)("div", {
-        className: L.Uo,
-        children: j ? (0, r.jsxs)(r.Fragment, {
+        className: M.Uo,
+        children: x ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Button, {
             onClick: G,
             size: "sm",
             variant: "secondary",
-            text: M.intl.string(M.t.L5eIZ2)
+            text: L.intl.string(L.t.L5eIZ2)
           }), (0, r.jsx)(c.Button, {
             variant: "expressive",
             onClick: () => {
@@ -216,17 +216,17 @@ function G(e) {
               })
             },
             size: "sm",
-            text: M.intl.string(M.t.Uj0md3)
+            text: L.intl.string(L.t.Uj0md3)
           })]
         }) : (0, r.jsx)(c.Button, {
           variant: "primary",
           onClick: G,
           size: "sm",
-          text: M.intl.string(M.t.WAI6xu)
+          text: L.intl.string(L.t.WAI6xu)
         })
       })]
     })]
-  }) : F
+  }) : H
 }
 
 function U() {

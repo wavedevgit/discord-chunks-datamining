@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 564230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -23,7 +23,7 @@ let d = function(e) {
       tension: 120,
       friction: 12
     }
-  }), p = {
+  }), _ = {
     section: o.JJy.MARKETING_FLOATING_CTA
   };
   return (0, r.jsx)(i.animated.div, {
@@ -37,7 +37,7 @@ let d = function(e) {
         subscriptionTier: n,
         hasActivePromotion: !!d,
         isPersistentCTA: true,
-        premiumModalAnalyticsLocation: p
+        premiumModalAnalyticsLocation: _
       }), (0, r.jsx)(s.A, {
         variant: "secondary",
         size: "md"

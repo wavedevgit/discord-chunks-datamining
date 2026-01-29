@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 866897, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T
@@ -39,67 +39,67 @@ let T = function(e, t, n) {
       w = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
       R = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
       D = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
-      M = y.A.getMessage(t, e),
-      L = g.A.getChannel(t);
-    if (null == M || null == L) return;
-    let k = f.default.getId();
+      L = y.A.getMessage(t, e),
+      M = f.A.getChannel(t);
+    if (null == L || null == M) return;
+    let k = g.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        r && (_.A.can(N.xBc.MANAGE_MESSAGES, L) || M.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, I.RC)(L, M, n));
+        r && (O.A.can(N.xBc.MANAGE_MESSAGES, M) || L.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, I.RC)(M, L, n));
         break;
       case "c":
-        ((0, v.isMac)() ? R : w) && O.p5 && (n.preventDefault(), (0, O.C)(M.content));
+        ((0, j.isMac)() ? R : w) && _.p5 && (n.preventDefault(), (0, _.C)(L.content));
         break;
       case "e":
-        r && !L.isSystemDM() && (0, E.A)(M, k) && (n.preventDefault(), (0, I.u_)(L, M));
+        r && !M.isSystemDM() && (0, E.A)(L, k) && (n.preventDefault(), (0, I.u_)(M, L));
         break;
       case "p":
-        (r || D) && (0, C.A)(M, L) && (n.preventDefault(), (0, I.rS)(L, M, n));
+        (r || D) && (0, C.A)(L, M) && (n.preventDefault(), (0, I.rS)(M, L, n));
         break;
       case "+":
         (r || D) && function(e) {
           let t = null == e.guild_id || A.A.canChatInGuild(e.guild_id),
-            n = h.jW.getSetting(),
+            n = p.jW.getSetting(),
             {
               disableReactionCreates: r
             } = (0, S.A)({
               channel: e,
               canChat: t,
               renderReactions: n,
-              canAddNewReactions: t && _.A.can(N.xBc.ADD_REACTIONS, e),
+              canAddNewReactions: t && O.A.can(N.xBc.ADD_REACTIONS, e),
               isLurking: null != e.guild_id && a.A.isLurking(e.guild_id),
               isGuest: null != e.guild_id && b.Ay.isCurrentUserGuest(e.guild_id),
               isActiveChannelOrUnarchivableThread: (0, c.jr)(e)
             });
           return !r && n
-        }(L) && (n.preventDefault(), j._.dispatchKeyed(N.zOV.TOGGLE_REACTION_POPOUT, M.id, {
+        }(M) && (n.preventDefault(), x._.dispatchKeyed(N.zOV.TOGGLE_REACTION_POPOUT, L.id, {
           emojiPicker: true
         }));
         break;
       case "r":
-        (r || D) && (0, o.r)(L, M) && (n.preventDefault(), (0, I.$b)(L, M, n));
+        (r || D) && (0, o.r)(M, L) && (n.preventDefault(), (0, I.$b)(M, L, n));
         break;
       case "f":
-        (r || D) && (0, i.p)(M) && (n.preventDefault(), (0, s.fO)({
-          message: M,
+        (r || D) && (0, i.p)(L) && (n.preventDefault(), (0, s.fO)({
+          message: L,
           source: "keyboard-shortcut"
         }));
         break;
       case "s":
-        r && "" !== M.content && (n.preventDefault(), n.stopPropagation(), p.A.isSpeakingMessage(t, e) ? (0, d.pr)() : (0, d.kP)(L, M));
+        r && "" !== L.content && (n.preventDefault(), n.stopPropagation(), h.A.isSpeakingMessage(t, e) ? (0, d.pr)() : (0, d.kP)(M, L));
         break;
       case "t":
-        if (r && (0, c.D1)(L, M)) n.preventDefault(), (0, u.Tv)(L, M, "Message Shortcut");
-        else if (M.hasFlag(N.pr7.HAS_THREAD)) {
-          let e = g.A.getChannel(x.default.castMessageIdAsChannelId(M.id));
+        if (r && (0, c.D1)(M, L)) n.preventDefault(), (0, u.Tv)(M, L, "Message Shortcut");
+        else if (L.hasFlag(N.pr7.HAS_THREAD)) {
+          let e = f.A.getChannel(v.default.castMessageIdAsChannelId(L.id));
           null != e && (r || D) && (n.preventDefault(), (0, u.JA)(e, D))
         }
         break;
       case "enter":
-        P && (n.preventDefault(), (0, I.cl)(L, M));
+        P && (n.preventDefault(), (0, I.cl)(M, L));
         break;
       case "escape":
-        m.A.isEditing(L.id, M.id) ? l.A.endEditMessage(L.id) : j._.dispatch(N.jej.TEXTAREA_FOCUS)
+        m.A.isEditing(M.id, L.id) ? l.A.endEditMessage(M.id) : x._.dispatch(N.jej.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

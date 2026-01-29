@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 914703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -18,16 +18,16 @@ function u(e) {
     closePopout: n,
     onSelect: u,
     navId: d,
-    label: p
-  } = e, h = (0, i.A)(t, "Notifications Bell"), f = (0, s.A)(t), g = (0, o.X)(t);
+    label: h
+  } = e, p = (0, i.A)(t, "Notifications Bell"), g = (0, s.A)(t), f = (0, o.X)(t);
   return (0, r.jsxs)(l.W1t, {
     "data-menu-migrated-auto": true,
     navId: d,
     onClose: n,
-    "aria-label": p,
+    "aria-label": h,
     onSelect: u,
     children: [(0, r.jsxs)(l.rXV, {
-      children: [t.isForumPost() ? h : null, f]
+      children: [t.isForumPost() ? p : null, g]
     }), (0, r.jsx)(l.rXV, {
       children: (0, c.EU)().map(e => {
         let {
@@ -41,7 +41,7 @@ function u(e) {
           action: () => a.A.setNotificationSettings(t, {
             flags: n
           }),
-          checked: n === g
+          checked: n === f
         }, n)
       })
     })]

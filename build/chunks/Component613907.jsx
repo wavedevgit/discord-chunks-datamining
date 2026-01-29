@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 613907, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => j
 }), require("./896048.js"), require("./264879.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,62 +22,62 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk455683 = require("./455683.js");
-let j = "749054660769218631";
+let x = "749054660769218631";
 
-function v(e) {
+function j(e) {
   var t;
   let {
     channel: n
-  } = e, [i, v] = l.useState("");
+  } = e, [i, j] = l.useState("");
   l.useEffect(() => {
     (0, u.zk)("847199849233514549", true)
   }, []);
-  let x = (0, a.bG)([f.A, h.default], () => !!s()(f.A.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.cmJ.SENT && !(0, A.A)(e))),
-    E = (0, a.bG)([g.default], () => g.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    C = null != (t = b.Ay.useName(E)) ? t : _.intl.string(_.t.y1Wu2f),
-    S = (0, a.bG)([d.A], () => d.A.getStickerById(j)),
+  let v = (0, a.bG)([g.A, p.default], () => !!s()(g.A.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== p.default.getId() && e.state === y.cmJ.SENT && !(0, A.A)(e))),
+    E = (0, a.bG)([f.default], () => f.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+    C = null != (t = b.Ay.useName(E)) ? t : O.intl.string(O.t.y1Wu2f),
+    S = (0, a.bG)([d.A], () => d.A.getStickerById(x)),
     I = l.useCallback(async () => {
       if (null == i || "" === i) try {
-        await c.A.sendGreetMessage(n.id, j), m.default.track(y.HAw.DM_EMPTY_ACTION, {
+        await c.A.sendGreetMessage(n.id, x), m.default.track(y.HAw.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || v(_.intl.string(_.t.Whhv4w))
+        e.ok || 429 !== e.status || j(O.intl.string(O.t.Whhv4w))
       }
     }, [n.id, n.type, i]),
-    N = _.intl.formatToPlainString(_.t.m0zYbV, {
+    N = O.intl.formatToPlainString(O.t.m0zYbV, {
       username: C
     }),
     T = null != i && "" !== i ? (0, r.jsx)(o.Text, {
-      className: O.z3,
+      className: _.z3,
       color: "text-feedback-critical",
       variant: "text-sm/normal",
       children: i
     }) : null;
-  return x ? (0, r.jsxs)("div", {
-    className: O.ft,
+  return v ? (0, r.jsxs)("div", {
+    className: _.ft,
     children: [(0, r.jsxs)(o.DUT, {
-      className: null != i && "" !== i ? O.AO : O.Iq,
-      "aria-label": _.intl.string(_.t.pJObYI),
+      className: null != i && "" !== i ? _.AO : _.Iq,
+      "aria-label": O.intl.string(O.t.pJObYI),
       onClick: I,
-      children: [(0, r.jsx)(p.A, {
+      children: [(0, r.jsx)(h.A, {
         sticker: S,
         size: 24
       }), (0, r.jsx)(o.Text, {
-        className: O.Qq,
+        className: _.Qq,
         variant: "text-md/medium",
         children: N
       })]
     }), T]
   }) : (0, r.jsxs)("div", {
-    className: O.nj,
-    children: [(0, r.jsx)(p.A, {
+    className: _.nj,
+    children: [(0, r.jsx)(h.A, {
       sticker: S,
       size: 160,
-      className: O.Xr
+      className: _.Xr
     }), (0, r.jsx)(o.Button, {
       fullWidth: true,
       variant: "primary",

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 157259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk930399 = require("./930399.js");
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,30 +53,30 @@ function m(e) {
     narrow: n
   } = e;
   return l.useEffect(() => {
-    c.default.track(d.HAw.CHANNEL_BANNER_VIEWED, g(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+    c.default.track(d.HAw.CHANNEL_BANNER_VIEWED, f(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
       banner_type: "channel_opt_in"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: s()(h.JD, {
-      [h.sc]: n
+    className: s()(p.JD, {
+      [p.sc]: n
     }),
     children: [(0, r.jsx)(a.Text, {
-      className: h.E5,
+      className: p.E5,
       variant: "text-sm/normal",
       color: "text-default",
-      children: p.intl.string(p.t.iOWmmB)
+      children: h.intl.string(h.t.iOWmmB)
     }), (0, r.jsx)(a.Button, {
       size: "sm",
       variant: "primary",
       onClick: () => {
-        c.default.track(d.HAw.CHANNEL_BANNER_CTA_CLICKED, g(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+        c.default.track(d.HAw.CHANNEL_BANNER_CTA_CLICKED, f(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
           banner_type: "channel_opt_in",
           cta_type: "add channel"
         })), (0, u.AC)(t.guild_id, t.id, true, {
           section: d.JJy.CHANNEL
         })
       },
-      text: p.intl.string(p.t.ZtIlQo),
+      text: h.intl.string(h.t.ZtIlQo),
       icon: a.j96
     })]
   })

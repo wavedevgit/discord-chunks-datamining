@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 779271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -18,14 +18,14 @@ let d = Chunk64700.memo(function(e) {
     onClick: l,
     className: i,
     collapsed: d,
-    speakers: p,
-    channel: h,
-    isStreamLive: f
+    speakers: h,
+    channel: p,
+    isStreamLive: g
   } = e;
   return (0, r.jsxs)(a.DUT, {
     onClick: l,
     className: s()(u.kL, i),
-    children: [null == p ? (0, r.jsx)(a.nFg, {
+    children: [null == h ? (0, r.jsx)(a.nFg, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -42,11 +42,11 @@ let d = Chunk64700.memo(function(e) {
       variant: "text-md/semibold",
       className: u.Qq,
       children: [t, " — ", n]
-    }), d && null != h && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
+    }), d && null != p && null != h && h.length > 0 && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.A, {
-        channel: h,
-        speakers: p
-      }), f && (0, r.jsx)(o.Ay, {})]
+        channel: p,
+        speakers: h
+      }), g && (0, r.jsx)(o.Ay, {})]
     }), (0, r.jsx)(a.abt, {
       size: "custom",
       color: "currentColor",

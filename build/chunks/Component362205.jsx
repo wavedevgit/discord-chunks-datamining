@@ -1,4 +1,4 @@
-/** Chunk was on 75473 **/
+/** Chunk was on 59024 **/
 /** chunk id: 362205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   c = require.n(Chunk284009),
   Chunk353709 = require("./353709.js"),
@@ -17,20 +17,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk890690 = require("./890690.js"),
   Chunk637577 = require("./637577.js");
 
-function y(e) {
+function g(e) {
   let {
     category: t,
     onClick: n,
-    active: o
+    active: l
   } = e, {
-    useTitle: a,
+    useTitle: o,
     useSubnavLabel: i,
     key: s
-  } = t, b = null == a ? true : a(), f = null == i ? true : i(), p = null != f ? f : b;
+  } = t, b = null == o ? true : o(), y = null == i ? true : i(), p = null != y ? y : b;
   return c()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.tG, {
     id: s,
     children: e => {
-      var t, a;
+      var t, o;
       return (0, r.jsx)(d.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -50,20 +50,20 @@ function y(e) {
         return e
       }({
         onClick: n,
-        className: l()(_.AS, {
-          [_.vu]: o
+        className: a()(f.AS, {
+          [f.vu]: l
         })
-      }, e), a = a = {
+      }, e), o = o = {
         children: p
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
       }), t), s)
     }
   })
@@ -72,24 +72,24 @@ function y(e) {
 function m(e) {
   let {
     categories: t
-  } = e, n = f.A.useField("currentCategoryKey");
+  } = e, n = y.A.useField("currentCategoryKey");
   (0, b.Ay)(() => {
-    t.some(e => e.key === n) || f.A.setState({
+    t.some(e => e.key === n) || y.A.setState({
       currentCategoryKey: t[0].key
     })
   });
-  let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
+  let o = l.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
     {
-      thumbRef: l,
+      thumbRef: a,
       trackRef: i,
       thumbAnchorRef: c,
       springs: u
     } = function(e) {
-      let t = o.useRef(null),
-        n = o.useRef(null),
-        r = o.useRef(null),
-        a = o.useRef(true),
-        [l, i] = (0, d.zhh)(() => ({
+      let t = l.useRef(null),
+        n = l.useRef(null),
+        r = l.useRef(null),
+        o = l.useRef(true),
+        [a, i] = (0, d.zhh)(() => ({
           y: 0,
           height: 0,
           config: {
@@ -98,48 +98,48 @@ function m(e) {
             tension: 300
           }
         }));
-      return o.useLayoutEffect(() => {
+      return l.useLayoutEffect(() => {
         if (null == t.current || null == n.current || null == r.current) return;
-        let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
-        if (a.current) {
-          a.current = false, l.y.set(o.y - e.y), l.height.set(o.height);
+        let [e, l] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
+        if (o.current) {
+          o.current = false, a.y.set(l.y - e.y), a.height.set(l.height);
           return
         }
         i({
-          y: o.y - e.y,
-          height: o.height
+          y: l.y - e.y,
+          height: l.height
         })
-      }, [e, i, l.y, l.height]), {
+      }, [e, i, a.y, a.height]), {
         thumbRef: n,
         trackRef: t,
         thumbAnchorRef: r,
-        springs: l
+        springs: a
       }
-    }(a);
+    }(o);
   return (0, p.o)(), (0, r.jsxs)("div", {
-    className: _.o8,
+    className: f.o8,
     role: "list",
     style: {
       "--custom-nav-count": t.length,
-      "--custom-nav-index": a
+      "--custom-nav-index": o
     },
     children: [(0, r.jsx)("div", {
-      className: _.u4,
+      className: f.u4,
       "aria-hidden": "true",
       ref: i,
       children: (0, r.jsx)(s.animated.div, {
-        className: _.FF,
+        className: f.FF,
         style: u,
-        ref: l
+        ref: a
       })
     }), (0, r.jsx)("div", {
-      className: _.gu,
+      className: f.gu,
       "aria-hidden": "true",
       ref: c
-    }), t.map(e => (0, r.jsx)(y, {
+    }), t.map(e => (0, r.jsx)(g, {
       onClick: () => {
         var t;
-        return t = e.key, void f.A.setState({
+        return t = e.key, void y.A.setState({
           requestedTargetKey: t,
           showNavigationMobile: false
         })

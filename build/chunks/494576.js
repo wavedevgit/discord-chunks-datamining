@@ -1,19 +1,19 @@
-/** Chunk was on 98797 **/
-/** chunk id: 494576, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 73734 **/
+/** chunk id: 494576, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => l
 });
 var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function l(t) {
+function l(e) {
   let {
-    username: e,
+    username: t,
     usernameOnClickHandler: n = r.tEg,
     productName: l
-  } = t;
+  } = e;
   return i.intl.formatToParts(i.t["w4iXs+"], {
-    username: e,
+    username: t,
     usernameHook: n,
     productName: l
   })

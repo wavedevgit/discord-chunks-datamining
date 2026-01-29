@@ -1,5 +1,5 @@
-/** Chunk was on 92812 **/
-/** chunk id: 753838, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 66863 **/
+/** chunk id: 753838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
 }), require("./228524.js");
@@ -15,48 +15,48 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk483116 = require("./483116.js");
 let p = e => {
-  let t, i, r, {
+  let t, n, r, {
       guildFeature: p,
       guild: u,
       className: h,
       hideTooltip: m = false,
       tooltipPosition: x = "left",
-      onClick: g
+      onClick: v
     } = e,
-    v = u.features.has(p),
-    k = (0, o.Bl)(u.id, "GuildSettingsBoostPerks"),
-    j = (0, d.Ys)(p);
-  return !v && p === s.GuildFeatures.VANITY_URL && k ? null : (v ? (null != j && (r = c.intl.string(c.t.hUgjyP)), t = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(_._Jp, {
-      color: _.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+    g = u.features.has(p),
+    j = (0, o.Bl)(u.id, "GuildSettingsBoostPerks"),
+    k = (0, d.Ys)(p);
+  return !g && p === s.GuildFeatures.VANITY_URL && j ? null : (g ? (null != k && (r = c.intl.string(c.t.hUgjyP)), t = (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(l._Jp, {
+      color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: f.RQ
-    }), (0, n.jsx)(_.Heading, {
+    }), (0, i.jsx)(l.Heading, {
       variant: "eyebrow",
       className: f.h_,
       children: c.intl.string(c.t["0O+87i"])
     })]
-  })) : (null != j && (r = c.intl.string(c.t.L2wYYj)), t = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(_._Jp, {
+  })) : (null != k && (r = c.intl.string(c.t.L2wYYj)), t = (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(l._Jp, {
       color: "currentColor",
       className: f.Kk
-    }), (0, n.jsx)(_.Heading, {
+    }), (0, i.jsx)(l.Heading, {
       variant: "eyebrow",
       className: f.h_,
-      children: null != j && (0, d.Qu)(j)
+      children: null != k && (0, d.Qu)(k)
     })]
-  })), i = m || null == r ? (0, n.jsx)("div", {
+  })), n = m || null == r ? (0, i.jsx)("div", {
     className: a()(f.Jz, h),
     children: t
-  }) : (0, n.jsx)(l.m, {
+  }) : (0, i.jsx)(_.m, {
     position: x,
     text: r,
-    children: (0, n.jsx)("div", {
+    children: (0, i.jsx)("div", {
       className: a()(f.Jz, h),
       children: t
     })
-  }), null == g || v) ? i : (0, n.jsx)(_.DUT, {
-    onClick: g,
+  }), null == v || g) ? n : (0, i.jsx)(l.DUT, {
+    onClick: v,
     className: f.vk,
-    children: i
+    children: n
   })
 }

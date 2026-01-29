@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 168917, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -21,25 +21,25 @@ function g(e) {
     errors: t,
     pendingNick: n,
     currentNick: g,
-    username: f,
-    user: b,
-    guild: h
-  } = e, A = null != n ? n : g, E = (0, i.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, h) || c.A.can(u.xBc.MANAGE_NICKNAMES, h)), x = (0, s.L)(p.PremiumTypes.TIER_2);
+    username: A,
+    user: f,
+    guild: b
+  } = e, h = null != n ? n : g, E = (0, i.bG)([c.A], () => c.A.can(u.xBc.CHANGE_NICKNAME, b) || c.A.can(u.xBc.MANAGE_NICKNAMES, b)), O = (0, s.L)(_.PremiumTypes.TIER_2);
   return (0, r.jsxs)(a.A, {
-    title: _.intl.string(_.t.me1lRk),
+    title: p.intl.string(p.t.me1lRk),
     errors: t,
     children: [(0, r.jsx)(l.ksK, {
-      value: null != A ? A : "",
-      placeholder: f,
+      value: null != h ? h : "",
+      placeholder: A,
       maxLength: u.d0r,
       onChange: function(e) {
         (0, d.o_)(e, g)
       },
       disabled: !E,
-      helperText: E ? true : _.intl.string(_.t.gzjxQi)
-    }), x && (0, r.jsx)(o.A, {
-      user: b,
-      guildId: h.id,
+      helperText: E ? true : p.intl.string(p.t.gzjxQi)
+    }), O && (0, r.jsx)(o.A, {
+      user: f,
+      guildId: b.id,
       className: m.F
     })]
   })

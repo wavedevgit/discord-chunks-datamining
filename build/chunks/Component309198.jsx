@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 309198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -35,38 +35,38 @@ function g(e) {
   return e
 }
 
-function f(e) {
+function A(e) {
   let t, n, {
-      currentUser: f,
-      togglingSMS: b
+      currentUser: A,
+      togglingSMS: f
     } = e,
-    [h, A] = i.useState(false),
+    [b, h] = i.useState(false),
     E = i.useCallback(e => {
-      e.preventDefault(), A(!h)
-    }, [h]),
-    x = i.useCallback(function() {
+      e.preventDefault(), h(!b)
+    }, [b]),
+    O = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       (0, l.qfG)(t => (0, r.jsx)(c.default, g({
         reason: a.d.USER_SETTINGS_UPDATE
       }, t, e)), {
-        modalKey: p.V
+        modalKey: _.V
       })
     }, []),
-    O = i.useCallback(() => {
-      x()
-    }, [x]),
     C = i.useCallback(() => {
-      null == f.phone ? x({
+      O()
+    }, [O]),
+    x = i.useCallback(() => {
+      null == A.phone ? O({
         onAddedPhone: s.A.enableSMS
       }) : s.A.enableSMS()
-    }, [f, x]),
-    y = i.useCallback(() => {
+    }, [A, O]),
+    S = i.useCallback(() => {
       (0, l.qfG)(e => {
         var t, n;
         return (0, r.jsx)(o.default, (t = g({}, e), n = n = {
           handleSubmit: s.A.disableSMS,
-          title: _.intl.string(_.t.KLWnit),
-          children: _.intl.string(_.t["W0/Duf"])
+          title: p.intl.string(p.t.KLWnit),
+          children: p.intl.string(p.t["W0/Duf"])
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -79,51 +79,51 @@ function f(e) {
         }), t))
       })
     }, []),
-    j = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
-    T = null != f.phone,
-    v = f.hasFlag(u.nhx.MFA_SMS);
-  if (T || v) {
-    let e = h ? f.phone : j(f.phone);
+    T = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
+    I = null != A.phone,
+    y = A.hasFlag(u.nhx.MFA_SMS);
+  if (I || y) {
+    let e = b ? A.phone : T(A.phone);
     n = (0, r.jsxs)(l.Text, {
       variant: "text-sm/normal",
-      children: [_.intl.format(_.t.PXVoEO, {
+      children: [p.intl.format(p.t.PXVoEO, {
         phoneNumber: e
       }), (0, r.jsx)(l.MzZ, {
         onClick: E,
         className: m.vN,
-        children: h ? _.intl.string(_.t.FfltIN) : _.intl.string(_.t.llArAg)
+        children: b ? p.intl.string(p.t.FfltIN) : p.intl.string(p.t.llArAg)
       })]
     })
   }
-  if (v) t = (0, r.jsx)(l.Button, {
+  if (y) t = (0, r.jsx)(l.Button, {
     variant: "critical-secondary",
     size: "sm",
-    text: _.intl.string(_.t.KLWnit),
-    loading: b,
-    onClick: y
+    text: p.intl.string(p.t.KLWnit),
+    loading: f,
+    onClick: S
   });
   else {
-    let e = (0, d.B)(f);
+    let e = (0, d.B)(A);
     t = (0, r.jsxs)(l.ButtonGroup, {
       size: "sm",
       children: [(0, r.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: null != e ? e : _.intl.string(_.t.DZQe23),
-        onClick: C,
-        loading: b,
+        text: null != e ? e : p.intl.string(p.t.DZQe23),
+        onClick: x,
+        loading: f,
         disabled: null != e
-      }), T ? (0, r.jsx)(l.Button, {
+      }), I ? (0, r.jsx)(l.Button, {
         variant: "secondary",
         size: "sm",
-        text: _.intl.string(_.t.Ulqq6K),
-        onClick: O
+        text: p.intl.string(p.t.Ulqq6K),
+        onClick: C
       }) : null]
     })
   }
   return (0, r.jsxs)(l.D0$, {
-    label: _.intl.string(_.t.uHAJ5v),
-    description: _.intl.string(_.t.fspJ4H),
+    label: p.intl.string(p.t.uHAJ5v),
+    description: p.intl.string(p.t.fspJ4H),
     children: [n, t]
   })
 }

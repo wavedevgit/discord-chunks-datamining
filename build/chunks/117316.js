@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 117316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => f
+  r: () => g
 }), require("./896048.js"), require("./938796.js");
 var Chunk253506 = require("./253506.js"),
   Chunk665260 = require("./665260.js"),
@@ -12,9 +12,9 @@ var Chunk253506 = require("./253506.js"),
   Chunk141468 = require("./141468.js"),
   Chunk963852 = require("./963852.js"),
   Chunk652215 = require("./652215.js");
-let p = new Map;
+let h = new Map;
 
-function h(e, t) {
+function p(e, t) {
   let n = (0, u.Ay)({
       channelId: t,
       type: d.lAJ.IN_GAME_MESSAGE_NUX,
@@ -27,13 +27,13 @@ function h(e, t) {
   return r.applicationId = e.applicationId, r.timestamp = e.timestamp, r
 }
 
-function f(e, t) {
+function g(e, t) {
   let n = function(e, t) {
     var n, i;
-    if (p.get(t.id) === e.id) return h(e, t.id);
-    if (null == e.applicationId || !(0, l.Lt)(e.flags, d.pr7.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === o.default.getId() || null != e.activity || (0, l.Lt)(null != (n = t.recipientFlags) ? n : 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX) || p.has(t.id)) return null;
-    let s = h(e, t.id);
-    p.set(t.id, e.id);
+    if (h.get(t.id) === e.id) return p(e, t.id);
+    if (null == e.applicationId || !(0, l.Lt)(e.flags, d.pr7.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === o.default.getId() || null != e.activity || (0, l.Lt)(null != (n = t.recipientFlags) ? n : 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX) || h.has(t.id)) return null;
+    let s = p(e, t.id);
+    h.set(t.id, e.id);
     let c = (0, l.lA)(null != (i = t.recipientFlags) ? i : 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX, true);
     return a.A.updatePrivateChannelRecipientFlags(t.id, c), s
   }(e, t);
@@ -41,7 +41,7 @@ function f(e, t) {
     message: n,
     position: "before"
   };
-  let f = function(e, t) {
+  let g = function(e, t) {
     var n;
     let r, a;
     if (!(0, i.J)() || null == e.attachments.find(e => {
@@ -49,8 +49,8 @@ function f(e, t) {
         return (0, l.Lt)(null != (t = e.flags) ? t : 0, d.sbO.IS_CLIP)
       }) || e.author.id === o.default.getId()) return null;
     let {
-      clipId: p,
-      remoteTriggerClipId: h
+      clipId: h,
+      remoteTriggerClipId: p
     } = function(e) {
       let t = "__CLIP_METADATA__",
         n = e.indexOf(t);
@@ -67,9 +67,9 @@ function f(e, t) {
         return {}
       }
     }(e.content);
-    if (null == p && null == h) return null;
-    let f = s.A.getMatchingGroupClip(p, h);
-    return null == f || s.A.wasClipSharedInChannel(f.id, t.id) ? null : (n = t.id, r = (0, u.Ay)({
+    if (null == h && null == p) return null;
+    let g = s.A.getMatchingGroupClip(h, p);
+    return null == g || s.A.wasClipSharedInChannel(g.id, t.id) ? null : (n = t.id, r = (0, u.Ay)({
       channelId: n,
       type: 66,
       content: "",
@@ -80,8 +80,8 @@ function f(e, t) {
       message_id: e.id
     }, a)
   }(e, t);
-  return null != f ? {
-    message: f,
+  return null != g ? {
+    message: g,
     position: "after"
   } : null
 }

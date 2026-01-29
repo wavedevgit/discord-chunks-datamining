@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 120929, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 120929, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  T0: () => _
+  T0: () => E
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -14,20 +14,20 @@ var Chunk934551 = require("./934551.js"),
   Chunk812402 = require("./812402.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.t_)(Chunk780964.X.ACTIVITY_PRIVACY_PANEL, {
-    useTitle: () => S.intl.string(S.t.Cq98yL),
+let S = (0, Chunk419954.t_)(Chunk780964.X.ACTIVITY_PRIVACY_PANEL, {
+    useTitle: () => A.intl.string(A.t.Cq98yL),
     StronglyDiscouragedCustomComponent: Chunk513664.Ay,
     buildLayout: () => [],
     usePredicate: () => !(0, r.dk)("ActivityPrivacyPanel")
   }),
-  g = (0, Chunk419954.t_)(Chunk780964.X.ACTIVITY_PRIVACY_PANEL, {
-    useTitle: () => S.intl.string(S.t.Cq98yL),
+  _ = (0, Chunk419954.t_)(Chunk780964.X.ACTIVITY_PRIVACY_PANEL, {
+    useTitle: () => A.intl.string(A.t.Cq98yL),
     usePredicate: () => (0, r.dk)("ActivityPrivacyPanel"),
-    buildLayout: () => [a.o, o.L, T.b, d.w]
+    buildLayout: () => [u.o, o.L, d.b, T.w]
   }),
-  _ = (0, Chunk419954.i4)(Chunk780964.X.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
-    useTitle: () => S.intl.string(S.t.Cq98yL),
-    getLegacySearchKey: () => (0, r.WJ)("ActivityPrivacyPanel") ? true : A.H.ACTIVITY_PRIVACY,
+  E = (0, Chunk419954.i4)(Chunk780964.X.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
+    useTitle: () => A.intl.string(A.t.Cq98yL),
+    getLegacySearchKey: () => (0, r.WJ)("ActivityPrivacyPanel") ? true : c.H.ACTIVITY_PRIVACY,
     icon: Chunk934551.UserPlatformIcon,
-    buildLayout: () => (0, r.WJ)("ActivityPrivacyPanel") ? [g] : [E]
+    buildLayout: () => (0, r.WJ)("ActivityPrivacyPanel") ? [_] : [S]
   })

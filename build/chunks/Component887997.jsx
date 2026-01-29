@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 887997, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,14 +14,14 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk802937 = require("./802937.js");
 
-function p(e) {
+function _(e) {
   let {
     showChargingUpState: t,
     rowValueText: n,
     endsAt: i,
     fractionalState: a,
     activationDate: o
-  } = e, p = t ? d.intl.string(d.t["hT6i/0"]) : d.intl.string(d.t["3G0CTC"]), _ = t ? true === o ? null : d.intl.format(d.t["0Vwb/l"], {
+  } = e, _ = t ? d.intl.string(d.t["hT6i/0"]) : d.intl.string(d.t["3G0CTC"]), p = t ? true === o ? null : d.intl.format(d.t["0Vwb/l"], {
     activateDate: o
   }) : a === c.xc.FP_SUB_PAUSED ? d.intl.format(d.t.MMvaIG, {
     resumeDate: i.toDate()
@@ -31,7 +31,7 @@ function p(e) {
   }), g = l()({
     [u.CQ]: t,
     [u.ZM]: !t
-  }), f = l()({
+  }), A = l()({
     [u.EM]: !t
   });
   return (0, r.jsxs)("div", {
@@ -40,11 +40,11 @@ function p(e) {
       className: u.Nv,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
-        className: f,
-        children: p
-      }), null !== _ && (0, r.jsx)(s.Text, {
-        variant: "text-sm/normal",
+        className: A,
         children: _
+      }), null !== p && (0, r.jsx)(s.Text, {
+        variant: "text-sm/normal",
+        children: p
       })]
     }), (0, r.jsx)("div", {
       className: u.ZS,
@@ -59,12 +59,12 @@ function p(e) {
     })]
   })
 }
-let _ = function(e) {
+let p = function(e) {
   let {
     fractionalPremiumInfo: t,
     className: n,
     activationDate: i
-  } = e, c = (0, o.kX)(t), _ = c.length > 0, m = (0, a.Ay)(t.endsAt, a.yE.SHORT_TIME), g = _ ? c : m;
+  } = e, c = (0, o.kX)(t), p = c.length > 0, m = (0, a.Ay)(t.endsAt, a.yE.SHORT_TIME), g = p ? c : m;
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
       className: l()(n, u.f8),
@@ -91,8 +91,8 @@ let _ = function(e) {
             children: c.length > 0 ? c : d.intl.string(d.t["B66Z+f"])
           })]
         })
-      }), (0, r.jsx)(p, {
-        showChargingUpState: _,
+      }), (0, r.jsx)(_, {
+        showChargingUpState: p,
         rowValueText: g,
         endsAt: t.endsAt,
         fractionalState: t.fractionalState,

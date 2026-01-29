@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 773349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -13,20 +13,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk427262 = require("./427262.js"),
   Chunk283900 = require("./283900.jsx"),
   Chunk975977 = require("./975977.js");
-let _ = Chunk64700.memo(e => {
+let p = Chunk64700.memo(e => {
   let {
     userId: t,
     subText: n,
     className: i
   } = e, l = (0, a.bG)([c.default], () => c.default.getUser(t));
   return true === l ? null : (0, r.jsxs)("div", {
-    className: s()(p.k, i),
+    className: s()(_.k, i),
     children: [(0, r.jsx)(u.H, {
       user: l,
       avatarSize: o._3J.SIZE_40
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: p.$,
+        className: _.$,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "interactive-text-active",
@@ -40,5 +40,5 @@ let _ = Chunk64700.memo(e => {
     })]
   })
 });
-_.displayName = "FamilyCenterActivityUserRow";
-let m = _
+p.displayName = "FamilyCenterActivityUserRow";
+let m = p

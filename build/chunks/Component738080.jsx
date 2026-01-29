@@ -1,4 +1,4 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 738080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -19,7 +19,7 @@ function o(e) {
     source: u,
     onAction: d
   } = e;
-  return null != t && (0, l.A)(t, s.jUm.SYNC) && (0, a.A)(t) ? (0, r.jsx)(i.A, {
+  return null != t && (0, i.A)(t, s.jUm.SYNC) && (0, a.A)(t) ? (0, r.jsx)(l.A, {
     size: "sm",
     variant: "secondary",
     user: n,

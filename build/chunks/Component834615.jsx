@@ -135,7 +135,7 @@ function D(e) {
     gameProfileSource: c.Ob.QuestActivityPanel
   }), X = (0, O.vA)(A), Z = (0, f.NA)({
     quest: A
-  }), J = X ? Z : P.intl.string(P.t.l7E81v);
+  }), $ = X ? Z : P.intl.string(P.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
       u.current = e
@@ -217,7 +217,7 @@ function D(e) {
           analyticsCtxSourceQuestContent: h.uF.ACTIVITY_PANEL
         }) : (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: J,
+          text: $,
           onClick: H,
           loading: x,
           icon: (0, T.Oz)(A)

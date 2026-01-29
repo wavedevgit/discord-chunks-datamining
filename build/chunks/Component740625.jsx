@@ -1,4 +1,4 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 740625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => a
@@ -12,11 +12,11 @@ let a = e => {
     children: t,
     header: n,
     notice: a
-  } = e, o = (0, l.A)();
+  } = e, o = (0, s.A)();
   return (0, i.jsxs)("div", {
     className: r.r,
-    children: [a, !o && (0, i.jsx)(s.Fmo, {
-      children: (0, i.jsx)(s.Heading, {
+    children: [a, !o && (0, i.jsx)(l.Fmo, {
+      children: (0, i.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "text-strong",
         children: n

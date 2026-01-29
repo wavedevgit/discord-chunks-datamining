@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 230084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,52 +20,52 @@ let g = [{
   extensions: ["gif"]
 }];
 
-function f(e) {
+function A(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
     onAvatarChange: l,
-    sectionTitle: f,
-    changeAvatarButtonText: b,
-    guildId: h,
-    className: A,
+    sectionTitle: A,
+    changeAvatarButtonText: f,
+    guildId: b,
+    className: h,
     disabled: E = false,
-    isTryItOut: x = false,
-    forcedDivider: O,
-    withHighlight: C = false
+    isTryItOut: O = false,
+    forcedDivider: C,
+    withHighlight: x = false
   } = e, {
-    newestAnalyticsLocation: y
-  } = (0, c.Ay)(), j = C ? o.wLn : a.$n, T = i.useCallback(() => {
+    newestAnalyticsLocation: S
+  } = (0, c.Ay)(), T = x ? o.wLn : a.$n, I = i.useCallback(() => {
     (0, d.XD)({
-      uploadType: p.HL.AVATAR,
-      analyticsSource: y,
-      filters: x ? g : true,
-      guildId: h,
-      isTryItOut: x
+      uploadType: _.HL.AVATAR,
+      analyticsSource: S,
+      filters: O ? g : true,
+      guildId: b,
+      isTryItOut: O
     })
-  }, [h, y, x]);
+  }, [b, S, O]);
   return (0, r.jsx)(u.A, {
-    className: A,
-    title: f,
+    className: h,
+    title: A,
     errors: n,
     disabled: E,
-    forcedDivider: O,
+    forcedDivider: C,
     children: (0, r.jsxs)("div", {
       className: m.NC,
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(T, {
         className: s()({
-          [m.yj]: C
+          [m.yj]: x
         }),
         size: a.$n.Sizes.SMALL,
-        onClick: T,
-        children: null != b ? b : _.intl.string(_.t["4OynCD"])
+        onClick: I,
+        children: null != f ? f : p.intl.string(p.t["4OynCD"])
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: m.DT,
         children: (0, r.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != h ? _.intl.string(_.t.TDjKDm) : _.intl.string(_.t.twB3fz),
+          text: null != b ? p.intl.string(p.t.TDjKDm) : p.intl.string(p.t.twB3fz),
           onClick: () => l(null)
         })
       })]

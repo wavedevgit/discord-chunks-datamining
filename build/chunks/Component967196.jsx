@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 967196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -24,25 +24,25 @@ let m = e => {
     visibilityPercentage: g
   } = (0, d.U)(!i);
   return (0, r.jsxs)("div", {
-    className: l()(_.kL, t),
+    className: l()(p.kL, t),
     "data-testid": "all-perks-hero-header",
     ref: m,
     children: [(0, r.jsx)("div", {
-      className: _.FY,
+      className: p.FY,
       children: (0, r.jsx)(a.$nd, {
         onClick: n,
-        text: p.intl.string(p.t["13/7kX"]),
+        text: _.intl.string(_.t["13/7kX"]),
         variant: "overlay-secondary"
       })
     }), (0, r.jsx)("div", {
-      className: _.Qs,
+      className: p.Qs,
       children: (0, r.jsxs)("div", {
-        className: _.N1,
+        className: p.N1,
         children: [(0, r.jsx)(u.A, {
           containerVisibilityPercentage: g,
           isMotionReduced: i
         }), (0, r.jsx)(c.A, {
-          children: p.intl.string(p.t["hqjDX/"])
+          children: _.intl.string(_.t["hqjDX/"])
         })]
       })
     })]

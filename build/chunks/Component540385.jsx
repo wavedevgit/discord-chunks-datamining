@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 540385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => d,
@@ -24,25 +24,25 @@ function u(e) {
   if (l > n) throw Error("generateMessageSpecs: too many attachments relative to messageGroups: ".concat(n, ", ").concat(l));
   let u = i / o.hH7.FONT_SIZE_DEFAULT,
     d = t ? a.BP : a.B5,
-    p = t ? a.Uj : a._G,
-    h = 0,
-    f = Array(n).fill(null).map(() => {
+    h = t ? a.Uj : a._G,
+    p = 0,
+    g = Array(n).fill(null).map(() => {
       let e = s().random(1, r);
-      return h += c * u, h += d * u, h += (e - 1) * p * u, e
+      return p += c * u, p += d * u, p += (e - 1) * h * u, e
     }),
-    g = f.map((e, t) => t),
+    f = g.map((e, t) => t),
     m = [];
   for (; m.length < l;) {
     let e = {
       width: s().random(140, 400),
       height: s().random(100, 320)
     };
-    m.push([g.splice(s().random(0, g.length - 1), 1)[0], e]), h += e.height + a.VF * u
+    m.push([f.splice(s().random(0, f.length - 1), 1)[0], e]), p += e.height + a.VF * u
   }
   return {
-    messages: f,
+    messages: g,
     attachmentSpecs: m,
-    totalHeight: h,
+    totalHeight: p,
     groupSpacing: c
   }
 }

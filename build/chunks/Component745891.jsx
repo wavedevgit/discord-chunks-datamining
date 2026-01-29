@@ -2,7 +2,7 @@
 /** chunk id: 745891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => m
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,9 +18,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk877911 = require("./877911.js");
 let g = Object.values(Chunk672396.Li).map(e => 100 * e),
   y = (0, Chunk915089.Ld)();
-class A extends Chunk64700.PureComponent {
+class m extends Chunk64700.PureComponent {
   handleUpdateBackgroundOpacity(e) {
-    o.A.setTextWidgetOpacity((0, d.A)(e / 100)), o.A.track(h.HAw.OVERLAY_SETTINGS_UPDATED, {
+    o.A.setTextWidgetOpacity((0, d.A)(e / 100)), o.A.track(p.HAw.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
     })
   }
@@ -33,7 +33,7 @@ class A extends Chunk64700.PureComponent {
       children: (0, i.jsx)("div", {
         className: f.xJ,
         children: (0, i.jsx)(l.Apm, {
-          label: p.intl.string(p.t.OVovCb),
+          label: h.intl.string(h.t.OVovCb),
           mini: true,
           initialValue: this.initialValue,
           defaultValue: this.initialValue,
@@ -43,7 +43,7 @@ class A extends Chunk64700.PureComponent {
           onValueChange: this.handleUpdateBackgroundOpacity,
           asValueChanges: this.handlePreviewBackgroundOpacity,
           markers: g,
-          onMarkerRender: h.tEg,
+          onMarkerRender: p.tEg,
           equidistant: true,
           stickToMarkers: true,
           "aria-labelledby": y
@@ -63,6 +63,6 @@ class A extends Chunk64700.PureComponent {
       }(this, "initialValue", 100 * this.props.opacity)
   }
 }
-let m = Chunk311907.Ay.connectStores([Chunk256415.default], () => ({
+let _ = Chunk311907.Ay.connectStores([Chunk256415.default], () => ({
   opacity: c.default.getTextWidgetOpacity()
-}))(A)
+}))(m)

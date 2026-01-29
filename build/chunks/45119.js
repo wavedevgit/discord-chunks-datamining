@@ -1,5 +1,5 @@
-/** Chunk was on 83759 **/
-/** chunk id: 45119, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 31294 **/
+/** chunk id: 45119, original params: e,_,t (module,exports,require) **/
 module.exports = {
   Ix: "channel__972a0",
   Ij: "fullWidth__972a0",

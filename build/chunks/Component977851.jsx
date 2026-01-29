@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 977851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => x
+  V: () => v
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,15 +23,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function j(e) {
-  let t = (0, o.bG)([g.A], () => !(0, a.isEmpty)(g.A.getTypingUsers(e)), [e]),
-    n = (0, o.bG)([f.A], () => f.A.getVoiceChannelId() === e, [e]),
+function x(e) {
+  let t = (0, o.bG)([f.A], () => !(0, a.isEmpty)(f.A.getTypingUsers(e)), [e]),
+    n = (0, o.bG)([g.A], () => g.A.getVoiceChannelId() === e, [e]),
     {
       unreadCount: r,
       mentionCount: l
-    } = (0, o.cf)([h.Ay], () => ({
-      unreadCount: h.Ay.getUnreadCount(e),
-      mentionCount: h.Ay.getMentionCount(e)
+    } = (0, o.cf)([p.Ay], () => ({
+      unreadCount: p.Ay.getUnreadCount(e),
+      mentionCount: p.Ay.getMentionCount(e)
     }), [e]);
   return {
     unreadCount: r,
@@ -41,7 +41,7 @@ function j(e) {
   }
 }
 
-function v(e) {
+function j(e) {
   let {
     className: t,
     channelId: n
@@ -50,7 +50,7 @@ function v(e) {
     mentionCount: i,
     isTyping: s,
     voiceChannelIsSelected: a
-  } = j(n);
+  } = x(n);
   return (0, r.jsx)(A.A, {
     className: t,
     unreadCount: l,
@@ -60,17 +60,17 @@ function v(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   let t, {
       channelId: n,
       className: i,
       showingClassName: a,
-      onClick: h,
-      inPopout: f,
-      showRequestToSpeakSidebar: g,
+      onClick: p,
+      inPopout: g,
+      showRequestToSpeakSidebar: f,
       toggleRequestToSpeakSidebar: A
     } = e,
-    x = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, l, i = {};
       if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -92,7 +92,7 @@ function x(e) {
     } = (0, u.Ay)(),
     {
       disabled: C
-    } = x,
+    } = v,
     S = l.useRef(null),
     I = (0, o.bG)([d.A], () => d.A.getChatOpen(n), [n]),
     {
@@ -104,7 +104,7 @@ function x(e) {
         unreadCount: t,
         mentionCount: n,
         isTyping: r
-      } = j(e), [i, s] = l.useState(false);
+      } = x(e), [i, s] = l.useState(false);
       return l.useEffect(() => {
         s(t > 0);
         let e = setTimeout(() => {
@@ -120,13 +120,13 @@ function x(e) {
       }
     }(n),
     w = l.useCallback(() => {
-      (0, p.X)(E, p.O.CHAT, !I), null == h || h(), !I && g && (null == A || A()), c.A.updateChatOpen(n, !I, "toggle chat button")
-    }, [n, I, h, g, A, E]),
+      (0, h.X)(E, h.O.CHAT, !I), null == p || p(), !I && f && (null == A || A()), c.A.updateChatOpen(n, !I, "toggle chat button")
+    }, [n, I, p, f, A, E]),
     R = l.useCallback(e => {
       let {
         className: t
       } = e;
-      return (0, r.jsx)(v, {
+      return (0, r.jsx)(j, {
         className: t,
         channelId: n
       })
@@ -136,27 +136,27 @@ function x(e) {
       null == (e = S.current) || e.focus()
     }, []);
   (0, m.Vo)({
-    event: _.jej.FOCUS_CHAT_BUTTON,
+    event: O.jej.FOCUS_CHAT_BUTTON,
     handler: C ? null : D
   });
-  let [M, L] = l.useState(false), k = l.useCallback(() => {
-    f && L(true)
-  }, [f]);
+  let [L, M] = l.useState(false), k = l.useCallback(() => {
+    g && M(true)
+  }, [g]);
   (0, m.Vo)({
-    event: _.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+    event: O.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
     handler: k
   }), l.useEffect(() => {
     let e;
-    return M && (e = setTimeout(() => {
-      L(false)
+    return L && (e = setTimeout(() => {
+      M(false)
     }, 3e3)), () => {
       clearTimeout(e)
     }
-  }, [M]);
-  let G = [t = f && C ? O.intl.string(O.t.DPgc5h) : I ? O.intl.string(O.t.nthdxB) : O.intl.string(O.t["5KxXrK"])];
-  return P > 0 && G.push(O.intl.formatToPlainString(O.t["3l1GOx"], {
+  }, [L]);
+  let G = [t = g && C ? _.intl.string(_.t.DPgc5h) : I ? _.intl.string(_.t.nthdxB) : _.intl.string(_.t["5KxXrK"])];
+  return P > 0 && G.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
     mentionCount: P
-  })), T > 0 && G.push(O.intl.string(O.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
+  })), T > 0 && G.push(_.intl.string(_.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -183,6 +183,6 @@ function x(e) {
     wrapperClassName: s()(i, null != a && {
       [a]: N
     }),
-    forceTooltipOpen: M
-  }, x))
+    forceTooltipOpen: L
+  }, v))
 }

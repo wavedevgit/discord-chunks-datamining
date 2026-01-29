@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 401565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -19,15 +19,15 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = {},
-  p = new Set;
+  h = new Set;
 
-function h(e) {
+function p(e) {
   return o.A.isMessageRequest(e) || c.A.isSpam(e)
 }
 
-function f(e, t) {
+function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  if (!h(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
+  if (!p(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
   let r = null == t ? null : (0, s.rh)(t);
   d[e] = {
     loaded: true,
@@ -35,12 +35,12 @@ function f(e, t) {
     message: r
   }
 }
-class g extends(r = Chunk311907.Ay.Store) {
+class f extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.A, c.A, a.default)
   }
   shouldLoadMessageRequestPreview(e) {
-    return !p.has(e)
+    return !h.has(e)
   }
   getMessageRequestPreview(e) {
     return e in d || (d[e] = {
@@ -50,32 +50,32 @@ class g extends(r = Chunk311907.Ay.Store) {
     }), d[e]
   }
 }
-u(g, "displayName", "MessageRequestPreviewStore");
-let m = new g(Chunk73153.h, {
+u(f, "displayName", "MessageRequestPreviewStore");
+let m = new f(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    d = {}, p.clear()
+    d = {}, h.clear()
   },
   CHANNEL_CREATE: function(e) {
     let {
       channel: t
     } = e;
-    h(t.id) && p.add(t.id)
+    p(t.id) && h.add(t.id)
   },
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e;
-    for (let e of t) h(e.id) || (p.delete(e.id), delete d[e.id])
+    for (let e of t) p(e.id) || (h.delete(e.id), delete d[e.id])
   },
   CHANNEL_DELETE: function(e) {
     let {
       channel: t
     } = e;
-    p.delete(t.id), delete d[t.id]
+    h.delete(t.id), delete d[t.id]
   },
   MESSAGE_CREATE: function(e) {
     if (e.isPushNotification) returnfalse;
-    f(e.message.channel_id, e.message)
+    g(e.message.channel_id, e.message)
   },
   MESSAGE_UPDATE: function(e) {
     var t, n;
@@ -108,7 +108,7 @@ let m = new g(Chunk73153.h, {
     }), t)
   },
   MESSAGE_DELETE: function(e) {
-    if (!h(e.channelId)) returnfalse;
+    if (!p(e.channelId)) returnfalse;
     d[e.channelId] = {
       loaded: true,
       error: false,
@@ -121,15 +121,15 @@ let m = new g(Chunk73153.h, {
       supplementalData: n
     } = e, r = new Set([...t]);
     for (let e of (n.forEach(e => {
-        f(e.channel_id, e.message_preview), r.delete(e.channel_id)
-      }), Array.from(r))) f(e, null)
+        g(e.channel_id, e.message_preview), r.delete(e.channel_id)
+      }), Array.from(r))) g(e, null)
   },
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function(e) {
     let {
       requestedChannelIds: t
     } = e;
     t.forEach(e => {
-      f(e, null, true)
+      g(e, null, true)
     })
   }
 })

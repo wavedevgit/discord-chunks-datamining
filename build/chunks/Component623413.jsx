@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 623413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,22 +20,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk566388 = require("./566388.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk852887 = require("./852887.js");
-let _ = function(e) {
+let O = function(e) {
   let {
     participants: t,
     channel: n,
-    hasConnectPermission: _
-  } = e, O = (0, d.H)(n.guild_id), j = l.useCallback(() => {
-    O ? (0, u.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, O]), v = t.filter(e => e.type === g.wY.VOICE), x = 4 === v.length ? 2 : 3, E = (0, i.yK)([o.A], () => v.map(e => o.A.getParticipant(n.id, e.id)).filter(f.Vq), [n.id, v]);
+    hasConnectPermission: O
+  } = e, _ = (0, d.H)(n.guild_id), x = l.useCallback(() => {
+    _ ? (0, u.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+  }, [n.id, n.guild_id, _]), j = t.filter(e => e.type === f.wY.VOICE), v = 4 === j.length ? 2 : 3, E = (0, i.yK)([o.A], () => j.map(e => o.A.getParticipant(n.id, e.id)).filter(g.Vq), [n.id, j]);
   return (0, r.jsxs)("div", {
     className: y.kL,
-    children: [(0, r.jsx)(h.A, {}), (0, r.jsx)("div", {
+    children: [(0, r.jsx)(p.A, {}), (0, r.jsx)("div", {
       className: y.os,
       style: {
-        maxWidth: 168 * x
+        maxWidth: 168 * v
       },
-      children: E.slice(0, 5).map(e => (0, r.jsx)(p.Ay, {
+      children: E.slice(0, 5).map(e => (0, r.jsx)(h.Ay, {
         participant: e,
         channel: n,
         className: y.Vs,
@@ -54,7 +54,7 @@ let _ = function(e) {
         tag: "div",
         color: "text-default",
         variant: "heading-lg/normal",
-        children: (0, m.DO)(n, v)
+        children: (0, m.DO)(n, j)
       })
     }), (0, r.jsxs)("div", {
       className: y.UD,
@@ -62,9 +62,9 @@ let _ = function(e) {
         className: y.PD,
         children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
-          text: _ ? A.intl.string(A.t["7vb2cc"]) : A.intl.string(A.t.TVBCKZ),
-          onClick: j,
-          disabled: !_
+          text: O ? A.intl.string(A.t["7vb2cc"]) : A.intl.string(A.t.TVBCKZ),
+          onClick: x,
+          disabled: !O
         })
       }), (0, r.jsx)(b.l, {
         channel: n

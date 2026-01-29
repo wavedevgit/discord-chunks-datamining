@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 581781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,26 +13,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk743981 = require("./743981.js"),
   Chunk996373 = require("./996373.js");
 
-function p(e) {
+function _(e) {
   let {
     className: t,
     guildTag: n,
     guildBadge: l,
-    guildId: p,
-    guildName: _,
+    guildId: _,
+    guildName: p,
     guildIcon: m,
     guildIconSize: g
-  } = e, f = i.useRef(null), [b, h] = i.useState(false);
+  } = e, A = i.useRef(null), [f, b] = i.useState(false);
   return i.useEffect(() => {
-    let e = f.current;
-    null != e && null != e.offsetWidth && null != e.scrollWidth && h(e.offsetWidth < e.scrollWidth)
+    let e = A.current;
+    null != e && null != e.offsetWidth && null != e.scrollWidth && b(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
     className: s()(u.kL, t),
     children: [(0, r.jsxs)("div", {
       className: u.v2,
       children: [(0, r.jsx)(o.j, {
-        guildId: p,
-        guildName: _,
+        guildId: _,
+        guildName: p,
         guildIcon: m,
         iconSize: g,
         className: u.rr,
@@ -40,19 +40,19 @@ function p(e) {
       }), (0, r.jsx)("div", {
         className: u.zH,
         children: (0, r.jsx)(a.m, {
-          __unsupportedReactNodeAsText: _,
-          shouldShow: b,
+          __unsupportedReactNodeAsText: p,
+          shouldShow: f,
           children: (0, r.jsx)("span", {
-            ref: f,
+            ref: A,
             className: u.J5,
-            children: _
+            children: p
           })
         })
       })]
     }), (0, r.jsx)("div", {
       className: u.I8,
       children: (0, r.jsx)(c.o9, {
-        guildId: p,
+        guildId: _,
         className: u.Tc,
         guildTag: n,
         guildBadge: l,

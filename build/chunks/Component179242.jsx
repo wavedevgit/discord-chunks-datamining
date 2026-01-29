@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 179242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -28,39 +28,39 @@ function y(e) {
   } = e, {
     analyticsLocations: y
   } = (0, i.Ay)(), {
-    context: _
-  } = (0, o.NJ)(), O = (0, l.A)(), {
-    mutualFriendsCount: j,
-    mutualFriends: v,
-    mutualGuilds: x
-  } = (0, c.A)(t), E = !t.bot && null != j && j > 0, C = null != x && x.length > 0;
-  return E || C ? (0, r.jsxs)(g.A.Overlay, {
+    context: O
+  } = (0, o.NJ)(), _ = (0, l.A)(), {
+    mutualFriendsCount: x,
+    mutualFriends: j,
+    mutualGuilds: v
+  } = (0, c.A)(t), E = !t.bot && null != x && x > 0, C = null != v && v.length > 0;
+  return E || C ? (0, r.jsxs)(f.A.Overlay, {
     className: A.Lw,
     children: [C && (0, r.jsx)(m.A, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZq"]),
       listClassName: A.p_,
-      items: x.map(e => {
+      items: v.map(e => {
         let {
           guild: n,
           nick: l
         } = e;
-        return (0, r.jsx)(f.A, {
+        return (0, r.jsx)(g.A, {
           user: t,
           guild: n,
           nick: l,
           onSelect: () => (0, a.u)(n.id)
         }, n.id)
       })
-    }), C && E && (0, r.jsx)(p.A, {
+    }), C && E && (0, r.jsx)(h.A, {
       className: A.yF
     }), E && (0, r.jsx)(m.A, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: A.p_,
-      onExpand: () => (0, u.A)(t.id, O),
-      items: null == v ? Array.from({
-        length: j
+      onExpand: () => (0, u.A)(t.id, _),
+      items: null == j ? Array.from({
+        length: x
       }).map((e, t) => (0, r.jsxs)("div", {
         className: A.nC,
         children: [(0, r.jsx)(s.FQ, {
@@ -70,13 +70,13 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : v.map(e => {
+      }, t)) : j.map(e => {
         let {
           key: t,
           user: l,
           status: i
         } = e;
-        return (0, r.jsx)(h.A, {
+        return (0, r.jsx)(p.A, {
           user: l,
           status: i,
           channelId: n,
@@ -99,7 +99,7 @@ function y(e) {
                 })
               }
               return e
-            }({}, _), t = t = {
+            }({}, O), t = t = {
               userId: l.id,
               sourceAnalyticsLocations: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

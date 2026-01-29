@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 911411, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -13,28 +13,28 @@ var r, l, Chunk311907 = require("./311907.js"),
 function d(e, t) {
   return "".concat(e, ":").concat(t)
 }
-let p = {},
-  h = {},
-  f = new Chunk451988.J_(3e3, function() {
+let h = {},
+  p = {},
+  g = new Chunk451988.J_(3e3, function() {
     let e = [];
-    for (let [t, n] of Object.entries(h)) e.push(n), p[t] = n, delete h[t];
+    for (let [t, n] of Object.entries(p)) e.push(n), h[t] = n, delete p[t];
     0 !== e.length && o.A.subscribeActivities(e)
   });
 
-function g(e) {
+function f(e) {
   let t = d(e.applicationId, e.partyId);
-  return t in p || t in h
+  return t in h || t in p
 }
 
 function m() {
-  p = {}, h = {}
+  h = {}, p = {}
 }
 class b extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(c.A)
   }
   isSubscribed(e) {
-    return g(e)
+    return f(e)
   }
 }(l = "displayName") in b ? Object.defineProperty(b, l, {
   value: "PresenceSubscriptionsStore",
@@ -49,8 +49,8 @@ let A = new b(Chunk73153.h, {
     } = e, n = function() {
       let e = false,
         t = Date.now();
-      for (let [n, r] of Object.entries(p)) r.expiresAt < t && (delete p[n], e = true);
       for (let [n, r] of Object.entries(h)) r.expiresAt < t && (delete h[n], e = true);
+      for (let [n, r] of Object.entries(p)) r.expiresAt < t && (delete p[n], e = true);
       return e
     }(), {
       userId: r,
@@ -60,21 +60,21 @@ let A = new b(Chunk73153.h, {
       channelId: a,
       inviteTime: o
     } = t;
-    if (g(t) || o + u.dm < Date.now()) return n;
+    if (f(t) || o + u.dm < Date.now()) return n;
     let c = d(l, i),
       m = u.dm + Date.now();
-    return h[c] = {
+    return p[c] = {
       userId: r,
       applicationId: l,
       partyId: i,
       messageId: s,
       channelId: a,
       expiresAt: m
-    }, f.delay(), true
+    }, g.delay(), true
   },
   CONNECTION_OPEN: m,
   CONNECTION_RESUMED: m,
   LOGOUT: function() {
-    p = {}, h = {}
+    h = {}, p = {}
   }
 })

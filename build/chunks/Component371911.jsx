@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 371911, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => I
@@ -39,13 +39,13 @@ function I(e) {
       popoutAlign: w,
       targetElementRef: R,
       spacing: D,
-      dialogClassName: M
+      dialogClassName: L
     } = e,
     {
-      analyticsLocations: L
-    } = (0, p.Ay)(d.A.NOTIFICATION_CENTER),
+      analyticsLocations: M
+    } = (0, h.Ay)(d.A.NOTIFICATION_CENTER),
     [k, G] = l.useState(false),
-    [U, B] = [(0, o.bG)([A.A], () => {
+    [U, V] = [(0, o.bG)([A.A], () => {
       var e, t;
       return null != (e = null == (t = A.A.settings.inbox) ? true : t.currentTab) ? e : c.Y2.UNREADS
     }), l.useCallback(e => {
@@ -55,8 +55,8 @@ function I(e) {
       }, b.Sb.FREQUENT_USER_ACTION)
     }, [])],
     {
-      showTutorial: V,
-      setSeenTutorial: F
+      showTutorial: B,
+      setSeenTutorial: H
     } = (t = (0, o.bG)([A.A], () => {
       var e, t;
       return null != (e = null == (t = A.A.settings.inbox) ? true : t.viewedTutorial) && e
@@ -68,7 +68,7 @@ function I(e) {
       showTutorial: !t && U === c.Y2.UNREADS,
       setSeenTutorial: n
     }),
-    H = l.useCallback(() => {
+    F = l.useCallback(() => {
       G(false), k && (null == I || I())
     }, [I, k]),
     K = l.useCallback(() => {
@@ -76,22 +76,22 @@ function I(e) {
     }, [I, i, k]);
   l.useEffect(() => (y._.subscribe(E.jej.TOGGLE_INBOX, K), () => void y._.unsubscribe(E.jej.TOGGLE_INBOX, K)), [K]);
   let {
-    enabled: W,
-    inInbox: z
-  } = h.A.useExperiment({
+    enabled: Y,
+    inInbox: W
+  } = p.A.useExperiment({
     location: "RecentsPopout"
-  }), Y = (0, o.bG)([f.A], () => f.A.hasOverdueReminder(), []) && W && z;
+  }), z = (0, o.bG)([g.A], () => g.A.hasOverdueReminder(), []) && Y && W;
   l.useEffect(() => {
-    U !== c.Y2.BOOKMARKS || W || z || B(c.Y2.MENTIONS), U === c.Y2.GAME_INVITES && B(c.Y2.MENTIONS)
+    U !== c.Y2.BOOKMARKS || Y || W || V(c.Y2.MENTIONS), U === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
   });
   let q = l.useCallback(e => {
-      e.shiftKey || H()
-    }, [H]),
+      e.shiftKey || F()
+    }, [F]),
     X = (0, m.Sc)({
       location: "ForYou"
     });
-  return (0, r.jsx)(p.f5, {
-    value: L,
+  return (0, r.jsx)(h.f5, {
+    value: M,
     children: (0, r.jsx)(u.YNO, {
       targetElementRef: R,
       animation: u.YNO.Animation.NONE,
@@ -99,33 +99,33 @@ function I(e) {
       align: w,
       autoInvert: false,
       shouldShow: k,
-      onRequestClose: H,
+      onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.lGe, {
           "aria-label": C.intl.string(C.t.GSmTKJ),
-          className: M,
+          className: L,
           children: (0, r.jsx)("div", {
             className: s()(S.k, {
               [S.q]: X
             }),
             children: (0, r.jsx)(u.Fmo, {
-              component: (0, r.jsx)(j.A, {
+              component: (0, r.jsx)(x.A, {
                 tab: U,
-                setTab: B,
+                setTab: V,
                 badgeState: T,
-                closePopout: H
+                closePopout: F
               }),
-              children: U === c.Y2.FOR_YOU ? (0, r.jsx)(_.Ay, {}) : U === c.Y2.MENTIONS ? (0, r.jsx)(O.A, {
+              children: U === c.Y2.FOR_YOU ? (0, r.jsx)(O.Ay, {}) : U === c.Y2.MENTIONS ? (0, r.jsx)(_.A, {
                 onJump: q
-              }) : W && z && U === c.Y2.BOOKMARKS ? (0, r.jsx)(g.J, {
-                closePopout: H
-              }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(v.w, {}) : (0, r.jsx)(a.tH, {
-                fallback: (0, r.jsx)(x.T, {}),
-                children: (0, r.jsx)(x.Ay, {
+              }) : Y && W && U === c.Y2.BOOKMARKS ? (0, r.jsx)(f.J, {
+                closePopout: F
+              }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(j.w, {}) : (0, r.jsx)(a.tH, {
+                fallback: (0, r.jsx)(v.T, {}),
+                children: (0, r.jsx)(v.Ay, {
                   onJump: q,
-                  showTutorial: V,
-                  setSeenTutorial: F,
-                  closePopout: H
+                  showTutorial: B,
+                  setSeenTutorial: H,
+                  closePopout: F
                 })
               })
             })
@@ -139,7 +139,7 @@ function I(e) {
         let {
           isShown: n
         } = t;
-        return N(K, n, e, Y)
+        return N(K, n, e, z)
       }
     })
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 283354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,41 +14,41 @@ var Chunk627968 = require("./627968.js"),
   Chunk352123 = require("./352123.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e) {
+function p(e) {
   let {
     entry: t,
-    onSelect: h,
-    closePopout: f,
-    hideEditButton: g = false
+    onSelect: p,
+    closePopout: g,
+    hideEditButton: f = false
   } = e, {
     isEntryAdmin: m,
     canEdit: b,
     canRemove: A
   } = (0, d.A)(t), y = (0, o.A)({
     id: t.guildId,
-    label: p.intl.string(p.t["94lLD7"]),
-    onSuccess: f
+    label: h.intl.string(h.t["94lLD7"]),
+    onSuccess: g
   });
   l.useEffect(() => {
     b || A || null != y || (0, a.Z_)()
   });
-  let _ = () => {
+  let O = () => {
     u.ZM(t.channelId, t.guildId)
   };
 
-  function O() {
-    (0, a.Z_)(), null == f || f()
+  function _() {
+    (0, a.Z_)(), null == g || g()
   }
   return (0, r.jsxs)(s.W1t, {
     "data-menu-migrated": true,
     navId: "guild-entry-context",
-    onClose: O,
-    "aria-label": p.intl.string(p.t.HpQykc),
-    onSelect: h,
+    onClose: _,
+    "aria-label": h.intl.string(h.t.HpQykc),
+    onSelect: p,
     children: [(0, r.jsxs)(s.rXV, {
-      children: [b && !g ? (0, r.jsx)(s.Drp, {
+      children: [b && !f ? (0, r.jsx)(s.Drp, {
         id: "update-entry",
-        label: p.intl.string(p.t.XnuOvN),
+        label: h.intl.string(h.t.XnuOvN),
         action: function() {
           (0, s.mMO)(async () => {
             let {
@@ -86,7 +86,7 @@ function h(e) {
                 Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
               }), l))
             }
-          }), O()
+          }), _()
         },
         leadingAccessory: {
           type: "icon",
@@ -94,16 +94,16 @@ function h(e) {
         }
       }) : null, A ? (0, r.jsx)(s.Drp, {
         id: "remove-from-hub",
-        label: p.intl.string(p.t.KUxYWH),
+        label: h.intl.string(h.t.KUxYWH),
         action: function() {
           (0, i.A)({
-            title: p.intl.string(p.t.KUxYWH),
-            subtitle: p.intl.format(p.t["/5y0uV"], {
+            title: h.intl.string(h.t.KUxYWH),
+            subtitle: h.intl.format(h.t["/5y0uV"], {
               guildName: t.name
             }),
-            confirmText: p.intl.string(p.t.N86XcP),
-            onConfirm: _
-          }), O()
+            confirmText: h.intl.string(h.t.N86XcP),
+            onConfirm: O
+          }), _()
         },
         color: "danger",
         leadingAccessory: {
@@ -112,9 +112,9 @@ function h(e) {
         }
       }) : null, m ? null : (0, r.jsx)(s.Drp, {
         id: "report-server-listing",
-        label: p.intl.string(p.t.Aen9eh),
+        label: h.intl.string(h.t.Aen9eh),
         action: function() {
-          null != t && ((0, c.sJ)(t), O())
+          null != t && ((0, c.sJ)(t), _())
         },
         icon: s.iFK,
         leadingAccessory: {

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 357819, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,72 +23,72 @@ var Chunk627968 = require("./627968.js"),
 function y(e) {
   return e.type === u.wY.VOICE
 }
-let _ = (0, Chunk456412.A)(e => {
+let O = (0, Chunk456412.A)(e => {
   var t, n;
-  let s, _, {
-      channel: O,
-      width: j,
-      onScroll: v,
-      popoutType: x
+  let s, O, {
+      channel: _,
+      width: x,
+      onScroll: j,
+      popoutType: v
     } = e,
     {
       selectedParticipantId: E,
       largeStream: C,
       chatOpen: S
     } = (0, i.cf)([a.A], () => ({
-      selectedParticipantId: a.A.getSelectedParticipantId(O.id),
-      largeStream: a.A.getStageStreamSize(O.id),
-      chatOpen: a.A.getChatOpen(O.id)
-    }), [O.id]),
-    I = (0, c.uy)(O.id),
-    N = (0, c.zy)(O.id, u.ip.AUDIENCE),
-    T = (0, i.bG)([o.A], () => null != E ? o.A.getParticipant(O.id, E) : null),
-    P = (0, c.E5)(O.id, u.ip.SPEAKER),
+      selectedParticipantId: a.A.getSelectedParticipantId(_.id),
+      largeStream: a.A.getStageStreamSize(_.id),
+      chatOpen: a.A.getChatOpen(_.id)
+    }), [_.id]),
+    I = (0, c.uy)(_.id),
+    N = (0, c.zy)(_.id, u.ip.AUDIENCE),
+    T = (0, i.bG)([o.A], () => null != E ? o.A.getParticipant(_.id, E) : null),
+    P = (0, c.E5)(_.id, u.ip.SPEAKER),
     w = P.filter(y),
     R = null != P.find(e => e.type === u.wY.STREAM),
-    D = Math.floor((j - 32) / 102),
-    M = j < 424 ? 1 : j < 624 ? 2 : j < 824 || S ? 3 : 4,
-    L = {
-      [u.ip.SPEAKER]: M,
+    D = Math.floor((x - 32) / 102),
+    L = x < 424 ? 1 : x < 624 ? 2 : x < 824 || S ? 3 : 4,
+    M = {
+      [u.ip.SPEAKER]: L,
       [u.ip.AUDIENCE]: D,
       [u.ip.SELECTED]: 1
     },
-    k = (0, d.Uo)(O.id),
-    [G, U] = (0, d.RG)(O.id, L, k),
-    B = [Math.max(null != (t = G[0]) ? t : 1, 1), Math.max(null != (n = G[1]) ? n : 1, 1), G[2]],
+    k = (0, d.Uo)(_.id),
+    [G, U] = (0, d.RG)(_.id, M, k),
+    V = [Math.max(null != (t = G[0]) ? t : 1, 1), Math.max(null != (n = G[1]) ? n : 1, 1), G[2]],
     {
-      speakerTileWidth: V,
-      speakerTileHeight: F
-    } = (_ = Math.floor((s = Math.floor(j / M - 8)) / m.i), {
+      speakerTileWidth: B,
+      speakerTileHeight: H
+    } = (O = Math.floor((s = Math.floor(x / L - 8)) / m.i), {
       speakerTileWidth: s,
-      speakerTileHeight: _
+      speakerTileHeight: O
     }),
-    H = C ? j - 32 : Math.min(j - 64, 3 * V + 8),
+    F = C ? x - 32 : Math.min(x - 64, 3 * B + 8),
     K = e => e === G.length - 1 || 0 === N && 1 === e,
-    [W, z] = l.useState(false),
-    [Y, q] = l.useState(false);
-  return (0, r.jsx)(h.A, {
-    sections: B,
+    [Y, W] = l.useState(false),
+    [z, q] = l.useState(false);
+  return (0, r.jsx)(p.A, {
+    sections: V,
     renderSection: e => {
       let {
         section: t
       } = e;
-      return 1 === t ? 0 === I ? null : (0, r.jsx)(g.A, {
+      return 1 === t ? 0 === I ? null : (0, r.jsx)(f.A, {
         participantCount: I,
         label: b.intl.string(b.t.CduOkx),
         className: A.wx,
-        onClick: () => z(!W),
-        collapsed: W,
+        onClick: () => W(!Y),
+        collapsed: Y,
         speakers: w,
-        channel: O,
+        channel: _,
         isStreamLive: R
-      }, "speaker-header-".concat(t)) : 2 === t ? 0 === N ? null : (0, r.jsx)(g.A, {
+      }, "speaker-header-".concat(t)) : 2 === t ? 0 === N ? null : (0, r.jsx)(f.A, {
         participantCount: N,
         label: b.intl.string(b.t["3foUu5"]),
         className: A.wx,
-        onClick: () => q(!Y),
-        collapsed: Y,
-        channel: O
+        onClick: () => q(!z),
+        collapsed: z,
+        channel: _
       }, "audience-header-".concat(t)) : null
     },
     sectionHeight: e => 48,
@@ -104,27 +104,27 @@ let _ = (0, Chunk456412.A)(e => {
           return (0, r.jsx)("div", {
             className: A.Od,
             children: (0, r.jsx)(m.A, {
-              channel: O,
+              channel: _,
               participant: i[0],
-              width: H,
-              popoutType: x
+              width: F,
+              popoutType: v
             })
           }, "selected-participant");
         case 1:
-          if (W) return null;
+          if (Y) return null;
           return (0, r.jsx)(l.Fragment, {
-            children: (0, r.jsx)(f.A, {
-              tileWidth: V,
-              channel: O,
+            children: (0, r.jsx)(g.A, {
+              tileWidth: B,
+              channel: _,
               participants: i,
               selectedParticipant: T,
-              popoutType: x
+              popoutType: v
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
-          if (Y) return null;
-          return (0, r.jsx)(p.A, {
-            channel: O,
+          if (z) return null;
+          return (0, r.jsx)(h.A, {
+            channel: _,
             participants: i,
             maxTiles: D
           }, "audience-".concat(t, "-").concat(n));
@@ -132,7 +132,7 @@ let _ = (0, Chunk456412.A)(e => {
           return null
       }
     },
-    rowHeight: e => null == U[e][0] ? 0 : 0 === e ? H / m.i + 8 : 1 === e ? W ? 0 : F : 98 * !Y,
+    rowHeight: e => null == U[e][0] ? 0 : 0 === e ? F / m.i + 8 : 1 === e ? Y ? 0 : H : 98 * !z,
     renderFooter: e => {
       let {
         section: t
@@ -144,6 +144,6 @@ let _ = (0, Chunk456412.A)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!K(e),
     className: A.XG,
     chunkSize: 60,
-    onScroll: v
+    onScroll: j
   })
 })

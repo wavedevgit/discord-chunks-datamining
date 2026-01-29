@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 502754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -23,11 +23,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk359884 = require("./359884.js");
-let v = {
+let j = {
     left: 4,
     right: false
   },
-  x = [Chunk652215.lAJ.THREAD_CREATED];
+  v = [Chunk652215.lAJ.THREAD_CREATED];
 
 function E(e) {
   var t, n, i;
@@ -36,16 +36,16 @@ function E(e) {
     message: c,
     compact: u,
     isGroupStart: d,
-    treatSpam: p,
-    gotoChannel: f
-  } = e, g = (0, a.rm)(null != (t = c.id) ? t : ""), m = l.useCallback(e => {
+    treatSpam: h,
+    gotoChannel: g
+  } = e, f = (0, a.rm)(null != (t = c.id) ? t : ""), m = l.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
       null == (t = document.querySelector('[data-recents-channel="'.concat(s.id, '"]'))) || t.focus()
     }
-  }, [s.id]), b = x.includes(c.type);
+  }, [s.id]), b = v.includes(c.type);
   return (0, r.jsx)(o.vN3, {
-    offset: v,
+    offset: j,
     children: (0, r.jsxs)("div", (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -64,22 +64,22 @@ function E(e) {
       }
       return e
     }({
-      className: j.zC,
+      className: x.zC,
       onKeyDown: m
-    }, g), i = i = {
+    }, f), i = i = {
       children: [!b && (0, r.jsx)(A.A, {
-        className: j.nn,
-        onJump: e => f(e, c.id)
-      }), (0, r.jsx)(h.A, {
+        className: x.nn,
+        onJump: e => g(e, c.id)
+      }), (0, r.jsx)(p.A, {
         id: c.id,
         message: c,
         channel: s,
-        className: j.iU,
+        className: x.iU,
         compact: u,
         animateAvatar: false,
         isGroupStart: d,
         onKeyDown: m,
-        treatSpam: p
+        treatSpam: h
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -101,12 +101,12 @@ function C(e) {
     channelRecord: i,
     gotoChannel: a
   } = e, {
-    enabled: h
+    enabled: p
   } = c.A.useExperiment({
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), A = f.hH.useSetting(), v = (0, d.iJ)(i), x = false, C = 0 === l.messages.length || s()(l.messages[0].timestamp).isSame(s()(), "day"), S = null != (t = null == (n = m.default.getUser(g.default.getId())) ? true : n.hasFlag(_.nhx.SPAMMER)) && t, I = [];
+  }), A = g.hH.useSetting(), j = (0, d.iJ)(i), v = false, C = 0 === l.messages.length || s()(l.messages[0].timestamp).isSame(s()(), "day"), S = null != (t = null == (n = m.default.getUser(f.default.getId())) ? true : n.hasFlag(O.nhx.SPAMMER)) && t, I = [];
   if (!l.collapsed) {
     let e = null,
       t = null,
@@ -114,33 +114,33 @@ function C(e) {
     n.forEach(n => {
       if (!C && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, b.i$)(n.timestamp, "LL");
-        I.push((0, r.jsx)(p.A, {
-          className: j.yF,
+        I.push((0, r.jsx)(h.A, {
+          className: x.yF,
           children: t
         }, t)), e = s()(n.timestamp)
       }
       let l = null == t || (0, u.A)(i, t, n);
-      t = n, x = x || (0, d.kf)(n), I.push((0, r.jsx)(E, {
+      t = n, v = v || (0, d.kf)(n), I.push((0, r.jsx)(E, {
         channel: i,
         message: n,
         compact: A,
         isGroupStart: l,
-        treatSpam: !S && h && (0, d.kf)(n) && v,
+        treatSpam: !S && p && (0, d.kf)(n) && j,
         gotoChannel: a
       }, n.id))
     }), l.messages.length >= y.sz && I.push((0, r.jsx)("div", {
-      className: j.Gr,
+      className: x.Gr,
       children: (0, r.jsx)(o.QWc, {
         variant: "primary",
-        text: "".concat(O.intl.string(O.t["9OB9hq"]), " ›"),
+        text: "".concat(_.intl.string(_.t["9OB9hq"]), " ›"),
         onClick: e => a(e, n[n.length - 1].id)
       })
     }, "view-all")), 0 === I.length && (I = [(0, r.jsx)(o.y$y, {}, "spinner")])
   }
-  return x && v && c.A.trackExposure({
+  return v && j && c.A.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
-    className: j.DZ,
+    className: x.DZ,
     children: I
   })
 }

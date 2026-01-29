@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 915953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
@@ -18,37 +18,37 @@ function a(e) {
     maxValue: c,
     useDefaultValue: d,
     useTitle: u,
-    useSubtitle: p,
-    useHintText: _,
+    useSubtitle: _,
+    useHintText: p,
     useDisabled: m,
     onValueRender: g,
-    asValueChanges: f,
-    markers: b,
-    onMarkerRender: h,
-    stickToMarkers: A,
+    asValueChanges: A,
+    markers: f,
+    onMarkerRender: b,
+    stickToMarkers: h,
     fieldLayout: E
-  } = t, [x] = i.useState(() => a()), O = u(), C = null == p ? true : p(), y = null == _ ? true : _(), j = null == m ? true : m(), T = null == d ? true : d();
+  } = t, [O] = i.useState(() => a()), C = u(), x = null == _ ? true : _(), S = null == p ? true : p(), T = null == m ? true : m(), I = null == d ? true : d();
   return (0, r.jsxs)(s.L, {
     children: [(0, r.jsx)(l.Apm, {
-      label: O,
-      description: C,
-      disabled: j,
-      initialValue: x,
+      label: C,
+      description: x,
+      disabled: T,
+      initialValue: O,
       minValue: o,
       maxValue: c,
-      defaultValue: T,
+      defaultValue: I,
       onValueRender: g,
-      asValueChanges: f,
+      asValueChanges: A,
       onValueChange: n,
       orientation: "horizontal",
-      markers: b,
-      onMarkerRender: h,
-      stickToMarkers: A,
+      markers: f,
+      onMarkerRender: b,
+      stickToMarkers: h,
       layout: E
-    }), null != y && (0, r.jsx)(l.Text, {
+    }), null != S && (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: y
+      children: S
     })]
   })
 }

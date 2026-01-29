@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 59000, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,14 +15,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk491986 = require("./491986.js"),
   Chunk745652 = require("./745652.js"),
   Chunk855324 = require("./855324.js");
-let g = () => {
+let f = () => {
   let e = (0, a.Ay)();
   l.useEffect(() => {
     o.Ay.trackWithMetadata(u.HAw.GUILD_OUTAGE_VIEWED, {})
   }, []);
-  let t = (0, i.Mw)(e) ? h : f;
+  let t = (0, i.Mw)(e) ? p : g;
   return (0, r.jsxs)("div", {
-    className: p.kL,
+    className: h.kL,
     children: [(0, r.jsxs)(c.A, {
       toolbar: (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsx)(c.A.Icon, {
@@ -32,17 +32,17 @@ let g = () => {
         children: d.intl.string(d.t["8LKchl"])
       })]
     }), (0, r.jsxs)("div", {
-      className: p.Qs,
+      className: h.Qs,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: p.j0,
+        className: h.j0,
         src: t
       }), (0, r.jsx)(s.Heading, {
-        className: p.Zd,
+        className: h.Zd,
         variant: "heading-lg/medium",
         children: d.intl.string(d.t.m9gRVN)
       }), (0, r.jsx)(s.Text, {
-        className: p.fh,
+        className: h.fh,
         variant: "text-md/normal",
         children: d.intl.string(d.t.wC3j56)
       })]

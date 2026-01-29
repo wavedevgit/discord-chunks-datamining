@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 762561, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => U
@@ -64,51 +64,51 @@ function U(e) {
     user: n,
     currentUser: m,
     channel: U
-  } = e, V = __OVERLAY__, F = (0, A.Ay)(n.id), H = (0, c.Ay)(), K = l.useRef(Date.now()), {
-    analyticsLocations: W
-  } = (0, d.Ay)(u.A.USER_PROFILE_SIDEBAR), z = (0, g.pb)({
+  } = e, B = __OVERLAY__, H = (0, A.Ay)(n.id), F = (0, c.Ay)(), K = l.useRef(Date.now()), {
+    analyticsLocations: Y
+  } = (0, d.Ay)(u.A.USER_PROFILE_SIDEBAR), W = (0, f.pb)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: U.id
-  }), Y = l.useRef(null), {
+  }), z = l.useRef(null), {
     isHoveringOrFocusing: q,
     isHovering: X
-  } = (0, p.A)(Y), J = (0, y.fC)(), Q = (0, o.zhh)({
+  } = (0, h.A)(z), J = (0, y.fC)(), Q = (0, o.zhh)({
     opacity: +(null != J.interactionType),
     config: {
       duration: 150
     }
   }), Z = e => {
-    (0, _.openUserProfileModal)(G({
-      sourceAnalyticsLocations: W,
+    (0, O.openUserProfileModal)(G({
+      sourceAnalyticsLocations: Y,
       hideRestrictedProfile: true
-    }, z, e))
-  }, $ = (null == F ? true : F.widgets) != null && F.widgets.length > 0, {
+    }, W, e))
+  }, $ = (null == H ? true : H.widgets) != null && H.widgets.length > 0, {
     defaultWishlistId: ee
   } = (0, a.cf)([b.A], () => ({
     defaultWishlistId: b.A.getFirstWishlistId(n.id)
   })), {
     wishlist: et
-  } = (0, f.fw)({
+  } = (0, g.fw)({
     wishlistId: ee,
     userId: n.id
   }), en = l.useMemo(() => null == et ? null : et.items.filter(e => !e.isOwned), [et]);
   return (0, r.jsx)(d.f5, {
-    value: W,
-    children: (0, r.jsx)(g.of, {
-      value: z,
+    value: Y,
+    children: (0, r.jsx)(f.of, {
+      value: W,
       openedAt: K.current,
-      fetchStartedAt: null == F ? true : F.fetchStartedAt,
-      fetchEndedAt: null == F ? true : F.fetchEndedAt,
-      isLoaded: null == F ? true : F.isLoaded,
+      fetchStartedAt: null == H ? true : H.fetchStartedAt,
+      fetchEndedAt: null == H ? true : H.fetchEndedAt,
+      isLoaded: null == H ? true : H.isLoaded,
       children: (0, r.jsx)(y.Hl, {
         value: J,
         children: (0, r.jsxs)(E.A, {
-          ref: Y,
+          ref: z,
           user: n,
-          displayProfile: F,
-          themeType: M.d.SIDEBAR,
-          themeOverride: H,
+          displayProfile: H,
+          themeType: L.d.SIDEBAR,
+          themeOverride: F,
           children: [null != J.interactionType && (0, r.jsx)(i.animated.div, {
             style: Q,
             className: k.tB
@@ -116,7 +116,7 @@ function U(e) {
             children: [(0, r.jsxs)(S.A, {
               children: [(0, r.jsx)(I.A, {
                 user: n,
-                themeType: M.d.SIDEBAR
+                themeType: L.d.SIDEBAR
               }), n.bot ? (0, r.jsx)(C.A, {
                 user: n
               }) : (0, r.jsx)(N.yo, {
@@ -124,39 +124,39 @@ function U(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: k.wx,
-              children: [(0, r.jsx)(j.A, {
+              children: [(0, r.jsx)(x.A, {
                 user: n,
-                displayProfile: F,
-                themeType: M.d.SIDEBAR,
+                displayProfile: H,
+                themeType: L.d.SIDEBAR,
                 animateOnHoverOrFocusOnly: !q,
                 className: k.vK
-              }), (0, r.jsx)(v.A, {
+              }), (0, r.jsx)(j.A, {
                 userId: n.id,
                 className: k.oR
-              }), (0, r.jsx)(O.A, {
+              }), (0, r.jsx)(_.A, {
                 user: n,
-                displayProfile: F,
+                displayProfile: H,
                 channelId: U.id,
-                themeType: M.d.SIDEBAR,
-                onOpenProfile: V ? true : Z
+                themeType: L.d.SIDEBAR,
+                onOpenProfile: B ? true : Z
               }), (0, r.jsx)(T.A, {
                 user: n,
                 channelId: U.id,
-                themeType: M.d.SIDEBAR,
+                themeType: L.d.SIDEBAR,
                 disableToolbar: n.bot
               })]
             }), (0, r.jsx)(P.A, {
               user: n,
               currentUser: m,
-              displayProfile: F,
+              displayProfile: H,
               channel: U,
               isHoveringOrFocusing: null == J.interactionType && q,
-              onOpenProfile: V ? true : Z
+              onOpenProfile: B ? true : Z
             }), $ && (0, r.jsx)("div", {
               className: k.sJ,
-              children: (0, r.jsx)(x.A, {
+              children: (0, r.jsx)(v.A, {
                 user: n,
-                widgets: F.widgets,
+                widgets: H.widgets,
                 onOpenUserProfileModal: Z
               })
             }), null != en && en.length > 0 && (0, r.jsx)("div", {
@@ -165,7 +165,7 @@ function U(e) {
                 profileOwner: n,
                 unownedWishlistItems: en,
                 wishlistId: ee,
-                title: L.intl.string(L.t["7lZ31J"]),
+                title: M.intl.string(M.t["7lZ31J"]),
                 onClick: () => {
                   null == Z || Z({
                     tabSection: D.RP.WISHLIST
@@ -176,12 +176,12 @@ function U(e) {
               user: n,
               channelId: U.id
             })]
-          }), !V && (0, r.jsx)(B, {
+          }), !B && (0, r.jsx)(V, {
             handleOpenProfile: Z,
-            analyticsLocations: W,
-            context: z
-          }), (null == F ? true : F.profileEffect) != null && (0, r.jsx)(h.A, {
-            skuId: null == F || null == (t = F.profileEffect) ? true : t.skuId,
+            analyticsLocations: Y,
+            context: W
+          }), (null == H ? true : H.profileEffect) != null && (0, r.jsx)(p.A, {
+            skuId: null == H || null == (t = H.profileEffect) ? true : t.skuId,
             isHovering: X
           })]
         })
@@ -189,7 +189,7 @@ function U(e) {
     })
   })
 }
-let B = e => {
+let V = e => {
   let {
     handleOpenProfile: t,
     analyticsLocations: n,
@@ -210,7 +210,7 @@ let B = e => {
       children: (0, r.jsx)(o.Text, {
         color: s,
         variant: "text-sm/normal",
-        children: L.intl.string(L.t["+Xp3hq"])
+        children: M.intl.string(M.t["+Xp3hq"])
       })
     })
   })

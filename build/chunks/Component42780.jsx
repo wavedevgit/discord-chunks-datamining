@@ -104,7 +104,7 @@ function b(e) {
     null != i && (0, o.mMO)(async () => {
       let {
         default: a
-      } = await Promise.all([n.e("79149"), n.e("35929"), n.e("74571"), n.e("72968")]).then(n.bind(n, 142630));
+      } = await Promise.all([n.e("35929"), n.e("79149"), n.e("74571"), n.e("72968")]).then(n.bind(n, 142630));
       return n => (0, r.jsx)(a, g({
         uploadType: _.HL.GUILD_ICON,
         imageUri: e,

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 534189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -42,16 +42,16 @@ function P(e) {
     isHoveringOrFocusing: R,
     onOpenProfile: D
   } = e, {
-    relationshipType: M,
-    originApplicationId: L
+    relationshipType: L,
+    originApplicationId: M
   } = (0, i.cf)([u.A], () => ({
     relationshipType: u.A.getRelationshipType(t.id),
     originApplicationId: u.A.getOriginApplicationId(t.id)
   })), k = (0, a.fi)(t.id), G = (0, o.q)({
     userId: t.id
-  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), B = (0, i.bG)([h.A], () => {
+  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), V = (0, i.bG)([p.A], () => {
     var e;
-    return null == (e = h.A.getUserProfile(t.id)) ? true : e.application
+    return null == (e = p.A.getUserProfile(t.id)) ? true : e.application
   });
   return (0, r.jsxs)("div", {
     className: T.rf,
@@ -60,10 +60,10 @@ function P(e) {
     }), (0, r.jsx)(E.A, {
       user: t,
       guildId: w.guild_id,
-      nickname: p.Ay.getName(null, w.id, t),
+      nickname: h.Ay.getName(null, w.id, t),
       pronouns: null == P ? true : P.pronouns,
       onOpenProfile: D,
-      tags: (0, r.jsx)(g.A, {
+      tags: (0, r.jsx)(f.A, {
         displayProfile: P,
         themeType: I.d.SIDEBAR
       }),
@@ -72,23 +72,23 @@ function P(e) {
         isVisible: R,
         onOpenProfile: D
       })
-    }), M === S.eA$.PENDING_INCOMING && (0, r.jsx)(x.A.Overlay, {
+    }), L === S.eA$.PENDING_INCOMING && (0, r.jsx)(v.A.Overlay, {
       children: (0, r.jsx)(y.A, {
         user: t,
         channelId: w.id,
-        applicationId: L
+        applicationId: M
       })
-    }), k.map(e => (0, r.jsx)(x.A.Overlay, {
+    }), k.map(e => (0, r.jsx)(v.A.Overlay, {
       children: (0, r.jsx)(y.A, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
         channelId: w.id
       })
-    }, e.applicationId)), (0, r.jsx)(O.A, {
+    }, e.applicationId)), (0, r.jsx)(_.A, {
       user: t
-    }), t.isProvisional && (0, r.jsx)(x.A.Overlay, {
-      children: (0, r.jsx)(j.A, {
+    }), t.isProvisional && (0, r.jsx)(v.A.Overlay, {
+      children: (0, r.jsx)(x.A, {
         heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(l.CircleErrorIcon, {
           size: "xxs",
@@ -99,13 +99,13 @@ function P(e) {
           userId: t.id
         })
       })
-    }), (0, r.jsx)(v.A, {
+    }), (0, r.jsx)(j.A, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: D
-    }), (0, r.jsxs)(x.A.Overlay, {
+    }), (0, r.jsxs)(v.A.Overlay, {
       className: T.Lw,
-      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(j.A, {
+      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(x.A, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(m.A, {
@@ -114,20 +114,20 @@ function P(e) {
           isHoveringOrFocusing: R,
           animateOnHoverOrFocusOnly: true
         })
-      }), (null == B ? true : B.popularApplicationCommandIds) != null && (0, r.jsx)(f.A, {
-        applicationId: B.id,
-        commandIds: B.popularApplicationCommandIds,
+      }), (null == V ? true : V.popularApplicationCommandIds) != null && (0, r.jsx)(g.A, {
+        applicationId: V.id,
+        commandIds: V.popularApplicationCommandIds,
         channel: w
-      }), G.length > 0 && (0, r.jsx)(j.A, {
+      }), G.length > 0 && (0, r.jsx)(x.A, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(A.A, {
           applicationIds: G
         })
-      }), (0, r.jsx)(j.A, {
+      }), (0, r.jsx)(x.A, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "text-strong",
-        children: (0, r.jsx)(_.A, {
+        children: (0, r.jsx)(O.A, {
           userId: t.id
         })
       })]

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 658137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,78 +30,78 @@ var Chunk627968 = require("./627968.js"),
   Chunk182514 = require("./182514.js"),
   Chunk619947 = require("./619947.js"),
   Chunk733907 = require("./733907.js");
-let N = Chunk64700.forwardRef((e, t) => {
+let v = Chunk64700.forwardRef((e, t) => {
   let {
     className: n,
     buttonClassName: i,
     subscriptionTier: l,
-    isDarkMode: N,
+    isDarkMode: v,
     isEligibleForBogoPromotion: P,
     videoRef: R
   } = e, {
     analyticsLocations: D
-  } = (0, p.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), w = (0, b.QQ)(), L = (0, f.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), G = (0, h.A)(), U = null != G, k = N ? o.XD.WHITE : o.XD.BRAND, H = M.length > 0, B = j.intl.string(j.t.YCZldK), V = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
-  return (0, r.jsx)(p.f5, {
+  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), L = (0, f.QQ)(), w = (0, A.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), G = (0, b.A)(), U = null != G, k = v ? o.XD.WHITE : o.XD.BRAND, B = M.length > 0, H = T.intl.string(T.t.YCZldK), V = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
+  return (0, r.jsx)(_.f5, {
     value: D,
     children: (0, r.jsxs)("div", {
-      className: s()(T.kL, T.qY, n),
+      className: s()(I.kL, I.qY, n),
       ref: t,
       "data-testid": "marketing-page-hero-header",
       children: [(0, r.jsx)("div", {
-        className: T.kL,
+        className: I.kL,
         children: (0, r.jsxs)("div", {
-          className: T.s8,
-          children: [L && (0, r.jsx)(C.A, {}), (0, r.jsx)(c.Heading, {
-            className: T.WT,
+          className: I.s8,
+          children: [w && (0, r.jsx)(x.A, {}), (0, r.jsx)(c.Heading, {
+            className: I.WT,
             variant: "display-sm",
             color: "text-strong",
-            children: B
-          }), U ? (0, r.jsx)(x.A, {
+            children: H
+          }), U ? (0, r.jsx)(O.A, {
             referrer: G
-          }) : H && (0, r.jsx)("div", {
-            className: T.kb,
+          }) : B && (0, r.jsx)("div", {
+            className: I.kb,
             children: (0, r.jsx)(E.A, {
               textColor: "text-default",
               smallerText: false,
               isApplicationHome: true
             })
-          }), w ? (0, r.jsx)("div", {
-            className: s()(T.UD, T.$F, {
-              [T.In]: !(H || U)
+          }), L ? (0, r.jsx)("div", {
+            className: s()(I.UD, I.$F, {
+              [I.In]: !(B || U)
             }),
-            children: (0, r.jsx)(A.A, {
-              className: s()(T.x6, i),
+            children: (0, r.jsx)(h.A, {
+              className: s()(I.x6, i),
               color: k
             })
-          }) : (0, r.jsx)(O.KN, {
+          }) : (0, r.jsx)(C.KN, {
             subscriptionTier: l,
-            inOfferExperience: L,
-            containerClassName: s()(T.$F, {
-              [T.In]: !(H || U)
+            inOfferExperience: w,
+            containerClassName: s()(I.$F, {
+              [I.In]: !(B || U)
             }),
             buttonClassName: i,
             isApplicationHome: true,
-            isDarkMode: N,
+            isDarkMode: v,
             isEligibleForBogoPromotion: P
-          }), (0, r.jsx)(O.U9, {
+          }), (0, r.jsx)(C.U9, {
             variant: "text-sm/normal",
             withBottomMargin: false,
             isApplicationHome: true
           })]
         })
       }), (0, r.jsx)("div", {
-        className: T.TT,
-        children: (0, r.jsx)(_.A, {
+        className: I.TT,
+        children: (0, r.jsx)(p.A, {
           autoPlay: !F,
           playsInline: true,
           preload: F ? "none" : "auto",
-          poster: S.A,
+          poster: N.A,
           loop: true,
-          className: T.gm,
+          className: I.gm,
           ref: R,
           children: (0, r.jsx)("source", {
-            src: V ? v.A : I.A,
-            type: V ? y.a.MP4 : y.a.WEBM
+            src: V ? y.A : j.A,
+            type: V ? S.a.MP4 : S.a.WEBM
           })
         })
       })]

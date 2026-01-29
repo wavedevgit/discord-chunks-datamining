@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 455611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -14,7 +14,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk139674 = require("./139674.js"),
   Chunk473169 = require("./473169.js");
 
-function _(e) {
+function p(e) {
   let {
     code: {
       code: t,
@@ -27,7 +27,7 @@ function _(e) {
     }
   }, [s]);
   return (0, r.jsx)("li", {
-    className: p.SX,
+    className: _.SX,
     children: (0, r.jsxs)(l.DUT, {
       innerRef: a,
       className: u.Uc,
@@ -45,7 +45,7 @@ function _(e) {
 function m(e) {
   let {
     backupCodes: t
-  } = e, n = i.useCallback(e => e.map(e => (0, r.jsx)(_, {
+  } = e, n = i.useCallback(e => e.map(e => (0, r.jsx)(p, {
     code: e
   }, e.code)), []), c = i.useCallback(async () => {
     let e = o.A.getVerificationKey();

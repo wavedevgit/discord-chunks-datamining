@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 443357, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -20,9 +20,9 @@ function u() {
   let {
     goreContentFriendDm: n,
     goreContentNonFriendDm: u
-  } = t, p = t => {
+  } = t, _ = t => {
     (0, a.qY)(e, t)
-  }, _ = [{
+  }, p = [{
     value: i.TO.BLUR,
     label: d.intl.string(d.t.S49Uad)
   }, {
@@ -34,17 +34,17 @@ function u() {
     children: [(0, r.jsx)(s.A, {
       title: d.intl.string(d.t["+uI23H"]),
       value: n,
-      onChange: e => p({
+      onChange: e => _({
         goreContentFriendDm: e
       }),
-      options: _
+      options: p
     }), (0, r.jsx)(s.A, {
       title: d.intl.string(d.t["Yh+HX1"]),
       value: u,
-      onChange: e => p({
+      onChange: e => _({
         goreContentNonFriendDm: e
       }),
-      options: _
+      options: p
     })]
   })
 }

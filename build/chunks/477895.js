@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 477895, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 477895, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Bf: () => l
 });
@@ -22,8 +22,8 @@ let n = (0, require("./945810.js").mj)({
   }
 });
 
-function l(t) {
+function l(e) {
   return n.useConfig({
-    location: t
+    location: e
   })
 }

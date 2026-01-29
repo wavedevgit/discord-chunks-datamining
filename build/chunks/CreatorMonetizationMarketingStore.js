@@ -1,14 +1,14 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 662427, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
 var r, i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
-let a = [];
+let o = [];
 class s extends(i = Chunk311907.Ay.Store) {
   getEligibleGuildsForNagActivate() {
-    return a
+    return o
   }
 }(r = "displayName") in s ? Object.defineProperty(s, r, {
   value: "CreatorMonetizationMarketingStore",
@@ -21,6 +21,6 @@ let c = new s(Chunk73153.h, {
     let {
       eligibleGuilds: t
     } = e;
-    a = t
+    o = t
   }
 })

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 641324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => C
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,7 +23,7 @@ var Chunk963935 = require("./963935.js"),
   Chunk182884 = require("./182884.jsx"),
   Chunk115617 = require("./115617.jsx");
 
-function x(e) {
+function O(e) {
   let {
     node: t
   } = e;
@@ -34,19 +34,19 @@ function x(e) {
     case i.Z6.TAB_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case i.Z6.PANEL:
-      return (0, r.jsx)(h.j, {
+      return (0, r.jsx)(b.j, {
         node: t
       });
     case i.Z6.LIST:
-      return (0, r.jsx)(b.A, {
-        node: t
-      });
-    case i.Z6.FIELD_SET:
       return (0, r.jsx)(f.A, {
         node: t
       });
-    case i.Z6.RELATED:
+    case i.Z6.FIELD_SET:
       return (0, r.jsx)(A.A, {
+        node: t
+      });
+    case i.Z6.RELATED:
+      return (0, r.jsx)(h.A, {
         node: t
       });
     case i.Z6.CATEGORY:
@@ -62,11 +62,11 @@ function x(e) {
         node: t
       });
     case i.Z6.TOGGLE:
-      return (0, r.jsx)(_.v, {
+      return (0, r.jsx)(p.v, {
         node: t
       });
     case i.Z6.STATIC:
-      return (0, r.jsx)(p.A, {
+      return (0, r.jsx)(_.A, {
         node: t
       });
     case i.Z6.BUTTON:
@@ -96,15 +96,15 @@ function x(e) {
   }
 }
 
-function O(e) {
+function C(e) {
   let {
     node: t
   } = e;
-  return t.type === i.Z6.PANEL ? (0, r.jsx)(x, {
+  return t.type === i.Z6.PANEL ? (0, r.jsx)(O, {
     node: t
   }) : (0, r.jsx)(l.A, {
     node: t,
-    children: (0, r.jsx)(x, {
+    children: (0, r.jsx)(O, {
       node: t
     })
   })

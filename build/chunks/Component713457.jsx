@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 713457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -102,7 +102,7 @@ function I(e) {
     isClaiming: m.A.isClaimingReward(k.id) || m.A.isFetchingRewardCode(k.id),
     isEnrolling: m.A.isEnrolling(k.id),
     isQuestEnrollmentBlocked: null != m.A.questEnrollmentBlockedUntil
-  })), Q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Y = (null == (n = k.userStatus) ? true : n.completedAt) != null, J = Y && (null == (I = k.userStatus) ? true : I.claimedAt) == null, X = (0, v.if)(k), $ = !(0, v.Ic)(k), Z = (0, g.In)(k), ee = (0, j.IO)(k), et = (0, j.BS)(k), en = (0, j.Cr)(k), ea = (0, g.fc)(k), [el, er, ei] = (0, g.Qo)(k, ea), es = $ && Z === g.F3.ACCEPTED, eo = es && el === p.X0.SELECT, ec = es && !eo && er.length > 1, ed = h.t$.useConfig({
+  })), Q = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, Y = (null == (n = k.userStatus) ? true : n.completedAt) != null, J = Y && (null == (I = k.userStatus) ? true : I.claimedAt) == null, X = (0, v.if)(k), Z = !(0, v.Ic)(k), $ = (0, g.In)(k), ee = (0, j.IO)(k), et = (0, j.BS)(k), en = (0, j.Cr)(k), ea = (0, g.fc)(k), [el, er, ei] = (0, g.Qo)(k, ea), es = Z && $ === g.F3.ACCEPTED, eo = es && el === p.X0.SELECT, ec = es && !eo && er.length > 1, ed = h.t$.useConfig({
     location: S.rE.QUEST_HOME_DESKTOP
   }).enabled, eu = l.useCallback(e => {
     ei(e), e === S.fO.DESKTOP && D([])
@@ -110,7 +110,7 @@ function I(e) {
     text: em,
     onClick: ep
   } = (0, y._c)({
-    progressState: Z,
+    progressState: $,
     quest: k,
     questContent: R,
     questContentPosition: M,
@@ -198,7 +198,7 @@ function I(e) {
       text: em,
       fullWidth: true
     })
-  }) : $ ? $ && J ? ev = (0, a.jsx)("div", {
+  }) : Z ? Z && J ? ev = (0, a.jsx)("div", {
     className: T.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -224,7 +224,7 @@ function I(e) {
       text: em,
       fullWidth: true
     })
-  }) : $ && Q && !eg ? ev = eo ? (0, a.jsx)(i.Pw, {
+  }) : Z && Q && !eg ? ev = eo ? (0, a.jsx)(i.Pw, {
     className: T.dd,
     isSelected: () => false,
     options: E,
@@ -287,7 +287,7 @@ function I(e) {
       text: O.intl.string(O.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : $ && !Q && (ev = q ? (0, a.jsxs)(s.e2v, {
+  }) : Z && !Q && (ev = q ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     wrap: false,

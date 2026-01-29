@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 894389, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 894389, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  b: () => E
+  b: () => S
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -12,21 +12,21 @@ var Chunk934551 = require("./934551.js"),
   Chunk994421 = require("./994421.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
+let c = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
     usePredicate: () => (0, r.dk)("BillingPanel"),
-    useTitle: () => d.intl.string(d.t.oeUm2s),
-    buildLayout: () => [a.B, o.Z],
+    useTitle: () => T.intl.string(T.t.oeUm2s),
+    buildLayout: () => [u.B, o.Z],
     hideInStreamerMode: true
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
+  A = (0, Chunk419954.t_)(Chunk780964.X.BILLING_PANEL, {
     usePredicate: () => !(0, r.dk)("LegacyBillingPanel"),
-    useTitle: () => d.intl.string(d.t.oeUm2s),
+    useTitle: () => T.intl.string(T.t.oeUm2s),
     StronglyDiscouragedCustomComponent: Chunk115980.Ay,
     buildLayout: () => []
   }),
-  E = (0, Chunk419954.i4)(Chunk780964.X.BILLING_SIDEBAR_ITEM, {
-    useTitle: () => d.intl.string(d.t.oeUm2s),
+  S = (0, Chunk419954.i4)(Chunk780964.X.BILLING_SIDEBAR_ITEM, {
+    useTitle: () => T.intl.string(T.t.oeUm2s),
     icon: Chunk934551.CreditCardIcon,
-    getLegacySearchKey: () => (0, r.WJ)("BillingPanel") ? true : T.H.BILLING,
-    buildLayout: () => (0, r.WJ)("BillingPanel") ? [A] : [S]
+    getLegacySearchKey: () => (0, r.WJ)("BillingPanel") ? true : d.H.BILLING,
+    buildLayout: () => (0, r.WJ)("BillingPanel") ? [c] : [A]
   })

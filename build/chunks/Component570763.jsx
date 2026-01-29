@@ -230,7 +230,7 @@ let eE = function(e) {
   let {
     onScroll: k,
     scrollPosition: H
-  } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, J.W)(e => e.registerAssetLoad), X = i.useRef(W);
+  } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, $.W)(e => e.registerAssetLoad), X = i.useRef(W);
   i.useEffect(() => {
     X.current = W
   }), i.useEffect(() => {
@@ -342,7 +342,7 @@ let eE = function(e) {
         animate: false
       }), x(e)
     }, [l, x]);
-  return (0, r.jsx)($.M.Provider, {
+  return (0, r.jsx)(J.M.Provider, {
     value: {
       onAssetLoadComplete: Q
     },

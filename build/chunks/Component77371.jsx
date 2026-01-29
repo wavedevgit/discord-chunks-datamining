@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 77371, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 77371, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  C: () => _
+  C: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
@@ -12,35 +12,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk430452 = require("./430452.js"),
   Chunk780964 = require("./780964.js"),
   Chunk840065 = require("./840065.jsx"),
-  Chunk903427 = require("./903427.js"),
+  Chunk903427 = require("./903427.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk755087 = require("./755087.js");
-let _ = (0, Chunk419954.E2)(Chunk780964.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
-  useSearchTerms: () => [E.intl.string(E.t["pS+K2L"]), E.intl.string(E.t.nuFtHH)],
+let E = (0, Chunk419954.E2)(Chunk780964.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+  useSearchTerms: () => [S.intl.string(S.t["pS+K2L"]), S.intl.string(S.t.nuFtHH)],
   usePredicate: Chunk903427.P,
   Component: function() {
-    let t = (0, s.bG)([o.A], () => {
+    let e = (0, s.bG)([o.A], () => {
         let {
-          shortcut: t
+          shortcut: e
         } = o.A.getModeOptions();
-        return t
+        return e
       }),
-      e = E.intl.format(E.t.HVvn5T, {
-        onClick: () => (0, d.openUserSettings)(T.X.KEYBINDS_PANEL, {
-          section: S.nc_.KEYBINDS
+      t = S.intl.format(S.t.HVvn5T, {
+        onClick: () => (0, T.openUserSettings)(d.X.KEYBINDS_PANEL, {
+          section: A.nc_.KEYBINDS
         })
       });
     return (0, n.jsx)(l.D0$, {
-      label: E.intl.string(E.t["o+BJQR"]),
-      description: e,
+      label: S.intl.string(S.t["o+BJQR"]),
+      description: t,
       layout: "horizontal-responsive",
       children: (0, n.jsx)("div", {
-        className: g.e,
-        children: (0, n.jsx)(u.A, {
-          defaultValue: t,
-          onChange: t => r.A.setMode(S.TBI.PUSH_TO_TALK, {
-            shortcut: t
+        className: _.e,
+        children: (0, n.jsx)(a.A, {
+          defaultValue: e,
+          onChange: e => r.A.setMode(A.TBI.PUSH_TO_TALK, {
+            shortcut: e
           })
         })
       })

@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 993470, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 993470, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   C: () => o
 });
@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.E2)(Chunk780964.X.AUTHORIZED_APPS_LIST_SETTING, {
   Component: () => (0, n.jsx)(l.BJc, {
-    children: (0, n.jsx)(u._g, {})
+    children: (0, n.jsx)(a._g, {})
   }),
-  useSearchTerms: () => [a.intl.string(a.t["f6kk+r"])]
+  useSearchTerms: () => [u.intl.string(u.t["f6kk+r"])]
 })

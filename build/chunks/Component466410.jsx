@@ -54,14 +54,14 @@ function O() {
     isDeveloper: t,
     isLoggingGatewayEvents: n,
     isLoggingOverlayEvents: O,
-    isLoggingAnalyticsEvents: v,
-    isTracingRequests: f,
+    isLoggingAnalyticsEvents: f,
+    isTracingRequests: v,
     isForcedCanary: E,
     isAxeEnabled: h,
     preventPopoutClose: A,
     onlyShowPreviewAppCollections: j,
     disableAppCollectionsCache: S
-  } = (0, l.cf)([s.default, c.A], () => ({
+  } = (0, i.cf)([s.default, c.A], () => ({
     layoutDebuggingEnabled: s.default.layoutDebuggingEnabled,
     isDeveloper: c.A.isDeveloper,
     isLoggingGatewayEvents: s.default.isLoggingGatewayEvents,
@@ -80,8 +80,8 @@ function O() {
   } = (0, o.Or)(), {
     setHorizontalSpacing: w,
     setVerticalSpacing: C
-  } = o.Or.getState(), D = d.HZ.useSetting();
-  return t ? [(0, r.jsxs)(i.Drp, {
+  } = o.Or.getState(), _ = d.HZ.useSetting();
+  return t ? [(0, r.jsxs)(l.Drp, {
     id: "overrides",
     label: "Overrides",
     action: () => {
@@ -89,14 +89,14 @@ function O() {
         section: p.nc_.DEVELOPER_OPTIONS
       })
     },
-    children: [(0, r.jsx)(i.sLh, {
+    children: [(0, r.jsx)(l.sLh, {
       id: "always-deliver",
       label: "Always Deliver Ads",
-      checked: D,
+      checked: _,
       action: () => {
-        d.HZ.updateSetting(!D)
+        d.HZ.updateSetting(!_)
       }
-    }, "always-deliver"), (0, r.jsx)(i.sLh, {
+    }, "always-deliver"), (0, r.jsx)(l.sLh, {
       id: "forced-canary",
       label: "Forced Canary",
       checked: E,
@@ -105,7 +105,7 @@ function O() {
           canary: !E
         })
       }
-    }, "forced-canary"), (0, r.jsx)(i.sLh, {
+    }, "forced-canary"), (0, r.jsx)(l.sLh, {
       id: "preview-collections",
       label: "Preview Unpublished Collections",
       checked: j,
@@ -114,7 +114,7 @@ function O() {
           onlyShowPreviewAppCollections: !j
         })
       }
-    }, "preview-collections"), (0, r.jsx)(i.sLh, {
+    }, "preview-collections"), (0, r.jsx)(l.sLh, {
       id: "disable-collections-cache",
       label: "Disable Collections Cache",
       checked: S,
@@ -124,7 +124,7 @@ function O() {
         })
       }
     }, "disable-collections-cache")]
-  }, "overrides"), (0, r.jsxs)(i.Drp, {
+  }, "overrides"), (0, r.jsxs)(l.Drp, {
     id: "logging",
     label: "Logging",
     action: () => {
@@ -132,7 +132,7 @@ function O() {
         section: p.nc_.DEVELOPER_OPTIONS
       })
     },
-    children: [(0, r.jsx)(i.sLh, {
+    children: [(0, r.jsx)(l.sLh, {
       id: "gateway-events",
       label: "Gateway Events",
       checked: n,
@@ -141,7 +141,7 @@ function O() {
           logGatewayEvents: !n
         })
       }
-    }, "gateway-events"), (0, r.jsx)(i.sLh, {
+    }, "gateway-events"), (0, r.jsx)(l.sLh, {
       id: "overlay-events",
       label: "Overlay RPC Events",
       checked: O,
@@ -150,25 +150,25 @@ function O() {
           logOverlayEvents: !O
         })
       }
-    }, "overlay-events"), (0, r.jsx)(i.sLh, {
+    }, "overlay-events"), (0, r.jsx)(l.sLh, {
       id: "analytics-events",
       label: "Analytics Events",
-      checked: v,
-      action: () => {
-        (0, a.x)({
-          logAnalyticsEvents: !v
-        })
-      }
-    }, "analytics-events"), (0, r.jsx)(i.sLh, {
-      id: "tracing-requests",
-      label: "Tracing Requests",
       checked: f,
       action: () => {
         (0, a.x)({
-          trace: !f
+          logAnalyticsEvents: !f
         })
       }
-    }, "tracing-requests"), (0, r.jsx)(i.sLh, {
+    }, "analytics-events"), (0, r.jsx)(l.sLh, {
+      id: "tracing-requests",
+      label: "Tracing Requests",
+      checked: v,
+      action: () => {
+        (0, a.x)({
+          trace: !v
+        })
+      }
+    }, "tracing-requests"), (0, r.jsx)(l.sLh, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
       checked: A,
@@ -178,7 +178,7 @@ function O() {
         })
       }
     }, "prevent-popout-close")]
-  }, "logging"), (0, r.jsxs)(i.Drp, {
+  }, "logging"), (0, r.jsxs)(l.Drp, {
     id: "design-tools",
     label: "Design/A11y Tools",
     action: () => {
@@ -186,7 +186,7 @@ function O() {
         section: p.nc_.DEVELOPER_OPTIONS
       })
     },
-    children: [(0, r.jsx)(i.sLh, {
+    children: [(0, r.jsx)(l.sLh, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
       checked: h,
@@ -195,7 +195,7 @@ function O() {
           axeEnabled: !h
         })
       }
-    }, "accessibility-auditing"), (0, r.jsx)(i.sLh, {
+    }, "accessibility-auditing"), (0, r.jsx)(l.sLh, {
       id: "layout-debugging",
       label: "Enable Layout Debugging",
       checked: e,
@@ -205,10 +205,10 @@ function O() {
         })
       }
     }, "layout-debugging"), e && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.aK1, {
+      children: [(0, r.jsx)(l.aK1, {
         id: "horizontal-spacing",
         label: "Horizontal Spacing",
-        control: (e, t) => (0, r.jsx)(i.i42, y(b({}, e), {
+        control: (e, t) => (0, r.jsx)(l.i42, y(b({}, e), {
           ref: t,
           value: P,
           minValue: 0,
@@ -217,10 +217,10 @@ function O() {
           renderValue: e => "".concat(Math.round(e), "px"),
           "aria-label": "Horizontal Spacing"
         }))
-      }, "horizontal-spacing"), (0, r.jsx)(i.aK1, {
+      }, "horizontal-spacing"), (0, r.jsx)(l.aK1, {
         id: "vertical-spacing",
         label: "Vertical Spacing",
-        control: (e, t) => (0, r.jsx)(i.i42, y(b({}, e), {
+        control: (e, t) => (0, r.jsx)(l.i42, y(b({}, e), {
           ref: t,
           value: x,
           minValue: 0,

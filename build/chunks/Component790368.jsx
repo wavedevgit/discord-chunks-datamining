@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 790368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,16 +16,16 @@ var Chunk827734 = require("./827734.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk824426 = require("./824426.js");
 
-function f(e) {
+function g(e) {
   let {
     closePopout: t
   } = e, n = (0, c.kX)();
   return (0, r.jsx)(i.m, {
     asContainer: true,
-    text: p.intl.string(p.t["lMR96+"]),
+    text: h.intl.string(h.t["lMR96+"]),
     children: (0, r.jsxs)(s.DUT, {
-      "aria-label": "".concat(p.intl.string(p.t["lMR96+"]), ", ").concat(n),
-      className: h.b,
+      "aria-label": "".concat(h.intl.string(h.t["lMR96+"]), ", ").concat(n),
+      className: p.b,
       onClick: () => {
         u.default.track(d.HAw.NOTIFICATION_CENTER_ACTION, {
           action_type: o.e1.FRIEND_REQUESTS_BUTTON_CLICK

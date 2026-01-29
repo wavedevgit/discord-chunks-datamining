@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 50847, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 50847, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   X: () => o
 });
@@ -10,5 +10,5 @@ var Chunk419954 = require("./419954.js"),
   Chunk234658 = require("./234658.js"),
   Chunk312579 = require("./312579.js");
 let o = (0, Chunk419954.zZ)(Chunk780964.X.OVERLAY_GENERAL_CATEGORY, {
-  buildLayout: () => [r.B, a.i, u.x, s.q]
+  buildLayout: () => [r.B, u.i, a.x, s.q]
 })

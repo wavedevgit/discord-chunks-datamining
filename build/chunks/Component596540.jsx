@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 596540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,19 +16,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk782462 = require("./782462.js");
 
-function g(e) {
+function f(e) {
   let {
     children: t,
     popoutPosition: n,
     popoutAlign: d,
-    targetElementRef: f,
-    spacing: g = 0
+    targetElementRef: g,
+    spacing: f = 0
   } = e, {
     isOpen: b,
     setIsOpen: A
   } = (0, u.A)(), y = l.useCallback(() => {
     A(false)
-  }, [A]), _ = l.useCallback(() => {
+  }, [A]), O = l.useCallback(() => {
     A(!b)
   }, [b, A]);
   (0, a.Ay)(() => {
@@ -36,41 +36,41 @@ function g(e) {
       A(false)
     };
     return s.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), l.useEffect(() => (o._.subscribe(p.jej.TOGGLE_INBOX, _), () => void o._.unsubscribe(p.jej.TOGGLE_INBOX, _)), [_]);
+  }), l.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, O), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, O)), [O]);
   let {
-    entrypoint: O
+    entrypoint: _
   } = (0, c.X8)({
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(i.YNO, {
-    targetElementRef: f,
+    targetElementRef: g,
     shouldShow: b,
     align: d,
-    animation: O === c.RK.TITLE_BAR_LEFT ? i.YNO.Animation.TRANSLATE : i.YNO.Animation.FADE,
-    animationPosition: O === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
+    animation: _ === c.RK.TITLE_BAR_LEFT ? i.YNO.Animation.TRANSLATE : i.YNO.Animation.FADE,
+    animationPosition: _ === c.RK.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
     onRequestClose: y,
-    spacing: g,
+    spacing: f,
     renderPopout: () => (0, r.jsx)(i.lGe, {
-      "aria-label": h.intl.string(h.t.GSmTKJ),
+      "aria-label": p.intl.string(p.t.GSmTKJ),
       children: (0, r.jsx)(m, {})
     }),
     children: (e, n) => {
       let {
         isShown: r
       } = n;
-      return t(_, r, e)
+      return t(O, r, e)
     }
   })
 }
 
 function m() {
   return (0, r.jsxs)("div", {
-    className: f.kL,
+    className: g.kL,
     children: [(0, r.jsx)("div", {
-      className: f._Q,
+      className: g._Q,
       children: (0, r.jsx)("span", {
-        className: f.Tp
+        className: g.Tp
       })
     }), (0, r.jsx)(d.A, {})]
   })

@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 922521, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 922521, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   v: () => o
 });
@@ -10,8 +10,8 @@ var Chunk419954 = require("./419954.js"),
   Chunk604095 = require("./604095.js"),
   Chunk54863 = require("./54863.js");
 let o = (0, Chunk419954.zZ)(Chunk780964.X.LINUX_CATEGORY, {
-  buildLayout: () => [s.P, r.y, a.V],
+  buildLayout: () => [s.P, r.y, u.V],
   initialize: () => {
-    (0, u._s)()
+    (0, a._s)()
   }
 })

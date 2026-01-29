@@ -1,4 +1,4 @@
-/** Chunk was on 91075 **/
+/** Chunk was on 26766 **/
 /** chunk id: 996353, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -24,16 +24,16 @@ function c(e) {
     isFetchingWishlist: g,
     isValidatingPopularProducts: h,
     isFetchingPopularProducts: I,
-    wishlistError: C
+    wishlistError: x
   } = (0, d.eT)({
     giftRecipient: t,
     minNumItems: i,
     source: d.B5.USER_PROFILE
-  }), x = (0, a.A)({
+  }), C = (0, a.A)({
     displayProfile: m,
     location: c
   }), S = r.useMemo(() => [t.id], [t.id]), {
-    recommendations: b
+    recommendations: A
   } = (0, l.A)({
     guildId: (0, n.zf)(),
     numWishlistItems: Math.max(i, d.pl),
@@ -41,34 +41,34 @@ function c(e) {
     applicationId: u.XR,
     userIds: S,
     includeWishlists: true
-  }), T = r.useMemo(() => {
+  }), b = r.useMemo(() => {
     var e;
-    return (null != (e = null == _ ? true : _.items) ? e : []).filter(e => true !== e.isOwned && (0, o.$)(e)).length > 0 || x ? b : []
-  }, [null == _ ? true : _.items, x, b]), {
-    displayItems: A,
+    return (null != (e = null == _ ? true : _.items) ? e : []).filter(e => true !== e.isOwned && (0, o.$)(e)).length > 0 || C ? A : []
+  }, [null == _ ? true : _.items, C, A]), {
+    displayItems: T,
     hasMoreItems: j,
-    totalWishlistItemCount: O,
-    wishlistItemCountToBeDisplayed: v
+    totalWishlistItemCount: v,
+    wishlistItemCountToBeDisplayed: O
   } = (0, d.mk)({
     wishlist: _,
     popularCollectiblesProducts: p,
-    popularSocialLayerStorefrontItems: T,
-    wishlistError: C,
+    popularSocialLayerStorefrontItems: b,
+    wishlistError: x,
     numItems: i
   });
   return {
-    displayItems: A,
+    displayItems: T,
     hasMoreItems: j,
-    totalWishlistItemCount: O,
-    wishlistItemCountToBeDisplayed: v,
+    totalWishlistItemCount: v,
+    wishlistItemCountToBeDisplayed: O,
     fetchState: r.useMemo(() => g || h || I ? {
       status: "loading"
-    } : null != C ? {
+    } : null != x ? {
       status: "error",
-      error: C
+      error: x
     } : {
       status: "success"
-    }, [g, h, I, C]),
+    }, [g, h, I, x]),
     defaultWishlistId: f,
     wishlist: _
   }

@@ -1,8 +1,8 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 69435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E,
-  D: () => O
+  A: () => O,
+  D: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,37 +21,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function O() {
-  let [e] = s.useState(() => u.Ay.getEnableHardwareAcceleration()), t = s.useCallback(e => {
-    let t = e ? j.intl.format(j.t.LYXRxL, {}) : j.intl.format(j.t.uDP3Kz, {});
+function j() {
+  let [e] = l.useState(() => u.Ay.getEnableHardwareAcceleration()), t = l.useCallback(e => {
+    let t = e ? b.intl.format(b.t.LYXRxL, {}) : b.intl.format(b.t.uDP3Kz, {});
     (0, r.A)({
-      title: j.intl.string(j.t.aqpAvn),
+      title: b.intl.string(b.t.aqpAvn),
       subtitle: t,
-      confirmText: j.intl.string(j.t.vT7ckk),
+      confirmText: b.intl.string(b.t.vT7ckk),
       onConfirm: () => u.Ay.setEnableHardwareAcceleration(e)
     })
   }, []);
   return (0, i.jsxs)(a.BJc, {
     children: [(0, i.jsx)(a.dOG, {
-      label: j.intl.string(j.t["eOC/F2"]),
-      description: j.intl.string(j.t.Afc7l6),
+      label: b.intl.string(b.t["eOC/F2"]),
+      description: b.intl.string(b.t.Afc7l6),
       checked: e,
       onChange: t
-    }), !e && (0, i.jsx)(h.A, {
-      look: h.k.WARNING,
-      children: j.intl.string(j.t.j7S6IX)
+    }), !e && (0, i.jsx)(g.A, {
+      look: g.k.WARNING,
+      children: b.intl.string(b.t.j7S6IX)
     })]
   })
 }
 
-function E() {
-  let e = g.l_.useSetting(),
-    t = g.Q_.useSetting(),
-    n = (0, l.bG)([d.A], () => d.A.testModeApplicationId),
-    r = s.useCallback(e => {
-      g.l_.updateSetting(!e)
+function O() {
+  let e = h.l_.useSetting(),
+    t = h.Q_.useSetting(),
+    n = (0, s.bG)([d.A], () => d.A.testModeApplicationId),
+    r = l.useCallback(e => {
+      h.l_.updateSetting(!e)
     }, []),
-    u = s.useCallback(e => {
+    u = l.useCallback(e => {
       e ? (0, a.qfG)(e => (0, i.jsx)(x.A, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -71,39 +71,39 @@ function E() {
         return e
       }({}, e))) : o.cL()
     }, []);
-  return (0, i.jsx)(A.A, {
-    title: j.intl.string(j.t["8/udY0"]),
+  return (0, i.jsx)(p.A, {
+    title: b.intl.string(b.t["8/udY0"]),
     children: (0, i.jsxs)(a.BJc, {
       gap: 16,
       children: [(0, i.jsxs)(c.x, {
-        setting: p.H.SETTINGS_ADVANCED_DEVELOPER_MODE,
+        setting: m.H.SETTINGS_ADVANCED_DEVELOPER_MODE,
         children: [(0, i.jsx)(a.dOG, {
-          label: j.intl.string(j.t.ObIb1Q),
-          description: j.intl.format(j.t["CY6q/Q"], {
-            apiDocsUrl: m.X7G.API_DOCS
+          label: b.intl.string(b.t.ObIb1Q),
+          description: b.intl.format(b.t["CY6q/Q"], {
+            apiDocsUrl: A.X7G.API_DOCS
           }),
           checked: t,
-          onChange: g.Q_.updateSetting
+          onChange: h.Q_.updateSetting
         }), (0, i.jsx)(a.cGx, {})]
       }), (0, i.jsx)(c.x, {
-        setting: p.H.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
+        setting: m.H.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
         children: (0, i.jsxs)(a.BJc, {
           gap: 16,
-          children: [(0, i.jsx)(O, {}), (0, i.jsx)(a.cGx, {})]
+          children: [(0, i.jsx)(j, {}), (0, i.jsx)(a.cGx, {})]
         })
       }), (0, i.jsxs)(c.x, {
-        setting: p.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
+        setting: m.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
         children: [(0, i.jsx)(a.dOG, {
-          label: j.intl.string(j.t.fi3UQN),
-          description: j.intl.string(j.t["8mYp37"]),
+          label: b.intl.string(b.t.fi3UQN),
+          description: b.intl.string(b.t["8mYp37"]),
           checked: !e,
           onChange: r
         }), (0, i.jsx)(a.cGx, {})]
       }), (0, i.jsxs)(c.x, {
-        setting: p.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
+        setting: m.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
         children: [(0, i.jsx)(a.dOG, {
-          label: j.intl.string(j.t.erOqlh),
-          description: j.intl.string(j.t["52hMnD"]),
+          label: b.intl.string(b.t.erOqlh),
+          description: b.intl.string(b.t["52hMnD"]),
           checked: null != n,
           onChange: u
         }), (0, i.jsx)(a.cGx, {})]

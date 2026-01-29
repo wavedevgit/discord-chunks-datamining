@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 745299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -27,16 +27,16 @@ let p = function(e) {
     subscriptionTier: S
   } = e, {
     analyticsLocations: P
-  } = (0, a.Ay)(function(e) {
+  } = (0, o.Ay)(function(e) {
     switch (e) {
       case I.pe.TIER_0:
-        return o.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
+        return a.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
       case I.pe.TIER_2:
-        return o.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
+        return a.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
       default:
         throw Error("Unsupported subscription tier: ".concat(e))
     }
-  }(S)), y = (0, _.V)(), f = (0, l.A)(null != y && null != y.expires_at ? Date.parse(y.expires_at) : 0), C = null == y || (null == (t = y.subscription_trial) ? true : t.sku_id) !== S || null == y.expires_at || Object.values(f).every(e => 0 === e);
+  }(S)), y = (0, _.V)(), m = (0, l.A)(null != y && null != y.expires_at ? Date.parse(y.expires_at) : 0), f = null == y || (null == (t = y.subscription_trial) ? true : t.sku_id) !== S || null == y.expires_at || Object.values(m).every(e => 0 === e);
   if ((0, s.A)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.TRIAL_NOTICE,
@@ -44,23 +44,23 @@ let p = function(e) {
         trial_id: null == y ? true : y.trial_id
       }
     }, {
-      disableTrack: C
-    }), C) return null;
-  let m = S === I.pe.TIER_2 ? O.kqX.PREMIUM_TIER_2_TRIAL_ENDING : O.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
-    D = (0, d.re)({
+      disableTrack: f
+    }), f) return null;
+  let C = S === I.pe.TIER_2 ? O.kqX.PREMIUM_TIER_2_TRIAL_ENDING : O.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
+    g = (0, d.re)({
       intervalType: null == (n = y.subscription_trial) ? true : n.interval,
       intervalCount: null == (p = y.subscription_trial) ? true : p.interval_count
     }),
-    g = E.A.getArticleURL(y.trial_id === I.yo ? O.MVz.NITRO_TRIAL_FOR_ALL : O.MVz.PREMIUM_TRIAL);
+    D = E.A.getArticleURL(y.trial_id === I.yo ? O.MVz.NITRO_TRIAL_FOR_ALL : O.MVz.PREMIUM_TRIAL);
   return (0, r.jsxs)(A.T0, {
     onClick: () => {
       R(), u.default.track(O.HAw.APP_NOTICE_CLOSED, {
-        notice_type: m,
+        notice_type: C,
         trial_id: y.trial_id
       })
     },
     children: [(0, r.jsx)(A.In, {
-      children: (0, T.GZ)(S, f, D, g)
+      children: (0, T.GZ)(S, m, g, D)
     }), (0, r.jsx)(A.fY, {
       onClick: () => {
         (0, c.A)({
@@ -73,7 +73,7 @@ let p = function(e) {
             object: O.ZSU.BUTTON_CTA
           }
         }), u.default.track(O.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-          notice_type: m,
+          notice_type: C,
           trial_id: y.trial_id
         })
       },

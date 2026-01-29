@@ -1,8 +1,8 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 338234, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Uw: () => l,
-  fC: () => i
+  Uw: () => i,
+  fC: () => l
 });
 let r = (0, require("./600975.js").C)({
   kind: "guild",
@@ -20,7 +20,7 @@ let r = (0, require("./600975.js").C)({
   }]
 });
 
-function i(e) {
+function l(e) {
   let {
     guildId: t,
     location: n
@@ -33,7 +33,7 @@ function i(e) {
   })
 }
 
-function l(e) {
+function i(e) {
   let {
     guildId: t,
     location: n

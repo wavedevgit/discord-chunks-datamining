@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 63675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => b
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,76 +20,76 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk114403 = require("./114403.js");
 
-function h(e) {
+function b(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: i,
     onThemeColorsChange: s,
-    preventDisabled: h,
-    guildId: A,
+    preventDisabled: b,
+    guildId: h,
     className: E,
-    showPremiumIcon: x = true,
-    showResetThemeButton: O = false,
-    forcedDivider: C
-  } = e, y = (0, u.Ay)(t.id, A), {
-    primaryColor: j,
-    secondaryColor: T
-  } = (0, p.A)({
+    showPremiumIcon: O = true,
+    showResetThemeButton: C = false,
+    forcedDivider: x
+  } = e, S = (0, u.Ay)(t.id, h), {
+    primaryColor: T,
+    secondaryColor: I
+  } = (0, _.A)({
     user: t,
-    displayProfile: y,
+    displayProfile: S,
     pendingThemeColors: i,
     isPreview: true
-  }), v = _.Ay.canUsePremiumProfileCustomization(t), S = null != n ? n : t.getAvatarURL(A, 80), I = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), N = (0, d.rh)(S, I, false);
-  if (null == j || null == T) return null;
+  }), y = p.Ay.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(h, 80), j = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(N, j, false);
+  if (null == T || null == I) return null;
   let P = e => {
-    s(a()(e, null == y ? true : y.themeColors) ? true : e)
+    s(a()(e, null == S ? true : S.themeColors) ? true : e)
   };
   return (0, r.jsx)(g.A, {
-    title: f.intl.string(f.t.DMeO2X),
-    disabled: !v && !h,
-    className: l()(b.__invalid_profileThemesSection, E),
-    showPremiumIcon: x,
-    forcedDivider: C,
+    title: A.intl.string(A.t.DMeO2X),
+    disabled: !y && !b,
+    className: l()(f.__invalid_profileThemesSection, E),
+    showPremiumIcon: O,
+    forcedDivider: x,
     children: (0, r.jsxs)("div", {
-      className: b.hd,
+      className: f.hd,
       children: [(0, r.jsx)("div", {
-        className: b.YX,
+        className: f.YX,
         children: (0, r.jsx)(m.A, {
-          onChange: e => P([e, T]),
-          color: j,
-          suggestedColors: N,
+          onChange: e => P([e, I]),
+          color: T,
+          suggestedColors: v,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
-            className: b.yz,
+            className: f.yz,
             color: "text-default",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: f.intl.string(f.t.C3KTQk)
+            children: A.intl.string(A.t.C3KTQk)
           })
         })
       }), (0, r.jsx)("div", {
-        className: b.YX,
+        className: f.YX,
         children: (0, r.jsx)(m.A, {
-          onChange: e => P([j, e]),
-          color: T,
-          suggestedColors: N,
+          onChange: e => P([T, e]),
+          color: I,
+          suggestedColors: v,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
-            className: b.yz,
+            className: f.yz,
             color: "text-default",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: f.intl.string(f.t["8elvy6"])
+            children: A.intl.string(A.t["8elvy6"])
           })
         })
-      }), O && null != A && (0, r.jsx)("div", {
+      }), C && null != h && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: b.WA,
+        className: f.WA,
         children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
-          text: f.intl.string(f.t["L+GmoR"]),
+          text: A.intl.string(A.t["L+GmoR"]),
           onClick: () => P([null, null])
         })
       })]

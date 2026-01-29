@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 666328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -14,13 +14,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function d(e, t) {
-  let [n, d, p] = (0, a.A)(e, t), h = (0, l.bG)([s.Ay], () => s.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
+  let [n, d, h] = (0, a.A)(e, t), p = (0, l.bG)([s.Ay], () => s.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
   return n ? (0, r.jsx)(i.sLh, {
     id: "self-stream-hide",
     label: u.intl.string(u.t.aol7iW),
     checked: !d,
     action: () => {
-      if (h || d) return p(!d);
+      if (p || d) return h(!d);
       (0, i.qfG)(e => {
         var t, n;
         return (0, r.jsx)(o.A, (t = function(e) {
@@ -42,7 +42,7 @@ function d(e, t) {
           return e
         }({}, e), n = n = {
           type: c.f.STREAM,
-          onConfirm: () => p(!d)
+          onConfirm: () => h(!d)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

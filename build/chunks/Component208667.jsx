@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 208667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,13 +14,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk456425 = require("./456425.jsx"),
   Chunk1347 = require("./1347.js");
 
-function h(e) {
+function p(e) {
   let {
     initialized: t,
     items: n,
-    loading: h,
-    loadMore: f
-  } = e, g = l.useRef(null), m = (0, o.A)("for-you", g);
+    loading: p,
+    loadMore: g
+  } = e, f = l.useRef(null), m = (0, o.A)("for-you", f);
   (0, c.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -32,8 +32,8 @@ function h(e) {
   }, [t]);
   let b = () => {
     var e;
-    let t = null == (e = g.current) ? true : e.getScrollerState();
-    null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && f()
+    let t = null == (e = f.current) ? true : e.getScrollerState();
+    null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && g()
   };
   return t ? 0 === n.length ? (0, r.jsx)(u.H, {}) : (0, r.jsx)(s.hD, {
     navigator: m,
@@ -77,17 +77,17 @@ function h(e) {
           }
           return e
         }({
-          className: p.kL,
+          className: h.kL,
           ref: e => {
             var t;
-            g.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            f.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, s), l = l = {
           onScroll: b,
           children: [(0, r.jsx)(d.$, {
             items: n
-          }), h ? (0, r.jsx)(a.y$y, {
-            className: p.u1
+          }), p ? (0, r.jsx)(a.y$y, {
+            className: h.u1
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -102,6 +102,6 @@ function h(e) {
       }
     })
   }) : (0, r.jsx)(a.y$y, {
-    className: p.k$
+    className: h.k$
   })
 }

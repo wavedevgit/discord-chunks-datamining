@@ -14,10 +14,10 @@ var Chunk397927 = require("./397927.js"),
 function s() {
   let {
     analyticsLocations: e
-  } = (0, i.Ay)();
-  return [(0, r.jsx)(l.rXV, {
+  } = (0, l.Ay)();
+  return [(0, r.jsx)(i.rXV, {
     children: (0, o.A)(e)
-  }, "input-mode-items"), (0, r.jsxs)(l.rXV, {
+  }, "input-mode-items"), (0, r.jsxs)(i.rXV, {
     children: [(0, a.A)(e), (0, c.A)(e)]
   }, "input-output")]
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 332396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => N
@@ -33,7 +33,7 @@ function C(e, t) {
     children: [(0, r.jsx)(e, {
       className: E.RI,
       color: "currentColor"
-    }), (0, r.jsx)(h.Ay, {
+    }), (0, r.jsx)(p.Ay, {
       guildId: true,
       users: t,
       max: 6
@@ -42,30 +42,30 @@ function C(e, t) {
 }
 
 function S() {
-  let e = (0, c.yK)([j.A, b.A], () => O.default.keys(j.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(_.Vq)),
+  let e = (0, c.yK)([x.A, b.A], () => _.default.keys(x.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
     t = e.map(e => e.id),
-    n = e.filter(e => e.type === v.rbe.GUILD_VOICE),
-    l = e.filter(e => e.type === v.rbe.GUILD_STAGE_VOICE).map(e => e.id),
+    n = e.filter(e => e.type === j.rbe.GUILD_VOICE),
+    l = e.filter(e => e.type === j.rbe.GUILD_STAGE_VOICE).map(e => e.id),
     i = (0, c.yK)([y.Ay], () => o().flatMap(n, e => y.Ay.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [n]),
-    s = (0, c.yK)([f.A], () => o().flatMap(l, e => f.A.getMutableParticipants(e, g.ip.SPEAKER).filter(e => e.type === g.wY.VOICE).map(e => {
+    s = (0, c.yK)([g.A], () => o().flatMap(l, e => g.A.getMutableParticipants(e, f.ip.SPEAKER).filter(e => e.type === f.wY.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    a = (0, c.bG)([f.A], () => {
+    a = (0, c.bG)([g.A], () => {
       let e = 0;
-      for (let t of l) e += f.A.getParticipantCount(t, g.ip.AUDIENCE);
+      for (let t of l) e += g.A.getParticipantCount(t, f.ip.AUDIENCE);
       return e
     }),
     u = (0, c.yK)([m.A], () => m.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    x = (0, c.yK)([p.Ay], () => {
-      let e = p.Ay.getEmbeddedActivitiesByChannel(),
+    v = (0, c.yK)([h.Ay], () => {
+      let e = h.Ay.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let i of t) {
         var r, l;
@@ -73,16 +73,16 @@ function S() {
       }
       return n
     }, [t]),
-    S = (0, c.yK)([A.default], () => x.map(e => A.default.getUser(e)), [x]),
+    S = (0, c.yK)([A.default], () => v.map(e => A.default.getUser(e)), [v]),
     I = (0, c.yK)([A.default], () => u.map(e => A.default.getUser(e)), [u]),
-    N = C(d.HKD, i.filter(e => !u.includes(e.id) && !x.includes(e.id))),
+    N = C(d.HKD, i.filter(e => !u.includes(e.id) && !v.includes(e.id))),
     T = 0 === s.length ? null : (0, r.jsxs)("div", {
       className: E.nM,
       children: [(0, r.jsx)(d.qux, {
         size: "lg",
         color: "currentColor",
         className: E.RI
-      }), (0, r.jsx)(h.Ay, {
+      }), (0, r.jsx)(p.Ay, {
         guildId: true,
         users: s,
         max: 3
@@ -99,7 +99,7 @@ function S() {
         })]
       })]
     }),
-    P = C(d.Fzq, I.filter(e => null != e && !x.includes(e.id))),
+    P = C(d.Fzq, I.filter(e => null != e && !v.includes(e.id))),
     w = C(d.k9F, S);
   return (0, r.jsxs)(r.Fragment, {
     children: [T, N, P, w]
@@ -112,7 +112,7 @@ function I() {
       className: s()(E.nM, E.Dl),
       children: (0, r.jsx)("span", {
         className: s()(E.cN, E.NT),
-        children: x.intl.string(x.t.wMWyci)
+        children: v.intl.string(v.t.wMWyci)
       })
     }), (0, r.jsx)(S, {})]
   })

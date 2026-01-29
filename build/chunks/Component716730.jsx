@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 716730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -40,12 +40,12 @@ function y(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["channelId", "className"]), _ = l.useRef(null), O = (0, s.bG)([f.Ay], () => f.Ay.getFocusedLayout() === g.E8.RESIZABLE), j = l.useCallback(() => {
-    let e = O ? g.E8.NO_CHAT : g.E8.RESIZABLE;
-    (0, h.i5)(e)
-  }, [O]), {
-    unreadCount: v,
-    mentionCount: x
+  }(e, ["channelId", "className"]), O = l.useRef(null), _ = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout() === f.E8.RESIZABLE), x = l.useCallback(() => {
+    let e = _ ? f.E8.NO_CHAT : f.E8.RESIZABLE;
+    (0, p.i5)(e)
+  }, [_]), {
+    unreadCount: j,
+    mentionCount: v
   } = function(e) {
     let t = (0, s.bG)([d.A], () => !(0, i.isEmpty)(d.A.getTypingUsers(e)), [e]),
       {
@@ -62,19 +62,19 @@ function y(e) {
     }
   }(t), E = l.useCallback(() => {
     var e;
-    null == (e = _.current) || e.focus()
+    null == (e = O.current) || e.focus()
   }, []);
-  (0, p.Vo)({
+  (0, h.Vo)({
     event: m.jej.FOCUS_CHAT_BUTTON,
     handler: E
   });
-  let C = O ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
+  let C = _ ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
     S = [C];
-  x > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
-    mentionCount: x
-  })), v > 0 && S.push(b.intl.string(b.t.x5zAGZ));
-  let I = (0, s.bG)([f.Ay], () => f.Ay.getFocusedLayout()),
-    N = x > 0 ? x : v,
+  v > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
+    mentionCount: v
+  })), j > 0 && S.push(b.intl.string(b.t.x5zAGZ));
+  let I = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout()),
+    N = v > 0 ? v : j,
     T = N > 0;
   return (0, r.jsxs)("div", {
     className: A.iE,
@@ -97,16 +97,16 @@ function y(e) {
       return e
     }({
       isTrayButton: true,
-      buttonRef: _,
-      onClick: j,
+      buttonRef: O,
+      onClick: x,
       label: C,
       "aria-label": S.join(", "),
       tooltipPosition: "top",
-      iconComponent: I === g.E8.NO_CHAT ? a.jQp : a.g8p,
+      iconComponent: I === f.E8.NO_CHAT ? a.jQp : a.g8p,
       themeable: true,
       className: n
     }, y)), T ? (0, r.jsx)(o.A, {
-      hasMentions: x > 0,
+      hasMentions: v > 0,
       truncatedCount: N > 99 ? "99+" : N,
       className: A.qS
     }) : null]

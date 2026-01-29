@@ -1,21 +1,21 @@
-/** Chunk was on 28979 **/
-/** chunk id: 927766, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 927766, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  X: () => u
+  X: () => a
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk574381 = require("./574381.js"),
   Chunk732955 = require("./732955.js");
-let u = t => {
+let a = e => {
     let {
-      onClick: e
-    } = t, i = (0, s.R0)(), u = (0, l.useMemo)(() => a(i), [i]);
+      onClick: t
+    } = e, i = (0, s.R0)(), a = (0, l.useMemo)(() => u(i), [i]);
     return (0, n.jsx)(r.$nd, {
       text: "Get the Discord App",
       onClick: () => {
-        null == e || e(), window.location.href = "https://discord.com/api/download?platform=" + u
+        null == t || t(), window.location.href = "https://discord.com/api/download?platform=" + a
       }
     })
   },
-  a = t => "macos" === t ? "osx" : "win"
+  u = e => "macos" === e ? "osx" : "win"

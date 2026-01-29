@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 34968, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CJ: () => v,
-  dY: () => x,
+  CJ: () => j,
+  dY: () => v,
   y8: () => E
 }), require("./65821.js");
 var Chunk774603 = require("./774603.js"),
@@ -25,15 +25,15 @@ var Chunk774603 = require("./774603.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function j() {
+function x() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.map(e => {
-    let t = v[e];
+    let t = j[e];
     if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
     return t.binds[0]
   })
 }
-let v = {
+let j = {
     [Chunk652215.IWg.SERVER_NEXT]: Chunk904828.yx,
     [Chunk652215.IWg.SERVER_PREV]: Chunk904828.yv,
     [Chunk652215.IWg.CHANNEL_NEXT]: Chunk430086.kF,
@@ -63,67 +63,67 @@ let v = {
     [Chunk652215.IWg.CALL_START]: Chunk774603.OX,
     [Chunk652215.IWg.QUICKSWITCHER_SHOW]: Chunk967497.R
   },
-  x = {
+  v = {
     [Chunk652215.IWg.QUICKSWITCHER_SHOW]: Chunk967497.R
   };
 
 function E() {
   return [{
-    description: O.intl.string(O.t.bx4Uyz),
-    binds: j(_.IWg.SERVER_PREV, _.IWg.SERVER_NEXT)
+    description: _.intl.string(_.t.bx4Uyz),
+    binds: x(O.IWg.SERVER_PREV, O.IWg.SERVER_NEXT)
   }, {
-    description: O.intl.string(O.t["+Wem6h"]),
-    binds: j(_.IWg.CHANNEL_PREV, _.IWg.CHANNEL_NEXT)
+    description: _.intl.string(_.t["+Wem6h"]),
+    binds: x(O.IWg.CHANNEL_PREV, O.IWg.CHANNEL_NEXT)
   }, {
-    description: O.intl.string(O.t["+2fcdz"]),
-    binds: j(_.IWg.NAVIGATE_BACK, _.IWg.NAVIGATE_FORWARD)
+    description: _.intl.string(_.t["+2fcdz"]),
+    binds: x(O.IWg.NAVIGATE_BACK, O.IWg.NAVIGATE_FORWARD)
   }, {
-    description: O.intl.string(O.t.eVmj1H),
-    binds: j(_.IWg.UNREAD_PREV, _.IWg.UNREAD_NEXT)
+    description: _.intl.string(_.t.eVmj1H),
+    binds: x(O.IWg.UNREAD_PREV, O.IWg.UNREAD_NEXT)
   }, {
-    description: O.intl.string(O.t.EcqS7Y),
-    binds: j(_.IWg.MENTION_CHANNEL_PREV, _.IWg.MENTION_CHANNEL_NEXT),
+    description: _.intl.string(_.t.EcqS7Y),
+    binds: x(O.IWg.MENTION_CHANNEL_PREV, O.IWg.MENTION_CHANNEL_NEXT),
     groupEnd: true
   }, {
-    description: O.intl.string(O.t.Bqss72),
-    binds: j(_.IWg.TOGGLE_PREVIOUS_GUILD)
+    description: _.intl.string(_.t.Bqss72),
+    binds: x(O.IWg.TOGGLE_PREVIOUS_GUILD)
   }, {
-    description: O.intl.string(O.t.UaXAPx),
-    binds: j(_.IWg.MARK_SERVER_READ)
+    description: _.intl.string(_.t.UaXAPx),
+    binds: x(O.IWg.MARK_SERVER_READ)
   }, {
-    description: O.intl.string(O.t["5X9vFj"]),
-    binds: j(_.IWg.MARK_CHANNEL_READ)
+    description: _.intl.string(_.t["5X9vFj"]),
+    binds: x(O.IWg.MARK_CHANNEL_READ)
   }, {
-    description: O.intl.string(O.t.JoxNnl),
-    binds: j(_.IWg.SEARCH_EMOJIS),
+    description: _.intl.string(_.t.JoxNnl),
+    binds: x(O.IWg.SEARCH_EMOJIS),
     groupEnd: true
   }, {
-    description: O.intl.string(O.t.tL6eVW),
-    binds: j(_.IWg.TOGGLE_MUTE)
+    description: _.intl.string(_.t.tL6eVW),
+    binds: x(O.IWg.TOGGLE_MUTE)
   }, {
-    description: O.intl.string(O.t["QXe/7T"]),
-    binds: j(_.IWg.TOGGLE_DEAFEN)
+    description: _.intl.string(_.t["QXe/7T"]),
+    binds: x(O.IWg.TOGGLE_DEAFEN)
   }, {
-    description: O.intl.string(O.t.d6UIii),
-    binds: j(_.IWg.CALL_ACCEPT)
+    description: _.intl.string(_.t.d6UIii),
+    binds: x(O.IWg.CALL_ACCEPT)
   }, {
-    description: O.intl.string(O.t.IcEW06),
-    binds: j(_.IWg.MARK_CHANNEL_READ)
+    description: _.intl.string(_.t.IcEW06),
+    binds: x(O.IWg.MARK_CHANNEL_READ)
   }, {
-    description: O.intl.string(O.t.WN2dsS),
-    binds: j(_.IWg.CALL_START),
+    description: _.intl.string(_.t.WN2dsS),
+    binds: x(O.IWg.CALL_START),
     groupEnd: true
   }, {
-    description: O.intl.string(O.t.L3RYYJ),
-    binds: j(_.IWg.SCROLL_UP, _.IWg.SCROLL_DOWN)
+    description: _.intl.string(_.t.L3RYYJ),
+    binds: x(O.IWg.SCROLL_UP, O.IWg.SCROLL_DOWN)
   }, {
-    description: O.intl.string(O.t["3HAurM"]),
-    binds: j(_.IWg.JUMP_TO_FIRST_UNREAD)
+    description: _.intl.string(_.t["3HAurM"]),
+    binds: x(O.IWg.JUMP_TO_FIRST_UNREAD)
   }, {
-    description: O.intl.string(O.t.rrYBEu),
-    binds: j(_.IWg.TEXTAREA_FOCUS)
+    description: _.intl.string(_.t.rrYBEu),
+    binds: x(O.IWg.TEXTAREA_FOCUS)
   }, {
-    description: O.intl.string(O.t.yYsRlD),
-    binds: j(_.IWg.QUICKSWITCHER_SHOW)
+    description: _.intl.string(_.t.yYsRlD),
+    binds: x(O.IWg.QUICKSWITCHER_SHOW)
   }]
 }

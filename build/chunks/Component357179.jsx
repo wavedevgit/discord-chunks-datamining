@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 357179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => A
@@ -54,27 +54,27 @@ function A(e) {
     channelId: t,
     warningId: A,
     senderId: y
-  } = e, _ = l.useCallback(() => {
+  } = e, O = l.useCallback(() => {
     (0, u.xi)(t, [A])
-  }, [t, A]), O = (0, s.bG)([c.A], () => c.A.isBlocked(y)), j = l.useMemo(() => ({
+  }, [t, A]), _ = (0, s.bG)([c.A], () => c.A.isBlocked(y)), x = l.useMemo(() => ({
     channelId: t,
     warningId: A,
     senderId: y,
     warningType: d._j.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, A, y]);
   l.useEffect(() => {
-    (0, p.QF)(b(m({}, j), {
-      viewName: p.gN.SAFETY_WARNING_BANNER
+    (0, h.QF)(b(m({}, x), {
+      viewName: h.gN.SAFETY_WARNING_BANNER
     })), o.A.increment({
       name: i.K.SAFETY_WARNING_VIEW
     })
-  }, [j]);
-  let v = l.useCallback(e => {
-      (0, p._$)(b(m({}, j), {
+  }, [x]);
+  let j = l.useCallback(e => {
+      (0, h._$)(b(m({}, x), {
         cta: e
       }))
-    }, [j]),
-    x = l.useCallback(() => {
+    }, [x]),
+    v = l.useCallback(() => {
       (0, a.mMO)(async () => {
         let {
           default: e
@@ -94,15 +94,15 @@ function A(e) {
           })
         }
       }, {
-        modalKey: f.V
-      }), v(p.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, y, A, v]),
+        modalKey: g.V
+      }), j(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, y, A, j]),
     E = l.useCallback(() => {
-      _(), v(p.Wm.USER_BANNER_BLOCK_CONFIRM)
-    }, [_, v]),
+      O(), j(h.Wm.USER_BANNER_BLOCK_CONFIRM)
+    }, [O, j]),
     C = l.useCallback(() => {
-      _(), v(p.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [_, v]),
+      O(), j(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [O, j]),
     S = l.useCallback(() => {
       (0, a.mMO)(async () => {
         let {
@@ -118,7 +118,7 @@ function A(e) {
             onBlock: E,
             onBlockAndReport: C,
             onCancel: () => {
-              null == i || i(), v(p.Wm.USER_BANNER_BLOCK_CANCEL)
+              null == i || i(), j(h.Wm.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: i,
             userId: y,
@@ -126,21 +126,21 @@ function A(e) {
           })
         }
       })
-    }, [E, C, y, t, v]);
-  return (0, r.jsx)(h.N, {
+    }, [E, C, y, t, j]);
+  return (0, r.jsx)(p.N, {
     channelId: t,
     warningId: A,
     senderId: y,
     warningType: d._j.INAPPROPRIATE_CONVERSATION_TIER_2,
-    header: g.intl.string(g.t.ZzlB5p),
-    description: g.intl.string(g.t["D1aU+h"]),
-    onDismiss: _,
+    header: f.intl.string(f.t.ZzlB5p),
+    description: f.intl.string(f.t["D1aU+h"]),
+    onDismiss: O,
     buttons: [{
-      text: g.intl.string(g.t.Qyu4UK),
+      text: f.intl.string(f.t.Qyu4UK),
       variant: "primary",
-      onClick: x
-    }, ...O ? [] : [{
-      text: g.intl.string(g.t["7q0bNY"]),
+      onClick: v
+    }, ..._ ? [] : [{
+      text: f.intl.string(f.t["7q0bNY"]),
       variant: "secondary",
       onClick: S
     }]]

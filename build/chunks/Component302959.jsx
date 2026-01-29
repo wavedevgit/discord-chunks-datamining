@@ -1,8 +1,8 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 302959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I,
-  M: () => S
+  A: () => x,
+  M: () => j
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,23 +55,23 @@ function O(e, t) {
   }), e
 }
 
-function j(e) {
+function S(e) {
   let {
     type: t,
     source: n,
-    activity: i,
-    applicationStream: l,
+    activity: l,
+    applicationStream: i,
     user: a,
     guildId: s,
     channelId: c,
     onAction: u
   } = e;
   return (0, r.jsx)(o.A, {
-    className: (0, A.t)(h, "actions", t),
+    className: (0, _.t)(h, "actions", t),
     type: t,
     source: n,
-    activity: i,
-    applicationStream: l,
+    activity: l,
+    applicationStream: i,
     user: a,
     guildId: s,
     buttonVariant: "primary",
@@ -79,58 +79,58 @@ function j(e) {
     onAction: u
   })
 }
-let S = Chunk153331.A.Types,
-  I = function(e) {
+let j = Chunk153331.A.Types,
+  x = function(e) {
     let {
       activity: t,
       user: n,
       useStoreStream: o = true,
-      showActions: A = true,
+      showActions: _ = true,
       hideHeader: h = false,
-      showChannelDetails: S = false
-    } = e, I = function(e, t) {
+      showChannelDetails: j = false
+    } = e, x = function(e, t) {
       if (null == e) return {};
-      var n, r, i, l = {};
+      var n, r, l, i = {};
       if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-        return l
+        for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+        return i
       }
-      if (l = function(e, t) {
+      if (i = function(e, t) {
           if (null == e) return {};
-          var n, r, i = {},
-            l = Object.getOwnPropertyNames(e);
-          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-          return i
+          var n, r, l = {},
+            i = Object.getOwnPropertyNames(e);
+          for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+          return l
         }(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-      return l
-    }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), x = (0, l.bG)([_.A, m.A], () => {
+        for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      return i
+    }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), I = (0, i.bG)([y.A, m.A], () => {
       var e;
-      return m.A.getChannel(null == (e = _.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
-    }), E = (0, d.v)("UserActivityContainer", x), P = (0, l.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), N = (null == t ? true : t.type) === b.$pd.HANG_STATUS && E ? x : null, T = (0, l.bG)([g.A, _.A, m.A], () => {
+      return m.A.getChannel(null == (e = y.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
+    }), P = (0, d.v)("UserActivityContainer", I), E = (0, i.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), T = (null == t ? true : t.type) === A.$pd.HANG_STATUS && P ? I : null, N = (0, i.bG)([g.A, y.A, m.A], () => {
       var e, r;
-      return (0, a.A)(t, b.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = _.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != N ? g.A.getGuild(N.getGuildId()) : null
-    }), w = (0, l.bG)([g.A], () => null != P ? g.A.getGuild(P.guildId) : null), C = (0, l.bG)([c.A], () => {
+      return (0, a.A)(t, A.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != T ? g.A.getGuild(T.getGuildId()) : null
+    }), w = (0, i.bG)([g.A], () => null != E ? g.A.getGuild(E.guildId) : null), C = (0, i.bG)([c.A], () => {
       if (null != t)
         if (null != t.application_id) return c.A.getApplication(t.application_id);
         else return c.A.getApplicationByName(t.name);
       return null
     });
-    return (i.useEffect(() => {
-      (null == t ? true : t.type) === b.$pd.HANG_STATUS && E && y.default.track(b.HAw.VIEW_HANG_STATUS, v({
+    return (l.useEffect(() => {
+      (null == t ? true : t.type) === A.$pd.HANG_STATUS && P && b.default.track(A.HAw.VIEW_HANG_STATUS, v({
         source: "UserActivity",
         other_user_id: n.id
-      }, (0, u.A)(null == N ? true : N.id)))
-    }, [null == t ? true : t.type, E, N, n.id]), (null == t ? true : t.type) !== b.$pd.HANG_STATUS || E) ? (0, r.jsx)(s.A, O(v({}, I), {
+      }, (0, u.A)(null == T ? true : T.id)))
+    }, [null == t ? true : t.type, P, T, n.id]), (null == t ? true : t.type) !== A.$pd.HANG_STATUS || P) ? (0, r.jsx)(s.A, O(v({}, x), {
       activity: t,
       user: n,
       application: C,
       hideHeader: h,
-      activityGuild: null != T ? T : w,
-      showChannelDetails: S,
-      channel: S ? x : true,
-      renderActions: A ? () => (0, r.jsx)(j, O(v({}, I), {
-        applicationStream: P,
+      activityGuild: null != N ? N : w,
+      showChannelDetails: j,
+      channel: j ? I : true,
+      renderActions: _ ? () => (0, r.jsx)(S, O(v({}, x), {
+        applicationStream: E,
         activity: t,
         user: n
       })) : null,

@@ -1,14 +1,14 @@
-/** Chunk was on 28979 **/
-/** chunk id: 103520, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 103520, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  a: () => a
+  a: () => u
 });
 var Chunk793998 = require("./793998.jsx"),
   Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
-let a = (0, Chunk419954.E2)(Chunk780964.X.FAMILY_CENTER_SETTING, {
+let u = (0, Chunk419954.E2)(Chunk780964.X.FAMILY_CENTER_SETTING, {
   Component: Chunk793998.p,
-  useSearchTerms: () => [r.intl.string(u.default.RZqaJn), r.intl.string(u.default.bdBmqy), r.intl.string(u.default["gVWG+6"]), r.intl.string(u.default.ahKIJO), r.intl.string(u.default["8SLtqb"])]
+  useSearchTerms: () => [r.intl.string(a.default.RZqaJn), r.intl.string(a.default.bdBmqy), r.intl.string(a.default["gVWG+6"]), r.intl.string(a.default.ahKIJO), r.intl.string(a.default["8SLtqb"])]
 })

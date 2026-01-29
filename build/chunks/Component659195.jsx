@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 659195, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -22,28 +22,28 @@ function b(e) {
   let {
     threadId: t
   } = e, n = (0, i.bG)([o.A], () => o.A.getChannel(t)), b = (0, i.bG)([o.A], () => o.A.getChannel(null == n ? true : n.parent_id)), A = l.useCallback(() => {
-    null != n && null != b && ((0, a.zV)(f.HAw.MEDIA_POST_SHARE_PROMPT_CLICKED, {
+    null != n && null != b && ((0, a.zV)(g.HAw.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
     }), (0, u.C)((0, c.af)(n, b)))
   }, [n, b]);
   return (0, r.jsxs)("div", {
     className: m.BQ,
-    children: [(0, r.jsx)(h.A, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(p.A, {}), (0, r.jsxs)("div", {
       className: m.BB,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: g.intl.string(g.t["5uAO7d"])
+        children: f.intl.string(f.t["5uAO7d"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: g.intl.format(g.t.WnfPV3, {
-          helpArticleUrl: d.A.getCreatorSupportArticleURL(f.MVz.MEDIA_CHANNEL)
+        children: f.intl.format(f.t.WnfPV3, {
+          helpArticleUrl: d.A.getCreatorSupportArticleURL(g.MVz.MEDIA_CHANNEL)
         })
       }), (0, r.jsx)(s.hKd, {
         size: 4
       }), (0, r.jsx)(s.Button, {
-        text: g.intl.string(g.t.C5UQC9),
+        text: f.intl.string(f.t.C5UQC9),
         variant: "primary",
         icon: s.qYV,
         onClick: A
@@ -51,9 +51,9 @@ function b(e) {
     }), (0, r.jsx)(s.DUT, {
       className: m.b,
       onClick: () => {
-        (0, p.sF)(t)
+        (0, h.sF)(t)
       },
-      "aria-label": g.intl.string(g.t["0+xZH0"]),
+      "aria-label": f.intl.string(f.t["0+xZH0"]),
       children: (0, r.jsx)(s.PGe, {
         color: "currentColor",
         size: "xs"

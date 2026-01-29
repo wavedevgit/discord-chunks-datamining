@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 772538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,14 +19,14 @@ require("./820575.js");
 var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function f(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, c = o.pE.useSetting().includes(n), _ = i.useCallback(e => {
+  } = e, c = o.pE.useSetting().includes(n), p = i.useCallback(e => {
     let r = (0, a.CN)();
     e ? r.delete(n) : r.add(n), o.pE.updateSetting([...r]), l.default.track(g.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: p.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
+      action: _.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
       ingress: t,
       guild_id: n
     })
@@ -34,22 +34,22 @@ function b(e) {
   return "0" === n ? null : (0, r.jsx)(d.h, {
     setting: m.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
     children: (0, r.jsx)(u.Ay, {
-      title: f.intl.string(f.t["T+nevN"]),
+      title: A.intl.string(A.t["T+nevN"]),
       value: !c,
-      onChange: _,
-      note: f.intl.format(f.t.jXKQCu, {
+      onChange: p,
+      note: A.intl.format(A.t.jXKQCu, {
         helpdeskArticle: s.A.getArticleURL(g.MVz.ACTIVITY_STATUS_SETTINGS)
       })
     })
   })
 }
 
-function h(e) {
+function b(e) {
   let {
-    ingress: t = _.bf.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = p.bf.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, c.Tx)();
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(f, {
     ingress: t,
     guildId: null != n ? n : i
   })

@@ -33,16 +33,16 @@ let g = () => (0, a.WU)("DM_SEARCH"),
           type: "button",
           className: f.lU,
           onClick: g,
-          children: p.intl.string(p.t.LzcpeZ)
+          children: h.intl.string(h.t.LzcpeZ)
         })
       }), (0, i.jsx)(l.A, {
         padding: 8,
-        theme: h.NJ8.DARK,
+        theme: p.NJ8.DARK,
         version: e,
         selectedChannelId: t
       }), (0, i.jsx)("section", {
         className: f.C3,
-        "aria-label": p.intl.string(p.t.StREWK),
+        "aria-label": h.intl.string(h.t.StREWK),
         children: (0, i.jsx)(o.A, {
           guildId: null
         })

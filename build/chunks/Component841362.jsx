@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 841362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,20 +13,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk641131 = require("./641131.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channel: t,
-    user: p,
-    guild: h
-  } = e, f = (0, l.bG)([o.A], () => null != p && null != h && (0, s.KX)(p, h, [o.A])), g = (0, l.bG)([a.Ay], () => null == p || null == a.Ay.getMember(t.guild_id, p.id));
-  if (!f) return null;
-  let m = g ? d.intl.string(u.default.Ux67nW) : d.intl.string(u.default["snp/lJ"]),
-    b = "kick-user-".concat(null == p ? true : p.id);
+    user: h,
+    guild: p
+  } = e, g = (0, l.bG)([o.A], () => null != h && null != p && (0, s.KX)(h, p, [o.A])), f = (0, l.bG)([a.Ay], () => null == h || null == a.Ay.getMember(t.guild_id, h.id));
+  if (!g) return null;
+  let m = f ? d.intl.string(u.default.Ux67nW) : d.intl.string(u.default["snp/lJ"]),
+    b = "kick-user-".concat(null == h ? true : h.id);
   return (0, r.jsx)(c.A, {
     text: m,
     icon: i.Nxw,
     onClick: () => {
-      null != p && (0, i.mMO)(async () => {
+      null != h && (0, i.mMO)(async () => {
         let {
           default: e
         } = await n.e("17862").then(n.bind(n, 324785));
@@ -51,7 +51,7 @@ function p(e) {
             return e
           }({}, n), i = i = {
             guildId: t.guild_id,
-            user: p,
+            user: h,
             modReportId: t.id
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -66,6 +66,6 @@ function p(e) {
         }
       })
     },
-    disabled: g
+    disabled: f
   }, b)
 }

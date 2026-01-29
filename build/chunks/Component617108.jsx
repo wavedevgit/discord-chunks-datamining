@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 617108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T
@@ -23,7 +23,7 @@ let T = function(e) {
     subscriptionTier: T
   } = e, {
     analyticsLocations: I
-  } = (0, o.Ay)(l.A.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), O = (0, c.O)(), N = (0, i.A)(null != O && null != O.expires_at ? Date.parse(O.expires_at) : 0);
+  } = (0, a.Ay)(l.A.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), O = (0, c.O)(), N = (0, i.A)(null != O && null != O.expires_at ? Date.parse(O.expires_at) : 0);
   return null == O || (null == (t = O.discount) ? true : t.plan_ids.some(e => d.hd[e].skuId !== T)) || null == O.expires_at || Object.values(N).every(e => 0 === e) ? null : (0, r.jsxs)(u.T0, {
     onClick: () => {
       n(), s.default.track(_.HAw.APP_NOTICE_CLOSED, {
@@ -34,7 +34,7 @@ let T = function(e) {
       children: (0, E.rn)(N, Number(O.discount.amount))
     }), (0, r.jsx)(u.fY, {
       onClick: () => {
-        (0, a.A)({
+        (0, o.A)({
           subscriptionTier: T,
           analyticsLocations: I,
           analyticsObject: {

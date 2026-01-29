@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 234658, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 234658, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  x: () => d
+  x: () => T
 });
 var Chunk311907 = require("./311907.js"),
   Chunk286237 = require("./286237.js"),
@@ -11,32 +11,32 @@ var Chunk311907 = require("./311907.js"),
   Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
+let T = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
   usePredicate: () => {
     let {
-      runningGameApplication: t
+      runningGameApplication: e
     } = (0, l.A)();
-    return (null == t ? true : t.id) != null
+    return (null == e ? true : e.id) != null
   },
   useDisabled: () => {
     let {
-      runningGame: t
+      runningGame: e
     } = (0, l.A)();
-    return null != t && (0, s.qJ)(t.pid)
+    return null != e && (0, s.qJ)(e.pid)
   },
   useValue: () => {
     let {
-      runningGame: t,
-      runningGameApplication: e
-    } = (0, l.A)(), i = null == e ? true : e.id, u = (0, n.bG)([r.A], () => r.A.isLimitedInteractionOverrideEnabled(i)), a = null != t && (0, s.qJ)(t.pid);
-    return u || a
+      runningGame: e,
+      runningGameApplication: t
+    } = (0, l.A)(), i = null == t ? true : t.id, a = (0, n.bG)([r.A], () => r.A.isLimitedInteractionOverrideEnabled(i)), u = null != e && (0, s.qJ)(e.pid);
+    return a || u
   },
-  setValue: t => {
+  setValue: e => {
     let {
-      runningGameApplication: e
+      runningGameApplication: t
     } = (0, l.b)();
-    null != e && (0, u.x8)(e.id, t)
+    null != t && (0, a.x8)(t.id, e)
   },
-  useTitle: () => T.intl.string(T.t.wgVQND),
-  useSubtitle: () => T.intl.string(T.t["5SsyF5"])
+  useTitle: () => d.intl.string(d.t.wgVQND),
+  useSubtitle: () => d.intl.string(d.t["5SsyF5"])
 })

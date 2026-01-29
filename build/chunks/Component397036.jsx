@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 397036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, u.e)({
     guildId: t,
     channelId: n
-  }), A = (0, c.uk)(t), y = (0, c.Tq)(t), _ = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), O = null == _ ? true : _.name, j = (0, i.bG)([a.A], () => a.A.getChannel(n)), v = l.useMemo(() => {
+  }), A = (0, c.uk)(t), y = (0, c.Tq)(t), O = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), _ = null == O ? true : O.name, x = (0, i.bG)([a.A], () => a.A.getChannel(n)), j = l.useMemo(() => {
     let e = {};
     for (let t of A)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -33,9 +33,9 @@ function b(e) {
   }, [A]);
   return ((0, d.A)({
     guildId: t,
-    location: f.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
+    location: g.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL,
     relevantSubscriptionListingIds: b.map(e => e.id)
-  }), null == _) ? (0, r.jsx)("div", {
+  }), null == O) ? (0, r.jsx)("div", {
     className: m.__invalid_spinnerContainer,
     children: (0, r.jsx)(s.y$y, {
       className: m.__invalid_spinner
@@ -45,22 +45,22 @@ function b(e) {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xl/semibold",
       className: m.DX,
-      children: g.intl.format(g.t.xHMpym, {
-        serverName: O,
-        channelName: null == j ? true : j.name
+      children: f.intl.format(f.t.xHMpym, {
+        serverName: _,
+        channelName: null == x ? true : x.name
       })
     }), (0, r.jsx)(s.Text, {
       className: m.Lv,
       variant: "text-md/normal",
       color: "text-default",
       children: null == y ? true : y.description
-    }), (0, r.jsx)(p.A, {
+    }), (0, r.jsx)(h.A, {
       guildId: t,
-      children: b.filter(e => null != v[e.id]).map(e => (0, r.jsx)(h.A, {
+      children: b.filter(e => null != j[e.id]).map(e => (0, r.jsx)(p.A, {
         guildId: t,
         listingId: e.id,
-        groupListingId: v[e.id],
-        analyticsLocation: f.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
+        groupListingId: j[e.id],
+        analyticsLocation: g.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]
   })

@@ -1,8 +1,8 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 910492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => _,
-  q: () => p
+  O: () => p,
+  q: () => _
 });
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -13,7 +13,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk309010 = require("./309010.js"),
   Chunk203982 = require("./203982.js"),
   Chunk652215 = require("./652215.js");
-let p = {
+let _ = {
     binds: ["mod+i"],
     comboKeysBindGlobal: true,
     action: () => !(o.A.getLayers().length > 0) && ((() => {
@@ -28,7 +28,7 @@ let p = {
       return window.location.pathname.startsWith(u.BVt.CHANNEL(u.gNP)) && null != n ? (0, l.i)(n.guild_id, t) : (0, l.a)(u.BVt.CHANNEL(u.gNP, null != t ? t : true))
     })(), d._.dispatch(u.jej.TOGGLE_INBOX), false)
   },
-  _ = {
+  p = {
     binds: ["mod+shift+e"],
     comboKeysBindGlobal: true,
     action: i().debounce(() => {

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk978551 = require("./978551.jsx"),
   Chunk100817 = require("./100817.jsx"),
   Chunk531525 = require("./531525.js");
-class O extends Chunk64700.PureComponent {
+class C extends Chunk64700.PureComponent {
   renderEnabled() {
     let {
       backupCodes: e,
@@ -37,42 +37,42 @@ class O extends Chunk64700.PureComponent {
         hasTOTPEnabled: t
       }), e.length > 0 && (0, r.jsxs)(o.BJc, {
         gap: 16,
-        children: [(0, r.jsx)(f.A, {
+        children: [(0, r.jsx)(A.A, {
           backupCodes: e
         }), (0, r.jsx)(o.cGx, {})]
       }), t && (0, r.jsx)(c.x, {
-        setting: x.H.ACCOUNT_SMS_BACKUP,
-        children: (0, r.jsx)(h.A, {
+        setting: O.H.ACCOUNT_SMS_BACKUP,
+        children: (0, r.jsx)(b.A, {
           currentUser: n,
           togglingSMS: i
         })
       }), (0, r.jsx)(c.x, {
-        setting: x.H.ACCOUNT_SECURITY_KEYS,
+        setting: O.H.ACCOUNT_SECURITY_KEYS,
         children: (0, r.jsx)(d.A, {})
       })]
     })
   }
   renderDisabled() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(d.A, {})]
+      children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(A.A, {})
+    return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(h.A, {})
   }
 }
 
-function C(e) {
-  let t = (0, a.bG)([_.default], () => _.default.getCurrentUser());
+function x(e) {
+  let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
   s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, a.cf)([p.A, u.default], () => ({
-    togglingSMS: p.A.togglingSMS,
+  let n = (0, a.cf)([_.A, u.default], () => ({
+    togglingSMS: _.A.togglingSMS,
     hasTOTPEnabled: u.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(O, function(e) {
+  return (0, r.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 402089, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 402089, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  s: () => A
+  s: () => c
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -11,23 +11,23 @@ var Chunk627968 = require("./627968.js"),
   Chunk780964 = require("./780964.js"),
   Chunk457684 = require("./457684.jsx"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_REMOVAL_SETTING, {
-    useSearchTerms: () => [T.intl.string(T.t.ZKsIks), T.intl.string(T.t.jf5GGb), T.intl.string(T.t["8lQ2rR"])],
+let T = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_REMOVAL_SETTING, {
+    useSearchTerms: () => [d.intl.string(d.t.ZKsIks), d.intl.string(d.t.jf5GGb), d.intl.string(d.t["8lQ2rR"])],
     Component: function() {
-      let t = (0, l.bG)([u.default], () => u.default.getCurrentUser()),
+      let e = (0, l.bG)([a.default], () => a.default.getCurrentUser()),
         {
-          teams: e,
+          teams: t,
           loading: i
         } = (0, r.A)({
           refreshOnDepChange: true
         });
-      return null == t ? null : (0, n.jsx)(o.A, {
-        currentUser: t,
+      return null == e ? null : (0, n.jsx)(o.A, {
+        currentUser: e,
         userTeamsLoading: i,
-        userTeams: e
+        userTeams: t
       })
     }
   }),
-  A = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_REMOVAL_CATEGORY, {
-    buildLayout: () => [d]
+  c = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_REMOVAL_CATEGORY, {
+    buildLayout: () => [T]
   })

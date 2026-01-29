@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 697122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => d
@@ -18,14 +18,14 @@ function d(e) {
     children: n,
     className: l,
     editable: d,
-    location: p
+    location: h
   } = e;
   return d ? (0, r.jsx)(s.m, {
     position: "bottom",
     text: c.intl.string(c.t["0qPSMV"]),
     children: (0, r.jsxs)(a.DUT, {
       className: i()(u.e, l),
-      onClick: () => (0, o.jv)(t.id, p),
+      onClick: () => (0, o.jv)(t.id, h),
       children: [n, (0, r.jsx)("div", {
         className: u.Z,
         children: (0, r.jsx)(a.R2l, {

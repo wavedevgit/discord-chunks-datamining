@@ -1,4 +1,4 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 523418, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => d
@@ -13,12 +13,12 @@ var Chunk397927 = require("./397927.js"),
 
 function d() {
   let e = (0, r.b_)(),
-    t = (0, l.AC)(a.H.GAMES),
+    t = (0, s.AC)(a.H.GAMES),
     n = [{
       id: o.J.MY_GAMES,
       title: c.intl.string(c.t["5DMgp9"]),
       icon: i.LVO,
-      predicate: () => !s.isPlatformEmbedded,
+      predicate: () => !l.isPlatformEmbedded,
       setting: a.H.GAMES_MY_GAMES
     }, {
       id: o.J.OVERLAY,

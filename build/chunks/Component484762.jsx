@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 484762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => eR
@@ -53,7 +53,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk167056 = require("./167056.js"),
   Chunk661251 = require("./661251.js");
 
-function $(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -72,7 +72,7 @@ function $(e) {
   return e
 }
 
-function Z(e, t) {
+function $(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ function Z(e, t) {
   }), e
 }
 let ee = {
-    [Chunk652215.uss.CLICK_ZONE_DEBUG]: e => Z($({
+    [Chunk652215.uss.CLICK_ZONE_DEBUG]: e => $(Z({
       type: q.uss.CLICK_ZONE_DEBUG,
       id: (0, c.A)(),
       layoutId: e,
@@ -100,7 +100,7 @@ let ee = {
     }, k.A.getWidgetDefaultSettings(q.uss.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
-    [Chunk652215.uss.PERFORMANCE_DEBUG]: e => Z($({
+    [Chunk652215.uss.PERFORMANCE_DEBUG]: e => $(Z({
       type: q.uss.PERFORMANCE_DEBUG,
       id: (0, c.A)(),
       layoutId: e,
@@ -348,7 +348,7 @@ let es = Chunk64700.memo(function(e) {
     let a = null == (n = S.default.getTrackedGameByPid(t)) ? true : n.gameName;
     return null != a ? (et[t] = a, a) : null != (e = et[t]) ? e : "Unknown"
   }, [t]);
-  return (0, a.jsx)(p.Text, Z($({}, n), {
+  return (0, a.jsx)(p.Text, $(Z({}, n), {
     variant: "text-md/semibold",
     color: "text-strong",
     children: l
@@ -442,7 +442,7 @@ let ec = Chunk64700.memo(function(e) {
           screenType: r,
           timestamp: i
         }]), e
-      }, $({}, e)))
+      }, Z({}, e)))
     }, +B.A.Millis.SECOND), () => clearInterval(r.current)), []), (0, a.jsx)(u.m_, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
@@ -638,7 +638,7 @@ let ec = Chunk64700.memo(function(e) {
         label: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         value: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         id: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
-      }].map(t => Z($({}, t), {
+      }].map(t => $(Z({}, t), {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
     return (0, a.jsx)(p.l6P, {
@@ -662,7 +662,7 @@ function eg(e) {
   function s() {
     n(null)
   }
-  return (0, a.jsxs)(p.EOs, Z($({
+  return (0, a.jsxs)(p.EOs, $(Z({
     size: p.rIJ.LARGE,
     "aria-label": "Breadcrumb Import"
   }, t), {
@@ -1186,7 +1186,7 @@ let ew = e => {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: (0, a.jsx)("pre", {
-          children: JSON.stringify(Z($({}, e), {
+          children: JSON.stringify($(Z({}, e), {
             overlayKeybind: (0, F.dI)(t.shortcut)
           }), true, 2)
         })

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 518530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,43 +21,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk266920 = require("./266920.js");
-let O = function(e) {
+let _ = function(e) {
   let {
     channel: t,
     guild: n,
-    maxWidth: O
+    maxWidth: _
   } = e;
   l.useEffect(() => {
-    (0, p.Dr)(i.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
+    (0, h.Dr)(i.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
       dismissAction: A.i.AUTO
     })
   }, []);
-  let j = l.useCallback(() => {
-      a.A.updateChatOpen(t.id, false, "close button"), g._.safeDispatch(b.jej.FOCUS_CHAT_BUTTON)
+  let x = l.useCallback(() => {
+      a.A.updateChatOpen(t.id, false, "close button"), f._.safeDispatch(b.jej.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    v = (0, r.jsx)(h.Ay.Icon, {
+    j = (0, r.jsx)(p.Ay.Icon, {
       icon: s.PGe,
       tooltip: y.intl.string(y.t.cpT0Cq),
-      onClick: j
+      onClick: x
     });
   return (0, r.jsxs)(u.A, {
     sidebarType: u.X.CallChatSidebar,
-    maxWidth: O,
+    maxWidth: _,
     floatingLayer: m.Ay,
     children: [(0, r.jsx)(o.A, {
       channel: t,
-      draftType: f.C.ChannelMessage
-    }), (0, r.jsxs)(h.Ay, {
-      toolbar: v,
+      draftType: g.C.ChannelMessage
+    }), (0, r.jsxs)(p.Ay, {
+      toolbar: j,
       "aria-label": y.intl.string(y.t.BIYAqa),
-      children: [(0, r.jsx)(h.Ay.ChannelIcon, {
+      children: [(0, r.jsx)(p.Ay.ChannelIcon, {
         icon: s.oyn,
         "aria-label": y.intl.string(y.t.Kx5kCN)
-      }), (0, r.jsx)(h.Ay.Title, {
+      }), (0, r.jsx)(p.Ay.Title, {
         children: t.name
       })]
     }), (0, r.jsx)("div", {
-      className: _.T,
+      className: O.T,
       children: (0, r.jsx)(c.A, {
         channel: t,
         guild: n,

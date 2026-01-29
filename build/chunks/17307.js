@@ -1,10 +1,10 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 17307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G4: () => _,
+  G4: () => p,
   LQ: () => m,
   t4: () => u,
-  vx: () => p
+  vx: () => _
 }), require("./321073.js"), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk582754 = require("./582754.js"),
@@ -15,7 +15,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
 let u = (e, t, n) => (0, i.Mw)(e) ? t : n,
-  p = e => {
+  _ = e => {
     let {
       perksCards: t,
       variant: n,
@@ -26,13 +26,13 @@ let u = (e, t, n) => (0, i.Mw)(e) ? t : n,
       recurring3PPromotionExperiment: a,
       showPremiumGroup: d,
       isPremiumGroupMember: u
-    } = e, p = [];
+    } = e, _ = [];
     switch (n) {
       case o.cJ.PERKS_DISCOVERABILITY:
-        p = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : l === c.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+        _ = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : l === c.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case o.cJ.WHATS_NEW:
-        p = (e => {
+        _ = (e => {
           let {
             cards: t,
             perksCards: n,
@@ -58,24 +58,24 @@ let u = (e, t, n) => (0, i.Mw)(e) ? t : n,
             card: n.newAppStylesUpdateJune2024
           }), t.push(...l), t
         })({
-          cards: p,
+          cards: _,
           perksCards: t,
           recurring3PPromotionExperiment: a,
           showPremiumGroup: d
         });
         break;
       case o.cJ.CARD_CAROUSEL_FIRST_ROW:
-        p = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+        _ = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
         break;
       case o.cJ.CARD_CAROUSEL_SECOND_ROW:
-        p = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === c.xc.FP_ONLY ? s ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+        _ = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === c.xc.FP_ONLY ? s ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
         break;
       case o.cJ.CARD_CAROUSEL_THIRD_ROW:
-        p = l === c.xc.FP_ONLY ? s ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+        _ = l === c.xc.FP_ONLY ? s ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
     }
-    return r && (p = p.filter(e => !e.hideOnNarrowScreen)), p
+    return r && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
   },
-  _ = e => {
+  p = e => {
     let t = (0, r.bG)([s.A], () => s.A.getPremiumTypeSubscription()),
       n = null != t ? a.Ay.getPremiumPlanItem(t) : null,
       i = (null != n ? a.Ay.getSkuIdForPlan(n.planId) : null) === c.pe.TIER_2;

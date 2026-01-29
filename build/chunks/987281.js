@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 2827 **/
 /** chunk id: 987281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => d,
-  a: () => u
+  V: () => u,
+  a: () => d
 }), require("./747238.js"), require("./733351.js");
 var Chunk64700 = require("./64700.js"),
   Chunk964486 = require("./964486.js"),
@@ -11,32 +11,32 @@ var Chunk64700 = require("./64700.js"),
   Chunk152056 = require("./152056.js"),
   Chunk360619 = require("./360619.js"),
   Chunk531525 = require("./531525.js");
-let u = (0, Chunk839214.D)(() => ({
+let d = (0, Chunk839214.D)(() => ({
   searchResults: c.R,
   hasSearchResults: false
 }));
 
-function d() {
+function u() {
   let e = a.A.useField("query"),
     t = (0, o.PH)(),
     n = r.useRef(new s.A((0, o.NI)(t))),
-    i = r.useCallback(async e => {
+    l = r.useCallback(async e => {
       let t = await n.current.search(e.trim());
-      u.setState({
+      d.setState({
         searchResults: t,
         hasSearchResults: true
       })
     }, []);
   r.useEffect(() => {
-    "" === e || e.length < 2 ? u.resetState() : i(e)
-  }, [e, i]), (0, l.Ay)(() => () => {
-    u.resetState(), a.A.setState({
+    "" === e || e.length < 2 ? d.resetState() : l(e)
+  }, [e, l]), (0, i.Ay)(() => () => {
+    d.resetState(), a.A.setState({
       query: ""
     })
   });
-  let c = u.useField("searchResults");
+  let c = d.useField("searchResults");
   return {
-    hasSearchResults: u.useField("hasSearchResults"),
+    hasSearchResults: d.useField("hasSearchResults"),
     searchResults: c
   }
 }

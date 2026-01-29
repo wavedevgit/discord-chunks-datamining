@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 287074, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,17 +50,17 @@ function m(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, o.vL)(t), [b, A] = l.useState(false), y = (0, i.bG)([u.Ay], () => u.Ay.hasUnreadPins(t.id), [t]), _ = (0, c.aL)(), O = l.useRef(null), j = l.useCallback(() => {
+  } = e, n = (0, o.vL)(t), [b, A] = l.useState(false), y = (0, i.bG)([u.Ay], () => u.Ay.hasUnreadPins(t.id), [t]), O = (0, c.aL)(), _ = l.useRef(null), x = l.useCallback(() => {
     n || A(e => !e)
   }, [n]);
 
-  function v(e) {
-    (null == e ? true : e.shiftKey) || _.dispatch(h.jej.POPOUT_CLOSE)
+  function j(e) {
+    (null == e ? true : e.shiftKey) || O.dispatch(p.jej.POPOUT_CLOSE)
   }
-  return l.useEffect(() => (d._.subscribe(h.jej.TOGGLE_CHANNEL_PINS, j), () => {
-    d._.unsubscribe(h.jej.TOGGLE_CHANNEL_PINS, j)
-  }), [j]), (0, r.jsx)(s.YNO, {
-    targetElementRef: O,
+  return l.useEffect(() => (d._.subscribe(p.jej.TOGGLE_CHANNEL_PINS, x), () => {
+    d._.unsubscribe(p.jej.TOGGLE_CHANNEL_PINS, x)
+  }), [x]), (0, r.jsx)(s.YNO, {
+    targetElementRef: _,
     shouldShow: b,
     animation: s.YNO.Animation.NONE,
     position: "bottom",
@@ -69,8 +69,8 @@ let b = function(e) {
     ignoreModalClicks: true,
     onRequestClose: () => A(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(a.A, m(g({}, e), {
-        onJump: v,
+      return (0, r.jsx)(a.A, m(f({}, e), {
+        onJump: j,
         channel: t
       }))
     },
@@ -79,13 +79,13 @@ let b = function(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(p.In, m(g({}, e), {
-        ref: O,
-        onClick: j,
-        tooltip: l ? null : f.intl.string(f.t["mp1N/2"]),
+      return (0, r.jsx)(h.In, m(f({}, e), {
+        ref: _,
+        onClick: x,
+        tooltip: l ? null : g.intl.string(g.t["mp1N/2"]),
         icon: s.tsw,
         iconSize: 20,
-        "aria-label": f.intl.string(f.t["mp1N/2"]),
+        "aria-label": g.intl.string(g.t["mp1N/2"]),
         disabled: n,
         showBadge: y,
         selected: l

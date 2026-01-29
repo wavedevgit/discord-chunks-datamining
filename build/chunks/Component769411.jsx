@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 769411, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -16,19 +16,19 @@ let c = "url(#gradient)",
       children: n,
       animationClassName: d,
       initialPercentage: u = 0,
-      progressCircleStrokeSize: p = 2,
-      progressCircleVariation: _,
+      progressCircleStrokeSize: _ = 2,
+      progressCircleVariation: p,
       progressCircleStroke: m
-    } = e, g = 43 + p / 2, f = 2 * Math.PI * g, [b, h] = i.useState(u);
+    } = e, g = 43 + _ / 2, A = 2 * Math.PI * g, [f, b] = i.useState(u);
     i.useEffect(() => {
       let e = setTimeout(() => {
-        h(t)
+        b(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
-    let A = (0, s.Ay)(),
-      E = (0, l.qB)(A),
-      x = (e => {
+    let h = (0, s.Ay)(),
+      E = (0, l.qB)(h),
+      O = (e => {
         switch (e) {
           case a.BN.NITRO_GEM:
           case a.BN.AVATAR_DECO:
@@ -38,8 +38,8 @@ let c = "url(#gradient)",
           default:
             return
         }
-      })(_),
-      O = ((e, t) => {
+      })(p),
+      C = ((e, t) => {
         switch (e) {
           case a.BN.NITRO_LOGO:
             return t ? "0.3" : "0.2";
@@ -48,8 +48,8 @@ let c = "url(#gradient)",
           default:
             return
         }
-      })(_, E),
-      C = null != m ? m : ((e, t) => {
+      })(p, E),
+      x = null != m ? m : ((e, t) => {
         switch (t) {
           case a.BN.NITRO_GEM:
           case a.BN.AVATAR_DECO:
@@ -59,29 +59,29 @@ let c = "url(#gradient)",
           default:
             return
         }
-      })(E, _);
+      })(E, p);
     return (0, r.jsxs)("div", {
       className: o.Ap,
       children: [(0, r.jsxs)("svg", {
         viewBox: "0 0 100 100",
         className: o.fB,
         children: [(0, r.jsx)("circle", {
-          className: _ === a.BN.NITRO_GEM || _ === a.BN.AVATAR_DECO ? o.F3 : true,
+          className: p === a.BN.NITRO_GEM || p === a.BN.AVATAR_DECO ? o.F3 : true,
           fill: "transparent",
-          strokeWidth: p,
+          strokeWidth: _,
           r: "".concat(g),
           cx: "50%",
           cy: "50%",
-          stroke: x,
-          strokeOpacity: O
+          stroke: O,
+          strokeOpacity: C
         }), (0, r.jsx)("circle", {
-          stroke: C,
-          strokeWidth: p,
+          stroke: x,
+          strokeWidth: _,
           strokeLinecap: "round",
-          strokeDasharray: "".concat(f, " ").concat(f),
+          strokeDasharray: "".concat(A, " ").concat(A),
           className: d,
           style: {
-            strokeDashoffset: (1 - b / 100) * f
+            strokeDashoffset: (1 - f / 100) * A
           },
           r: "".concat(g),
           cx: "50%",

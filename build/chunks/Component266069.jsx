@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 266069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => g
+  u: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,16 +16,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk519501 = require("./519501.js"),
   Chunk658122 = require("./658122.js");
 
-function g(e) {
+function f(e) {
   let {
     label: t,
     icon: n,
     setStatus: i,
-    isFavorited: g,
+    isFavorited: f,
     onFavoriteClick: m
-  } = e, [b, A] = l.useState(false), y = (0, a.bG)([d.A], () => d.A.getFavoritedStatuses().length >= d.x), _ = null != m, O = l.useCallback(e => {
+  } = e, [b, A] = l.useState(false), y = (0, a.bG)([d.A], () => d.A.getFavoritedStatuses().length >= d.x), O = null != m, _ = l.useCallback(e => {
     e.stopPropagation(), null == m || m()
-  }, [m]), j = g ? u.Gg5 : u.yA2;
+  }, [m]), x = f ? u.Gg5 : u.yA2;
   return (0, r.jsxs)(u.DUT, {
     onClick: i,
     onMouseEnter: () => {
@@ -34,21 +34,21 @@ function g(e) {
     onMouseLeave: () => {
       A(false)
     },
-    className: s()(f.item, f.labelContainer, h.kL),
+    className: s()(g.item, g.labelContainer, p.kL),
     children: [(0, r.jsx)("div", {
       children: n
     }), (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
-      className: h.rv,
+      className: p.rv,
       children: t
-    }), b && _ && (0, r.jsx)(c.m_, {
-      text: y && !g ? p.intl.string(p.t.YSDH9n) : true,
+    }), b && O && (0, r.jsx)(c.m_, {
+      text: y && !f ? h.intl.string(h.t.YSDH9n) : true,
       children: (0, r.jsx)(u.DUT, {
-        className: s()(h.ff, h.wB),
-        onClick: O,
-        children: (0, r.jsx)(j, {
-          className: h.ut,
-          color: g ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
+        className: s()(p.ff, p.wB),
+        onClick: _,
+        children: (0, r.jsx)(x, {
+          className: p.ut,
+          color: f ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
         })
       })
     })]

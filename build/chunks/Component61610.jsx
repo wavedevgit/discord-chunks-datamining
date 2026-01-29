@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 61610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => b
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,11 +19,11 @@ var Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk536482 = require("./536482.js");
 
-function b(e) {
+function f(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, o = a.JG.useSetting().includes(n), p = i.useCallback(e => {
+  } = e, o = a.JG.useSetting().includes(n), _ = i.useCallback(e => {
     let r = (0, s.Kk)();
     e ? r.delete(n) : r.add(n), a.JG.updateSetting([...r]), l.default.track(m.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: u.m.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
@@ -32,22 +32,22 @@ function b(e) {
     })
   }, [t, n]);
   return "0" === n ? null : (0, r.jsx)(c.h, {
-    setting: _.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
+    setting: p.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
     children: (0, r.jsx)(d.Ay, {
-      title: g.intl.string(f.default.WhdCGP),
+      title: g.intl.string(A.default.WhdCGP),
       value: !o,
-      onChange: p,
-      note: g.intl.string(f.default.UQ9RHJ)
+      onChange: _,
+      note: g.intl.string(A.default.UQ9RHJ)
     })
   })
 }
 
-function h(e) {
+function b(e) {
   let {
-    ingress: t = p.bf.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = _.bf.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, o.Tx)();
-  return (0, r.jsx)(b, {
+  return (0, r.jsx)(f, {
     ingress: t,
     guildId: null != n ? n : i
   })

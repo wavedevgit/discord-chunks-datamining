@@ -23,7 +23,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk9302 = require("./9302.js"),
   Chunk652215 = require("./652215.js");
 
-function _(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -52,28 +52,28 @@ class v extends Chunk64700.Component {
       postableChannelCount: s
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
-      var u, h;
-      (0, c.z)(O.HAw.GUILD_VIEWED, (u = _({}, i ? {
+      var u, p;
+      (0, c.z)(A.HAw.GUILD_VIEWED, (u = O({}, i ? {
         is_pending: i,
         preview_enabled: r
-      } : {}), h = h = {
+      } : {}), p = p = {
         postable_channels: s
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(h)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
-      }), u)), (0, a.k)(O.HAw.GUILD_VIEWED_CLICKSTREAM, {
+      })(Object(p)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(p, e))
+      }), u)), (0, a.k)(A.HAw.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
       let e = (0, o.C)(d.A.getChannel(n), true);
-      (0, c.z)(O.HAw.CHANNEL_OPENED, _({}, e, (0, l.qL)(n))), (0, a.k)(O.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, c.z)(A.HAw.CHANNEL_OPENED, O({}, e, (0, l.qL)(n))), (0, a.k)(A.HAw.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -86,21 +86,21 @@ let E = Chunk311907.Ay.connectStores([Chunk967198.A, Chunk309010.A, Chunk71393.A
   var e, t, n;
   let i = y.A.getGuildId(),
     s = g.A.getChannelId(i),
-    l = p.A.getGuild(i),
-    o = A.default.getCurrentUser(),
+    l = h.A.getGuild(i),
+    o = m.default.getCurrentUser(),
     a = null != (e = u.Ay.getChannels(null == l ? true : l.id)[u.I6]) ? e : [],
     c = a.length > 0 ? a.filter(e => {
       let {
         channel: t
       } = e;
-      return f.A.can(r.kg(O.xBc.SEND_MESSAGES, O.xBc.VIEW_CHANNEL), t)
+      return f.A.can(r.kg(A.xBc.SEND_MESSAGES, A.xBc.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != o && null != i && null != (t = null == (n = h.Ay.getMember(i, o.id)) ? true : n.isPending) && t;
+    d = null != o && null != i && null != (t = null == (n = p.Ay.getMember(i, o.id)) ? true : n.isPending) && t;
   return {
     selectedGuild: i,
     selectedChannel: s,
-    locked: m.default.isLocked((0, b.getPID)()),
-    hasPreviewEnabled: null == l ? true : l.features.has(O.GuildFeatures.PREVIEW_ENABLED),
+    locked: _.default.isLocked((0, b.getPID)()),
+    hasPreviewEnabled: null == l ? true : l.features.has(A.GuildFeatures.PREVIEW_ENABLED),
     isMemberPending: d,
     postableChannelCount: c
   }

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 494208, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,28 +13,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk498654 = require("./498654.js");
 
-function p(e) {
+function h(e) {
   let {
     channel: t
-  } = e, [n, p] = l.useState(false), h = l.useRef(null), f = (0, s.vL)(t), g = l.useCallback(() => {
-    p(false)
+  } = e, [n, h] = l.useState(false), p = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
+    h(false)
   }, []), m = l.useCallback(() => {
-    n || (0, o.D3)("Popout"), p(!n)
+    n || (0, o.D3)("Popout"), h(!n)
   }, [n]);
   return (0, r.jsx)(i.YNO, {
-    targetElementRef: h,
+    targetElementRef: p,
     animation: i.YNO.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     shouldShow: n,
-    onRequestClose: g,
+    onRequestClose: f,
     renderPopout: function() {
       return (0, r.jsx)(i.lGe, {
         children: (0, r.jsx)(c.A, {
           className: d.T,
           channel: t,
-          onClose: g,
+          onClose: f,
           context: "popout"
         })
       })
@@ -63,13 +63,13 @@ function p(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: h,
+        ref: p,
         className: d.Kk,
         onClick: m,
         icon: i.ysw,
         "aria-label": u.intl.string(u.t.B2panI),
         tooltip: s ? null : u.intl.string(u.t.B2panI),
-        disabled: f,
+        disabled: g,
         selected: s
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);

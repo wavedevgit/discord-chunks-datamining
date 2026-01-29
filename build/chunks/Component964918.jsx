@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 964918, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => j
 }), require("./896048.js"), require("./638769.js"), require("./264879.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,30 +24,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk533848 = require("./533848.js");
 
-function v(e) {
+function j(e) {
   let {
     channel: t
-  } = e, i = (0, a.yK)([d.A, g.Ay, f.A], () => {
+  } = e, i = (0, a.yK)([d.A, f.Ay, g.A], () => {
     let e = d.A.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return s()(d.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(s().values(d.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.A.can(y.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
-      let n = g.Ay.lastMessageId(e.id),
-        r = g.Ay.lastMessageId(t.id);
+    return s()(d.A.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(s().values(d.A.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && g.A.can(y.xBc.VIEW_CHANNEL, t)).sort((e, t) => {
+      let n = f.Ay.lastMessageId(e.id),
+        r = f.Ay.lastMessageId(t.id);
       return A.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return l.useEffect(() => {
-    (0, p.TE)()
+    (0, h.TE)()
   }, []), (0, r.jsxs)("div", {
-    className: j.SW,
+    className: x.SW,
     children: [(0, r.jsx)(o.Text, {
-      className: j.DD,
+      className: x.DD,
       variant: "text-xs/bold",
       color: "text-default",
-      children: t.isForumLikeChannel() ? O.intl.string(O.t.ioVdO2) : O.intl.string(O.t.VNYs2v)
-    }), i.slice(0, t.isForumLikeChannel() ? i.length : c).map(e => (0, r.jsx)(x, {
+      children: t.isForumLikeChannel() ? _.intl.string(_.t.ioVdO2) : _.intl.string(_.t.VNYs2v)
+    }), i.slice(0, t.isForumLikeChannel() ? i.length : c).map(e => (0, r.jsx)(v, {
       thread: e
     }, e.id)).filter(e => l.isValidElement(e)).slice(0, c), (0, r.jsx)(o.DUT, {
-      className: j.OS,
+      className: x.OS,
       onClick: () => {
         t.isForumLikeChannel() ? (0, u.iN)(t.id) : (0, o.mMO)(async () => {
           let {
@@ -78,42 +78,42 @@ function v(e) {
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: O.intl.string(O.t["4qdZ93"])
+        children: _.intl.string(_.t["4qdZ93"])
       })
     })]
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     thread: t
-  } = e, n = (0, a.bG)([m.default], () => m.default.getUser(t.ownerId)), l = (0, p.JO)(t);
+  } = e, n = (0, a.bG)([m.default], () => m.default.getUser(t.ownerId)), l = (0, h.JO)(t);
   return (0, r.jsxs)(o.DUT, {
-    className: j.nM,
+    className: x.nM,
     onClick: e => {
-      (0, h.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.H9.POPOUT)
+      (0, p.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.H9.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: j.my,
+      className: x.my,
       src: b.Ay.getDefaultAvatarURL(true, true),
       alt: ""
     }) : (0, r.jsx)(c.A, {
-      className: j.my,
+      className: x.my,
       user: n,
       size: o._3J.SIZE_16
     }), (0, r.jsx)(o.Text, {
-      className: j.UU,
+      className: x.UU,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
     }), (0, r.jsxs)(o.Text, {
-      className: j.vE,
+      className: x.vE,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: j.xE,
+        className: x.xE,
         children: "•"
-      }), (0, p.aK)(l)]
+      }), (0, h.aK)(l)]
     })]
   })
 }

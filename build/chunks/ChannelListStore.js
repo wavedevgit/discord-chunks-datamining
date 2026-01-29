@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 960755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => W
@@ -27,14 +27,14 @@ var r, i, Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk32603 = require("./32603.js"),
   Chunk355097 = require("./355097.js");
-let I = null,
-  N = null,
+let j = null,
+  v = null,
   P = new Chunk32603.Ay;
 
 function R() {
-  let e = C.A.getChannelId(),
-    t = C.A.getVoiceChannelId();
-  return I = e, N = t, P.clear()
+  let e = x.A.getChannelId(),
+    t = x.A.getVoiceChannelId();
+  return j = e, v = t, P.clear()
 }
 
 function D(e) {
@@ -46,7 +46,7 @@ function D(e) {
   return P.clearGuildId(t)
 }
 
-function w(e) {
+function L(e) {
   let {
     channel: {
       guild_id: t
@@ -55,7 +55,7 @@ function w(e) {
   return P.clearGuildId(t)
 }
 
-function L(e) {
+function w(e) {
   let {
     guildId: t
   } = e;
@@ -84,22 +84,22 @@ function U(e) {
 }
 
 function k() {
-  let e = C.A.getChannelId(),
-    t = C.A.getVoiceChannelId(),
-    n = I !== e || N !== t;
-  return !!n && (s()([I, N, e, t]).uniq().forEach(e => {
+  let e = x.A.getChannelId(),
+    t = x.A.getVoiceChannelId(),
+    n = j !== e || v !== t;
+  return !!n && (s()([j, v, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
-  }), I = e, N = t, true)
-}
-
-function H(e) {
-  let {
-    id: t
-  } = e, n = h.A.getChannel(t);
-  return null == n ? P.clearGuildId(t) : P.clearGuildId(n.guild_id)
+  }), j = e, v = t, true)
 }
 
 function B(e) {
+  let {
+    id: t
+  } = e, n = b.A.getChannel(t);
+  return null == n ? P.clearGuildId(t) : P.clearGuildId(n.guild_id)
+}
+
+function H(e) {
   let {
     guildId: t
   } = e;
@@ -118,7 +118,7 @@ function F(e) {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(_.A, f.default, b.A, h.A, A.A, c.Ay, E.A, u.A, p.Ay, m.A, x.A, O.Ay, C.A, y.Ay, g.A)
+    this.waitFor(p.A, A.default, f.A, b.A, h.A, c.Ay, E.A, u.A, _.Ay, m.A, O.A, C.Ay, x.A, S.Ay, g.A)
   }
   getGuild(e, t) {
     var n, r;
@@ -160,29 +160,29 @@ let W = new Y(Chunk73153.h, {
     } = e, n = false;
     return s()(t).map(e => {
       var t;
-      return null == (t = h.A.getChannel(e.channelId)) ? true : t.guild_id
-    }).filter(j.Vq).uniq().forEach(e => {
+      return null == (t = b.A.getChannel(e.channelId)) ? true : t.guild_id
+    }).filter(T.Vq).uniq().forEach(e => {
       P.clearGuildId(e) && (n = true)
     }), n
   },
-  BULK_CLEAR_RECENTS: L,
+  BULK_CLEAR_RECENTS: w,
   CACHE_LOADED_LAZY: R,
-  CATEGORY_COLLAPSE_ALL: L,
-  CATEGORY_COLLAPSE: H,
-  CATEGORY_EXPAND_ALL: L,
-  CATEGORY_EXPAND: H,
+  CATEGORY_COLLAPSE_ALL: w,
+  CATEGORY_COLLAPSE: B,
+  CATEGORY_EXPAND_ALL: w,
+  CATEGORY_EXPAND: B,
   CHANNEL_ACK: M,
   CHANNEL_COLLAPSE: function(e) {
     var t;
     let {
       channelId: n
     } = e;
-    return P.clearGuildId(null == (t = h.A.getChannel(n)) ? true : t.guild_id)
+    return P.clearGuildId(null == (t = b.A.getChannel(n)) ? true : t.guild_id)
   },
-  CHANNEL_CREATE: w,
-  CHANNEL_DELETE: w,
+  CHANNEL_CREATE: L,
+  CHANNEL_DELETE: L,
   CHANNEL_LOCAL_ACK: M,
-  CHANNEL_MUTE_EXPIRED: L,
+  CHANNEL_MUTE_EXPIRED: w,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: M,
   CHANNEL_SELECT: k,
   CHANNEL_STATUSES: function(e) {
@@ -236,21 +236,21 @@ let W = new Y(Chunk73153.h, {
       guildId: t,
       user: n
     } = e;
-    return f.default.getId() === n.id && P.clearGuildId(t)
+    return A.default.getId() === n.id && P.clearGuildId(t)
   },
-  GUILD_MUTE_EXPIRED: L,
-  GUILD_ROLE_CREATE: L,
-  GUILD_ROLE_DELETE: L,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: L,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: L,
-  GUILD_ROLE_UPDATE: L,
+  GUILD_MUTE_EXPIRED: w,
+  GUILD_ROLE_CREATE: w,
+  GUILD_ROLE_DELETE: w,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: w,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: w,
+  GUILD_ROLE_UPDATE: w,
   GUILD_SCHEDULED_EVENT_CREATE: F,
   GUILD_SCHEDULED_EVENT_DELETE: F,
   GUILD_SCHEDULED_EVENT_UPDATE: F,
-  GUILD_TOGGLE_COLLAPSE_MUTED: L,
+  GUILD_TOGGLE_COLLAPSE_MUTED: w,
   GUILD_UPDATE: D,
-  IMPERSONATE_STOP: L,
-  IMPERSONATE_UPDATE: L,
+  IMPERSONATE_STOP: w,
+  IMPERSONATE_UPDATE: w,
   LOAD_CHANNELS: function(e) {
     e.channels.forEach(e => {
       let {
@@ -284,7 +284,7 @@ let W = new Y(Chunk73153.h, {
     } = e;
     return P.nonPositionalChannelUpdate(t)
   },
-  THREAD_LIST_SYNC: L,
+  THREAD_LIST_SYNC: w,
   THREAD_MEMBER_UPDATE: U,
   THREAD_MEMBERS_UPDATE: U,
   THREAD_UPDATE: G,
@@ -296,8 +296,8 @@ let W = new Y(Chunk73153.h, {
     } = e;
     P.updateSubtitles(t)
   },
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: L,
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE: L,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: w,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE: w,
   USER_GUILD_SETTINGS_FULL_UPDATE: function(e) {
     let {
       userGuildSettings: t
@@ -309,22 +309,22 @@ let W = new Y(Chunk73153.h, {
       return P.clearGuildId(t)
     })
   },
-  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: L,
-  USER_GUILD_SETTINGS_GUILD_UPDATE: L,
+  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: w,
+  USER_GUILD_SETTINGS_GUILD_UPDATE: w,
   USER_SETTINGS_PROTO_UPDATE: function(e) {
     var t;
     let {
       settings: n
     } = e;
-    if (n.type !== S.oD.PRELOADED_USER_SETTINGS) returnfalse;
+    if (n.type !== N.oD.PRELOADED_USER_SETTINGS) returnfalse;
     let r = null == (t = n.proto.guilds) ? true : t.guilds,
       i = false;
-    return null != r && T.default.keys(r).forEach(e => {
+    return null != r && I.default.keys(r).forEach(e => {
       null != r[e].guildRecentsDismissedAt && (i = P.updateRecentsCategory(e) || i)
     }), i
   },
-  VOICE_CATEGORY_COLLAPSE: B,
-  VOICE_CATEGORY_EXPAND: B,
+  VOICE_CATEGORY_COLLAPSE: H,
+  VOICE_CATEGORY_EXPAND: H,
   VOICE_CHANNEL_SELECT: k,
   VOICE_CHANNEL_STATUS_UPDATE: function(e) {
     return P.nonPositionalChannelIdUpdate(e.id)
@@ -341,6 +341,6 @@ let W = new Y(Chunk73153.h, {
     return n
   },
   WINDOW_FOCUS: function() {
-    return null != I && P.nonPositionalChannelIdUpdate(I)
+    return null != j && P.nonPositionalChannelIdUpdate(j)
   }
 })

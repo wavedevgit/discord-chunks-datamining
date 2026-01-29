@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 371764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => E
@@ -25,11 +25,11 @@ let E = e => {
   var t, n;
   let {
     componentId: E,
-    promotionBannerMarketingComponentFields: x
+    promotionBannerMarketingComponentFields: O
   } = e, {
-    analyticsLocations: O
-  } = (0, p.Ay)(), C = (0, u.p)();
-  (0, _.A)({
+    analyticsLocations: C
+  } = (0, _.Ay)(), x = (0, u.p)();
+  (0, p.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
@@ -37,48 +37,48 @@ let E = e => {
       component_id: E
     }
   });
-  let y = (0, b.Xn)("marketing_page_banner"),
-    j = (0, g.h)({
-      buttonAction: y.treatment === b.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = x.button) ? true : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
-      analyticsLocations: O,
-      analyticsLocation: C.location
+  let S = (0, f.Xn)("marketing_page_banner"),
+    T = (0, g.h)({
+      buttonAction: S.treatment === f.tz.PLAN_SELECTION ? o.dz.OPEN_PLAN_SELECTION_MODAL : null != (t = null == (n = O.button) ? true : n.buttonAction) ? t : o.dz.OPEN_TIER_2_PAYMENT_MODAL,
+      analyticsLocations: C,
+      analyticsLocation: x.location
     }),
-    T = (0, f.a)(x.body);
+    I = (0, A.a)(O.body);
   return (0, r.jsxs)("div", {
-    className: A.kL,
+    className: h.kL,
     children: [(0, r.jsx)("div", {
-      className: A.LY,
+      className: h.LY,
       children: (0, r.jsx)(d._V3, {
-        src: x.assetUrl,
+        src: O.assetUrl,
         width: 96,
         height: 96,
-        className: A.ot
+        className: h.ot
       })
     }), (0, r.jsxs)("div", {
-      className: A.IH,
+      className: h.IH,
       children: [(0, r.jsx)(a.DZT, {
         variant: "heading-md/semibold",
         color: "text-strong",
-        children: x.header
+        children: O.header
       }), (0, r.jsxs)(a.EYj, {
         variant: "text-md/medium",
         color: "text-subtle",
-        className: A.tb,
-        children: [T, "" !== x.helpArticleId && (0, r.jsxs)(r.Fragment, {
+        className: h.tb,
+        children: [I, "" !== O.helpArticleId && (0, r.jsxs)(r.Fragment, {
           children: ["\xa0", (0, r.jsx)(d.MzZ, {
-            className: A.$T,
-            href: m.A.getArticleURL(x.helpArticleId),
-            children: h.intl.string(h.t["sBp+u0"])
+            className: h.$T,
+            href: m.A.getArticleURL(O.helpArticleId),
+            children: b.intl.string(b.t["sBp+u0"])
           })]
         })]
       })]
-    }), null != x.button && (0, r.jsx)("div", {
-      className: A.UD,
+    }), null != O.button && (0, r.jsx)("div", {
+      className: h.UD,
       children: (0, r.jsx)(c.$nd, {
         variant: "expressive",
         size: "md",
-        onClick: j,
-        text: x.button.copy,
+        onClick: T,
+        text: O.button.copy,
         icon: s.NitroWheelIcon
       })
     })]

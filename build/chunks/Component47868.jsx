@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 47868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -18,19 +18,19 @@ function d(e) {
     iconContainerClassName: n,
     icon: i,
     title: d,
-    description: p,
-    userCount: h,
-    onClick: f,
-    highlight: g,
+    description: h,
+    userCount: p,
+    onClick: g,
+    highlight: f,
     onDismiss: m
   } = e, b = l.useCallback(e => {
     e.stopPropagation(), null == m || m()
   }, [m]);
   return (0, r.jsxs)(o.DUT, {
-    className: s()(u.kL, t, null != g && {
-      [u.U6]: g
+    className: s()(u.kL, t, null != f && {
+      [u.U6]: f
     }),
-    onClick: f,
+    onClick: g,
     children: [(0, r.jsx)("div", {
       className: s()(u.Kk, n),
       children: i
@@ -44,8 +44,8 @@ function d(e) {
         variant: "text-xs/normal",
         color: "text-strong",
         className: u.mG,
-        children: p
-      }), null != h && h > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: h
+      }), null != p && p > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "text-strong",
@@ -56,7 +56,7 @@ function d(e) {
           color: "text-strong",
           className: u.mG,
           children: c.intl.format(c.t.NywdIj, {
-            count: h
+            count: p
           })
         })]
       }) : null]

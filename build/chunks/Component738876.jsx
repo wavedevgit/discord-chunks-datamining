@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 738876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,32 +21,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk698638 = require("./698638.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let O = function(e) {
+let _ = function(e) {
   let {
     className: t,
     style: n,
-    channel: O,
-    draftType: j
-  } = e, [v, x] = l.useState(true), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([p.A], () => null != O && p.A.can(y.xBc.ATTACH_FILES, O), [O]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(O.id)), I = O.getGuildId(), N = j === c.C.FirstThreadMessage, T = (0, s.vL)(O), P = l.useMemo(() => !E && (O.isPrivate() && !O.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, O, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(O.type) ? _.intl.string(_.t.RBBLhL) : _.intl.string(_.t.gUx4eu) : v ? _.intl.format(_.t.dYP2Fc, {
-    destination: (0, o.m1)(O, f.default, h.A, true)
-  }) : _.intl.string(_.t.h76ulG);
+    channel: _,
+    draftType: x
+  } = e, [j, v] = l.useState(true), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([h.A], () => null != _ && h.A.can(y.xBc.ATTACH_FILES, _), [_]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(_.id)), I = _.getGuildId(), N = x === c.C.FirstThreadMessage, T = (0, s.vL)(_), P = l.useMemo(() => !E && (_.isPrivate() && !_.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, _, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(_.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : j ? O.intl.format(O.t.dYP2Fc, {
+    destination: (0, o.m1)(_, g.default, p.A, true)
+  }) : O.intl.string(O.t.h76ulG);
   return S || !P ? null : (0, r.jsx)(b.A, {
     className: t,
     style: n,
     title: w,
-    description: N ? _.intl.string(_.t.lpgkzq) : _.intl.string(_.t.usQh4J),
+    description: N ? O.intl.string(O.t.lpgkzq) : O.intl.string(O.t.usQh4J),
     icons: A.ir,
     onDrop: e => {
       if (S) returnfalse;
-      P && null != O && ((0, m.R)(e, O, j, {
-        requireConfirm: v,
+      P && null != _ && ((0, m.R)(e, _, x, {
+        requireConfirm: j,
         origin: "drag_drop"
-      }), g._.dispatchToLastSubscribed(y.jej.TEXTAREA_FOCUS))
+      }), f._.dispatchToLastSubscribed(y.jej.TEXTAREA_FOCUS))
     },
-    onDragClear: () => x(true),
+    onDragClear: () => v(true),
     onDragOver: e => {
       if (S) returnfalse;
-      N || e.shiftKey !== v || x(!e.shiftKey)
+      N || e.shiftKey !== j || v(!e.shiftKey)
     }
   })
 }

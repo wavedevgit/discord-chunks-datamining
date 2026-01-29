@@ -1,11 +1,11 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 961291, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pm: () => j,
-  rS: () => O,
+  Pm: () => x,
+  rS: () => _,
   rr: () => A,
   sW: () => y,
-  yI: () => _
+  yI: () => O
 });
 var Chunk827734 = require("./827734.js"),
   Chunk322387 = require("./322387.js"),
@@ -60,8 +60,8 @@ let A = {
         return "NOTIFICATION_CENTER"
     }
   },
-  _ = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  O = e => {
+  O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+  _ = e => {
     switch (e) {
       case l.hW.GO_LIVE_PUSH:
         return {
@@ -79,7 +79,7 @@ let A = {
         };
       case l.hW.DM_FRIEND_NUDGE:
         return {
-          icon: g, color: r.A.colors.BACKGROUND_MOD_STRONG
+          icon: f, color: r.A.colors.BACKGROUND_MOD_STRONG
         };
       case l.Uo.INCOMING_FRIEND_REQUESTS:
       case l.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED:
@@ -89,13 +89,13 @@ let A = {
       case l.Uo.INCOMING_GAME_FRIEND_REQUESTS:
       case l.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: p, color: r.A.colors.BACKGROUND_MOD_STRONG
+          icon: h, color: r.A.colors.BACKGROUND_MOD_STRONG
         };
       default:
         return null
     }
   },
-  j = e => {
+  x = e => {
     switch (e.item_enum) {
       case l.r_.UPDATE_PROFILE:
         return i.Zp;

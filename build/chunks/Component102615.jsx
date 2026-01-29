@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 102615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,19 +14,19 @@ var Chunk397927 = require("./397927.js"),
   Chunk46184 = require("./46184.jsx"),
   Chunk901794 = require("./901794.jsx"),
   Chunk985018 = require("./985018.jsx");
-let _ = () => (0, r.jsxs)(i.BJc, {
+let p = () => (0, r.jsxs)(i.BJc, {
   gap: 32,
   children: [(0, r.jsx)(a.b, {}), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.G, {
-      title: p.intl.string(p.t.xVRG4P),
+      title: _.intl.string(_.t.xVRG4P),
       children: (0, r.jsx)(u.f, {})
     }), (0, r.jsx)(l.G, {
-      title: p.intl.string(p.t["y62Z/d"]),
+      title: _.intl.string(_.t["y62Z/d"]),
       children: (0, r.jsxs)(s.A, {
         children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(c.Z, {})]
       })
     }), (0, r.jsx)(l.G, {
-      title: p.intl.string(p.t["1Qn8iV"]),
+      title: _.intl.string(_.t["1Qn8iV"]),
       children: (0, r.jsx)(d.A, {})
     })]
   })]

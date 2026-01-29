@@ -1,4 +1,4 @@
-/** Chunk was on 91075 **/
+/** Chunk was on 26766 **/
 /** chunk id: 653813, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   default: () => p
@@ -26,7 +26,7 @@ function _(e) {
     giftMessage: h
   } = e, {
     priceOptions: I
-  } = (0, s.P5)(), C = n.useCallback(e => {
+  } = (0, s.P5)(), x = n.useCallback(e => {
     (0, o.A)({
       isGift: true,
       giftRecipient: t,
@@ -67,7 +67,7 @@ function _(e) {
       className: f.S3,
       "data-migration-pending": true,
       children: (0, r.jsx)(d.A, {
-        onSelectSku: C,
+        onSelectSku: x,
         giftRecipient: t,
         priceOptions: I,
         onWishlistItemClick: i

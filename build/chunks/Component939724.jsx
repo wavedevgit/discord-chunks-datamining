@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 939724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,7 +13,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk496431 = require("./496431.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk338422 = require("./338422.js");
-let p = e => {
+let _ = e => {
   let {
     expiresAt: t,
     className: n
@@ -21,17 +21,17 @@ let p = e => {
   if (null == i) return null;
   let {
     days: s,
-    hours: p,
-    minutes: _,
+    hours: _,
+    minutes: p,
     seconds: m
   } = i, g = [{
     unitValue: s,
     unitType: "days"
   }, {
-    unitValue: p,
+    unitValue: _,
     unitType: "hours"
   }, {
-    unitValue: _,
+    unitValue: p,
     unitType: "minutes"
   }, {
     unitValue: m,

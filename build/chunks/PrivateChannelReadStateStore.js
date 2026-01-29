@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 131677, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -11,30 +11,30 @@ var r, l, Chunk311907 = require("./311907.js"),
   Chunk222823 = require("./222823.js"),
   Chunk309010 = require("./309010.js"),
   Chunk645959 = require("./645959.js");
-let h = [],
-  f = new Set;
+let p = [],
+  g = new Set;
 
-function g() {
-  let e = p.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
-  return e.length > 20 && (e.length = 20), !(0, o.in)(e, h) && (h = e, f = new Set(e), true)
+function f() {
+  let e = h.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
+  return e.length > 20 && (e.length = 20), !(0, o.in)(e, p) && (p = e, g = new Set(e), true)
 }
 
 function m() {
-  return g()
+  return f()
 }
 
 function b(e) {
   let {
     channelId: t
   } = e, n = c.A.getChannel(t);
-  return null != n && !!(0, a.Gw)(n.type) && g()
+  return null != n && !!(0, a.Gw)(n.type) && f()
 }
 class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, c.A, d.A, u.Ay)
+    this.waitFor(h.A, c.A, d.A, u.Ay)
   }
   getUnreadPrivateChannelIds() {
-    return h
+    return p
   }
 }(l = "displayName") in A ? Object.defineProperty(A, l, {
   value: "PrivateChannelReadStateStore",
@@ -51,7 +51,7 @@ let y = new A(Chunk73153.h, {
     let {
       channelId: t
     } = e, n = c.A.getChannel(t);
-    return null != n && !!(0, a.Gw)(n.type) && g()
+    return null != n && !!(0, a.Gw)(n.type) && f()
   },
   CHANNEL_DELETE: function(e) {
     let {
@@ -59,11 +59,11 @@ let y = new A(Chunk73153.h, {
         id: t
       }
     } = e;
-    return !!f.has(t) && g()
+    return !!g.has(t) && f()
   },
   WINDOW_FOCUS: function() {
     let e = c.A.getChannel(d.A.getChannelId());
-    return null != e && !!(0, a.Gw)(e.type) && g()
+    return null != e && !!(0, a.Gw)(e.type) && f()
   },
   CHANNEL_CREATE: function(e) {
     let {
@@ -71,7 +71,7 @@ let y = new A(Chunk73153.h, {
         id: t
       }
     } = e, n = c.A.getChannel(t);
-    return null != n && !!(0, a.Gw)(n.type) && g()
+    return null != n && !!(0, a.Gw)(n.type) && f()
   },
   CHANNEL_UPDATES: function(e) {
     let {
@@ -84,6 +84,6 @@ let y = new A(Chunk73153.h, {
       let t = c.A.getChannel(e);
       null != t && (0, a.Gw)(t.type) && (n = true)
     }
-    return !!n && g()
+    return !!n && f()
   }
 })

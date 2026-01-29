@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 933057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,14 +51,14 @@ function m(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = (0, u.X)(t), [b, A] = l.useState(false), y = l.useRef(null), _ = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+  } = e, n = (0, u.X)(t), [b, A] = l.useState(false), y = l.useRef(null), O = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
   if (l.useEffect(() => {
       let e = () => A(true);
-      return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-        c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+      return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+        c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
       }
-    }, []), _) return null;
-  let O = f.intl.string(f.t.h850Ss);
+    }, []), O) return null;
+  let _ = g.intl.string(g.t.h850Ss);
   return (0, r.jsx)(s.YNO, {
     targetElementRef: y,
     shouldShow: b,
@@ -67,21 +67,21 @@ function b(e) {
     align: "right",
     autoInvert: false,
     onRequestClose: () => A(false),
-    renderPopout: e => (0, r.jsx)(d.A, m(g({}, e), {
+    renderPopout: e => (0, r.jsx)(d.A, m(f({}, e), {
       channel: t,
       navId: "thread-context",
-      label: f.intl.string(f.t["1NBjqb"])
+      label: g.intl.string(g.t["1NBjqb"])
     })),
     children: (e, t) => {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(a.Ay.Icon, m(g({}, e), {
+      return (0, r.jsx)(a.Ay.Icon, m(f({}, e), {
         ref: y,
         onClick: () => A(e => !e),
-        tooltip: l ? null : O,
-        icon: n === p.CP.NO_MESSAGES ? s.a_I : s.XFE,
-        "aria-label": O,
+        tooltip: l ? null : _,
+        icon: n === h.CP.NO_MESSAGES ? s.a_I : s.XFE,
+        "aria-label": _,
         selected: l
       }))
     }

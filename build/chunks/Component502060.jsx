@@ -1,56 +1,38 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 2827 **/
 /** chunk id: 502060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o,
-  G: () => a
+  G: () => s
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
-var Chunk397927 = require("./397927.js"),
-  Chunk195043 = require("./195043.jsx"),
-  Chunk645022 = require("./645022.js");
+var Chunk397927 = require("./397927.js");
+require("./195043.jsx");
+var Chunk645022 = require("./645022.js");
 
-function a(e) {
+function s(e) {
   let {
     children: t,
     title: n,
-    description: l
+    description: s
   } = e;
-  return (0, i.jsxs)("div", {
-    className: r.L1,
-    children: [(null != n || null != l) && (0, i.jsxs)("div", {
-      className: r.Km,
-      children: [null != n && (0, i.jsx)(s.Heading, {
+  return (0, r.jsxs)("div", {
+    className: l.L1,
+    children: [(null != n || null != s) && (0, r.jsxs)("div", {
+      className: l.Km,
+      children: [null != n && (0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: n
-      }), null != l && (0, i.jsx)(s.Text, {
+      }), null != s && (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: l
+        children: s
       })]
-    }), (0, i.jsx)("div", {
-      className: r.Yq,
+    }), (0, r.jsx)("div", {
+      className: l.Yq,
       children: t
-    }), (0, i.jsx)(s.cGx, {
-      className: r.yj
+    }), (0, r.jsx)(i.cGx, {
+      className: l.yj
     })]
-  })
-}
-
-function o(e) {
-  let {
-    children: t,
-    title: n,
-    description: s,
-    webSetting: r
-  } = e;
-  return (0, i.jsx)(l.x, {
-    setting: r,
-    children: (0, i.jsx)(a, {
-      title: n,
-      description: s,
-      children: t
-    })
   })
 }

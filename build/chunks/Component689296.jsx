@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 689296, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -31,14 +31,14 @@ function c(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["children", "lineClamp"]), [p, _] = i.useState(false), [m, g] = i.useState(null), f = null != m && (0, r.jsx)("button", {
+  }(e, ["children", "lineClamp"]), [_, p] = i.useState(false), [m, g] = i.useState(null), A = null != m && (0, r.jsx)("button", {
     className: o.x6,
-    onClick: () => _(e => !e),
+    onClick: () => p(e => !e),
     children: (0, r.jsxs)(s.Text, {
       className: o.B0,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [p ? a.intl.string(a.t["JQX/Pb"]) : a.intl.string(a.t.Fbrd8J), p ? (0, r.jsx)(s.tN5, {
+      children: [_ ? a.intl.string(a.t["JQX/Pb"]) : a.intl.string(a.t.Fbrd8J), _ ? (0, r.jsx)(s.tN5, {
         color: l.A.colors.TEXT_BRAND,
         size: "xs"
       }) : (0, r.jsx)(s.abt, {
@@ -46,22 +46,22 @@ function c(e) {
         size: "xs"
       })]
     })
-  }), [b, h] = i.useState(null), A = i.useCallback(() => {
-    if (null == b) return;
+  }), [f, b] = i.useState(null), h = i.useCallback(() => {
+    if (null == f) return;
     let {
       scrollHeight: e,
       clientHeight: t
-    } = b;
+    } = f;
     e > t && g({
       truncatedHeight: t,
       expandedHeight: e
     })
-  }, [b]);
+  }, [f]);
   i.useEffect(() => {
-    requestAnimationFrame(A)
-  }, [A, c, d]);
+    requestAnimationFrame(h)
+  }, [h, c, d]);
   let E = "auto";
-  return null != m && (E = p ? "".concat(m.expandedHeight, "px") : "".concat(m.truncatedHeight, "px")), (0, r.jsxs)("div", {
+  return null != m && (E = _ ? "".concat(m.expandedHeight, "px") : "".concat(m.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -81,8 +81,8 @@ function c(e) {
       return e
     }({}, u), n = n = {
       className: o.Qs,
-      lineClamp: p ? true : d,
-      ref: h,
+      lineClamp: _ ? true : d,
+      ref: b,
       style: {
         height: E
       },
@@ -96,6 +96,6 @@ function c(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), f]
+    }), t)), A]
   })
 }

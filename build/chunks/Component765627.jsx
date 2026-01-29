@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 765627, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -24,16 +24,16 @@ function A(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: p,
-    closePopout: f
+    badgeState: h,
+    closePopout: g
   } = e, {
-    enabled: g,
+    enabled: f,
     inInbox: A
   } = c.A.useExperiment({
     location: "RecentsPopout"
-  }), _ = (0, d.Sc)({
+  }), O = (0, d.Sc)({
     location: "RecentsHeader"
-  }), O = (0, l.bG)([u.A], () => u.A.getOverdueMessageReminderCount());
+  }), _ = (0, l.bG)([u.A], () => u.A.getOverdueMessageReminderCount());
   return (0, r.jsxs)(o.Y9, {
     className: b.wx,
     children: [(0, r.jsxs)("div", {
@@ -56,8 +56,8 @@ function A(e) {
         "aria-label": m.intl.string(m.t["8k+6QY"]),
         children: [(0, r.jsx)(y, {
           tab: t
-        }), (0, r.jsx)(h.A, {
-          closePopout: f
+        }), (0, r.jsx)(p.A, {
+          closePopout: g
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -72,7 +72,7 @@ function A(e) {
           id: i.Y2.FOR_YOU,
           "aria-label": m.intl.string(m.t["En+D+u"]),
           className: b.Mf,
-          children: [m.intl.string(m.t["En+D+u"]), (null == p ? true : p.badgeForYou) ? (0, r.jsx)(a.SC0, {
+          children: [m.intl.string(m.t["En+D+u"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(a.SC0, {
             color: s.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css,
             className: b.bG
           }) : null]
@@ -85,14 +85,14 @@ function A(e) {
           id: i.Y2.MENTIONS,
           className: b.Mf,
           children: m.intl.string(m.t.GRZF96)
-        }), g && A ? (0, r.jsx)(a.VQ0.Item, {
+        }), f && A ? (0, r.jsx)(a.VQ0.Item, {
           "aria-label": m.intl.string(m.t["2pAkDA"]),
           id: i.Y2.BOOKMARKS,
           className: b.Mf,
-          children: 0 === O ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
-            count: O
+          children: 0 === _ ? m.intl.string(m.t["2pAkDA"]) : m.intl.formatToPlainString(m.t.I4fryG, {
+            count: _
           })
-        }) : null, _ ? (0, r.jsx)(a.VQ0.Item, {
+        }) : null, O ? (0, r.jsx)(a.VQ0.Item, {
           "aria-label": "scheduled",
           id: i.Y2.SCHEDULED,
           className: b.Mf,
@@ -107,5 +107,5 @@ function y(e) {
   let {
     tab: t
   } = e;
-  return t === i.Y2.FOR_YOU ? (0, r.jsx)(p.xc, {}) : t === i.Y2.UNREADS ? (0, r.jsx)(g.NH, {}) : t === i.Y2.MENTIONS ? (0, r.jsx)(f.A, {}) : null
+  return t === i.Y2.FOR_YOU ? (0, r.jsx)(h.xc, {}) : t === i.Y2.UNREADS ? (0, r.jsx)(f.NH, {}) : t === i.Y2.MENTIONS ? (0, r.jsx)(g.A, {}) : null
 }

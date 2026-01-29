@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 364558, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => g
@@ -19,18 +19,18 @@ let m = () => {
   },
   g = () => ({
     name: o.U.PREMIUM_GROUP,
-    title: p.intl.string(u.default.YkvksF),
-    subtitle: p.intl.formatToPlainString(u.default.JlyGQj, {
+    title: _.intl.string(u.default.YkvksF),
+    subtitle: _.intl.formatToPlainString(u.default.JlyGQj, {
       totalSeats: c.aw,
       premiumGroupProductName: (0, c.DP)()
     }),
     description: (0, r.jsx)(s.A, {
       onClick: m,
-      children: p.intl.string(u.default.yYyGJH)
+      children: _.intl.string(u.default.yYyGJH)
     }),
-    descriptionCta: p.intl.string(p.t.jVcuVY),
-    pillText: p.intl.string(p.t.oW0eUd).toLocaleUpperCase(),
-    perkImage: _,
+    descriptionCta: _.intl.string(_.t.jVcuVY),
+    pillText: _.intl.string(_.t.oW0eUd).toLocaleUpperCase(),
+    perkImage: p,
     onCtaClick: () => {
       (0, i.mMO)(async () => {
         let {

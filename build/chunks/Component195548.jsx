@@ -1,7 +1,7 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 195548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N
+  A: () => T
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -26,45 +26,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 
 function C() {
-  return (0, i.jsxs)(O.A, {
-    title: v.intl.string(v.t.WWaFn5),
-    description: v.intl.format(v.t["/6sFWa"], {
+  return (0, i.jsxs)(j.A, {
+    title: f.intl.string(f.t.WWaFn5),
+    description: f.intl.format(f.t["/6sFWa"], {
       helpArticle: (0, o.aW)()
     }),
     webSetting: S.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-    children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(b.A, {})]
+    children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(E.A, {})]
   })
 }
 
-function f() {
-  return (0, i.jsx)(O.A, {
-    title: v.intl.string(v.t.BG7QsQ),
+function v() {
+  return (0, i.jsx)(j.A, {
+    title: f.intl.string(f.t.BG7QsQ),
     webSetting: S.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, i.jsx)(u.A, {})
   })
 }
 
-function T() {
-  return (0, i.jsxs)(O.A, {
-    title: v.intl.string(v.t.SRZyHg),
+function y() {
+  return (0, i.jsxs)(j.A, {
+    title: f.intl.string(f.t.SRZyHg),
     webSetting: S.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-    children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(x.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(j.h, {
+    children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(p.A, {}), (0, i.jsx)(x.A, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(b.h, {
       setting: S.H.PRIVACY_DATA_CLIPS,
       children: (0, i.jsx)(a.A, {})
-    }), (0, i.jsx)(g.z, {})]
+    }), (0, i.jsx)(h.z, {})]
   })
 }
 
-function N() {
+function T() {
   return (0, r.Ay)(() => {
-    (0, l.Q)(), (0, c.s)()
+    (0, s.Q)(), (0, c.s)()
   }), (0, i.jsx)(d.R, {
-    header: v.intl.string(v.t.OAuOHD),
-    notice: (0, i.jsx)(E.A, {
-      page: E.R.DATA_AND_PRIVACY
+    header: f.intl.string(f.t.OAuOHD),
+    notice: (0, i.jsx)(O.A, {
+      page: O.R.DATA_AND_PRIVACY
     }),
-    children: (0, i.jsxs)(s.lVW, {
-      children: [(0, i.jsx)(T, {}), (0, i.jsx)(f, {}), (0, i.jsx)(C, {})]
+    children: (0, i.jsxs)(l.lVW, {
+      children: [(0, i.jsx)(y, {}), (0, i.jsx)(v, {}), (0, i.jsx)(C, {})]
     })
   })
 }

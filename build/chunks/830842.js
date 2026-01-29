@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 830842, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 830842, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  _: () => S
+  _: () => A
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -11,20 +11,20 @@ var Chunk934551 = require("./934551.js"),
   Chunk945353 = require("./945353.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let d = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
-    useTitle: () => T.intl.string(T.t["8/udY0"]),
+let T = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
+    useTitle: () => d.intl.string(d.t["8/udY0"]),
     usePredicate: () => !(0, r.dk)("LegacyAdvancedPanel"),
     StronglyDiscouragedCustomComponent: Chunk69435.A,
     buildLayout: () => []
   }),
-  A = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
-    useTitle: () => T.intl.string(T.t["8/udY0"]),
+  c = (0, Chunk419954.t_)(Chunk780964.X.ADVANCED_PANEL, {
+    useTitle: () => d.intl.string(d.t["8/udY0"]),
     usePredicate: () => (0, r.dk)("AdvancedPanel"),
-    buildLayout: () => [a.J]
+    buildLayout: () => [u.J]
   }),
-  S = (0, Chunk419954.i4)(Chunk780964.X.ADVANCED_SIDEBAR_ITEM, {
-    useTitle: () => T.intl.string(T.t["8/udY0"]),
+  A = (0, Chunk419954.i4)(Chunk780964.X.ADVANCED_SIDEBAR_ITEM, {
+    useTitle: () => d.intl.string(d.t["8/udY0"]),
     getLegacySearchKey: () => (0, r.WJ)("AdvancedPanel") ? true : o.H.SETTINGS_ADVANCED,
     icon: Chunk934551.MoreHorizontalIcon,
-    buildLayout: () => (0, r.WJ)("AdvancedPanel") ? [A] : [d]
+    buildLayout: () => (0, r.WJ)("AdvancedPanel") ? [c] : [T]
   })

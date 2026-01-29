@@ -29,7 +29,7 @@ let j = function(e) {
     }) : (0, l.mMO)(async () => {
       let {
         default: l
-      } = await Promise.all([n.e("79149"), n.e("35929"), n.e("74571"), n.e("1580")]).then(n.bind(n, 142630));
+      } = await Promise.all([n.e("35929"), n.e("79149"), n.e("74571"), n.e("1580")]).then(n.bind(n, 142630));
       return n => (0, r.jsx)(l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

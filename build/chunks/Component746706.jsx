@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 746706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,42 +20,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk896237 = require("./896237.js"),
   Chunk448085 = require("./448085.js");
 
-function A(e) {
+function h(e) {
   let {
     user: t,
     showOverlay: n,
-    children: A
+    children: h
   } = e, E = (0, a.Ay)(), {
-    analyticsLocations: x
+    analyticsLocations: O
   } = (0, c.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
-    n && u.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
-      location_stack: x,
+    n && u.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
+      location_stack: O,
       type: m.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
     })
-  }, [n, x]), n) ? (0, r.jsxs)("div", {
-    className: f.ry,
+  }, [n, O]), n) ? (0, r.jsxs)("div", {
+    className: A.ry,
     children: [(0, r.jsx)("div", {
-      children: A
+      children: h
     }), (0, r.jsxs)("div", {
-      className: f.Wc,
+      className: A.Wc,
       children: [(0, r.jsx)("img", {
-        className: f.Tn,
+        className: A.Tn,
         alt: g.intl.string(g.t.LHFZQy),
         src: function(e) {
           switch (e) {
-            case _.NJ8.DARK:
-            case _.NJ8.DARKER:
-            case _.NJ8.MIDNIGHT:
+            case p.NJ8.DARK:
+            case p.NJ8.DARKER:
+            case p.NJ8.MIDNIGHT:
+              return f;
+            case p.NJ8.LIGHT:
               return b;
-            case _.NJ8.LIGHT:
-              return h;
             default:
-              return b
+              return f
           }
         }(E)
       }), (0, r.jsxs)("div", {
-        className: f._9,
+        className: A._9,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
@@ -69,10 +69,10 @@ function A(e) {
         size: l.$n.Sizes.LARGE,
         color: l.$n.Colors.GREEN,
         textOptions: {
-          textOverride: p.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
+          textOverride: _.Ay.isPremium(t) ? g.intl.string(g.t.AfRWI8) : g.intl.string(g.t.nkdUym)
         },
         subscriptionTier: m.pe.TIER_2
       })]
     })]
-  }) : A
+  }) : h
 }

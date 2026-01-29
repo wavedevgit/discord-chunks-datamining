@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 108460, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -57,7 +57,7 @@ function d(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   var t;
   let {
     className: n,
@@ -65,15 +65,15 @@ function p(e) {
     mentionCount: i,
     isTyping: a,
     canBadge: o
-  } = e, p = null != i && i > 0, h = null != (t = p ? i : l) ? t : 0, f = o && null != l && l > 0;
+  } = e, h = null != i && i > 0, p = null != (t = h ? i : l) ? t : 0, g = o && null != l && l > 0;
   return (0, r.jsxs)("div", {
     className: s()(u.Or, n),
     children: [(0, r.jsx)(d, {
-      isBadged: f,
+      isBadged: g,
       isTyping: a
-    }), f && (0, r.jsx)(c.A, {
-      hasMentions: p,
-      truncatedCount: h > 99 ? "99+" : h,
+    }), g && (0, r.jsx)(c.A, {
+      hasMentions: h,
+      truncatedCount: p > 99 ? "99+" : p,
       className: u.qS
     })]
   })

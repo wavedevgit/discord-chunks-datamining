@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 39218, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 39218, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  x: () => A
+  x: () => c
 });
 var Chunk64700 = require("./64700.js"),
   Chunk419954 = require("./419954.js"),
@@ -12,15 +12,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk84373 = require("./84373.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.Qx)(Chunk780964.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
-  useTitle: () => d.intl.string(d.t.tiCXaH),
-  useSubtitle: () => d.intl.format(d.t.RvjRRI, {
-    appealLink: s.A.getArticleURL(T.MVz.SAFE_DIRECT_MESSAGING)
+let c = (0, Chunk419954.Qx)(Chunk780964.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
+  useTitle: () => T.intl.string(T.t.tiCXaH),
+  useSubtitle: () => T.intl.format(T.t.RvjRRI, {
+    appealLink: s.A.getArticleURL(d.MVz.SAFE_DIRECT_MESSAGING)
   }),
   useValue: Chunk84373.o,
-  setValue: t => u.he.updateSetting(t),
+  setValue: e => a.he.updateSetting(e),
   useOptions: function() {
     return n.useMemo(() => (0, r.YS)(), [])
   },
-  useSearchTerms: () => [d.intl.string(d.t.JzaP4h), d.intl.string(d.t.H9XOl3), d.intl.string(d.t.k4W40P)]
+  useSearchTerms: () => [T.intl.string(T.t.JzaP4h), T.intl.string(T.t.H9XOl3), T.intl.string(T.t.k4W40P)]
 })

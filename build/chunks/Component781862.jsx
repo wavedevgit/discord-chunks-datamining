@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 781862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -15,7 +15,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,14 +46,14 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = [{
+let f = [{
     key: "JOIN_SERVERS",
     renderIcon: e => (0, r.jsx)(i.QGJ, {
       size: "md",
       color: "currentColor",
       className: e
     }),
-    getName: () => p.intl.string(p.t.K50GHd),
+    getName: () => h.intl.string(h.t.K50GHd),
     handler: (e, t) => (0, o.uh)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
@@ -62,12 +62,12 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => p.intl.string(p.t.emRpdS),
+    getName: () => h.intl.string(h.t.emRpdS),
     handler: (e, t) => (0, i.mMO)(async () => {
       let {
         default: l
       } = await n.e("6759").then(n.bind(n, 953722));
-      return n => (0, r.jsx)(l, f(h({}, n), {
+      return n => (0, r.jsx)(l, g(p({}, n), {
         directoryGuildName: e.name,
         directoryGuildId: e.id,
         directoryChannelId: t.id
@@ -78,12 +78,12 @@ let g = [{
     renderIcon: e => (0, r.jsx)(i.DpX, {
       className: e
     }),
-    getName: () => p.intl.string(p.t.MJQOuJ),
+    getName: () => h.intl.string(h.t.MJQOuJ),
     handler: (e, t) => (0, i.mMO)(async () => {
       let {
         default: l
       } = await Promise.all([n.e("43600"), n.e("42821")]).then(n.bind(n, 234355));
-      return n => (0, r.jsx)(l, f(h({}, n), {
+      return n => (0, r.jsx)(l, g(p({}, n), {
         guild: e,
         channel: t,
         source: d.PE1.HUB_SIDEBAR
@@ -96,21 +96,21 @@ let g = [{
       channel: n
     } = e, i = (0, l.bG)([c.A], () => null != n && c.A.getChannelId() === n.id), o = (0, u.x)(n);
     return (0, r.jsx)(r.Fragment, {
-      children: g.map(e => {
+      children: f.map(e => {
         let {
           key: l,
           getName: c,
           handler: u,
           renderIcon: d
-        } = e, p = "".concat(l, "-").concat(t.id);
+        } = e, h = "".concat(l, "-").concat(t.id);
         return (0, r.jsx)(s.G, {
-          id: p,
+          id: h,
           renderIcon: d,
           text: c(),
           selected: i && "JOIN_SERVERS" === l,
           onClick: null != n ? () => u(t, n) : true,
           trailing: "JOIN_SERVERS" === l && o > 0 ? (0, a.w)(o) : null
-        }, p)
+        }, h)
       })
     })
   }

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 565265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => O
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,7 +51,7 @@ class y extends Chunk64700.Component {
     let t = null != e.topic && e.topic.length > 0;
     return null != e.linkedLobby || t ? (0, r.jsxs)(l.Fragment, {
       children: [(0, r.jsx)(d.A.Divider, {}), (0, r.jsxs)("div", {
-        className: s()(f.At, f.lu, g.PT),
+        className: s()(g.At, g.lu, f.PT),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
@@ -59,11 +59,11 @@ class y extends Chunk64700.Component {
         onClick: this.handleClick,
         children: [(0, r.jsx)(o.DUT, {
           onClick: this.handleClick,
-          "aria-label": h.intl.string(h.t.mKwsSp),
-          className: f.h8
+          "aria-label": p.intl.string(p.t.mKwsSp),
+          className: g.h8
         }), null == e.linkedLobby || t ? u.A.parseTopic(e.topic, true, {
           channelId: e.id
-        }) : h.intl.string(h.t["XJVlf/"])]
+        }) : p.intl.string(p.t["XJVlf/"])]
       })]
     }) : null
   }
@@ -85,7 +85,7 @@ class y extends Chunk64700.Component {
     }), m(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
     }), m(this, "onMouseUp", e => {
-      this._mouseDown && e.button !== p.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+      this._mouseDown && e.button !== h.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
     }), m(this, "handleContextMenu", e => {
       let {
         channel: t,
@@ -122,4 +122,4 @@ class y extends Chunk64700.Component {
     })
   }
 }
-let _ = y
+let O = y

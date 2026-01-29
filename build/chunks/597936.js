@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 597936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BN: () => c,
@@ -13,10 +13,10 @@ var Chunk989349 = require("./989349.js"),
 let c = e => {
     var t;
     if (!u(e)) returnfalse;
-    let n = null == (t = a.A.settings.userContent) ? true : t.safetyUserSentimentNoticeDismissedAt,
+    let n = null == (t = o.A.settings.userContent) ? true : t.safetyUserSentimentNoticeDismissedAt,
       r = null != n ? l.D.toDate(n) : true,
-      o = null != r ? i()().diff(r, "days") : null;
-    if (null != n && !(null != o && o > 30)) returnfalse;
+      a = null != r ? i()().diff(r, "days") : null;
+    if (null != n && !(null != a && a > 30)) returnfalse;
     let {
       isEligible: c
     } = s.O.getCurrentConfig({
@@ -29,7 +29,7 @@ let c = e => {
   u = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
   E = () => {
     let e = l.D.now();
-    o.wc.updateAsync("userContent", t => {
+    a.wc.updateAsync("userContent", t => {
       t.safetyUserSentimentNoticeDismissedAt = e
-    }, o.Sb.INFREQUENT_USER_ACTION)
+    }, a.Sb.INFREQUENT_USER_ACTION)
   }

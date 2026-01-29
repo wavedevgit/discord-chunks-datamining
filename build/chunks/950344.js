@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 950344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -14,23 +14,23 @@ var Chunk64700 = require("./64700.js"),
   Chunk700206 = require("./700206.js"),
   Chunk652215 = require("./652215.js");
 
-function h(e) {
+function p(e) {
   var t;
   let {
     guildId: n,
-    groupListingId: h,
-    location: f,
-    relevantSubscriptionListingIds: g
+    groupListingId: p,
+    location: g,
+    relevantSubscriptionListingIds: f
   } = e, m = (0, c.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
     activeSubscription: b
-  } = (0, d.A)(h), A = null != b, y = (0, l.yK)([u.A], () => (null != g ? g : []).filter(e => {
+  } = (0, d.A)(p), A = null != b, y = (0, l.yK)([u.A], () => (null != f ? f : []).filter(e => {
     var t;
     return (null == (t = u.A.getSubscriptionListing(e)) ? true : t.published) === true
-  }), [g]), {
-    analyticsLocations: _
-  } = (0, s.Ay)(null != (t = (0, a.UC)()) ? t : []), O = r.useRef(false);
+  }), [f]), {
+    analyticsLocations: O
+  } = (0, s.Ay)(null != (t = (0, a.UC)()) ? t : []), _ = r.useRef(false);
   r.useEffect(() => {
-    m && null != h && null != y && !O.current && (O.current = true, o.default.track(p.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
+    m && null != p && null != y && !_.current && (_.current = true, o.default.track(h.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -48,11 +48,11 @@ function h(e) {
       }
       return e
     }({
-      role_subscription_group_listing_id: h,
+      role_subscription_group_listing_id: p,
       role_subscription_listing_ids: y,
       is_premium_member: A,
-      location_stack: _,
-      location: f
+      location_stack: O,
+      location: g
     }, (0, i.H$)(n))))
-  }, [n, h, m, f, y, A, _])
+  }, [n, p, m, g, y, A, O])
 }

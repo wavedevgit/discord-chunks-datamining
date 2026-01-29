@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 378631, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,26 +17,26 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f() {
+function A() {
   var e;
   let t = (0, c.hT)(),
     n = null == (e = (0, u.A)()) || e,
-    f = (0, o.sP)(),
-    b = (0, a.yM)(),
-    h = i.useMemo(() => (!f || !!b) && !n, [f, n, b]),
-    A = i.useCallback(e => {
-      f && e ? l.A.showAgeVerificationGetStartedModal({
+    A = (0, o.sP)(),
+    f = (0, a.yM)(),
+    b = i.useMemo(() => (!A || !!f) && !n, [A, n, f]),
+    h = i.useCallback(e => {
+      A && e ? l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
       }) : d.Qe.updateSetting(e)
-    }, [f]);
-  return (0, r.jsx)(p.h, {
+    }, [A]);
+  return (0, r.jsx)(_.h, {
     setting: m.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_APPS_V2,
-    children: (0, r.jsx)(_.Ay, {
+    children: (0, r.jsx)(p.Ay, {
       value: t,
-      onChange: A,
+      onChange: h,
       title: g.intl.string(g.t.XahVjj),
       note: g.intl.string(g.t.R9fXyS),
-      disabled: h
+      disabled: b
     })
   })
 }

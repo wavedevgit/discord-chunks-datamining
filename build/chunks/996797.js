@@ -2,7 +2,7 @@
 /** chunk id: 996797, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk308368 = require("./308368.js"),
   Chunk684013 = require("./684013.js"),
@@ -14,8 +14,8 @@ var Chunk308368 = require("./308368.js"),
   Chunk672396 = require("./672396.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e, t, n, h) {
-  let p = t.username,
+function p(e, t, n, p) {
+  let h = t.username,
     f = u.intl.format(u.t.VDODnv, {
       username: "",
       game: n.name
@@ -23,7 +23,7 @@ function h(e, t, n, h) {
     g = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: y,
-      trackClick: A
+      trackClick: m
     } = (0, a.Y)(d.KS.ActivityInvite, {
       notif_type: d.KS.ActivityInvite,
       notif_user_id: t.id,
@@ -32,7 +32,7 @@ function h(e, t, n, h) {
     });
   return {
     icon: g,
-    title: p,
+    title: h,
     body: f,
     hint: e => (0, l.sI)(e, (0, a.J)(), u.t.Odi54y),
     confirmText: u.intl.string(u.t["fgP/wX"]),
@@ -44,19 +44,19 @@ function h(e, t, n, h) {
       i.A.sendActivityInvite({
         channelId: e.id,
         type: c.xL.JOIN,
-        activity: h,
+        activity: p,
         location: o.default.isInstanceLocked() ? c.ThZ.LOCKED_OVERLAY : c.ThZ.UNLOCKED_OVERLAY
-      }), A("join"), r.A.updateNotificationStatus(n)
+      }), m("join"), r.A.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
       (0, s.ack)(e.id, {
         section: c.JJy.OVERLAY,
         object: c.ZSU.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), r.A.updateNotificationStatus(n), A("decline")
+      }, true, true), r.A.updateNotificationStatus(n), m("decline")
     },
     onDismissClick: () => {
-      A("dismiss")
+      m("dismiss")
     }
   }
 }

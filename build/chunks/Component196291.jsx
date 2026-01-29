@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 196291, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => M
@@ -43,8 +43,8 @@ function M(e) {
     user: M,
     isVisible: G,
     shouldShow: U
-  } = e, k = C.Ay.isPremium(M), H = C.Ay.canUseAnimatedAvatar(M), {
-    pendingAvatar: B,
+  } = e, k = x.Ay.isPremium(M), B = x.Ay.canUseAnimatedAvatar(M), {
+    pendingAvatar: H,
     pendingThemeColors: V,
     tryItOutThemeColors: F,
     tryItOutAvatar: Y,
@@ -85,19 +85,19 @@ function M(e) {
   }), {
     preset: K,
     onShuffle: z
-  } = (0, p.A)(), Z = i.useRef(null);
-  (0, x.A)(Z, D._F.TRY_IT_OUT);
+  } = (0, _.A)(), Z = i.useRef(null);
+  (0, O.A)(Z, D._F.TRY_IT_OUT);
   let {
-    analyticsLocations: q,
-    newestAnalyticsLocation: X,
+    analyticsLocations: X,
+    newestAnalyticsLocation: q,
     sourceAnalyticsLocations: J
   } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
-    e && ((0, a.zq)(Y), (0, A.Zz)(F), (0, A.Dv)(W), O.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+    e && ((0, a.zq)(Y), (0, h.Zz)(F), (0, h.Dv)(W), C.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
       preset: K
     }))
   };
   i.useEffect(() => {
-    G && O.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+    G && C.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
       type: R.e.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
         page: P.liQ.USER_SETTINGS
@@ -109,93 +109,93 @@ function M(e) {
     ee = (0, d.O)(),
     et = (0, m.U9)(ee, R.pe.TIER_2);
   return U ? (0, r.jsx)(c.f5, {
-    value: q,
-    children: (0, r.jsxs)(v.A, {
+    value: X,
+    children: (0, r.jsxs)(y.A, {
       ref: Z,
-      className: L.MT,
-      type: v.i.PREMIUM,
+      className: w.MT,
+      type: y.i.PREMIUM,
       isShown: true,
       hasBackground: true,
-      children: [(0, r.jsx)(y.A, {
-        layoutClassName: L.th,
+      children: [(0, r.jsx)(S.A, {
+        layoutClassName: w.th,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.tvc, {
             size: "md",
             color: "currentColor",
-            className: L.PC
-          }), w.intl.string(w.t.gMlDNd)]
+            className: w.PC
+          }), L.intl.string(L.t.gMlDNd)]
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(_.A, {
+          children: [(0, r.jsx)(p.A, {
             preset: K,
             onShuffle: z
-          }), (0, r.jsx)(N.A, {
+          }), (0, r.jsx)(v.A, {
             user: M
           })]
         }),
         children: (0, r.jsxs)("div", {
-          className: L.EN,
+          className: w.EN,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(s.Heading, {
               variant: "heading-xl/extrabold",
-              children: w.intl.string(w.t["2zGdAW"])
+              children: L.intl.string(L.t["2zGdAW"])
             }), (0, r.jsx)(s.Text, {
-              className: L.h_,
+              className: w.h_,
               variant: "text-sm/normal",
-              children: w.intl.string(w.t.xeEC20)
+              children: L.intl.string(L.t.xeEC20)
             })]
-          }), (0, r.jsx)(I.A, {
-            className: L.fz,
+          }), (0, r.jsx)(j.A, {
+            className: w.fz,
             user: M,
-            pendingAvatarSrc: (0, h.V7)({
+            pendingAvatarSrc: (0, b.V7)({
               userId: M.id,
-              image: null != Y ? Y : B
+              image: null != Y ? Y : H
             }),
             pendingColors: null != F ? F : V,
-            onThemeColorsChange: A.a,
+            onThemeColorsChange: h.a,
             showPremiumIcon: false,
             preventDisabled: true
-          }), (0, r.jsx)(S.A, {
-            className: L.fz,
+          }), (0, r.jsx)(N.A, {
+            className: w.fz,
             isTryItOut: true,
             showRemoveBannerButton: null != W,
-            onBannerChange: A.xe,
+            onBannerChange: h.xe,
             showPremiumIcon: false
-          }), !H && (0, r.jsx)(j.A, {
-            className: L.fz,
+          }), !B && (0, r.jsx)(T.A, {
+            className: w.fz,
             isTryItOut: true,
-            onAvatarChange: A.e$,
+            onAvatarChange: h.e$,
             showRemoveAvatarButton: false,
-            changeAvatarButtonText: w.intl.string(w.t["7z0D1c"]),
-            sectionTitle: w.intl.string(w.t.vtFfPX)
-          }), (0, r.jsx)(T.A, {
+            changeAvatarButtonText: L.intl.string(L.t["7z0D1c"]),
+            sectionTitle: L.intl.string(L.t.vtFfPX)
+          }), (0, r.jsx)(I.A, {
             user: M,
-            className: L.fz
+            className: w.fz
           }), !$ && (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: w.intl.string(w.t["smo74/"])
+            children: L.intl.string(L.t["smo74/"])
           })]
         })
       }), !$ && (0, r.jsx)(g.d, {
         onSubscribeModalClose: Q,
-        className: L.Kv,
+        className: w.Kv,
         showUpsell: true,
-        text: w.intl.format(w.t.TmfgI2, {
+        text: L.intl.format(L.t.TmfgI2, {
           onClick: () => {
-            (0, b.K)({
-              analyticsSource: X,
+            (0, f.K)({
+              analyticsSource: q,
               onSubscribeFinish: Q
             })
           }
         }),
-        button: k ? w.intl.string(w.t.AfRWI8) : et ? w.intl.formatToPlainString(w.t.bkQ4bH, {
+        button: k ? L.intl.string(L.t.AfRWI8) : et ? L.intl.formatToPlainString(L.t.bkQ4bH, {
           percent: null == ee ? true : ee.discount.amount
-        }) : w.intl.string(w.t.pj0XBN),
+        }) : L.intl.string(L.t.pj0XBN),
         position: "inline"
       }), $ && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: L.BU
-        }), (0, r.jsx)(f.Ay, {
+          className: w.BU
+        }), (0, r.jsx)(A.Ay, {
           type: R.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
           subscriptionTier: R.pe.TIER_2
         })]

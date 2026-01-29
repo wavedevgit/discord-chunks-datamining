@@ -1,9 +1,9 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 584569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => P
 }), require("./896048.js");
-var r, i, Chunk311907 = require("./311907.js"),
+var r, l, Chunk311907 = require("./311907.js"),
   Chunk205693 = require("./205693.js"),
   Chunk73153 = require("./73153.js"),
   Chunk194862 = require("./194862.js"),
@@ -17,7 +17,7 @@ var r, i, Chunk311907 = require("./311907.js"),
   Chunk607567 = require("./607567.js"),
   Chunk652215 = require("./652215.js"),
   Chunk806931 = require("./806931.js");
-let b = new Chunk194862.A,
+let A = new Chunk194862.A,
   h = new Chunk194862.A,
   v = new Set;
 
@@ -26,10 +26,10 @@ function O(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    i = (0, _.RQ)(r, null != t ? t : y.ME, e.id);
-  b.set(e.id, i);
-  let l = {
-    type: A.lp.USER,
+    l = (0, y.RQ)(r, null != t ? t : b.ME, e.id);
+  A.set(e.id, l);
+  let i = {
+    type: _.lp.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -45,17 +45,17 @@ function O(e, t, n) {
     localVideoDisabled: false,
     isPoppedOut: false
   };
-  h.set(e.id, l)
+  h.set(e.id, i)
 }
 
-function j(e) {
-  let t = b.delete(e),
+function S(e) {
+  let t = A.delete(e),
     n = h.delete(e),
     r = v.delete(e);
   return t || n || r
 }
 
-function S() {
+function j() {
   var e;
   let t = f.A.getChannelId();
   if (null == t) returnfalse;
@@ -63,48 +63,48 @@ function S() {
     r = false;
   return v.forEach(e => {
     if (null != g.A.getVoiceStateForChannel(t, e)) return void v.delete(e);
-    let i = m.default.getUser(e);
-    null != i && (r = true, v.delete(e), O(i, n, t))
+    let l = m.default.getUser(e);
+    null != l && (r = true, v.delete(e), O(l, n, t))
   }), r
 }
 
-function I() {
-  b.clear(), h.clear(), v.clear()
+function x() {
+  A.clear(), h.clear(), v.clear()
 }
-class x extends(r = Chunk311907.Ay.Store) {
+class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], S)
+    this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], j)
   }
   get desyncedVoiceStatesCount() {
-    return b.size()
+    return A.size()
   }
   getDesyncedUserIds() {
-    return b.keys()
+    return A.keys()
   }
   getDesyncedVoiceStates() {
-    return b.values()
+    return A.values()
   }
   getDesyncedParticipants() {
     return h.values()
   }
-}(i = "displayName") in x ? Object.defineProperty(x, i, {
+}(l = "displayName") in I ? Object.defineProperty(I, l, {
   value: "RTCConnectionDesyncStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : x[i] = "RTCConnectionDesyncStore";
-let E = new x(Chunk73153.h, {
+}) : I[l] = "RTCConnectionDesyncStore";
+let P = new I(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    I()
+    x()
   },
-  VOICE_CHANNEL_SELECT: I,
+  VOICE_CHANNEL_SELECT: x,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
-    if (n !== a.x.DEFAULT || t !== y.S7L.DISCONNECTED) returnfalse;
-    I()
+    if (n !== a.x.DEFAULT || t !== b.S7L.DISCONNECTED) returnfalse;
+    x()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {
@@ -113,9 +113,9 @@ let E = new x(Chunk73153.h, {
     return null != n && t.reduce((e, t) => {
       let {
         userId: r,
-        channelId: i
+        channelId: l
       } = t;
-      return i === n && !!j(r) || e
+      return l === n && !!S(r) || e
     }, false)
   },
   RTC_CONNECTION_CLIENT_CONNECT: function(e) {
@@ -123,12 +123,12 @@ let E = new x(Chunk73153.h, {
       userIds: t,
       guildId: n,
       channelId: r,
-      context: i
+      context: l
     } = e;
-    return i === a.x.DEFAULT && t.reduce((e, t) => {
+    return l === a.x.DEFAULT && t.reduce((e, t) => {
       if (null != g.A.getVoiceStateForChannel(r, t)) return e;
-      let i = m.default.getUser(t);
-      return null == i ? (v.add(t), e) : (O(i, n, r), true)
+      let l = m.default.getUser(t);
+      return null == l ? (v.add(t), e) : (O(l, n, r), true)
     }, false)
   },
   RTC_CONNECTION_CLIENT_DISCONNECT: function(e) {
@@ -136,6 +136,6 @@ let E = new x(Chunk73153.h, {
       userId: t,
       context: n
     } = e;
-    return n === a.x.DEFAULT && j(t)
+    return n === a.x.DEFAULT && S(t)
   }
 })

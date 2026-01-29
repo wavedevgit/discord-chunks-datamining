@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 823471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -87,7 +87,7 @@ function T(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(_.Ay.Icon, N(I({}, e), {
+      return (0, r.jsx)(O.Ay.Icon, N(I({}, e), {
         ref: a,
         onClick: o,
         tooltip: n ? null : c,
@@ -104,13 +104,13 @@ function P(e) {
     channel: t,
     closePopout: n,
     onSelect: l
-  } = e, y = (0, c.A)(t, "Sidebar Overflow"), _ = (0, d.A)(t), v = (0, g.A)(t), x = (0, m.A)(t), E = (0, s.A)(t), I = (0, u.A)(t), N = (0, f.A)(t.id), T = (0, h.A)(t), P = (0, o.A)(t), w = (0, a.A)(t), R = (0, A.A)({
+  } = e, y = (0, c.A)(t, "Sidebar Overflow"), O = (0, d.A)(t), j = (0, f.A)(t), v = (0, m.A)(t), E = (0, s.A)(t), I = (0, u.A)(t), N = (0, g.A)(t.id), T = (0, p.A)(t), P = (0, o.A)(t), w = (0, a.A)(t), R = (0, A.A)({
     id: t.id,
     label: S.intl.string(S.t.DQ797g)
-  }), D = (0, b.A)(t), M = (0, p.A)(t);
+  }), D = (0, b.A)(t), L = (0, h.A)(t);
 
-  function L() {
-    (0, O.iN)(t.id)
+  function M() {
+    (0, _.iN)(t.id)
   }
   return (0, r.jsxs)(i.W1t, {
     "data-menu-migrated": true,
@@ -122,12 +122,12 @@ function P(e) {
       children: [y, (0, r.jsx)(i.Drp, {
         id: "open",
         label: S.intl.string(S.t.IxVmZi),
-        action: L
+        action: M
       })]
     }), (0, r.jsxs)(i.rXV, {
-      children: [v, x]
+      children: [j, v]
     }), (0, r.jsxs)(i.rXV, {
-      children: [T, _, N, M]
+      children: [T, O, N, L]
     }), (0, r.jsxs)(i.rXV, {
       children: [(0, r.jsx)(i.Drp, {
         id: "search",
@@ -138,8 +138,8 @@ function P(e) {
           icon: i.tfB
         },
         action: function() {
-          L(), setTimeout(() => {
-            j._.dispatch(C.jej.FOCUS_SEARCH, {
+          M(), setTimeout(() => {
+            x._.dispatch(C.jej.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -153,7 +153,7 @@ function P(e) {
           icon: i.tfB
         },
         action: function() {
-          L(), j._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
+          M(), x._.dispatch(C.jej.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(i.rXV, {
@@ -170,13 +170,13 @@ function w(e) {
     baseChannelId: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [t.isForumPost() ? null : (0, r.jsx)(x.A, {
+    children: [t.isForumPost() ? null : (0, r.jsx)(v.A, {
       channel: t
-    }), t.isModeratorReportChannel() ? (0, r.jsx)(v.A, {
+    }), t.isModeratorReportChannel() ? (0, r.jsx)(j.A, {
       channel: t
     }) : null, (0, r.jsx)(T, {
       channel: t
-    }), (0, r.jsx)(_.Ay.Icon, {
+    }), (0, r.jsx)(O.Ay.Icon, {
       icon: i.PGe,
       tooltip: S.intl.string(S.t.cpT0Cq),
       onClick: () => (0, E.xu)((0, y.j)(t), null != n ? n : t.parent_id)

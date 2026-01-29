@@ -1,1 +1,1 @@
-{"id":"662427","type":"store","data":{"name":"CreatorMonetizationMarketingStore","functions":[{"name":"getEligibleGuildsForNagActivate","args":[]}],"events":["CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS"]},"fromModule":{"id":"44384"}}
+{"id":"662427","type":"store","data":{"name":"CreatorMonetizationMarketingStore","functions":[{"name":"getEligibleGuildsForNagActivate","args":[]}],"events":["CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS"]},"fromModule":{"id":"73734"}}

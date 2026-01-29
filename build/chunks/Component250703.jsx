@@ -1,4 +1,4 @@
-/** Chunk was on 75473 **/
+/** Chunk was on 59024 **/
 /** chunk id: 250703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk607399 = require("./607399.js"),
   Chunk732955 = require("./732955.js"),
   Chunk397927 = require("./397927.js"),
@@ -16,14 +16,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk379763 = require("./379763.js");
 
-function _(e) {
+function f(e) {
   let {
     icon: t,
     label: n,
-    onClick: o
+    onClick: l
   } = e;
   return (0, r.jsx)(c.K0, {
-    onClick: o,
+    onClick: l,
     icon: t,
     size: "sm",
     variant: "icon-only",
@@ -31,33 +31,33 @@ function _(e) {
   })
 }
 
-function y(e) {
+function g(e) {
   let {
     title: t,
     badge: n,
-    onClose: o
-  } = e, a = (0, u.NC)();
+    onClose: l
+  } = e, o = (0, u.NC)();
   return (0, r.jsx)(s.NPJ, {
-    theme: a,
+    theme: o,
     children: e => (0, r.jsxs)("div", {
-      className: l()(p.$Q, e),
+      className: a()(p.$Q, e),
       children: [(0, r.jsxs)("div", {
         className: p.y9,
-        children: [i.Fr && (0, r.jsx)(_, {
+        children: [i.Fr && (0, r.jsx)(f, {
           icon: s.fEi,
           onClick: () => d.A.setState({
             showNavigationMobile: true
           }),
-          label: f.intl.string(f.t["13/7kX"])
+          label: y.intl.string(y.t["13/7kX"])
         }), (0, r.jsx)(s.Heading, {
           variant: "heading-md/medium",
           color: "text-default",
           children: t
         }), null != n && n]
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(f, {
         icon: s.d$L,
-        onClick: o,
-        label: f.intl.string(f.t.cpT0Cq)
+        onClick: l,
+        label: y.intl.string(y.t.cpT0Cq)
       })]
     })
   })
@@ -65,22 +65,22 @@ function y(e) {
 let m = Chunk64700.memo(function(e) {
   var t, n;
   let {
-    onClose: o,
-    setting: a
-  } = e, c = null != (t = null == a ? true : a.useTitle()) ? t : "", s = null == a || null == (n = a.useBadge) ? true : n.call(a), u = d.A.useField("showNavigationMobile");
+    onClose: l,
+    setting: o
+  } = e, c = null != (t = null == o ? true : o.useTitle()) ? t : "", s = null == o || null == (n = o.useBadge) ? true : n.call(o), u = d.A.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
-    className: l()(p.Qs, {
+    className: a()(p.Qs, {
       [p.Hw]: i.Fr,
       [p.n7]: u
     }),
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(g, {
       title: c,
       badge: s,
-      onClose: o
+      onClose: l
     }), (0, r.jsx)("div", {
       className: p.yp,
-      children: null != a && (0, r.jsx)(b.A, {
-        node: a
+      children: null != o && (0, r.jsx)(b.A, {
+        node: o
       })
     })]
   })

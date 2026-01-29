@@ -1,7 +1,7 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 524738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g,
+  A: () => h,
   _: () => u
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -16,18 +16,18 @@ let u = e => {
     let {
       tabs: t,
       panelClassName: n,
-      tabsClassName: l,
+      tabsClassName: s,
       defaultTab: o,
       onTabChange: c,
       orientation: u = "horizontal"
-    } = e, g = null != o ? o : t[0], [h, x] = s.useState(null != g ? g : t[0]);
-    s.useEffect(() => {
-      x(g)
-    }, [g]);
-    let A = s.useMemo(() => {
-      let e = h.component;
-      return (0, i.jsx)(e, {})
+    } = e, h = null != o ? o : t[0], [g, x] = l.useState(null != h ? h : t[0]);
+    l.useEffect(() => {
+      x(h)
     }, [h]);
+    let p = l.useMemo(() => {
+      let e = g.component;
+      return (0, i.jsx)(e, {})
+    }, [g]);
     return (0, i.jsxs)("div", {
       className: r()(d.P5, {
         [d.Vd]: "vertical" === u
@@ -35,8 +35,8 @@ let u = e => {
       children: [(0, i.jsx)(a.VQ0, {
         className: r()(d.$H, {
           [d.Vd]: "vertical" === u
-        }, l),
-        selectedItem: h.setting,
+        }, s),
+        selectedItem: g.setting,
         onItemSelect: e => {
           var n;
           x(null != (n = t.find(t => t.setting === e)) ? n : t[0]), null == c || c(e)
@@ -47,42 +47,42 @@ let u = e => {
         children: t.map(e => (0, i.jsx)(a.VQ0.Item, {
           className: r()(d.Mf, {
             [d.Vd]: "vertical" === u,
-            [d.wH]: e.setting === h.setting
+            [d.wH]: e.setting === g.setting
           }),
           id: e.setting,
           "aria-label": e.title,
           children: e.title
         }, e.setting))
       }), (0, i.jsx)(a.VQ0.Panel, {
-        id: h.setting,
-        "aria-labelledby": h.title,
+        id: g.setting,
+        "aria-labelledby": g.title,
         className: r()(d.NM, n, {
           [d.Vd]: "vertical" === u
         }),
-        children: A
+        children: p
       })]
     })
   },
-  g = e => {
+  h = e => {
     var t;
     let {
       tabs: n,
-      settingsSection: s,
-      parentSetting: l,
+      settingsSection: l,
+      parentSetting: s,
       panelClassName: r,
       defaultTabIndex: a,
       onTabChange: d,
-      orientation: g = "horizontal"
+      orientation: h = "horizontal"
     } = e, {
-      viewableTabs: h,
+      viewableTabs: g,
       filteredTab: x
-    } = (0, c.A)(n, l), A = null != a ? n[a] : null, p = null != (t = null != A ? A : x) ? t : h[0];
+    } = (0, c.A)(n, s), p = null != a ? n[a] : null, m = null != (t = null != p ? p : x) ? t : g[0];
     return (0, i.jsx)(u, {
-      tabs: h,
-      orientation: g,
-      defaultTab: p,
+      tabs: g,
+      orientation: h,
+      defaultTab: m,
       onTabChange: e => {
-        o.A.setSection(s, e), null == d || d(e)
+        o.A.setSection(l, e), null == d || d(e)
       },
       panelClassName: r
     })

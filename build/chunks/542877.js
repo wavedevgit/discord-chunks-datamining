@@ -1,5 +1,5 @@
-/** Chunk was on 28979 **/
-/** chunk id: 542877, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 542877, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   K: () => l
 });
@@ -7,8 +7,8 @@ var Chunk978304 = require("./978304.js");
 
 function l() {
   let {
-    showLoadingIndicator: t,
-    slayerSdkApplications: e
+    showLoadingIndicator: e,
+    slayerSdkApplications: t
   } = (0, n.A)(true, true);
-  return !t && e.length > 0
+  return !e && t.length > 0
 }

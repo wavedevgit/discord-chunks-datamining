@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 492499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => _
+  M: () => p
 });
 var Chunk64700 = require("./64700.js"),
   Chunk379197 = require("./379197.js"),
@@ -13,12 +13,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk795056 = require("./795056.js"),
   Chunk996613 = require("./996613.js");
-let _ = () => {
+let p = () => {
   let e = (0, o.mb)(c.RN.UPSELL_BANNER),
     t = (0, o.mb)(c.RN.UPSELL_BANNER_POPOUT),
     n = (0, s.bG)([a.A], () => a.A.getMarketingBySurface(i.R.EDIT_PROFILE_SETTINGS)),
-    _ = r.useMemo(() => null != n ? n : {
-      asset: p,
+    p = r.useMemo(() => null != n ? n : {
+      asset: _,
       popoutAsset: u,
       title: d.intl.string(d.t.QZVVBh),
       body: d.intl.string(d.t.sajmAq),
@@ -44,10 +44,10 @@ let _ = () => {
         })
       }
       return e
-    }({}, _), r = r = {
+    }({}, p), r = r = {
       type: l.G.BANNER,
-      asset: null != e ? e : _.asset,
-      popoutAsset: null != t ? t : _.popoutAsset
+      asset: null != e ? e : p.asset,
+      popoutAsset: null != t ? t : p.popoutAsset
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -58,5 +58,5 @@ let _ = () => {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }, [e, t, _])
+  }, [e, t, p])
 }

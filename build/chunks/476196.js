@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 476196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => _
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   i = require.n(Chunk735438),
@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let u = new Chunk626584.A("UserSettingsProto"),
-  p = new class {
+  _ = new class {
     async getAll(e) {
       let t = performance.now(),
         n = await o.A.userSettings(e).getMany(),

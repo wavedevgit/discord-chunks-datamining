@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 909081, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 909081, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  T: () => g
+  T: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -15,21 +15,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk32096 = require("./32096.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
-  useSearchTerms: () => [E.intl.string(E.t.uHAJ5v)],
+let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
+  useSearchTerms: () => [S.intl.string(S.t.uHAJ5v)],
   usePredicate: function() {
-    let t = (0, A.b)(),
-      e = (0, S.A)(),
-      i = (0, d.f)(),
+    let e = (0, c.b)(),
+      t = (0, A.A)(),
+      i = (0, T.f)(),
       n = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled());
-    return !t && !e && i && n
+    return !e && !t && i && n
   },
   Component: function() {
-    let t = (0, l.bG)([a.default], () => a.default.getCurrentUser()),
-      e = (0, l.bG)([u.A], () => u.A.togglingSMS);
-    return null == t ? null : (0, n.jsx)(T.A, {
-      currentUser: t,
-      togglingSMS: e
+    let e = (0, l.bG)([u.default], () => u.default.getCurrentUser()),
+      t = (0, l.bG)([a.A], () => a.A.togglingSMS);
+    return null == e ? null : (0, n.jsx)(d.A, {
+      currentUser: e,
+      togglingSMS: t
     })
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 703982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -21,10 +21,10 @@ let g = function(e) {
     isVisible: t,
     premiumSubscription: i,
     churnDiscountOffer: g,
-    discountedPrice: f
+    discountedPrice: A
   } = e, {
-    analyticsLocations: b
-  } = (0, c.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), h = (0, a.zhh)({
+    analyticsLocations: f
+  } = (0, c.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), b = (0, a.zhh)({
     transform: t ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!t,
     config: {
@@ -33,30 +33,30 @@ let g = function(e) {
     }
   });
   return (0, r.jsx)(s.animated.div, {
-    className: l()(_.iE, {
-      [_.q4]: !t
+    className: l()(p.iE, {
+      [p.q4]: !t
     }),
-    style: h,
+    style: b,
     children: (0, r.jsxs)("div", {
-      className: _.iJ,
+      className: p.iJ,
       children: [(0, r.jsx)("img", {
         alt: "",
         src: m,
-        className: _.oU
+        className: p.oU
       }), (0, r.jsxs)("div", {
-        className: _.iQ,
+        className: p.iQ,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
-          children: p.intl.format(p.t["3yZP0G"], {
+          children: _.intl.format(_.t["3yZP0G"], {
             percent: g.discount.amount
           })
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: p.intl.format(p.t["3Q4wCy"], {
+          children: _.intl.format(_.t["3Q4wCy"], {
             numMonths: g.discount.user_usage_limit,
-            discountedPrice: f,
+            discountedPrice: A,
             billingPeriod: (0, d.Ke)(g.discount.user_usage_limit_interval)
           })
         })]
@@ -64,7 +64,7 @@ let g = function(e) {
         variant: "expressive",
         icon: a.tvc,
         size: "md",
-        text: p.intl.string(p.t.zrCzVB),
+        text: _.intl.string(_.t.zrCzVB),
         onClick: () => void(0, a.mMO)(async () => {
           let {
             PremiumBrandRefreshSubscriptionCancellationModal: e
@@ -90,7 +90,7 @@ let g = function(e) {
               return e
             }({}, t), l = l = {
               premiumSubscription: i,
-              analyticsLocations: b,
+              analyticsLocations: f,
               initialStep: u.g.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
               var n = Object.keys(e);

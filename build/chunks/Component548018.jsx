@@ -1,8 +1,8 @@
-/** Chunk was on 28979 **/
-/** chunk id: 548018, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 548018, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  c: () => g,
-  f: () => E
+  c: () => _,
+  f: () => S
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,31 +16,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
 
-function E() {
-  return (0, l.bG)([a.default], () => {
-    let t = a.default.getCurrentUser();
-    return null != t && t.mfaEnabled
+function S() {
+  return (0, l.bG)([u.default], () => {
+    let e = u.default.getCurrentUser();
+    return null != e && e.mfaEnabled
   })
 }
-let g = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
+let _ = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
   useSearchTerms: function() {
-    let t = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled()),
-      e = [S.intl.string(S.t.m0FidJ), S.intl.string(S.t.xZEzbu)];
-    return t ? e.push(S.intl.string(S.t["D+aE7g"])) : e.push(S.intl.string(S.t.cDgKte)), e
+    let e = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled()),
+      t = [A.intl.string(A.t.m0FidJ), A.intl.string(A.t.xZEzbu)];
+    return e ? t.push(A.intl.string(A.t["D+aE7g"])) : t.push(A.intl.string(A.t.cDgKte)), t
   },
   usePredicate: function() {
-    let t = (0, d.b)(),
-      e = (0, A.A)(),
-      i = E();
-    return !t && !e && i
+    let e = (0, T.b)(),
+      t = (0, c.A)(),
+      i = S();
+    return !e && !t && i
   },
   Component: function() {
-    let t = (0, l.bG)([a.default], () => a.default.getCurrentUser()),
-      e = (0, l.bG)([u.A], () => u.A.getBackupCodes()),
+    let e = (0, l.bG)([u.default], () => u.default.getCurrentUser()),
+      t = (0, l.bG)([a.A], () => a.A.getBackupCodes()),
       i = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled());
-    return null == t ? null : (0, n.jsx)(T.A, {
-      backupCodes: e,
-      currentUser: t,
+    return null == e ? null : (0, n.jsx)(d.A, {
+      backupCodes: t,
+      currentUser: e,
       hasTOTPEnabled: i
     })
   }

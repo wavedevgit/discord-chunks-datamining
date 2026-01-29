@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 706847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => b,
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk783971 = require("./783971.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,23 +55,23 @@ function b(e) {
     narrow: n
   } = e, i = (0, d.lK)(t);
   return l.useEffect(() => {
-    c.default.track(p.HAw.CHANNEL_BANNER_VIEWED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+    c.default.track(h.HAw.CHANNEL_BANNER_VIEWED, m(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
       banner_type: "thread"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: s()(f.JD, {
-      [f.sc]: n
+    className: s()(g.JD, {
+      [g.sc]: n
     }),
     children: [(0, r.jsx)(a.Text, {
-      className: f.E5,
+      className: g.E5,
       variant: "text-sm/normal",
       color: "text-default",
-      children: t.isForumPost() ? h.intl.string(h.t["833FDn"]) : h.intl.string(h.t.rEeodK)
+      children: t.isForumPost() ? p.intl.string(p.t["833FDn"]) : p.intl.string(p.t.rEeodK)
     }), i ? (0, r.jsx)(a.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t["0dvvEi"]),
+      text: p.intl.string(p.t["0dvvEi"]),
       onClick: () => {
-        c.default.track(p.HAw.CHANNEL_BANNER_CTA_CLICKED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+        c.default.track(h.HAw.CHANNEL_BANNER_CTA_CLICKED, m(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
           banner_type: "thread",
           cta_type: "unarchive"
         })), u.A.unarchiveThread(t, false)
@@ -87,23 +87,23 @@ function A(e) {
     narrow: n
   } = e, i = (0, d.H_)(t);
   return l.useEffect(() => {
-    c.default.track(p.HAw.CHANNEL_BANNER_VIEWED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+    c.default.track(h.HAw.CHANNEL_BANNER_VIEWED, m(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
       banner_type: "thread"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: s()(f.JD, {
-      [f.sc]: n
+    className: s()(g.JD, {
+      [g.sc]: n
     }),
     children: [(0, r.jsx)(a.Text, {
-      className: f.E5,
+      className: g.E5,
       variant: "text-sm/normal",
       color: "text-default",
-      children: t.isForumPost() ? h.intl.string(h.t.E7oO8u) : h.intl.string(h.t["V/JF2N"])
+      children: t.isForumPost() ? p.intl.string(p.t.E7oO8u) : p.intl.string(p.t["V/JF2N"])
     }), i ? (0, r.jsx)(a.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t.zA9d1J),
+      text: p.intl.string(p.t.zA9d1J),
       onClick: () => {
-        c.default.track(p.HAw.CHANNEL_BANNER_CTA_CLICKED, m(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+        c.default.track(h.HAw.CHANNEL_BANNER_CTA_CLICKED, m(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
           banner_type: "thread",
           cta_type: "unlock"
         })), u.A.unlockThread(t)

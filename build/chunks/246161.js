@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 246161, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 246161, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  c: () => T
+  c: () => d
 });
 var Chunk574381 = require("./574381.js"),
   Chunk311907 = require("./311907.js"),
@@ -10,19 +10,19 @@ var Chunk574381 = require("./574381.js"),
   Chunk351906 = require("./351906.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMING_AUTO_STREAMER_MODE, {
+let d = (0, Chunk419954.zD)(Chunk780964.X.STREAMING_AUTO_STREAMER_MODE, {
   useTitle: () => o.intl.string(o.t.IxjaoF),
   useValue: function() {
-    return (0, l.bG)([u.A], () => {
+    return (0, l.bG)([a.A], () => {
       let {
-        autoToggle: t
-      } = u.A.getSettings();
-      return t
+        autoToggle: e
+      } = a.A.getSettings();
+      return e
     })
   },
-  setValue: function(t) {
+  setValue: function(e) {
     s.A.update({
-      autoToggle: t
+      autoToggle: e
     })
   },
   usePredicate: function() {

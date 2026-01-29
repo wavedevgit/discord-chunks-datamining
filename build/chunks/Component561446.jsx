@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 561446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -26,13 +26,13 @@ function y(e) {
     channelId: t,
     showProfile: n = false,
     showTrailingDivider: y = false
-  } = e, _ = p.default.cast(t), {
-    joinRequest: O,
-    isModmin: j,
-    guildId: v,
-    maxMembers: x
-  } = (0, l.cf)([h.A, u.A, d.A], () => {
-    let e = h.A.getRequest(_),
+  } = e, O = h.default.cast(t), {
+    joinRequest: _,
+    isModmin: x,
+    guildId: j,
+    maxMembers: v
+  } = (0, l.cf)([p.A, u.A, d.A], () => {
+    let e = p.A.getRequest(O),
       t = u.A.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
@@ -40,12 +40,12 @@ function y(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), E = (0, l.bG)([c.A], () => null != v ? c.A.getMemberCount(v) : 0), C = null != x && (null != E ? E : 0) >= x, {
+  }), E = (0, l.bG)([c.A], () => null != j ? c.A.getMemberCount(j) : 0), C = null != v && (null != E ? E : 0) >= v, {
     approveRequest: S,
     rejectRequest: I,
     submitting: N
-  } = (0, g.W)(null == O ? true : O.guildId, null == O ? true : O.userId, null == O ? true : O.joinRequestId);
-  return null != O && O.applicationStatus === f.B5.SUBMITTED && j ? (0, r.jsxs)("div", {
+  } = (0, f.W)(null == _ ? true : _.guildId, null == _ ? true : _.userId, null == _ ? true : _.joinRequestId);
+  return null != _ && _.applicationStatus === g.B5.SUBMITTED && x ? (0, r.jsxs)("div", {
     className: A.U,
     children: [(0, r.jsx)(i.m, {
       text: b.intl.string(b.t.cdPGbE),
@@ -63,12 +63,12 @@ function y(e) {
       size: "sm",
       text: b.intl.string(b.t.hDtbsz),
       onClick: I,
-      disabled: N || O.applicationStatus !== f.B5.SUBMITTED
+      disabled: N || _.applicationStatus !== g.B5.SUBMITTED
     }), n && (0, r.jsx)(s.Button, {
       onClick: () => {
         (0, o.openUserProfileModal)({
-          userId: O.userId,
-          guildId: O.guildId
+          userId: _.userId,
+          guildId: _.guildId
         })
       },
       variant: "secondary",

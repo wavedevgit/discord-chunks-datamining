@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 675171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk417597 = require("./417597.js"),
   Chunk933958 = require("./933958.js"),
@@ -20,7 +20,7 @@ let u = "no_text_activity",
     [Chunk5867.Gd.ACTIVITY_POPOUT_WINDOW]: [Chunk626360.i.NEW_MESSAGES, Chunk626360.i.OPT_IN_CHANNEL, Chunk626360.i.SUMMARIES]
   };
 
-function p() {
+function h() {
   let e = (0, r.bG)([l.Ay], () => l.Ay.getCurrentEmbeddedActivity()),
     t = (0, r.bG)([l.Ay], () => l.Ay.getActivityPanelMode()),
     n = (0, i.H)(null == e ? true : e.location);

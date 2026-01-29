@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 305714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -25,50 +25,50 @@ let E = Chunk64700.forwardRef((e, t) => {
     className: n,
     isFooterVisible: l,
     isDarkMode: E,
-    isReducedMotion: x,
-    subscriptionTier: O
+    isReducedMotion: O,
+    subscriptionTier: C
   } = e, {
-    analyticsLocations: C
-  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), y = (0, p.ar)(), j = (0, u.TM)(), T = i.useRef(null), [v, S] = i.useState(false);
+    analyticsLocations: x
+  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [y, N] = i.useState(false);
   return i.useEffect(() => {
-    !l || x || v || null == T.current || T.current.play()
-  }, [l, x, v]), (0, r.jsx)(c.f5, {
-    value: C,
+    !l || O || y || null == I.current || I.current.play()
+  }, [l, O, y]), (0, r.jsx)(c.f5, {
+    value: x,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: s()(f.kL, n),
+      className: s()(A.kL, n),
       children: [(0, r.jsx)(a.Heading, {
-        className: f.RH,
+        className: A.RH,
         variant: "display-md",
         color: "text-strong",
         children: g.intl.string(g.t.lEw32m)
-      }), (0, r.jsx)(_.KN, {
-        subscriptionTier: O,
-        inOfferExperience: y,
-        containerClassName: f.Z5,
+      }), (0, r.jsx)(p.KN, {
+        subscriptionTier: C,
+        inOfferExperience: S,
+        containerClassName: A.Z5,
         isApplicationHome: true,
         isDarkMode: E
       }), (0, r.jsx)("div", {
-        className: f.av,
+        className: A.av,
         children: (0, r.jsx)(d.A, {
           playsInline: true,
           muted: true,
           preload: "auto",
-          poster: h.A,
-          className: f.dV,
+          poster: b.A,
+          className: A.dV,
           onEnded: () => {
-            S(true)
+            N(true)
           },
-          ref: T,
+          ref: I,
           children: (0, r.jsx)("source", {
-            src: j ? b.A : A.A,
-            type: j ? m.a.MP4 : m.a.WEBM
+            src: T ? f.A : h.A,
+            type: T ? m.a.MP4 : m.a.WEBM
           })
         })
       }), (0, r.jsx)("div", {
-        className: f.es
+        className: A.es
       }), (0, r.jsx)("div", {
-        className: f.fF
+        className: A.fF
       })]
     })
   })

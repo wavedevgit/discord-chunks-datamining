@@ -1,7 +1,7 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 636920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,60 +55,60 @@ function j(e, t) {
   }), e
 }
 
-function S(e) {
+function j(e) {
   let {
     hangStatusActivity: t,
     channel: n,
-    userId: S,
-    isSelf: I = false,
-    analyticsSource: x,
-    onAction: E,
-    className: P,
-    iconClassName: N,
-    textClassName: T
-  } = e, w = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), C = (0, l.bG)([c.A], () => c.A.can(b.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, m.n)(t.emoji, n);
-  i.useEffect(() => {
-    d.default.track(b.HAw.VIEW_HANG_STATUS, O({
-      source: x,
-      other_user_id: S
+    userId: j,
+    isSelf: x = false,
+    analyticsSource: I,
+    onAction: P,
+    className: E,
+    iconClassName: T,
+    textClassName: N
+  } = e, w = (0, i.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), C = (0, i.bG)([c.A], () => c.A.can(A.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, m.n)(t.emoji, n);
+  l.useEffect(() => {
+    d.default.track(A.HAw.VIEW_HANG_STATUS, O({
+      source: I,
+      other_user_id: j
     }, (0, g.A)(n.id)))
-  }, [x, n.id, S]);
-  let D = i.useCallback(() => {
-      !w && C && (o.default.selectVoiceChannel(n.id), null == E || E(), d.default.track(b.HAw.HANG_STATUS_CTA_CLICKED, j(O({
-        source: x
+  }, [I, n.id, j]);
+  let D = l.useCallback(() => {
+      !w && C && (o.default.selectVoiceChannel(n.id), null == P || P(), d.default.track(A.HAw.HANG_STATUS_CTA_CLICKED, S(O({
+        source: I
       }, (0, g.A)(n.id)), {
-        other_user_id: S,
+        other_user_id: j,
         cta_type: "join"
       })))
-    }, [w, C, n.id, S, x, E]),
-    k = i.useCallback(() => {
+    }, [w, C, n.id, j, I, P]),
+    k = l.useCallback(() => {
       if (!w || !L || null == t.state) return;
-      let [e] = (0, _.e)(S, t.state);
+      let [e] = (0, y.e)(j, t.state);
       if (null != e) {
-        if (e === A.Kk.CUSTOM) {
+        if (e === _.Kk.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
           (0, p.hS)(t.details, t.emoji, true)
         } else(0, p.Iq)(e, true);
-        null == E || E(), d.default.track(b.HAw.HANG_STATUS_CTA_CLICKED, j(O({
-          source: x
+        null == P || P(), d.default.track(A.HAw.HANG_STATUS_CTA_CLICKED, S(O({
+          source: I
         }, (0, g.A)(n.id)), {
-          other_user_id: S,
+          other_user_id: j,
           cta_type: "swipe"
         }))
       }
-    }, [w, L, t, n.id, S, x, E]);
+    }, [w, L, t, n.id, j, I, P]);
   return (0, r.jsxs)("div", {
-    className: null != P ? P : v.kL,
-    children: [(0, r.jsx)(y.A, {
-      userId: S,
+    className: null != E ? E : v.kL,
+    children: [(0, r.jsx)(b.A, {
+      userId: j,
       size: 32,
-      className: null != N ? N : v.Kk,
+      className: null != T ? T : v.Kk,
       hangStatusActivity: t
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: null != T ? T : v.qS,
-      children: (0, f.Au)(S, t)
-    }), w && !I ? (0, r.jsx)(a.m_, {
+      className: null != N ? N : v.qS,
+      children: (0, f.Au)(j, t)
+    }), w && !x ? (0, r.jsx)(a.m_, {
       text: L ? true : h.intl.string(h.t["0LMpW+"]),
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.Button, {
@@ -119,7 +119,7 @@ function S(e) {
           disabled: !L
         })
       })
-    }) : !I && C && (0, r.jsx)(s.Button, {
+    }) : !x && C && (0, r.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
       text: h.intl.string(h.t["B/dHXL"]),

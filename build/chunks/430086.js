@@ -1,10 +1,10 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 430086, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Fv: () => _,
+  Fv: () => p,
   GY: () => m,
   M$: () => g,
-  Oc: () => p,
+  Oc: () => _,
   kF: () => u
 });
 var Chunk949645 = require("./949645.js"),
@@ -20,12 +20,12 @@ let u = {
     comboKeysBindGlobal: true,
     action: () => ((0, r.A)(), false)
   },
-  p = {
+  _ = {
     binds: ["alt+up"],
     comboKeysBindGlobal: true,
     action: () => ((0, r.A)(false), false)
   },
-  _ = {
+  p = {
     binds: ["mod+alt+right"],
     comboKeysBindGlobal: true,
     action() {

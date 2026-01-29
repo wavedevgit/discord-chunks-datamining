@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 719587, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 719587, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  L: () => S
+  L: () => A
 });
 var Chunk311907 = require("./311907.js"),
   Chunk290595 = require("./290595.js"),
@@ -13,23 +13,23 @@ var Chunk311907 = require("./311907.js"),
   Chunk997913 = require("./997913.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let S = (0, Chunk419954.zD)(Chunk780964.X.DATA_USAGE_STATISTICS_SETTING, {
-  useTitle: () => A.intl.string(A.t.XuADY2),
-  useSubtitle: () => A.intl.format(A.t["igTSG/"], {
-    helpdeskArticle: a.A.getArticleURL(d.MVz.DATA_PRIVACY_CONTROLS)
+let A = (0, Chunk419954.zD)(Chunk780964.X.DATA_USAGE_STATISTICS_SETTING, {
+  useTitle: () => c.intl.string(c.t.XuADY2),
+  useSubtitle: () => c.intl.format(c.t["igTSG/"], {
+    helpdeskArticle: u.A.getArticleURL(T.MVz.DATA_PRIVACY_CONTROLS)
   }),
   useValue: function() {
-    return (0, n.bG)([u.A], () => u.A.hasConsented(d.YAq.USAGE_STATISTICS))
+    return (0, n.bG)([a.A], () => a.A.hasConsented(T.YAq.USAGE_STATISTICS))
   },
-  setValue: function(t) {
-    t ? (0, l.U)([d.YAq.USAGE_STATISTICS], []).catch(T.i) : (0, T.O)({
-      header: A.intl.string(A.t.OdPCbN),
-      body: A.intl.string(A.t.MGWabA),
-      confirmText: A.intl.string(A.t["D3+rU4"]),
-      cancelText: A.intl.string(A.t.kYpG0u),
-      onConfirm: () => (0, l.U)([], [d.YAq.USAGE_STATISTICS]).catch(T.i)
+  setValue: function(e) {
+    e ? (0, l.U)([T.YAq.USAGE_STATISTICS], []).catch(d.i) : (0, d.O)({
+      header: c.intl.string(c.t.OdPCbN),
+      body: c.intl.string(c.t.MGWabA),
+      confirmText: c.intl.string(c.t["D3+rU4"]),
+      cancelText: c.intl.string(c.t.kYpG0u),
+      onConfirm: () => (0, l.U)([], [T.YAq.USAGE_STATISTICS]).catch(d.i)
     })
   },
-  useSearchTerms: () => [A.intl.string(A.t.XuADY2)],
+  useSearchTerms: () => [c.intl.string(c.t.XuADY2)],
   useDisabled: Chunk171316.uM
 })

@@ -126,14 +126,14 @@ function w(e) {
   } = e, {
     onClose: F,
     transitionState: Y
-  } = x, K = (0, A.GV)(), W = G.length % 2 == 0, q = (0, c.bG)([h.A], () => h.A.useReducedMotion), [z, Q] = i.useState(Date.now()), [X, Z] = i.useState(0), [J, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(z), el = i.useRef(X), ea = i.useRef(J), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(false);
+  } = x, K = (0, A.GV)(), W = G.length % 2 == 0, q = (0, c.bG)([h.A], () => h.A.useReducedMotion), [z, Q] = i.useState(Date.now()), [X, Z] = i.useState(0), [$, J] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(z), el = i.useRef(X), ea = i.useRef($), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
       t = e - ei.current,
       n = el.current,
       r = ea.current;
-    return es.current && (Z(n += t), eo.current || $(r += t)), Q(e), [n, r]
+    return es.current && (Z(n += t), eo.current || J(r += t)), Q(e), [n, r]
   }
   return (0, g.A)({
     type: s.ImpressionTypes.MODAL,
@@ -170,8 +170,8 @@ function w(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
-    ei.current = z, el.current = X, ea.current = J, es.current = ee, eo.current = en
-  }, [z, X, J, ee, en]), i.useEffect(() => () => {
+    ei.current = z, el.current = X, ea.current = $, es.current = ee, eo.current = en
+  }, [z, X, $, ee, en]), i.useEffect(() => () => {
     if ("video" === w.type || "embed" === w.type) {
       let [e, t] = ep();
       O.default.track(I.HAw.CHANGE_LOG_VIDEO_PLAYED, {

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 136787, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => p
+  V: () => _
 });
 var Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
@@ -12,7 +12,7 @@ var Chunk989349 = require("./989349.js"),
   Chunk635431 = require("./635431.js"),
   Chunk49999 = require("./49999.js");
 let u = i()("2025-11-10 10:00:00-08:00").toDate(),
-  p = () => {
+  _ = () => {
     let {
       enabled: e,
       forceNotice: t
@@ -22,8 +22,8 @@ let u = i()("2025-11-10 10:00:00-08:00").toDate(),
     if ((0, a.JZ)(s.M.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE) || new Date < u && !t || null == n || null != n.createdAt && n.createdAt > u && !t) returnfalse;
     let r = n.currentPeriodStart,
       i = n.currentPeriodEnd,
-      p = i <= new Date(Date.now() + 12096e5) && i > new Date;
+      _ = i <= new Date(Date.now() + 12096e5) && i > new Date;
     return r > u ? ((0, a.Dr)(s.M.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
       dismissAction: d.i.AUTO_DISMISS
-    }), false) : !!p && e
+    }), false) : !!_ && e
   }

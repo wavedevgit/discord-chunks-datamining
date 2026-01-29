@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 325326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  LF: () => p
+  LF: () => h
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -12,27 +12,27 @@ var Chunk64700 = require("./64700.js"),
   Chunk252431 = require("./252431.js"),
   Chunk810153 = require("./810153.js"),
   Chunk790782 = require("./790782.js");
-let p = () => {
+let h = () => {
   let {
     initialized: e,
     loading: t,
     items: n,
-    hasMore: p,
-    loadMore: h
+    hasMore: h,
+    loadMore: p
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
-      isDesktop: p,
-      withMentions: h = false,
-      initialPageSize: f
-    } = e, g = (0, l.bG)([u.A], () => u.A.shouldReload()), m = r.useRef(false), [b, A] = r.useState(false), {
+      isDesktop: h,
+      withMentions: p = false,
+      initialPageSize: g
+    } = e, f = (0, l.bG)([u.A], () => u.A.shouldReload()), m = r.useRef(false), [b, A] = r.useState(false), {
       initialized: y,
-      loading: _,
-      items: O,
-      hasMore: j,
-      cursor: v,
-      errored: x
+      loading: O,
+      items: _,
+      hasMore: x,
+      cursor: j,
+      errored: v
     } = (0, l.cf)([c.A], () => ({
       initialized: c.A.initialized,
       loading: c.A.loading,
@@ -52,38 +52,38 @@ let p = () => {
     }, [t, y]);
     let S = (0, s.A)();
     r.useEffect(() => () => {
-      p ? !S() && (x || O.length > 100) && (0, o.S3)() : n && O.length > 100 && (0, o.S3)()
-    }, [n, O, p, S, x]), r.useEffect(() => {
-      let e = g && t;
+      h ? !S() && (v || _.length > 100) && (0, o.S3)() : n && _.length > 100 && (0, o.S3)()
+    }, [n, _, h, S, v]), r.useEffect(() => {
+      let e = f && t;
       (!y || e) && (0, o.ni)({
-        limit: null != f ? f : h ? 8 : 20,
-        with_mentions: h,
+        limit: null != g ? g : p ? 8 : 20,
+        with_mentions: p,
         roles_filter: E,
         everyone_filter: C
       })
-    }, [y, g, t, h, E, C, f]);
+    }, [y, f, t, p, E, C, g]);
     let I = r.useCallback(async e => {
-      !m.current && y && j && null != v && (e || !x) && (m.current = true, A(true), await (0, o.ni)({
-        after: v,
-        with_mentions: h,
+      !m.current && y && x && null != j && (e || !v) && (m.current = true, A(true), await (0, o.ni)({
+        after: j,
+        with_mentions: p,
         roles_filter: E,
         everyone_filter: C,
-        limit: h ? 8 : 20
+        limit: p ? 8 : 20
       }, () => {
         m.current = false
       }), A(false))
-    }, [y, j, v, x, h, E, C]);
+    }, [y, x, j, v, p, E, C]);
     return {
       initialized: y,
-      loading: _,
-      items: O,
-      hasMore: j,
+      loading: O,
+      items: _,
+      hasMore: x,
       loadMore: I,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: x
+      errored: v
     }
   })({
     isFocused: true,
@@ -93,7 +93,7 @@ let p = () => {
     initialized: e,
     loading: t,
     items: n.filter(e => "notification-center-item" === e.kind),
-    hasMore: p,
-    loadMore: h
+    hasMore: h,
+    loadMore: p
   }
 }

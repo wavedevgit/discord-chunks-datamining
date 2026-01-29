@@ -30,9 +30,9 @@ __OVERLAY__ && Chunk73153.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fun
       }(e, t), Object.getOwnPropertySymbols)
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
     return s
-  }(a, ["authorizations", "permissions"]), h = "OAuth2Authorize_".concat(t, "_").concat(u.guildId, "_").concat(u.channelId);
+  }(a, ["authorizations", "permissions"]), p = "OAuth2Authorize_".concat(t, "_").concat(u.guildId, "_").concat(u.channelId);
 
-  function p(e) {
+  function h(e) {
     let {
       location: n
     } = e;
@@ -71,7 +71,7 @@ __OVERLAY__ && Chunk73153.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fun
       }({}, t, u), r = r = {
         authorizations: new Map(c),
         permissions: f,
-        callback: p
+        callback: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -84,9 +84,9 @@ __OVERLAY__ && Chunk73153.h.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fun
       }), n))
     }
   }, {
-    modalKey: h,
+    modalKey: p,
     onCloseRequest: () => {
-      (0, s.OoC)(h), p({})
+      (0, s.OoC)(p), h({})
     }
   })
 })

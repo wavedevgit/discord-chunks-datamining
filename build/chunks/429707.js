@@ -1,9 +1,8 @@
-/** Chunk was on 86142 **/
+/** Chunk was on 87557 **/
 /** chunk id: 429707, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  At: () => g,
-  F6: () => h,
+  At: () => h,
+  F6: () => m,
   Mx: () => p
 });
 var Chunk247775 = require("./247775.js"),
@@ -14,63 +13,63 @@ var Chunk247775 = require("./247775.js"),
   Chunk961350 = require("./961350.js"),
   Chunk274303 = require("./274303.js"),
   Chunk652215 = require("./652215.js");
-let d = new Chunk626584.A("MultiAccountActionCreators");
+let u = new Chunk626584.A("MultiAccountActionCreators");
 
-function h() {
+function m() {
   let e = o.default.getId();
   c.A.getUsers().forEach(async t => {
     let n, {
-        id: l
+        id: i
       } = t,
-      a = r.getToken(l);
-    if (null == a || "" === a) return void s.h.dispatch({
+      s = a.getToken(i);
+    if (null == s || "" === s) return void r.h.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
-      userId: l
+      userId: i
     });
-    s.h.dispatch({
+    r.h.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST",
-      userId: l
+      userId: i
     });
     try {
-      n = await i.Bo.get({
-        url: u.Rsh.ME,
+      n = await l.Bo.get({
+        url: d.Rsh.ME,
         headers: {
-          authorization: a
+          authorization: s
         },
         retries: 3,
         rejectWithError: false
       })
     } catch (t) {
       let e = (null == t ? true : t.status) === 401 || (null == t ? true : t.status) === 403;
-      s.h.dispatch({
+      r.h.dispatch({
         type: e ? "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE" : "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
-        userId: l
+        userId: i
       });
       return
     }
-    s.h.dispatch({
-      type: e === l ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
+    r.h.dispatch({
+      type: e === i ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
       user: n.body
-    }), s.h.dispatch({
+    }), r.h.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
-      userId: l
+      userId: i
     })
   })
 }
 
 function p(e, t) {
-  d.log("Switching account to ".concat(e), {
+  u.log("Switching account to ".concat(e), {
     switchSynchronously: t
   });
-  let n = r.getToken(e);
-  return null == n ? (d.log("Switching accounts failed because there was no token"), s.h.dispatch({
+  let n = a.getToken(e);
+  return null == n ? (u.log("Switching accounts failed because there was no token"), r.h.dispatch({
     type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
     userId: e
-  }), Promise.resolve()) : l.A.switchAccountToken(n, t)
+  }), Promise.resolve()) : i.A.switchAccountToken(n, t)
 }
 
-function g(e) {
-  s.h.dispatch({
+function h(e) {
+  r.h.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e
   })

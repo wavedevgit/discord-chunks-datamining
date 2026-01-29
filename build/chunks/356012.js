@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 356012, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 356012, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  C: () => A
+  C: () => c
 });
 var Chunk419117 = require("./419117.jsx"),
   Chunk419954 = require("./419954.js"),
@@ -12,8 +12,8 @@ var Chunk419117 = require("./419117.jsx"),
   Chunk790337 = require("./790337.js"),
   Chunk800056 = require("./800056.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.bd)(Chunk780964.X.STREAMING_ADVANCED_ACCORDION, {
-  useTitle: t => t ? d.intl.string(d.t.qrMyvm) : d.intl.string(d.t.LEtTNl),
+let c = (0, Chunk419954.bd)(Chunk780964.X.STREAMING_ADVANCED_ACCORDION, {
+  useTitle: e => e ? T.intl.string(T.t.qrMyvm) : T.intl.string(T.t.LEtTNl),
   useCollapsedSubtitle: () => (0, n.A)(s.X.STREAMING_ADVANCED_ACCORDION),
-  buildLayout: () => [a.n, o.K, T.r, u.L, r.S]
+  buildLayout: () => [u.n, o.K, d.r, a.L, r.S]
 })

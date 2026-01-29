@@ -2,7 +2,7 @@
 /** chunk id: 684748, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  J: () => h,
+  J: () => p,
   Y: () => u
 }), require("./747238.js");
 var Chunk684013 = require("./684013.js"),
@@ -62,7 +62,7 @@ function u(e, t) {
   }
 }
 
-function h() {
+function p() {
   let e = r.Ay.getOverlayKeybind();
   return null != e ? (0, l.dI)(e.shortcut, true).split(" + ") : ["???"]
 }

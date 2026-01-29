@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 444529, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -21,20 +21,20 @@ function c(e) {
     },
     isFocused: d,
     buttonProps: {
-      message: p,
-      channel: h,
-      groupId: f,
-      compact: g = false
+      message: h,
+      channel: p,
+      groupId: g,
+      compact: f = false
     },
     messageWindow: m
-  } = e, b = p.state === a.cmJ.SENDING, A = p.id === f, y = (0, l.Lt)(p.flags, a.pr7.EPHEMERAL), _ = p.state === a.cmJ.SEND_FAILED;
-  return b || y && !_ ? null : (0, r.jsx)(s.A, {
+  } = e, b = h.state === a.cmJ.SENDING, A = h.id === g, y = (0, l.Lt)(h.flags, a.pr7.EPHEMERAL), O = h.state === a.cmJ.SEND_FAILED;
+  return b || y && !O ? null : (0, r.jsx)(s.A, {
     className: o.Uo,
     innerClassName: o.Mc,
-    isHeader: !g && A && !(0, i.A)(p),
-    isReply: !g && p.type === a.lAJ.REPLY && null != p.messageReference,
-    channel: h,
-    message: p,
+    isHeader: !f && A && !(0, i.A)(h),
+    isReply: !f && h.type === a.lAJ.REPLY && null != h.messageReference,
+    channel: p,
+    message: h,
     messageWindow: m,
     setPopout: t,
     showEmojiPicker: n,

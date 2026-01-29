@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 751258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => b
@@ -14,8 +14,8 @@ var Chunk280230 = require("./280230.js"),
   Chunk253932 = require("./253932.js"),
   Chunk320501 = require("./320501.js"),
   Chunk652215 = require("./652215.js");
-let f = /\\([*?+/])/g,
-  g = {
+let g = /\\([*?+/])/g,
+  f = {
     tts: {
       action: () => ({
         tts: d.on.getSetting()
@@ -46,7 +46,7 @@ let f = /\\([*?+/])/g,
         let {
           channel: n
         } = t;
-        if (null != n.guild_id) return i.A.changeNickname(n.guild_id, n.id, h.ME, e), {
+        if (null != n.guild_id) return i.A.changeNickname(n.guild_id, n.id, p.ME, e), {
           content: ""
         }
       }
@@ -58,8 +58,8 @@ let f = /\\([*?+/])/g,
           isEdit: n,
           channel: r
         } = t;
-        if (n || !p.A.hasPresent(r.id)) return;
-        let l = p.A.getMessages(r.id).last();
+        if (n || !h.A.hasPresent(r.id)) return;
+        let l = h.A.getMessages(r.id).last();
         if (null == l || null == l.id) return;
         let i = o.Ay.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, false));
         if (null != i) return (0, c.BB)(r.id, l.id, (0, u.jq)(i)), {
@@ -76,15 +76,15 @@ let f = /\\([*?+/])/g,
           channel: i
         } = t;
         if (l) return;
-        let a = p.A.getLastEditableMessage(i.id);
+        let a = h.A.getLastEditableMessage(i.id);
         if (null == a || null == a.id) return {
           content: ""
         };
-        let [o, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), h = null != (r = null == d ? true : d.split("")) ? r : [];
-        c = c.replace(f, (e, t) => t), u = u.replace(f, (e, t) => t);
-        let g = h.includes("g") ? a.content.replaceAll(c, u) : a.content.replace(c, u);
-        return (null == g || "" === g.trim()) && 0 === a.attachments.length ? s.A.deleteMessage(i.id, a.id) : g !== a.content && s.A.editMessage(i.id, a.id, {
-          content: g
+        let [o, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), p = null != (r = null == d ? true : d.split("")) ? r : [];
+        c = c.replace(g, (e, t) => t), u = u.replace(g, (e, t) => t);
+        let f = p.includes("g") ? a.content.replaceAll(c, u) : a.content.replace(c, u);
+        return (null == f || "" === f.trim()) && 0 === a.attachments.length ? s.A.deleteMessage(i.id, a.id) : f !== a.content && s.A.editMessage(i.id, a.id, {
+          content: f
         }), {
           content: ""
         }
@@ -92,20 +92,20 @@ let f = /\\([*?+/])/g,
     },
     spoiler: {
       action: e => ({
-        content: (0, h.ZGg)(e).trim()
+        content: (0, p.ZGg)(e).trim()
       })
     }
   };
 
 function m(e, t, n, r) {
-  return a.Ay.trackWithMetadata(h.HAw.SLASH_COMMAND_USED, {
+  return a.Ay.trackWithMetadata(p.HAw.SLASH_COMMAND_USED, {
     command: e
   }), t.action(n, r)
 }
 
 function b(e, t) {
-  for (let r in g) {
-    let l = g[r];
+  for (let r in f) {
+    let l = f[r];
     if (null != l.match) {
       var n;
       if (null == (n = l.match.regex) ? true : n.test(e)) return m(r, l, e, t);
@@ -117,4 +117,4 @@ function b(e, t) {
     }
   }
 }
-Object.setPrototypeOf(g, null)
+Object.setPrototypeOf(f, null)

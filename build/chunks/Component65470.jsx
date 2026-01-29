@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 65470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -47,8 +47,8 @@ let d = e => {
     premiumModalAnalyticsLocation: n,
     giftMessage: d,
     onClick: u,
-    buttonTextOverride: p
-  } = e, _ = function(e, t) {
+    buttonTextOverride: _
+  } = e, p = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -76,11 +76,11 @@ let d = e => {
     children: e => {
       let {
         onClick: n
-      } = e, a = null != p ? p : (0, s.U)(t);
+      } = e, a = null != _ ? _ : (0, s.U)(t);
       return (0, r.jsx)(i.$nd, c(o({
         onClick: n,
         icon: l.okO
-      }, _), {
+      }, p), {
         text: a
       }))
     }

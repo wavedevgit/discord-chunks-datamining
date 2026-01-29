@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 623049, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 623049, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  T: () => d
+  T: () => T
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -10,19 +10,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk840065 = require("./840065.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_REDIRECT, {
+let d = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_REDIRECT, {
     useSearchTerms: () => [],
     Component: () => (0, n.jsx)(l.Text, {
       variant: "text-md/normal",
       children: o.intl.format(o.t.DHpTjT, {
         onAppearanceClick() {
-          (0, u.openUserSettings)(r.X.APPEARANCE_PANEL, {
-            section: a.nc_.APPEARANCE
+          (0, a.openUserSettings)(r.X.APPEARANCE_PANEL, {
+            section: u.nc_.APPEARANCE
           })
         }
       })
     })
   }),
-  d = (0, Chunk419954.zZ)(Chunk780964.X.APPEARANCE_REDIRECT_CATEGORY, {
-    buildLayout: () => [T]
+  T = (0, Chunk419954.zZ)(Chunk780964.X.APPEARANCE_REDIRECT_CATEGORY, {
+    buildLayout: () => [d]
   })

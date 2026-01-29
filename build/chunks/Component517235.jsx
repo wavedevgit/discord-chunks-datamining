@@ -1,4 +1,4 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 517235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -13,6 +13,6 @@ var Chunk311907 = require("./311907.js"),
   Chunk788868 = require("./788868.js");
 
 function d() {
-  let e = (0, s.bG)([a.default], () => a.default.getCurrentUser());
-  return (0, o.YE)(e, c.PremiumTypes.TIER_2) ? (0, i.jsx)(l.A, {}) : (0, i.jsx)(r.A, {})
+  let e = (0, l.bG)([a.default], () => a.default.getCurrentUser());
+  return (0, o.YE)(e, c.PremiumTypes.TIER_2) ? (0, i.jsx)(s.A, {}) : (0, i.jsx)(r.A, {})
 }

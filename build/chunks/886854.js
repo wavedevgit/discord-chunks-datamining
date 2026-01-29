@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 886854, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 4670 **/
+/** chunk id: 886854, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  yj: () => C
+  yj: () => N
 });
 var Chunk934551 = require("./934551.js"),
   Chunk920603 = require("./920603.js"),
@@ -24,21 +24,21 @@ let O = (0, Chunk419954.t_)(Chunk780964.X.APPEARANCE_PANEL, {
     initialize: () => {
       (0, l.v)()
     },
-    buildLayout: () => [g.S, A._, _.b, S.U, E.M, d.d]
+    buildLayout: () => [_.S, c._, E.b, A.U, S.M, T.d]
   }),
-  N = (0, Chunk419954.t_)(Chunk780964.X.APPEARANCE_PANEL, {
+  C = (0, Chunk419954.t_)(Chunk780964.X.APPEARANCE_PANEL, {
     useTitle: () => I.intl.string(I.t["iHH+ky"]),
     StronglyDiscouragedCustomComponent: Chunk614651.Ay,
     buildLayout: () => []
   }),
-  C = (0, Chunk419954.i4)(Chunk780964.X.APPEARANCE_SIDEBAR_ITEM, {
+  N = (0, Chunk419954.i4)(Chunk780964.X.APPEARANCE_SIDEBAR_ITEM, {
     useTitle: () => I.intl.string(I.t["iHH+ky"]),
-    getLegacySearchKey: () => (0, a.WJ)("AppearanceSidebarItem") ? true : c.H.APPEARANCE,
+    getLegacySearchKey: () => (0, u.WJ)("AppearanceSidebarItem") ? true : g.H.APPEARANCE,
     icon: Chunk934551.PaintPaletteIcon,
     trailing: {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: Chunk368631.p_,
       stronglyDiscouragedBadgeComponent: Chunk368631.AW
     },
-    buildLayout: () => (0, a.WJ)("AppearanceSidebarItem") ? [O] : [N]
+    buildLayout: () => (0, u.WJ)("AppearanceSidebarItem") ? [O] : [C]
   })

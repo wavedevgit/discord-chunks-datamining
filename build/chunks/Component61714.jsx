@@ -101,33 +101,33 @@ function es(e) {
     displayNameMode: c,
     displayUserMode: d,
     size: u = q.OSZ.LARGE,
-    onClick: h,
-    onContextMenu: p,
+    onClick: p,
+    onContextMenu: h,
     context: f,
     guildId: g,
     voiceState: y
-  } = e, m = (0, Q.A)({
+  } = e, _ = (0, Q.A)({
     location: "overlay_voice_widget"
-  }), b = (0, a.bG)([H.default], () => H.default.showKeybindIndicators), O = (0, a.bG)([k.default], () => k.default.getId()), _ = (0, a.bG)([G.A], () => G.A.isLocalMute(i.id)), v = (0, a.bG)([R.A], () => R.A.getCurrentUserActiveStream()), E = (0, a.yK)([R.A], () => null != v ? R.A.getViewerIds(v) : []), x = (0, A.A)({
+  }), b = (0, a.bG)([W.default], () => W.default.showKeybindIndicators), A = (0, a.bG)([k.default], () => k.default.getId()), O = (0, a.bG)([G.A], () => G.A.isLocalMute(i.id)), v = (0, a.bG)([R.A], () => R.A.getCurrentUserActiveStream()), E = (0, a.yK)([R.A], () => null != v ? R.A.getViewerIds(v) : []), x = (0, m.A)({
     userId: i.id,
     context: f
-  }), S = (0, a.bG)([U.A], () => U.A.isPrioritySpeaker(i.id, f)), j = (0, a.bG)([R.A], () => null != R.A.getStreamForUser(i.id, g)), I = s.useMemo(() => null != v && v.ownerId !== i.id && E.includes(i.id), [v, i.id, E]);
+  }), S = (0, a.bG)([V.A], () => V.A.isPrioritySpeaker(i.id, f)), j = (0, a.bG)([R.A], () => null != R.A.getStreamForUser(i.id, g)), C = s.useMemo(() => null != v && v.ownerId !== i.id && E.includes(i.id), [v, i.id, E]);
   if (d === q.f5z.ONLY_WHILE_SPEAKING && n && !x) return null;
-  let C = i.id === O,
+  let I = i.id === A,
     {
       mute: w,
       selfMute: N,
-      suppress: P,
-      deaf: T,
+      suppress: T,
+      deaf: P,
       selfDeaf: L
     } = y,
-    M = m && b,
-    V = N && (!C || !M);
+    M = _ && b,
+    U = N && (!I || !M);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(D.Ay, {
       guildId: g,
-      onClick: n ? true : e => null == h ? true : h(e, i),
-      onContextMenu: n ? true : e => null == p ? true : p(e, i),
+      onClick: n ? true : e => null == p ? true : p(e, i),
+      onContextMenu: n ? true : e => null == h ? true : h(e, i),
       className: o()(et.TX, {
         [et.zj]: !x,
         [et.bG]: !n
@@ -140,23 +140,23 @@ function es(e) {
       iconClassName: o()(et.Ow, {
         [et.xt]: n
       }),
-      isWatching: I,
+      isWatching: C,
       isOverlay: true,
       size: u,
       priority: S,
-      mute: w || V || _,
-      localMute: _,
-      serverMute: w || P,
-      deaf: T || L,
-      serverDeaf: T,
+      mute: w || U || O,
+      localMute: O,
+      serverMute: w || T,
+      deaf: P || L,
+      serverDeaf: P,
       userNameClassName: o()(et.Xh, {
         [et.xt]: n,
         [et.R]: n && (c === q.pwA.NEVER || !x && c === q.pwA.ONLY_WHILE_SPEAKING)
       })
-    }), C && M && (0, r.jsx)(Z.A, {
+    }), I && M && (0, r.jsx)(Z.A, {
       value: N,
       action: q.hCu.TOGGLE_MUTE,
-      shouldShow: !w && !P
+      shouldShow: !w && !T
     })]
   })
 }
@@ -172,20 +172,20 @@ class el extends(i = Chunk64700.PureComponent) {
       channel: a,
       anchor: c,
       avatarSizeMode: d
-    } = this.props, h = null != c.right, p = t.map(t => {
+    } = this.props, p = null != c.right, h = t.map(t => {
       var o;
       let {
         user: c,
         voiceState: u,
-        member: p
+        member: h
       } = t;
       if (null == c || null == a || null == e) return null;
       let f = s || l;
       return (0, r.jsx)(es, {
         guildId: null == a ? true : a.guild_id,
         user: c,
-        nick: null != (o = null == p ? true : p.nick) ? o : B.Ay.getName(c),
-        flipped: h,
+        nick: null != (o = null == h ? true : h.nick) ? o : B.Ay.getName(c),
+        flipped: p,
         voiceState: u,
         displayNameMode: n,
         displayUserMode: i,
@@ -196,14 +196,14 @@ class el extends(i = Chunk64700.PureComponent) {
         context: e
       }, c.id)
     });
-    return (0, r.jsx)(X.Ay.Body, {
+    return (0, r.jsx)(J.Ay.Body, {
       className: o()({
         [u.A.VOICE_WIDGET_TOP_MARGIN]: s,
         [et.mn]: s
       }),
       children: (0, r.jsx)(D.Wr, {
         className: et.tA,
-        children: p
+        children: h
       })
     })
   }
@@ -213,28 +213,28 @@ class el extends(i = Chunk64700.PureComponent) {
       title: t,
       isPreviewingInGame: n
     } = this.props;
-    return (0, r.jsxs)(X.Ay.Bar, {
+    return (0, r.jsxs)(J.Ay.Bar, {
       className: o()(et.bl, {
         [et.VH]: n
       }),
-      children: [(0, r.jsxs)(X.Ay.Content, {
+      children: [(0, r.jsxs)(J.Ay.Content, {
         dynamicSize: true,
         className: o()(et.Qs, {
           [et.R]: n
         }),
-        children: [(0, r.jsx)(h.WP0, {
+        children: [(0, r.jsx)(p.WP0, {
           size: "custom",
           color: c.A.unsafe_rawColors.WHITE.css,
           width: 20,
           height: 20,
           className: o()(et.Kk, et.zj, et.co)
-        }), (0, r.jsx)(h.HKD, {
+        }), (0, r.jsx)(p.HKD, {
           size: "custom",
           color: c.A.unsafe_rawColors.WHITE.css,
           width: 20,
           height: 20,
           className: o()(et.Kk, et.zj, et.Xk)
-        }), (0, r.jsx)(h.Text, {
+        }), (0, r.jsx)(p.Text, {
           variant: "text-md/normal",
           style: {
             color: c.A.unsafe_rawColors.PRIMARY_200.css
@@ -242,14 +242,14 @@ class el extends(i = Chunk64700.PureComponent) {
           className: et.DD,
           children: t
         })]
-      }), n ? null : (0, r.jsx)(X.Ay.Icon, {
-        icon: h.Zes,
+      }), n ? null : (0, r.jsx)(J.Ay.Icon, {
+        icon: p.Zes,
         label: ee.intl.string(ee.t.NiTd0e),
         onClick: this.handleOpenVoiceSettings,
         tooltipPosition: "left",
         size: 18
-      }), n ? null : (0, r.jsx)(X.Ay.Icon, {
-        icon: e ? h.hl9 : h.qgw,
+      }), n ? null : (0, r.jsx)(J.Ay.Icon, {
+        icon: e ? p.hl9 : p.qgw,
         label: e ? ee.intl.string(ee.t.cSu80j) : ee.intl.string(ee.t.cM8Vnm),
         onClick: this.handlePin,
         tooltipPosition: "left",
@@ -272,15 +272,15 @@ class el extends(i = Chunk64700.PureComponent) {
     } = this.props;
     if (t || null == u || null == s) return null;
     let {
-      sanitizedTitle: p,
+      sanitizedTitle: h,
       title: f
     } = (0, x.A)(a);
-    return (0, r.jsx)(X.Ay.Bar, {
+    return (0, r.jsx)(J.Ay.Bar, {
       className: o()(et.Wm, {
         [et.R]: i,
         [et.CW]: !n
       }),
-      children: (0, r.jsxs)(X.Ay.Content, {
+      children: (0, r.jsxs)(J.Ay.Content, {
         className: et.Vb,
         dynamicSize: true,
         children: [(0, r.jsxs)("div", {
@@ -289,31 +289,31 @@ class el extends(i = Chunk64700.PureComponent) {
             className: et.Gt,
             game: l
           }) : (0, r.jsx)(S.A, {
-            title: p
-          }), (0, r.jsxs)(O.A, {
-            direction: O.A.Direction.VERTICAL,
-            justify: O.A.Justify.BETWEEN,
+            title: h
+          }), (0, r.jsxs)(A.A, {
+            direction: A.A.Direction.VERTICAL,
+            justify: A.A.Justify.BETWEEN,
             className: et.gA,
-            children: [(0, r.jsx)(h.Text, {
+            children: [(0, r.jsx)(p.Text, {
               className: et.$A,
               variant: "text-sm/normal",
               children: ee.intl.string(ee.t.XKYej5)
-            }), (0, r.jsx)(C.A, {
+            }), (0, r.jsx)(I.A, {
               children: null != (e = null == c ? true : c.name) ? e : f
             })]
           })]
-        }), (0, r.jsxs)(O.A, {
+        }), (0, r.jsxs)(A.A, {
           grow: 0,
           children: [(0, r.jsx)("div", {
             className: et.yf,
-            children: (0, r.jsx)(P.A, {
+            children: (0, r.jsx)(T.A, {
               stream: u,
               iconClassName: et.Nd,
               appContext: q.BRT.OVERLAY
             })
           }), (0, r.jsx)("div", {
             className: et.yf,
-            children: (0, r.jsx)(T.A, {
+            children: (0, r.jsx)(P.A, {
               stream: u,
               appContext: q.BRT.OVERLAY
             })
@@ -322,10 +322,10 @@ class el extends(i = Chunk64700.PureComponent) {
             children: (0, r.jsx)(d.m, {
               asContainer: true,
               text: ee.intl.string(ee.t.S5anIc),
-              children: (0, r.jsx)(h.DUT, {
+              children: (0, r.jsx)(p.DUT, {
                 onClick: this.handleStopStream,
                 "aria-label": ee.intl.string(ee.t.S5anIc),
-                children: (0, r.jsx)(h.GT3, {
+                children: (0, r.jsx)(p.GT3, {
                   size: "md",
                   color: "currentColor",
                   className: et.Nd
@@ -338,10 +338,10 @@ class el extends(i = Chunk64700.PureComponent) {
     })
   }
   componentDidMount() {
-    (0, J.j_)(this.props, this.shouldDisplay())
+    (0, X.j_)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, J.Mw)(e, this.props, this.shouldDisplay)
+    (0, X.Mw)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -365,10 +365,10 @@ class el extends(i = Chunk64700.PureComponent) {
     } = this.props;
     if (null == l || null == e || !this.shouldDisplay()) return null;
     let a = q.UVF.UNPINNED;
-    return i && (a = q.UVF.PINNED), s && (a = q.UVF.IN_GAME_PREVIEW), n && (a = q.UVF.IN_GAME), (0, r.jsxs)(X.Ay, {
+    return i && (a = q.UVF.PINNED), s && (a = q.UVF.IN_GAME_PREVIEW), n && (a = q.UVF.IN_GAME), (0, r.jsxs)(J.Ay, {
       type: a,
       width: 380,
-      children: [n ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), n ? null : (0, r.jsx)(F.A, {
+      children: [n ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), n ? null : (0, r.jsx)(Y.A, {
         className: o()({
           [et.VH]: s
         }),
@@ -387,7 +387,7 @@ class el extends(i = Chunk64700.PureComponent) {
       let {
         context: i
       } = this.props;
-      (0, p.L3)(e, async () => {
+      (0, h.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("8893")]).then(n.bind(n, 668569));
@@ -403,7 +403,7 @@ class el extends(i = Chunk64700.PureComponent) {
         channel: t,
         title: i
       } = this.props;
-      (0, h.mMO)(async () => {
+      (0, p.mMO)(async () => {
         let {
           default: s
         } = await n.e("96531").then(n.bind(n, 880510));
@@ -437,34 +437,34 @@ class el extends(i = Chunk64700.PureComponent) {
 
 function eo(e) {
   var t;
-  let n = (0, a.bG)([V.A, L.A], () => L.A.getChannel(V.A.getVoiceChannelId())),
+  let n = (0, a.bG)([U.A, L.A], () => L.A.getChannel(U.A.getVoiceChannelId())),
     i = (0, b.Ay)(n),
     l = function() {
-      let [e] = (0, a.bG)([K.Ay, w.A, V.A, L.A], () => {
-        let e = L.A.getChannel(V.A.getVoiceChannelId());
+      let [e] = (0, a.bG)([H.Ay, w.A, U.A, L.A], () => {
+        let e = L.A.getChannel(U.A.getVoiceChannelId());
         return null == e ? [
           [], false
-        ] : e.isGuildStageVoice() ? [w.A.getMutableParticipants(e.id, N.ip.SPEAKER), w.A.getParticipantsVersion(e.id)] : [K.Ay.getVoiceStatesForChannel(e), K.Ay.getVoiceStateVersion(e.getGuildId())]
-      }, [], W.D), t = (0, a.bG)([k.default], () => k.default.getId()), n = (0, Q.A)({
+        ] : e.isGuildStageVoice() ? [w.A.getMutableParticipants(e.id, N.ip.SPEAKER), w.A.getParticipantsVersion(e.id)] : [H.Ay.getVoiceStatesForChannel(e), H.Ay.getVoiceStateVersion(e.getGuildId())]
+      }, [], K.D), t = (0, a.bG)([k.default], () => k.default.getId()), n = (0, Q.A)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
     }(),
     o = (0, a.bG)([R.A], () => R.A.getStreamerActiveStreamMetadata()),
-    c = (0, a.bG)([_.Ay, z.A, M.A], () => {
+    c = (0, a.bG)([O.Ay, z.A, M.A], () => {
       var e;
-      let t = (0, j.A)(_.Ay, z.A);
+      let t = (0, j.A)(O.Ay, z.A);
       return null != t ? null == (e = M.A.getGameByGameData(t)) ? true : e.id : null
     }),
-    d = (0, m.h)(c),
-    u = (0, a.cf)([_.Ay, z.A, R.A, H.default], () => {
-      let e = (0, j.A)(_.Ay, z.A),
+    d = (0, _.h)(c),
+    u = (0, a.cf)([O.Ay, z.A, R.A, W.default], () => {
+      let e = (0, j.A)(O.Ay, z.A),
         t = R.A.getCurrentUserActiveStream();
       return {
-        displayUserMode: H.default.getDisplayUserMode(),
-        displayNameMode: H.default.getDisplayNameMode(),
-        avatarSizeMode: H.default.getAvatarSizeMode(),
-        streamApplication: (null == o ? true : o.pid) === (0, Y.getPID)() ? (0, I.A)(e) : null,
+        displayUserMode: W.default.getDisplayUserMode(),
+        displayNameMode: W.default.getDisplayNameMode(),
+        avatarSizeMode: W.default.getAvatarSizeMode(),
+        streamApplication: (null == o ? true : o.pid) === (0, F.getPID)() ? (0, C.A)(e) : null,
         stream: t
       }
     });

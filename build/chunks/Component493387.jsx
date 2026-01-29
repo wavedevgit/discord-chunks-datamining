@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 493387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => x
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,7 +28,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = {
+let O = {
   SCALE_MIN: .7,
   SCALE_MAX: 1,
   DURATION_IN: 300,
@@ -36,7 +36,7 @@ let _ = {
   EASING_IN: Chunk615300.A.Easing.inOut(Chunk615300.A.Easing.back()),
   EASING_OUT: Chunk615300.A.Easing.quad
 };
-class O extends Chunk64700.PureComponent {
+class _ extends Chunk64700.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -54,8 +54,8 @@ class O extends Chunk64700.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), a.A.parallel([a.A.timing(t, {
       toValue: 1,
-      duration: _.DURATION_IN,
-      easing: _.EASING_IN
+      duration: O.DURATION_IN,
+      easing: O.EASING_IN
     }), a.A.timing(n, {
       toValue: 1,
       duration: 200
@@ -76,8 +76,8 @@ class O extends Chunk64700.PureComponent {
     }));
     a.A.sequence([a.A.timing(t, {
       toValue: 0,
-      duration: _.DURATION_OUT,
-      easing: _.EASING_OUT
+      duration: O.DURATION_OUT,
+      easing: O.EASING_OUT
     }), a.A.sequence(i), a.A.timing(l, {
       toValue: 0,
       duration: 125
@@ -91,7 +91,7 @@ class O extends Chunk64700.PureComponent {
       transform: [{
         scale: e.interpolate({
           inputRange: [0, 1],
-          outputRange: [_.SCALE_MIN, _.SCALE_MAX]
+          outputRange: [O.SCALE_MIN, O.SCALE_MAX]
         })
       }],
       opacity: e
@@ -145,7 +145,7 @@ class O extends Chunk64700.PureComponent {
   }
 }
 
-function j(e) {
+function x(e) {
   var t;
   let {
     participants: n,
@@ -154,9 +154,9 @@ function j(e) {
     onClick: a,
     width: u,
     guildId: b
-  } = e, A = (0, p.Ay)(), y = (t = n.length, ((0, d.FT9)(d._3J.SIZE_80) + 16) * t > u ? d._3J.SIZE_40 : d._3J.SIZE_80), _ = (0, o.bG)([h.A], () => h.A.isFocused()), j = n.map(e => {
+  } = e, A = (0, h.Ay)(), y = (t = n.length, ((0, d.FT9)(d._3J.SIZE_80) + 16) * t > u ? d._3J.SIZE_40 : d._3J.SIZE_80), O = (0, o.bG)([p.A], () => p.A.isFocused()), x = n.map(e => {
     var t, n;
-    if (e.type !== g.lp.USER) return null;
+    if (e.type !== f.lp.USER) return null;
     let {
       user: i,
       voiceState: s,
@@ -164,7 +164,7 @@ function j(e) {
       latched: c,
       ringing: u
     } = e;
-    return (0, r.jsx)(O, {
+    return (0, r.jsx)(_, {
       className: m.Wp,
       width: (0, d.FT9)(y),
       theme: A,
@@ -172,9 +172,9 @@ function j(e) {
         "aria-label": i.username,
         onClick: t => null == a ? true : a(e, t),
         onContextMenu: t => null == l ? true : l(e, t),
-        children: (0, r.jsx)(f.A, {
+        children: (0, r.jsx)(g.A, {
           userId: i.id,
-          src: i.getAvatarURL(b, (0, d.FT9)(y), o && _),
+          src: i.getAvatarURL(b, (0, d.FT9)(y), o && O),
           size: y,
           muted: null != (t = null == s ? true : s.isVoiceMuted()) && t,
           deafen: null != (n = null == s ? true : s.isVoiceDeafened()) && n,
@@ -189,6 +189,6 @@ function j(e) {
     component: "div",
     role: "list",
     className: s()(m.zr, i),
-    children: j
+    children: x
   })
 }

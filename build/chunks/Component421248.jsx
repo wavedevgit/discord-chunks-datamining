@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 421248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -21,7 +21,7 @@ var Chunk873298 = require("./873298.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
 
-function A(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,67 +42,67 @@ function A(e) {
 
 function E() {
   var e;
-  let t = null == (e = (0, p.A)()) || e,
+  let t = null == (e = (0, _.A)()) || e,
     n = (0, u.uM)(),
     E = (0, d.G)(),
     {
-      explicitContentGuilds: x,
-      explicitContentFriendDm: O,
-      explicitContentNonFriendDm: C
+      explicitContentGuilds: O,
+      explicitContentFriendDm: C,
+      explicitContentNonFriendDm: x
     } = (0, c.R)(),
-    y = e => {
+    S = e => {
       let t = Object.values(e);
       (0, a.hK)() && t.includes(i.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
       }) : (0, o.Jz)(e)
     },
-    j = [{
-      value: i.TO.BLUR,
-      label: b.intl.string(b.t.S49Uad)
-    }, {
-      value: i.TO.BLOCK,
-      label: b.intl.string(b.t["D/157Y"])
-    }],
     T = [{
       value: i.TO.BLUR,
-      label: b.intl.string(b.t.S49Uad)
+      label: f.intl.string(f.t.S49Uad)
+    }, {
+      value: i.TO.BLOCK,
+      label: f.intl.string(f.t["D/157Y"])
     }],
-    v = {
+    I = [{
+      value: i.TO.BLUR,
+      label: f.intl.string(f.t.S49Uad)
+    }],
+    y = {
       value: i.TO.SHOW,
-      label: b.intl.string(b.t["5k5OFp"])
+      label: f.intl.string(f.t["5k5OFp"])
     };
-  t && (j.unshift(v), T.unshift(v));
-  let S = {
+  t && (T.unshift(y), I.unshift(y));
+  let N = {
     isDisabled: E,
-    tooltipText: n ? b.intl.string(h.default["6Af/cw"]) : true
+    tooltipText: n ? f.intl.string(b.default["6Af/cw"]) : true
   };
-  return (0, r.jsxs)(_.E, {
-    setting: f.H.PRIVACY_SENSITIVE_MEDIA_V2,
+  return (0, r.jsxs)(p.E, {
+    setting: A.H.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: g.d1.EXPLICIT_MEDIA_REDACTION_V2,
-    description: b.intl.string(b.t.Wnojv1),
-    children: [(0, r.jsx)(m.A, A({
-      title: b.intl.string(b.t["+uI23H"]),
-      value: O,
-      onChange: e => y({
+    description: f.intl.string(f.t.Wnojv1),
+    children: [(0, r.jsx)(m.A, h({
+      title: f.intl.string(f.t["+uI23H"]),
+      value: C,
+      onChange: e => S({
         explicitContentFriendDm: e
       }),
-      options: j
-    }, S)), (0, r.jsx)(m.A, A({
-      title: b.intl.string(b.t["Yh+HX1"]),
-      value: C,
-      onChange: e => y({
+      options: T
+    }, N)), (0, r.jsx)(m.A, h({
+      title: f.intl.string(f.t["Yh+HX1"]),
+      value: x,
+      onChange: e => S({
         explicitContentNonFriendDm: e
       }),
-      options: j
-    }, S)), (0, r.jsx)(m.A, {
-      title: b.intl.string(b.t["FP+a42"]),
-      value: x,
-      onChange: e => y({
+      options: T
+    }, N)), (0, r.jsx)(m.A, {
+      title: f.intl.string(f.t["FP+a42"]),
+      value: O,
+      onChange: e => S({
         explicitContentGuilds: e
       }),
       isDisabled: !t || E,
-      tooltipText: n ? b.intl.string(h.default["6Af/cw"]) : true,
-      options: T
+      tooltipText: n ? f.intl.string(b.default["6Af/cw"]) : true,
+      options: I
     })]
   })
 }

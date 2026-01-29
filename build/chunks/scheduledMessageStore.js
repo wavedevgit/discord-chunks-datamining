@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 199160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
@@ -43,12 +43,12 @@ function o(e, t) {
 let c = false,
   u = {},
   d = new Set,
-  p = {};
+  h = {};
 
-function h() {
-  p = {}
+function p() {
+  h = {}
 }
-class f extends(r = Chunk311907.Ay.Store) {
+class g extends(r = Chunk311907.Ay.Store) {
   getMessagesPendingDeletion() {
     return d
   }
@@ -56,14 +56,14 @@ class f extends(r = Chunk311907.Ay.Store) {
     return u
   }
   getPendingScheduledMessage(e) {
-    return p[e]
+    return h[e]
   }
   get loading() {
     return c
   }
 }
-s(f, "displayName", "scheduledMessageStore");
-let g = new f(Chunk73153.h, {
+s(g, "displayName", "scheduledMessageStore");
+let f = new g(Chunk73153.h, {
   SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
     let {
       channelId: t,
@@ -71,7 +71,7 @@ let g = new f(Chunk73153.h, {
     } = e;
     u = o(a({}, u), {
       [n.scheduledMessageId]: n
-    }), p = a({}, p), delete p[t]
+    }), h = a({}, h), delete h[t]
   },
   SCHEDULED_MESSAGES_UPDATE_SUCCESS: function(e) {
     let {
@@ -122,7 +122,7 @@ let g = new f(Chunk73153.h, {
       channelId: t,
       scheduledTimestamp: n
     } = e;
-    p = o(a({}, p), {
+    h = o(a({}, h), {
       [t]: {
         channelId: t,
         scheduledTimestamp: n
@@ -133,8 +133,8 @@ let g = new f(Chunk73153.h, {
     let {
       channelId: t
     } = e;
-    p = a({}, p), delete p[t]
+    h = a({}, h), delete h[t]
   },
-  LOGOUT: h,
-  CONNECTION_OPEN: h
+  LOGOUT: p,
+  CONNECTION_OPEN: p
 })

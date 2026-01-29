@@ -1,7 +1,7 @@
 /** Chunk was on 52199 **/
 /** chunk id: 44022, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  $: () => q,
+  $: () => G,
   J: () => U
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -39,7 +39,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk422344 = require("./422344.js");
 
-function M(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -70,7 +70,7 @@ function W(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let D = {
+let M = {
   offset: {
     left: 4,
     right: false
@@ -85,7 +85,7 @@ function H(e) {
     "aria-label": F.intl.string(F.t["2pAkDA"]),
     children: (0, n.jsxs)("div", {
       className: k.jC,
-      children: [(0, n.jsx)(m.Y9, {
+      children: [(0, n.jsx)(S.Y9, {
         icon: f.cFy,
         title: F.intl.string(F.t["2pAkDA"])
       }), (0, n.jsx)(U, {
@@ -104,15 +104,15 @@ function U(e) {
     name: d.ImpressionNames.FOR_LATER_LIST_VIEWED,
     properties: {
       total_count: r.length,
-      overdue_count: I.A.getOverdueMessageReminderCount()
+      overdue_count: x.A.getOverdueMessageReminderCount()
     }
-  }, {}, [r.length]), 0 === r.length) ? (0, n.jsx)(C.g, {}) : (0, n.jsx)(z, {
+  }, {}, [r.length]), 0 === r.length) ? (0, n.jsx)(C.g, {}) : (0, n.jsx)(K, {
     savedMessageKeys: r,
     closePopout: t
   })
 }
 
-function q(e) {
+function G(e) {
   let {
     onOpen: t,
     onClose: r,
@@ -124,8 +124,8 @@ function q(e) {
   }, [r, o]), h = l.useCallback(() => {
     c(!o), o ? null == r || r() : null == t || t()
   }, [r, t, o]);
-  l.useEffect(() => (R._.subscribe(P.jej.TOGGLE_FOR_LATER, h), () => void R._.unsubscribe(P.jej.TOGGLE_FOR_LATER, h)), [h]);
-  let g = (0, p.bG)([I.A], () => I.A.hasOverdueReminder(), []);
+  l.useEffect(() => (I._.subscribe(w.jej.TOGGLE_FOR_LATER, h), () => void I._.unsubscribe(w.jej.TOGGLE_FOR_LATER, h)), [h]);
+  let g = (0, p.bG)([x.A], () => x.A.hasOverdueReminder(), []);
   return (0, n.jsx)(f.YNO, {
     targetElementRef: u,
     animation: f.YNO.Animation.NONE,
@@ -149,13 +149,13 @@ function q(e) {
   })
 }
 
-function z(e) {
+function K(e) {
   let {
     savedMessageKeys: t,
     closePopout: r
-  } = e, s = l.useRef(null), a = (0, S.A)("for-later", s), [i, o] = l.useState(new Date);
+  } = e, s = l.useRef(null), a = (0, _.A)("for-later", s), [i, o] = l.useState(new Date);
   return l.useEffect(() => {
-    let e = setInterval(() => o(new Date), v.A.Millis.MINUTE);
+    let e = setInterval(() => o(new Date), R.A.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
@@ -182,14 +182,14 @@ function z(e) {
             for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
           return s
         }(e, ["ref"]);
-        return (0, n.jsx)(f.ChK, W(M({
+        return (0, n.jsx)(f.ChK, W(D({
           ref: e => {
             var t;
             s.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           },
           className: k.VB
         }, a), {
-          children: t.map(e => (0, n.jsx)(K, {
+          children: t.map(e => (0, n.jsx)(q, {
             savedMessageKey: e,
             closePopout: r,
             throttledNow: i
@@ -200,43 +200,43 @@ function z(e) {
   })
 }
 
-function G(e) {
+function z(e) {
   let {
     savedMessage: t,
     closePopout: r,
     throttledNow: s
   } = e, i = (0, T.vr)(t), o = l.useCallback(async e => {
     var n;
-    await (0, T.le)(t, i), e.shiftKey || r(), O.default.track(P.HAw.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, T.le)(t, i), e.shiftKey || r(), O.default.track(w.HAw.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (n = t.message) ? true : n.author.id,
       type: null != t.saveData.dueAt ? j.Yf.REMINDER : j.Yf.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : true
     })
-  }, [r, t, i]), c = (0, p.bG)([b.A], () => !!((null == i ? true : i.type) === P.rbe.UNKNOWN || (null == i ? true : i.isPrivate())) || b.A.can(P.xBc.VIEW_CHANNEL, i));
+  }, [r, t, i]), c = (0, p.bG)([m.A], () => !!((null == i ? true : i.type) === w.rbe.UNKNOWN || (null == i ? true : i.isPrivate())) || m.A.can(w.xBc.VIEW_CHANNEL, i));
   return null != i && null != t.message && c ? (0, n.jsxs)("div", {
     className: k.zC,
     children: [(0, n.jsx)(f.DUT, {
       className: k.M,
       onClick: o,
       "aria-label": F.intl.string(F.t["+TSRGD"])
-    }), null != t.saveData.dueAt ? (0, n.jsx)(w.A, {
+    }), null != t.saveData.dueAt ? (0, n.jsx)(P.A, {
       reminder: t,
       throttledNow: s
     }) : null, (0, n.jsx)(N.A, {
       channel: i
-    }), (0, n.jsx)(y.A, {
+    }), (0, n.jsx)(A.A, {
       message: t.message,
       channel: i,
       className: k.iU,
-      compact: A.hH.getSetting(),
+      compact: b.hH.getSetting(),
       animateAvatar: false,
-      focusProps: D,
+      focusProps: M,
       trackAnnouncementViews: true
-    }, t.message.id), (0, n.jsx)(_.Ay, {
+    }, t.message.id), (0, n.jsx)(y.Ay, {
       className: k.S3,
-      children: (0, n.jsx)(Q, {
+      children: (0, n.jsx)(B, {
         savedMessage: t,
         jumpToMessage: o
       })
@@ -253,87 +253,87 @@ function G(e) {
       variant: "text-md/semibold",
       color: "text-default",
       children: null != t.saveData.dueAt ? F.intl.string(F.t["wuQm+j"]) : F.intl.string(F.t.o572Fe)
-    }), (0, n.jsx)(_.Ay, {
+    }), (0, n.jsx)(y.Ay, {
       className: k.S3,
-      children: (0, n.jsx)(_.qv, {
+      children: (0, n.jsx)(y.qv, {
         label: F.intl.string(F.t.SvXS1Z),
         icon: f.ucK,
         dangerous: true,
-        onClick: () => (0, x.x)(t.saveData)
+        onClick: () => (0, v.x)(t.saveData)
       }, "delete")
     })]
   })
 }
 
-function K(e) {
+function q(e) {
   let {
     savedMessageKey: t,
     closePopout: r,
     throttledNow: l
-  } = e, s = (0, p.bG)([I.A], () => I.A.getSavedMessage(t.channelId, t.messageId));
-  return null == s ? null : (0, n.jsx)(G, {
+  } = e, s = (0, p.bG)([x.A], () => x.A.getSavedMessage(t.channelId, t.messageId));
+  return null == s ? null : (0, n.jsx)(z, {
     savedMessage: s,
     closePopout: r,
     throttledNow: l
   })
 }
 
-function Q(e) {
+function B(e) {
   let {
     savedMessage: t,
     jumpToMessage: l
   } = e;
   return (o()(null != t.message, "Saved message must be cached for For Later action buttons"), null != t.saveData.dueAt) ? (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(_.qv, {
+    children: [(0, n.jsx)(y.qv, {
       label: F.intl.string(F.t.yjGtdJ),
       icon: f.A9s,
-      onClick: () => (0, x.Y)({
+      onClick: () => (0, v.Y)({
         channelId: t.saveData.channelId,
         messageId: t.saveData.messageId,
         dueAt: true
       })
-    }, "mark-complete"), (0, n.jsx)(_.qv, {
+    }, "mark-complete"), (0, n.jsx)(y.qv, {
       label: F.intl.string(F.t.vrbqs1),
       icon: f.R2l,
       onClick: e => (0, g.L3)(e, async () => {
         let {
           MessageReminderEditMenu: e
         } = await r.e("36419").then(r.bind(r, 49678));
-        return r => (0, n.jsx)(e, W(M({}, r), {
+        return r => (0, n.jsx)(e, W(D({}, r), {
           label: F.intl.string(F.t.roMu1H),
           message: t.message
         }))
       })
-    }, "edit-reminder"), (0, n.jsx)(_.$$, {}), (0, n.jsx)(_.qv, {
+    }, "edit-reminder"), (0, n.jsx)(y.$$, {}), (0, n.jsx)(y.qv, {
       label: F.intl.string(F.t["+TSRGD"]),
       icon: f.txs,
       onClick: e => l(e)
-    }, "jump-to-message"), (0, n.jsx)(_.qv, {
+    }, "jump-to-message"), (0, n.jsx)(y.qv, {
       label: F.intl.string(F.t.SvXS1Z),
       icon: f.cFy,
-      onClick: () => (0, x.x)(t.saveData)
+      onClick: () => (0, v.x)(t.saveData)
     }, "remove-reminder")]
   }) : (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(_.qv, {
+    children: [(0, n.jsx)(y.qv, {
       label: F.intl.string(F.t.mJ3P0N),
       icon: f.O4,
       onClick: e => (0, g.L3)(e, async () => {
         let {
           MessageReminderEditMenu: e
         } = await r.e("36419").then(r.bind(r, 49678));
-        return r => (0, n.jsx)(e, W(M({}, r), {
+        return r => (0, n.jsx)(e, W(D({}, r), {
           label: F.intl.string(F.t.mJ3P0N),
           message: t.message
         }))
       })
-    }, "create-reminder"), (0, n.jsx)(_.qv, {
+    }, "create-reminder"), (0, n.jsx)(y.qv, {
       label: F.intl.string(F.t["+TSRGD"]),
       icon: f.txs,
       onClick: e => l(e)
-    }, "jump-to-message"), (0, n.jsx)(_.qv, {
+    }, "jump-to-message"), (0, n.jsx)(y.qv, {
       label: F.intl.string(F.t.SvXS1Z),
       icon: f.cFy,
-      onClick: () => (0, x.x)(t.saveData)
+      onClick: () => (0, v.x)(t.saveData)
     }, "remove-bookmark")]
   })
 }

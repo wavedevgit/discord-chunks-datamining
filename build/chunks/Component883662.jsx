@@ -1,7 +1,7 @@
-/** Chunk was on 75473 **/
+/** Chunk was on 59024 **/
 /** chunk id: 883662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => y
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,49 +14,49 @@ var Chunk627968 = require("./627968.js"),
   Chunk418829 = require("./418829.jsx"),
   Chunk652215 = require("./652215.js");
 
-function f(e) {
+function y(e) {
   var t, n;
   let {
-    partialRoot: f,
+    partialRoot: y,
     target: p,
-    defaultTarget: _,
-    onPanelChange: y,
+    defaultTarget: f,
+    onPanelChange: g,
     sidebarFooter: m,
-    emptyState: g,
-    searchQuery: h,
+    emptyState: h,
+    searchQuery: j,
     onSearchChange: O
-  } = e, j = function(e, t) {
+  } = e, v = function(e, t) {
     if (null == e) return {};
-    var n, r, o, a = {};
+    var n, r, l, o = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (o = 0, n = Reflect.ownKeys(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-      return a
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+      return o
     }
-    if (a = function(e, t) {
+    if (o = function(e, t) {
         if (null == e) return {};
-        var n, r, o = {},
-          a = Object.getOwnPropertyNames(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-        return o
+        var n, r, l = {},
+          o = Object.getOwnPropertyNames(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-  }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [v, x] = o.useState(false), [S, C] = o.useState(1.4), P = o.useRef(null), w = (0, a.bG)([c.A], () => c.A.useReducedMotion), A = (0, a.bG)([s.A], () => s.A.isFocused());
-  return o.useEffect(() => {
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+    return o
+  }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [_, x] = l.useState(false), [S, P] = l.useState(1.4), w = l.useRef(null), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), A = (0, o.bG)([s.A], () => s.A.isFocused());
+  return l.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !w && A && (x(true), C(null != t ? t : 1.4), clearTimeout(P.current), P.current = setTimeout(() => x(false), null != n ? n : 1e3))
+      !C && A && (x(true), P(null != t ? t : 1.4), clearTimeout(w.current), w.current = setTimeout(() => x(false), null != n ? n : 1e3))
     };
     return u._.subscribe(b.jej.SHAKE_SETTINGS_MODAL, e), () => {
-      u._.unsubscribe(b.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(P.current)
+      u._.unsubscribe(b.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(w.current)
     }
-  }, [w, A]), (0, r.jsx)(i.bfh, {
-    isShaking: v,
+  }, [C, A]), (0, r.jsx)(i.bfh, {
+    isShaking: _,
     intensity: S,
-    children: (0, r.jsx)(l.N, (t = function(e) {
+    children: (0, r.jsx)(a.N, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -73,16 +73,16 @@ function f(e) {
         })
       }
       return e
-    }({}, j), n = n = {
+    }({}, v), n = n = {
       children: (0, r.jsx)(d.A, {
-        onClose: j.onClose,
-        partialRoot: f,
+        onClose: v.onClose,
+        partialRoot: y,
         target: p,
-        defaultTarget: _,
-        onPanelChange: y,
-        emptyState: g,
+        defaultTarget: f,
+        onPanelChange: g,
+        emptyState: h,
         sidebarFooter: m,
-        searchQuery: h,
+        searchQuery: j,
         onSearchChange: O
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

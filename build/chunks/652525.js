@@ -1,7 +1,7 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 652525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => s
+  t: () => l
 });
 let i = (0, require("./945810.js").mj)({
     name: "2025-10-collectibles-custom-cursors",
@@ -18,6 +18,6 @@ let i = (0, require("./945810.js").mj)({
       }
     }
   }),
-  s = e => i.getConfig({
+  l = e => i.getConfig({
     location: e
   }).enableCustomCursors

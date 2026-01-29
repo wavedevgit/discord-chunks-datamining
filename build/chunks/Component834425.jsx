@@ -1,4 +1,4 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 834425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -18,29 +18,29 @@ function o(e) {
     onAction: c
   } = e, u = function(e, t) {
     if (null == e) return {};
-    var n, r, i, l = {};
+    var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-      return l
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      return i
     }
-    if (l = function(e, t) {
+    if (i = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          l = Object.getOwnPropertyNames(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-        return i
+        var n, r, l = {},
+          i = Object.getOwnPropertyNames(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-    return l
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    return i
   }(e, ["activity", "user", "variant", "onAction"]);
   if ((null == t ? true : t.buttons) == null || t.buttons.length < 1) return null;
   async function d(e, t, n) {
     try {
-      let r = await (0, l.yb)(e, t);
+      let r = await (0, i.yb)(e, t);
       if (r.button_urls.length <= n) return;
-      let i = r.button_urls[n];
-      if ("string" != typeof i) return;
-      let o = s.A.safeParseWithQuery(i);
+      let l = r.button_urls[n];
+      if ("string" != typeof l) return;
+      let o = s.A.safeParseWithQuery(l);
       if (null == o || null == o.protocol || null == o.hostname) return;
       (0, a.h)({
         href: s.A.format(o),
@@ -49,7 +49,7 @@ function o(e) {
     } catch (e) {}
   }
   return (0, r.jsx)(r.Fragment, {
-    children: t.buttons.map((e, l) => (0, r.jsx)(i.Button, function(e) {
+    children: t.buttons.map((e, i) => (0, r.jsx)(l.Button, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -72,8 +72,8 @@ function o(e) {
       size: "sm",
       fullWidth: true,
       onClick: () => {
-        null == c || c(), d(t, n.id, l)
+        null == c || c(), d(t, n.id, i)
       }
-    }, u), "customButton-".concat(l)))
+    }, u), "customButton-".concat(i)))
   })
 }

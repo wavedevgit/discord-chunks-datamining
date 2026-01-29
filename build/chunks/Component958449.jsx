@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 958449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => o
@@ -15,10 +15,10 @@ function o(e) {
       streamActive: c,
       isSelfStream: u,
       centerButton: d,
-      onMouseEnter: p,
-      onMouseLeave: h,
-      renderNUXHighlight: f,
-      buttonRef: g
+      onMouseEnter: h,
+      onMouseLeave: p,
+      renderNUXHighlight: g,
+      buttonRef: f
     } = e,
     m = function(e, t) {
       if (null == e) return {};
@@ -42,9 +42,9 @@ function o(e) {
   let {
     Component: A,
     events: y,
-    play: _
+    play: O
   } = (0, i.c)(c ? "disable" : "enable");
-  return l.useEffect(() => () => _(), [c, _]), (0, r.jsx)(b, function(e) {
+  return l.useEffect(() => () => O(), [c, O]), (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -62,18 +62,18 @@ function o(e) {
     }
     return e
   }({
-    buttonRef: g,
+    buttonRef: f,
     isTrayButton: true,
     label: n,
     disabled: !o,
     iconComponent: A,
     isActive: c,
-    color: (f ? t = "premiumGradient" : c && (t = "green"), t),
+    color: (g ? t = "premiumGradient" : c && (t = "green"), t),
     onMouseEnter: e => {
-      null == p || p(e), y.onMouseEnter()
+      null == h || h(e), y.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == h || h(e), y.onMouseLeave()
+      null == p || p(e), y.onMouseLeave()
     }
   }, m))
 }

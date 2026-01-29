@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 744483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,18 +16,18 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function g(e) {
   let {
     channel: t,
     showCallOrActivityPanel: n
-  } = e, f = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? true : t.isDM())), g = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = f === p.YvQ.PROFILE && m;
+  } = e, g = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? true : t.isDM())), f = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = g === h.YvQ.PROFILE && m;
   return (0, r.jsx)(d.In, {
     disabled: !m || n,
-    tooltip: !m || n ? h.intl.string(h.t.YneDgF) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHq"]),
+    tooltip: !m || n ? p.intl.string(p.t.YneDgF) : b ? p.intl.string(p.t.niD64e) : p.intl.string(p.t["+FAsHq"]),
     icon: i.nRI,
     onClick: () => {
       (0, a.am)({
-        displayProfile: g,
+        displayProfile: f,
         isProfileOpen: !b
       }), s.A.toggleUserProfileSidebarSection()
     },
