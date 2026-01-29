@@ -17,10 +17,10 @@ function c(e) {
     sortedRoles: t,
     currentUser: n,
     canManageRoles: c
-  } = (0, i.cf)([r.A, o.default, a.A], () => ({
-    sortedRoles: null != e ? r.A.getSortedRoles(e.id) : [],
+  } = (0, i.cf)([a.A, o.default, r.A], () => ({
+    sortedRoles: null != e ? a.A.getSortedRoles(e.id) : [],
     currentUser: o.default.getCurrentUser(),
-    canManageRoles: null != e && a.A.can(d.xBc.MANAGE_ROLES, e)
+    canManageRoles: null != e && r.A.can(d.xBc.MANAGE_ROLES, e)
   }), [e]);
   return l.useMemo(() => {
     if (null == e || null == n || !c) return [];

@@ -12,11 +12,11 @@ function l(e) {
   let {
     rewardName: t
   } = e;
-  return (0, i.jsx)(r.Text, {
+  return (0, i.jsx)(a.Text, {
     variant: "text-xs/medium",
     className: s.tI,
-    children: a.intl.format(a.t.loyTil, {
-      rewardName: (e, n) => (0, i.jsx)(r.Text, {
+    children: r.intl.format(r.t.loyTil, {
+      rewardName: (e, n) => (0, i.jsx)(a.Text, {
         variant: "text-xs/medium",
         className: s.Ht,
         children: t

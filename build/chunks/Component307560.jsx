@@ -50,7 +50,7 @@ function O(e, t) {
   }), e
 }
 
-function x(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var r, n, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -67,13 +67,13 @@ function x(e, t) {
     for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let h = () => 80,
+let x = () => 80,
   j = e => {
     let {
       children: t,
       className: r,
       isSelected: l = false
-    } = e, i = x(e, ["children", "className", "isSelected"]);
+    } = e, i = h(e, ["children", "className", "isSelected"]);
     return (0, n.jsx)(o.DUT, O(b({
       className: s()(g.BP, r, {
         [g.wH]: l
@@ -91,13 +91,13 @@ let h = () => 80,
       section: s,
       isSelected: o,
       canUsePremiumCollectibles: c
-    } = e, d = x(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]), m = (0, p.V)(r.skuId), h = l.useRef(null), {
+    } = e, d = h(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]), m = (0, p.V)(r.skuId), x = l.useRef(null), {
       accessibilityLabel: A,
       thumbnailPreviewSrc: v,
       title: P
     } = null != (t = null == m ? true : m.config) ? t : {}, _ = l.useMemo(() => (0, a.Rc)(v), [v]);
     return (0, n.jsxs)(j, O(b({
-      innerRef: null != i ? i : h,
+      innerRef: null != i ? i : x,
       isSelected: o
     }, d), {
       children: [(0, n.jsx)("img", {
@@ -143,9 +143,9 @@ let h = () => 80,
         }),
         renderItem: (e, t, d, O) => {
           let {
-            section: x,
-            items: h
-          } = u[e], v = h[t];
+            section: h,
+            items: x
+          } = u[e], v = x[t];
           if (v === f.dP) return (0, n.jsxs)(j, {
             style: b({}, d),
             isSelected: !p,
@@ -179,7 +179,7 @@ let h = () => 80,
             let e = (null == l ? true : l.skuId) === v.skuId;
             return (0, n.jsx)(A, {
               style: b({}, d),
-              section: x,
+              section: h,
               profileEffect: v,
               innerRef: e ? i : true,
               isSelected: e,
@@ -206,7 +206,7 @@ let h = () => 80,
         },
         getSectionHeight: () => 16,
         getItemKey: (e, t) => u[e].items[t].skuId,
-        getItemHeight: h,
+        getItemHeight: x,
         removeEdgeItemGutters: true
       })
     })

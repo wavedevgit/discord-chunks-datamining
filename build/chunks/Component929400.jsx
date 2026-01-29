@@ -33,11 +33,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk331402 = require("./331402.jsx"),
   Chunk101058 = require("./101058.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk576622 = require("./576622.js"),
   Chunk773669 = require("./773669.js"),
   Chunk151252 = require("./151252.js"),
   Chunk652165 = require("./652165.jsx"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk954571 = require("./954571.js"),
   Chunk975571 = require("./975571.js"),
@@ -235,13 +235,13 @@ let eL = e => {
       rentalDuration: _
     } = e, {
       analyticsLocations: O
-    } = (0, b.Ay)(), y = (0, m.bG)([k.default], () => k.default.locale), N = H.Ay.canUseCollectibles(n), {
+    } = (0, b.Ay)(), y = (0, m.bG)([L.default], () => L.default.locale), N = H.Ay.canUseCollectibles(n), {
       previewingVariantIndex: P,
       handleEntering: E,
       handleLeaving: T
     } = g, S = (0, ej.q)(t, P), w = (0, Q.rb)(t, j);
     o()(null != w, "Selected product should not be null");
-    let D = (0, Y.h)(t),
+    let k = (0, Y.h)(t),
       {
         isPurchased: U,
         isPartiallyOwnedBundle: G,
@@ -271,7 +271,7 @@ let eL = e => {
       ew = (0, eO.X)(w),
       {
         enabled: ek
-      } = (0, L.Z)({
+      } = (0, B.Z)({
         location: "collectibles_shop_product_details_modal"
       }),
       eL = (0, K.r)(w, false, _),
@@ -323,7 +323,7 @@ let eL = e => {
             children: eL
           }), (0, r.jsx)(eU, {
             skuId: w.skuId
-          }), D.isPurchased || D.isPartiallyOwnedBundle ? (0, r.jsx)(et.c, {
+          }), k.isPurchased || k.isPartiallyOwnedBundle ? (0, r.jsx)(et.c, {
             className: eS.On,
             isPartiallyPurchased: G
           }) : ep ? (0, r.jsx)(x.Text, {
@@ -455,7 +455,7 @@ let eL = e => {
                         children: (0, r.jsx)(x.Button, {
                           variant: l ? "primary" : "secondary",
                           onClick: () => {
-                            (0, B.B4)({
+                            (0, D.B4)({
                               skuId: w.skuId,
                               onCheckoutSuccess: e => {
                                 var t, n;
@@ -516,7 +516,7 @@ let eL = e => {
                     children: (0, r.jsx)(x.Button, {
                       variant: l ? "primary" : "secondary",
                       onClick: () => {
-                        (0, B.B4)({
+                        (0, D.B4)({
                           skuId: w.skuId,
                           onCheckoutSuccess: e => {
                             var t;
@@ -653,7 +653,7 @@ let eL = e => {
       user: n,
       activeBundleSlide: l,
       isTransitioning: i
-    } = e, s = (0, m.bG)([v.A], () => v.A.useReducedMotion), o = H.Ay.canUsePremiumProfileCustomization(n), u = (0, m.cf)([D.A], () => D.A.getAllPending()), {
+    } = e, s = (0, m.bG)([v.A], () => v.A.useReducedMotion), o = H.Ay.canUsePremiumProfileCustomization(n), u = (0, m.cf)([w.A], () => w.A.getPendingChanges()), {
       pendingAvatar: d
     } = u, p = function(e, t) {
       if (null == e) return {};
@@ -797,7 +797,7 @@ let eL = e => {
     (0, el.Yr)(P.skuId);
     let C = (0, e_.U1)(s);
     l.useEffect(() => {
-      null != A && (0, w.A)(A.id, A.getAvatarURL(true, 80))
+      null != A && (0, k.A)(A.id, A.getAvatarURL(true, 80))
     }, [A]);
     let I = l.useMemo(() => (0, W.V6)(i.type, i.skuId), [i.type, i.skuId]);
     l.useEffect(() => {
@@ -809,17 +809,17 @@ let eL = e => {
         product_type: I
       }), P.items.forEach(F.RD)
     }, [p, R, P.skuId, P.items, I]);
-    let E = (0, B.o6)(),
+    let E = (0, D.o6)(),
       T = t === x.ip4.EXITING,
       S = (0, eA.$R)(i),
-      k = null == S ? true : S.amount,
-      L = null != k && ((null == S ? true : S.discountId) === eI.eR || (null == S ? true : S.discountId) === eI.Qz),
-      D = l.useMemo(() => (0, W.aw)(P) ? P.items.length : 0, [P]),
+      w = null == S ? true : S.amount,
+      L = null != w && ((null == S ? true : S.discountId) === eI.eR || (null == S ? true : S.discountId) === eI.Qz),
+      B = l.useMemo(() => (0, W.aw)(P) ? P.items.length : 0, [P]),
       {
         activeSlide: M,
         isTransitioning: H
       } = (0, ee.X)({
-        slideCount: D,
+        slideCount: B,
         intervalMs: 5e3
       });
     return null == A ? null : (0, r.jsx)(b.f5, {
@@ -894,7 +894,7 @@ let eL = e => {
                 variant: "text-sm/semibold",
                 className: eS.Q2,
                 children: eT.intl.format(eT.t["78ph4b"], {
-                  discountOfferAmount: k
+                  discountOfferAmount: w
                 })
               }), (null == S ? true : S.expiresAt) != null && (0, r.jsx)(er.e, {
                 endDate: S.expiresAt

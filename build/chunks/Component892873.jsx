@@ -127,14 +127,14 @@ function E(e) {
     }), (0, n.jsxs)(s.$mQ, {
       "data-migration-pending": true,
       className: P.jE,
-      children: [(0, n.jsx)(h.A, {
+      children: [(0, n.jsx)(x.A, {
         user: t,
         guild: r,
         pendingProfileEffect: E,
         selectedProfileEffectRef: T,
         onSelect: R,
         onOpenShop: U
-      }), (0, n.jsx)(x.A, {
+      }), (0, n.jsx)(h.A, {
         user: t,
         pendingProfileEffectRecord: w,
         product: I,
@@ -168,19 +168,19 @@ function C(e) {
     isFetching: f,
     categories: m,
     purchases: O
-  } = (0, p.Ay)(), x = (0, i.bG)([y.default], () => y.default.getCurrentUser()), {
-    analyticsLocations: h
+  } = (0, p.Ay)(), h = (0, i.bG)([y.default], () => y.default.getCurrentUser()), {
+    analyticsLocations: x
   } = (0, c.Ay)(r, o.A.EDIT_PROFILE_EFFECT_MODAL), A = (0, g.N2)({
-    user: x,
+    user: h,
     guildId: null == u ? true : u.id
   });
   return l.useEffect(() => {
     b.default.track(j.HAw.OPEN_MODAL, {
       type: j.JJy.PROFILE_EFFECT_CUSTOMIZATION,
-      location_stack: h
+      location_stack: x
     })
-  }, [h]), (0, n.jsx)(c.f5, {
-    value: h,
+  }, [x]), (0, n.jsx)(c.f5, {
+    value: x,
     children: (0, n.jsx)(s.EOs, {
       transitionState: t,
       className: P.yl,
@@ -191,14 +191,14 @@ function C(e) {
         className: P.u1,
         type: s.y$y.Type.SPINNING_CIRCLE
       }) : (0, n.jsx)(E, {
-        user: x,
+        user: h,
         guild: u,
         categories: m,
         purchases: O,
         initialSelectedProfileEffect: a,
         currentSavedEffect: A,
         onClose: d,
-        analyticsLocations: h
+        analyticsLocations: x
       })
     })
   })

@@ -20,8 +20,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk407217 = require("./407217.jsx"),
   Chunk101058 = require("./101058.js"),
   Chunk207803 = require("./207803.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk193658 = require("./193658.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk954571 = require("./954571.js"),
   Chunk927578 = require("./927578.js"),
   Chunk884546 = require("./884546.jsx"),
@@ -49,10 +49,10 @@ function M(e) {
     tryItOutThemeColors: F,
     tryItOutAvatar: Y,
     tryItOutBanner: W
-  } = (0, l.cf)([x.A], () => {
+  } = (0, l.cf)([E.A], () => {
     var e, t;
-    let n = x.A.getAllPending(),
-      r = x.A.getErrors();
+    let n = E.A.getPendingChanges(),
+      r = E.A.getErrors();
     return e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -70,7 +70,7 @@ function M(e) {
         })
       }
       return e
-    }({}, n, x.A.getAllTryItOut()), t = t = {
+    }({}, n, E.A.getTryItOutChanges()), t = t = {
       errors: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -86,7 +86,7 @@ function M(e) {
     preset: K,
     onShuffle: z
   } = (0, p.A)(), Z = i.useRef(null);
-  (0, E.A)(Z, D._F.TRY_IT_OUT);
+  (0, x.A)(Z, D._F.TRY_IT_OUT);
   let {
     analyticsLocations: q,
     newestAnalyticsLocation: X,

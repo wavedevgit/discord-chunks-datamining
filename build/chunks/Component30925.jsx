@@ -20,10 +20,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk919395 = require("./919395.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk101058 = require("./101058.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk950191 = require("./950191.js"),
   Chunk686189 = require("./686189.js"),
   Chunk946356 = require("./946356.jsx"),
-  Chunk752319 = require("./752319.js"),
   Chunk954571 = require("./954571.js"),
   Chunk975571 = require("./975571.js"),
   Chunk652215 = require("./652215.js"),
@@ -73,13 +73,13 @@ function I(e) {
     selectedEffectId: k,
     selectedColors: R,
     onClose: G
-  } = e, z = (0, c.Ay)(), M = (0, i.Mwr)(z), [H, U] = (0, r.useState)(M), Y = (0, j.Ay)(t.id, null), {
+  } = e, z = (0, c.Ay)(), M = (0, i.Mwr)(z), [H, U] = (0, r.useState)(M), Y = (0, v.Ay)(t.id, null), {
     bannerSrc: B
-  } = (0, v.A)({
+  } = (0, N.A)({
     displayProfile: Y,
     size: 413,
     canAnimate: false
-  }), J = (0, o.cf)([A.A, d.A], () => null == l ? A.A.getAllPending() : d.A.getAllPending()), F = (0, h.V7)({
+  }), J = (0, o.cf)([j.A, d.A], () => null == l ? j.A.getPendingChanges() : d.A.getAllPending()), F = (0, h.V7)({
     userId: t.id,
     image: J.pendingAvatar
   }), {
@@ -89,10 +89,10 @@ function I(e) {
   } = (0, x.rv)(t, null == l ? true : l.id), X = null != K ? (0, g.WK)(K) : true;
   H && !M ? z = y.NJ8.DARK : !H && M && (z = y.NJ8.LIGHT);
   let Q = (0, r.useCallback)(() => {
-      S.default.track(y.HAw.DISPLAY_NAME_STYLES_CLOSED), G()
+      C.default.track(y.HAw.DISPLAY_NAME_STYLES_CLOSED), G()
     }, [G]),
     Z = (0, r.useCallback)(e => {
-      U(e === y.NJ8.DARK), S.default.track(y.HAw.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+      U(e === y.NJ8.DARK), C.default.track(y.HAw.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === y.NJ8.DARK
       })
     }, []),
@@ -115,7 +115,7 @@ function I(e) {
         onClick: Q,
         innerClassName: P.b
       })
-    }), null != B && (0, n.jsx)(N.A, {
+    }), null != B && (0, n.jsx)(A.A, {
       user: t,
       displayProfile: Y,
       themeType: O.d.MODAL_V2,
@@ -177,7 +177,7 @@ function I(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: T.intl.format(E.default.prQba8, {
-          helpArticleLink: C.A.getArticleURL(y.MVz.DISPLAY_NAME_STYLES)
+          helpArticleLink: S.A.getArticleURL(y.MVz.DISPLAY_NAME_STYLES)
         })
       }), (0, n.jsx)(L, {
         darkPreview: H,

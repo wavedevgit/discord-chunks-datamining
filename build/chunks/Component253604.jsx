@@ -8,7 +8,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk101058 = require("./101058.js"),
-  Chunk752319 = require("./752319.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk83118 = require("./83118.js");
 
@@ -51,7 +51,7 @@ function u(e) {
       })
     }
     return e
-  })({}, o.A.getAllPending(), o.A.getAllTryItOut())), S = (0, a.V7)({
+  })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), S = (0, a.V7)({
     userId: u.id,
     image: null != y ? y : g
   });

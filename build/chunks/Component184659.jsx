@@ -7,7 +7,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk101058 = require("./101058.js"),
-  Chunk752319 = require("./752319.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk927578 = require("./927578.js"),
   Chunk132198 = require("./132198.jsx"),
   Chunk266371 = require("./266371.js");
@@ -15,7 +15,7 @@ let d = e => {
   var t, n;
   let {
     user: d
-  } = e, m = o.Ay.canUsePremiumProfileCustomization(d), p = (0, l.cf)([s.A], () => s.A.getAllPending()), {
+  } = e, m = o.Ay.canUsePremiumProfileCustomization(d), p = (0, l.cf)([s.A], () => s.A.getPendingChanges()), {
     pendingAvatar: f
   } = p, x = function(e, t) {
     if (null == e) return {};

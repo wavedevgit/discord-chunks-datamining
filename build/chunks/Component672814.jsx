@@ -31,18 +31,18 @@ function m(e, t, n) {
 let S = 48;
 class x extends Chunk64700.Component {
   shouldComponentUpdate(e, t) {
-    return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
+    return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel || this.props.shouldRenameButtonCTA !== e.shouldRenameButtonCTA
   }
   renderUserOrChannel() {
     let e, t, n, {
       user: i,
-      channel: r
+      channel: a
     } = this.props;
-    if (null != i) t = i.getAvatarURL(null == r ? true : r.guild_id, 32), n = v.Ay.getName(i);
-    else if (null != r && (t = (0, a.Y)(r), n = (0, o.m1)(r, g.default, c.A), null == t && null != r.guild_id)) {
-      let n = u.A.getGuild(r.guild_id);
+    if (null != i) t = i.getAvatarURL(null == a ? true : a.guild_id, 32), n = v.Ay.getName(i);
+    else if (null != a && (t = (0, r.Y)(a), n = (0, o.m1)(a, g.default, c.A), null == t && null != a.guild_id)) {
+      let n = u.A.getGuild(a.guild_id);
       null != n && (null != n.icon ? t = h.Ay.getGuildIconURL({
-        id: r.guild_id,
+        id: a.guild_id,
         icon: n.icon,
         size: 32
       }) : e = (0, p.oN)(n.name))
@@ -65,11 +65,12 @@ class x extends Chunk64700.Component {
   render() {
     let e, t, {
         user: n,
-        channel: i
+        channel: i,
+        shouldRenameButtonCTA: a
       } = this.props,
       {
         sending: r,
-        invited: a
+        invited: u
       } = this.state;
     if (null != n) {
       let l = v.Ay.getName(n),
@@ -79,13 +80,13 @@ class x extends Chunk64700.Component {
         });
       e = null != i ? i : l, t = s
     }
-    let u = (0, l.jsx)(s.Button, {
+    let d = (0, l.jsx)(s.Button, {
       variant: "secondary",
-      text: a ? A.intl.string(A.t.dVT149) : A.intl.string(A.t.jYnGPG),
+      text: u ? A.intl.string(A.t.dVT149) : a ? A.intl.string(A.t.AWLVgR) : A.intl.string(A.t.jYnGPG),
       size: "sm",
       loading: r,
       onClick: this.handleClickInvite,
-      disabled: a
+      disabled: u
     });
     return (0, l.jsxs)("div", {
       className: I.Og,
@@ -107,7 +108,7 @@ class x extends Chunk64700.Component {
             children: t
           })]
         })]
-      }), u]
+      }), d]
     })
   }
   constructor(...e) {
@@ -141,8 +142,8 @@ class x extends Chunk64700.Component {
       } = this.props;
       null != n && (null != t ? (this.setState({
         sending: true
-      }), r.A.enqueue({
-        type: r.F.GROUP_DM,
+      }), a.A.enqueue({
+        type: a.F.GROUP_DM,
         channel: t,
         inviteKey: n,
         location: l,
@@ -154,8 +155,8 @@ class x extends Chunk64700.Component {
         })
       })) : null != e && (this.setState({
         sending: true
-      }), r.A.enqueue({
-        type: r.F.USER,
+      }), a.A.enqueue({
+        type: a.F.USER,
         user: e,
         inviteKey: n,
         location: l,

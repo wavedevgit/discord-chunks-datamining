@@ -17,11 +17,11 @@ var Chunk735438 = require("./735438.js"),
   Chunk287070 = require("./287070.jsx"),
   Chunk101058 = require("./101058.js"),
   Chunk207803 = require("./207803.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk950191 = require("./950191.js"),
   Chunk814390 = require("./814390.js"),
   Chunk773669 = require("./773669.js"),
   Chunk606532 = require("./606532.jsx"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk405269 = require("./405269.js"),
   Chunk927578 = require("./927578.js"),
@@ -51,7 +51,7 @@ let C = e => {
       pendingProfileEffectRecord: t,
       product: r,
       purchase: u
-    } = e, d = (0, i.bG)([j.default], () => j.default.getCurrentUser()), f = (0, i.bG)([o.A], () => o.A.getProduct(null == t ? true : t.skuId)), m = (0, i.bG)([O.default], () => O.default.locale), g = v.Ay.canUseCollectibles(d), y = (0, c.gA)(u), b = (0, c.G0)(r), x = !g && y, h = (null == u ? true : u.expiresAt) != null ? (0, A.Tf)(Date.now(), u.expiresAt) : null, E = (0, a.Tk)(u), C = (0, a.o7)(f), I = (0, p.b)(!b || g), S = w(x, b, g, I), T = null == u || x;
+    } = e, d = (0, i.bG)([j.default], () => j.default.getCurrentUser()), f = (0, i.bG)([o.A], () => o.A.getProduct(null == t ? true : t.skuId)), m = (0, i.bG)([h.default], () => h.default.locale), g = v.Ay.canUseCollectibles(d), y = (0, c.gA)(u), b = (0, c.G0)(r), O = !g && y, x = (null == u ? true : u.expiresAt) != null ? (0, A.Tf)(Date.now(), u.expiresAt) : null, E = (0, a.Tk)(u), C = (0, a.o7)(f), I = (0, p.b)(!b || g), S = w(O, b, g, I), T = null == u || O;
     return null != t ? (0, n.jsx)("div", {
       className: T ? _.Mf : _.zf,
       children: (0, n.jsxs)("div", {
@@ -65,11 +65,11 @@ let C = e => {
           variant: "text-sm/normal",
           children: S
         }) : (0, n.jsxs)(n.Fragment, {
-          children: [null != h && (0, n.jsx)(s.Text, {
+          children: [null != x && (0, n.jsx)(s.Text, {
             variant: "text-xxs/normal",
             color: "text-muted",
             children: P.intl.format(P.t.Io7ozn, {
-              days: h.days.toString()
+              days: x.days.toString()
             })
           }), (0, n.jsxs)(s.Text, {
             variant: "text-xxs/normal",
@@ -110,7 +110,7 @@ let C = e => {
       guild: a
     } = e, {
       pendingGlobalName: p,
-      pendingNickname: O,
+      pendingNickname: h,
       pendingPronouns: j,
       pendingBio: A,
       pendingBanner: P,
@@ -118,17 +118,17 @@ let C = e => {
       pendingAvatarDecoration: I,
       pendingThemeColors: S,
       pendingAccentColor: T
-    } = (0, i.cf)([u.A, h.A], () => E({
+    } = (0, i.cf)([u.A, y.A], () => E({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != a ? u.A.getAllPending() : h.A.getAllPending())), k = v.Ay.isPremium(l), N = v.Ay.canUsePremiumProfileCustomization(l), R = (0, y.Ay)(l.id), U = !!(null == R ? true : R.getPreviewBio(A)), D = {
+    }, null != a ? u.A.getAllPending() : y.A.getPendingChanges())), k = v.Ay.isPremium(l), N = v.Ay.canUsePremiumProfileCustomization(l), R = (0, b.Ay)(l.id), U = !!(null == R ? true : R.getPreviewBio(A)), D = {
       user: l,
       guild: a,
       pendingGlobalName: p,
-      pendingNickname: O,
+      pendingNickname: h,
       pendingPronouns: j,
-      pendingBio: (0, b.A)() && null != A ? d.Ay.parse(true, A).content : A,
+      pendingBio: (0, O.A)() && null != A ? d.Ay.parse(true, A).content : A,
       pendingBanner: P,
       useLargeBanner: true,
       pendingAvatar: (0, m.V7)({

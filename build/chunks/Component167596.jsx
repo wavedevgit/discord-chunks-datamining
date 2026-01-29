@@ -30,15 +30,15 @@ function h(e) {
     onSetInviteFlags: f,
     isRoleAssignmentEnabled: E,
     assignableRoles: _,
-    selectedRoleIds: b,
-    onToggleRole: C
+    selectedRoleIds: C,
+    onToggleRole: b
   } = e, T = o.Ay.getMaxAgeOptionByValue(p), N = g.find(e => e.value === v), M = i.useMemo(() => _.map(e => ({
     id: e.id,
     value: e.id,
     label: e.name,
     leading: () => {
       var t;
-      return (0, l.jsx)(a.WYI, {
+      return (0, l.jsx)(r.WYI, {
         color: null != (t = e.colorString) ? t : u.TpD,
         colors: e.colorStrings,
         background: false,
@@ -46,15 +46,15 @@ function h(e) {
       })
     }
   })), [_]), O = i.useCallback(e => {
-    let t = Array.from(b),
+    let t = Array.from(C),
       n = null != e ? e : [],
       l = n.find(e => !t.includes(e)),
       i = t.find(e => !n.includes(e));
-    null != l ? C(l) : null != i && C(i)
-  }, [b, C]);
+    null != l ? b(l) : null != i && b(i)
+  }, [C, b]);
   return (0, l.jsxs)("div", {
     className: c.z1,
-    children: [(0, l.jsx)(a.ZiE, {
+    children: [(0, l.jsx)(r.ZiE, {
       label: d.intl.string(d.t["60qw2x"]),
       options: h,
       formatOption: e => {
@@ -71,7 +71,7 @@ function h(e) {
       value: null != (t = null == T ? true : T.value) ? t : h[0].value,
       onSelectionChange: m,
       selectionMode: "single"
-    }), (0, l.jsx)(a.ZiE, {
+    }), (0, l.jsx)(r.ZiE, {
       label: d.intl.string(d.t.jDqWHW),
       options: g,
       formatOption: e => {
@@ -88,22 +88,22 @@ function h(e) {
       value: null == N ? true : N.value,
       onSelectionChange: S,
       selectionMode: "single"
-    }), E && _.length > 0 && (0, l.jsx)(a.ZiE, {
+    }), E && _.length > 0 && (0, l.jsx)(r.ZiE, {
       label: d.intl.string(d.t.rPYJxL),
       placeholder: d.intl.string(d.t["/djIh7"]),
       options: M,
-      value: Array.from(b),
+      value: Array.from(C),
       onSelectionChange: O,
       selectionMode: "multiple",
       closeOnSelect: false
-    }), !n && (0, l.jsx)(a.dOG, {
+    }), !n && (0, l.jsx)(r.dOG, {
       checked: A,
       onChange: e => I(e),
       description: d.intl.string(d.t.UN5IRX),
       label: d.intl.string(d.t["wE+9dr"])
-    }), x && (0, l.jsx)(a.dOG, {
-      checked: (0, r.Lt)(y, s.Q.IS_GUEST_INVITE),
-      onChange: e => f((0, r.lA)(y, s.Q.IS_GUEST_INVITE, e)),
+    }), x && (0, l.jsx)(r.dOG, {
+      checked: (0, a.Lt)(y, s.Q.IS_GUEST_INVITE),
+      onChange: e => f((0, a.lA)(y, s.Q.IS_GUEST_INVITE, e)),
       description: d.intl.string(d.t["/FeTK6"]),
       label: d.intl.string(d.t.siexRS)
     })]

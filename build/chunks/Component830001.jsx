@@ -16,8 +16,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk745109 = require("./745109.jsx"),
   Chunk419954 = require("./419954.js"),
   Chunk933297 = require("./933297.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk854627 = require("./854627.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk780964 = require("./780964.js"),
   Chunk358776 = require("./358776.js"),
@@ -31,7 +31,7 @@ let P = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
     usePredicate: () => !(0, N.dk)("LegacyProfilePanel"),
     useTitle: () => p.intl.string(p.t["vi7f+q"]),
     notice: {
-      stores: [Chunk833336.A, Chunk752319.A],
+      stores: [Chunk833336.A, Chunk836602.A],
       element: Chunk103738.A
     },
     initialize: () => () => u.h.wait(() => {
@@ -44,7 +44,7 @@ let P = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
     usePredicate: () => (0, N.dk)("ProfilePanel"),
     useTitle: () => p.intl.string(p.t["vi7f+q"]),
     notice: {
-      stores: [Chunk833336.A, Chunk752319.A],
+      stores: [Chunk833336.A, Chunk836602.A],
       element: Chunk103738.A
     },
     initialize: () => () => u.h.wait(() => {
@@ -62,7 +62,7 @@ let P = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
         {
           avatarSrc: i,
           avatarDecorationSrc: u
-        } = (0, _.A)({
+        } = (0, c.A)({
           userId: null == e ? true : e.id,
           size: r._3J.SIZE_48
         });

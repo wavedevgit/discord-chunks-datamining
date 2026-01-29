@@ -19,7 +19,7 @@ function g(e) {
     error: n,
     onClose: g
   } = e, h = t.id, p = i.useCallback(() => {
-    g(), a.A.open(h, u.BEX.INVITES)
+    g(), r.A.open(h, u.BEX.INVITES)
   }, [h, g]), v = i.useCallback(e => (0, l.jsx)(s.DUT, {
     className: c.P5,
     onClick: p,
@@ -38,7 +38,7 @@ function g(e) {
       tag: "span",
       children: e
     })
-  }), []), I = n instanceof r.A ? n.code !== u.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(u.xBc.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY1"], {
+  }), []), I = n instanceof a.A ? n.code !== u.t02.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.A.can(u.xBc.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY1"], {
     inviteListHook: v,
     inviteHelpHook: A
   }) : d.intl.string(d.t["/FxH6G"]) : "message" in n ? n.message : d.intl.string(d.t.eAn6z2);

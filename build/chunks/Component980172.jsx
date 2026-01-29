@@ -28,13 +28,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk207560 = require("./207560.js"),
   Chunk195043 = require("./195043.jsx"),
   Chunk790114 = require("./790114.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk262 = require("./262.js"),
   Chunk950191 = require("./950191.js"),
   Chunk854627 = require("./854627.js"),
   Chunk542535 = require("./542535.jsx"),
   Chunk915614 = require("./915614.jsx"),
   Chunk662758 = require("./662758.jsx"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk957565 = require("./957565.js"),
   Chunk427262 = require("./427262.js"),
@@ -376,7 +376,7 @@ function ei(e) {
           text: Z.intl.string(Z.t.N86XcP),
           "aria-label": Z.intl.string(Z.t.Rpn4A3),
           onClick: function() {
-            (0, p.qfG)(e => (0, r.jsx)(D.default, J(X({}, e), {
+            (0, p.qfG)(e => (0, r.jsx)(w.default, J(X({}, e), {
               title: Z.intl.string(Z.t["3CTiKi"]),
               children: l.hasFlag(W.nhx.MFA_SMS) ? Z.intl.string(Z.t.jrhJyo) : true,
               actionText: Z.intl.string(Z.t.N86XcP),
@@ -489,15 +489,15 @@ function ea() {
       let e = L.default.getCurrentUser();
       return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
-    n = (0, I.Ay)(t.id),
-    i = (0, S.A)(n),
+    n = (0, N.Ay)(t.id),
+    i = (0, I.A)(n),
     l = H.jP.useSetting(),
-    s = (0, c.bG)([w.A], () => w.A.getErrors()),
+    s = (0, c.bG)([S.A], () => S.A.getErrors()),
     a = null == s || null == (e = s.avatar) ? true : e[0],
     {
       avatarSrc: d,
       avatarDecorationSrc: u
-    } = (0, N.A)({
+    } = (0, P.A)({
       userId: null == t ? true : t.id,
       size: p._3J.SIZE_80
     }),
@@ -506,7 +506,7 @@ function ea() {
     f = (0, k.j)("UserSettingsAccountProfileCard");
   return (0, r.jsxs)("div", {
     className: q.DM,
-    children: [(0, r.jsx)(R.o, {
+    children: [(0, r.jsx)(D.o, {
       user: t,
       displayProfile: n,
       avatarSize: p._3J.SIZE_80,
@@ -535,7 +535,7 @@ function ea() {
           }), (0, r.jsx)(el, {
             user: t
           })]
-        }), (0, r.jsx)(P.A, {
+        }), (0, r.jsx)(R.A, {
           badges: i,
           className: q.C_,
           badgeClassName: q.qS

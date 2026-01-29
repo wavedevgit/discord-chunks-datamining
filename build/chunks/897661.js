@@ -5,19 +5,19 @@ require.d(exports, {
 });
 var Chunk311907 = require("./311907.js"),
   Chunk833336 = require("./833336.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk696451 = require("./696451.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk427262 = require("./427262.js");
 
 function i(e, t) {
   var l, i;
   let c = null != (l = o.Ay.useName(e)) ? l : "",
-    d = null != (i = (0, n.bG)([r.A, a.A, s.Ay], () => {
+    d = null != (i = (0, n.bG)([r.A, s.A, a.Ay], () => {
       if (null != t) {
         var l;
-        return null != (l = r.A.getPendingNickname()) ? l : s.Ay.getNick(t, null == e ? true : e.id)
+        return null != (l = r.A.getPendingNickname()) ? l : a.Ay.getNick(t, null == e ? true : e.id)
       }
-      return a.A.getPendingGlobalName()
+      return s.A.getPendingChanges().pendingGlobalName
     }, [t, e])) ? i : c;
   return null != d ? d : c
 }

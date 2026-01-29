@@ -29,20 +29,20 @@ function N(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: N
-  } = e, y = (0, o.Ay)(), E = (0, s.Mwr)(y) ? p.NJ.DARK : p.NJ.LIGHT, L = (0, f.wr)(t), b = (0, m.go)(), w = (0, _.E0)(t.config), O = r.useMemo(() => {
+  } = e, y = (0, o.Ay)(), E = (0, s.Mwr)(y) ? p.NJ.DARK : p.NJ.LIGHT, L = (0, f.wr)(t), b = (0, m.go)(), w = (0, _.E0)(t.config), O = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
-    return null != n ? n : (0, _.pv)(t.config) !== a.Z.GAMEPLAY || t.config.features.includes(j.Li.NON_GAMING_PLAY_QUEST) || (0, _.ui)(t) ? C.intl.string(C.t.y8Xf3k) : C.intl.string(C.t["wirwN+"])
+    return null != n ? n : (0, _.pv)(t.config) !== r.Z.GAMEPLAY || t.config.features.includes(j.Li.NON_GAMING_PLAY_QUEST) || (0, _.ui)(t) ? C.intl.string(C.t.y8Xf3k) : C.intl.string(C.t["wirwN+"])
   }, [t]), {
     isLoading: D
   } = (0, g.Gk)();
-  r.useEffect(() => {
+  a.useEffect(() => {
     D || N()
   }, [D, N]);
   let R = (0, h.Lk)({
     isShareable: w,
     questId: t.id,
-    trackingCtx: r.useMemo(() => ({
+    trackingCtx: a.useMemo(() => ({
       content: d.uF.REWARD_MODAL,
       ctaContent: u.Cy.REWARD_MODAL_COPY_LINK,
       impressionId: b,

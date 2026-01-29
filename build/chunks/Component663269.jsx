@@ -1,17 +1,17 @@
 /** Chunk was on 43600 **/
 /** chunk id: 663269, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => a
+  h: () => r
 }), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk189213 = require("./189213.jsx"),
   Chunk167596 = require("./167596.jsx"),
   Chunk985018 = require("./985018.jsx");
-let a = e => {
+let r = e => {
   let {
     handleDone: t,
     modalState: n,
-    shouldHideTemporaryInviteToggle: a,
+    shouldHideTemporaryInviteToggle: r,
     onGenerateNewLink: o,
     onToggleTemporary: u,
     onSelectMaxAge: d,
@@ -34,20 +34,20 @@ let a = e => {
   return (0, l.jsx)(i.Modal, {
     transitionState: v,
     onClose: p,
-    title: r.intl.string(r.t.Atdlyu),
+    title: a.intl.string(a.t.Atdlyu),
     actions: [{
       variant: "secondary",
-      text: r.intl.string(r.t["ETE/oC"]),
+      text: a.intl.string(a.t["ETE/oC"]),
       onClick: t
     }, {
       variant: "primary",
-      text: r.intl.string(r.t.pz1lRG),
+      text: a.intl.string(a.t.pz1lRG),
       onClick: () => {
         o(), t()
       }
     }],
     children: (0, l.jsx)(s.A, {
-      shouldHideTemporaryInviteToggle: a,
+      shouldHideTemporaryInviteToggle: r,
       maxAgeOptions: S,
       maxAge: x,
       maxUses: y,

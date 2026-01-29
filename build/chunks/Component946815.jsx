@@ -10,9 +10,9 @@ var Chunk627968 = require("./627968.js"),
   Chunk830215 = require("./830215.js"),
   Chunk631670 = require("./631670.js"),
   Chunk146634 = require("./146634.jsx"),
+  Chunk836602 = require("./836602.js"),
   Chunk592074 = require("./592074.js"),
   Chunk870570 = require("./870570.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk446868 = require("./446868.js"),
   Chunk652215 = require("./652215.js"),
@@ -21,11 +21,17 @@ let f = t => {
   let {
     transitionState: e,
     onClose: s
-  } = t, f = (0, l.bG)([g.A], () => g.A.getErrors()), y = (0, l.bG)([g.A], () => g.A.getFormState()), v = (0, l.bG)([p.default], () => p.default.getCurrentUser()), E = (0, l.bG)([u.A], () => u.A.getAction()), b = !c.A.isEmailReverification(E), [k, A] = i.useState(true), w = y === m.XlH.SUBMITTING;
+  } = t, {
+    formState: f,
+    errors: y
+  } = (0, l.cf)([d.A], () => ({
+    formState: d.A.getFormState(),
+    errors: d.A.getErrors()
+  })), v = (0, l.bG)([p.default], () => p.default.getCurrentUser()), E = (0, l.bG)([g.A], () => g.A.getAction()), k = !c.A.isEmailReverification(E), [b, A] = i.useState(true), w = f === m.XlH.SUBMITTING;
 
   function P(t) {
     var e, s;
-    return null != (e = null == f || null == (s = f[t]) ? true : s[0]) ? e : ""
+    return null != (e = null == y || null == (s = y[t]) ? true : s[0]) ? e : ""
   }
   let R = P("email"),
     S = P("password");
@@ -35,8 +41,8 @@ let f = t => {
     emailError: R,
     passwordError: S,
     submitting: w,
-    canResend: k && !w && (null == v ? true : v.email) != null && 0 === R.length && 0 === S.length,
-    canChange: b,
+    canResend: b && !w && (null == v ? true : v.email) != null && 0 === R.length && 0 === S.length,
+    canChange: k,
     onChangeEmailClick: function() {
       A(false)
     },
@@ -47,7 +53,7 @@ let f = t => {
       }).then(t => {
         if (!(null == t ? true : t.ok)) {
           var e;
-          (null == t || null == (e = t.body) ? true : e.username) != null ? (0, d.E)() : 0 === S.length && 0 === R.length && (0, a.showToast)((0, a.createToast)(C.intl.string(C.t.R0RpRX), a.ToastType.FAILURE))
+          (null == t || null == (e = t.body) ? true : e.username) != null ? (0, u.E)() : 0 === S.length && 0 === R.length && (0, a.showToast)((0, a.createToast)(C.intl.string(C.t.R0RpRX), a.ToastType.FAILURE))
         }
       }), A(true)
     },

@@ -14,8 +14,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk821701 = require("./821701.js"),
   Chunk645178 = require("./645178.js"),
   Chunk833336 = require("./833336.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk773669 = require("./773669.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk405269 = require("./405269.js"),
   Chunk927578 = require("./927578.js"),
   Chunk359701 = require("./359701.jsx"),
@@ -27,7 +27,7 @@ let b = e => {
       purchase: t,
       product: n,
       user: i
-    } = e, d = (0, o.bG)([x.default], () => x.default.locale), m = (0, p.Tk)(t), g = (0, p.o7)(n), _ = h.Ay.canUseCollectibles(i), y = (0, u.gA)(t), b = (0, u.G0)(n), f = !_ && y, [O, C] = r.useState(null);
+    } = e, d = (0, o.bG)([g.default], () => g.default.locale), m = (0, p.Tk)(t), x = (0, p.o7)(n), _ = h.Ay.canUseCollectibles(i), y = (0, u.gA)(t), b = (0, u.G0)(n), f = !_ && y, [O, C] = r.useState(null);
     r.useEffect(() => {
       C((null == t ? true : t.expiresAt) != null ? (0, A.Tf)(Date.now(), t.expiresAt) : null)
     }, [null == t ? true : t.expiresAt]);
@@ -39,7 +39,7 @@ let b = e => {
       children: [(0, l.jsx)(c.Text, {
         color: "text-strong",
         variant: "text-sm/semibold",
-        children: (0, a.isEmpty)(m) ? g : m
+        children: (0, a.isEmpty)(m) ? x : m
       }), E ? (0, l.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
@@ -84,10 +84,10 @@ let b = e => {
       user: r,
       guildId: i,
       nameplate: a
-    } = e, c = (0, o.cf)([g.A, m.A], () => null == i ? g.A.getAllPending() : m.A.getAllPending()), {
+    } = e, c = (0, o.cf)([x.A, m.A], () => null == i ? x.A.getPendingChanges() : m.A.getAllPending()), {
       product: p,
-      purchase: x
-    } = (0, d.A)(null == a ? true : a.skuId), A = h.Ay.canUseCollectibles(r), f = (0, u.gA)(x), O = null == x || !A && f;
+      purchase: g
+    } = (0, d.A)(null == a ? true : a.skuId), A = h.Ay.canUseCollectibles(r), f = (0, u.gA)(g), O = null == g || !A && f;
     return (0, l.jsxs)("div", {
       className: s()(v.i1, {
         [v.Zj]: null != a && O
@@ -145,7 +145,7 @@ let b = e => {
           })]
         })
       }), null != a && (0, l.jsx)(b, {
-        purchase: x,
+        purchase: g,
         product: p,
         user: r
       })]

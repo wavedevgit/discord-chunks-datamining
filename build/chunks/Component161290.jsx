@@ -27,9 +27,9 @@ var Chunk284009 = require("./284009.js"),
   Chunk546849 = require("./546849.jsx"),
   Chunk101058 = require("./101058.js"),
   Chunk207803 = require("./207803.js"),
+  Chunk836602 = require("./836602.js"),
   Chunk622543 = require("./622543.js"),
   Chunk950191 = require("./950191.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk927578 = require("./927578.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -41,7 +41,7 @@ function D() {
       let e = I.default.getCurrentUser();
       return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
-    U = (0, s.bG)([T.A], () => T.A.getUserProfile(G.id)),
+    U = (0, s.bG)([v.A], () => v.A.getUserProfile(G.id)),
     {
       pendingAvatar: k,
       pendingGlobalName: H,
@@ -53,10 +53,10 @@ function D() {
       pendingLegacyUsernameDisabled: K,
       pendingPrimaryGuildId: z,
       errors: Z
-    } = (0, s.cf)([S.A], () => {
+    } = (0, s.cf)([T.A], () => {
       var e, t;
-      let n = S.A.getAllPending(),
-        r = S.A.getErrors();
+      let n = T.A.getPendingChanges(),
+        r = T.A.getErrors();
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -95,7 +95,7 @@ function D() {
     J = N.Ay.canUsePremiumProfileCustomization(G),
     Q = (0, u.z5)(k, G.avatar),
     $ = (0, u.Ac)(B, null == U ? true : U.banner),
-    ee = (0, v.Ay)(G.id),
+    ee = (0, S.Ay)(G.id),
     et = null == ee ? true : ee.getLegacyUsername(),
     en = (null != (e = null == (L = Z.global_name) ? true : L.length) ? e : 0) > 0 ? Z.global_name : null != (t = null == X ? true : X.nick) ? t : [],
     er = (null != (n = null == (M = Z.bio) ? true : M.length) ? n : 0) > 0 ? Z.bio : null != (i = null == X ? true : X.bio) ? i : [],

@@ -1,11 +1,11 @@
 /** Chunk was on 2824 **/
 /** chunk id: 364876, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  _: () => f
+  _: () => g
 });
-var Chunk627968 = require("./627968.js"),
-  Chunk64700 = require("./64700.js"),
-  Chunk877624 = require("./877624.js"),
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk877624 = require("./877624.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk937008 = require("./937008.jsx"),
@@ -16,45 +16,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk686046 = require("./686046.js");
 
-function f() {
+function g() {
   var e;
-  let n = (0, s.bG)([c.A], () => {
-      let e = c.A.getMarketingComponentByType(i.C.GIFT_CUSTOMIZATION_BANNER);
+  let n = (0, i.bG)([u.A], () => {
+      let e = u.A.getMarketingComponentByType(l.C.GIFT_CUSTOMIZATION_BANNER);
       return null == e || "giftCustomizationBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftCustomizationBanner
     }),
     {
       claimableRewards: t
-    } = (0, o.Pv)(),
-    f = (0, u.T)(null == n ? true : n.asset),
-    E = (0, u.T)(null == n ? true : n.backgroundAsset),
-    j = null == n ? true : n.gradient,
-    x = null != j && null != j.colors && j.colors.length >= 2 ? (0, d.K5)({
-      gradient: j.colors,
-      angle: null != (e = j.angle) ? e : true
+    } = (0, a.Pv)(),
+    g = (0, o.T)(null == n ? true : n.asset),
+    f = (0, o.T)(null == n ? true : n.backgroundAsset),
+    E = null == n ? true : n.gradient,
+    j = null != E && null != E.colors && E.colors.length >= 2 ? (0, c.K5)({
+      gradient: E.colors,
+      angle: null != (e = E.angle) ? e : true
     }, {
       colorStops: [0, 12, 100]
     }) : true,
-    h = l.useMemo(() => (0, d.gc)(null != E ? E : true), [E]),
-    T = l.useMemo(() => (0, d.x)(h, x, {
-      backgroundSize: "cover, auto",
-      backgroundPosition: "right center, 0% 0%"
-    }), [h, x]);
+    x = (0, c.gc)(null != f ? f : true);
+  null != x && (x.backgroundSize = "cover, auto", x.backgroundPosition = "right center, 0% 0%");
+  let h = (0, c.x)(x, j);
   return null == n || null == t ? null : (0, r.jsxs)("div", {
-    className: g.qD,
-    style: T,
+    className: m.qD,
+    style: h,
     children: [(0, r.jsx)("div", {
-      className: g.my,
-      children: (0, r.jsx)(p.A, {
+      className: m.my,
+      children: (0, r.jsx)(d.A, {
         claimableRewards: t,
-        maxRewardImageSrc: null != f ? f : "",
-        size: a._3J.SIZE_40,
+        maxRewardImageSrc: null != g ? g : "",
+        size: s._3J.SIZE_40,
         imageScaling: 1.9
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: g._M,
+      className: m._M,
       color: "always-white",
-      children: m.intl.string(m.t.Abiuci)
+      children: p.intl.string(p.t.Abiuci)
     })]
   })
 }

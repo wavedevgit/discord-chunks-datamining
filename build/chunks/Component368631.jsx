@@ -34,10 +34,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk967370 = require("./967370.js"),
   Chunk103738 = require("./103738.jsx"),
   Chunk745109 = require("./745109.jsx"),
+  Chunk836602 = require("./836602.js"),
   Chunk540999 = require("./540999.js"),
   Chunk111162 = require("./111162.js"),
   Chunk430452 = require("./430452.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk954571 = require("./954571.js"),
   Chunk957565 = require("./957565.js"),
   Chunk307600 = require("./307600.js"),
@@ -291,7 +291,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         newIndicator: (0, r.jsx)(eP, {}),
         newIndicatorDismissibleContentTypes: [...eN()],
         notice: {
-          stores: [D.A, x.A],
+          stores: [N.A, x.A],
           element: S.A
         },
         onSettingsClose: () => {
@@ -859,7 +859,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         label: eC.intl.string(eC.t.B1fFpf),
         ariaLabel: eC.intl.string(eC.t.B1fFpf),
         element: eb.A,
-        predicate: () => R.A.isSupported(),
+        predicate: () => D.A.isSupported(),
         url: ex.BVt.SETTINGS("voice")
       },
       [eA.H.VOICE_AND_VIDEO_VOICE_TAB]: {
@@ -961,7 +961,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.F122Gz)],
         parent: eA.H.VOICE_AND_VIDEO_VIDEO,
-        predicate: () => R.A.supports(eO.O5.VIDEO)
+        predicate: () => D.A.supports(eO.O5.VIDEO)
       },
       [eA.H.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW]: {
         section: ex.nc_.VOICE,
@@ -972,7 +972,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.lZTUPs)],
         parent: eA.H.VOICE_AND_VIDEO_VIDEO,
-        predicate: () => R.A.supports(eO.O5.VIDEO)
+        predicate: () => D.A.supports(eO.O5.VIDEO)
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED]: {
         section: ex.nc_.VOICE,
@@ -1009,67 +1009,67 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.t8Qhib), eC.intl.string(eC.t.hmfkCi)],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => R.A.isNoiseSuppressionSupported()
+        predicate: () => D.A.isNoiseSuppressionSupported()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.BbESsg)],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => R.A.isAdvancedVoiceActivitySupported()
+        predicate: () => D.A.isAdvancedVoiceActivitySupported()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.cUMdH0)],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => R.A.isAutomaticGainControlSupported()
+        predicate: () => D.A.isAutomaticGainControlSupported()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_BYPASS_SYSTEM_INPUT_PROCESSING]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.DFPXIG)],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
-        predicate: () => R.A.showBypassSystemInputProcessing()
+        predicate: () => D.A.showBypassSystemInputProcessing()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_QOS]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.uancuJ)],
         parent: eA.H.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => R.A.supports(eO.O5.QOS)
+        predicate: () => D.A.supports(eO.O5.QOS)
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_ATTENUATION]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.oSdBvW)],
         parent: eA.H.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => R.A.supports(eO.O5.ATTENUATION)
+        predicate: () => D.A.supports(eO.O5.ATTENUATION)
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.wVBHr0)],
         parent: eA.H.VOICE_AND_VIDEO_VOICE_ADVANCED,
-        predicate: () => R.A.shouldOfferManualSubsystemSelection()
+        predicate: () => D.A.shouldOfferManualSubsystemSelection()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.KDdjou), eC.intl.string(eC.t.NMCIf9), eC.intl.string(eC.t.FeUKeA)],
         parent: eA.H.VOICE_AND_VIDEO_VIDEO_STREAMING,
-        predicate: () => R.A.supportsVideoHook() || R.A.supportsExperimentalSoundshare() || R.A.supportsSystemScreensharePicker() && (0, G.isMac)()
+        predicate: () => D.A.supportsVideoHook() || D.A.supportsExperimentalSoundshare() || D.A.supportsSystemScreensharePicker() && (0, G.isMac)()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.GmWk2E), eC.intl.string(eC.t["Fj/xn1"])],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => R.A.supportsVideoHook()
+        predicate: () => D.A.supportsVideoHook()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t["4I0qzZ"])],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => R.A.supportsExperimentalSoundshare() && R.A.supportsHookSoundshare()
+        predicate: () => D.A.supportsExperimentalSoundshare() && D.A.supportsHookSoundshare()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.ie1mgY)],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
-        predicate: () => R.A.supportsSystemScreensharePicker() && (0, G.isMac)()
+        predicate: () => D.A.supportsSystemScreensharePicker() && (0, G.isMac)()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING]: {
         section: ex.nc_.VOICE,
@@ -1092,19 +1092,19 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t["r6K+TL"])],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => R.A.isAecDumpSupported()
+        predicate: () => D.A.isAecDumpSupported()
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t.U4FgFK)],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => ("canary" === U.Ay.releaseChannel || "development" === U.Ay.releaseChannel) && ek && R.A.supports(eO.O5.CONNECTION_REPLAY)
+        predicate: () => ("canary" === U.Ay.releaseChannel || "development" === U.Ay.releaseChannel) && ek && D.A.supports(eO.O5.CONNECTION_REPLAY)
       },
       [eA.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING]: {
         section: ex.nc_.VOICE,
         searchableTitles: [eC.intl.string(eC.t["726JHL"])],
         parent: eA.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => G.isPlatformEmbedded && R.A.supports(eO.O5.DEBUG_LOGGING) && null != m.A.fileManager.readLogFiles
+        predicate: () => G.isPlatformEmbedded && D.A.supports(eO.O5.DEBUG_LOGGING) && null != m.A.fileManager.readLogFiles
       },
       [eA.H.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: ex.nc_.VOICE,
@@ -1390,7 +1390,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: ["Experiments"],
         label: "Experiments",
         element: e_.A,
-        predicate: () => N.A.isDeveloper,
+        predicate: () => P.A.isDeveloper,
         url: ex.BVt.SETTINGS("experiments")
       },
       [eA.H.DEVELOPER_OPTIONS]: {
@@ -1399,97 +1399,97 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         label: "Developer Options",
         ariaLabel: "Developer Options",
         element: ee.A,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_OVERRIDES_TAB]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Overrides"],
         parent: eA.H.DEVELOPER_OPTIONS,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_FLAGS_TAB]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Developer Options Flags"],
         parent: eA.H.DEVELOPER_OPTIONS,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_LOGGING_TAB]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Logging"],
         parent: eA.H.DEVELOPER_OPTIONS,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Manual Triggers"],
         parent: eA.H.DEVELOPER_OPTIONS,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Design Tools"],
         parent: eA.H.DEVELOPER_OPTIONS,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_TRACING_REQUESTS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Tracing Requests"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_FORCED_CANARY]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Forced Canary"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_LOG_KEYBOARD_MISMATCHES]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Log Keyboard Mismatches"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_GATEWAY_EVENTS_TO_CONSOLE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Gateway Events To Console"],
         parent: eA.H.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_OVERLAY_RPC_EVENTS_COMMANDS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Rpc Events Commands"],
         parent: eA.H.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_ANALYTICS_EVENTS_LOGGING]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Analytics Events Logging"],
         parent: eA.H.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_ALWAYS_DELIVER]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Always deliver ads"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Source Maps"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_ANALYTICS_DEBUGGER_VIEW]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Analytics Debugger View"],
         parent: eA.H.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_IDLE_STATUS_INDICATOR]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Idle Status Indicator"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
@@ -1501,127 +1501,127 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["CSS Debugging"],
         parent: eA.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Mana Components"],
         parent: eA.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Void Toggleable Components"],
         parent: eA.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eA.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eA.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => ek && N.A.isDeveloper && P.default.layoutDebuggingEnabled
+        predicate: () => ek && P.A.isDeveloper && R.default.layoutDebuggingEnabled
       },
       [eA.H.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Preview Unpublished Collections"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable App Collections Cache"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => ek && N.A.isDeveloper
+        predicate: () => ek && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side"],
         parent: eA.H.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side Premium Type"],
         parent: eA.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_ACCOUNT_CREATED_DATA]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side Account Created Data"],
         parent: eA.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Open Overlay"],
         parent: eA.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_RESET_SOCKET]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Reset Socket"],
         parent: eA.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_CLEAR_CACHES]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Clear Caches"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => f.T && N.A.isDeveloper
+        predicate: () => f.T && P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_SHOW_TOTP_SUCCESS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Show TOTP Success"],
         parent: eA.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_TRIGGER_SUSPICIOUS_SESSIONS]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Trigger Suspicious Sessions Notification"],
         parent: eA.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_CRASHES]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Crashes"],
         parent: eA.H.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_SURVEY_OVERRIDE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Survey Override"],
         parent: eA.H.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Changelog Override"],
         parent: eA.H.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_BUILD_OVERRIDE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Build Override"],
         parent: eA.H.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Prevent Popouts From Closing Automatically"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.DEVELOPER_OPTIONS_DISABLE_ALIGN_CHAT_INPUT]: {
         section: ex.nc_.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable Align Chat Input"],
         parent: eA.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => N.A.isDeveloper
+        predicate: () => P.A.isDeveloper
       },
       [eA.H.LOGOUT]: {
         section: "logout",

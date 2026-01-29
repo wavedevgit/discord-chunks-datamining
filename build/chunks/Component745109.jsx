@@ -13,12 +13,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk159001 = require("./159001.js"),
   Chunk833336 = require("./833336.js"),
   Chunk766569 = require("./766569.jsx"),
+  Chunk836602 = require("./836602.js"),
   Chunk576622 = require("./576622.js"),
   Chunk358776 = require("./358776.js"),
   Chunk740625 = require("./740625.jsx"),
   Chunk955872 = require("./955872.jsx"),
   Chunk987281 = require("./987281.js"),
-  Chunk752319 = require("./752319.js"),
   Chunk287809 = require("./287809.js"),
   Chunk203982 = require("./203982.js"),
   Chunk115063 = require("./115063.js"),
@@ -32,18 +32,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk298109 = require("./298109.js");
 
 function y() {
-  let e = (0, x.dk)("ProfileCustomizationSettingsPage"),
+  let e = (0, A.dk)("ProfileCustomizationSettingsPage"),
     t = (0, a.bG)([u.A], () => u.A.getGuild()),
     n = (0, S.A)(),
-    l = (0, a.bG)([u.A, j.A], () => u.A.showNotice() || j.A.showNotice()),
+    l = (0, a.bG)([u.A, h.A], () => u.A.showNotice() || h.A.showNotice()),
     y = null != t ? t : n,
     D = (0, a.bG)([O.default], () => O.default.getCurrentUser()),
     {
       subsection: G,
       setSubsection: P
     } = (0, v.A)(),
-    R = m.a.useField("hasSearchResults"),
-    V = m.a.useField("searchResults");
+    R = j.a.useField("hasSearchResults"),
+    V = j.a.useField("searchResults");
 
   function L(e) {
     if (G !== e) {
@@ -58,13 +58,13 @@ function y() {
     }
   }
   s.useEffect(() => {
-    null != D && (null == y ? true : y.id) !== f.V && (0, h.A)(D.id, D.getAvatarURL(null == y ? true : y.id, 80), {
+    null != D && (null == y ? true : y.id) !== f.V && (0, x.A)(D.id, D.getAvatarURL(null == y ? true : y.id, 80), {
       guildId: null == y ? true : y.id
     })
   }, [null == y ? true : y.id, D]);
   let k = true,
     M = true;
-  return R && 1 === V.length && (V.includes(N.H.PROFILE_SERVER_PROFILES) ? (L(T.Eq.GUILD), M = false) : V.includes(N.H.PROFILE_USER_PROFILE) && (L(T.Eq.USER_PROFILE), k = false)), (0, i.jsxs)(A.R, {
+  return R && 1 === V.length && (V.includes(N.H.PROFILE_SERVER_PROFILES) ? (L(T.Eq.GUILD), M = false) : V.includes(N.H.PROFILE_USER_PROFILE) && (L(T.Eq.USER_PROFILE), k = false)), (0, i.jsxs)(p.R, {
     header: _.intl.string(_.t["vi7f+q"]),
     children: [(0, i.jsxs)(o.VQ0, {
       className: I.$H,
@@ -84,6 +84,6 @@ function y() {
       }, T.Eq.GUILD) : null]
     }), G === T.Eq.GUILD ? (0, i.jsx)(g.A, {
       selectedGuild: y
-    }) : (0, i.jsx)(p.A, {})]
+    }) : (0, i.jsx)(m.A, {})]
   })
 }

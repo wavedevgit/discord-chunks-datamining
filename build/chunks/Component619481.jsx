@@ -104,12 +104,12 @@ function w(e) {
                 variant: "heading-lg/semibold",
                 children: P.intl.string(T.default.ZPMAlX)
               })
-            }), (0, n.jsx)(C.A, {
+            }), (0, n.jsx)(S.A, {
               selectedFontId: J,
               setSelectedFontId: F,
               displayName: z,
               className: D._
-            }), (0, n.jsx)(S.A, {
+            }), (0, n.jsx)(C.A, {
               selectedEffectId: V,
               setSelectedEffectId: ea,
               className: D._

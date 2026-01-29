@@ -28,6 +28,11 @@ let r = (0, require("./250105.js").Ay)({
       collectAnalytics: true,
       autoOpenTIV: true,
       autoNavigateChannel: true
+    },
+    3: {
+      collectAnalytics: true,
+      autoOpenTIV: false,
+      autoNavigateChannel: true
     }
   }
 });

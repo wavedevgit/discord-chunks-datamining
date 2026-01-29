@@ -1,6 +1,6 @@
 /** Chunk was on 43600 **/
 /** chunk id: 535820, original params: e,t,n (module,exports,require) **/
-let l, i, s, r, a, o;
+let l, i, s, a, r, o;
 require.d(exports, {
   A: () => M
 }), require("./896048.js"), require("./638769.js");
@@ -18,28 +18,28 @@ var u, d, Chunk311907 = require("./311907.js"),
 let f = new Set,
   E = [],
   _ = new Map,
-  b = {
+  C = {
     numFriends: 0,
     numDms: 0,
     numGroupDms: 0,
     numChannels: 0
   };
 
-function C(e) {
+function b(e) {
   let t = new Set,
-    n = (null == r ? true : r.type) === x.rbe.GUILD_VOICE,
+    n = (null == a ? true : a.type) === x.rbe.GUILD_VOICE,
     l = null;
   null == s || o === y.yV.EMBEDDED_APPLICATION || n || (l = s.id);
   let i = (0, A.oW)(f, l);
   for (let e of (null == i || S.A.isBlockedOrIgnored(i.id) || t.add(i.id), p.A.getUserAffinities())) t.add(e.otherUserId);
-  let a = new Set;
-  return o === y.yV.EMBEDDED_APPLICATION && h.A.getChannelHistory().map(e => I.A.getChannel(e)).filter(v.Vq).filter(e => e.type === x.rbe.GUILD_TEXT).filter(e => m.A.can(x.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, A.Us)({
+  let r = new Set;
+  return o === y.yV.EMBEDDED_APPLICATION && h.A.getChannelHistory().map(e => I.A.getChannel(e)).filter(v.Vq).filter(e => e.type === x.rbe.GUILD_TEXT).filter(e => m.A.can(x.xBc.SEND_MESSAGES, e)).slice(0, 3).forEach(e => r.add(e.id)), (0, A.Us)({
     query: e,
     omitUserIds: f,
     suggestedUserIds: t,
     maxRowsWithoutQuery: 100,
     omitGuildId: l,
-    suggestedChannelIds: a,
+    suggestedChannelIds: r,
     inviteTargetType: o
   })
 }
@@ -62,7 +62,7 @@ class N extends(u = Chunk311907.Ay.Store) {
     return l
   }
   getInitialCounts() {
-    return b
+    return C
   }
   getSelectedInviteMetadata(e) {
     let t = _.get(e),
@@ -90,16 +90,16 @@ let M = new N(Chunk73153.h, {
       applicationId: d,
       inviteTargetType: c
     } = e;
-    s = null != u ? n : null, r = u, a = d, o = c, f = new Set([...t, ...S.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
-      channel: r,
-      applicationId: a,
+    s = null != u ? n : null, a = u, r = d, o = c, f = new Set([...t, ...S.A.getBlockedOrIgnoredIDs(), ...(0, A.Uo)({
+      channel: a,
+      applicationId: r,
       inviteTargetType: c
     })]), i = false;
     let {
       rows: g,
       counts: h
-    } = C("");
-    T(g), b = h, l = E.length
+    } = b("");
+    T(g), C = h, l = E.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -108,7 +108,7 @@ let M = new N(Chunk73153.h, {
     i = "" !== t;
     let {
       rows: n
-    } = C(t);
+    } = b(t);
     n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), T(n)
   }
 })
