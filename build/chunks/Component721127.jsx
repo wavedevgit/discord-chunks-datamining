@@ -1,33 +1,33 @@
 /** Chunk was on 87916 **/
-/** chunk id: 721127, original params: e,t,n (module,exports,require) **/
+/** chunk id: 721127, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  c = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk404374 = require("./404374.jsx"),
   Chunk468099 = require("./468099.js");
 
-function c(e) {
+function l(e) {
   let {
     text: t,
-    className: n,
+    className: a,
     button: i,
-    reducedRightPadding: c = false
+    reducedRightPadding: l = false
   } = e;
-  return (0, a.jsxs)("div", {
-    className: s()(c ? o.wp : o.Ug, n),
-    children: [(0, a.jsxs)("div", {
-      className: o.g9,
-      children: [(0, a.jsx)(r.tvc, {
+  return (0, n.jsxs)("div", {
+    className: c()(l ? s.wp : s.Ug, a),
+    children: [(0, n.jsxs)("div", {
+      className: s.g9,
+      children: [(0, n.jsx)(o.tvc, {
         size: "md",
-        className: o.Kk,
-        color: l.k0.PREMIUM_TIER_2
-      }), (0, a.jsx)(r.Text, {
-        className: o.Qq,
+        className: s.Kk,
+        color: r.k0.PREMIUM_TIER_2
+      }), (0, n.jsx)(o.Text, {
+        className: s.Qq,
         variant: "text-md/normal",
         color: "text-strong",
         children: t

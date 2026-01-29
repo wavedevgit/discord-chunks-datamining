@@ -1,5 +1,5 @@
 /** Chunk was on 87916 **/
-/** chunk id: 719335, original params: e,t,n (module,exports,require) **/
+/** chunk id: 719335, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   A: () => x
 });
@@ -23,21 +23,21 @@ var Chunk627968 = require("./627968.js"),
 function x(e) {
   let {
     analyticsSection: t,
-    type: n
-  } = e, x = (0, s.bG)([u.default], () => u.default.getCurrentUser()), b = _.Ay.canUseAnimatedAvatar(x), N = _.Ay.canUsePremiumProfileCustomization(x), y = n === m.HL.BANNER && N || n === m.HL.AVATAR && b, {
-    sourceAnalyticsLocations: j
-  } = (0, o.Ay)(l.A.PREMIUM_PREVIEW_UPSELL_HEADER);
+    type: a
+  } = e, x = (0, c.bG)([u.default], () => u.default.getCurrentUser()), b = _.Ay.canUseAnimatedAvatar(x), N = _.Ay.canUsePremiumProfileCustomization(x), y = a === A.HL.BANNER && N || a === A.HL.AVATAR && b, {
+    sourceAnalyticsLocations: E
+  } = (0, s.Ay)(r.A.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (i.useEffect(() => {
-      y || p.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+      y || p.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: j
+        location_stack: E
       })
-    }, [y, t, j]), y) return null;
-  let E = (0, a.jsx)(c.A, {
+    }, [y, t, E]), y) return null;
+  let j = (0, n.jsx)(l.A, {
     className: h.__invalid_getNitroLink,
-    size: r.$n.Sizes.SMALL,
-    look: r.$n.Looks.LINK,
-    color: r.$n.Colors.LINK,
+    size: o.$n.Sizes.SMALL,
+    look: o.$n.Looks.LINK,
+    color: o.$n.Colors.LINK,
     subscriptionTier: f.pe.TIER_2,
     textOptions: {
       textOverride: g.intl.format(g.t["944tDv"], {})
@@ -45,14 +45,14 @@ function x(e) {
     showIcon: false,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: A.ZSU.BUTTON_CTA
+      object: m.ZSU.BUTTON_CTA
     },
     disableShine: true
   });
-  return (0, a.jsx)(d.A, {
+  return (0, n.jsx)(d.A, {
     reducedRightPadding: true,
     className: h.C,
     text: g.intl.format(g.t.Og803x, {}),
-    button: E
+    button: j
   })
 }
