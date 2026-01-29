@@ -1,4 +1,4 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 620452, original params: e,t,n (module,exports,require) **/
 module.exports = {
   jx: "buttonsWrapper__65bb6",

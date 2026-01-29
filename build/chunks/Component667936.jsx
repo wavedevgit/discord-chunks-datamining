@@ -1,7 +1,7 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 667936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => j
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -29,15 +29,15 @@ function v(e) {
     guildId: n,
     member: i,
     className: a
-  } = e, c = null != i.member ? (0, b.xT)(i.member) : null;
+  } = e, c = null != i.member ? (0, y.xT)(i.member) : null;
   return (0, r.jsx)(s.m, {
     __unsupportedReactNodeAsText: i.nick,
     position: "bottom",
     children: (0, r.jsx)(o.euF, {
       src: null != c ? c : i.user.getAvatarURL(n, 16),
       size: o._3J.SIZE_16,
-      className: l()(a, A.wE),
-      "aria-label": null != (t = i.nick) ? t : _.Ay.getName(i.user)
+      className: l()(a, h.wE),
+      "aria-label": null != (t = i.nick) ? t : A.Ay.getName(i.user)
     })
   })
 }
@@ -48,7 +48,7 @@ function O(e) {
     guildId: n
   } = e;
   return (0, r.jsx)(f.A, {
-    className: A.S3,
+    className: h.S3,
     guildId: n,
     users: t,
     max: 6,
@@ -58,36 +58,36 @@ function O(e) {
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: l()(A.TO, t),
+      className: l()(h.TO, t),
       children: e
     }, n)
   })
 }
-let S = e => {
+let j = e => {
   let {
     channel: t,
     presenceActivity: n,
     members: i,
     embeddedApp: l,
     onAction: s
-  } = e, o = null != l, f = o ? Array.from(l.embeddedActivity.userIds) : [], b = (0, a.bG)([y.default, g.default], () => {
-    if (o) return y.default.getUser(f[0]);
+  } = e, o = null != l, f = o ? Array.from(l.embeddedActivity.userIds) : [], y = (0, a.bG)([_.default, g.default], () => {
+    if (o) return _.default.getUser(f[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (e = null == (t = i.find(e => e.user.id !== g.default.getId())) ? true : t.user) ? e : i[0].user
     }
   });
-  if (null == b) return null;
-  let _ = o || (0, u.A)(n),
+  if (null == y) return null;
+  let A = o || (0, u.A)(n),
     v = (0, m.gV)(t.type);
   return (0, r.jsxs)("div", {
-    className: A.Eb,
+    className: h.Eb,
     children: [(0, r.jsx)("div", {
-      className: A.Il,
-      children: _ ? (0, r.jsx)(h.A, {
+      className: h.Il,
+      children: A ? (0, r.jsx)(b.A, {
         activity: n,
         embeddedApp: l,
-        user: b,
+        user: y,
         channel: t,
         sortedVoiceStates: i,
         onOpenSpotifyTrack: v ? p.Mp : true,
@@ -96,7 +96,7 @@ let S = e => {
       }) : (0, r.jsx)(c.A, {
         type: c.M.VOICE_CHANNEL,
         activity: n,
-        user: b,
+        user: y,
         guildId: t.getGuildId(),
         channelId: t.id,
         renderHeaderAccessory: null != i ? () => (0, r.jsx)(O, {
@@ -105,12 +105,12 @@ let S = e => {
         }) : true
       })
     }), (0, r.jsx)("div", {
-      className: A.M4,
+      className: h.M4,
       children: (0, r.jsx)(d.A, {
         type: c.M.VOICE_CHANNEL,
         activity: n,
         embeddedActivity: null == l ? true : l.embeddedActivity,
-        user: b,
+        user: y,
         guildId: t.getGuildId(),
         channelId: t.id,
         buttonVariant: "primary",

@@ -1,8 +1,8 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 119191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  bi: () => b,
-  sI: () => y
+  bi: () => y,
+  sI: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,13 +19,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk352143 = require("./352143.js");
 
-function y(e, t, n) {
+function _(e, t, n) {
   let {
     highlightAdminWarningIfElevated: i,
     useFlexboxLayout: l,
     keybindClassName: a
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-  return (0, r.jsx)(_, {
+  return (0, r.jsx)(A, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
@@ -34,7 +34,7 @@ function y(e, t, n) {
     keybindClassName: a
   })
 }
-let b = (e, t) => (0, r.jsx)(r.Fragment, {
+let y = (e, t) => (0, r.jsx)(r.Fragment, {
   children: m.intl.format(t, {
     keybind: e,
     keybindHook: (t, n) => (0, r.jsx)(l.e7I, {
@@ -45,21 +45,21 @@ let b = (e, t) => (0, r.jsx)(r.Fragment, {
   })
 });
 
-function _(e) {
+function A(e) {
   let {
     keybind: t,
     message: n,
-    messageWithoutKeybind: y,
-    highlightAdminWarningIfElevated: b = false,
-    useFlexboxLayout: _ = false,
-    keybindClassName: h
-  } = e, A = (0, d.F)(), v = (0, i.bG)([a.Ay], () => {
+    messageWithoutKeybind: _,
+    highlightAdminWarningIfElevated: y = false,
+    useFlexboxLayout: A = false,
+    keybindClassName: b
+  } = e, h = (0, d.F)(), v = (0, i.bG)([a.Ay], () => {
     let e = a.Ay.getVisibleGame();
     return null != e && e.elevated && a.Ay.canShowAdminWarning
   }), O = (0, o.NP)();
   return v ? (0, r.jsx)(l.Text, {
     variant: "text-xxs/semibold",
-    color: b ? "text-feedback-warning" : "text-muted",
+    color: y ? "text-feedback-warning" : "text-muted",
     children: O ? m.intl.format(m.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, s.A)(true, true), (0, u.openUserSettings)(c.X.OVERLAY_PANEL, {
@@ -67,13 +67,13 @@ function _(e) {
         })
       }
     }) : m.intl.string(m.t.PIeSHF)
-  }) : A ? _ ? (0, r.jsx)("div", {
+  }) : h ? A ? (0, r.jsx)("div", {
     className: g.FH,
     children: m.intl.format(n, {
       keybind: t,
       keybindHook: e => (0, r.jsx)(p.G, {
         keybind: t,
-        className: h
+        className: b
       }, t.join("+"))
     })
   }) : (0, r.jsx)(r.Fragment, {
@@ -83,5 +83,5 @@ function _(e) {
         keybind: t
       }, t.join("+"))
     })
-  }) : y
+  }) : _
 }

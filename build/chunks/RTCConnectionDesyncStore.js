@@ -1,7 +1,7 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 584569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => E
 }), require("./896048.js");
 var r, i, Chunk311907 = require("./311907.js"),
   Chunk205693 = require("./205693.js"),
@@ -17,8 +17,8 @@ var r, i, Chunk311907 = require("./311907.js"),
   Chunk607567 = require("./607567.js"),
   Chunk652215 = require("./652215.js"),
   Chunk806931 = require("./806931.js");
-let h = new Chunk194862.A,
-  A = new Chunk194862.A,
+let b = new Chunk194862.A,
+  h = new Chunk194862.A,
   v = new Set;
 
 function O(e, t, n) {
@@ -26,10 +26,10 @@ function O(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    i = (0, y.RQ)(r, null != t ? t : b.ME, e.id);
-  h.set(e.id, i);
+    i = (0, _.RQ)(r, null != t ? t : y.ME, e.id);
+  b.set(e.id, i);
   let l = {
-    type: _.lp.USER,
+    type: A.lp.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -45,17 +45,17 @@ function O(e, t, n) {
     localVideoDisabled: false,
     isPoppedOut: false
   };
-  A.set(e.id, l)
+  h.set(e.id, l)
 }
 
-function S(e) {
-  let t = h.delete(e),
-    n = A.delete(e),
+function j(e) {
+  let t = b.delete(e),
+    n = h.delete(e),
     r = v.delete(e);
   return t || n || r
 }
 
-function j() {
+function S() {
   var e;
   let t = f.A.getChannelId();
   if (null == t) returnfalse;
@@ -68,43 +68,43 @@ function j() {
   }), r
 }
 
-function x() {
-  h.clear(), A.clear(), v.clear()
+function I() {
+  b.clear(), h.clear(), v.clear()
 }
-class I extends(r = Chunk311907.Ay.Store) {
+class x extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], j)
+    this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], S)
   }
   get desyncedVoiceStatesCount() {
-    return h.size()
+    return b.size()
   }
   getDesyncedUserIds() {
-    return h.keys()
+    return b.keys()
   }
   getDesyncedVoiceStates() {
-    return h.values()
+    return b.values()
   }
   getDesyncedParticipants() {
-    return A.values()
+    return h.values()
   }
-}(i = "displayName") in I ? Object.defineProperty(I, i, {
+}(i = "displayName") in x ? Object.defineProperty(x, i, {
   value: "RTCConnectionDesyncStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : I[i] = "RTCConnectionDesyncStore";
-let T = new I(Chunk73153.h, {
+}) : x[i] = "RTCConnectionDesyncStore";
+let E = new x(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    x()
+    I()
   },
-  VOICE_CHANNEL_SELECT: x,
+  VOICE_CHANNEL_SELECT: I,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
-    if (n !== a.x.DEFAULT || t !== b.S7L.DISCONNECTED) returnfalse;
-    x()
+    if (n !== a.x.DEFAULT || t !== y.S7L.DISCONNECTED) returnfalse;
+    I()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {
@@ -115,7 +115,7 @@ let T = new I(Chunk73153.h, {
         userId: r,
         channelId: i
       } = t;
-      return i === n && !!S(r) || e
+      return i === n && !!j(r) || e
     }, false)
   },
   RTC_CONNECTION_CLIENT_CONNECT: function(e) {
@@ -136,6 +136,6 @@ let T = new I(Chunk73153.h, {
       userId: t,
       context: n
     } = e;
-    return n === a.x.DEFAULT && S(t)
+    return n === a.x.DEFAULT && j(t)
   }
 })

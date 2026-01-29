@@ -25,7 +25,7 @@ var r = function(e) {
     return e.NONE = "NONE", e.AUTO = "AUTO", e
   }({}),
   o = function(e) {
-    return e[e.DESKTOP = 0] = "DESKTOP", e[e.MOBILE = 1] = "MOBILE", e[e.XBOX = 2] = "XBOX", e[e.PLAYSTATION = 3] = "PLAYSTATION", e
+    return e[e.DESKTOP = 0] = "DESKTOP", e[e.MOBILE = 1] = "MOBILE", e[e.XBOX = 2] = "XBOX", e[e.PLAYSTATION = 3] = "PLAYSTATION", e[e.QUEST = 4] = "QUEST", e
   }({}),
   s = function(e) {
     return e.CONTEXT_MENU = "Context Menu", e.THREE_DOT = "Three-Dot", e.CARET = "Caret", e.OTHER_BUTTON = "Other Button", e

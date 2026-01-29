@@ -1,4 +1,4 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 66004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -21,7 +21,7 @@ function m(e) {
     guildId: n,
     userId: m,
     containerDimensions: g
-  } = e, y = (0, a.bG)([o.A], () => o.A.useReducedMotion), [b, _] = i.useState([]), h = b.length < 50;
+  } = e, _ = (0, a.bG)([o.A], () => o.A.useReducedMotion), [y, A] = i.useState([]), b = y.length < 50;
   i.useEffect(() => {
     function e(e) {
       let {
@@ -33,7 +33,7 @@ function m(e) {
       } = e;
       if (null != m && m !== i) return;
       let d = null != a && null != s && null != o;
-      if (r === t && !y && h && d) {
+      if (r === t && !_ && b && d) {
         let e = (0, u.Br)(a),
           r = null != a.id && !a.animated,
           d = {
@@ -44,7 +44,7 @@ function m(e) {
             url: e,
             userId: i
           };
-        _(e => [...e, d]), c.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+        A(e => [...e, d]), c.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
@@ -53,25 +53,25 @@ function m(e) {
     return s.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       s.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, m, y, h]);
-  let A = i.useCallback(e => {
-    _(t => {
+  }, [t, n, m, _, b]);
+  let h = i.useCallback(e => {
+    A(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return y ? null : (0, r.jsx)("div", {
+  return _ ? null : (0, r.jsx)("div", {
     className: f.Y,
     style: {
       width: g.width
     },
     children: (0, r.jsx)("div", {
       className: f.z,
-      children: b.map(e => (0, r.jsx)(d.A, {
+      children: y.map(e => (0, r.jsx)(d.A, {
         containerDimensions: g,
         effect: e,
-        onComplete: A
+        onComplete: h
       }, e.id))
     })
   })

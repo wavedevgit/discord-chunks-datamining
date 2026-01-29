@@ -1,7 +1,7 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 376696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => w
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,106 +31,106 @@ var Chunk627968 = require("./627968.js"),
   Chunk188275 = require("./188275.js"),
   Chunk962966 = require("./962966.js");
 
-function w(e) {
+function T(e) {
   let {
     channel: t,
     user: n,
     onAction: l,
-    excludeActivity: w,
-    onWatchStream: N,
+    excludeActivity: T,
+    onWatchStream: w,
     previewIsOpen: C,
-    hangStatusActivity: D
-  } = e, L = i.useMemo(() => ({
+    hangStatusActivity: L
+  } = e, D = i.useMemo(() => ({
     [t.guild_id]: [n.id]
   }), [t.guild_id, n.id]);
-  (0, c.E)(L, "VoiceUserActivities");
+  (0, c.E)(D, "VoiceUserActivities");
   let k = (0, d.Ay)(t),
-    R = i.useMemo(() => k.filter(e => e.embeddedActivity.userIds.has(n.id)), [k, n.id]),
-    M = Array.from((0, d.Rz)(R).values()),
-    [V, U] = (0, s.yK)([h.A], () => [h.A.getStreamForUser(n.id, t.getGuildId()), h.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
-    [G, W] = (0, s.yK)([j.A, v.A, O.A, p.default], () => (0, f.eo)(t, j.A, v.A, O.A, p.default)),
-    z = (0, s.bG)([A.default], () => A.default.getId()),
-    H = (0, s.bG)([S.A], () => (0, m.nr)(V, S.A), [V]),
-    F = (0, m.AO)(V),
-    K = (0, u.m)(n, null != w ? w : H),
-    Y = (0, s.bG)([x.Ay], () => {
+    G = i.useMemo(() => k.filter(e => e.embeddedActivity.userIds.has(n.id)), [k, n.id]),
+    R = Array.from((0, d.Rz)(G).values()),
+    [M, V] = (0, s.yK)([b.A], () => [b.A.getStreamForUser(n.id, t.getGuildId()), b.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
+    [U, W] = (0, s.yK)([S.A, v.A, O.A, p.default], () => (0, f.eo)(t, S.A, v.A, O.A, p.default)),
+    F = (0, s.bG)([h.default], () => h.default.getId()),
+    z = (0, s.bG)([j.A], () => (0, m.nr)(M, j.A), [M]),
+    K = (0, m.AO)(M),
+    H = (0, u.m)(n, null != T ? T : z),
+    Y = (0, s.bG)([I.Ay], () => {
       var e;
-      return null != (e = x.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id)) ? e : null
+      return null != (e = I.Ay.getVoiceStatesForChannel(t).find(e => e.user.id === n.id)) ? e : null
     }, [t, n.id]),
     B = i.useMemo(() => null != Y ? [Y] : [], [Y]),
     {
       enableUserHoverActivities: J
-    } = (0, I.fC)({
+    } = (0, x.fC)({
       guildId: t.guild_id,
       location: "VoiceUserActivities"
     }),
-    Z = (0, b.m)({
+    Z = (0, y.m)({
       location: "voice_channel_activities"
     }),
-    X = null != V,
-    q = K.length + M.length > 0,
-    $ = n.id === A.default.getId(),
-    Q = null != D;
+    X = null != M,
+    q = H.length + R.length > 0,
+    $ = n.id === h.default.getId(),
+    Q = null != L;
   return X || q || Q ? (0, r.jsxs)(o.HOs, {
-    className: E.kL,
-    children: [Q && null != D ? (0, r.jsx)("div", {
-      className: E.Ak,
-      children: (0, r.jsx)(y.Z, {
-        hangStatusActivity: D,
+    className: N.kL,
+    children: [Q && null != L ? (0, r.jsx)("div", {
+      className: N.Ak,
+      children: (0, r.jsx)(_.Z, {
+        hangStatusActivity: L,
         channel: t,
         userId: n.id,
         isSelf: $,
         analyticsSource: "VoiceUserActivities",
         onAction: l,
-        className: E.AF,
-        iconClassName: E.W9,
-        textClassName: E.YJ
+        className: N.AF,
+        iconClassName: N.W9,
+        textClassName: N.YJ
       })
     }) : null, Q && (X || q) && (0, r.jsx)("div", {
-      className: E.zN
-    }), null == V || null == N ? null : (0, r.jsxs)("div", {
-      className: a()(E.yt, {
-        [E.P0]: C
+      className: N.zN
+    }), null == M || null == w ? null : (0, r.jsxs)("div", {
+      className: a()(N.yt, {
+        [N.P0]: C
       }),
       children: [(0, r.jsx)(g.Z, {
-        stream: V,
-        activeStream: U,
-        streamActivity: H,
-        streamApplication: F,
+        stream: M,
+        activeStream: V,
+        streamActivity: z,
+        streamApplication: K,
         user: n,
-        currentUserId: z,
-        canWatch: G,
+        currentUserId: F,
+        canWatch: U,
         unavailableReason: W,
-        onWatchStream: N,
+        onWatchStream: w,
         onAction: l,
         showHeader: J,
         skipContainer: true
       }), q && (0, r.jsx)("div", {
-        className: E.zN
+        className: N.zN
       })]
-    }), M.map((e, n) => {
+    }), R.map((e, n) => {
       var i;
-      return (0, r.jsx)(T.A, {
+      return (0, r.jsx)(E.A, {
         embeddedApp: e,
         presenceActivity: null != (i = e.presenceActivity) ? i : true,
         channel: t,
         onAction: l
       }, n)
-    }), K.map((e, a) => Z && null != e.application_id && P.sQ.has(e.application_id) ? (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(T.A, {
+    }), H.map((e, a) => Z && null != e.application_id && P.sQ.has(e.application_id) ? (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(E.A, {
         presenceActivity: e,
         channel: t,
         members: B,
         onAction: l
-      }), (0, r.jsx)(_.A, {
-        className: E.L,
+      }), (0, r.jsx)(A.A, {
+        className: N.L,
         applicationId: e.application_id,
         userIds: [n.id],
         location: "voice_channel",
         guildId: t.guild_id,
         channelId: t.id
       })]
-    }, "".concat(a, "-with-gifting-breadcrumb")) : (0, r.jsx)(T.A, {
+    }, "".concat(a, "-with-gifting-breadcrumb")) : (0, r.jsx)(E.A, {
       presenceActivity: e,
       channel: t,
       members: B,

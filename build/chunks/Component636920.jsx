@@ -1,7 +1,7 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 636920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,75 +55,75 @@ function S(e, t) {
   }), e
 }
 
-function j(e) {
+function S(e) {
   let {
     hangStatusActivity: t,
     channel: n,
-    userId: j,
-    isSelf: x = false,
-    analyticsSource: I,
-    onAction: T,
+    userId: S,
+    isSelf: I = false,
+    analyticsSource: x,
+    onAction: E,
     className: P,
-    iconClassName: E,
-    textClassName: w
-  } = e, N = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), C = (0, l.bG)([c.A], () => c.A.can(h.xBc.CONNECT, n), [n]), D = null == t.emoji || (0, m.n)(t.emoji, n);
+    iconClassName: N,
+    textClassName: T
+  } = e, w = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), C = (0, l.bG)([c.A], () => c.A.can(b.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, m.n)(t.emoji, n);
   i.useEffect(() => {
-    d.default.track(h.HAw.VIEW_HANG_STATUS, O({
-      source: I,
-      other_user_id: j
+    d.default.track(b.HAw.VIEW_HANG_STATUS, O({
+      source: x,
+      other_user_id: S
     }, (0, g.A)(n.id)))
-  }, [I, n.id, j]);
-  let L = i.useCallback(() => {
-      !N && C && (o.default.selectVoiceChannel(n.id), null == T || T(), d.default.track(h.HAw.HANG_STATUS_CTA_CLICKED, S(O({
-        source: I
+  }, [x, n.id, S]);
+  let D = i.useCallback(() => {
+      !w && C && (o.default.selectVoiceChannel(n.id), null == E || E(), d.default.track(b.HAw.HANG_STATUS_CTA_CLICKED, j(O({
+        source: x
       }, (0, g.A)(n.id)), {
-        other_user_id: j,
+        other_user_id: S,
         cta_type: "join"
       })))
-    }, [N, C, n.id, j, I, T]),
+    }, [w, C, n.id, S, x, E]),
     k = i.useCallback(() => {
-      if (!N || !D || null == t.state) return;
-      let [e] = (0, y.e)(j, t.state);
+      if (!w || !L || null == t.state) return;
+      let [e] = (0, _.e)(S, t.state);
       if (null != e) {
-        if (e === _.Kk.CUSTOM) {
+        if (e === A.Kk.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
           (0, p.hS)(t.details, t.emoji, true)
         } else(0, p.Iq)(e, true);
-        null == T || T(), d.default.track(h.HAw.HANG_STATUS_CTA_CLICKED, S(O({
-          source: I
+        null == E || E(), d.default.track(b.HAw.HANG_STATUS_CTA_CLICKED, j(O({
+          source: x
         }, (0, g.A)(n.id)), {
-          other_user_id: j,
+          other_user_id: S,
           cta_type: "swipe"
         }))
       }
-    }, [N, D, t, n.id, j, I, T]);
+    }, [w, L, t, n.id, S, x, E]);
   return (0, r.jsxs)("div", {
     className: null != P ? P : v.kL,
-    children: [(0, r.jsx)(b.A, {
-      userId: j,
+    children: [(0, r.jsx)(y.A, {
+      userId: S,
       size: 32,
-      className: null != E ? E : v.Kk,
+      className: null != N ? N : v.Kk,
       hangStatusActivity: t
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: null != w ? w : v.qS,
-      children: (0, f.Au)(j, t)
-    }), N && !x ? (0, r.jsx)(a.m_, {
-      text: D ? true : A.intl.string(A.t["0LMpW+"]),
+      className: null != T ? T : v.qS,
+      children: (0, f.Au)(S, t)
+    }), w && !I ? (0, r.jsx)(a.m_, {
+      text: L ? true : h.intl.string(h.t["0LMpW+"]),
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: A.intl.string(A.t["0eHzpm"]),
+          text: h.intl.string(h.t["0eHzpm"]),
           onClick: k,
-          disabled: !D
+          disabled: !L
         })
       })
-    }) : !x && C && (0, r.jsx)(s.Button, {
+    }) : !I && C && (0, r.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
-      text: A.intl.string(A.t["B/dHXL"]),
-      onClick: L
+      text: h.intl.string(h.t["B/dHXL"]),
+      onClick: D
     })]
   })
 }

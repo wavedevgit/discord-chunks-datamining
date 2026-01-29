@@ -1,7 +1,7 @@
 /** Chunk was on 52199 **/
 /** chunk id: 443486, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,33 +19,33 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk935606 = require("./935606.js");
 
-function A(e) {
+function y(e) {
   let {
     setSearchQuery: t,
     searchContext: r,
-    mode: A
-  } = e, y = (0, i.R)(r);
+    mode: y
+  } = e, _ = (0, i.R)(r);
   return l.useMemo(() => {
     let e = [{
       type: g.LWr.FILTER_FROM,
-      isEligible: y.has(g.LWr.FILTER_FROM),
+      isEligible: _.has(g.LWr.FILTER_FROM),
       icon: s.nys,
-      label: _.intl.string(_.t.ktr6z5)
+      label: S.intl.string(S.t.ktr6z5)
     }, {
       type: g.LWr.FILTER_IN,
-      isEligible: y.has(g.LWr.FILTER_IN),
+      isEligible: _.has(g.LWr.FILTER_IN),
       icon: s.N$i,
-      label: _.intl.string(_.t.VMjDvS)
+      label: S.intl.string(S.t.VMjDvS)
     }, {
       type: g.LWr.FILTER_HAS,
-      isEligible: y.has(g.LWr.FILTER_HAS),
+      isEligible: _.has(g.LWr.FILTER_HAS),
       icon: s.PtA,
-      label: _.intl.string(_.t.IhIpc7)
+      label: S.intl.string(S.t.IhIpc7)
     }, {
       type: g.LWr.FILTER_MENTIONS,
-      isEligible: y.has(g.LWr.FILTER_MENTIONS),
+      isEligible: _.has(g.LWr.FILTER_MENTIONS),
       icon: s.XxR,
-      label: _.intl.string(_.t.fpKv9Y)
+      label: S.intl.string(S.t.fpKv9Y)
     }];
     return e.filter(e => e.isEligible).map(l => {
       let {
@@ -77,7 +77,7 @@ function A(e) {
             searchQueryString: c.A.getSearchInputText(r),
             searchTokenType: g,
             searchAutocompleteGroup: g,
-            searchAutocompleteMode: A,
+            searchAutocompleteMode: y,
             searchAutocompleteResultIndex: i - 1,
             searchAutocompleteTotalResults: e.length,
             isSearchFilterPrefix: true,
@@ -93,5 +93,5 @@ function A(e) {
         }
       })
     })
-  }, [y, r, A, t])
+  }, [_, r, y, t])
 }

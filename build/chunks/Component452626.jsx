@@ -1,4 +1,4 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 452626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
@@ -38,8 +38,8 @@ function s(e) {
     label: f,
     tooltip: m,
     loading: g,
-    disabled: y,
-    onClick: b
+    disabled: _,
+    onClick: y
   } = (0, a._B)(t, n, s);
   return (0, r.jsx)(i.m, {
     text: m,
@@ -67,9 +67,9 @@ function s(e) {
       text: f,
       fullWidth: u,
       onClick: () => {
-        null == d || d(), b()
+        null == d || d(), y()
       },
-      disabled: y,
+      disabled: _,
       loading: g
     }, p))
   })

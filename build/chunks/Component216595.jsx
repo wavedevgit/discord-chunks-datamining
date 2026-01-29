@@ -1,7 +1,7 @@
 /** Chunk was on 52199 **/
 /** chunk id: 216595, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -24,7 +24,7 @@ let E = {
   right: false
 };
 
-function A(e) {
+function y(e) {
   let {
     channel: t,
     children: r
@@ -32,25 +32,25 @@ function A(e) {
   return (0, n.jsx)(i.vN3, {
     offset: E,
     children: (0, n.jsxs)("div", {
-      className: _.ZO,
+      className: S.ZO,
       "data-recents-channel": t.id,
-      children: [(0, n.jsx)(y, {
+      children: [(0, n.jsx)(_, {
         channel: t
       }), t.isPrivate() ? null : (0, n.jsx)(a.ChevronSmallRightIcon, {
         size: "xxs"
-      }), (0, n.jsx)(S, {
+      }), (0, n.jsx)(m, {
         channel: t
       }), r]
     })
   })
 }
 
-function y(e) {
+function _(e) {
   let {
     channel: t
   } = e, r = (0, o.bG)([f.A], () => f.A.getGuild(t.guild_id));
   return null != r ? (0, n.jsx)(p.A, {
-    className: _.Kk,
+    className: S.Kk,
     guild: r,
     size: p.A.Sizes.SMALLER,
     "aria-hidden": true
@@ -58,23 +58,23 @@ function y(e) {
     channel: t,
     size: c._3J.SIZE_24
   }) : (0, n.jsx)("div", {
-    className: s()(_.Kk, _.ro),
+    className: s()(S.Kk, S.ro),
     children: (0, n.jsx)(a.ChatIcon, {
       size: "xxs"
     })
   })
 }
 
-function S(e) {
+function m(e) {
   let {
     channel: t
   } = e, r = (0, o.bG)([f.A], () => f.A.getGuild(t.guild_id)), l = (0, u.Ay)(t, false), s = (0, d.gU)(t, r), a = t.isPrivate() || null == s, i = t.isDM() ? g.intl.formatToPlainString(g.t.smD7XV, {
     username: l
   }) : l;
   return (0, n.jsxs)("div", {
-    className: _.yP,
+    className: S.yP,
     children: [a ? null : (0, n.jsx)(s, {
-      className: _.j1,
+      className: S.j1,
       size: "xxs"
     }), (0, n.jsx)(c.Heading, {
       variant: "text-md/semibold",
