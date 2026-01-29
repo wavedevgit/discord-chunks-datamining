@@ -1,5 +1,5 @@
 /** Chunk was on 42160 **/
-/** chunk id: 588019, original params: e,t,i (module,exports,require) **/
+/** chunk id: 588019, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   init: () => d
 }), require("./457529.js");
@@ -8,13 +8,13 @@ var Chunk626584 = require("./626584.js"),
   Chunk711204 = require("./711204.js"),
   Chunk622397 = require("./622397.js");
 
-function o(e, t, i) {
+function o(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
-    value: i,
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = i, e
+  }) : e[t] = r, e
 }
 let l = new Chunk626584.A("MeticulousPerformanceReporter"),
   m = new class {
@@ -32,21 +32,21 @@ let l = new Chunk626584.A("MeticulousPerformanceReporter"),
       return null == (e = this.mode) ? true : e.baselineUsedMemory
     }
     init() {
-      var e, t, i;
-      let r;
+      var e, t, r;
+      let i;
       if (this.isInitialized) returntrue;
       let n = (0, a.a)();
-      return null != n && (this.mode = (r = n.native.performance, {
+      return null != n && (this.mode = (i = n.native.performance, {
         name: "meticulous",
         sessionId: n.sessionBeingReplayed.id,
         commitSha: null == (e = n.commitUnderTest) ? true : e.sha,
         branchName: null == (t = n.commitUnderTest) ? true : t.branchName,
-        commitDate: null == (i = n.commitUnderTest) ? true : i.date,
+        commitDate: null == (r = n.commitUnderTest) ? true : r.date,
         PerformanceObserver: n.native.PerformanceObserver,
-        performanceNow: () => r.now(),
+        performanceNow: () => i.now(),
         mark: (e, t) => performance.mark(e, t),
         getMemory: () => {
-          let e = r.memory;
+          let e = i.memory;
           if (null != e) return {
             jsHeapSizeLimit: e.jsHeapSizeLimit,
             totalJSHeapSize: e.totalJSHeapSize,
@@ -54,8 +54,28 @@ let l = new Chunk626584.A("MeticulousPerformanceReporter"),
           }
         },
         sendToIngest: async e => {
-          let t = JSON.stringify(e);
-          l.log("QP payload", t);
+          let t = JSON.stringify(e),
+            {
+              metrics: r
+            } = e,
+            i = function(e, t) {
+              if (null == e) return {};
+              var r, i, n, s = {};
+              if ("u" > typeof Reflect && Reflect.ownKeys) {
+                for (n = 0, r = Reflect.ownKeys(e); n < r.length; n++) i = r[n], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
+                return s
+              }
+              if (s = function(e, t) {
+                  if (null == e) return {};
+                  var r, i, n = {},
+                    s = Object.getOwnPropertyNames(e);
+                  for (i = 0; i < s.length; i++) r = s[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (n[r] = e[r]);
+                  return n
+                }(e, t), Object.getOwnPropertySymbols)
+                for (n = 0, r = Object.getOwnPropertySymbols(e); n < r.length; n++) i = r[n], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
+              return s
+            }(e, ["metrics"]);
+          l.log("QP payload metadata", JSON.stringify(i, null, 2)), l.log("QP payload metrics", JSON.stringify(r, null, 2));
           try {
             let e = await fetch("https://meticulous-ingest.discord.tools/webhook", {
               method: "POST",
