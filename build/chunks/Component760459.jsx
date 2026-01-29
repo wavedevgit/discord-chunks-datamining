@@ -1,68 +1,68 @@
 /** Chunk was on 13530 **/
-/** chunk id: 760459, original params: e,t,n (module,exports,require) **/
+/** chunk id: 760459, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => r
 });
 var Chunk627968 = require("./627968.js"),
   Chunk942528 = require("./942528.jsx"),
   Chunk409626 = require("./409626.js");
 
-function a(e) {
-  var t, n;
+function r(e) {
+  var t, l;
   let {
-    entry: a,
+    entry: r,
     viewId: s,
     officialGuildId: o,
     source: c
   } = e;
-  return (0, l.jsx)(r.A, (t = function(e) {
+  return (0, n.jsx)(i.A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        l = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), l.forEach(function(t) {
-        var l;
-        l = n[t], t in e ? Object.defineProperty(e, t, {
-          value: l,
+      var l = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(l);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(l, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = l[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = l
+        }) : e[t] = n
       })
     }
     return e
-  }({}, e), n = n = {
+  }({}, e), l = l = {
     onReaction: () => {
-      (0, i.Tn)({
-        action: i.Ws.SendMessageUser,
-        applicationId: a.extra.application_id,
-        gameName: a.extra.game_name,
-        recipientUserId: a.author_id,
+      (0, a.Tn)({
+        action: a.Ws.SendMessageUser,
+        applicationId: r.extra.application_id,
+        gameName: r.extra.game_name,
+        recipientUserId: r.author_id,
         viewId: s,
         officialGuildId: o,
         source: c
       })
     },
     onRequestOpen: () => {
-      (0, i.Tn)({
-        action: i.Ws.ClickMessageUser,
-        applicationId: a.extra.application_id,
-        gameName: a.extra.game_name,
-        recipientUserId: a.author_id,
+      (0, a.Tn)({
+        action: a.Ws.ClickMessageUser,
+        applicationId: r.extra.application_id,
+        gameName: r.extra.game_name,
+        recipientUserId: r.author_id,
         viewId: s,
         officialGuildId: o,
         source: c
       })
     }
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    var l = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var n = Object.getOwnPropertySymbols(e);
+      l.push.apply(l, n)
     }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    return l
+  })(Object(l)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
   }), t))
 }

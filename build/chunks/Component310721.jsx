@@ -1,7 +1,8 @@
 /** Chunk was on 13530 **/
-/** chunk id: 310721, original params: e,t,n (module,exports,require) **/
+/** chunk id: 310721, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => s,
+  v: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,13 +14,30 @@ function s(e) {
   let {
     detectedGame: t
   } = e;
-  return 0 === t.publishers.length ? null : (0, l.jsxs)("div", {
-    children: [(0, l.jsx)(r.DZT, {
-      className: a.bV,
+  return 0 === t.publishers.length ? null : (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(i.DZT, {
+      className: r.bV,
       variant: "text-xs/semibold",
       color: "text-default",
-      children: i.intl.string(i.t["4Byy/G"])
-    }), (0, l.jsx)(r.EYj, {
+      children: a.intl.string(a.t["4Byy/G"])
+    }), (0, n.jsx)(i.EYj, {
+      variant: "text-sm/normal",
+      children: t.publishers.join(", ")
+    })]
+  })
+}
+
+function o(e) {
+  let {
+    detectedGame: t
+  } = e;
+  return 0 === t.publishers.length ? null : (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(i.DZT, {
+      className: r.bV,
+      variant: "text-xs/semibold",
+      color: "text-default",
+      children: a.intl.string(a.t["4Byy/G"])
+    }), (0, n.jsx)(i.EYj, {
       variant: "text-sm/normal",
       children: t.publishers.join(", ")
     })]

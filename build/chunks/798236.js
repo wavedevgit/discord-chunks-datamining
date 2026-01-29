@@ -1,6 +1,6 @@
 /** Chunk was on 13530 **/
-/** chunk id: 798236, original params: e,t,n (module,exports,require) **/
+/** chunk id: 798236, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  w: () => r
+  w: () => i
 });
-var l, r = ((l = {})[l.OFFICIAL = 1] = "OFFICIAL", l[l.WIKIA = 2] = "WIKIA", l[l.WIKIPEDIA = 3] = "WIKIPEDIA", l[l.FACEBOOK = 4] = "FACEBOOK", l[l.TWITTER = 5] = "TWITTER", l[l.TWITCH = 6] = "TWITCH", l[l.INSTAGRAM = 8] = "INSTAGRAM", l[l.YOUTUBE = 9] = "YOUTUBE", l[l.IPHONE = 10] = "IPHONE", l[l.IPAD = 11] = "IPAD", l[l.ANDROID = 12] = "ANDROID", l[l.STEAM = 13] = "STEAM", l[l.REDDIT = 14] = "REDDIT", l[l.ITCH = 15] = "ITCH", l[l.EPICGAMES = 16] = "EPICGAMES", l[l.GOG = 17] = "GOG", l[l.DISCORD = 18] = "DISCORD", l[l.BLUESKY = 19] = "BLUESKY", l)
+var n, i = ((n = {})[n.OFFICIAL = 1] = "OFFICIAL", n[n.WIKIA = 2] = "WIKIA", n[n.WIKIPEDIA = 3] = "WIKIPEDIA", n[n.FACEBOOK = 4] = "FACEBOOK", n[n.TWITTER = 5] = "TWITTER", n[n.TWITCH = 6] = "TWITCH", n[n.INSTAGRAM = 8] = "INSTAGRAM", n[n.YOUTUBE = 9] = "YOUTUBE", n[n.IPHONE = 10] = "IPHONE", n[n.IPAD = 11] = "IPAD", n[n.ANDROID = 12] = "ANDROID", n[n.STEAM = 13] = "STEAM", n[n.REDDIT = 14] = "REDDIT", n[n.ITCH = 15] = "ITCH", n[n.EPICGAMES = 16] = "EPICGAMES", n[n.GOG = 17] = "GOG", n[n.DISCORD = 18] = "DISCORD", n[n.BLUESKY = 19] = "BLUESKY", n)

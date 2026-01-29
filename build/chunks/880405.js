@@ -1,5 +1,5 @@
 /** Chunk was on 13530 **/
-/** chunk id: 880405, original params: e,t,n (module,exports,require) **/
+/** chunk id: 880405, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
   N: () => s
 });
@@ -10,16 +10,16 @@ var Chunk562465 = require("./562465.js"),
 let s = async e => {
   try {
     var t;
-    let n = (null != (t = (await l.Bo.get({
-      url: a.Rsh.SIMILAR_GAMES(e),
+    let l = (null != (t = (await n.Bo.get({
+      url: r.Rsh.SIMILAR_GAMES(e),
       rejectWithError: false
     })).body.similar_games) ? t : []).filter(t => t !== e);
-    r.h.dispatch({
+    i.h.dispatch({
       type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",
       applicationId: e,
-      games: n
+      games: l
     })
   } catch (e) {
-    throw new i.LG(e)
+    throw new a.LG(e)
   }
 }

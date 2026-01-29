@@ -1,12 +1,12 @@
 /** Chunk was on 13530 **/
-/** chunk id: 936636, original params: e,t,n (module,exports,require) **/
+/** chunk id: 936636, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  r = require.n(Chunk503698),
   Chunk808380 = require("./808380.js"),
   Chunk934551 = require("./934551.js"),
   Chunk990078 = require("./990078.jsx"),
@@ -15,110 +15,110 @@ var Chunk627968 = require("./627968.js"),
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    var l = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(l);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(l, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = l[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = n
     })
   }
   return e
 }
-let f = [Chunk808380.Y.DESKTOP, Chunk808380.Y.XBOX, Chunk808380.Y.PLAYSTATION, Chunk808380.Y.NINTENDO];
+let x = [Chunk808380.Y.DESKTOP, Chunk808380.Y.XBOX, Chunk808380.Y.PLAYSTATION, Chunk808380.Y.NINTENDO];
 
-function g(e) {
+function f(e) {
   let {
     platform: t
-  } = e, n = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
-    var n, l, r, i = {};
+    var l, n, i, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
-      return i
+      for (i = 0, l = Reflect.ownKeys(e); i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+      return a
     }
-    if (i = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
-        var n, l, r = {},
-          i = Object.getOwnPropertyNames(e);
-        for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
-        return r
+        var l, n, i = {},
+          a = Object.getOwnPropertyNames(e);
+        for (n = 0; n < a.length; n++) l = a[n], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
-    return i
+      for (i = 0, l = Object.getOwnPropertySymbols(e); i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+    return a
   }(e, ["platform"]);
   switch (t) {
     case s.Y.DESKTOP:
-      return (0, l.jsx)(o.ScreenIcon, m({
+      return (0, n.jsx)(o.ScreenIcon, m({
         size: "xs"
-      }, n));
+      }, l));
     case s.Y.XBOX:
-      return (0, l.jsx)(o.XboxNeutralIcon, m({
+      return (0, n.jsx)(o.XboxNeutralIcon, m({
         size: "xs"
-      }, n));
+      }, l));
     case s.Y.PLAYSTATION:
-      return (0, l.jsx)(o.PlaystationNeutralIcon, m({
+      return (0, n.jsx)(o.PlaystationNeutralIcon, m({
         size: "xs"
-      }, n));
+      }, l));
     case s.Y.NINTENDO:
-      return (0, l.jsx)(o.NintendoSwitchNeutralIcon, m({
+      return (0, n.jsx)(o.NintendoSwitchNeutralIcon, m({
         size: "xs"
-      }, n));
+      }, l));
     default:
       return null
   }
 }
 
-function x(e) {
+function g(e) {
   let {
     platforms: t
   } = e;
-  return (0, l.jsx)("div", {
-    className: a()(d.nM, d.Lc),
+  return (0, n.jsx)("div", {
+    className: r()(u.nM, u.Lc),
     style: {
       alignItems: "center"
     },
-    children: t.map(e => (0, l.jsx)(c.m, {
+    children: t.map(e => (0, n.jsx)(c.m, {
       text: function(e) {
         switch (e) {
           case s.Y.DESKTOP:
-            return u.intl.string(u.t.KT6uCJ);
+            return d.intl.string(d.t.KT6uCJ);
           case s.Y.XBOX:
-            return u.intl.string(u.t.DDWUJp);
+            return d.intl.string(d.t.DDWUJp);
           case s.Y.PLAYSTATION:
-            return u.intl.string(u.t.fzMz2s);
+            return d.intl.string(d.t.fzMz2s);
           case s.Y.NINTENDO:
-            return u.intl.string(u.t.AMW8je);
+            return d.intl.string(d.t.AMW8je);
           default:
             return null
         }
       }(e),
-      children: (0, l.jsx)(g, {
+      children: (0, n.jsx)(f, {
         platform: e
       })
     }, e))
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     detectedGame: t,
-    className: n
-  } = e, i = r.useMemo(() => {
+    className: l
+  } = e, a = i.useMemo(() => {
     let e = new Set(t.platforms),
-      n = [...e];
-    return !e.has(s.Y.DESKTOP) && (e.has(s.Y.MACOS) || e.has(s.Y.LINUX)) && n.push(s.Y.DESKTOP), n.filter(e => f.includes(e))
+      l = [...e];
+    return !e.has(s.Y.DESKTOP) && (e.has(s.Y.MACOS) || e.has(s.Y.LINUX)) && l.push(s.Y.DESKTOP), l.filter(e => x.includes(e))
   }, [t.platforms]);
-  return 0 === i.length ? null : (0, l.jsx)("div", {
-    className: a()(d.fi, d.iH, n),
-    children: i.length > 0 && (0, l.jsx)(x, {
-      platforms: i
+  return 0 === a.length ? null : (0, n.jsx)("div", {
+    className: r()(u.fi, u.iH, l),
+    children: a.length > 0 && (0, n.jsx)(g, {
+      platforms: a
     })
   })
 }

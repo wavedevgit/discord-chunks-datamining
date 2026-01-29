@@ -1,5 +1,5 @@
 /** Chunk was on 13530 **/
-/** chunk id: 799864, original params: e,t,n (module,exports,require) **/
+/** chunk id: 799864, original params: e,t,l (module,exports,require) **/
 module.exports = {
   D$: "similarGames_a02225",
   iu: "similarGameImageWrapper_a02225",
