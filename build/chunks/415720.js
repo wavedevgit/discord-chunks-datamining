@@ -1916,6 +1916,24 @@ let {
         opacity: 1
       }
     },
+    PROGRESSBAR_TRACK_BACKGROUND: {
+      [r.DARK]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_28",
+        opacity: .2784313725490196
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_28",
+        opacity: .2784313725490196
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      }
+    },
     RADIO_BORDER_ACTIVE: {
       [r.DARK]: {
         raw: "NEUTRAL_12",

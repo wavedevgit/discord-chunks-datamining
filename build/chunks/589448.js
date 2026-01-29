@@ -6803,6 +6803,44 @@ let {
         opacity: .45
       }
     },
+    PROGRESSBAR_INDICATOR_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      }
+    },
+    PROGRESSBAR_TRACK_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_20",
+        opacity: .2
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_20",
+        opacity: .2
+      }
+    },
     RADIO_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {

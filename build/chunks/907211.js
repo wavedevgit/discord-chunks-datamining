@@ -3907,6 +3907,44 @@ let {
         opacity: .45
       }
     },
+    PROGRESSBAR_INDICATOR_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BRAND_500",
+        opacity: 1
+      }
+    },
+    PROGRESSBAR_TRACK_BACKGROUND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: .54
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_400",
+        opacity: .24
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_11",
+        opacity: .18
+      },
+      [r.DARKER]: {
+        raw: "PLUM_11",
+        opacity: .24
+      }
+    },
     REDESIGN_ACTIVITY_CARD_BADGE_ICON: {
       category: "generic",
       [r.DARK]: {

@@ -164,8 +164,8 @@ function D(e) {
     handlePlaybackBtnClick: I,
     handleTranscriptBtnClick: L,
     handleCaptionBtnClick: R,
-    handleFullScreenBtnClick: k,
-    handleSeekBackBtnClick: M,
+    handleFullScreenBtnClick: M,
+    handleSeekBackBtnClick: k,
     handleSeekForwardBtnClick: V,
     handleControlBarPendingInteraction: Q,
     onVolumeChange: U
@@ -197,7 +197,7 @@ function D(e) {
         z || (e.preventDefault(), I());
         break;
       case b.TJ.SEEK_BACK:
-        M();
+        k();
         break;
       case b.TJ.SEEK_FORWARD:
         V();
@@ -206,12 +206,12 @@ function D(e) {
         R();
         break;
       case b.TJ.FULLSCREEN:
-        k();
+        M();
         break;
       case b.TJ.MUTE:
         es()
     }
-  }, [R, k, I, M, V, es, z]);
+  }, [R, M, I, k, V, es, z]);
   l.useEffect(() => {
     null != el.current && el.current.focus()
   }, []), l.useEffect(() => (er({
@@ -245,7 +245,7 @@ function D(e) {
           iconComponent: g.h,
           animationTime: y,
           visible: _,
-          onClick: M,
+          onClick: k,
           ariaLabel: O.intl.string(O.t.r9s3Uv),
           tooltipLabel: O.intl.string(O.t.r9s3Uv),
           shortcut: b.TJ.SEEK_BACK,
@@ -347,7 +347,7 @@ function D(e) {
         iconComponent: W ? f.z7w : f.TM1,
         animationTime: y,
         visible: _,
-        onClick: k,
+        onClick: M,
         ariaLabel: O.intl.string(O.t.vKZT5t),
         tooltipLabel: O.intl.string(O.t.vKZT5t),
         shortcut: b.TJ.FULLSCREEN,

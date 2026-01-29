@@ -45,7 +45,7 @@ function c(e) {
       children: u.intl.format(u.t.pGj5u2, {
         count: c
       })
-    }), (0, i.jsx)(o.kej, {
+    }), (0, i.jsx)(o.iCB, {
       foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
       percent: 100 * l,
       animate: true

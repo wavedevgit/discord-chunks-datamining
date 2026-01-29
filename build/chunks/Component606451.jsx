@@ -71,9 +71,9 @@ function g() {
           variant: "always-white",
           textVariant: "text-sm/normal"
         })]
-      }), (0, r.jsx)(s.kej, {
+      }), (0, r.jsx)(s.iCB, {
         percent: y,
-        size: s.kej.Sizes.XSMALL
+        size: s.iCB.Sizes.XSMALL
       })]
     })
   }) : null)

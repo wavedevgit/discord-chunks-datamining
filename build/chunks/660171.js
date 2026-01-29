@@ -171,7 +171,7 @@ function v(e) {
       questContentCTA: t,
       sourceQuestContent: g
     })
-  }, [b, g, _]), k = r.useCallback(e => {
+  }, [b, g, _]), M = r.useCallback(e => {
     if (null != t.current) {
       var r, l;
       S({
@@ -196,7 +196,7 @@ function v(e) {
         sourceQuestContent: g
       })
     }
-  }, [S, b, E, y, v, n, t, g]), M = r.useCallback((e, r) => {
+  }, [S, b, E, y, v, n, t, g]), k = r.useCallback((e, r) => {
     var i, a;
     if (null == t.current) return;
     let c = null == (i = t.current) ? true : i.error,
@@ -244,11 +244,11 @@ function v(e) {
       default:
         n = d.SB.HLS_OTHER_ERROR
     }
-    M(n, {
+    k(n, {
       errorDetails: t.details,
       fatal: t.fatal
     })
-  }, [h, M]);
+  }, [h, k]);
   r.useEffect(() => {
     if (null == n.current) return;
     let e = n.current;
@@ -290,9 +290,9 @@ function v(e) {
     trackQuestContentClick: R,
     trackQuestVideoBufferingStarted: I,
     trackQuestVideoBufferingEnded: L,
-    trackWatchTimeAnalytics: k,
+    trackWatchTimeAnalytics: M,
     trackQuestVideoFullscreenChanged: Q,
-    trackQuestVideoError: M,
+    trackQuestVideoError: k,
     trackQuestVideoVolumeChanged: U
   }
 }

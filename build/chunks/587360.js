@@ -13,5 +13,7 @@ module.exports = {
   Jv: "selectExistingFormHeader_cba592",
   us: "confirmChannelItemContainer_cba592",
   J2: "confirmChannelName_cba592",
-  Pd: "lastActiveTimestamp_cba592"
+  Pd: "lastActiveTimestamp_cba592",
+  bV: "sectionHeader_cba592",
+  vP: "sectionToggleIcon_cba592"
 }

@@ -54,7 +54,7 @@ function E(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: A.L$,
-        children: [(0, r.jsx)(a.kej, {
+        children: [(0, r.jsx)(a.iCB, {
           className: A.gH,
           foregroundColor: f > 85 ? "var(--status-positive)" : "var(--status-warning)",
           percent: f

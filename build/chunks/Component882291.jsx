@@ -46,16 +46,16 @@ function E(e) {
   let R = (0, c.A)(e => {
       L(e.contentRect)
     }),
-    k = (0, a.w)(R);
+    M = (0, a.w)(R);
   l.useLayoutEffect(() => {
-    null != k.current && L(k.current.getBoundingClientRect())
-  }, [k]), l.useEffect(() => {
+    null != M.current && L(M.current.getBoundingClientRect())
+  }, [M]), l.useEffect(() => {
     let e = () => {
-      null != k.current && L(k.current.getBoundingClientRect())
+      null != M.current && L(M.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [k]);
-  let M = e => {
+  }, [M]);
+  let k = e => {
       T(e.clientX)
     },
     V = l.useCallback(e => {
@@ -71,7 +71,7 @@ function E(e) {
     K = null != D && null != x ? x.right - D : null;
   return (0, r.jsxs)("div", {
     className: m.jD,
-    ref: k,
+    ref: M,
     children: [(0, r.jsxs)(s.DUT, {
       className: i()(m.KF, {
         [m.uc]: E
@@ -81,13 +81,13 @@ function E(e) {
         E && null != S && S(p(e.clientX, e.currentTarget.getBoundingClientRect(), y))
       },
       onMouseEnter: e => {
-        E && (null != k.current && L(k.current.getBoundingClientRect()), P(true), M(e))
+        E && (null != M.current && L(M.current.getBoundingClientRect()), P(true), k(e))
       },
       onMouseLeave: e => {
         E && (P(false), T(null))
       },
       onMouseMove: e => {
-        E && N && M(e)
+        E && N && k(e)
       },
       onKeyDown: V,
       tabIndex: E ? true : false,
@@ -111,12 +111,12 @@ function E(e) {
           right: null != K ? "".concat(K, "px") : "auto",
           opacity: +(null != K)
         }
-      }), (0, r.jsx)(s.kej, {
+      }), (0, r.jsx)(s.iCB, {
         className: i()(m.qB, m.Wf),
         percent: n,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != g ? g : true,
-        size: N ? s.kej.Sizes.XSMALL : s.kej.Sizes.XXSMALL,
+        size: N ? s.iCB.Sizes.XSMALL : s.iCB.Sizes.XXSMALL,
         animate: o
       }), N && null != U && t && (0, r.jsx)(s.Text, {
         className: m.Ey,

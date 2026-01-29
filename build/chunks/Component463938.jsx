@@ -88,7 +88,7 @@ let A = Chunk64700.memo(function(e) {
             direction: p.A.Directions.RIGHT
           })]
         })]
-      }), (0, r.jsx)(o.kej, {
+      }), (0, r.jsx)(o.iCB, {
         className: m.hr,
         foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
         percent: O / j * 100 + 3,

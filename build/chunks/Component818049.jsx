@@ -212,7 +212,7 @@ function N(e) {
     onClose: D,
     sourceQuestContent: w,
     impressionId: L
-  }), k = l.useCallback(e => {
+  }), M = l.useCallback(e => {
     if (P) {
       var t;
       let e = (0, c.qf)(null == (t = n.current) ? true : t.parentNode, n.current);
@@ -220,7 +220,7 @@ function N(e) {
     }
     g(e, p.Cy.LEARN_MORE), R(e, p.Cy.OPEN_GAME_LINK)
   }, [P, n, o, I, a, R, g]), {
-    title: M,
+    title: k,
     subtitle: V
   } = {
     title: (0, E.wr)(N),
@@ -245,10 +245,10 @@ function N(e) {
         sourceQuestContent: w,
         orientation: b
       }), (0, r.jsx)(T, {
-        title: M,
+        title: k,
         subtitle: V,
         ctaBtnLabel: N.config.ctaConfig.buttonLabel,
-        onCTAClick: () => k(u.uF.VIDEO_MODAL),
+        onCTAClick: () => M(u.uF.VIDEO_MODAL),
         orientation: b
       })]
     })]
@@ -259,11 +259,11 @@ function N(e) {
     }), (0, r.jsx)("div", {
       className: _.MT
     }), (0, r.jsx)(x, {
-      title: M,
+      title: k,
       subtitle: V,
       icon: s.KS6,
       className: _.mT,
-      onClick: () => k(u.uF.VIDEO_MODAL)
+      onClick: () => M(u.uF.VIDEO_MODAL)
     })]
   })
 }

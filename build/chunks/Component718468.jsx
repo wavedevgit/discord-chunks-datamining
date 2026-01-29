@@ -61,8 +61,7 @@ function h(e) {
           }) : null]
         }), (0, r.jsx)("div", {
           className: p.L$,
-          children: s ? f.intl.string(f.t.jfKTes) : (0, r.jsx)(c.kej, {
-            className: p.qB,
+          children: s ? f.intl.string(f.t.jfKTes) : (0, r.jsx)(c.z21, {
             percent: n.progress
           })
         })]

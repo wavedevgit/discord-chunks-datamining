@@ -174,10 +174,10 @@ class D extends(r = Chunk64700.Component) {
     if (e) return null;
     let n = v.z0(t);
     if (null == n) return null;
-    let r = n.type === C.WTw.UNINSTALLING ? d.kej.INDETERMINATE : v.uA(Number(n.progress), Number(n.total));
-    return (0, l.jsx)(d.kej, {
+    let r = n.type === C.WTw.UNINSTALLING ? d.iCB.INDETERMINATE : v.uA(Number(n.progress), Number(n.total));
+    return (0, l.jsx)(d.iCB, {
       percent: r,
-      size: d.kej.Sizes.XSMALL,
+      size: d.iCB.Sizes.XSMALL,
       foregroundColor: n.paused ? c.A.unsafe_rawColors.PRIMARY_500.css : c.A.unsafe_rawColors.GREEN_360.css,
       backgroundColor: c.A.unsafe_rawColors.TRANSPARENT.css,
       className: S.qB

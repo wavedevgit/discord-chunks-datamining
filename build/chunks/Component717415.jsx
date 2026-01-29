@@ -86,7 +86,7 @@ function L(e) {
     impressionRef: y,
     parentModalOpenStartClockTime: A,
     sourceQuestContent: I
-  } = e, L = (0, h.Yh)(u), R = (0, E.LS)(u), k = (0, g.go)(), [M, V] = l.useState(L.progressSeconds), [Q, U] = l.useState(142), F = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.n.WATCH_VIDEO];
+  } = e, L = (0, h.Yh)(u), R = (0, E.LS)(u), M = (0, g.go)(), [k, V] = l.useState(L.progressSeconds), [Q, U] = l.useState(142), F = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.n.WATCH_VIDEO];
   a()(null != F, "VideoQuestModal: videoTask must not be null");
   let B = (0, b.eG)(F),
     K = "portrait" === B,
@@ -98,7 +98,7 @@ function L(e) {
       quest: u,
       onClose: s,
       sourceQuestContent: I,
-      impressionId: k
+      impressionId: M
     }),
     W = l.useMemo(() => ({
       quest: u,

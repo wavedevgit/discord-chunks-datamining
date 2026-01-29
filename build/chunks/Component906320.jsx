@@ -263,9 +263,9 @@ class W extends Chunk64700.PureComponent {
     } = e;
     return (0, r.jsxs)(y.A, {
       direction: y.A.Direction.VERTICAL,
-      children: [(0, r.jsx)(g.kej, {
+      children: [(0, r.jsx)(g.iCB, {
         percent: t,
-        size: g.kej.Sizes.SMALL,
+        size: g.iCB.Sizes.SMALL,
         foregroundColor: n,
         foregroundGradientColor: null != i ? [i[0], i[1]] : true,
         animate: this.isFocused

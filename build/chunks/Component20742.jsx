@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk608250 = require("./608250.jsx"),
   Chunk978495 = require("./978495.js"),
   Chunk534514 = require("./534514.jsx"),
-  Chunk460890 = require("./460890.jsx"),
+  Chunk911608 = require("./911608.jsx"),
   Chunk331322 = require("./331322.jsx"),
   Chunk834730 = require("./834730.jsx"),
   Chunk22856 = require("./22856.js"),
@@ -195,37 +195,34 @@ function w(e) {
     alignCenter: m = false,
     leading: y,
     trailing: O,
-    stepNumber: v,
-    stepCount: A
+    progressBarProps: v
   } = e, {
-    headingId: I
-  } = (0, g.k)(), {
-    i18n: S
-  } = (0, _.G9)(), w = null != t, D = (0, f.Oy)(n), L = m ? D ? C : N : T, x = null != n && (0, r.jsx)("div", {
+    headingId: A
+  } = (0, g.k)(), I = null != t, S = (0, f.Oy)(n), w = m ? S ? C : N : T, D = null != n && (0, r.jsx)("div", {
     className: o()(E.headerGraphic, {
-      [E.headerGraphicAnimated]: D
+      [E.headerGraphicAnimated]: S
     }),
     children: (0, r.jsx)("div", {
       className: E.headerGraphicContainer,
       children: (0, r.jsx)(d.v, b({}, n))
     })
-  }), M = (0, r.jsx)(p.D, {
+  }), L = (0, r.jsx)(p.D, {
     className: E.headerTitle,
-    id: I,
+    id: A,
     variant: null != l ? l : "heading-lg/semibold",
     color: "text-strong",
     children: s
-  }), j = null != n ? x : M;
-  "end" === a && (M = (0, r.jsxs)(h.B, {
+  }), x = null != n ? D : L;
+  "end" === a && (L = (0, r.jsxs)(h.B, {
     direction: "horizontal",
     gap: 8,
     align: "center",
-    children: [M, (0, r.jsx)(R, {
+    children: [L, (0, r.jsx)(R, {
       badge: i,
       position: a
     })]
   }));
-  let k = (0, r.jsx)("header", {
+  let M = (0, r.jsx)("header", {
     className: o()(E.section, E.header, {
       [E.headerCentered]: m
     }),
@@ -233,41 +230,31 @@ function w(e) {
       gap: 8,
       children: [(0, r.jsx)("div", {
         className: E.headerLayout,
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(w, {
           leading: y,
           trailing: O,
-          hasGradient: w,
+          hasGradient: I,
           children: (0, r.jsxs)("div", {
             className: E.headerMain,
-            children: [null != v && null != A && (0, r.jsx)("div", {
+            children: [null != v && (0, r.jsx)("div", {
               className: E.headerStepIndicator,
-              children: (0, r.jsx)("span", {
-                className: E.progressBar,
-                style: {
-                  width: "".concat(v / (A + 1) * 100, "%")
-                },
-                role: "progressbar",
-                "aria-valuenow": v,
-                "aria-valuemin": 1,
-                "aria-valuemax": A,
-                "aria-label": S.STEP_INDICATOR(v, A)
-              })
-            }), j]
+              children: (0, r.jsx)(_.z, b({}, v))
+            }), x]
           })
         })
       }), "top" === a && (0, r.jsx)(R, {
         badge: i,
         position: a
-      }), null != n && null != s && M, null != c && (0, r.jsx)(P, {
+      }), null != n && null != s && L, null != c && (0, r.jsx)(P, {
         subtitle: c
       })]
     })
   });
-  return w ? (0, r.jsx)(u.h, {
+  return I ? (0, r.jsx)(u.h, {
     color: t,
     className: E.headerGradient,
-    children: k
-  }) : k
+    children: M
+  }) : M
 }
 
 function R(e) {

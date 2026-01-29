@@ -42,56 +42,57 @@ function _(e) {
     location: f = "ContextMenu",
     onFriendRequestSent: _,
     onFriendRemove: h,
-    appContext: m
+    appContext: m,
+    setLoading: g
   } = e, {
-    id: g,
-    username: E,
-    bot: y
-  } = t, b = (0, a.bG)([u.default], () => {
+    id: E,
+    username: y,
+    bot: b
+  } = t, O = (0, a.bG)([u.default], () => {
     var e;
-    return (null == (e = u.default.getCurrentUser()) ? true : e.id) === g
-  }, [g]), O = (0, l.D)(g), [v, A] = (0, a.yK)([c.A], () => [c.A.isFriend(g), c.A.isBlocked(g)], [g]), [I, S] = i.useState(false);
-  if (y || b) return null;
+    return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
+  }, [E]), v = (0, l.D)(E), [A, I] = (0, a.yK)([c.A], () => [c.A.isFriend(E), c.A.isBlocked(E)], [E]), [S, T] = i.useState(false);
+  if (b || O) return null;
 
-  function T() {
+  function C() {
     (0, o.mMO)(async () => {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 158954));
       return t => (0, r.jsx)(e, p({
         title: d.intl.formatToPlainString(d.t.fPLvZd, {
-          name: E
+          name: y
         }),
         subtitle: d.intl.format(d.t.l5FFq6, {
-          name: E
+          name: y
         }),
         confirmText: d.intl.string(d.t.cvSt1J),
         cancelText: d.intl.string(d.t["ETE/oC"]),
         onConfirm: () => {
-          s.A.removeFriend(g, {
+          s.A.removeFriend(E, {
             location: f
-          }), S(false), null == h || h()
+          }), T(false), null == h || h()
         }
       }, t))
     }, {
       contextKey: null != m ? (0, o.TId)(m) : true
     })
   }
-  return v ? (0, r.jsx)(o.Drp, {
+  return A ? (0, r.jsx)(o.Drp, {
     id: "remove-friend",
     label: d.intl.string(d.t.cvSt1J),
-    action: T
+    action: C
   }) : (0, r.jsx)(o.Drp, {
     id: "add-friend",
-    label: I ? d.intl.string(d.t.xMH6vD) : O,
-    action: () => {
-      I || (s.A.addRelationship({
-        userId: g,
+    label: S ? d.intl.string(d.t.xMH6vD) : v,
+    action: async () => {
+      S || (null == g || g(true), await s.A.addRelationship({
+        userId: E,
         context: {
           location: f
         }
-      }), S(true), null == _ || _())
+      }), T(true), null == _ || _(), null == g || g(false))
     },
-    disabled: A || I && !v
+    disabled: I || S && !A
   })
 }
