@@ -51,7 +51,7 @@ let E = () => {
       value: "popularity",
       id: "popularity"
     }
-  }, []), S = l.useCallback(e => ({
+  }, []), x = l.useCallback(e => ({
     recent: {
       sortType: o.$.RECENCY,
       sortDirection: i.A.DESC
@@ -72,8 +72,8 @@ let E = () => {
       sortType: o.$.RELEVANCE,
       sortDirection: i.A.DESC
     }
-  })[e], []), x = l.useCallback(e => {
-    let n = A(S(e));
+  })[e], []), S = l.useCallback(e => {
+    let n = A(x(e));
     u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == s ? true : s.sessionId,
       page_section: null == s ? true : s.pageSection,
@@ -82,8 +82,8 @@ let E = () => {
       page_size: null == s ? true : s.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(S(e))
-  }, [s, A, S, t]), O = A(e);
+    }), t(x(e))
+  }, [s, A, x, t]), O = A(e);
   return (0, r.jsx)("div", {
     className: a()(b.k, {
       [h.T3]: E
@@ -92,7 +92,7 @@ let E = () => {
       label: _.intl.string(_.t.uaX705),
       hideLabel: true,
       options: C.map(A),
-      onSelectionChange: x,
+      onSelectionChange: S,
       value: O.value,
       selectionMode: "single",
       fullWidth: true

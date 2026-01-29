@@ -137,8 +137,8 @@ let y = Chunk64700.memo(function(e) {
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: x.A,
-                        fallbackImageSrc: S.A,
+                        src: S.A,
+                        fallbackImageSrc: x.A,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"

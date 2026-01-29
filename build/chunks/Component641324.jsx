@@ -1,7 +1,7 @@
 /** Chunk was on 2827 **/
 /** chunk id: 641324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => x
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,6 +15,7 @@ var Chunk963935 = require("./963935.js"),
   Chunk915953 = require("./915953.jsx"),
   Chunk39216 = require("./39216.jsx"),
   Chunk43146 = require("./43146.jsx"),
+  Chunk112715 = require("./112715.js"),
   Chunk39043 = require("./39043.jsx"),
   Chunk743961 = require("./743961.jsx"),
   Chunk896005 = require("./896005.jsx"),
@@ -23,42 +24,42 @@ var Chunk963935 = require("./963935.js"),
   Chunk182884 = require("./182884.jsx"),
   Chunk115617 = require("./115617.jsx");
 
-function O(e) {
+function C(e) {
   let {
     node: t
   } = e;
-  switch (t.type) {
+  switch ((0, m.Z)(t.initialize), t.type) {
     case i.Z6.ROOT:
     case i.Z6.SECTION:
     case i.Z6.SIDEBAR_ITEM:
     case i.Z6.TAB_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case i.Z6.PANEL:
-      return (0, r.jsx)(b.j, {
+      return (0, r.jsx)(h.j, {
         node: t
       });
     case i.Z6.LIST:
-      return (0, r.jsx)(f.A, {
+      return (0, r.jsx)(b.A, {
         node: t
       });
     case i.Z6.FIELD_SET:
-      return (0, r.jsx)(A.A, {
+      return (0, r.jsx)(f.A, {
         node: t
       });
     case i.Z6.RELATED:
-      return (0, r.jsx)(h.A, {
+      return (0, r.jsx)(E.A, {
         node: t
       });
     case i.Z6.CATEGORY:
-      return (0, r.jsx)(g.A, {
+      return (0, r.jsx)(A.A, {
         node: t
       });
     case i.Z6.ACCORDION:
-      return (0, r.jsx)(m.A, {
+      return (0, r.jsx)(g.A, {
         node: t
       });
     case i.Z6.SPLIT:
-      return (0, r.jsx)(E.A, {
+      return (0, r.jsx)(O.A, {
         node: t
       });
     case i.Z6.TOGGLE:
@@ -96,15 +97,15 @@ function O(e) {
   }
 }
 
-function C(e) {
+function x(e) {
   let {
     node: t
   } = e;
-  return t.type === i.Z6.PANEL ? (0, r.jsx)(O, {
+  return t.type === i.Z6.PANEL ? (0, r.jsx)(C, {
     node: t
   }) : (0, r.jsx)(l.A, {
     node: t,
-    children: (0, r.jsx)(O, {
+    children: (0, r.jsx)(C, {
       node: t
     })
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 2827 **/
 /** chunk id: 353667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => I
+  j: () => T
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,11 +17,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk641324 = require("./641324.jsx"),
   Chunk46373 = require("./46373.jsx"),
   Chunk890690 = require("./890690.js"),
-  Chunk112715 = require("./112715.js"),
   Chunk49999 = require("./49999.js"),
   Chunk872175 = require("./872175.js");
 
-function E(e) {
+function h(e) {
   let {
     notice: t,
     children: n
@@ -45,7 +44,7 @@ function E(e) {
       element: e
     } = t;
     return (0, r.jsx)(a.FQk, {
-      className: h.lm,
+      className: b.lm,
       children: (0, r.jsx)(e, {})
     })
   }, [t, o]);
@@ -57,21 +56,21 @@ function E(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   let {
     scrollerRef: t,
     panelKey: n,
     notice: l,
     children: s
   } = e, o = i.useRef(null);
-  return (0, r.jsx)(E, {
+  return (0, r.jsx)(h, {
     notice: l,
     children: (0, r.jsx)(a.ArX, {
       "data-settings-panel-scroller": true,
-      className: h.XG,
+      className: b.XG,
       ref: t,
       children: (0, r.jsx)("div", {
-        className: h.nd,
+        className: b.nd,
         ref: o,
         children: (0, r.jsx)(a.xpW, {
           containerRef: o,
@@ -82,23 +81,23 @@ function O(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     layout: t
   } = e;
   return (0, r.jsx)("div", {
-    className: h.LZ,
+    className: b.LZ,
     children: t.map((e, n) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(m.A, {
         node: e
       }), n !== t.length - 1 && (0, r.jsx)(g.A, {
-        className: h.yF
+        className: b.yF
       })]
     }, e.key))
   })
 }
 
-function x(e) {
+function C(e) {
   var t, n;
   let {
     panelKey: l,
@@ -121,11 +120,11 @@ function x(e) {
     })
   }, [s, l]);
   let _ = null != (n = s.find(e => e.key === c)) ? n : s[0];
-  return (0, r.jsxs)(O, {
+  return (0, r.jsxs)(E, {
     panelKey: l,
     notice: o,
     children: [(0, r.jsx)(a.VQ0, {
-      className: h.$H,
+      className: b.$H,
       selectedItem: c,
       onItemSelect: e => {
         d(() => {
@@ -154,51 +153,48 @@ function x(e) {
       })
     }), (0, r.jsx)(a.VQ0.Panel, {
       id: c,
-      children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(C, {
+      children: null != _.StronglyDiscouragedCustomComponent ? (0, r.jsx)(_.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(O, {
         layout: _.layout
       })
     })]
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     panelKey: t,
     notice: n,
     layout: l
   } = e, s = i.useRef(null);
-  return (0, A.u)(t, l, s), (0, r.jsx)(O, {
+  return (0, A.u)(t, l, s), (0, r.jsx)(E, {
     scrollerRef: s,
     panelKey: t,
     notice: n,
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(O, {
       layout: l
     })
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     component: t,
     panelKey: n,
     notice: i
   } = e;
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(E, {
     panelKey: n,
     notice: i,
     children: (0, r.jsx)(t, {})
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     node: t
   } = e, {
-    layout: n,
-    initialize: s
-  } = t;
-  (0, f.Z)(s);
-  let a = (0, l.bG)([d.A], () => d.A.hidePersonalInformation);
+    layout: n
+  } = t, s = (0, l.bG)([d.A], () => d.A.hidePersonalInformation);
   if (i.useEffect(() => {
       var e, n;
       if ((null == (e = t.parent) ? true : e.type) !== _.Z6.SIDEBAR_ITEM || null == t.parent.trailing) return;
@@ -207,22 +203,22 @@ function I(e) {
       } = t.parent, i = "getDismissibleContentTypes" in r ? null == (n = r.getDismissibleContentTypes) ? true : n.call(r) : null;
       null != i && i.forEach(e => {
         (0, c.Dr)(e, {
-          dismissAction: b.i.AUTO,
+          dismissAction: f.i.AUTO,
           forceTrack: true
         })
       })
-    }, [t]), a && t.hideInStreamerMode) return (0, r.jsx)(o.A, {});
-  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(T, {
+    }, [t]), s && t.hideInStreamerMode) return (0, r.jsx)(o.A, {});
+  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(S, {
     component: t.StronglyDiscouragedCustomComponent,
     panelKey: t.key,
     notice: t.notice
   });
-  if ((0, _.zY)(n)) return (0, r.jsx)(x, {
+  if ((0, _.zY)(n)) return (0, r.jsx)(C, {
     panelKey: t.key,
     notice: t.notice,
     layout: n
   });
-  if ((0, _.Iu)(n)) return (0, r.jsx)(S, {
+  if ((0, _.Iu)(n)) return (0, r.jsx)(x, {
     panelKey: t.key,
     notice: t.notice,
     layout: n

@@ -43,28 +43,28 @@ let _ = {
       logoDisplayConfig: v,
       heroLogo: C,
       heroBannerStatic: A,
-      heroBannerAnimated: S
-    } = (0, g.Kk)(l), x = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
+      heroBannerAnimated: x
+    } = (0, g.Kk)(l), S = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
     return null != h && (n || l !== _) ? (0, r.jsxs)("div", {
       ref: b,
       className: p.os,
       children: [(0, r.jsx)("div", {
         className: s()(p.vK, {
-          [p.no]: x
+          [p.no]: S
         }),
         style: null != O ? {
           background: O
         } : true,
         children: null != A && (0, r.jsx)(f.A, {
           bannerStatic: A,
-          bannerAnimated: S,
-          isResponsive: x
+          bannerAnimated: x,
+          isResponsive: S
         })
       }), (0, r.jsxs)("div", {
         className: p.xX,
         children: [(0, r.jsx)("div", {
           className: s()(p.bC, {
-            [p.no]: x
+            [p.no]: S
           }),
           children: n ? (0, r.jsx)("div", {
             className: p.Hw
