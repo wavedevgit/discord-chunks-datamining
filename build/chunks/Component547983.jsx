@@ -1,8 +1,8 @@
 /** Chunk was on 1636 **/
 /** chunk id: 547983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => Y,
-  default: () => W
+  c: () => W,
+  default: () => Y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,7 +51,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function W(e) {
+function Y(e) {
   var t, n;
   let i, a, c, u, {
       channel: g,
@@ -68,22 +68,22 @@ function W(e) {
     v = f,
     h = f.getAttribute("data-type"),
     j = f.getAttribute("data-id"),
-    E = f.getAttribute("data-name");
+    S = f.getAttribute("data-name");
   if (null != y) a = i = c = y.url;
   else
     for (;
       (0, l.vq)(v);)(0, l.vq)(v, HTMLImageElement) && null != v.src && (a = v.src), (0, l.vq)(v, HTMLAnchorElement) && null != v.href && (i = v.href, u = v.textContent, null == a && "img" === v.getAttribute("data-role") && (a = i, v.hasAttribute("data-safe-src") && "" !== v.getAttribute("data-safe-src") && (c = v.getAttribute("data-safe-src")))), v = v.parentNode;
-  let S = null != (t = null == (n = document.getSelection()) ? true : n.toString()) ? t : "";
+  let E = null != (t = null == (n = document.getSelection()) ? true : n.toString()) ? t : "";
   return (0, r.jsx)(d.f5, {
     value: O,
-    children: Y({
+    children: W({
       message: p,
       channel: g,
       mediaItem: y,
-      textSelection: S,
+      textSelection: E,
       favoriteableType: h,
       favoriteableId: j,
-      favoriteableName: E,
+      favoriteableName: S,
       itemHref: i,
       itemSrc: a,
       itemSafeSrc: c,
@@ -99,7 +99,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     message: t,
     channel: n,
@@ -107,8 +107,8 @@ function Y(e) {
     textSelection: o,
     favoriteableType: s,
     favoriteableId: d,
-    favoriteableName: W,
-    itemHref: Y,
+    favoriteableName: Y,
+    itemHref: W,
     itemSrc: Z,
     itemSafeSrc: $,
     itemTextContent: Q,
@@ -158,9 +158,9 @@ function Y(e) {
     eu = (0, p.A)(o),
     eg = (0, b.A)(o),
     ep = (0, j.A)(t, n),
-    ef = (0, T.A)(t, n),
+    ef = (0, I.A)(t, n),
     ey = (0, L.A)(t, n),
-    eb = (0, x.A)(t, n),
+    eb = (0, w.A)(t, n),
     eA = (0, X.A)(t, n),
     em = (0, _.A)(t),
     eO = (0, V.A)(t, n),
@@ -173,27 +173,27 @@ function Y(e) {
       guildId: true,
       onHeightUpdate: et
     }),
-    eE = (0, k.A)(t, n),
-    eS = (0, w.A)(t, n),
-    e_ = (0, E.A)(t, n),
-    eD = (0, S.A)(t, n),
+    eS = (0, U.A)(t, n),
+    eE = (0, x.A)(t, n),
+    e_ = (0, S.A)(t, n),
+    eD = (0, E.A)(t, n),
     eP = (0, F.A)(t, n),
-    eT = (0, N.A)(t),
-    eI = (0, A.A)(t),
-    ex = (0, B.A)(t),
-    ew = (0, G.A)(t, n),
-    eM = (0, R.A)(t, n),
+    eI = (0, N.A)(t),
+    eT = (0, A.A)(t),
+    ew = (0, B.A)(t),
+    ex = (0, R.A)(t, n),
+    eM = (0, G.A)(t, n),
     eC = (0, D.A)(t, n),
-    eN = (0, U.Ay)(t),
-    eR = (0, U.S_)(t),
-    eG = (0, U.zo)(t),
-    eL = (0, I.A)({
+    eN = (0, k.Ay)(t),
+    eG = (0, k.S_)(t),
+    eR = (0, k.zo)(t),
+    eL = (0, T.A)({
       type: s,
       id: d,
-      name: W
+      name: Y
     }),
-    eU = (0, v.A)(o, n.getGuildId()),
-    ek = (0, f.A)($, t, {
+    ek = (0, v.A)(o, n.getGuildId()),
+    eU = (0, f.A)($, t, {
       shouldHideMediaOptions: ea,
       contentType: null == l ? true : l.contentType,
       originalContentType: null == l ? true : l.originalContentType
@@ -203,7 +203,7 @@ function Y(e) {
     eV = (0, q.A)(l, {
       shouldHideMediaOptions: ea
     }),
-    eB = (0, y.A)(null != Y ? Y : Z, Q, t, {
+    eB = (0, y.A)(null != W ? W : Z, Q, t, {
       shouldHideMediaOptions: ea
     }),
     eH = (0, u.A)({
@@ -221,7 +221,7 @@ function Y(e) {
       children: null != eK ? eK : eH
     }),
     eJ = (0, r.jsxs)(a.rXV, {
-      children: [eL, eU, ek, eF, eX, eV]
+      children: [eL, ek, eU, eF, eX, eV]
     });
   return (0, r.jsxs)(a.W1t, {
     "data-menu-needs-review": true,
@@ -234,13 +234,13 @@ function Y(e) {
     }), (0, r.jsx)(a.rXV, {
       children: eg
     }), (0, r.jsxs)(a.rXV, {
-      children: ["" === o ? ed : null, ep, eT]
+      children: ["" === o ? ed : null, ep, eI]
     }), (0, r.jsxs)(a.rXV, {
       children: [ef, ey, eb, eA]
     }), (0, r.jsxs)(a.rXV, {
-      children: [em, eO, ev, eh, ej, eE, eS, e_, eD, eP, eI, ex]
+      children: [em, eO, ev, eh, ej, eS, eE, e_, eD, eP, eT, ew]
     }), (0, r.jsxs)(a.rXV, {
-      children: [ew, eM, eC, ee && eN, ee && eR, eG]
+      children: [ex, eM, eC, ee && eN, ee && eG, eR]
     }), es ? (0, r.jsxs)(r.Fragment, {
       children: [eq, eJ, (0, r.jsx)(a.rXV, {
         children: eB

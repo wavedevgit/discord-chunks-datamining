@@ -228,15 +228,12 @@ function k(e) {
     transitionTo: n
   } = e, s = (0, l.bG)([g.A], () => g.A.getInvite(t));
   return i.useEffect(() => {
-    (0, h.d)("invite_mobile")
-  }, []), i.useEffect(() => {
-    null != s && s.state === y.elq.RESOLVED && f.default.track(y.HAw.INVITE_VIEWED, {
-      invite_code: t,
-      friends_count: null == s ? true : s.friends_count
+    (0, h.d)("invite_mobile"), f.default.track(y.HAw.INVITE_VIEWED, {
+      invite_code: t
     }, {
       flush: true
     })
-  }, [s, t]), (0, r.jsx)(P, {
+  }, []), (0, r.jsx)(P, {
     invite: s,
     onAcceptInvite: e => {
       var n, r, i;

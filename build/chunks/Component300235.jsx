@@ -84,7 +84,17 @@ let u = [{
     let [e, t] = i.useState(15), [n, d] = i.useState(8), [f, p] = i.useState("xl"), [_, h] = i.useState(true), m = i.useMemo(() => [...Array(e)].map((e, t) => (0, r.jsx)(o.DUT, {
       className: c.j,
       onClick: () => console.log(t),
-      children: t
+      children: (0, r.jsxs)(o.BJc, {
+        direction: "vertical",
+        justify: "space-between",
+        align: "center",
+        children: [(0, r.jsx)("div", {
+          children: t
+        }), t % 3 == 0 && (0, r.jsx)(o.Button, {
+          onClick: () => console.log("clicked button ".concat(t)),
+          text: "Click Me"
+        })]
+      })
     }, t)), [e]);
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.A, {

@@ -2,7 +2,7 @@
 /** chunk id: 111549, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => Q
+  A: () => z
 }), require("./938796.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -53,16 +53,15 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk311907.Ay.initialize();
-let V = "Accept Invite Page",
-  W = "register",
-  H = "login";
-async function K(e) {
+let V = "register",
+  W = "login";
+async function H(e) {
   let {
     invite: t
-  } = await p.Ay.resolveInvite(e, V);
+  } = await p.Ay.resolveInvite(e, D.S3d.INVITE);
   null != t && (0, _.v)(t)
 }
-class z extends Chunk64700.PureComponent {
+class K extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       isUnderage: e,
@@ -92,9 +91,9 @@ class z extends Chunk64700.PureComponent {
       authenticated: r,
       transitionTo: i
     } = this.props, s = this.getInviteKey();
-    if (s !== this.getInviteKey(e)) K(s);
+    if (s !== this.getInviteKey(e)) H(s);
     else if (t.state === D.elq.APP_NOT_OPENED) this.handleContinue();
-    else if (this.getMode() === H && r !== e.authenticated && r) {
+    else if (this.getMode() === W && r !== e.authenticated && r) {
       let e = I.default.getFingerprint();
       if (null != e) {
         let t = (0, c.d)(e);
@@ -104,12 +103,12 @@ class z extends Chunk64700.PureComponent {
       }
       p.Ay.acceptInvite({
         inviteKey: s,
-        context: this.getAcceptInviteContext(V),
+        context: this.getAcceptInviteContext(D.S3d.INVITE),
         skipOnboarding: true,
         callback: this.handleContinue
       })
     }
-    if (n !== e.nativeAppState && n === D.fAW.OPEN && this.track(D.HAw.INVITE_APP_INVOKED, false), this.getMode() === W && r && !e.authenticated) {
+    if (n !== e.nativeAppState && n === D.fAW.OPEN && this.track(D.HAw.INVITE_APP_INVOKED, false), this.getMode() === V && r && !e.authenticated) {
       let {
         channel: e
       } = t;
@@ -128,7 +127,7 @@ class z extends Chunk64700.PureComponent {
   }
   getMode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return e.login ? H : W
+    return e.login ? W : V
   }
   track(e, t, n) {
     let {
@@ -277,7 +276,7 @@ class z extends Chunk64700.PureComponent {
         var l;
         if (n && (0, o.Lt)(null != (l = e.flags) ? l : 0, a.Q.IS_GUEST_INVITE)) return p.Ay.openApp(e.code), d.u.set(v.B, e.code), this.renderAppOpened(() => i(D.BVt.APP));
         if (n || !U.VP) return this.renderAuthenticatedOrDownload();
-        if (this.getMode() === H) return (0, r.jsx)(k.A, {
+        if (this.getMode() === W) return (0, r.jsx)(k.A, {
           invite: e,
           transitionTo: i,
           location: s
@@ -321,7 +320,7 @@ class z extends Chunk64700.PureComponent {
       let e = this.getInviteKey();
       p.Ay.acceptInvite({
         inviteKey: e,
-        context: this.getAcceptInviteContext(V),
+        context: this.getAcceptInviteContext(D.S3d.INVITE),
         skipOnboarding: true,
         callback: t => {
           (0, _.v)(t), null != t.channel && p.Ay.openApp(e, t.channel.id)
@@ -368,7 +367,7 @@ class z extends Chunk64700.PureComponent {
     })
   }
 }
-let Q = Chunk311907.Ay.connectStores([Chunk299091.A, Chunk650048.A, Chunk961350.default, Chunk10088.A, Chunk17841.A], e => {
+let z = Chunk311907.Ay.connectStores([Chunk299091.A, Chunk650048.A, Chunk961350.default, Chunk10088.A, Chunk17841.A], e => {
   var t;
   let {
     inviteKey: n
@@ -380,4 +379,4 @@ let Q = Chunk311907.Ay.connectStores([Chunk299091.A, Chunk650048.A, Chunk961350.
     defaultRoute: S.A.defaultRoute,
     isUnderage: f.A.isUnderageAnonymous()
   }
-})(z)
+})(K)

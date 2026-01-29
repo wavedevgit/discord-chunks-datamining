@@ -40,7 +40,7 @@ function j(e, t) {
       label: ":".concat(i.name, ":"),
       icon: e => {
         var t, l;
-        return (0, r.jsx)(E, (t = function(e) {
+        return (0, r.jsx)(S, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -116,7 +116,7 @@ function j(e, t) {
   })
 }
 
-function E(e) {
+function S(e) {
   var t;
   let {
     emoji: n,
