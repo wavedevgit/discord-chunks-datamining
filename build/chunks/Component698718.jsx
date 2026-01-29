@@ -275,10 +275,10 @@ class e6 extends Chunk64700.PureComponent {
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: eU.R,
+      promptToUpload: eG.R,
       highlighted: s,
       setEditorRef: e => this.editorRef = e
-    }) : (0, r.jsx)(G.Ay, {
+    }) : (0, r.jsx)(U.Ay, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -297,7 +297,7 @@ class e6 extends Chunk64700.PureComponent {
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: eU.R,
+      promptToUpload: eG.R,
       highlighted: s,
       setEditorRef: e => this.editorRef = e,
       pendingScheduledMessage: g
@@ -541,8 +541,8 @@ class e6 extends Chunk64700.PureComponent {
           shouldRefocus: true
         };
         if (null != n && n.length > 0) {
-          let e = (0, eG.LJ)(n);
-          if ((0, eG.fJ)(e, null == c ? true : c.id)) return (0, eU.V)(u, e), {
+          let e = (0, eU.LJ)(n);
+          if ((0, eU.fJ)(e, null == c ? true : c.id)) return (0, eG.V)(u, e), {
             shouldClear: false,
             shouldRefocus: false
           };
@@ -598,7 +598,7 @@ class e6 extends Chunk64700.PureComponent {
       var t, n;
       let r = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != r && (B.b.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), eZ(this, "renderAttachButton", (e, t) => (0, r.jsx)(U.A, {
+    }), eZ(this, "renderAttachButton", (e, t) => (0, r.jsx)(G.A, {
       className: t,
       channel: this.props.channel,
       draftType: ex.C.ChannelMessage,
@@ -708,7 +708,7 @@ class e3 extends Chunk64700.PureComponent {
         guildId: null == C ? true : C.guild_id,
         location: "ChannelChat"
       }),
-      U = k && null != E && null != C && null != C.guild_id;
+      G = k && null != E && null != C && null != C.guild_id;
     return (0, r.jsx)(y.A, {
       page: (0, eR.DJ)(this.props.channel),
       children: (0, r.jsx)(J.di, {
@@ -736,7 +736,7 @@ class e3 extends Chunk64700.PureComponent {
               onMouseDown: this.handleChatInteract,
               onKeyDown: this.handleKeyDown,
               onFocus: this.handleChatInteract,
-              children: [U && (0, r.jsx)(eY.A, {
+              children: [G && (0, r.jsx)(eY.A, {
                 recipientUser: E,
                 voiceChannel: C
               }), (0, r.jsx)(eH.A, {

@@ -82,29 +82,29 @@ function M(e) {
     location: "ChannelCallHeaderToolbar"
   }), L = !S && M && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
     enabled: k,
-    inInbox: U
+    inInbox: G
   } = A.A.useExperiment({
     location: "ChannelCallHeaderToolbar"
-  }), G = [];
-  return u && G.push((0, r.jsx)(D, {
+  }), U = [];
+  return u && U.push((0, r.jsx)(D, {
     channelId: o,
     guildId: t.guild_id
-  }, "current-speaker")), G.push((0, r.jsx)(m.A, {
+  }, "current-speaker")), U.push((0, r.jsx)(m.A, {
     className: R.x6,
     channelId: o
-  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === P.lp.STREAM && (G.push((0, r.jsx)(O.A, {
+  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === P.lp.STREAM && (U.push((0, r.jsx)(O.A, {
     className: R.x6,
     participant: _
-  }, "warning")), G.push((0, r.jsx)(b.A, {
+  }, "warning")), U.push((0, r.jsx)(b.A, {
     size: g.Ay.Sizes.LARGE,
     className: R.x6,
     participant: _,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == _ ? true : _.type) === P.lp.USER && G.push((0, r.jsx)(j.A, {
+  }, "live-indicator"))), (null == _ ? true : _.type) === P.lp.USER && U.push((0, r.jsx)(j.A, {
     className: R.x6,
     userId: _.id
-  }, "video-warning")), u && !M && G.push((0, r.jsx)(d.YNO, {
+  }, "video-warning")), u && !M && U.push((0, r.jsx)(d.YNO, {
     targetElementRef: i,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(v.A, {
@@ -151,14 +151,14 @@ function M(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     }
-  }, "call-members-popout")), k && !U && G.push((0, r.jsx)(y.A, {
+  }, "call-members-popout")), k && !G && U.push((0, r.jsx)(y.A, {
     className: R.x6
-  }, "for-later")), L && G.push((0, r.jsx)(E.A, {
+  }, "for-later")), L && U.push((0, r.jsx)(E.A, {
     className: s()(R.x6, {
       [R.Lt]: n
     }),
     onClick: () => p.A.toggleParticipantsList(t.id, !S)
-  }, "participants-list-button")), w && G.push((0, r.jsx)(x.V, {
+  }, "participants-list-button")), w && U.push((0, r.jsx)(x.V, {
     channelId: t.id,
     className: s()(R.x6, {
       [R.Lt]: S
@@ -166,6 +166,6 @@ function M(e) {
     disabled: n
   }, "chat-spacer")), (0, r.jsx)(f.f5, {
     value: a,
-    children: G
+    children: U
   })
 }

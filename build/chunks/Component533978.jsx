@@ -45,7 +45,7 @@ function x(e) {
     suppress: D
   } = (0, A.A)(t), M = (0, i.bG)([y.A], () => y.A.isDeaf()), L = R || D || M, k = (0, g.VE)({
     isSoundboardButtonDisabled: L
-  }), [U, G] = (0, h.DP)(k), {
+  }), [G, U] = (0, h.DP)(k), {
     analyticsLocations: B
   } = (0, u.Ay)(), {
     isHovered: V,
@@ -124,9 +124,9 @@ function x(e) {
             guildId: w,
             channel: t,
             onClose: n,
-            gridNotice: U === s.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.m, {
+            gridNotice: G === s.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.m, {
               onClose: n,
-              markAsDismissed: G
+              markAsDismissed: U
             }),
             analyticsSource: "action bar button"
           })

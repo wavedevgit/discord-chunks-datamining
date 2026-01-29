@@ -2,7 +2,7 @@
 /** chunk id: 763793, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => V,
-  i: () => U
+  i: () => G
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -69,8 +69,8 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = 16 / 9,
-  G = e => {
+let G = 16 / 9,
+  U = e => {
     let {
       stageParticipant: t,
       rtcParticipant: n,
@@ -100,7 +100,7 @@ let U = 16 / 9,
       }, e), {
         children: (0, r.jsx)(P.A, {
           participant: n,
-          aspectRatio: U,
+          aspectRatio: G,
           blocked: g,
           ignored: m,
           channel: i,
@@ -146,7 +146,7 @@ let U = 16 / 9,
     }, [v, i, x, C]);
     return (0, r.jsx)(P.A, {
       participant: n,
-      aspectRatio: U,
+      aspectRatio: G,
       fit: n.type === D.lp.USER ? j.$.COVER : true,
       blocked: b,
       ignored: O,
@@ -252,7 +252,7 @@ let U = 16 / 9,
       isModerator: E,
       onContextMenu: I,
       popoutType: u
-    }) : (0, r.jsx)(G, {
+    }) : (0, r.jsx)(U, {
       stageParticipant: l,
       rtcParticipant: x,
       channel: i,

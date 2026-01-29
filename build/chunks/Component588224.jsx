@@ -39,7 +39,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk31408 = require("./31408.js"),
   Chunk50314 = require("./50314.js");
-let G = Chunk64700.memo(e => {
+let U = Chunk64700.memo(e => {
   var t, n, l, i;
   let {
     mute: s,
@@ -48,10 +48,10 @@ let G = Chunk64700.memo(e => {
     channel: y,
     sessionId: x,
     nick: N
-  } = e, T = A.id, U = (0, a.bG)([C.default], () => C.default.getId() === T, [T]), [G, B, V] = (0, a.yK)([I.A], () => U ? [!I.A.isSupported() || I.A.isSelfMute() || I.A.isSelfMutedTemporarily(), I.A.isSelfDeaf(), false] : [!I.A.isSupported() || I.A.isLocalMute(T), false, I.A.isLocalVideoDisabled(T)], [U, T]), F = (0, a.bG)([w.A], () => w.A.isPrioritySpeaker(T)), H = (0, c.A)({
+  } = e, T = A.id, G = (0, a.bG)([C.default], () => C.default.getId() === T, [T]), [U, B, V] = (0, a.yK)([I.A], () => G ? [!I.A.isSupported() || I.A.isSelfMute() || I.A.isSelfMutedTemporarily(), I.A.isSelfDeaf(), false] : [!I.A.isSupported() || I.A.isLocalMute(T), false, I.A.isLocalVideoDisabled(T)], [G, T]), F = (0, a.bG)([w.A], () => w.A.isPrioritySpeaker(T)), H = (0, c.A)({
     userId: T,
     checkSoundSharing: true
-  }), K = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), W = U && K, z = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), Y = (0, a.bG)([h.A], () => h.A.getGuildRingingUsers(y.id).has(T)), q = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
+  }), K = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), W = G && K, z = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), Y = (0, a.bG)([h.A], () => h.A.getGuildRingingUsers(y.id).has(T)), q = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
     let {
       userIds: t
     } = e;
@@ -61,7 +61,7 @@ let G = Chunk64700.memo(e => {
   } = (0, g.$j)({
     guildId: y.guild_id,
     location: "VoiceUsers"
-  }), el = (0, f.Ay)(y, true, A), ei = (0, a.bG)([m.A], () => U ? m.A.getHangStatusActivity() : null, [U]), es = (0, b.h)(T), ea = (0, v.uy)(y.id, T), {
+  }), el = (0, f.Ay)(y, true, A), ei = (0, a.bG)([m.A], () => G ? m.A.getHangStatusActivity() : null, [G]), es = (0, b.h)(T), ea = (0, v.uy)(y.id, T), {
     enableVCStatusIcons: eo,
     enableRequestToStream: ec
   } = O.m.useExperiment({
@@ -96,9 +96,9 @@ let G = Chunk64700.memo(e => {
       disconnected: ea,
       otherClientSessionType: null == ee || null == (n = ee.clientInfo) ? true : n.os,
       voicePlatform: en,
-      localMute: G && !U,
+      localMute: U && !G,
       localVideoDisabled: V,
-      mute: s || G,
+      mute: s || U,
       deaf: o || B,
       speaking: H,
       latched: W,
@@ -108,11 +108,11 @@ let G = Chunk64700.memo(e => {
       isStreaming: null != Z && Z.channelId === y.id,
       isWatching: null != $ && $.state !== L.XYD.ENDED,
       isGuest: z,
-      isSelf: U,
+      isSelf: G,
       requestToStreamActivity: ec ? J : true,
       application: (eo || er) && (null == J ? true : J.session_id) != null ? Q : true,
-      showHangStatus: el && er && (U || null != es),
-      hangStatusActivity: U ? ei : es
+      showHangStatus: el && er && (G || null != es),
+      hangStatusActivity: G ? ei : es
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -125,7 +125,7 @@ let G = Chunk64700.memo(e => {
     }), l))
   })
 });
-G.displayName = "ConnectedVoiceUser";
+U.displayName = "ConnectedVoiceUser";
 let B = [],
   V = function(e) {
     let {
@@ -179,7 +179,7 @@ let B = [],
             nick: a,
             voiceState: o
           } = e, c = t.has(s.id);
-          return (0, r.jsx)(G, {
+          return (0, r.jsx)(U, {
             user: s,
             nick: a,
             isSelfOnOtherClient: C.default.getId() === s.id && o.sessionId !== C.default.getSessionId(),
@@ -211,10 +211,10 @@ let B = [],
       })), l
     })();
     return null == z && null == O ? null : (0, r.jsxs)(x.Wr, {
-      className: s()(_, U.p_, {
-        [U.yZ]: u,
-        [U.lY]: b,
-        [U.fT]: j
+      className: s()(_, G.p_, {
+        [G.yZ]: u,
+        [G.lY]: b,
+        [G.fT]: j
       }),
       collapsed: u,
       children: [z, O]

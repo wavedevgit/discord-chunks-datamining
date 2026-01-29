@@ -113,7 +113,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
       required: I,
       disabled: N,
       accessibilityLabel: L,
-      channel: U,
+      channel: G,
       type: K,
       focused: Y,
       onChange: ee,
@@ -135,7 +135,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
       emojiPickerCloseOnModalOuterClick: e_,
       parentModalKey: eO
     } = e,
-    ej = v.A.useField("channelDrafts")[U.id],
+    ej = v.A.useField("channelDrafts")[G.id],
     ev = null != (n = null == ej ? true : ej.title) ? n : "",
     ex = null == ej ? true : ej.heroFile,
     eE = null == (i = null == ej ? true : ej.publish) || i,
@@ -150,22 +150,22 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
   } = (0, d.cf)([O.A], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = K.commands) ? true : e.enabled) ? O.A.getActiveCommand(U.id) : null,
-      activeCommandSection: (null == (t = K.commands) ? true : t.enabled) ? O.A.getActiveCommandSection(U.id) : null
+      activeCommand: (null == (e = K.commands) ? true : e.enabled) ? O.A.getActiveCommand(G.id) : null,
+      activeCommandSection: (null == (t = K.commands) ? true : t.enabled) ? O.A.getActiveCommandSection(G.id) : null
     }
   }), {
     isLurking: eD,
     isPendingMember: eM,
     disabled: eL,
     canAttachFiles: ek,
-    canEveryoneSendMessages: eU
-  } = (0, H.Sk)(U, K, eR, N), eG = !w.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eB = !eG || !(null == (u = K.commands) ? true : u.enabled) || !Y || "/" !== h, eV = (0, T.A)(), {
+    canEveryoneSendMessages: eG
+  } = (0, H.Sk)(G, K, eR, N), eU = !w.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eB = !eU || !(null == (u = K.commands) ? true : u.enabled) || !Y || "/" !== h, eV = (0, T.A)(), {
     fontSize: eF
   } = (0, d.cf)([A.A], () => ({
     fontSize: A.A.fontSize,
     isSubmitButtonEnabled: A.A.isSubmitButtonEnabled
-  })), eH = (0, d.bG)([D.A], () => D.A.isEnabled()), eK = (0, P.n)(U);
-  (0, H.N_)(K, eL, U.id);
+  })), eH = (0, d.bG)([D.A], () => D.A.isEnabled()), eK = (0, P.n)(G);
+  (0, H.N_)(K, eL, G.id);
   let {
     eventEmitter: eW,
     handleEditorSelectionChanged: ez
@@ -173,7 +173,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
     let t = e => {
         if (e.shouldClear) {
           var t;
-          (0, v.x)(U.id, {
+          (0, v.x)(G.id, {
             title: "",
             heroFile: null
           }), null == (t = eT.current) || t.blur()
@@ -198,7 +198,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
       content: e.value,
       id: "".concat(82744)
     });
-    let l = M.A.getUploads(U.id, R.C.ChannelMessage),
+    let l = M.A.getUploads(G.id, R.C.ChannelMessage),
       i = l.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == ex ? true : ex.name)),
       s = l.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == ex ? true : ex.name)),
       a = i.map(e => $("attachment://".concat(e.filename), e.description, e.spoiler));
@@ -223,10 +223,10 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
         publish: eE
       }
     })).then(t)
-  }, [ec, ev, ex, U.id, eC, eE, eK]), {
+  }, [ec, ev, ex, G.id, eC, eE, eK]), {
     submit: eq,
     handleSubmit: eX
-  } = (0, H.Zx)(eY, K, eT, ew, U.id), {
+  } = (0, H.Zx)(eY, K, eT, ew, G.id), {
     autocompleteRef: eJ,
     handleMaybeShowAutocomplete: eQ,
     handleHideAutocomplete: eZ
@@ -257,18 +257,18 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
     expressionPickerView: e6,
     shouldHideExpressionPicker: e3,
     handleOuterClick: e5
-  } = (0, H.MD)(K, eT, U.id), e8 = (0, H.BX)(h), {
+  } = (0, H.MD)(K, eT, G.id), e8 = (0, H.BX)(h), {
     currentAutocompleteType: e4,
     handleAutocompleteVisibilityChange: te
-  } = (0, H.uW)(K, U.id), tt = (0, H.NO)(eT), tn = (0, H.Vu)(eq, K, eT), tr = (0, H.C)({
+  } = (0, H.uW)(K, G.id), tt = (0, H.NO)(eT), tn = (0, H.Vu)(eq, K, eT), tr = (0, H.C)({
     editorRef: eT,
     disabled: eL,
     textValue: h,
-    channelId: U.id,
+    channelId: G.id,
     chatInputType: K,
     submit: eY
   });
-  (0, G.R)(eW, U.guild_id, U.id);
+  (0, U.R)(eW, G.guild_id, G.id);
   let [tl, ti] = l.useState(false), ts = Y || tl || h.length > 0 || null != ex || ev.length > 0, {
     editorHeaderHeight: ta,
     paddingTop: to
@@ -295,11 +295,11 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
   }, []), tg = l.useCallback(() => {
     var e;
     if (null == ex) return;
-    let t = null == (e = M.A.getUploads(U.id, K.drafts.type).find(e => e.filename === ex.name)) ? true : e.id;
-    null != t && g.A.remove(U.id, t, R.C.ChannelMessage), (0, v.x)(U.id, {
+    let t = null == (e = M.A.getUploads(G.id, K.drafts.type).find(e => e.filename === ex.name)) ? true : e.id;
+    null != t && g.A.remove(G.id, t, R.C.ChannelMessage), (0, v.x)(G.id, {
       heroFile: null
     })
-  }, [U.id, ex, K.drafts.type]);
+  }, [G.id, ex, K.drafts.type]);
   return (0, r.jsx)(x.Sv, {
     value: eW,
     children: (0, r.jsxs)(_.f5, {
@@ -328,8 +328,8 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
                   file: ex,
                   onRemoveHeroImage: tg
                 }) : null, null != ex ? null : (0, r.jsx)(el, {
-                  channel: U,
-                  onImageUploaded: e => (0, v.x)(U.id, {
+                  channel: G,
+                  onImageUploaded: e => (0, v.x)(G.id, {
                     heroFile: e
                   }),
                   onFocus: () => ti(true)
@@ -340,7 +340,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
                   className: X.hz,
                   placeholder: q.intl.string(q.t.Z8fYjO),
                   value: ev,
-                  onChange: e => (0, v.x)(U.id, {
+                  onChange: e => (0, v.x)(G.id, {
                     title: e.target.value
                   })
                 })]
@@ -353,15 +353,15 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
                     ref: eT,
                     id: S,
                     focused: Y,
-                    useSlate: eG,
+                    useSlate: eU,
                     textValue: h,
                     richValue: b,
                     disabled: eL,
                     placeholder: ef,
                     required: I,
                     accessibilityLabel: L,
-                    isPreviewing: (eD || eM) && eU,
-                    channel: U,
+                    isPreviewing: (eD || eM) && eG,
+                    channel: G,
                     type: B.oU.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: ek,
                     uploadPromptCharacterCount: z.CS1,
@@ -393,7 +393,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
             }), (0, r.jsx)("div", {
               className: X.KK,
               children: (0, r.jsx)(W.A, {
-                channelId: U.id,
+                channelId: G.id,
                 type: K,
                 canAttachFiles: ek,
                 ignoreFile: null == ex ? true : ex.name,
@@ -408,11 +408,11 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
           children: [(0, r.jsxs)("div", {
             className: X.j4,
             children: [(0, r.jsx)(er, {
-              channel: U
+              channel: G
             }), (0, r.jsx)(F.A, {
               type: B.oU.CREATE_ANNOUNCEMENT_POST,
               disabled: eL,
-              channel: U,
+              channel: G,
               handleSubmit: eX,
               isEmpty: 0 === h.trim().length,
               showAllButtons: true
@@ -427,7 +427,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
               children: (0, r.jsx)(f.YNO, {
                 targetElementRef: tc,
                 renderPopout: () => (0, r.jsx)(et, {
-                  channelId: U.id,
+                  channelId: G.id,
                   canCreateThread: eK
                 }),
                 shouldShow: tu,
@@ -468,10 +468,10 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
         }), (0, r.jsx)(j.A, {
           targetRef: eI,
           ref: eJ,
-          channel: U,
+          channel: G,
           canMentionRoles: ed,
           canMentionChannels: ep,
-          useNewSlashCommands: eG,
+          useNewSlashCommands: eU,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: h,
@@ -493,7 +493,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
         onSelectGIF: tn,
         onSelectEmoji: tt,
         onSelectSticker: tr,
-        channel: U,
+        channel: G,
         closeOnModalOuterClick: e_,
         parentModalKey: eO,
         position: "top",
@@ -588,7 +588,7 @@ function er(e) {
     color: "transparent",
     look: "blank",
     onChange: e => {
-      (0, U.R)(e.currentTarget.files, t, R.C.ChannelMessage, {
+      (0, G.R)(e.currentTarget.files, t, R.C.ChannelMessage, {
         requireConfirm: true,
         origin: "file_picker"
       }), e.currentTarget.value = null

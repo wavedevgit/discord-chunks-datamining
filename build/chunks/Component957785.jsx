@@ -24,31 +24,30 @@ let h = Chunk64700.forwardRef(function(e, t) {
     isSingleCard: A = false,
     wishlistId: y,
     wishlistItem: _,
-    cardSize: O = d.Y.MEDIUM,
-    itemSource: j
+    cardSize: O = d.Y.MEDIUM
   } = e, {
-    skuId: v,
-    skuProductLine: x
+    skuId: j,
+    skuProductLine: v
   } = _, {
-    trackUserProfileWishlistAction: E
-  } = (0, u.NJ)(), C = g ? p.ho : p.C8, S = A ? p.pr : p.Nr, I = null != b && b > 0, N = (0, r.jsxs)(o.DUT, {
+    trackUserProfileWishlistAction: x
+  } = (0, u.NJ)(), E = g ? p.ho : p.C8, C = A ? p.pr : p.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
     onClick: () => {
-      h(), E({
-        action: I ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: I ? null : v,
+      h(), x({
+        action: S ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+        skuId: S ? null : j,
         wishlistId: y,
-        productLines: new Set([x])
+        productLines: new Set([v])
       })
     },
-    className: s()(S, {
+    className: s()(C, {
       [p.ax]: O === d.Y.SMALL
     }),
     "aria-label": null != (n = f.title) ? n : "",
     innerRef: t,
     children: [(0, r.jsx)("div", {
-      className: C,
+      className: E,
       children: m()
-    }), I && (0, r.jsx)("div", {
+    }), S && (0, r.jsx)("div", {
       className: p.sv,
       children: (0, r.jsxs)(o.Text, {
         variant: "text-xs/medium",
@@ -56,29 +55,13 @@ let h = Chunk64700.forwardRef(function(e, t) {
         children: ["+", b]
       })
     })]
-  }), T = !I && null != j;
-  return (0, r.jsxs)("div", {
-    className: s()({
-      [p.r4]: T
-    }),
-    children: [T && (0, r.jsx)("div", {
-      className: p.RL,
-      children: j === c.uS.POPULAR ? (0, r.jsx)(o.Y3C, {
-        className: s()(p.fd, p.I$),
-        size: "xxs",
-        color: "currentColor"
-      }) : (0, r.jsx)(o.C3E, {
-        className: s()(p.fd, p.O1),
-        size: "xxs",
-        color: "currentColor"
-      })
-    }), (0, r.jsx)(a.un, {
-      asContainer: true,
-      asset: null == (i = f.renderIcon) ? true : i.call(f, _),
-      assetSize: c.Q8,
-      title: f.title,
-      body: null != (l = f.body) ? l : "",
-      children: N
-    })]
+  });
+  return (0, r.jsx)(a.un, {
+    asContainer: true,
+    asset: null == (i = f.renderIcon) ? true : i.call(f, _),
+    assetSize: c.Q8,
+    title: f.title,
+    body: null != (l = f.body) ? l : "",
+    children: I
   })
 })

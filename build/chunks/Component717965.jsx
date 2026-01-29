@@ -316,7 +316,7 @@ let eb = Chunk64700.memo(function(e) {
       } = e, {
         isShown: l
       } = t;
-      return (0, r.jsx)(G.A, {
+      return (0, r.jsx)(U.A, {
         ref: q,
         centerButton: true,
         hasPermission: v,
@@ -365,7 +365,7 @@ let eb = Chunk64700.memo(function(e) {
           } = e, {
             isShown: l
           } = t;
-          return (0, r.jsx)(U.A, {
+          return (0, r.jsx)(G.A, {
             ref: X,
             centerButton: true,
             onPopoutClick: n,

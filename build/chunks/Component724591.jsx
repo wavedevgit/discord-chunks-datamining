@@ -44,13 +44,13 @@ let N = Chunk64700.memo(function(e) {
   l.useEffect(() => {
     N && k && L(C.i.INDIRECT_ACTION)
   }, [L, N, k]);
-  let U = l.useCallback(() => {
+  let G = l.useCallback(() => {
       var e, t;
       L(C.i.TAKE_ACTION);
       let n = null != (e = null == (t = b.A.getStorefrontState(i.id)) ? true : t.activePage) ? e : 0;
       (0, f.pX)(E.BVt.CHANNELS_GAME_SHOP(i.id, n))
     }, [i.id, L]),
-    G = l.useCallback(() => {
+    U = l.useCallback(() => {
       (0, A.X)({
         guildId: i.id,
         forceFetch: k
@@ -119,8 +119,8 @@ let N = Chunk64700.memo(function(e) {
         children: (null == i ? true : i.id) === (0, g.zf)() ? S.intl.string(S.t.xFQAPs) : S.intl.string(S.t.vyaWs7)
       }),
       selected: N,
-      onMouseDown: G,
-      onClick: U,
+      onMouseDown: U,
+      onClick: G,
       onContextMenu: V,
       trailing: (0, r.jsxs)(r.Fragment, {
         children: [k && (0, r.jsx)(d.LpS, {
@@ -128,7 +128,7 @@ let N = Chunk64700.memo(function(e) {
           color: c.A.colors.BACKGROUND_BRAND.css
         }), l]
       })
-    }), [i.id, N, G, U, V, k]),
+    }), [i.id, N, U, G, V, k]),
     K = l.useMemo(() => {
       let e = null != D && null != D.assetId ? v.A.toURLSafe((0, j.YE)(D.applicationId, D.assetId, 128, "webp")) : true,
         t = null != D && null != D.backgroundImageAssetId ? v.A.toURLSafe((0, j.YE)(D.applicationId, D.backgroundImageAssetId, 128, "webp")) : true;
@@ -142,8 +142,8 @@ let N = Chunk64700.memo(function(e) {
       ref: T,
       children: H
     }), w || R || !k || null == D ? null : (0, r.jsx)(y.A, {
-      onActionClick: U,
-      onActionMouseDown: G,
+      onActionClick: G,
+      onActionMouseDown: U,
       onRender: F,
       onRequestClose: B,
       targetElementRef: P,

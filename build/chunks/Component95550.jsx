@@ -117,9 +117,9 @@ let eo = (0, Chunk915089.Ld)(),
     let {
       channel: n,
       onClose: r
-    } = e, i = null != (t = (0, C.Ay)(n)) ? t : "", s = (0, u.bG)([G.Ay], () => {
+    } = e, i = null != (t = (0, C.Ay)(n)) ? t : "", s = (0, u.bG)([U.Ay], () => {
       var e;
-      return null != (e = G.Ay.lastMessageId(n.id)) ? e : n.id
+      return null != (e = U.Ay.lastMessageId(n.id)) ? e : n.id
     });
     return (0, l.jsx)(p.DUT, {
       onClick: () => {
@@ -778,7 +778,7 @@ class ed extends(r = Chunk64700.PureComponent) {
     }), el(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
         r = (0, v.dI)(e),
-        l = U.A.getChannelId() === e.id;
+        l = G.A.getChannelId() === e.id;
       g.A.addRecipients(e.id, t, ee.ThZ.ADD_FRIENDS_TO_DM).then(n => {
         if (l) {
           if (e.isDM() && n !== e.id) return void f.A.call(n, false, true);

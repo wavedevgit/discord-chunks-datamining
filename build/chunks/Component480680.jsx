@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 480680, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G
+  A: () => U
 }), require("./114821.js"), require("./339614.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -71,7 +71,7 @@ let L = [],
     disableBannerAnimation: true
   };
 
-function U(e) {
+function G(e) {
   let {
     includePanelSpacing: t
   } = e, n = (0, v.op)(), {
@@ -95,14 +95,14 @@ function U(e) {
     })
   }, [i, n]), {
     hasLoadedEver: R,
-    canLoadMore: U
+    canLoadMore: G
   } = (0, o.cf)([E.A], () => ({
     hasLoadedEver: E.A.hasLoadedEver,
     canLoadMore: E.A.canLoadMore({})
   }));
   l.useEffect(() => {
-      U && !R && N(P.VA.ON_OPEN)
-    }, [U, R, N]),
+      G && !R && N(P.VA.ON_OPEN)
+    }, [G, R, N]),
     function(e) {
       let {
         unreadChannelIds: t
@@ -122,8 +122,8 @@ function U(e) {
         })
       }, [e, t])
     }(R ? I : null);
-  let G = (0, o.yK)([g.A], () => g.A.getSavedMessages()),
-    K = l.useMemo(() => G.flatMap(e => {
+  let U = (0, o.yK)([g.A], () => g.A.getSavedMessages()),
+    K = l.useMemo(() => U.flatMap(e => {
       var t;
       let {
         message: n
@@ -135,7 +135,7 @@ function U(e) {
         kind: P.yL.BOOKMARK,
         message: n
       }]
-    }), [G]),
+    }), [U]),
     W = B(S, i, a),
     z = B(I, i, null);
   (0, h.Ay)(() => {
@@ -227,9 +227,9 @@ function U(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   return (0, r.jsx)(v.GM, {
-    children: (0, r.jsx)(U, M({}, e))
+    children: (0, r.jsx)(G, M({}, e))
   })
 }
 

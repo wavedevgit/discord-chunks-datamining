@@ -47,9 +47,9 @@ function P(e) {
   } = (0, i.cf)([u.A], () => ({
     relationshipType: u.A.getRelationshipType(t.id),
     originApplicationId: u.A.getOriginApplicationId(t.id)
-  })), k = (0, a.fi)(t.id), U = (0, o.q)({
+  })), k = (0, a.fi)(t.id), G = (0, o.q)({
     userId: t.id
-  }), G = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), B = (0, i.bG)([h.A], () => {
+  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), B = (0, i.bG)([h.A], () => {
     var e;
     return null == (e = h.A.getUserProfile(t.id)) ? true : e.application
   });
@@ -67,7 +67,7 @@ function P(e) {
         displayProfile: P,
         themeType: I.d.SIDEBAR
       }),
-      nicknameIcons: G ? null : (0, r.jsx)(C.A, {
+      nicknameIcons: U ? null : (0, r.jsx)(C.A, {
         userId: t.id,
         isVisible: R,
         onOpenProfile: D
@@ -105,7 +105,7 @@ function P(e) {
       onOpenUserProfileModal: D
     }), (0, r.jsxs)(x.A.Overlay, {
       className: T.Lw,
-      children: [!G && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(j.A, {
+      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(m.A, {
@@ -118,11 +118,11 @@ function P(e) {
         applicationId: B.id,
         commandIds: B.popularApplicationCommandIds,
         channel: w
-      }), U.length > 0 && (0, r.jsx)(j.A, {
+      }), G.length > 0 && (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(A.A, {
-          applicationIds: U
+          applicationIds: G
         })
       }), (0, r.jsx)(j.A, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),

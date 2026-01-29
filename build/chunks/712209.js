@@ -41,7 +41,7 @@ var r, l, Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk37411 = require("./37411.js");
 
-function G(e, t, n) {
+function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,7 +57,7 @@ function B(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      G(e, t, n[t])
+      U(e, t, n[t])
     })
   }
   return e
@@ -170,7 +170,7 @@ class W extends Chunk143236.EventEmitter {
       }
   }
   constructor(e, t) {
-    super(), G(this, "state", true), G(this, "scrollerRef", true), G(this, "undoStack", true), G(this, "maybeLoadMore", true), G(this, "reloadMessages", true), G(this, "getNumUnreadChannels", true), G(this, "markChannelRead", true), G(this, "undoMarkChannelRead", true), G(this, "markGuildRead", true), G(this, "deleteChannel", true), G(this, "markAllRead", true), G(this, "toggle", true), G(this, "handleUserGuildSettingsStoreChange", true), G(this, "handleJoinedThreadsStoreChange", true), G(this, "handleActiveThreadsStoreChange", true), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
+    super(), U(this, "state", true), U(this, "scrollerRef", true), U(this, "undoStack", true), U(this, "maybeLoadMore", true), U(this, "reloadMessages", true), U(this, "getNumUnreadChannels", true), U(this, "markChannelRead", true), U(this, "undoMarkChannelRead", true), U(this, "markGuildRead", true), U(this, "deleteChannel", true), U(this, "markAllRead", true), U(this, "toggle", true), U(this, "handleUserGuildSettingsStoreChange", true), U(this, "handleJoinedThreadsStoreChange", true), U(this, "handleActiveThreadsStoreChange", true), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
       var e;
       let t = null == (e = this.scrollerRef.current) ? true : e.getScrollerState();
       null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 2e3 && this.loadMore()
@@ -371,7 +371,7 @@ function q(e, t, n, r) {
       }
       if (r.isThread()) {
         let e = (0, j.l)(r);
-        return e === U.CP.ALL_MESSAGES ? 4 : e === U.CP.NO_MESSAGES ? 7 : 5
+        return e === G.CP.ALL_MESSAGES ? 4 : e === G.CP.NO_MESSAGES ? 7 : 5
       } {
         let n = R.Ay.getChannelMessageNotifications(e, t),
           r = n === k.orn.NULL ? R.Ay.getMessageNotifications(e) : n;

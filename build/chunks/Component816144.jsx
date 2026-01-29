@@ -111,7 +111,7 @@ function V(e) {
       }, "manage"))), H && t.push((0, r.jsx)(f.A, {
         channel: n
       }, "report")), t.length > 0 && (e = (0, r.jsx)("div", {
-        className: U.U,
+        className: G.U,
         children: t
       }))
     } else e = (0, r.jsx)(x.A, {
@@ -124,7 +124,7 @@ function V(e) {
       user: _,
       children: [null != _ && !_.isProvisional && (0, r.jsx)(s.Heading, {
         variant: "heading-xl/medium",
-        className: G.SX,
+        className: U.SX,
         children: C
       }), k.intl.format(k.t["Qvg+6+"], {
         username: h

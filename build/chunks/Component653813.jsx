@@ -26,7 +26,7 @@ function _(e) {
     giftMessage: h
   } = e, {
     priceOptions: I
-  } = (0, s.P5)(), C = r.useCallback(e => {
+  } = (0, s.P5)(), C = n.useCallback(e => {
     (0, o.A)({
       isGift: true,
       giftRecipient: t,
@@ -43,30 +43,30 @@ function _(e) {
       giftMessage: h
     }), i()
   }, [t, _, p, g, h, i]);
-  return (0, n.jsxs)(a.EOs, {
+  return (0, r.jsxs)(a.EOs, {
     transitionState: l,
     size: a.rIJ.DYNAMIC,
     className: f.jT,
     parentComponent: "GiftOptionSelectModal",
     "data-migration-pending": true,
-    children: [(0, n.jsx)(a.rQ0, {
+    children: [(0, r.jsx)(a.rQ0, {
       className: f.Hc,
       "data-migration-pending": true,
-      children: (0, n.jsxs)(a.BJc, {
+      children: (0, r.jsxs)(a.BJc, {
         direction: "horizontal",
         justify: "space-between",
-        children: [(0, n.jsx)(a.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: m.intl.string(m.t["wg/30i"])
-        }), (0, n.jsx)(a.s_y, {
+        }), (0, r.jsx)(a.s_y, {
           onClick: i,
           "data-migration-pending": true
         })]
       })
-    }), (0, n.jsx)(a.$mQ, {
+    }), (0, r.jsx)(a.$mQ, {
       className: f.S3,
       "data-migration-pending": true,
-      children: (0, n.jsx)(d.A, {
+      children: (0, r.jsx)(d.A, {
         onSelectSku: C,
         giftRecipient: t,
         priceOptions: I,
@@ -80,25 +80,25 @@ function p(e) {
   let {
     giftRecipient: t,
     onClose: i,
-    transitionState: r,
+    transitionState: n,
     analyticsLocations: a,
     analyticsLocation: o,
     analyticsObject: d,
     giftMessage: c
   } = e;
-  return (0, n.jsx)(s.PaymentContextProvider, {
+  return (0, r.jsx)(s.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: u.T7,
     isGift: true,
-    children: (0, n.jsx)(l.dX, {
+    children: (0, r.jsx)(l.dX, {
       isGift: true,
       giftRecipient: t,
       giftingOrigin: u.vQ.DM_CHANNEL,
-      children: (0, n.jsx)(_, {
+      children: (0, r.jsx)(_, {
         giftRecipient: t,
         onClose: i,
-        transitionState: r,
+        transitionState: n,
         analyticsLocations: a,
         analyticsLocation: o,
         analyticsObject: d,

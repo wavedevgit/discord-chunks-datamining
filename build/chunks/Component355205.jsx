@@ -454,7 +454,7 @@ class eN extends Chunk64700.PureComponent {
       } = this.props;
       (o()(null != e, "Frame cannot be null during navigation click"), t) ? g.h.dispatch({
         type: "ACTIVITY_POPOUT_WINDOW_OPEN"
-      }): U.A.updateFrameLayoutMode({
+      }): G.A.updateFrameLayoutMode({
         applicationId: e.applicationId,
         layoutMode: eO.y.FOCUSED
       })
@@ -481,7 +481,7 @@ let eT = (0, Chunk707606.A)(function(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["guildId"]), s = (0, u.bG)([ee.default], () => ee.default.getId()), a = (0, u.bG)([B.Ay, ec.A], () => (0, z.A)(B.Ay, ec.A)), o = (0, u.bG)([ea.A, et.A], () => et.A.getChannel(ea.A.getVoiceChannelId())), d = (0, u.bG)([E.Ay], () => E.Ay.getConnectedActivityChannelId()), p = (0, u.bG)([et.A], () => et.A.getChannel(d)), h = (0, u.bG)([en.A], () => en.A.getGuild(null == p ? true : p.guild_id)), [f, g] = (0, u.yK)([$.A], () => [$.A.getCurrentUserActiveStream(), $.A.getStreamerActiveStreamMetadata()]), m = (0, u.bG)([j.A], () => j.A.useReducedMotion), b = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), A = (0, u.bG)([G.A], () => G.A.getConnectedFrame()), y = (0, u.bG)([en.A, el.A], () => null == o || F.vz(o, en.A, el.A, false)), [_] = (0, T.A)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != A ? A.applicationId : true) ? t : ""]), x = (0, u.bG)([M.A], () => M.A.getFakeGameData()), S = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), P = (0, C.u)() && null != S && (0, v.f)(), w = (0, u.bG)([er.A], () => (0, H.A)(er.A) && (0, ep.isWindows)()), D = (0, u.bG)([ei.A], () => null != s ? ei.A.findActivity(s, e => e.type === eA.$pd.PLAYING) : null), L = null != f && f.ownerId === s && f.state !== eA.XYD.ENDED, k = (0, u.bG)([eo.default, es.A], () => null != p ? (0, R.m1)(p, eo.default, es.A) : true), U = (0, X.A)(), [V, K] = l.useState(false), W = (0, u.bG)([q.A], () => q.A.getWindowOpen(eA.MLl.ACTIVITY_POPOUT)), {
+  }(e, ["guildId"]), s = (0, u.bG)([ee.default], () => ee.default.getId()), a = (0, u.bG)([B.Ay, ec.A], () => (0, z.A)(B.Ay, ec.A)), o = (0, u.bG)([ea.A, et.A], () => et.A.getChannel(ea.A.getVoiceChannelId())), d = (0, u.bG)([E.Ay], () => E.Ay.getConnectedActivityChannelId()), p = (0, u.bG)([et.A], () => et.A.getChannel(d)), h = (0, u.bG)([en.A], () => en.A.getGuild(null == p ? true : p.guild_id)), [f, g] = (0, u.yK)([$.A], () => [$.A.getCurrentUserActiveStream(), $.A.getStreamerActiveStreamMetadata()]), m = (0, u.bG)([j.A], () => j.A.useReducedMotion), b = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), A = (0, u.bG)([U.A], () => U.A.getConnectedFrame()), y = (0, u.bG)([en.A, el.A], () => null == o || F.vz(o, en.A, el.A, false)), [_] = (0, T.A)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != A ? A.applicationId : true) ? t : ""]), x = (0, u.bG)([M.A], () => M.A.getFakeGameData()), S = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), P = (0, C.u)() && null != S && (0, v.f)(), w = (0, u.bG)([er.A], () => (0, H.A)(er.A) && (0, ep.isWindows)()), D = (0, u.bG)([ei.A], () => null != s ? ei.A.findActivity(s, e => e.type === eA.$pd.PLAYING) : null), L = null != f && f.ownerId === s && f.state !== eA.XYD.ENDED, k = (0, u.bG)([eo.default, es.A], () => null != p ? (0, R.m1)(p, eo.default, es.A) : true), G = (0, X.A)(), [V, K] = l.useState(false), W = (0, u.bG)([q.A], () => q.A.getWindowOpen(eA.MLl.ACTIVITY_POPOUT)), {
     hasAlreadyLinked: Y,
     canStartAuthorization: J,
     connectionApp: Z,
@@ -528,7 +528,7 @@ let eT = (0, Chunk707606.A)(function(e) {
     streamMetadata: g,
     channelName: k,
     guildForConnectedChannel: h,
-    streamQualityIndicator: U,
+    streamQualityIndicator: G,
     isForceShowSharingPopout: V,
     setIsForceShowSharingPopout: K,
     isActivityPopoutOpen: W,

@@ -45,6 +45,6 @@ function j(e) {
     L = (0, m.A)(e.id);
   (0, g.Ao)("useGuildActionRows");
   let k = (0, f.C$)(e.id, "useGuildActionRows"),
-    U = e.features.has(O.GuildFeatures.GAME_SERVERS);
-  return w && P.push(_.n.GUILD_HUB_HEADER_OPTIONS), !N && C && I && null != S && S.length > 0 ? P.push(_.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(_.n.GUILD_PREMIUM_PROGRESS_BAR), !w && C && P.push(_.n.GUILD_HOME), t && P.push(_.n.GUILD_SCHEDULED_EVENTS), !w && R && D && P.push(_.n.CHANNELS_AND_ROLES), j && P.push(_.n.GUILD_ROLE_SUBSCRIPTIONS), v && P.push(_.n.GUILD_SHOP), x && E && P.push(_.n.GUILD_GAME_SHOP), (T && (R || M) || n && e.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(_.n.GUILD_MOD_DASH_MEMBER_SAFETY), L && P.push(_.n.GUILD_BOOSTS), k && U && P.push(_.n.GAME_SERVERS), P
+    G = e.features.has(O.GuildFeatures.GAME_SERVERS);
+  return w && P.push(_.n.GUILD_HUB_HEADER_OPTIONS), !N && C && I && null != S && S.length > 0 ? P.push(_.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(_.n.GUILD_PREMIUM_PROGRESS_BAR), !w && C && P.push(_.n.GUILD_HOME), t && P.push(_.n.GUILD_SCHEDULED_EVENTS), !w && R && D && P.push(_.n.CHANNELS_AND_ROLES), j && P.push(_.n.GUILD_ROLE_SUBSCRIPTIONS), v && P.push(_.n.GUILD_SHOP), x && E && P.push(_.n.GUILD_GAME_SHOP), (T && (R || M) || n && e.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(_.n.GUILD_MOD_DASH_MEMBER_SAFETY), L && P.push(_.n.GUILD_BOOSTS), k && G && P.push(_.n.GAME_SERVERS), P
 }

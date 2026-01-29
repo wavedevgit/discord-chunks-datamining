@@ -44,7 +44,7 @@ function I(e) {
     isNewChannel: M,
     muted: L,
     resolvedUnreadSetting: k
-  } = e, U = (0, l.bG)([m.Ay], () => m.Ay.getMentionCount(n.id)), G = (0, l.bG)([m.Ay], () => m.Ay.getIsMentionLowImportance(n.id)), B = (0, a.Ay)(n), V = (0, l.bG)([g.A], () => !g.A.can(E.xBc.CONNECT, n)), F = (0, o.H)(n), H = (0, l.bG)([b.A], () => b.A.hasVideo(n.id)), K = (0, p.qT)(n.id) && n.isGuildStageVoice(), W = (0, O.Ay)({
+  } = e, G = (0, l.bG)([m.Ay], () => m.Ay.getMentionCount(n.id)), U = (0, l.bG)([m.Ay], () => m.Ay.getIsMentionLowImportance(n.id)), B = (0, a.Ay)(n), V = (0, l.bG)([g.A], () => !g.A.can(E.xBc.CONNECT, n)), F = (0, o.H)(n), H = (0, l.bG)([b.A], () => b.A.hasVideo(n.id)), K = (0, p.qT)(n.id) && n.isGuildStageVoice(), W = (0, O.Ay)({
     channel: n,
     locked: V,
     video: (H || K) && null == F,
@@ -53,9 +53,9 @@ function I(e) {
     var e, t;
     return null != (e = null == (t = f.A.getGuild(n.guild_id)) ? true : t.features.has(E.GuildFeatures.COMMUNITY)) && e
   });
-  if ((0, _.A)(U)) return (0, r.jsx)(x.A, {
-    mentionsCount: U,
-    isMentionLowImportance: G
+  if ((0, _.A)(G)) return (0, r.jsx)(x.A, {
+    mentionsCount: G,
+    isMentionLowImportance: U
   });
   if ((0, d.v)(R)) return (0, r.jsx)(d.A, {
     locked: D

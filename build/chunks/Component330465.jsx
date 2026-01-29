@@ -86,8 +86,8 @@ function L(e, t) {
 let k = Chunk64700.memo(function(e) {
   var t, n, i, f, k;
   let {
-    guildNode: U,
-    setRef: G,
+    guildNode: G,
+    setRef: U,
     onDragStart: B,
     onDragEnd: V,
     route: F,
@@ -110,7 +110,7 @@ let k = Chunk64700.memo(function(e) {
   } = e, {
     id: ei,
     parentId: es
-  } = U, ea = null != (t = e.upperBadge) ? t : q ? (0, N.em)() : null != Y ? (0, N.oi)(Y) : true, eo = null != (n = e.lowerBadge) ? n : true;
+  } = G, ea = null != (t = e.upperBadge) ? t : q ? (0, N.em)() : null != Y ? (0, N.oi)(Y) : true, eo = null != (n = e.lowerBadge) ? n : true;
   null == eo && X > 0 ? eo = null != (f = (0, N.wN)(X, J ? p.LU0.colors.BACKGROUND_MOD_STRONG.css : p.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? f : true : null == eo && null != et && (eo = null != (k = (0, N.eW)({
     guildJoinRequestStatus: et
   })) ? k : true);
@@ -124,8 +124,8 @@ let k = Chunk64700.memo(function(e) {
       item: () => (requestAnimationFrame(() => {
         null == B || B()
       }), {
-        type: U.type,
-        nodeId: U.id
+        type: G.type,
+        nodeId: G.id
       }),
       end() {
         null == V || V(), (0, g.um)(O.Ay.getCompatibleGuildFolders())
@@ -167,8 +167,8 @@ let k = Chunk64700.memo(function(e) {
       e ? e_.delay() : (e_.cancel(), ey(false))
     }, [e_]),
     eS = l.useCallback(e => {
-      null == G || G(ei, e)
-    }, [ei, G]),
+      null == U || U(ei, e)
+    }, [ei, U]),
     eI = (0, p.rdh)(p.LU0.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
   let eN = eA || em ? (0, r.jsx)(x.A, {
@@ -248,7 +248,7 @@ let k = Chunk64700.memo(function(e) {
       children: eT
     }), Z ? (0, r.jsx)(E.Ay, {
       name: H.name,
-      targetNode: U,
+      targetNode: G,
       onDragOverChanged: eC
     }) : null]
   })

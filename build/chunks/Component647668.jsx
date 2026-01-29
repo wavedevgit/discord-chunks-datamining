@@ -39,7 +39,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk653750 = require("./653750.js");
 
-function U(e, t, n) {
+function G(e, t, n) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: k.nM,
     children: [(0, r.jsx)(e, {
@@ -53,7 +53,7 @@ function U(e, t, n) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     muteConfig: t,
     className: n
@@ -130,7 +130,7 @@ function B(e) {
       embeddedActivitiesUsers: l.useMemo(() => (0, I.L)(O, F, "GuildTooltip - embeddedActivitiesUsers"), [O, F]),
       hasActivity: b.length > 0 || L.length > 0 || V.length > 0 || O.length > 0
     }),
-    $ = U(d.HKD, q, Y),
+    $ = G(d.HKD, q, Y),
     ee = 0 === X.length ? null : (0, r.jsxs)("div", {
       className: k.nM,
       children: [(0, r.jsx)(d.qux, {
@@ -154,8 +154,8 @@ function B(e) {
         })]
       })]
     }),
-    et = U(d.Fzq, Q, Y),
-    en = U(d.k9F, Z, Y),
+    et = G(d.Fzq, Q, Y),
+    en = G(d.k9F, Z, Y),
     {
       isMuted: er,
       muteConfig: el
@@ -164,7 +164,7 @@ function B(e) {
       muteConfig: w.Ay.getMuteConfig(Y)
     }), [Y]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [ee, $, et, en, er ? (0, r.jsx)(G, {
+    children: [ee, $, et, en, er ? (0, r.jsx)(U, {
       muteConfig: el,
       className: s()(k.LM, {
         [k.Sx]: null != $ || null != et

@@ -95,7 +95,7 @@ function k(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     applicationId: t
   } = e, n = (0, i.bG)([u.A], () => u.A.getApplication(t));
@@ -103,7 +103,7 @@ function U(e) {
     application: n
   }, n.id)
 }
-let G = Chunk64700.memo(function(e) {
+let U = Chunk64700.memo(function(e) {
     var t;
     let {
       item: i,
@@ -170,7 +170,7 @@ let G = Chunk64700.memo(function(e) {
     let b = null != i.local_id,
       E = (0, x.A)({
         item: i,
-        renderApplication: e => (0, r.jsx)(U, {
+        renderApplication: e => (0, r.jsx)(G, {
           applicationId: e
         })
       }),
@@ -224,7 +224,7 @@ let G = Chunk64700.memo(function(e) {
       items: t
     } = e, n = g.ns.useSetting();
     return (0, E.q)(t), (0, r.jsx)(r.Fragment, {
-      children: t.map(e => (0, r.jsx)(G, {
+      children: t.map(e => (0, r.jsx)(U, {
         item: e,
         ackedBeforeId: n
       }, e.id))

@@ -59,10 +59,10 @@ function M(e) {
     v(null), T(0), clearTimeout(j)
   };
   if (null == d) return null;
-  let U = w.intl.string(w.t.YUU0RF);
-  _ && (U = a.w.get(N.wqg) ? w.intl.string(w.t["nkq1l+"]) : w.intl.string(w.t.Be8Q5E));
-  let G = null;
-  !s && b && (G = (0, r.jsx)(c.A, {
+  let G = w.intl.string(w.t.YUU0RF);
+  _ && (G = a.w.get(N.wqg) ? w.intl.string(w.t["nkq1l+"]) : w.intl.string(w.t.Be8Q5E));
+  let U = null;
+  !s && b && (U = (0, r.jsx)(c.A, {
     className: R.Cp,
     determineOwnVisibility: false
   }));
@@ -70,7 +70,7 @@ function M(e) {
     V = (0, r.jsx)(o.Qk9, {
       selected: true,
       lowerBadge: h > 0 ? (0, I.wN)(h) : null,
-      upperBadge: G,
+      upperBadge: U,
       lowerBadgeSize: {
         width: (0, o.o6S)(h)
       },
@@ -143,7 +143,7 @@ function M(e) {
           className: R.Io
         }), (0, r.jsx)(S.A, {
           hideOnClick: true,
-          text: U,
+          text: G,
           selected: s,
           children: V
         })]

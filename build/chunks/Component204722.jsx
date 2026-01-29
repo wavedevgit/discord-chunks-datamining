@@ -56,8 +56,8 @@ let D = Chunk64700.memo(function(e) {
       embeddedActivity: T,
       frame: D,
       activity: k,
-      application: U,
-      analyticsContext: G,
+      application: G,
+      analyticsContext: U,
       inviteButtonRef: B,
       accountLinkButtonRef: V,
       startAuthorization: F,
@@ -67,7 +67,7 @@ let D = Chunk64700.memo(function(e) {
     } = e, {
       parentAnalyticsLocation: z,
       analyticsLocations: Y
-    } = (0, g.Ay)(), q = (0, j.A)(U, "rtc-activity-panel"), X = R(U, k, T), J = l.useCallback(() => {
+    } = (0, g.Ay)(), q = (0, j.A)(G, "rtc-activity-panel"), X = R(G, k, T), J = l.useCallback(() => {
       var e;
       s()(null != k, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
         action_type: "invite_to_game",
@@ -76,9 +76,9 @@ let D = Chunk64700.memo(function(e) {
       }), (0, b.X)(z, b.O.INVITE), S.default.track(N.HAw.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: k.application_id,
-        location: G.location
+        location: U.location
       }), (0, d.qf)(k, false)
-    }, [k, G, z, x]), Q = l.useCallback((e, t) => () => {
+    }, [k, U, z, x]), Q = l.useCallback((e, t) => () => {
       (0, b.X)(z, b.O.LEAVE_ACTIVITY), f.A.leaveActivity({
         location: t,
         applicationId: e,
@@ -136,7 +136,7 @@ let D = Chunk64700.memo(function(e) {
     }, []), l.useEffect(() => {
       K && (er(false), null != et.current && (clearTimeout(et.current), et.current = null))
     }, [K]);
-    let el = (null == q ? true : q.guildId) == null || null == U ? null : (0, r.jsx)(L, {
+    let el = (null == q ? true : q.guildId) == null || null == G ? null : (0, r.jsx)(L, {
         guildId: q.guildId,
         applicationId: q.id
       }),

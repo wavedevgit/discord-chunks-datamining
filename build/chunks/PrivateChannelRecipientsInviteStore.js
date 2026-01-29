@@ -128,7 +128,7 @@ function k(e, t) {
   return (0, g.sS)(m.Ay.getName(e.user).toLocaleLowerCase()).localeCompare((0, g.sS)(m.Ay.getName(t.user).toLocaleLowerCase()))
 }
 
-function U(e) {
+function G(e) {
   let {
     results: t
   } = e;
@@ -151,13 +151,13 @@ function U(e) {
   I = n, K.emitChange()
 }
 
-function G() {
-  return null != r && (r.destroy(), r = null), u.A.getUserSearchContext(U, 1e3)
+function U() {
+  return null != r && (r.destroy(), r = null), u.A.getUserSearchContext(G, 1e3)
 }
 
 function B(e) {
   if (e.key !== j.TLS) returnfalse;
-  x = true, L(), r = G(), P = null, D("")
+  x = true, L(), r = U(), P = null, D("")
 }
 
 function V(e) {
@@ -220,7 +220,7 @@ let K = new H(Chunk73153.h, {
     MODAL_PUSH: B,
     SHOW_ACTION_SHEET: B,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      x = true, L(), r = G(), P = e.channelId, D("")
+      x = true, L(), r = U(), P = e.channelId, D("")
     },
     MODAL_POP: V,
     HIDE_ACTION_SHEET: V,

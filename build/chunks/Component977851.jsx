@@ -153,10 +153,10 @@ function x(e) {
       clearTimeout(e)
     }
   }, [M]);
-  let U = [t = f && C ? O.intl.string(O.t.DPgc5h) : I ? O.intl.string(O.t.nthdxB) : O.intl.string(O.t["5KxXrK"])];
-  return P > 0 && U.push(O.intl.formatToPlainString(O.t["3l1GOx"], {
+  let G = [t = f && C ? O.intl.string(O.t.DPgc5h) : I ? O.intl.string(O.t.nthdxB) : O.intl.string(O.t["5KxXrK"])];
+  return P > 0 && G.push(O.intl.formatToPlainString(O.t["3l1GOx"], {
     mentionCount: P
-  })), T > 0 && U.push(O.intl.string(O.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
+  })), T > 0 && G.push(O.intl.string(O.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -177,7 +177,7 @@ function x(e) {
     buttonRef: S,
     onClick: w,
     label: t,
-    "aria-label": U.join(", "),
+    "aria-label": G.join(", "),
     iconComponent: R,
     tooltipPosition: "bottom",
     wrapperClassName: s()(i, null != a && {

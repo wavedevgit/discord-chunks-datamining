@@ -61,7 +61,7 @@ let R = {
 
 function D() {
   var e, t;
-  let i, D, M, L, k, U, G, B, V, F, H, K, W = (0, a.Vd)("favorites"),
+  let i, D, M, L, k, G, U, B, V, F, H, K, W = (0, a.Vd)("favorites"),
     {
       favoriteAdded: z,
       clearFavoriteAdded: Y
@@ -85,12 +85,12 @@ function D() {
       if (!D) returnfalse;
       let e = y.A.getCurrentUserActiveStream();
       return null != e && null != Q[e.channelId]
-    }), L = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), k = (0, o.bG)([j.A], () => D && null != i && j.A.hasVideo(i), [D, i]), U = (0, o.yK)([p.Ay], () => v.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), G = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
+    }), L = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), k = (0, o.bG)([j.A], () => D && null != i && j.A.hasVideo(i), [D, i]), G = (0, o.yK)([p.Ay], () => v.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
       let {
         location: t
       } = e, n = (0, h.H)(t);
       return null != n && null != Q[n]
-    })), B = U.length > 0, V = false, F = false, H = false, K = false, D ? (V = !k, F = k, H = M, K = G) : (H = L, K = B), (0, m.oi)({
+    })), B = G.length > 0, V = false, F = false, H = false, K = false, D ? (V = !k, F = k, H = M, K = U) : (H = L, K = B), (0, m.oi)({
       audio: V,
       video: F,
       screenshare: H,

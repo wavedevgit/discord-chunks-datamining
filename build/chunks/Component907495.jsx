@@ -207,7 +207,7 @@ function es(e) {
     } = (0, u.cf)([k.A], () => ({
       canAddNewReactions: x && k.A.can(Q.xBc.ADD_REACTIONS, t),
       canManageMessages: k.A.can(Q.xBc.MANAGE_MESSAGES, t)
-    }), [t, x]), R = (0, S.u)(t, n), U = (0, T.n)(t, n), B = (0, T.R)(n), V = (0, u.bG)([v.A], () => null != t.guild_id && v.A.isLurking(t.guild_id), [t]), Y = (0, u.bG)([D.Ay], () => null != t.guild_id && D.Ay.isCurrentUserGuest(t.guild_id), [t]), q = d.id === g, X = (E || n.canDeleteOwnMessage(g)) && m && !Q.MRS.UNDELETABLE.has(n.type);
+    }), [t, x]), R = (0, S.u)(t, n), G = (0, T.n)(t, n), B = (0, T.R)(n), V = (0, u.bG)([v.A], () => null != t.guild_id && v.A.isLurking(t.guild_id), [t]), Y = (0, u.bG)([D.Ay], () => null != t.guild_id && D.Ay.isCurrentUserGuest(t.guild_id), [t]), q = d.id === g, X = (E || n.canDeleteOwnMessage(g)) && m && !Q.MRS.UNDELETABLE.has(n.type);
     n.type === Q.lAJ.AUTO_MODERATION_ACTION && (X = X && E), t.isModeratorReportChannel() && (X = X && n.id !== (null == _ ? true : _.id) && !(0, W.A)(n));
     let J = (0, F.ul)(n),
       Z = (0, K.A)(n, t),
@@ -245,10 +245,10 @@ function es(e) {
       canDelete: X,
       canReport: J,
       canReply: R,
-      canStartThread: U,
+      canStartThread: G,
       canViewThread: B,
       canForward: el,
-      canCopy: G.p5,
+      canCopy: U.p5,
       hasDeveloperMode: j,
       canReact: !ee && O,
       canPublish: et,
@@ -263,7 +263,7 @@ function es(e) {
       isFocused: o
     }
   }(e), er = l.useRef(null), es = l.useCallback(() => {
-    R || U.default.track(Q.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    R || G.default.track(Q.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id,
       location: "expanding_buttons"

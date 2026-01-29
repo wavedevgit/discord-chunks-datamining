@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 288989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G,
+  A: () => U,
   k: () => v
 }), require("./896048.js");
 var r, l, i, Chunk735438 = require("./735438.js"),
@@ -161,7 +161,7 @@ function k(e) {
   } = e;
   return null != t && w(t)
 }
-class U extends(r = Chunk311907.Ay.Store) {
+class G extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(O.A, f.A, g.A, h.A, m.Ay, b.A, y.Ay, d.A, A.Ay)
   }
@@ -169,13 +169,13 @@ class U extends(r = Chunk311907.Ay.Store) {
     var t;
     return null != (t = C[e]) ? t : E
   }
-}(i = "displayName") in U ? Object.defineProperty(U, i, {
+}(i = "displayName") in G ? Object.defineProperty(G, i, {
   value: "ChannelListUnreadsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : U[i] = "ChannelListUnreadsStore";
-let G = new U(Chunk73153.h, {
+}) : G[i] = "ChannelListUnreadsStore";
+let U = new G(Chunk73153.h, {
   UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
     let {
       guildId: t,

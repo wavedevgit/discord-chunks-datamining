@@ -73,8 +73,8 @@ function I(e) {
       selectedParticipant: M,
       showParticipants: L = true,
       className: k,
-      width: U,
-      height: G,
+      width: G,
+      height: U,
       layout: B,
       idle: V
     } = e,
@@ -87,7 +87,7 @@ function I(e) {
     Q = M.type === O.lp.ACTIVITY,
     Z = (0, u.A)(Q ? M.applicationId : true),
     $ = !Q && null != M.streamId,
-    ee = G <= 2 * S + 144,
+    ee = U <= 2 * S + 144,
     et = L && !ee,
     en = (0, c.A)(et),
     er = B === _.DUB.MINIMUM || B === _.DUB.NORMAL,
@@ -96,13 +96,13 @@ function I(e) {
     es = (null != (t = (0, c.A)(M.id)) ? t : M.id) !== M.id,
     ea = 0;
   (Q || et) && (ea += 72), Q && !et && (el ? ea += 48 : ea += 8), et && (ea += .5 * S + 8);
-  let eo = l.useMemo(() => Q && Z ? U / (G - 2 * ea) : $ && null != K && K.width > 0 && K.height > 0 ? K.width / K.height : C, [$, K, Q, U, G, ea, Z]),
-    ec = G - 2 * ea,
-    eu = Q && Z ? U : ec * eo,
-    ed = Math.floor(Math.min(U, eu) / eo),
-    ep = G > U / eo + 72 + S + 8;
-  n = et || Q ? et ? false : false : 40 + Math.max(0, 72 - (G - ed) / 2);
-  let eh = 8 + Math.max(0, 72 - (G - ed) / 2);
+  let eo = l.useMemo(() => Q && Z ? G / (U - 2 * ea) : $ && null != K && K.width > 0 && K.height > 0 ? K.width / K.height : C, [$, K, Q, G, U, ea, Z]),
+    ec = U - 2 * ea,
+    eu = Q && Z ? G : ec * eo,
+    ed = Math.floor(Math.min(G, eu) / eo),
+    ep = U > G / eo + 72 + S + 8;
+  n = et || Q ? et ? false : false : 40 + Math.max(0, 72 - (U - ed) / 2);
+  let eh = 8 + Math.max(0, 72 - (U - ed) / 2);
   l.useEffect(() => {
     let e = setTimeout(() => {
       q(false)
@@ -166,7 +166,7 @@ function I(e) {
     {
       visibleParticipants: ev,
       participantTileWidth: ex
-    } = (0, y.i4)(U, P);
+    } = (0, y.i4)(G, P);
   return (0, r.jsxs)("div", {
     className: s()(v.zr, j.tR, k),
     children: [(0, r.jsxs)("div", {
@@ -198,11 +198,11 @@ function I(e) {
                 style: e,
                 children: (0, r.jsx)(m.Ay, {
                   focused: true,
-                  noBorder: eu >= U || ec >= G,
+                  noBorder: eu >= G || ec >= U,
                   channel: D,
                   className: j.JS,
                   videoComponent: F,
-                  width: U,
+                  width: G,
                   participant: t,
                   onClick: i,
                   onDoubleClick: N,
@@ -250,8 +250,8 @@ function I(e) {
       })]
     }), ej.length > 0 ? (0, r.jsx)(b.A, {
       onContextMenuParticipant: I,
-      width: U,
-      height: G,
+      width: G,
+      height: U,
       channel: D,
       participants: ej,
       onSelectParticipant: i
