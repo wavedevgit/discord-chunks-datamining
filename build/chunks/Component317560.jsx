@@ -2,13 +2,14 @@
 /** chunk id: 317560, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => u,
-  j: () => d
+  R: () => d,
+  j: () => f
 });
 var Chunk627968 = require("./627968.js"),
-  Chunk397927 = require("./397927.js");
+  Chunk397927 = require("./397927.js"),
+  Chunk733391 = require("./733391.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,20 +18,20 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 
-function s(e, t) {
+function l(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -41,43 +42,43 @@ function s(e, t) {
   return n
 }
 
-function l(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = "social-layer-storefront-product-details-modal",
-  u = e => {
+let u = "social-layer-storefront-product-details-modal",
+  d = e => {
     let {
       skuId: t,
-      applicationId: a,
-      guildId: s,
-      isStorefront: u,
-      analyticsLocations: d,
-      analyticsContext: f,
-      onClose: p
+      applicationId: o,
+      guildId: l,
+      isStorefront: d,
+      analyticsLocations: f,
+      analyticsContext: p,
+      onClose: _
     } = e;
-    (0, i.mMO)(async () => {
+    (0, a.iR)(l, t, "openSocialLayerStorefrontProductDetailsModal"), (0, i.mMO)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("40396"), n.e("67851")]).then(n.bind(n, 108105));
-      return n => (0, r.jsx)(e, l(o({}, n), {
+      return n => (0, r.jsx)(e, c(s({}, n), {
         skuId: t,
-        applicationId: a,
-        guildId: s,
-        isStorefront: u,
-        analyticsLocations: d,
-        analyticsContext: f
+        applicationId: o,
+        guildId: l,
+        isStorefront: d,
+        analyticsLocations: f,
+        analyticsContext: p
       }))
     }, {
-      modalKey: c,
-      allowsNavigation: u,
+      modalKey: u,
+      allowsNavigation: d,
       onCloseCallback: () => {
-        null == p || p()
+        null == _ || _()
       }
     })
   };
 
-function d() {
-  (0, i.kBI)(c) && (0, i.OoC)(c)
+function f() {
+  (0, i.kBI)(u) && (0, i.OoC)(u)
 }

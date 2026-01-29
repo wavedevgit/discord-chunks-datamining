@@ -113,22 +113,22 @@ function J(e) {
   } = (0, b.Ay)(null != et ? et : []), ec = l.useRef({
     positionInSection: Y,
     analyticsLocations: eo
-  }), [eu, ed] = l.useState(false), ep = (0, P.A)(Q, eu), em = l.useCallback(e => {
+  }), [eu, ed] = l.useState(false), ep = (0, m.bG)([T.A], () => null != Q ? T.A.getNormalizedSKUEligibility(Q) : true, [Q]), em = (0, P.A)(Q, eu), ef = l.useCallback(e => {
     ed(e)
-  }, []), ef = l.useMemo(() => c()(W.Nr, {
+  }, []), eg = l.useMemo(() => c()(W.Nr, {
     [W.ax]: 0 === Z,
     [W.GW]: 1 === Z,
     [W.jz]: 2 === Z
   }), [Z]), {
-    handleCardHover: eg,
-    handleCardUnhover: eh
+    handleCardHover: eh,
+    handleCardUnhover: e_
   } = (0, G.Z)(Q, es, Y, eo), {
-    handleCardVisibilityChange: e_
+    handleCardVisibilityChange: eb
   } = (0, B.a)(Q, es, Y, eo);
   l.useEffect(() => {
-    e_(eu)
+    eb(eu)
   }, [eu]);
-  let eb = l.useCallback(e => {
+  let eA = l.useCallback(e => {
       let {
         analyticsLocations: t,
         positionInSection: n
@@ -158,14 +158,14 @@ function J(e) {
       })
     }, [Q, es]),
     {
-      primaryIconAsset: eA,
-      primaryIconLabel: ey
+      primaryIconAsset: ey,
+      primaryIconLabel: ev
     } = l.useMemo(() => (0, I.Cv)(er, J), [er, J]),
-    ev = (0, m.bG)([T.A], () => {
+    ex = (0, m.bG)([T.A], () => {
       var e, t;
       return null != X && null != (e = null == (t = T.A.getStorefrontState(X)) ? true : t.activePage) ? e : 0
     }),
-    ex = l.useMemo(() => {
+    eO = l.useMemo(() => {
       var e, t;
       if ((null == er || null == (t = er.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
       let n = d()(),
@@ -174,49 +174,49 @@ function J(e) {
         days: r
       }) : null
     }, [null == er || null == (u = er.tenantMetadata) || null == (o = u.socialLayer) ? true : o.expiresAt]),
-    eO = (0, I.xf)(er),
-    [eE, ej] = (0, A.rh)(null == eO ? true : eO.toString(), "#000000"),
-    eC = l.useMemo(() => {
-      let e = s()(eE).darken(1.5).alpha(.9).hex(),
-        t = s()(eE).alpha(0).hex(),
+    eE = (0, I.xf)(er),
+    [ej, eC] = (0, A.rh)(null == eE ? true : eE.toString(), "#000000"),
+    eI = l.useMemo(() => {
+      let e = s()(ej).darken(1.5).alpha(.9).hex(),
+        t = s()(ej).alpha(0).hex(),
         [n, r] = K[Z];
-      return (0 !== n || 0 !== r) && ep ? "linear-gradient(to top, ".concat(e, " ").concat(30 + n, "%, ").concat(t, " ").concat(30 + r, "%)") : "none"
-    }, [eE, Z, ep]),
-    eI = l.useCallback(() => {
+      return (0 !== n || 0 !== r) && em ? "linear-gradient(to top, ".concat(e, " ").concat(30 + n, "%, ").concat(t, " ").concat(30 + r, "%)") : "none"
+    }, [ej, Z, em]),
+    eS = l.useCallback(() => {
       (0, w.X)({
         guildId: X
       })
     }, [X]),
-    eS = l.useCallback(e => {
-      (eb(F.bB.CARD), null != $) ? $(e): null != X && (0, N.A)({
+    eT = l.useCallback(e => {
+      (eA(F.bB.CARD), null != $) ? $(e): null != X && (0, N.A)({
         guildId: X,
-        pageIndex: ev,
+        pageIndex: ex,
         skuId: Q,
         slug: null == er ? true : er.slug
       })
-    }, [eb, X, Q, $, ev, null == er ? true : er.slug]);
+    }, [eA, X, Q, $, ex, null == er ? true : er.slug]);
   if (null == er) return null;
-  let eT = (0, I.fq)(er);
+  let eN = (0, I.fq)(er);
   return (0, i.jsx)(f.L, {
     innerRef: en,
-    onChange: em,
+    onChange: ef,
     threshold: 0,
     children: (0, i.jsx)(p.vN3, {
       children: (0, i.jsxs)(g.sqX, {
-        onClick: eS,
-        onMouseDown: eI,
-        onMouseEnter: eg,
-        onMouseLeave: eh,
-        className: c()(ef, {
+        onClick: eT,
+        onMouseDown: eS,
+        onMouseEnter: eh,
+        onMouseLeave: e_,
+        className: c()(eg, {
           [W.Zl]: !el && 2 !== Z,
           [W.BN]: ei,
           [ei ? W.Mn : W.YF]: ea,
-          [W.Rc]: !ep
+          [W.Rc]: !em
         }, ee),
         ref: en,
         "aria-label": er.name,
-        children: [null != ex && (0, i.jsx)(g.LpS, {
-          text: ex,
+        children: [null != eO && (0, i.jsx)(g.LpS, {
+          text: eO,
           disableColor: true,
           className: W.qS
         }), (0, i.jsx)(q, {
@@ -224,17 +224,17 @@ function J(e) {
           sku: er,
           isCardHovered: ea,
           variant: Z,
-          trackCardClick: eb,
+          trackCardClick: eA,
           analyticsLocations: eo,
           analyticsContext: es
-        }), null != eT ? ep ? (0, i.jsx)(M.A, {
+        }), null != eN ? em ? (0, i.jsx)(M.A, {
           containerClassName: W.Vl,
           foregroundImageClassName: W.wP,
-          cardImage: eT,
+          cardImage: eN,
           altText: er.name,
           shape: "custom",
           backgroundImageClassName: W.GC,
-          cardBackgroundImage: eO
+          cardBackgroundImage: eE
         }) : (0, i.jsx)(U.t, {}) : (0, i.jsx)("div", {
           className: W.t7,
           children: (0, i.jsx)(p.qyI, {
@@ -248,13 +248,13 @@ function J(e) {
           children: [(0, i.jsx)("div", {
             className: W.iZ,
             style: {
-              background: eC
+              background: eI
             }
           }), (0, i.jsxs)("div", {
             className: W.zH,
             children: [(0, i.jsx)("div", {
               className: W.gn,
-              children: ep ? (0, i.jsx)(g.Text, {
+              children: em ? (0, i.jsx)(g.Text, {
                 color: "always-white",
                 variant: "text-md/medium",
                 lineClamp: 1,
@@ -262,10 +262,10 @@ function J(e) {
               }) : (0, i.jsx)(U.r, {})
             }), (0, i.jsx)("div", {
               className: W.iQ,
-              children: ep ? (0, i.jsxs)(i.Fragment, {
-                children: [null != eA && (0, i.jsx)("img", {
-                  src: eA.toString(),
-                  alt: ey,
+              children: em ? (0, i.jsxs)(i.Fragment, {
+                children: [null != ey && (0, i.jsx)("img", {
+                  src: ey.toString(),
+                  alt: ev,
                   className: W.ye
                 }), (0, i.jsx)(g.Text, {
                   variant: "text-md/bold",
@@ -283,19 +283,21 @@ function J(e) {
               children: [(0, i.jsx)(p.$nd, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), eb(F.bB.BUY_BUTTON), (0, L.a)(er, {
+                  e.stopPropagation(), eA(F.bB.BUY_BUTTON), (0, L.a)(er, {
                     isGift: false
                   }, {
-                    analyticsLocations: [_.A.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON]
+                    analyticsLocations: [_.A.SLAYER_STOREFRONT_CARD_PURCHASE_BUTTON],
+                    guildId: X
                   })
                 },
-                text: z.intl.format(z.t.Xp5WTn, {
+                text: ep ? z.intl.format(z.t.Xp5WTn, {
                   price: (0, C.$g)(null != (r = null == (R = er.price) ? true : R.amount) ? r : 0, null != (a = null == (D = er.price) ? true : D.currency) ? a : V.Yr.USD)
-                }),
-                fullWidth: true
+                }) : z.intl.string(z.t.cg0M2H),
+                fullWidth: true,
+                disabled: !ep
               }), (0, i.jsx)(k.A, {
                 onGift: e => {
-                  e.stopPropagation(), eb(F.bB.GIFT_BUTTON), (0, L.a)(er, {
+                  e.stopPropagation(), eA(F.bB.GIFT_BUTTON), (0, L.a)(er, {
                     isGift: true
                   }, {
                     analyticsLocations: [_.A.SLAYER_STOREFRONT_CARD_GIFT_BUTTON]

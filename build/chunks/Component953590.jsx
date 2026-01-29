@@ -2,12 +2,12 @@
 /** chunk id: 953590, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => k,
-  B: () => A
+  B: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk310784 = require("./310784.js"),
-  o = require.n(Chunk310784),
+  i = require.n(Chunk310784),
   Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
   Chunk615300 = require("./615300.js"),
@@ -44,18 +44,18 @@ function C(e) {
   return e
 }
 
-function x() {
+function A() {
   var e, t;
   let n = (e = ["grayscale(", ")"], t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, {
     raw: {
       value: Object.freeze(t)
     }
   })));
-  return x = function() {
+  return A = function() {
     return n
   }, n
 }
-let A = 747,
+let x = 747,
   E = e => {
     var t, n;
     return (0, g.$o)((t = C({}, e), n = n = {
@@ -78,7 +78,7 @@ function T(e) {
   let t = "videoThumbnailSrc" in e ? e.videoThumbnailSrc : e.src,
     [n, r] = (0, _.rh)(t, "#000000"),
     a = l.useMemo(() => {
-      let e = o()(n).darken(1);
+      let e = i()(n).darken(1);
       return "radial-gradient(circle, ".concat(e.alpha(.2).hex(), " 0%, transparent 100%)")
     }, [n]);
   return null != t && "#000000" !== n ? a : true
@@ -90,39 +90,39 @@ function I(e) {
     onPlay: n,
     onEnded: l,
     onClick: a,
-    playable: o,
-    isMuted: i
+    playable: i,
+    isMuted: o
   } = e, s = T(t), c = (0, r.jsx)(m.rr, {
     href: null,
     thumbnail: {
       url: t.videoThumbnailSrc,
-      width: A,
+      width: x,
       height: 560
     },
     video: {
       url: t.src,
       proxyURL: t.src,
-      width: A,
+      width: x,
       height: 560
     },
     provider: true,
     allowFullScreen: true,
     maxHeight: 560,
-    maxWidth: A,
+    maxWidth: x,
     onPlay: n,
     onEnded: l,
-    playable: o,
+    playable: i,
     className: v.Ki,
     volume: 1,
-    autoMute: i,
-    autoPlay: o,
+    autoMute: o,
+    autoPlay: i,
     renderVideoComponent: E,
     renderImageComponent: S,
     renderLinkComponent: g.bU
-  }, i ? "player-muted" : "player-unmuted"), u = {
+  }, o ? "player-muted" : "player-unmuted"), u = {
     background: s
   };
-  return o ? (0, r.jsx)("div", {
+  return i ? (0, r.jsx)("div", {
     className: v.AU,
     style: u,
     children: c
@@ -140,23 +140,23 @@ function P(e) {
     setHasInteracted: n,
     onSetItem: l,
     isCurrentItem: a,
-    itemIndex: o
-  } = e, i = {
+    itemIndex: i
+  } = e, o = {
     background: T(t)
   };
   return a ? (0, r.jsx)(d.DUT, {
     onClick: () => n(true),
     className: v.AU,
-    style: i,
+    style: o,
     children: (0, r.jsx)("img", {
       src: t.src,
       alt: "",
       className: v.NP
     })
   }) : (0, r.jsx)(d.DUT, {
-    onClick: () => l(o),
+    onClick: () => l(i),
     className: v.AU,
-    style: i,
+    style: o,
     children: (0, r.jsx)("img", {
       alt: "",
       className: v.tv,
@@ -170,8 +170,8 @@ let k = (0, Chunk456412.A)(e => {
     items: t,
     className: n,
     paused: a = false,
-    autoplayInterval: o = 8e3,
-    onItemChange: i,
+    autoplayInterval: i = 8e3,
+    onItemChange: o,
     isMuted: d = true,
     onTrackClick: u
   } = e, _ = (0, l.useRef)(0), [m, f] = (0, l.useState)(0), [g, C] = (0, l.useState)(0), E = (0, l.useRef)(0), S = (0, l.useRef)(t.length), [T, k] = (0, l.useState)(true), [N, w] = (0, l.useState)(false), [R, U] = (0, l.useState)(false), [D, L] = (0, l.useState)(false), [M, B] = (0, l.useState)(false), F = (0, l.useCallback)((e, n) => {
@@ -188,7 +188,7 @@ let k = (0, Chunk456412.A)(e => {
         outputRange: [.3, 1],
         extrapolate: c.A.Extrapolate.CLAMP
       }),
-      filter: c.A.template(x(), a),
+      filter: c.A.template(A(), a),
       backgroundImage: null != l ? "url(".concat(l, ")") : true,
       backgroundSize: "cover",
       backgroundPosition: "center",
@@ -249,7 +249,7 @@ let k = (0, Chunk456412.A)(e => {
       className: v.Dk,
       items: t,
       itemSize: {
-        width: A,
+        width: x,
         margin: 0
       },
       renderItem: $,
@@ -288,15 +288,15 @@ let k = (0, Chunk456412.A)(e => {
   }), [Y, W]), (0, l.useEffect)(() => {
     S.current = t.length
   }, [t]), (0, l.useEffect)(() => {
-    null == i || i(t[g], g)
-  }, [g, t, i]);
+    null == o || o(t[g], g)
+  }, [g, t, o]);
   let Z = (0, l.useCallback)(e => {
     null == u || u(y.Jq.CAROUSEL_ITEM), H(e)
   }, [H, u]);
   return (0, r.jsxs)(b.A, {
     pauseOnHover: true,
     onInterval: G,
-    interval: o,
+    interval: i,
     className: n,
     disable: N || R || a,
     children: [K(), (0, r.jsx)("div", {

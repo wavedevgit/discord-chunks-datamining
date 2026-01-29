@@ -9,7 +9,7 @@ var Chunk574381 = require("./574381.js"),
   Chunk69435 = require("./69435.jsx"),
   Chunk985018 = require("./985018.jsx");
 let a = (0, Chunk419954.E2)(Chunk780964.X.ADVANCED_HARDWARE_ACCELERATION, {
-  usePredicate: () => n.Av,
+  usePredicate: () => n.Av && !(0, n.cX)(),
   useSearchTerms: () => [u.intl.string(u.t["eOC/F2"]), u.intl.string(u.t.Afc7l6)],
   Component: Chunk69435.D
 })

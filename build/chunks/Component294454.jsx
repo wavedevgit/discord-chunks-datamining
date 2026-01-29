@@ -11,7 +11,7 @@ require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk530912 = require("./530912.js");
 
-function o(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function o(e) {
   return e
 }
 
-function i(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function c(e) {
     let {
       ForwardModal: e
     } = await Promise.all([n.e("40215"), n.e("96758"), n.e("43622"), n.e("60664")]).then(n.bind(n, 911269));
-    return n => (0, r.jsx)(e, i(o({}, n), {
+    return n => (0, r.jsx)(e, o(i({}, n), {
       message: t,
       initialSelectedDestinations: d,
       forwardOptions: u,
@@ -84,7 +84,7 @@ function u(e) {
     let {
       ForwardFailedAlertModal: e
     } = await n.e("66139").then(n.bind(n, 181622));
-    return n => (0, r.jsx)(e, i(o({}, n), {
+    return n => (0, r.jsx)(e, o(i({}, n), {
       message: t,
       failedDestinations: a,
       forwardOptions: s

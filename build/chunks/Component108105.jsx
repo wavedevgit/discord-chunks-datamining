@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk310784 = require("./310784.js"),
-  o = require.n(Chunk310784),
+  i = require.n(Chunk310784),
   Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
@@ -40,36 +40,37 @@ var Chunk627968 = require("./627968.js"),
   Chunk88465 = require("./88465.js");
 
 function M(e) {
-  var t, n, a, o;
+  var t, n, a, i;
   let {
-    sku: i,
+    sku: o,
     guildId: s,
-    shouldShowShopLink: c,
-    onClose: u,
-    trackPDPClick: _
-  } = e, b = l.useCallback(() => {
-    null != i && (_(N.Jq.BUY_BUTTON), (0, P.a)(i, {
+    shouldShowShopLink: u,
+    onClose: _,
+    trackPDPClick: b
+  } = e, p = null == o ? true : o.id, h = (0, c.bG)([E.A], () => null != p ? E.A.getNormalizedSKUEligibility(p) : true, [p]), f = l.useCallback(() => {
+    null != o && (b(N.Jq.BUY_BUTTON), (0, P.a)(o, {
       isGift: false
     }, {
-      analyticsLocations: [m.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON]
+      analyticsLocations: [m.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON],
+      guildId: s
     }))
-  }, [i, _]), p = l.useCallback(() => {
+  }, [o, b, s]), g = l.useCallback(() => {
     (0, S.X)({
       guildId: s
     })
-  }, [s]), h = l.useCallback(() => {
-    _(N.Jq.VISIT_SHOP), (0, S.default)({
+  }, [s]), O = l.useCallback(() => {
+    b(N.Jq.VISIT_SHOP), (0, S.default)({
       guildId: s
-    }), u()
-  }, [s, u, _]), f = l.useCallback(() => {
-    null != i && (_(N.Jq.GIFT_BUTTON), (0, P.a)(i, {
+    }), _()
+  }, [s, _, b]), y = l.useCallback(() => {
+    null != o && (b(N.Jq.GIFT_BUTTON), (0, P.a)(o, {
       isGift: true
     }, {
       analyticsLocations: [m.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_GIFT_BUTTON]
     }))
-  }, [i, _]);
-  if (null == i) return null;
-  let g = (0, v.$g)(null != (t = null == (a = i.price) ? true : a.amount) ? t : 0, null != (n = null == (o = i.price) ? true : o.currency) ? n : U.Yr.USD);
+  }, [o, b]);
+  if (null == o) return null;
+  let j = (0, v.$g)(null != (t = null == (a = o.price) ? true : a.amount) ? t : 0, null != (n = null == (i = o.price) ? true : i.currency) ? n : U.Yr.USD);
   return (0, r.jsxs)("div", {
     className: L.wt,
     children: [(0, r.jsxs)("div", {
@@ -77,37 +78,38 @@ function M(e) {
       children: [(0, r.jsx)(d.Heading, {
         variant: "heading-xl/bold",
         color: "text-strong",
-        children: i.name
+        children: o.name
       }), (0, r.jsx)(d.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: i.description
+        children: o.description
       })]
     }), (0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       color: "text-strong",
-      children: g
+      children: j
     }), (0, r.jsxs)("div", {
       className: L.NC,
       children: [(0, r.jsx)(d.Button, {
         variant: "primary",
-        onClick: b,
-        text: D.intl.string(D.t.boqtTA),
-        fullWidth: true
+        onClick: f,
+        text: h ? D.intl.string(D.t.boqtTA) : D.intl.string(D.t.cg0M2H),
+        fullWidth: true,
+        disabled: !h
       }), (0, r.jsxs)(d.ButtonGroup, {
         wrap: false,
         fullWidth: true,
-        children: [c ? (0, r.jsx)(d.Button, {
+        children: [u ? (0, r.jsx)(d.Button, {
           icon: d.U1X,
           variant: "secondary",
-          onMouseDown: p,
-          onClick: h,
+          onMouseDown: g,
+          onClick: O,
           text: D.intl.string(D.t["2QW9nR"]),
           fullWidth: true
         }) : null, (0, r.jsx)(d.Button, {
           icon: d.okO,
           variant: "secondary",
-          onClick: f,
+          onClick: y,
           text: D.intl.string(D.t.QAZA5f),
           fullWidth: true
         })]
@@ -121,17 +123,17 @@ function B(e) {
     sku: t,
     applicationId: n,
     storefront: a,
-    onSelectedCarouselItemChange: o,
-    isMuted: i,
+    onSelectedCarouselItemChange: i,
+    isMuted: o,
     trackPDPClick: s
   } = e, [c, d] = l.useState([]), [u, _] = l.useState([]), m = l.useCallback(e => {
     var t;
     let n = u.findIndex(t => t === e);
-    null == o || o(null != (t = c[n]) ? t : null)
-  }, [o, c, u]);
+    null == i || i(null != (t = c[n]) ? t : null)
+  }, [i, c, u]);
   return (l.useEffect(() => {
     var e, r, l;
-    let [o, i] = function(e, t, n) {
+    let [i, o] = function(e, t, n) {
       let r = [],
         l = [];
       if (null == e || 0 === e.length) return [r, l];
@@ -142,22 +144,22 @@ function B(e) {
           src: (0, C.YE)(t, e, k.B, "mp4"),
           videoThumbnailSrc: (0, C.YE)(t, e, k.B, "webp"),
           thumbnailSrc: null != a.thumbnailAssetId ? (0, C.YE)(t, a.thumbnailAssetId, 112, "webp") : true,
-          backgroundSrc: null != a.backgroundAssetId ? (0, C.YE)(t, a.backgroundAssetId, k.B, x.pV) : true
+          backgroundSrc: null != a.backgroundAssetId ? (0, C.YE)(t, a.backgroundAssetId, k.B, A.pV) : true
         }) : l.push({
           type: "image",
           src: (0, C.YE)(t, e, k.B, "webp"),
           thumbnailSrc: null != a.thumbnailAssetId ? (0, C.YE)(t, a.thumbnailAssetId, 112, "webp") : true,
-          backgroundSrc: null != a.backgroundAssetId ? (0, C.YE)(t, a.backgroundAssetId, k.B, x.pV) : true
+          backgroundSrc: null != a.backgroundAssetId ? (0, C.YE)(t, a.backgroundAssetId, k.B, A.pV) : true
         }))
       }
       return [r, l]
     }(null != (e = null == t || null == (l = t.tenantMetadata) || null == (r = l.socialLayer) ? true : r.carouselItems) ? e : [], n, a.assets);
-    d(o), _(i)
+    d(i), _(o)
   }, [t, a.assets, n]), 0 === u.length) ? null : (0, r.jsx)(k.A, {
     className: L.Dk,
     items: u,
     onItemChange: m,
-    isMuted: i,
+    isMuted: o,
     onTrackClick: s
   })
 }
@@ -203,44 +205,44 @@ function G(e) {
   let {
     transitionState: n,
     returnRef: a,
-    skuId: i,
+    skuId: o,
     applicationId: m,
     guildId: v,
-    isStorefront: x,
+    isStorefront: A,
     analyticsLocations: S,
     analyticsContext: P,
     onClose: k
   } = e, {
     analyticsLocations: U
-  } = (0, b.Ay)(null != S ? S : []), G = (0, c.bG)([E.A], () => E.A.getStorefrontData(v), [v]), W = (0, c.bG)([y.A], () => y.A.isFetchingForSKU(i)), Y = (0, d.Mwr)((0, _.Ay)()), [q, V] = l.useState(true), X = (0, c.bG)([O.A], () => O.A.get(i)), [z, J] = l.useState(null), $ = function(e, t) {
+  } = (0, b.Ay)(null != S ? S : []), G = (0, c.bG)([E.A], () => E.A.getStorefrontData(v), [v]), W = (0, c.bG)([y.A], () => y.A.isFetchingForSKU(o)), Y = (0, d.Mwr)((0, _.Ay)()), [q, V] = l.useState(true), X = (0, c.bG)([O.A], () => O.A.get(o)), [z, J] = l.useState(null), $ = function(e, t) {
     let n = (null == t ? true : t.labelIconAssetId) != null ? (0, C.YE)(e, null == t ? true : t.labelIconAssetId) : null,
       [r, a] = (0, p.rh)(n, "#000000"),
-      i = l.useMemo(() => {
-        let e = o()(r).darken(1);
+      o = l.useMemo(() => {
+        let e = i()(r).darken(1);
         return "radial-gradient(181.07% 122.33% at -20.89% -23.8%, ".concat(e.alpha(.25).hex(), " 0%, transparent 100%)")
       }, [r]);
-    return null != n && "#000000" !== r ? i : true
+    return null != n && "#000000" !== r ? o : true
   }(m, z);
   (0, g.pE)(), (0, u.Ay)(() => {
     j.default.track(R.HAw.OPEN_MODAL, {
       location_stack: U,
       type: w.Nh,
-      sku_id: i,
+      sku_id: o,
       application_id: m
     })
   });
   let K = l.useCallback(e => {
     j.default.track(R.HAw.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, {
       slayer_storefront_session_id: null == P ? true : P.sessionId,
-      sku_id: i,
+      sku_id: o,
       guild_id: null == P ? true : P.guildId,
       cta_type: e,
       location_stack: U
     })
-  }, [P, i, U]);
+  }, [P, o, U]);
   l.useEffect(() => {
-    null == v || null == i || y.A.isFetchingForSKU(i) || (0, A.qf)(v, i)
-  }, [v, i]);
+    null == v || null == o || y.A.isFetchingForSKU(o) || (0, x.qf)(v, o)
+  }, [v, o]);
   let Q = l.useCallback(() => {
       null != X && (K(N.Jq.FORWARD_BUTTON), (0, I.d)({
         sku: X,
@@ -287,7 +289,7 @@ function G(e) {
         }), (0, r.jsx)(M, {
           sku: X,
           guildId: v,
-          shouldShowShopLink: !x,
+          shouldShowShopLink: !A,
           onClose: k,
           trackPDPClick: K
         })]

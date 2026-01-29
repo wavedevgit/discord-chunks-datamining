@@ -1379,6 +1379,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
 }), z(["INTERACTION_FAILURE"], e => {
   X({
     type: "INTERACTION_FAILURE",
+    interactionId: e.id,
     nonce: e.nonce,
     reasonCode: e.reason_code
   })
@@ -1760,6 +1761,15 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
     type: t,
     user_id: e.user_id,
     application_id: e.application_id
+  })
+}), z(["SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE"], e => {
+  X({
+    type: "SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE",
+    interactionId: e.interaction_id,
+    applicationId: e.application_id,
+    skuId: e.sku_id,
+    recipientId: e.recipient_id,
+    eligible: e.eligible
   })
 }), z(["HAVEN_CONNECT"], (e, t) => {
   X({

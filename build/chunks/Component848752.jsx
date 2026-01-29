@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk532197 = require("./532197.jsx"),
   Chunk331026 = require("./331026.js");
@@ -38,11 +38,11 @@ class m extends(r = Chunk64700.PureComponent) {
       items: t,
       vertical: n,
       paginationContainerClass: r,
-      align: o
+      align: i
     } = this.props, c = n ? d.XA : d.BU;
     return (0, l.jsx)(s.GtU, {
       orientation: n ? "vertical" : "horizontal",
-      className: i()(c, r, o),
+      className: o()(c, r, i),
       ref: this.handleSetScrollerRef,
       children: t.map((t, n) => a.cloneElement(e(t, n), {
         onClick: () => this.handlePageClick(n),
@@ -88,7 +88,7 @@ class b extends Chunk64700.PureComponent {
       className: e
     } = this.props;
     return (0, l.jsx)(s.DUT, {
-      className: i()(d.t1, e),
+      className: o()(d.t1, e),
       onClick: this.handlePrevClick,
       children: (0, l.jsx)(c.A, {
         className: d.UE,
@@ -112,7 +112,7 @@ class p extends Chunk64700.PureComponent {
       className: e
     } = this.props;
     return (0, l.jsx)(s.DUT, {
-      className: i()(d.XS, e),
+      className: o()(d.XS, e),
       onClick: this.handleNextClick,
       children: (0, l.jsx)(c.A, {
         className: d.UE,

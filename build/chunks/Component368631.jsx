@@ -1297,7 +1297,7 @@ let eS = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ex.nc_.ADVANCED,
         searchableTitles: [eC.intl.string(eC.t["eOC/F2"])],
         parent: eA.H.SETTINGS_ADVANCED,
-        predicate: () => G.isPlatformEmbedded
+        predicate: () => G.isPlatformEmbedded && !(0, G.isMac)()
       },
       [eA.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY]: {
         section: ex.nc_.ADVANCED,
