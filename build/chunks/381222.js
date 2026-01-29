@@ -46,20 +46,21 @@ let O = function(e, t) {
   let y = arguments.length > 2 && true !== arguments[2] && arguments[2],
     O = arguments.length > 3 && true !== arguments[3] && arguments[3],
     {
-      lockVoiceStateForResume: v = false
+      lockVoiceStateForResume: v = false,
+      bypassIdleUpdate: A = false
     } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
-    A = f.A.getChannel(e),
-    I = g.A.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
-    S = null != A ? _.A.getCheck(A.guild_id) : null;
-  if (!(null != t && (0, s.V)(t)) && (null == S || S.canChat || (0, l.pC)(A))) {
-    if (null != A && !I) {
-      let e = (0, E.Pd)(A, g.A, p.A);
-      if (e && A.isGuildStageVoice() && (0, c.xn)(A.id)) return void(0, i.openModalLazy)(async () => {
+    I = f.A.getChannel(e),
+    S = g.A.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
+    T = null != I ? _.A.getCheck(I.guild_id) : null;
+  if (!(null != t && (0, s.V)(t)) && (null == T || T.canChat || (0, l.pC)(I))) {
+    if (null != I && !S) {
+      let e = (0, E.Pd)(I, g.A, p.A);
+      if (e && I.isGuildStageVoice() && (0, c.xn)(I.id)) return void(0, i.openModalLazy)(async () => {
         let {
           default: e
         } = await n.e("21900").then(n.bind(n, 172231));
         return t => e(b({
-          channel: A
+          channel: I
         }, t))
       });
       if (e) return void(0, i.openModalLazy)(async () => {
@@ -68,12 +69,12 @@ let O = function(e, t) {
         } = await n.e("54207").then(n.bind(n, 361698));
         return t => e(t)
       });
-      if (!(0, o.A)(A, h.A)) return
+      if (!(0, o.A)(I, h.A)) return
     }
-    y && (0, u.PX)(), (0, d.A)(T, e, O, y)
+    y && (0, u.PX)(), (0, d.A)(C, e, O, y)
   }
 
-  function T() {
+  function C() {
     let n = (0, r.A)();
     a.h.dispatch({
       type: "VOICE_CHANNEL_SELECT",
@@ -83,7 +84,8 @@ let O = function(e, t) {
       video: y,
       stream: O,
       lockVoiceStateForResume: v,
-      joinVoiceId: n
+      joinVoiceId: n,
+      bypassIdleUpdate: A
     })
   }
 }

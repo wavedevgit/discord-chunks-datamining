@@ -77,7 +77,6 @@ module.exports = {
   Tn: "isSending_c19a55",
   Ix: "isFailed_c19a55",
   w3: "isUnsupported_c19a55",
-  Dk: "markupBidi_c19a55",
   oh: "edited_c19a55",
   bu: "communicationDisabled_c19a55",
   EI: "compactCommunicationDisabled_c19a55",

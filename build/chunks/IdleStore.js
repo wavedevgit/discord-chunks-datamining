@@ -130,9 +130,10 @@ function x(e) {
 function M(e) {
   let {
     timestamp: t,
-    type: n
-  } = e, i = "OVERLAY_SET_NOT_IDLE" === n && null != t;
-  return (!i || !(t <= y)) && (r = null, y = i ? t : Date.now(), __OVERLAY__ ? l.h.dispatch({
+    type: n,
+    bypassIdleUpdate: i
+  } = e, a = "OVERLAY_SET_NOT_IDLE" === n && null != t;
+  return (!a || !(t <= y)) && !i && (r = null, y = a ? t : Date.now(), __OVERLAY__ ? l.h.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
     timestamp: y
   }) : N(), false)

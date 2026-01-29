@@ -2,9 +2,9 @@
 /** chunk id: 291812, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ay: () => b,
-  _A: () => g,
-  sP: () => y
+  Ay: () => y,
+  _A: () => m,
+  sP: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk877413 = require("./877413.js"),
   l = require.n(Chunk877413),
   Chunk52133 = require("./52133.js"),
-  Chunk693198 = require("./693198.js"),
   Chunk860227 = require("./860227.js"),
   Chunk861986 = require("./861986.jsx"),
   Chunk652215 = require("./652215.js"),
@@ -21,47 +20,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk679740 = require("./679740.js"),
   Chunk206314 = require("./206314.js");
 
-function g(e, t) {
-  return e.type === p.lAJ.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(p.pr7.SOURCE_MESSAGE_DELETED) ? _.intl.string(_.t.JOtgSw) : t
+function m(e, t) {
+  return e.type === f.lAJ.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(f.pr7.SOURCE_MESSAGE_DELETED) ? p.intl.string(p.t.JOtgSw) : t
 }
 
-function E(e) {
+function g(e) {
   var t;
   let {
     className: n,
     message: a,
     children: s,
     content: c,
-    onUpdate: _,
-    contentRef: E,
-    compact: y
-  } = e, b = a.state === p.cmJ.SEND_FAILED, O = a.state === p.cmJ.SENDING, v = a.isCommandType(), A = null == (t = a.editedTimestamp) ? true : t.toString(), I = i.useRef(false);
-  i.useLayoutEffect(() => {
-    I.current ? null != _ && _() : I.current = true
-  }, [_, a.content, c, A, s]);
-  let S = u._.useConfig({
-    location: "MessageContent"
-  }).alignMessagesStart;
-  return (0, r.jsxs)("div", {
-    id: (0, d.CJ)(a),
-    ref: E,
-    className: o()(n, m.PT, {
-      [h.BK]: true,
-      [h.Tn]: O && !v,
-      [h.Dk]: S,
-      [h.nB]: !S && "rtl" === l()(a.content),
-      [h.Ix]: b,
-      [h.w3]: a.isUnsupported
+    onUpdate: p,
+    contentRef: g,
+    compact: E
+  } = e, y = a.state === f.cmJ.SEND_FAILED, b = a.state === f.cmJ.SENDING, O = a.isCommandType(), v = null == (t = a.editedTimestamp) ? true : t.toString(), A = i.useRef(false);
+  return i.useLayoutEffect(() => {
+    A.current ? null != p && p() : A.current = true
+  }, [p, a.content, c, v, s]), (0, r.jsxs)("div", {
+    id: (0, u.CJ)(a),
+    ref: g,
+    className: o()(n, h.PT, {
+      [_.BK]: true,
+      [_.Tn]: b && !O,
+      [_.nB]: "rtl" === l()(a.content),
+      [_.Ix]: y,
+      [_.w3]: a.isUnsupported
     }),
-    children: [null != s ? s : g(a, c), (0, r.jsx)(f.A, {
+    children: [null != s ? s : m(a, c), (0, r.jsx)(d.A, {
       message: a,
-      compact: y,
-      location: f.O.WITH_CONTENT
+      compact: E,
+      location: d.O.WITH_CONTENT
     })]
   })
 }
 
-function y(e, t) {
+function E(e, t) {
   var n, r;
   let {
     message: i
@@ -70,4 +64,4 @@ function y(e, t) {
   } = e;
   return (0, c.A)(e, t, ["message"]) && i.content === a.content && i.state === a.state && (null == (n = i.editedTimestamp) ? true : n.toString()) === (null == (r = a.editedTimestamp) ? true : r.toString())
 }
-let b = Chunk64700.memo(E, y)
+let y = Chunk64700.memo(g, E)

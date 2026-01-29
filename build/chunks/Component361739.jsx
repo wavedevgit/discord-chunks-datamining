@@ -176,7 +176,7 @@ let _ = function(e) {
     },
     reverse: A,
     config: d.config.stiff
-  }, "animate-always"), R = l.useCallback(e => {
+  }, "animate-always"), j = l.useCallback(e => {
     E.current = e, null != y && (y.current = e)
   }, [y]);
   l.useLayoutEffect(() => {
@@ -184,7 +184,7 @@ let _ = function(e) {
       to: 0
     })
   }, [s, w, E]);
-  let j = (0, r.jsx)(O, {
+  let R = (0, r.jsx)(O, {
     isMobile: c.Fr,
     mobileSidebarOpen: b,
     closeAction: o
@@ -218,7 +218,7 @@ let _ = function(e) {
               }),
               children: [c.Fr && (0, r.jsx)("div", {
                 className: v.mobileSidebarHeader,
-                children: j
+                children: R
               }), t]
             })
           })
@@ -231,19 +231,19 @@ let _ = function(e) {
             }),
             children: [e && (0, r.jsx)(u._, {
               onClick: m
-            }), j]
+            }), R]
           });
         if ("custom" === C) return (0, r.jsxs)(h.F, {
           component: "div",
           className: v.contentRegion,
-          children: [t, n, !c.Fr && j, x()]
+          children: [t, n, !c.Fr && R, x()]
         });
         if ("scrollableCustom" === C) return (0, r.jsxs)(h.F, {
           component: "div",
           className: v.contentRegion,
           children: [t, (0, r.jsxs)(g.GtU, {
             className: a()(v.contentRegionScroller, A ? v.contentRegionHiddenSidebar : v.contentRegionShownSidebar),
-            ref: R,
+            ref: j,
             children: [(0, r.jsx)(S.Provider, {
               value: E.current,
               children: (0, r.jsx)("div", {
@@ -254,7 +254,7 @@ let _ = function(e) {
                   children: n
                 })
               })
-            }), !c.Fr && j]
+            }), !c.Fr && R]
           }), x()]
         });
         let i = I[null != C ? C : "default"];
@@ -267,7 +267,7 @@ let _ = function(e) {
             className: v.contentTransitionWrap,
             children: [t, (0, r.jsxs)(g.GtU, {
               className: a()(v.contentRegionScroller, A ? v.contentRegionHiddenSidebar : v.contentRegionShownSidebar),
-              ref: R,
+              ref: j,
               children: [(0, r.jsx)(S.Provider, {
                 value: E.current,
                 children: (0, r.jsx)(g.VQ0.Panel, {
@@ -284,7 +284,7 @@ let _ = function(e) {
                     children: n
                   })
                 })
-              }), !c.Fr && j]
+              }), !c.Fr && R]
             })]
           }), x()]
         })

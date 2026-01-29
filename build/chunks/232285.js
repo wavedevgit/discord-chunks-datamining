@@ -3,7 +3,6 @@
 module.exports = {
   kL: "container__3849c",
   hQ: "contentContainer__3849c",
-  VW: "containerWithOfferCountdown__3849c",
   rf: "body__3849c",
   s8: "marketingPageTextContainer__3849c",
   iQ: "descriptionContainer__3849c",
@@ -12,6 +11,5 @@ module.exports = {
   XN: "offerPillContainer__3849c",
   Qn: "affinitiesContainer__3849c",
   eZ: "referrerAttributionContainer__3849c",
-  wx: "header__3849c",
-  IZ: "heroOfferCountdown__3849c"
+  wx: "header__3849c"
 }

@@ -39,7 +39,9 @@ class A extends Chunk272355.A {
     if (null == n || null == n.afkChannelId || n.afkChannelId === t || null == n.afkTimeout) return;
     let r = o.A.getChannel(t);
     null == r || r.isGuildStageVoice() || f.start(e + n.afkTimeout * p.A.Millis.SECOND - Date.now(), () => {
-      null != (n = c.A.getGuild(d.A.getGuildId())) && null != n.afkChannelId && l.default.selectVoiceChannel(n.afkChannelId)
+      null != (n = c.A.getGuild(d.A.getGuildId())) && null != n.afkChannelId && l.default.selectVoiceChannel(n.afkChannelId, false, false, {
+        bypassIdleUpdate: true
+      })
     })
   }
 }
