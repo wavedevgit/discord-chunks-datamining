@@ -458,8 +458,9 @@ let O = {
 function C(e) {
   let {
     primaryButtonText: t,
-    primaryButtonIcon: n
-  } = e, i = y(e, ["primaryButtonText", "primaryButtonIcon"]);
+    primaryButtonIcon: n,
+    headerBadgeHasIcon: i
+  } = e, a = y(e, ["primaryButtonText", "primaryButtonIcon", "headerBadgeHasIcon"]), o = i ? l.gqV : true;
   return (0, r.jsxs)(l.BJc, {
     gap: 16,
     align: "center",
@@ -469,8 +470,9 @@ function C(e) {
     }), (0, r.jsx)(l.Button, {
       variant: "primary",
       text: "Open Unified Checkout Modal",
-      onClick: () => (0, l.qfG)(e => (0, r.jsx)(c.oH, E(m({}, e, i), {
-        title: i.title,
+      onClick: () => (0, l.qfG)(e => (0, r.jsx)(c.oH, E(m({}, e, a), {
+        title: a.title,
+        headerBadgeIcon: o,
         primaryButtonProps: {
           onClick: e.onClose,
           text: t,
@@ -488,7 +490,7 @@ function C(e) {
           })
         })
       })), {
-        dismissable: i.dismissable
+        dismissable: a.dismissable
       })
     })]
   })
@@ -539,10 +541,15 @@ let N = Chunk96337.A.map(e => ({
           defaultValue: Chunk997101.d.US,
           options: N
         },
-        headerPillText: {
+        headerBadgeText: {
           label: "Header Pill Text",
           type: "text",
           defaultValue: "PROMO"
+        },
+        headerBadgeHasIcon: {
+          label: "Header Badge Has Icon",
+          type: "boolean",
+          defaultValue: false
         },
         gradientColor: {
           label: "Gradient Color",

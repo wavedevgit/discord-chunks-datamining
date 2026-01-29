@@ -78,30 +78,32 @@ function m(e) {
   let {
     gradientColor: t,
     title: n,
-    headerPillText: l,
-    countryCode: u
-  } = e, f = _(e, ["gradientColor", "title", "headerPillText", "countryCode"]), h = i.useCallback(() => null == u ? null : (0, r.jsx)("img", {
+    headerBadgeText: l,
+    headerBadgeIcon: u,
+    countryCode: f
+  } = e, h = _(e, ["gradientColor", "title", "headerBadgeText", "headerBadgeIcon", "countryCode"]), m = i.useCallback(() => null == f ? null : (0, r.jsx)("img", {
     alt: "",
     className: c.bI,
-    src: (0, o.t)(u)
-  }), [u]), m = i.useMemo(() => {
+    src: (0, o.t)(f)
+  }), [f]), g = i.useMemo(() => {
     if (null != l) return {
+      icon: u,
       type: {
         text: l
       },
       variant: "expressive"
     }
-  }, [l]);
-  return (0, r.jsx)(a.rQ0, p(d({}, f), {
-    badge: m,
+  }, [l, u]);
+  return (0, r.jsx)(a.rQ0, p(d({}, h), {
+    badge: g,
     badgePosition: "end",
     gradientColor: t,
     titleTextVariant: "heading-lg/semibold",
     alignCenter: false,
     title: n,
-    subtitle: null != u ? {
-      text: (0, s.Gw)((0, s.ni)(u)),
-      leadingIcon: h
+    subtitle: null != f ? {
+      text: (0, s.Gw)((0, s.ni)(f)),
+      leadingIcon: m
     } : true
   }))
 }
@@ -135,11 +137,12 @@ function g(e) {
 
 function E(e) {
   let {
-    children: t
-  } = e, n = _(e, ["children"]);
+    children: t,
+    size: n = "md"
+  } = e, i = _(e, ["children", "size"]);
   return (0, r.jsx)(a.dWK, p(d({
-    size: "md"
-  }, n), {
+    size: n
+  }, i), {
     children: t
   }))
 }
@@ -149,22 +152,24 @@ function y(e) {
     title: t,
     gradientColor: n = "purple",
     countryCode: i,
-    headerPillText: o,
-    onBackClick: s,
-    primaryButtonProps: l,
-    children: c
-  } = e, u = _(e, ["title", "gradientColor", "countryCode", "headerPillText", "onBackClick", "primaryButtonProps", "children"]);
-  return (0, r.jsxs)(a.dWK, p(d({}, u), {
+    headerBadgeText: o,
+    headerBadgeIcon: s,
+    onBackClick: l,
+    primaryButtonProps: c,
+    children: u
+  } = e, f = _(e, ["title", "gradientColor", "countryCode", "headerBadgeText", "headerBadgeIcon", "onBackClick", "primaryButtonProps", "children"]);
+  return (0, r.jsxs)(a.dWK, p(d({}, f), {
     children: [(0, r.jsx)(m, {
       gradientColor: n,
       title: t,
       countryCode: i,
-      headerPillText: o
+      headerBadgeText: o,
+      headerBadgeIcon: s
     }), (0, r.jsx)(a.cwr, {
-      children: c
+      children: u
     }), (0, r.jsx)(g, {
-      onBackClick: s,
-      primaryButtonProps: l
+      onBackClick: l,
+      primaryButtonProps: c
     })]
   }))
 }
