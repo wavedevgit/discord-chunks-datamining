@@ -2,7 +2,7 @@
 /** chunk id: 628965, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => L
+  A: () => D
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -37,20 +37,19 @@ let u = Chunk652215.XlH.CLOSED,
   _ = {},
   h = null,
   m = null,
-  g = false,
-  E = null,
-  y = [],
-  b = null;
+  g = null,
+  E = [],
+  y = null;
 
-function O(e) {
-  v(e)
+function b(e) {
+  O(e)
 }
 
-function v(e) {
+function O(e) {
   var t, n, r, i;
   let a = o.default.getCurrentUser();
-  if (null == a) return A();
-  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.XlH.OPEN, _ = {}, m = c({}, h = {
+  if (null == a) return v();
+  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), u = s.XlH.OPEN, _ = {}, m = c({}, h = {
     [s.nc_.ACCOUNT]: {
       userId: a.id,
       username: a.username,
@@ -61,33 +60,33 @@ function v(e) {
       newPassword: null,
       claimed: a.isClaimed()
     }
-  }), E = null != (n = e.analyticsLocation) ? n : null, y = null != (r = e.analyticsLocations) ? r : [], b = null != (i = e.searchParams) ? i : null
+  }), g = null != (n = e.analyticsLocation) ? n : null, E = null != (r = e.analyticsLocations) ? r : [], y = null != (i = e.searchParams) ? i : null
 }
 
-function A() {
-  u = s.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, y = [], b = null
+function v() {
+  u = s.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, g = null, E = [], y = null
+}
+
+function A(e) {
+  var t;
+  d = e.section, g = null, E = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
 function I(e) {
-  var t;
-  d = e.section, E = null, y = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
-}
-
-function S(e) {
   let {
     forSection: t
   } = e;
   null != t ? delete f[t] : null != d && delete f[d]
 }
 
-function T(e) {
+function S(e) {
   let {
     forSection: t
   } = e;
   null != t ? delete p[t] : null != d && delete p[d]
 }
 
-function C(e) {
+function T(e) {
   let {
     settings: t
   } = e;
@@ -96,13 +95,13 @@ function C(e) {
   m[s.nc_.ACCOUNT] = c({}, n, t)
 }
 
-function N() {
+function C() {
   u = s.XlH.SUBMITTING
 }
 
-function w() {
+function N() {
   let e = o.default.getCurrentUser();
-  R(), null != e && (m = c({}, h = {
+  w(), null != e && (m = c({}, h = {
     [s.nc_.ACCOUNT]: {
       userId: e.id,
       username: e.username,
@@ -116,16 +115,16 @@ function w() {
   }))
 }
 
-function R() {
+function w() {
   u = s.XlH.OPEN, _ = {}
 }
 
-function P(e) {
+function R(e) {
   var t;
   if (u !== s.XlH.SUBMITTING) returnfalse;
   u = s.XlH.OPEN, d = s.nc_.ACCOUNT, _ = null != (t = e.errors) ? t : {}
 }
-class D extends(r = Chunk311907.Ay.Store) {
+class P extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(o.default)
   }
@@ -139,10 +138,10 @@ class D extends(r = Chunk311907.Ay.Store) {
     return null != d ? p[d] : null
   }
   getAnalyticsLocation() {
-    return E
+    return g
   }
   getAnalyticsLocations() {
-    return y
+    return E
   }
   getErrors() {
     return _
@@ -153,25 +152,22 @@ class D extends(r = Chunk311907.Ay.Store) {
   getSettings() {
     return m
   }
-  getOpenWithoutBackstack() {
-    return g
-  }
   getSearchParams() {
-    return b
+    return y
   }
 }
-l(D, "displayName", "UserSettingsModalStore");
-let L = new D(Chunk73153.h, {
-  USER_SETTINGS_MODAL_OPEN: O,
-  USER_SETTINGS_MODAL_INIT: v,
-  USER_SETTINGS_MODAL_CLOSE: A,
-  LOGOUT: A,
-  USER_SETTINGS_MODAL_SUBMIT: N,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: P,
-  USER_SETTINGS_MODAL_SET_SECTION: I,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
-  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: T,
-  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: R,
-  USER_SETTINGS_MODAL_RESET: w
+l(P, "displayName", "UserSettingsModalStore");
+let D = new P(Chunk73153.h, {
+  USER_SETTINGS_MODAL_OPEN: b,
+  USER_SETTINGS_MODAL_INIT: O,
+  USER_SETTINGS_MODAL_CLOSE: v,
+  LOGOUT: v,
+  USER_SETTINGS_MODAL_SUBMIT: C,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: R,
+  USER_SETTINGS_MODAL_SET_SECTION: A,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: I,
+  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: S,
+  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: T,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: w,
+  USER_SETTINGS_MODAL_RESET: N
 })
