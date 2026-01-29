@@ -1,7 +1,7 @@
 /** Chunk was on 92917 **/
 /** chunk id: 672834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => eD
+  A: () => eL
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -81,11 +81,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk912746 = require("./912746.jsx"),
   Chunk817253 = require("./817253.jsx"),
   Chunk911726 = require("./911726.jsx"),
+  Chunk904854 = require("./904854.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk502075 = require("./502075.js"),
   Chunk985018 = require("./985018.jsx");
 
-function eN(e) {
+function eP(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -104,7 +105,7 @@ function eN(e) {
   return e
 }
 
-function eP(e) {
+function ew(e) {
   let {
     message: t,
     channel: n,
@@ -117,8 +118,8 @@ function eP(e) {
     null != u && (0, h.K)({
       guildId: u.id,
       location: {
-        section: eI.JJy.CHANNEL_TEXT_AREA,
-        object: eI.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+        section: eS.JJy.CHANNEL_TEXT_AREA,
+        object: eS.ZSU.BOOST_ANNOUNCEMENT_UPSELL
       }
     })
   }, [u]), p = (0, $.P)({
@@ -137,7 +138,7 @@ function eP(e) {
   })
 }
 
-function ew(e) {
+function eR(e) {
   let {
     message: t,
     compact: n,
@@ -154,7 +155,7 @@ function ew(e) {
     usernameHook: l
   })
 }
-let eR = Object.freeze({
+let eD = Object.freeze({
     [Chunk652215.lAJ.DEFAULT]: true,
     [Chunk652215.lAJ.REPLY]: true,
     [Chunk652215.lAJ.CHAT_INPUT_COMMAND]: true,
@@ -238,7 +239,7 @@ let eR = Object.freeze({
       } = e, {
         id: s,
         author: o
-      } = t, u = M.default.getId(), d = t.getChannelId(), p = (0, l.bG)([k.A], () => k.A.isCallActive(d, s), [d, s]), m = (0, l.bG)([z.A], () => z.A.getVoiceState(eI.ME, u)), f = !p && null != t.call && !t.call.participants.includes(u), g = p && (null == m || m.channelId !== d), h = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), _ = (0, $.P)({
+      } = t, u = M.default.getId(), d = t.getChannelId(), p = (0, l.bG)([k.A], () => k.A.isCallActive(d, s), [d, s]), m = (0, l.bG)([z.A], () => z.A.getVoiceState(eS.ME, u)), f = !p && null != t.call && !t.call.participants.includes(u), g = p && (null == m || m.channelId !== d), h = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), _ = (0, $.P)({
         user: o,
         channelId: d,
         guildId: a.guild_id,
@@ -305,7 +306,7 @@ let eR = Object.freeze({
           let e = U.A.getChannel(s);
           null != e && (0, T.uh)(e.guild_id, e.id)
         }
-        setTimeout(() => W._.dispatch(eI.jej.TOGGLE_CHANNEL_PINS), 0)
+        setTimeout(() => W._.dispatch(eS.jej.TOGGLE_CHANNEL_PINS), 0)
       }, [s]), c = (0, $.P)({
         user: a,
         channelId: s,
@@ -343,10 +344,10 @@ let eR = Object.freeze({
         })]
       })
     },
-    [Chunk652215.lAJ.GUILD_BOOST]: eP,
-    [Chunk652215.lAJ.GUILD_BOOST_TIER_1]: eP,
-    [Chunk652215.lAJ.GUILD_BOOST_TIER_2]: eP,
-    [Chunk652215.lAJ.GUILD_BOOST_TIER_3]: eP,
+    [Chunk652215.lAJ.GUILD_BOOST]: ew,
+    [Chunk652215.lAJ.GUILD_BOOST_TIER_1]: ew,
+    [Chunk652215.lAJ.GUILD_BOOST_TIER_2]: ew,
+    [Chunk652215.lAJ.GUILD_BOOST_TIER_3]: ew,
     [Chunk652215.lAJ.CHANNEL_FOLLOW_ADD]: function(e) {
       let {
         message: t,
@@ -377,14 +378,14 @@ let eR = Object.freeze({
           id: o
         },
         messageReference: c
-      } = t, d = t.getChannelId(), p = (0, l.bG)([F.A], () => F.A.findActivity(o, e => e.type === eI.$pd.PLAYING), [o]), m = (0, l.bG)([U.A], () => null != c ? U.A.getChannel(c.channel_id) : null, [c]), f = null == c ? true : c.guild_id, g = (0, $.P)({
+      } = t, d = t.getChannelId(), p = (0, l.bG)([F.A], () => F.A.findActivity(o, e => e.type === eS.$pd.PLAYING), [o]), m = (0, l.bG)([U.A], () => null != c ? U.A.getChannel(c.channel_id) : null, [c]), f = null == c ? true : c.guild_id, g = (0, $.P)({
         user: s,
         channelId: d,
         guildId: a.guild_id,
         messageId: t.id
       }), h = i.useCallback(() => {
         null != m && null != f && (0, u.Nl)({
-          streamType: eS.U4.GUILD,
+          streamType: eT.U4.GUILD,
           ownerId: o,
           channelId: m.id,
           guildId: f
@@ -408,7 +409,7 @@ let eR = Object.freeze({
         message: t,
         compact: n,
         onClick: () => {
-          null != s && x.A.open(s, eI.BEX.ACCESS, eI.nd0.ACCESS_DISCOVERABLE)
+          null != s && x.A.open(s, eS.BEX.ACCESS, eS.nd0.ACCESS_DISCOVERABLE)
         }
       })
     },
@@ -438,7 +439,7 @@ let eR = Object.freeze({
           let {
             default: e
           } = await Promise.all([n.e("34160"), n.e("86155")]).then(n.bind(n, 126768));
-          return t => (0, r.jsx)(e, eN({
+          return t => (0, r.jsx)(e, eP({
             channel: l
           }, t))
         })
@@ -451,7 +452,7 @@ let eR = Object.freeze({
           } = await Promise.all([n.e("99011"), n.e("88974"), n.e("86901")]).then(n.bind(n, 44536));
           return t => {
             var n, i;
-            return (0, r.jsx)(e, (n = eN({}, t), i = i = {
+            return (0, r.jsx)(e, (n = eP({}, t), i = i = {
               channel: l
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
@@ -489,8 +490,8 @@ let eR = Object.freeze({
         channel: i
       }) : null
     },
-    [Chunk652215.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED]: ew,
-    [Chunk652215.lAJ.GUILD_INCIDENT_ALERT_MODE_DISABLED]: ew,
+    [Chunk652215.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED]: eR,
+    [Chunk652215.lAJ.GUILD_INCIDENT_ALERT_MODE_DISABLED]: eR,
     [Chunk652215.lAJ.GUILD_INCIDENT_REPORT_RAID]: function(e) {
       let {
         message: t,
@@ -608,7 +609,7 @@ let eR = Object.freeze({
         channelId: s.id,
         guildId: s.guild_id,
         messageId: i.id
-      }), d = (0, l.bG)([B.A], () => B.A.can(eI.xBc.MUTE_MEMBERS, s)), p = (0, l.bG)([P.A], () => P.A.getParticipant(s.id, i.author.id)), m = new Date(q.default.extractTimestamp(i.id)).toISOString() === new Date(null != (t = null == p || null == (n = p.voiceState) ? true : n.requestToSpeakTimestamp) ? t : 0).toISOString(), f = d && (null == p ? true : p.rtsState) === w.zF.REQUESTED_TO_SPEAK && m;
+      }), d = (0, l.bG)([B.A], () => B.A.can(eS.xBc.MUTE_MEMBERS, s)), p = (0, l.bG)([P.A], () => P.A.getParticipant(s.id, i.author.id)), m = new Date(q.default.extractTimestamp(i.id)).toISOString() === new Date(null != (t = null == p || null == (n = p.voiceState) ? true : n.requestToSpeakTimestamp) ? t : 0).toISOString(), f = d && (null == p ? true : p.rtsState) === w.zF.REQUESTED_TO_SPEAK && m;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(eh.A, {
           message: i,
@@ -619,7 +620,7 @@ let eR = Object.freeze({
           onClick: () => {
             (0, N.lL)(s, i.author.id, false), o.A.deleteMessage(s.id, i.id, true)
           },
-          text: eT.intl.string(eT.t.f0T7hI),
+          text: eN.intl.string(eN.t.f0T7hI),
           icon: a.LvC
         }) : null]
       })
@@ -759,7 +760,18 @@ let eR = Object.freeze({
         compact: i
       })
     },
-    [Chunk652215.lAJ.VOICE_SESSION]: true,
+    [Chunk652215.lAJ.VOICE_SESSION]: function(e) {
+      let {
+        message: t,
+        channel: n,
+        compact: i
+      } = e;
+      return (0, r.jsx)(eI.A, {
+        message: t,
+        channel: n,
+        compact: i
+      })
+    },
     66: function(e) {
       let {
         message: t,
@@ -771,7 +783,7 @@ let eR = Object.freeze({
       })
     }
   }),
-  eD = Chunk64700.memo(function(e) {
+  eL = Chunk64700.memo(function(e) {
     let {
       message: t,
       channel: n,
@@ -779,7 +791,7 @@ let eR = Object.freeze({
       disableInteraction: l
     } = e, {
       type: a
-    } = t, s = eR[a];
+    } = t, s = eD[a];
     if (null == s) {
       var o;
       return o = Error("unknown message type ".concat(t.type)), Y.A.captureException(o), new m.A("SystemMessage").error("", o), null

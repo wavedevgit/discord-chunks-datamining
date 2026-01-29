@@ -1,8 +1,8 @@
 /** Chunk was on 92917 **/
 /** chunk id: 756369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => e6,
-  OC: () => e9,
+  Ay: () => e9,
+  OC: () => e6,
   iV: () => e7
 }), require("./896048.js"), require("./938796.js"), require("./747238.js"), require("./65821.js"), require("./114821.js"), require("./339614.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -734,7 +734,7 @@ class e7 extends(r = Chunk64700.Component) {
   }
 }
 
-function e6(e) {
+function e9(e) {
   var t;
   let {
     channel: n,
@@ -792,7 +792,7 @@ eQ(e7, "defaultProps", {
   renderEmbeds: true,
   compact: false
 });
-let e9 = e => {
+let e6 = e => {
   var t;
   let {
     message: n,
