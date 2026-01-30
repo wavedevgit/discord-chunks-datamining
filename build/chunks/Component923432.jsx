@@ -73,16 +73,16 @@ function y(e) {
     topBar: y
   } = (0, o.cf)([g.A], () => g.A.getUnreadStateForGuildId(n.id)), O = (0, o.bG)([h.A], () => h.A.isFocused()), {
     mode: _,
-    mentionCount: x,
-    targetChannelId: j
+    mentionCount: j,
+    targetChannelId: x
   } = "bottom" === t ? p : y, v = _ === g.k.HIDDEN, E = (0, c.zhh)({
     to: {
       transform: v ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, O ? "respect-motion-settings" : "animate-never"), C = l.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != j && d(j)
-  }, [d, j]);
+    e.preventDefault(), e.stopPropagation(), null != x && d(x)
+  }, [d, x]);
   return (0, r.jsx)("div", {
     className: s()(m.kL, {
       [m.Mn]: "top" === t,
@@ -123,7 +123,7 @@ function y(e) {
           color: "badge-text-brand",
           className: m.pM,
           children: f.intl.format(f.t.EQcLyp, {
-            count: x
+            count: j
           })
         })
       }) : _ === g.k.VOICE_CHANNELS ? (0, r.jsx)(A, {

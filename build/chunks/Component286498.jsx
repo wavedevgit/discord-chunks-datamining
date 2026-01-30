@@ -74,35 +74,35 @@ let S = e => {
   }, [t.id]);
   if (t.bot) return null;
   switch (n) {
-    case x.eA$.FRIEND:
+    case j.eA$.FRIEND:
       return null;
-    case x.eA$.PENDING_INCOMING:
+    case j.eA$.PENDING_INCOMING:
       return (0, r.jsx)(b.A, {
         targetElementRef: h,
         menuItems: [a],
         children: e => (0, r.jsx)(c.m_, {
           asContainer: true,
-          text: j.intl.string(j.t["6QQCQ+"]),
+          text: x.intl.string(x.t["6QQCQ+"]),
           ariaHidden: true,
           children: (0, r.jsx)(u.K0, C(E({}, e), {
             buttonRef: h,
             size: "sm",
             variant: "icon-only",
-            "aria-label": j.intl.string(j.t["6QQCQ+"]),
+            "aria-label": x.intl.string(x.t["6QQCQ+"]),
             icon: u.lI8,
             loading: i
           }))
         })
       });
-    case x.eA$.PENDING_OUTGOING:
+    case j.eA$.PENDING_OUTGOING:
       return (0, r.jsx)(c.m_, {
         asContainer: true,
-        text: j.intl.string(j.t["s/+byI"]),
+        text: x.intl.string(x.t["s/+byI"]),
         ariaHidden: true,
         children: (0, r.jsx)(u.K0, {
           size: "sm",
           variant: "icon-only",
-          "aria-label": j.intl.string(j.t["s/+byI"]),
+          "aria-label": x.intl.string(x.t["s/+byI"]),
           icon: u.lI8,
           disabled: true
         })
@@ -110,13 +110,13 @@ let S = e => {
     default:
       return (0, r.jsx)(c.m_, {
         asContainer: true,
-        text: j.intl.string(j.t.w5uwoI),
+        text: x.intl.string(x.t.w5uwoI),
         ariaHidden: true,
         children: (0, r.jsx)(u.K0, {
           size: "sm",
           onClick: p,
           variant: "icon-only",
-          "aria-label": j.intl.string(j.t.w5uwoI),
+          "aria-label": x.intl.string(x.t.w5uwoI),
           icon: u.Rvf,
           loading: i
         })
@@ -134,7 +134,7 @@ function I(e) {
       selected: m,
       checked: b,
       disabled: O = false,
-      onClick: x,
+      onClick: j,
       onMouseEnter: I,
       onMessageClick: N,
       "aria-setsize": T,
@@ -150,14 +150,14 @@ function I(e) {
     disabled: O
   }) : 0 === w ? (0, r.jsx)(u.Button, {
     variant: "secondary",
-    text: j.intl.string(j.t["g33r/P"]),
+    text: x.intl.string(x.t["g33r/P"]),
     size: "sm",
     onClick: () => {
       null != N && N(n.id)
     }
   }) : (0, r.jsx)(c.m_, {
     asContainer: true,
-    text: j.intl.string(j.t.z9qAt9),
+    text: x.intl.string(x.t.z9qAt9),
     children: (0, r.jsx)(u.P7L, {
       checked: b,
       disabled: true
@@ -168,7 +168,7 @@ function I(e) {
       [v.r9]: O
     }),
     onClick: l === y.A.FRIENDS || R ? () => {
-      null != x && x(n.id)
+      null != j && j(n.id)
     } : true,
     onMouseEnter: () => {
       null != I && I(l, i)

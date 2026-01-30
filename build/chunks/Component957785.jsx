@@ -26,17 +26,17 @@ let p = Chunk64700.forwardRef(function(e, t) {
     wishlistItem: O,
     cardSize: _ = d.Y.MEDIUM
   } = e, {
-    skuId: x,
-    skuProductLine: j
+    skuId: j,
+    skuProductLine: x
   } = O, {
     trackUserProfileWishlistAction: v
   } = (0, u.NJ)(), E = f ? h.ho : h.C8, C = A ? h.pr : h.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
     onClick: () => {
       p(), v({
         action: S ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: S ? null : x,
+        skuId: S ? null : j,
         wishlistId: y,
-        productLines: new Set([j])
+        productLines: new Set([x])
       })
     },
     className: s()(C, {

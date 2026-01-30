@@ -34,9 +34,9 @@ function A(e) {
   let _ = l.useCallback(() => {
       (0, f.aZ)(t.id)
     }, [t.id]),
-    x = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
+    j = (0, o.q8)(t.id, s.M.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
-    ref: x,
+    ref: j,
     children: (0, r.jsx)(p.G, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(a.nFg, {

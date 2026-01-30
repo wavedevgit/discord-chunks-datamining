@@ -134,8 +134,8 @@ let w = Chunk64700.memo(function(e) {
     withGuildIcon: R
   } = e, D = (0, o.bG)([A.Ay], () => A.Ay.getVoiceStatesForChannel(t), [t]), L = (0, o.bG)([b.A], () => b.A.hasVideo(t.id)), {
     unread: M,
-    mentionCount: k,
-    isMentionLowImportance: G
+    mentionCount: G,
+    isMentionLowImportance: k
   } = (0, o.cf)([m.Ay], () => ({
     unread: m.Ay.hasUnread(t.id),
     mentionCount: m.Ay.getMentionCount(t.id),
@@ -172,9 +172,9 @@ let w = Chunk64700.memo(function(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(K, ["role"]), z = l.useRef(null), q = k > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
+  }(K, ["role"]), z = l.useRef(null), q = G > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
     channelName: t.name,
-    mentionCount: k
+    mentionCount: G
   }) : M ? E.intl.formatToPlainString(E.t.YlVvmc, {
     channelName: t.name
   }) : E.intl.formatToPlainString(E.t["0nZpiF"], {
@@ -232,20 +232,20 @@ let w = Chunk64700.memo(function(e) {
                 userCount: F,
                 video: L,
                 channel: t
-              }) : null, (0, y.A)(k) ? (0, r.jsx)(_.A, {
-                mentionsCount: k,
-                isMentionLowImportance: G
+              }) : null, (0, y.A)(G) ? (0, r.jsx)(_.A, {
+                mentionsCount: G,
+                isMentionLowImportance: k
               }) : null]
             })]
           })
         }))]
       })
-    }), (0, r.jsx)(x.A, {
+    }), (0, r.jsx)(j.A, {
       channel: t,
       collapsed: !I && 1 !== D.length,
       collapsedMax: 6,
       voiceStates: D,
-      location: j.ThZ.GUILD_CHANNEL_LIST,
+      location: x.ThZ.GUILD_CHANNEL_LIST,
       isThread: true
     })]
   })

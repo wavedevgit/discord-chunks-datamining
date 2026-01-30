@@ -41,11 +41,11 @@ function d(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]), {
     parentAnalyticsLocation: A
   } = (0, s.Ay)(), y = t || n || d, O = h ? u.l : u.A, _ = (0, a.A)(t, n, d, p), {
-    events: x,
-    play: j,
+    events: j,
+    play: x,
     Component: v
   } = (0, c.q)(y), E = n || d ? i.O1p : v;
-  return l.useEffect(() => () => j(), [j, y]), (0, r.jsx)(O, function(e) {
+  return l.useEffect(() => () => x(), [x, y]), (0, r.jsx)(O, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -69,10 +69,10 @@ function d(e) {
     color: y ? "red" : true,
     label: _,
     onMouseEnter: e => {
-      null == g || g(e), x.onMouseEnter()
+      null == g || g(e), j.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == f || f(e), x.onMouseLeave()
+      null == f || f(e), j.onMouseLeave()
     },
     onClick: e => {
       null == m || m(e), (0, o.X)(A, o.O.MIC, t)

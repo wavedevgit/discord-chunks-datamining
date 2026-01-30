@@ -45,13 +45,13 @@ function C(e) {
     align: "center",
     onRequestClose: n,
     actions: [{
-      text: x.intl.string(x.t.uB4Gax),
+      text: j.intl.string(j.t.uB4Gax),
       variant: "primary",
       onClick: l
     }],
     targetElementRef: t,
-    title: x.intl.string(x.t.qh9t5c),
-    body: x.intl.string(x.t.iM6fxV),
+    title: j.intl.string(j.t.qh9t5c),
+    body: j.intl.string(j.t.iM6fxV),
     graphic: {
       type: "image",
       src: E.A
@@ -83,13 +83,13 @@ function S(e) {
     return i
   }(e, ["showPopover", "onViewWishlist", "onCardClick"]), h = l.useRef(null), b = (0, a.useHasAnyModalOpen)(), A = (0, i.bG)([f.A], () => f.A.hasLayers()), y = (0, m.Jw)({
     location: "wishlist-card"
-  }), [_, x] = (0, p.kn)(y ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, true), j = l.useCallback(() => {
-    x(O.i.USER_DISMISS), u()
-  }, [u, x]), v = l.useCallback(() => {
-    x(O.i.USER_DISMISS)
-  }, [x]), E = l.useCallback(() => {
-    x(O.i.USER_DISMISS), c()
-  }, [c, x]);
+  }), [_, j] = (0, p.kn)(y ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, true), x = l.useCallback(() => {
+    j(O.i.USER_DISMISS), u()
+  }, [u, j]), v = l.useCallback(() => {
+    j(O.i.USER_DISMISS)
+  }, [j]), E = l.useCallback(() => {
+    j(O.i.USER_DISMISS), c()
+  }, [c, j]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -109,7 +109,7 @@ function S(e) {
       }
       return e
     }({}, d), n = n = {
-      onCardClick: j,
+      onCardClick: x,
       ref: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -139,8 +139,8 @@ function I(e, t) {
     cardSize: c,
     analyticsLocations: d
   } = t, p = null != l && l > 0, g = {
-    title: p ? x.intl.string(x.t.TxBQzD) : x.intl.string(x.t["4yiU7x"]),
-    body: p ? true : x.intl.string(x.t.ilhtIa),
+    title: p ? j.intl.string(j.t.TxBQzD) : j.intl.string(j.t["4yiU7x"]),
+    body: p ? true : j.intl.string(j.t.ilhtIa),
     renderIcon: p ? true : h.GM,
     shouldShow: true
   };
@@ -158,9 +158,9 @@ function I(e, t) {
     tooltipConfig: g,
     shouldScalePreview: false,
     renderPreview: () => (0, r.jsx)(A.e, {
-      containerClassName: j.Nr,
-      backgroundImageClassName: j.GC,
-      foregroundImageClassName: j.wP,
+      containerClassName: x.Nr,
+      backgroundImageClassName: x.GC,
+      foregroundImageClassName: x.wP,
       sku: e.sku,
       shape: "custom"
     }),
@@ -197,7 +197,7 @@ function N(e) {
           })
         },
         className: v.Hh,
-        "aria-label": x.intl.string(x.t.pLPjsb),
+        "aria-label": j.intl.string(j.t.pLPjsb),
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
@@ -206,7 +206,7 @@ function N(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: x.intl.format(x.t["CqpEC+"], {
+          children: j.intl.format(j.t["CqpEC+"], {
             applicationName: null == s ? true : s.name
           })
         })]

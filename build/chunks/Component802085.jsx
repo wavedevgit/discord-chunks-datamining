@@ -34,18 +34,18 @@ let E = Chunk64700.memo(function(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: s()(x.K1, {
-          [x.oE]: l
+        className: s()(j.K1, {
+          [j.oE]: l
         }),
         children: [(0, r.jsx)("div", {
-          className: x.Oz,
+          className: j.Oz,
           children: (0, r.jsx)(u.lmn, {
             size: "xs",
             color: "currentColor",
-            className: x.F_
+            className: j.F_
           })
         }), (0, r.jsx)("div", {
-          className: x.jC,
+          className: j.jC,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-text-default",
@@ -53,8 +53,8 @@ let E = Chunk64700.memo(function(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: s()(x.ah, {
-          [x.oE]: l
+        className: s()(j.ah, {
+          [j.oE]: l
         }),
         children: (0, r.jsx)(m.A, {
           message: t,
@@ -63,7 +63,7 @@ let E = Chunk64700.memo(function(e) {
             variant: "text-xs/normal",
             color: "interactive-text-default",
             tag: "span",
-            className: x.C2,
+            className: j.C2,
             children: _.intl.format(_.t["Nd3Gh+"], {
               helpUrl: g.A.getArticleURL(O.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
@@ -89,10 +89,10 @@ let E = Chunk64700.memo(function(e) {
     }, [m, u.content, f, O, g]), (0, r.jsxs)("div", {
       id: (0, b.CJ)(u),
       className: s()(i, v.PT, {
-        [j.BK]: true,
-        [j.nB]: "rtl" === o()(u.content),
-        [x.Dy]: null == S ? true : S.isBlockedEdit,
-        [x.bv]: !(null == S ? true : S.isBlockedEdit)
+        [x.BK]: true,
+        [x.nB]: "rtl" === o()(u.content),
+        [j.Dy]: null == S ? true : S.isBlockedEdit,
+        [j.bv]: !(null == S ? true : S.isBlockedEdit)
       }),
       children: [null != g ? g : (0, A._A)(u, f), (null == S ? true : S.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
         children: [" ", (0, r.jsx)(y.A, {
@@ -100,7 +100,7 @@ let E = Chunk64700.memo(function(e) {
           isEdited: true,
           isInline: false,
           children: (0, r.jsxs)("span", {
-            className: j.oh,
+            className: x.oh,
             children: ["(", _.intl.string(_.t.Z7eEx9), ")"]
           })
         })]

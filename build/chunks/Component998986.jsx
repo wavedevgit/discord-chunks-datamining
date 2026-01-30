@@ -67,8 +67,8 @@ function T(e) {
     guildId: t,
     selected: n,
     handleClick: l
-  } = e, u = (0, g.YZ)(t, "guild_shop_channel_row"), f = (0, s.bG)([O.A], () => O.A.getGuild(t)), v = (null == f ? true : f.features.has(j.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, T = "false" === o.w.get(E.bJ, "false"), P = (0, s.bG)([d.A], () => d.A.useReducedMotion);
-  return (0, r.jsx)(x.G, {
+  } = e, u = (0, g.YZ)(t, "guild_shop_channel_row"), f = (0, s.bG)([O.A], () => O.A.getGuild(t)), v = (null == f ? true : f.features.has(x.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, T = "false" === o.w.get(E.bJ, "false"), P = (0, s.bG)([d.A], () => d.A.useReducedMotion);
+  return (0, r.jsx)(j.G, {
     id: "shop-".concat(t),
     className: i()(S.A2, {
       [S.wH]: n,
@@ -96,11 +96,11 @@ function T(e) {
       }), n && (0, r.jsx)(c.DUT, {
         className: S.b,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), _.default.track(j.HAw.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, h.H$)(t)), {
+          if (e.stopPropagation(), (0, b.Dr)(a.M.SERVER_SHOP_PHANTOM_PREVIEW), _.default.track(x.HAw.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, h.H$)(t)), {
               action_taken: E.hN.DISMISS_CHANNEL_ROW
             })), !u || !v) {
             var n;
-            (0, A.bG)(j.BVt.CHANNEL(t, null == (n = y.Ay.getDefaultChannel(t)) ? true : n.id))
+            (0, A.bG)(x.BVt.CHANNEL(t, null == (n = y.Ay.getDefaultChannel(t)) ? true : n.id))
           }
         },
         "aria-label": C.intl.string(C.t.cpT0Cq),
@@ -118,13 +118,13 @@ function P(e) {
     guild: t,
     selected: l
   } = e, i = (0, f.P)(t, "guild_shop_channel_row"), s = () => {
-    o.w.set(E.bJ, "true"), (0, A.pX)(j.BVt.CHANNEL(t.id, v.VV.GUILD_SHOP))
+    o.w.set(E.bJ, "true"), (0, A.pX)(x.BVt.CHANNEL(t.id, v.VV.GUILD_SHOP))
   };
   return i ? (0, r.jsx)(T, {
     guildId: t.id,
     selected: l,
     handleClick: s
-  }) : (0, r.jsx)(x.G, {
+  }) : (0, r.jsx)(j.G, {
     id: "shop-".concat(t.id),
     renderIcon: e => (0, r.jsx)(m.h, {
       width: 20,

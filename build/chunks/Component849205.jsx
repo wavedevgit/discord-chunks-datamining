@@ -29,7 +29,7 @@ function m(e) {
     _ = (0, a.a)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    x = (0, o.bG)({
+    j = (0, o.bG)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -57,7 +57,7 @@ function m(e) {
             className: _,
             children: null != y ? y : h.Ay.getName(m)
           })
-        }), x && (0, r.jsx)(i.m, {
+        }), j && (0, r.jsx)(i.m, {
           text: g.intl.string(g.t.QyZ4Td),
           children: (0, r.jsx)(s.m5V, {
             size: "xs",

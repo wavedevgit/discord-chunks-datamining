@@ -24,9 +24,9 @@ let O = Chunk64700.memo(function(e) {
   let {
     guildId: t,
     selected: n
-  } = e, O = (0, a.useHasAnyModalOpen)(), _ = (0, i.bG)([h.A], () => h.A.hasLayers()), [x, j] = (0, c.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), v = x === s.M.GAME_SERVER_HOSTING_NEW_BADGE, [E, C] = (0, c.ww)(O || _ || !v ? [] : [s.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), S = l.useCallback(e => {
-    j(e), C(e)
-  }, [j, C]), I = l.useCallback(() => {
+  } = e, O = (0, a.useHasAnyModalOpen)(), _ = (0, i.bG)([h.A], () => h.A.hasLayers()), [j, x] = (0, c.ww)([s.M.GAME_SERVER_HOSTING_NEW_BADGE], t), v = j === s.M.GAME_SERVER_HOSTING_NEW_BADGE, [E, C] = (0, c.ww)(O || _ || !v ? [] : [s.M.GAME_SERVER_HOSTING_NEW_COACHMARK], t), S = l.useCallback(e => {
+    x(e), C(e)
+  }, [x, C]), I = l.useCallback(() => {
     S(m.i.USER_DISMISS), (0, d.pX)(g.BVt.CHANNEL(t, f.VV.GAME_SERVERS))
   }, [t, S]), N = l.useRef(null), T = E === s.M.GAME_SERVER_HOSTING_NEW_COACHMARK, P = l.useCallback(() => (0, r.jsx)(p.mn, {
     channelRowRef: N,

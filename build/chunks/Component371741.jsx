@@ -180,16 +180,16 @@ function ee(e) {
       guild_id: m
     },
     compact: O = false,
-    className: x,
-    groupId: j,
+    className: j,
+    groupId: x,
     viewingChannelId: E
   } = e, I = a.type === Y.lAJ.REPLY ? a.messageReference : true, L = (0, c.rm)(null != (t = e.id) ? t : ""), {
-    onFocus: k
-  } = L, G = Q(L, ["onFocus"]), {
+    onFocus: G
+  } = L, k = Q(L, ["onFocus"]), {
     isFocused: B,
     handleFocus: q,
     handleBlur: Z
-  } = (0, P.G8)(k), {
+  } = (0, P.G8)(G), {
     popouts: $,
     selected: ee,
     setPopout: et
@@ -198,7 +198,7 @@ function ee(e) {
     handleMouseLeave: ea,
     isHovered: eo
   } = (0, P.yp)({
-    groupId: j,
+    groupId: x,
     message: a,
     defaultValue: ee
   }), ec = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled), eu = ee || ec && B, ed = eu || eo, eh = (0, u.bG)([_.A], () => _.A.isDeveloper), {
@@ -215,7 +215,7 @@ function ee(e) {
     allowDevLinks: eh,
     previewLinkTarget: true,
     viewingChannelId: E
-  }), em = (0, w.A)(o, p, ec), eb = (0, S.Ay)(a), eA = (0, T.fF)(a, j), ey = (0, T.ZD)(a), eO = (0, V.A)(e, ep, false), e_ = l.useCallback(() => (0, A.uh)(m, p, o), [m, p, o]), ex = (0, g.$7)({
+  }), em = (0, w.A)(o, p, ec), eb = (0, S.Ay)(a), eA = (0, T.fF)(a, x), ey = (0, T.ZD)(a), eO = (0, V.A)(e, ep, false), e_ = l.useCallback(() => (0, A.uh)(m, p, o), [m, p, o]), ej = (0, g.$7)({
     guildId: m,
     roleId: eb.iconRoleId
   });
@@ -226,16 +226,16 @@ function ee(e) {
       onClick: e_,
       "aria-label": W.intl.string(W.t.k5WiPf),
       children: W.intl.string(W.t.k5WiPf)
-    }), (0, r.jsx)(N.A, J(X({}, G), {
+    }), (0, r.jsx)(N.A, J(X({}, k), {
       id: i,
       compact: O,
-      className: s()(x, {
+      className: s()(j, {
         [z.iU]: true,
         [z.HJ]: !O,
         [z.mK]: a.mentioned,
         [z.M1]: (0, v.ec)(a),
         [z.H4]: (0, C.A)(a),
-        [z._A]: a.id === j || a.type === Y.lAJ.REPLY,
+        [z._A]: a.id === x || a.type === Y.lAJ.REPLY,
         [z.wH]: eu
       }),
       zalgo: true,
@@ -257,7 +257,7 @@ function ee(e) {
         replyReference: I,
         author: eb,
         repliedMessage: el,
-        roleIcon: ex
+        roleIcon: ej
       }),
       childrenAccessories: (0, M.A)({
         channelMessageProps: e,
@@ -327,28 +327,28 @@ let et = Chunk64700.memo(function(e) {
     }),
     {
       isFocused: e_,
-      hasFocused: ex,
-      handleFocus: ej,
+      hasFocused: ej,
+      handleFocus: ex,
       handleBlur: ev
     } = (0, P.G8)(ea),
     eE = l.useCallback(e => {
-      ej(e), eb(e)
-    }, [ej, eb]),
+      ex(e), eb(e)
+    }, [ex, eb]),
     eC = l.useCallback(e => {
       ev(e), eA()
     }, [ev, eA]),
-    eS = (0, u.bG)([x.A], () => x.A.isEditing($, q), [$, q]),
+    eS = (0, u.bG)([j.A], () => j.A.isEditing($, q), [$, q]),
     eI = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled),
     eN = ep || eS || eI && e_,
     eT = eN || eO,
-    eP = (0, u.bG)([O.A], () => E.hasFlag(Y.pr7.HAS_THREAD) && O.A.getChannel(j.default.castMessageIdAsChannelId(E.id))),
+    eP = (0, u.bG)([O.A], () => E.hasFlag(Y.pr7.HAS_THREAD) && O.A.getChannel(x.default.castMessageIdAsChannelId(E.id))),
     ew = E.isFirstMessageInForumPost(Z),
     eR = (0, f.S)((null != (n = E.editedTimestamp) ? n : E.timestamp).valueOf()),
     eD = (0, u.bG)([_.A], () => _.A.isDeveloper),
     {
       content: eL,
       hasSpoilerEmbeds: eM,
-      hasBailedAst: ek
+      hasBailedAst: eG
     } = (0, D.A)(E, {
       hideSimpleEmbedContent: ec && eu,
       isInteracting: eT,
@@ -359,7 +359,7 @@ let et = Chunk64700.memo(function(e) {
       allowDevLinks: eD,
       previewLinkTarget: true
     }),
-    eG = (0, w.A)(q, $, eI),
+    ek = (0, w.A)(q, $, eI),
     eU = (0, S.Ay)(E),
     eV = (0, u.bG)([m.A], () => m.A.getPendingReply($)),
     eB = (i = l.useRef(en), l.useEffect(() => {
@@ -378,7 +378,7 @@ let et = Chunk64700.memo(function(e) {
     }),
     ez = l.useRef(window),
     eq = null != eY;
-  a = E.type === Y.lAJ.CUSTOM_GIFT ? "" : !eS && eq ? (0, k.A)(e, eL) : (0, V.A)(e, eL, eS);
+  a = E.type === Y.lAJ.CUSTOM_GIFT ? "" : !eS && eq ? (0, G.A)(e, eL) : (0, V.A)(e, eL, eS);
   let eX = E.id === er,
     eJ = (0, r.jsx)(d.vN3, {
       offset: {
@@ -397,7 +397,7 @@ let et = Chunk64700.memo(function(e) {
           onFocus: eE,
           onBlur: eC,
           onContextMenu: ef,
-          onKeyDown: eG,
+          onKeyDown: ek,
           onClick: em,
           compact: ee,
           contentOnly: el,
@@ -436,13 +436,13 @@ let et = Chunk64700.memo(function(e) {
           childrenAccessories: (0, M.A)({
             channelMessageProps: e,
             hasSpoilerEmbeds: eM,
-            hasBailedAst: ek,
+            hasBailedAst: eG,
             handleContextMenu: ef,
             isInteracting: eT,
             isAutomodBlockedMessage: eq,
             forceAddReactions: E.type === Y.lAJ.EMOJI_ADDED
           }),
-          childrenButtons: ey || ex ? (0, G.A)({
+          childrenButtons: ey || ej ? (0, k.A)({
             buttonProps: e,
             setPopout: eg,
             messagePopouts: eh,

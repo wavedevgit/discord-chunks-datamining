@@ -87,11 +87,11 @@ function m(e) {
     onClick: y,
     onContextMenu: O,
     onHoverChange: _,
-    onKeyDown: x,
-    treeItemProps: j
+    onKeyDown: j,
+    treeItemProps: x
   } = e, {
     onFocus: v
-  } = j, E = function(e, t) {
+  } = x, E = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -107,7 +107,7 @@ function m(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(j, ["onFocus"]), {
+  }(x, ["onFocus"]), {
     "aria-setsize": C,
     "aria-posinset": S
   } = e, [I, N] = l.useState(false), T = l.useCallback(() => {
@@ -139,7 +139,7 @@ function m(e) {
       onContextMenu: O,
       onMouseEnter: T,
       onMouseLeave: P,
-      onKeyDown: x,
+      onKeyDown: j,
       onFocus: v,
       focusProps: {
         enabled: false

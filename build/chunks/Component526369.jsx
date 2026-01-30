@@ -40,16 +40,16 @@ function C(e) {
     popoutType: w
   } = e, R = (0, f.Us)() === v.BRT.POPOUT, D = (0, a.bG)([A.A], () => A.A.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: L
-  } = (0, x.P)(), M = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(I.id), [I]), k = (0, b.vp)(I.id, t), G = l.useCallback(() => {
+  } = (0, j.P)(), M = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(I.id), [I]), G = (0, b.vp)(I.id, t), k = l.useCallback(() => {
     (0, s.r)(() => {
-      x.P.setState({
+      j.P.setState({
         dismissedActivityEntryPointTileChannel: I.id
       })
     })
   }, [I.id]);
   l.useEffect(() => {
     null != L && I.id !== L && (0, s.r)(() => {
-      x.P.setState({
+      j.P.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
@@ -61,7 +61,7 @@ function C(e) {
     F = (0, p.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
     K = (0, u.et)(I.id) !== u.xy.CAN_LAUNCH,
     Y = null != L && L === I.id,
-    W = k.map(e => t => (0, r.jsx)(_.Ay, {
+    W = G.map(e => t => (0, r.jsx)(_.Ay, {
       participant: e,
       channel: I,
       className: E.V,
@@ -88,9 +88,9 @@ function C(e) {
     guild: D,
     width: e,
     inPopout: R,
-    handleClose: G,
+    handleClose: k,
     userParticipantCount: M
-  })) : W.push(e => (0, r.jsx)(j.A, {
+  })) : W.push(e => (0, r.jsx)(x.A, {
     width: e,
     channel: I,
     guild: D,
@@ -100,13 +100,13 @@ function C(e) {
     guild: D,
     width: e,
     inPopout: R,
-    handleClose: G,
+    handleClose: k,
     userParticipantCount: M
   })));
   let z = l.useCallback(e => {
     var t, n;
-    return null != (t = null == (n = k[e]) ? true : n.id) ? t : "empty-tile"
-  }, [k]);
+    return null != (t = null == (n = G[e]) ? true : n.id) ? t : "empty-tile"
+  }, [G]);
   return (0, r.jsx)(m.A, {
     className: N,
     keyExtractor: z,

@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk620168 = require("./620168.js");
 
-function j(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,32 +66,32 @@ function E(e) {
     isSearching: h,
     documentsIndexed: p,
     selectedChannelId: b
-  } = e, j = (0, m.H)(t), {
+  } = e, x = (0, m.H)(t), {
     totalFilters: v
-  } = (0, A.vj)(j, t), E = l.useMemo(() => {
+  } = (0, A.vj)(x, t), E = l.useMemo(() => {
     if (t.type === y.I4_.DMS) {
       var e, n;
-      let t = null != (e = null == (n = (0, g.Zf)(j).channel_id) ? true : n.length) ? e : 0;
+      let t = null != (e = null == (n = (0, g.Zf)(x).channel_id) ? true : n.length) ? e : 0;
       return t > 0 ? _.intl.format(_.t.A2dqWG, {
         filterCount: t
       }) : _.intl.string(_.t.tc619d)
     }
     return null
-  }, [t.type, j]), [S, I] = l.useState(null), N = l.useMemo(() => h ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [T, R] = (0, d.kn)(N), D = T === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, L = l.useCallback(e => {
+  }, [t.type, x]), [S, I] = l.useState(null), N = l.useMemo(() => h ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [T, R] = (0, d.kn)(N), D = T === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, L = l.useCallback(e => {
     null != e && D && R(O.i.USER_DISMISS), I(e)
   }, [D, R, I]), M = l.useCallback(e => {
     R("user:explicit" === e ? O.i.USER_DISMISS : O.i.AUTO_DISMISS)
-  }, [R]), k = l.useCallback(() => {
+  }, [R]), G = l.useCallback(() => {
     L(null), f.A.openSearchFiltersModal(t)
-  }, [L, t]), G = l.useMemo(() => v > 0 ? _.intl.format(_.t.uaR4sI, {
+  }, [L, t]), k = l.useMemo(() => v > 0 ? _.intl.format(_.t.uaR4sI, {
     filterCount: v
   }) : _.intl.string(_.t.UdhTtk), [v]), U = t.type === y.I4_.DMS || t.type === y.I4_.CHANNEL;
   return (0, r.jsxs)("header", {
-    className: s()(x.wL, {
-      [x.g$]: null != E
+    className: s()(j.wL, {
+      [j.g$]: null != E
     }),
     children: [(0, r.jsx)("div", {
-      className: x.TN,
+      className: j.TN,
       role: "status",
       children: (0, r.jsx)(C, {
         totalResults: o,
@@ -101,11 +101,11 @@ function E(e) {
         documentsIndexed: p
       })
     }), (0, r.jsxs)("div", {
-      className: x.vd,
+      className: j.vd,
       children: [(0, r.jsx)(u.Button, {
         variant: "secondary",
-        onClick: k,
-        text: G,
+        onClick: G,
+        text: k,
         icon: u.RgP,
         size: "sm"
       }), (0, r.jsx)(w, {
@@ -143,11 +143,11 @@ function C(e) {
 
 function S() {
   return (0, r.jsx)("div", {
-    className: x.zp,
+    className: j.zp,
     children: (0, r.jsx)(u.y$y, {
       type: u.y$y.Type.SPINNING_CIRCLE,
-      className: x.u1,
-      itemClassName: x.pu
+      className: j.u1,
+      itemClassName: j.pu
     })
   })
 }
@@ -162,12 +162,12 @@ function I(e) {
       count: null != t ? t : ""
     }),
     children: (0, r.jsxs)("div", {
-      className: x.q_,
+      className: j.q_,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: (0, r.jsx)(u.MzZ, {
-          className: x.Zd,
+          className: j.Zd,
           href: p.A.getArticleURL(y.MVz.SEARCH_INDEXING),
           children: _.intl.string(_.t["G3EA+4"])
         })
@@ -198,7 +198,7 @@ function T(e) {
     })
   });
   return null != n ? (0, r.jsxs)("div", {
-    className: x.hy,
+    className: j.hy,
     children: [l, (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
       color: "text-subtle",
@@ -275,7 +275,7 @@ function P(e) {
           }, "xdm-search-items")
         })
       },
-      children: e => (0, r.jsx)(u.K0, v(j({}, e), {
+      children: e => (0, r.jsx)(u.K0, v(x({}, e), {
         buttonRef: d,
         variant: "secondary",
         icon: u.Zes,
@@ -349,7 +349,7 @@ function w(e) {
         }, "sort-by")
       })
     },
-    children: e => (0, r.jsx)(u.Button, v(j({}, e), {
+    children: e => (0, r.jsx)(u.Button, v(x({}, e), {
       buttonRef: a,
       variant: "secondary",
       icon: u.JNJ,

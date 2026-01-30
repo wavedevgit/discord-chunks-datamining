@@ -42,16 +42,16 @@ let T = function(e, t, n) {
       L = y.A.getMessage(t, e),
       M = f.A.getChannel(t);
     if (null == L || null == M) return;
-    let k = g.default.getId();
+    let G = g.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        r && (O.A.can(N.xBc.MANAGE_MESSAGES, M) || L.canDeleteOwnMessage(k)) && (n.preventDefault(), (0, I.RC)(M, L, n));
+        r && (O.A.can(N.xBc.MANAGE_MESSAGES, M) || L.canDeleteOwnMessage(G)) && (n.preventDefault(), (0, I.RC)(M, L, n));
         break;
       case "c":
-        ((0, j.isMac)() ? R : w) && _.p5 && (n.preventDefault(), (0, _.C)(L.content));
+        ((0, x.isMac)() ? R : w) && _.p5 && (n.preventDefault(), (0, _.C)(L.content));
         break;
       case "e":
-        r && !M.isSystemDM() && (0, E.A)(L, k) && (n.preventDefault(), (0, I.u_)(M, L));
+        r && !M.isSystemDM() && (0, E.A)(L, G) && (n.preventDefault(), (0, I.u_)(M, L));
         break;
       case "p":
         (r || D) && (0, C.A)(L, M) && (n.preventDefault(), (0, I.rS)(M, L, n));
@@ -72,7 +72,7 @@ let T = function(e, t, n) {
               isActiveChannelOrUnarchivableThread: (0, c.jr)(e)
             });
           return !r && n
-        }(M) && (n.preventDefault(), x._.dispatchKeyed(N.zOV.TOGGLE_REACTION_POPOUT, L.id, {
+        }(M) && (n.preventDefault(), j._.dispatchKeyed(N.zOV.TOGGLE_REACTION_POPOUT, L.id, {
           emojiPicker: true
         }));
         break;
@@ -99,7 +99,7 @@ let T = function(e, t, n) {
         P && (n.preventDefault(), (0, I.cl)(M, L));
         break;
       case "escape":
-        m.A.isEditing(M.id, L.id) ? l.A.endEditMessage(M.id) : x._.dispatch(N.jej.TEXTAREA_FOCUS)
+        m.A.isEditing(M.id, L.id) ? l.A.endEditMessage(M.id) : j._.dispatch(N.jej.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

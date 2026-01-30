@@ -81,7 +81,7 @@ let I = Chunk64700.memo(function(e) {
         className: E.Qq,
         variant: "text-sm/normal",
         color: "text-strong",
-        children: x.Ay.getName(t, n, l)
+        children: j.Ay.getName(t, n, l)
       }), i ? (0, r.jsx)(h._Jp, {
         className: E.EH,
         color: d.A.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -100,7 +100,7 @@ let I = Chunk64700.memo(function(e) {
       blocked: c,
       ignored: u,
       rtsState: d
-    } = n, p = d === j.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, g = d === j.zF.REQUESTED_TO_SPEAK || p;
+    } = n, p = d === x.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, g = d === x.zF.REQUESTED_TO_SPEAK || p;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: E.H,
@@ -138,20 +138,20 @@ let I = Chunk64700.memo(function(e) {
     } = e, {
       user: a,
       blocked: d
-    } = t, x = i.getGuildId(), j = O.default.getId(), {
+    } = t, j = i.getGuildId(), x = O.default.getId(), {
       newestAnalyticsLocation: I
     } = (0, f.Ay)(g.A.AUDIENCE_TILE), T = (0, A.Us)(), P = (0, u.bG)([_.Ay], () => {
       var e;
-      return null != x && (null == (e = _.Ay.getMember(x, a.id)) ? true : e.premiumSince) != null
-    }, [x, a.id]), w = l.useRef(null);
-    o()(null != x, "Channel cannot be guildless");
+      return null != j && (null == (e = _.Ay.getMember(j, a.id)) ? true : e.premiumSince) != null
+    }, [j, a.id]), w = l.useRef(null);
+    o()(null != j, "Channel cannot be guildless");
     let R = l.useCallback(e => {
       (0, m.x)({
         type: c.ImpressionTypes.MENU,
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: a.id === j,
+          is_tile_owner: a.id === x,
           tile_type: v.qs.USER
         }
       }), (0, p.L3)(e, async () => {
@@ -160,7 +160,7 @@ let I = Chunk64700.memo(function(e) {
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
         return t => (0, r.jsx)(e, S(C({}, t), {
           user: a,
-          guildId: x,
+          guildId: j,
           channel: i,
           showMediaItems: true,
           showStageChannelItems: true,
@@ -173,7 +173,7 @@ let I = Chunk64700.memo(function(e) {
       }, {
         context: T
       })
-    }, [a, j, T, x, i, I]);
+    }, [a, x, T, j, i, I]);
     return (0, r.jsx)(y.A, {
       targetElementRef: w,
       user: a,
@@ -190,7 +190,7 @@ let I = Chunk64700.memo(function(e) {
       }, e), {
         children: (0, r.jsx)(N, {
           participant: t,
-          guildId: x,
+          guildId: j,
           channel: i,
           isPremium: P
         })

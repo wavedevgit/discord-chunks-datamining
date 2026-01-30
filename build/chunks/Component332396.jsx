@@ -42,10 +42,10 @@ function C(e, t) {
 }
 
 function S() {
-  let e = (0, c.yK)([x.A, b.A], () => _.default.keys(x.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
+  let e = (0, c.yK)([j.A, b.A], () => _.default.keys(j.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
     t = e.map(e => e.id),
-    n = e.filter(e => e.type === j.rbe.GUILD_VOICE),
-    l = e.filter(e => e.type === j.rbe.GUILD_STAGE_VOICE).map(e => e.id),
+    n = e.filter(e => e.type === x.rbe.GUILD_VOICE),
+    l = e.filter(e => e.type === x.rbe.GUILD_STAGE_VOICE).map(e => e.id),
     i = (0, c.yK)([y.Ay], () => o().flatMap(n, e => y.Ay.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t

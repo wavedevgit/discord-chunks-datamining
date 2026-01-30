@@ -125,7 +125,7 @@ function R(e) {
     scheduledMessages: t
   } = e, n = l.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let l = x.A.getChannel(t.scheduledMessage.channelId);
+    let l = j.A.getChannel(t.scheduledMessage.channelId);
     return null == l || (e[l.id] = {
       channel: l,
       scheduledMessages: [...null != (n = null == (r = e[l.id]) ? true : r.scheduledMessages) ? n : [], t]
@@ -163,7 +163,7 @@ let D = Chunk64700.memo(function(e) {
   } = e, a = new _.Ay({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
-    author: j.default.getUser(t.userId),
+    author: x.default.getUser(t.userId),
     timestamp: o()(t.sendAtTimestamp).toDate(),
     channel_id: t.scheduledMessage.channelId
   }), {

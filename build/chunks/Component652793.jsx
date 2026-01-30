@@ -59,7 +59,7 @@ function g(e) {
     background: y,
     showUnread: O = false,
     ref: _
-  } = e, x = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -75,11 +75,11 @@ function g(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]), j = (0, s.rm)(n), v = null != (t = (0, a.O)(m)) ? t : "";
+  }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]), x = (0, s.rm)(n), v = null != (t = (0, a.O)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: _,
-    children: (0, r.jsxs)(o.sqX, p(h({}, x), {
-      buttonProps: p(h({}, j), {
+    children: (0, r.jsxs)(o.sqX, p(h({}, j), {
+      buttonProps: p(h({}, x), {
         id: n,
         role: "button"
       }),
@@ -92,7 +92,7 @@ function g(e) {
           right: 4
         }
       },
-      onContextMenu: null != x.onContextMenu ? x.onContextMenu : e => {
+      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
         e.stopPropagation()
       },
       className: i()(u.fx, d.iE, {

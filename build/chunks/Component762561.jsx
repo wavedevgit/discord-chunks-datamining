@@ -39,7 +39,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk743789 = require("./743789.js");
 
-function G(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -79,7 +79,7 @@ function U(e) {
       duration: 150
     }
   }), Z = e => {
-    (0, O.openUserProfileModal)(G({
+    (0, O.openUserProfileModal)(k({
       sourceAnalyticsLocations: Y,
       hideRestrictedProfile: true
     }, W, e))
@@ -111,7 +111,7 @@ function U(e) {
           themeOverride: F,
           children: [null != J.interactionType && (0, r.jsx)(i.animated.div, {
             style: Q,
-            className: k.tB
+            className: G.tB
           }), (0, r.jsxs)(s.d_W, {
             children: [(0, r.jsxs)(S.A, {
               children: [(0, r.jsx)(I.A, {
@@ -123,16 +123,16 @@ function U(e) {
                 user: n
               })]
             }), (0, r.jsxs)("div", {
-              className: k.wx,
-              children: [(0, r.jsx)(x.A, {
+              className: G.wx,
+              children: [(0, r.jsx)(j.A, {
                 user: n,
                 displayProfile: H,
                 themeType: L.d.SIDEBAR,
                 animateOnHoverOrFocusOnly: !q,
-                className: k.vK
-              }), (0, r.jsx)(j.A, {
+                className: G.vK
+              }), (0, r.jsx)(x.A, {
                 userId: n.id,
-                className: k.oR
+                className: G.oR
               }), (0, r.jsx)(_.A, {
                 user: n,
                 displayProfile: H,
@@ -153,14 +153,14 @@ function U(e) {
               isHoveringOrFocusing: null == J.interactionType && q,
               onOpenProfile: B ? true : Z
             }), $ && (0, r.jsx)("div", {
-              className: k.sJ,
+              className: G.sJ,
               children: (0, r.jsx)(v.A, {
                 user: n,
                 widgets: H.widgets,
                 onOpenUserProfileModal: Z
               })
             }), null != en && en.length > 0 && (0, r.jsx)("div", {
-              className: k.vS,
+              className: G.vS,
               children: (0, r.jsx)(R.A, {
                 profileOwner: n,
                 unownedWishlistItems: en,
@@ -196,17 +196,17 @@ let V = e => {
     context: i
   } = e, [s, a] = l.useState("interactive-text-default");
   return (0, r.jsx)("div", {
-    className: k.qr,
+    className: G.qr,
     children: (0, r.jsx)(o.DUT, {
       onMouseEnter: () => a("interactive-text-hover"),
       onMouseLeave: () => a("interactive-text-default"),
       onClick: () => {
-        t(), (0, m.Wn)(G({
+        t(), (0, m.Wn)(k({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: n
         }, i))
       },
-      className: k.wC,
+      className: G.wC,
       children: (0, r.jsx)(o.Text, {
         color: s,
         variant: "text-sm/normal",

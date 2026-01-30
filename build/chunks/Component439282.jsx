@@ -41,7 +41,7 @@ function R(e) {
     guild: b,
     onAction: A,
     voiceStates: _,
-    isChannelSelected: j,
+    isChannelSelected: x,
     shouldShowSettingNudge: E
   } = e;
   s = l.useMemo(() => {
@@ -57,7 +57,7 @@ function R(e) {
   }, [p, _]), (0, c.E)(s, "VoiceChannelActivities");
   let C = (0, u.Ay)(p),
     S = Array.from((0, u.Rz)(C).values()),
-    w = null != (t = null == _ ? true : _.filter(x.Vq)) ? t : [],
+    w = null != (t = null == _ ? true : _.filter(j.Vq)) ? t : [],
     R = () => e => [I.$pd.PLAYING, I.$pd.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) || e.type === I.$pd.LISTENING,
     L = (0, a.bG)([O.A, y.A, m.default], () => {
       let e = {};
@@ -81,7 +81,7 @@ function R(e) {
     className: P.kL,
     children: [(0, r.jsx)(D, {
       channel: p,
-      isChannelSelected: j,
+      isChannelSelected: x,
       voiceStatesCount: null != (i = null == _ ? true : _.length) ? i : 0
     }), (0, r.jsx)("div", {
       className: P.zN
@@ -178,7 +178,7 @@ function D(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: l
-  } = e, i = (0, a.bG)([A.A], () => !A.A.can(I.xBc.CONNECT, t)), o = (0, a.bG)([_.A], () => _.A.hasVideo(t.id)), c = (0, j.Ay)({
+  } = e, i = (0, a.bG)([A.A], () => !A.A.can(I.xBc.CONNECT, t)), o = (0, a.bG)([_.A], () => _.A.hasVideo(t.id)), c = (0, x.Ay)({
     channel: t,
     locked: i,
     video: o,

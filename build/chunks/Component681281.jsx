@@ -46,7 +46,7 @@ function V(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, l = (0, x.Us)(), i = (0, s.bG)([I.A], () => I.A.getLayout(n.id, l));
+  } = e, l = (0, j.Us)(), i = (0, s.bG)([I.A], () => I.A.getLayout(n.id, l));
   return (0, r.jsx)(S.A, {
     children: (0, r.jsx)(w.A, {
       participant: t,
@@ -67,12 +67,12 @@ function B(e) {
   } = e, s = (0, C.A)(n, t, l);
   return null == t || null == l ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.A, {
-      className: G.my,
+      className: k.my,
       size: o._3J.SIZE_24,
       user: t,
       animate: false
     }), (0, r.jsx)(o.Text, {
-      className: G.W$,
+      className: k.W$,
       variant: "text-md/medium",
       color: i,
       children: s
@@ -92,12 +92,12 @@ function H(e) {
     d = null != a;
   if ((null == l ? true : l.type) === D.lp.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.Ay.Divider, {
-      className: G.yF
+      className: k.yF
     }), (0, r.jsx)(f.A, {
       game: n,
-      className: G.RI
+      className: k.RI
     }), (0, r.jsx)(o.Text, {
-      className: G.W$,
+      className: k.W$,
       variant: "text-md/normal",
       color: "none",
       children: (0, u.A)(n.name)
@@ -111,7 +111,7 @@ function H(e) {
       n = l.stream;
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.Ay.Divider, {
-        className: G.yF
+        className: k.yF
       }), (0, r.jsx)(B, {
         user: e,
         channel: i,
@@ -127,7 +127,7 @@ function H(e) {
     recurrenceId: c
   }));
   return (0, r.jsx)("div", {
-    className: G.kL,
+    className: k.kL,
     children: t
   })
 }
@@ -145,20 +145,20 @@ function F(e) {
   } = (0, s.cf)([I.A], () => ({
     focusedParticipant: I.A.getSelectedParticipant(t.id),
     participantsOpen: I.A.getParticipantsOpen(t.id)
-  }), [t.id]), A = (0, p.Ay)(t), x = (0, g.gU)(t), [C] = (0, d.A)((null == b ? true : b.type) === D.lp.ACTIVITY ? [b.applicationId] : []), S = k.intl.string(k.t.BVZqJl);
-  t.isDM() ? S = k.intl.string(k.t.jN2DfZ) : t.isGroupDM() && (S = k.intl.string(k.t["e5y+gm"]));
+  }), [t.id]), A = (0, p.Ay)(t), j = (0, g.gU)(t), [C] = (0, d.A)((null == b ? true : b.type) === D.lp.ACTIVITY ? [b.applicationId] : []), S = G.intl.string(G.t.BVZqJl);
+  t.isDM() ? S = G.intl.string(G.t.jN2DfZ) : t.isGroupDM() && (S = G.intl.string(G.t["e5y+gm"]));
   let T = (0, s.bG)([h.A], () => h.A.getChannelStatus(t)),
     w = t.isGuildVoice() && u && null != T && T.length > 0,
     L = (0, N.Ay)(t),
     V = w ? (0, r.jsx)(a.m, {
       asContainer: true,
-      text: k.intl.string(k.t.Mgpxiw),
+      text: G.intl.string(G.t.Mgpxiw),
       delay: 500,
       position: "bottom",
       shouldShow: L,
       children: (0, r.jsxs)(o.DUT, {
-        className: i()(G.WH, {
-          [G.BI]: L
+        className: i()(k.WH, {
+          [k.BI]: L
         }),
         onClick: L ? function() {
           (0, o.mMO)(async () => {
@@ -191,16 +191,16 @@ function F(e) {
         } : true,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
-          className: i()(G.Gh, U.PT, {
-            [G.BI]: L
+          className: i()(k.Gh, U.PT, {
+            [k.BI]: L
           }),
-          children: j.A.parseVoiceChannelStatus(T, true, {
+          children: x.A.parseVoiceChannelStatus(T, true, {
             channelId: t.id
           })
         }), L && (0, r.jsx)(o.R2l, {
           size: "custom",
           color: "currentColor",
-          className: i()(G.rD, G.BI),
+          className: i()(k.rD, k.BI),
           width: 14,
           height: 14
         })]
@@ -210,15 +210,15 @@ function F(e) {
       channelId: t.id
     });
   return (0, r.jsxs)("div", {
-    className: G.SC,
+    className: k.SC,
     children: [(0, r.jsx)(o.NPJ, {
       theme: M.NJ.DARK,
       children: e => (0, r.jsxs)(y.Ay, {
         onDoubleClick: O.I,
         transparent: true,
-        className: i()(e, G.jr),
-        innerClassName: G.gi,
-        toolbarClassName: G.KE,
+        className: i()(e, k.jr),
+        innerClassName: k.gi,
+        toolbarClassName: k.KE,
         childrenBottom: V,
         toolbar: (0, r.jsx)(P.A, {
           channel: t,
@@ -228,18 +228,18 @@ function F(e) {
           exitFullScreen: m
         }),
         children: [(0, r.jsx)(y.Ay.Title, {
-          wrapperClassName: G.DD,
+          wrapperClassName: k.DD,
           children: (0, r.jsxs)(r.Fragment, {
-            children: [null != x ? (0, r.jsx)(y.Ay.ChannelIcon, {
-              icon: x,
+            children: [null != j ? (0, r.jsx)(y.Ay.ChannelIcon, {
+              icon: j,
               "aria-label": S
             }) : null, A, B && (0, r.jsx)(a.m, {
-              text: k.intl.string(k.t.QyZ4Td),
+              text: G.intl.string(G.t.QyZ4Td),
               children: (0, r.jsx)(o.m5V, {
                 size: "xs",
-                "aria-label": k.intl.string(k.t.VHXh8a),
+                "aria-label": G.intl.string(G.t.VHXh8a),
                 color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                className: G.vW
+                className: k.vW
               })
             })]
           })

@@ -32,7 +32,7 @@ function g(e) {
 }
 
 function f(e) {
-  var t, n, r, f, m, b, A, y, O, _, x, j, v, E, C;
+  var t, n, r, f, m, b, A, y, O, _, j, x, v, E, C;
   let {
     item: S,
     renderApplication: I
@@ -48,18 +48,18 @@ function f(e) {
         count: D
       });
     case d.Uo.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let L = null != (x = null == (j = S.local_id) ? true : j.split("_").pop()) ? x : "unknown";
+      let L = null != (j = null == (x = S.local_id) ? true : x.split("_").pop()) ? j : "unknown";
       return "Update to build ".concat(L, " available!");
     case d.hW.FRIEND_SUGGESTION_CREATED:
       return a.A.getRelationshipType(N), h.eA$.PENDING_OUTGOING, null != (v = S.body) ? v : "";
     case d.hW.GUILD_SCHEDULED_EVENT_STARTED:
       let M = S.guild_scheduled_event_id,
-        k = null != M ? i.Ay.getGuildScheduledEvent(M) : null,
-        G = null == k ? true : k.name,
-        U = null == (C = s.A.getGuild(null == k ? true : k.guild_id)) ? true : C.name,
-        V = (0, i.AZ)(null != k ? k : true);
-      return (0, c.uJ)(U) || (0, c.uJ)(G) || !V ? null != (E = S.body) ? E : "" : p.intl.format(p.t.AyvfXR, {
-        event_name: G,
+        G = null != M ? i.Ay.getGuildScheduledEvent(M) : null,
+        k = null == G ? true : G.name,
+        U = null == (C = s.A.getGuild(null == G ? true : G.guild_id)) ? true : C.name,
+        V = (0, i.AZ)(null != G ? G : true);
+      return (0, c.uJ)(U) || (0, c.uJ)(k) || !V ? null != (E = S.body) ? E : "" : p.intl.format(p.t.AyvfXR, {
+        event_name: k,
         guild_name: U
       });
     case d.Uo.INCOMING_FRIEND_REQUESTS:

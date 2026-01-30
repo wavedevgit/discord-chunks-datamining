@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 685374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => x
 }), require("./896048.js"), require("./228524.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function x(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, l, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -59,10 +59,10 @@ function x(e, t) {
   return i
 }
 
-function j(e) {
+function x(e) {
   let {
     channelId: t
-  } = e, n = x(e, ["channelId"]), i = (0, s.bG)([d.A], () => d.A.getChannel(t), [t]), a = (0, s.bG)([h.A], () => h.A.getGuild(null == i ? true : i.getGuildId()));
+  } = e, n = j(e, ["channelId"]), i = (0, s.bG)([d.A], () => d.A.getChannel(t), [t]), a = (0, s.bG)([h.A], () => h.A.getGuild(null == i ? true : i.getGuildId()));
   return (l.useEffect(() => {
     p.default.track(A.HAw.OPEN_MODAL, {
       type: "Grant Channel Access"
@@ -81,15 +81,15 @@ function v(e) {
     onClose: h,
     newChannel: p,
     inSettings: A
-  } = e, j = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [v, E] = l.useState(""), [C, S] = l.useState({}), [I, N] = l.useState(false), [T, P] = l.useState(null), w = l.useRef(null), {
+  } = e, x = j(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [v, E] = l.useState(""), [C, S] = l.useState({}), [I, N] = l.useState(false), [T, P] = l.useState(null), w = l.useRef(null), {
     roles: R,
     members: D,
     getRichTag: L
   } = (0, m.K)(s, d, d.accessPermissions, v), M = f.A.useSections({
     roles: R,
     members: D
-  }), k = p && 0 === Object.keys(C).length;
-  async function G() {
+  }), G = p && 0 === Object.keys(C).length;
+  async function k() {
     if (null == d || 0 === Object.keys(C).length) return void h();
     N(true);
     try {
@@ -116,7 +116,7 @@ function v(e) {
     roles: R,
     members: D,
     getRichTag: L,
-    children: (0, r.jsx)(i.Modal, (t = _({}, j), n = n = {
+    children: (0, r.jsx)(i.Modal, (t = _({}, x), n = n = {
       title: y.intl.string(y.t.dMJ3Y6),
       onClose: h,
       input: (0, r.jsxs)("div", {
@@ -155,7 +155,7 @@ function v(e) {
         renderRow: f.A.renderRow,
         sections: M
       },
-      actions: k ? [{
+      actions: G ? [{
         variant: "secondary",
         text: y.intl.string(y.t.u46sxe),
         onClick: h
@@ -166,7 +166,7 @@ function v(e) {
       }, {
         variant: "primary",
         text: y.intl.string(y.t.i4jeWR),
-        onClick: G,
+        onClick: k,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

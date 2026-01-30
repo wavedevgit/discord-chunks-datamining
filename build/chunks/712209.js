@@ -123,7 +123,7 @@ class Y extends Chunk143236.EventEmitter {
     h.A.clearChannel(e.channelId);
     let t = h.A.fetchMessages({
       channelId: e.channelId,
-      limit: k.EMb,
+      limit: G.EMb,
       jump: {
         messageId: e.oldestReadMessageId,
         flash: true
@@ -184,9 +184,9 @@ class Y extends Chunk143236.EventEmitter {
         newestUnreadMessageId: n
       } = e;
       d.h.wait(() => p.ack(t, {
-        section: k.JJy.INBOX,
-        object: k.ZSU.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
-        objectType: k.AnalyticsObjectTypes.ACK_AUTOMATIC
+        section: G.JJy.INBOX,
+        object: G.ZSU.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
+        objectType: G.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true, true, n));
       let r = this.state.channels.find(e => e.channelId === t);
       (null != r && this.undoStack.push(r), 1 === this.state.channels.length) ? this.deleteChannel(t): (this.setState({
@@ -199,9 +199,9 @@ class Y extends Chunk143236.EventEmitter {
       let e = this.undoStack.pop();
       if (null == e) return;
       p.ack(e.channelId, {
-        section: k.JJy.INBOX,
-        object: k.ZSU.UNDO_MARK_AS_READ,
-        objectType: k.AnalyticsObjectTypes.ACK_MANUAL
+        section: G.JJy.INBOX,
+        object: G.ZSU.UNDO_MARK_AS_READ,
+        objectType: G.AnalyticsObjectTypes.ACK_MANUAL
       }, true, true, e.oldestReadMessageId);
       let t = this.state.channels.findIndex(t => t.order > e.order),
         n = [...this.state.channels];
@@ -210,7 +210,7 @@ class Y extends Chunk143236.EventEmitter {
         channels: n
       })
     }, this.markGuildRead = e => {
-      d.h.wait(() => (0, b.A)([e], k.JJy.INBOX)), this.setState({
+      d.h.wait(() => (0, b.A)([e], G.JJy.INBOX)), this.setState({
         channels: this.state.channels.filter(t => t.guildId !== e)
       }), this.maybeLoadMore()
     }, this.deleteChannel = e => {
@@ -234,9 +234,9 @@ class Y extends Chunk143236.EventEmitter {
         collapsedChannels: l,
         loadState: i
       } = this.state, s = u().findIndex(r, e => e.channelId === t), a = r[s], o = !a.collapsed;
-      l[t] = o, (0, j.ji)(n, t, e => {
+      l[t] = o, (0, x.ji)(n, t, e => {
         e.collapsedInInbox = o
-      }, j.Sb.FREQUENT_USER_ACTION), this.setState({
+      }, x.Sb.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: s,
         collapsedChannels: l,
         loadState: "done" !== i || o || a.isFullyLoaded ? i : "loaded",
@@ -334,7 +334,7 @@ function q(e, t, n, r) {
   if (l.isPrivate()) {
     if (0 === P.Ay.getMentionCount(r)) return
   } else if (!(0, A.Y)(l) && 0 === P.Ay.getMentionCount(r)) return;
-  if (!l.isPrivate() && !T.A.can(k.xBc.READ_MESSAGE_HISTORY, l) || (0, f.qR)(l)) return;
+  if (!l.isPrivate() && !T.A.can(G.xBc.READ_MESSAGE_HISTORY, l) || (0, f.qR)(l)) return;
   let i = P.Ay.ackMessageId(r);
   if (null == i) {
     let e = I.A.getGuild(l.guild_id);
@@ -370,12 +370,12 @@ function q(e, t, n, r) {
         if (Date.now() - e > X) return 6
       }
       if (r.isThread()) {
-        let e = (0, x.l)(r);
-        return e === G.CP.ALL_MESSAGES ? 4 : e === G.CP.NO_MESSAGES ? 7 : 5
+        let e = (0, j.l)(r);
+        return e === k.CP.ALL_MESSAGES ? 4 : e === k.CP.NO_MESSAGES ? 7 : 5
       } {
         let n = R.Ay.getChannelMessageNotifications(e, t),
-          r = n === k.orn.NULL ? R.Ay.getMessageNotifications(e) : n;
-        return r === k.orn.ALL_MESSAGES ? 4 : r === k.orn.NO_MESSAGES ? 7 : 5
+          r = n === G.orn.NULL ? R.Ay.getMessageNotifications(e) : n;
+        return r === G.orn.ALL_MESSAGES ? 4 : r === G.orn.NO_MESSAGES ? 7 : 5
       }
     }(n, r, a),
     order: 0

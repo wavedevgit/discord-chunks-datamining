@@ -71,7 +71,7 @@ function B(e) {
     showingBanner: h
   } = e, p = (0, d.Ay)(n), {
     type: A
-  } = n, O = (0, i.bG)([x.default], () => n.isPrivate() ? x.default.getUser(n.getRecipientId()) : null), C = j.Ay.useUserTag(O), {
+  } = n, O = (0, i.bG)([j.default], () => n.isPrivate() ? j.default.getUser(n.getRecipientId()) : null), C = x.Ay.useUserTag(O), {
     canManageRoles: P,
     canReadMessageHistory: w
   } = (0, i.cf)([_.A], () => ({
@@ -94,7 +94,7 @@ function B(e) {
       (null == O ? true : O.bot) && H === y.FetchState.NOT_FETCHED && o.A.fetch()
     }, [null == O ? true : O.bot, H]), n.isSystemDM()) return (0, r.jsx)(T.A, {
     channel: n,
-    children: k.intl.string(k.t.Rzvnig)
+    children: G.intl.string(G.t.Rzvnig)
   });
   if (A === L.rbe.DM) {
     let e;
@@ -111,7 +111,7 @@ function B(e) {
       }, "manage"))), F && t.push((0, r.jsx)(g.A, {
         channel: n
       }, "report")), t.length > 0 && (e = (0, r.jsx)("div", {
-        className: G.U,
+        className: k.U,
         children: t
       }))
     } else e = (0, r.jsx)(v.A, {
@@ -126,7 +126,7 @@ function B(e) {
         variant: "heading-xl/medium",
         className: U.SX,
         children: C
-      }), k.intl.format(k.t["Qvg+6+"], {
+      }), G.intl.format(G.t["Qvg+6+"], {
         username: p
       }), (null == O ? true : O.isProvisional) && (0, r.jsx)(f.Y, {
         userId: O.id
@@ -137,11 +137,11 @@ function B(e) {
     if (n.isManaged()) return (0, r.jsxs)(E.Ay, {
       channelId: n.id,
       children: [(0, r.jsx)(E.cr, {
-        children: k.intl.format(k.t.I3R7Vn, {
+        children: G.intl.format(G.t.I3R7Vn, {
           channelName: p
         })
       }), (0, r.jsx)(E.j1, {
-        children: k.intl.string(k.t.M8Ao6I)
+        children: G.intl.string(G.t.M8Ao6I)
       })]
     });
     else if (n.hasFlag(M.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(S.A, {
@@ -149,7 +149,7 @@ function B(e) {
   });
   else return (0, r.jsx)(T.A, {
     channel: n,
-    children: k.intl.format(k.t.MFwcqO, {
+    children: G.intl.format(G.t.MFwcqO, {
       name: p
     })
   });
@@ -159,7 +159,7 @@ function B(e) {
   }) : (0, r.jsx)(E.Ay, {
     channelId: n.id,
     children: (0, r.jsx)(E.j1, {
-      children: k.intl.format(k.t.hPVEQG, {
+      children: G.intl.format(G.t.hPVEQG, {
         channelName: p
       })
     })

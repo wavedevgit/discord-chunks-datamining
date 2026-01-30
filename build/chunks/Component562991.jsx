@@ -27,17 +27,17 @@ function A(e) {
     subtitle: A,
     onClick: y,
     showEmptyChannelTopic: O
-  } = e, _ = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), x = null != _ && _.length > 0, j = (0, u.Ay)(t, true), v = null != A && A.length > 0;
+  } = e, _ = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), j = null != _ && _.length > 0, x = (0, u.Ay)(t, true), v = null != A && A.length > 0;
   if (l.useEffect(() => {
-      x && p.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+      j && p.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
-  let E = s()(m.Ui, n && j ? m.BI : null);
-  return x ? (0, r.jsx)(c.DUT, {
+    }, [j, t.id, t.guild_id]), null == t.guild_id) return null;
+  let E = s()(m.Ui, n && x ? m.BI : null);
+  return j ? (0, r.jsx)(c.DUT, {
     className: E,
-    onClick: j ? y : true,
+    onClick: x ? y : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: s()(m.qS, b.PT),
@@ -47,7 +47,7 @@ function A(e) {
         })
       })
     })
-  }) : n && j && (!v || i) && O ? (0, r.jsxs)(c.DUT, {
+  }) : n && x && (!v || i) && O ? (0, r.jsxs)(c.DUT, {
     className: E,
     onClick: y,
     children: [(0, r.jsx)(c.Text, {

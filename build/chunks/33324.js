@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 33324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => j
 }), require("./321073.js");
 var Chunk417597 = require("./417597.js"),
   Chunk41200 = require("./41200.js"),
@@ -23,11 +23,11 @@ var Chunk417597 = require("./417597.js"),
   Chunk281405 = require("./281405.js"),
   Chunk652215 = require("./652215.js");
 
-function x(e) {
+function j(e) {
   let t = (0, h.A)(e.id),
     n = (0, i.W)(e.id),
-    x = (0, d.vz)(e.id),
-    j = (0, l.r)(e),
+    j = (0, d.vz)(e.id),
+    x = (0, l.r)(e),
     v = (0, b.jz)(e),
     E = (0, A.kt)({
       location: "guild-action-rows"
@@ -44,7 +44,7 @@ function x(e) {
     L = e.features.has(_.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     M = (0, m.A)(e.id);
   (0, f.Ao)("useGuildActionRows");
-  let k = (0, g.C$)(e.id, "useGuildActionRows"),
-    G = e.features.has(_.GuildFeatures.GAME_SERVERS);
-  return w && P.push(O.n.GUILD_HUB_HEADER_OPTIONS), !N && C && I && null != S && S.length > 0 ? P.push(O.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(O.n.GUILD_PREMIUM_PROGRESS_BAR), !w && C && P.push(O.n.GUILD_HOME), t && P.push(O.n.GUILD_SCHEDULED_EVENTS), !w && R && D && P.push(O.n.CHANNELS_AND_ROLES), x && P.push(O.n.GUILD_ROLE_SUBSCRIPTIONS), j && P.push(O.n.GUILD_SHOP), v && E && P.push(O.n.GUILD_GAME_SHOP), (T && (R || L) || n && e.features.has(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(O.n.GUILD_MOD_DASH_MEMBER_SAFETY), M && P.push(O.n.GUILD_BOOSTS), k && G && P.push(O.n.GAME_SERVERS), P
+  let G = (0, g.C$)(e.id, "useGuildActionRows"),
+    k = e.features.has(_.GuildFeatures.GAME_SERVERS);
+  return w && P.push(O.n.GUILD_HUB_HEADER_OPTIONS), !N && C && I && null != S && S.length > 0 ? P.push(O.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(O.n.GUILD_PREMIUM_PROGRESS_BAR), !w && C && P.push(O.n.GUILD_HOME), t && P.push(O.n.GUILD_SCHEDULED_EVENTS), !w && R && D && P.push(O.n.CHANNELS_AND_ROLES), j && P.push(O.n.GUILD_ROLE_SUBSCRIPTIONS), x && P.push(O.n.GUILD_SHOP), v && E && P.push(O.n.GUILD_GAME_SHOP), (T && (R || L) || n && e.features.has(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(O.n.GUILD_MOD_DASH_MEMBER_SAFETY), M && P.push(O.n.GUILD_BOOSTS), G && k && P.push(O.n.GAME_SERVERS), P
 }

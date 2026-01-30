@@ -192,7 +192,7 @@ class ed extends(r = Chunk64700.PureComponent) {
       channel: e
     } = this.props;
     p.h.wait(() => A.A.open(null == e ? true : e.id));
-    let t = (0, j.dI)(e);
+    let t = (0, x.dI)(e);
     F.default.track(ee.HAw.OPEN_POPOUT, es(ei({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -328,7 +328,7 @@ class ed extends(r = Chunk64700.PureComponent) {
         e.preventDefault(), e.stopPropagation(), a ? (--u < 0 && (d - 1 < 0 ? d = false !== o[t.length - 1] ? t.length - 1 : d : false !== o[d - 1] && (d -= 1), u = t[d].length - 1), this.handleSelectionChange(d, u)) : (--u < 0 && (u = i.length - 1), this.handleSelectionChange(0, u));
         break;
       case et.dh.ENTER:
-        e.preventDefault(), e.stopPropagation(), d === k.A.FRIENDS && i.length > u && this.handleSelect(0, u)
+        e.preventDefault(), e.stopPropagation(), d === G.A.FRIENDS && i.length > u && this.handleSelect(0, u)
     }
   }
   renderSearchBar() {
@@ -414,7 +414,7 @@ class ed extends(r = Chunk64700.PureComponent) {
     if (r) {
       var a, o, c;
       return ei({
-        sections: "" === e ? [null == (a = i[k.A.FRIENDS]) ? true : a.length] : [null == (o = i[k.A.FRIENDS]) ? true : o.length, null == (c = i[k.A.GUILD_MEMBERS]) ? true : c.length],
+        sections: "" === e ? [null == (a = i[G.A.FRIENDS]) ? true : a.length] : [null == (o = i[G.A.FRIENDS]) ? true : o.length, null == (c = i[G.A.GUILD_MEMBERS]) ? true : c.length],
         rowHeight: this.getImprovedDMRowHeight,
         renderSection: this.renderImprovedDMSection,
         sectionHeight: e => 0 === e ? 24 : 36
@@ -621,7 +621,7 @@ class ed extends(r = Chunk64700.PureComponent) {
       let {
         user: A,
         comparator: y
-      } = b, O = c.has(A.id), _ = n === k.A.FRIENDS && !O && 0 >= this.getRemaining();
+      } = b, O = c.has(A.id), _ = n === G.A.FRIENDS && !O && 0 >= this.getRemaining();
       return (0, l.jsx)($.A, {
         section: n,
         row: r,
@@ -649,10 +649,10 @@ class ed extends(r = Chunk64700.PureComponent) {
       } = this.state;
       return (0, l.jsx)(ey, {
         section: n,
-        heading: n === k.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs),
+        heading: n === G.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs),
         onToggleVisibility: this.handleToggleSectionVisibility,
         isOpen: null == (t = r[n]) || t
-      }, n === k.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs))
+      }, n === G.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs))
     }), el(this, "handleToggleSectionVisibility", e => {
       var t;
       let {
@@ -692,7 +692,7 @@ class ed extends(r = Chunk64700.PureComponent) {
       let {
         channel: t,
         inImprovedDMExperiment: n
-      } = this.props, r = (0, j.dI)(t);
+      } = this.props, r = (0, x.dI)(t);
       n && z.A.requestMembers(null, e), A.A.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         F.default.track(ee.HAw.SEARCH_USER_LIST_STARTED, es(ei({}, r), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -720,7 +720,7 @@ class ed extends(r = Chunk64700.PureComponent) {
       } = this.props;
       f.A.openPrivateChannel({
         recipientIds: [e],
-        location: x.A.NEW_GROUP_DM_INVITE_MODAL
+        location: j.A.NEW_GROUP_DM_INVITE_MODAL
       }), t()
     }), el(this, "handleAddFriendNavigation", () => {
       m.A.transitionToSection(ee.m3P.ADD_FRIEND, {
@@ -751,7 +751,7 @@ class ed extends(r = Chunk64700.PureComponent) {
         {
           channel: n
         } = this.props,
-        r = (0, j.dI)(n),
+        r = (0, x.dI)(n),
         l = true;
       1 === e.length && (l = null == f.A._openCachedDMChannel(e[0])), F.default.track(ee.HAw.CREATE_DM_USER_LIST_CLICKED, es(ei({}, r), {
         is_new_dm: l,
@@ -767,18 +767,18 @@ class ed extends(r = Chunk64700.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && f.A.updateChannel(e, t, x.A.NEW_GROUP_DM_INVITE_MODAL), F.default.track(ee.HAw.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && f.A.updateChannel(e, t, j.A.NEW_GROUP_DM_INVITE_MODAL), F.default.track(ee.HAw.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: ee.rbe.GROUP_DM,
-          location: x.A.NEW_GROUP_DM_INVITE_MODAL,
+          location: j.A.NEW_GROUP_DM_INVITE_MODAL,
           new_name_set: "" !== this.state.newChannelName,
           new_icon_set: null != this.state.previewIcon
         })
       })
     }), el(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        r = (0, j.dI)(e),
-        l = G.A.getChannelId() === e.id;
+        r = (0, x.dI)(e),
+        l = k.A.getChannelId() === e.id;
       f.A.addRecipients(e.id, t, ee.ThZ.ADD_FRIENDS_TO_DM).then(n => {
         if (l) {
           if (e.isDM() && n !== e.id) return void g.A.call(n, false, true);
@@ -848,7 +848,7 @@ function eh(e) {
     onChange: a
   } = e, {
     analyticsLocations: o
-  } = (0, v.Ay)(x.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, C.Jo)(Array.from(t), H.default, V.A);
+  } = (0, v.Ay)(j.A.NEW_GROUP_DM_INVITE_MODAL), c = (0, C.Jo)(Array.from(t), H.default, V.A);
   return (0, l.jsxs)("div", {
     className: er.zj,
     children: [(0, l.jsx)(I.X, {
@@ -878,14 +878,14 @@ function eh(e) {
 function ep(e) {
   let {
     channel: t
-  } = e, n = ea(e, ["channel"]), r = (0, u.cf)([k.h, M.A, B.A], () => {
+  } = e, n = ea(e, ["channel"]), r = (0, u.cf)([G.h, M.A, B.A], () => {
     let e;
-    return null != t && null != (e = M.A.getInvite(t.id)) && e.isExpired() && (e = null), es(ei({}, k.h.getState()), {
+    return null != t && null != (e = M.A.getInvite(t.id)) && e.isExpired() && (e = null), es(ei({}, G.h.getState()), {
       invite: e,
       hideDiscriminator: B.A.hidePersonalInformation,
       hideInstantInvites: B.A.hideInstantInvites
     })
-  }), i = (0, u.yK)([k.h], () => k.h.getSections()), {
+  }), i = (0, u.yK)([G.h], () => G.h.getSections()), {
     enabled: s,
     showFriendButton: a
   } = J.A.useConfig({

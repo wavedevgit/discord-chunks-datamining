@@ -57,7 +57,7 @@ function L(e) {
   return e
 }
 let M = [],
-  k = {
+  G = {
     controller: new Chunk353709.Controller({
       value: 1,
       immediate: true
@@ -71,10 +71,10 @@ let M = [],
     disableBannerAnimation: true
   };
 
-function G(e) {
+function k(e) {
   let {
     includePanelSpacing: t
-  } = e, n = (0, j.op)(), {
+  } = e, n = (0, x.op)(), {
     selectedFilter: i
   } = (0, v.A)(), a = (0, o.bG)([E.A], () => E.A.oldestDisplayedMessageId), c = (0, o.yK)([E.A], () => E.A.getInboxMessages()), S = (0, o.yK)([y.Ay, b.A, E.A], () => c.filter(e => !(0, C.EJ)({
     messageId: e.id,
@@ -89,20 +89,20 @@ function G(e) {
     ReadStateStore_: y.Ay,
     GuildStore_: b.A
   }) || (0, C.zo)(e, E.A.selectedItemInfo))), N = l.useCallback(e => {
-    i !== P.Io.BOOKMARKS && x.A.loadMoreInbox({
+    i !== P.Io.BOOKMARKS && j.A.loadMoreInbox({
       viewId: n,
       loadingTrigger: e
     })
   }, [i, n]), {
     hasLoadedEver: R,
-    canLoadMore: G
+    canLoadMore: k
   } = (0, o.cf)([E.A], () => ({
     hasLoadedEver: E.A.hasLoadedEver,
     canLoadMore: E.A.canLoadMore({})
   }));
   l.useEffect(() => {
-      G && !R && N(P.VA.ON_OPEN)
-    }, [G, R, N]),
+      k && !R && N(P.VA.ON_OPEN)
+    }, [k, R, N]),
     function(e) {
       let {
         unreadChannelIds: t
@@ -178,7 +178,7 @@ function G(e) {
         isUnread: null != (n = y.Ay.hasUnread(c)) && n
       }
     }(Y, W);
-    null != l && x.A.inboxItemClick({
+    null != l && j.A.inboxItemClick({
       message: l,
       channel: {
         id: l.channel_id
@@ -208,7 +208,7 @@ function G(e) {
       component: (0, r.jsx)(g.Ay, L({
         hasSubheader: true,
         guild: X
-      }, k)),
+      }, G)),
       children: [i === P.Io.ALL && (0, r.jsx)(F, {
         hideBanner: !R || i !== P.Io.ALL
       }), q && (0, r.jsx)(u.hKd, {
@@ -228,8 +228,8 @@ function G(e) {
 }
 
 function U(e) {
-  return (0, r.jsx)(j.GM, {
-    children: (0, r.jsx)(G, L({}, e))
+  return (0, r.jsx)(x.GM, {
+    children: (0, r.jsx)(k, L({}, e))
   })
 }
 

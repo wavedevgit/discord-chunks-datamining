@@ -55,8 +55,8 @@ function K(e) {
     connectedLocation: Y,
     renderExternalHeader: W
   } = e, z = (0, P.A)(), q = (0, a.yK)([S.Ay], () => S.Ay.getEmbeddedActivitiesForLocation(Y), [Y]), X = (0, T.H)(Y), J = (0, a.bG)([O.A], () => O.A.getChannel(X)), Q = (0, I.IQ)(q), Z = (0, I.Rz)(Q), $ = l.useCallback(() => {
-    (0, C.gk)(G.Gd.PIP)
-  }, []), ee = l.useRef(null), et = (0, a.bG)([S.Ay], () => S.Ay.getFocusedLayout()), en = et !== G.E8.NO_CHAT, [er, el] = l.useState(null != (t = null != (n = m.Ay.activityPanelHeight) ? n : K) ? t : null), ei = l.useCallback(e => {
+    (0, C.gk)(k.Gd.PIP)
+  }, []), ee = l.useRef(null), et = (0, a.bG)([S.Ay], () => S.Ay.getFocusedLayout()), en = et !== k.E8.NO_CHAT, [er, el] = l.useState(null != (t = null != (n = m.Ay.activityPanelHeight) ? n : K) ? t : null), ei = l.useCallback(e => {
     d.Ay.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -75,17 +75,17 @@ function K(e) {
     });
     return e.observe(es.current), () => e.disconnect()
   }, []);
-  let ec = ea.width / Math.max(ea.height, 1) < G.B5,
+  let ec = ea.width / Math.max(ea.height, 1) < k.B5,
     eu = 0,
     ed = 0,
     eh = (0, N.A)(null == z ? true : z.id);
   if (!eh) {
     let e = ea.width,
       t = ea.height;
-    ec ? ((t = ea.width / G.B5) > ea.height && (e = (t = ea.height) * G.B5), ed = (ea.height - t) / 2) : ((e = Math.min(ea.height * G.B5)) > ea.width && (t = (e = ea.width) / G.B5), eu = (ea.width - e) / 2)
+    ec ? ((t = ea.width / k.B5) > ea.height && (e = (t = ea.height) * k.B5), ed = (ea.height - t) / 2) : ((e = Math.min(ea.height * k.B5)) > ea.width && (t = (e = ea.width) / k.B5), eu = (ea.width - e) / 2)
   }
   let ep = Z.get(null != (i = null == z ? true : z.id) ? i : ""),
-    eg = (0, a.bG)([x.A], () => x.A.getChannelId()),
+    eg = (0, a.bG)([j.A], () => j.A.getChannelId()),
     ef = (0, a.yK)([_.Ay], () => {
       var e;
       return null == J ? [] : Array.from(null != (e = null == ep ? true : ep.embeddedActivity.userIds) ? e : []).map(e => _.Ay.getMember(J.guild_id, e))
@@ -149,7 +149,7 @@ function K(e) {
     eA = (0, M.G)();
   if (null == z) return null;
   let ey = [];
-  null != ep && (ey = Array.from(ep.embeddedActivity.userIds).map(e => j.default.getUser(e)).filter(e => null != e && true !== e));
+  null != ep && (ey = Array.from(ep.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && true !== e));
   let eO = e => {
     var t;
     if (null == e || true === e || e === R.mt) return null;
@@ -209,7 +209,7 @@ function K(e) {
             className: B.Hq,
             children: [(0, r.jsxs)("div", {
               className: B.qi,
-              children: [(0, r.jsx)(k.A, {
+              children: [(0, r.jsx)(G.A, {
                 channelId: eg
               }), (0, r.jsx)(b.l, {
                 isTrayButton: true,

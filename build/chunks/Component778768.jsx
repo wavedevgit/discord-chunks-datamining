@@ -55,7 +55,7 @@ function T(e) {
     onHoverOrFocus: i,
     setPopoutRef: a,
     closePopout: u
-  } = e, h = l.useRef(null), p = (0, j.L7)(h), b = (0, j.kt)({
+  } = e, h = l.useRef(null), p = (0, x.L7)(h), b = (0, x.kt)({
     channel: t
   }), {
     analyticsLocations: A
@@ -137,7 +137,7 @@ function P(e) {
     user: n
   } = e, i = l.useRef(null), a = (0, u.bG)([A.Ay], () => A.Ay.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: o
-  } = (0, j.L7)(i), [c, g] = l.useState(null), f = "success" === c || "sending" === c, m = l.useCallback(async () => {
+  } = (0, x.L7)(i), [c, g] = l.useState(null), f = "success" === c || "sending" === c, m = l.useCallback(async () => {
     if (f) return;
     async function e() {
       var e, n, r;
@@ -177,7 +177,7 @@ function P(e) {
     guildId: t.guild_id
   });
   if (null == a) return null;
-  let P = x.Ay.getName(n),
+  let P = j.Ay.getName(n),
     w = E.intl.string(E.t.jYnGPG);
   return (0, r.jsxs)(d.DUT, {
     innerRef: i,

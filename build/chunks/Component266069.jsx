@@ -25,7 +25,7 @@ function f(e) {
     onFavoriteClick: m
   } = e, [b, A] = l.useState(false), y = (0, a.bG)([d.A], () => d.A.getFavoritedStatuses().length >= d.x), O = null != m, _ = l.useCallback(e => {
     e.stopPropagation(), null == m || m()
-  }, [m]), x = f ? u.Gg5 : u.yA2;
+  }, [m]), j = f ? u.Gg5 : u.yA2;
   return (0, r.jsxs)(u.DUT, {
     onClick: i,
     onMouseEnter: () => {
@@ -46,7 +46,7 @@ function f(e) {
       children: (0, r.jsx)(u.DUT, {
         className: s()(p.ff, p.wB),
         onClick: _,
-        children: (0, r.jsx)(x, {
+        children: (0, r.jsx)(j, {
           className: p.ut,
           color: f ? o.A.colors.ICON_FEEDBACK_WARNING : "currentColor"
         })

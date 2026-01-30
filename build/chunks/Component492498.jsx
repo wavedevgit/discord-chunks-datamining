@@ -66,12 +66,12 @@ function T(e) {
     guildFilter: _.Ay.guildFilter,
     roleFilter: _.Ay.roleFilter,
     everyoneFilter: _.Ay.everyoneFilter
-  })), x = (0, m.Sc)({
+  })), j = (0, m.Sc)({
     location: "RecentMentions"
-  }), j = (0, d.A)(g), v = (0, d.A)(b), I = (0, d.A)(y);
+  }), x = (0, d.A)(g), v = (0, d.A)(b), I = (0, d.A)(y);
   l.useEffect(() => {
-    _.Ay.hasLoadedEver ? (null != j && g !== j || null != v && b !== v || null != I && y !== I) && N(n, true) : N(n, true)
-  }, [j, g, v, b, I, y, n, true]), (0, u.Ay)(() => {
+    _.Ay.hasLoadedEver ? (null != x && g !== x || null != v && b !== v || null != I && y !== I) && N(n, true) : N(n, true)
+  }, [x, g, v, b, I, y, n, true]), (0, u.Ay)(() => {
     (null == i ? true : i.some(p.$r)) && (c.A.clearMentions(), N(n, true))
   }), l.useEffect(() => () => {
     c.A.truncateMentions(E.Ue3)
@@ -79,7 +79,7 @@ function T(e) {
   let T = l.useCallback(() => null, []);
   return (0, r.jsx)(f.Ay, {
     className: s()(S.sH, {
-      [S.qC]: x
+      [S.qC]: j
     }),
     scrollerClassName: S.XG,
     onFetch: () => null,
@@ -125,7 +125,7 @@ function w(e) {
     a = !!(0, h.Gc)(i) && !s;
   return (0, r.jsxs)("div", {
     className: S.kL,
-    children: [(0, r.jsx)(j.A, {
+    children: [(0, r.jsx)(x.A, {
       channel: i,
       gotoChannel: n,
       children: null != l ? (0, r.jsx)(o.JnF, {
@@ -134,7 +134,7 @@ function w(e) {
       }) : null
     }), (0, r.jsxs)("div", {
       className: S.zC,
-      children: [(0, r.jsx)(x.A, {
+      children: [(0, r.jsx)(j.A, {
         className: S.QT,
         onJump: n
       }), (0, r.jsx)(g.A, {

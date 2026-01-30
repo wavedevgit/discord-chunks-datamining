@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function j(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,10 +69,10 @@ let E = Chunk64700.memo(function(e) {
     showReplySpine: w
   } = e, R = E.state === p.a.LOADED ? E.message : true, D = (0, b.X4)(R), L = o.m.useExperiment({
     location: "repliedMessage"
-  }).enabled, M = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = l.useMemo(() => {
+  }).enabled, M = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), G = l.useMemo(() => {
     if (null == R) return null;
     let e = (0, a.A)(R);
-    if (e.type === _.lAJ.USER_JOIN) return (0, s.$)(x.intl.formatToParts(f.A.getSystemMessageUserJoin(e.id), {
+    if (e.type === _.lAJ.USER_JOIN) return (0, s.$)(j.intl.formatToParts(f.A.getSystemMessageUserJoin(e.id), {
       username: null != D ? D.nick : e.author.username,
       usernameHook: e => e
     }));
@@ -93,18 +93,18 @@ let E = Chunk64700.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == D ? true : D.nick
     }));
-    else if (e.type === _.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : x.intl.string(x.t.wnn1Dc);
+    else if (e.type === _.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : j.intl.string(j.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
           allowLinks: true
         },
-        n = e.isFirstMessageInForumPost(C) ? v(j({}, t), {
+        n = e.isFirstMessageInForumPost(C) ? v(x({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
           allowGameMentions: L
-        }) : v(j({}, t), {
+        }) : v(x({}, t), {
           formatInline: true,
           allowHeading: M,
           allowList: M,
@@ -114,7 +114,7 @@ let E = Chunk64700.memo(function(e) {
     }
     return null
   }, [R, D, C, M, L]), {
-    isReplyAuthorBlocked: G,
+    isReplyAuthorBlocked: k,
     isReplyAuthorIgnored: U
   } = (0, i.cf)([g.A], () => ({
     isReplyAuthorBlocked: null != R && g.A.isBlockedForMessage(R),
@@ -131,9 +131,9 @@ let E = Chunk64700.memo(function(e) {
     channel: C,
     baseAuthor: Y,
     referencedMessage: E,
-    content: k,
+    content: G,
     compact: S,
-    isReplyAuthorBlocked: G,
+    isReplyAuthorBlocked: k,
     isReplyAuthorIgnored: U,
     showAvatarPopout: N,
     showUsernamePopout: I,

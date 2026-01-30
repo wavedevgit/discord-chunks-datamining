@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 330465, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => G
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -83,10 +83,10 @@ function M(e, t) {
     }))
   })
 }
-let k = Chunk64700.memo(function(e) {
-  var t, n, i, g, k;
+let G = Chunk64700.memo(function(e) {
+  var t, n, i, g, G;
   let {
-    guildNode: G,
+    guildNode: k,
     setRef: U,
     onDragStart: V,
     onDragEnd: B,
@@ -110,22 +110,22 @@ let k = Chunk64700.memo(function(e) {
   } = e, {
     id: ei,
     parentId: es
-  } = G, ea = null != (t = e.upperBadge) ? t : q ? (0, N.em)() : null != z ? (0, N.oi)(z) : true, eo = null != (n = e.lowerBadge) ? n : true;
-  null == eo && X > 0 ? eo = null != (g = (0, N.wN)(X, J ? h.LU0.colors.BACKGROUND_MOD_STRONG.css : h.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? g : true : null == eo && null != et && (eo = null != (k = (0, N.eW)({
+  } = k, ea = null != (t = e.upperBadge) ? t : q ? (0, N.em)() : null != z ? (0, N.oi)(z) : true, eo = null != (n = e.lowerBadge) ? n : true;
+  null == eo && X > 0 ? eo = null != (g = (0, N.wN)(X, J ? h.LU0.colors.BACKGROUND_MOD_STRONG.css : h.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? g : true : null == eo && null != et && (eo = null != (G = (0, N.eW)({
     guildJoinRequestStatus: et
-  })) ? k : true);
+  })) ? G : true);
   let ec = null != (i = e.lowerBadgeSize) ? i : {
       width: (0, h.o6S)(X)
     },
     [{
       dragging: eu
     }, ed] = (0, a.i)({
-      type: x.PJ.GUILD,
+      type: j.PJ.GUILD,
       item: () => (requestAnimationFrame(() => {
         null == V || V()
       }), {
-        type: G.type,
-        nodeId: G.id
+        type: k.type,
+        nodeId: k.id
       }),
       end() {
         null == B || B(), (0, f.um)(_.Ay.getCompatibleGuildFolders())
@@ -148,15 +148,15 @@ let k = Chunk64700.memo(function(e) {
         state: L
       })
     }, [ei, H]),
-    ex = l.useCallback(() => {
+    ej = l.useCallback(() => {
       if (null != H || null == F || q || !ee) return;
       let e = (0, m.W)(F.id);
       null != e && p.A.preload(F.id, e)
     }, [H, F, q, ee]),
-    ej = (0, u.bG)([O.Ay], () => O.Ay.isCurrentUserGuest(ei)),
+    ex = (0, u.bG)([O.Ay], () => O.Ay.isCurrentUserGuest(ei)),
     ev = l.useCallback(e => {
-      null == F || ej || Q(e, F)
-    }, [F, Q, ej]),
+      null == F || ex || Q(e, F)
+    }, [F, Q, ex]),
     eE = l.useCallback(e => {
       if ("ArrowLeft" === e.key && null != es) {
         var t;
@@ -202,7 +202,7 @@ let k = Chunk64700.memo(function(e) {
           onMouseLeave: function() {
             $ || eg(false)
           },
-          onMouseDown: ex,
+          onMouseDown: ej,
           onContextMenu: ev,
           onKeyDown: eE,
           icon: (0, y.Iv)(F, 2 * eI, ef && K, true),
@@ -236,7 +236,7 @@ let k = Chunk64700.memo(function(e) {
     });
   return (0, r.jsxs)(I.c, {
     ref: eS,
-    children: [(0, r.jsx)(j.A, {
+    children: [(0, r.jsx)(x.A, {
       hovered: !eu && ef,
       selected: !eu && Y,
       unread: !eu && W,
@@ -248,7 +248,7 @@ let k = Chunk64700.memo(function(e) {
       children: eT
     }), Z ? (0, r.jsx)(E.Ay, {
       name: F.name,
-      targetNode: G,
+      targetNode: k,
       onDragOverChanged: eC
     }) : null]
   })

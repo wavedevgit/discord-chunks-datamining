@@ -41,7 +41,7 @@ let C = e => {
       allowLinks: false,
       allowGameMentions: false,
       previewLinkTarget: false
-    }), c = n.author, u = x.Ay.getName(c), d = (0, p.A)({
+    }), c = n.author, u = j.Ay.getName(c), d = (0, p.A)({
       userId: c.id,
       guildId: t.guild_id
     }), {
@@ -96,7 +96,7 @@ let C = e => {
       channel: t,
       idle: n,
       showChat: i
-    } = e, p = l.useRef(new Set), [g, f] = l.useState([]), [b, A] = l.useState(0), x = l.useRef(null), v = l.useRef(false), [S, I] = l.useState(true), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
+    } = e, p = l.useRef(new Set), [g, f] = l.useState([]), [b, A] = l.useState(0), j = l.useRef(null), v = l.useRef(false), [S, I] = l.useState(true), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
     l.useEffect(() => {
       let e = p.current;
       return () => {
@@ -105,16 +105,16 @@ let C = e => {
     }, []), l.useEffect(() => {
       let e = () => I(true),
         t = () => I(false);
-      return _._.subscribe(j.jej.TEXTAREA_FOCUS, e), _._.subscribe(j.jej.TEXTAREA_BLUR, t), () => {
-        _._.unsubscribe(j.jej.TEXTAREA_FOCUS, e), _._.unsubscribe(j.jej.TEXTAREA_BLUR, t)
+      return _._.subscribe(x.jej.TEXTAREA_FOCUS, e), _._.subscribe(x.jej.TEXTAREA_BLUR, t), () => {
+        _._.unsubscribe(x.jej.TEXTAREA_FOCUS, e), _._.unsubscribe(x.jej.TEXTAREA_BLUR, t)
       }
     }, []), l.useEffect(() => {
-      let e = x.current;
+      let e = j.current;
       null != e && e.scrollTo({
         top: e.scrollHeight,
         behavior: "smooth"
       })
-    }, [x]), l.useEffect(() => {
+    }, [j]), l.useEffect(() => {
       let e = Date.now();
       f(O.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(false))
     }, [t]);
@@ -150,7 +150,7 @@ let C = e => {
           R(l);
           let e = setTimeout(() => {
             p.current.delete(e);
-            let t = x.current;
+            let t = j.current;
             null != t && t.scrollTo({
               top: t.scrollHeight,
               behavior: "smooth"
@@ -181,7 +181,7 @@ let C = e => {
             className: s()(E.b6, {
               [E.N7]: D && n
             }),
-            ref: x,
+            ref: j,
             children: g.map(e => (0, r.jsx)(C, {
               channel: t,
               message: e,

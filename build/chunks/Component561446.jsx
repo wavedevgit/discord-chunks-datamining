@@ -28,8 +28,8 @@ function y(e) {
     showTrailingDivider: y = false
   } = e, O = h.default.cast(t), {
     joinRequest: _,
-    isModmin: x,
-    guildId: j,
+    isModmin: j,
+    guildId: x,
     maxMembers: v
   } = (0, l.cf)([p.A, u.A, d.A], () => {
     let e = p.A.getRequest(O),
@@ -40,12 +40,12 @@ function y(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), E = (0, l.bG)([c.A], () => null != j ? c.A.getMemberCount(j) : 0), C = null != v && (null != E ? E : 0) >= v, {
+  }), E = (0, l.bG)([c.A], () => null != x ? c.A.getMemberCount(x) : 0), C = null != v && (null != E ? E : 0) >= v, {
     approveRequest: S,
     rejectRequest: I,
     submitting: N
   } = (0, f.W)(null == _ ? true : _.guildId, null == _ ? true : _.userId, null == _ ? true : _.joinRequestId);
-  return null != _ && _.applicationStatus === g.B5.SUBMITTED && x ? (0, r.jsxs)("div", {
+  return null != _ && _.applicationStatus === g.B5.SUBMITTED && j ? (0, r.jsxs)("div", {
     className: A.U,
     children: [(0, r.jsx)(i.m, {
       text: b.intl.string(b.t.cdPGbE),

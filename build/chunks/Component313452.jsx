@@ -92,7 +92,7 @@ function R() {
         })]
       }), (0, r.jsx)(d.Button, {
         variant: "secondary",
-        onClick: () => (0, x.tZ)(e),
+        onClick: () => (0, j.tZ)(e),
         text: I.intl.string(S.default.klSpfs)
       })]
     })
@@ -112,8 +112,8 @@ function D(e) {
       ignoreGrouping: L = false
     } = e,
     M = (0, y.op)(),
-    k = l.useRef(null),
-    G = (0, h.A)(D, k),
+    G = l.useRef(null),
+    k = (0, h.A)(D, G),
     {
       entrypoint: U,
       notificationCenterVariant: V
@@ -149,14 +149,14 @@ function D(e) {
   l.useEffect(() => {
     function e() {
       var e;
-      null == (e = k.current) || e.scrollPageUp({
+      null == (e = G.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = k.current) || e.scrollPageDown({
+      null == (e = G.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -166,7 +166,7 @@ function D(e) {
   }, []);
   let q = l.useCallback(() => {
       var e;
-      let t = null == (e = k.current) ? true : e.getScrollerState();
+      let t = null == (e = G.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
       t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == a || a(E.VA.USER_SCROLL))
@@ -193,7 +193,7 @@ function D(e) {
       return (n.length > 0 || i.length > 0) && (o().each(i, e => {
         e.kind === E.yL.MENTION ? t[E.Ur.UNREAD].push(e) : e.channelId in r[E.Ur.UNREAD] ? r[E.Ur.UNREAD][e.channelId].push(e) : r[E.Ur.UNREAD][e.channelId] = [e]
       }), o().each(n, e => {
-        let n = (0, x.i7)(e);
+        let n = (0, j.i7)(e);
         e.kind === E.yL.MENTION ? t[n].push(e) : e.channelId in r[n] ? r[n][e.channelId].push(e) : r[n][e.channelId] = [e]
       }), o().each(w, n => {
         [...Object.values(r[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => b.default.compare(t[0].id, e[0].id)).forEach(t => {
@@ -222,7 +222,7 @@ function D(e) {
     }, [n, i, p, Y, W, X, L, g, J, Q, M]),
     $ = Z[Z.length - 1],
     ee = l.isValidElement($) && $.type === P,
-    et = (0, j.S)(e => e.setInboxReadState);
+    et = (0, x.S)(e => e.setInboxReadState);
   l.useEffect(() => {
     Q || et(0 === X.UNREAD.length)
   }, [X, Q, et]);
@@ -244,7 +244,7 @@ function D(e) {
   let er = l.useCallback(() => {
     var e;
     let t = w.filter(e => Y[e]).reduce((e, t) => e + X[t].length, 0),
-      n = null == (e = k.current) ? true : e.getScrollerState();
+      n = null == (e = G.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [Y, X]);
   l.useEffect(() => {
@@ -270,7 +270,7 @@ function D(e) {
     onDoubleClick: T,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.hD, {
-      navigator: G,
+      navigator: k,
       children: (0, r.jsx)(c.PR, {
         children: e => {
           var t, n;
@@ -313,7 +313,7 @@ function D(e) {
           }({
             ref: e => {
               var t;
-              k.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+              G.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             className: s()(N.m4, S),
             onScroll: q,

@@ -56,24 +56,24 @@ function A(e) {
     senderId: y
   } = e, O = l.useCallback(() => {
     (0, u.xi)(t, [A])
-  }, [t, A]), _ = (0, s.bG)([c.A], () => c.A.isBlocked(y)), x = l.useMemo(() => ({
+  }, [t, A]), _ = (0, s.bG)([c.A], () => c.A.isBlocked(y)), j = l.useMemo(() => ({
     channelId: t,
     warningId: A,
     senderId: y,
     warningType: d._j.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, A, y]);
   l.useEffect(() => {
-    (0, h.QF)(b(m({}, x), {
+    (0, h.QF)(b(m({}, j), {
       viewName: h.gN.SAFETY_WARNING_BANNER
     })), o.A.increment({
       name: i.K.SAFETY_WARNING_VIEW
     })
-  }, [x]);
-  let j = l.useCallback(e => {
-      (0, h._$)(b(m({}, x), {
+  }, [j]);
+  let x = l.useCallback(e => {
+      (0, h._$)(b(m({}, j), {
         cta: e
       }))
-    }, [x]),
+    }, [j]),
     v = l.useCallback(() => {
       (0, a.mMO)(async () => {
         let {
@@ -95,14 +95,14 @@ function A(e) {
         }
       }, {
         modalKey: g.V
-      }), j(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, y, A, j]),
+      }), x(h.Wm.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, y, A, x]),
     E = l.useCallback(() => {
-      O(), j(h.Wm.USER_BANNER_BLOCK_CONFIRM)
-    }, [O, j]),
+      O(), x(h.Wm.USER_BANNER_BLOCK_CONFIRM)
+    }, [O, x]),
     C = l.useCallback(() => {
-      O(), j(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [O, j]),
+      O(), x(h.Wm.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [O, x]),
     S = l.useCallback(() => {
       (0, a.mMO)(async () => {
         let {
@@ -118,7 +118,7 @@ function A(e) {
             onBlock: E,
             onBlockAndReport: C,
             onCancel: () => {
-              null == i || i(), j(h.Wm.USER_BANNER_BLOCK_CANCEL)
+              null == i || i(), x(h.Wm.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: i,
             userId: y,
@@ -126,7 +126,7 @@ function A(e) {
           })
         }
       })
-    }, [E, C, y, t, j]);
+    }, [E, C, y, t, x]);
   return (0, r.jsx)(p.N, {
     channelId: t,
     warningId: A,

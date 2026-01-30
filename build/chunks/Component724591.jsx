@@ -40,11 +40,11 @@ let N = Chunk64700.memo(function(e) {
   }, [i.id]);
   let D = (0, a.bG)([b.A], () => b.A.getAnnouncement(i.id)),
     [L, M] = (0, p.x_)(o.M.GAME_SHOP_NEW_BADGE, i.id, null != (t = null == D ? true : D.id) ? t : ""),
-    k = L === o.M.GAME_SHOP_NEW_BADGE;
+    G = L === o.M.GAME_SHOP_NEW_BADGE;
   l.useEffect(() => {
-    N && k && M(C.i.INDIRECT_ACTION)
-  }, [M, N, k]);
-  let G = l.useCallback(() => {
+    N && G && M(C.i.INDIRECT_ACTION)
+  }, [M, N, G]);
+  let k = l.useCallback(() => {
       var e, t;
       M(C.i.TAKE_ACTION);
       let n = null != (e = null == (t = b.A.getStorefrontState(i.id)) ? true : t.activePage) ? e : 0;
@@ -53,9 +53,9 @@ let N = Chunk64700.memo(function(e) {
     U = l.useCallback(() => {
       (0, A.X)({
         guildId: i.id,
-        forceFetch: k
+        forceFetch: G
       })
-    }, [i.id, k]),
+    }, [i.id, G]),
     V = l.useCallback(() => {
       M(C.i.USER_DISMISS)
     }, [M]),
@@ -120,18 +120,18 @@ let N = Chunk64700.memo(function(e) {
       }),
       selected: N,
       onMouseDown: U,
-      onClick: G,
+      onClick: k,
       onContextMenu: B,
       trailing: (0, r.jsxs)(r.Fragment, {
-        children: [k && (0, r.jsx)(d.LpS, {
+        children: [G && (0, r.jsx)(d.LpS, {
           text: S.intl.string(S.t.y2b7CA),
           color: c.A.colors.BACKGROUND_BRAND.css
         }), l]
       })
-    }), [i.id, N, U, G, B, k]),
+    }), [i.id, N, U, k, B, G]),
     K = l.useMemo(() => {
-      let e = null != D && null != D.assetId ? j.A.toURLSafe((0, x.YE)(D.applicationId, D.assetId, 128, "webp")) : true,
-        t = null != D && null != D.backgroundImageAssetId ? j.A.toURLSafe((0, x.YE)(D.applicationId, D.backgroundImageAssetId, 128, "webp")) : true;
+      let e = null != D && null != D.assetId ? x.A.toURLSafe((0, j.YE)(D.applicationId, D.assetId, 128, "webp")) : true,
+        t = null != D && null != D.backgroundImageAssetId ? x.A.toURLSafe((0, j.YE)(D.applicationId, D.backgroundImageAssetId, 128, "webp")) : true;
       if (null != e) return {
         imageUrl: e,
         backgroundImageUrl: t
@@ -141,8 +141,8 @@ let N = Chunk64700.memo(function(e) {
     children: [(0, r.jsx)(O.A, {
       ref: T,
       children: F
-    }), w || R || !k || null == D ? null : (0, r.jsx)(y.A, {
-      onActionClick: G,
+    }), w || R || !G || null == D ? null : (0, r.jsx)(y.A, {
+      onActionClick: k,
       onActionMouseDown: U,
       onRender: H,
       onRequestClose: V,

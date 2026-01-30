@@ -58,7 +58,7 @@ function R(e) {
     channel: a,
     status: d,
     activities: h
-  } = e, p = (0, s.bG)([O.A], () => null != O.A.getTypingUsers(a.id)[t.id]), f = (0, s.bG)([_.default], () => _.default.getCurrentUser()), x = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), v = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, g.A)(t.id), N = l.useRef(null), P = e => {
+  } = e, p = (0, s.bG)([O.A], () => null != O.A.getTypingUsers(a.id)[t.id]), f = (0, s.bG)([_.default], () => _.default.getCurrentUser()), j = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), v = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, g.A)(t.id), N = l.useRef(null), P = e => {
     (0, o.L3)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function R(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    j._.dispatch(S.jej.TEXTAREA_FOCUS, {
+    x._.dispatch(S.jej.TEXTAREA_FOCUS, {
       channelId: a.id
-    }), j._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
+    }), x._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.A.startTyping(a.id)
@@ -138,7 +138,7 @@ function R(e) {
         channel: a,
         onContextMenu: P,
         selected: L,
-        isMobile: x,
+        isMobile: j,
         nick: v,
         nameplate: D,
         onClick: e => {
@@ -196,7 +196,7 @@ function L(e) {
     }
   }, [t], D);
   l.useEffect(() => {
-    x.default.track(S.HAw.MEMBER_LIST_VIEWED, {
+    j.default.track(S.HAw.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

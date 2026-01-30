@@ -77,7 +77,7 @@ let B = Chunk64700.memo(function e(t) {
       channel: i,
       message: o,
       compact: D = false,
-      className: k,
+      className: G,
       onContextMenu: B,
       onClick: F,
       disableInteraction: K = false,
@@ -95,7 +95,7 @@ let B = Chunk64700.memo(function e(t) {
     et = (0, d.A)(null == i ? true : i.id),
     {
       disableReactionCreates: en
-    } = (0, j.A)(i),
+    } = (0, x.A)(i),
     {
       content: er,
       hasSpoilerEmbeds: el,
@@ -107,7 +107,7 @@ let B = Chunk64700.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    es = (0, x.Ay)(o),
+    es = (0, j.Ay)(o),
     ea = (0, a.bG)([f.A], () => o.hasFlag(L.pr7.HAS_THREAD) && f.A.getChannel(b.default.castMessageIdAsChannelId(o.id))),
     eo = o.type === L.lAJ.THREAD_STARTER_MESSAGE && q.state === p.a.LOADED && null != X,
     ec = !eo && true === l,
@@ -125,16 +125,16 @@ let B = Chunk64700.memo(function e(t) {
     channel: X,
     hasThread: false
   })) : (m.A.isBlockedForMessage(o) ? l = M.t["+FcYM/"] : m.A.isIgnoredForMessage(o) ? l = M.t["VFWjc+"] : (0, O.kf)(o) && W && (l = M.t.xfkfTK), true !== l) ? (0, r.jsx)(H, {
-    className: k,
+    className: G,
     compact: D,
     count: 1,
     collapsedReason: l
   }) : (0, r.jsx)(v.A, {
     compact: D,
-    className: s()(k, {
-      [G.M1]: (0, y.ec)(o),
-      [G.XN]: K,
-      [G._A]: t.isGroupStart
+    className: s()(G, {
+      [k.M1]: (0, y.ec)(o),
+      [k.XN]: K,
+      [k._A]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, R.A)(o, i, z, q, D),
     childrenHeader: (0, T.A)(V(U({}, t), {
@@ -193,14 +193,14 @@ function H(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(D.A, {
       compact: l,
-      className: k.L9,
+      className: G.L9,
       iconNode: (0, r.jsx)(o.PGe, {
         size: "md",
         color: "currentColor",
-        className: k.Q6
+        className: G.Q6
       }),
       children: (0, r.jsx)("div", {
-        className: k.Fo,
+        className: G.Fo,
         children: M.intl.format(i, {
           count: n
         })

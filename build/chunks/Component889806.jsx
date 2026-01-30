@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function G(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -106,8 +106,8 @@ class U extends Chunk557534.Ay {
       subtitle: y,
       forceTopLevelThread: O,
       embeddedApps: _,
-      resolvedUnreadSetting: x,
-      withGuildIcon: j,
+      resolvedUnreadSetting: j,
+      withGuildIcon: x,
       enableActivities: v
     } = this.props, E = v && null != _ && _.length > 0, C = (0, m.M)(y), S = (0, r.jsx)("li", {
       className: s()(this.getClassName(), {
@@ -140,8 +140,8 @@ class U extends Chunk557534.Ay {
           connectDragPreview: g ? p : null,
           isFavoriteSuggestion: A,
           channelTypeOverride: O ? R.rbe.GUILD_TEXT : true,
-          resolvedUnreadSetting: x,
-          withGuildIcon: j,
+          resolvedUnreadSetting: j,
+          withGuildIcon: x,
           "aria-label": (0, f.Ay)({
             channel: e,
             unread: i,
@@ -206,7 +206,7 @@ class U extends Chunk557534.Ay {
       return t.isModeratorReportChannel() || i ? null : null != l && l.length > 0 && s && !n ? (0, r.jsx)(w.A, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
-      }) : (0, r.jsx)(I.A, G(k({}, e), {
+      }) : (0, r.jsx)(I.A, k(G({}, e), {
         channel: this.props.channel
       }))
     }), M(this, "handleContextMenu", e => {
@@ -217,7 +217,7 @@ class U extends Chunk557534.Ay {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
-        return n => (0, r.jsx)(e, G(k({}, n), {
+        return n => (0, r.jsx)(e, k(G({}, n), {
           channel: t,
           selected: true
         }))
@@ -228,7 +228,7 @@ class U extends Chunk557534.Ay {
           let {
             default: e
           } = await Promise.all([n.e("97262"), n.e("29534"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
-          return n => (0, r.jsx)(e, G(k({}, n), {
+          return n => (0, r.jsx)(e, k(G({}, n), {
             user: l,
             channel: t,
             showModalItems: false
@@ -240,16 +240,16 @@ class U extends Chunk557534.Ay {
         let {
           default: e
         } = await n.e("78580").then(n.bind(n, 907647));
-        return n => (0, r.jsx)(e, G(k({}, n), {
+        return n => (0, r.jsx)(e, k(G({}, n), {
           channel: t
         }))
       });
-      let l = x.A.getGuild(t.getGuildId());
+      let l = j.A.getGuild(t.getGuildId());
       null != l && (0, u.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
-        return n => (0, r.jsx)(e, G(k({}, n), {
+        return n => (0, r.jsx)(e, k(G({}, n), {
           channel: t,
           guild: l
         }))
@@ -274,13 +274,13 @@ function B(e) {
     unread: E.Ay.hasUnread(t.id),
     ackMessageId: E.Ay.ackMessageId(t.id),
     isLowImportanceMention: E.Ay.getIsMentionLowImportance(t.id)
-  })), f = (0, a.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([O.A, j.A], () => {
+  })), f = (0, a.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([O.A, x.A], () => {
     let e = O.A.getChannel(t.parent_id);
     return {
-      canManageChannel: j.A.can(R.xBc.MANAGE_CHANNELS, t),
-      canReorderChannel: true !== l && (n.id === D.V || (null != e ? j.A.can(R.xBc.MANAGE_CHANNELS, e) : j.A.can(R.xBc.MANAGE_CHANNELS, n)))
+      canManageChannel: x.A.can(R.xBc.MANAGE_CHANNELS, t),
+      canReorderChannel: true !== l && (n.id === D.V || (null != e ? x.A.can(R.xBc.MANAGE_CHANNELS, e) : x.A.can(R.xBc.MANAGE_CHANNELS, n)))
     }
-  }), x = (0, a.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
+  }), j = (0, a.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: S,
     isSubscriptionGated: I
   } = (0, b.A)(t.id), N = (0, a.bG)([C.Ay], () => C.Ay.isFavorite(n.id, t.id)), P = (0, g.vL)(t), w = (0, h.Gp)(t.id), L = (0, T.A)({
@@ -289,17 +289,17 @@ function B(e) {
     isChannelSelected: o,
     isSubscriptionGated: I,
     needSubscriptionToAccess: S,
-    isNewChannel: x,
+    isNewChannel: j,
     muted: s,
     enableActivities: w,
     resolvedUnreadSetting: f
   }), M = (0, p.Ay)(t);
-  return (0, a.bG)([v.A, _.Ay], () => v.A.getChannelId() !== t.id && _.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(V, G(k({}, d, m, e), {
+  return (0, a.bG)([v.A, _.Ay], () => v.A.getChannelId() !== t.id && _.Ay.isCurrentUserGuest(t.getGuildId())) ? null : (0, r.jsx)(V, k(G({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: I,
     needSubscriptionToAccess: S,
-    isNewChannel: x && e.canBeNewChannel,
+    isNewChannel: j && e.canBeNewChannel,
     isFavoriteSuggestion: i && !N,
     channelIsContentGated: P,
     channelInfo: L,

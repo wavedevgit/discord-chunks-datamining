@@ -124,7 +124,7 @@ class er extends Chunk557534.Ay {
       channel: t,
       connected: n,
       showEmptyChannelTopic: l
-    } = this.props, i = null == (e = (0, j.M)(this.props.subtitle)) ? true : e.subtitle, {
+    } = this.props, i = null == (e = (0, x.M)(this.props.subtitle)) ? true : e.subtitle, {
       hovered: s
     } = this.state;
     return (0, r.jsx)(q.A, {
@@ -181,8 +181,8 @@ class er extends Chunk557534.Ay {
       canReorderChannel: b,
       canMoveMembers: A,
       showTutorial: _,
-      hasActiveEvent: x,
-      embeddedApps: j,
+      hasActiveEvent: j,
+      embeddedApps: x,
       isSubscriptionGated: v,
       isFavoriteSuggestion: E,
       withGuildIcon: C,
@@ -224,9 +224,9 @@ class er extends Chunk557534.Ay {
               ref: this.channelItemRef,
               className: $.Ki,
               iconClassName: s()({
-                [$.Gj]: x || S || w
+                [$.Gj]: j || S || w
               }),
-              hasActiveEvent: x,
+              hasActiveEvent: j,
               channel: e,
               selected: !E && t,
               connected: n,
@@ -248,12 +248,12 @@ class er extends Chunk557534.Ay {
                 unread: l,
                 mentionCount: a,
                 userCount: D,
-                embeddedActivitiesCount: j.length,
+                embeddedActivitiesCount: x.length,
                 isSubscriptionGated: v
               }),
               "aria-describedby": (0, O.A)({
                 channel: e,
-                embeddedApps: j
+                embeddedApps: x
               }),
               withGuildIcon: C,
               children: [E && (0, r.jsxs)(r.Fragment, {
@@ -297,7 +297,7 @@ class er extends Chunk557534.Ay {
         shouldShowGuildVerificationPopout: true
       });
       let a = i && s > 0;
-      a && d.A.updateChatOpen(n.id, true), x.A.handleVoiceConnect({
+      a && d.A.updateChatOpen(n.id, true), j.A.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: l,
@@ -438,20 +438,20 @@ function ei(e) {
   } = e, u = (0, a.cf)([U.Ay], () => ({
     unread: U.Ay.hasUnread(n.id),
     mentionCount: U.Ay.getMentionCount(n.id)
-  })), d = (0, a.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([L.A, k.A, G.A], () => {
+  })), d = (0, a.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([L.A, G.A, k.A], () => {
     let e = L.A.getChannel(n.parent_id),
-      r = k.A.getCheck(n.guild_id);
+      r = G.A.getCheck(n.guild_id);
     return {
-      canManageChannel: G.A.can(J.xBc.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== l && (t.id === Q.V || (null != e ? G.A.can(J.xBc.MANAGE_CHANNELS, e) : G.A.can(J.xBc.MANAGE_CHANNELS, t))),
-      canMoveMembers: G.A.can(J.xBc.MOVE_MEMBERS, n),
-      locked: !G.A.can(J.xBc.CONNECT, n),
-      bypassLimit: G.A.can(J.xBc.MOVE_MEMBERS, n),
+      canManageChannel: k.A.can(J.xBc.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== l && (t.id === Q.V || (null != e ? k.A.can(J.xBc.MANAGE_CHANNELS, e) : k.A.can(J.xBc.MANAGE_CHANNELS, t))),
+      canMoveMembers: k.A.can(J.xBc.MOVE_MEMBERS, n),
+      locked: !k.A.can(J.xBc.CONNECT, n),
+      bypassLimit: k.A.can(J.xBc.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), p = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), g = (0, f.Ay)(n), m = (0, _.Ay)(n), y = (0, I.Qs)(n.id), O = (0, a.bG)([A.A], () => null != A.A.getStartTime(n), [n]), {
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: j
+    isSubscriptionGated: j,
+    needSubscriptionToAccess: x
   } = (0, S.A)(n.id), E = (0, v.A)(), C = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), N = e.connected || (null == E ? true : E.channelId) === n.id, {
     enableHangStatus: w,
     showEmptyChannelTopic: R
@@ -473,8 +473,8 @@ function ei(e) {
     isChannelSelected: s,
     isChannelCollapsed: o,
     voiceStates: c,
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: j,
+    isSubscriptionGated: j,
+    needSubscriptionToAccess: x,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), q = N && null == z;
@@ -484,8 +484,8 @@ function ei(e) {
     embeddedActivityType: J.$pd.PLAYING,
     video: p,
     hasActiveEvent: null != y,
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: j
+    isSubscriptionGated: j,
+    needSubscriptionToAccess: x
   }, u, h, e), {
     connected: N,
     isFavoriteSuggestion: i && !C,

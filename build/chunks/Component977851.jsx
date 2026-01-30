@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function x(e) {
+function j(e) {
   let t = (0, o.bG)([f.A], () => !(0, a.isEmpty)(f.A.getTypingUsers(e)), [e]),
     n = (0, o.bG)([g.A], () => g.A.getVoiceChannelId() === e, [e]),
     {
@@ -41,7 +41,7 @@ function x(e) {
   }
 }
 
-function j(e) {
+function x(e) {
   let {
     className: t,
     channelId: n
@@ -50,7 +50,7 @@ function j(e) {
     mentionCount: i,
     isTyping: s,
     voiceChannelIsSelected: a
-  } = x(n);
+  } = j(n);
   return (0, r.jsx)(A.A, {
     className: t,
     unreadCount: l,
@@ -104,7 +104,7 @@ function v(e) {
         unreadCount: t,
         mentionCount: n,
         isTyping: r
-      } = x(e), [i, s] = l.useState(false);
+      } = j(e), [i, s] = l.useState(false);
       return l.useEffect(() => {
         s(t > 0);
         let e = setTimeout(() => {
@@ -126,7 +126,7 @@ function v(e) {
       let {
         className: t
       } = e;
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(x, {
         className: t,
         channelId: n
       })
@@ -139,12 +139,12 @@ function v(e) {
     event: O.jej.FOCUS_CHAT_BUTTON,
     handler: C ? null : D
   });
-  let [L, M] = l.useState(false), k = l.useCallback(() => {
+  let [L, M] = l.useState(false), G = l.useCallback(() => {
     g && M(true)
   }, [g]);
   (0, m.Vo)({
     event: O.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: k
+    handler: G
   }), l.useEffect(() => {
     let e;
     return L && (e = setTimeout(() => {
@@ -153,10 +153,10 @@ function v(e) {
       clearTimeout(e)
     }
   }, [L]);
-  let G = [t = g && C ? _.intl.string(_.t.DPgc5h) : I ? _.intl.string(_.t.nthdxB) : _.intl.string(_.t["5KxXrK"])];
-  return P > 0 && G.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
+  let k = [t = g && C ? _.intl.string(_.t.DPgc5h) : I ? _.intl.string(_.t.nthdxB) : _.intl.string(_.t["5KxXrK"])];
+  return P > 0 && k.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
     mentionCount: P
-  })), T > 0 && G.push(_.intl.string(_.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
+  })), T > 0 && k.push(_.intl.string(_.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -177,7 +177,7 @@ function v(e) {
     buttonRef: S,
     onClick: w,
     label: t,
-    "aria-label": G.join(", "),
+    "aria-label": k.join(", "),
     iconComponent: R,
     tooltipPosition: "bottom",
     wrapperClassName: s()(i, null != a && {

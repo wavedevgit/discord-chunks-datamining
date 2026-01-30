@@ -116,7 +116,7 @@ function R(e) {
       }) : null, (0, r.jsx)(D, {
         channel: l,
         gotoChannel: o
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(G, {
         channel: l,
         gotoChannel: o,
         mentionCount: c
@@ -169,7 +169,7 @@ function M(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, l = (0, a.bG)([j.A], () => j.A.getGuild(t.guild_id));
+  } = e, l = (0, a.bG)([x.A], () => x.A.getGuild(t.guild_id));
   return null == l ? null : (0, r.jsx)(O.A, {
     "aria-hidden": true,
     className: T.$f,
@@ -181,14 +181,14 @@ function M(e) {
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: l
-  } = e, s = (0, a.bG)([j.A], () => j.A.getGuild(t.guild_id)), c = (0, a.bG)([x.A], () => x.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), h = (0, A.gU)(t, s), p = (0, b.Ay)(t, false), g = null == c ? null == s ? true : s.name : "".concat(null == s ? true : s.name, " › ").concat(c.name), f = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
+  } = e, s = (0, a.bG)([x.A], () => x.A.getGuild(t.guild_id)), c = (0, a.bG)([j.A], () => j.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), h = (0, A.gU)(t, s), p = (0, b.Ay)(t, false), g = null == c ? null == s ? true : s.name : "".concat(null == s ? true : s.name, " › ").concat(c.name), f = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
     members: t.recipients.length + 1
-  }) : t.isPrivate() ? (0, r.jsx)(G, {
+  }) : t.isPrivate() ? (0, r.jsx)(k, {
     channel: t
   }) : (0, r.jsx)(u.DUT, {
     className: i()(T.W$, T.J5),
@@ -229,7 +229,7 @@ function k(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     channel: t
   } = e, {

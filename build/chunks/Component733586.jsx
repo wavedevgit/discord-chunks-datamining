@@ -40,8 +40,8 @@ function h(e) {
     width: b,
     height: A
   } = f, y = null != (t = null == i ? true : i.length) ? t : 0, O = b - 16, _ = A - (p + g), {
-    tileStyle: x,
-    tileWidth: j,
+    tileStyle: j,
+    tileWidth: x,
     rows: v,
     columns: E
   } = l.useMemo(() => (function(e, t, n) {
@@ -69,7 +69,7 @@ function h(e) {
       rows: p,
       columns: g
     }
-  })(y, O, _), [y, O, _]), C = E + 1, S = C * j + (C - 1) * 8 <= b, I = Math.floor(j / c) + 8, N = Math.max(0, _ - I * v) / 2;
+  })(y, O, _), [y, O, _]), C = E + 1, S = C * x + (C - 1) * 8 <= b, I = Math.floor(x / c) + 8, N = Math.max(0, _ - I * v) / 2;
   return (0, r.jsx)(a.A, {
     fade: true,
     className: n,
@@ -83,7 +83,7 @@ function h(e) {
           var l;
           let i = n + t;
           return (0, r.jsx)("div", {
-            style: x,
+            style: j,
             className: s()(o.Vs, {
               [o.E3]: S,
               [o.k4]: i >= (v - 1) * E,
@@ -91,7 +91,7 @@ function h(e) {
             }),
             children: (0, r.jsx)("div", {
               className: o.eP,
-              children: e(j)
+              children: e(x)
             })
           }, null != (l = null == h ? true : h(i)) ? l : i)
         })

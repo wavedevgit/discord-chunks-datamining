@@ -29,19 +29,19 @@ function b(e) {
   } = e, {
     analyticsLocations: _
   } = (0, s.Ay)(), {
-    trackUserProfileWishlistAction: x
-  } = (0, d.NJ)(), j = (0, l.useCallback)(e => {
+    trackUserProfileWishlistAction: j
+  } = (0, d.NJ)(), x = (0, l.useCallback)(e => {
     let {
       wishlistId: t,
       action: n,
       productLines: r
     } = e;
-    null != t && x({
+    null != t && j({
       wishlistId: t,
       action: n,
       productLines: r
     })
-  }, [x]), {
+  }, [j]), {
     cards: v,
     singleItem: E,
     productLines: C
@@ -87,7 +87,7 @@ function b(e) {
     }
   }, [t, n, _, b, A, y]), S = (0, h.A)({
     wishlistId: null != A ? A : null,
-    onAction: j,
+    onAction: x,
     productLines: C
   });
   if (0 === v.length) return null;

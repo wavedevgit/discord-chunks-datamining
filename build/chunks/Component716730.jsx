@@ -40,11 +40,11 @@ function y(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["channelId", "className"]), O = l.useRef(null), _ = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout() === f.E8.RESIZABLE), x = l.useCallback(() => {
+  }(e, ["channelId", "className"]), O = l.useRef(null), _ = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout() === f.E8.RESIZABLE), j = l.useCallback(() => {
     let e = _ ? f.E8.NO_CHAT : f.E8.RESIZABLE;
     (0, p.i5)(e)
   }, [_]), {
-    unreadCount: j,
+    unreadCount: x,
     mentionCount: v
   } = function(e) {
     let t = (0, s.bG)([d.A], () => !(0, i.isEmpty)(d.A.getTypingUsers(e)), [e]),
@@ -72,9 +72,9 @@ function y(e) {
     S = [C];
   v > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
     mentionCount: v
-  })), j > 0 && S.push(b.intl.string(b.t.x5zAGZ));
+  })), x > 0 && S.push(b.intl.string(b.t.x5zAGZ));
   let I = (0, s.bG)([g.Ay], () => g.Ay.getFocusedLayout()),
-    N = v > 0 ? v : j,
+    N = v > 0 ? v : x,
     T = N > 0;
   return (0, r.jsxs)("div", {
     className: A.iE,
@@ -98,7 +98,7 @@ function y(e) {
     }({
       isTrayButton: true,
       buttonRef: O,
-      onClick: x,
+      onClick: j,
       label: C,
       "aria-label": S.join(", "),
       tooltipPosition: "top",

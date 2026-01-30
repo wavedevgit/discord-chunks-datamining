@@ -146,8 +146,8 @@ class q extends Chunk557534.Ay {
       mentionCount: O,
       isFavoriteSuggestion: _
     } = this.props, {
-      shouldShowGuildVerificationPopout: x
-    } = this.state, j = this.getVoiceStatesCount(), v = (0, r.jsxs)("li", {
+      shouldShowGuildVerificationPopout: j
+    } = this.state, x = this.getVoiceStatesCount(), v = (0, r.jsxs)("li", {
       className: s()(this.getModeClass(), {
         [F.r9]: this.isDisabled()
       }),
@@ -157,10 +157,10 @@ class q extends Chunk557534.Ay {
         position: "right",
         renderPopout: this.renderPopout,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: x,
+        shouldShow: j,
         children: () => (0, r.jsx)(c.m, {
           text: this.getTooltipText(),
-          children: (0, r.jsxs)(G.Ay, {
+          children: (0, r.jsxs)(k.Ay, {
             ref: this.channelItemRef,
             className: F.Ki,
             iconClassName: s()({
@@ -186,7 +186,7 @@ class q extends Chunk557534.Ay {
               channel: e,
               unread: A,
               mentionCount: O,
-              userCount: j,
+              userCount: x,
               isSubscriptionGated: m,
               needSubscriptionToAccess: b
             }),
@@ -305,10 +305,10 @@ function J(e) {
       bypassLimit: P.A.can(V.xBc.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.bG)([S.A], () => S.A.isCollapsed(n.parent_id)), p = (0, C.Ay)(n.id), g = (0, a.bG)([v.A], () => v.A.getStageInstanceByChannel(n.id), [n.id]), f = (0, x.zy)(n.id, j.ip.AUDIENCE), {
+  }), h = (0, a.bG)([S.A], () => S.A.isCollapsed(n.parent_id)), p = (0, C.Ay)(n.id), g = (0, a.bG)([v.A], () => v.A.getStageInstanceByChannel(n.id), [n.id]), f = (0, j.zy)(n.id, x.ip.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
-  } = (0, A.A)(n.id), y = (0, a.bG)([R.Ay], () => R.Ay.isFavorite(t.id, n.id)), O = (0, E.xn)(n.id), _ = (0, k.A)({
+  } = (0, A.A)(n.id), y = (0, a.bG)([R.Ay], () => R.Ay.isFavorite(t.id, n.id)), O = (0, E.xn)(n.id), _ = (0, G.A)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: s,

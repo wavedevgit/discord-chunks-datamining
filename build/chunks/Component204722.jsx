@@ -51,12 +51,12 @@ let D = Chunk64700.memo(function(e) {
       canGoLive: o,
       isStreaming: p,
       channel: y,
-      canStream: j,
+      canStream: x,
       runningGame: v,
       embeddedActivity: T,
       frame: D,
-      activity: k,
-      application: G,
+      activity: G,
+      application: k,
       analyticsContext: U,
       inviteButtonRef: V,
       accountLinkButtonRef: B,
@@ -67,18 +67,18 @@ let D = Chunk64700.memo(function(e) {
     } = e, {
       parentAnalyticsLocation: W,
       analyticsLocations: z
-    } = (0, f.Ay)(), q = (0, x.A)(G, "rtc-activity-panel"), X = R(G, k, T), J = l.useCallback(() => {
+    } = (0, f.Ay)(), q = (0, j.A)(k, "rtc-activity-panel"), X = R(k, G, T), J = l.useCallback(() => {
       var e;
-      s()(null != k, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
+      s()(null != G, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
         action_type: "invite_to_game",
         game_id: null != (e = null == v ? true : v.id) ? e : null,
-        application_id: k.application_id
+        application_id: G.application_id
       }), (0, b.X)(W, b.O.INVITE), S.default.track(N.HAw.OPEN_MODAL, {
         type: "Send Join Invite",
-        application_id: k.application_id,
+        application_id: G.application_id,
         location: U.location
-      }), (0, d.qf)(k, false)
-    }, [k, U, W, v]), Q = l.useCallback((e, t) => () => {
+      }), (0, d.qf)(G, false)
+    }, [G, U, W, v]), Q = l.useCallback((e, t) => () => {
       (0, b.X)(W, b.O.LEAVE_ACTIVITY), g.A.leaveActivity({
         location: t,
         applicationId: e,
@@ -136,7 +136,7 @@ let D = Chunk64700.memo(function(e) {
     }, []), l.useEffect(() => {
       K && (er(false), null != et.current && (clearTimeout(et.current), et.current = null))
     }, [K]);
-    let el = (null == q ? true : q.guildId) == null || null == G ? null : (0, r.jsx)(M, {
+    let el = (null == q ? true : q.guildId) == null || null == k ? null : (0, r.jsx)(M, {
         guildId: q.guildId,
         applicationId: q.id
       }),
@@ -146,7 +146,7 @@ let D = Chunk64700.memo(function(e) {
         let l = null;
         return p ? (e = false, t = () => {
           $(), (0, b.X)(W, b.O.STREAM, false)
-        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : j ? (e = false, t = () => {
+        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : x ? (e = false, t = () => {
           ee(), (0, b.X)(W, b.O.STREAM, true)
         }, n = u.Fzq, l = null != v ? P.intl.formatToPlainString(P.t.AB5gTy, {
           game: v.name
@@ -240,11 +240,11 @@ function M(e) {
     })
   }, [t]);
   let [s, a] = (0, y.kn)([o.M.GAME_SHOP_RTC_POPOVER], T.m.ACCOUNT_NAME_ZONE, true), c = l.useCallback(() => {
-    (0, j.X)({
+    (0, x.X)({
       guildId: n
     })
   }, [n]), d = l.useCallback(() => {
-    (0, j.default)({
+    (0, x.default)({
       guildId: n
     }), a(T.i.USER_DISMISS)
   }, [n, a]), h = l.useCallback(() => {

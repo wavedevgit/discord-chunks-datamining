@@ -49,7 +49,7 @@ let b = e => {
       triggerRef: d
     } = e, A = (0, o.A)(null, () => {
       t && n()
-    }, d), y = (0, c.n)(e => e.globalMute), O = (0, c.n)(e => e.setGlobalMute), _ = (0, c.n)(e => e.genre), x = (0, c.n)(e => e.setGenre), j = (0, c.n)(e => e.songIndex), v = (0, c.n)(e => e.playRadio), E = (0, c.n)(e => e.setPlayRadio), C = (0, c.n)(e => e.playPrevSong), S = (0, c.n)(e => e.playNextSong), I = (0, s.bG)([u.A], () => u.A.assets), N = (0, p.A)(_, j), T = !y && v;
+    }, d), y = (0, c.n)(e => e.globalMute), O = (0, c.n)(e => e.setGlobalMute), _ = (0, c.n)(e => e.genre), j = (0, c.n)(e => e.setGenre), x = (0, c.n)(e => e.songIndex), v = (0, c.n)(e => e.playRadio), E = (0, c.n)(e => e.setPlayRadio), C = (0, c.n)(e => e.playPrevSong), S = (0, c.n)(e => e.playNextSong), I = (0, s.bG)([u.A], () => u.A.assets), N = (0, p.A)(_, x), T = !y && v;
     return (0, r.jsxs)("div", {
       ref: A,
       className: i()(m.ZR, {
@@ -113,7 +113,7 @@ let b = e => {
           return (0, r.jsx)(a.DUT, {
             className: m.vk,
             onClick: () => {
-              _ !== e ? (x(e), E(true)) : E(!v)
+              _ !== e ? (j(e), E(true)) : E(!v)
             },
             children: (0, r.jsxs)(a.BJc, {
               align: "center",

@@ -46,8 +46,8 @@ function y(e) {
     channel: y,
     exitFullScreen: O,
     appContext: _,
-    analyticsLocation: x,
-    guildScheduledEvent: j,
+    analyticsLocation: j,
+    guildScheduledEvent: x,
     shouldPrioritizeGroupPlusIcon: v = false,
     isRichPresenceInvite: E = false,
     iconClassName: C,
@@ -73,13 +73,13 @@ function y(e) {
     return i
   }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]), w = (0, d.Us)(), {
     parentAnalyticsLocation: R
-  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), L = (0, s.bG)([h.A], () => null != D ? h.A.getGuild(D) : null, [D]), M = (0, s.bG)([p.A], () => null != t ? p.A.getApplicationActivity(t) : true), k = null == t || v ? a.DpX : a.dCJ, G = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+  } = (0, c.Ay)(), D = null == y ? true : y.getGuildId(), L = (0, s.bG)([h.A], () => null != D ? h.A.getGuild(D) : null, [D]), M = (0, s.bG)([p.A], () => null != t ? p.A.getApplicationActivity(t) : true), G = null == t || v ? a.DpX : a.dCJ, k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
   return null != M && E ? (0, r.jsx)(f.A, {
     onClick: () => {
       null != R && (0, u.X)(R, u.O.INVITE), o.qf(M, false, w)
     },
-    iconComponent: k,
-    label: G,
+    iconComponent: G,
+    label: k,
     iconClassName: C,
     look: S,
     size: I,
@@ -135,12 +135,12 @@ function y(e) {
           applicationId: t,
           appContext: null != _ ? _ : w,
           exitFullScreen: O,
-          analyticsLocation: x,
-          guildScheduledEvent: j
+          analyticsLocation: j,
+          guildScheduledEvent: x
         })
     },
-    iconComponent: k,
-    label: G,
+    iconComponent: G,
+    label: k,
     iconClassName: C,
     look: S,
     size: I,

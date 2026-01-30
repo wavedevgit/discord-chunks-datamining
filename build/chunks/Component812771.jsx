@@ -66,16 +66,16 @@ function A(e) {
     d.Ay.updatedUnsyncedSettings({
       [A]: e
     })
-  }, [A]), x = 5 === t ? 360 : 450, j = (0, g.P)({
+  }, [A]), j = 5 === t ? 360 : 450, x = (0, g.P)({
     maxWidth: n,
-    minWidth: x
-  }), v = (0, u.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, o.clamp)(y, x, n), C = j ? E : E + v;
+    minWidth: j
+  }), v = (0, u.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, o.clamp)(y, j, n), C = x ? E : E + v;
   i.useEffect(() => {
-    null == r || r(E, j)
-  }, [E, r, j]);
+    null == r || r(E, x)
+  }, [E, r, x]);
   let S = null != h ? h : i.Fragment;
   return (0, l.jsxs)(l.Fragment, {
-    children: [!j && (0, l.jsx)("div", {
+    children: [!x && (0, l.jsx)("div", {
       style: {
         minWidth: C
       }
@@ -86,14 +86,14 @@ function A(e) {
         }),
         children: [(0, l.jsx)("div", {
           className: a()(f.Uc, {
-            [f.DU]: j,
-            [f.iK]: !j
+            [f.DU]: x,
+            [f.iK]: !x
           }),
           style: {
             width: C
           }
-        }), !j && (0, l.jsx)(b, {
-          minWidth: x,
+        }), !x && (0, l.jsx)(b, {
+          minWidth: j,
           maxWidth: n,
           resizableNode: m,
           onResize: O,
@@ -101,7 +101,7 @@ function A(e) {
         }), (0, l.jsx)("div", {
           ref: m,
           className: a()(f.kL, {
-            [f.DU]: j
+            [f.DU]: x
           }),
           style: {
             width: E

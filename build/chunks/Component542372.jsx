@@ -27,9 +27,9 @@ function O(e) {
     appContext: n,
     popoutOpen: O,
     popoutWindow: _,
-    currentWindow: x
+    currentWindow: j
   } = e, {
-    parentAnalyticsLocation: j
+    parentAnalyticsLocation: x
   } = (0, c.Ay)(), v = n === y.BRT.POPOUT, E = l.useRef(null), {
     currentLayout: C,
     mode: S
@@ -52,13 +52,13 @@ function O(e) {
       rootNode: P
     } = l.useMemo(() => {
       let e = null != _ && v ? _.document : document,
-        t = x.document.getElementById("app-mount");
+        t = j.document.getElementById("app-mount");
       return {
-        currentWindow: x,
+        currentWindow: j,
         currentDocument: e,
         rootNode: t
       }
-    }, [_, v, x]),
+    }, [_, v, j]),
     w = O && !v,
     R = S === y._Of.VIDEO && I && !w,
     D = l.useCallback((e, r) => {
@@ -70,8 +70,8 @@ function O(e) {
       }, T))
     }, [T, D, P]),
     M = l.useCallback(e => () => {
-      null != P && ((0, d.X)(j, d.O.FULL_SCREEN, e !== y.DUB.FULL_SCREEN), e !== y.DUB.FULL_SCREEN ? (N.current = e, D(e, y.DUB.FULL_SCREEN), (0, A.tl)(P)) : L(e))
-    }, [D, L, P, j]);
+      null != P && ((0, d.X)(x, d.O.FULL_SCREEN, e !== y.DUB.FULL_SCREEN), e !== y.DUB.FULL_SCREEN ? (N.current = e, D(e, y.DUB.FULL_SCREEN), (0, A.tl)(P)) : L(e))
+    }, [D, L, P, x]);
   l.useEffect(() => {
     let e = () => {
       null != P && ((0, A._U)(P, T) || C !== y.DUB.FULL_SCREEN || M(C)())
@@ -80,18 +80,18 @@ function O(e) {
       T.removeEventListener(A.Wb, e)
     }
   }, [T, C, M, P]);
-  let k = {
+  let G = {
       channel: t,
       maybeLeaveFullScreen: L
     },
-    G = l.useRef(k);
+    k = l.useRef(G);
   return (l.useEffect(() => {
-    G.current = k
+    k.current = G
   }), l.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = G.current;
+    } = k.current;
     return f.default.track(y.HAw.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

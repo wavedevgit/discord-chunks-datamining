@@ -61,7 +61,7 @@ function A(e) {
     hasUnread: u.Ay.hasUnread(t.id, p.P.GUILD_EVENT),
     mentionCount: u.Ay.getMentionCount(t.id, p.P.GUILD_EVENT)
   }), [t.id]), _ = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
-  async function x() {
+  async function j() {
     await (0, s.mMO)(async () => {
       let {
         default: e
@@ -71,9 +71,9 @@ function A(e) {
       }))
     }), (0, o.Dr)(i.M.GUILD_HEADER_EVENT_UPSELL)
   }
-  let j = (0, c.Ay)(t.id),
-    v = j.length > 0 ? g.intl.formatToPlainString(g.t.IBdqSu, {
-      number: j.length
+  let x = (0, c.Ay)(t.id),
+    v = x.length > 0 ? g.intl.formatToPlainString(g.t.IBdqSu, {
+      number: x.length
     }) : g.intl.string(g.t.tlopTM);
   return (0, r.jsx)(h.G, {
     id: "upcoming-events-".concat(t.id),
@@ -84,7 +84,7 @@ function A(e) {
     }),
     text: v,
     selected: A,
-    onClick: x,
+    onClick: j,
     onContextMenu: e => {
       (0, a.L3)(e, async () => {
         let {

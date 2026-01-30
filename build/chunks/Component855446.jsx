@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 855446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => x
+  C: () => j
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,15 +25,15 @@ let y = ["embedded_cover"],
   };
 var _ = ((r = _ || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function x(e) {
+function j(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: s,
     aspectRatio: _ = 0,
-    animatedDivClass: x,
-    commandOrigin: j
+    animatedDivClass: j,
+    commandOrigin: x
   } = e, {
     onActivityItemSelected: v,
     imageBackground: E,
@@ -47,7 +47,7 @@ function x(e) {
     onActivityItemSelected: s,
     embeddedActivitiesManager: f.A,
     assetNames: y,
-    commandOrigin: j
+    commandOrigin: x
   }), [I, N] = i.useState(false), T = i.useCallback(() => {
     N(true)
   }, [N]), P = i.useCallback(() => {
@@ -117,7 +117,7 @@ function x(e) {
             questContent: c.u.ACTIVITY_SUGGESTION,
             children: n => (0, l.jsxs)(o.animated.div, {
               ref: n,
-              className: a()(e, A.LM, x, {
+              className: a()(e, A.LM, j, {
                 [A.$g]: 0 === _,
                 [A.J3]: 1 === _
               }),
@@ -137,4 +137,4 @@ function x(e) {
     })
   })
 }
-x.AspectRatio = _
+j.AspectRatio = _

@@ -35,7 +35,7 @@ let A = Chunk64700.memo(function(e) {
     return y.forEach(t => {
       null != O[t.channelId] && e++
     }), e
-  }, [O, y]), x = null == y ? 0 : y.length, j = (0, i.rm)("progress-bar-".concat(A.id));
+  }, [O, y]), j = null == y ? 0 : y.length, x = (0, i.rm)("progress-bar-".concat(A.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(o.DUT, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -54,7 +54,7 @@ let A = Chunk64700.memo(function(e) {
         })
       }
       return e
-    }({}, j), n = n = {
+    }({}, x), n = n = {
       role: "button",
       focusProps: {
         offset: {
@@ -78,7 +78,7 @@ let A = Chunk64700.memo(function(e) {
             className: m.Cv,
             children: f.intl.format(f.t.eqZ1lW, {
               numberHook: b,
-              total: x.toString(),
+              total: j.toString(),
               completed: _.toString()
             })
           }), (0, r.jsx)(h.A, {
@@ -91,7 +91,7 @@ let A = Chunk64700.memo(function(e) {
       }), (0, r.jsx)(o.iCB, {
         className: m.hr,
         foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
-        percent: _ / x * 100 + 3,
+        percent: _ / j * 100 + 3,
         animate: true
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

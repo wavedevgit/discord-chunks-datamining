@@ -58,8 +58,8 @@ function O(e) {
     className: f
   } = e, O = l.useRef(null), {
     newestAnalyticsLocation: _
-  } = (0, d.Ay)(), x = (0, p.Us)(), {
-    reducedMotion: j
+  } = (0, d.Ay)(), j = (0, p.Us)(), {
+    reducedMotion: x
   } = l.useContext(o.CZY), v = (0, u.A)({
     userId: i.id
   }), E = null != i.member ? (0, m.xT)(i.member) : null, C = e => {
@@ -77,7 +77,7 @@ function O(e) {
         onInteraction: (0, h.s)("GuildChannelUserContextMenu", _)
       }))
     }, {
-      context: x
+      context: j
     })
   };
   return (0, r.jsx)(g.A, {
@@ -101,7 +101,7 @@ function O(e) {
           size: o._3J.SIZE_24,
           className: s()(b.my, f),
           "aria-label": i.userNick,
-          isSpeaking: v && !j.enabled
+          isSpeaking: v && !x.enabled
         })
       }))
     })

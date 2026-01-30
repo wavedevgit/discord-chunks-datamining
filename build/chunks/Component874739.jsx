@@ -27,8 +27,8 @@ let _ = (0, Chunk456412.A)(e => {
     filteredParticipants: n,
     selectedParticipant: s,
     participantsVersion: _,
-    layout: x,
-    onSelectParticipant: j,
+    layout: j,
+    onSelectParticipant: x,
     onContextMenuParticipant: v,
     onFullscreenParticipant: E,
     channel: C,
@@ -42,12 +42,12 @@ let _ = (0, Chunk456412.A)(e => {
     mode: D,
     popoutType: L,
     awaitingRemoteSessionInfo: M,
-    callContainerDimensions: k
+    callContainerDimensions: G
   } = e;
   l.useEffect(() => {
     h._.dispatch(A.jej.REMEASURE_TARGET)
-  }, [P, w, k.width, k.height]);
-  let G = l.useMemo(() => n.filter(e => e.type !== y.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, _]),
+  }, [P, w, G.width, G.height]);
+  let k = l.useMemo(() => n.filter(e => e.type !== y.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, _]),
     U = (0, i.bG)([o.A], () => o.A.getVoiceParticipantsHidden(C.id), [C.id]);
   if ((null == M ? true : M.channelId) === C.id) return (0, r.jsx)(g.A, {
     height: w
@@ -57,7 +57,7 @@ let _ = (0, Chunk456412.A)(e => {
     participants: t,
     hasConnectPermission: S
   });
-  if (n = N ? n : t, x === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
+  if (n = N ? n : t, j === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
     participants: n,
     channel: C,
     idle: R
@@ -84,9 +84,9 @@ let _ = (0, Chunk456412.A)(e => {
       children: (0, r.jsx)(f.A, {
         channel: C,
         className: O.g9,
-        participants: G,
+        participants: k,
         totalNumberOfParticipants: t.length,
-        onClick: j,
+        onClick: x,
         onDoubleClick: E,
         onContextMenu: v,
         inCall: N,
@@ -97,16 +97,16 @@ let _ = (0, Chunk456412.A)(e => {
   return (0, r.jsx)(m.A, {
     onFullscreenParticipant: E,
     onContextMenuParticipant: v,
-    onSelectParticipant: j,
+    onSelectParticipant: x,
     selectedParticipant: s,
-    filteredParticipants: G,
+    filteredParticipants: k,
     participants: t,
     popoutType: L,
     className: I,
     idle: R,
     height: w,
     width: P,
-    layout: x,
+    layout: j,
     inCall: N,
     channel: C,
     showParticipants: T

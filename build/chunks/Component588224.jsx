@@ -48,20 +48,20 @@ let U = Chunk64700.memo(e => {
     channel: y,
     sessionId: v,
     nick: N
-  } = e, T = A.id, G = (0, a.bG)([C.default], () => C.default.getId() === T, [T]), [U, V, B] = (0, a.yK)([I.A], () => G ? [!I.A.isSupported() || I.A.isSelfMute() || I.A.isSelfMutedTemporarily(), I.A.isSelfDeaf(), false] : [!I.A.isSupported() || I.A.isLocalMute(T), false, I.A.isLocalVideoDisabled(T)], [G, T]), H = (0, a.bG)([w.A], () => w.A.isPrioritySpeaker(T)), F = (0, c.A)({
+  } = e, T = A.id, k = (0, a.bG)([C.default], () => C.default.getId() === T, [T]), [U, V, B] = (0, a.yK)([I.A], () => k ? [!I.A.isSupported() || I.A.isSelfMute() || I.A.isSelfMutedTemporarily(), I.A.isSelfDeaf(), false] : [!I.A.isSupported() || I.A.isLocalMute(T), false, I.A.isLocalVideoDisabled(T)], [k, T]), H = (0, a.bG)([w.A], () => w.A.isPrioritySpeaker(T)), F = (0, c.A)({
     userId: T,
     checkSoundSharing: true
-  }), K = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), Y = G && K, W = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), z = (0, a.bG)([p.A], () => p.A.getGuildRingingUsers(y.id).has(T)), q = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
+  }), K = (0, a.bG)([w.A], () => w.A.isCurrentUserPTTLatched()), Y = k && K, W = (0, a.bG)([S.Ay], () => S.Ay.isGuestOrLurker(y.guild_id, T)), z = (0, a.bG)([p.A], () => p.A.getGuildRingingUsers(y.id).has(T)), q = (0, a.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(y.id).find(e => {
     let {
       userIds: t
     } = e;
     return t.has(T)
-  }), [T, y.id]), X = (0, h.A)(null != q ? [q.applicationId] : []), J = (0, x.A)(T, y.guild_id)[0], Q = null != (t = (0, d.YY)(null == J ? true : J.application_id).data) ? t : true, [Z, $] = (0, a.yK)([E.A], () => [E.A.getStreamForUser(T, y.getGuildId()), E.A.getActiveStreamForUser(T, y.getGuildId())], [y, T]), ee = (0, a.bG)([P.A], () => P.A.getSessionById(v)), et = D.Ay.useName(A), en = (0, a.bG)([R.A], () => R.A.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
+  }), [T, y.id]), X = (0, h.A)(null != q ? [q.applicationId] : []), J = (0, j.A)(T, y.guild_id)[0], Q = null != (t = (0, d.YY)(null == J ? true : J.application_id).data) ? t : true, [Z, $] = (0, a.yK)([E.A], () => [E.A.getStreamForUser(T, y.getGuildId()), E.A.getActiveStreamForUser(T, y.getGuildId())], [y, T]), ee = (0, a.bG)([P.A], () => P.A.getSessionById(v)), et = D.Ay.useName(A), en = (0, a.bG)([R.A], () => R.A.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
     enableHangStatus: er
   } = (0, f.$j)({
     guildId: y.guild_id,
     location: "VoiceUsers"
-  }), el = (0, g.Ay)(y, true, A), ei = (0, a.bG)([m.A], () => G ? m.A.getHangStatusActivity() : null, [G]), es = (0, b.h)(T), ea = (0, j.uy)(y.id, T), {
+  }), el = (0, g.Ay)(y, true, A), ei = (0, a.bG)([m.A], () => k ? m.A.getHangStatusActivity() : null, [k]), es = (0, b.h)(T), ea = (0, x.uy)(y.id, T), {
     enableVCStatusIcons: eo,
     enableRequestToStream: ec
   } = _.m.useExperiment({
@@ -71,7 +71,7 @@ let U = Chunk64700.memo(e => {
     autoTrackExposure: (null == J ? true : J.session_id) != null
   });
   return (0, r.jsx)(O.A, {
-    shakeLocation: k.uD.VOICE_USER,
+    shakeLocation: G.uD.VOICE_USER,
     isShaking: F,
     children: (0, r.jsx)(L.Ay, (l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -96,7 +96,7 @@ let U = Chunk64700.memo(e => {
       disconnected: ea,
       otherClientSessionType: null == ee || null == (n = ee.clientInfo) ? true : n.os,
       voicePlatform: en,
-      localMute: U && !G,
+      localMute: U && !k,
       localVideoDisabled: B,
       mute: s || U,
       deaf: o || V,
@@ -108,11 +108,11 @@ let U = Chunk64700.memo(e => {
       isStreaming: null != Z && Z.channelId === y.id,
       isWatching: null != $ && $.state !== M.XYD.ENDED,
       isGuest: W,
-      isSelf: G,
+      isSelf: k,
       requestToStreamActivity: ec ? J : true,
       application: (eo || er) && (null == J ? true : J.session_id) != null ? Q : true,
-      showHangStatus: el && er && (G || null != es),
-      hangStatusActivity: G ? ei : es
+      showHangStatus: el && er && (k || null != es),
+      hangStatusActivity: k ? ei : es
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -141,10 +141,10 @@ let V = [],
       withGuildIcon: b = false,
       className: O,
       children: _,
-      isThread: x = false
-    } = e, [E, S] = l.useState(null), [I, P] = l.useState(false), w = l.useRef(null), R = (0, j.$n)(i.id, null != c ? c : V), {
+      isThread: j = false
+    } = e, [E, S] = l.useState(null), [I, P] = l.useState(false), w = l.useRef(null), R = (0, x.$n)(i.id, null != c ? c : V), {
       shouldShow: D,
-      dismiss: k
+      dismiss: G
     } = (0, y.Z0)(i, {
       collapsed: u
     }), B = l.useRef(new o.J_(50, () => {
@@ -202,7 +202,7 @@ let V = [],
         });
       return D && l.unshift((0, r.jsx)(A.p, {
         channel: i,
-        onClose: k
+        onClose: G
       }, "voice-invite-suggestions-button")), null != m && m > 0 ? l.push((0, r.jsx)(L.aI, {
         collapsed: u,
         numAudience: m
@@ -211,10 +211,10 @@ let V = [],
       })), l
     })();
     return null == W && null == _ ? null : (0, r.jsxs)(v.Wr, {
-      className: s()(O, G.p_, {
-        [G.yZ]: u,
-        [G.lY]: b,
-        [G.fT]: x
+      className: s()(O, k.p_, {
+        [k.yZ]: u,
+        [k.lY]: b,
+        [k.fT]: j
       }),
       collapsed: u,
       children: [W, _]

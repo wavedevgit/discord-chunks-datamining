@@ -55,12 +55,12 @@ function L(e) {
     badge: p,
     link: g,
     showProgressBadge: b
-  } = e, [A, y] = l.useState(false), [O, _] = l.useState(false), [x, j] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, h.fy)().activePanel === h.HP.APP_ICON, k = () => {
-    j(null), T(0), clearTimeout(x)
+  } = e, [A, y] = l.useState(false), [O, _] = l.useState(false), [j, x] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+    x(null), T(0), clearTimeout(j)
   };
   if (null == d) return null;
-  let G = w.intl.string(w.t.YUU0RF);
-  O && (G = a.w.get(N.wqg) ? w.intl.string(w.t["nkq1l+"]) : w.intl.string(w.t.Be8Q5E));
+  let k = w.intl.string(w.t.YUU0RF);
+  O && (k = a.w.get(N.wqg) ? w.intl.string(w.t["nkq1l+"]) : w.intl.string(w.t.Be8Q5E));
   let U = null;
   !s && b && (U = (0, r.jsx)(c.A, {
     className: R.Cp,
@@ -95,8 +95,8 @@ function L(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != x && clearTimeout(x), j(setTimeout(k, 500)), T(v + 1), 15 === v)) {
-            k();
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(G, 500)), T(v + 1), 15 === v)) {
+            G();
             let e = !a.w.get(N.wqg);
             a.w.set(N.wqg, e), e && a.w.set(P.L, true), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), _(true), setTimeout(() => {
               _(false)
@@ -143,7 +143,7 @@ function L(e) {
           className: R.Io
         }), (0, r.jsx)(S.A, {
           hideOnClick: true,
-          text: G,
+          text: k,
           selected: s,
           children: B
         })]
@@ -154,13 +154,13 @@ function L(e) {
 
 function M() {
   let e = (0, v.q)(),
-    t = (0, s.bG)([x.A, _.A], () => {
-      let e = (0, c.v)(x.A.activeItems, _.A),
+    t = (0, s.bG)([j.A, _.A], () => {
+      let e = (0, c.v)(j.A.activeItems, _.A),
         {
           total: t,
           progress: n
-        } = j.zY(e),
-        r = j.uA(n, t);
+        } = x.zY(e),
+        r = x.uA(n, t);
       return r > 0 && r < 100
     }),
     n = (0, g.kX)(),

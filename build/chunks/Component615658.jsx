@@ -25,21 +25,21 @@ let p = () => {
     y = (0, c.n)(e => e.volumes),
     O = l.useRef(null),
     _ = l.useRef(null),
-    x = l.useRef(null),
-    j = (0, h.A)(g, f),
+    j = l.useRef(null),
+    x = (0, h.A)(g, f),
     v = (0, i.bG)([u.A], () => u.A.assets);
   return (l.useEffect(() => {
     let e = O.current;
-    if (null != e && (null == j ? true : j.src) != null && (e.pause(), e.src = j.src, !b && m && p)) {
+    if (null != e && (null == x ? true : x.src) != null && (e.pause(), e.src = x.src, !b && m && p)) {
       var t;
       null == (t = e.play()) || t.catch(e => {
         o.A.captureException(e)
       })
     }
-  }, [null == j ? true : j.src, b, m, p]), l.useEffect(() => {
+  }, [null == x ? true : x.src, b, m, p]), l.useEffect(() => {
     var e, t;
     let n = _.current,
-      r = x.current;
+      r = j.current;
     null != n && (b || !p ? n.pause() : null == (e = n.play()) || e.catch(e => {
       o.A.captureException(e)
     })), null != r && (b || !p ? r.pause() : null == (t = r.play()) || t.catch(e => {
@@ -51,7 +51,7 @@ let p = () => {
       onEnded: A,
       volume: b ? 0 : y.radio,
       children: (0, r.jsx)("source", {
-        src: null == j ? true : j.src
+        src: null == x ? true : x.src
       })
     }), (0, r.jsx)(s.A, {
       ref: _,
@@ -60,7 +60,7 @@ let p = () => {
         src: null == v || null == (e = v.sounds) ? true : e[d.qi.ENVIRONMENT]
       })
     }), (0, r.jsx)(s.A, {
-      ref: x,
+      ref: j,
       volume: b ? 0 : y.campfire,
       children: (0, r.jsx)("source", {
         src: null == v || null == (t = v.sounds) ? true : t[d.qi.CAMPFIRE]

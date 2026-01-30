@@ -39,9 +39,9 @@ function S(e) {
     setIsHovered: D,
     onMouseEnter: L,
     onMouseLeave: M
-  } = (0, _.A)(200, 300), k = (0, d.b)({
+  } = (0, _.A)(200, 300), G = (0, d.b)({
     surface: c.YI.VOICE_LAUNCHER
-  }), G = (0, i.bG)([u.Ay], () => null != u.Ay.getSelfEmbeddedActivityForLocation(u.Ay.getConnectedActivityLocation())), U = !w, V = l.useCallback(e => {
+  }), k = (0, i.bG)([u.Ay], () => null != u.Ay.getSelfEmbeddedActivityForLocation(u.Ay.getConnectedActivityLocation())), U = !w, V = l.useCallback(e => {
     "focus" !== e.type && L()
   }, [L]), B = (0, O.Us)() === v.BRT.POPOUT, {
     parentAnalyticsLocation: H,
@@ -71,7 +71,7 @@ function S(e) {
       return W.current && !c && i(E.i.AUTO_DISMISS), W.current !== c && (W.current = c), (0, r.jsx)(o.YNO, {
         targetElementRef: z,
         fixed: true,
-        shouldShow: R && (S === j.P.ACTIVITY || null == S),
+        shouldShow: R && (S === x.P.ACTIVITY || null == S),
         animation: o.YNO.Animation.FADE,
         animationPosition: "top",
         position: "top",
@@ -99,7 +99,7 @@ function S(e) {
         },
         children: () => (0, r.jsx)(y.GY, {
           contentType: s.M.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-          latestVersion: k,
+          latestVersion: G,
           children: e => {
             let {
               visibleContent: t,
@@ -112,11 +112,11 @@ function S(e) {
                 shouldShow: c,
                 children: (0, r.jsx)("div", {
                   ref: z,
-                  children: (0, r.jsx)(x.A, {
+                  children: (0, r.jsx)(j.A, {
                     disabled: w,
                     "aria-label": P,
                     label: U ? true : P,
-                    isActivityActive: G,
+                    isActivityActive: k,
                     onClick: () => {
                       K(), (l === s.M.ACTIVITIES_MINI_SHELF_SPARKLES || l === s.M.ACTIVITY_GDM_ROCKET_SPARKLE || l === s.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || l === s.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || l === s.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && i(E.i.TAKE_ACTION), t === s.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(E.i.TAKE_ACTION)
                     },

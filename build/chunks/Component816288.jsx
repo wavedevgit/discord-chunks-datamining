@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 816288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,11 +23,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk375395 = require("./375395.js");
 
-function x(e) {
+function j(e) {
   let {
     guild: t,
     withMargin: i
-  } = e, x = (0, b.A)(t), j = (0, m.A)(t.id), v = l.useCallback(() => {
+  } = e, j = (0, b.A)(t), x = (0, m.A)(t.id), v = l.useCallback(() => {
     (0, A.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), E = (0, c.bG)([g.A], () => {
     var e;
@@ -36,7 +36,7 @@ function x(e) {
   l.useEffect(() => {
     E !== t.premiumSubscriberCount && (0, p.u)(t.id, t.premiumSubscriberCount)
   }, [t.id, E, t.premiumSubscriberCount]);
-  let C = Math.min(E / x * 100, 100),
+  let C = Math.min(E / j * 100, 100),
     [S, I] = (0, u.zhh)(() => ({
       width: E === t.premiumSubscriberCount ? "calc(".concat(C, "% - 4px)") : "0%",
       config: {
@@ -50,7 +50,7 @@ function x(e) {
       width: "calc(".concat(C, "% - 4px)")
     })
   }, [C, I]);
-  let N = E >= x;
+  let N = E >= j;
   return (0, r.jsx)(u.DUT, {
     "aria-label": true,
     role: "button",
@@ -67,7 +67,7 @@ function x(e) {
       [_.aF]: i
     }),
     onContextMenu: e => {
-      j && (0, d.L3)(e, async () => {
+      x && (0, d.L3)(e, async () => {
         let {
           default: e
         } = await n.e("71728").then(n.bind(n, 709843));
@@ -122,7 +122,7 @@ function x(e) {
             className: _.Qq,
             variant: "text-xs/semibold",
             children: O.intl.string(y.default.NI6Ihe)
-          }), t.premiumSubscriberCount >= x && (0, r.jsx)(o.EYj, {
+          }), t.premiumSubscriberCount >= j && (0, r.jsx)(o.EYj, {
             className: _.Qq,
             variant: "text-xs/semibold",
             children: "\uD83C\uDF89"
@@ -136,7 +136,7 @@ function x(e) {
               appliedBoostCount: E
             }) : O.intl.formatToPlainString(y.default["/rbPDs"], {
               appliedBoostCount: E,
-              maxBoostCount: x
+              maxBoostCount: j
             })
           }), (0, r.jsx)(f.A, {
             width: 12,
@@ -150,12 +150,12 @@ function x(e) {
   })
 }
 
-function j(e) {
+function x(e) {
   let {
     guild: t,
     withMargin: n
   } = e;
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(j, {
     guild: t,
     withMargin: n
   })

@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function x(e) {
+function j(e) {
   let {
     indicator: t
   } = e;
@@ -61,7 +61,7 @@ function x(e) {
       return null
   }
 }
-let j = {
+let x = {
     animation: {
       BEG: 0,
       END: 75
@@ -133,7 +133,7 @@ let j = {
           children: (0, r.jsx)(o.tvC, {
             nextScene: null == P ? "animation" : "LOOP",
             className: O.UU,
-            sceneSegments: j,
+            sceneSegments: x,
             importData: () => n.e("67807").then(n.t.bind(n, 217762, 19)),
             onScenePlay: R,
             rendererSettings: {
@@ -150,7 +150,7 @@ let j = {
         selected: i,
         onClick: E,
         showUnread: (null == v ? true : v.showUnread) === true,
-        trailing: (0, r.jsx)(x, {
+        trailing: (0, r.jsx)(j, {
           indicator: null == v ? true : v.indicator
         })
       }), T()]

@@ -110,7 +110,7 @@ function T(e) {
             className: E.IQ
           })
         })
-      }) : null, (0, r.jsx)(x.A, {
+      }) : null, (0, r.jsx)(j.A, {
         targetElementRef: u,
         onRequestOpen: () => a(true),
         onRequestClose: () => a(false),
@@ -164,12 +164,12 @@ let P = Chunk64700.memo(function(e) {
     o(true);
     try {
       p ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
-        source: j.Q4z.DIRECTORY_ENTRY
+        source: x.Q4z.DIRECTORY_ENTRY
       })
     } finally {
       o(false)
     }
-  }, x = y.Ay.getGuildSplashURL({
+  }, j = y.Ay.getGuildSplashURL({
     id: i.guildId,
     splash: i.splash,
     size: 300 * (0, m.mZ)()
@@ -194,8 +194,8 @@ let P = Chunk64700.memo(function(e) {
       className: E.MY,
       children: [(0, r.jsx)("div", {
         className: E.Yi,
-        children: null != x && (0, r.jsx)("img", {
-          src: x,
+        children: null != j && (0, r.jsx)("img", {
+          src: j,
           alt: "",
           className: E.j0
         })

@@ -49,16 +49,16 @@ function b(e) {
         channelId: t.id
       })
     }, [b, n, t.id]), null == b || null == A || !y) return null;
-  let x = "user-profile-sidebar-heading-".concat(b.id),
-    j = o.Ay.getName(null, t.id, b);
+  let j = "user-profile-sidebar-heading-".concat(b.id),
+    x = o.Ay.getName(null, t.id, b);
   return (0, r.jsx)("aside", {
-    "aria-labelledby": x,
+    "aria-labelledby": j,
     children: (0, r.jsx)(s.Fmo, {
       component: (0, r.jsx)(s.AC4, {
         children: (0, r.jsx)(s.H, {
-          id: x,
+          id: j,
           children: f.intl.format(f.t.KRe1Fk, {
-            name: j
+            name: x
           })
         })
       }),

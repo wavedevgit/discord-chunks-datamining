@@ -28,13 +28,13 @@ let y = e => {
   } = e, y = (0, u.GV)(), {
     notClaimed: O,
     notEmailVerified: _,
-    notPhoneVerified: x,
-    newAccount: j,
+    notPhoneVerified: j,
+    newAccount: x,
     newMember: v
   } = (0, i.bG)([h.A], () => h.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
-  return (0 === t && (O ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : x ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : _ ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : v ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
+  return (0 === t && (O ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : j ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : _ ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : v ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
     min: g.$8o.MEMBER_AGE
-  }), S = m.intl.string(m.t.BddRzS)) : j && (C = m.intl.formatToPlainString(m.t.sncw41, {
+  }), S = m.intl.string(m.t.BddRzS)) : x && (C = m.intl.formatToPlainString(m.t.sncw41, {
     min: g.$8o.ACCOUNT_AGE
   }), S = m.intl.string(m.t.BddRzS))), null == E || null == C) ? null : (0, l.jsxs)(a.lGe, {
     className: b.kL,
@@ -63,7 +63,7 @@ let y = e => {
             text: S,
             onClick: () => {
               if (O) c.R();
-              else if (x)(0, a.mMO)(async () => {
+              else if (j)(0, a.mMO)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 615715));
@@ -102,7 +102,7 @@ let y = e => {
               A()
             }
           })
-        }) : null, O || x || _ ? (0, l.jsx)(a.QWc, {
+        }) : null, O || j || _ ? (0, l.jsx)(a.QWc, {
           onClick: A,
           text: m.intl.string(m.t.oEAioF),
           variant: "secondary"

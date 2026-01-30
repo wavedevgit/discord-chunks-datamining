@@ -26,9 +26,9 @@ function f(e) {
     tagSetting: y
   } = (0, c.R)(t.id), O = (0, l.bG)([o.A, h.A], () => !!(o.A.getThreadIds(t.id, b, A, y).length > 0) || !!(h.A.getThreads(t.id, b, A, y).length > 0), [t.id, b, A, y]), _ = t.isMediaChannel();
   if (!n || m || _ && O) return null;
-  let x = f ? _ ? g.intl.string(g.t["WP/IE1"]) : g.intl.string(g.t.zfq9V4) : _ ? g.intl.string(g.t.p60yF1) : g.intl.string(g.t.SNOqYC);
+  let j = f ? _ ? g.intl.string(g.t["WP/IE1"]) : g.intl.string(g.t.zfq9V4) : _ ? g.intl.string(g.t.p60yF1) : g.intl.string(g.t.SNOqYC);
   return (0, r.jsx)(p.In, {
-    tooltip: x,
+    tooltip: j,
     icon: i.mir,
     onClick: () => a.A.hideAdminOnboarding(t.id, !f),
     selected: !f

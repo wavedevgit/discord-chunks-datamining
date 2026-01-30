@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 707251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => G
+  A: () => k
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk20531 = require("./20531.js");
 
-function k(e) {
+function G(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
@@ -56,7 +56,7 @@ function k(e) {
     hasParticipantsPanel: O
   } = (0, g.A)({
     location: "StageChannelCallHeader"
-  }), j = O && m;
+  }), x = O && m;
   return (0, r.jsxs)(h.f5, {
     value: i,
     children: [(0, r.jsx)(b.A, {
@@ -70,7 +70,7 @@ function k(e) {
         showRequestToSpeakSidebar: l,
         numRequestToSpeak: y
       })
-    }) : null, !m && O && (0, r.jsx)(x.A, {
+    }) : null, !m && O && (0, r.jsx)(j.A, {
       className: s()(M.x6, {
         [M.vc]: c
       }),
@@ -79,7 +79,7 @@ function k(e) {
       }
     }, "participants-list-button"), !c && (0, r.jsx)("div", {
       className: s()(M.x6, {
-        [M.vc]: j || l
+        [M.vc]: x || l
       }),
       children: (0, r.jsx)(_.V, {
         channelId: t.id,
@@ -91,13 +91,13 @@ function k(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   var t;
   let {
     channel: n,
     toggleRequestToSpeakSidebar: i,
     showRequestToSpeakSidebar: d
-  } = e, h = (0, m.Ay)(n), p = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), g = (0, C.uy)(n.id), f = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([j.A], () => j.A.getGuild(n.guild_id), [n.guild_id]), _ = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? _ < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && _ <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([v.A], () => v.A.can(N.QY, n)), G = () => {
+  } = e, h = (0, m.Ay)(n), p = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), g = (0, C.uy)(n.id), f = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([x.A], () => x.A.getGuild(n.guild_id), [n.guild_id]), _ = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, j = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? _ < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && _ <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([v.A], () => v.A.can(N.QY, n)), k = () => {
     u.A.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(R.HAw.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: D.e.VIDEO_STAGE_LIMIT,
@@ -131,7 +131,7 @@ function G(e) {
     children: e => {
       var t;
       return (0, r.jsxs)(y.Ay, {
-        toolbar: (0, r.jsx)(k, {
+        toolbar: (0, r.jsx)(G, {
           toggleRequestToSpeakSidebar: i,
           showRequestToSpeakSidebar: d,
           channel: n
@@ -186,17 +186,17 @@ function G(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-strong",
-          children: x ? L.intl.string(L.t["T+zF9M"]) : L.intl.string(L.t["IZ+SVv"])
+          children: j ? L.intl.string(L.t["T+zF9M"]) : L.intl.string(L.t["IZ+SVv"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: x ? L.intl.string(L.t.Izgpmv) : L.intl.string(L.t["7FHbPG"])
+          children: j ? L.intl.string(L.t.Izgpmv) : L.intl.string(L.t["7FHbPG"])
         })]
       }), (0, r.jsx)("div", {
         className: M.Uo,
-        children: x ? (0, r.jsxs)(r.Fragment, {
+        children: j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Button, {
-            onClick: G,
+            onClick: k,
             size: "sm",
             variant: "secondary",
             text: L.intl.string(L.t.L5eIZ2)
@@ -220,7 +220,7 @@ function G(e) {
           })]
         }) : (0, r.jsx)(c.Button, {
           variant: "primary",
-          onClick: G,
+          onClick: k,
           size: "sm",
           text: L.intl.string(L.t.WAI6xu)
         })

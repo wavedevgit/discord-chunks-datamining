@@ -70,9 +70,9 @@ function P(e) {
       channelViewSource: R = "Split View"
     } = e,
     D = (0, a.bG)([O.A], () => O.A.getChannel(P)),
-    L = (0, a.bG)([x.A], () => x.A.getGuild(null == D ? true : D.getGuildId())),
+    L = (0, a.bG)([j.A], () => j.A.getGuild(null == D ? true : D.getGuildId())),
     M = (0, g.Ay)(D);
-  t = D, i = (0, a.bG)([j.A], () => null != t && !s().isEmpty(j.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
+  t = D, i = (0, a.bG)([x.A], () => null != t && !s().isEmpty(x.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
     i && null != t && (o.h.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: t.parent_id
@@ -80,10 +80,10 @@ function P(e) {
       source: E.H9.VOICE_AUTO_OPEN
     }))
   }, [i, t]);
-  let k = l.useRef(false);
+  let G = l.useRef(false);
   if (l.useEffect(() => {
-      if (null == D || k.current) return;
-      k.current = true;
+      if (null == D || G.current) return;
+      G.current = true;
       let e = (0, h.C)(O.A.getChannel(D.id), true);
       (0, d.zV)(C.HAw.CHANNEL_OPENED, T(N({}, e, (0, d.qL)(D.id)), {
         channel_view: R
@@ -91,7 +91,7 @@ function P(e) {
         channelId: D.id
       })
     }, [D, R]), null == D || null == L) return null;
-  let G = (0, r.jsx)(v.A, {
+  let k = (0, r.jsx)(v.A, {
     channel: D,
     baseChannelId: w
   });
@@ -100,7 +100,7 @@ function P(e) {
       channel: D,
       draftType: _.C.ChannelMessage
     }), (0, r.jsx)(b.Ay, {
-      toolbar: G,
+      toolbar: k,
       "aria-label": S.intl.string(S.t.Pwe8tN),
       children: (0, A.zF)({
         channel: D,

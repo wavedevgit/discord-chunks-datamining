@@ -76,7 +76,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     item: t
   } = e, n = D, l = P.intl.string(P.t.SJTHJb);
@@ -95,7 +95,7 @@ function k(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     applicationId: t
   } = e, n = (0, i.bG)([u.A], () => u.A.getApplication(t));
@@ -111,7 +111,7 @@ let U = Chunk64700.memo(function(e) {
     } = e, {
       analyticsLocations: u
     } = (0, c.Ay)(), p = (0, C.t)(i, o), f = l.useCallback(async () => {
-      if (p || (0, _.R7)(i), null != i.item_enum && i.item_enum === x.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
+      if (p || (0, _.R7)(i), null != i.item_enum && i.item_enum === j.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
         let {
           default: e
         } = await n.e("67248").then(n.bind(n, 911539));
@@ -154,23 +154,23 @@ let U = Chunk64700.memo(function(e) {
           } else await (0, d.A)(r)
         }
         A.default.track(T.HAw.NOTIFICATION_CENTER_ACTION, {
-          action_type: x.e1.CLICKED,
+          action_type: j.e1.CLICKED,
           notification_center_id: i.id,
           item_type: i.type,
           acked: p
         })
       }
     }, [i, p, u]), m = null;
-    i.type === x.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
+    i.type === j.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
       userId: i.other_user.id
-    }) : i.type === x.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
+    }) : i.type === j.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
       userId: i.other_user.id,
       applicationId: i.applicationId
     }));
     let b = null != i.local_id,
       E = (0, v.A)({
         item: i,
-        renderApplication: e => (0, r.jsx)(G, {
+        renderApplication: e => (0, r.jsx)(k, {
           applicationId: e
         })
       }),
@@ -198,7 +198,7 @@ let U = Chunk64700.memo(function(e) {
           item: i
         }), (0, r.jsxs)("div", {
           className: w.rf,
-          children: ["lifecycle_item" === i.type && null != i.item_enum && (0, r.jsx)(k, {
+          children: ["lifecycle_item" === i.type && null != i.item_enum && (0, r.jsx)(G, {
             item: i
           }), (0, r.jsxs)(s.Text, {
             variant: "text-md/normal",
@@ -211,7 +211,7 @@ let U = Chunk64700.memo(function(e) {
           }) : null, (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: p ? "text-muted" : "text-default",
-            children: (0, j.jb)(y.default.extractTimestamp(i.id))
+            children: (0, x.jb)(y.default.extractTimestamp(i.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.e, {

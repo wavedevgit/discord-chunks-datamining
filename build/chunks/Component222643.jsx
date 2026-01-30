@@ -20,18 +20,18 @@ function d(e) {
     renderComponent: h,
     nudgeAlignIntoViewport: p = false,
     skipForceHide: g = false
-  } = e, f = l.useContext(c.vG), [m, b] = l.useState(""), [A, y] = l.useState(false), O = (0, i.bG)([o.Ay], () => o.Ay.callHeaderHeight), _ = l.useRef(null), x = l.useRef(0);
+  } = e, f = l.useContext(c.vG), [m, b] = l.useState(""), [A, y] = l.useState(false), O = (0, i.bG)([o.Ay], () => o.Ay.callHeaderHeight), _ = l.useRef(null), j = l.useRef(0);
   l.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), l.useEffect(() => {
     if (!g) {
       var e, t;
-      b(String(x.current)), y(true !== O && O < (null != (e = null == (t = _.current) ? true : t.clientHeight) ? e : 300) + 24), x.current += 1
+      b(String(j.current)), y(true !== O && O < (null != (e = null == (t = _.current) ? true : t.clientHeight) ? e : 300) + 24), j.current += 1
     }
   }, [O, _, g]);
   let {
-    preventIdle: j,
+    preventIdle: x,
     allowIdle: v
   } = (0, u.o)("popup");
   return (null == t ? true : t.current) == null ? null : (0, r.jsx)(a.Ay, {
@@ -44,8 +44,8 @@ function d(e) {
       nudgeAlignIntoViewport: p,
       children: () => (0, r.jsx)("div", {
         ref: _,
-        onMouseOver: j,
-        onFocus: j,
+        onMouseOver: x,
+        onFocus: x,
         onBlur: v,
         onMouseLeave: v,
         children: h({

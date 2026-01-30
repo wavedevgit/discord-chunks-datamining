@@ -47,7 +47,7 @@ function P(e) {
   } = (0, i.cf)([u.A], () => ({
     relationshipType: u.A.getRelationshipType(t.id),
     originApplicationId: u.A.getOriginApplicationId(t.id)
-  })), k = (0, a.fi)(t.id), G = (0, o.q)({
+  })), G = (0, a.fi)(t.id), k = (0, o.q)({
     userId: t.id
   }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), V = (0, i.bG)([p.A], () => {
     var e;
@@ -78,7 +78,7 @@ function P(e) {
         channelId: w.id,
         applicationId: M
       })
-    }), k.map(e => (0, r.jsx)(v.A.Overlay, {
+    }), G.map(e => (0, r.jsx)(v.A.Overlay, {
       children: (0, r.jsx)(y.A, {
         user: t,
         isGameRelationship: true,
@@ -88,7 +88,7 @@ function P(e) {
     }, e.applicationId)), (0, r.jsx)(_.A, {
       user: t
     }), t.isProvisional && (0, r.jsx)(v.A.Overlay, {
-      children: (0, r.jsx)(x.A, {
+      children: (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(l.CircleErrorIcon, {
           size: "xxs",
@@ -99,13 +99,13 @@ function P(e) {
           userId: t.id
         })
       })
-    }), (0, r.jsx)(j.A, {
+    }), (0, r.jsx)(x.A, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: D
     }), (0, r.jsxs)(v.A.Overlay, {
       className: T.Lw,
-      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(x.A, {
+      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(m.A, {
@@ -118,13 +118,13 @@ function P(e) {
         applicationId: V.id,
         commandIds: V.popularApplicationCommandIds,
         channel: w
-      }), G.length > 0 && (0, r.jsx)(x.A, {
+      }), k.length > 0 && (0, r.jsx)(j.A, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(A.A, {
-          applicationIds: G
+          applicationIds: k
         })
-      }), (0, r.jsx)(x.A, {
+      }), (0, r.jsx)(j.A, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "text-strong",
         children: (0, r.jsx)(O.A, {

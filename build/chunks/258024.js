@@ -31,7 +31,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function j(e) {
   var t, n;
   if (null == e.jumpTargetId || !e.ready) return null;
   let {
@@ -53,7 +53,7 @@ function x(e) {
     a = null != (t = i[s + (Math.abs(l) > 0 ? l : 1)]) ? t : i[s - 1];
   return null != a ? a : null
 }
-let j = {
+let x = {
   scrollTop: 0,
   scrollHeight: 0,
   offsetHeight: 0
@@ -134,7 +134,7 @@ class v {
     }
     if (null != e.messages.jumpTargetId) {
       if (this.isLoading()) return;
-      let n = x(e.messages);
+      let n = j(e.messages);
       if (null == n || this.isJumping() || e.messages.jumpSequenceId === t.jumpSequenceId) {
         if (this.isJumping()) return void(null != n ? this.scrollToMessage(n, true) : this.jumping = false)
       } else {
@@ -293,7 +293,7 @@ class v {
   }
   getScrollerState() {
     var e, t;
-    return null != (e = null == (t = this.ref.current) ? true : t.getScrollerState()) ? e : j
+    return null != (e = null == (t = this.ref.current) ? true : t.getScrollerState()) ? e : x
   }
   isHeightChange(e, t) {
     return e !== this.offsetHeightCache || t !== this.scrollHeightCache
@@ -351,7 +351,7 @@ class v {
       hasUnreads: t
     } = this.props;
     if (null != e.jumpTargetId) {
-      let n = x(e);
+      let n = j(e);
       if (null == n) return;
       let r = this.getElementFromMessageId(n);
       (0, s.vq)(r) ? this.scrollTo(this.getOffsetOrientationFromNode(r, "middle", t ? this.newMessageBarBuffer() : y.mZ), true): this.scrollToNewMessages(true, "middle")
@@ -383,7 +383,7 @@ class v {
       initialScrollTop: e
     } = this;
     this.initialScrollTop = true;
-    let t = x(this.props.messages);
+    let t = j(this.props.messages);
     null != t ? this.scrollToMessage(t, false) : this.props.hasUnreads && this.props.channel.type !== O.rbe.GUILD_VOICE && this.props.channel.type !== O.rbe.GUILD_STAGE_VOICE ? ((0, m.x)(this.props.channel, this.props.messages), this.scrollToNewMessages()) : null != e ? this.scrollTo(e + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
   }
   scrollTo(e) {

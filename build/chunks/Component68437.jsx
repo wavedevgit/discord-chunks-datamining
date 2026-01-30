@@ -43,8 +43,8 @@ function I(e) {
     needSubscriptionToAccess: D,
     isNewChannel: L,
     muted: M,
-    resolvedUnreadSetting: k
-  } = e, G = (0, l.bG)([m.Ay], () => m.Ay.getMentionCount(n.id)), U = (0, l.bG)([m.Ay], () => m.Ay.getIsMentionLowImportance(n.id)), V = (0, a.Ay)(n), B = (0, l.bG)([f.A], () => !f.A.can(E.xBc.CONNECT, n)), H = (0, o.H)(n), F = (0, l.bG)([b.A], () => b.A.hasVideo(n.id)), K = (0, h.qT)(n.id) && n.isGuildStageVoice(), Y = (0, _.Ay)({
+    resolvedUnreadSetting: G
+  } = e, k = (0, l.bG)([m.Ay], () => m.Ay.getMentionCount(n.id)), U = (0, l.bG)([m.Ay], () => m.Ay.getIsMentionLowImportance(n.id)), V = (0, a.Ay)(n), B = (0, l.bG)([f.A], () => !f.A.can(E.xBc.CONNECT, n)), H = (0, o.H)(n), F = (0, l.bG)([b.A], () => b.A.hasVideo(n.id)), K = (0, h.qT)(n.id) && n.isGuildStageVoice(), Y = (0, _.Ay)({
     channel: n,
     locked: B,
     video: (F || K) && null == H,
@@ -53,8 +53,8 @@ function I(e) {
     var e, t;
     return null != (e = null == (t = g.A.getGuild(n.guild_id)) ? true : t.features.has(E.GuildFeatures.COMMUNITY)) && e
   });
-  if ((0, O.A)(G)) return (0, r.jsx)(v.A, {
-    mentionsCount: G,
+  if ((0, O.A)(k)) return (0, r.jsx)(v.A, {
+    mentionsCount: k,
     isMentionLowImportance: U
   });
   if ((0, d.v)(R)) return (0, r.jsx)(d.A, {
@@ -64,7 +64,7 @@ function I(e) {
     text: S.intl.string(S.t.y2b7CA),
     color: i.A.colors.BADGE_BACKGROUND_BRAND.css
   });
-  if (!M && k === C.e.ALL_MESSAGES && n.isForumLikeChannel() && null != W && W > 0) return (0, r.jsx)(s.Text, {
+  if (!M && G === C.e.ALL_MESSAGES && n.isForumLikeChannel() && null != W && W > 0) return (0, r.jsx)(s.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: S.intl.format(S.t.GkAbqY, {
@@ -77,7 +77,7 @@ function I(e) {
     children: (0, s.Gub)(z)
   });
   let X = null != (t = null == T ? true : T.length) ? t : 0;
-  return null != P && P && Y ? (0, r.jsx)(j.A, {
+  return null != P && P && Y ? (0, r.jsx)(x.A, {
     userCount: X,
     video: F || K,
     channel: n
@@ -89,7 +89,7 @@ function I(e) {
     entry: {
       start: H
     }
-  }) : null != w && w && (0, y.X)(V) ? (0, r.jsx)(x.A, {
+  }) : null != w && w && (0, y.X)(V) ? (0, r.jsx)(j.A, {
     embeddedApps: V,
     muted: M
   }) : null

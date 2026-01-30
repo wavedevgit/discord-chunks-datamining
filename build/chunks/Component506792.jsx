@@ -27,8 +27,8 @@ let A = (0, Chunk676002.a)(function(e) {
     sorting: y,
     sortingType: O,
     sortingPosition: _,
-    connectChannelDragSource: x,
-    connectChannelDropTarget: j,
+    connectChannelDragSource: j,
+    connectChannelDropTarget: x,
     tabIndex: v
   } = e, E = (0, a.bG)([u.A, d.Ay], () => {
     let e = d.Ay.getDirectoryChannelIds(t.id);
@@ -99,5 +99,5 @@ let A = (0, Chunk676002.a)(function(e) {
         })]
       })
     });
-  return I && (w = j(x(w))), w
+  return I && (w = x(j(w))), w
 })

@@ -107,14 +107,14 @@ function D(e) {
   let t, i, h, _, D, L, {
       channel: M
     } = e,
-    k = (0, o.bG)([y.A], () => null != M ? y.A.getGuild(M.getGuildId()) : null, [M]),
-    G = null != k && E.default.extractTimestamp(k.id) < Date.now() - S.NOr,
-    U = (0, o.bG)([A.default], () => (null == k ? true : k.ownerId) === A.default.getId(), [k]),
+    G = (0, o.bG)([y.A], () => null != M ? y.A.getGuild(M.getGuildId()) : null, [M]),
+    k = null != G && E.default.extractTimestamp(G.id) < Date.now() - S.NOr,
+    U = (0, o.bG)([A.default], () => (null == G ? true : G.ownerId) === A.default.getId(), [G]),
     {
       canInvite: V,
       canManageGuild: B,
       canMessage: H
-    } = (0, g.Sk)(M, k),
+    } = (0, g.Sk)(M, G),
     F = (0, o.bG)([O.default], () => {
       var e, t;
       return (null == (e = O.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = O.default.getCurrentUser()) ? true : t.mobile) === true
@@ -123,7 +123,7 @@ function D(e) {
       guildPopulated: K,
       guildMessaged: Y,
       guildPersonalized: W
-    } = (0, g.lF)(k),
+    } = (0, g.lF)(G),
     {
       handleInvite: z,
       handleMessage: q,
@@ -134,23 +134,23 @@ function D(e) {
       p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.INVITE
-      }), null != k && (0, u.mMO)(async () => {
+      }), null != G && (0, u.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
         return t => (0, r.jsx)(e, w(P({}, t), {
-          guild: k,
+          guild: G,
           source: S.PE1.CHANNEL_WELCOME,
           analyticsLocation: {
             section: S.JJy.CHANNEL_WELCOME_CTA
           }
         }))
       })
-    }, [k]), i = l.useCallback(() => {
+    }, [G]), i = l.useCallback(() => {
       p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.SEND_MESSAGE
-      }), x._.dispatch(S.jej.TEXTAREA_FOCUS, {
+      }), j._.dispatch(S.jej.TEXTAREA_FOCUS, {
         highlight: true,
         channelId: S.dJq
       })
@@ -158,10 +158,10 @@ function D(e) {
       p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.PERSONALIZE_SERVER
-      }), null != k && f.A.open(k.id, (0, b.x)(), {
+      }), null != G && f.A.open(G.id, (0, b.x)(), {
         section: S.JJy.CHANNEL_WELCOME_CTA
       })
-    }, [k]), {
+    }, [G]), {
       handleInvite: t,
       handleMessage: i,
       handlePersonalize: h,
@@ -179,7 +179,7 @@ function D(e) {
         })
       }, []),
       handleAddApplication: l.useCallback(() => {
-        null != k && (p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
+        null != G && (p.Ay.trackWithMetadata(S.HAw.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.XT.CHANNEL_WELCOME,
           action: I.AG.ADD_APP
         }), (0, u.mMO)(async () => {
@@ -189,13 +189,13 @@ function D(e) {
           return t => {
             var n;
             return (0, r.jsx)(e, w(P({
-              guildId: null != (n = k.id) ? n : ""
+              guildId: null != (n = G.id) ? n : ""
             }, t), {
               analyticsType: c.M.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
             }))
           }
         }))
-      }, [k])
+      }, [G])
     }),
     Z = !(F || K || Y || W),
     {
@@ -239,13 +239,13 @@ function D(e) {
       (async () => {
         try {
           var e;
-          let t = await (0, m.c)(null != (e = null == k ? true : k.id) ? e : S.dJq);
+          let t = await (0, m.c)(null != (e = null == G ? true : G.id) ? e : S.dJq);
           en(t.map(e => e.id))
         } catch (e) {}
       })()
-    }, [null == k ? true : k.id]), null == k) return null;
+    }, [null == G ? true : G.id]), null == G) return null;
   let el = [];
-  G || (V && el.push((0, r.jsx)(a.A.div, {
+  k || (V && el.push((0, r.jsx)(a.A.div, {
     className: T.cW,
     style: Z ? {
       opacity: ee[el.length]
@@ -302,8 +302,8 @@ function D(e) {
     })
   }, "addapp")));
   let ei = U ? N.intl.string(N.t["1ach9C"]) : N.intl.string(N.t["ezm+/j"]);
-  G && (ei = N.intl.string(N.t["gwyU/J"]));
-  let es = "".concat(j.A.getArticleURL(S.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  k && (ei = N.intl.string(N.t["gwyU/J"]));
+  let es = "".concat(x.A.getArticleURL(S.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(C.Ay, {
     channelId: M.id,
     children: (0, r.jsx)("div", {
@@ -316,7 +316,7 @@ function D(e) {
             className: T.ud,
             variant: "heading-xxl/medium",
             children: N.intl.format(N.t.rkHVKf, {
-              guildName: k.name
+              guildName: G.name
             })
           }), (0, r.jsxs)(u.Text, {
             color: "text-default",

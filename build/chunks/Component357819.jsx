@@ -27,8 +27,8 @@ let O = (0, Chunk456412.A)(e => {
   var t, n;
   let s, O, {
       channel: _,
-      width: x,
-      onScroll: j,
+      width: j,
+      onScroll: x,
       popoutType: v
     } = e,
     {
@@ -46,25 +46,25 @@ let O = (0, Chunk456412.A)(e => {
     P = (0, c.E5)(_.id, u.ip.SPEAKER),
     w = P.filter(y),
     R = null != P.find(e => e.type === u.wY.STREAM),
-    D = Math.floor((x - 32) / 102),
-    L = x < 424 ? 1 : x < 624 ? 2 : x < 824 || S ? 3 : 4,
+    D = Math.floor((j - 32) / 102),
+    L = j < 424 ? 1 : j < 624 ? 2 : j < 824 || S ? 3 : 4,
     M = {
       [u.ip.SPEAKER]: L,
       [u.ip.AUDIENCE]: D,
       [u.ip.SELECTED]: 1
     },
-    k = (0, d.Uo)(_.id),
-    [G, U] = (0, d.RG)(_.id, M, k),
-    V = [Math.max(null != (t = G[0]) ? t : 1, 1), Math.max(null != (n = G[1]) ? n : 1, 1), G[2]],
+    G = (0, d.Uo)(_.id),
+    [k, U] = (0, d.RG)(_.id, M, G),
+    V = [Math.max(null != (t = k[0]) ? t : 1, 1), Math.max(null != (n = k[1]) ? n : 1, 1), k[2]],
     {
       speakerTileWidth: B,
       speakerTileHeight: H
-    } = (O = Math.floor((s = Math.floor(x / L - 8)) / m.i), {
+    } = (O = Math.floor((s = Math.floor(j / L - 8)) / m.i), {
       speakerTileWidth: s,
       speakerTileHeight: O
     }),
-    F = C ? x - 32 : Math.min(x - 64, 3 * B + 8),
-    K = e => e === G.length - 1 || 0 === N && 1 === e,
+    F = C ? j - 32 : Math.min(j - 64, 3 * B + 8),
+    K = e => e === k.length - 1 || 0 === N && 1 === e,
     [Y, W] = l.useState(false),
     [z, q] = l.useState(false);
   return (0, r.jsx)(p.A, {
@@ -144,6 +144,6 @@ let O = (0, Chunk456412.A)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!K(e),
     className: A.XG,
     chunkSize: 60,
-    onScroll: j
+    onScroll: x
   })
 })

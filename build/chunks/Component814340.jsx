@@ -78,18 +78,18 @@ let F = () => (0, l.jsxs)("div", {
   className: U.p$,
   children: [(0, l.jsx)("div", {
     className: U.lv,
-    children: G.intl.string(G.t.bpbATE)
+    children: k.intl.string(k.t.bpbATE)
   }), (0, l.jsx)("div", {
     className: U.PA,
     children: (0, l.jsx)(d.MzZ, {
-      href: P.A.getArticleURL(k.MVz.QUICK_SWITCHER_TUTORIAL),
-      children: G.intl.string(G.t["4iPfEO"])
+      href: P.A.getArticleURL(G.MVz.QUICK_SWITCHER_TUTORIAL),
+      children: k.intl.string(k.t["4iPfEO"])
     })
   })]
 });
 class K extends(r = Chunk64700.Component) {
   render() {
-    let e = j.A.getGuild(this.props.channel.guild_id);
+    let e = x.A.getGuild(this.props.channel.guild_id);
     return (0, l.jsx)(D.c3, H(B({}, this.props), {
       children: (0, l.jsx)("div", {
         className: U.MD,
@@ -126,7 +126,7 @@ let Y = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
       guild: t
     } = e;
     return {
-      unread: x.default.hasUnread(t.id)
+      unread: j.default.hasUnread(t.id)
     }
   })(Chunk586068.OS),
   q = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk290863.A], e => {
@@ -134,7 +134,7 @@ let Y = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
     let {
       channel: n
     } = e, r = null, l = v.A.getState().statuses;
-    return (null == (t = n.recipients) ? true : t.some(e => l[e] === k.clD.ONLINE)) && (r = k.clD.ONLINE), {
+    return (null == (t = n.recipients) ? true : t.some(e => l[e] === G.clD.ONLINE)) && (r = G.clD.ONLINE), {
       mentions: E.Ay.getMentionCount(n.id),
       status: r
     }
@@ -200,12 +200,12 @@ class Q extends Chunk64700.PureComponent {
     } = this.state, r = t.length > 0 && "" !== n;
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(N.EG, {
-        event: k.jej.GLOBAL_CLIPBOARD_PASTE,
+        event: G.jej.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
       }), (0, l.jsx)(d.vN3, {
         children: (0, l.jsx)("input", {
           className: U.hF,
-          "aria-label": G.intl.string(G.t.ZvKwYa),
+          "aria-label": k.intl.string(k.t.ZvKwYa),
           ref: this.inputRef,
           type: "text",
           role: "combobox",
@@ -213,7 +213,7 @@ class Q extends Chunk64700.PureComponent {
           "aria-expanded": r,
           "aria-activedescendant": r ? this.getRowId(e) : true,
           "aria-autocomplete": "list",
-          placeholder: G.intl.string(G.t.VtvewW),
+          placeholder: k.intl.string(k.t.VtvewW),
           onChange: this.handleInputChange,
           onKeyDown: this.handleKeyDown,
           value: this.state.query,
@@ -236,7 +236,7 @@ class Q extends Chunk64700.PureComponent {
       return 0 === t.length && e.length > 0 ? (0, l.jsx)(F, {}) : 0 === t.length ? null : (0, l.jsx)(d.Eie, {
         innerId: this._listId,
         innerRole: "listbox",
-        "aria-label": G.intl.string(G.t.Wef5Do),
+        "aria-label": k.intl.string(k.t.Wef5Do),
         ref: this.scrollerRef,
         sectionHeight: 0,
         rowHeight: 34,
@@ -253,7 +253,7 @@ class Q extends Chunk64700.PureComponent {
     })
   }
   focusNode(e) {
-    T._.dispatch(k.jej.QUICKSWITCHER_RESULT_FOCUS, {
+    T._.dispatch(G.jej.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -266,12 +266,12 @@ class Q extends Chunk64700.PureComponent {
         [U.ov]: this.state.query.length > 0
       }),
       type: A.A.Types.INLINE,
-      children: G.intl.format(G.t.wukqXQ, {
-        userSymbolHook: (e, t) => J(t, f.AT.USER, G.intl.string(G.t.GQRCGn)),
-        textChannelSymbolHook: (e, t) => J(t, f.AT.TEXT_CHANNEL, G.intl.string(G.t.wrwhuZ)),
-        voiceChannelSymbolHook: (e, t) => J(t, f.AT.VOICE_CHANNEL, G.intl.string(G.t["jz+hJp"])),
-        guildSymbolHook: (e, t) => J(t, f.AT.GUILD, G.intl.string(G.t.WuwCWi)),
-        helpdeskArticle: P.A.getArticleURL(k.MVz.QUICK_SWITCHER_TUTORIAL)
+      children: k.intl.format(k.t.wukqXQ, {
+        userSymbolHook: (e, t) => J(t, f.AT.USER, k.intl.string(k.t.GQRCGn)),
+        textChannelSymbolHook: (e, t) => J(t, f.AT.TEXT_CHANNEL, k.intl.string(k.t.wrwhuZ)),
+        voiceChannelSymbolHook: (e, t) => J(t, f.AT.VOICE_CHANNEL, k.intl.string(k.t["jz+hJp"])),
+        guildSymbolHook: (e, t) => J(t, f.AT.GUILD, k.intl.string(k.t.WuwCWi)),
+        helpdeskArticle: P.A.getArticleURL(G.MVz.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -288,7 +288,7 @@ class Q extends Chunk64700.PureComponent {
   }
   render() {
     return (0, l.jsx)(o.dWK, {
-      "aria-label": G.intl.string(G.t.ZvKwYa),
+      "aria-label": k.intl.string(k.t.ZvKwYa),
       size: "lg",
       transitionState: this.props.transitionState,
       onClose: this.props.onClose,
@@ -336,13 +336,13 @@ class Q extends Chunk64700.PureComponent {
         case f.rD.TEXT_CHANNEL:
         case f.rD.VOICE_CHANNEL:
           let r = t.record,
-            i = j.A.getGuild(r.getGuildId());
+            i = x.A.getGuild(r.getGuildId());
           if (null == i) return;
           switch (r.type) {
-            case k.rbe.GUILD_TEXT:
-            case k.rbe.GUILD_ANNOUNCEMENT:
-            case k.rbe.GUILD_FORUM:
-            case k.rbe.GUILD_MEDIA:
+            case G.rbe.GUILD_TEXT:
+            case G.rbe.GUILD_ANNOUNCEMENT:
+            case G.rbe.GUILD_FORUM:
+            case G.rbe.GUILD_MEDIA:
               return (0, h.L3)(e, async () => {
                 let {
                   default: e
@@ -353,8 +353,8 @@ class Q extends Chunk64700.PureComponent {
                   onSelect: w.jD
                 }))
               });
-            case k.rbe.GUILD_VOICE:
-            case k.rbe.GUILD_STAGE_VOICE:
+            case G.rbe.GUILD_VOICE:
+            case G.rbe.GUILD_STAGE_VOICE:
               return (0, h.L3)(e, async () => {
                 let {
                   default: e
@@ -365,9 +365,9 @@ class Q extends Chunk64700.PureComponent {
                   onSelect: w.jD
                 }))
               });
-            case k.rbe.ANNOUNCEMENT_THREAD:
-            case k.rbe.PUBLIC_THREAD:
-            case k.rbe.PRIVATE_THREAD:
+            case G.rbe.ANNOUNCEMENT_THREAD:
+            case G.rbe.PUBLIC_THREAD:
+            case G.rbe.PRIVATE_THREAD:
               return (0, h.L3)(e, async () => {
                 let {
                   default: e
@@ -377,7 +377,7 @@ class Q extends Chunk64700.PureComponent {
                   onSelect: w.jD
                 }))
               });
-            case k.rbe.GUILD_STORE:
+            case G.rbe.GUILD_STORE:
               return (0, h.L3)(e, async () => {
                 let {
                   default: e
@@ -388,7 +388,7 @@ class Q extends Chunk64700.PureComponent {
                   onSelect: w.jD
                 }))
               });
-            case k.rbe.GUILD_DIRECTORY:
+            case G.rbe.GUILD_DIRECTORY:
               return (0, h.L3)(e, async () => {
                 let {
                   default: e
@@ -578,7 +578,7 @@ class Q extends Chunk64700.PureComponent {
             id: this.getRowId(t),
             children: n.record.type === m.t1.SETTINGS && (0, l.jsx)("div", {
               className: U.MD,
-              children: G.intl.string(G.t["3D5yo/"])
+              children: k.intl.string(k.t["3D5yo/"])
             })
           }, "".concat(n.type, "-").concat(n.record.id));
         default:
@@ -606,9 +606,9 @@ function Z(e) {
       }
     }).filter(e => "" !== e.title && null != e.path);
     e.unshift({
-      title: G.intl.string(G.t["3D5yo/"]),
-      searchableTitles: [G.intl.string(G.t["3D5yo/"])],
-      path: k.BVt.SETTINGS("account")
+      title: k.intl.string(k.t["3D5yo/"]),
+      searchableTitles: [k.intl.string(k.t["3D5yo/"])],
+      path: G.BVt.SETTINGS("account")
     }), (0, I.FR)(e)
   }, [s, r]), (0, l.jsx)(Q, B({}, t, e))
 }

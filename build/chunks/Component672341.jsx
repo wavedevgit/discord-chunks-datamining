@@ -124,15 +124,15 @@ function et(e) {
     } = e,
     ep = P.default.getCurrentUser(),
     eg = () => ea.isInitialized() || et.ready,
-    ef = (0, G.r)(U),
+    ef = (0, k.r)(U),
     em = et.length > 0 && (null == (n = et.first()) ? true : n.isFirstMessageInForumPost(U)),
     eb = (0, o.cI)(U),
     eA = (0, i.bG)([E.A], () => E.A.shouldShowTopicsBar() && !ed),
-    ey = (0, j.l)(U.id),
+    ey = (0, x.l)(U.id),
     eO = (0, _.j)(U.id, J.Rx),
     e_ = (0, d.E)(U.id),
-    ex = (0, k.A)(),
-    ej = function(e, t) {
+    ej = (0, G.A)(),
+    ex = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === O._j.STRANGER_DANGER) return (0, r.jsx)(v.e, {
           channelId: e.id,
@@ -144,7 +144,7 @@ function et(e) {
         warningId: t.id,
         senderId: e.getRecipientId()
       });
-      else return (0, r.jsx)(x._, {
+      else return (0, r.jsx)(j._, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
@@ -246,7 +246,7 @@ function et(e) {
     let e, t, n = N.Ay.getOldestUnreadTimestamp(U.id),
       i = 0 !== n ? n : D.default.extractTimestamp(U.id),
       a = (0, w.ro)(new Date, new Date(i));
-    if (N.Ay.isEstimated(U.id) ? (e = a ? Q.t.wvtbbG : Q.t.tHqbtg, t = Q.t.vaPWFe) : (e = a ? Q.t["BctFH/"] : Q.t["3wXb9P"], t = Q.t["4H8ldG"]), eb && (0, o.Kc)(U) && ex.includes(z.i.SUMMARIES)) {
+    if (N.Ay.isEstimated(U.id) ? (e = a ? Q.t.wvtbbG : Q.t.tHqbtg, t = Q.t.vaPWFe) : (e = a ? Q.t["BctFH/"] : Q.t["3wXb9P"], t = Q.t["4H8ldG"]), eb && (0, o.Kc)(U) && ej.includes(z.i.SUMMARIES)) {
       let n = N.Ay.ackMessageId(U.id),
         a = (0, C.L)(U.id, N.Ay.getOldestUnreadMessageId(U.id));
       if ((0, u.zV)(X.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
@@ -334,7 +334,7 @@ function et(e) {
           })
         }
       }
-    } else ex.includes(z.i.NEW_MESSAGES) && (l = (0, r.jsx)(F.GN, {
+    } else ej.includes(z.i.NEW_MESSAGES) && (l = (0, r.jsx)(F.GN, {
       content: Q.intl.format(e, {
         count: en,
         timestamp: i
@@ -342,7 +342,7 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == l && (0, o.pk)(U) && eA && ex.includes(z.i.SUMMARIES) && (l = (0, r.jsx)(F.UK, {
+  if (null == l && (0, o.pk)(U) && eA && ej.includes(z.i.SUMMARIES) && (l = (0, r.jsx)(F.UK, {
       channel: U,
       scrollManager: ea
     })), et.error) p = (0, r.jsx)(F.Ez, {
@@ -386,6 +386,6 @@ function et(e) {
     newMessagesBar: l,
     jumpToPresentBar: p,
     forumPostActionBar: ev,
-    safetyWarningBanner: ej
+    safetyWarningBanner: ex
   }
 }

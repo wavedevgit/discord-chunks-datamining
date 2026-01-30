@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 374873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => G
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -92,10 +92,10 @@ let R = Chunk64700.memo(function(e) {
       channel: i,
       participant: s,
       tempDisableOnInit: a = false
-    } = e, m = l.useRef(null), [O, j] = l.useState(a);
+    } = e, m = l.useRef(null), [O, x] = l.useState(a);
     (0, g.Ay)(() => {
       if (!O) return;
-      let e = setTimeout(() => j(false), 1e3);
+      let e = setTimeout(() => x(false), 1e3);
       return () => clearTimeout(e)
     });
     let C = i.getGuildId();
@@ -111,7 +111,7 @@ let R = Chunk64700.memo(function(e) {
     }), [C, s.user.id]);
     (0, f.E)(L, "RequestToSpeakSidebar");
     let M = s.rtsState === E.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
-      k = e => {
+      G = e => {
         (0, h.L3)(e, async () => {
           let {
             default: e
@@ -139,7 +139,7 @@ let R = Chunk64700.memo(function(e) {
           return (0, r.jsxs)(d.DUT, w(P({
             innerRef: m,
             className: T.$u,
-            onContextMenu: k
+            onContextMenu: G
           }, e), {
             children: [(0, r.jsx)(p.A, {
               size: d._3J.SIZE_40,
@@ -169,7 +169,7 @@ let R = Chunk64700.memo(function(e) {
           asContainer: true,
           children: (0, r.jsx)(d.K0, {
             onClick: function() {
-              (0, x.lL)(i, s.user.id, false)
+              (0, j.lL)(i, s.user.id, false)
             },
             disabled: M || O,
             icon: d.LvC,
@@ -182,7 +182,7 @@ let R = Chunk64700.memo(function(e) {
           children: (0, r.jsx)(d.K0, {
             "aria-label": N.intl.string(N.t.moABMy),
             onClick: function() {
-              (0, x.lL)(i, s.user.id, true)
+              (0, j.lL)(i, s.user.id, true)
             },
             icon: d.PGe,
             variant: "secondary"
@@ -218,12 +218,12 @@ let R = Chunk64700.memo(function(e) {
     })
   });
 
-function k(e) {
+function G(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: l
-  } = e, i = (0, j.J2)(t.id), a = [+!!(0, c.bG)([O.A], () => O.A.can(I.xB.MANAGE_CHANNELS, t) || O.A.can(I.xB.MANAGE_ROLES, t)), Math.max(1, i.length)];
+  } = e, i = (0, x.J2)(t.id), a = [+!!(0, c.bG)([O.A], () => O.A.can(I.xB.MANAGE_CHANNELS, t) || O.A.can(I.xB.MANAGE_ROLES, t)), Math.max(1, i.length)];
   return (0, r.jsxs)("div", {
     className: s()(T.kL, {
       [T.X_]: l

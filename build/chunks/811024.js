@@ -4,8 +4,7 @@
 require.d(exports, {
   AX: () => c,
   Gp: () => d,
-  pE: () => u,
-  t8: () => p
+  pE: () => u
 });
 var Chunk478437 = require("./478437.js"),
   Chunk311907 = require("./311907.js"),
@@ -33,8 +32,4 @@ function d(e) {
 
 function f(e, t) {
   return null != e && true !== e && !!c(e) && (null == e.guild_id || !!t.can(s.xB.USE_EMBEDDED_ACTIVITIES, e)) && true
-}
-
-function p() {
-  returnfalse
 }

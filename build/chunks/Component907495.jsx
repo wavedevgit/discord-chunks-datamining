@@ -176,7 +176,7 @@ function es(e) {
     canReact: m,
     canConfigureJoin: b,
     canReply: _,
-    canStartThread: x,
+    canStartThread: j,
     canViewThread: v,
     canForward: E,
     isExpanded: C,
@@ -201,13 +201,13 @@ function es(e) {
       author: d
     } = n, h = (0, u.bG)([L.A], () => L.A.getGuild(t.guild_id), [t.guild_id]), f = (0, u.bG)([w.default], () => w.default.getId()), m = (0, T.Id)(t), b = (0, T.s5)(t), {
       firstMessage: O
-    } = (0, u.bG)([A.A], () => A.A.getMessage(t.id), [t.id]), _ = P.jW.useSetting(), x = P.Q_.useSetting(), v = (0, u.bG)([M.A], () => null == t.guild_id || M.A.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.bG)([A.A], () => A.A.getMessage(t.id), [t.id]), _ = P.jW.useSetting(), j = P.Q_.useSetting(), v = (0, u.bG)([M.A], () => null == t.guild_id || M.A.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: E,
       canAddNewReactions: C
-    } = (0, u.cf)([k.A], () => ({
-      canAddNewReactions: v && k.A.can(Q.xBc.ADD_REACTIONS, t),
-      canManageMessages: k.A.can(Q.xBc.MANAGE_MESSAGES, t)
-    }), [t, v]), R = (0, S.u)(t, n), G = (0, T.n)(t, n), V = (0, T.R)(n), B = (0, u.bG)([j.A], () => null != t.guild_id && j.A.isLurking(t.guild_id), [t]), z = (0, u.bG)([D.Ay], () => null != t.guild_id && D.Ay.isCurrentUserGuest(t.guild_id), [t]), q = d.id === f, X = (E || n.canDeleteOwnMessage(f)) && m && !Q.MRS.UNDELETABLE.has(n.type);
+    } = (0, u.cf)([G.A], () => ({
+      canAddNewReactions: v && G.A.can(Q.xBc.ADD_REACTIONS, t),
+      canManageMessages: G.A.can(Q.xBc.MANAGE_MESSAGES, t)
+    }), [t, v]), R = (0, S.u)(t, n), k = (0, T.n)(t, n), V = (0, T.R)(n), B = (0, u.bG)([x.A], () => null != t.guild_id && x.A.isLurking(t.guild_id), [t]), z = (0, u.bG)([D.Ay], () => null != t.guild_id && D.Ay.isCurrentUserGuest(t.guild_id), [t]), q = d.id === f, X = (E || n.canDeleteOwnMessage(f)) && m && !Q.MRS.UNDELETABLE.has(n.type);
     n.type === Q.lAJ.AUTO_MODERATION_ACTION && (X = X && E), t.isModeratorReportChannel() && (X = X && n.id !== (null == O ? true : O.id) && !(0, Y.A)(n));
     let J = (0, H.ul)(n),
       Z = (0, K.A)(n, t),
@@ -225,7 +225,7 @@ function es(e) {
       }),
       et = t.type === Q.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(Q.GuildFeatures.NEWS) && (q || E) && (0, g.A)(n),
       en = t.getGuildId(),
-      er = null != en && n.type === Q.lAJ.USER_JOIN && k.A.canWithPartialContext(Q.xBc.MANAGE_GUILD, {
+      er = null != en && n.type === Q.lAJ.USER_JOIN && G.A.canWithPartialContext(Q.xBc.MANAGE_GUILD, {
         guildId: en
       }),
       el = (0, y.m)(n),
@@ -245,11 +245,11 @@ function es(e) {
       canDelete: X,
       canReport: J,
       canReply: R,
-      canStartThread: G,
+      canStartThread: k,
       canViewThread: V,
       canForward: el,
       canCopy: U.p5,
-      hasDeveloperMode: x,
+      hasDeveloperMode: j,
       canReact: !ee && _,
       canPublish: et,
       canConfigureJoin: er,
@@ -263,7 +263,7 @@ function es(e) {
       isFocused: o
     }
   }(e), er = l.useRef(null), es = l.useCallback(() => {
-    R || G.default.track(Q.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    R || k.default.track(Q.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id,
       location: "expanding_buttons"
@@ -301,7 +301,7 @@ function es(e) {
         label: n.pinned ? $.intl.string($.t["Bse+F/"]) : $.intl.string($.t.CvQ18w),
         icon: d.tsw,
         onClick: e => (0, q.rS)(t, n, e)
-      }, "pin") : null, x && E ? (0, r.jsx)(z.qv, {
+      }, "pin") : null, j && E ? (0, r.jsx)(z.qv, {
         label: $.intl.string($.t.rBIGBL),
         icon: d.ysw,
         onClick: () => (0, q.Nw)(t, n)
@@ -336,11 +336,11 @@ function es(e) {
       label: $.intl.string($.t.I3ltXO),
       icon: O.A,
       onClick: () => (0, q.Z4)(t, n)
-    }, "forward") : null, x && !E ? (0, r.jsx)(z.qv, {
+    }, "forward") : null, j && !E ? (0, r.jsx)(z.qv, {
       label: $.intl.string($.t.rBIGBL),
       icon: d.ysw,
       onClick: () => (0, q.Nw)(t, n)
-    }, "thread") : null, !x && v ? (0, r.jsx)(z.qv, {
+    }, "thread") : null, !j && v ? (0, r.jsx)(z.qv, {
       label: $.intl.string($.t["39d0Wj"]),
       icon: d.ysw,
       onClick: () => (0, q.mF)(t, n)
@@ -413,7 +413,7 @@ function ea(e) {
   let {
     channel: t,
     message: n
-  } = e, l = (0, u.bG)([_.A], () => null != _.A.getMessage(n.id), [n.id]), i = null == n.interaction || null != n.interactionData && (0, x.Bl)(n.interactionData);
+  } = e, l = (0, u.bG)([_.A], () => null != _.A.getMessage(n.id), [n.id]), i = null == n.interaction || null != n.interactionData && (0, j.Bl)(n.interactionData);
   return (0, r.jsxs)(r.Fragment, {
     children: [!l && i && (0, r.jsx)(z.qv, {
       label: $.intl.string($.t["5911Lb"]),

@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 50400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => G
 }), require("./65821.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -212,7 +212,7 @@ class M extends(r = Chunk64700.PureComponent) {
     return (0, l.jsx)(s.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, l.jsxs)(E.c, {
-        children: [(0, l.jsx)(j.A, {
+        children: [(0, l.jsx)(x.A, {
           hovered: !m && f,
           selected: !m && n,
           unread: !m && d,
@@ -261,7 +261,7 @@ P(M, "defaultProps", {
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let k = Chunk64700.forwardRef(function(e, t) {
+let G = Chunk64700.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, p.Ay)(e.channel),
     i = (0, a.Vd)(n, 2),
@@ -272,14 +272,14 @@ let k = Chunk64700.forwardRef(function(e, t) {
     y = (0, o.bG)([A.A], () => A.A.getChannelId(), []),
     _ = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
     {
-      enabled: j
-    } = (0, x.r)({
+      enabled: x
+    } = (0, j.r)({
       location: "DirectMessage"
     }),
     v = s === n,
     E = false,
     C = false;
-  (v || j && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
+  (v || x && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
   let S = (0, c.rdh)(c.LU0.modules.guildbar.AVATAR_SIZE);
   return (0, l.jsx)(M, R(w({}, e), {
     ref: t,
@@ -293,6 +293,6 @@ let k = Chunk64700.forwardRef(function(e, t) {
     isCurrentUserInThisDMCall: v,
     size: S,
     treeItemProps: i,
-    statusIndicatorsEnabled: j
+    statusIndicatorsEnabled: x
   }))
 })

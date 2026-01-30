@@ -70,20 +70,20 @@ let A = Chunk64700.memo(function(e) {
       r = e.getShownChannelAndThreadIds();
     null != A && r.includes(A) && (t = (0, a.xb)(m)), (0, a.DD)(n.id, r, t)
   }, [n.id, A, m, b]), {
-    density: x
-  } = (0, i.wRf)(), j = "compact" === x ? 8 : 12;
+    density: j
+  } = (0, i.wRf)(), x = "compact" === j ? 8 : 12;
   switch (t) {
     case u.PU:
       return (0, r.jsx)("div", {
         style: {
-          height: j
+          height: x
         }
       });
     case u.bK:
       if (n.features.has(p.GuildFeatures.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
-          height: j
+          height: x
         }
       });
     case u.HP:

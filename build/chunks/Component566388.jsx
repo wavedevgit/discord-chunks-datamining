@@ -80,7 +80,7 @@ function el(e) {
 }
 let ei = "HasBeenInStageChannel",
   es = e => {
-    (0, x.X)(g.A.VOICE_CONTROL_TRAY, x.O.STAY_ON_TOP, e), v.setAlwaysOnTop(ee.MLl.CHANNEL_CALL_POPOUT, e)
+    (0, j.X)(g.A.VOICE_CONTROL_TRAY, j.O.STAY_ON_TOP, e), v.setAlwaysOnTop(ee.MLl.CHANNEL_CALL_POPOUT, e)
   };
 
 function ea(e) {
@@ -93,7 +93,7 @@ function ea(e) {
     selectedParticipant: c
   } = e, {
     parentAnalyticsLocation: u
-  } = (0, f.Ay)(), h = t.getGuildId(), p = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), g = D.default.getId(), A = !(0, o.bG)([m.A], () => m.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && V.Ay.supportsFeature(ee.BYE.POPOUT_WINDOWS)), y = null != c && c.type !== et.lp.ACTIVITY && c.user.id !== g, O = l.useMemo(() => {
+  } = (0, f.Ay)(), h = t.getGuildId(), p = (0, o.bG)([k.A], () => k.A.getMostRecentSelectedTextChannelId(h), [h]), g = D.default.getId(), A = !(0, o.bG)([m.A], () => m.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && V.Ay.supportsFeature(ee.BYE.POPOUT_WINDOWS)), y = null != c && c.type !== et.lp.ACTIVITY && c.user.id !== g, O = l.useMemo(() => {
     var e;
     return null != (e = null == s ? true : s.window) ? e : window
   }, [s]), _ = (0, Z.A)({
@@ -102,7 +102,7 @@ function ea(e) {
     popoutOpen: i,
     popoutWindow: s,
     currentWindow: O
-  }), j = n === ee.BRT.POPOUT && U.isPlatformEmbedded && V.Ay.supportsFeature(ee.BYE.POPOUT_WINDOWS);
+  }), x = n === ee.BRT.POPOUT && U.isPlatformEmbedded && V.Ay.supportsFeature(ee.BYE.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [y ? (0, r.jsx)(R.A, {
       context: (0, b.A)(c.type),
@@ -110,19 +110,19 @@ function ea(e) {
       currentWindow: O,
       sliderClassName: er.MQ,
       location: u
-    }) : null, j ? (0, r.jsx)(w.A, {
+    }) : null, x ? (0, r.jsx)(w.A, {
       popoutWindowAlwaysOnTop: a,
       onToggleStayOnTop: es
     }) : null, A ? (0, r.jsx)(P.A, {
       popoutOpen: i,
       onOpenPopout: () => {
-        (0, x.X)(u, x.O.POPOUT, true), (() => {
+        (0, j.X)(u, j.O.POPOUT, true), (() => {
           let e = t.getGuildId();
           null != e && null != p && (0, C.uh)(e, p), v.openChannelCallPopout(t)
         })()
       },
       onClosePopout: () => {
-        (0, x.X)(u, x.O.POPOUT, false), d.h.wait(() => v.close(ee.MLl.CHANNEL_CALL_POPOUT))
+        (0, j.X)(u, j.O.POPOUT, false), d.h.wait(() => v.close(ee.MLl.CHANNEL_CALL_POPOUT))
       }
     }) : null, _]
   })
@@ -131,7 +131,7 @@ function ea(e) {
 function eo(e) {
   let {
     channel: t
-  } = e, n = (0, j.Us)(), l = (0, o.bG)([k.A], () => k.A.can(ee.xBc.CREATE_INSTANT_INVITE, t)), i = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id)), s = (0, o.bG)([K.A], () => K.A.getStageInstanceByChannel(t.id)), a = l || (null == s ? true : s.invite_code) != null;
+  } = e, n = (0, x.Us)(), l = (0, o.bG)([G.A], () => G.A.can(ee.xBc.CREATE_INSTANT_INVITE, t)), i = (0, o.bG)([M.A], () => M.A.getGuild(t.guild_id)), s = (0, o.bG)([K.A], () => K.A.getStageInstanceByChannel(t.id)), a = l || (null == s ? true : s.invite_code) != null;
   return null != i && a ? (0, r.jsx)(S.A, {
     size: "md",
     channel: t,
@@ -154,11 +154,11 @@ function ec(e) {
       idleProps: _
     } = e,
     {
-      analyticsLocations: x
+      analyticsLocations: j
     } = (0, f.Ay)(g.A.VOICE_CONTROL_TRAY),
-    v = (0, j.Us)(),
-    E = (0, o.bG)([G.A], () => G.A.getVoiceChannelId() === c.id, [c.id]),
-    C = (0, o.bG)([k.A], () => k.A.can(ee.xBc.CONNECT, c)),
+    v = (0, x.Us)(),
+    E = (0, o.bG)([k.A], () => k.A.getVoiceChannelId() === c.id, [c.id]),
+    C = (0, o.bG)([G.A], () => G.A.can(ee.xBc.CONNECT, c)),
     S = (0, H.E5)(c.id, F.ip.SPEAKER),
     I = (0, o.bG)([m.A], () => m.A.getSelectedParticipant(c.id)),
     P = b && v !== ee.BRT.POPOUT,
@@ -197,14 +197,14 @@ function ec(e) {
     },
     disableGradients: !E || 0 === w && T.x.TOP,
     renderBottomCenter: () => E ? (0, r.jsx)(f.f5, {
-      value: x,
+      value: j,
       children: (0, r.jsx)(J.A, {
         channel: c,
         isOnStartStageScreen: M
       })
     }) : null,
     renderBottomRight: () => E ? (0, r.jsx)(f.f5, {
-      value: x,
+      value: j,
       children: (0, r.jsx)(ea, {
         channel: c,
         appContext: v,
@@ -251,14 +251,14 @@ function eu(e) {
   } = e, [a, d] = l.useState(false), b = l.useCallback(() => {
     d(!a)
   }, [a, d]), {
-    popoutWindow: x,
+    popoutWindow: j,
     popoutWindowAlwaysOnTop: v
   } = (0, o.cf)([E.A], () => ({
     popoutWindow: E.A.getWindow(ee.MLl.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: E.A.getIsAlwaysOnTop(ee.MLl.CHANNEL_CALL_POPOUT)
-  })), C = null != x && !x.closed, {
+  })), C = null != j && !j.closed, {
     analyticsLocations: S
-  } = (0, f.Ay)(g.A.STAGE_CHANNEL_CALL), N = (0, j.Us)(), {
+  } = (0, f.Ay)(g.A.STAGE_CHANNEL_CALL), N = (0, x.Us)(), {
     chatOpen: T,
     participantsListOpen: P
   } = (0, o.cf)([m.A], () => ({
@@ -280,7 +280,7 @@ function eu(e) {
   let {
     width: D = 0,
     ref: L
-  } = (0, h.Ay)(), k = D - 550, G = !C || C && N === ee.BRT.POPOUT;
+  } = (0, h.Ay)(), G = D - 550, k = !C || C && N === ee.BRT.POPOUT;
   return (0, r.jsx)(f.f5, {
     value: S,
     children: (0, r.jsxs)(A.qh, {
@@ -300,7 +300,7 @@ function eu(e) {
                 channel: t,
                 toggleRequestToSpeakSidebar: b,
                 showRequestToSpeakSidebar: a,
-                popoutWindow: x,
+                popoutWindow: j,
                 popoutWindowAlwaysOnTop: v,
                 popoutOpen: C,
                 popoutType: i,
@@ -315,13 +315,13 @@ function eu(e) {
           chatOpen: T
         }) : null, (0, r.jsxs)("div", {
           className: er.B2,
-          children: [T && G && (0, r.jsx)(y.A, {
+          children: [T && k && (0, r.jsx)(y.A, {
             channel: t,
             guild: w,
-            maxWidth: k
-          }), P && R && G && (0, r.jsx)(O.A, {
+            maxWidth: G
+          }), P && R && k && (0, r.jsx)(O.A, {
             channel: t,
-            maxWidth: k
+            maxWidth: G
           })]
         })]
       }), (0, r.jsx)(A.WD, {})]

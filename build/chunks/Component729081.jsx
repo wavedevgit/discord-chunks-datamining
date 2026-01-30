@@ -46,7 +46,7 @@ function C(e) {
     P = (0, o.yK)([p.A], () => {
       let e = new Set;
       for (let n of T)
-        if ((0, x.Xw)(n) || (0, x.Ay)(n))
+        if ((0, j.Xw)(n) || (0, j.Ay)(n))
           for (let r of p.A.getActivities(n.user.id)) {
             var t;
             if (r.application_id === (null == N ? true : N.id) || (null == N || null == (t = N.linkedGames) ? true : t.some(e => e.id === r.application_id)) === true) {
@@ -57,7 +57,7 @@ function C(e) {
       return Array.from(e).sort()
     }, [T, N]),
     w = l.useMemo(() => {
-      let e = T.map(e => (0, x.Xw)(e) || (0, x.Ay)(e) ? e.user.id : null).filter(f.Vq);
+      let e = T.map(e => (0, j.Xw)(e) || (0, j.Ay)(e) ? e.user.id : null).filter(f.Vq);
       return (0, i.uniq)([...P, ...e])
     }, [T, P]),
     {
@@ -106,13 +106,13 @@ function C(e) {
           className: v.DD,
           variant: "text-lg/bold",
           color: "text-strong",
-          children: j.intl.string(j.t.xLP3bi)
+          children: x.intl.string(x.t.xLP3bi)
         }), (0, r.jsx)(a.EYj, {
           className: v.VA,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: j.intl.format(j.t["+SqhBF"], {
-            applicationName: null != (t = null == N ? true : N.name) ? t : j.intl.string(j.t["/1hhto"])
+          children: x.intl.format(x.t["+SqhBF"], {
+            applicationName: null != (t = null == N ? true : N.name) ? t : x.intl.string(x.t["/1hhto"])
           })
         }), (0, r.jsx)("div", {
           className: v.Xb,

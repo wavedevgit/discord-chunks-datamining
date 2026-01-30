@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 137089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => x,
+  Ay: () => j,
   fz: () => O,
   tt: () => _
 }), require("./321073.js"), require("./896048.js");
@@ -66,7 +66,7 @@ function _(e, t, n) {
   } = (0, f.B3)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(l ? "-voice-summary" : "")
 }
-let x = Chunk64700.memo(function(e) {
+let j = Chunk64700.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
@@ -74,12 +74,12 @@ let x = Chunk64700.memo(function(e) {
     voiceStates: m,
     guildId: O,
     selectedChannelId: _,
-    selectedVoiceChannelId: x,
-    optInEnabled: j
+    selectedVoiceChannelId: j,
+    optInEnabled: x
   } = e, {
     hasDivider: v,
     canHaveVoiceSummary: E
-  } = l.useMemo(() => (0, f.B3)(n, j, t), [n, j, t, i]), C = l.useMemo(() => t === g.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(O), {
+  } = l.useMemo(() => (0, f.B3)(n, x, t), [n, x, t, i]), C = l.useMemo(() => t === g.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(O), {
     enableWaveformIcon: I
   } = (0, c.b)(O, "ChannelListSectionFooter"), N = (0, a.yK)([h.Ay], () => {
     if (null == C || !C.isCollapsed || !E) return [];
@@ -94,9 +94,9 @@ let x = Chunk64700.memo(function(e) {
   }, [C, E, O, S]), T = l.useMemo(() => (0, p.fK)({
     channels: N,
     selectedChannelId: _,
-    selectedVoiceChannelId: x,
+    selectedVoiceChannelId: j,
     voiceStates: m
-  }), [N, _, x, m]);
+  }), [N, _, j, m]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(y, {
     guildChannels: n,
     guildChannelsVersion: i

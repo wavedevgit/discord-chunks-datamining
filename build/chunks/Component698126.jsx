@@ -31,7 +31,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function x(e) {
   return e
 }
 
-function j(e, t) {
+function x(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   o.A.preload(n, t.id)
@@ -68,7 +68,7 @@ class v extends Chunk557534.Ay {
         channel: e,
         selected: t,
         onClick: this.handleClick,
-        onMouseDown: j,
+        onMouseDown: x,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: a ? i : null,
         "aria-label": (0, d.Ay)({
@@ -91,7 +91,7 @@ class v extends Chunk557534.Ay {
         } = await n.e("15669").then(n.bind(n, 313140));
         return n => {
           var i, s;
-          return (0, r.jsx)(e, (i = x({}, n), s = s = {
+          return (0, r.jsx)(e, (i = j({}, n), s = s = {
             channel: t,
             guild: l
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -134,5 +134,5 @@ let E = (0, Chunk676002.a)(v),
         canReorderChannel: true !== l && null != e ? f.A.can(A.xBc.MANAGE_CHANNELS, e) : f.A.can(A.xBc.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, x({}, i, e))
+    return (0, r.jsx)(E, j({}, i, e))
   })

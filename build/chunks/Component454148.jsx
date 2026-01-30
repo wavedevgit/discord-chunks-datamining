@@ -26,7 +26,7 @@ function O(e) {
     channelId: t,
     warningId: O,
     senderId: _
-  } = e, x = (0, b.CW)(), j = l.useCallback(() => {
+  } = e, j = (0, b.CW)(), x = l.useCallback(() => {
     (0, h.xi)(t, [O])
   }, [t, O]), v = e => {
     a.A.updateChannelOverrideSettings(null, t, {
@@ -37,7 +37,7 @@ function O(e) {
       senderId: _,
       warningType: p._j.LIKELY_ATO,
       cta: e
-    }), j()
+    }), x()
   };
   return l.useEffect(() => {
     (0, g.mO)(A.HAw.SAFETY_WARNING_VIEWED, {
@@ -55,7 +55,7 @@ function O(e) {
     warningType: p._j.LIKELY_ATO,
     header: y.intl.string(y.t.R8UsiI),
     description: y.intl.string(y.t.lI8nQl),
-    onDismiss: j,
+    onDismiss: x,
     buttons: [{
       text: y.intl.string(y.t.tC1pvL),
       variant: "primary",
@@ -76,7 +76,7 @@ function O(e) {
               warningId: O,
               senderId: _,
               description: y.intl.string(y.t["/uid3p"]),
-              safetyTipRows: x.map((e, t) => (0, r.jsx)(u.B, {
+              safetyTipRows: j.map((e, t) => (0, r.jsx)(u.B, {
                 listType: "numbered",
                 index: t,
                 title: e.title,
