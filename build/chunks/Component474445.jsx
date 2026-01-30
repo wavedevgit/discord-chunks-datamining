@@ -95,8 +95,8 @@ function y(e, t) {
         disabled: m
       }, e.value)
     }), [b, m, y])),
-    h = (0, s.b)();
-  return null != e.content && "" !== e.content.trim() && h ? O ? (0, r.jsx)(o.Drp, {
+    j = (0, s.b)();
+  return null != e.content && "" !== e.content.trim() && j ? O ? (0, r.jsx)(o.Drp, {
     id: "revert-translation",
     label: g.intl.string(g.t.JC9BXn),
     leadingAccessory: {

@@ -2,7 +2,7 @@
 /** chunk id: 547983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => W,
-  default: () => Y
+  default: () => z
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -51,7 +51,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function Y(e) {
+function z(e) {
   var t, n;
   let i, a, c, u, {
       channel: g,
@@ -66,8 +66,8 @@ function Y(e) {
       analyticsLocations: O
     } = (0, d.Ay)([s.A.MESSAGE_CONTEXT_MENU]),
     v = f,
-    h = f.getAttribute("data-type"),
-    j = f.getAttribute("data-id"),
+    j = f.getAttribute("data-type"),
+    h = f.getAttribute("data-id"),
     S = f.getAttribute("data-name");
   if (null != y) a = i = c = y.url;
   else
@@ -81,8 +81,8 @@ function Y(e) {
       channel: g,
       mediaItem: y,
       textSelection: E,
-      favoriteableType: h,
-      favoriteableId: j,
+      favoriteableType: j,
+      favoriteableId: h,
       favoriteableName: S,
       itemHref: i,
       itemSrc: a,
@@ -93,7 +93,7 @@ function Y(e) {
       onSelect: A,
       onClose: o.Z_,
       navId: "message",
-      ariaLabel: z.intl.string(z.t.ChPNkN),
+      ariaLabel: Y.intl.string(Y.t.ChPNkN),
       shouldHideMediaOptions: b
     })
   })
@@ -107,7 +107,7 @@ function W(e) {
     textSelection: o,
     favoriteableType: s,
     favoriteableId: d,
-    favoriteableName: Y,
+    favoriteableName: z,
     itemHref: W,
     itemSrc: Z,
     itemSafeSrc: $,
@@ -157,16 +157,16 @@ function W(e) {
     ed = (0, C.A)(t, n),
     eu = (0, p.A)(o),
     eg = (0, b.A)(o),
-    ep = (0, j.A)(t, n),
+    ep = (0, h.A)(t, n),
     ef = (0, I.A)(t, n),
     ey = (0, L.A)(t, n),
-    eb = (0, w.A)(t, n),
+    eb = (0, x.A)(t, n),
     eA = (0, X.A)(t, n),
     em = (0, _.A)(t),
     eO = (0, V.A)(t, n),
     ev = (0, M.A)(t, n),
-    eh = (0, h.A)(t),
-    ej = (0, m.A)({
+    ej = (0, j.A)(t),
+    eh = (0, m.A)({
       commandType: c.kc.MESSAGE,
       commandTargetId: t.id,
       channel: n,
@@ -174,23 +174,23 @@ function W(e) {
       onHeightUpdate: et
     }),
     eS = (0, U.A)(t, n),
-    eE = (0, x.A)(t, n),
+    eE = (0, w.A)(t, n),
     e_ = (0, S.A)(t, n),
     eD = (0, E.A)(t, n),
     eP = (0, F.A)(t, n),
     eI = (0, N.A)(t),
     eT = (0, A.A)(t),
-    ew = (0, B.A)(t),
-    ex = (0, R.A)(t, n),
-    eM = (0, G.A)(t, n),
+    ex = (0, B.A)(t),
+    ew = (0, G.A)(t, n),
+    eM = (0, R.A)(t, n),
     eC = (0, D.A)(t, n),
     eN = (0, k.Ay)(t),
-    eG = (0, k.S_)(t),
-    eR = (0, k.zo)(t),
+    eR = (0, k.S_)(t),
+    eG = (0, k.zo)(t),
     eL = (0, T.A)({
       type: s,
       id: d,
-      name: Y
+      name: z
     }),
     ek = (0, v.A)(o, n.getGuildId()),
     eU = (0, f.A)($, t, {
@@ -208,7 +208,7 @@ function W(e) {
     }),
     eH = (0, u.A)({
       id: t.id,
-      label: z.intl.string(z.t.zBoHlf),
+      label: Y.intl.string(Y.t.zBoHlf),
       shiftId: "".concat(t.channel_id, "-").concat(t.id)
     }),
     eK = (0, P.A)({
@@ -238,9 +238,9 @@ function W(e) {
     }), (0, r.jsxs)(a.rXV, {
       children: [ef, ey, eb, eA]
     }), (0, r.jsxs)(a.rXV, {
-      children: [em, eO, ev, eh, ej, eS, eE, e_, eD, eP, eT, ew]
+      children: [em, eO, ev, ej, eh, eS, eE, e_, eD, eP, eT, ex]
     }), (0, r.jsxs)(a.rXV, {
-      children: [ex, eM, eC, ee && eN, ee && eG, eR]
+      children: [ew, eM, eC, ee && eN, ee && eR, eG]
     }), es ? (0, r.jsxs)(r.Fragment, {
       children: [eq, eJ, (0, r.jsx)(a.rXV, {
         children: eB

@@ -35,7 +35,7 @@ function g(e) {
     null != p && (0, a.A)(p)
   }, [p]), v = "sticker" === g;
   if (!f || !s.p5 || !y || "emoji" !== g && !v || null == n) return null;
-  let h = v ? u.intl.string(u.t.SJ3249) : u.intl.string(u.t.Ap2oVy);
+  let j = v ? u.intl.string(u.t.SJ3249) : u.intl.string(u.t.Ap2oVy);
   return (0, r.jsxs)(l.Drp, {
     id: "message-details",
     label: u.intl.string(u.t.IqqJNI),
@@ -50,7 +50,7 @@ function g(e) {
       icon: l.L9S
     }), (0, r.jsx)(l.Drp, {
       id: "copy-item-id",
-      label: h,
+      label: j,
       action: A,
       leadingAccessory: {
         type: "icon",

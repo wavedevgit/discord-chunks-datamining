@@ -22,18 +22,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 
 function v(e) {
-  var t, n, v, h;
+  var t, n, v, j;
   let {
-    analyticsLocations: j
-  } = (0, d.Ay)(), S = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.b.USER_INSTALL], E = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.b.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? true : v.user.id, D = (0, a.bG)([m.default], () => m.default.getUser(S)), P = (0, a.bG)([A.A], () => A.A.getGuild(E)), I = b.A.getChannel(e.channel_id), T = null == I ? true : I.getGuildId(), w = (0, a.bG)([m.default], () => m.default.getUser(_));
+    analyticsLocations: h
+  } = (0, d.Ay)(), S = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.b.USER_INSTALL], E = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.b.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? true : v.user.id, D = (0, a.bG)([m.default], () => m.default.getUser(S)), P = (0, a.bG)([A.A], () => A.A.getGuild(E)), I = b.A.getChannel(e.channel_id), T = null == I ? true : I.getGuildId(), x = (0, a.bG)([m.default], () => m.default.getUser(_));
   if (i.useEffect(() => {
       null == D && null != S && (0, c.wz)(S)
     }, [D, S]), !(0, u._)(e)) return null;
-  null == w && (w = new y.A(null == (h = e.interactionMetadata) ? true : h.user));
-  let x = null;
+  null == x && (x = new y.A(null == (j = e.interactionMetadata) ? true : j.user));
+  let w = null;
   if (null != P) {
     let t = (0, f.Iv)(P, 18, true);
-    x = (0, r.jsx)(o.Drp, {
+    w = (0, r.jsx)(o.Drp, {
       disabled: true,
       iconLeft: () => (0, r.jsx)(g.A, {
         guild: P,
@@ -49,12 +49,12 @@ function v(e) {
         application: e.author.username
       })
     })
-  } else null != D && (x = (0, r.jsx)(o.Drp, {
+  } else null != D && (w = (0, r.jsx)(o.Drp, {
     action: () => (0, p.openUserProfileModal)({
       userId: D.id,
       guildId: T,
       channelId: e.channel_id,
-      sourceAnalyticsLocations: j
+      sourceAnalyticsLocations: h
     }),
     leadingAccessory: {
       type: "avatar",
@@ -77,23 +77,23 @@ function v(e) {
       type: "icon",
       icon: o.mir
     },
-    children: [x, null != w ? (0, r.jsx)(o.Drp, {
+    children: [w, null != x ? (0, r.jsx)(o.Drp, {
       action: () => (0, p.openUserProfileModal)({
-        userId: w.id,
+        userId: x.id,
         guildId: T,
         channelId: e.channel_id,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: h
       }),
       leadingAccessory: {
         type: "avatar",
-        src: w.getAvatarURL(T, 18)
+        src: x.getAvatarURL(T, 18)
       },
       iconLeft: () => (0, r.jsx)(s.A, {
-        user: w,
+        user: x,
         size: o._3J.SIZE_20
       }),
       id: "interaction-user",
-      label: w.username,
+      label: x.username,
       subtext: O.intl.string(O.t["04gxNg"])
     }) : null]
   })

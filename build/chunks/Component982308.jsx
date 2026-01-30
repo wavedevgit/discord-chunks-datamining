@@ -22,9 +22,9 @@ var Chunk503698 = require("./503698.js"),
   Chunk307731 = require("./307731.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk852620 = require("./852620.js");
-let h = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+let j = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
-function j(e) {
+function h(e) {
   let {
     emoji: t,
     isFocused: n
@@ -64,7 +64,7 @@ function j(e) {
 function S(e, t) {
   let n = (0, s.D6)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && h.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !b.Ay.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !b.Ay.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
       intention: m.b_.REACTION
@@ -83,7 +83,7 @@ function S(e, t) {
           let {
             isFocused: t
           } = e;
-          return (0, r.jsx)(j, {
+          return (0, r.jsx)(h, {
             emoji: n,
             isFocused: t
           })

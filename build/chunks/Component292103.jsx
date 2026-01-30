@@ -2,8 +2,8 @@
 /** chunk id: 292103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => v,
-  S_: () => j,
-  zo: () => h
+  S_: () => h,
+  zo: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -40,7 +40,7 @@ function v(e) {
   }) : null
 }
 
-function h(e) {
+function j(e) {
   let t = (0, i.bG)([u.A], () => u.A.hasReportedMessage(e.channel_id, e.id)),
     n = (0, g.KB)(e),
     c = n ? [l.M.REPORT_TO_MOD_NEW_TAG] : [],
@@ -64,7 +64,7 @@ function h(e) {
   }) : null
 }
 
-function j(e) {
+function h(e) {
   let t = (0, i.bG)([c.Ay], () => c.Ay.get("iar_testing")),
     n = (0, i.bG)([y.default], () => y.default.getCurrentUser());
   return (0, b.ul)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.Drp, {

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk935462 = require("./935462.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk707685 = require("./707685.js"),
@@ -50,7 +50,7 @@ function h(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, C] = i.useState(false), [P, D] = (0, s.zhh)(() => ({
+  }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, P] = i.useState(false), [C, D] = (0, s.zhh)(() => ({
     scale: d.A.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -65,7 +65,7 @@ function h(e) {
     }
   }, [t]), i.useEffect(() => {
     var e, t;
-    A === s.ip4.ENTERING && _(P.scale, 1), A === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), A === s.ip4.HIDDEN && (_(P.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), A === s.ip4.EXITING && _(P.scale, .9);
+    A === s.ip4.ENTERING && _(C.scale, 1), A === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), A === s.ip4.HIDDEN && (_(C.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), A === s.ip4.EXITING && _(C.scale, .9);
     let n = () => {
         u.A.disable(), A === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
       },
@@ -76,25 +76,25 @@ function h(e) {
     return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", r), () => {
       null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", r), u.A.disableTemp()
     }
-  }, [A, P]);
+  }, [A, C]);
   let R = i.useCallback(e => {
       T(e), f.l.markActionPerformed(f.N.SELECTED_ITEM_CHANGE)
     }, []),
     N = i.useMemo(() => ({
-      scale: P.scale,
-      x: P.x,
-      y: P.y,
+      scale: C.scale,
+      x: C.x,
+      y: C.y,
       setScale(e, t) {
-        _(P.scale, e, null == t ? true : t.immediate)
+        _(C.scale, e, null == t ? true : t.immediate)
       },
       setOffset(e, t, n) {
-        _(P.x, e, null == n ? true : n.immediate), _(P.y, t, null == n ? true : n.immediate)
+        _(C.x, e, null == n ? true : n.immediate), _(C.y, t, null == n ? true : n.immediate)
       },
       zoomed: w,
       setZoomed(e) {
-        C(e), _(P.scale, e ? 2.5 : 1), e || (_(P.x, 0), _(P.y, 0))
+        P(e), _(C.scale, e ? 2.5 : 1), e || (_(C.x, 0), _(C.y, 0))
       }
-    }), [w, P]);
+    }), [w, C]);
   return (0, r.jsx)(s.NPJ, {
     theme: y.NJ8.MIDNIGHT,
     children: e => {
@@ -119,11 +119,11 @@ function h(e) {
       }({
         "data-migration-pending": true,
         hideShadow: true,
-        className: a()(E.O, e),
+        className: o()(E.O, e),
         transitionState: A
       }, j), l = l = {
         size: s.rIJ.DYNAMIC,
-        animation: o.WM.SUBTLE,
+        animation: a.WM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
         "aria-label": g.intl.string(g.t.AMTX3j),

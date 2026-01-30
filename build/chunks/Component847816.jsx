@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk966327 = require("./966327.jsx"),
@@ -22,16 +22,16 @@ var Chunk627968 = require("./627968.js"),
 let E = Chunk64700.memo(function(e) {
   let {
     message: t
-  } = e, n = (0, o.bG)([f.A], () => f.A.getChannel(t.channel_id));
+  } = e, n = (0, a.bG)([f.A], () => f.A.getChannel(t.channel_id));
   return null == n ? null : (0, r.jsx)(O.Ay, {
     children: e => (0, r.jsxs)(u.A.Provider, {
       value: n.guild_id,
       children: [(0, r.jsx)(c.A, {
         user: t.author,
         size: s._3J.SIZE_40,
-        className: a()(g.Du, e)
+        className: o()(g.Du, e)
       }), (0, r.jsxs)("div", {
-        className: a()(g.cy, e),
+        className: o()(g.cy, e),
         children: [(0, r.jsx)(s.M1G, {
           children: (0, r.jsx)("div", {
             className: g.mG,
@@ -57,11 +57,11 @@ function _(e) {
     item: n,
     hideMediaOptions: i,
     onClose: l
-  } = e, o = null == (t = n.sourceMetadata) ? true : t.message;
+  } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
   return (0, r.jsxs)("div", {
     className: g.XV,
-    children: [null != o && (0, r.jsx)(E, {
-      message: o
+    children: [null != a && (0, r.jsx)(E, {
+      message: a
     }), (0, r.jsx)(m.A, {
       item: n,
       hideMediaOptions: i
@@ -71,7 +71,7 @@ function _(e) {
         onClick: l,
         icon: s.PGe,
         tooltip: y.intl.string(y.t.cpT0Cq),
-        className: a()(g.b, e)
+        className: o()(g.b, e)
       })
     })]
   })
