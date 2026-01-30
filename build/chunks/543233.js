@@ -1,60 +1,30 @@
 /** Chunk was on 2827 **/
 /** chunk id: 543233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => o
+  Q: () => l
 });
-var Chunk311907 = require("./311907.js"),
-  Chunk775602 = require("./775602.js"),
-  Chunk322631 = require("./322631.js"),
+var Chunk322631 = require("./322631.js"),
   Chunk227191 = require("./227191.js");
-let a = {
-    subtitle: {
-      onlyShowOnHover: false
+let l = e => {
+  let t = {
+    [r.PJ.DEFAULT]: {
+      overlayContainer: {
+        className: i.L
+      }
     },
-    description: {
-      onlyShowOnHover: true,
-      className: Chunk227191.L_
+    [r.PJ.NITRO_GRADIENT_HOVER_BORDER]: {
+      cardContainer: {
+        className: i.t
+      }
     },
-    descriptionCta: {
-      onlyShowOnHover: true
+    [r.PJ.RECURRING_3P_PROMOTIONS]: {
+      subtitle: {
+        hideOnOverlay: true
+      },
+      overlayContainer: {
+        className: i.L
+      }
     }
-  },
-  o = e => {
-    let t = (0, r.bG)([i.A], () => i.A.useReducedMotion),
-      n = {
-        [l.PJ.DEFAULT]: a,
-        [l.PJ.REWARD]: {
-          subtitle: {
-            onlyShowOnHover: true,
-            textVariant: "text-sm/semibold"
-          },
-          description: {
-            onlyShowOnHover: true,
-            className: s.p9
-          },
-          descriptionCta: {
-            onlyShowOnHover: false,
-            hideOnHoverComponent: true,
-            className: s.LV
-          },
-          cardContainer: {
-            className: t ? true : s.tk
-          }
-        },
-        [l.PJ.PROMOTION_REDEMPTION]: {
-          cardContainer: {
-            className: s.tk
-          },
-          perkImage: {
-            disableHoverAnimation: true,
-            className: s.y8
-          }
-        },
-        [l.PJ.NITRO_GRADIENT_HOVER_BORDER]: {
-          cardContainer: {
-            className: s.tk
-          }
-        }
-      };
-    return null != e ? n[e] : n[l.PJ.DEFAULT]
-  }
+  };
+  return null != e ? t[e] : t[r.PJ.DEFAULT]
+}

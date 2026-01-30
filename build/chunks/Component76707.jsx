@@ -10,31 +10,29 @@ var Chunk503698 = require("./503698.js"),
   Chunk397927 = require("./397927.js"),
   Chunk296388 = require("./296388.js");
 let o = e => {
-  var t, n, i, o;
+  var t, n, i, o, c;
   let {
-    title: c,
-    shouldShowElement: d,
+    title: d,
     cardVariantStyleInfo: u,
     description: _,
-    titleClassName: p = "",
-    subtitle: m = "",
-    subtitleClassName: g
-  } = e;
+    titleClassName: p,
+    subtitle: m,
+    subtitleClassName: g,
+    isOverlay: A
+  } = e, f = null != m && !(A && (null == u || null == (i = u.subtitle) ? true : i.hideOnOverlay) === true), b = null != _;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xl/extrabold",
       className: l()(a.Jf, p),
-      children: c
-    }), "" !== m && (null == d || d(null == u ? true : u.subtitle)) && (0, r.jsxs)("div", {
+      children: d
+    }), (f || b) && (0, r.jsxs)("div", {
       className: g,
-      children: [(0, r.jsx)(s.Text, {
-        variant: null != (t = null == u || null == (i = u.subtitle) ? true : i.textVariant) ? t : "text-sm/normal",
+      children: [f && (0, r.jsx)(s.Text, {
+        variant: null != (t = null == u || null == (o = u.subtitle) ? true : o.textVariant) ? t : "text-sm/normal",
         children: m
-      }), null != _ && (0, r.jsx)(s.Text, {
-        variant: null != (n = null == u || null == (o = u.description) ? true : o.textVariant) ? n : "text-sm/normal",
-        children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("br", {}), _]
-        })
+      }), b && (0, r.jsxs)(s.Text, {
+        variant: null != (n = null == u || null == (c = u.description) ? true : c.textVariant) ? n : "text-sm/normal",
+        children: [f && (0, r.jsx)("br", {}), _]
       })]
     })]
   })

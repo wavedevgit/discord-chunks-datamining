@@ -358,8 +358,11 @@ let j = {
               days: n - t.getDate()
             })
           })
-        }), (0, r.jsx)(D, {
-          percentage: i
+        }), (0, r.jsx)("div", {
+          className: T.G9,
+          children: (0, r.jsx)(D, {
+            percentage: i
+          })
         }), (0, r.jsx)("div", {
           className: T.kR,
           children: Object.entries(y).sort((e, t) => {

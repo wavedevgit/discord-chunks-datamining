@@ -168,7 +168,7 @@ let y = Chunk64700.memo(e => {
         }), (0, r.jsx)("div", {
           className: S.ll,
           children: (0, r.jsx)(N, I(T({}, e), {
-            description: ""
+            description: null
           }))
         }), (0, r.jsx)("div", {
           className: S.Z7,
@@ -189,10 +189,10 @@ let N = Chunk64700.forwardRef((e, t) => {
   var n;
   let {
     title: i,
-    titleClassName: l = "",
-    subtitle: a = "",
-    description: o = "",
-    descriptionCta: c = "",
+    titleClassName: l,
+    subtitle: a,
+    description: o,
+    descriptionCta: c,
     customContent: u,
     isPremiumGetCta: _,
     onCtaClick: p,
@@ -207,7 +207,7 @@ let N = Chunk64700.forwardRef((e, t) => {
     perkImage: y,
     imageOverlayText: N,
     hasNitroGradientBackground: j
-  } = e, v = C === b.cJ.CARD_CAROUSEL_FIRST_ROW || C === b.cJ.CARD_CAROUSEL_SECOND_ROW || C === b.cJ.CARD_CAROUSEL_THIRD_ROW, P = "" !== o || "" !== c || "" !== a && O === b.PJ.REWARD, R = (0, g.Q)(O);
+  } = e, v = C === b.cJ.CARD_CAROUSEL_FIRST_ROW || C === b.cJ.CARD_CAROUSEL_SECOND_ROW || C === b.cJ.CARD_CAROUSEL_THIRD_ROW, P = null != o || null != c, R = (0, g.Q)(O);
   return (0, r.jsxs)(d.DUT, {
     className: s()(S.Nr, A, null == (n = R.cardContainer) ? true : n.className, {
       [S.vk]: null != x,

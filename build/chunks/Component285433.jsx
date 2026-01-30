@@ -7,7 +7,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
-  Chunk864605 = require("./864605.js"),
+  Chunk970984 = require("./970984.js"),
   Chunk827734 = require("./827734.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk806449 = require("./806449.js");
-let T = (0, Chunk864605.animated)(Chunk397927.abt),
+let T = (0, Chunk970984.animated)(Chunk397927.abt),
   N = e => {
     var t;
     let {

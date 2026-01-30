@@ -22,8 +22,8 @@ let u = e => {
     isCarousel: g,
     onCtaClick: A,
     perkComponent: f,
-    subtitle: b = "",
-    descriptionCta: h = "",
+    subtitle: b,
+    descriptionCta: h,
     customContent: E,
     cardVariant: O,
     subtitleClassName: C,
@@ -34,11 +34,11 @@ let u = e => {
       className: l()(d.Iv, d.Gz)
     }), (0, r.jsx)(c.A, {
       title: u,
-      shouldShowElement: e => (null == e ? true : e.onlyShowOnHover) !== true,
       cardVariantStyleInfo: S,
       titleClassName: _,
       subtitle: b,
-      subtitleClassName: C
+      subtitleClassName: C,
+      isOverlay: false
     }), null != m && (0, r.jsxs)("div", {
       className: l()(d.V8, {
         [d.wP]: !g,
@@ -58,7 +58,7 @@ let u = e => {
       }) : null]
     }), null != f && (0, r.jsxs)("div", {
       className: d.wX,
-      children: [f, 0 !== h.length && null != A && (0, r.jsx)(s.$n, {
+      children: [f, null != h && null != A && (0, r.jsx)(s.$n, {
         "data-migration-pending": true,
         className: p,
         fullWidth: true,

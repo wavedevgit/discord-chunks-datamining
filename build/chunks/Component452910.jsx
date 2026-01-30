@@ -20,56 +20,51 @@ var Chunk503698 = require("./503698.js"),
   Chunk296388 = require("./296388.js");
 let f = e => {
   var t;
-  let n, {
-      title: i,
-      titleClassName: f = "",
-      buttonClassName: b = "",
-      subtitle: h = "",
-      description: E = "",
-      descriptionCta: O = "",
-      isPremiumGetCta: C,
-      onCtaClick: x,
-      cardVariant: S
-    } = e,
-    T = (0, d.V)(),
-    I = null == T ? true : T.subscription_trial,
-    y = (0, c.O)(),
-    N = (0, a.FY)({
-      intervalType: null == I ? true : I.interval,
-      intervalCount: null == I ? true : I.interval_count
-    }),
-    j = (0, o.G)({
-      defaultResponse: g.intl.string(g.t["8x0jKT"]),
-      onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
-      onTier2TrialOffer: N,
-      onTier0TrialOffer: N,
-      onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
-        percent: null == y ? true : y.discount.amount
-      })
-    }),
-    v = (0, _.Q)(S);
+  let {
+    title: n,
+    titleClassName: i,
+    buttonClassName: f,
+    subtitle: b,
+    description: h,
+    descriptionCta: E,
+    isPremiumGetCta: O,
+    onCtaClick: C,
+    cardVariant: x
+  } = e, S = (0, d.V)(), T = null == S ? true : S.subscription_trial, I = (0, c.O)(), y = (0, a.FY)({
+    intervalType: null == T ? true : T.interval,
+    intervalCount: null == T ? true : T.interval_count
+  }), N = (0, o.G)({
+    defaultResponse: g.intl.string(g.t["8x0jKT"]),
+    onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
+    onTier2TrialOffer: y,
+    onTier0TrialOffer: y,
+    onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
+      percent: null == I ? true : I.discount.amount
+    })
+  }), j = (0, _.Q)(x);
   return (0, r.jsxs)("div", {
-    className: l()(A.L_, null == v || null == (t = v.description) ? true : t.className),
+    className: l()(A.L_, null == j || null == (t = j.overlayContainer) ? true : t.className),
     children: [(0, r.jsx)(p.A, {
-      title: i,
-      cardVariantStyleInfo: v,
-      titleClassName: f,
-      subtitle: h,
-      description: E
-    }), C && (0, r.jsx)(u.A, {
-      className: b,
+      title: n,
+      cardVariantStyleInfo: j,
+      titleClassName: i,
+      subtitle: b,
+      description: h,
+      isOverlay: true
+    }), O && (0, r.jsx)(u.A, {
+      className: f,
       look: s.$n.Looks.BLANK,
       color: s.$n.Colors.CUSTOM,
       subscriptionTier: m.pe.TIER_2,
       textOptions: {
-        textOverride: j
+        textOverride: N
       },
       showGradient: true
-    }), 0 !== O.length && (null == (n = null == v ? true : v.descriptionCta) ? true : n.hideOnHoverComponent) !== true && null != x && (0, r.jsx)(s.$n, {
+    }), null != E && null != C && (0, r.jsx)(s.$n, {
       "data-migration-pending": true,
-      className: b,
-      onClick: x,
-      children: O
+      className: f,
+      onClick: C,
+      children: E
     })]
   })
 }

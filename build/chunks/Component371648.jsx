@@ -7,7 +7,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
-  Chunk864605 = require("./864605.js"),
+  Chunk970984 = require("./970984.js"),
   Chunk837381 = require("./837381.jsx"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -94,7 +94,7 @@ function W(e, t) {
     for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
   return i
 }
-let z = (0, Chunk864605.animated)(Chunk397927.fKU),
+let z = (0, Chunk970984.animated)(Chunk397927.fKU),
   q = Chunk64700.memo(function(e) {
     var t, n, i;
     let a, h, f, {

@@ -211,7 +211,7 @@ let eA = () => {
       name: "serverBoosts",
       title: U.intl.string(U.t["NyDu/6"]),
       subtitle: U.intl.string(U.t["4pEwXL"]),
-      description: eO ? "" : U.intl.string(U.t.jsyNHm),
+      description: eO ? null : U.intl.string(U.t.jsyNHm),
       descriptionCta: U.intl.string(U.t.jVcuVY),
       onCtaClick: eO ? true : () => {
         (0, E.openUserSettings)(b.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
@@ -404,15 +404,19 @@ let eA = () => {
     recurring3PPromotions: {
       name: "recurring3PPromotions",
       title: U.intl.string(U.t.m7PucM),
-      subtitle: " ",
+      subtitle: (null == ef ? true : ef.isFractionalPremiumWithNoStandardSub()) ? U.intl.string(U.t.E1ONHQ) : U.intl.format(U.t["43kZKL"], {
+        days: ev - ej.getDate()
+      }),
       onCtaClick: () => (0, N.uE)({
         analyticsLocations: e
       }),
       pillText: U.intl.string(U.t.oW0eUd).toLocaleUpperCase(),
       description: U.intl.format(U.t.zh1X7u, {}),
       descriptionCta: U.intl.string(U.t.w7s5Qr),
+      cardVariant: R.PJ.RECURRING_3P_PROMOTIONS,
       customContent: (0, i.jsx)(j.U, {
-        percentage: eP
+        percentage: eP,
+        isFNUserWithNoStandardSub: !!(null == ef ? true : ef.isFractionalPremiumWithNoStandardSub())
       })
     },
     premiumGroup: (0, y.u)()
