@@ -66,8 +66,10 @@ function E(e) {
     mode: u.nY.PINNED,
     children: e => (0, r.jsx)("div", {
       className: o()(d.k4, e),
-      children: f.width > 0 && f.height > 0 && a(f.width, f.height)
-    }, l.url)
+      children: (0, r.jsx)("div", {
+        children: f.width > 0 && f.height > 0 && a(f.width, f.height)
+      }, l.url)
+    })
   })
 }
 let y = Chunk64700.memo(E)
