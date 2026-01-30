@@ -446,6 +446,7 @@ function ef(e) {
         buttonAnalyticsObject: {
           section: K.JJy.SOUND_PICKER_FLOATING_UPSELL
         },
+        useGradientBg: ex.enabled,
         hoveredNitroLockedSound: eS
       })
     }
@@ -529,6 +530,7 @@ function ef(e) {
       buttonAnalyticsObject: {
         section: K.JJy.SOUND_PICKER_FLOATING_UPSELL
       },
+      useGradientBg: true,
       hoveredNitroLockedSound: eS,
       position: "bottom"
     })]

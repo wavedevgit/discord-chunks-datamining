@@ -51,52 +51,54 @@ function E(e) {
     className: E,
     onSubscribeModalClose: b,
     position: O = "floating",
-    hoveredNitroLockedSound: v
-  } = e, A = u.r.useConfig({
+    useGradientBg: v = false,
+    hoveredNitroLockedSound: A
+  } = e, I = u.r.useConfig({
     location: "PremiumFloatingPickerUpsell"
-  }).enabled, I = (0, s.zhh)({
+  }).enabled, S = (0, s.zhh)({
     transform: t ? "translateY(0%)" : "translateY(120%)",
     opacity: +!!t,
     config: {
       tension: 120,
       friction: 14
     }
-  }), S = A && null != v, T = (null == v ? true : v.emojiId) != null || (null == v ? true : v.emojiName) != null, C = n;
-  if (S) {
-    var N;
-    let e = d.A.getGuild(v.guildId);
-    C = _.intl.format(_.t.eku049, {
-      serverName: null != (N = null == e ? true : e.name) ? N : _.intl.string(_.t.DmIUGK)
+  }), T = I && null != A, C = (null == A ? true : A.emojiId) != null || (null == A ? true : A.emojiName) != null, N = n;
+  if (T) {
+    var w;
+    let e = d.A.getGuild(A.guildId);
+    N = _.intl.format(_.t.eku049, {
+      serverName: null != (w = null == e ? true : e.name) ? w : _.intl.string(_.t.DmIUGK)
     })
   }
   return (0, r.jsx)(o.animated.div, {
-    style: g({}, I),
-    className: a()(h.Zj, A && h.g9, {
+    style: g({}, S),
+    className: a()(h.Zj, v && h.Me, {
       [h.tO]: "floating" === O,
       [h.Kx]: "inline" === O,
       [h.ik]: "bottom" === O
     }, E),
     children: (0, r.jsxs)(y, {
-      hasPreviewSound: S,
-      children: [S && (0, r.jsxs)("div", {
+      hasPreviewSound: T,
+      useGradientBg: v,
+      children: [T && (0, r.jsxs)("div", {
         className: h.Ed,
         children: [(0, r.jsxs)("div", {
           className: h.vg,
-          children: [T && (0, r.jsx)(l.A, {
-            emojiId: v.emojiId,
-            emojiName: v.emojiName
+          children: [C && (0, r.jsx)(l.A, {
+            emojiId: A.emojiId,
+            emojiName: A.emojiName
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: v.name
+            children: A.name
           })]
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           className: h.Fr,
-          children: null != C ? C : n
+          children: null != N ? N : n
         })]
-      }), !S && (0, r.jsx)(s.Text, {
+      }), !T && (0, r.jsx)(s.Text, {
         variant: null != i ? i : "text-sm/medium",
         color: "text-strong",
         className: h.tD,
@@ -116,17 +118,16 @@ function E(e) {
 function y(e) {
   let {
     hasPreviewSound: t,
-    children: n
-  } = e, i = u.r.useConfig({
-    location: "PremiumFloatingPickerUpsell"
-  }).enabled, o = (0, c.Ay)();
-  return i ? (0, r.jsx)(s.hLv, {
+    useGradientBg: n,
+    children: i
+  } = e, o = (0, c.Ay)();
+  return n ? (0, r.jsx)(s.hLv, {
     color: "nitro-pink",
     offsetBottom: false,
     className: a()(h.nC, {
       [h.Ay]: (0, s.Mwr)(o),
       [h.u8]: t
     }),
-    children: n
-  }) : n
+    children: i
+  }) : i
 }
