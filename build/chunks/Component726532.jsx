@@ -1,8 +1,8 @@
 /** Chunk was on 2827 **/
 /** chunk id: 726532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => I,
-  j: () => N
+  i: () => T,
+  j: () => y
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk233317 = require("./233317.js"),
   Chunk622017 = require("./622017.js"),
   Chunk113090 = require("./113090.js"),
-  Chunk99499 = require("./99499.jsx"),
   Chunk752533 = require("./752533.jsx"),
   Chunk88001 = require("./88001.js"),
   Chunk652215 = require("./652215.js"),
@@ -24,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk546991 = require("./546991.js");
 
-function C(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +42,7 @@ function C(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,35 +54,35 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = () => (0, r.jsxs)(s.BJc, {
+let x = () => (0, r.jsxs)(s.BJc, {
     direction: "horizontal",
     gap: 10,
     padding: {
       top: 12,
       bottom: 12
     },
-    className: O.wx,
+    className: E.wx,
     children: [(0, r.jsx)(s.Heading, {
       variant: "display-md",
-      className: O.Nd,
-      children: (0, f.DP)()
+      className: E.Nd,
+      children: (0, A.DP)()
     }), (0, r.jsx)(s.Exy, {
       type: "beta",
       variant: "expressive"
     })]
   }),
-  T = e => {
+  S = e => {
     let {
       title: t,
       description: n,
       button: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: O.bh,
+      className: E.bh,
       children: [(0, r.jsxs)(s.BJc, {
         direction: "vertical",
         gap: 8,
-        className: O.iQ,
+        className: E.iQ,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           children: t
@@ -93,12 +92,12 @@ let S = () => (0, r.jsxs)(s.BJc, {
           children: n
         })]
       }), (0, r.jsx)("div", {
-        className: O.UD,
+        className: E.UD,
         children: i
       })]
     })
   },
-  I = e => {
+  T = e => {
     var t;
     let {
       currentUser: i
@@ -113,7 +112,7 @@ let S = () => (0, r.jsxs)(s.BJc, {
     let u = l.subscriptionId,
       _ = l.currentPeriodEnd,
       {
-        primary: g,
+        primary: T,
         members: I
       } = o,
       {
@@ -121,57 +120,57 @@ let S = () => (0, r.jsxs)(s.BJc, {
         description: N
       } = (() => {
         switch (l.subscriptionStatus) {
-          case b.Dmq.CANCELED:
+          case f.Dmq.CANCELED:
             return {
-              title: E.intl.string(h.default.mCwdPj), description: E.intl.format(h.default.wH9NYG, {
+              title: h.intl.string(b.default.mCwdPj), description: h.intl.format(b.default.wH9NYG, {
                 endDate: _
               })
             };
-          case b.Dmq.PAUSED:
+          case f.Dmq.PAUSED:
             return {
-              title: E.intl.string(h.default.IDyd1e), description: E.intl.format(h.default["8MfYhr"], {
-                premiumGroupProductName: (0, f.DP)(),
-                helpCenterLink: f.TE
+              title: h.intl.string(b.default.IDyd1e), description: h.intl.format(b.default["8MfYhr"], {
+                premiumGroupProductName: (0, A.DP)(),
+                helpCenterLink: A.TE
               })
             };
-          case b.Dmq.PAST_DUE:
-          case b.Dmq.ACCOUNT_HOLD:
-          case b.Dmq.BILLING_RETRY:
+          case f.Dmq.PAST_DUE:
+          case f.Dmq.ACCOUNT_HOLD:
+          case f.Dmq.BILLING_RETRY:
             return {
-              title: E.intl.string(h.default.Duq8zp), description: E.intl.format(h.default["MHn/D6"], {
+              title: h.intl.string(b.default.Duq8zp), description: h.intl.format(b.default["MHn/D6"], {
                 endDate: _,
-                premiumGroupProductName: (0, f.DP)()
+                premiumGroupProductName: (0, A.DP)()
               })
             };
           default:
             return {
-              title: E.intl.formatToPlainString(h.default.xiUjMF, {
-                premiumGroupProductName: (0, f.DP)()
-              }), description: E.intl.format(h.default["2HEyqG"], {
-                primaryName: (0, d.$3)(g),
-                premiumGroupProductName: (0, f.DP)(),
-                helpCenterLink: f.TE
+              title: h.intl.formatToPlainString(b.default.xiUjMF, {
+                premiumGroupProductName: (0, A.DP)()
+              }), description: h.intl.format(b.default["2HEyqG"], {
+                primaryName: (0, d.$3)(T),
+                premiumGroupProductName: (0, A.DP)(),
+                helpCenterLink: A.TE
               })
             }
         }
       })();
     return (0, r.jsxs)(s.hLv, {
-      className: O.kL,
+      className: E.kL,
       color: "nitro-pink",
-      children: [(0, r.jsx)(S, {}), (0, r.jsxs)("div", {
-        className: O.wS,
-        children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(x, {}), (0, r.jsxs)("div", {
+        className: E.wS,
+        children: [(0, r.jsx)(S, {
           title: y,
           description: N,
           button: (0, r.jsx)(s.Button, {
             variant: "secondary",
-            text: E.intl.string(h.default.NCu2JD),
+            text: h.intl.string(b.default.NCu2JD),
             onClick: () => {
               (0, s.mMO)(async () => {
                 let {
                   default: e
                 } = await n.e("92796").then(n.bind(n, 205463));
-                return t => (0, r.jsx)(e, x(C({}, t), {
+                return t => (0, r.jsx)(e, C(O({}, t), {
                   premiumGroupSubscriptionId: u,
                   currentUser: i
                 }))
@@ -188,12 +187,12 @@ let S = () => (0, r.jsxs)(s.BJc, {
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-sm/medium",
             color: "text-strong",
-            className: O.Or,
-            children: E.intl.string(h.default["oqw/KW"])
-          }), (0, r.jsx)(A.U4, {
-            user: g,
+            className: E.Or,
+            children: h.intl.string(b.default["oqw/KW"])
+          }), (0, r.jsx)(g.U4, {
+            user: T,
             isOwnUser: false
-          }), I.map(e => (0, r.jsx)(A.YF, {
+          }), I.map(e => (0, r.jsx)(g.YF, {
             user: e,
             isOwnUser: e.id === (null == i ? true : i.id)
           }, e.id))]
@@ -201,7 +200,7 @@ let S = () => (0, r.jsxs)(s.BJc, {
       })]
     })
   },
-  y = e => {
+  I = e => {
     let {
       premiumGroupMembers: t,
       isLoadingPremiumGroupMembers: n,
@@ -235,45 +234,36 @@ let S = () => (0, r.jsxs)(s.BJc, {
           right: 4,
           bottom: 10
         },
-        children: [(0, r.jsxs)(s.BJc, {
-          direction: "horizontal",
-          justify: "space-between",
-          align: "center",
-          gap: 4,
-          children: [(0, r.jsx)(s.Heading, {
-            variant: "heading-sm/medium",
-            color: "text-strong",
-            children: E.intl.string(h.default["oqw/KW"])
-          }), (0, r.jsx)(g.A, {
-            onInvite: l,
-            disabled: !i
-          })]
+        children: [(0, r.jsx)(s.Heading, {
+          variant: "heading-sm/medium",
+          color: "text-strong",
+          children: h.intl.string(b.default["oqw/KW"])
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: E.intl.format(h.default["/a/UoP"], {
+          children: h.intl.format(b.default["/a/UoP"], {
             usedSeats: d,
             totalSeats: c
           })
         })]
-      }), (0, r.jsx)(A.U4, {
+      }), (0, r.jsx)(g.U4, {
         user: _,
         isOwnUser: true
-      }), p.map(e => (0, r.jsx)(A.MT, {
+      }), p.map(e => (0, r.jsx)(g.MT, {
         user: e,
         onRemove: () => a(e)
-      }, e.id)), m.map(e => (0, r.jsx)(A.Bs, {
+      }, e.id)), m.map(e => (0, r.jsx)(g.Bs, {
         user: e,
         onRemove: () => o(e)
       }, e.id)), Array.from({
         length: u
-      }).map((e, t) => (0, r.jsx)(A.XN, {
+      }).map((e, t) => (0, r.jsx)(g.XN, {
         onInvite: l,
         canInvite: i
       }, "seat-available-".concat(t)))]
     })
   },
-  N = e => {
+  y = e => {
     let {
       subscription: t,
       analyticsLocations: d
@@ -281,8 +271,8 @@ let S = () => (0, r.jsxs)(s.BJc, {
       premiumGroupMembers: m,
       isLoading: g
     } = (0, p.A)(t.id), {
-      numAvailableInvites: A,
-      numTotalSeats: I,
+      numAvailableInvites: T,
+      numTotalSeats: y,
       numUsedSeats: N
     } = (0, l.cf)([_.A], () => ({
       numAvailableInvites: _.A.getNumAvailableInvites(),
@@ -295,97 +285,109 @@ let S = () => (0, r.jsxs)(s.BJc, {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: e
         } = await n.e("72820").then(n.bind(n, 281439));
-        return n => (0, r.jsx)(e, x(C({}, n), {
+        return n => (0, r.jsx)(e, C(O({}, n), {
           premiumSubscription: t,
           analyticsLocations: d
         }))
       })
     }, [t, d]), D = i.useCallback(async () => {
       v(true), await (0, a.Ir)(t, d), v(false)
-    }, [t, d]), L = i.useMemo(() => !f.BE.includes(t.status) && A > 0, [t.status, A]), {
-      title: w,
-      description: M
+    }, [t, d]), L = () => {
+      o.default.track(f.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
+        subscription_id: t.id
+      }), (0, s.mMO)(async () => {
+        let {
+          default: e
+        } = await Promise.all([n.e("73987"), n.e("37997")]).then(n.bind(n, 773486));
+        return n => (0, r.jsx)(e, C(O({}, n), {
+          subscription: t
+        }))
+      })
+    }, w = i.useMemo(() => !A.BE.includes(t.status) && T > 0, [t.status, T]), {
+      title: M,
+      description: G
     } = (() => {
       switch (P) {
-        case b.Dmq.CANCELED:
+        case f.Dmq.CANCELED:
           return {
-            title: E.intl.string(h.default.KME8Q6), description: E.intl.format(h.default["1sNA+Y"], {
+            title: h.intl.string(b.default.KME8Q6), description: h.intl.format(b.default["1sNA+Y"], {
               endDate: t.currentPeriodEnd,
-              premiumGroupProductName: (0, f.DP)()
+              premiumGroupProductName: (0, A.DP)()
             })
           };
-        case b.Dmq.PAUSED:
+        case f.Dmq.PAUSED:
           return {
-            title: E.intl.string(h.default["4flKoC"]), description: E.intl.format(h.default["Q++BmO"], {
-              premiumGroupProductName: (0, f.DP)()
+            title: h.intl.string(b.default["4flKoC"]), description: h.intl.format(b.default["Q++BmO"], {
+              premiumGroupProductName: (0, A.DP)()
             })
           };
-        case b.Dmq.PAST_DUE:
-        case b.Dmq.ACCOUNT_HOLD:
-        case b.Dmq.BILLING_RETRY:
+        case f.Dmq.PAST_DUE:
+        case f.Dmq.ACCOUNT_HOLD:
+        case f.Dmq.BILLING_RETRY:
           return {
-            title: E.intl.string(h.default.cfeFEt), description: E.intl.format(h.default["5+LPUW"], {
+            title: h.intl.string(b.default.cfeFEt), description: h.intl.format(b.default["5+LPUW"], {
               endDate: t.currentPeriodEnd,
-              helpCenterLink: f.TE
+              helpCenterLink: A.TE
             })
           };
         default:
           return {
-            title: E.intl.formatToPlainString(h.default.NRCfnQ, {
-              premiumGroupProductName: (0, f.DP)()
-            }), description: E.intl.format(h.default.lvnrnb, {
-              totalSeats: f.LM,
-              premiumGroupProductName: (0, f.DP)(),
-              helpCenterLink: f.TE
+            title: h.intl.formatToPlainString(b.default.NRCfnQ, {
+              premiumGroupProductName: (0, A.DP)()
+            }), description: h.intl.format(b.default.lvnrnb, {
+              totalSeats: A.LM,
+              premiumGroupProductName: (0, A.DP)(),
+              helpCenterLink: A.TE
             })
           }
       }
     })();
     return (0, r.jsxs)(s.hLv, {
-      className: O.kL,
+      className: E.kL,
       color: "nitro-pink",
-      children: [(0, r.jsx)(S, {}), (0, r.jsxs)("div", {
-        className: O.wS,
-        children: [(0, r.jsx)(T, {
-          title: w,
-          description: M,
+      children: [(0, r.jsx)(x, {}), (0, r.jsxs)("div", {
+        className: E.wS,
+        children: [(0, r.jsx)(S, {
+          title: M,
+          description: G,
           button: c.ki(t) ? (0, r.jsx)(s.Button, {
             variant: "expressive",
             size: "md",
-            text: E.intl.string(h.default.EFTJMQ),
+            text: h.intl.string(b.default.EFTJMQ),
             onClick: D,
             loading: j
-          }) : (0, r.jsx)(s.Button, {
-            variant: "secondary",
-            size: "md",
-            text: E.intl.string(h.default.oO0EYw),
-            onClick: R
+          }) : (0, r.jsxs)(s.BJc, {
+            direction: "vertical",
+            gap: 12,
+            children: [(0, r.jsx)(s.Button, {
+              variant: "primary",
+              size: "md",
+              fullWidth: true,
+              text: h.intl.string(b.default.Tcmclj),
+              onClick: L,
+              disabled: !w
+            }), (0, r.jsx)(s.Button, {
+              variant: "secondary",
+              size: "md",
+              fullWidth: true,
+              text: h.intl.string(b.default.oO0EYw),
+              onClick: R
+            })]
           })
-        }), (0, r.jsx)(y, {
+        }), (0, r.jsx)(I, {
           premiumGroupMembers: m,
           isLoadingPremiumGroupMembers: g,
-          canInvite: L,
-          onInvite: () => {
-            o.default.track(b.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
-              subscription_id: t.id
-            }), (0, s.mMO)(async () => {
-              let {
-                default: e
-              } = await Promise.all([n.e("73987"), n.e("37997")]).then(n.bind(n, 773486));
-              return n => (0, r.jsx)(e, x(C({}, n), {
-                subscription: t
-              }))
-            })
-          },
+          canInvite: w,
+          onInvite: L,
           onRemoveMember: e => {
-            o.default.track(b.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
+            o.default.track(f.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
               subscription_id: t.id,
               member_user_id: e.id
             }), (0, s.mMO)(async () => {
               let {
                 default: i
               } = await n.e("21305").then(n.bind(n, 391040));
-              return n => (0, r.jsx)(i, x(C({}, n), {
+              return n => (0, r.jsx)(i, C(O({}, n), {
                 subscriptionId: t.id,
                 member: e
               }))
@@ -393,7 +395,7 @@ let S = () => (0, r.jsxs)(s.BJc, {
           },
           onRemoveInvitedUser: e => {
             var i;
-            o.default.track(b.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_CANCEL_INVITE_CLICKED, {
+            o.default.track(f.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_CANCEL_INVITE_CLICKED, {
               subscription_id: t.id,
               invited_user_id: e.id
             });
@@ -402,16 +404,16 @@ let S = () => (0, r.jsxs)(s.BJc, {
               let {
                 default: i
               } = await n.e("15554").then(n.bind(n, 115225));
-              return n => (0, r.jsx)(i, x(C({}, n), {
+              return n => (0, r.jsx)(i, C(O({}, n), {
                 subscriptionId: t.id,
                 invitedUser: e,
                 subscriptionGroupMemberId: null == l ? true : l.id
               }))
             })
           },
-          numTotalSeats: I,
+          numTotalSeats: y,
           numUsedSeats: N,
-          numAvailableInvites: A
+          numAvailableInvites: T
         })]
       })]
     })

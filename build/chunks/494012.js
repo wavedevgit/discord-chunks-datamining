@@ -37,7 +37,9 @@ function l() {
     s(n.scrollHeight), t(n.scrollWidth)
   });
   return {
-    ref: (0, a.w)(l),
+    ref: (0, a.w)(l, [], {
+      fireOnMount: true
+    }),
     scrollWidth: e,
     scrollHeight: n
   }

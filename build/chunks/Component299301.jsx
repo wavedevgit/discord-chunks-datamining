@@ -107,7 +107,7 @@ let _ = e => {
         renewalInvoicePreview: o
       } = t;
       return h && I.subscriptionPeriodEnd !== o.subscriptionPeriodEnd && (e = I.subscriptionPeriodEnd), (0, r.jsxs)(r.Fragment, {
-        children: [y && (0, r.jsx)(c.v, {
+        children: [y && (0, r.jsx)(c.vi, {
           fractionalPremiumInfo: g,
           enablePremiumBrandRefresh: v
         }), (0, r.jsxs)(l.Yx, {

@@ -59,35 +59,36 @@ let d = {
   };
 
 function p(e) {
-  return i.forwardRef(function(t, n) {
-    let [s, c] = i.useState({
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+  return i.forwardRef(function(n, s) {
+    let [c, p] = i.useState({
       width: 0,
       height: 0
-    }), p = (0, o.A)(e => {
+    }), _ = (0, o.A)(e => {
       if (null != e) {
         let {
           width: t,
           height: n
         } = e;
-        c({
+        p({
           width: t,
           height: n
         })
       }
-    }), _ = (0, o.A)(e => {
-      p(e.contentRect)
-    }), h = (0, a.w)(_);
-    return i.useImperativeHandle(n, () => ({
+    }), h = (0, o.A)(e => {
+      _(e.contentRect)
+    }), m = (0, a.w)(h, [], t);
+    return i.useImperativeHandle(s, () => ({
       triggerResize: () => {
         var e;
-        p(null == (e = h.current) ? true : e.getBoundingClientRect())
+        _(null == (e = m.current) ? true : e.getBoundingClientRect())
       }
     })), (0, r.jsx)("div", {
-      ref: h,
+      ref: m,
       style: d,
-      children: (0, r.jsx)(e, u(l({}, t), {
-        width: s.width,
-        height: s.height,
+      children: (0, r.jsx)(e, u(l({}, n), {
+        width: c.width,
+        height: c.height,
         style: f
       }))
     })

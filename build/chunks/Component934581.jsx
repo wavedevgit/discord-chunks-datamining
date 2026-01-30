@@ -2,8 +2,9 @@
 /** chunk id: 934581, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => u,
-  v: () => d
+  NQ: () => d,
+  uA: () => u,
+  vi: () => f
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,16 +17,13 @@ var Chunk397927 = require("./397927.js"),
   u = function(e) {
     return e.TRIAL = "trial", e.DEFAULT = "default", e
   }({});
-
-function d(e) {
+let d = e => {
   let {
     fractionalPremiumInfo: t,
     variant: n = "default",
-    enablePremiumBrandRefresh: u = false,
-    style: d,
-    trialPeriod: f,
-    trialEnd: p
-  } = e, _ = t.fractionalState === o.xc.FP_SUB_PAUSED, h = (0, a.A)(t.endsAt, _), m = "", g = {
+    trialPeriod: r,
+    trialEnd: i
+  } = e, l = t.fractionalState === o.xc.FP_SUB_PAUSED, c = (0, a.A)(t.endsAt, l), u = "", d = {
     trial: {
       days_and_hours: s.t["8VIDrU"],
       days: s.t["5e2wY0"],
@@ -37,49 +35,66 @@ function d(e) {
       hours: s.t["8Xm6uL"]
     }
   };
-  return "trial" === n && null != f && null != p ? (h.days > 0 && h.hours > 0 ? m = s.intl.format(g.trial.days_and_hours, {
-    days: h.days,
-    hours: h.hours,
-    trialPeriod: f,
-    trialEnd: p
-  }) : h.days > 0 ? m = s.intl.format(g.trial.days, {
-    days: h.days,
-    trialPeriod: f,
-    trialEnd: p
-  }) : h.hours > 0 && (m = s.intl.format(g.trial.hours, {
-    days: h.days,
-    hours: h.hours,
-    trialPeriod: f,
-    trialEnd: p
-  })), "" === m) ? null : (0, r.jsxs)("div", {
+  return "trial" === n && null != r && null != i ? c.days > 0 && c.hours > 0 ? u = s.intl.format(d.trial.days_and_hours, {
+    days: c.days,
+    hours: c.hours,
+    trialPeriod: r,
+    trialEnd: i
+  }) : c.days > 0 ? u = s.intl.format(d.trial.days, {
+    days: c.days,
+    trialPeriod: r,
+    trialEnd: i
+  }) : c.hours > 0 && (u = s.intl.format(d.trial.hours, {
+    days: c.days,
+    hours: c.hours,
+    trialPeriod: r,
+    trialEnd: i
+  })) : c.days > 0 && c.hours > 0 ? u = s.intl.format(d.default.days_and_hours, {
+    days: c.days,
+    hours: c.hours
+  }) : c.days > 0 ? u = s.intl.format(d.default.days, {
+    days: c.days
+  }) : c.hours > 0 && (u = s.intl.format(d.default.hours, {
+    hours: c.hours
+  })), u
+};
+
+function f(e) {
+  let {
+    fractionalPremiumInfo: t,
+    variant: n = "default",
+    enablePremiumBrandRefresh: a = false,
+    style: o,
+    trialPeriod: s,
+    trialEnd: u
+  } = e, f = d({
+    fractionalPremiumInfo: t,
+    variant: n,
+    trialPeriod: s,
+    trialEnd: u
+  });
+  return "trial" === n && null != s && null != u ? "" === f ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       className: l.OK,
-      children: m
+      children: f
     }), (0, r.jsx)("hr", {
       className: l.oz
     })]
-  }) : (h.days > 0 && h.hours > 0 ? m = s.intl.format(g.default.days_and_hours, {
-    days: h.days,
-    hours: h.hours
-  }) : h.days > 0 ? m = s.intl.format(g.default.days, {
-    days: h.days
-  }) : h.hours > 0 && (m = s.intl.format(g.default.hours, {
-    hours: h.hours
-  })), "" === m) ? null : u ? (0, r.jsxs)("div", {
+  }) : "" === f ? null : a ? (0, r.jsxs)("div", {
     className: l.bD,
-    style: d,
+    style: o,
     children: [(0, r.jsx)("img", {
       src: c,
       alt: "Nitro Icon",
       className: l.Zb
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
-      children: m
+      children: f
     })]
   }) : (0, r.jsxs)("div", {
     className: l.s2,
-    style: d,
+    style: o,
     children: [(0, r.jsxs)("div", {
       className: l.Dl,
       children: [(0, r.jsx)(i.tvc, {
@@ -93,7 +108,7 @@ function d(e) {
       })]
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: m
+      children: f
     }), (0, r.jsx)("div", {
       className: l.WW
     })]

@@ -269,7 +269,7 @@ function v(e, t, n, a) {
     }, [I, eb]);
     return i.useLayoutEffect(() => {
       2 !== el.current.dirty && (el.current.dirty = 2)
-    }, [ef, x, M, j, F, ed, eu, el]), (0, u.gh)({
+    }, [x, M, j, F, ed, eu, el]), (0, u.gh)({
       scrollerRef: es,
       anchor: em,
       getScrollerState: ec,

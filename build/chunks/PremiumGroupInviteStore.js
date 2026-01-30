@@ -157,13 +157,32 @@ let v = new y(Chunk73153.h, {
       subscriptionGroupMemberId: t
     } = e, n = f.get(t);
     if ((null == n ? true : n.invite) == null) returnfalse;
+    let r = new Date().toISOString();
     f.set(t, {
       state: c.xI.ACCEPTED,
       invite: m(p({}, n.invite), {
-        accepted_at: new Date().toISOString()
+        accepted_at: r
       }),
       errorStatus: null
     })
+  },
+  PREMIUM_GROUP_ACCEPT_INVITE_SUCCESS: function(e) {
+    let {
+      subscriptionGroupMemberId: t
+    } = e, n = f.get(t);
+    if ((null == n ? true : n.invite) == null) returnfalse;
+    let r = n.invite.subscription,
+      i = new Date().toISOString();
+    for (let [e, n] of f) {
+      var l;
+      e !== t && (null == (l = n.invite) ? true : l.subscription) === r && f.set(e, {
+        state: c.xI.REMOVED,
+        invite: m(p({}, n.invite), {
+          removed_at: i
+        }),
+        errorStatus: null
+      })
+    }
   },
   PREMIUM_GROUP_ACCEPT_INVITE_FAIL: function(e) {
     let {
@@ -185,13 +204,29 @@ let v = new y(Chunk73153.h, {
     if (null == t) returnfalse;
     let n = f.get(t);
     if ((null == n ? true : n.invite) == null) returnfalse;
+    let r = new Date().toISOString();
     f.set(t, {
       state: c.xI.REMOVED,
       invite: m(p({}, n.invite), {
-        removed_at: new Date().toISOString()
+        removed_at: r
       }),
       errorStatus: null
     })
+  },
+  PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: function(e) {
+    let {
+      subscriptionId: t
+    } = e, n = new Date().toISOString();
+    for (let [e, i] of f) {
+      var r;
+      (null == (r = i.invite) ? true : r.subscription) === t && f.set(e, {
+        state: c.xI.REMOVED,
+        invite: m(p({}, i.invite), {
+          removed_at: n
+        }),
+        errorStatus: null
+      })
+    }
   },
   PREMIUM_GROUP_REMOVE_INVITE_FAILURE: function(e) {
     let {
