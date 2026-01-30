@@ -79,7 +79,7 @@ let C = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     label: U.intl.string(U.t["/AXYnE"])
   }), Q = (0, A.A)(t), $ = t.isNonUserBot();
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-needs-review": true,
+    "data-menu-migrated": true,
     navId: "user-context",
     onClose: l.Z_,
     "aria-label": U.intl.string(U.t.liqwPJ),

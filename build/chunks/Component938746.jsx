@@ -99,6 +99,10 @@ function h(t) {
             src: e,
             className: x.M
           }),
+          leadingAccessory: {
+            type: "image",
+            src: e
+          },
           action: () => g(t.value, t.name),
           disabled: a
         }, t.value)

@@ -1,6 +1,7 @@
 /** Chunk was on 94682 **/
 /** chunk id: 460442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
+  B: () => f,
   g: () => d
 });
 var Chunk627968 = require("./627968.js");
@@ -36,6 +37,20 @@ function d(e) {
       height: 38,
       className: i()(c.x6, c.AI),
       "aria-label": s.intl.string(s.t.L5Pt9L)
+    })
+  })
+}
+
+function f(e) {
+  let {
+    count: t
+  } = e;
+  return (0, r.jsx)(u, {
+    style: c.RF,
+    icon: (0, r.jsxs)(a.EYj, {
+      variant: "text-sm/medium",
+      color: "always-white",
+      children: ["+", t + 1]
     })
   })
 }

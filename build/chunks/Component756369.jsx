@@ -322,20 +322,18 @@ class e7 extends(r = Chunk64700.Component) {
       disableReactionReads: n,
       disableReactionUpdates: r,
       isLurking: l,
-      isGuest: a,
-      isPendingMember: s,
-      channel: o,
-      forceAddReactions: c
+      isPendingMember: a,
+      channel: s,
+      forceAddReactions: o
     } = this.props;
     return n ? null : (0, i.jsx)(eV.A, {
       message: e,
-      channel: o,
+      channel: s,
       disableReactionCreates: t,
       disableReactionUpdates: r,
       isLurking: l,
-      isGuest: a,
-      isPendingMember: s,
-      forceAddReactions: c,
+      isPendingMember: a,
+      forceAddReactions: o,
       useChatFontScaling: true
     })
   }
@@ -741,51 +739,49 @@ function e9(e) {
     message: r,
     renderSuppressEmbeds: l,
     isMessageSnapshot: a
-  } = e, s = (0, u.bG)([ep.default], () => ep.default.getId()), o = eu.X6.useSetting(), d = eu.hD.useSetting(), p = eu.rs.useSetting() && !(0, eS.A)(e.message), m = eu.jW.useSetting() && false !== e.renderReactions, f = eu.kt.useSetting(), g = (0, u.bG)([ef.A], () => null == n.guild_id || ef.A.canChatInGuild(n.guild_id), [n]), h = (0, u.bG)([z.A], () => null != n.guild_id && z.A.isLurking(n.guild_id), [n]), _ = (0, u.bG)([em.Ay], () => em.Ay.isCurrentUserGuest(n.guild_id), [n]), b = (0, u.bG)([em.Ay, eh.default], () => {
+  } = e, s = (0, u.bG)([ep.default], () => ep.default.getId()), o = eu.X6.useSetting(), d = eu.hD.useSetting(), p = eu.rs.useSetting() && !(0, eS.A)(e.message), m = eu.jW.useSetting() && false !== e.renderReactions, f = eu.kt.useSetting(), g = (0, u.bG)([ef.A], () => null == n.guild_id || ef.A.canChatInGuild(n.guild_id), [n]), h = (0, u.bG)([z.A], () => null != n.guild_id && z.A.isLurking(n.guild_id), [n]), _ = (0, u.bG)([em.Ay, eh.default], () => {
     var e, t;
     let r = eh.default.getCurrentUser();
     return null != (e = null != n.guild_id && null != r ? null == (t = em.Ay.getMember(n.guild_id, r.id)) ? true : t.isPending : null) && e
   }), {
-    canAddNewReactions: A,
-    canManageMessages: y
+    canAddNewReactions: b,
+    canManageMessages: A
   } = (0, u.cf)([eg.A], () => ({
     canAddNewReactions: g && eg.A.can(eY.xBc.ADD_REACTIONS, n),
     canManageMessages: eg.A.can(eY.xBc.MANAGE_MESSAGES, n)
-  }), [g, n]), v = (0, M.ix)(n.guild_id), [, x] = (0, k.c)(n.guild_id), O = (0, eo.Id)(n), E = (s === r.author.id || y) && r.author.id !== eY.oIV && false !== l && !(0, c.Lt)(r.flags, eY.pr7.EPHEMERAL) && O && (0, eI.A)(r) >= 1, j = s === r.author.id && O && !a, C = r.author.id === s, I = r.isFirstMessageInForumPost(n), T = (0, eT.A)({
+  }), [g, n]), y = (0, M.ix)(n.guild_id), [, v] = (0, k.c)(n.guild_id), x = (0, eo.Id)(n), O = (s === r.author.id || A) && r.author.id !== eY.oIV && false !== l && !(0, c.Lt)(r.flags, eY.pr7.EPHEMERAL) && x && (0, eI.A)(r) >= 1, E = s === r.author.id && x && !a, j = r.author.id === s, C = r.isFirstMessageInForumPost(n), I = (0, eT.A)({
     channel: n,
     canChat: g,
     renderReactions: m,
-    canAddNewReactions: A,
+    canAddNewReactions: b,
     isLurking: h,
-    isGuest: _,
-    communicationDisabled: x,
-    isActiveChannelOrUnarchivableThread: O,
-    isAutomodQuarantined: v
-  }), P = (0, W.S)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, J.A)(null == n ? true : n.id), R = (0, X.A)(r), D = (0, N.P)(r), L = (0, eC.z)(n), U = (0, eO._f)(r.id, r.channel_id), G = (0, S._R)();
+    communicationDisabled: v,
+    isActiveChannelOrUnarchivableThread: x,
+    isAutomodQuarantined: y
+  }), T = (0, W.S)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, J.A)(null == n ? true : n.id), w = (0, X.A)(r), R = (0, N.P)(r), D = (0, eC.z)(n), L = (0, eO._f)(r.id, r.channel_id), U = (0, S._R)();
   return (0, i.jsx)(e7, eX(eZ(eX(eZ({
-    canSuppressEmbeds: E,
-    canDeleteAttachments: j
-  }, T), {
-    disableReactionReads: !!I || T.disableReactionReads
+    canSuppressEmbeds: O,
+    canDeleteAttachments: E
+  }, I), {
+    disableReactionReads: !!C || I.disableReactionReads
   }), e), {
-    hasSpoilerEmbeds: e.hasSpoilerEmbeds && L,
+    hasSpoilerEmbeds: e.hasSpoilerEmbeds && D,
     hasBailedAst: e.hasBailedAst,
     isLurking: h && g,
-    isGuest: _ && g,
-    isPendingMember: b && g,
-    isCurrentUser: C,
+    isPendingMember: _ && g,
+    isCurrentUser: j,
     inlineAttachmentMedia: o,
     inlineEmbedMedia: d,
     renderEmbeds: p,
     gifAutoPlay: f,
     canRenderReferralEmbed: n.isDM(),
-    poll: R,
-    showListsAndHeaders: P,
-    showMaskedLinks: P,
-    shouldHideMediaOptions: w,
-    enabledContentHarmTypeFlags: D,
-    ctaButtonType: U,
-    shouldAgeVerify: G
+    poll: w,
+    showListsAndHeaders: T,
+    showMaskedLinks: T,
+    shouldHideMediaOptions: P,
+    enabledContentHarmTypeFlags: R,
+    ctaButtonType: L,
+    shouldAgeVerify: U
   }))
 }
 eQ(e7, "defaultProps", {

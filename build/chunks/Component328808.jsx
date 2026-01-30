@@ -107,7 +107,7 @@ function N(e) {
     label: E.intl.string(E.t.DQ797g)
   }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, h.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, p.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = j.SY.useSetting(), G = (0, a.bG)([x.A], () => !s().isEmpty(x.A.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.W1t, {
-    "data-menu-needs-review": true,
+    "data-menu-migrated": true,
     navId: "thread-context",
     onClose: n,
     "aria-label": E.intl.string(E.t["1NBjqb"]),

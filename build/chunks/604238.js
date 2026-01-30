@@ -7,12 +7,12 @@ require.d(exports, {
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
-  Chunk408238 = require("./408238.jsx"),
   Chunk528226 = require("./528226.jsx"),
   Chunk304973 = require("./304973.jsx"),
   Chunk18769 = require("./18769.jsx"),
   Chunk596395 = require("./596395.jsx"),
   Chunk245595 = require("./245595.jsx"),
+  Chunk124300 = require("./124300.jsx"),
   Chunk540391 = require("./540391.jsx"),
   Chunk219561 = require("./219561.js"),
   Chunk244190 = require("./244190.jsx");
@@ -25,7 +25,7 @@ let _ = {
       return null
     },
     PromotionalHero: () => null,
-    InteractiveHScroll: Chunk408238.A,
+    InteractiveHScroll: Chunk124300.A,
     Grid: Chunk245595.A,
     Section: Chunk540391.A,
     Card: Chunk596395.A,

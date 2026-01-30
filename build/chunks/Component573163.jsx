@@ -69,27 +69,26 @@ class v extends Chunk64700.PureComponent {
       disableReactionCreates: t,
       disableReactionUpdates: n,
       isLurking: i,
-      isGuest: l,
-      isPendingMember: c,
-      isForumToolbar: _,
-      channel: b,
-      className: A,
-      forceAddReactions: y,
-      reactionClassName: v,
-      useChatFontScaling: x,
-      forceHideReactionCreates: O,
-      remainingReactions: E,
-      combinedReactions: j,
-      visibleReactionsCount: C
+      isPendingMember: l,
+      isForumToolbar: c,
+      channel: _,
+      className: b,
+      forceAddReactions: A,
+      reactionClassName: y,
+      useChatFontScaling: v,
+      forceHideReactionCreates: x,
+      remainingReactions: O,
+      combinedReactions: E,
+      visibleReactionsCount: j
     } = this.props, {
-      disableTransitionAppear: I
-    } = this.state, S = x ? h : g, T = C > 0;
-    if (!T && !y) return null;
-    let N = y || T;
+      disableTransitionAppear: C
+    } = this.state, I = v ? h : g, S = j > 0;
+    if (!S && !A) return null;
+    let T = A || S;
     return (0, r.jsxs)(s.F, {
       component: "div",
-      className: a()(S.reactions, A),
-      transitionAppear: !I,
+      className: a()(I.reactions, b),
+      transitionAppear: !C,
       role: "group",
       transitionLeave: false,
       id: (0, d.JH)(e),
@@ -100,34 +99,33 @@ class v extends Chunk64700.PureComponent {
         isHovered: false
       }),
       children: [(0, r.jsx)(p.A, {
-        reactions: j,
+        reactions: E,
         message: e,
         readOnly: n,
         isLurking: i,
-        isGuest: l,
-        isPendingMember: c,
-        isForumToolbar: _,
-        useChatFontScaling: x,
-        className: v
-      }), E > 0 && (0, r.jsx)(o.DUT, {
+        isPendingMember: l,
+        isForumToolbar: c,
+        useChatFontScaling: v,
+        className: y
+      }), O > 0 && (0, r.jsx)(o.DUT, {
         onClick: t => {
-          t.stopPropagation(), (0, m.$l)(b, e)
+          t.stopPropagation(), (0, m.$l)(_, e)
         },
-        className: a()(S.reaction, v, S.remainingReactions),
+        className: a()(I.reaction, y, I.remainingReactions),
         "aria-label": f.intl.string(f.t.lfIHs4),
         children: (0, r.jsxs)(o.Text, {
-          className: S.reactionInner,
+          className: I.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", E]
+          children: ["+", O]
         })
-      }), !t && !O && (0, r.jsx)(u.t, {
-        tabIndex: N || this.state.isHovered ? 0 : false,
+      }), !t && !x && (0, r.jsx)(u.t, {
+        tabIndex: T || this.state.isHovered ? 0 : false,
         message: e,
-        channel: b,
-        useChatFontScaling: x,
+        channel: _,
+        useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: a()({
-          [S.forceShow]: N
+          [I.forceShow]: T
         })
       })]
     })

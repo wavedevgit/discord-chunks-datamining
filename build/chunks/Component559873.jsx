@@ -121,6 +121,7 @@ function C(e) {
       onClick: e => e.stopPropagation(),
       returnRef: y,
       children: (0, r.jsx)(c, {
+        "data-menu-migrated": true,
         renderPopoutProps: e,
         channel: t,
         message: n

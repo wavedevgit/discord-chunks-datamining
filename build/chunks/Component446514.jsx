@@ -83,7 +83,7 @@ function j(t) {
       }
     });
   return (0, n.jsxs)(c.W1t, {
-    "data-menu-needs-migration": true,
+    "data-menu-migrated": true,
     navId: "textarea-context",
     onClose: V,
     "aria-label": T.intl.string(T.t.NWlDSI),

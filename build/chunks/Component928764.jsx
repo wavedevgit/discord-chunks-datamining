@@ -94,9 +94,8 @@ function F(e) {
     disableReactionUpdates: J,
     disableReactionCreates: Q,
     isLurking: Z,
-    isGuest: $,
-    isPendingMember: ee
-  } = (0, A.A)(z), et = (0, E.W1)(z), en = (0, a.bG)([T.A], () => T.A.getChannel(o)), er = (0, R.Ck)(en), el = (0, a.bG)([f.A], () => f.A.shouldDisplayPrompt(t) && true === n, [t, n]), ei = l.useCallback(e => {
+    isPendingMember: $
+  } = (0, A.A)(z), ee = (0, E.W1)(z), et = (0, a.bG)([T.A], () => T.A.getChannel(o)), en = (0, R.Ck)(et), er = (0, a.bG)([f.A], () => f.A.shouldDisplayPrompt(t) && true === n, [t, n]), el = l.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -107,34 +106,34 @@ function F(e) {
   l.useLayoutEffect(() => {
     let e = x.current;
     if (null == e || !n) return;
-    let t = new IntersectionObserver(ei, {
+    let t = new IntersectionObserver(el, {
       threshold: 1
     });
     return t.observe(e), () => {
       t.disconnect()
     }
   });
-  let [es, ea] = l.useState(true);
+  let [ei, es] = l.useState(true);
   if (l.useEffect(() => {
-      null == v || (k(Math.floor((v - 280) / 58)), ea(false))
+      null == v || (k(Math.floor((v - 280) / 58)), es(false))
     }, [v]), null == z || null == q) return null;
-  let eo = q.reactions.length > 0,
-    ec = () => {
+  let ea = q.reactions.length > 0,
+    eo = () => {
       (0, L.jC)({
         postId: z.id,
         location: {
           section: M.JJy.CHANNEL_HEADER
         }
-      }), (0, w.C)((0, P.af)(z, en), () => W(true))
+      }), (0, w.C)((0, P.af)(z, et), () => W(true))
     },
-    eu = X ? u.A9s : u.XFE;
+    ec = X ? u.A9s : u.XFE;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()(U.kL, {
         [U.wx]: F
       }),
       ref: x,
-      children: [et ? (0, r.jsx)("div", {
+      children: [ee ? (0, r.jsx)("div", {
         className: U.kX,
         children: (0, r.jsx)(S.A, {
           message: q,
@@ -142,18 +141,17 @@ function F(e) {
         })
       }) : (0, r.jsxs)("div", {
         className: s()(U.hY, {
-          [U.Lq]: es
+          [U.Lq]: ei
         }),
-        children: [!eo && !Q && null != er && (0, r.jsx)("div", {
+        children: [!ea && !Q && null != en && (0, r.jsx)("div", {
           className: V.reactions,
           children: (0, r.jsx)(j.qT, {
             message: q,
             readOnly: false,
             useChatFontScaling: false,
             isLurking: Z,
-            isGuest: $,
-            isPendingMember: ee,
-            emoji: er,
+            isPendingMember: $,
+            emoji: en,
             type: b.v.NORMAL,
             hideCount: true,
             count: 0,
@@ -168,8 +166,7 @@ function F(e) {
           disableReactionCreates: true,
           disableReactionUpdates: J,
           isLurking: Z,
-          isGuest: $,
-          isPendingMember: ee,
+          isPendingMember: $,
           maxReactions: C,
           className: U.Br,
           useChatFontScaling: false,
@@ -180,19 +177,19 @@ function F(e) {
           channel: z,
           useChatFontScaling: false,
           className: s()(B.secondary, U.vU, {
-            [U.w$]: !eo
+            [U.w$]: !ea
           }),
           isForumToolbar: true,
-          children: !eo && G.intl.string(G.t.xpOyTO)
+          children: !ea && G.intl.string(G.t.xpOyTO)
         })]
       }), (0, r.jsxs)("div", {
         className: U.Uo,
-        children: [et ? (0, r.jsx)(H, {
+        children: [ee ? (0, r.jsx)(H, {
           channel: z
         }) : !Z && (0, r.jsx)(c.m, {
           text: G.intl.string(G.t.F7oeDv),
           children: (0, r.jsx)(u.Button, {
-            icon: eu,
+            icon: ec,
             size: "sm",
             variant: "secondary",
             text: X ? G.intl.string(G.t["7OkUzs"]) : G.intl.string(G.t["3aOv+h"]),
@@ -206,13 +203,13 @@ function F(e) {
             icon: u.A9s,
             size: "sm",
             variant: "secondary",
-            onClick: ec,
+            onClick: eo,
             text: G.intl.string(G.t.t5VZ88)
           }) : (0, r.jsx)(u.K0, {
             icon: u.qYV,
             size: "sm",
             variant: "secondary",
-            onClick: ec,
+            onClick: eo,
             "aria-label": G.intl.string(G.t.WqhZss)
           })
         }), !n && (0, r.jsx)(c.m, {
@@ -233,7 +230,7 @@ function F(e) {
           })
         })]
       })]
-    }), el && (0, r.jsx)(m.A, {
+    }), er && (0, r.jsx)(m.A, {
       threadId: t
     }), (0, r.jsx)(O.A, {
       channel: z,

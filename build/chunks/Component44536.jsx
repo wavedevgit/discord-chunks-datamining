@@ -31,12 +31,12 @@ let T = (0, Chunk358367.A)(function(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, a = (0, d.A)(t), o = (0, A.A)(t), T = (0, _.A)(t), w = (0, u.A)(t), S = (0, v.A)(t), R = (0, f.A)(t), N = (0, c.A)({
+  } = e, a = (0, d.A)(t), o = (0, A.A)(t), T = (0, _.A)(t), S = (0, u.A)(t), w = (0, v.A)(t), R = (0, f.A)(t), N = (0, c.A)({
     id: t.id,
     label: j.intl.string(j.t.DQ797g)
   }), x = (0, p.A)(t, "Context Menu"), G = (0, h.A)(t), D = (0, O.A)(t), I = (0, C.A)(t), P = (0, y.A)(t), U = (0, m.A)(t.id), M = (0, b.A)(t), L = (0, E.A)(t), F = (0, s.m)(t), Y = (0, s.y)(t), k = (0, g.A)(t);
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-needs-review": true,
+    "data-menu-migrated": true,
     navId: "thread-context",
     onClose: l.Z_,
     "aria-label": j.intl.string(j.t["1NBjqb"]),
@@ -44,7 +44,7 @@ let T = (0, Chunk358367.A)(function(e) {
     children: [(0, r.jsxs)(i.rXV, {
       children: [o, F]
     }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.rXV, {
-      children: [x, M, w, S, P, U, a]
+      children: [x, M, S, w, P, U, a]
     }, "thread-actions"), (0, r.jsxs)(i.rXV, {
       children: [T, I]
     }, "notifications"), (0, r.jsxs)(i.rXV, {

@@ -297,7 +297,7 @@ function el(e) {
                           size: "sm",
                           "aria-label": ee.intl.string(ee.t["3Uj+2p"]),
                           children: (0, a.jsx)(c.W1t, {
-                            "data-menu-needs-review": true,
+                            "data-menu-migrated": true,
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
                             "aria-label": ee.intl.string(ee.t.E13trI),

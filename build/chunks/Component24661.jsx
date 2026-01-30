@@ -17,9 +17,9 @@ var Chunk311907 = require("./311907.js"),
 function A(n, t, A) {
   let {
     canManageGuildEvent: b
-  } = (0, a.nr)(null != A ? A : t), g = (0, l.bG)([c.Ay], () => c.Ay.isActive(n)), h = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(n), [n]), v = b(h);
-  if (null == n || !v || !g || (null == h ? true : h.entity_type) === d.Ps.EXTERNAL) return null;
-  let j = () => {
+  } = (0, a.nr)(null != A ? A : t), g = (0, l.bG)([c.Ay], () => c.Ay.isActive(n)), h = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(n), [n]), j = b(h);
+  if (null == n || !j || !g || (null == h ? true : h.entity_type) === d.Ps.EXTERNAL) return null;
+  let v = () => {
     (null == A ? true : A.isGuildStageVoice()) ? (0, s.OE)(A) : null != n && o.A.endEvent(n, t.id), (0, r.s7G)()
   };
   return (0, i.jsx)(r.Drp, {
@@ -45,7 +45,7 @@ function A(n, t, A) {
               variant: "secondary",
               text: u.intl.string(u.t["ETE/oC"])
             }, {
-              onClick: j,
+              onClick: v,
               variant: "critical-primary",
               text: u.intl.string(u.t.mjB9pd)
             }]

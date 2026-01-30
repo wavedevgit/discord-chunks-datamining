@@ -105,7 +105,7 @@ let Y = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     channel: n
   }), eS = n.isManaged(), eM = t.isNonUserBot();
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-needs-review": true,
+    "data-menu-migrated": true,
     navId: "user-context",
     onClose: l.Z_,
     "aria-label": B.intl.string(B.t.liqwPJ),

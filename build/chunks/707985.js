@@ -11,14 +11,13 @@ function i(e) {
     renderReactions: i,
     canAddNewReactions: l,
     isLurking: r,
-    isGuest: o,
-    communicationDisabled: a,
-    isActiveChannelOrUnarchivableThread: s,
-    isAutomodQuarantined: u
-  } = e, c = t.isPrivate(), d = t.isSystemDM(), p = (n || c) && s;
+    communicationDisabled: o,
+    isActiveChannelOrUnarchivableThread: a,
+    isAutomodQuarantined: s
+  } = e, u = t.isPrivate(), c = t.isSystemDM(), d = (n || u) && a;
   return {
     disableReactionReads: !i,
-    disableReactionCreates: r || o || !p || !((true === l || c) && !d && s),
-    disableReactionUpdates: r || o || !p || true === a || true === u
+    disableReactionCreates: r || !d || !((true === l || u) && !c && a),
+    disableReactionUpdates: r || !d || true === o || true === s
   }
 }

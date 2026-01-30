@@ -34,12 +34,12 @@ function a(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["onChange", "onFileSizeError", "multiple", "disabled", "maxFileSizeBytes", "filters"]), y = i.useRef(null);
+  }(e, ["onChange", "onFileSizeError", "multiple", "disabled", "maxFileSizeBytes", "filters"]), A = i.useRef(null);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)("div", {
       className: o.l,
       children: (0, r.jsx)(s.Ay, {
-        ref: y,
+        ref: A,
         onChange: a,
         onFileSizeError: u,
         multiple: c,
@@ -70,7 +70,7 @@ function a(e) {
       disabled: d,
       onClick: () => {
         var e;
-        null == (e = y.current) || e.activateUploadDialogue()
+        null == (e = A.current) || e.activateUploadDialogue()
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

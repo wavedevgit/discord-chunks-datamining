@@ -2,7 +2,7 @@
 /** chunk id: 176019, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => k,
-  waitForCSSLoad: () => L
+  waitForCSSLoad: () => x
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -31,10 +31,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk644434 = require("./644434.js"),
   Chunk652215 = require("./652215.js");
 require("./703552.js"), require("./921955.js");
-let x = !Chunk723702.isPlatformEmbedded && false,
+let L = !Chunk723702.isPlatformEmbedded && false,
   S = new Chunk626584.A("AppOverlay");
 
-function L(e, t) {
+function x(e, t) {
   return new Promise((n, r) => {
     let l = Date.now();
     t.current = setInterval(() => {
@@ -96,8 +96,8 @@ let k = Chunk64700.memo(function(e) {
     windowKey: c
   } = e;
   t = (0, a.bG)([u.A], () => u.A.getWindow(c)), (0, o.Ay)(() => {
-    if (null != t) return x && (t.document.hasFocus() && i.A.setFocusedPID(h.DEV_PID, null), t.addEventListener("focus", j), t.addEventListener("blur", D)), () => {
-      x && (t.removeEventListener("focus", j), t.removeEventListener("blur", D))
+    if (null != t) return L && (t.document.hasFocus() && i.A.setFocusedPID(h.DEV_PID, null), t.addEventListener("focus", j), t.addEventListener("blur", D)), () => {
+      L && (t.removeEventListener("focus", j), t.removeEventListener("blur", D))
     }
   });
   let b = function(e, t) {
@@ -117,18 +117,18 @@ let k = Chunk64700.memo(function(e) {
             unpinned_widget_types: _.A.getAllUnpinnedPinnedWidgets(t)
           }), (0, v.Fd)()
         }, [t]),
-        x = l.useRef(false),
+        L = l.useRef(false),
         j = l.useRef(null),
         D = l.useCallback(async (e, t) => {
           try {
-            if (await L(e, j), x.current) return;
+            if (await x(e, j), L.current) return;
             (0, N.A)("cssLoaded", true)
           } catch (e) {
             S.error("Timed out waiting for CSS to load", e), i.A.setOverlayCrashed(O.A.getTargetPID(), e), (0, N.A)("errorMessage", "CSS failed load");
             return
           }
           try {
-            if (await w(e, t), x.current) return;
+            if (await w(e, t), L.current) return;
             (0, v.Mq)()
           } catch (e) {
             i.A.setOverlayCrashed(O.A.getTargetPID(), e), (0, N.A)("errorMessage", "showInactive failed");
@@ -136,7 +136,7 @@ let k = Chunk64700.memo(function(e) {
           }
           await new Promise(t => {
             e.setTimeout(() => t(), 100)
-          }), x.current || (y(true), T())
+          }), L.current || (y(true), T())
         }, [T]),
         k = l.useRef(false);
       return l.useEffect(() => {
@@ -149,7 +149,7 @@ let k = Chunk64700.memo(function(e) {
           C.current = true, (0, N.A)("reactInitializationStarted", true), D(c, e)
         }
       }, [D, b, e, c, s]), (0, o.l0)(() => {
-        clearInterval(j.current), x.current = true
+        clearInterval(j.current), L.current = true
       }), n = (0, a.bG)([A.A], () => A.A.windowSize(null != c ? (0, m.Q2)(c) : true)), r = (0, a.bG)([O.A], () => O.A.getFocusedWindowHandle()), l.useEffect(() => {
         let e, t;
         if (null != c && g && c.innerHeight === n.height && c.innerWidth === n.width) return e = c.requestAnimationFrame(() => {

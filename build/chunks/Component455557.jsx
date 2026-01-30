@@ -1,5 +1,5 @@
 /** Chunk was on 10758 **/
-/** chunk id: 455557, original params: e,t,n (module,exports,require) **/
+/** chunk id: 455557, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -17,21 +17,21 @@ var Chunk397927 = require("./397927.js"),
 function p(e) {
   let {
     guild: t,
-    onSelect: n
-  } = e, p = c.Ay.getDefaultChannel(t.id, true, u.xBc.CREATE_INSTANT_INVITE), b = (0, a.A)(t.id), y = (0, o.A)(t), O = (0, s.A)({
+    onSelect: r
+  } = e, p = c.Ay.getDefaultChannel(t.id, true, u.xBc.CREATE_INSTANT_INVITE), b = (0, o.A)(t.id), y = (0, a.A)(t), O = (0, s.A)({
     guild: t,
     source: u.PE1.GUILD_CONTEXT_MENU,
     channel: p
   });
-  return (0, r.jsxs)(i.W1t, {
-    "data-menu-needs-migration": true,
+  return (0, n.jsxs)(i.W1t, {
+    "data-menu-migrated": true,
     navId: "guild-context",
     "aria-label": d.intl.string(d.t.HpQykc),
     onClose: l.Z_,
-    onSelect: n,
-    children: [(0, r.jsx)(i.rXV, {
+    onSelect: r,
+    children: [(0, n.jsx)(i.rXV, {
       children: b
-    }), (0, r.jsxs)(i.rXV, {
+    }), (0, n.jsxs)(i.rXV, {
       children: [y, O]
     })]
   })

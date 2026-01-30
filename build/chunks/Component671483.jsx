@@ -19,16 +19,16 @@ var Chunk311907 = require("./311907.js"),
 function g(n, t) {
   let g = (0, l.bG)([d.A], () => d.A.can(A.xBc.MANAGE_CHANNELS, t)),
     h = (0, s.Ay)(n),
-    v = (0, o.b)(n),
-    j = (0, l.bG)([u.A], () => u.A.getChannelStatus(n)),
-    p = null != j && j.length > 0;
-  return n.isGuildVoice() && (g || h) ? !v && g && p ? (0, i.jsx)(r.Drp, {
+    j = (0, o.b)(n),
+    v = (0, l.bG)([u.A], () => u.A.getChannelStatus(n)),
+    p = null != v && v.length > 0;
+  return n.isGuildVoice() && (g || h) ? !j && g && p ? (0, i.jsx)(r.Drp, {
     id: "clear-status",
     label: b.intl.string(b.t["22CYiZ"]),
     action: () => {
       a.Ay.updateVoiceChannelStatus(n.id, "")
     }
-  }) : v && h ? (0, i.jsx)(r.Drp, {
+  }) : j && h ? (0, i.jsx)(r.Drp, {
     id: "set-status",
     label: b.intl.string(b.t.RBd5PW),
     action: () => {

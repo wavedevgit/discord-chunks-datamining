@@ -2,16 +2,15 @@
 /** chunk id: 987274, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I7: () => c
+  I7: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk706276 = require("./706276.jsx"),
   Chunk808411 = require("./808411.jsx"),
-  Chunk300235 = require("./300235.jsx"),
   Chunk919470 = require("./919470.jsx"),
   Chunk985018 = require("./985018.jsx");
-let c = {
+let l = {
   title: "Nitro Components",
   stories: [{
     name: "Cancellation Flow",
@@ -22,11 +21,6 @@ let c = {
     name: "Expressive Progress",
     component: Chunk808411.A,
     id: "expressive-progress",
-    controls: {}
-  }, {
-    name: "Interactive H Scroll",
-    component: Chunk300235.A,
-    id: "interactive-h-scroll",
     controls: {}
   }, {
     name: "Premium Tooltip",

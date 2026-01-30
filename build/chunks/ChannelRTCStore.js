@@ -202,8 +202,13 @@ function eo(e) {
   let {
     channelId: t,
     currentVoiceChannelId: n
-  } = e;
-  return null != t ? delete k[t] : null != n && (delete B[n], delete Y[n], $(n)), ea()
+  } = e, r = false;
+  if (null != t ? delete k[t] : null != n && (delete B[n], delete Y[n], $(n)), t !== n && null != n) {
+    let e = K(n);
+    e.guildRingingUsers.forEach(t => e.updateGuildRingingUsers(t, false)), r = Z(e => e.rebuild(), [n])
+  }
+  let i = ea();
+  return r || i
 }
 
 function es(e) {

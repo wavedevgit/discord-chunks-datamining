@@ -54,7 +54,6 @@ function g(e) {
     renderReactions: true,
     canAddNewReactions: v,
     isLurking: p,
-    isGuest: f,
     communicationDisabled: A,
     isActiveChannelOrUnarchivableThread: O,
     isAutomodQuarantined: b

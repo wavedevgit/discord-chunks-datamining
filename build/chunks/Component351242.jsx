@@ -15,7 +15,7 @@ let o = e => {
     onClose: o
   } = e;
   return (0, r.jsxs)(i.W1t, {
-    "data-menu-needs-review": true,
+    "data-menu-migrated": true,
     onClose: o,
     onSelect: true,
     navId: "user-settings-change-avatar",
