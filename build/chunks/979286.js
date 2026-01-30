@@ -105,7 +105,7 @@ let N = e => {
   R = e => {
     s.h.dispatch({
       type: "COLLECTIBLES_PRODUCT_DETAILS_OPEN",
-      item: e
+      skuId: e
     })
   },
   P = (e, t) => !!e == !!t,

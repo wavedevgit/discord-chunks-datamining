@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => P
-}), require("./747238.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
+}), require("./747238.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -235,50 +235,62 @@ function C(e) {
   let {
     wordWrap: t,
     setWordWrap: n,
-    url: a
-  } = e, o = i.useRef(null);
-  return (0, r.jsx)(c.YNO, {
-    targetElementRef: o,
-    position: "top",
-    align: "left",
-    renderPopout: e => {
-      let {
-        closePopout: i
-      } = e;
-      return (0, r.jsx)(c.W1t, {
-        navId: "plaintext-preview-overflow-menu",
-        onClose: i,
-        onSelect: () => {},
-        "aria-label": _.intl.string(_.t.PdRCRg),
-        children: (0, r.jsxs)(c.rXV, {
-          children: [(0, r.jsx)(c.Drp, {
-            id: "download",
-            label: _.intl.string(_.t["1WjMbC"]),
-            icon: c.s3U,
-            action: () => {
-              let e = document.createElement("a");
-              e.href = a, e.click(), URL.revokeObjectURL(a), i()
-            }
-          }), (0, r.jsx)(c.sLh, {
-            id: "word-wrap",
-            label: _.intl.string(_.t.AMKNT1),
-            checked: t,
-            action: () => n(!t)
-          })]
+    url: a,
+    fileName: o
+  } = e, s = i.useRef(null), u = i.useRef(null);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.YNO, {
+      targetElementRef: s,
+      position: "top",
+      align: "left",
+      renderPopout: e => {
+        let {
+          closePopout: i
+        } = e;
+        return (0, r.jsx)(c.W1t, {
+          navId: "plaintext-preview-overflow-menu",
+          onClose: i,
+          onSelect: () => {},
+          "aria-label": _.intl.string(_.t.PdRCRg),
+          children: (0, r.jsxs)(c.rXV, {
+            children: [(0, r.jsx)(c.Drp, {
+              id: "download",
+              label: _.intl.string(_.t["1WjMbC"]),
+              icon: c.s3U,
+              action: () => {
+                var e;
+                null == (e = u.current) || e.click(), i()
+              }
+            }), (0, r.jsx)(c.sLh, {
+              id: "word-wrap",
+              label: _.intl.string(_.t.AMKNT1),
+              checked: t,
+              action: () => n(!t)
+            })]
+          })
         })
+      },
+      children: e => (0, r.jsx)(l.m, {
+        text: _.intl.string(_.t["UKOtz+"]),
+        children: (0, r.jsx)(c.DUT, b(E({}, e), {
+          className: h.IQ,
+          children: (0, r.jsx)(c.jNK, {
+            ref: s,
+            size: "sm",
+            color: "currentColor"
+          })
+        }))
       })
-    },
-    children: e => (0, r.jsx)(l.m, {
-      text: _.intl.string(_.t["UKOtz+"]),
-      children: (0, r.jsx)(c.DUT, b(E({}, e), {
-        className: h.IQ,
-        children: (0, r.jsx)(c.jNK, {
-          ref: o,
-          size: "sm",
-          color: "currentColor"
-        })
-      }))
-    })
+    }), (0, r.jsx)(c.MzZ, {
+      ref: u,
+      href: a,
+      download: o,
+      className: h.op,
+      children: (0, r.jsx)(c.s3U, {
+        size: "sm",
+        color: "currentColor"
+      })
+    })]
   })
 }
 
@@ -363,7 +375,8 @@ function w(e) {
       }) : null, (0, r.jsx)(C, {
         wordWrap: g,
         setWordWrap: E,
-        url: n
+        url: n,
+        fileName: i
       })]
     })]
   })
@@ -415,7 +428,8 @@ function R(e) {
         }), (0, r.jsx)(C, {
           wordWrap: E,
           setWordWrap: y,
-          url: t
+          url: t,
+          fileName: n
         })]
       })]
     })

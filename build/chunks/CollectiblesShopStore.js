@@ -27,7 +27,7 @@ let l = [],
     c = l, u = null
   },
   p = e => {
-    e.item.skuId === r && (r = true)
+    e.skuId === r && (r = true)
   };
 class _ extends(i = Chunk311907.Ay.Store) {
   get analyticsLocations() {
