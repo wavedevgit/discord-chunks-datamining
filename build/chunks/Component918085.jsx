@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 918085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -39,7 +39,7 @@ class v extends(r = Chunk64700.PureComponent) {
       renderCustomTitle: a,
       renderCustomMedia: s,
       isEmbed: o
-    } = this.props, c = o ? h.ug : _.A;
+    } = this.props, c = o ? _.ug : h.A;
     return (0, i.jsx)(c, {
       className: r,
       renderMedia: null != s ? s : this.renderMedia,

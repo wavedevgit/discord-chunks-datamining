@@ -1,31 +1,31 @@
-/** Chunk was on 92917 **/
-/** chunk id: 279547, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 66009 **/
+/** chunk id: 279547, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  d: () => l
+  d: () => a
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk198982 = require("./198982.js");
 
-function l(e) {
+function a(t) {
   let {
-    onError: t,
+    onError: e,
     onSuccess: n,
-    report: l
-  } = e, [a, s] = r.useState(false);
+    report: a
+  } = t, [r, o] = i.useState(false);
   return {
-    reportFalsePositive: r.useCallback(async () => {
-      if (!a) {
-        s(true);
+    reportFalsePositive: i.useCallback(async () => {
+      if (!r) {
+        o(true);
         try {
-          await l(), null == n || n()
+          await a(), null == n || n()
         } catch (n) {
-          let e = new i.LG(n);
-          null == t || t(e)
+          let t = new l.LG(n);
+          null == e || e(t)
         } finally {
-          s(false)
+          o(false)
         }
       }
-    }, [a, t, n, l]),
-    isReportFalsePositiveLoading: a
+    }, [r, e, n, a]),
+    isReportFalsePositiveLoading: r
   }
 }

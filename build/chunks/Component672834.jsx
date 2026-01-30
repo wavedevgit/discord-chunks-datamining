@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 672834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => eL
@@ -115,7 +115,7 @@ function ew(e) {
   } = t, {
     guild_id: o
   } = n, c = t.getChannelId(), u = (0, l.bG)([G.A], () => G.A.getGuild(o), [o]), d = i.useCallback(() => {
-    null != u && (0, h.K)({
+    null != u && (0, _.K)({
       guildId: u.id,
       location: {
         section: eS.JJy.CHANNEL_TEXT_AREA,
@@ -239,7 +239,7 @@ let eD = Object.freeze({
       } = e, {
         id: s,
         author: o
-      } = t, u = M.default.getId(), d = t.getChannelId(), p = (0, l.bG)([k.A], () => k.A.isCallActive(d, s), [d, s]), m = (0, l.bG)([z.A], () => z.A.getVoiceState(eS.ME, u)), f = !p && null != t.call && !t.call.participants.includes(u), g = p && (null == m || m.channelId !== d), h = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), _ = (0, $.P)({
+      } = t, u = M.default.getId(), d = t.getChannelId(), p = (0, l.bG)([k.A], () => k.A.isCallActive(d, s), [d, s]), m = (0, l.bG)([z.A], () => z.A.getVoiceState(eS.ME, u)), f = !p && null != t.call && !t.call.participants.includes(u), g = p && (null == m || m.channelId !== d), _ = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), h = (0, $.P)({
         user: o,
         channelId: d,
         guildId: a.guild_id,
@@ -251,8 +251,8 @@ let eD = Object.freeze({
         message: t,
         missed: f,
         joinable: g,
-        usernameHook: _,
-        onClickJoinCall: h
+        usernameHook: h,
+        onClickJoinCall: _
       })
     },
     [Chunk652215.lAJ.CHANNEL_NAME_CHANGE]: function(e) {
@@ -383,7 +383,7 @@ let eD = Object.freeze({
         channelId: d,
         guildId: a.guild_id,
         messageId: t.id
-      }), h = i.useCallback(() => {
+      }), _ = i.useCallback(() => {
         null != m && null != f && (0, u.Nl)({
           streamType: eT.U4.GUILD,
           ownerId: o,
@@ -396,7 +396,7 @@ let eD = Object.freeze({
         compact: n,
         channel: m,
         playingActivity: p,
-        onJoinStream: h,
+        onJoinStream: _,
         usernameHook: g
       }) : null
     },
@@ -592,7 +592,7 @@ let eD = Object.freeze({
         guildId: n.guild_id,
         messageId: t.id
       });
-      return (0, r.jsx)(e_.A, {
+      return (0, r.jsx)(eh.A, {
         message: t,
         compact: i,
         usernameHook: l
@@ -611,7 +611,7 @@ let eD = Object.freeze({
         messageId: i.id
       }), d = (0, l.bG)([B.A], () => B.A.can(eS.xBc.MUTE_MEMBERS, s)), p = (0, l.bG)([P.A], () => P.A.getParticipant(s.id, i.author.id)), m = new Date(q.default.extractTimestamp(i.id)).toISOString() === new Date(null != (t = null == p || null == (n = p.voiceState) ? true : n.requestToSpeakTimestamp) ? t : 0).toISOString(), f = d && (null == p ? true : p.rtsState) === w.zF.REQUESTED_TO_SPEAK && m;
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(eh.A, {
+        children: [(0, r.jsx)(e_.A, {
           message: i,
           compact: c,
           usernameHook: u
@@ -678,7 +678,7 @@ let eD = Object.freeze({
         message: t,
         channel: n
       } = e;
-      return (0, r.jsx)(X.A, {
+      return (0, r.jsx)(Z.A, {
         message: t,
         channel: n
       })
@@ -796,7 +796,7 @@ let eD = Object.freeze({
       var o;
       return o = Error("unknown message type ".concat(t.type)), Y.A.captureException(o), new m.A("SystemMessage").error("", o), null
     }
-    return (0, r.jsx)(Z.Ay, {
+    return (0, r.jsx)(X.Ay, {
       message: t,
       content: (0, J.Ay)(t).content,
       compact: null != i && i,

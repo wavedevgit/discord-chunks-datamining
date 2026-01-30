@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 519397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -28,7 +28,7 @@ function m(e) {
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
   (0, a.E)(g, "ThreadMessageAccessoryMessage");
-  let h = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
+  let _ = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
     formatInline: true
   }).content : null, [t]);
   return (0, r.jsxs)("div", {
@@ -60,7 +60,7 @@ function m(e) {
             children: l
           }), c]
         })
-      }(t, h, m, f)
+      }(t, _, m, f)
     })]
   })
 }

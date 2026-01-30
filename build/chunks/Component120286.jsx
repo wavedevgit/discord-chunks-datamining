@@ -44,7 +44,8 @@ let g = {
         }), null != m && (0, r.jsx)(c.e, {
           endDate: m,
           size: "md",
-          className: b
+          className: b,
+          showSeconds: true
         })]
       })
     })

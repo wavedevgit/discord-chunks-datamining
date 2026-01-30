@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 59784, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -47,9 +47,9 @@ function m(e, t) {
 }
 let f = new Map,
   g = false,
-  h = false;
+  _ = false;
 
-function _(e) {
+function h(e) {
   return null != e.removed_at ? c.xI.REMOVED : null != e.accepted_at ? c.xI.ACCEPTED : c.xI.PENDING
 }
 
@@ -99,26 +99,26 @@ class y extends(r = Chunk311907.Ay.Store) {
     return g
   }
   isFetchingAllInvites() {
-    return h
+    return _
   }
 }
 d(y, "displayName", "PremiumGroupInviteStore");
 let v = new y(Chunk73153.h, {
   PREMIUM_GROUP_INVITES_FETCH_START: function() {
-    h = true
+    _ = true
   },
   PREMIUM_GROUP_INVITES_FETCH_SUCCESS: function(e) {
     let {
       invites: t
     } = e;
-    for (let e of (h = false, g = true, t)) f.set(e.id, {
-      state: _(e),
+    for (let e of (_ = false, g = true, t)) f.set(e.id, {
+      state: h(e),
       invite: e,
       errorStatus: null
     })
   },
   PREMIUM_GROUP_INVITES_FETCH_FAIL: function() {
-    h = false
+    _ = false
   },
   PREMIUM_GROUP_INVITE_FETCH_START: function(e) {
     let {
@@ -136,7 +136,7 @@ let v = new y(Chunk73153.h, {
       invite: n
     } = e;
     f.set(t, {
-      state: _(n),
+      state: h(n),
       invite: n,
       errorStatus: null
     })
@@ -224,6 +224,6 @@ let v = new y(Chunk73153.h, {
   LOAD_MESSAGES_SUCCESS: b,
   LOAD_MESSAGES_AROUND_SUCCESS: b,
   LOGOUT: function() {
-    f = new Map, g = false, h = false
+    f = new Map, g = false, _ = false
   }
 })

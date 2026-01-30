@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 67414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -51,7 +51,7 @@ function C(e) {
       }
     })
   }, [t]);
-  let D = () => t === v.np.FRIEND_ANNIVERSARY ? E.intl.string(E.t.ilhtIa) : (0, _.yE)(t);
+  let D = () => t === v.np.FRIEND_ANNIVERSARY ? E.intl.string(E.t.ilhtIa) : (0, h.yE)(t);
   return (0, r.jsx)("div", {
     ref: T,
     className: j.Qs,
@@ -78,7 +78,7 @@ function C(e) {
             variant: "text-md/medium",
             color: "text-strong",
             lineClamp: 3,
-            children: t === v.np.FRIEND_ANNIVERSARY ? E.intl.string(E.t.CeQIwZ) : (0, _.yE)(t)
+            children: t === v.np.FRIEND_ANNIVERSARY ? E.intl.string(E.t.CeQIwZ) : (0, h.yE)(t)
           }), (0, r.jsxs)("div", {
             className: j.jA,
             children: [(0, r.jsx)(s.$yI, {
@@ -90,7 +90,7 @@ function C(e) {
               lineClamp: 1,
               children: t === v.np.FRIEND_ANNIVERSARY ? E.intl.formatToPlainString(E.t.PpG27s, {
                 numberOfYears: w
-              }) : (0, _.yE)(t)
+              }) : (0, h.yE)(t)
             })]
           })]
         })]
@@ -102,7 +102,7 @@ function C(e) {
           text: E.intl.string(E.t.nffuyb),
           "aria-label": E.intl.string(E.t.nffuyb),
           onClick: e => {
-            e.stopPropagation(), h.default.track(x.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), _.default.track(x.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: "send_message",
               location_stack: P
@@ -154,7 +154,7 @@ function C(e) {
           onClick: e => {
             e.stopPropagation();
             let n = m.A.getUserAffinity(C.id);
-            h.default.track(x.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+            _.default.track(x.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
               gift_intent_type: t,
               affinity: null == n ? true : n.dmProbability,
               location_stack: P

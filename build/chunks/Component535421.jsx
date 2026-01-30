@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 535421, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -32,10 +32,10 @@ function m(e, t) {
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
   let g = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
   l()(null != g, "renderUserGuildPopout: user should never be null");
-  let h = d.default.getCurrentUser();
-  l()(null != h, "renderUserGuildPopout: currentUser should never be null");
-  let _ = u.A.getChannel(t.channel_id);
-  return l()(null != _, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.A, (m = function(e) {
+  let _ = d.default.getCurrentUser();
+  l()(null != _, "renderUserGuildPopout: currentUser should never be null");
+  let h = u.A.getChannel(t.channel_id);
+  return l()(null != h, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.A, (m = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -54,8 +54,8 @@ function m(e, t) {
     return e
   }({}, e), f = f = {
     user: g,
-    currentUser: h,
-    guildId: _.guild_id,
+    currentUser: _,
+    guildId: h.guild_id,
     channelId: t.channel_id,
     messageId: t.id
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(m, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {

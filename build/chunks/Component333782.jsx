@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 333782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -20,7 +20,7 @@ function p(e) {
     usernameHook: n,
     compact: p,
     isForumPost: m
-  } = e, f = (0, c.Ay)(t), g = n(f), h = (0, i.bG)([o.A], () => {
+  } = e, f = (0, c.Ay)(t), g = n(f), _ = (0, i.bG)([o.A], () => {
     var e, n;
     return null != (e = null == (n = o.A.getChannel(t.channel_id)) ? true : n.isGroupDM()) && e
   });
@@ -31,7 +31,7 @@ function p(e) {
       color: "currentColor"
     }),
     timestamp: t.timestamp,
-    children: h ? d.intl.format("" === t.content ? d.t.AI1ZZr : d.t.geP3rU, {
+    children: _ ? d.intl.format("" === t.content ? d.t.AI1ZZr : d.t.geP3rU, {
       username: f.nick,
       usernameHook: g,
       channelName: (0, r.jsx)(l.Text, {

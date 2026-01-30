@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 234957, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -21,11 +21,11 @@ let m = Chunk64700.memo(function(e) {
     compact: m = false
   } = e, f = p.state === s.a.LOADED ? p.message : true, g = a.m.useExperiment({
     location: "repliedMessage"
-  }).enabled, h = i.useMemo(() => (null == f ? true : f.content) != null && "" !== f.content ? (0, c.Ay)(f, {
+  }).enabled, _ = i.useMemo(() => (null == f ? true : f.content) != null && "" !== f.content ? (0, c.Ay)(f, {
     formatInline: true,
     allowGameMentions: g
   }).content : null, [f, g]), {
-    isReplyAuthorBlocked: _,
+    isReplyAuthorBlocked: h,
     isReplyAuthorIgnored: b
   } = (0, l.cf)([o.A], () => ({
     isReplyAuthorBlocked: null != f && o.A.isBlockedForMessage(f),
@@ -37,9 +37,9 @@ let m = Chunk64700.memo(function(e) {
     baseMessage: t,
     channel: n,
     referencedMessage: p,
-    content: h,
+    content: _,
     compact: m,
-    isReplyAuthorBlocked: _,
+    isReplyAuthorBlocked: h,
     isReplyAuthorIgnored: b,
     isReplySpineClickable: false,
     showReplySpine: true

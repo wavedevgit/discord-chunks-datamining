@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 120120, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -54,20 +54,20 @@ function g(e) {
   })
 }
 
-function h(e) {
+function _(e) {
   var t, i, l;
   let {
     channel: a,
     message: d,
     compact: f
-  } = e, h = (0, s.Ay)(d), _ = (0, o.P)({
+  } = e, _ = (0, s.Ay)(d), h = (0, o.P)({
     user: d.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: d.id
-  })(h), b = m.intl.format(m.t.TQs67g, {
-    username: h.nick,
-    usernameHook: _,
+  })(_), b = m.intl.format(m.t.TQs67g, {
+    username: _.nick,
+    usernameHook: h,
     productName: null != (t = null == (l = d.purchaseNotification) || null == (i = l.guild_product_purchase) ? true : i.product_name) ? t : "",
     handleProductListingClick: () => {
       var e, t, n;
@@ -81,7 +81,7 @@ function h(e) {
       compact: f,
       children: b
     }), (0, r.jsx)(g, {
-      username: h.nick,
+      username: _.nick,
       guildId: a.guild_id,
       user: d.author
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 380349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -14,7 +14,7 @@ var Chunk211401 = require("./211401.js"),
 function u(e) {
   let {
     entry: t
-  } = e, n = (0, a.h)(t.extra.application_id), u = null == n ? true : n.getIconURL(o.iu.LARGE), d = t.extra.activity_name, m = (0, s.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, f = {
+  } = e, n = (0, a.h)(t.extra.application_id), u = null == n ? true : n.getIconURL(s.iu.LARGE), d = t.extra.activity_name, p = (0, o.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, m = {
     onClick: () => {
       r.R(l.s4.TEXT, i.oU.NORMAL, {
         applicationId: t.extra.application_id
@@ -27,8 +27,8 @@ function u(e) {
   return {
     thumbnailUrl: u,
     title: d,
-    titleClickable: f,
-    thumbnailClickable: f,
-    userDescription: m
+    titleClickable: m,
+    thumbnailClickable: m,
+    userDescription: p
   }
 }

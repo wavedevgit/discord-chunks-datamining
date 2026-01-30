@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 295843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P,
@@ -206,7 +206,7 @@ let S = [Chunk67480.A, Chunk286805.A, Chunk189081.A, Chunk328968.A];
 function T(e) {
   let {
     skuId: t
-  } = e, n = y.A.get(t), r = null != n ? _.A.getApplication(n.applicationId) : null;
+  } = e, n = y.A.get(t), r = null != n ? h.A.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 484724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -32,9 +32,9 @@ function v(e) {
     guild: j,
     channel: C,
     isMember: I
-  } = (0, l.cf)([_.Ay, f.A, p.A, m.Ay, g.default], () => {
+  } = (0, l.cf)([h.Ay, f.A, p.A, m.Ay, g.default], () => {
     var e, t;
-    let r = null != (e = _.Ay.getGuildScheduledEvent(v)) ? e : true,
+    let r = null != (e = h.Ay.getGuildScheduledEvent(v)) ? e : true,
       i = f.A.getGuild(n),
       l = p.A.getChannel(null == r ? true : r.channel_id);
     return {
@@ -45,7 +45,7 @@ function v(e) {
     }
   }, [n, v]);
   return i.useEffect(() => {
-    (null == E ? true : E.id) == null && b.A.fetchGuildEvent(n, v), h.A.getGuildEventUserCounts(n, v, null != x ? [x] : []), h.A.getGuildEventsForCurrentUser(n)
+    (null == E ? true : E.id) == null && b.A.fetchGuildEvent(n, v), _.A.getGuildEventUserCounts(n, v, null != x ? [x] : []), _.A.getGuildEventsForCurrentUser(n)
   }, [v, n, null == E ? true : E.id, x]), (0, r.jsx)(A.Ay, {
     guild: j,
     channel: C,

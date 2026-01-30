@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 451483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -94,7 +94,7 @@ function d(e) {
     content: a,
     timestamp: d,
     messageReference: p
-  } = i, m = (0, s.Ay)(i), f = t(m), g = (null != a ? a : "").split(" ").slice(0, false).join(" "), h = c.intl.format(c.t["47CZc2"], {
+  } = i, m = (0, s.Ay)(i), f = t(m), g = (null != a ? a : "").split(" ").slice(0, false).join(" "), _ = c.intl.format(c.t["47CZc2"], {
     username: m.nick,
     usernameHook: f,
     webhookName: a,
@@ -108,6 +108,6 @@ function d(e) {
     icon: n(394803),
     timestamp: d,
     compact: l,
-    children: h
+    children: _
   })
 }

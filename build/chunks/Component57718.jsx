@@ -1,9 +1,9 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 57718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => A,
   C8: () => b,
-  LU: () => _
+  LU: () => h
 });
 var r, i, Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,7 +18,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk241124 = require("./241124.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk995360 = require("./995360.js"),
-  _ = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
+  h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
   b = ((i = {})[i.SMALL = 2] = "SMALL", i[i.MEDIUM = 8] = "MEDIUM", i);
 let A = function(e) {
   let {
@@ -27,19 +27,19 @@ let A = function(e) {
     gameTileSize: r = 24,
     quest: i,
     separatorSpacing: a = 2,
-    theme: _ = g.NJ8.DARK,
+    theme: h = g.NJ8.DARK,
     withCosponsor: b = true,
     withGameTile: A = true,
     logotypeStyle: y,
     onLoadComplete: v
-  } = e, x = (0, u.Mw)(_) ? g.NJ8.DARK : g.NJ8.LIGHT, O = (0, p.a5)(i.id, x), E = b && null != i.config.cosponsorMetadata && null != O;
+  } = e, x = (0, u.Mw)(h) ? g.NJ8.DARK : g.NJ8.LIGHT, O = (0, p.a5)(i.id, x), E = b && null != i.config.cosponsorMetadata && null != O;
   return (0, l.jsxs)("div", {
-    className: s()(h.Iu, t),
+    className: s()(_.Iu, t),
     children: [A && (0, l.jsx)(f.Sn, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, l.jsx)("img", {
         ref: e,
-        className: h._Y,
+        className: _._Y,
         alt: "",
         src: (0, m.tW)(i, m.fY.GAME_TILE, x).url,
         style: {
@@ -60,8 +60,8 @@ let A = function(e) {
       id: "QuestPartnerBranding_gameLogotype",
       children: e => (0, l.jsx)(o.animated.img, {
         ref: e,
-        className: s()(h.lW, n, {
-          [h.TO]: E
+        className: s()(_.lW, n, {
+          [_.TO]: E
         }),
         style: y,
         alt: i.config.messages.gameTitle,
@@ -70,12 +70,12 @@ let A = function(e) {
       })
     }), E && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
-        className: h.ub,
+        className: _.ub,
         style: {
           margin: "0 ".concat(a, "px")
         },
         children: (0, l.jsx)(d.aoi, {
-          className: h.JB,
+          className: _.JB,
           color: c.A.colors.WHITE
         })
       }), (0, l.jsx)(f.Sn, {
@@ -84,7 +84,7 @@ let A = function(e) {
           var t, r;
           return (0, l.jsx)(o.animated.img, {
             ref: e,
-            className: s()(h.lW, h.TO, n),
+            className: s()(_.lW, _.TO, n),
             style: y,
             alt: null != (t = null == (r = i.config.cosponsorMetadata) ? true : r.name) ? t : "",
             src: O.url,

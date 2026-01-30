@@ -1,4 +1,4 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 414062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => u
@@ -20,16 +20,16 @@ function u(e) {
     state: l,
     executeStateUpdate: u,
     error: d
-  } = t.useComponentState(e), m = r.useMemo(() => (null == l ? true : l.type) === i.I5.FILE_UPLOAD ? l.uploadIds : [], [l]), f = o.A.getUploads(n, s.C.InteractionModal), p = r.useMemo(() => m.map(e => f.find(t => t.id === e)).filter(e => null != e), [m, f]), h = r.useCallback(e => u({
+  } = t.useComponentState(e), p = r.useMemo(() => (null == l ? true : l.type) === i.I5.FILE_UPLOAD ? l.uploadIds : [], [l]), m = s.A.getUploads(n, o.C.InteractionModal), f = r.useMemo(() => p.map(e => m.find(t => t.id === e)).filter(e => null != e), [p, m]), O = r.useCallback(e => u({
     type: i.I5.FILE_UPLOAD,
     uploadIds: e
   }), [u]);
   return r.useEffect(() => {
-    m.length > p.length && h(m.filter(e => p.some(t => t.id === e)))
-  }, [m, p, h]), {
-    uploadIds: m,
-    setUploadIds: h,
-    currentUploads: p,
+    p.length > f.length && O(p.filter(e => f.some(t => t.id === e)))
+  }, [p, f, O]), {
+    uploadIds: p,
+    setUploadIds: O,
+    currentUploads: f,
     error: d
   }
 }

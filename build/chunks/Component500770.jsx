@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 500770, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -78,8 +78,8 @@ function g(e) {
     description: i,
     formattedPrice: c,
     role: g,
-    ctaComponent: h,
-    shouldShowFullDescriptionButton: _ = true,
+    ctaComponent: _,
+    shouldShowFullDescriptionButton: h = true,
     onShowFullDescription: b,
     productType: A,
     onTapCard: y,
@@ -121,7 +121,7 @@ function g(e) {
             lineClamp: E,
             text: i
           })
-        }), _ && (0, r.jsx)(f, {
+        }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: S
         }), O || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
@@ -149,7 +149,7 @@ function g(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: h
+        children: _
       })]
     })]
   });

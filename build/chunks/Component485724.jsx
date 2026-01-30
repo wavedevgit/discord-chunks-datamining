@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 485724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => L.J,
@@ -47,7 +47,7 @@ function U(e) {
     linkType: l,
     activityCustomId: a,
     activityReferrerId: o,
-    message: h,
+    message: _,
     onView: A
   } = e, {
     name: y,
@@ -73,13 +73,13 @@ function U(e) {
     },
     applicationId: n.id,
     botUserId: null == O ? true : O.id
-  }), q = null != E && j && Y, J = W && j, Q = (0, b.e)(n), Z = (0, D.F)(n), X = (0, D.t)(n), $ = i.useMemo(() => {
+  }), q = null != E && j && Y, J = W && j, Q = (0, b.e)(n), X = (0, D.F)(n), Z = (0, D.t)(n), $ = i.useMemo(() => {
     let e = [];
     return j ? Q ? e.push({
       label: M.intl.string(M.t.RscU7I),
       trackingArea: P.kY.PLAY,
       onClick() {
-        _.A.launchFrame({
+        h.A.launchFrame({
           applicationId: n.id
         })
       }
@@ -110,8 +110,8 @@ function U(e) {
           referrerId: U
         })
       }
-    })) : null != X && e.push(X), e
-  }, [j, X, Q, n.id, J, q, V, z, H, K, a, U, F, E]), ee = j ? (0, r.jsx)(B, {
+    })) : null != Z && e.push(Z), e
+  }, [j, Z, Q, n.id, J, q, V, z, H, K, a, U, F, E]), ee = j ? (0, r.jsx)(B, {
     app: n
   }) : (0, r.jsx)(G, {
     app: n
@@ -120,21 +120,21 @@ function U(e) {
     title: y,
     staticBannerSrc: N,
     videoBannerSrc: L,
-    onClickBanner: Z,
+    onClickBanner: X,
     bannerAspectRatio: k,
     iconSrc: I,
     info: ee,
     actions: $,
-    onClickContent: Z,
+    onClickContent: X,
     trackingConfig: {
       id: n.id,
       linkType: l,
       referrerId: U,
       activityCustomId: a,
       onView: A,
-      guildId: null == (t = x.A.getChannel(h.channel_id)) ? true : t.guild_id,
-      channelId: h.channel_id,
-      messageId: h.id
+      guildId: null == (t = x.A.getChannel(_.channel_id)) ? true : t.guild_id,
+      channelId: _.channel_id,
+      messageId: _.id
     }
   })
 }
@@ -204,7 +204,7 @@ function B(e) {
         count: d.length
       })
     });
-    if (u.some(e => (0, h.CZ)(e) === a.m.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, _.CZ)(e) === a.m.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Y3C, {
         size: "xxs",
         color: "currentColor"

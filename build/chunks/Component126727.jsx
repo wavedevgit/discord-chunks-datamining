@@ -1,4 +1,4 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 126727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -34,54 +34,54 @@ function d(e) {
   let t, {
       type: n,
       style: d,
-      label: m,
-      placeholder: f,
-      minLength: p,
-      maxLength: h,
+      label: p,
+      placeholder: m,
+      minLength: f,
+      maxLength: O,
       required: b,
-      value: g
+      value: y
     } = e,
-    [x, y] = l.useState(null != g ? g : ""),
+    [h, j] = l.useState(null != y ? y : ""),
     {
-      state: v,
-      executeStateUpdate: j,
-      error: C
-    } = (0, s.At)(e, null != g ? {
+      state: g,
+      executeStateUpdate: A,
+      error: v
+    } = (0, o.At)(e, null != y ? {
       type: n,
-      value: g
+      value: y
     } : true),
-    _ = (0, o.FG)(e.id);
+    E = (0, s.FG)(e.id);
   l.useEffect(() => {
-    (null == v ? true : v.type) === n && y(v.value)
-  }, [n, v]);
-  let A = {
-    value: x,
-    placeholder: f,
-    minLength: p,
-    maxLength: h,
+    (null == g ? true : g.type) === n && j(g.value)
+  }, [n, g]);
+  let C = {
+    value: h,
+    placeholder: m,
+    minLength: f,
+    maxLength: O,
     required: b,
     onChange: e => {
-      y(e), j({
+      j(e), A({
         type: n,
         value: e
       })
     },
-    autoFocus: _
+    autoFocus: E
   };
   switch (d) {
     case i.qz.SMALL:
-      t = (0, r.jsx)(a.ksK, u({}, A));
+      t = (0, r.jsx)(a.ksK, u({}, C));
       break;
     case i.qz.PARAGRAPH:
       t = (0, r.jsx)(a.fs1, u({
         autosize: true
-      }, A))
+      }, C))
   }
-  return null != m ? (0, r.jsx)(a.eIh, {
-    title: m,
+  return null != p ? (0, r.jsx)(a.eIh, {
+    title: p,
     required: b,
     className: c.k,
-    error: C,
+    error: v,
     children: t
   }) : t
 }

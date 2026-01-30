@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 509282, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => R,
@@ -38,7 +38,7 @@ let N = (0, Chunk311907.UT)([Chunk67480.A, Chunk328968.A, Chunk97352.A], {
       let t = b.A.get(e),
         n = A.A.getForSKU(e);
       if (null == t || null == n) return;
-      let r = h.A.getForSKU(e);
+      let r = _.A.getForSKU(e);
       return {
         sku: t,
         storeListing: n,
@@ -66,15 +66,15 @@ function w(e) {
     message: l
   } = e, a = (0, E.G)(t), {
     data: u
-  } = (0, d.YY)(t), [m, f, h, b] = (0, s.yK)([p.A, _.A, g.A], () => {
+  } = (0, d.YY)(t), [m, f, _, b] = (0, s.yK)([p.A, h.A, g.A], () => {
     var e;
     let n = p.A.getApplication(t),
       r = null != n ? (0, x.A)(n, 45) : true,
       i = null == (e = g.A.getBasicChannel(l.channel_id)) ? true : e.guild_id;
-    return [_.A.getStoreLayout(t), _.A.getFetchStatus(t), i, r]
+    return [h.A.getStoreLayout(t), h.A.getFetchStatus(t), i, r]
   }, [t, l.channel_id]);
   i.useEffect(() => {
-    f === _.N.NONE && (0, c.V)(t)
+    f === h.N.NONE && (0, c.V)(t)
   }, [t, f]);
   let A = m.subscriptions.length,
     v = m.otps.length,
@@ -96,7 +96,7 @@ function w(e) {
         transitionState: n.transitionState,
         onClose: n.onClose,
         appId: t,
-        guildId: h
+        guildId: _
       })
     })
   };
@@ -140,8 +140,8 @@ function R(e) {
     message: u
   } = e, {
     parentSku: p,
-    sku: h,
-    subscriptionPlan: _,
+    sku: _,
+    subscriptionPlan: h,
     storeListing: b
   } = function(e, t) {
     var n, r;
@@ -158,7 +158,7 @@ function R(e) {
     }
   }(c, a), {
     data: A
-  } = (0, d.YY)(null == h ? true : h.applicationId), v = (0, s.bG)([g.A], () => {
+  } = (0, d.YY)(null == _ ? true : _.applicationId), v = (0, s.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getBasicChannel(u.channel_id)) ? true : e.guild_id
   }, [u]), w = i.useMemo(() => null != A ? (0, x.A)(A, 45) : true, [A]), R = (0, E.G)(null != (t = null == A ? true : A.id) ? t : ""), {
@@ -168,9 +168,9 @@ function R(e) {
     skuId: c,
     initialSubscribeForGuild: v
   });
-  if (!R || null == A || null == h) return null;
-  let k = h.type === C.Puh.SUBSCRIPTION,
-    U = !!k && (0, m.bg)(h.flags),
+  if (!R || null == A || null == _) return null;
+  let k = _.type === C.Puh.SUBSCRIPTION,
+    U = !!k && (0, m.bg)(_.flags),
     G = () => {
       (0, o.mMO)(async () => {
         let {
@@ -195,7 +195,7 @@ function R(e) {
           return null != e && null != p ? (0, r.jsx)(e, {
             transitionState: n.transitionState,
             appId: A.id,
-            skuId: h.id,
+            skuId: _.id,
             guildId: v,
             subscriptionType: U ? "user" : "guild",
             onClose: n.onClose,
@@ -227,13 +227,13 @@ function R(e) {
   let H = () => {
     y.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: A.id,
-      sku_id: h.id,
+      sku_id: _.id,
       area: "purchase_button"
     })
   };
   return (0, r.jsx)(D, {
     appName: A.name,
-    title: h.name,
+    title: _.name,
     description: F,
     link: "".concat(location.protocol, "//").concat(location.host).concat(C.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id, I.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
@@ -243,7 +243,7 @@ function R(e) {
     onIconClick: () => {
       G(), y.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: A.id,
-        sku_id: h.id,
+        sku_id: _.id,
         area: "app_icon"
       })
     },
@@ -254,19 +254,19 @@ function R(e) {
         onClick: () => {
           B(), y.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: A.id,
-            sku_id: h.id,
+            sku_id: _.id,
             area: "view_details"
           })
         },
         text: S.intl.string(S.t.DXYfjO)
-      }), k ? null != _ ? (0, r.jsx)(j.rc, {
+      }), k ? null != h ? (0, r.jsx)(j.rc, {
         onClick: L,
         appId: A.id,
         subscriptionType: U ? "user" : "guild",
-        skuId: h.id,
+        skuId: _.id,
         icon: o.U1X,
         onHasClicked: H,
-        subscriptionPlan: _,
+        subscriptionPlan: h,
         state: M
       }) : (0, r.jsx)(o.Button, {
         variant: "primary",
@@ -274,7 +274,7 @@ function R(e) {
         onClick: B
       }) : (0, r.jsx)(j.$P, {
         appId: A.id,
-        sku: h,
+        sku: _,
         icon: o.U1X,
         onHasClicked: H
       })]

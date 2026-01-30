@@ -164,15 +164,15 @@ function K(e) {
 function z(e) {
   let {
     channelId: t,
-    message: n,
-    isPushNotification: r
-  } = e, i = u.A.getOrCreate(t);
-  if (r) {
-    M.log("Inserting message tapped on from a push notification", n.id, n.channel_id), u.A.commit(i.receivePushNotification(n));
+    message: r,
+    isPushNotification: i
+  } = e, a = u.A.getOrCreate(t), o = n(142120).A.isConnected();
+  if (i) {
+    M.log("Inserting message tapped on from a push notification", r.id, r.channel_id), u.A.commit(a.receivePushNotification(r, o));
     return
   }
-  if (!i.ready) returnfalse;
-  null != n.nonce && n.state !== D.cmJ.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, true === A.A.isAtBottom(t)), u.A.commit(i)
+  if (!a.ready) returnfalse;
+  null != r.nonce && r.state !== D.cmJ.SENDING && x.has(r.nonce) && (a = a.remove(r.nonce), x.delete(r.nonce)), a = a.receiveMessage(r, true === A.A.isAtBottom(t)), u.A.commit(a)
 }
 
 function q(e) {
@@ -365,7 +365,7 @@ function ef(e) {
 
 function ep(e) {
   let t = u.A.getOrCreate(e.channelId);
-  (t.cached || !t.ready) && u.A.commit(t.addCachedMessages(e.messages, e.stale))
+  (e.shouldForceCommitMessages || t.cached || !t.ready) && u.A.commit(t.addCachedMessages(e.messages, e.stale))
 }
 
 function e_(e) {

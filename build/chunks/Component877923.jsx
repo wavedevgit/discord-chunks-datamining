@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 877923, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -21,7 +21,7 @@ function g(e) {
     giftIntentType: t,
     recipientUser: n,
     channel: g
-  } = e, h = (0, l.bG)([o.A], () => o.A.useReducedMotion), _ = i.useRef(null), {
+  } = e, _ = (0, l.bG)([o.A], () => o.A.useReducedMotion), h = i.useRef(null), {
     createMultipleConfettiAt: b
   } = i.useContext(c.x), A = i.useCallback(e => ({
     size: {
@@ -43,8 +43,8 @@ function g(e) {
   }), []);
   return i.useEffect(() => {
     var e;
-    if (h) return;
-    let t = null == (e = _.current) ? true : e.getBoundingClientRect();
+    if (_) return;
+    let t = null == (e = h.current) ? true : e.getBoundingClientRect();
     if (null == t) return;
     let n = A({
         confettiSize: 8
@@ -55,14 +55,14 @@ function g(e) {
     return r.delay(), () => {
       r.cancel()
     }
-  }, [b, _, h, A]), (0, r.jsx)(p.A, {
+  }, [b, h, _, A]), (0, r.jsx)(p.A, {
     contentClassName: f.o9,
     iconContainerClassName: f.zc,
     iconNode: (0, r.jsx)(s.XFE, {
       colorClass: f.Kk
     }),
     children: (0, r.jsx)(u.A, {
-      innerRef: _,
+      innerRef: h,
       giftIntentType: t,
       recipientUser: n,
       analyticsPage: (0, d.DJ)(g),

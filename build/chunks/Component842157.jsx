@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 842157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => k
@@ -122,8 +122,8 @@ function k(e) {
     partyStatusElement: q,
     analyticsLocations: J,
     showAuthButton: Q,
-    startAuthorization: Z,
-    accountLinkButtonRef: X,
+    startAuthorization: X,
+    accountLinkButtonRef: Z,
     renderAccountLinkUpsell: $
   } = e, ee = null != (t = null == W || null == (n = W.timestamps) ? true : n.start) ? t : null == W ? true : W.created_at, et = i.useMemo(() => {
     var e;
@@ -142,7 +142,7 @@ function k(e) {
         textFontCode: false
       })]
     }) : null
-  }, [ee, null == W || null == (a = W.timestamps) ? true : a.end]), en = (0, E.v)(s), er = (0, b.s)(y.id), ei = i.useMemo(() => er.some(e => (0, h.CZ)(e) === l.m.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }, [ee, null == W || null == (a = W.timestamps) ? true : a.end]), en = (0, E.v)(s), er = (0, b.s)(y.id), ei = i.useMemo(() => er.some(e => (0, _.CZ)(e) === l.m.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Y3C, {
       size: "xxs",
       color: "currentColor"
@@ -156,7 +156,7 @@ function k(e) {
   }), [en, s, C, T, k, et, ei]), ea = i.useMemo(() => (0, r.jsxs)("div", {
     className: L.pq,
     children: [el, Y || en ? null : q]
-  }), [el, Y, en, q]), es = (0, _.e)(y), {
+  }), [el, Y, en, q]), es = (0, h.e)(y), {
     canJoin: eo,
     remoteJoinPlatform: ec
   } = (0, x.D)({
@@ -234,20 +234,20 @@ function k(e) {
       label: D.intl.string(D.t.lw71Nf),
       trackingArea: f.kY.CONNECT_ACCOUNT,
       onClick: () => {
-        Z({
+        X({
           analyticsLocations: J
         })
       },
       icon: c.A5T,
       iconButton: true,
-      buttonRef: X
+      buttonRef: Z
     }), n = true)), {
       actions: r,
       hasAccountLinkButton: n
     }
-  }, [eo, eu, ed, ep, B, s.author.id, s.id, W, T.id, T.guild_id, J, ec, k, em, Q, Z, X]), eh = ef.some(e => e.trackingArea === f.kY.CLOUD_PLAY);
-  (0, P.A)(eh, J);
-  let e_ = i.useMemo(() => ep ? null : (0, r.jsx)(M, {
+  }, [eo, eu, ed, ep, B, s.author.id, s.id, W, T.id, T.guild_id, J, ec, k, em, Q, X, Z]), e_ = ef.some(e => e.trackingArea === f.kY.CLOUD_PLAY);
+  (0, P.A)(e_, J);
+  let eh = i.useMemo(() => ep ? null : (0, r.jsx)(M, {
     presenceActivity: W,
     remoteJoinPlatform: ec
   }), [ep, W, ec]);
@@ -272,7 +272,7 @@ function k(e) {
         channelId: s.channel_id,
         messageId: s.id
       },
-      footer: e_
+      footer: eh
     }), eg ? $() : null]
   })
 }

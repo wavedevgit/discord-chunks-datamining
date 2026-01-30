@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 448894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -62,10 +62,10 @@ function O(e) {
     B = null != E;
   if (null == E) {
     if (null == l.guild) return (0, r.jsx)(b.A, {});
-    E = (0, h.DY)(l.guild)
+    E = (0, _.DY)(l.guild)
   }
   let F = null != l.channel ? (0, m.OY)(l.channel) : null,
-    H = _.Ay.getName(M),
+    H = h.Ay.getName(M),
     V = "active";
   B && !D ? n = k ? v.intl.string(v.t.oBLoZJ) : v.intl.formatToPlainString(v.t["0QJmA+"], {
     name: H

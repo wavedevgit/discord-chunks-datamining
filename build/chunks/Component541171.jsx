@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 541171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -20,17 +20,17 @@ function c(e) {
     onJoinStream: d,
     usernameHook: p,
     compact: m
-  } = e, f = (0, a.Ay)(n), g = null == (t = n.call) ? true : t.duration, h = p(f), _ = o.intl.format(o.t.FKXvaI, {
+  } = e, f = (0, a.Ay)(n), g = null == (t = n.call) ? true : t.duration, _ = p(f), h = o.intl.format(o.t.FKXvaI, {
     username: f.nick,
     activityName: null != u ? u.name : "unknown",
     onJoinStream: d,
-    usernameHook: h
+    usernameHook: _
   });
-  return null != g && (_ = o.intl.format(o.t.NEFxtd, {
+  return null != g && (h = o.intl.format(o.t.NEFxtd, {
     username: f.nick,
     duration: g.humanize(),
     channelName: c.name,
-    usernameHook: h
+    usernameHook: _
   })), (0, r.jsx)(s.A, {
     iconNode: null != g ? (0, r.jsx)(i.GT3, {
       size: "custom",
@@ -42,6 +42,6 @@ function c(e) {
     }),
     timestamp: n.timestamp,
     compact: m,
-    children: _
+    children: h
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 306417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Dt: () => M,
@@ -225,7 +225,7 @@ function w(e) {
     channelId: u,
     messageId: d
   } = (0, y.Tu)(), p = (0, y.hd)(n.style), m = true === n.isSelected, f = i.useCallback(() => {
-    _.A.handlePollAnswerTapped({
+    h.A.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
       answerId: n.answerId
@@ -263,7 +263,7 @@ function R(e) {
   let {
     attachment: n,
     className: i
-  } = e, l = (0, h.j)(), a = m.kt.useSetting();
+  } = e, l = (0, _.j)(), a = m.kt.useSetting();
   return (0, r.jsx)(p.Ay, {
     className: i,
     imageClassName: O.Bw,

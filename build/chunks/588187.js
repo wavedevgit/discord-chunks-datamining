@@ -1,5 +1,5 @@
-/** Chunk was on 51966 **/
-/** chunk id: 588187, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 65787 **/
+/** chunk id: 588187, original params: e,r,t (module,exports,require) **/
 module.exports = {
   sq: "forwardPreview_f4b524",
   kx: "linkContainer_f4b524",

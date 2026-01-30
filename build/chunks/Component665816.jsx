@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 665816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => b
@@ -19,7 +19,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk933674 = require("./933674.js"),
   Chunk956324 = require("./956324.js");
 
-function _(e) {
+function h(e) {
   let {
     questId: t,
     questContent: n,
@@ -91,7 +91,7 @@ function b(e) {
         color: "text-default",
         className: g.__invalid_mobileWebCopy,
         children: i
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(h, {
         questId: t,
         questContent: a,
         fullWidth: "lg" !== u
@@ -99,7 +99,7 @@ function b(e) {
     }), (0, r.jsx)("div", {
       className: g.Dg,
       children: (0, r.jsx)("img", {
-        src: h,
+        src: _,
         alt: "",
         className: g.Wg
       })

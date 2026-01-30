@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 695206, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk431174 = require("./431174.jsx"),
   Chunk744180 = require("./744180.js");
 
-function h(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function _(e) {
+function h(e) {
   let {
     media: t
   } = e;
@@ -132,13 +132,13 @@ function y(e) {
       hasSelectedAnyAnswer: i.hasSelectedAnswer,
       myAvatarUrl: i.myAvatarUrl,
       canShowVoteCounts: i.canShowVoteCounts
-    }, (0, s.YW)(i.layoutType).with(o.Z.DEFAULT, () => (0, r.jsx)(f.j, h({}, t))).with(o.Z.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.A, h({}, t))).otherwise(() => null));
+    }, (0, s.YW)(i.layoutType).with(o.Z.DEFAULT, () => (0, r.jsx)(f.j, _({}, t))).with(o.Z.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.A, _({}, t))).otherwise(() => null));
   return null == m ? null : (0, r.jsx)("div", {
     className: a()(g.kL, u, l),
     children: (0, r.jsxs)(c.Fmo, {
       children: [(0, r.jsxs)("div", {
         className: g.wx,
-        children: [(0, r.jsx)(_, {
+        children: [(0, r.jsx)(h, {
           media: i.question
         }), null != i.promptLabel && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",

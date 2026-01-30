@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 986533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,12 +18,12 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk234054 = require("./234054.js");
 
-function h(e) {
+function _(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, h = (0, o.Ay)(t), _ = i(h), {
+  } = e, _ = (0, o.Ay)(t), h = i(_), {
     avatarSrc: b,
     eventHandlers: {
       onMouseEnter: A,
@@ -78,12 +78,12 @@ function h(e) {
             [g.oE]: n
           }),
           children: t.type === p.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eD7"], {
-            username: h.nick,
-            usernameHook: _,
+            username: _.nick,
+            usernameHook: h,
             time: v
           }) : f.intl.format(f.t["BHeke+"], {
-            username: h.nick,
-            usernameHook: _
+            username: _.nick,
+            usernameHook: h
           })
         })]
       })

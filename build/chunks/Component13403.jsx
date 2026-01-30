@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 13403, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -66,13 +66,13 @@ function R(e) {
         name: null != (n = null == (l = e.activity) ? true : l.name_override) ? n : t.name
       }
     }(z, G),
-    Z = null != (t = (0, S.I)({
+    X = null != (t = (0, S.I)({
       messageId: z.id,
       presenceActivity: Y,
       application: G
     })) ? t : true,
     {
-      openGameProfileModal: X,
+      openGameProfileModal: Z,
       launchableAppId: $
     } = (R = G.id, D = z.author.id, M = (0, A.d)(R), k = (0, l.bG)([m.A, y.A], () => {
       let e = m.A.getApplication(R);
@@ -81,7 +81,7 @@ function R(e) {
       openGameProfileModal: (0, b.A)({
         location: "Rich Presence Activity Invite Embed",
         applicationId: null != (L = null == k ? true : k.id) ? L : true,
-        source: _.Ob.Embed,
+        source: h.Ob.Embed,
         trackEntryPointImpression: true,
         sourceUserId: D
       }),
@@ -100,7 +100,7 @@ function R(e) {
       }
     }, [ee]),
     en = (0, g.F)(G),
-    er = i.useMemo(() => null != X ? X : null != en && q ? en : true, [q, X, en]),
+    er = i.useMemo(() => null != Z ? Z : null != en && q ? en : true, [q, Z, en]),
     ei = u.A.useConfig({
       location: "RichPresenceGameActivityInviteEmbed"
     }),
@@ -116,7 +116,7 @@ function R(e) {
     ep = (0, l.bG)([v.A], () => v.A.getMessages(B.id)),
     em = () => {
       let e = [];
-      return (0, C.G)(z.id, ep) && el && !ea && ei.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(h.Ay, {
+      return (0, C.G)(z.id, ep) && el && !ea && ei.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(_.Ay, {
         contentTypes: e,
         children: e => {
           let {
@@ -156,7 +156,7 @@ function R(e) {
     launchableAppId: $,
     isEmbeddedApplication: q,
     tryWithGdnAction: et,
-    staticBannerSrc: Z,
+    staticBannerSrc: X,
     onClickContent: er,
     iconSrc: J,
     onView: W,
@@ -176,7 +176,7 @@ function R(e) {
     launchableAppId: $,
     isEmbeddedApplication: q,
     tryWithGdnAction: et,
-    staticBannerSrc: Z,
+    staticBannerSrc: X,
     onClickContent: er,
     iconSrc: J,
     onView: W,

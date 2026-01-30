@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 282224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -50,7 +50,7 @@ function g(e) {
   }) : null
 }
 
-function h(e) {
+function _(e) {
   var t;
   let {
     message: n,
@@ -59,8 +59,8 @@ function h(e) {
   } = e, {
     author: d,
     mentions: f,
-    type: h
-  } = n, _ = (0, s.Ay)(n), b = n.getChannelId(), A = (0, l.bG)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, s.m2)(d, i), v = (0, o.P)({
+    type: _
+  } = n, h = (0, s.Ay)(n), b = n.getChannelId(), A = (0, l.bG)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, s.m2)(d, i), v = (0, o.P)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
@@ -70,17 +70,17 @@ function h(e) {
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(x), E = null != (t = m[h]) ? t : null;
+  })(x), E = null != (t = m[_]) ? t : null;
   if (null == E) return null;
   let j = p.intl.format(E(), {
-    actorName: _.nick,
+    actorName: h.nick,
     actorHook: v,
     targetName: null == x ? true : x.nick,
     targetHook: O
   });
   return (0, r.jsx)(c.A, {
     iconNode: (0, r.jsx)(g, {
-      type: h
+      type: _
     }),
     timestamp: n.timestamp,
     compact: a,
@@ -88,7 +88,7 @@ function h(e) {
   })
 }
 
-function _(e) {
+function h(e) {
   var t;
   let {
     message: n,
@@ -97,16 +97,16 @@ function _(e) {
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, s.Ay)(n), m = n.getChannelId(), h = (0, s.m2)(a, i), _ = (0, o.P)({
+  } = n, d = (0, s.Ay)(n), m = n.getChannelId(), _ = (0, s.m2)(a, i), h = (0, o.P)({
     user: a,
     channelId: m,
     guildId: i.guild_id,
     messageId: n.id
-  })(h), b = null != (t = f[u]) ? t : null;
+  })(_), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
   let A = p.intl.format(b(), {
     actorName: d.nick,
-    actorHook: _
+    actorHook: h
   });
   return (0, r.jsx)(c.A, {
     iconNode: (0, r.jsx)(g, {
@@ -126,11 +126,11 @@ function b(e) {
   } = e, {
     type: a
   } = t;
-  return a === i.l.REPORT_TO_MOD_BAN_USER || a === i.l.REPORT_TO_MOD_KICK_USER || a === i.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(h, {
+  return a === i.l.REPORT_TO_MOD_BAN_USER || a === i.l.REPORT_TO_MOD_KICK_USER || a === i.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(_, {
     message: t,
     channel: n,
     compact: l
-  }) : (0, r.jsx)(_, {
+  }) : (0, r.jsx)(h, {
     message: t,
     channel: n,
     compact: l

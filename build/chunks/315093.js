@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 315093, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => O
 });
 var Chunk681154 = require("./681154.js"),
   Chunk808380 = require("./808380.js"),
@@ -13,42 +13,42 @@ var Chunk681154 = require("./681154.js"),
   Chunk158611 = require("./158611.js"),
   Chunk360469 = require("./360469.js"),
   Chunk985018 = require("./985018.jsx");
-let f = {
+let m = {
     [Chunk808380.Y.XBOX]: Chunk424994.a4.XBOX,
     [Chunk808380.Y.PLAYSTATION]: Chunk424994.a4.PLAYSTATION
   },
-  p = {
+  f = {
     [Chunk158611.Z.EMBED]: Chunk409626.Ob.Embed
   };
 
-function h(e) {
+function O(e) {
   var t, n;
   let l, i, {
       entry: c,
       location: u,
-      baseEntryData: h
+      baseEntryData: O
     } = e,
     b = (0, a.h)(c.extra.application_id),
-    g = null == b ? true : b.getIconURL(d.iu.LARGE),
-    x = c.extra.game_name;
+    y = null == b ? true : b.getIconURL(d.iu.LARGE),
+    h = c.extra.game_name;
   if (null != c.extra.platform) {
-    let e = f[c.extra.platform];
+    let e = m[c.extra.platform];
     null != e && (l = {
       type: e
     })
   }
-  i = c.content_type === r.ContentInventoryEntryType.PLAYED_GAME && (0, o.JM)(c) && !(0, o.I5)(c) ? m.t.vPg1JT : m.t.rPqqts;
-  let y = p[u],
-    v = {
-      onClick: (0, s.A)({
-        location: y,
+  i = c.content_type === r.ContentInventoryEntryType.PLAYED_GAME && (0, s.JM)(c) && !(0, s.I5)(c) ? p.t.vPg1JT : p.t.rPqqts;
+  let j = f[u],
+    g = {
+      onClick: (0, o.A)({
+        location: j,
         applicationId: c.extra.application_id,
-        source: y,
+        source: j,
         trackEntryPointImpression: true,
         sourceUserId: c.author_id
       }),
-      ariaDescription: m.intl.formatToPlainString(m.t["9sZWVp"], {
-        gameName: x
+      ariaDescription: p.intl.formatToPlainString(p.t["9sZWVp"], {
+        gameName: h
       })
     };
   return t = function(e) {
@@ -68,11 +68,11 @@ function h(e) {
       })
     }
     return e
-  }({}, h), n = n = {
-    thumbnailUrl: g,
-    title: x,
-    titleClickable: v,
-    thumbnailClickable: v,
+  }({}, O), n = n = {
+    thumbnailUrl: y,
+    title: h,
+    titleClickable: g,
+    thumbnailClickable: g,
     userDescription: i,
     providerIconProps: l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

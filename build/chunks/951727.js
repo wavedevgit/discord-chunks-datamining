@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 951727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => T,
@@ -57,18 +57,18 @@ function S(e, t) {
     f = m ? null != a ? a : (0, x.J)(s.expiry) : "",
     g = null == f && m,
     {
-      selectedAnswerIds: h,
+      selectedAnswerIds: _,
       submitting: b,
       editing: A,
       showResults: y
-    } = null != (n = null != t ? t : (0, _.xt)(e.getChannelId(), e.id)) ? n : j,
+    } = null != (n = null != t ? t : (0, h.xt)(e.getChannelId(), e.id)) ? n : j,
     v = e.reactions,
     E = true;
   if (!I(e)) {
     let t = p.A.getMessage(e.channel_id, e.id);
     E = !e.isSearchHit && null != t, v = null != (l = null == t ? true : t.reactions) ? l : v
   }
-  let C = h.size > 0,
+  let C = _.size > 0,
     S = v.some(e => true === e.me_vote),
     T = !A && S,
     N = T || g || y,
@@ -93,7 +93,7 @@ function S(e, t) {
     isInteractive: E,
     isSent: m,
     reactions: v,
-    selectedAnswerIds: h,
+    selectedAnswerIds: _,
     submitting: b,
     tapShouldOpenVotersModal: N,
     showResults: y
@@ -107,16 +107,16 @@ function T(e, t) {
     theme: d = "dark",
     formattedExpirationLabel: p
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, {
-    poll: _
+    poll: h
   } = e;
-  if (null == _) return;
+  if (null == h) return;
   let x = m.default.getCurrentUser();
   if (null == x) return;
   let O = l.A.useReducedMotion,
     j = null == (o = u.A.getChannel(e.getChannelId())) || null == (n = o.getGuildId) ? true : n.call(o),
     I = (0, y.T)(x, j),
-    T = _.answers,
-    N = _.layout_type,
+    T = h.answers,
+    N = h.layout_type,
     P = S(e, t, {
       formattedExpirationLabel: p
     });
@@ -149,15 +149,15 @@ function T(e, t) {
       d = C(H, u),
       p = null != (t = null == d || null == (l = d.count_details) ? true : l.vote) ? t : 0,
       m = 0 === Y ? 0 : p / Y,
-      h = V.has(u),
-      _ = p >= J && 0 !== p,
+      _ = V.has(u),
+      h = p >= J && 0 !== p,
       b = U && null != (n = null == d ? true : d.me_vote) && n,
       A = (o = {
         didSelfVote: b,
         hasVoted: U,
         isExpired: B,
-        isSelected: h,
-        isLeader: _,
+        isSelected: _,
+        isLeader: h,
         showResults: K
       }, (0, r.YW)(o).with({
         isExpired: true,
@@ -217,8 +217,8 @@ function T(e, t) {
         stickerId: e.poll_media.sticker_id,
         attachmentIds: e.poll_media.attachment_ids
       },
-      isSelected: h,
-      isVictor: B && _,
+      isSelected: _,
+      isVictor: B && h,
       didSelfVote: b,
       style: A,
       shouldAnimateTransition: z && !O,
@@ -227,7 +227,7 @@ function T(e, t) {
         count: p
       }))
     }
-  }), Z = (0, r.YW)({
+  }), X = (0, r.YW)({
     isExpired: B,
     canSubmitVote: L,
     hasVoted: U,
@@ -266,7 +266,7 @@ function T(e, t) {
     presentation: "button",
     enabled: L,
     type: "submit"
-  })), X = (0, h.isIOS)() ? E.intl.string(E.t["PVATM/"]) : E.intl.string(E.t.cHfFql), $ = (0, r.YW)({
+  })), Z = (0, _.isIOS)() ? E.intl.string(E.t["PVATM/"]) : E.intl.string(E.t.cHfFql), $ = (0, r.YW)({
     isExpired: B,
     isInteractive: F,
     isEditingVote: G
@@ -287,7 +287,7 @@ function T(e, t) {
   })).otherwise(() => ({
     label: q,
     secondaryLabel: M,
-    accessibilityHint: X,
+    accessibilityHint: Z,
     presentation: "text",
     enabled: true,
     type: "showVoterDetails"
@@ -296,7 +296,7 @@ function T(e, t) {
     presentation: "textButton",
     enabled: true,
     type: "showVotes"
-  }, et = _.allow_multiselect, en = (0, r.YW)({
+  }, et = h.allow_multiselect, en = (0, r.YW)({
     isInteractive: F,
     isExpired: B,
     canSelectMultipleAnswers: et
@@ -308,7 +308,7 @@ function T(e, t) {
     canSelectMultipleAnswers: true
   }, () => E.intl.string(E.t.yCXvxa)).otherwise(() => E.intl.string(E.t["9Y2wKO"]));
   return {
-    question: _.question,
+    question: h.question,
     promptLabel: en,
     answers: Q,
     answersInteraction: (0, r.YW)({
@@ -324,14 +324,14 @@ function T(e, t) {
     }, () => A.CQ.RADIO_BUTTONS).with({
       canSelectMultipleAnswers: true
     }, () => A.CQ.CHECKBOXES).exhaustive(),
-    answerTapAccessibilityLabel: W ? X : true,
+    answerTapAccessibilityLabel: W ? Z : true,
     layoutType: N,
     resources: (0, v.A)({
       theme: d,
       layoutType: N
     }),
     containerStyle: "normal",
-    primaryAction: Z,
+    primaryAction: X,
     isInteractive: F,
     canTapAnswers: w,
     canSelectMultipleAnswers: et,

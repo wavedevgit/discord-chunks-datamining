@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 288531, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -101,11 +101,11 @@ let R = e => {
     isAnimating: M,
     contentPosition: k,
     sourceQuestContent: U
-  } = e, G = (0, _.In)(n), B = (0, _.S5)(null == (t = n.userStatus) ? true : t.completedAt, {
+  } = e, G = (0, h.In)(n), B = (0, h.S5)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), F = G >= _.F3.ACCEPTED, H = G >= _.F3.COMPLETED, V = L || M, z = (0, h.wT)(n, I.rE.QUESTS_CARD, i, U), W = (0, b.Ut)(), K = (0, _.fc)(n), Y = (0, h.mU)({
+  }), F = G >= h.F3.ACCEPTED, H = G >= h.F3.COMPLETED, V = L || M, z = (0, _.wT)(n, I.rE.QUESTS_CARD, i, U), W = (0, b.Ut)(), K = (0, h.fc)(n), Y = (0, _.mU)({
     quest: n,
     taskDetails: K,
     location: I.rE.QUESTS_CARD,
@@ -114,7 +114,7 @@ let R = e => {
     gameProfileSource: u.Ob.QuestEmbed
   }), q = (0, s.bG)([f.A], () => null != f.A.questEnrollmentBlockedUntil, []), J = g.t$.useConfig({
     location: I.rE.QUEST_HOME_DESKTOP
-  }).enabled, Q = (0, s.bG)([d.default], () => d.default.locale), Z = D && !H, X = (0, v.vv)(n);
+  }).enabled, Q = (0, s.bG)([d.default], () => d.default.locale), X = D && !H, Z = (0, v.vv)(n);
   return (0, r.jsx)("div", {
     className: N.zr,
     children: (0, r.jsxs)("div", {
@@ -127,8 +127,8 @@ let R = e => {
       },
       "aria-hidden": !V,
       children: [(0, r.jsx)(o.m_, {
-        text: Z ? T.intl.string(T.t["04MTGf"]) : null,
-        shouldShow: Z,
+        text: X ? T.intl.string(T.t["04MTGf"]) : null,
+        shouldShow: X,
         children: (0, r.jsxs)("div", {
           className: N.D9,
           children: [D && (0, r.jsx)("div", {
@@ -152,7 +152,7 @@ let R = e => {
         })
       }), (0, r.jsxs)("div", {
         className: N.oW,
-        children: [!X && (0, r.jsx)(c.Text, {
+        children: [!Z && (0, r.jsx)(c.Text, {
           variant: (0, C.a3)(i) && !F && "lg" === x ? "text-lg/medium" : "lg" === x ? "text-md/medium" : "sm" === x ? "text-sm/medium" : "text-xs/medium",
           className: N.$p,
           children: D ? T.intl.formatToPlainString(T.t["ge+AJp"], {
@@ -171,7 +171,7 @@ let R = e => {
               formattedCompletionDate: u
             } = e, d = (null == (t = a.userStatus) ? true : t.completedAt) != null, f = d && (null == (n = a.userStatus) ? true : n.claimedAt) != null, g = (0, y.kr)({
               quest: a
-            }), h = (0, y.mH)(a.config);
+            }), _ = (0, y.mH)(a.config);
             if (f) {
               let e = g ? (0, y.cg)({
                   quest: a,
@@ -182,25 +182,25 @@ let R = e => {
                 reward: t,
                 date: u
               }) : T.intl.formatToPlainString(T.t.zNoqRe, {
-                reward: h,
+                reward: _,
                 date: u
               })
             }
             if (d) return g ? T.intl.formatToPlainString(T.t["l1jCM/"], {
               date: u
             }) : T.intl.formatToPlainString(T.t.zNoqRe, {
-              reward: h,
+              reward: _,
               date: u
             });
-            let _ = g ? (0, y.cg)({
+            let h = g ? (0, y.cg)({
               quest: a,
               idx: 0
             }) : null;
             return o ? T.intl.formatToPlainString(T.t.DT3auf, {
-              reward: null != (l = null == _ ? true : _.messages.nameWithArticle) ? l : h
-            }) : null != _ && null != _.approximateCount ? T.intl.format(T.t["4bMK1z"], {
-              maxReward: _.messages.nameWithArticle,
-              maxRewardCount: (0, m.tg)(_.approximateCount, s),
+              reward: null != (l = null == h ? true : h.messages.nameWithArticle) ? l : _
+            }) : null != h && null != h.approximateCount ? T.intl.format(T.t["4bMK1z"], {
+              maxReward: h.messages.nameWithArticle,
+              maxRewardCount: (0, m.tg)(h.approximateCount, s),
               helpCenterLink: p.A.getArticleURL(S.MVz.QUESTS_LEARN_MORE)
             }) : c
           }({
@@ -244,7 +244,7 @@ let R = e => {
             })
           },
           text: T.intl.string(T.t.LLLLPD)
-        }), !Z && (J && !F ? (0, r.jsx)(O.A, {
+        }), !X && (J && !F ? (0, r.jsx)(O.A, {
           quest: n,
           analyticsCtxQuestContent: i,
           analyticsCtxSourceQuestContent: U,

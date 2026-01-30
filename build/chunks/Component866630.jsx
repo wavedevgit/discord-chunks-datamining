@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 866630, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,13 +16,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk260821 = require("./260821.jsx"),
   Chunk233080 = require("./233080.js"),
   Chunk710504 = require("./710504.js");
-let h = Chunk64700.memo(function(e) {
+let _ = Chunk64700.memo(function(e) {
     let t, n, {
         useChatFontScaling: i,
         hideEmoji: l,
         emoji: s,
-        className: h,
-        count: _,
+        className: _,
+        count: h,
         me: b,
         me_burst: A,
         burst_count: y,
@@ -37,7 +37,7 @@ let h = Chunk64700.memo(function(e) {
       S = (0, m.IN)(b, A, j),
       T = (0, d.g)(I && null != v ? v : []),
       N = i ? g : f,
-      P = I ? y : _,
+      P = I ? y : h,
       w = (0, u.x)(P, m.$Z),
       R = {};
     if (I && null != T) {
@@ -55,7 +55,7 @@ let h = Chunk64700.memo(function(e) {
       borderColor: n
     };
     return (0, r.jsxs)("div", {
-      className: a()(N.reaction, N.reactionInner, h, {
+      className: a()(N.reaction, N.reactionInner, _, {
         [N.reactionMe]: S,
         [N.reactionReadOnly]: x && !O && !E
       }),
@@ -75,7 +75,7 @@ let h = Chunk64700.memo(function(e) {
       })]
     })
   }),
-  _ = Chunk64700.memo(function(e) {
+  h = Chunk64700.memo(function(e) {
     let {
       showImmediate: t,
       reactions: n
@@ -99,7 +99,7 @@ let h = Chunk64700.memo(function(e) {
       !e || a || c || u(() => {
         o(true)
       })
-    }, [a, c]), f = (0, s.K)(d), g = a && !c || t ? m.qT : h;
+    }, [a, c]), f = (0, s.K)(d), g = a && !c || t ? m.qT : _;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         ref: f

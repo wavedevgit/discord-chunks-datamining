@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 901057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -29,7 +29,7 @@ function y(e) {
     beforeTransition: y,
     className: v,
     openChatWithoutConnecting: x
-  } = e, O = (0, i.bG)([h.default, g.A], () => null == t ? "" : (0, c.m1)(t, h.default, g.A), [t]);
+  } = e, O = (0, i.bG)([_.default, g.A], () => null == t ? "" : (0, c.m1)(t, _.default, g.A), [t]);
   return (0, r.jsx)(l.m, {
     "data-pending-richtooltip-migration": true,
     __unsupportedReactNodeAsText: O,
@@ -56,7 +56,7 @@ function y(e) {
           }(0, d.pX)(A.BVt.CHANNEL(e, t))
         }(null == t ? true : t.guild_id, null == t ? true : t.id, x))
       },
-      iconType: (0, _.QG)(t),
+      iconType: (0, h.QG)(t),
       children: O
     })
   })

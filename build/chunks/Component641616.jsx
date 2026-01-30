@@ -112,7 +112,7 @@ function ec() {
       id: "quick_actions",
       name: "Quick Actions",
       group: ei.fu.DEVELOPMENT,
-      tags: ["captcha", "safety", "checkpoint", "vibe", "vibing", "override", "premium type"],
+      tags: ["captcha", "safety", "vibe", "vibing", "override", "premium type"],
       render: () => (0, a.jsx)(z.A, {})
     }), e.push({
       id: "end_to_end_encryption",

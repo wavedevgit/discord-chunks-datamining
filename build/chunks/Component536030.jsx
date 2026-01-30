@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 536030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
@@ -17,7 +17,7 @@ function s(e) {
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, p = (0, i.Ay)(t), m = (0, i.d8)(o, s), f = c(p), g = u(null != m ? m : true), h = a.intl.format(a.t["32QI5/"], {
+  } = e, p = (0, i.Ay)(t), m = (0, i.d8)(o, s), f = c(p), g = u(null != m ? m : true), _ = a.intl.format(a.t["32QI5/"], {
     actorName: p.nick,
     actorHook: f,
     targetName: null == m ? true : m.nick,
@@ -27,6 +27,6 @@ function s(e) {
     icon: n(884797),
     timestamp: t.timestamp,
     compact: d,
-    children: h
+    children: _
   })
 }

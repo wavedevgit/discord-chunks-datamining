@@ -1,16 +1,15 @@
-/** Chunk was on 89455 **/
-/** chunk id: 647901, original params: e,n,t (module,exports,require) **/
-"use strict";
+/** Chunk was on 89488 **/
+/** chunk id: 647901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => u,
-  x: () => _
+  X: () => s,
+  x: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk865513 = require("./865513.js");
-let s = {
+let _ = {
     SIZE: {
       default: true,
       reduced: Chunk865513.k2
@@ -31,28 +30,28 @@ let s = {
     weight: "default"
   });
 
-function u() {
+function s() {
   return i.useContext(c)
 }
 
-function _(e) {
+function d(e) {
   let {
-    children: n,
-    size: t,
+    children: t,
+    size: n,
     color: o,
-    weight: _
-  } = e, d = u(), b = i.useMemo(() => {
+    weight: d
+  } = e, u = s(), p = i.useMemo(() => {
     let e = {
         className: true,
-        size: null != t ? t : d.size,
-        color: null != o ? o : d.color,
-        weight: null != _ ? _ : d.weight
+        size: null != n ? n : u.size,
+        color: null != o ? o : u.color,
+        weight: null != d ? d : u.weight
       },
-      n = a()(s.SIZE[e.size], s.COLOR[e.color], s.WEIGHT[e.weight]);
-    return "" !== n && (e.className = a()(l.zr, n)), e
-  }, [t, o, _, d]);
+      t = a()(_.SIZE[e.size], _.COLOR[e.color], _.WEIGHT[e.weight]);
+    return "" !== t && (e.className = a()(l.zr, t)), e
+  }, [n, o, d, u]);
   return (0, r.jsx)(c.Provider, {
-    value: b,
-    children: n
+    value: p,
+    children: t
   })
 }

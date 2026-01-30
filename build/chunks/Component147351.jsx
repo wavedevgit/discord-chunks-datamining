@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 147351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -42,14 +42,14 @@ function y(e) {
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), _ = i.useMemo(() => A({
+  }), [d, t, l]), h = i.useMemo(() => A({
     assets: u,
     currentUser: t,
     message: l
   }), [u, t, l]), b = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, h.i)({
+    } = await (0, _.i)({
       type: o.oU.FORM,
       content: "",
       channel: n
@@ -118,7 +118,7 @@ function y(e) {
       asset: g,
       component: c.A
     },
-    text: _,
+    text: h,
     onClick: b,
     variant: "secondary"
   })
@@ -143,7 +143,7 @@ function v(e) {
       let i = t.guild_id;
       if (null == r || null == i) returnfalse;
       let l = (0, u.UJ)(t),
-        a = p.A.can(_.xBc.SEND_MESSAGES, t),
+        a = p.A.can(h.xBc.SEND_MESSAGES, t),
         s = null == (e = d.Ay.getMember(i, r.id)) ? true : e.isPending,
         o = n.author.bot;
       return a && !l && !s && !o

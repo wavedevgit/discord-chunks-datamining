@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
-/** chunk id: 287002, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 66009 **/
+/** chunk id: 287002, original params: t,e,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => m
+  default: () => I
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,33 +15,33 @@ var Chunk417597 = require("./417597.js"),
   Chunk961997 = require("./961997.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e) {
+function I(t) {
   let {
-    channelId: t,
+    channelId: e,
     messageId: n,
-    transitionState: m,
-    onClose: f
-  } = e, g = (0, i.bG)([c.A], () => c.A.getFpMessageInfo(n)), h = g.attachments.map(e => e.id), _ = g.attachments.map(e => e.filename), {
-    reportFalsePositive: b,
-    isReportFalsePositiveLoading: A
+    transitionState: I,
+    onClose: v
+  } = t, E = (0, l.bG)([c.A], () => c.A.getFpMessageInfo(n)), m = E.attachments.map(t => t.id), p = E.attachments.map(t => t.filename), {
+    reportFalsePositive: f,
+    isReportFalsePositiveLoading: x
   } = (0, u.d)({
     onSuccess: () => {
-      (0, d.o)(f), a.A.disableFalsePositiveButton(t, n)
+      (0, d.o)(v), r.A.disableFalsePositiveButton(e, n)
     },
     onError: () => {
-      (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.R0RpRX), l.ToastType.FAILURE))
+      (0, a.showToast)((0, a.createToast)(_.intl.string(_.t.R0RpRX), a.ToastType.FAILURE))
     },
     report: () => {
-      (0, s.wV)(t, n, h, _)
+      (0, o.wV)(e, n, m, p)
     }
   });
-  return g.attachments.length > 0 || f(), (0, r.jsx)(d.k, {
+  return E.attachments.length > 0 || v(), (0, i.jsx)(d.k, {
     messageId: n,
-    channelId: t,
-    isReportFalsePositiveLoading: A,
-    analyticsContext: o.SW.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
-    onConfirmPress: b,
-    transitionState: m,
-    onClose: f
+    channelId: e,
+    isReportFalsePositiveLoading: x,
+    analyticsContext: s.SW.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
+    onConfirmPress: f,
+    transitionState: I,
+    onClose: v
   })
 }

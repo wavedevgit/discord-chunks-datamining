@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 336589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => y
@@ -43,7 +43,7 @@ let A = e => {
           asset: l,
           component: o.A
         },
-        text: _.intl.string(_.t["7Tj6HT"]),
+        text: h.intl.string(h.t["7Tj6HT"]),
         onClick: c,
         variant: "secondary"
       })
@@ -57,11 +57,11 @@ let A = e => {
       var e;
       let r = m.default.getCurrentUser(),
         l = (0, c.UJ)(n),
-        a = p.A.can(h.xBc.SEND_MESSAGES, n),
+        a = p.A.can(_.xBc.SEND_MESSAGES, n),
         s = null != i && null != r && (null == (e = u.Ay.getMember(i, r.id)) ? true : e.isPending),
         o = t.author.bot,
         f = d.A.getGuild(i),
-        g = null != f && (f.systemChannelFlags & h.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+        g = null != f && (f.systemChannelFlags & _.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
       return a && !l && !s && !o && g
     });
     return null != i && a ? (0, r.jsx)(A, {

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 31051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -75,7 +75,7 @@ let S = e => {
           t = a.id,
           l = d.default.getUser(a.primary_user);
         if (null == l) return;
-        let c = (0, h.$3)(l);
+        let c = (0, _.$3)(l);
         m.default.track(v.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
           invite_id: t,
           subscription_id: e
@@ -92,14 +92,14 @@ let S = e => {
             premiumGroupPrimaryName: c,
             isExistingSub: o,
             onClose: async () => {
-              g || (g = true, f._.dispatch(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), _.A.isDisplayingWowMomentConfirmation && _.A.isAnimated ? setTimeout(() => {
+              g || (g = true, f._.dispatch(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), h.A.isDisplayingWowMomentConfirmation && h.A.isAnimated ? setTimeout(() => {
                 n.onClose()
               }, u.K) : await n.onClose())
             }
           }))
         }, {
           onCloseRequest: () => {
-            g || (g = true, f._.dispatch(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), _.A.isDisplayingWowMomentConfirmation && _.A.isAnimated ? setTimeout(() => {
+            g || (g = true, f._.dispatch(v.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), h.A.isDisplayingWowMomentConfirmation && h.A.isAnimated ? setTimeout(() => {
               (0, s.OoC)(p)
             }, u.K) : (0, s.OoC)(p))
           },
@@ -219,19 +219,19 @@ let S = e => {
     }, [l]);
     if (null == m) return null;
     let g = t.author,
-      h = m.id === g.id;
+      _ = m.id === g.id;
     if (c || s === y.xI.FETCHING || s === y.xI.UNKNOWN) return (0, r.jsx)(o.Wb, {
       isHorizontal: true
     });
-    let _ = (0, A.o1)({
+    let h = (0, A.o1)({
       sender: g,
       channel: n,
-      isSender: h,
+      isSender: _,
       inviteState: s
     });
-    if (null == _) return null;
+    if (null == h) return null;
     let v = s === y.xI.PENDING,
-      x = h ? (0, r.jsx)(T, {
+      x = _ ? (0, r.jsx)(T, {
         disabled: !v,
         invite: u,
         channel: n
@@ -241,9 +241,9 @@ let S = e => {
         isExistingSub: null != f
       });
     return (0, r.jsx)(N, {
-      message: _.message,
-      header: _.header,
-      body: _.body,
+      message: h.message,
+      header: h.header,
+      body: h.body,
       compact: i,
       actionButton: x
     })

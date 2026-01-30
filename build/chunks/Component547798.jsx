@@ -1,7 +1,7 @@
 /** Chunk was on 87557 **/
 /** chunk id: 547798, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => N
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,8 +13,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
   Chunk787880 = require("./787880.jsx"),
-  Chunk796104 = require("./796104.js"),
-  Chunk146104 = require("./146104.jsx"),
   Chunk142120 = require("./142120.js"),
   Chunk69555 = require("./69555.js"),
   Chunk237984 = require("./237984.jsx"),
@@ -31,36 +29,36 @@ var Chunk627968 = require("./627968.js"),
   Chunk229988 = require("./229988.js"),
   Chunk473169 = require("./473169.js");
 
-function w() {
+function E() {
   throw Error("Send help")
 }
 
-function I() {
-  let e = j.j0.useSetting(),
+function N() {
+  let e = b.j0.useSetting(),
     [t, r] = l.useState(false);
   return t ? {} : (0, a.jsxs)(d.HOs, {
     children: [(0, a.jsx)("div", {
-      className: i()(E.N, N.SX),
-      children: (0, a.jsx)(_.M, {})
+      className: i()(O.N, T.SX),
+      children: (0, a.jsx)(v.M, {})
     }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Vibing Wumpus",
-        onClick: () => (0, v.A)({
-          source: T.y.KEYBIND
+        onClick: () => (0, f.A)({
+          source: S.y.KEYBIND
         })
       })
     }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Launch Safety Tools Modal",
         onClick: () => {
           let e, t;
-          return t = null != (e = A.A.getChannelId()) ? e : "21154681615024128", void(0, d.mMO)(async () => {
+          return t = null != (e = _.A.getChannelId()) ? e : "21154681615024128", void(0, d.mMO)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("45033"), n.e("46717"), n.e("54105")]).then(n.bind(n, 788099));
@@ -85,23 +83,15 @@ function I() {
               otherUserId: "9876543210",
               channelId: t,
               warningId: "test-warning-id",
-              warningType: b._j.INAPPROPRIATE_CONVERSATION_TIER_2
+              warningType: g._j.INAPPROPRIATE_CONVERSATION_TIER_2
             }, n))
           }, {
-            modalKey: O.V
+            modalKey: C.V
           })
         }
       })
     }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
-      children: (0, a.jsx)(d.Button, {
-        variant: "primary",
-        size: "sm",
-        text: "Launch Clicker Game",
-        onClick: () => (0, h.A)("devtools")
-      })
-    }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -109,15 +99,15 @@ function I() {
         onClick: () => (0, m.g)()
       })
     }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Reset Hang Status State",
-        onClick: g.B7
+        onClick: h.B7
       })
     }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -125,33 +115,25 @@ function I() {
         onClick: c.Oy
       })
     }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
-      children: (0, a.jsx)(d.Button, {
-        variant: "primary",
-        size: "sm",
-        text: "Reset to fake checkpoint",
-        onClick: () => (0, p.nX)(true)
-      })
-    }), (0, a.jsx)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: (0, a.jsx)(d.dOG, {
         label: "Ignore profile speedbump disabled",
         checked: e,
-        onChange: e => j.j0.updateSetting(e)
+        onChange: e => b.j0.updateSetting(e)
       })
     }), (0, a.jsxs)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: [(0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Open Overlay",
-        onClick: () => (0, f.o)()
+        onClick: () => (0, x.o)()
       }), (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Reset Socket",
         onClick: () => {
-          x.A.getSocket().close(), x.A.getSocket().connect()
+          p.A.getSocket().close(), p.A.getSocket().connect()
         }
       }), (0, a.jsx)(d.Button, {
         variant: "primary",
@@ -169,20 +151,20 @@ function I() {
         variant: "primary",
         size: "sm",
         text: "Show TOTP Success",
-        onClick: () => (0, y.sy)(true)
+        onClick: () => (0, j.sy)(true)
       }), (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
         text: "Trigger Suspicious Sessions Notifications",
         onClick: () => {
           o.Bo.post({
-            url: S.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
+            url: A.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
             rejectWithError: true
           })
         }
       })]
     }), (0, a.jsxs)("div", {
-      className: i()(E.N, N.QB),
+      className: i()(O.N, T.QB),
       children: [(0, a.jsx)(d.l6P, {
         label: "Trigger native crash",
         hideLabel: true,
@@ -213,7 +195,7 @@ function I() {
           value: 4,
           id: "out_of_memory"
         }],
-        onSelectionChange: e => null != e && C.Ay.crash(e)
+        onSelectionChange: e => null != e && y.Ay.crash(e)
       }), (0, a.jsx)(d.l6P, {
         label: "Trigger JS crash",
         hideLabel: true,
@@ -236,7 +218,7 @@ function I() {
           value: s.qQ.MainProcess,
           id: "exception_in_main_process"
         }],
-        onSelectionChange: e => null != e ? void C.Ay.triggerJSException(e) : true
+        onSelectionChange: e => null != e ? void y.Ay.triggerJSException(e) : true
       }), (0, a.jsx)(d.Button, {
         variant: "primary",
         size: "sm",
@@ -246,7 +228,7 @@ function I() {
         variant: "primary",
         size: "sm",
         text: "onClick Throw",
-        onClick: w
+        onClick: E
       })]
     })]
   })

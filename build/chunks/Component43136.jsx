@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 43136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S,
@@ -42,8 +42,8 @@ function C(e) {
     }), (0, r.jsx)(o.hKd, {
       size: 4,
       horizontal: true
-    }), (0, r.jsx)(_.A, {
-      direction: _.A.Directions.RIGHT,
+    }), (0, r.jsx)(h.A, {
+      direction: h.A.Directions.RIGHT,
       className: j.wY
     })]
   })
@@ -83,10 +83,10 @@ function S(e) {
     subscriptionsSettings: d
   } = e, m = l.id, {
     nickname: f,
-    nickcolor: _
-  } = (0, s.cf)([g.Ay, h.default], () => {
+    nickcolor: h
+  } = (0, s.cf)([g.Ay, _.default], () => {
     var e, t;
-    let n = h.default.getCurrentUser();
+    let n = _.default.getCurrentUser();
     a()(null != n, "user cannot be null");
     let r = g.Ay.getMember(m, n.id);
     return {
@@ -157,7 +157,7 @@ function S(e) {
             usernameHook: function(e, t) {
               return (0, r.jsx)("span", {
                 style: {
-                  color: _
+                  color: h
                 },
                 children: e
               }, t)

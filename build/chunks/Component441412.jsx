@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 441412, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -18,7 +18,7 @@ function c(e) {
     usernameHook: u,
     onClickPins: d,
     compact: p
-  } = e, m = (0, a.Ay)(c), f = m.nick, g = u(m), h = () => {
+  } = e, m = (0, a.Ay)(c), f = m.nick, g = u(m), _ = () => {
     if (null == c.messageReference) return;
     let {
       channel_id: e,
@@ -29,7 +29,7 @@ function c(e) {
       messageId: t,
       flash: true
     })
-  }, _ = {
+  }, h = {
     iconNode: (0, r.jsx)(i.tsw, {
       size: "sm",
       color: "currentColor"
@@ -52,18 +52,18 @@ function c(e) {
       })
     }
     return e
-  }({}, _), n = n = {
+  }({}, h), n = n = {
     timestamp: c.timestamp,
     compact: p,
     children: null != c.messageReference ? null == d ? o.intl.format(o.t.lD5tup, {
       usernameHook: g,
       username: f,
-      messageOnClick: h
+      messageOnClick: _
     }) : o.intl.format(o.t.yIDvPL, {
       usernameHook: g,
       username: f,
       pinsActionOnClick: d,
-      messageOnClick: h
+      messageOnClick: _
     }) : null == d ? o.intl.format(o.t.vfkjqx, {
       usernameHook: g,
       username: f

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 67851 **/
 /** chunk id: 133296, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -7,7 +7,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk451988 = require("./451988.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends(r = Chunk64700.Component) {
+class s extends(r = Chunk64700.Component) {
   static getDerivedStateFromProps(e) {
     return e.disable ? {
       hovered: false
@@ -34,8 +34,8 @@ class o extends(r = Chunk64700.Component) {
   componentDidUpdate(e, t) {
     let {
       props: n
-    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), i = r(n, this.state), l = r(e, t);
-    i && !l || e.interval !== n.interval ? this.startTimer() : !i && l && this.stopTimer()
+    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), l = r(n, this.state), a = r(e, t);
+    l && !a || e.interval !== n.interval ? this.startTimer() : !l && a && this.stopTimer()
   }
   startTimer() {
     let {
@@ -55,25 +55,25 @@ class o extends(r = Chunk64700.Component) {
     let {
       children: n,
       className: r,
-      disable: l
-    } = this.props, a = l ? null : {
+      disable: a
+    } = this.props, i = a ? null : {
       onMouseEnter: this.handlePause,
       onFocus: this.handlePause,
       onMouseLeave: this.handleResume,
       onBlur: this.handleResume
     };
-    return (0, i.jsx)("div", (e = function(e) {
+    return (0, l.jsx)("div", (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          s(e, t, n[t])
+          o(e, t, n[t])
         })
       }
       return e
-    }({}, a), t = t = {
+    }({}, i), t = t = {
       className: r,
       children: n
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -88,21 +88,21 @@ class o extends(r = Chunk64700.Component) {
     }), e))
   }
   constructor(...e) {
-    super(...e), s(this, "timer", new a.IX), s(this, "state", {
+    super(...e), o(this, "timer", new i.IX), o(this, "state", {
       hovered: false
-    }), s(this, "handlePause", () => {
+    }), o(this, "handlePause", () => {
       this.state.hovered || this.setState({
         hovered: true
       })
-    }), s(this, "handleResume", () => {
+    }), o(this, "handleResume", () => {
       this.setState({
         hovered: false
       })
     })
   }
 }
-s(o, "defaultProps", {
+o(s, "defaultProps", {
   disable: false,
   pauseOnHover: false
 });
-let c = o
+let c = s

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 229673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -23,8 +23,8 @@ function f(e) {
     author: f,
     compact: g
   } = e, {
-    nick: h
-  } = (0, o.d8)(f, n), _ = (0, c.P)({
+    nick: _
+  } = (0, o.d8)(f, n), h = (0, c.P)({
     user: f,
     channelId: n.id,
     guildId: true,
@@ -32,8 +32,8 @@ function f(e) {
   })(), b = (0, l.h)(t.applicationId);
   if (null == b) return null;
   let A = p.intl.format(p.t.m7Lwas, {
-    username: h,
-    usernameHook: _,
+    username: _,
+    usernameHook: h,
     gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: m.Y_,

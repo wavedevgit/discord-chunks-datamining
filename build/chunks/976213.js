@@ -1,5 +1,5 @@
-/** Chunk was on 52139 **/
-/** chunk id: 976213, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 14787 **/
+/** chunk id: 976213, original params: e,t,i (module,exports,require) **/
 module.exports = {
   ch: "classificationContainer_a48d6b",
   uW: "section_a48d6b",

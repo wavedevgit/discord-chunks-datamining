@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 303682, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   SelectFriendsModalScreens: () => S,
@@ -52,7 +52,7 @@ let C = e => {
       size: "sm",
       title: E.intl.string(E.t["2YigPp"]),
       subtitle: E.intl.format(E.t.OOCbz8, {
-        helpdeskArticle: h.A.getArticleURL(O.MVz.REFERRAL_PROGRAM)
+        helpdeskArticle: _.A.getArticleURL(O.MVz.REFERRAL_PROGRAM)
       }),
       onClose: t,
       actions: []
@@ -69,7 +69,7 @@ let C = e => {
         formatOption: e => ({
           id: e.id,
           value: e,
-          label: _.Ay.getName(e)
+          label: h.Ay.getName(e)
         }),
         onSelectionChange: e => {
           let t = Array.isArray(e) ? e : [e],
@@ -148,7 +148,7 @@ let C = e => {
       a = (0, c.bG)([A.A], () => A.A.getRecipientStatus()),
       [p, m] = l.useState(new Map),
       [f, g] = l.useState(new Map),
-      [h, _] = l.useState(false);
+      [_, h] = l.useState(false);
     return l.useEffect(() => {
       (async () => {
         let e = new Map;
@@ -171,12 +171,12 @@ let C = e => {
         className: s()(j.qr, j.h0),
         children: (0, i.jsx)(u.Button, {
           variant: "primary",
-          disabled: 0 === f.size || h,
+          disabled: 0 === f.size || _,
           text: t,
           size: "md",
           fullWidth: true,
           onClick: async () => {
-            _(true), await r([...f.values()]), _(false)
+            h(true), await r([...f.values()]), h(false)
           }
         })
       })),
@@ -201,7 +201,7 @@ let T = e => {
     startingScreen: n = 1
   } = e, r = (0, c.bG)([A.A], () => A.A.getReferralsRemaining()), [a, s] = l.useState(n), [o, d] = l.useState([]), {
     analyticsLocations: p
-  } = (0, f.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), h = async e => {
+  } = (0, f.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), _ = async e => {
     g.default.track(O.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
       location_stack: p
     });
@@ -217,9 +217,9 @@ let T = e => {
     onClose: t
   }) : 1 === a ? (0, i.jsx)(C, {
     onClose: t,
-    onShare: h
+    onShare: _
   }) : 3 === a ? (0, i.jsx)(I, {
     onClose: t,
-    onShare: h
+    onShare: _
   }) : true
 }

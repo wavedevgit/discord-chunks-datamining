@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 573163, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk233080 = require("./233080.js"),
   Chunk710504 = require("./710504.js");
 
-function _(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function b(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ class v extends Chunk64700.PureComponent {
       isLurking: i,
       isPendingMember: l,
       isForumToolbar: c,
-      channel: _,
+      channel: h,
       className: b,
       forceAddReactions: A,
       reactionClassName: y,
@@ -82,7 +82,7 @@ class v extends Chunk64700.PureComponent {
       visibleReactionsCount: j
     } = this.props, {
       disableTransitionAppear: C
-    } = this.state, I = v ? h : g, S = j > 0;
+    } = this.state, I = v ? _ : g, S = j > 0;
     if (!S && !A) return null;
     let T = A || S;
     return (0, r.jsxs)(s.F, {
@@ -109,7 +109,7 @@ class v extends Chunk64700.PureComponent {
         className: y
       }), O > 0 && (0, r.jsx)(o.DUT, {
         onClick: t => {
-          t.stopPropagation(), (0, m.$l)(_, e)
+          t.stopPropagation(), (0, m.$l)(h, e)
         },
         className: a()(I.reaction, y, I.remainingReactions),
         "aria-label": f.intl.string(f.t.lfIHs4),
@@ -121,7 +121,7 @@ class v extends Chunk64700.PureComponent {
       }), !t && !x && (0, r.jsx)(u.t, {
         tabIndex: T || this.state.isHovered ? 0 : false,
         message: e,
-        channel: _,
+        channel: h,
         useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: a()({
@@ -131,7 +131,7 @@ class v extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), h(this, "state", {
       disableTransitionAppear: true,
       reactionsCount: this.props.message.reactions.length,
       isHovered: false

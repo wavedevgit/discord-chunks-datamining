@@ -24,26 +24,26 @@ var Chunk627968 = require("./627968.js"),
 let v = e => {
   let t, n, v, C, {
       isBlockLoading: A = false,
-      heroBlock: x,
-      tab: S
+      heroBlock: S,
+      tab: x
     } = e,
     O = (0, i.uM)(),
-    y = l.useMemo(() => o.A.getCategoryForProduct(x.rewardSkuId), [x.rewardSkuId]),
-    j = (0, s.bG)([c.A], () => c.A.getPurchase(x.rewardSkuId)),
+    y = l.useMemo(() => o.A.getCategoryForProduct(S.rewardSkuId), [S.rewardSkuId]),
+    j = (0, s.bG)([c.A], () => c.A.getPurchase(S.rewardSkuId)),
     {
       products: T
-    } = (t = (0, d.A)(), n = l.useMemo(() => A ? [] : t(x.rankedSkuIds).filter(e => e.skuId !== x.rewardSkuId || null != j), [A, t, x.rankedSkuIds, j, x.rewardSkuId]), v = (0, u.p)()(n), C = (0, g.X)(v), {
+    } = (t = (0, d.A)(), n = l.useMemo(() => A ? [] : t(S.rankedSkuIds).filter(e => e.skuId !== S.rewardSkuId || null != j), [A, t, S.rankedSkuIds, j, S.rewardSkuId]), v = (0, u.p)()(n), C = (0, g.X)(v), {
       products: (0, b.od)(C)
     }),
-    L = l.useMemo(() => !A && 0 !== x.rankedSkuIds.length && !(T.length > 0) && x.rankedSkuIds.every(e => {
+    L = l.useMemo(() => !A && 0 !== S.rankedSkuIds.length && !(T.length > 0) && S.rankedSkuIds.every(e => {
       var t;
       return (null == (t = o.A.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [A, x.rankedSkuIds, T.length]),
+    }), [A, S.rankedSkuIds, T.length]),
     I = A || L,
     {
       readyToClaim: k
-    } = (0, h.K)(y, x.rewardSkuId),
-    N = null == j && null != x.rewardSkuId && null != y;
+    } = (0, h.K)(y, S.rewardSkuId),
+    N = null == j && null != S.rewardSkuId && null != y;
   return (0, r.jsx)(a.A, {
     gap: "xl",
     children: I ? (0, r.jsx)(r.Fragment, {
@@ -57,9 +57,9 @@ let v = e => {
         },
         children: (0, r.jsx)(_.A, {
           category: y,
-          rewardSkuId: x.rewardSkuId
+          rewardSkuId: S.rewardSkuId
         })
-      }, x.rewardSkuId), T.map((e, t) => {
+      }, S.rewardSkuId), T.map((e, t) => {
         let n = o.A.getCategoryForProduct(e.skuId);
         return null == e || null == n ? null : (0, r.jsx)(i.R9, {
           newValue: {
@@ -69,8 +69,8 @@ let v = e => {
           },
           children: (0, r.jsx)(f.A, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: S === E.G2.ORBS ? m.Hi.ORBS : true,
-            onClickAnalytics: (0, m.UU)(e, S, O)
+            prioritizedCurrency: x === E.G2.ORBS ? m.Hi.ORBS : true,
+            onClickAnalytics: (0, m.UU)(e, x, O)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

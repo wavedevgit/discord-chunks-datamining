@@ -1,8 +1,7 @@
-/** Chunk was on 89455 **/
-/** chunk id: 61266, original params: e,n,t (module,exports,require) **/
-"use strict";
+/** Chunk was on 89488 **/
+/** chunk id: 61266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,21 +15,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk483496 = require("./483496.js"),
   Chunk206314 = require("./206314.js");
 
-function m(e) {
-  let n, {
-      content: t,
+function f(e) {
+  let t, {
+      content: n,
       className: o
     } = e,
-    m = (n = (0, c.jc)(), (0, i.useMemo)(() => {
+    f = (t = (0, c.jc)(), (0, i.useMemo)(() => {
       let e;
-      return null === n ? null : (e = null != n.message ? (0, s.ko)(n.message, _.l) : (0, s.Le)({
-        channelId: n.channelId,
-        renderOptions: _.l
-      }), l.A.parse(t, true, e))
-    }, [t, n])),
-    f = (0, u.X)();
+      return null === t ? null : (e = null != t.message ? (0, _.ko)(t.message, d.l) : (0, _.Le)({
+        channelId: t.channelId,
+        renderOptions: d.l
+      }), l.A.parse(n, true, e))
+    }, [n, t])),
+    m = (0, s.X)();
   return (0, r.jsx)("div", {
-    className: a()(o, b.PT, d.T, f.className),
-    children: m
+    className: a()(o, p.PT, u.T, m.className),
+    children: f
   })
 }

@@ -1,12 +1,12 @@
-/** Chunk was on 92917 **/
-/** chunk id: 219444, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 84497 **/
+/** chunk id: 219444, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  $k: () => o,
-  Vf: () => a
+  $k: () => i,
+  Vf: () => s
 });
 var Chunk600975 = require("./600975.js"),
   Chunk652215 = require("./652215.js");
-let l = (0, Chunk600975.C)({
+let a = (0, Chunk600975.C)({
   kind: "guild",
   id: "2023-03_guild_media_channel",
   label: "Media Channel",
@@ -22,19 +22,19 @@ let l = (0, Chunk600975.C)({
   }]
 });
 
-function a(e) {
+function s(e) {
   var t;
   let {
-    enabled: n
-  } = l.useExperiment({
-    guildId: null != (t = null == e ? true : e.id) ? t : i.dJq,
+    enabled: l
+  } = a.useExperiment({
+    guildId: null != (t = null == e ? true : e.id) ? t : r.dJq,
     location: "96e84c_1"
   }, {
     autoTrackExposure: true
   });
-  return (null == e ? true : e.id) != null && n
+  return (null == e ? true : e.id) != null && l
 }
-let s = (0, Chunk600975.C)({
+let o = (0, Chunk600975.C)({
   kind: "user",
   id: "2023-04_guild_media_channel_post_preview_embed_users",
   label: "Guild Role Subscription Users",
@@ -50,10 +50,10 @@ let s = (0, Chunk600975.C)({
   }]
 });
 
-function o() {
+function i() {
   let {
     enabledForUser: e
-  } = s.useExperiment({
+  } = o.useExperiment({
     location: "96e84c_2"
   }, {
     autoTrackExposure: true

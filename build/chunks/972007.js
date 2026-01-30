@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 972007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => u
@@ -15,11 +15,11 @@ let u = e => {
     searchQuery: t,
     selectedUsers: n,
     limit: i
-  } = e, u = (0, a.bG)([c.A], () => c.A.getRecipientStatus()), d = (0, a.bG)([c.A], () => c.A.getReferralsRemaining()), [p, m] = r.useState(0), [f, g] = r.useState([]), [h, _] = r.useState(false), [b, A] = r.useState(false), [y, v] = r.useState(new Map);
+  } = e, u = (0, a.bG)([c.A], () => c.A.getRecipientStatus()), d = (0, a.bG)([c.A], () => c.A.getReferralsRemaining()), [p, m] = r.useState(0), [f, g] = r.useState([]), [_, h] = r.useState(false), [b, A] = r.useState(false), [y, v] = r.useState(new Map);
   l()(null != d, "Referrals remaining should not be null");
   let x = async (e, r) => {
-    if (!h && !b && null != e && 0 !== d) try {
-      _(true);
+    if (!_ && !b && null != e && 0 !== d) try {
+      h(true);
       let i = [...y.values()];
       for (let [e, t] of u)
         if (t === o.aK.PENDING && !y.has(e)) {
@@ -37,7 +37,7 @@ let u = e => {
     } catch (e) {
       A(true)
     } finally {
-      _(false)
+      h(false)
     }
   }, O = {
     limit: i,
@@ -64,7 +64,7 @@ let u = e => {
     eligibleUsers: f,
     fetchUsers: () => x(p, i),
     hasError: b,
-    isFetching: h,
+    isFetching: _,
     resendUsers: y
   }
 }

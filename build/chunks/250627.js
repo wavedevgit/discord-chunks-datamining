@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 250627, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BB: () => h,
+  BB: () => _,
   Qi: () => m,
   az: () => g,
   bb: () => p,
@@ -49,4 +49,4 @@ let p = e => {
     }))
   },
   g = e => (0, i.bG)([u.A], () => null == e ? true : u.A.getGuildProduct(e)),
-  h = e => (0, i.bG)([s.A], () => null != e && s.A.can(d.xBc.ADMINISTRATOR, e))
+  _ = e => (0, i.bG)([s.A], () => null != e && s.A.can(d.xBc.ADMINISTRATOR, e))

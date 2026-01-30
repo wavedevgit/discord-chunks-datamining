@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 749795, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -22,8 +22,8 @@ function g(e) {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, g = (0, o.Ay)(t), h = i(g), {
-    avatarSrc: _,
+  } = e, g = (0, o.Ay)(t), _ = i(g), {
+    avatarSrc: h,
     eventHandlers: {
       onMouseEnter: b,
       onMouseLeave: A
@@ -37,7 +37,7 @@ function g(e) {
         [f.oE]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.l, {
-        src: _
+        src: h
       }),
       iconContainerClassName: f.zc,
       compact: n,
@@ -72,7 +72,7 @@ function g(e) {
           }),
           children: m.intl.format(m.t.qntXNQ, {
             username: g.nick,
-            usernameHook: h
+            usernameHook: _
           })
         })]
       })

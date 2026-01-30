@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 740916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -25,7 +25,7 @@ let g = e => {
       }), p.intl.string(p.t["7eicAO"])]
     })
   },
-  h = e => {
+  _ = e => {
     let {
       sku: t,
       className: n
@@ -39,7 +39,7 @@ let g = e => {
       }), (0, d.A)(t)]
     })
   },
-  _ = e => {
+  h = e => {
     let {
       sku: t,
       className: n
@@ -76,7 +76,7 @@ let g = e => {
     } = e;
     return (0, a.jsxs)("div", {
       className: c()(m.nM, n),
-      children: [(0, a.jsx)(_, {
+      children: [(0, a.jsx)(h, {
         sku: t
       }), (0, a.jsx)(b, {
         sku: t
@@ -124,7 +124,7 @@ class x extends(r = Chunk64700.PureComponent) {
           className: c()(t, n)
         });
       case 3:
-        return (0, a.jsx)(h, {
+        return (0, a.jsx)(_, {
           sku: r,
           className: c()(t, n)
         });
@@ -151,7 +151,7 @@ class x extends(r = Chunk64700.PureComponent) {
           className: t
         });
       case 3:
-        return (0, a.jsx)(h, {
+        return (0, a.jsx)(_, {
           sku: n,
           className: c()(m.OB, t)
         });
@@ -182,7 +182,7 @@ class x extends(r = Chunk64700.PureComponent) {
             className: m.nM,
             children: [(0, a.jsx)(A, {
               sku: r
-            }), (0, a.jsx)(_, {
+            }), (0, a.jsx)(h, {
               sku: r
             })]
           }), (0, a.jsx)(b, {

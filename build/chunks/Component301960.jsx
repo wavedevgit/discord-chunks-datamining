@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 301960, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => F
@@ -98,8 +98,8 @@ function U(e, t, n, i, l, s) {
     compact: m,
     channel: f,
     isInteractionUserBlocked: g,
-    isInteractionUserIgnored: h,
-    showAvatarPopout: _,
+    isInteractionUserIgnored: _,
+    showAvatarPopout: h,
     showTargetAvatarPopout: b,
     onClickAvatar: A,
     onUserContextMenu: y,
@@ -108,7 +108,7 @@ function U(e, t, n, i, l, s) {
     onPopoutRequestClose: O
   } = e;
   if (m && 1 === n) return null;
-  if (m && null == d.activityInstance || g || h) return (0, r.jsx)("div", {
+  if (m && null == d.activityInstance || g || _) return (0, r.jsx)("div", {
     className: D.Cz,
     children: (0, r.jsx)(k, {
       className: D.Jx
@@ -149,7 +149,7 @@ function U(e, t, n, i, l, s) {
       onContextMenu: 1 === n ? x : y,
       ref: s
     }),
-    I = 1 === n ? b : _;
+    I = 1 === n ? b : h;
   return null != l && null != I && null != s ? (0, r.jsx)(p.YNO, {
     targetElementRef: s,
     renderPopout: l,
@@ -201,7 +201,7 @@ function F(e) {
     {
       analyticsLocations: c,
       newestAnalyticsLocation: j
-    } = (0, _.Ay)(h.A.EXECUTED_COMMAND),
+    } = (0, h.Ay)(_.A.EXECUTED_COMMAND),
     T = (0, d.bG)([E.default], () => E.default.getCurrentUser()),
     k = i.useRef(null),
     F = i.useRef(null),
@@ -225,17 +225,17 @@ function F(e) {
     q = (0, S.d8)(W, s),
     J = i.useMemo(() => e.compact ? (0, P.A)((0, I.i$)(u()(), "LT")) : null, [e.compact]),
     Q = (0, f.Gp)(s.id),
-    Z = l.interaction;
-  if (null == Z || null == Y) return null;
-  let X = () => {
-    let t = U(e, Z.user, 0, Y, e => H(e, Z.user, [h.A.AVATAR]), k),
-      n = G(e, Z.user, 0, Y, e => H(e, Z.user));
+    X = l.interaction;
+  if (null == X || null == Y) return null;
+  let Z = () => {
+    let t = U(e, X.user, 0, Y, e => H(e, X.user, [_.A.AVATAR]), k),
+      n = G(e, X.user, 0, Y, e => H(e, X.user));
     return (0, r.jsxs)(i.Fragment, {
       children: [t, n]
     }, "user")
   };
   if ((null == l ? true : l.activityInstance) === null || (0, v.V)(l)) n = R.intl.format(R.t["rg7U+C"], {
-    userHook: X,
+    userHook: Z,
     commandHook: () => {
       let t = function(e, t, n) {
         let {
@@ -327,7 +327,7 @@ function F(e) {
   }) : null != W && (n = (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(B, {}), (0, r.jsx)(() => {
       if (null == W) return null;
-      let t = U(e, W, 1, q, e => H(e, W, [h.A.AVATAR]), k),
+      let t = U(e, W, 1, q, e => H(e, W, [_.A.AVATAR]), k),
         n = G(e, W, 1, q, e => H(e, W));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
@@ -350,7 +350,7 @@ function F(e) {
       })
     };
     n = Q ? R.intl.format(R.t.kfV8WM, {
-      userHook: X,
+      userHook: Z,
       activityHook: () => (0, r.jsx)(p.DUT, {
         tag: "span",
         onClick: e,
@@ -360,10 +360,10 @@ function F(e) {
         })
       })
     }) : R.intl.format(R.t["6FeSyT"], {
-      userHook: X
+      userHook: Z
     })
   }
-  return (0, r.jsx)(_.f5, {
+  return (0, r.jsx)(h.f5, {
     value: c,
     children: (0, r.jsx)("div", {
       className: a()(D.JZ, D.NB, D.JE, J),

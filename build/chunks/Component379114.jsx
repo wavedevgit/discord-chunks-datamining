@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 379114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -31,7 +31,7 @@ function A(e) {
       className: b._X,
       color: "status-positive-text",
       variant: "heading-xl/medium",
-      children: _.intl.format(_.t.MLKSln, {
+      children: h.intl.format(h.t.MLKSln, {
         username: t,
         usernameHook: (e, t) => (0, r.jsx)(l.Text, {
           tag: "span",
@@ -54,7 +54,7 @@ function y(e) {
   return (0, r.jsxs)("div", {
     className: b.pG,
     role: "img",
-    "aria-label": _.intl.formatToPlainString(_.t["utf8+W"], {
+    "aria-label": h.intl.formatToPlainString(h.t["utf8+W"], {
       username: i
     }),
     children: [(0, r.jsx)(f.A, {
@@ -71,9 +71,9 @@ function v(e) {
   var t, l;
   let {
     channel: f,
-    message: _,
+    message: h,
     compact: b
-  } = e, A = (0, o.Ay)(_), v = function(e) {
+  } = e, A = (0, o.Ay)(h), v = function(e) {
     let {
       author: t,
       channel: n,
@@ -86,7 +86,7 @@ function v(e) {
     })(t), {
       analyticsLocations: u
     } = (0, s.Ay)(a.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), m = r.roleSubscriptionData, f = i.useCallback(() => {
-      (0, d.pX)(g.BVt.CHANNEL(l, h.VV.ROLE_SUBSCRIPTIONS), {
+      (0, d.pX)(g.BVt.CHANNEL(l, _.VV.ROLE_SUBSCRIPTIONS), {
         sourceLocationStack: u
       }), (null == m ? true : m.role_subscription_listing_id) != null && (0, p.xH)(l, n.id, r.id, m.role_subscription_listing_id)
     }, [l, n, r, m, u]);
@@ -99,22 +99,22 @@ function v(e) {
     })
   }({
     channel: f,
-    message: _,
+    message: h,
     author: A
-  }), x = (null == (t = _.roleSubscriptionData) ? true : t.total_months_subscribed) != null && (null == (l = _.roleSubscriptionData) ? true : l.total_months_subscribed) <= 1;
+  }), x = (null == (t = h.roleSubscriptionData) ? true : t.total_months_subscribed) != null && (null == (l = h.roleSubscriptionData) ? true : l.total_months_subscribed) <= 1;
   return null == v ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.A, {
       icon: n(394803),
-      timestamp: _.timestamp,
+      timestamp: h.timestamp,
       compact: b,
       children: v
     }), x && (0, r.jsx)(y, {
       guildId: f.guild_id,
-      user: _.author,
+      user: h.author,
       username: A.nick
     }), (0, r.jsx)(m.A, {
       channel: f,
-      message: _
+      message: h
     })]
   })
 }

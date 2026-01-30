@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 795982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -83,7 +83,7 @@ function P(e) {
 function w(e) {
   let {
     channel: t
-  } = e, n = (0, h.Vp)({
+  } = e, n = (0, _.Vp)({
     location: "ForwardFooter"
   }), l = i.useMemo(() => (0, u.gU)(t), [t]);
   return n.enabled && null != l ? (0, r.jsx)(l, {
@@ -99,7 +99,7 @@ function R(e) {
     message: n,
     snapshot: l,
     index: s
-  } = e, o = i.useMemo(() => (0, C.A)(n, l), [n, l]), c = _.hD.useSetting(), u = _.rs.useSetting(), d = (0, a.bG)([A.A], () => A.A.isDeveloper), h = (0, p.S)((null != (t = o.editedTimestamp) ? t : o.timestamp).valueOf()), {
+  } = e, o = i.useMemo(() => (0, C.A)(n, l), [n, l]), c = h.hD.useSetting(), u = h.rs.useSetting(), d = (0, a.bG)([A.A], () => A.A.isDeveloper), _ = (0, p.S)((null != (t = o.editedTimestamp) ? t : o.timestamp).valueOf()), {
     content: y,
     hasSpoilerEmbeds: v,
     hasBailedAst: x
@@ -107,12 +107,12 @@ function R(e) {
     hideSimpleEmbedContent: c && u,
     isInteracting: false,
     formatInline: false,
-    allowList: h,
-    allowHeading: h,
+    allowList: _,
+    allowHeading: _,
     allowLinks: true,
     allowDevLinks: d,
     previewLinkTarget: true
-  }), O = (0, a.bG)([b.A], () => b.A.getChannel(n.channel_id)), E = _.hH.useSetting();
+  }), O = (0, a.bG)([b.A], () => b.A.getChannel(n.channel_id)), E = h.hH.useSetting();
   return null == O ? null : (0, r.jsxs)("div", {
     className: T.kL,
     children: [(0, r.jsx)("div", {

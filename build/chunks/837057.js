@@ -1,12 +1,12 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 837057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   transitionToGlobalDiscovery: () => function e(t) {
-    var n, g, h;
-    let _ = t.tab;
+    var n, g, _;
+    let h = t.tab;
     switch (u.A.setState({
-        selectedTab: _
-      }), _) {
+        selectedTab: h
+      }), h) {
       case d.GlobalDiscoveryTab.SERVERS:
         let b = t.selectedServersTab;
         return null != b ? l.A.setState({
@@ -31,7 +31,7 @@ require.d(exports, {
               source: null == a ? true : a.name,
               session_id: n,
               guild_id: l,
-              user_id: null == (h = o.default.getCurrentUser()) ? true : h.id
+              user_id: null == (_ = o.default.getCurrentUser()) ? true : _.id
             }), t.newSessionState.restorePreviousView) return e(function() {
             let {
               lastItem: e
@@ -77,7 +77,7 @@ require.d(exports, {
           forceDiscoveryQuestHomeRoute: true
         });
       default:
-        throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(_))
+        throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(h))
     }
   }
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./65821.js");

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 892742, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -22,23 +22,23 @@ function g(e) {
   } = e, {
     quests: n,
     excludedQuests: g,
-    isFetchingCurrentQuests: h
+    isFetchingCurrentQuests: _
   } = (0, s.mL)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), _ = i.useMemo(() => (0, o.vc)(t, n, g), [t, n, g]), b = i.useMemo(() => g.find(e => e.id === t), [t, g]);
-  return h ? (0, r.jsx)(l.y$y, {
+  }), h = i.useMemo(() => (0, o.vc)(t, n, g), [t, n, g]), b = i.useMemo(() => g.find(e => e.id === t), [t, g]);
+  return _ ? (0, r.jsx)(l.y$y, {
     className: f.u
-  }) : null == _ ? null != b ? (0, r.jsx)(u.g, {
+  }) : null == h ? null != b ? (0, r.jsx)(u.g, {
     questId: t
   }) : (0, r.jsx)(d.l, {
     questId: t,
     reason: d.o.NOT_FOUND
-  }) : (0, c.E0)(_.config) ? (0, r.jsx)(m.R, {
-    quest: _,
+  }) : (0, c.E0)(h.config) ? (0, r.jsx)(m.R, {
+    quest: h,
     location: a.uF.QUESTS_EMBED,
     sourceQuestContent: a.uF.QUESTS_EMBED
-  }, _.id) : (0, r.jsx)(p.S, {
+  }, h.id) : (0, r.jsx)(p.S, {
     questId: t
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 939344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -18,15 +18,15 @@ function o(e) {
     joinable: u,
     usernameHook: d,
     onClickJoinCall: p
-  } = e, m = (0, i.Ay)(t), f = m.nick, g = d(m), h = (0, a.K)(t);
+  } = e, m = (0, i.Ay)(t), f = m.nick, g = d(m), _ = (0, a.K)(t);
   return c ? (0, r.jsx)(l.A, {
     icon: n(130158),
     timestamp: t.timestamp,
     compact: o,
-    children: null != h ? s.intl.format(s.t.AcqBmO, {
+    children: null != _ ? s.intl.format(s.t.AcqBmO, {
       username: f,
       usernameHook: g,
-      callDuration: h
+      callDuration: _
     }) : s.intl.format(s.t["43phHx"], {
       username: f,
       usernameHook: g
@@ -35,10 +35,10 @@ function o(e) {
     icon: n(175476),
     timestamp: t.timestamp,
     compact: o,
-    children: [null != h ? s.intl.format(s.t["7TeC1P"], {
+    children: [null != _ ? s.intl.format(s.t["7TeC1P"], {
       username: f,
       usernameHook: g,
-      callDuration: h
+      callDuration: _
     }) : s.intl.format(s.t.LuB5RD, {
       username: f,
       usernameHook: g

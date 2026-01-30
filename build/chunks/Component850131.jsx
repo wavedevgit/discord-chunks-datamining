@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 850131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -101,7 +101,7 @@ function x(e) {
             className: A.Dq,
             scaleFontToUserSetting: true,
             children: a
-          }), (0, r.jsx)(h.Vx, {
+          }), (0, r.jsx)(_.Vx, {
             size: 16,
             className: A.To,
             isVictor: true,
@@ -199,7 +199,7 @@ function E(e) {
     channel: l,
     compact: a,
     disableInteraction: o = false
-  } = e, d = n.embeds[0], h = i.useMemo(() => (0, g.A)(d), [d]), y = (0, s.EJ)(null != (t = null == h ? true : h.questionText) ? t : "", _.TU), v = (0, p.Ay)(n), x = (0, m.P)({
+  } = e, d = n.embeds[0], _ = i.useMemo(() => (0, g.A)(d), [d]), y = (0, s.EJ)(null != (t = null == _ ? true : _.questionText) ? t : "", h.TU), v = (0, p.Ay)(n), x = (0, m.P)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
@@ -212,7 +212,7 @@ function E(e) {
       returnMessageId: n.id
     })
   }, [n.id, E]);
-  return null == h ? null : (0, r.jsxs)(r.Fragment, {
+  return null == _ ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.A, {
       iconNode: (0, r.jsx)(c.YRe, {
         size: "xs"
@@ -227,7 +227,7 @@ function E(e) {
       })
     }), (0, r.jsx)(O, {
       className: A.E6,
-      data: h,
+      data: _,
       onClickPollLink: o ? true : j
     })]
   })

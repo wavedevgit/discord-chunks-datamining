@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 437290, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -22,11 +22,11 @@ function d(e) {
     tooltipConfig: m
   } = e, f = i.useRef(null), {
     avatarSrc: g,
-    eventHandlers: h
+    eventHandlers: _
   } = (0, c.A)({
     userId: null == n ? true : n.id,
     size: o._3J.SIZE_32
-  }), _ = null != (t = n.globalName) ? t : n.username;
+  }), h = null != (t = n.globalName) ? t : n.username;
   return (0, r.jsx)(s.m, {
     text: (null == m ? true : m.isActive(n, p)) ? m.text(n) : null,
     position: "top",
@@ -58,16 +58,16 @@ function d(e) {
             [u.SU]: p
           }),
           src: g,
-          "aria-label": _,
+          "aria-label": h,
           size: o._3J.SIZE_32
-        }, h))
+        }, _))
       }), (0, r.jsxs)("div", {
         className: u.QV,
         children: [(0, r.jsx)(o.Text, {
           className: u.nT,
           color: p ? "text-muted" : "text-default",
           variant: "text-md/semibold",
-          children: _
+          children: h
         }), (0, r.jsx)(o.Text, {
           className: u.nT,
           color: p ? "text-muted" : "text-subtle",

@@ -102,14 +102,14 @@ function k(e) {
             size: "md",
             color: u.LU0.colors.TEXT_DEFAULT
           })
-        }), (0, r.jsx)(S.A, {
+        }), (0, r.jsx)(x.A, {
           tabs: F,
           selectedTab: t,
           onTabSelect: W,
           showOrbRentalNewBadge: U
         }), (0, r.jsxs)("div", {
           className: I.sZ,
-          children: [(0, r.jsx)(x.A, {
+          children: [(0, r.jsx)(S.A, {
             handleTransition: n,
             selectedTab: t,
             isNarrow: B,

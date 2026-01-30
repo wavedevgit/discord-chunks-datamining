@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 112007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -53,8 +53,8 @@ function x(e) {
     } = (0, d.Ay)(u.A.INVITE_EMBED),
     [q, J] = i.useState(false),
     Q = i.useCallback(() => J(false), []),
-    Z = i.useRef(null),
-    X = i.useCallback(() => {
+    X = i.useRef(null),
+    Z = i.useCallback(() => {
       J(true), (0, c.Pq)(K, "show profile", Y)
     }, [K, Y]),
     $ = i.useCallback(() => {
@@ -68,9 +68,9 @@ function x(e) {
     }, [P, w, Y, B, S, T]);
   if (null == N) {
     if (null == P.guild) return (0, r.jsx)(b.A, {});
-    (N = h.DY(P.guild)).premiumTier = null != (E = P.guild.premium_tier) ? E : A.TVA.NONE
+    (N = _.DY(P.guild)).premiumTier = null != (E = P.guild.premium_tier) ? E : A.TVA.NONE
   }
-  let ee = (0, _.l)({
+  let ee = (0, h.l)({
     isVoiceChannel: z,
     isOwnInvite: D,
     isGuest: V,
@@ -85,10 +85,10 @@ function x(e) {
       name: N.name,
       shouldShow: q,
       onRequestClose: Q,
-      targetElementRef: Z,
+      targetElementRef: X,
       children: () => (0, r.jsx)(f.A.GuildName, {
         guild: N,
-        ref: Z
+        ref: X
       })
     }), (0, r.jsx)("span", {
       className: v.E3,
@@ -138,7 +138,7 @@ function x(e) {
           guild: N
         }), (0, r.jsx)(f.A.Info, {
           title: C,
-          onClick: X,
+          onClick: Z,
           children: j
         })]
       }), (0, r.jsx)("div", {

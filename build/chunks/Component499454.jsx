@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 499454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => p
@@ -20,7 +20,7 @@ function p(e) {
     channelContext: p,
     customGiftMessage: m,
     giftInfo: f
-  } = e, g = false, h = null, _ = l.default.getCurrentUser(), b = (0, o.CC)(null == _ ? true : _.premiumType, u.PremiumTypes.TIER_0);
+  } = e, g = false, _ = null, h = l.default.getCurrentUser(), b = (0, o.CC)(null == h ? true : h.premiumType, u.PremiumTypes.TIER_0);
   (0, i.mMO)(async () => {
     let {
       default: e
@@ -51,14 +51,14 @@ function p(e) {
         emojiName: null == f || null == (i = f.emoji) ? true : i.name,
         soundId: null == f || null == (l = f.sound) ? true : l.id,
         onComplete: (e, t) => {
-          h = e, t && (g = t, e.isSubscription && null == a.A.getPremiumSubscription(false) && (0, c.o)(true))
+          _ = e, t && (g = t, e.isSubscription && null == a.A.getPremiumSubscription(false) && (0, c.o)(true))
         }
       }, n))
     }
   }, {
     onCloseCallback: () => {
       var e;
-      g && null != h && !b && h.isSubscription && (null == h || null == (e = h.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s._.dispatch(d.jej.PREMIUM_SUBSCRIPTION_CREATED)
+      g && null != _ && !b && _.isSubscription && (null == _ || null == (e = _.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s._.dispatch(d.jej.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

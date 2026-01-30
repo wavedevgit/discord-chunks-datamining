@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 769840, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function g(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,68 +49,68 @@ function g(e, t) {
   }), e
 }
 
-function x(e) {
+function h(e) {
   let {
     entry: t,
     channel: n,
     className: a
-  } = e, x = l.useRef(null), y = l.useRef(null), {
-    displayParticipants: v,
-    participant1: j,
-    participant2: C,
-    numOtherParticipants: _,
-    orderedParticipants: A
-  } = (0, u.A)(t), O = [j, C];
+  } = e, h = l.useRef(null), j = l.useRef(null), {
+    displayParticipants: g,
+    participant1: A,
+    participant2: v,
+    numOtherParticipants: E,
+    orderedParticipants: C
+  } = (0, u.A)(t), x = [A, v];
   return (0, r.jsxs)("div", {
-    className: i()(h.kL, a),
-    children: [v.length > 0 ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.A, {
-        targetElementRef: x,
-        participants: A,
+    className: i()(O.kL, a),
+    children: [g.length > 0 ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(m.A, {
+        targetElementRef: h,
+        participants: C,
         channel: n,
-        children: e => (0, r.jsx)(o.DUT, g(b({
-          innerRef: x,
-          className: h.vk
+        children: e => (0, r.jsx)(s.DUT, y(b({
+          innerRef: h,
+          className: O.vk
         }, e), {
-          children: (0, r.jsx)(s.A, {
+          children: (0, r.jsx)(o.A, {
             maxUsers: 3,
-            users: v,
-            size: o._3J.SIZE_20,
+            users: g,
+            size: s._3J.SIZE_20,
             hideOverflowCount: true,
             disableUsernameTooltip: true
           })
         }))
-      }), (0, r.jsx)(o.hKd, {
+      }), (0, r.jsx)(s.hKd, {
         size: 6,
         horizontal: true
       })]
-    }) : null, (0, r.jsx)(o.Heading, {
+    }) : null, (0, r.jsx)(s.Heading, {
       variant: "text-sm/semibold",
       color: "text-subtle",
-      className: i()(h.IY, h.Io),
+      className: i()(O.IY, O.Io),
       scaleFontToUserSetting: true,
-      children: p.intl.format(p.t.rH95Gu, {
-        user0: c.Ay.getName(n.guild_id, n.id, O[0]),
-        user1: c.Ay.getName(n.guild_id, n.id, O[1]),
-        countOthers: _,
-        name0Hook: (e, t) => (0, r.jsx)(m.A, {
+      children: f.intl.format(f.t.rH95Gu, {
+        user0: c.Ay.getName(n.guild_id, n.id, x[0]),
+        user1: c.Ay.getName(n.guild_id, n.id, x[1]),
+        countOthers: E,
+        name0Hook: (e, t) => (0, r.jsx)(p.A, {
           text: e,
-          user: O[0],
+          user: x[0],
           channel: n
         }, t),
-        name1Hook: (e, t) => (0, r.jsx)(m.A, {
+        name1Hook: (e, t) => (0, r.jsx)(p.A, {
           text: e,
-          user: O[1],
+          user: x[1],
           channel: n
         }, t),
-        countOthersHook: (e, t) => (0, r.jsx)(f.A, {
-          targetElementRef: y,
-          participants: A,
+        countOthersHook: (e, t) => (0, r.jsx)(m.A, {
+          targetElementRef: j,
+          participants: C,
           channel: n,
-          children: t => (0, r.jsx)(d.A, g(b({}, t), {
+          children: t => (0, r.jsx)(d.A, y(b({}, t), {
             tag: "span",
-            children: (0, r.jsx)(o.Text, {
-              ref: y,
+            children: (0, r.jsx)(s.Text, {
+              ref: j,
               variant: "text-sm/semibold",
               color: "text-strong",
               lineClamp: 1,

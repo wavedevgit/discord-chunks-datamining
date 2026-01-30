@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 709634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -34,10 +34,10 @@ let v = e => {
     channelId: s.id,
     guildId: n,
     messageId: v
-  })((0, u.m2)(O, s)), C = null != O ? O.getAvatarURL(n, (0, c.FT9)(c._3J.SIZE_16)) : y, I = null != O ? _.intl.format(h.default["+zqXZs"], {
+  })((0, u.m2)(O, s)), C = null != O ? O.getAvatarURL(n, (0, c.FT9)(c._3J.SIZE_16)) : y, I = null != O ? h.intl.format(_.default["+zqXZs"], {
     username: O.username,
     onUserClick: j
-  }) : _.intl.string(h.default.xpRjfS);
+  }) : h.intl.string(_.default.xpRjfS);
   return (0, r.jsxs)("div", {
     className: a()(A.NB, A.JZ, E),
     children: [(0, r.jsx)(c.euF, {

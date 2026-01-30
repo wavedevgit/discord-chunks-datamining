@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 960538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => j
@@ -116,7 +116,7 @@ class j extends Chunk64700.Component {
         message: r,
         isForumToolbar: i
       } = this.props;
-      (0, g.BB)(n.id, r.id, (0, h.jq)(e), i ? g.qN.FORUM_TOOLBAR : g.qN.MESSAGE_INLINE_BUTTON, {
+      (0, g.BB)(n.id, r.id, (0, _.jq)(e), i ? g.qN.FORUM_TOOLBAR : g.qN.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
     }), O(this, "handleReactionPickerToggle", () => {
@@ -131,7 +131,7 @@ class j extends Chunk64700.Component {
       } = e, {
         channel: n,
         message: i
-      } = this.props, l = (0, r.jsx)(_.C, {
+      } = this.props, l = (0, r.jsx)(h.C, {
         closePopout: t,
         channel: n,
         onSelectEmoji: e => {

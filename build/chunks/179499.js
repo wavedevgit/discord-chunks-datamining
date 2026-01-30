@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 179499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -21,11 +21,11 @@ function p(e) {
   } = e, m = (0, a.bG)([o.A], () => o.A.getGuildProduct(p)), {
     isLoading: f,
     downloadAttachment: g
-  } = (0, c.A)(i, p), h = r.useCallback(() => {
+  } = (0, c.A)(i, p), _ = r.useCallback(() => {
     var e, t;
     let n = null == m || null == (t = m.attachments) || null == (e = t[0]) ? true : e.id;
     l()(null != n, "No attachment"), g(n)
-  }, [g, null == m ? true : m.attachments]), _ = r.useCallback(() => u.A.open({
+  }, [g, null == m ? true : m.attachments]), h = r.useCallback(() => u.A.open({
     guildId: i,
     productId: p
   }), [i, p]);
@@ -34,13 +34,13 @@ function p(e) {
     text: d.intl.string(d.t.UyuiUE),
     icon: s.KS6,
     iconPosition: "end",
-    onClick: _
+    onClick: h
   } : {
     variant: "primary",
     text: d.intl.string(d.t.t9bE9b),
     icon: s.s3U,
     iconPosition: "end",
     loading: f,
-    onClick: h
+    onClick: _
   }
 }

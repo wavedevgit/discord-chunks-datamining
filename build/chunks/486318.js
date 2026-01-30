@@ -1,36 +1,36 @@
-/** Chunk was on 92917 **/
-/** chunk id: 486318, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 80307 **/
+/** chunk id: 486318, original params: t,i,a (module,exports,require) **/
 require.d(exports, {
-  N: () => a,
+  N: () => r,
   e: () => l
 });
 var Chunk397927 = require("./397927.js"),
   Chunk871123 = require("./871123.js");
 
-function l(e) {
+function l(t) {
   let {
-    imageUrl: t,
-    backgroundImageUrl: n,
-    altText: i,
+    imageUrl: i,
+    backgroundImageUrl: a,
+    altText: e,
     customClassNames: l
-  } = e;
+  } = t;
   return {
     type: "dynamic",
-    component: r.Oz7.SOCIAL_LAYER_SKU_PREVIEW,
+    component: n.Oz7.SOCIAL_LAYER_SKU_PREVIEW,
     aspectRatio: "16/9",
     props: {
-      imageUrl: t,
-      backgroundImageUrl: n,
-      altText: i,
+      imageUrl: i,
+      backgroundImageUrl: a,
+      altText: e,
       customClassNames: l
     }
   }
 }
 
-function a(e) {
+function r(t) {
   return l({
-    imageUrl: (0, i.fq)(e),
-    backgroundImageUrl: (0, i.xf)(e),
-    altText: e.name
+    imageUrl: (0, e.fq)(t),
+    backgroundImageUrl: (0, e.xf)(t),
+    altText: t.name
   })
 }

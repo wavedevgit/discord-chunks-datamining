@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 574660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => y,
@@ -36,7 +36,7 @@ function A(e) {
     return null != (e = p.A.getGuildId()) ? e : true
   }), m = (0, i.bG)([c.A, u.A, d.A], () => {
     let e = c.A.getChannel(d.A.getChannelId());
-    return null != e && (e.isPrivate() || u.A.can(h.xBc.SEND_MESSAGES, e))
+    return null != e && (e.isPrivate() || u.A.can(_.xBc.SEND_MESSAGES, e))
   }, []), g = (0, l.V1)(e, o) && m;
   return {
     isDiscoverable: t,
@@ -62,7 +62,7 @@ function y(e, t) {
   } = A(e);
   return r.useMemo(() => n ? () => {
     (null == t || t(), i) ? (0, a.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
-      tab: _.GlobalDiscoveryTab.APPS,
+      tab: h.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
       newSessionState: {
         entrypoint: {

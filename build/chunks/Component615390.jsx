@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 615390, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => O
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,7 +14,7 @@ var Chunk284009 = require("./284009.js"),
   Chunk681168 = require("./681168.jsx"),
   Chunk158611 = require("./158611.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,31 +46,31 @@ function f(e, t) {
   }), e
 }
 
-function p(e) {
+function f(e) {
   let {
     contentInventoryEntry: t,
     channel: n
   } = e, {
     parsedEntry: l
-  } = (0, s.v)();
-  return (0, r.jsx)(u.A, f(m({}, l), {
+  } = (0, o.v)();
+  return (0, r.jsx)(u.A, m(p({}, l), {
     entry: t,
     channel: n
   }))
 }
 
-function h(e) {
+function O(e) {
   let t = (0, c.jc)();
   a()(null != t, "Component context is not defined. Did you forget to wrap your component in a ComponentStateContextProvider?");
   let {
     channelId: n
-  } = t, l = (0, i.bG)([o.A], () => o.A.getChannel(n));
-  return a()(null != l, "channel must be defined"), (0, r.jsx)(s.f, {
+  } = t, l = (0, i.bG)([s.A], () => s.A.getChannel(n));
+  return a()(null != l, "channel must be defined"), (0, r.jsx)(o.f, {
     location: d.Z.EMBED,
     entry: e.contentInventoryEntry,
     channel: l,
     errorFallback: null,
-    children: (0, r.jsx)(p, f(m({}, e), {
+    children: (0, r.jsx)(f, m(p({}, e), {
       channel: l
     }))
   })

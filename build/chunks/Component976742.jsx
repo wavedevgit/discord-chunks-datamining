@@ -2,7 +2,7 @@
 /** chunk id: 976742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -43,7 +43,7 @@ function A(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     category: t
   } = e, [n, a] = l.useState(false), i = (0, s.K)(e => {
@@ -60,7 +60,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   var t;
   let {
     sortedCategories: n,
@@ -76,17 +76,17 @@ function S(e) {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), S = l.useRef(true);
+  }), [n]), x = l.useRef(true);
   l.useEffect(() => {
     if (null == u || 0 === A.length) {
-      S.current = true;
+      x.current = true;
       return
     }
-    if (u === S.current) return;
+    if (u === x.current) return;
     let e = A.findIndex(e => e.skuId === u);
     if (false === e) return;
     let t = Math.floor(e / v.l5) + 1;
-    t !== a && o(t), S.current = u
+    t !== a && o(t), x.current = u
   }, [u, A, o, a]);
   let O = l.useMemo(() => {
     let e = (a - 1) * v.l5;
@@ -116,7 +116,7 @@ function S(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(x, {
+        children: (0, r.jsx)(S, {
           category: e
         })
       })

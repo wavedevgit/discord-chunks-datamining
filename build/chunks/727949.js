@@ -1,10 +1,10 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 727949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GQ: () => d,
   NF: () => f,
   QG: () => m,
-  Tp: () => h,
+  Tp: () => _,
   ZR: () => p,
   ne: () => g
 });
@@ -45,7 +45,7 @@ let p = () => (0, l.k8)(i.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
   g = () => {
     (0, l.Dr)(i.M.REFERRAL_PROGRAM_POPOVER)
   },
-  h = () => {
+  _ = () => {
     let e = (0, c.m)(false),
       t = (0, l.k8)(i.M.REFERRAL_PROGRAM_POPOVER),
       n = (0, r.bG)([o.A], () => o.A.getReferralsRemaining());

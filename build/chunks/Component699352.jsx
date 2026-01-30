@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 699352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a,
@@ -25,8 +25,8 @@ function a(e) {
     renderThreadAccessory: m,
     renderSuppressEmbeds: f,
     renderReactions: g,
-    forceAddReactions: h,
-    disableComponentInteractivity: _,
+    forceAddReactions: _,
+    disableComponentInteractivity: h,
     className: b
   } = e;
   return d ? null : (0, r.jsx)(i.A, {
@@ -42,9 +42,9 @@ function a(e) {
       isMessageSnapshot: p,
       onMediaItemContextMenu: c,
       renderThreadAccessory: m,
-      disableComponentInteractivity: _,
+      disableComponentInteractivity: h,
       renderSuppressEmbeds: f,
-      forceAddReactions: h,
+      forceAddReactions: _,
       renderReactions: g
     })
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 483660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,22 +17,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk563111 = require("./563111.js");
 
-function h(e) {
+function _(e) {
   let {
     guild: t,
     channel: n,
-    message: h
-  } = e, _ = d.A.getGuildId(), b = u.A.getChannelId(_), A = i.useCallback(() => {
+    message: _
+  } = e, h = d.A.getGuildId(), b = u.A.getChannelId(h), A = i.useCallback(() => {
     var e;
     p.default.track(m.HAw.CHANNEL_LINK_PREVIEW_JOINED, {
-      author_id: null == (e = h.author) ? true : e.id,
+      author_id: null == (e = _.author) ? true : e.id,
       link_guild_id: t.id,
       link_channel_id: n.id,
       link_channel_type: n.type,
-      guild_id: _,
+      guild_id: h,
       channel_id: b
     }), (0, s.i)(t.id, n.id), a.default.selectVoiceChannel(n.id)
-  }, [h, t, n, _, b]), y = (0, r.jsx)(c.A.Channel, {
+  }, [_, t, n, h, b]), y = (0, r.jsx)(c.A.Channel, {
     channel: n
   });
   return (0, r.jsx)(c.A, {

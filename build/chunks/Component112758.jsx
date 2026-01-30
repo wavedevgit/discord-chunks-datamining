@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 112758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Am: () => k,
@@ -57,7 +57,7 @@ function j(e, t, n) {
         decoration: "never"
       })),
       a = "<@".concat(e, ">");
-    _._.dispatchToLastSubscribed(O.jej.INSERT_TEXT, {
+    h._.dispatchToLastSubscribed(O.jej.INSERT_TEXT, {
       plainText: l,
       rawText: a
     }), c.A.startTyping(t)
@@ -108,9 +108,9 @@ function D(e, t, l, o) {
   } = t, {
     id: d,
     flags: g
-  } = e, _ = (0, a.Lt)(g, O.pr7.EPHEMERAL), A = (0, u.Us)();
+  } = e, h = (0, a.Lt)(g, O.pr7.EPHEMERAL), A = (0, u.Us)();
   return i.useCallback((e, t) => {
-    if (_) return;
+    if (h) return;
     if (!b.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
@@ -120,7 +120,7 @@ function D(e, t, l, o) {
     let i = p.A.getChannel(c),
       a = f.A.getMessage(c, d),
       u = m.A.isEditing(c, d);
-    null == i || null == a || u || (h.default.track(O.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    null == i || null == a || u || (_.default.track(O.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: d,
       channel: c,
       location: "right_click"
@@ -171,7 +171,7 @@ function D(e, t, l, o) {
       }),
       context: A
     }))
-  }, [_, c, d, l, A, o])
+  }, [h, c, d, l, A, o])
 }
 
 function L(e, t) {
@@ -221,10 +221,10 @@ function G(e) {
   } = e, l = n.author.id, a = "".concat(t, ":").concat(l), s = i.useRef(r), [o, c] = i.useState(r);
   s.current = o || s.current;
   let u = i.useCallback(() => {
-      (0, d.cE)(), o || (_._.dispatchKeyed(O.zOV.ANIMATE_CHAT_AVATAR, a, true), c(true))
+      (0, d.cE)(), o || (h._.dispatchKeyed(O.zOV.ANIMATE_CHAT_AVATAR, a, true), c(true))
     }, [o, a]),
     p = i.useCallback(() => {
-      _._.dispatchKeyed(O.zOV.ANIMATE_CHAT_AVATAR, a, false), c(false)
+      h._.dispatchKeyed(O.zOV.ANIMATE_CHAT_AVATAR, a, false), c(false)
     }, [a]);
   return {
     hasHovered: s.current,

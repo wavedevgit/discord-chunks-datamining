@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 598429, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => j
@@ -116,7 +116,7 @@ class E extends(r = Chunk64700.PureComponent) {
         variant: "secondary",
         onClick: this.handleDropdownClick
       }) : null]
-    }) : o ? null : this.renderDisabledButton(A.intl.string(A.t["359Pbd"]), h.isPlatformEmbedded ? A.intl.string(A.t.NASLa3) : A.intl.string(A.t.o1bhkD))
+    }) : o ? null : this.renderDisabledButton(A.intl.string(A.t["359Pbd"]), _.isPlatformEmbedded ? A.intl.string(A.t.NASLa3) : A.intl.string(A.t.o1bhkD))
   }
   constructor(...e) {
     super(...e), v(this, "handleDropdownClick", e => {
@@ -145,7 +145,7 @@ class E extends(r = Chunk64700.PureComponent) {
         analyticsListSort: n,
         analyticsListIndex: r
       } = this.props;
-      _.playApplication(e, t, {
+      h.playApplication(e, t, {
         analyticsParams: {
           location: this.analyticsLocation,
           list_sort: n,

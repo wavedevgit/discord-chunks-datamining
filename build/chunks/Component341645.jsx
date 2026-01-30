@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 341645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => F
@@ -62,7 +62,7 @@ let F = Chunk64700.memo(function(e) {
     } = e,
     {
       analyticsLocations: F
-    } = (0, _.Ay)(h.A.ACTIVITY_INSTANCE_EMBED),
+    } = (0, h.Ay)(_.A.ACTIVITY_INSTANCE_EMBED),
     H = (0, u.p)(),
     V = (0, s.bG)([C.A], () => C.A.getChannel(O), [O]),
     z = (null == V || null == (n = V.isThread) ? true : n.call(V)) ? null == V ? true : V.parent_id : O,
@@ -78,7 +78,7 @@ let F = Chunk64700.memo(function(e) {
     }), [z, d.id]),
     J = null == K ? true : K.userIds,
     Q = (0, s.yK)([S.default], () => Array.from(null != J ? J : []).map(e => S.default.getUser(e)).filter(w.Vq), [J]),
-    Z = (0, s.bG)([I.A], () => {
+    X = (0, s.bG)([I.A], () => {
       if (null == J) return null;
       for (let e of J) {
         let t = I.A.findActivity(e, e => e.application_id === d.id);
@@ -86,7 +86,7 @@ let F = Chunk64700.memo(function(e) {
       }
       return null
     }, [d.id, J]),
-    X = null == Z ? true : Z.details,
+    Z = null == X ? true : X.details,
     $ = i.useMemo(() => {
       let e = new E.Ay(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.Gl), e
@@ -140,9 +140,9 @@ let F = Chunk64700.memo(function(e) {
     });
   en.disabled && (o = en.tooltip);
   let ec = Q.length,
-    eu = null != (t = null == Z || null == (l = Z.timestamps) ? true : l.start) ? t : null == Z ? true : Z.created_at,
+    eu = null != (t = null == X || null == (l = X.timestamps) ? true : l.start) ? t : null == X ? true : X.created_at,
     ed = (0, y.y)({
-      activity: Z,
+      activity: X,
       activityUsersCount: ec
     }),
     ep = [{
@@ -164,7 +164,7 @@ let F = Chunk64700.memo(function(e) {
         color: "none",
         children: ea
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != X && (0, r.jsxs)("div", {
+        children: [null != Z && (0, r.jsxs)("div", {
           className: G.oL,
           children: [null != eu && (0, r.jsxs)("div", {
             className: G.DT,
@@ -192,7 +192,7 @@ let F = Chunk64700.memo(function(e) {
               variant: "text-xs/medium",
               color: "none",
               lineClamp: 1,
-              children: X
+              children: Z
             })]
           })]
         }), ec > 0 && (0, r.jsx)(y.$, {

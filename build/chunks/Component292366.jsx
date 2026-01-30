@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 292366, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,76 +21,76 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk592392 = require("./592392.js");
 
-function y(e) {
+function j(e) {
   let {
     url: t,
     onSelect: n
   } = e;
-  return f.p5 && null != t ? (0, r.jsx)(o.W1t, {
+  return m.p5 && null != t ? (0, r.jsx)(s.W1t, {
     "data-menu-migrated-auto": true,
     navId: "component-button",
     onClose: c.Z_,
-    "aria-label": g.intl.string(g.t.tvTXy8),
+    "aria-label": y.intl.string(y.t.tvTXy8),
     onSelect: n,
-    children: (0, r.jsx)(o.rXV, {
-      children: (0, r.jsx)(o.Drp, {
+    children: (0, r.jsx)(s.rXV, {
+      children: (0, r.jsx)(s.Drp, {
         id: "copy",
-        label: g.intl.string(g.t.uHhnfa),
-        action: () => (0, f.C)(t)
+        label: y.intl.string(y.t.uHhnfa),
+        action: () => (0, m.C)(t)
       })
     })
   }) : null
 }
 
-function v(e) {
+function g(e) {
   let t, {
       label: n,
       style: l,
-      disabled: f,
-      emoji: g,
-      url: v,
-      skuId: j
+      disabled: m,
+      emoji: y,
+      url: g,
+      skuId: A
     } = e,
     {
-      executeStateUpdate: C,
-      visualState: _,
-      isDisabled: A
-    } = (0, h.At)(e),
-    O = (0, m.Q)(j),
-    E = null != j && l === d.in.PREMIUM,
-    S = E && (null == O ? true : O.disabled),
-    N = E ? null == O ? true : O.label : n,
-    I = null != g,
-    P = null != N && N.length > 0,
-    w = l === d.in.LINK && null != v && v.length > 0,
-    T = _ === b.BB.LOADING || E && null == O;
-  return t = w ? () => {
-    (0, p.h)({
-      href: null != v ? v : "",
+      executeStateUpdate: v,
+      visualState: E,
+      isDisabled: C
+    } = (0, O.At)(e),
+    x = (0, p.Q)(A),
+    N = null != A && l === d.in.PREMIUM,
+    I = N && (null == x ? true : x.disabled),
+    P = N ? null == x ? true : x.label : n,
+    S = null != y,
+    _ = null != P && P.length > 0,
+    T = l === d.in.LINK && null != g && g.length > 0,
+    R = E === b.BB.LOADING || N && null == x;
+  return t = T ? () => {
+    (0, f.h)({
+      href: null != g ? g : "",
       shouldConfirm: true
     })
-  } : E ? null != O && false === O.disabled ? O.onClick : i.noop : () => C(), (0, r.jsxs)(s.$n, {
+  } : N ? null != x && false === x.disabled ? x.onClick : i.noop : () => v(), (0, r.jsxs)(o.$n, {
     "data-migration-pending": true,
     color: function(e) {
       switch (e) {
         case d.in.PRIMARY:
         case d.in.PREMIUM:
-          return s.$n.Colors.BRAND;
+          return o.$n.Colors.BRAND;
         case d.in.SUCCESS:
-          return s.$n.Colors.GREEN;
+          return o.$n.Colors.GREEN;
         case d.in.DESTRUCTIVE:
-          return s.$n.Colors.RED;
+          return o.$n.Colors.RED;
         default:
-          return s.$n.Colors.PRIMARY
+          return o.$n.Colors.PRIMARY
       }
     }(l),
-    size: s.$n.Sizes.SMALL,
-    disabled: f || _ === b.BB.DISABLED || A || S,
+    size: o.$n.Sizes.SMALL,
+    disabled: m || E === b.BB.DISABLED || C || I,
     onClick: t,
     onContextMenu: e => {
-      w && (0, c.jA)(e, e => {
+      T && (0, c.jA)(e, e => {
         var t, n;
-        return (0, r.jsx)(y, (t = function(e) {
+        return (0, r.jsx)(j, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -108,7 +108,7 @@ function v(e) {
           }
           return e
         }({}, e), n = n = {
-          url: v
+          url: g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -121,38 +121,38 @@ function v(e) {
         }), t))
       })
     },
-    role: w ? "link" : "button",
+    role: T ? "link" : "button",
     children: [(0, r.jsxs)("div", {
-      className: a()(x.Qs, {
-        [x.R]: T,
-        [x.M2]: E
+      className: a()(h.Qs, {
+        [h.R]: R,
+        [h.M2]: N
       }),
-      "aria-hidden": T,
-      children: [E ? (0, r.jsx)("div", {
-        className: x.sV,
-        children: (0, r.jsx)(o.U1X, {
+      "aria-hidden": R,
+      children: [N ? (0, r.jsx)("div", {
+        className: h.sV,
+        children: (0, r.jsx)(s.U1X, {
           size: "xs",
           color: "white"
         })
-      }) : null, I ? (0, r.jsx)(u.A, {
+      }) : null, S ? (0, r.jsx)(u.A, {
         className: a()({
-          [x.MR]: P
+          [h.MR]: _
         }),
-        src: g.src,
-        emojiId: g.id,
-        emojiName: g.name,
-        animated: g.animated
-      }) : null, P ? (0, r.jsx)("div", {
-        className: x.Pf,
-        children: N
-      }) : null, w ? (0, r.jsx)(o.tfB, {
+        src: y.src,
+        emojiId: y.id,
+        emojiName: y.name,
+        animated: y.animated
+      }) : null, _ ? (0, r.jsx)("div", {
+        className: h.Pf,
+        children: P
+      }) : null, T ? (0, r.jsx)(s.tfB, {
         size: "xs",
         color: "currentColor",
-        className: x.LE
+        className: h.LE
       }) : null]
-    }), T ? (0, r.jsx)("div", {
-      className: x.Lq,
-      children: (0, r.jsx)(o.nvX, {
+    }), R ? (0, r.jsx)("div", {
+      className: h.Lq,
+      children: (0, r.jsx)(s.nvX, {
         dotRadius: 3.5,
         themed: true
       })

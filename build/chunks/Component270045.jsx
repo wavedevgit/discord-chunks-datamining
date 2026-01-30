@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 270045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => L
@@ -80,7 +80,7 @@ function D(e) {
       handleResetDismissibilityClick: G,
       handleResetStatusClick: B,
       handleOverrideDeliveryClick: F
-    } = (0, _.j$)(e.quest.id),
+    } = (0, h.j$)(e.quest.id),
     H = i.useCallback(() => {
       e.quest.id === S.Fw ? window.open(p.A.getArticleURL(T.MVz.VIRTUAL_CURRENCY_LEARN_MORE)) : (0, O.pu)(e.quest, {
         content: e.questContent,
@@ -102,7 +102,7 @@ function D(e) {
     }),
     z = e => (0, a.showToast)((0, a.createToast)(new o.A(e, e.status).message, a.ToastType.FAILURE)),
     W = () => (0, m.CV)(e.quest.id).catch(z),
-    K = (0, _.nv)(e.quest),
+    K = (0, h.nv)(e.quest),
     Y = i.useMemo(() => (0, r.jsx)(a.sLh, {
       id: "delivery",
       label: "Show in Quest Bar",
@@ -233,7 +233,7 @@ function D(e) {
         action: () => {
           (0, d.C)(e.quest.id)
         }
-      }), (0, h.U)({
+      }), (0, _.U)({
         location: S.rE.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(a.Drp, {
         id: "preview",
@@ -270,7 +270,7 @@ function L(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), f = (0, b.Ut)(), g = i.useRef(null), h = i.useCallback(() => {
+  }(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), f = (0, b.Ut)(), g = i.useRef(null), _ = i.useCallback(() => {
     f({
       questId: o.id,
       questContent: c,
@@ -281,7 +281,7 @@ function L(e) {
   }, [n, o.id, c, d, f, p]);
   return (0, r.jsx)(a.YNO, {
     targetElementRef: g,
-    onRequestOpen: h,
+    onRequestOpen: _,
     onRequestClose: l,
     renderPopout: e => {
       let {

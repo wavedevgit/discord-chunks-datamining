@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 873498, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk205327 = require("./205327.js"),
   Chunk261020 = require("./261020.js"),
@@ -9,30 +9,30 @@ var Chunk205327 = require("./205327.js"),
   Chunk272984 = require("./272984.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e) {
+function s(e) {
   var t, n;
-  let o, {
+  let s, {
       entry: c,
       baseEntryData: u
     } = e,
     {
       provider: d,
-      image_url: m
+      image_url: p
     } = c.extra.media,
-    f = c.extra.artist.name,
-    p = {
+    m = c.extra.artist.name,
+    f = {
       onClick: () => (0, l.n)(i.M0.ALBUM, c.extra.media.external_parent_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
+      ariaDescription: o.intl.formatToPlainString(o.t.xTsar2, {
         itemName: c.extra.media.parent_title
       })
     },
-    h = {
+    O = {
       onClick: () => (0, l.n)(i.M0.ARTIST, c.extra.artist.external_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
-        itemName: f
+      ariaDescription: o.intl.formatToPlainString(o.t.xTsar2, {
+        itemName: m
       })
     };
-  return d === r.X.SPOTIFY && (o = {
+  return d === r.X.SPOTIFY && (s = {
     type: a.a4.SPOTIFY
   }), t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -52,13 +52,13 @@ function o(e) {
     }
     return e
   }({}, u), n = n = {
-    title: f,
-    thumbnailUrl: m,
-    titleClickable: h,
-    subtitleClickable: p,
-    thumbnailClickable: p,
-    userDescription: s.t.CcVI1T,
-    providerIconProps: o
+    title: m,
+    thumbnailUrl: p,
+    titleClickable: O,
+    subtitleClickable: f,
+    thumbnailClickable: f,
+    userDescription: o.t.CcVI1T,
+    providerIconProps: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

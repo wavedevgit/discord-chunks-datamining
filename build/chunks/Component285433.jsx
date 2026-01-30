@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 285433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => N
@@ -50,8 +50,8 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
     } = (0, d.Ay)(), [F, H] = i.useState(null), [V, z] = i.useState(null), W = (0, m.A)(e => {
       let t = e.target;
       H(t.offsetWidth), z(t.scrollWidth)
-    }), K = (0, p.w)(W), Y = (0, E.a3)(N), q = N === f.uF.QUESTS_EMBED, J = (0, g.wT)(l, j.rE.QUESTS_CARD, N, U), Q = (null == (t = l.userStatus) ? true : t.completedAt) != null, Z = (0, _.Ut)(), X = (0, h.S5)(l.config.expiresAt), $ = (0, h.S5)(l.config.rewardsConfig.rewardsExpireAt), ee = i.useMemo(() => null != l.config.cosponsorMetadata, [l]), et = e => {
-      e.stopPropagation(), e.currentTarget.blur(), k(), Z({
+    }), K = (0, p.w)(W), Y = (0, E.a3)(N), q = N === f.uF.QUESTS_EMBED, J = (0, g.wT)(l, j.rE.QUESTS_CARD, N, U), Q = (null == (t = l.userStatus) ? true : t.completedAt) != null, X = (0, h.Ut)(), Z = (0, _.S5)(l.config.expiresAt), $ = (0, _.S5)(l.config.rewardsConfig.rewardsExpireAt), ee = i.useMemo(() => null != l.config.cosponsorMetadata, [l]), et = e => {
+      e.stopPropagation(), e.currentTarget.blur(), k(), X({
         questId: l.id,
         questContent: N,
         questContentCTA: D ? b.Cy.COLLAPSE : b.Cy.EXPAND,
@@ -177,9 +177,9 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
                   children: Q ? I.intl.formatToPlainString(I.t.APddvF, {
                     expirationDate: $
                   }) : n ? I.intl.formatToPlainString(I.t.v7xMw7, {
-                    expirationDate: X
+                    expirationDate: Z
                   }) : I.intl.formatToPlainString(I.t["pX+fmn"], {
-                    expirationDate: X
+                    expirationDate: Z
                   })
                 })]
               })]

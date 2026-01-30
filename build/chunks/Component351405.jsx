@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 351405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => C
@@ -33,7 +33,7 @@ function j(e) {
     maxPartySize: i,
     guildId: l,
     activityActionType: s
-  } = e, o = Math.max(n, t.length), c = (0, h.SJ)({
+  } = e, o = Math.max(n, t.length), c = (0, _.SJ)({
     maxPartySize: i,
     partySize: o,
     activityActionType: s
@@ -59,7 +59,7 @@ function j(e) {
 function C(e) {
   var t, n, a;
   let {
-    analyticsLocations: h,
+    analyticsLocations: _,
     app: E,
     channel: C,
     message: I,
@@ -69,7 +69,7 @@ function C(e) {
     if (null == I.application) return m.A.findActivity(I.author.id, e => e.type === x.$pd.LISTENING);
     {
       let e = I.author.id;
-      return (0, _.v)(I) && (e = e === P && C.isPrivate() ? C.getRecipientId() : P), m.A.getApplicationActivity(e, I.application.id)
+      return (0, h.v)(I) && (e = e === P && C.isPrivate() ? C.getRecipientId() : P), m.A.getApplicationActivity(e, I.application.id)
     }
   }, [I, C, P]), R = (0, l.bG)([p.A, f.A], () => {
     var e;
@@ -103,13 +103,13 @@ function C(e) {
     presenceActivity: w,
     guildId: C.guild_id
   }) : (null == (a = I.activity) ? true : a.type) === x.xL.STREAM_REQUEST ? (0, r.jsx)(o.A, {
-    analyticsLocations: h,
+    analyticsLocations: _,
     application: N,
     channel: C,
     currentUserId: P,
     message: I
   }) : (0, r.jsx)(y.A, {
-    analyticsLocations: h,
+    analyticsLocations: _,
     application: N,
     channel: C,
     currentUserId: P,

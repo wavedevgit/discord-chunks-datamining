@@ -99,7 +99,7 @@ function q(e) {
       [V.Gg]: t
     }),
     children: [(0, i.jsxs)(E.A, {
-      grow: 3,
+      grow: 4,
       basis: 0,
       align: E.A.Align.CENTER,
       className: V.Qq,
@@ -330,7 +330,7 @@ function Z(e) {
         }, "empty-state");
         else return (0, i.jsxs)(E.A, {
           children: [(0, i.jsx)(E.A.Child, {
-            grow: 3,
+            grow: 4,
             basis: 0,
             className: K.Gf,
             children: (0, i.jsx)(f.Text, {

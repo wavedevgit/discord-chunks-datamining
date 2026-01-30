@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 659203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -173,7 +173,7 @@ class R extends Chunk64700.Component {
             analyticsLocations: t,
             startingScreen: i
           } = e;
-          _.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+          h.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
             location_stack: t
           }), (0, c.mMO)(async () => {
             let {
@@ -276,9 +276,9 @@ function D(e) {
     trialOffer: n ? v.A.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && v.A.isResolving(t),
     referralsSent: v.A.getRecipientStatus()
-  }), [n, t]), m = g.default.getCurrentUser(), f = (0, o.bG)([g.default], () => null != l && (0, y.TW)(true !== m && l.user_id === m.id ? m : g.default.getUser(l.user_id))), _ = (0, o.bG)([h.A], () => {
+  }), [n, t]), m = g.default.getCurrentUser(), f = (0, o.bG)([g.default], () => null != l && (0, y.TW)(true !== m && l.user_id === m.id ? m : g.default.getUser(l.user_id))), h = (0, o.bG)([_.A], () => {
     var e;
-    return f ? null == (e = h.A.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
+    return f ? null == (e = _.A.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: b
   } = (0, p.Ay)(d.A.SHARE_NITRO_EMBED);
@@ -289,7 +289,7 @@ function D(e) {
     referralsSent: c,
     currentUser: m,
     recipientHasNitro: f,
-    trialEndsAt: _,
+    trialEndsAt: h,
     analyticsLocations: b,
     compact: i
   }) : (0, r.jsx)("div", {

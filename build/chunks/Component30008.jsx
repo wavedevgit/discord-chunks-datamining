@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 30008, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => v
+  Q: () => g
 }), require("./938796.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,16 +19,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk168393 = require("./168393.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let y = (0, Chunk311907.UT)([Chunk67480.A, Chunk97352.A, Chunk328968.A], {
+let j = (0, Chunk311907.UT)([Chunk67480.A, Chunk97352.A, Chunk328968.A], {
   getQueryId: Chunk652215.fic.APP_PREMIUM_BUTTON,
   get: e => {
     var t;
     if (null == e) return;
     let n = d.A.get(e),
       r = null != (t = u.A.getForSKU(e)) ? t : [],
-      l = m.A.getForSKU(e),
+      l = p.A.getForSKU(e),
       a = d.A.getParentSKU(e);
-    return null == n || null == l || null != n && n.type === g.Puh.SUBSCRIPTION && null == a ? null : {
+    return null == n || null == l || null != n && n.type === y.Puh.SUBSCRIPTION && null == a ? null : {
       parentSku: a,
       sku: n,
       storeListing: l,
@@ -38,21 +38,21 @@ let y = (0, Chunk311907.UT)([Chunk67480.A, Chunk97352.A, Chunk328968.A], {
   load: async e => {
     if (null == e) return;
     let t = {
-        url: g.Rsh.STOREFRONT_PREMIUM_BUTTON(e),
+        url: y.Rsh.STOREFRONT_PREMIUM_BUTTON(e),
         rejectWithError: false
       },
       {
         body: n
       } = await i.Bo.get(t);
-    o.h.dispatch({
+    s.h.dispatch({
       type: "STORE_LISTINGS_FETCH_SUCCESS",
       storeListings: n.store_listings
-    }), null != n.subscription_plans && o.h.dispatch({
+    }), null != n.subscription_plans && s.h.dispatch({
       type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS",
       skuId: e,
       subscriptionPlans: n.subscription_plans
     }), null != n.skus && n.skus.forEach(e => {
-      o.h.dispatch({
+      s.h.dispatch({
         type: "SKU_FETCH_SUCCESS",
         sku: e
       })
@@ -60,12 +60,12 @@ let y = (0, Chunk311907.UT)([Chunk67480.A, Chunk97352.A, Chunk328968.A], {
   }
 });
 
-function v(e) {
+function g(e) {
   let {
     data: t
-  } = y(e), n = null == t ? true : t.parentSku, a = null == t ? true : t.sku, i = null == t ? true : t.storeListing, o = null == t ? true : t.subscriptionPlans, u = l.useCallback(() => {
+  } = j(e), n = null == t ? true : t.parentSku, a = null == t ? true : t.sku, i = null == t ? true : t.storeListing, s = null == t ? true : t.subscriptionPlans, u = l.useCallback(() => {
     if ((null == a ? true : a.applicationId) == null || (null == a ? true : a.id) == null || (null == a ? true : a.flags) == null) return null;
-    (0, s.qfG)(e => {
+    (0, o.qfG)(e => {
       let {
         onClose: t,
         transitionState: n
@@ -81,12 +81,12 @@ function v(e) {
     })
   }, [null == a ? true : a.applicationId, null == a ? true : a.id, null == a ? true : a.flags]), d = l.useCallback(() => {
     if (null == a) return null;
-    (0, s.qfG)(e => {
+    (0, o.qfG)(e => {
       let {
         onClose: t,
         transitionState: n
       } = e;
-      return (0, r.jsx)(h.ItemDetailsModal, {
+      return (0, r.jsx)(O.ItemDetailsModal, {
         appId: a.applicationId,
         skuId: a.id,
         onClose: t,
@@ -94,35 +94,35 @@ function v(e) {
       })
     })
   }, [a]);
-  if (null != a && null != i && (null == a || a.type !== g.Puh.SUBSCRIPTION || null != n)) {
+  if (null != a && null != i && (null == a || a.type !== y.Puh.SUBSCRIPTION || null != n)) {
     if (null == e || null != a && !a.available) return {
       disabled: true,
-      label: x.intl.string(x.t.CHa0vN)
+      label: h.intl.string(h.t.CHa0vN)
     };
-    if (a.type === g.Puh.SUBSCRIPTION) {
-      if (null == o || 0 === o.length) return {
+    if (a.type === y.Puh.SUBSCRIPTION) {
+      if (null == s || 0 === s.length) return {
         disabled: true,
-        label: x.intl.string(x.t.CHa0vN)
+        label: h.intl.string(h.t.CHa0vN)
       };
-      let e = o[0],
-        t = (0, f.y8)(e.id);
+      let e = s[0],
+        t = (0, m.y8)(e.id);
       return {
         disabled: false,
-        label: x.intl.formatToPlainString(x.t["c6Q+B3"], {
+        label: h.intl.formatToPlainString(h.t["c6Q+B3"], {
           skuName: a.name,
-          price: (0, p.$g)(t.amount, t.currency)
+          price: (0, f.$g)(t.amount, t.currency)
         }),
         onClick: u
       }
     }
     return null == a.price ? {
       disabled: true,
-      label: x.intl.string(x.t.CHa0vN)
+      label: h.intl.string(h.t.CHa0vN)
     } : {
       disabled: false,
-      label: x.intl.formatToPlainString(x.t["c6Q+B3"], {
+      label: h.intl.formatToPlainString(h.t["c6Q+B3"], {
         skuName: a.name,
-        price: (0, p.$g)(a.price.amount, a.price.currency)
+        price: (0, f.$g)(a.price.amount, a.price.currency)
       }),
       onClick: d
     }

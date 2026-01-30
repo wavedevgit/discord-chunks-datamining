@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 212614, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -61,19 +61,19 @@ let p = function(e) {
     analyticsCtxSourceQuestContent: m,
     analyticsCtxQuestContentPosition: f,
     size: g = "md"
-  } = e, h = (0, l.P)(t);
+  } = e, _ = (0, l.P)(t);
   if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, r.jsx)(i.$nd, {
     variant: "primary",
     fullWidth: true,
     size: "sm",
     text: s.intl.string(s.t.P84bAD)
   });
-  let _ = Object.values(t.config.taskConfigV2.tasks)[0];
-  switch (h) {
+  let h = Object.values(t.config.taskConfigV2.tasks)[0];
+  switch (_) {
     case l.U.UNENROLLED:
       return (0, r.jsx)(a.A, {
         quest: t,
-        taskType: _.type,
+        taskType: h.type,
         size: g,
         preClickCallback: n,
         analyticsCtxQuestContent: p,
@@ -82,19 +82,19 @@ let p = function(e) {
       });
     case l.U.ENROLLED:
       return (0, r.jsx)(o, {
-        taskType: _.type
+        taskType: h.type
       });
     case l.U.INCOMPLETE:
       return (0, r.jsx)(c, {
-        taskType: _.type
+        taskType: h.type
       });
     case l.U.COMPLETED:
       return (0, r.jsx)(u, {
-        taskType: _.type
+        taskType: h.type
       });
     case l.U.CLAIMED:
       return (0, r.jsx)(d, {
-        taskType: _.type
+        taskType: h.type
       });
     default:
       return (0, r.jsx)(i.$nd, {

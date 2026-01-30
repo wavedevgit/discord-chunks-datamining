@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 904854, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,11 +18,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk443300 = require("./443300.js");
 
-function _(e) {
+function h(e) {
   let {
     message: t,
     channel: n,
-    compact: _
+    compact: h
   } = e, b = (0, f.K)(t), A = (0, a.yK)([u.default], () => {
     var e;
     return (null == (e = t.call) ? true : e.participants) != null ? t.call.participants.map(e => u.default.getUser(e)).filter(e => null != e).filter(e => e.id !== t.author.id) : []
@@ -93,9 +93,9 @@ function _(e) {
       size: "md",
       color: s.LU0.colors.STATUS_POSITIVE
     }),
-    iconContainerClassName: h.z,
+    iconContainerClassName: _.z,
     timestamp: t.timestamp,
-    compact: _,
+    compact: h,
     children: x
   })
 }

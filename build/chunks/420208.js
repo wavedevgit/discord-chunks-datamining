@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 420208, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => b
@@ -18,7 +18,7 @@ var Chunk843472 = require("./843472.js"),
   Chunk307731 = require("./307731.js"),
   Chunk381941 = require("./381941.js");
 
-function _(e) {
+function h(e) {
   let t = u.A.getGuild(e);
   return null != t && (t.nsfwLevel === f.ftr.DEFAULT || t.nsfwLevel === f.ftr.SAFE)
 }
@@ -29,7 +29,7 @@ async function b(e, t) {
   let y = d.default.getCurrentUser();
   if (null == y) return;
   await (0, s.YB)();
-  let v = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => _(e.guild_id) && (0, a.G7)(e, y, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+  let v = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, a.G7)(e, y, t)).sort((e, t) => -m.default.compare(e.id, t.id));
   if (v.length > 5) {
     let n = [v[Math.floor(Math.pow(Math.random(), 2) * v.length)].id];
     r.A.sendStickers(t.id, n, "", {
@@ -38,11 +38,11 @@ async function b(e, t) {
         channel_id: t.id,
         message_id: e
       },
-      location: h.Hx.CHANNEL_PROMPT
+      location: _.Hx.CHANNEL_PROMPT
     });
     return
   }
-  let x = u.A.getGuildIds().filter(_).map(e => i.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == p.Ay.getEmojiUnavailableReason({
+  let x = u.A.getGuildIds().filter(h).map(e => i.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == p.Ay.getEmojiUnavailableReason({
     emoji: e,
     channel: t,
     guildId: A,
@@ -51,7 +51,7 @@ async function b(e, t) {
   if (x.length > 10) {
     let n = x[Math.floor(Math.pow(Math.random(), 2) * x.length)];
     r.A.sendMessage(t.id, l.Ay.parse(t, (0, p.N)(n)), false, {
-      location: h.Hx.CHANNEL_PROMPT,
+      location: _.Hx.CHANNEL_PROMPT,
       messageReference: {
         guild_id: null != (b = t.getGuildId()) ? b : true,
         channel_id: t.id,
@@ -68,6 +68,6 @@ async function b(e, t) {
       channel_id: t.id,
       message_id: e
     },
-    location: h.Hx.CHANNEL_PROMPT
+    location: _.Hx.CHANNEL_PROMPT
   })
 }

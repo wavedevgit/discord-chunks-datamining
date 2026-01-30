@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 482711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y,
@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk304203 = require("./304203.js");
 
-function h(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function _(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,8 +63,8 @@ function b(e) {
     onDeleteProduct: d,
     onCopyLink: p,
     onTestDownload: m,
-    onReportProduct: h,
-    closePopout: _,
+    onReportProduct: _,
+    closePopout: h,
     onSelect: b
   } = e;
   return (0, r.jsx)("div", {
@@ -72,7 +72,7 @@ function b(e) {
     children: (0, r.jsxs)(s.W1t, {
       "data-menu-migrated": true,
       navId: "guild-product-context",
-      onClose: _,
+      onClose: h,
       "aria-label": f.intl.string(f.t.Z146dM),
       onSelect: b,
       children: [(0, r.jsxs)(s.rXV, {
@@ -120,7 +120,7 @@ function b(e) {
           id: "guild-product-report",
           label: f.intl.string(f.t["6yUzvG"]),
           color: "danger",
-          action: h
+          action: _
         })
       })]
     })
@@ -154,7 +154,7 @@ function A(e) {
       align: "top",
       spacing: false,
       animation: s.YNO.Animation.FADE,
-      renderPopout: e => (0, r.jsx)(b, _(h({}, e), {
+      renderPopout: e => (0, r.jsx)(b, h(_({}, e), {
         guildId: n,
         productId: t.id,
         showEditProduct: l,
@@ -174,7 +174,7 @@ function A(e) {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(s.DUT, _(h({}, e), {
+        return (0, r.jsx)(s.DUT, h(_({}, e), {
           innerRef: O,
           "aria-label": f.intl.formatToPlainString(f.t.RtqjeB, {
             productName: t.name
@@ -212,7 +212,7 @@ function y(e) {
     }),
     onClick: O ? true : i,
     onContextMenu: function(e) {
-      (0, o.L3)(e, () => Promise.resolve(e => (0, r.jsx)(b, _(h({}, e), {
+      (0, o.L3)(e, () => Promise.resolve(e => (0, r.jsx)(b, h(_({}, e), {
         closePopout: o.Z_,
         guildId: n,
         productId: t.id,

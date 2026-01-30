@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 536189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -21,17 +21,17 @@ function u(e) {
     onView: m,
     partyStatusElement: f,
     presenceActivity: g,
-    guildId: h
-  } = e, _ = !(0, s.A)(g, p, n.id), b = (0, a.n$)(n.name, null == (t = p.activity) ? true : t.type, _), A = i.useMemo(() => {
+    guildId: _
+  } = e, h = !(0, s.A)(g, p, n.id), b = (0, a.n$)(n.name, null == (t = p.activity) ? true : t.type, h), A = i.useMemo(() => {
     if (null != g) return () => (0, l.Mp)(g)
   }, [g]);
-  return _ ? (0, r.jsx)(o.A, {
+  return h ? (0, r.jsx)(o.A, {
     application: n,
     message: p,
     header: b,
     onClickContent: A,
     onView: m,
-    guildId: h
+    guildId: _
   }) : (0, r.jsx)(c.A, {
     application: n,
     message: p,
@@ -42,6 +42,6 @@ function u(e) {
     currentUserPresenceActivity: u,
     onClickContent: A,
     onView: m,
-    guildId: h
+    guildId: _
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 549527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => V
@@ -117,7 +117,7 @@ function F(e) {
       showAvatarPopout: a
     }
   }(t, l);
-  return (0, r.jsx)(h.A, {
+  return (0, r.jsx)(_.A, {
     childrenExecutedCommand: (0, r.jsx)(M.A, {
       reportingUserId: a,
       guildId: l.guild_id,
@@ -141,7 +141,7 @@ function F(e) {
       compact: false,
       displayCompactAvatars: false
     }),
-    childrenMessageContent: (0, r.jsx)(_.Ay, {
+    childrenMessageContent: (0, r.jsx)(h.Ay, {
       message: t,
       content: n,
       compact: false
@@ -171,8 +171,8 @@ function H(e) {
       let t = (0, p.A)(s, o);
       return null != d && (null == o || null == (e = o.moderatorReport) ? true : e.reported_user_id) != null ? t.set("author", d) : t
     }, [s, o, d]),
-    h = C.hD.useSetting(),
-    _ = C.rs.useSetting(),
+    _ = C.hD.useSetting(),
+    h = C.rs.useSetting(),
     b = (0, a.bG)([T.A], () => T.A.isDeveloper),
     A = (0, f.S)((null != (t = g.editedTimestamp) ? t : g.timestamp).valueOf()),
     {
@@ -180,7 +180,7 @@ function H(e) {
       hasSpoilerEmbeds: v,
       hasBailedAst: E
     } = (0, x.A)(g, {
-      hideSimpleEmbedContent: h && _,
+      hideSimpleEmbedContent: _ && h,
       isInteracting: false,
       formatInline: false,
       allowList: A,

@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 156603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
@@ -17,19 +17,19 @@ let d = {
     [Chunk424994.a4.XBOX]: Chunk266080.A,
     [Chunk424994.a4.PLAYSTATION]: Chunk790381.A
   },
-  m = {
+  p = {
     [Chunk424994.a4.SPOTIFY]: () => u.intl.string(u.t["0ZB/XE"]),
     [Chunk424994.a4.CRUNCHYROLL]: () => u.intl.string(u.t.jdJYXw),
     [Chunk424994.a4.XBOX]: () => u.intl.string(u.t.Nfvo72),
     [Chunk424994.a4.PLAYSTATION]: () => u.intl.string(u.t.fFl4jo)
   };
 
-function f(e) {
+function m(e) {
   var t, n, l;
   let {
     type: a,
     "aria-label": i
-  } = e, s = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, l, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -47,8 +47,8 @@ function f(e) {
     return a
   }(e, ["type", "aria-label"]), c = d[a];
   if (null == c) return null;
-  let u = null != i ? i : null == (t = m[a]) ? true : t.call(m);
-  return (0, r.jsx)(o.A, (n = function(e) {
+  let u = null != i ? i : null == (t = p[a]) ? true : t.call(p);
+  return (0, r.jsx)(s.A, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -67,7 +67,7 @@ function f(e) {
     return e
   }({
     Icon: c
-  }, s), l = l = {
+  }, o), l = l = {
     "aria-label": u
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);

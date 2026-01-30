@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 650724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => b
@@ -21,13 +21,13 @@ var Chunk64700 = require("./64700.js"),
 
 function b(e, t) {
   let n = (0, f.$k)(),
-    b = (0, h.CI)(e),
+    b = (0, _.CI)(e),
     A = (0, i.bG)([c.Ay, s.default], () => {
       let e = s.default.getId();
       return c.Ay.isMember(null == b ? true : b.guildId, e)
     }, [b]),
     y = (0, i.bG)([l.A], () => null != b && (null == b ? true : b.channelId) != null && l.A.isChannelGated(b.guildId, b.channelId), [b]),
-    v = t.hasFlag(_.pr7.IS_CROSSPOST),
+    v = t.hasFlag(h.pr7.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: x,
       guild: O,
@@ -54,7 +54,7 @@ function b(e, t) {
     }, [b]),
     S = r.useMemo(() => {
       var e, t;
-      let n = (0, h.tU)({
+      let n = (0, _.tU)({
         mediaPostEmbedData: x,
         guild: O,
         parentChannel: E,

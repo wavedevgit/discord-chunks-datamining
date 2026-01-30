@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 552117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => H
@@ -111,18 +111,18 @@ let G = e => {
         refreshPositionKey: a,
         channel: l
       },
-      h = i.useRef(g);
+      _ = i.useRef(g);
     return (i.useEffect(() => {
-      h.current = g
+      _.current = g
     }), i.useEffect(() => {
       let {
         refreshPositionKey: e
-      } = h.current;
+      } = _.current;
       e()
     }, [c]), i.useEffect(() => {
       let {
         channel: e
-      } = h.current;
+      } = _.current;
       E.default.track(P.HAw.OPEN_POPOUT, M({
         type: P.JJy.STICKER_POPOUT,
         guild_id: e.getGuildId(),
@@ -201,19 +201,19 @@ let G = e => {
         stickerSourceGuild: e
       } = Q.current;
       (async () => {
-        (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && I(await (0, _.A)(n.id)), N(true)
+        (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && I(await (0, h.A)(n.id)), N(true)
       })()
     }, [n.id, H]);
-    let Z = n.guild_id === l.getGuildId(),
-      X = null != C,
+    let X = n.guild_id === l.getGuildId(),
+      Z = null != C,
       $ = false,
       ee = "Custom Sticker Popout";
-    B ? t = H ? Z ? R.intl.string(R.t.fZ0DiG) : R.intl.string(R.t["1f6D9m"]) : X ? R.intl.string(R.t.yHmoR9) : R.intl.string(R.t.vZaScH) : H ? (t = Z ? R.intl.string(R.t.jNphpt) : R.intl.string(R.t.lyD5ZW), $ = true, ee = "Custom Sticker Popout (Upsell)") : X ? (t = R.intl.string(R.t.IuXYch), $ = true, ee = "Custom Sticker Popout (Upsell)") : (t = R.intl.format(R.t.hGWuxU, {
+    B ? t = H ? X ? R.intl.string(R.t.fZ0DiG) : R.intl.string(R.t["1f6D9m"]) : Z ? R.intl.string(R.t.yHmoR9) : R.intl.string(R.t.vZaScH) : H ? (t = X ? R.intl.string(R.t.jNphpt) : R.intl.string(R.t.lyD5ZW), $ = true, ee = "Custom Sticker Popout (Upsell)") : Z ? (t = R.intl.string(R.t.IuXYch), $ = true, ee = "Custom Sticker Popout (Upsell)") : (t = R.intl.format(R.t.hGWuxU, {
       openPremiumSettings: () => {
         k(l), o()
       }
     }), ee = "Custom Sticker Popout (Soft Upsell)");
-    let et = !$ && !H && X && B;
+    let et = !$ && !H && Z && B;
     if (i.useEffect(() => {
         let {
           refreshPositionKey: e
@@ -266,9 +266,9 @@ let G = e => {
           })]
         })), (null != F || null != C) && (() => {
           var e;
-          if (!X && !H) return;
+          if (!Z && !H) return;
           let t = (null != (e = null == C ? true : C.stickers) ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-            i = null != C ? h.GO.createFromDiscoverableGuild(C) : h.GO.createFromGuildRecord(F);
+            i = null != C ? _.GO.createFromDiscoverableGuild(C) : _.GO.createFromGuildRecord(F);
           return (0, r.jsxs)("div", {
             className: L.tl,
             children: [(0, r.jsx)(d.Text, {

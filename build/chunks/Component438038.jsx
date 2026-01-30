@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 438038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => f
@@ -22,8 +22,8 @@ function f(e) {
     location: n,
     initiallyExpanded: f,
     contentPosition: g,
-    sourceQuestContent: h
-  } = e, _ = (0, s.LS)(t), {
+    sourceQuestContent: _
+  } = e, h = (0, s.LS)(t), {
     containerRef: b,
     size: A,
     height: y
@@ -43,7 +43,7 @@ function f(e) {
     questContent: n,
     questContentPosition: g,
     trackGuildAndChannelMetadata: n === a.uF.QUESTS_EMBED,
-    sourceQuestContent: h,
+    sourceQuestContent: _,
     children: e => (0, r.jsx)(l.animated.div, {
       style: {
         maxHeight: n === a.uF.QUESTS_EMBED ? true : v.to({
@@ -61,7 +61,7 @@ function f(e) {
           e.current = t, b.current = t
         },
         children: [(0, r.jsx)(u.A, {
-          isQuestExpired: _,
+          isQuestExpired: h,
           location: n,
           quest: t,
           size: A,
@@ -71,17 +71,17 @@ function f(e) {
           isExpanded: O,
           contentPosition: g,
           toggleExpanded: E,
-          sourceQuestContent: h
+          sourceQuestContent: _
         }), (0, r.jsx)(c.A, {
           quest: t,
-          isQuestExpired: _,
+          isQuestExpired: h,
           location: n,
           size: A,
           isFocused: j,
           isExpanded: O,
           isAnimating: x,
           contentPosition: g,
-          sourceQuestContent: h
+          sourceQuestContent: _
         })]
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 175335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -56,7 +56,7 @@ function C(e) {
         })
       }
       return e
-    }({}, (0, p.H$)(n))), await (0, h.A)(O.BVt.SERVER_SHOP(n))
+    }({}, (0, p.H$)(n))), await (0, _.A)(O.BVt.SERVER_SHOP(n))
   }, [n]);
   (0, m.A)({
     type: s.ImpressionTypes.VIEW,
@@ -103,7 +103,7 @@ function C(e) {
       children: I.description
     }), (0, r.jsx)(d.hKd, {
       size: 16
-    }), (0, r.jsx)(_.A, {}), (0, r.jsx)(d.hKd, {
+    }), (0, r.jsx)(h.A, {}), (0, r.jsx)(d.hKd, {
       size: 16
     }), (0, r.jsxs)("div", {
       className: j.kS,

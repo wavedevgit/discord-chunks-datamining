@@ -1,21 +1,21 @@
-/** Chunk was on 92917 **/
-/** chunk id: 110168, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 66009 **/
+/** chunk id: 110168, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  r: () => a
+  r: () => r
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js"),
   Chunk746350 = require("./746350.jsx");
 
-function a(e) {
+function r(t) {
   let {
-    text: t,
+    text: e,
     id: n
-  } = e;
-  (0, i.showToast)((0, i.createToast)(t, i.ToastType.CUSTOM, {
-    component: (0, r.jsx)(l.M, {
-      text: t
+  } = t;
+  (0, l.showToast)((0, l.createToast)(e, l.ToastType.CUSTOM, {
+    component: (0, i.jsx)(a.M, {
+      text: e
     }, n)
   }))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 488331, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -23,14 +23,14 @@ function p(e) {
     message: f
   } = e, {
     analyticsLocations: g
-  } = (0, l.Ay)(i.A.ACTIVITY_BOOKMARK), [h] = (0, o.A)([t]), _ = null != h && (0, a.Ag)(h), {
+  } = (0, l.Ay)(i.A.ACTIVITY_BOOKMARK), [_] = (0, o.A)([t]), h = null != _ && (0, a.Ag)(_), {
     data: b,
     error: A
-  } = (0, c.K)(null == h ? true : h.id, m);
-  return null == h || false === _ ? null : null != m && null == A && null != b ? (0, r.jsx)(l.f5, {
+  } = (0, c.K)(null == _ ? true : _.id, m);
+  return null == _ || false === h ? null : null != m && null == A && null != b ? (0, r.jsx)(l.f5, {
     value: g,
     children: (0, r.jsx)(u.W, {
-      application: h,
+      application: _,
       customId: n,
       customLink: b,
       referrerId: p,
@@ -39,7 +39,7 @@ function p(e) {
   }) : (0, r.jsx)(l.f5, {
     value: g,
     children: (0, r.jsx)(s.W, {
-      app: h,
+      app: _,
       linkType: d.J.ACTIVITY,
       activityCustomId: n,
       activityReferrerId: p,

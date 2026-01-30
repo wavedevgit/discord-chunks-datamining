@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 734771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
@@ -21,13 +21,13 @@ function s(e) {
     m = (0, i.Ay)(s),
     f = m.nick,
     g = o(m),
-    h = (0, i.d8)(c, p);
-  if (null != h && null != u) {
-    let e = u(h);
+    _ = (0, i.d8)(c, p);
+  if (null != _ && null != u) {
+    let e = u(_);
     t = a.intl.format(a.t.L2FyVq, {
       username: f,
       usernameHook: g,
-      otherUsername: h.nick,
+      otherUsername: _.nick,
       otherUsernameHook: e
     })
   } else t = a.intl.format(a.t["5v2xa8"], {

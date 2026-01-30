@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 602902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => A
@@ -41,8 +41,8 @@ async function A(e, t) {
         n = [];
       for (let r of e) {
         var O;
-        let e = await (0, h.VO)(r),
-          i = null != (O = r.name) ? O : (0, _.cM)(p.default.extractTimestamp(r.id)),
+        let e = await (0, _.VO)(r),
+          i = null != (O = r.name) ? O : (0, h.cM)(p.default.extractTimestamp(r.id)),
           l = (0, g.A)(i);
         if (r.type === f.nQ.CLIP || r.type === f.nQ.VOICE_CLIP) {
           let i = "".concat("" !== l ? l : "clip", ".mp4");
@@ -70,7 +70,7 @@ async function A(e, t) {
         origin: "unknown:clip_share"
       }), i.closeAllModals()
     } catch (e) {
-      throw _.nx.error(e), e
+      throw h.nx.error(e), e
     }
   } else(0, l.mMO)(async () => {
     let {

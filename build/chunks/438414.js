@@ -1,7 +1,7 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 438414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => s
 }), require("./896048.js");
 var Chunk205327 = require("./205327.js"),
   Chunk261020 = require("./261020.js"),
@@ -9,33 +9,33 @@ var Chunk205327 = require("./205327.js"),
   Chunk272984 = require("./272984.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e) {
+function s(e) {
   var t, n;
-  let o, {
+  let s, {
       entry: c,
       baseEntryData: u
     } = e,
     d = c.extra.entries[0].media,
-    m = d.artists[0],
+    p = d.artists[0],
     {
-      title: f,
-      provider: p,
-      image_url: h
+      title: m,
+      provider: f,
+      image_url: O
     } = d,
-    b = m.name,
-    g = {
+    b = p.name,
+    y = {
       onClick: () => (0, l.n)(i.M0.TRACK, d.external_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
-        itemName: f
+      ariaDescription: o.intl.formatToPlainString(o.t.xTsar2, {
+        itemName: m
       })
     },
-    x = {
-      onClick: () => (0, l.n)(i.M0.ARTIST, m.external_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
+    h = {
+      onClick: () => (0, l.n)(i.M0.ARTIST, p.external_id),
+      ariaDescription: o.intl.formatToPlainString(o.t.xTsar2, {
         itemName: b
       })
     };
-  return p === r.X.SPOTIFY && (o = {
+  return f === r.X.SPOTIFY && (s = {
     type: a.a4.SPOTIFY
   }), t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -55,14 +55,14 @@ function o(e) {
     }
     return e
   }({}, u), n = n = {
-    title: f,
+    title: m,
     subtitle: b,
-    thumbnailUrl: h,
-    titleClickable: g,
-    subtitleClickable: x,
-    thumbnailClickable: g,
-    userDescription: s.t.CcVI1T,
-    providerIconProps: o
+    thumbnailUrl: O,
+    titleClickable: y,
+    subtitleClickable: h,
+    thumbnailClickable: y,
+    userDescription: o.t.CcVI1T,
+    providerIconProps: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

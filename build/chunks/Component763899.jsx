@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 763899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -21,9 +21,9 @@ let d = e => {
     analyticsLocations: m
   } = (0, a.Ay)(l.A.INVITE_EMBED), f = null != d.application ? o.Ay.createFromServer(d.application) : null != d.activity && null != d.activity.party_id && (0, u.pH)(d.activity.party_id) ? c.HT : true, {
     data: g
-  } = (0, s.YY)(null == (t = d.application) ? true : t.id), h = null != g ? g : f;
-  return null == h ? null : (0, r.jsx)(i.P, {
-    app: h,
+  } = (0, s.YY)(null == (t = d.application) ? true : t.id), _ = null != g ? g : f;
+  return null == _ ? null : (0, r.jsx)(i.P, {
+    app: _,
     channel: n,
     message: d,
     hideParty: p,

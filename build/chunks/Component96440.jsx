@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 96440, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => E
@@ -41,7 +41,7 @@ function E(e) {
     botUserId: null == j || null == (n = j.bot) ? true : n.id
   }), w = null != j && (0, o.Ag)(j), R = null != N && w && P, {
     analyticsLocations: D
-  } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), L = (0, i.bG)([_.A], () => _.A.getChannelId()), M = (0, x.et)(L), k = (0, i.bG)([y.Ay], () => {
+  } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), L = (0, i.bG)([h.A], () => h.A.getChannelId()), M = (0, x.et)(L), k = (0, i.bG)([y.Ay], () => {
     if (null == L) return;
     let e = y.Ay.getEmbeddedActivitiesForChannel(L).filter(e => e.applicationId === j.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
@@ -102,7 +102,7 @@ function E(e) {
       linkType: u.J.CUSTOM_ACTIVITY_LINK,
       referrerId: S,
       activityCustomId: H,
-      guildId: null == (E = h.A.getChannel(T.channel_id)) ? true : E.guild_id,
+      guildId: null == (E = _.A.getChannel(T.channel_id)) ? true : E.guild_id,
       channelId: T.channel_id,
       messageId: T.id
     }

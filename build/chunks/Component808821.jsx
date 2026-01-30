@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 808821, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -72,17 +72,17 @@ function b(e) {
     timestamp: t.timestamp,
     compact: n,
     additionalContent: (0, r.jsxs)("div", {
-      className: _.i,
+      className: h.i,
       children: [(0, r.jsx)(u.A, {
         thumbnails: S,
         variant: "stacked"
       }), (0, r.jsx)(s.$nd, {
         size: "sm",
         onClick: j,
-        text: h.intl.string(h.t["5qb8EX"]),
+        text: _.intl.string(_.t["5qb8EX"]),
         icon: o.W4J
       })]
     }),
-    children: h.intl.string(h.t.ThhsNG)
+    children: _.intl.string(_.t.ThhsNG)
   })
 }

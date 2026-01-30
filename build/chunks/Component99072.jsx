@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 99072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -38,7 +38,7 @@ function E(e) {
     staticBannerSrc: T,
     videoBannerSrc: N,
     bannerAspectRatio: P
-  } = (0, d.f)(j), w = _.Ay.getApplicationIconURL({
+  } = (0, d.f)(j), w = h.Ay.getApplicationIconURL({
     id: j.id,
     icon: j.icon
   }), R = (0, i.bG)([p.Ay, g.A], () => p.Ay.getVisibleRunningGames().find(e => {
@@ -48,7 +48,7 @@ function E(e) {
     if (t === j.id) returntrue;
     let n = g.A.getGameByApplication(j);
     return null != n && t === n.id
-  })), D = (0, i.bG)([f.A], () => f.A.getCurrentUserActiveStream()), L = (0, i.bG)([h.A], () => h.A.getChannelId()), M = A.default.extractTimestamp(E.id) + y.M < Date.now(), k = (0, r.jsx)(r.Fragment, {
+  })), D = (0, i.bG)([f.A], () => f.A.getCurrentUserActiveStream()), L = (0, i.bG)([_.A], () => _.A.getChannelId()), M = A.default.extractTimestamp(E.id) + y.M < Date.now(), k = (0, r.jsx)(r.Fragment, {
     children: (0, a.Wf)(E, C, t)
   }), {
     analyticsLocations: U

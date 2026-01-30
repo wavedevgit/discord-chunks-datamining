@@ -32,8 +32,8 @@ function E(e) {
   } = e, m = v();
   C(m);
   let E = (0, s.bG)([a.A], () => a.A.useReducedMotion),
-    [A, x] = l.useState(true),
-    [S, O] = l.useState(true),
+    [A, S] = l.useState(true),
+    [x, O] = l.useState(true),
     y = l.useMemo(() => n.filter(e => !b.MS.some(t => {
       let {
         categorySkuId: n
@@ -51,7 +51,7 @@ function E(e) {
       c(t, n);
       let a = r && !E,
         o = s ? b.G2.ORBS : b.G2.CATALOG;
-      x(n), O(!l), i(o, a)
+      S(n), O(!l), i(o, a)
     }, [E, i, c]),
     {
       searchError: T
@@ -68,9 +68,9 @@ function E(e) {
     tab: t,
     sortedCategories: y,
     initialCategoryId: A,
-    showFilterInitially: S,
+    showFilterInitially: x,
     onUnmount: () => {
-      x(true), O(true)
+      S(true), O(true)
     }
   })
 }
