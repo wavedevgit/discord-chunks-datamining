@@ -60,19 +60,19 @@ let v = Chunk64700.forwardRef(function(e, t) {
     null != n && v && (0, d.mMO)(async () => e => (0, r.jsx)(b.A, O(y({}, e), {
       guild: n
     })))
-  }, [n, v]), H = (0, u.bG)([p.A], () => p.A.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, m.Ks)(n.id), [A, S] = l.useState(H.query), D = l.useCallback(e => {
+  }, [n, v]), H = (0, u.bG)([p.A], () => p.A.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, m.Ks)(n.id), [A, D] = l.useState(H.query), S = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && w(), (0, f.Ld)(n.id, {
       query: t
     })
-  }, [n.id, w]), N = l.useMemo(() => o()(D, 300), [D]), L = l.useCallback(e => {
-    S(e), N(e)
-  }, [N]), P = l.useCallback(() => {
-    S(""), D("")
-  }, [D]);
+  }, [n.id, w]), P = l.useMemo(() => o()(S, 300), [S]), N = l.useCallback(e => {
+    D(e), P(e)
+  }, [P]), L = l.useCallback(() => {
+    D(""), S("")
+  }, [S]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      S("")
+      D("")
     }
   })), (0, r.jsxs)("div", {
     className: x.db,
@@ -93,8 +93,8 @@ let v = Chunk64700.forwardRef(function(e, t) {
           size: "sm",
           query: A,
           placeholder: h.intl.string(h.t["NVoAM+"]),
-          onChange: L,
-          onClear: P,
+          onChange: N,
+          onClear: L,
           autoComplete: "off",
           inputProps: {
             autoCapitalize: "none",

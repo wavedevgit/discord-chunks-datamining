@@ -82,7 +82,7 @@ let K = Chunk64700.memo(function(e) {
         })
       }), (0, v.cx)(t.userId) && (0, r.jsx)(C.m, {
         text: z.intl.string(z.t.PK9FQ2),
-        children: (0, r.jsx)(D.A, {
+        children: (0, r.jsx)(S.A, {
           width: 20,
           height: 20,
           color: d.A.colors.TEXT_FEEDBACK_CRITICAL.css
@@ -136,7 +136,7 @@ let K = Chunk64700.memo(function(e) {
       })]
     })
   }),
-  X = Chunk64700.memo(function(e) {
+  W = Chunk64700.memo(function(e) {
     var t, n;
     let {
       member: l,
@@ -156,7 +156,7 @@ let K = Chunk64700.memo(function(e) {
           children: (0, r.jsxs)("div", {
             className: Y.VW,
             children: [(0, r.jsx)(m.gyj, {
-              name: L.Ay.getName(l.guildId, null, i),
+              name: N.Ay.getName(l.guildId, null, i),
               colorString: null != (n = l.colorString) ? n : null,
               colorStrings: o,
               className: Y.bc
@@ -180,10 +180,10 @@ let K = Chunk64700.memo(function(e) {
     })
   });
 
-function W(e) {
+function X(e) {
   return {
-    short: null == e ? null : (0, V.hL)(e, V.wN.JOINED_AT),
-    long: new Date(null != e ? e : 0).toLocaleDateString(z.intl.currentLocale, V.wp)
+    short: null == e ? null : (0, E.hL)(e, E.wN.JOINED_AT),
+    long: new Date(null != e ? e : 0).toLocaleDateString(z.intl.currentLocale, E.wp)
   }
 }
 
@@ -194,9 +194,9 @@ function J(e) {
     isSortedBy: i
   } = e, [o, a] = l.useState(null);
   l.useEffect(() => {
-    a(W(t.joinedAtTimestamp))
+    a(X(t.joinedAtTimestamp))
   }, [t.joinedAtTimestamp]), (0, f.A)(() => {
-    a(W(t.joinedAtTimestamp))
+    a(X(t.joinedAtTimestamp))
   }, 1e4);
   let s = i ? "text-brand" : "text-default";
   return (null == o ? true : o.short) == null ? null : n ? (0, r.jsx)("div", {
@@ -228,10 +228,10 @@ let $ = Chunk64700.memo(function(e) {
       accountCreationDateShort: o,
       accountCreationDateLong: a
     } = l.useMemo(() => {
-      let e = P.default.extractTimestamp(t.userId);
+      let e = L.default.extractTimestamp(t.userId);
       return {
-        accountCreationDateShort: (0, V.hL)(e, V.wN.ACCOUNT_AGE),
-        accountCreationDateLong: new Date(e).toLocaleDateString(z.intl.currentLocale, V.OA)
+        accountCreationDateShort: (0, E.hL)(e, E.wN.ACCOUNT_AGE),
+        accountCreationDateLong: new Date(e).toLocaleDateString(z.intl.currentLocale, E.OA)
       }
     }, [t.userId]), s = i ? "text-brand" : "text-default";
     return n ? (0, r.jsx)(m.Text, {
@@ -264,10 +264,10 @@ let $ = Chunk64700.memo(function(e) {
       removeUser: h
     } = (0, k.A)(t.guildId), x = (0, M.vA)(t.guildId), y = (0, M.O6)(t.guildId, x, t.userId), O = (0, u.bG)([I.A], () => {
       var e;
-      return null != (e = I.A.getSearchStateByGuildId(t.guildId).selectedSort) ? e : E.mF.ORDER_BY_UNSPECIFIED
+      return null != (e = I.A.getSearchStateByGuildId(t.guildId).selectedSort) ? e : V.mF.ORDER_BY_UNSPECIFIED
     }, [t.guildId], c()), v = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != t && y && (j.has(t.userId) ? h(t.userId) : g([t.userId]))
-    }, [g, y, t, h, j]), _ = O === E.mF.ORDER_BY_GUILD_JOINED_AT_ASC, H = O === E.mF.ORDER_BY_USER_ID_ASC || O === E.mF.ORDER_BY_USER_ID_DESC;
+    }, [g, y, t, h, j]), _ = O === V.mF.ORDER_BY_GUILD_JOINED_AT_ASC, H = O === V.mF.ORDER_BY_USER_ID_ASC || O === V.mF.ORDER_BY_USER_ID_DESC;
     return (0, r.jsxs)(r.Fragment, {
       children: [x && (0, r.jsx)("td", {
         children: (0, r.jsx)(C.m, {
@@ -286,7 +286,7 @@ let $ = Chunk64700.memo(function(e) {
         className: o()(Y.QB, {
           [Y.oE]: p
         }),
-        children: (0, r.jsx)(X, {
+        children: (0, r.jsx)(W, {
           member: t,
           user: n
         })
@@ -343,7 +343,7 @@ let $ = Chunk64700.memo(function(e) {
             children: (0, r.jsx)(m.DUT, {
               onClick: d,
               className: Y.x6,
-              children: f ? (0, r.jsx)(N.A, {
+              children: f ? (0, r.jsx)(P.A, {
                 width: et,
                 height: et
               }) : (0, r.jsx)(m.nys, {
@@ -384,21 +384,21 @@ let $ = Chunk64700.memo(function(e) {
       compact: m = false
     } = e, {
       analyticsLocations: p
-    } = (0, b.Ay)(), f = (0, u.bG)([H.Ay], () => H.Ay.getGuildSidebarState(n), [n]), j = (null == f ? true : f.details.userId) === t, g = (0, u.bG)([I.A], () => I.A.getEnhancedMember(n, t), [n, t]), h = (0, U.YH)(g), O = (0, u.bG)([S.default], () => S.default.getUser(t), [t]), v = (0, y.q)(n), _ = (0, U.UY)(null != g ? g : true), w = l.useCallback(e => {
+    } = (0, b.Ay)(), f = (0, u.bG)([H.Ay], () => H.Ay.getGuildSidebarState(n), [n]), j = (null == f ? true : f.details.userId) === t, g = (0, u.bG)([I.A], () => I.A.getEnhancedMember(n, t), [n, t]), h = (0, U.YH)(g), O = (0, u.bG)([D.default], () => D.default.getUser(t), [t]), v = (0, y.q)(n), _ = (0, U.UY)(null != g ? g : true), w = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), _(e)
     }, [_]), A = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (0, U.Ko)(g, p)
-    }, [g, p]), D = l.useCallback(e => {
+    }, [g, p]), S = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (v ? (0, x.z)(g.guildId, g.userId, G.VV.MEMBER_SAFETY, {
         modViewPanel: q.g.INFO
       }) : (0, U.Ko)(g, p))
-    }, [g, p, v]), N = l.useCallback((e, t) => c()((0, a.omit)(e, en), (0, a.omit)(t, en)), []);
+    }, [g, p, v]), P = l.useCallback((e, t) => c()((0, a.omit)(e, en), (0, a.omit)(t, en)), []);
     return null == g ? null : (0, r.jsx)(T.A, {
       role: "row",
       value: g,
       style: i,
       className: o()(Y.yF, Y.iA, s && Y.wH, j && Y.qb, d && Y.Lq),
-      equalityFn: N,
+      equalityFn: P,
       onClick: A,
       onContextMenu: w,
       children: (0, r.jsx)(ee, {
@@ -407,7 +407,7 @@ let $ = Chunk64700.memo(function(e) {
         highestRole: h,
         isHoldingAdvancedInfoKey: C,
         onOpenModerationMenu: w,
-        onOpenMemberView: D,
+        onOpenMemberView: S,
         compact: m,
         hasModViewPanelAccess: v
       })

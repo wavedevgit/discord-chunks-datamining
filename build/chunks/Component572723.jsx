@@ -59,7 +59,7 @@ function L(e) {
   let {
     transitionState: B,
     onClose: I
-  } = e, D = l.useRef(null), R = l.useRef(null), [V, z] = l.useState(""), [M, W] = l.useState(""), [Y, H] = l.useState(), [K, F] = l.useState(""), [U, G] = l.useState([]), [q, Z] = l.useState(), [J, X] = l.useState(), [Q, $] = l.useState(false), [ee, et] = l.useState(""), [en, ei] = l.useState(function(e) {
+  } = e, D = l.useRef(null), R = l.useRef(null), [z, V] = l.useState(""), [M, W] = l.useState(""), [Y, H] = l.useState(), [K, F] = l.useState(""), [U, G] = l.useState([]), [q, Z] = l.useState(), [J, X] = l.useState(), [Q, $] = l.useState(false), [ee, et] = l.useState(""), [en, ei] = l.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -69,7 +69,7 @@ function L(e) {
         return "Linux"
     }
     return ""
-  }((0, O.getOS)())), [el, er] = l.useState(""), [ea, eo] = l.useState(""), [es, eu] = l.useState(""), [ec, ed] = l.useState(""), [em, ev] = l.useState(false), [ep, ef] = l.useState(false), [eh, ex] = l.useState(false), [eg, eb] = l.useState(null);
+  }((0, O.getOS)())), [el, er] = l.useState(""), [ea, eo] = l.useState(""), [es, eu] = l.useState(""), [ec, ed] = l.useState(""), [em, ev] = l.useState(false), [ep, eh] = l.useState(false), [ef, ex] = l.useState(false), [eg, eb] = l.useState(null);
   l.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.Bo.get({
@@ -79,8 +79,8 @@ function L(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "188f013aa92217eae7ef670b4360af398fbbfeac" !== e.body.hash) {
-        let e = new Date("1769813238942"),
+      if (null != e.body && "4154369394b1d002da1e3045bb75f039209dfe47" !== e.body.hash) {
+        let e = new Date("1769814925908"),
           t = new Date,
           n = (0, w.Tf)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -112,9 +112,9 @@ function L(e) {
     });
   async function eS() {
     var e, t;
-    if (ex(false), "" === V || "" === M || null == Y) return void ev(true);
+    if (ex(false), "" === z || "" === M || null == Y) return void ev(true);
     let l = null == q || null == (t = q.features) ? true : t.find(e => (0, S.wY)(e) === J);
-    ef(true), ev(false);
+    eh(true), ev(false);
     let r = (0, k.B)(U.map(e => {
         let {
           item: t
@@ -122,7 +122,7 @@ function L(e) {
         return t
       })),
       a = await (0, S.zC)({
-        name: V,
+        name: z,
         description: M,
         priority: Y,
         feature: l,
@@ -140,7 +140,7 @@ function L(e) {
       } : {
         overridePlatformInformation: Q
       }, r).catch(() => ex(true));
-    ef(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), I(), (0, c.mMO)(async () => {
+    eh(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), I(), (0, c.mMO)(async () => {
       let {
         default: e
       } = await n.e("71256").then(n.bind(n, 369323));
@@ -255,12 +255,12 @@ function L(e) {
         },
         children: [(0, i.jsx)(c.ksK, {
           label: C.intl.string(C.t.OZRgjw),
-          error: em && "" === V ? C.intl.string(C.t.EkokLy) : null,
+          error: em && "" === z ? C.intl.string(C.t.EkokLy) : null,
           placeholder: "Something is broken on this screen.",
           type: "text",
-          value: V,
+          value: z,
           maxLength: 100,
-          onChange: z,
+          onChange: V,
           autoFocus: true
         }), (0, i.jsx)(c.fs1, {
           label: C.intl.string(C.t["1SplH2"]),
@@ -268,7 +268,8 @@ function L(e) {
           placeholder: "What did you expect to see?",
           value: M,
           onChange: W,
-          description: ej ? "You can add additional information/media on the ticket after submitting" : true
+          description: ej ? "You can add additional information/media on the ticket after submitting" : true,
+          autosize: true
         }), (0, i.jsx)(s.Te, {
           label: C.intl.string(C.t.xMXLda),
           errorMessage: em && true === Y ? C.intl.string(C.t.EkokLy) : null,
@@ -401,8 +402,8 @@ function L(e) {
             children: U.length > 0 && U.map(e => (0, i.jsxs)("div", {
               className: E.oh,
               children: [(0, i.jsxs)("div", {
-                children: [(0, i.jsx)(h.J, {
-                  size: f.L.SMALL,
+                children: [(0, i.jsx)(f.J, {
+                  size: h.L.SMALL,
                   upload: e
                 }), (0, i.jsx)("div", {
                   className: E.eA,
@@ -428,7 +429,7 @@ function L(e) {
               })]
             }, e.id))
           })
-        }) : null, eh ? (0, i.jsx)(c.Text, {
+        }) : null, ef ? (0, i.jsx)(c.Text, {
           color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: "Something went wrong, try again!"

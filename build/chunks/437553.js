@@ -19,6 +19,19 @@ let i = {
       rejectWithError: false
     })).body.pruned
   },
+  async updateEstimateV2(e) {
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 7,
+      n = arguments.length > 2 ? arguments[2] : true;
+    await r.Bo.get({
+      url: l.Rsh.GUILD_PRUNE_V2(e),
+      query: {
+        days: t,
+        include_roles: n
+      },
+      oldFormErrors: true,
+      rejectWithError: false
+    })
+  },
   prune: (e, t, n) => r.Bo.post({
     url: l.Rsh.GUILD_PRUNE(e),
     body: {

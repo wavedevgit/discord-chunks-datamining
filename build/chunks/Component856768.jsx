@@ -75,7 +75,7 @@ function O(e) {
     _()
   }, A = l.useCallback(() => {
     _()
-  }, [_]), S = (0, r.jsxs)("span", {
+  }, [_]), D = (0, r.jsxs)("span", {
     className: h.zC,
     children: [(0, r.jsx)(c.nys, {
       size: "custom",
@@ -92,7 +92,7 @@ function O(e) {
       text: g.intl.string(g.t.yW6ZdE),
       onClick: A
     })]
-  }), D = (0, r.jsxs)("span", {
+  }), S = (0, r.jsxs)("span", {
     className: h.UD,
     children: [(0, r.jsx)(c.wI0, {
       size: "custom",
@@ -128,9 +128,9 @@ function O(e) {
             }))
           })
         },
-        onSaveText: D,
+        onSaveText: S,
         onSaveButtonColor: s.XD.RED,
-        message: S
+        message: D
       })
     })
   }) : null
