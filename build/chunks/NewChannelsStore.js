@@ -1,4 +1,4 @@
-/** Chunk was on 3911 **/
+/** Chunk was on 44411 **/
 /** chunk id: 454058, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,54 +19,54 @@ var i, s, Chunk311907 = require("./311907.js"),
   Chunk927813 = require("./927813.js"),
   Chunk661191 = require("./661191.js"),
   Chunk652215 = require("./652215.js");
-let S = new Set,
-  m = {},
-  A = {};
+let m = new Set,
+  S = {},
+  O = {};
 
 function E(e, t) {
-  let n = m[e];
+  let n = S[e];
   if (null != n && null != t && n.has(t)) {
     var i;
     !C.Ay.isOptInEnabled(e) || (null == (i = c.A.getChannel(t)) ? true : i.isThread()) || null != f.Ay.ackMessageId(t) || l.h.wait(() => (0, o.ack)(t, {
       object: b.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
       objectType: b.AnalyticsObjectTypes.ACK_AUTOMATIC
-    }, true, true, y.default.atPreviousMillisecond(t)))
+    }, true, true, v.default.atPreviousMillisecond(t)))
   }
 }
 
-function I(e) {
+function A(e) {
   var t;
-  if (null != m[e]) return;
+  if (null != S[e]) return;
   let n = h.Ay.getChannels(e)[h.I6].map(e => e.channel.id),
-    i = null == (t = g.Ay.getMember(e, u.default.getId())) ? true : t.joinedAt;
+    i = null == (t = p.Ay.getMember(e, u.default.getId())) ? true : t.joinedAt;
   if (null == i) return;
-  m[e] = new Set;
+  S[e] = new Set;
   let s = new Date(i).getTime();
-  0 !== n.length && (m[e] = new Set(n.filter(t => {
-    let n = y.default.extractTimestamp(t);
-    return null == f.Ay.getTrackedAckMessageId(t) && n > Date.now() - v.A.Millis.WEEK && n > d.A.getGuildRecentsDismissedAt(e) && n > s && !C.Ay.isChannelOrParentOptedIn(e, t)
-  })), A[e] = Date.now())
+  0 !== n.length && (S[e] = new Set(n.filter(t => {
+    let n = v.default.extractTimestamp(t);
+    return null == f.Ay.getTrackedAckMessageId(t) && n > Date.now() - y.A.Millis.WEEK && n > d.A.getGuildRecentsDismissedAt(e) && n > s && !C.Ay.isChannelOrParentOptedIn(e, t)
+  })), O[e] = Date.now())
 }
 
-function O() {
-  y.default.keys(m).forEach(e => {
-    let t = m[e];
-    m[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
+function I() {
+  v.default.keys(S).forEach(e => {
+    let t = S[e];
+    S[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
   })
 }
 class _ extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(u.default, c.A, h.Ay, g.Ay, p.A, f.Ay, C.Ay, d.A), this.syncWith([C.Ay], O)
+    this.waitFor(u.default, c.A, h.Ay, p.Ay, g.A, f.Ay, C.Ay, d.A), this.syncWith([C.Ay], I)
   }
   getNewChannelIds(e) {
     var t;
-    return null != e && null == m[e] && I(e), null != e && null != (t = m[e]) ? t : S
+    return null != e && null == S[e] && A(e), null != e && null != (t = S[e]) ? t : m
   }
   shouldIndicateNewChannel(e, t) {
     var n;
     if (null == e) returnfalse;
-    let i = p.A.getGuild(e);
-    return null != i && !!i.features.has(b.GuildFeatures.COMMUNITY) && (null != e && null == m[e] && I(e), (null == (n = m[e]) ? true : n.has(t)) && null == f.Ay.getTrackedAckMessageId(t))
+    let i = g.A.getGuild(e);
+    return null != i && !!i.features.has(b.GuildFeatures.COMMUNITY) && (null != e && null == S[e] && A(e), (null == (n = S[e]) ? true : n.has(t)) && null == f.Ay.getTrackedAckMessageId(t))
   }
 }(s = "displayName") in _ ? Object.defineProperty(_, s, {
   value: "NewChannelsStore",
@@ -80,8 +80,8 @@ let w = new _(Chunk73153.h, {
       guildId: t,
       channelIds: n
     } = e;
-    if (null == m[t]) returnfalse;
-    n.forEach(e => m[t].delete(e)), 0 === m[t].size && delete m[t]
+    if (null == S[t]) returnfalse;
+    n.forEach(e => S[t].delete(e)), 0 === S[t].size && delete S[t]
   },
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: function(e) {
@@ -89,7 +89,7 @@ let w = new _(Chunk73153.h, {
       guildId: t,
       channelId: n
     } = e;
-    return null != t && (null == m[t] || A[t] < Date.now() - v.A.Millis.HOUR ? (I(t), true) : (null != n && E(t, n), false))
+    return null != t && (null == S[t] || O[t] < Date.now() - y.A.Millis.HOUR ? (A(t), true) : (null != n && E(t, n), false))
   },
   SIDEBAR_VIEW_CHANNEL: function(e) {
     let {
@@ -110,13 +110,13 @@ let w = new _(Chunk73153.h, {
     let {
       guild: t
     } = e;
-    delete m[t.id]
+    delete S[t.id]
   },
   CHANNEL_CREATE: function(e) {
     var t;
     let {
       channel: n
     } = e;
-    n.isVocal() || (m[n.guild_id] = null != (t = m[n.guild_id]) ? t : new Set, m[n.guild_id].add(n.id))
+    n.isVocal() || (S[n.guild_id] = null != (t = S[n.guild_id]) ? t : new Set, S[n.guild_id].add(n.id))
   }
 })

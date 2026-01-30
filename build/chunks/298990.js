@@ -1,8 +1,8 @@
 /** Chunk was on 12925 **/
 /** chunk id: 298990, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Jb: () => o,
-  b4: () => i,
+  Jb: () => i,
+  b4: () => o,
   oR: () => a,
   qf: () => l
 });
@@ -29,14 +29,14 @@ function a(e) {
   })
 }
 
-function i(e) {
+function o(e) {
   r.h.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     channelId: e
   })
 }
 
-function o(e) {
+function i(e) {
   r.h.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     userId: e

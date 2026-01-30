@@ -1,4 +1,4 @@
-/** Chunk was on 3911 **/
+/** Chunk was on 44411 **/
 /** chunk id: 240935, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ let u = {},
   c = {},
   h = {};
 
-function g() {
+function p() {
   let e = o.A.getChannelId();
   if (null == e) return;
   let t = l.A.getChannel(e);
@@ -34,10 +34,10 @@ function g() {
   }
   return (h[e]++, null == u[n] && (u[n] = new Set), a.Ay.isFavorite(n, e)) ? void u[n].delete(e) : (null == c[n] || !c[n].has(e)) && h[e] > 50 ? (u[n].add(e), true) : true
 }
-class p extends(i = Chunk311907.Ay.PersistedStore) {
+class g extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.waitFor(l.A, o.A, a.Ay), this.syncWith([o.A], g), null == e) return;
+    if (this.waitFor(l.A, o.A, a.Ay), this.syncWith([o.A], p), null == e) return;
     let {
       suggestedChannels: i,
       dismissedSuggestions: s,
@@ -60,8 +60,8 @@ class p extends(i = Chunk311907.Ay.PersistedStore) {
     }
   }
 }
-d(p, "displayName", "FavoritesSuggestionStore"), d(p, "persistKey", "FavoritesSuggestionStore");
-let f = new p(Chunk73153.h, {
+d(g, "displayName", "FavoritesSuggestionStore"), d(g, "persistKey", "FavoritesSuggestionStore");
+let f = new g(Chunk73153.h, {
   DISMISS_FAVORITE_SUGGESTION: function(e) {
     let {
       guildId: t,

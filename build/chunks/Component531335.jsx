@@ -59,7 +59,7 @@ let O = (e, t, c) => {
       action: () => (0, i.mMO)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("43600"), n.e("28136"), n.e("92779")]).then(n.bind(n, 234355));
+        } = await Promise.all([n.e("43600"), n.e("28136"), n.e("15160")]).then(n.bind(n, 234355));
         return n => {
           var o, l;
           return (0, r.jsx)(i, (o = s({}, n), l = l = {

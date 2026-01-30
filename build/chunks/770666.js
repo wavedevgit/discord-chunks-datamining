@@ -1,5 +1,6 @@
-/** Chunk was on 93631 **/
+/** Chunk was on 59461 **/
 /** chunk id: 770666, original params: e,n,t (module,exports,require) **/
+"use strict";
 require.d(exports, {
   A: () => s
 }), require("./896048.js");
@@ -11,16 +12,16 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js");
 
 function s(e, n) {
-  return (0, a.bG)([l.A, i.Ay, o.A], () => {
-    let t = l.A.getGuild(e);
-    if (o.A.can(c.xBc.ADMINISTRATOR, t) || o.A.can(c.xBc.CREATE_EVENTS, t)) returntrue;
+  return (0, i.bG)([u.A, r.Ay, a.A], () => {
+    let t = u.A.getGuild(e);
+    if (a.A.can(o.xBc.ADMINISTRATOR, t) || a.A.can(o.xBc.CREATE_EVENTS, t)) returntrue;
     for (let {
         channel: t
       }
-      of i.Ay.getChannels(e)[i.vM])
+      of r.Ay.getChannels(e)[r.vM])
       if (null == n || t.type === n) {
-        let [e] = (0, r.p_)(t);
-        if (o.A.can(e, t)) returntrue
+        let [e] = (0, l.p_)(t);
+        if (a.A.can(e, t)) returntrue
       } returnfalse
   }, [e, n])
 }

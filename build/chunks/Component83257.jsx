@@ -1,10 +1,10 @@
-/** Chunk was on 3911 **/
+/** Chunk was on 44411 **/
 /** chunk id: 83257, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => j,
-  OZ: () => O,
-  n3: () => I,
+  Ay: () => N,
+  OZ: () => I,
+  n3: () => A,
   pe: () => _
 }), require("./321073.js"), require("./114821.js"), require("./339614.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk39965 = require("./39965.js");
 
-function S(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      S(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,8 +64,8 @@ let E = Object.freeze({
     onPreventNavigation: null,
     sidebarOpen: true
   }),
-  I = 1.4,
-  O = 15,
+  A = 1.4,
+  I = 15,
   _ = 2;
 
 function w(e) {
@@ -80,17 +80,17 @@ function w(e) {
     name: null == s ? true : s.impressionName,
     properties: null == s ? true : s.impressionProperties
   });
-  let d = null != (t = null == s ? true : s.element) ? t : v.FXj,
+  let d = null != (t = null == s ? true : s.element) ? t : y.FXj,
     u = null != (n = null == s ? true : s.elementProps) ? n : {};
   return (0, i.jsx)(f.A, {
     section: s.section,
-    children: (0, i.jsx)(d, A(m({}, u), {
+    children: (0, i.jsx)(d, O(S({}, u), {
       setPreventNavigation: l,
       refToScroller: o
     }))
   })
 }
-class N extends Chunk64700.PureComponent {
+class j extends Chunk64700.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -109,7 +109,7 @@ class N extends Chunk64700.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = I)
+    t !== this.props.section && (this._intensity = A)
   }
   componentWillUnmount() {
     this._unmounted = true, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -127,10 +127,10 @@ class N extends Chunk64700.PureComponent {
     } = this.props, {
       notice: n
     } = null != (e = this.getPredicateSections().find(e => t === e.section)) ? e : {};
-    return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (g._.dispatch(v.jej.SHAKE_APP, {
+    return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (p._.dispatch(y.jej.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + _, O), g._.dispatch(v.jej.EMPHASIZE_NOTICE), false) : (this._intensity = I, true)
+    }), this._intensity = Math.min(this._intensity + _, I), p._.dispatch(y.jej.EMPHASIZE_NOTICE), false) : (this._intensity = A, true)
   }
   renderSidebar(e) {
     let {
@@ -163,7 +163,7 @@ class N extends Chunk64700.PureComponent {
                 return (0, i.jsx)(o.VQ0.Separator, {}, t);
               case C.Fq.CUSTOM:
                 var n;
-                let s = null != (n = e.element) ? n : v.FXj;
+                let s = null != (n = e.element) ? n : y.FXj;
                 return (0, i.jsx)(s, {}, t);
               default:
                 return this.renderSettingsSectionTabBarItem(e, l === e.section, r)
@@ -223,14 +223,14 @@ class N extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "_unmounted", false), S(this, "_intensity", I), S(this, "_subscribedStores", []), S(this, "scrollerRef", s.createRef()), S(this, "state", A(m({}, E), {
-      sidebarOpen: this.props.section !== v.nc_.SUBSCRIPTIONS && this.props.section !== v.nc_.PROFILE_CUSTOMIZATION
-    })), S(this, "setPreventNavigation", (e, t) => {
+    super(...e), m(this, "_unmounted", false), m(this, "_intensity", A), m(this, "_subscribedStores", []), m(this, "scrollerRef", s.createRef()), m(this, "state", O(S({}, E), {
+      sidebarOpen: this.props.section !== y.nc_.SUBSCRIPTIONS && this.props.section !== y.nc_.PROFILE_CUSTOMIZATION
+    })), m(this, "setPreventNavigation", (e, t) => {
       this.setState({
         shouldPreventNavigation: e,
         onPreventNavigation: t
       })
-    }), S(this, "handleSetSection", e => {
+    }), m(this, "handleSetSection", e => {
       let {
         onSetSection: t,
         sections: n
@@ -245,24 +245,24 @@ class N extends Chunk64700.PureComponent {
         } = null != (i = n.find(t => e === t.section)) ? i : {}, r = null != s ? s.stores : null;
         null != r && r.forEach(e => {
           this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
-        }), this.setState(A(m({}, E), {
+        }), this.setState(O(S({}, E), {
           sidebarOpen: false
         }))
       };
-      this.validNavigation() && !i && (r(), p.A.addBreadcrumb({
+      this.validNavigation() && !i && (r(), g.A.addBreadcrumb({
         category: "settings",
         message: "Set section: ".concat(e)
       })), i && null != s && s(r)
-    }), S(this, "handleClose", () => {
+    }), m(this, "handleClose", () => {
       if (this.validNavigation()) {
         let {
           onClose: e
         } = this.props;
         null == e || e()
       }
-    }), S(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = I, this.forceUpdate())
-    }), S(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
+    }), m(this, "handleNoticeStoreUpdate", () => {
+      this._unmounted || (this._intensity = A, this.forceUpdate())
+    }), m(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: s,
         label: r = null,
@@ -270,42 +270,42 @@ class N extends Chunk64700.PureComponent {
         onClick: d,
         variant: u,
         icon: h,
-        className: g,
-        newIndicator: p,
+        className: p,
+        newIndicator: g,
         newIndicatorDismissibleContentTypes: f,
         badgeCount: C
-      } = e, S = null;
-      s === v.nc_.ACCOUNT && this.props.isEligibleForPomelo ? S = (0, i.jsx)(o.EpV, {
+      } = e, m = null;
+      s === y.nc_.ACCOUNT && this.props.isEligibleForPomelo ? m = (0, i.jsx)(o.EpV, {
         size: "custom",
         width: 20,
         height: 20,
         color: l.A.colors.STATUS_WARNING.css
-      }) : null != e.decoration ? S = (0, i.jsx)(o.Text, {
+      }) : null != e.decoration ? m = (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != n && (null == f ? true : f.includes(n)) && !t ? S = null != p ? p : (0, i.jsx)(o.LpS, {
-        text: y.intl.string(y.t.y2b7CA)
-      }) : null != h ? S = h : null != C && C > 0 && (S = (0, i.jsx)(o.hVq, {
+      }) : null != n && (null == f ? true : f.includes(n)) && !t ? m = null != g ? g : (0, i.jsx)(o.LpS, {
+        text: v.intl.string(v.t.y2b7CA)
+      }) : null != h ? m = h : null != C && C > 0 && (m = (0, i.jsx)(o.hVq, {
         count: C
       }));
-      let m = s === v.nc_.PREMIUM ? (0, i.jsx)(c.A, {
+      let S = s === y.nc_.PREMIUM ? (0, i.jsx)(c.A, {
         label: r,
         isSelected: t,
-        decoration: S
-      }) : null == S ? r : (0, i.jsxs)("div", {
+        decoration: m
+      }) : null == m ? r : (0, i.jsxs)("div", {
         className: b.l,
-        children: [r, S]
+        children: [r, m]
       });
       return (0, i.jsx)(o.VQ0.Item, {
         variant: u,
         id: s,
         onClick: d,
-        className: g,
+        className: p,
         "aria-label": null != a ? a : "",
-        children: m
+        children: S
       }, s)
     })
   }
 }
-let j = N
+let N = j

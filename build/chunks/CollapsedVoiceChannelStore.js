@@ -1,8 +1,8 @@
-/** Chunk was on 3911 **/
+/** Chunk was on 44411 **/
 /** chunk id: 945886, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => g
+  A: () => p
 }), require("./896048.js");
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -40,7 +40,7 @@ class h extends(i = Chunk311907.Ay.PersistedStore) {
   }
 }
 a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
-let g = new h(Chunk73153.h, {
+let p = new h(Chunk73153.h, {
   CONNECTION_OPEN: c,
   OVERLAY_INITIALIZE: c,
   CHANNEL_COLLAPSE: function(e) {
