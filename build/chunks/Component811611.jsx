@@ -197,7 +197,7 @@ function F(e) {
       variant: "heading-md/semibold",
       color: "text-default",
       children: D.intl.format(D.t["fF+cgd"], {
-        onClick: () => (0, T.Z)()
+        onClick: () => (0, T.e)()
       })
     }), (0, r.jsx)(k, {
       trialOffer: i,

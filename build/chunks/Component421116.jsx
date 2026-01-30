@@ -1,5 +1,5 @@
-/** Chunk was on 2827 **/
-/** chunk id: 600487, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78376 **/
+/** chunk id: 421116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => K
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js");
@@ -36,15 +36,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk974005 = require("./974005.jsx"),
   Chunk305714 = require("./305714.jsx"),
   Chunk658137 = require("./658137.jsx"),
+  Chunk927258 = require("./927258.jsx"),
   Chunk57978 = require("./57978.jsx"),
   Chunk694195 = require("./694195.js"),
   Chunk716442 = require("./716442.js"),
-  Chunk927258 = require("./927258.jsx"),
   Chunk788868 = require("./788868.js"),
   Chunk652215 = require("./652215.js"),
   Chunk818348 = require("./818348.js"),
   Chunk549447 = require("./549447.js"),
-  Chunk66283 = require("./66283.js"),
+  Chunk157650 = require("./157650.js"),
   Chunk122402 = require("./122402.js");
 let K = () => {
   let e = (0, a.zy)();
@@ -81,7 +81,7 @@ let K = () => {
   }, []), i.useEffect(() => {
     if (!es || "orbs" !== new URLSearchParams(e.search).get("section")) return;
     let t = requestAnimationFrame(() => {
-      let e = document.getElementById(M.NI.ORB_REWARDS);
+      let e = document.getElementById(G.NI.ORB_REWARDS);
       null != e && e.scrollIntoView({
         behavior: X ? "auto" : "smooth",
         block: "start"
@@ -89,11 +89,11 @@ let K = () => {
     });
     return () => cancelAnimationFrame(t)
   }, [e.search, es, X]);
-  let ef = [U.k.HOME, U.k.WHATS_NEW, U.k.BEST_OF_NITRO, U.k.PLANS, U.k.COMPARE],
+  let ef = [k.k.HOME, k.k.WHATS_NEW, k.k.BEST_OF_NITRO, k.k.PLANS, k.k.COMPARE],
     {
       navBarSections: eb,
       activeSectionId: eh
-    } = (0, G.o)(ef),
+    } = (0, U.o)(ef),
     {
       home: eE,
       whatsNew: eO,
@@ -111,7 +111,7 @@ let K = () => {
       children: [eg && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y.A, {
           className: F.topOfPageGradient
-        }), (0, r.jsx)(k.A, {
+        }), (0, r.jsx)(M.A, {
           navBarSections: eb,
           activeSectionId: eh
         })]

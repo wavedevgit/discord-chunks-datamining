@@ -51,7 +51,7 @@ function O(t) {
       className: p.C,
       tag: "span",
       onClick: () => {
-        n(), (0, c.Z)()
+        n(), (0, c.e)()
       },
       children: t
     }, e)

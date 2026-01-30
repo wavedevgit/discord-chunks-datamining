@@ -34,7 +34,7 @@ function p(e) {
     return l
   }(e, ["channel", "onClose"]), f = i.intl.format(i.t.AVVUse, {
     onLearnMore: function() {
-      n(), (0, o.Z)()
+      n(), (0, o.e)()
     }
   });
   return (0, r.jsx)(l.A, function(e) {

@@ -215,7 +215,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     let eM = i.useCallback(() => {
       G(), O.default.track(k.HAw.PREMIUM_PROMOTION_OPENED, {
         location_section: k.JJy.STICKER_PICKER_UPSELL
-      }), (0, g.Z)()
+      }), (0, g.e)()
     }, [G]);
     return (0, r.jsxs)(p.f5, {
       value: q,

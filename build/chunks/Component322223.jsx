@@ -30,10 +30,10 @@ function S(e) {
     shouldShowIncidentActions: g,
     incidentData: D,
     isUnderLockdown: h
-  } = (0, A.Li)(f), U = (0, s.fw)(null != (t = null == C ? true : C.id) ? t : O.dJq), b = i.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
+  } = (0, A.Li)(f), b = (0, s.fw)(null != (t = null == C ? true : C.id) ? t : O.dJq), U = i.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
   if (null == C || null == D || !g) return null;
   let M = e => {
-      e && U && m !== N.VV.MEMBER_SAFETY && b() ? _.default.track(O.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      e && b && m !== N.VV.MEMBER_SAFETY && U() ? _.default.track(O.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: O.kqX.GUILD_RAID_NOTIFICATION,
         guild_id: C.id
       }) : (0, a.mMO)(async () => {
@@ -112,7 +112,7 @@ function S(e) {
     }) : p.intl.formatToPlainString(p.t.W87xDE, {
       guildName: C.name
     }),
-    L = U && m === N.VV.MEMBER_SAFETY;
+    L = b && m === N.VV.MEMBER_SAFETY;
   return (0, r.jsxs)(a.$Td, {
     className: R.lm,
     color: a.Hv$.WARNING,

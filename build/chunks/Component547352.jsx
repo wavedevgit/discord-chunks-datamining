@@ -34,7 +34,7 @@ function i(e) {
     return c
   }(e, ["onClose", "source"]), u = f.intl.format(f.t.WMO9po, {
     onAndMore: function() {
-      t(), (0, o.Z)()
+      t(), (0, o.e)()
     }
   });
   return (0, n.jsx)(c.A, function(e) {

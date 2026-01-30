@@ -36,7 +36,7 @@ function u(e) {
     return c
   }(e, ["onClose", "analyticsSource", "onLearnMore"]), b = a.pe.TIER_2, y = i.intl.format(i.t.hDMlqD, {
     onLearnMore: function() {
-      null == u || u(), t(), (0, o.Z)()
+      null == u || u(), t(), (0, o.e)()
     }
   });
   return (0, n.jsx)(c.A, function(e) {

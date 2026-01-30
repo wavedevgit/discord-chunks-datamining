@@ -35,7 +35,7 @@ let P = () => {
     g = null,
     D = null,
     h = null,
-    U = [R.lm, S.lm];
+    b = [R.lm, S.lm];
   switch (C) {
     case A.B5.SUBMITTED:
       g = p.intl.string(p.t["5iLvSx"]), D = p.intl.string(p.t.mqtdmQ), h = () => {
@@ -75,7 +75,7 @@ let P = () => {
             guildId: P.id
           }, t))
         })
-      }, U.push(R.z3);
+      }, b.push(R.z3);
       break;
     default:
       g = p.intl.string(p.t.G5YKXP), D = p.intl.string(p.t["r8/DT+"]), h = () => {
@@ -83,7 +83,7 @@ let P = () => {
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...U),
+    className: l()(...b),
     children: [(0, r.jsx)(c.Text, {
       className: R.wx,
       variant: "text-sm/normal",

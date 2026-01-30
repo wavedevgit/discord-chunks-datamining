@@ -39,7 +39,7 @@ function O(e) {
     return c
   }(e, ["onClose", "source"]), d = (0, o.bG)([l.default], () => l.default.getCurrentUser()), g = a.Ay.isPremium(d) ? y.t.E0sNsc : y.t.UBcuto, m = y.intl.format(g, {
     onLearnMore: function() {
-      t(), (0, i.Z)()
+      t(), (0, i.e)()
     }
   });
   return (0, n.jsx)(u.A, function(e) {

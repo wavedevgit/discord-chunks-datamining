@@ -330,7 +330,7 @@ let J = 32,
           T(), j.default.track(H.HAw.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
-          }), (0, R.Z)()
+          }), (0, R.e)()
         }
       }),
       eu = X && er && !eo && (Z && et || !Z),

@@ -312,6 +312,12 @@ class N extends Chunk972347.A {
       })
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }
+  getDeviceOSVolume(e) {
+    return Promise.resolve(true)
+  }
+  getDeviceOSMuted(e) {
+    return Promise.resolve(true)
+  }
   constructor() {
     super(), T(this, "Video", A.A), T(this, "Camera", v.A), T(this, "_audioContext", null), T(this, "outputVolume", I.Hz), T(this, "sourceId", I.dx), T(this, "sinkId", I.dx), T(this, "videoInputDeviceId", I.qe), T(this, "enabled", false), T(this, "connections", new Set), T(this, "interacted", false), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "desktopInputPool", new O.A), T(this, "enablePromise", null), T(this, "dave", null), T(this, "transientKeys", null), T(this, "maxSupportedProtocolVersion", null), T(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))

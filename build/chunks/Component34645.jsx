@@ -344,7 +344,7 @@ function ep(e) {
               window.location.href = "discord://app/settings/nitro";
               return
             }
-            na(), null != s && s(), (0, R.Z)()
+            na(), null != s && s(), (0, R.e)()
           },
           priceOptions: a
         }), ns && null != eP && null != eP.paymentGateway ? e = (0, l.jsxs)("div", {

@@ -1,16 +1,16 @@
-/** Chunk was on 77641 **/
+/** Chunk was on 78376 **/
 /** chunk id: 764231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => i
+  T: () => l
 }), require("./439174.js"), require("./112848.js");
 var Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx");
-let i = (e, t) => {
+let l = (e, t) => {
   switch (e) {
     case r.Ac.PREMIUM_TENURE_1_MONTH:
     case r.Ac.PREMIUM_TENURE_3_MONTH:
     case r.Ac.PREMIUM_TENURE_6_MONTH:
-      return a.intl.formatToPlainString(a.t.erUSmA, {
+      return i.intl.formatToPlainString(i.t.erUSmA, {
         months: t
       });
     case r.Ac.PREMIUM_TENURE_12_MONTH:
@@ -18,7 +18,7 @@ let i = (e, t) => {
     case r.Ac.PREMIUM_TENURE_36_MONTH:
     case r.Ac.PREMIUM_TENURE_60_MONTH:
     case r.Ac.PREMIUM_TENURE_72_MONTH:
-      return a.intl.formatToPlainString(a.t.qOdyDe, {
+      return i.intl.formatToPlainString(i.t.qOdyDe, {
         years: t / 12
       });
     default:

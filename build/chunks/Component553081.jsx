@@ -1,5 +1,5 @@
-/** Chunk was on 2827 **/
-/** chunk id: 185180, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78376 **/
+/** chunk id: 553081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => H
 }), require("./321073.js"), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js");
@@ -33,13 +33,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk810036 = require("./810036.jsx"),
   Chunk160116 = require("./160116.jsx"),
   Chunk530060 = require("./530060.jsx"),
-  Chunk322631 = require("./322631.js"),
   Chunk891858 = require("./891858.jsx"),
   Chunk807676 = require("./807676.jsx"),
+  Chunk322631 = require("./322631.js"),
   Chunk788868 = require("./788868.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
-  Chunk70338 = require("./70338.js"),
+  Chunk520089 = require("./520089.js"),
   Chunk288894 = require("./288894.js");
 let H = e => {
   let {
@@ -68,7 +68,7 @@ let H = e => {
   let [z, Z] = i.useState(false), X = (0, I.p)(), q = i.useRef(null), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = null != X && null != F && F.status === G.Dmq.CANCELED, en = (0, y.iU)(M.gD.PREMIUM_MONTH_TIER_2, X, F), er = !$ && et, {
     analyticsLocations: ei
   } = (0, p.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, es] = i.useState(false), ea = (0, o.bG)([E.A], () => null != t ? E.A.getUserProfile(t) : null), eo = (0, T.A)({
-    location: "SubscriberNitroHome"
+    location: "PremiumSubscriberHome"
   });
   return null != ea && (Y || null != W) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.GtU, {
@@ -94,20 +94,20 @@ let H = e => {
               discountedPrice: en
             })
           }), (0, r.jsx)(j.A, {
-            variant: D.cJ.WHATS_NEW,
+            variant: w.cJ.WHATS_NEW,
             className: k.Iw,
             noBackground: true,
             leftAlignHeaders: true
           }), (0, r.jsx)(j.A, {
             className: k.xU,
-            variant: D.cJ.PERKS_DISCOVERABILITY,
+            variant: w.cJ.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
-            showAllPerksButton: (0, r.jsx)(w.A, {
+            showAllPerksButton: (0, r.jsx)(L.A, {
               setIsAllPerksVisible: Q,
-              previousComponent: D.A2.HOME
+              previousComponent: w.A2.HOME
             })
-          }), null != W && (0, h.T0)("SubscriberNitroHome") && (0, r.jsx)(R.A, {
+          }), null != W && (0, h.T0)("PremiumSubscriberHome") && (0, r.jsx)(R.A, {
             location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION,
             sectionRef: l
           }), (0, r.jsx)(v.A, {
@@ -144,10 +144,10 @@ let H = e => {
         churnDiscountOffer: X,
         discountedPrice: en
       })]
-    }), (0, r.jsx)(L.A, {
+    }), (0, r.jsx)(D.A, {
       isAllPerksVisible: J,
       setIsAllPerksVisible: Q,
-      previousComponent: D.A2.HOME,
+      previousComponent: w.A2.HOME,
       enablePremiumBrandRefresh: eo
     })]
   }) : (0, r.jsx)("div", {

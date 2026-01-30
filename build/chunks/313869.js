@@ -1,4 +1,4 @@
-/** Chunk was on 12618 **/
+/** Chunk was on 78376 **/
 /** chunk id: 313869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -8,23 +8,23 @@ var Chunk143236 = require("./143236.js"),
   Chunk837921 = require("./837921.js"),
   Chunk350535 = require("./350535.js"),
   Chunk650583 = require("./650583.js");
-let a = [],
+let o = [],
   c = (e, t, n) => {
     let r = +!(0, i.isWindows)();
-    (e !== l.zY.MOUSE_BUTTON || n !== r) && a.forEach(r => r._handleEvent(e, t, n))
+    (e !== a.zY.MOUSE_BUTTON || n !== r) && o.forEach(r => r._handleEvent(e, t, n))
   };
 class d extends Chunk143236.EventEmitter {
   destroy() {
-    this.removeAllListeners(), 0 === (a = a.filter(e => e !== this)).length && s.Ay.setOnInputEventCallback(null)
+    this.removeAllListeners(), 0 === (o = o.filter(e => e !== this)).length && l.Ay.setOnInputEventCallback(null)
   }
   toString() {
-    return (0, o.dI)(this.combo)
+    return (0, s.dI)(this.combo)
   }
   _handleEvent(e, t, n) {
     0 === t ? this.combo = this.combo.filter(t => {
       let [r, i] = t;
       return r !== e || i !== n
-    }) : (this.combo.push([e, n, (0, o._$)()]), this.emit("change", this))
+    }) : (this.combo.push([e, n, (0, s._$)()]), this.emit("change", this))
   }
   constructor() {
     super(),
@@ -35,6 +35,6 @@ class d extends Chunk143236.EventEmitter {
           configurable: true,
           writable: true
         }) : e[t] = n
-      }(this, "combo", []), a.push(this), 1 === a.length && s.Ay.setOnInputEventCallback(c)
+      }(this, "combo", []), o.push(this), 1 === o.length && l.Ay.setOnInputEventCallback(c)
   }
 }

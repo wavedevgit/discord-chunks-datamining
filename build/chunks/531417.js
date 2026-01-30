@@ -598,6 +598,14 @@ class A extends Chunk972347.A {
   fetchAsyncResources(e) {
     return Promise.resolve()
   }
+  async getDeviceOSVolume(e) {
+    var t, n;
+    return await (null == (t = (n = (0, d.lE)()).getDeviceOSVolume) ? true : t.call(n, e))
+  }
+  async getDeviceOSMuted(e) {
+    var t, n;
+    return await (null == (t = (n = (0, d.lE)()).getDeviceOSMuted) ? true : t.call(n, e))
+  }
   watchdogTick() {
     let e = false;
     (0, d.lE)().pingVoiceThread(() => {

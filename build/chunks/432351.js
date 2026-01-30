@@ -173,6 +173,12 @@ class c extends Chunk972347.A {
   fetchAsyncResources(e) {
     return Promise.resolve()
   }
+  getDeviceOSVolume(e) {
+    return Promise.resolve(true)
+  }
+  getDeviceOSMuted(e) {
+    return Promise.resolve(true)
+  }
   getNoiseCancellationStats() {
     return Promise.reject(Error("Dummy noise cancellation stats not supported"))
   }

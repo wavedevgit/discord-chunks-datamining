@@ -60,7 +60,7 @@ function k(e) {
   E.default.track(P.HAw.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? P.liQ.GUILD_CHANNEL : P.liQ.DM_CHANNEL,
     location_section: P.JJy.STICKER_POPOUT
-  }), (0, y.Z)()
+  }), (0, y.e)()
 }
 
 function U(e) {

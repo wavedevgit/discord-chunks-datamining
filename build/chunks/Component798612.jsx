@@ -40,7 +40,7 @@ function d(e) {
   }(e, ["channel", "onClose", "content"]);
 
   function g() {
-    n(), (0, a.Z)()
+    n(), (0, a.e)()
   }
   return (0, r.jsx)(u.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {

@@ -122,8 +122,8 @@ function D(e, t) {
     eu = null != J ? null == J ? true : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (n = null == $ ? true : $.getMediaEngineConnectionId()) ? n : null;
   L = null != k && null != X ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === A.Y4) : null == $ ? true : $.getInboundStats(X.ownerId) : es ? null != (h = i().maxBy(null != (D = null == $ ? true : $.getOutboundStats()) ? D : [], e => e.num_frames)) ? h : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.w)().then(t => {
-    var n, r, i, s, l, c, u, d, h, m, g, O, R, D, k, Q, ee, ef, ep, e_, eh, em, eg, eE, ey, eb, eO, ev, eA, eI, eS, eT, eC, eN, ew, eR, eP, eD, eL, ex, eM, ej, ek, eU, eG, eF, eV, eB, eH;
-    let eY = {
+    var n, r, i, s, l, c, u, d, h, m, g, O, R, D, k, Q, ee, ef, ep, e_, eh, em, eg, eE, ey, eb, eO, ev, eA, eI, eS, eT, eC, eN, ew, eR, eP, eD, eL, ex, eM, ej, ek, eU, eG, eF, eV, eB, eH, eY, eW;
+    let eK = {
       error_name: e.valueOf(),
       error_code: x.errorCode,
       error_severity: x.severity,
@@ -137,8 +137,8 @@ function D(e, t) {
       media_session_id: null != (i = null != V ? V : p.A.getMediaSessionId()) ? i : null,
       parent_media_session_id: null != (s = null == J ? true : J.parentMediaSessionId) ? s : null,
       context: null != U ? U : null,
-      voice_backend_version: null != (l = null == (eP = p.A.getRTCConnection()) ? true : eP.getVoiceVersion()) ? l : null,
-      rtc_worker_backend_version: null != (c = null == (eD = p.A.getRTCConnection()) ? true : eD.getRtcWorkerVersion()) ? c : null,
+      voice_backend_version: null != (l = null == (eL = p.A.getRTCConnection()) ? true : eL.getVoiceVersion()) ? l : null,
+      rtc_worker_backend_version: null != (c = null == (ex = p.A.getRTCConnection()) ? true : ex.getRtcWorkerVersion()) ? c : null,
       guild_region: null != (u = _.A.getRegion(p.A.getHostname())) ? u : null,
       hostname: null != (d = p.A.getHostname()) ? d : null,
       duration: null != (h = null == $ ? true : $.getDurationSeconds()) ? h : null,
@@ -146,20 +146,20 @@ function D(e, t) {
       num_frames: null != (m = null == L ? true : L.num_frames) ? m : 0,
       num_packets: null != (g = null == L ? true : L.num_packets) ? g : 0,
       num_bytes: null != (O = null == L ? true : L.num_bytes) ? O : 0,
-      num_packets_lost: null != (R = null == (eL = T(es, ed, ec)) ? true : eL.packetsLost) ? R : 0,
-      video_codec: null != (D = null != H ? H : (0, a.aV)(null == (ex = T(es, ed, ec)) ? true : ex.codec.name)) ? D : null,
-      video_encoder: null != (k = null != Y ? Y : (0, a.kZ)(null == (eM = I(ed)) ? true : eM.encoderImplementationName)) ? k : null,
-      video_decoder: null != (Q = null != W ? W : (0, a.s7)(null == (ej = S(ed, ec)) ? true : ej.decoderImplementationName)) ? Q : null,
+      num_packets_lost: null != (R = null == (eM = T(es, ed, ec)) ? true : eM.packetsLost) ? R : 0,
+      video_codec: null != (D = null != H ? H : (0, a.aV)(null == (ej = T(es, ed, ec)) ? true : ej.codec.name)) ? D : null,
+      video_encoder: null != (k = null != Y ? Y : (0, a.kZ)(null == (ek = I(ed)) ? true : ek.encoderImplementationName)) ? k : null,
+      video_decoder: null != (Q = null != W ? W : (0, a.s7)(null == (eU = S(ed, ec)) ? true : eU.decoderImplementationName)) ? Q : null,
       audio_capture_sample_rate_mismatch_percent: null != K ? K : null,
       incoming_video_stopped_for_occlusion: !o.X.isIncomingVideoEnabled(),
-      bitrate: null != (ee = null == (ek = T(es, ed, ec)) ? true : ek.bitrate) ? ee : null,
-      target_bitrate: es && null != (ef = null == (eU = I(ed)) ? true : eU.bitrateTarget) ? ef : null,
+      bitrate: null != (ee = null == (eG = T(es, ed, ec)) ? true : eG.bitrate) ? ee : null,
+      target_bitrate: es && null != (ef = null == (eF = I(ed)) ? true : eF.bitrateTarget) ? ef : null,
       fps: null != (ep = P(es, el, ec)) ? ep : null,
       target_fps: el === A.x.STREAM && es ? en : null,
       sender_user_id: null != (e_ = null == X ? true : X.ownerId) ? e_ : null,
       stream_region: null != (eh = null == J ? true : J.getRegion()) ? eh : null,
-      stream_source_type: es && null != (em = null == J || null == (eG = J.analyticsContext) ? true : eG.streamSourceType) ? em : null,
-      num_stream_viewers: null != (eg = null == J || null == (eF = J.analyticsContext) ? true : eF.numViewers) ? eg : null,
+      stream_source_type: es && null != (em = null == J || null == (eV = J.analyticsContext) ? true : eV.streamSourceType) ? em : null,
+      num_stream_viewers: null != (eg = null == J || null == (eB = J.analyticsContext) ? true : eB.numViewers) ? eg : null,
       video_input_resolution_height: es && null != et ? et : null,
       video_input_frame_rate: es && null != en ? en : null,
       screenshare_capture_method: w(ed),
@@ -183,9 +183,9 @@ function D(e, t) {
       outbound_bitrate_estimate: C(ed),
       inbound_bitrate_estimate: N(ed),
       hardware_enabled: f.A.getHardwareEncoding(),
-      audio_input_device_name: null != z ? z : null == (eV = f.A.getInputDevices()[f.A.getInputDeviceId()]) ? true : eV.name,
-      audio_output_device_name: null != q ? q : null == (eB = f.A.getOutputDevices()[f.A.getOutputDeviceId()]) ? true : eB.name,
-      video_device_name: null != Z ? Z : null == (eH = f.A.getVideoDevices()[f.A.getVideoDeviceId()]) ? true : eH.name,
+      audio_input_device_name: null != z ? z : null == (eH = f.A.getInputDevices()[f.A.getInputDeviceId()]) ? true : eH.name,
+      audio_output_device_name: null != q ? q : null == (eY = f.A.getOutputDevices()[f.A.getOutputDeviceId()]) ? true : eY.name,
+      video_device_name: null != Z ? Z : null == (eW = f.A.getVideoDevices()[f.A.getVideoDeviceId()]) ? true : eW.name,
       audio_subsystem: f.A.getMediaEngine().getAudioSubsystem(),
       automatic_audio_subsystem: f.A.getSettings().automaticAudioSubsystem,
       audio_layer: f.A.getMediaEngine().getAudioLayer(),
@@ -201,8 +201,10 @@ function D(e, t) {
       output_volume: f.A.getOutputVolume(),
       audio_input_device_count: Object.keys(f.A.getInputDevices()).length,
       audio_output_device_count: Object.keys(f.A.getOutputDevices()).length,
-      app_hardware_acceleration_enabled: y.A.getAppHardwareAccelerationEnabled()
+      app_hardware_acceleration_enabled: y.A.getAppHardwareAccelerationEnabled(),
+      input_device_os_muted: null != (eP = f.A.getInputDeviceOSMuted()) ? eP : null,
+      input_device_os_volume: null != (eD = f.A.getInputDeviceOSVolume()) ? eD : null
     };
-    E.default.track(v.HAw.AV_ERROR_REPORTED, eY)
+    E.default.track(v.HAw.AV_ERROR_REPORTED, eK)
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 73734 **/
 /** chunk id: 636922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => U
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -60,13 +60,13 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = Chunk64700.memo(function(e) {
+let b = Chunk64700.memo(function(e) {
   var t, n;
   let {
     message: i,
     compact: l = false,
-    className: U,
-    onContextMenu: b,
+    className: b,
+    onContextMenu: U,
     onClick: M,
     hideSimpleEmbedContent: j = true,
     channel: v,
@@ -111,7 +111,7 @@ let U = Chunk64700.memo(function(e) {
   }), ee = (0, O.fF)(i), et = (0, O.ZD)(i);
   return (0, r.jsx)(I.A, D({
     compact: l,
-    className: a()(U, {
+    className: a()(b, {
       [g.M1]: (0, A.ec)(i),
       [g.XN]: q
     }),
@@ -128,7 +128,7 @@ let U = Chunk64700.memo(function(e) {
     childrenSystemMessage: (0, y.A)(h(D({}, e), {
       disableInteraction: q
     })),
-    onContextMenu: b,
+    onContextMenu: U,
     onClick: M,
     hasThread: G && null != J && i.hasFlag(C.pr7.HAS_THREAD),
     hasReply: i.type === C.lAJ.REPLY,

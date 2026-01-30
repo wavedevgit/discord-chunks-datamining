@@ -1,4 +1,4 @@
-/** Chunk was on 2827 **/
+/** Chunk was on 78376 **/
 /** chunk id: 240626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -200,7 +200,7 @@ let D = function(e) {
       className: y.nw,
       tag: "span",
       onClick: () => {
-        (0, A.Z)()
+        (0, A.e)()
       },
       children: e
     }, t);

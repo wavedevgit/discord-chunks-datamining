@@ -1,14 +1,15 @@
-/** Chunk was on 73734 **/
-/** chunk id: 37770, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 37770, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  F: () => s,
+  F: () => l,
   I: () => c
 });
 var Chunk311907 = require("./311907.js"),
   Chunk250105 = require("./250105.js"),
   Chunk217222 = require("./217222.js"),
   Chunk128319 = require("./128319.js");
-let o = (0, Chunk250105.Ay)({
+let s = (0, Chunk250105.Ay)({
   name: "2025-10-windows-mute-detection",
   kind: "user",
   defaultConfig: {
@@ -21,17 +22,17 @@ let o = (0, Chunk250105.Ay)({
   }
 });
 
-function s(e) {
+function l(e) {
   let {
     location: t
   } = e, {
     isInHoldout: n
-  } = a.p.getCurrentConfig({
+  } = o.p.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
   });
-  return n ? o.definition.defaultConfig : o.getConfig({
+  return n ? s.definition.defaultConfig : s.getConfig({
     location: t
   })
 }
@@ -40,7 +41,7 @@ function c(e) {
   let {
     location: t
   } = e;
-  return (0, r.bG)([l.A], () => s({
+  return (0, r.bG)([a.A], () => l({
     location: t
   }))
 }
