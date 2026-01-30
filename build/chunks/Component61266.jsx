@@ -20,9 +20,9 @@ function f(e) {
       content: n,
       className: o
     } = e,
-    f = (t = (0, c.jc)(), (0, i.useMemo)(() => {
+    f = (t = (0, _.jc)(), (0, i.useMemo)(() => {
       let e;
-      return null === t ? null : (e = null != t.message ? (0, _.ko)(t.message, d.l) : (0, _.Le)({
+      return null === t ? null : (e = null != t.message ? (0, c.ko)(t.message, d.l) : (0, c.Le)({
         channelId: t.channelId,
         renderOptions: d.l
       }), l.A.parse(n, true, e))

@@ -1,82 +1,87 @@
 /** Chunk was on 89488 **/
 /** chunk id: 121338, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => u,
-  openInteractionModal: () => p
+  default: () => f,
+  openInteractionModal: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
+  Chunk176634 = require("./176634.js"),
   Chunk207963 = require("./207963.jsx"),
   Chunk750128 = require("./750128.js"),
   Chunk969508 = require("./969508.js"),
   Chunk520586 = require("./520586.jsx"),
+  Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk308040 = require("./308040.js");
 
-function u(e) {
+function f(e) {
   let {
     title: t,
     onClose: n,
-    transitionState: u
+    transitionState: f
   } = e, {
-    components: p,
-    applicationIconURL: f,
-    applicationName: m,
-    submissionState: g,
-    error: h,
-    validators: I,
+    components: m,
+    applicationIconURL: g,
+    applicationName: h,
+    submissionState: E,
+    error: I,
+    validators: b,
     validationErrors: O,
-    setValidationErrors: b,
-    onSubmit: E
+    setValidationErrors: T,
+    onSubmit: y
   } = (0, _.uD)(e, n);
-  return (0, r.jsx)("form", {
+  return (0, a.A)({
+    onPasteFiles: d.tE,
+    onPasteBackgroundText: d.tE
+  }), (0, r.jsx)("form", {
     onSubmit: e => {
-      e.preventDefault(), E()
+      e.preventDefault(), y()
     },
     children: (0, r.jsxs)(i.dWK, {
-      transitionState: u,
+      transitionState: f,
       onClose: n,
       children: [(0, r.jsx)(i.rQ0, {
         leading: (0, r.jsx)(o.euF, {
-          src: f,
+          src: g,
           size: o._3J.SIZE_24,
-          "aria-label": m,
-          className: d.In
+          "aria-label": h,
+          className: p.In
         }),
         title: t,
         titleTextVariant: "heading-xl/semibold"
       }), (0, r.jsxs)(i.cwr, {
-        children: [null != h && "" !== h ? (0, r.jsx)(o.po8, {
+        children: [null != I && "" !== I ? (0, r.jsx)(o.po8, {
           messageType: o.YCn.ERROR,
-          className: d.$Q,
-          children: h
+          className: p.$Q,
+          children: I
         }) : null, (0, r.jsx)(o.po8, {
           messageType: o.YCn.WARNING,
-          className: d.$Q,
-          children: s.intl.format(s.t["dSTy/w"], {
-            applicationName: m
+          className: p.$Q,
+          children: u.intl.format(u.t["dSTy/w"], {
+            applicationName: h
           })
         }), (0, r.jsx)("div", {
-          className: d.dK,
-          children: (0, r.jsx)(a.f5, {
+          className: p.dK,
+          children: (0, r.jsx)(l.f5, {
             modal: e,
-            validators: I,
+            validators: b,
             validationErrors: O,
-            setValidationErrors: b,
-            children: (0, c.fD)(p)
+            setValidationErrors: T,
+            children: (0, s.fD)(m)
           })
         })]
       }), (0, r.jsx)(i.H7u, {
         actions: [{
           variant: "secondary",
-          text: s.intl.string(s.t["ETE/oC"]),
+          text: u.intl.string(u.t["ETE/oC"]),
           onClick: n
         }, {
           variant: "primary",
-          text: s.intl.string(s.t.geKm7t),
-          loading: g === l.Z.IN_FLIGHT,
-          onClick: E
+          text: u.intl.string(u.t.geKm7t),
+          loading: E === c.Z.IN_FLIGHT,
+          onClick: y
         }],
         actionsFullWidth: true
       })]
@@ -84,8 +89,8 @@ function u(e) {
   })
 }
 
-function p(e) {
-  (0, o.qfG)(t => (0, r.jsx)(u, function(e) {
+function m(e) {
+  (0, o.qfG)(t => (0, r.jsx)(f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

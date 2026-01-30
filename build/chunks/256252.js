@@ -15,7 +15,7 @@ var Chunk499785 = require("./499785.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 async function c() {
-  return (await r.Bo.get({
+  return (await l.Bo.get({
     url: s.Rsh.BUG_REPORTS,
     rejectWithError: false
   })).body
@@ -50,7 +50,7 @@ function m() {
   }]
 }
 async function v(e, t, n) {
-  var r, u;
+  var l, u;
   let c = [{
     name: "name",
     value: e.name
@@ -77,7 +77,7 @@ async function v(e, t, n) {
     name: "experiment_overrides",
     value: e.experimentOverrides.map(e => "".concat(e.experimentId, ":").concat(e.variantId)).join(",")
   });
-  let d = null == (r = e.feature) ? true : r.asana_inbox_id;
+  let d = null == (l = e.feature) ? true : l.asana_inbox_id;
   null != d && "" !== d && c.push({
     name: "asana_inbox_id",
     value: "".concat(d)
@@ -107,7 +107,7 @@ async function v(e, t, n) {
   }), c.push({
     name: "locale",
     value: t.locale
-  })), (0, l.a)(s.Umv.WEB_APP);
+  })), (0, r.a)(s.Umv.WEB_APP);
   try {
     return await o.A.post({
       url: s.Rsh.BUG_REPORTS,

@@ -1,7 +1,7 @@
 /** Chunk was on 89488 **/
 /** chunk id: 371068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,7 +10,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk155718 = require("./155718.js"),
   Chunk907093 = require("./907093.js");
 
-function _(e) {
+function c(e) {
   let {
     divider: t,
     spacing: n

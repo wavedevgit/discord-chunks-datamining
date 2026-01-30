@@ -1,9 +1,9 @@
 /** Chunk was on 89488 **/
 /** chunk id: 953756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Hq: () => _,
+  Hq: () => c,
   O7: () => a,
-  zn: () => c
+  zn: () => _
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
@@ -28,9 +28,9 @@ let o = Chunk64700.createContext(null),
         containerInnerWidth: n,
         children: a
       } = e, {
-        isParentWidthLimited: _,
-        parentContainerInnerWidth: c
-      } = l(), s = _ && c === t, d = i.useMemo(() => ({
+        isParentWidthLimited: c,
+        parentContainerInnerWidth: _
+      } = l(), s = c && _ === t, d = i.useMemo(() => ({
         isParentWidthLimited: s,
         parentContainerInnerWidth: n
       }), [s, n]);
@@ -42,7 +42,7 @@ let o = Chunk64700.createContext(null),
     AutoMeasuredNestedContainer(e) {
       let {
         children: t
-      } = e, [n, i, o] = c(true);
+      } = e, [n, i, o] = _(true);
       return (0, r.jsx)(a.NestedContainer, {
         containerOuterWidth: i,
         containerInnerWidth: o,
@@ -57,7 +57,7 @@ function l() {
   return e
 }
 
-function _(e) {
+function c(e) {
   let {
     isParentWidthLimited: t,
     parentContainerInnerWidth: n
@@ -65,7 +65,7 @@ function _(e) {
   return t && n === e
 }
 
-function c() {
+function _() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = i.useRef(null),
     [n, r] = i.useState(0),
