@@ -29,7 +29,7 @@ class r {
   static getAppVersion() {
     try {
       var e;
-      return (e = "491577", true !== e) ? e : "unknown"
+      return (e = "491590", true !== e) ? e : "unknown"
     } catch (e) {
       return "unknown"
     }
