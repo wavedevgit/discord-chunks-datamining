@@ -175,7 +175,7 @@ function G(e) {
   }()), {
     createMultipleConfettiAt: _,
     confettiCanvas: h
-  } = l.useContext(m.x), [b, A] = l.useState(null), y = (0, o.f9)(h, b), v = function(e, t) {
+  } = l.useContext(m.x), [b, y] = l.useState(null), A = (0, o.f9)(h, b), v = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -190,7 +190,7 @@ function G(e) {
       case "exit":
         return "enter"
     }
-  }(d, g), x = T.includes(g), O = x && "exit" === d, j = l.useCallback(e => {
+  }(d, g), O = T.includes(g), x = O && "exit" === d, j = l.useCallback(e => {
     f(e)
   }, []), C = l.useCallback(() => {
     "exit" === d && (null == t || t())
@@ -229,9 +229,9 @@ function G(e) {
       })
     }
   }, [_, g, d, a]), l.useEffect(() => {
-    if (x && "leaf_fall" === d) {
+    if (O && "leaf_fall" === d) {
       let e = w[g].leafRotationDirection;
-      y.createConfetti({
+      A.createConfetti({
         id: "".concat(R, "-").concat((0, c.A)()),
         position: {
           type: "static",
@@ -279,9 +279,9 @@ function G(e) {
         sprite: "TOP_LEFT" === g ? L : M
       })
     }
-  }, [x, y, g, d]), (0, i.jsxs)(i.Fragment, {
+  }, [O, A, g, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.K_, {
-      ref: A,
+      ref: y,
       sprites: k,
       colors: D,
       spriteWidth: 45,
@@ -297,7 +297,7 @@ function G(e) {
       children: (0, i.jsx)(p.tvC, {
         animationRef: P,
         className: s()(E.oQ, {
-          [E.EG]: O
+          [E.EG]: x
         }),
         nextScene: v,
         sceneSegments: I,
@@ -320,12 +320,12 @@ function B(e) {
     } = e,
     c = function(e) {
       switch (e.type) {
-        case x.lAJ.GUILD_BOOST_TIER_1:
-          return x.TVA.TIER_1;
-        case x.lAJ.GUILD_BOOST_TIER_2:
-          return x.TVA.TIER_2;
-        case x.lAJ.GUILD_BOOST_TIER_3:
-          return x.TVA.TIER_3
+        case O.lAJ.GUILD_BOOST_TIER_1:
+          return O.TVA.TIER_1;
+        case O.lAJ.GUILD_BOOST_TIER_2:
+          return O.TVA.TIER_2;
+        case O.lAJ.GUILD_BOOST_TIER_3:
+          return O.TVA.TIER_3
       }
       return null
     }(n),
@@ -339,27 +339,27 @@ function B(e) {
     {
       reducedMotion: T
     } = l.useContext(p.CZY),
-    N = (0, y.Ay)(n),
+    N = (0, A.Ay)(n),
     P = N.nick,
     w = s(N);
-  t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9ds, {
+  t = null == c || null == a ? u > 1 ? x.intl.format(x.t.yfC9ds, {
     username: P,
     usernameHook: w,
     numSubscriptions: u
-  }) : O.intl.format(O.t["57St/7"], {
+  }) : x.intl.format(x.t["57St/7"], {
     username: P,
     usernameHook: w
-  }) : u > 1 ? O.intl.format(O.t.PO9uJD, {
+  }) : u > 1 ? x.intl.format(x.t.PO9uJD, {
     username: P,
     usernameHook: w,
     numSubscriptions: u,
     guildName: a.name,
-    newTierName: (0, A.gb)(c)
-  }) : O.intl.format(O.t.cUfTTE, {
+    newTierName: (0, y.gb)(c)
+  }) : x.intl.format(x.t.cUfTTE, {
     username: P,
     usernameHook: w,
     guildName: a.name,
-    newTierName: (0, A.gb)(c)
+    newTierName: (0, y.gb)(c)
   });
   let D = l.useCallback(() => {
       if (!T.enabled)
@@ -377,7 +377,7 @@ function B(e) {
       (0, g.O9)({
         settingsVisible: true
       }), (0, b.openUserSettings)(h.X.POGGERMODE_PANEL, {
-        section: x.nc_.POGGERMODE
+        section: O.nc_.POGGERMODE
       }), I(false)
     }, []),
     k = l.useCallback((e, t) => {

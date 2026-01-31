@@ -1,7 +1,7 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 340913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var Chunk945810 = require("./945810.js");
 
@@ -36,23 +36,23 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let a = {
+let o = {
     showPTTJoinTooltip: false,
     showPTTIconIndicator: false,
     showPTTNoKeybindWarning: false,
     showPTTSpeakingIndicator: false
   },
-  o = (0, Chunk945810.mj)({
+  a = (0, Chunk945810.mj)({
     name: "2025-12-09-ptt-education",
     kind: "user",
-    defaultConfig: a,
+    defaultConfig: o,
     variations: {
-      1: l(i({}, a), {
+      1: l(i({}, o), {
         showPTTJoinTooltip: true,
         showPTTNoKeybindWarning: true,
         showPTTSpeakingIndicator: true
       }),
-      2: l(i({}, a), {
+      2: l(i({}, o), {
         showPTTIconIndicator: true
       })
     }

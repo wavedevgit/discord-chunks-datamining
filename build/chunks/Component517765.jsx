@@ -30,10 +30,10 @@ function y(e) {
     imageSrc: v,
     iconBackgroundColor: _,
     iconClassName: N,
-    iconWrapperClassName: w,
-    details: E,
-    integration: T,
-    buttonText: C,
+    iconWrapperClassName: E,
+    details: T,
+    integration: C,
+    buttonText: w,
     buttonDisabled: S,
     hasNextSection: I,
     onButtonClick: P,
@@ -41,14 +41,14 @@ function y(e) {
     isScrolling: R,
     canShowMigrationTooltip: L,
     trailing: D
-  } = e, [M, G] = r.useState(false), U = L && !R && !M && true !== k && null != T, B = r.useRef(null), W = r.useRef(null), H = null == C || null == P ? null : I ? (0, i.jsxs)(d.BJc, {
+  } = e, [M, G] = r.useState(false), U = L && !R && !M && true !== k && null != C, B = r.useRef(null), W = r.useRef(null), H = null == w || null == P ? null : I ? (0, i.jsxs)(d.BJc, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: W,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: C
+      children: w
     }), I ? (0, i.jsx)(d._BQ, {
       size: "custom",
       color: "currentColor",
@@ -61,7 +61,7 @@ function y(e) {
     buttonRef: B,
     disabled: S,
     onClick: P,
-    text: C
+    text: w
   });
   r.useEffect(() => {
     var e, t;
@@ -83,7 +83,7 @@ function y(e) {
       }
       return e
     }({}, (0, u.H$)(k)), t = t = {
-      application_id: null == T ? true : T.application.id,
+      application_id: null == C ? true : C.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,13 +95,13 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == T ? true : T.application.id, U]);
+  }, [k, null == C ? true : C.application.id, U]);
   let V = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.AM, {
       targetElementRef: I ? W : B,
       title: j.intl.string(j.t.ufFDiC),
       body: j.intl.string(j.t.TyMJwC),
       onRequestClose: () => {
-        G(true), h.A.dismissOverviewTooltip(k, T.integration)
+        G(true), h.A.dismissOverviewTooltip(k, C.integration)
       },
       position: "bottom",
       align: "center",
@@ -111,10 +111,10 @@ function y(e) {
     }) : null,
     z = (0, o.yK)([m.A], () => {
       var e;
-      return null != T && null != k && null != (e = m.A.getApplicationEntitlementsForGuild(T.application.id, k)) ? e : []
+      return null != C && null != k && null != (e = m.A.getApplicationEntitlementsForGuild(C.application.id, k)) ? e : []
     }),
     K = (0, p.ON)(k, true),
-    F = (null == T ? true : T.application) != null && Object.keys(null != (t = null == (l = K.result) || null == (n = l.sections[T.application.id]) ? true : n.commands) ? t : {}).length > 0,
+    F = (null == C ? true : C.application) != null && Object.keys(null != (t = null == (l = K.result) || null == (n = l.sections[C.application.id]) ? true : n.commands) ? t : {}).length > 0,
     Y = (0, i.jsxs)(d.BJc, {
       direction: "horizontal",
       align: "center",
@@ -124,8 +124,8 @@ function y(e) {
         imageSrc: v,
         iconBackgroundColor: _,
         iconClassName: N,
-        iconWrapperClassName: w,
-        details: E,
+        iconWrapperClassName: E,
+        details: T,
         isPremium: z.length > 0,
         children: function(e, t) {
           var n, r;
@@ -159,12 +159,12 @@ function y(e) {
               items: l
             })
           })
-        }(T, F)
+        }(C, F)
       }), V, H, D]
     });
   return I ? (0, i.jsx)(d.DUT, {
     onClick: () => {
-      L && null != k && null != T && h.A.dismissOverviewTooltip(k, T.integration), null == P || P()
+      L && null != k && null != C && h.A.dismissOverviewTooltip(k, C.integration), null == P || P()
     },
     children: (0, i.jsx)(d.ZpM, {
       editable: true,

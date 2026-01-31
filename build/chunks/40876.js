@@ -541,11 +541,6 @@ let i = {
     neverLoadBeforeConnectionOpen: true,
     hasStoreChangeListeners: true
   },
-  MessagePreviewManager: {
-    actions: ["CONNECTION_OPEN_SUPPLEMENTAL", "CONNECTION_RESUMED", "GUILD_CREATE", "GUILD_DELETE", "LOAD_MESSAGES_SUCCESS", "LOCAL_MESSAGES_LOADED", "LOGOUT", "MESSAGE_CREATE", "MESSAGE_DELETE", "MESSAGE_UPDATE", "THREAD_LIST_SYNC"],
-    inlineRequire: () => n(602582).A,
-    neverLoadBeforeConnectionOpen: false
-  },
   HavenManager: {
     actions: ["HAVEN_DISCONNECT"],
     inlineRequire: () => n(63446).A

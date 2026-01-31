@@ -52,7 +52,7 @@ function P(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, p = i.useMemo(() => new E.j(t, n, u), [t, n, u]), m = (0, a.bG)([b.A, O.default, x.A, v.A, y.A, d.A], () => p.getForwardInfo(b.A, O.default, x.A, v.A, y.A, d.A).footerInfo, [p], s.A), f = (0, a.bG)([b.A], () => {
+  } = e, p = i.useMemo(() => new E.j(t, n, u), [t, n, u]), m = (0, a.bG)([b.A, x.default, O.A, v.A, A.A, d.A], () => p.getForwardInfo(b.A, x.default, O.A, v.A, A.A, d.A).footerInfo, [p], s.A), f = (0, a.bG)([b.A], () => {
     var e;
     return b.A.getChannel(null == (e = t.messageReference) ? true : e.channel_id)
   }), g = i.useCallback(() => {
@@ -99,10 +99,10 @@ function R(e) {
     message: n,
     snapshot: l,
     index: s
-  } = e, o = i.useMemo(() => (0, C.A)(n, l), [n, l]), c = h.hD.useSetting(), u = h.rs.useSetting(), d = (0, a.bG)([A.A], () => A.A.isDeveloper), _ = (0, p.S)((null != (t = o.editedTimestamp) ? t : o.timestamp).valueOf()), {
-    content: y,
+  } = e, o = i.useMemo(() => (0, C.A)(n, l), [n, l]), c = h.hD.useSetting(), u = h.rs.useSetting(), d = (0, a.bG)([y.A], () => y.A.isDeveloper), _ = (0, p.S)((null != (t = o.editedTimestamp) ? t : o.timestamp).valueOf()), {
+    content: A,
     hasSpoilerEmbeds: v,
-    hasBailedAst: x
+    hasBailedAst: O
   } = (0, f.A)(o, {
     hideSimpleEmbedContent: c && u,
     isInteracting: false,
@@ -112,8 +112,8 @@ function R(e) {
     allowLinks: true,
     allowDevLinks: d,
     previewLinkTarget: true
-  }), O = (0, a.bG)([b.A], () => b.A.getChannel(n.channel_id)), E = h.hH.useSetting();
-  return null == O ? null : (0, r.jsxs)("div", {
+  }), x = (0, a.bG)([b.A], () => b.A.getChannel(n.channel_id)), E = h.hH.useSetting();
+  return null == x ? null : (0, r.jsxs)("div", {
     className: T.kL,
     children: [(0, r.jsx)("div", {
       className: T.hD
@@ -121,16 +121,16 @@ function R(e) {
       className: T.Qs,
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(m.Ay, {
         message: o,
-        content: y,
+        content: A,
         compact: E
       }), (0, g.A)({
         channelMessageProps: {
           message: o,
-          channel: O,
+          channel: x,
           compact: E
         },
         hasSpoilerEmbeds: v,
-        hasBailedAst: x,
+        hasBailedAst: O,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false

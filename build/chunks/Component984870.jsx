@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 984870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => P
@@ -32,7 +32,7 @@ let P = e => {
   }, {
     autoTrackExposure: false,
     disable: P
-  }), m = i.useCallback(() => {
+  }), C = i.useCallback(() => {
     A.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, d.openUserSettings)(E.X.GIFT_PANEL, {
       section: N.nc_.INVENTORY
     }), u.Ay.dismissOutboundPromotionNotice()
@@ -50,21 +50,21 @@ let P = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === a.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, r.jsxs)(o.$Td, {
-        color: o.Hv$.PREMIUM_TIER_2,
-        children: [(0, r.jsx)(o.PMB, {
+      if (t === o.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, r.jsxs)(a.$Td, {
+        color: a.Hv$.PREMIUM_TIER_2,
+        children: [(0, r.jsx)(a.PMB, {
           noticeType: N.kqX.OUTBOUND_PROMOTION,
           onClick: () => {
             u.Ay.dismissOutboundPromotionNotice(), null !== n && n(O.i.USER_DISMISS)
           }
-        }), (0, r.jsx)(o.tvc, {
+        }), (0, r.jsx)(a.tvc, {
           size: "md",
           color: "currentColor",
           className: S.P
-        }), y ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, r.jsx)(o.Z_L, {
+        }), y ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, r.jsx)(a.Z_L, {
           noticeType: N.kqX.OUTBOUND_PROMOTION,
           onClick: () => {
-            m(), null !== n && n(O.i.TAKE_ACTION)
+            C(), null !== n && n(O.i.TAKE_ACTION)
           },
           children: R.intl.string(R.t.jVcuVY)
         })]

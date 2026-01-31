@@ -24,20 +24,20 @@ let _ = Chunk64700.memo(function(e) {
         className: _,
         count: h,
         me: b,
-        me_burst: A,
-        burst_count: y,
+        me_burst: y,
+        burst_count: A,
         burst_colors: v,
-        readOnly: x,
-        isLurking: O,
+        readOnly: O,
+        isLurking: x,
         isPendingMember: E,
         type: j,
         emojiSize: C
       } = e,
       I = j === p.v.BURST,
-      S = (0, m.IN)(b, A, j),
+      S = (0, m.IN)(b, y, j),
       T = (0, d.g)(I && null != v ? v : []),
       N = i ? g : f,
-      P = I ? y : h,
+      P = I ? A : h,
       w = (0, u.x)(P, m.$Z),
       R = {};
     if (I && null != T) {
@@ -57,7 +57,7 @@ let _ = Chunk64700.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: a()(N.reaction, N.reactionInner, _, {
         [N.reactionMe]: S,
-        [N.reactionReadOnly]: x && !O && !E
+        [N.reactionReadOnly]: O && !x && !E
       }),
       style: R,
       children: [(0, r.jsx)(c.A, {

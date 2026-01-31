@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 448894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,10 +24,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk563111 = require("./563111.js");
 
-function O(e) {
+function x(e) {
   let t, n, {
       invite: l,
-      currentUserId: O,
+      currentUserId: x,
       guild: E,
       message: j,
       onTransitionToInviteChannel: C,
@@ -40,16 +40,16 @@ function O(e) {
     {
       analyticsLocations: w
     } = (0, d.Ay)(u.A.INVITE_EMBED),
-    R = null != l && l.target_type === y.yV.STREAM && null != l.target_user && null != N,
+    R = null != l && l.target_type === A.yV.STREAM && null != l.target_user && null != N,
     D = null != l && null != P && null != l.channel && null != l.guild && P.channelId === l.channel.id && P.guildId === l.guild.id;
   a()(null != l, "Invite cannot be null");
   let {
     target_type: L,
     target_user: M
   } = l;
-  a()(L === y.yV.STREAM && null != M, "invalid streaming invite");
-  let k = O === M.id,
-    U = l.state === A.elq.ACCEPTING,
+  a()(L === A.yV.STREAM && null != M, "invalid streaming invite");
+  let k = x === M.id,
+    U = l.state === y.elq.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
       R ? (C(), e = "transition") : (I(), e = "accept"), (0, c.he)({
@@ -82,7 +82,7 @@ function O(e) {
       text: v.intl.string(v.t["wS+5Wb"])
     }), (0, r.jsxs)(p.A.Body, {
       children: [(0, r.jsxs)("div", {
-        className: x.iH,
+        className: O.iH,
         children: [(0, r.jsx)(p.A.Icon, {
           guild: E,
           onClick: B && D ? G : true

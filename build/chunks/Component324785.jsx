@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk544800 = require("./544800.js");
 
-function m(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -37,7 +37,7 @@ function m(e) {
   return e
 }
 
-function O(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,78 +72,75 @@ function h(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
     return o
-  }(e, ["guildId", "user", "location", "modReportId"]), [x, w] = l.useState(""), [P, C] = l.useState(false), k = (0, s.$9)(t, {
+  }(e, ["guildId", "user", "location", "modReportId"]), [w, P] = l.useState(""), [C, x] = l.useState(false), k = (0, s.$9)(t, {
     location: h,
     targetUserId: r.id
   }), {
     isModReportClosed: I,
-    isModReport: T
+    isModReport: E
   } = (0, i.cf)([u.A], () => {
     let e = u.A.getChannel(j);
     return {
       isModReportClosed: null == e ? true : e.isArchivedThread(),
       isModReport: null == e ? true : e.isModeratorReportChannel()
     }
-  }), E = l.useCallback(() => {
-    if (c.A.kickUser(t, r.id, x, j).then(() => {
-        P && null != j && f.A.resolveFlag(j)
+  }), S = l.useCallback(() => {
+    if (c.A.kickUser(t, r.id, w, j).then(() => {
+        C && null != j && f.A.resolveFlag(j)
       }), k(s.Nj.KICK), null != j) {
       var e;
       null == (e = v.onClose) || e.call(v)
     }
-  }, [t, r.id, x, k, j, P, v]), S = l.useCallback(e => {
-    w(e)
+  }, [t, r.id, w, k, j, C, v]), T = l.useCallback(e => {
+    P(e)
   }, []);
-  return null != j && T ? (0, n.jsx)(o.Modal, O(m({}, v), {
-    title: y.intl.formatToPlainString(y.t["1Ie87p"], {
+  return null != j && E ? (0, n.jsx)(o.Modal, m(O({}, v), {
+    title: d.intl.formatToPlainString(d.t["1Ie87p"], {
       user: r.username
     }),
-    subtitle: y.intl.format(y.t["/yH0UT"], {
+    subtitle: d.intl.format(d.t["/yH0UT"], {
       user: "@".concat(p.Ay.getName(r))
     }),
     actions: [{
-      text: y.intl.string(y.t["3glT6Z"]),
-      onClick: E,
+      text: d.intl.string(d.t["3glT6Z"]),
+      onClick: S,
       size: "sm",
       variant: "critical-primary"
     }],
     actionBarInput: I ? true : (0, n.jsx)(a.Checkbox, {
-      checked: P,
+      checked: C,
       onChange: e => {
-        C(e)
+        x(e)
       },
-      label: y.intl.string(d.default["8yIKem"])
+      label: d.intl.string(y.default["8yIKem"])
     }),
     children: (0, n.jsx)(a.fs1, {
-      label: y.intl.string(null != j ? y.t.hmKy8E : y.t["+2QEPt"]),
+      label: d.intl.string(null != j ? d.t.hmKy8E : d.t["+2QEPt"]),
       maxLength: b.hlA,
-      onChange: S,
-      value: x,
+      onChange: T,
+      value: w,
       rows: 2
     })
-  })) : (0, n.jsxs)(a.VoidConfirmModal, O(m({
-    header: y.intl.formatToPlainString(y.t["1Ie87p"], {
+  })) : (0, n.jsx)(o.ConfirmModal, m(O({
+    title: d.intl.formatToPlainString(d.t["1Ie87p"], {
       user: r.username
     }),
-    confirmText: y.intl.string(y.t["3glT6Z"]),
-    cancelText: y.intl.string(y.t["ETE/oC"]),
-    onConfirm: E
+    subtitle: d.intl.format(d.t["/yH0UT"], {
+      user: "@".concat(p.Ay.getName(r))
+    }),
+    confirmText: d.intl.string(d.t["3glT6Z"]),
+    cancelText: d.intl.string(d.t["ETE/oC"]),
+    onConfirm: S
   }, v), {
-    children: [(0, n.jsx)(a.Text, {
-      variant: "text-md/normal",
-      className: g.Y,
-      children: y.intl.format(y.t["/yH0UT"], {
-        user: "@".concat(p.Ay.getName(r))
-      })
-    }), (0, n.jsx)("div", {
+    children: (0, n.jsx)("div", {
       className: g.Y,
       children: (0, n.jsx)(a.fs1, {
-        label: y.intl.string(y.t["+2QEPt"]),
+        label: d.intl.string(d.t["+2QEPt"]),
         maxLength: b.hlA,
-        onChange: S,
-        value: x,
+        onChange: T,
+        value: w,
         rows: 2
       })
-    })]
+    })
   }))
 }

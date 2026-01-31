@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 336589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => y
+  I: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk182777 = require("./182777.js");
-let A = e => {
+let y = e => {
     let {
       channel: t,
       message: n
@@ -49,7 +49,7 @@ let A = e => {
       })
     })
   },
-  y = e => {
+  A = e => {
     let {
       message: t,
       channel: n
@@ -64,7 +64,7 @@ let A = e => {
         g = null != f && (f.systemChannelFlags & _.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
       return a && !l && !s && !o && g
     });
-    return null != i && a ? (0, r.jsx)(A, {
+    return null != i && a ? (0, r.jsx)(y, {
       message: t,
       channel: n
     }) : null

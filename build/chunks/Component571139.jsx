@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 571139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  l = require.n(Chunk503698),
-  Chunk960488 = require("./960488.js"),
-  Chunk311907 = require("./311907.js"),
+  l = require.n(Chunk503698);
+if (21552 == require.j) var Chunk960488 = require("./960488.js");
+var Chunk311907 = require("./311907.js"),
   Chunk314116 = require("./314116.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk71393 = require("./71393.js"),
@@ -23,22 +23,22 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk121615 = require("./121615.js"),
   Chunk1624 = require("./1624.js");
-let P = () => {
+let P = 21552 == require.j ? () => {
   var e, t;
-  let i = (0, o.bG)([E.A], () => E.A.getGuildId(), []),
-    P = (0, o.bG)([u.A], () => u.A.getGuild(i), [i]),
-    y = (0, o.bG)([I.A], () => null != i ? I.A.getRequest(i) : null, [i]),
-    m = (0, a.zy)(),
-    f = (null == (t = (0, a.B6)(m.pathname, O.BVt.CHANNEL(null == P ? true : P.id, N.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
+  let i = (0, a.bG)([E.A], () => E.A.getGuildId(), []),
+    P = (0, a.bG)([u.A], () => u.A.getGuild(i), [i]),
+    y = (0, a.bG)([I.A], () => null != i ? I.A.getRequest(i) : null, [i]),
+    C = (0, o.zy)(),
+    f = (null == (t = (0, o.B6)(C.pathname, O.BVt.CHANNEL(null == P ? true : P.id, N.VV.GUILD_ONBOARDING))) ? true : t.isExact) === true;
   if (null == P || !(0, T.Qd)(P) || f) return null;
-  let C = null != (e = null == y ? true : y.applicationStatus) ? e : A.B5.STARTED,
+  let D = null != (e = null == y ? true : y.applicationStatus) ? e : A.B5.STARTED,
     g = null,
-    D = null,
+    m = null,
     h = null,
-    b = [R.lm, S.lm];
-  switch (C) {
+    U = [R.lm, S.lm];
+  switch (D) {
     case A.B5.SUBMITTED:
-      g = p.intl.string(p.t["5iLvSx"]), D = p.intl.string(p.t.mqtdmQ), h = () => {
+      g = p.intl.string(p.t["5iLvSx"]), m = p.intl.string(p.t.mqtdmQ), h = () => {
         (0, s.A)({
           title: p.intl.string(p.t.aIz1oV),
           subtitle: p.intl.string(p.t["13tjTU"]),
@@ -49,7 +49,7 @@ let P = () => {
       };
       break;
     case A.B5.REJECTED:
-      g = p.intl.string(p.t.lk30cY), D = p.intl.string(p.t["8RrsHr"]), h = () => {
+      g = p.intl.string(p.t.lk30cY), m = p.intl.string(p.t["8RrsHr"]), h = () => {
         (0, c.mMO)(async () => {
           let {
             default: e
@@ -75,15 +75,15 @@ let P = () => {
             guildId: P.id
           }, t))
         })
-      }, b.push(R.z3);
+      }, U.push(R.z3);
       break;
     default:
-      g = p.intl.string(p.t.G5YKXP), D = p.intl.string(p.t["r8/DT+"]), h = () => {
+      g = p.intl.string(p.t.G5YKXP), m = p.intl.string(p.t["r8/DT+"]), h = () => {
         (0, _.Ze)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
-    className: l()(...b),
+    className: l()(...U),
     children: [(0, r.jsx)(c.Text, {
       className: R.wx,
       variant: "text-sm/normal",
@@ -92,7 +92,7 @@ let P = () => {
       variant: "overlay-primary",
       size: "sm",
       onClick: h,
-      text: D
+      text: m
     })]
   })
-}
+} : null

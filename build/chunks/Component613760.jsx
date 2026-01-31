@@ -23,11 +23,11 @@ function b(e) {
   let {
     code: t,
     message: n
-  } = e, [b, A, y] = (0, s.yK)([f.A], () => [f.A.getApplication(t), f.A.isInvalidApplication(t), f.A.getApplicationFetchState(t)], [t]), v = (0, s.bG)([d.A], () => {
+  } = e, [b, y, A] = (0, s.yK)([f.A], () => [f.A.getApplication(t), f.A.isInvalidApplication(t), f.A.getApplicationFetchState(t)], [t]), v = (0, s.bG)([d.A], () => {
     var e;
     return null != (e = d.A.getGuildId()) ? e : true
-  }), [x, O] = i.useState(false), E = i.useCallback(e => {
-    e && O(true)
+  }), [O, x] = i.useState(false), E = i.useCallback(e => {
+    e && x(true)
   }, []), j = (0, l.K)(E), C = i.useCallback(() => {
     p.default.track(g.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
@@ -40,15 +40,15 @@ function b(e) {
   return (i.useEffect(() => {
     (0, m.eP)(t)
   }, [t]), i.useEffect(() => {
-    x && y === f.e.FETCHED && C()
-  }, [x, y, C]), i.useEffect(() => {
-    x && A && p.default.track(g.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    O && A === f.e.FETCHED && C()
+  }, [O, A, C]), i.useEffect(() => {
+    O && y && p.default.track(g.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.Fr ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: v,
       channel_id: n.channel_id
     })
-  }, [x, v, A, n.author.id, n.channel_id]), A) ? (0, r.jsxs)(c.A, {
+  }, [O, v, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.A, {
     containerRef: j,
     children: [(0, r.jsx)(c.A.Header, {
       text: _.intl.string(_.t.j4KtLa)
@@ -64,7 +64,7 @@ function b(e) {
         })]
       })
     })]
-  }) : null == b || y === f.e.FETCHING ? (0, r.jsxs)(c.A, {
+  }) : null == b || A === f.e.FETCHING ? (0, r.jsxs)(c.A, {
     containerRef: j,
     children: [(0, r.jsx)(c.A.Header, {
       text: _.intl.string(_.t.m9hXGR)

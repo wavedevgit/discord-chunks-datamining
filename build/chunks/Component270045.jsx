@@ -68,10 +68,10 @@ function R(e, t) {
 function D(e) {
   var t;
   let n = (0, l.bG)([f.A], () => f.A.questDeliveryOverride, []),
-    u = (0, x.vy)(e.questContent),
+    u = (0, O.vy)(e.questContent),
     w = [g.uF.QUEST_BAR_V2, g.uF.QUEST_BAR].includes(e.questContent),
     R = (0, b.Ut)(),
-    D = (0, y.go)(),
+    D = (0, A.go)(),
     L = (0, v.wr)(e.quest),
     M = true === e.showShareLink && (0, j.E0)(e.quest.config),
     {
@@ -82,9 +82,9 @@ function D(e) {
       handleOverrideDeliveryClick: F
     } = (0, h.j$)(e.quest.id),
     H = i.useCallback(() => {
-      e.quest.id === S.Fw ? window.open(p.A.getArticleURL(T.MVz.VIRTUAL_CURRENCY_LEARN_MORE)) : (0, O.pu)(e.quest, {
+      e.quest.id === S.Fw ? window.open(p.A.getArticleURL(T.MVz.VIRTUAL_CURRENCY_LEARN_MORE)) : (0, x.pu)(e.quest, {
         content: e.questContent,
-        ctaContent: A.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
+        ctaContent: y.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
         impressionId: D,
         sourceQuestContent: e.sourceQuestContent
       })
@@ -95,7 +95,7 @@ function D(e) {
       trackingCtx: i.useMemo(() => ({
         content: e.questContent,
         position: e.questContentPosition,
-        ctaContent: A.Cy.CONTEXT_MENU_COPY_LINK,
+        ctaContent: y.Cy.CONTEXT_MENU_COPY_LINK,
         impressionId: D,
         sourceQuestContent: e.sourceQuestContent
       }), [e.questContent, e.questContentPosition, e.sourceQuestContent, D])
@@ -151,7 +151,7 @@ function D(e) {
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
-            questContentCTA: A.Cy.CONTEXT_MENU_LEARN_MORE,
+            questContentCTA: y.Cy.CONTEXT_MENU_LEARN_MORE,
             sourceQuestContent: e.sourceQuestContent
           }), (0, I.navigateToQuestHome)({
             fromContent: e.questContent,
@@ -170,7 +170,7 @@ function D(e) {
           (0, I.Zc)(e.quest, {
             content: e.questContent,
             position: e.questContentPosition,
-            ctaContent: A.Cy.CONTEXT_MENU_OPEN_DISCLOSURE,
+            ctaContent: y.Cy.CONTEXT_MENU_OPEN_DISCLOSURE,
             impressionId: D,
             sourceQuestContent: e.sourceQuestContent
           })
@@ -183,9 +183,9 @@ function D(e) {
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
-            questContentCTA: A.Cy.CONTEXT_MENU_HIDE_CONTENT,
+            questContentCTA: y.Cy.CONTEXT_MENU_HIDE_CONTENT,
             sourceQuestContent: e.sourceQuestContent
-          }), (0, x.vy)(e.questContent) && ((0, m.g5)(e.quest.id, e.questContent), w && (0, I.z6)(e.quest))
+          }), (0, O.vy)(e.questContent) && ((0, m.g5)(e.quest.id, e.questContent), w && (0, I.z6)(e.quest))
         },
         subtext: P.intl.string(P.t.RK9gxo)
       })]
@@ -274,7 +274,7 @@ function L(e) {
     f({
       questId: o.id,
       questContent: c,
-      questContentCTA: A.Cy.OPEN_CONTEXT_MENU,
+      questContentCTA: y.Cy.OPEN_CONTEXT_MENU,
       questContentPosition: d,
       sourceQuestContent: p
     }), null != n && n()

@@ -26,12 +26,12 @@ function g(e) {
     avatarSrc: h,
     eventHandlers: {
       onMouseEnter: b,
-      onMouseLeave: A
+      onMouseLeave: y
     }
   } = (0, u.a)(true);
   return (0, r.jsx)("div", {
     onMouseEnter: b,
-    onMouseLeave: A,
+    onMouseLeave: y,
     children: (0, r.jsx)(d.A, {
       className: l()(f.rs, {
         [f.oE]: n

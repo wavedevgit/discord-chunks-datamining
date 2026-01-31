@@ -115,7 +115,7 @@ function W(e) {
     }, [et.twitch, et.youtube]),
     {
       showTwitchCard: eN,
-      showYoutubeCard: ew
+      showYoutubeCard: eE
     } = r.useMemo(() => {
       if (eg || !eh) return {
         showTwitchCard: false,
@@ -129,9 +129,9 @@ function W(e) {
         showYoutubeCard: eA > 0 || !n && e
       }
     }, [eg, eh, X, eb, ey, eA]),
-    eE = Object.values(ee).length,
-    eT = r.useMemo(() => {
-      let e = eE > 100 ? U : o();
+    eT = Object.values(ee).length,
+    eC = r.useMemo(() => {
+      let e = eT > 100 ? U : o();
       return Object.values(ee).filter(t => {
         var n;
         let {
@@ -139,11 +139,11 @@ function W(e) {
         } = t;
         return !!("" === (n = (n = ep).trim().toLowerCase()) || i.id === n || e(n, i.name.toLowerCase()) || null != i.bot && e(n, i.bot.username.toLowerCase()))
       })
-    }, [ee, eE, ep]),
-    eC = (0, c.bG)([I.A], () => {
-      if (null != X) return eT.find(e => I.A.canShowOverviewTooltip(X.id, e.integration.id))
-    }, [eT, X]),
-    eS = r.useMemo(() => true !== eC ? [eC, ...eT.filter(e => e.integration.id !== eC.integration.id)] : eT, [eT, eC]),
+    }, [ee, eT, ep]),
+    ew = (0, c.bG)([I.A], () => {
+      if (null != X) return eC.find(e => I.A.canShowOverviewTooltip(X.id, e.integration.id))
+    }, [eC, X]),
+    eS = r.useMemo(() => true !== ew ? [ew, ...eC.filter(e => e.integration.id !== ew.integration.id)] : eC, [eC, ew]),
     eI = (0, u.red)(u.DXt),
     [eP, ek] = r.useState(false),
     eR = r.useRef(0),
@@ -154,7 +154,7 @@ function W(e) {
     };
   r.useEffect(() => (window.addEventListener("scroll", eL, true), () => window.removeEventListener("scroll", eL)));
   let eD = eS.map(e => {
-      let t = !eI && e.integration.id === (null == eC ? true : eC.integration.id);
+      let t = !eI && e.integration.id === (null == ew ? true : ew.integration.id);
       return function(e, t, n, r, l) {
         let {
           application: a,
@@ -163,13 +163,13 @@ function W(e) {
         return null != s.user ? o.push({
           icon: u.O4,
           text: R.intl.formatToPlainString(R.t.Nu9sat, {
-            timestamp: E.default.extractTimestamp(s.id),
-            user: T.Ay.getUserTag(s.user)
+            timestamp: T.default.extractTimestamp(s.id),
+            user: C.Ay.getUserTag(s.user)
           })
         }) : o.push({
           icon: u.O4,
           text: R.intl.formatToPlainString(R.t.gcdJ8J, {
-            timestamp: E.default.extractTimestamp(s.id)
+            timestamp: T.default.extractTimestamp(s.id)
           })
         }), (0, i.jsx)(S.A, {
           name: a.name,
@@ -248,9 +248,9 @@ function W(e) {
           })
         })]
       })
-    }), eD = eE > 0 ? t : r, eM = null
+    }), eD = eT > 0 ? t : r, eM = null
   }
-  let eG = w.A.getArticleURL(P.MVz.INTEGRATIONS),
+  let eG = E.A.getArticleURL(P.MVz.INTEGRATIONS),
     eU = null != $ ? R.t.YV0vh6 : R.t.FnZEJs,
     eB = [];
   if (ef) {
@@ -272,7 +272,7 @@ function W(e) {
       }]
     }, "webhooks"))), (null == $ ? true : $.type) === P.rbe.GUILD_VOICE || (null == $ ? true : $.type) != null && P.kvI.GUILD_THREADS_ONLY.has($.type) || eB.push((s = ei.length, s > 0 ? (a = (0, i.jsx)(u.uhT, {
       size: "xs"
-    }), r = eo) : (n = R.intl.string(R.t["ZwSt+T"]), r = () => open(w.A.getArticleURL(P.MVz.CHANNEL_FOLLOWING))), (0, i.jsx)(S.A, {
+    }), r = eo) : (n = R.intl.string(R.t["ZwSt+T"]), r = () => open(E.A.getArticleURL(P.MVz.CHANNEL_FOLLOWING))), (0, i.jsx)(S.A, {
       name: R.intl.string(R.t.OrV60r),
       icon: u._qW,
       buttonText: n,
@@ -318,7 +318,7 @@ function W(e) {
     details: [{
       text: V
     }]
-  }, "integrations-twitch"))), ew && eB.push((Z = g.A.get(P.fg2.YOUTUBE), eA > 0 ? (Q = (0, i.jsx)(u.uhT, {
+  }, "integrations-twitch"))), eE && eB.push((Z = g.A.get(P.fg2.YOUTUBE), eA > 0 ? (Q = (0, i.jsx)(u.uhT, {
     size: "xs"
   }), q = R.intl.formatToPlainString(R.t.b2g5vC, {
     count: e_
@@ -359,7 +359,7 @@ function W(e) {
           variant: "heading-md/semibold",
           className: L.bV,
           children: R.intl.string(R.t.oAvIAg)
-        }), (0, i.jsx)(C.q, {
+        }), (0, i.jsx)(w.q, {
           channel: $,
           application: ej,
           showApplicationImage: true,
@@ -377,7 +377,7 @@ function W(e) {
           variant: "heading-md/semibold",
           className: L.bV,
           children: R.intl.string(R.t.pUBKht)
-        }), eE > 4 ? (0, i.jsx)(B, {
+        }), eT > 4 ? (0, i.jsx)(B, {
           query: ep,
           setQuery: em
         }) : null, eD]

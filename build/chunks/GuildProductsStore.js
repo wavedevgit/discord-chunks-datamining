@@ -29,8 +29,8 @@ let b = new Chunk713402.J(e => {
     let t;
     return t = u.default.extractTimestamp(e.id), e.published ? -t : -t + 1e12
   }),
-  A = [];
-class y extends(r = Chunk311907.Ay.Store) {
+  y = [];
+class A extends(r = Chunk311907.Ay.Store) {
   getGuildProductsForGuildFetchState(e) {
     var t;
     return null != (t = p[e]) ? t : 0
@@ -42,7 +42,7 @@ class y extends(r = Chunk311907.Ay.Store) {
     let {
       publishedOnly: n
     } = t;
-    return null == e ? A : b.values(n ? h(e) : _(e))
+    return null == e ? y : b.values(n ? h(e) : _(e))
   }
   getGuildProductFetchState(e) {
     var t;
@@ -52,13 +52,13 @@ class y extends(r = Chunk311907.Ay.Store) {
     var t;
     return Date.now() - (null != (t = f[e]) ? t : 0) > g
   }
-}(l = "displayName") in y ? Object.defineProperty(y, l, {
+}(l = "displayName") in A ? Object.defineProperty(A, l, {
   value: "GuildProductsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : y[l] = "GuildProductsStore";
-let v = new y(Chunk73153.h, {
+}) : A[l] = "GuildProductsStore";
+let v = new A(Chunk73153.h, {
   CONNECTION_OPEN: function() {
     b.clear(), p = {}, m = {}, f = {}
   },

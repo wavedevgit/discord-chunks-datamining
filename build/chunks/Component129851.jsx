@@ -10,10 +10,10 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
   Chunk492462 = require("./492462.js"),
-  Chunk607399 = require("./607399.js"),
   Chunk511815 = require("./511815.js"),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
+  Chunk139033 = require("./139033.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk73153 = require("./73153.js"),
   Chunk830215 = require("./830215.js"),
@@ -671,14 +671,14 @@ class et extends(r = Chunk64700.PureComponent) {
         M._.dispatch(z.jej.WAVE_EMPHASIZE);
         let e = await f.A.forgotPassword(t);
         if (false === e) return;
-        e === u.D.ONE_TIME_LOGIN ? (0, p.qfG)(e => {
+        e === c.D.ONE_TIME_LOGIN ? (0, p.qfG)(e => {
           let t = [{
             variant: "primary",
             text: q.intl.string(q.t.BddRzS),
             onClick: e.onClose,
             fullWidth: true
           }];
-          return (0, i.jsx)(d.Modal, $(Z({
+          return (0, i.jsx)(u.Modal, $(Z({
             title: q.intl.string(q.t["6Ecyts"]),
             actions: t
           }, e), {
@@ -687,18 +687,12 @@ class et extends(r = Chunk64700.PureComponent) {
               children: q.intl.string(q.t.iAcrqV)
             })
           }))
-        }) : (0, p.qfG)(e => (0, i.jsx)(p.VoidConfirmModal, $(Z({
-          header: q.intl.string(q.t.f5Pi7A),
-          confirmText: q.intl.string(q.t.BddRzS),
-          className: c.Fr ? Y.Hw : ""
-        }, e), {
-          children: (0, i.jsx)(p.Text, {
-            variant: "text-md/normal",
-            children: q.intl.format(q.t["6u5hQ9"], {
-              email: t
-            })
+        }) : (0, h.A)({
+          title: q.intl.string(q.t.f5Pi7A),
+          subtitle: q.intl.format(q.t["6u5hQ9"], {
+            email: t
           })
-        })))
+        })
       } catch (t) {
         let e = (0, A.p)(t);
         this.setState({
@@ -762,7 +756,7 @@ X(et, "defaultProps", {
 });
 let en = function(e) {
   (0, P.K)();
-  let t = (0, h.cf)([B.A, U.A, D.default, S.A, T.A], () => ({
+  let t = (0, d.cf)([B.A, U.A, D.default, S.A, T.A], () => ({
     authenticated: D.default.isAuthenticated(),
     handoffAvailable: B.A.isHandoffAvailable(),
     user: B.A.user,

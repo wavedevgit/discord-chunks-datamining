@@ -83,7 +83,7 @@ class G extends Chunk64700.PureComponent {
       canManageWebhooks: b,
       canUnlinkChannel: x
     } = this.props;
-    return null == i ? null : (0, l.jsx)(d.Ay, {
+    return null == i ? null : (0, l.jsx)(u.Ay, {
       theme: e,
       sidebarTheme: t,
       section: null != n ? n : L.p_A.OVERVIEW,
@@ -96,13 +96,13 @@ class G extends Chunk64700.PureComponent {
           canManageRoles: i,
           canManageChannels: r,
           canDeleteChannels: a,
-          canManageWebhooks: d,
+          canManageWebhooks: u,
           canUnlinkChannel: h
         } = e, f = (0, m.gU)(t), {
           GUILD_CATEGORY: b
         } = L.rbe, x = A.Le.has(t.type), j = t.type === b ? P.intl.string(P.t.ifbXnL) : x ? t.isForumPost() ? P.intl.string(P.t.nEOg1N) : P.intl.string(P.t.H7vTe2) : P.intl.string(P.t["8D8Rsb"]);
         return [{
-          section: u.Fq.HEADER,
+          section: d.Fq.HEADER,
           label: null != t ? (0, l.jsxs)(l.Fragment, {
             children: [null != f ? (0, l.jsx)(f, {
               size: "xxs",
@@ -140,7 +140,7 @@ class G extends Chunk64700.PureComponent {
           section: L.p_A.INSTANT_INVITES,
           label: P.intl.string(P.t["9F90ic"]),
           element: M.A,
-          type: u.Py.CUSTOM,
+          type: d.Py.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
           section: L.p_A.INTEGRATIONS,
@@ -151,9 +151,9 @@ class G extends Chunk64700.PureComponent {
             stores: [y.A],
             element: w.q
           },
-          predicate: () => !(!d && !h || t.isModeratorReportChannel()) && A.oH.has(t.type)
+          predicate: () => !(!u && !h || t.isModeratorReportChannel()) && A.oH.has(t.type)
         }, {
-          section: u.Fq.DIVIDER
+          section: d.Fq.DIVIDER
         }, {
           section: L.p_A.DELETE,
           onClick() {
@@ -190,8 +190,8 @@ function B() {
     channel: e,
     analyticsLocation: t
   } = (0, r.cf)([O.A], () => O.A.getProps()), n = (0, r.bG)([O.A], () => O.A.getFormState()), i = (0, r.bG)([O.A], () => O.A.getSection()), s = (0, r.bG)([j.A], () => j.A.theme), a = (0, b.NC)(), o = (0, x.NI)(e), c = (0, x.H_)(e), {
-    canManageChannels: d,
-    canManageRoles: u,
+    canManageChannels: u,
+    canManageRoles: d,
     canManageWebhooks: h,
     canUnlinkChannel: g
   } = (0, r.cf)([N.A], () => ({
@@ -203,9 +203,9 @@ function B() {
   return (0, l.jsx)(G, {
     channel: e,
     category: m,
-    canManageChannels: (null == e ? true : e.isThread()) ? o : d,
-    canDeleteChannels: (null == e ? true : e.isThread()) ? c : d,
-    canManageRoles: u,
+    canManageChannels: (null == e ? true : e.isThread()) ? o : u,
+    canDeleteChannels: (null == e ? true : e.isThread()) ? c : u,
+    canManageRoles: d,
     canManageWebhooks: h,
     canUnlinkChannel: g,
     formState: n,

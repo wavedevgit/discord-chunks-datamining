@@ -30,10 +30,10 @@ let m = Chunk64700.memo(function(e) {
   } = (0, l.cf)([o.A], () => ({
     isReplyAuthorBlocked: null != f && o.A.isBlockedForMessage(f),
     isReplyAuthorIgnored: null != f && o.A.isIgnoredForMessage(f)
-  }), [f]), A = (0, u.X4)(f), y = (0, u.X4)(t);
+  }), [f]), y = (0, u.X4)(f), A = (0, u.X4)(t);
   return (0, r.jsx)(d.A, {
-    repliedAuthor: A,
-    baseAuthor: y,
+    repliedAuthor: y,
+    baseAuthor: A,
     baseMessage: t,
     channel: n,
     referencedMessage: p,

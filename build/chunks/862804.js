@@ -47,19 +47,19 @@ class g {
       _ = arguments.length > 1 && true !== arguments[1] ? arguments[1] : c.default,
       h = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.A,
       b = arguments.length > 3 && true !== arguments[3] ? arguments[3] : s.A,
-      A = arguments.length > 4 && true !== arguments[4] ? arguments[4] : a.A,
-      y = arguments.length > 5 && true !== arguments[5] ? arguments[5] : i.A,
+      y = arguments.length > 4 && true !== arguments[4] ? arguments[4] : a.A,
+      A = arguments.length > 5 && true !== arguments[5] ? arguments[5] : i.A,
       {
         snapshotIndex: v,
-        parentMessage: x,
-        messageSnapshot: O
+        parentMessage: O,
+        messageSnapshot: x
       } = this,
-      E = (0, d.Fe)(O.message.timestamp),
+      E = (0, d.Fe)(x.message.timestamp),
       j = g.getChannel(this.parentMessage.channel_id);
-    if (null != j && j.guild_id === (null == (t = x.messageReference) ? true : t.guild_id)) {
-      let e = g.getChannel(null == (u = x.messageReference) ? true : u.channel_id);
+    if (null != j && j.guild_id === (null == (t = O.messageReference) ? true : t.guild_id)) {
+      let e = g.getChannel(null == (u = O.messageReference) ? true : u.channel_id);
       if (null == e) {
-        let e = A.getGuild(j.guild_id);
+        let e = y.getGuild(j.guild_id);
         return null == e ? {
           snapshotIndex: v
         } : {
@@ -81,11 +81,11 @@ class g {
         snapshotIndex: v
       }
     }
-    let C = null == (n = x.messageReference) ? true : n.guild_id;
+    let C = null == (n = O.messageReference) ? true : n.guild_id;
     if (null == C) return {
       snapshotIndex: v
     };
-    let I = null != (e = A.getGuild(C)) ? e : y.getGuild(C);
+    let I = null != (e = y.getGuild(C)) ? e : A.getGuild(C);
     return null == I ? {
       snapshotIndex: v
     } : {

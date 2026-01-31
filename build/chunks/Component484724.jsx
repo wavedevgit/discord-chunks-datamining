@@ -25,8 +25,8 @@ var Chunk627968 = require("./627968.js"),
 function v(e) {
   let {
     code: t
-  } = e, [n, v, x] = t.split("-"), {
-    analyticsLocations: O
+  } = e, [n, v, O] = t.split("-"), {
+    analyticsLocations: x
   } = (0, s.Ay)(), {
     guildScheduledEvent: E,
     guild: j,
@@ -45,8 +45,8 @@ function v(e) {
     }
   }, [n, v]);
   return i.useEffect(() => {
-    (null == E ? true : E.id) == null && b.A.fetchGuildEvent(n, v), _.A.getGuildEventUserCounts(n, v, null != x ? [x] : []), _.A.getGuildEventsForCurrentUser(n)
-  }, [v, n, null == E ? true : E.id, x]), (0, r.jsx)(A.Ay, {
+    (null == E ? true : E.id) == null && b.A.fetchGuildEvent(n, v), _.A.getGuildEventUserCounts(n, v, null != O ? [O] : []), _.A.getGuildEventsForCurrentUser(n)
+  }, [v, n, null == E ? true : E.id, O]), (0, r.jsx)(y.Ay, {
     guild: j,
     channel: C,
     guildScheduledEvent: E,
@@ -55,17 +55,17 @@ function v(e) {
       if ((0, u.g)({
           guild: j,
           isMember: I,
-          analyticsLocations: O
+          analyticsLocations: x
         }) === u.W.PROCEED) {
         if ((0, c.V)(n)) return void(0, o.Ze)(n);
         a.A.joinGuild(n, {
-          source: y.Q4z.GUILD_EVENT_EMBED
+          source: A.Q4z.GUILD_EVENT_EMBED
         }).catch(() => {})
       }
     },
     onTransitionToInviteChannel: function() {
       (0, c.V)(n) ? (0, o.Ze)(n) : (null == C ? true : C.isGuildStageVoice()) ? (0, d.av)(C) : (null == C ? true : C.isGuildVoice()) && b.A.joinVoiceEvent(C.guild_id, C.id)
     },
-    recurrenceId: x
+    recurrenceId: O
   })
 }

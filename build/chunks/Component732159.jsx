@@ -2,7 +2,7 @@
 /** chunk id: 732159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ConfirmModal: () => f
+  ConfirmModal: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -33,18 +33,35 @@ function c(e) {
 }
 
 function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function f(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = d(e, t), Object.getOwnPropertySymbols)
+  if (a = p(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function d(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -52,53 +69,56 @@ function d(e, t) {
   return i
 }
 
-function f(e) {
+function _(e) {
   let {
     confirmText: t,
     cancelText: n,
     checkboxProps: l,
-    onConfirm: d,
-    onCancel: f,
-    onCloseCallback: p,
-    variant: _ = "critical"
-  } = e, h = u(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant"]), {
-    i18n: m
-  } = (0, a.G9)(), g = m.CANCEL, E = m.INLINE_NOTICE_GENERIC_ERROR, [y, b] = i.useState(false), O = i.useRef(p);
+    onConfirm: u,
+    onCancel: p,
+    onCloseCallback: _,
+    variant: h = "critical",
+    children: m
+  } = e, g = f(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant", "children"]), {
+    i18n: E
+  } = (0, a.G9)(), y = E.CANCEL, b = E.INLINE_NOTICE_GENERIC_ERROR, [O, v] = i.useState(false), A = i.useRef(_);
   i.useLayoutEffect(() => {
-    O.current = p
+    A.current = _
   }), i.useLayoutEffect(() => () => {
     var e;
-    null == (e = O.current) || e.call(O)
+    null == (e = A.current) || e.call(A)
   }, []);
-  let [v, A] = i.useState(true), I = e => {
-    A(e)
+  let [I, S] = i.useState(true), T = e => {
+    S(e)
   };
-  return (0, r.jsx)(o.Modal, c({
+  return (0, r.jsx)(o.Modal, d(c({
     actions: [{
-      text: null != n ? n : g,
+      text: null != n ? n : y,
       variant: "secondary",
       onClick: () => {
-        null == f || f(), h.onClose()
+        null == p || p(), g.onClose()
       }
     }, {
       text: t,
-      variant: "critical" === _ ? "critical-primary" : _,
+      variant: "critical" === h ? "critical-primary" : h,
       onClick: async () => {
-        A(true), b(true);
+        S(true), v(true);
         try {
-          await (null == d ? true : d(I)), h.onClose()
+          await (null == u ? true : u(T)), g.onClose()
         } catch (e) {
-          throw b(false), A(e => null != e ? e : E), e
+          throw v(false), S(e => null != e ? e : b), e
         }
       },
-      disabled: y,
-      loading: y
+      disabled: O,
+      loading: O
     }],
     actionBarInput: null != l ? (0, r.jsx)(s.e, c({}, l)) : true,
     role: "alertdialog",
-    notice: null != v ? {
-      message: v,
+    notice: null != I ? {
+      message: I,
       type: "critical"
     } : true
-  }, h))
+  }, g), {
+    children: m
+  }))
 }

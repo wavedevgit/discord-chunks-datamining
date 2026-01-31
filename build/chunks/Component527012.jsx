@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 527012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => s
@@ -18,11 +18,11 @@ function s(e) {
     showCloseButton: c
   } = e;
   return (0, r.jsxs)(l.$Td, {
-    className: o.eR,
+    className: a.eR,
     children: [c && (0, r.jsx)(l.PMB, {
       onClick: s,
-      className: o.b,
-      noticeType: a.kqX.BACK_TO_PREVIOUS_SCREEN
+      className: a.b,
+      noticeType: o.kqX.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsx)(i.$nd, {
       text: t,
       variant: "overlay-secondary",

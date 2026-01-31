@@ -7,7 +7,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   a = require.n(Chunk503698),
-  Chunk970984 = require("./970984.js"),
+  Chunk353709 = require("./353709.js"),
   Chunk827734 = require("./827734.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk818348 = require("./818348.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk806449 = require("./806449.js");
-let T = (0, Chunk970984.animated)(Chunk397927.abt),
+let T = (0, Chunk353709.animated)(Chunk397927.abt),
   N = e => {
     var t;
     let {
@@ -77,7 +77,7 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
       style: {
         height: Y ? B : true
       },
-      children: [(0, r.jsx)(A.A, {
+      children: [(0, r.jsx)(y.A, {
         quest: l,
         isInteracting: L,
         containerClassName: S.v7,
@@ -115,7 +115,7 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
               className: S._F,
               children: [(0, r.jsx)("div", {
                 className: S.SY,
-                children: (0, r.jsx)(O.A, {
+                children: (0, r.jsx)(x.A, {
                   quest: l,
                   questContent: N,
                   className: S.EK,
@@ -125,7 +125,7 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
                 className: S.if,
                 children: [(0, r.jsxs)("div", {
                   className: S.dc,
-                  children: [en, (0, r.jsx)(x.A, {
+                  children: [en, (0, r.jsx)(O.A, {
                     color: "always-white"
                   })]
                 }), (0, r.jsx)(u.Text, {
@@ -154,7 +154,7 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
               className: S.uA,
               children: [(0, r.jsxs)("div", {
                 className: S._V,
-                children: [en, q ? null : (0, r.jsx)(x.A, {
+                children: [en, q ? null : (0, r.jsx)(O.A, {
                   color: "always-white"
                 })]
               }), (0, r.jsxs)("div", {
@@ -193,7 +193,7 @@ let T = (0, Chunk970984.animated)(Chunk397927.abt),
               output: [E.es / 2 - E.uR / 2, E.wl]
             }) : E.wl
           },
-          children: [(0, r.jsx)(y.C, {
+          children: [(0, r.jsx)(A.C, {
             questContent: N,
             quest: l,
             questContentPosition: M,

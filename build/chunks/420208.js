@@ -24,12 +24,12 @@ function h(e) {
 }
 async function b(e, t) {
   var n, f, b;
-  let A = t.getGuildId();
-  if (null == A || null == u.A.getGuild(A)) return;
-  let y = d.default.getCurrentUser();
-  if (null == y) return;
+  let y = t.getGuildId();
+  if (null == y || null == u.A.getGuild(y)) return;
+  let A = d.default.getCurrentUser();
+  if (null == A) return;
   await (0, s.YB)();
-  let v = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, a.G7)(e, y, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+  let v = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, a.G7)(e, A, t)).sort((e, t) => -m.default.compare(e.id, t.id));
   if (v.length > 5) {
     let n = [v[Math.floor(Math.pow(Math.random(), 2) * v.length)].id];
     r.A.sendStickers(t.id, n, "", {
@@ -42,14 +42,14 @@ async function b(e, t) {
     });
     return
   }
-  let x = u.A.getGuildIds().filter(h).map(e => i.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == p.Ay.getEmojiUnavailableReason({
+  let O = u.A.getGuildIds().filter(h).map(e => i.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == p.Ay.getEmojiUnavailableReason({
     emoji: e,
     channel: t,
-    guildId: A,
+    guildId: y,
     intention: g.b_.CHAT
   })).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (x.length > 10) {
-    let n = x[Math.floor(Math.pow(Math.random(), 2) * x.length)];
+  if (O.length > 10) {
+    let n = O[Math.floor(Math.pow(Math.random(), 2) * O.length)];
     r.A.sendMessage(t.id, l.Ay.parse(t, (0, p.N)(n)), false, {
       location: _.Hx.CHANNEL_PROMPT,
       messageReference: {
@@ -60,8 +60,8 @@ async function b(e, t) {
     });
     return
   }
-  let O = Array.from(o.A.getAllPackStickers().values()).flat().filter(e => e.type === c.NL.STANDARD),
-    E = [O[Math.floor(Math.random() * O.length)].id];
+  let x = Array.from(o.A.getAllPackStickers().values()).flat().filter(e => e.type === c.NL.STANDARD),
+    E = [x[Math.floor(Math.random() * x.length)].id];
   r.A.sendStickers(t.id, E, "", {
     messageReference: {
       guild_id: null != (n = t.getGuildId()) ? n : true,

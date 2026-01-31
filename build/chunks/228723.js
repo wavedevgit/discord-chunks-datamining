@@ -7,6 +7,5 @@ module.exports = {
   Qt: "needAccount__1d5fc",
   Z8: "smallRegisterLink__1d5fc",
   Eh: "mainLoginContainer__1d5fc",
-  Hw: "mobile__1d5fc",
   AX: "goBackButton__1d5fc"
 }

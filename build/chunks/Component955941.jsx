@@ -2,7 +2,7 @@
 /** chunk id: 955941, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,7 +14,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk351906 = require("./351906.js"),
   Chunk652215 = require("./652215.js");
 
-function u() {
+function d() {
   let e = (0, i.bG)([c.A], () => c.A.hideInstantInvites),
     {
       channel: t,
@@ -28,7 +28,7 @@ function u() {
         guild: t
       }
     }, []),
-    u = (0, i.bG)([o.A], () => null != t && o.A.can(d.xBc.CREATE_INSTANT_INVITE, t), [t]),
+    d = (0, i.bG)([o.A], () => null != t && o.A.can(u.xBc.CREATE_INSTANT_INVITE, t), [t]),
     {
       invites: h,
       loading: g
@@ -38,7 +38,7 @@ function u() {
     loading: g,
     guild: n,
     channel: t,
-    canCreateInvites: u,
+    canCreateInvites: d,
     hide: e
   })
 }

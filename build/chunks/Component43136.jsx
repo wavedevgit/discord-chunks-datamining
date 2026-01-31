@@ -53,7 +53,7 @@ function I(e) {
   let {
     coverImageAsset: t,
     isPreview: n = false
-  } = e, i = f.kt.useSetting(), l = (0, A.j)() && i, [a, s] = (0, m.A)(t, l), o = l ? (0, r.jsx)(d.A, {
+  } = e, i = f.kt.useSetting(), l = (0, y.j)() && i, [a, s] = (0, m.A)(t, l), o = l ? (0, r.jsx)(d.A, {
     autoPlay: true,
     loop: true,
     className: j.N4,
@@ -94,12 +94,12 @@ function S(e) {
       nickcolor: null != (t = null == r ? true : r.colorString) ? t : true
     }
   }, [m]), {
-    isTruncated: A,
+    isTruncated: y,
     ExpandableTextContainer: S
-  } = (0, y.e)(), T = (null != (t = null == d || null == (n = d.description) ? true : n.trim().length) ? t : 0) > 0, [N, P] = i.useState(1), w = (0, c.A)("(max-width: 1439px)"), {
+  } = (0, A.e)(), T = (null != (t = null == d || null == (n = d.description) ? true : n.trim().length) ? t : 0) > 0, [N, P] = i.useState(1), w = (0, c.A)("(max-width: 1439px)"), {
     selectedTab: R,
     isPhantomPreview: D
-  } = (0, v.k)(), L = R === x.B.GUILD_PRODUCTS_PREVIEW ? E.intl.string(E.t["LvXy/H"]) : E.intl.string(E.t.XyqKh8), M = T ? (0, r.jsxs)(r.Fragment, {
+  } = (0, v.k)(), L = R === O.B.GUILD_PRODUCTS_PREVIEW ? E.intl.string(E.t["LvXy/H"]) : E.intl.string(E.t.XyqKh8), M = T ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S, {
       lineClamp: w || 2 === N ? 2 : 3,
       children: (0, r.jsx)(o.Text, {
@@ -107,11 +107,11 @@ function S(e) {
         color: "text-default",
         children: null == d ? true : d.description
       })
-    }), A && (0, r.jsxs)(r.Fragment, {
+    }), y && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.hKd, {
         size: 4
       }), (0, r.jsx)(C, {
-        onClick: () => (0, O.A)({
+        onClick: () => (0, x.A)({
           guildId: m
         })
       })]

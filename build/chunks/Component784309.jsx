@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 784309, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => C
 }), require("./747238.js"), require("./896048.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk416337 = require("./416337.js");
 
-function E(e, t) {
+function T(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, j.ku)({
     id: e.id,
     avatar: t,
@@ -36,19 +36,19 @@ function E(e, t) {
   })
 }
 
-function T(e) {
+function C(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: j,
-    isExpanded: T,
-    isNew: C,
+    isExpanded: C,
+    isNew: w,
     errors: S,
     onToggleExpand: I
   } = e, [P, k] = r.useState(false), [R] = r.useState(new o.Ep);
   r.useEffect(() => () => R.stop(), [R]);
-  let L = r.useMemo(() => E(n, n.avatar), [n]),
+  let L = r.useMemo(() => T(n, n.avatar), [n]),
     D = r.useCallback(() => {
       let e = "".concat((0, s.TP)(false)).concat(_.Rsh.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, O.C)(e)
@@ -97,16 +97,16 @@ function T(e) {
     })
   });
   let U = null;
-  return T && null != l && (U = (0, i.jsxs)("div", {
-    className: w.rf,
+  return C && null != l && (U = (0, i.jsxs)("div", {
+    className: E.rf,
     children: [(0, i.jsx)(u.cGx, {
-      className: w.fV
+      className: E.fV
     }), (0, i.jsxs)(b.A, {
       children: [(0, i.jsx)(b.A.Child, {
         shrink: 1,
         grow: 0,
         children: (0, i.jsxs)(b.A, {
-          className: w.R3,
+          className: E.R3,
           direction: b.A.Direction.VERTICAL,
           children: [(0, i.jsx)(f.A, {
             image: l.avatar,
@@ -115,8 +115,8 @@ function T(e) {
                 avatar: e
               })
             },
-            makeURL: e => E(n, e),
-            imageClassName: w.mr,
+            makeURL: e => T(n, e),
+            imageClassName: E.mr,
             showIcon: true
           }), null != S.avatar && "" !== S.avatar ? (0, i.jsx)(u.Text, {
             color: "text-feedback-critical",
@@ -170,14 +170,14 @@ function T(e) {
             })
           })]
         }), (0, i.jsx)(u.cGx, {
-          className: w.Bd
+          className: E.Bd
         }), (0, i.jsxs)(b.A, {
           children: [(0, i.jsx)(d.m_, {
             text: N.intl.string(N.t.wwdb3g),
             shouldShow: P,
             children: (0, i.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: w.cL,
+              className: E.cL,
               children: (0, i.jsx)(u.Button, {
                 variant: "secondary",
                 size: "sm",
@@ -201,12 +201,12 @@ function T(e) {
   })), (0, i.jsx)(u.ZpM, {
     editable: true,
     id: t,
-    className: a()(w.Nr, C ? w.U6 : null),
+    className: a()(E.Nr, w ? E.U6 : null),
     children: (0, i.jsxs)(b.A, {
       direction: b.A.Direction.VERTICAL,
       children: [(0, i.jsx)(u.DUT, {
-        className: w.wx,
-        "aria-expanded": T,
+        className: E.wx,
+        "aria-expanded": C,
         onClick: I,
         children: (0, i.jsxs)(b.A, {
           align: b.A.Align.CENTER,
@@ -215,8 +215,8 @@ function T(e) {
             imageSrc: L,
             details: G
           }), (0, i.jsx)(x.A, {
-            className: w.eO,
-            expanded: T,
+            className: E.eO,
+            expanded: C,
             "aria-hidden": true
           })]
         })

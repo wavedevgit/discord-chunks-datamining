@@ -71,7 +71,7 @@ function S(e) {
         context: S("Invite Button Embed")
       })
     },
-    G = (0, r.jsx)(x.A, {
+    G = (0, r.jsx)(O.A, {
       onTransitionToInviteChannel: k,
       onAcceptInstantInvite: U,
       currentUserId: L,
@@ -92,7 +92,7 @@ function S(e) {
       });
       break;
     case I.elq.ERROR:
-      G = (0, r.jsx)(A.A, {
+      G = (0, r.jsx)(y.A, {
         author: n.author,
         inviteError: N
       });
@@ -109,7 +109,7 @@ function S(e) {
           });
           break;
         case p.Xd.FRIEND:
-          G = (0, r.jsx)(y.A, {
+          G = (0, r.jsx)(A.A, {
             invite: w,
             message: n,
             getAcceptInviteContext: S
@@ -145,7 +145,7 @@ function S(e) {
               message: n
             });
             break
-          }(0, c.v)(w) && (G = (0, r.jsx)(O.A, {
+          }(0, c.v)(w) && (G = (0, r.jsx)(x.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
             isMemberOfGuild: null != D,

@@ -48,14 +48,14 @@ function U(e) {
     activityCustomId: a,
     activityReferrerId: o,
     message: _,
-    onView: A
+    onView: y
   } = e, {
-    name: y,
-    bot: O
-  } = n = (0, w.b)(n), E = null == O ? true : O.id, j = (0, f.Ag)(n), I = C.Ay.getApplicationIconURL({
+    name: A,
+    bot: x
+  } = n = (0, w.b)(n), E = null == x ? true : x.id, j = (0, f.Ag)(n), I = C.Ay.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
-    bot: O
+    bot: x
   }), {
     staticBannerSrc: N,
     videoBannerSrc: L,
@@ -72,7 +72,7 @@ function U(e) {
       type: "contextless"
     },
     applicationId: n.id,
-    botUserId: null == O ? true : O.id
+    botUserId: null == x ? true : x.id
   }), q = null != E && j && Y, J = W && j, Q = (0, b.e)(n), X = (0, D.F)(n), Z = (0, D.t)(n), $ = i.useMemo(() => {
     let e = [];
     return j ? Q ? e.push({
@@ -117,7 +117,7 @@ function U(e) {
     app: n
   });
   return (0, r.jsx)(T.h, {
-    title: y,
+    title: A,
     staticBannerSrc: N,
     videoBannerSrc: L,
     onClickBanner: X,
@@ -131,8 +131,8 @@ function U(e) {
       linkType: l,
       referrerId: U,
       activityCustomId: a,
-      onView: A,
-      guildId: null == (t = x.A.getChannel(_.channel_id)) ? true : t.guild_id,
+      onView: y,
+      guildId: null == (t = O.A.getChannel(_.channel_id)) ? true : t.guild_id,
       channelId: _.channel_id,
       messageId: _.id
     }
@@ -147,7 +147,7 @@ function G(e) {
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
-  }) && null != c.integrationTypesConfig && l.b.GUILD_INSTALL in c.integrationTypesConfig, d = (0, s.bG)([y.default], () => y.default.locale, []), p = i.useMemo(() => {
+  }) && null != c.integrationTypesConfig && l.b.GUILD_INSTALL in c.integrationTypesConfig, d = (0, s.bG)([A.default], () => A.default.locale, []), p = i.useMemo(() => {
     var e, t;
     if (!u) return null;
     let n = new Intl.NumberFormat(d, {
@@ -187,12 +187,12 @@ function B(e) {
   } = t, c = (0, s.bG)([E.A], () => {
     var e;
     return null != (e = E.A.getGuildId()) ? e : true
-  }, []), u = (0, A.s)(t.id), d = (0, s.yK)([j.default, O.A], () => {
+  }, []), u = (0, y.s)(t.id), d = (0, s.yK)([j.default, x.A], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
       let r = j.default.getUser(n.author_id),
-        i = O.A.isFriend(n.author_id);
+        i = x.A.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
     return e

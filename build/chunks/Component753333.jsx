@@ -1,5 +1,5 @@
 /** Chunk was on 7869 **/
-/** chunk id: 753333, original params: e,t,n (module,exports,require) **/
+/** chunk id: 753333, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => s
 });
@@ -12,14 +12,14 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e, t, n) {
+function s(t, e, n) {
   let s = null != n;
-  if (null == (0, r.bG)([o.A], () => o.A.getGuild(t), [t])) return null;
+  if (null == (0, r.bG)([u.A], () => u.A.getGuild(e), [e])) return null;
 
   function d() {
     let l = arguments.length > 0 && true !== arguments[0] && arguments[0],
-      r = "".concat(location.protocol, "//").concat(location.host).concat(a.BVt.GUILD_EVENT_DETAILS(t, e, l ? null : n));
-    (0, u.C)(r, () => (0, i.showToast)((0, i.createToast)(c.intl.string(c.t["L/PwZf"]), i.ToastType.SUCCESS)))
+      r = "".concat(location.protocol, "//").concat(location.host).concat(a.BVt.GUILD_EVENT_DETAILS(e, t, l ? null : n));
+    (0, o.C)(r, () => (0, i.showToast)((0, i.createToast)(c.intl.string(c.t["L/PwZf"]), i.ToastType.SUCCESS)))
   }
   return (0, l.jsx)(i.Drp, {
     id: c.intl.string(c.t["9o+VKx"]),

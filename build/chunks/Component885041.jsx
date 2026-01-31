@@ -70,7 +70,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk682492 = require("./682492.js"),
   Chunk584257 = require("./584257.js"),
   Chunk64585 = require("./64585.js"),
-  Chunk281913 = require("./281913.jsx"),
+  Chunk281913 = require("./281913.js"),
   Chunk334116 = require("./334116.jsx"),
   Chunk194970 = require("./194970.js"),
   Chunk414967 = require("./414967.jsx"),
@@ -150,7 +150,7 @@ let ta = false;
   e$.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
 }), Chunk837921.Ay.on("LAUNCH_APPLICATION", (e, t) => {
   let n = eJ.A.getActiveLibraryApplication(t);
-  e3.playApplication(t, n, {
+  e4.playApplication(t, n, {
     analyticsParams: {
       location: {
         page: te.liQ.DIRECT,
@@ -346,7 +346,7 @@ let tg = [{
           case "launch": {
             let e = eJ.A.getActiveLibraryApplication(n);
             if (null == e) return;
-            e3.playApplication(e.id, e, {
+            e4.playApplication(e.id, e, {
               analyticsParams: {
                 location: {
                   page: te.liQ.DIRECT,
@@ -553,7 +553,7 @@ function tm(e) {
 }
 class tA extends Chunk64700.PureComponent {
   componentDidMount() {
-    e4.Ay.setZoomFactor(A.A.zoom), eT.A.init(), j.A.initialize(), e_.A.initialize(), K.A.initialize(), eW.A.initialize(), W.A.initialize(), eO.A.initialize(), U.A.initialize(), es.A.initialize(), _.A.init(), z.A.init(), q.A.init(), ep.A.initialize(), v.A.initialize(), B.A.initialize(), ey.A.initialize(), y.Ay.initialize(), H.Ay.initialize(), eK.A.initialize(), er.Ay.initialize(), eA.A.initialize(), O.A.initialize(), ei.A.init(), w.A.init(), e5.A.init(), E.A.initialize(), ek.A.init(), e9.A.init(), eV.A.init(), eL.A.initialize(), eR.A.initialize(), eG.A.initialize(), eH.A.init(), V.A.initialize(), b.A.initialize(), ej.A.initialize(), ew.A.initialize(), ef.A.initialize(), eg.A.initialize(), em.A.initialize(), L.A.initialize(), R.A.initialize(), Y.A.initialize(), ea.A.initialize(), el.A.init({
+    e3.Ay.setZoomFactor(A.A.zoom), eT.A.init(), j.A.initialize(), e_.A.initialize(), K.A.initialize(), eW.A.initialize(), W.A.initialize(), eO.A.initialize(), U.A.initialize(), es.A.initialize(), _.A.init(), z.A.init(), q.A.init(), ep.A.initialize(), v.A.initialize(), B.A.initialize(), ey.A.initialize(), y.Ay.initialize(), H.Ay.initialize(), eK.A.initialize(), er.Ay.initialize(), eA.A.initialize(), O.A.initialize(), ei.A.init(), w.A.init(), e5.A.init(), E.A.initialize(), ek.A.init(), e9.A.init(), eV.A.init(), eL.A.initialize(), eR.A.initialize(), eG.A.initialize(), eH.A.init(), V.A.initialize(), b.A.initialize(), ej.A.initialize(), ew.A.initialize(), ef.A.initialize(), eg.A.initialize(), em.A.initialize(), L.A.initialize(), R.A.initialize(), Y.A.initialize(), ea.A.initialize(), el.A.init({
       hasModalOpen: o.ueM,
       openModal: () => (0, o.mMO)(async () => {
         let {

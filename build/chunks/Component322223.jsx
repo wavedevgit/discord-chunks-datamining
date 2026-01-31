@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 322223, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -26,20 +26,20 @@ function S(e) {
   var t, S;
   let {
     onDismiss: P
-  } = e, y = (0, l.bG)([d.A], () => d.A.getGuildId()), m = (0, l.bG)([E.A], () => null != y ? E.A.getChannelId(y) : null, [y]), f = null != y ? y : null, C = (0, l.bG)([u.A], () => null != f ? u.A.getGuild(f) : null, [f]), {
+  } = e, y = (0, l.bG)([d.A], () => d.A.getGuildId()), C = (0, l.bG)([E.A], () => null != y ? E.A.getChannelId(y) : null, [y]), f = null != y ? y : null, D = (0, l.bG)([u.A], () => null != f ? u.A.getGuild(f) : null, [f]), {
     shouldShowIncidentActions: g,
-    incidentData: D,
+    incidentData: m,
     isUnderLockdown: h
-  } = (0, A.Li)(f), b = (0, s.fw)(null != (t = null == C ? true : C.id) ? t : O.dJq), U = i.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
-  if (null == C || null == D || !g) return null;
-  let M = e => {
-      e && b && m !== N.VV.MEMBER_SAFETY && U() ? _.default.track(O.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+  } = (0, A.Li)(f), U = (0, s.fw)(null != (t = null == D ? true : D.id) ? t : O.dJq), M = i.useCallback(() => null != D && (0, c.aZ)(D.id), [D]);
+  if (null == D || null == m || !g) return null;
+  let b = e => {
+      e && U && C !== N.VV.MEMBER_SAFETY && M() ? _.default.track(O.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: O.kqX.GUILD_RAID_NOTIFICATION,
-        guild_id: C.id
-      }) : (0, a.mMO)(async () => {
+        guild_id: D.id
+      }) : (0, o.mMO)(async () => {
         let e = {
             source: T.Eo.NAGBAR,
-            alertType: (0, I.$5)(D)
+            alertType: (0, I.$5)(m)
           },
           {
             default: t
@@ -64,7 +64,7 @@ function S(e) {
             }
             return e
           }({}, n), l = l = {
-            guildId: C.id,
+            guildId: D.id,
             analyticsData: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -79,24 +79,24 @@ function S(e) {
         }
       })
     },
-    j = (0, r.jsx)(o.A, {
+    j = (0, r.jsx)(a.A, {
       className: R.$f,
-      guild: C,
-      size: o.A.Sizes.MINI
+      guild: D,
+      size: a.A.Sizes.MINI
     }),
-    v = (0, I.ql)(D, C.name);
-  if (null != (null != (S = D.dmsDisabledUntil) ? S : D.invitesDisabledUntil) && h) return (0, r.jsxs)(a.$Td, {
+    k = (0, I.ql)(m, D.name);
+  if (null != (null != (S = m.dmsDisabledUntil) ? S : m.invitesDisabledUntil) && h) return (0, r.jsxs)(o.$Td, {
     className: R.lm,
-    color: a.Hv$.NEUTRAL,
-    children: [(0, r.jsx)(a.PMB, {
+    color: o.Hv$.NEUTRAL,
+    children: [(0, r.jsx)(o.PMB, {
       onClick: P,
       noticeType: O.kqX.GUILD_RAID_NOTIFICATION
-    }), j, v, (0, r.jsx)(a.zr9, {
+    }), j, k, (0, r.jsx)(o.zr9, {
       className: R.hP,
-      onClick: () => M(false),
+      onClick: () => b(false),
       children: (0, r.jsxs)("div", {
         className: R.rx,
-        children: [(0, r.jsx)(a.XAi, {
+        children: [(0, r.jsx)(o.XAi, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
@@ -105,23 +105,23 @@ function S(e) {
       })
     })]
   });
-  let k = (0, I.P$)(D) ? p.intl.formatToPlainString(p.t.tZTx2E, {
-      guildName: C.name
-    }) : (0, I.Qm)(D) ? p.intl.formatToPlainString(p.t["1bSmxr"], {
-      guildName: C.name
+  let L = (0, I.P$)(m) ? p.intl.formatToPlainString(p.t.tZTx2E, {
+      guildName: D.name
+    }) : (0, I.Qm)(m) ? p.intl.formatToPlainString(p.t["1bSmxr"], {
+      guildName: D.name
     }) : p.intl.formatToPlainString(p.t.W87xDE, {
-      guildName: C.name
+      guildName: D.name
     }),
-    L = b && m === N.VV.MEMBER_SAFETY;
-  return (0, r.jsxs)(a.$Td, {
+    v = U && C === N.VV.MEMBER_SAFETY;
+  return (0, r.jsxs)(o.$Td, {
     className: R.lm,
-    color: a.Hv$.WARNING,
-    children: [(0, r.jsx)(a.PMB, {
+    color: o.Hv$.WARNING,
+    children: [(0, r.jsx)(o.PMB, {
       onClick: P,
       noticeType: O.kqX.GUILD_RAID_NOTIFICATION
-    }), j, k, !L && (0, r.jsx)(a.zr9, {
+    }), j, L, !v && (0, r.jsx)(o.zr9, {
       className: R.hP,
-      onClick: () => M(true),
+      onClick: () => b(true),
       children: (0, r.jsx)("div", {
         className: R.rx,
         children: (0, r.jsx)("span", {

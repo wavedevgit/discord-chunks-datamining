@@ -57,10 +57,10 @@ function b(e) {
   let {
     messages: t
   } = e;
-  return t.map(e => A(e)).some(Boolean)
+  return t.map(e => y(e)).some(Boolean)
 }
 
-function A(e) {
+function y(e) {
   if (e.type !== i.l.PREMIUM_GROUP_INVITE) returnfalse;
   let t = e.content;
   if (null == t || "" === t || !s.default.isProbablyAValidSnowflake(t)) returnfalse;
@@ -71,7 +71,7 @@ function A(e) {
     errorStatus: null
   }), a.h.wait(() => (0, o.el)(t).catch(u.FXj)), true)
 }
-class y extends(r = Chunk311907.Ay.Store) {
+class A extends(r = Chunk311907.Ay.Store) {
   getInvite(e) {
     var t;
     return null != (t = f.get(e)) ? t : null
@@ -102,8 +102,8 @@ class y extends(r = Chunk311907.Ay.Store) {
     return _
   }
 }
-d(y, "displayName", "PremiumGroupInviteStore");
-let v = new y(Chunk73153.h, {
+d(A, "displayName", "PremiumGroupInviteStore");
+let v = new A(Chunk73153.h, {
   PREMIUM_GROUP_INVITES_FETCH_START: function() {
     _ = true
   },
@@ -253,7 +253,7 @@ let v = new y(Chunk73153.h, {
     let {
       message: t
     } = e;
-    return A(t)
+    return y(t)
   },
   LOCAL_MESSAGES_LOADED: b,
   LOAD_MESSAGES_SUCCESS: b,

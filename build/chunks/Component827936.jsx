@@ -1,11 +1,12 @@
 /** Chunk was on 62891 **/
 /** chunk id: 827936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
-var Chunk311907 = require("./311907.js"),
+var Chunk158954 = require("./158954.js"),
+  Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk308528 = require("./308528.js"),
@@ -52,16 +53,16 @@ function b(e) {
   })
 }
 
-function g(e, t) {
-  let n = (0, r.bG)([c.default], () => c.default.getCurrentUser());
-  return null == n || t.ownerId !== n.id || e.id === n.id ? null : (0, i.jsx)(o.Drp, {
+function p(e, t) {
+  let n = (0, l.bG)([u.default], () => u.default.getCurrentUser());
+  return null == n || t.ownerId !== n.id || e.id === n.id ? null : (0, i.jsx)(s.Drp, {
     id: "make-dm-owner",
     color: "danger",
-    label: u.intl.string(u.t["6t3CyN"]),
+    label: A.intl.string(A.t["6t3CyN"]),
     action: () => {
-      (0, o.qfG)(r => {
-        var c, g;
-        return (0, i.jsxs)(o.VoidConfirmModal, (c = function(e) {
+      (0, s.qfG)(l => {
+        var u, p;
+        return (0, i.jsx)(r.ConfirmModal, (u = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -79,56 +80,58 @@ function g(e, t) {
           }
           return e
         }({
-          bodyClassName: A.Uh,
-          header: u.intl.string(u.t.WZoUsm),
-          confirmText: u.intl.string(u.t["cY+Oob"]),
-          cancelText: u.intl.string(u.t["ETE/oC"]),
-          onConfirm: () => s.A.setDMOwner(t.id, e.id)
-        }, r), g = g = {
-          children: [(0, i.jsx)(b, {
-            color: l.A.unsafe_rawColors.PRIMARY_300.css
-          }), (0, i.jsxs)("div", {
-            className: A.nS,
-            children: [(0, i.jsx)("div", {
-              className: A.HT,
-              children: (0, i.jsx)(d.A, {
-                user: n,
-                size: o._3J.SIZE_80
-              })
-            }), (0, i.jsx)("div", {
-              className: A.to,
-              children: (0, i.jsx)(d.A, {
-                user: e,
-                size: o._3J.SIZE_80
+          title: A.intl.string(A.t.WZoUsm),
+          confirmText: A.intl.string(A.t["cY+Oob"]),
+          cancelText: A.intl.string(A.t["ETE/oC"]),
+          onConfirm: () => a.A.setDMOwner(t.id, e.id)
+        }, l), p = p = {
+          children: (0, i.jsxs)("div", {
+            className: g.Uh,
+            children: [(0, i.jsx)(b, {
+              color: o.A.unsafe_rawColors.PRIMARY_300.css
+            }), (0, i.jsxs)("div", {
+              className: g.nS,
+              children: [(0, i.jsx)("div", {
+                className: g.HT,
+                children: (0, i.jsx)(c.A, {
+                  user: n,
+                  size: s._3J.SIZE_80
+                })
+              }), (0, i.jsx)("div", {
+                className: g.to,
+                children: (0, i.jsx)(c.A, {
+                  user: e,
+                  size: s._3J.SIZE_80
+                })
+              })]
+            }), (0, i.jsx)(s.Text, {
+              variant: "text-md/normal",
+              children: A.intl.format(A.t.gsBb3F, {
+                usernameHook: (t, n) => (0, i.jsx)(d.A, {
+                  usernameIcon: (0, i.jsx)(s.euF, {
+                    className: g.jj,
+                    src: e.getAvatarURL(true, 16),
+                    size: s._3J.SIZE_16,
+                    "aria-hidden": true
+                  }),
+                  className: g.xK,
+                  usernameClass: g.Xh,
+                  discriminatorClass: g.D2,
+                  user: e
+                }, n)
               })
             })]
-          }), (0, i.jsx)(o.Text, {
-            variant: "text-md/normal",
-            children: u.intl.format(u.t.gsBb3F, {
-              usernameHook: (t, n) => (0, i.jsx)(a.A, {
-                usernameIcon: (0, i.jsx)(o.euF, {
-                  className: A.jj,
-                  src: e.getAvatarURL(true, 16),
-                  size: o._3J.SIZE_16,
-                  "aria-hidden": true
-                }),
-                className: A.xK,
-                usernameClass: A.Xh,
-                discriminatorClass: A.D2,
-                user: e
-              }, n)
-            })
-          })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
+          })
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
             n.push.apply(n, i)
           }
           return n
-        })(Object(g)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(g, e))
-        }), c))
+        })(Object(p)).forEach(function(e) {
+          Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(p, e))
+        }), u))
       })
     }
   })

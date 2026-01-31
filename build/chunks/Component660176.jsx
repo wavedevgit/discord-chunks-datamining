@@ -166,7 +166,7 @@ function F(e) {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: f
-  } = (0, x.A)({
+  } = (0, O.A)({
     userId: null == a ? true : a.id,
     guildId: s,
     size: 12
@@ -192,7 +192,7 @@ function F(e) {
             variant: "text-xs/medium",
             color: "text-default",
             children: R.intl.string(R.t.qlFrXW)
-          }), (0, r.jsx)(O.A, {
+          }), (0, r.jsx)(x.A, {
             targetElementRef: g,
             user: a,
             guildId: s,
@@ -243,13 +243,13 @@ function H(e) {
     raidDatetime: s,
     dmsSent: c,
     raidType: f,
-    resolvedReason: A
-  } = (0, h.Bk)(n), y = (0, d.bG)([E.A], () => E.A.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == y ? true : y.guild_id) ? t : null, {
-    shouldShowIncidentActions: x
-  } = (0, g.Li)(v), O = (0, S.Am)(n.author.id, n.channel_id), j = i.useCallback(() => {
-    let e = null == y ? true : y.guild_id;
+    resolvedReason: y
+  } = (0, h.Bk)(n), A = (0, d.bG)([E.A], () => E.A.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == A ? true : A.guild_id) ? t : null, {
+    shouldShowIncidentActions: O
+  } = (0, g.Li)(v), x = (0, S.Am)(n.author.id, n.channel_id), j = i.useCallback(() => {
+    let e = null == A ? true : A.guild_id;
     null != e && (0, b.is)(n.id, e)
-  }, [n.id, y]), C = f === u.p.DM_RAID, I = C ? m.EpV : m.EF8;
+  }, [n.id, A]), C = f === u.p.DM_RAID, I = C ? m.EpV : m.EF8;
   return (0, r.jsx)(z, {
     compact: l,
     header: (0, r.jsxs)(i.Fragment, {
@@ -291,7 +291,7 @@ function H(e) {
         dateTime: s.toLocaleString(R.intl.currentLocale, _.yc)
       })
     }) : null,
-    footerButtons: x ? (0, r.jsxs)("div", {
+    footerButtons: O ? (0, r.jsxs)("div", {
       className: D.OZ,
       children: [(0, r.jsxs)("div", {
         className: D.AX,
@@ -305,7 +305,7 @@ function H(e) {
           textVariant: "text-xs/medium",
           text: R.intl.string(R.t.DEoVWZ),
           onClick: e => {
-            O(e)
+            x(e)
           }
         })]
       }), (0, r.jsx)(k, {}), (0, r.jsx)("div", {
@@ -314,7 +314,7 @@ function H(e) {
           variant: "primary",
           textVariant: "text-xs/medium",
           size: "sm",
-          text: (0, h.Oj)(A),
+          text: (0, h.Oj)(y),
           onClick: j
         })
       })]
@@ -367,8 +367,8 @@ function V(e) {
           size: "sm",
           text: R.intl.string(R.t.oX14El),
           onClick: function() {
-            null != a && null != c && (0, A.W5)(a, c, () => {
-              (0, v.w)(u), (0, A.wu)(a)
+            null != a && null != c && (0, y.W5)(a, c, () => {
+              (0, v.w)(u), (0, y.wu)(a)
             })
           }
         })
@@ -380,7 +380,7 @@ function V(e) {
           size: "sm",
           text: R.intl.string(R.t["1R7QIx"]),
           onClick: function() {
-            null != a && y.A.open(a, P.BEX.GUILD_AUTOMOD, true, P.nd0.AUTOMOD_MENTION_SPAM)
+            null != a && A.A.open(a, P.BEX.GUILD_AUTOMOD, true, P.nd0.AUTOMOD_MENTION_SPAM)
           }
         })
       })]

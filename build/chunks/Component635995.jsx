@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 635995, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   In: () => E,
@@ -18,7 +18,7 @@ let E = e => {
     let {
       children: t
     } = e;
-    return (0, r.jsx)(o.Heading, {
+    return (0, r.jsx)(a.Heading, {
       variant: "heading-sm/medium",
       color: "text-strong",
       className: u.ut,
@@ -30,11 +30,11 @@ let E = e => {
       text: t,
       onClick: n
     } = e;
-    return (0, r.jsx)(a.$nd, {
+    return (0, r.jsx)(o.$nd, {
       onClick: n,
       text: t,
       size: "sm",
-      icon: o.tvc,
+      icon: a.tvc,
       variant: "secondary"
     })
   };
@@ -44,9 +44,9 @@ function _(e) {
     className: t,
     ref: n,
     children: i,
-    onClick: a
+    onClick: o
   } = e;
-  return (0, r.jsx)(o.NPJ, {
+  return (0, r.jsx)(a.NPJ, {
     theme: s.NJ.DARKER,
     children: e => (0, r.jsxs)("div", {
       ref: n,
@@ -54,14 +54,14 @@ function _(e) {
       children: [(0, r.jsx)("div", {
         className: u.qZ,
         children: i
-      }), (0, r.jsx)(o.DUT, {
+      }), (0, r.jsx)(a.DUT, {
         focusProps: {
           offset: 6
         },
         className: u.b,
-        onClick: a,
+        onClick: o,
         "aria-label": c.intl.string(c.t.WAI6xu),
-        children: (0, r.jsx)(o.PGe, {
+        children: (0, r.jsx)(a.PGe, {
           size: "sm"
         })
       })]

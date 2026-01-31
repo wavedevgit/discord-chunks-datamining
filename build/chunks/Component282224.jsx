@@ -60,23 +60,23 @@ function _(e) {
     author: d,
     mentions: f,
     type: _
-  } = n, h = (0, s.Ay)(n), b = n.getChannelId(), A = (0, l.bG)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, s.m2)(d, i), v = (0, o.P)({
+  } = n, h = (0, s.Ay)(n), b = n.getChannelId(), y = (0, l.bG)([u.default], () => u.default.getUser(f[0]), [f]), A = (0, s.m2)(d, i), v = (0, o.P)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), x = (0, s.d8)(A, i), O = (0, o.P)({
-    user: A,
+  })(A), O = (0, s.d8)(y, i), x = (0, o.P)({
+    user: y,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(x), E = null != (t = m[_]) ? t : null;
+  })(O), E = null != (t = m[_]) ? t : null;
   if (null == E) return null;
   let j = p.intl.format(E(), {
     actorName: h.nick,
     actorHook: v,
-    targetName: null == x ? true : x.nick,
-    targetHook: O
+    targetName: null == O ? true : O.nick,
+    targetHook: x
   });
   return (0, r.jsx)(c.A, {
     iconNode: (0, r.jsx)(g, {
@@ -104,7 +104,7 @@ function h(e) {
     messageId: n.id
   })(_), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
-  let A = p.intl.format(b(), {
+  let y = p.intl.format(b(), {
     actorName: d.nick,
     actorHook: h
   });
@@ -114,7 +114,7 @@ function h(e) {
     }),
     timestamp: n.timestamp,
     compact: l,
-    children: A
+    children: y
   })
 }
 

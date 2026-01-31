@@ -35,16 +35,16 @@ let h = function(e) {
     taskType: d,
     size: h = "sm",
     preClickCallback: b,
-    analyticsCtxQuestContent: A,
-    analyticsCtxSourceQuestContent: y,
+    analyticsCtxQuestContent: y,
+    analyticsCtxSourceQuestContent: A,
     analyticsCtxQuestContentPosition: v,
-    analyticsCtxQuestContentRowIndex: x
-  } = e, O = {
-    questContent: A,
+    analyticsCtxQuestContentRowIndex: O
+  } = e, x = {
+    questContent: y,
     questContentCTA: _(d),
-    sourceQuestContent: y,
+    sourceQuestContent: A,
     questContentPosition: v,
-    questContentRowIndex: x
+    questContentRowIndex: O
   }, E = n.id, {
     isEnrolling: j
   } = (0, l.cf)([o.A], () => ({
@@ -86,20 +86,20 @@ let h = function(e) {
     }
   }(d, n), T = (t = null != I ? I : true, d === i.n.WATCH_VIDEO ? async () => {
     await (0, m.e0)(n, {
-      questContent: O.questContent,
-      questContentCTA: O.questContentCTA,
-      sourceQuestContent: O.sourceQuestContent,
+      questContent: x.questContent,
+      questContentCTA: x.questContentCTA,
+      sourceQuestContent: x.sourceQuestContent,
       sourceQuestContentCTA: _(d),
-      questContentPosition: O.questContentPosition,
-      questContentRowIndex: O.questContentRowIndex
+      questContentPosition: x.questContentPosition,
+      questContentRowIndex: x.questContentRowIndex
     })
   }: async () => {
     await (0, s.Oy)(n.id, {
-      questContent: O.questContent,
-      questContentCTA: O.questContentCTA,
-      sourceQuestContent: O.sourceQuestContent,
-      questContentPosition: O.questContentPosition,
-      questContentRowIndex: O.questContentRowIndex
+      questContent: x.questContent,
+      questContentCTA: x.questContentCTA,
+      sourceQuestContent: x.sourceQuestContent,
+      questContentPosition: x.questContentPosition,
+      questContentRowIndex: x.questContentRowIndex
     }), null == t || t()
   });
   return (0, r.jsx)(a.Button, {

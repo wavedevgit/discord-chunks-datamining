@@ -104,10 +104,10 @@ function F(e) {
     } = (0, v.A)(e.id, U.Fd), {
       usernameProfile: l,
       avatarProfile: a
-    } = n, s = (0, y.m)(e, t, l, r);
+    } = n, s = (0, A.m)(e, t, l, r);
     return {
       onClickUsername: s,
-      onClickAvatar: (0, y.Jo)(a, r),
+      onClickAvatar: (0, A.Jo)(a, r),
       onPopoutRequestClose: i.useCallback(() => r({
         usernameProfile: false,
         avatarProfile: false,
@@ -137,7 +137,7 @@ function F(e) {
       onPopoutRequestClose: d,
       showUsernamePopout: p,
       showAvatarPopout: m,
-      renderPopout: A.A,
+      renderPopout: y.A,
       compact: false,
       displayCompactAvatars: false
     }),
@@ -174,17 +174,17 @@ function H(e) {
     _ = C.hD.useSetting(),
     h = C.rs.useSetting(),
     b = (0, a.bG)([T.A], () => T.A.isDeveloper),
-    A = (0, f.S)((null != (t = g.editedTimestamp) ? t : g.timestamp).valueOf()),
+    y = (0, f.S)((null != (t = g.editedTimestamp) ? t : g.timestamp).valueOf()),
     {
-      content: y,
+      content: A,
       hasSpoilerEmbeds: v,
       hasBailedAst: E
-    } = (0, x.A)(g, {
+    } = (0, O.A)(g, {
       hideSimpleEmbedContent: _ && h,
       isInteracting: false,
       formatInline: false,
-      allowList: A,
-      allowHeading: A,
+      allowList: y,
+      allowHeading: y,
       allowLinks: true,
       allowDevLinks: b,
       previewLinkTarget: true
@@ -196,11 +196,11 @@ function H(e) {
       className: G.Qs,
       children: [(0, r.jsx)(F, {
         mergedMessageRecord: g,
-        content: y,
+        content: A,
         channel: j,
         reportingUserId: null == o || null == (l = o.moderatorReport) ? true : l.reporting_user_id,
         reportedTimestamp: s.timestamp
-      }), (0, O.A)({
+      }), (0, x.A)({
         channelMessageProps: {
           message: g,
           channel: j,

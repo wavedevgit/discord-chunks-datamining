@@ -1,5 +1,5 @@
 /** Chunk was on 7869 **/
-/** chunk id: 406406, original params: e,t,n (module,exports,require) **/
+/** chunk id: 406406, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => O
 });
@@ -22,9 +22,9 @@ var Chunk397927 = require("./397927.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function O(e) {
+function O(t) {
   let {
-    guildEventId: t,
+    guildEventId: e,
     recurrenceId: n,
     channel: O,
     guild: h,
@@ -32,34 +32,34 @@ function O(e) {
     isRecurrenceItem: m = false,
     onSelect: T,
     target: j
-  } = e, S = (0, A.A)({
-    guildEventId: t,
+  } = t, S = (0, A.A)({
+    guildEventId: e,
     recurrenceId: n,
     guild: h,
     channel: O
   }), w = (0, d.A)({
-    guildEventId: t,
+    guildEventId: e,
     recurrenceId: n,
     guild: h,
     channel: O
   }), D = (0, g.A)({
-    guildEventId: t,
+    guildEventId: e,
     guild: h,
     channel: O,
     recurrenceId: n,
     isRecurrenceItem: m
-  }), N = (0, E.A)(t, h, O), P = (0, p.A)(t, h, O), G = (0, s.A)(t, h.id, n), I = (0, c.A)(t, j), x = (0, f.A)(t), C = (0, u.A)({
-    id: t,
+  }), N = (0, E.A)(e, h, O), P = (0, p.A)(e, h, O), G = (0, s.A)(e, h.id, n), I = (0, c.A)(e, j), C = (0, f.A)(e), x = (0, o.A)({
+    id: e,
     label: v.intl.string(v.t.WZwPO4)
-  }), R = (0, u.A)({
+  }), R = (0, o.A)({
     id: n,
     label: v.intl.string(v.t.NZRGQo)
-  }), L = (0, a.A)(t, h.id, O, n), U = (0, y.A)({
-    guildEventId: t,
+  }), L = (0, a.A)(e, h.id, O, n), U = (0, y.A)({
+    guildEventId: e,
     guildId: h.id,
     recurrenceId: n
   });
-  return (0, l.jsx)(o.A, {
+  return (0, l.jsx)(u.A, {
     context: _,
     object: b.ZSU.CONTEXT_MENU,
     children: (0, l.jsxs)(r.W1t, {
@@ -71,11 +71,11 @@ function O(e) {
       children: [(0, l.jsxs)(r.rXV, {
         children: [L, !m && P, D, !m && N, w, S, G, m && U]
       }), !m && (0, l.jsx)(r.rXV, {
-        children: x
+        children: C
       }), null != I && (0, l.jsx)(r.rXV, {
         children: I
       }), (0, l.jsxs)(r.rXV, {
-        children: [C, R]
+        children: [x, R]
       })]
     })
   })

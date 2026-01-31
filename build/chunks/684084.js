@@ -1,18 +1,18 @@
 /** Chunk was on 7869 **/
-/** chunk id: 684084, original params: e,t,n (module,exports,require) **/
+/** chunk id: 684084, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => r
 });
 var Chunk496092 = require("./496092.js");
 
-function r(e, t, n, r) {
+function r(t, e, n, r) {
   let {
     scheduled_start_time: i,
-    scheduled_end_time: o
-  } = e;
-  return null == i && null == o ? l.A.deleteGuildEventException(t, n, r) : l.A.updateGuildEventException({
+    scheduled_end_time: u
+  } = t;
+  return null == i && null == u ? l.A.deleteGuildEventException(e, n, r) : l.A.updateGuildEventException({
     scheduled_start_time: i,
-    scheduled_end_time: o,
+    scheduled_end_time: u,
     is_canceled: false
-  }, t, n, r)
+  }, e, n, r)
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 7869 **/
-/** chunk id: 971961, original params: e,t,n (module,exports,require) **/
+/** chunk id: 971961, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
 });
@@ -14,25 +14,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk691012 = require("./691012.js"),
   Chunk985018 = require("./985018.jsx");
 
-function E(e, t) {
+function E(t, e) {
   let n = a.Q_.useSetting(),
     {
       tidaWebformEnabled: E
-    } = u.A.useExperiment({
+    } = o.A.useExperiment({
       location: "useCopyEventImageLinkItem"
     }, {
       autoTrackExposure: false
     }),
-    f = (0, i.bG)([s.Ay], () => s.Ay.getGuildScheduledEvent(e)),
+    f = (0, i.bG)([s.Ay], () => s.Ay.getGuildScheduledEvent(t)),
     A = null != f ? (0, d.A)(f) : null,
-    y = "event-image" === t.getAttribute("data-type"),
+    y = "event-image" === e.getAttribute("data-type"),
     p = r.useCallback(() => {
       null != A && (0, c.C)(A)
     }, [A]);
-  return c.p5 && n && E && null != A && y ? (0, l.jsx)(o.Drp, {
+  return c.p5 && n && E && null != A && y ? (0, l.jsx)(u.Drp, {
     id: "copy-event-image-link",
     label: g.intl.string(g.t["8xHmxo"]),
     action: p,
-    icon: o.qYV
+    icon: u.qYV
   }) : null
 }

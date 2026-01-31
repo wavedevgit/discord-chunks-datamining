@@ -344,8 +344,8 @@ let e7 = e => (0, r.jsx)(C.A, eR({}, e)),
   e5 = () => (0, r.jsx)(ea.A, {}),
   e8 = () => (0, r.jsx)(z.A, {}),
   e2 = () => (0, r.jsx)($.A, {}),
-  e4 = () => (0, r.jsx)(el.A, {}),
-  e3 = e => {
+  e3 = () => (0, r.jsx)(el.A, {}),
+  e4 = e => {
     let t = e.location.pathname;
     return (0, r.jsx)(E.A, {
       deepLinkType: ew.XK.FEATURES,
@@ -660,7 +660,7 @@ function tn() {
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.FAMILY_CENTER,
-                  render: e4,
+                  render: e3,
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.ME,
@@ -723,12 +723,12 @@ function tn() {
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.GUILD_FEATURE(":feature", ef.pv.guildId()),
                   exact: true,
-                  render: e3,
+                  render: e4,
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
                   path: eT.BVt.FEATURE(":feature"),
                   exact: true,
-                  render: e3,
+                  render: e4,
                   disableTrack: true
                 })]
               }), O && (0, r.jsx)(k.A, {})]

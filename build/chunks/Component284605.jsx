@@ -28,8 +28,8 @@ function v(e) {
     guildProductListing: t,
     guildId: n,
     location: v,
-    shouldShowFullDescriptionButton: x = true,
-    hideRoleTag: O = false,
+    shouldShowFullDescriptionButton: O = true,
+    hideRoleTag: x = false,
     lineClamp: E = 1,
     cardWidth: j,
     cardHeight: C,
@@ -38,7 +38,7 @@ function v(e) {
     showOpaqueBackground: T = false
   } = e, N = (0, i.bG)([u.A], () => u.A.getGuild(n), [n]), P = (0, i.bG)([c.A], () => {
     var e;
-    return c.A.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.dJq)
+    return c.A.getRole(n, null != (e = null == t ? true : t.role_id) ? e : A.dJq)
   }), w = (0, a.R)(t, 600), R = (0, _.z)(t), D = (0, p.BB)(N), {
     shouldHideGuildPurchaseEntryPoints: L
   } = (0, o.MH)(n), M = (0, _.X)(t), k = (0, b.A)({
@@ -47,7 +47,7 @@ function v(e) {
     sourceAnalyticsLocations: v
   });
   if (null == N || L) return null;
-  let U = () => (0, A.M)({
+  let U = () => (0, y.M)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: v
@@ -101,12 +101,12 @@ function v(e) {
       return e
     }({}, k)),
     productType: R,
-    shouldShowFullDescriptionButton: x,
+    shouldShowFullDescriptionButton: O,
     onShowFullDescription: U,
     onTapCard: U,
     actionMenu: G,
     showOpaqueBackground: T,
-    hideRoleTag: O,
+    hideRoleTag: x,
     lineClamp: E,
     cardWidth: j,
     cardHeight: C,

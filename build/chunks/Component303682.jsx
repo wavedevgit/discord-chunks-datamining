@@ -30,8 +30,8 @@ let C = e => {
     let {
       onClose: t,
       onShare: n
-    } = e, r = (0, c.bG)([A.A], () => A.A.getReferralsRemaining()), a = (0, c.bG)([A.A], () => A.A.getHasEligibleFriends()), [d, m] = l.useState(new Map), [f, g] = l.useState(""), b = (0, p.A)(f, 400), {
-      eligibleUsers: x,
+    } = e, r = (0, c.bG)([y.A], () => y.A.getReferralsRemaining()), a = (0, c.bG)([y.A], () => y.A.getHasEligibleFriends()), [d, m] = l.useState(new Map), [f, g] = l.useState(""), b = (0, p.A)(f, 400), {
+      eligibleUsers: O,
       fetchUsers: C,
       hasError: I,
       isFetching: S,
@@ -39,7 +39,7 @@ let C = e => {
     } = (0, v.i)({
       searchQuery: b,
       selectedUsers: d
-    }), [N, P] = l.useState(false), w = x.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
+    }), [N, P] = l.useState(false), w = O.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
     return null === r ? (0, i.jsx)(u.y$y, {}) : I ? (0, i.jsx)(o.Modal, {
       transitionState: o.ip4.ENTERED,
       size: "sm",
@@ -52,7 +52,7 @@ let C = e => {
       size: "sm",
       title: E.intl.string(E.t["2YigPp"]),
       subtitle: E.intl.format(E.t.OOCbz8, {
-        helpdeskArticle: _.A.getArticleURL(O.MVz.REFERRAL_PROGRAM)
+        helpdeskArticle: _.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
       }),
       onClose: t,
       actions: []
@@ -116,7 +116,7 @@ let C = e => {
         let {
           eligibleRecipients: t
         } = e;
-        return (0, i.jsx)(y.A, {
+        return (0, i.jsx)(A.A, {
           users: Array.from(t.values()),
           isUserSelected: e => d.has(e.id),
           onSelectionChange: (e, t) => {
@@ -145,7 +145,7 @@ let C = e => {
         onClose: n,
         onShare: r
       } = e,
-      a = (0, c.bG)([A.A], () => A.A.getRecipientStatus()),
+      a = (0, c.bG)([y.A], () => y.A.getRecipientStatus()),
       [p, m] = l.useState(new Map),
       [f, g] = l.useState(new Map),
       [_, h] = l.useState(false);
@@ -180,7 +180,7 @@ let C = e => {
           }
         })
       })),
-      children: (0, i.jsx)(y.A, {
+      children: (0, i.jsx)(A.A, {
         users: Array.from(p.values()),
         isUserSelected: e => f.has(e.id),
         isUserDisabled: e => e.referralStatus === b.aK.REDEEMED,
@@ -199,10 +199,10 @@ let T = e => {
   let {
     onClose: t,
     startingScreen: n = 1
-  } = e, r = (0, c.bG)([A.A], () => A.A.getReferralsRemaining()), [a, s] = l.useState(n), [o, d] = l.useState([]), {
+  } = e, r = (0, c.bG)([y.A], () => y.A.getReferralsRemaining()), [a, s] = l.useState(n), [o, d] = l.useState([]), {
     analyticsLocations: p
   } = (0, f.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), _ = async e => {
-    g.default.track(O.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+    g.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
       location_stack: p
     });
     let t = await (0, b.xm)(Object.values(e).map(e => e.id));
@@ -211,7 +211,7 @@ let T = e => {
       status: t.get(e.id)
     }))), s(2)
   };
-  return null === r ? (0, i.jsx)(u.y$y, {}) : 2 === a ? (0, i.jsx)(x.h, {
+  return null === r ? (0, i.jsx)(u.y$y, {}) : 2 === a ? (0, i.jsx)(O.h, {
     isReminderConfirmation: 3 === n,
     results: o,
     onClose: t

@@ -24,7 +24,7 @@ require("./827669.js");
 var Chunk985018 = require("./985018.jsx"),
   Chunk998815 = require("./998815.js");
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ let E = {
   };
 
 function C(e) {
-  return (0, r.jsx)(o.Text, O(x({}, E), {
+  return (0, r.jsx)(o.Text, x(O({}, E), {
     color: "text-strong",
     children: e
   }))
@@ -108,7 +108,7 @@ let I = Chunk64700.memo(function(e) {
         R = null != N ? N + " " + v.name : v.name;
       if (v.type === c.n4.SUB_COMMAND || v.type === c.n4.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
-            children: [" ", (0, r.jsx)(o.Text, O(x({}, E), {
+            children: [" ", (0, r.jsx)(o.Text, x(O({}, E), {
               children: null != (l = null == P ? true : P.name_localized) ? l : v.name
             }))]
           }, R)],
@@ -130,8 +130,8 @@ let I = Chunk64700.memo(function(e) {
           let e = v.value.toString(),
             t = b.default.getUser(e);
           if (null != t) {
-            let e = (0, A.FT)(t, I);
-            h = (0, r.jsxs)(m.A, O(x({}, j), {
+            let e = (0, y.FT)(t, I);
+            h = (0, r.jsxs)(m.A, x(O({}, j), {
               onClick: () => (0, f.openUserProfileModal)({
                 userId: t.id,
                 guildId: I.guild_id,
@@ -147,7 +147,7 @@ let I = Chunk64700.memo(function(e) {
         case c.n4.CHANNEL: {
           let e = v.value.toString(),
             t = g.A.getChannel(e);
-          null != t && (h = (0, r.jsxs)(m.A, O(x({}, j), {
+          null != t && (h = (0, r.jsxs)(m.A, x(O({}, j), {
             children: ["#", t.name]
           })));
           break
@@ -155,7 +155,7 @@ let I = Chunk64700.memo(function(e) {
         case c.n4.ROLE: {
           let e = v.value.toString(),
             t = null != S ? _.A.getRole(S.id, e) : true;
-          null != t && (h = (0, r.jsxs)(m.A, O(x({}, j), {
+          null != t && (h = (0, r.jsxs)(m.A, x(O({}, j), {
             children: ["@", t.name]
           })));
           break
@@ -169,8 +169,8 @@ let I = Chunk64700.memo(function(e) {
           else {
             let t = b.default.getUser(e);
             if (null != t) {
-              let e = (0, A.FT)(t, I);
-              h = (0, r.jsxs)(m.A, O(x({}, j), {
+              let e = (0, y.FT)(t, I);
+              h = (0, r.jsxs)(m.A, x(O({}, j), {
                 onClick: () => (0, f.openUserProfileModal)({
                   userId: t.id,
                   guildId: I.guild_id,
@@ -183,7 +183,7 @@ let I = Chunk64700.memo(function(e) {
           break
         }
         case c.n4.ATTACHMENT:
-          h = C(y.intl.string(y.t.nONJVc));
+          h = C(A.intl.string(A.t.nONJVc));
           break;
         default: {
           let e = null == P || null == (d = P.choices) ? true : d.find(e => e.value === v.value);
@@ -191,7 +191,7 @@ let I = Chunk64700.memo(function(e) {
         }
       }
       return null == h && (h = C(null == D ? true : D.toString())), [(0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsxs)(o.Text, O(x({}, E), {
+        children: [(0, r.jsxs)(o.Text, x(O({}, E), {
           children: [" ", null != (n = null == P ? true : P.name_localized) ? n : v.name, ": "]
         })), h]
       }, R)]
@@ -205,7 +205,7 @@ let I = Chunk64700.memo(function(e) {
       sourceAnalyticsLocations: R
     }));
     T = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(o.Text, O(x({}, E), {
+      children: [(0, r.jsxs)(o.Text, x(O({}, E), {
         children: ["/", null != (a = null == (S = w.application_command) ? true : S.name_localized) ? a : w.name]
       })), e]
     })

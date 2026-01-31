@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 322337, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I,
@@ -36,8 +36,8 @@ class T extends Chunk64700.PureComponent {
       {
         skus: i,
         children: l,
-        applicationId: a,
-        primarySKU: o,
+        applicationId: o,
+        primarySKU: a,
         onSKUSelect: c
       } = n,
       u = function(e, t) {
@@ -92,13 +92,13 @@ class T extends Chunk64700.PureComponent {
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(a.W1t, {
+      return (0, r.jsx)(o.W1t, {
         "data-menu-migrated": true,
         onSelect: n,
         navId: "test-skus",
         "aria-label": d.intl.string(d.t.ogxXGq),
-        onClose: o.Z_,
-        children: e.map(e => (0, r.jsx)(a.Drp, {
+        onClose: a.Z_,
+        children: e.map(e => (0, r.jsx)(o.Drp, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {
@@ -107,7 +107,7 @@ class T extends Chunk64700.PureComponent {
         }, "".concat(e.id)))
       })
     }), _(this, "handleContextMenu", e => {
-      e.stopPropagation(), o.jA(e, this.renderContextMenu)
+      e.stopPropagation(), a.jA(e, this.renderContextMenu)
     }), _(this, "handleClick", () => {
       let {
         onSKUSelect: e,

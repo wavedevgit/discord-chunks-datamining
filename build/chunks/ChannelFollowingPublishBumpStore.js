@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 572957, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => y
 }), require("./896048.js"), require("./938796.js");
 var r, i, Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -29,7 +29,7 @@ class b extends(r = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : b[i] = "ChannelFollowingPublishBumpStore";
-let A = new b(Chunk73153.h, {
+let y = new b(Chunk73153.h, {
   MESSAGE_CREATE: function(e) {
     var t;
     let {

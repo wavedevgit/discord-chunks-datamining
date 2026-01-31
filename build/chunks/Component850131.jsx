@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk782635 = require("./782635.js");
 
-function y() {
+function A() {
   return (0, r.jsx)("svg", {
     width: "24",
     height: "24",
@@ -42,7 +42,7 @@ function v(e) {
     hasNoVotes: n,
     victorEmoji: i
   } = e;
-  if (n) t = (0, r.jsx)(y, {});
+  if (n) t = (0, r.jsx)(A, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
     t = (0, r.jsx)(d.A, {
@@ -52,12 +52,12 @@ function v(e) {
     })
   }
   return null != t ? (0, r.jsx)("div", {
-    className: A.ZS,
+    className: y.ZS,
     children: t
   }) : null
 }
 
-function x(e) {
+function O(e) {
   let t, {
       type: n
     } = e,
@@ -94,16 +94,16 @@ function x(e) {
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: A.sj,
+          className: y.sj,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            className: A.Dq,
+            className: y.Dq,
             scaleFontToUserSetting: true,
             children: a
           }), (0, r.jsx)(_.Vx, {
             size: 16,
-            className: A.To,
+            className: y.To,
             isVictor: true,
             isExpired: true
           })]
@@ -134,12 +134,12 @@ function x(e) {
       })
   }
   return (0, r.jsx)("div", {
-    className: A.h_,
+    className: y.h_,
     children: t
   })
 }
 
-function O(e) {
+function x(e) {
   let {
     className: t,
     data: n,
@@ -160,13 +160,13 @@ function O(e) {
     }
   })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
   return (0, r.jsxs)("div", {
-    className: a()(A.kL, {
-      [A.FS]: o
+    className: a()(y.kL, {
+      [y.FS]: o
     }, t),
     children: [(0, r.jsx)(v, {
       hasNoVotes: "NO_VOTES" === s.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(x, function(e) {
+    }), (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -199,7 +199,7 @@ function E(e) {
     channel: l,
     compact: a,
     disableInteraction: o = false
-  } = e, d = n.embeds[0], _ = i.useMemo(() => (0, g.A)(d), [d]), y = (0, s.EJ)(null != (t = null == _ ? true : _.questionText) ? t : "", h.TU), v = (0, p.Ay)(n), x = (0, m.P)({
+  } = e, d = n.embeds[0], _ = i.useMemo(() => (0, g.A)(d), [d]), A = (0, s.EJ)(null != (t = null == _ ? true : _.questionText) ? t : "", h.TU), v = (0, p.Ay)(n), O = (0, m.P)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
@@ -221,12 +221,12 @@ function E(e) {
       compact: a,
       children: b.intl.format(b.t.VJcK41, {
         username: v.nick,
-        usernameHook: x(v),
-        title: y,
+        usernameHook: O(v),
+        title: A,
         titleOnClick: j
       })
-    }), (0, r.jsx)(O, {
-      className: A.E6,
+    }), (0, r.jsx)(x, {
+      className: y.E6,
       data: _,
       onClickPollLink: o ? true : j
     })]

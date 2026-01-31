@@ -1,1 +1,1 @@
-{"id":"911411","type":"store","data":{"name":"PresenceSubscriptionsStore","functions":[{"name":"initialize","args":[]},{"name":"isSubscribed","args":["e"]}],"events":["PRESENCE_SUBSCRIPTIONS_ADD","CONNECTION_OPEN","CONNECTION_RESUMED","LOGOUT"]},"fromModule":{"id":"1113"}}
+{"id":"911411","type":"store","data":{"name":"PresenceSubscriptionsStore","functions":[{"name":"initialize","args":[]},{"name":"isSubscribed","args":["e"]}],"events":["PRESENCE_SUBSCRIPTIONS_ADD","CONNECTION_OPEN","CONNECTION_RESUMED","LOGOUT"]},"fromModule":{"id":"17534"}}

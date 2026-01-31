@@ -22,14 +22,14 @@ var Chunk158954 = require("./158954.js"),
 function h(e) {
   let t, n, h, {
       author: b,
-      banned: A,
-      channelId: y
+      banned: y,
+      channelId: A
     } = e,
     v = (0, l.bG)([c.default], () => c.default.getId()),
-    x = m.Ay.useName(b),
-    O = v === b.id,
+    O = m.Ay.useName(b),
+    x = v === b.id,
     E = (0, l.bG)([u.A, d.A], () => {
-      let e = u.A.getChannel(y);
+      let e = u.A.getChannel(A);
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
       if (e.isThread()) {
@@ -39,8 +39,8 @@ function h(e) {
       }
       return d.A.can(f.xBc.SEND_MESSAGES, e)
     });
-  return O ? (t = g.intl.string(g.t["F/OLvL"]), h = g.intl.string(g.t.C89OLE)) : (h = g.intl.string(g.t.YVub5y), A ? t = g.intl.string(g.t["57nBty"]) : null != x && E ? (t = g.intl.formatToPlainString(g.t["9Akp1s"], {
-    username: x
+  return x ? (t = g.intl.string(g.t["F/OLvL"]), h = g.intl.string(g.t.C89OLE)) : (h = g.intl.string(g.t.YVub5y), y ? t = g.intl.string(g.t["57nBty"]) : null != O && E ? (t = g.intl.formatToPlainString(g.t["9Akp1s"], {
+    username: O
   }), n = (0, r.jsx)(i.$nd, {
     onClick: function() {
       let {
@@ -51,7 +51,7 @@ function h(e) {
       p._.dispatchToLastSubscribed(f.jej.INSERT_TEXT, {
         plainText: t,
         rawText: "<@".concat(e, ">")
-      }), null != y && a.A.startTyping(y)
+      }), null != A && a.A.startTyping(A)
     },
     text: g.intl.string(g.t.P8tvKG)
   })) : t = g.intl.string(g.t["SMJr+a"])), (0, r.jsxs)(s.A, {

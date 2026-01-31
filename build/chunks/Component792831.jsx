@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 792831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk953727 = require("./953727.js"),
   Chunk106199 = require("./106199.js"),
   c = ((r = {}).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT", r);
@@ -54,10 +54,10 @@ let u = e => {
       })
     }
     return e
-  }({}, (0, o.A)(A)), n = n = {
+  }({}, (0, a.A)(A)), n = n = {
     width: r,
     height: l,
-    className: a()(d, function(e) {
+    className: o()(d, function(e) {
       switch (e) {
         case "LEFT":
           return s.kb;

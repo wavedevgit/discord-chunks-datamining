@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk272396 = require("./272396.js");
 
 function p() {
-  let e = (0, s.bG)([u.A], () => u.A.advancedMode),
+  let e = (0, s.bG)([d.A], () => d.A.advancedMode),
     [t] = i.useState(new r.A.Value(+!!e));
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(o.cGx, {
@@ -53,7 +53,7 @@ function p() {
         style: {
           opacity: t
         },
-        children: (0, l.jsx)(d.A, {})
+        children: (0, l.jsx)(u.A, {})
       })
     })]
   })

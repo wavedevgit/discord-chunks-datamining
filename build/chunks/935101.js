@@ -13,14 +13,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk927813 = require("./927813.js"),
   Chunk340913 = require("./340913.js"),
   Chunk731854 = require("./731854.js");
-let b = 3 * Chunk927813.A.Millis.SECOND;
+let d = 3 * Chunk927813.A.Millis.SECOND;
 
 function u() {
   let {
     showPTTSpeakingIndicator: e
   } = p.A.useConfig({
     location: "useSpeakingWhilePTT"
-  }), [_, t] = a.useState(false), s = (0, o.bG)([i.A], () => i.A.getMode() === d.TB.PUSH_TO_TALK), u = (0, o.bG)([c.A], () => c.A.getRTCConnectionId()), f = a.useRef(new r.Ep);
+  }), [_, t] = a.useState(false), s = (0, o.bG)([c.A], () => c.A.getMode() === b.TB.PUSH_TO_TALK), u = (0, o.bG)([i.A], () => i.A.getRTCConnectionId()), f = a.useRef(new r.Ep);
   return a.useEffect(() => {
     t(false)
   }, [u]), a.useEffect(() => {
@@ -28,14 +28,14 @@ function u() {
       a = f.current;
 
     function o(e, o) {
-      let n = (o & d.ME.VOICE) === d.ME.VOICE,
+      let n = (o & b.ME.VOICE) === b.ME.VOICE,
         r = l.A.isCurrentUserPTTActive();
-      n && !r ? ++_ >= 5 && (t(true), a.start(b, () => {
+      n && !r ? ++_ >= 5 && (t(true), a.start(d, () => {
         t(false)
       })) : _ = 0
     }
-    return e && s && null != u && i.A.getMediaEngine().on(n.bg.VoiceActivity, o), () => {
-      i.A.getMediaEngine().removeListener(n.bg.VoiceActivity, o), a.stop()
+    return e && s && null != u && c.A.getMediaEngine().on(n.bg.VoiceActivity, o), () => {
+      c.A.getMediaEngine().removeListener(n.bg.VoiceActivity, o), a.stop()
     }
   }, [e, s, u]), _
 }

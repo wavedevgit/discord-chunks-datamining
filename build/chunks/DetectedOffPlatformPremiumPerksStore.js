@@ -17,19 +17,19 @@ var r, i, Chunk735438 = require("./735438.js"),
   Chunk469778 = require("./469778.js"),
   Chunk67480 = require("./67480.js"),
   Chunk652215 = require("./652215.js");
-let A = "DetectedOffPlatformPremiumPerksStore",
-  y = {},
+let y = "DetectedOffPlatformPremiumPerksStore",
+  A = {},
   v = {},
-  x = [];
+  O = [];
 
-function O() {
+function x() {
   let e = false;
   for (let {
       skuId: t,
       applicationId: n
     }
     of a().values(v)) {
-    if (x.includes(t)) continue;
+    if (O.includes(t)) continue;
     let r = m.A.getApplication(n);
     if (null == r) {
       m.A.isFetchingApplication(n) || m.A.didFetchingApplicationFail(n) || p.Ay.fetchApplication(n);
@@ -40,7 +40,7 @@ function O() {
       h.A.isFetching(t) || h.A.didFetchingSkuFail(t) || d.EX(r.id, t);
       continue
     }
-    _.A.applicationIdsFetching.has(r.id) || _.A.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = true) : (y[t] = {
+    _.A.applicationIdsFetching.has(r.id) || _.A.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != A[t] && (delete A[t], e = true) : (A[t] = {
       skuId: t,
       applicationId: n
     }, e = true)
@@ -50,10 +50,10 @@ function O() {
 class E extends(r = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    this.waitFor(m.A, _.A, f.Ay, h.A, g.default), x = null != (e = o.w.get(A)) ? e : x
+    this.waitFor(m.A, _.A, f.Ay, h.A, g.default), O = null != (e = o.w.get(y)) ? e : O
   }
   getDetectedOffPlatformPremiumPerks() {
-    return a().values(y)
+    return a().values(A)
   }
 }(i = "displayName") in E ? Object.defineProperty(E, i, {
   value: "DetectedOffPlatformPremiumPerksStore",
@@ -63,18 +63,18 @@ class E extends(r = Chunk311907.Ay.Store) {
 }) : E[i] = "DetectedOffPlatformPremiumPerksStore";
 let j = new E(Chunk73153.h, {
   LOGOUT: function() {
-    y = {}, v = {}
+    A = {}, v = {}
   },
-  SKU_FETCH_SUCCESS: O,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: O,
-  ENTITLEMENT_CREATE: O,
-  APPLICATION_FETCH_SUCCESS: O,
+  SKU_FETCH_SUCCESS: x,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: x,
+  ENTITLEMENT_CREATE: x,
+  APPLICATION_FETCH_SUCCESS: x,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
     } = e;
-    if (delete y[t], x.includes(t)) returnfalse;
-    x.push(t), o.w.set(A, x)
+    if (delete A[t], O.includes(t)) returnfalse;
+    O.push(t), o.w.set(y, O)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = false;
@@ -88,10 +88,10 @@ let j = new E(Chunk73153.h, {
             skuId: n,
             applicationId: r
           }
-          of b.m_i) r !== t || x.includes(n) || null == v[n] && (_.A.applicationIdsFetched.has(r) || _.A.applicationIdsFetching.has(r) || null != _.A.getForSku(n) || u.LM(r), v[n] = {
+          of b.m_i) r !== t || O.includes(n) || null == v[n] && (_.A.applicationIdsFetched.has(r) || _.A.applicationIdsFetching.has(r) || null != _.A.getForSku(n) || u.LM(r), v[n] = {
           skuId: n,
           applicationId: r
         }, e = true);
-    return e && O(), e
+    return e && x(), e
   }
 })

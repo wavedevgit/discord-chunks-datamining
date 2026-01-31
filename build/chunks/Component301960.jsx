@@ -101,11 +101,11 @@ function U(e, t, n, i, l, s) {
     isInteractionUserIgnored: _,
     showAvatarPopout: h,
     showTargetAvatarPopout: b,
-    onClickAvatar: A,
-    onUserContextMenu: y,
+    onClickAvatar: y,
+    onUserContextMenu: A,
     onClickTargetAvatar: v,
-    onTargetUserContextMenu: x,
-    onPopoutRequestClose: O
+    onTargetUserContextMenu: O,
+    onPopoutRequestClose: x
   } = e;
   if (m && 1 === n) return null;
   if (m && null == d.activityInstance || g || _) return (0, r.jsx)("div", {
@@ -145,8 +145,8 @@ function U(e, t, n, i, l, s) {
       user: t,
       guildId: f.guild_id,
       guildAvatar: E,
-      onClick: 1 === n ? v : A,
-      onContextMenu: 1 === n ? x : y,
+      onClick: 1 === n ? v : y,
+      onContextMenu: 1 === n ? O : A,
       ref: s
     }),
     I = 1 === n ? b : h;
@@ -155,7 +155,7 @@ function U(e, t, n, i, l, s) {
     renderPopout: l,
     shouldShow: I,
     position: "right",
-    onRequestClose: O,
+    onRequestClose: x,
     children: C
   }) : C()
 }
@@ -205,7 +205,7 @@ function F(e) {
     T = (0, d.bG)([E.default], () => E.default.getCurrentUser()),
     k = i.useRef(null),
     F = i.useRef(null),
-    H = i.useMemo(() => (e, t, n) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != T, "ExecutedCommand: currentUser cannot be undefined"), o()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(x.A, M(L({}, e), {
+    H = i.useMemo(() => (e, t, n) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != T, "ExecutedCommand: currentUser cannot be undefined"), o()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.A, M(L({}, e), {
       user: t,
       currentUser: T,
       guildId: s.guild_id,
@@ -218,8 +218,8 @@ function F(e) {
       messageId: l.id,
       interactionData: l.interactionData
     }))), [s, l.id, l.interactionData]),
-    z = (0, y.Am)(l),
-    W = (null == z ? true : z.type) === m.G4.APPLICATION_COMMAND && null != z.target_user ? new O.A(z.target_user) : null,
+    z = (0, A.Am)(l),
+    W = (null == z ? true : z.type) === m.G4.APPLICATION_COMMAND && null != z.target_user ? new x.A(z.target_user) : null,
     K = (null == z ? true : z.type) === m.G4.APPLICATION_COMMAND && null != l.messageReference && null != e.renderTargetMessage,
     Y = (0, S.d8)(null == (t = l.interaction) ? true : t.user, s),
     q = (0, S.d8)(W, s),
@@ -336,7 +336,7 @@ function F(e) {
   }));
   else {
     let e = () => {
-      (0, A.A)({
+      (0, y.A)({
         context: null != s ? {
           type: "channel",
           channel: s

@@ -43,7 +43,7 @@ function p(e) {
     popoutProps: _,
     hideTimestamp: h = false,
     withFooter: b = false
-  } = e, A = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -59,14 +59,14 @@ function p(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]), y = (0, a.Ay)(i);
+  }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]), A = (0, a.Ay)(i);
   return (0, r.jsx)("div", {
     className: l()({
       [u.Ym]: b
     }, u.gD, {
       [u.oE]: g
     }, f),
-    children: (0, r.jsx)(s.A, (t = d({}, A), n = n = {
+    children: (0, r.jsx)(s.A, (t = d({}, y), n = n = {
       className: l()(u.zC, {
         [u.oE]: g
       }),
@@ -81,7 +81,7 @@ function p(e) {
       childrenHeader: (0, r.jsx)(c.Ay, d({
         message: i,
         channel: p,
-        author: y,
+        author: A,
         guildId: null == p ? true : p.guild_id,
         compact: g,
         hideTimestamp: h,
@@ -90,7 +90,7 @@ function p(e) {
         })
       }, null != _ ? _ : {})),
       compact: g,
-      author: y
+      author: A
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

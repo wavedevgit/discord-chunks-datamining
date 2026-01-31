@@ -49,14 +49,14 @@ let B = Chunk64700.memo(e => {
     return e.start(c ? 15 * P.A.Millis.SECOND : P.A.Millis.SECOND, () => {
       r((new Date().getTime() - t) / P.A.Millis.SECOND)
     }), () => e.stop()
-  }, [c, t]), (0, O.f)(n)
+  }, [c, t]), (0, x.f)(n)
 });
 B.displayName = "ActivityRuntimeCounter";
 let F = Chunk64700.memo(function(e) {
   var t, n, l;
   let o, {
       application: d,
-      channelId: O,
+      channelId: x,
       guildId: P,
       message: R
     } = e,
@@ -64,8 +64,8 @@ let F = Chunk64700.memo(function(e) {
       analyticsLocations: F
     } = (0, h.Ay)(_.A.ACTIVITY_INSTANCE_EMBED),
     H = (0, u.p)(),
-    V = (0, s.bG)([C.A], () => C.A.getChannel(O), [O]),
-    z = (null == V || null == (n = V.isThread) ? true : n.call(V)) ? null == V ? true : V.parent_id : O,
+    V = (0, s.bG)([C.A], () => C.A.getChannel(x), [x]),
+    z = (null == V || null == (n = V.isThread) ? true : n.call(V)) ? null == V ? true : V.parent_id : x,
     W = (0, s.bG)([j.default], () => j.default.getId()),
     {
       embeddedActivity: K,
@@ -93,7 +93,7 @@ let F = Chunk64700.memo(function(e) {
     }, [d]),
     ee = (0, g.vG)({
       userId: W,
-      channelId: O,
+      channelId: x,
       application: $
     }),
     et = null == K,
@@ -108,28 +108,28 @@ let F = Chunk64700.memo(function(e) {
     el = async () => {
       T.default.track(L.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
-        channel_id: O,
+        channel_id: x,
         channel_type: null == V ? true : V.type,
         is_activity_start: et,
         cta: "Play"
       }), et ? await (0, f.A)({
         targetApplicationId: d.id,
-        channelId: O,
+        channelId: x,
         locationObject: H.location,
         analyticsLocations: F,
         componentId: er,
         commandOrigin: b.iw.ACTIVITY_INSTANCE_EMBED
       }) : await (0, m.A)({
         applicationId: K.applicationId,
-        activityChannelId: O,
+        activityChannelId: x,
         locationObject: H.location,
         analyticsLocations: F,
         componentId: er
       })
-    }, ea = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, x.F)($, () => {
+    }, ea = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, O.F)($, () => {
       T.default.track(L.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
-        channel_id: O,
+        channel_id: x,
         channel_type: null == V ? true : V.type,
         cta: "View"
       })
@@ -141,7 +141,7 @@ let F = Chunk64700.memo(function(e) {
   en.disabled && (o = en.tooltip);
   let ec = Q.length,
     eu = null != (t = null == X || null == (l = X.timestamps) ? true : l.start) ? t : null == X ? true : X.created_at,
-    ed = (0, y.y)({
+    ed = (0, A.y)({
       activity: X,
       activityUsersCount: ec
     }),
@@ -153,7 +153,7 @@ let F = Chunk64700.memo(function(e) {
       disabledReason: o,
       submitting: ei
     }];
-  return (0, r.jsx)(A.h, {
+  return (0, r.jsx)(y.h, {
     header: U.intl.string(U.t.pkq6Vq),
     title: d.name,
     iconSrc: eo,
@@ -195,7 +195,7 @@ let F = Chunk64700.memo(function(e) {
               children: Z
             })]
           })]
-        }), ec > 0 && (0, r.jsx)(y.$, {
+        }), ec > 0 && (0, r.jsx)(A.$, {
           activityUsers: Q,
           guildId: P,
           activityText: ed.text
@@ -208,7 +208,7 @@ let F = Chunk64700.memo(function(e) {
       id: d.id,
       linkType: k.J.ACTIVITY_INSTANCE,
       guildId: P,
-      channelId: O,
+      channelId: x,
       messageId: R.id,
       isDeadEnd: et
     }

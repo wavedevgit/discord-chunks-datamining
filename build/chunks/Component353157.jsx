@@ -1,5 +1,5 @@
-/** Chunk was on 13696 **/
-/** chunk id: 353157, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 17534 **/
+/** chunk id: 353157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -16,55 +16,55 @@ var Chunk575593 = require("./575593.js"),
 function d(e) {
   let {
     item: t,
-    profileOwner: r,
+    profileOwner: n,
     isHighlighted: d,
-    cardSize: f = u.Y.MEDIUM
-  } = e, m = t.collectiblesItem;
-  switch (m.type) {
-    case i.R.PROFILE_EFFECT:
-      return (0, n.jsx)("div", {
-        className: c.xC,
-        children: (0, n.jsx)(a.A, {
-          skuId: m.skuId,
+    cardSize: h = c.Y.MEDIUM
+  } = e, p = t.collectiblesItem;
+  switch (p.type) {
+    case l.R.PROFILE_EFFECT:
+      return (0, r.jsx)("div", {
+        className: u.xC,
+        children: (0, r.jsx)(o.A, {
+          skuId: p.skuId,
           isHighlighted: d,
           removeSetHeight: true
         })
       });
-    case i.R.AVATAR_DECORATION:
-      return (0, n.jsx)("div", {
-        className: c._P,
-        children: (0, n.jsx)(s.i, {
-          item: m,
-          user: r,
+    case l.R.AVATAR_DECORATION:
+      return (0, r.jsx)("div", {
+        className: u._P,
+        children: (0, r.jsx)(s.i, {
+          item: p,
+          user: n,
           isHighlighted: d,
-          avatarSize: l._3J.SIZE_80
+          avatarSize: i._3J.SIZE_80
         })
       });
-    case i.R.NAMEPLATE:
-      return (0, n.jsxs)("div", {
-        className: c.M4,
-        children: [(0, n.jsx)("div", {
-          className: c.Qt,
-          children: (0, n.jsx)(o.A, {
-            user: r,
-            nameplate: m,
+    case l.R.NAMEPLATE:
+      return (0, r.jsxs)("div", {
+        className: u.M4,
+        children: [(0, r.jsx)("div", {
+          className: u.Qt,
+          children: (0, r.jsx)(a.A, {
+            user: n,
+            nameplate: p,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             nameplatePreviewSize: "default",
-            width: f === u.Y.SMALL ? 136 : 200
+            width: h === c.Y.SMALL ? 136 : 200
           })
-        }), (0, n.jsx)("div", {
-          className: c.BM,
+        }), (0, r.jsx)("div", {
+          className: u.BM,
           "aria-hidden": true,
-          children: (0, n.jsx)(o.A, {
-            user: r,
-            nameplate: m,
+          children: (0, r.jsx)(a.A, {
+            user: n,
+            nameplate: p,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             nameplatePreviewSize: "default",
-            width: f === u.Y.SMALL ? 136 : 200
+            width: h === c.Y.SMALL ? 136 : 200
           })
         })]
       });

@@ -36,7 +36,7 @@ let N = (0, Chunk311907.UT)([Chunk67480.A, Chunk328968.A, Chunk97352.A], {
     get: e => {
       if (null == e) return;
       let t = b.A.get(e),
-        n = A.A.getForSKU(e);
+        n = y.A.getForSKU(e);
       if (null == t || null == n) return;
       let r = _.A.getForSKU(e);
       return {
@@ -69,23 +69,23 @@ function w(e) {
   } = (0, d.YY)(t), [m, f, _, b] = (0, s.yK)([p.A, h.A, g.A], () => {
     var e;
     let n = p.A.getApplication(t),
-      r = null != n ? (0, x.A)(n, 45) : true,
+      r = null != n ? (0, O.A)(n, 45) : true,
       i = null == (e = g.A.getBasicChannel(l.channel_id)) ? true : e.guild_id;
     return [h.A.getStoreLayout(t), h.A.getFetchStatus(t), i, r]
   }, [t, l.channel_id]);
   i.useEffect(() => {
     f === h.N.NONE && (0, c.V)(t)
   }, [t, f]);
-  let A = m.subscriptions.length,
+  let y = m.subscriptions.length,
     v = m.otps.length,
-    j = i.useMemo(() => A > 0 && v > 0 ? S.intl.formatToPlainString(S.t["jA648+"], {
-      subCount: A,
+    j = i.useMemo(() => y > 0 && v > 0 ? S.intl.formatToPlainString(S.t["jA648+"], {
+      subCount: y,
       itemCount: v
-    }) : A > 0 ? S.intl.formatToPlainString(S.t.GSfibA, {
-      count: A
+    }) : y > 0 ? S.intl.formatToPlainString(S.t.GSfibA, {
+      count: y
     }) : v > 0 ? S.intl.formatToPlainString(S.t.j7Go5A, {
       count: v
-    }) : S.intl.string(S.t.rMA98g), [v, A]);
+    }) : S.intl.string(S.t.rMA98g), [v, y]);
   if (!a || null == u) return null;
   let N = () => {
     (0, o.mMO)(async () => {
@@ -108,11 +108,11 @@ function w(e) {
     description: j,
     link: "".concat(location.protocol, "//").concat(location.host).concat(C.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, I.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, O.K)(t, O.C.STORE_EMBED)
+      (0, x.K)(t, x.C.STORE_EMBED)
     },
     iconSrc: b,
     onIconClick: () => {
-      N(), y.default.track(C.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      N(), A.default.track(C.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
@@ -121,7 +121,7 @@ function w(e) {
       className: T.mZ,
       children: (0, r.jsx)(o.Button, {
         onClick: () => {
-          N(), y.default.track(C.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+          N(), A.default.track(C.HAw.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
             application_id: t,
             area: "open_store_button"
           })
@@ -157,18 +157,18 @@ function R(e) {
       subscriptionPlan: a
     }
   }(c, a), {
-    data: A
+    data: y
   } = (0, d.YY)(null == _ ? true : _.applicationId), v = (0, s.bG)([g.A], () => {
     var e;
     return null == (e = g.A.getBasicChannel(u.channel_id)) ? true : e.guild_id
-  }, [u]), w = i.useMemo(() => null != A ? (0, x.A)(A, 45) : true, [A]), R = (0, E.G)(null != (t = null == A ? true : A.id) ? t : ""), {
+  }, [u]), w = i.useMemo(() => null != y ? (0, O.A)(y, 45) : true, [y]), R = (0, E.G)(null != (t = null == y ? true : y.id) ? t : ""), {
     openModal: L,
     subscriptionPurchaseButtonState: M
   } = (0, f.A)({
     skuId: c,
     initialSubscribeForGuild: v
   });
-  if (!R || null == A || null == _) return null;
+  if (!R || null == y || null == _) return null;
   let k = _.type === C.Puh.SUBSCRIPTION,
     U = !!k && (0, m.bg)(_.flags),
     G = () => {
@@ -179,7 +179,7 @@ function R(e) {
         return t => (0, r.jsx)(e, {
           transitionState: t.transitionState,
           onClose: t.onClose,
-          appId: A.id,
+          appId: y.id,
           guildId: v
         })
       })
@@ -194,7 +194,7 @@ function R(e) {
           };
           return null != e && null != p ? (0, r.jsx)(e, {
             transitionState: n.transitionState,
-            appId: A.id,
+            appId: y.id,
             skuId: _.id,
             guildId: v,
             subscriptionType: U ? "user" : "guild",
@@ -202,7 +202,7 @@ function R(e) {
             onHeaderTitleClick: i
           }) : null != t ? (0, r.jsx)(t, {
             transitionState: n.transitionState,
-            appId: A.id,
+            appId: y.id,
             skuId: c,
             onClose: n.onClose,
             onHeaderTitleClick: i
@@ -225,24 +225,24 @@ function R(e) {
     }) : null == b || null == (l = b.description) ? true : l.trim();
   "" === F && (F = true);
   let H = () => {
-    y.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
-      application_id: A.id,
+    A.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      application_id: y.id,
       sku_id: _.id,
       area: "purchase_button"
     })
   };
   return (0, r.jsx)(D, {
-    appName: A.name,
+    appName: y.name,
     title: _.name,
     description: F,
-    link: "".concat(location.protocol, "//").concat(location.host).concat(C.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id, I.GlobalDiscoveryAppsSections.STORE)),
+    link: "".concat(location.protocol, "//").concat(location.host).concat(C.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(y.id, I.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, O.K)(A.id, O.C.SKU_EMBED, c)
+      (0, x.K)(y.id, x.C.SKU_EMBED, c)
     },
     iconSrc: w,
     onIconClick: () => {
-      G(), y.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
-        application_id: A.id,
+      G(), A.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+        application_id: y.id,
         sku_id: _.id,
         area: "app_icon"
       })
@@ -252,8 +252,8 @@ function R(e) {
       children: [(0, r.jsx)(o.Button, {
         variant: "secondary",
         onClick: () => {
-          B(), y.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
-            application_id: A.id,
+          B(), A.default.track(C.HAw.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+            application_id: y.id,
             sku_id: _.id,
             area: "view_details"
           })
@@ -261,7 +261,7 @@ function R(e) {
         text: S.intl.string(S.t.DXYfjO)
       }), k ? null != h ? (0, r.jsx)(j.rc, {
         onClick: L,
-        appId: A.id,
+        appId: y.id,
         subscriptionType: U ? "user" : "guild",
         skuId: _.id,
         icon: o.U1X,
@@ -273,7 +273,7 @@ function R(e) {
         text: S.intl.string(S.t.uuzaAK),
         onClick: B
       }) : (0, r.jsx)(j.$P, {
-        appId: A.id,
+        appId: y.id,
         sku: _,
         icon: o.U1X,
         onHasClicked: H

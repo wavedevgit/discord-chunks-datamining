@@ -30,7 +30,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function O(e, t) {
 }
 class E extends(r = Chunk64700.PureComponent) {
   get analyticsLocation() {
-    return O(x({}, this.props.analyticsContext.location), {
+    return x(O({}, this.props.analyticsContext.location), {
       object: b.ZSU.BUTTON_CTA
     })
   }
@@ -75,7 +75,7 @@ class E extends(r = Chunk64700.PureComponent) {
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: y.Yr,
+      className: A.Yr,
       children: [(0, i.jsx)(a.$nd, {
         text: e,
         fullWidth: n,
@@ -86,7 +86,7 @@ class E extends(r = Chunk64700.PureComponent) {
         text: t,
         position: s,
         children: (0, i.jsx)("div", {
-          className: y.p5
+          className: A.p5
         })
       })]
     })
@@ -101,22 +101,22 @@ class E extends(r = Chunk64700.PureComponent) {
       isRunning: s,
       hideNotLaunchable: o
     } = this.props;
-    return r ? s ? this.renderDisabledButton(A.intl.string(A.t["3elwAB"])) : (0, i.jsxs)(a.e2v, {
+    return r ? s ? this.renderDisabledButton(y.intl.string(y.t["3elwAB"])) : (0, i.jsxs)(a.e2v, {
       size: t,
       wrap: false,
       fullWidth: e,
       children: [(0, i.jsx)(a.$nd, {
-        text: A.intl.string(A.t["359Pbd"]),
+        text: y.intl.string(y.t["359Pbd"]),
         variant: n,
         loading: l,
         onClick: this.handleClick
       }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(a.K0, {
         icon: c.abt,
-        "aria-label": A.intl.string(A.t.KTPVLL),
+        "aria-label": y.intl.string(y.t.KTPVLL),
         variant: "secondary",
         onClick: this.handleDropdownClick
       }) : null]
-    }) : o ? null : this.renderDisabledButton(A.intl.string(A.t["359Pbd"]), _.isPlatformEmbedded ? A.intl.string(A.t.NASLa3) : A.intl.string(A.t.o1bhkD))
+    }) : o ? null : this.renderDisabledButton(y.intl.string(y.t["359Pbd"]), _.isPlatformEmbedded ? y.intl.string(y.t.NASLa3) : y.intl.string(y.t.o1bhkD))
   }
   constructor(...e) {
     super(...e), v(this, "handleDropdownClick", e => {
@@ -131,7 +131,7 @@ class E extends(r = Chunk64700.PureComponent) {
         let {
           default: e
         } = await n.e("33055").then(n.bind(n, 661991));
-        return n => (0, i.jsx)(e, O(x({}, n), {
+        return n => (0, i.jsx)(e, x(O({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -161,7 +161,7 @@ function j(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, d.p)(), [l, a] = (0, s.yK)([f.A, m.A, g.A], () => [f.A.isConnected(t) || m.A.isLaunchable(t) || null != n && g.A.isLaunchable(n.id, n.branchId), m.A.launchingGames.has(t)], [t, n]), o = (0, s.bG)([p.Ay], () => new Set(p.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.bG)([g.A], () => null != n ? g.A.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(E, O(x({}, e), {
+  return (0, i.jsx)(E, x(O({}, e), {
     analyticsContext: r,
     isLaunchable: l,
     isLaunching: a,

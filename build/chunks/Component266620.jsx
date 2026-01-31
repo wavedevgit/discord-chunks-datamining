@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 266620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Cr: () => O,
+  Cr: () => x,
   I1: () => E,
   Nj: () => j,
   R6: () => I,
@@ -47,7 +47,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,10 +60,10 @@ function x(e, t) {
   }), e
 }
 
-function O(e) {
+function x(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, h.LL)(x(v({}, e), {
+  return (0, h.LL)(O(v({}, e), {
     alt: n.description,
     src: (0, f.E)({
       proxyURL: n.proxy_url,
@@ -95,22 +95,22 @@ function E(e) {
     a = i.useCallback(() => {
       var e;
       return (0, l.Lt)(null != (e = n.flags) ? e : 0, b.sbO.IS_CLIP) ? (0, r.jsx)(o.m, {
-        text: A.intl.string(A.t["/fgfWh"]),
+        text: y.intl.string(y.t["/fgfWh"]),
         children: (0, r.jsxs)("div", {
-          className: y.M,
+          className: A.M,
           children: [(0, r.jsx)(c.xgA, {
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(s.E, {
             variant: "text-xs/semibold",
             color: "always-white",
-            children: A.intl.string(A.t.oA4afG)
+            children: y.intl.string(y.t.oA4afG)
           })]
         })
       }) : null
     }, [n]),
     u = g.A.toURLSafe(n.proxy_url);
-  return null == u ? null : (u.searchParams.append("format", "webp"), (0, h.$o)(x(v({}, e), {
+  return null == u ? null : (u.searchParams.append("format", "webp"), (0, h.$o)(O(v({}, e), {
     alt: n.description,
     poster: u.toString(),
     fileSize: n.size,
@@ -134,7 +134,7 @@ function E(e) {
 
 function j(e) {
   let t = e.item.originalItem;
-  return (0, h.gL)(x(v({}, e), {
+  return (0, h.gL)(O(v({}, e), {
     fileSize: t.size,
     fileName: (0, _.A)(t),
     src: t.url
@@ -155,7 +155,7 @@ function C(e) {
     var n;
     (0, p._O)(t.id, null != (n = null == e ? true : e.message) ? n : null)
   }, [t]);
-  return (0, h.P$)(x(v({}, e), {
+  return (0, h.P$)(O(v({}, e), {
     fileSize: r.size,
     fileName: (0, _.A)(r),
     src: r.url,
@@ -170,7 +170,7 @@ function C(e) {
 
 function I(e) {
   let t = e.item.originalItem;
-  return (0, h._d)(x(v({}, e), {
+  return (0, h._d)(O(v({}, e), {
     url: t.url,
     fileName: (0, _.A)(t),
     fileSize: t.size,
@@ -180,7 +180,7 @@ function I(e) {
 
 function S(e) {
   let t = e.item.originalItem;
-  return (0, h.Dk)(x(v({}, e), {
+  return (0, h.Dk)(O(v({}, e), {
     url: t.url,
     fileName: (0, _.A)(t),
     fileSize: t.size

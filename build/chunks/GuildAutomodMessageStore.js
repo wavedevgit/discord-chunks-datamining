@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 93474, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => x
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -26,11 +26,11 @@ let g = {},
   _ = 0,
   h = {},
   b = {},
-  A = e => {
+  y = e => {
     null != g[e] && delete g[e], _++
   };
 
-function y(e) {
+function A(e) {
   let t, n, {
     messageData: r,
     errorResponseBody: i
@@ -62,7 +62,7 @@ function v(e) {
     }, l);
   return null != a && b[i] !== a && (b[i] = a, true)
 }
-class x extends(r = Chunk311907.Ay.PersistedStore) {
+class O extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     this.waitFor(o.A, c.A), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
   }
@@ -89,8 +89,8 @@ class x extends(r = Chunk311907.Ay.PersistedStore) {
     return null != (t = b[e]) ? t : null
   }
 }
-f(x, "displayName", "GuildAutomodMessageStore"), f(x, "persistKey", "GuildAutomodMessages");
-let O = new x(Chunk73153.h, {
+f(O, "displayName", "GuildAutomodMessageStore"), f(O, "persistKey", "GuildAutomodMessages");
+let x = new O(Chunk73153.h, {
   CONNECTION_OPEN: function(e) {
     return 0 !== Object.keys(g).length && (g = {}, _++, true)
   },
@@ -105,13 +105,13 @@ let O = new x(Chunk73153.h, {
     let r = (0, s.rh)(n);
     return !!(0, p.ER)(r) && !!(0, p.de)(r) && (b[t] = r.id, true)
   },
-  MESSAGE_SEND_FAILED_AUTOMOD: y,
-  MESSAGE_EDIT_FAILED_AUTOMOD: y,
+  MESSAGE_SEND_FAILED_AUTOMOD: A,
+  MESSAGE_EDIT_FAILED_AUTOMOD: A,
   REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
     let {
       messageId: t
     } = e;
-    return A(t), true
+    return y(t), true
   },
   MESSAGE_END_EDIT: function(e) {
     let {
@@ -120,7 +120,7 @@ let O = new x(Chunk73153.h, {
     if ((null == t ? true : t.body) == null || t.body.code === m.t02.AUTOMOD_MESSAGE_BLOCKED) returnfalse;
     let n = t.body.id;
     if (null == n) returnfalse;
-    A(n)
+    y(n)
   },
   AUTO_MODERATION_MENTION_RAID_DETECTION: function(e) {
     let {

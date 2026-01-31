@@ -27,8 +27,8 @@ function v(e) {
       invite: n,
       message: l,
       currentUserId: v,
-      onTransitionToInviteChannel: x,
-      onAcceptInstantInvite: O
+      onTransitionToInviteChannel: O,
+      onAcceptInstantInvite: x
     } = e,
     E = v === l.author.id,
     j = n.state === b.elq.ACCEPTING,
@@ -38,13 +38,13 @@ function v(e) {
     analyticsLocations: I
   } = (0, d.Ay)(u.A.INVITE_EMBED), S = null != C, T = i.useCallback(() => {
     let e = "noop";
-    S ? (x(), e = "transition") : (O(), e = "accept"), (0, c.he)({
+    S ? (O(), e = "transition") : (x(), e = "accept"), (0, c.he)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, I)
-  }, [n, l, I, S, x, O]);
+  }, [n, l, I, S, O, x]);
   if (null == C) {
     if (null == n.channel) return (0, r.jsx)(h.A, {});
     C = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -57,17 +57,17 @@ function v(e) {
     S && null != e && t.push(e)
   }
   let N = C.name;
-  (null == N || "" === N) && (N = t.length > 0 ? t.filter(_.Vq).map(e => e.username).join(", ") : A.intl.string(A.t.LJpTRF));
-  let P = A.intl.string(A.t.XpeFYr),
+  (null == N || "" === N) && (N = t.length > 0 ? t.filter(_.Vq).map(e => e.username).join(", ") : y.intl.string(y.t.LJpTRF));
+  let P = y.intl.string(y.t.XpeFYr),
     w = "active";
-  S && (P = A.intl.string(A.t.cEnaWx), w = "secondary");
-  let R = A.intl.string(A.t["3p3/BK"]);
-  return E && (R = A.intl.string(A.t.qmtuXE)), (0, r.jsxs)(p.A, {
+  S && (P = y.intl.string(y.t.cEnaWx), w = "secondary");
+  let R = y.intl.string(y.t["3p3/BK"]);
+  return E && (R = y.intl.string(y.t.qmtuXE)), (0, r.jsxs)(p.A, {
     children: [(0, r.jsx)(p.A.Header, {
       text: R
     }), (0, r.jsxs)(p.A.Body, {
       children: [(0, r.jsxs)("div", {
-        className: y.iH,
+        className: A.iH,
         children: [(0, r.jsx)(p.A.Icon, {
           channel: C,
           onClick: S ? T : true

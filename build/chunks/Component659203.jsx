@@ -51,7 +51,7 @@ class R extends Chunk64700.Component {
       n = (null == t ? true : t.username) !== true ? t.username : "";
     return T.intl.format(T.t.yisueA, {
       sender: n,
-      helpdeskArticle: A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
+      helpdeskArticle: y.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
     })
   }
   getTitleText() {
@@ -70,11 +70,11 @@ class R extends Chunk64700.Component {
   }
   getBodyText() {
     return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? T.intl.format(T.t.LwCwT9, {
-      helpdeskArticle: A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
+      helpdeskArticle: y.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
     }) : this.offerExpired ? null : T.intl.string(T.t.lQLlOb)
   }
   renderActions() {
-    let e = this.currentUser.id !== this.trialOffer.user_id || (0, y.TW)(this.currentUser) || !this.currentUser.verified || (0, C.P)(this.trialOffer),
+    let e = this.currentUser.id !== this.trialOffer.user_id || (0, A.TW)(this.currentUser) || !this.currentUser.verified || (0, C.P)(this.trialOffer),
       t = this.renderExpirationDate();
     return (0, r.jsxs)("div", {
       className: N.UD,
@@ -112,7 +112,7 @@ class R extends Chunk64700.Component {
     let n = a()(e.expires_at);
     return this.offerExpired ? T.intl.formatToPlainString(T.t.PuSHfU, {
       date: (0, b.i$)(a()(n), "LL")
-    }) : (0, x.GQ)(n.valueOf())
+    }) : (0, O.GQ)(n.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
@@ -131,7 +131,7 @@ class R extends Chunk64700.Component {
               recipient: t
             }),
             bodyText: T.intl.formatToPlainString(T.t.u7hyDx, {
-              helpdeskArticle: A.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
+              helpdeskArticle: y.A.getArticleURL(S.MVz.REFERRAL_PROGRAM)
             })
           };
           else return {
@@ -208,7 +208,7 @@ class R extends Chunk64700.Component {
           })
         })({
           analyticsLocations: [],
-          startingScreen: this.referralsSent.size === O.Z ? E.SelectFriendsModalScreens.REMINDER : E.SelectFriendsModalScreens.SELECT_FRIENDS
+          startingScreen: this.referralsSent.size === x.Z ? E.SelectFriendsModalScreens.REMINDER : E.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
         text: T.intl.string(T.t.Lm2nFc)
       }),
@@ -276,7 +276,7 @@ function D(e) {
     trialOffer: n ? v.A.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && v.A.isResolving(t),
     referralsSent: v.A.getRecipientStatus()
-  }), [n, t]), m = g.default.getCurrentUser(), f = (0, o.bG)([g.default], () => null != l && (0, y.TW)(true !== m && l.user_id === m.id ? m : g.default.getUser(l.user_id))), h = (0, o.bG)([_.A], () => {
+  }), [n, t]), m = g.default.getCurrentUser(), f = (0, o.bG)([g.default], () => null != l && (0, A.TW)(true !== m && l.user_id === m.id ? m : g.default.getUser(l.user_id))), h = (0, o.bG)([_.A], () => {
     var e;
     return f ? null == (e = _.A.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {

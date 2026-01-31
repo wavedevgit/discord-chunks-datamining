@@ -44,8 +44,8 @@ function P(e) {
   } = e, b = (0, s.bG)([j.A], () => j.A.getGuild(l));
   a()(null != b, "");
   let h = (0, s.bG)([x.A], () => x.A.getSortedRoles(l)),
-    [y, E] = r.useState(new Set),
-    T = r.useMemo(() => {
+    [y, T] = r.useState(new Set),
+    C = r.useMemo(() => {
       let e = (0, g.Ap)(l),
         t = h.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(c).filter(e => e.canRead).sort((n, i) => {
@@ -77,11 +77,11 @@ function P(e) {
         }
       })
     }, [l, c, h]),
-    C = r.useCallback((e, t) => {
-      n({}, [(0, w.Eu)(e, t)])
+    w = r.useCallback((e, t) => {
+      n({}, [(0, E.Eu)(e, t)])
     }, [n]),
     S = r.useCallback((e, t, i) => {
-      let r = (0, w.Eu)(e, t);
+      let r = (0, E.Eu)(e, t);
       null != c[r] && n({
         [r]: {
           id: e,
@@ -92,19 +92,19 @@ function P(e) {
     }, [n, c]);
   r.useEffect(() => {
     let e = Object.values(c).filter(e => e.type === m.RA.USER && !e.canRead && !y.has(e.id)).map(e => e.id);
-    0 !== e.length && (u.A.requestMembersById(l, e, false), E(t => new Set([...t, ...e])))
-  }, [l, c, y, E]);
+    0 !== e.length && (u.A.requestMembersById(l, e, false), T(t => new Set([...t, ...e])))
+  }, [l, c, y, T]);
   let P = (0, s.bG)([N.A], () => N.A.getApplicationId()),
     R = (0, s.bG)([_.default], () => null == P ? true : _.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === P
     })),
     L = (0, s.bG)([f.A], () => true !== R && f.A.canShowToggleTooltip(R.id));
-  return T.length > 0 ? T.map(e => (0, i.jsx)(k, {
+  return C.length > 0 ? C.map(e => (0, i.jsx)(k, {
     guild: b,
     commandId: t,
     onChange: t => S(e.id, e.type, t),
-    onRemove: () => C(e.id, e.type),
+    onRemove: () => w(e.id, e.type),
     overwrite: e,
     integration: R,
     canShowMigrationTooltip: L,
@@ -134,13 +134,13 @@ function k(e) {
     v = x.id === s.id || x.id === (0, g.Ap)(s.id),
     _ = null == j || null == (n = j.application) || null == (t = n.bot) ? true : t.username,
     N = !x.canWrite || !A,
-    w = h.default.getId();
-  A ? x.canWrite || (x.type === m.RA.USER ? a = x.id === w ? S.intl.string(S.t["1VF/0x"]) : S.intl.string(S.t.P1GnEd) : x.type === m.RA.ROLE && (a = S.intl.string(S.t.mcAijf))) : a = null != d ? S.intl.string(S.t.tybdas) : S.intl.string(S.t["z2hjk/"]);
+    E = h.default.getId();
+  A ? x.canWrite || (x.type === m.RA.USER ? a = x.id === E ? S.intl.string(S.t["1VF/0x"]) : S.intl.string(S.t.P1GnEd) : x.type === m.RA.ROLE && (a = S.intl.string(S.t.mcAijf))) : a = null != d ? S.intl.string(S.t.tybdas) : S.intl.string(S.t["z2hjk/"]);
   let P = O && null != j && x.id === s.id && true !== _ && !x.permission;
   r.useEffect(() => {
     if (P) {
       var e, t, n;
-      y.default.track(C.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
+      y.default.track(w.HAw.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -179,7 +179,7 @@ function k(e) {
       position: "left",
       children: (0, i.jsx)("div", {
         ref: k,
-        children: (0, i.jsx)(T.A, {
+        children: (0, i.jsx)(C.A, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: P ? e => {
@@ -207,7 +207,7 @@ function k(e) {
     className: I.Wk,
     children: [(0, i.jsx)("div", {
       className: I.MB,
-      children: (0, i.jsx)(E.A, {
+      children: (0, i.jsx)(T.A, {
         guild: s,
         id: x.id,
         type: x.type,

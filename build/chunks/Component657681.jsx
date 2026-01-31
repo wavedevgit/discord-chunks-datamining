@@ -31,13 +31,13 @@ function O(e) {
   } = O, A = null != y.bot ? new g.A(y.bot) : null, v = (0, a.bG)([b.Ay], () => null != A ? b.Ay.getMember(n.id, A.id) : null, [A, n]), _ = (0, a.bG)([f.A], () => f.A.getEveryoneRole(n)), N = (0, a.yK)([f.A], () => {
     var e;
     return f.A.getManyRoles(n.id, null != (e = null == v ? true : v.roles) ? e : [])
-  }), w = null == A ? true : A.id;
+  }), E = null == A ? true : A.id;
   r.useEffect(() => {
-    null != w && o.A.requestMembersById(n.id, w)
-  }, [n.id, w]);
-  let E = r.useMemo(() => l.kg(_.permissions, ...N.map(e => e.permissions)), [N, _]);
+    null != E && o.A.requestMembersById(n.id, E)
+  }, [n.id, E]);
+  let T = r.useMemo(() => l.kg(_.permissions, ...N.map(e => e.permissions)), [N, _]);
   if (null == A) return null;
-  let T = h.Ay.getApplicationIconURL({
+  let C = h.Ay.getApplicationIconURL({
     id: y.id,
     guildMember: v,
     bot: y.bot,
@@ -53,7 +53,7 @@ function O(e) {
         align: p.A.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: T,
+          src: C,
           className: j.P0
         }), (0, i.jsx)(s.Text, {
           color: "text-strong",
@@ -91,7 +91,7 @@ function O(e) {
             disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(A, n, null != (t = null == v ? true : v.roles) ? t : [], E)]
+      }(A, n, null != (t = null == v ? true : v.roles) ? t : [], T)]
     })
   })
 }

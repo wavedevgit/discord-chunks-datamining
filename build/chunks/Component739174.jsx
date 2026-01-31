@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 739174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk393800 = require("./393800.js");
 
-function E(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function E(e) {
   return e
 }
 
-function T(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function T(e, t) {
   }), e
 }
 
-function C(e) {
+function w(e) {
   let {
     guild: t,
     id: l,
@@ -74,7 +74,7 @@ function C(e) {
       let {
         default: e
       } = await n.e("15687").then(n.bind(n, 646938));
-      return t => (0, i.jsx)(e, T(E({}, t), {
+      return t => (0, i.jsx)(e, C(T({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Muw)
       }))
@@ -136,20 +136,20 @@ function S(e) {
   }, [d, n, o]);
   return null == p || null == m ? null : (0, i.jsxs)("div", {
     onContextMenu: h,
-    className: w.Cv,
+    className: E.Cv,
     children: [(0, i.jsx)(p, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a()(w.p, w.Sl)
+      className: a()(E.p, E.Sl)
     }), (0, i.jsx)(u.Text, {
-      className: w.S3,
+      className: E.S3,
       color: "text-strong",
       variant: "text-md/normal",
       children: m
     }), null != f ? (0, i.jsxs)(u.Text, {
-      className: w.Tc,
+      className: E.Tc,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
     }) : null, l ? (0, i.jsx)(k, {
@@ -174,7 +174,7 @@ function I(e) {
       let {
         default: e
       } = await n.e("41072").then(n.bind(n, 165747));
-      return t => (0, i.jsx)(e, T(E({}, t), {
+      return t => (0, i.jsx)(e, C(T({}, t), {
         guild: l,
         role: m
       }))
@@ -182,17 +182,17 @@ function I(e) {
   }, [l, m]);
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: b,
-    className: w.Cv,
-    children: [null != g ? (0, i.jsx)(h.A, E({
-      className: a()(w.__invalid_icon, w.Sl)
+    className: E.Cv,
+    children: [null != g ? (0, i.jsx)(h.A, T({
+      className: a()(E.__invalid_icon, E.Sl)
     }, g)) : (0, i.jsx)(u.iTF, {
       size: "custom",
       width: 23,
       height: 23,
-      className: a()(w.a, w.Sl),
+      className: a()(E.a, E.Sl),
       color: null != (t = m.colorString) ? t : _.TpD
     }), (0, i.jsx)(u.Text, {
-      className: w.S3,
+      className: E.S3,
       color: "text-strong",
       variant: "text-md/normal",
       children: m.name
@@ -215,19 +215,19 @@ function P(e) {
   }, [t.id, n]), d = (0, c.bG)([y.A], () => y.A.hidePersonalInformation);
   return null == s ? null : (0, i.jsxs)("div", {
     onContextMenu: a,
-    className: w.Cv,
+    className: E.Cv,
     children: [(0, i.jsx)(u.euF, {
-      className: w.Sl,
+      className: E.Sl,
       src: s.getAvatarURL(t.id, 24),
       "aria-label": s.username,
       size: u._3J.SIZE_24
     }), (0, i.jsx)(u.Text, {
-      className: w.S3,
+      className: E.S3,
       color: "text-strong",
       variant: "text-md/normal",
       children: null != o ? o : s.username
     }), d ? null : (0, i.jsx)(u.Text, {
-      className: w.Tc,
+      className: E.Tc,
       variant: "text-sm/normal",
       children: v.Ay.getUserTag(s)
     }), r ? (0, i.jsx)(k, {
@@ -243,7 +243,7 @@ function k(e) {
   return (0, i.jsx)(d.m, {
     text: t,
     children: (0, i.jsx)("div", {
-      className: w.hz,
+      className: E.hz,
       children: (0, i.jsx)(u.XAi, {
         size: "xs",
         color: "currentColor"

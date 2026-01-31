@@ -789,8 +789,8 @@ let _ = {
   },
   ConsentCheckBoxModal: async () => {
     let {
-      VoidConfirmModal: e
-    } = await Promise.resolve().then(n.bind(n, 640238)), {
+      ConfirmModal: e
+    } = await Promise.resolve().then(n.bind(n, 158954)), {
       Text: t,
       Heading: l
     } = await Promise.resolve().then(n.bind(n, 397927)), r = await Promise.resolve().then(n.t.bind(n, 64700, 19));
@@ -798,7 +798,7 @@ let _ = {
     function i(n) {
       let [i, o] = r.useState(false), [c, d] = r.useState(false);
       return (0, a.jsx)(e, j(v({}, n), {
-        header: "Consent CheckBox Examples",
+        title: "Consent CheckBox Examples",
         confirmText: "Close",
         cancelText: "",
         onConfirm: () => (console.log("ConsentCheckBoxModal: Modal closed"), n.onClose()),
@@ -1038,7 +1038,7 @@ let _ = {
   FamilyCenterQRCodeModal: async () => {
     let {
       default: e
-    } = await Promise.all([n.e("83393"), n.e("72875")]).then(n.bind(n, 320742));
+    } = await Promise.all([n.e("82832"), n.e("72875")]).then(n.bind(n, 320742));
     return t => (0, a.jsx)(e, v({}, t))
   },
   PremiumGroupFriendsSelectorModal: async () => {

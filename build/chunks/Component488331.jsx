@@ -25,9 +25,9 @@ function p(e) {
     analyticsLocations: g
   } = (0, l.Ay)(i.A.ACTIVITY_BOOKMARK), [_] = (0, o.A)([t]), h = null != _ && (0, a.Ag)(_), {
     data: b,
-    error: A
+    error: y
   } = (0, c.K)(null == _ ? true : _.id, m);
-  return null == _ || false === h ? null : null != m && null == A && null != b ? (0, r.jsx)(l.f5, {
+  return null == _ || false === h ? null : null != m && null == y && null != b ? (0, r.jsx)(l.f5, {
     value: g,
     children: (0, r.jsx)(u.W, {
       application: _,

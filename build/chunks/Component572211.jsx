@@ -1,8 +1,8 @@
 /** Chunk was on 64935 **/
 /** chunk id: 572211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => x,
-  u: () => y
+  h: () => O,
+  u: () => A
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,7 +20,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk768349 = require("./768349.js"),
   Chunk838541 = require("./838541.js"),
   Chunk112247 = require("./112247.js"),
-  y = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+  A = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function v(e) {
   let {
@@ -31,7 +31,7 @@ function v(e) {
   return null != t ? (0, i.jsx)(u.DUT, {
     onClick: t,
     className: s()({
-      [A.or]: null != t
+      [y.or]: null != t
     }, r),
     children: n
   }) : (0, i.jsx)("div", {
@@ -40,11 +40,11 @@ function v(e) {
   })
 }
 
-function x(e) {
-  var t, n, r, a, y;
+function O(e) {
+  var t, n, r, a, A;
   let {
-    title: x,
-    header: O,
+    title: O,
+    header: x,
     footer: E,
     info: j,
     staticBannerSrc: C,
@@ -67,7 +67,7 @@ function x(e) {
     guildId: null == t ? true : t.guildId,
     channelId: null == t ? true : t.channelId,
     messageId: null == t ? true : t.messageId,
-    isDeadEnd: null != (y = null == t ? true : t.isDeadEnd) && y
+    isDeadEnd: null != (A = null == t ? true : t.isDeadEnd) && A
   };
   let {
     primaryColor: L,
@@ -85,7 +85,7 @@ function x(e) {
         messageId: w.messageId
       }), G.current = true
     }
-  }, true), F = null != C, H = null != I && false === U, V = F || H, z = 0 === S ? A.pv : A.$g, W = l.useRef(null), K = l.useCallback(() => {
+  }, true), F = null != C, H = null != I && false === U, V = F || H, z = 0 === S ? y.pv : y.$g, W = l.useRef(null), K = l.useCallback(() => {
     let e = W.current;
     null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), Y = l.useMemo(() => !!H && new URL(I).pathname.endsWith(".gif"), [H, I]), q = l.useMemo(() => {
@@ -113,14 +113,14 @@ function x(e) {
   }, [D, w]);
   return (0, i.jsxs)("div", {
     ref: B,
-    className: A.E6,
+    className: y.E6,
     children: [V && (0, i.jsxs)(v, {
       onClick: J,
-      className: s()(A.cy, z, {
-        [A.wk]: H
+      className: s()(y.cy, z, {
+        [y.wk]: H
       }),
       children: [H && (Y ? (0, i.jsx)("div", {
-        className: A.O9,
+        className: y.O9,
         style: {
           backgroundImage: "url(".concat(I, ")")
         }
@@ -130,9 +130,9 @@ function x(e) {
         mediaLayoutType: b.dG.MOSAIC,
         loop: true,
         muted: true,
-        className: A.O9
+        className: y.O9
       })), F && (0, i.jsx)("div", {
-        className: A.LR,
+        className: y.LR,
         style: {
           backgroundImage: "url(".concat(C, ")")
         },
@@ -143,37 +143,37 @@ function x(e) {
         background: k
       },
       children: [(0, i.jsxs)("div", {
-        className: A.hQ,
-        children: [null != O && (0, i.jsx)(u.EYj, {
+        className: y.hQ,
+        children: [null != x && (0, i.jsx)(u.EYj, {
           variant: "text-sm/semibold",
           color: "none",
-          className: A.wx,
-          children: O
+          className: y.wx,
+          children: x
         }), (0, i.jsxs)(v, {
           onClick: q,
-          className: s()(A.FG, {
-            [A.ry]: null != q
+          className: s()(y.FG, {
+            [y.ry]: null != q
           }),
           children: [null != T && (0, i.jsx)("div", {
-            className: A._8,
+            className: y._8,
             style: {
               backgroundImage: "url(".concat(T, ")")
             }
           }), (0, i.jsxs)("div", {
-            className: A.Qs,
+            className: y.Qs,
             children: [(0, i.jsx)(u.EYj, {
               variant: "text-md/semibold",
               color: "none",
               lineClamp: 1,
-              className: A.eu,
-              children: x
+              className: y.eu,
+              children: O
             }), (0, i.jsx)("div", {
-              className: A.rj,
+              className: y.rj,
               children: j
             })]
           })]
         }), N.length > 0 && (0, i.jsx)("div", {
-          className: s()(A.AC, P ? A.ad : null),
+          className: s()(y.AC, P ? y.ad : null),
           children: N.map((e, t) => {
             let {
               label: n,
@@ -209,7 +209,7 @@ function x(e) {
                 }
               })
             }, n) : (0, i.jsxs)("div", {
-              className: A.uc,
+              className: y.uc,
               children: [(0, i.jsx)(u.$nd, {
                 variant: g ? "overlay-primary" : "overlay-secondary",
                 disabled: a || null != s,
@@ -231,7 +231,7 @@ function x(e) {
               }), null != s && (0, i.jsx)(u.EYj, {
                 variant: "text-xs/medium",
                 color: "none",
-                className: A.H$,
+                className: y.H$,
                 children: s
               })]
             }, n)

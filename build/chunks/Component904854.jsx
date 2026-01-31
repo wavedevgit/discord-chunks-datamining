@@ -23,10 +23,10 @@ function h(e) {
     message: t,
     channel: n,
     compact: h
-  } = e, b = (0, f.K)(t), A = (0, a.yK)([u.default], () => {
+  } = e, b = (0, f.K)(t), y = (0, a.yK)([u.default], () => {
     var e;
     return (null == (e = t.call) ? true : e.participants) != null ? t.call.participants.map(e => u.default.getUser(e)).filter(e => null != e).filter(e => e.id !== t.author.id) : []
-  }, [t.author.id, t.call]), y = (0, a.bG)([o.A], () => o.A.getUserAffinitiesMap(), []), v = i.useMemo(() => (0, c.L)(A, y, "VoiceSession - participants"), [A, y]), x = function(e, t, n, r, i) {
+  }, [t.author.id, t.call]), A = (0, a.bG)([o.A], () => o.A.getUserAffinitiesMap(), []), v = i.useMemo(() => (0, c.L)(y, A, "VoiceSession - participants"), [y, A]), O = function(e, t, n, r, i) {
     let l = (0, p.P)({
         user: n,
         channelId: t.id,
@@ -96,6 +96,6 @@ function h(e) {
     iconContainerClassName: _.z,
     timestamp: t.timestamp,
     compact: h,
-    children: x
+    children: O
   })
 }

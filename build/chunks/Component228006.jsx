@@ -69,16 +69,16 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   } = j.A.useExperiment({
     guildId: null == q ? true : q.guild_id,
     location: "GroupDMUserContextMenu"
-  }), $ = Q ? null == q ? true : q.id : s.id, ee = (0, V.A)(n, $), et = (0, S.A)(n.id, a), en = (0, w.A)({
+  }), $ = Q ? null == q ? true : q.id : s.id, ee = (0, k.A)(n, $), et = (0, S.A)(n.id, a), en = (0, w.A)({
     user: n,
     context: a
-  }), ei = (0, D.A)({
+  }), ei = (0, C.A)({
     user: n,
     channelId: s.id,
     context: a
   }), er = (0, y.A)({
     user: n
-  }), el = (0, B.A)(n.id), eo = (0, N.A)(n.id, s.id), es = (0, k.A)(n.id), ea = (0, f.u)({
+  }), el = (0, B.A)(n.id), eo = (0, N.A)(n.id, s.id), es = (0, V.A)(n.id), ea = (0, f.u)({
     userId: n.id,
     channelId: s.id,
     guildId: s.getGuildId()
@@ -86,9 +86,9 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     user: n
   }), eu = (0, c.A)(null, n), eA = (0, O.A)({
     user: n
-  }), eb = (0, C.A)({
+  }), eg = (0, D.A)({
     user: n
-  }), eg = (0, T.A)({
+  }), eb = (0, T.A)({
     user: n
   }), ep = (0, P.A)({
     user: n,
@@ -99,13 +99,13 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), em = (0, m.A)({
     id: n.id,
     label: F.intl.string(F.t["/AXYnE"])
-  }), eh = (0, R.A)(n.id), ej = (0, g.A)(n.id), ev = (0, b.A)(s.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(s.id, n.id), eC = (0, I.A)({
+  }), eh = (0, R.A)(n.id), ej = (0, b.A)(n.id), ev = (0, g.A)(s.id), ex = (0, h.A)(n), eO = (0, p.A)(n.id), ey = (0, A.A)(s.id, n.id), eD = (0, I.A)({
     commandType: d.kc.USER,
     commandTargetId: n.id,
     channel: s,
     guildId: true,
     onHeightUpdate: W
-  }), eD = (0, E.A)(n, s), eI = n.isNonUserBot(), eP = s.isManaged(), ew = null == (t = s.recipients) ? true : t.includes(n.id);
+  }), eC = (0, E.A)(n, s), eI = n.isNonUserBot(), eP = s.isManaged(), ew = null == (t = s.recipients) ? true : t.includes(n.id);
   return (0, i.jsxs)(l.W1t, {
     "data-menu-migrated": true,
     navId: "user-context",
@@ -121,13 +121,13 @@ let J = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       }), X && (0, i.jsx)(l.rXV, {
         children: el
       }), ew && (0, i.jsxs)(l.rXV, {
-        children: [!eP && eo, eD]
+        children: [!eP && eo, eC]
       }), (0, i.jsx)(l.rXV, {
         children: z && eu
       }), J && (0, i.jsxs)(l.rXV, {
         children: [ey, ev, ej]
       }), (0, i.jsxs)(l.rXV, {
-        children: [X && es, X && ea, X && ed, X && eO, eC, z && ec, eA, eb, eg, z && ef, z && ep]
+        children: [X && es, X && ea, X && ed, X && eO, eD, z && ec, eA, eg, eb, z && ef, z && ep]
       })]
     }), (0, i.jsx)(l.rXV, {
       children: em

@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 740916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => x
 }), require("./65821.js");
 var r, i, l, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -59,7 +59,7 @@ let g = e => {
       children: (0, d.A)(t, false)
     })
   },
-  A = e => {
+  y = e => {
     let {
       sku: t,
       className: n
@@ -69,7 +69,7 @@ let g = e => {
       children: (0, d.A)(t)
     })
   },
-  y = e => {
+  A = e => {
     let {
       sku: t,
       className: n
@@ -80,7 +80,7 @@ let g = e => {
         sku: t
       }), (0, a.jsx)(b, {
         sku: t
-      }), (0, a.jsx)(A, {
+      }), (0, a.jsx)(y, {
         sku: t
       })]
     })
@@ -94,7 +94,7 @@ let g = e => {
       children: p.intl.string(p.t.QQsaCc)
     })
   };
-class x extends(r = Chunk64700.PureComponent) {
+class O extends(r = Chunk64700.PureComponent) {
   getState() {
     let {
       inLibrary: e,
@@ -129,12 +129,12 @@ class x extends(r = Chunk64700.PureComponent) {
           className: c()(t, n)
         });
       case 2:
-        return (0, a.jsx)(y, {
+        return (0, a.jsx)(A, {
           sku: r,
           className: c()(t, n)
         });
       default:
-        return (0, a.jsx)(A, {
+        return (0, a.jsx)(y, {
           className: c()(t, n),
           sku: r
         })
@@ -156,12 +156,12 @@ class x extends(r = Chunk64700.PureComponent) {
           className: c()(m.OB, t)
         });
       case 2:
-        return (0, a.jsx)(y, {
+        return (0, a.jsx)(A, {
           sku: n,
           className: c()(m.dk, t)
         });
       default:
-        return (0, a.jsx)(A, {
+        return (0, a.jsx)(y, {
           className: c()(m.dk, t),
           sku: n
         })
@@ -180,7 +180,7 @@ class x extends(r = Chunk64700.PureComponent) {
         t = (0, a.jsxs)(s.Fragment, {
           children: [(0, a.jsxs)("div", {
             className: m.nM,
-            children: [(0, a.jsx)(A, {
+            children: [(0, a.jsx)(y, {
               sku: r
             }), (0, a.jsx)(h, {
               sku: r
@@ -191,7 +191,7 @@ class x extends(r = Chunk64700.PureComponent) {
         });
         break;
       default:
-        t = (0, a.jsx)(A, {
+        t = (0, a.jsx)(y, {
           sku: r
         })
     }
@@ -218,10 +218,10 @@ class x extends(r = Chunk64700.PureComponent) {
         throw Error("Invalid Price Unit Type")
     }
   }
-}(l = "Types") in x ? Object.defineProperty(x, l, {
+}(l = "Types") in O ? Object.defineProperty(O, l, {
   value: f,
   enumerable: true,
   configurable: true,
   writable: true
-}) : x[l] = f;
-let O = x
+}) : O[l] = f;
+let x = O

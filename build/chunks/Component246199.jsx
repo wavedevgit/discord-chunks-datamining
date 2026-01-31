@@ -11,7 +11,7 @@ var l, Chunk627968 = require("./627968.js"),
   Chunk821589 = require("./821589.js"),
   Chunk765163 = require("./765163.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +19,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = {
+let d = {
   XSMALL: Chunk765163.xsmall,
   SMALL: Chunk765163.small,
   MEDIUM: Chunk765163.medium,
@@ -52,7 +52,7 @@ class h extends(l = Chunk64700.PureComponent) {
         return r
       }(e, ["size", "src", "srcHover", "className"]),
       {
-        hovered: u
+        hovered: d
       } = this.state,
       h = this.getMode();
     return (0, i.jsx)("button", function(e) {
@@ -62,14 +62,14 @@ class h extends(l = Chunk64700.PureComponent) {
         "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), l.forEach(function(t) {
-          d(e, t, n[t])
+          u(e, t, n[t])
         })
       }
       return e
     }({
       className: a()((0, o.t)(c, "iconButton", h), r, t),
       style: {
-        backgroundImage: "url('".concat(u && null != l ? l : n, "')")
+        backgroundImage: "url('".concat(d && null != l ? l : n, "')")
       },
       onMouseEnter: this.handleHover,
       onFocus: this.handleHover,
@@ -78,16 +78,16 @@ class h extends(l = Chunk64700.PureComponent) {
     }, s))
   }
   constructor(...e) {
-    super(...e), d(this, "state", {
+    super(...e), u(this, "state", {
       hovered: false
-    }), d(this, "getMode", () => null != this.props.srcHover ? "static" : "default"), d(this, "handleHover", e => {
+    }), u(this, "getMode", () => null != this.props.srcHover ? "static" : "default"), u(this, "handleHover", e => {
       let {
         onMouseEnter: t
       } = this.props;
       null == t || t(e), this.state.hovered || this.setState({
         hovered: true
       })
-    }), d(this, "handleBlur", e => {
+    }), u(this, "handleBlur", e => {
       let {
         onMouseLeave: t
       } = this.props;
@@ -97,8 +97,8 @@ class h extends(l = Chunk64700.PureComponent) {
     })
   }
 }
-d(h, "Sizes", u), d(h, "defaultProps", {
-  size: u.MEDIUM,
+u(h, "Sizes", d), u(h, "defaultProps", {
+  size: d.MEDIUM,
   disabled: false
 });
 let g = h

@@ -265,7 +265,7 @@ require.d(exports, {
   VUy: () => v.VU,
   VaJ: () => i.VaJ,
   VeA: () => a.VeA,
-  VoidConfirmModal: () => k.VoidConfirmModal,
+  VoidConfirmModal: () => k.a,
   Vs8: () => i.Vs8,
   W1t: () => L.W,
   W4J: () => i.W4J,

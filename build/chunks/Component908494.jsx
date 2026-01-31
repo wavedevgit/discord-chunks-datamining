@@ -2,7 +2,7 @@
 /** chunk id: 908494, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => u
+  A: () => d
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -13,17 +13,17 @@ var Chunk503698 = require("./503698.js"),
   Chunk397927 = require("./397927.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk302284 = require("./302284.js");
-let u = e => {
+let d = e => {
   let {
     className: t,
     icon: n,
     noticeText: i,
-    buttonText: u,
+    buttonText: d,
     onClick: h,
     canSync: g
   } = e;
   return (0, l.jsx)(o.ZpM, {
-    className: r()(t, d.N),
+    className: r()(t, u.N),
     children: (0, l.jsxs)(c.A, {
       justify: c.A.Justify.BETWEEN,
       align: c.A.Align.CENTER,
@@ -33,7 +33,7 @@ let u = e => {
         size: "custom",
         color: s.A.unsafe_rawColors.YELLOW_300.css
       }), (0, l.jsx)("div", {
-        className: d.P,
+        className: u.P,
         children: (0, l.jsx)(o.Text, {
           variant: "text-md/normal",
           children: i
@@ -42,7 +42,7 @@ let u = e => {
         size: a.$n.Sizes.SMALL,
         color: a.$n.Colors.PRIMARY,
         onClick: h,
-        children: u
+        children: d
       })]
     })
   })

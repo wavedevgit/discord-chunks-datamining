@@ -22,14 +22,14 @@ function u(e) {
     partyStatusElement: f,
     presenceActivity: g,
     guildId: _
-  } = e, h = !(0, s.A)(g, p, n.id), b = (0, a.n$)(n.name, null == (t = p.activity) ? true : t.type, h), A = i.useMemo(() => {
+  } = e, h = !(0, s.A)(g, p, n.id), b = (0, a.n$)(n.name, null == (t = p.activity) ? true : t.type, h), y = i.useMemo(() => {
     if (null != g) return () => (0, l.Mp)(g)
   }, [g]);
   return h ? (0, r.jsx)(o.A, {
     application: n,
     message: p,
     header: b,
-    onClickContent: A,
+    onClickContent: y,
     onView: m,
     guildId: _
   }) : (0, r.jsx)(c.A, {
@@ -40,7 +40,7 @@ function u(e) {
     hideParty: d,
     partyStatusElement: f,
     currentUserPresenceActivity: u,
-    onClickContent: A,
+    onClickContent: y,
     onView: m,
     guildId: _
   })

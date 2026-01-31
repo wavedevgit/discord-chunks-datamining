@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk233080 = require("./233080.js"),
   Chunk710504 = require("./710504.js");
 
-function O(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,7 +40,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -57,7 +57,7 @@ class j extends Chunk64700.Component {
       isReactionPickerActive: s
     } = this.state;
     if (e.state === b.cmJ.SENDING || (0, c.Lt)(e.flags, b.pr7.EPHEMERAL)) return null;
-    let o = i ? x : v,
+    let o = i ? O : v,
       u = {
         size: "sm",
         color: "currentColor",
@@ -79,15 +79,15 @@ class j extends Chunk64700.Component {
         } = i;
         return (0, r.jsx)(d.m_, {
           asContainer: true,
-          text: y.intl.string(y.t.lfIHs4),
+          text: A.intl.string(A.t.lfIHs4),
           children: (0, r.jsxs)(p.DUT, (s = E({}, e), c = c = {
             innerRef: this.ref,
             tabIndex: l,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, m.K)(A.Vl.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, m.K)(A.Vl.AddReactionPopoutFocused),
+            onMouseEnter: () => (0, m.K)(y.Vl.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, m.K)(y.Vl.AddReactionPopoutFocused),
             className: a()(o.reactionBtn, {
               [o.active]: f
             }, t),
@@ -107,9 +107,9 @@ class j extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "state", {
+    super(...e), x(this, "state", {
       isReactionPickerActive: false
-    }), O(this, "ref", i.createRef()), O(this, "onAddReaction", (e, t) => {
+    }), x(this, "ref", i.createRef()), x(this, "onAddReaction", (e, t) => {
       if (null == e) return;
       let {
         channel: n,
@@ -119,13 +119,13 @@ class j extends Chunk64700.Component {
       (0, g.BB)(n.id, r.id, (0, _.jq)(e), i ? g.qN.FORUM_TOOLBAR : g.qN.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
-    }), O(this, "handleReactionPickerToggle", () => {
+    }), x(this, "handleReactionPickerToggle", () => {
       this.setState(e => ({
         isReactionPickerActive: !e.isReactionPickerActive
       }))
-    }), O(this, "handleAddReactionClick", e => {
+    }), x(this, "handleAddReactionClick", e => {
       e.stopPropagation(), this.handleReactionPickerToggle()
-    }), O(this, "renderReactionPopout", e => {
+    }), x(this, "renderReactionPopout", e => {
       let {
         closePopout: t
       } = e, {
@@ -153,7 +153,7 @@ class j extends Chunk64700.Component {
             inDialog: t
           } = e;
           return t ? (0, r.jsx)(p.lGe, {
-            "aria-label": y.intl.string(y.t["7Xqzdj"]),
+            "aria-label": A.intl.string(A.t["7Xqzdj"]),
             children: l
           }) : l
         }

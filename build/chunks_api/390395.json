@@ -1,1 +1,1 @@
-{"id":"390395","type":"store","data":{"name":"MediaPostSharePromptStore","functions":[{"name":"initialize","args":[]},{"name":"shouldDisplayPrompt","args":["e"]}],"events":["CONNECTION_OPEN","MESSAGE_CREATE","DISMISS_MEDIA_POST_SHARE_PROMPT","LOGOUT"]},"fromModule":{"id":"1113"}}
+{"id":"390395","type":"store","data":{"name":"MediaPostSharePromptStore","functions":[{"name":"initialize","args":[]},{"name":"shouldDisplayPrompt","args":["e"]}],"events":["CONNECTION_OPEN","MESSAGE_CREATE","DISMISS_MEDIA_POST_SHARE_PROMPT","LOGOUT"]},"fromModule":{"id":"17534"}}

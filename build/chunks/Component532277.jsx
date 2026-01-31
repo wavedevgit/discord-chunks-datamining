@@ -2,7 +2,7 @@
 /** chunk id: 532277, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => u
+  A: () => d
 }), require("./896048.js"), require("./667532.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,11 +13,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk473169 = require("./473169.js");
 
-function u(e) {
+function d(e) {
   let {
     label: t,
     helperText: n,
-    hideLabel: u,
+    hideLabel: d,
     channel: h,
     onChange: g
   } = e, [m, p] = i.useState(null), f = h.rateLimitPerUser, b = i.useMemo(() => {
@@ -43,11 +43,11 @@ function u(e) {
     p(null)
   }, []);
   return (0, l.jsx)("div", {
-    className: d.QB,
+    className: u.QB,
     children: (0, l.jsx)(r.ZiE, {
       selectionMode: "single",
       label: t,
-      hideLabel: u,
+      hideLabel: d,
       helperText: n,
       value: f,
       onSelectionChange: x,

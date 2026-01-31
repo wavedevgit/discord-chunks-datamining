@@ -34,12 +34,12 @@ function C(e) {
   } = e, l = (0, o.bG)([b.A], () => b.A.getGuild(n)), {
     loading: C,
     subscriptionsSettings: I
-  } = (0, y.G)(n), {
+  } = (0, A.G)(n), {
     listingsLoaded: S
   } = (0, g.bb)(n), T = (0, g.fZ)(n, {
     publishedOnly: true
   }), N = i.useCallback(async () => {
-    A.default.track(O.HAw.GUILD_SHOP_EMBED_CLICKED, function(e) {
+    y.default.track(x.HAw.GUILD_SHOP_EMBED_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -56,7 +56,7 @@ function C(e) {
         })
       }
       return e
-    }({}, (0, p.H$)(n))), await (0, _.A)(O.BVt.SERVER_SHOP(n))
+    }({}, (0, p.H$)(n))), await (0, _.A)(x.BVt.SERVER_SHOP(n))
   }, [n]);
   (0, m.A)({
     type: s.ImpressionTypes.VIEW,
@@ -76,7 +76,7 @@ function C(e) {
       size: 16
     }), (0, r.jsxs)("div", {
       className: j.qs,
-      children: [(0, r.jsx)(x.h, {
+      children: [(0, r.jsx)(O.h, {
         height: "16px",
         width: "16px",
         color: c.A.colors.INTERACTIVE_TEXT_DEFAULT.css
@@ -132,7 +132,7 @@ function C(e) {
         className: j.$h,
         children: (0, r.jsx)(u.$nd, {
           onClick: N,
-          icon: x.A,
+          icon: O.A,
           text: E.intl.string(E.t.jXx1CC)
         })
       })]

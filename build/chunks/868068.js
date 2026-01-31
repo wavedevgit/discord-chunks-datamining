@@ -2,12 +2,12 @@
 /** chunk id: 868068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => a,
-  O: () => s
+  O: () => i
 });
 var Chunk56562 = require("./56562.js"),
   Chunk927813 = require("./927813.js"),
   Chunk652215 = require("./652215.js");
-let s = {
+let i = {
     None: true,
     Terraria: {
       id: "1402418344912752671",
@@ -30,4 +30,4 @@ let s = {
       distributor: Chunk652215.d3x.STEAM
     }
   },
-  a = Object.keys(s)
+  a = Object.keys(i)

@@ -23,10 +23,10 @@ function b(e) {
   let {
     message: t,
     compact: n
-  } = e, b = t.channel_id, A = (0, a.bG)([p.A], () => null != t.messageReference ? p.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
-    clipId: y,
+  } = e, b = t.channel_id, y = (0, a.bG)([p.A], () => null != t.messageReference ? p.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+    clipId: A,
     remoteTriggerClipId: v
-  } = i.useMemo(() => null != A ? function(e) {
+  } = i.useMemo(() => null != y ? function(e) {
     let t = "__CLIP_METADATA__",
       n = e.indexOf(t);
     if (false === n) return {};
@@ -41,20 +41,20 @@ function b(e) {
     } catch (e) {
       return {}
     }
-  }(A.content) : {}, [A]), x = (0, a.bG)([c.A], () => c.A.getMatchingGroupClip(y, v)), O = (0, a.bG)([c.A], () => null != x && null != b && c.A.wasClipSharedInChannel(x.id, b)), {
+  }(y.content) : {}, [y]), O = (0, a.bG)([c.A], () => c.A.getMatchingGroupClip(A, v)), x = (0, a.bG)([c.A], () => null != O && null != b && c.A.wasClipSharedInChannel(O.id, b)), {
     onShareClick: E
   } = (0, d.A)(b), j = i.useCallback(() => {
     var e;
-    null != x && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && E({
-      clips: [x],
+    null != O && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && E({
+      clips: [O],
       messageReference: {
         channel_id: b,
         message_id: t.messageReference.message_id
       }
     })
-  }, [x, b, t.messageReference, E]);
-  if (null == A || null == y && null == v || null == x || O) return null;
-  let C = A.attachments.find(e => {
+  }, [O, b, t.messageReference, E]);
+  if (null == y || null == A && null == v || null == O || x) return null;
+  let C = y.attachments.find(e => {
       var t;
       return (0, l.Lt)(null != (t = e.flags) ? t : 0, g.sbO.IS_CLIP)
     }),
@@ -63,7 +63,7 @@ function b(e) {
     let e = m.A.toURLSafe(C.proxy_url);
     null != e && (e.searchParams.append("format", "webp"), I = e.toString())
   }
-  let S = null != I ? [I, x.thumbnail] : [x.thumbnail];
+  let S = null != I ? [I, O.thumbnail] : [O.thumbnail];
   return (0, r.jsx)(f.A, {
     iconNode: (0, r.jsx)(o.xgA, {
       size: "md",

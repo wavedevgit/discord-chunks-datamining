@@ -56,9 +56,9 @@ function R(e) {
       var n, r, i, l;
       let {
         bot: a
-      } = t, s = (null == (r = e.activity) ? true : r.icon_override) != null ? (0, x.uD)(t.id, null == (i = e.activity) ? true : i.icon_override) : null;
+      } = t, s = (null == (r = e.activity) ? true : r.icon_override) != null ? (0, O.uD)(t.id, null == (i = e.activity) ? true : i.icon_override) : null;
       return {
-        iconSrc: null != s ? s : O.Ay.getApplicationIconURL({
+        iconSrc: null != s ? s : x.Ay.getApplicationIconURL({
           id: t.id,
           icon: t.icon,
           bot: a
@@ -74,9 +74,9 @@ function R(e) {
     {
       openGameProfileModal: Z,
       launchableAppId: $
-    } = (R = G.id, D = z.author.id, M = (0, A.d)(R), k = (0, l.bG)([m.A, y.A], () => {
+    } = (R = G.id, D = z.author.id, M = (0, y.d)(R), k = (0, l.bG)([m.A, A.A], () => {
       let e = m.A.getApplication(R);
-      return null != e ? y.A.getGameByApplication(e) : null
+      return null != e ? A.A.getGameByApplication(e) : null
     }, [R]), {
       openGameProfileModal: (0, b.A)({
         location: "Rich Presence Activity Invite Embed",

@@ -33,7 +33,7 @@ function j(e) {
     message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, _] = i.useState(true), [j, I] = i.useState(false), S = t.state === x.elq.ACCEPTING, T = (0, s.bG)([u.A], () => u.A.useReducedMotion);
+  } = e, p = i.useRef(null), [f, _] = i.useState(true), [j, I] = i.useState(false), S = t.state === O.elq.ACCEPTING, T = (0, s.bG)([u.A], () => u.A.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     I((null != (e = null == (t = p.current) ? true : t.clientHeight) ? e : 0) > 292)
@@ -58,7 +58,7 @@ function j(e) {
     }),
     onClick: P,
     style: R,
-    "aria-label": O.intl.string(O.t.dcl9MQ),
+    "aria-label": x.intl.string(x.t.dcl9MQ),
     children: [(0, r.jsxs)("div", {
       className: E.uY,
       ref: p,
@@ -72,8 +72,8 @@ function j(e) {
       }), (0, r.jsx)(g.P, {
         profile: N,
         className: E.rb
-      }), (0, r.jsx)(y.A, {
-        guild: null != t.guild ? (0, A.DY)(t.guild) : null,
+      }), (0, r.jsx)(A.A, {
+        guild: null != t.guild ? (0, y.DY)(t.guild) : null,
         roles: t.roles,
         className: E.Ei
       })]
@@ -84,7 +84,7 @@ function j(e) {
         variant: "secondary",
         size: "sm",
         onClick: w,
-        text: O.intl.string(O.t.xdCLeM)
+        text: x.intl.string(x.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {
       className: a()(E.qr, {

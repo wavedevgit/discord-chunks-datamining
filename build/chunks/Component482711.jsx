@@ -1,8 +1,8 @@
 /** Chunk was on 64935 **/
 /** chunk id: 482711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y,
-  i: () => A
+  A: () => A,
+  i: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -127,7 +127,7 @@ function b(e) {
   })
 }
 
-function A(e) {
+function y(e) {
   let {
     product: t,
     guildId: n,
@@ -139,17 +139,17 @@ function A(e) {
     showReportProduct: d,
     onEditProduct: p,
     onUnpublishProduct: m,
-    onDeleteProduct: A,
-    onCopyProductLink: y,
+    onDeleteProduct: y,
+    onCopyProductLink: A,
     onTestDownload: v,
-    onReportProduct: x
-  } = e, O = i.useRef(null);
+    onReportProduct: O
+  } = e, x = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: e => {
       e.stopPropagation()
     },
     children: (0, r.jsx)(s.YNO, {
-      targetElementRef: O,
+      targetElementRef: x,
       position: "right",
       align: "top",
       spacing: false,
@@ -165,17 +165,17 @@ function A(e) {
         showDeleteProduct: u,
         onEditProduct: p,
         onUnpublishProduct: m,
-        onDeleteProduct: A,
-        onCopyLink: y,
+        onDeleteProduct: y,
+        onCopyLink: A,
         onTestDownload: v,
-        onReportProduct: x
+        onReportProduct: O
       })),
       children: (e, n) => {
         let {
           isShown: i
         } = n;
         return (0, r.jsx)(s.DUT, h(_({}, e), {
-          innerRef: O,
+          innerRef: x,
           "aria-label": f.intl.formatToPlainString(f.t.RtqjeB, {
             productName: t.name
           }),
@@ -194,23 +194,23 @@ function A(e) {
   })
 }
 
-function y(e) {
+function A(e) {
   let {
     product: t,
     guildId: n,
     onEditProduct: i,
     onUnpublishProduct: l,
-    onDeleteProduct: y,
+    onDeleteProduct: A,
     onCopyProductLink: v,
-    onTestDownload: x,
-    disabled: O = false
+    onTestDownload: O,
+    disabled: x = false
   } = e, E = (0, c.R)(t, 600), j = null !== t.price_tier ? (0, u.$g)(t.price_tier, m.Yr.USD) : true, C = (0, d.z)(t);
   return (0, r.jsxs)(s.sqX, {
     tag: "article",
     className: a()(g.gc, g.Um, {
-      [g.r9]: O
+      [g.r9]: x
     }),
-    onClick: O ? true : i,
+    onClick: x ? true : i,
     onContextMenu: function(e) {
       (0, o.L3)(e, () => Promise.resolve(e => (0, r.jsx)(b, h(_({}, e), {
         closePopout: o.Z_,
@@ -224,9 +224,9 @@ function y(e) {
         showReportProduct: false,
         onEditProduct: i,
         onUnpublishProduct: l,
-        onDeleteProduct: y,
+        onDeleteProduct: A,
         onCopyLink: v,
-        onTestDownload: x,
+        onTestDownload: O,
         onReportProduct: () => {}
       }))))
     },
@@ -266,7 +266,7 @@ function y(e) {
         }), (0, r.jsx)(s.hKd, {
           size: 16
         }), t.published ? (0, r.jsx)(p.S, {}) : (0, r.jsx)(p.$, {})]
-      }), !O && (0, r.jsx)(A, {
+      }), !x && (0, r.jsx)(y, {
         product: t,
         guildId: n,
         showEditProduct: true,
@@ -277,9 +277,9 @@ function y(e) {
         showReportProduct: false,
         onEditProduct: i,
         onUnpublishProduct: l,
-        onDeleteProduct: y,
+        onDeleteProduct: A,
         onCopyProductLink: v,
-        onTestDownload: x,
+        onTestDownload: O,
         onReportProduct: () => {}
       })]
     })]

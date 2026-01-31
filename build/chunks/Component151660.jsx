@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 151660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => y
 }), require("./896048.js"), require("./864466.js"), require("./443073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,31 +20,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk173990 = require("./173990.js");
 
-function A(e) {
+function y(e) {
   let {
     message: t,
     channel: l,
-    compact: A
-  } = e, y = (0, s.yK)([d.A], () => Array.from(d.A.getAllGuildStickers().values()).flat()).slice(0, 20), [v, x] = i.useState(null);
+    compact: y
+  } = e, A = (0, s.yK)([d.A], () => Array.from(d.A.getAllGuildStickers().values()).flat()).slice(0, 20), [v, O] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      y.length > 0 && x(y[Math.floor(Math.random() * y.length)])
+      A.length > 0 && O(A[Math.floor(Math.random() * A.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [y]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [A]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.A, {
       className: a()(b.r, {
-        [b.o]: A
+        [b.o]: y
       }),
       icon: n(394803),
-      compact: A,
+      compact: y,
       children: (0, r.jsx)("div", {
         className: a()({
-          [b.o]: A
+          [b.o]: y
         }),
         children: (0, r.jsx)("div", {
           className: a()({
-            [b.o]: A
+            [b.o]: y
           }),
           children: "" !== t.content ? t.content : h.intl.string(h.t.wnn1Dc)
         })

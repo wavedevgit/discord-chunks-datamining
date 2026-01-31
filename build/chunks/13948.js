@@ -19,5 +19,5 @@ function h(e, t) {
     [i, h] = l.useMemo(() => r()(null == t ? [] : Object.values(t).filter(e => e.type === o.r2.MEMBER).map(e => e.id), e => n.includes(e)), [t, n]);
   return l.useEffect(() => {
     h.length > 0 && null != e && a.A.requestMembersById(e, h, false)
-  }, [h, e]), (0, s.yK)([d.default], () => i.map(d.default.getUser).filter(u.Vq), [i])
+  }, [h, e]), (0, s.yK)([u.default], () => i.map(u.default.getUser).filter(d.Vq), [i])
 }

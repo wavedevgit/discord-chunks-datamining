@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 901057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => A
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -22,23 +22,23 @@ var Chunk311907 = require("./311907.js"),
   Chunk449054 = require("./449054.js"),
   Chunk652215 = require("./652215.js");
 
-function y(e) {
+function A(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: y,
+    beforeTransition: A,
     className: v,
-    openChatWithoutConnecting: x
-  } = e, O = (0, i.bG)([_.default, g.A], () => null == t ? "" : (0, c.m1)(t, _.default, g.A), [t]);
+    openChatWithoutConnecting: O
+  } = e, x = (0, i.bG)([_.default, g.A], () => null == t ? "" : (0, c.m1)(t, _.default, g.A), [t]);
   return (0, r.jsx)(l.m, {
     "data-pending-richtooltip-migration": true,
-    __unsupportedReactNodeAsText: O,
+    __unsupportedReactNodeAsText: x,
     position: "top",
     children: (0, r.jsx)(u.A, {
       role: "link",
       className: v,
       onClick: e => {
-        e.stopPropagation(), null != n ? n() : (null != y && y(), (0, a.s7G)(), function(e, t) {
+        e.stopPropagation(), null != n ? n() : (null != A && A(), (0, a.s7G)(), function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
           if (null == e || null == t) return;
           let r = f.A.getGuild(e);
@@ -48,16 +48,16 @@ function y(e) {
           let i = m.A.getChannel(t);
           if (null != i && (0, p.ay)(i.type)) {
             if (n) {
-              s.A.updateChatOpen(i.id, true), (0, d.pX)(A.BVt.CHANNEL(e, t));
+              s.A.updateChatOpen(i.id, true), (0, d.pX)(y.BVt.CHANNEL(e, t));
               return
             }
             o.default.selectVoiceChannel(i.id);
             return
-          }(0, d.pX)(A.BVt.CHANNEL(e, t))
-        }(null == t ? true : t.guild_id, null == t ? true : t.id, x))
+          }(0, d.pX)(y.BVt.CHANNEL(e, t))
+        }(null == t ? true : t.guild_id, null == t ? true : t.id, O))
       },
       iconType: (0, h.QG)(t),
-      children: O
+      children: x
     })
   })
 }

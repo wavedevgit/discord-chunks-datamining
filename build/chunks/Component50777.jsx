@@ -55,7 +55,7 @@ function j(e) {
       })
     }, [w, null == L ? true : L.applicationId, P, k]),
     V = i.useCallback(() => {
-      null != L && (0, A.a)(L, {
+      null != L && (0, y.a)(L, {
         isGift: false
       }, {
         analyticsLocations: [o.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON],
@@ -63,7 +63,7 @@ function j(e) {
       })
     }, [L, P]),
     z = i.useCallback(() => {
-      null != L && (0, A.a)(L, {
+      null != L && (0, y.a)(L, {
         isGift: true,
         giftRecipient: null != U ? U : true
       }, {
@@ -102,7 +102,7 @@ function j(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/bold",
             lineClamp: 1,
-            children: (0, f.$g)(null != (t = null == (I = L.price) ? true : I.amount) ? t : 0, null != (n = null == (S = L.price) ? true : S.currency) ? n : x.Yr.USD)
+            children: (0, f.$g)(null != (t = null == (I = L.price) ? true : I.amount) ? t : 0, null != (n = null == (S = L.price) ? true : S.currency) ? n : O.Yr.USD)
           })]
         })]
       }), (0, r.jsxs)(l.e2v, {
@@ -111,17 +111,17 @@ function j(e) {
         children: [(0, r.jsx)(l.$nd, {
           variant: "secondary",
           onClick: H,
-          text: O.intl.string(O.t.KLBTgF),
+          text: x.intl.string(x.t.KLBTgF),
           fullWidth: true
         }), (0, r.jsx)(l.$nd, {
           variant: "primary",
           onClick: V,
-          text: G ? O.intl.format(O.t.Xp5WTn, {
-            price: (0, f.$g)(null != (j = null == (T = L.price) ? true : T.amount) ? j : 0, null != (C = null == (N = L.price) ? true : N.currency) ? C : x.Yr.USD)
-          }) : O.intl.string(O.t.cg0M2H),
+          text: G ? x.intl.format(x.t.Xp5WTn, {
+            price: (0, f.$g)(null != (j = null == (T = L.price) ? true : T.amount) ? j : 0, null != (C = null == (N = L.price) ? true : N.currency) ? C : O.Yr.USD)
+          }) : x.intl.string(x.t.cg0M2H),
           fullWidth: true,
           disabled: !G
-        }), (0, r.jsx)(y.A, {
+        }), (0, r.jsx)(A.A, {
           onGift: z
         })]
       })]

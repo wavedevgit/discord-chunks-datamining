@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
-  Chunk970984 = require("./970984.js");
+  Chunk353709 = require("./353709.js");
 require("./311907.js"), require("./859703.js");
 var Chunk341915 = require("./341915.js"),
   Chunk890687 = require("./890687.js"),
@@ -25,19 +25,19 @@ function f(e) {
     sourceQuestContent: _
   } = e, h = (0, s.LS)(t), {
     containerRef: b,
-    size: A,
-    height: y
+    size: y,
+    height: A
   } = (0, d.L)(), {
     expansionSpring: v,
-    isAnimating: x,
-    isExpanded: O,
+    isAnimating: O,
+    isExpanded: x,
     toggleExpanded: E
   } = (0, d.s)({
     initiallyExpanded: f || (0, p.RA)({
       location: n,
       quest: t
     })
-  }), [j, C] = i.useState(false), I = () => C(true), S = () => C(false), T = null != y ? y : p._B;
+  }), [j, C] = i.useState(false), I = () => C(true), S = () => C(false), T = null != A ? A : p._B;
   return (0, r.jsx)(o.R, {
     questOrQuests: t,
     questContent: n,
@@ -64,11 +64,11 @@ function f(e) {
           isQuestExpired: h,
           location: n,
           quest: t,
-          size: A,
+          size: y,
           expansionSpring: v,
           isInteracting: j,
-          isAnimating: x,
-          isExpanded: O,
+          isAnimating: O,
+          isExpanded: x,
           contentPosition: g,
           toggleExpanded: E,
           sourceQuestContent: _
@@ -76,10 +76,10 @@ function f(e) {
           quest: t,
           isQuestExpired: h,
           location: n,
-          size: A,
+          size: y,
           isFocused: j,
-          isExpanded: O,
-          isAnimating: x,
+          isExpanded: x,
+          isAnimating: O,
           contentPosition: g,
           sourceQuestContent: _
         })]

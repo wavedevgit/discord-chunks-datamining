@@ -1,31 +1,32 @@
 /** Chunk was on 70685 **/
 /** chunk id: 867276, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => u
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
+  Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk624458 = require("./624458.js"),
   Chunk513461 = require("./513461.js"),
   Chunk985018 = require("./985018.jsx");
-let l = e => {
+let u = e => {
   var t, r;
   let {
-    guildId: l,
-    userId: u,
-    guildJoinRequestId: p,
-    onConfirm: b,
-    onError: O,
-    modalProps: f
-  } = e, [y, j] = o.useState(), d = async () => {
+    guildId: u,
+    userId: p,
+    guildJoinRequestId: b,
+    onConfirm: O,
+    onError: f,
+    modalProps: y
+  } = e, [j, g] = c.useState(), h = async () => {
     try {
-      await i.A.updateGuildJoinRequest(l, u, p, a.B5.REJECTED, y), null == b || b()
+      await a.A.updateGuildJoinRequest(u, p, b, s.B5.REJECTED, j), null == O || O()
     } catch (e) {
-      null == O || O()
+      null == f || f()
     }
   };
-  return (0, n.jsx)(c.VoidConfirmModal, (t = function(e) {
+  return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -43,14 +44,14 @@ let l = e => {
     }
     return e
   }({
-    header: s.intl.string(s.t["mFP/qw"]),
-    cancelText: s.intl.string(s.t["ETE/oC"]),
-    confirmText: s.intl.string(s.t.hDtbsz),
-    onConfirm: d
-  }, f), r = r = {
-    children: (0, n.jsx)(c.fs1, {
-      value: y,
-      onChange: j,
+    title: l.intl.string(l.t["mFP/qw"]),
+    cancelText: l.intl.string(l.t["ETE/oC"]),
+    confirmText: l.intl.string(l.t.hDtbsz),
+    onConfirm: h
+  }, y), r = r = {
+    children: (0, n.jsx)(i.fs1, {
+      value: j,
+      onChange: g,
       maxLength: 160
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

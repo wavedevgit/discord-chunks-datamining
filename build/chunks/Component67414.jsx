@@ -36,7 +36,7 @@ function C(e) {
     innerRef: T
   } = e, N = (0, a.bG)([g.default], () => g.default.getCurrentUser()), {
     analyticsLocations: P
-  } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), w = (0, a.bG)([A.Ay], () => A.Ay.getFriendAnniversaryYears(C.id)), R = (0, f.tA)({
+  } = (0, u.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), w = (0, a.bG)([y.Ay], () => y.Ay.getFriendAnniversaryYears(C.id)), R = (0, f.tA)({
     location: "gift-intent-card",
     isGift: true,
     giftRecipient: C
@@ -47,7 +47,7 @@ function C(e) {
       type: l.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: t,
-        num_friend_anniversaries: A.Ay.getFriendAnniversaries().length
+        num_friend_anniversaries: y.Ay.getFriendAnniversaries().length
       }
     })
   }, [t]);
@@ -65,12 +65,12 @@ function C(e) {
             className: j.A6,
             user: C,
             "aria-label": C.username,
-            size: O._3.SIZE_56
+            size: x._3.SIZE_56
           }), null != N && (0, r.jsx)(o.A, {
             className: j.GM,
             user: N,
             "aria-label": C.username,
-            size: O._3.SIZE_24
+            size: x._3.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
           className: j.FS,
@@ -102,7 +102,7 @@ function C(e) {
           text: E.intl.string(E.t.nffuyb),
           "aria-label": E.intl.string(E.t.nffuyb),
           onClick: e => {
-            e.stopPropagation(), _.default.track(x.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), _.default.track(O.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: "send_message",
               location_stack: P
@@ -154,12 +154,12 @@ function C(e) {
           onClick: e => {
             e.stopPropagation();
             let n = m.A.getUserAffinity(C.id);
-            _.default.track(x.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+            _.default.track(O.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
               gift_intent_type: t,
               affinity: null == n ? true : n.dmProbability,
               location_stack: P
             });
-            let r = (0, y.$)(t);
+            let r = (0, A.$)(t);
             R ? (0, b.A)({
               giftRecipient: C,
               analyticsLocations: P,
@@ -167,8 +167,8 @@ function C(e) {
               analyticsObject: {
                 page: I,
                 section: S,
-                object: x.ZSU.BUTTON_CTA,
-                objectType: x.AnalyticsObjectTypes.GIFT
+                object: O.ZSU.BUTTON_CTA,
+                objectType: O.AnalyticsObjectTypes.GIFT
               }
             }) : (0, p.A)({
               isGift: true,
@@ -179,8 +179,8 @@ function C(e) {
               analyticsObject: {
                 page: I,
                 section: S,
-                object: x.ZSU.BUTTON_CTA,
-                objectType: x.AnalyticsObjectTypes.GIFT
+                object: O.ZSU.BUTTON_CTA,
+                objectType: O.AnalyticsObjectTypes.GIFT
               }
             })
           }

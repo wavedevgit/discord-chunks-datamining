@@ -76,13 +76,13 @@ function k(e) {
     channel: B
   } = e, F = i.useRef(null), H = i.useRef(null), V = (0, T.D)(U, G), {
     setPopout: z
-  } = (0, A.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, true), K = x.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), Z = (0, o.bG)([O.Ay, E.default], () => {
+  } = (0, y.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, true), K = O.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), Z = (0, o.bG)([x.Ay, E.default], () => {
     var e;
-    return O.Ay.isMember(null == V ? true : V.guildId, null == (e = E.default.getCurrentUser()) ? true : e.id)
-  }, [V]), $ = (0, o.bG)([O.Ay], () => (null == V ? true : V.authorId) != null ? O.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (l = V.user) ? true : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
+    return x.Ay.isMember(null == V ? true : V.guildId, null == (e = E.default.getCurrentUser()) ? true : e.id)
+  }, [V]), $ = (0, o.bG)([x.Ay], () => (null == V ? true : V.authorId) != null ? x.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (l = V.user) ? true : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
-  }, [$]), ei = (0, y.gn)(null == $ ? true : $.guildId, null != (t = null == V ? true : V.authorId) ? t : true, en), {
+  }, [$]), ei = (0, A.gn)(null == $ ? true : $.guildId, null != (t = null == V ? true : V.authorId) ? t : true, en), {
     reducedMotion: el
   } = i.useContext(u.CZY), [ea, es] = i.useState(false), eo = i.useCallback(() => {
     J(true)

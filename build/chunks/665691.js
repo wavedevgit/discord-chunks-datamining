@@ -1,9 +1,9 @@
-/** Chunk was on 16674 **/
-/** chunk id: 665691, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 17534 **/
+/** chunk id: 665691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  DY: () => f,
-  UF: () => o,
-  bG: () => d
+  DY: () => d,
+  UF: () => u,
+  bG: () => h
 });
 var Chunk311907 = require("./311907.js"),
   Chunk652896 = require("./652896.js"),
@@ -13,38 +13,38 @@ var Chunk311907 = require("./311907.js"),
   Chunk83942 = require("./83942.js"),
   Chunk259374 = require("./259374.js");
 
-function o(e) {
+function u(e) {
   let {
     userId: t,
-    channelId: r
+    channelId: n
   } = e, l = (0, c.k)({
-    channelId: r
+    channelId: n
   });
-  return (0, n.bG)([s.A, u.default, i.A], () => null != t && l && i.A.isUserConnected(t) && u.default.getId() !== t && s.A.isUserVerified(t), [l, t])
-}
-
-function f(e) {
-  let {
-    streamKey: t,
-    channelId: r
-  } = e, i = (0, c.k)({
-    channelId: r
-  }), o = (0, a.w)(t);
-  return (0, n.bG)([s.A, u.default], () => {
-    if (!i || o || null == t) returnfalse;
-    let e = u.default.getId(),
-      {
-        ownerId: r
-      } = (0, l.Iy)(t);
-    return r !== e && s.A.isStreamVerified(t)
-  }, [o, i, t])
+  return (0, r.bG)([a.A, i.default, s.A], () => null != t && l && s.A.isUserConnected(t) && i.default.getId() !== t && a.A.isUserVerified(t), [l, t])
 }
 
 function d(e) {
   let {
+    streamKey: t,
+    channelId: n
+  } = e, s = (0, c.k)({
+    channelId: n
+  }), u = (0, o.w)(t);
+  return (0, r.bG)([a.A, i.default], () => {
+    if (!s || u || null == t) returnfalse;
+    let e = i.default.getId(),
+      {
+        ownerId: n
+      } = (0, l.Iy)(t);
+    return n !== e && a.A.isStreamVerified(t)
+  }, [u, s, t])
+}
+
+function h(e) {
+  let {
     channelId: t
-  } = e, r = (0, c.k)({
+  } = e, n = (0, c.k)({
     channelId: t
-  }), l = (0, a.c)();
-  return (0, n.bG)([s.A], () => !!r && !l && s.A.isCallVerified(), [l, r])
+  }), l = (0, o.c)();
+  return (0, r.bG)([a.A], () => !!n && !l && a.A.isCallVerified(), [l, n])
 }

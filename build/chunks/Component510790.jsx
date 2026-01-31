@@ -39,7 +39,7 @@ let j = e => e.map(e => "#".concat(e)),
       children: [(0, r.jsx)(I, {
         message: t
       }), (0, r.jsx)(u.$nd, {
-        text: O.intl.string(O.t.SKNnqq),
+        text: x.intl.string(x.t.SKNnqq),
         fullWidth: true,
         variant: "primary",
         onClick: () => {
@@ -49,7 +49,7 @@ let j = e => e.map(e => "#".concat(e)),
             colors: j(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
-          }), (0, _.GQ)((0, A.PC)(n.base_theme))
+          }), (0, _.GQ)((0, y.PC)(n.base_theme))
         }
       })]
     })
@@ -69,7 +69,7 @@ let j = e => e.map(e => "#".concat(e)),
           properties: {}
         })
       }), []),
-      A = (0, m.A)({
+      y = (0, m.A)({
         onVisible: () => {
           b()
         },
@@ -78,11 +78,11 @@ let j = e => e.map(e => "#".concat(e)),
       }),
       v = i.useMemo(() => {
         var e;
-        return true === _ ? "" : (0, y.V9)(j(_.colors), null != (e = _.gradient_angle) ? e : 0)
+        return true === _ ? "" : (0, A.V9)(j(_.colors), null != (e = _.gradient_angle) ? e : 0)
       }, [_]);
     return true === _ ? null : (0, r.jsxs)("div", {
       className: E.pS,
-      ref: A,
+      ref: y,
       children: [(0, r.jsx)("div", {
         className: E.sl,
         style: {
@@ -93,12 +93,12 @@ let j = e => e.map(e => "#".concat(e)),
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
           className: E.qP,
-          children: [O.intl.string(x.default.KSBBpC), " ", (0, r.jsx)(o.NitroWheelIcon, {})]
+          children: [x.intl.string(O.default.KSBBpC), " ", (0, r.jsx)(o.NitroWheelIcon, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
           className: E.Tb,
-          children: (t = "".concat(O.intl.format(x.default.fQPSEf, {
+          children: (t = "".concat(x.intl.format(O.default.fQPSEf, {
             username: "__USERNAME__"
           })), n = f.author, u = h.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
             children: [e, " "]

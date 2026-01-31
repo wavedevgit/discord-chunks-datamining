@@ -310,22 +310,20 @@ function V(e) {
     onSave: () => {
       null != j.recurrenceRule && P && (0, E.DS)(d, j) ? (0, o.mMO)(async () => {
         let {
-          VoidConfirmModal: e
-        } = await Promise.resolve().then(n.bind(n, 640238));
+          ConfirmModal: e
+        } = await Promise.resolve().then(n.bind(n, 158954));
         return t => {
           var n, l;
-          return (0, r.jsxs)(e, (n = R({}, t), l = l = {
-            header: k.intl.string(k.t.BW1Qoh),
+          return (0, r.jsx)(e, (n = R({}, t), l = l = {
+            title: k.intl.string(k.t.BW1Qoh),
+            subtitle: k.intl.string(k.t.aNCYas),
             confirmText: k.intl.string(k.t.e5VEcE),
             cancelText: k.intl.string(k.t.oEAioF),
             onConfirm: T,
-            children: [(0, r.jsx)(o.Text, {
-              variant: "text-md/normal",
-              children: k.intl.string(k.t.aNCYas)
-            }), (0, r.jsx)("br", {}), (0, r.jsx)(o.Text, {
+            children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               children: k.intl.format(k.t.RWBa5X, {})
-            })]
+            })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

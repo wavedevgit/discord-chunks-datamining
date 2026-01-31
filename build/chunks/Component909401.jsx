@@ -1,12 +1,12 @@
 /** Chunk was on 90850 **/
 /** chunk id: 909401, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
-var Chunk417597 = require("./417597.js"),
-  Chunk421380 = require("./421380.js"),
+var Chunk158954 = require("./158954.js"),
+  Chunk417597 = require("./417597.js"),
   Chunk397927 = require("./397927.js"),
   Chunk843472 = require("./843472.js"),
   Chunk997509 = require("./997509.js"),
@@ -16,36 +16,35 @@ var Chunk417597 = require("./417597.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk378720 = require("./378720.js");
 
-function h(e) {
+function S(e) {
   let {
     channelId: l,
     messageId: t,
-    transitionState: h,
-    onClose: S
-  } = e, C = (0, s.bG)([c.A], () => c.A.getChannel(l)), [F, b] = (0, u.A)(l), f = null == C ? true : C.guild_id;
-  return (0, n.jsx)(i.VoidConfirmModal, {
-    header: g.intl.string(g.t.aIz1oV),
+    transitionState: S,
+    onClose: h
+  } = e, F = (0, i.bG)([u.A], () => u.A.getChannel(l)), [b, m] = (0, c.A)(l), f = null == F ? true : F.guild_id;
+  return (0, s.jsx)(n.ConfirmModal, {
+    title: g.intl.string(g.t.aIz1oV),
     confirmText: g.intl.string(g.t["cY+Oob"]),
-    cancelText: g.intl.string(g.t["ETE/oC"]),
-    confirmButtonColor: o.$n.Colors.BRAND,
-    onConfirm: () => r.A.crosspostMessage(l, t),
-    transitionState: h,
-    onClose: S,
-    children: (0, n.jsx)(i.Text, {
+    onConfirm: () => a.A.crosspostMessage(l, t),
+    transitionState: S,
+    onClose: h,
+    variant: "primary",
+    children: (0, s.jsx)(o.Text, {
       variant: "text-md/normal",
       className: _.YK,
-      children: b ? (0, n.jsx)(i.y$y, {}) : null != F && null != F.guildsFollowing && F.guildsFollowing > 0 ? (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(i.Text, {
+      children: m ? (0, s.jsx)(o.y$y, {}) : null != b && null != b.guildsFollowing && b.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
+        children: [(0, s.jsx)(o.Text, {
           className: _.YK,
           variant: "text-sm/normal",
           children: g.intl.format(g.t.GCGrNP, {
-            numGuildsFollowing: F.guildsFollowing
+            numGuildsFollowing: b.guildsFollowing
           })
-        }), (0, n.jsx)(i.Text, {
+        }), (0, s.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
-              null != f && null != S && (S(), a.A.open(f, d.BEX.ANALYTICS))
+              null != f && null != h && (h(), r.A.open(f, d.BEX.ANALYTICS))
             }
           })
         })]

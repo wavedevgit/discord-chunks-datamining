@@ -155,7 +155,7 @@ async function G(e) {
   } = e, i = U({
     channelId: t,
     messageId: n
-  }), l = a().difference(i, r), s = a().difference(r, i), c = y.default.getId(), d = [...l.map(e => ({
+  }), l = a().difference(i, r), s = a().difference(r, i), c = A.default.getId(), d = [...l.map(e => ({
     type: "MESSAGE_REACTION_REMOVE",
     id: e
   })), ...s.map(e => ({
@@ -194,7 +194,7 @@ async function B(e) {
     title: P.intl.string(P.t.Qic1FD),
     body: P.intl.string(P.t["5sHHoy"])
   });
-  if (!O.A.canChatInGuild(r.guild_id)) return void d.A.show({
+  if (!x.A.canChatInGuild(r.guild_id)) return void d.A.show({
     title: P.intl.string(P.t.p245wu),
     body: P.intl.string(P.t["U/uodt"])
   });
@@ -345,7 +345,7 @@ let V = {
         channelId: t,
         messageId: n
       };
-      let l = A.A.getMessage(t, n);
+      let l = y.A.getMessage(t, n);
       if (null != l.message) return {
         channelId: t,
         messageId: n,
@@ -434,7 +434,7 @@ let V = {
       duration: l,
       layout: a,
       onClose: o
-    } = e, c = j.A.getUploads(t.id, x.C.Poll), u = r.map(e => {
+    } = e, c = j.A.getUploads(t.id, O.C.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? true : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

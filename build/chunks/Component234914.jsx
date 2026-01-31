@@ -1,4 +1,4 @@
-/** Chunk was on 73734 **/
+/** Chunk was on 61222 **/
 /** chunk id: 234914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk6976 = require("./6976.js");
 
@@ -51,12 +51,12 @@ function E(e) {
   var t, n;
   let {
     alt: l
-  } = e, a = u(e, ["alt"]), [E, d] = i.useState(true);
+  } = e, o = u(e, ["alt"]), [E, d] = i.useState(true);
   return (0, r.jsxs)(r.Fragment, {
-    children: [E && (0, r.jsx)(o.y$y, {
-      type: o.y$y.Type.LOW_MOTION,
+    children: [E && (0, r.jsx)(a.y$y, {
+      type: a.y$y.Type.LOW_MOTION,
       className: s.wG
-    }), (0, r.jsx)("img", (t = c({}, a), n = n = {
+    }), (0, r.jsx)("img", (t = c({}, o), n = n = {
       alt: l,
       onLoad: () => d(false)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -78,11 +78,11 @@ function d(e) {
     backgroundSrc: n,
     alt: i,
     aspectRatio: l,
-    className: o,
+    className: a,
     imageChildClassName: d
   } = e, _ = u(e, ["src", "backgroundSrc", "alt", "aspectRatio", "className", "imageChildClassName"]);
   return (0, r.jsxs)("div", {
-    className: a()(s.kL, o),
+    className: o()(s.kL, a),
     children: [(0, r.jsx)("img", {
       src: n,
       alt: i,
@@ -97,7 +97,7 @@ function d(e) {
       children: (0, r.jsx)(E, c({
         src: t,
         alt: i,
-        className: a()(s.Sl, d)
+        className: o()(s.Sl, d)
       }, _))
     })]
   })

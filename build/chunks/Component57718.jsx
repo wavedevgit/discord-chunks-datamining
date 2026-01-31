@@ -1,7 +1,7 @@
 /** Chunk was on 64935 **/
 /** chunk id: 57718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => A,
+  Ay: () => y,
   C8: () => b,
   LU: () => h
 });
@@ -9,7 +9,7 @@ var r, i, Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
   s = require.n(Chunk503698),
-  Chunk970984 = require("./970984.js"),
+  Chunk353709 = require("./353709.js"),
   Chunk827734 = require("./827734.js"),
   Chunk582754 = require("./582754.js"),
   Chunk397927 = require("./397927.js"),
@@ -20,7 +20,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk995360 = require("./995360.js"),
   h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
   b = ((i = {})[i.SMALL = 2] = "SMALL", i[i.MEDIUM = 8] = "MEDIUM", i);
-let A = function(e) {
+let y = function(e) {
   let {
     className: t,
     logotypeClassName: n,
@@ -29,19 +29,19 @@ let A = function(e) {
     separatorSpacing: a = 2,
     theme: h = g.NJ8.DARK,
     withCosponsor: b = true,
-    withGameTile: A = true,
-    logotypeStyle: y,
+    withGameTile: y = true,
+    logotypeStyle: A,
     onLoadComplete: v
-  } = e, x = (0, u.Mw)(h) ? g.NJ8.DARK : g.NJ8.LIGHT, O = (0, p.a5)(i.id, x), E = b && null != i.config.cosponsorMetadata && null != O;
+  } = e, O = (0, u.Mw)(h) ? g.NJ8.DARK : g.NJ8.LIGHT, x = (0, p.a5)(i.id, O), E = b && null != i.config.cosponsorMetadata && null != x;
   return (0, l.jsxs)("div", {
     className: s()(_.Iu, t),
-    children: [A && (0, l.jsx)(f.Sn, {
+    children: [y && (0, l.jsx)(f.Sn, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, l.jsx)("img", {
         ref: e,
         className: _._Y,
         alt: "",
-        src: (0, m.tW)(i, m.fY.GAME_TILE, x).url,
+        src: (0, m.tW)(i, m.fY.GAME_TILE, O).url,
         style: {
           borderRadius: function(e) {
             switch (e) {
@@ -63,9 +63,9 @@ let A = function(e) {
         className: s()(_.lW, n, {
           [_.TO]: E
         }),
-        style: y,
+        style: A,
         alt: i.config.messages.gameTitle,
-        src: (0, m.tW)(i, m.fY.LOGO_TYPE, x).url,
+        src: (0, m.tW)(i, m.fY.LOGO_TYPE, O).url,
         onLoad: v
       })
     }), E && (0, l.jsxs)(l.Fragment, {
@@ -85,9 +85,9 @@ let A = function(e) {
           return (0, l.jsx)(o.animated.img, {
             ref: e,
             className: s()(_.lW, _.TO, n),
-            style: y,
+            style: A,
             alt: null != (t = null == (r = i.config.cosponsorMetadata) ? true : r.name) ? t : "",
-            src: O.url,
+            src: x.url,
             onLoad: v
           })
         }
