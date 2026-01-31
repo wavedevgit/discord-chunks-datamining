@@ -2,7 +2,7 @@
 /** chunk id: 701663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => er
+  A: () => en
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,7 +29,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk288610 = require("./288610.jsx"),
   Chunk681582 = require("./681582.jsx"),
   Chunk172272 = require("./172272.jsx"),
-  Chunk866315 = require("./866315.jsx"),
   Chunk102854 = require("./102854.jsx"),
   Chunk670735 = require("./670735.jsx"),
   Chunk866822 = require("./866822.js"),
@@ -57,7 +56,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk295575 = require("./295575.js");
 require("./939857.jsx"), Promise.resolve().then(require.bind(require, 677134)).then(e => {
-  K.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
+  W.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk752239.h)({
   getDefaultLinkInterceptor: Chunk352423.default
 }), (0, Chunk268218.Fe)({
@@ -67,73 +66,73 @@ require("./939857.jsx"), Promise.resolve().then(require.bind(require, 677134)).t
   createPromise: () => Promise.all([n.e("94678"), n.e("896"), n.e("4787"), n.e("56795")]).then(n.bind(n, 961881)),
   webpackId: 961881
 });
-let et = (0, Chunk268218.Fe)({
+let ee = (0, Chunk268218.Fe)({
     createPromise: () => n.e("99063").then(n.bind(n, 359094)),
     webpackId: 359094
   }),
-  en = Chunk64700.memo(function() {
-    let e = (0, u.bG)([W.A], () => W.A.hasLayers()),
+  et = Chunk64700.memo(function() {
+    let e = (0, u.bG)([Y.A], () => Y.A.hasLayers()),
       t = (0, p.red)(p.ueM),
-      n = (0, u.bG)([Y.default], () => Y.default.isAuthenticated());
-    return (0, r.jsx)(J.v5, {
+      n = (0, u.bG)([H.default], () => H.default.isAuthenticated());
+    return (0, r.jsx)(X.v5, {
       fixed: true,
       show: e || t || !n
     })
   }),
-  er = function(e) {
+  en = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, K.getPlatform)(), f = s.Fr || s.v1, g = (0, u.bG)([E.A], () => E.A.useForcedColors ? "yes" : "no"), Y = i.useRef(document.body), W = "".concat(g);
-    (0, N.M)(), (0, x.i)("AppSkeleton");
-    let z = (0, D._D)("AppSkeleton"),
-      J = P.wX.useConfig({
+    } = e, a = (0, W.getPlatform)(), f = s.Fr || s.v1, g = (0, u.bG)([E.A], () => E.A.useForcedColors ? "yes" : "no"), H = i.useRef(document.body), Y = "".concat(g);
+    (0, L.i)("AppSkeleton");
+    let K = (0, P._D)("AppSkeleton"),
+      X = R.wX.useConfig({
         location: "AppSkeleton"
       }).enableFastConnectEarlyIdentify,
-      er = (0, L.sK)("AppSkeleton");
+      en = (0, D.sK)("AppSkeleton");
     return i.useEffect(() => {
-      K.isPlatformEmbedded && (z ? d.w.set(D.UR, "json") : d.w.remove(D.UR))
-    }, [z]), i.useEffect(() => {
-      J ? d.w.set(P.Vz, true) : d.w.remove(P.Vz)
-    }, [J]), i.useEffect(() => {
-      er ? d.w.set(L.AL, true) : d.w.remove(L.AL)
-    }, [er]), (0, r.jsx)(B.e, {
+      W.isPlatformEmbedded && (K ? d.w.set(P.UR, "json") : d.w.remove(P.UR))
+    }, [K]), i.useEffect(() => {
+      X ? d.w.set(R.Vz, true) : d.w.remove(R.Vz)
+    }, [X]), i.useEffect(() => {
+      en ? d.w.set(D.AL, true) : d.w.remove(D.AL)
+    }, [en]), (0, r.jsx)(V.e, {
       children: (0, r.jsxs)(y.A, {
-        children: [(0, r.jsx)(q.A, {
+        children: [(0, r.jsx)(z.A, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(m.N, {
-          children: (0, r.jsx)(R.A, {
+          children: (0, r.jsx)(w.A, {
             children: (0, r.jsxs)(p.xpW, {
-              containerRef: Y,
-              children: [(0, r.jsx)(X.Al, {}), (0, r.jsx)(Q.Ay, {}), (0, r.jsx)(c.Utq, {}), (0, r.jsx)(U.Wr, {
-                appContext: $.BRT.APP,
+              containerRef: H,
+              children: [(0, r.jsx)(Q.Al, {}), (0, r.jsx)(Z.Ay, {}), (0, r.jsx)(c.Utq, {}), (0, r.jsx)(k.Wr, {
+                appContext: J.BRT.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(M.Yf, {
-                  children: [null != a ? (0, r.jsx)(en, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(ee.XX, f && ee.Xq),
+                children: (0, r.jsxs)(x.Yf, {
+                  children: [null != a ? (0, r.jsx)(et, {}) : null, (0, r.jsxs)("div", {
+                    className: o()($.XX, f && $.Xq),
                     children: [(0, r.jsx)(C.C1, {}), (0, r.jsx)("div", {
-                      className: ee.x$,
+                      className: $.x$,
                       "data-app-not-dev-tools": true,
                       children: (0, r.jsx)(T.l, {
-                        children: (0, r.jsx)(k.ks, {
+                        children: (0, r.jsx)(j.ks, {
                           children: (0, r.jsx)(b.A.Provider, {
                             value: O.A,
                             children: (0, r.jsx)(S.p, {
-                              children: (0, r.jsxs)(F.xq, {
+                              children: (0, r.jsxs)(G.xq, {
                                 children: [(0, r.jsx)("div", {
-                                  className: o()(f ? ee.C$ : ee.yA),
+                                  className: o()(f ? $.C$ : $.yA),
                                   children: t
-                                }), (0, r.jsx)(_.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(p.bM6, {}), (0, r.jsx)(H.A, {}), (0, r.jsx)(j.up, {}), (0, r.jsx)(l.P, {}), (0, r.jsx)(M.C8, {}), (0, r.jsx)(k.ok, {}), (0, r.jsx)(p.N9M, {
-                                  appContext: $.BRT.APP
-                                }), (0, r.jsx)(v.A, {}), (0, r.jsx)(G.A, {}), (0, r.jsx)(et, {}), (0, r.jsx)(V.A, {})]
+                                }), (0, r.jsx)(_.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(p.bM6, {}), (0, r.jsx)(B.A, {}), (0, r.jsx)(M.up, {}), (0, r.jsx)(l.P, {}), (0, r.jsx)(x.C8, {}), (0, r.jsx)(j.ok, {}), (0, r.jsx)(p.N9M, {
+                                  appContext: J.BRT.APP
+                                }), (0, r.jsx)(v.A, {}), (0, r.jsx)(U.A, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(F.A, {})]
                               })
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(I.A, {}), (0, r.jsx)(Z.A, {
+                    }), (0, r.jsx)(I.A, {}), (0, r.jsx)(q.A, {
                       mobile: f
-                    }), (0, r.jsx)(w.A, {
+                    }), (0, r.jsx)(N.A, {
                       mobile: f
                     })]
                   }), false]
@@ -143,5 +142,5 @@ let et = (0, Chunk268218.Fe)({
           })
         })]
       })
-    }, W)
+    }, Y)
   }

@@ -1,14 +1,14 @@
 /** Chunk was on 26484 **/
-/** chunk id: 612479, original params: e,t,l (module,exports,require) **/
+/** chunk id: 612479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
   r = require.n(Chunk503698),
   Chunk735438 = require("./735438.js"),
-  d = require.n(Chunk735438),
+  s = require.n(Chunk735438),
   Chunk66455 = require("./66455.js"),
   Chunk397927 = require("./397927.js"),
   Chunk964486 = require("./964486.js"),
@@ -25,16 +25,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk768919 = require("./768919.js");
 
-function A(e) {
+function m(e) {
   var t;
   let {
-    modalType: l,
+    modalType: n,
     header: i,
-    body: s,
-    problemTitle: A,
-    problems: R,
-    transitionState: _,
-    ratingOptions: m,
+    body: d,
+    problemTitle: m,
+    problems: A,
+    transitionState: R,
+    ratingOptions: _,
     ratingEmojiKind: D,
     ratingTextLabels: L,
     freeformNeededProblems: I = [],
@@ -46,11 +46,11 @@ function A(e) {
     onClose: P,
     impression: F,
     freeformDescription: M
-  } = e, G = (0, E.A)(R), [k, H] = a.useState(false), [B, w] = a.useState(V), [X, K] = a.useState(null), [Y, q] = a.useState(d().shuffle(R)), [Q, z] = a.useState(""), Z = (0, o.GV)(), W = (0, u.A)(B), J = (0, u.A)(k), $ = (0, u.A)(X), ee = (0, u.A)(y), et = (0, u.A)(Q), el = null;
-  return null == B ? el = "RATING" : B !== U.P0.GOOD && null == X ? el = "PROBLEM" : null != X && I.includes(X.value) && (el = "FREEFORM"), a.useEffect(() => {
-    d().isEqual(G, R) || q((0, h.ed)(R, T))
-  }, [R, G, T]), (0, b.Ay)(() => (f.default.track(g.HAw.OPEN_MODAL, {
-    type: l,
+  } = e, G = (0, E.A)(A), [k, H] = l.useState(false), [B, w] = l.useState(V), [X, K] = l.useState(null), [Y, q] = l.useState(s().shuffle(A)), [Q, z] = l.useState(""), Z = (0, o.GV)(), W = (0, u.A)(B), J = (0, u.A)(k), $ = (0, u.A)(X), ee = (0, u.A)(y), et = (0, u.A)(Q), en = null;
+  return null == B ? en = "RATING" : B !== S.P0.GOOD && null == X ? en = "PROBLEM" : null != X && I.includes(X.value) && (en = "FREEFORM"), l.useEffect(() => {
+    s().isEqual(G, A) || q((0, N.ed)(A, T))
+  }, [A, G, T]), (0, b.Ay)(() => (f.default.track(U.HAw.OPEN_MODAL, {
+    type: n,
     source: "Feedback Modal"
   }), () => {
     ee.current({
@@ -59,41 +59,44 @@ function A(e) {
       dontShowAgain: J.current,
       feedback: et.current
     })
-  })), (0, n.jsxs)(O.EOs, {
+  })), (0, a.jsxs)(O.EOs, {
+    "data-migration-pending": true,
     impression: F,
-    transitionState: _,
-    className: p.CR,
+    transitionState: R,
+    className: j.CR,
     "aria-labelledby": Z,
     parentComponent: "FeedbackModal",
-    children: [(0, n.jsxs)(O.rQ0, {
+    children: [(0, a.jsxs)(O.rQ0, {
+      "data-migration-pending": true,
       separator: false,
-      className: p.N1,
-      children: [(0, n.jsx)(O.Heading, {
+      className: j.N1,
+      children: [(0, a.jsx)(O.Heading, {
         id: Z,
         variant: "heading-xl/extrabold",
         color: "none",
         children: i
-      }), (0, n.jsx)(O.Text, {
+      }), (0, a.jsx)(O.Text, {
         variant: "text-md/normal",
         color: "none",
-        className: p.sB,
-        children: s
+        className: j.sB,
+        children: d
       })]
-    }), ("RATING" === el || "PROBLEM" === el && null == L) && (0, n.jsx)("div", {
-      className: r()(p.OS, p.Ko),
-      children: (0, n.jsx)(S.A, {
-        ratingOptions: m,
+    }), ("RATING" === en || "PROBLEM" === en && null == L) && (0, a.jsx)("div", {
+      className: r()(j.OS, j.Ko),
+      children: (0, a.jsx)(h.A, {
+        ratingOptions: _,
         emojiKind: D,
         textLabels: L,
         selectedRating: B,
         onChangeRating: function(e) {
-          w(e), e === U.P0.GOOD && P()
+          w(e), e === S.P0.GOOD && P()
         }
       })
-    }), "PROBLEM" === el && (0, n.jsx)(O.$mQ, {
-      children: (0, n.jsx)(O.D0$, {
-        label: A,
-        children: (0, n.jsx)(v.A, {
+    }), "PROBLEM" === en && (0, a.jsx)(O.$mQ, {
+      "data-migration-pending": true,
+      children: (0, a.jsx)(O.D0$, {
+        label: m,
+        children: (0, a.jsx)(v.A, {
           options: Y,
           onClick: function(e) {
             K(e), I.includes(e.value) || P()
@@ -106,42 +109,45 @@ function A(e) {
           }
         })
       })
-    }), "FREEFORM" === el && (0, n.jsx)(O.$mQ, {
-      className: p.__invalid_content,
-      children: (0, n.jsx)(O.fs1, {
-        label: null != (t = null == M ? true : M(X)) ? t : j.intl.string(j.t.h95hcn),
-        helperText: x ? true : j.intl.format(j.t.ybi2tD, {
-          helpdeskURL: N.A.getSubmitRequestURL()
+    }), "FREEFORM" === en && (0, a.jsx)(O.$mQ, {
+      "data-migration-pending": true,
+      className: j.__invalid_content,
+      children: (0, a.jsx)(O.fs1, {
+        label: null != (t = null == M ? true : M(X)) ? t : p.intl.string(p.t.h95hcn),
+        helperText: x ? true : p.intl.format(p.t.ybi2tD, {
+          helpdeskURL: g.A.getSubmitRequestURL()
         }),
         value: Q,
-        maxLength: U.u0,
+        maxLength: S.u0,
         onChange: z
       })
-    }), "RATING" === el && !C && (0, n.jsx)(O.jlY, {
-      className: p.qr,
+    }), "RATING" === en && !C && (0, a.jsx)(O.jlY, {
+      "data-migration-pending": true,
+      className: j.qr,
       direction: c.A.Direction.HORIZONTAL,
-      children: (0, n.jsx)(O.Checkbox, {
+      children: (0, a.jsx)(O.Checkbox, {
         checked: k,
         onChange: () => H(!k),
-        label: j.intl.string(j.t["5E9SB9"]),
+        label: p.intl.string(p.t["5E9SB9"]),
         labelType: "secondary"
       })
-    }), ("FREEFORM" === el || "PROBLEM" === el && null != L) && (0, n.jsx)(O.jlY, {
-      className: p.qr,
+    }), ("FREEFORM" === en || "PROBLEM" === en && null != L) && (0, a.jsx)(O.jlY, {
+      "data-migration-pending": true,
+      className: j.qr,
       direction: c.A.Direction.HORIZONTAL,
-      children: (0, n.jsxs)(O.ButtonGroup, {
+      children: (0, a.jsxs)(O.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, n.jsx)(O.Button, {
+        children: [(0, a.jsx)(O.Button, {
           variant: "secondary",
           size: "sm",
-          text: j.intl.string(j.t["13/7kX"]),
+          text: p.intl.string(p.t["13/7kX"]),
           onClick: () => {
-            "FREEFORM" === el ? (K(null), z("")) : w(null)
+            "FREEFORM" === en ? (K(null), z("")) : w(null)
           }
-        }), (0, n.jsx)(O.Button, {
+        }), (0, a.jsx)(O.Button, {
           variant: "primary",
           size: "sm",
-          text: j.intl.string(j.t.geKm7t),
+          text: p.intl.string(p.t.geKm7t),
           onClick: P
         })]
       })

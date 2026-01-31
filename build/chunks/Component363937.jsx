@@ -38,6 +38,7 @@ let d = {
         icon: E ? O[t % O.length] : true
       }));
       return (0, r.jsx)(u.$d, {
+        "data-migration-pending": true,
         value: y,
         onChange: e => {
           let {
