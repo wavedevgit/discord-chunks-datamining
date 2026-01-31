@@ -2,10 +2,10 @@
 /** chunk id: 645959, original params: e,i,t (module,exports,require) **/
 let n, l, s;
 require.d(exports, {
-  A: () => b
+  A: () => T
 }), require("./896048.js"), require("./321073.js");
 var a, u, Chunk989349 = require("./989349.js"),
-  d = require.n(Chunk989349),
+  A = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
   Chunk713402 = require("./713402.js"),
   Chunk73153 = require("./73153.js"),
@@ -31,16 +31,16 @@ let v = new Chunk713402.J(e => {
     lastMessageId: i,
     nudgeTimestamp: t
   } = e;
-  return null != t ? -t : -p.default.extractTimestamp(i)
+  return -Math.max(p.default.extractTimestamp(i), null != t ? t : 0)
 });
 
 function O(e) {
   let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : function(e) {
     var i, t;
-    let n = null != (i = null != (t = h.Ay.lastMessageId(e.id)) ? t : e.lastMessageId) ? i : e.id,
+    let n = null != (i = null != (t = y.Ay.lastMessageId(e.id)) ? t : e.lastMessageId) ? i : e.id,
       l = e.isMessageRequestTimestamp;
     if (null != l) {
-      let e = d()(l).valueOf(),
+      let e = A()(l).valueOf(),
         i = p.default.fromTimestamp(e);
       return p.default.compare(n, i) > 0 ? n : i
     }
@@ -61,11 +61,11 @@ function U() {
   })
 }
 
-function D() {
+function S() {
   let e = E.A.getMutablePrivateChannels();
   for (let i in e) v.set(i, O(e[i]))
 }
-let S = (n = [], l = [], s = [], () => {
+let D = (n = [], l = [], s = [], () => {
   let e = v.values("FAVORITE"),
     i = v.values("DEFAULT");
   return (n !== e || l !== i) && (s = [], e.forEach(e => {
@@ -82,10 +82,10 @@ let S = (n = [], l = [], s = [], () => {
 });
 class L extends(a = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(E.A, y.A, o.A, h.Ay, c.A, C.Ay, R.default, m.A), this.syncWith([C.Ay, o.A, m.A], U)
+    this.waitFor(E.A, h.A, o.A, y.Ay, c.A, R.Ay, C.default, m.A), this.syncWith([R.Ay, o.A, m.A], U)
   }
   getPrivateChannelIds() {
-    return S()
+    return D()
   }
   getSortedChannels() {
     return [v.values("FAVORITE"), v.values("DEFAULT")]
@@ -106,12 +106,12 @@ class L extends(a = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : L[u] = "PrivateChannelSortStore";
-let b = new L(Chunk73153.h, {
+let T = new L(Chunk73153.h, {
   CONNECTION_OPEN: U,
   CONNECTION_OPEN_SUPPLEMENTAL: U,
   OVERLAY_INITIALIZE: U,
-  CACHE_LOADED: D,
-  CACHE_LOADED_LAZY: D,
+  CACHE_LOADED: S,
+  CACHE_LOADED_LAZY: S,
   CHANNEL_UPDATES: function(e) {
     let {
       channels: i

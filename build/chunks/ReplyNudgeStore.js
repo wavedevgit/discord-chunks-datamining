@@ -1,8 +1,8 @@
 /** Chunk was on 88332 **/
 /** chunk id: 493507, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  A: () => U
-}), require("./638769.js"), require("./896048.js"), require("./134528.js"), require("./947204.js");
+  A: () => L
+}), require("./896048.js"), require("./638769.js"), require("./321073.js"), require("./134528.js"), require("./947204.js");
 var n, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk626584 = require("./626584.js"),
@@ -14,9 +14,10 @@ var n, Chunk311907 = require("./311907.js"),
   Chunk734057 = require("./734057.js"),
   Chunk309010 = require("./309010.js"),
   Chunk543465 = require("./543465.js"),
-  Chunk469679 = require("./469679.js");
+  Chunk469679 = require("./469679.js"),
+  Chunk575443 = require("./575443.js");
 
-function m(e, i, t) {
+function N(e, i, t) {
   return i in e ? Object.defineProperty(e, i, {
     value: t,
     enumerable: true,
@@ -24,68 +25,81 @@ function m(e, i, t) {
     writable: true
   }) : e[i] = t, e
 }
-let N = new Chunk626584.A("ReplyNudgeStore"),
-  E = false,
-  y = {};
+let E = new Chunk626584.A("ReplyNudgeStore"),
+  h = false,
+  y = {},
+  R = new Set;
 
-function h(e, i) {
+function C(e, i) {
   let {
     maxNudgeAge: t,
     maxNudgeCount: n
   } = i, l = Date.now(), s = {}, a = Object.entries(e);
+  a.sort((e, i) => i[1].timestamp - e[1].timestamp);
+  let u = 0;
   for (let [e, {
       timestamp: i,
-      isActive: u
-    }] of(a.sort((e, i) => i[1].timestamp - e[1].timestamp), a))
-    if (null != i && l - i < t && u && (s[e] = {
+      isActive: r
+    }] of a)
+    if (null != i && l - i < m.Mk) {
+      let a = r && l - i < t && u < n;
+      s[e] = {
         timestamp: i,
-        isActive: u
-      }, Object.keys(s).length >= n)) break;
-  return N.info("Pruned ".concat(a.length - Object.keys(s).length, " expired nudges")), s
+        isActive: a
+      }, a && u++
+    } return E.info("Pruned ".concat(a.length - Object.keys(s).length, " expired nudges")), s
 }
 
-function C(e) {
-  if (!(e in y)) returnfalse;
+function p(e) {
+  if (!(e in y) || !y[e].isActive) returnfalse;
   y[e].isActive = false
 }
 
-function R(e) {
+function v() {
+  let e = [];
+  for (let [i, {
+      isActive: t
+    }] of Object.entries(y)) t && e.push(i);
+  return e
+}
+
+function O(e) {
   var i, t;
   let n = f.A.getChannel(e);
-  if (null == n) return N.warn("getDMChannelAffinity: Unable to find channel", {
+  if (null == n) return E.warn("getDMChannelAffinity: Unable to find channel", {
     channelId: e
   }), null;
-  if ((null == n ? true : n.isDM()) !== true) return N.warn("getDMChannelAffinity: Channel is not a DM", {
+  if ((null == n ? true : n.isDM()) !== true) return E.warn("getDMChannelAffinity: Channel is not a DM", {
     channelId: e
   }), null;
   let l = n.getRecipientId();
   return null != (i = null == (t = r.A.getUserAffinity(l)) ? true : t.dmProbability) ? i : null
 }
 
-function p() {
+function U() {
   let {
     displayNudges: e,
     maxNudgeAge: i,
     maxNudgeCount: t
   } = c.T.getConfig({
     location: "handleNudgeVisibilityChange"
-  }), n = false !== d.LJ.getSetting() && e;
-  if (E === n) returnfalse;
-  (E = n) && (y = h(y, {
+  }), n = false !== A.LJ.getSetting() && e;
+  if (h === n) returnfalse;
+  (h = n) && (y = C(y, {
     maxNudgeAge: i,
     maxNudgeCount: t
-  }))
+  }), R = new Set(v()))
 }
 
-function v() {
+function S() {
   let e = false;
   for (let i of Object.keys(y)) o.Ay.isChannelMuted(null, i) && (delete y[i], e = true);
   return e
 }
-class O extends(n = Chunk311907.Ay.PersistedStore) {
+class D extends(n = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
     var i;
-    y = null != (i = null == e ? true : e.nudgedChannels) ? i : {}, this.waitFor(u.A, g.default, f.A, M.A, r.A, o.Ay, A.A), this.syncWith([A.A, u.A], p), this.syncWith([o.Ay], v)
+    y = null != (i = null == e ? true : e.nudgedChannels) ? i : {}, this.waitFor(u.A, g.default, f.A, M.A, r.A, o.Ay, d.A), this.syncWith([d.A, u.A], U), this.syncWith([o.Ay], S)
   }
   getState() {
     return {
@@ -93,19 +107,25 @@ class O extends(n = Chunk311907.Ay.PersistedStore) {
     }
   }
   getNudgeTimestamp(e) {
-    var i, t;
-    return E && null != (i = null == (t = y[e]) ? true : t.timestamp) ? i : null
+    if (!h) return null;
+    let i = y[e];
+    if (null == i) return null;
+    if (i.isActive || R.has(e)) {
+      var t;
+      return null != (t = y[e].timestamp) ? t : null
+    }
+    return null
   }
   isChannelNudged(e) {
     var i;
     let {
       includeInvisible: t = false
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return (!!E || !!t) && (null == (i = y[e]) ? true : i.isActive) === true
+    return (!!h || !!t) && (null == (i = y[e]) ? true : i.isActive) === true
   }
 }
-m(O, "displayName", "ReplyNudgeStore"), m(O, "persistKey", "ReplyNudgeStore");
-let U = new O(Chunk73153.h, {
+N(D, "displayName", "ReplyNudgeStore"), N(D, "persistKey", "ReplyNudgeStore");
+let L = new D(Chunk73153.h, {
   REPLY_NUDGE_SET: function(e) {
     let {
       channelId: i,
@@ -118,66 +138,66 @@ let U = new O(Chunk73153.h, {
     } = c.T.getConfig({
       location: "handleReplyNudgeSet"
     });
-    if (i in (y = h(y, {
+    if (i in (y = C(y, {
         maxNudgeAge: n,
         maxNudgeCount: l
       }))) returnfalse;
-    if (Object.keys(y).length >= l) {
-      let e = Object.keys(y),
-        t = e.at(false),
-        n = 1 / 0;
-      for (let i of e) {
-        let e = R(i);
-        if (null == e) {
-          N.warn("handleReplyNudgeSet: Nudge affinity is null", {
+    let s = v();
+    if (s.length >= l) {
+      let e = s.at(false),
+        t = 1 / 0;
+      for (let i of s) {
+        let n = O(i);
+        if (null == n) {
+          E.warn("handleReplyNudgeSet: Nudge affinity is null", {
             nudgedChannelId: i
           });
           continue
         }
-        e < n && (n = e, t = i)
+        n < t && (t = n, e = i)
       }
-      let l = R(i);
-      if (null == l) return N.warn("handleReplyNudgeSet: New nudge affinity is null", {
+      let n = O(i);
+      if (null == n) return E.warn("handleReplyNudgeSet: New nudge affinity is null", {
         channelId: i
       }), false;
-      if (l < n) return N.info("handleReplyNudgeSet: New nudge is lower than the lowest affinity. No space to nudge.", {
+      if (n < t) return E.info("handleReplyNudgeSet: New nudge is lower than the lowest affinity. No space to nudge.", {
         channelId: i,
-        lowestAffinity: n,
-        newNudgeAffinity: l
+        lowestAffinity: t,
+        newNudgeAffinity: n
       }), false;
-      N.info("handleReplyNudgeSet: Evicting nudge with lowest affinity", {
+      E.info("handleReplyNudgeSet: Evicting nudge with lowest affinity", {
         channelId: i,
-        lowestAffinity: n,
-        newNudgeAffinity: l
-      }), delete y[t]
+        lowestAffinity: t,
+        newNudgeAffinity: n
+      }), delete y[e]
     }
     y[i] = {
       timestamp: t,
       isActive: true
-    }
+    }, R.add(i)
   },
   REPLY_NUDGE_CLEAR: function(e) {
     let {
       channelId: i
     } = e;
-    return C(i)
+    return p(i)
   },
   MESSAGE_CREATE: function(e) {
     let {
       message: i
     } = e;
-    return C(i.channel_id)
+    return p(i.channel_id)
   },
   MESSAGE_REACTION_ADD: function(e) {
     let {
       channelId: i,
       userId: t
     } = e;
-    return t === g.default.getId() && C(i)
+    return t === g.default.getId() && p(i)
   },
   CHANNEL_SELECT: function() {
     let e = M.A.getLastSelectedChannelId();
-    return null != e && C(e)
+    return null != e && p(e)
   },
   CHANNEL_DELETE: function(e) {
     let {
@@ -185,9 +205,9 @@ let U = new O(Chunk73153.h, {
         id: i
       }
     } = e;
-    return C(i)
+    return p(i)
   },
   LOGOUT: function() {
-    y = {}, E = false
+    y = {}, R = new Set, h = false
   }
 })
