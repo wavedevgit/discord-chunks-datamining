@@ -77,10 +77,10 @@ let R = {},
   U = 75,
   G = 25;
 
-function F() {
+function V() {
   j = h.A.getProps().results.filter(e => e.type === p.rD.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class V extends(s = Chunk311907.Ay.PersistedStore) {
+class F extends(s = Chunk311907.Ay.PersistedStore) {
   getState() {
     return {
       shouldShowTopicsBar: r
@@ -88,7 +88,7 @@ class V extends(s = Chunk311907.Ay.PersistedStore) {
   }
   initialize(e) {
     var t;
-    r = null == (t = null == e ? true : e.shouldShowTopicsBar) || t, this.waitFor(m.A, _.A, g.A, h.A, E.Ay, y.A, b.Ay, O.default), this.syncWith([h.A], F)
+    r = null == (t = null == e ? true : e.shouldShowTopicsBar) || t, this.waitFor(m.A, _.A, g.A, h.A, E.Ay, y.A, b.Ay, O.default), this.syncWith([h.A], V)
   }
   allSummaries() {
     return R
@@ -169,8 +169,8 @@ function B(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-T(V, "persistKey", "SummaryStore");
-let H = new V(Chunk73153.h, {
+T(F, "persistKey", "SummaryStore");
+let H = new F(Chunk73153.h, {
   CONNECTION_OPEN: () => false,
   CHANNEL_SELECT(e) {
     let {

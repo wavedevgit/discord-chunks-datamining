@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 108197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -140,13 +140,13 @@ let w = Chunk64700.memo(function(e) {
     unread: m.Ay.hasUnread(t.id),
     mentionCount: m.Ay.getMentionCount(t.id),
     isMentionLowImportance: m.Ay.getIsMentionLowImportance(t.id)
-  })), U = (0, o.bG)([p.A], () => p.A.isMuted(t.id)), V = l.useCallback(e => {
+  })), U = (0, o.bG)([h.A], () => h.A.isMuted(t.id)), V = l.useCallback(e => {
     (0, g.JA)(t, !e.shiftKey, v.H9.CHANNEL_LIST)
   }, [t]), B = l.useCallback(() => {
     d.A.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), H = l.useCallback(e => {
     let l = f.A.getChannel(t.id);
-    null != l && (0, h.L3)(e, async () => {
+    null != l && (0, p.L3)(e, async () => {
       let {
         default: e
       } = await n.e("33").then(n.bind(n, 44536));
@@ -154,9 +154,9 @@ let w = Chunk64700.memo(function(e) {
         channel: l
       }))
     })
-  }, [t.id]), F = null == D ? 0 : D.length, K = (0, a.rm)(t.id), {
-    role: Y
-  } = K, W = function(e, t) {
+  }, [t.id]), F = null == D ? 0 : D.length, Y = (0, a.rm)(t.id), {
+    role: K
+  } = Y, W = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -172,7 +172,7 @@ let w = Chunk64700.memo(function(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(K, ["role"]), z = l.useRef(null), q = G > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
+  }(Y, ["role"]), z = l.useRef(null), X = G > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
     channelName: t.name,
     mentionCount: G
   }) : M ? E.intl.formatToPlainString(E.t.YlVvmc, {
@@ -181,7 +181,7 @@ let w = Chunk64700.memo(function(e) {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
-    role: Y,
+    role: K,
     className: s()(C.fx, {
       [C.wH]: i
     }),
@@ -216,7 +216,7 @@ let w = Chunk64700.memo(function(e) {
           innerRef: z,
           className: S.nf,
           onClick: V,
-          "aria-label": q,
+          "aria-label": X,
           focusProps: {
             enabled: false
           },
@@ -232,7 +232,7 @@ let w = Chunk64700.memo(function(e) {
                 userCount: F,
                 video: L,
                 channel: t
-              }) : null, (0, y.A)(G) ? (0, r.jsx)(_.A, {
+              }) : null, (0, y.A)(G) ? (0, r.jsx)(j.A, {
                 mentionsCount: G,
                 isMentionLowImportance: k
               }) : null]
@@ -240,12 +240,12 @@ let w = Chunk64700.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(j.A, {
+    }), (0, r.jsx)(x.A, {
       channel: t,
       collapsed: !I && 1 !== D.length,
       collapsedMax: 6,
       voiceStates: D,
-      location: x.ThZ.GUILD_CHANNEL_LIST,
+      location: _.ThZ.GUILD_CHANNEL_LIST,
       isThread: true
     })]
   })

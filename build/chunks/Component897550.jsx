@@ -33,12 +33,12 @@ class _ extends Chunk64700.PureComponent {
     return (0, r.jsx)(s.$n, {
       size: l ? s.$n.Sizes.MIN : s.$n.Sizes.LARGE,
       fullWidth: !l,
-      color: e ? m.gl : m.Hu,
+      color: e ? f.gl : f.Hu,
       className: a()({
-        [m.AA]: l,
-        [m.Wt]: !l,
-        [m.jP]: e,
-        [m.I7]: !e
+        [f.AA]: l,
+        [f.Wt]: !l,
+        [f.jP]: e,
+        [f.I7]: !e
       }),
       onClick: i,
       children: t
@@ -64,9 +64,9 @@ class b extends Chunk64700.PureComponent {
       selectedOperatingSystem: n
     } = this.state, i = Object.keys(t);
     return 1 === i.length ? null : (0, r.jsxs)(c.A, {
-      className: m.vR,
+      className: f.vR,
       children: [(0, r.jsx)("div", {
-        className: m.me
+        className: f.me
       }), i.map(t => (0, r.jsx)(_, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
@@ -74,11 +74,11 @@ class b extends Chunk64700.PureComponent {
         children: function(e) {
           switch (e) {
             case g.uje.WINDOWS:
-              return f.intl.string(f.t["0/xHFO"]);
+              return m.intl.string(m.t["0/xHFO"]);
             case g.uje.MACOS:
-              return f.intl.string(f.t.E4u4n5);
+              return m.intl.string(m.t.E4u4n5);
             case g.uje.LINUX:
-              return f.intl.string(f.t.tcawo3)
+              return m.intl.string(m.t.tcawo3)
           }
         }(t)
       }, t))]
@@ -87,47 +87,47 @@ class b extends Chunk64700.PureComponent {
   renderRequirementsSection(e, t) {
     if (null == e) return null;
     let n = [{
-      key: f.intl.string(f.t["0TcHzv"]),
+      key: m.intl.string(m.t["0TcHzv"]),
       value: e.operating_system_version
     }, {
-      key: f.intl.string(f.t.eOX6Hq),
+      key: m.intl.string(m.t.eOX6Hq),
       value: e.cpu
     }, {
-      key: f.intl.string(f.t["+WJ5XQ"]),
-      value: null != e.ram ? f.intl.formatToPlainString(f.t.RNRSl6, {
+      key: m.intl.string(m.t["+WJ5XQ"]),
+      value: null != e.ram ? m.intl.formatToPlainString(m.t.RNRSl6, {
         size: (0, u.Xq)(1e3 * e.ram, {
           showDecimalForGB: false
         })
       }) : null
     }, {
-      key: f.intl.string(f.t["+3s/V/"]),
+      key: m.intl.string(m.t["+3s/V/"]),
       value: e.gpu
     }, {
-      key: f.intl.string(f.t["L+x5wB"]),
+      key: m.intl.string(m.t["L+x5wB"]),
       value: null != e.disk ? (0, u.Xq)(1e3 * e.disk, {
         showDecimalForGB: false
       }) : null
     }, {
-      key: f.intl.string(f.t["Ghp2/B"]),
+      key: m.intl.string(m.t["Ghp2/B"]),
       value: e.sound_card
     }, {
-      key: f.intl.string(f.t["+w6nJg"]),
+      key: m.intl.string(m.t["+w6nJg"]),
       value: e.network
     }, {
-      key: f.intl.string(f.t.Au3Vbp),
+      key: m.intl.string(m.t.Au3Vbp),
       value: e.notes
     }].map((e, t) => {
       let n = null != e.value ? e.value.trim() : null;
       return null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
-        className: m.aS,
+        className: f.aS,
         children: [(0, r.jsxs)("span", {
-          className: m.D8,
+          className: f.D8,
           children: [e.key, ":"]
         }), n]
       }, t)
     }).filter(d.Vq);
     return (0, r.jsxs)("div", {
-      className: m.Ln,
+      className: f.Ln,
       children: [(0, r.jsx)(o.A, {
         tag: "h4",
         children: t
@@ -140,15 +140,15 @@ class b extends Chunk64700.PureComponent {
       recommended: t
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
     return (0, r.jsxs)("div", {
-      className: m.GQ,
-      children: [this.renderRequirementsSection(e, f.intl.string(f.t.QCCMXE)), this.renderRequirementsSection(t, f.intl.string(f.t.He39wq))]
+      className: f.GQ,
+      children: [this.renderRequirementsSection(e, m.intl.string(m.t.QCCMXE)), this.renderRequirementsSection(t, m.intl.string(m.t.He39wq))]
     })
   }
   render() {
     return (0, r.jsxs)("div", {
       className: this.props.className,
       children: [(0, r.jsx)(o.A, {
-        children: f.intl.string(f.t.IkOAol)
+        children: m.intl.string(m.t.IkOAol)
       }), this.renderTabs(), this.renderBody()]
     })
   }

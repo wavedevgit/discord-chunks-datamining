@@ -43,9 +43,9 @@ let u = {
       onRest: () => {
         d()
       }
-    }, [t, d, h, n]), f = (0, s.zhh)(g);
+    }, [t, d, h, n]), m = (0, s.zhh)(g);
     return (0, r.jsx)(l.animated.div, {
-      style: f,
+      style: m,
       className: c.Hp,
       children: p
     })

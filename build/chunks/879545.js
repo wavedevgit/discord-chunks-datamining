@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 879545, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 879545, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   D: () => T
 });
@@ -13,5 +13,5 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx");
 let T = (0, Chunk419954.zZ)(Chunk780964.X.OVERLAY_VOICE_WIDGET_CATEGORY, {
   useTitle: () => d.intl.string(d.t.r1TZfh),
-  buildLayout: () => [o.X, s.Z, r.p, a.p, u.$]
+  buildLayout: () => [o.X, s.Z, r.p, u.p, a.$]
 })

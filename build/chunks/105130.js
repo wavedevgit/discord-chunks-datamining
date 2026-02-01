@@ -14,7 +14,7 @@ var Chunk592653 = require("./592653.js"),
   Chunk360469 = require("./360469.js");
 
 function d(e, t, n) {
-  var d, p, h, g, f, m, A, _;
+  var d, p, h, g, m, f, A, _;
   switch (t) {
     case c.ZE4.ACTIVITY_PIP_MODE_UPDATE: {
       let t = null == (d = e.application) ? true : d.id,
@@ -54,11 +54,11 @@ function d(e, t, n) {
       if (!t) return null;
       let r = a.A.getQuest(t),
         i = (0, s.TP)(r);
-      if (null == r || null == i || i !== (null == (m = e.application) ? true : m.id)) return null;
+      if (null == r || null == i || i !== (null == (f = e.application) ? true : f.id)) return null;
       return {
         quest_id: t,
         is_enrolled: (null == (A = r.userStatus) ? true : A.enrolledAt) != null,
-        enrolled_at: null != (f = null == (_ = r.userStatus) ? true : _.enrolledAt) ? f : null
+        enrolled_at: null != (m = null == (_ = r.userStatus) ? true : _.enrolledAt) ? m : null
       }
     }
     default:

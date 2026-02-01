@@ -68,12 +68,12 @@ function j(e) {
     idle: M,
     selectedParticipant: j,
     embeddedActivity: k
-  } = e, U = (0, _.Us)() === R.BRT.POPOUT, G = (0, o.bG)([S.A], () => S.A.isVideoEnabled()), F = (0, o.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), V = false === (null == (t = null == F ? true : F.disabled) || t), B = (0, u.A)([s])[0], H = (0, m.A)(a), {
+  } = e, U = (0, _.Us)() === R.BRT.POPOUT, G = (0, o.bG)([S.A], () => S.A.isVideoEnabled()), V = (0, o.bG)([S.A], () => Object.values(S.A.getVideoDevices())[0]), F = false === (null == (t = null == V ? true : V.disabled) || t), B = (0, u.A)([s])[0], H = (0, m.A)(a), {
     parentAnalyticsLocation: Y
   } = (0, c.Ay)(), W = e => {
     (0, f.X)(Y, f.O.CAMERA, e), l.A.setVideoEnabled(e)
   }, K = () => {
-    V ? W(true) : (0, g.A)()
+    F ? W(true) : (0, g.A)()
   }, z = () => {
     (0, f.X)(Y, f.O.POPOUT, true), null != a && (0, w.A)({
       onConfirm: async () => {
@@ -104,7 +104,7 @@ function j(e) {
         children: [(0, r.jsx)(I.A, {
           className: L.Oc,
           enabled: G,
-          cameraUnavailable: !V,
+          cameraUnavailable: !F,
           hasPermission: H,
           onChange: W,
           onCameraUnavailable: K

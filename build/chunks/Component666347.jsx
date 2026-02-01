@@ -59,28 +59,29 @@ function L(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, p = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, b] = i.useState(false), [O, v] = i.useState(false), A = (0, d.bG)([E.default], () => E.default.getCurrentUser());
-  (0, h.Ay)(() => (m.current = setTimeout(R, D), _.A.track(C.HAw.NOTIFICATION_VIEWED, {
+  (0, h.Ay)(() => (m.current = setTimeout(P, D), _.A.track(C.HAw.NOTIFICATION_VIEWED, {
     notif_type: T.KS.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
-  let R = i.useCallback(() => {
+  let R = null != (t = null == A ? true : A.isStaff()) && t || null != (n = null == A ? true : A.isStaffPersonal()) && n,
+    P = i.useCallback(() => {
       p.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [p, o, u]),
-    P = i.useCallback(e => {
+    L = i.useCallback(e => {
       O || (v(true), null == o || o(), _.A.track(C.HAw.NOTIFICATION_CLICKED, {
         notif_type: T.KS.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [o, l, O]),
-    L = i.useCallback(e => {
+    x = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (b(true), null != m.current && clearTimeout(m.current)) : b(false)
     }, [b]),
-    x = i.useCallback(e => {
+    M = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.bG)([I.A], () => I.A.getFocusedRunningGame()),
-    j = g ? (0, r.jsxs)("div", {
+    j = (0, d.bG)([I.A], () => I.A.getFocusedRunningGame()),
+    k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-strong",
@@ -103,22 +104,21 @@ function L(e) {
         })]
       })]
     }) : null,
-    k = g ? null : N.intl.string(N.t.oEJEFq),
-    U = null != (t = null == A ? true : A.isStaff()) && t || null != (n = null == A ? true : A.isStaffPersonal()) && n;
+    U = g ? null : N.intl.string(N.t.oEJEFq);
   return (0, r.jsx)(S.$, {
     title: N.intl.string(N.t.U38qZj),
-    body: j,
-    hint: U ? k : true,
+    body: k,
+    hint: R ? U : true,
     confirmText: N.intl.string(N.t.a3HlgJ),
-    cancelText: null != M ? N.intl.string(N.t.qIYnPo) : true,
+    cancelText: null != j ? N.intl.string(N.t.qIYnPo) : true,
     icon: (0, r.jsx)(y.A, {
       width: 40,
       height: 40,
       className: w.Lo
     }),
-    onNotificationClick: L,
-    onConfirmClick: P,
-    onCancelClick: null != M ? x : true,
+    onNotificationClick: x,
+    onConfirmClick: L,
+    onCancelClick: null != j ? M : true,
     onDismissClick: o,
     expand: true,
     locked: true,

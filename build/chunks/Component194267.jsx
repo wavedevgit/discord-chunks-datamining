@@ -76,8 +76,8 @@ let j = 10,
   k = 20,
   U = 15,
   G = 4,
-  F = 5,
-  V = 8,
+  V = 5,
+  F = 8,
   B = 10;
 
 function H(e) {
@@ -275,7 +275,7 @@ function z(e) {
     }))].slice(0, j), [v, A]),
     S = i.useMemo(() => {
       let e = I.length;
-      return e <= G ? G - e : e === F ? 0 : e <= V ? V - e : B - e
+      return e <= G ? G - e : e === V ? 0 : e <= F ? F - e : B - e
     }, [I.length]),
     T = !g && 0 === I.length,
     N = E || T;

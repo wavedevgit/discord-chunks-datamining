@@ -1,4 +1,4 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 46673 **/
 /** chunk id: 439147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -24,8 +24,8 @@ async function A(e, t) {
   i.forAll(e => {
     E.default.compare(e.id, T) > 0 && (0, c.Wm)(e, n) && I++
   });
-  let O = a.A.getChannel(e);
-  null != O && O.isThread() && (O.isArchivedThread() && await o.A.unarchiveThread(O, false), l.A.hasJoined(e) || await o.A.joinThread(O, "Mark Unread")), _.log("Marking unread", {
+  let O = o.A.getChannel(e);
+  null != O && O.isThread() && (O.isArchivedThread() && await a.A.unarchiveThread(O, false), l.A.hasJoined(e) || await a.A.joinThread(O, "Mark Unread")), _.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.Bo.post({

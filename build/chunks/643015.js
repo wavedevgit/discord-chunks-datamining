@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 88474 **/
 /** chunk id: 643015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -11,12 +11,12 @@ var Chunk64700 = require("./64700.js"),
 let o = new Set(["GB"]);
 
 function c() {
-  let e = (0, i.bG)([a.A], () => a.A.getUserCountryCode()),
-    t = false === (0, i.bG)([l.default], () => {
+  let e = (0, l.bG)([s.A], () => s.A.getUserCountryCode()),
+    t = false === (0, l.bG)([i.default], () => {
       var e;
-      return null == (e = l.default.getCurrentUser()) ? true : e.nsfwAllowed
+      return null == (e = i.default.getCurrentUser()) ? true : e.nsfwAllowed
     });
   return r.useEffect(() => {
-    null == e && (0, s.xf)()
+    null == e && (0, a.xf)()
   }, [e]), null != e && !!o.has(e.alpha2) && !!t
 }

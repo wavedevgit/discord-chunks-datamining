@@ -1,5 +1,6 @@
-/** Chunk was on 78376 **/
-/** chunk id: 754388, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 69694 **/
+/** chunk id: 754388, original params: e,t,r (module,exports,require) **/
+"use strict";
 module.exports = {
   wx: "header__6c75d",
   iT: "modalCloseButton__6c75d",

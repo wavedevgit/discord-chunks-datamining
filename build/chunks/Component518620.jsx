@@ -20,8 +20,8 @@ let h = function(e) {
     renderRow: n,
     renderSection: h,
     footer: g,
-    sectionFilter: f,
-    renderSectionFooter: m
+    sectionFilter: m,
+    renderSectionFooter: f
   } = e, A = e => {
     let {
       section: r,
@@ -33,13 +33,13 @@ let h = function(e) {
   }, _ = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
-    return f === u.m3P.ALL && (null == i ? true : i.giftIntentType) === d.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
-  }, [t, f]), b = i.useCallback(e => {
+    return m === u.m3P.ALL && (null == i ? true : i.giftIntentType) === d.np.FRIEND_ANNIVERSARY && 0 === e ? 72 : 62
+  }, [t, m]), b = i.useCallback(e => {
     let {
       section: t
     } = e;
     return h(t)
-  }, [h]), E = i.useCallback(e => null == m ? null : m(e.section), [m]), O = i.useCallback(e => null == m ? 0 : 48 * (null != m(e)), [m]), y = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = i.useRef(null), v = i.useCallback(() => new Promise(e => {
+  }, [h]), E = i.useCallback(e => null == f ? null : f(e.section), [f]), O = i.useCallback(e => null == f ? 0 : 48 * (null != f(e)), [f]), y = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = i.useRef(null), v = i.useCallback(() => new Promise(e => {
     let t = I.current;
     if (null == t) return e();
     t.scrollToTop({

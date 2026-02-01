@@ -177,10 +177,10 @@ let L = 24,
     } = (0, N.A)(_, n, a, d), S = (0, s.bG)([p.A], () => p.A.isSyncing), {
       activeSubscription: L,
       activeSubscriptionListing: x
-    } = (0, E.A)(a), M = (null == x ? true : x.id) === t, j = (null == L ? true : L.status) === R.Dmq.CANCELED, [G, F] = i.useState(false), [V, B] = i.useState(false), H = i.useCallback(e => {
+    } = (0, E.A)(a), M = (null == x ? true : x.id) === t, j = (null == L ? true : L.status) === R.Dmq.CANCELED, [G, V] = i.useState(false), [F, B] = i.useState(false), H = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), B(t)
-    }, []), [Y] = g.tx(t), [W] = g.I8(t), [K] = g.V_(t), [z] = g.hh(t), q = (0, y.A)(n, t), Z = null != K && null == L && q, Q = () => F(e => !e), X = (0, u.A)(w.Yl), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.bG)([f.A], () => f.A.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = P.intl.string(P.t.KzmEA9);
+    }, []), [Y] = g.tx(t), [W] = g.I8(t), [K] = g.V_(t), [z] = g.hh(t), q = (0, y.A)(n, t), Z = null != K && null == L && q, Q = () => V(e => !e), X = (0, u.A)(w.Yl), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.bG)([f.A], () => f.A.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = P.intl.string(P.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.kL,
       "aria-label": Y,
@@ -242,12 +242,12 @@ let L = 24,
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                className: o()((!V || !G) && D.Zp),
+                className: o()((!F || !G) && D.Zp),
                 children: (0, r.jsx)("div", {
                   ref: H,
                   children: W
                 })
-              }), V && (0, r.jsx)(U, {
+              }), F && (0, r.jsx)(U, {
                 isViewAll: G,
                 onToggle: Q,
                 showMoreText: ea

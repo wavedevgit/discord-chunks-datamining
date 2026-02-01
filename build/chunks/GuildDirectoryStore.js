@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 519480, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -43,15 +43,15 @@ function u(e, t) {
   }), e
 }
 let d = Object.freeze({}),
-  h = false,
-  p = {},
+  p = false,
+  h = {},
   g = {},
   f = {},
   m = {},
   b = {};
 class A extends(r = Chunk311907.Ay.Store) {
   isFetching() {
-    return h
+    return p
   }
   getCurrentCategoryId(e) {
     var t;
@@ -59,15 +59,15 @@ class A extends(r = Chunk311907.Ay.Store) {
   }
   getDirectoryEntries(e, t) {
     var n;
-    return null != t ? null == (n = f[e]) ? true : n[t] : p[e]
+    return null != t ? null == (n = f[e]) ? true : n[t] : h[e]
   }
   getDirectoryEntry(e, t) {
     var n;
-    return null == (n = p[e]) ? true : n[t]
+    return null == (n = h[e]) ? true : n[t]
   }
   getDirectoryAllEntriesCount(e) {
     var t;
-    return Object.keys(null != (t = p[e]) ? t : {}).length
+    return Object.keys(null != (t = h[e]) ? t : {}).length
   }
   getDirectoryCategoryCounts(e) {
     var t;
@@ -80,14 +80,14 @@ class A extends(r = Chunk311907.Ay.Store) {
 o(A, "displayName", "GuildDirectoryStore");
 let y = new A(Chunk73153.h, {
   GUILD_DIRECTORY_FETCH_START: function() {
-    h = true
+    p = true
   },
   GUILD_DIRECTORY_FETCH_SUCCESS: function(e) {
     let {
       channelId: t,
       entries: n
     } = e;
-    h = false;
+    p = false;
     let r = {},
       l = {};
     n.forEach(e => {
@@ -95,25 +95,25 @@ let y = new A(Chunk73153.h, {
       r[t.guildId] = t, null != l[t.primaryCategoryId] ? l[t.primaryCategoryId][t.guildId] = t : l[t.primaryCategoryId] = {
         [t.guildId]: t
       }
-    }), p[t] = r, f[t] = l
+    }), h[t] = r, f[t] = l
   },
   GUILD_DIRECTORY_FETCH_FAILURE: function() {
-    h = false
+    p = false
   },
   GUILD_DIRECTORY_ENTRY_CREATE: function(e) {
     var t, n, r, l, i;
     let {
       channelId: o,
       entry: d
-    } = e, h = (0, s.mR)(d);
-    if (null == h || (null == (n = p[o]) ? true : n[h.guildId]) != null) return;
-    p[o] = u(c({}, p[o]), {
-      [h.guildId]: h
+    } = e, p = (0, s.mR)(d);
+    if (null == p || (null == (n = h[o]) ? true : n[p.guildId]) != null) return;
+    h[o] = u(c({}, h[o]), {
+      [p.guildId]: p
     });
-    let g = null != (t = h.primaryCategoryId) ? t : a.mU.UNCATEGORIZED;
+    let g = null != (t = p.primaryCategoryId) ? t : a.mU.UNCATEGORIZED;
     if (f[o] = u(c({}, f[o]), {
         [g]: u(c({}, null == (r = f[o]) ? true : r[g]), {
-          [h.guildId]: h
+          [p.guildId]: p
         })
       }), null != m[o]) {
       let e = null != (l = null == (i = m[o]) ? true : i[g]) ? l : 0;
@@ -127,11 +127,11 @@ let y = new A(Chunk73153.h, {
     let {
       channelId: r,
       guildId: l
-    } = e, i = null == (t = p[r]) ? true : t[l];
+    } = e, i = null == (t = h[r]) ? true : t[l];
     if (null == i) return;
     let s = i.primaryCategoryId,
-      a = Object.assign({}, p[r]);
-    delete a[l], null == (n = b[r]) || n.delete(l), b[r] = new Set(b[r]), p[r] = a;
+      a = Object.assign({}, h[r]);
+    delete a[l], null == (n = b[r]) || n.delete(l), b[r] = new Set(b[r]), h[r] = a;
     let o = Object.assign({}, f[r][s]);
     if (delete o[l], f[r] = u(c({}, f[r]), {
         [s]: o
@@ -143,25 +143,25 @@ let y = new A(Chunk73153.h, {
     }
   },
   GUILD_DIRECTORY_ENTRY_UPDATE: function(e) {
-    var t, n, r, l, i, o, d, h, g;
+    var t, n, r, l, i, o, d, p, g;
     let {
       channelId: b,
       entry: A
-    } = e, y = (0, s.mR)(A), O = null == (r = p[b]) ? true : r[y.guildId];
-    p[b] = u(c({}, p[b]), {
+    } = e, y = (0, s.mR)(A), O = null == (r = h[b]) ? true : r[y.guildId];
+    h[b] = u(c({}, h[b]), {
       [y.guildId]: c({}, O, y)
     });
-    let _ = null != (t = null == O ? true : O.primaryCategoryId) ? t : a.mU.UNCATEGORIZED,
-      j = null != (n = y.primaryCategoryId) ? n : a.mU.UNCATEGORIZED,
-      x = Object.assign({}, null == (l = f[b]) ? true : l[_]);
-    null != O && _ !== j && delete x[y.guildId], f[b] = u(c({}, f[b]), {
-      [_]: x,
-      [j]: u(c({}, null == (i = f[b]) ? true : i[j]), {
+    let j = null != (t = null == O ? true : O.primaryCategoryId) ? t : a.mU.UNCATEGORIZED,
+      x = null != (n = y.primaryCategoryId) ? n : a.mU.UNCATEGORIZED,
+      _ = Object.assign({}, null == (l = f[b]) ? true : l[j]);
+    null != O && j !== x && delete _[y.guildId], f[b] = u(c({}, f[b]), {
+      [j]: _,
+      [x]: u(c({}, null == (i = f[b]) ? true : i[x]), {
         [y.guildId]: c({}, O, y)
       })
-    }), j !== _ && null != m[b] && (m[b] = u(c({}, m[b]), {
-      [_]: (null == (d = m[b]) ? true : d[_]) > 0 ? (null == (h = m[b]) ? true : h[_]) - 1 : 0,
-      [j]: (null != (o = null == (g = m[b]) ? true : g[j]) ? o : 0) + 1
+    }), x !== j && null != m[b] && (m[b] = u(c({}, m[b]), {
+      [j]: (null == (d = m[b]) ? true : d[j]) > 0 ? (null == (p = m[b]) ? true : p[j]) - 1 : 0,
+      [x]: (null != (o = null == (g = m[b]) ? true : g[x]) ? o : 0) + 1
     }))
   },
   GUILD_DIRECTORY_CATEGORY_SELECT: function(e) {

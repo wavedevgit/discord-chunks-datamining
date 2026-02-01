@@ -1,4 +1,4 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 684407, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T,
@@ -11,9 +11,9 @@ let s = {},
   u = {},
   c = false,
   E = false,
-  d = false;
+  _ = false;
 
-function _(e) {
+function d(e) {
   let {
     guild: t
   } = e.invite;
@@ -35,7 +35,7 @@ class A extends(r = Chunk311907.Ay.Store) {
     return E
   }
   hasError() {
-    return d
+    return _
   }
   hasSeen(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
@@ -53,8 +53,8 @@ class A extends(r = Chunk311907.Ay.Store) {
   writable: true
 }) : A[l] = "WelcomeScreenStore";
 let T = new A(Chunk73153.h, {
-  INVITE_RESOLVE_SUCCESS: _,
-  INVITE_ACCEPT_SUCCESS: _,
+  INVITE_RESOLVE_SUCCESS: d,
+  INVITE_ACCEPT_SUCCESS: d,
   WELCOME_SCREEN_SUBMIT_SUCCESS: g,
   WELCOME_SCREEN_UPDATE: g,
   WELCOME_SCREEN_VIEW: function(e) {
@@ -76,10 +76,10 @@ let T = new A(Chunk73153.h, {
     u[t] = false
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    E = true, d = false
+    E = true, _ = false
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    E = false, d = false;
+    E = false, _ = false;
     let {
       welcomeScreen: t,
       guildId: n
@@ -87,6 +87,6 @@ let T = new A(Chunk73153.h, {
     o[n] = null != t ? t : s
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    E = false, d = true
+    E = false, _ = true
   }
 })

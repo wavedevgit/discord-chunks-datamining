@@ -1,7 +1,7 @@
-/** Chunk was on 88974 **/
-/** chunk id: 40389, original params: t,n,i (module,exports,require) **/
+/** Chunk was on 78441 **/
+/** chunk id: 40389, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,32 +17,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk262763 = require("./262763.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function v(t) {
-  let n = (0, h._M)(t),
-    i = (0, d.bG)([A.A], () => A.A.isInChannel(t.id)),
-    l = (0, d.bG)([A.A], () => !a().isEmpty(A.A.getVoiceStatesForChannel(t.id))),
+function p(t) {
+  let e = (0, A._M)(t),
+    n = (0, o.bG)([f.A], () => f.A.isInChannel(t.id)),
+    l = (0, o.bG)([f.A], () => !a().isEmpty(f.A.getVoiceStatesForChannel(t.id))),
     {
-      needSubscriptionToAccess: v
+      needSubscriptionToAccess: p
     } = (0, c.A)(t.id),
-    b = (0, d.bG)([u.A], () => u.A.getChatOpen(t.id)),
-    p = r.useCallback(() => {
+    v = (0, o.bG)([u.A], () => u.A.getChatOpen(t.id)),
+    b = r.useCallback(() => {
       g.A.handleVoiceConnect({
         channel: t,
-        connected: i,
-        needSubscriptionToAccess: v,
+        connected: n,
+        needSubscriptionToAccess: p,
         locked: false
       })
-    }, [t, i, v]);
-  return i || !n ? null : (0, e.jsxs)(e.Fragment, {
-    children: [(0, e.jsx)(o.Drp, {
+    }, [t, n, p]);
+  return n || !e ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(s.Drp, {
       id: "join-thread-voice",
-      label: l ? m.intl.string(m.t["0D/6Rz"]) : m.intl.string(m.t.My50nf),
-      action: p
-    }), l && !b && (0, e.jsx)(o.Drp, {
+      label: l ? h.intl.string(h.t["0D/6Rz"]) : h.intl.string(h.t.My50nf),
+      action: b
+    }), l && !v && (0, i.jsx)(s.Drp, {
       id: "open-chat",
-      label: m.intl.string(m.t.ZXxLQg),
+      label: h.intl.string(h.t.ZXxLQg),
       action: () => {
-        s.A.updateChatOpen(t.id, true)
+        d.A.updateChatOpen(t.id, true)
       }
     })]
   })

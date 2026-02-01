@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 579153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -33,7 +33,7 @@ let g = e => {
           channel: t,
           remoteMode: n,
           onInteraction: (0, c.s)("MoreSettingsMenu", g, {
-            entrypoint: h.GK.THREE_DOT
+            entrypoint: p.GK.THREE_DOT
           })
         })
       })
@@ -54,7 +54,7 @@ let g = e => {
         onClick: e => {
           (0, o.X)(g, o.O.MORE), n(e)
         },
-        label: p.intl.string(p.t.PdRCRg),
+        label: h.intl.string(h.t.PdRCRg),
         iconComponent: i.jNK,
         color: "primaryDark",
         isActive: l

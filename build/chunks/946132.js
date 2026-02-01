@@ -1,6 +1,8 @@
-/** Chunk was on 21738 **/
+/** Chunk was on 57010 **/
 /** chunk id: 946132, original params: e,t,n (module,exports,require) **/
-require("./896048.js");
+require.d(exports, {
+  A: () => g
+}), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk640631 = require("./640631.js"),
@@ -9,7 +11,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk320501 = require("./320501.js"),
   Chunk595766 = require("./595766.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,11 +19,11 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = false / 0,
-  p = new Chunk626584.A("MessagePreviewStore");
-class h extends Chunk311907.Ay.Store {
+let c = false / 0,
+  h = new Chunk626584.A("MessagePreviewStore");
+class f extends Chunk311907.Ay.Store {
   initialize() {
-    this.waitFor(s.A, o.A)
+    this.waitFor(a.A, u.A)
   }
   isLatest(e, t) {
     var n;
@@ -37,7 +39,7 @@ class h extends Chunk311907.Ay.Store {
     return null != (n = null == (r = this.guilds.get(e)) ? true : r.messageRecord(t)) ? n : null
   }
   data(e) {
-    return this.guilds.has(e) || this.guilds.set(e, new c.x), this.guilds.get(e)
+    return this.guilds.has(e) || this.guilds.set(e, new o.x), this.guilds.get(e)
   }
   handleOneGuildCreate(e) {
     var t, n;
@@ -62,7 +64,7 @@ class h extends Chunk311907.Ay.Store {
     var t, n;
     let r = null != (t = e.guildId) ? t : null;
     if ((null == (n = this.data(r)) ? true : n.messageId(e.channelId)) === e.id) {
-      let t = o.A.getMessages(e.channelId),
+      let t = u.A.getMessages(e.channelId),
         n = t.hasMoreAfter ? null : t.last();
       null != n ? this.data(r).put(e.channelId, n, this.generation) : this.data(r).delete(e.channelId)
     }
@@ -83,26 +85,26 @@ class h extends Chunk311907.Ay.Store {
   }
   handleLoadMessagesSuccess(e) {
     var t, n;
-    let r = s.A.getBasicChannel(e.channelId);
+    let r = a.A.getBasicChannel(e.channelId);
     if (null == r) returnfalse;
     (0, l.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
   }
   handleLocalMessagesLoaded(e) {
-    let t = s.A.getBasicChannel(e.channelId);
+    let t = a.A.getBasicChannel(e.channelId);
     if (null != t) {
       var n;
-      (0, l.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)
+      (0, l.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, c)
     }
   }
   handleMessagePreviewsLoaded(e) {
-    p.verbose("adding remote previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
+    h.verbose("adding remote previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
     let t = this.data(e.guildId);
     for (let n of e.messages) t.isLatest(n.channel_id, this.generation) || t.put(n.channel_id, n, this.generation)
   }
   handleMessagePreviewsLocallyLoaded(e) {
-    p.verbose("adding local previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
+    h.verbose("adding local previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
     let t = this.data(e.guildId);
-    for (let [n, r] of e.messages) t.has(n) || t.put(n, r, d);
+    for (let [n, r] of e.messages) t.has(n) || t.put(n, r, c);
     t.localNeeded = false
   }
   handleLogout(e) {
@@ -122,7 +124,7 @@ class h extends Chunk311907.Ay.Store {
       MESSAGE_PREVIEWS_LOCALLY_LOADED: e => this.handleMessagePreviewsLocallyLoaded(e),
       MESSAGE_UPDATE: e => this.handleMessageUpdate(e),
       THREAD_LIST_SYNC: e => this.handleThreadListSync(e)
-    }), u(this, "guilds", new Map), u(this, "generation", 0)
+    }), d(this, "guilds", new Map), d(this, "generation", 0)
   }
 }
-new h
+let g = new f

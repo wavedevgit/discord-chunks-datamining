@@ -25,7 +25,7 @@ var Chunk503698 = require("./503698.js"),
 function E() {
   let {
     analyticsLocations: e
-  } = (0, d.Ay)(u.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([f.A], () => f.A.hasConsented(A.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, p.GV)();
+  } = (0, d.Ay)(u.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([m.A], () => m.A.hasConsented(A.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, p.GV)();
   return (0, r.jsx)(d.f5, {
     value: e,
     children: (0, r.jsx)(c.A, {
@@ -53,7 +53,7 @@ function E() {
                   markAsDismissed: n
                 })
               }
-            }), (0, r.jsx)(m.A, {})]
+            }), (0, r.jsx)(f.A, {})]
           })
         })
       })

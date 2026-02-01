@@ -15,7 +15,7 @@ var l, Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk737045 = require("./737045.js");
 
-function m(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -112,7 +112,7 @@ class P extends(l = Chunk311907.Ay.Store) {
     return T
   }
 }
-m(P, "displayName", "ChannelSettingsPermissionsStore");
+f(P, "displayName", "ChannelSettingsPermissionsStore");
 let w = new P(Chunk73153.h, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
@@ -184,6 +184,6 @@ let w = new P(Chunk73153.h, {
     let {
       advancedMode: t
     } = e;
-    T = t, c.w.set(f.t0, t)
+    T = t, c.w.set(m.t0, t)
   }
 })

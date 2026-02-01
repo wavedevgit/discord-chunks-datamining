@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 586791, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 586791, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   G: () => d
 });
@@ -11,7 +11,7 @@ var Chunk934551 = require("./934551.js"),
   Chunk758885 = require("./758885.js");
 let o = (0, Chunk419954.t_)(Chunk780964.X.DEVELOPER_OPTIONS_PANEL, {
     useTitle: () => "Developer Options",
-    buildLayout: () => [a.J, u.y, r.G]
+    buildLayout: () => [u.J, a.y, r.G]
   }),
   d = (0, Chunk419954.i4)(Chunk780964.X.DEVELOPER_OPTIONS_SIDEBAR_ITEM, {
     useTitle: () => "Developer Options",

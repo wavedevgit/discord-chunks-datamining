@@ -1,54 +1,54 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 224805, original params: e,t,n (module,exports,require) **/
-function r(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = l
     })
   }
   return e
 }
 require.d(exports, {
-  A: () => s,
+  A: () => a,
   x: () => i
 });
-let l = (0, require("./839214.js").D)(() => ({
+let r = (0, require("./839214.js").D)(() => ({
   channelDrafts: {}
 }));
 
 function i(e, t) {
-  l.setState(n => {
-    var l, i;
-    let s = n.channelDrafts[e];
+  r.setState(n => {
+    var r, i;
+    let a = n.channelDrafts[e];
     return {
-      channelDrafts: (l = r({}, n.channelDrafts), i = i = {
-        [e]: r({}, {
+      channelDrafts: (r = l({}, n.channelDrafts), i = i = {
+        [e]: l({}, {
           heroFile: null,
           title: "",
           publish: true,
           createThread: true
-        }, s, t)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, a, t)
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(i)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-      }), l)
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      }), r)
     }
   })
 }
-let s = l
+let a = r

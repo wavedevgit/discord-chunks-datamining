@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 153244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk509826 = require("./509826.js");
 
-function f() {
+function m() {
   return (0, r.jsxs)(l.dO, {
     children: [(0, r.jsx)(s.A, {
       path: p.BVt.APPLICATION_LIBRARY_SETTINGS,
@@ -40,13 +40,13 @@ function f() {
     })]
   })
 }
-let m = Chunk64700.memo(function() {
+let f = Chunk64700.memo(function() {
   return i.useEffect(() => {
     (0, c.d)("application_library")
   }, []), (0, r.jsxs)("div", {
     className: g.k,
     children: [(0, r.jsx)(o.HI, {
       location: h.intl.string(h.t.cw57ar)
-    }), (0, r.jsx)(f, {})]
+    }), (0, r.jsx)(m, {})]
   })
 })

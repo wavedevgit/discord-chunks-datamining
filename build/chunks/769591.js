@@ -1,10 +1,10 @@
-/** Chunk was on 59461 **/
-/** chunk id: 769591, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 71020 **/
+/** chunk id: 769591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   b8: () => d,
-  ct: () => E,
-  os: () => g
+  ct: () => g,
+  os: () => m
 }), require("./896048.js"), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk311907 = require("./311907.js"),
@@ -19,46 +19,46 @@ var Chunk665260 = require("./665260.js"),
 function d() {
   return [{
     id: "15-minutes",
-    label: _.intl.string(_.t["8ot6gv"]),
-    value: s.Xx.MINUTES_15
+    label: u.intl.string(u.t["8ot6gv"]),
+    value: c.Xx.MINUTES_15
   }, {
     id: "1-hour",
-    label: _.intl.string(_.t.UMWBZr),
-    value: s.Xx.HOURS_1
+    label: u.intl.string(u.t.UMWBZr),
+    value: c.Xx.HOURS_1
   }, {
     id: "3-hours",
-    label: _.intl.string(_.t.QmYWtu),
-    value: s.Xx.HOURS_3
+    label: u.intl.string(u.t.QmYWtu),
+    value: c.Xx.HOURS_3
   }, {
     id: "8-hours",
-    label: _.intl.string(_.t.EpAXPC),
-    value: s.Xx.HOURS_8
+    label: u.intl.string(u.t.EpAXPC),
+    value: c.Xx.HOURS_8
   }, {
     id: "24-hours",
-    label: _.intl.string(_.t["755t4q"]),
-    value: s.Xx.HOURS_24
+    label: u.intl.string(u.t["755t4q"]),
+    value: c.Xx.HOURS_24
   }, {
     id: "forever",
-    label: _.intl.string(_.t.r3LawO),
-    value: s.Xx.ALWAYS
+    label: u.intl.string(u.t.r3LawO),
+    value: c.Xx.ALWAYS
   }]
 }
-let S = {
+let b = {
   ignoreMute: false,
   ignoreUnreadSetting: true,
   ignoreNotificationSetting: false
 };
 
-function E(e) {
-  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S;
-  return a.default.keys(e).filter(t => {
-    var l, u;
-    let a = e[t].message_notifications !== o.orn.NULL,
-      s = i.Lt(null != (l = e[t].flags) ? l : 0, c.vv.UNREADS_ALL_MESSAGES) || i.Lt(null != (u = e[t].flags) ? u : 0, c.vv.UNREADS_ONLY_MENTIONS);
-    return !n.ignoreUnreadSetting && s || !n.ignoreNotificationSetting && a || !n.ignoreMute && (0, r.tG)(e[t])
+function g(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b;
+  return o.default.keys(e).filter(n => {
+    var r, a;
+    let o = e[n].message_notifications !== s.orn.NULL,
+      c = i.Lt(null != (r = e[n].flags) ? r : 0, _.vv.UNREADS_ALL_MESSAGES) || i.Lt(null != (a = e[n].flags) ? a : 0, _.vv.UNREADS_ONLY_MENTIONS);
+    return !t.ignoreUnreadSetting && c || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, l.tG)(e[n])
   })
 }
 
-function g(e) {
-  return (0, l.bG)([u.Ay], () => u.Ay.useNewNotifications)
+function m(e) {
+  return (0, r.bG)([a.Ay], () => a.Ay.useNewNotifications)
 }

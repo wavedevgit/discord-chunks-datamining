@@ -71,15 +71,15 @@ function w(e, t) {
     k = false,
     U = D,
     G = L,
-    F = null;
+    V = null;
   if (null != D && null != L) {
-    var V, B, H;
+    var F, B, H;
     let e = v.A.getMessage(L, D),
       t = E.A.getBasicChannel(L);
-    j = null != (V = null == t ? true : t.guild_id) ? V : null;
+    j = null != (F = null == t ? true : t.guild_id) ? F : null;
     let n = y.A.getGuild(j),
       r = (null == e || null == (B = e.messageReference) ? true : B.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(T.pr7.IS_CROSSPOST)) && null != j;
-    r && (null == e || null == (H = e.messageReference) ? true : H.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, F = e.messageReference.guild_id) : F = j;
+    r && (null == e || null == (H = e.messageReference) ? true : H.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, V = e.messageReference.guild_id) : V = j;
     let i = (null == t ? true : t.type) === T.rbe.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(T.GuildFeatures.COMMUNITY)) === true,
       a = (null == e ? true : e.hasFlag(T.pr7.EPHEMERAL)) === true;
     k = null != e && !a && (r || i)
@@ -113,7 +113,7 @@ function w(e, t) {
         channelId: L,
         guildId: j,
         sourceChannelId: G,
-        sourceGuildId: F
+        sourceGuildId: V
       }), null != w) ? w(): (0, s.A)(M)
     },
     W = null != R ? R : () => {};
@@ -137,7 +137,7 @@ function w(e, t) {
     channelId: L,
     guildId: j,
     sourceChannelId: G,
-    sourceGuildId: F
+    sourceGuildId: V
   }));
   if (null != t && t.preventDefault(), q) h.A.show({
     url: M,

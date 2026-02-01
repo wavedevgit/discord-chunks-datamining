@@ -96,7 +96,7 @@ function G(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     Component: t,
     events: n,
@@ -133,7 +133,7 @@ function F(e) {
     })
   }))
 }
-let V = Chunk927813.A.Millis.DAYS_30;
+let F = Chunk927813.A.Millis.DAYS_30;
 
 function B(e) {
   var t, n, a;
@@ -157,7 +157,7 @@ function B(e) {
     if ((null == H ? true : H.background) != null) return {
       "--custom-promotion-gradient": H.background
     }
-  }, [H]), W = !(0, T.uJ)(null == k ? true : k.boxAnimationUrl), K = (!(0, T.uJ)(null == k ? true : k.trinketAnimationUrl) || !(0, T.uJ)(null == k ? true : k.trinketGlowAnimationUrl)) && !W, z = null != U && !u && x && j >= V, [q, Z] = (0, h.RF)(z ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Q = null != q, X = w || Q, J = (0, C.R1)(d), $ = d.type === R.rbe.DM, ee = (0, O.tA)({
+  }, [H]), W = !(0, T.uJ)(null == k ? true : k.boxAnimationUrl), K = (!(0, T.uJ)(null == k ? true : k.trinketAnimationUrl) || !(0, T.uJ)(null == k ? true : k.trinketGlowAnimationUrl)) && !W, z = null != U && !u && x && j >= F, [q, Z] = (0, h.RF)(z ? c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.c)(c.M.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Q = null != q, X = w || Q, J = (0, C.R1)(d), $ = d.type === R.rbe.DM, ee = (0, O.tA)({
     location: "gift-promotion-button",
     isGift: true,
     giftRecipient: J
@@ -193,7 +193,7 @@ function B(e) {
       boxAnimationUrl: k.boxAnimationUrl,
       hovered: X,
       onClick: en
-    }) : K ? (0, r.jsx)(F, {
+    }) : K ? (0, r.jsx)(V, {
       trinketAnimationUrl: null != (n = null == k ? true : k.trinketAnimationUrl) ? n : null,
       trinketGlowAnimationUrl: null != (a = null == k ? true : k.trinketGlowAnimationUrl) ? a : null,
       hovered: X,

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 50400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => G
@@ -89,7 +89,7 @@ class M extends(r = Chunk64700.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !_.A.isFocused(),
+      immediate: !j.A.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -117,7 +117,7 @@ class M extends(r = Chunk64700.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !_.A.isFocused(),
+      immediate: !j.A.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -147,7 +147,7 @@ class M extends(r = Chunk64700.PureComponent) {
     let {
       channel: e
     } = this.props, t = e.type === I.rbe.DM ? y.default.getUser(e.getRecipientId()) : null;
-    return null != t ? t.getAvatarURL(true, 48, false) : (0, h.Y)(e)
+    return null != t ? t.getAvatarURL(true, 48, false) : (0, p.Y)(e)
   }
   render() {
     let {
@@ -160,8 +160,8 @@ class M extends(r = Chunk64700.PureComponent) {
       stream: o,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      treeItemProps: h,
-      statusIndicatorsEnabled: p
+      treeItemProps: p,
+      statusIndicatorsEnabled: h
     } = this.props, {
       hovered: f,
       animating: m
@@ -187,7 +187,7 @@ class M extends(r = Chunk64700.PureComponent) {
         facepileSizeOverride: c._3J.SIZE_32,
         "aria-hidden": true
       }) : true
-    }, h)), y = (0, l.jsx)(c.Qk9, {
+    }, p)), y = (0, l.jsx)(c.Qk9, {
       rounded: true,
       selected: false,
       lowerBadge: r > 0 ? (0, S.wN)(r, true, true) : null,
@@ -201,7 +201,7 @@ class M extends(r = Chunk64700.PureComponent) {
         width: (0, c.o6S)(r)
       },
       children: A()
-    }), O = p ? (0, l.jsx)(v.A, {
+    }), O = h ? (0, l.jsx)(v.A, {
       channel: e,
       children: y
     }) : (0, l.jsx)(C.A, {
@@ -212,7 +212,7 @@ class M extends(r = Chunk64700.PureComponent) {
     return (0, l.jsx)(s.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, l.jsxs)(E.c, {
-        children: [(0, l.jsx)(x.A, {
+        children: [(0, l.jsx)(_.A, {
           hovered: !m && f,
           selected: !m && n,
           unread: !m && d,
@@ -238,7 +238,7 @@ class M extends(r = Chunk64700.PureComponent) {
       null != r ? (0, u.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
+        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("93169"), n.e("39778"), n.e("54266")]).then(n.bind(n, 385913));
         return n => (0, l.jsx)(e, R(w({}, n), {
           channel: t,
           user: r
@@ -263,36 +263,36 @@ P(M, "defaultProps", {
 });
 let G = Chunk64700.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, p.Ay)(e.channel),
+    r = (0, h.Ay)(e.channel),
     i = (0, a.Vd)(n, 2),
     s = (0, o.bG)([m.A], () => m.A.getChannelId(), []),
     u = (0, o.bG)([d.A], () => d.A.getMode(n), [n]),
-    h = (0, o.bG)([f.A], () => f.A.getAllApplicationStreamsForChannel(n).length > 0),
+    p = (0, o.bG)([f.A], () => f.A.getAllApplicationStreamsForChannel(n).length > 0),
     g = (0, o.bG)([O.Ay], () => O.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
     y = (0, o.bG)([A.A], () => A.A.getChannelId(), []),
-    _ = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
+    j = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
     {
-      enabled: x
-    } = (0, j.r)({
+      enabled: _
+    } = (0, x.r)({
       location: "DirectMessage"
     }),
     v = s === n,
     E = false,
     C = false;
-  (v || x && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
+  (v || _ && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
   let S = (0, c.rdh)(c.LU0.modules.guildbar.AVATAR_SIZE);
   return (0, l.jsx)(M, R(w({}, e), {
     ref: t,
     channelName: r,
-    unread: _ > 0,
+    unread: j > 0,
     selected: y === n,
-    badge: _,
+    badge: j,
     audio: E,
     video: C,
-    stream: h,
+    stream: p,
     isCurrentUserInThisDMCall: v,
     size: S,
     treeItemProps: i,
-    statusIndicatorsEnabled: x
+    statusIndicatorsEnabled: _
   }))
 })

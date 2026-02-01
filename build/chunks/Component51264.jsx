@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 51264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,19 +15,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk828184 = require("./828184.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk908874 = require("./908874.js");
-let f = "isHideDevBanner",
-  m = () => {
+let m = "isHideDevBanner",
+  f = () => {
     var e;
-    let [t, n] = (0, i.useState)((null == (e = o.w.get(f, "false")) ? true : e.toString()) === "true"), l = (0, s.bG)([u.A], () => {
+    let [t, n] = (0, i.useState)((null == (e = o.w.get(m, "false")) ? true : e.toString()) === "true"), l = (0, s.bG)([u.A], () => {
       var e;
       return (0, d.kK)() ? null == (e = u.A.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     });
     if (t) return null;
-    let m = () => {
-        o.w.set(f, true), n(true)
+    let f = () => {
+        o.w.set(m, true), n(true)
       },
       A = () => (0, r.jsx)(c.DUT, {
-        onClick: m,
+        onClick: f,
         className: g.b,
         "aria-label": h.intl.string(h.t.WAI6xu),
         children: (0, r.jsx)(c.PGe, {
@@ -46,7 +46,7 @@ let f = "isHideDevBanner",
       children: [(0, r.jsx)(p.A, {
         className: g.Kk
       }), h.intl.format(h.t.uyrfYF, {
-        buildNumber: "492007"
+        buildNumber: "492018"
       }), (0, r.jsx)(A, {})]
     }) : null
   }

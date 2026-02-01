@@ -74,7 +74,7 @@ require.d(exports, {
   ii: () => e2,
   j1: () => ej,
   ju: () => eW,
-  k2: () => eF,
+  k2: () => eV,
   k4: () => eL,
   kK: () => e5,
   l0: () => e$,
@@ -94,14 +94,14 @@ require.d(exports, {
   tZ: () => ek,
   uw: () => eq,
   v: () => eI,
-  v2: () => V,
+  v2: () => F,
   vF: () => eE,
   vU: () => tp,
   vV: () => eT,
   w6: () => e3,
   w9: () => er,
   wH: () => en,
-  wJ: () => eV,
+  wJ: () => eF,
   wd: () => eC,
   x0: () => e4,
   x6: () => $,
@@ -366,14 +366,14 @@ class G {
     r.intounderlyingbytesource_cancel(e)
   }
 }
-let F = "u" < typeof FinalizationRegistry ? {
+let V = "u" < typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_intounderlyingsink_free(e >>> 0, 1));
-class V {
+class F {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, F.unregister(this), e
+    return this.__wbg_ptr = 0, V.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -700,11 +700,11 @@ function eG(e) {
   queueMicrotask(e)
 }
 
-function eF(e) {
+function eV(e) {
   return e.queueMicrotask
 }
 
-function eV(e) {
+function eF(e) {
   return Promise.resolve(e)
 }
 

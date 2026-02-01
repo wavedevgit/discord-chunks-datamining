@@ -102,15 +102,15 @@ let A = [],
       }
     }), [j, I]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: m.Mj,
+        className: f.Mj,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/medium",
-          children: f.intl.string(f.t.giYD00)
+          children: m.intl.string(m.t.giYD00)
         }), (0, r.jsxs)("div", {
-          className: m.Nf,
+          className: f.Nf,
           children: [(0, r.jsx)(d.A, {
             onChange: I,
-            optionClassName: m.Uq,
+            optionClassName: f.Uq,
             selectedSortMethod: O
           }), (0, r.jsx)(u.A, {
             onChange: v,

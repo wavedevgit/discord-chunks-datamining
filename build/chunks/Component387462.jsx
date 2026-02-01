@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 387462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
@@ -16,20 +16,20 @@ let h = Chunk64700.memo(function(e) {
   let {
     channel: t,
     narrow: n
-  } = e, l = (0, o.A)(t), h = (0, i.A)(), {
+  } = e, r = (0, o.A)(t), h = (0, i.A)(), {
     showUnreadsNotice: p,
-    clearUnreadsNotice: g
-  } = (0, s.A)(t);
-  return t.isArchivedLockedThread() ? (0, r.jsx)(u.p, {
+    clearUnreadsNotice: f
+  } = (0, a.A)(t);
+  return t.isArchivedLockedThread() ? (0, l.jsx)(u.p, {
     channel: t,
     narrow: n
-  }) : t.isLockedThread() ? (0, r.jsx)(u.z, {
+  }) : t.isLockedThread() ? (0, l.jsx)(u.z, {
     channel: t,
     narrow: n
-  }) : p ? (0, r.jsx)(a.A, {
+  }) : p ? (0, l.jsx)(s.A, {
     channel: t,
-    clearUnreadsNotice: g
-  }) : l && h.includes(d.i.OPT_IN_CHANNEL) ? (0, r.jsx)(c.A, {
+    clearUnreadsNotice: f
+  }) : r && h.includes(d.i.OPT_IN_CHANNEL) ? (0, l.jsx)(c.A, {
     channel: t,
     narrow: n
   }) : null

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 774204, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 774204, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   q: () => I
 }), require("./896048.js");
@@ -19,22 +19,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let I = (0, Chunk419954.E2)(Chunk780964.X.CAMERA_BACKGROUND_SETTING, {
-  useSearchTerms: () => [g.intl.string(g.t.lZTUPs)],
+  useSearchTerms: () => [_.intl.string(_.t.lZTUPs)],
   usePredicate: Chunk952572.A,
   Component: function() {
-    let e = (0, r.p)(),
-      t = l.useRef(false),
-      i = (0, s.bG)([A.A], () => A.A.getVideoDeviceId()),
-      [a, T] = l.useState((0, u.i)(S.default.getCurrentUser())),
-      _ = l.useRef(a);
+    let t = (0, r.p)(),
+      e = l.useRef(false),
+      i = (0, s.bG)([S.A], () => S.A.getVideoDeviceId()),
+      [u, T] = l.useState((0, a.i)(c.default.getCurrentUser())),
+      E = l.useRef(u);
     return l.useEffect(() => () => {
-      t.current && (0, o._C)(_.current)
-    }, []), (0, n.jsx)(c.A, {
-      selectedBackgroundOption: a,
+      e.current && (0, o._C)(E.current)
+    }, []), (0, n.jsx)(A.A, {
+      selectedBackgroundOption: u,
       onSelectBackgroundOption: i => {
-        t.current = true, _.current = i, T(i), (0, d.gB)(i, {
-          location: e.location
-        }).catch(E.tEg)
+        e.current = true, E.current = i, T(i), (0, d.gB)(i, {
+          location: t.location
+        }).catch(g.tEg)
       },
       currentDeviceId: i
     })

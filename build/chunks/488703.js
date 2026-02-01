@@ -1,16 +1,16 @@
-/** Chunk was on 64935 **/
+/** Chunk was on 12970 **/
 /** chunk id: 488703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => function e(t) {
-    return null == t ? t : Object.keys(t).reduce((n, i) => {
-      let l = (0, r.snakeCase)(i);
-      return "object" != typeof t[i] || Array.isArray(t[i]) ? n[l] = t[i] : n[l] = e(t[i]), n[l] = t[i], n
+    return null == t ? t : Object.keys(t).reduce((n, l) => {
+      let i = (0, r.snakeCase)(l);
+      return "object" != typeof t[l] || Array.isArray(t[l]) ? n[i] = t[l] : n[i] = e(t[l]), n[i] = t[l], n
     }, {})
   },
   W: () => function e(t) {
-    return null == t ? t : Object.keys(t).reduce((n, i) => {
-      let l = (0, r.camelCase)(i);
-      return "object" != typeof t[i] || Array.isArray(t[i]) ? n[l] = t[i] : n[l] = e(t[i]), n
+    return null == t ? t : Object.keys(t).reduce((n, l) => {
+      let i = (0, r.camelCase)(l);
+      return "object" != typeof t[l] || Array.isArray(t[l]) ? n[i] = t[l] : n[i] = e(t[l]), n
     }, {})
   }
 });

@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 883967, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 883967, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  J: () => _
+  J: () => E
 });
 var Chunk934551 = require("./934551.js"),
   Chunk824552 = require("./824552.js"),
@@ -12,30 +12,30 @@ var Chunk934551 = require("./934551.js"),
   Chunk993470 = require("./993470.jsx"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.zZ)(Chunk780964.X.AUTHORIZED_APPS_CATEGORY, {
+let A = (0, Chunk419954.zZ)(Chunk780964.X.AUTHORIZED_APPS_CATEGORY, {
     buildLayout: () => [o.C],
     initialize: () => (l.A.fetch(), () => {
-      u.iU.setState({
+      a.iU.setState({
         searchQuery: ""
       })
     })
   }),
-  A = (0, Chunk419954.t_)(Chunk780964.X.AUTHORIZED_APPS_PANEL, {
-    usePredicate: () => !(0, a.dk)("LegacyAuthorizedAppsPanel"),
+  S = (0, Chunk419954.t_)(Chunk780964.X.AUTHORIZED_APPS_PANEL, {
+    usePredicate: () => !(0, u.dk)("LegacyAuthorizedAppsPanel"),
     useTitle: () => T.intl.string(T.t["f6kk+r"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk891912.Ay,
     buildLayout: () => []
   }),
-  S = (0, Chunk419954.t_)(Chunk780964.X.AUTHORIZED_APPS_PANEL, {
-    usePredicate: () => (0, a.dk)("AuthorizedAppsPanel"),
+  c = (0, Chunk419954.t_)(Chunk780964.X.AUTHORIZED_APPS_PANEL, {
+    usePredicate: () => (0, u.dk)("AuthorizedAppsPanel"),
     useTitle: () => T.intl.string(T.t["f6kk+r"]),
     hideInStreamerMode: true,
-    buildLayout: () => [c]
+    buildLayout: () => [A]
   }),
-  _ = (0, Chunk419954.i4)(Chunk780964.X.AUTHORIZED_APPS_SIDEBAR_ITEM, {
+  E = (0, Chunk419954.i4)(Chunk780964.X.AUTHORIZED_APPS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t["f6kk+r"]),
-    getLegacySearchKey: () => (0, a.WJ)("AuthorizedAppsPanel") ? true : d.H.AUTHORIZED_APPS,
+    getLegacySearchKey: () => (0, u.WJ)("AuthorizedAppsPanel") ? true : d.H.AUTHORIZED_APPS,
     icon: Chunk934551.AppsIcon,
-    buildLayout: () => (0, a.WJ)("AuthorizedAppsPanel") ? [S] : [A]
+    buildLayout: () => (0, u.WJ)("AuthorizedAppsPanel") ? [c] : [S]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 59024 **/
+/** Chunk was on 47147 **/
 /** chunk id: 796150, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => v
 }), require("./896048.js"), require("./142703.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,12 +23,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk249316 = require("./249316.js");
 
-function _(e) {
+function x(e) {
   let {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, b.iY)({
+  (0, d.iY)({
     destinationPane: t,
     originPane: n,
     subsection: u.A.getSubsection(),
@@ -37,51 +37,51 @@ function _(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     target: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, l, o = {};
+    var n, r, o, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-      return o
+      for (o = 0, n = Reflect.ownKeys(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+      return a
     }
-    if (o = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          o = Object.getOwnPropertyNames(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, o = {},
+          a = Object.getOwnPropertyNames(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
+        return o
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-    return o
-  }(e, ["target"]), a = y.A.useField("query"), b = l.useRef(null);
+      for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
+  }(e, ["target"]), i = b.A.useField("query"), d = o.useRef(null);
   (0, c.Ay)(() => {
     let e = u.A.getSection();
-    null != e && (_({
+    null != e && (x({
       destinationPanel: e,
       originPanel: null
-    }), b.current = e)
+    }), d.current = e)
   });
-  let O = l.useCallback(e => {
-      y.A.setState({
+  let h = o.useCallback(e => {
+      b.A.setState({
         query: e
       })
     }, []),
-    [v, x] = l.useState(false);
-  return (l.useEffect(() => {
+    [j, v] = o.useState(false);
+  return (o.useEffect(() => {
     let e = () => {
-      (0, o.flushSync)(() => {
-        x(true), (0, g.default)()
+      (0, a.flushSync)(() => {
+        v(true), (0, y.default)()
       }), setImmediate(() => {
-        i.A.logout("settings")
+        l.A.logout("settings")
       })
     };
-    return d._.subscribe(j.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
-      d._.unsubscribe(j.jej.SETTINGS_TRIGGER_LOGOUT, e)
+    return _._.subscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
+      _._.unsubscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e)
     }
-  }, []), v) ? null : (0, r.jsx)(s.A, function(e) {
+  }, []), j) ? null : (0, r.jsx)(s.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -99,34 +99,34 @@ function x(e) {
     }
     return e
   }({
-    partialRoot: m.D,
+    partialRoot: g.D,
     emptyState: S,
     sidebarFooter: f.A,
     onPanelChange: e => {
-      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (_({
+      let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
+      null != t && (x({
         destinationPanel: t,
-        originPanel: b.current
-      }), b.current = t)
+        originPanel: d.current
+      }), d.current = t)
     },
     target: t,
     defaultTarget: p.X.ACCOUNT_PANEL,
-    searchQuery: a,
-    onSearchChange: O
+    searchQuery: i,
+    onSearchChange: h
   }, n))
 }
 
 function S() {
   return (0, r.jsxs)("div", {
-    className: v.t,
-    children: [(0, r.jsx)(a.Text, {
+    className: j.t,
+    children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: O.intl.string(O.t.zihbmv)
-    }), (0, r.jsx)(a.Text, {
+      children: h.intl.string(h.t.zihbmv)
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: O.intl.string(O.t.XclvsB)
+      children: h.intl.string(h.t.XclvsB)
     })]
   })
 }

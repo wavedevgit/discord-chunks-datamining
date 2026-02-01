@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 585175, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 585175, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  O: () => m
+  O: () => L
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,45 +21,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk15267 = require("./15267.js"),
   Chunk785294 = require("./785294.js");
-let N = (0, Chunk915089.Ld)();
+let C = (0, Chunk915089.Ld)();
 
-function b(e) {
+function b(t) {
   let {
-    isSpeaking: t,
+    isSpeaking: e,
     className: i,
     id: l,
     ariaDescribedBy: s,
-    ariaLabelledBy: a,
-    disabled: u
-  } = e;
+    ariaLabelledBy: u,
+    disabled: a
+  } = t;
   return (0, n.jsx)("div", {
     className: r()(O.$I, i),
     id: l,
     "aria-describedby": s,
-    "aria-labelledby": a,
+    "aria-labelledby": u,
     children: (0, n.jsx)("div", {
       className: r()(O.Jx, O.NU, {
-        [O.zY]: t && !u,
-        [O.r9]: u
+        [O.zY]: e && !a,
+        [O.r9]: a
       })
     })
   })
 }
 
-function p(e) {
+function p(t) {
   let {
-    volume: t,
+    volume: e,
     id: i,
     ariaDescribedBy: l,
     ariaLabelledBy: s,
-    disabled: u
-  } = e, {
+    disabled: a
+  } = t, {
     threshold: o,
-    autoThreshold: A
-  } = (0, a.cf)([_.A], () => ({
-    threshold: _.A.getModeOptions().threshold,
-    autoThreshold: _.A.getModeOptions().autoThreshold
-  })), S = (0, a.bG)([_.A], () => _.A.getMode());
+    autoThreshold: S
+  } = (0, u.cf)([E.A], () => ({
+    threshold: E.A.getModeOptions().threshold,
+    autoThreshold: E.A.getModeOptions().autoThreshold
+  })), c = (0, u.bG)([E.A], () => E.A.getMode());
   return (0, n.jsx)("section", {
     className: r()(O.Mo, O.jW),
     id: i,
@@ -67,12 +67,12 @@ function p(e) {
     "aria-labelledby": s,
     children: (0, n.jsx)(T.Apm, {
       initialValue: o + 100,
-      onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => {
-        var t;
-        return t = -((100 - e) * 1), void c.A.setMode(S, {
-          threshold: t,
-          autoThreshold: A
+      onValueRender: t => "".concat((-((100 - t) * 1)).toFixed(0), "dB"),
+      onValueChange: t => {
+        var e;
+        return e = -((100 - t) * 1), void A.A.setMode(c, {
+          threshold: e,
+          autoThreshold: S
         })
       },
       barStyles: {
@@ -81,14 +81,14 @@ function p(e) {
       fillStyles: {
         background: d.A.unsafe_rawColors.YELLOW_300.css
       },
-      "aria-labelledby": N,
-      disabled: u,
+      "aria-labelledby": C,
+      disabled: a,
       children: (0, n.jsxs)("div", {
-        className: r()(O.NU, O.TL, O.Jx, C.bar),
+        className: r()(O.NU, O.TL, O.Jx, N.bar),
         children: [(0, n.jsx)("div", {
           className: r()(O.GS, O.SH),
           style: {
-            width: u ? 0 : t + 100 + "%"
+            width: a ? 0 : e + 100 + "%"
           }
         }), (0, n.jsx)("div", {
           className: "grow"
@@ -97,107 +97,107 @@ function p(e) {
     })
   })
 }
-let m = (0, Chunk419954.E2)(Chunk780964.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
+let L = (0, Chunk419954.E2)(Chunk780964.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
   useSearchTerms: () => [I.intl.string(I.t["sqUm+k"]), I.intl.string(I.t.I1Zuq0), I.intl.string(I.t.nuFtHH)],
-  usePredicate: () => (0, a.bG)([_.A], () => _.A.isInputProfileCustom()),
+  usePredicate: () => (0, u.bG)([E.A], () => E.A.isInputProfileCustom()),
   Component: function() {
     let {
-      autoThreshold: e,
-      disabled: t
-    } = (0, a.cf)([_.A], () => ({
-      autoThreshold: _.A.getModeOptions().autoThreshold,
-      disabled: _.A.getMode() !== g.TB.VOICE_ACTIVITY
-    })), i = l.useCallback(e => {
-      let t = _.A.getMode(),
+      autoThreshold: t,
+      disabled: e
+    } = (0, u.cf)([E.A], () => ({
+      autoThreshold: E.A.getModeOptions().autoThreshold,
+      disabled: E.A.getMode() !== _.TB.VOICE_ACTIVITY
+    })), i = l.useCallback(t => {
+      let e = E.A.getMode(),
         {
           threshold: i
-        } = _.A.getModeOptions();
-      c.A.setMode(t, {
-        autoThreshold: e,
+        } = E.A.getModeOptions();
+      A.A.setMode(e, {
+        autoThreshold: t,
         threshold: i
       })
-    }, []), s = (0, a.bG)([_.A], () => _.A.supports(g.O5.AUTOMATIC_VAD)), {
+    }, []), s = (0, u.bG)([E.A], () => E.A.supports(_.O5.AUTOMATIC_VAD)), {
       volume: r,
       isSpeaking: d
     } = function() {
-      let [e, t] = l.useState(false), [i, n] = l.useState(false);
+      let [t, e] = l.useState(false), [i, n] = l.useState(false);
 
-      function s(e, i) {
-        t(e), n((i & g.ME.VOICE) === g.ME.VOICE)
+      function s(t, i) {
+        e(t), n((i & _.ME.VOICE) === _.ME.VOICE)
       }
       return l.useEffect(() => {
-        let e = new o.Ep;
-        return e.start(1e3, () => {
-          _.A.getMediaEngine().on(u.bg.VoiceActivity, s), e.stop()
+        let t = new o.Ep;
+        return t.start(1e3, () => {
+          E.A.getMediaEngine().on(a.bg.VoiceActivity, s), t.stop()
         }), () => {
-          _.A.getMediaEngine().removeListener(u.bg.VoiceActivity, s), e.stop()
+          E.A.getMediaEngine().removeListener(a.bg.VoiceActivity, s), t.stop()
         }
       }, []), {
-        volume: e,
+        volume: t,
         isSpeaking: i
       }
-    }(), A = (0, a.bG)([_.A], () => _.A.isEnabled()), S = l.useMemo(() => !A && (0, n.jsx)("div", {
+    }(), S = (0, u.bG)([E.A], () => E.A.isEnabled()), c = l.useMemo(() => !S && (0, n.jsx)("div", {
       className: O.B4,
       children: (0, n.jsx)(T.wx6, {
         type: "warning",
         children: I.intl.format(I.t["O13I+O"], {
-          onEnableClick: () => c.A.enable(true)
+          onEnableClick: () => A.A.enable(true)
         })
       })
-    }), [A]), E = l.useMemo(() => e ? I.intl.string(I.t.JsbzjA) : I.intl.string(I.t.MLmyMY), [e]), C = l.useId(), N = l.useId();
+    }), [S]), g = l.useMemo(() => t ? I.intl.string(I.t.JsbzjA) : I.intl.string(I.t.MLmyMY), [t]), N = l.useId(), C = l.useId();
     return s ? (0, n.jsxs)("fieldset", {
-      "aria-describedby": N,
+      "aria-describedby": C,
       children: [(0, n.jsx)(T.AC4, {
         tag: "legend",
-        id: C,
+        id: N,
         children: I.intl.string(I.t.GByLar)
       }), (0, n.jsx)(T.AC4, {
-        id: N,
-        children: E
+        id: C,
+        children: g
       }), (0, n.jsxs)(T.BJc, {
         direction: "vertical",
         gap: 8,
         children: [(0, n.jsx)(T.dOG, {
-          disabled: t,
+          disabled: e,
           label: I.intl.string(I.t.lY6j47),
-          description: E,
-          checked: e,
+          description: g,
+          checked: t,
           onChange: i
-        }), e ? (0, n.jsx)(b, {
+        }), t ? (0, n.jsx)(b, {
           isSpeaking: d,
           className: O.UJ,
-          ariaDescribedBy: N,
-          ariaLabelledBy: C,
-          disabled: t
+          ariaDescribedBy: C,
+          ariaLabelledBy: N,
+          disabled: e
         }) : (0, n.jsx)(p, {
           volume: r,
-          ariaDescribedBy: N,
-          ariaLabelledBy: C,
-          disabled: t
-        }), S]
+          ariaDescribedBy: C,
+          ariaLabelledBy: N,
+          disabled: e
+        }), c]
       })]
     }) : (0, n.jsxs)(T.BJc, {
       direction: "vertical",
       gap: 8,
       children: [(0, n.jsx)(T.D0$, {
         label: I.intl.string(I.t["sqUm+k"]),
-        description: E,
+        description: g,
         layout: "vertical",
-        children: i => e ? (0, n.jsx)(b, {
+        children: i => t ? (0, n.jsx)(b, {
           isSpeaking: d,
           className: O.UJ,
           id: i.controlId,
           ariaDescribedBy: i.describedById,
           ariaLabelledBy: i.labelId,
-          disabled: t
+          disabled: e
         }) : (0, n.jsx)(p, {
           volume: r,
           id: i.controlId,
           ariaDescribedBy: i.describedById,
           ariaLabelledBy: i.labelId,
-          disabled: t
+          disabled: e
         })
-      }), S]
+      }), c]
     })
   }
 })

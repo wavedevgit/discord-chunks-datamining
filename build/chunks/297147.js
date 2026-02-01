@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 297147, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 297147, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Q: () => d
 });
@@ -16,9 +16,9 @@ let d = (0, Chunk419954.Tf)(Chunk780964.X.UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
   useLabel: () => o.intl.string(o.t.KT1pBA),
   useDisabled: () => {
     let {
-      categories: e
+      categories: t
     } = (0, n.cf)([r.A], () => r.A.getEmailSettings());
-    return u.Zk.every(t => !e[t])
+    return a.Zk.every(e => !t[e])
   },
   onClick: () => (0, s.NI)(),
   useVariant: () => "critical-secondary"

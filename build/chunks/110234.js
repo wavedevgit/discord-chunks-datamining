@@ -1,4 +1,4 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 110234, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
@@ -9,29 +9,29 @@ var Chunk51082 = require("./51082.js"),
 function i(e, t) {
   var n, i;
   let a = null,
-    o = null,
     s = null,
+    o = null,
     c = false,
     u = false,
     d = false;
   switch (e.type) {
-    case l.lp.ACTIVITY:
+    case r.lp.ACTIVITY:
       break;
-    case l.lp.USER:
-      a = e.streamId, s = e.voiceState, c = e.speaking, u = e.latched, d = e.ringing;
+    case r.lp.USER:
+      a = e.streamId, o = e.voiceState, c = e.speaking, u = e.latched, d = e.ringing;
       break;
-    case l.lp.STREAM:
-      a = e.streamId, o = e.stream
+    case r.lp.STREAM:
+      a = e.streamId, s = e.stream
   }
   return {
     streamId: a,
-    stream: o,
+    stream: s,
     speaking: c,
     latched: u,
     ringing: d,
-    muted: null != (n = null == s ? true : s.isVoiceMuted()) && n,
-    deafen: null != (i = null == s ? true : s.isVoiceDeafened()) && i,
-    mirror: e.type === l.lp.USER && e.user.id === t,
-    hasVideo: (0, r.Ay)(e)
+    muted: null != (n = null == o ? true : o.isVoiceMuted()) && n,
+    deafen: null != (i = null == o ? true : o.isVoiceDeafened()) && i,
+    mirror: e.type === r.lp.USER && e.user.id === t,
+    hasVideo: (0, l.Ay)(e)
   }
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 52199 **/
 /** chunk id: 725951, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => _,
-  f: () => p
+  A: () => S,
+  f: () => f
 });
 var n, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -33,8 +33,8 @@ function h(e) {
   }
   return e
 }
-var p = ((n = {})[n.RIGHT = false] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
-let f = {
+var f = ((n = {})[n.RIGHT = false] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
+let p = {
   friction: 7,
   tension: 40,
   clamp: true
@@ -78,13 +78,13 @@ class g extends Chunk64700.PureComponent {
     super(e), d(this, "_animated", true), this._animated = new o.A.Value(false * e.direction)
   }
 }
-let _ = e => {
+let S = e => {
   let {
     children: t,
     step: r,
     direction: n,
     className: s,
-    springSettings: a = f,
+    springSettings: a = p,
     fadeInOut: o = false
   } = e;
   return (0, l.jsx)(c.F, {

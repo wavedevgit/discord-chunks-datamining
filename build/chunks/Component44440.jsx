@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 44440, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m,
+  A: () => f,
   j: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -31,7 +31,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     loadId: t,
     categoryId: n,
@@ -41,7 +41,7 @@ function f(e) {
       categoryId: n,
       loadId: t
     })
-  }, [n, t]), p = u.A.useField("categoryId") === n, f = l.toLocaleString(o.default.locale), m = (0, d.r)({
+  }, [n, t]), p = u.A.useField("categoryId") === n, m = l.toLocaleString(o.default.locale), f = (0, d.r)({
     categoryId: n
   });
   return (0, r.jsxs)(s.DUT, {
@@ -53,16 +53,16 @@ function f(e) {
       className: h.UU,
       variant: "text-sm/medium",
       color: "text-strong",
-      children: m
+      children: f
     }), (0, r.jsx)(s.Text, {
       className: h.U9,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: f
+      children: m
     })]
   })
 }
-let m = function(e) {
+let f = function(e) {
   let {
     loadId: t
   } = e, n = (0, p.L)();
@@ -70,7 +70,7 @@ let m = function(e) {
     className: h.LZ,
     children: n.map(e => {
       let [n, i] = e;
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(m, {
         loadId: t,
         categoryId: n,
         count: i

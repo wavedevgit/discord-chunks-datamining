@@ -1,4 +1,4 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 142524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -110,10 +110,10 @@ function x(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(e, ["user", "channel"]), [d, _] = (0, s.yK)([b.A, m.A, g.A, c.default], () => (0, A.eo)(a, b.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(i.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), S = (0, s.bG)([f.default], () => f.default.getId()), x = (0, h.AO)(v), I = (0, s.bG)([y.A], () => (0, h.nr)(v, y.A)), P = l.useMemo(() => ({
+  }(e, ["user", "channel"]), [d, _] = (0, s.yK)([b.A, m.A, g.A, c.default], () => (0, h.eo)(a, b.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(i.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), S = (0, s.bG)([f.default], () => f.default.getId()), x = (0, A.AO)(v), I = (0, s.bG)([y.A], () => (0, A.nr)(v, y.A)), E = l.useMemo(() => ({
     [a.guild_id]: [i.id]
   }), [a.guild_id, i.id]);
-  return (0, o.E)(P, "StreamPreviewPopout"), (0, r.jsx)(j, (t = function(e) {
+  return (0, o.E)(E, "StreamPreviewPopout"), (0, r.jsx)(j, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

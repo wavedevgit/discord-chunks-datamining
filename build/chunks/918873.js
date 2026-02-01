@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 918873, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 918873, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  W: () => c
+  W: () => A
 }), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -12,23 +12,23 @@ var Chunk64700 = require("./64700.js"),
   Chunk593942 = require("./593942.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.Hn)(Chunk780964.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
+let A = (0, Chunk419954.Hn)(Chunk780964.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
   useTitle: () => T.intl.string(T.t.wVBHr0),
   useValue: function() {
-    return (0, l.bG)([a.A], () => a.A.getAudioSubsystem())
+    return (0, l.bG)([u.A], () => u.A.getAudioSubsystem())
   },
-  setValue: function(e) {
-    (0, o.A)(T.intl.string(T.t.uY7AcQ), T.intl.string(T.t.gBqik6), () => s.A.setAudioSubsystem(e))
+  setValue: function(t) {
+    (0, o.A)(T.intl.string(T.t.uY7AcQ), T.intl.string(T.t.gBqik6), () => s.A.setAudioSubsystem(t))
   },
   useOptions: function() {
     let {
-      legacyAudioSubsystemSupported: e,
-      experimentalAudioSubsystemSupported: t,
+      legacyAudioSubsystemSupported: t,
+      experimentalAudioSubsystemSupported: e,
       automaticAudioSubsystemSupported: i
-    } = (0, l.cf)([a.A], () => ({
-      legacyAudioSubsystemSupported: a.A.supports(d.O5.LEGACY_AUDIO_SUBSYSTEM),
-      experimentalAudioSubsystemSupported: a.A.supports(d.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-      automaticAudioSubsystemSupported: a.A.supports(d.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
+    } = (0, l.cf)([u.A], () => ({
+      legacyAudioSubsystemSupported: u.A.supports(d.O5.LEGACY_AUDIO_SUBSYSTEM),
+      experimentalAudioSubsystemSupported: u.A.supports(d.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+      automaticAudioSubsystemSupported: u.A.supports(d.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
     }));
     return n.useMemo(() => {
       let n;
@@ -36,11 +36,11 @@ let c = (0, Chunk419954.Hn)(Chunk780964.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
         id: d.rB.STANDARD,
         value: d.rB.STANDARD,
         label: T.intl.string(T.t.dqb2JZ)
-      }], e && n.push({
+      }], t && n.push({
         id: d.rB.LEGACY,
         value: d.rB.LEGACY,
         label: T.intl.string(T.t["TYfH+5"])
-      }), t && n.push({
+      }), e && n.push({
         id: d.rB.EXPERIMENTAL,
         value: d.rB.EXPERIMENTAL,
         label: T.intl.string(T.t.liQmtr)
@@ -49,9 +49,9 @@ let c = (0, Chunk419954.Hn)(Chunk780964.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
         value: d.rB.AUTOMATIC,
         label: T.intl.string(T.t.qNgtO1)
       }), n
-    }, [i, t, e])
+    }, [i, e, t])
   },
   usePredicate: function() {
-    return (0, l.bG)([a.A], () => a.A.shouldOfferManualSubsystemSelection())
+    return (0, l.bG)([u.A], () => u.A.shouldOfferManualSubsystemSelection())
   }
 })

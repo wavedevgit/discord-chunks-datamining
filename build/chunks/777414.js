@@ -483,7 +483,7 @@ function G() {
   }
 }
 
-function F(e) {
+function V(e) {
   for (let t of (D.verbose("handleRunningGamesChange", e), e.added)) {
     if (null != U.getByPid(t.pid)) {
       D.verbose("handleRunningGamesChange added", t, "already tracked");
@@ -496,7 +496,7 @@ function F(e) {
   for (let t of e.removed) U.destroy(t), D.verbose("handleRunningGamesChange removed", t)
 }
 
-function V(e) {
+function F(e) {
   if (e.pid === b.DEV_PID) return;
   let t = U.getByPid(e.pid);
   (D.verbose("OVERLAY_SET_INPUT_LOCKED", t), null == t) ? D.error("OVERLAY_SET_INPUT_LOCKED: Unable to find game", e, U.debug): t.setLocked(e.locked)
@@ -655,10 +655,10 @@ class en extends Chunk439372.A {
     } : {
       OVERLAY_FOCUSED: Y,
       OVERLAY_NOTIFICATION_EVENT: B,
-      OVERLAY_SET_INPUT_LOCKED: V,
+      OVERLAY_SET_INPUT_LOCKED: F,
       OVERLAY_WIDGET_CHANGED: H,
       OVERLAY_MESSAGE_EVENT_ACTION: K,
-      RUNNING_GAMES_CHANGE: F,
+      RUNNING_GAMES_CHANGE: V,
       SOUNDBOARD_SET_OVERLAY_ENABLED: W,
       MESSAGE_ACKED: z,
       MESSAGE_CREATE: q,

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 426153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
@@ -12,7 +12,7 @@ function i(e, t) {
     message: n,
     compact: i
   } = e;
-  return (0, r.jsx)(l.A, {
+  return (0, l.jsx)(r.A, {
     message: n,
     content: t,
     compact: null != i && i

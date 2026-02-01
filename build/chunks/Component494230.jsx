@@ -74,7 +74,7 @@ let z = e => {
     enablePremiumBrandRefresh: k,
     premiumBrandRefreshBackgroundClassName: U,
     isPremiumGroupPurchase: G,
-    isEligibleForDiscount: V
+    isEligibleForDiscount: F
   } = (0, y.P5)(), {
     isGift: B,
     giftRecipient: Y,
@@ -115,7 +115,7 @@ let z = e => {
         quantity: 1
       }],
       renewal: true,
-      preventFetch: !V,
+      preventFetch: !F,
       trialId: s,
       paymentSourceId: o.paymentSourceId,
       currency: o.currency,
@@ -140,7 +140,7 @@ let z = e => {
     {
       hasEntitlements: ed,
       entitlements: ef
-    } = (0, F.X)(K.id, B),
+    } = (0, V.X)(K.id, B),
     ep = (0, D.J$)(o.paymentSourceId),
     e_ = (0, O.$o)(s, ec, r),
     eh = (0, v.vT)({
@@ -204,8 +204,8 @@ let z = e => {
     enablePremiumBrandRefresh: k,
     premiumBrandRefreshBackgroundClassName: U,
     isPremiumGroupPurchase: G,
-    isEligibleForDiscount: V,
-    discountInvoiceItems: V ? null == en ? true : en.invoiceItems : true,
+    isEligibleForDiscount: F,
+    discountInvoiceItems: F ? null == en ? true : en.invoiceItems : true,
     hasEntitlements: ed,
     entitlements: ef
   }
@@ -232,7 +232,7 @@ function q(e) {
     purchaseState: R,
     hideSubscriptionDetails: P,
     referralTrialOfferId: x,
-    isTrial: F = false,
+    isTrial: V = false,
     isDiscount: H = false,
     handleClose: q
   } = e, {
@@ -276,7 +276,7 @@ function q(e) {
     trialId: v,
     metadata: N,
     purchaseState: R,
-    isTrial: F
+    isTrial: V
   }), eN = (0, B.yf)({
     error: ef,
     isGift: ep,
@@ -296,7 +296,7 @@ function q(e) {
       trialFooterMessageOverride: S,
       hideSubscriptionDetails: P,
       referralTrialOfferId: x,
-      isTrial: F,
+      isTrial: V,
       inReverseTrial: ec,
       fractionalPremiumInfo: eu,
       plan: ed,
@@ -361,7 +361,7 @@ function q(e) {
       children: W.intl.format(W.t["7ZS2m1"], {
         trialEnd: null == Z ? true : Z.currentPeriodEnd
       })
-    }), !F && "" !== eP && (0, r.jsx)(f.Heading, {
+    }), !V && "" !== eP && (0, r.jsx)(f.Heading, {
       variant: "heading-md/semibold",
       className: K.wx,
       children: eP
@@ -371,23 +371,23 @@ function q(e) {
         giftStyle: et,
         shouldAnimate: true,
         className: K.Os
-      }), (0, r.jsx)(V.Z, {
+      }), (0, r.jsx)(F.Z, {
         giftRecipient: ee
       })]
     }), ew, (0, r.jsxs)("div", {
       className: K.LC,
       children: [(0, r.jsx)(h.A, {
-        label: F ? W.intl.string(W.t["YH7B+D"]) : W.intl.string(W.t["mmDvV+"]),
+        label: V ? W.intl.string(W.t["YH7B+D"]) : W.intl.string(W.t["mmDvV+"]),
         paymentSources: Object.values(a),
         selectedPaymentSourceId: es,
-        prependOption: eT && !F ? {
+        prependOption: eT && !V ? {
           label: W.intl.string(W.t.IGU7El),
           value: null
         } : null,
         onChange: g,
         onPaymentSourceAdd: E,
         hidePersonalInformation: $,
-        isTrial: F,
+        isTrial: V,
         paymentGatewayRestrictions: el,
         className: o()({
           [K.E4]: ev
@@ -414,7 +414,7 @@ function q(e) {
         onChange: y,
         forceShow: true,
         finePrint: null != (t = !ec && S) ? t : (0, r.jsx)(_.A, {
-          hide: F || H,
+          hide: V || H,
           subscriptionPlan: ed,
           renewalInvoice: eg,
           isGift: ep,
@@ -425,7 +425,7 @@ function q(e) {
         showPricingLink: ed.currency !== Y.Yr.USD,
         showWithdrawalWaiver: eR,
         disabled: Q,
-        isTrial: F && null == S,
+        isTrial: V && null == S,
         inReverseTrial: ec,
         isDiscount: H,
         subscriptionPlan: ed,

@@ -20,9 +20,9 @@ function g(e) {
     targetElementRef: t,
     dismissPopover: n,
     children: g
-  } = e, f = i.useCallback(() => {
+  } = e, m = i.useCallback(() => {
     n(d.i.TAKE_ACTION), (0, c.pX)("".concat(u.BVt.NITRO_HOME, "?section=orbs"))
-  }, [n]), m = (0, r.jsx)(a.AM, {
+  }, [n]), f = (0, r.jsx)(a.AM, {
     targetElementRef: t,
     onRequestClose: () => n(d.i.USER_DISMISS),
     graphic: {
@@ -45,7 +45,7 @@ function g(e) {
     actions: [{
       text: h.intl.string(h.t.RzWDqY),
       icon: s.tvc,
-      onClick: f
+      onClick: m
     }],
     gradientColor: {
       type: "custom",
@@ -56,6 +56,6 @@ function g(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: g
-    }), m]
+    }), f]
   })
 }

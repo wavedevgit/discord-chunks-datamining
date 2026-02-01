@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 608900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk529414 = require("./529414.js");
 
-function h(e) {
+function p(e) {
   let {
     width: t = 24,
     height: n = 24,
@@ -44,14 +44,14 @@ function h(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     className: t,
     numRequestToSpeak: n
   } = e, l = n > 0;
   return (0, r.jsxs)("div", {
     className: s()(d.v, t),
-    children: [(0, r.jsx)(h, {
+    children: [(0, r.jsx)(p, {
       isBadged: l
     }), l ? (0, r.jsx)(o.Text, {
       className: d.F,
@@ -108,7 +108,7 @@ function g(e) {
     onClick: d,
     label: n ? u.intl.string(u.t.gKGz7A) : u.intl.string(u.t.ImQ4dW),
     className: i,
-    iconComponent: () => (0, r.jsx)(p, {
+    iconComponent: () => (0, r.jsx)(h, {
       numRequestToSpeak: s,
       className: i
     })

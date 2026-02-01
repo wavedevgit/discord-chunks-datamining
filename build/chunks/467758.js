@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 467758, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 467758, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   W: () => T
 });
@@ -15,13 +15,13 @@ let T = (0, Chunk419954.zZ)(Chunk780964.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
   useTitle: () => d.intl.string(d.t.sA0WKL),
   usePredicate: () => {
     let {
-      enableAdvancedSignals: e
+      enableAdvancedSignals: t
     } = n.L_.useExperiment({
       location: "ClipsAutomaticClippingCategory"
     }, {
       autoTrackExposure: false
     });
-    return e
+    return t
   },
-  buildLayout: () => [r.$, a.X, u.C, o.p]
+  buildLayout: () => [r.$, u.X, a.C, o.p]
 })

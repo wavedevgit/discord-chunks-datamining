@@ -1,4 +1,4 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 857341, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -20,50 +20,50 @@ var Chunk985018 = require("./985018.jsx"),
 function m(e) {
   let {
     channelId: t
-  } = e, n = (0, i.bG)([o.A], () => {
+  } = e, n = (0, i.bG)([s.A], () => {
     var e;
-    return null == (e = o.A.getSecureFramesState()) ? true : e.epochAuthenticator
+    return null == (e = s.A.getSecureFramesState()) ? true : e.epochAuthenticator
   }), m = (0, u.z)({
     fingerprintBase64: n,
     chunkSize: 5,
     desiredLength: 30
-  }), _ = l.useCallback(() => {
-    (0, s.k0)({
+  }), g = r.useCallback(() => {
+    (0, o.k0)({
       channelId: t
     })
   }, [t]);
-  return (0, r.jsxs)("div", {
-    className: g.kL,
-    children: [(0, r.jsxs)("div", {
-      className: g.Tc,
-      children: [(0, r.jsx)(a.XAi, {
+  return (0, l.jsxs)("div", {
+    className: f.kL,
+    children: [(0, l.jsxs)("div", {
+      className: f.Tc,
+      children: [(0, l.jsx)(a.XAi, {
         size: "xxs",
         color: a.LU0.colors.TEXT_FEEDBACK_POSITIVE
-      }), (0, r.jsx)(a.Text, {
+      }), (0, l.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-feedback-positive",
         children: p.intl.string(p.t["3BogKe"])
       })]
-    }), (0, r.jsx)(a.Text, {
+    }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
       children: p.intl.string(p.t.B9JNsl)
-    }), (0, r.jsxs)("div", {
-      className: g.wx,
-      children: [(0, r.jsx)(a.Heading, {
+    }), (0, l.jsxs)("div", {
+      className: f.wx,
+      children: [(0, l.jsx)(a.Heading, {
         variant: "text-sm/bold",
         color: "text-strong",
         children: p.intl.string(p.t.cTQI5t)
-      }), null != m && (0, r.jsx)(f.c, {
+      }), null != m && (0, l.jsx)(h.c, {
         chunks: m,
         color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css,
-        onCopy: _
+        onCopy: g
       })]
-    }), (0, r.jsx)(d.j, {
-      className: g.aY,
+    }), (0, l.jsx)(d.j, {
+      className: f.aY,
       chunks: m,
       columns: 3
-    }), (0, r.jsx)(a.Text, {
+    }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
       children: p.intl.format(p.t.wKxADe, {

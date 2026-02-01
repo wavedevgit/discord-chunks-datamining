@@ -35,7 +35,7 @@ let I = Math.ceil(Math.sqrt(115200)),
       dismissContent: j
     } = function() {
       let e = (0, u.useHasAnyModalOpen)(),
-        [t, n] = (0, f.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.m.PRIVATE_CHANNELS_LIST, true),
+        [t, n] = (0, m.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.m.PRIVATE_CHANNELS_LIST, true),
         r = i.useCallback(() => {
           n(E.i.TAKE_ACTION)
         }, [n]);
@@ -94,7 +94,7 @@ let I = Math.ceil(Math.sqrt(115200)),
       }), w({
         glowSpring: 1,
         delay: 700
-      }), m.default.track(b.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), f.default.track(b.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [R, w]), [U, G] = i.useState(false), V = i.useCallback(e => {
       G(e.contentRect.width)
     }, []), B = (0, h.w)(V, [], {

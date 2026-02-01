@@ -71,12 +71,12 @@ function G(e, t) {
   return n
 }
 
-function F(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : G(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = 3e3,
+let F = 3e3,
   B = 1e3,
   H = "-:--",
   Y = {
@@ -363,7 +363,7 @@ class J extends Chunk64700.Component {
       }), d.A.timing(e, {
         toValue: 0,
         duration: 200
-      })]), d.A.spring(t, F(U({
+      })]), d.A.spring(t, V(U({
         toValue: 1.5
       }, Y), {
         friction: 80
@@ -663,7 +663,7 @@ class et extends(i = Chunk64700.PureComponent) {
     let {
       dragging: e,
       fullscreen: t
-    } = this.state, n = t ? B : V, r = Math.max(0, Date.now() - this._lastMove) > n;
+    } = this.state, n = t ? B : F, r = Math.max(0, Date.now() - this._lastMove) > n;
     r !== this.state.hideControls && null == e && this.setState({
       hideControls: r
     })

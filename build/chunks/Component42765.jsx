@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 42765, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => h
@@ -47,9 +47,9 @@ function h() {
     {
       goreContentGuilds: E,
       goreContentFriendDm: O,
-      goreContentNonFriendDm: C
+      goreContentNonFriendDm: x
     } = (0, c.g)(),
-    x = e => {
+    C = e => {
       let t = Object.values(e);
       (0, a.hK)() && t.includes(i.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
         entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
@@ -71,7 +71,7 @@ function h() {
       label: A.intl.string(A.t["5k5OFp"])
     };
   t && (S.unshift(I), T.unshift(I));
-  let y = {
+  let N = {
     isDisabled: h,
     tooltipText: n ? A.intl.string(f.default["6Af/cw"]) : true
   };
@@ -81,21 +81,21 @@ function h() {
     children: [(0, r.jsx)(m.A, b({
       title: A.intl.string(A.t["+uI23H"]),
       value: O,
-      onChange: e => x({
+      onChange: e => C({
         goreContentFriendDm: e
       }),
       options: S
-    }, y)), (0, r.jsx)(m.A, b({
+    }, N)), (0, r.jsx)(m.A, b({
       title: A.intl.string(A.t["Yh+HX1"]),
-      value: C,
-      onChange: e => x({
+      value: x,
+      onChange: e => C({
         goreContentNonFriendDm: e
       }),
       options: S
-    }, y)), (0, r.jsx)(m.A, {
+    }, N)), (0, r.jsx)(m.A, {
       title: A.intl.string(A.t["FP+a42"]),
       value: E,
-      onChange: e => x({
+      onChange: e => C({
         goreContentGuilds: e
       }),
       isDisabled: !t || h,

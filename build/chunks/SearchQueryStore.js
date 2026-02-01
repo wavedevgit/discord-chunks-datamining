@@ -1,7 +1,7 @@
 /** Chunk was on 52199 **/
 /** chunk id: 65600, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => f
 }), require("./896048.js");
 var n, l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -63,7 +63,7 @@ class h extends(n = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : h[l] = "SearchQueryStore";
-let p = new h(Chunk73153.h, {
+let f = new h(Chunk73153.h, {
   SEARCH_RESULTS_QUERY_UPDATE: function(e) {
     let {
       id: t,

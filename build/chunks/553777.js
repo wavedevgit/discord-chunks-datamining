@@ -1,6 +1,6 @@
-/** Chunk was on 13492 **/
-/** chunk id: 553777, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 71447 **/
+/** chunk id: 553777, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  k: "container__50c27",
-  p: "list__50c27"
+  kL: "container__50c27",
+  Qs: "content__50c27"
 }

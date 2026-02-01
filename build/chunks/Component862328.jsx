@@ -150,7 +150,7 @@ function O(e) {
     height: d ? n : n + 8,
     x: d ? 0 : false,
     y: d ? 0 : false
-  }, G = d ? 20 : h, F = v ? y(n) : E(n);
+  }, G = d ? 20 : h, V = v ? y(n) : E(n);
   return (0, r.jsxs)("div", {
     className: o()(a, c.iE),
     style: l,
@@ -169,10 +169,10 @@ function O(e) {
       role: "none",
       children: [(0, r.jsxs)("defs", {
         children: [p && (0, r.jsx)("path", {
-          d: F,
+          d: V,
           id: M
         }), (0, r.jsx)("path", {
-          d: F,
+          d: V,
           id: L
         }), null != b ? (0, r.jsx)("rect", {
           id: P,
@@ -245,7 +245,7 @@ function O(e) {
           }) : null]
         })]
       }) : null, p && (0, r.jsx)("path", {
-        d: F,
+        d: V,
         stroke: s.LU0.unsafe_rawColors.BRAND_500.css,
         strokeWidth: g,
         className: c.Zt,

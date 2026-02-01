@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 143177, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 143177, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Y: () => r
 });
@@ -10,7 +10,7 @@ let r = (0, Chunk419954.zD)(Chunk780964.X.AD_OVERRIDE, {
   useTitle: () => "Always Deliver Ads",
   useSubtitle: () => "Makes the user targetable for all active ads.",
   useValue: () => l.HZ.useSetting(),
-  setValue: e => {
-    l.HZ.updateSetting(e)
+  setValue: t => {
+    l.HZ.updateSetting(t)
   }
 })

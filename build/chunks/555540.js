@@ -1,23 +1,23 @@
-/** Chunk was on 48898 **/
-/** chunk id: 555540, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 7602 **/
+/** chunk id: 555540, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  $: () => s
+  $: () => n
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js");
 
-function s(e, t, n) {
-  let s = i.useRef(null),
+function n(e, t, s) {
+  let n = i.useRef(null),
     [r, l] = i.useState(false),
     a = i.useCallback(() => {
-      if (e && null !== s.current) {
-        var n;
-        l((null == (n = s.current) ? true : n.offsetHeight) > 2.5 * t)
+      if (e && null !== n.current) {
+        var s;
+        l((null == (s = n.current) ? true : s.offsetHeight) > 2.5 * t)
       }
     }, [l, e, t]);
   return i.useLayoutEffect(() => {
     a()
-  }, [a, e, n]), {
-    postTitleRef: s,
+  }, [a, e, s]), {
+    postTitleRef: n,
     isNewBadgeOverflow: r
   }
 }

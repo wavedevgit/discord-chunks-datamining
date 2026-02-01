@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 524628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -32,7 +32,7 @@ function u(e) {
       })
     }), Array.from({
       length: n
-    }).map((e, t) => (0, r.jsx)(h, {}, t))]
+    }).map((e, t) => (0, r.jsx)(p, {}, t))]
   })
 }
 
@@ -45,7 +45,7 @@ function d(e) {
   })
 }
 
-function h() {
+function p() {
   let e = (0, a.bG)([o.A], () => o.A.useReducedMotion);
   return (0, r.jsxs)("div", {
     style: {

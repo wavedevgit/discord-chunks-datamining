@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 208882, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BA: () => b,
@@ -6,8 +6,8 @@ require.d(exports, {
   LH: () => O,
   Se: () => m,
   WD: () => g,
-  YS: () => p,
-  Yc: () => h,
+  YS: () => h,
+  Yc: () => p,
   ZM: () => f,
   uU: () => y
 });
@@ -20,7 +20,7 @@ var Chunk111956 = require("./111956.js"),
   Chunk938764 = require("./938764.js"),
   Chunk946116 = require("./946116.js"),
   Chunk652215 = require("./652215.js");
-let h = l()(async (e, t) => {
+let p = l()(async (e, t) => {
     try {
       a.h.dispatch({
         type: "GUILD_DIRECTORY_FETCH_START"
@@ -43,7 +43,7 @@ let h = l()(async (e, t) => {
       })
     }
   }, 200),
-  p = l()(async e => {
+  h = l()(async e => {
     try {
       let t = await s.Bo.get({
         url: d.Rsh.DIRECTORY_CHANNEL_CATEGORY_COUNTS(e),

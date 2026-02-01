@@ -22,7 +22,7 @@ function d(e) {
   } = e, h = (0, l.bG)([o.default], () => {
     var e;
     return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
-  }), g = (0, l.bG)([s.A], () => s.A.getState(i), [i]), f = r.useMemo(() => null == d ? {
+  }), g = (0, l.bG)([s.A], () => s.A.getState(i), [i]), m = r.useMemo(() => null == d ? {
     path: i,
     fingerprint: h,
     search: p
@@ -30,7 +30,7 @@ function d(e) {
   return r.useEffect(() => {
     u || null == g && a.A.openNativeAppModal(i, c.e$_.DEEP_LINK, {
       type: n,
-      params: f
+      params: m
     })
-  }, [g, i, f, n]), t
+  }, [g, i, m, n]), t
 }

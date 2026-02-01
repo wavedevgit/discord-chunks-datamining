@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 647026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -16,8 +16,8 @@ let d = e => {
   let t, {
     searchQuery: n,
     setSearchQuery: d,
-    mostRecentQuery: h,
-    handleClearSearch: p,
+    mostRecentQuery: p,
+    handleClearSearch: h,
     handleSearchKeyPress: g,
     handleCreateOrAddGuild: f,
     searchResults: m,
@@ -71,7 +71,7 @@ let d = e => {
         children: [(0, r.jsxs)("div", {
           className: c.Dr,
           children: [(0, r.jsx)(l.DUT, {
-            onClick: p,
+            onClick: h,
             className: c.UE,
             children: (0, r.jsx)(i.A, {
               direction: i.A.Directions.LEFT
@@ -81,7 +81,7 @@ let d = e => {
             className: c.s7,
             children: a.intl.format(a.t.UkOHRd, {
               numResults: m.length,
-              query: h
+              query: p
             })
           })]
         }), (0, r.jsx)(l.IWV, {
@@ -89,7 +89,7 @@ let d = e => {
           "aria-label": a.intl.string(a.t.nL2wKD),
           placeholder: a.intl.string(a.t.nL2wKD),
           onChange: d,
-          onClear: p,
+          onClear: h,
           onKeyDown: g
         })]
       }), t]

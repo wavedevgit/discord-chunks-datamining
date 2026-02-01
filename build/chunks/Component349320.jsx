@@ -36,7 +36,7 @@ function I(e) {
   });
   return (0, r.jsx)(p.f5, {
     value: i,
-    children: (0, r.jsx)(f.A, (t = function(e) {
+    children: (0, r.jsx)(m.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -86,7 +86,7 @@ let v = Chunk64700.memo(function() {
     "aria-label": O.intl.string(O.t.StREWK),
     children: (0, r.jsxs)(s.xpW, {
       containerRef: e,
-      children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(_.A, {}), (0, r.jsx)(m.A, {}), (0, r.jsx)(c.A, {
+      children: [(0, r.jsx)(o.A, {}), (0, r.jsx)(_.A, {}), (0, r.jsx)(f.A, {}), (0, r.jsx)(c.A, {
         section: E.JJy.ACTIVITY_PANEL,
         children: (0, r.jsx)(I, {
           className: y.iz

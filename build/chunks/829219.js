@@ -12,7 +12,7 @@ require.d(exports, {
   Ov: () => U,
   Oy: () => H,
   QG: () => et,
-  R2: () => F,
+  R2: () => V,
   Tb: () => eu,
   UZ: () => Z,
   WM: () => B,
@@ -184,7 +184,7 @@ async function G() {
     }
   }
 }
-async function F(e) {
+async function V(e) {
   let {
     questId: t,
     streamKey: n,
@@ -229,7 +229,7 @@ async function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   var t, n;
   return e instanceof c.CaptchaCancelError || null != e && "object" == typeof e && (400 === e.status && (null == (t = e.body) ? true : t.captcha_key) != null || null != e.captchaFields && !!(Object.keys(e.captchaFields).length > 0) || (null == (n = e.fields) ? true : n.captcha_key) != null || false)
 }
@@ -274,7 +274,7 @@ async function H(e, t) {
     return a.h.dispatch({
       type: "QUESTS_ENROLL_FAILURE",
       questId: e
-    }), V(t) ? {
+    }), F(t) ? {
       type: "captcha_failed"
     } : {
       type: "unknown_error"

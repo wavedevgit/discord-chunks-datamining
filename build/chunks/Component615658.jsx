@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 615658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,10 +13,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk998740 = require("./998740.js"),
   Chunk572808 = require("./572808.js"),
   Chunk241080 = require("./241080.js");
-let p = () => {
+let h = () => {
   var e, t;
   let n = (0, i.bG)([a.A], () => a.A.getChannelId()),
-    p = (0, i.bG)([u.A], () => null != n && u.A.isUserConnected(n)),
+    h = (0, i.bG)([u.A], () => null != n && u.A.isUserConnected(n)),
     g = (0, c.n)(e => e.genre),
     f = (0, c.n)(e => e.songIndex),
     m = (0, c.n)(e => e.playRadio),
@@ -24,43 +24,43 @@ let p = () => {
     A = (0, c.n)(e => e.playNextSong),
     y = (0, c.n)(e => e.volumes),
     O = l.useRef(null),
-    _ = l.useRef(null),
     j = l.useRef(null),
-    x = (0, h.A)(g, f),
+    x = l.useRef(null),
+    _ = (0, p.A)(g, f),
     v = (0, i.bG)([u.A], () => u.A.assets);
   return (l.useEffect(() => {
     let e = O.current;
-    if (null != e && (null == x ? true : x.src) != null && (e.pause(), e.src = x.src, !b && m && p)) {
+    if (null != e && (null == _ ? true : _.src) != null && (e.pause(), e.src = _.src, !b && m && h)) {
       var t;
       null == (t = e.play()) || t.catch(e => {
         o.A.captureException(e)
       })
     }
-  }, [null == x ? true : x.src, b, m, p]), l.useEffect(() => {
+  }, [null == _ ? true : _.src, b, m, h]), l.useEffect(() => {
     var e, t;
-    let n = _.current,
-      r = j.current;
-    null != n && (b || !p ? n.pause() : null == (e = n.play()) || e.catch(e => {
+    let n = j.current,
+      r = x.current;
+    null != n && (b || !h ? n.pause() : null == (e = n.play()) || e.catch(e => {
       o.A.captureException(e)
-    })), null != r && (b || !p ? r.pause() : null == (t = r.play()) || t.catch(e => {
+    })), null != r && (b || !h ? r.pause() : null == (t = r.play()) || t.catch(e => {
       o.A.captureException(e)
     }))
-  }, [b, p]), p) ? (0, r.jsxs)(r.Fragment, {
+  }, [b, h]), h) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.A, {
       ref: O,
       onEnded: A,
       volume: b ? 0 : y.radio,
       children: (0, r.jsx)("source", {
-        src: null == x ? true : x.src
+        src: null == _ ? true : _.src
       })
     }), (0, r.jsx)(s.A, {
-      ref: _,
+      ref: j,
       volume: b ? 0 : y.environment,
       children: (0, r.jsx)("source", {
         src: null == v || null == (e = v.sounds) ? true : e[d.qi.ENVIRONMENT]
       })
     }), (0, r.jsx)(s.A, {
-      ref: j,
+      ref: x,
       volume: b ? 0 : y.campfire,
       children: (0, r.jsx)("source", {
         src: null == v || null == (t = v.sounds) ? true : t[d.qi.CAMPFIRE]

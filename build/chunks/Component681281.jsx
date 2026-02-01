@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 681281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => F
@@ -46,7 +46,7 @@ function V(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, l = (0, j.Us)(), i = (0, s.bG)([I.A], () => I.A.getLayout(n.id, l));
+  } = e, l = (0, x.Us)(), i = (0, s.bG)([I.A], () => I.A.getLayout(n.id, l));
   return (0, r.jsx)(S.A, {
     children: (0, r.jsx)(w.A, {
       participant: t,
@@ -145,9 +145,9 @@ function F(e) {
   } = (0, s.cf)([I.A], () => ({
     focusedParticipant: I.A.getSelectedParticipant(t.id),
     participantsOpen: I.A.getParticipantsOpen(t.id)
-  }), [t.id]), A = (0, p.Ay)(t), j = (0, g.gU)(t), [C] = (0, d.A)((null == b ? true : b.type) === D.lp.ACTIVITY ? [b.applicationId] : []), S = G.intl.string(G.t.BVZqJl);
+  }), [t.id]), A = (0, h.Ay)(t), x = (0, g.gU)(t), [C] = (0, d.A)((null == b ? true : b.type) === D.lp.ACTIVITY ? [b.applicationId] : []), S = G.intl.string(G.t.BVZqJl);
   t.isDM() ? S = G.intl.string(G.t.jN2DfZ) : t.isGroupDM() && (S = G.intl.string(G.t["e5y+gm"]));
-  let T = (0, s.bG)([h.A], () => h.A.getChannelStatus(t)),
+  let T = (0, s.bG)([p.A], () => p.A.getChannelStatus(t)),
     w = t.isGuildVoice() && u && null != T && T.length > 0,
     L = (0, N.Ay)(t),
     V = w ? (0, r.jsx)(a.m, {
@@ -194,7 +194,7 @@ function F(e) {
           className: i()(k.Gh, U.PT, {
             [k.BI]: L
           }),
-          children: x.A.parseVoiceChannelStatus(T, true, {
+          children: _.A.parseVoiceChannelStatus(T, true, {
             channelId: t.id
           })
         }), L && (0, r.jsx)(o.R2l, {
@@ -230,8 +230,8 @@ function F(e) {
         children: [(0, r.jsx)(y.Ay.Title, {
           wrapperClassName: k.DD,
           children: (0, r.jsxs)(r.Fragment, {
-            children: [null != j ? (0, r.jsx)(y.Ay.ChannelIcon, {
-              icon: j,
+            children: [null != x ? (0, r.jsx)(y.Ay.ChannelIcon, {
+              icon: x,
               "aria-label": S
             }) : null, A, B && (0, r.jsx)(a.m, {
               text: G.intl.string(G.t.QyZ4Td),
@@ -243,7 +243,7 @@ function F(e) {
               })
             })]
           })
-        }), (0, r.jsx)(_.i$, {
+        }), (0, r.jsx)(j.i$, {
           channel: t,
           guild: l
         }), (0, r.jsx)(H, {

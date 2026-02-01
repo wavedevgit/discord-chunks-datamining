@@ -1,9 +1,9 @@
-/** Chunk was on 20725 **/
+/** Chunk was on 97246 **/
 /** chunk id: 832248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => r
 });
-let l = (0, require("./353640.js").v)(() => ({
+let r = (0, require("./353640.js").v)(() => ({
   isOpen: null,
   shouldRenderTenureLevelUp: false
 }))

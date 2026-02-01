@@ -1,7 +1,7 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 706787, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => A
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,19 +14,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk614518 = require("./614518.js"),
   Chunk804771 = require("./804771.js");
 let p = 6 * Chunk927813.A.Millis.SECOND,
-  g = 2 * Chunk927813.A.Millis.SECOND,
+  f = 2 * Chunk927813.A.Millis.SECOND,
   m = 2 * Chunk927813.A.Millis.SECOND,
-  _ = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
+  g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
-function h(e) {
+function A(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
     onComplete: u
   } = e, {
-    emoji: h,
-    sentAt: y
-  } = n, A = (0, a.bG)([c.A], () => c.A.useReducedMotion), [b, E] = l.useState(true), v = !A, O = (0, o.pnh)(b, {
+    emoji: A,
+    sentAt: b
+  } = n, _ = (0, a.bG)([c.A], () => c.A.useReducedMotion), [y, v] = r.useState(true), E = !_, O = (0, s.pnh)(y, {
     from: {
       rotate: false
     },
@@ -44,28 +44,28 @@ function h(e) {
       "leave" === n && u()
     }
   });
-  return (l.useEffect(() => {
+  return (r.useEffect(() => {
     let e;
-    return Date.now() - y >= m ? (0, d.a)(t) : e = setTimeout(() => {
-      E(false), v && (0, d.a)(t)
-    }, v ? g : p), () => {
+    return Date.now() - b >= m ? (0, d.a)(t) : e = setTimeout(() => {
+      v(false), E && (0, d.a)(t)
+    }, E ? f : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [y, t, v]), v) ? null : O((e, t) => {
+  }, [b, t, E]), E) ? null : O((e, t) => {
     var n;
     let {
-      rotate: l
+      rotate: r
     } = e;
-    return t && (0, r.jsx)(i.animated.div, {
-      className: f._,
+    return t && (0, l.jsx)(i.animated.div, {
+      className: h._,
       style: {
-        transform: l.to(_)
+        transform: r.to(g)
       },
-      children: (0, r.jsx)(s.A, {
-        className: f.F,
-        emojiId: h.id,
-        emojiName: h.name,
-        animated: null != (n = h.animated) && n
+      children: (0, l.jsx)(o.A, {
+        className: h.F,
+        emojiId: A.id,
+        emojiName: A.name,
+        animated: null != (n = A.animated) && n
       })
     })
   })

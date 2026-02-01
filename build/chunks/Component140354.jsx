@@ -31,7 +31,7 @@ function O(e) {
     width: O,
     height: y
   } = (0, c.Ay)(), I = i.useCallback(() => {
-    null != t && null != n && ((0, m.sy)(t), (0, A.default)({
+    null != t && null != n && ((0, f.sy)(t), (0, A.default)({
       guildId: t,
       returnChannelId: n
     }))
@@ -53,7 +53,7 @@ function O(e) {
     }) : (0, r.jsx)(p.A, {}), null != C && null != S && (0, r.jsx)("div", {
       className: E.D7,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, f.cb)(C, .16), " 0%, ").concat((0, f.cb)(C, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, m.cb)(C, .16), " 0%, ").concat((0, m.cb)(C, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: E.D7

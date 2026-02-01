@@ -1,13 +1,13 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 23395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => p,
-  default: () => g
+  default: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk989349 = require("./989349.js"),
-  s = require.n(Chunk989349),
+  a = require.n(Chunk989349),
   Chunk158954 = require("./158954.js"),
   Chunk397927 = require("./397927.js"),
   Chunk151282 = require("./151282.js"),
@@ -16,22 +16,22 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 let p = "SCHEDULED_MESSAGE_EDIT_MODAL_KEY";
 
-function g(e) {
+function f(e) {
   let {
     scheduledMessage: t,
     transitionState: n,
     onClose: i
-  } = e, g = s()(t.sendAtTimestamp.substring(0, 200)), [f, m] = l.useState(g), [b, A] = l.useState(false), y = async () => {
-    A(true);
+  } = e, f = a()(t.sendAtTimestamp.substring(0, 200)), [m, g] = r.useState(f), [A, b] = r.useState(false), _ = async () => {
+    b(true);
     try {
-      await (0, c.Eg)(t.scheduledMessageId, f.toISOString()), (0, d.kb)(), (0, o.OoC)(p)
+      await (0, c.Eg)(t.scheduledMessageId, m.toISOString()), (0, d.kb)(), (0, o.OoC)(p)
     } catch (e) {
       (0, d.xP)(e.message)
     } finally {
-      A(false)
+      b(false)
     }
   };
-  return (0, r.jsx)(a.Modal, {
+  return (0, l.jsx)(s.Modal, {
     transitionState: n,
     size: "md",
     title: h.intl.string(h.t.jbdHj3),
@@ -43,12 +43,12 @@ function g(e) {
     }, {
       variant: "primary",
       text: h.intl.string(h.t.VZANAD),
-      onClick: y,
-      loading: b
+      onClick: _,
+      loading: A
     }],
-    children: (0, r.jsx)(u.A, {
-      defaultValue: g,
-      onChange: m
+    children: (0, l.jsx)(u.A, {
+      defaultValue: f,
+      onChange: g
     })
   })
 }

@@ -39,10 +39,10 @@ var Chunk557939 = require("./557939.js"),
   k = Chunk883972.getterFor(x),
   U = Chunk883972.getterFor(M),
   G = Chunk745730("fetch"),
-  F = Chunk745730("Request"),
-  V = Chunk745730("Headers"),
-  B = F && F.prototype,
-  H = V && V.prototype,
+  V = Chunk745730("Request"),
+  F = Chunk745730("Headers"),
+  B = V && V.prototype,
+  H = F && F.prototype,
   Y = Chunk860511.TypeError,
   W = Chunk860511.encodeURIComponent,
   K = String.fromCharCode,
@@ -296,13 +296,13 @@ if (Chunk673570(eE, {
     forced: !Chunk39911
   }, {
     URLSearchParams: eg
-  }), !Chunk39911 && Chunk339626(V)) {
+  }), !Chunk39911 && Chunk339626(F)) {
   var ey = Chunk410323(H.has),
     eb = Chunk410323(H.set),
     eO = function(e) {
       if (A(e)) {
         var t, n = e.body;
-        if (O(n) === x) return ey(t = e.headers ? new V(e.headers) : new V, "content-type") || eb(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
+        if (O(n) === x) return ey(t = e.headers ? new F(e.headers) : new F, "content-type") || eb(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
           body: T(0, I(n)),
           headers: T(0, t)
         })
@@ -318,9 +318,9 @@ if (Chunk673570(eE, {
       fetch: function(e) {
         return G(e, arguments.length > 1 ? eO(arguments[1]) : {})
       }
-    }), Chunk339626(F)) {
+    }), Chunk339626(V)) {
     var ev = function(e) {
-      return g(this, B), new F(e, arguments.length > 1 ? eO(arguments[1]) : {})
+      return g(this, B), new V(e, arguments.length > 1 ? eO(arguments[1]) : {})
     };
     B.constructor = ev, ev.prototype = B, Chunk557939({
       global: true,

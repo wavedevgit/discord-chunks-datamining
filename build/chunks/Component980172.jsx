@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 980172, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => ea
@@ -95,13 +95,13 @@ function ee(e) {
   let {
     className: a,
     user: o
-  } = e, c = i.useRef(null), p = (0, x.Jz)(), m = (0, S.g)(), g = (0, O.EC)(), A = null != (t = null == g || null == (l = g.nick) ? true : l[0]) ? t : null, [f, b] = i.useState(false);
+  } = e, c = i.useRef(null), p = (0, C.Jz)(), m = (0, S.g)(), g = (0, O.EC)(), A = null != (t = null == g || null == (l = g.nick) ? true : l[0]) ? t : null, [f, b] = i.useState(false);
   i.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let h = !o.isClaimed(),
     E = p && !o.hasUniqueUsername() && !o.hasVerifiedEmailOrPhone() || h,
-    C = E ? Z.intl.string(Z.t["7Ngnyr"]) : true;
+    x = E ? Z.intl.string(Z.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
     className: s()(X.ZZ, a),
     children: [(0, r.jsx)("div", {
@@ -152,7 +152,7 @@ function ee(e) {
         })
       })
     }), (0, r.jsx)(u.m, {
-      text: C,
+      text: x,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: X.pr,
@@ -380,7 +380,7 @@ function ei(e) {
               title: Z.intl.string(Z.t["3CTiKi"]),
               children: l.hasFlag(W.nhx.MFA_SMS) ? Z.intl.string(Z.t.jrhJyo) : true,
               actionText: Z.intl.string(Z.t.N86XcP),
-              handleSubmit: e => C.A.removePhone(e, C.d.USER_SETTINGS_UPDATE)
+              handleSubmit: e => x.A.removePhone(e, x.d.USER_SETTINGS_UPDATE)
             })))
           }
         })
@@ -398,7 +398,7 @@ function ei(e) {
                 default: e
               } = await Promise.resolve().then(n.bind(n, 615715));
               return t => (0, r.jsx)(e, q({
-                reason: C.d.USER_SETTINGS_UPDATE
+                reason: x.d.USER_SETTINGS_UPDATE
               }, t))
             }, {
               modalKey: K.V
@@ -492,7 +492,7 @@ function ea() {
     n = (0, v.Ay)(t.id),
     i = (0, j.A)(n),
     l = B.jP.useSetting(),
-    s = (0, c.bG)([N.A], () => N.A.getErrors()),
+    s = (0, c.bG)([y.A], () => y.A.getErrors()),
     a = null == s || null == (e = s.avatar) ? true : e[0],
     {
       avatarSrc: d,
@@ -501,7 +501,7 @@ function ea() {
       userId: null == t ? true : t.id,
       size: _._3J.SIZE_80
     }),
-    m = (0, y.A)(),
+    m = (0, N.A)(),
     g = (0, T.fk)(),
     A = (0, k.j)("UserSettingsAccountProfileCard");
   return (0, r.jsxs)("div", {

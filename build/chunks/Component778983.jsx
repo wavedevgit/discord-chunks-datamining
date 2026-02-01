@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 778983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,32 +16,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk641131 = require("./641131.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function m(e) {
   let {
     message: t,
     user: n,
-    guild: f,
-    channel: m
-  } = e, b = (0, l.bG)([d.A], () => null != n && null != f && (0, a.Kd)(n, f, [d.A])), {
-    messageReference: A
-  } = t, y = (0, l.bG)([u.A], () => null != A ? u.A.getMessage(A.channel_id, A.message_id) : null), O = (0, l.bG)([c.A], () => null != y ? c.A.getChannel(y.channel_id) : null), _ = (0, l.bG)([c.A], () => {
+    guild: m,
+    channel: g
+  } = e, A = (0, r.bG)([d.A], () => null != n && null != m && (0, s.Kd)(n, m, [d.A])), {
+    messageReference: b
+  } = t, _ = (0, r.bG)([u.A], () => null != b ? u.A.getMessage(b.channel_id, b.message_id) : null), y = (0, r.bG)([c.A], () => null != _ ? c.A.getChannel(_.channel_id) : null), v = (0, r.bG)([c.A], () => {
     var e, t;
-    return null != (e = null == (t = c.A.getChannel(m.id)) ? true : t.isArchivedThread()) && e
+    return null != (e = null == (t = c.A.getChannel(g.id)) ? true : t.isArchivedThread()) && e
   });
-  if (!b) return null;
-  let j = null == y ? g.intl.string(p.default["0IZbwC"]) : g.intl.string(p.default.Uj6oD4),
-    x = null == y,
-    v = "delete-message-".concat(t.id);
-  return (0, r.jsx)(h.A, {
-    text: j,
-    icon: s.ucK,
+  if (!A) return null;
+  let E = null == _ ? f.intl.string(p.default["0IZbwC"]) : f.intl.string(p.default.Uj6oD4),
+    O = null == _,
+    C = "delete-message-".concat(t.id);
+  return (0, l.jsx)(h.A, {
+    text: E,
+    icon: a.ucK,
     onClick: () => {
-      null != O && null != y && o.A.confirmDelete(O, y, false, {
-        isFlagResolved: _,
-        moderatorReportChannelId: m.id
+      null != y && null != _ && o.A.confirmDelete(y, _, false, {
+        isFlagResolved: v,
+        moderatorReportChannelId: g.id
       })
     },
-    disabled: x,
+    disabled: O,
     color: i.$n.Colors.RED
-  }, v)
+  }, C)
 }

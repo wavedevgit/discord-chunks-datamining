@@ -1,7 +1,7 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 88474 **/
 /** chunk id: 197305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => p
 }), require("./321073.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -17,17 +17,17 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 let c = {},
-  d = () => {
+  u = () => {
     c = {
       guildAffinitiesByGuildId: {},
       guildAffinities: [],
       lastFetched: 0
     }
   };
-d();
-class u extends(r = Chunk311907.Ay.PersistedStore) {
+u();
+class d extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (c = e), this.waitFor(a.A)
+    null != e && (c = e), this.waitFor(s.A)
   }
   getState() {
     return c
@@ -42,10 +42,10 @@ class u extends(r = Chunk311907.Ay.PersistedStore) {
     return 0 !== c.lastFetched
   }
 }
-o(u, "displayName", "GuildAffinitiesStore"), o(u, "persistKey", "GuildAffinitiesStore");
-let _ = new u(Chunk73153.h, {
+o(d, "displayName", "GuildAffinitiesStore"), o(d, "persistKey", "GuildAffinitiesStore");
+let p = new d(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    return Date.now() - c.lastFetched > 864e5 && (0, s.I)(), false
+    return Date.now() - c.lastFetched > 864e5 && (0, a.I)(), false
   },
   LOAD_GUILD_AFFINITIES_SUCCESS: function(e) {
     let {
@@ -55,15 +55,15 @@ let _ = new u(Chunk73153.h, {
       let {
         affinity: n,
         guild_id: r
-      } = e, i = {
+      } = e, l = {
         score: n,
         guildId: r,
         index: t
       };
-      c.guildAffinitiesByGuildId[r] = i, c.guildAffinities.push(i)
+      c.guildAffinitiesByGuildId[r] = l, c.guildAffinities.push(l)
     })
   },
   LOGOUT: function() {
-    d()
+    u()
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 429619, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -27,7 +27,7 @@ let A = () => {
     body: h,
     version: E,
     revertTextColor: O
-  } = (0, u.M)(), C = i.useContext(o.gl), x = null != (e = null == C ? true : C.navigateWithValidation) ? e : e => e();
+  } = (0, u.M)(), x = i.useContext(o.gl), C = null != (e = null == x ? true : x.navigateWithValidation) ? e : e => e();
   return i.useEffect(() => {
     c.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
       type: p.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
@@ -63,7 +63,7 @@ let A = () => {
       })]
     }), (0, r.jsx)(l.Button, {
       onClick: () => {
-        x(() => (0, d.Cz)({
+        C(() => (0, d.Cz)({
           analyticsLocations: t,
           analyticsSource: s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
         }))

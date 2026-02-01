@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 508094, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./321073.js"), require("./896048.js");
 var Chunk179771 = require("./179771.js"),
   Chunk793574 = require("./793574.js"),
@@ -16,7 +16,7 @@ var Chunk179771 = require("./179771.js"),
   Chunk693806 = require("./693806.js"),
   Chunk613057 = require("./613057.js"),
   Chunk818348 = require("./818348.js");
-let m = {
+let f = {
   [Chunk818348.e$.GET_SOUNDBOARD_SOUNDS]: {
     scope: {
       [Chunk613057.sm.ANY]: [Chunk179771.F.RPC, Chunk613057.hj]
@@ -49,15 +49,15 @@ let m = {
         p = (0, h.A)(),
         g = null != s && null != r && (0, o.Ir)(r, s, p);
       if (null == p) throw new d.A({
-        errorCode: f.Lw.INVALID_CHANNEL
+        errorCode: m.Lw.INVALID_CHANNEL
       }, "Invalid Channel.");
       if (g)
         if ((0, c.A)(p)) null != s && (0, o.Ak)(s, p.id, [i.A.RPC]);
         else throw new d.A({
-          errorCode: f.Lw.INVALID_PERMISSIONS
+          errorCode: m.Lw.INVALID_PERMISSIONS
         }, "Invalid Permissions.");
       else throw new d.A({
-        errorCode: f.Lw.INVALID_SOUND
+        errorCode: m.Lw.INVALID_SOUND
       }, "Invalid Sound.")
     }
   }

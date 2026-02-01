@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 187360, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -54,16 +54,16 @@ function b(e) {
   } = e, n = l.useRef(null), [b, A] = (0, i.yK)([o.Ay], () => [o.Ay.isChannelMuted(t.getGuildId(), t.id), o.Ay.resolvedMessageNotifications(t)], [t]), [y, O] = l.useState(false);
   l.useEffect(() => {
     let e = () => O(true);
-    return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let _ = e => {
+  let j = e => {
       e.shiftKey ? a.A.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
       }, u.G_.muted(!b)) : O(e => !e)
     },
-    j = g.intl.string(g.t.h850Ss);
+    x = g.intl.string(g.t.h850Ss);
   return (0, r.jsx)(s.YNO, {
     targetElementRef: n,
     shouldShow: y,
@@ -72,7 +72,7 @@ function b(e) {
     align: "right",
     autoInvert: false,
     onRequestClose: () => O(false),
-    renderPopout: e => (0, r.jsx)(h.A, m(f({}, e), {
+    renderPopout: e => (0, r.jsx)(p.A, m(f({}, e), {
       channel: t,
       navId: "channel-context",
       label: g.intl.string(g.t.Xm41aV)
@@ -84,10 +84,10 @@ function b(e) {
       } = t;
       return (0, r.jsx)(d.Ay.Icon, m(f({}, e), {
         ref: n,
-        onClick: _,
-        tooltip: l ? null : j,
-        icon: b || A !== p.orn.ALL_MESSAGES ? s.a_I : s.XFE,
-        "aria-label": j,
+        onClick: j,
+        tooltip: l ? null : x,
+        icon: b || A !== h.orn.ALL_MESSAGES ? s.a_I : s.XFE,
+        "aria-label": x,
         selected: l
       }))
     }

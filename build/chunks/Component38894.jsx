@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 38894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -43,7 +43,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     tab: t,
     onScroll: n,
@@ -54,7 +54,7 @@ function f(e) {
     return null != (e = c.A.getGuildIds({
       categoryId: p
     })) ? e : h.VX
-  }), f = (0, l.bG)([c.A], () => {
+  }), m = (0, l.bG)([c.A], () => {
     var e;
     return null == (e = c.A.getIsFetching({
       categoryId: p
@@ -67,14 +67,14 @@ function f(e) {
   }, [p]), (0, r.jsx)(d.A, {
     tab: t,
     guildIds: g,
-    loading: f,
+    loading: m,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     selectedTab: t,
     onScroll: n,
@@ -99,7 +99,7 @@ function m(e) {
     case h.o.ENTERTAINMENT:
     case h.o.TECH:
     case h.o.EDUCATION:
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(m, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,

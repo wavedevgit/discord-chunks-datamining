@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 783440, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 783440, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   n: () => T
 });
@@ -15,15 +15,15 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.STREAMING_STREAM_ATTENUATION, {
   useTitle: () => d.intl.string(d.t["/jwMtn"]),
   useSubtitle: () => d.intl.string(d.t.zlA23F),
   useValue: function() {
-    return (0, n.bG)([a.A], () => a.A.getSidechainCompression())
+    return (0, n.bG)([u.A], () => u.A.getSidechainCompression())
   },
-  setValue: function(e) {
-    let t = [s.A.USER_SETTINGS_VOICE_AND_VIDEO];
-    l.A.setSidechainCompression(e, {
-      analyticsLocations: t
+  setValue: function(t) {
+    let e = [s.A.USER_SETTINGS_VOICE_AND_VIDEO];
+    l.A.setSidechainCompression(t, {
+      analyticsLocations: e
     })
   },
   usePredicate: function() {
-    return a.A.supports(o.O5.SIDECHAIN_COMPRESSION)
+    return u.A.supports(o.O5.SIDECHAIN_COMPRESSION)
   }
 })

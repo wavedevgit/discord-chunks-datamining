@@ -117,7 +117,7 @@ function eg(e, t) {
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
   return l
 }
-let ef = e => {
+let em = e => {
     let {
       selected: t
     } = e, n = eg(e, ["selected"]), i = (0, P.c)("PrivateChannels.ICYMIButton"), l = (0, c.rm)("icymi");
@@ -136,16 +136,16 @@ let ef = e => {
       }, n, l))
     }) : null
   },
-  em = e => {
+  ef = e => {
     let {
       selected: t
     } = e, n = eg(e, ["selected"]), l = (0, c.rm)("friends"), a = (0, k.kX)(), s = (0, d.bG)([G.Ay], () => G.Ay.canShowFriendsTabBadge()), u = (0, d.bG)([v.A], () => v.A.useReducedMotion), {
       enabled: h
     } = U.u.useConfig({
       location: "Friends Tab"
-    }), [f, m] = (0, j.Wl)(s && h ? p.M.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
+    }), [m, f] = (0, j.Wl)(s && h ? p.M.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
       cooldownDurationMs: G.hb
-    }), b = f === p.M.GIFTING_INTENT_FRIENDS_TAB_BADGE;
+    }), b = m === p.M.GIFTING_INTENT_FRIENDS_TAB_BADGE;
     i.useEffect(() => {
       b && (0, C.x)({
         name: o.ImpressionNames.GIFT_INTENT_BADGE,
@@ -159,7 +159,7 @@ let ef = e => {
         let e;
         b ? (er.default.track(el.HAw.GIFT_INTENT_BADGE_CLICKED, {
           gift_intent_type: eo.np.FRIEND_ANNIVERSARY
-        }), e = el.m3P.ALL, E.A.setSection(el.m3P.ALL), m(es.i.TAKE_ACTION)) : e = en.Ay.getState().section, (0, S.A)({
+        }), e = el.m3P.ALL, E.A.setSection(el.m3P.ALL), f(es.i.TAKE_ACTION)) : e = en.Ay.getState().section, (0, S.A)({
           tab_opened: e
         })
       },
@@ -291,7 +291,7 @@ let ef = e => {
       className: ed.lL,
       children: (0, r.jsx)(O.w_, {
         onClick: () => {
-          (0, f.openModalLazy)(async () => {
+          (0, m.openModalLazy)(async () => {
             let {
               default: e
             } = await n.e("67195").then(n.bind(n, 371158));
@@ -347,7 +347,7 @@ let ev = Chunk64700.memo(function(e) {
     shouldShowMessageRequestsRow: p,
     shouldShowFamilyCenterRow: h,
     selectedChannelId: g,
-    path: f
+    path: m
   } = e, A = i.useRef(null), b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), I = (0, P.c)("PrivateChannels"), v = null;
   return c ? v = (0, r.jsx)(F.V, {
     targetElementRef: O
@@ -372,29 +372,29 @@ let ev = Chunk64700.memo(function(e) {
           size: "sm",
           onClick: ey,
           text: ec.intl.format(ec.t.fH9FBy, {
-            tooltipHook: (e, t) => (0, r.jsx)(m.A, {
+            tooltipHook: (e, t) => (0, r.jsx)(f.A, {
               children: e
             }, t)
           })
         })
       })
     }), (0, r.jsxs)(y.A, eh(ep({}, e), {
-      version: f,
+      version: m,
       selectedChannelId: g,
       listScrollerRef: E,
-      children: [(0, r.jsx)(em, {
-        selected: null != f ? f === el.BVt.FRIENDS : l === el.BVt.FRIENDS
-      }, "friends"), I ? (0, r.jsx)(ef, {
-        selected: null != f ? f === el.BVt.ICYMI : l === el.BVt.ICYMI
+      children: [(0, r.jsx)(ef, {
+        selected: null != m ? m === el.BVt.FRIENDS : l === el.BVt.FRIENDS
+      }, "friends"), I ? (0, r.jsx)(em, {
+        selected: null != m ? m === el.BVt.ICYMI : l === el.BVt.ICYMI
       }, "icymi") : null, n && t ? (0, r.jsx)(eA, {
-        selected: null == f ? null != l && l.startsWith(el.BVt.APPLICATION_LIBRARY) : f.startsWith(el.BVt.APPLICATION_LIBRARY),
+        selected: null == m ? null != l && l.startsWith(el.BVt.APPLICATION_LIBRARY) : m.startsWith(el.BVt.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === el.BVt.APPLICATION_LIBRARY
       }, "library") : null, p ? (0, r.jsx)(eb, {
-        selected: null == f ? null != l && l.startsWith(el.BVt.MESSAGE_REQUESTS) : f === el.BVt.MESSAGE_REQUESTS
+        selected: null == m ? null != l && l.startsWith(el.BVt.MESSAGE_REQUESTS) : m === el.BVt.MESSAGE_REQUESTS
       }, "message-requests") : null, o ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(Y.o, {
           nitroTabButtonRef: O,
-          selected: null == f ? s : f.startsWith(el.BVt.APPLICATION_STORE),
+          selected: null == m ? s : m.startsWith(el.BVt.APPLICATION_STORE),
           route: el.BVt.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
@@ -405,7 +405,7 @@ let ev = Chunk64700.memo(function(e) {
           }
         }), v]
       }, "nitro-tab-group") : null, (0, r.jsx)(N.i, {
-        selected: f === el.BVt.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(el.BVt.COLLECTIBLES_SHOP)),
+        selected: m === el.BVt.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(el.BVt.COLLECTIBLES_SHOP)),
         listItemRef: b,
         locationState: {
           analyticsSource: {
@@ -415,9 +415,9 @@ let ev = Chunk64700.memo(function(e) {
           }
         }
       }, "discord-shop"), h ? (0, r.jsx)(eE, {
-        selected: null != l && l.startsWith(el.BVt.FAMILY_CENTER) || null != f && f.startsWith(el.BVt.FAMILY_CENTER)
+        selected: null != l && l.startsWith(el.BVt.FAMILY_CENTER) || null != m && m.startsWith(el.BVt.FAMILY_CENTER)
       }, "family-center") : null, (0, r.jsx)(W.A, {
-        selected: null == f ? null != l && l.startsWith(el.BVt.QUEST_HOME_V2) : f === el.BVt.QUEST_HOME_V2
+        selected: null == m ? null != l && l.startsWith(el.BVt.QUEST_HOME_V2) : m === el.BVt.QUEST_HOME_V2
       }, "quests"), (0, r.jsx)(eS, {}, "section-divider-top"), (0, r.jsx)(x.A, {}, "frequent-friends")]
     }))]
   })
@@ -446,8 +446,8 @@ function eC() {
     } = (0, d.cf)([X.A], () => ({
       theme: X.A.theme
     })),
-    o = (0, d.bG)([$.A], () => $.A.hasLibraryApplication()),
-    c = (0, d.bG)([J.A], () => J.A.getCurrentPath()),
+    o = (0, d.bG)([J.A], () => J.A.hasLibraryApplication()),
+    c = (0, d.bG)([$.A], () => $.A.getCurrentPath()),
     [u, h] = (0, z.A)(e => {
       let {
         channelId: t,
@@ -458,10 +458,10 @@ function eC() {
     g = (0, Y.P)({
       selected: null == h ? i : h.startsWith(el.BVt.APPLICATION_STORE)
     }),
-    f = (0, H.Tp)(),
-    m = (0, B.c7)(),
+    m = (0, H.Tp)(),
+    f = (0, B.c7)(),
     A = [];
-  (0, T.Tc)() && (f && A.push(p.M.REFERRAL_PROGRAM_POPOVER), m && A.push(p.M.RECURRING_3P_PROMOTION_POPOVER));
+  (0, T.Tc)() && (m && A.push(p.M.REFERRAL_PROGRAM_POPOVER), f && A.push(p.M.RECURRING_3P_PROMOTION_POPOVER));
   let [_, b] = (0, j.kn)(A, true, true), E = (0, R.H)(), O = (e = Z.dm.useSetting(), t = (0, D.A)(), true === e && true === t);
   return (0, r.jsx)(ev, {
     theme: a,

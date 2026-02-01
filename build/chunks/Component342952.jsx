@@ -236,7 +236,7 @@ function w(e) {
     "aria-label": P,
     "aria-labelledby": D,
     "aria-hidden": L
-  } = e, [x, M] = i.useState(false), j = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !L, F = () => (0, r.jsx)(u.lGe, {
+  } = e, [x, M] = i.useState(false), j = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !L, V = () => (0, r.jsx)(u.lGe, {
     className: m.XM,
     "aria-label": P,
     "aria-labelledby": D,
@@ -255,7 +255,7 @@ function w(e) {
         onContextMenu: t => (0, d.L3)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("16938")]).then(n.bind(n, 668569));
+          } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("57600")]).then(n.bind(n, 668569));
           return n => (0, r.jsx)(t, b(E({}, n), {
             user: e,
             guildId: s,
@@ -266,9 +266,9 @@ function w(e) {
         })
       }, e.id))
     })
-  }), V = () => G ? (0, r.jsx)(u.YNO, {
+  }), F = () => G ? (0, r.jsx)(u.YNO, {
     targetElementRef: j,
-    renderPopout: F,
+    renderPopout: V,
     shouldShow: x,
     position: "bottom",
     onRequestClose: () => M(false),
@@ -305,6 +305,6 @@ function w(e) {
       size: _,
       shouldShowOverflowCount: G,
       disableUsernameTooltip: A
-    }), V()]
+    }), F()]
   })
 }

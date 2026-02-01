@@ -245,17 +245,17 @@ function U(e) {
 }
 
 function G(e) {
-  return [F(e), V]
+  return [V(e), F]
 }
 
-function F(e) {
+function V(e) {
   return (t, n) => {
     let r = d.Ay.getScoreWithoutLoadingLatest(e, t);
     return d.Ay.getScoreWithoutLoadingLatest(e, n) - r
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   return (0, f.RF)(e.displayName, t.displayName)
 }
 

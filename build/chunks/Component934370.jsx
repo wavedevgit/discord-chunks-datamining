@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 934370, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 934370, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   F: () => T
 });
@@ -13,43 +13,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk372476 = require("./372476.js");
 let T = () => {
     let {
-      isWeb: e,
-      installationStatus: t,
+      isWeb: t,
+      installationStatus: e,
       perkAvailableToUser: i
-    } = (0, a.lV)(), d = (0, l.useMemo)(() => {
-      if (e || !i) return u.intl.string(o.default.jV0wEC);
-      switch (t) {
+    } = (0, u.lV)(), d = (0, l.useMemo)(() => {
+      if (t || !i) return a.intl.string(o.default.jV0wEC);
+      switch (e) {
         case r.Lk.ERROR:
-          return u.intl.string(o.default.cjqyz7);
+          return a.intl.string(o.default.cjqyz7);
         case r.Lk.INSTALLING_TIMEOUT:
-          return u.intl.string(o.default.an5PuY);
+          return a.intl.string(o.default.an5PuY);
         case r.Lk.NOT_INSTALLED:
         case r.Lk.UNKNOWN:
-          return u.intl.string(o.default.jV0wEC);
+          return a.intl.string(o.default.jV0wEC);
         case r.Lk.INSTALLING:
-          return u.intl.string(o.default.lYWqUK);
+          return a.intl.string(o.default.lYWqUK);
         case r.Lk.WAITING_FOR_TERMS:
         case r.Lk.READY_FOR_LICENSE:
-          return u.intl.string(o.default.NSVz3Y);
+          return a.intl.string(o.default.NSVz3Y);
         case r.Lk.EXISTING_INSTALLATION:
-          return u.intl.string(o.default.FgL0HB);
+          return a.intl.string(o.default.FgL0HB);
         case r.Lk.ZERO_TRUST:
-          return u.intl.string(o.default["7zgDRR"]);
+          return a.intl.string(o.default["7zgDRR"]);
         case r.Lk.INSTALLED:
-          return (0, n.jsx)(c, {})
+          return (0, n.jsx)(A, {})
       }
-    }, [e, t, i]);
+    }, [t, e, i]);
     return (0, n.jsx)(s.DZT, {
       variant: "heading-md/semibold",
       children: d
     })
   },
-  c = () => {
-    switch ((0, a.lV)(e => e.connectionStatus)) {
+  A = () => {
+    switch ((0, u.lV)(t => t.connectionStatus)) {
       case r.l7.INITIALIZING:
         return (0, n.jsxs)("span", {
           className: d.u,
-          children: [u.intl.string(o.default["00vkCU"]), " ", (0, n.jsx)("span", {
+          children: [a.intl.string(o.default["00vkCU"]), " ", (0, n.jsx)("span", {
             children: (0, n.jsx)(s.y$y, {
               type: s.tVU.SPINNING_CIRCLE,
               className: d.b
@@ -57,10 +57,10 @@ let T = () => {
           })]
         });
       case r.l7.CONNECTED:
-        return u.intl.string(o.default.FBu3XJ);
+        return a.intl.string(o.default.FBu3XJ);
       case r.l7.DISCONNECTED:
-        return u.intl.string(o.default["9V78nW"]);
+        return a.intl.string(o.default["9V78nW"]);
       case r.l7.ERROR:
-        return u.intl.string(o.default.i4ZzK6)
+        return a.intl.string(o.default.i4ZzK6)
     }
   }

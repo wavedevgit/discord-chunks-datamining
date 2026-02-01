@@ -78,7 +78,7 @@ let N = Chunk64700.memo(function(e) {
     content: B,
     hasSpoilerEmbeds: H,
     hasBailedAst: F
-  } = (0, f.A)(N, {
+  } = (0, m.A)(N, {
     hideSimpleEmbedContent: P,
     allowList: G || V,
     allowHeading: G || V,
@@ -108,7 +108,7 @@ let N = Chunk64700.memo(function(e) {
       hideTimestamp: true,
       hideGuildTag: false
     }),
-    childrenAccessories: e.hideAccessories ? true : (0, m.J)(e, H, F),
+    childrenAccessories: e.hideAccessories ? true : (0, f.J)(e, H, F),
     childrenMessageContent: (0, A.A)(e, B),
     childrenSystemMessage: (0, b.A)((i = C({}, e), l = l = {
       disableInteraction: U

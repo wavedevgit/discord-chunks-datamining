@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 767379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => T
@@ -56,10 +56,10 @@ let T = function(e) {
     onComplete: _,
     dismissable: T,
     classificationId: E
-  } = e, [N, w] = l.useState(s.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(N), [P, k] = (0, c.kn)([N], true, true), R = l.useMemo(() => (0, r.A)(), []), D = l.useRef(false), M = (0, m.W$)();
+  } = e, [N, w] = l.useState(s.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(N), [k, P] = (0, c.kn)([N], true, true), R = l.useMemo(() => (0, r.A)(), []), D = l.useRef(false), M = (0, m.W$)();
   l.useEffect(() => {
-    I.current = P
-  }, [P]);
+    I.current = k
+  }, [k]);
   let {
     loading: L,
     ageVerificationMethods: U

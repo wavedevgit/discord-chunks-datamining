@@ -38,8 +38,8 @@ var Chunk860511 = require("./860511.js"),
   k = j,
   U = k && k[R],
   G = Chunk860511[w],
-  F = G && G[R],
-  V = Object.prototype,
+  V = G && G[R],
+  F = Object.prototype,
   B = Chunk860511.Array,
   H = Chunk860511.RangeError,
   Y = Chunk410323(Chunk380296),
@@ -100,10 +100,10 @@ if (Chunk593858) {
     return new j, new j(1.5), new j(NaN), 1 !== j.length || er && !C
   }) ? ((k = function(e) {
     return f(this, U), v(new j(h(e)), this, k)
-  })[R] = U, U.constructor = k, Chunk517771(k, j)) : er && C && Chunk706938(j, "name", N), Chunk458680 && Chunk42756(F) !== V && Chunk458680(F, V);
+  })[R] = U, U.constructor = k, Chunk517771(k, j)) : er && C && Chunk706938(j, "name", N), Chunk458680 && Chunk42756(V) !== F && Chunk458680(V, F);
   var ei = new G(new k(2)),
-    ea = Chunk410323(F.setInt8);
-  ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk673570(F, {
+    ea = Chunk410323(V.setInt8);
+  ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk673570(V, {
     setInt8: function(e, t) {
       ea(this, e, t << 24 >> 24)
     },
@@ -121,8 +121,8 @@ if (Chunk593858) {
     bytes: Y(B(t), 0),
     byteLength: t
   }), a || (this.byteLength = t, this.detached = false)
-})[R], F = (G = function(e, t, n) {
-  f(this, F), f(e, U);
+})[R], V = (G = function(e, t, n) {
+  f(this, V), f(e, U);
   var r = L(e),
     i = r.byteLength,
     o = p(t);
@@ -135,7 +135,7 @@ if (Chunk593858) {
     byteOffset: o,
     bytes: r.bytes
   }), a || (this.buffer = e, this.byteLength = n, this.byteOffset = o)
-})[R], Chunk257943 && (ee(k, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), Chunk673570(F, {
+})[R], Chunk257943 && (ee(k, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), Chunk673570(V, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24
   },

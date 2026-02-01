@@ -216,7 +216,7 @@ function M(e, t) {
     value: "",
     attributes: {},
     description: ""
-  } : G(e) ? F(e, t) : Y(e) ? W(e, t) : K(e) ? z(e, t) : q(e) ? Q(e, t) : J(e, t)
+  } : G(e) ? V(e, t) : Y(e) ? W(e, t) : K(e) ? z(e, t) : q(e) ? Q(e, t) : J(e, t)
 }
 
 function j(e) {
@@ -235,9 +235,9 @@ function G(e) {
   return "Resource" === e.attributes["rdf:parseType"] && true !== e.value["rdf:value"] || true !== e.value["rdf:Description"] && true !== e.value["rdf:Description"].value["rdf:value"]
 }
 
-function F(e, t) {
-  let n = V(e);
-  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.dP)(n, V(e), B(e));
+function V(e, t) {
+  let n = F(e);
+  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.dP)(n, F(e), B(e));
   let i = H(e);
   return {
     value: i,
@@ -246,7 +246,7 @@ function F(e, t) {
   }
 }
 
-function V(e) {
+function F(e) {
   let t = {};
   for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[w(n)] = e.attributes[n]);
   return t
@@ -271,7 +271,7 @@ function W(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.dP)(n.value, T(e.value["rdf:Description"].attributes)), (0, r.dP)(n.attributes, V(e)), e = e.value["rdf:Description"]), (0, r.dP)(n.value, x(e.value)), n.description = R(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.dP)(n.value, T(e.value["rdf:Description"].attributes)), (0, r.dP)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.dP)(n.value, x(e.value)), n.description = R(n.value, t), n
 }
 
 function K(e) {
@@ -297,7 +297,7 @@ function Z(e) {
 
 function Q(e, t) {
   let n = Z(e.value).value["rdf:li"],
-    r = V(e),
+    r = F(e),
     i = [];
   return true === n ? n = [] : Array.isArray(n) || (n = [n]), n.forEach(e => {
     i.push(X(e))
@@ -309,14 +309,14 @@ function Q(e, t) {
 }
 
 function X(e) {
-  return G(e) ? F(e) : Y(e) ? W(e).value : K(e) ? z(e).value : J(e)
+  return G(e) ? V(e) : Y(e) ? W(e).value : K(e) ? z(e).value : J(e)
 }
 
 function J(e, t) {
   let n = $(e) || S(e.value);
   return {
     value: n,
-    attributes: V(e),
+    attributes: F(e),
     description: R(n, t)
   }
 }

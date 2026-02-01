@@ -64,12 +64,12 @@ let A = function(e) {
     }), (0, r.jsxs)(c.A, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Heading, {
-          className: f.G,
+          className: m.G,
           variant: "heading-lg/semibold",
           color: "text-strong",
           children: g.intl.string(g.t["2DfZIQ"])
         }), (0, r.jsxs)("div", {
-          className: f.Q,
+          className: m.Q,
           children: [A.map(e => (0, r.jsx)(h.nO, {
             guild: e,
             onClick: () => a.A.transitionToGuildSync(e.id)
@@ -78,21 +78,21 @@ let A = function(e) {
           })]
         })]
       }) : (0, r.jsx)("div", {
-        className: f.Q,
+        className: m.Q,
         children: (0, r.jsx)(d.A, {
           hasHub: false
         })
       }), (0, r.jsx)("div", {
-        className: m.yF
+        className: f.yF
       }), (0, r.jsxs)("div", {
-        className: m.ed,
+        className: f.ed,
         children: [(0, r.jsxs)(l.Text, {
-          className: m.Qq,
+          className: f.Qq,
           variant: "text-sm/medium",
           color: "text-default",
           children: [g.intl.string(g.t.O1k9XX), " "]
         }), (0, r.jsx)(l.Text, {
-          className: m.Qq,
+          className: f.Qq,
           variant: "text-sm/medium",
           color: "text-default",
           children: g.intl.string(g.t.FV5dvh)

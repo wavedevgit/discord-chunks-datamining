@@ -1,7 +1,7 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 177392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => f
+  H: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,16 +13,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk144958 = require("./144958.js");
 
-function f() {
-  let e = (0, a.bG)([s.A], () => s.A.getError());
-  return e ? (0, r.jsx)(p, {
+function h() {
+  let e = (0, a.bG)([o.A], () => o.A.getError());
+  return e ? (0, l.jsx)(p, {
     error: e
   }) : null
 }
 let p = e => {
   let {
     error: t
-  } = e, [n, a] = (0, l.useState)(false), f = (0, o.pnh)(!n, {
+  } = e, [n, a] = (0, r.useState)(false), h = (0, s.pnh)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -37,24 +37,24 @@ let p = e => {
     }
   }, "respect-motion-settings"), p = (() => {
     switch (t) {
-      case s.L.ERROR_DOWNLOADING_DEPENDENCY:
+      case o.L.ERROR_DOWNLOADING_DEPENDENCY:
         return u.intl.string(u.t.D9neaH);
-      case s.L.ERROR_ACTIVATING_VOICE_FILTER:
+      case o.L.ERROR_ACTIVATING_VOICE_FILTER:
         return u.intl.string(u.t.mNMZZg);
       default:
         return u.intl.string(u.t.F8FvUy)
     }
   })();
-  return f(e => n ? null : (0, r.jsx)(i.animated.div, {
+  return h(e => n ? null : (0, l.jsx)(i.animated.div, {
     style: e,
     className: d.z,
-    children: (0, r.jsxs)("div", {
+    children: (0, l.jsxs)("div", {
       className: d.A,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, l.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: p
-      }), (0, r.jsx)(o.PMB, {
+      }), (0, l.jsx)(s.PMB, {
         noticeType: c.kqX.VOICE_FILTERS_ERROR,
         onClick: () => a(true)
       })]

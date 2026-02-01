@@ -1,12 +1,12 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 46673 **/
 /** chunk id: 636922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => U
+  A: () => b
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk837381 = require("./837381.jsx"),
   Chunk311907 = require("./311907.js"),
   Chunk201275 = require("./201275.js"),
@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk119907 = require("./119907.js");
 
-function m(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,18 +60,18 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = Chunk64700.memo(function(e) {
+let b = Chunk64700.memo(function(e) {
   var t, n;
   let {
     message: i,
     compact: l = false,
-    className: U,
-    onContextMenu: M,
-    onClick: b,
+    className: b,
+    onContextMenu: U,
+    onClick: M,
     hideSimpleEmbedContent: j = true,
-    channel: k,
-    isGroupStart: L,
-    animateAvatar: v,
+    channel: v,
+    isGroupStart: k,
+    animateAvatar: L,
     subscribeToComponentDispatch: x,
     renderThreadAccessory: G,
     trackAnnouncementViews: w = false
@@ -91,7 +91,7 @@ let U = Chunk64700.memo(function(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), q = i.type === D.lAJ.POLL_RESULT || null != (t = e.disableInteraction) && t, X = i.isFirstMessageInForumPost(k), V = (0, u.S)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), q = i.type === C.lAJ.POLL_RESULT || null != (t = e.disableInteraction) && t, X = i.isFirstMessageInForumPost(v), V = (0, u.S)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: F,
     hasSpoilerEmbeds: H,
     hasBailedAst: W
@@ -101,37 +101,37 @@ let U = Chunk64700.memo(function(e) {
     allowHeading: X || V,
     allowLinks: true,
     previewLinkTarget: true
-  }), Y = i.type === D.lAJ.REPLY ? i.messageReference : true, K = (0, s.bG)([E.A], () => E.A.getMessageByReference(Y)), $ = (0, a.rm)(i.id), z = (0, T.Ay)(i), J = (0, s.bG)([d.A], () => i.hasFlag(D.pr7.HAS_THREAD) && d.A.getChannel(_.default.castMessageIdAsChannelId(i.id))), Z = (0, c.$7)({
-    guildId: k.guild_id,
+  }), K = i.type === C.lAJ.REPLY ? i.messageReference : true, Y = (0, s.bG)([E.A], () => E.A.getMessageByReference(K)), $ = (0, o.rm)(i.id), z = (0, T.Ay)(i), J = (0, s.bG)([d.A], () => i.hasFlag(C.pr7.HAS_THREAD) && d.A.getChannel(_.default.castMessageIdAsChannelId(i.id))), Z = (0, c.$7)({
+    guildId: v.guild_id,
     roleId: z.iconRoleId
   }), Q = (0, p.A)({
     message: i,
-    channel: k,
+    channel: v,
     enabled: w
   }), ee = (0, O.fF)(i), et = (0, O.ZD)(i);
-  return (0, r.jsx)(I.A, m({
+  return (0, r.jsx)(I.A, D({
     compact: l,
-    className: o()(U, {
+    className: a()(b, {
       [g.M1]: (0, A.ec)(i),
       [g.XN]: q
     }),
     disableInteraction: q,
-    childrenRepliedMessage: (0, f.A)(i, k, Y, K, l),
-    childrenExecutedCommand: (0, C.A)(i, k, l),
-    childrenHeader: (0, P.A)(h(m({}, e), {
-      guildId: k.guild_id,
+    childrenRepliedMessage: (0, f.A)(i, v, K, Y, l),
+    childrenExecutedCommand: (0, m.A)(i, v, l),
+    childrenHeader: (0, P.A)(h(D({}, e), {
+      guildId: v.guild_id,
       author: z,
       roleIcon: Z
     })),
     childrenAccessories: e.hideAccessories ? true : (0, R.J)(e, H, W),
     childrenMessageContent: (0, S.A)(e, F),
-    childrenSystemMessage: (0, y.A)(h(m({}, e), {
+    childrenSystemMessage: (0, y.A)(h(D({}, e), {
       disableInteraction: q
     })),
-    onContextMenu: M,
-    onClick: b,
-    hasThread: G && null != J && i.hasFlag(D.pr7.HAS_THREAD),
-    hasReply: i.type === D.lAJ.REPLY,
+    onContextMenu: U,
+    onClick: M,
+    hasThread: G && null != J && i.hasFlag(C.pr7.HAS_THREAD),
+    hasReply: i.type === C.lAJ.REPLY,
     "aria-labelledby": ee,
     "aria-describedby": et,
     messageRef: Q,

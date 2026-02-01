@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 704037, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => p
+  l: () => h
 }), require("./896048.js"), require("./667532.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk743790 = require("./743790.jsx"),
   Chunk960016 = require("./960016.js");
 
-function h(e) {
+function p(e) {
   let {
     children: t
   } = e;
@@ -26,17 +26,17 @@ function h(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     guildIds: t
-  } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
+  } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), h = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
     visibleGuilds: g,
     numTruncated: f
   } = (0, l.useMemo)(() => {
-    let e = [...p];
+    let e = [...h];
     if (null != n) {
-      let t = p.findIndex(e => e.id === n);
-      false !== t && (e.splice(t, 1), e.unshift(p[t]))
+      let t = h.findIndex(e => e.id === n);
+      false !== t && (e.splice(t, 1), e.unshift(h[t]))
     }
     return 4 === e.length ? {
       visibleGuilds: e,
@@ -47,15 +47,15 @@ function p(e) {
       visibleGuilds: e.slice(0, 3),
       numTruncated: e.length - 3
     }
-  }, [p, n]);
+  }, [h, n]);
   return (0, r.jsxs)("div", {
     className: d.WM,
-    children: [g.map(e => (0, r.jsx)(h, {
+    children: [g.map(e => (0, r.jsx)(p, {
       children: (0, r.jsx)(u.$, {
         guild: e,
         size: 20
       })
-    }, e.id)), f > 0 && (0, r.jsx)(h, {
+    }, e.id)), f > 0 && (0, r.jsx)(p, {
       children: (0, r.jsxs)(s.Text, {
         className: d.br,
         color: "text-subtle",

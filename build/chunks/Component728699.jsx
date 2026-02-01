@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 728699, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 728699, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   T: () => O
 });
@@ -17,32 +17,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk842130 = require("./842130.js");
-let g = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
-    usePredicate: () => !(0, c.dk)("LegacyFamilyCenterPanel"),
-    useTitle: () => _.intl.string(E.default.RZqaJn),
+let _ = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
+    usePredicate: () => !(0, A.dk)("LegacyFamilyCenterPanel"),
+    useTitle: () => E.intl.string(g.default.RZqaJn),
     StronglyDiscouragedCustomComponent: Chunk793998.p,
     buildLayout: () => []
   }),
   I = (0, Chunk419954.t_)(Chunk780964.X.FAMILY_CENTER_PANEL, {
-    usePredicate: () => (0, c.dk)("FamilyCenterPanel"),
-    useTitle: () => _.intl.string(E.default.RZqaJn),
-    buildLayout: () => [A.g]
+    usePredicate: () => (0, A.dk)("FamilyCenterPanel"),
+    useTitle: () => E.intl.string(g.default.RZqaJn),
+    buildLayout: () => [S.g]
   }),
   O = (0, Chunk419954.i4)(Chunk780964.X.FAMILY_CENTER_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(E.default.RZqaJn),
-    getLegacySearchKey: () => (0, c.WJ)("FamilyCenterPanel") ? true : S.H.PRIVACY_FAMILY_CENTER,
+    useTitle: () => E.intl.string(g.default.RZqaJn),
+    getLegacySearchKey: () => (0, A.WJ)("FamilyCenterPanel") ? true : c.H.PRIVACY_FAMILY_CENTER,
     icon: Chunk934551.GroupIcon,
     trailing: {
       type: Chunk933297.S.STRONGLY_DISCOURAGED_CUSTOM,
       getDismissibleContentTypes: () => [s.M.FAMILY_CENTER_NEW_BADGE],
-      useCustomDecoration: function(e) {
-        let t = (0, a.VT)();
-        return e === s.M.FAMILY_CENTER_NEW_BADGE ? (0, n.jsx)(r.LpS, {
-          text: _.intl.string(_.t.y2b7CA)
-        }) : t > 0 ? (0, n.jsx)(r.hVq, {
-          count: t
+      useCustomDecoration: function(t) {
+        let e = (0, u.VT)();
+        return t === s.M.FAMILY_CENTER_NEW_BADGE ? (0, n.jsx)(r.LpS, {
+          text: E.intl.string(E.t.y2b7CA)
+        }) : e > 0 ? (0, n.jsx)(r.hVq, {
+          count: e
         }) : null
       }
     },
-    buildLayout: () => (0, c.WJ)("FamilyCenterPanel") ? [I] : [g]
+    buildLayout: () => (0, A.WJ)("FamilyCenterPanel") ? [I] : [_]
   })

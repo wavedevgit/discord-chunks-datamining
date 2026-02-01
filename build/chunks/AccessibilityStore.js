@@ -190,14 +190,14 @@ function G(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   if (v.systemPrefersCrossfades === e.systemPrefersCrossfades) returnfalse;
   v = g(h({}, v), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
-function V(e) {
+function F(e) {
   if (v.prefersReducedMotion === e.prefersReducedMotion) returnfalse;
   v = g(h({}, v), {
     prefersReducedMotion: e.prefersReducedMotion
@@ -473,8 +473,8 @@ let $ = new J(Chunk73153.h, {
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: W,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: B,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: G,
-  ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: F,
-  ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: V,
+  ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: V,
+  ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: F,
   ACCESSIBILITY_SET_SYNC_FORCED_COLORS: D,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: H,
   ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: Y,

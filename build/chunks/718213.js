@@ -1,17 +1,17 @@
-/** Chunk was on 64935 **/
-/** chunk id: 718213, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 37997 **/
+/** chunk id: 718213, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => a
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js");
-let i = function(e, t) {
-  let [n, i] = r.useState(e);
-  return r.useEffect(() => {
-    let n = setTimeout(() => {
-      i(e)
+let a = function(e, t) {
+  let [r, a] = n.useState(e);
+  return n.useEffect(() => {
+    let r = setTimeout(() => {
+      a(e)
     }, t);
     return () => {
-      clearTimeout(n)
+      clearTimeout(r)
     }
-  }, [e, t]), n
+  }, [e, t]), r
 }

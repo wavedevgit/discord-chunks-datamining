@@ -97,7 +97,7 @@ class w extends Chunk272355.A {
       this.maybeOpenServerDriveAnnouncementModal(t.id, t.promotion_id, t.properties, true)
     }), x(this, "getOfferFromStore", () => {
       let e = h.default.getCurrentUser();
-      if ((0, f.TW)(e)) return {};
+      if ((0, m.TW)(e)) return {};
       let t = [j.TU, j.KG, j.lj, j.HF].map(e => g.A.getUserDiscountOffer(e)).filter(e => null != e && !(0, d.w)(e)).shift();
       if (null != t) return {
         userDiscountOffer: t
@@ -107,7 +107,7 @@ class w extends Chunk272355.A {
         userTrialOffer: n
       } : {}
     }), x(this, "mayShowAnnouncementModal", async () => {
-      if (await (0, _.hb)(), m.P.isDisallowPopupsSet()) return;
+      if (await (0, _.hb)(), f.P.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
         t = y.A.getCurrentConfig({
           location: "announcementManager"
@@ -119,7 +119,7 @@ class w extends Chunk272355.A {
         }),
         r = (0, u.k8)(a.M.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),
         l = h.default.getCurrentUser();
-      if (!t || r || (0, s.ueM)() || (0, f.TW)(l) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
+      if (!t || r || (0, s.ueM)() || (0, m.TW)(l) || await (0, E.m)(e.userTrialOffer) && (0, N.A)({
           upsellType: j.e.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == l || l.verified) && !(0, s.ueM)() && !i.Fr && !n) {
         for (let t of (await (0, I._)(e)))

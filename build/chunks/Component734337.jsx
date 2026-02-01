@@ -1,5 +1,5 @@
-/** Chunk was on 78238 **/
-/** chunk id: 734337, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 92617 **/
+/** chunk id: 734337, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
 }), require("./896048.js");
@@ -15,46 +15,46 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function f(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.x.DEFAULT,
-    [r, f, p] = (0, a.A)(e, t),
-    y = (0, o.bG)([l.Ay], () => l.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
-  return r ? (0, n.jsx)(i.sLh, {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.x.DEFAULT,
+    [n, f, p] = (0, o.A)(e, t),
+    b = (0, i.bG)([l.Ay], () => l.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
+  return n ? (0, r.jsx)(a.sLh, {
     id: "self-video-hide",
-    label: b.intl.string(b.t.MH8ESU),
+    label: s.intl.string(s.t.MH8ESU),
     checked: !f,
     action: () => {
-      if (y || f) return p(!f);
-      (0, i.qfG)(e => {
-        var t, r;
-        return (0, n.jsx)(c.A, (t = function(e) {
+      if (b || f) return p(!f);
+      (0, a.qfG)(e => {
+        var t, n;
+        return (0, r.jsx)(d.A, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, e), r = r = {
-          type: u.f.VIDEO,
+        }({}, e), n = n = {
+          type: c.f.VIDEO,
           onConfirm: () => p(!f)
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-          var r = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
       })
     }

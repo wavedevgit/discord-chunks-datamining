@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 432817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => p
@@ -18,37 +18,37 @@ let p = e => {
     channel: t,
     user: n,
     application: p,
-    oauth2Token: g
-  } = e, f = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
+    oauth2Token: f
+  } = e, m = (0, r.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
   if (!n.bot || null == p) return null;
 
-  function m() {
-    a.A.delete(g.id);
-    let e = f.get(p.id);
+  function g() {
+    s.A.delete(f.id);
+    let e = m.get(p.id);
     null != e && c.A.leaveActivity({
       location: e.location,
       applicationId: p.id
     })
   }
-  return (0, r.jsx)(s.Button, {
+  return (0, l.jsx)(a.Button, {
     variant: "secondary",
     size: "sm",
     text: h.intl.string(h.t["5S3sQF"]),
     onClick: () => {
-      (0, s.qfG)(e => (0, r.jsx)(i.aFV, function(e) {
+      (0, a.qfG)(e => (0, l.jsx)(i.aFV, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = l
           })
         }
         return e
@@ -65,7 +65,7 @@ let p = e => {
           text: h.intl.string(h.t.xUqheM),
           variant: "critical-primary",
           onClick: () => {
-            m(), e.onClose()
+            g(), e.onClose()
           }
         }]
       }, e))), u.default.track(d.HAw.APP_MANAGE_CTA_CLICKED, {

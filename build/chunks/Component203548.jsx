@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 203548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -14,9 +14,9 @@ let c = Math.ceil(Math.sqrt(115200)),
   d = Chunk64700.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, [d, h] = l.useState(false), p = l.useCallback(e => {
-      h(e.contentRect.width)
-    }, []), g = (0, a.w)(p, [], {
+    } = e, [d, p] = l.useState(false), h = l.useCallback(e => {
+      p(e.contentRect.width)
+    }, []), g = (0, a.w)(h, [], {
       fireOnMount: true
     }), [{
       shineSpring: f

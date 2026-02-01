@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 484191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -21,12 +21,12 @@ let m = function(e) {
     participants: t,
     channel: n,
     hasConnectPermission: m
-  } = e, b = t.filter(p.Xw), A = (0, c.H)(n.guild_id), y = l.useCallback(() => {
+  } = e, b = t.filter(h.Xw), A = (0, c.H)(n.guild_id), y = l.useCallback(() => {
     A ? (0, o.Ze)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
   }, [n.id, n.guild_id, A]), O = 4 === b.length ? 2 : 3;
   return (0, r.jsxs)("div", {
     className: f.kL,
-    children: [(0, r.jsx)(h.A, {}), (0, r.jsx)("div", {
+    children: [(0, r.jsx)(p.A, {}), (0, r.jsx)("div", {
       className: f.os,
       style: {
         maxWidth: 168 * O

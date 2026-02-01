@@ -1,51 +1,51 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 888906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => r
 });
 var Chunk73153 = require("./73153.js");
-let l = {
+let r = {
   search(e, t) {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY",
       query: e,
       channelId: t
     })
   },
   clear(e) {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY",
       query: "",
       channelId: e
     })
   },
   select(e, t) {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT",
       row: t,
       section: e
     })
   },
   addUser(e) {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_ADD_USER",
       userId: e
     })
   },
   removeUser(e) {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER",
       userId: e
     })
   },
   open(e) {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN",
       channelId: e
     })
   },
   close() {
-    r.h.dispatch({
+    l.h.dispatch({
       type: "PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE"
     })
   }

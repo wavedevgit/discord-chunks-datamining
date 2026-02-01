@@ -22,7 +22,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx");
 let E = new Set(["Blink", "Gecko", "WebKit"]),
   O = Chunk652215.tEg;
-if (Chunk723702.isPlatformEmbedded) O = e => m.Ay.setBadge(e);
+if (Chunk723702.isPlatformEmbedded) O = e => f.Ay.setBadge(e);
 else if (E.has(s().layout)) {
   let e = new(l())({
     animation: "none"
@@ -46,7 +46,7 @@ function y() {
     });
   r.useEffect(() => {
     if (!e) return;
-    let t = m.Ay.bounceDock("critical"),
+    let t = f.Ay.bounceDock("critical"),
       n = (0, A.iA)({
         messages: [b.intl.string(b.t["fk1/bX"])],
         count: 50

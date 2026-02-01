@@ -7,7 +7,7 @@ require.d(exports, {
   D6: () => W,
   DA: () => K,
   EG: () => P,
-  Fj: () => V,
+  Fj: () => F,
   Nu: () => G,
   O7: () => Y,
   QZ: () => B,
@@ -16,7 +16,7 @@ require.d(exports, {
   XI: () => H,
   _7: () => j,
   bo: () => x,
-  sL: () => F,
+  sL: () => V,
   ss: () => N,
   wT: () => z,
   wt: () => U,
@@ -53,7 +53,7 @@ let N = function(e, t) {
       i = arguments.length > 3 && true !== arguments[3] && arguments[3];
     (0, u.V)(n);
     let a = (0, I.Re)(e),
-      s = V(n),
+      s = F(n),
       c = B(n),
       f = H(n),
       {
@@ -370,7 +370,7 @@ let U = (e, t) => e.type !== v.s.GUILD ? e.id : null != t ? t.name : "",
     }
   };
 
-function F(e, t, n, i) {
+function V(e, t, n, i) {
   r.useEffect(() => {
     f.bW.loadIfNecessary()
   }, []);
@@ -388,7 +388,7 @@ function F(e, t, n, i) {
   }, [e, t, n, a, i], o.My)
 }
 
-function V(e) {
+function F(e) {
   return r.useEffect(() => {
     f.bW.loadIfNecessary()
   }, []), (0, o.yK)([l.Ay], () => l.Ay.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())

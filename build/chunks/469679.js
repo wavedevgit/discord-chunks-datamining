@@ -1,11 +1,12 @@
-/** Chunk was on 88332 **/
-/** chunk id: 469679, original params: e,i,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 469679, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  T: () => s
+  T: () => a
 });
 var Chunk945810 = require("./945810.js"),
   Chunk927813 = require("./927813.js");
-let s = (0, Chunk945810.mj)({
+let a = (0, Chunk945810.mj)({
   name: "2026-01-reply-nudge",
   kind: "user",
   defaultConfig: {

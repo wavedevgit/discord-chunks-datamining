@@ -1,7 +1,7 @@
 /** Chunk was on 13492 **/
-/** chunk id: 193855, original params: e,n,t (module,exports,require) **/
+/** chunk id: 193855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => u
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,19 +11,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk91242 = require("./91242.js"),
   Chunk905579 = require("./905579.js");
 
-function s(e) {
+function u(e) {
   let {
-    applicationId: n
-  } = e, t = (0, a.bG)([c.A], () => c.A.getConnectedFrame()), s = o.useCallback(async () => {
-    await l.A.refreshProxyTicket({
-      applicationId: n
-    }), _.A.popInFrame()
-  }, [n]);
-  return (0, r.jsx)(i.d, {
-    hasActivity: null != t,
-    applicationId: n,
+    applicationId: t
+  } = e, n = (0, i.bG)([c.A], () => c.A.getConnectedFrame()), u = r.useCallback(async () => {
+    await a.A.refreshProxyTicket({
+      applicationId: t
+    }), s.A.popInFrame()
+  }, [t]);
+  return (0, l.jsx)(o.d, {
+    hasActivity: null != n,
+    applicationId: t,
     isRichPresenceInvite: true,
-    onConfirmClosePopout: s,
+    onConfirmClosePopout: u,
     channelId: true
   })
 }

@@ -50,8 +50,8 @@ let g = function(e) {
     index: t,
     children: l,
     user: g,
-    channel: f,
-    onClick: m,
+    channel: m,
+    onClick: f,
     isFocused: A,
     isActive: _,
     onOtherHover: b,
@@ -62,7 +62,7 @@ let g = function(e) {
     y(false)
   };
   return (0, r.jsx)(o.tG, {
-    id: f.id,
+    id: m.id,
     children: e => (0, r.jsx)(c.vN3, {
       offset: {
         left: false,
@@ -77,7 +77,7 @@ let g = function(e) {
           null != g && (v(true), (0, u.L3)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("99871")]).then(n.bind(n, 668569));
+            } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
             return t => (0, r.jsx)(e, h(p({}, t), {
               user: g
             }))
@@ -89,7 +89,7 @@ let g = function(e) {
         },
         onMouseEnter: S,
         onMouseLeave: C,
-        onClick: null != m ? m : true,
+        onClick: null != f ? f : true,
         style: {
           LIST_ROW_HEIGHT: 73,
           opacity: 1

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 958831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T
@@ -53,9 +53,9 @@ function E(e, t) {
 }
 
 function O() {}
-let C = [Chunk926140.rD.VOICE_CHANNEL];
+let x = [Chunk926140.rD.VOICE_CHANNEL];
 
-function x(e) {
+function C(e) {
   e.setOptions({
     voiceChannelGuildFilter: null
   }), e.setLimit(1 / 0)
@@ -100,7 +100,7 @@ function T(e) {
         align: d.A.Align.STRETCH,
         children: [(0, r.jsx)("div", {
           className: b.$X,
-          children: (0, r.jsx)(y, {
+          children: (0, r.jsx)(N, {
             channelId: c
           })
         }), (0, r.jsx)(d.A.Child, {
@@ -128,13 +128,13 @@ function I(e) {
     {
       query: T,
       updateQuery: I,
-      queryResults: y
+      queryResults: N
     } = (0, c.A)({
       visible: true,
-      autocompleterResultTypes: C,
-      autocompleterBeforeCreateSearchContext: x
+      autocompleterResultTypes: x,
+      autocompleterBeforeCreateSearchContext: C
     }),
-    N = (t = "" !== T, n = (0, s.yK)([p.Ay, _.A, g.A], () => {
+    y = (t = "" !== T, n = (0, s.yK)([p.Ay, _.A, g.A], () => {
       let e = g.A.getGuildId();
       if (t || null == e) return [];
       let n = [];
@@ -165,13 +165,13 @@ function I(e) {
       row: j
     })
   }, [j]);
-  let P = null != N ? N.length : y.length,
+  let P = null != y ? y.length : N.length,
     R = (() => {
-      if (null != N) {
+      if (null != y) {
         var e;
-        return null == (e = N[j]) ? true : e.id
+        return null == (e = y[j]) ? true : e.id
       }
-      let t = y[j];
+      let t = N[j];
       if ((null == t ? true : t.type) === A.rD.VOICE_CHANNEL) return t.record.id
     })(),
     D = P > 0 || "" === T ? {
@@ -184,8 +184,8 @@ function I(e) {
         let {
           row: t
         } = e, n = (() => {
-          if (null != N) return N[t];
-          let e = y[t];
+          if (null != y) return y[t];
+          let e = N[t];
           if ((null == e ? true : e.type) === A.rD.VOICE_CHANNEL) return e.record
         })();
         if (null == n) return null;
@@ -232,8 +232,8 @@ function I(e) {
             break;
           case "enter": {
             let e = (() => {
-              if (null != N) return N[j];
-              let e = y[j];
+              if (null != y) return y[j];
+              let e = N[j];
               if ((null == e ? true : e.type) === A.rD.VOICE_CHANNEL) return e.record
             })();
             null == e ? h(true) : h(e.id), d();
@@ -259,7 +259,7 @@ function I(e) {
   })
 }
 
-function y(e) {
+function N(e) {
   let {
     channelId: t
   } = e, {

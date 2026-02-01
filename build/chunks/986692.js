@@ -1,12 +1,12 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 986692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => l
+  j: () => r
 });
 var Chunk73153 = require("./73153.js");
 
-function l(e) {
-  r.h.dispatch({
+function r(e) {
+  l.h.dispatch({
     type: "REMOVE_AUTOMOD_MESSAGE_NOTICE",
     messageId: e
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 40198 **/
+/** Chunk was on 36059 **/
 /** chunk id: 371664, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -11,8 +11,8 @@ function o(e) {
   var t, n;
   let {
     width: o = 80,
-    height: s = 20,
-    color: l = "currentColor",
+    height: l = 20,
+    color: s = "currentColor",
     foreground: c
   } = e, a = function(e, t) {
     if (null == e) return {};
@@ -50,8 +50,8 @@ function o(e) {
     return e
   }({}, (0, r.A)(a)), n = n = {
     width: o,
-    height: s,
-    viewBox: "0 0 ".concat(o, " ").concat(s),
+    height: l,
+    viewBox: "0 0 ".concat(o, " ").concat(l),
     children: [(0, i.jsx)("pattern", {
       id: "pill-frame-pattern",
       width: 8 / o,
@@ -59,7 +59,7 @@ function o(e) {
       children: (0, i.jsx)("path", {
         d: "m0 0h8v20h-8zm4 2c-1.1045695 0-2 .8954305-2 2v12c0 1.1045695.8954305 2 2 2s2-.8954305 2-2v-12c0-1.1045695-.8954305-2-2-2z",
         fillRule: "evenodd",
-        fill: l,
+        fill: s,
         className: c
       })
     }), (0, i.jsx)("rect", {

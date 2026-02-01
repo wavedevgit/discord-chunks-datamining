@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 826050, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -31,10 +31,10 @@ class b extends(r = Chunk64700.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: true
-    }), d._.subscribe(h.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    }), d._.subscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentWillUnmount() {
-    this.focusTimeout.stop(), d._.unsubscribe(h.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    this.focusTimeout.stop(), d._.unsubscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentDidUpdate() {
     let {
@@ -94,10 +94,10 @@ class b extends(r = Chunk64700.PureComponent) {
       className: g.fi,
       children: [(0, l.jsx)("div", {
         className: g.Iv,
-        children: p.intl.string(p.t.Mp0IGK)
+        children: h.intl.string(h.t.Mp0IGK)
       }), (0, l.jsx)("div", {
         className: g.kp,
-        children: p.intl.string(p.t["3CbpwH"])
+        children: h.intl.string(h.t["3CbpwH"])
       })]
     })
   }

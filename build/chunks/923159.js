@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 923159, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 923159, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Q: () => d
 });
@@ -16,9 +16,9 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_SWITCH_CHANNEL_ALERT_SETTING, {
   useValue: function() {
     return (0, n.bG)([r.Ay], () => !r.Ay.disableVoiceChannelChangeAlert)
   },
-  setValue: function(e) {
-    (0, u.A)("switch_channel_warning_enabled", e, !r.Ay.disableVoiceChannelChangeAlert), l.Ay.updatedUnsyncedSettings({
-      disableVoiceChannelChangeAlert: !e
+  setValue: function(t) {
+    (0, a.A)("switch_channel_warning_enabled", t, !r.Ay.disableVoiceChannelChangeAlert), l.Ay.updatedUnsyncedSettings({
+      disableVoiceChannelChangeAlert: !t
     })
   }
 })

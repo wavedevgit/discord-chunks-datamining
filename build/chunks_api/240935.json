@@ -1,1 +1,1 @@
-{"id":"240935","type":"store","data":{"name":"FavoritesSuggestionStore","functions":[{"name":"initialize","args":["e"]},{"name":"getSuggestedChannelId","args":["e"]},{"name":"getState","args":[]}],"events":["DISMISS_FAVORITE_SUGGESTION"]},"fromModule":{"id":"44411"}}
+{"id":"240935","type":"store","data":{"name":"FavoritesSuggestionStore","functions":[{"name":"initialize","args":["e"]},{"name":"getSuggestedChannelId","args":["e"]},{"name":"getState","args":[]}],"events":["DISMISS_FAVORITE_SUGGESTION"]},"fromModule":{"id":"76719"}}

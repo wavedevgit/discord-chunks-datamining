@@ -1,5 +1,5 @@
-/** Chunk was on 88974 **/
-/** chunk id: 271456, original params: t,n,i (module,exports,require) **/
+/** Chunk was on 78441 **/
+/** chunk id: 271456, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -13,27 +13,27 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function u(t) {
-  let n = (0, r.bG)([o.A], () => o.A.isInProgress());
-  return (0, a.b)() && t.isThread() ? (0, e.jsx)(l.Drp, {
+  let e = (0, r.bG)([s.A], () => s.A.isInProgress());
+  return (0, a.b)() && t.isThread() ? (0, i.jsx)(l.Drp, {
     id: "summarize-thread",
-    label: n ? s.intl.string(s.t.oKECxB) : s.intl.string(s.t.EXfguE),
-    disabled: n,
-    loading: n,
-    action: () => d.A.summarizeThread(t),
-    children: n ? null : (0, e.jsxs)(e.Fragment, {
-      children: [(0, e.jsx)(l.Drp, {
+    label: e ? d.intl.string(d.t.oKECxB) : d.intl.string(d.t.EXfguE),
+    disabled: e,
+    loading: e,
+    action: () => o.A.summarizeThread(t),
+    children: e ? null : (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(l.Drp, {
         id: "summarize_thread_for_everyone",
-        label: s.intl.string(s.t.eCzSdd),
-        action: () => d.A.summarizeThread(t, false),
+        label: d.intl.string(d.t.eCzSdd),
+        action: () => o.A.summarizeThread(t, false),
         icon: l.nFg,
         leadingAccessory: {
           type: "icon",
           icon: l.nFg
         }
-      }), (0, e.jsx)(l.Drp, {
+      }), (0, i.jsx)(l.Drp, {
         id: "summarize_thread_for_me",
-        label: s.intl.string(s.t["HOe+Hq"]),
-        action: () => d.A.summarizeThread(t),
+        label: d.intl.string(d.t["HOe+Hq"]),
+        action: () => o.A.summarizeThread(t),
         icon: l.nys,
         leadingAccessory: {
           type: "icon",

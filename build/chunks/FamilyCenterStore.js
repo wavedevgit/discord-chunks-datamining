@@ -1,4 +1,4 @@
-/** Chunk was on 45586 **/
+/** Chunk was on 43549 **/
 /** chunk id: 695515, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => tn
@@ -49,8 +49,8 @@ function c(t, e) {
 let T = null,
   S = null,
   A = {},
-  C = false,
-  f = F(),
+  f = false,
+  C = F(),
   I = Y(),
   N = null,
   p = M(),
@@ -92,7 +92,7 @@ function P() {
   let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], A = t.length > 0 ? t.reduce((t, e) => c(_({}, t), {
     [e.user_id]: e
-  }), {}) : {}, C = true, A
+  }), {}) : {}, f = true, A
 }
 
 function w(t) {
@@ -100,12 +100,12 @@ function w(t) {
 }
 
 function V(t, e) {
-  let n = e ? f : F();
+  let n = e ? C : F();
   return t.forEach(t => {
     let e = t.display_type,
       i = n.get(e);
     true === i || i.has(t.event_id) || i.set(t.event_id, t)
-  }), f = n
+  }), C = n
 }
 
 function k(t) {
@@ -119,7 +119,7 @@ function k(t) {
   }, O)
 }
 
-function H(t) {
+function G(t) {
   U = t.reduce((t, e) => {
     if (null != e.invoice_items && e.invoice_items.length > 0) {
       let n = e.invoice_items[0],
@@ -136,7 +136,7 @@ function H(t) {
   }, {})
 }
 
-function G() {
+function H() {
   y = true
 }
 
@@ -157,7 +157,7 @@ function j(t) {
     totalSpendCurrency: c,
     invoices: A
   } = n;
-  T = u, S = s, V(l), w(a), k(r), P(e), null != A && H(A), L = d, D = E, v = _, m = c, b = null != i ? i : null, y = false, h = o.default.fromTimestamp(Date.now()), g = true
+  T = u, S = s, V(l), w(a), k(r), P(e), null != A && G(A), L = d, D = E, v = _, m = c, b = null != i ? i : null, y = false, h = o.default.fromTimestamp(Date.now()), g = true
 }
 
 function Q(t) {
@@ -191,7 +191,7 @@ function W(t) {
     totalSpendCurrency: E,
     invoices: _
   } = e;
-  T = r, S = a, V(n), w(i), k(l), null != _ && H(_), L = u, D = s, y = false, h = o.default.fromTimestamp(Date.now()), v = d, m = E
+  T = r, S = a, V(n), w(i), k(l), null != _ && G(_), L = u, D = s, y = false, h = o.default.fromTimestamp(Date.now()), v = d, m = E
 }
 
 function K(t) {
@@ -263,7 +263,7 @@ function $(t) {
 }
 
 function tt() {
-  T = null, S = null, A = {}, f = F(), I = Y(), O = {}, y = false, h = null, p = M(), C = false, L = [], D = [], v = null, m = null, U = {}, b = null, g = false
+  T = null, S = null, A = {}, C = F(), I = Y(), O = {}, y = false, h = null, p = M(), f = false, L = [], D = [], v = null, m = null, U = {}, b = null, g = false
 }
 class te extends Chunk536802.A {
   initialize() {
@@ -288,7 +288,7 @@ class te extends Chunk536802.A {
           let [e, n] = t;
           return "".concat(e, ":").concat(n)
         }),
-        teenActivity: (t = [], f.forEach(e => {
+        teenActivity: (t = [], C.forEach(e => {
           t.push(...Array.from(e.values()))
         }), t),
         guilds: Object.values(O)
@@ -310,7 +310,7 @@ class te extends Chunk536802.A {
     return null == S ? null : o.default.extractTimestamp(S)
   }
   getActionsForDisplayType(t) {
-    let e = f.get(t);
+    let e = C.get(t);
     return null != e ? Array.from(e.values()) : []
   }
   getTotalForDisplayType(t) {
@@ -332,7 +332,7 @@ class te extends Chunk536802.A {
     return g
   }
   getAreLinkedUsersProcessed() {
-    return C
+    return f
   }
   getUserCountry() {
     return R
@@ -367,7 +367,7 @@ class te extends Chunk536802.A {
       CURRENT_USER_UPDATE: Z,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: j,
-      FAMILY_CENTER_FETCH_START: G,
+      FAMILY_CENTER_FETCH_START: H,
       FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: Q,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: W,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: K,

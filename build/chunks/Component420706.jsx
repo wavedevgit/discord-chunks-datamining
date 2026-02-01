@@ -6,7 +6,7 @@ require.d(exports, {
   Jd: () => K,
   Oo: () => W,
   bG: () => U,
-  h9: () => V
+  h9: () => F
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -98,9 +98,9 @@ function k(e, t) {
 }
 let U = 72,
   G = 32,
-  F = 2e3;
+  V = 2e3;
 
-function V(e) {
+function F(e) {
   return (null == e ? true : e.type) === _.S9.CONTENT_INVENTORY ? e.entry.content_type === l.ContentInventoryEntryType.PLAYED_GAME && null != e.entry.applicationWidgetPreview ? U + G : U : 0
 }
 let B = e => {
@@ -242,13 +242,13 @@ let B = e => {
       G = i.useCallback(() => {
         y(String(Date.now()))
       }, []),
-      V = i.useCallback(function(e) {
+      F = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
         (0, m.I)(e, L({}, T, t))
       }, [T]),
       W = i.useMemo(() => o().throttle(e => {
         (0, m.I)(P.PA.CARD_POPOUT_OPEN, e)
-      }, F, {
+      }, V, {
         leading: true,
         trailing: false
       }), []),
@@ -279,7 +279,7 @@ let B = e => {
               children: (0, r.jsx)(Y, L({
                 closePopout: t,
                 updatePopoutPosition: G,
-                trackRankingItemInteraction: V
+                trackRankingItemInteraction: F
               }, _))
             })
           },
@@ -312,7 +312,7 @@ let B = e => {
               children: (0, r.jsx)(B, M(L({}, _), {
                 selected: n,
                 hovered: C.current,
-                trackRankingItemInteraction: V
+                trackRankingItemInteraction: F
               }))
             }))
           }

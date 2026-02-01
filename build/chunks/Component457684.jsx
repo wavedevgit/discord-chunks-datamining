@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 457684, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -19,9 +19,9 @@ function p(e) {
     currentUser: t,
     userTeamsLoading: n,
     userTeams: p
-  } = e, [m, g] = i.useState(false), [A, f] = i.useState(false), [b, h] = i.useState(false), [E, O] = i.useState(false), [C, x] = i.useState(null), S = i.useCallback(e => {
+  } = e, [m, g] = i.useState(false), [A, f] = i.useState(false), [b, h] = i.useState(false), [E, O] = i.useState(false), [x, C] = i.useState(null), S = i.useCallback(e => {
     if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
-    O(true), x(e.body.message)
+    O(true), C(e.body.message)
   }, []), T = i.useCallback((e, t) => (0, s.U_)(e, t).then(u.tEg, S), [S]), I = i.useCallback(function() {
     var e;
     let n = arguments.length > 0 && true !== arguments[0] && arguments[0],
@@ -73,12 +73,12 @@ function p(e) {
       shouldRenderOwnedGuildsModal: A,
       shouldRenderDeleteAccountConfirmModal: b,
       shouldRenderDisableAccountErrorModal: E,
-      disableAccountErrorMessage: C,
+      disableAccountErrorMessage: x,
       onOwnedTeamsWarningModalClose: () => g(false),
       onOwnedGuildsWarningModalClose: () => f(false),
       onDeleteAccountConfirmModalClose: () => h(false),
       onDisableAccountErrorModalClose: () => {
-        O(false), x(null)
+        O(false), C(null)
       }
     })]
   })

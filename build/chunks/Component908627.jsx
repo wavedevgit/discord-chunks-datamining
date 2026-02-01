@@ -1,4 +1,4 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 908627, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => L
@@ -34,18 +34,18 @@ function C(e) {
   let {
     log: a,
     member: s,
-    guild: d
+    guild: _
   } = e, {
-    analyticsLocations: h
-  } = (0, _.Ay)(), N = T.Zo(a), p = T.nG(a), C = null == (n = T.AO(S.gGk.REASON, a)) ? true : n.newValue, L = T.gT(a), b = (0, g.L4)(a.id), x = (0, u.bG)([m.Ay], () => null != a.userId ? m.Ay.getMember(s.guildId, a.userId) : null, [s.guildId, a.userId]), M = (0, O.gn)(null == x ? true : x.guildId, null == x ? true : x.userId, null != (t = null == x ? true : x.colorStrings) ? t : null), v = r.useCallback(e => t => {
-    t.preventDefault(), t.stopPropagation(), null != e && (0, A.Ko)(e, h)
-  }, [h]), j = r.useCallback(() => {
+    analyticsLocations: I
+  } = (0, d.Ay)(), m = T.Zo(a), S = T.nG(a), C = null == (n = T.AO(p.gGk.REASON, a)) ? true : n.newValue, L = T.gT(a), x = (0, g.L4)(a.id), b = (0, u.bG)([N.Ay], () => null != a.userId ? N.Ay.getMember(s.guildId, a.userId) : null, [s.guildId, a.userId]), M = (0, h.gn)(null == b ? true : b.guildId, null == b ? true : b.userId, null != (t = null == b ? true : b.colorStrings) ? t : null), v = r.useCallback(e => t => {
+    t.preventDefault(), t.stopPropagation(), null != e && (0, A.Ko)(e, I)
+  }, [I]), U = r.useCallback(() => {
     var e;
     return null == a.user ? null : (0, l.jsx)(c.m, {
       asContainer: true,
       text: G.intl.string(G.t.mvsi9n),
       children: (0, l.jsx)(E.DUT, {
-        onClick: v(x),
+        onClick: v(b),
         tag: "span",
         className: R.Xh,
         children: (0, l.jsxs)(E.Text, {
@@ -53,41 +53,41 @@ function C(e) {
           tag: "span",
           children: ["@", (0, l.jsx)(E.gyj, {
             name: f.Ay.getName(s.guildId, null, a.user),
-            colorString: null != (e = null == x ? true : x.colorString) ? e : null,
+            colorString: null != (e = null == b ? true : b.colorString) ? e : null,
             colorStrings: M
           })]
         })
       })
     })
-  }, [v, a.user, s.guildId, x, M])();
+  }, [v, a.user, s.guildId, b, M])();
   return (0, l.jsxs)("div", {
     className: i()(D.ol, R.$9),
     children: [(0, l.jsxs)("div", {
       className: R._6,
       children: [(0, l.jsxs)("div", {
         className: R.lc,
-        children: [null != N && (0, l.jsx)(E.Text, {
+        children: [null != m && (0, l.jsx)(E.Text, {
           variant: "text-sm/semibold",
           color: "text-strong",
-          children: N
-        }), null != p && (0, l.jsxs)(E.Text, {
+          children: m
+        }), null != S && (0, l.jsxs)(E.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: ["(", "string" == typeof p ? p : o()(p).fromNow(), ")"]
+          children: ["(", "string" == typeof S ? S : o()(S).fromNow(), ")"]
         })]
       }), (0, l.jsx)("div", {
         className: R.FS,
         children: (0, l.jsx)(E.Text, {
           variant: "text-sm/medium",
           color: "text-strong",
-          children: b
+          children: x
         })
       })]
     }), null != C && (0, l.jsx)("div", {
       className: R.Xy,
       children: (0, l.jsxs)("div", {
         className: R.eH,
-        children: [j, (0, l.jsx)(E.Text, {
+        children: [U, (0, l.jsx)(E.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",
@@ -98,7 +98,7 @@ function C(e) {
       className: R.Xy,
       children: (0, l.jsxs)("div", {
         className: R.E9,
-        children: [j, (0, l.jsx)(E.Text, {
+        children: [U, (0, l.jsx)(E.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",
@@ -113,9 +113,9 @@ function C(e) {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",
-          children: (0, l.jsx)(I.ri, {
+          children: (0, l.jsx)(O.ri, {
             log: a,
-            guild: d,
+            guild: _,
             onContentClick: () => {},
             className: R.zm
           })
@@ -128,17 +128,17 @@ function C(e) {
 function L(e) {
   let {
     member: t
-  } = e, n = (0, u.bG)([N.A], () => N.A.getGuild(t.guildId), [t.guildId]), a = (0, u.bG)([h.A], () => {
-    let e = h.A.logs;
+  } = e, n = (0, u.bG)([m.A], () => m.A.getGuild(t.guildId), [t.guildId]), a = (0, u.bG)([I.A], () => {
+    let e = I.A.logs;
     return null == e || null == n ? [] : T.yy(e, n)
   }, [n]);
   return (r.useEffect(() => {
     !async function(e, t) {
-      await d.Qi(t, e)
+      await _.Qi(t, e)
     }(t.guildId, t.userId)
   }, [t.guildId, t.userId]), null == n || 0 === a.length) ? null : (0, l.jsx)(E.D0$, {
     label: G.intl.string(G.t.flCxLo),
-    children: a.length > 0 ? (0, l.jsx)(p.SQ, {
+    children: a.length > 0 ? (0, l.jsx)(S.SQ, {
       children: a.map(e => (0, l.jsx)(C, {
         log: e,
         member: t,

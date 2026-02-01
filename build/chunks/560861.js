@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 560861, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 560861, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  g: () => A
+  g: () => S
 });
 var Chunk284009 = require("./284009.js"),
   l = require.n(Chunk284009),
@@ -13,21 +13,21 @@ var Chunk284009 = require("./284009.js"),
   Chunk780964 = require("./780964.js"),
   Chunk235079 = require("./235079.js"),
   Chunk985018 = require("./985018.jsx");
-let A = (0, Chunk419954.zD)(Chunk780964.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
+let S = (0, Chunk419954.zD)(Chunk780964.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   useTitle: () => {
-    let e = r.A.useHolidaySoundpack();
-    return null == e ? "" : c.intl.format(c.t["E/OyBr"], {
-      soundpack: c.intl.string(e.soundpackLabel)
+    let t = r.A.useHolidaySoundpack();
+    return null == t ? "" : A.intl.format(A.t["E/OyBr"], {
+      soundpack: A.intl.string(t.soundpackLabel)
     })
   },
   useValue: function() {
-    let e = (0, s.bG)([o.A], () => o.A.getSoundpack()),
-      t = r.A.useHolidaySoundpack();
-    return e === (null == t ? true : t.soundpack)
+    let t = (0, s.bG)([o.A], () => o.A.getSoundpack()),
+      e = r.A.useHolidaySoundpack();
+    return t === (null == e ? true : e.soundpack)
   },
-  setValue: function(e) {
-    let t = r.A.getHolidaySoundpack();
-    l()(null != t, "predicate should fail if no soundpack is available"), (0, u.p)(e ? t : T.i.CLASSIC)
+  setValue: function(t) {
+    let e = r.A.getHolidaySoundpack();
+    l()(null != e, "predicate should fail if no soundpack is available"), (0, a.p)(t ? e : T.i.CLASSIC)
   },
   usePredicate: Chunk552122.A.useIsEligible
 })

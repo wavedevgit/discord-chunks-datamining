@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 283354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,10 +14,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk352123 = require("./352123.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function h(e) {
   let {
     entry: t,
-    onSelect: p,
+    onSelect: h,
     closePopout: g,
     hideEditButton: f = false
   } = e, {
@@ -26,7 +26,7 @@ function p(e) {
     canRemove: A
   } = (0, d.A)(t), y = (0, o.A)({
     id: t.guildId,
-    label: h.intl.string(h.t["94lLD7"]),
+    label: p.intl.string(p.t["94lLD7"]),
     onSuccess: g
   });
   l.useEffect(() => {
@@ -36,19 +36,19 @@ function p(e) {
     u.ZM(t.channelId, t.guildId)
   };
 
-  function _() {
+  function j() {
     (0, a.Z_)(), null == g || g()
   }
   return (0, r.jsxs)(s.W1t, {
     "data-menu-migrated": true,
     navId: "guild-entry-context",
-    onClose: _,
-    "aria-label": h.intl.string(h.t.HpQykc),
-    onSelect: p,
+    onClose: j,
+    "aria-label": p.intl.string(p.t.HpQykc),
+    onSelect: h,
     children: [(0, r.jsxs)(s.rXV, {
       children: [b && !f ? (0, r.jsx)(s.Drp, {
         id: "update-entry",
-        label: h.intl.string(h.t.XnuOvN),
+        label: p.intl.string(p.t.XnuOvN),
         action: function() {
           (0, s.mMO)(async () => {
             let {
@@ -86,7 +86,7 @@ function p(e) {
                 Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
               }), l))
             }
-          }), _()
+          }), j()
         },
         leadingAccessory: {
           type: "icon",
@@ -94,16 +94,16 @@ function p(e) {
         }
       }) : null, A ? (0, r.jsx)(s.Drp, {
         id: "remove-from-hub",
-        label: h.intl.string(h.t.KUxYWH),
+        label: p.intl.string(p.t.KUxYWH),
         action: function() {
           (0, i.A)({
-            title: h.intl.string(h.t.KUxYWH),
-            subtitle: h.intl.format(h.t["/5y0uV"], {
+            title: p.intl.string(p.t.KUxYWH),
+            subtitle: p.intl.format(p.t["/5y0uV"], {
               guildName: t.name
             }),
-            confirmText: h.intl.string(h.t.N86XcP),
+            confirmText: p.intl.string(p.t.N86XcP),
             onConfirm: O
-          }), _()
+          }), j()
         },
         color: "danger",
         leadingAccessory: {
@@ -112,9 +112,9 @@ function p(e) {
         }
       }) : null, m ? null : (0, r.jsx)(s.Drp, {
         id: "report-server-listing",
-        label: h.intl.string(h.t.Aen9eh),
+        label: p.intl.string(p.t.Aen9eh),
         action: function() {
-          null != t && ((0, c.sJ)(t), _())
+          null != t && ((0, c.sJ)(t), j())
         },
         icon: s.iFK,
         leadingAccessory: {

@@ -150,8 +150,8 @@ function w(e) {
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, F = (0, h.A)(C, __OVERLAY__ || T), V = 0;
-  1 !== D && (V = (0, u.yVx)(V, u.ofu.REDUCE_SATURATION_ENABLED));
+  }).enabled, V = (0, h.A)(C, __OVERLAY__ || T), F = 0;
+  1 !== D && (F = (0, u.yVx)(F, u.ofu.REDUCE_SATURATION_ENABLED));
   let B = (0, I.C)(),
     H = (0, m.qK)("RootThemeContextProvider"),
     Y = (0, m.k5)("RootThemeContextProvider"),
@@ -168,7 +168,7 @@ function w(e) {
     value: q,
     children: (0, r.jsx)(u.eSm, {
       theme: E,
-      flags: V,
+      flags: F,
       saturation: D,
       density: B,
       children: (0, r.jsx)(S.fs, {
@@ -179,7 +179,7 @@ function w(e) {
         fontScale: w,
         fontScaleClass: R,
         keyboardModeEnabled: P,
-        mouseMode: F,
+        mouseMode: V,
         saturation: D,
         desaturateUserColors: L,
         useForcedColors: x,

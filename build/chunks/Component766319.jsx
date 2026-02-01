@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 766319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,17 +23,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk281783 = require("./281783.js");
 
-function j(e) {
+function x(e) {
   let t, {
       activity: n,
       channel: i,
       userId: s
     } = e,
     u = (0, d.YY)(n.application_id).data,
-    [h, p] = l.useState(false),
+    [p, h] = l.useState(false),
     [f, m] = l.useState(0),
     b = (0, a.bG)([g.A], () => g.A.getChannelId() !== i.id);
-  async function j() {
+  async function x() {
     m(1);
     try {
       await c.A.sendActivityInvite({
@@ -53,17 +53,17 @@ function j(e) {
   if (b && (t = O.intl.string(y.default.qRXats)), n.type === A.$pd.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, r.jsxs)("div", {
-      className: _.gd,
+      className: j.gd,
       children: [(0, r.jsxs)("div", {
-        className: _.xi,
-        children: [h || null == e ? (0, r.jsx)(o._7Z, {
+        className: j.xi,
+        children: [p || null == e ? (0, r.jsx)(o._7Z, {
           size: "custom",
           width: 46,
           height: 46
         }) : (0, r.jsx)("img", {
           src: e,
           alt: n.name,
-          onError: () => p(true)
+          onError: () => h(true)
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
@@ -80,9 +80,9 @@ function j(e) {
         fullWidth: true,
         size: "sm",
         text: 2 === f ? O.intl.string(y.default["8HU1M2"]) : O.intl.string(y.default.DKHhec),
-        onClick: j
+        onClick: x
       }), null != t && (0, r.jsx)(o.Text, {
-        className: _.H$,
+        className: j.H$,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -91,14 +91,14 @@ function j(e) {
   }
 }
 
-function x(e) {
+function _(e) {
   let {
     userId: t,
     channel: n
   } = e, o = (0, a.bG)([f.default], () => f.default.getUser(t)), c = (0, b.A)(t, n.guild_id), d = (0, m.A)(t, n.id), g = l.useMemo(() => i.uniqWith(c, (e, t) => {
     if (e.application_id === t.application_id) returntrue;
-    let n = p.A.getGameByName(e.name),
-      r = p.A.getGameByName(t.name);
+    let n = h.A.getGameByName(e.name),
+      r = h.A.getGameByName(t.name);
     return null != n && n === r || e.name === t.name
   }), [c]), A = null == o || !d || 0 === g.length;
   return ((0, u.A)({
@@ -107,13 +107,13 @@ function x(e) {
     properties: {}
   }, {
     disableTrack: A
-  }), A) ? null : (0, r.jsx)(h.A.Provider, {
+  }), A) ? null : (0, r.jsx)(p.A.Provider, {
     value: n.guild_id,
     children: (0, r.jsx)("div", {
-      className: _.zr,
+      className: j.zr,
       children: (0, r.jsx)("div", {
-        className: _.Ci,
-        children: g.map(e => (0, r.jsx)(j, {
+        className: j.Ci,
+        children: g.map(e => (0, r.jsx)(x, {
           activity: e,
           channel: n,
           userId: t

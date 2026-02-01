@@ -1,9 +1,9 @@
-/** Chunk was on 64935 **/
-/** chunk id: 235390, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 15627 **/
+/** chunk id: 235390, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  MA: () => i
+  MA: () => o
 });
-let r = (0, require("./600975.js").C)({
+let n = (0, require("./600975.js").C)({
   kind: "user",
   id: "2025-04_ignore_user_feedback",
   label: "Ignore User Feedback Experiment",
@@ -28,8 +28,8 @@ let r = (0, require("./600975.js").C)({
   }]
 });
 
-function i(e) {
-  return r.getCurrentConfig({
+function o(e) {
+  return n.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: true

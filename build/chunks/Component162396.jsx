@@ -1,12 +1,12 @@
-/** Chunk was on 59024 **/
+/** Chunk was on 47147 **/
 /** chunk id: 162396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => y
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  i = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk975807 = require("./975807.js"),
   Chunk212031 = require("./212031.jsx"),
@@ -20,67 +20,67 @@ function f(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(i.W1t, {
+  return (0, r.jsx)(l.W1t, {
     "data-menu-migrated-auto": true,
     navId: "settings-footer-more-menu",
     onClose: t,
     onSelect: () => {},
     "aria-label": "More options",
-    children: (0, r.jsxs)(i.rXV, {
-      children: [(0, r.jsx)(i.Drp, {
+    children: (0, r.jsxs)(l.rXV, {
+      children: [(0, r.jsx)(l.Drp, {
         id: "changelog",
-        label: y.intl.string(y.t.LRmNAl),
+        label: b.intl.string(b.t.LRmNAl),
         action: () => (0, s.j)(true)
-      }), (0, r.jsx)(i.Drp, {
+      }), (0, r.jsx)(l.Drp, {
         id: "acknowledgements",
-        label: y.intl.string(y.t["0nUKy3"]),
-        action: () => (0, c.A)(b.X7G.ACKNOWLEDGEMENTS)
-      }), (0, r.jsx)(i.Drp, {
+        label: b.intl.string(b.t["0nUKy3"]),
+        action: () => (0, c.A)(d.X7G.ACKNOWLEDGEMENTS)
+      }), (0, r.jsx)(l.Drp, {
         id: "support",
-        label: y.intl.string(y.t["Yl/Riu"]),
+        label: b.intl.string(b.t["Yl/Riu"]),
         action: () => (0, c.A)(u.C)
       })]
     })
   })
 }
 
-function g() {
-  let e = l.useRef(null);
+function y() {
+  let e = o.useRef(null);
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(d.A, {
+    children: [(0, r.jsx)(_.A, {
       compact: true
     }), (0, r.jsxs)("div", {
       className: p.yJ,
-      children: [(0, r.jsx)(i.MzZ, {
-        href: b.X7G.PRIVACY,
-        children: (0, r.jsx)(i.Text, {
+      children: [(0, r.jsx)(l.MzZ, {
+        href: d.X7G.PRIVACY,
+        children: (0, r.jsx)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: y.intl.string(y.t["Knf/f/"])
+          children: b.intl.string(b.t["Knf/f/"])
         })
       }), (0, r.jsx)("span", {
         className: p.xE,
         "aria-hidden": "true",
         children: "•"
-      }), (0, r.jsx)(i.MzZ, {
-        href: b.X7G.TERMS,
-        children: (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(l.MzZ, {
+        href: d.X7G.TERMS,
+        children: (0, r.jsx)(l.Text, {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: y.intl.string(y.t.uFSTGq)
+          children: b.intl.string(b.t.uFSTGq)
         })
       }), (0, r.jsx)("span", {
         className: p.xE,
         "aria-hidden": "true",
         children: "•"
-      }), (0, r.jsx)(i.YNO, {
+      }), (0, r.jsx)(l.YNO, {
         targetElementRef: e,
         position: "top",
         align: "center",
         spacing: 0,
-        animation: i.YNO.Animation.NONE,
+        animation: l.YNO.Animation.NONE,
         renderPopout: e => {
           let {
             closePopout: t
@@ -90,8 +90,8 @@ function g() {
           })
         },
         children: (t, n) => {
-          var l, o;
-          return (0, r.jsx)(i.MzZ, (l = function(e) {
+          var o, a;
+          return (0, r.jsx)(l.MzZ, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -108,28 +108,28 @@ function g() {
               })
             }
             return e
-          }({}, t), o = o = {
+          }({}, t), a = a = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: a()(p.Mj, {
+            className: i()(p.Mj, {
               [p.vu]: n.isShown
             }),
-            children: (0, r.jsx)(i.Text, {
+            children: (0, r.jsx)(l.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: y.intl.string(y.t["UKOtz+"])
+              children: b.intl.string(b.t["UKOtz+"])
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-          }), l))
+          })(Object(a)).forEach(function(e) {
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+          }), o))
         }
       })]
     })]

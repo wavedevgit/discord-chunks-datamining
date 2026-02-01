@@ -108,13 +108,13 @@ function _(e) {
       document.removeEventListener("keydown", e, true)
     }
   }, [N, M]);
-  let F = i.useMemo(() => null == y ? y : y.map(e => f(u({}, e), {
+  let V = i.useMemo(() => null == y ? y : y.map(e => f(u({}, e), {
       onClick: t => {
         var n;
         null == (n = e.onClick) || n.call(e, t), M(false)
       }
     })), [y, M]),
-    V = i.useCallback(e => {
+    F = i.useCallback(e => {
       D(e)
     }, []);
   return (0, r.jsxs)("div", {
@@ -131,7 +131,7 @@ function _(e) {
       body: m,
       graphic: g,
       size: E,
-      actions: F,
+      actions: V,
       gradientColor: b,
       showCloseButton: R,
       shouldTrapFocus: w,
@@ -141,7 +141,7 @@ function _(e) {
         align: "custom",
         customOffset: P
       },
-      onNudgeChange: V,
+      onNudgeChange: F,
       onRequestClose: e => {
         M(null != e && (0, o.sg)(e))
       }

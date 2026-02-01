@@ -1,7 +1,7 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 16986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,223 +19,223 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b() {
-  let e = g.ML.useSetting(),
-    t = g.eK.useSetting(),
-    n = g.SI.useSetting(),
-    b = g.gs.useSetting(),
-    j = g.SY.useSetting(),
-    O = g._z.useSetting(),
-    E = g.j7.useSetting(),
-    S = g.X6.useSetting(),
-    f = g.hD.useSetting(),
-    C = g.rs.useSetting(),
-    v = g.jW.useSetting(),
-    y = g.ng.useSetting(),
-    T = g.Hu.useSetting(),
+function A() {
+  let e = h.ML.useSetting(),
+    t = h.eK.useSetting(),
+    n = h.SI.useSetting(),
+    A = h.gs.useSetting(),
+    y = h.SY.useSetting(),
+    O = h._z.useSetting(),
+    j = h.j7.useSetting(),
+    x = h.X6.useSetting(),
+    _ = h.hD.useSetting(),
+    v = h.rs.useSetting(),
+    E = h.jW.useSetting(),
+    C = h.ng.useSetting(),
+    S = h.Hu.useSetting(),
     {
-      analyticsLocations: _
-    } = (0, a.Ay)(r.A.TEXT_AND_IMAGES),
+      analyticsLocations: I
+    } = (0, a.Ay)(s.A.TEXT_AND_IMAGES),
     N = l.useCallback(e => {
       let t = 1 === e;
       t ? c.A.cleanUpPrivateChannelSearchState() : c.A.cleanUpSearchState({
         type: m.I4_.DMS
-      }), (0, d._k)({
-        prevIsCrossDMSettingEnabled: g.Hu.getSetting(),
+      }), (0, u._k)({
+        prevIsCrossDMSettingEnabled: h.Hu.getSetting(),
         isCrossDMSettingEnabled: t,
-        location: d.vy.USER_SETTINGS
-      }), g.Hu.updateSetting(t)
+        location: u.vy.USER_SETTINGS
+      }), h.Hu.updateSetting(t)
     }, []);
-  return (0, i.jsx)(x.A, {
-    title: A.intl.string(A.t["/VQax8"]),
-    children: (0, i.jsxs)(s.BJc, {
+  return (0, r.jsx)(g.A, {
+    title: b.intl.string(b.t["/VQax8"]),
+    children: (0, r.jsxs)(i.BJc, {
       direction: "vertical",
       gap: 24,
-      children: [(0, i.jsx)(u.x, {
-        setting: p.H.CHAT_INLINE_MEDIA,
-        children: (0, i.jsxs)(s.nVY, {
-          label: A.intl.string(A.t.U68Dgp),
-          children: [(0, i.jsx)(u.x, {
-            setting: p.H.CHAT_INLINE_MEDIA_LINKS,
-            children: (0, i.jsx)(s.dOG, {
-              checked: f,
-              onChange: g.hD.updateSetting,
-              label: A.intl.string(A.t.U47N1p)
+      children: [(0, r.jsx)(d.x, {
+        setting: f.H.CHAT_INLINE_MEDIA,
+        children: (0, r.jsxs)(i.nVY, {
+          label: b.intl.string(b.t.U68Dgp),
+          children: [(0, r.jsx)(d.x, {
+            setting: f.H.CHAT_INLINE_MEDIA_LINKS,
+            children: (0, r.jsx)(i.dOG, {
+              checked: _,
+              onChange: h.hD.updateSetting,
+              label: b.intl.string(b.t.U47N1p)
             })
-          }), (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_INLINE_MEDIA_UPLOADS,
-            children: (0, i.jsx)(s.dOG, {
-              checked: S,
-              description: A.intl.formatToPlainString(A.t.qjjvqO, {
+          }), (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_INLINE_MEDIA_UPLOADS,
+            children: (0, r.jsx)(i.dOG, {
+              checked: x,
+              description: b.intl.formatToPlainString(b.t.qjjvqO, {
                 maxSize: 10
               }),
-              onChange: g.X6.updateSetting,
-              label: A.intl.string(A.t.VP11No)
+              onChange: h.X6.updateSetting,
+              label: b.intl.string(b.t.VP11No)
             })
-          }), (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
-            children: (0, i.jsx)(s.dOG, {
+          }), (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
+            children: (0, r.jsx)(i.dOG, {
               checked: O,
-              description: A.intl.string(A.t.T0rbtM),
-              onChange: g._z.updateSetting,
-              label: A.intl.string(A.t["w8j+yW"])
+              description: b.intl.string(b.t.T0rbtM),
+              onChange: h._z.updateSetting,
+              label: b.intl.string(b.t["w8j+yW"])
             })
           })]
         })
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_EMBEDS,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsx)(s.nVY, {
-          label: A.intl.string(A.t.PWZOn4),
-          children: (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_EMBEDS_LINK_PREVIEWS,
-            children: (0, i.jsx)(s.dOG, {
-              checked: C,
-              onChange: g.rs.updateSetting,
-              label: A.intl.string(A.t.xX0ZTA)
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_EMBEDS,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsx)(i.nVY, {
+          label: b.intl.string(b.t.PWZOn4),
+          children: (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_EMBEDS_LINK_PREVIEWS,
+            children: (0, r.jsx)(i.dOG, {
+              checked: v,
+              onChange: h.rs.updateSetting,
+              label: b.intl.string(b.t.xX0ZTA)
             })
           })
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_EMOJI,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsxs)(s.nVY, {
-          label: A.intl.string(A.t.sMOuuS),
-          children: [(0, i.jsx)(u.x, {
-            setting: p.H.CHAT_EMOJI_REACTIONS,
-            children: (0, i.jsx)(s.dOG, {
-              checked: v,
-              onChange: g.jW.updateSetting,
-              label: A.intl.string(A.t.Iv24sm)
-            })
-          }), (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_EMOJI_EMOTICONS,
-            children: (0, i.jsx)(s.dOG, {
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_EMOJI,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsxs)(i.nVY, {
+          label: b.intl.string(b.t.sMOuuS),
+          children: [(0, r.jsx)(d.x, {
+            setting: f.H.CHAT_EMOJI_REACTIONS,
+            children: (0, r.jsx)(i.dOG, {
               checked: E,
-              description: o.A.parse(A.intl.string(A.t["20dvuQ"])),
-              onChange: g.j7.updateSetting,
-              label: A.intl.string(A.t["79qal8"])
+              onChange: h.jW.updateSetting,
+              label: b.intl.string(b.t.Iv24sm)
+            })
+          }), (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_EMOJI_EMOTICONS,
+            children: (0, r.jsx)(i.dOG, {
+              checked: j,
+              description: o.A.parse(b.intl.string(b.t["20dvuQ"])),
+              onChange: h.j7.updateSetting,
+              label: b.intl.string(b.t["79qal8"])
             })
           })]
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_STICKERS,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsx)(s.nVY, {
-          label: A.intl.string(A.t["6NtAuJ"]),
-          children: (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_STICKERS_AUTOCOMPLETE,
-            children: (0, i.jsx)(s.dOG, {
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_STICKERS,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsx)(i.nVY, {
+          label: b.intl.string(b.t["6NtAuJ"]),
+          children: (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_STICKERS_AUTOCOMPLETE,
+            children: (0, r.jsx)(i.dOG, {
               checked: e,
-              description: A.intl.string(A.t["/eVrj8"]),
+              description: b.intl.string(b.t["/eVrj8"]),
               onChange: e => {
-                h.default.track(m.HAw.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
+                p.default.track(m.HAw.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
                   enabled: e,
                   location: {
                     section: m.JJy.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: _
-                }), g.ML.updateSetting(e)
+                  location_stack: I
+                }), h.ML.updateSetting(e)
               },
-              label: A.intl.string(A.t["29xPVZ"])
+              label: b.intl.string(b.t["29xPVZ"])
             })
           })
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_SOUNDMOJI,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsx)(s.nVY, {
-          label: A.intl.string(A.t.EHlAMc),
-          children: (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_SOUNDMOJI_AUTOCOMPLETE,
-            children: (0, i.jsx)(s.dOG, {
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_SOUNDMOJI,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsx)(i.nVY, {
+          label: b.intl.string(b.t.EHlAMc),
+          children: (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_SOUNDMOJI_AUTOCOMPLETE,
+            children: (0, r.jsx)(i.dOG, {
               checked: t,
-              description: A.intl.string(A.t.hrSIhN),
+              description: b.intl.string(b.t.hrSIhN),
               onChange: e => {
-                h.default.track(m.HAw.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
+                p.default.track(m.HAw.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
                   checked: e,
                   location: {
                     section: m.JJy.SETTINGS_TEXT_AND_IMAGES
                   }
-                }), g.eK.updateSetting(e)
+                }), h.eK.updateSetting(e)
               },
-              label: A.intl.string(A.t["CtYr+U"])
+              label: b.intl.string(b.t["CtYr+U"])
             })
           })
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_TEXT_BOX,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsxs)(s.nVY, {
-          label: A.intl.string(A.t.afR0pI),
-          children: [(0, i.jsx)(u.x, {
-            setting: p.H.CHAT_TEXT_BOX_PREVIEW,
-            children: (0, i.jsx)(s.dOG, {
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_TEXT_BOX,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsxs)(i.nVY, {
+          label: b.intl.string(b.t.afR0pI),
+          children: [(0, r.jsx)(d.x, {
+            setting: f.H.CHAT_TEXT_BOX_PREVIEW,
+            children: (0, r.jsx)(i.dOG, {
               checked: n,
               onChange: e => {
-                h.default.track(m.HAw.PREVIEW_MARKDOWN_TOGGLED, {
+                p.default.track(m.HAw.PREVIEW_MARKDOWN_TOGGLED, {
                   enabled: e,
                   location: {
                     section: m.JJy.SETTINGS_TEXT_AND_IMAGES
                   }
-                }), g.SI.updateSetting(e)
+                }), h.SI.updateSetting(e)
               },
-              label: A.intl.string(A.t.AqGrEI)
+              label: b.intl.string(b.t.AqGrEI)
             })
-          }), (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_MENTION_SUGGESTIONS,
-            children: (0, i.jsx)(s.dOG, {
-              checked: y,
-              description: A.intl.string(A.t.AaXigo),
+          }), (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_MENTION_SUGGESTIONS,
+            children: (0, r.jsx)(i.dOG, {
+              checked: C,
+              description: b.intl.string(b.t.AaXigo),
               onChange: e => {
-                g.ng.updateSetting(e)
+                h.ng.updateSetting(e)
               },
-              label: A.intl.string(A.t.uXQ2xT)
+              label: b.intl.string(b.t.uXQ2xT)
             })
           })]
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_THREADS,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsx)(s.nVY, {
-          label: A.intl.string(A.t.B2panI),
-          children: (0, i.jsx)(u.x, {
-            setting: p.H.CHAT_THREADS_SPLIT_VIEW,
-            children: (0, i.jsx)(s.dOG, {
-              checked: j,
-              onChange: g.SY.updateSetting,
-              label: A.intl.string(A.t.AInv5m)
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_THREADS,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsx)(i.nVY, {
+          label: b.intl.string(b.t.B2panI),
+          children: (0, r.jsx)(d.x, {
+            setting: f.H.CHAT_THREADS_SPLIT_VIEW,
+            children: (0, r.jsx)(i.dOG, {
+              checked: y,
+              onChange: h.SY.updateSetting,
+              label: b.intl.string(b.t.AInv5m)
             })
           })
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.MESSAGE_SEARCH,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsx)(u.x, {
-          setting: p.H.MESSAGE_SEARCH_ALL_DMS,
-          children: (0, i.jsx)(s.z6M, {
-            label: A.intl.string(A.t["NxjN+q"]),
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.MESSAGE_SEARCH,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsx)(d.x, {
+          setting: f.H.MESSAGE_SEARCH_ALL_DMS,
+          children: (0, r.jsx)(i.z6M, {
+            label: b.intl.string(b.t["NxjN+q"]),
             options: [{
-              name: A.intl.string(A.t["t+fGsk"]),
+              name: b.intl.string(b.t["t+fGsk"]),
               value: 0
             }, {
-              name: A.intl.string(A.t.MwlEGN),
+              name: b.intl.string(b.t.MwlEGN),
               value: 1
             }],
             onChange: N,
-            value: +!!T
+            value: +!!S
           })
         })]
-      }), (0, i.jsxs)(u.x, {
-        setting: p.H.CHAT_SPOILERS,
-        children: [(0, i.jsx)(s.cGx, {}), (0, i.jsx)(s.z6M, {
-          label: A.intl.string(A.t.QgwmVz),
-          description: A.intl.string(A.t.TYnRkS),
+      }), (0, r.jsxs)(d.x, {
+        setting: f.H.CHAT_SPOILERS,
+        children: [(0, r.jsx)(i.cGx, {}), (0, r.jsx)(i.z6M, {
+          label: b.intl.string(b.t.QgwmVz),
+          description: b.intl.string(b.t.TYnRkS),
           options: [{
-            name: A.intl.string(A.t["KFH/me"]),
+            name: b.intl.string(b.t["KFH/me"]),
             value: m.P6Q.ON_CLICK
           }, {
-            name: A.intl.string(A.t.K5VTBE),
+            name: b.intl.string(b.t.K5VTBE),
             value: m.P6Q.IF_MODERATOR
           }, {
-            name: A.intl.string(A.t.Pe1RbL),
+            name: b.intl.string(b.t.Pe1RbL),
             value: m.P6Q.ALWAYS
           }],
-          onChange: e => g.gs.updateSetting(e),
-          value: b
+          onChange: e => h.gs.updateSetting(e),
+          value: A
         })]
       })]
     })

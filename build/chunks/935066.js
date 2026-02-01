@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 935066, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 935066, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Y: () => d
 });
@@ -12,11 +12,11 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let d = (0, Chunk419954.zD)(Chunk780964.X.APPEARANCE_DISPLAY_COMPACT_AVATARS, {
   useTitle: () => o.intl.string(o.t["//vhWi"]),
-  usePredicate: () => a.hH.useSetting(),
+  usePredicate: () => u.hH.useSetting(),
   useValue: () => !(0, n.bG)([r.Ay], () => r.Ay.displayCompactAvatars),
-  setValue: e => {
+  setValue: t => {
     l.Ay.updatedUnsyncedSettings({
-      displayCompactAvatars: !e
+      displayCompactAvatars: !t
     })
   }
 })

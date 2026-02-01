@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 658137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -51,7 +51,7 @@ let v = Chunk64700.forwardRef((e, t) => {
         className: I.kL,
         children: (0, r.jsxs)("div", {
           className: I.s8,
-          children: [w && (0, r.jsx)(x.A, {}), (0, r.jsx)(c.Heading, {
+          children: [w && (0, r.jsx)(C.A, {}), (0, r.jsx)(c.Heading, {
             className: I.WT,
             variant: "display-sm",
             color: "text-strong",
@@ -73,7 +73,7 @@ let v = Chunk64700.forwardRef((e, t) => {
               className: s()(I.x6, i),
               color: k
             })
-          }) : (0, r.jsx)(C.KN, {
+          }) : (0, r.jsx)(x.KN, {
             subscriptionTier: l,
             inOfferExperience: w,
             containerClassName: s()(I.$F, {
@@ -83,7 +83,7 @@ let v = Chunk64700.forwardRef((e, t) => {
             isApplicationHome: true,
             isDarkMode: v,
             isEligibleForBogoPromotion: P
-          }), (0, r.jsx)(C.U9, {
+          }), (0, r.jsx)(x.U9, {
             variant: "text-sm/normal",
             withBottomMargin: false,
             isApplicationHome: true
@@ -95,12 +95,12 @@ let v = Chunk64700.forwardRef((e, t) => {
           autoPlay: !F,
           playsInline: true,
           preload: F ? "none" : "auto",
-          poster: N.A,
+          poster: y.A,
           loop: true,
           className: I.gm,
           ref: R,
           children: (0, r.jsx)("source", {
-            src: V ? y.A : j.A,
+            src: V ? N.A : j.A,
             type: V ? S.a.MP4 : S.a.WEBM
           })
         })

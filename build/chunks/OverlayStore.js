@@ -178,7 +178,7 @@ let O = "migrated",
           height: 24
         }
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.VIDEO]: {
       resizeX: true,
@@ -203,7 +203,7 @@ let O = "migrated",
           height: 128
         }
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.GO_LIVE]: {
       resizeX: true,
@@ -228,7 +228,7 @@ let O = "migrated",
           height: 164
         }
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.QUICK_ACTIONS]: {
       resizeX: false,
@@ -252,7 +252,7 @@ let O = "migrated",
           height: 56
         }
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.NOTIFICATIONS]: {
       resizeX: false,
@@ -276,7 +276,7 @@ let O = "migrated",
           height: 100
         }
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.ACTIVITY]: {
       resizeX: false,
@@ -300,23 +300,49 @@ let O = "migrated",
           height: 100
         }
       },
-      version: 3
+      version: 4
+    },
+    [Chunk652215.uss.TEXT_CHAT_V3]: {
+      resizeX: true,
+      resizeY: true,
+      dragAnywhere: false,
+      layoutPolicy: Chunk881957.X.REQUIRED,
+      defaultSettings: {
+        anchor: {
+          left: true,
+          top: 7 * v,
+          bottom: true,
+          right: 26 * A
+        },
+        size: {
+          fixed: true,
+          height: 372,
+          width: 500
+        },
+        minSize: {
+          width: 350,
+          height: 100
+        },
+        pinned: false
+      },
+      version: 4
     },
     [Chunk652215.uss.FRIENDS]: {
       resizeX: false,
       resizeY: true,
       dragAnywhere: true,
-      layoutPolicy: Chunk881957.X.OPTIONAL_DEFAULT,
+      constrainAutoSizeToExplicitResizeEvents: true,
+      layoutPolicy: Chunk881957.X.REQUIRED,
       defaultSettings: {
         anchor: {
           left: true,
-          top: 6 * v,
-          bottom: true,
+          top: 7 * v,
+          bottom: 15 * v,
           right: A
         },
         size: {
           fixed: true,
-          height: 500,
+          height: "auto",
           width: 350
         },
         minSize: {
@@ -325,7 +351,7 @@ let O = "migrated",
         },
         pinned: false
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.CLICK_ZONE_DEBUG]: {
       resizeX: true,
@@ -349,7 +375,7 @@ let O = "migrated",
           height: 50
         }
       },
-      version: 3
+      version: 4
     },
     [Chunk652215.uss.PERFORMANCE_DEBUG]: {
       resizeX: false,
@@ -373,7 +399,7 @@ let O = "migrated",
           height: 300
         }
       },
-      version: 3
+      version: 4
     }
   };
 
@@ -452,7 +478,7 @@ function R(e, t) {
   let r = n.findIndex(e => e.id === t);
   if (r === n.length - 1) returnfalse;
   n.push(n.splice(r, 1)[0]);
-  for (let e = 0; e < n.length; e++) V(n[e], e);
+  for (let e = 0; e < n.length; e++) F(n[e], e);
   returntrue
 }
 
@@ -572,7 +598,7 @@ function G(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     widgetType: t,
     defaultConfig: n
@@ -580,7 +606,7 @@ function F(e) {
   I[t] = E({}, I[t], n)
 }
 
-function V(e, t) {
+function F(e, t) {
   i = b(E({}, i), {
     [e.id]: e.set("zIndex", t)
   })
@@ -855,5 +881,5 @@ let q = new z(Chunk73153.h, {
   LAYOUT_CREATE_WIDGETS: G,
   LAYOUT_SET_WIDGET_META: P,
   LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: j,
-  LAYOUT_SET_DEFAULT_CONFIG: F
+  LAYOUT_SET_DEFAULT_CONFIG: V
 })

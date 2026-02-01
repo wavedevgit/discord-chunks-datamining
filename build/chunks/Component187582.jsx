@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 187582, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => L
@@ -57,8 +57,8 @@ function R(e) {
     user: t,
     channel: a,
     status: d,
-    activities: h
-  } = e, p = (0, s.bG)([O.A], () => null != O.A.getTypingUsers(a.id)[t.id]), f = (0, s.bG)([_.default], () => _.default.getCurrentUser()), j = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), v = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, g.A)(t.id), N = l.useRef(null), P = e => {
+    activities: p
+  } = e, h = (0, s.bG)([O.A], () => null != O.A.getTypingUsers(a.id)[t.id]), f = (0, s.bG)([j.default], () => j.default.getCurrentUser()), x = (0, s.bG)([A.A], () => A.A.isMobileOnline(t.id)), v = (0, s.bG)([y.A], () => y.A.getNickname(t.id)), C = (0, g.A)(t.id), N = l.useRef(null), P = e => {
     (0, o.L3)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function R(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    x._.dispatch(S.jej.TEXTAREA_FOCUS, {
+    _._.dispatch(S.jej.TEXTAREA_FOCUS, {
       channelId: a.id
-    }), x._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
+    }), _._.dispatchToLastSubscribed(S.jej.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.A.startTyping(a.id)
@@ -131,14 +131,14 @@ function R(e) {
         isOwner: t.id === a.ownerId,
         ownerTooltipText: I.intl.string(I.t["MRXZ+x"]),
         shouldAnimateStatus: w,
-        isTyping: p,
+        isTyping: h,
         status: d,
-        activities: h,
+        activities: p,
         applicationStream: C,
         channel: a,
         onContextMenu: P,
         selected: L,
-        isMobile: j,
+        isMobile: x,
         nick: v,
         nameplate: D,
         onClick: e => {
@@ -165,16 +165,16 @@ function D(e, t) {
 function L(e) {
   let {
     channel: t
-  } = e, n = _.default.getCurrentUser(), i = null == n ? true : n.isStaff(), {
+  } = e, n = j.default.getCurrentUser(), i = null == n ? true : n.isStaff(), {
     analyticsLocations: o
-  } = (0, h.Ay)(d.A.MEMBER_LIST), {
+  } = (0, p.Ay)(d.A.MEMBER_LIST), {
     listItems: c
-  } = (0, s.bG)([y.A, _.default, A.A], () => {
-    let e = (0, v.F)(t.recipients, _.default),
+  } = (0, s.bG)([y.A, j.default, A.A], () => {
+    let e = (0, v.F)(t.recipients, j.default),
       n = {};
     for (let t of e) {
       var r, l, i;
-      y.A.isFriend(t.id) || t.id === (null == (r = _.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+      y.A.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
         status: null != (l = A.A.getStatus(t.id)) ? l : S.clD.OFFLINE,
         activities: null != (i = A.A.getActivities(t.id)) ? i : P
       } : n[t.id] = {
@@ -196,14 +196,14 @@ function L(e) {
     }
   }, [t], D);
   l.useEffect(() => {
-    j.default.track(S.HAw.MEMBER_LIST_VIEWED, {
+    x.default.track(S.HAw.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id, t.type]);
   let u = i && c.every(e => e.user.isStaff());
-  return (0, r.jsx)(h.f5, {
+  return (0, r.jsx)(p.f5, {
     value: o,
     children: (0, r.jsx)("div", {
       className: N.kL,
@@ -214,8 +214,8 @@ function L(e) {
           fade: true,
           children: [(0, r.jsxs)(f.A, {
             className: N.lL,
-            children: ["".concat(I.intl.string(I.t["9Oq93m"]), "—").concat(c.length, " "), u && (0, r.jsx)(p.A, {
-              type: p.A.Types.STAFF_ONLY_DM
+            children: ["".concat(I.intl.string(I.t["9Oq93m"]), "—").concat(c.length, " "), u && (0, r.jsx)(h.A, {
+              type: h.A.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(R, {
             user: e.user,

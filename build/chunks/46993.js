@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 46993, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 46993, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   q: () => o
 });
@@ -11,9 +11,9 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_CLICKABLE_REGIONS_SETTING, {
   useValue: () => (0, n.bG)([r.default], () => !r.default.disableClickableRegions),
-  setValue: e => {
-    l.A.setDisableClickableRegions(!e)
+  setValue: t => {
+    l.A.setDisableClickableRegions(!t)
   },
-  useTitle: () => u.intl.string(u.t["+eFXxq"]),
-  useSubtitle: () => u.intl.string(u.t.kivMAp)
+  useTitle: () => a.intl.string(a.t["+eFXxq"]),
+  useSubtitle: () => a.intl.string(a.t.kivMAp)
 })

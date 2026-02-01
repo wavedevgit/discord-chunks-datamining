@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 498400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => G
@@ -48,8 +48,8 @@ let G = function(e) {
       analyticsLocations: G
     } = (0, g.Ay)(m.A.PREMIUM_MARKETING),
     U = (0, a.bG)([S.A], () => S.A.hasFetchedSubscriptions()),
-    k = (0, a.bG)([x.A], () => x.A.hasFetchedPaymentSources),
-    B = (0, a.bG)([C.default], () => C.default.getCurrentUser()),
+    k = (0, a.bG)([C.A], () => C.A.hasFetchedPaymentSources),
+    B = (0, a.bG)([x.default], () => x.default.getCurrentUser()),
     H = null == B ? true : B.id,
     V = (0, R.V)(),
     F = (0, P.O)(),
@@ -60,7 +60,7 @@ let G = function(e) {
     X = (0, j.A)({
       location: "PremiumHomePage"
     }),
-    q = (0, a.bG)([y.A], () => y.A.hasFetched);
+    q = (0, a.bG)([N.A], () => N.A.hasFetched);
   i.useEffect(() => {
     q || d.xG()
   }, [q]), i.useEffect(() => {
@@ -74,7 +74,7 @@ let G = function(e) {
       load_duration_ms: z.current
     })
   }, [l, W]), i.useEffect(() => {
-    n && (null != V || null != F) && (0, N.u1)(V, F)
+    n && (null != V || null != F) && (0, y.u1)(V, F)
   }, [n, V, F]);
   let J = (0, a.bG)([O.A], () => O.A.enabled),
     Q = t === L.Mf.ApplicationStoreHome,

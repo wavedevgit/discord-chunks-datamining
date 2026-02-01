@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 758400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => es,
@@ -63,8 +63,8 @@ function J(e) {
       fromStandaloneBillingPage: a = true,
       className: c
     } = e,
-    d = (0, _.bG)([N.default], () => {
-      let e = N.default.getCurrentUser();
+    d = (0, _.bG)([y.default], () => {
+      let e = y.default.getCurrentUser();
       return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
   if (0 === (0, P.bx)(n.additionalPlans)) return null;
@@ -222,7 +222,7 @@ function et(e) {
 }
 
 function en() {
-  let e = (0, _.bG)([N.default], () => N.default.getCurrentUser()),
+  let e = (0, _.bG)([y.default], () => y.default.getCurrentUser()),
     t = null != e && e.isPremiumGroupMember();
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(g.Heading, {
@@ -237,9 +237,9 @@ function en() {
       type: g.ZpM.Types.CUSTOM,
       children: (0, r.jsxs)(O.A, {
         align: O.A.Align.CENTER,
-        children: [(0, r.jsx)(x.A, {
+        children: [(0, r.jsx)(C.A, {
           game: null,
-          size: x.M.SMALL,
+          size: C.M.SMALL,
           className: q.pV
         }), (0, r.jsx)("span", {
           className: q.O,
@@ -281,29 +281,29 @@ function er(e) {
       analyticsLocations: m,
       analyticsLocation: n
     },
-    [C] = (0, D.Kq)(O);
-  C = null != u ? u : C;
-  let x = (0, E.A)(),
+    [x] = (0, D.Kq)(O);
+  x = null != u ? u : x;
+  let C = (0, E.A)(),
     S = (0, M.p)(),
     T = (0, L.nf)(),
     I = P.Ay.isBaseSubscriptionCanceled(t),
-    y = (0, U.v)(t, i);
-  if (null == h || null == C) return (0, r.jsx)(g.y$y, {});
-  let N = y ? (0, L.Bv)(C) : null,
-    j = null != N || null != T && (T.discountId === W.q || T.discountId === W.EG),
-    v = y && (I && null != S || !I && j) ? (0, r.jsx)(k.A, {
+    N = (0, U.v)(t, i);
+  if (null == h || null == x) return (0, r.jsx)(g.y$y, {});
+  let y = N ? (0, L.Bv)(x) : null,
+    j = null != y || null != T && (T.discountId === W.q || T.discountId === W.EG),
+    v = N && (I && null != S || !I && j) ? (0, r.jsx)(k.A, {
       subscription: t,
-      invoicePreview: C,
+      invoicePreview: x,
       paymentSource: i,
       discountOffer: S,
-      renewalChurnDiscountInfo: N,
+      renewalChurnDiscountInfo: y,
       discountInfo: T,
       isLoading: l,
       analyticsLocation: n
     }) : (0, r.jsx)(H.A, {
       subscription: t,
       currentInvoicePreview: h,
-      renewalInvoicePreview: C,
+      renewalInvoicePreview: x,
       paymentSource: i,
       busy: l,
       analyticsLocation: n
@@ -316,7 +316,7 @@ function er(e) {
         renewalInvoicePreview: h,
         fromStandaloneBillingPage: a,
         className: q.td,
-        fractionalPremiumInfo: x
+        fractionalPremiumInfo: C
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(g.nVY, {
@@ -325,9 +325,9 @@ function er(e) {
           className: q.zH,
           children: [(0, r.jsx)(et, {
             subscription: t,
-            renewalInvoicePreview: C,
+            renewalInvoicePreview: x,
             className: q.g4,
-            fractionalPremiumInfo: x,
+            fractionalPremiumInfo: C,
             openInvoice: _
           }), (0, r.jsx)("div", {
             className: s()(q.g4, {
@@ -388,11 +388,11 @@ function es(e) {
     shouldRefetchInvoicesOnSubscriptionUpdate: h
   } = e;
   null != s && null != s[0] && (l = s[0]);
-  let E = (0, _.bG)([N.default], () => N.default.getCurrentUser()),
+  let E = (0, _.bG)([y.default], () => y.default.getCurrentUser()),
     {
       analyticsLocations: O
     } = (0, b.Ay)(f.A.SUBSCRIPTION_DETAILS),
-    x = (0, M.p)(),
+    C = (0, M.p)(),
     S = null != s ? s.slice(1) : [],
     [T, I] = i.useState(0);
   i.useEffect(() => {
@@ -416,16 +416,16 @@ function es(e) {
     applyEntitlements: true,
     analyticsLocations: O,
     analyticsLocation: u,
-    userDiscountOfferId: null == x ? true : x.id,
+    userDiscountOfferId: null == C ? true : C.id,
     fetchKey: T
-  }), R = (0, Y.V)(), L = null == a ? true : a.invalid, U = (0, _.bG)([N.default], () => {
+  }), R = (0, Y.V)(), L = null == a ? true : a.invalid, U = (0, _.bG)([y.default], () => {
     var e;
-    return null == (e = N.default.getCurrentUser()) ? true : e.hasFreePremium()
+    return null == (e = y.default.getCurrentUser()) ? true : e.hasFreePremium()
   }), k = d()(l.currentPeriodEnd), B = null != l.paymentSourceId, H = null != (t = null == P ? true : P.total) ? t : 0, V = !B && H > 0 && (7 >= k.diff(d()(), "days") || l.status === K.Dmq.PAST_DUE) && !U && !l.isPurchasedExternally, W = L && l.status === K.Dmq.PAST_DUE && !U && !l.isPurchasedExternally, z = (0, w.l)(), J = !U && z, et = (null == l ? true : l.status) === K.Dmq.PAST_DUE, en = et ? d()().diff(d()(l.currentPeriodStart), "days") : 0, ei = null != E && E.isPremiumGroupPrimary(), el = l.hasAnyPremiumGroup, [es] = (0, D.C8)({
     subscriptionId: l.id,
     preventFetch: !(J || et)
   });
-  return null == j || null == P ? (0, r.jsx)(g.y$y, {}) : (null != l.renewalMutations && (l.renewalMutations.planId !== l.planId && !(0, y.m1)(l.renewalMutations.planId) || l.hasExternalPlanChange) && (n = (0, r.jsx)(F.A, {
+  return null == j || null == P ? (0, r.jsx)(g.y$y, {}) : (null != l.renewalMutations && (l.renewalMutations.planId !== l.planId && !(0, N.m1)(l.renewalMutations.planId) || l.hasExternalPlanChange) && (n = (0, r.jsx)(F.A, {
     subscription: l,
     renewalMutations: l.renewalMutations,
     className: q.Il,
@@ -444,7 +444,7 @@ function es(e) {
       messageType: g.YCn.INFO,
       action: (0, r.jsx)(g.DUT, {
         onClick: () => {
-          (0, C.Dr)(p.M.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
+          (0, x.Dr)(p.M.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
             dismissAction: Z.i.USER_DISMISS
           })
         },

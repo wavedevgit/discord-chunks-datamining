@@ -1,7 +1,7 @@
-/** Chunk was on 78238 **/
-/** chunk id: 513963, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 92617 **/
+/** chunk id: 513963, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => c
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,68 +10,68 @@ var Chunk627968 = require("./627968.js"),
   Chunk951829 = require("./951829.js"),
   Chunk985018 = require("./985018.jsx");
 
-function u(e) {
+function c(e) {
   let {
     type: t,
-    onConfirm: r,
-    onClose: u
-  } = e, s = function(e, t) {
+    onConfirm: n,
+    onClose: c
+  } = e, u = function(e, t) {
     if (null == e) return {};
-    var r, n, o, i = {};
+    var n, r, i, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (o = 0, r = Reflect.ownKeys(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+      return a
     }
-    if (i = function(e, t) {
+    if (a = function(e, t) {
         if (null == e) return {};
-        var r, n, o = {},
-          i = Object.getOwnPropertyNames(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
-        return o
+        var n, r, i = {},
+          a = Object.getOwnPropertyNames(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-  }(e, ["type", "onConfirm", "onClose"]), [b, f] = o.useState(false), p = o.useCallback(() => {
-    b && l.Ay.updatedUnsyncedSettings({
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+    return a
+  }(e, ["type", "onConfirm", "onClose"]), [s, f] = i.useState(false), p = i.useCallback(() => {
+    s && l.Ay.updatedUnsyncedSettings({
       disableHideSelfStreamAndVideoConfirmationAlert: true
-    }), r(), u()
-  }, [r, b, u]), y = t === a.f.STREAM ? c.intl.string(c.t["/lFMWr"]) : c.intl.string(c.t.xzxhZS), O = t === a.f.STREAM ? c.intl.string(c.t.xaOX7d) : c.intl.string(c.t.oU1p9O);
-  return (0, n.jsx)(i.aFV, function(e) {
+    }), n(), c()
+  }, [n, s, c]), b = t === o.f.STREAM ? d.intl.string(d.t["/lFMWr"]) : d.intl.string(d.t.xzxhZS), v = t === o.f.STREAM ? d.intl.string(d.t.xaOX7d) : d.intl.string(d.t.oU1p9O);
+  return (0, r.jsx)(a.aFV, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
   }({
     size: "md",
-    actionBarInput: (0, n.jsx)(i.Sc0, {
-      checked: b,
+    actionBarInput: (0, r.jsx)(a.Sc0, {
+      checked: s,
       onChange: e => f(e),
-      label: c.intl.string(c.t["JdIQ/Y"]),
+      label: d.intl.string(d.t["JdIQ/Y"]),
       labelType: "secondary"
     }),
     actions: [{
       variant: "secondary",
-      text: c.intl.string(c.t["ETE/oC"]),
-      onClick: u
+      text: d.intl.string(d.t["ETE/oC"]),
+      onClick: c
     }, {
       variant: "primary",
-      text: c.intl.string(c.t.BddRzS),
+      text: d.intl.string(d.t.BddRzS),
       onClick: p
     }],
-    title: y,
-    subtitle: O,
-    onClose: u
-  }, s))
+    title: b,
+    subtitle: v,
+    onClose: c
+  }, u))
 }

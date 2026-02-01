@@ -95,7 +95,7 @@ function T(e) {
       }
     })
   };
-  return (0, r.jsx)(f.A, {
+  return (0, r.jsx)(m.A, {
     ref: t,
     isFocused: l,
     isActive: T,
@@ -111,7 +111,7 @@ function T(e) {
         status: j,
         isMobile: L,
         subText: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(m.A, {
+          children: [(0, r.jsx)(f.A, {
             hovered: e,
             activities: x,
             applicationStream: P,

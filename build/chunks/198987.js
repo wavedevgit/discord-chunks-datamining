@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 198987, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 198987, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  t: () => S
+  t: () => c
 });
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -14,19 +14,19 @@ var Chunk64700 = require("./64700.js"),
   Chunk662128 = require("./662128.js"),
   Chunk811231 = require("./811231.js"),
   Chunk985018 = require("./985018.jsx");
-let S = (0, Chunk419954.zZ)(Chunk780964.X.SOUNDS_CATEGORY, {
-  useTitle: () => A.intl.string(A.t.MKWyKc),
+let c = (0, Chunk419954.zZ)(Chunk780964.X.SOUNDS_CATEGORY, {
+  useTitle: () => S.intl.string(S.t.MKWyKc),
   useInlineNotice: function() {
-    let e = (0, l.bG)([a.A], () => a.A.getDisableAllSounds());
+    let t = (0, l.bG)([u.A], () => u.A.getDisableAllSounds());
     return n.useMemo(() => {
-      if (e) return {
+      if (t) return {
         type: r.W.INLINE_NOTICE,
         noticeType: "warning",
-        useText: () => A.intl.format(A.t.fRvixS, {
-          onClick: () => (0, o.openUserSettings)(u.X.NOTIFICATIONS_SOUNDS_CATEGORY)
+        useText: () => S.intl.format(S.t.fRvixS, {
+          onClick: () => (0, o.openUserSettings)(a.X.NOTIFICATIONS_SOUNDS_CATEGORY)
         })
       }
-    }, [e])
+    }, [t])
   },
-  buildLayout: () => [c.Y, d.F, T.D]
+  buildLayout: () => [A.Y, d.F, T.D]
 })

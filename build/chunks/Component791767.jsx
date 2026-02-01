@@ -27,7 +27,7 @@ let E = {
   },
   handleRequiredAction(e) {
     let t = e.requiredAction;
-    !g.P.isDisallowPopupsSet() && null != h.default.getCurrentUser() && (t === m.a3B.REQUIRE_CAPTCHA || t === m.a3B.REQUIRE_VERIFIED_EMAIL || t === m.a3B.REQUIRE_VERIFIED_PHONE || t === m.a3B.REQUIRE_REVERIFIED_PHONE || t === m.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.A.isEmailReverification(t) ? (0, o.P3)({
+    !g.P.isDisallowPopupsSet() && null != h.default.getCurrentUser() && (t === f.a3B.REQUIRE_CAPTCHA || t === f.a3B.REQUIRE_VERIFIED_EMAIL || t === f.a3B.REQUIRE_VERIFIED_PHONE || t === f.a3B.REQUIRE_REVERIFIED_PHONE || t === f.a3B.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === f.a3B.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === f.a3B.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.A.isEmailReverification(t) ? (0, o.P3)({
       location: "verification-legacy"
     }) ? (0, a.B8)(e => {
       let {
@@ -42,7 +42,7 @@ let E = {
     }) : (0, a.B8)(() => (0, r.jsx)(d.A, {}), {
       layerKey: _._s,
       Layer: s.Ay
-    }) : t === m.a3B.AGREEMENTS ? (0, i.qfG)(e => (0, r.jsx)(f.default, function(e) {
+    }) : t === f.a3B.AGREEMENTS ? (0, i.qfG)(e => (0, r.jsx)(m.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -63,7 +63,7 @@ let E = {
       modalKey: _.i$,
       onCloseRequest: b.FX,
       dismissable: false
-    }) : t === m.a3B.REQUIRE_SAFETY_FLOWS ? (0, a.B8)(e => {
+    }) : t === f.a3B.REQUIRE_SAFETY_FLOWS ? (0, a.B8)(e => {
       let {
         closeLayer: t
       } = e;

@@ -1,4 +1,4 @@
-/** Chunk was on 59024 **/
+/** Chunk was on 47147 **/
 /** chunk id: 71862, original params: e,t,n (module,exports,require) **/
 module.exports = {
   AS: "item_caf372",

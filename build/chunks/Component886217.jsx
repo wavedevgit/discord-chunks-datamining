@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 886217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ok: () => f,
+  Ok: () => m,
   _B: () => g
 });
 var Chunk627968 = require("./627968.js"),
@@ -37,7 +37,7 @@ function g() {
     label: h.intl.string(h.t.L2mlUb)
   }]
 }
-let f = e => {
+let m = e => {
   let {
     questId: t,
     selectedSections: n

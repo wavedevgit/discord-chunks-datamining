@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 57978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A0: () => en,
@@ -62,7 +62,7 @@ let ei = () => {
   let {
     analyticsLocations: e
   } = (0, d.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, p.A)({
-    scrollPosition: C._F.TRY_IT_OUT,
+    scrollPosition: x._F.TRY_IT_OUT,
     analyticsLocations: e
   }), r = (0, b.O9)(), i = (0, a.useCallback)(() => {
     (0, g.openUserSettings)(m.X.PROFILE_PANEL, {
@@ -73,8 +73,8 @@ let ei = () => {
     }))
   }, [e]), l = (0, A.TM)(), et = f.A.getArticleURL(O.MVz.REFERRAL_PROGRAM), en = {
     premiumGroup: {
-      thumbnail: N,
-      assetUrl: N
+      thumbnail: y,
+      assetUrl: y
     },
     serverProfiles: {
       thumbnail: j,
@@ -140,8 +140,8 @@ let ei = () => {
     videoUrl: en.customThemes.assetUrl
   }, es = {
     name: "displayNameStyles",
-    title: T.intl.string(y.default.ABtBDQ),
-    description: T.intl.string(y.default.MFNXZh),
+    title: T.intl.string(N.default.ABtBDQ),
+    description: T.intl.string(N.default.MFNXZh),
     descriptionCta: T.intl.string(T.t.jVcuVY),
     previewImage: en.displayNameStyles.thumbnail,
     onClick: i,
@@ -149,10 +149,10 @@ let ei = () => {
     videoUrl: en.displayNameStyles.assetUrl
   }, ea = {
     name: "premiumGroup",
-    title: T.intl.formatToPlainString(x.default.VFEDDB, {
+    title: T.intl.formatToPlainString(C.default.VFEDDB, {
       premiumGroupProductName: (0, E.DP)()
     }),
-    description: T.intl.formatToPlainString(x.default.WudmR3, {
+    description: T.intl.formatToPlainString(C.default.WudmR3, {
       totalSeats: E.aw,
       premiumGroupProductName: (0, E.DP)()
     }),

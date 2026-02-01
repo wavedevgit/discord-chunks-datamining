@@ -1,4 +1,4 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 357864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -11,16 +11,16 @@ var Chunk158954 = require("./158954.js"),
   Chunk638718 = require("./638718.js");
 
 function o() {
-  return (0, i.jsxs)("div", {
-    className: r.k,
-    children: [(0, i.jsx)("img", {
-      className: r.N,
+  return (0, r.jsxs)("div", {
+    className: s.k,
+    children: [(0, r.jsx)("img", {
+      className: s.N,
       src: a,
       alt: ""
-    }), (0, i.jsx)(l.EYj, {
+    }), (0, r.jsx)(l.EYj, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: s.intl.string(s.t.H217fV)
+      children: i.intl.string(i.t.H217fV)
     })]
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 296216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => h,
-  J: () => p
+  F: () => p,
+  J: () => h
 });
 var Chunk205369 = require("./205369.js"),
   Chunk22174 = require("./22174.js"),
@@ -14,14 +14,14 @@ var Chunk205369 = require("./205369.js"),
   Chunk652215 = require("./652215.js");
 let d = "DRAGGABLE_USER";
 
-function h(e) {
+function p(e) {
   return (0, r.T)(d, {
     canDrop(e) {
       var t, n;
       let {
         channel: r
-      } = e, l = r.getGuildId(), i = null != (t = null == (n = s.A.getGuild(l)) ? true : n.maxVideoChannelUsers) ? t : false, d = c.Ay.countVoiceStatesForChannel(r.id), h = null != l && o.A.hasVideo(r.id) && i > 0 && d >= i + 1;
-      return a.A.can(u.xBc.MOVE_MEMBERS, r) && a.A.can(u.xBc.CONNECT, r) && !h
+      } = e, l = r.getGuildId(), i = null != (t = null == (n = s.A.getGuild(l)) ? true : n.maxVideoChannelUsers) ? t : false, d = c.Ay.countVoiceStatesForChannel(r.id), p = null != l && o.A.hasVideo(r.id) && i > 0 && d >= i + 1;
+      return a.A.can(u.xBc.MOVE_MEMBERS, r) && a.A.can(u.xBc.CONNECT, r) && !p
     },
     drop(e, t) {
       let {
@@ -35,7 +35,7 @@ function h(e) {
   }))(e)
 }
 
-function p(e) {
+function h(e) {
   return (0, l.I)(d, {
     canDrag(e) {
       let {

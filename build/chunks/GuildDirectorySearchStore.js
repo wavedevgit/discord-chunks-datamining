@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 938764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -43,8 +43,8 @@ function c(e, t) {
 }
 let u = [],
   d = {},
-  h = {};
-class p extends(r = Chunk311907.Ay.Store) {
+  p = {};
+class h extends(r = Chunk311907.Ay.Store) {
   getSearchState(e) {
     var t;
     return null != (t = d[e]) ? t : {
@@ -54,16 +54,16 @@ class p extends(r = Chunk311907.Ay.Store) {
   }
   getSearchResults(e, t) {
     var n, r, l;
-    return null != (n = null == (l = h[e]) || null == (r = l[t]) ? true : r.results) ? n : u
+    return null != (n = null == (l = p[e]) || null == (r = l[t]) ? true : r.results) ? n : u
   }
   shouldFetch(e, t) {
     var n, r;
-    let l = null == (r = h[e]) || null == (n = r[t]) ? true : n.lastSearchedAt;
+    let l = null == (r = p[e]) || null == (n = r[t]) ? true : n.lastSearchedAt;
     return null == l || Date.now() - l > 12e4
   }
 }
-a(p, "displayName", "GuildDirectorySearchStore");
-let g = new p(Chunk73153.h, {
+a(h, "displayName", "GuildDirectorySearchStore");
+let g = new h(Chunk73153.h, {
   GUILD_DIRECTORY_SEARCH_START: function(e) {
     let {
       channelId: t,
@@ -87,7 +87,7 @@ let g = new p(Chunk73153.h, {
     r.forEach(e => {
       let t = (0, s.mR)(e);
       l.push(t)
-    }), h[t] = c(o({}, h[t]), {
+    }), p[t] = c(o({}, p[t]), {
       [n]: {
         results: (0, s.DN)(l),
         lastSearchedAt: Date.now()
@@ -128,10 +128,10 @@ let g = new p(Chunk73153.h, {
       guildId: r
     } = e, l = null == (t = d[n]) ? true : t.mostRecentQuery;
     if (null == l) return;
-    let i = h[n][l];
+    let i = p[n][l];
     if (null == i) return;
     let s = i.results.filter(e => e.guildId !== r);
-    h[n] = c(o({}, h[n]), {
+    p[n] = c(o({}, p[n]), {
       [d[n].mostRecentQuery]: c(o({}, i), {
         results: s
       })

@@ -1,4 +1,4 @@
-/** Chunk was on 20725 **/
+/** Chunk was on 97246 **/
 /** chunk id: 251637, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk827734 = require("./827734.js"),
   Chunk397927 = require("./397927.js"),
   Chunk890687 = require("./890687.js"),
@@ -16,45 +16,45 @@ let d = function(e) {
   let {
     className: t,
     color: n = i.A.colors.WHITE,
-    quest: r,
+    quest: l,
     isInventory: d
-  } = e, p = (0, o.aC)(e.quest), {
-    percentComplete: f,
-    completedRatioDisplay: m
-  } = (0, o.O9)(r);
-  return !d && p.length > 0 ? (0, l.jsx)(u.A, {
-    children: p.at(0)
-  }) : (0, l.jsxs)("div", {
-    className: s()(c.iE, t),
+  } = e, _ = (0, s.aC)(e.quest), {
+    percentComplete: p,
+    completedRatioDisplay: b
+  } = (0, s.O9)(l);
+  return !d && _.length > 0 ? (0, r.jsx)(u.A, {
+    children: _.at(0)
+  }) : (0, r.jsxs)("div", {
+    className: o()(c.iE, t),
     style: {
       color: n.css
     },
-    children: [(0, l.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: c.O,
-      children: [(0, l.jsx)(a.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         className: c.Df,
         color: "none",
-        children: m
-      }), (0, l.jsx)("div", {
+        children: b
+      }), (0, r.jsx)("div", {
         className: c.Cj,
         style: {
-          width: "".concat(100 - f, "%")
+          width: "".concat(100 - p, "%")
         }
       })]
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: c.hr,
       role: "progressbar",
-      "aria-valuenow": f,
-      children: (0, l.jsx)("div", {
+      "aria-valuenow": p,
+      children: (0, r.jsx)("div", {
         className: c.SX,
         style: {
-          width: "".concat(f, "%")
+          width: "".concat(p, "%")
         }
       })
-    }), p.length > 0 && (0, l.jsx)(u.A, {
+    }), _.length > 0 && (0, r.jsx)(u.A, {
       isInventory: d,
-      children: p.at(0)
+      children: _.at(0)
     })]
   })
 }

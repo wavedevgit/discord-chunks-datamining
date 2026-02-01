@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 508971, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -33,8 +33,8 @@ function p(e) {
     h = s ? "text-default" : "text-muted",
     E = a()(n),
     O = null != A && s,
-    C = O ? o.DUT : "div";
-  return (0, r.jsxs)(C, {
+    x = O ? o.DUT : "div";
+  return (0, r.jsxs)(x, {
     className: l()(_.kL, O && _.b),
     onClick: () => {
       O && A()

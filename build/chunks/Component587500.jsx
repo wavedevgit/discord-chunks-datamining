@@ -150,7 +150,7 @@ function es(e) {
       label: z.intl.string(z.t.WAI6xu),
       className: Z.hP,
       onClick: () => {
-        (0, V.X)(s, V.O.DISCONNECT), j.default.track(Y.HAw.RING_CALL_DECLINED, J({
+        (0, F.X)(s, F.O.DISCONNECT), j.default.track(Y.HAw.RING_CALL_DECLINED, J({
           location: s,
           guild_id: n.guild_id
         }, (0, h.dI)(n))), u.A.stopRinging(n.id)
@@ -161,7 +161,7 @@ function es(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(F.A, {
+        return (0, r.jsx)(V.A, {
           onClose: t,
           onInteraction: (0, B.s)("VideoDeviceMenu", s, {
             entrypoint: H.GK.CARET
@@ -194,7 +194,7 @@ function es(e) {
           onCameraUnavailable: T.A,
           onChange: () => {
             var e;
-            (0, V.X)(s, V.O.JOIN_VIDEO_CALL), j.default.track(Y.HAw.RING_CALL_ACCEPTED, J({
+            (0, F.X)(s, F.O.JOIN_VIDEO_CALL), j.default.track(Y.HAw.RING_CALL_ACCEPTED, J({
               location: s,
               guild_id: n.guild_id
             }, (0, h.dI)(n))), f.default.selectVoiceChannel(n.id, true), (0, b.uh)(null != (e = n.guild_id) ? e : Y.ME, n.id)
@@ -227,9 +227,9 @@ function el(e) {
     id: A.id,
     icon: A.icon,
     size: ea
-  }) : null, S = null != (t = (0, g.Y)(h, ea, true)) ? t : I, T = (0, E.Ay)(h), [C, N] = (0, l.yK)([L.A], () => [L.A.supports(K.O5.VIDEO), Object.keys(L.A.getVideoDevices()).length]), w = null != A ? "".concat(T, ", ").concat(A.name) : T, x = (0, l.bG)([M.A], () => M.A.isFocused()), j = (0, l.bG)([U.A], () => U.A.getMode(h.id)), F = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.Y)(h, ea, true)) ? t : I, T = (0, E.Ay)(h), [C, N] = (0, l.yK)([L.A], () => [L.A.supports(K.O5.VIDEO), Object.keys(L.A.getVideoDevices()).length]), w = null != A ? "".concat(T, ", ").concat(A.name) : T, x = (0, l.bG)([M.A], () => M.A.isFocused()), j = (0, l.bG)([U.A], () => U.A.getMode(h.id)), V = i.useCallback(e => {
     null != e.top && null != e.left && d.A.move(e.left, e.top)
-  }, []), V = (0, c.zhh)({
+  }, []), F = (0, c.zhh)({
     value: +!!O,
     config: ee(J({}, s.config.stiff), {
       clamp: true
@@ -299,7 +299,7 @@ function el(e) {
       },
       maxX: ec.width,
       maxY: ec.height,
-      onDragEnd: F,
+      onDragEnd: V,
       dragAnywhere: true,
       children: (0, r.jsx)(c.NPJ, {
         theme: O ? Y.NJ8.DARK : true,
@@ -308,9 +308,9 @@ function el(e) {
             [Z.mY]: O
           }, e),
           style: ee(J({}, n), {
-            minWidth: V.value.interpolate([0, 1], [el.width, er]),
-            minHeight: V.value.interpolate([0, 1], [el.height, ei]),
-            translateX: V.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
+            minWidth: F.value.interpolate([0, 1], [el.width, er]),
+            minHeight: F.value.interpolate([0, 1], [el.height, ei]),
+            translateX: F.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
           }),
           children: [O ? (0, r.jsx)(eo, {
             header: $

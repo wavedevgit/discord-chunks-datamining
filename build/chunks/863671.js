@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 863671, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 863671, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   $: () => O
 });
@@ -16,38 +16,38 @@ var Chunk64700 = require("./64700.js"),
   Chunk766761 = require("./766761.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
-    buildLayout: () => [c.I, A.A],
+let g = (0, Chunk419954.zZ)(Chunk780964.X.SESSIONS_CATEGORY, {
+    buildLayout: () => [A.I, S.A],
     initialize: () => ((0, r.GY)(), () => {
       (0, r.ZQ)()
     }),
     useInlineNotice: function() {
       return n.useMemo(() => ({
-        type: u.W.STRONGLY_DISCOURAGED_CUSTOM,
+        type: a.W.STRONGLY_DISCOURAGED_CUSTOM,
         notice: T.jH
       }), [])
     }
   }),
-  g = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
+  _ = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
     usePredicate: () => !(0, d.dk)("LegacySessionsPanel"),
-    useTitle: () => _.intl.string(_.t["+1h0k/"]),
+    useTitle: () => E.intl.string(E.t["+1h0k/"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk119762.Ay,
     buildLayout: () => []
   }),
   I = (0, Chunk419954.t_)(Chunk780964.X.SESSIONS_PANEL, {
     usePredicate: () => (0, d.dk)("SessionsPanel"),
-    useTitle: () => _.intl.string(_.t["+1h0k/"]),
+    useTitle: () => E.intl.string(E.t["+1h0k/"]),
     hideInStreamerMode: true,
-    buildLayout: () => [E]
+    buildLayout: () => [g]
   }),
   O = (0, Chunk419954.i4)(Chunk780964.X.SESSIONS_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(_.t["+1h0k/"]),
-    getLegacySearchKey: () => (0, d.WJ)("SessionsPanel") ? true : S.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
+    useTitle: () => E.intl.string(E.t["+1h0k/"]),
+    getLegacySearchKey: () => (0, d.WJ)("SessionsPanel") ? true : c.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     icon: Chunk934551.LaptopPhoneIcon,
     trailing: {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: () => [s.M.AUTH_SESSIONS_NEW]
     },
-    buildLayout: () => (0, d.WJ)("SessionsPanel") ? [I] : [g]
+    buildLayout: () => (0, d.WJ)("SessionsPanel") ? [I] : [_]
   })

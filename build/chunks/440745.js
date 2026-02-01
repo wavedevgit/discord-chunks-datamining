@@ -135,17 +135,17 @@
   }
 
   function m(e, t, n, r) {
-    var i = [V(a(e).toString(16)), V(a(t).toString(16)), V(a(n).toString(16))];
+    var i = [F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16))];
     return r && i[0].charAt(0) == i[0].charAt(1) && i[1].charAt(0) == i[1].charAt(1) && i[2].charAt(0) == i[2].charAt(1) ? i[0].charAt(0) + i[1].charAt(0) + i[2].charAt(0) : i.join("")
   }
 
   function g(e, t, n, r, i) {
-    var o = [V(a(e).toString(16)), V(a(t).toString(16)), V(a(n).toString(16)), V(H(r))];
+    var o = [F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16)), F(H(r))];
     return i && o[0].charAt(0) == o[0].charAt(1) && o[1].charAt(0) == o[1].charAt(1) && o[2].charAt(0) == o[2].charAt(1) && o[3].charAt(0) == o[3].charAt(1) ? o[0].charAt(0) + o[1].charAt(0) + o[2].charAt(0) + o[3].charAt(0) : o.join("")
   }
 
   function E(e, t, n, r) {
-    return [V(H(r)), V(a(e).toString(16)), V(a(t).toString(16)), V(a(n).toString(16))].join("")
+    return [F(H(r)), F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16))].join("")
   }
 
   function y(e, t) {
@@ -641,7 +641,7 @@
 
   function j(e, n) {
     G(e) && (e = "100%");
-    var r = F(e);
+    var r = V(e);
     return (e = o(n, s(0, parseFloat(e))), r && (e = parseInt(e * n, 10) / 100), 1e-6 > t.abs(e - n)) ? 1 : e % n / parseFloat(n)
   }
 
@@ -657,11 +657,11 @@
     return "string" == typeof e && false != e.indexOf(".") && 1 === parseFloat(e)
   }
 
-  function F(e) {
+  function V(e) {
     return "string" == typeof e && false != e.indexOf("%")
   }
 
-  function V(e) {
+  function F(e) {
     return 1 == e.length ? "0" + e : "" + e
   }
 

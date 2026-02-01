@@ -1,7 +1,7 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 241847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,31 +20,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk78875 = require("./78875.js");
 
-function A(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -52,11 +52,11 @@ function b(e, t) {
   }), e
 }
 
-function E(e) {
+function v(e) {
   let {
     lobbyId: t,
     connectionTypeText: n,
-    closePopout: l
+    closePopout: r
   } = e, a = (0, i.cf)([u.A], () => ({
     connectionState: u.A.getConnectionState(t),
     hostname: u.A.getHostname(t),
@@ -65,25 +65,25 @@ function E(e) {
     pings: u.A.getPings(),
     outboundLossRate: u.A.getOutboundLossRate(t)
   }));
-  return (0, r.jsx)(g.A, b(A({}, a), {
-    closePopout: l,
+  return (0, l.jsx)(f.A, y(_({}, a), {
+    closePopout: r,
     connectionTypeText: n
   }))
 }
 
-function v(e) {
+function E(e) {
   let {
     closePopout: t,
     connectionTypeText: n
-  } = e, l = (0, i.cf)([s.A], () => ({
-    connectionState: s.A.getState(),
-    hostname: s.A.getHostname(),
-    averagePing: s.A.getAveragePing(),
-    lastPing: s.A.getLastPing(),
-    outboundLossRate: s.A.getOutboundLossRate(),
-    pings: s.A.getPings()
+  } = e, r = (0, i.cf)([o.A], () => ({
+    connectionState: o.A.getState(),
+    hostname: o.A.getHostname(),
+    averagePing: o.A.getAveragePing(),
+    lastPing: o.A.getLastPing(),
+    outboundLossRate: o.A.getOutboundLossRate(),
+    pings: o.A.getPings()
   }));
-  return (0, r.jsx)(g.A, b(A({}, l), {
+  return (0, l.jsx)(f.A, y(_({}, r), {
     closePopout: t,
     connectionTypeText: n
   }))
@@ -93,67 +93,67 @@ function O(e) {
   let {
     channelId: t,
     isOverlay: n,
-    lobbyId: l,
+    lobbyId: r,
     closePopout: i
   } = e, a = (0, p.k)({
     channelId: t
-  }) ? h.intl.string(h.t["3BogKe"]) : h.intl.string(h.t.ETIVvg);
-  return n ? (0, r.jsx)(E, {
-    lobbyId: l,
+  }) ? A.intl.string(A.t["3BogKe"]) : A.intl.string(A.t.ETIVvg);
+  return n ? (0, l.jsx)(v, {
+    lobbyId: r,
     closePopout: i,
     connectionTypeText: a
-  }) : (0, r.jsx)(v, {
+  }) : (0, l.jsx)(E, {
     closePopout: i,
     connectionTypeText: a
   })
 }
 
-function x(e) {
+function C(e) {
   let t = (0, i.bG)([c.A], () => c.A.hasVideo(e.channelId)),
-    [n, s] = l.useState(_.Rj.RTC_DEBUG_PANEL),
-    u = (0, o.GV)(),
-    p = l.useMemo(() => {
+    [n, o] = r.useState(g.Rj.RTC_DEBUG_PANEL),
+    u = (0, s.GV)(),
+    p = r.useMemo(() => {
       switch (n) {
-        case _.Rj.RTC_DEBUG_PANEL:
-          return (0, r.jsx)(O, A({}, e));
-        case _.Rj.RTC_SECURE_FRAMES:
-          return (0, r.jsx)(m.A, {
+        case g.Rj.RTC_DEBUG_PANEL:
+          return (0, l.jsx)(O, _({}, e));
+        case g.Rj.RTC_SECURE_FRAMES:
+          return (0, l.jsx)(m.A, {
             channelId: e.channelId
           })
       }
     }, [e, n]);
-  l.useEffect(() => {
+  r.useEffect(() => {
     (0, d.Hg)({
       channelId: e.channelId,
       selectedTab: n
     })
   }, [e.channelId, n]);
-  let g = (0, f.c)();
-  return l.useEffect(() => {
-    g && s(_.Rj.RTC_DEBUG_PANEL)
-  }, [g]), (0, r.jsxs)("div", {
-    className: y.kL,
-    children: [(0, r.jsx)(a.Heading, {
-      className: y.DD,
+  let f = (0, h.c)();
+  return r.useEffect(() => {
+    f && o(g.Rj.RTC_DEBUG_PANEL)
+  }, [f]), (0, l.jsxs)("div", {
+    className: b.kL,
+    children: [(0, l.jsx)(a.Heading, {
+      className: b.DD,
       variant: "heading-lg/bold",
       color: "text-strong",
-      children: t ? h.intl.string(h.t.IlHdW8) : h.intl.string(h.t.WsOisp)
-    }), (0, r.jsxs)(a.VQ0, {
-      className: y.vR,
+      children: t ? A.intl.string(A.t.IlHdW8) : A.intl.string(A.t.WsOisp)
+    }), (0, l.jsxs)(a.VQ0, {
+      className: b.vR,
       selectedItem: n,
       type: "top",
       look: "brand",
-      onItemSelect: s,
-      children: [(0, r.jsx)(a.VQ0.Item, {
-        id: _.Rj.RTC_DEBUG_PANEL,
-        className: y.YU,
-        children: h.intl.string(h.t.MBY1Pm)
-      }), g ? null : (0, r.jsx)(a.VQ0.Item, {
-        id: _.Rj.RTC_SECURE_FRAMES,
-        className: y.YU,
-        children: h.intl.string(h.t.zC6o3s)
+      onItemSelect: o,
+      children: [(0, l.jsx)(a.VQ0.Item, {
+        id: g.Rj.RTC_DEBUG_PANEL,
+        className: b.YU,
+        children: A.intl.string(A.t.MBY1Pm)
+      }), f ? null : (0, l.jsx)(a.VQ0.Item, {
+        id: g.Rj.RTC_SECURE_FRAMES,
+        className: b.YU,
+        children: A.intl.string(A.t.zC6o3s)
       })]
-    }), (0, r.jsx)(a.VQ0.Panel, {
+    }), (0, l.jsx)(a.VQ0.Panel, {
       id: n,
       "aria-labelledby": u,
       children: p
@@ -161,14 +161,14 @@ function x(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   return (0, p.k)({
     channelId: e.channelId
-  }) ? (0, r.jsx)(x, A({}, e)) : (0, r.jsx)("div", {
-    className: y.L3,
-    children: (0, r.jsx)("section", {
-      className: y.J8,
-      children: (0, r.jsx)(O, A({}, e))
+  }) ? (0, l.jsx)(C, _({}, e)) : (0, l.jsx)("div", {
+    className: b.L3,
+    children: (0, l.jsx)("section", {
+      className: b.J8,
+      children: (0, l.jsx)(O, _({}, e))
     })
   })
 }

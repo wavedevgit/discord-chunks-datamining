@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 977851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V: () => v
@@ -23,15 +23,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function j(e) {
+function x(e) {
   let t = (0, o.bG)([f.A], () => !(0, a.isEmpty)(f.A.getTypingUsers(e)), [e]),
     n = (0, o.bG)([g.A], () => g.A.getVoiceChannelId() === e, [e]),
     {
       unreadCount: r,
       mentionCount: l
-    } = (0, o.cf)([p.Ay], () => ({
-      unreadCount: p.Ay.getUnreadCount(e),
-      mentionCount: p.Ay.getMentionCount(e)
+    } = (0, o.cf)([h.Ay], () => ({
+      unreadCount: h.Ay.getUnreadCount(e),
+      mentionCount: h.Ay.getMentionCount(e)
     }), [e]);
   return {
     unreadCount: r,
@@ -41,7 +41,7 @@ function j(e) {
   }
 }
 
-function x(e) {
+function _(e) {
   let {
     className: t,
     channelId: n
@@ -50,7 +50,7 @@ function x(e) {
     mentionCount: i,
     isTyping: s,
     voiceChannelIsSelected: a
-  } = j(n);
+  } = x(n);
   return (0, r.jsx)(A.A, {
     className: t,
     unreadCount: l,
@@ -65,7 +65,7 @@ function v(e) {
       channelId: n,
       className: i,
       showingClassName: a,
-      onClick: p,
+      onClick: h,
       inPopout: g,
       showRequestToSpeakSidebar: f,
       toggleRequestToSpeakSidebar: A
@@ -104,7 +104,7 @@ function v(e) {
         unreadCount: t,
         mentionCount: n,
         isTyping: r
-      } = j(e), [i, s] = l.useState(false);
+      } = x(e), [i, s] = l.useState(false);
       return l.useEffect(() => {
         s(t > 0);
         let e = setTimeout(() => {
@@ -120,13 +120,13 @@ function v(e) {
       }
     }(n),
     w = l.useCallback(() => {
-      (0, h.X)(E, h.O.CHAT, !I), null == p || p(), !I && f && (null == A || A()), c.A.updateChatOpen(n, !I, "toggle chat button")
-    }, [n, I, p, f, A, E]),
+      (0, p.X)(E, p.O.CHAT, !I), null == h || h(), !I && f && (null == A || A()), c.A.updateChatOpen(n, !I, "toggle chat button")
+    }, [n, I, h, f, A, E]),
     R = l.useCallback(e => {
       let {
         className: t
       } = e;
-      return (0, r.jsx)(x, {
+      return (0, r.jsx)(_, {
         className: t,
         channelId: n
       })
@@ -153,10 +153,10 @@ function v(e) {
       clearTimeout(e)
     }
   }, [L]);
-  let k = [t = g && C ? _.intl.string(_.t.DPgc5h) : I ? _.intl.string(_.t.nthdxB) : _.intl.string(_.t["5KxXrK"])];
-  return P > 0 && k.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
+  let k = [t = g && C ? j.intl.string(j.t.DPgc5h) : I ? j.intl.string(j.t.nthdxB) : j.intl.string(j.t["5KxXrK"])];
+  return P > 0 && k.push(j.intl.formatToPlainString(j.t["3l1GOx"], {
     mentionCount: P
-  })), T > 0 && k.push(_.intl.string(_.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
+  })), T > 0 && k.push(j.intl.string(j.t.x5zAGZ)), (0, r.jsx)(y.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

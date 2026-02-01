@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 379897, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 379897, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   j: () => d
 });
@@ -14,6 +14,6 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.ENABLE_CUSTOM_CURSOR, {
   useTitle: () => o.intl.string(o.t["+Isihb"]),
   useSubtitle: () => o.intl.string(o.t.nNZ1Tz),
   useValue: () => (0, n.bG)([s.A], () => s.A.enableCustomCursor),
-  setValue: e => (0, l.ts)(e),
+  setValue: t => (0, l.ts)(t),
   usePredicate: () => (0, r.t)("EnableCustomCursorSetting")
 })

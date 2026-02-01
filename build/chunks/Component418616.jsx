@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 418616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,10 +16,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk678042 = require("./678042.js");
 
-function f(e) {
+function m(e) {
   let {
     loadId: t
-  } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), f = u.A.useField("languageCode"), m = i.useCallback(e => {
+  } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), m = u.A.useField("languageCode"), f = i.useCallback(e => {
     u.A.setState({
       languageCode: e
     });
@@ -43,9 +43,9 @@ function f(e) {
       selectionMode: "single",
       label: h.intl.string(h.t.Ng5cTK),
       hideLabel: true,
-      value: null != f ? f : n,
+      value: null != m ? m : n,
       options: A,
-      onSelectionChange: m
+      onSelectionChange: f
     })
   })
 }

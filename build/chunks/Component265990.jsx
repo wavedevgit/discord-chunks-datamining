@@ -172,8 +172,8 @@ let k = function(e) {
     }), e
   }, [X, Q]);
   (0, p.A)(Z, X);
-  let $ = i.useMemo(() => R === N.m3P.ALL && H && Q.some(e => e.giftIntentType === T.np.FRIEND_ANNIVERSARY) ? Q.filter(e => e.giftIntentType === T.np.FRIEND_ANNIVERSARY).length : 0, [Q, R, H]),
-    J = i.useMemo(() => {
+  let J = i.useMemo(() => R === N.m3P.ALL && H && Q.some(e => e.giftIntentType === T.np.FRIEND_ANNIVERSARY) ? Q.filter(e => e.giftIntentType === T.np.FRIEND_ANNIVERSARY).length : 0, [Q, R, H]),
+    $ = i.useMemo(() => {
       switch (R) {
         case N.m3P.PENDING:
           let e = [],
@@ -187,7 +187,7 @@ let k = function(e) {
             let e = [];
             return Q.forEach(t => {
               t.giftIntentType === T.np.FRIEND_ANNIVERSARY && e.push(t)
-            }), e.sort((e, t) => m.A.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, f.ZD), Q]
+            }), e.sort((e, t) => f.A.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, m.ZD), Q]
           }
         default:
           return [Q]
@@ -202,7 +202,7 @@ let k = function(e) {
       Y(e => !e)
     }, []),
     ei = i.useCallback(e => {
-      let n = J[e],
+      let n = $[e],
         i = function(e, t, n, r) {
           switch (e) {
             case N.m3P.ONLINE:
@@ -254,8 +254,8 @@ let k = function(e) {
           title: i
         })
       }, i)
-    }, [J, R, t, et, en]),
-    el = i.useCallback(e => R === N.m3P.ALL && 0 === e && H && $ > f.ZD ? (0, r.jsx)("div", {
+    }, [$, R, t, et, en]),
+    el = i.useCallback(e => R === N.m3P.ALL && 0 === e && H && J > m.ZD ? (0, r.jsx)("div", {
       className: x.Nf,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.tN5 : a.abt,
@@ -265,12 +265,12 @@ let k = function(e) {
         onClick: er,
         "aria-label": j.intl.string(F ? j.t["6MwJo/"] : j.t["37C26f"])
       })
-    }) : null, [R, $, F, er, H]);
+    }) : null, [R, J, F, er, H]);
   if (i.useEffect(() => {
       R === N.m3P.ALL && (0, g.Ad)()
     }, [R]), i.useEffect(() => {
       Y(false)
-    }, [R, $]), 0 === Q.length && "" === V[R]) return (0, r.jsx)(M, {
+    }, [R, J]), 0 === Q.length && "" === V[R]) return (0, r.jsx)(M, {
     section: R,
     showSpamCta: z
   });
@@ -288,7 +288,7 @@ let k = function(e) {
           onClear: q
         })
       }), (0, r.jsx)(I.A, {
-        rows: J,
+        rows: $,
         renderRow: K,
         renderSection: ei,
         sectionFilter: R,

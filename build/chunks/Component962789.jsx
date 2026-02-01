@@ -1,8 +1,8 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 962789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N,
-  T: () => y
+  A: () => y,
+  T: () => N
 }), require("./638769.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk419205 = require("./419205.js");
 
-function C(e) {
+function x(e) {
   let {
     applications: t
   } = e, n = i.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), l = i.useMemo(() => {
@@ -113,7 +113,7 @@ function C(e) {
   })
 }
 
-function x() {
+function C() {
   let e = u.Zk.useSetting();
   return (0, r.jsx)(A.h, {
     setting: b.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -176,12 +176,12 @@ function I(e) {
   let {
     applications: t
   } = e;
-  return t.length > 0 ? (0, r.jsx)(C, {
+  return t.length > 0 ? (0, r.jsx)(x, {
     applications: t
   }) : (0, r.jsx)(T, {})
 }
 
-function y() {
+function N() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
@@ -191,7 +191,7 @@ function y() {
   })
 }
 
-function N() {
+function y() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
@@ -201,7 +201,7 @@ function N() {
       children: [(0, r.jsx)(I, {
         applications: t
       }), t.length > 0 && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(x, {}), (0, r.jsx)("div", {
+        children: [(0, r.jsx)(C, {}), (0, r.jsx)("div", {
           className: O.yF
         }), (0, r.jsx)(S, {})]
       })]

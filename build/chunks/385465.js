@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 385465, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 385465, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   d: () => d
 });
@@ -13,6 +13,6 @@ var Chunk311907 = require("./311907.js"),
 let d = (0, Chunk419954.zD)(Chunk780964.X.DESKTOP_NOTIFICATIONS, {
   useTitle: () => o.intl.string(o.t["/0WCll"]),
   useSubtitle: () => o.intl.string(o.t.wF9ih3),
-  useValue: () => (0, n.bG)([r.A], () => r.A.getDesktopType()) !== u.nRU.NEVER,
-  setValue: e => l.default.setDesktopType(e ? u.nRU.ALL : u.nRU.NEVER)
+  useValue: () => (0, n.bG)([r.A], () => r.A.getDesktopType()) !== a.nRU.NEVER,
+  setValue: t => l.default.setDesktopType(t ? a.nRU.ALL : a.nRU.NEVER)
 })

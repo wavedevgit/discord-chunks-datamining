@@ -1,11 +1,11 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 46673 **/
 /** chunk id: 137207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E5: () => y,
   G6: () => p,
   H0: () => P,
   Vj: () => R,
-  W5: () => C,
+  W5: () => m,
   nV: () => S,
   s6: () => N,
   wu: () => f
@@ -112,7 +112,7 @@ async function P(e) {
   return Array.isArray(t.body) ? t.body.map(O) : []
 }
 async function y(e, t, n) {
-  a.A.can(_.xBc.MANAGE_MESSAGES, t) && await r.Bo.post({
+  o.A.can(_.xBc.MANAGE_MESSAGES, t) && await r.Bo.post({
     url: _.Rsh.GUILD_AUTOMOD_ALERT_ACTION(t.guild_id),
     body: {
       message_id: e,
@@ -123,9 +123,9 @@ async function y(e, t, n) {
   })
 }
 
-function C(e, t, n) {
-  let i = o.A.getGuild(e);
-  null != i && a.A.can(_.xBc.MANAGE_GUILD, i) && (0, d.rI)(() => {
+function m(e, t, n) {
+  let i = a.A.getGuild(e);
+  null != i && o.A.can(_.xBc.MANAGE_GUILD, i) && (0, d.rI)(() => {
     (0, l.zV)(_.HAw.GUILD_AUTOMOD_FEEDBACK, {
       feedback_type: u.Gb.MENTION_RAID_REMOVE_RESTRICTION,
       decision_id: t

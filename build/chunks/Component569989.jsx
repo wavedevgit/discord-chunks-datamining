@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 569989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -13,25 +13,25 @@ var Chunk503698 = require("./503698.js"),
 function o(e) {
   let t, {
     className: n,
-    children: l,
+    children: r,
     verified: o,
     roleColor: c,
     roleName: u
   } = e;
-  return t = o ? (0, r.jsx)(s.A, {
+  return t = o ? (0, l.jsx)(a.A, {
     size: 12,
     color: c,
-    className: a.TS
-  }) : (0, r.jsx)("div", {
-    className: a.yY,
+    className: s.TS
+  }) : (0, l.jsx)("div", {
+    className: s.yY,
     style: {
       backgroundColor: c
     }
-  }), (0, r.jsxs)("div", {
-    className: i()(n, a.JC),
+  }), (0, l.jsxs)("div", {
+    className: i()(n, s.JC),
     style: {
       "--custom-role-label-color": c
     },
-    children: [t, u, l]
+    children: [t, u, r]
   })
 }

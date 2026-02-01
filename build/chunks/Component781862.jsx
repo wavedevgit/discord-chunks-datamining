@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 781862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -15,7 +15,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ let f = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => h.intl.string(h.t.K50GHd),
+    getName: () => p.intl.string(p.t.K50GHd),
     handler: (e, t) => (0, o.uh)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
@@ -62,12 +62,12 @@ let f = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => h.intl.string(h.t.emRpdS),
+    getName: () => p.intl.string(p.t.emRpdS),
     handler: (e, t) => (0, i.mMO)(async () => {
       let {
         default: l
       } = await n.e("6759").then(n.bind(n, 953722));
-      return n => (0, r.jsx)(l, g(p({}, n), {
+      return n => (0, r.jsx)(l, g(h({}, n), {
         directoryGuildName: e.name,
         directoryGuildId: e.id,
         directoryChannelId: t.id
@@ -78,12 +78,12 @@ let f = [{
     renderIcon: e => (0, r.jsx)(i.DpX, {
       className: e
     }),
-    getName: () => h.intl.string(h.t.MJQOuJ),
+    getName: () => p.intl.string(p.t.MJQOuJ),
     handler: (e, t) => (0, i.mMO)(async () => {
       let {
         default: l
       } = await Promise.all([n.e("43600"), n.e("42821")]).then(n.bind(n, 234355));
-      return n => (0, r.jsx)(l, g(p({}, n), {
+      return n => (0, r.jsx)(l, g(h({}, n), {
         guild: e,
         channel: t,
         source: d.PE1.HUB_SIDEBAR
@@ -102,15 +102,15 @@ let f = [{
           getName: c,
           handler: u,
           renderIcon: d
-        } = e, h = "".concat(l, "-").concat(t.id);
+        } = e, p = "".concat(l, "-").concat(t.id);
         return (0, r.jsx)(s.G, {
-          id: h,
+          id: p,
           renderIcon: d,
           text: c(),
           selected: i && "JOIN_SERVERS" === l,
           onClick: null != n ? () => u(t, n) : true,
           trailing: "JOIN_SERVERS" === l && o > 0 ? (0, a.w)(o) : null
-        }, h)
+        }, p)
       })
     })
   }

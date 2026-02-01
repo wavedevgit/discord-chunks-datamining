@@ -1,7 +1,7 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 427160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => g
 }), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk451988 = require("./451988.js"),
@@ -18,71 +18,71 @@ var Chunk64700 = require("./64700.js"),
 require("./824217.js");
 let m = 1e3 / 60;
 
-function _(e, t, n, _) {
-  let h = (0, a.rdh)(i.A.unsafe_rawColors.BRAND_500).hex(),
-    y = (0, a.rdh)(i.A.unsafe_rawColors.BLACK).hex(),
-    A = (0, a.rdh)(i.A.unsafe_rawColors.WHITE).hex(),
-    b = r.useRef({}),
-    E = r.useRef(new l.IX),
-    v = r.useCallback(t => {
+function g(e, t, n, g) {
+  let A = (0, a.rdh)(i.A.unsafe_rawColors.BRAND_500).hex(),
+    b = (0, a.rdh)(i.A.unsafe_rawColors.BLACK).hex(),
+    _ = (0, a.rdh)(i.A.unsafe_rawColors.WHITE).hex(),
+    y = l.useRef({}),
+    v = l.useRef(new r.IX),
+    E = l.useCallback(t => {
       let n = u.A.getDrawables(t);
-      (0, f.iV)(e),
+      (0, h.iV)(e),
       function(e) {
         let {
           canvasRef: t,
           drawables: n,
-          fallbackColor: r,
-          linesDrawnAt: l,
+          fallbackColor: l,
+          linesDrawnAt: r,
           streamerId: i,
           channelId: a,
-          outlineColorDark: o,
+          outlineColorDark: s,
           outlineColorLight: u
         } = e;
         if (0 === n.length) return;
-        let f = t.current;
-        if (null == f) return;
-        let m = f.getContext("2d");
+        let h = t.current;
+        if (null == h) return;
+        let m = h.getContext("2d");
         if (null == m) return;
         let {
-          width: _,
-          height: h
-        } = f.getBoundingClientRect(), y = [];
+          width: g,
+          height: A
+        } = h.getBoundingClientRect(), b = [];
         n.forEach(e => {
-          null == s.A.getVoiceStateForChannel(a, e.userId) ? y.push(e) : function(e) {
+          null == o.A.getVoiceStateForChannel(a, e.userId) ? b.push(e) : function(e) {
             let {
               drawable: t,
               context: n,
-              canvasWidth: r,
-              canvasHeight: l,
+              canvasWidth: l,
+              canvasHeight: r,
               fallbackColor: i,
               outlineColorDark: a,
-              outlineColorLight: o,
-              linesDrawnAt: s,
+              outlineColorLight: s,
+              linesDrawnAt: o,
               streamerId: c,
               deadDrawables: u
             } = e;
             switch (t.type) {
               case d.Z.LINE:
-                return (0, g.A)({
+                return (0, f.A)({
                   line: t,
                   context: n,
-                  canvasWidth: r,
-                  canvasHeight: l,
+                  canvasWidth: l,
+                  canvasHeight: r,
                   fallbackColor: i,
                   outlineColorDark: a,
-                  outlineColorLight: o,
-                  linesDrawnAt: s,
+                  outlineColorLight: s,
+                  linesDrawnAt: o,
                   deadDrawables: u
                 });
               case d.Z.EMOJI_HOSE:
                 return (0, p.A)({
                   emojiHose: t,
                   context: n,
-                  canvasWidth: r,
-                  canvasHeight: l,
+                  canvasWidth: l,
+                  canvasHeight: r,
                   fallbackColor: i,
                   outlineColorDark: a,
-                  outlineColorLight: o,
+                  outlineColorLight: s,
                   streamerId: c,
                   deadDrawables: u
                 })
@@ -90,48 +90,48 @@ function _(e, t, n, _) {
           }({
             drawable: e,
             context: m,
-            canvasWidth: _,
-            canvasHeight: h,
-            fallbackColor: r,
-            outlineColorDark: o,
+            canvasWidth: g,
+            canvasHeight: A,
+            fallbackColor: l,
+            outlineColorDark: s,
             outlineColorLight: u,
-            linesDrawnAt: l,
-            deadDrawables: y,
+            linesDrawnAt: r,
+            deadDrawables: b,
             streamerId: i
           })
-        }), y.length > 0 && (0, c.Nm)(y, i)
+        }), b.length > 0 && (0, c.Nm)(b, i)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: h,
-        linesDrawnAt: b,
+        fallbackColor: A,
+        linesDrawnAt: y,
         streamerId: t,
-        outlineColorDark: y,
-        outlineColorLight: A,
-        channelId: _
+        outlineColorDark: b,
+        outlineColorLight: _,
+        channelId: g
       })
-    }, [e, _, h, y, A]);
-  r.useEffect(() => {
+    }, [e, g, A, b, _]);
+  l.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
       if (null == t) return;
       let {
-        width: r,
-        height: l
+        width: l,
+        height: r
       } = t.getBoundingClientRect();
-      t.width = r * window.devicePixelRatio, t.height = l * window.devicePixelRatio, v(n)
+      t.width = l * window.devicePixelRatio, t.height = r * window.devicePixelRatio, E(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
-  }, [e, v, n]);
-  let O = r.useCallback(() => {
+  }, [e, E, n]);
+  let O = l.useCallback(() => {
     let t = u.A.getDrawables(n),
-      r = p.m.getState().particles,
-      l = t.length > 0 || Object.keys(r).length > 0;
-    l && null == E.current._ref && (null == E.current._ref ? (v(n), E.current.start(m, () => v(n))) : l || null == E.current._ref || (E.current.stop(), (0, f.iV)(e)))
-  }, [e, v, n]);
-  r.useEffect(() => {
-    let e = E.current;
-    return u.A.addChangeListener(O), O(), (0, o.l0)(t.getAvatarURL(null, 80)), () => {
+      l = p.m.getState().particles,
+      r = t.length > 0 || Object.keys(l).length > 0;
+    r && null == v.current._ref && (null == v.current._ref ? (E(n), v.current.start(m, () => E(n))) : r || null == v.current._ref || (v.current.stop(), (0, h.iV)(e)))
+  }, [e, E, n]);
+  l.useEffect(() => {
+    let e = v.current;
+    return u.A.addChangeListener(O), O(), (0, s.l0)(t.getAvatarURL(null, 80)), () => {
       u.A.removeChangeListener(O), e.stop()
     }
   })

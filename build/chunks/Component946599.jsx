@@ -1,4 +1,4 @@
-/** Chunk was on 94682 **/
+/** Chunk was on 60118 **/
 /** chunk id: 946599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -29,18 +29,18 @@ function y(e) {
     disableInteraction: y = false
   } = e, j = null != (t = null == n ? true : n.filter(e => null != (0, g.W3)(e))) ? t : [], h = j.length > 0, _ = o.Y$, I = i && !y && (0, f.mS)(s) && j.length < _, {
     trackUserProfileAction: A
-  } = (0, d.NJ)(), w = (0, l.useRef)(new Map), P = (0, l.useRef)(null), E = (0, l.useRef)(null), [S, T] = (0, l.useState)(0), [N, C] = (0, l.useState)(false), k = v(P, E, j, w, T);
-  if ((0, l.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
-      window.removeEventListener("resize", k)
-    }), [k, null == j ? true : j.join("")]), !h && !I) return null;
-  let R = N ? j : j.slice(0, j.length - S);
+  } = (0, d.NJ)(), w = (0, l.useRef)(new Map), P = (0, l.useRef)(null), E = (0, l.useRef)(null), [S, T] = (0, l.useState)(0), [C, N] = (0, l.useState)(false), R = v(P, E, j, w, T);
+  if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
+      window.removeEventListener("resize", R)
+    }), [R, null == j ? true : j.join("")]), !h && !I) return null;
+  let k = C ? j : j.slice(0, j.length - S);
   return (0, r.jsxs)("div", {
     className: a()(b.I4, u),
     children: [h && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: b.Tw,
         "aria-label": m.intl.string(m.t.EfjTi4),
-        children: R.map(e => (0, r.jsx)(O, {
+        children: k.map(e => (0, r.jsx)(O, {
           tag: e,
           isCurrentUser: i,
           applicationId: c,
@@ -52,15 +52,15 @@ function y(e) {
         }, e))
       }), S > 0 && (0, r.jsx)(x, {
         buttonRef: P,
-        isExpanded: N,
+        isExpanded: C,
         numberOfOverflowingTags: S,
         onExpandTags: () => {
-          C(true), A({
+          N(true), A({
             action: "EXPAND_GAME_TAGS"
           })
         },
         onCollapseTags: () => {
-          C(false), A({
+          N(false), A({
             action: "COLLAPSE_GAME_TAGS"
           })
         },

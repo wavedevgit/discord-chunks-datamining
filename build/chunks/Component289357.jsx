@@ -162,13 +162,13 @@ function Y(e) {
     startTime: h,
     endTime: g
   } = (0, w.Ay)(n), {
-    startDateTimeString: f,
-    upcomingEvent: m,
+    startDateTimeString: m,
+    upcomingEvent: f,
     diffMinutes: A
-  } = (0, D.CC)(h.toISOString(), null == g ? true : g.toISOString()), _ = m ? A > 0 ? G.intl.formatToPlainString(G.t.PQlCWk, {
+  } = (0, D.CC)(h.toISOString(), null == g ? true : g.toISOString()), _ = f ? A > 0 ? G.intl.formatToPlainString(G.t.PQlCWk, {
     minutes: A
   }) : G.intl.string(G.t.WINqKV) : G.intl.formatToPlainString(G.t.DC6h3G, {
-    date: f
+    date: m
   });
   return l.useEffect(() => {
     I.default.track(U.HAw.CHANNEL_NOTICE_VIEWED, {
@@ -302,7 +302,7 @@ function q(e) {
       text: n,
       fullWidth: true,
       onClick: () => {
-        null != t && null != t.getGuildId() && ((0, f.av)(t), (0, g.uh)(t.getGuildId(), t.id))
+        null != t && null != t.getGuildId() && ((0, m.av)(t), (0, g.uh)(t.getGuildId(), t.id))
       }
     })
   })
@@ -312,7 +312,7 @@ function z(e) {
   let {
     stageInstance: t,
     channel: n
-  } = e, r = (0, o.yK)([m.A], () => [...new Set(m.A.getMutableParticipants(n.id, A.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([m.A], () => m.A.getParticipantCount(n.id, A.ip.AUDIENCE), [n.id]), a = G.intl.formatToPlainString(G.t["+v2pN2"], {
+  } = e, r = (0, o.yK)([f.A], () => [...new Set(f.A.getMutableParticipants(n.id, A.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([f.A], () => f.A.getParticipantCount(n.id, A.ip.AUDIENCE), [n.id]), a = G.intl.formatToPlainString(G.t["+v2pN2"], {
     count: "".concat(l)
   });
   return (0, i.jsx)(B, {
@@ -416,8 +416,8 @@ let Z = Chunk64700.memo(function(e) {
     guildEvent: l,
     channel: r
   }));
-  let f = t.features.has(U.GuildFeatures.COMMUNITY);
-  if (null == d && null != a && !f) {
+  let m = t.features.has(U.GuildFeatures.COMMUNITY);
+  if (null == d && null != a && !m) {
     let {
       upcomingEvent: e,
       noticeType: t

@@ -2,7 +2,7 @@
 /** chunk id: 755029, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,15 +16,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk980504 = require("./980504.js"),
   Chunk761121 = require("./761121.js");
 
-function h() {
-  let [e, t] = (0, r.yK)([s.A], () => [s.A.enabled, s.A.keepOpen]), n = (0, r.bG)([c.A], () => c.A.getVoiceChannelId()), h = (0, r.bG)([a.A], () => a.A.getChannel(n), [n]), f = null == h ? true : h.getGuildId();
-  return e && null != h ? (0, i.jsx)("div", {
-    className: p.H,
+function p() {
+  let [e, t] = (0, r.yK)([s.A], () => [s.A.enabled, s.A.keepOpen]), n = (0, r.bG)([c.A], () => c.A.getVoiceChannelId()), p = (0, r.bG)([a.A], () => a.A.getChannel(n), [n]), f = null == p ? true : p.getGuildId();
+  return e && null != p ? (0, i.jsx)("div", {
+    className: h.H,
     children: (0, i.jsx)(o.A, {
       width: u.ed.width,
       height: u.ed.height,
       guildId: f,
-      channel: h,
+      channel: p,
       keepOpen: t,
       onClose: function() {
         let e = (0, d.A)();

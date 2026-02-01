@@ -28,7 +28,7 @@ function u(t) {
       id: "reset",
       label: o.intl.string(o.t["hW+EMu"]),
       action: t => {
-        t.stopPropagation(), l.A.resetDefaultLayout(e, null != u ? u : 3)
+        t.stopPropagation(), l.A.resetDefaultLayout(e, null != u ? u : 4)
       }
     })
   })

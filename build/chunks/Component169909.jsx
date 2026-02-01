@@ -438,7 +438,7 @@ function eo(e) {
         onAnimationEnd: () => n ? null : u(false),
         children: (0, r.jsx)(S.A, {
           src: l,
-          mediaLayoutType: V.dG.MOSAIC,
+          mediaLayoutType: F.dG.MOSAIC,
           loop: true,
           autoPlay: true,
           muted: true
@@ -506,7 +506,7 @@ function ec(e) {
   } = (0, g.A)(t);
   return {
     onClickAppCard: i.useCallback(e => {
-      e.stopPropagation(), (0, A.zV)(F.HAw.APPLICATION_COMMAND_SECTION_SELECTED, {
+      e.stopPropagation(), (0, A.zV)(V.HAw.APPLICATION_COMMAND_SECTION_SELECTED, {
         application_id: t.id,
         section_name: n,
         search_results_position: r,

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 157207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -20,43 +20,43 @@ function p(e) {
     lastClipsSession: n,
     closePopout: p
   } = e;
-  return (l.useEffect(() => () => {
+  return (r.useEffect(() => () => {
     (0, c.jA)()
-  }, []), (0, a.A)({
+  }, []), (0, s.A)({
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.HOTSPOT,
     properties: {
       hotspot_location: o._2.CLIPS_CHANNEL_ATTACH_REMINDER
     }
-  }), null == n) ? null : (0, r.jsxs)("div", {
+  }), null == n) ? null : (0, l.jsxs)("div", {
     className: h.WG,
-    children: [(0, r.jsx)("div", {
+    children: [(0, l.jsx)("div", {
       className: h.Yt,
-      children: (0, r.jsx)(u.A, {})
-    }), (0, r.jsx)(s.Heading, {
+      children: (0, l.jsx)(u.A, {})
+    }), (0, l.jsx)(a.Heading, {
       className: h.wx,
       color: "text-strong",
       variant: "heading-md/extrabold",
       children: d.intl.format(d.t["+qxkzC"], {
         count: n.newClipIds.length
       })
-    }), (0, r.jsx)(s.Text, {
+    }), (0, l.jsx)(a.Text, {
       color: "text-default",
       className: h.__invalid_content,
       variant: "text-sm/medium",
       children: d.intl.format(d.t["7XX0/X"], {
         applicationName: n.applicationName
       })
-    }), (0, r.jsx)("div", {
+    }), (0, l.jsx)("div", {
       className: h.NC,
-      children: (0, r.jsxs)(s.ButtonGroup, {
-        children: [(0, r.jsx)(s.Button, {
+      children: (0, l.jsxs)(a.ButtonGroup, {
+        children: [(0, l.jsx)(a.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["7r5Z19"]),
           onClick: function() {
             (0, o.sF)(o._2.CLIPS_CHANNEL_ATTACH_REMINDER), p()
           }
-        }), (0, r.jsx)(s.Button, {
+        }), (0, l.jsx)(a.Button, {
           variant: "primary",
           text: d.intl.string(d.t.md4qKz),
           onClick: t

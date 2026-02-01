@@ -1,5 +1,5 @@
-/** Chunk was on 78376 **/
-/** chunk id: 752472, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 24665 **/
+/** chunk id: 752472, original params: e,n,t (module,exports,require) **/
 module.exports = {
   wx: "header__7e090",
   lY: "animation__7e090",

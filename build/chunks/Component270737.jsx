@@ -1,12 +1,12 @@
-/** Chunk was on 83898 **/
+/** Chunk was on 30819 **/
 /** chunk id: 270737, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  V: () => l
+  V: () => a
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk744682 = require("./744682.jsx");
-let i = {
+let l = {
     mute: {
       name: "mute",
       start: 0,
@@ -43,11 +43,11 @@ let i = {
       duration: 40
     }
   },
-  l = e => {
+  a = e => {
     let t = o.useRef(null),
-      l = o.useRef(e);
-    l.current = e;
-    let a = o.useMemo(() => () => {
+      a = o.useRef(e);
+    a.current = e;
+    let u = o.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
       c = o.useCallback(() => {
@@ -61,8 +61,8 @@ let i = {
         t.current.stopIfPlaying(r)
       }, [e]),
       b = o.useCallback(e => {
-        var o, a;
-        return (0, n.jsx)(u.P, (o = function(e) {
+        var o, u;
+        return (0, n.jsx)(i.P, (o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -79,29 +79,29 @@ let i = {
             })
           }
           return e
-        }({}, e), a = a = {
+        }({}, e), u = u = {
           src: () => r.e("89759").then(r.t.bind(r, 244450, 19)),
           ref: t,
-          initialAnimation: l.current,
-          markers: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          initialAnimation: a.current,
+          markers: l
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(u)).forEach(function(e) {
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
         }), o))
       }, []);
     return {
       events: {
-        onClick: a,
+        onClick: u,
         onMouseEnter: c,
         onMouseLeave: s
       },
-      play: a,
+      play: u,
       getDuration: o.useCallback(() => {
         var e;
         return null == (e = t.current) ? true : e.getDuration()

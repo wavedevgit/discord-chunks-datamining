@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 899463, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 899463, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  r: () => A
+  r: () => S
 });
 var Chunk627968 = require("./627968.js"),
   Chunk934551 = require("./934551.js"),
@@ -12,14 +12,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk467758 = require("./467758.js"),
   Chunk269420 = require("./269420.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.t_)(Chunk780964.X.CLIPS_PANEL, {
+let A = (0, Chunk419954.t_)(Chunk780964.X.CLIPS_PANEL, {
     useTitle: () => T.intl.string(T.t.z2jK6X),
     useBadge: () => (0, n.jsx)(r.A, {}),
     usePredicate: Chunk734066.sw,
     buildLayout: () => [d.K, o.W]
   }),
-  A = (0, Chunk419954.i4)(Chunk780964.X.CLIPS_SIDEBAR_ITEM, {
+  S = (0, Chunk419954.i4)(Chunk780964.X.CLIPS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t.z2jK6X),
     icon: Chunk934551.ClipsIcon,
-    buildLayout: () => [c]
+    buildLayout: () => [A]
   })

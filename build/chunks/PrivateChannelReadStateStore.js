@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 131677, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -11,12 +11,12 @@ var r, l, Chunk311907 = require("./311907.js"),
   Chunk222823 = require("./222823.js"),
   Chunk309010 = require("./309010.js"),
   Chunk645959 = require("./645959.js");
-let p = [],
+let h = [],
   g = new Set;
 
 function f() {
-  let e = h.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
-  return e.length > 20 && (e.length = 20), !(0, o.in)(e, p) && (p = e, g = new Set(e), true)
+  let e = p.A.getPrivateChannelIds().filter(e => u.Ay.getMentionCount(e) > 0);
+  return e.length > 20 && (e.length = 20), !(0, o.in)(e, h) && (h = e, g = new Set(e), true)
 }
 
 function m() {
@@ -31,10 +31,10 @@ function b(e) {
 }
 class A extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(h.A, c.A, d.A, u.Ay)
+    this.waitFor(p.A, c.A, d.A, u.Ay)
   }
   getUnreadPrivateChannelIds() {
-    return p
+    return h
   }
 }(l = "displayName") in A ? Object.defineProperty(A, l, {
   value: "PrivateChannelReadStateStore",

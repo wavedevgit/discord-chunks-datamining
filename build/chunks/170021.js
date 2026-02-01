@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 170021, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 170021, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   H: () => o
 });
@@ -10,20 +10,20 @@ var Chunk864145 = require("./864145.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.sN)(Chunk780964.X.SOUNDMOJI_VOLUME_SETTING, {
-  useTitle: () => u.intl.string(u.t["2JbvKw"]),
-  useSubtitle: () => u.intl.string(u.t.INenzY),
-  setValue: function(e) {
-    let t = (0, s.w)(e);
-    r.HO.updateSetting(t)
+  useTitle: () => a.intl.string(a.t["2JbvKw"]),
+  useSubtitle: () => a.intl.string(a.t.INenzY),
+  setValue: function(t) {
+    let e = (0, s.w)(t);
+    r.HO.updateSetting(e)
   },
   minValue: 0,
   maxValue: 100,
   getInitialValue: function() {
-    let e = r.HO.getSetting();
-    return (0, s.M)(e)
+    let t = r.HO.getSetting();
+    return (0, s.M)(t)
   },
-  onValueRender: function(e) {
-    return "".concat(e.toFixed(0), "%")
+  onValueRender: function(t) {
+    return "".concat(t.toFixed(0), "%")
   },
   usePredicate: function() {
     return (0, n.X9)({

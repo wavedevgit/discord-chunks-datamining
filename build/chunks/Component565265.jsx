@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 565265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -59,11 +59,11 @@ class y extends Chunk64700.Component {
         onClick: this.handleClick,
         children: [(0, r.jsx)(o.DUT, {
           onClick: this.handleClick,
-          "aria-label": p.intl.string(p.t.mKwsSp),
+          "aria-label": h.intl.string(h.t.mKwsSp),
           className: g.h8
         }), null == e.linkedLobby || t ? u.A.parseTopic(e.topic, true, {
           channelId: e.id
-        }) : p.intl.string(p.t["XJVlf/"])]
+        }) : h.intl.string(h.t["XJVlf/"])]
       })]
     }) : null
   }
@@ -85,7 +85,7 @@ class y extends Chunk64700.Component {
     }), m(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
     }), m(this, "onMouseUp", e => {
-      this._mouseDown && e.button !== h.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+      this._mouseDown && e.button !== p.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
     }), m(this, "handleContextMenu", e => {
       let {
         channel: t,

@@ -1,7 +1,7 @@
 /** Chunk was on 87997 **/
 /** chunk id: 180812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => D
+  default: () => M
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,61 +66,61 @@ function I(e) {
     channelId: a,
     mediaEngineContext: o,
     onSelect: c,
-    onShowProfile: j,
+    onShowProfile: _,
     onWatchStream: S,
-    appContext: T
-  } = e, I = (0, _.A)({
+    appContext: D
+  } = e, I = (0, m.A)({
     onAction: () => {
-      null == j || j()
+      null == _ || _()
     }
-  }), P = (0, O.A)({
+  }), x = (0, O.A)({
     user: t,
-    context: T
-  }), D = (0, b.A)({
+    context: D
+  }), M = (0, b.A)({
     user: t,
-    appContext: T
-  }), w = (0, m.A)(t.id, S), C = (0, h.A)(t.id), M = (0, y.A)(t.id, o), x = (0, p.A)({
+    appContext: D
+  }), P = (0, v.A)(t.id, S), C = (0, j.A)(t.id), T = (0, E.A)(t.id, o), w = (0, y.A)({
     user: t
-  }), N = (0, u.A)(null, t), R = (0, A.A)({
+  }), N = (0, u.A)(null, t), U = (0, A.A)({
     user: t,
-    appContext: T
-  }), U = (0, g.A)({
+    appContext: D
+  }), L = (0, g.A)({
     user: t,
-    appContext: T
-  }), L = (0, E.A)({
+    appContext: D
+  }), V = (0, p.A)({
     user: t,
-    appContext: T
-  }), V = (0, s.A)({
+    appContext: D
+  }), R = (0, s.A)({
     id: t.id,
-    label: v.intl.string(v.t["/AXYnE"])
-  }), G = (0, d.A)(t), B = (0, f.A)(t, n, a), k = t.isNonUserBot();
+    label: h.intl.string(h.t["/AXYnE"])
+  }), G = (0, d.A)(t), k = (0, f.A)(t, n, a), B = t.isNonUserBot();
   return (0, r.jsxs)(l.W1t, {
     "data-menu-migrated-auto": true,
     navId: "user-context",
     onClose: i.Z_,
-    "aria-label": v.intl.string(v.t.liqwPJ),
+    "aria-label": h.intl.string(h.t.liqwPJ),
     onSelect: c,
-    children: [!k && (0, r.jsxs)(r.Fragment, {
+    children: [!B && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.rXV, {
         children: G
       }), (0, r.jsxs)(l.rXV, {
-        children: [I, P, D, w]
+        children: [I, x, M, P]
       }), (0, r.jsx)(l.rXV, {
         children: C
       }), (0, r.jsx)(l.rXV, {
         children: N
       }), (0, r.jsxs)(l.rXV, {
-        children: [M, x, R, L, U]
+        children: [T, w, U, V, L]
       }), (0, r.jsx)(l.rXV, {
-        children: B
+        children: k
       })]
     }), (0, r.jsx)(l.rXV, {
-      children: V
+      children: R
     })]
   })
 }
 
-function P(e) {
+function x(e) {
   let {
     user: t,
     mediaEngineContext: n,
@@ -128,55 +128,55 @@ function P(e) {
     onShowProfile: o,
     onWatchStream: c,
     appContext: f
-  } = e, j = (0, _.A)({
+  } = e, _ = (0, m.A)({
     onAction: () => {
       null == o || o()
     }
   }), S = (0, O.A)({
     user: t,
     context: f
-  }), T = (0, b.A)({
+  }), D = (0, b.A)({
     user: t,
     appContext: f
-  }), I = (0, m.A)(t.id, c), P = (0, h.A)(t.id), D = (0, y.A)(t.id, n), w = (0, p.A)({
+  }), I = (0, v.A)(t.id, c), x = (0, j.A)(t.id), M = (0, E.A)(t.id, n), P = (0, y.A)({
     user: t
-  }), C = (0, u.A)(null, t), M = (0, A.A)({
+  }), C = (0, u.A)(null, t), T = (0, A.A)({
     user: t,
     appContext: f
-  }), x = (0, g.A)({
+  }), w = (0, g.A)({
     user: t,
     appContext: f
-  }), N = (0, E.A)({
+  }), N = (0, p.A)({
     user: t,
     appContext: f
-  }), R = (0, s.A)({
+  }), U = (0, s.A)({
     id: t.id,
-    label: v.intl.string(v.t["/AXYnE"])
-  }), U = (0, d.A)(t), L = t.isNonUserBot();
+    label: h.intl.string(h.t["/AXYnE"])
+  }), L = (0, d.A)(t), V = t.isNonUserBot();
   return (0, r.jsxs)(l.W1t, {
     "data-menu-migrated-auto": true,
     navId: "user-context",
     onClose: i.Z_,
-    "aria-label": v.intl.string(v.t.liqwPJ),
+    "aria-label": h.intl.string(h.t.liqwPJ),
     onSelect: a,
-    children: [!L && (0, r.jsxs)(r.Fragment, {
+    children: [!V && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.rXV, {
-        children: U
+        children: L
       }), (0, r.jsxs)(l.rXV, {
-        children: [j, S, T, I]
+        children: [_, S, D, I]
       }), (0, r.jsx)(l.rXV, {
-        children: P
+        children: x
       }), (0, r.jsx)(l.rXV, {
         children: C
       }), (0, r.jsxs)(l.rXV, {
-        children: [D, w, M, N, x]
+        children: [M, P, T, N, w]
       })]
     }), (0, r.jsx)(l.rXV, {
-      children: R
+      children: U
     })]
   })
 }
-let D = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
+let M = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     guildId: t,
     channelId: n
@@ -197,10 +197,10 @@ let D = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
   }(e, ["guildId", "channelId"]);
-  return null != t && null != n ? (0, r.jsx)(I, T(S({}, l), {
+  return null != t && null != n ? (0, r.jsx)(I, D(S({}, l), {
     guildId: t,
     channelId: n
-  })) : (0, r.jsx)(P, T(S({}, l), {
+  })) : (0, r.jsx)(x, D(S({}, l), {
     guildId: t,
     channelId: n
   }))

@@ -1,4 +1,4 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 305637, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -26,11 +26,11 @@ function _(e) {
     applicationStream: n,
     onAction: _
   } = e, {
-    defaultWatchMultipleStreams: A
+    defaultWatchMultipleStreams: h
   } = (0, u.W)({
     location: "WatchStreamButton"
   }), {
-    activeStream: h,
+    activeStream: A,
     watchingOtherStream: v
   } = (0, l.cf)([f.A], () => ({
     activeStream: f.A.getActiveStreamForApplicationStream(n),
@@ -40,23 +40,23 @@ function _(e) {
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), O = (0, l.bG)([m.A], () => m.A.getChannel(null == n ? true : n.channelId)), [S, j] = (0, d.zP)(O), x = (0, p.aL)(), I = null != h && null != n && h.state !== y.XYD.ENDED && h.ownerId === n.ownerId, P = e => {
+  })), O = (0, l.bG)([m.A], () => m.A.getChannel(null == n ? true : n.channelId)), [S, j] = (0, d.zP)(O), x = (0, p.aL)(), I = null != A && null != n && A.state !== y.XYD.ENDED && A.ownerId === n.ownerId, E = e => {
     null != n && (null == _ || _(), o.default.selectVoiceChannel(n.channelId), I || (0, c.Nl)(n, {
       forceMultiple: e
     }), x.dispatch(y.jej.POPOUT_CLOSE), g._.dispatch(y.jej.MODAL_CLOSE), s.A.popAll())
   };
   if (null == n) return null;
-  let E = (0, d.CT)(j);
-  return t ? E = b.intl.string(b.t.XvBdeT) : I && (E = b.intl.string(b.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
+  let C = (0, d.CT)(j);
+  return t ? C = b.intl.string(b.t.XvBdeT) : I && (C = b.intl.string(b.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       size: "sm",
       variant: I ? "secondary" : "active",
       icon: a.Fzq,
-      text: E,
+      text: C,
       disabled: t || I || !S,
-      onClick: () => P(false),
+      onClick: () => E(false),
       fullWidth: true
-    }), !v || I || A ? null : (0, r.jsx)(i.m, {
+    }), !v || I || h ? null : (0, r.jsx)(i.m, {
       text: b.intl.string(b.t.wCrzut),
       children: (0, r.jsx)(a.K0, {
         variant: "secondary",
@@ -64,7 +64,7 @@ function _(e) {
         icon: a.vAm,
         "aria-label": b.intl.string(b.t.wCrzut),
         onClick: () => {
-          P(true)
+          E(true)
         }
       })
     })]

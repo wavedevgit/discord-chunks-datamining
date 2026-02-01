@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 982311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -55,17 +55,17 @@ let A = function(e) {
     outboundPromotion: f,
     transitionState: b
   } = e, [h, E] = i.useState(null), O = (0, u.GV)(), {
-    analyticsLocations: C
+    analyticsLocations: x
   } = (0, d.Ay)(c.A.USER_SETTINGS_GIFT_INVENTORY);
   return (i.useEffect(() => {
     null == A && (0, _.kd)({
       promotionId: f.id,
-      analyticsLocations: C
+      analyticsLocations: x
     }).then(e => n(e)).catch(e => {
       var t;
       return E(null == e || null == (t = e.body) ? true : t.code)
     })
-  }, [A, f.id, n, C]), null != h) ? (0, r.jsx)(g, {
+  }, [A, f.id, n, x]), null != h) ? (0, r.jsx)(g, {
     onClose: t,
     transitionState: b
   }) : null == A ? (0, r.jsx)(a.y$y, {

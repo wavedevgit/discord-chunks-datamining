@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 830001, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 830001, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  f: () => v
+  f: () => P
 });
 var Chunk627968 = require("./627968.js"),
   Chunk934551 = require("./934551.js"),
@@ -27,66 +27,66 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk722125 = require("./722125.js");
-let D = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
-    usePredicate: () => !(0, C.dk)("LegacyProfilePanel"),
-    useTitle: () => f.intl.string(f.t["vi7f+q"]),
+let R = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
+    usePredicate: () => !(0, N.dk)("LegacyProfilePanel"),
+    useTitle: () => D.intl.string(D.t["vi7f+q"]),
     notice: {
       stores: [Chunk833336.A, Chunk836602.A],
       element: Chunk103738.A
     },
-    initialize: () => () => a.h.wait(() => {
-      (0, d.sy)(), (0, u.F7)(), o.A.clearSubsection(m.nc_.PROFILE_CUSTOMIZATION)
+    initialize: () => () => u.h.wait(() => {
+      (0, d.sy)(), (0, a.F7)(), o.A.clearSubsection(L.nc_.PROFILE_CUSTOMIZATION)
     }),
     StronglyDiscouragedCustomComponent: Chunk745109.A,
     buildLayout: () => []
   }),
-  R = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
-    usePredicate: () => (0, C.dk)("ProfilePanel"),
-    useTitle: () => f.intl.string(f.t["vi7f+q"]),
+  f = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
+    usePredicate: () => (0, N.dk)("ProfilePanel"),
+    useTitle: () => D.intl.string(D.t["vi7f+q"]),
     notice: {
       stores: [Chunk833336.A, Chunk836602.A],
       element: Chunk103738.A
     },
-    initialize: () => () => a.h.wait(() => {
-      (0, d.sy)(), (0, u.F7)(), o.A.clearSubsection(m.nc_.PROFILE_CUSTOMIZATION)
+    initialize: () => () => u.h.wait(() => {
+      (0, d.sy)(), (0, a.F7)(), o.A.clearSubsection(L.nc_.PROFILE_CUSTOMIZATION)
     }),
     buildLayout: () => [b.I]
   }),
-  v = (0, Chunk419954.i4)(Chunk780964.X.PROFILE_SIDEBAR_ITEM, {
-    useTitle: () => f.intl.string(f.t["vi7f+q"]),
-    getLegacySearchKey: () => (0, C.WJ)("ProfilePanel") ? true : p.H.PROFILE_CUSTOMIZATION,
+  P = (0, Chunk419954.i4)(Chunk780964.X.PROFILE_SIDEBAR_ITEM, {
+    useTitle: () => D.intl.string(D.t["vi7f+q"]),
+    getLegacySearchKey: () => (0, N.WJ)("ProfilePanel") ? true : p.H.PROFILE_CUSTOMIZATION,
     icon: Chunk934551.UserIcon,
     StronglyDiscouragedCustomComponent: () => {
-      var e;
-      let t = (0, s.bG)([I.default], () => I.default.getCurrentUser()),
+      var t;
+      let e = (0, s.bG)([I.default], () => I.default.getCurrentUser()),
         {
           avatarSrc: i,
-          avatarDecorationSrc: a
-        } = (0, g.A)({
-          userId: null == t ? true : t.id,
+          avatarDecorationSrc: u
+        } = (0, _.A)({
+          userId: null == e ? true : e.id,
           size: r._3J.SIZE_48
         });
-      return null == t ? null : (0, n.jsxs)("div", {
-        className: L.a5,
+      return null == e ? null : (0, n.jsxs)("div", {
+        className: m.a5,
         children: [(0, n.jsx)(r.euF, {
           src: i,
-          avatarDecoration: a,
+          avatarDecoration: u,
           size: r._3J.SIZE_48,
-          "aria-label": f.intl.string(f.t.lqaIxI)
+          "aria-label": D.intl.string(D.t.lqaIxI)
         }), (0, n.jsxs)("div", {
-          className: L.FS,
+          className: m.FS,
           children: [(0, n.jsx)(r.Text, {
             color: "text-strong",
             variant: "text-md/medium",
             lineClamp: 1,
-            children: null != (e = t.globalName) ? e : t.username
+            children: null != (t = e.globalName) ? t : e.username
           }), (0, n.jsxs)("div", {
-            className: L.Fk,
+            className: m.Fk,
             children: [(0, n.jsx)(r.Text, {
               variant: "text-sm/normal",
               color: "currentColor",
               lineClamp: 1,
-              children: f.intl.string(f.t.Ip9nBS)
+              children: D.intl.string(D.t.Ip9nBS)
             }), (0, n.jsx)(l.PencilIcon, {
               size: "xxs",
               color: "currentColor"
@@ -99,5 +99,5 @@ let D = (0, Chunk419954.t_)(Chunk780964.X.PROFILE_PANEL, {
       type: Chunk933297.S.BADGE_NEW,
       getDismissibleContentTypes: Chunk368631.Jn
     },
-    buildLayout: () => (0, C.WJ)("ProfilePanel") ? [R] : [D]
+    buildLayout: () => (0, N.WJ)("ProfilePanel") ? [f] : [R]
   })

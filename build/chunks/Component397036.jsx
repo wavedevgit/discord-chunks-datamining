@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 397036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, u.e)({
     guildId: t,
     channelId: n
-  }), A = (0, c.uk)(t), y = (0, c.Tq)(t), O = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), _ = null == O ? true : O.name, j = (0, i.bG)([a.A], () => a.A.getChannel(n)), x = l.useMemo(() => {
+  }), A = (0, c.uk)(t), y = (0, c.Tq)(t), O = (0, i.bG)([o.A], () => o.A.getGuild(t), [t]), j = null == O ? true : O.name, x = (0, i.bG)([a.A], () => a.A.getChannel(n)), _ = l.useMemo(() => {
     let e = {};
     for (let t of A)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -46,20 +46,20 @@ function b(e) {
       variant: "heading-xl/semibold",
       className: m.DX,
       children: f.intl.format(f.t.xHMpym, {
-        serverName: _,
-        channelName: null == j ? true : j.name
+        serverName: j,
+        channelName: null == x ? true : x.name
       })
     }), (0, r.jsx)(s.Text, {
       className: m.Lv,
       variant: "text-md/normal",
       color: "text-default",
       children: null == y ? true : y.description
-    }), (0, r.jsx)(h.A, {
+    }), (0, r.jsx)(p.A, {
       guildId: t,
-      children: b.filter(e => null != x[e.id]).map(e => (0, r.jsx)(p.A, {
+      children: b.filter(e => null != _[e.id]).map(e => (0, r.jsx)(h.A, {
         guildId: t,
         listingId: e.id,
-        groupListingId: x[e.id],
+        groupListingId: _[e.id],
         analyticsLocation: g.ThZ.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]

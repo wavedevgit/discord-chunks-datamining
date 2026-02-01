@@ -21,8 +21,8 @@ function g(e) {
   let {
     applicationId: n,
     transitionState: g,
-    onClose: f
-  } = e, [m, A] = i.useState(false), [_] = (0, o.A)([n]), b = null != (t = null == _ ? true : _.name) ? t : "This Activity";
+    onClose: m
+  } = e, [f, A] = i.useState(false), [_] = (0, o.A)([n]), b = null != (t = null == _ ? true : _.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.HAw.OPEN_MODAL, {
       type: h
@@ -30,12 +30,12 @@ function g(e) {
   }, []);
   let E = async () => {
     let e = "temporary";
-    m && (e = "permanent", s.Ay.updatedUnsyncedSettings({
+    f && (e = "permanent", s.Ay.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: true
     })), c.default.track(d.HAw.MODAL_DISMISSED, {
       type: h,
       dismiss_type: e
-    }), await f()
+    }), await m()
   }, O = async () => {
     c.default.track(d.HAw.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
@@ -48,8 +48,8 @@ function g(e) {
     "aria-label": p.intl.string(p.t.NQkK4l),
     title: p.intl.string(p.t.NQkK4l),
     actionBarInput: (0, r.jsx)(a.Checkbox, {
-      checked: m,
-      onChange: () => A(!m),
+      checked: f,
+      onChange: () => A(!f),
       label: p.intl.string(p.t["5E9SB9"]),
       labelType: "secondary"
     }),

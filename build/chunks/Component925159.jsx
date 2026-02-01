@@ -21,21 +21,21 @@ var Chunk627968 = require("./627968.js"),
 
 function A(e, t, n) {
   var A;
-  if (h.A.isNotificationDisabled(m.KS.NowPlayingNotification)) return null;
-  let O = d.default.getUser(e);
-  if (null == O) return null;
-  let E = u.A.getCurrentlySelectedChannelId(),
-    v = c.A.getChannel(E),
-    b = a.A.getApplication(t),
-    S = o.Ay.getRunningGames().find(e => e.id === t),
-    x = null != (A = null == S ? true : S.name) ? A : null == b ? true : b.name,
-    j = (0, p.mG)(null == v ? true : v.guild_id, null == v ? true : v.id, O),
+  if (p.A.isNotificationDisabled(g.KS.NowPlayingNotification)) return null;
+  let v = d.default.getUser(e);
+  if (null == v) return null;
+  let b = c.A.getCurrentlySelectedChannelId(),
+    E = u.A.getChannel(b),
+    O = a.A.getApplication(t),
+    x = s.Ay.getRunningGames().find(e => e.id === t),
+    _ = null != (A = null == x ? true : x.name) ? A : null == O ? true : O.name,
+    S = (0, h.mG)(null == E ? true : E.guild_id, null == E ? true : E.id, v),
     I = (0, i.jsxs)("div", {
       className: y.Ql,
       children: [(0, i.jsx)("div", {
         className: y.bf,
         children: (0, i.jsx)(l.A, {
-          user: O,
+          user: v,
           "aria-hidden": true,
           size: r._3J.SIZE_24
         })
@@ -45,13 +45,13 @@ function A(e, t, n) {
           variant: "text-sm/medium",
           color: "interactive-text-default",
           className: y.G3,
-          children: g.intl.format(g.t["q7/rgv"], {
-            username: null != j ? j : O.username,
-            gameName: x,
-            gameIcon: () => null != b || null != S ? (0, i.jsx)(s.A, {
-              game: b,
-              pid: null == S ? true : S.pid,
-              size: s.M.XSMALL,
+          children: m.intl.format(m.t["q7/rgv"], {
+            username: null != S ? S : v.username,
+            gameName: _,
+            gameIcon: () => null != O || null != x ? (0, i.jsx)(o.A, {
+              game: O,
+              pid: null == x ? true : x.pid,
+              size: o.M.XSMALL,
               className: y.Gt
             }) : null
           })
@@ -59,13 +59,13 @@ function A(e, t, n) {
       })]
     }),
     {
-      trackView: N,
-      trackClick: w
-    } = (0, f.Y9)(m.KS.NowPlayingNotification, {
-      notif_type: m.KS.NowPlayingNotification,
-      notif_user_id: O.id,
+      trackView: j,
+      trackClick: T
+    } = (0, f.Y9)(g.KS.NowPlayingNotification, {
+      notif_type: g.KS.NowPlayingNotification,
+      notif_user_id: v.id,
       activity_type: n.type,
-      activity_name: null != x ? x : n.name
+      activity_name: null != _ ? _ : n.name
     });
   return {
     body: I,
@@ -75,10 +75,10 @@ function A(e, t, n) {
     maxBodyLines: 1,
     disableClickableRegions: true,
     onNotificationShow: () => {
-      N()
+      j()
     },
     onDismissClick: () => {
-      w("dismiss")
+      T("dismiss")
     }
   }
 }

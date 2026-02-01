@@ -1,7 +1,7 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 130066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => R
+  A: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
@@ -28,49 +28,49 @@ var Chunk627968 = require("./627968.js"),
   Chunk190363 = require("./190363.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = () => (0, i.jsxs)(p.A, {
-    title: T.intl.string(T.t.xVRG4P),
-    webSetting: C.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, i.jsx)(A.f, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(c.A, {}), (0, i.jsx)(b.A, {})]
+let I = () => (0, r.jsxs)(f.A, {
+    title: S.intl.string(S.t.xVRG4P),
+    webSetting: v.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    children: [(0, r.jsx)(b.f, {}), (0, r.jsx)(p.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(A.A, {})]
   }),
-  N = () => (0, i.jsxs)(p.A, {
-    title: T.intl.string(T.t["y62Z/d"]),
-    webSetting: C.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
-    children: [(0, i.jsx)(s.x, {
-      setting: C.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-      children: (0, i.jsx)(x.A, {})
-    }), (0, i.jsx)(E.A, {}), (0, i.jsx)(S.A, {}), (0, i.jsx)(O.A, {}), (0, i.jsx)(j.A, {})]
+  N = () => (0, r.jsxs)(f.A, {
+    title: S.intl.string(S.t["y62Z/d"]),
+    webSetting: v.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    children: [(0, r.jsx)(i.x, {
+      setting: v.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+      children: (0, r.jsx)(g.A, {})
+    }), (0, r.jsx)(j.A, {}), (0, r.jsx)(x.A, {}), (0, r.jsx)(O.A, {}), (0, r.jsx)(y.A, {})]
   }),
-  I = () => (0, i.jsxs)(p.A, {
-    title: T.intl.string(T.t["1Qn8iV"]),
-    webSetting: C.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, i.jsx)(g.A, {}), (0, i.jsx)(m.Ay, {})]
+  T = () => (0, r.jsxs)(f.A, {
+    title: S.intl.string(S.t["1Qn8iV"]),
+    webSetting: v.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(m.Ay, {})]
   }),
-  P = () => (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(_, {}), (0, i.jsx)(N, {}), (0, i.jsx)(I, {})]
+  P = () => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(I, {}), (0, r.jsx)(N, {}), (0, r.jsx)(T, {})]
   });
 
-function R() {
-  let e = (0, l.bG)([r.A], () => r.A.getSubsection()),
+function w() {
+  let e = (0, l.bG)([s.A], () => s.A.getSubsection()),
     t = [{
-      title: T.intl.string(T.t["/7xJCF"]),
+      title: S.intl.string(S.t["/7xJCF"]),
       component: P,
-      setting: C.H.CONTENT_SOCIAL_DISCORD_TAB
+      setting: v.H.CONTENT_SOCIAL_DISCORD_TAB
     }, {
-      title: T.intl.string(T.t.YpCiMt),
-      component: d.A,
-      setting: C.H.CONTENT_SOCIAL_CONNECTED_GAMES
+      title: S.intl.string(S.t.YpCiMt),
+      component: u.A,
+      setting: v.H.CONTENT_SOCIAL_CONNECTED_GAMES
     }];
-  return (0, i.jsx)(a.R, {
-    header: T.intl.string(T.t["+o1pDZ"]),
-    notice: (0, i.jsx)(f.A, {
-      page: f.R.CONTENT_AND_SOCIAL
+  return (0, r.jsx)(a.R, {
+    header: S.intl.string(S.t["+o1pDZ"]),
+    notice: (0, r.jsx)(_.A, {
+      page: _.R.CONTENT_AND_SOCIAL
     }),
-    children: (0, i.jsx)(o.A, {
-      parentSetting: C.H.CONTENT_SOCIAL,
-      settingsSection: y.nc_.CONTENT_AND_SOCIAL,
+    children: (0, r.jsx)(o.A, {
+      parentSetting: v.H.CONTENT_SOCIAL,
+      settingsSection: C.nc_.CONTENT_AND_SOCIAL,
       tabs: t,
-      defaultTabIndex: e === v.k ? 1 : true
+      defaultTabIndex: e === E.k ? 1 : true
     })
   })
 }

@@ -6,10 +6,10 @@ require.d(exports, {
   Sm: () => G,
   bc: () => H,
   dR: () => k,
-  gz: () => V,
+  gz: () => F,
   i8: () => B,
   jX: () => j,
-  xb: () => F
+  xb: () => V
 }), require("./142703.js"), require("./321073.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -258,7 +258,7 @@ function G(e) {
   }))
 }
 
-function F(e) {
+function V(e) {
   return (0, r.jsx)(S.f, D(R({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
@@ -269,7 +269,7 @@ function F(e) {
   }))
 }
 
-function V(e) {
+function F(e) {
   return (0, r.jsx)(M, D(R({}, e), {
     headerClassName: N.gW
   }))
@@ -309,7 +309,7 @@ function H(e) {
     children: (0, r.jsx)(S.f, {
       transitionState: c.ip4.ENTERED,
       hideHeader: true,
-      children: (0, r.jsx)(V, {
+      children: (0, r.jsx)(F, {
         message: l,
         showsCloseWindowText: true
       })

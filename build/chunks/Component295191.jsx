@@ -1,7 +1,7 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 295191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk486974 = require("./486974.js"),
   Chunk652215 = require("./652215.js");
 
-function I(e, t) {
+function O(e, t) {
   return n => {
     if (0 === n) return "auto";
     let l = "forwards" === t.current,
@@ -29,29 +29,29 @@ function I(e, t) {
   }
 }
 
-function O(e) {
+function h(e) {
   var t;
   let {
     userId: n,
-    guildId: O,
-    onClose: m,
-    analyticsLocation: N,
+    guildId: h,
+    onClose: N,
+    analyticsLocation: m,
     className: f
-  } = e, p = (0, s.bG)([E.Ay], () => E.Ay.getGuildSidebarState(O), [O]), S = null != (t = null == p ? true : p.details.modViewPanel) ? t : T.g.INFO, G = (0, u.A)(n), R = null == S ? null : S === T.g.INFO ? "backwards" : "forwards", D = (0, i.A)(R), {
+  } = e, S = (0, s.bG)([E.Ay], () => E.Ay.getGuildSidebarState(h), [h]), p = null != (t = null == S ? true : S.details.modViewPanel) ? t : T.g.INFO, G = (0, u.A)(n), R = null == p ? null : p === T.g.INFO ? "backwards" : "forwards", D = (0, i.A)(R), {
     reducedMotion: C
   } = r.useContext(o.CZY), L = r.useCallback(e => {
-    null != p && (0, d.z)(O, n, p.baseChannelId, {
+    null != S && (0, _.z)(h, n, S.baseChannelId, {
       modViewPanel: e
     })
-  }, [p, O, n]), b = r.useMemo(() => ({
-    [h.IWg.CLOSE_MODAL]: {
+  }, [S, h, n]), x = r.useMemo(() => ({
+    [I.IWg.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => S === T.g.INFO ? m() : L(T.g.INFO)
+      action: () => p === T.g.INFO ? N() : L(T.g.INFO)
     }
-  }), [m, S, L]);
-  r.useEffect(() => (c.A.enable(), c.A.enableTemp(b), () => c.A.disableTemp()), [b]);
-  let x = (0, o.pnh)(S, {
+  }), [N, p, L]);
+  r.useEffect(() => (c.A.enable(), c.A.enableTemp(x), () => c.A.disableTemp()), [x]);
+  let b = (0, o.pnh)(p, {
     value: 0,
     from: {
       value: 1
@@ -70,7 +70,7 @@ function O(e) {
       flex: 1,
       overflow: "hidden"
     },
-    children: x((e, t, r) => {
+    children: b((e, t, r) => {
       var i, s, o;
       let {
         key: u
@@ -103,29 +103,29 @@ function O(e) {
         }, C.enabled ? {
           opacity: null == (i = e.value) ? true : i.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (s = e.value) ? true : s.to(I("left", D)),
-          right: null == (o = e.value) ? true : o.to(I("right", D))
+          left: null == (s = e.value) ? true : s.to(O("left", D)),
+          right: null == (o = e.value) ? true : o.to(O("right", D))
         }),
         children: function(e) {
           switch (e) {
             case T.g.INFO:
-              return (0, l.jsx)(_.A, {
+              return (0, l.jsx)(d.A, {
                 userId: n,
-                guildId: O,
+                guildId: h,
                 onNavigate: L,
                 className: f
               });
             case T.g.MESSAGE_HISTORY:
               return (0, l.jsx)(g.A, {
                 userId: n,
-                guildId: O,
+                guildId: h,
                 onNavigate: () => L(T.g.INFO),
                 className: f
               });
             case T.g.PERMISSIONS:
               return (0, l.jsx)(A.A, {
                 userId: n,
-                guildId: O,
+                guildId: h,
                 onNavigate: () => L(T.g.INFO),
                 className: f
               });

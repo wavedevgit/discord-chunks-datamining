@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 744344, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 744344, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  r: () => c
+  r: () => A
 }), require("./228524.js");
 var Chunk311907 = require("./311907.js"),
   Chunk684013 = require("./684013.js"),
@@ -12,17 +12,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let d = (0, Chunk790076.ze)(true);
 
-function T(e) {
-  return (0, r.zD)(e.key, {
-    useTitle: () => o.intl.string(e.title),
-    useSubtitle: () => o.intl.string(e.description),
-    useValue: () => !(0, n.bG)([s.A], () => s.A.getDisabledNotifications().has(e.disabledSetting)),
-    setValue: t => {
-      l.A.setNotificationDisabledSetting(e.disabledSetting, !t)
+function T(t) {
+  return (0, r.zD)(t.key, {
+    useTitle: () => o.intl.string(t.title),
+    useSubtitle: () => o.intl.string(t.description),
+    useValue: () => !(0, n.bG)([s.A], () => s.A.getDisabledNotifications().has(t.disabledSetting)),
+    setValue: e => {
+      l.A.setNotificationDisabledSetting(t.disabledSetting, !e)
     },
-    usePredicate: e.usePredicate
+    usePredicate: t.usePredicate
   })
 }
-let c = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
+let A = (0, Chunk419954.FW)(Chunk780964.X.OVERLAY_NOTIFICATIONS_LIST, {
   buildLayout: () => d.map(T)
 })

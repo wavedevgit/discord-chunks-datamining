@@ -1,7 +1,7 @@
-/** Chunk was on 48898 **/
-/** chunk id: 313880, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 7602 **/
+/** chunk id: 313880, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -12,32 +12,32 @@ var Chunk503698 = require("./503698.js"),
   Chunk435470 = require("./435470.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk834502 = require("./834502.js");
-let u = e => {
-  var t, n;
+let c = e => {
+  var t, s;
   let {
-    message: s,
-    channel: u,
-    renderColon: h,
+    message: n,
+    channel: c,
+    renderColon: u,
     hasUnreads: g
   } = e, {
     user: m,
-    author: p
-  } = (0, o.kn)(u), f = null != (t = null != (n = null == p ? true : p.nick) ? n : null == m ? true : m.username) ? t : "", v = (0, a.P)({
-    user: null == s ? true : s.author,
-    channelId: u.id,
-    guildId: u.guild_id,
-    messageId: null == s ? true : s.id,
+    author: v
+  } = (0, o.kn)(c), p = null != (t = null != (s = null == v ? true : v.nick) ? s : null == m ? true : m.username) ? t : "", f = (0, a.P)({
+    user: null == n ? true : n.author,
+    channelId: c.id,
+    guildId: c.guild_id,
+    messageId: null == n ? true : n.id,
     stopPropagation: true,
-    ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
-      name: f
+    ariaLabel: d.intl.formatToPlainString(d.t.CSIeU1, {
+      name: p
     })
-  })(null != p ? p : true)(f, u.id);
+  })(null != v ? v : true)(p, c.id);
   return (0, i.jsxs)(l.Text, {
     tag: "span",
-    className: r()(d.c, {
-      [d.p]: g
+    className: r()(h.c, {
+      [h.p]: g
     }),
     variant: "text-sm/semibold",
-    children: [v, true === h ? ": " : null]
+    children: [f, true === u ? ": " : null]
   })
 }

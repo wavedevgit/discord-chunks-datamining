@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 806621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => u
@@ -15,13 +15,13 @@ function u(e) {
   let t = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot),
     n = t ? e.getRecipientId() : null,
     u = (0, i.l)(e.id);
-  return (0, r.bG)([s.A, l.A, a.A, o.default], () => {
-    if (null != u || !t || l.A.isMessageRequest(e.id) || null != n && a.A.getRelationshipType(n) === c.eA$.BLOCKED) returnfalse;
+  return (0, l.bG)([a.A, r.A, s.A, o.default], () => {
+    if (null != u || !t || r.A.isMessageRequest(e.id) || null != n && s.A.getRelationshipType(n) === c.eA$.BLOCKED) returnfalse;
     if (null != n) {
       let e = o.default.getUser(n);
       if (null != e && e.hasFlag(c.nhx.PROVISIONAL_ACCOUNT)) returnfalse
     }
-    let r = s.A.getMessages(e.id);
-    return r.ready && !r.hasMoreBefore && !r.hasMoreAfter && r.length < 25 && !s.A.hasCurrentUserSentMessage(e.id)
+    let l = a.A.getMessages(e.id);
+    return l.ready && !l.hasMoreBefore && !l.hasMoreAfter && l.length < 25 && !a.A.hasCurrentUserSentMessage(e.id)
   }, [u, t, e.id, n])
 }

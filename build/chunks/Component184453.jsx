@@ -28,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
 function v(e) {
   let {
     tab: t
-  } = e, n = m.A.useField("selectedTab"), l = i.useMemo(() => (function(e) {
+  } = e, n = f.A.useField("selectedTab"), l = i.useMemo(() => (function(e) {
     switch (e) {
       case b.GlobalDiscoveryTab.SERVERS:
         return (0, r.jsx)(o.RR9, {
@@ -46,7 +46,7 @@ function v(e) {
   })(t), [t]), y = i.useMemo(() => (0, A.t)(t), [t]), v = n === t, S = i.useCallback(() => {
     switch (t) {
       case b.GlobalDiscoveryTab.QUESTS:
-        return v && g.A.resetState(), f.default.track(E.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
+        return v && g.A.resetState(), m.default.track(E.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, c.sN)().uuid
         }), (0, _.transitionToGlobalDiscovery)({
           tab: b.GlobalDiscoveryTab.QUESTS,

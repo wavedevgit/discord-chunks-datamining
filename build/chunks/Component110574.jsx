@@ -78,19 +78,19 @@ function G(e, t) {
   }), e
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = V(e, t), Object.getOwnPropertySymbols)
+  if (a = F(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -301,7 +301,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: x,
       className: j,
       nameplate: U,
-      hideClanTag: V = false,
+      hideClanTag: F = false,
       hideSubtext: B = false,
       hideTooltip: Y = false,
       onMouseDown: W,
@@ -337,7 +337,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: x
     }), eI = null != eo ? eo : {}, {
       onFocus: eS
-    } = eI, eT = F(eI, ["onFocus"]), eC = (0, S.gn)(x, el, null != a ? a : null), [eN, ew] = i.useState(false);
+    } = eI, eT = V(eI, ["onFocus"]), eC = (0, S.gn)(x, el, null != a ? a : null), [eN, ew] = i.useState(false);
     i.useEffect(() => {
       t && ew(false)
     }, [t]);
@@ -401,7 +401,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             colorString: null != n ? n : null,
             name: null != E ? E : ec,
             colorStrings: eC,
-            hideClanTag: V,
+            hideClanTag: F,
             user: y,
             guildId: x,
             isHovering: ef
@@ -415,7 +415,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
               colorString: null != n ? n : null,
               name: null != E ? E : ec,
               colorStrings: eC,
-              hideClanTag: V,
+              hideClanTag: F,
               user: y,
               guildId: x,
               isHovering: ef

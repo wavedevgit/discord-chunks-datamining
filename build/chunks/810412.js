@@ -99,10 +99,10 @@ function h(e, t) {
   })
 }
 var m = function(e) {
-    return e.SCREEN_SHARE = "screen share", e.CAMERA = "camera", e.MICROPHONE = "microphone", e.AUDIO = "audio", e.VOICE = "voice", e.CALL_BUTTON = "call button", e.SOUNDBOARD = "soundboard", e.GO_LIVE = "go live", e.INVITE = "invite", e.REDIRECT = "redirect", e.FRIEND_LIST = "friend list", e.FRIEND_REQUEST = "friend request", e.KEYBIND_HINT = "keybind hint", e
+    return e.SCREEN_SHARE = "screen share", e.CAMERA = "camera", e.MICROPHONE = "microphone", e.AUDIO = "audio", e.VOICE = "voice", e.CALL_BUTTON = "call button", e.SOUNDBOARD = "soundboard", e.GO_LIVE = "go live", e.INVITE = "invite", e.REDIRECT = "redirect", e.FRIEND_LIST = "friend list", e.FRIEND_REQUEST = "friend request", e.KEYBIND_HINT = "keybind hint", e.TEXT_CHAT = "text chat", e.FAVORITE = "favorite", e.GROUP_MANAGED = "group managed", e.TAB_SELECTED = "tab selected", e
   }({}),
   g = function(e) {
-    return e.ENABLED = "enabled", e.DISABLED = "disabled", e.SETTINGS_OPENED = "settings opened", e.PANEL_OPENED = "panel opened", e.OVERLAY_UNLOCKED = "overlay unlocked", e.STREAM_PREVIEWED = "stream previewed", e.INVITE_SENT = "invite sent", e.JOIN_REQUEST_SENT = "join request sent", e.PROFILE_OPENED = "profile opened", e.GUILD_PROFILE_OPENED = "guild profile opened", e.CHAT = "chat", e.ACCEPT_REQUEST = "accept request", e.DECLINE_REQUEST = "decline request", e.CANCEL_REQUEST = "cancel request", e.SEND_REQUEST = "send request", e.SEARCH = "search", e.SETTING_ADJUSTED = "setting adjusted", e
+    return e.ENABLED = "enabled", e.DISABLED = "disabled", e.SETTINGS_OPENED = "settings opened", e.PANEL_OPENED = "panel opened", e.OVERLAY_UNLOCKED = "overlay unlocked", e.STREAM_PREVIEWED = "stream previewed", e.INVITE_SENT = "invite sent", e.JOIN_REQUEST_SENT = "join request sent", e.PROFILE_OPENED = "profile opened", e.GUILD_PROFILE_OPENED = "guild profile opened", e.CHAT = "chat", e.ACCEPT_REQUEST = "accept request", e.DECLINE_REQUEST = "decline request", e.CANCEL_REQUEST = "cancel request", e.SEND_REQUEST = "send request", e.SEARCH = "search", e.SETTING_ADJUSTED = "setting adjusted", e.OPENED_TEXT_CHAT = "opened text chat", e.CLOSED_TEXT_CHAT = "closed text chat", e.CHANNEL_SELECTED = "channel selected", e.ADDED_TO_FAVORITES = "added to favorites", e.REMOVED_FROM_FAVORITES = "removed from favorites", e.FRIEND_TAB_SELECTED = "friend tab selected", e.VOICE_TAB_SELECTED = "voice tab selected", e.MESSAGES_TAB_SELECTED = "messages tab selected", e
   }({});
 
 function E(e, t) {

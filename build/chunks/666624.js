@@ -43,9 +43,9 @@ var U = Array(m - h + 1);
 d(U);
 var G = Array(g);
 d(G);
-var F = Array(b);
+var V = Array(b);
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
 }
 
@@ -115,16 +115,16 @@ function X() {
   for (o = 0, n = 0; o < g - 1; o++)
     for (e = 0, G[o] = n; e < 1 << R[o]; e++) U[n++] = o;
   for (U[n - 1] = o, s = 0, o = 0; o < 16; o++)
-    for (e = 0, F[o] = s; e < 1 << P[o]; e++) k[s++] = o;
+    for (e = 0, V[o] = s; e < 1 << P[o]; e++) k[s++] = o;
   for (s >>= 7; o < b; o++)
-    for (e = 0, F[o] = s << 7; e < 1 << P[o] - 7; e++) k[256 + s++] = o;
+    for (e = 0, V[o] = s << 7; e < 1 << P[o] - 7; e++) k[256 + s++] = o;
   for (t = 0; t <= A; t++) l[t] = 0;
   for (e = 0; e <= 143;) M[2 * e + 1] = 8, e++, l[8]++;
   for (; e <= 255;) M[2 * e + 1] = 9, e++, l[9]++;
   for (; e <= 279;) M[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) M[2 * e + 1] = 8, e++, l[8]++;
   for (Q(M, y + 1, l), e = 0; e < b; e++) j[2 * e + 1] = 5, j[2 * e] = z(e, 5);
-  r = new V(M, R, E + 1, y, A), i = new V(j, P, 0, b, A), a = new V([], D, 0, O, S)
+  r = new F(M, R, E + 1, y, A), i = new F(j, P, 0, b, A), a = new F([], D, 0, O, S)
 }
 
 function J(e) {
@@ -157,7 +157,7 @@ function en(e, t, n) {
 function er(e, t, n) {
   var r, i, a, o, s = 0;
   if (0 !== e.last_lit)
-    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? K(e, i, t) : (K(e, (a = U[i]) + E + 1, t), 0 !== (o = R[a]) && W(e, i -= G[a], o), K(e, a = H(--r), n), 0 !== (o = P[a]) && W(e, r -= F[a], o)); while (s < e.last_lit);
+    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? K(e, i, t) : (K(e, (a = U[i]) + E + 1, t), 0 !== (o = R[a]) && W(e, i -= G[a], o), K(e, a = H(--r), n), 0 !== (o = P[a]) && W(e, r -= V[a], o)); while (s < e.last_lit);
   K(e, T, t)
 }
 
@@ -220,7 +220,7 @@ function ec(e) {
     if (0 !== e.dyn_ltree[2 * t]) return c;
   return l
 }
-d(F);
+d(V);
 var eu = false;
 
 function ed(e, t, n, r) {

@@ -1,9 +1,9 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 368631, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AW: () => eE,
   Jn: () => eO,
-  Tq: () => ex,
+  Tq: () => eC,
   p_: () => eh,
   zj: () => eI
 }), require("./896048.js"), require("./321073.js");
@@ -91,19 +91,19 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
     let e = [];
     return e.push(l.M.WIDGETS_USER_SETTINGS_NEW_BADGE), e.push(l.M.DISPLAY_NAME_STYLES_NEW_BADGE), e
   },
-  eC = () => {
+  ex = () => {
     let e = eO(),
       [t] = (0, b.kn)(e);
     return t === l.M.DISPLAY_NAME_STYLES_NEW_BADGE || t === l.M.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, r.jsx)(o.LpS, {
       text: em.intl.string(em.t.y2b7CA)
     }) : null
   },
-  ex = () => {
+  eC = () => {
     let e = [];
     return (0, T.lM)("SettingsRendererConfig") && e.push(l.M.NITRO_PRIVACY_PERK_NEW_BADGE_V2), e
   },
   eS = () => {
-    let e = ex(),
+    let e = eC(),
       [t] = (0, b.kn)(e);
     return l.M.NITRO_PRIVACY_PERK_NEW_BADGE_V2 === t ? (0, r.jsx)(o.LpS, {
       text: em.intl.string(em.t.y2b7CA)
@@ -115,8 +115,8 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: b,
       searchParams: eI,
-      numOfPendingFamilyRequests: ey,
-      isOverlaySupported: eN,
+      numOfPendingFamilyRequests: eN,
+      isOverlaySupported: ey,
       shouldMergeGameSettings: ej,
       isStaff: ev,
       isInappropriateConversationWarningEnabled: eP,
@@ -275,11 +275,11 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [em.intl.string(em.t["vi7f+q"])],
         label: em.intl.string(em.t["vi7f+q"]),
         ariaLabel: em.intl.string(em.t["vi7f+q"]),
-        element: y.A,
-        newIndicator: (0, r.jsx)(eC, {}),
+        element: N.A,
+        newIndicator: (0, r.jsx)(ex, {}),
         newIndicatorDismissibleContentTypes: [...eO()],
         notice: {
-          stores: [N.A, E.A],
+          stores: [y.A, E.A],
           element: I.A
         },
         onSettingsClose: () => {
@@ -507,7 +507,7 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         label: em.intl.string(eA.default.gntCQT),
         ariaLabel: em.intl.string(eA.default.gntCQT),
         element: X.A,
-        badgeCount: ey,
+        badgeCount: eN,
         newIndicator: (0, r.jsx)(o.LpS, {
           text: em.intl.string(em.t.y2b7CA),
           color: s.A.colors.BACKGROUND_BRAND.css
@@ -846,7 +846,7 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [em.intl.string(em.t.AtCukI)],
         label: em.intl.string(em.t.AtCukI),
         ariaLabel: em.intl.string(em.t.AtCukI),
-        element: C.A,
+        element: x.A,
         predicate: () => O.A.settingsVisible,
         icon: (0, r.jsx)("img", {
           alt: "",
@@ -931,7 +931,7 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ep.nc_.TEXT,
         searchableTitles: [em.intl.string(em.t.EHlAMc)],
         parent: eu.H.CHAT,
-        predicate: () => (0, x.AA)({
+        predicate: () => (0, C.AA)({
           location: "SettingsRendererConfig"
         })
       },
@@ -939,7 +939,7 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ep.nc_.TEXT,
         searchableTitles: [em.intl.string(em.t["CtYr+U"])],
         parent: eu.H.CHAT_SOUNDMOJI,
-        predicate: () => (0, x.AA)({
+        predicate: () => (0, C.AA)({
           location: "SettingsRendererConfig"
         })
       },
@@ -1039,7 +1039,7 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [em.intl.string(ef.default.SsTtq3)],
         predicate: () => (0, T.lM)("SettingsRendererConfig"),
         newIndicator: (0, r.jsx)(eS, {}),
-        newIndicatorDismissibleContentTypes: ex(),
+        newIndicatorDismissibleContentTypes: eC(),
         url: ep.BVt.SETTINGS("private-browsing")
       },
       [eu.H.ACTIVITY_PRIVACY]: {
@@ -1083,7 +1083,7 @@ let eh = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [em.intl.string(em.t["9cb1Uz"]), em.intl.string(em.t.HcoRu0)],
         label: em.intl.string(em.t["9cb1Uz"]),
         element: ee.Ay,
-        predicate: () => !ej && eN
+        predicate: () => !ej && ey
       },
       [eu.H.CHANGELOG]: {
         section: "changelog",

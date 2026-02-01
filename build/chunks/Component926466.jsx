@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 926466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,14 +15,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk861968 = require("./861968.js");
-let f = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
-  m = function(e) {
+let m = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
+  f = function(e) {
     let {
       guild: t,
       title: n,
       message: l,
       image: s,
-      type: m,
+      type: f,
       imageStyles: A,
       imageMarginX: _,
       imageMarginTop: b,
@@ -36,21 +36,21 @@ let f = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
       className: N
     } = e;
     i.useEffect(() => {
-      f(p.HAw.CHANNEL_NOTICE_VIEWED, {
-        notice_type: m,
+      m(p.HAw.CHANNEL_NOTICE_VIEWED, {
+        notice_type: f,
         guild_id: t.id
       })
-    }, [t.id, m]);
+    }, [t.id, f]);
     let T = null;
     "function" == typeof v ? T = v() : null != v && (T = (0, r.jsx)(o.$n, {
       "data-migration-pending": true,
       className: g.x6,
       size: o.$n.Sizes.SMALL,
       onClick: () => {
-        null != m && d.default.track(p.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+        null != f && d.default.track(p.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
           source: E,
           guild_id: t.id,
-          notice_type: m
+          notice_type: f
         }), null == I || I()
       },
       fullWidth: true,
@@ -83,7 +83,7 @@ let f = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
       children: [true === O ? null : (0, r.jsx)(c.DUT, {
         onClick: () => {
           u.Ay.trackWithMetadata(p.HAw.CHANNEL_NOTICE_CLOSED, {
-            notice_type: m
+            notice_type: f
           }), null == y || y()
         },
         className: g.VN,

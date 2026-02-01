@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 509963, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T,
@@ -48,52 +48,52 @@ function E(e) {
 }
 let C = {
   [Chunk652215.WTw.INSTALLING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk652215.WTw.UPDATING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzC"], {
+    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["6F9QzC"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVq"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["2OVgVq"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1L, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.mgQg1L, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t.aTdq44, {
+    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t.aTdq44, {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk652215.WTw.REPAIRING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
@@ -105,9 +105,9 @@ class S extends Chunk64700.PureComponent {
       state: e,
       isPaused: t
     } = this.props;
-    if (e.type === _.WTw.UPDATING || e.type === _.WTw.REPAIRING || e.type === _.WTw.INSTALLING) {
-      if (t) return j.intl.string(j.t["5oxtFS"]);
-      else if (e.stage === _.OQC.PATCHING || e.stage === _.OQC.REPAIRING) return (0, l.jsx)(O.A, {
+    if (e.type === j.WTw.UPDATING || e.type === j.WTw.REPAIRING || e.type === j.WTw.INSTALLING) {
+      if (t) return x.intl.string(x.t["5oxtFS"]);
+      else if (e.stage === j.OQC.PATCHING || e.stage === j.OQC.REPAIRING) return (0, l.jsx)(O.A, {
         getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -117,7 +117,7 @@ class S extends Chunk64700.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : j.intl.string(j.t.cw57ar)
+    return null != e ? e : x.intl.string(x.t.cw57ar)
   }
   constructor(...e) {
     super(...e), v(this, "renderProgressBody", (e, t) => {
@@ -136,12 +136,12 @@ class S extends Chunk64700.PureComponent {
         u = C[a],
         d = null != u ? Object.keys(u) : [],
         {
-          unit: h,
-          time: p
+          unit: p,
+          time: h
         } = (0, f.$l)(null != c ? c / 60 : null, d);
-      if (null != u && null != h) {
-        let e = u[h];
-        return null != e ? e(r.name, p) : null
+      if (null != u && null != p) {
+        let e = u[p];
+        return null != e ? e(r.name, h) : null
       }
       return null
     })
@@ -169,7 +169,7 @@ class I extends(r = Chunk64700.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? j.intl.string(j.t.cw57ar) : (0, l.jsx)(S, {
+    return null == e || null == t ? x.intl.string(x.t.cw57ar) : (0, l.jsx)(S, {
       application: e,
       state: t,
       isPaused: n
@@ -187,20 +187,20 @@ class I extends(r = Chunk64700.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(n, x.L),
+      className: a()(n, _.L),
       onClick: this.handleOnClick,
-      children: (0, l.jsx)(h.m, {
+      children: (0, l.jsx)(p.m, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
         position: "right",
         "aria-label": false,
         children: (0, l.jsx)("div", {
-          children: (0, l.jsx)(p.a3E, {
+          children: (0, l.jsx)(h.a3E, {
             percent: e,
             colorOverride: t ? u.A.unsafe_rawColors.PRIMARY_500.css : null,
-            children: (0, l.jsx)(p.s3U, {
+            children: (0, l.jsx)(h.s3U, {
               size: "md",
               color: "currentColor",
-              className: x.k
+              className: _.k
             })
           })
         })
@@ -214,7 +214,7 @@ class I extends(r = Chunk64700.PureComponent) {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.pX)(_.BVt.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.pX)(j.BVt.APPLICATION_LIBRARY)
     })
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 480870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
@@ -12,8 +12,8 @@ function a(e) {
     channel: t,
     isReadonly: n = false,
     isCreatingThread: a = false
-  } = e, o = (0, r.Ay)(t, true), s = (0, r.Ay)(t, false);
-  return null == t || null == o ? {
+  } = e, s = (0, l.Ay)(t, true), o = (0, l.Ay)(t, false);
+  return null == t || null == s ? {
     placeholder: i.intl.string(i.t.MKDeyL),
     accessibilityLabel: i.intl.string(i.t.MKDeyL)
   } : a ? {
@@ -24,31 +24,31 @@ function a(e) {
     accessibilityLabel: i.intl.string(i.t["RRvRp/"])
   } : t.isForumPost() ? {
     placeholder: i.intl.formatToPlainString(i.t.Y6qWLc, {
-      channel: o
+      channel: s
     }),
     accessibilityLabel: i.intl.formatToPlainString(i.t.KffKoR, {
-      channel: s
-    })
-  } : l.kvI.THREADS.has(t.type) ? {
-    placeholder: i.intl.formatToPlainString(i.t["8lzR/R"], {
       channel: o
+    })
+  } : r.kvI.THREADS.has(t.type) ? {
+    placeholder: i.intl.formatToPlainString(i.t["8lzR/R"], {
+      channel: s
     }),
     accessibilityLabel: i.intl.formatToPlainString(i.t.UZIMWS, {
-      channel: s
-    })
-  } : t.type === l.rbe.DM ? {
-    placeholder: i.intl.formatToPlainString(i.t["4c+CAx"], {
       channel: o
+    })
+  } : t.type === r.rbe.DM ? {
+    placeholder: i.intl.formatToPlainString(i.t["4c+CAx"], {
+      channel: s
     }),
     accessibilityLabel: i.intl.formatToPlainString(i.t.fqOxbV, {
-      channel: s
+      channel: o
     })
   } : {
     placeholder: i.intl.formatToPlainString(i.t["8lzR/R"], {
-      channel: o
+      channel: s
     }),
     accessibilityLabel: i.intl.formatToPlainString(i.t.ih7ZSA, {
-      channel: s
+      channel: o
     })
   }
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 309038, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 309038, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   L: () => d
 });
@@ -21,14 +21,14 @@ let d = (0, Chunk419954.Qx)(Chunk780964.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_
     value: 1
   }],
   useValue: () => +!!r.Hu.useSetting(),
-  setValue: e => {
-    let t = 1 === e;
-    t ? n.A.cleanUpPrivateChannelSearchState() : n.A.cleanUpSearchState({
-      type: u.I4_.DMS
+  setValue: t => {
+    let e = 1 === t;
+    e ? n.A.cleanUpPrivateChannelSearchState() : n.A.cleanUpSearchState({
+      type: a.I4_.DMS
     }), (0, l._k)({
       prevIsCrossDMSettingEnabled: r.Hu.getSetting(),
-      isCrossDMSettingEnabled: t,
+      isCrossDMSettingEnabled: e,
       location: l.vy.USER_SETTINGS
-    }), r.Hu.updateSetting(t)
+    }), r.Hu.updateSetting(e)
   }
 })

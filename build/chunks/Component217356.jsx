@@ -1,94 +1,94 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 217356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk770178 = require("./770178.js"),
   Chunk765548 = require("./765548.js"),
   Chunk685073 = require("./685073.js"),
   Chunk534400 = require("./534400.jsx"),
   Chunk277150 = require("./277150.js");
-let h = /^(14256|21552)$/.test(require.j) ? Chunk64700.memo(function(e) {
+let p = Chunk64700.memo(function(e) {
   var t, n;
   let {
-    children: s,
-    isOverlay: h,
-    contextGuildId: g
-  } = e, x = function(e, t) {
+    children: i,
+    isOverlay: p,
+    contextGuildId: h
+  } = e, g = function(e, t) {
     if (null == e) return {};
-    var n, i, l, s = {};
+    var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
-      return s
+      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      return i
     }
-    if (s = function(e, t) {
+    if (i = function(e, t) {
         if (null == e) return {};
-        var n, i, l = {},
-          s = Object.getOwnPropertyNames(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+        var n, r, l = {},
+          i = Object.getOwnPropertyNames(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
         return l
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
-    return s
-  }(e, ["children", "isOverlay", "contextGuildId"]), [p, m] = l.useState({
+      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    return i
+  }(e, ["children", "isOverlay", "contextGuildId"]), [f, m] = l.useState({
     maskImage: "none"
-  }), A = l.useRef(null), b = (0, o.A)(() => {
-    var e, t, n, i;
-    let l = null != (e = null == (n = j.current) ? true : n.getBoundingClientRect()) ? e : null,
-      s = null != (t = null == (i = A.current) ? true : i.getBoundingClientRect()) ? t : null;
-    if (h || null == l || null == s) return void m({
+  }), b = l.useRef(null), A = (0, o.A)(() => {
+    var e, t, n, r;
+    let l = null != (e = null == (n = y.current) ? true : n.getBoundingClientRect()) ? e : null,
+      i = null != (t = null == (r = b.current) ? true : r.getBoundingClientRect()) ? t : null;
+    if (p || null == l || null == i) return void m({
       maskImage: "none"
     });
-    let r = s.right - l.right,
-      a = s.width - r;
-    a > s.width ? m({
+    let s = i.right - l.right,
+      a = i.width - s;
+    a > i.width ? m({
       maskImage: "none"
     }) : m({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
     })
-  }), j = (0, a.w)(b), O = (0, c.Wb)(x.userId, g);
-  return (0, i.jsxs)("div", {
-    className: r()(u.kL, h && u.ur),
-    ref: j,
-    children: [(0, i.jsx)("div", {
-      className: u.QV,
-      children: s
-    }), (0, i.jsx)("div", {
-      className: u.Qz,
-      children: (0, i.jsx)("span", {
-        className: r()(u.Tm, !O && h && u.pN),
-        ref: A,
-        style: p,
-        children: (0, i.jsx)(d.Ay, (t = function(e) {
+  }), y = (0, a.w)(A), O = (0, c.Wb)(g.userId, h);
+  return (0, r.jsxs)("div", {
+    className: s()(d.kL, p && d.ur),
+    ref: y,
+    children: [(0, r.jsx)("div", {
+      className: d.QV,
+      children: i
+    }), (0, r.jsx)("div", {
+      className: d.Qz,
+      children: (0, r.jsx)("span", {
+        className: s()(d.Tm, !O && p && d.pN),
+        ref: b,
+        style: f,
+        children: (0, r.jsx)(u.Ay, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[t] = r
             })
           }
           return e
-        }({}, x), n = n = {
-          contextGuildId: g,
-          className: r()(x.className, h && u.ZW),
+        }({}, g), n = n = {
+          contextGuildId: h,
+          className: s()(g.className, p && d.ZW),
           disableGuildProfile: true
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
         })(Object(n)).forEach(function(e) {
@@ -97,4 +97,4 @@ let h = /^(14256|21552)$/.test(require.j) ? Chunk64700.memo(function(e) {
       })
     })]
   })
-}) : null
+})

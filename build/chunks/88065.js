@@ -73,7 +73,7 @@ let L = {
           guild_id: t
         }
       } = e;
-      if (null == f.A.getGuild(t)) throw new E.A({
+      if (null == m.A.getGuild(t)) throw new E.A({
         errorCode: T.Lw6.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
@@ -81,7 +81,7 @@ let L = {
         let {
           prevState: r,
           dispatch: l
-        } = e, a = f.A.getGuild(t);
+        } = e, a = m.A.getGuild(t);
         if (null == a) return;
         let s = {
           guild: {
@@ -402,7 +402,7 @@ let L = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        active: m.A.isVideoEnabled()
+        active: f.A.isVideoEnabled()
       };
       return i().isEqual(r, t) || n(r), r
     }

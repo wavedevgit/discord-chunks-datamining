@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 287245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -41,11 +41,11 @@ let C = e => {
       allowLinks: false,
       allowGameMentions: false,
       previewLinkTarget: false
-    }), c = n.author, u = j.Ay.getName(c), d = (0, p.A)({
+    }), c = n.author, u = x.Ay.getName(c), d = (0, h.A)({
       userId: c.id,
       guildId: t.guild_id
     }), {
-      avatarSrc: h,
+      avatarSrc: p,
       avatarDecorationSrc: m
     } = (0, A.A)({
       userId: c.id,
@@ -59,7 +59,7 @@ let C = e => {
       }),
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(a.euF, {
-          src: h,
+          src: p,
           avatarDecoration: m,
           size: a._3J.SIZE_24,
           "aria-label": "User Avatar",
@@ -96,25 +96,25 @@ let C = e => {
       channel: t,
       idle: n,
       showChat: i
-    } = e, p = l.useRef(new Set), [g, f] = l.useState([]), [b, A] = l.useState(0), j = l.useRef(null), v = l.useRef(false), [S, I] = l.useState(true), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
+    } = e, h = l.useRef(new Set), [g, f] = l.useState([]), [b, A] = l.useState(0), x = l.useRef(null), v = l.useRef(false), [S, I] = l.useState(true), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
     l.useEffect(() => {
-      let e = p.current;
+      let e = h.current;
       return () => {
         e.size > 0 && [...e].forEach(e => clearTimeout(e))
       }
     }, []), l.useEffect(() => {
       let e = () => I(true),
         t = () => I(false);
-      return _._.subscribe(x.jej.TEXTAREA_FOCUS, e), _._.subscribe(x.jej.TEXTAREA_BLUR, t), () => {
-        _._.unsubscribe(x.jej.TEXTAREA_FOCUS, e), _._.unsubscribe(x.jej.TEXTAREA_BLUR, t)
+      return j._.subscribe(_.jej.TEXTAREA_FOCUS, e), j._.subscribe(_.jej.TEXTAREA_BLUR, t), () => {
+        j._.unsubscribe(_.jej.TEXTAREA_FOCUS, e), j._.unsubscribe(_.jej.TEXTAREA_BLUR, t)
       }
     }, []), l.useEffect(() => {
-      let e = j.current;
+      let e = x.current;
       null != e && e.scrollTo({
         top: e.scrollHeight,
         behavior: "smooth"
       })
-    }, [j]), l.useEffect(() => {
+    }, [x]), l.useEffect(() => {
       let e = Date.now();
       f(O.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(false))
     }, [t]);
@@ -134,9 +134,9 @@ let C = e => {
         let t = Date.now() > e.timestamp.getTime() + 5e3;
         if (!t) {
           let e = setTimeout(() => {
-            A(Date.now()), p.current.delete(e)
+            A(Date.now()), h.current.delete(e)
           }, 5500);
-          p.current.add(e)
+          h.current.add(e)
         }
         return t
       }, [g, b]);
@@ -149,14 +149,14 @@ let C = e => {
         if (n === t.id && (null == l ? true : l.state) === "SENT") {
           R(l);
           let e = setTimeout(() => {
-            p.current.delete(e);
-            let t = j.current;
+            h.current.delete(e);
+            let t = x.current;
             null != t && t.scrollTo({
               top: t.scrollHeight,
               behavior: "smooth"
             })
           }, 10);
-          p.current.add(e)
+          h.current.add(e)
         }
       };
       return o.h.subscribe("MESSAGE_CREATE", e), () => o.h.unsubscribe("MESSAGE_CREATE", e)
@@ -181,7 +181,7 @@ let C = e => {
             className: s()(E.b6, {
               [E.N7]: D && n
             }),
-            ref: j,
+            ref: x,
             children: g.map(e => (0, r.jsx)(C, {
               channel: t,
               message: e,
@@ -189,7 +189,7 @@ let C = e => {
             }, e.id))
           })
         })
-      }), (0, r.jsx)(h.Ay, {
+      }), (0, r.jsx)(p.Ay, {
         className: s()(E.CQ, {
           [E.N7]: n && 0 === N.length
         }),

@@ -2,7 +2,7 @@
 /** chunk id: 842241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => V
+  A: () => F
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -44,12 +44,12 @@ var Chunk503698 = require("./503698.js"),
   Chunk399162 = require("./399162.js"),
   Chunk181147 = require("./181147.js");
 
-function V(e) {
+function F(e) {
   let {
     user: t,
     currentUser: n,
     stream: i,
-    className: V,
+    className: F,
     onClose: B
   } = e, {
     themeType: H,
@@ -91,7 +91,7 @@ function V(e) {
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: Y === x.NJ8.LIGHT ? F : G
+          src: Y === x.NJ8.LIGHT ? V : G
         }), H !== M.d.MODAL && H !== M.d.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: U.um,
@@ -172,7 +172,7 @@ function V(e) {
     value: Z,
     children: (0, r.jsxs)(N.A, {
       ref: X,
-      className: V,
+      className: F,
       onAction: Q,
       onClose: B,
       "aria-label": eu,

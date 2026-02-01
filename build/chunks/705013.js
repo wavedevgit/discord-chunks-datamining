@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 705013, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 705013, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  H: () => _
+  H: () => E
 }), require("./896048.js");
 var Chunk419954 = require("./419954.js"),
   Chunk954571 = require("./954571.js"),
@@ -15,21 +15,21 @@ var Chunk419954 = require("./419954.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk536482 = require("./536482.js");
-let _ = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
-  useTitle: () => A.intl.string(S.default.WhdCGP),
-  useSubtitle: () => A.intl.string(S.default.UQ9RHJ),
+let E = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
+  useTitle: () => S.intl.string(c.default.WhdCGP),
+  useSubtitle: () => S.intl.string(c.default.UQ9RHJ),
   useValue: () => {
-    let e = (0, o.Tx)();
-    return !r.JG.useSetting().includes(e)
+    let t = (0, o.Tx)();
+    return !r.JG.useSetting().includes(t)
   },
-  setValue: e => {
-    let t = u.xk.getState().selectedGuildId,
+  setValue: t => {
+    let e = a.xk.getState().selectedGuildId,
       i = (0, s.Kk)();
-    e ? i.delete(t) : i.add(t), r.JG.updateSetting([...i]), l.default.track(c.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    t ? i.delete(e) : i.add(e), r.JG.updateSetting([...i]), l.default.track(A.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: d.m.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: T.bf.USER_SETTINGS_PRIVACY_SAFETY,
-      guild_id: t
+      guild_id: e
     })
   },
-  usePredicate: () => (0, o.Tx)() !== u.YG
+  usePredicate: () => (0, o.Tx)() !== a.YG
 })

@@ -1,24 +1,24 @@
-/** Chunk was on 33818 **/
-/** chunk id: 259374, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 55150 **/
+/** chunk id: 259374, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  k: () => o
+  k: () => s
 }), require("./896048.js");
 var Chunk311907 = require("./311907.js"),
   Chunk734057 = require("./734057.js"),
   Chunk383501 = require("./383501.js");
 
-function o(e) {
+function s(e) {
   let {
-    channelId: t
+    channelId: n
   } = e;
-  return (0, r.bG)([i.A, l.A], () => (function(e) {
-    var t;
-    let [n, r] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.A, l.A];
-    if (null == e || n.getChannelId() !== e) returnfalse;
-    let o = r.getChannel(e);
-    if (null == o || o.isGuildStageVoice()) returnfalse;
-    let a = null == (t = n.getSecureFramesState()) ? true : t.version;
+  return (0, l.bG)([i.A, r.A], () => (function(e) {
+    var n;
+    let [t, l] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.A, r.A];
+    if (null == e || t.getChannelId() !== e) returnfalse;
+    let s = l.getChannel(e);
+    if (null == s || s.isGuildStageVoice()) returnfalse;
+    let a = null == (n = t.getSecureFramesState()) ? true : n.version;
     return null != a && 0 !== a
-  })(t, [i.A, l.A]), [t])
+  })(n, [i.A, r.A]), [n])
 }
 require("./603266.js")

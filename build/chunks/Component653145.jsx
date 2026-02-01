@@ -76,11 +76,11 @@ let x = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_
   k = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
   U = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, Chunk240248.xI)(Chunk497481.__invalid_unicodeCategoryShortcutHeight),
-  F = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  V = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  V = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  F = (0, Chunk240248.xI)(Chunk319060.A.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   B = j + M + 2 * U,
   H = x + M,
-  Y = H + (F + 2 * V),
+  Y = H + (V + 2 * F),
   W = j + k + 2 * U,
   K = 7;
 
@@ -194,7 +194,7 @@ let q = e => {
   let et = i.useCallback(e => {
       var t;
       let n = null == (t = P.current) ? true : t.getListDimensions();
-      null == n || (e + n.height - F >= X ? ee(false) : ee(true))
+      null == n || (e + n.height - V >= X ? ee(false) : ee(true))
     }, [X]),
     en = i.useCallback(e => {
       var t;
@@ -207,7 +207,7 @@ let q = e => {
       if (n.type === S.s.RECENT) return t ? 0 : k;
       if (n.type === S.s.GUILD) {
         let n = R[e + 1];
-        return null != n && n.type !== S.s.GUILD ? t ? F + false * V + M + r : M : t ? r : M
+        return null != n && n.type !== S.s.GUILD ? t ? V + false * F + M + r : M : t ? r : M
       }
       return t ? M + r : 2 * M
     }, [R, $]),

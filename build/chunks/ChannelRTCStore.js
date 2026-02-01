@@ -2,7 +2,7 @@
 /** chunk id: 313961, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => eV
+  A: () => eF
 }), require("./896048.js"), require("./321073.js");
 var r, Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
@@ -75,8 +75,8 @@ let D = new Chunk626584.A("ChannelRTCStore"),
   k = {},
   U = {},
   G = {},
-  F = {},
   V = {},
+  F = {},
   B = {},
   H = {},
   Y = {},
@@ -293,7 +293,7 @@ function em(e) {
     channelId: t,
     participantsOpen: n
   } = e;
-  F[t] = n
+  V[t] = n
 }
 
 function eg(e) {
@@ -301,7 +301,7 @@ function eg(e) {
     channelId: t,
     voiceParticipantsHidden: n
   } = e;
-  V[t] = n
+  F[t] = n
 }
 
 function eE(e) {
@@ -366,7 +366,7 @@ function eA(e) {
     } catch (e) {
       D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
-    et(r) || (F[t] = false)
+    et(r) || (V[t] = false)
   }
 }
 
@@ -522,13 +522,13 @@ function eG(e) {
   var t;
   return !!(null == (t = E.A.getChannel(e)) ? true : t.isVocalThread())
 }
-class eF extends(r = Chunk311907.Ay.PersistedStore) {
+class eV extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.A, m.default, g.A, E.A, u.Ay, f.default, y.A, b.A, O.A, v.default, A.A, I.A), this.syncWith([u.Ay], ec), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(V, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.A, m.default, g.A, E.A, u.Ay, f.default, y.A, b.A, O.A, v.default, A.A, I.A), this.syncWith([u.Ay], ec), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(F, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
-      voiceParticipantsHidden: V
+      voiceParticipantsHidden: F
     }
   }
   getParticipantsVersion(e) {
@@ -545,7 +545,7 @@ class eF extends(r = Chunk311907.Ay.PersistedStore) {
   getFilteredParticipants(e) {
     var t;
     let n = K(e);
-    return null != (t = V[e]) && t ? n.toArray(S.r4.FILTERED) : n.toArray(S.r4.NOT_POPPED_OUT)
+    return null != (t = F[e]) && t ? n.toArray(S.r4.FILTERED) : n.toArray(S.r4.NOT_POPPED_OUT)
   }
   getVideoParticipants(e) {
     var t;
@@ -568,11 +568,11 @@ class eF extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getParticipantsOpen(e) {
     var t;
-    return null == (t = F[e]) || t
+    return null == (t = V[e]) || t
   }
   getVoiceParticipantsHidden(e) {
     var t;
-    return null != (t = V[e]) && t
+    return null != (t = F[e]) && t
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
@@ -631,8 +631,8 @@ class eF extends(r = Chunk311907.Ay.PersistedStore) {
     return null != n && "isPoppedOut" in n && n.isPoppedOut
   }
 }
-N(eF, "displayName", "ChannelRTCStore"), N(eF, "persistKey", "ChannelRTCStore");
-let eV = new eF(Chunk73153.h, {
+N(eV, "displayName", "ChannelRTCStore"), N(eV, "persistKey", "ChannelRTCStore");
+let eF = new eV(Chunk73153.h, {
   CONNECTION_OPEN: z,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,

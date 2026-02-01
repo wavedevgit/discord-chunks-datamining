@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 569024, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => M
@@ -71,21 +71,21 @@ async function Y(e, t, n) {
 async function W(e, t, n) {
   var r, i, a;
   w.verbose("loading early cache");
-  let c = C.A.getSocket();
+  let c = x.A.getSocket();
   c.connect();
-  let d = null != (r = N.A.getGuildId()) ? r : null,
-    u = null != (i = y.A.getChannelId()) ? i : null,
+  let d = null != (r = y.A.getGuildId()) ? r : null,
+    u = null != (i = N.A.getChannelId()) ? i : null,
     _ = performance.now(),
     p = T.A.loadCachedMessages.measureAsyncWithoutNesting(() => Y(e, d, u)),
     m = T.A.fetchGuildCache.measureAsync(() => z(e, n)),
     h = T.A.fetchGuildCache.measureAsync(() => Z(e, n)),
     E = null != e ? l.A.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => b.A.getAsync(e, null)) : Promise.resolve([]),
     O = null == e ? Promise.resolve({}) : l.A.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => f.A.getAll(e)),
-    x = null == e ? Promise.resolve([]) : l.A.timeAsync("\uD83D\uDCBE", "cache: read_states", () => g.A.getAll(e)),
+    C = null == e ? Promise.resolve([]) : l.A.timeAsync("\uD83D\uDCBE", "cache: read_states", () => g.A.getAll(e)),
     S = null == e ? Promise.resolve([]) : l.A.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => A.A.getAll(e)),
     [
       [I, j], v, P, R, L, M, G
-    ] = await Promise.all([p, m, h, E, O, x, S]),
+    ] = await Promise.all([p, m, h, E, O, C, S]),
     U = performance.now() - _;
   if (w.verbose("cache loaded in ".concat(U, "ms (channel_history ").concat(I, "ms)")), null == j) return (0, D.A)("database:history_cache_null"), w.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
   {
@@ -159,8 +159,8 @@ async function X(e, t, n, r) {
     var t;
     return t = a.stale, w.verbose("loading stale guild channels (count: ".concat(t.length, ", ids: ").concat(t.join(", "), ")")), Promise.all(t.map(t => b.A.getAsync(e, t).then(e => [t, e])))
   }) : Promise.resolve([]));
-  x.iQ.getCachedEnabled() ? w.verbose("loadLateLazyCache: not yielding to react") : (w.verbose("loadLateLazyCache: yielding to react"), await (0, E.i)((0, v.isIOS)() ? 0 : true)), T.A.loadLazyCache.recordStart();
-  let m = C.A.getSocket();
+  C.iQ.getCachedEnabled() ? w.verbose("loadLateLazyCache: not yielding to react") : (w.verbose("loadLateLazyCache: yielding to react"), await (0, E.i)((0, v.isIOS)() ? 0 : true)), T.A.loadLazyCache.recordStart();
+  let m = x.A.getSocket();
   q(() => {
     let l = performance.now();
     if (false === i) {
@@ -238,7 +238,7 @@ async function X(e, t, n, r) {
 }
 
 function q(e) {
-  let t = C.A.getSocket(),
+  let t = x.A.getSocket(),
     n = false;
   s.Ay.Emitter.batched(() => {
     try {
@@ -262,7 +262,7 @@ function q(e) {
 }
 class J extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(I.default, C.A, y.A, N.A), M || C.A.getSocket().dispatcher.unpauseDispatchQueue()
+    this.waitFor(I.default, x.A, N.A, y.A), M || x.A.getSocket().dispatcher.unpauseDispatchQueue()
   }
   hasCache() {
     return !M || B
@@ -281,7 +281,7 @@ class J extends(r = Chunk311907.Ay.Store) {
     if ("initializing" !== U) {
       (0, D.A)("cache:lazy_cache_not_initializing"), n(), setTimeout(() => {
         var e, t;
-        return null == (t = C.A.getSocket()) || null == (e = t.dispatcher) ? true : e.unpauseDispatchQueue()
+        return null == (t = x.A.getSocket()) || null == (e = t.dispatcher) ? true : e.unpauseDispatchQueue()
       }, 0);
       return
     }

@@ -1,8 +1,8 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 530804, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $n: () => b,
-  uy: () => A,
+  uy: () => h,
   vp: () => _
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
@@ -67,7 +67,7 @@ function _(e, t) {
   })(n, t), [n, t])
 }
 
-function A(e, t) {
+function h(e, t) {
   let n = (0, i.bG)([c.default], () => c.default.getId() === t),
     l = (0, i.bG)([f.A], () => f.A.getChannelId()),
     a = r.useRef(null),

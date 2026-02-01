@@ -2,7 +2,7 @@
 /** chunk id: 542535, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => V
+  A: () => F
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -76,7 +76,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = e => {
+let V = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -90,7 +90,7 @@ let F = e => {
   }) : t.description
 };
 
-function V(e) {
+function F(e) {
   var t;
   let {
     badges: n,
@@ -99,7 +99,7 @@ function V(e) {
     displayProfile: b,
     onClose: j,
     shouldOpenBadgeTooltip: U,
-    shouldGlowTenureBadge: V
+    shouldGlowTenureBadge: F
   } = e, B = i.useRef(null), {
     analyticsLocations: H
   } = (0, d.Ay)(u.A.BADGE), {
@@ -179,7 +179,7 @@ function V(e) {
           href: e.link,
           "aria-label": e.description,
           style: {
-            filter: V && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : true
+            filter: F && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : true
           }
         };
       if (N) {
@@ -207,7 +207,7 @@ function V(e) {
       let q = (0, r.jsx)(l.MzZ, G(k({}, x), {
           children: D
         })),
-        Q = F({
+        Q = V({
           badge: e,
           tieredTenureBadge: d && e.id !== L.K ? a : true,
           currentUserOwnsOrbBadge: Z

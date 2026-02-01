@@ -2,7 +2,7 @@
 /** chunk id: 323073, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $v: () => F,
+  $v: () => V,
   Bc: () => S,
   Gc: () => U,
   Gn: () => P,
@@ -13,7 +13,7 @@ require.d(exports, {
   k$: () => R,
   kK: () => k,
   p5: () => Y,
-  qR: () => V,
+  qR: () => F,
   r9: () => N,
   sP: () => W,
   vL: () => B,
@@ -173,7 +173,7 @@ let D = () => {
     let t = _.A.getGuild(e);
     return null != t && (0, d.wh)(t)
   },
-  x = e => !!D() && null != e && V(f.A.getChannel(e)),
+  x = e => !!D() && null != e && F(f.A.getChannel(e)),
   M = e => N() && x(e),
   j = e => !!M(e) && ((0, E.yO)(y.w_.NSFW_VOICE_CHANNEL), true);
 
@@ -191,14 +191,14 @@ let U = e => null != e && (e.isNSFW() || (0, d.wh)(_.A.getGuild(e.guild_id))),
     let t = (0, l.p9)();
     return U(e) && t
   },
-  F = e => {
+  V = e => {
     var t;
     if (null == e) returnfalse;
     let n = (null == (t = h.default.getCurrentUser()) ? true : t.nsfwAllowed) === true;
     return U(e) && !n
   };
 
-function V(e) {
+function F(e) {
   var t;
   if (null == e) returnfalse;
   let n = p.A.didAgree(e.guild_id),

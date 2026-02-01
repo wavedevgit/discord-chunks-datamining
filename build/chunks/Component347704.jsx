@@ -114,16 +114,16 @@ function y(e) {
         C(false)
       }
     }, [k, P, g, D, U, R, I]),
-    F = i.useCallback(() => {
+    V = i.useCallback(() => {
       L || k(g[P - 1].stepKey)
     }, [k, P, g, L]),
-    V = i.useMemo(() => ({
+    F = i.useMemo(() => ({
       currentStepKey: y,
       goToStep: k,
       goToNextStep: G,
-      goToPreviousStep: F,
+      goToPreviousStep: V,
       complete: U
-    }), [y, k, G, F, U]),
+    }), [y, k, G, V, U]),
     B = {
       variant: "secondary",
       text: I.BACK
@@ -143,7 +143,7 @@ function y(e) {
       onClick: S
     },
     W = R.hideBackButton || L ? true : (0, r.jsx)(a.Q, h(p({}, B, R.backButtonProps), {
-      onClick: F
+      onClick: V
     })),
     K = R.modalProps,
     z = "graphic" in K ? K : null,
@@ -155,7 +155,7 @@ function y(e) {
     stepCount: b.length,
     stepNumber: Z
   }), (0, r.jsx)(E.Provider, {
-    value: V,
+    value: F,
     children: (0, r.jsxs)(s.d, h(p({}, A), {
       paddingSize: null != z ? "lg" : "sm",
       children: [null != z ? (0, r.jsx)(u.V6, p({}, z)) : (0, r.jsx)(u.rQ, {

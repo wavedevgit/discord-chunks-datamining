@@ -205,16 +205,16 @@ function N(e) {
     k = null == y && !N,
     U = null != y && !N,
     G = N && null != y && !L,
-    F = (0, r.jsx)(S, v(b({}, R), {
+    V = (0, r.jsx)(S, v(b({}, R), {
       grow: false,
       onContextMenu: j,
       iconClassName: o()(u, E.LF, k && E.Ns),
       className: o()(L || w ? c : null, l && E.vu, E.wh, C[P], k && E.Sy, G && E.hA)
     }));
-  return L ? F : (0, r.jsxs)("div", {
+  return L ? V : (0, r.jsxs)("div", {
     ref: n,
     className: o()(E.re, O && E.q6, c, U && [E.TD, T[P]]),
-    children: [F, null != y ? (0, r.jsx)(h.A, {
+    children: [V, null != y ? (0, r.jsx)(h.A, {
       children: (0, r.jsx)(d.DUT, {
         "aria-label": g.intl.string(g.t.PdRCRg),
         onClick: I ? true : y,

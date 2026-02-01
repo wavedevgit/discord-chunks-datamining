@@ -7,7 +7,7 @@ require.d(exports, {
   Cz: () => N,
   JJ: () => U,
   Jp: () => M,
-  LX: () => F,
+  LX: () => V,
   Og: () => G,
   Or: () => B,
   RD: () => R,
@@ -15,7 +15,7 @@ require.d(exports, {
   Sw: () => w,
   gB: () => x,
   gn: () => D,
-  h$: () => V,
+  h$: () => F,
   iJ: () => k,
   ue: () => H
 }), require("./896048.js"), require("./457529.js");
@@ -258,7 +258,7 @@ let N = e => {
     } catch (e) {
       return (0, v.o)(new l.LG(e)), {}
     }
-  }, F = async e => {
+  }, V = async e => {
     let {
       release: t = i.P.PROD
     } = e;
@@ -284,7 +284,7 @@ let N = e => {
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, V = async (e, t, n) => {
+  }, F = async (e, t, n) => {
     s.h.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,

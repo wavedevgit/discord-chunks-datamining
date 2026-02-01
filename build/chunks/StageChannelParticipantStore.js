@@ -77,7 +77,7 @@ function M(e) {
 
 function j(e, t) {
   let n = _.A.getChannel(e);
-  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? F(n.id) : null == C.get(n.id) && C.set(n.id, n) : F(e)
+  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? V(n.id) : null == C.get(n.id) && C.set(n.id, n) : V(e)
 }
 
 function k(e) {
@@ -98,11 +98,11 @@ function G(e) {
   N.delete(e)
 }
 
-function F(e) {
+function V(e) {
   return null != e && (delete w[e], C.delete(e), true)
 }
 
-function V() {
+function F() {
   N.clear(), C.clear(), w = {}
 }
 
@@ -185,7 +185,7 @@ function X(e) {
       id: t
     }
   } = e;
-  return F(t)
+  return V(t)
 }
 
 function J(e) {
@@ -243,8 +243,8 @@ class et extends(r = Chunk311907.Ay.Store) {
 }
 S(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk73153.h, {
-  CONNECTION_OPEN: V,
-  OVERLAY_INITIALIZE: V,
+  CONNECTION_OPEN: F,
+  OVERLAY_INITIALIZE: F,
   VOICE_STATE_UPDATES: H,
   CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: Y,

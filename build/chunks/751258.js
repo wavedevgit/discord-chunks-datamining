@@ -1,10 +1,10 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 751258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => b
+  S: () => A
 }), require("./733351.js"), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./866193.js");
 var Chunk280230 = require("./280230.js"),
-  l = require.n(Chunk280230),
+  r = require.n(Chunk280230),
   Chunk715943 = require("./715943.js"),
   Chunk843472 = require("./843472.js"),
   Chunk58149 = require("./58149.js"),
@@ -14,8 +14,8 @@ var Chunk280230 = require("./280230.js"),
   Chunk253932 = require("./253932.js"),
   Chunk320501 = require("./320501.js"),
   Chunk652215 = require("./652215.js");
-let g = /\\([*?+/])/g,
-  f = {
+let f = /\\([*?+/])/g,
+  m = {
     tts: {
       action: () => ({
         tts: d.on.getSetting()
@@ -52,39 +52,39 @@ let g = /\\([*?+/])/g,
       }
     },
     reaction: {
-      match: l().anyScopeRegex(/^\+:(.+?): *$/),
+      match: r().anyScopeRegex(/^\+:(.+?): *$/),
       action(e, t) {
         let {
           isEdit: n,
-          channel: r
+          channel: l
         } = t;
-        if (n || !h.A.hasPresent(r.id)) return;
-        let l = h.A.getMessages(r.id).last();
-        if (null == l || null == l.id) return;
-        let i = o.Ay.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, false));
-        if (null != i) return (0, c.BB)(r.id, l.id, (0, u.jq)(i)), {
+        if (n || !h.A.hasPresent(l.id)) return;
+        let r = h.A.getMessages(l.id).last();
+        if (null == r || null == r.id) return;
+        let i = o.Ay.getDisambiguatedEmojiContext(l.guild_id).getByName(e.trim().slice(2, false));
+        if (null != i) return (0, c.BB)(l.id, r.id, (0, u.jq)(i)), {
           content: ""
         }
       }
     },
     searchReplace: {
-      match: l().anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
+      match: r().anyScopeRegex(/^s\/([^\/\\]*(?:\\.[^\/\\]*)*)\/([^\/\\]*(?:\\.[^\/\\]*)*)(?:\/([g]*))?$/),
       action(e, t) {
-        var n, r;
+        var n, l;
         let {
-          isEdit: l,
+          isEdit: r,
           channel: i
         } = t;
-        if (l) return;
-        let a = h.A.getLastEditableMessage(i.id);
-        if (null == a || null == a.id) return {
+        if (r) return;
+        let s = h.A.getLastEditableMessage(i.id);
+        if (null == s || null == s.id) return {
           content: ""
         };
-        let [o, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), p = null != (r = null == d ? true : d.split("")) ? r : [];
-        c = c.replace(g, (e, t) => t), u = u.replace(g, (e, t) => t);
-        let f = p.includes("g") ? a.content.replaceAll(c, u) : a.content.replace(c, u);
-        return (null == f || "" === f.trim()) && 0 === a.attachments.length ? s.A.deleteMessage(i.id, a.id) : f !== a.content && s.A.editMessage(i.id, a.id, {
-          content: f
+        let [o, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), p = null != (l = null == d ? true : d.split("")) ? l : [];
+        c = c.replace(f, (e, t) => t), u = u.replace(f, (e, t) => t);
+        let m = p.includes("g") ? s.content.replaceAll(c, u) : s.content.replace(c, u);
+        return (null == m || "" === m.trim()) && 0 === s.attachments.length ? a.A.deleteMessage(i.id, s.id) : m !== s.content && a.A.editMessage(i.id, s.id, {
+          content: m
         }), {
           content: ""
         }
@@ -97,24 +97,24 @@ let g = /\\([*?+/])/g,
     }
   };
 
-function m(e, t, n, r) {
-  return a.Ay.trackWithMetadata(p.HAw.SLASH_COMMAND_USED, {
+function g(e, t, n, l) {
+  return s.Ay.trackWithMetadata(p.HAw.SLASH_COMMAND_USED, {
     command: e
-  }), t.action(n, r)
+  }), t.action(n, l)
 }
 
-function b(e, t) {
-  for (let r in f) {
-    let l = f[r];
-    if (null != l.match) {
+function A(e, t) {
+  for (let l in m) {
+    let r = m[l];
+    if (null != r.match) {
       var n;
-      if (null == (n = l.match.regex) ? true : n.test(e)) return m(r, l, e, t);
+      if (null == (n = r.match.regex) ? true : n.test(e)) return g(l, r, e, t);
       continue
     }
     if (d.D_.getSetting() && "/" === e[0]) {
       let n = e.split(" ");
-      if (r === n[0].slice(1) && null != l.action) return m(r, l, n.slice(1).join(" "), t)
+      if (l === n[0].slice(1) && null != r.action) return g(l, r, n.slice(1).join(" "), t)
     }
   }
 }
-Object.setPrototypeOf(f, null)
+Object.setPrototypeOf(m, null)

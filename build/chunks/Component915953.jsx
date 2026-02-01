@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 915953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
@@ -27,11 +27,11 @@ function a(e) {
     onMarkerRender: b,
     stickToMarkers: h,
     fieldLayout: E
-  } = t, [O] = i.useState(() => a()), C = u(), x = null == _ ? true : _(), S = null == p ? true : p(), T = null == m ? true : m(), I = null == d ? true : d();
+  } = t, [O] = i.useState(() => a()), x = u(), C = null == _ ? true : _(), S = null == p ? true : p(), T = null == m ? true : m(), I = null == d ? true : d();
   return (0, r.jsxs)(s.L, {
     children: [(0, r.jsx)(l.Apm, {
-      label: C,
-      description: x,
+      label: x,
+      description: C,
       disabled: T,
       initialValue: O,
       minValue: o,

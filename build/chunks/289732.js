@@ -1,10 +1,10 @@
-/** Chunk was on 39289 **/
+/** Chunk was on 49438 **/
 /** chunk id: 289732, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => o
+  U: () => r
 });
-let a = require("./346344.js").newStemmer("english");
+let l = require("./346344.js").newStemmer("english");
 
-function o(e) {
-  return a.stem(e)
+function r(e) {
+  return l.stem(e)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 850729, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => M
@@ -52,11 +52,11 @@ function L(e) {
   let {
     selected: s,
     user: d,
-    badge: p,
+    badge: h,
     link: g,
     showProgressBadge: b
-  } = e, [A, y] = l.useState(false), [O, _] = l.useState(false), [j, x] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
-    x(null), T(0), clearTimeout(j)
+  } = e, [A, y] = l.useState(false), [O, j] = l.useState(false), [x, _] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, p.fy)().activePanel === p.HP.APP_ICON, G = () => {
+    _(null), T(0), clearTimeout(x)
   };
   if (null == d) return null;
   let k = w.intl.string(w.t.YUU0RF);
@@ -69,10 +69,10 @@ function L(e) {
   let V = s || A || M,
     B = (0, r.jsx)(o.Qk9, {
       selected: true,
-      lowerBadge: p > 0 ? (0, I.wN)(p) : null,
+      lowerBadge: h > 0 ? (0, I.wN)(h) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, o.o6S)(p)
+        width: (0, o.o6S)(h)
       },
       children: (0, r.jsx)(o.jlP, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -95,11 +95,11 @@ function L(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(G, 500)), T(v + 1), 15 === v)) {
+          if (!__OVERLAY__ && (null != x && clearTimeout(x), _(setTimeout(G, 500)), T(v + 1), 15 === v)) {
             G();
             let e = !a.w.get(N.wqg);
-            a.w.set(N.wqg, e), e && a.w.set(P.L, true), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), _(true), setTimeout(() => {
-              _(false)
+            a.w.set(N.wqg, e), e && a.w.set(P.L, true), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), j(true), setTimeout(() => {
+              j(false)
             }, 1e3)
           }
         },
@@ -154,13 +154,13 @@ function L(e) {
 
 function M() {
   let e = (0, v.q)(),
-    t = (0, s.bG)([j.A, _.A], () => {
-      let e = (0, c.v)(j.A.activeItems, _.A),
+    t = (0, s.bG)([x.A, j.A], () => {
+      let e = (0, c.v)(x.A.activeItems, j.A),
         {
           total: t,
           progress: n
-        } = x.zY(e),
-        r = x.uA(n, t);
+        } = _.zY(e),
+        r = _.uA(n, t);
       return r > 0 && r < 100
     }),
     n = (0, g.kX)(),
@@ -174,14 +174,14 @@ function M() {
       unviewedDiscountCount: y.A.getUnacknowledgedDiscountOffers().length
     })),
     u = i.fractionalState === T.xc.NONE ? a + o : 0,
-    h = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
-    f = (0, p.W)(),
+    p = (0, s.bG)([A.default], () => A.default.getCurrentUser()),
+    f = (0, h.W)(),
     m = n + u + f,
     E = m === u && u > 0 && n + f === 0,
     C = O.A.getHomeLink();
   return E && (C = N.BVt.APPLICATION_STORE), (0, r.jsx)(L, {
     selected: e,
-    user: h,
+    user: p,
     selectedChannelId: b.A.getChannelId(N.ME),
     badge: m,
     link: C,

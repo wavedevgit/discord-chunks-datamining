@@ -57,7 +57,7 @@ function R(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, m.S5)(n.config.expiresAt), l = (0, m.S5)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([u.A], () => u.A.getState().theme), c = (0, o.Mwr)(a) ? x.NJ8.DARK : x.NJ8.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, f.S5)(n.config.expiresAt), l = (0, f.S5)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.bG)([u.A], () => u.A.getState().theme), c = (0, o.Mwr)(a) ? x.NJ8.DARK : x.NJ8.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: w.R_,
     children: [(0, r.jsx)("img", {
@@ -92,7 +92,7 @@ function D(e) {
     quest: A
   } = e, y = (0, _.Ut)(), x = (0, s.bG)([p.A], () => p.A.isEnrolling(A.id), [A]), [D, M] = i.useState(false), k = i.useCallback(() => M(true), []), U = i.useCallback(() => M(false), []), {
     launchInGameActivity: G
-  } = (0, m.zW)(A), V = g.t$.useConfig({
+  } = (0, f.zW)(A), V = g.t$.useConfig({
     location: j.rE.ACTIVITY_PANEL
   }).enabled, B = i.useCallback(e => {
     e.stopPropagation()
@@ -126,16 +126,16 @@ function D(e) {
     quest: A,
     questContent: h.uF.ACTIVITY_PANEL,
     sourceQuestContent: h.uF.ACTIVITY_PANEL
-  }), W = (null == (t = A.userStatus) ? true : t.enrolledAt) != null, q = (null == (n = A.userStatus) ? true : n.completedAt) != null, z = (0, m.fc)(A), Q = (0, f.mU)({
+  }), W = (null == (t = A.userStatus) ? true : t.enrolledAt) != null, q = (null == (n = A.userStatus) ? true : n.completedAt) != null, z = (0, f.fc)(A), Q = (0, m.mU)({
     quest: A,
     taskDetails: z,
     location: j.rE.ACTIVITY_PANEL,
     questContent: h.uF.ACTIVITY_PANEL,
     sourceQuestContent: h.uF.ACTIVITY_PANEL,
     gameProfileSource: c.Ob.QuestActivityPanel
-  }), X = (0, O.vA)(A), Z = (0, f.NA)({
+  }), X = (0, O.vA)(A), Z = (0, m.NA)({
     quest: A
-  }), $ = X ? Z : P.intl.string(P.t.l7E81v);
+  }), J = X ? Z : P.intl.string(P.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
       u.current = e
@@ -217,7 +217,7 @@ function D(e) {
           analyticsCtxSourceQuestContent: h.uF.ACTIVITY_PANEL
         }) : (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: $,
+          text: J,
           onClick: H,
           loading: x,
           icon: (0, T.Oz)(A)

@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 196295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => O
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,45 +20,45 @@ var Chunk627968 = require("./627968.js"),
   Chunk288507 = require("./288507.js");
 let A = [];
 
-function O(e) {
+function v(e) {
   return e.notification.id
 }
 
-function E(e, t, n, r) {
+function b(e, t, n, r) {
   let {
     index: l,
     notification: a,
-    locked: o,
-    pinned: s
+    locked: s,
+    pinned: o
   } = t;
   return (0, i.jsx)(d.A, {
     index: l,
     notification: a,
-    locked: o,
-    pinned: s,
+    locked: s,
+    pinned: o,
     transitionState: n,
     cleanUp: r
   }, e)
 }
 
-function v(e) {
+function E(e) {
   return (0, i.jsx)("div", {
     className: y.k,
     children: e
   })
 }
-let b = Chunk64700.memo(function(e) {
+let O = Chunk64700.memo(function(e) {
   let {
     locked: t,
     pinned: n,
     showEmpty: d = true
-  } = e, y = (0, l.bG)([h.A, s.A], () => {
-    if (s.A.isNotificationDisabled(f.KS.TextChat)) return A;
+  } = e, y = (0, l.bG)([p.A, o.A], () => {
+    if (o.A.isNotificationDisabled(f.KS.TextChat)) return A;
     let e = [],
       i = 0;
-    for (let r of h.A.getNotifications()) {
+    for (let r of p.A.getNotifications()) {
       if (i > 4) break;
-      (!t || r.status !== m.yFH.TIMED_OUT) && (e.push({
+      (!t || r.status !== g.yFH.TIMED_OUT) && (e.push({
         index: i,
         locked: t,
         pinned: n,
@@ -66,17 +66,17 @@ let b = Chunk64700.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], c.oQ), b = r.useState(() => new p.Fn(t))[0];
-  return (r.useLayoutEffect(() => b.updateState(y, t)), r.useLayoutEffect(() => (b.initialize((0, u.b)()), () => b.cleanUp()), [b]), 0 !== y.length || t) ? (0, i.jsx)(p.Gt.Provider, {
-    value: b,
+  }, [t, n], u.oQ), O = r.useState(() => new h.Fn(t))[0];
+  return (r.useLayoutEffect(() => O.updateState(y, t)), r.useLayoutEffect(() => (O.initialize((0, c.b)()), () => O.cleanUp()), [O]), 0 !== y.length || t) ? (0, i.jsx)(h.Gt.Provider, {
+    value: O,
     children: (0, i.jsx)(a.Fai, {
       items: y,
-      renderItem: E,
-      getItemKey: O,
-      wrapChildren: v
+      renderItem: b,
+      getItemKey: v,
+      wrapChildren: E
     })
-  }) : d ? t ? null : (0, i.jsx)(o.g, {
-    emptyText: g.intl.string(g.t.O1Nbjq),
+  }) : d ? t ? null : (0, i.jsx)(s.g, {
+    emptyText: m.intl.string(m.t.O1Nbjq),
     icon: a.XFE,
     absolute: true
   }) : null

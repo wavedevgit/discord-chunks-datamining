@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 562991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -27,27 +27,27 @@ function A(e) {
     subtitle: A,
     onClick: y,
     showEmptyChannelTopic: O
-  } = e, _ = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), j = null != _ && _.length > 0, x = (0, u.Ay)(t, true), v = null != A && A.length > 0;
+  } = e, j = (0, a.bG)([d.A], () => d.A.getChannelStatus(t)), x = null != j && j.length > 0, _ = (0, u.Ay)(t, true), v = null != A && A.length > 0;
   if (l.useEffect(() => {
-      j && p.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && h.default.track(g.HAw.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [j, t.id, t.guild_id]), null == t.guild_id) return null;
-  let E = s()(m.Ui, n && x ? m.BI : null);
-  return j ? (0, r.jsx)(c.DUT, {
+    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
+  let E = s()(m.Ui, n && _ ? m.BI : null);
+  return x ? (0, r.jsx)(c.DUT, {
     className: E,
-    onClick: x ? y : true,
+    onClick: _ ? y : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: s()(m.qS, b.PT),
       children: (0, r.jsx)(o.A, {
-        children: h.A.parseVoiceChannelStatus(_, true, {
+        children: p.A.parseVoiceChannelStatus(j, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && x && (!v || i) && O ? (0, r.jsxs)(c.DUT, {
+  }) : n && _ && (!v || i) && O ? (0, r.jsxs)(c.DUT, {
     className: E,
     onClick: y,
     children: [(0, r.jsx)(c.Text, {

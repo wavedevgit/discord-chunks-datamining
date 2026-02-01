@@ -1,4 +1,4 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 420775, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -35,28 +35,28 @@ function D(e) {
     guildId: D,
     location: C,
     className: L,
-    onNavigate: b
-  } = e, x = r.useRef(null), M = (0, o.bG)([h.Ay], () => h.Ay.getGuildSidebarState(D), [D]), v = r.useRef(0), [j, U] = r.useState(null != (t = null == M ? true : M.details.additionalSearchQuery) ? t : {}), y = (0, N.KR)(a, D, {
-    addtionalQuery: j,
+    onNavigate: x
+  } = e, b = r.useRef(null), M = (0, o.bG)([I.Ay], () => I.Ay.getGuildSidebarState(D), [D]), v = r.useRef(0), [U, j] = r.useState(null != (t = null == M ? true : M.details.additionalSearchQuery) ? t : {}), y = (0, m.KR)(a, D, {
+    addtionalQuery: U,
     shouldDispatch: true
-  }), k = (0, o.bG)([O.default], () => O.default.getUser(a), [a]), P = (0, o.bG)([I.Ay], () => I.Ay.getMember(D, a), [D, a]);
+  }), k = (0, o.bG)([h.default], () => h.default.getUser(a), [a]), P = (0, o.bG)([O.Ay], () => O.Ay.getMember(D, a), [D, a]);
   (0, c.u5)(() => {
     let e = null == M ? true : M.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = x.current) || t.scrollTo({
+      null == (t = b.current) || t.scrollTo({
         to: e,
         animate: false
       })
     }
   });
   let F = r.useCallback(e => {
-      null == M || (v.current = e.target.scrollTop, (0, m.z)(D, a, M.baseChannelId, {
-        modViewPanel: p.g.MESSAGE_HISTORY,
-        additionalSearchQuery: j,
+      null == M || (v.current = e.target.scrollTop, (0, N.z)(D, a, M.baseChannelId, {
+        modViewPanel: S.g.MESSAGE_HISTORY,
+        additionalSearchQuery: U,
         scrollOffset: v.current
       }))
-    }, [D, a, M, j]),
+    }, [D, a, M, U]),
     w = (0, s.throttle)(F, 300),
     X = r.useCallback(e => {
       var t, n;
@@ -78,7 +78,7 @@ function D(e) {
           })
         }
         return e
-      }({}, j), n = n = {
+      }({}, U), n = n = {
         offset: 25 * e
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -90,21 +90,21 @@ function D(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      U(l), (0, m.z)(D, a, M.baseChannelId, {
-        modViewPanel: p.g.MESSAGE_HISTORY,
+      j(l), (0, N.z)(D, a, M.baseChannelId, {
+        modViewPanel: S.g.MESSAGE_HISTORY,
         additionalSearchQuery: l,
         scrollOffset: v.current
       })
-    }, [D, a, M, j]),
-    B = null != (n = null == j ? true : j.offset) ? n : 0,
-    V = (0, o.bG)([d.A], () => {
+    }, [D, a, M, U]),
+    B = null != (n = null == U ? true : U.offset) ? n : 0,
+    V = (0, o.bG)([_.A], () => {
       if (null == y.result) return [];
       let e = (0, E.wG)("");
       return y.result.messages.map(e => {
         let [t] = e;
-        return (0, _.rh)(t)
+        return (0, d.rh)(t)
       }).map(t => {
-        let n = d.A.getMessage(t.id, t.channel_id),
+        let n = _.A.getMessage(t.id, t.channel_id),
           l = new T.Ay(t);
         return null != n && (l = l.merge({
           attachments: n.attachments,
@@ -145,10 +145,10 @@ function D(e) {
     children: [(0, l.jsx)(f.A, {
       guildId: D,
       userId: a,
-      onNavigate: b
+      onNavigate: x
     }), (0, l.jsx)(u.T7Y, {
       className: R.W,
-      ref: x,
+      ref: b,
       onScroll: w,
       children: (0, l.jsx)(A.A, {
         messages: V,
@@ -156,9 +156,9 @@ function D(e) {
         renderEmbeds: true,
         blockCount: 0,
         ignoreCount: 0,
-        scrollTo: S.tEg,
+        scrollTo: p.tEg,
         onPageChange: X,
-        onBlockedResultsClick: S.tEg
+        onBlockedResultsClick: p.tEg
       })
     })]
   })

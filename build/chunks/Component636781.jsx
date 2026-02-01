@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 636781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -36,7 +36,7 @@ function g(e) {
     })
   })
 }
-let f = function(e) {
+let m = function(e) {
   let {
     guild: t
   } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getChannels(t.id)[o.vM][0]), i = (0, l.bG)([c.A], () => null != n && c.A.can(h.xBc.CONNECT, n.channel));

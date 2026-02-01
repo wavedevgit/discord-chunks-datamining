@@ -63,8 +63,8 @@ class c extends Chunk64700.Component {
       renderFooter: c,
       onNotificationShow: d,
       onDismissClick: u,
-      onNotificationClick: p,
-      onConfirmClick: h,
+      onNotificationClick: h,
+      onConfirmClick: p,
       onCancelClick: f
     } = o, g = function(e, t) {
       if (null == e) return {};
@@ -98,8 +98,8 @@ class c extends Chunk64700.Component {
       locked: r,
       onNotificationShow: this.handleNotificationShow,
       onDismissClick: null != u ? this.handleDismissClick : true,
-      onNotificationClick: null != p ? this.handleNotificationClick : null,
-      onConfirmClick: null != h ? this.handleConfirmClick : null,
+      onNotificationClick: null != h ? this.handleNotificationClick : null,
+      onConfirmClick: null != p ? this.handleConfirmClick : null,
       onCancelClick: null != f ? this.handleCancelClick : null,
       renderFooter: this.renderFooter,
       expand: !r

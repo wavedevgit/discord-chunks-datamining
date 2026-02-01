@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 526369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -40,16 +40,16 @@ function C(e) {
     popoutType: w
   } = e, R = (0, f.Us)() === v.BRT.POPOUT, D = (0, a.bG)([A.A], () => A.A.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: L
-  } = (0, j.P)(), M = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(I.id), [I]), G = (0, b.vp)(I.id, t), k = l.useCallback(() => {
+  } = (0, x.P)(), M = (0, a.bG)([p.A], () => p.A.getUserParticipantCount(I.id), [I]), G = (0, b.vp)(I.id, t), k = l.useCallback(() => {
     (0, s.r)(() => {
-      j.P.setState({
+      x.P.setState({
         dismissedActivityEntryPointTileChannel: I.id
       })
     })
   }, [I.id]);
   l.useEffect(() => {
     null != L && I.id !== L && (0, s.r)(() => {
-      j.P.setState({
+      x.P.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
@@ -58,10 +58,10 @@ function C(e) {
     V = (null == D ? true : D.afkChannelId) === I.id,
     B = I.userLimit <= 0 || I.userLimit > 1,
     H = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-    F = (0, p.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    K = (0, u.et)(I.id) !== u.xy.CAN_LAUNCH,
-    Y = null != L && L === I.id,
-    W = G.map(e => t => (0, r.jsx)(_.Ay, {
+    F = (0, h.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    Y = (0, u.et)(I.id) !== u.xy.CAN_LAUNCH,
+    K = null != L && L === I.id,
+    W = G.map(e => t => (0, r.jsx)(j.Ay, {
       participant: e,
       channel: I,
       className: E.V,
@@ -83,14 +83,14 @@ function C(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != D && !V && (!(M >= 2) || !H || K || F || Y ? B && 1 === M && U && (H && !K ? W.push(e => (0, r.jsx)(O.y, {
+  }, []), null != D && !V && (!(M >= 2) || !H || Y || F || K ? B && 1 === M && U && (H && !Y ? W.push(e => (0, r.jsx)(O.y, {
     channel: I,
     guild: D,
     width: e,
     inPopout: R,
     handleClose: k,
     userParticipantCount: M
-  })) : W.push(e => (0, r.jsx)(x.A, {
+  })) : W.push(e => (0, r.jsx)(_.A, {
     width: e,
     channel: I,
     guild: D,

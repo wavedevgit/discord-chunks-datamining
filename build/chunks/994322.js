@@ -1,4 +1,4 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 994322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a,
@@ -13,14 +13,14 @@ function a(e) {
   let {
     location: t,
     options: n
-  } = e, i = o(), {
+  } = e, r = o(), {
     showKeybindIndicators: l
-  } = s.A.useExperiment({
+  } = i.A.useExperiment({
     location: t
   }, n);
-  return l && i
+  return l && r
 }
 
 function o() {
-  return !(0, i.bG)([l.A], () => l.A.getWindowVisible(r.MLl.ACTIVITY_POPOUT))
+  return !(0, r.bG)([l.A], () => l.A.getWindowVisible(s.MLl.ACTIVITY_POPOUT))
 }

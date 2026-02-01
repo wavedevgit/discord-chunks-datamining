@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 983511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => M
@@ -99,7 +99,7 @@ function L(e) {
     onBack: u,
     onNext: m,
     onClose: O
-  } = e, [x, S] = i.useState(false), [j, R] = i.useState(null), [L, w] = i.useMemo(() => {
+  } = e, [C, S] = i.useState(false), [j, R] = i.useState(null), [L, w] = i.useMemo(() => {
     try {
       return [(0, f.v)(s, false), false]
     } catch (e) {
@@ -116,11 +116,11 @@ function L(e) {
   let {
     premiumSubscriptionPlan: G,
     premiumGuildPlan: U
-  } = (0, o.cf)([C.A], () => {
-    let e = C.A.get(s.planId);
+  } = (0, o.cf)([x.A], () => {
+    let e = x.A.get(s.planId);
     return {
       premiumSubscriptionPlan: e,
-      premiumGuildPlan: null != e ? C.A.getForSkuAndInterval((0, T.mH)(N.pe.GUILD), e.interval, e.intervalCount) : null
+      premiumGuildPlan: null != e ? x.A.getForSkuAndInterval((0, T.mH)(y.pe.GUILD), e.interval, e.intervalCount) : null
     }
   }), {
     analyticsLocations: k
@@ -143,18 +143,18 @@ function L(e) {
       let {
         planId: t
       } = e;
-      return !N.pW.has(t)
+      return !y.pW.has(t)
     }) && null == s.renewalMutations || (null == (l = s.renewalMutations) ? true : l.items.find(e => {
       let {
         planId: t
       } = e;
-      return !N.pW.has(t)
+      return !y.pW.has(t)
     })) != null,
     Y = L.some(e => {
       let {
         planId: t
       } = e;
-      return N.pW.has(t)
+      return y.pW.has(t)
     }),
     W = F || Y ? V.total - B.total : -B.total,
     {
@@ -167,7 +167,7 @@ function L(e) {
   return s.isPausedForFractionalPremium && d.fetched && (Z = v.intl.format(v.t.eb0xgS, {
     expirationDate: d.endsAt.toDate()
   })), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.A, {
+    children: [(0, r.jsx)(N.A, {
       "data-migration-pending": true,
       onClose: O
     }), (0, r.jsxs)(c.$mQ, {
@@ -206,7 +206,7 @@ function L(e) {
       children: [(0, r.jsx)(c.Button, {
         variant: "critical-primary",
         text: v.intl.string(v.t["/AS/gM"]),
-        disabled: x,
+        disabled: C,
         onClick: async () => {
           try {
             S(true), R(null), await D(s, L, k, a), m()
@@ -260,9 +260,9 @@ function M(e) {
     onClose: s
   } = e;
   i.useEffect(() => {
-    x.A.hasFetchedSubscriptions() || (0, d.hP)()
+    C.A.hasFetchedSubscriptions() || (0, d.hP)()
   }, []);
-  let a = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+  let a = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
     u = (0, m.A)(),
     [g, A] = i.useState(1),
     {

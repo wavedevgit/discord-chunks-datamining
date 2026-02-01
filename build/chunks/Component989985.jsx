@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 989985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => a
+  _: () => s
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,36 +9,36 @@ var Chunk503698 = require("./503698.js"),
   i = require.n(Chunk503698),
   Chunk36353 = require("./36353.js");
 
-function a(e) {
+function s(e) {
   let {
     bannerIcon: t,
     bannerHeader: n,
-    bannerSubtext: l,
-    textStyles: a,
+    bannerSubtext: r,
+    textStyles: s,
     headerStyles: o,
     containerStyles: c,
     children: u
   } = e;
-  return (0, r.jsxs)("div", {
-    className: i()(s.Ew, c),
-    children: [(0, r.jsxs)("div", {
-      className: i()(s.lt, a),
-      children: [null != t && ("string" == typeof t ? (0, r.jsx)("img", {
+  return (0, l.jsxs)("div", {
+    className: i()(a.Ew, c),
+    children: [(0, l.jsxs)("div", {
+      className: i()(a.lt, s),
+      children: [null != t && ("string" == typeof t ? (0, l.jsx)("img", {
         src: t,
         alt: "",
-        className: s.q3
-      }) : t), (0, r.jsxs)("div", {
-        className: s._M,
-        children: [(0, r.jsx)("div", {
-          className: i()(s.U_, o),
+        className: a.q3
+      }) : t), (0, l.jsxs)("div", {
+        className: a._M,
+        children: [(0, l.jsx)("div", {
+          className: i()(a.U_, o),
           children: n
-        }), null != l && (0, r.jsx)("div", {
-          className: s.mi,
-          children: l
+        }), null != r && (0, l.jsx)("div", {
+          className: a.mi,
+          children: r
         })]
       })]
-    }), (0, r.jsx)("div", {
-      className: s.uu,
+    }), (0, l.jsx)("div", {
+      className: a.uu,
       children: u
     })]
   })

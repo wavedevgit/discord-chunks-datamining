@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 587837, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => a
@@ -20,7 +20,7 @@ function a(e) {
     var e, n;
     d(null != (e = null == (n = t.current) ? true : n.offsetHeight) ? e : null)
   }, [t]);
-  let h = (0, i.A)({
+  let p = (0, i.A)({
     initialElementDimension: u,
     minDimension: o,
     maxDimension: c,
@@ -30,7 +30,7 @@ function a(e) {
     orientation: i.R.VERTICAL_BOTTOM
   });
   return (0, r.jsx)("div", {
-    onMouseDown: h,
+    onMouseDown: p,
     className: s.D
   })
 }

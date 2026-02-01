@@ -1,7 +1,7 @@
-/** Chunk was on 46636 **/
+/** Chunk was on 57010 **/
 /** chunk id: 783592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => _
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -11,7 +11,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk287809 = require("./287809.js"),
   Chunk652215 = require("./652215.js");
 
-function d(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,20 +20,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,31 +45,31 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = false,
-  h = {},
-  m = {};
+let g = false,
+  I = {},
+  A = {};
 
-function O(e) {
+function S(e) {
   let t = false;
   return e.forEach(e => {
-    t = false !== A(e) || t
+    t = false !== p(e) || t
   }), t
 }
 
 function E(e) {
-  let t = m[e];
+  let t = A[e];
   if (null == t) returnfalse;
   let n = t.gameId;
-  return null != h[n] && (h = p({}, h), delete h[n][e], 0 === Object.values(h[n]).length && delete h[n]), m = p({}, m), delete m[e], true
+  return null != I[n] && (I = h({}, I), delete I[n][e], 0 === Object.values(I[n]).length && delete I[n]), A = h({}, A), delete A[e], true
 }
 
-function A(e) {
+function p(e) {
   let {
     user: t,
     activities: n
   } = e;
   if (null == t) returnfalse;
-  let r = n.filter(e => e.type !== c.$pd.CUSTOM_STATUS);
+  let r = n.filter(e => e.type !== d.$pd.CUSTOM_STATUS);
   if (0 === r.length) return E(t.id);
   let i = false;
   return r.forEach(e => {
@@ -77,22 +77,22 @@ function A(e) {
       var n, r;
       let i = (0, s.A)(e);
       if (null == i) return E(t.id);
-      let l = m[t.id];
+      let l = A[t.id];
       null != l && l.gameId !== i && E(t.id);
-      let o = null != (n = null == (r = e.timestamps) ? true : r.start) ? n : Date.now(),
-        a = {
+      let a = null != (n = null == (r = e.timestamps) ? true : r.start) ? n : Date.now(),
+        u = {
           userId: t.id,
           activity: e,
-          startedPlaying: o
+          startedPlaying: a
         };
-      return h = g(p({}, h), {
-        [i]: g(p({}, h[i]), {
-          [a.userId]: a
+      return I = f(h({}, I), {
+        [i]: f(h({}, I[i]), {
+          [u.userId]: u
         })
-      }), m = g(p({}, m), {
-        [a.userId]: {
+      }), A = f(h({}, A), {
+        [u.userId]: {
           gameId: i,
-          startedPlaying: a.startedPlaying
+          startedPlaying: u.startedPlaying
         }
       }), true
     })(e, t) && (i = true)
@@ -101,38 +101,38 @@ function A(e) {
 
 function y() {
   let e, t = false;
-  return o.A.shouldFetch() || f || (h = {}, m = {}, e = false, a.A.getUserIds().forEach(t => {
-    let n = u.default.getUser(t);
-    null != n && (e = A({
+  return a.A.shouldFetch() || g || (I = {}, A = {}, e = false, u.A.getUserIds().forEach(t => {
+    let n = o.default.getUser(t);
+    null != n && (e = p({
       user: n,
-      activities: a.A.getActivities(t)
+      activities: u.A.getActivities(t)
     }) || e)
-  }), t = e), f = !o.A.shouldFetch(), t
+  }), t = e), g = !a.A.shouldFetch(), t
 }
-class N extends(r = Chunk311907.Ay.Store) {
+class v extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(a.A, o.A, u.default), this.syncWith([o.A], y)
+    this.waitFor(u.A, a.A, o.default), this.syncWith([a.A], y)
   }
   get games() {
-    return h
+    return I
   }
   get usersPlaying() {
-    return m
+    return A
   }
   get gameIds() {
-    return Object.keys(h)
+    return Object.keys(I)
   }
   getNowPlaying(e) {
-    return h[e]
+    return I[e]
   }
   getUserGame(e) {
-    return m[e]
+    return A[e]
   }
 }
-d(N, "displayName", "NowPlayingStore");
-let v = new N(Chunk73153.h, {
+c(v, "displayName", "NowPlayingStore");
+let _ = new v(Chunk73153.h, {
   CONNECTION_OPEN: function() {
-    h = {}, m = {}
+    I = {}, A = {}
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
@@ -140,22 +140,22 @@ let v = new N(Chunk73153.h, {
       presences: n
     } = e, r = false;
     return t.forEach(e => {
-      O(e.presences) && (r = true)
-    }), O(n) && (r = true), r
+      S(e.presences) && (r = true)
+    }), S(n) && (r = true), r
   },
   LOGOUT: function() {
-    h = {}, m = {}
+    I = {}, A = {}
   },
   PRESENCE_UPDATES: function(e) {
     let {
       updates: t
     } = e;
-    return t.map(e => A(e)).some(e => e)
+    return t.map(e => p(e)).some(e => e)
   },
   PRESENCES_REPLACE: function(e) {
     let {
       presences: t
     } = e;
-    return O(t)
+    return S(t)
   }
 })

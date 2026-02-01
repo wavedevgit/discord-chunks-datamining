@@ -2,7 +2,7 @@
 /** chunk id: 674168, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  m: () => A
+  m: () => O
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -23,21 +23,21 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk956790 = require("./956790.js");
 
-function A(e) {
+function O(e) {
   var t;
   let {
     onClose: n,
-    markAsDismissed: A
-  } = e, O = (0, r.bG)([p.default], () => p.default.getCurrentUser()), v = (t = null == O ? true : O.premiumType) === y.PremiumTypes.TIER_2 ? _.intl.string(_.t.jqO5Qn) : null == t ? _.intl.string(_.t.f2qjw5) : _.intl.string(_.t.SblICW), E = h.Ay.canUseCustomCallSounds(O);
+    markAsDismissed: O
+  } = e, _ = (0, r.bG)([h.default], () => h.default.getCurrentUser()), v = (t = null == _ ? true : _.premiumType) === y.PremiumTypes.TIER_2 ? m.intl.string(m.t.jqO5Qn) : null == t ? m.intl.string(m.t.f2qjw5) : m.intl.string(m.t.SblICW), E = p.Ay.canUseCustomCallSounds(_);
   return (0, i.jsxs)(c.A, {
     isShown: true,
     type: c.i.PREMIUM,
     className: b.ne,
     backgroundClassName: b.u4,
-    children: [null != A ? (0, i.jsx)(o.DUT, {
+    children: [null != O ? (0, i.jsx)(o.DUT, {
       className: b.VN,
-      onClick: () => null == A ? true : A(g.i.DISMISS),
-      "aria-label": _.intl.string(_.t.cpT0Cq),
+      onClick: () => null == O ? true : O(g.i.DISMISS),
+      "aria-label": m.intl.string(m.t.cpT0Cq),
       children: (0, i.jsx)(o.PGe, {
         size: "xs",
         color: "currentColor",
@@ -51,7 +51,7 @@ function A(e) {
         className: b.ax
       }), (0, i.jsx)(o.Heading, {
         variant: "heading-sm/bold",
-        children: _.intl.string(_.t.dTbAxx)
+        children: m.intl.string(m.t.dTbAxx)
       })]
     }), (0, i.jsx)(s.E, {
       variant: "text-sm/normal",
@@ -60,14 +60,14 @@ function A(e) {
       onClick: function() {
         (0, u.openUserSettings)(d.X.SOUNDBOARD_CATEGORY, {
           section: f.nc_.VOICE,
-          subsection: m.MJ
-        }), null == n || n(), null == A || A(g.i.PRIMARY)
+          subsection: A.MJ
+        }), null == n || n(), null == O || O(g.i.PRIMARY)
       },
-      text: _.intl.string(_.t.RzWDqY),
+      text: m.intl.string(m.t.RzWDqY),
       fullWidth: true
     }) : (0, i.jsx)(a.A, {
       textOptions: {
-        textOverride: _.intl.string(_.t.pj0XBN)
+        textOverride: m.intl.string(m.t.pj0XBN)
       },
       subscriptionTier: y.pe.TIER_2,
       premiumModalAnalyticsLocation: {
@@ -75,7 +75,7 @@ function A(e) {
         object: f.ZSU.BUTTON_CTA
       },
       color: l.$n.Colors.GREEN,
-      onSubscribeModalClose: () => null == A ? true : A(g.i.PRIMARY)
+      onSubscribeModalClose: () => null == O ? true : O(g.i.PRIMARY)
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 439075, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -42,7 +42,7 @@ function j(e) {
       },
       sourceQuestContent: A
     }), N && (0, p.l9)()
-  }, [w, r.id, m, N, A, j]), P = l.useCallback(() => {
+  }, [w, r.id, m, N, A, j]), k = l.useCallback(() => {
     S(false), w({
       questId: r.id,
       event: b.HAw.QUEST_HOVER_OFF,
@@ -53,7 +53,7 @@ function j(e) {
       },
       sourceQuestContent: A
     })
-  }, [w, r.id, m, A, j]), k = l.useContext(x.X), {
+  }, [w, r.id, m, A, j]), P = l.useContext(x.X), {
     visibilityElementRef: R,
     almostVisibleInViewport: D
   } = function(e) {
@@ -68,7 +68,7 @@ function j(e) {
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (t = null == k || null == (n = k.current) ? true : n.getScrollerNode()) ? t : null);
+  }(null != (t = null == P || null == (n = P.current) ? true : n.getScrollerNode()) ? t : null);
   return (0, a.jsxs)("div", {
     id: "quest-tile-".concat(r.id),
     ref: e => {
@@ -76,9 +76,9 @@ function j(e) {
     },
     className: i()(v.k, s),
     onMouseEnter: I,
-    onMouseLeave: P,
+    onMouseLeave: k,
     onFocus: I,
-    onBlur: P,
+    onBlur: k,
     children: [(0, a.jsx)(g.A, {
       quest: r,
       isHovering: C,

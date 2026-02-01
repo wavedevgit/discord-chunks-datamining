@@ -1,4 +1,4 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 46673 **/
 /** chunk id: 271866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   SH: () => T,
@@ -22,8 +22,8 @@ async function _(e, t) {
   });
   try {
     if (!await (0, l.Ir)(e)) throw Error("Do not have access!");
-    let n = a.A.getApplication(e);
-    null == n && (n = c.Ay.createFromServer(await o.Ay.fetchApplication(e)));
+    let n = o.A.getApplication(e);
+    null == n && (n = c.Ay.createFromServer(await a.Ay.fetchApplication(e)));
     let s = (0, r.Lt)(n.flags, d.gfo.EMBEDDED);
     if (s && (null == t || !u.A.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
     return s || E.Cd(n), i.h.dispatch({

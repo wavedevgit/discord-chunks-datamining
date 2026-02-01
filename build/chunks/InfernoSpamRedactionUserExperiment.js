@@ -1,9 +1,9 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 559149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => r
+  A: () => l
 });
-let r = (0, require("./600975.js").C)({
+let l = (0, require("./600975.js").C)({
   kind: "user",
   id: "2021-12_inferno_spam_redaction",
   label: "Inferno Spam Redaction",

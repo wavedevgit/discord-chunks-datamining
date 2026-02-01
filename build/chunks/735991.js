@@ -9,12 +9,12 @@ require.d(exports, {
   Ii: () => U,
   K4: () => B,
   ME: () => H,
-  MJ: () => F,
+  MJ: () => V,
   N3: () => R,
   NO: () => j,
   Pp: () => q,
   V1: () => Z,
-  X2: () => V,
+  X2: () => F,
   b7: () => M,
   fl: () => k,
   hX: () => K,
@@ -160,7 +160,7 @@ function G(e) {
   return P(e) && x(e) ? e instanceof h.Ay ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
-function F(e) {
+function V(e) {
   let {
     command: t,
     optionValues: n,
@@ -202,7 +202,7 @@ function F(e) {
   return p()
 }
 
-function V(e) {
+function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n

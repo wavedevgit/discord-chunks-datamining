@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 422361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => ei
@@ -124,10 +124,10 @@ class er extends Chunk557534.Ay {
       channel: t,
       connected: n,
       showEmptyChannelTopic: l
-    } = this.props, i = null == (e = (0, x.M)(this.props.subtitle)) ? true : e.subtitle, {
+    } = this.props, i = null == (e = (0, _.M)(this.props.subtitle)) ? true : e.subtitle, {
       hovered: s
     } = this.state;
-    return (0, r.jsx)(q.A, {
+    return (0, r.jsx)(X.A, {
       onClick: this.handleVoiceStatusClick,
       channel: t,
       connected: n,
@@ -144,7 +144,7 @@ class er extends Chunk557534.Ay {
       withGuildIcon: l,
       tabIndex: i
     } = this.props;
-    return (0, r.jsx)(X.A, {
+    return (0, r.jsx)(q.A, {
       channel: e,
       collapsed: n,
       collapsedMax: 6,
@@ -173,16 +173,16 @@ class er extends Chunk557534.Ay {
       mentionCount: a,
       locked: o,
       sorting: d,
-      isUserOver: h,
-      connectChannelDropTarget: p,
+      isUserOver: p,
+      connectChannelDropTarget: h,
       connectChannelDragSource: g,
       connectUserDropTarget: f,
       connectDragPreview: m,
       canReorderChannel: b,
       canMoveMembers: A,
-      showTutorial: _,
-      hasActiveEvent: j,
-      embeddedApps: x,
+      showTutorial: j,
+      hasActiveEvent: x,
+      embeddedApps: _,
       isSubscriptionGated: v,
       isFavoriteSuggestion: E,
       withGuildIcon: C,
@@ -217,16 +217,16 @@ class er extends Chunk557534.Ay {
           position: "right",
           renderPopout: this.renderPopout,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: T || !P && this.state.shouldShowActivities && !d && !h,
+          shouldShow: T || !P && this.state.shouldShowActivities && !d && !p,
           children: () => (0, r.jsx)(c.m, {
             text: this.getTooltipText(),
             children: (0, r.jsxs)(W.Ay, {
               ref: this.channelItemRef,
               className: $.Ki,
               iconClassName: s()({
-                [$.Gj]: j || S || w
+                [$.Gj]: x || S || w
               }),
-              hasActiveEvent: j,
+              hasActiveEvent: x,
               channel: e,
               selected: !E && t,
               connected: n,
@@ -248,12 +248,12 @@ class er extends Chunk557534.Ay {
                 unread: l,
                 mentionCount: a,
                 userCount: D,
-                embeddedActivitiesCount: x.length,
+                embeddedActivitiesCount: _.length,
                 isSubscriptionGated: v
               }),
               "aria-describedby": (0, O.A)({
                 channel: e,
-                embeddedApps: x
+                embeddedApps: _
               }),
               withGuildIcon: C,
               children: [E && (0, r.jsxs)(r.Fragment, {
@@ -266,7 +266,7 @@ class er extends Chunk557534.Ay {
         })
       }), this.renderVoiceUsers()]
     });
-    return A && (L = f(L)), b && (L = p(g(L))), _ && (L = (0, r.jsx)(R.A, {
+    return A && (L = f(L)), b && (L = h(g(L))), j && (L = (0, r.jsx)(R.A, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
@@ -297,7 +297,7 @@ class er extends Chunk557534.Ay {
         shouldShowGuildVerificationPopout: true
       });
       let a = i && s > 0;
-      a && d.A.updateChatOpen(n.id, true), j.A.handleVoiceConnect({
+      a && d.A.updateChatOpen(n.id, true), x.A.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: l,
@@ -308,7 +308,7 @@ class er extends Chunk557534.Ay {
       let {
         channel: t
       } = this.props, l = M.A.getGuild(t.getGuildId());
-      null != l && (0, h.L3)(e, async () => {
+      null != l && (0, p.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("53378")]).then(n.bind(n, 698193));
@@ -438,7 +438,7 @@ function ei(e) {
   } = e, u = (0, a.cf)([U.Ay], () => ({
     unread: U.Ay.hasUnread(n.id),
     mentionCount: U.Ay.getMentionCount(n.id)
-  })), d = (0, a.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([L.A, G.A, k.A], () => {
+  })), d = (0, a.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), p = (0, a.cf)([L.A, G.A, k.A], () => {
     let e = L.A.getChannel(n.parent_id),
       r = G.A.getCheck(n.guild_id);
     return {
@@ -449,9 +449,9 @@ function ei(e) {
       bypassLimit: k.A.can(J.xBc.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), g = (0, f.Ay)(n), m = (0, _.Ay)(n), y = (0, I.Qs)(n.id), O = (0, a.bG)([A.A], () => null != A.A.getStartTime(n), [n]), {
-    isSubscriptionGated: j,
-    needSubscriptionToAccess: x
+  }), h = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), g = (0, f.Ay)(n), m = (0, j.Ay)(n), y = (0, I.Qs)(n.id), O = (0, a.bG)([A.A], () => null != A.A.getStartTime(n), [n]), {
+    isSubscriptionGated: x,
+    needSubscriptionToAccess: _
   } = (0, S.A)(n.id), E = (0, v.A)(), C = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), N = e.connected || (null == E ? true : E.channelId) === n.id, {
     enableHangStatus: w,
     showEmptyChannelTopic: R
@@ -468,28 +468,28 @@ function ei(e) {
   }), {
     enableHighlight: M,
     enableWaveformIcon: H
-  } = (0, b.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = M && F, W = H && F, z = (0, Y.A)({
+  } = (0, b.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, Y = M && F, W = H && F, z = (0, K.A)({
     channel: n,
     isChannelSelected: s,
     isChannelCollapsed: o,
     voiceStates: c,
-    isSubscriptionGated: j,
-    needSubscriptionToAccess: x,
+    isSubscriptionGated: x,
+    needSubscriptionToAccess: _,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), q = N && null == z;
+  }), X = N && null == z;
   return (0, r.jsx)(el, en(et({
     channelName: m,
     embeddedApps: g,
     embeddedActivityType: J.$pd.PLAYING,
-    video: p,
+    video: h,
     hasActiveEvent: null != y,
-    isSubscriptionGated: j,
-    needSubscriptionToAccess: x
-  }, u, h, e), {
+    isSubscriptionGated: x,
+    needSubscriptionToAccess: _
+  }, u, p, e), {
     connected: N,
     isFavoriteSuggestion: i && !C,
-    forceShowButtons: q,
+    forceShowButtons: X,
     channelInfo: z,
     resolvedUnreadSetting: d,
     enableHangStatus: w,
@@ -497,7 +497,7 @@ function ei(e) {
     enableOpenTIVForPing: D,
     hasChannelInfo: null != z,
     hasStartTime: O,
-    shouldHighlightChannel: K,
+    shouldHighlightChannel: Y,
     shouldUseAnimatedWaveform: W
   }))
 }

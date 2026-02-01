@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 509725, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 509725, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -14,15 +14,15 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_ENABLE_REMINDERS, {
   useTitle: () => o.intl.string(o.t["3zwNf6"]),
   useSubtitle: () => o.intl.string(o.t.m4Cjj9),
   useValue: () => (0, n.bG)([s.A], () => s.A.getSettings().remindersEnabled),
-  setValue: e => r.Mt(e),
+  setValue: t => r.Mt(t),
   usePredicate: () => {
     let {
-      showClipsHeaderEntrypoint: e
+      showClipsHeaderEntrypoint: t
     } = l.L_.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     });
-    return e
+    return t
   }
 })

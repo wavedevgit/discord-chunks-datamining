@@ -1,4 +1,4 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 302959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x,
@@ -67,7 +67,7 @@ function S(e) {
     onAction: u
   } = e;
   return (0, r.jsx)(o.A, {
-    className: (0, _.t)(h, "actions", t),
+    className: (0, _.t)(A, "actions", t),
     type: t,
     source: n,
     activity: l,
@@ -86,7 +86,7 @@ let j = Chunk153331.A.Types,
       user: n,
       useStoreStream: o = true,
       showActions: _ = true,
-      hideHeader: h = false,
+      hideHeader: A = false,
       showChannelDetails: j = false
     } = e, x = function(e, t) {
       if (null == e) return {};
@@ -107,30 +107,30 @@ let j = Chunk153331.A.Types,
     }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), I = (0, i.bG)([y.A, m.A], () => {
       var e;
       return m.A.getChannel(null == (e = y.A.getVoiceStateForUser(n.id)) ? true : e.channelId)
-    }), P = (0, d.v)("UserActivityContainer", I), E = (0, i.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), T = (null == t ? true : t.type) === A.$pd.HANG_STATUS && P ? I : null, N = (0, i.bG)([g.A, y.A, m.A], () => {
+    }), E = (0, d.v)("UserActivityContainer", I), C = (0, i.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), P = (null == t ? true : t.type) === h.$pd.HANG_STATUS && E ? I : null, N = (0, i.bG)([g.A, y.A, m.A], () => {
       var e, r;
-      return (0, a.A)(t, A.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != T ? g.A.getGuild(T.getGuildId()) : null
-    }), w = (0, i.bG)([g.A], () => null != E ? g.A.getGuild(E.guildId) : null), C = (0, i.bG)([c.A], () => {
+      return (0, a.A)(t, h.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != P ? g.A.getGuild(P.getGuildId()) : null
+    }), T = (0, i.bG)([g.A], () => null != C ? g.A.getGuild(C.guildId) : null), w = (0, i.bG)([c.A], () => {
       if (null != t)
         if (null != t.application_id) return c.A.getApplication(t.application_id);
         else return c.A.getApplicationByName(t.name);
       return null
     });
     return (l.useEffect(() => {
-      (null == t ? true : t.type) === A.$pd.HANG_STATUS && P && b.default.track(A.HAw.VIEW_HANG_STATUS, v({
+      (null == t ? true : t.type) === h.$pd.HANG_STATUS && E && b.default.track(h.HAw.VIEW_HANG_STATUS, v({
         source: "UserActivity",
         other_user_id: n.id
-      }, (0, u.A)(null == T ? true : T.id)))
-    }, [null == t ? true : t.type, P, T, n.id]), (null == t ? true : t.type) !== A.$pd.HANG_STATUS || P) ? (0, r.jsx)(s.A, O(v({}, x), {
+      }, (0, u.A)(null == P ? true : P.id)))
+    }, [null == t ? true : t.type, E, P, n.id]), (null == t ? true : t.type) !== h.$pd.HANG_STATUS || E) ? (0, r.jsx)(s.A, O(v({}, x), {
       activity: t,
       user: n,
-      application: C,
-      hideHeader: h,
-      activityGuild: null != N ? N : w,
+      application: w,
+      hideHeader: A,
+      activityGuild: null != N ? N : T,
       showChannelDetails: j,
       channel: j ? I : true,
       renderActions: _ ? () => (0, r.jsx)(S, O(v({}, x), {
-        applicationStream: E,
+        applicationStream: C,
         activity: t,
         user: n
       })) : null,

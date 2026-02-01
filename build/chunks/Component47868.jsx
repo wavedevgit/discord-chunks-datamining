@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 47868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -18,8 +18,8 @@ function d(e) {
     iconContainerClassName: n,
     icon: i,
     title: d,
-    description: h,
-    userCount: p,
+    description: p,
+    userCount: h,
     onClick: g,
     highlight: f,
     onDismiss: m
@@ -44,8 +44,8 @@ function d(e) {
         variant: "text-xs/normal",
         color: "text-strong",
         className: u.mG,
-        children: h
-      }), null != p && p > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: p
+      }), null != h && h > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           color: "text-strong",
@@ -56,7 +56,7 @@ function d(e) {
           color: "text-strong",
           className: u.mG,
           children: c.intl.format(c.t.NywdIj, {
-            count: p
+            count: h
           })
         })]
       }) : null]

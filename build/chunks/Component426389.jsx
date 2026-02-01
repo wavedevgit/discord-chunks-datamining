@@ -53,20 +53,20 @@ let D = 15 * Chunk927813.A.Millis.MINUTE,
       partiedMembers: p,
       applicationStreams: h,
       currentActivities: g,
-      voiceChannels: f
-    } = t, m = p.length, A = h.length, _ = g.length, b = f.length > 0, E = i.useCallback(() => {
+      voiceChannels: m
+    } = t, f = p.length, A = h.length, _ = g.length, b = m.length > 0, E = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, I.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
       I.default.track(P.HAw.NOW_PLAYING_CARD_HOVERED, {
-        num_users: m,
+        num_users: f,
         num_streams: A,
         num_activities: _,
         in_voice_channel: b,
         games_detected: e
       })
-    }, [m, A, _, b, g]), O = i.useMemo(() => o()(E, D), [E]);
+    }, [f, A, _, b, g]), O = i.useMemo(() => o()(E, D), [E]);
     return null != c || null != d ? (0, r.jsx)(u.YNO, {
       targetElementRef: s,
       position: "left",
@@ -139,7 +139,7 @@ function U() {
     needsRefresh: E.A.shouldFetch(),
     fetching: E.A.isFetching(),
     currentUser: O.default.getCurrentUser()
-  })), s = (0, c.bG)([h.A], () => h.A.quests), o = (0, m.oH)(Array.from(s.values()));
+  })), s = (0, c.bG)([h.A], () => h.A.quests), o = (0, f.oH)(Array.from(s.values()));
   i.useEffect(() => (d.h.wait(() => S.O()), () => {
     d.h.wait(() => S.v())
   }), [null == a ? true : a.id]), i.useEffect(() => {
@@ -147,7 +147,7 @@ function U() {
   }, [n, l]);
   let {
     use_api_call: b
-  } = f.M.getConfig({
+  } = m.M.getConfig({
     location: "NowPlaying"
   }), {
     questsByPartyId: I,

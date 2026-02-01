@@ -11,13 +11,13 @@ require.d(exports, {
   SN: () => H,
   Ub: () => en,
   Yj: () => F,
-  e2: () => J,
+  e2: () => $,
   hk: () => V,
   lG: () => er,
   px: () => X,
   qG: () => Y,
   sq: () => ee,
-  uM: () => $
+  uM: () => J
 }), require("./747238.js"), require("./591487.js"), require("./727858.js"), require("./896048.js"), require("./321073.js"), require("./65821.js"), require("./812715.js"), require("./938796.js"), require("./638769.js"), require("./735438.js");
 var r, i, Chunk567243 = require("./567243.js"),
   Chunk179771 = require("./179771.js"),
@@ -106,7 +106,7 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [P.rbe.GUILD_CATEGORY, ...f.OU].includes(e.type) || n.push(new Promise(t => {
+  return [P.rbe.GUILD_CATEGORY, ...m.OU].includes(e.type) || n.push(new Promise(t => {
     E.A.whenReady(e.id, () => t()), c.A.fetchMessages({
       channelId: e.id,
       limit: P.EMb
@@ -135,7 +135,7 @@ function F(e) {
       channelId: e.channel_id
     }).map(G),
     n = A.A.getChannel(e.channel_id),
-    r = null != e.author ? new m.A(e.author) : true,
+    r = null != e.author ? new f.A(e.author) : true,
     i = null != e.author ? (0, h.FT)(r, n) : true;
   return {
     id: e.id,
@@ -255,7 +255,7 @@ function Z(e) {
     }, "Invalid Client ID")
   })
 }
-async function $(e, t, n) {
+async function J(e, t, n) {
   let r = d.A.getApplication(t);
   if ("string" == typeof n)
     if (e.transport === x.z4.POST_MESSAGE) {
@@ -284,7 +284,7 @@ async function $(e, t, n) {
     flags: o
   }
 }
-async function J(e, t) {
+async function $(e, t) {
   let n = U[e];
   null == n && (n = new o.A(t ? 2 : 60, k), U[e] = n), await n.process()
 }

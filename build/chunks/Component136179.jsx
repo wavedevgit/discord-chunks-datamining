@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 136179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -20,8 +20,8 @@ function u(e) {
   } = e, {
     horizontalScrollNotice: u,
     handleScroll: d,
-    handleSetScrollerRef: h,
-    handleSetContainerRef: p
+    handleSetScrollerRef: p,
+    handleSetContainerRef: h
   } = (0, o.A)(t), g = (0, r.jsx)("div", {
     className: c.vi,
     children: (0, r.jsx)("div", {
@@ -33,13 +33,13 @@ function u(e) {
     children: [u, (0, r.jsx)(a.T7Y, {
       className: c.XG,
       orientation: "horizontal",
-      ref: h,
+      ref: p,
       onScroll: d,
       children: g
     })]
   })), (0, r.jsx)("div", {
     className: c.Rc,
-    ref: p,
+    ref: h,
     children: g
   })
 }

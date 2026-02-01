@@ -1,7 +1,7 @@
-/** Chunk was on 66692 **/
+/** Chunk was on 93169 **/
 /** chunk id: 479335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => b
+  u: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,25 +14,25 @@ var Chunk627968 = require("./627968.js"),
   Chunk961350 = require("./961350.js"),
   Chunk985018 = require("./985018.jsx");
 
-function b(e) {
+function f(e) {
   let {
     userId: t,
     channelId: n,
-    guildId: b,
+    guildId: f,
     minimal: g = false
-  } = e, f = (0, u.k)({
+  } = e, b = (0, u.k)({
     channelId: n
-  }), A = (0, i.bG)([d.default], () => d.default.getId() === t), h = (0, o.Us)(), j = l.useCallback(() => {
-    c.A.openSecureFramesUserVerificationModal(t, n, () => (0, s.z4)({
+  }), p = (0, l.bG)([c.default], () => c.default.getId() === t), v = (0, s.Us)(), _ = r.useCallback(() => {
+    o.A.openSecureFramesUserVerificationModal(t, n, () => (0, d.z4)({
       userId: t,
       channelId: n,
-      guildId: b
-    }), h)
-  }, [h, n, b, t]);
-  return !f || A ? null : (0, r.jsx)(a.Drp, {
+      guildId: f
+    }), v)
+  }, [v, n, f, t]);
+  return !b || p ? null : (0, i.jsx)(a.Drp, {
     id: "secure-frames-user-verification",
-    label: p.intl.string(p.t["8ErYvY"]),
-    action: j,
+    label: A.intl.string(A.t["8ErYvY"]),
+    action: _,
     icon: g ? a.V1C : null,
     leadingAccessory: g ? {
       type: "icon",

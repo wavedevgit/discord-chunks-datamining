@@ -45,7 +45,7 @@ function v() {
       onClearSearch: w,
       onSearchSubmit: L,
       isSearchVisible: R
-    } = (0, m.X)({
+    } = (0, f.X)({
       loadId: e.current
     }),
     D = g.A.useField("searchBarState"),
@@ -76,7 +76,7 @@ function v() {
     {
       onGuildCardSeen: Y,
       onGuildCardClick: K
-    } = (0, f.p)({
+    } = (0, m.p)({
       guildDiscoveryCardSeenManager: F.current,
       loadId: e.current
     });

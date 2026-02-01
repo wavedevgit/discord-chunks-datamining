@@ -1,1 +1,1 @@
-{"id":"83375","type":"store","data":{"name":"ProxyBlockStore","functions":[{"name":"blockedByProxy","args":[]}],"events":["PROXY_BLOCKED_REQUEST"]},"fromModule":{"id":"64935"}}
+{"id":"83375","type":"store","data":{"name":"ProxyBlockStore","functions":[{"name":"blockedByProxy","args":[]}],"events":["PROXY_BLOCKED_REQUEST"]},"fromModule":{"id":"9753"}}

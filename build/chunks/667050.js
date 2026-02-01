@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Bf: () => k,
-  Br: () => F,
+  Br: () => V,
   fr: () => B,
   m4: () => x,
   oS: () => G,
@@ -71,7 +71,7 @@ let x = {
     return Math.floor(Math.random() * n.length)
   };
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32;
   if (null != e.id) {
     var n;
@@ -86,7 +86,7 @@ function F(e) {
   return null != i ? P.Ay.getURL(i.surrogates) : ""
 }
 
-function V(e, t) {
+function F(e, t) {
   return i()(e).map(e => {
     var n;
     return null != (n = e[t]) ? n : null
@@ -96,8 +96,8 @@ function V(e, t) {
 function B(e) {
   var t, n, r, i, a, o;
   if (e.length < 1) return "";
-  let s = V(e, "userId"),
-    l = V(e, "emojiName"),
+  let s = F(e, "userId"),
+    l = F(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? true : l[0]) ? t : "" : l.join(", ");
   return s.length < 1 ? "" : 1 === s.length ? L.intl.formatToPlainString(L.t.yZYxzF, {
     firstUsername: null == (n = w.default.getUser(s[0])) ? true : n.username,

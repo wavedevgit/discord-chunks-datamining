@@ -36,9 +36,9 @@ function j(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > I + v && (r = 0);
-  let i = (0, f.kv)(e.applicationId, _.A),
+  let i = (0, m.kv)(e.applicationId, _.A),
     l = E.A.getVoiceChannelId(),
-    a = m.default.getSessionId(),
+    a = f.default.getSessionId(),
     c = b.A.getMediaSessionId();
   u.A.updateActivity({
     applicationId: e.applicationId,
@@ -83,7 +83,7 @@ function P() {
 }
 class w extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(m.default, A.A, _.A, b.A, p.Ay, E.A, h.A), this.syncWith([h.A], x)
+    this.waitFor(f.default, A.A, _.A, b.A, p.Ay, E.A, h.A), this.syncWith([h.A], x)
   }
   getActivities() {
     return S

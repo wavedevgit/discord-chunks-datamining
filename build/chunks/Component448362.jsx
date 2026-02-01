@@ -74,7 +74,7 @@ let _ = () => (0, r.jsx)("img", {
         let t = M === k.current;
         e > 0 && ("earn" !== M || !t) && j("earn")
       }, [j, M]),
-      F = {
+      V = {
         currentAnimationType: M,
         animationTypeRef: k,
         onSetAnimationDurationMS: P
@@ -97,7 +97,7 @@ let _ = () => (0, r.jsx)("img", {
         }),
         children: [(0, r.jsx)("div", {
           className: o()(d.hr, L ? d.nr : true),
-          children: (0, r.jsx)(u.Ay, p({}, F))
+          children: (0, r.jsx)(u.Ay, p({}, V))
         }), (0, r.jsx)(c.A, {
           value: x,
           onValueChange: G,

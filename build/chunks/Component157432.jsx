@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 157432, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -14,18 +14,18 @@ var Chunk627968 = require("./627968.js"),
 let d = e => {
   let {
     channelId: t
-  } = e, n = l.useCallback(() => {
-    a.A.reopenModReport(t)
+  } = e, n = r.useCallback(() => {
+    s.A.reopenModReport(t)
   }, [t]);
-  return (0, r.jsx)(s._, {
-    bannerHeader: (0, r.jsx)(i.Text, {
+  return (0, l.jsx)(a._, {
+    bannerHeader: (0, l.jsx)(i.Text, {
       variant: "text-md/medium",
       color: "text-muted",
       children: c.intl.string(o.default["0eUUeF"])
     }),
     headerStyles: u.U,
     containerStyles: u.c,
-    children: (0, r.jsx)(i.Button, {
+    children: (0, l.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
       text: c.intl.string(o.default["6quCi9"]),

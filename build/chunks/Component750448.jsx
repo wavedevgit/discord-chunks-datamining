@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 750448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,10 +29,10 @@ function y(e) {
   return e === g.sFm.SERVER_DISCOVERY_BADGE && !d.A.hasViewed(g.sFm.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
 let O = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, b, g.sFm.E3_SERVER_DISCOVERY_BADGE, m]),
-  _ = Chunk64700.forwardRef(function(e, t) {
+  j = Chunk64700.forwardRef(function(e, t) {
     var n, l;
     let d = (0, i.yK)([u.Ay, c.A, o.default], () => O(u.Ay.getGuildFolders(), c.A.getUnreadPrivateChannelIds(), o.default.getStoreChangeSentinel())),
-      p = (0, i.bG)([h.A], () => h.A.isFocused()),
+      h = (0, i.bG)([p.A], () => p.A.isFocused()),
       g = (0, i.bG)([a.A], () => a.A.getExpandedFolders());
     return (0, r.jsx)(s.A, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ let O = (0, Chunk583613.L_)((e, t, n) => ["null", ...t, ...e, b, g.sFm.E3_SERVER
       textUnread: f.intl.string(f.t.y2b7CA),
       textMention: f.intl.string(f.t.y2b7CA),
       isMentioned: y,
-      animate: p,
+      animate: h,
       expandedFolders: g
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 309198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -52,10 +52,10 @@ function A(e) {
         modalKey: _.V
       })
     }, []),
-    C = i.useCallback(() => {
+    x = i.useCallback(() => {
       O()
     }, [O]),
-    x = i.useCallback(() => {
+    C = i.useCallback(() => {
       null == A.phone ? O({
         onAddedPhone: s.A.enableSMS
       }) : s.A.enableSMS()
@@ -81,8 +81,8 @@ function A(e) {
     }, []),
     T = i.useCallback(e => null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false)), []),
     I = null != A.phone,
-    y = A.hasFlag(u.nhx.MFA_SMS);
-  if (I || y) {
+    N = A.hasFlag(u.nhx.MFA_SMS);
+  if (I || N) {
     let e = b ? A.phone : T(A.phone);
     n = (0, r.jsxs)(l.Text, {
       variant: "text-sm/normal",
@@ -95,7 +95,7 @@ function A(e) {
       })]
     })
   }
-  if (y) t = (0, r.jsx)(l.Button, {
+  if (N) t = (0, r.jsx)(l.Button, {
     variant: "critical-secondary",
     size: "sm",
     text: p.intl.string(p.t.KLWnit),
@@ -110,14 +110,14 @@ function A(e) {
         variant: "primary",
         size: "sm",
         text: null != e ? e : p.intl.string(p.t.DZQe23),
-        onClick: x,
+        onClick: C,
         loading: f,
         disabled: null != e
       }), I ? (0, r.jsx)(l.Button, {
         variant: "secondary",
         size: "sm",
         text: p.intl.string(p.t.Ulqq6K),
-        onClick: C
+        onClick: x
       }) : null]
     })
   }

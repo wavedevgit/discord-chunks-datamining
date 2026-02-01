@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 359348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk345314 = require("./345314.js"),
   Chunk145394 = require("./145394.js");
 
-function j(e) {
+function x(e) {
   (0, o.L3)(e, async () => {
     let {
       default: e
@@ -48,7 +48,7 @@ function j(e) {
     }({}, t))
   })
 }
-let x = e => {
+let _ = e => {
     let {
       keybindString: t,
       targetElementRef: n
@@ -73,7 +73,7 @@ let x = e => {
       }),
       graphic: {
         type: "image",
-        src: _
+        src: j
       },
       caretConfig: {
         align: "center"
@@ -86,15 +86,15 @@ let x = e => {
       {
         parentAnalyticsLocation: t
       } = (0, c.Ay)(),
-      n = (0, i.bG)([h.A], () => h.A.hasLayers()),
+      n = (0, i.bG)([p.A], () => p.A.hasLayers()),
       s = (0, m.Et)(),
       o = (0, i.bG)([f.A], () => f.A.getIsAtMaxSaveClipOperations()),
-      O = (0, i.bG)([p.Ay], () => p.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
+      O = (0, i.bG)([h.Ay], () => h.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
     if (!s || null == O || n) return null;
-    let _ = g.dI(O.shortcut, true);
+    let j = g.dI(O.shortcut, true);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x, {
-        keybindString: _,
+      children: [(0, r.jsx)(_, {
+        keybindString: j,
         targetElementRef: e
       }), (0, r.jsx)(d.A, {
         ref: e,
@@ -105,7 +105,7 @@ let x = e => {
         onClick: () => {
           (0, b.l0)(), (0, u.X)(t, u.O.CLIP)
         },
-        onContextMenu: j,
+        onContextMenu: x,
         icon: a.xgA
       })]
     })

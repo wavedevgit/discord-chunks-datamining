@@ -149,7 +149,7 @@ let ee = Chunk64700.memo(function(e) {
     preview: y,
     subscribeToGroupId: b,
     hideGuildTag: v
-  } = e, A = (0, j.Ay)(t, n), I = i.useMemo(() => (0, V.y)({
+  } = e, A = (0, j.Ay)(t, n), I = i.useMemo(() => (0, F.y)({
     message: t,
     channel: a,
     user: null == t ? true : t.author,
@@ -162,7 +162,7 @@ let ee = Chunk64700.memo(function(e) {
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     position: "right",
-    renderPopout: () => (0, r.jsx)(F.A, {
+    renderPopout: () => (0, r.jsx)(V.A, {
       roleIcon: l,
       guild: T
     }),
@@ -286,11 +286,11 @@ function en(e) {
     var e;
     return null != (e = o.displayCompactAvatars) ? e : N.Ay.displayCompactAvatars
   }), U = (0, B.A)(h), G = g ? X : J, {
-    pendingAvatarDecoration: F
+    pendingAvatarDecoration: V
   } = (0, I.A)({
     guildId: l
-  }), V = (0, y.lw)({
-    pendingValue: h.author.id === (null == j ? true : j.id) ? F : true,
+  }), F = (0, y.lw)({
+    pendingValue: h.author.id === (null == j ? true : j.id) ? V : true,
     userValue: null == (t = h.author) ? true : t.avatarDecoration,
     guildValue: null == m ? true : m.guildMemberAvatarDecoration,
     guildId: l
@@ -303,7 +303,7 @@ function en(e) {
     guildId: l,
     size: G,
     animateOnHover: null != E ? !R : !b,
-    avatarDecorationOverride: V,
+    avatarDecorationOverride: F,
     showPending: true
   }), z = h.isInteractionPlaceholder(), Z = i.useMemo(() => {
     var e, t;
@@ -471,7 +471,7 @@ let eo = Chunk64700.memo(function(e) {
     }), P = (0, c.bG)([N.Ay], () => {
       var t;
       return null != (t = e.displayCompactAvatars) ? t : N.Ay.displayCompactAvatars
-    }), D = i.useMemo(() => (0, V.k)({
+    }), D = i.useMemo(() => (0, F.k)({
       message: t,
       channel: y,
       user: null == t ? true : t.author,
@@ -480,7 +480,7 @@ let eo = Chunk64700.memo(function(e) {
     }), [t, y, a]), L = (0, c.bG)([w.A], () => ea(a, P, p, w.A.getGuild(e.guildId)), [a, P, p, e.guildId]), x = i.useMemo(() => {
       let e = [];
       return (0, l.Lt)(t.flags, H.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(v.A, {}, "suppress-notifications")), e
-    }, [t]), M = (0, U.d$)(t, _), j = (0, U.xl)(t), k = h ? "".concat(M) : "".concat(M, " ").concat(j), G = (null == n ? true : n.state) === b.a.LOADED ? (0, U.nS)(t) : true, F = true !== h;
+    }, [t]), M = (0, U.d$)(t, _), j = (0, U.xl)(t), k = h ? "".concat(M) : "".concat(M, " ").concat(j), G = (null == n ? true : n.state) === b.a.LOADED ? (0, U.nS)(t) : true, V = true !== h;
     return (0, r.jsx)(er, {
       message: t,
       avatar: C,
@@ -513,7 +513,7 @@ let eo = Chunk64700.memo(function(e) {
         [W.hB]: null != D || x.length > 0
       }),
       compact: a,
-      showTimestamp: F,
+      showTimestamp: V,
       showTimestampOnHover: f,
       ariaLabelledBy: k,
       ariaDescribedBy: G,

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 689874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -25,7 +25,7 @@ let m = e => {
     if (null == t) returnfalse;
     let n = u.A.getCurrentUserActiveStream(),
       r = null == (e = c.Ay.getVisibleGame()) ? true : e.windowHandle;
-    return !!(null != n && (0, h.TD)() || null != r && (0, h.Ao)()) || o.A.getParticipants(t).some(e => e.type === p.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
+    return !!(null != n && (0, p.TD)() || null != r && (0, p.Ao)()) || o.A.getParticipants(t).some(e => e.type === h.lp.USER && d.A.isClipsEnabledForUser(e.user.id))
   }) ? (0, r.jsx)(s.m, {
     text: g.intl.string(g.t.DJXW3G),
     children: (0, r.jsxs)("div", {

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 731542, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 731542, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   N: () => d
 });
@@ -13,5 +13,5 @@ var Chunk419954 = require("./419954.js"),
 let d = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_CATEGORY, {
   useTitle: () => o.intl.string(o.t.MNaVwq),
   useInlineNotice: Chunk589641.I,
-  buildLayout: () => [r.o, a.a, u.n]
+  buildLayout: () => [r.o, u.a, a.n]
 })

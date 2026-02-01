@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 502103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,13 +16,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk349828 = require("./349828.js"),
   Chunk124759 = require("./124759.js");
 
-function f(e) {
+function m(e) {
   var t;
-  let f = (0, s.TZ)(e),
-    m = g.dR.some(t => (null == e ? true : e.id) !== h.V && c.Ib(t, e)),
+  let m = (0, s.TZ)(e),
+    f = g.dR.some(t => (null == e ? true : e.id) !== h.V && c.Ib(t, e)),
     A = (null == e ? true : e.defaultMessageNotifications) === d.orn.ALL_MESSAGES,
     _ = (0, u.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.dJq),
-    b = f && (m || A) && !_,
+    b = m && (f || A) && !_,
     E = i.useCallback(() => {
       var t;
       (0, u._$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.dJq, true, p.i.DISMISS)
@@ -54,7 +54,7 @@ function f(e) {
           return e
         }({
           guild: e,
-          canEveryoneModerate: m,
+          canEveryoneModerate: f,
           isDefaultNotificationsAllMessages: A
         }, n))
       }, {
@@ -64,5 +64,5 @@ function f(e) {
         guild_id: null != (t = null == e ? true : e.id) ? t : d.dJq
       }), O.current = true
     }
-  }, [m, e, E, A, b])
+  }, [f, e, E, A, b])
 }

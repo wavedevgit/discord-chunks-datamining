@@ -188,14 +188,14 @@ let R = g(h({}, l().defaultRules.link), {
       U = T(t(E, x), j, [f.D.EMOJI]),
       G = T(t(b, x), k);
     if (null == U || null == G || 0 === C(U).trim().length) return u();
-    let F = i().pick(t.rules, M),
-      V = l().parserFor(F)(p.whitespaceSanitized, x),
+    let V = i().pick(t.rules, M),
+      F = l().parserFor(V)(p.whitespaceSanitized, x),
       B = _.whitespaceSanitized,
       {
         target: H
       } = P;
     return {
-      content: V,
+      content: F,
       target: H,
       title: B
     }

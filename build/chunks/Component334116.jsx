@@ -28,12 +28,12 @@ let g = (0, Chunk268218.Fe)({
     webpackId: 140539,
     name: "PopoutWindowChannelCall"
   }),
-  f = (0, Chunk268218.Fe)({
+  m = (0, Chunk268218.Fe)({
     createPromise: () => n.e("36133").then(n.bind(n, 943472)),
     webpackId: 943472,
     name: "PopoutWindowCallTile"
   }),
-  m = (0, Chunk268218.Fe)({
+  f = (0, Chunk268218.Fe)({
     createPromise: () => n.e("36308").then(n.bind(n, 911315)),
     webpackId: 911315,
     name: "PopoutWindowStageChannelCall"
@@ -59,7 +59,7 @@ class b extends Chunk272355.A {
     let {
       channel: t
     } = e;
-    u.open(d.MLl.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(m, {
+    u.open(d.MLl.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(f, {
       windowKey: e,
       channelId: t.id
     }) : (0, r.jsx)(g, {
@@ -97,7 +97,7 @@ class b extends Chunk272355.A {
     })
   }
   handleOpenActivityPopout() {
-    (0, l.Vz)(p.G, c.A.getDefaultLayout(p.G, 3), 3), u.open(d.MLl.ACTIVITY_POPOUT, e => (0, r.jsx)(_, {
+    (0, l.Vz)(p.G, c.A.getDefaultLayout(p.G, 4), 4), u.open(d.MLl.ACTIVITY_POPOUT, e => (0, r.jsx)(_, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -110,7 +110,7 @@ class b extends Chunk272355.A {
         channelId: t,
         participantId: n
       } = e, i = (0, s.A)(t, n);
-      u.open(i, e => (0, r.jsx)(f, {
+      u.open(i, e => (0, r.jsx)(m, {
         windowKey: e,
         channelId: t,
         participantId: n

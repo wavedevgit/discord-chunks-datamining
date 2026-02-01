@@ -1,83 +1,83 @@
-/** Chunk was on 64935 **/
-/** chunk id: 837057, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 49282 **/
+/** chunk id: 837057, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
   transitionToGlobalDiscovery: () => function e(t) {
-    var n, g, _;
-    let h = t.tab;
+    var l, m, _;
+    let O = t.tab;
     switch (u.A.setState({
-        selectedTab: h
-      }), h) {
-      case d.GlobalDiscoveryTab.SERVERS:
-        let b = t.selectedServersTab;
-        return null != b ? l.A.setState({
-          selectedTab: b,
-          entrypoint: null != (n = t.entrypoint) ? n : f.J8.UNKNOWN
-        }) : l.A.setState({
-          entrypoint: null != (g = t.entrypoint) ? g : f.J8.UNKNOWN
-        }), (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
-      case d.GlobalDiscoveryTab.APPS:
+        selectedTab: O
+      }), O) {
+      case p.GlobalDiscoveryTab.SERVERS:
+        let N = t.selectedServersTab;
+        return null != N ? r.A.setState({
+          selectedTab: N,
+          entrypoint: null != (l = t.entrypoint) ? l : E.J8.UNKNOWN
+        }) : r.A.setState({
+          entrypoint: null != (m = t.entrypoint) ? m : E.J8.UNKNOWN
+        }), (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_SERVERS, t.extra);
+      case p.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
-          let n = (0, i.YP)(),
+          let l = (0, a.YP)(),
             {
-              guildId: l,
-              entrypoint: a
+              guildId: r,
+              entrypoint: s
             } = t.newSessionState;
-          if (r.h.setState({
-              sessionId: n,
-              guildId: null != l ? l : null,
-              entrypoint: a,
+          if (n.h.setState({
+              sessionId: l,
+              guildId: null != r ? r : null,
+              entrypoint: s,
               trackedOpenedFromExternalEntrypoint: false
-            }), c.default.track(p.HAw.APP_DIRECTORY_OPENED, {
-              source: null == a ? true : a.name,
-              session_id: n,
-              guild_id: l,
-              user_id: null == (_ = o.default.getCurrentUser()) ? true : _.id
+            }), o.default.track(d.HAw.APP_DIRECTORY_OPENED, {
+              source: null == s ? true : s.name,
+              session_id: l,
+              guild_id: r,
+              user_id: null == (_ = i.default.getCurrentUser()) ? true : _.id
             }), t.newSessionState.restorePreviousView) return e(function() {
             let {
               lastItem: e
-            } = r.tS.getState();
+            } = n.tS.getState();
             if (null != e) switch (e.type) {
-              case r.ev.APPLICATION:
+              case n.ev.APPLICATION:
                 return {
-                  tab: d.GlobalDiscoveryTab.APPS, applicationId: e.applicationId, section: e.section
+                  tab: p.GlobalDiscoveryTab.APPS, applicationId: e.applicationId, section: e.section
                 };
-              case r.ev.CATEGORY:
+              case n.ev.CATEGORY:
                 return {
-                  tab: d.GlobalDiscoveryTab.APPS, categoryId: Number(e.categoryId)
+                  tab: p.GlobalDiscoveryTab.APPS, categoryId: Number(e.categoryId)
                 };
-              case r.ev.SEARCH:
+              case n.ev.SEARCH:
                 var t;
                 return {
-                  tab: d.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : true
+                  tab: p.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : true
                 }
             }
             return {
-              tab: d.GlobalDiscoveryTab.APPS
+              tab: p.GlobalDiscoveryTab.APPS
             }
           }())
         }
         if (null != t.applicationId) {
-          if (t.section === m.GlobalDiscoveryAppsSections.STORE)
-            if (null != t.skuId) return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
-            else return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, m.GlobalDiscoveryAppsSections.STORE));
-          return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
+          if (t.section === T.GlobalDiscoveryAppsSections.STORE)
+            if (null != t.skuId) return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
+            else return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, T.GlobalDiscoveryAppsSections.STORE));
+          return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
         }
         if (null != t.query) {
           let e = new URLSearchParams;
-          return "" !== t.query && e.set("q", t.query), null != t.categoryId && e.set("category_id", t.categoryId.toString()), null != t.page && e.set("page", t.page.toString()), (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
+          return "" !== t.query && e.set("q", t.query), null != t.categoryId && e.set("category_id", t.categoryId.toString()), null != t.page && e.set("page", t.page.toString()), (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
             search: e.toString()
           })
         }
-        if (null != t.categoryId) return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
-        else return (0, s.pX)(p.BVt.GLOBAL_DISCOVERY_APPS);
-      case d.GlobalDiscoveryTab.QUESTS:
-        return (0, a.navigateToQuestHome)({
+        if (null != t.categoryId) return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
+        else return (0, c.pX)(d.BVt.GLOBAL_DISCOVERY_APPS);
+      case p.GlobalDiscoveryTab.QUESTS:
+        return (0, s.navigateToQuestHome)({
           fromContent: t.questContent,
           questId: t.questId,
           forceDiscoveryQuestHomeRoute: true
         });
       default:
-        throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(h))
+        throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(O))
     }
   }
 }), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./65821.js");

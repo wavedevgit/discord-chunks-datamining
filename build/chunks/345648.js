@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 345648, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 345648, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  e: () => A
+  e: () => S
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -12,12 +12,12 @@ var Chunk934551 = require("./934551.js"),
   Chunk177164 = require("./177164.js"),
   Chunk83997 = require("./83997.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.t_)(Chunk780964.X.NOTIFICATIONS_PANEL, {
+let A = (0, Chunk419954.t_)(Chunk780964.X.NOTIFICATIONS_PANEL, {
     useTitle: () => T.intl.string(T.t.HcoRu0),
-    buildLayout: () => [o.w, d.u, a.h, u.F, r.X]
+    buildLayout: () => [o.w, d.u, u.h, a.F, r.X]
   }),
-  A = (0, Chunk419954.i4)(Chunk780964.X.NOTIFICATIONS_SIDEBAR_ITEM, {
+  S = (0, Chunk419954.i4)(Chunk780964.X.NOTIFICATIONS_SIDEBAR_ITEM, {
     useTitle: () => T.intl.string(T.t.HcoRu0),
     icon: Chunk934551.BellIcon,
-    buildLayout: () => [c]
+    buildLayout: () => [A]
   })

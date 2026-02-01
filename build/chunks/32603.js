@@ -1,4 +1,4 @@
-/** Chunk was on 44411 **/
+/** Chunk was on 76719 **/
 /** chunk id: 32603, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,7 +9,7 @@ require.d(exports, {
   Xt: () => K,
   bK: () => $,
   go: () => ey,
-  rR: () => z,
+  rR: () => Y,
   wF: () => ev,
   xu: () => er,
   yO: () => J
@@ -88,8 +88,8 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = "placeholder-channel-id",
-  z = 2,
+let z = "placeholder-channel-id",
+  Y = 2,
   K = 0,
   q = 1,
   X = 2,
@@ -219,7 +219,7 @@ class et {
     }
   }
   isPlaceholderRow(e, t) {
-    return s()(e > q, "Invalid section"), e !== this.recentsSectionNumber && this.getRows()[e][t] === Y
+    return s()(e > q, "Invalid section"), e !== this.recentsSectionNumber && this.getRows()[e][t] === z
   }
   getFirstVoiceChannel(e) {
     if (true === this.firstVoiceChannel) {
@@ -395,7 +395,7 @@ class en {
   }
   getRows() {
     let e = this.getShownChannelIds();
-    return 0 === e.length && this.shouldShowEmptyCategory() ? [Y] : e
+    return 0 === e.length && this.shouldShowEmptyCategory() ? [z] : e
   }
   shouldShowEmptyCategory() {
     return l().some(this.channels, e => e.renderLevel >= 3)
@@ -579,7 +579,7 @@ class ea extends en {
   getRows() {
     if (!this.guild.optInEnabled) return [];
     let e = this.getShownChannelIds();
-    return 0 === e.length && this.getHiddenChannelIds().length > 0 ? [Y] : e
+    return 0 === e.length && this.getHiddenChannelIds().length > 0 ? [z] : e
   }
   getShownChannelIds() {
     if (!this.guild.optInEnabled) return [];
@@ -858,7 +858,7 @@ function em(e, t) {
     if (N.Ay.getMentionCount(t) > 0) returntrue;
   if (null != n && (n.id === e.id || n.isThread() && n.parent_id === e.id)) returntrue;
   let s = v.A.getNewChannelIds(e.category.guild.id);
-  if (s.size > z);
+  if (s.size > Y);
   else if (s.has(e.id)) returntrue;
   returnfalse
 }
@@ -881,6 +881,6 @@ function eS(e, t, n) {
   if (e.mutedChannelIds.has(t.id) || null != t.parent_id && e.mutedChannelIds.has(t.parent_id)) returnfalse;
   let r = v.A.getNewChannelIds(e.id),
     o = Array.from(r).sort((e, t) => D.default.compare(t, e));
-  return !!(r.has(t.id) && o.indexOf(t.id) < z || N.Ay.hasRecentlyVisitedAndRead(t.id))
+  return !!(r.has(t.id) && o.indexOf(t.id) < Y || N.Ay.hasRecentlyVisitedAndRead(t.id))
 }
 let eO = new Set(Object.values(Chunk281405.n))

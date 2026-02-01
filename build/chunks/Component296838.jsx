@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 296838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -43,13 +43,13 @@ let C = {
 
 function S(e) {
   switch (e.keyCode) {
-    case j.Ks6.ARROW_UP:
+    case x.Ks6.ARROW_UP:
       return "UP";
-    case j.Ks6.ARROW_DOWN:
+    case x.Ks6.ARROW_DOWN:
       return "DOWN";
-    case j.Ks6.ARROW_LEFT:
+    case x.Ks6.ARROW_LEFT:
       return "LEFT";
-    case j.Ks6.ARROW_RIGHT:
+    case x.Ks6.ARROW_RIGHT:
       return "RIGHT";
     default:
       return null
@@ -112,14 +112,14 @@ function T() {
 }
 class P extends Chunk64700.PureComponent {
   componentDidMount() {
-    this.lastInputedKeys = [], O._.subscribe(j.jej.SCROLL_PAGE_UP, this.scrollPageUp), O._.subscribe(j.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
+    this.lastInputedKeys = [], O._.subscribe(x.jej.SCROLL_PAGE_UP, this.scrollPageUp), O._.subscribe(x.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
     }), window.addEventListener("keyup", this.handleKeyUp, {
       capture: true
     })
   }
   componentWillUnmount() {
-    O._.unsubscribe(j.jej.SCROLL_PAGE_UP, this.scrollPageUp), O._.unsubscribe(j.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
+    O._.unsubscribe(x.jej.SCROLL_PAGE_UP, this.scrollPageUp), O._.unsubscribe(x.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), window.removeEventListener("keydown", this.handleKeyDown, {
       capture: true
     }), window.removeEventListener("keyup", this.handleKeyUp, {
       capture: true
@@ -139,13 +139,13 @@ class P extends Chunk64700.PureComponent {
         className: v.GK,
         children: [(0, r.jsx)("div", {
           className: v.Qs,
-          children: x.intl.string(x.t["1BdUtx"])
+          children: _.intl.string(_.t["1BdUtx"])
         }), (0, r.jsx)(g.e7I, {
           shortcut: "mod+/"
         })]
       }), (0, r.jsx)("div", {
         className: v.KV,
-        children: x.intl.string(x.t["2t19lU"])
+        children: _.intl.string(_.t["2t19lU"])
       }), (0, r.jsxs)("div", {
         className: v.Pg,
         children: [(0, r.jsx)(w, {
@@ -239,7 +239,7 @@ class P extends Chunk64700.PureComponent {
         })
       }]
     })), E(this, "handleKeyDown", e => {
-      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === j.Ks6.H && this.lastInputedKeys[1] === j.Ks6.H && this.lastInputedKeys[2] === j.Ks6.ARROW_RIGHT && this.lastInputedKeys[3] === j.Ks6.N && this.lastInputedKeys[4] === j.Ks6.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
+      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === x.Ks6.H && this.lastInputedKeys[1] === x.Ks6.H && this.lastInputedKeys[2] === x.Ks6.ARROW_RIGHT && this.lastInputedKeys[3] === x.Ks6.N && this.lastInputedKeys[4] === x.Ks6.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = S(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
@@ -288,7 +288,7 @@ function R(e) {
   } = e, [i, a] = l.useState(false), [o, c] = l.useState(false), u = l.useMemo(() => __OVERLAY__ ? (0, m.y8)() : (0, f.Bx)(), []), {
     keyboardModeEnabled: d,
     useReducedMotion: y
-  } = (0, h.cf)([A.A], () => ({
+  } = (0, p.cf)([A.A], () => ({
     keyboardModeEnabled: A.A.keyboardModeEnabled,
     useReducedMotion: A.A.useReducedMotion
   }));
@@ -300,12 +300,12 @@ function R(e) {
         [v.O9]: i
       }),
       size: g.rIJ.DYNAMIC,
-      "aria-label": x.intl.string(x.t.T9DA2K),
+      "aria-label": _.intl.string(_.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
-      children: (0, r.jsx)(p.F, {
+      children: (0, r.jsx)(h.F, {
         component: "div",
-        children: i ? (0, r.jsx)(_.A, {
+        children: i ? (0, r.jsx)(j.A, {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }

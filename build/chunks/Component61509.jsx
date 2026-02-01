@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 61509, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => eb
@@ -92,8 +92,8 @@ let eo = e => "https://".concat(et.XlF, "/hc/").concat(e.toLowerCase(), "/reques
     } = e;
     return (0, i.jsx)("li", {
       className: el.mg,
-      children: (0, i.jsxs)(x.A, {
-        justify: x.A.Justify.BETWEEN,
+      children: (0, i.jsxs)(C.A, {
+        justify: C.A.Justify.BETWEEN,
         children: [(0, i.jsx)("div", {
           children: t
         }), (0, i.jsx)("div", {
@@ -138,8 +138,8 @@ let em = e => {
   } = e;
   return (0, i.jsx)("li", {
     className: el.Iu,
-    children: (0, i.jsxs)(x.A, {
-      justify: x.A.Justify.BETWEEN,
+    children: (0, i.jsxs)(C.A, {
+      justify: C.A.Justify.BETWEEN,
       children: [(0, i.jsx)("div", {
         children: t
       }), (0, i.jsx)("div", {
@@ -155,7 +155,7 @@ function eg(e) {
     guildProductListingId: n
   } = e, r = (0, T.Qi)(t, n, {
     requireCurrentGuild: false
-  }), s = (0, y.z)(r), a = (0, p.bG)([V.A], () => V.A.getGuild(t)), o = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? ei.intl.string(ei.t.H11qcT) : s, c = l.useCallback(async () => {
+  }), s = (0, N.z)(r), a = (0, p.bG)([V.A], () => V.A.getGuild(t)), o = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? ei.intl.string(ei.t.H11qcT) : s, c = l.useCallback(async () => {
     (null == a ? true : a.features.has(et.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, v.A)(et.BVt.GUILD_PRODUCT(t, n)) : await (0, v.A)(et.BVt.CHANNEL(t)), (0, U.default)()
   }, [a, t, n]);
   return (0, i.jsxs)(i.Fragment, {
@@ -203,7 +203,7 @@ function eA(e) {
         color: "text-default",
         className: el.yE,
         children: ei.intl.string(ei.t.gWBNet)
-      }), (0, i.jsx)(N.A, {
+      }), (0, i.jsx)(y.A, {
         role: c
       })]
     })]
@@ -383,7 +383,7 @@ class ef extends(r = Chunk64700.PureComponent) {
     let {
       payment: e
     } = this.props;
-    return (0, i.jsx)(C.A, {
+    return (0, i.jsx)(x.A, {
       payment: e
     })
   }
@@ -706,9 +706,9 @@ class ef extends(r = Chunk64700.PureComponent) {
             offset: 4
           }
         }, e), s = s = {
-          children: [(0, i.jsxs)(x.A, {
+          children: [(0, i.jsxs)(C.A, {
             className: el.J7,
-            align: x.A.Align.CENTER,
+            align: C.A.Align.CENTER,
             "data-expanded": r,
             children: [this.renderDescription(), (0, i.jsxs)("div", {
               className: el.vj,
@@ -835,15 +835,15 @@ function eb(e) {
     }
   }), {
     hasAlreadyLinked: f
-  } = (0, E.RD)((0, D.bF)(r.sku) ? g : true), C = (0, p.bG)([O.A], () => null != u ? O.A.getApplication(u) : null);
+  } = (0, E.RD)((0, D.bF)(r.sku) ? g : true), x = (0, p.bG)([O.A], () => null != u ? O.A.getApplication(u) : null);
   l.useEffect(() => {
     _ && null != u && (0, R.TA)(u)
   }, [u, _]);
-  let x = (0, p.bG)([V.A], () => V.A.getGuild(null == g ? true : g.guildId)),
+  let C = (0, p.bG)([V.A], () => V.A.getGuild(null == g ? true : g.guildId)),
     S = c ? g : true,
     T = r.subscription,
     I = (0, p.bG)([W.A], () => null != T && T.type !== et.rzx.PREMIUM ? W.A.get(T.items[0].planId) : null),
-    y = (0, p.bG)([F.default], () => {
+    N = (0, p.bG)([F.default], () => {
       var e, t, n, i;
       let l = r.isGift ? null == (n = r.entitlements) ? true : n.find(e => {
         var t;
@@ -852,13 +852,13 @@ function eb(e) {
       return null == l ? null : null != (e = F.default.getUser(null != (t = null == (i = l.user) ? true : i.id) ? t : null)) ? e : null == l ? true : l.user
     }, [r]),
     {
-      analyticsLocations: N
+      analyticsLocations: y
     } = (0, h.Ay)(b.A.BILLING_SETTINGS_BILLING);
   return (0, i.jsx)(ef, {
     applicationStatistics: m,
-    application: _ ? C : S,
-    analyticsLocations: N,
-    guild: x,
+    application: _ ? x : S,
+    analyticsLocations: y,
+    guild: C,
     stickerPack: null,
     paymentSources: A,
     locale: s,
@@ -866,7 +866,7 @@ function eb(e) {
     className: o,
     payment: r,
     plan: I,
-    claimedGiftUser: y,
+    claimedGiftUser: N,
     hasLinkedToApplication: f
   })
 }

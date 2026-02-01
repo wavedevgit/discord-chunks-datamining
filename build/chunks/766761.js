@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 766761, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 766761, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -15,8 +15,8 @@ let d = (0, Chunk419954.E2)(Chunk780964.X.SESSIONS_OTHER_SESSIONS_SETTING, {
   useSearchTerms: () => [o.intl.string(o.t["+1h0k/"])],
   usePredicate: () => {
     let {
-      otherSessions: e
-    } = (0, l.r)(), t = (0, n.bG)([r.default], () => r.default.getCurrentUser());
-    return e.length > 0 || !(null == t ? true : t.mfaEnabled)
+      otherSessions: t
+    } = (0, l.r)(), e = (0, n.bG)([r.default], () => r.default.getCurrentUser());
+    return t.length > 0 || !(null == e ? true : e.mfaEnabled)
   }
 })

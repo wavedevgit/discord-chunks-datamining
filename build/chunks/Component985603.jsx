@@ -275,11 +275,11 @@ let k = {
                   d = null != (r = c.searchParams.get("referrer_id")) ? r : true,
                   {
                     customId: p
-                  } = await (0, f.d9)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
+                  } = await (0, m.d9)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
                 await (0, g.A)({
                   targetApplicationId: e,
                   channelId: o,
-                  analyticsLocations: [m.A.DEEPLINK],
+                  analyticsLocations: [f.A.DEEPLINK],
                   customId: p,
                   referrerId: d
                 }), C.default.track(L.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {

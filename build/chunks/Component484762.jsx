@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 484762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => eR
@@ -53,7 +53,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk167056 = require("./167056.js"),
   Chunk661251 = require("./661251.js");
 
-function Z(e) {
+function $(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -72,7 +72,7 @@ function Z(e) {
   return e
 }
 
-function $(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ function $(e, t) {
   }), e
 }
 let ee = {
-    [Chunk652215.uss.CLICK_ZONE_DEBUG]: e => $(Z({
+    [Chunk652215.uss.CLICK_ZONE_DEBUG]: e => Z($({
       type: q.uss.CLICK_ZONE_DEBUG,
       id: (0, c.A)(),
       layoutId: e,
@@ -97,10 +97,10 @@ let ee = {
         width: 100,
         height: 100
       }
-    }, k.A.getWidgetDefaultSettings(q.uss.CLICK_ZONE_DEBUG)), {
+    }, P.A.getWidgetDefaultSettings(q.uss.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
-    [Chunk652215.uss.PERFORMANCE_DEBUG]: e => $(Z({
+    [Chunk652215.uss.PERFORMANCE_DEBUG]: e => Z($({
       type: q.uss.PERFORMANCE_DEBUG,
       id: (0, c.A)(),
       layoutId: e,
@@ -113,7 +113,7 @@ let ee = {
         width: "auto",
         height: "auto"
       }
-    }, k.A.getWidgetDefaultSettings(q.uss.PERFORMANCE_DEBUG)), {
+    }, P.A.getWidgetDefaultSettings(q.uss.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -307,7 +307,7 @@ let ea = Chunk64700.memo(function(e) {
   });
 
 function er(e) {
-  let t, n = (t = Object.values((0, d.yK)([k.A], () => k.A.getWidgetsForLayout(Q.G))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.yK)([P.A], () => P.A.getWidgetsForLayout(Q.G))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, x.uv)(n.id);
     else {
@@ -348,7 +348,7 @@ let es = Chunk64700.memo(function(e) {
     let a = null == (n = S.default.getTrackedGameByPid(t)) ? true : n.gameName;
     return null != a ? (et[t] = a, a) : null != (e = et[t]) ? e : "Unknown"
   }, [t]);
-  return (0, a.jsx)(p.Text, $(Z({}, n), {
+  return (0, a.jsx)(p.Text, Z($({}, n), {
     variant: "text-md/semibold",
     color: "text-strong",
     children: l
@@ -442,7 +442,7 @@ let ec = Chunk64700.memo(function(e) {
           screenType: r,
           timestamp: i
         }]), e
-      }, Z({}, e)))
+      }, $({}, e)))
     }, +B.A.Millis.SECOND), () => clearInterval(r.current)), []), (0, a.jsx)(u.m_, {
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
@@ -480,7 +480,7 @@ let ec = Chunk64700.memo(function(e) {
     let n = (0, d.cf)([S.default], () => S.default.getTrackedGames()),
       l = (0, V.getPID)(),
       r = (0, d.bG)([S.default], () => S.default.isOverlayOOPEnabledForPid(l), [l]),
-      [i, s] = (0, d.yK)([P.A], () => [P.A.enabled, P.A.keepOpen]),
+      [i, s] = (0, d.yK)([k.A], () => [k.A.enabled, k.A.keepOpen]),
       o = (0, d.bG)([M.default], () => M.default.getFocusedPID()),
       c = (0, d.bG)([M.default], () => M.default.isFocusedPidOutOfProcess());
     return (0, a.jsxs)("div", {
@@ -638,7 +638,7 @@ let ec = Chunk64700.memo(function(e) {
         label: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         value: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
         id: y.V6.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
-      }].map(t => $(Z({}, t), {
+      }].map(t => Z($({}, t), {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
     return (0, a.jsx)(p.l6P, {
@@ -662,7 +662,7 @@ function eg(e) {
   function s() {
     n(null)
   }
-  return (0, a.jsxs)(p.EOs, $(Z({
+  return (0, a.jsxs)(p.EOs, Z($({
     size: p.rIJ.LARGE,
     "aria-label": "Breadcrumb Import"
   }, t), {
@@ -981,7 +981,7 @@ function eO() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [y, h, u, o, A]), [T, N] = l.useState(O), [w, P] = l.useState(null), k = l.useMemo(() => y.find(e => e.key === w), [y, w]), R = l.useCallback(e => {
+  }), [y, h, u, o, A]), [T, N] = l.useState(O), [w, k] = l.useState(null), P = l.useMemo(() => y.find(e => e.key === w), [y, w]), R = l.useCallback(e => {
     N(e)
   }, []), {
     renderSelectedTab: D
@@ -1095,15 +1095,15 @@ function eO() {
         columns: ev,
         data: T,
         selectedRowKey: null != w ? w : true,
-        onClickRow: e => P(e.key)
+        onClickRow: e => k(e.key)
       })
-    }), null != k && (0, a.jsx)(H.A, {
+    }), null != P && (0, a.jsx)(H.A, {
       className: i()(J.st, J.rf),
       minHeight: 100,
       initialHeight: null != t ? t / 3 : 300,
       children: D({
-        breadcrumb: k,
-        onClose: () => P(null)
+        breadcrumb: P,
+        onClose: () => k(null)
       })
     })]
   })
@@ -1171,7 +1171,7 @@ let ew = e => {
     }
   },
   eI = e => null == e ? "Disabled" : e ? "True" : "False",
-  eP = Chunk64700.memo(function() {
+  ek = Chunk64700.memo(function() {
     let e = (0, C.wW)(),
       t = (0, d.bG)([D.Ay], () => D.Ay.getOverlayKeybind());
     return (0, a.jsxs)("div", {
@@ -1186,7 +1186,7 @@ let ew = e => {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: (0, a.jsx)("pre", {
-          children: JSON.stringify($(Z({}, e), {
+          children: JSON.stringify(Z($({}, e), {
             overlayKeybind: (0, F.dI)(t.shortcut)
           }), true, 2)
         })
@@ -1252,11 +1252,11 @@ let ew = e => {
     })
   });
 
-function ek() {
+function eP() {
   return (0, a.jsx)(p.ArX, {
     children: (0, a.jsx)("div", {
       className: i()(X.nd, J.rf),
-      children: (0, a.jsx)(eP, {})
+      children: (0, a.jsx)(ek, {})
     })
   })
 }
@@ -1300,6 +1300,6 @@ function eR() {
           children: "Experiments"
         })
       })]
-    }), "state" === e && (0, a.jsx)(eN, {}), "logging" === e && (0, a.jsx)(eO, {}), "experiments" === e && (0, a.jsx)(ek, {})]
+    }), "state" === e && (0, a.jsx)(eN, {}), "logging" === e && (0, a.jsx)(eO, {}), "experiments" === e && (0, a.jsx)(eP, {})]
   })
 }

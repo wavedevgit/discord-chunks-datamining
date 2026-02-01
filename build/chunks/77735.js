@@ -1,8 +1,8 @@
-/** Chunk was on 40198 **/
+/** Chunk was on 36059 **/
 /** chunk id: 77735, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => o,
-  d: () => s
+  d: () => l
 });
 var Chunk509381 = require("./509381.js");
 let r = [Chunk509381.my.VOICE_ISOLATION, Chunk509381.my.STUDIO, Chunk509381.my.CUSTOM];
@@ -16,7 +16,7 @@ function o(e) {
   }
 }
 
-function s(e) {
+function l(e) {
   let {
     location: t
   } = e;

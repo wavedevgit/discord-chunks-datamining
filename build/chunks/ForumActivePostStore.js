@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   A: () => X,
-  S: () => V
+  S: () => F
 }), require("./896048.js"), require("./638769.js");
 var i, Chunk735438 = require("./735438.js"),
   o = require.n(Chunk735438),
@@ -77,7 +77,7 @@ function G() {
   N = [], r = null, A = null, I = new Set, S = l.T.LATEST_ACTIVITY, T = s.n.MATCH_SOME, C = 0, R = [], P = o().chain(O), D = o().chain(O), x.clear(), L.clear()
 }
 
-function F() {
+function V() {
   var e;
   let t = g.A.getChannelId();
   if (null == t || !(null == (e = h.A.getChannel(t)) ? true : e.isForumLikeChannel())) return G(), false;
@@ -86,7 +86,7 @@ function F() {
   })
 }
 
-function V(e) {
+function F(e) {
   let t = h.A.getChannel(e);
   return null == t ? [] : Object.values(f.A.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
@@ -217,10 +217,10 @@ class Q extends(i = Chunk311907.Ay.Store) {
 }
 b(Q, "displayName", "ForumActivePostStore");
 let X = new Q(Chunk73153.h, {
-  CONNECTION_OPEN: F,
-  OVERLAY_INITIALIZE: F,
-  GUILD_CREATE: F,
-  CHANNEL_SELECT: F,
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
+  GUILD_CREATE: V,
+  CHANNEL_SELECT: V,
   CHANNEL_DELETE: z,
   THREAD_LIST_SYNC: H,
   THREAD_CREATE: W,

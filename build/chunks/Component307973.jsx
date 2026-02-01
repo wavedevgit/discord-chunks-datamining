@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 307973, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -27,7 +27,7 @@ let p = e => {
     hammerAssetClassName: h,
     keyAssetClassName: E,
     starAssetClassName: O,
-    animationSpeedScale: C = 1
+    animationSpeedScale: x = 1
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != i && (0, r.jsx)("div", {
@@ -56,7 +56,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: C,
+        animationSpeedScale: x,
         children: (0, r.jsx)("img", {
           src: o.A,
           className: f,
@@ -79,7 +79,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: C,
+        animationSpeedScale: x,
         children: (0, r.jsx)("img", {
           src: c.A,
           className: b,
@@ -102,7 +102,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: C,
+        animationSpeedScale: x,
         children: (0, r.jsx)("img", {
           src: d.A,
           className: h,
@@ -135,7 +135,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: C,
+        animationSpeedScale: x,
         children: (0, r.jsx)("img", {
           src: u.A,
           className: E,
@@ -168,7 +168,7 @@ let p = e => {
         } : true,
         animateXAxisWiggle: true,
         isMotionReduced: t,
-        animationSpeedScale: C,
+        animationSpeedScale: x,
         children: (0, r.jsx)("img", {
           src: _.A,
           className: O,

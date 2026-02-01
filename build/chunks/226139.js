@@ -1,14 +1,15 @@
-/** Chunk was on 64935 **/
-/** chunk id: 226139, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 226139, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   D3: () => s,
-  J9: () => a,
-  oL: () => l
+  J9: () => o,
+  oL: () => a
 });
 var Chunk842086 = require("./842086.js"),
   Chunk985018 = require("./985018.jsx");
-let l = () => [i.intl.string(i.t.b6wEe6), i.intl.string(i.t.i8o9hX)],
-  a = () => [i.intl.string(i.t.vqnToc), i.intl.string(i.t["9yh+dM"])],
+let a = () => [i.intl.string(i.t.b6wEe6), i.intl.string(i.t.i8o9hX)],
+  o = () => [i.intl.string(i.t.vqnToc), i.intl.string(i.t["9yh+dM"])],
   s = [{
     id: "781323471249604648",
     format_type: Chunk842086.TG.APNG,

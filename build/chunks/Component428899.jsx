@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk190323 = require("./190323.js");
 
-function f(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk64700.PureComponent {
+class f extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       sku: e,
@@ -56,7 +56,7 @@ class m extends Chunk64700.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "handleClick", e => {
+    super(...e), m(this, "handleClick", e => {
       let {
         sku: t
       } = this.props;
@@ -69,7 +69,7 @@ class m extends Chunk64700.PureComponent {
           }
         }
       })
-    }), f(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.A.Title, {
+    }), m(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.A.Title, {
       className: t ? null : g.Q,
       muted: !t,
       children: e.label
@@ -85,4 +85,4 @@ let A = (0, Chunk707606.A)(Chunk311907.Ay.connectStores([Chunk587895.A, Chunk674
     isFetchingPrimarySku: null != r && p.A.isFetching(r),
     primarySku: null != r ? p.A.get(r) : null
   }
-})(m))
+})(f))

@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 229244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => K
@@ -172,7 +172,7 @@ function W() {
     W(M(D({}, e), {
       preview: true
     }))
-  }, []), [K, z] = l.useState(w.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, Z] = l.useState(null), $ = (R = F.config, (0, s.YW)(R).with({
+  }, []), [K, z] = l.useState(w.b.UNENROLLED), [q, Q] = l.useState(false), [Y, J] = l.useState(false), [X, $] = l.useState(null), Z = (R = F.config, (0, s.YW)(R).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -278,22 +278,22 @@ function W() {
   let ei = l.useMemo(() => {
       for (let [e, t] of Object.entries(F.config.taskConfigV2.tasks))
         if (null != t.target) return t.target;
-      return 10 * P.A.Seconds.MINUTE
+      return 10 * k.A.Seconds.MINUTE
     }, [F.config.taskConfigV2.tasks]),
     es = l.useMemo(() => o.n.WATCH_VIDEO in F.config.taskConfigV2.tasks, [F.config.taskConfigV2.tasks]);
   i()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
   let eo = F.config.taskConfigV2.tasks[o.n.WATCH_VIDEO];
   return (0, a.jsxs)(m.IpV, {
-    className: k.kL,
+    className: P.kL,
     children: [(0, a.jsx)(m.Heading, {
       variant: "heading-lg/bold",
-      className: k.R_,
+      className: P.R_,
       children: "Quest Preview Tool"
     }), (0, a.jsx)("div", {
-      className: k.OA,
+      className: P.OA,
       children: (0, a.jsx)(T.A, {
         onSelect: function(e) {
-          Z(e), null == e || (z(function(e) {
+          $(e), null == e || (z(function(e) {
             if (null == e.userStatus) return w.b.UNENROLLED;
             if (null != e.userStatus.claimedAt) return w.b.CLAIMED;
             if (null != e.userStatus.completedAt) return w.b.COMPLETED_100;
@@ -307,10 +307,10 @@ function W() {
       })
     }), (0, a.jsx)(m.Heading, {
       variant: "heading-md/semibold",
-      className: k.fV,
+      className: P.fV,
       children: "Task Config"
     }), (0, a.jsx)("div", {
-      className: k.OA,
+      className: P.OA,
       children: (0, a.jsx)(E.A, {
         taskDuration: ei,
         taskConfigV2: F.config.taskConfigV2,
@@ -324,10 +324,10 @@ function W() {
       })
     }), (0, a.jsx)(m.Heading, {
       variant: "heading-md/semibold",
-      className: k.fV,
+      className: P.fV,
       children: "Messages"
     }), (0, a.jsxs)("div", {
-      className: k.OA,
+      className: P.OA,
       children: [(0, a.jsx)(O.A, {
         title: "Quest Name",
         assetKey: "questName",
@@ -369,10 +369,10 @@ function W() {
       })]
     }), (0, a.jsx)(m.Heading, {
       variant: "heading-md/semibold",
-      className: k.fV,
+      className: P.fV,
       children: "Assets"
     }), (0, a.jsxs)("div", {
-      className: k.OA,
+      className: P.OA,
       children: [(0, a.jsx)(S.A, {
         title: "Hero",
         assetKey: "hero",
@@ -430,13 +430,13 @@ function W() {
           initialValue: null == eo ? true : eo.assets.video.thumbnail
         })]
       })]
-    }), $.map((e, t) => (0, a.jsxs)("div", {
+    }), Z.map((e, t) => (0, a.jsxs)("div", {
       children: [(0, a.jsxs)(m.Heading, {
         variant: "heading-md/semibold",
-        className: k.fV,
+        className: P.fV,
         children: ["Reward #", t + 1]
       }), (0, a.jsxs)("div", {
-        className: k.OA,
+        className: P.OA,
         children: [(0, a.jsx)(O.A, {
           title: "Name",
           assetKey: "name",
@@ -484,12 +484,12 @@ function W() {
       })]
     }, t)), (0, a.jsx)(m.Heading, {
       variant: "heading-md/semibold",
-      className: k.fV,
+      className: P.fV,
       children: "Colors & Quest States"
     }), (0, a.jsxs)("div", {
-      className: k.OA,
+      className: P.OA,
       children: [(0, a.jsxs)("div", {
-        className: k.OA,
+        className: P.OA,
         style: {
           marginBottom: 0
         },
@@ -505,7 +505,7 @@ function W() {
           value: F.config.colors.secondary
         })]
       }), (0, a.jsx)("div", {
-        className: k.OA,
+        className: P.OA,
         children: (0, a.jsx)(N.A, {})
       }), (0, a.jsx)(w.A, {
         onChange: function(e) {
@@ -570,23 +570,23 @@ function W() {
       })]
     }), (0, a.jsx)(m.Heading, {
       variant: "heading-lg/bold",
-      className: k.R_,
+      className: P.R_,
       children: "Component Previews"
     }), (0, a.jsxs)("div", {
-      className: k.$$,
+      className: P.$$,
       children: [(0, a.jsxs)(C.A, {
         withBorder: true,
         children: [(0, a.jsx)(m.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Bar"
         }), (0, a.jsxs)("div", {
-          className: k.l4,
+          className: P.l4,
           children: [(null == (d = F.userStatus) ? true : d.claimedAt) != null && (0, a.jsx)(m.Text, {
             color: "text-subtle",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, a.jsx)("div", {
-            className: k.ok,
+            className: P.ok,
             children: (0, a.jsx)(g.jY, {
               isPreview: true,
               source: "preview",
@@ -610,7 +610,7 @@ function W() {
           questId: "0",
           children: (0, a.jsx)(y.A, {
             quest: F,
-            className: k.d,
+            className: P.d,
             questContent: p.uF.QUEST_HOME_DESKTOP,
             contentPosition: 0,
             rowIndex: 0,
@@ -627,13 +627,13 @@ function W() {
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, a.jsx)("div", {
-          className: k.l4,
+          className: P.l4,
           children: (0, a.jsx)(g.jY, {
             isPreview: true,
             source: "preview",
             questId: "0",
             children: (0, a.jsx)("div", {
-              className: k.Jr,
+              className: P.Jr,
               children: (0, a.jsx)(v.A, {
                 channelId: "123",
                 previewQuest: F,
@@ -643,7 +643,7 @@ function W() {
           })
         })]
       }), (0, a.jsx)("div", {
-        className: k.NY,
+        className: P.NY,
         children: (0, a.jsx)(m.dOG, {
           label: "Is Participating:",
           checked: q,
@@ -664,7 +664,7 @@ function W() {
           sourceQuestContent: p.uF.INTERNAL_PREVIEW_TOOL
         }, F.id)]
       }), (0, a.jsx)("div", {
-        className: k.NY,
+        className: P.NY,
         children: (0, a.jsx)(m.dOG, {
           label: "Invalid Quests Embed:",
           checked: Y,
@@ -714,9 +714,9 @@ class H extends Chunk64700.Component {
       renderKey: t
     } = this.state;
     return null != e ? (0, a.jsxs)("div", {
-      className: k.TA,
+      className: P.TA,
       children: [(0, a.jsx)(m.EpV, {
-        className: k.Yw
+        className: P.Yw
       }), (0, a.jsx)(m.Heading, {
         variant: "heading-lg/semibold",
         children: "Something broke in the Quest preview tool :("
@@ -725,9 +725,9 @@ class H extends Chunk64700.Component {
         text: "Reset",
         onClick: this.handleResetState
       }), null != e.message && (0, a.jsx)(m.ZpM, {
-        className: k.Fx,
+        className: P.Fx,
         children: (0, a.jsx)("code", {
-          className: k.gJ,
+          className: P.gJ,
           children: e.message
         })
       })]

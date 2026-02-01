@@ -1,4 +1,4 @@
-/** Chunk was on 48898 **/
+/** Chunk was on 12907 **/
 /** chunk id: 912996, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -6,7 +6,7 @@ require.d(exports, {
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js");
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,21 +14,21 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = {};
-class o extends(i = Chunk311907.Ay.PersistedStore) {
+let s = {};
+class a extends(i = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    Object.assign(a, e)
+    Object.assign(s, e)
   }
   getState() {
-    return a
+    return s
   }
   shouldShowEducation(e) {
-    returntrue !== a[e]
+    returntrue !== s[e]
   }
 }
-l(o, "displayName", "ActivityInviteEducationStore"), l(o, "persistKey", "ActivityInviteEducationExperimentStore");
-let c = new o(Chunk73153.h, {
+o(a, "displayName", "ActivityInviteEducationStore"), o(a, "persistKey", "ActivityInviteEducationExperimentStore");
+let c = new a(Chunk73153.h, {
   ACTIVITY_INVITE_EDUCATION_DISMISS: function(e) {
-    return a[e.key] = e.value, true
+    return s[e.key] = e.value, true
   }
 })

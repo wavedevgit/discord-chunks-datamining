@@ -1,4 +1,4 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 727353, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -26,26 +26,26 @@ function _(e) {
     activeStream: n,
     streamActivity: l,
     streamApplication: _,
-    user: A,
-    currentUserId: h,
+    user: h,
+    currentUserId: A,
     canWatch: v,
     unavailableReason: O,
     onWatchStream: S,
     onAction: j,
     showHeader: x = false,
     hideTip: I = false,
-    className: P,
-    wrapperClassName: E,
-    skipContainer: T = false
+    className: E,
+    wrapperClassName: C,
+    skipContainer: P = false
   } = e, N = (0, a.bG)([u.A], () => {
     if (null != _) {
       if (null != _.id) return u.A.getApplication(_.id);
       else if (null != _.name) return u.A.getApplicationByName(_.name)
     }
     return null
-  }, [_]), w = null != l && null != l.name ? y.intl.formatToPlainString(y.t["4CQq9Q"], {
+  }, [_]), T = null != l && null != l.name ? y.intl.formatToPlainString(y.t["4CQq9Q"], {
     name: l.name
-  }) : y.intl.string(y.t["Jpkr/q"]), C = (0, r.jsxs)(r.Fragment, {
+  }) : y.intl.string(y.t["Jpkr/q"]), w = (0, r.jsxs)(r.Fragment, {
     children: [x && (0, r.jsxs)("div", {
       className: b.WG,
       children: [null != N && (0, r.jsx)(p.A, {
@@ -53,7 +53,7 @@ function _(e) {
         className: b.lK
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
-        children: w
+        children: T
       })]
     }), null != S ? (0, r.jsxs)(s.DUT, {
       onClick: S,
@@ -67,7 +67,7 @@ function _(e) {
           variant: "text-sm/normal",
           color: "none",
           className: b.ON,
-          children: (0, f.A)(t, n, h, O)
+          children: (0, f.A)(t, n, A, O)
         })
       }) : null]
     }) : (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function _(e) {
           variant: "text-sm/normal",
           color: "none",
           className: b.ON,
-          children: (0, f.A)(t, n, h, O)
+          children: (0, f.A)(t, n, A, O)
         })
       }) : null]
     }), (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ function _(e) {
         hideHeader: true,
         type: o.M.STREAM_PREVIEW,
         activity: l,
-        user: A,
+        user: h,
         guildId: t.guildId,
         channelId: t.channelId,
         analyticsParams: {
@@ -103,7 +103,7 @@ function _(e) {
       }) : (0, r.jsx)(c.A, {
         type: o.M.STREAM_PREVIEW,
         applicationStream: t,
-        user: A,
+        user: h,
         guildId: t.guildId,
         channelId: t.channelId,
         className: b.lx,
@@ -115,14 +115,14 @@ function _(e) {
       })]
     })]
   });
-  return T ? (0, r.jsx)("div", {
-    className: i()(b.yt, b.Tb, E),
-    children: C
+  return P ? (0, r.jsx)("div", {
+    className: i()(b.yt, b.Tb, C),
+    children: w
   }) : (0, r.jsx)("div", {
-    className: i()(b.yt, E),
+    className: i()(b.yt, C),
     children: (0, r.jsx)("div", {
-      className: i()(b.Rh, P),
-      children: C
+      className: i()(b.Rh, E),
+      children: w
     })
   })
 }

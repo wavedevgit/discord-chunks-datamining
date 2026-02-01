@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 534189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => P
@@ -49,9 +49,9 @@ function P(e) {
     originApplicationId: u.A.getOriginApplicationId(t.id)
   })), G = (0, a.fi)(t.id), k = (0, o.q)({
     userId: t.id
-  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), V = (0, i.bG)([p.A], () => {
+  }), U = (0, i.bG)([d.A], () => d.A.hidePersonalInformation), V = (0, i.bG)([h.A], () => {
     var e;
-    return null == (e = p.A.getUserProfile(t.id)) ? true : e.application
+    return null == (e = h.A.getUserProfile(t.id)) ? true : e.application
   });
   return (0, r.jsxs)("div", {
     className: T.rf,
@@ -60,7 +60,7 @@ function P(e) {
     }), (0, r.jsx)(E.A, {
       user: t,
       guildId: w.guild_id,
-      nickname: h.Ay.getName(null, w.id, t),
+      nickname: p.Ay.getName(null, w.id, t),
       pronouns: null == P ? true : P.pronouns,
       onOpenProfile: D,
       tags: (0, r.jsx)(f.A, {
@@ -85,10 +85,10 @@ function P(e) {
         applicationId: e.applicationId,
         channelId: w.id
       })
-    }, e.applicationId)), (0, r.jsx)(_.A, {
+    }, e.applicationId)), (0, r.jsx)(j.A, {
       user: t
     }), t.isProvisional && (0, r.jsx)(v.A.Overlay, {
-      children: (0, r.jsx)(j.A, {
+      children: (0, r.jsx)(x.A, {
         heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(l.CircleErrorIcon, {
           size: "xxs",
@@ -99,13 +99,13 @@ function P(e) {
           userId: t.id
         })
       })
-    }), (0, r.jsx)(x.A, {
+    }), (0, r.jsx)(_.A, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: D
     }), (0, r.jsxs)(v.A.Overlay, {
       className: T.Lw,
-      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(j.A, {
+      children: [!U && (null == P ? true : P.bio) != null && (null == P ? true : P.bio) !== "" && (0, r.jsx)(x.A, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(m.A, {
@@ -118,13 +118,13 @@ function P(e) {
         applicationId: V.id,
         commandIds: V.popularApplicationCommandIds,
         channel: w
-      }), k.length > 0 && (0, r.jsx)(j.A, {
+      }), k.length > 0 && (0, r.jsx)(x.A, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(A.A, {
           applicationIds: k
         })
-      }), (0, r.jsx)(j.A, {
+      }), (0, r.jsx)(x.A, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "text-strong",
         children: (0, r.jsx)(O.A, {

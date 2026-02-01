@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 394412, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -24,11 +24,11 @@ function A(e) {
   let {
     channelId: t,
     showDismiss: A = true
-  } = e, y = (0, l.bG)([o.A], () => o.A.getChannel(t), [t]), O = (0, p.RO)(t), _ = null != (0, p.Qs)(t), {
-    canManageGuildEvent: j
-  } = (0, a.nr)(y), x = (0, l.bG)([c.A], () => O.filter(e => !c.A.isEventDismissed(e.id)), [O]), v = (0, l.cf)([d.Ay], () => x.reduce((e, t) => (e[t.id] = d.Ay.getUserCount(t.id, (0, g.G3)(t)), e), {}), [x]);
-  return x.length < 1 || _ ? null : (0, r.jsx)(r.Fragment, {
-    children: x.map(e => (0, r.jsx)(f.A, {
+  } = e, y = (0, l.bG)([o.A], () => o.A.getChannel(t), [t]), O = (0, h.RO)(t), j = null != (0, h.Qs)(t), {
+    canManageGuildEvent: x
+  } = (0, a.nr)(y), _ = (0, l.bG)([c.A], () => O.filter(e => !c.A.isEventDismissed(e.id)), [O]), v = (0, l.cf)([d.Ay], () => _.reduce((e, t) => (e[t.id] = d.Ay.getUserCount(t.id, (0, g.G3)(t)), e), {}), [_]);
+  return _.length < 1 || j ? null : (0, r.jsx)(r.Fragment, {
+    children: _.map(e => (0, r.jsx)(f.A, {
       icon: (0, r.jsx)(s.CTc, {
         size: "custom",
         color: "currentColor",
@@ -36,14 +36,14 @@ function A(e) {
         width: 20
       }),
       color: i.A.unsafe_rawColors.GREEN_360.css,
-      title: m.intl.formatToPlainString(j(e) ? m.t["1vGXqM"] : m.t.xMJyla, {
+      title: m.intl.formatToPlainString(x(e) ? m.t["1vGXqM"] : m.t.xMJyla, {
         eventName: e.name
       }),
       description: m.intl.formatToPlainString(m.t.PTebCR, {
         startTime: (0, g.CC)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        j(e) ? (0, s.mMO)(async () => {
+        x(e) ? (0, s.mMO)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("51354"), n.e("77223"), n.e("24531")]).then(n.bind(n, 199226));
@@ -85,7 +85,7 @@ function A(e) {
       },
       onDismiss: A ? () => {
         var t;
-        return t = e.id, void(0, h.Nt)(t)
+        return t = e.id, void(0, p.Nt)(t)
       } : true,
       userCount: v[e.id],
       className: b.f

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 312574, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 312574, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   u: () => I
 });
@@ -16,21 +16,21 @@ var Chunk934551 = require("./934551.js"),
   Chunk879545 = require("./879545.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.t_)(Chunk780964.X.OVERLAY_PANEL, {
+let g = (0, Chunk419954.t_)(Chunk780964.X.OVERLAY_PANEL, {
     usePredicate: () => (0, r.dk)("OverlayPanel"),
-    useTitle: () => _.intl.string(_.t["9cb1Uz"]),
-    buildLayout: () => [c.I, o.u, d.X, A.D, T.h]
+    useTitle: () => E.intl.string(E.t["9cb1Uz"]),
+    buildLayout: () => [A.I, o.u, d.X, S.D, T.h]
   }),
-  g = (0, Chunk419954.t_)(Chunk780964.X.OVERLAY_PANEL, {
+  _ = (0, Chunk419954.t_)(Chunk780964.X.OVERLAY_PANEL, {
     usePredicate: () => !(0, r.dk)("OverlayPanel"),
-    useTitle: () => _.intl.string(_.t["9cb1Uz"]),
+    useTitle: () => E.intl.string(E.t["9cb1Uz"]),
     StronglyDiscouragedCustomComponent: Chunk790076.Ay,
     buildLayout: () => []
   }),
   I = (0, Chunk419954.i4)(Chunk780964.X.OVERLAY_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(_.t["9cb1Uz"]),
+    useTitle: () => E.intl.string(E.t["9cb1Uz"]),
     icon: Chunk934551.WindowTopOutlineIcon,
     usePredicate: Chunk682262.b_,
-    getLegacySearchKey: () => (0, r.WJ)("OverlayPanel") ? true : S.H.OVERLAY,
-    buildLayout: () => (0, r.WJ)("OverlayPanel") ? [E] : [g]
+    getLegacySearchKey: () => (0, r.WJ)("OverlayPanel") ? true : c.H.OVERLAY,
+    buildLayout: () => (0, r.WJ)("OverlayPanel") ? [g] : [_]
   })

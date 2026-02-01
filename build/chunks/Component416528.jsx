@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 416528, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => L
@@ -66,7 +66,7 @@ function L(e) {
     isChatOpen: n
   } = e, i = l.useRef(null), {
     analyticsLocations: a
-  } = (0, g.Ay)(p.A.VOICE_CHANNEL_HEADER), o = t.id, {
+  } = (0, g.Ay)(h.A.VOICE_CHANNEL_HEADER), o = t.id, {
     voiceParticipantsHidden: u,
     selectedParticipant: O,
     userParticipantCount: C,
@@ -92,7 +92,7 @@ function L(e) {
   }, "current-speaker")), U.push((0, r.jsx)(m.A, {
     className: R.x6,
     channelId: o
-  }, "clips-enabled-indicator")), (null == O ? true : O.type) === P.lp.STREAM && (U.push((0, r.jsx)(_.A, {
+  }, "clips-enabled-indicator")), (null == O ? true : O.type) === P.lp.STREAM && (U.push((0, r.jsx)(j.A, {
     className: R.x6,
     participant: O
   }, "warning")), U.push((0, r.jsx)(b.A, {
@@ -101,13 +101,13 @@ function L(e) {
     participant: O,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == O ? true : O.type) === P.lp.USER && U.push((0, r.jsx)(j.A, {
+  }, "live-indicator"))), (null == O ? true : O.type) === P.lp.USER && U.push((0, r.jsx)(x.A, {
     className: R.x6,
     userId: O.id
   }, "video-warning")), u && !L && U.push((0, r.jsx)(d.YNO, {
     targetElementRef: i,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(x.A, {
+    renderPopout: () => (0, r.jsx)(_.A, {
       children: (0, r.jsx)(N.A, {
         channel: t
       })
@@ -157,7 +157,7 @@ function L(e) {
     className: s()(R.x6, {
       [R.Lt]: n
     }),
-    onClick: () => h.A.toggleParticipantsList(t.id, !S)
+    onClick: () => p.A.toggleParticipantsList(t.id, !S)
   }, "participants-list-button")), w && U.push((0, r.jsx)(v.V, {
     channelId: t.id,
     className: s()(R.x6, {

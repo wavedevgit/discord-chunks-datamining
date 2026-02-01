@@ -38,8 +38,8 @@ var Chunk557939 = require("./557939.js"),
   k = Chunk883972.set,
   U = Chunk883972.enforce,
   G = Chunk4940.f,
-  F = Chunk873078.f,
-  V = Chunk860511.RangeError,
+  V = Chunk873078.f,
+  F = Chunk860511.RangeError,
   B = Chunk607167.ArrayBuffer,
   H = B.prototype,
   Y = Chunk607167.DataView,
@@ -66,7 +66,7 @@ var Chunk557939 = require("./557939.js"),
     return Z(e) && !v(t) && t in e && p(+t) && t >= 0
   },
   et = function(e, t) {
-    return ee(e, t = E(t)) ? d(2, e[t]) : F(e, t)
+    return ee(e, t = E(t)) ? d(2, e[t]) : V(e, t)
   },
   en = function(e, t, n) {
     return ee(e, t = E(t)) && O(n) && y(n, "value") && !y(n, "get") && !y(n, "set") && !n.configurable && (!y(n, "writable") || n.writable) && (!y(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
@@ -121,8 +121,8 @@ Chunk257943 ? (W || (Chunk873078.f = et, Chunk4940.f = en, J(q, "buffer"), J(q, 
         i = t, d = m(n, o);
         var f = t.byteLength;
         if (true === r) {
-          if (f % o || (s = f - d) < 0) throw new V(X)
-        } else if ((s = _(r) * o) + d > f) throw new V(X);
+          if (f % o || (s = f - d) < 0) throw new F(X)
+        } else if ((s = _(r) * o) + d > f) throw new F(X);
         l = s / o
       } else if (Z(t)) return L(E, t);
     else return a(C, E, t);

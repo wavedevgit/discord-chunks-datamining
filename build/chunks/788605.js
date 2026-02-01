@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 788605, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 788605, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   p: () => d
 });
@@ -14,16 +14,16 @@ let d = (0, Chunk419954.Hn)(Chunk780964.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
   fieldLayout: "horizontal",
   useTitle: () => o.intl.string(o.t.swsWWC),
   useValue: () => (0, n.bG)([r.default], () => r.default.getDisplayUserMode()),
-  setValue: e => {
-    l.A.setDisplayUserMode(e)
+  setValue: t => {
+    l.A.setDisplayUserMode(t)
   },
   useOptions: () => [{
     id: "always",
     label: o.intl.string(o.t.nBmDrT),
-    value: u.f5z.ALWAYS
+    value: a.f5z.ALWAYS
   }, {
     id: "speaking",
     label: o.intl.string(o.t["2OvIZY"]),
-    value: u.f5z.ONLY_WHILE_SPEAKING
+    value: a.f5z.ONLY_WHILE_SPEAKING
   }]
 })

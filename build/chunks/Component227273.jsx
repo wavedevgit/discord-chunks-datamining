@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 227273, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -87,7 +87,7 @@ let h = e => {
       styles: b
     }), p = (0, a.bG)([c.A], () => c.A.useReducedMotion), {
       analyticsLocations: O
-    } = (0, u.Ay)(), C = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
+    } = (0, u.Ay)(), x = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
     return (0, r.jsxs)("div", {
       className: s()(b.perksContainer, t, {
         [b.partiallyHidden]: n && !l,
@@ -102,7 +102,7 @@ let h = e => {
         className: s()(b.perkCardContainer, {
           [b.perkCardContainerExpanded]: l
         }),
-        children: C.map(e => null != e && (0, r.jsx)(E, function(e) {
+        children: x.map(e => null != e && (0, r.jsx)(E, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 10635, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -110,7 +110,7 @@ function R(e) {
             children: [(0, r.jsx)(E.A, {
               user: n,
               guildId: R.guild_id,
-              nickname: p.Ay.getName(null, R.id, n),
+              nickname: h.Ay.getName(null, R.id, n),
               pronouns: null == L ? true : L.pronouns,
               onOpenProfile: D ? true : F,
               tags: (0, r.jsx)(y.A, {
@@ -119,19 +119,19 @@ function R(e) {
               })
             }), (0, r.jsxs)(v.A.Overlay, {
               className: P.Lw,
-              children: [(0, r.jsx)(x.A, {
+              children: [(0, r.jsx)(_.A, {
                 heading: N.intl.string(N.t["61W33d"]),
                 headingColor: "text-strong",
-                children: (0, r.jsx)(_.A, {
+                children: (0, r.jsx)(j.A, {
                   userBio: null == L ? true : L.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: B
                 })
-              }), (0, r.jsx)(x.A, {
+              }), (0, r.jsx)(_.A, {
                 heading: N.intl.string(N.t["A//N4k"]),
                 headingColor: "text-strong",
-                children: (0, r.jsx)(j.A, {
+                children: (0, r.jsx)(x.A, {
                   userId: n.id
                 })
               })]
@@ -149,7 +149,7 @@ function R(e) {
             className: T.wC,
             children: N.intl.string(N.t["+Xp3hq"])
           })
-        }), (null == L ? true : L.profileEffect) != null && (0, r.jsx)(h.A, {
+        }), (null == L ? true : L.profileEffect) != null && (0, r.jsx)(p.A, {
           skuId: null == L || null == (t = L.profileEffect) ? true : t.skuId,
           isHovering: H
         })]

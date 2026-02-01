@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 510898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -109,8 +109,8 @@ function f(e) {
     }
   }, [t]);
   let {
-    loadState: C
-  } = (0, o.E)(), x = C !== o.mJ.LOADED;
+    loadState: x
+  } = (0, o.E)(), C = x !== o.mJ.LOADED;
   switch (f) {
     case d.R.HOME:
       return (0, r.jsx)(r.Fragment, {
@@ -121,7 +121,7 @@ function f(e) {
             children: (0, r.jsx)(c.A, {
               subscription: e,
               navigateToSwitchPlan: h,
-              loadingState: x ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
+              loadingState: C ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })

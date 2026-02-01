@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 897208, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 897208, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  p: () => _
+  p: () => E
 });
 var Chunk311907 = require("./311907.js"),
   Chunk55619 = require("./55619.js"),
@@ -13,70 +13,70 @@ var Chunk311907 = require("./311907.js"),
 let d = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     useTitle: () => o.intl.string(o.t["yR/d2T"]),
     useSubtitle: () => o.intl.string(o.t.RiIiPw),
-    useValue: () => (0, n.bG)([a.A], () => {
+    useValue: () => (0, n.bG)([u.A], () => {
       let {
-        hidePersonalInformation: e
-      } = a.A.getSettings();
-      return e
+        hidePersonalInformation: t
+      } = u.A.getSettings();
+      return t
     }),
-    setValue: e => l.A.update({
-      hidePersonalInformation: e
+    setValue: t => l.A.update({
+      hidePersonalInformation: t
     })
   }),
   T = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
     useTitle: () => o.intl.string(o.t.uWBOri),
-    useValue: () => (0, n.bG)([a.A], () => {
+    useValue: () => (0, n.bG)([u.A], () => {
       let {
-        hideInstantInvites: e
-      } = a.A.getSettings();
-      return e
+        hideInstantInvites: t
+      } = u.A.getSettings();
+      return t
     }),
-    setValue: e => l.A.update({
-      hideInstantInvites: e
+    setValue: t => l.A.update({
+      hideInstantInvites: t
     })
   }),
-  c = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_SOUNDS, {
+  A = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => o.intl.string(o.t.OrqYDP),
-    useValue: () => (0, n.bG)([a.A], () => {
+    useValue: () => (0, n.bG)([u.A], () => {
       let {
-        disableSounds: e
-      } = a.A.getSettings();
-      return e
+        disableSounds: t
+      } = u.A.getSettings();
+      return t
     }),
-    setValue: e => l.A.update({
-      disableSounds: e
+    setValue: t => l.A.update({
+      disableSounds: t
     })
   }),
-  A = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
+  S = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
     useTitle: () => o.intl.string(o.t.sUAbLd),
-    useValue: () => (0, n.bG)([a.A], () => {
+    useValue: () => (0, n.bG)([u.A], () => {
       let {
-        disableNotifications: e
-      } = a.A.getSettings();
-      return e
+        disableNotifications: t
+      } = u.A.getSettings();
+      return t
     }),
-    setValue: e => l.A.update({
-      disableNotifications: e
+    setValue: t => l.A.update({
+      disableNotifications: t
     })
   }),
-  S = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+  c = (0, Chunk419954.zD)(Chunk780964.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
     useTitle: () => o.intl.string(o.t["iA81+a"]),
     useSubtitle: () => o.intl.string(o.t.P4vj0h),
-    useValue: () => (0, n.bG)([a.A], () => {
+    useValue: () => (0, n.bG)([u.A], () => {
       let {
-        enableContentProtection: e
-      } = a.A.getSettings();
-      return e
+        enableContentProtection: t
+      } = u.A.getSettings();
+      return t
     }),
-    setValue: e => l.A.update({
-      enableContentProtection: e
+    setValue: t => l.A.update({
+      enableContentProtection: t
     }),
     usePredicate: () => {
-      var e, t, i;
-      return null != (e = null === s.A || true === s.A || null == (i = s.A.window) || null == (t = i.supportsContentProtection) ? true : t.call(i)) && e
+      var t, e, i;
+      return null != (t = null === s.A || true === s.A || null == (i = s.A.window) || null == (e = i.supportsContentProtection) ? true : e.call(i)) && t
     }
   }),
-  _ = (0, Chunk419954.FW)(Chunk780964.X.STREAMER_MODE_OPTIONS_LIST, {
+  E = (0, Chunk419954.FW)(Chunk780964.X.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => o.intl.string(o.t.UtW8R6),
-    buildLayout: () => [d, T, c, A, S]
+    buildLayout: () => [d, T, A, S, c]
   })

@@ -46,7 +46,7 @@ async function G(e, t, n, r) {
   if (null == l || null == l.secrets || !(0, P.px)(r, l.party, l.secrets)) throw new x.A({
     errorCode: k.Lw6.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, m.A)(l, v.A);
+  let a = (0, f.A)(l, v.A);
   if (a) {
     let {
       lock: t
@@ -183,7 +183,7 @@ let V = {
         channel: l,
         guild: a,
         frame: o
-      } = (0, R.W)(), u = (0, f.Ay)({
+      } = (0, R.W)(), u = (0, m.Ay)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? E.A.getWindow(u) : true;

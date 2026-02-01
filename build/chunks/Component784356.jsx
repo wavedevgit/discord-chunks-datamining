@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 784356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -26,9 +26,9 @@ let u = e => {
     descriptionCta: h,
     customContent: E,
     cardVariant: O,
-    subtitleClassName: C,
-    imageOverlayText: x
-  } = e, S = (0, o.Q)(O), T = null != x;
+    subtitleClassName: x,
+    imageOverlayText: C
+  } = e, S = (0, o.Q)(O), T = null != C;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l()(d.Iv, d.Gz)
@@ -37,7 +37,7 @@ let u = e => {
       cardVariantStyleInfo: S,
       titleClassName: _,
       subtitle: b,
-      subtitleClassName: C,
+      subtitleClassName: x,
       isOverlay: false
     }), null != m && (0, r.jsxs)("div", {
       className: l()(d.V8, {
@@ -53,7 +53,7 @@ let u = e => {
         children: (0, r.jsx)(a.Text, {
           className: d.nj,
           variant: "text-md/bold",
-          children: x
+          children: C
         })
       }) : null]
     }), null != f && (0, r.jsxs)("div", {

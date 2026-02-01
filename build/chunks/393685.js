@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 393685, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 393685, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   C: () => T
 });
@@ -15,21 +15,21 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, 
   useTitle: () => d.intl.string(d.t.cUMdH0),
   useSubtitle: () => d.intl.string(d.t["6EjbvA"]),
   useValue: function() {
-    return (0, n.bG)([a.A], () => a.A.getAutomaticGainControl())
+    return (0, n.bG)([u.A], () => u.A.getAutomaticGainControl())
   },
-  setValue: function(e) {
-    l.A.setAutomaticGainControl(e, {
+  setValue: function(t) {
+    l.A.setAutomaticGainControl(t, {
       page: o.liQ.USER_SETTINGS,
       section: o.JJy.SETTINGS_VOICE_AND_VIDEO
     })
   },
   useDisabled: function() {
-    return (0, n.bG)([a.A, r.A], () => {
-      let e = a.A.getInputDeviceId();
-      return r.A.hasAutomaticGainControl(e)
+    return (0, n.bG)([u.A, r.A], () => {
+      let t = u.A.getInputDeviceId();
+      return r.A.hasAutomaticGainControl(t)
     })
   },
   usePredicate: function() {
-    return (0, n.bG)([a.A], () => a.A.isAutomaticGainControlSupported() && a.A.isInputProfileCustom())
+    return (0, n.bG)([u.A], () => u.A.isAutomaticGainControlSupported() && u.A.isInputProfileCustom())
   }
 })

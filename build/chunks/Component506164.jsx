@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 506164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -16,19 +16,19 @@ let o = function(e) {
     disagreement: c,
     onAgree: u,
     onDisagree: d,
-    modalType: h,
-    channelId: p,
+    modalType: p,
+    channelId: h,
     guildId: g
   } = e;
   l.useEffect(() => {
-    (0, s.Bf)(h, p, g)
-  }, [h, p, g]);
+    (0, s.Bf)(p, h, g)
+  }, [p, h, g]);
   let f = l.useCallback(() => {
-      (0, s.mU)(s.IY.NSFW_CHANNEL_DISAGREE_CTA, h, p, g), null == d || d()
-    }, [d, h, p, g]),
+      (0, s.mU)(s.IY.NSFW_CHANNEL_DISAGREE_CTA, p, h, g), null == d || d()
+    }, [d, p, h, g]),
     m = l.useCallback(() => {
-      (0, s.mU)(s.IY.NSFW_CHANNEL_AGREE_CTA, h, p, g), null == u || u()
-    }, [u, h, p, g]);
+      (0, s.mU)(s.IY.NSFW_CHANNEL_AGREE_CTA, p, h, g), null == u || u()
+    }, [u, p, h, g]);
   return (0, r.jsxs)(i.BJc, {
     justify: "center",
     align: "center",

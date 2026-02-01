@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 641616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => ec
@@ -238,7 +238,7 @@ function ec() {
       name: "Layers",
       group: ei.fu.UI,
       tags: ["verification", "safety flow"],
-      render: () => (0, a.jsx)(k.A, {})
+      render: () => (0, a.jsx)(P.A, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",
@@ -317,7 +317,7 @@ function ec() {
       name: "Voice Filters",
       group: ei.fu.AUDIO_VIDEO,
       tags: ["soundboard", "effects"],
-      render: () => (0, a.jsx)($.A, {})
+      render: () => (0, a.jsx)(Z.A, {})
     }), e.push({
       id: "krisp_tester",
       name: "Krisp Tester",
@@ -340,7 +340,7 @@ function ec() {
       name: "Language",
       group: ei.fu.UI,
       tags: ["locale"],
-      render: () => (0, a.jsx)(P.A, {})
+      render: () => (0, a.jsx)(k.A, {})
     }), e.push({
       id: "word_frequency",
       name: "Word Frequency",
@@ -360,7 +360,7 @@ function ec() {
       id: "virtual_currency_config",
       name: "Virtual Currency Config",
       group: ei.fu.QUESTS,
-      render: () => (0, a.jsx)(Z.A, {})
+      render: () => (0, a.jsx)($.A, {})
     }), e.push({
       id: "Revenue Storybook",
       name: "Revenue Storybook",

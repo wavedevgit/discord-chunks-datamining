@@ -1,4 +1,4 @@
-/** Chunk was on 94682 **/
+/** Chunk was on 60118 **/
 /** chunk id: 34442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IU: () => y,
@@ -103,15 +103,15 @@ function b(e) {
   }, [I, j, w]), T = l.useMemo(() => g(p({}, A), {
     threshold: i.Ht.rankings.CONTAINS,
     keys: ["label"]
-  }), [A]), N = l.useCallback(e => "" === e.trim() ? S.length : (0, i.Ht)(S, e, T).length, [S, T]), C = l.useCallback(e => {
+  }), [A]), C = l.useCallback(e => "" === e.trim() ? S.length : (0, i.Ht)(S, e, T).length, [S, T]), N = l.useCallback(e => {
     let n = e.target.value;
     "" === x.trim() && "" !== n.trim() && h({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: n.trim().length,
-      numResults: N(n)
+      numResults: C(n)
     }), v(n), _.current = n
-  }, [x, h, t, N]);
+  }, [x, h, t, C]);
   return (0, r.jsx)(a.YNO, g(p({}, O), {
     onRequestOpen: () => {
       h({
@@ -124,7 +124,7 @@ function b(e) {
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: _.current.trim().length,
-        numResults: N(_.current)
+        numResults: C(_.current)
       })
     },
     renderPopout: e => {
@@ -147,7 +147,7 @@ function b(e) {
             hideLabel: true,
             placeholder: d.intl.string(d.t["5h0QOP"]),
             autoFocus: true,
-            onQueryChange: C
+            onQueryChange: N
           }), (0, r.jsx)(a.X2W, {
             maxVisibleItems: 7
           })]

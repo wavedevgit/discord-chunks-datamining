@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 957785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,10 +13,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk183555 = require("./183555.jsx"),
   Chunk524380 = require("./524380.js"),
   Chunk733557 = require("./733557.js");
-let p = Chunk64700.forwardRef(function(e, t) {
+let h = Chunk64700.forwardRef(function(e, t) {
   var n, l, i;
   let {
-    onCardClick: p,
+    onCardClick: h,
     tooltipConfig: g,
     shouldScalePreview: f = true,
     renderPreview: m,
@@ -24,23 +24,23 @@ let p = Chunk64700.forwardRef(function(e, t) {
     isSingleCard: A = false,
     wishlistId: y,
     wishlistItem: O,
-    cardSize: _ = d.Y.MEDIUM
+    cardSize: j = d.Y.MEDIUM
   } = e, {
-    skuId: j,
-    skuProductLine: x
+    skuId: x,
+    skuProductLine: _
   } = O, {
     trackUserProfileWishlistAction: v
-  } = (0, u.NJ)(), E = f ? h.ho : h.C8, C = A ? h.pr : h.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
+  } = (0, u.NJ)(), E = f ? p.ho : p.C8, C = A ? p.pr : p.Nr, S = null != b && b > 0, I = (0, r.jsxs)(o.DUT, {
     onClick: () => {
-      p(), v({
+      h(), v({
         action: S ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: S ? null : j,
+        skuId: S ? null : x,
         wishlistId: y,
-        productLines: new Set([x])
+        productLines: new Set([_])
       })
     },
     className: s()(C, {
-      [h.ax]: _ === d.Y.SMALL
+      [p.ax]: j === d.Y.SMALL
     }),
     "aria-label": null != (n = g.title) ? n : "",
     innerRef: t,
@@ -48,7 +48,7 @@ let p = Chunk64700.forwardRef(function(e, t) {
       className: E,
       children: m()
     }), S && (0, r.jsx)("div", {
-      className: h.sv,
+      className: p.sv,
       children: (0, r.jsxs)(o.Text, {
         variant: "text-xs/medium",
         color: "always-white",

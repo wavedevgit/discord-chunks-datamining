@@ -13,8 +13,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk291358 = require("./291358.js"),
   Chunk473169 = require("./473169.js");
-let p = 0,
-  h = e => {
+let h = 0,
+  p = e => {
     switch (e) {
       case a.G6Q.TOP_LEFT:
         return c.intl.string(c.t.xlchpU);
@@ -34,8 +34,8 @@ function g(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => "notification-position-selector-".concat(p++)), g = t === a.G6Q.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
-    position: h(t)
+  } = e, [s] = r.useState(() => "notification-position-selector-".concat(h++)), g = t === a.G6Q.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
+    position: p(t)
   });
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(o.vN3, {
@@ -54,7 +54,7 @@ function g(e) {
             [d.oF]: e === a.G6Q.BOTTOM_RIGHT,
             [d.RV]: e === a.G6Q.BOTTOM_LEFT
           }),
-          children: [h(e), e === a.G6Q.DISABLED ? (0, i.jsx)(o.KTN, {
+          children: [p(e), e === a.G6Q.DISABLED ? (0, i.jsx)(o.KTN, {
             size: "md",
             color: "currentColor",
             className: d.WO

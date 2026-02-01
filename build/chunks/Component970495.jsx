@@ -32,35 +32,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk676667 = require("./676667.js");
 
-function _(e) {
+function w(e) {
   let {
     user: t,
     application: n,
     runningGame: r
   } = e;
   return null != n || null != r ? (0, i.jsx)("div", {
-    className: C.R3,
+    className: N.R3,
     children: (0, i.jsx)(a.Qk9, {
       lowerBadge: (0, i.jsx)("div", {
-        className: C.oM,
+        className: N.oM,
         children: null != n || null != r ? (0, i.jsx)(f.A, {
           game: n,
           pid: null == r ? true : r.pid,
           size: f.M.XXSMALL,
-          className: C.Gt
+          className: N.Gt
         }) : null
       }),
       lowerBadgeSize: {
         width: 16,
         height: 16
       },
-      children: (0, i.jsx)(u.A, {
+      children: (0, i.jsx)(c.A, {
         user: t,
         "aria-hidden": true,
         size: a._3J.SIZE_40
       })
     })
-  }) : (0, i.jsx)(u.A, {
+  }) : (0, i.jsx)(c.A, {
     user: t,
     "aria-hidden": true,
     size: a._3J.SIZE_40
@@ -72,39 +72,39 @@ function P(e) {
     user: t,
     application: n,
     runningGame: r,
-    username: o,
-    onWatchClick: s,
-    buttonColor: c
+    username: s,
+    onWatchClick: o,
+    buttonColor: u
   } = e;
   return (0, i.jsxs)("div", {
-    className: C.kL,
+    className: N.kL,
     children: [(0, i.jsx)("div", {
-      className: C.H,
-      children: (0, i.jsx)(_, {
+      className: N.H,
+      children: (0, i.jsx)(w, {
         user: t,
         application: n,
         runningGame: r
       })
     }), (0, i.jsx)("div", {
-      className: l()(C.rf, C.FR),
+      className: l()(N.rf, N.FR),
       children: (0, i.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "interactive-text-default",
-        className: C.G3,
-        children: T.intl.format(T.t.vTPX23, {
-          username: o
+        className: N.G3,
+        children: C.intl.format(C.t.vTPX23, {
+          username: s
         })
       })
     }), (0, i.jsx)("div", {
-      className: C.Xm,
+      className: N.Xm,
       children: (0, i.jsx)(a.DUT, {
-        onClick: s,
-        className: l()(C.kx, "green" === c && C.Ib, "gray" === c && C.E0),
+        onClick: o,
+        className: l()(N.kx, "green" === u && N.Ib, "gray" === u && N.E0),
         children: (0, i.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "always-white",
           tag: "span",
-          children: T.intl.string(T.t["xl+bTG"])
+          children: C.intl.string(C.t["xl+bTG"])
         })
       })
     })]
@@ -116,39 +116,39 @@ function D(e) {
     user: t,
     application: n,
     runningGame: r,
-    username: o,
-    onWatchClick: s,
-    iconColor: c
+    username: s,
+    onWatchClick: o,
+    iconColor: u
   } = e;
   return (0, i.jsxs)("div", {
-    className: C.kL,
+    className: N.kL,
     children: [(0, i.jsx)("div", {
-      className: C.H,
-      children: (0, i.jsx)(_, {
+      className: N.H,
+      children: (0, i.jsx)(w, {
         user: t,
         application: n,
         runningGame: r
       })
     }), (0, i.jsx)("div", {
-      className: l()(C.rf, C.FR),
+      className: l()(N.rf, N.FR),
       children: (0, i.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "interactive-text-default",
-        className: C.G3,
-        children: T.intl.format(T.t.NmEczg, {
-          username: o
+        className: N.G3,
+        children: C.intl.format(C.t.NmEczg, {
+          username: s
         })
       })
     }), (0, i.jsx)("div", {
-      className: C.U4
+      className: N.U4
     }), (0, i.jsx)("div", {
-      className: C.Xm,
+      className: N.Xm,
       children: (0, i.jsx)(a.DUT, {
-        onClick: s,
-        className: C.zf,
-        children: (0, i.jsx)(j.b, {
+        onClick: o,
+        className: N.zf,
+        children: (0, i.jsx)(S.b, {
           size: "sm",
-          color: "green" === c ? "white" : a.LU0.colors.INTERACTIVE_TEXT_ACTIVE.css
+          color: "green" === u ? "white" : a.LU0.colors.INTERACTIVE_TEXT_ACTIVE.css
         })
       })
     })]
@@ -157,45 +157,45 @@ function D(e) {
 
 function R(e, t, n) {
   var r, l;
-  if (x.A.isNotificationDisabled(N.KS.StreamWatchNudge)) return null;
-  let a = O.default.getUser(e);
+  if (_.A.isNotificationDisabled(j.KS.StreamWatchNudge)) return null;
+  let a = v.default.getUser(e);
   if (null == a) return null;
   let {
-    designVariant: u
-  } = (0, b.Fg)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, j = g.A.getChannel(t), T = null != f ? d.A.getApplication(f) : null, C = null != f ? y.A.getDetectableGame(f) : null, _ = null != f ? h.Ay.getRunningGames().find(e => e.id === f) : null, R = null != (r = null != (l = null == _ ? true : _.name) ? l : null == C ? true : C.name) ? r : null == T ? true : T.name, L = (0, E.mG)(null == j ? true : j.guild_id, null == j ? true : j.id, a), {
-    trackView: k,
-    trackClick: M
-  } = (0, I.Y9)(N.KS.StreamWatchNudge, {
-    notif_type: N.KS.StreamWatchNudge,
+    designVariant: c
+  } = (0, O.Fg)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, S = m.A.getChannel(t), C = null != f ? d.A.getApplication(f) : null, N = null != f ? y.A.getDetectableGame(f) : null, w = null != f ? p.Ay.getRunningGames().find(e => e.id === f) : null, R = null != (r = null != (l = null == w ? true : w.name) ? l : null == N ? true : N.name) ? r : null == C ? true : C.name, k = (0, b.mG)(null == S ? true : S.guild_id, null == S ? true : S.id, a), {
+    trackView: M,
+    trackClick: L
+  } = (0, I.Y9)(j.KS.StreamWatchNudge, {
+    notif_type: j.KS.StreamWatchNudge,
     notif_user_id: a.id,
     activity_type: null == n ? true : n.type,
     activity_name: null != R ? R : null == n ? true : n.name
   });
   return {
     body: (() => {
-      switch (u) {
-        case b.wD.GREEN_BUTTON_WITH_TEXT:
+      switch (c) {
+        case O.wD.GREEN_BUTTON_WITH_TEXT:
           return (0, i.jsx)(P, {
             user: a,
-            application: T,
-            runningGame: _,
-            username: L,
+            application: C,
+            runningGame: w,
+            username: k,
             buttonColor: "green"
           });
-        case b.wD.GRAY_BUTTON_WITH_TEXT:
+        case O.wD.GRAY_BUTTON_WITH_TEXT:
           return (0, i.jsx)(P, {
             user: a,
-            application: T,
-            runningGame: _,
-            username: L,
+            application: C,
+            runningGame: w,
+            username: k,
             buttonColor: "gray"
           });
-        case b.wD.SINGLE_ICON_BUTTON:
+        case O.wD.SINGLE_ICON_BUTTON:
           return (0, i.jsx)(D, {
             user: a,
-            application: T,
-            runningGame: _,
-            username: L,
+            application: C,
+            runningGame: w,
+            username: k,
             iconColor: "white"
           })
       }
@@ -203,27 +203,27 @@ function R(e, t, n) {
     maxBodyLines: 1,
     onNotificationClick: (n, i) => {
       (() => {
-        M("overlay-watch-stream");
-        let [n] = A.A.getWidgetsByType(w.uss.GO_LIVE), i = p.A.getStreamParticipants(t).find(t => t.user.id === e);
-        null != n && null != i && ((0, S.CZ)(i.stream, m.$.COVER), (0, c.A9)(i.stream, {
+        L("overlay-watch-stream");
+        let [n] = A.A.getWidgetsByType(T.uss.GO_LIVE), i = h.A.getStreamParticipants(t).find(t => t.user.id === e);
+        null != n && null != i && ((0, x.CZ)(i.stream, g.$.COVER), (0, u.A9)(i.stream, {
           forceMultiple: true,
           noFocus: true
-        }), (0, o.v0)(n.id, {
+        }), (0, s.v0)(n.id, {
           forcedPinnedState: true
-        }), (0, o.dH)(n.id), (0, v.YX)(w.uss.GO_LIVE, {
-          type: v.Z5.GO_LIVE,
-          value: v.IP.ACCEPT_REQUEST,
+        }), (0, s.dH)(n.id), (0, E.YX)(T.uss.GO_LIVE, {
+          type: E.Z5.GO_LIVE,
+          value: E.IP.ACCEPT_REQUEST,
           userId: i.user.id
         }))
       })(), setTimeout(() => {
-        s.A.updateNotificationStatus(i)
+        o.A.updateNotificationStatus(i)
       }, 300)
     },
     onNotificationShow: () => {
-      k()
+      M()
     },
     onDismissClick: (e, t) => {
-      M("dismiss"), s.A.updateNotificationStatus(t)
+      L("dismiss"), o.A.updateNotificationStatus(t)
     }
   }
 }

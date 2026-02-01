@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 708399, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 708399, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   I: () => d
 });
@@ -13,10 +13,10 @@ var Chunk419954 = require("./419954.js"),
 let d = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_ALLOW_GAME_FRIEND_DMS_SETTING, {
   useTitle: () => o.intl.string(o.t.XpBObB),
   useSubtitle: () => o.intl.format(o.t.oZsHTD, {
-    helpdeskArticle: l.A.getArticleURL(u.MVz.SLAYER_GAME_FRIENDS)
+    helpdeskArticle: l.A.getArticleURL(a.MVz.SLAYER_GAME_FRIENDS)
   }),
   useSearchTerms: () => [o.intl.string(o.t["Uv/eTx"])],
   useValue: () => s.Zk.useSetting(),
-  setValue: e => s.Zk.updateSetting(e),
+  setValue: t => s.Zk.updateSetting(t),
   usePredicate: Chunk542877.K
 })

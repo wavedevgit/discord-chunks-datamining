@@ -115,7 +115,7 @@ function N(e) {
     pendingBanner: O,
     size: N,
     canAnimate: D || !k ? x : j
-  }), F = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, s.LX)((0, d.Ay)(V, F, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - R, K = w - T - R;
+  }), V = (0, u.rdh)(c.A.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(y, (0, u.FT9)(I)), B = (0, s.LX)((0, d.Ay)(F, V, false)), H = (0, f.A)(null != (t = null != P ? P : null == a ? true : a.primaryColor) ? t : B).hex, Y = C(I), W = Y + S - R, K = w - T - R;
   return (0, r.jsxs)("svg", {
     className: b.dK,
     viewBox: "0 0 ".concat(N, " ").concat(w),

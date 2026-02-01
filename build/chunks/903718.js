@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 903718, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 903718, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   E: () => o
 });
@@ -10,8 +10,8 @@ var Chunk311907 = require("./311907.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.zD)(Chunk780964.X.DESATURATE_CUSTOM_COLORS, {
-  useTitle: () => u.intl.string(u.t.bQCodD),
-  useSubtitle: () => u.intl.string(u.t.nlAOEW),
+  useTitle: () => a.intl.string(a.t.bQCodD),
+  useSubtitle: () => a.intl.string(a.t.nlAOEW),
   useValue: () => (0, n.bG)([s.A], () => s.A.desaturateUserColors),
   setValue: () => (0, l.YV)()
 })

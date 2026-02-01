@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 355216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   HN: () => m,
@@ -22,7 +22,7 @@ var Chunk626600 = require("./626600.js");
 function m() {
   let {
     setSelectedFilter: e
-  } = (0, d.A)(), t = (0, p.S)(e => e.setInboxReadState);
+  } = (0, d.A)(), t = (0, h.S)(e => e.setInboxReadState);
   return () => {
     e(g.Io.ALL), t(false)
   }
@@ -33,13 +33,13 @@ function b(e) {
       isSelected: d
     } = e,
     {
-      unreadRecentMentionsCount: p,
+      unreadRecentMentionsCount: h,
       unreadChannelIds: g
-    } = (0, h.U4)(),
+    } = (0, p.U4)(),
     m = (t = function() {
       let {
         unreadRecentMentionsCount: e
-      } = (0, h.U4)(), {
+      } = (0, p.U4)(), {
         hasMoreMentions: t,
         mentionsLoading: n
       } = (0, a.cf)([c.Ay], () => ({
@@ -78,7 +78,7 @@ function b(e) {
       location: "useInboxBadgeInfo"
     });
   return l.useMemo(() => {
-    if (p > 0) return m;
+    if (h > 0) return m;
     let e = g.length;
     if (0 === e) return {
       badge: null,
@@ -117,5 +117,5 @@ function b(e) {
       badge: null,
       badgeType: null
     }
-  }, [p, m, g.length, b, d])
+  }, [h, m, g.length, b, d])
 }

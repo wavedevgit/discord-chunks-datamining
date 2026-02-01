@@ -8,10 +8,10 @@ require.d(exports, {
   TZ: () => P,
   Tp: () => U,
   XI: () => R,
-  Xd: () => F,
+  Xd: () => V,
   Xi: () => k,
   a8: () => G,
-  dA: () => V,
+  dA: () => F,
   nO: () => B,
   vN: () => j
 });
@@ -201,13 +201,13 @@ async function G(e) {
   } catch (e) {}
 }
 
-function F(e) {
+function V(e) {
   true !== e.noTrack && (0, v.K2)(e.preset, e.resolution, e.frameRate), s.h.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
-function V(e, t) {
+function F(e, t) {
   o.Bo.patch({
     url: S.Rsh.STREAM(e),
     body: {

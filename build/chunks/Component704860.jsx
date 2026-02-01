@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 704860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,46 +20,46 @@ function p(e) {
     message: n,
     snapshot: p
   } = e, {
-    moderatorReport: g
-  } = p, f = null == g ? true : g.reported_user_id, m = (0, i.bG)([a.default], () => null != f ? a.default.getUser(f) : null), b = (0, i.bG)([s.A], () => s.A.getGuild(t.guild_id));
+    moderatorReport: f
+  } = p, m = null == f ? true : f.reported_user_id, g = (0, i.bG)([s.default], () => null != m ? s.default.getUser(m) : null), A = (0, i.bG)([a.A], () => a.A.getGuild(t.guild_id));
   (0, o.ml)(n);
-  let A = (0, c.A)({
+  let b = (0, c.A)({
       channel: t,
-      user: m,
-      guild: b
+      user: g,
+      guild: A
     }),
-    y = (0, d.A)({
+    _ = (0, d.A)({
       channel: t,
-      user: m,
-      guild: b
+      user: g,
+      guild: A
     }),
-    O = [(0, u.A)({
+    y = [(0, u.A)({
       channel: t,
       message: n,
-      user: m,
-      guild: b
-    }), A, y, (0, h.A)({
+      user: g,
+      guild: A
+    }), b, _, (0, h.A)({
       channel: t,
-      user: m,
-      guild: b
+      user: g,
+      guild: A
     })].filter(e => null != e);
-  return t.isModeratorReportChannel() && 0 !== O.length ? (0, r.jsx)(r.Fragment, {
-    children: O.map((e, t) => (0, r.jsx)(l.Fragment, {
+  return t.isModeratorReportChannel() && 0 !== y.length ? (0, l.jsx)(l.Fragment, {
+    children: y.map((e, t) => (0, l.jsx)(r.Fragment, {
       children: e
     }, t))
   }) : null
 }
 
-function g(e) {
+function f(e) {
   let {
     message: t,
     channel: n
   } = e;
-  return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, l) => (0, r.jsx)(p, {
+  return (0, l.jsx)(l.Fragment, {
+    children: t.messageSnapshots.map((e, r) => (0, l.jsx)(p, {
       channel: n,
       message: t,
       snapshot: e
-    }, l))
+    }, r))
   })
 }

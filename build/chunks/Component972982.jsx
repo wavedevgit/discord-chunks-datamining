@@ -1,7 +1,7 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => C
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk978551 = require("./978551.jsx"),
   Chunk100817 = require("./100817.jsx"),
   Chunk531525 = require("./531525.js");
-class C extends Chunk64700.PureComponent {
+class x extends Chunk64700.PureComponent {
   renderEnabled() {
     let {
       backupCodes: e,
@@ -65,14 +65,14 @@ class C extends Chunk64700.PureComponent {
   }
 }
 
-function x(e) {
+function C(e) {
   let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
   s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
   let n = (0, a.cf)([_.A, u.default], () => ({
     togglingSMS: _.A.togglingSMS,
     hasTOTPEnabled: u.default.hasTOTPEnabled()
   }));
-  return (0, r.jsx)(C, function(e) {
+  return (0, r.jsx)(x, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

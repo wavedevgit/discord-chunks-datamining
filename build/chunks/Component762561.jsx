@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 762561, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => U
@@ -64,23 +64,23 @@ function U(e) {
     user: n,
     currentUser: m,
     channel: U
-  } = e, B = __OVERLAY__, H = (0, A.Ay)(n.id), F = (0, c.Ay)(), K = l.useRef(Date.now()), {
-    analyticsLocations: Y
+  } = e, B = __OVERLAY__, H = (0, A.Ay)(n.id), F = (0, c.Ay)(), Y = l.useRef(Date.now()), {
+    analyticsLocations: K
   } = (0, d.Ay)(u.A.USER_PROFILE_SIDEBAR), W = (0, f.pb)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: U.id
   }), z = l.useRef(null), {
-    isHoveringOrFocusing: q,
-    isHovering: X
-  } = (0, h.A)(z), J = (0, y.fC)(), Q = (0, o.zhh)({
+    isHoveringOrFocusing: X,
+    isHovering: q
+  } = (0, p.A)(z), J = (0, y.fC)(), Q = (0, o.zhh)({
     opacity: +(null != J.interactionType),
     config: {
       duration: 150
     }
   }), Z = e => {
     (0, O.openUserProfileModal)(k({
-      sourceAnalyticsLocations: Y,
+      sourceAnalyticsLocations: K,
       hideRestrictedProfile: true
     }, W, e))
   }, $ = (null == H ? true : H.widgets) != null && H.widgets.length > 0, {
@@ -94,10 +94,10 @@ function U(e) {
     userId: n.id
   }), en = l.useMemo(() => null == et ? null : et.items.filter(e => !e.isOwned), [et]);
   return (0, r.jsx)(d.f5, {
-    value: Y,
+    value: K,
     children: (0, r.jsx)(f.of, {
       value: W,
-      openedAt: K.current,
+      openedAt: Y.current,
       fetchStartedAt: null == H ? true : H.fetchStartedAt,
       fetchEndedAt: null == H ? true : H.fetchEndedAt,
       isLoaded: null == H ? true : H.isLoaded,
@@ -124,16 +124,16 @@ function U(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: G.wx,
-              children: [(0, r.jsx)(j.A, {
+              children: [(0, r.jsx)(x.A, {
                 user: n,
                 displayProfile: H,
                 themeType: L.d.SIDEBAR,
-                animateOnHoverOrFocusOnly: !q,
+                animateOnHoverOrFocusOnly: !X,
                 className: G.vK
-              }), (0, r.jsx)(x.A, {
+              }), (0, r.jsx)(_.A, {
                 userId: n.id,
                 className: G.oR
-              }), (0, r.jsx)(_.A, {
+              }), (0, r.jsx)(j.A, {
                 user: n,
                 displayProfile: H,
                 channelId: U.id,
@@ -150,7 +150,7 @@ function U(e) {
               currentUser: m,
               displayProfile: H,
               channel: U,
-              isHoveringOrFocusing: null == J.interactionType && q,
+              isHoveringOrFocusing: null == J.interactionType && X,
               onOpenProfile: B ? true : Z
             }), $ && (0, r.jsx)("div", {
               className: G.sJ,
@@ -178,11 +178,11 @@ function U(e) {
             })]
           }), !B && (0, r.jsx)(V, {
             handleOpenProfile: Z,
-            analyticsLocations: Y,
+            analyticsLocations: K,
             context: W
-          }), (null == H ? true : H.profileEffect) != null && (0, r.jsx)(p.A, {
+          }), (null == H ? true : H.profileEffect) != null && (0, r.jsx)(h.A, {
             skuId: null == H || null == (t = H.profileEffect) ? true : t.skuId,
-            isHovering: X
+            isHovering: q
           })]
         })
       })

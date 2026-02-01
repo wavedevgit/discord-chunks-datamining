@@ -5,9 +5,9 @@ require.d(exports, {
   $U: () => W,
   Cp: () => S,
   D$: () => L,
-  I5: () => V,
+  I5: () => F,
   Nc: () => x,
-  Os: () => F,
+  Os: () => V,
   P7: () => P,
   Qu: () => N,
   Ry: () => T,
@@ -138,7 +138,7 @@ function x(e) {
   let {
     numAvailableGuildBoostSlots: l,
     numCanceledGuildBoostSlots: c
-  } = Object.values(d.A.boostSlots).reduce((e, t) => (V(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
+  } = Object.values(d.A.boostSlots).reduce((e, t) => (F(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
     numAvailableGuildBoostSlots: 0,
     numCanceledGuildBoostSlots: 0
   });
@@ -190,12 +190,12 @@ function G(e) {
   return Math.max(e.features.has(_.GuildFeatures.MORE_EMOJI) ? h.EQ : h.Xn, r)
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = (0, s.Z)(e.id).available;
   return Math.max(0, _.M2T[t] - n)
 }
 
-function V(e) {
+function F(e) {
   var t;
   return (null == (t = e.subscription) ? true : t.status) === _.Dmq.CANCELED || e.canceled
 }

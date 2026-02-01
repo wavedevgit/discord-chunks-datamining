@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 241874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,80 +17,80 @@ let h = Chunk64700.memo(function(e) {
       message: t,
       channel: n,
       compact: i = false,
-      groupId: s,
+      groupId: a,
       isGroupStart: o,
       usernameProfile: h,
       avatarProfile: p,
-      setPopout: g,
-      author: f,
-      repliedMessage: m,
-      roleIcon: b
-    } = e, A = (0, u.r4)(t.author.id, n.id), y = (0, u.m)(t, n, h, g), O = (0, u.Jo)(p, g), _ = l.useCallback(() => {
-      g({
+      setPopout: f,
+      author: m,
+      repliedMessage: g,
+      roleIcon: A
+    } = e, b = (0, u.r4)(t.author.id, n.id), _ = (0, u.m)(t, n, h, f), y = (0, u.Jo)(p, f), v = r.useCallback(() => {
+      f({
         usernameProfile: false,
         avatarProfile: false,
         referencedUsernameProfile: false
       })
-    }, [g]);
-    return (0, r.jsx)(a.Ay, {
+    }, [f]);
+    return (0, l.jsx)(s.Ay, {
       guildId: n.guild_id,
       message: t,
       channel: n,
-      repliedMessage: m,
-      author: f,
+      repliedMessage: g,
+      author: m,
       compact: i,
-      subscribeToGroupId: s,
+      subscribeToGroupId: a,
       showTimestampOnHover: !o && i && t.type !== d.lAJ.REPLY,
       renderPopout: c.A,
       showAvatarPopout: p,
       showUsernamePopout: h,
-      onClickAvatar: O,
-      onClickUsername: y,
-      onContextMenu: A,
-      onPopoutRequestClose: _,
-      roleIcon: b
+      onClickAvatar: y,
+      onClickUsername: _,
+      onContextMenu: b,
+      onPopoutRequestClose: v,
+      roleIcon: A
     })
   }),
   p = Chunk64700.memo(Chunk449859.A);
 
-function g(e) {
+function f(e) {
   let {
     messageProps: t,
     setPopout: n,
-    messagePopouts: l,
-    replyReference: a,
+    messagePopouts: r,
+    replyReference: s,
     author: o,
     repliedMessage: c,
     roleIcon: u
   } = e, {
     message: d,
-    compact: g,
-    channel: f,
-    groupId: m
+    compact: f,
+    channel: m,
+    groupId: g
   } = t, {
-    usernameProfile: b,
-    avatarProfile: A
-  } = l;
+    usernameProfile: A,
+    avatarProfile: b
+  } = r;
   if ((0, i.A)(d)) return null;
-  let y = d.id === m;
-  return y || g || null != a ? (0, r.jsx)(h, {
+  let _ = d.id === g;
+  return _ || f || null != s ? (0, l.jsx)(h, {
     message: d,
-    channel: f,
-    compact: g,
-    subscribeToGroupId: m,
-    isGroupStart: y,
-    groupId: m,
+    channel: m,
+    compact: f,
+    subscribeToGroupId: g,
+    isGroupStart: _,
+    groupId: g,
     setPopout: n,
-    usernameProfile: b,
-    avatarProfile: A,
+    usernameProfile: A,
+    avatarProfile: b,
     author: o,
     repliedMessage: c,
     roleIcon: u
-  }) : (0, r.jsx)(p, {
+  }) : (0, l.jsx)(p, {
     compact: true,
     timestamp: d.timestamp,
     isInline: false,
-    id: (0, s.xl)(d),
+    id: (0, a.xl)(d),
     isVisibleOnlyOnHover: true,
     cozyAlt: true
   })

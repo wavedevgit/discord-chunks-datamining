@@ -19,16 +19,16 @@ function h(e) {
     loadId: t
   } = e, n = s.A.useField("categoryId"), h = (0, c.L)(), g = (0, o.r)({
     categoryId: n
-  }), f = i.useCallback(e => {
+  }), m = i.useCallback(e => {
     (0, u.j)({
       loadId: t,
       categoryId: Number(e)
     })
-  }, [t]), m = i.useMemo(() => null == h ? [] : h.map(e => {
+  }, [t]), f = i.useMemo(() => null == h ? [] : h.map(e => {
     let [t] = e;
     return t
   }), [h]), A = (0, o.o)({
-    categoryIds: m
+    categoryIds: f
   }), _ = i.useMemo(() => null == h ? [] : h.map(e => {
     var t;
     let [n, r] = e;
@@ -47,7 +47,7 @@ function h(e) {
     }), (0, r.jsx)(a.A, {
       items: _,
       title: g,
-      onSelect: f,
+      onSelect: m,
       selected: "".concat(n),
       "aria-label": d.intl.string(d.t.Ng5cTK),
       variant: a.H.FILLED

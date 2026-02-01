@@ -1,8 +1,6 @@
-/** Chunk was on 48654 **/
-/** chunk id: 465856, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  A: () => r
-});
+/** Chunk was on web.js **/
+/** chunk id: 465856, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 
 function r(e) {
   if (null != e.title && null != e.filename) {
@@ -12,3 +10,6 @@ function r(e) {
   }
   return e.filename
 }
+require.d(exports, {
+  A: () => r
+})

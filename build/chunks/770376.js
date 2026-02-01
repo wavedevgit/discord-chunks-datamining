@@ -1,28 +1,28 @@
-/** Chunk was on 24848 **/
-/** chunk id: 770376, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 42402 **/
+/** chunk id: 770376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u,
-  f: () => a
+  f: () => c
 });
 var Chunk554146 = require("./554146.js"),
   Chunk506774 = require("./506774.js"),
   Chunk367727 = require("./367727.js"),
   Chunk927813 = require("./927813.js"),
   Chunk49999 = require("./49999.js");
-let s = "doNotShowReorderModal";
+let o = "doNotShowReorderModal";
 
-function a() {
-  (0, c.uh)(n.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    dismissAction: l.i.USER_DISMISS
+function c() {
+  (0, i.uh)(r.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+    dismissAction: a.i.USER_DISMISS
   })
 }
 
 function u() {
-  null != o.w.get(s) && o.w.remove(s);
+  null != l.w.get(o) && l.w.remove(o);
   let {
     isDismissed: e
-  } = (0, c.FZ)(n.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    cooldownDurationMs: i.A.Millis.WEEK
+  } = (0, i.FZ)(r.M.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
+    cooldownDurationMs: s.A.Millis.WEEK
   });
   return !e
 }

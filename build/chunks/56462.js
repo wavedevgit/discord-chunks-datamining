@@ -1,21 +1,21 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 56462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CW: () => i,
-  u6: () => l
+  u6: () => r
 });
 var Chunk985018 = require("./985018.jsx");
-let l = "https://discord.com/safety/understanding-and-avoiding-common-scams";
+let r = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
 function i() {
   return [{
-    title: r.intl.string(r.t.wSZfJR),
-    description: r.intl.string(r.t.CRwzW5)
+    title: l.intl.string(l.t.wSZfJR),
+    description: l.intl.string(l.t.CRwzW5)
   }, {
-    title: r.intl.string(r.t.cmMUaB),
-    description: r.intl.string(r.t.n6G1ue)
+    title: l.intl.string(l.t.cmMUaB),
+    description: l.intl.string(l.t.n6G1ue)
   }, {
-    title: r.intl.string(r.t["5SPKSy"]),
-    description: r.intl.string(r.t.eyjeJQ)
+    title: l.intl.string(l.t["5SPKSy"]),
+    description: l.intl.string(l.t.eyjeJQ)
   }]
 }

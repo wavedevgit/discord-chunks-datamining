@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 343906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => F,
@@ -88,12 +88,12 @@ function U(e) {
     isMoreLoading: A
   } = (0, f.A)({
     onError: n
-  }), E = (0, g.kN)().get(t), [O, C] = i.useState(P.PH), x = i.useCallback(() => {
-    C(e => e + P.PH), _(t)
+  }), E = (0, g.kN)().get(t), [O, x] = i.useState(P.PH), C = i.useCallback(() => {
+    x(e => e + P.PH), _(t)
   }, [t, _]);
   o()(E, "No text for action type: ".concat(t));
-  let y = t === P.NV.PURCHASES && null != d ? E.sectionHeader(d) : E.sectionHeader(c),
-    N = i.useCallback(e => {
+  let N = t === P.NV.PURCHASES && null != d ? E.sectionHeader(d) : E.sectionHeader(c),
+    y = i.useCallback(e => {
       let {
         row: t
       } = e, n = a[t];
@@ -123,14 +123,14 @@ function U(e) {
       children: [(0, r.jsx)(u.Text, {
         className: w.bV,
         variant: "text-md/semibold",
-        children: y
+        children: N
       }), true !== E.sectionDescription ? (0, r.jsx)(u.Text, {
         className: w.yV,
         variant: "text-md/medium",
         color: "text-muted",
         children: E.sectionDescription(null != l && l)
       }) : null]
-    }), [y, E, l]);
+    }), [N, E, l]);
   if (0 === a.length) return null;
   let v = a.slice(0, O);
   return (0, r.jsxs)("div", {
@@ -140,14 +140,14 @@ function U(e) {
       style: {
         maxHeight: 65 * v.length
       },
-      children: v.map((e, t) => N({
+      children: v.map((e, t) => y({
         row: t
       }))
     }), v.length < c ? (0, r.jsx)(u.DUT, {
       className: s()(w.FQ, {
         [w.r9]: A
       }),
-      onClick: x,
+      onClick: C,
       role: "button",
       "aria-disabled": A,
       children: A ? (0, r.jsx)(u.y$y, {
@@ -165,12 +165,12 @@ function U(e) {
 }
 let k = () => {
     let e = (0, h.A)(),
-      t = (0, C.vx)(),
+      t = (0, x.vx)(),
       n = (0, A.y)(L.intl.formatToPlainString(D.default["7hqFl9"], {
         activeLinks: t.length
       }), L.intl.string(D.default["Q/D/0Q"])),
       i = (0, g.cV)(!!e),
-      l = (0, C.v4)(i);
+      l = (0, x.v4)(i);
     return e && t.length > 1 ? (0, r.jsx)(u.Text, {
       variant: "eyebrow",
       children: l
@@ -194,12 +194,12 @@ let k = () => {
     } = e, s = (0, O.F7)(t);
     return true === s ? null : (0, r.jsxs)("div", {
       className: w.iO,
-      children: [(0, r.jsx)(y.H, {
+      children: [(0, r.jsx)(N.H, {
         user: s,
         avatarSize: i
       }), (0, r.jsxs)("div", {
         className: w.TK,
-        children: [(0, r.jsx)(N.A, {
+        children: [(0, r.jsx)(y.A, {
           user: s,
           hideUserTag: l
         }), true !== n ? (0, r.jsx)(u.Text, {
@@ -212,7 +212,7 @@ let k = () => {
   });
 B.displayName = "FamilyCenterActivityCardAccountRow";
 let H = () => {
-    let e = (0, C.GR)(),
+    let e = (0, x.GR)(),
       t = (0, c.bG)([m.A], () => m.A.getSelectedTeenId()),
       {
         selectTeenUser: n
@@ -246,9 +246,9 @@ let H = () => {
   V = () => {
     let e = (0, E.k)(),
       t = (0, h.A)(),
-      n = (0, C.vx)(),
+      n = (0, x.vx)(),
       i = (0, g.cV)(!!t),
-      l = (0, C.v4)(i);
+      l = (0, x.v4)(i);
     return null === e ? null : t && 1 !== n.length ? (0, r.jsx)(H, {}) : (0, r.jsx)(B, {
       userId: e,
       subText: l
@@ -258,7 +258,7 @@ let H = () => {
     let e = (0, g.Mo)(),
       t = (0, b.lI)(),
       n = (0, g.jp)(),
-      i = (0, C.v4)(n);
+      i = (0, x.v4)(n);
     return (0, r.jsxs)("div", {
       className: w.kL,
       children: [(0, r.jsxs)("div", {
@@ -277,7 +277,7 @@ let H = () => {
             className: w.O2,
             children: e.map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(x.A, {
+              return (0, r.jsx)(C.A, {
                 displayType: t,
                 header: n.tooltipHeader()
               }, "counter-".concat(t))

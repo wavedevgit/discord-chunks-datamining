@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 693804, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 693804, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   j: () => T
 });
@@ -14,8 +14,8 @@ var Chunk311907 = require("./311907.js"),
 let T = (0, Chunk419954.Qx)(Chunk780964.X.TEXT_TO_SPEECH_NOTIFICATIONS, {
   useTitle: () => d.intl.string(d.t.JZxxGx),
   useSubtitle: () => d.intl.string(d.t.HDLtJl),
-  useValue: () => (0, n.bG)([a.A], () => a.A.getTTSType()),
-  setValue: e => l.default.setTTSType(e),
+  useValue: () => (0, n.bG)([u.A], () => u.A.getTTSType()),
+  setValue: t => l.default.setTTSType(t),
   useOptions: () => [{
     name: d.intl.string(d.t.B1AGeJ),
     value: o.aVn.ALL_CHANNELS

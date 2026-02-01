@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 237607, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -15,12 +15,12 @@ var Chunk503698 = require("./503698.js"),
 
 function d() {
   var e, t;
-  let n = (0, s.yK)([a.A], () => {
+  let n = (0, a.yK)([s.A], () => {
     var e;
-    let t = null == (e = a.A.getLastClipsSession()) ? true : e.newClipIds;
-    return null == t ? [] : a.A.getClips().slice(0, 4).filter(e => t.includes(e.id))
+    let t = null == (e = s.A.getLastClipsSession()) ? true : e.newClipIds;
+    return null == t ? [] : s.A.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
-  return (0, r.jsx)("div", {
+  return (0, l.jsx)("div", {
     className: i()(u.vH, {
       [u.gb]: 1 === n.length,
       [u.$d]: 2 === n.length,
@@ -30,17 +30,17 @@ function d() {
     children: Array.from((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = l
         })
       }
       return e
@@ -49,18 +49,18 @@ function d() {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var l = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, l)
       }
       return n
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e)).map((e, t) => null != e ? e.type === o.nQ.VOICE_CLIP ? (0, r.jsx)(c.A, {
+    }), e)).map((e, t) => null != e ? e.type === o.nQ.VOICE_CLIP ? (0, l.jsx)(c.A, {
       className: u.xn
-    }, e.id) : (0, r.jsx)("img", {
+    }, e.id) : (0, l.jsx)("img", {
       alt: "",
       className: u.xn,
       src: e.thumbnail
-    }, e.id) : (0, r.jsx)("div", {}, "placeholder-".concat(t))).reverse()
+    }, e.id) : (0, l.jsx)("div", {}, "placeholder-".concat(t))).reverse()
   })
 }

@@ -98,14 +98,14 @@ function k(e) {
   let {
     message: t
   } = e;
-  F(t)
+  V(t)
 }
 
 function U(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => F(e))
+  t.forEach(e => V(e))
 }
 
 function G(e) {
@@ -115,13 +115,13 @@ function G(e) {
   h || (0, l.xM)(), m.has(t) || (x(t), o.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
 }
 
-function F(e) {
+function V(e) {
   let t = e.type === i.l.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
   g.has(t) || m.has(t) || (x(t), o.h.wait(() => (0, l.kZ)(t).catch(c.FXj)))
 }
 
-function V() {
+function F() {
   v = true
 }
 
@@ -193,7 +193,7 @@ let W = new Y(Chunk73153.h, {
   CREATE_REFERRALS_SUCCESS: L,
   BILLING_REFERRAL_RESOLVE_SUCCESS: M,
   BILLING_REFERRAL_RESOLVE_FAIL: j,
-  REFERRALS_FETCH_ELIGIBLE_USER_START: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_START: F,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: B,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: H,
   LOAD_MESSAGES_SUCCESS: U,

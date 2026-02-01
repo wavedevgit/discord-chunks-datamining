@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 952790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => w
@@ -91,10 +91,10 @@ function S(e) {
     hasSubheader: i
   } = e, {
     value: o
-  } = n.springs, c = t.features.has(_.GuildFeatures.DISCOVERABLE), h = (0, r.jsx)("div", {
+  } = n.springs, c = t.features.has(j.GuildFeatures.DISCOVERABLE), p = (0, r.jsx)("div", {
     className: v.WV,
     children: c && (0, r.jsx)(u.m, {
-      text: x.intl.string(x.t.O8lDI2),
+      text: _.intl.string(_.t.O8lDI2),
       position: "right",
       children: (0, r.jsxs)("div", {
         className: v.Pl,
@@ -107,14 +107,14 @@ function S(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: x.intl.string(x.t["B/vjCu"])
+          children: _.intl.string(_.t["B/vjCu"])
         })]
       })
     })
   });
   return i ? (0, r.jsx)("div", {
     className: s()(v.pS, v.W$),
-    children: h
+    children: p
   }) : (0, r.jsx)(a.animated.div, {
     className: v.pS,
     style: l ? {
@@ -122,7 +122,7 @@ function S(e) {
     } : {
       height: o.to(e => "".concat(20 * e, "px"))
     },
-    children: h
+    children: p
   })
 }
 
@@ -156,10 +156,10 @@ function P(e) {
     guild: s,
     onClick: a,
     onContextMenu: o,
-    ariaControls: h,
+    ariaControls: p,
     ariaExpanded: f,
     children: m
-  } = e, A = (0, c.bG)([b.A], () => (0, p.K)(b.A, s)), y = l.useCallback(() => {
+  } = e, A = (0, c.bG)([b.A], () => (0, h.K)(b.A, s)), y = l.useCallback(() => {
     A ? (0, d.mMO)(async () => {
       let {
         default: e
@@ -168,7 +168,7 @@ function P(e) {
         var n, l;
         return (0, r.jsx)(e, (n = E({}, t), l = l = {
           guild: s,
-          source: _.PE1.GUILD_HEADER_INVITE_BUTTON
+          source: j.PE1.GUILD_HEADER_INVITE_BUTTON
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -190,10 +190,10 @@ function P(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.DUT, {
       className: v.Vm,
-      "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
+      "aria-label": _.intl.formatToPlainString(_.t.xMXpl3, {
         guildName: null != (t = null == s ? true : s.name) ? t : ""
       }),
-      "aria-controls": h,
+      "aria-controls": p,
       "aria-expanded": f,
       onContextMenu: o,
       onClick: a,
@@ -202,7 +202,7 @@ function P(e) {
         children: [(0, r.jsx)(O.A, {
           guild: s,
           isBannerVisible: i
-        }), s.id === j.V && (0, r.jsx)(I, {}), (0, r.jsx)(N, {
+        }), s.id === x.V && (0, r.jsx)(I, {}), (0, r.jsx)(N, {
           guild: s
         })]
       }), (0, r.jsx)("div", {
@@ -210,7 +210,7 @@ function P(e) {
         children: m
       })]
     }), !T.includes(s.id) && (0, r.jsx)(u.m, {
-      text: x.intl.string(x.t.Sd8Ixw),
+      text: _.intl.string(_.t.Sd8Ixw),
       position: "bottom",
       asContainer: true,
       children: (0, r.jsx)(d.DUT, {
@@ -223,7 +223,7 @@ function P(e) {
           color: "currentColor"
         })
       })
-    }), s.id === _.gNP && (0, r.jsx)(g.g, {})]
+    }), s.id === j.gNP && (0, r.jsx)(g.g, {})]
   })
 }
 let w = Chunk64700.memo(function(e) {
@@ -233,29 +233,29 @@ let w = Chunk64700.memo(function(e) {
     controller: i,
     className: a,
     onClick: u,
-    onContextMenu: p,
+    onContextMenu: h,
     onMouseDown: g,
     disableBannerAnimation: b,
     "aria-expanded": O,
-    "aria-controls": j,
-    guild: x,
+    "aria-controls": x,
+    guild: _,
     guildBanner: E,
     animationOverlayHeight: I,
     children: N,
     headerClassName: T,
     communityInfoVisible: w,
     hasSubheader: D
-  } = e, L = x.features.has(_.GuildFeatures.ANIMATED_BANNER), M = (0, h.A)(x), G = !M && (0, y.A)(x), k = !M && w, U = (0, A.VI)(E) && L && !b, [V, B] = l.useState(false), H = l.useRef(false), F = l.useRef(null), K = null != t ? t : F, Y = l.useRef(true), W = m.kt.getSetting(), z = (0, c.bG)([f.A], () => f.A.theme);
+  } = e, L = _.features.has(j.GuildFeatures.ANIMATED_BANNER), M = (0, p.A)(_), G = !M && (0, y.A)(_), k = !M && w, U = (0, A.VI)(E) && L && !b, [V, B] = l.useState(false), H = l.useRef(false), F = l.useRef(null), Y = null != t ? t : F, K = l.useRef(true), W = m.kt.getSetting(), z = (0, c.bG)([f.A], () => f.A.theme);
   l.useEffect(() => {
-    if (U && n && !H.current && W) return B(true), Y.current = setTimeout(() => {
+    if (U && n && !H.current && W) return B(true), K.current = setTimeout(() => {
       B(false)
     }, 5e3), () => {
-      clearTimeout(Y.current)
+      clearTimeout(K.current)
     }
   }, [U, n, W]), l.useEffect(() => {
     H.current = n
   }, [n]);
-  let q = () => {
+  let X = () => {
     let {
       renderBanner: t,
       guildBanner: n
@@ -266,18 +266,18 @@ let w = Chunk64700.memo(function(e) {
     theme: z,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        "data-has-banner": q(),
+        "data-has-banner": X(),
         "data-banner-visible": n,
-        ref: K,
+        ref: Y,
         className: s()(a, {
           [v.kL]: true,
-          [v.r9]: q(),
+          [v.r9]: X(),
           [v.Pi]: n,
           [e]: false,
           [v.Iv]: k || D && G
         }),
         onMouseDown: g,
-        onContextMenu: p,
+        onContextMenu: h,
         children: [(0, r.jsxs)("header", {
           className: s()(v.wx, T, {
             [v.jD]: o.Fr
@@ -286,31 +286,31 @@ let w = Chunk64700.memo(function(e) {
             className: s()(v.VW, v.Nk),
             children: (0, r.jsx)(P, {
               bannerVisible: n,
-              guild: x,
+              guild: _,
               onClick: u,
-              onContextMenu: p,
-              ariaControls: j,
+              onContextMenu: h,
+              ariaControls: x,
               ariaExpanded: O,
               children: N
             })
           }), G && (0, r.jsx)(S, {
-            guild: x,
+            guild: _,
             controller: i,
             hasBanner: null != E,
             hasSubheader: null != D && D
           })]
         }), null != E ? (0, r.jsx)(C, {
-          guild: x,
+          guild: _,
           controller: i,
           guildBanner: E,
           animate: V
         }) : null, (0, r.jsx)(R, {
           controller: i
         })]
-      }), U && q() ? (0, r.jsx)("div", {
+      }), U && X() ? (0, r.jsx)("div", {
         className: v.rt,
         onMouseEnter: () => {
-          B(true), clearTimeout(Y.current)
+          B(true), clearTimeout(K.current)
         },
         onMouseLeave: () => B(false),
         style: {

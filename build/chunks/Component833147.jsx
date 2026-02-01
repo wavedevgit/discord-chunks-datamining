@@ -1,5 +1,5 @@
 /** Chunk was on 13492 **/
-/** chunk id: 833147, original params: e,n,t (module,exports,require) **/
+/** chunk id: 833147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
 });
@@ -11,16 +11,16 @@ var Chunk627968 = require("./627968.js"),
 
 function c(e) {
   let {
-    application: n,
-    queryParams: t,
+    application: t,
+    queryParams: n,
     url: c
   } = e;
-  return (0, r.jsx)(a.o, {
-    allowPopups: (0, o.b)(n),
-    referrerPolicy: i.$J.has(n.id) ? "no-referrer" : "origin",
+  return (0, l.jsx)(i.o, {
+    allowPopups: (0, r.b)(t),
+    referrerPolicy: o.$J.has(t.id) ? "no-referrer" : "origin",
     url: c,
-    queryParams: t,
-    className: l.p,
+    queryParams: n,
+    className: a.p,
     shouldRefocus: false
   })
 }

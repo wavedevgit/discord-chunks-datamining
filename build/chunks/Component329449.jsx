@@ -1,12 +1,12 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 329449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => C
 }), require("./896048.js"), require("./142703.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk353709 = require("./353709.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
@@ -22,145 +22,145 @@ var Chunk627968 = require("./627968.js"),
   Chunk924177 = require("./924177.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk733313 = require("./733313.js");
-let j = Chunk64700.memo(function(e) {
+let E = Chunk64700.memo(function(e) {
     let {
       channelId: t,
       width: n
-    } = e, i = (0, o.bG)([d.A], () => d.A.useReducedMotion), s = (0, o.bG)([b.Ay], () => b.Ay.getMostRecentMessageCombo(t), [t]), [u, h] = l.useState(false);
-    l.useEffect(() => {
-      if (null == s ? true : s.displayed) return;
+    } = e, i = (0, o.bG)([d.A], () => d.A.useReducedMotion), a = (0, o.bG)([A.Ay], () => A.Ay.getMostRecentMessageCombo(t), [t]), [u, h] = r.useState(false);
+    r.useEffect(() => {
+      if (null == a ? true : a.displayed) return;
       h(false), setImmediate(() => {
-        h((null != s ? (0, A.RL)(s.combo) : 0) > 0)
+        h((null != a ? (0, b.RL)(a.combo) : 0) > 0)
       });
       let e = setTimeout(() => {
-        h(false), null != s && (0, f.Nu)(s)
+        h(false), null != a && (0, m.Nu)(a)
       }, 2e3);
       return () => clearTimeout(e)
-    }, [s]);
-    let p = null != s ? "100%" : "200%",
-      g = (0, c.zhh)({
+    }, [a]);
+    let p = null != a ? "100%" : "200%",
+      f = (0, c.zhh)({
         opacity: +!!u,
         translateY: u ? "0" : p,
         pointerEvents: "none",
         width: n,
-        config: i ? a.config.stiff : a.config.slow
+        config: i ? s.config.stiff : s.config.slow
       }, "animate-always");
-    return null != s && (0, r.jsx)(a.animated.div, {
-      className: _.Gi,
-      style: g,
-      children: (0, r.jsx)(c.Text, {
-        className: _.fX,
+    return null != a && (0, l.jsx)(s.animated.div, {
+      className: v.Gi,
+      style: f,
+      children: (0, l.jsx)(c.Text, {
+        className: v.fX,
         variant: "text-sm/bold",
-        children: (0, A.RL)(s.combo)
+        children: (0, b.RL)(a.combo)
       })
     })
   }),
-  x = Chunk64700.memo(function(e) {
+  O = Chunk64700.memo(function(e) {
     let {
       value: t,
       multiplier: n
     } = e, {
       color: i,
-      square: a,
+      square: s,
       flair: o
-    } = l.useMemo(() => (0, A.HN)(n), [n]);
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(c.Text, {
-        className: _.iR,
+    } = r.useMemo(() => (0, b.HN)(n), [n]);
+    return (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(c.Text, {
+        className: v.iR,
         variant: "text-sm/bold",
         children: t
-      }), (0, r.jsxs)("div", {
-        className: _._Z,
+      }), (0, l.jsxs)("div", {
+        className: v._Z,
         style: {
           color: i
         },
-        children: [(0, r.jsx)(c.Text, {
-          className: _.On,
+        children: [(0, l.jsx)(c.Text, {
+          className: v.On,
           style: {
             color: i
           },
           variant: "text-sm/bold",
-          children: O.intl.format(O.t["6bgVlq"], {
+          children: y.intl.format(y.t["6bgVlq"], {
             multiplier: n
           })
-        }), a && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", {
-            className: s()(_.QA, _.kb),
+        }), s && (0, l.jsxs)(l.Fragment, {
+          children: [(0, l.jsx)("div", {
+            className: a()(v.QA, v.kb),
             style: {
               backgroundColor: i
             }
-          }), (0, r.jsx)("div", {
-            className: s()(_.QA, _.pG),
+          }), (0, l.jsx)("div", {
+            className: a()(v.QA, v.pG),
             style: {
               backgroundColor: i
             }
           })]
-        }), o && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", {
-            className: s()(_.ox, _.kb),
-            children: (0, r.jsx)(g.A, {
+        }), o && (0, l.jsxs)(l.Fragment, {
+          children: [(0, l.jsx)("div", {
+            className: a()(v.ox, v.kb),
+            children: (0, l.jsx)(f.A, {
               width: 24,
               height: 24
             })
-          }), (0, r.jsx)("div", {
-            className: s()(_.ox, _.pG),
-            children: (0, r.jsx)(g.A, {
+          }), (0, l.jsx)("div", {
+            className: a()(v.ox, v.pG),
+            children: (0, l.jsx)(f.A, {
               width: 24,
               height: 24
             })
           })]
-        }), 1 === n && (0, r.jsx)(c.Text, {
-          className: _.uN,
+        }), 1 === n && (0, l.jsx)(c.Text, {
+          className: v.uN,
           variant: "text-sm/bold",
-          children: O.intl.string(O.t.b5Cpof)
+          children: y.intl.string(y.t.b5Cpof)
         })]
       })]
     })
   }),
-  v = Chunk64700.memo(function(e) {
+  C = Chunk64700.memo(function(e) {
     let {
       channelId: t
-    } = e, n = (0, o.bG)([h.default], () => h.default.getId()), i = (0, o.bG)([p.A], () => p.A.isTyping(t, n), [t, n]), s = (0, o.bG)([m.A], () => m.A.isEnabled()), d = (0, o.bG)([b.Ay], () => b.Ay.isComboing(n, t), [t, n]), {
-      ref: g,
-      width: f = 0
-    } = (0, u.Ay)(), [A, O] = l.useState(false), v = (0, y.A)(t), E = s && d && i;
-    l.useEffect(() => {
-      E && O(true);
-      let e = setTimeout(() => O(E), 1e3);
+    } = e, n = (0, o.bG)([h.default], () => h.default.getId()), i = (0, o.bG)([p.A], () => p.A.isTyping(t, n), [t, n]), a = (0, o.bG)([g.A], () => g.A.isEnabled()), d = (0, o.bG)([A.Ay], () => A.Ay.isComboing(n, t), [t, n]), {
+      ref: f,
+      width: m = 0
+    } = (0, u.Ay)(), [b, y] = r.useState(false), C = (0, _.A)(t), x = a && d && i;
+    r.useEffect(() => {
+      x && y(true);
+      let e = setTimeout(() => y(x), 1e3);
       return () => clearTimeout(e)
-    }, [E]);
-    let C = (0, c.zhh)({
-        opacity: +!!A,
-        transform: A ? "translateY(0)" : "translateY(100%)",
+    }, [x]);
+    let S = (0, c.zhh)({
+        opacity: +!!b,
+        transform: b ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
-        config: a.config.stiff
+        config: s.config.stiff
       }),
-      S = l.useMemo(() => null != v ? v : {
+      j = r.useMemo(() => null != C ? C : {
         value: 0,
         multiplier: 1
-      }, [v]),
-      I = l.useRef(S);
-    l.useEffect(() => {
-      (S.multiplier > 1 || S.value > 0) && (I.current = S)
-    }, [S]);
+      }, [C]),
+      I = r.useRef(j);
+    r.useEffect(() => {
+      (j.multiplier > 1 || j.value > 0) && (I.current = j)
+    }, [j]);
     let {
-      multiplier: N,
-      value: T
-    } = l.useMemo(() => ({
-      value: E ? S.value : I.current.value,
-      multiplier: E ? S.multiplier : I.current.multiplier
-    }), [E, S, I]);
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(j, {
+      multiplier: T,
+      value: N
+    } = r.useMemo(() => ({
+      value: x ? j.value : I.current.value,
+      multiplier: x ? j.multiplier : I.current.multiplier
+    }), [x, j, I]);
+    return (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(E, {
         channelId: t,
-        width: f
-      }), (0, r.jsx)(a.animated.div, {
-        ref: g,
-        className: _.p_,
-        style: C,
-        children: (0, r.jsx)(x, {
-          value: T,
-          multiplier: N
+        width: m
+      }), (0, l.jsx)(s.animated.div, {
+        ref: f,
+        className: v.p_,
+        style: S,
+        children: (0, l.jsx)(O, {
+          value: N,
+          multiplier: T
         })
       })]
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 475805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => j
@@ -39,42 +39,42 @@ let j = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
   } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), v = (0, O.N)(), P = (0, g.A)(), R = null != P, D = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
     visibilityPercentageRef: L,
     visibilityPercentage: w
-  } = (0, x.U)(!D), M = (0, o.bG)([p.A], () => p.A.affinities), G = !R && M.length > 0, U = (0, A.c)(a.C.MARKETING_PAGE_BANNER), k = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, B = (0, m.ar)() && !k;
+  } = (0, C.U)(!D), M = (0, o.bG)([p.A], () => p.A.affinities), G = !R && M.length > 0, U = (0, A.c)(a.C.MARKETING_PAGE_BANNER), k = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, B = (0, m.ar)() && !k;
   return (0, r.jsx)(_.f5, {
     value: j,
     children: (0, r.jsx)("div", {
       ref: t,
-      className: s()(N.kL, n),
+      className: s()(y.kL, n),
       "data-testid": "marketing-page-hero-header",
       children: (0, r.jsx)("div", {
         ref: L,
         children: (0, r.jsxs)("div", {
-          className: N.hQ,
+          className: y.hQ,
           children: [(0, r.jsx)(T.A, {
             containerVisibilityPercentage: w
           }), B && (0, r.jsx)("div", {
-            className: N.XN,
+            className: y.XN,
             children: (0, r.jsx)(S.A, {
               enablePremiumBrandRefresh: true
             })
           }), (0, r.jsx)("div", {
-            className: N.s8,
+            className: y.s8,
             children: (0, r.jsx)(c.Heading, {
               variant: "display-md",
               color: "text-strong",
-              className: N.wx,
-              children: y.intl.string(y.t.YCZldK)
+              className: y.wx,
+              children: N.intl.string(N.t.YCZldK)
             })
           }), (0, r.jsxs)("div", {
-            className: N.rf,
+            className: y.rf,
             children: [R && (0, r.jsx)("div", {
-              className: N.eZ,
-              children: (0, r.jsx)(C.A, {
+              className: y.eZ,
+              children: (0, r.jsx)(x.A, {
                 referrer: P,
                 enablePremiumBrandRefresh: true
               })
             }), G && (0, r.jsx)("div", {
-              className: N.Qn,
+              className: y.Qn,
               children: (0, r.jsx)(E.A, {
                 textColor: "text-strong",
                 smallerText: false,
@@ -82,23 +82,23 @@ let j = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
                 enablePremiumBrandRefresh: true
               })
             }), (0, r.jsxs)("div", {
-              className: B ? N.es : N.UJ,
+              className: B ? y.es : y.UJ,
               children: [(0, r.jsx)(h.A, {
                 size: "md",
                 fullWidth: B,
                 hasActivePromotion: !!l,
                 subscriptionTier: k ? I.pe.NONE : i,
-                buttonTextOverride: k ? y.intl.string(y.t["2pG5Ga"]) : true
+                buttonTextOverride: k ? N.intl.string(N.t["2pG5Ga"]) : true
               }), !B && (0, r.jsx)(b.A, {
                 variant: "secondary",
                 size: "md"
               })]
             }), (0, r.jsx)("div", {
-              className: N.iQ,
+              className: y.iQ,
               children: (0, r.jsx)(c.Text, {
                 color: "text-muted",
                 variant: "text-xs/medium",
-                children: y.intl.format(y.t.kt9wxs, {
+                children: N.intl.format(N.t.kt9wxs, {
                   cheapestMonthlyPrice: v
                 })
               })

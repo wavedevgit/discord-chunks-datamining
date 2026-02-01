@@ -21,7 +21,7 @@ function h(e) {
     children: h
   } = e, g = i.useCallback(() => {
     n(u.i.TAKE_ACTION), (0, o.pX)("".concat(c.BVt.NITRO_HOME, "?section=orbs"))
-  }, [n]), f = (0, r.jsx)(a.AM, {
+  }, [n]), m = (0, r.jsx)(a.AM, {
     targetElementRef: t,
     onRequestClose: () => n(u.i.USER_DISMISS),
     graphic: {
@@ -54,6 +54,6 @@ function h(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: h
-    }), f]
+    }), m]
   })
 }

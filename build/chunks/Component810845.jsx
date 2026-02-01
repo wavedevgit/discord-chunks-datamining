@@ -1,7 +1,7 @@
-/** Chunk was on 84841 **/
-/** chunk id: 810845, original params: e,t,l (module,exports,require) **/
+/** Chunk was on 93169 **/
+/** chunk id: 810845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,24 +15,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk806931 = require("./806931.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e, t) {
+function g(e, t) {
   let {
-    enabled: l
-  } = s.A.useConfig({
+    enabled: n
+  } = u.A.useConfig({
     location: "useCallTilePopoutItem"
-  }), p = (0, r.bG)([u.A], () => u.A.getParticipant(e, t)), b = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, t)), f = i.useCallback(() => {
-    null != p && ((0, A.Ay)(p) && (0, c.A9)(p.stream, {
+  }), g = (0, l.bG)([c.A], () => c.A.getParticipant(e, t)), b = (0, l.bG)([c.A], () => c.A.isParticipantPoppedOut(e, t)), p = r.useCallback(() => {
+    null != g && ((0, A.Ay)(g) && (0, o.A9)(g.stream, {
       forceMultiple: true
-    }), a.A.popoutParticipant(e, p.id), d.openCallTilePopout(e, p.id))
-  }, [p, e]);
-  return b || null == p || !l || p.type === A.lp.ACTIVITY ? null : (0, n.jsx)(o.Drp, {
+    }), s.A.popoutParticipant(e, g.id), d.openCallTilePopout(e, g.id))
+  }, [g, e]);
+  return b || null == g || !n || g.type === A.lp.ACTIVITY ? null : (0, i.jsx)(a.Drp, {
     id: "call-tile-popout",
-    label: (0, A.Ay)(p) ? g.intl.string(g.t.Cm4aDQ) : null != p.streamId ? g.intl.string(g.t["8Xyas9"]) : g.intl.string(g.t.ifpl2s),
-    action: f,
-    icon: o.tfB,
+    label: (0, A.Ay)(g) ? f.intl.string(f.t.Cm4aDQ) : null != g.streamId ? f.intl.string(f.t["8Xyas9"]) : f.intl.string(f.t.ifpl2s),
+    action: p,
+    icon: a.tfB,
     leadingAccessory: {
       type: "icon",
-      icon: o.tfB
+      icon: a.tfB
     }
   })
 }

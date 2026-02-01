@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 517538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -104,8 +104,8 @@ function _() {
     inputMode: N,
     echoCancellation: w,
     autoThreshold: I,
-    vadUseKrisp: P,
-    vadKrispActivationThreshold: k,
+    vadUseKrisp: k,
+    vadKrispActivationThreshold: P,
     noiseCancellation: R,
     noiseSuppression: D,
     noiseSuppressionSupported: M,
@@ -217,13 +217,13 @@ function _() {
         }), I && (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(c.dOG, {
             label: "Use Krisp VAD",
-            checked: P,
+            checked: k,
             onChange: e => d.A.setMode(g.TB.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
-          }), P && (0, a.jsx)(c.Apm, {
+          }), k && (0, a.jsx)(c.Apm, {
             label: "Krisp VAD Activation Threshold",
-            initialValue: k,
+            initialValue: P,
             onValueChange: e => d.A.setMode(g.TB.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),

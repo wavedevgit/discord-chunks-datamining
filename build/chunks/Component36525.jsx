@@ -1,7 +1,8 @@
-/** Chunk was on 67096 **/
-/** chunk id: 36525, original params: e,A,t (module,exports,require) **/
+/** Chunk was on 76719 **/
+/** chunk id: 36525, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => c
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,61 +13,61 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk614221 = require("./614221.js");
-let c = function(e) {
-  var A;
+let h = function(e) {
+  var t;
   let {
-    message: t,
-    errorMessage: c,
-    submitting: g,
-    onReset: f,
-    onSave: p,
-    onSaveText: m,
-    onResetText: v,
-    onSaveButtonColor: h,
+    message: n,
+    errorMessage: h,
+    submitting: p,
+    onReset: g,
+    onSave: f,
+    onSaveText: C,
+    onResetText: y,
+    onSaveButtonColor: v,
     disabled: b,
-    saveButtonTooltip: q
-  } = e, C = n.useRef(null), [j, U] = n.useState(false);
-  return n.useEffect(() => {
+    saveButtonTooltip: m
+  } = e, S = s.useRef(null), [O, E] = s.useState(false);
+  return s.useEffect(() => {
     function e() {
-      U(true), setTimeout(() => U(false), 1e3)
+      E(true), setTimeout(() => E(false), 1e3)
     }
-    return s._.subscribe(o.jej.EMPHASIZE_NOTICE, e), () => {
-      s._.unsubscribe(o.jej.EMPHASIZE_NOTICE, e)
+    return a._.subscribe(d.jej.EMPHASIZE_NOTICE, e), () => {
+      a._.unsubscribe(d.jej.EMPHASIZE_NOTICE, e)
     }
-  }, []), (0, r.jsx)("div", {
-    className: u.kL,
-    "data-emphasized": j,
-    children: (0, r.jsx)("div", {
-      className: u.nP,
-      ref: C,
-      children: (0, r.jsxs)(i.xpW, {
-        containerRef: C,
-        children: [(0, r.jsx)("div", {
-          className: u.Xk,
-          children: (0, r.jsx)("div", {
-            className: u.iU,
-            children: null != (A = null != c ? c : t) ? A : d.intl.string(d.t.GP7JLE)
+  }, []), (0, i.jsx)("div", {
+    className: c.kL,
+    "data-emphasized": O,
+    children: (0, i.jsx)("div", {
+      className: c.nP,
+      ref: S,
+      children: (0, i.jsxs)(o.xpW, {
+        containerRef: S,
+        children: [(0, i.jsx)("div", {
+          className: c.Xk,
+          children: (0, i.jsx)("div", {
+            className: c.iU,
+            children: null != (t = null != h ? h : n) ? t : u.intl.string(u.t.GP7JLE)
           })
-        }), (0, r.jsxs)("div", {
-          className: u.o1,
-          children: [null != f && (0, r.jsx)(a.$n, {
-            className: u.WA,
-            size: a.$n.Sizes.SMALL,
-            color: a.$n.Colors.PRIMARY,
-            look: a.$n.Looks.LINK,
-            onClick: f,
-            children: (0, r.jsx)("span", {
-              children: null != v ? v : d.intl.string(d.t.yBZMsQ)
+        }), (0, i.jsxs)("div", {
+          className: c.o1,
+          children: [null != g && (0, i.jsx)(l.$n, {
+            className: c.WA,
+            size: l.$n.Sizes.SMALL,
+            color: l.$n.Colors.PRIMARY,
+            look: l.$n.Looks.LINK,
+            onClick: g,
+            children: (0, i.jsx)("span", {
+              children: null != y ? y : u.intl.string(u.t.yBZMsQ)
             })
-          }), null != p ? (0, r.jsx)(l.m, {
-            text: q,
-            children: (0, r.jsx)(a.$n, {
-              size: a.$n.Sizes.SMALL,
-              color: null != h ? h : a.$n.Colors.GREEN,
-              submitting: g,
+          }), null != f ? (0, i.jsx)(r.m, {
+            text: m,
+            children: (0, i.jsx)(l.$n, {
+              size: l.$n.Sizes.SMALL,
+              color: null != v ? v : l.$n.Colors.GREEN,
+              submitting: p,
               disabled: b,
-              onClick: p,
-              children: null != m ? m : d.intl.string(d.t.K344S7)
+              onClick: f,
+              children: null != C ? C : u.intl.string(u.t.K344S7)
             })
           }) : null]
         })]

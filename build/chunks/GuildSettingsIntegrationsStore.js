@@ -185,7 +185,7 @@ function G(e) {
   y = t, b = null, O = null, S = {}, T = true
 }
 
-function F(e) {
+function V(e) {
   let {
     commandId: t
   } = e;
@@ -193,7 +193,7 @@ function F(e) {
   y = null, S = {}, T = false
 }
 
-function V(e) {
+function F(e) {
   let {
     integrationId: t
   } = e, n = z(t);
@@ -307,8 +307,8 @@ let Q = new Z(Chunk73153.h, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_SET_SECTION: N,
     INTEGRATION_SETTINGS_SET_SECTION: w,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
-    INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: F,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
+    INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: V,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
     INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: B,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,

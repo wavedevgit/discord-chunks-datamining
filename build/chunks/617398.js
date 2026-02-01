@@ -269,12 +269,12 @@ let A = /\b\B/,
       contains: [P]
     }]
   },
-  F = {
+  V = {
     scope: "title",
     begin: I,
     relevance: 0
   },
-  V = {
+  F = {
     scope: "title",
     begin: S,
     relevance: 0
@@ -326,9 +326,9 @@ var B = Object.freeze({
   REGEXP_MODE: G,
   RE_STARTERS_RE: w,
   SHEBANG: R,
-  TITLE_MODE: F,
+  TITLE_MODE: V,
   UNDERSCORE_IDENT_RE: S,
-  UNDERSCORE_TITLE_MODE: V
+  UNDERSCORE_TITLE_MODE: F
 });
 
 function H(e, t) {

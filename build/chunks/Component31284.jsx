@@ -68,12 +68,12 @@ function P(e, t) {
 }
 class D extends Chunk64700.PureComponent {
   handleDisconnect() {
-    p.default.selectVoiceChannel(null)
+    h.default.selectVoiceChannel(null)
   }
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, h.m1)(e, v.default, O.A), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
+    } = this.props, n = (0, p.m1)(e, v.default, _.A), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
     return (0, i.jsx)(o.N_, {
       to: j.BVt.CHANNEL(s),
       onClick: t => {
@@ -96,15 +96,15 @@ class D extends Chunk64700.PureComponent {
       lastPing: a,
       hasVideo: d,
       connectionState: u,
-      deaf: p,
-      mute: h
+      deaf: h,
+      mute: p
     } = this.props;
     return null == s ? null : (0, i.jsx)(S.Ay.Bar, {
-      className: l()(e, I.ne, {
-        [I.CW]: !n
+      className: l()(e, C.ne, {
+        [C.CW]: !n
       }),
       children: (0, i.jsxs)(S.Ay.Content, {
-        className: l()(t, I.Qs),
+        className: l()(t, C.Qs),
         dynamicSize: true,
         children: [(0, i.jsx)("div", {
           className: w.vW,
@@ -114,7 +114,7 @@ class D extends Chunk64700.PureComponent {
             position: "top",
             children: e => (0, i.jsx)(c.DUT, P(T({}, e), {
               innerRef: this.rtcConnectionStatusRef,
-              children: (0, i.jsx)(_.A, {
+              children: (0, i.jsx)(m.A, {
                 channelId: s.id,
                 quality: o,
                 lastPing: a,
@@ -127,17 +127,17 @@ class D extends Chunk64700.PureComponent {
         }), (0, i.jsxs)(f.A, {
           grow: 0,
           children: [(0, i.jsx)(g.A, {
-            tooltipText: h ? C.intl.string(C.t.YqAjXy) : C.intl.string(C.t.w4m945),
-            icon: h ? c.z0P : c.cNw,
-            iconForeground: h ? I.of : null,
+            tooltipText: p ? I.intl.string(I.t.YqAjXy) : I.intl.string(I.t.w4m945),
+            icon: p ? c.z0P : c.cNw,
+            iconForeground: p ? C.of : null,
             onClick: this.handleToggleSelfMute
           }), (0, i.jsx)(g.A, {
-            tooltipText: p ? C.intl.string(C.t["2US872"]) : C.intl.string(C.t.wjcRFX),
-            icon: p ? c.cQT : c.LoC,
+            tooltipText: h ? I.intl.string(I.t["2US872"]) : I.intl.string(I.t.wjcRFX),
+            icon: h ? c.cQT : c.LoC,
             onClick: this.handleToggleSelfDeaf,
-            iconForeground: p ? I.of : null
+            iconForeground: h ? C.of : null
           }), null == r && (0, i.jsx)(g.A, {
-            tooltipText: C.intl.string(C.t["6vrfgt"]),
+            tooltipText: I.intl.string(I.t["6vrfgt"]),
             onClick: this.handleDisconnect,
             icon: c.zWQ
           })]
@@ -166,7 +166,7 @@ class D extends Chunk64700.PureComponent {
       let {
         lobbyId: t
       } = this.props;
-      return (0, i.jsx)(m.A, {
+      return (0, i.jsx)(A.A, {
         channelId: e,
         lobbyId: t,
         isOverlay: true
@@ -196,7 +196,7 @@ function R(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
     return s
-  }(e, ["context", "lobbyId", "channel"]), l = (0, a.bG)([b.A], () => b.A.getGuild(null == r ? true : r.getGuildId())), o = (0, a.bG)([E.A], () => null != r && E.A.hasVideo(r.id)), [c, d] = (0, a.yK)([A.A], () => [A.A.isSelfMute(t) || A.A.isSelfMutedTemporarily(t), A.A.isSelfDeaf(t)]), [u, p, h] = (0, a.yK)([x.A], () => [x.A.getConnectionState(n), x.A.getLastPing(n), x.A.getQuality(n)]);
+  }(e, ["context", "lobbyId", "channel"]), l = (0, a.bG)([b.A], () => b.A.getGuild(null == r ? true : r.getGuildId())), o = (0, a.bG)([E.A], () => null != r && E.A.hasVideo(r.id)), [c, d] = (0, a.yK)([O.A], () => [O.A.isSelfMute(t) || O.A.isSelfMutedTemporarily(t), O.A.isSelfDeaf(t)]), [u, h, p] = (0, a.yK)([x.A], () => [x.A.getConnectionState(n), x.A.getLastPing(n), x.A.getQuality(n)]);
   return (0, i.jsx)(D, P(T({}, s), {
     context: t,
     lobbyId: n,
@@ -206,7 +206,7 @@ function R(e) {
     mute: c,
     deaf: d,
     connectionState: u,
-    lastPing: p,
-    quality: h
+    lastPing: h,
+    quality: p
   }))
 }

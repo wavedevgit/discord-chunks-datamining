@@ -11,10 +11,10 @@ require.d(exports, {
   O0: () => B,
   PI: () => E,
   Pf: () => O,
-  QB: () => V,
+  QB: () => F,
   Tq: () => b,
   Vk: () => W,
-  _6: () => F,
+  _6: () => V,
   ck: () => R,
   cw: () => N,
   dF: () => C,
@@ -78,8 +78,8 @@ let k = {
   },
   U = new Set(Object.values(k)),
   G = e => U.has(e),
-  F = [Chunk641150.q.AVATAR_DECORATION, Chunk641150.q.PROFILE_EFFECT, Chunk641150.q.NAMEPLATE, Chunk641150.q.BUNDLE],
-  V = [{
+  V = [Chunk641150.q.AVATAR_DECORATION, Chunk641150.q.PROFILE_EFFECT, Chunk641150.q.NAMEPLATE, Chunk641150.q.BUNDLE],
+  F = [{
     sortType: Chunk124987.$.RELEVANCE,
     sortDirection: Chunk401864.A.DESC
   }, {

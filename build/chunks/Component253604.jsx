@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 253604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -28,12 +28,12 @@ function u(e) {
     pendingDisplayNameStyles: h,
     pendingThemeColors: E,
     pendingPronouns: O,
-    pendingBio: C,
-    tryItOutThemeColors: x,
+    pendingBio: x,
+    tryItOutThemeColors: C,
     tryItOutAvatar: S,
     tryItOutBanner: T,
     tryItOutAvatarDecoration: I,
-    tryItOutDisplayNameStyles: y
+    tryItOutDisplayNameStyles: N
   } = (0, l.cf)([o.A], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,7 +51,7 @@ function u(e) {
       })
     }
     return e
-  })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), N = (0, a.V7)({
+  })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), y = (0, a.V7)({
     userId: u.id,
     image: null != S ? S : g
   });
@@ -59,11 +59,11 @@ function u(e) {
     containerClassName: p,
     user: u,
     pendingPronouns: O,
-    pendingBio: C,
+    pendingBio: x,
     pendingBanner: null != (t = null != T ? T : A) ? t : n(636763),
-    pendingDisplayNameStyles: null != y ? y : h,
-    pendingAvatar: N,
-    pendingThemeColors: null != x ? x : E,
+    pendingDisplayNameStyles: null != N ? N : h,
+    pendingAvatar: y,
+    pendingThemeColors: null != C ? C : E,
     pendingAvatarDecoration: true !== I ? I : f,
     pendingProfileEffect: b,
     avatarClassName: null != S || null != g || m.enabled ? true : d.W,

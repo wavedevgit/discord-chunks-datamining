@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 623375, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 623375, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   u: () => d
 }), require("./65821.js"), require("./457529.js");
@@ -11,21 +11,21 @@ var Chunk64700 = require("./64700.js"),
   Chunk728458 = require("./728458.js"),
   Chunk652215 = require("./652215.js");
 let d = () => {
-  let e = (0, r.lV)(e => e.doInstall),
-    t = (0, r.lV)(e => e.install),
-    i = (0, r.lV)(e => e.installationStatus),
-    d = (0, r.lV)(e => e.setDoInstall),
-    T = (0, r.lV)(e => e.setInstallationStatus);
+  let t = (0, r.lV)(t => t.doInstall),
+    e = (0, r.lV)(t => t.install),
+    i = (0, r.lV)(t => t.installationStatus),
+    d = (0, r.lV)(t => t.setDoInstall),
+    T = (0, r.lV)(t => t.setInstallationStatus);
   return (0, n.useEffect)(() => {
-    e && i === s.Lk.NOT_INSTALLED && (d(false), T(s.Lk.INSTALLING), t().catch(e => {
-      T(s.Lk.ERROR), u.A.captureException(e, {
+    t && i === s.Lk.NOT_INSTALLED && (d(false), T(s.Lk.INSTALLING), e().catch(t => {
+      T(s.Lk.ERROR), a.A.captureException(t, {
         tags: {
           source: l.q.WARP_INSTALL_HELPER
         }
-      }), a.default.track(o.HAw.PREMIUM_FEATURE_ERROR, {
-        error_message: e instanceof Error ? e.message : JSON.stringify(e),
+      }), u.default.track(o.HAw.PREMIUM_FEATURE_ERROR, {
+        error_message: t instanceof Error ? t.message : JSON.stringify(t),
         error_source: l.q.WARP_INSTALL_HELPER
       })
     }))
-  }, [e, d, t, i, T]), null
+  }, [t, d, e, i, T]), null
 }

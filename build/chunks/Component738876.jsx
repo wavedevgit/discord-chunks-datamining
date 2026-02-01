@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 738876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => j
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,14 +21,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk698638 = require("./698638.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let _ = function(e) {
+let j = function(e) {
   let {
     className: t,
     style: n,
-    channel: _,
-    draftType: j
-  } = e, [x, v] = l.useState(true), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([h.A], () => null != _ && h.A.can(y.xBc.ATTACH_FILES, _), [_]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(_.id)), I = _.getGuildId(), N = j === c.C.FirstThreadMessage, T = (0, s.vL)(_), P = l.useMemo(() => !E && (_.isPrivate() && !_.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, _, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(_.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : x ? O.intl.format(O.t.dYP2Fc, {
-    destination: (0, o.m1)(_, g.default, p.A, true)
+    channel: j,
+    draftType: x
+  } = e, [_, v] = l.useState(true), E = (0, i.bG)([d.A], () => d.A.hasLayers()), C = (0, i.bG)([p.A], () => null != j && p.A.can(y.xBc.ATTACH_FILES, j), [j]), S = null != (0, i.bG)([a.A], () => a.A.getActiveCommand(j.id)), I = j.getGuildId(), N = x === c.C.FirstThreadMessage, T = (0, s.vL)(j), P = l.useMemo(() => !E && (j.isPrivate() && !j.isManaged() || null != I && !T && C && u.A.canChatInGuild(I)), [C, T, j, I, E]), w = N ? y.kvI.GUILD_THREADS_ONLY.has(j.type) ? O.intl.string(O.t.RBBLhL) : O.intl.string(O.t.gUx4eu) : _ ? O.intl.format(O.t.dYP2Fc, {
+    destination: (0, o.m1)(j, g.default, h.A, true)
   }) : O.intl.string(O.t.h76ulG);
   return S || !P ? null : (0, r.jsx)(b.A, {
     className: t,
@@ -38,15 +38,15 @@ let _ = function(e) {
     icons: A.ir,
     onDrop: e => {
       if (S) returnfalse;
-      P && null != _ && ((0, m.R)(e, _, j, {
-        requireConfirm: x,
+      P && null != j && ((0, m.R)(e, j, x, {
+        requireConfirm: _,
         origin: "drag_drop"
       }), f._.dispatchToLastSubscribed(y.jej.TEXTAREA_FOCUS))
     },
     onDragClear: () => v(true),
     onDragOver: e => {
       if (S) returnfalse;
-      N || e.shiftKey !== x || v(!e.shiftKey)
+      N || e.shiftKey !== _ || v(!e.shiftKey)
     }
   })
 }

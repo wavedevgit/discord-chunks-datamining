@@ -173,7 +173,7 @@ function G() {
   })
 }
 
-function F() {
+function V() {
   let e = A.A.getChannelId();
   if (null == e) return;
   let t = b.A.getChannel(e);
@@ -186,7 +186,7 @@ function F() {
   }), Y(t.getGuildId(), t.id)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n,
@@ -347,22 +347,22 @@ class $ extends Chunk439372.A {
     s.h.unsubscribe("CONNECTION_OPEN", U)
   }
   constructor(...e) {
-    super(...e), R(this, "fetchMessages", L), R(this, "loadSelectedChannelIfNecessary", F), R(this, "stores", new Map().set(y.Ay, W)), R(this, "actions", {
+    super(...e), R(this, "fetchMessages", L), R(this, "loadSelectedChannelIfNecessary", V), R(this, "stores", new Map().set(y.Ay, W)), R(this, "actions", {
       APP_STATE_UPDATE: J,
       OVERLAY_INITIALIZE: U,
       CONNECTION_RESUMED: G,
-      CHANNEL_SELECT: V,
+      CHANNEL_SELECT: F,
       VOICE_CHANNEL_SELECT: B,
       THREAD_CREATE: z,
-      THREAD_LIST_SYNC: () => F(),
+      THREAD_LIST_SYNC: () => V(),
       CHANNEL_CREATE: z,
       CHANNEL_PRELOAD: K,
-      GUILD_CREATE: () => F(),
+      GUILD_CREATE: () => V(),
       MESSAGE_END_EDIT: q,
       LOAD_MESSAGES_SUCCESS: Q,
       UPLOAD_FAIL: X,
-      CHANNEL_DELETE: () => F(),
-      THREAD_DELETE: () => F(),
+      CHANNEL_DELETE: () => V(),
+      THREAD_DELETE: () => V(),
       CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE: H
     })
   }

@@ -62,7 +62,7 @@ function f(t) {
       (null == y || t) && !p ? (0, i.mMO)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("28136"), n.e("68587"), n.e("88332"), n.e("342"), n.e("41682")]).then(n.bind(n, 21653));
+        } = await Promise.all([n.e("68587"), n.e("28136"), n.e("342"), n.e("41682")]).then(n.bind(n, 21653));
         return n => (0, l.jsx)(t, E(g({}, n), {
           guildScheduledEventId: e,
           guildId: f.id

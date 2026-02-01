@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 473146, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 473146, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   E: () => o
 });
@@ -11,8 +11,8 @@ var Chunk677402 = require("./677402.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.E2)(Chunk780964.X.GIFT_QUEST_NOTICES_SETTING, {
   Component: Chunk586685.SB,
-  useSearchTerms: () => [u.intl.string(u.t.JALI2K)],
+  useSearchTerms: () => [a.intl.string(a.t.JALI2K)],
   usePredicate: () => (0, n.H)({
-    location: a.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+    location: u.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   })
 })

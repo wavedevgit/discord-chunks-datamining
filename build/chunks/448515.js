@@ -95,9 +95,9 @@ function G(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let F = new Chunk626584.A("ConnectionStore");
+let V = new Chunk626584.A("ConnectionStore");
 
-function V(e) {
+function F(e) {
   return e.map(e => {
     var t;
     let n = null == (t = e.timestamps) ? true : t.end,
@@ -260,7 +260,7 @@ function ee(e) {
       sessionId: e.session_id,
       lastModified: e.last_modified,
       status: e.status,
-      activities: V(null != (t = e.activities) ? t : []),
+      activities: F(null != (t = e.activities) ? t : []),
       hiddenActivities: null != (n = e.hidden_activities) ? n : [],
       active: !!e.active,
       clientInfo: e.client_info
@@ -283,7 +283,7 @@ function et(e) {
     user: n,
     status: r,
     clientStatus: o,
-    activities: V(null != i ? i : []),
+    activities: F(null != i ? i : []),
     hiddenActivities: a,
     processedAtTimestamp: s
   })
@@ -315,7 +315,7 @@ q(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
             discoverable: null == (r = e.discoverable) || r
           }
         })
-      }), F.log("Dispatched INITIAL_GUILD ".concat(e.id)))
+      }), V.log("Dispatched INITIAL_GUILD ".concat(e.id)))
     })
   })
 }), z(["READY_SUPPLEMENTAL"], e => {

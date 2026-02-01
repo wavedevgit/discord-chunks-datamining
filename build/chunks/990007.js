@@ -107,7 +107,7 @@ async function j(e, t, n) {
     [o, {
       disclosures: c,
       allAcked: u
-    }] = await Promise.all([(0, f.qY)({
+    }] = await Promise.all([(0, m.qY)({
       clientId: d,
       scopes: G,
       responseType: p,
@@ -126,8 +126,8 @@ async function j(e, t, n) {
       errorCode: v.Lw6.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  if (L === m.l.NONE && null != o && o.authorized && u) try {
-    return (await (0, f.Gq)({
+  if (L === f.l.NONE && null != o && o.authorized && u) try {
+    return (await (0, m.Gq)({
       authorize: true,
       clientId: d,
       scopes: G,

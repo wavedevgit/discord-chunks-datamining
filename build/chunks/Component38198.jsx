@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 38198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => j
 }), require("./591487.js"), require("./727858.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,109 +26,109 @@ var Chunk627968 = require("./627968.js"),
   Chunk412136 = require("./412136.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk545156 = require("./545156.js");
-let C = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let S = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
-function S(e) {
+function j(e) {
   let {
     channel: t,
-    options: S,
+    options: j,
     onFileUpload: I,
-    onClose: N,
-    onSelect: T,
+    onClose: T,
+    onSelect: N,
     draftType: P,
     editorTextContent: w,
     setValue: R,
     openClips: D
   } = e, {
-    analyticsLocations: L
-  } = (0, c.Ay)(), M = (0, d.s)({
+    analyticsLocations: M
+  } = (0, c.Ay)(), L = (0, d.s)({
     channel: t
-  }), G = (0, i.bG)([p.A], () => p.A.isInProgress());
-
-  function k() {
-    (0, g.Tv)(t, true, "Plus Button")
-  }
+  }), k = (0, i.bG)([p.A], () => p.A.isInProgress());
 
   function U() {
-    f.default.track(_.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, y.x7)("/"))
+    (0, f.Tv)(t, true, "Plus Button")
   }
 
-  function V() {
+  function G() {
+    m.default.track(v.HAw.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, _.x7)("/"))
+  }
+
+  function F() {
     D()
   }
 
-  function B() {
-    (0, u.Dr)(s.M.POLLS_CHAT_INPUT_COACHMARK, {
-      dismissAction: j.i.TAKE_ACTION
-    }), (0, a.mMO)(async () => {
+  function H() {
+    (0, u.Dr)(a.M.POLLS_CHAT_INPUT_COACHMARK, {
+      dismissAction: E.i.TAKE_ACTION
+    }), (0, s.mMO)(async () => {
       let {
         default: e
       } = await n.e("52786").then(n.bind(n, 489449));
       return n => {
-        var l, i;
-        return (0, r.jsx)(e, (l = function(e) {
+        var r, i;
+        return (0, l.jsx)(e, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              l = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), l.forEach(function(t) {
+              var l;
+              l = n[t], t in e ? Object.defineProperty(e, t, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = l
             })
           }
           return e
         }({}, n), i = i = {
           channel: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var l = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, l)
           }
           return n
         })(Object(i)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-        }), l))
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+        }), r))
       }
     }, {
-      modalKey: x.sm
+      modalKey: O.sm
     })
   }
 
-  function H() {
+  function B() {
     let e = w,
       n = "txt",
-      r = "",
-      l = w.match(C);
-    null != l && (r = l[1], n = l[2], e = l[3], r += l[4]), (0, A.R)([(0, b.VE)(new Blob([e], {
+      l = "",
+      r = w.match(S);
+    null != r && (l = r[1], n = r[2], e = r[3], l += r[4]), (0, b.R)([(0, A.VE)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, P), m._.dispatchToLastSubscribed(_.jej.CLEAR_TEXT), "" !== r && m._.dispatchToLastSubscribed(_.jej.INSERT_TEXT, {
-      plainText: r
+    }), "message.".concat(n), "text/plain")], t, P), g._.dispatchToLastSubscribed(v.jej.CLEAR_TEXT), "" !== l && g._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
+      plainText: l
     })
   }
-  return l.useEffect(() => {
-    f.default.track(_.HAw.OPEN_POPOUT, {
+  return r.useEffect(() => {
+    m.default.track(v.HAw.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
     })
-  }, [t.guild_id, t.id]), (0, r.jsx)(a.W1t, {
+  }, [t.guild_id, t.id]), (0, l.jsx)(s.W1t, {
     "data-menu-needs-migration": true,
-    onSelect: T,
+    onSelect: N,
     navId: "channel-attach",
-    onClose: N,
-    "aria-label": v.intl.string(v.t.Xm41aV),
-    className: E.MK,
-    children: S.map(function(e) {
+    onClose: T,
+    "aria-label": C.intl.string(C.t.Xm41aV),
+    className: x.MK,
+    children: j.map(function(e) {
       switch (e.type) {
-        case O.v.UPLOAD_A_FILE:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.UPLOAD_A_FILE:
+          return (0, l.jsx)(s.Drp, {
             id: "upload-file",
             label: e.display,
             iconLeft: e.icon,
@@ -138,9 +138,9 @@ function S(e) {
             },
             action: I
           }, "upload-file");
-        case O.v.UPLOAD_TEXT_AS_FILE:
+        case y.v.UPLOAD_TEXT_AS_FILE:
           if ("" === w) return null;
-          return (0, r.jsx)(a.Drp, {
+          return (0, l.jsx)(s.Drp, {
             id: "upload-text-as-file",
             label: e.display,
             iconLeft: e.icon,
@@ -148,10 +148,10 @@ function S(e) {
               type: "icon",
               icon: e.icon
             },
-            action: H
+            action: B
           }, "upload-text-as-file");
-        case O.v.CLIPS:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.CLIPS:
+          return (0, l.jsx)(s.Drp, {
             id: "clips",
             label: e.display,
             iconLeft: e.icon,
@@ -162,10 +162,10 @@ function S(e) {
             badge: null != e.badgeVal && e.badgeVal > 0 ? {
               text: e.badgeVal.toString()
             } : true,
-            action: V
+            action: F
           }, "clips");
-        case O.v.POLL:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.POLL:
+          return (0, l.jsx)(s.Drp, {
             id: "poll",
             label: e.display,
             iconLeft: e.icon,
@@ -173,10 +173,10 @@ function S(e) {
               type: "icon",
               icon: e.icon
             },
-            action: B
+            action: H
           }, "poll");
-        case O.v.INVITE_TO_PLAY_GAME:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.INVITE_TO_PLAY_GAME:
+          return (0, l.jsx)(s.Drp, {
             id: "play",
             label: e.display,
             iconLeft: e.icon,
@@ -188,14 +188,14 @@ function S(e) {
               var n;
               return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: _.xL.JOIN,
+                type: v.xL.JOIN,
                 activity: n,
-                location: L[L.length - 1]
+                location: M[M.length - 1]
               })
             }
           }, "play");
-        case O.v.INVITE_TO_LISTEN:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.INVITE_TO_LISTEN:
+          return (0, l.jsx)(s.Drp, {
             id: "listen",
             label: e.display,
             iconLeft: e.icon,
@@ -207,14 +207,14 @@ function S(e) {
               var n;
               return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: _.xL.LISTEN,
+                type: v.xL.LISTEN,
                 activity: n,
-                location: L[L.length - 1]
+                location: M[M.length - 1]
               })
             }
           }, "listen");
-        case O.v.INVITE_TO_WATCH:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.INVITE_TO_WATCH:
+          return (0, l.jsx)(s.Drp, {
             id: "watch",
             label: e.display,
             iconLeft: e.icon,
@@ -226,14 +226,14 @@ function S(e) {
               var n;
               return n = e.activity, void o.A.sendActivityInvite({
                 channelId: t.id,
-                type: _.xL.WATCH,
+                type: v.xL.WATCH,
                 activity: n,
-                location: L[L.length - 1]
+                location: M[M.length - 1]
               })
             }
           }, "watch");
-        case O.v.CREATE_THREAD:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.CREATE_THREAD:
+          return (0, l.jsx)(s.Drp, {
             id: "THREAD",
             label: e.display,
             iconLeft: e.icon,
@@ -241,10 +241,10 @@ function S(e) {
               type: "icon",
               icon: e.icon
             },
-            action: k
+            action: U
           }, "THREAD");
-        case O.v.SLASH_COMMAND:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.SLASH_COMMAND:
+          return (0, l.jsx)(s.Drp, {
             id: "SLASH_COMMAND",
             label: e.display,
             iconLeft: e.icon,
@@ -252,10 +252,10 @@ function S(e) {
               type: "icon",
               icon: e.icon
             },
-            action: U
+            action: G
           }, "SLASH_COMMAND");
-        case O.v.SCHEDULED_MESSAGE:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.SCHEDULED_MESSAGE:
+          return (0, l.jsx)(s.Drp, {
             id: "scheduled_message",
             label: e.display,
             iconLeft: e.icon,
@@ -266,10 +266,10 @@ function S(e) {
             action: () => (0, d.e0)({
               channel: t
             }),
-            children: M
+            children: L
           }, "scheduled_message");
-        case O.v.SUMMARIZE_THREAD:
-          return (0, r.jsx)(a.Drp, {
+        case y.v.SUMMARIZE_THREAD:
+          return (0, l.jsx)(s.Drp, {
             id: "summarize_thread",
             label: e.display,
             iconLeft: e.icon,
@@ -278,25 +278,25 @@ function S(e) {
               icon: e.icon
             },
             action: () => h.A.summarizeThread(t),
-            loading: G,
-            disabled: G,
-            children: G ? null : (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(a.Drp, {
+            loading: k,
+            disabled: k,
+            children: k ? null : (0, l.jsxs)(l.Fragment, {
+              children: [(0, l.jsx)(s.Drp, {
                 id: "summarize_thread_for_everyone",
-                label: v.intl.string(v.t.eCzSdd),
-                iconLeft: a.nFg,
+                label: C.intl.string(C.t.eCzSdd),
+                iconLeft: s.nFg,
                 leadingAccessory: {
                   type: "icon",
-                  icon: a.nFg
+                  icon: s.nFg
                 },
                 action: () => h.A.summarizeThread(t, false)
-              }, "summarize_thread_for_everyone"), (0, r.jsx)(a.Drp, {
+              }, "summarize_thread_for_everyone"), (0, l.jsx)(s.Drp, {
                 id: "summarize_thread_for_me",
-                label: v.intl.string(v.t["HOe+Hq"]),
-                iconLeft: a.nys,
+                label: C.intl.string(C.t["HOe+Hq"]),
+                iconLeft: s.nys,
                 leadingAccessory: {
                   type: "icon",
-                  icon: a.nys
+                  icon: s.nys
                 },
                 action: () => h.A.summarizeThread(t)
               }, "summarize_thread_for_me")]

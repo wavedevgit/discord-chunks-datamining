@@ -50,7 +50,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,7 +75,7 @@ function V(e, t) {
 }
 
 function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,7 +85,7 @@ function H(e) {
   let {
     user: n,
     currentUser: G,
-    guildId: V,
+    guildId: F,
     channelId: H,
     messageId: Y,
     roleId: W,
@@ -102,16 +102,16 @@ function H(e) {
   } = (0, u.Ay)([...Q, c.A.USER_PROFILE_POPOUT]), et = (0, h.aL)(), en = (0, y.pb)({
     layout: "POPOUT",
     userId: n.id,
-    guildId: V,
+    guildId: F,
     channelId: H,
     messageId: Y,
     roleId: W
-  }), er = (0, o.bG)([g.A], () => null != V ? g.A.getGuild(V) : null), ei = i.useMemo(() => null != V ? {
-    [V]: [n.id]
-  } : {}, [V, n.id]);
+  }), er = (0, o.bG)([g.A], () => null != F ? g.A.getGuild(F) : null), ei = i.useMemo(() => null != F ? {
+    [F]: [n.id]
+  } : {}, [F, n.id]);
   (0, l.E)(ei, "UserProfilePopout");
   let ea = i.useRef(null),
-    eo = (0, O.Ay)(n.id, V),
+    eo = (0, O.Ay)(n.id, F),
     {
       isHoveringOrFocusing: es,
       isHovering: el
@@ -133,7 +133,7 @@ function H(e) {
     }),
     e_ = i.useMemo(() => (0, _.A)(), []),
     eh = e => {
-      null == z || z(), et.dispatch(M.jej.POPOUT_CLOSE), (0, A.openUserProfileModal)(B(F({
+      null == z || z(), et.dispatch(M.jej.POPOUT_CLOSE), (0, A.openUserProfileModal)(B(V({
         sourceAnalyticsLocations: ee,
         hideRestrictedProfile: true,
         customStatusPrompt: e_
@@ -145,7 +145,7 @@ function H(e) {
       id: "view-profile",
       label: k.intl.string(k.t["+Xp3hq"]),
       action: () => {
-        eh(), (0, b.Wn)(F({
+        eh(), (0, b.Wn)(V({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: ee
         }, en))
@@ -186,7 +186,7 @@ function H(e) {
               children: [(0, r.jsx)(R.A, {
                 shouldShowTooltip: null === ec.interactionType,
                 user: n,
-                guildId: V,
+                guildId: F,
                 channelId: H,
                 onClose: z,
                 appContext: X
@@ -195,7 +195,7 @@ function H(e) {
                 user: n
               }), !ef && (0, r.jsx)(P.yo, {
                 user: n,
-                guildId: V,
+                guildId: F,
                 viewProfileItem: em(),
                 appContext: X
               })]
@@ -204,7 +204,7 @@ function H(e) {
               children: [(0, r.jsx)(S.A, {
                 user: n,
                 displayProfile: eo,
-                guildId: V,
+                guildId: F,
                 themeType: j.d.POPOUT
               }), (0, r.jsx)(T.A, {
                 userId: n.id,
@@ -213,14 +213,14 @@ function H(e) {
               }), (0, r.jsx)(I.A, {
                 user: n,
                 displayProfile: eo,
-                guildId: V,
+                guildId: F,
                 channelId: H,
                 themeType: j.d.POPOUT,
                 onOpenProfile: Z ? true : eh
               }), (0, r.jsx)(D.A, {
                 ref: ed,
                 user: n,
-                guildId: V,
+                guildId: F,
                 channelId: H,
                 themeType: j.d.POPOUT,
                 onCloseProfile: z,
@@ -237,7 +237,7 @@ function H(e) {
               onClose: z
             }), (0, r.jsx)(x.A, {
               user: n,
-              guildId: V,
+              guildId: F,
               channelId: H,
               onClose: z,
               appContext: X,

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 700435, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 700435, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -14,16 +14,16 @@ let d = (0, Chunk419954.Hn)(Chunk780964.X.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
   fieldLayout: "horizontal",
   useTitle: () => o.intl.string(o.t.dnvZSg),
   useValue: () => (0, n.bG)([r.default], () => r.default.getAvatarSizeMode()),
-  setValue: e => {
-    l.A.setAvatarSizeMode(e)
+  setValue: t => {
+    l.A.setAvatarSizeMode(t)
   },
   useOptions: () => [{
     id: "large",
     label: o.intl.string(o.t.YcOxtr),
-    value: u.OSZ.LARGE
+    value: a.OSZ.LARGE
   }, {
     id: "small",
     label: o.intl.string(o.t.BKIKqx),
-    value: u.OSZ.SMALL
+    value: a.OSZ.SMALL
   }]
 })

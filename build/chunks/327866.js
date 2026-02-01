@@ -50,7 +50,7 @@ class E extends Chunk64700.PureComponent {
           connected: r,
           unread: i
         } = this.props, l = b;
-        return (0, m.isMac)() && !r ? l : (0, m.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+        return (0, f.isMac)() && !r ? l : (0, f.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
       })
   }
 }
@@ -68,7 +68,7 @@ Chunk723702.isPlatformEmbedded && (Chunk837921.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", 
     r = !p.A.getDisableUnreadBadge() && !!(t || e + n > 0);
   return {
     connected: h.A.isConnected(),
-    speaking: f.A.isCurrentUserSpeaking(),
+    speaking: m.A.isCurrentUserSpeaking(),
     muted: d.A.isSelfMute() || d.A.isSelfMutedTemporarily(),
     deafened: d.A.isSelfDeaf(),
     unread: r

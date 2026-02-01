@@ -160,7 +160,7 @@ function G(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     streamKey: t,
     timestamp: n
@@ -168,7 +168,7 @@ function F(e) {
   R === n && (R = null), null == n ? P[t] = [] : P[t] = P[t].filter(e => e.timestamp !== n)
 }
 
-function V() {
+function F() {
   I = Math.max(I - 1, 0)
 }
 
@@ -537,8 +537,8 @@ let ec = new el(Chunk73153.h, {
     CLIPS_SAVE_CLIP_PLACEHOLDER: H,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Y,
     CLIPS_SAVE_CLIP_START: G,
-    CLIPS_SAVE_CLIP_ERROR: V,
-    CLIPS_SAVE_ANIMATION_END: F,
+    CLIPS_SAVE_CLIP_ERROR: F,
+    CLIPS_SAVE_ANIMATION_END: V,
     STREAM_START: Z,
     STREAM_STOP: Q,
     CLIPS_CLEAR_CLIPS_SESSION: $,

@@ -1,9 +1,9 @@
-/** Chunk was on 45586 **/
+/** Chunk was on 43549 **/
 /** chunk id: 899847, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => I,
-  HB: () => C,
-  Xz: () => f,
+  HB: () => f,
+  Xz: () => C,
   e$: () => A,
   nt: () => S
 }), require("./896048.js");
@@ -81,7 +81,7 @@ async function A(t) {
     }), n
   })
 }
-async function C() {
+async function f() {
   await i.Bo.get({
     url: _.Rsh.FAMILY_CENTER_LINK_CODE,
     rejectWithError: false
@@ -95,7 +95,7 @@ async function C() {
     }), n
   })
 }
-async function f() {
+async function C() {
   await i.Bo.post({
     url: _.Rsh.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS,
     rejectWithError: true
@@ -114,8 +114,8 @@ let I = {
       rejectWithError: false
     }), {
       teen_audit_log: A,
-      linked_users: C,
-      users: f,
+      linked_users: f,
+      users: C,
       age_group: I
     } = S, N = {
       teenId: null == A ? true : A.teen_user_id,
@@ -133,8 +133,8 @@ let I = {
     return null != N.invoices && N.invoices.length > 0 && await T(N.invoices), r.h.dispatch({
       type: "FAMILY_CENTER_INITIAL_LOAD",
       familyCenterTeenActivity: N,
-      linkedUsers: C,
-      users: f,
+      linkedUsers: f,
+      users: C,
       ageGroup: I
     }), N
   },
@@ -209,18 +209,18 @@ let I = {
       url: _.Rsh.FAMILY_CENTER_TEEN_ACTIVITY_MORE(t, e, n, l),
       rejectWithError: false
     }), {
-      teen_audit_log: C
-    } = A, f = {
-      teenId: C.teen_user_id,
-      rangeStartId: C.range_start_id,
-      actions: C.actions,
-      users: C.users,
-      guilds: C.guilds,
-      topUserActivities: null != (a = C.top_user_activities) ? a : [],
-      topGuildActivities: null != (o = C.top_guild_activities) ? o : [],
-      totalSpendAmount: null != (u = null == C || null == (T = C.total_spend) ? true : T.amount) ? u : null,
-      totalSpendCurrency: null != (d = null == C || null == (S = C.total_spend) ? true : S.currency) ? d : null,
-      invoices: null != (c = null == C ? true : C.invoices) ? c : []
+      teen_audit_log: f
+    } = A, C = {
+      teenId: f.teen_user_id,
+      rangeStartId: f.range_start_id,
+      actions: f.actions,
+      users: f.users,
+      guilds: f.guilds,
+      topUserActivities: null != (a = f.top_user_activities) ? a : [],
+      topGuildActivities: null != (o = f.top_guild_activities) ? o : [],
+      totalSpendAmount: null != (u = null == f || null == (T = f.total_spend) ? true : T.amount) ? u : null,
+      totalSpendCurrency: null != (d = null == f || null == (S = f.total_spend) ? true : S.currency) ? d : null,
+      invoices: null != (c = null == f ? true : f.invoices) ? c : []
     };
     return s.default.track(_.HAw.FAMILY_CENTER_ACTION, {
       action: E.qb.LoadMore,
@@ -228,8 +228,8 @@ let I = {
       action_display_type: e
     }), r.h.dispatch({
       type: "FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS",
-      familyCenterTeenActivity: f
-    }), C
+      familyCenterTeenActivity: C
+    }), f
   },
   selectTab(t) {
     r.h.dispatch({

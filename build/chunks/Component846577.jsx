@@ -1,4 +1,4 @@
-/** Chunk was on 39778 **/
+/** Chunk was on 93169 **/
 /** chunk id: 846577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => d
@@ -12,15 +12,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function d(e) {
-  let t = (0, i.bG)([o.default], () => o.default.getCurrentUser());
-  return (null == t ? true : t.isStaff()) !== true ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!e.isMessageRequest && (0, r.jsx)(l.Drp, {
+  let t = (0, r.bG)([s.default], () => s.default.getCurrentUser());
+  return (null == t ? true : t.isStaff()) !== true ? null : (0, i.jsxs)(i.Fragment, {
+    children: [!e.isMessageRequest && (0, i.jsx)(l.Drp, {
       id: "mark-as-message-request",
-      label: s.intl.string(s.t.L6623r),
+      label: o.intl.string(o.t.L6623r),
       action: () => (0, a.Sk)(e.id)
-    }), (0, r.jsx)(l.Drp, {
+    }), (0, i.jsx)(l.Drp, {
       id: "clear-message-request",
-      label: s.intl.string(s.t["85YWlY"]),
+      label: o.intl.string(o.t["85YWlY"]),
       action: () => (0, a.JH)(e.id)
     })]
   })

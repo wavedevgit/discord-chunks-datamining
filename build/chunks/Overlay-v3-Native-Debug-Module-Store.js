@@ -147,13 +147,13 @@ function G() {
   return y = null, true
 }
 
-function F(e) {
+function V(e) {
   let {
     pid: t
   } = e;
   return 0 === t ? D() : L(), true
 }
-class V extends(r = Chunk311907.Ay.Store) {
+class F extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(f.A, c.A)
   }
@@ -164,12 +164,12 @@ class V extends(r = Chunk311907.Ay.Store) {
     return O
   }
 }
-m(V, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let B = new V(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
+m(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+let B = new F(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
   OVERLAY_SET_CLICK_ZONES: j,
-  OVERLAY_FOCUSED: F,
+  OVERLAY_FOCUSED: V,
   OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: k,
   OVERLAY_CRASHED: M
 })

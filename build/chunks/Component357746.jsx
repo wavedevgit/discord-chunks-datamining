@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 357746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => v
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk408392 = require("./408392.js");
 
-function _(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,18 +41,18 @@ function _(e) {
   return e
 }
 
-function j(e) {
+function x(e) {
   let {
     indicator: t
   } = e;
   if (null == t) return null;
   switch (t.type) {
-    case p.cD.WARNING:
+    case h.cD.WARNING:
       return (0, r.jsx)(o.EpV, {
         color: o.LU0.colors.STATUS_WARNING,
         size: "sm"
       });
-    case p.cD.UNREAD:
+    case h.cD.UNREAD:
       return (0, r.jsx)(o.hVq, {
         count: t.count,
         color: o.LU0.colors.BACKGROUND_MOD_STRONG.css
@@ -61,7 +61,7 @@ function j(e) {
       return null
   }
 }
-let x = {
+let _ = {
     animation: {
       BEG: 0,
       END: 75
@@ -77,34 +77,34 @@ let x = {
       selected: i
     } = e, v = (0, g.Ay)(t), E = l.useCallback(() => {
       var e;
-      (0, h.Zm)(t), (0, f.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == v || null == (e = v.popout) || e.markAsDismissed(b.i.INDIRECT_ACTION)
+      (0, p.Zm)(t), (0, f.A)(t, c.A.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == v || null == (e = v.popout) || e.markAsDismissed(b.i.INDIRECT_ACTION)
     }, [t, v]), C = l.useRef(null), S = (0, o.red)(o.DXt), I = (0, a.bG)([d.A], () => d.A.hasLayers()), N = S || I, T = l.useCallback(() => {
       var e;
       if ((null == v ? true : v.popout) == null || N) return null;
       switch (null == v || null == (e = v.popout) ? true : e.type) {
-        case p.o.LEVEL_REACHED:
-          return (0, r.jsx)(m.HW, _({
+        case h.o.LEVEL_REACHED:
+          return (0, r.jsx)(m.HW, j({
             guildId: t,
             channelRowRef: C
           }, v.popout));
-        case p.o.PERKS_AVAILABLE:
-          return (0, r.jsx)(m.UB, _({
+        case h.o.PERKS_AVAILABLE:
+          return (0, r.jsx)(m.UB, j({
             guildId: t,
             channelRowRef: C
           }, v.popout));
-        case p.o.PERKS_PURCHASABLE:
-          return (0, r.jsx)(m.lw, _({
+        case h.o.PERKS_PURCHASABLE:
+          return (0, r.jsx)(m.lw, j({
             guildId: t,
             channelRowRef: C
           }, v.popout));
-        case p.o.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(m.bo, _({
+        case h.o.NEW_PERK_AVAILABLE:
+          return (0, r.jsx)(m.bo, j({
             guildId: t,
             channelRowRef: C
           }, v.popout));
-        case p.o.GAME_SERVER_HOSTING_AVAILABLE:
-        case p.o.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
-          return (0, r.jsx)(m.jz, _({
+        case h.o.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.o.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
+          return (0, r.jsx)(m.jz, j({
             guildId: t,
             channelRowRef: C
           }, v.popout));
@@ -133,7 +133,7 @@ let x = {
           children: (0, r.jsx)(o.tvC, {
             nextScene: null == P ? "animation" : "LOOP",
             className: O.UU,
-            sceneSegments: x,
+            sceneSegments: _,
             importData: () => n.e("67807").then(n.t.bind(n, 217762, 19)),
             onScenePlay: R,
             rendererSettings: {
@@ -150,7 +150,7 @@ let x = {
         selected: i,
         onClick: E,
         showUnread: (null == v ? true : v.showUnread) === true,
-        trailing: (0, r.jsx)(j, {
+        trailing: (0, r.jsx)(x, {
           indicator: null == v ? true : v.indicator
         })
       }), T()]

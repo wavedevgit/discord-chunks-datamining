@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 475889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => u
@@ -18,8 +18,8 @@ function u(e) {
   } = (0, i.cf)([a.A], () => ({
     hasRequestedStartTimes: a.A.hasRequestedStartTimes(e.guild_id),
     startTime: a.A.getStartTime(e)
-  })), u = (0, o.a)(e.guild_id, "useStartTime"), d = ((0, l.un)() || (0, l.m0)()) && !u, h = e.type === c.rbe.GUILD_VOICE;
+  })), u = (0, o.a)(e.guild_id, "useStartTime"), d = ((0, l.un)() || (0, l.m0)()) && !u, p = e.type === c.rbe.GUILD_VOICE;
   return r.useEffect(() => {
-    t || !h || d || (0, s.U)(e.guild_id)
-  }, [h, e.guild_id, t, d]), n
+    t || !p || d || (0, s.U)(e.guild_id)
+  }, [p, e.guild_id, t, d]), n
 }

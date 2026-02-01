@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 88141, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 88141, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  c: () => a
+  c: () => u
 });
 var Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
@@ -11,6 +11,6 @@ let r = (0, Chunk419954.AK)(Chunk780964.X.NOTIFICATIONS_TO_VOICE_AND_VIDEO_SOUND
     useSearchTerms: () => [s.intl.string(s.t["MMy+lm"])],
     destinationKey: Chunk780964.X.SOUNDS_CATEGORY
   }),
-  a = (0, Chunk419954.gN)(Chunk780964.X.NOTIFICATIONS_SOUNDS_RELATED_SETTINGS, {
+  u = (0, Chunk419954.gN)(Chunk780964.X.NOTIFICATIONS_SOUNDS_RELATED_SETTINGS, {
     buildLayout: () => [r]
   })

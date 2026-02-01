@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 397938, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -25,19 +25,19 @@ var Chunk652215 = require("./652215.js"),
   Chunk790782 = require("./790782.js"),
   Chunk626600 = require("./626600.js");
 
-function x() {
+function _() {
   let e = (0, s.bG)([g.default], () => g.default.getCurrentUser());
-  return (0, s.bG)([h.Ay], () => (null == e ? true : e.id) != null && h.Ay.getMentionCount(e.id, _.P.NOTIFICATION_CENTER) > 0)
+  return (0, s.bG)([p.Ay], () => (null == e ? true : e.id) != null && p.Ay.getMentionCount(e.id, j.P.NOTIFICATION_CENTER) > 0)
 }
 
 function v(e) {
   var t, n;
   let {
     onClick: d,
-    selectedOverride: h = false,
+    selectedOverride: p = false,
     popoutProps: g,
     ref: A
-  } = e, _ = (0, i.Vd)("notifications-inbox"), [v, E] = l.useState(false), C = (0, m.lI)(), S = h || C, {
+  } = e, j = (0, i.Vd)("notifications-inbox"), [v, E] = l.useState(false), C = (0, m.lI)(), S = p || C, {
     notificationCenterVariant: I
   } = (0, f.X8)({
     location: "NotificationsInboxButtonInner"
@@ -52,7 +52,7 @@ function v(e) {
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
-    } = (0, m.U4)(), l = x(), {
+    } = (0, m.U4)(), l = _(), {
       badge: i,
       dimensions: s
     } = (0, b.ux)({
@@ -77,7 +77,7 @@ function v(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: s
     }
-  }(S), w = I === f.U5.LEGACY ? o.K$s : o.XFE, R = (0, s.bG)([p.A], () => p.A.getChannelId()), D = l.useMemo(() => {
+  }(S), w = I === f.U5.LEGACY ? o.K$s : o.XFE, R = (0, s.bG)([h.A], () => h.A.getChannelId()), D = l.useMemo(() => {
     if (I === f.U5.SIDEBAR) return O.BVt.CHANNEL(O.gNP, R)
   }, [I, R]);
   return (0, r.jsxs)(u.c, {
@@ -86,7 +86,7 @@ function v(e) {
       selected: S && I === f.U5.SIDEBAR,
       hovered: v && I === f.U5.SIDEBAR,
       unread: P > 0,
-      className: j.Io,
+      className: x.Io,
       disabled: I === f.U5.LEGACY
     }), (0, r.jsx)(y.A, {
       children: (0, r.jsx)(o.Qk9, {
@@ -110,7 +110,7 @@ function v(e) {
             })
           }
           return e
-        }({}, _, g), n = n = {
+        }({}, j, g), n = n = {
           onClick: d,
           to: D,
           selected: S || v,
@@ -119,7 +119,7 @@ function v(e) {
           children: (0, r.jsx)(w, {
             size: "custom",
             color: "currentColor",
-            className: j.iZ,
+            className: x.iZ,
             width: 20,
             height: 20
           })
@@ -145,7 +145,7 @@ function E() {
     } = (0, f.X8)({
       location: "NotificationsInboxButton"
     }),
-    n = x(),
+    n = _(),
     i = (0, b.HN)();
   return t === f.U5.SIDEBAR ? (0, r.jsx)(v, {
     onClick: i

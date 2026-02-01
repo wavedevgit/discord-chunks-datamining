@@ -1,8 +1,8 @@
-/** Chunk was on 4670 **/
-/** chunk id: 31760, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 31760, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  J: () => N,
-  q: () => C
+  J: () => C,
+  q: () => N
 }), require("./228524.js"), require("./896048.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,35 +22,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk997442 = require("./997442.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function C(e) {
+function N(t) {
   let {
-    label: t,
+    label: e,
     description: i,
     placeholder: r,
-    overrideId: a,
-    setOverride: u,
+    overrideId: u,
+    setOverride: a,
     fetchOverride: o
-  } = e, [d, T] = l.useState(null != a ? a : ""), c = l.useRef(null), [A, S] = l.useState(0), _ = () => {
-    null != c.current && (clearTimeout(c.current), c.current = null)
+  } = t, [d, T] = l.useState(null != u ? u : ""), A = l.useRef(null), [S, c] = l.useState(0), E = () => {
+    null != A.current && (clearTimeout(A.current), A.current = null)
   };
-  return l.useEffect(() => _, []), (0, n.jsx)(s.D0$, {
+  return l.useEffect(() => E, []), (0, n.jsx)(s.D0$, {
     layout: "horizontal-responsive",
-    label: t,
+    label: e,
     description: i,
     children: (0, n.jsx)(s.ksK, {
       placeholder: r,
-      error: 2 === A ? "Failed to fetch override" : true,
-      successMessage: 3 === A ? "Override applied" : true,
+      error: 2 === S ? "Failed to fetch override" : true,
+      successMessage: 3 === S ? "Override applied" : true,
       value: d,
-      onChange: e => {
-        if (!(e.length > 0) || /^[0-9]+$/.test(e)) {
-          if (T(e), _(), 0 === e.length) {
-            S(0), u(null);
+      onChange: t => {
+        if (!(t.length > 0) || /^[0-9]+$/.test(t)) {
+          if (T(t), E(), 0 === t.length) {
+            c(0), a(null);
             return
           }
-          c.current = setTimeout(() => {
-            S(1), o(e).then(t => {
-              S(null == t ? 2 : 3), null != t && u(e)
+          A.current = setTimeout(() => {
+            c(1), o(t).then(e => {
+              c(null == e ? 2 : 3), null != e && a(t)
             })
           }, 500)
         }
@@ -59,11 +59,11 @@ function C(e) {
     })
   })
 }
-let N = (0, Chunk419954.zZ)(Chunk780964.X.DEV_OVERRIDES, {
+let C = (0, Chunk419954.zZ)(Chunk780964.X.DEV_OVERRIDES, {
   useTitle: () => "Overrides",
-  buildLayout: () => [g.U, I.l, T.B, c.q, S.g, o.Y, E.s, A.t, _.T, d.s],
+  buildLayout: () => [_.U, I.l, T.B, A.q, c.g, o.Y, g.s, S.t, E.T, d.s],
   useInlineNotice: () => ({
-    type: a.W.INLINE_NOTICE,
+    type: u.W.INLINE_NOTICE,
     noticeType: "info",
     useText: () => O.intl.format(O.t.UeZJlg, {
       link: "https://i.dis.gd/dev-settings-changes"

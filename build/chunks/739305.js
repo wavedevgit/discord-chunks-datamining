@@ -48,16 +48,16 @@ var r, i, a, Chunk593858 = require("./593858.js"),
     BigInt64Array: 8,
     BigUint64Array: 8
   },
-  F = function(e) {
+  V = function(e) {
     if (!u(e)) returnfalse;
     var t = f(e);
     return "DataView" === t || d(U, t) || d(G, t)
   },
-  V = function(e) {
+  F = function(e) {
     var t = E(e);
     if (u(t)) {
       var n = I(t);
-      return n && d(n, M) ? n[M] : V(t)
+      return n && d(n, M) ? n[M] : F(t)
     }
   },
   B = function(e) {
@@ -128,8 +128,8 @@ module.exports = {
   aTypedArrayConstructor: Y,
   exportTypedArrayMethod: W,
   exportTypedArrayStaticMethod: K,
-  getTypedArrayConstructor: V,
-  isView: F,
+  getTypedArrayConstructor: F,
+  isView: V,
   isTypedArray: B,
   TypedArray: w,
   TypedArrayPrototype: R

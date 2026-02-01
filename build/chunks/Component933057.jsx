@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 933057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -54,11 +54,11 @@ function b(e) {
   } = e, n = (0, u.X)(t), [b, A] = l.useState(false), y = l.useRef(null), O = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
   if (l.useEffect(() => {
       let e = () => A(true);
-      return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-        c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+      return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+        c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
       }
     }, []), O) return null;
-  let _ = g.intl.string(g.t.h850Ss);
+  let j = g.intl.string(g.t.h850Ss);
   return (0, r.jsx)(s.YNO, {
     targetElementRef: y,
     shouldShow: b,
@@ -79,9 +79,9 @@ function b(e) {
       return (0, r.jsx)(a.Ay.Icon, m(f({}, e), {
         ref: y,
         onClick: () => A(e => !e),
-        tooltip: l ? null : _,
-        icon: n === h.CP.NO_MESSAGES ? s.a_I : s.XFE,
-        "aria-label": _,
+        tooltip: l ? null : j,
+        icon: n === p.CP.NO_MESSAGES ? s.a_I : s.XFE,
+        "aria-label": j,
         selected: l
       }))
     }

@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk892513 = require("./892513.js");
 
-function f(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk64700.PureComponent {
+class f extends Chunk64700.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -39,7 +39,7 @@ class m extends Chunk64700.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          f(e, t, n[t])
+          m(e, t, n[t])
         })
       }
       return e
@@ -71,10 +71,10 @@ class m extends Chunk64700.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), m(this, "state", {
       memoizedMode: this.props.mode,
       clicked: false
-    }), f(this, "handleInstallDownload", () => {
+    }), m(this, "handleInstallDownload", () => {
       d.A.isConnected() ? s.A.show({
         title: h.intl.string(h.t.tiu1ly),
         body: h.intl.string(h.t["zK+lqW"]),
@@ -83,7 +83,7 @@ class m extends Chunk64700.PureComponent {
         confirmText: h.intl.string(h.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
-    }), f(this, "doUpdate", () => {
+    }), m(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
       }), (0, o.a)())
@@ -92,4 +92,4 @@ class m extends Chunk64700.PureComponent {
 }
 let A = Chunk311907.Ay.connectStores([Chunk598384.A], () => ({
   mode: u.A.getState()
-}))(m)
+}))(f)

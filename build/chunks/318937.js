@@ -1,16 +1,16 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 318937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  MH: () => f,
+  MH: () => h,
   Nm: () => m,
-  Ol: () => _,
+  Ol: () => g,
   RB: () => p,
-  Rl: () => g,
+  Rl: () => f,
   W9: () => d,
   ZW: () => c,
-  bI: () => h,
+  bI: () => A,
   d4: () => u,
-  dk: () => s
+  dk: () => o
 });
 var Chunk158390 = require("./158390.js"),
   Chunk562465 = require("./562465.js"),
@@ -18,41 +18,41 @@ var Chunk158390 = require("./158390.js"),
   Chunk134753 = require("./134753.js"),
   Chunk652215 = require("./652215.js");
 
-function s(e, t, n, r, l) {
+function o(e, t, n, l, r) {
   i.h.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
     userId: n,
     lineId: t,
-    streamerId: r,
-    point: l
+    streamerId: l,
+    point: r
   })
 }
 
-function c(e, t, n, r) {
-  return l.Bo.post({
-    url: o.Rsh.SHARED_CANVAS_LINES(e, n),
+function c(e, t, n, l) {
+  return r.Bo.post({
+    url: s.Rsh.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
-      points: r
+      points: l
     },
     rejectWithError: false
   })
 }
 
-function u(e, t, n, r) {
+function u(e, t, n, l) {
   i.h.dispatch({
     type: "SHARED_CANVAS_UPDATE_LINE_POINTS",
     userId: t,
     lineId: e,
-    newPoints: r,
+    newPoints: l,
     streamerId: n
   })
 }
 
 function d(e, t, n) {
-  return l.Bo.post({
-    url: o.Rsh.SHARED_CANVAS_EMOJI_HOSES(e, t),
+  return r.Bo.post({
+    url: s.Rsh.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
     },
@@ -60,10 +60,10 @@ function d(e, t, n) {
   })
 }
 
-function f(e, t, n) {
-  l.Bo.del({
-    url: o.Rsh.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
-    backoff: new r.A,
+function h(e, t, n) {
+  r.Bo.del({
+    url: s.Rsh.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
+    backoff: new l.A,
     rejectWithError: true
   })
 }
@@ -77,7 +77,7 @@ function p(e, t) {
   })
 }
 
-function g(e, t, n) {
+function f(e, t, n) {
   i.h.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
@@ -94,14 +94,14 @@ function m(e, t) {
   })
 }
 
-function _(e) {
+function g(e) {
   i.h.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e
   })
 }
 
-function h() {
+function A() {
   i.h.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })

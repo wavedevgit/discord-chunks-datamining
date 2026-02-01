@@ -37,8 +37,8 @@ var r, Chunk549412 = require("./549412.js"),
   k = 262,
   U = 32,
   G = 42,
-  F = 69,
-  V = 73,
+  V = 69,
+  F = 73,
   B = 91,
   H = 103,
   Y = 113,
@@ -226,17 +226,17 @@ function eE(e, t) {
   if (!e || !e.state || t > p || t < 0) return e ? X(e, m) : m;
   if (i = e.state, !e.output || !e.input && 0 !== e.avail_in || i.status === W && t !== f) return X(e, 0 === e.avail_out ? E : m);
   if (i.strm = e, n = i.last_flush, i.last_flush = t, i.status === G)
-    if (2 === i.wrap) e.adler = 0, en(i, 31), en(i, 139), en(i, 8), i.gzhead ? (en(i, +!!i.gzhead.text + 2 * !!i.gzhead.hcrc + 4 * !!i.gzhead.extra + 8 * !!i.gzhead.name + 16 * !!i.gzhead.comment), en(i, 255 & i.gzhead.time), en(i, i.gzhead.time >> 8 & 255), en(i, i.gzhead.time >> 16 & 255), en(i, i.gzhead.time >> 24 & 255), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, 255 & i.gzhead.os), i.gzhead.extra && i.gzhead.extra.length && (en(i, 255 & i.gzhead.extra.length), en(i, i.gzhead.extra.length >> 8 & 255)), i.gzhead.hcrc && (e.adler = s(e.adler, i.pending_buf, i.pending, 0)), i.gzindex = 0, i.status = F) : (en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, Q), i.status = Y);
+    if (2 === i.wrap) e.adler = 0, en(i, 31), en(i, 139), en(i, 8), i.gzhead ? (en(i, +!!i.gzhead.text + 2 * !!i.gzhead.hcrc + 4 * !!i.gzhead.extra + 8 * !!i.gzhead.name + 16 * !!i.gzhead.comment), en(i, 255 & i.gzhead.time), en(i, i.gzhead.time >> 8 & 255), en(i, i.gzhead.time >> 16 & 255), en(i, i.gzhead.time >> 24 & 255), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, 255 & i.gzhead.os), i.gzhead.extra && i.gzhead.extra.length && (en(i, 255 & i.gzhead.extra.length), en(i, i.gzhead.extra.length >> 8 & 255)), i.gzhead.hcrc && (e.adler = s(e.adler, i.pending_buf, i.pending, 0)), i.gzindex = 0, i.status = V) : (en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 0), en(i, 9 === i.level ? 2 : 4 * (i.strategy >= O || i.level < 2)), en(i, Q), i.status = Y);
     else {
       var n, i, o, l, g = T + (i.w_bits - 8 << 4) << 8,
         y = false;
       g |= (y = i.strategy >= O || i.level < 2 ? 0 : i.level < 6 ? 1 : 6 === i.level ? 2 : 3) << 6, 0 !== i.strstart && (g |= U), g += 31 - g % 31, i.status = Y, er(i, g), 0 !== i.strstart && (er(i, e.adler >>> 16), er(i, 65535 & e.adler)), e.adler = 1
-    } if (i.status === F)
+    } if (i.status === V)
     if (i.gzhead.extra) {
       for (o = i.pending; i.gzindex < (65535 & i.gzhead.extra.length) && (i.pending !== i.pending_buf_size || (i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), ee(e), o = i.pending, i.pending !== i.pending_buf_size));) en(i, 255 & i.gzhead.extra[i.gzindex]), i.gzindex++;
-      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), i.gzindex === i.gzhead.extra.length && (i.gzindex = 0, i.status = V)
-    } else i.status = V;
-  if (i.status === V)
+      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), i.gzindex === i.gzhead.extra.length && (i.gzindex = 0, i.status = F)
+    } else i.status = F;
+  if (i.status === F)
     if (i.gzhead.name) {
       o = i.pending;
       do {
@@ -274,7 +274,7 @@ function eE(e, t) {
 
 function ey(e) {
   var t;
-  return e && e.state ? (t = e.state.status) !== G && t !== F && t !== V && t !== B && t !== H && t !== Y && t !== W ? X(e, m) : (e.state = null, t === Y ? X(e, g) : _) : m
+  return e && e.state ? (t = e.state.status) !== G && t !== V && t !== F && t !== B && t !== H && t !== Y && t !== W ? X(e, m) : (e.state = null, t === Y ? X(e, g) : _) : m
 }
 
 function eb(e, t) {

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 827975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -22,7 +22,7 @@ function g() {
     g = (0, l.Vd)("unavailable-guilds-button");
   return n <= 0 ? null : (0, r.jsx)(c.c, {
     children: (0, r.jsx)(u.A, {
-      text: h.intl.format(h.t["TnH05/"], {
+      text: p.intl.format(p.t["TnH05/"], {
         count: n
       }),
       children: (0, r.jsx)(s.MzZ, (e = function(e) {
@@ -45,8 +45,8 @@ function g() {
       }({
         href: d.qF.STATUS,
         target: "_blank",
-        className: p.h,
-        "aria-label": h.intl.formatToPlainString(h.t["MEpX+2"], {
+        className: h.h,
+        "aria-label": p.intl.formatToPlainString(p.t["MEpX+2"], {
           count: n
         })
       }, g), t = t = {

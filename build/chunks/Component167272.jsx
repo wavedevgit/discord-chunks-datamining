@@ -46,11 +46,11 @@ function R(e) {
     themeType: M
   } = (0, y.E)(), j = (0, i.bG)([m.default], () => m.default.getId() === n.id), k = (0, u.J)(L), U = (0, _.o)(null != (t = null == R ? true : R.application_id) ? t : null == L ? true : L.id), {
     analyticsLocations: G
-  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), F = M === w.d.MODAL || M === w.d.MODAL_V2, V = M === w.d.POPOUT, B = (() => j ? V && (null == R ? true : R.type) === N.$pd.PLAYING && (null == L ? true : L.id) != null ? (0, r.jsx)(d.A, {
+  } = (0, p.Ay)(f.A.USER_PROFILE_ACTIVITY_BUTTONS), V = M === w.d.MODAL || M === w.d.MODAL_V2, F = M === w.d.POPOUT, B = (() => j ? F && (null == R ? true : R.type) === N.$pd.PLAYING && (null == L ? true : L.id) != null ? (0, r.jsx)(d.A, {
     applicationId: L.id,
     onAction: P,
     onClose: D
-  }) : null : U || !k || null == L || F ? (0, l.A)(R) ? (0, r.jsx)(I.A, {
+  }) : null : U || !k || null == L || V ? (0, l.A)(R) ? (0, r.jsx)(I.A, {
     platformType: N.fg2.XBOX,
     icon: () => (0, r.jsx)(E.A, {}),
     onAction: P

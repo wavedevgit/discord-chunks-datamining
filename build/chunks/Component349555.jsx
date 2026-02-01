@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 349555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,13 +16,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk142011 = require("./142011.js");
 
-function f(e) {
+function m(e) {
   let {
     quests: t,
     excludedQuests: n,
     isFetching: l,
-    hasFetched: f,
-    hasFiltersApplied: m = false,
+    hasFetched: m,
+    hasFiltersApplied: f = false,
     onClearFilters: A
   } = e, _ = i.useRef(false), b = (0, o.zy)(), E = i.useMemo(() => {
     if (b.hash.length > 0) {
@@ -35,13 +35,13 @@ function f(e) {
   i.useEffect(() => {
     _.current = false
   }, [b.hash]), i.useEffect(() => {
-    if (null == E || _.current || l || !f) return;
+    if (null == E || _.current || l || !m) return;
     let e = document.getElementById("quest-tile-".concat(E));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
     }), _.current = true
-  }, [t, E, b, l, f]);
+  }, [t, E, b, l, m]);
   let O = null != E,
     [y, I] = i.useState(window.innerWidth);
   i.useEffect(() => {
@@ -59,11 +59,11 @@ function f(e) {
     className: g.y7,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
-      children: h.intl.string(m ? h.t.PBfFnx : h.t.NqFP6z)
+      children: h.intl.string(f ? h.t.PBfFnx : h.t.NqFP6z)
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
-      children: m ? h.intl.format(h.t.LdYS1H, {
+      children: f ? h.intl.format(h.t.LdYS1H, {
         onClick: A
       }) : h.intl.string(h.t.LhD4yH)
     })]

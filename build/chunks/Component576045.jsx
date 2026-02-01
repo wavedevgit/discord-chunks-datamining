@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 576045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   N: () => c
@@ -19,14 +19,14 @@ function c(e) {
     header: d,
     description: h,
     onDismiss: p,
-    buttons: g
+    buttons: f
   } = e;
-  l.useEffect(() => {
-    s.A.increment({
+  r.useEffect(() => {
+    a.A.increment({
       name: i.K.SAFETY_WARNING_VIEW
     })
   }, []);
-  let f = l.useCallback(() => {
+  let m = r.useCallback(() => {
     null == p || p(), (0, o._$)({
       channelId: t,
       warningId: n,
@@ -35,10 +35,10 @@ function c(e) {
       cta: o.Wm.USER_BANNER_DISMISS
     })
   }, [p, t, n, c, u]);
-  return (0, r.jsx)(a.Z, {
-    buttons: g,
+  return (0, l.jsx)(s.Z, {
+    buttons: f,
     description: h,
     header: d,
-    onDismiss: f
+    onDismiss: m
   })
 }

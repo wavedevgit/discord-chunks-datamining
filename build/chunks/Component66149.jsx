@@ -1,12 +1,12 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 66149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => _
 }), require("./801541.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk889137 = require("./889137.js"),
   Chunk397927 = require("./397927.js"),
   Chunk375901 = require("./375901.js"),
@@ -19,98 +19,98 @@ var Chunk627968 = require("./627968.js"),
   Chunk410132 = require("./410132.js"),
   Chunk119907 = require("./119907.js");
 
-function A(e) {
+function b(e) {
   let {
     expanded: t,
     onClick: n,
-    count: l,
+    count: r,
     compact: i,
-    collapsedReason: s
-  } = e, c = (0, a.YW)({
-    collapsedReason: s
+    collapsedReason: a
+  } = e, c = (0, s.YW)({
+    collapsedReason: a
   }).with({
-    collapsedReason: f.t["VFWjc+"]
-  }, () => (0, r.jsx)(o.G3N, {
+    collapsedReason: m.t["VFWjc+"]
+  }, () => (0, l.jsx)(o.G3N, {
     size: "md",
     color: "currentColor",
-    className: m.Q6
+    className: g.Q6
   })).with({
-    collapsedReason: f.t["+FcYM/"]
-  }, () => (0, r.jsx)(o.KTN, {
+    collapsedReason: m.t["+FcYM/"]
+  }, () => (0, l.jsx)(o.KTN, {
     size: "md",
     color: "currentColor",
-    className: m.Q6
-  })).otherwise(() => (0, r.jsx)(o.PGe, {
+    className: g.Q6
+  })).otherwise(() => (0, l.jsx)(o.PGe, {
     size: "md",
     color: "currentColor",
-    className: m.Q6
+    className: g.Q6
   }));
-  return (0, r.jsx)(u.A, {
+  return (0, l.jsx)(u.A, {
     compact: i,
     role: "group",
-    childrenMessageContent: (0, r.jsx)(p.A, {
+    childrenMessageContent: (0, l.jsx)(p.A, {
       compact: i,
-      className: m.L9,
+      className: g.L9,
       iconNode: c,
-      children: (0, r.jsxs)("div", {
-        className: m.Fo,
-        children: [f.intl.format(s, {
-          count: l
-        }), " —", " ", (0, r.jsx)(o.DUT, {
+      children: (0, l.jsxs)("div", {
+        className: g.Fo,
+        children: [m.intl.format(a, {
+          count: r
+        }), " —", " ", (0, l.jsx)(o.DUT, {
           tag: "span",
           onClick: n,
-          className: m.rB,
-          children: t ? f.intl.string(f.t.fgq1gs) : f.intl.string(f.t.XJuakA)
+          className: g.rB,
+          children: t ? m.intl.string(m.t.fgq1gs) : m.intl.string(m.t.XJuakA)
         })]
       })
     })
   })
 }
-let y = Chunk64700.memo(function(e) {
+let _ = Chunk64700.memo(function(e) {
   var t;
   let {
     messages: n,
     channel: i,
-    compact: a = false,
+    compact: s = false,
     unreadId: o,
     collapsedReason: u
   } = e, {
     hasJumpTarget: p = false
-  } = n, [f, y] = l.useState(p), O = l.useCallback(() => y(e => !e), []);
-  l.useEffect(() => {
-    p && y(true)
+  } = n, [m, _] = r.useState(p), y = r.useCallback(() => _(e => !e), []);
+  r.useEffect(() => {
+    p && _(true)
   }, [p]);
-  let _ = n.hasUnread ? n.content.length - 1 : n.content.length;
-  return (0, r.jsxs)("div", {
-    className: s()({
-      [b._A]: true,
-      [m.sz]: f
+  let v = n.hasUnread ? n.content.length - 1 : n.content.length;
+  return (0, l.jsxs)("div", {
+    className: a()({
+      [A._A]: true,
+      [g.sz]: m
     }),
-    children: [n.hasUnread && (!f || (null == (t = n.content[0]) ? true : t.type) === g.TZK.DIVIDER) ? (0, r.jsx)(h.A, {
+    children: [n.hasUnread && (!m || (null == (t = n.content[0]) ? true : t.type) === f.TZK.DIVIDER) ? (0, l.jsx)(h.A, {
       isUnread: true,
       id: o
-    }, "divider") : null, (0, r.jsx)(A, {
-      count: _,
-      compact: a,
-      expanded: f,
-      onClick: O,
+    }, "divider") : null, (0, l.jsx)(b, {
+      count: v,
+      compact: s,
+      expanded: m,
+      onClick: y,
       collapsedReason: u
-    }, "collapsed-message-item"), f ? n.content.map((e, t) => {
-      if (e.type === g.TZK.DIVIDER && t > 0) {
-        var l, s;
-        let e = null != (l = null == (s = n.content[t + 1]) ? true : s.isGroupStart) && l;
-        return (0, r.jsx)(h.A, {
+    }, "collapsed-message-item"), m ? n.content.map((e, t) => {
+      if (e.type === f.TZK.DIVIDER && t > 0) {
+        var r, a;
+        let e = null != (r = null == (a = n.content[t + 1]) ? true : a.isGroupStart) && r;
+        return (0, l.jsx)(h.A, {
           isUnread: true,
           isBeforeGroup: e,
           id: o
         }, "divider")
       }
-      if (e.type === g.TZK.MESSAGE || e.type === g.TZK.THREAD_STARTER_MESSAGE) {
-        let t = e.type === g.TZK.THREAD_STARTER_MESSAGE ? d.VO : d.Ay;
-        return (0, r.jsx)(t, {
+      if (e.type === f.TZK.MESSAGE || e.type === f.TZK.THREAD_STARTER_MESSAGE) {
+        let t = e.type === f.TZK.THREAD_STARTER_MESSAGE ? d.VO : d.Ay;
+        return (0, l.jsx)(t, {
           id: (0, c.j)(i.id, e.content.id),
-          className: m.__invalid_blocked,
-          compact: a,
+          className: g.__invalid_blocked,
+          compact: s,
           channel: i,
           message: e.content,
           groupId: e.groupId,

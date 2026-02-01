@@ -1,7 +1,7 @@
 /** Chunk was on 87997 **/
 /** chunk id: 222311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => y
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,34 +20,34 @@ var Chunk311907 = require("./311907.js"),
   Chunk418208 = require("./418208.js"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function y(e) {
   var t;
   let n = (0, g.A)(),
-    p = null == n ? true : n.id,
-    _ = null == n ? true : n.guild_id,
-    y = (0, l.bG)([u.A], () => u.A.getGuild(_), [_]),
-    h = (0, l.bG)([s.A], () => null != p ? s.A.getVoiceStateForChannel(p, e.id) : null, [p, e.id]),
-    m = (null == (t = c.default.getCurrentUser()) ? true : t.id) === e.id,
-    j = (0, f.A)(),
-    v = (0, l.bG)([b.Ay], () => b.Ay.getPermissionsForUser(e.id, p), [p, e.id]),
-    S = (0, A.Ni)(p),
-    T = (0, O.zU)();
-  if (null == n || null == y || null == h || v.speaker) return null;
+    y = null == n ? true : n.id,
+    m = null == n ? true : n.guild_id,
+    E = (0, l.bG)([u.A], () => u.A.getGuild(m), [m]),
+    j = (0, l.bG)([s.A], () => null != y ? s.A.getVoiceStateForChannel(y, e.id) : null, [y, e.id]),
+    v = (null == (t = c.default.getCurrentUser()) ? true : t.id) === e.id,
+    _ = (0, f.A)(),
+    h = (0, l.bG)([b.Ay], () => b.Ay.getPermissionsForUser(e.id, y), [y, e.id]),
+    S = (0, A.Ni)(y),
+    D = (0, O.zU)();
+  if (null == n || null == E || null == j || h.speaker) return null;
   let I = () => {
-    if (m) {
+    if (v) {
       if ((0, O.Cf)(n.id)) return void a.A.showAgeVerificationGetStartedModal({
         entryPoint: o.q1.STAGE_CHANNEL_RAISE_HAND
       });
       (0, d.e7)(n, false)
     } else(0, d.SA)(n, e.id)
   };
-  return m && T ? null : S ? (0, r.jsx)(i.Drp, {
+  return v && D ? null : S ? (0, r.jsx)(i.Drp, {
     id: "invite-speaker",
-    label: m ? E.intl.string(E.t["W6c/Vf"]) : E.intl.string(E.t.VUCWcO),
+    label: v ? p.intl.string(p.t["W6c/Vf"]) : p.intl.string(p.t.VUCWcO),
     action: I
-  }) : j && m ? (0, r.jsx)(i.Drp, {
+  }) : _ && v ? (0, r.jsx)(i.Drp, {
     id: "invite-speaker",
-    label: E.intl.string(E.t["W6c/Vf"]),
+    label: p.intl.string(p.t["W6c/Vf"]),
     action: I
   }) : null
 }

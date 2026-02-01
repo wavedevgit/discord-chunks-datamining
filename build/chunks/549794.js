@@ -64,7 +64,7 @@ let S = new Set([Chunk360469.AM, Chunk360469.eK]),
             s = e.toString();
           if (A.isPlatformEmbedded) {
             let e = (0, a.f)() ? y.MLl.ACTIVITY_POPOUT : null;
-            f.A.focus(e, true)
+            m.A.focus(e, true)
           }
           let _ = p.A.getApplication(null == (i = t.application) ? true : i.id),
             b = (0, u.H)(null == r ? true : r.location);
@@ -83,7 +83,7 @@ let S = new Set([Chunk360469.AM, Chunk360469.eK]),
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, m.h)({
+          return new Promise(e => (0, f.h)({
             href: s,
             shouldConfirm: true,
             onConfirm: () => {

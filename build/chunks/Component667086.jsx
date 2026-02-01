@@ -46,7 +46,7 @@ function N(e) {
     onClick: l,
     selectedOverride: s = false,
     popoutProps: o,
-    ref: f,
+    ref: m,
     focusSectionProps: A
   } = e, [E, O] = i.useState(false), N = (0, _.lI)(), T = s || N, j = s || T, {
     backForwardButtons: x,
@@ -63,7 +63,7 @@ function N(e) {
     badgeType: D
   } = (0, b.ux)({
     isSelected: T
-  }), M = (0, m.isDesktop)() && x, k = (0, g.C)(), U = (0, m.isMac)() ? v[k] : M ? S[k] : C[k];
+  }), M = (0, f.isDesktop)() && x, k = (0, g.C)(), U = (0, f.isMac)() ? v[k] : M ? S[k] : C[k];
   return (0, r.jsxs)(d.BJc, {
     gap: 0,
     direction: "horizontal",
@@ -92,7 +92,7 @@ function N(e) {
         }
         return e
       }({
-        innerRef: f,
+        innerRef: m,
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: w
         })
@@ -141,7 +141,7 @@ function T() {
     notificationCenterVariant: n
   } = (0, A.X8)({
     location: "NotificationsInboxButton"
-  }), l = (0, o.bG)([f.A], () => f.A.getChannelId()), a = i.useMemo(() => O.BVt.CHANNEL(O.gNP, null != l ? l : true), [l]), c = (0, b.HN)();
+  }), l = (0, o.bG)([m.A], () => m.A.getChannelId()), a = i.useMemo(() => O.BVt.CHANNEL(O.gNP, null != l ? l : true), [l]), c = (0, b.HN)();
   return n === A.U5.SIDEBAR ? (0, r.jsx)(N, {
     onClick: () => {
       c(), (0, s.pX)(a)

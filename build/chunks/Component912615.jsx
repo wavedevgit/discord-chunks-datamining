@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 912615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -30,8 +30,8 @@ function f(e) {
     authorizedApplicationId: _.A.testModeApplicationId,
     authorizationError: _.A.error,
     authorizing: _.A.isFetchingAuthorization
-  })), [E, O] = i.useState(null != f ? f : ""), [C, x] = i.useState("8080"), [S, T] = i.useState("localhost"), I = A.test(E);
-  async function y() {
+  })), [E, O] = i.useState(null != f ? f : ""), [x, C] = i.useState("8080"), [S, T] = i.useState("localhost"), I = A.test(E);
+  async function N() {
     c.SH();
     let e = function(e, t, n) {
       if (null == e) return null;
@@ -41,21 +41,21 @@ function f(e) {
         case "proxy":
           return (0, d.Ay)(n)
       }
-    }(S, C, E);
+    }(S, x, E);
     null != await c.q1(E, e) && t()
   }
   i.useEffect(() => () => o.h.wait(() => c.SH()), []);
-  let N = null != f && f === E,
-    j = N ? function() {
+  let y = null != f && f === E,
+    j = y ? function() {
       c.cL(), O(""), T(null)
-    } : y,
+    } : N,
     v = i.useMemo(() => [{
       loading: h,
-      disabled: !I || 0 === E.length || "localhost" === S && 0 === C.length,
-      variant: N ? "critical-primary" : "active",
-      text: N ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
+      disabled: !I || 0 === E.length || "localhost" === S && 0 === x.length,
+      variant: y ? "critical-primary" : "active",
+      text: y ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
       onClick: j
-    }], [E.length, h, N, I, C.length, j, S]);
+    }], [E.length, h, y, I, x.length, j, S]);
   return (0, r.jsxs)(l.Modal, {
     title: p.intl.string(p.t.f8fzky),
     subtitle: p.intl.string(p.t.a6Vill),
@@ -110,9 +110,9 @@ function f(e) {
         children: (0, r.jsx)(a.ksK, {
           required: true,
           label: p.intl.string(p.t.fF4zxq),
-          value: C,
+          value: x,
           maxLength: 5,
-          onChange: e => x(e),
+          onChange: e => C(e),
           disabled: h
         })
       })]

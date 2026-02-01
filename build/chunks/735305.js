@@ -104,10 +104,10 @@ function b(e) {
   }, U = null != _ ? _ : k;
   i()(b, "Step should be set here");
   let G = (0, a.A)(() => Date.now(), [b]),
-    F = (0, a.A)(() => null != h && null == R.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, R.current, D]);
+    V = (0, a.A)(() => null != h && null == R.current ? D ? d.pn.PAYMENT_ELEMENT : h : D ? d.pn.PAYMENT_ELEMENT : d.pn.PAYMENT_TYPE, [h, R.current, D]);
   return (0, o.Y)({
     paymentModalArgs: j,
-    initialStep: F,
+    initialStep: V,
     prependSteps: [d.pn.PROMOTION_INFO],
     appendSteps: [d.pn.REVIEW, d.pn.CONFIRM],
     breadcrumpSteps: r,

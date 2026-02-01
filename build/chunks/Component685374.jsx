@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 685374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => O
 }), require("./896048.js"), require("./228524.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,158 +22,158 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk695244 = require("./695244.js");
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function j(e, t) {
+function E(e, t) {
   if (null == e) return {};
-  var n, r, l, i = {};
+  var n, l, r, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
-    for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
     return i
   }
   if (i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
+      var n, l, r = {},
         i = Object.getOwnPropertyNames(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-      return l
+      for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+      return r
     }(e, t), Object.getOwnPropertySymbols)
-    for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+    for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
   return i
 }
 
-function x(e) {
+function O(e) {
   let {
     channelId: t
-  } = e, n = j(e, ["channelId"]), i = (0, s.bG)([d.A], () => d.A.getChannel(t), [t]), a = (0, s.bG)([h.A], () => h.A.getGuild(null == i ? true : i.getGuildId()));
-  return (l.useEffect(() => {
-    p.default.track(A.HAw.OPEN_MODAL, {
+  } = e, n = E(e, ["channelId"]), i = (0, a.bG)([d.A], () => d.A.getChannel(t), [t]), s = (0, a.bG)([h.A], () => h.A.getGuild(null == i ? true : i.getGuildId()));
+  return (r.useEffect(() => {
+    p.default.track(b.HAw.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == i || null == a) ? null : (0, r.jsx)(v, _({
-    guild: a,
+  }, []), null == i || null == s) ? null : (0, l.jsx)(C, v({
+    guild: s,
     channel: i
   }, n))
 }
 
-function v(e) {
+function C(e) {
   var t, n;
   let {
-    guild: s,
+    guild: a,
     channel: d,
     onClose: h,
     newChannel: p,
-    inSettings: A
-  } = e, x = j(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [v, E] = l.useState(""), [C, S] = l.useState({}), [I, N] = l.useState(false), [T, P] = l.useState(null), w = l.useRef(null), {
+    inSettings: b
+  } = e, O = E(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [C, x] = r.useState(""), [S, j] = r.useState({}), [I, T] = r.useState(false), [N, P] = r.useState(null), w = r.useRef(null), {
     roles: R,
     members: D,
-    getRichTag: L
-  } = (0, m.K)(s, d, d.accessPermissions, v), M = f.A.useSections({
+    getRichTag: M
+  } = (0, g.K)(a, d, d.accessPermissions, C), L = m.A.useSections({
     roles: R,
     members: D
-  }), G = p && 0 === Object.keys(C).length;
-  async function k() {
-    if (null == d || 0 === Object.keys(C).length) return void h();
-    N(true);
+  }), k = p && 0 === Object.keys(S).length;
+  async function U() {
+    if (null == d || 0 === Object.keys(S).length) return void h();
+    T(true);
     try {
       var e, t, n;
-      let r;
-      await (e = d, t = C, n = A, r = [], Object.values(t).forEach(t => {
+      let l;
+      await (e = d, t = S, n = b, l = [], Object.values(t).forEach(t => {
         let {
           row: n
         } = t;
-        null != n.id && "" !== n.id && (n.rowType === b.T6.ROLE ? r.push((0, g.we)(n.id, e.type)) : n.rowType === b.T6.MEMBER && r.push((0, g.n3)(n.id, e.type)))
-      }), (0, o.R$)(e.id, r, n)), h(), N(false)
+        null != n.id && "" !== n.id && (n.rowType === A.T6.ROLE ? l.push((0, f.we)(n.id, e.type)) : n.rowType === A.T6.MEMBER && l.push((0, f.n3)(n.id, e.type)))
+      }), (0, o.R$)(e.id, l, n)), h(), T(false)
     } catch (t) {
       let e = new c.LG(t);
-      N(false), P(e)
+      T(false), P(e)
     }
   }
-  let U = (0, u.ke)(d.type) ? a.I$d : a.trU;
-  return (0, r.jsx)(f.A.Provider, {
+  let G = (0, u.ke)(d.type) ? s.I$d : s.trU;
+  return (0, l.jsx)(m.A.Provider, {
     listRef: w,
-    query: v,
-    setQuery: E,
-    pendingAdditions: C,
-    setPendingAdditions: S,
+    query: C,
+    setQuery: x,
+    pendingAdditions: S,
+    setPendingAdditions: j,
     roles: R,
     members: D,
-    getRichTag: L,
-    children: (0, r.jsx)(i.Modal, (t = _({}, x), n = n = {
-      title: y.intl.string(y.t.dMJ3Y6),
+    getRichTag: M,
+    children: (0, l.jsx)(i.Modal, (t = v({}, O), n = n = {
+      title: _.intl.string(_.t.dMJ3Y6),
       onClose: h,
-      input: (0, r.jsxs)("div", {
-        children: [(0, r.jsxs)(a.Text, {
-          className: O.HA,
+      input: (0, l.jsxs)("div", {
+        children: [(0, l.jsxs)(s.Text, {
+          className: y.HA,
           variant: "text-lg/normal",
           color: "text-default",
-          children: [(0, r.jsx)(U, {
-            className: O.p,
+          children: [(0, l.jsx)(G, {
+            className: y.p,
             size: "sm",
             color: "currentColor"
           }), d.name]
-        }), d.isGuildStageVoice() && (0, r.jsx)(a.Text, {
+        }), d.isGuildStageVoice() && (0, l.jsx)(s.Text, {
           color: "text-default",
-          className: O.h_,
+          className: y.h_,
           variant: "text-sm/normal",
-          children: y.intl.string(y.t.f7VbhF)
-        }), (0, r.jsx)(f.A.SearchBox, {
-          placeholderText: y.intl.string(y.t.iezLLn)
-        }), (0, r.jsx)(a.Text, {
-          className: O.W$,
+          children: _.intl.string(_.t.f7VbhF)
+        }), (0, l.jsx)(m.A.SearchBox, {
+          placeholderText: _.intl.string(_.t.iezLLn)
+        }), (0, l.jsx)(s.Text, {
+          className: y.W$,
           variant: "text-xs/normal",
-          children: y.intl.string(y.t.rwFx85)
-        }), null != T ? (0, r.jsx)(a.Text, {
-          className: O.W$,
+          children: _.intl.string(_.t.rwFx85)
+        }), null != N ? (0, l.jsx)(s.Text, {
+          className: y.W$,
           variant: "text-xs/normal",
           color: "text-feedback-critical",
-          children: T.getAnyErrorMessage()
+          children: N.getAnyErrorMessage()
         }) : null]
       }),
       listProps: {
         ref: w,
-        sectionHeight: f.A.SECTION_HEIGHT,
-        renderSection: f.A.renderSection,
-        rowHeight: f.A.ROW_HEIGHT,
-        renderRow: f.A.renderRow,
-        sections: M
+        sectionHeight: m.A.SECTION_HEIGHT,
+        renderSection: m.A.renderSection,
+        rowHeight: m.A.ROW_HEIGHT,
+        renderRow: m.A.renderRow,
+        sections: L
       },
-      actions: G ? [{
+      actions: k ? [{
         variant: "secondary",
-        text: y.intl.string(y.t.u46sxe),
+        text: _.intl.string(_.t.u46sxe),
         onClick: h
       }] : [{
         variant: "secondary",
-        text: y.intl.string(y.t["ETE/oC"]),
+        text: _.intl.string(_.t["ETE/oC"]),
         onClick: h
       }, {
         variant: "primary",
-        text: y.intl.string(y.t.i4jeWR),
-        onClick: k,
+        text: _.intl.string(_.t.i4jeWR),
+        onClick: U,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var l = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, l)
       }
       return n
     })(Object(n)).forEach(function(e) {

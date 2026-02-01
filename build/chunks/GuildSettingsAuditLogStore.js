@@ -1,4 +1,4 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 523599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -15,25 +15,25 @@ var l, r, Chunk735438 = require("./735438.js"),
   Chunk317525 = require("./317525.js"),
   Chunk71393 = require("./71393.js"),
   Chunk652215 = require("./652215.js");
-let h = Chunk136722.kg(Chunk652215.xBc.KICK_MEMBERS, Chunk652215.xBc.BAN_MEMBERS, Chunk652215.xBc.ADMINISTRATOR, Chunk652215.xBc.MANAGE_CHANNELS, Chunk652215.xBc.MANAGE_GUILD, Chunk652215.xBc.MANAGE_MESSAGES, Chunk652215.xBc.MANAGE_NICKNAMES, Chunk652215.xBc.MANAGE_ROLES, Chunk652215.xBc.MANAGE_WEBHOOKS, Chunk652215.xBc.MANAGE_GUILD_EXPRESSIONS, Chunk652215.xBc.MOVE_MEMBERS, Chunk652215.xBc.MUTE_MEMBERS, Chunk652215.xBc.DEAFEN_MEMBERS),
-  I = null,
-  O = [],
-  m = [],
+let I = Chunk136722.kg(Chunk652215.xBc.KICK_MEMBERS, Chunk652215.xBc.BAN_MEMBERS, Chunk652215.xBc.ADMINISTRATOR, Chunk652215.xBc.MANAGE_CHANNELS, Chunk652215.xBc.MANAGE_GUILD, Chunk652215.xBc.MANAGE_MESSAGES, Chunk652215.xBc.MANAGE_NICKNAMES, Chunk652215.xBc.MANAGE_ROLES, Chunk652215.xBc.MANAGE_WEBHOOKS, Chunk652215.xBc.MANAGE_GUILD_EXPRESSIONS, Chunk652215.xBc.MOVE_MEMBERS, Chunk652215.xBc.MUTE_MEMBERS, Chunk652215.xBc.DEAFEN_MEMBERS),
+  O = null,
+  h = [],
   N = [],
+  m = [],
   f = [],
-  p = [],
   S = [],
+  p = [],
   G = [],
   R = [],
   D = true,
   C = false,
   L = false,
-  b = true,
-  x = false,
+  x = true,
+  b = false,
   M = null,
   v = Chunk652215.F_X.ALL,
-  j = null,
-  U = {},
+  U = null,
+  j = {},
   y = 0;
 
 function k(e) {
@@ -44,11 +44,11 @@ function k(e) {
     let s = [],
       o = null,
       u = null,
-      d = null;
+      _ = null;
     if (null != e.reason && s.push(new c.QO(T.gGk.REASON, null, e.reason)), null != e.changes)
       for (let t of e.changes) {
         let e = new c.QO(t.key, t.old_value, t.new_value);
-        s.push(e), e.key === T.gGk.NAME ? o = e : e.key === T.gGk.TYPE ? d = e : e.key === T.gGk.TITLE && (u = e)
+        s.push(e), e.key === T.gGk.NAME ? o = e : e.key === T.gGk.TYPE ? _ = e : e.key === T.gGk.TITLE && (u = e)
       }
     if (e.action_type === T.F_X.MEMBER_PRUNE) {
       let t = null != e && null != e.options && null != e.options.delete_member_days ? e.options.delete_member_days : 1,
@@ -56,7 +56,7 @@ function k(e) {
       s.push(n)
     }
     e.action_type === T.F_X.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = e.options) ? true : r.auto_moderation_rule_name) != null && s.push(new c.QO(T.gGk.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, e.options.auto_moderation_rule_name)), e.action_type === T.F_X.VOICE_CHANNEL_STATUS_CREATE && (null == (l = e.options) ? true : l.status) != null && s.push(new c.QO(T.gGk.STATUS, null, e.options.status));
-    let _ = new c.Ay({
+    let d = new c.Ay({
         id: e.id,
         action: e.action_type,
         targetId: e.target_id,
@@ -69,20 +69,20 @@ function k(e) {
         let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 30,
           r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 50;
         return null != e && e.action === t.action && e.targetId === t.targetId && e.userId === t.userId && i().isEqual(e.options, t.options) && t.timestampStart.diff(e.timestampStart, "minutes") < l && n < r && t.targetType !== T.GaG.INVITE && t.action !== T.F_X.MESSAGE_DELETE && t.action !== T.F_X.MESSAGE_BULK_DELETE && t.action !== T.F_X.MESSAGE_PIN && t.action !== T.F_X.MESSAGE_UNPIN && t.action !== T.F_X.MEMBER_MOVE && t.action !== T.F_X.MEMBER_DISCONNECT && t.action !== T.F_X.BOT_ADD && t.action !== T.F_X.APPLICATION_COMMAND_PERMISSION_UPDATE && t.action !== T.F_X.MEMBER_PRUNE
-      }(g, _, n)) {
+      }(g, d, n)) {
       t[0] = g.merge({
-        changes: [...g.changes, ..._.changes],
-        timestampEnd: _.timestampStart
+        changes: [...g.changes, ...d.changes],
+        timestampEnd: d.timestampStart
       }), n++;
       return
     }
-    if (_.actionType === T.RWi.DELETE && (null != o || null != u)) {
+    if (d.actionType === T.RWi.DELETE && (null != o || null != u)) {
       let e = null != (a = null == o ? true : o.oldValue) ? a : null == u ? true : u.oldValue;
-      (_.targetType === T.GaG.CHANNEL || _.targetType === T.GaG.CHANNEL_OVERWRITE) && null !== d && (0, E.tr)(d.oldValue) && (e = "#".concat(e)), null == U[_.targetType] ? U[_.targetType] = {
-        [_.targetId]: e
-      } : U[_.targetType][_.targetId] = e
+      (d.targetType === T.GaG.CHANNEL || d.targetType === T.GaG.CHANNEL_OVERWRITE) && null !== _ && (0, E.tr)(_.oldValue) && (e = "#".concat(e)), null == j[d.targetType] ? j[d.targetType] = {
+        [d.targetId]: e
+      } : j[d.targetType][d.targetId] = e
     }
-    n = 0, t.unshift(_)
+    n = 0, t.unshift(d)
   }), t
 }
 
@@ -91,35 +91,35 @@ function P(e) {
     section: t
   } = e;
   if (t !== T.BEX.AUDIT_LOG) returnfalse;
-  let n = _.Ay.getMembers(I),
-    l = A.A.getGuild(I),
-    r = null != I ? g.A.getUnsafeMutableRoles(I) : true;
-  N = i()(n).filter(e => e.roles.some(t => {
+  let n = d.Ay.getMembers(O),
+    l = A.A.getGuild(O),
+    r = null != O ? g.A.getUnsafeMutableRoles(O) : true;
+  m = i()(n).filter(e => e.roles.some(t => {
     if (null != l) {
       if (e.userId === l.ownerId) returntrue;
       let n = null == r ? true : r[t];
-      return null != n && (0, d.sx)(n, h)
+      return null != n && (0, _.sx)(n, I)
     }
   })).map(e => e.userId).value()
 }
 class F extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(A.A, g.A, _.Ay)
+    this.waitFor(A.A, g.A, d.Ay)
   }
   get logs() {
-    return O
+    return h
   }
   get integrations() {
-    return m
+    return N
   }
   get webhooks() {
     return f
   }
   get guildScheduledEvents() {
-    return p
+    return S
   }
   get automodRules() {
-    return S
+    return p
   }
   get threads() {
     return G
@@ -137,25 +137,25 @@ class F extends(l = Chunk311907.Ay.Store) {
     return L
   }
   get hasOlderLogs() {
-    return b
-  }
-  get hasError() {
     return x
   }
+  get hasError() {
+    return b
+  }
   get userIds() {
-    return N
+    return m
   }
   get userIdFilter() {
     return M
   }
   get targetIdFilter() {
-    return j
+    return U
   }
   get actionFilter() {
     return v
   }
   get deletedTargets() {
-    return U
+    return j
   }
   get groupedFetchCount() {
     return y
@@ -172,10 +172,10 @@ let w = new F(Chunk73153.h, {
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, D = false, C = false, b = true, x = false, O = k(e.logs), m = e.integrations, f = e.webhooks, p = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], G = e.threads, R = e.applicationCommands, e.logs.length < T.$jw && (b = false)
+    y = 0, D = false, C = false, x = true, b = false, h = k(e.logs), N = e.integrations, f = e.webhooks, S = e.guildScheduledEvents, p = null != (t = e.automodRules) ? t : [], G = e.threads, R = e.applicationCommands, e.logs.length < T.$jw && (x = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    C = false, x = true, O = []
+    C = false, b = true, h = []
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
     let {
@@ -193,9 +193,9 @@ let w = new F(Chunk73153.h, {
       threads: i,
       applicationCommands: s
     } = e;
-    if (L = false, m = n, f = l, p = r, S = a, G = i, R = s, (0 === t.length || t.length < T.$jw) && (b = false), t.length > 0) {
+    if (L = false, N = n, f = l, S = r, p = a, G = i, R = s, (0 === t.length || t.length < T.$jw) && (x = false), t.length > 0) {
       let e = k(t);
-      O = [...O, ...e]
+      h = [...h, ...e]
     }
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_FAIL: function() {
@@ -217,7 +217,7 @@ let w = new F(Chunk73153.h, {
     let {
       targetId: t
     } = e;
-    j = t
+    U = t
   },
   GUILD_SETTINGS_SET_SECTION: P,
   GUILD_SETTINGS_INIT: function(e) {
@@ -225,11 +225,11 @@ let w = new F(Chunk73153.h, {
       guildId: t,
       section: n
     } = e;
-    return I = t, j = null, P({
+    return O = t, U = null, P({
       section: n
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    O = [], N = [], v = T.F_X.ALL, M = null, j = null, U = {}, y = 0, D = true, m = [], f = [], p = [], S = [], G = []
+    h = [], m = [], v = T.F_X.ALL, M = null, U = null, j = {}, y = 0, D = true, N = [], f = [], S = [], p = [], G = []
   }
 })

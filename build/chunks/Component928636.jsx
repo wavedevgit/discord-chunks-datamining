@@ -144,7 +144,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
       hasButton: i
     }
   },
-  ef = e => {
+  em = e => {
     let {
       activity: t,
       user: n
@@ -181,7 +181,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
     }
     return null
   },
-  em = e => {
+  ef = e => {
     let {
       activity: t,
       analyticsLocations: n
@@ -226,13 +226,13 @@ let e_ = e => {
   } = e;
   switch (n) {
     case "XBOX":
-      t = (0, i.jsx)(J.A, {
+      t = (0, i.jsx)($.A, {
         className: ea.nr,
         color: d.A.unsafe_rawColors.PRIMARY_300.css
       });
       break;
     case "SPOTIFY":
-      t = (0, i.jsx)($.A, {
+      t = (0, i.jsx)(J.A, {
         className: ea.nr,
         color: d.A.unsafe_rawColors.SPOTIFY.css
       });
@@ -383,7 +383,7 @@ eE.Header = eb, eE.Body = e => {
     partySize: a,
     members: o,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, P.Ay)(r, true), p = (0, z.Iv)(n, 32), f = (0, z.Rb)(n);
+  } = e, u = l.useRef(null), d = (0, P.Ay)(r, true), p = (0, z.Iv)(n, 32), m = (0, z.Rb)(n);
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.iO,
@@ -404,9 +404,9 @@ eE.Header = eb, eE.Body = e => {
             children: (0, i.jsx)("div", {
               className: ea.lB,
               style: {
-                fontSize: null != (t = es[f.length]) ? t : es[es.length - 1]
+                fontSize: null != (t = es[m.length]) ? t : es[es.length - 1]
               },
-              children: f
+              children: m
             })
           }), (0, i.jsx)("div", {
             className: ea._s,
@@ -460,7 +460,7 @@ eE.Header = eb, eE.Body = e => {
         partySize: r,
         members: l
       })]
-    }), (0, i.jsx)(em, {
+    }), (0, i.jsx)(ef, {
       activity: a,
       analyticsLocations: s
     })]
@@ -477,8 +477,8 @@ eE.Header = eb, eE.Body = e => {
     data: h
   } = (0, j.YY)(c.application_id), {
     assets: g,
-    details: f,
-    state: m,
+    details: m,
+    state: f,
     application_id: A
   } = c, {
     hasButton: _
@@ -516,7 +516,7 @@ eE.Header = eb, eE.Body = e => {
         })
       }), (0, i.jsxs)("div", {
         className: ea.JD,
-        children: [eo(null != f && "" !== f ? f : c.name), null != m ? ec(m) : null, (() => {
+        children: [eo(null != m && "" !== m ? m : c.name), null != f ? ec(f) : null, (() => {
           let {
             timestamps: e
           } = c;
@@ -529,11 +529,11 @@ eE.Header = eb, eE.Body = e => {
             className: ea.__invalid_playTime
           }))
         })()]
-      }), (0, i.jsx)(ef, {
+      }), (0, i.jsx)(em, {
         activity: c,
         user: d
       })]
-    }), (0, i.jsx)(em, {
+    }), (0, i.jsx)(ef, {
       activity: c,
       analyticsLocations: p
     })]
@@ -545,7 +545,7 @@ eE.Header = eb, eE.Body = e => {
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.oc,
-      children: [(0, i.jsx)(J.A, {
+      children: [(0, i.jsx)($.A, {
         className: ea.Ai
       }), (0, i.jsxs)("div", {
         className: ea.__invalid_xboxSectionDetails,
@@ -578,7 +578,7 @@ eE.Header = eb, eE.Body = e => {
           className: s()(ea.nX, ea.Dy, {
             [ea.p8]: null != n.small_image
           })
-        }), u ? null : (0, i.jsx)($.A, {
+        }), u ? null : (0, i.jsx)(J.A, {
           className: ea.rp,
           color: d.A.unsafe_rawColors.SPOTIFY.css
         })]
@@ -665,11 +665,11 @@ eE.Header = eb, eE.Body = e => {
       color: "always-white",
       children: (0, V.CT)(p)
     })]
-  }), f = null != (t = null == (n = (0, v.A)(r, a)) ? true : n.activityText) ? t : el.intl.string(el.t.eXan7B), m = (0, k.A)({
+  }), m = null != (t = null == (n = (0, v.A)(r, a)) ? true : n.activityText) ? t : el.intl.string(el.t.eXan7B), f = (0, k.A)({
     userId: l.id,
     guildId: o
   }), A = (0, U.a)({
-    displayNameStyles: m
+    displayNameStyles: f
   });
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
@@ -680,7 +680,7 @@ eE.Header = eb, eE.Body = e => {
         "aria-label": l.username,
         className: ea.OL
       }), (0, i.jsxs)("div", {
-        children: [eo(en.Ay.getName(l), A), ec(f)]
+        children: [eo(en.Ay.getName(l), A), ec(m)]
       }), (0, i.jsx)(w.Ay, {
         size: w.Ay.Sizes.SMALL
       })]
@@ -700,29 +700,29 @@ eE.Header = eb, eE.Body = e => {
     })
   }, [u]);
   let d = (0, c.yK)([Z.default, Q.default], () => Array.from(a).map(e => Q.default.getId() === e ? null : Z.default.getUser(e)).filter(et.Vq)),
-    p = (0, m.p)(),
+    p = (0, f.p)(),
     {
       analyticsLocations: g
     } = (0, N.Ay)();
   if (null == u) return null;
-  let f = x.A.getApplication(u);
-  if (null == f) return null;
+  let m = x.A.getApplication(u);
+  if (null == m) return null;
   let A = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    b = (0, ee.uD)(f.id, s, 300);
+    b = (0, ee.uD)(m.id, s, 300);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.h1,
       children: [(0, i.jsx)(G.A, {
-        game: f,
+        game: m,
         size: G.M.XSMALL,
         className: ea.VZ
       }), (0, i.jsx)("div", {
         className: ea.F0,
         children: (0, i.jsx)(h.Text, {
           variant: "text-sm/semibold",
-          children: f.name
+          children: m.name
         })
       }), null != A ? (0, i.jsx)("div", {
         className: ea.T$,
@@ -738,7 +738,7 @@ eE.Header = eb, eE.Body = e => {
       className: ea.Kt,
       children: [null != b ? (0, i.jsx)("img", {
         src: b,
-        alt: f.name,
+        alt: m.name,
         className: ea.pV
       }) : null, (0, i.jsxs)("div", {
         className: ea.d4,

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 179242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -29,11 +29,11 @@ function y(e) {
     analyticsLocations: y
   } = (0, i.Ay)(), {
     context: O
-  } = (0, o.NJ)(), _ = (0, l.A)(), {
-    mutualFriendsCount: j,
-    mutualFriends: x,
+  } = (0, o.NJ)(), j = (0, l.A)(), {
+    mutualFriendsCount: x,
+    mutualFriends: _,
     mutualGuilds: v
-  } = (0, c.A)(t), E = !t.bot && null != j && j > 0, C = null != v && v.length > 0;
+  } = (0, c.A)(t), E = !t.bot && null != x && x > 0, C = null != v && v.length > 0;
   return E || C ? (0, r.jsxs)(f.A.Overlay, {
     className: A.Lw,
     children: [C && (0, r.jsx)(m.A, {
@@ -52,15 +52,15 @@ function y(e) {
           onSelect: () => (0, a.u)(n.id)
         }, n.id)
       })
-    }), C && E && (0, r.jsx)(h.A, {
+    }), C && E && (0, r.jsx)(p.A, {
       className: A.yF
     }), E && (0, r.jsx)(m.A, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: A.p_,
-      onExpand: () => (0, u.A)(t.id, _),
-      items: null == x ? Array.from({
-        length: j
+      onExpand: () => (0, u.A)(t.id, j),
+      items: null == _ ? Array.from({
+        length: x
       }).map((e, t) => (0, r.jsxs)("div", {
         className: A.nC,
         children: [(0, r.jsx)(s.FQ, {
@@ -70,13 +70,13 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : x.map(e => {
+      }, t)) : _.map(e => {
         let {
           key: t,
           user: l,
           status: i
         } = e;
-        return (0, r.jsx)(p.A, {
+        return (0, r.jsx)(h.A, {
           user: l,
           status: i,
           channelId: n,

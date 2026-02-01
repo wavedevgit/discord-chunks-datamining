@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 312579, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 312579, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   i: () => d
 });
@@ -14,9 +14,9 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_SHOW_KEYBIND_INDICATORS_SETTIN
   usePredicate: () => (0, s.A)({
     location: "overlay_user_settings"
   }),
-  useValue: () => (0, n.bG)([a.default], () => a.default.showKeybindIndicators),
-  setValue: e => {
-    l.A.setShowKeybindIndicators(e)
+  useValue: () => (0, n.bG)([u.default], () => u.default.showKeybindIndicators),
+  setValue: t => {
+    l.A.setShowKeybindIndicators(t)
   },
   useTitle: () => o.intl.string(o.t.XZTl9r)
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 220628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -36,13 +36,13 @@ function f(e, t) {
         } = r;
       if (null != m && null != t) return b < t.cost ? void(0, a.g)({
         analyticsLocation: {
-          page: p.liQ.GUILD_POWERUPS_OVERVIEW,
-          section: p.JJy.GUILD_POWERUPS_OVERVIEW_CARD
+          page: h.liQ.GUILD_POWERUPS_OVERVIEW,
+          section: h.JJy.GUILD_POWERUPS_OVERVIEW_CARD
         },
         numberOfBoostsToAdd: t.cost - b,
         analyticsLocations: n,
         guild: m,
-        intent: t.type === h.o9.LEVEL ? h.Pn.LEVEL : h.Pn.PERK,
+        intent: t.type === p.o9.LEVEL ? p.Pn.LEVEL : p.Pn.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = i(true)) ? true : e.then(() => {

@@ -1,7 +1,7 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 62218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk332191 = require("./332191.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +19,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends Chunk64700.PureComponent {
+class d extends Chunk64700.PureComponent {
   async componentDidMount() {
     this.setState({
       openOnStartup: await a.Ay.getOpenOnStart(),
@@ -32,46 +32,46 @@ class u extends Chunk64700.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, l = (0, r.isLinux)() ? c.intl.string(c.t["7pPjTW"]) : c.intl.string(c.t.ZkDZov);
-    return (0, i.jsxs)(s.BJc, {
+    } = this.state, l = (0, s.isLinux)() ? c.intl.string(c.t["7pPjTW"]) : c.intl.string(c.t.ZkDZov);
+    return (0, r.jsxs)(i.BJc, {
       gap: 16,
-      children: [(0, i.jsx)(s.Heading, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: l
-      }), (0, i.jsxs)(s.nVY, {
-        children: [(0, i.jsx)(s.dOG, {
+      }), (0, r.jsxs)(i.nVY, {
+        children: [(0, r.jsx)(i.dOG, {
           label: c.intl.string(c.t.WQm4p1),
           description: c.intl.string(c.t["s/cQrU"]),
           checked: e,
           onChange: this.handleToggleOpenOnStartup
-        }), (0, r.isWindows)() ? (0, i.jsx)(s.dOG, {
+        }), (0, s.isWindows)() ? (0, r.jsx)(i.dOG, {
           label: c.intl.string(c.t.n7Yjes),
           description: c.intl.string(c.t.o2FSjB),
           checked: !!e && t,
           disabled: !e,
           onChange: this.handleToggleStartMinimized
-        }) : null, (0, i.jsx)(s.dOG, {
+        }) : null, (0, r.jsx)(i.dOG, {
           label: c.intl.string(c.t.abLFes),
           description: c.intl.string(c.t["mVuX+j"]),
           checked: n,
           onChange: this.handleToggleMinimizeToTray
-        }), (0, i.jsx)(o.J, {})]
+        }), (0, r.jsx)(o.J, {})]
       })]
     })
   }
   constructor(e) {
-    super(e), d(this, "handleToggleOpenOnStartup", () => {
+    super(e), u(this, "handleToggleOpenOnStartup", () => {
       let e = !this.state.openOnStartup;
       this.setState({
         openOnStartup: e
       }), a.Ay.send("TOGGLE_OPEN_ON_STARTUP", e)
-    }), d(this, "handleToggleStartMinimized", () => {
+    }), u(this, "handleToggleStartMinimized", () => {
       let e = !this.state.startMinimized;
       this.setState({
         startMinimized: e
       }), a.Ay.send("TOGGLE_START_MINIMIZED", e)
-    }), d(this, "handleToggleMinimizeToTray", () => {
+    }), u(this, "handleToggleMinimizeToTray", () => {
       let e = !this.state.minimizeToTray;
       this.setState({
         minimizeToTray: e
@@ -83,4 +83,4 @@ class u extends Chunk64700.PureComponent {
     }
   }
 }
-let h = u
+let p = d

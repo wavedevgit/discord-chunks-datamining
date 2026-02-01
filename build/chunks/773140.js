@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 773140, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 773140, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  q: () => E
+  q: () => g
 });
 var Chunk934551 = require("./934551.js"),
   Chunk419954 = require("./419954.js"),
@@ -15,13 +15,13 @@ var Chunk934551 = require("./934551.js"),
   Chunk315943 = require("./315943.js"),
   Chunk475061 = require("./475061.jsx"),
   Chunk985018 = require("./985018.jsx");
-let _ = (0, Chunk419954.t_)(Chunk780964.X.VOICE_AND_VIDEO_PANEL, {
-    useTitle: () => S.intl.string(S.t.B1fFpf),
-    buildLayout: () => [A.p, o.Q, a.i, c.H, T.t, d.U, u.r]
+let E = (0, Chunk419954.t_)(Chunk780964.X.VOICE_AND_VIDEO_PANEL, {
+    useTitle: () => c.intl.string(c.t.B1fFpf),
+    buildLayout: () => [S.p, o.Q, u.i, A.H, T.t, d.U, a.r]
   }),
-  E = (0, Chunk419954.i4)(Chunk780964.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
-    useTitle: () => S.intl.string(S.t.B1fFpf),
+  g = (0, Chunk419954.i4)(Chunk780964.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
+    useTitle: () => c.intl.string(c.t.B1fFpf),
     usePredicate: () => s.A.isSupported(),
     icon: Chunk934551.MicrophoneIcon,
-    buildLayout: () => [_]
+    buildLayout: () => [E]
   })

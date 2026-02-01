@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 968975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -27,13 +27,13 @@ function y(e) {
     profileOwner: n,
     onClick: y,
     wishlistId: O,
-    cardSize: _,
-    title: j
+    cardSize: j,
+    title: x
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: _
   } = (0, s.Ay)(), {
     trackUserProfileWishlistAction: v
-  } = (0, p.NJ)(), E = (0, c.G)("user_profile_sidebar_wishlist_breadcrumb"), C = (0, l.useCallback)(e => {
+  } = (0, h.NJ)(), E = (0, c.G)("user_profile_sidebar_wishlist_breadcrumb"), C = (0, l.useCallback)(e => {
     let {
       wishlistId: t,
       action: n,
@@ -74,20 +74,20 @@ function y(e) {
         index: r,
         moreCount: s ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: x,
+        analyticsLocations: _,
         onViewWishlist: y,
         wishlistId: O,
         showTypeTooltip: I,
-        cardSize: _
+        cardSize: j
       }))) : (0, d.$)(i) && (l.add(i.skuProductLine), e.push((0, o.Z)(i, {
         index: r,
         moreCount: s ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: x,
+        analyticsLocations: _,
         onViewWishlist: y,
         wishlistId: O,
         showTypeTooltip: I,
-        cardSize: _
+        cardSize: j
       })))
     }
     return 1 === S.length && (r = S[0]), {
@@ -95,30 +95,30 @@ function y(e) {
       singleItem: r,
       productLines: l
     }
-  }, [t, n, x, y, O, _, S, I]), w = (0, g.A)({
+  }, [t, n, _, y, O, j, S, I]), w = (0, g.A)({
     wishlistId: null != O ? O : null,
     onAction: C,
     productLines: P
-  }), R = (0, l.useMemo)(() => E ? S.map((e, l) => null == e.sku ? null : (0, r.jsx)(h.Ay, {
+  }), R = (0, l.useMemo)(() => E ? S.map((e, l) => null == e.sku ? null : (0, r.jsx)(p.Ay, {
     sku: e.sku,
     index: l,
     totalUnownedWishlistItems: t.length,
     wishlistOwner: n,
     wishlistId: O,
-    analyticsLocations: x,
+    analyticsLocations: _,
     onViewWishlist: y,
     showTypeTooltip: I
-  }, e.skuId)) : null, [x, E, y, n, I, t.length, S, O]);
+  }, e.skuId)) : null, [_, E, y, n, I, t.length, S, O]);
   if (0 === N.length) return null;
   let D = N;
   return null != T && ((0, u.L)(T) ? D = (0, m.z)(T, {
     profileOwner: n,
-    analyticsLocations: x,
+    analyticsLocations: _,
     wishlistId: O,
     onViewWishlist: y
   }) : (0, d.$)(T) && (D = (0, o.A)(T, {
     profileOwner: n,
-    analyticsLocations: x,
+    analyticsLocations: _,
     wishlistId: O,
     onViewWishlist: y
   }))), (0, r.jsxs)(f.A.Overlay, {
@@ -128,7 +128,7 @@ function y(e) {
       className: A.wx,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
-        children: null != j ? j : b.intl.string(b.t["7lZ31J"])
+        children: null != x ? x : b.intl.string(b.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
       className: A.vY,

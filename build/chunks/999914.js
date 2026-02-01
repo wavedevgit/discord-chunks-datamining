@@ -62,8 +62,8 @@ function h(e) {
     }, [L, D]),
     [k, U] = (0, d.useState)(() => (0, r.o_)(e.placeholderValue, N, D, w)),
     G = j || k,
-    F = "gregory" === D.identifier && "BC" === G.era,
-    V = (0, d.useMemo)(() => {
+    V = "gregory" === D.identifier && "BC" === G.era,
+    F = (0, d.useMemo)(() => {
       var t;
       return {
         granularity: N,
@@ -71,11 +71,11 @@ function h(e) {
         timeZone: w,
         hideTimeZone: b,
         hourCycle: e.hourCycle,
-        showEra: F,
+        showEra: V,
         shouldForceLeadingZeros: e.shouldForceLeadingZeros
       }
-    }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, w, b, F]),
-    B = (0, d.useMemo)(() => (0, r.id)({}, V), [V]),
+    }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, w, b, V]),
+    B = (0, d.useMemo)(() => (0, r.id)({}, F), [F]),
     H = (0, d.useMemo)(() => new(0, a.p)(h, B), [h, B]),
     Y = (0, d.useMemo)(() => H.resolvedOptions(), [H]),
     W = (0, d.useMemo)(() => H.formatToParts(new Date).filter(e => f[e.type]).reduce((e, t) => (e[_[t.type] || t.type] = true, e), {}), [H]),
@@ -119,7 +119,7 @@ function h(e) {
         (t.length >= n.length || t.length === n.length - 1 && W.dayPeriod && !K.dayPeriod) && X(Q)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.nz)(L, I, S, T, V), [L, I, S, T, V]),
+    en = (0, d.useMemo)(() => (0, r.nz)(L, I, S, T, F), [L, I, S, T, F]),
     er = (0, c.KZ)({
       ...e,
       value: L,
@@ -189,12 +189,12 @@ function h(e) {
     },
     formatValue(e) {
       if (!j) return "";
-      let t = (0, r.id)(e, V);
+      let t = (0, r.id)(e, F);
       return new(0, a.p)(h, t).format(J)
     },
     getDateFormatter(e, t) {
       let n = {
-          ...V,
+          ...F,
           ...t
         },
         i = (0, r.id)({}, n);

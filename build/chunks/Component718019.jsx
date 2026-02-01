@@ -87,12 +87,12 @@ function R(e) {
   } = (0, m.NJ)(), j = _.Ay.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
     live: U
   } = (0, g.A)(t.id), [G] = U, {
-    status: F,
-    isMobileOnline: V
+    status: V,
+    isMobileOnline: F
   } = (0, s.cf)([p.A], () => ({
     status: (0, c.A)(G) ? O.clD.STREAMING : p.A.getStatus(t.id),
     isMobileOnline: p.A.isMobileOnline(t.id)
-  })), B = true !== D ? D : F, H = [A.d.MODAL, A.d.MODAL_V2].includes(S) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = o()(I.my, P), {
+  })), B = true !== D ? D : V, H = [A.d.MODAL, A.d.MODAL_V2].includes(S) ? l._3J.SIZE_120 : l._3J.SIZE_80, Y = o()(I.my, P), {
     avatarDecorationSrc: W,
     avatarSrc: K,
     eventHandlers: z
@@ -109,7 +109,7 @@ function R(e) {
     imageClassName: null != R ? I.Lw : true,
     status: k ? O.clD.UNKNOWN : B,
     statusBackdropColor: j && !k ? (0, l.C$5)(L) : true,
-    isMobile: V,
+    isMobile: F,
     statusTooltip: true,
     statusTooltipDelay: b.In
   });

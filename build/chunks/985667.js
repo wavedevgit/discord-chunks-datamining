@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 985667, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 985667, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   i: () => d
 });
@@ -16,10 +16,10 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.VOICE_QUALITY_OF_SERVICE_SETTING, {
   useValue: function() {
     return (0, n.bG)([r.A], () => r.A.getQoS())
   },
-  setValue: function(e) {
-    l.A.setQoS(e)
+  setValue: function(t) {
+    l.A.setQoS(t)
   },
   usePredicate: function() {
-    return (0, n.bG)([r.A], () => r.A.supports(u.O5.QOS))
+    return (0, n.bG)([r.A], () => r.A.supports(a.O5.QOS))
   }
 })

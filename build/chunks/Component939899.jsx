@@ -1,13 +1,13 @@
-/** Chunk was on 20545 **/
+/** Chunk was on 21738 **/
 /** chunk id: 939899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A,
-  R: () => g
+  R: () => _
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk311907 = require("./311907.js"),
   Chunk793574 = require("./793574.js"),
@@ -23,80 +23,80 @@ function A(e) {
   let {
     applicationId: t,
     size: n = "default"
-  } = e, l = (0, d.bG)([f.A], () => f.A.getApplicationWidgetConfig(t));
-  return (0, i.jsxs)("div", {
-    className: s()(x.kL, {
-      [x.PG]: "small" === n
+  } = e, i = (0, o.bG)([g.A], () => g.A.getApplicationWidgetConfig(t));
+  return (0, r.jsxs)("div", {
+    className: a()(f.kL, {
+      [f.PG]: "small" === n
     }),
-    children: [(0, i.jsxs)("div", {
-      className: x.Qs,
-      children: [(0, i.jsx)("div", {
-        className: x.wx
-      }), (0, i.jsx)("div", {
-        className: x.yF
-      }), (0, i.jsxs)("div", {
-        className: x.M1,
-        children: [(0, i.jsx)("div", {
-          className: x.dJ
-        }), (0, i.jsx)("div", {
-          className: x.dJ
-        }), (0, i.jsx)("div", {
-          className: x.dJ
-        }), (0, i.jsx)("div", {
-          className: x.dJ
-        }), (0, i.jsx)("div", {
-          className: x.dJ
-        }), (0, i.jsx)("div", {
-          className: x.dJ
+    children: [(0, r.jsxs)("div", {
+      className: f.Qs,
+      children: [(0, r.jsx)("div", {
+        className: f.wx
+      }), (0, r.jsx)("div", {
+        className: f.yF
+      }), (0, r.jsxs)("div", {
+        className: f.M1,
+        children: [(0, r.jsx)("div", {
+          className: f.dJ
+        }), (0, r.jsx)("div", {
+          className: f.dJ
+        }), (0, r.jsx)("div", {
+          className: f.dJ
+        }), (0, r.jsx)("div", {
+          className: f.dJ
+        }), (0, r.jsx)("div", {
+          className: f.dJ
+        }), (0, r.jsx)("div", {
+          className: f.dJ
         })]
       })]
-    }), (0, i.jsx)("div", {
-      className: x.ZS,
-      children: (null == l ? true : l.miniPreviewImage) != null ? (0, i.jsx)("img", {
-        src: l.miniPreviewImage,
+    }), (0, r.jsx)("div", {
+      className: f.ZS,
+      children: (null == i ? true : i.miniPreviewImage) != null ? (0, r.jsx)("img", {
+        src: i.miniPreviewImage,
         alt: "",
-        className: x.oz
-      }) : (0, i.jsx)("div", {
-        className: x.FQ
+        className: f.oz
+      }) : (0, r.jsx)("div", {
+        className: f.FQ
       })
     })]
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     applicationId: t,
     size: n = "default"
   } = e, {
-    trackUserProfileAction: r
-  } = (0, v.NJ)(), s = (0, m.h)(t), {
-    hasAlreadyLinked: d,
-    canStartAuthorization: f,
+    trackUserProfileAction: l
+  } = (0, h.NJ)(), a = (0, p.h)(t), {
+    hasAlreadyLinked: o,
+    canStartAuthorization: g,
     startAuthorization: A,
-    fetched: g
-  } = (0, c.RD)(s), {
-    analyticsLocations: p
-  } = (0, o.Ay)(u.A.USER_PROFILE_APPLICATION_WIDGET), L = l.useCallback(() => {
-    f && (r({
+    fetched: _
+  } = (0, d.RD)(a), {
+    analyticsLocations: b
+  } = (0, u.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), E = i.useCallback(() => {
+    g && (l({
       action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
       applicationId: t
     }), A({
-      analyticsLocations: p
+      analyticsLocations: b
     }))
-  }, [f, r, t, A, p]);
-  return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
-    className: x.qr,
-    children: [(0, i.jsx)(a.A5T, {
+  }, [g, l, t, A, b]);
+  return "default" !== n || null == a ? null : (0, r.jsxs)("div", {
+    className: f.qr,
+    children: [(0, r.jsx)(s.A5T, {
       size: "xs"
-    }), (0, i.jsx)(a.EYj, {
+    }), (0, r.jsx)(s.EYj, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: g ? d ? h.intl.format(h.t.wiyuG9, {
-        applicationName: s.name
-      }) : f ? h.intl.format(h.t.RNWFOQ, {
-        onConnect: L
-      }) : h.intl.string(h.t["9TX4UT"]) : (0, i.jsx)("div", {
-        className: x.bg
+      children: _ ? o ? m.intl.format(m.t.wiyuG9, {
+        applicationName: a.name
+      }) : g ? m.intl.format(m.t.RNWFOQ, {
+        onConnect: E
+      }) : m.intl.string(m.t["9TX4UT"]) : (0, r.jsx)("div", {
+        className: f.bg
       })
     })]
   })

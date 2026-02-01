@@ -1,7 +1,7 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 973947, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => C
+  I: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,176 +26,176 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk854147 = require("./854147.js");
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = l
     })
   }
   return e
 }
-let C = e => {
+let S = e => {
   let {
     voiceFilter: t,
     hasNitro: n,
     analyticsContext: i
   } = e, {
-    activeVoice: C,
-    mostRecentlyRequestedVoiceId: N
-  } = (0, b.f)(), I = (0, A.e)(t.id), j = t.id === C, T = !t.available && !t.temporarilyAvailable, w = t.temporarilyAvailable && !n && !j, P = !j && t.id === N, [R, D] = l.useState(false);
-  l.useEffect(() => {
-    let e = P ? setTimeout(() => D(P), 200) : true;
+    activeVoice: S,
+    mostRecentlyRequestedVoiceId: j
+  } = (0, y.f)(), I = (0, _.e)(t.id), T = t.id === S, N = !t.available && !t.temporarilyAvailable, P = t.temporarilyAvailable && !n && !T, w = !T && t.id === j, [R, D] = r.useState(false);
+  r.useEffect(() => {
+    let e = w ? setTimeout(() => D(w), 200) : true;
     return () => {
       clearTimeout(e), D(false)
     }
-  }, [P]);
-  let k = (0, h.B2)({
+  }, [w]);
+  let M = (0, A.B2)({
       location: "voice_filter_item",
       autoTrackExposure: true,
-      disable: !g.Ay.canCheckVoiceFilterFilesExist()
+      disable: !f.Ay.canCheckVoiceFilterFilesExist()
     }),
-    L = (0, o.bG)([y.A], () => y.A.isVoiceFilterDownloaded(t.id), [t]),
-    M = null == I ? true : I.previewSoundURLs,
-    [U, V] = l.useState(0),
+    L = (0, s.bG)([b.A], () => b.A.isVoiceFilterDownloaded(t.id), [t]),
+    k = null == I ? true : I.previewSoundURLs,
+    [U, G] = r.useState(0),
     {
       isPlaying: F,
-      playSound: G,
+      playSound: H,
       stopSound: B,
-      preloadSound: H
-    } = (0, f.A)(null != M ? M[U] : null, {
+      preloadSound: V
+    } = (0, h.A)(null != k ? k[U] : null, {
       soundId: t.id
     }),
-    W = x[t.styleKey],
-    z = l.useCallback(() => {
-      n || !T ? ((0, m.OR)(C === t.id ? null : t.id, i), w && p.default.track(E.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, S({
+    K = C[t.styleKey],
+    W = r.useCallback(() => {
+      n || !N ? ((0, m.OR)(S === t.id ? null : t.id, i), P && p.default.track(v.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, x({
         voice_filter_id: t.id
-      }, (0, _.A)(i)))) : (0, d.n)()
-    }, [n, T, C, t.id, i, w]),
-    Y = l.useCallback(() => {
-      p.default.track(E.HAw.VOICE_FILTER_PREVIEW_PLAYED, S({
+      }, (0, g.A)(i)))) : (0, d.n)()
+    }, [n, N, S, t.id, i, P]),
+    z = r.useCallback(() => {
+      p.default.track(v.HAw.VOICE_FILTER_PREVIEW_PLAYED, x({
         voice_filter_id: t.id
-      }, (0, _.A)(i))), G({
+      }, (0, g.A)(i))), H({
         volume: .5,
-        outputChannel: v.a.VOICE
-      }), (.25 > Math.random() || U > 0) && null != M && V(e => (e + 1) % M.length)
-    }, [i, G, U, M, t.id]),
-    K = null != I ? O.intl.string(I.name) : "";
-  return (0, r.jsxs)("div", {
-    className: a()(x.filter, W, {
-      [x.selected]: j,
-      [x.locked]: T && !j
+        outputChannel: E.a.VOICE
+      }), (.25 > Math.random() || U > 0) && null != k && G(e => (e + 1) % k.length)
+    }, [i, H, U, k, t.id]),
+    q = null != I ? O.intl.string(I.name) : "";
+  return (0, l.jsxs)("div", {
+    className: a()(C.filter, K, {
+      [C.selected]: T,
+      [C.locked]: N && !T
     }),
-    children: [(0, r.jsx)(c.m, {
+    children: [(0, l.jsx)(c.m, {
       asContainer: true,
-      shouldShow: k && !L,
+      shouldShow: M && !L,
       "aria-label": O.intl.string(O.t.SQ7qMG),
-      __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-        className: x.downloadRequiredContent,
-        children: [(0, r.jsx)(u.Text, {
+      __unsupportedReactNodeAsText: (0, l.jsxs)("div", {
+        className: C.downloadRequiredContent,
+        children: [(0, l.jsx)(u.Text, {
           variant: "text-sm/medium",
           children: O.intl.string(O.t.SQ7qMG)
-        }), (0, r.jsx)(u.Text, {
+        }), (0, l.jsx)(u.Text, {
           variant: "text-xs/normal",
           children: O.intl.string(O.t.TbnPVp)
         })]
       }),
-      children: (0, r.jsxs)(u.DUT, {
-        className: x.selector,
+      children: (0, l.jsxs)(u.DUT, {
+        className: C.selector,
         onClick: () => {
-          z()
+          W()
         },
         onMouseEnter: () => {
-          H()
+          V()
         },
-        children: [(0, r.jsxs)("div", {
-          className: x.iconTreatmentsWrapper,
-          children: [(0, r.jsxs)("div", {
-            className: a()(x.profile, {
-              [x.underDevelopment]: t.underDevelopment
+        children: [(0, l.jsxs)("div", {
+          className: C.iconTreatmentsWrapper,
+          children: [(0, l.jsxs)("div", {
+            className: a()(C.profile, {
+              [C.underDevelopment]: t.underDevelopment
             }),
-            children: [(0, r.jsx)("img", {
-              className: x.thumbnail,
+            children: [(0, l.jsx)("img", {
+              className: C.thumbnail,
               alt: "",
               src: null == I ? true : I.iconURL,
               draggable: false
-            }), (0, r.jsx)("div", {
-              className: x.insetBorder
+            }), (0, l.jsx)("div", {
+              className: C.insetBorder
             })]
-          }), j && (0, r.jsx)("div", {
-            className: x.iconCircle,
-            children: (0, r.jsx)(u.yr3, {
+          }), T && (0, l.jsx)("div", {
+            className: C.iconCircle,
+            children: (0, l.jsx)(u.yr3, {
               size: "md",
               color: "currentColor",
-              colorClass: x.checkmark,
-              secondaryColor: s.A.unsafe_rawColors.WHITE.css
+              colorClass: C.checkmark,
+              secondaryColor: o.A.unsafe_rawColors.WHITE.css
             })
-          }), T && !j && (0, r.jsx)("div", {
-            className: a()([x.iconCircle, x.lockedCircle]),
-            children: (0, r.jsx)(u.XAi, {
+          }), N && !T && (0, l.jsx)("div", {
+            className: a()([C.iconCircle, C.lockedCircle]),
+            children: (0, l.jsx)(u.XAi, {
               size: "custom",
               height: 16,
               width: 16,
               color: "currentColor",
-              colorClass: x.lockedIcon
+              colorClass: C.lockedIcon
             })
-          }), w && (0, r.jsx)("div", {
-            className: a()([x.iconCircle, x.iconBorder]),
-            children: (0, r.jsx)("div", {
-              className: a()([x.clockCircle]),
-              children: (0, r.jsx)(u.O4, {
+          }), P && (0, l.jsx)("div", {
+            className: a()([C.iconCircle, C.iconBorder]),
+            children: (0, l.jsx)("div", {
+              className: a()([C.clockCircle]),
+              children: (0, l.jsx)(u.O4, {
                 size: "custom",
                 height: 16,
                 width: 16,
                 color: "currentColor",
-                colorClass: x.clockIcon
+                colorClass: C.clockIcon
               })
             })
-          }), R && (0, r.jsx)("div", {
-            className: x.spinnerWrapper,
-            children: (0, r.jsx)(u.y$y, {
+          }), R && (0, l.jsx)("div", {
+            className: C.spinnerWrapper,
+            children: (0, l.jsx)(u.y$y, {
               type: u.y$y.Type.CHASING_DOTS,
               animated: true,
-              className: x.spinner
+              className: C.spinner
             })
           })]
-        }), (0, r.jsxs)("div", {
-          className: x.filterName,
-          children: [(0, r.jsxs)(u.Text, {
+        }), (0, l.jsxs)("div", {
+          className: C.filterName,
+          children: [(0, l.jsxs)(u.Text, {
             variant: "text-xs/medium",
             color: t.underDevelopment ? "text-muted" : "text-strong",
-            children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", K]
-          }), k && !L ? (0, r.jsx)(u.s3U, {
+            children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", q]
+          }), M && !L ? (0, l.jsx)(u.s3U, {
             size: "xxs"
           }) : null]
         })]
       })
-    }), null != M && (0, r.jsx)(c.m, {
+    }), null != k && (0, l.jsx)(c.m, {
       asContainer: true,
       text: O.intl.string(F ? O.t.ItuPbp : O.t["0gtbE8"]),
-      children: (0, r.jsx)(u.DUT, {
-        className: a()([x.hoverButtonCircle, x.previewButton], {
-          [x.visible]: F
+      children: (0, l.jsx)(u.DUT, {
+        className: a()([C.hoverButtonCircle, C.previewButton], {
+          [C.visible]: F
         }),
-        onClick: F ? B : Y,
+        onClick: F ? B : z,
         "aria-label": O.intl.formatToPlainString(O.t.gDzvjd, {
-          voiceFilterName: K
+          voiceFilterName: q
         }),
-        children: F ? (0, r.jsx)(u.wFz, {
+        children: F ? (0, l.jsx)(u.wFz, {
           size: "custom",
           height: 16,
           width: 16,
           color: "white"
-        }) : (0, r.jsx)(u.udU, {
+        }) : (0, l.jsx)(u.udU, {
           size: "custom",
           height: 16,
           width: 16,

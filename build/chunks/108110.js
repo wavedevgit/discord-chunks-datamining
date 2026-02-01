@@ -553,21 +553,21 @@
                     k = 0,
                     U = 0,
                     G = 0,
-                    F = 0,
-                    V = {
+                    V = 0,
+                    F = {
                       mapOutputToInputTime: function(e) {
                         for (var t = L.length - 1; e < L[t].out_time && t > 0;) t--;
                         var n = L[t];
                         return n.in_time + n.tempo * (e - n.out_time)
                       },
                       flush: function(e) {
-                        k = 0, I = [0, 0], M = 0, F = 0, G = 0;
+                        k = 0, I = [0, 0], M = 0, V = 0, G = 0;
                         for (var t = 0; t < 2; t++)
                           for (var n = 0; n < m; n++) N[t][n] = 0;
                         for (t = 0; t < u.length; t++) u[t] = 0;
                         for (t = 0; t < d.length; t++) d[t] = 0;
                         if (e) {
-                          D = Math.max(0, D - e), P = V.mapOutputToInputTime(D);
+                          D = Math.max(0, D - e), P = F.mapOutputToInputTime(D);
                           for (var r = L.length - 1; D <= L[r].out_time && r >= 0;) L.pop(), r--;
                           L.push({
                             in_time: P,
@@ -592,7 +592,7 @@
                         })
                       }
                     };
-                  V.flush(0), V.setTempo(a);
+                  F.flush(0), F.setTempo(a);
                   var B = function(e, t, n) {
                       var r = Math.floor(n),
                         i = r % 2 == 1 ? false : 1;
@@ -626,15 +626,15 @@
                       if (0 != e && 0 != E) {
                         var O = 0;
                         for (G = 0; G < E; G++) {
-                          for (F = g[G]; g[G] > f[O] && O != d;) ++O;
+                          for (V = g[G]; g[G] > f[O] && O != d;) ++O;
                           var v = O;
-                          O > 0 && F - f[O - 1] < f[O] - F && (v = O - 1);
-                          var A = F * o;
-                          if (Math.abs(f[v] - F) < A && u[Math.round(f[v])] > .1 * h[Math.round(F)]) {
-                            var P = B(t, n, F),
-                              D = p[v] + _[v] + H(P, F, p[v], f[v], a) - P;
+                          O > 0 && V - f[O - 1] < f[O] - V && (v = O - 1);
+                          var A = V * o;
+                          if (Math.abs(f[v] - V) < A && u[Math.round(f[v])] > .1 * h[Math.round(V)]) {
+                            var P = B(t, n, V),
+                              D = p[v] + _[v] + H(P, V, p[v], f[v], a) - P;
                             y[G] = P, b[G] = D, w[G] = Math.cos(D), R[G] = Math.sin(D)
-                          } else y[G] = B(t, n, F), b[G] = 0, w[G] = 1, R[G] = 0
+                          } else y[G] = B(t, n, V), b[G] = 0, w[G] = 1, R[G] = 0
                         }
                         g[E] = 2 * s;
                         var L = g[v = 0],
@@ -649,8 +649,8 @@
                         }
                       } else
                         for (var G = 0; G < E; G++) {
-                          var F = g[G];
-                          p[G] = _[G] = B(t, n, F)
+                          var V = g[G];
+                          p[G] = _[G] = B(t, n, V)
                         }
                     },
                     W = function() {
@@ -669,7 +669,7 @@
                       for (a * i > o && (a = o / i), t = 0; t < s; t++) d[t] += a * l.m_re[t], d[t + p + e] += a * l.m_im[t];
                       return x += 2, M = 2 * p + e
                     };
-                  return V.process = function(e) {
+                  return F.process = function(e) {
                     var n = e[0].length,
                       i = e[0];
                     if (e.length > 1) {
@@ -678,23 +678,23 @@
                         for (var c = 0; c < n; c++) i[c] += o * e[l][c]
                     }
                     if (1 == a) {
-                      if (F + G > 0) {
-                        var _ = F + G + n,
+                      if (V + G > 0) {
+                        var _ = V + G + n,
                           h = [];
                         for (l = 0; l < e.length; l++) {
                           var m = r.float_array(_);
-                          r.blit(d, 0, m, 0, F), r.blit(u, 0, m, F, G), r.blit(e[l], 0, m, F + G, n), h.push(m)
+                          r.blit(d, 0, m, 0, V), r.blit(u, 0, m, V, G), r.blit(e[l], 0, m, V + G, n), h.push(m)
                         }
-                        V.flush(0), n = _, e = h
+                        F.flush(0), n = _, e = h
                       }
                       return P += n / t, D += n / t, e
                     }
                     var g = 2 * Math.floor(Math.max(0, G + n - (s - f)) / (2 * f)),
-                      E = F + p * g + Math.floor(k + U * g);
-                    F > E && (E = F);
+                      E = V + p * g + Math.floor(k + U * g);
+                    V > E && (E = V);
                     var y = r.float_array(E);
-                    r.blit(d, 0, y, 0, F);
-                    for (var b = 0, O = F, v = 0, A = 0;;) {
+                    r.blit(d, 0, y, 0, V);
+                    for (var b = 0, O = V, v = 0, A = 0;;) {
                       var I = s + f - G;
                       if (b + I > n) {
                         r.blit(i, b, u, G, n - b), G += n - b, b = n;
@@ -702,11 +702,11 @@
                       }
                       I <= 0 ? G -= 2 * f : (r.blit(i, b, u, G, I), b += I, G = s - f), A = W(), P += 2 * f / t, D += A / t, (v = O + A - E) < 0 && (v = 0), r.blit(d, 0, y, O, A - v), O += A
                     }
-                    r.blit(d, A - v, d, 0, v), F = v;
+                    r.blit(d, A - v, d, 0, v), V = v;
                     var S = [];
                     for (l = 0; l < e.length; l++) S.push(y);
                     return S
-                  }, V
+                  }, F
                 }
               }, function(e, t, n) {
                 "use strict";
@@ -1350,12 +1350,12 @@
             U = "exact",
             G = "fast";
 
-          function F() {
+          function V() {
             var e = document.createElement("ogvjs");
             return Object.setPrototypeOf ? Object.setPrototypeOf(e, Object.getPrototypeOf(this)) : e.__proto__ = this.__proto__, e
           }
-          A = "u" < typeof performance || true === (0, u.default)(performance.now) ? Date.now : performance.now.bind(performance), F.prototype = Object.create(HTMLElement.prototype, {});
-          var V = function(e) {
+          A = "u" < typeof performance || true === (0, u.default)(performance.now) ? Date.now : performance.now.bind(performance), V.prototype = Object.create(HTMLElement.prototype, {});
+          var F = function(e) {
             (0, s.default)(n, e);
             var t = v(n);
 
@@ -2221,8 +2221,8 @@
                 e.src = O.default, e.play(), p.default.initSharedAudioContext()
               }
             }]), n
-          }(F);
-          (0, m.default)(V, S), V.instanceCount = 0, V.styleManager = new function() {
+          }(V);
+          (0, m.default)(F, S), F.instanceCount = 0, F.styleManager = new function() {
             var e = document.createElement("style");
             e.type = "text/css", e.textContent = "ogvjs { display: inline-block; position: relative; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0); ", document.head.appendChild(e);
             var t = e.sheet;
@@ -2232,7 +2232,7 @@
               var a = e + "{" + r.join(";") + "}";
               t.insertRule(a, t.cssRules.length - 1)
             }
-          }, t.default = V
+          }, t.default = F
         },
         580: (e, t, n) => {
           "use strict";

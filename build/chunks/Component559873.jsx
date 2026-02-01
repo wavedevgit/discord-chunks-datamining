@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 559873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk471135 = require("./471135.js");
 
-function j(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function E(e) {
     message: i,
     Icon: o,
     interactionType: c
-  } = e, [u, d] = (0, l.useState)(false), h = (0, f.op)();
+  } = e, [u, d] = (0, l.useState)(false), p = (0, f.op)();
   return (0, r.jsx)(s.m, {
     text: t,
     position: "top",
@@ -78,17 +78,17 @@ function E(e) {
     onTooltipShow: () => d(true),
     onTooltipHide: () => d(false),
     children: (0, r.jsx)(a.DUT, {
-      className: _.XI,
+      className: j.XI,
       onClick: e => {
         (0, f.Ml)({
           message: i,
           interactionType: c,
-          viewId: h
+          viewId: p
         }), e.stopPropagation(), n(i)
       },
       children: (0, r.jsx)(o, {
         size: u ? "sm" : "xs",
-        className: _.gE
+        className: j.gE
       })
     })
   })
@@ -103,7 +103,7 @@ function C(e) {
     Menu: c,
     interactionType: u,
     actionType: d
-  } = e, h = (0, f.op)(), [p, g] = (0, l.useState)(false), [m, A] = (0, l.useState)(false), y = (0, l.useRef)(null), {
+  } = e, p = (0, f.op)(), [h, g] = (0, l.useState)(false), [m, A] = (0, l.useState)(false), y = (0, l.useRef)(null), {
     openMenu: O,
     closeMenu: v
   } = (0, b.s)();
@@ -136,20 +136,20 @@ function C(e) {
       onTooltipHide: () => g(false),
       children: (0, r.jsx)(a.DUT, {
         innerRef: y,
-        className: _.XI,
+        className: j.XI,
         onClick: e => {
           let t;
           (0, f.Ml)({
             message: n,
             interactionType: u,
-            viewId: h
+            viewId: p
           }), e.stopPropagation(), A(t = !m), t ? O(n.id, d) : v(n.id, d)
         },
-        children: (0, r.jsx)(o, x(j({}, e), {
+        children: (0, r.jsx)(o, _(x({}, e), {
           message: n,
           "aria-label": i,
-          className: _.gE,
-          size: p ? "sm" : "xs"
+          className: j.gE,
+          size: h ? "sm" : "xs"
         }))
       })
     })
@@ -175,17 +175,17 @@ let S = {
   [Chunk849077.kR.BOOKMARK]: {
     type: "menu",
     label: Chunk985018.intl.string(Chunk985018.t["9p3D9p"]),
-    Icon: e => null != p.A.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.cFy, j({}, e)) : (0, r.jsx)(a.c$8, j({}, e)),
+    Icon: e => null != h.A.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.cFy, x({}, e)) : (0, r.jsx)(a.c$8, x({}, e)),
     interactionType: Chunk932883.X8.BOOKMARK,
     Menu: e => {
       let {
         message: t,
         renderPopoutProps: n
-      } = e, l = (0, i.bG)([p.A], () => p.A.getSavedMessage(t.channel_id, t.id)), s = (0, d.P)({
+      } = e, l = (0, i.bG)([h.A], () => h.A.getSavedMessage(t.channel_id, t.id)), s = (0, d.P)({
         message: t,
         savedMessage: l
       });
-      return (0, r.jsxs)(a.W1t, x(j({
+      return (0, r.jsxs)(a.W1t, _(x({
         "data-menu-migrated-auto": true
       }, n), {
         navId: "message-reminder-create",
@@ -200,7 +200,7 @@ let S = {
             type: "icon",
             icon: a.cFy
           },
-          action: () => (0, h.x)({
+          action: () => (0, p.x)({
             channelId: t.channel_id,
             messageId: t.id,
             dueAt: l.saveData.dueAt,
@@ -214,7 +214,7 @@ let S = {
             type: "icon",
             icon: a.c$8
           },
-          action: () => (0, h.Y)({
+          action: () => (0, p.Y)({
             channelId: t.channel_id,
             messageId: t.id,
             displayToast: true
@@ -233,11 +233,11 @@ let S = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(g.A, x(j({}, n), {
+      return t.isThread() ? (0, r.jsx)(g.A, _(x({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqb"])
-      })) : (0, r.jsx)(u.A, x(j({}, n), {
+      })) : (0, r.jsx)(u.A, _(x({}, n), {
         channel: t,
         navId: "channel-context",
         label: O.intl.string(O.t.Xm41aV)
@@ -262,17 +262,17 @@ function I(e) {
     gap: 4,
     align: "center",
     justify: "center",
-    className: _.o1,
+    className: j.o1,
     children: o.map(e => {
       let t = S[e];
       switch (t.type) {
         case "standard":
-          return (0, r.jsx)(E, x(j({}, t), {
+          return (0, r.jsx)(E, _(x({}, t), {
             actionType: e,
             message: n
           }), e);
         case "menu":
-          return (0, r.jsx)(C, x(j({}, t), {
+          return (0, r.jsx)(C, _(x({}, t), {
             actionType: e,
             channel: i,
             message: n

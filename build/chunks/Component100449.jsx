@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 100449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -20,10 +20,10 @@ let m = Chunk64700.memo(function(e) {
   let {
     channel: t,
     participant: n
-  } = e, i = (0, a.bG)([u.default], () => u.default.getUser(n.user.id), [n.user.id]), h = l.useMemo(() => {
+  } = e, i = (0, a.bG)([u.default], () => u.default.getUser(n.user.id), [n.user.id]), p = l.useMemo(() => {
     var e, r;
     return null != (e = null != (r = d.Ay.getNickname(t.guild_id, t.id, i)) ? r : null == i ? true : i.globalName) ? e : n.userNick
-  }, [t, i, n.userNick]), p = (0, c.A)({
+  }, [t, i, n.userNick]), h = (0, c.A)({
     userId: n.user.id,
     context: g.x.DEFAULT
   });
@@ -33,7 +33,7 @@ let m = Chunk64700.memo(function(e) {
     A = i.getAvatarURL(t.guild_id, b);
   return (0, r.jsxs)("div", {
     className: s()(f.vB, {
-      [f.zY]: p
+      [f.zY]: h
     }),
     children: [(0, r.jsx)(o.euF, {
       className: f.my,
@@ -45,7 +45,7 @@ let m = Chunk64700.memo(function(e) {
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: h
+        children: p
       })
     })]
   })
@@ -55,14 +55,14 @@ function b(e) {
   let {
     channel: t,
     participants: n
-  } = e, i = (0, h.A)(t.id), s = l.useMemo(() => {
+  } = e, i = (0, p.A)(t.id), s = l.useMemo(() => {
     if (null == i) return [];
     let e = new Set(i.participants.map(e => e.userId));
-    return n.filter(t => !(!(0, p.Xw)(t) || e.has(t.user.id)))
+    return n.filter(t => !(!(0, h.Xw)(t) || e.has(t.user.id)))
   }, [n, i]);
   return 0 === s.length ? null : (0, r.jsx)("div", {
     className: f.kL,
-    children: s.map(e => (0, p.Xw)(e) ? (0, r.jsx)(m, {
+    children: s.map(e => (0, h.Xw)(e) ? (0, r.jsx)(m, {
       channel: t,
       participant: e
     }, e.user.id) : null)

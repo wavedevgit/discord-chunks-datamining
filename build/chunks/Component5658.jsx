@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 5658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => _
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk391900 = require("./391900.js");
 
-function j(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function j(e) {
   }
   return e
 }
-let x = Chunk64700.memo(function(e) {
+let _ = Chunk64700.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -56,8 +56,8 @@ let x = Chunk64700.memo(function(e) {
       u([e, e - r])
     }
     let {
-      opacity: h,
-      size: p
+      opacity: p,
+      size: h
     } = (0, c.zhh)({
       config: {
         clamp: true,
@@ -70,8 +70,8 @@ let x = Chunk64700.memo(function(e) {
         n(t.channelId)
       }
     }, "animate-always"), g = {
-      opacity: h,
-      height: p.to(e => {
+      opacity: p,
+      height: h.to(e => {
         var t, n;
         return d ? (t = a, (n = o) + (t - n) * e) : "auto"
       })
@@ -79,7 +79,7 @@ let x = Chunk64700.memo(function(e) {
     return (0, r.jsx)(i.animated.div, {
       ref: s,
       style: g,
-      children: (0, r.jsx)(v, j({}, e))
+      children: (0, r.jsx)(v, x({}, e))
     })
   }),
   v = Chunk64700.memo(function(e) {
@@ -99,15 +99,15 @@ let x = Chunk64700.memo(function(e) {
         })
       }), null == o || !t.hasLoadedAnything) return null;
     let O = (e, r) => {
-      (0, h.zV)(y.HAw.INBOX_CHANNEL_CLICKED, {
+      (0, p.zV)(y.HAw.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let l = null != r ? r : t.oldestUnreadMessageId;
-      (0, p.pX)(y.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
+      (0, h.pX)(y.BVt.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : l)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: _.Ix,
+      className: j.Ix,
       children: (0, r.jsx)(c.Fmo, {
         component: (0, r.jsx)(m.A, {
           channel: o,
@@ -119,10 +119,10 @@ let x = Chunk64700.memo(function(e) {
           getNumUnreadChannels: e.getNumUnreadChannels,
           children: (0, r.jsxs)(c.ButtonGroup, {
             size: "sm",
-            className: _.GC,
+            className: j.GC,
             children: [(0, r.jsx)(f.A, {
               channel: o
-            }), (0, r.jsx)(E, j({}, e))]
+            }), (0, r.jsx)(E, x({}, e))]
           })
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(A.A, {
@@ -153,7 +153,7 @@ function E(e) {
       size: "sm",
       icon: a ? c.iA$ : c.A9s,
       onClick: function() {
-        a && null != t.guildId ? l(t.guildId) : n(t), (0, h.zV)(y.HAw.INBOX_CHANNEL_ACKED, {
+        a && null != t.guildId ? l(t.guildId) : n(t), (0, p.zV)(y.HAw.INBOX_CHANNEL_ACKED, {
           channel_id: t.channelId,
           guild_id: t.guildId,
           marked_all_channels_as_read: false,

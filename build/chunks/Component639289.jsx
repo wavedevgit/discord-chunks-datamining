@@ -117,9 +117,9 @@ let y = 1e3,
         children: t
       })]
     });
-    let F = !D;
+    let V = !D;
     return "static" === j ? (0, r.jsxs)(r.Fragment, {
-      children: [F && (0, r.jsxs)(r.Fragment, {
+      children: [V && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
           src: g.A,
           alt: "",

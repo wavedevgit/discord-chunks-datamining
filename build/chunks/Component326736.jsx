@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 326736, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -52,13 +52,13 @@ let E = e => {
       variant: n,
       noBackground: l = false,
       leftAlignHeaders: O = false,
-      showAllPerksButton: C,
-      headerClassname: x
-    } = e, S = i.useRef(null), T = n === A.cJ.WHATS_NEW, I = (0, a.bG)([d.default], () => d.default.getCurrentUser()), y = (0, m.E)();
+      showAllPerksButton: x,
+      headerClassname: C
+    } = e, S = i.useRef(null), T = n === A.cJ.WHATS_NEW, I = (0, a.bG)([d.default], () => d.default.getCurrentUser()), N = (0, m.E)();
     i.useEffect(() => {
-      T && y()
-    }, [y, T]);
-    let N = (0, f.G4)(T),
+      T && N()
+    }, [N, T]);
+    let y = (0, f.G4)(T),
       j = (0, g.A)(),
       v = (0, f.LQ)(),
       {
@@ -88,25 +88,25 @@ let E = e => {
         [h.Uv]: O
       }, t),
       children: [(0, r.jsx)(E, {
-        showAllPerksButton: C,
+        showAllPerksButton: x,
         leftAlignHeaders: O,
-        title: N.title,
-        headerClassname: x
+        title: y.title,
+        headerClassname: C
       }), (0, r.jsx)(o.Text, {
         variant: "text-lg/normal",
         color: "text-strong",
         className: s()(h.VA, {
-          [h.VA]: null == C || O,
-          [h.Xx]: null != C && !O,
+          [h.VA]: null == x || O,
+          [h.Xx]: null != x && !O,
           [h.Ij]: T || O,
           [h.Ob]: M,
           [h.dO]: O,
           [h.br]: !O
         }),
-        children: N.subtitle
-      }), !O && null != C && (0, r.jsx)("div", {
+        children: y.subtitle
+      }), !O && null != x && (0, r.jsx)("div", {
         className: h.xk,
-        children: C
+        children: x
       }), (0, r.jsx)("div", {
         className: h.Ui,
         children: w.map((e, t) => {

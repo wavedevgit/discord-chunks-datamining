@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 258367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -16,31 +16,31 @@ var Chunk64700 = require("./64700.js"),
 
 function p(e) {
   let t = (0, u.A)(e),
-    n = (0, l.bG)([s.default], () => s.default.locale),
-    p = (0, l.bG)([c.A], () => c.A.getChangelog(null != t ? t : "", n), [t, n]),
-    g = (0, d.A)(e),
-    f = r.useRef(g ? Date.now() : null),
-    m = (0, l.bG)([a.Ay], () => a.Ay.getUnreadCount(e), [e]),
-    b = r.useRef(m);
-  r.useEffect(() => {
-    b.current = m
-  }), r.useEffect(() => {
-    f.current = Date.now()
-  }, [g]), r.useEffect(() => {
-    g && null != t && i.A.fetchChangelog(t, n, true)
-  }, [t, n, g]), r.useEffect(() => {
-    g && null != p && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
+    n = (0, r.bG)([a.default], () => a.default.locale),
+    p = (0, r.bG)([c.A], () => c.A.getChangelog(null != t ? t : "", n), [t, n]),
+    f = (0, d.A)(e),
+    m = l.useRef(f ? Date.now() : null),
+    g = (0, r.bG)([s.Ay], () => s.Ay.getUnreadCount(e), [e]),
+    A = l.useRef(g);
+  l.useEffect(() => {
+    A.current = g
+  }), l.useEffect(() => {
+    m.current = Date.now()
+  }, [f]), l.useEffect(() => {
+    f && null != t && i.A.fetchChangelog(t, n, true)
+  }, [t, n, f]), l.useEffect(() => {
+    f && null != p && o.default.track(h.HAw.CHANGE_LOG_OPENED, {
       change_log_id: "".concat(p.date, ":").concat(p.revision),
-      unread_count: b.current
+      unread_count: A.current
     })
-  }, [g, p]), r.useEffect(() => {
-    let e = f.current;
+  }, [f, p]), l.useEffect(() => {
+    let e = m.current;
     return () => {
-      g && null != p && null != e && (o.default.track(h.HAw.CHANGE_LOG_CLOSED, {
+      f && null != p && null != e && (o.default.track(h.HAw.CHANGE_LOG_CLOSED, {
         seconds_open: Math.round((Date.now() - e) / 1e3),
         change_log_id: "".concat(p.date, ":").concat(p.revision),
-        unread_count: b.current
-      }), f.current = 0)
+        unread_count: A.current
+      }), m.current = 0)
     }
-  }, [g, p])
+  }, [f, p])
 }

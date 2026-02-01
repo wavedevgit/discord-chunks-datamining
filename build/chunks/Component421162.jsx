@@ -51,22 +51,22 @@ function j(e) {
     analyticsLocationSection: k,
     upsellViewedTrackingData: U,
     onClose: G,
-    onDisplay: F,
-    onLearnMore: V,
+    onDisplay: V,
+    onLearnMore: F,
     isEmojiPickerOverlay: B = false
   } = e, H = (0, l.bG)([E.A], () => E.A.affinities), Y = (0, l.bG)([E.A], () => E.A.hasFetched);
   i.useEffect(() => {
     !Y && j && d.xG()
   }, [Y, j]), i.useEffect(() => {
-    h.default.track(T.HAw.PREMIUM_UPSELL_VIEWED, U), null == F || F()
-  }, [F, U]);
+    h.default.track(T.HAw.PREMIUM_UPSELL_VIEWED, U), null == V || V()
+  }, [V, U]);
   let W = H.length > 1 && j,
     K = () => 2 === t ? w.vf : 1 === t ? w.oU : w.RK,
     z = () => {
       h.default.track(T.HAw.PREMIUM_PROMOTION_OPENED, {
         location_section: k,
         location_object: T.ZSU.NAVIGATION_LINK
-      }), null == V || V(), (0, p.A)(), G(), (0, f.jH)(), (0, _.pX)(T.BVt.APPLICATION_STORE)
+      }), null == F || F(), (0, p.A)(), G(), (0, f.jH)(), (0, _.pX)(T.BVt.APPLICATION_STORE)
     },
     q = (0, b.V)(),
     Z = i.useCallback(() => {

@@ -43,7 +43,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk228539 = require("./228539.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,7 +59,7 @@ function B(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -122,8 +122,8 @@ let z = 498 + Chunk732139.as.MEDIUM,
         }), (0, D.U)(i)
       },
       "aria-current": t ? "page" : true,
-      className: o()(n, F.oi, F.pc, {
-        [F.Mv]: t
+      className: o()(n, V.oi, V.pc, {
+        [V.Mv]: t
       })
     }))
   }),
@@ -177,7 +177,7 @@ function Q(e) {
     positionTargetRef: l,
     hideGifFavorites: h,
     onSelectGIF: w,
-    onSelectEmoji: V,
+    onSelectEmoji: F,
     onSelectSticker: B,
     onSelectSound: H,
     channel: Y,
@@ -247,7 +247,7 @@ function Q(e) {
     eS = i.useCallback((e, t) => null == H ? true : H(e, "soundboard_picker", t), [H]),
     eT = (null == (s = W.soundmoji) ? true : s.allowSending) === true && null != H,
     eC = "left" === Q ? "right" : "left",
-    eN = null != X ? X : "left" === Q ? F.sj : F.Jg,
+    eN = null != X ? X : "left" === Q ? V.sj : V.Jg,
     ew = eh ? (0, r.jsx)(q, {
       id: j.g9,
       "aria-controls": j.ni,
@@ -264,7 +264,7 @@ function Q(e) {
       autoFocus: !es,
       viewType: L.kx.STICKER,
       children: (0, r.jsx)("div", {
-        className: F.dG,
+        className: V.dG,
         children: G.intl.string(G.t.nf1s3u)
       })
     }) : null,
@@ -279,7 +279,7 @@ function Q(e) {
   return (0, r.jsx)(m.A, {
     section: x.JJy.EXPRESSION_PICKER,
     children: (0, r.jsx)(v.nE, {
-      className: o()(F.T8, eN),
+      className: o()(V.T8, eN),
       targetRef: l,
       position: K,
       align: Q,
@@ -292,31 +292,31 @@ function Q(e) {
           isPositioned: n
         } = e;
         return (0, r.jsx)("section", {
-          className: o()(F.V6, {
-            [F.D0]: !eg
+          className: o()(V.V6, {
+            [V.D0]: !eg
           }),
           ref: ee,
           role: "dialog",
           "aria-label": G.intl.string(G.t.Utlwvi),
           children: n ? (0, r.jsxs)("div", {
-            className: F.jP,
+            className: V.jP,
             style: {
               width: null == ei ? true : ei,
               [Q]: 0
             },
             ref: er,
             children: [(0, r.jsx)("div", {
-              className: F.Di,
+              className: V.Di,
               onMouseDown: ea,
               style: {
                 [eC]: false
               }
             }), (0, r.jsxs)("div", {
-              className: F.FG,
+              className: V.FG,
               children: [eg ? (0, r.jsx)("nav", {
-                className: F.C$,
+                className: V.C$,
                 children: (0, r.jsxs)("div", {
-                  className: F.CT,
+                  className: V.CT,
                   role: "tablist",
                   "aria-label": G.intl.string(G.t["2j4Vgd"]),
                   children: [ew, eR, eP, ed && eT && (0, r.jsx)(q, {
@@ -326,7 +326,7 @@ function Q(e) {
                     isActive: eo === L.kx.SOUNDBOARD,
                     viewType: L.kx.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
-                      className: F.sd,
+                      className: V.sd,
                       children: [G.intl.string(G.t.EHlAMc), null != eb && (0, r.jsx)(_.LpS, {
                         text: G.intl.string(G.t.y2b7CA)
                       })]
@@ -355,14 +355,14 @@ function Q(e) {
                 emojiSize: null != ei && ei < z ? j.as.MEDIUM : j.as.LARGE,
                 pickerIntention: k.b_.CHAT,
                 closePopout: ey,
-                onSelectEmoji: V,
+                onSelectEmoji: F,
                 onSelectSoundmoji: eI,
                 ref: e => {
                   en.current = e
                 },
                 shouldShowSoundmojiInEmojiPicker: (null == (t = W.soundmoji) ? true : t.allowSending) === true
               }) : null, eo === L.kx.SOUNDBOARD ? (0, r.jsx)("div", {
-                className: F.z,
+                className: V.z,
                 children: (0, r.jsx)(S.A, {
                   guildId: Y.guild_id,
                   channel: Y,
@@ -371,7 +371,7 @@ function Q(e) {
                   onSelect: eS,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {
-                    className: F.BG,
+                    className: V.BG,
                     children: e
                   }),
                   inExpressionPicker: true,

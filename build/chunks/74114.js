@@ -1,7 +1,7 @@
-/** Chunk was on 96430 **/
-/** chunk id: 74114, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 55150 **/
+/** chunk id: 74114, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  l: () => c
+  l: () => u
 });
 var Chunk311907 = require("./311907.js"),
   Chunk321404 = require("./321404.js"),
@@ -12,13 +12,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk840387 = require("./840387.js"),
   Chunk168447 = require("./168447.js");
 
-function c(t) {
-  let e = (0, r.bG)([l.default], () => l.default.getCurrentUser()),
-    n = (0, a.z)(t),
-    c = (0, i.O)(t),
-    E = (0, u.F)(t, o._j.STRANGER_DANGER),
-    A = (0, d.Z)(),
-    _ = (null == e ? true : e.isStaff()) !== true,
-    f = (0, s.Y)(t).length > 0;
-  if (!(!A && _) && !n && !c && !f) return E
+function u(e) {
+  let n = (0, l.bG)([s.default], () => s.default.getCurrentUser()),
+    t = (0, i.z)(e),
+    u = (0, r.O)(e),
+    p = (0, c.F)(e, a._j.STRANGER_DANGER),
+    m = (0, o.Z)(),
+    f = (null == n ? true : n.isStaff()) !== true,
+    h = (0, d.Y)(e).length > 0;
+  if (!(!m && f) && !t && !u && !h) return p
 }

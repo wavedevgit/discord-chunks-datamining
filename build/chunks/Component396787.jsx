@@ -1,9 +1,9 @@
-/** Chunk was on 42455 **/
+/** Chunk was on 61344 **/
 /** chunk id: 396787, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F5: () => p,
+  F5: () => h,
   XA: () => f,
-  jv: () => h
+  jv: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -15,7 +15,7 @@ var Chunk653922 = require("./653922.js"),
   Chunk576470 = require("./576470.jsx"),
   Chunk339984 = require("./339984.js"),
   Chunk985018 = require("./985018.jsx");
-let p = (e, t) => (0, i.mMO)(async () => {
+let h = (e, t) => (0, i.mMO)(async () => {
     let {
       default: r
     } = await Promise.all([n.e("79149"), n.e("53653"), n.e("66863")]).then(n.bind(n, 551028));
@@ -42,14 +42,14 @@ let p = (e, t) => (0, i.mMO)(async () => {
       uploadType: u.HL.AVATAR,
       showUpsellHeader: false,
       modalTitle: d.intl.string(d.t["6yrpFR"]),
-      analyticsLocation: s.A.GROUP_DM_ICON_EDITOR,
+      analyticsLocation: o.A.GROUP_DM_ICON_EDITOR,
       analyticsLocations: t,
       allowRecentAvatarsSelection: false
     }, n))
   }),
-  h = (e, t) => {
-    p(n => {
-      o.A.setIcon(e, n.imageUri, t).catch(f)
+  p = (e, t) => {
+    h(n => {
+      s.A.setIcon(e, n.imageUri, t).catch(f)
     }, [t])
   },
   f = e => {

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 766569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => M
@@ -85,8 +85,8 @@ function M(e) {
     selectedGuild: l
   } = e, {
     analyticsLocations: M
-  } = (0, p.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), G = (0, a.bG)([C.default], () => {
-    let e = C.default.getCurrentUser();
+  } = (0, p.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), G = (0, a.bG)([x.default], () => {
+    let e = x.default.getCurrentUser();
     return s()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), U = (0, a.bG)([E.Ay], () => null != l ? E.Ay.getMember(l.id, G.id) : null), k = (0, a.bG)([h.A], () => !h.A.isFetchingProfile(G.id, null == l ? true : l.id)), B = (0, a.bG)([O.A], () => O.A.hidePersonalInformation), H = (0, a.cf)([I.A], () => L(D({}, I.A.getAllPending()), {
     source: I.A.getSource()
@@ -132,7 +132,7 @@ function M(e) {
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: P.intl.format(P.t["/PTB2E"], {
-        helpCenterLink: x.A.getArticleURL(v.MVz.GUILD_PROFILES)
+        helpCenterLink: C.A.getArticleURL(v.MVz.GUILD_PROFILES)
       })
     }), null != l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(j.A, {
@@ -164,8 +164,8 @@ function M(e) {
           className: null == z ? R.t : true,
           isHighlighted: true
         })),
-        children: (0, r.jsx)(N.A, {})
+        children: (0, r.jsx)(y.A, {})
       })]
-    }) : (0, r.jsx)(y.A, {})]
+    }) : (0, r.jsx)(N.A, {})]
   }) : (0, r.jsx)(o.y$y, {})
 }

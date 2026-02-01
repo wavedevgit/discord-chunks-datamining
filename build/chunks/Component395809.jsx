@@ -15,13 +15,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk287809 = require("./287809.js"),
   Chunk200301 = require("./200301.js");
 
-function h(e) {
+function p(e) {
   let {
     streamerId: t,
     channelId: n
   } = e, s = r.useRef(null), a = (0, o.bG)([u.default], () => u.default.getCurrentUser());
   return l()(null != a, "user cannot be null"), (0, d.A)(s, a, t, n), (0, i.jsx)("canvas", {
-    className: p.J,
+    className: h.J,
     ref: s
   })
 }
@@ -39,7 +39,7 @@ function f(e) {
   }, {
     autoTrackExposure: true
   }), l = (0, o.bG)([c.A], () => c.A.visibleOverlayCanvas);
-  return s && l ? (0, i.jsx)(h, {
+  return s && l ? (0, i.jsx)(p, {
     guildId: t,
     channelId: n,
     streamerId: r

@@ -1,8 +1,9 @@
-/** Chunk was on 88332 **/
-/** chunk id: 575443, original params: e,i,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 575443, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Mk: () => l
+  Mk: () => i
 });
 var Chunk927813 = require("./927813.js");
-let l = 7 * Chunk927813.A.Millis.DAY;
+let i = 7 * Chunk927813.A.Millis.DAY;
 Chunk927813.A.Millis.HOUR

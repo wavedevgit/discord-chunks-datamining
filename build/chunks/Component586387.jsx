@@ -1,7 +1,7 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 586387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => U
+  Ay: () => j
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -32,7 +32,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk186891 = require("./186891.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -51,7 +51,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function M(e) {
     user: t,
     guildId: n,
     onClose: r
-  } = e, a = t.id, s = (0, i.bG)([f.A, N.A, h.default], () => a === h.default.getId() ? f.A.getStatus() : N.A.getStatus(a, n), [a, n]);
+  } = e, a = t.id, s = (0, i.bG)([f.A, m.A, I.default], () => a === I.default.getId() ? f.A.getStatus() : m.A.getStatus(a, n), [a, n]);
   return (0, l.jsxs)("div", {
     className: L.mY,
     children: [(0, l.jsxs)("div", {
@@ -149,7 +149,7 @@ function v(e) {
   }(e, ["tag", "text", "disabled", "children", "onClick"]);
   return (0, l.jsx)(s.m, {
     text: n,
-    children: (0, l.jsx)(o.DUT, x(b({}, c), {
+    children: (0, l.jsx)(o.DUT, b(x({}, c), {
       tag: t,
       "aria-label": n,
       className: a()(L.YB, {
@@ -164,20 +164,20 @@ function v(e) {
   })
 }
 
-function j(e) {
+function U(e) {
   let {
     user: t,
     member: r,
     guildId: a,
     moderatorReportId: s
-  } = e, T = (0, i.bG)([O.A], () => O.A.getGuild(a)), {
-    canKickUser: I,
-    canBanUser: N,
+  } = e, T = (0, i.bG)([h.A], () => h.A.getGuild(a)), {
+    canKickUser: O,
+    canBanUser: m,
     canModerateMembers: f
-  } = (0, i.cf)([m.A, p.default, O.A], () => ({
+  } = (0, i.cf)([N.A, S.default, h.A], () => ({
     canKickUser: (0, g.L7)(t, T),
     canBanUser: (0, g.EZ)(t, T),
-    canModerateMembers: null != T && (0, _.b)(T.id, t.id, [p.default, O.A, m.A])
+    canModerateMembers: null != T && (0, d.b)(T.id, t.id, [S.default, h.A, N.A])
   }), [t, T]), G = (0, E.Z)(r), {
     analyticsLocations: R,
     newestAnalyticsLocation: D
@@ -185,11 +185,11 @@ function j(e) {
     targetUserId: t.id,
     location: D,
     locations: R
-  }), j = (0, i.bG)([h.default], () => h.default.getId() === (null == t ? true : t.id));
+  }), U = (0, i.bG)([I.default], () => I.default.getId() === (null == t ? true : t.id));
   return (0, l.jsxs)("div", {
     className: L.E_,
     children: [(0, l.jsx)(v, {
-      disabled: j,
+      disabled: U,
       text: C.intl.string(C.t["g33r/P"]),
       onClick: () => {
         u.A.openPrivateChannel({
@@ -203,14 +203,14 @@ function j(e) {
         height: 24
       })
     }), (0, l.jsx)(v, {
-      disabled: !I,
+      disabled: !O,
       text: C.intl.string(C.t["3glT6Z"]),
       onClick: () => {
         (0, o.mMO)(async () => {
           let {
             default: e
           } = await n.e("40243").then(n.bind(n, 324785));
-          return n => (0, l.jsx)(e, x(b({}, n), {
+          return n => (0, l.jsx)(e, b(x({}, n), {
             location: D,
             guildId: a,
             user: t,
@@ -225,14 +225,14 @@ function j(e) {
         color: o.LU0.colors.TEXT_DEFAULT.css
       })
     }), (0, l.jsx)(v, {
-      disabled: !N,
+      disabled: !m,
       text: C.intl.string(C.t["5MBJ5M"]),
       onClick: () => {
         (0, o.mMO)(async () => {
           let {
             default: e
           } = await n.e("2504").then(n.bind(n, 333179));
-          return n => (0, l.jsx)(e, x(b({}, n), {
+          return n => (0, l.jsx)(e, b(x({}, n), {
             location: D,
             guildId: a,
             user: t,
@@ -250,11 +250,11 @@ function j(e) {
       disabled: !f,
       text: G ? C.intl.string(C.t.N86XcP) : C.intl.string(C.t.kTlLrz),
       onClick: () => {
-        G ? (0, d.Y)({
+        G ? (0, _.Y)({
           guildId: r.guildId,
           userId: r.userId,
           anaylticsLocations: R
-        }) : (0, d.R)({
+        }) : (0, _.R)({
           guildId: r.guildId,
           userId: r.userId,
           anaylticsLocations: R,
@@ -270,9 +270,9 @@ function j(e) {
     }), (0, l.jsx)(v, {
       text: C.intl.string(C.t.IHTjzA),
       onClick: () => {
-        M(A.Nj.COPY_ID), (0, S.C)(t.id)
+        M(A.Nj.COPY_ID), (0, p.C)(t.id)
       },
-      disabled: !S.p5,
+      disabled: !p.p5,
       children: (0, l.jsx)(o.L9S, {
         size: "custom",
         width: 24,
@@ -283,20 +283,20 @@ function j(e) {
   })
 }
 
-function U(e) {
+function j(e) {
   let {
     userId: t,
     guildId: n,
     onClose: r,
     moderatorReportId: a
-  } = e, s = (0, i.bG)([p.default], () => p.default.getUser(t), [t]), o = (0, i.bG)([I.Ay], () => I.Ay.getMember(n, t), [n, t]);
+  } = e, s = (0, i.bG)([S.default], () => S.default.getUser(t), [t]), o = (0, i.bG)([O.Ay], () => O.Ay.getMember(n, t), [n, t]);
   return null == s || null == o ? null : (0, l.jsxs)("div", {
     className: L.kL,
     children: [(0, l.jsx)(M, {
       user: s,
       guildId: n,
       onClose: r
-    }), (0, l.jsx)(j, {
+    }), (0, l.jsx)(U, {
       user: s,
       member: o,
       guildId: n,

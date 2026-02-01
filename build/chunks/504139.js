@@ -14,16 +14,16 @@ var Chunk544420 = require("./544420.js"),
 
 function d(e, t, n, d, u) {
   if (null == t.activity) return null;
-  let p = t.activity.type,
-    h = u.session_id;
-  if (null == h) return null;
+  let h = t.activity.type,
+    p = u.session_id;
+  if (null == p) return null;
   let {
     icon: f,
     title: g,
     body: y
   } = (0, s.TB)(e, t, n), {
-    trackView: m,
-    trackClick: _
+    trackView: A,
+    trackClick: m
   } = (0, o.Y)(a.KS.ActivityInvite, {
     notif_type: a.KS.ActivityInvite,
     notif_user_id: n.id,
@@ -32,7 +32,7 @@ function d(e, t, n, d, u) {
     guild_id: e.guild_id,
     channel_id: e.id,
     channel_type: e.type,
-    activity_type: p,
+    activity_type: h,
     activity_name: u.name
   });
   return {
@@ -41,20 +41,20 @@ function d(e, t, n, d, u) {
     body: y,
     hint: e => (0, l.sI)(e, (0, o.J)(), c.t.aB5xLy),
     onNotificationShow: () => {
-      m()
+      A()
     },
     confirmText: c.intl.string(c.t.VJlc0S),
     onConfirmClick: (s, l) => {
       i.A.join({
         userId: n.id,
-        sessionId: h,
+        sessionId: p,
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.A.updateNotificationStatus(l), _("join")
+      }), r.A.updateNotificationStatus(l), m("join")
     },
     onDismissClick: () => {
-      _("dismiss")
+      m("dismiss")
     }
   }
 }

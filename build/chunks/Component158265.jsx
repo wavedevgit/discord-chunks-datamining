@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 158265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -35,10 +35,10 @@ let j = ["#51BC9D"],
     } = l.useContext(h.PW), {
       completionSpring: S,
       startCompletionAnimation: O
-    } = (0, g.Ry)(), T = (null == (t = y.userStatus) ? true : t.completedAt) != null, E = l.useRef(false), N = (0, d.bG)([m.A], () => m.A.useReducedMotion), w = l.useRef(null), I = (0, d.bG)([p.A], () => p.A.hasLayers()), P = (0, u.A)(I), [k, R] = l.useState(null), [D, M] = l.useState(null), L = l.useRef(new s.OH({
+    } = (0, g.Ry)(), T = (null == (t = y.userStatus) ? true : t.completedAt) != null, E = l.useRef(false), N = (0, d.bG)([m.A], () => m.A.useReducedMotion), w = l.useRef(null), I = (0, d.bG)([p.A], () => p.A.hasLayers()), k = (0, u.A)(I), [P, R] = l.useState(null), [D, M] = l.useState(null), L = l.useRef(new s.OH({
       gravity: 0,
       wind: 0
-    })), U = (0, s.f9)(k, D), B = l.useCallback(() => {
+    })), U = (0, s.f9)(P, D), B = l.useCallback(() => {
       if (N) return;
       let e = r.current,
         t = w.current;
@@ -120,10 +120,10 @@ let j = ["#51BC9D"],
     return (l.useEffect(() => {
       T && A && !G && (O(), B())
     }, [A, T, O, B, G]), l.useEffect(() => {
-      T && !I && P && setTimeout(() => {
+      T && !I && k && setTimeout(() => {
         O(), B()
       }, 200)
-    }, [T, P, I, O, B]), l.useEffect(() => {
+    }, [T, k, I, O, B]), l.useEffect(() => {
       U.isReady && (!E.current && T && (O(), B()), E.current = T)
     }, [T, E, B, O, U]), l.useEffect(() => {
       _ && T && (O(), B())

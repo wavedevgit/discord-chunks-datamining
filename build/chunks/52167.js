@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 52167, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   d: () => U
@@ -64,7 +64,7 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
         title: p.intl.string(p.t["/xvEMy"]),
         description: p.intl.string(p.t.HKWdjj),
         className: t.clientThemesCard,
-        imageSource: N,
+        imageSource: y,
         imageClassName: t.clientThemesImage
       },
       customAppIcons: {
@@ -124,25 +124,25 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
       soundboard: {
         title: p.intl.string(p.t["lGcW+c"]),
         description: p.intl.string(p.t["/fDyO+"]),
-        imageSource: G(i, O, C),
+        imageSource: G(i, O, x),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: p.intl.string(p.t["1c+xwT"]),
         description: p.intl.string(p.t.hJG8ZN),
-        imageSource: G(i, x, L),
+        imageSource: G(i, C, L),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: p.intl.string(p.t.tzdIwI),
         description: p.intl.string(p.t.hJG8ZN),
-        imageSource: G(i, x, L),
+        imageSource: G(i, C, L),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: p.intl.string(p.t.tzdIwI),
         description: p.intl.string(p.t.hJG8ZN),
-        imageSource: G(i, x, L),
+        imageSource: G(i, C, L),
         imageClassName: t.stickersImage
       },
       streaming: {
@@ -170,7 +170,7 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
       videoBackground: {
         title: p.intl.string(p.t.NaGpTf),
         description: p.intl.string(p.t["A8O/Qw"]),
-        imageSource: G(i, I, y),
+        imageSource: G(i, I, N),
         imageClassName: t.videoBackgroundImage
       }
     }

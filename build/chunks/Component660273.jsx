@@ -1,5 +1,5 @@
-/** Chunk was on 88974 **/
-/** chunk id: 660273, original params: t,n,i (module,exports,require) **/
+/** Chunk was on 78441 **/
+/** chunk id: 660273, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
 });
@@ -12,15 +12,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk867455 = require("./867455.js"),
   Chunk985018 = require("./985018.jsx");
 
-function u(t, n) {
-  let i = (0, r.bG)([d.A], () => d.A.hasJoined(t.id));
-  return (0, r.bG)([a.A], () => null != t.guild_id && a.A.isLurking(t.guild_id)) ? null : i ? (0, e.jsx)(l.Drp, {
+function u(t, e) {
+  let n = (0, r.bG)([o.A], () => o.A.hasJoined(t.id));
+  return (0, r.bG)([a.A], () => null != t.guild_id && a.A.isLurking(t.guild_id)) ? null : n ? (0, i.jsx)(l.Drp, {
     id: "leave-thread",
-    label: t.isForumPost() ? s.intl.string(s.t["2LsZdT"]) : s.intl.string(s.t["fa/84m"]),
-    action: () => o.A.leaveThread(t, n)
-  }) : (0, e.jsx)(l.Drp, {
+    label: t.isForumPost() ? d.intl.string(d.t["2LsZdT"]) : d.intl.string(d.t["fa/84m"]),
+    action: () => s.A.leaveThread(t, e)
+  }) : (0, i.jsx)(l.Drp, {
     id: "join-thread",
-    label: t.isForumPost() ? s.intl.string(s.t.ihLPiO) : s.intl.string(s.t["10kukS"]),
-    action: () => o.A.joinThread(t, n)
+    label: t.isForumPost() ? d.intl.string(d.t.ihLPiO) : d.intl.string(d.t["10kukS"]),
+    action: () => s.A.joinThread(t, e)
   })
 }

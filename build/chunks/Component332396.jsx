@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 332396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => N
@@ -33,7 +33,7 @@ function C(e, t) {
     children: [(0, r.jsx)(e, {
       className: E.RI,
       color: "currentColor"
-    }), (0, r.jsx)(p.Ay, {
+    }), (0, r.jsx)(h.Ay, {
       guildId: true,
       users: t,
       max: 6
@@ -42,10 +42,10 @@ function C(e, t) {
 }
 
 function S() {
-  let e = (0, c.yK)([j.A, b.A], () => _.default.keys(j.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
+  let e = (0, c.yK)([x.A, b.A], () => j.default.keys(x.A.getFavoriteChannels()).map(e => b.A.getChannel(e)).filter(O.Vq)),
     t = e.map(e => e.id),
-    n = e.filter(e => e.type === x.rbe.GUILD_VOICE),
-    l = e.filter(e => e.type === x.rbe.GUILD_STAGE_VOICE).map(e => e.id),
+    n = e.filter(e => e.type === _.rbe.GUILD_VOICE),
+    l = e.filter(e => e.type === _.rbe.GUILD_STAGE_VOICE).map(e => e.id),
     i = (0, c.yK)([y.Ay], () => o().flatMap(n, e => y.Ay.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
@@ -64,8 +64,8 @@ function S() {
       return e
     }),
     u = (0, c.yK)([m.A], () => m.A.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    v = (0, c.yK)([h.Ay], () => {
-      let e = h.Ay.getEmbeddedActivitiesByChannel(),
+    v = (0, c.yK)([p.Ay], () => {
+      let e = p.Ay.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let i of t) {
         var r, l;
@@ -82,7 +82,7 @@ function S() {
         size: "lg",
         color: "currentColor",
         className: E.RI
-      }), (0, r.jsx)(p.Ay, {
+      }), (0, r.jsx)(h.Ay, {
         guildId: true,
         users: s,
         max: 3

@@ -23,8 +23,8 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = 10 * Chunk927813.A.Millis.SECOND,
-  m = new Map,
+let m = 10 * Chunk927813.A.Millis.SECOND,
+  f = new Map,
   A = new Set,
   _ = (e, t, n) => {
     n([u.A.CLOSE, t], e)
@@ -61,11 +61,11 @@ class b extends Chunk143236.EventEmitter {
       var n, r;
       let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
       u.emit("disconnect", e, i ? true : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
-      let [l] = null != (r = Array.from(m.entries()).find(t => {
+      let [l] = null != (r = Array.from(f.entries()).find(t => {
         let [n, r] = t;
         return r === e
       })) ? r : [null, null];
-      null != l && m.delete(l)
+      null != l && f.delete(l)
     }), g(this, "handleIFrameMount", e => {
       let {
         id: t
@@ -77,26 +77,26 @@ class b extends Chunk143236.EventEmitter {
             application_id: t,
             channel_id: (0, l.H)(n.location),
             guild_id: (0, l.D)(n.location),
-            timeout_ms: f
+            timeout_ms: m
           })
         })
-      }, f)
+      }, m)
     }), g(this, "handleIFrameUnmount", e => {
       var t;
       let {
         id: n
       } = e;
       A.delete(n);
-      let [r, i] = null != (t = Array.from(m.entries()).find(e => {
+      let [r, i] = null != (t = Array.from(f.entries()).find(e => {
         let [t, r] = e;
         return r.frameId === n
       })) ? t : [null, null];
       null != i && null != r && (this.disconnectSocket(i, {
         code: h.YI$.CLOSE_NORMAL,
         message: "iFrame gone"
-      }, true), m.delete(r))
+      }, true), f.delete(r))
     }), g(this, "handleMessage", (e, t, n) => {
-      let r = m.get(t);
+      let r = f.get(t);
       try {
         this.routeEvent(r, t, e, n)
       } catch (e) {
@@ -167,7 +167,7 @@ class b extends Chunk143236.EventEmitter {
         if (await this.validateSocketClient(i, e, t.client_id), !A.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.A({
           closeCode: h.YI$.CLOSE_UNSUPPORTED
         }, "Unrecognized frame ID ".concat(s));
-        m.set(e, i), A.delete(s), i.authorization.scopes.push(p.W_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        f.set(e, i), A.delete(s), i.authorization.scopes.push(p.W_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }

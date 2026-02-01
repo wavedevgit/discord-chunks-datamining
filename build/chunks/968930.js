@@ -31,15 +31,15 @@ class h extends Chunk272355.A {
       } = e;
       if (h) return void(0, c.e$)(t);
       let g = u.default.getCurrentUser(),
-        f = null != r ? a.zq : i.zq,
-        m = d.Ay.canUseAnimatedAvatar(g);
-      if (m || "image/gif" !== n.type) return void f(t);
+        m = null != r ? a.zq : i.zq,
+        f = d.Ay.canUseAnimatedAvatar(g);
+      if (f || "image/gif" !== n.type) return void m(t);
       if (null == g) return;
       let A = (0, o.V7)({
         userId: g.id,
         image: t
       });
-      if (!m) return void(0, s.G)({
+      if (!f) return void(0, s.G)({
         uploadType: p.HL.AVATAR,
         imageSrc: A,
         analyticsSource: l

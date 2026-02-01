@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 447253, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -21,7 +21,7 @@ function g(e) {
     animate: n
   } = e, l = (0, a.bG)([u.A], () => u.A.getGuild(t), [t]), i = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
   return null == l ? (0, r.jsx)("div", {
-    className: s()(p.VL, p.zU),
+    className: s()(h.VL, h.zU),
     children: (0, r.jsx)(o.EpV, {
       color: "currentColor"
     })
@@ -31,7 +31,7 @@ function g(e) {
     size: c.A.Sizes.MINI,
     iconSize: i,
     lossless: true,
-    className: p.VL,
+    className: h.VL,
     tabIndex: false
   })
 }
@@ -44,18 +44,18 @@ function f(e) {
   } = e, {
     children: i
   } = t, a = n && l, c = (0, r.jsx)("div", {
-    className: p.hJ,
+    className: h.hJ,
     children: (0, r.jsx)("div", {
-      className: p.Eh,
+      className: h.Eh,
       children: (0, r.jsx)(o.sjq, {
         size: "sm",
         color: "currentColor"
       })
     })
   }), u = (0, r.jsx)("div", {
-    className: p.qJ,
+    className: h.qJ,
     children: (0, r.jsx)("div", {
-      className: p.jg,
+      className: h.jg,
       children: i.slice(0, 4).map(e => (0, r.jsx)(g, {
         guildId: e.id,
         animate: n
@@ -65,8 +65,8 @@ function f(e) {
   return (0, r.jsxs)("div", {
     "aria-hidden": true,
     className: s()({
-      [p.NG]: a,
-      [p.yd]: !a
+      [h.NG]: a,
+      [h.yd]: !a
     }),
     children: [!a && c, u]
   })
@@ -86,12 +86,12 @@ function m(e) {
     folderButtonContent: A,
     onClick: y,
     onContextMenu: O,
-    onHoverChange: _,
-    onKeyDown: j,
-    treeItemProps: x
+    onHoverChange: j,
+    onKeyDown: x,
+    treeItemProps: _
   } = e, {
     onFocus: v
-  } = x, E = function(e, t) {
+  } = _, E = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -107,14 +107,14 @@ function m(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(x, ["onFocus"]), {
+  }(_, ["onFocus"]), {
     "aria-setsize": C,
     "aria-posinset": S
   } = e, [I, N] = l.useState(false), T = l.useCallback(() => {
-    a || N(true), null == _ || _(true)
-  }, [a, _]), P = l.useCallback(() => {
-    a || N(false), null == _ || _(false)
-  }, [a, _]), w = s || null == c ? null : (0, d.oi)(c), R = !s && u > 0 ? (0, d.wN)(u, g ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+    a || N(true), null == j || j(true)
+  }, [a, j]), P = l.useCallback(() => {
+    a || N(false), null == j || j(false)
+  }, [a, j]), w = s || null == c ? null : (0, d.oi)(c), R = !s && u > 0 ? (0, d.wN)(u, g ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
   return (0, r.jsx)(o.vN3, {
     children: (0, r.jsxs)(o.DUT, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -134,12 +134,12 @@ function m(e) {
       }
       return e
     }({
-      className: p.H3,
+      className: h.H3,
       onClick: y,
       onContextMenu: O,
       onMouseEnter: T,
       onMouseLeave: P,
-      onKeyDown: j,
+      onKeyDown: x,
       onFocus: v,
       focusProps: {
         enabled: false
@@ -151,7 +151,7 @@ function m(e) {
       "aria-expanded": s,
       "aria-owns": b,
       children: [(0, r.jsx)(o.AC4, {
-        children: h.intl.formatToPlainString(h.t["90/DwM"], {
+        children: p.intl.formatToPlainString(p.t["90/DwM"], {
           folderName: m,
           mentions: u
         })
@@ -164,9 +164,9 @@ function m(e) {
           width: (0, o.o6S)(u)
         },
         children: (0, r.jsx)("div", {
-          className: p.vA,
+          className: h.vA,
           children: null != A ? (0, r.jsx)("div", {
-            className: p.hJ,
+            className: h.hJ,
             children: A
           }) : (0, r.jsx)(f, {
             folderNode: i,

@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 961314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -14,18 +14,18 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk234944 = require("./234944.js");
 
-function h(e) {
+function p(e) {
   let {
     guildEvent: t,
     recurrenceId: n
-  } = e, h = (0, a.Ay)(t, n), p = (0, s.A)(n, t.id);
+  } = e, p = (0, a.Ay)(t, n), h = (0, s.A)(n, t.id);
   if (null == t) return null;
-  let g = (null == t ? true : t.scheduled_start_time) != null ? (0, o.j)(p, h.startTime, new Date(null == t ? true : t.scheduled_start_time)) : null;
+  let g = (null == t ? true : t.scheduled_start_time) != null ? (0, o.j)(h, p.startTime, new Date(null == t ? true : t.scheduled_start_time)) : null;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Ay.Divider, {
       className: d.yF
     }), (0, r.jsx)(c.L, {
-      startTime: h.startTime.toISOString(),
+      startTime: p.startTime.toISOString(),
       status: null != g ? g : t.status,
       liveText: u.intl.string(u.t.kM6e4G),
       className: d.aF,

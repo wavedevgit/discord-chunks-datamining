@@ -1,12 +1,22 @@
-/** Chunk was on 31748 **/
-/** chunk id: 655237, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 655237, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  A: () => f
+  A: () => _
 });
-var r, l, Chunk311907 = require("./311907.js"),
+var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk600975 = require("./600975.js"),
   Chunk961350 = require("./961350.js");
+
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
 let c = {},
   u = (0, Chunk600975.C)({
     kind: "user",
@@ -23,7 +33,15 @@ let c = {},
       }
     }]
   });
-class d extends(l = Chunk311907.Ay.Store) {
+
+function d(e) {
+  delete c[e.socketId]
+}
+
+function f(e) {
+  delete c[e.socketId], e.suppressNotifications && (c[e.socketId] = e.targetUserId)
+}
+class p extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(s.default)
   }
@@ -37,17 +55,9 @@ class d extends(l = Chunk311907.Ay.Store) {
       if (c[e] === s.default.getId()) returntrue;
     returnfalse
   }
-}(r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: "RpcNotificationSettingsStore",
-  enumerable: true,
-  configurable: true,
-  writable: true
-}) : d[r] = "RpcNotificationSettingsStore";
-let f = new d(Chunk73153.h, {
-  RPC_APP_DISCONNECTED: function(e) {
-    delete c[e.socketId]
-  },
-  SET_RPC_NOTIFICATION_SETTINGS: function(e) {
-    delete c[e.socketId], e.suppressNotifications && (c[e.socketId] = e.targetUserId)
-  }
+}
+l(p, "displayName", "RpcNotificationSettingsStore");
+let _ = new p(Chunk73153.h, {
+  RPC_APP_DISCONNECTED: d,
+  SET_RPC_NOTIFICATION_SETTINGS: f
 })

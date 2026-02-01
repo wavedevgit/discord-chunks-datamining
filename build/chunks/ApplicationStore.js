@@ -249,7 +249,7 @@ function G(e) {
   return n.size > 0
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     payment: n
@@ -258,7 +258,7 @@ function F(e) {
   y(o.Ay.createFromServer(n.sku.application))
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     giftCode: n
@@ -390,9 +390,9 @@ let Q = new Z(Chunk73153.h, {
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: k,
   GUILD_APPLICATIONS_FETCH_SUCCESS: U,
   BILLING_PAYMENTS_FETCH_SUCCESS: G,
-  PAYMENT_UPDATE: F,
+  PAYMENT_UPDATE: V,
   INVITE_RESOLVE_SUCCESS: B,
-  GIFT_CODE_RESOLVE_SUCCESS: V,
+  GIFT_CODE_RESOLVE_SUCCESS: F,
   LIBRARY_FETCH_SUCCESS: D,
   STORE_LISTING_FETCH_SUCCESS: H,
   LOAD_MESSAGES_SUCCESS: Y,

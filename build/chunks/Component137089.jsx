@@ -1,9 +1,9 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 137089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => j,
+  Ay: () => x,
   fz: () => O,
-  tt: () => _
+  tt: () => j
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -49,16 +49,16 @@ function O(e) {
     canHaveVoiceSummary: u
   } = (0, f.B3)(n, s, t), d = c ? a ? 9 : 12 : 0;
   if (!u || t === g.PU) return d;
-  let h = n.getNamedCategoryFromSection(t);
-  return null == h ? d : (0, f.Bo)({
-    category: h,
+  let p = n.getNamedCategoryFromSection(t);
+  return null == p ? d : (0, f.Bo)({
+    category: p,
     selectedChannelId: l,
     selectedVoiceChannelId: i,
     voiceStates: r
   }) ? (a && "cozy" === o ? 42 : 34) + d : d
 }
 
-function _(e, t, n) {
+function j(e, t, n) {
   if (e === t.voiceChannelsSectionNumber) return "voice-channels-button";
   let {
     hasDivider: r,
@@ -66,37 +66,37 @@ function _(e, t, n) {
   } = (0, f.B3)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(l ? "-voice-summary" : "")
 }
-let j = Chunk64700.memo(function(e) {
+let x = Chunk64700.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
     guildChannelsVersion: i,
     voiceStates: m,
     guildId: O,
-    selectedChannelId: _,
-    selectedVoiceChannelId: j,
-    optInEnabled: x
+    selectedChannelId: j,
+    selectedVoiceChannelId: x,
+    optInEnabled: _
   } = e, {
     hasDivider: v,
     canHaveVoiceSummary: E
-  } = l.useMemo(() => (0, f.B3)(n, x, t), [n, x, t, i]), C = l.useMemo(() => t === g.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(O), {
+  } = l.useMemo(() => (0, f.B3)(n, _, t), [n, _, t, i]), C = l.useMemo(() => t === g.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(O), {
     enableWaveformIcon: I
-  } = (0, c.b)(O, "ChannelListSectionFooter"), N = (0, a.yK)([h.Ay], () => {
+  } = (0, c.b)(O, "ChannelListSectionFooter"), N = (0, a.yK)([p.Ay], () => {
     if (null == C || !C.isCollapsed || !E) return [];
     let e = C.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
-      let e = h.Ay.isChannelOrParentOptedIn(O, n.id);
+      let e = p.Ay.isChannelOrParentOptedIn(O, n.id);
       (!S || e) && t.push(n)
     }
     return t
-  }, [C, E, O, S]), T = l.useMemo(() => (0, p.fK)({
+  }, [C, E, O, S]), T = l.useMemo(() => (0, h.fK)({
     channels: N,
-    selectedChannelId: _,
-    selectedVoiceChannelId: j,
+    selectedChannelId: j,
+    selectedVoiceChannelId: x,
     voiceStates: m
-  }), [N, _, j, m]);
+  }), [N, j, x, m]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(y, {
     guildChannels: n,
     guildChannelsVersion: i

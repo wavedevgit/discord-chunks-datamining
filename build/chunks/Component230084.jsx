@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 230084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -31,11 +31,11 @@ function A(e) {
     className: h,
     disabled: E = false,
     isTryItOut: O = false,
-    forcedDivider: C,
-    withHighlight: x = false
+    forcedDivider: x,
+    withHighlight: C = false
   } = e, {
     newestAnalyticsLocation: S
-  } = (0, c.Ay)(), T = x ? o.wLn : a.$n, I = i.useCallback(() => {
+  } = (0, c.Ay)(), T = C ? o.wLn : a.$n, I = i.useCallback(() => {
     (0, d.XD)({
       uploadType: _.HL.AVATAR,
       analyticsSource: S,
@@ -49,12 +49,12 @@ function A(e) {
     title: A,
     errors: n,
     disabled: E,
-    forcedDivider: C,
+    forcedDivider: x,
     children: (0, r.jsxs)("div", {
       className: m.NC,
       children: [(0, r.jsx)(T, {
         className: s()({
-          [m.yj]: x
+          [m.yj]: C
         }),
         size: a.$n.Sizes.SMALL,
         onClick: I,

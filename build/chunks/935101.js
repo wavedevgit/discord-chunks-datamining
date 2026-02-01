@@ -1,7 +1,7 @@
 /** Chunk was on 31294 **/
-/** chunk id: 935101, original params: e,_,t (module,exports,require) **/
+/** chunk id: 935101, original params: e,t,_ (module,exports,require) **/
 require.d(exports, {
-  A: () => u
+  A: () => f
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,29 +13,29 @@ var Chunk64700 = require("./64700.js"),
   Chunk927813 = require("./927813.js"),
   Chunk340913 = require("./340913.js"),
   Chunk731854 = require("./731854.js");
-let d = 3 * Chunk927813.A.Millis.SECOND;
+let p = 3 * Chunk927813.A.Millis.SECOND;
 
-function u() {
+function f() {
   let {
     showPTTSpeakingIndicator: e
-  } = p.A.useConfig({
+  } = l.A.useConfig({
     location: "useSpeakingWhilePTT"
-  }), [_, t] = a.useState(false), s = (0, o.bG)([c.A], () => c.A.getMode() === b.TB.PUSH_TO_TALK), u = (0, o.bG)([i.A], () => i.A.getRTCConnectionId()), f = a.useRef(new r.Ep);
-  return a.useEffect(() => {
-    t(false)
-  }, [u]), a.useEffect(() => {
-    let _ = 0,
-      a = f.current;
+  }), [t, _] = o.useState(false), d = (0, a.bG)([r.A], () => r.A.getMode() === u.TB.PUSH_TO_TALK), f = (0, a.bG)([i.A], () => i.A.getRTCConnectionId()), b = o.useRef(new c.Ep);
+  return o.useEffect(() => {
+    _(false)
+  }, [f]), o.useEffect(() => {
+    let t = 0,
+      o = b.current;
 
-    function o(e, o) {
-      let n = (o & b.ME.VOICE) === b.ME.VOICE,
-        r = l.A.isCurrentUserPTTActive();
-      n && !r ? ++_ >= 5 && (t(true), a.start(d, () => {
-        t(false)
-      })) : _ = 0
+    function a(e, a) {
+      let n = (a & u.ME.VOICE) === u.ME.VOICE,
+        c = s.A.isCurrentUserPTTActive();
+      n && !c ? ++t >= 5 && (_(true), o.start(p, () => {
+        _(false)
+      })) : t = 0
     }
-    return e && s && null != u && c.A.getMediaEngine().on(n.bg.VoiceActivity, o), () => {
-      c.A.getMediaEngine().removeListener(n.bg.VoiceActivity, o), a.stop()
+    return e && d && null != f && r.A.getMediaEngine().on(n.bg.VoiceActivity, a), () => {
+      r.A.getMediaEngine().removeListener(n.bg.VoiceActivity, a), o.stop()
     }
-  }, [e, s, u]), _
+  }, [e, d, f]), t
 }

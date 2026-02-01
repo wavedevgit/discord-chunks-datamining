@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 855446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => j
+  C: () => x
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,23 +23,23 @@ let y = ["embedded_cover"],
     tension: 800,
     friction: 24
   };
-var _ = ((r = _ || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var j = ((r = j || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function j(e) {
+function x(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: s,
-    aspectRatio: _ = 0,
-    animatedDivClass: j,
-    commandOrigin: x
+    aspectRatio: j = 0,
+    animatedDivClass: x,
+    commandOrigin: _
   } = e, {
     onActivityItemSelected: v,
     imageBackground: E,
     activityAction: C,
     labelType: S
-  } = (0, h.Ay)({
+  } = (0, p.Ay)({
     context: n,
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
@@ -47,7 +47,7 @@ function j(e) {
     onActivityItemSelected: s,
     embeddedActivitiesManager: f.A,
     assetNames: y,
-    commandOrigin: x
+    commandOrigin: _
   }), [I, N] = i.useState(false), T = i.useCallback(() => {
     N(true)
   }, [N]), P = i.useCallback(() => {
@@ -62,7 +62,7 @@ function j(e) {
     })
   }), [S]), R = i.useMemo(() => {
     switch (C) {
-      case h.o6.JOIN:
+      case p.o6.JOIN:
         return (0, l.jsx)("div", {
           className: A.m9,
           children: (0, l.jsx)("div", {
@@ -74,7 +74,7 @@ function j(e) {
             })
           })
         });
-      case h.o6.LEAVE:
+      case p.o6.LEAVE:
         return (0, l.jsx)("div", {
           className: A.m9,
           children: (0, l.jsx)("div", {
@@ -86,7 +86,7 @@ function j(e) {
             })
           })
         });
-      case h.o6.START:
+      case p.o6.START:
       default:
         return null
     }
@@ -117,14 +117,14 @@ function j(e) {
             questContent: c.u.ACTIVITY_SUGGESTION,
             children: n => (0, l.jsxs)(o.animated.div, {
               ref: n,
-              className: a()(e, A.LM, j, {
-                [A.$g]: 0 === _,
-                [A.J3]: 1 === _
+              className: a()(e, A.LM, x, {
+                [A.$g]: 0 === j,
+                [A.J3]: 1 === j
               }),
               style: {
                 transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
               },
-              children: [(0, l.jsx)(p.A, {
+              children: [(0, l.jsx)(h.A, {
                 imageBackground: E,
                 applicationName: r.application.name,
                 imageClassName: A.jj,
@@ -137,4 +137,4 @@ function j(e) {
     })
   })
 }
-j.AspectRatio = _
+x.AspectRatio = j

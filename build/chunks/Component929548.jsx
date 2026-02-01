@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 929548, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 929548, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  L: () => R
+  L: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -27,61 +27,61 @@ let p = (0, Chunk839214.D)(() => ({
   isUploading: false,
   isDisabled: false
 }));
-async function m() {
-  let e = await c.A.fileManager.getLogPath();
-  c.A.fileManager.showItemInFolder(e)
+async function L() {
+  let t = await A.A.fileManager.getLogPath();
+  A.A.fileManager.showItemInFolder(t)
 }
 
-function f(e) {
-  (0, u.A)({
+function D(t) {
+  (0, a.A)({
     title: b.intl.string(b.t["7UXEF2"]),
     subtitle: b.intl.string(b.t.IYPrRl),
     confirmText: b.intl.string(b.t.BddRzS),
-    onConfirm: () => T.A.setDebugLogging(e)
+    onConfirm: () => T.A.setDebugLogging(t)
   })
 }
-async function L(e) {
+async function m(t) {
   let {
-    onUploadStart: t,
+    onUploadStart: e,
     onUploadFinish: i
-  } = e;
-  null == t || t();
+  } = t;
+  null == e || e();
   try {
-    let e, t;
-    await g.A.getMediaEngine().writeAudioDebugState(), await I.A.submitLiveCrashReport({
+    let t, e;
+    await _.A.getMediaEngine().writeAudioDebugState(), await I.A.submitLiveCrashReport({
       message: {
         message: "User Live Dump"
       }
-    }), await (0, S.a)(C.Umv.RTC), e = b.intl.string(b.t["fKBB8+"]), t = b.intl.string(b.t.BvyxE7), (0, a.A)({
-      title: e,
-      subtitle: t
+    }), await (0, c.a)(N.Umv.RTC), t = b.intl.string(b.t["fKBB8+"]), e = b.intl.string(b.t.BvyxE7), (0, u.A)({
+      title: t,
+      subtitle: e
     })
-  } catch (a) {
+  } catch (u) {
     var l, s;
-    let e, t, i, r;
-    l = a.displayMessage, e = b.intl.string(b.t.QZg0J7), t = null != l ? l : b.intl.string(b.t.VzHcSm), i = null == (s = (0, _.B1)(_.iy.DEBUG_LOG_UPLOAD_FAILED)) ? true : s.errorCode, r = b.intl.formatToPlainString(b.t.ejOT95, {
+    let t, e, i, r;
+    l = u.displayMessage, t = b.intl.string(b.t.QZg0J7), e = null != l ? l : b.intl.string(b.t.VzHcSm), i = null == (s = (0, E.B1)(E.iy.DEBUG_LOG_UPLOAD_FAILED)) ? true : s.errorCode, r = b.intl.formatToPlainString(b.t.ejOT95, {
       errorCode: i
     }), (0, d.qfG)(i => {
       var l, s;
-      return (0, n.jsx)(d.VoidConfirmModal, (l = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var i = null != arguments[t] ? arguments[t] : {},
+      return (0, n.jsx)(d.VoidConfirmModal, (l = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var i = null != arguments[e] ? arguments[e] : {},
             n = Object.keys(i);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(i, e).enumerable
-          }))), n.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(i, t).enumerable
+          }))), n.forEach(function(e) {
             var n;
-            n = i[t], t in e ? Object.defineProperty(e, t, {
+            n = i[e], e in t ? Object.defineProperty(t, e, {
               value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : t[e] = n
           })
         }
-        return e
+        return t
       }({
-        header: e,
+        header: t,
         confirmButtonColor: o.$n.Colors.BRAND,
         confirmText: b.intl.string(b.t.BddRzS)
       }, i), s = s = {
@@ -93,7 +93,7 @@ async function L(e) {
           },
           children: [(0, n.jsx)(d.Text, {
             variant: "text-md/normal",
-            children: t
+            children: e
           }), (0, n.jsx)(d.Text, {
             variant: "text-sm/semibold",
             selectable: true,
@@ -103,23 +103,23 @@ async function L(e) {
             children: r
           })]
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-        var i = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(t, e) {
+        var i = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
+          var n = Object.getOwnPropertySymbols(t);
           i.push.apply(i, n)
         }
         return i
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(s)).forEach(function(t) {
+        Object.defineProperty(l, t, Object.getOwnPropertyDescriptor(s, t))
       }), l))
     })
   } finally {
     null == i || i()
   }
 }
-async function D() {
-  await L({
+async function R() {
+  await m({
     onUploadStart: () => p.setState({
       isUploading: true
     }),
@@ -129,15 +129,15 @@ async function D() {
     })
   })
 }
-let R = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let f = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
   useSearchTerms: () => [b.intl.string(b.t["726JHL"]), b.intl.string(b.t.EbwFfR), b.intl.string(b.t.nuPtYi)],
   usePredicate: function() {
-    let e = (0, r.bG)([g.A], () => g.A.supports(N.O5.DEBUG_LOGGING));
-    return s.Av && e && null != c.A.fileManager.readLogFiles
+    let t = (0, r.bG)([_.A], () => _.A.supports(C.O5.DEBUG_LOGGING));
+    return s.Av && t && null != A.A.fileManager.readLogFiles
   },
   Component: function() {
-    let e = (0, r.bG)([g.A], () => g.A.getDebugLogging()),
-      t = p.useField("isUploading"),
+    let t = (0, r.bG)([_.A], () => _.A.getDebugLogging()),
+      e = p.useField("isUploading"),
       i = p.useField("isDisabled"),
       s = l.useId();
     return (0, n.jsxs)("fieldset", {
@@ -151,8 +151,8 @@ let R = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
         children: [(0, n.jsx)(d.dOG, {
           label: b.intl.string(b.t["726JHL"]),
           description: b.intl.string(b.t["/7ak9Q"]),
-          checked: e,
-          onChange: f
+          checked: t,
+          onChange: D
         }), (0, n.jsx)("div", {
           role: "group",
           "aria-labelledby": s,
@@ -160,14 +160,14 @@ let R = (0, Chunk419954.E2)(Chunk780964.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
             children: [(0, n.jsx)(d.Button, {
               variant: "secondary",
               text: b.intl.string(b.t.EbwFfR),
-              onClick: D,
-              loading: t,
+              onClick: R,
+              loading: e,
               disabled: i,
               "aria-label": b.intl.string(b.t.aY1OH2)
             }), (0, n.jsx)(d.Button, {
               variant: "secondary",
               text: b.intl.string(b.t.nuPtYi),
-              onClick: m,
+              onClick: L,
               "aria-label": b.intl.string(b.t["L/hFOe"])
             })]
           })

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 78837, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => A
@@ -26,22 +26,22 @@ function A(e) {
     onExpandedChangeComplete: f,
     children: b,
     animate: h = true
-  } = e, E = i.useRef(null), [O, C] = i.useState(null), x = i.useRef(l), S = i.useRef(false);
+  } = e, E = i.useRef(null), [O, x] = i.useState(null), C = i.useRef(l), S = i.useRef(false);
   i.useEffect(() => {
-    x.current !== l && (S.current = true, x.current = l)
+    C.current !== l && (S.current = true, C.current = l)
   }, [l]);
   let T = i.useCallback(e => {
       null != e.target && S.current && (S.current = false, null == f || f(l))
     }, [l, f]),
     I = i.useMemo(() => (0, a.debounce)(T, 50), [T]),
-    y = (0, p.w)(I, [], {
+    N = (0, p.w)(I, [], {
       enabled: null != f
     }),
-    N = l && null != O;
+    y = l && null != O;
   return i.useLayoutEffect(() => {
-    null != E.current && null == O && C(E.current.clientHeight)
+    null != E.current && null == O && x(E.current.clientHeight)
   }, [O]), (0, r.jsxs)(o.EN, {
-    ref: y,
+    ref: N,
     isExpanded: l,
     onExpandedChange: A,
     children: [(0, r.jsx)(m.U, {
@@ -50,7 +50,7 @@ function A(e) {
         minHeight: O
       } : true,
       title: t,
-      description: N ? true : n,
+      description: y ? true : n,
       secondaryTrailingElement: (0, r.jsx)(_.vN3, {
         children: (0, r.jsx)(c.$, {
           slot: "trigger",

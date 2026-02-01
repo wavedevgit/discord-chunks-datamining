@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 675171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
@@ -21,8 +21,8 @@ let u = "no_text_activity",
   };
 
 function h() {
-  let e = (0, r.bG)([l.Ay], () => l.Ay.getCurrentEmbeddedActivity()),
-    t = (0, r.bG)([l.Ay], () => l.Ay.getActivityPanelMode()),
+  let e = (0, l.bG)([r.Ay], () => r.Ay.getCurrentEmbeddedActivity()),
+    t = (0, l.bG)([r.Ay], () => r.Ay.getActivityPanelMode()),
     n = (0, i.H)(null == e ? true : e.location);
-  return true === e || (0, s.A)(n, a.A) ? d[u] : d[t]
+  return true === e || (0, a.A)(n, s.A) ? d[u] : d[t]
 }

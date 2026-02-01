@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 580960, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => j
 }), require("./65821.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -107,7 +107,7 @@ class O extends Chunk272355.A {
     super(...e), b(this, "_premiumPaymentModalCloseResolve", null), b(this, "_premiumPaymentModalCloseReject", null), b(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !d.A.isFetchingOffer();
+        let t = (d.A.canFractionalPremiumUserUseOffer() || !(0, p.TW)(e)) && !d.A.isFetchingOffer();
         await (0, f._D)("PremiumManager", t)
       }
       i.h.dispatch({
@@ -115,7 +115,7 @@ class O extends Chunk272355.A {
       })
     }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, h.TW)(e) && g.A.shouldFetchCheckoutRecovery() && await (0, p.c)()
+      null != e && e.verified && !(0, p.TW)(e) && g.A.shouldFetchCheckoutRecovery() && await (0, h.c)()
     }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -141,4 +141,4 @@ class O extends Chunk272355.A {
     })
   }
 }
-let _ = new O
+let j = new O

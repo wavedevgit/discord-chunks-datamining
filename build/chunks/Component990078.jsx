@@ -106,11 +106,11 @@ function g(e) {
         shortcut: p
       })]
     }) : n, [n, p, m]),
-    F = null != G && ("string" != typeof G || "" !== G),
-    V = L || j;
+    V = null != G && ("string" != typeof G || "" !== G),
+    F = L || j;
   i.useEffect(() => {
-    L && F ? k(true) : F || k(false)
-  }, [L, F]);
+    L && V ? k(true) : V || k(false)
+  }, [L, V]);
   let B = i.useCallback(() => {
       k(false)
     }, []),
@@ -118,12 +118,12 @@ function g(e) {
       shouldShow: L,
       onExitComplete: B
     });
-  if (!F && (L || !j)) return t;
+  if (!V && (L || !j)) return t;
   if (null == t || !g && !i.isValidElement(t)) return null;
   let Y = null != T ? T : (0, c.Xj)(n),
     W = H((e, t) => t ? (0, r.jsx)(l.R, {
       isVisible: L,
-      isRendered: V,
+      isRendered: F,
       targetElementRef: x,
       targetElement: w,
       anchorRef: I,

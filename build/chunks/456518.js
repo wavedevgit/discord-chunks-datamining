@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 456518, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 456518, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   T: () => d
 });
@@ -14,13 +14,13 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.CHAT_SOUNDMOJI_AUTOCOMPLETE, {
   useTitle: () => o.intl.string(o.t["CtYr+U"]),
   useSubtitle: () => o.intl.string(o.t.hrSIhN),
   useValue: Chunk253932.eK.useSetting,
-  setValue: e => {
-    s.default.track(u.HAw.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
-      checked: e,
+  setValue: t => {
+    s.default.track(a.HAw.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
+      checked: t,
       location: {
-        section: u.JJy.SETTINGS_TEXT_AND_IMAGES
+        section: a.JJy.SETTINGS_TEXT_AND_IMAGES
       }
-    }), r.eK.updateSetting(e)
+    }), r.eK.updateSetting(t)
   },
   usePredicate: () => (0, n.AA)({
     location: "SoundmojiAutocomplete"

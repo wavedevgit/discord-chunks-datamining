@@ -1,4 +1,4 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 46673 **/
 /** chunk id: 464473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -17,11 +17,11 @@ function E() {
 }
 
 function d() {
-  return null == (0, i.bG)([o.Ay], () => o.Ay.getVisibleGame()) ? null : (0, r.jsxs)(l.$Td, {
+  return null == (0, i.bG)([a.Ay], () => a.Ay.getVisibleGame()) ? null : (0, r.jsxs)(l.$Td, {
     color: l.Hv$.DANGER,
     children: [(0, r.jsx)(l.PMB, {
       noticeType: c.kqX.SYSTEM_SERVICE_WARNING,
-      onClick: () => (0, a.w)()
+      onClick: () => (0, o.w)()
     }), u.intl.string(u.t["5rPt+j"]), (0, r.jsx)(l.Z_L, {
       onClick: E,
       noticeType: c.kqX.SYSTEM_SERVICE_WARNING,

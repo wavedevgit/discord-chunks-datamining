@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 810153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -32,7 +32,7 @@ function d(e) {
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,7 +44,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = 90 * Chunk927813.A.Millis.DAY,
+let h = 90 * Chunk927813.A.Millis.DAY,
   g = {
     tab: null,
     localItemAcks: {},
@@ -58,7 +58,7 @@ class f extends(r = Chunk311907.Ay.PersistedStore) {
       var t;
       (g = e).localItemAcks = function(e) {
         let t = {};
-        for (let [n, r] of Object.entries(e)) Date.now() - r < p && (t[n] = r);
+        for (let [n, r] of Object.entries(e)) Date.now() - r < h && (t[n] = r);
         return t
       }(null != (t = g.localItemAcks) ? t : {}), g.isDataStale = true
     }
@@ -71,7 +71,7 @@ class f extends(r = Chunk311907.Ay.PersistedStore) {
     return null != (e = g.tab) ? e : c.$w.ForYou
   }
   isLocalItemAcked(e) {
-    return null != e.local_id && (null != g.localItemAcks[e.local_id] || o.default.age(e.id) > p)
+    return null != e.local_id && (null != g.localItemAcks[e.local_id] || o.default.age(e.id) > h)
   }
   hasNewMentions() {
     return g.hasNewMentions
@@ -98,7 +98,7 @@ let b = new f(Chunk73153.h, {
     } = e
   },
   NOTIFICATION_CENTER_SET_TAB: function(e) {
-    g = h(d({}, g), {
+    g = p(d({}, g), {
       tab: e.tab
     })
   },
@@ -107,8 +107,8 @@ let b = new f(Chunk73153.h, {
       localIds: t
     } = e;
     t.forEach(e => {
-      g = h(d({}, g), {
-        localItemAcks: h(d({}, g.localItemAcks), {
+      g = p(d({}, g), {
+        localItemAcks: p(d({}, g.localItemAcks), {
           [e]: Date.now()
         })
       })

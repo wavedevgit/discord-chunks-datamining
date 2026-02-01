@@ -1,4 +1,4 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 139831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
@@ -12,37 +12,37 @@ function i(e) {
     context: n,
     canvasWidth: i,
     canvasHeight: a,
-    fallbackColor: o,
-    outlineColorDark: s,
+    fallbackColor: s,
+    outlineColorDark: o,
     outlineColorLight: c,
     linesDrawnAt: u,
     deadDrawables: d
   } = e;
   null == u.current[t.id] && (u.current[t.id] = Date.now()), n.lineCap = "round", n.lineJoin = "round";
-  let f = t.points.map(e => (0, r.RT)(e, i, a)),
+  let h = t.points.map(e => (0, l.RT)(e, i, a)),
     p = u.current[t.id],
-    g = e => p + e.deltaTime + 1500 >= Date.now(),
-    m = e => p + e.deltaTime <= Date.now() && g(e),
-    _ = f.find(m);
-  if (null == _) {
-    g(t.points[t.points.length - 1]) || d.push(t);
+    f = e => p + e.deltaTime + 1500 >= Date.now(),
+    m = e => p + e.deltaTime <= Date.now() && f(e),
+    g = h.find(m);
+  if (null == g) {
+    f(t.points[t.points.length - 1]) || d.push(t);
     return
   }
-  let h = (e, t) => {
-      let r = null;
-      n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(_.x, _.y);
-      for (let e = 1; e < f.length; e++) {
-        let t = f[e];
-        m(t) && (n.lineTo(t.x, t.y), r = t)
+  let A = (e, t) => {
+      let l = null;
+      n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(g.x, g.y);
+      for (let e = 1; e < h.length; e++) {
+        let t = h[e];
+        m(t) && (n.lineTo(t.x, t.y), l = t)
       }
-      return n.stroke(), r
+      return n.stroke(), l
     },
     {
-      fillColor: y,
-      outlineColor: A
-    } = (0, r.yO)(t.userId, s, c, o),
-    b = h(A, 9),
-    E = null != b && m(b);
-  E && (0, l.y)(n, b.x, b.y, A, 3), h(y, 6), E && (0, l.k)(n, b.x, b.y, t.userId)
+      fillColor: b,
+      outlineColor: _
+    } = (0, l.yO)(t.userId, o, c, s),
+    y = A(_, 9),
+    v = null != y && m(y);
+  v && (0, r.y)(n, y.x, y.y, _, 3), A(b, 6), v && (0, r.k)(n, y.x, y.y, t.userId)
 }
 require("./824217.js")

@@ -75,8 +75,8 @@ let w = new Chunk626584.A("OverlayV3Store"),
   k = null,
   U = null,
   G = null,
-  F = {},
   V = {},
+  F = {},
   B = {};
 
 function H(e, t) {
@@ -94,7 +94,7 @@ function K() {
 
 function z(e, t) {
   if (null != D) {
-    null != t && (V[e] = t);
+    null != t && (F[e] = t);
     try {
       if (D.trackGame(e), R.has(e)) return;
       R.add(e), (0, _.dK)(e, "maybeTrackGame", {
@@ -110,12 +110,12 @@ function z(e, t) {
 
 function q(e) {
   if (!R.has(e)) return;
-  let t = V[e],
-    n = F[e];
+  let t = F[e],
+    n = V[e];
   (0, _.dK)(e, "removeTrackedGame", {
     overlayMethod: null != t ? f.Ue[t] : null,
     overlayState: n
-  }), R.delete(e), delete F[e], delete V[e], P.delete(e);
+  }), R.delete(e), delete V[e], delete F[e], P.delete(e);
   try {
     if (null == D) return;
     D.untrackGame(e), w.verbose("Removing tracked game ".concat(e));
@@ -131,7 +131,7 @@ function q(e) {
 function Z() {
   try {
     for (let e of R) null == D || D.untrackGame(e);
-    R.clear(), (0, _._r)(null, "clearTrackedGames"), F = {}, V = {}, P.clear(), w.verbose("Cleared all tracked games")
+    R.clear(), (0, _._r)(null, "clearTrackedGames"), V = {}, F = {}, P.clear(), w.verbose("Cleared all tracked games")
   } catch (e) {
     w.error("Error clearing tracked games:", e), (0, _.mD)(d.UNSET_PID, e, {
       crashType: "native"
@@ -159,7 +159,7 @@ function J() {
 function $(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null != e) {
-    let t = V[e] === f.Ue.OutOfProcessLimitedInteraction;
+    let t = F[e] === f.Ue.OutOfProcessLimitedInteraction;
     if (t !== G) {
       G = t;
       try {
@@ -324,7 +324,7 @@ function ey(e) {
 }
 
 function eb(e) {
-  F[e.pid] = e.overlayState
+  V[e.pid] = e.overlayState
 }
 
 function eO() {
@@ -385,19 +385,19 @@ class eA extends(r = Chunk311907.Ay.Store) {
     return W.windowHandleSentToNative
   }
   isReady(e) {
-    return !!R.has(e) && F[e] === f.AR.OVERLAY_RENDERING
+    return !!R.has(e) && V[e] === f.AR.OVERLAY_RENDERING
   }
   getOverlayState(e) {
     var t;
-    return null != (t = F[e]) ? t : null
+    return null != (t = V[e]) ? t : null
   }
   getIsOverlayPreShown(e) {
-    let t = F[e];
+    let t = V[e];
     return null != t && O.Ms.has(t)
   }
   getOverlayMethod(e) {
     var t;
-    return null != (t = V[e]) ? t : null
+    return null != (t = F[e]) ? t : null
   }
 }
 S(eA, "displayName", "Overlay-V3-Store");

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 37987, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 37987, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   q: () => o
 });
@@ -10,22 +10,22 @@ var Chunk873298 = require("./873298.js"),
   Chunk542877 = require("./542877.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.Qx)(Chunk780964.X.CONTENT_AND_SOCIAL_IN_GAME_DMS_SETTING, {
-  useTitle: () => u.intl.string(u.t["ms+Tme"]),
-  useSubtitle: () => u.intl.string(u.t["4NN4+/"]),
+  useTitle: () => a.intl.string(a.t["ms+Tme"]),
+  useSubtitle: () => a.intl.string(a.t["4NN4+/"]),
   useOptions: () => [{
-    name: u.intl.string(u.t.JIFnN9),
+    name: a.intl.string(a.t.JIFnN9),
     value: n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
   }, {
-    name: u.intl.string(u.t.rRdsk1),
+    name: a.intl.string(a.t.rRdsk1),
     value: n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
   }, {
-    name: u.intl.string(u.t.AolKwN),
+    name: a.intl.string(a.t.AolKwN),
     value: n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
   }],
   useValue: () => {
-    let e = s.TA.useSetting();
-    return e === n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e
+    let t = s.TA.useSetting();
+    return t === n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? n.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : t
   },
-  setValue: e => s.TA.updateSetting(e),
+  setValue: t => s.TA.updateSetting(t),
   usePredicate: Chunk542877.K
 })

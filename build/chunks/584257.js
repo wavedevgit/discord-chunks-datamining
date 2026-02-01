@@ -49,14 +49,14 @@ class h extends Chunk272355.A {
       if ((null == d ? true : d.find(e => e.id === h)) != null ? (0, a._)(o.sn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === h && (0, a._)(o.sn.PING_SOMEONE), !(0, u.gN)(null == r ? true : r.id, h, i, p)) returnfalse;
       let g = u.Ay.getMostRecentMessageCombo(n),
         {
-          combo: f
+          combo: m
         } = null != g ? g : {};
-      if (null == f) returnfalse;
+      if (null == m) returnfalse;
       Object.values(o.sn).forEach(e => {
         if (null != s.A.getUnlocked(e)) return;
         let t = (0, o.vM)(e),
           n = null == t ? true : t.checkUnlock;
-        null == n || false !== n(f) && (0, a._)(e)
+        null == n || false !== n(m) && (0, a._)(e)
       })
     })
   }

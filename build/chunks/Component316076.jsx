@@ -1,4 +1,4 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 316076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -22,8 +22,8 @@ function g(e) {
   } = e, g = (0, a.bG)([s.Ay], () => s.Ay.getGuildSidebarState(n), [n]), {
     messagesCount: A,
     linksCount: T,
-    mediaCount: h
-  } = (0, u.u5)(t, n), I = new Intl.NumberFormat(d.intl.currentLocale).format(A), O = new Intl.NumberFormat(d.intl.currentLocale).format(T), m = new Intl.NumberFormat(d.intl.currentLocale).format(h), N = r.useCallback(async e => {
+    mediaCount: I
+  } = (0, u.u5)(t, n), O = new Intl.NumberFormat(_.intl.currentLocale).format(A), h = new Intl.NumberFormat(_.intl.currentLocale).format(T), N = new Intl.NumberFormat(_.intl.currentLocale).format(I), m = r.useCallback(async e => {
     if (null == g) return;
     let l = (0, u.ry)(t, e, {
       include_nsfw: true
@@ -34,7 +34,7 @@ function g(e) {
     })
   }, [n, g, t]);
   return (0, l.jsx)(i.D0$, {
-    label: d.intl.string(d.t.vCn2Tn),
+    label: _.intl.string(_.t.vCn2Tn),
     children: (0, l.jsxs)(c.SQ, {
       children: [(0, l.jsx)(c.RU, {
         icon: (0, l.jsx)(i.oyn, {
@@ -46,17 +46,17 @@ function g(e) {
         name: (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.OIgYlQ)
+          children: _.intl.string(_.t.OIgYlQ)
         }),
         description: A === u.zu ? (0, l.jsx)(i.y$y, {
           type: i.tVU.SPINNING_CIRCLE,
-          className: _.S
+          className: d.S
         }) : (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: I
+          children: O
         }),
-        onNavigate: A > 0 ? () => N(u.SA.MESSAGES) : true
+        onNavigate: A > 0 ? () => m(u.SA.MESSAGES) : true
       }), (0, l.jsx)(c.RU, {
         icon: (0, l.jsx)(i.qYV, {
           size: "custom",
@@ -66,17 +66,17 @@ function g(e) {
         name: (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.DFSvTt)
+          children: _.intl.string(_.t.DFSvTt)
         }),
         description: T === u.zu ? (0, l.jsx)(i.y$y, {
           type: i.tVU.SPINNING_CIRCLE,
-          className: _.S
+          className: d.S
         }) : (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: O
+          children: h
         }),
-        onNavigate: T > 0 ? () => N(u.SA.LINKS) : true
+        onNavigate: T > 0 ? () => m(u.SA.LINKS) : true
       }), (0, l.jsx)(c.RU, {
         icon: (0, l.jsx)(i.sYc, {
           size: "custom",
@@ -86,17 +86,17 @@ function g(e) {
         name: (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t["Aw9+/M"])
+          children: _.intl.string(_.t["Aw9+/M"])
         }),
-        description: h === u.zu ? (0, l.jsx)(i.y$y, {
+        description: I === u.zu ? (0, l.jsx)(i.y$y, {
           type: i.tVU.SPINNING_CIRCLE,
-          className: _.S
+          className: d.S
         }) : (0, l.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",
-          children: m
+          children: N
         }),
-        onNavigate: h > 0 ? () => N(u.SA.MEDIA) : true
+        onNavigate: I > 0 ? () => m(u.SA.MEDIA) : true
       })]
     })
   })

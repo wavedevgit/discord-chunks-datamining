@@ -237,7 +237,7 @@
     RegExp("(?<=a)"), RegExp("(?<!a)"), U = false
   } catch (e) {}
   var G = 0,
-    F = {
+    V = {
       Array: {
         react: function(e, t, n) {
           for (var r = n.key, i = [], a = 0, o = 0; a < e.length; a++, o++) {
@@ -807,7 +807,7 @@
         }
       }
     },
-    V = function(e, t) {
+    F = function(e, t) {
       return !t && "u" > typeof console && console.warn("simple-markdown ruleOutput should take 'react' or 'html' as the second argument."),
         function(n, r, i) {
           return e[n.type][t](n, r, i)
@@ -835,7 +835,7 @@
     },
     Y = function(e, t, n) {
       if (!t) throw Error("simple-markdown: outputFor: `property` must be defined. if you just upgraded, you probably need to replace `outputFor` with `reactFor`");
-      var r, a = (e.Array || F.Array)[t];
+      var r, a = (e.Array || V.Array)[t];
       if (!a) throw Error("simple-markdown: outputFor: to join nodes of type `" + t + "` you must provide an `Array:` joiner rule with that type, Please see the docs for details on specifying an Array rule.");
       var o = a,
         s = function(n, i) {
@@ -845,7 +845,7 @@
         return s(e, r = i(t, n))
       }
     },
-    W = a(F),
+    W = a(V),
     K = function(e, t) {
       return (t = t || {}).inline = false, W(e, t)
     },
@@ -856,8 +856,8 @@
       var n = C.test(e);
       return (t = t || {}).inline = !n, W(e, t)
     },
-    Z = Y(F, "react"),
-    Q = Y(F, "html"),
+    Z = Y(V, "react"),
+    Q = Y(V, "html"),
     X = function(e, t) {
       return Z(K(e, t), t)
     },
@@ -867,7 +867,7 @@
       return t.children = X(e.source), u("div", null, t)
     };
   return {
-    defaultRules: F,
+    defaultRules: V,
     parserFor: a,
     outputFor: Y,
     inlineRegex: o,
@@ -892,7 +892,7 @@
     htmlTag: d,
     reactElement: u,
     defaultRawParse: W,
-    ruleOutput: V,
+    ruleOutput: F,
     reactFor: B,
     htmlFor: H,
     defaultParse: function() {

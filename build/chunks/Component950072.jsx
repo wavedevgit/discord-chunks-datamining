@@ -1,7 +1,7 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 950072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d,
+  A: () => _,
   C: () => E
 });
 var Chunk627968 = require("./627968.js"),
@@ -18,19 +18,19 @@ function E(e) {
   let {
     role: n,
     guildId: r
-  } = e, s = (0, u.X_)(r, null != n ? n : true, null == n ? true : n.colorStrings), c = (0, a.bG)([o.A], () => o.A.roleStyle), E = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == n ? true : n.colorString) ? t : E;
+  } = e, s = (0, u.X_)(r, null != n ? n : true, null == n ? true : n.colorStrings), c = (0, a.bG)([o.A], () => o.A.roleStyle), E = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == n ? true : n.colorString) ? t : E;
   return null == n ? null : "dot" === c ? (0, l.jsx)(i.WYI, {
-    color: null != d ? d : true,
+    color: null != _ ? _ : true,
     colors: s,
     background: false,
     tooltip: false
   }) : (0, l.jsx)(i.RYH, {
-    color: null != d ? d : null,
+    color: null != _ ? _ : null,
     colors: s
   })
 }
 
-function d(e) {
+function _(e) {
   var t;
   let {
     guildId: n,
@@ -38,9 +38,9 @@ function d(e) {
     className: o,
     canRemove: u = false,
     onRemove: E = c.tE
-  } = e, d = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == a ? true : a.colorString) ? t : d, g = r.useMemo(() => ({
-    backgroundColor: "".concat(_, "27")
-  }), [_]);
+  } = e, _ = (0, i.rdh)(i.LU0.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == a ? true : a.colorString) ? t : _, g = r.useMemo(() => ({
+    backgroundColor: "".concat(d, "27")
+  }), [d]);
   return null == a ? null : (0, l.jsx)(i.DUT, {
     children: (0, l.jsx)(s.b_, {
       className: o,

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 161290, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -41,7 +41,7 @@ function D() {
       let e = j.default.getCurrentUser();
       return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
-    U = (0, s.bG)([y.A], () => y.A.getUserProfile(G.id)),
+    U = (0, s.bG)([N.A], () => N.A.getUserProfile(G.id)),
     {
       pendingAvatar: k,
       pendingGlobalName: B,
@@ -95,7 +95,7 @@ function D() {
     J = v.Ay.canUsePremiumProfileCustomization(G),
     Q = (0, u.z5)(k, G.avatar),
     $ = (0, u.Ac)(H, null == U ? true : U.banner),
-    ee = (0, N.Ay)(G.id),
+    ee = (0, y.Ay)(G.id),
     et = null == ee ? true : ee.getLegacyUsername(),
     en = (null != (e = null == (w = Z.global_name) ? true : w.length) ? e : 0) > 0 ? Z.global_name : null != (t = null == q ? true : q.nick) ? t : [],
     er = (null != (n = null == (M = Z.bio) ? true : M.length) ? n : 0) > 0 ? Z.bio : null != (i = null == q ? true : q.bio) ? i : [],
@@ -109,13 +109,13 @@ function D() {
       pendingGlobalName: B,
       onGlobalNameChange: a.U6,
       user: G
-    }), (0, r.jsx)(x.A, {
+    }), (0, r.jsx)(C.A, {
       sectionTitle: P.intl.string(P.t["+T3RI/"]),
       errors: Z.pronouns,
       onPronounsChange: T.Oz,
       pendingPronouns: F,
       currentPronouns: null != (D = null == U ? true : U.pronouns) ? D : ""
-    }, "pronouns"), (0, r.jsx)(C.A, {}), (0, r.jsx)(m.A, {
+    }, "pronouns"), (0, r.jsx)(x.A, {}), (0, r.jsx)(m.A, {
       onAvatarChange: a.zq,
       showRemoveAvatarButton: Q,
       errors: Z.avatar,

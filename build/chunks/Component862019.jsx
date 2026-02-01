@@ -144,7 +144,7 @@ function L(e, t) {
         e.style.pointerEvents = "", e.removeAttribute(R), L.current = false
       }
     }),
-    F = (0, a.Jt)(() => !!o.current.openEvent && ["click", "mousedown"].includes(o.current.openEvent.type));
+    V = (0, a.Jt)(() => !!o.current.openEvent && ["click", "mousedown"].includes(o.current.openEvent.type));
   i.useEffect(() => {
     if (u && (0, s.vq)(c.domReference)) {
       let r = c.domReference,
@@ -165,7 +165,7 @@ function L(e, t) {
     }
 
     function t(e) {
-      if (F()) return void G();
+      if (V()) return void G();
       x.current();
       let t = (0, a.YE)(c.floating);
       if (w(S), M.current = false, E.current && o.current.floatingContext) {
@@ -175,7 +175,7 @@ function L(e, t) {
           x: e.clientX,
           y: e.clientY,
           onClose() {
-            G(), U(), F() || k(e, true, "safe-polygon")
+            G(), U(), V() || k(e, true, "safe-polygon")
           }
         });
         let r = I.current;
@@ -188,13 +188,13 @@ function L(e, t) {
     }
 
     function i(e) {
-      F() || o.current.floatingContext && (null == E.current || E.current({
+      V() || o.current.floatingContext && (null == E.current || E.current({
         ...o.current.floatingContext,
         tree: m,
         x: e.clientX,
         y: e.clientY,
         onClose() {
-          G(), U(), F() || k(e)
+          G(), U(), V() || k(e)
         }
       })(e))
     }
@@ -204,9 +204,9 @@ function L(e, t) {
     }
 
     function d(e) {
-      F() || k(e, false)
+      V() || k(e, false)
     }
-  }, [c, u, e, p, h, k, U, G, r, n, b, m, y, E, o, F, O]), (0, a.OS)(() => {
+  }, [c, u, e, p, h, k, U, G, r, n, b, m, y, E, o, V, O]), (0, a.OS)(() => {
     var e, t;
     if (u && n && null != (e = E.current) && null != (e = e.__options) && e.blockPointerEvents && j()) {
       L.current = true;
@@ -226,7 +226,7 @@ function L(e, t) {
   }, [n, U, G]), i.useEffect(() => () => {
     U(), w(A), w(S), G()
   }, [u, c.domReference, U, G]);
-  let V = i.useMemo(() => {
+  let F = i.useMemo(() => {
     function e(e) {
       v.current = e.pointerType
     }
@@ -246,8 +246,8 @@ function L(e, t) {
     }
   }, [p, r, n, b, O]);
   return i.useMemo(() => u ? {
-    reference: V
-  } : {}, [u, V])
+    reference: F
+  } : {}, [u, F])
 }
 let x = null,
   M = 0;
@@ -279,10 +279,10 @@ let G = {
   none: new WeakMap
 };
 
-function F(e) {
+function V(e) {
   return "inert" === e ? G.inert : "aria-hidden" === e ? G["aria-hidden"] : G.none
 }
-let V = new WeakSet,
+let F = new WeakSet,
   B = null,
   H = 0,
   Y = e => e && (e.host || Y(e.parentNode)),
@@ -313,20 +313,20 @@ function K(e, t, n, r) {
         else {
           let t = a ? e.getAttribute(a) : null,
             n = null !== t && "false" !== t,
-            r = F(a),
+            r = V(a),
             o = (r.get(e) || 0) + 1,
             s = (u.get(e) || 0) + 1;
-          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && V.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
+          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && F.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
         }
     })
   }
   return o.forEach(d), f(t), s.clear(), H++, () => {
     c.forEach(e => {
-      let t = F(a),
+      let t = V(a),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
-      t.set(e, n), u.set(e, r), n || (!V.has(e) && a && e.removeAttribute(a), V.delete(e)), r || e.removeAttribute(i)
-    }), --H || (G.inert = new WeakMap, G["aria-hidden"] = new WeakMap, G.none = new WeakMap, V = new WeakSet, B = {})
+      t.set(e, n), u.set(e, r), n || (!F.has(e) && a && e.removeAttribute(a), F.delete(e)), r || e.removeAttribute(i)
+    }), --H || (G.inert = new WeakMap, G["aria-hidden"] = new WeakMap, G.none = new WeakMap, F = new WeakSet, B = {})
   }
 }
 let z = {

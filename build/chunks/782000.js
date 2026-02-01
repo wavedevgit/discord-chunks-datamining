@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 782000, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 782000, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   B: () => T
 });
@@ -15,13 +15,13 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
   useTitle: () => d.intl.string(d.t.yXvykv),
   useSubtitle: () => d.intl.string(d.t.YP3ujk),
   useValue: Chunk572164.XT,
-  setValue: e => s.fd({
-    enabled: e,
+  setValue: t => s.fd({
+    enabled: t,
     trackAnalytics: true
   }),
   usePredicate: () => {
-    let e = (0, u.isWindows)(),
-      t = (0, n.A)(a.A);
-    return e && t
+    let t = (0, a.isWindows)(),
+      e = (0, n.A)(u.A);
+    return t && e
   }
 })

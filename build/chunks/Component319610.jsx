@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 319610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -26,14 +26,14 @@ function f(e) {
       emojiId: e.id
     }) : f && (0, a.Ol)(null), null == t || t()
   };
-  return (0, r.jsx)(p.A, {
+  return (0, r.jsx)(h.A, {
     renderPopout: e => {
       let {
         closePopout: n,
         onFocus: l
       } = e;
       return (0, r.jsx)(u.A, {
-        children: (0, r.jsx)(h.A, {
+        children: (0, r.jsx)(p.A, {
           title: g.intl.string(g.t.XYLOyF),
           channel: t,
           closePopout: n,

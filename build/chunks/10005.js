@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 10005, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -13,7 +13,7 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = r.useState(false), [d, u] = r.useState(false), [_, p] = r.useState(false), [m, g] = r.useState(false), [A, f] = r.useState(false), [b, h] = r.useState(false), [E, O] = r.useState(false), [C, x] = r.useState(false), S = o || d || _ || m || b || C, T = r.useCallback(async e => {
+  } = null != e ? e : {}, [o, c] = r.useState(false), [d, u] = r.useState(false), [_, p] = r.useState(false), [m, g] = r.useState(false), [A, f] = r.useState(false), [b, h] = r.useState(false), [E, O] = r.useState(false), [x, C] = r.useState(false), S = o || d || _ || m || b || x, T = r.useCallback(async e => {
     if (!S) {
       c(true);
       try {
@@ -37,7 +37,7 @@ function o(e) {
         u(false)
       }
     }
-  }, [S, t, n]), y = r.useCallback(async e => {
+  }, [S, t, n]), N = r.useCallback(async e => {
     if (!S) {
       p(true);
       try {
@@ -49,7 +49,7 @@ function o(e) {
         p(false)
       }
     }
-  }, [S, t, n]), N = r.useCallback(async e => {
+  }, [S, t, n]), y = r.useCallback(async e => {
     if (!S) {
       g(true);
       try {
@@ -89,8 +89,8 @@ function o(e) {
   return {
     acceptLinkRequest: T,
     declineLinkRequest: I,
-    disconnectLinkRequest: y,
-    cancelLinkRequest: N,
+    disconnectLinkRequest: N,
+    cancelLinkRequest: y,
     selectTeenUser: v,
     getLinkCode: j,
     requestLink: r.useCallback(async (e, r) => {
@@ -111,18 +111,18 @@ function o(e) {
         r = n[n.length - 1],
         a = s.A.getStartId(),
         o = s.A.getSelectedTeenId();
-      if (!C && null != a && null != o) {
-        x(true);
+      if (!x && null != a && null != o) {
+        C(true);
         try {
           await l.Ay.fetchMoreTeenActivity(o, e, a, r.event_id)
         } catch (n) {
           let e = new i.LG(n);
           null == t || t(e)
         } finally {
-          x(false)
+          C(false)
         }
       }
-    }, [C, t]),
+    }, [x, t]),
     isAcceptLoading: o,
     isDeclineLoading: d,
     isDisconnectLoading: _,
@@ -130,6 +130,6 @@ function o(e) {
     isGetLinkCodeLoading: A,
     isSelectTeenUserLoading: E,
     isRequestingLink: b,
-    isMoreLoading: C
+    isMoreLoading: x
   }
 }

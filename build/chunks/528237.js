@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 528237, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 528237, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   m: () => d
 });
@@ -13,10 +13,10 @@ var Chunk419954 = require("./419954.js"),
 let d = (0, Chunk419954.zD)(Chunk780964.X.TEXT_TO_SPEECH_COMMAND, {
   useTitle: () => o.intl.string(o.t["btbS+Z"]),
   useSubtitle: () => {
-    let e = (0, r.dk)("TextToSpeechCommandSetting");
+    let t = (0, r.dk)("TextToSpeechCommandSetting");
     return o.intl.format(o.t.Q5crhR, {
-      onClick: () => (0, a.openUserSettings)(e ? s.X.TTS_PLAYBACK_RATE : s.X.ACCESSIBILITY_PANEL, {
-        section: u.nc_.ACCESSIBILITY
+      onClick: () => (0, u.openUserSettings)(t ? s.X.TTS_PLAYBACK_RATE : s.X.ACCESSIBILITY_PANEL, {
+        section: a.nc_.ACCESSIBILITY
       })
     })
   },

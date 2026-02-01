@@ -1,7 +1,7 @@
-/** Chunk was on 88974 **/
-/** chunk id: 565846, original params: t,n,i (module,exports,require) **/
+/** Chunk was on 78441 **/
+/** chunk id: 565846, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,64 +18,64 @@ var Chunk311907 = require("./311907.js"),
 require("./253913.js");
 var Chunk985018 = require("./985018.jsx");
 
-function m(t) {
-  let n = (0, r.bG)([h.A], () => h.A.getChannel(t), [t]),
-    i = (0, c.NI)(n),
-    m = (0, r.bG)([h.A], () => h.A.getChannel(null == n ? true : n.parent_id), [n]),
-    v = (0, u.OT)(m),
-    b = (0, u.kt)(n),
-    p = b.length >= 5,
-    f = (0, c.Id)(n),
-    j = (0, r.bG)([o.Ay], () => {
+function h(t) {
+  let e = (0, r.bG)([A.A], () => A.A.getChannel(t), [t]),
+    n = (0, c.NI)(e),
+    h = (0, r.bG)([A.A], () => A.A.getChannel(null == e ? true : e.parent_id), [e]),
+    p = (0, u.OT)(h),
+    v = (0, u.kt)(e),
+    b = v.length >= 5,
+    m = (0, c.Id)(e),
+    _ = (0, r.bG)([s.Ay], () => {
       let t = new Set;
-      for (let n of null != v ? v : [])
-        if (null != n.emojiId) {
-          let i = o.Ay.getUsableCustomEmojiById(n.emojiId);
-          (null == i ? true : i.animated) && t.add(n.emojiId)
+      for (let e of null != p ? p : [])
+        if (null != e.emojiId) {
+          let n = s.Ay.getUsableCustomEmojiById(e.emojiId);
+          (null == n ? true : n.animated) && t.add(e.emojiId)
         } return t
-    }, [v]);
-  if (null == n) return (0, a.Z_)(), null;
-  if (!i || __OVERLAY__ || !n.isForumPost() || (null == v ? true : v.length) === 0 || !f || n.isModeratorReportChannel()) return null;
-  let _ = null == v ? true : v.map(t => {
-    let i = b.includes(t),
+    }, [p]);
+  if (null == e) return (0, a.Z_)(), null;
+  if (!n || __OVERLAY__ || !e.isForumPost() || (null == p ? true : p.length) === 0 || !m || e.isModeratorReportChannel()) return null;
+  let C = null == p ? true : p.map(t => {
+    let n = v.includes(t),
       r = null != t.emojiId || null != t.emojiName;
-    return (0, e.jsx)(l.sLh, {
+    return (0, i.jsx)(l.sLh, {
       id: t.id,
       label: t.name,
-      leftIcon: r ? (0, e.jsx)(d.A, {
+      leftIcon: r ? (0, i.jsx)(o.A, {
         emojiId: t.emojiId,
         emojiName: t.emojiName,
-        animated: null != t.emojiId && j.has(t.emojiId)
+        animated: null != t.emojiId && _.has(t.emojiId)
       }) : true,
-      leadingAccessory: function(t, n) {
+      leadingAccessory: function(t, e) {
         let {
-          emojiId: i,
-          emojiName: e
+          emojiId: n,
+          emojiName: i
         } = t;
-        if (null != i || null != e) return {
+        if (null != n || null != i) return {
           type: "emoji",
-          emojiId: i,
-          src: null == i && null != e ? A.Ay.getURL(e) : true,
-          animated: null != i && n.has(i)
+          emojiId: n,
+          src: null == n && null != i ? f.Ay.getURL(i) : true,
+          animated: null != n && e.has(n)
         }
-      }(t, j),
-      disabled: p && !i,
+      }(t, _),
+      disabled: b && !n,
       action: () => (t => {
-        let i = new Set(b);
-        if (i.has(t)) i.delete(t);
+        let n = new Set(v);
+        if (n.has(t)) n.delete(t);
         else {
-          if (p) return;
-          i.add(t)
+          if (b) return;
+          n.add(t)
         }
-        let e = Array.from(i).map(t => t.id);
-        s.A.updateForumPostTags(n.id, e)
+        let i = Array.from(n).map(t => t.id);
+        d.A.updateForumPostTags(e.id, i)
       })(t),
-      checked: i
+      checked: n
     }, t.id)
   });
-  return (0, e.jsx)(l.Drp, {
+  return (0, i.jsx)(l.Drp, {
     id: "edit-tags",
     label: g.intl.string(g.t["436ZFw"]),
-    children: _
+    children: C
   })
 }

@@ -286,12 +286,12 @@ function eG(e) {
   })
 }
 
-function eF(e, t) {
+function eV(e, t) {
   let n = el.A.getMessage(e, t);
   return null != n && n.hasFlag(ev.pr7.CROSSPOSTED)
 }
 
-function eV(e, t) {
+function eF(e, t) {
   let n = el.A.getMessage(e, t);
   if (null == n || n.type !== ev.lAJ.REPLY) return;
   let r = $.A.getMessageByReference(n.messageReference);
@@ -542,7 +542,7 @@ let eB = {
         oldFormErrors: true,
         rejectWithError: false
       });
-      if (r.body.length > 0) return (0, F.rh)(r.body[0])
+      if (r.body.length > 0) return (0, V.rh)(r.body[0])
     },
     fetchMessages(e) {
       let {
@@ -742,7 +742,7 @@ let eB = {
       });
       let s = () => eH._sendMessage(e, t, i),
         l = G.Ay.backgroundify(s, true);
-      return (V.A.recordMessageSendAttempt(e, o, i), el.A.isReady(e)) ? l() : r && e !== y.E ? (eL.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (F.A.recordMessageSendAttempt(e, o, i), el.A.isReady(e)) ? l() : r && e !== y.E ? (eL.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         el.A.whenReady(e, () => {
           eL.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -1012,7 +1012,7 @@ let eB = {
                 queueSize: a
               },
               poll: M
-            }), null != n.alsoForwardToChannelId && T.A.sendForward((0, F.rh)(s.body), n.alsoForwardToChannelId).then(() => {
+            }), null != n.alsoForwardToChannelId && T.A.sendForward((0, V.rh)(s.body), n.alsoForwardToChannelId).then(() => {
               var e, t, r;
               eG({
                 referencedMessageId: null == (e = s.body) ? true : e.id,
@@ -1045,7 +1045,7 @@ let eB = {
                 joinRequestUserId: n
               })
             }
-            V.A.recordMessageSendApiResponse(eu), l.h.dispatch({
+            F.A.recordMessageSendApiResponse(eu), l.h.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ef.R.SendMessage,
               channelId: e
@@ -1183,8 +1183,8 @@ let eB = {
         components: i
       } = n;
       await en.A.unarchiveThreadIfNecessary(e);
-      let a = eV(e, t),
-        o = eF(e, t),
+      let a = eF(e, t),
+        o = eV(e, t),
         c = {
           channelId: e,
           messageId: t,

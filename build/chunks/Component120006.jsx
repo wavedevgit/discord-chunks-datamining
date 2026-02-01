@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 120006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk605540 = require("./605540.js");
 
-function f(e, t, n) {
+function m(e, t, n) {
   return (0, r.jsxs)("button", {
     className: g.kL,
     onClick: n,
@@ -40,7 +40,7 @@ function f(e, t, n) {
   }, t)
 }
 
-function m() {
+function f() {
   let e = o.A.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("header", {
@@ -56,7 +56,7 @@ function m() {
       })]
     }), (0, r.jsxs)("div", {
       className: g.Vg,
-      children: [e.map(e => f(u.Ay.getGuildIconURL({
+      children: [e.map(e => m(u.Ay.getGuildIconURL({
         id: e.id,
         icon: e.icon,
         size: 240
@@ -65,7 +65,7 @@ function m() {
         t = e.id, c.default.track(p.HAw.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
           guild_id: t
         }), (0, s.u)(t)
-      })), f(l.QGJ, h.intl.string(h.t.AhKnz4), () => {
+      })), m(l.QGJ, h.intl.string(h.t.AhKnz4), () => {
         c.default.track(p.HAw.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, a.pX)(p.BVt.GUILD_DISCOVERY)
       })]
     })]

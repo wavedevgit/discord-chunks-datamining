@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 898280, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,35 +14,35 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk990014 = require("./990014.js");
-let g = () => n.e("15423").then(n.t.bind(n, 155147, 19)).then(e => {
+let f = () => n.e("15423").then(n.t.bind(n, 155147, 19)).then(e => {
     let {
       default: t
     } = e;
     return t
   }),
-  f = Chunk64700.memo(function(e) {
+  m = Chunk64700.memo(function(e) {
     let {
       channel: t,
       isLastItem: n
-    } = e, l = (0, i.bG)([a.A], () => a.A.useReducedMotion), f = (0, i.bG)([u.A], () => u.A.can(d.xBc.SEND_MESSAGES_IN_THREADS, t)), m = (0, o.s5)(t), b = (0, i.bG)([c.default], () => c.default.getId());
-    return n ? f && !m && t.ownerId !== b ? (0, r.jsxs)("div", {
+    } = e, r = (0, i.bG)([s.A], () => s.A.useReducedMotion), m = (0, i.bG)([u.A], () => u.A.can(d.xBc.SEND_MESSAGES_IN_THREADS, t)), g = (0, o.s5)(t), A = (0, i.bG)([c.default], () => c.default.getId());
+    return n ? m && !g && t.ownerId !== A ? (0, l.jsxs)("div", {
       className: p.aP,
-      children: [(0, r.jsx)(s.akl, {
-        importData: g,
-        shouldAnimate: !l,
+      children: [(0, l.jsx)(a.akl, {
+        importData: f,
+        shouldAnimate: !r,
         className: p.lY
-      }), (0, r.jsxs)("div", {
+      }), (0, l.jsxs)("div", {
         className: p.FS,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, l.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: h.intl.string(h.t.OmBThA)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, l.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: h.intl.string(h.t.zcs5ko)
         })]
       })]
-    }) : null : (0, r.jsx)("div", {
+    }) : null : (0, l.jsx)("div", {
       className: p.yF
     })
   })

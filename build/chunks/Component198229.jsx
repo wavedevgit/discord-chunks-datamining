@@ -1,7 +1,7 @@
-/** Chunk was on 91042 **/
+/** Chunk was on 93169 **/
 /** chunk id: 198229, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => _
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -20,18 +20,18 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk946818 = require("./946818.js");
 
-function O(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.x.DEFAULT,
+function _(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.x.DEFAULT,
     n = (0, r.bG)([A.default], () => {
       var t;
       return (null == (t = A.default.getCurrentUser()) ? true : t.id) === e
     }),
-    O = (0, r.bG)([s.A], () => s.A.isLocalSoundboardMuted(e)),
+    _ = (0, r.bG)([o.A], () => o.A.isLocalSoundboardMuted(e)),
     {
-      muted: y,
-      deafened: v = false,
-      localVideoDisabled: E = false,
-      localVideoAutoDisabled: h = false
+      muted: m,
+      deafened: h = false,
+      localVideoDisabled: y = false,
+      localVideoAutoDisabled: j = false
     } = (0, r.cf)([d.A], () => n ? {
       muted: d.A.isSelfMute(t),
       deafened: d.A.isSelfDeaf(t)
@@ -40,66 +40,66 @@ function O(e) {
       localVideoDisabled: d.A.isLocalVideoDisabled(e, t),
       localVideoAutoDisabled: d.A.isLocalVideoAutoDisabled(e, t)
     }, [n, t, e]),
-    j = d.A.supports(f.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(i.sLh, {
+    E = d.A.supports(b.O5.DISABLE_VIDEO) && !n ? (0, i.jsx)(l.sLh, {
       id: "disable-video",
-      label: m.intl.string(m.t["4MMsWF"]),
+      label: p.intl.string(p.t["4MMsWF"]),
       action: () => {
-        if (h) return void a.A.show({
-          title: m.intl.string(m.t.m2Hyj0),
-          body: m.intl.string(m.t.EhaK6B),
-          confirmText: m.intl.string(m.t.ND1my3),
-          cancelText: m.intl.string(m.t.jEqEhy),
-          onConfirm: () => o.A.setDisableLocalVideo(e, g.bb8.MANUAL_ENABLED)
+        if (j) return void a.A.show({
+          title: p.intl.string(p.t.m2Hyj0),
+          body: p.intl.string(p.t.EhaK6B),
+          confirmText: p.intl.string(p.t.ND1my3),
+          cancelText: p.intl.string(p.t.jEqEhy),
+          onConfirm: () => s.A.setDisableLocalVideo(e, g.bb8.MANUAL_ENABLED)
         });
-        let n = E ? g.bb8.MANUAL_ENABLED : g.bb8.DISABLED;
-        o.A.setDisableLocalVideo(e, n, t)
+        let n = y ? g.bb8.MANUAL_ENABLED : g.bb8.DISABLED;
+        s.A.setDisableLocalVideo(e, n, t)
       },
-      checked: E,
-      subtext: h ? (0, l.jsxs)("div", {
-        className: p.Y,
-        children: [(0, l.jsx)(i.EpV, {
+      checked: y,
+      subtext: j ? (0, i.jsxs)("div", {
+        className: v.Y,
+        children: [(0, i.jsx)(l.EpV, {
           size: "custom",
           color: "currentColor",
           width: 12,
-          className: p.p
-        }), m.intl.string(m.t.m2Hyj0)]
+          className: v.p
+        }), p.intl.string(p.t.m2Hyj0)]
       }) : null
     }, "disable-video") : null,
-    x = n ? null : (0, l.jsx)(i.sLh, {
+    D = n ? null : (0, i.jsx)(l.sLh, {
       id: "soundboard-sound-mute",
-      label: m.intl.string(m.t.LxhEuG),
+      label: p.intl.string(p.t.LxhEuG),
       action: () => {
         let n = u.A.getRTCConnection();
-        b.default.track(g.HAw.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
+        f.default.track(g.HAw.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
           guild_id: c.A.getGuildId(),
           target_user_id: e,
           media_session_id: null == n ? true : n.getMediaSessionId(),
           parent_media_session_id: null == n ? true : n.parentMediaSessionId,
-          mute_soundboard: !O
-        }), o.A.toggleLocalSoundboardMute(e, t)
+          mute_soundboard: !_
+        }), s.A.toggleLocalSoundboardMute(e, t)
       },
-      checked: O
+      checked: _
     }, "soundboard-sound-mute");
-  return n ? [(0, l.jsx)(i.sLh, {
+  return n ? [(0, i.jsx)(l.sLh, {
     id: "mute",
-    label: m.intl.string(m.t.sWmtI6),
-    action: () => o.A.toggleSelfMute({
+    label: p.intl.string(p.t.sWmtI6),
+    action: () => s.A.toggleSelfMute({
       context: t,
       location: "User Context Menu"
     }),
-    checked: y
-  }, "self-mute"), (0, l.jsx)(i.sLh, {
+    checked: m
+  }, "self-mute"), (0, i.jsx)(l.sLh, {
     id: "deafen",
-    label: m.intl.string(m.t.wjcRFX),
-    action: () => o.A.toggleSelfDeaf({
+    label: p.intl.string(p.t.wjcRFX),
+    action: () => s.A.toggleSelfDeaf({
       context: t,
       location: "User Context Menu"
     }),
-    checked: v
-  }, "self-deafen"), j] : [(0, l.jsx)(i.sLh, {
+    checked: h
+  }, "self-deafen"), E] : [(0, i.jsx)(l.sLh, {
     id: "mute",
-    label: m.intl.string(m.t.sWmtI6),
-    action: () => o.A.toggleLocalMute(e, t),
-    checked: y
-  }, "self-mute"), x, j]
+    label: p.intl.string(p.t.sWmtI6),
+    action: () => s.A.toggleLocalMute(e, t),
+    checked: m
+  }, "self-mute"), D, E]
 }

@@ -40,7 +40,7 @@ class b extends Chunk64700.PureComponent {
       host: t,
       party: n
     } = this.props;
-    return this.hasParty(n) && null != e ? (0, r.jsx)(f.A, {
+    return this.hasParty(n) && null != e ? (0, r.jsx)(m.A, {
       currentUser: e,
       host: t,
       party: n,
@@ -54,7 +54,7 @@ class b extends Chunk64700.PureComponent {
       (0, o.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("99871")]).then(n.bind(n, 668569));
+        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = function(e) {
@@ -86,7 +86,7 @@ class b extends Chunk64700.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(m.A, {
+      return (0, r.jsx)(f.A, {
         party: e,
         header: A.intl.formatToPlainString(A.t.I9et1z, {
           count: e.length

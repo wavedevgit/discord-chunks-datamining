@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 592982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -37,7 +37,7 @@ function E(e) {
   } = e, I = (0, o.Us)(), {
     id: N,
     type: T
-  } = E, P = (0, l.bG)([u.A], () => u.A.getGuild(E.guild_id), [E.guild_id]), w = (0, l.bG)([d.A], () => d.A.getSelectedParticipant(N)), R = (null == w ? true : w.type) === _.lp.STREAM ? w.stream : null, D = (0, l.bG)([s.A], () => (null == w ? true : w.type) === _.lp.ACTIVITY ? s.A.getApplication(w.applicationId) : true), L = (0, g.A)(N), M = (0, y.A)(N), G = (0, m.A)(E, P, null == R ? true : R.ownerId, null == D ? true : D.id), k = (0, p.A)(N), U = (0, O.A)(), V = (0, c.RQ)(N), B = (0, c.dA)(N), H = (0, A.A)(R, I), F = (0, b.A)(D, N), K = (0, f.A)(), Y = (0, a.A)(E), W = (0, h.f)(N);
+  } = E, P = (0, l.bG)([u.A], () => u.A.getGuild(E.guild_id), [E.guild_id]), w = (0, l.bG)([d.A], () => d.A.getSelectedParticipant(N)), R = (null == w ? true : w.type) === j.lp.STREAM ? w.stream : null, D = (0, l.bG)([s.A], () => (null == w ? true : w.type) === j.lp.ACTIVITY ? s.A.getApplication(w.applicationId) : true), L = (0, g.A)(N), M = (0, y.A)(N), G = (0, m.A)(E, P, null == R ? true : R.ownerId, null == D ? true : D.id), k = (0, h.A)(N), U = (0, O.A)(), V = (0, c.RQ)(N), B = (0, c.dA)(N), H = (0, A.A)(R, I), F = (0, b.A)(D, N), Y = (0, f.A)(), K = (0, a.A)(E), W = (0, p.f)(N);
   return (0, r.jsxs)(i.W1t, {
     "data-menu-needs-review": true,
     className: v.MK,
@@ -45,13 +45,13 @@ function E(e) {
     onSelect: n,
     onInteraction: S,
     navId: "more-settings-context",
-    "aria-label": x.intl.string(x.t.FTLzdR),
+    "aria-label": _.intl.string(_.t.FTLzdR),
     children: [(0, r.jsx)(i.rXV, {
-      children: T !== j.rbe.GUILD_STAGE_VOICE ? G : null
+      children: T !== x.rbe.GUILD_STAGE_VOICE ? G : null
     }), (0, r.jsxs)(i.rXV, {
-      children: [T === j.rbe.GUILD_STAGE_VOICE ? V : null, T === j.rbe.GUILD_STAGE_VOICE ? B : null, C || T === j.rbe.GUILD_STAGE_VOICE ? null : k, K, T !== j.rbe.GUILD_STAGE_VOICE ? L : null, T === j.rbe.GUILD_STAGE_VOICE || T === j.rbe.GUILD_VOICE ? M : null]
+      children: [T === x.rbe.GUILD_STAGE_VOICE ? V : null, T === x.rbe.GUILD_STAGE_VOICE ? B : null, C || T === x.rbe.GUILD_STAGE_VOICE ? null : k, Y, T !== x.rbe.GUILD_STAGE_VOICE ? L : null, T === x.rbe.GUILD_STAGE_VOICE || T === x.rbe.GUILD_VOICE ? M : null]
     }), (0, r.jsx)(i.rXV, {
-      children: Y
+      children: K
     }), (0, r.jsxs)(i.rXV, {
       children: [U, !E.isManaged() && E.isPrivate() ? W : null]
     }), (0, r.jsxs)(i.rXV, {

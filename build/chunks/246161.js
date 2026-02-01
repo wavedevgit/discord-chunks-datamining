@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 246161, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 246161, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   c: () => d
 });
@@ -13,16 +13,16 @@ var Chunk574381 = require("./574381.js"),
 let d = (0, Chunk419954.zD)(Chunk780964.X.STREAMING_AUTO_STREAMER_MODE, {
   useTitle: () => o.intl.string(o.t.IxjaoF),
   useValue: function() {
-    return (0, l.bG)([a.A], () => {
+    return (0, l.bG)([u.A], () => {
       let {
-        autoToggle: e
-      } = a.A.getSettings();
-      return e
+        autoToggle: t
+      } = u.A.getSettings();
+      return t
     })
   },
-  setValue: function(e) {
+  setValue: function(t) {
     s.A.update({
-      autoToggle: e
+      autoToggle: t
     })
   },
   usePredicate: function() {

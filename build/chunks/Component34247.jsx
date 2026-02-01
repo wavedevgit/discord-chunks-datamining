@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 34247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -24,25 +24,25 @@ let m = Chunk64700.forwardRef(function(e, t) {
     className: A
   } = e, y = l.useCallback(() => {
     (0, a.WL)({
-      source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
+      source: p.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
-    let e = true !== b ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
+    let e = true !== b ? p.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
     switch (e) {
-      case h.GlobalDiscoveryTab.QUESTS:
+      case p.GlobalDiscoveryTab.QUESTS:
         return (0, c.transitionToGlobalDiscovery)({
-          tab: h.GlobalDiscoveryTab.QUESTS,
+          tab: p.GlobalDiscoveryTab.QUESTS,
           location: g.rE.DISCOVERY_COMPASS,
           questContent: i.u.DISCOVERY_COMPASS,
           questId: b
         });
-      case h.GlobalDiscoveryTab.SERVERS:
+      case p.GlobalDiscoveryTab.SERVERS:
         return (0, c.transitionToGlobalDiscovery)({
-          tab: h.GlobalDiscoveryTab.SERVERS,
-          entrypoint: p.J8.GUILDS_BAR
+          tab: p.GlobalDiscoveryTab.SERVERS,
+          entrypoint: h.J8.GUILDS_BAR
         });
-      case h.GlobalDiscoveryTab.APPS:
+      case p.GlobalDiscoveryTab.APPS:
         return (0, c.transitionToGlobalDiscovery)({
-          tab: h.GlobalDiscoveryTab.APPS,
+          tab: p.GlobalDiscoveryTab.APPS,
           newSessionState: {
             entrypoint: {
               name: u.sW.GLOBAL_DISCOVERY_BUTTON

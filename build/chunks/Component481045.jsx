@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 481045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L7: () => m,
@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk259533 = require("./259533.js");
 let m = () => {
   (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL, {
-    section: h.nc_.ACTIVITY_PRIVACY
+    section: p.nc_.ACTIVITY_PRIVACY
   })
 };
 
@@ -44,16 +44,16 @@ function b(e) {
 function A(e) {
   let {
     onClosePopout: t
-  } = e, n = s.tz.useSetting(), a = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, u.Kk)(), h = a.filter(e => !o.has(e));
+  } = e, n = s.tz.useSetting(), a = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, u.Kk)(), p = a.filter(e => !o.has(e));
   return 0 === a.length ? null : (0, r.jsxs)(b, {
     onClick: () => {
       t(), m()
     },
     children: [(0, r.jsx)(i.Text, {
       variant: "text-sm/semibold",
-      children: g.intl.string(n ? p.default["3GrhnF"] : p.default["54ycKJ"])
+      children: g.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
     }), (0, r.jsx)(d.l, {
-      guildIds: h
+      guildIds: p
     })]
   })
 }

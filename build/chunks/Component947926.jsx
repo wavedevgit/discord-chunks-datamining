@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 947926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => B,
@@ -78,8 +78,8 @@ function U(e) {
   } = (0, v.Gk)(), Y = l.useContext(N.Z) || h && B && !Q && !U, {
     isExpanded: J,
     setIsExpanded: X,
-    expandQuestBar: Z,
-    isExpansionAnimationComplete: $,
+    expandQuestBar: $,
+    isExpansionAnimationComplete: Z,
     isVisibilityAnimationAtRest: ee,
     expansionSpring: et,
     visibilitySpring: en,
@@ -98,17 +98,17 @@ function U(e) {
     handleBlur: ed,
     handleMouseEnter: eu,
     handleMouseLeave: em
-  } = (0, P.m)({
+  } = (0, k.m)({
     quest: r,
     isExpanded: J,
     setIsExpanded: X,
-    expandQuestBar: Z,
+    expandQuestBar: $,
     isQuestCompleted: z,
     isQuestAccepted: H,
     prevIsQuestAccepted: K,
     impressionRef: V
   });
-  (0, k.S)({
+  (0, P.S)({
     quest: r,
     hasAssetsError: q,
     isEligibleForQuests: h,
@@ -172,7 +172,7 @@ function U(e) {
                 quest: r,
                 taskDetails: eg,
                 isExpanded: J,
-                isExpansionAnimationComplete: $,
+                isExpansionAnimationComplete: Z,
                 onCtxMenuClose: er,
                 onCtxMenuOpen: el,
                 onCtxMenuSelect: ei,

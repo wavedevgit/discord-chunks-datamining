@@ -105,11 +105,11 @@ function L() {
       connectedRemote: a
     } = t, s = e.channelType, o = e.connectedRemote, c = e.connected;
     if (!e.connectHasStarted && i || a && !o) {
-      if (null != n && m.Do.has(n)) return;
+      if (null != n && f.Do.has(n)) return;
       return "user_join"
     }
     if (c && !r) {
-      if (l || a || null != s && m.Do.has(s)) return;
+      if (l || a || null != s && f.Do.has(s)) return;
       return "disconnect"
     }
   }), null
@@ -159,11 +159,11 @@ function U() {
 function G() {
   return x([v.A, C.A], () => {
     let e = v.A.getVoiceChannelId();
-    if (null == e) return f.zF.NONE;
+    if (null == e) return m.zF.NONE;
     let t = C.A.getVoiceStateForChannel(e);
-    return (0, f.eY)(t)
+    return (0, m.eY)(t)
   }, (e, t) => {
-    if (e !== t && t === f.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === m.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 
@@ -207,7 +207,7 @@ function V() {
         if (null == n) returnfalse;
         let r = E.A.getGuild(n);
         return null != r && r.afkChannelId === t.id
-      }(r) || null != n && m.Do.has(n)) return;
+      }(r) || null != n && f.Do.has(n)) return;
     let c = null != a && e.singleActiveStreamKey === a,
       u = l.some(t => !e.streamingUserIds.includes(t)),
       d = e.allActiveStreams.map(e => e.ownerId),

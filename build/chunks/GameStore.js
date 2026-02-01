@@ -74,8 +74,8 @@ let S = "GameStoreReportedGames",
   k = "",
   U = [],
   G = [],
-  F = new Map,
-  V = Chunk927813.A.Millis.HOUR;
+  V = new Map,
+  F = Chunk927813.A.Millis.HOUR;
 
 function B(e) {
   var t, n, r, i, a, o, s, l, c, u;
@@ -271,9 +271,9 @@ class J extends(a = Chunk311907.Ay.PersistedStore) {
   maybeTrackBlock(e, t, n) {
     var r, i;
     let a = null != (r = e.exePath.split(/[/\\]/).pop()) ? r : "unknown",
-      o = F.get(a),
+      o = V.get(a),
       s = Date.now();
-    (null == o || s - o >= V) && (F.set(a, s), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
+    (null == o || s - o >= F) && (V.set(a, s), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
       block_type: t,
       matched_entry: n,
       game_name: null != (i = e.gameName) ? i : e.origGameName,

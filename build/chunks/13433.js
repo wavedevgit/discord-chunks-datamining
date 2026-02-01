@@ -77,8 +77,8 @@ function k(e, t) {
 }
 let U = 10,
   G = 15e5,
-  F = 15e5,
-  V = 5 * Chunk927813.A.Millis.SECOND;
+  V = 15e5,
+  F = 5 * Chunk927813.A.Millis.SECOND;
 class B {
   setActionContext(e) {
     this.actionContext = e
@@ -185,7 +185,7 @@ class H extends Chunk767065.A {
       })) ? true : r.stats;
     if (null != E && h) {
       let e = E.transport.inboundBitrateEstimate;
-      null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > U && this.bandwidthSamples.shift(), this.bandwidthSamples.length === U && ((_ = i().mean(this.bandwidthSamples)) > F ? g = "HQ" : _ < G && (g = "LQ")))
+      null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > U && this.bandwidthSamples.shift(), this.bandwidthSamples.length === U && ((_ = i().mean(this.bandwidthSamples)) > V ? g = "HQ" : _ < G && (g = "LQ")))
     }
     let y = null != (t = null == (a = this._goLiveQualityManager) ? true : a.isDowngraded()) && t;
     if ("HQ" === g && y ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(_)), null == (o = this._goLiveQualityManager) || o.setGoLiveStreamDowngraded(false)) : "LQ" === g && !y && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(_)), null == (s = this._goLiveQualityManager) || s.setGoLiveStreamDowngraded(true)), h) {
@@ -289,7 +289,7 @@ class H extends Chunk767065.A {
           let n = b.A.getGoLiveSource();
           switch (this.soundshareStats.traceEvent(null == n || null == (t = n.desktopSource) ? true : t.soundshareSession, e), e.type) {
             case "soundshare_attach_requested":
-              this.errorTimer.start(V, () => {
+              this.errorTimer.start(F, () => {
                 l.h.dispatch({
                   type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                   errorMessage: "Sound Hook Failed"

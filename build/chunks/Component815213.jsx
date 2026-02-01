@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 815213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
 
 function g(e) {
   let t = u.A.getChannel(e);
-  return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : h.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
+  return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : p.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
 }
 
 function f(e) {
@@ -25,8 +25,8 @@ function f(e) {
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
-  let r = h.Ay.isGuildCollapsed(n),
-    l = h.Ay.isChannelMuted(n, t.id);
+  let r = p.Ay.isGuildCollapsed(n),
+    l = p.Ay.isChannelMuted(n, t.id);
   return (!r || !l) && d.Ay.getMentionCount(e) > 0
 }
 let m = Chunk64700.forwardRef(function(e, t) {
@@ -34,7 +34,7 @@ let m = Chunk64700.forwardRef(function(e, t) {
   let [o, ...c] = [e, t], {
     guildId: u,
     guildChannels: d,
-    guildChannelsVersion: h
+    guildChannelsVersion: p
   } = o, m = function(e, t) {
     if (null == e) return {};
     var n, r, l, i = {};
@@ -51,11 +51,11 @@ let m = Chunk64700.forwardRef(function(e, t) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(o, ["guildId", "guildChannels", "guildChannelsVersion"]), [b] = c, A = (0, s.W)(u, d, h, {
+  }(o, ["guildId", "guildChannels", "guildChannelsVersion"]), [b] = c, A = (0, s.W)(u, d, p, {
     withVoiceChannels: false
   }, {
     ignoreRecents: true
-  }), y = (0, i.bG)([p.A], () => p.A.isFocused());
+  }), y = (0, i.bG)([h.A], () => h.A.isFocused());
   return (0, r.jsx)(a.A, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

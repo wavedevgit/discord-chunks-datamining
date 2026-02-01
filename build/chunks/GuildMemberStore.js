@@ -77,8 +77,8 @@ let R = new Chunk626584.A("GuildMemberStore"),
   k = 0,
   U = 0,
   G = {},
-  F = {},
-  V = {
+  V = {},
+  F = {
     added: [],
     removed: []
   };
@@ -585,8 +585,8 @@ function eT(e) {
   if (null == f) returnfalse;
   let p = I.A.getGuild(i);
   if (null == p) returnfalse;
-  let _ = null != (t = F[i]) ? t : {};
-  F[i] = {
+  let _ = null != (t = V[i]) ? t : {};
+  V[i] = {
     added: a().difference(a().union(null != (n = _.added) ? n : [], s), null != l ? l : []),
     removed: a().difference(a().union(null != (r = _.removed) ? r : [], l), null != s ? s : [])
   }, d[u] = Q({
@@ -612,7 +612,7 @@ function eC(e) {
     guildId: t
   } = e;
   if (null == t) returnfalse;
-  delete F[t]
+  delete V[t]
 }
 
 function eN(e) {
@@ -825,12 +825,12 @@ class eU extends(r = Chunk311907.Ay.Store) {
   }
   getPendingRoleUpdates(e) {
     var t;
-    return null != (t = F[e]) ? t : V
+    return null != (t = V[e]) ? t : F
   }
   getMemberRoleWithPendingUpdates(e, t) {
     var n, r;
     let i = null != (n = null == (r = this.getMember(e, t)) ? true : r.roles) ? n : [],
-      o = F[e];
+      o = V[e];
     return null == o ? i : a().difference(a().union(i, o.added), o.removed)
   }
   getMemberVersion() {

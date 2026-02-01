@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 489306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => S,
@@ -36,13 +36,13 @@ function S(e) {
       indicator: g,
       showUnread: C
     } = function(e, t, n) {
-      let l = (0, j.A)(e).available,
+      let l = (0, x.A)(e).available,
         {
           shouldShow: o
-        } = (0, x.A)(e, "useGuildPowerupsNotificationIndicator"),
+        } = (0, _.A)(e, "useGuildPowerupsNotificationIndicator"),
         c = (0, a.cN)(s.M.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
         u = o && !c,
-        d = (0, i.bG)([p.A], () => p.A.getStateForGuild(e));
+        d = (0, i.bG)([h.A], () => h.A.getStateForGuild(e));
       return r.useMemo(() => {
         var e, r, i, s;
         if (null == t) return {
@@ -51,13 +51,13 @@ function S(e) {
         };
         let {
           unlockedPowerups: a
-        } = t, o = (0, y.k)([...Object.values(a), ...Object.values(null != (e = null == d ? true : d.entitlements) ? e : {})]), c = null != (r = null == n ? true : n.lastSeenWarningNotification) ? r : Date.now(), h = new Date(null == (s = o[o.length - 1]) ? true : s.ends_at).getTime(), p = null != (i = null == n ? true : n.lastBoostCount) ? i : 0, g = o.length > 0 && c < h, f = l - p;
+        } = t, o = (0, y.k)([...Object.values(a), ...Object.values(null != (e = null == d ? true : d.entitlements) ? e : {})]), c = null != (r = null == n ? true : n.lastSeenWarningNotification) ? r : Date.now(), p = new Date(null == (s = o[o.length - 1]) ? true : s.ends_at).getTime(), h = null != (i = null == n ? true : n.lastBoostCount) ? i : 0, g = o.length > 0 && c < p, f = l - h;
         return g || u ? {
           indicator: {
             type: b.cD.WARNING
           },
           showUnread: true
-        } : l !== p && f > 0 ? {
+        } : l !== h && f > 0 ? {
           indicator: {
             type: b.cD.UNREAD,
             count: f
@@ -73,14 +73,14 @@ function S(e) {
       let n, a, g, [f, m] = (0, O.ty)(null != t),
         y = f === s.M.GUILD_POWERUP_PERKS_COACHMARK,
         {
-          available: x
-        } = (0, j.A)(e),
+          available: _
+        } = (0, x.A)(e),
         C = (0, i.bG)([c.A], () => {
           var t, n;
           return null != (t = null == (n = c.A.getGuild(e)) ? true : n.features.has(E.GuildFeatures.GAME_SERVERS)) && t
         }),
-        S = (0, i.bG)([p.A], () => p.A.getLowestGameCostForGuild(e)),
-        I = (n = (0, A.gz)(e, "GuildPowerupsChannelRow"), a = (0, h.C$)(e, "GuildPowerupsChannelRow"), g = (0, i.bG)([c.A], () => {
+        S = (0, i.bG)([h.A], () => h.A.getLowestGameCostForGuild(e)),
+        I = (n = (0, A.gz)(e, "GuildPowerupsChannelRow"), a = (0, p.C$)(e, "GuildPowerupsChannelRow"), g = (0, i.bG)([c.A], () => {
           var t;
           return null == (t = c.A.getGuild(e)) ? true : t.features.has(E.GuildFeatures.GAME_SERVERS)
         }), r.useMemo(() => {
@@ -133,7 +133,7 @@ function S(e) {
                 return null != n && !!(i >= n)
               }) ? [] : r.map(r => {
                 let l = t.allPowerups[r];
-                return null == l || n < l.cost || (0, _.t)(e, l, "maybeGetPerkPurchaseablePopoutDCF") ? null : l
+                return null == l || n < l.cost || (0, j.t)(e, l, "maybeGetPerkPurchaseablePopoutDCF") ? null : l
               })).filter(u.Vq);
             if (0 !== a.length) {
               if (1 === a.length && !(0, o.zs)(s.V.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
@@ -151,18 +151,18 @@ function S(e) {
                 }
               }
             }
-          }(e, t, x);
+          }(e, t, _);
           if (null != r) return r;
           let l = function(e, t, n, r) {
-            if ((0, h.TS)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, o.zs)(s.V.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
+            if ((0, p.TS)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, o.zs)(s.V.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
               type: b.o.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
               markAsDismissed: t => {
                 (0, o._$)(s.V.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
               }
             }
-          }(e, C, x, S);
+          }(e, C, _, S);
           if (null != l) return l
-        }, [e, t, y, P, x, C, S]),
+        }, [e, t, y, P, _, C, S]),
         [R, D] = (0, O.ru)(null != w);
       return r.useMemo(() => {
         if (null != t) {

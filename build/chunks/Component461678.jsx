@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 461678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -20,23 +20,23 @@ function p(e) {
     channel: t,
     closePopout: n,
     onSelect: p,
-    navId: g,
-    label: f,
-    location: m,
-    includeGuildMute: b
-  } = e, A = (0, a.b)(t), y = (0, o.A0)(t), O = (0, l.bG)([h.A], () => h.A.getGuild(t.guild_id)), _ = (0, c.A)(O), j = (0, u.os)("ChannelNotificationSettingsPopoutMenu") && d.B4.has(t.type);
-  return (0, r.jsxs)(i.W1t, {
+    navId: f,
+    label: m,
+    location: g,
+    includeGuildMute: A
+  } = e, b = (0, s.b)(t), _ = (0, o.A0)(t), y = (0, r.bG)([h.A], () => h.A.getGuild(t.guild_id)), v = (0, c.A)(y), E = (0, u.os)("ChannelNotificationSettingsPopoutMenu") && d.B4.has(t.type);
+  return (0, l.jsxs)(i.W1t, {
     "data-menu-migrated": true,
-    navId: g,
+    navId: f,
     onClose: n,
-    "aria-label": f,
+    "aria-label": m,
     onSelect: p,
-    children: [(0, r.jsx)(i.rXV, {
-      children: (0, s.Ay)(t, m)
-    }), b ? (0, r.jsx)(i.rXV, {
-      children: _
-    }) : null, j ? y : (0, r.jsx)(i.rXV, {
-      children: A
+    children: [(0, l.jsx)(i.rXV, {
+      children: (0, a.Ay)(t, g)
+    }), A ? (0, l.jsx)(i.rXV, {
+      children: v
+    }) : null, E ? _ : (0, l.jsx)(i.rXV, {
+      children: b
     })]
   })
 }

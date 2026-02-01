@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 533923, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => m
 });
 var Chunk684013 = require("./684013.js"),
   Chunk334738 = require("./334738.js"),
@@ -17,54 +17,54 @@ var Chunk684013 = require("./684013.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk426127 = require("./426127.js");
 
-function g(e, t, n, g) {
-  if (s.A.isNotificationDisabled(d.KS.RequestToStream)) return null;
+function m(e, t, n, m) {
+  if (o.A.isNotificationDisabled(d.KS.RequestToStream)) return null;
   let y = t.username,
-    A = f.intl.format(m.default.jTbTAF, {
+    A = f.intl.format(g.default.jTbTAF, {
       username: "",
       game: n.name
     }),
-    O = t.getAvatarURL(e.guild_id, 80),
+    v = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: E,
-      trackClick: v
-    } = (0, u.Y9)(d.KS.RequestToStream, {
+      trackView: b,
+      trackClick: E
+    } = (0, c.Y9)(d.KS.RequestToStream, {
       notif_type: d.KS.RequestToStream,
       notif_user_id: t.id,
-      activity_type: p.xL.STREAM_REQUEST,
-      activity_name: g.name
+      activity_type: h.xL.STREAM_REQUEST,
+      activity_name: m.name
     });
   return {
-    icon: O,
+    icon: v,
     title: y,
     body: A,
-    confirmText: f.intl.string(m.default.UGbmBp),
+    confirmText: f.intl.string(g.default.UGbmBp),
     cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
-      E()
+      b()
     },
     onConfirmClick: (e, t) => {
-      let n = o.A.getState().preset;
-      if (n === h.jQ.PRESET_DOCUMENTS) {
+      let n = s.A.getState().preset;
+      if (n === p.jQ.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
         } = (0, l.eO)({
           location: "requestToStreamNotification"
         });
-        n = e ? h.jQ.PRESET_AUTO : h.jQ.PRESET_VIDEO
-      }(0, a.A)(c.A.getTargetPID(), {
+        n = e ? p.jQ.PRESET_AUTO : p.jQ.PRESET_VIDEO
+      }(0, a.A)(u.A.getTargetPID(), {
         preset: n
-      }), v("request-to-stream"), i.A.updateNotificationStatus(t)
+      }), E("request-to-stream"), i.A.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.ack)(e.id, {
-        section: p.JJy.OVERLAY,
-        object: p.ZSU.ACK_DECLINE_REQUEST_TO_STREAM,
-        objectType: p.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), i.A.updateNotificationStatus(n), v("decline")
+        section: h.JJy.OVERLAY,
+        object: h.ZSU.ACK_DECLINE_REQUEST_TO_STREAM,
+        objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
+      }, true, true), i.A.updateNotificationStatus(n), E("decline")
     },
     onDismissClick: () => {
-      v("dismiss")
+      E("dismiss")
     }
   }
 }

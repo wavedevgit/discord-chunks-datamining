@@ -1,8 +1,8 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 726532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => T,
-  j: () => y
+  j: () => N
 }), require("./228524.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function C(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = () => (0, r.jsxs)(s.BJc, {
+let C = () => (0, r.jsxs)(s.BJc, {
     direction: "horizontal",
     gap: 10,
     padding: {
@@ -116,8 +116,8 @@ let x = () => (0, r.jsxs)(s.BJc, {
         members: I
       } = o,
       {
-        title: y,
-        description: N
+        title: N,
+        description: y
       } = (() => {
         switch (l.subscriptionStatus) {
           case f.Dmq.CANCELED:
@@ -157,11 +157,11 @@ let x = () => (0, r.jsxs)(s.BJc, {
     return (0, r.jsxs)(s.hLv, {
       className: E.kL,
       color: "nitro-pink",
-      children: [(0, r.jsx)(x, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(C, {}), (0, r.jsxs)("div", {
         className: E.wS,
         children: [(0, r.jsx)(S, {
-          title: y,
-          description: N,
+          title: N,
+          description: y,
           button: (0, r.jsx)(s.Button, {
             variant: "secondary",
             text: h.intl.string(b.default.NCu2JD),
@@ -170,7 +170,7 @@ let x = () => (0, r.jsxs)(s.BJc, {
                 let {
                   default: e
                 } = await n.e("92796").then(n.bind(n, 205463));
-                return t => (0, r.jsx)(e, C(O({}, t), {
+                return t => (0, r.jsx)(e, x(O({}, t), {
                   premiumGroupSubscriptionId: u,
                   currentUser: i
                 }))
@@ -263,7 +263,7 @@ let x = () => (0, r.jsxs)(s.BJc, {
       }, "seat-available-".concat(t)))]
     })
   },
-  y = e => {
+  N = e => {
     let {
       subscription: t,
       analyticsLocations: d
@@ -272,8 +272,8 @@ let x = () => (0, r.jsxs)(s.BJc, {
       isLoading: g
     } = (0, p.A)(t.id), {
       numAvailableInvites: T,
-      numTotalSeats: y,
-      numUsedSeats: N
+      numTotalSeats: N,
+      numUsedSeats: y
     } = (0, l.cf)([_.A], () => ({
       numAvailableInvites: _.A.getNumAvailableInvites(),
       numTotalSeats: _.A.getNumTotalSeats(),
@@ -285,7 +285,7 @@ let x = () => (0, r.jsxs)(s.BJc, {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: e
         } = await n.e("72820").then(n.bind(n, 281439));
-        return n => (0, r.jsx)(e, C(O({}, n), {
+        return n => (0, r.jsx)(e, x(O({}, n), {
           premiumSubscription: t,
           analyticsLocations: d
         }))
@@ -299,7 +299,7 @@ let x = () => (0, r.jsxs)(s.BJc, {
         let {
           default: e
         } = await Promise.all([n.e("73987"), n.e("37997")]).then(n.bind(n, 773486));
-        return n => (0, r.jsx)(e, C(O({}, n), {
+        return n => (0, r.jsx)(e, x(O({}, n), {
           subscription: t
         }))
       })
@@ -345,7 +345,7 @@ let x = () => (0, r.jsxs)(s.BJc, {
     return (0, r.jsxs)(s.hLv, {
       className: E.kL,
       color: "nitro-pink",
-      children: [(0, r.jsx)(x, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(C, {}), (0, r.jsxs)("div", {
         className: E.wS,
         children: [(0, r.jsx)(S, {
           title: M,
@@ -387,7 +387,7 @@ let x = () => (0, r.jsxs)(s.BJc, {
               let {
                 default: i
               } = await n.e("21305").then(n.bind(n, 391040));
-              return n => (0, r.jsx)(i, C(O({}, n), {
+              return n => (0, r.jsx)(i, x(O({}, n), {
                 subscriptionId: t.id,
                 member: e
               }))
@@ -404,15 +404,15 @@ let x = () => (0, r.jsxs)(s.BJc, {
               let {
                 default: i
               } = await n.e("15554").then(n.bind(n, 115225));
-              return n => (0, r.jsx)(i, C(O({}, n), {
+              return n => (0, r.jsx)(i, x(O({}, n), {
                 subscriptionId: t.id,
                 invitedUser: e,
                 subscriptionGroupMemberId: null == l ? true : l.id
               }))
             })
           },
-          numTotalSeats: y,
-          numUsedSeats: N,
+          numTotalSeats: N,
+          numUsedSeats: y,
           numAvailableInvites: T
         })]
       })]

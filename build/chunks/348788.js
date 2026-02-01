@@ -116,12 +116,12 @@ function E(e, t, n) {
       containingElement: (0, u.m)(n.current)
     }))
   }, [T, n]);
-  let F = (0, h.i)({
+  let V = (0, h.i)({
       day: "numeric",
       timeZone: t.timeZone,
       calendar: y.calendar.identifier
     }),
-    V = (0, m.useMemo)(() => F.formatToParts(R).find(e => "day" === e.type).value, [F, R]);
+    F = (0, m.useMemo)(() => V.formatToParts(R).find(e => "day" === e.type).value, [V, R]);
   return {
     cellProps: {
       role: "gridcell",
@@ -156,6 +156,6 @@ function E(e, t, n) {
     isUnavailable: C,
     isOutsideVisibleRange: 0 > y.compare(t.visibleRange.start) || y.compare(t.visibleRange.end) > 0,
     isInvalid: w,
-    formattedDate: V
+    formattedDate: F
   }
 }

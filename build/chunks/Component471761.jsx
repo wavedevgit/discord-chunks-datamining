@@ -15,8 +15,8 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 let g = (0, Chunk397927.kHD)(Chunk186975.A),
-  f = (0, Chunk397927.kHD)(Chunk379103.A),
-  m = new Set([Chunk652215.VX0.PUSHING, Chunk652215.VX0.PULLING]),
+  m = (0, Chunk397927.kHD)(Chunk379103.A),
+  f = new Set([Chunk652215.VX0.PUSHING, Chunk652215.VX0.PULLING]),
   A = Object.freeze({
     [Chunk652215.VX0.DONE]: g,
     [Chunk652215.VX0.PLANNING]: g,
@@ -88,8 +88,8 @@ class _ extends Chunk64700.PureComponent {
     } = this.props, i = null == e ? {
       type: p.VX0.DONE
     } : e, l = this.getIsRecentlySynced();
-    (m.has(i.type) || l) && (t.id, this.getStop(i, l));
-    let a = l ? f : A[i.type];
+    (f.has(i.type) || l) && (t.id, this.getStop(i, l));
+    let a = l ? m : A[i.type];
     return (0, r.jsx)(s.m, {
       text: this.getTooltip(i, l),
       children: (0, r.jsx)(a, {

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 856134, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 856134, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   F: () => d
 });
@@ -17,7 +17,7 @@ let d = (0, Chunk419954.E2)(Chunk780964.X.SOUNDS_HOLIDAY_NOTICE, {
     variant: "text-md/normal",
     color: "text-subtle",
     children: o.intl.format(o.t.Eup6Wv, {
-      onClick: () => (0, u.openUserSettings)(a.X.NOTIFICATIONS_SOUNDS_CATEGORY)
+      onClick: () => (0, a.openUserSettings)(u.X.NOTIFICATIONS_SOUNDS_CATEGORY)
     })
   })
 })

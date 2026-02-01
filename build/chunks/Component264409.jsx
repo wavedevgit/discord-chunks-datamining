@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 264409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -19,21 +19,21 @@ function d(e) {
     show: n,
     active: l,
     onAnimationStart: d,
-    onAnimationRest: h
-  } = e, p = {}, g = {};
-  p.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", g.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
+    onAnimationRest: p
+  } = e, h = {}, g = {};
+  h.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", g.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
   let f = (0, o.rdh)(a.A.unsafe_rawColors.BRAND_500).hex(),
     m = (0, o.rdh)(a.A.unsafe_rawColors.PRIMARY_630).hex();
-  l && null == t.icon && (p.backgroundColor = f, g.backgroundColor = m);
+  l && null == t.icon && (h.backgroundColor = f, g.backgroundColor = m);
   let b = (0, o.pnh)(n, {
-    from: p,
+    from: h,
     enter: g,
-    leave: p,
+    leave: h,
     config: {
       duration: 100
     },
     onStart: d,
-    onRest: h
+    onRest: p
   });
   return (0, r.jsx)(r.Fragment, {
     children: b((e, n, l) => n && (0, r.jsx)("div", {

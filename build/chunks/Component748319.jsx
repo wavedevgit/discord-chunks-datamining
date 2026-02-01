@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 748319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => e6,
@@ -139,9 +139,9 @@ function eQ(e, t) {
 let eY = Chunk837921.Ay.getEnableHardwareAcceleration() ? Chunk397927.JsQ : Chunk397927.euF,
   eJ = 2.5 * Chunk927813.A.Millis.SECOND,
   eX = 2 * Chunk927813.A.Millis.MINUTE,
-  eZ = 5 * Chunk927813.A.Millis.SECOND;
+  e$ = 5 * Chunk927813.A.Millis.SECOND;
 
-function e$(e) {
+function eZ(e) {
   let {
     ref: t,
     speaking: n,
@@ -320,7 +320,7 @@ class e0 extends Chunk64700.PureComponent {
       hoverText: i,
       forceHover: e,
       children: (0, a.jsx)(A.A, {
-        text: ek.Ay.humanizeStatus(r)
+        text: eP.Ay.humanizeStatus(r)
       })
     }) : i
   }
@@ -331,7 +331,7 @@ class e0 extends Chunk64700.PureComponent {
       },
       onClick: n
     } = e;
-    return (0, a.jsx)(e$, eQ(eq({}, this.props), {
+    return (0, a.jsx)(eZ, eQ(eq({}, this.props), {
       ref: this.avatarWithPopoutRef,
       handleClick: n,
       handleMouseLeave: this.handleMouseLeave,
@@ -663,7 +663,7 @@ function e9(e) {
     a = l.useRef(new u.Ep),
     [r, i] = l.useState(false);
   l.useEffect(() => {
-    t && n && (i(true), a.current.start(eZ, () => {
+    t && n && (i(true), a.current.start(e$, () => {
       i(false)
     }))
   }, [t, n]);
@@ -705,7 +705,7 @@ function e6() {
     }),
     p = (0, c.bG)([eC.A], () => eC.A.isCurrentUserPTTLatched()),
     x = (0, c.bG)([eC.A], () => eC.A.getVoiceVolume(n)),
-    g = ek.Ay.useUserTag(t, {
+    g = eP.Ay.useUserTag(t, {
       decoration: "never"
     }),
     b = (0, c.bG)([eS.A], () => eS.A.hidePersonalInformation),
@@ -722,21 +722,21 @@ function e6() {
       selfDeaf: C,
       deaf: E
     } = (0, ec.A)(v),
-    P = (0, c.bG)([N.A], () => {
+    k = (0, c.bG)([N.A], () => {
       var e;
       return (0, w.kK)() ? null == (e = N.A.getCurrentBuildOverride().overrides) ? true : e.discord_web : null
     }),
-    k = (0, c.bG)([eT.A], () => eT.A.getPremiumTypeSubscription()),
+    P = (0, c.bG)([eT.A], () => eT.A.getPremiumTypeSubscription()),
     R = (0, c.bG)([ej.A], () => ej.A.getSpeakingWhileMuted()),
     D = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
     M = (0, c.bG)([ev.A], () => ev.A.hasLayers()),
-    L = (0, h.red)(h.DXt) || M || eP.P.isDisallowPopupsSet() || D,
-    U = (0, Z.g)(),
+    L = (0, h.red)(h.DXt) || M || ek.P.isDisallowPopupsSet() || D,
+    U = (0, $.g)(),
     B = (0, c.bG)([H.default], () => null != H.default.getAwaitingRemoteSessionInfo()),
     G = (0, c.bG)([ey.A], () => ey.A.getGuildId()),
     F = null == t ? true : t.avatarDecoration,
     V = (0, T.A)(F),
-    W = null != (e = ek.Ay.useName(t)) ? e : "",
+    W = null != (e = eP.Ay.useName(t)) ? e : "",
     {
       voiceActivityStatusEnabled: K
     } = (0, j.G)({
@@ -756,7 +756,7 @@ function e6() {
     } = (0, en.c9)({
       location: eV.rE.CONFLICT_CHECKS
     }),
-    $ = (0, c.bG)([ea.A, eO.default, eb.A], () => {
+    Z = (0, c.bG)([ea.A, eO.default, eb.A], () => {
       let e, t = ea.A.getSyncingWith(),
         n = ea.A.getActivity(),
         a = [];
@@ -801,7 +801,7 @@ function e6() {
       userTag: g,
       hidePrivateData: b,
       occluded: L,
-      premiumSubscription: k,
+      premiumSubscription: P,
       selfDeaf: C,
       selfMute: y,
       serverDeaf: E,
@@ -814,7 +814,7 @@ function e6() {
       status: s,
       streaming: i,
       suppress: A,
-      webBuildOverride: P,
+      webBuildOverride: k,
       awaitingRemote: B,
       isEligibleForPomelo: U,
       voiceActivityStatusEnabled: K,
@@ -823,7 +823,7 @@ function e6() {
       avatarDecoration: V,
       isQuestBarEmpty: J,
       hasLoadedQuestBar: X,
-      isListenAlongVisible: $,
+      isListenAlongVisible: Z,
       deviceChangedTooltipType: eE,
       onDismissDeviceChangedTooltip: () => eN(eE),
       shouldShowPTTJoinTooltip: eo,
@@ -873,7 +873,7 @@ function e7(e) {
       })
     }, _.events), {
       plated: null != m
-    })), (0, a.jsx)($.V, {
+    })), (0, a.jsx)(Z.V, {
       targetElementRef: x,
       shouldShow: g,
       onDismiss: () => f(false)
@@ -926,9 +926,9 @@ function e2(e) {
       events: w,
       play: I
     } = (0, eh.q)(A),
-    P = r || s ? h.O1p : N,
+    k = r || s ? h.O1p : N,
     D = (0, c.bG)([ej.A], () => ej.A.getSettings().modeOptions.shortcut),
-    M = (0, k.A)(n, r, s, o);
+    M = (0, P.A)(n, r, s, o);
   t = g ? {
     tooltipType: "green_void_do_not_use",
     tooltipText: eH.intl.string(eH.t["29gnR4"]),
@@ -999,7 +999,7 @@ function e2(e) {
             "aria-label": eH.intl.string(eH.t.w4m945),
             className: eK.$o,
             disabled: o,
-            icon: (0, a.jsx)(P, {
+            icon: (0, a.jsx)(k, {
               size: "custom",
               width: 20,
               height: 20,
@@ -1080,7 +1080,7 @@ function e8(e) {
     }
   } = (0, m.I)(p ? "undeafen" : "deafen"), v = n ? h.TJE : x, {
     name: j
-  } = (0, z.x5)(eW.oh.AUDIO_OUTPUT), _ = (0, P.A)(t, n, r), {
+  } = (0, z.x5)(eW.oh.AUDIO_OUTPUT), _ = (0, k.A)(t, n, r), {
     analyticsLocations: y
   } = (0, O.Ay)(S.A.AUDIO_OUTPUT_BUTTON), A = l.useRef(null);
   return l.useEffect(() => () => g(), [p, g]), (0, a.jsx)(O.f5, {

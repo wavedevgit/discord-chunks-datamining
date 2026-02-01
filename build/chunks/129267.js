@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 129267, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 129267, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  X: () => c
+  X: () => A
 });
 var Chunk419117 = require("./419117.jsx"),
   Chunk419954 = require("./419954.js"),
@@ -12,21 +12,21 @@ var Chunk419117 = require("./419117.jsx"),
   Chunk985018 = require("./985018.jsx");
 let d = Chunk780964.X.NOTIFICATIONS_ADVANCED_ACCORDION,
   T = (0, Chunk419954.bd)(d, {
-    useTitle: e => e ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
+    useTitle: t => t ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
     useCollapsedSubtitle: function() {
       return (0, n.A)(d, {
-        formatter: e => {
+        formatter: t => {
           let {
-            title: t,
+            title: e,
             index: i
-          } = e;
-          return "string" != typeof t ? t : 0 === i ? "".concat(t.charAt(0).toLocaleUpperCase()).concat(t.slice(1).toLocaleLowerCase()) : t.toLocaleLowerCase()
+          } = t;
+          return "string" != typeof e ? e : 0 === i ? "".concat(e.charAt(0).toLocaleUpperCase()).concat(e.slice(1).toLocaleLowerCase()) : e.toLocaleLowerCase()
         }
       })
     },
-    buildLayout: () => [r.z, a.m, u.j]
+    buildLayout: () => [r.z, u.m, a.j]
   }),
-  c = (0, Chunk419954.zZ)(Chunk780964.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
+  A = (0, Chunk419954.zZ)(Chunk780964.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
     useTitle: () => o.intl.string(o.t["31DySj"]),
     buildLayout: () => [T]
   })

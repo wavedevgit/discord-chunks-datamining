@@ -1,4 +1,4 @@
-/** Chunk was on 94682 **/
+/** Chunk was on 60118 **/
 /** chunk id: 742710, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -130,7 +130,7 @@ function T(e) {
   }))
 }
 
-function N(e) {
+function C(e) {
   let {
     user: t,
     guildId: n,
@@ -145,7 +145,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     text: t,
     className: n
@@ -158,7 +158,7 @@ function C(e) {
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     text: t,
     user: n,
@@ -172,18 +172,18 @@ function k(e) {
       size: "xxs",
       color: s.LU0.colors.ICON_MUTED,
       className: w.Ls
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(C, {
       user: n,
       guildId: l,
       channelId: i,
       id: a
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(N, {
       text: t
     })]
   })
 }
 
-function R(e) {
+function k(e) {
   let {
     text: t,
     user: n,
@@ -245,12 +245,12 @@ function R(e) {
       size: "xxs",
       color: s.LU0.colors.ICON_MUTED,
       className: w.Ls
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(C, {
       user: n,
       guildId: i,
       channelId: u,
       id: b
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(N, {
       text: null != t ? t : A,
       className: a()(w.qC, !P && w.qf)
     }), (0, r.jsx)(s.DUT, {
@@ -280,20 +280,20 @@ function D(e) {
     className: g
   } = e, {
     applicationId: I,
-    comment: N,
-    tags: C
+    comment: C,
+    tags: N
   } = i, {
     coverImageUrl: D,
     gameName: L,
     isLoading: G
-  } = (0, _.A)(I), U = {
+  } = (0, _.A)(I), M = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, B = 1 === (0, m.cv)(o), H = !c && F, W = H && (0, m.y9)(o), X = H && !B, {
-    registerDragHandleRef: K
+  }, U = f.default.getCurrentUser(), F = (null == U ? true : U.id) === t.id, W = 1 === (0, m.cv)(o), H = !c && F, B = H && (0, m.y9)(o), X = H && !W, {
+    registerDragHandleRef: z
   } = (0, y.r)();
   if (G) return (0, r.jsx)(j.E, {});
-  let z = () => (0, r.jsx)(O.A, {
+  let K = () => (0, r.jsx)(O.A, {
       coverRef: p,
       className: null == D || c ? true : A.iL,
       imageSrc: D,
@@ -307,32 +307,32 @@ function D(e) {
       className: a()(w.Nr, g),
       children: [X ? (0, r.jsxs)("div", {
         className: w.An,
-        children: [z(), (0, r.jsx)(b.jV, {
-          buttonRef: K(i.applicationId),
+        children: [K(), (0, r.jsx)(b.jV, {
+          buttonRef: z(i.applicationId),
           className: w.BU
         })]
-      }) : z(), (0, r.jsxs)("div", {
+      }) : K(), (0, r.jsxs)("div", {
         className: w.zH,
-        children: [c ? (0, r.jsx)(s.Heading, E(P({}, U), {
+        children: [c ? (0, r.jsx)(s.Heading, E(P({}, M), {
           children: L
         })) : (0, r.jsx)(T, P({
           applicationId: I,
           userId: t.id,
           gameName: L
-        }, U)), W ? (0, r.jsx)(R, {
-          text: N,
+        }, M)), B ? (0, r.jsx)(k, {
+          text: C,
           user: t,
           guildId: n,
           channelId: l,
           widgetType: o,
           applicationId: I
-        }) : (0, r.jsx)(k, {
-          text: N,
+        }) : (0, r.jsx)(R, {
+          text: C,
           user: t,
           guildId: n,
           channelId: l
         }), (0, r.jsx)(h.A, {
-          tags: C,
+          tags: N,
           isCurrentUser: F,
           widgetType: o,
           applicationId: I,

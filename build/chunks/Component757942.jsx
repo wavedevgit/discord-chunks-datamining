@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 757942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -34,20 +34,20 @@ let b = l().throttle(function(e, t) {
       channelPredicate: h = () => true,
       guildPredicate: E = () => true,
       guildFeaturePredicate: O = () => false,
-      ensureChatIsVisible: C = () => false,
-      withVoiceChannels: x = false
+      ensureChatIsVisible: x = () => false,
+      withVoiceChannels: C = false
     } = t,
     S = null != (i = o.A.getState().guildId) ? i : g.ME,
     T = o.A.getState().channelId,
     I = (a = S, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
-    y = e > 0 ? 0 : I.length - 1,
-    N = f(S, x),
-    j = N.indexOf(T) + e;
+    N = e > 0 ? 0 : I.length - 1,
+    y = f(S, C),
+    j = y.indexOf(T) + e;
   for (; null != S && "" !== S;) {
-    if (b = N[j], E(S))
+    if (b = y[j], E(S))
       for (; null != b && "" !== b;) {
         if ("string" == typeof b) {
-          if (h(S, b)) return (0, m.i)(S, b, false, C(S, b))
+          if (h(S, b)) return (0, m.i)(S, b, false, x(S, b))
         } else if ("object" == typeof b && O(b.resourceId, b.type)) return S !== d.A.getGuildId() && (0, m.i)(S, null == (l = c.Ay.getDefaultChannel(S)) ? true : l.id), (0, s.mMO)(async () => {
           let {
             default: e
@@ -84,10 +84,10 @@ let b = l().throttle(function(e, t) {
             guildId: S
           }))
         });
-        j += e, b = N[j]
+        j += e, b = y[j]
       }
-    if (y += e, null == (S = I[y]) || "" === S) break;
-    N = f(S, x), j = e < 0 ? N.length - 1 : 0
+    if (N += e, null == (S = I[N]) || "" === S) break;
+    y = f(S, C), j = e < 0 ? y.length - 1 : 0
   }
   p._.dispatch(g.jej.SHAKE_APP, {
     duration: 200,

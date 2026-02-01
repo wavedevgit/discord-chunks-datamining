@@ -49,8 +49,8 @@ let b = 1048576,
   k = 64,
   U = 4 * b,
   G = 30 * Chunk927813.A.Millis.MINUTE,
-  F = 8 * b,
-  V = 60 * Chunk927813.A.Millis.MINUTE,
+  V = 8 * b,
+  F = 60 * Chunk927813.A.Millis.MINUTE,
   B = "lastMemoryUsageRestart",
   H = +Chunk927813.A.Millis.DAY,
   Y = +Chunk927813.A.Millis.MINUTE,
@@ -159,7 +159,7 @@ class X extends Chunk439372.A {
   doRestartIfNeeded(e) {
     if (e < U) return;
     let t = performance.now() - this._startupTime;
-    if (t < V) return;
+    if (t < F) return;
     let n = i.w.get(B);
     if (null != n && n.timestamp >= Date.now() - H) return;
     let {
@@ -170,7 +170,7 @@ class X extends Chunk439372.A {
     });
     a && setTimeout(() => {
       let n = true;
-      if (e < F || !o) {
+      if (e < V || !o) {
         let e = l.A.getIdleSince();
         if (null == e || e > Date.now() - G || null != u.A.getRTCConnection()) return
       } else n = false;

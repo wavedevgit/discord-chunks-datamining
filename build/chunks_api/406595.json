@@ -1,0 +1,1 @@
+{"id":"406595","type":"store","data":{"name":"OverlayFriendsWidgetFavoritesStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getFavoriteTargetIdsForTab","args":["e"]},{"name":"isFavorite","args":["e","t"]}],"events":[]},"fromModule":{"id":"57010"}}

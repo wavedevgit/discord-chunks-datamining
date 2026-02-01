@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 768985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => E
@@ -26,15 +26,15 @@ function E(e) {
     location: t,
     onMountEffect: n
   } = e, E = (0, g.A)(), O = (0, A.W1)(), {
-    familyCenterInitialized: C,
-    isLoading: x
+    familyCenterInitialized: x,
+    isLoading: C
   } = (0, l.cf)([_.A], () => ({
     familyCenterInitialized: _.A.getIsInitialized(),
     isLoading: _.A.isLoading()
   })), S = (0, m.k)(), {
     selectedTab: T,
     handleTabChange: I
-  } = (0, p.A)(), y = d.default.getCurrentUser(), N = null != E, j = C && null != y && !N;
+  } = (0, p.A)(), N = d.default.getCurrentUser(), y = null != E, j = x && null != N && !y;
   (0, s.Ay)(() => {
     (0, c.d)("family-center"), null != n && n()
   });
@@ -48,7 +48,7 @@ function E(e) {
   return r.useEffect(() => {
     P.current = v
   }), r.useEffect(() => {
-    if (C && N) {
+    if (x && y) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
@@ -65,10 +65,10 @@ function E(e) {
         name: i.K.FAMILY_CENTER_VIEW
       })
     }
-  }, [C, N, t]), r.useEffect(() => {
+  }, [x, y, t]), r.useEffect(() => {
     j && (0, a.yO)(h.w_.FAMILY_CENTER)
   }, [j]), {
-    isLoading: x,
+    isLoading: C,
     selectedTab: T,
     handleTabChange: I,
     showAgeGateModal: j

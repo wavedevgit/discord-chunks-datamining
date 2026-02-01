@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 226421, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -14,9 +14,9 @@ function o(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)("div", {
-    className: i()(a.L, t),
-    children: (0, r.jsx)(s.LK_, {
+  return (0, l.jsx)("div", {
+    className: i()(s.L, t),
+    children: (0, l.jsx)(a.LK_, {
       size: "lg",
       color: "currentColor"
     })

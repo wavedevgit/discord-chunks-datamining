@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 623049, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 623049, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   T: () => T
 });
@@ -16,8 +16,8 @@ let d = (0, Chunk419954.E2)(Chunk780964.X.APPEARANCE_REDIRECT, {
       variant: "text-md/normal",
       children: o.intl.format(o.t.DHpTjT, {
         onAppearanceClick() {
-          (0, a.openUserSettings)(r.X.APPEARANCE_PANEL, {
-            section: u.nc_.APPEARANCE
+          (0, u.openUserSettings)(r.X.APPEARANCE_PANEL, {
+            section: a.nc_.APPEARANCE
           })
         }
       })

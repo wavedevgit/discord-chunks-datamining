@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 234658, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 234658, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   x: () => T
 });
@@ -14,28 +14,28 @@ var Chunk311907 = require("./311907.js"),
 let T = (0, Chunk419954.zD)(Chunk780964.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
   usePredicate: () => {
     let {
-      runningGameApplication: e
+      runningGameApplication: t
     } = (0, l.A)();
-    return (null == e ? true : e.id) != null
+    return (null == t ? true : t.id) != null
   },
   useDisabled: () => {
     let {
-      runningGame: e
+      runningGame: t
     } = (0, l.A)();
-    return null != e && (0, s.qJ)(e.pid)
+    return null != t && (0, s.qJ)(t.pid)
   },
   useValue: () => {
     let {
-      runningGame: e,
-      runningGameApplication: t
-    } = (0, l.A)(), i = null == t ? true : t.id, a = (0, n.bG)([r.A], () => r.A.isLimitedInteractionOverrideEnabled(i)), u = null != e && (0, s.qJ)(e.pid);
-    return a || u
+      runningGame: t,
+      runningGameApplication: e
+    } = (0, l.A)(), i = null == e ? true : e.id, u = (0, n.bG)([r.A], () => r.A.isLimitedInteractionOverrideEnabled(i)), a = null != t && (0, s.qJ)(t.pid);
+    return u || a
   },
-  setValue: e => {
+  setValue: t => {
     let {
-      runningGameApplication: t
+      runningGameApplication: e
     } = (0, l.b)();
-    null != t && (0, a.x8)(t.id, e)
+    null != e && (0, u.x8)(e.id, t)
   },
   useTitle: () => d.intl.string(d.t.wgVQND),
   useSubtitle: () => d.intl.string(d.t["5SsyF5"])

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 306680, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Co: () => i
@@ -7,9 +7,9 @@ var Chunk734057 = require("./734057.js"),
   Chunk661191 = require("./661191.js");
 
 function i(e, t) {
-  if (e !== l.default.castChannelIdAsMessageId(t)) returnfalse;
-  let n = r.A.getChannel(t);
+  if (e !== r.default.castChannelIdAsMessageId(t)) returnfalse;
+  let n = l.A.getChannel(t);
   if (null == n || !n.isForumPost()) returnfalse;
-  let i = r.A.getChannel(n.parent_id);
+  let i = l.A.getChannel(n.parent_id);
   return (null == i ? true : i.isMediaChannel()) === true
 }

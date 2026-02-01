@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 394727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./747238.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,15 +16,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk257269 = require("./257269.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function m(e) {
   var t, n;
   let {
-    match: f
-  } = e, m = null != (t = (0, u.UC)()) ? t : [], {
+    match: m
+  } = e, f = null != (t = (0, u.UC)()) ? t : [], {
     analyticsLocations: A
-  } = (0, o.Ay)([...m, s.A.ACTIVITY_DETAIL_PAGE]), {
+  } = (0, o.Ay)([...f, s.A.ACTIVITY_DETAIL_PAGE]), {
     applicationId: _
-  } = f.params, [b] = (0, c.A)([_]), E = null == b || null == (n = b.bot) ? true : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
+  } = m.params, [b] = (0, c.A)([_]), E = null == b || null == (n = b.bot) ? true : n.id, O = (0, i.bG)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != E && null != O && (async () => {
       try {

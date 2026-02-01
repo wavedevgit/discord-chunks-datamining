@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 935636, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 935636, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   I: () => d
 });
@@ -19,7 +19,7 @@ let d = (0, Chunk419954.i4)(Chunk780964.X.LOGOUT_SIDEBAR_ITEM, {
       subtitle: o.intl.string(o.t.SUnWBB),
       confirmText: o.intl.string(o.t["2jxGer"]),
       onConfirm: () => {
-        r._.dispatch(u.jej.SETTINGS_TRIGGER_LOGOUT)
+        r._.dispatch(a.jej.SETTINGS_TRIGGER_LOGOUT)
       }
     })
   },

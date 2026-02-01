@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 570874, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 570874, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  q: () => S
+  q: () => c
 });
 var Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
@@ -14,11 +14,11 @@ var Chunk419954 = require("./419954.js"),
   Chunk794145 = require("./794145.js"),
   Chunk404096 = require("./404096.js"),
   Chunk985018 = require("./985018.jsx");
-let S = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
-  useTitle: () => A.intl.string(A.t.eYaT7L),
+let c = (0, Chunk419954.zZ)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
+  useTitle: () => S.intl.string(S.t.eYaT7L),
   useInlineNotice: function() {
-    let e = (0, a.I)();
-    if ((0, r.Tx)() === s.YG) return e
+    let t = (0, u.I)();
+    if ((0, r.Tx)() === s.YG) return t
   },
-  buildLayout: () => [u.a, T.V, c.w, d.H, o.U]
+  buildLayout: () => [a.a, T.V, A.w, d.H, o.U]
 })

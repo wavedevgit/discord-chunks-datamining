@@ -1,4 +1,4 @@
-/** Chunk was on 61222 **/
+/** Chunk was on 46673 **/
 /** chunk id: 619029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -54,13 +54,13 @@ function N(e) {
   let {
     guildId: t,
     analyticsLocations: n
-  } = e, [i, o] = (0, d.j8)({
+  } = e, [i, a] = (0, d.j8)({
     guildId: t,
     analyticsLocations: n
-  }), a = o ? T.intl.string(T.t["6ndMcq"]) : T.intl.string(T.t["0eiu6J"]), s = o ? T.intl.string(T.t.S09nw4) : T.intl.string(T.t.tEttXd);
+  }), o = a ? T.intl.string(T.t["6ndMcq"]) : T.intl.string(T.t["0eiu6J"]), s = a ? T.intl.string(T.t.S09nw4) : T.intl.string(T.t.tEttXd);
   return (0, r.jsxs)(l.$Td, {
     color: l.Hv$.DANGER,
-    children: [a, (0, r.jsx)(l.zr9, {
+    children: [o, (0, r.jsx)(l.zr9, {
       onClick: i,
       children: s
     })]
@@ -101,7 +101,7 @@ function R(e) {
     return l
   }(e, ["analyticsLocations"]), {
     analyticsLocations: l
-  } = (0, a.Ay)(t, o.A.AUTOMOD_NAGBAR_NOTICE), s = (0, i.bG)([c.default, u.Ay], () => {
+  } = (0, o.Ay)(t, a.A.AUTOMOD_NAGBAR_NOTICE), s = (0, i.bG)([c.default, u.Ay], () => {
     if (null == n.guildId) return new Set;
     let e = c.default.getId();
     return (0, E.wj)(u.Ay.getMember(n.guildId, e))

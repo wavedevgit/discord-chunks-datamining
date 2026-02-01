@@ -1,7 +1,7 @@
-/** Chunk was on 86901 **/
-/** chunk id: 44536, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 73545 **/
+/** chunk id: 44536, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => D
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -27,32 +27,32 @@ var Chunk397927 = require("./397927.js"),
   Chunk375500 = require("./375500.jsx"),
   Chunk707653 = require("./707653.jsx"),
   Chunk985018 = require("./985018.jsx");
-let T = (0, Chunk358367.A)(function(e) {
+let D = (0, Chunk358367.A)(function(e) {
   let {
-    channel: t,
-    onSelect: n
-  } = e, a = (0, d.A)(t), o = (0, A.A)(t), T = (0, _.A)(t), S = (0, u.A)(t), w = (0, v.A)(t), R = (0, f.A)(t), N = (0, c.A)({
-    id: t.id,
-    label: j.intl.string(j.t.DQ797g)
-  }), x = (0, p.A)(t, "Context Menu"), G = (0, h.A)(t), D = (0, O.A)(t), I = (0, C.A)(t), P = (0, y.A)(t), U = (0, m.A)(t.id), M = (0, b.A)(t), L = (0, E.A)(t), F = (0, s.m)(t), Y = (0, s.y)(t), k = (0, g.A)(t);
+    channel: n,
+    onSelect: t
+  } = e, a = (0, u.A)(n), o = (0, f.A)(n), D = (0, m.A)(n), T = (0, s.A)(n), P = (0, p.A)(n), C = (0, A.A)(n), E = (0, c.A)({
+    id: n.id,
+    label: w.intl.string(w.t.DQ797g)
+  }), M = (0, b.A)(n, "Context Menu"), S = (0, y.A)(n), N = (0, j.A)(n), G = (0, _.A)(n), U = (0, O.A)(n), L = (0, g.A)(n.id), k = (0, h.A)(n), V = (0, x.A)(n), X = (0, d.m)(n), R = (0, d.y)(n), F = (0, v.A)(n);
   return (0, r.jsxs)(i.W1t, {
     "data-menu-migrated": true,
     navId: "thread-context",
     onClose: l.Z_,
-    "aria-label": j.intl.string(j.t["1NBjqb"]),
-    onSelect: n,
+    "aria-label": w.intl.string(w.t["1NBjqb"]),
+    onSelect: t,
     children: [(0, r.jsxs)(i.rXV, {
-      children: [o, F]
+      children: [o, X]
     }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.rXV, {
-      children: [x, M, S, w, P, U, a]
+      children: [M, k, T, P, U, L, a]
     }, "thread-actions"), (0, r.jsxs)(i.rXV, {
-      children: [T, I]
+      children: [D, G]
     }, "notifications"), (0, r.jsxs)(i.rXV, {
-      children: [L, G, k, D, R]
+      children: [V, S, F, N, C]
     }, "admin-actions"), (0, r.jsx)(i.rXV, {
-      children: Y
+      children: R
     }), (0, r.jsx)(i.rXV, {
-      children: N
+      children: E
     }, "developer-actions")]
   })
 }, [Chunk793574.A.CONTEXT_MENU, Chunk793574.A.CHANNEL_LIST_THREAD_MENU])

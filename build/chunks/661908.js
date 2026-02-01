@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 661908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./638769.js"), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk974690 = require("./974690.js"),
@@ -12,16 +12,16 @@ var Chunk64700 = require("./64700.js"),
   Chunk661191 = require("./661191.js"),
   Chunk20805 = require("./20805.js"),
   Chunk583846 = require("./583846.js");
-let p = Chunk927813.A.Millis.WEEK;
+let h = Chunk927813.A.Millis.WEEK;
 
-function h(e) {
+function p(e) {
   let t = (0, a.s)(e),
-    n = (0, l.cf)([o.A], () => o.A.getUserAffinitiesMap());
-  return i.useMemo(() => null == t ? [] : t.filter(t => (0, u.zD)(t) && (0, u.P)(t) && t.extra.application_id === e && c.default.age(t.id) < p).sort((e, t) => m(n, t) - m(n, e)), [t, e, n])
+    n = (0, l.cf)([s.A], () => s.A.getUserAffinitiesMap());
+  return i.useMemo(() => null == t ? [] : t.filter(t => (0, c.zD)(t) && (0, c.P)(t) && t.extra.application_id === e && u.default.age(t.id) < h).sort((e, t) => g(n, t) - g(n, e)), [t, e, n])
 }
 let f = 30 * Chunk927813.A.Seconds.MINUTE;
 
-function m(e, t) {
+function g(e, t) {
   let n = t.participants;
   if (0 === n.length) return 0;
   let i = Math.max(...n.map(t => {
@@ -29,8 +29,8 @@ function m(e, t) {
       let i = e.get(t);
       return (null != (n = null == i ? true : i.communicationProbability) ? n : 0) + 1e-4
     })),
-    l = Math.exp(-(c.default.age(t.id) / 1e3 / f * .01)),
+    l = Math.exp(-(u.default.age(t.id) / 1e3 / f * .01)),
     a = t.traits.some(e => e.type !== r.K.DURATION_SECONDS),
-    o = (0, d.I5)(t);
-  return i * l * (1 + .6 * (a && !o ? 1 : 0))
+    s = (0, d.I5)(t);
+  return i * l * (1 + .6 * (a && !s ? 1 : 0))
 }

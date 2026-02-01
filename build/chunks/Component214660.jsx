@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 214660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y,
@@ -27,14 +27,14 @@ let y = e => {
     closePopout: A
   } = e, y = (0, u.GV)(), {
     notClaimed: O,
-    notEmailVerified: _,
-    notPhoneVerified: j,
-    newAccount: x,
+    notEmailVerified: j,
+    notPhoneVerified: x,
+    newAccount: _,
     newMember: v
-  } = (0, i.bG)([h.A], () => h.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
-  return (0 === t && (O ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : j ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : _ ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : v ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
+  } = (0, i.bG)([p.A], () => p.A.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, C = null, S = null;
+  return (0 === t && (O ? (C = m.intl.string(m.t.IRxUlG), S = m.intl.string(m.t.fiNVin)) : x ? (C = m.intl.string(m.t.vW8iUF), S = m.intl.string(m.t["50gfOv"])) : j ? (C = m.intl.string(m.t.vdSOpz), S = m.intl.string(m.t.lm1UKt)) : v ? (C = m.intl.formatToPlainString(m.t.v1ktYb, {
     min: g.$8o.MEMBER_AGE
-  }), S = m.intl.string(m.t.BddRzS)) : x && (C = m.intl.formatToPlainString(m.t.sncw41, {
+  }), S = m.intl.string(m.t.BddRzS)) : _ && (C = m.intl.formatToPlainString(m.t.sncw41, {
     min: g.$8o.ACCOUNT_AGE
   }), S = m.intl.string(m.t.BddRzS))), null == E || null == C) ? null : (0, l.jsxs)(a.lGe, {
     className: b.kL,
@@ -63,7 +63,7 @@ let y = e => {
             text: S,
             onClick: () => {
               if (O) c.R();
-              else if (j)(0, a.mMO)(async () => {
+              else if (x)(0, a.mMO)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 615715));
@@ -90,19 +90,19 @@ let y = e => {
               }, {
                 modalKey: f.V
               });
-              else if (_) {
+              else if (j) {
                 var e;
                 o.A.verifyResend(), (0, s.A)({
                   title: m.intl.string(m.t.LykQYk),
                   subtitle: m.intl.format(m.t.azKEPy, {
-                    email: null == (e = p.default.getCurrentUser()) ? true : e.email
+                    email: null == (e = h.default.getCurrentUser()) ? true : e.email
                   })
                 })
               }
               A()
             }
           })
-        }) : null, O || j || _ ? (0, l.jsx)(a.QWc, {
+        }) : null, O || x || j ? (0, l.jsx)(a.QWc, {
           onClick: A,
           text: m.intl.string(m.t.oEAioF),
           variant: "secondary"

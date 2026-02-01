@@ -1,7 +1,7 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 584569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => P
+  A: () => E
 }), require("./896048.js");
 var r, l, Chunk311907 = require("./311907.js"),
   Chunk205693 = require("./205693.js"),
@@ -17,8 +17,8 @@ var r, l, Chunk311907 = require("./311907.js"),
   Chunk607567 = require("./607567.js"),
   Chunk652215 = require("./652215.js"),
   Chunk806931 = require("./806931.js");
-let A = new Chunk194862.A,
-  h = new Chunk194862.A,
+let h = new Chunk194862.A,
+  A = new Chunk194862.A,
   v = new Set;
 
 function O(e, t, n) {
@@ -27,7 +27,7 @@ function O(e, t, n) {
       channelId: n
     }),
     l = (0, y.RQ)(r, null != t ? t : b.ME, e.id);
-  A.set(e.id, l);
+  h.set(e.id, l);
   let i = {
     type: _.lp.USER,
     user: e,
@@ -45,12 +45,12 @@ function O(e, t, n) {
     localVideoDisabled: false,
     isPoppedOut: false
   };
-  h.set(e.id, i)
+  A.set(e.id, i)
 }
 
 function S(e) {
-  let t = A.delete(e),
-    n = h.delete(e),
+  let t = h.delete(e),
+    n = A.delete(e),
     r = v.delete(e);
   return t || n || r
 }
@@ -69,23 +69,23 @@ function j() {
 }
 
 function x() {
-  A.clear(), h.clear(), v.clear()
+  h.clear(), A.clear(), v.clear()
 }
 class I extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], j)
   }
   get desyncedVoiceStatesCount() {
-    return A.size()
+    return h.size()
   }
   getDesyncedUserIds() {
-    return A.keys()
+    return h.keys()
   }
   getDesyncedVoiceStates() {
-    return A.values()
+    return h.values()
   }
   getDesyncedParticipants() {
-    return h.values()
+    return A.values()
   }
 }(l = "displayName") in I ? Object.defineProperty(I, l, {
   value: "RTCConnectionDesyncStore",
@@ -93,7 +93,7 @@ class I extends(r = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : I[l] = "RTCConnectionDesyncStore";
-let P = new I(Chunk73153.h, {
+let E = new I(Chunk73153.h, {
   CONNECTION_OPEN: function() {
     x()
   },

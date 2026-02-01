@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 828797, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 828797, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   o: () => I
 });
@@ -19,15 +19,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk545214 = require("./545214.js"),
   Chunk985018 = require("./985018.jsx");
 let I = (0, Chunk419954.zZ)(Chunk780964.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
-  useTitle: () => g.intl.string(g.t.pKSjEj),
+  useTitle: () => _.intl.string(_.t.pKSjEj),
   useInlineNotice: function() {
     return (0, n.bG)([r.default], () => {
-      var e, t;
-      return null != (e = null == (t = r.default.getCurrentUser()) ? true : t.mfaEnabled) && e
+      var t, e;
+      return null != (t = null == (e = r.default.getCurrentUser()) ? true : e.mfaEnabled) && t
     }) ? {
       type: s.W.STRONGLY_DISCOURAGED_CUSTOM,
-      notice: u.A
+      notice: a.A
     } : null
   },
-  buildLayout: () => [c.L, _.A, E.k, T.v, o.c, d.g, A.T, S.C]
+  buildLayout: () => [A.L, E.A, g.k, T.v, o.c, d.g, S.T, c.C]
 })

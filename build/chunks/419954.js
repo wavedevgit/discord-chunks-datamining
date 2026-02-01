@@ -1,9 +1,9 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 419954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AK: () => I,
   D1: () => A,
-  E2: () => y,
+  E2: () => N,
   FW: () => b,
   Hn: () => S,
   Hr: () => o,
@@ -15,11 +15,11 @@ require.d(exports, {
   gN: () => f,
   hl: () => s,
   i4: () => d,
-  sN: () => x,
+  sN: () => C,
   t_: () => u,
   v_: () => E,
   zC: () => p,
-  zD: () => C,
+  zD: () => x,
   zZ: () => m
 }), require("./896048.js"), require("./65821.js");
 var Chunk963935 = require("./963935.js");
@@ -154,11 +154,11 @@ function O(e, t) {
   return h(e, r.Z6.BUTTON, t)
 }
 
-function C(e, t) {
+function x(e, t) {
   return h(e, r.Z6.TOGGLE, t)
 }
 
-function x(e, t) {
+function C(e, t) {
   return h(e, r.Z6.SLIDER, t)
 }
 
@@ -174,6 +174,6 @@ function I(e, t) {
   return h(e, r.Z6.NAVIGATOR, t)
 }
 
-function y(e, t) {
+function N(e, t) {
   return h(e, r.Z6.CUSTOM, t)
 }

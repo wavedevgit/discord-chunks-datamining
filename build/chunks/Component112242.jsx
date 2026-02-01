@@ -66,8 +66,8 @@ function G(e) {
     handlePaymentSourceAdd: E
   } = e, {
     application: G,
-    purchaseState: F,
-    paymentSources: V,
+    purchaseState: V,
+    paymentSources: F,
     paymentSourceId: B,
     setHasAcceptedTerms: H,
     skusById: Y,
@@ -102,8 +102,8 @@ function G(e) {
   let ed = (0, c.bG)([m.A, T.A], () => T.A.inTestModeForApplication(G.id) || m.A.inDevModeForApplication(G.id), [G.id]),
     ef = (0, c.bG)([v.A], () => v.A.enabled),
     ep = s.M.EEA_COUNTRIES.has(A.A.ipCountryCodeWithFallback),
-    e_ = F === P.h.PURCHASING || F === P.h.COMPLETED,
-    eh = (0, D.W)(V, B),
+    e_ = V === P.h.PURCHASING || V === P.h.COMPLETED,
+    eh = (0, D.W)(F, B),
     em = null != eh ? eh.type : null;
   i.useEffect(() => {
     ea && B === ei && ei !== S.B && null == eu && (0, d.QX)(eo.applicationId, eo.id, ei, {
@@ -156,7 +156,7 @@ function G(e) {
       })
     }), (0, r.jsx)(_.A, {
       label: j.intl.string(j.t["mmDvV+"]),
-      paymentSources: Object.values(V),
+      paymentSources: Object.values(F),
       selectedPaymentSourceId: B,
       onChange: a,
       onPaymentSourceAdd: E,

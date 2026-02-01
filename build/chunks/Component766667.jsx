@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 766667, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 766667, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  p: () => c
+  p: () => A
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,43 +12,43 @@ var Chunk627968 = require("./627968.js"),
   Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk985018 = require("./985018.jsx");
-let c = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_PHRASES, {
+let A = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_PHRASES, {
   useSearchTerms: () => [T.intl.string(T.t.JIze0o)],
-  usePredicate: () => (0, s.bG)([a.A], () => a.A.getSettings().clipSignals).enablePhraseSignals,
+  usePredicate: () => (0, s.bG)([u.A], () => u.A.getSettings().clipSignals).enablePhraseSignals,
   Component: function() {
-    let e = (0, s.bG)([a.A], () => a.A.getSettings().autoClipPhrases),
-      [t, i] = l.useState(""),
-      o = l.useMemo(() => e.map(e => ({
-        id: e,
-        label: e
-      })), [e]),
-      d = l.useCallback(e => {
-        i(e)
+    let t = (0, s.bG)([u.A], () => u.A.getSettings().autoClipPhrases),
+      [e, i] = l.useState(""),
+      o = l.useMemo(() => t.map(t => ({
+        id: t,
+        label: t
+      })), [t]),
+      d = l.useCallback(t => {
+        i(t)
       }, []),
-      c = l.useCallback(n => {
+      A = l.useCallback(n => {
         if ("Enter" === n.key || "," === n.key) {
           n.preventDefault();
-          let l = t.trim().toLowerCase();
-          l.length > 0 && !e.includes(l) && (u.pM([...e, l]), i(""))
-        } else if ("Backspace" === n.key && "" === t && e.length > 0) {
-          let t = e.slice(0, false);
-          u.pM(t)
+          let l = e.trim().toLowerCase();
+          l.length > 0 && !t.includes(l) && (a.pM([...t, l]), i(""))
+        } else if ("Backspace" === n.key && "" === e && t.length > 0) {
+          let e = t.slice(0, false);
+          a.pM(e)
         }
-      }, [t, e]),
-      A = l.useCallback(t => {
-        let i = Array.from(t)[0],
-          n = e.filter(e => e !== i);
-        u.pM(n)
-      }, [e]);
+      }, [e, t]),
+      S = l.useCallback(e => {
+        let i = Array.from(e)[0],
+          n = t.filter(t => t !== i);
+        a.pM(n)
+      }, [t]);
     return (0, n.jsx)(r.ksK, {
-      value: t,
+      value: e,
       onChange: d,
-      onKeyDown: c,
+      onKeyDown: A,
       placeholder: T.intl.string(T.t.zYUZpt),
       leading: o.length > 0 ? {
         type: "tags",
         items: o,
-        onRemove: A
+        onRemove: S
       } : true
     })
   }

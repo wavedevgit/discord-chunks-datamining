@@ -1,7 +1,7 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 666813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => I
+  A: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,10 +19,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk438536 = require("./438536.js");
 
-function I(e) {
+function O(e) {
   let {
     member: t
-  } = e, n = (0, a.bG)([E.A], () => E.A.getGuild(t.guildId), [t.guildId]), I = (0, u.GT)(t.userId, t.guildId), O = (0, u.Wi)(t.userId, t.guildId), m = (0, u.t)(t.userId), N = (0, u.ff)(t.userId, t.guildId);
+  } = e, n = (0, a.bG)([E.A], () => E.A.getGuild(t.guildId), [t.guildId]), O = (0, u.GT)(t.userId, t.guildId), h = (0, u.Wi)(t.userId, t.guildId), N = (0, u.t)(t.userId), m = (0, u.ff)(t.userId, t.guildId);
   return (r.useEffect(() => {
     (0, o.uO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, l.jsx)(i.D0$, {
@@ -39,7 +39,7 @@ function I(e) {
           color: "text-default",
           children: T.intl.string(T.t.nzGai4)
         }),
-        description: I ? (0, l.jsx)(i.rOg, {
+        description: O ? (0, l.jsx)(i.rOg, {
           size: "custom",
           width: g.mb,
           height: g.mb,
@@ -50,7 +50,7 @@ function I(e) {
           height: g.mb,
           color: i.LU0.colors.ICON_FEEDBACK_CRITICAL
         })
-      }), O !== u.bM.NO_GATE && (0, l.jsx)(g.RU, {
+      }), h !== u.bM.NO_GATE && (0, l.jsx)(g.RU, {
         icon: (0, l.jsx)(i.B8Q, {
           size: "custom",
           width: g.mb,
@@ -61,7 +61,7 @@ function I(e) {
           color: "text-default",
           children: T.intl.string(T.t["93hqln"])
         }),
-        description: O === u.bM.AGREED ? (0, l.jsx)(i.rOg, {
+        description: h === u.bM.AGREED ? (0, l.jsx)(i.rOg, {
           size: "custom",
           width: g.mb,
           height: g.mb,
@@ -87,14 +87,14 @@ function I(e) {
         description: (0, l.jsx)(i.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: m
+          children: N
         })
       }), (0, l.jsx)(g.RU, {
         icon: (0, l.jsx)(s.$v, {
           guild: n,
           size: s.$v.Sizes.SMOL,
           animate: false,
-          className: h.$f
+          className: I.$f
         }),
         name: (0, l.jsx)(i.Text, {
           variant: "text-sm/medium",
@@ -104,7 +104,7 @@ function I(e) {
         description: (0, l.jsx)(i.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: N
+          children: m
         })
       }), (0, l.jsx)(g.RU, {
         icon: (0, l.jsx)(i.DpX, {
@@ -125,8 +125,8 @@ function I(e) {
             guildId: t.guildId,
             showJoinMethodContextAsFooter: true,
             onClickInviter: e => {
-              let n = d.A.getChannelId();
-              (0, _.z)(t.guildId, e.id, null != n ? n : A.dJq)
+              let n = _.A.getChannelId();
+              (0, d.z)(t.guildId, e.id, null != n ? n : A.dJq)
             }
           })
         })

@@ -6,8 +6,8 @@ require.d(exports, {
   F6: () => W,
   L$: () => B,
   LV: () => j,
-  WU: () => F,
-  jD: () => V,
+  WU: () => V,
+  jD: () => F,
   wf: () => Y
 }), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./812715.js"), require("./896048.js");
 var Chunk397927 = require("./397927.js"),
@@ -161,7 +161,7 @@ function G() {
   })
 }
 
-function F() {
+function V() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
   k(e), i.h.dispatch(P({
@@ -169,13 +169,13 @@ function F() {
   }, j(t)))
 }
 
-function V() {
+function F() {
   U(C.HAw.QUICKSWITCHER_CLOSED), G()
 }
 
 function B() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND";
-  T.A.isOpen() ? V() : F(e)
+  T.A.isOpen() ? F() : V(e)
 }
 
 function H(e) {

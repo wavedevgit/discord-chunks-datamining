@@ -1,12 +1,12 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 157259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk58149 = require("./58149.js"),
   Chunk954571 = require("./954571.js"),
@@ -15,31 +15,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk930399 = require("./930399.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -47,29 +47,29 @@ function f(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     channel: t,
     narrow: n
   } = e;
-  return l.useEffect(() => {
-    c.default.track(d.HAw.CHANNEL_BANNER_VIEWED, f(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+  return r.useEffect(() => {
+    c.default.track(d.HAw.CHANNEL_BANNER_VIEWED, m(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
       banner_type: "channel_opt_in"
     }))
-  }, [t]), (0, r.jsxs)("div", {
-    className: s()(p.JD, {
+  }, [t]), (0, l.jsxs)("div", {
+    className: a()(p.JD, {
       [p.sc]: n
     }),
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, l.jsx)(s.Text, {
       className: p.E5,
       variant: "text-sm/normal",
       color: "text-default",
       children: h.intl.string(h.t.iOWmmB)
-    }), (0, r.jsx)(a.Button, {
+    }), (0, l.jsx)(s.Button, {
       size: "sm",
       variant: "primary",
       onClick: () => {
-        c.default.track(d.HAw.CHANNEL_BANNER_CTA_CLICKED, f(g({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
+        c.default.track(d.HAw.CHANNEL_BANNER_CTA_CLICKED, m(f({}, (0, o.H$)(t.getGuildId()), (0, o.dI)(t)), {
           banner_type: "channel_opt_in",
           cta_type: "add channel"
         })), (0, u.AC)(t.guild_id, t.id, true, {
@@ -77,7 +77,7 @@ function m(e) {
         })
       },
       text: h.intl.string(h.t.ZtIlQo),
-      icon: a.j96
+      icon: s.j96
     })]
   })
 }

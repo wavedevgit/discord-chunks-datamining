@@ -34,12 +34,12 @@ let y = {
         },
         socket: n
       } = e, r = u.A.getChannel(t);
-      if (null == r) throw new m.A({
+      if (null == r) throw new f.A({
         errorCode: O.Lw6.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       if (r.isPrivate()) {
         let e = n.authorization.scopes;
-        if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new m.A({
+        if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new f.A({
           errorCode: O.Lw6.INVALID_PERMISSIONS
         }, "Invalid scope")
       }
@@ -56,7 +56,7 @@ let y = {
       } = e, n = i().values(u.A.loadAllGuildAndPrivateChannelsFromDisk());
       if (t) {
         let e = d.A.getGuild(t);
-        if (null == e) throw new m.A({
+        if (null == e) throw new f.A({
           errorCode: O.Lw6.INVALID_GUILD
         }, "Invalid guild id: ".concat(t));
         n = n.filter(t => {
@@ -88,7 +88,7 @@ let y = {
     },
     handler(e) {
       let t = (0, b.A)();
-      if (null == t) throw new m.A({
+      if (null == t) throw new f.A({
         errorCode: O.Lw6.INVALID_CHANNEL
       }, "Invalid channel");
       return {
@@ -117,28 +117,28 @@ let y = {
       } = e;
       if (!r) return s.default.selectVoiceChannel(null), null;
       let _ = h.A.getVoiceChannelId();
-      if (null != _ && _ !== r && false === l) throw new m.A({
+      if (null != _ && _ !== r && false === l) throw new f.A({
         errorCode: O.Lw6.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.A.getChannel(r), i).catch(() => {
-        throw new m.A({
+        throw new f.A({
           errorCode: O.Lw6.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select voice channel timed out.")
       }).then(e => {
-        if (null == e) throw new m.A({
+        if (null == e) throw new f.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
-        if (!(0, c.gV)(e.type)) throw new m.A({
+        if (!(0, c.gV)(e.type)) throw new f.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Channel is not a voice channel");
         return Promise.all([Promise.resolve(e), (0, A.SN)(e, (0, A.B_)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
-          if ((0, f.Pd)(t, g.A, d.A)) throw new m.A({
+          if ((0, m.Pd)(t, g.A, d.A)) throw new f.A({
             errorCode: O.Lw6.INVALID_CHANNEL
           }, "Channel is full");
-          if (!p.A.can(O.xBc.CONNECT, t)) throw new m.A({
+          if (!p.A.can(O.xBc.CONNECT, t)) throw new f.A({
             errorCode: O.Lw6.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
@@ -173,20 +173,20 @@ let y = {
         }
       } = e;
       return r ? t.storeWait(n, () => u.A.getChannel(r), i).catch(() => {
-        throw new m.A({
+        throw new f.A({
           errorCode: O.Lw6.SELECT_CHANNEL_TIMED_OUT
         }, "Request to select text channel timed out.")
       }).then(e => {
-        if (null == e) throw new m.A({
+        if (null == e) throw new f.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Invalid channel id: ".concat(r));
-        if (!(0, c.pQ)(e.type)) throw new m.A({
+        if (!(0, c.pQ)(e.type)) throw new f.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "Channel is not a text channel");
         return Promise.all([Promise.resolve(e), (0, A.SN)(e, (0, A.B_)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
-        if (n.guild_id && !p.A.can(O.xBc.VIEW_CHANNEL, t)) throw new m.A({
+        if (n.guild_id && !p.A.can(O.xBc.VIEW_CHANNEL, t)) throw new f.A({
           errorCode: O.Lw6.INVALID_CHANNEL
         }, "No permission to see channel");
         return n.guild_id ? (0, o.bG)(O.BVt.CHANNEL(n.guild_id, t.id)) : s.default.selectPrivateChannel(t.id), n
@@ -218,7 +218,7 @@ let y = {
         return l
       }(t, ["channel_id"]);
       return a.Ay.createInvite(n, r, "RPC").catch(() => {
-        throw new m.A({
+        throw new f.A({
           errorCode: O.Lw6.INVALID_PERMISSIONS
         }, "Unable to generate an invite for ".concat(n, ". Does this user have permissions?"))
       })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CG: () => T,
-  DJ: () => F,
+  DJ: () => V,
   IP: () => w,
   Jg: () => x,
   Jz: () => P,
@@ -206,7 +206,7 @@ function G(e, t, n, r) {
   return null != t && o ? U(a, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
 }
 
-function F(e) {
+function V(e) {
   if (null == e) return null;
   switch (e.type) {
     case g.rbe.GUILD_ANNOUNCEMENT:

@@ -16,8 +16,8 @@ var Chunk503698 = require("./503698.js"),
   Chunk963169 = require("./963169.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk88808 = require("./88808.js");
-let f = Chunk430086.GY.binds["0"],
-  m = Chunk430086.M$.binds["0"],
+let m = Chunk430086.GY.binds["0"],
+  f = Chunk430086.M$.binds["0"],
   A = e => {
     var t, n;
     let {
@@ -39,7 +39,7 @@ let f = Chunk430086.GY.binds["0"],
         ariaHidden: true,
         shouldShow: A,
         text: h.intl.string(h.t.B9vzIP),
-        keyboardShortcut: f,
+        keyboardShortcut: m,
         children: (0, r.jsx)(o.DUT, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -83,7 +83,7 @@ let f = Chunk430086.GY.binds["0"],
         ariaHidden: true,
         shouldShow: _,
         text: h.intl.string(h.t["9KJ29e"]),
-        keyboardShortcut: m,
+        keyboardShortcut: f,
         children: (0, r.jsx)(o.DUT, {
           "aria-label": h.intl.string(h.t["9KJ29e"]),
           "aria-disabled": !_,

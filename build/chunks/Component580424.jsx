@@ -78,19 +78,19 @@ function G(e, t) {
   }), e
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = V(e, t), Object.getOwnPropertySymbols)
+  if (a = F(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -596,7 +596,7 @@ class ec extends(r = Chunk64700.PureComponent) {
         innerClassName: r,
         id: o
       } = e,
-      l = F(e, ["children", "className", "innerClassName", "id"]);
+      l = V(e, ["children", "className", "innerClassName", "id"]);
     return a.Children.count(t) > 0 ? (0, i.jsx)(Y.Provider, {
       value: {
         id: null != o ? o : ""

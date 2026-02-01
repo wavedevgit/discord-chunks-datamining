@@ -14,7 +14,7 @@ require.d(exports, {
   gh: () => P,
   ku: () => E,
   mS: () => S,
-  nx: () => F,
+  nx: () => V,
   qo: () => w,
   s9: () => T,
   y5: () => A
@@ -42,7 +42,7 @@ let g = false,
     let {
       channelId: t,
       authorId: n
-    } = F(e);
+    } = V(e);
     return null == t || null == e ? m.LO.NONE : b(t, n)
   },
   b = (e, t) => {
@@ -222,7 +222,7 @@ function M(e, t) {
   return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: _.D.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && U(V(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && U(F(e), t)
 }
 
 function j(e, t) {
@@ -250,7 +250,7 @@ function G(e) {
   return null != e && [i.TO.BLOCK, i.TO.BLUR].includes(e)
 }
 
-function F(e) {
+function V(e) {
   var t, n;
   let r = null,
     i = null;
@@ -268,6 +268,6 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   return null != e.content_scan_version ? e.content_scan_version : null != e.contentScanVersion || null != e.contentScanVersion ? e.contentScanVersion : null
 }

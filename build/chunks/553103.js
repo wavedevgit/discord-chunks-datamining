@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 553103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -27,17 +27,17 @@ function g(e, t) {
     A = (0, a.j$)(e, t),
     y = null == m ? true : m.storeRemovalDate,
     O = null != (n = null == g ? true : g.has(d.GuildFeatures.PARTNERED)) && n,
-    _ = A && null != y && !O && b.type === u.b_.POWERUP_ACTIVATED,
-    j = _ ? {
-      title: p.intl.formatToPlainString(h.default.mgoPkU, {
+    j = A && null != y && !O && b.type === u.b_.POWERUP_ACTIVATED,
+    x = j ? {
+      title: h.intl.formatToPlainString(p.default.mgoPkU, {
         perkName: null == m ? true : m.title
       }),
-      description: p.intl.formatToPlainString(h.default.UT9pkI, {
+      description: h.intl.formatToPlainString(p.default.UT9pkI, {
         dateString: (0, o.A)(y)
       })
     } : null;
   return {
-    shouldShow: _,
-    notificationConfig: j
+    shouldShow: j,
+    notificationConfig: x
   }
 }

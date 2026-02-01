@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 281052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -53,7 +53,7 @@ function w(e) {
     pendingThemeColors: Y,
     errors: W,
     guild: K
-  } = (0, s.cf)([N.A], () => {
+  } = (0, s.cf)([y.A], () => {
     let {
       pendingAvatar: e,
       pendingNickname: t,
@@ -61,7 +61,7 @@ function w(e) {
       pendingPronouns: r,
       pendingBanner: i,
       pendingThemeColors: l
-    } = N.A.getAllPending();
+    } = y.A.getAllPending();
     return {
       pendingAvatar: e,
       pendingNickname: t,
@@ -69,8 +69,8 @@ function w(e) {
       pendingBio: n,
       pendingPronouns: r,
       pendingThemeColors: l,
-      errors: N.A.getErrors(),
-      guild: N.A.getGuild()
+      errors: y.A.getErrors(),
+      guild: y.A.getGuild()
     }
   }), z = (0, O.V7)({
     userId: G.id,
@@ -78,8 +78,8 @@ function w(e) {
   }), Z = null != M ? M : K;
   l()(null != Z, "guild should not be null");
   let X = (0, c.EC)(Z.id),
-    q = (0, s.bG)([x.Ay], () => null == Z.id ? null : x.Ay.getMember(Z.id, G.id)),
-    J = (0, s.bG)([C.A], () => C.A.getGuildMemberProfile(G.id, Z.id)),
+    q = (0, s.bG)([C.Ay], () => null == Z.id ? null : C.Ay.getMember(Z.id, G.id)),
+    J = (0, s.bG)([x.A], () => x.A.getGuildMemberProfile(G.id, Z.id)),
     Q = T.Ay.canUsePremiumProfileCustomization(G),
     $ = (0, u.z5)(k, null == q ? true : q.avatar),
     ee = (0, u.Ac)(H, null == J ? true : J.banner),
@@ -121,7 +121,7 @@ function w(e) {
           })]
         }),
         showRemoveAvatarButton: $,
-        onAvatarChange: e => ei(e, null == q ? true : q.avatar, y.zq),
+        onAvatarChange: e => ei(e, null == q ? true : q.avatar, N.zq),
         errors: null == W ? true : W.avatar,
         guildId: Z.id,
         disabled: !Q
@@ -168,7 +168,7 @@ function w(e) {
       }, "effect"), (0, r.jsx)(f.A, {
         showRemoveBannerButton: ee,
         errors: null == W ? true : W.banner,
-        onBannerChange: e => ei(e, null == J ? true : J.banner, y.Iz),
+        onBannerChange: e => ei(e, null == J ? true : J.banner, N.Iz),
         guildId: null == Z ? true : Z.id,
         disabled: !Q
       }, "banner"), (0, r.jsx)(h.A, {

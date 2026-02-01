@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 125248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -24,7 +24,7 @@ let g = [Chunk213966.u8, Chunk213966.n$, Chunk213966.uN, Chunk213966.no],
       i(n.key)
     }, [n.key, i]);
     return (0, r.jsx)("div", {
-      className: s()(p.Zg, o),
+      className: s()(h.Zg, o),
       onAnimationEnd: c,
       children: (0, r.jsx)(d.A, {
         emojiId: n.id,
@@ -38,7 +38,7 @@ function m(e) {
   let {
     channelId: t,
     callHeight: n
-  } = e, i = (0, c.bG)([h.A], () => h.A.useReducedMotion), [s, a] = l.useState([]);
+  } = e, i = (0, c.bG)([p.A], () => p.A.useReducedMotion), [s, a] = l.useState([]);
   l.useEffect(() => {
     function e(e) {
       let {
@@ -74,7 +74,7 @@ function m(e) {
     a(t => t.filter(t => t.key !== e))
   }, []);
   return i ? null : (0, r.jsx)("div", {
-    className: p.kL,
+    className: h.kL,
     style: {
       top: n - 50,
       left: "52%"

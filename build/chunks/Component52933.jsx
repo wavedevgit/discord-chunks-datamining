@@ -1,8 +1,8 @@
-/** Chunk was on 48898 **/
-/** chunk id: 52933, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 7602 **/
+/** chunk id: 52933, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  Ay: () => v,
-  BA: () => f
+  Ay: () => f,
+  BA: () => p
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,13 +19,13 @@ var Chunk503698 = require("./503698.js"),
   Chunk558997 = require("./558997.js"),
   Chunk902049 = require("./902049.js");
 
-function f(e) {
+function p(e) {
   let {
     channel: t,
-    isNew: n
-  } = e, i = (0, d.kt)(t), s = i.slice(true, 3), r = i.slice(3), l = i.length > 3 ? i.length - 3 : 0, a = t.hasFlag(h.lx.PINNED), o = s.length > 0 || a || n;
+    isNew: s
+  } = e, i = (0, h.kt)(t), n = i.slice(true, 3), r = i.slice(3), l = i.length > 3 ? i.length - 3 : 0, a = t.hasFlag(u.lx.PINNED), o = n.length > 0 || a || s;
   return {
-    shownTags: s,
+    shownTags: n,
     remainingTags: r,
     moreTagsCount: l,
     isPinned: a,
@@ -34,32 +34,32 @@ function f(e) {
   }
 }
 
-function v(e) {
+function f(e) {
   let {
     channel: t,
-    isNew: n,
-    tagsClassName: s,
-    className: d
+    isNew: s,
+    tagsClassName: n,
+    className: h
   } = e, {
-    shownTags: h,
-    remainingTags: v,
-    moreTagsCount: b,
+    shownTags: u,
+    remainingTags: f,
+    moreTagsCount: x,
     isPinned: A,
-    shouldRenderTagsRow: O
-  } = f({
+    shouldRenderTagsRow: b
+  } = p({
     channel: t,
-    isNew: n
+    isNew: s
   }), {
-    tagFilter: x
-  } = (0, c.R)(t.id);
-  return O ? (0, i.jsxs)("div", {
-    className: r()(p._A, d),
-    children: [n ? (0, i.jsx)(o.LpS, {
+    tagFilter: j
+  } = (0, d.R)(t.id);
+  return b ? (0, i.jsxs)("div", {
+    className: r()(v._A, h),
+    children: [s ? (0, i.jsx)(o.LpS, {
       className: r()(m.Ad, m.PP),
       color: l.A.unsafe_rawColors.BRAND_260.css,
       text: g.intl.string(g.t.y2b7CA)
     }) : null, A && (0, i.jsx)("div", {
-      className: p.Ne,
+      className: v.Ne,
       children: (0, i.jsx)(a.m, {
         text: g.intl.string(g.t["1QLRYb"]),
         children: (0, i.jsx)(o.tsw, {
@@ -69,16 +69,16 @@ function v(e) {
           color: "white"
         })
       })
-    }), h.map(e => (0, i.jsx)(u.A, {
+    }), u.map(e => (0, i.jsx)(c.A, {
       tag: e,
-      size: u.A.Sizes.SMALL,
-      className: r()(s, {
-        [p.At]: x.has(e.id)
+      size: c.A.Sizes.SMALL,
+      className: r()(n, {
+        [v.At]: j.has(e.id)
       })
-    }, e.id)), b > 0 ? (0, i.jsx)(u.q, {
-      tags: v,
-      count: b,
-      size: u.A.Sizes.SMALL
+    }, e.id)), x > 0 ? (0, i.jsx)(c.q, {
+      tags: f,
+      count: x,
+      size: c.A.Sizes.SMALL
     }) : null]
   }) : null
 }

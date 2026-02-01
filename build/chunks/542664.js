@@ -76,8 +76,8 @@ function j(e, t) {
 let k = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
   U = /^$|\n *$/,
   G = /^ *>>> ?/,
-  F = /^ *> ?/gm,
-  V = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
+  V = /^ *> ?/gm,
+  F = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
 function B(e) {
   let t = (0, v.W1)(e[1]);
@@ -126,7 +126,7 @@ let H = e => {
       parse(e, t, n) {
         let r = e[0],
           i = !!G.exec(r),
-          a = i ? G : F,
+          a = i ? G : V,
           o = r.replace(a, ""),
           s = n.inQuote || false,
           l = n.inline || false;
@@ -181,7 +181,7 @@ let H = e => {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
-        let n = V.exec(e);
+        let n = F.exec(e);
         if (null != n) {
           let e = 0,
             t = n[0];

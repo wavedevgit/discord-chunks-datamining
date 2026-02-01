@@ -60,18 +60,18 @@ let A = function(e) {
     }), n))
   }, [t, E, b]);
   return (0, r.jsx)("div", {
-    className: f.x3,
+    className: m.x3,
     children: (0, r.jsxs)("div", {
-      className: f.B0,
+      className: m.B0,
       children: [(0, r.jsx)(o.Heading, {
-        className: m.R_,
+        className: f.R_,
         variant: "heading-md/semibold",
         children: g.intl.string(g.t.jY7Zxg)
       }), (0, r.jsx)("div", {
-        className: m.$Q,
+        className: f.$Q,
         children: g.intl.string(g.t.q3hbne)
       }), (0, r.jsx)("div", {
-        className: m.k0,
+        className: f.k0,
         children: (0, r.jsx)(o.YNO, {
           targetElementRef: A,
           renderPopout: O,
@@ -86,21 +86,21 @@ let A = function(e) {
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
             ref: A,
-            className: a()(m.Tn, {
-              [m.wH]: n
+            className: a()(f.Tn, {
+              [f.wH]: n
             }),
             children: (0, r.jsx)(o.DUT, {
               onClick: () => l(!n),
               tabIndex: 0,
               children: (0, r.jsxs)("div", {
-                className: m.lm,
+                className: f.lm,
                 children: [(0, r.jsx)(o.euF, {
                   size: o._3J.SIZE_32,
                   src: null == _ ? true : _.getAvatarURL(true, 32),
                   status: h.clD.ONLINE,
                   "aria-label": null == _ ? true : _.username
                 }), (0, r.jsxs)("div", {
-                  className: m.Fj,
+                  className: f.Fj,
                   children: [(0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",

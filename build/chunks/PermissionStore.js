@@ -109,7 +109,7 @@ function G(e) {
   M()
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: {
       id: t
@@ -125,7 +125,7 @@ function F(e) {
   N[n.id] = i, R += 1, x(n.getGuildId())
 }
 
-function V(e) {
+function F(e) {
   let {
     channels: t
   } = e, n = false;
@@ -341,13 +341,13 @@ let ee = new J(Chunk73153.h, {
   GUILD_MEMBER_ADD: G,
   GUILD_MEMBER_UPDATE: G,
   CURRENT_USER_UPDATE: G,
-  CHANNEL_CREATE: F,
+  CHANNEL_CREATE: V,
   THREAD_CREATE: B,
   THREAD_UPDATE: B,
   THREAD_LIST_SYNC: B,
   LOAD_THREADS_SUCCESS: B,
   LOAD_ARCHIVED_THREADS_SUCCESS: B,
-  CHANNEL_UPDATES: V,
+  CHANNEL_UPDATES: F,
   LOAD_MESSAGES_SUCCESS: W,
   SEARCH_MESSAGES_SUCCESS: K,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: K,

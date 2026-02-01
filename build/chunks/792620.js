@@ -8,7 +8,7 @@ require.d(exports, {
   IO: () => A,
   JC: () => Y,
   TP: () => p,
-  Xi: () => F,
+  Xi: () => V,
   YL: () => w,
   Yh: () => B,
   _3: () => c,
@@ -182,13 +182,13 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
   },
   G = e => i.o.ALL.has(e) ? e : null;
 
-function F(e) {
+function V(e) {
   var t;
   let n = e.taskConfigV2.tasks[i.n.WATCH_VIDEO],
     r = e.taskConfigV2.tasks[i.n.WATCH_VIDEO_ON_MOBILE];
   return null != n && null != r ? n : null != (t = null != r ? r : n) ? t : null
 }
-let V = e => {
+let F = e => {
     var t, n;
     let {
       quest: r,
@@ -220,7 +220,7 @@ let V = e => {
       percentComplete: 0,
       taskType: i.n.STREAM_ON_DESKTOP
     };
-    if (v(e)) return V({
+    if (v(e)) return F({
       quest: e,
       includeTaskTypes: null != t ? t : w(e) ? i.o.CONSOLE : i.o.ALL
     });
@@ -228,7 +228,7 @@ let V = e => {
       var n;
       return U({
         quest: e,
-        taskType: null == (n = F(e.config)) ? true : n.type
+        taskType: null == (n = V(e.config)) ? true : n.type
       })
     }
     return y(e) ? U({

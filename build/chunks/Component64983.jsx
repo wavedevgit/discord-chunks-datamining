@@ -17,7 +17,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk978927 = require("./978927.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ let A = a().debounce(Chunk58149.Ay.trackWithMetadata, 500),
       image: a,
       type: d,
       imageMarginX: p,
-      imageMarginTop: m,
+      imageMarginTop: f,
       trackingSource: _,
       undismissable: b,
       onDismissed: E,
@@ -61,7 +61,7 @@ let A = a().debounce(Chunk58149.Ay.trackWithMetadata, 500),
     let v = null;
     "function" == typeof y ? v = y() : null != y && (v = (0, r.jsx)(s.$n, {
       "data-migration-pending": true,
-      className: f.HM,
+      className: m.HM,
       size: s.$n.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(h.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -76,37 +76,37 @@ let A = a().debounce(Chunk58149.Ay.trackWithMetadata, 500),
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: f.kX,
+      className: m.kX,
       children: [true === b ? null : (0, r.jsx)(o.DUT, {
         onClick: () => {
           c.Ay.trackWithMetadata(h.HAw.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
           }), null == E || E()
         },
-        className: f.VN,
+        className: m.VN,
         "aria-label": g.intl.string(g.t.WAI6xu),
         children: (0, r.jsx)(o.PGe, {
           size: "md",
           color: "currentColor",
-          className: f.ut
+          className: m.ut
         })
       }), (0, r.jsx)("div", {
-        className: f.ZS,
+        className: m.ZS,
         style: {
-          marginTop: "".concat(m, "px"),
+          marginTop: "".concat(f, "px"),
           marginLeft: S,
           marginRight: S
         },
         children: (0, r.jsx)("img", {
-          className: f.Sl,
+          className: m.Sl,
           src: a,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: f.iU,
+        className: m.iU,
         children: [null != n ? (0, r.jsx)(o.Heading, {
           variant: "heading-md/semibold",
-          className: f.DD,
+          className: m.DD,
           children: n
         }) : null, (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
@@ -119,5 +119,5 @@ let A = a().debounce(Chunk58149.Ay.trackWithMetadata, 500),
     let {
       showRedesignedChannelNotice: t
     } = (0, d.P)(true);
-    return t ? (0, r.jsx)(p.A, m({}, e)) : (0, r.jsx)(_, m({}, e))
+    return t ? (0, r.jsx)(p.A, f({}, e)) : (0, r.jsx)(_, f({}, e))
   }

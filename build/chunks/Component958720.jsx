@@ -51,8 +51,8 @@ function O(e) {
   T && (k = (0, m.k8)(j, M, v));
   let U = (0, m.y8)(a, false, M, v),
     G = null != k && !C,
-    F = j.interval === E.WT.YEAR ? y.t.ECT4A5 : y.t.v9QeON,
-    V = () => P && !M && a === E.gD.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(u.Text, {
+    V = j.interval === E.WT.YEAR ? y.t.ECT4A5 : y.t.v9QeON,
+    F = () => P && !M && a === E.gD.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(u.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
@@ -68,7 +68,7 @@ function O(e) {
         discount: (0, h.l9)(t, k / 100)
       })
     }),
-    H = () => P ? V() : j.interval === E.WT.YEAR && null != n || G && !L ? j.interval === E.WT.YEAR && null != n ? (0, r.jsxs)("span", {
+    H = () => P ? F() : j.interval === E.WT.YEAR && null != n || G && !L ? j.interval === E.WT.YEAR && null != n ? (0, r.jsxs)("span", {
       className: b.IS,
       children: ["(", y.intl.string(y.t["122kWB"]), ")"]
     }) : G && !L ? B() : true : null,
@@ -101,7 +101,7 @@ function O(e) {
           regularPrice: (0, g.$g)(U.amount, U.currency)
         })
       }
-      return D ? y.intl.format(F, {
+      return D ? y.intl.format(V, {
         price: (0, g.$g)(U.amount, U.currency)
       }) : j.interval === E.WT.YEAR ? y.intl.formatToPlainString(y.t.rtLTJP, {
         percent: k

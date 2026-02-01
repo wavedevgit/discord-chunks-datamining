@@ -262,8 +262,8 @@
           k = n(5049),
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
-          F = k.call(w, Array.prototype.splice),
-          V = k.call(R, String.prototype.replace),
+          V = k.call(w, Array.prototype.splice),
+          F = k.call(R, String.prototype.replace),
           B = k.call(R, String.prototype.slice),
           H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -291,8 +291,8 @@
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return V(e, Y, function(e, t, n, i) {
-                r[r.length] = n ? V(i, W, "$1") : t || e
+              return F(e, Y, function(e, t, n, i) {
+                r[r.length] = n ? F(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
@@ -301,7 +301,7 @@
             o = i.value,
             s = false,
             l = i.alias;
-          l && (r = l[0], F(n, G([0, 1], l)));
+          l && (r = l[0], V(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
@@ -721,9 +721,9 @@
             return null == i ? true : i[e]
           }),
           G = Object.prototype.toString,
-          F = k.Symbol,
-          V = F ? F.prototype : true,
-          B = V ? V.toString : true;
+          V = k.Symbol,
+          F = V ? V.prototype : true,
+          B = F ? F.toString : true;
 
         function H(e) {
           return null == e ? "" : function(e) {
@@ -855,12 +855,12 @@
             single: /(['\\])/g
           };
 
-        function F(e, t, n) {
+        function V(e, t, n) {
           var r = U[n.quoteStyle || t];
           return r + e + r
         }
 
-        function V(e) {
+        function F(e) {
           return y.call(String(e), /"/g, "&quot;")
         }
 
@@ -947,7 +947,7 @@
             return "object" != typeof t || R ? ei : J(ei)
           }
           if ((j = t) && "object" == typeof j && ("u" > typeof HTMLElement && j instanceof HTMLElement || "string" == typeof j.nodeName && "function" == typeof j.getAttribute)) {
-            for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + F(V(eo[es].value), "double", l);
+            for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + V(F(eo[es].value), "double", l);
             return ea += ">", t.childNodes && t.childNodes.length && (ea += "..."), ea + "</" + O.call(String(t.nodeName)) + ">"
           }
           if (H(t)) {
@@ -1096,7 +1096,7 @@
             return Q(E.call(e, 0, t.maxStringLength), t) + r
           }
           var i = G[t.quoteStyle || "single"];
-          return i.lastIndex = 0, F(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, X), "single", t)
+          return i.lastIndex = 0, V(y.call(y.call(e, i, "\\$1"), /[\x00-\x1f]/g, X), "single", t)
         }
 
         function X(e) {
@@ -1249,10 +1249,10 @@
                 U = "object" == typeof k && k && true !== k.value ? k.value : T[k];
               if (!d || null !== U) {
                 var G = E && f ? String(k).replace(/\./g, "%2E") : String(k),
-                  F = l(T) ? "function" == typeof a ? a(M, G) : M : M + (E ? "." + G : "[" + G + "]");
+                  V = l(T) ? "function" == typeof a ? a(M, G) : M : M + (E ? "." + G : "[" + G + "]");
                 I.set(t, N);
-                var V = r();
-                V.set(_, I), u(D, e(U, F, a, o, s, c, d, f, "comma" === a && v && l(T) ? null : h, m, g, E, y, b, O, v, A, V))
+                var F = r();
+                F.set(_, I), u(D, e(U, V, a, o, s, c, d, f, "comma" === a && v && l(T) ? null : h, m, g, E, y, b, O, v, A, F))
               }
             }
             return D
@@ -1759,8 +1759,8 @@
           k = n(5049),
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
-          F = k.call(w, Array.prototype.splice),
-          V = k.call(R, String.prototype.replace),
+          V = k.call(w, Array.prototype.splice),
+          F = k.call(R, String.prototype.replace),
           B = k.call(R, String.prototype.slice),
           H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -1788,8 +1788,8 @@
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return V(e, Y, function(e, t, n, i) {
-                r[r.length] = n ? V(i, W, "$1") : t || e
+              return F(e, Y, function(e, t, n, i) {
+                r[r.length] = n ? F(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
@@ -1798,7 +1798,7 @@
             o = i.value,
             s = false,
             l = i.alias;
-          l && (r = l[0], F(n, G([0, 1], l)));
+          l && (r = l[0], V(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),
@@ -2116,8 +2116,8 @@
           k = n(5049),
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
-          F = k.call(w, Array.prototype.splice),
-          V = k.call(R, String.prototype.replace),
+          V = k.call(w, Array.prototype.splice),
+          F = k.call(R, String.prototype.replace),
           B = k.call(R, String.prototype.slice),
           H = k.call(R, RegExp.prototype.exec),
           Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -2145,8 +2145,8 @@
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return V(e, Y, function(e, t, n, i) {
-                r[r.length] = n ? V(i, W, "$1") : t || e
+              return F(e, Y, function(e, t, n, i) {
+                r[r.length] = n ? F(i, W, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
@@ -2155,7 +2155,7 @@
             o = i.value,
             s = false,
             l = i.alias;
-          l && (r = l[0], F(n, G([0, 1], l)));
+          l && (r = l[0], V(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
               _ = B(p, 0, 1),

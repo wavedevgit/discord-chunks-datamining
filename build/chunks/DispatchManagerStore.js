@@ -106,7 +106,7 @@ function k(e) {
 }
 
 function U(e) {
-  V(e), H(e)
+  F(e), H(e)
 }
 
 function G(e) {
@@ -117,7 +117,7 @@ function G(e) {
   N.set((0, p.gW)(t, n), "Repair"), M(t, n, false, "Repair")
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -126,7 +126,7 @@ function F(e) {
   M(t, n, r, "Patch")
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -266,9 +266,9 @@ class X extends(r = Chunk311907.Ay.Store) {
 y(X, "displayName", "DispatchManagerStore");
 let J = new X(Chunk73153.h, {
   DISPATCH_APPLICATION_INSTALL: k,
-  DISPATCH_APPLICATION_UPDATE: F,
+  DISPATCH_APPLICATION_UPDATE: V,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: V,
+  DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
   DISPATCH_APPLICATION_MOVE_UP: B,
   DISPATCH_APPLICATION_REMOVE_FINISHED: H,

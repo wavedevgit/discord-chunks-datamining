@@ -1,5 +1,5 @@
 /** Chunk was on 13492 **/
-/** chunk id: 127938, original params: e,n,t (module,exports,require) **/
+/** chunk id: 127938, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
@@ -13,32 +13,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk360469 = require("./360469.js");
 
 function d() {
-  let e = (0, a.bG)([c.A], () => c.A.getConnectedFrame()),
-    n = (0, a.bG)([c.A], () => (null == e ? true : e.applicationId) != null && c.A.isProxyTicketRefreshing(e.applicationId), [e]),
-    t = o.useCallback(e => {
-      let {
-        application: n
-      } = e;
-      return (0, r.jsx)(_.A, {
-        applicationId: n.id
-      })
-    }, []),
-    d = o.useCallback(n => {
+  let e = (0, i.bG)([c.A], () => c.A.getConnectedFrame()),
+    t = (0, i.bG)([c.A], () => (null == e ? true : e.applicationId) != null && c.A.isProxyTicketRefreshing(e.applicationId), [e]),
+    n = r.useCallback(e => {
       let {
         application: t
-      } = n, o = {};
-      null != e && (o.instance_id = "example-cl-instance", o.platform = s.vu.DESKTOP, null != e.proxyTicket && (o.discord_proxy_ticket = e.proxyTicket));
-      let a = null == e ? true : e.url;
-      return (0, r.jsx)(i.A, {
-        application: t,
-        queryParams: o,
-        url: a
+      } = e;
+      return (0, l.jsx)(s.A, {
+        applicationId: t.id
+      })
+    }, []),
+    d = r.useCallback(t => {
+      let {
+        application: n
+      } = t, r = {};
+      null != e && (r.instance_id = "example-cl-instance", r.platform = u.vu.DESKTOP, null != e.proxyTicket && (r.discord_proxy_ticket = e.proxyTicket));
+      let i = null == e ? true : e.url;
+      return (0, l.jsx)(o.A, {
+        application: n,
+        queryParams: r,
+        url: i
       })
     }, [e]);
-  return (0, r.jsx)(l.E, {
+  return (0, l.jsx)(a.E, {
     activity: e,
-    isLoading: n,
-    renderHeader: t,
+    isLoading: t,
+    renderHeader: n,
     renderActivityIFrameWithLoadedData: d
   })
 }

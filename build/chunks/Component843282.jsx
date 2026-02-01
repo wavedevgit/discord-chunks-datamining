@@ -183,8 +183,8 @@ function P(e) {
     isSelected: k,
     serialize: U,
     clear: G,
-    hideIcon: F = false,
-    isProcessing: V = false,
+    hideIcon: V = false,
+    isProcessing: F = false,
     "aria-label": B,
     "aria-labelledby": H,
     label: Y,
@@ -282,7 +282,7 @@ function P(e) {
           "aria-errormessage": null == e ? true : e.errorMessageId,
           "aria-invalid": (null == e ? true : e.errorMessageId) != null,
           disabled: s,
-          "aria-busy": V,
+          "aria-busy": F,
           "aria-disabled": s,
           fullWidth: "horizontal" === Z,
           innerRef: e => {
@@ -312,7 +312,7 @@ function P(e) {
             children: n
           }), (0, r.jsx)("div", {
             className: g.Pt,
-            children: V ? (0, r.jsx)(f.nvX, {
+            children: F ? (0, r.jsx)(f.nvX, {
               dotRadius: 3.5,
               themed: true
             }) : (0, r.jsxs)(r.Fragment, {
@@ -326,7 +326,7 @@ function P(e) {
                   color: "currentColor",
                   className: g.IU
                 })
-              }) : null, F ? null : (0, r.jsx)(h, {
+              }) : null, V ? null : (0, r.jsx)(h, {
                 color: "currentColor",
                 size: "sm"
               })]

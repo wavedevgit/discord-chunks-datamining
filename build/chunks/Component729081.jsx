@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 729081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -43,11 +43,11 @@ function C(e) {
     [T] = (0, o.bG)([d.A], () => null != I.id ? [d.A.getParticipants(I.id), d.A.getParticipantsVersion(I.id)] : [
       [], 0
     ], [I.id], u.hS),
-    P = (0, o.yK)([p.A], () => {
+    P = (0, o.yK)([h.A], () => {
       let e = new Set;
       for (let n of T)
-        if ((0, j.Xw)(n) || (0, j.Ay)(n))
-          for (let r of p.A.getActivities(n.user.id)) {
+        if ((0, x.Xw)(n) || (0, x.Ay)(n))
+          for (let r of h.A.getActivities(n.user.id)) {
             var t;
             if (r.application_id === (null == N ? true : N.id) || (null == N || null == (t = N.linkedGames) ? true : t.some(e => e.id === r.application_id)) === true) {
               e.add(n.user.id);
@@ -57,7 +57,7 @@ function C(e) {
       return Array.from(e).sort()
     }, [T, N]),
     w = l.useMemo(() => {
-      let e = T.map(e => (0, j.Xw)(e) || (0, j.Ay)(e) ? e.user.id : null).filter(f.Vq);
+      let e = T.map(e => (0, x.Xw)(e) || (0, x.Ay)(e) ? e.user.id : null).filter(f.Vq);
       return (0, i.uniq)([...P, ...e])
     }, [T, P]),
     {
@@ -89,12 +89,12 @@ function C(e) {
       })
     }, [I.guild_id, I.id, D, L, w]);
   return l.useEffect(() => {
-    0 !== D.length && g.default.track(_.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+    0 !== D.length && g.default.track(j.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
       guild_id: I.guild_id,
       channel_id: I.id,
       sku_ids: D.map(e => e.skuId)
     })
-  }, [I.id, I.guild_id, D]), (0, r.jsx)(h.A, {
+  }, [I.id, I.guild_id, D]), (0, r.jsx)(p.A, {
     children: (0, r.jsx)(a.lGe, {
       "aria-labelledby": E,
       modal: false,
@@ -106,13 +106,13 @@ function C(e) {
           className: v.DD,
           variant: "text-lg/bold",
           color: "text-strong",
-          children: x.intl.string(x.t.xLP3bi)
+          children: _.intl.string(_.t.xLP3bi)
         }), (0, r.jsx)(a.EYj, {
           className: v.VA,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: x.intl.format(x.t["+SqhBF"], {
-            applicationName: null != (t = null == N ? true : N.name) ? t : x.intl.string(x.t["/1hhto"])
+          children: _.intl.format(_.t["+SqhBF"], {
+            applicationName: null != (t = null == N ? true : N.name) ? t : _.intl.string(_.t["/1hhto"])
           })
         }), (0, r.jsx)("div", {
           className: v.Xb,

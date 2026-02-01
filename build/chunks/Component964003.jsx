@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 964003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
@@ -43,13 +43,13 @@ let b = e => {
       descriptionCta: h,
       previewImage: E,
       videoUrl: O,
-      shouldLoadVideo: C,
-      index: x,
+      shouldLoadVideo: x,
+      index: C,
       customVideoStyle: S,
       isReducedMotion: T,
       onClick: I,
-      badgeText: y,
-      badgeVariant: N = "gradient",
+      badgeText: N,
+      badgeVariant: y = "gradient",
       size: j,
       backgroundVideoUrl: v,
       previewImageStyle: P = m.Tb.CONTAINED
@@ -64,23 +64,23 @@ let b = e => {
     }, V = j === m.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", F = () => (0, r.jsxs)("div", {
       className: s()(f.textBox, f["".concat(j)], G && f.overlayTextBox),
       children: [(0, r.jsxs)("div", {
-        children: [null == y ? null : "gradient" === N ? (0, r.jsx)("div", {
+        children: [null == N ? null : "gradient" === y ? (0, r.jsx)("div", {
           className: f.badgeContainer,
           children: (0, r.jsx)("div", {
             className: f.badge,
             children: (0, r.jsx)(c.Heading, {
               variant: "eyebrow",
               color: "always-white",
-              children: y
+              children: N
             })
           })
         }) : (0, r.jsx)("div", {
           className: f.badgeContainer,
           children: (0, r.jsx)(o.Exy, {
             type: {
-              text: y
+              text: N
             },
-            variant: N
+            variant: y
           })
         }), (0, r.jsx)(c.Heading, {
           variant: V,
@@ -102,7 +102,7 @@ let b = e => {
       className: s()(f.boxArtContainer, f["".concat(j)]),
       children: (0, r.jsx)(u.A, {
         playsInline: true,
-        preload: C ? "auto" : "none",
+        preload: x ? "auto" : "none",
         muted: true,
         poster: E,
         loop: true,
@@ -115,7 +115,7 @@ let b = e => {
           type: R ? A.a.MP4 : A.a.WEBM
         })
       }, O)
-    }), W = x % 2 != 0;
+    }), W = C % 2 != 0;
     return (0, r.jsxs)(c.hLv, {
       id: t,
       className: s()(f.backgroundColor, f.boxContainer, f["".concat(j)], f.gradientBackground, M && f.overlayImageMode, G && f.overlayMode),
@@ -131,7 +131,7 @@ let b = e => {
           autoPlay: !T,
           playsInline: true,
           loop: true,
-          preload: C ? "auto" : "none",
+          preload: x ? "auto" : "none",
           className: f.backgroundVideo,
           src: v
         })

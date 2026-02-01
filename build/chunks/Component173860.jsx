@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 173860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => y
@@ -86,14 +86,14 @@ class b extends Chunk64700.Component {
       onClick: r
     } = this.props;
     return (0, l.jsx)(u.A.div, {
-      className: a()(p.M0, e, {
-        [p.R]: n
+      className: a()(h.M0, e, {
+        [h.R]: n
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": n,
       children: (0, l.jsx)("span", {
-        className: p.Qq,
+        className: h.Qq,
         children: t
       })
     })
@@ -149,7 +149,7 @@ class A extends(r = Chunk64700.PureComponent) {
       className: null != s ? s : true,
       children: (0, l.jsx)(b, {
         hide: true === c || null == e && null == t,
-        className: a()(o, null != t ? p.lE : p.gy),
+        className: a()(o, null != t ? h.lE : h.gy),
         text: null != t ? n : r,
         reverse: i,
         animate: u && !d.enabled,
@@ -178,14 +178,14 @@ class A extends(r = Chunk64700.PureComponent) {
           null == a && l(e, i, c) && (a = e), null == o && r(e, i, c) && (o = e)
         },
         d = i ? c.length - 1 : 0,
-        h = c[d];
-      for (; null != h;) {
-        if ("string" == typeof h) {
-          if (n(h, i, c)) break;
-          u(h)
+        p = c[d];
+      for (; null != p;) {
+        if ("string" == typeof p) {
+          if (n(p, i, c)) break;
+          u(p)
         } else {
           let e = false;
-          for (let t of h) {
+          for (let t of p) {
             if (n(t, i, c)) {
               e = true;
               break
@@ -194,7 +194,7 @@ class A extends(r = Chunk64700.PureComponent) {
           }
           if (e) break
         }
-        d += i ? false : 1, h = c[d]
+        d += i ? false : 1, p = c[d]
       }
       null != s && s(a, o, i), this.setState({
         mention: a,

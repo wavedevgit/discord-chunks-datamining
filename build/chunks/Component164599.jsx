@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 164599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -28,16 +28,16 @@ function E(e) {
     initialSelectedEffect: l,
     className: E,
     sectionTitle: O,
-    forcedDivider: C = false,
-    withTutorial: x = false,
+    forcedDivider: x = false,
+    withTutorial: C = false,
     showBorder: S = false
   } = e, {
     analyticsLocations: T
-  } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), y = (0, p.N2)({
+  } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), N = (0, p.N2)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingProfileEffect: N,
+    pendingProfileEffect: y,
     errors: j
   } = (0, p.nZ)(null == n ? true : n.id);
   i.useEffect(() => {
@@ -46,9 +46,9 @@ function E(e) {
       location_stack: T
     })
   }, [I, T]);
-  let v = x ? o.wLn : a.$n;
+  let v = C ? o.wLn : a.$n;
   return (0, r.jsx)(m.A, {
-    forcedDivider: C,
+    forcedDivider: x,
     borderType: g.i.PREMIUM,
     hasBackground: true,
     title: O,
@@ -67,10 +67,10 @@ function E(e) {
           })
         },
         className: s()({
-          [h.yj]: x
+          [h.yj]: C
         }),
         children: b.intl.string(b.t["/dRfCf"])
-      }), (true === N ? null != y : null != N) && (0, r.jsx)("div", {
+      }), (true === y ? null != N : null != y) && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: h.DT,
         children: (0, r.jsx)(o.Button, {

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 821747, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -33,7 +33,7 @@ function f(e) {
     currentVolume: u.A.getLocalVolume(f, m),
     muted: u.A.isLocalMute(f, m)
   }));
-  return (0, r.jsx)(p.A, {
+  return (0, r.jsx)(h.A, {
     children: (0, r.jsx)(c.A, {
       currentWindow: b,
       iconClassName: i()(n, g.pd),
@@ -41,7 +41,7 @@ function f(e) {
       className: t,
       value: (0, d.M)(y),
       muted: O,
-      maxValue: h.isPlatformEmbedded ? 200 : 100,
+      maxValue: p.isPlatformEmbedded ? 200 : 100,
       onValueChange: e => {
         e > 0 && O && a.A.toggleLocalMute(f, m), a.A.setLocalVolume(f, (0, d.w)(e), m)
       },

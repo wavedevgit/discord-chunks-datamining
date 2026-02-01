@@ -1,98 +1,99 @@
 /** Chunk was on 71447 **/
 /** chunk id: 646881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
-}), require("./896048.js");
+  A: () => x
+});
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
-  Chunk59520 = require("./59520.js"),
-  Chunk726079 = require("./726079.jsx"),
+  Chunk308528 = require("./308528.js"),
   Chunk375492 = require("./375492.js"),
   Chunk287809 = require("./287809.js"),
   Chunk810412 = require("./810412.js"),
-  Chunk547463 = require("./547463.jsx"),
+  Chunk914853 = require("./914853.js"),
   Chunk243612 = require("./243612.js"),
+  Chunk640490 = require("./640490.jsx"),
+  Chunk67103 = require("./67103.js"),
+  Chunk755588 = require("./755588.jsx"),
+  Chunk222870 = require("./222870.jsx"),
+  Chunk180720 = require("./180720.jsx"),
+  Chunk576420 = require("./576420.js"),
+  Chunk145567 = require("./145567.js"),
+  Chunk34307 = require("./34307.js"),
   Chunk652215 = require("./652215.js"),
   Chunk553777 = require("./553777.js");
 
-function m(e) {
-  let {
-    locked: t
-  } = e, n = (0, p.b4)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.bG)([c.default], () => c.default.getCurrentUser()), A = null != g ? g : m, [O, E] = r.useState(new Set), [v, b] = r.useState(new Set), S = r.useCallback((e, t, n) => {
-    E(n => {
-      if (t) {
-        if (n.has(e)) return n;
-        n.add(e)
-      } else {
-        if (!n.has(e)) return n;
-        n.delete(e)
-      }
-      return new Set(n)
-    }), b(i => {
-      if (n && t) {
-        if (i.has(e)) return i;
-        i.add(e)
-      } else {
-        if (!i.has(e)) return i;
-        i.delete(e)
-      }
-      return new Set(i)
-    })
-  }, []), x = (0, u.Dk)(() => O, [O]), j = (0, u.Dk)(() => v, [v]), I = (0, a.I)(u.Y, 3e3, []);
-  r.useEffect(() => {
-    0 === x.size || t || I(h.uss.FRIENDS, {
-      locked: t,
-      shownUserIds: Array.from(x),
-      liveUserIds: Array.from(j),
-      contentInventoryIds: []
-    })
-  }, [x, j, t, I]);
-  let N = (0, l.bG)([s.A], () => null == A ? null : s.A.getApplicationActivity(A), [A]),
+function O() {
+  var e, t, n;
+  let O = (0, d.b4)(),
+    x = null == O ? true : O.id,
+    _ = null == O ? true : O.altId,
+    S = null != (e = (0, l.bG)([o.default], () => o.default.getCurrentUser())) ? e : null,
+    I = null != _ ? _ : x,
+    j = y.Ay.useField("activeTab"),
+    T = y.Ay.useField("setActiveTab"),
+    C = r.useCallback(e => {
+      e !== j && (T(e), (0, u.YX)(b.uss.FRIENDS, {
+        type: u.Z5.TAB_SELECTED,
+        value: function(e) {
+          switch (e) {
+            case c.x.FRIENDS:
+              return u.IP.FRIEND_TAB_SELECTED;
+            case c.x.MESSAGES:
+              return u.IP.MESSAGES_TAB_SELECTED;
+            case c.x.VOICE:
+              return u.IP.VOICE_TAB_SELECTED;
+            default:
+              return u.IP.FRIEND_TAB_SELECTED
+          }
+        }(e)
+      }))
+    }, [j, T]),
+    N = null != (t = (0, l.bG)([s.A], () => null == I ? null : s.A.getApplicationActivity(I), [I])) ? t : null,
     w = (0, r.useCallback)((e, t) => {
       let n = function(e) {
         switch (e) {
-          case o.xQ.OPEN_DIRECT_MESSAGE:
+          case p.x.OPEN_DIRECT_MESSAGE:
             return {
               type: u.Z5.FRIEND_LIST, value: u.IP.CHAT
             };
-          case o.xQ.ACCEPT_FRIEND_REQUEST:
+          case p.x.ACCEPT_FRIEND_REQUEST:
             return {
               type: u.Z5.FRIEND_REQUEST, value: u.IP.ACCEPT_REQUEST
             };
-          case o.xQ.DECLINE_FRIEND_REQUEST:
+          case p.x.DECLINE_FRIEND_REQUEST:
             return {
               type: u.Z5.FRIEND_REQUEST, value: u.IP.DECLINE_REQUEST
             };
-          case o.xQ.CANCEL_FRIEND_REQUEST:
+          case p.x.CANCEL_FRIEND_REQUEST:
             return {
               type: u.Z5.FRIEND_REQUEST, value: u.IP.CANCEL_REQUEST
             };
-          case o.xQ.SEND_FRIEND_REQUEST:
+          case p.x.SEND_FRIEND_REQUEST:
             return {
               type: u.Z5.FRIEND_REQUEST, value: u.IP.SEND_REQUEST
             };
-          case o.xQ.SEND_ACTIVITY_INVITE:
+          case p.x.SEND_ACTIVITY_INVITE:
             return {
               type: u.Z5.INVITE, value: u.IP.INVITE_SENT
             };
-          case o.xQ.ASK_TO_JOIN:
+          case p.x.ASK_TO_JOIN:
             return {
               type: u.Z5.INVITE, value: u.IP.JOIN_REQUEST_SENT
             };
-          case o.xQ.USER_CONTEXT_MENU:
+          case p.x.USER_CONTEXT_MENU:
             return {
               type: u.Z5.FRIEND_LIST, value: u.IP.SETTINGS_OPENED
             };
-          case o.xQ.OPEN_FRIEND_MODAL:
+          case p.x.OPEN_FRIEND_MODAL:
             return {
               type: u.Z5.FRIEND_LIST, value: u.IP.PROFILE_OPENED
             };
-          case o.xQ.OPEN_SETTINGS_MODAL:
+          case p.x.OPEN_SETTINGS_MODAL:
             return {
               type: u.Z5.FRIEND_LIST, value: u.IP.SETTINGS_OPENED
             };
-          case o.xQ.SEARCH_FRIENDS:
+          case p.x.SEARCH_FRIENDS:
             return {
               type: u.Z5.FRIEND_LIST, value: u.IP.SEARCH
             };
@@ -102,7 +103,21 @@ function m(e) {
       }(e);
       if (null != n) {
         var i, r;
-        (0, u.YX)(h.uss.FRIENDS, (i = function(e) {
+        if (e === p.x.OPEN_DIRECT_MESSAGE) {
+          if (null == t) return;
+          (async () => {
+            try {
+              let e = await a.A.getOrEnsurePrivateChannel(t);
+              (0, A.D$)({
+                channelId: e,
+                source: v.B.FRIENDS_WIDGET_CLICK,
+                guildId: null,
+                messageId: null,
+                widgetType: b.uss.FRIENDS
+              })
+            } catch (e) {}
+          })()
+        }(0, u.YX)(b.uss.FRIENDS, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -132,20 +147,26 @@ function m(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
         }), i))
       }
-    }, []),
-    T = (0, r.useCallback)(() => {}, []),
-    C = (0, r.useCallback)(() => (0, i.jsx)(d.vr, {
+    }, []);
+  return (0, i.jsxs)("div", {
+    className: E.kL,
+    children: [(0, i.jsx)(f.b, {
+      currentUser: S,
       activity: N,
-      currentUser: y,
-      showInviteButton: false
-    }), [N, y]);
-  return t ? null : (0, i.jsx)(o.Zz, {
-    containerClassName: f.k,
-    listClassName: f.p,
-    closePopout: T,
-    renderHeader: C,
-    appContext: h.BRT.OVERLAY,
-    onAction: w,
-    onFriendVisible: S
+      currentGameName: null != (n = null == O ? true : O.name) ? n : null,
+      activeTab: j,
+      onTabChange: C
+    }), (0, i.jsx)("div", {
+      className: E.Qs,
+      children: j === c.x.FRIENDS ? (0, i.jsx)(h.F, {
+        onAction: w
+      }) : j === c.x.MESSAGES ? (0, i.jsx)(g.t, {}) : j === c.x.VOICE ? (0, i.jsx)(m.T, {}) : null
+    })]
   })
 }
+let x = Chunk64700.memo(function(e) {
+  let {
+    locked: t
+  } = e;
+  return t ? null : (0, i.jsx)(O, {})
+})

@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 657364, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -32,9 +32,9 @@ function E() {
     })),
     [E, O] = i.useState(false);
   if (null == e) return null;
-  let C = (0, _.Oj)(t, e) || l,
-    x = null != t && s()().diff(s()(t.created_at), "days") < f.n83,
-    S = C && x,
+  let x = (0, _.Oj)(t, e) || l,
+    C = null != t && s()().diff(s()(t.created_at), "days") < f.n83,
+    S = x && C,
     T = e.isStaff(),
     I = !e.verified;
   return (0, r.jsxs)(g.h, {
@@ -70,7 +70,7 @@ function E() {
         children: (0, r.jsx)(o.Button, {
           variant: "primary",
           text: b.intl.string(b.t.dmBSKo),
-          disabled: C,
+          disabled: x,
           onClick: () => {
             (e => {
               let {

@@ -55,7 +55,7 @@ function d(e, t) {
 }
 
 function f(e) {
-  return V && e instanceof Map
+  return F && e instanceof Map
 }
 
 function p(e) {
@@ -260,13 +260,13 @@ require.d(exports, {
   mq: () => en,
   vD: () => er
 });
-var U, G, F = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
-  V = "u" > typeof Map,
+var U, G, V = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
+  F = "u" > typeof Map,
   B = "u" > typeof Set,
   H = "u" > typeof Proxy && true !== Proxy.revocable && "u" > typeof Reflect,
-  Y = F ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = true, U),
-  W = F ? Symbol.for("immer-draftable") : "__$immer_draftable",
-  K = F ? Symbol.for("immer-state") : "__$immer_state",
+  Y = V ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = true, U),
+  W = V ? Symbol.for("immer-draftable") : "__$immer_draftable",
+  K = V ? Symbol.for("immer-state") : "__$immer_state",
   z = "u" > typeof Symbol && Symbol.iterator || "@@iterator",
   q = "" + Object.prototype.constructor,
   Z = "u" > typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : true !== Object.getOwnPropertySymbols ? function(e) {

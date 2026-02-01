@@ -1,8 +1,8 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 156652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f,
-  x: () => p
+  x: () => h
 });
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk919706 = require("./919706.jsx"),
   Chunk985010 = require("./985010.js");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,7 +31,7 @@ function h(e) {
   }
   return e
 }
-var p = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
+var h = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
 
 function g(e) {
   let {
@@ -41,12 +41,12 @@ function g(e) {
     renderBottomCenter: s,
     renderBottomRight: a,
     renderCenter: u
-  } = e, h = i.useRef(null);
+  } = e, p = i.useRef(null);
   return (0, l.jsx)(o.xpW, {
-    containerRef: h,
+    containerRef: p,
     children: (0, l.jsxs)("div", {
       className: d._v,
-      ref: h,
+      ref: p,
       children: [0 !== t && true !== t && (0, l.jsx)("div", {
         className: d.aw
       }), 1 !== t && true !== t && (0, l.jsx)("div", {
@@ -87,7 +87,7 @@ function f(e) {
     idle: s,
     children: o,
     renderChatToasts: c,
-    renderVoiceChannelEffects: p,
+    renderVoiceChannelEffects: h,
     style: f
   } = e, m = function(e, t) {
     if (null == e) return {};
@@ -115,8 +115,8 @@ function f(e) {
     onMouseDown: r,
     onMouseLeave: i,
     onDoubleClick: n,
-    children: [o, null != t ? (0, l.jsx)(u.A, h({
+    children: [o, null != t ? (0, l.jsx)(u.A, p({
       size: "large"
-    }, t)) : null, (0, l.jsx)(g, h({}, m)), null == c ? true : c(), null == p ? true : p()]
+    }, t)) : null, (0, l.jsx)(g, p({}, m)), null == c ? true : c(), null == h ? true : h()]
   })
 }

@@ -29,20 +29,20 @@ function f(e, t, n) {
     return n
   }).map(e => ({
     channelId: e,
-    readStateType: h.P.CHANNEL,
+    readStateType: p.P.CHANNEL,
     messageId: c.Ay.lastMessageId(e)
   }));
   return e.forEach(e => {
     i.push({
       channelId: u.default.cast(e),
-      readStateType: h.P.GUILD_EVENT,
-      messageId: c.Ay.lastMessageId(e, h.P.GUILD_EVENT)
+      readStateType: p.P.GUILD_EVENT,
+      messageId: c.Ay.lastMessageId(e, p.P.GUILD_EVENT)
     }), i.push({
       channelId: u.default.cast(e),
-      readStateType: h.P.GUILD_ONBOARDING_QUESTION,
+      readStateType: p.P.GUILD_ONBOARDING_QUESTION,
       messageId: l.A.ackIdForGuild(e)
     })
-  }), d.default.track(p.HAw.MARK_AS_READ, {
+  }), d.default.track(h.HAw.MARK_AS_READ, {
     source: t,
     type: "guild"
   }), (0, s.Uq)(i, n)

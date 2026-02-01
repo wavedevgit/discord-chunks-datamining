@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 697122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => d
@@ -16,26 +16,26 @@ function d(e) {
   let {
     channel: t,
     children: n,
-    className: l,
+    className: r,
     editable: d,
     location: h
   } = e;
-  return d ? (0, r.jsx)(s.m, {
+  return d ? (0, l.jsx)(a.m, {
     position: "bottom",
     text: c.intl.string(c.t["0qPSMV"]),
-    children: (0, r.jsxs)(a.DUT, {
-      className: i()(u.e, l),
+    children: (0, l.jsxs)(s.DUT, {
+      className: i()(u.e, r),
       onClick: () => (0, o.jv)(t.id, h),
-      children: [n, (0, r.jsx)("div", {
+      children: [n, (0, l.jsx)("div", {
         className: u.Z,
-        children: (0, r.jsx)(a.R2l, {
+        children: (0, l.jsx)(s.R2l, {
           size: "xs",
           color: "currentColor"
         })
       })]
     })
-  }) : (0, r.jsx)("div", {
-    className: l,
+  }) : (0, l.jsx)("div", {
+    className: r,
     children: n
   })
 }

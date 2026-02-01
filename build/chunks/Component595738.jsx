@@ -1,5 +1,5 @@
 /** Chunk was on 73169 **/
-/** chunk id: 595738, original params: e,t,a (module,exports,require) **/
+/** chunk id: 595738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
 });
@@ -14,48 +14,48 @@ var Chunk503698 = require("./503698.js"),
 function i(e) {
   let {
     grantedPermissions: t,
-    disabledPermissions: a,
+    disabledPermissions: n,
     grantedPermissionsHeader: r,
     disabledPermissionsHeader: i,
     className: s
   } = e;
-  return (0, n.jsxs)("div", {
+  return (0, a.jsxs)("div", {
     className: o()(l.p_, s),
-    children: [null != t && t.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [null != r ? (0, n.jsx)(_.Heading, {
+    children: [null != t && t.length > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [null != r ? (0, a.jsx)(_.Heading, {
         variant: "heading-sm/semibold",
         color: "text-strong",
         className: l.wx,
         children: r
-      }) : null, (0, n.jsx)("div", {
+      }) : null, (0, a.jsx)("div", {
         className: l.kL,
-        children: t.map(e => (0, n.jsxs)("div", {
+        children: t.map(e => (0, a.jsxs)("div", {
           className: l.EK,
-          children: [(0, n.jsx)(_.A9s, {
+          children: [(0, a.jsx)(_.A9s, {
             size: "xs",
             color: "currentColor",
             className: l.z6
-          }), (0, n.jsx)(_.Text, {
+          }), (0, a.jsx)(_.Text, {
             variant: "text-sm/normal",
             children: (0, c.hx)(e)
           })]
         }, e.toString()))
       })]
-    }) : null, null != a && a.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [null != i ? (0, n.jsx)(_.Heading, {
+    }) : null, null != n && n.length > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [null != i ? (0, a.jsx)(_.Heading, {
         variant: "heading-sm/semibold",
         color: "text-strong",
         className: l.wx,
         children: i
-      }) : null, (0, n.jsx)("div", {
+      }) : null, (0, a.jsx)("div", {
         className: l.kL,
-        children: a.map(e => (0, n.jsxs)("div", {
+        children: n.map(e => (0, a.jsxs)("div", {
           className: l.EK,
-          children: [(0, n.jsx)(_.PGe, {
+          children: [(0, a.jsx)(_.PGe, {
             size: "xs",
             color: "currentColor",
             className: l.$A
-          }), (0, n.jsx)(_.Text, {
+          }), (0, a.jsx)(_.Text, {
             variant: "text-sm/normal",
             children: (0, c.hx)(e)
           })]

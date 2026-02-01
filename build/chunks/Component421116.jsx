@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 421116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => K
@@ -72,7 +72,7 @@ let K = () => {
     {
       analyticsLocations: em
     } = (0, g.Ay)(m.A.PREMIUM_MARKETING),
-    eg = (0, C.A)({
+    eg = (0, x.A)({
       location: "PremiumMarketing"
     }),
     eA = !Q && !en && (eg || !ee);
@@ -97,8 +97,8 @@ let K = () => {
     {
       home: eE,
       whatsNew: eO,
-      bestOfNitro: eC,
-      plans: ex,
+      bestOfNitro: ex,
+      plans: eC,
       compare: eS
     } = eb,
     eT = eg ? F : Y,
@@ -109,7 +109,7 @@ let K = () => {
       }),
       "data-cy": "tier-0-marketing-page",
       children: [eg && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(y.A, {
+        children: [(0, r.jsx)(N.A, {
           className: F.topOfPageGradient
         }), (0, r.jsx)(M.A, {
           navBarSections: eb,
@@ -147,8 +147,8 @@ let K = () => {
           })
         }), e_ && (0, r.jsx)("div", {
           className: eT.promoBannerContainer,
-          children: (0, r.jsx)(x.A, {
-            variant: x.c.APPLICATION_NITRO_HOME
+          children: (0, r.jsx)(C.A, {
+            variant: C.c.APPLICATION_NITRO_HOME
           })
         }), (0, r.jsx)("div", {
           className: eT.whatsNewSectionContainer,
@@ -160,7 +160,7 @@ let K = () => {
           })
         }), (0, r.jsx)("div", {
           className: eT.bestOfNitroSectionContainer,
-          ref: eC.ref,
+          ref: ex.ref,
           children: (0, r.jsx)(I.oO, {
             shouldLoadVideo: es,
             isReducedMotion: X,
@@ -168,7 +168,7 @@ let K = () => {
           })
         }), (0, r.jsx)("div", {
           className: eT.premiumTierCardsContainer,
-          ref: ex.ref,
+          ref: eC.ref,
           children: (0, r.jsx)(c.L, {
             innerRef: l,
             onChange: e => er(e),
@@ -186,7 +186,7 @@ let K = () => {
           ref: eS.ref,
           children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(j.A, {})
         })]
-      }), !eg && (0, r.jsx)(N.A, {
+      }), !eg && (0, r.jsx)(y.A, {
         isVisible: eA && es,
         subscriptionTier: eu,
         isApplicationHome: true,
@@ -221,7 +221,7 @@ let K = () => {
           isVisible: eA && es,
           subscriptionTier: eu,
           isEligibleForBogoPromotion: e_
-        }), (0, r.jsx)(y.A, {
+        }), (0, r.jsx)(N.A, {
           className: F.bottomOfPageGradient
         })]
       })]

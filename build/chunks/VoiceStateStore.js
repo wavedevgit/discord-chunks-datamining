@@ -163,14 +163,14 @@ function G(e) {
   }), delete g[t.id]
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e;
   T(t.id)
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t
   } = e;
@@ -257,8 +257,8 @@ let H = new B(Chunk73153.h, {
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: G,
   GUILD_CREATE: G,
-  CHANNEL_DELETE: F,
-  CALL_DELETE: V,
+  CHANNEL_DELETE: V,
+  CALL_DELETE: F,
   PASSIVE_UPDATE_V2: D,
   RTC_CONNECTION_PLATFORM: L
 })

@@ -89,10 +89,10 @@ let L = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
       emojiSpriteSize: D,
       shouldShowSoundmojiInEmojiPicker: x,
       showOnlyUnicode: M
-    } = e, j = (0, s.bG)([c.Ay], () => c.Ay.categories), k = r.useMemo(() => M ? d.Ay.getCategories() : j, [j, M]), U = (0, s.bG)([g.A], () => g.A.getGuild(null == n ? true : n.getGuildId()), [n]), G = null != (t = null == n ? true : n.getGuildId()) ? t : i, F = (0, s.bG)([c.Ay], () => c.Ay.getDisambiguatedEmojiContext(G), [G]), V = (0, v.XI)(G), B = (0, v.Fj)(G), H = (0, v.QZ)(G), {
+    } = e, j = (0, s.bG)([c.Ay], () => c.Ay.categories), k = r.useMemo(() => M ? d.Ay.getCategories() : j, [j, M]), U = (0, s.bG)([g.A], () => g.A.getGuild(null == n ? true : n.getGuildId()), [n]), G = null != (t = null == n ? true : n.getGuildId()) ? t : i, V = (0, s.bG)([c.Ay], () => c.Ay.getDisambiguatedEmojiContext(G), [G]), F = (0, v.XI)(G), B = (0, v.Fj)(G), H = (0, v.QZ)(G), {
       topEmojis: Y,
       newlyAddedEmojis: W
-    } = (0, I.A)(G, f), K = (0, s.yK)([E.Ay], () => E.Ay.getFlattenedGuildIds(), []), z = (0, s.bG)([c.Ay], () => c.Ay.expandedSectionsByGuildIds), q = (0, s.bG)([y.default], () => y.default.getCurrentUser()), Z = (0, O.ki)(q), Q = (0, _.k0)(), X = F.getCustomEmoji(), J = e => {
+    } = (0, I.A)(G, f), K = (0, s.yK)([E.Ay], () => E.Ay.getFlattenedGuildIds(), []), z = (0, s.bG)([c.Ay], () => c.Ay.expandedSectionsByGuildIds), q = (0, s.bG)([y.default], () => y.default.getCurrentUser()), Z = (0, O.ki)(q), Q = (0, _.k0)(), X = V.getCustomEmoji(), J = e => {
       if (e.type === u.i.GUILD) return e.guildId
     }, $ = r.useMemo(() => a().groupBy(X, J), [X]), ee = (0, h.Ym)({
       location: "useEmojiGrid"
@@ -104,7 +104,7 @@ let L = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
         i = [],
         s = 0,
         c = 0;
-      if (null != F && null != N) {
+      if (null != V && null != N) {
         let u = Math.floor(N / (D + 2 * R)),
           _ = 3 * u,
           h = (o, d) => {
@@ -255,7 +255,7 @@ let L = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
               isNitroLocked: false
             })
           } else if (e === S.R2.FAVORITES) {
-            let t = V.filter(e => !b.Ay.isEmojiFiltered({
+            let t = F.filter(e => !b.Ay.isEmojiFiltered({
               emoji: e,
               channel: n,
               intention: f
@@ -285,7 +285,7 @@ let L = [Chunk307731.Am.DISALLOW_EXTERNAL, Chunk307731.Am.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: t
       }
-    }, [F, N, D, R, p, l, $, z, n, f, Y, W, Z, k, U, K, H, B, V, Q, ee, x])
+    }, [V, N, D, R, p, l, $, z, n, f, Y, W, Z, k, U, K, H, B, F, Q, ee, x])
   };
 var M = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

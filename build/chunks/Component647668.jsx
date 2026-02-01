@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 647668, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => F
@@ -45,7 +45,7 @@ function k(e, t, n) {
     children: [(0, r.jsx)(e, {
       className: G.RI,
       color: "currentColor"
-    }), (0, r.jsx)(p.Ay, {
+    }), (0, r.jsx)(h.Ay, {
       guildId: n,
       users: t,
       max: 6
@@ -63,20 +63,20 @@ function U(e) {
     color: "text-muted",
     className: n,
     children: M.intl.string(M.t.fpKdS1)
-  }) : (0, r.jsx)(j.A, {
+  }) : (0, r.jsx)(x.A, {
     muteConfig: t,
     className: n
   })
 }
 
 function V(e) {
-  let t, n, i, a, u, f, m, b, A, y, O, _, j, M, V, B, H, F, K, Y, {
+  let t, n, i, a, u, f, m, b, A, y, O, j, x, M, V, B, H, F, Y, K, {
       guild: W
     } = e,
     z = W.id,
     {
-      voiceUsersToShow: q,
-      stageSpeakers: X,
+      voiceUsersToShow: X,
+      stageSpeakers: q,
       numStageListeners: J,
       streamUsersToShow: Q,
       embeddedActivitiesUsers: Z
@@ -100,46 +100,46 @@ function V(e) {
         return t
       });
       return (0, g.aw)(n, f)
-    }), b = (0, c.yK)([x.A], () => o().flatMap(a, e => {
+    }), b = (0, c.yK)([_.A], () => o().flatMap(a, e => {
       if (e === W.afkChannelId) return [];
-      let t = x.A.getMutableParticipants(e, v.ip.SPEAKER).filter(e => e.type === v.wY.VOICE).map(e => {
+      let t = _.A.getMutableParticipants(e, v.ip.SPEAKER).filter(e => e.type === v.wY.VOICE).map(e => {
         let {
           user: t
         } = e;
         return t
       });
       return (0, g.aw)(t, f)
-    })), A = (0, c.bG)([x.A], () => {
+    })), A = (0, c.bG)([_.A], () => {
       let e = 0;
-      for (let t of a) e += x.A.getParticipantCount(t, v.ip.AUDIENCE);
+      for (let t of a) e += _.A.getParticipantCount(t, v.ip.AUDIENCE);
       return e
     }), y = (0, c.yK)([N.A], () => {
       let e = N.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
       return (0, g.F7)(e, f)
-    }, [f, t]), O = (0, c.yK)([h.Ay], () => {
-      let e = h.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
+    }, [f, t]), O = (0, c.yK)([p.Ay], () => {
+      let e = p.Ay.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
       return (0, g.F7)(e, f)
-    }, [t, f]), _ = (0, c.yK)([R.default], () => {
+    }, [t, f]), j = (0, c.yK)([R.default], () => {
       let e = O.map(e => R.default.getUser(e));
       return (0, g.aw)(e)
-    }, [O]), j = (0, c.yK)([R.default], () => y.map(e => R.default.getUser(e)), [y]), M = m.filter(e => !y.includes(e.id) && !O.includes(e.id)), V = (0, g.aw)(M), B = j.filter(e => null != e && !O.includes(e.id)), H = (0, c.bG)([S.A], () => S.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, I.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), K = l.useMemo(() => (0, I.L)(b, H, "GuildTooltip - stageSpeakers"), [b, H]), Y = l.useMemo(() => (0, I.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
+    }, [O]), x = (0, c.yK)([R.default], () => y.map(e => R.default.getUser(e)), [y]), M = m.filter(e => !y.includes(e.id) && !O.includes(e.id)), V = (0, g.aw)(M), B = x.filter(e => null != e && !O.includes(e.id)), H = (0, c.bG)([S.A], () => S.A.getUserAffinitiesMap(), []), F = l.useMemo(() => (0, I.L)(V, H, "GuildTooltip - nonBlockedUsers"), [V, H]), Y = l.useMemo(() => (0, I.L)(b, H, "GuildTooltip - stageSpeakers"), [b, H]), K = l.useMemo(() => (0, I.L)(B, H, "GuildTooltip - streamUsers"), [B, H]), {
       voiceUsersToShow: F,
-      stageSpeakers: K,
+      stageSpeakers: Y,
       numStageListeners: A,
-      streamUsersToShow: Y,
-      embeddedActivitiesUsers: l.useMemo(() => (0, I.L)(_, H, "GuildTooltip - embeddedActivitiesUsers"), [_, H]),
-      hasActivity: b.length > 0 || M.length > 0 || B.length > 0 || _.length > 0
+      streamUsersToShow: K,
+      embeddedActivitiesUsers: l.useMemo(() => (0, I.L)(j, H, "GuildTooltip - embeddedActivitiesUsers"), [j, H]),
+      hasActivity: b.length > 0 || M.length > 0 || B.length > 0 || j.length > 0
     }),
-    $ = k(d.HKD, q, z),
-    ee = 0 === X.length ? null : (0, r.jsxs)("div", {
+    $ = k(d.HKD, X, z),
+    ee = 0 === q.length ? null : (0, r.jsxs)("div", {
       className: G.nM,
       children: [(0, r.jsx)(d.qux, {
         size: "lg",
         color: "currentColor",
         className: G.RI
-      }), (0, r.jsx)(p.Ay, {
+      }), (0, r.jsx)(h.Ay, {
         guildId: z,
-        users: X,
+        users: q,
         max: 3
       }), (0, r.jsxs)("div", {
         className: G.GZ,
@@ -203,7 +203,7 @@ function H(e) {
     guildJoinRequestStatus: l
   }) : null, a = (0, r.jsx)(V, {
     guild: t
-  }), o = (0, c.bG)([_.A], () => _.A.isViewingRoles(t.id)), u = (0, O.Ig)(t);
+  }), o = (0, c.bG)([j.A], () => j.A.isViewingRoles(t.id)), u = (0, O.Ig)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()(G.nM, G.Dl),

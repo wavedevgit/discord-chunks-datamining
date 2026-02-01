@@ -1,4 +1,4 @@
-/** Chunk was on 59024 **/
+/** Chunk was on 47147 **/
 /** chunk id: 418829, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -21,44 +21,44 @@ function p(e) {
     partialRoot: n,
     target: p,
     defaultTarget: f,
-    onClose: g,
-    sidebarFooter: m,
-    onPanelChange: h,
-    emptyState: j,
-    searchQuery: O,
-    onSearchChange: v
-  } = e, _ = b.A.useField("currentPanelKey"), {
-    node: x,
+    onClose: y,
+    sidebarFooter: g,
+    onPanelChange: m,
+    emptyState: O,
+    searchQuery: h,
+    onSearchChange: j
+  } = e, x = d.A.useField("currentPanelKey"), {
+    node: v,
     visibleDirectory: S,
-    accessibleDirectory: P
-  } = (0, d.Ay)(n, null != O ? O : ""), w = null != p && (null == (t = S.entry(p)) ? true : t.parentPanelKey) != null ? p : f, C = l.useMemo(() => {
+    accessibleDirectory: C
+  } = (0, _.Ay)(n, null != h ? h : ""), P = null != p && (null == (t = S.entry(p)) ? true : t.parentPanelKey) != null ? p : f, w = o.useMemo(() => {
     var e;
-    let t = null == (e = P.entry(null != _ ? _ : w)) ? true : e.parentPanelKey;
-    if (null != t) return P.getPanelOrThrow(t)
-  }, [_, P, w]), {
-    navigateWithValidation: A
+    let t = null == (e = C.entry(null != x ? x : P)) ? true : e.parentPanelKey;
+    if (null != t) return C.getPanelOrThrow(t)
+  }, [x, C, P]), {
+    navigateWithValidation: k
   } = (0, s.L_)();
-  (0, a.Ay)(() => {
+  (0, i.Ay)(() => {
     var e, t, n;
-    let r = S.entry(w).parentPanelKey,
-      l = null == (e = S.entry(w)) ? true : e.parentTabKey,
-      o = null == (t = S.entry(w)) ? true : t.parentCategoryKey,
-      a = null == (n = S.entry(w)) ? true : n.parentAccordionKey;
-    return b.A.setState({
+    let r = S.entry(P).parentPanelKey,
+      o = null == (e = S.entry(P)) ? true : e.parentTabKey,
+      a = null == (t = S.entry(P)) ? true : t.parentCategoryKey,
+      i = null == (n = S.entry(P)) ? true : n.parentAccordionKey;
+    return d.A.setState({
       currentPanelKey: r,
-      currentTabKeys: null != l ? new Map([
-        [r, l]
+      currentTabKeys: null != o ? new Map([
+        [r, o]
       ]) : new Map,
-      currentCategoryKey: o,
+      currentCategoryKey: a,
       disableSidebarCategoryAutoSelect: true,
       navTransition: {
-        targetKey: w,
-        targetAccordionKey: a,
+        targetKey: P,
+        targetAccordionKey: i,
         animateScroll: false
       },
       showNavigationMobile: null == p
-    }), () => b.A.resetState()
-  }), l.useEffect(() => b.A.subscribe(e => ({
+    }), () => d.A.resetState()
+  }), o.useEffect(() => d.A.subscribe(e => ({
     requestedTargetKey: e.requestedTargetKey,
     currentPanelKey: e.currentPanelKey
   }), e => {
@@ -69,56 +69,56 @@ function p(e) {
     if (null == t) return;
     let r = S.entry(t);
     if (null == r) {
-      null == v || v("");
+      null == j || j("");
       return
     }
-    let l = r.parentPanelKey;
-    if (null == l) return void b.A.setState({
+    let o = r.parentPanelKey;
+    if (null == o) return void d.A.setState({
       requestedTargetKey: true
     });
-    let o = b.A.getField("currentTabKeys"),
-      a = null != r.parentTabKey ? new Map(o).set(l, r.parentTabKey) : o,
-      i = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === o.get(l)),
+    let a = d.A.getField("currentTabKeys"),
+      i = null != r.parentTabKey ? new Map(a).set(o, r.parentTabKey) : a,
+      l = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === a.get(o)),
       c = () => {
-        b.A.setState({
+        d.A.setState({
           requestedTargetKey: true,
           currentPanelKey: r.parentPanelKey,
-          currentTabKeys: a,
+          currentTabKeys: i,
           currentCategoryKey: r.parentCategoryKey,
           disableSidebarCategoryAutoSelect: true,
           navTransition: {
             targetKey: t,
             targetAccordionKey: r.parentAccordionKey,
-            animateScroll: i
+            animateScroll: l
           }
         })
       };
-    r.parentPanelKey !== n ? A(() => {
-      c(), null == h || h(l)
+    r.parentPanelKey !== n ? k(() => {
+      c(), null == m || m(o)
     }) : c()
   }, {
-    equalityFn: o.x
-  }), [S, A, h, v]);
-  let N = l.useMemo(() => ({
+    equalityFn: a.x
+  }), [S, k, m, j]);
+  let T = o.useMemo(() => ({
       visibleDirectory: S,
-      accessibleDirectory: P
-    }), [S, P]),
-    E = l.useMemo(() => () => A(g), [A, g]),
-    T = null != _ ? S.get(_) : true;
+      accessibleDirectory: C
+    }), [S, C]),
+    A = o.useMemo(() => () => k(y), [k, y]),
+    N = null != x ? S.get(x) : true;
   return (0, r.jsx)(u.x.Provider, {
-    value: N,
+    value: T,
     children: (0, r.jsxs)("div", {
-      className: y.k,
+      className: b.k,
       children: [(0, r.jsx)(c.L, {
-        root: x,
-        footer: m,
-        onClose: E,
-        emptyState: j,
-        searchQuery: O,
-        onSearchChange: v
-      }), (0, r.jsx)(i.A, {
-        onClose: E,
-        setting: null != T ? T : C
+        root: v,
+        footer: g,
+        onClose: A,
+        emptyState: O,
+        searchQuery: h,
+        onSearchChange: j
+      }), (0, r.jsx)(l.A, {
+        onClose: A,
+        setting: null != N ? N : w
       })]
     })
   })

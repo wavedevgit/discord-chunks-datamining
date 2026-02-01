@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Ay: () => H,
-  Bk: () => V,
+  Bk: () => F,
   ER: () => I,
   Oj: () => W,
   ZA: () => r,
@@ -260,11 +260,11 @@ function G(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   return null == e ? null : e
 }
 
-function V(e) {
+function F(e) {
   var t;
   let n = N(e, c.E.NOTIFICATION_TYPE),
     r = N(e, c.E.JOIN_ATTEMPTS),
@@ -275,7 +275,7 @@ function V(e) {
     l = N(e, c.E.DECISION_ID),
     u = N(e, c.E.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
   return {
-    notificationType: null != (t = F(n)) ? t : true,
+    notificationType: null != (t = V(n)) ? t : true,
     joinAttempts: null != r ? parseInt(r) : true,
     raidDatetime: null != i ? new Date(i) : true,
     dmsSent: null != a ? parseInt(a) : true,

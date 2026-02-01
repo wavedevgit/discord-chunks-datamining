@@ -1,13 +1,13 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 586068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KJ: () => N,
+  KJ: () => y,
   N_: () => P,
   OS: () => T,
   Y9: () => v,
   c3: () => I,
   lg: () => j,
-  nG: () => y,
+  nG: () => N,
   vw: () => R
 }), require("./896048.js"), require("./747238.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -30,7 +30,7 @@ var r, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk649134 = require("./649134.js");
 
-function x(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -76,18 +76,18 @@ class S extends Chunk64700.PureComponent {
       },
       tabIndex: false,
       innerRef: this.setRef,
-      className: C.Ke,
+      className: x.Ke,
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
       onContextMenu: r,
       children: [t, null != n ? (0, i.jsx)("div", {
-        className: C.fN,
+        className: x.fN,
         children: 0 | n
       }) : null]
     })
   }
   constructor(...e) {
-    super(...e), x(this, "node", true), x(this, "handleClick", e => {
+    super(...e), C(this, "node", true), C(this, "handleClick", e => {
       e.preventDefault();
       let {
         onClick: t
@@ -95,14 +95,14 @@ class S extends Chunk64700.PureComponent {
         node: n
       } = this;
       null != n && t(e, n)
-    }), x(this, "handleMouseEnter", e => {
+    }), C(this, "handleMouseEnter", e => {
       let {
         onMouseEnter: t
       } = this.props, {
         node: n
       } = this;
       null != n && t(e, n)
-    }), x(this, "setRef", e => {
+    }), C(this, "setRef", e => {
       this.node = e
     })
   }
@@ -113,12 +113,12 @@ class T extends Chunk64700.Component {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C._C,
+      className: x._C,
       children: (0, i.jsx)(m.A, {
         tabIndex: false,
         guild: e,
         size: m.A.Sizes.MINI,
-        className: C.$f
+        className: x.$f
       })
     })
   }
@@ -127,9 +127,9 @@ class T extends Chunk64700.Component {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.UU,
+      className: x.UU,
       children: (0, i.jsx)("span", {
-        className: C.YW,
+        className: x.YW,
         children: e.name
       })
     })
@@ -140,9 +140,9 @@ class T extends Chunk64700.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: e ? C.XB : C.xr,
+      className: e ? x.XB : x.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: t
       })]
     })
@@ -187,11 +187,11 @@ class I extends(r = Chunk64700.Component) {
     if (null == n) return null;
     let r = null != (e = (0, u.A)(t)) ? e : "";
     return (0, i.jsx)("div", {
-      className: C.zc,
+      className: x.zc,
       role: "img",
       "aria-label": r,
       children: (0, i.jsx)(n, {
-        className: C.Kk,
+        className: x.Kk,
         size: "xs",
         color: "currentColor"
       })
@@ -205,16 +205,16 @@ class I extends(r = Chunk64700.Component) {
       isMentionLowImportance: s
     } = this.props;
     return null != n && n > 0 && (e = (0, i.jsx)(_.A, {
-      className: C.qS,
+      className: x.qS,
       value: n,
       lowImportance: s
     })), null != r && (t = (0, i.jsx)("span", {
-      className: C.N4,
+      className: x.N4,
       children: (0, c.m1)(r, h.default, b.A)
     })), (0, i.jsxs)("div", {
-      className: C.UU,
+      className: x.UU,
       children: [(0, i.jsx)("span", {
-        className: C.YW,
+        className: x.YW,
         children: (0, c.m1)(l, h.default, b.A)
       }), e, this.renderVoiceStates(), t]
     })
@@ -225,7 +225,7 @@ class I extends(r = Chunk64700.Component) {
       channel: t
     } = this.props;
     return null == e ? null : (0, i.jsx)(A.A, {
-      className: C.x7,
+      className: x.x7,
       guildId: t.guild_id,
       users: e.map(e => {
         let {
@@ -246,9 +246,9 @@ class I extends(r = Chunk64700.Component) {
     } = this.props;
     return (0, i.jsxs)("div", {
       "aria-hidden": true,
-      className: e || null != t && t > 0 ? C.XB : C.xr,
+      className: e || null != t && t > 0 ? x.XB : x.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: n
       })]
     })
@@ -287,17 +287,17 @@ class I extends(r = Chunk64700.Component) {
     })
   }
 }
-x(I, "defaultProps", {
+C(I, "defaultProps", {
   unread: false
 });
-class y extends Chunk64700.Component {
+class N extends Chunk64700.Component {
   renderIcon() {
     let {
       channel: e,
       status: t
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.IU,
+      className: x.IU,
       children: (0, i.jsx)(s.euF, {
         src: (0, o.Y)(e),
         size: s._3J.SIZE_20,
@@ -312,12 +312,12 @@ class y extends Chunk64700.Component {
       channel: n
     } = this.props;
     return null != t && t > 0 && (e = (0, i.jsx)(_.A, {
-      className: C.qS,
+      className: x.qS,
       value: t
     })), (0, i.jsxs)("div", {
-      className: C.UU,
+      className: x.UU,
       children: [(0, i.jsx)("span", {
-        className: C.YW,
+        className: x.YW,
         children: (0, c.m1)(n, h.default, b.A)
       }), e]
     })
@@ -328,9 +328,9 @@ class y extends Chunk64700.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != e && e > 0 ? C.XB : C.xr,
+      className: null != e && e > 0 ? x.XB : x.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: t
       })]
     })
@@ -370,7 +370,7 @@ class y extends Chunk64700.Component {
     })
   }
 }
-class N extends Chunk64700.Component {
+class y extends Chunk64700.Component {
   renderIcon() {
     let {
       user: e,
@@ -378,7 +378,7 @@ class N extends Chunk64700.Component {
       isMobile: n
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.zc,
+      className: x.zc,
       children: (0, i.jsx)(s.euF, {
         src: e.getAvatarURL(true, 20),
         "aria-hidden": true,
@@ -403,15 +403,15 @@ class N extends Chunk64700.Component {
       } = this.props,
       r = this.getDisplayNickname();
     return null != n && n > 0 && (e = (0, i.jsx)(_.A, {
-      className: C.qS,
+      className: x.qS,
       value: n
     })), (0, i.jsxs)("div", {
-      className: C.UU,
+      className: x.UU,
       children: [(0, i.jsx)("span", {
-        className: C.YW,
+        className: x.YW,
         children: r
       }), e, (0, i.jsx)("span", {
-        className: C.Xh,
+        className: x.Xh,
         children: E.Ay.getUserTag(t)
       })]
     })
@@ -422,9 +422,9 @@ class N extends Chunk64700.Component {
       mentions: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != t && t > 0 ? C.XB : C.xr,
+      className: null != t && t > 0 ? x.XB : x.xr,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: e
       })]
     })
@@ -473,17 +473,17 @@ class j extends Chunk64700.Component {
       application: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: C.xr,
+      className: x.xr,
       children: [(0, i.jsx)("div", {
-        className: C.zc,
+        className: x.zc,
         children: (0, i.jsx)(p.A, {
           tabIndex: false,
-          className: C.Gt,
+          className: x.Gt,
           game: t,
-          size: C.D0
+          size: x.D0
         })
       }), t.name, (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: e
       })]
     })
@@ -509,11 +509,11 @@ class j extends Chunk64700.Component {
 class v extends Chunk64700.Component {
   render() {
     return (0, i.jsx)("div", {
-      className: C.__invalid_resultDefault,
+      className: x.__invalid_resultDefault,
       children: (0, i.jsx)("div", {
-        className: C.xr,
+        className: x.xr,
         children: (0, i.jsx)("div", {
-          className: C.wx,
+          className: x.wx,
           children: this.props.children
         })
       })
@@ -537,12 +537,12 @@ class P extends Chunk64700.Component {
       size: "xs",
       color: "currentColor"
     })), (0, i.jsxs)("div", {
-      className: C.xr,
+      className: x.xr,
       children: [(0, i.jsx)("div", {
-        className: C.zc,
+        className: x.zc,
         children: t
       }), e, (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: r
       })]
     })
@@ -638,15 +638,15 @@ class R extends Chunk64700.Component {
         })
     }
     return (0, i.jsxs)("div", {
-      className: C.xr,
+      className: x.xr,
       children: [(0, i.jsx)("div", {
-        className: C.zc,
+        className: x.zc,
         children: r
       }), (0, i.jsx)("div", {
-        className: C.UU,
+        className: x.UU,
         children: n
       }), (0, i.jsx)("div", {
-        className: C.Lr,
+        className: x.Lr,
         children: o
       })]
     })

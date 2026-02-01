@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 180020, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -27,19 +27,19 @@ function O(e) {
     user: t,
     guildId: n,
     className: O
-  } = e, C = p.Ay.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: x
+  } = e, x = p.Ay.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: C
   } = (0, o.Ay)(), {
     userDisplayNameStyles: S,
     guildDisplayNameStyles: T,
     pendingDisplayNameStyles: I,
-    pendingErrors: y
-  } = (0, m.B0)(t, n), [N, j] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), v = N === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
+    pendingErrors: N
+  } = (0, m.B0)(t, n), [y, j] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), v = y === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
     j(f.i.TAKE_ACTION), _.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
-      analyticsLocations: x,
+      analyticsLocations: C,
       guildId: n
     })
-  }, [x, j, n]), R = (0, i.useCallback)(() => {
+  }, [C, j, n]), R = (0, i.useCallback)(() => {
     (0, a.dM)(null), _.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
   }, []), D = (0, i.useCallback)(() => {
     (0, u.mZ)(null)
@@ -51,8 +51,8 @@ function O(e) {
       className: E.A
     }) : true,
     className: O,
-    showPremiumIcon: C,
-    errors: y,
+    showPremiumIcon: x,
+    errors: N,
     children: (0, r.jsxs)("div", {
       className: E.N,
       children: [(0, r.jsx)(s.Button, {

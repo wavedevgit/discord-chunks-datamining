@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 173678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => b,
@@ -22,7 +22,7 @@ function m(e, t, n) {
   (0, c.A)({
     skuId: e.skuId,
     isGift: true,
-    giftingOrigin: h.vQ.USER_PROFILE_WISHLIST,
+    giftingOrigin: p.vQ.USER_PROFILE_WISHLIST,
     analyticsLocations: n,
     giftRecipient: t,
     variantsReturnStyle: i.g.VARIANTS_GROUP
@@ -35,21 +35,21 @@ function b(e, t) {
     profileOwner: i,
     analyticsLocations: s,
     onViewWishlist: c,
-    isSingleCard: h = false,
+    isSingleCard: p = false,
     wishlistId: f,
     showTypeTooltip: b = false,
     cardSize: A
-  } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, _ = b && !O, j = O ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.pLPjsb), x = {
-    title: _ ? p.intl.string(p.t.HFhcqh) : j,
-    body: _ ? p.intl.string(p.t.ilhtIa) : true,
-    renderIcon: _ ? a.GM : true,
+  } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, j = b && !O, x = O ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), _ = {
+    title: j ? h.intl.string(h.t.HFhcqh) : x,
+    body: j ? h.intl.string(h.t.ilhtIa) : true,
+    renderIcon: j ? a.GM : true,
     shouldShow: true
   }, v = !y && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
   return (0, r.jsx)(d.A, {
     onCardClick: () => {
       O ? c() : m(e, i, s)
     },
-    tooltipConfig: x,
+    tooltipConfig: _,
     shouldScalePreview: y || !v,
     renderPreview: () => {
       if (y) {
@@ -72,7 +72,7 @@ function b(e, t) {
       })
     },
     moreCount: n,
-    isSingleCard: h,
+    isSingleCard: p,
     wishlistItem: e,
     wishlistId: f,
     cardSize: A
@@ -92,14 +92,14 @@ function A(e, t) {
     isSingleCard: true,
     wishlistId: a,
     index: 0
-  }), d = c ? p.intl.string(p.t.Zr5tjn) : function(e) {
+  }), d = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
     switch (e.collectiblesItem.type) {
       case l.R.AVATAR_DECORATION:
-        return p.intl.string(p.t["7v0T9P"]);
+        return h.intl.string(h.t["7v0T9P"]);
       case l.R.PROFILE_EFFECT:
-        return p.intl.string(p.t.wR5wOo);
+        return h.intl.string(h.t.wR5wOo);
       case l.R.NAMEPLATE:
-        return p.intl.string(p.t.x5CoXR);
+        return h.intl.string(h.t.x5CoXR);
       default:
         return ""
     }
@@ -113,7 +113,7 @@ function A(e, t) {
           m(e, n, i)
         },
         className: f.Hh,
-        "aria-label": p.intl.string(p.t.pLPjsb),
+        "aria-label": h.intl.string(h.t.pLPjsb),
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",

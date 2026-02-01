@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 790368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -22,10 +22,10 @@ function g(e) {
   } = e, n = (0, c.kX)();
   return (0, r.jsx)(i.m, {
     asContainer: true,
-    text: h.intl.string(h.t["lMR96+"]),
+    text: p.intl.string(p.t["lMR96+"]),
     children: (0, r.jsxs)(s.DUT, {
-      "aria-label": "".concat(h.intl.string(h.t["lMR96+"]), ", ").concat(n),
-      className: p.b,
+      "aria-label": "".concat(p.intl.string(p.t["lMR96+"]), ", ").concat(n),
+      className: h.b,
       onClick: () => {
         u.default.track(d.HAw.NOTIFICATION_CENTER_ACTION, {
           action_type: o.e1.FRIEND_REQUESTS_BUTTON_CLICK

@@ -1,7 +1,7 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 641324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => C
 }), require("./65821.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -24,7 +24,7 @@ var Chunk963935 = require("./963935.js"),
   Chunk182884 = require("./182884.jsx"),
   Chunk115617 = require("./115617.jsx");
 
-function C(e) {
+function x(e) {
   let {
     node: t
   } = e;
@@ -97,15 +97,15 @@ function C(e) {
   }
 }
 
-function x(e) {
+function C(e) {
   let {
     node: t
   } = e;
-  return t.type === i.Z6.PANEL ? (0, r.jsx)(C, {
+  return t.type === i.Z6.PANEL ? (0, r.jsx)(x, {
     node: t
   }) : (0, r.jsx)(l.A, {
     node: t,
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(x, {
       node: t
     })
   })

@@ -2,7 +2,7 @@
 /** chunk id: 942236, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => _
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -21,11 +21,11 @@ var Chunk684013 = require("./684013.js"),
   Chunk672396 = require("./672396.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _(e, t, n, _) {
+function m(e, t, n, m) {
   var b;
   let {
-    icon: A,
-    title: O,
+    icon: O,
+    title: _,
     body: v
   } = (0, s.TB)(e, t, n), {
     trackView: E,
@@ -40,23 +40,23 @@ function _(e, t, n, _) {
     channel_type: e.type
   });
   return {
-    icon: A,
-    title: O,
+    icon: O,
+    title: _,
     body: v,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {
         textAlign: "center"
       },
-      children: m.intl.string(m.t["+MJm3w"])
+      children: A.intl.string(A.t["+MJm3w"])
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      _ && (0, a.Ak)(c.cH, c.pD), E()
+      m && (0, a.Ak)(c.cH, c.pD), E()
     },
     onNotificationClick: () => {
-      if (l.default.isOverlayOOPEnabledForPid((0, h.getPID)())) {
-        let n = (0, h.getPID)();
-        d.default.isInstanceLocked() ? (x("unlock"), r.A.setInputLocked(false, n)) : (x("jump"), (0, o.pX)(g.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && p.Ay.focus())
+      if (l.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+        let n = (0, p.getPID)();
+        d.default.isInstanceLocked() ? (x("unlock"), r.A.setInputLocked(false, n)) : (x("jump"), (0, o.pX)(g.BVt.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.Ay.focus())
       } else(0, o.pX)(g.BVt.CHANNEL(e.guild_id, e.id)), x("jump"), d.default.isInstanceLocked() && r.A.setInstanceLocked(false)
     },
     onDismissClick: () => {

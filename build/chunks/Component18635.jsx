@@ -33,7 +33,7 @@ var Chunk627968 = require("./627968.js"),
 function j() {
   return (0, r.jsx)("div", {
     className: T.N3,
-    children: (0, r.jsx)(A.A, {
+    children: (0, r.jsx)(A.Ay, {
       tooltip: N.intl.string(N.t["HfOgA/"])
     })
   })
@@ -58,7 +58,7 @@ let x = function(e) {
       section: P,
       rows: w
     } = (0, o.cf)([O.Ay], () => O.Ay.getState()),
-    L = (0, o.bG)([f.A], () => f.A.getSuggestionCount()),
+    L = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && p.A.setInitialSection(t), 0 === R[S.eA$.FRIEND] && 0 === R[S.eA$.PENDING_INCOMING] && 0 === R[S.eA$.PENDING_OUTGOING] && 0 === R[S.eA$.BLOCKED] && p.A.transitionToSection(S.m3P.ADD_FRIEND)
@@ -129,19 +129,19 @@ let x = function(e) {
       location: N.intl.string(N.t.TdEu5X)
     }), (0, r.jsx)(c.NPJ, {
       theme: A,
-      children: e => (0, r.jsxs)(m.A, {
+      children: e => (0, r.jsxs)(f.A, {
         className: e,
         toolbar: (0, r.jsx)(j, {}),
         role: "navigation",
         "aria-labelledby": M,
         scrollable: true,
-        children: [(0, r.jsx)(m.A.Icon, {
+        children: [(0, r.jsx)(f.A.Icon, {
           icon: c.$yI,
           "aria-hidden": true
-        }), (0, r.jsx)(m.A.Title, {
+        }), (0, r.jsx)(f.A.Title, {
           id: M,
           children: N.intl.string(N.t.TdEu5X)
-        }), (0, r.jsx)(m.A.Divider, {}), (0, r.jsx)(c.VQ0, {
+        }), (0, r.jsx)(f.A.Divider, {}), (0, r.jsx)(c.VQ0, {
           "aria-label": N.intl.string(N.t.TdEu5X),
           selectedItem: P,
           type: "top-pill",

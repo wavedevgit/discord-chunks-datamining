@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  A: () => eV
+  A: () => eF
 }), require("./896048.js"), require("./457529.js"), require("./747238.js"), require("./321073.js"), require("./812715.js"), require("./938796.js");
 var o, Chunk735438 = require("./735438.js"),
   l = require.n(Chunk735438),
@@ -73,8 +73,8 @@ let j = Chunk573648.A.get(Chunk652215.fg2.SPOTIFY),
   k = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
   G = 30 * Chunk927813.A.Millis.SECOND,
-  F = 30 * Chunk927813.A.Millis.SECOND,
-  V = 100,
+  V = 30 * Chunk927813.A.Millis.SECOND,
+  F = 100,
   B = 5 * Chunk927813.A.Millis.MINUTE,
   H = 5 * Chunk927813.A.Millis.SECOND,
   Y = 1.5 * Chunk927813.A.Millis.SECOND,
@@ -339,7 +339,7 @@ function eI(e) {
       });
       null == e ? (eo[t].push(c), f = true) : (0, d.A)(e, c) || (Object.assign(e, c), f = true), eE(t, c.id)
     } else eo[t] = [c], f = true;
-  n ? null == ec || ec.start(F, eP) : (o = null, null == ec || ec.stop());
+  n ? null == ec || ec.start(V, eP) : (o = null, null == ec || ec.stop());
   let _ = b.A.getAccount(t, P.fg2.SPOTIFY);
   if (null == _) return f;
   let h = es[t],
@@ -459,7 +459,7 @@ function eD(e) {
         checkSoundSharing: true,
         checkSoundboardSounds: false
       });
-    t && n && null != r ? (ee.start(F, eP, false), et.stop()) : et.start(V, () => ee.stop(), false)
+    t && n && null != r ? (ee.start(V, eP, false), et.stop()) : et.start(F, () => ee.stop(), false)
   }
   returnfalse
 }
@@ -502,7 +502,7 @@ function ej(e) {
       sourceId: e,
       sound: n
     } = null == t ? true : t.desktopSettings;
-    null != e && E.Ay.getObservedAppNameForWindow(e) === j.name && n ? (ec = new f.IX).start(F, eP) : (null == ec || ec.stop(), ec = null)
+    null != e && E.Ay.getObservedAppNameForWindow(e) === j.name && n ? (ec = new f.IX).start(V, eP) : (null == ec || ec.stop(), ec = null)
   } else null == t && (null == ec || ec.stop(), ec = null)
 }
 
@@ -549,7 +549,7 @@ function ek(e, t, n) {
   if (null != b && true !== b.is_active && (b = M(L({}, b), {
       is_active: true
     })), null != S && [R.M0.PLAYLIST, R.M0.ALBUM].includes(S.type)) {
-    let n = eF.getPlayerState(e);
+    let n = eV.getPlayerState(e);
     y = null != n && null != n.context && n.context.uri === S.uri ? Promise.resolve(n.context) : S.type === R.M0.ALBUM ? Promise.resolve(S) : w.tB.get(e, t, {
       url: S.href
     }).then(e => {
@@ -692,7 +692,7 @@ class eG extends(o = Chunk311907.Ay.Store) {
   }
 }
 D(eG, "displayName", "SpotifyStore");
-let eF = new eG(Chunk73153.h, {
+let eV = new eG(Chunk73153.h, {
     USER_CONNECTIONS_UPDATE: eO,
     CONNECTION_OPEN: eO,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN: ev,
@@ -709,4 +709,4 @@ let eF = new eG(Chunk73153.h, {
     VOICE_STATE_UPDATES: ex,
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ej
   }),
-  eV = eF
+  eF = eV

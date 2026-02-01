@@ -32,7 +32,7 @@ function N() {
   let e = i.useRef(null),
     t = (0, b.A)(),
     n = (0, E.I)(),
-    l = (0, m.r)(),
+    l = (0, f.r)(),
     N = (0, u.w)(),
     T = (0, p.A)("message-requests-spam-list"),
     {
@@ -50,7 +50,7 @@ function N() {
       P(t.map(e => e.channel.id))
     }, [t, P]);
   (0, d.Ay)(() => {
-    f.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+    m.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
     }), g.A.increment({
       name: o.K.SPAM_MESSAGE_REQUEST_VIEW

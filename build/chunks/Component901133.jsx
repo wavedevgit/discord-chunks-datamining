@@ -65,11 +65,11 @@ class I extends Chunk64700.PureComponent {
   }
   renderTitle() {
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(m.A, {
+      children: [(0, r.jsx)(f.A, {
         children: this.isHost() ? _.intl.formatToPlainString(_.t["6UJ7mh"], {
           count: this.props.party.length
         }) : _.intl.string(_.t.RZufbH)
-      }), (0, r.jsx)(f.A, {
+      }), (0, r.jsx)(m.A, {
         children: _.intl.string(_.t["0ZHLIi"])
       })]
     })

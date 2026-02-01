@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 478564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -14,15 +14,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk188275 = require("./188275.js"),
   Chunk806931 = require("./806931.js");
 
-function p(e) {
+function h(e) {
   let {
     location: t,
     channelId: n
   } = e, l = (0, c.kt)({
     location: t
-  }), [p] = (0, s.bG)([o.A], () => null != n ? [o.A.getParticipants(n), o.A.getParticipantsVersion(n)] : [
+  }), [h] = (0, s.bG)([o.A], () => null != n ? [o.A.getParticipants(n), o.A.getParticipantsVersion(n)] : [
     [], 0
-  ], [n], a.hS), g = r.useMemo(() => i().uniq(p.filter(e => (0, h.Xw)(e) || (0, h.Ay)(e)).map(e => e.user.id)), [p]), f = (0, u.gT)({
+  ], [n], a.hS), g = r.useMemo(() => i().uniq(h.filter(e => (0, p.Xw)(e) || (0, p.Ay)(e)).map(e => e.user.id)), [h]), f = (0, u.gT)({
     gameIds: d.sQ,
     userIds: g
   }), m = (0, u.hJ)({

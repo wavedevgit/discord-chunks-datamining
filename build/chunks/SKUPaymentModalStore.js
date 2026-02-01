@@ -138,11 +138,11 @@ function G() {
   A = true
 }
 
-function F() {
+function V() {
   v = null
 }
 
-function V(e) {
+function F(e) {
   T = e.isGift
 }
 
@@ -206,8 +206,8 @@ let Y = new H(Chunk73153.h, {
   SKU_PURCHASE_SUCCESS: j,
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
-  SKU_PURCHASE_CLEAR_ERROR: F,
-  SKU_PURCHASE_UPDATE_IS_GIFT: V,
+  SKU_PURCHASE_CLEAR_ERROR: V,
+  SKU_PURCHASE_UPDATE_IS_GIFT: F,
   OVERLAY_SET_INPUT_LOCKED: B,
   GIFT_CODE_CREATE: k
 })

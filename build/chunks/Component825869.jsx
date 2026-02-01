@@ -20,13 +20,13 @@ function g(e) {
     active: t,
     user: n,
     channel: g
-  } = e, f = (0, c.k)(), m = i.useCallback(() => {
+  } = e, m = (0, c.k)(), f = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
   }, []), A = i.useCallback(() => {
     s.A.closeChannelSidebar(o.fe)
   }, []), _ = i.useCallback(() => {
-    s.A.closeChannelSidebar(o.fe), f && (0, a.iN)(g.id)
-  }, [g.id, f]), {
+    s.A.closeChannelSidebar(o.fe), m && (0, a.iN)(g.id)
+  }, [g.id, m]), {
     acceptMessageRequest: b,
     rejectMessageRequest: E,
     isAcceptLoading: O,
@@ -38,7 +38,7 @@ function g(e) {
     user: n,
     onAcceptSuccess: _,
     onRejectSuccess: A,
-    onError: m
+    onError: f
   }), C = O || y || I || v || S;
   return (0, r.jsxs)("div", {
     className: h.kL,

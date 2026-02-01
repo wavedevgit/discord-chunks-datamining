@@ -2,7 +2,7 @@
 /** chunk id: 129800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => V
+  A: () => F
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -189,7 +189,7 @@ function G(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     context: t,
     commands: n,
@@ -218,7 +218,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     context: n,
@@ -266,13 +266,13 @@ function V(e) {
     l(E.length > 0)
   }, [l, E]), p || 0 !== E.length) ? (0, r.jsxs)("ul", {
     className: L.hQ,
-    children: [(0, r.jsx)(F, {
+    children: [(0, r.jsx)(V, {
       context: n,
       section: _,
       commands: b,
       headerName: P.intl.string(P.t.acSE0h),
       sectionName: o
-    }), (0, r.jsx)(F, {
+    }), (0, r.jsx)(V, {
       context: n,
       section: _,
       commands: p ? j : E,

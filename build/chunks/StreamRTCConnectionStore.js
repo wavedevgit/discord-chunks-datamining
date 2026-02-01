@@ -155,13 +155,13 @@ function G(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t = D[e.streamKey];
   if (null == t) returnfalse;
   t.connect(e.endpoint, e.token)
 }
 
-function V(e) {
+function F(e) {
   let {
     connectionStats: t
   } = e;
@@ -345,10 +345,10 @@ let J = new X(Chunk73153.h, !Chunk430452.A.isSupported() || __OVERLAY__ ? {} : {
   STREAM_START: k,
   STREAM_STOP: U,
   STREAM_CREATE: G,
-  STREAM_SERVER_UPDATE: F,
+  STREAM_SERVER_UPDATE: V,
   STREAM_UPDATE: B,
   STREAM_DELETE: H,
-  MEDIA_ENGINE_CONNECTION_STATS: V,
+  MEDIA_ENGINE_CONNECTION_STATS: F,
   STREAM_LAYOUT_UPDATE: Y,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: q,
   VIDEO_SIZE_UPDATE: Z

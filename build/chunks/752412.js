@@ -23,9 +23,9 @@ function p(e, t, n) {
 }
 let h = new Set,
   g = new Set,
-  f = null;
+  m = null;
 
-function m() {
+function f() {
   for (let e of h) i.A.setDisableLocalVideo(e, u.bb8.MANUAL_ENABLED, d.x.DEFAULT, false);
   g.clear(), h.clear()
 }
@@ -34,7 +34,7 @@ class A extends Chunk272355.A {
     r.h.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), r.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), r.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), r.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.addChangeListener(this.handlePopoutChange)
   }
   _terminate() {
-    r.h.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), r.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), r.h.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), r.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.removeChangeListener(this.handlePopoutChange), m(), f = null
+    r.h.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), r.h.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), r.h.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), r.h.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.removeChangeListener(this.handlePopoutChange), f(), m = null
   }
   handleIncomingVideo(e) {
     let {
@@ -45,10 +45,10 @@ class A extends Chunk272355.A {
     if (n !== d.x.DEFAULT || null == r) return;
     let l = null != a.Ay.getVisibleGame(),
       p = c.A.isVisible(),
-      f = s.A.getWindowVisible(u.MLl.CHANNEL_CALL_POPOUT),
-      m = o.A.isLocalVideoDisabled(t, n),
+      m = s.A.getWindowVisible(u.MLl.CHANNEL_CALL_POPOUT),
+      f = o.A.isLocalVideoDisabled(t, n),
       A = g.has(t);
-    !l || p || f || m || A || (h.add(t), i.A.setDisableLocalVideo(t, u.bb8.DISABLED, n, false))
+    !l || p || m || f || A || (h.add(t), i.A.setDisableLocalVideo(t, u.bb8.DISABLED, n, false))
   }
   handleManualLocalVideoToggle(e) {
     let {
@@ -62,14 +62,14 @@ class A extends Chunk272355.A {
       let {
         visible: t
       } = e;
-      t && m()
+      t && f()
     }), p(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
       } = e;
-      t !== f && (m(), f = t)
+      t !== m && (f(), m = t)
     }), p(this, "handlePopoutChange", () => {
-      s.A.getWindowVisible(u.MLl.CHANNEL_CALL_POPOUT) && m()
+      s.A.getWindowVisible(u.MLl.CHANNEL_CALL_POPOUT) && f()
     })
   }
 }

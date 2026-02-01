@@ -15,7 +15,7 @@ function a() {
   } = n(256415), {
     DEV_PID: a,
     getPID: o
-  } = n(9302), s = i ? o() === a : e.isFocusedPidOutOfProcess(), l = t.isPinned(r.uss.TEXT);
+  } = n(9302), s = i ? o() === a : e.isFocusedPidOutOfProcess() || e.isCurrentPidOutOfProcess(), l = t.isPinned(r.uss.TEXT);
   switch (true) {
     case __OVERLAY__ && t.isInstanceLocked():
       return r.Xmn.OVERLAY_LOCKED_ACTIVATED;
@@ -25,8 +25,6 @@ function a() {
       return r.Xmn.OVERLAY_UNLOCKED;
     case s && e.isFocusedPidInputLocked():
       return r.Xmn.OVERLAY_LOCKED_ACTIVATED;
-    case s && l:
-      return r.Xmn.OVERLAY_UNLOCKED_PINNED;
     case s && !e.isFocusedPidInputLocked():
       return r.Xmn.OVERLAY_UNLOCKED;
     default:

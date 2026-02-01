@@ -1,8 +1,8 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 961291, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pm: () => j,
-  rS: () => _,
+  Pm: () => x,
+  rS: () => j,
   rr: () => A,
   sW: () => y,
   yI: () => O
@@ -61,7 +61,7 @@ let A = {
     }
   },
   O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  _ = e => {
+  j = e => {
     switch (e) {
       case l.hW.GO_LIVE_PUSH:
         return {
@@ -89,13 +89,13 @@ let A = {
       case l.Uo.INCOMING_GAME_FRIEND_REQUESTS:
       case l.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: h, color: r.A.colors.BACKGROUND_MOD_STRONG
+          icon: p, color: r.A.colors.BACKGROUND_MOD_STRONG
         };
       default:
         return null
     }
   },
-  j = e => {
+  x = e => {
     switch (e.item_enum) {
       case l.r_.UPDATE_PROFILE:
         return i.Zp;

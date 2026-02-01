@@ -1,7 +1,7 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 289552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,16 +10,16 @@ var Chunk709710 = require("./709710.js"),
   Chunk93067 = require("./93067.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e) {
+function o(e) {
   let {
     userId: t,
     className: n
-  } = e, s = (0, i.A)(t);
-  if (null == s) return null;
-  let c = s === l.iy.CAMERA_SEND_LOW_FPS ? o.intl.string(o.t["1NyoVt"]) : true;
-  return null != c ? (0, r.jsx)(a.A, {
+  } = e, o = (0, i.A)(t);
+  if (null == o) return null;
+  let c = o === r.iy.CAMERA_SEND_LOW_FPS ? s.intl.string(s.t["1NyoVt"]) : true;
+  return null != c ? (0, l.jsx)(a.A, {
     className: n,
     errorMessage: c,
-    avError: s
+    avError: o
   }) : null
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 506305, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 506305, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   p: () => T
 });
@@ -15,7 +15,7 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.SYNC_PROFILE_THEMES, {
   useTitle: () => d.intl.string(d.t["sSY+mD"]),
   useSubtitle: () => d.intl.format(d.t.u6UjrL, {
     onThemeClick() {
-      (0, u.openUserSettings)(a.X.APPEARANCE_PANEL, {
+      (0, a.openUserSettings)(u.X.APPEARANCE_PANEL, {
         section: o.nc_.APPEARANCE
       })
     }

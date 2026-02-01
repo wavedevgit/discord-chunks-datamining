@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 444529, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -23,19 +23,19 @@ function c(e) {
     buttonProps: {
       message: h,
       channel: p,
-      groupId: g,
-      compact: f = false
+      groupId: f,
+      compact: m = false
     },
-    messageWindow: m
-  } = e, b = h.state === a.cmJ.SENDING, A = h.id === g, y = (0, l.Lt)(h.flags, a.pr7.EPHEMERAL), O = h.state === a.cmJ.SEND_FAILED;
-  return b || y && !O ? null : (0, r.jsx)(s.A, {
+    messageWindow: g
+  } = e, A = h.state === s.cmJ.SENDING, b = h.id === f, _ = (0, r.Lt)(h.flags, s.pr7.EPHEMERAL), y = h.state === s.cmJ.SEND_FAILED;
+  return A || _ && !y ? null : (0, l.jsx)(a.A, {
     className: o.Uo,
     innerClassName: o.Mc,
-    isHeader: !f && A && !(0, i.A)(h),
-    isReply: !f && h.type === a.lAJ.REPLY && null != h.messageReference,
+    isHeader: !m && b && !(0, i.A)(h),
+    isReply: !m && h.type === s.lAJ.REPLY && null != h.messageReference,
     channel: p,
     message: h,
-    messageWindow: m,
+    messageWindow: g,
     setPopout: t,
     showEmojiPicker: n,
     showEmojiBurstPicker: c,

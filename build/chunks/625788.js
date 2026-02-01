@@ -1,9 +1,9 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 625788, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => r
+  A: () => l
 });
-let r = (0, require("./945810.js").mj)({
+let l = (0, require("./945810.js").mj)({
   kind: "user",
   name: "2026-01-improved-dm-send",
   defaultConfig: {

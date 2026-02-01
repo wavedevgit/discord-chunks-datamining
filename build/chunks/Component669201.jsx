@@ -50,7 +50,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,7 +75,7 @@ function V(e, t) {
 }
 
 function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       onSelectSticker: v,
       closePopout: G
     } = e, {
-      location: V
+      location: F
     } = (0, d.p)(), {
       analyticsLocations: q
     } = (0, p.Ay)(f.A.STICKER_PICKER), Z = (null == (a = (0, E.V)()) ? true : a.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, A.P)(e => e.showPremiumUpsell), [ea, eo] = (0, h.RQ)(e => [e.searchQuery, e.isSearchSuggestion], s.x), es = i.useRef("");
@@ -156,12 +156,12 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           case N.op.CREATE_STICKER:
             O.default.track(k.HAw.OPEN_MODAL, {
               type: k.JJy.CREATE_STICKER_MODAL,
-              location: V
+              location: F
             }), (0, u.mMO)(async () => {
               let {
                 default: t
               } = await Promise.all([n.e("29143"), n.e("64800")]).then(n.bind(n, 445002));
-              return n => (0, r.jsx)(t, F({
+              return n => (0, r.jsx)(t, V({
                 guildId: e.guild_id
               }, n))
             });
@@ -169,7 +169,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           case N.op.STICKER:
             null != e.sticker && (0, I.G7)(e.sticker, ep, c) && eO(e)
         }
-      }, [V, ep, c, eO]),
+      }, [F, ep, c, eO]),
       {
         getItemProps: ew,
         getRowProps: eR,
@@ -231,7 +231,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         className: U.p$,
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", B(F({
+        children: [(0, r.jsx)("div", B(V({
           ref: Q,
           className: U.AD,
           id: j.lq
@@ -268,7 +268,7 @@ let H = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.y$y, {
       className: U.Mz
-    }) : (0, r.jsx)(er, B(F({}, e), {
+    }) : (0, r.jsx)(er, B(V({}, e), {
       ref: t
     }))
   })),

@@ -50,7 +50,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -88,7 +88,7 @@ function H(e) {
   let {
     channel: p,
     isLoading: _
-  } = e, [C, G] = i.useState(false), F = (0, s.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), V = null == F ? true : F.applicationId, B = (0, s.bG)([S.Ay], () => null != V && S.Ay.isProxyTicketRefreshing(V), [V]), H = (0, s.bG)([S.Ay], () => S.Ay.getActivityPanelMode()), Y = (0, h.h)(V), W = null == F ? true : F.launchId, K = (0, s.bG)([v.A], () => v.A.getChannelId() === (null == p ? true : p.id)), {
+  } = e, [C, G] = i.useState(false), V = (0, s.bG)([S.Ay], () => S.Ay.getCurrentEmbeddedActivity()), F = null == V ? true : V.applicationId, B = (0, s.bG)([S.Ay], () => null != F && S.Ay.isProxyTicketRefreshing(F), [F]), H = (0, s.bG)([S.Ay], () => S.Ay.getActivityPanelMode()), Y = (0, h.h)(F), W = null == V ? true : V.launchId, K = (0, s.bG)([v.A], () => v.A.getChannelId() === (null == p ? true : p.id)), {
     dockedRect: z,
     isHidden: q
   } = (0, s.cf)([O.A], () => {
@@ -104,9 +104,9 @@ function H(e) {
     selectedParticipant: X,
     participantsOpen: J
   } = (0, s.cf)([g.A], () => ({
-    activityParticipant: null != F && null != p ? g.A.getParticipant(p.id, (0, m.Qt)({
-      applicationId: F.applicationId,
-      instanceId: F.compositeInstanceId
+    activityParticipant: null != V && null != p ? g.A.getParticipant(p.id, (0, m.Qt)({
+      applicationId: V.applicationId,
+      instanceId: V.compositeInstanceId
     })) : null,
     selectedParticipant: null != p ? g.A.getSelectedParticipant(p.id) : null,
     participantsOpen: null != p && g.A.getParticipantsOpen(p.id)
@@ -115,9 +115,9 @@ function H(e) {
   function eo() {
     if (null != p) {
       var e;
-      null != F && u.A.selectParticipant(p.id, (0, m.Qt)({
-        applicationId: F.applicationId,
-        instanceId: F.compositeInstanceId
+      null != V && u.A.selectParticipant(p.id, (0, m.Qt)({
+        applicationId: V.applicationId,
+        instanceId: V.compositeInstanceId
       }));
       let t = null != (e = p.getGuildId()) ? e : x.ME;
       d.A.channelListScrollTo(t, p.id), (0, E.uh)(t, p.id)
@@ -138,9 +138,9 @@ function H(e) {
       isActivityInTextChannel: o,
       users: s
     } = e;
-    return ei && null != F && ((null == Q ? true : Q.type) === M.lp.ACTIVITY || o) ? (null == (t = F.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(P.tM, {
+    return ei && null != V && ((null == Q ? true : Q.type) === M.lp.ACTIVITY || o) ? (null == (t = V.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(P.tM, {
       onJumpToChannel: eo,
-      applicationId: F.applicationId,
+      applicationId: V.applicationId,
       channel: p,
       showControls: !a,
       onMouseDown: n,
@@ -149,7 +149,7 @@ function H(e) {
       onToggleHeight: es,
       isExpanded: C,
       hideExpandedButton: o,
-      embeddedActivity: F
+      embeddedActivity: V
     }) : o ? (0, r.jsx)(P.Mp, {
       idle: a,
       onMouseMove: n,
@@ -159,9 +159,9 @@ function H(e) {
         eo(), (0, I.gk)(L.Gd.PANEL)
       },
       channel: p,
-      applicationId: F.applicationId,
+      applicationId: V.applicationId,
       users: s,
-      embeddedActivity: F
+      embeddedActivity: V
     }) : null == Q ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         onMouseMove: n,
@@ -176,31 +176,31 @@ function H(e) {
         onMouseLeave: i,
         onJumpToChannel: eo,
         channel: p,
-        applicationId: F.applicationId,
+        applicationId: V.applicationId,
         selectedParticipant: Q,
-        embeddedActivity: F
+        embeddedActivity: V
       })]
     }) : null
   }
   if (i.useEffect(() => {
-      if (null != V) {
+      if (null != F) {
         let e = ei ? D.bN.PIP : D.bN.FOCUSED;
         c.h.dispatch({
           type: "ACTIVITY_LAYOUT_MODE_UPDATE",
           layoutMode: e,
-          applicationId: V
+          applicationId: F
         })
       }
-    }, [V, ei]), null == F || null == W || (0, w.A)(null == p ? true : p.id) && null == Q || null == Y) return null;
-  let ec = Array.from(F.userIds).map(e => A.default.getUser(e)).filter(e => null != e),
+    }, [F, ei]), null == V || null == W || (0, w.A)(null == p ? true : p.id) && null == Q || null == Y) return null;
+  let ec = Array.from(V.userIds).map(e => A.default.getUser(e)).filter(e => null != e),
     eu = {
-      instance_id: null != (t = null != (n = F.compositeInstanceId) ? n : F.launchId) ? t : "",
-      location_id: null == (a = F.location) ? true : a.id,
-      launch_id: F.launchId,
-      referrer_id: F.referrerId,
-      custom_id: F.customId
+      instance_id: null != (t = null != (n = V.compositeInstanceId) ? n : V.launchId) ? t : "",
+      location_id: null == (a = V.location) ? true : a.id,
+      launch_id: V.launchId,
+      referrer_id: V.referrerId,
+      custom_id: V.customId
     };
-  return null != F.proxyTicket && (eu.discord_proxy_ticket = F.proxyTicket), (null == p ? true : p.guild_id) != null && (null == p ? true : p.guild_id) !== "" && (eu.guild_id = p.guild_id), (null == p ? true : p.id) != null && (null == p ? true : p.id) !== "" && (eu.channel_id = p.id), (0, r.jsx)(b.Ay, {
+  return null != V.proxyTicket && (eu.discord_proxy_ticket = V.proxyTicket), (null == p ? true : p.guild_id) != null && (null == p ? true : p.guild_id) !== "" && (eu.guild_id = p.guild_id), (null == p ? true : p.id) != null && (null == p ? true : p.id) !== "" && (eu.channel_id = p.id), (0, r.jsx)(b.Ay, {
     timeout: 2e3,
     children: e => {
       var t, n;
@@ -213,7 +213,7 @@ function H(e) {
         className: o()(j.zr, {
           [j.NW]: ei,
           [U.a8]: ei,
-          [k.N7]: i && !(null == (t = F.config) ? true : t.useInteractivePIP),
+          [k.N7]: i && !(null == (t = V.config) ? true : t.useInteractivePIP),
           [j.p0]: ei && !C,
           [j.ST]: ei && C,
           [j.R]: q,
@@ -236,13 +236,13 @@ function H(e) {
           })
         }) : (0, r.jsx)(R.o, {
           allowPopups: (0, N.b)(Y),
-          referrerPolicy: D.$J.has(F.applicationId) ? "no-referrer" : "origin",
-          url: F.url,
+          referrerPolicy: D.$J.has(V.applicationId) ? "no-referrer" : "origin",
+          url: V.url,
           queryParams: eu,
           className: o()(j.pU, {
             [j.p0]: ei && !C,
             [j.ST]: ei && C,
-            [j.v8]: ei && !(null == (n = F.config) ? true : n.useInteractivePIP)
+            [j.v8]: ei && !(null == (n = V.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !ei && K
         }), !ei && null != p && (0, r.jsx)(P.ll, {
@@ -257,7 +257,7 @@ function H(e) {
 let Y = e => {
   let {
     channel: t
-  } = e, n = V(e, ["channel"]), i = S.Ay.getCurrentEmbeddedActivity();
+  } = e, n = F(e, ["channel"]), i = S.Ay.getCurrentEmbeddedActivity();
   (0, C.A)({
     connectedEmbeddedActivity: i
   });
@@ -266,7 +266,7 @@ let Y = e => {
   } = (0, _.Ay)(p.A.ACTIVITY_PIP), o = null == i;
   return (0, r.jsx)(_.f5, {
     value: a,
-    children: (0, r.jsx)(H, F({
+    children: (0, r.jsx)(H, V({
       channel: t,
       isLoading: o
     }, n))

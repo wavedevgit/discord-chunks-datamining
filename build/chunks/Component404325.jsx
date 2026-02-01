@@ -154,14 +154,14 @@ function U(e) {
     lastActiveFillColor: M,
     activeFillColor: U,
     lastInactiveFillColor: G,
-    inactiveFillColor: F
-  } = j(l, d), V = {
+    inactiveFillColor: V
+  } = j(l, d), F = {
     currentTime: a,
     duration: s,
     played: l
-  }, B = i.useRef(V);
+  }, B = i.useRef(F);
   i.useEffect(() => {
-    B.current = V
+    B.current = F
   }), i.useEffect(() => {
     let {
       currentTime: e,
@@ -214,7 +214,7 @@ function U(e) {
         constrainMin: true
       });
       i.fill();
-      let [f, p] = k(G, F, n, C.current);
+      let [f, p] = k(G, V, n, C.current);
       o = o || p;
       let [_, h] = k(M, U, n, C.current);
       o = o || h;
@@ -235,7 +235,7 @@ function U(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, a, s, l, d, R, P, M, U, G, F]);
+  }, [g, N, O, E, a, s, l, d, R, P, M, U, G, V]);
   let [, H] = (0, u.A)({
     ref: g,
     onDrag: f,

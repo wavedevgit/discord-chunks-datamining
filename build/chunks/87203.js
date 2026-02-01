@@ -24,7 +24,7 @@ function A() {
   let n = p.A.isVideoEnabled(),
     A = Object.values(p.A.getVideoDevices())[0],
     _ = false === (null == (e = null == A ? true : A.disabled) || e),
-    b = p.A.supportsInApp(m.O5.VIDEO) && p.A.supportsInApp(m.O5.DESKTOP_CAPTURE),
+    b = p.A.supportsInApp(f.O5.VIDEO) && p.A.supportsInApp(f.O5.DESKTOP_CAPTURE),
     E = d.A.getChannel(h.A.getChannelId()),
     O = null == (t = g.default.getCurrentUser()) ? true : t.id;
   if (null == E || null == O) return;
@@ -44,6 +44,6 @@ function A() {
     }
     return n ? r.A.setVideoEnabled(false) : !n && _ ? (0, u.A)(() => {
       r.A.setVideoEnabled(true)
-    }, f.BRT.APP, true) : _ || (0, c.A)(), false
+    }, m.BRT.APP, true) : _ || (0, c.A)(), false
   }
 }

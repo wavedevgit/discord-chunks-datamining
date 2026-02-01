@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 124064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => h
@@ -32,11 +32,11 @@ function h(e) {
     placeholder: h,
     currentBio: E,
     disabled: O = false
-  } = e, [C, x] = i.useState(null != u ? u : E), [S, T] = i.useState((0, a.x7)(C)), I = i.useRef(E), y = i.useRef(false);
+  } = e, [x, C] = i.useState(null != u ? u : E), [S, T] = i.useState((0, a.x7)(x)), I = i.useRef(E), N = i.useRef(false);
   return i.useEffect(() => {
     if (I.current !== E) {
       let e = (0, a.x7)(E);
-      x(E), T(e)
+      C(E), T(e)
     }
     I.current = E
   }, [E]), (0, r.jsxs)(_.A, {
@@ -52,22 +52,22 @@ function h(e) {
       innerClassName: g.Z,
       maxCharacterCount: p.NA2,
       onChange: function(e, t, n) {
-        t !== C && (x(t), T(n), c(t))
+        t !== x && (C(t), T(n), c(t))
       },
       placeholder: h,
       channel: f,
-      textValue: C,
+      textValue: x,
       richValue: S,
       emojiPickerCloseOnModalOuterClick: true,
       parentModalKey: d.USER_SETTINGS_MODAL_KEY,
       type: s.oU.PROFILE_BIO_INPUT,
       onBlur: () => {
-        y.current = false
+        N.current = false
       },
       onFocus: () => {
-        y.current = true
+        N.current = true
       },
-      focused: y.current,
+      focused: N.current,
       onSubmit: function() {
         return new Promise(e => {
           e({

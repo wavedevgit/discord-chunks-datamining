@@ -1,5 +1,5 @@
-/** Chunk was on 13492 **/
-/** chunk id: 72007, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 71447 **/
+/** chunk id: 72007, original params: e,t,n (module,exports,require) **/
 module.exports = {
   kL: "container__2af41",
   M4: "activityCard__2af41",

@@ -294,7 +294,7 @@ function G(e) {
   return "jpg" === c && (d.quality = "lossless"), "webp" === c && i && Q(r) && (d.animated = true), t += "?".concat(o.stringify(d))
 }
 
-function F(e) {
+function V(e) {
   let t, {
     id: n,
     homeHeader: r
@@ -305,7 +305,7 @@ function F(e) {
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.Rsh.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
 
-function V(e) {
+function F(e) {
   let t, {
     id: n,
     splash: r,
@@ -318,7 +318,7 @@ function V(e) {
 }
 
 function B(e) {
-  return ee(V(e))
+  return ee(F(e))
 }
 
 function H(e) {
@@ -511,10 +511,10 @@ let et = {
   getGuildIconURL: H,
   getGuildSplashURL: k,
   getGuildSplashSource: U,
-  getGuildDiscoverySplashURL: V,
+  getGuildDiscoverySplashURL: F,
   getGuildDiscoverySplashSource: B,
   getGuildBannerURL: G,
-  getGuildHomeHeaderURL: F,
+  getGuildHomeHeaderURL: V,
   getResourceChannelIconURL: function e(e) {
     let {
       channelId: t,
@@ -558,7 +558,7 @@ let et = {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return ee(G(e, t))
   },
-  getGuildHomeHeaderSource: e => ee(F(e)),
+  getGuildHomeHeaderSource: e => ee(V(e)),
   getChannelIconSource: e => ee(Z(e)),
   getApplicationIconSource: e => ee(W(e)),
   makeSource: ee,

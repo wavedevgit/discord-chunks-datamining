@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 146528, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => k
@@ -147,7 +147,7 @@ let M = e => {
     } = h, J = n.soft_deleted || null == a || V;
     return (0, r.jsxs)("div", {
       className: w.kL,
-      children: [(0, r.jsx)(y.A, {
+      children: [(0, r.jsx)(N.A, {
         onClick: g,
         className: w.N1,
         children: e => {
@@ -218,7 +218,7 @@ let M = e => {
         id: k,
         children: [(0, r.jsx)("div", {
           className: w.yF
-        }), (0, r.jsx)(N.A, {
+        }), (0, r.jsx)(y.A, {
           groupListingId: l.id,
           subscription: t,
           className: w.kE
@@ -256,7 +256,7 @@ let M = e => {
             })
           },
           onChangePlanClick: () => {
-            null != a && ((0, O.pX)(P.BVt.CHANNEL(a.id, R.VV.ROLE_SUBSCRIPTIONS)), (0, x.default)(), _.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, true, L.intl.string(L.t.DvbaM4), () => (0, S.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {
+            null != a && ((0, O.pX)(P.BVt.CHANNEL(a.id, R.VV.ROLE_SUBSCRIPTIONS)), (0, C.default)(), _.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, true, L.intl.string(L.t.DvbaM4), () => (0, S.openUserSettings)(x.X.SUBSCRIPTIONS_PANEL, {
               section: P.nc_.SUBSCRIPTIONS,
               subsection: D.nR
             })))

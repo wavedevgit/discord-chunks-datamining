@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 722432, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -17,19 +17,19 @@ function d(e) {
     scrollerRef: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, l, r, i = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
       return i
     }
     if (i = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
+        var n, l, r = {},
           i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+        return r
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+      for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
     return i
   }(e, ["scrollerRef"]), d = (0, i.A)(() => {
     let e = t.current;
@@ -45,34 +45,34 @@ function d(e) {
         callback: () => requestAnimationFrame(t)
       })
     })
-  }), p = r.useCallback(e => {
-    var r, l, i;
+  }), p = l.useCallback(e => {
+    var l, r, i;
     if (!n.keyboardModeEnabled) return;
-    let s = null == (l = t.current) || null == (r = l.getScrollerNode()) ? true : r.ownerDocument,
-      a = null == s ? true : s.querySelector(e);
-    null != a && (null == (i = t.current) || i.scrollIntoViewNode({
-      node: a,
+    let a = null == (r = t.current) || null == (l = r.getScrollerNode()) ? true : l.ownerDocument,
+      s = null == a ? true : a.querySelector(e);
+    null != s && (null == (i = t.current) || i.scrollIntoViewNode({
+      node: s,
       padding: 4 * c.mZ,
-      callback: () => null == a ? true : a.focus()
+      callback: () => null == s ? true : s.focus()
     }))
-  }, [n.keyboardModeEnabled, t]), g = r.useCallback(() => {
-    n.hasMoreAfter || a._.dispatchToLastSubscribed(u.jej.TEXTAREA_FOCUS)
-  }, [n.hasMoreAfter]), f = (0, l.Ay)({
+  }, [n.keyboardModeEnabled, t]), f = l.useCallback(() => {
+    n.hasMoreAfter || s._.dispatchToLastSubscribed(u.jej.TEXTAREA_FOCUS)
+  }, [n.hasMoreAfter]), m = (0, r.Ay)({
     id: o.D,
     preserveFocusPosition: false,
     setFocus: p,
     isEnabled: n.keyboardModeEnabled && !n.isEditing,
     scrollToStart: h,
     scrollToEnd: d,
-    onNavigateNextAtEnd: g
-  }), m = r.useCallback(e => {
+    onNavigateNextAtEnd: f
+  }), g = l.useCallback(e => {
     let {
       atEnd: t = false
     } = e;
-    t ? f.focusLastVisibleItem() : f.focusFirstVisibleItem()
-  }, [f]);
-  return (0, s.Vo)({
+    t ? m.focusLastVisibleItem() : m.focusFirstVisibleItem()
+  }, [m]);
+  return (0, a.Vo)({
     event: u.jej.FOCUS_MESSAGES,
-    handler: m
-  }), f
+    handler: g
+  }), m
 }

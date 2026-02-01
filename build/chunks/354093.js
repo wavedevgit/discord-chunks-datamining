@@ -1,13 +1,13 @@
-/** Chunk was on 4670 **/
-/** chunk id: 354093, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 354093, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  L: () => a
+  L: () => u
 });
 var Chunk419954 = require("./419954.js"),
   Chunk780964 = require("./780964.js"),
   Chunk299116 = require("./299116.jsx"),
   Chunk985018 = require("./985018.jsx");
-let a = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_CHANGE_PASSWORD_SETTING, {
+let u = (0, Chunk419954.E2)(Chunk780964.X.ACCOUNT_CHANGE_PASSWORD_SETTING, {
   useSearchTerms: () => [r.intl.string(r.t["FRep5/"])],
   Component: Chunk299116.A
 })

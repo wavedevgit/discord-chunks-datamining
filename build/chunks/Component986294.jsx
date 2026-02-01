@@ -1,7 +1,7 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 986294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k
+  A: () => P
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -64,13 +64,13 @@ let I = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(P, {
+    return (0, a.jsx)(k, {
       type: t
     })
   }
 }];
 
-function P(e) {
+function k(e) {
   var t, n;
   let {
     type: l
@@ -91,12 +91,12 @@ function P(e) {
   })
 }
 
-function k() {
+function P() {
   var e, t, n;
   let r, i = (0, u.bG)([C.A], () => C.A.getFeed(E.X1.GLOBAL_FEED)),
     s = (0, u.bG)([C.A], () => C.A.getDebugImpressionCappingDisabled()),
     c = (0, u.bG)([A.A], () => A.A.getDebugFastImpressionCappingEnabled()),
-    P = (n = null == i || null == (t = i.entries) ? true : t.map(e => e.content), Object.keys(r = o().groupBy(n, e => e.content_type)).map(e => {
+    k = (n = null == i || null == (t = i.entries) ? true : t.map(e => e.content), Object.keys(r = o().groupBy(n, e => e.content_type)).map(e => {
       let t = r[e];
       return {
         key: "".concat(e),
@@ -104,7 +104,7 @@ function k() {
         entries: t
       }
     })),
-    k = (0, u.bG)([C.A], () => {
+    P = (0, u.bG)([C.A], () => {
       var e;
       return (null == (e = C.A.getFeedState(E.X1.GLOBAL_FEED)) ? true : e.loading) === true
     }),
@@ -136,9 +136,9 @@ function k() {
         children: [(0, a.jsx)(p.Text, {
           variant: "text-md/semibold",
           children: "Inventory"
-        }), P.length > 0 && (0, a.jsx)(f.A, {
+        }), k.length > 0 && (0, a.jsx)(f.A, {
           columns: I,
-          data: P
+          data: k
         }), (0, a.jsx)(T.A, {}), (0, a.jsx)(p.Button, {
           variant: "primary",
           text: "Refresh Now",
@@ -150,7 +150,7 @@ function k() {
               feature: d.M.INBOX
             })
           },
-          loading: k
+          loading: P
         })]
       }), (0, a.jsxs)(p.BJc, {
         gap: 8,

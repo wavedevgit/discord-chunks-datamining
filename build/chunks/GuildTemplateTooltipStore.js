@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 225437, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var r, Chunk311907 = require("./311907.js"),
   Chunk506774 = require("./506774.js"),
@@ -63,7 +63,7 @@ class g extends(r = Chunk311907.Ay.Store) {
   }
 }
 s(g, "displayName", "GuildTemplateTooltipStore");
-let f = new g(Chunk73153.h, {
+let m = new g(Chunk73153.h, {
   GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
     let {
       guildTemplate: t

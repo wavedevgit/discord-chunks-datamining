@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 576967, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => o
@@ -14,18 +14,18 @@ function o(e) {
   let {
     appliedTags: t,
     setAppliedTags: n,
-    wrap: l
+    wrap: r
   } = e, o = null != n ? e => {
     t.has(e) && (t.delete(e), n(new Set(t)))
   } : true;
-  return (0, r.jsx)("div", {
-    className: i()(a._, {
-      [a.L]: l
+  return (0, l.jsx)("div", {
+    className: i()(s._, {
+      [s.L]: r
     }),
-    children: Array.from(t).map(e => (0, r.jsx)(s.A, {
+    children: Array.from(t).map(e => (0, l.jsx)(a.A, {
       tag: e,
       onRemove: o,
-      size: null == o ? s.A.Sizes.SMALL : s.A.Sizes.MEDIUM
+      size: null == o ? a.A.Sizes.SMALL : a.A.Sizes.MEDIUM
     }, e.id))
   })
 }

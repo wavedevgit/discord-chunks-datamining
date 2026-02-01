@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 21117, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 21117, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   b: () => T
 });
@@ -29,11 +29,11 @@ let T = (0, Chunk419954.Qx)(Chunk780964.X.HIGH_DYNAMIC_RANGE, {
   usePredicate: function() {
     return (0, r.i)("HDRDynamicRangeSetting")
   },
-  setValue: function(e) {
-    (0, s.FU)(e)
+  setValue: function(t) {
+    (0, s.FU)(t)
   },
   useValue: function() {
-    return (0, l.bG)([u.Ay], () => u.Ay.hdrDynamicRange)
+    return (0, l.bG)([a.Ay], () => a.Ay.hdrDynamicRange)
   },
   useSearchTerms: () => ["HDR", d.intl.string(d.t["O/Gjvn"])]
 })

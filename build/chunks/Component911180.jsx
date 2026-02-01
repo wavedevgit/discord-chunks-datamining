@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 911180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -58,12 +58,12 @@ function b(e) {
     disabled: h,
     label: E,
     colorPickerMiddle: O,
-    colorPickerFooter: C,
-    showEyeDropper: x
-  } = e, S = i.useRef(null), T = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), I = c.A.colors.BACKGROUND_MOD_MUTED.css, y = (0, _.sN)(l), N = (0, o.Hl)(l), j = N === T ? I : N, v = y ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(O), R = (0, u.A)(C), [D, L] = i.useState((0, a.A)());
+    colorPickerFooter: x,
+    showEyeDropper: C
+  } = e, S = i.useRef(null), T = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), I = c.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), y = (0, o.Hl)(l), j = y === T ? I : y, v = N ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(O), R = (0, u.A)(x), [D, L] = i.useState((0, a.A)());
   return i.useEffect(() => {
-    (P !== O || R !== C) && L((0, a.A)())
-  }, [C, O, R, P]), (0, r.jsx)(d.YNO, {
+    (P !== O || R !== x) && L((0, a.A)())
+  }, [x, O, R, P]), (0, r.jsx)(d.YNO, {
     targetElementRef: S,
     positionKey: D,
     renderPopout: e => (0, r.jsx)(d.VNw, f(A({}, e), {
@@ -71,8 +71,8 @@ function b(e) {
       onChange: t,
       suggestedColors: b,
       middle: O,
-      footer: C,
-      showEyeDropper: x
+      footer: x,
+      showEyeDropper: C
     })),
     onRequestClose: n,
     children: e => {
@@ -104,7 +104,7 @@ function b(e) {
           tabIndex: h ? false : 0,
           onClick: h ? p.tEg : t,
           style: {
-            backgroundColor: N,
+            backgroundColor: y,
             borderColor: j
           },
           className: g.nf,

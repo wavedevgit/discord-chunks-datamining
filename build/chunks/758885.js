@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 758885, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 758885, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   y: () => T
 });
@@ -13,5 +13,5 @@ var Chunk419954 = require("./419954.js"),
   Chunk566761 = require("./566761.js");
 let T = (0, Chunk419954.zZ)(Chunk780964.X.LOGGING, {
   useTitle: () => "Logging",
-  buildLayout: () => [r.I, o.J, d.u, s.q, u.K, a.g]
+  buildLayout: () => [r.I, o.J, d.u, s.q, a.K, u.g]
 })

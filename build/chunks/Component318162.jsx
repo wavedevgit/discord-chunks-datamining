@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 318162, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -51,14 +51,14 @@ function E(e) {
     onHide: E
   } = e, C = (0, f.Ay)(t.id), S = (0, o.Ay)(), I = (0, s.bG)([d.A], () => d.A.isBlocked(t.id)), {
     analyticsLocations: N
-  } = (0, u.Ay)(I ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), T = (0, p.pb)({
+  } = (0, u.Ay)(I ? c.A.BLOCKED_PROFILE_PANEL : c.A.IGNORED_PROFILE_PANEL), T = (0, h.pb)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), P = l.useRef(null);
   return (0, r.jsx)(u.f5, {
     value: N,
-    children: (0, r.jsx)(p.of, {
+    children: (0, r.jsx)(h.of, {
       value: T,
       fetchStartedAt: null == C ? true : C.fetchStartedAt,
       fetchEndedAt: null == C ? true : C.fetchEndedAt,
@@ -71,25 +71,25 @@ function E(e) {
         themeOverride: S,
         children: (0, r.jsx)(i.d_W, {
           children: (0, r.jsxs)("div", {
-            className: j.kL,
+            className: x.kL,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: x,
-              className: j.VH,
+              src: _,
+              className: x.VH,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: j.rf,
+              className: x.rf,
               children: [(0, r.jsxs)("div", {
-                className: j.N1,
+                className: x.N1,
                 children: [(0, r.jsx)(m.A, {
                   user: t
                 }), (0, r.jsx)(a.Heading, {
                   variant: "heading-lg/bold",
-                  children: _.intl.string(_.t.b33pLD)
+                  children: j.intl.string(j.t.b33pLD)
                 }), (0, r.jsx)(a.Text, {
                   variant: "text-sm/medium",
-                  children: _.intl.format(I ? _.t["8F+WNz"] : _.t["/cZp5s"], {
-                    username: h.Ay.getName(n.guild_id, n.id, t)
+                  children: j.intl.format(I ? j.t["8F+WNz"] : j.t["/cZp5s"], {
+                    username: p.Ay.getName(n.guild_id, n.id, t)
                   })
                 })]
               }), (0, r.jsxs)(a.BJc, {

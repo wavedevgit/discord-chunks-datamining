@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 755130, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 755130, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -10,11 +10,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx");
 let o = (0, Chunk419954.E2)(Chunk780964.X.VOICE_MICROPHONE_INPUT_SELECT, {
-  useSearchTerms: () => [u.intl.string(u.t.hHMYbb), u.intl.string(u.t.nuFtHH)],
+  useSearchTerms: () => [a.intl.string(a.t.hHMYbb), a.intl.string(a.t.nuFtHH)],
   Component: function() {
     return (0, n.jsx)(l.U, {
-      label: u.intl.string(u.t.UTM8VP),
-      deviceType: a.oh.AUDIO_INPUT,
+      label: a.intl.string(a.t.UTM8VP),
+      deviceType: u.oh.AUDIO_INPUT,
       location: "UserSettingsVoiceVideo",
       hideDeviceTypeIcon: true
     })

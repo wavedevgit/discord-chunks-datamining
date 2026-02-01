@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 95655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => A
@@ -21,7 +21,7 @@ let b = e => {
     let {
       channel: t
     } = e;
-    return (0, h.bG)({
+    return (0, p.bG)({
       channelId: t.id
     }) ? (0, r.jsx)(i.m, {
       text: f.intl.string(f.t.QyZ4Td),
@@ -35,7 +35,7 @@ let b = e => {
   A = Chunk64700.memo(function(e) {
     let {
       channel: t
-    } = e, l = t.id, h = (0, c.Ay)(t);
+    } = e, l = t.id, p = (0, c.Ay)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.m, {
         asContainer: true,
@@ -88,7 +88,7 @@ let b = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            p.default.track(g.HAw.GDM_EDIT_INTERACTED, {
+            h.default.track(g.HAw.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: o.A.HEADER_BAR
@@ -104,7 +104,7 @@ let b = e => {
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: null != h ? h : ""
+            children: null != p ? p : ""
           }), (0, r.jsx)(s.R2l, {
             className: m.IZ,
             size: "xs",

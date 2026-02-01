@@ -1,17 +1,17 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 614651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $p: () => q,
+  $p: () => Z,
   Ay: () => et,
-  IE: () => z,
-  Ys: () => X,
-  ac: () => Z,
+  IE: () => K,
+  Ys: () => Q,
+  ac: () => J,
   y2: () => $
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  r = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk311907 = require("./311907.js"),
   Chunk873298 = require("./873298.js"),
   Chunk582754 = require("./582754.js"),
@@ -48,7 +48,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk944255 = require("./944255.js"),
   Chunk473169 = require("./473169.js");
 
-function B(e, t, n) {
+function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,155 +57,155 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      B(e, t, n[t])
+    }))), r.forEach(function(t) {
+      H(e, t, n[t])
     })
   }
   return e
 }
 
-function F(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let z = {
+let K = {
     COZY: "cozy",
     COMPACT: "compact"
   },
-  K = (0, Chunk915089.Ld)(),
   W = (0, Chunk915089.Ld)(),
-  J = "1337",
-  Q = e => {
+  z = (0, Chunk915089.Ld)(),
+  X = "1337",
+  q = e => {
     let t = 0;
-    return [(0, O.rh)(F(Y({}, (0, E.Ay)({
-      channelId: J,
-      content: M.intl.string(M.t.oZxkEq)
+    return [(0, O.rh)(Y(F({}, (0, j.Ay)({
+      channelId: X,
+      content: U.intl.string(U.t.oZxkEq)
     })), {
-      state: w.cmJ.SENT,
+      state: G.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(Y({}, (0, E.Ay)({
-      channelId: J,
-      content: (0, c.Mw)(e) ? M.intl.string(M.t["WGb/v7"]) : M.intl.string(M.t["62m4mz"])
+    })), (0, O.rh)(Y(F({}, (0, j.Ay)({
+      channelId: X,
+      content: (0, c.Mw)(e) ? U.intl.string(U.t["WGb/v7"]) : U.intl.string(U.t["62m4mz"])
     })), {
-      state: w.cmJ.SENT,
+      state: G.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(Y({}, (0, E.Ay)({
-      channelId: J,
-      content: M.intl.string(M.t.a0Byo5)
+    })), (0, O.rh)(Y(F({}, (0, j.Ay)({
+      channelId: X,
+      content: U.intl.string(U.t.a0Byo5)
     })), {
-      state: w.cmJ.SENT,
+      state: G.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(Y({}, (0, E.Ay)({
-      channelId: J,
-      content: M.intl.string(M.t.bmwEWJ)
+    })), (0, O.rh)(Y(F({}, (0, j.Ay)({
+      channelId: X,
+      content: U.intl.string(U.t.bmwEWJ)
     })), {
-      state: w.cmJ.SENT,
+      state: G.cmJ.SENT,
       id: "".concat(t++)
-    })), (0, O.rh)(F(Y({}, (0, E.Ay)({
-      channelId: J,
-      content: M.intl.string(M.t["hK9QW/"])
+    })), (0, O.rh)(Y(F({}, (0, j.Ay)({
+      channelId: X,
+      content: U.intl.string(U.t["hK9QW/"])
     })), {
-      state: w.cmJ.SENT,
+      state: G.cmJ.SENT,
       id: "".concat(t)
     }))]
   },
-  Z = () => (0, i.jsxs)("div", {
-    className: U.cF,
-    children: [(0, i.jsxs)("div", {
-      className: U.ZT,
-      children: [(0, i.jsxs)(d.Text, {
+  J = () => (0, r.jsxs)("div", {
+    className: V.cF,
+    children: [(0, r.jsxs)("div", {
+      className: V.ZT,
+      children: [(0, r.jsxs)(u.Text, {
         variant: "text-md/medium",
-        children: [" ", M.intl.string(M.t["0EzVst"])]
-      }), (0, i.jsx)(d.Text, {
+        children: [" ", U.intl.string(U.t["0EzVst"])]
+      }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: M.intl.string(M.t.PV3dGX)
+        children: U.intl.string(U.t.PV3dGX)
       })]
-    }), (0, i.jsx)(R.Q, {})]
+    }), (0, r.jsx)(w.Q, {})]
   }),
-  X = () => M.intl.format(M.t.Jae48E, {
+  Q = () => U.intl.format(U.t.Jae48E, {
     onClick: () => {
-      (0, D.openUserSettings)(P.X.SYNC_FORCED_COLORS, {
-        section: w.nc_.ACCESSIBILITY
+      (0, L.openUserSettings)(P.X.SYNC_FORCED_COLORS, {
+        section: G.nc_.ACCESSIBILITY
       })
     }
   }),
-  q = () => M.intl.format(M.t["5LEQdc"], {
+  Z = () => U.intl.format(U.t["5LEQdc"], {
     onAccessibilityClick: () => {
-      (0, D.openUserSettings)(P.X.ACCESSIBILITY_PANEL, {
-        section: w.nc_.ACCESSIBILITY
+      (0, L.openUserSettings)(P.X.ACCESSIBILITY_PANEL, {
+        section: G.nc_.ACCESSIBILITY
       })
     }
   }),
   $ = () => {
-    let e = I.hH.useSetting(),
-      t = I.hD.useSetting(),
-      n = I.rs.useSetting(),
+    let e = T.hH.useSetting(),
+      t = T.hD.useSetting(),
+      n = T.rs.useSetting(),
       {
-        theme: s,
+        theme: i,
         messageGroupSpacing: o
-      } = (0, a.cf)([_.A, p.A], () => ({
-        theme: _.A.theme,
-        messageGroupSpacing: p.A.messageGroupSpacing
+      } = (0, a.cf)([I.A, f.A], () => ({
+        theme: I.A.theme,
+        messageGroupSpacing: f.A.messageGroupSpacing
       })),
-      [u] = l.useState(() => Q(w.NJ8.DARK)),
-      [h] = l.useState(() => Q(w.NJ8.LIGHT)),
-      g = t && n,
-      x = (0, c.Mw)(s) ? u : h;
-    return (0, i.jsx)(d.M1G, {
-      children: (0, i.jsx)(d.ZpM, {
-        className: r()(U.VH, H.C2, e ? U.Me : true, "group-spacing-".concat(null != o ? o : e ? V.y5 : V.ES)),
+      [d] = l.useState(() => q(G.NJ8.DARK)),
+      [p] = l.useState(() => q(G.NJ8.LIGHT)),
+      h = t && n,
+      g = (0, c.Mw)(i) ? d : p;
+    return (0, r.jsx)(u.M1G, {
+      children: (0, r.jsx)(u.ZpM, {
+        className: s()(V.VH, B.C2, e ? V.Me : true, "group-spacing-".concat(null != o ? o : e ? k.y5 : k.ES)),
         outline: true,
         "aria-hidden": true,
-        children: x.map((t, n) => (0, i.jsx)(f.A, {
-          author: (0, S.p_)(t),
+        children: g.map((t, n) => (0, r.jsx)(_.A, {
+          author: (0, x.p_)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
-          className: 0 === n ? U.Ck : true,
-          hideSimpleEmbedContent: g
+          className: 0 === n ? V.Ck : true,
+          hideSimpleEmbedContent: h
         }, t.id))
       })
     })
   };
 class ee extends Chunk64700.Component {
   renderZoomSlider() {
-    return T.isPlatformEmbedded ? (0, i.jsx)(d.Apm, {
-      label: M.intl.string(M.t.i19n5L),
-      description: M.intl.string(M.t.ip0uSf),
-      helperText: M.intl.format(M.t.OMkSUo, {
-        modKey: g.A.modKey
+    return S.isPlatformEmbedded ? (0, r.jsx)(u.Apm, {
+      label: U.intl.string(U.t.i19n5L),
+      description: U.intl.string(U.t.ip0uSf),
+      helperText: U.intl.format(U.t.OMkSUo, {
+        modKey: h.A.modKey
       }),
       initialValue: this.props.zoom,
-      defaultValue: w.hH7.ZOOM_DEFAULT,
-      markers: w.hH7.ZOOM_SCALES,
+      defaultValue: G.hH7.ZOOM_DEFAULT,
+      markers: G.hH7.ZOOM_SCALES,
       stickToMarkers: true,
       onValueChange: this.handleZoomChange,
       onValueRender: this.handleSliderRender,
-      "aria-labelledby": K
+      "aria-labelledby": W
     }) : null
   }
   renderFontScaleSlider() {
-    return (0, i.jsx)(d.Apm, {
-      label: M.intl.string(M.t.qPOqoK),
-      description: M.intl.string(M.t.XrtbPo),
+    return (0, r.jsx)(u.Apm, {
+      label: U.intl.string(U.t.qPOqoK),
+      description: U.intl.string(U.t.XrtbPo),
       initialValue: this.props.fontSize,
-      defaultValue: w.hH7.FONT_SIZE_DEFAULT,
-      markers: w.hH7.FONT_SIZES,
+      defaultValue: G.hH7.FONT_SIZE_DEFAULT,
+      markers: G.hH7.FONT_SIZES,
       stickToMarkers: true,
       onValueChange: this.handleFontSizeChange,
       onValueRender: this.handleSliderRenderPX,
@@ -218,37 +218,37 @@ class ee extends Chunk64700.Component {
       messageDisplayCompact: e,
       messageGroupSpacing: t
     } = this.props;
-    return (0, i.jsx)(d.Apm, {
-      label: M.intl.string(M.t.Q6lKkg),
-      description: M.intl.string(M.t.p7eUrb),
+    return (0, r.jsx)(u.Apm, {
+      label: U.intl.string(U.t.Q6lKkg),
+      description: U.intl.string(U.t.p7eUrb),
       initialValue: t,
-      defaultValue: e ? V.y5 : V.ES,
-      markers: V.qh,
+      defaultValue: e ? k.y5 : k.ES,
+      markers: k.qh,
       stickToMarkers: true,
       onValueChange: this.handleMessageSpacingChange,
       onValueRender: this.handleSliderRenderPX,
       onMarkerRender: this.handleSliderRenderPX,
       getAriaValueText: this.handleSliderValueText,
-      "aria-labelledby": W
+      "aria-labelledby": z
     })
   }
   renderPreview() {
-    return (0, i.jsx)($, {})
+    return (0, r.jsx)($, {})
   }
   renderTheme() {
     let {
       useForcedColors: e
     } = this.props;
-    return e ? (0, i.jsx)(d.nVY, {
-      label: M.intl.string(M.t.Ksh3ik),
-      children: (0, i.jsx)(d.po8, {
-        messageType: d.YCn.INFO,
-        children: (0, m.D)() ? (0, i.jsx)(X, {}) : M.intl.string(M.t.AUMSZP)
+    return e ? (0, r.jsx)(u.nVY, {
+      label: U.intl.string(U.t.Ksh3ik),
+      children: (0, r.jsx)(u.po8, {
+        messageType: u.YCn.INFO,
+        children: (0, m.D)() ? (0, r.jsx)(Q, {}) : U.intl.string(U.t.AUMSZP)
       })
-    }) : (0, i.jsx)(d.nVY, {
-      label: M.intl.string(M.t.Ksh3ik),
-      children: (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(Z, {}), (0, i.jsx)(R.I, {})]
+    }) : (0, r.jsx)(u.nVY, {
+      label: U.intl.string(U.t.Ksh3ik),
+      children: (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(J, {}), (0, r.jsx)(w.I, {})]
       })
     })
   }
@@ -259,12 +259,12 @@ class ee extends Chunk64700.Component {
     return "".concat(e.toFixed(0), "px")
   }
   handleSliderValueText(e) {
-    return M.intl.formatToPlainString(M.t["0hpvOV"], {
+    return U.intl.formatToPlainString(U.t["0hpvOV"], {
       value: e
     })
   }
   handleFontSizeChange(e) {
-    (0, x.XS)(e)
+    (0, g.XS)(e)
   }
   handleMessageSpacingChange(e) {
     switch (e) {
@@ -273,140 +273,140 @@ class ee extends Chunk64700.Component {
       case 8:
       case 16:
       case 24:
-        (0, x.AC)(e)
+        (0, g.AC)(e)
     }
   }
   handleZoomChange(e) {
-    (0, x.Qp)(e)
+    (0, g.Qp)(e)
   }
   render() {
     let {
       density: e
-    } = this.props, t = (0, i.jsxs)(C.x, {
-      setting: k.H.APPEARANCE_THEME,
+    } = this.props, t = (0, r.jsxs)(v.x, {
+      setting: M.H.APPEARANCE_THEME,
       children: [this.renderPreview(), this.renderTheme()]
-    }), n = (0, i.jsx)(C.x, {
-      setting: k.H.APPEARANCE_ICON,
-      children: (0, i.jsx)(L.y, {})
+    }), n = (0, r.jsx)(v.x, {
+      setting: M.H.APPEARANCE_ICON,
+      children: (0, r.jsx)(R.y, {})
     }), l = [{
-      name: M.intl.string(M.t["7iegX4"]),
+      name: U.intl.string(U.t["7iegX4"]),
       value: o.NS.COMPACT
     }, {
-      name: M.intl.string(M.t.bBvAEH),
+      name: U.intl.string(U.t.bBvAEH),
       value: o.NS.DEFAULT
     }, {
-      name: M.intl.string(M.t["4cuYHx"]),
+      name: U.intl.string(U.t["4cuYHx"]),
       value: o.NS.COZY
-    }], s = (0, i.jsxs)(C.x, {
-      setting: k.H.APPEARANCE_LIST_SPACING,
-      children: [(0, i.jsx)(d.z6M, {
-        label: M.intl.string(M.t["C/5V0A"]),
-        description: M.intl.string(M.t.QLZhYk),
+    }], i = (0, r.jsxs)(v.x, {
+      setting: M.H.APPEARANCE_LIST_SPACING,
+      children: [(0, r.jsx)(u.z6M, {
+        label: U.intl.string(U.t["C/5V0A"]),
+        description: U.intl.string(U.t.QLZhYk),
         options: l,
         onChange: e => this.handleUIDensityChange({
           value: e
         }),
         value: e
-      }), (0, i.jsx)(d.cGx, {
-        className: U.yF
+      }), (0, r.jsx)(u.cGx, {
+        className: V.yF
       })]
-    }), r = (0, i.jsxs)(C.x, {
-      setting: k.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
-      children: [(0, i.jsxs)(d.nVY, {
-        label: M.intl.string(M.t["2ed/sA"]),
-        description: M.intl.string(M.t.u9N6Qh),
-        children: [(0, i.jsx)(d.z6M, {
-          label: M.intl.string(M.t.nKRoPv),
-          description: M.intl.string(M.t.QntEEG),
+    }), s = (0, r.jsxs)(v.x, {
+      setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
+      children: [(0, r.jsxs)(u.nVY, {
+        label: U.intl.string(U.t["2ed/sA"]),
+        description: U.intl.string(U.t.u9N6Qh),
+        children: [(0, r.jsx)(u.z6M, {
+          label: U.intl.string(U.t.nKRoPv),
+          description: U.intl.string(U.t.QntEEG),
           options: [{
-            name: M.intl.string(M.t.Jqj4cZ),
-            value: z.COZY
+            name: U.intl.string(U.t.Jqj4cZ),
+            value: K.COZY
           }, {
-            name: M.intl.string(M.t["1JNcPS"]),
-            value: z.COMPACT
+            name: U.intl.string(U.t["1JNcPS"]),
+            value: K.COMPACT
           }],
           onChange: e => this.handleMessageDisplayModeChange({
             value: e
           }),
-          value: this.props.messageDisplayCompact ? z.COMPACT : z.COZY
-        }), this.props.messageDisplayCompact && (0, i.jsx)(d.dOG, {
-          label: M.intl.string(M.t["//vhWi"]),
+          value: this.props.messageDisplayCompact ? K.COMPACT : K.COZY
+        }), this.props.messageDisplayCompact && (0, r.jsx)(u.dOG, {
+          label: U.intl.string(U.t["//vhWi"]),
           checked: !this.props.displayCompactAvatars,
           onChange: e => this.handleDisplayCompactAvatarsChanged(!e)
         }), this.renderMessageGroupSpacingSlider()]
-      }), (0, i.jsx)(d.cGx, {
-        className: U.yF
+      }), (0, r.jsx)(u.cGx, {
+        className: V.yF
       })]
-    }), a = (0, i.jsxs)(C.x, {
-      setting: k.H.APPEARANCE_SCALING_SPACING,
-      children: [(0, i.jsxs)(d.nVY, {
-        label: M.intl.string(M.t["0Yh+ZX"]),
+    }), a = (0, r.jsxs)(v.x, {
+      setting: M.H.APPEARANCE_SCALING_SPACING,
+      children: [(0, r.jsxs)(u.nVY, {
+        label: U.intl.string(U.t["0Yh+ZX"]),
         children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
-      }), (0, i.jsx)(d.cGx, {
-        className: U.yF
+      }), (0, r.jsx)(u.cGx, {
+        className: V.yF
       })]
-    }), c = (0, i.jsx)(d.Text, {
+    }), c = (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
-      className: U.fK,
-      children: (0, i.jsx)(q, {})
+      className: V.fK,
+      children: (0, r.jsx)(Z, {})
     });
-    return (0, i.jsxs)(G.A, {
-      title: M.intl.string(M.t["iHH+ky"]),
-      children: [t, n, s, r, a, c]
+    return (0, r.jsxs)(D.A, {
+      title: U.intl.string(U.t["iHH+ky"]),
+      children: [t, n, i, s, a, c]
     })
   }
   constructor(...e) {
-    super(...e), B(this, "darkMessages", Q(w.NJ8.DARK)), B(this, "lightMessages", Q(w.NJ8.LIGHT)), B(this, "handleDisplayCompactAvatarsChanged", e => {
-      u.Ay.updatedUnsyncedSettings({
+    super(...e), H(this, "darkMessages", q(G.NJ8.DARK)), H(this, "lightMessages", q(G.NJ8.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
+      d.Ay.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
-    }), B(this, "handleDesktopRefreshEnabledChanged", e => {
-      u.Ay.updatedUnsyncedSettings({
+    }), H(this, "handleDesktopRefreshEnabledChanged", e => {
+      d.Ay.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
-    }), B(this, "handleMessageDisplayModeChange", e => {
+    }), H(this, "handleMessageDisplayModeChange", e => {
       let {
         value: t
       } = e;
-      I.hH.updateSetting(t === z.COMPACT), (0, x.AC)()
-    }), B(this, "handleUIDensityChange", e => {
+      T.hH.updateSetting(t === K.COMPACT), (0, g.AC)()
+    }), H(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== o.NS.UNSET_UI_DENSITY && I.Xi.updateSetting(t)
+      t !== o.NS.UNSET_UI_DENSITY && T.Xi.updateSetting(t)
     })
   }
 }
 
 function et() {
-  let e = I.hH.useSetting(),
-    t = I.hD.useSetting(),
-    n = I.rs.useSetting(),
-    l = I.eh.useSetting(),
-    s = I.Xi.useSetting();
-  (0, h.Ay)(() => {
-    (0, b.v)()
+  let e = T.hH.useSetting(),
+    t = T.hD.useSetting(),
+    n = T.rs.useSetting(),
+    l = T.eh.useSetting(),
+    i = T.Xi.useSetting();
+  (0, p.Ay)(() => {
+    (0, A.v)()
   });
-  let r = (0, v.qo)(),
-    o = (0, a.cf)([_.A, N.Ay, p.A, y.default, A.A], () => {
+  let s = (0, E.qo)(),
+    o = (0, a.cf)([I.A, N.Ay, f.A, C.default, b.A], () => {
       var e, t;
       return {
-        theme: _.A.theme,
-        useForcedColors: p.A.useForcedColors,
+        theme: I.A.theme,
+        useForcedColors: f.A.useForcedColors,
         useSystemTheme: N.Ay.useSystemTheme,
-        fontSize: p.A.fontSize,
-        zoom: p.A.zoom,
-        messageGroupSpacing: p.A.messageGroupSpacing,
+        fontSize: f.A.fontSize,
+        zoom: f.A.zoom,
+        messageGroupSpacing: f.A.messageGroupSpacing,
         displayCompactAvatars: N.Ay.displayCompactAvatars,
-        isStaff: null != (e = null == (t = y.default.getCurrentUser()) ? true : t.isStaff) && e,
-        gradientPreset: A.A.gradientPreset
+        isStaff: null != (e = null == (t = C.default.getCurrentUser()) ? true : t.isStaff) && e,
+        gradientPreset: b.A.gradientPreset
       }
     });
-  return (0, i.jsx)(ee, Y({
+  return (0, r.jsx)(ee, F({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,
     clientTheme: l,
-    density: s,
-    darkSidebar: r
+    density: i,
+    darkSidebar: s
   }, o))
 }

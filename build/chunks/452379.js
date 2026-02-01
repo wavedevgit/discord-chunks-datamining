@@ -14,7 +14,7 @@ var Chunk735438 = require("./735438.js"),
   Chunk355097 = require("./355097.js");
 let p = {
   init() {
-    o.A[d.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[d.oD.FRECENCY_AND_FAVORITES_SETTINGS] = a.A, l.h.subscribe("CONNECTION_OPEN", h), l.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", g), l.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", f), l.h.subscribe("APP_STATE_UPDATE", m)
+    o.A[d.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[d.oD.FRECENCY_AND_FAVORITES_SETTINGS] = a.A, l.h.subscribe("CONNECTION_OPEN", h), l.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", g), l.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), l.h.subscribe("APP_STATE_UPDATE", f)
   }
 };
 
@@ -42,14 +42,14 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     settingsType: t
   } = e;
   c.Df[t].loadIfNecessary()
 }
 
-function m(e) {
+function f(e) {
   let {
     state: t
   } = e;

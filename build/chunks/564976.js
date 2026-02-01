@@ -66,11 +66,11 @@ let _ = {
       };
     if (L) {
       if (m) {
-        var F, V = "y" === P ? r.Mn : r.kb,
+        var V, F = "y" === P ? r.Mn : r.kb,
           B = "y" === P ? r.sQ : r.pG,
           H = "y" === P ? "height" : "width",
           Y = L[P],
-          W = Y + C[V],
+          W = Y + C[F],
           K = Y - C[B],
           z = I ? -M[H] / 2 : 0,
           q = w === r.ni ? x[H] : M[H],
@@ -81,14 +81,14 @@ let _ = {
             height: 0
           },
           J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : (0, f.A)(),
-          $ = J[V],
+          $ = J[F],
           ee = J[B],
           et = (0, s.u)(0, x[H], X[H]),
           en = R ? x[H] / 2 - z - et - $ - k.mainAxis : q - et - $ - k.mainAxis,
           er = R ? -x[H] / 2 + z + et + ee + k.mainAxis : Z + et + ee + k.mainAxis,
           ei = t.elements.arrow && (0, c.A)(t.elements.arrow),
           ea = ei ? "y" === P ? ei.clientTop || 0 : ei.clientLeft || 0 : 0,
-          eo = null != (F = null == U ? true : U[P]) ? F : 0,
+          eo = null != (V = null == U ? true : U[P]) ? V : 0,
           es = Y + en - eo - ea,
           el = Y + er - eo,
           ec = (0, s.u)(I ? (0, p.jk)(W, es) : W, Y, I ? (0, p.T9)(K, el) : K);

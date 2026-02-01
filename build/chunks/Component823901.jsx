@@ -1,8 +1,8 @@
 /** Chunk was on 71447 **/
 /** chunk id: 823901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => b,
-  y: () => v
+  H: () => O,
+  y: () => E
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,31 +23,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk753070 = require("./753070.js"),
   Chunk985018 = require("./985018.jsx");
 
-function v(e) {
+function E(e) {
   let {
     pid: t,
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
     onBeforeShowModal: a,
-    onOneClickGoLive: o,
-    appContext: u
-  } = e, d = (0, l.bG)([g.A], () => g.A.getVoiceChannelId()), A = (0, l.bG)([p.A], () => p.A.getChannel(d), [d]), O = (0, l.bG)([y.default], () => y.default.getCurrentUser()), E = (0, l.bG)([f.A], () => (0, c.A)(f.A)), v = (0, l.bG)([h.A, m.A], () => null != A && (0, s.vz)(A, h.A, m.A));
+    onOneClickGoLive: s,
+    appContext: c
+  } = e, d = (0, l.bG)([m.A], () => m.A.getVoiceChannelId()), A = (0, l.bG)([h.A], () => h.A.getChannel(d), [d]), v = (0, l.bG)([y.default], () => y.default.getCurrentUser()), b = (0, l.bG)([f.A], () => (0, u.A)(f.A)), E = (0, l.bG)([p.A, g.A], () => null != A && (0, o.vz)(A, p.A, g.A));
   return r.useCallback(async () => {
-    await S({
+    await x({
       pid: t,
       voiceChannelId: d,
-      user: O,
-      canGoLive: E,
-      canStream: v,
+      user: v,
+      canGoLive: b,
+      canStream: E,
       analyticsLocation: n,
       allowOneClickGoLive: i,
       onBeforeShowModal: a,
-      onOneClickGoLive: o,
-      appContext: u
+      onOneClickGoLive: s,
+      appContext: c
     })
-  }, [t, d, O, E, v, n, i, a, o, u])
+  }, [t, d, v, b, E, n, i, a, s, c])
 }
-async function b(e) {
+async function O(e) {
   let {
     pid: t,
     analyticsLocation: n,
@@ -55,12 +55,12 @@ async function b(e) {
     onBeforeShowModal: r,
     onOneClickGoLive: l,
     appContext: a
-  } = e, o = g.A.getVoiceChannelId(), u = p.A.getChannel(o), d = y.default.getCurrentUser(), A = null != u && (0, s.vz)(u, h.A, m.A), O = (0, c.A)(f.A);
-  await S({
+  } = e, s = m.A.getVoiceChannelId(), c = h.A.getChannel(s), d = y.default.getCurrentUser(), A = null != c && (0, o.vz)(c, p.A, g.A), v = (0, u.A)(f.A);
+  await x({
     pid: t,
-    voiceChannelId: o,
+    voiceChannelId: s,
     user: d,
-    canGoLive: O,
+    canGoLive: v,
     canStream: A,
     analyticsLocation: n,
     allowOneClickGoLive: i,
@@ -69,30 +69,30 @@ async function b(e) {
     appContext: a
   })
 }
-async function S(e) {
+async function x(e) {
   let {
     pid: t,
     voiceChannelId: r,
     user: l,
-    canGoLive: s,
-    canStream: c,
-    allowOneClickGoLive: p,
-    onBeforeShowModal: h,
+    canGoLive: o,
+    canStream: u,
+    allowOneClickGoLive: h,
+    onBeforeShowModal: p,
     onOneClickGoLive: f,
-    appContext: m
+    appContext: g
   } = e;
-  if (s && c) {
-    if (p && null !== r) {
+  if (o && u) {
+    if (h && null !== r) {
       let e = d.A.getState().preset;
-      if (e === O.jQ.PRESET_DOCUMENTS) {
+      if (e === v.jQ.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: t
-        } = (0, o.eO)({
+        } = (0, s.eO)({
           location: "overlay _goLive"
         });
-        e = t ? O.jQ.PRESET_AUTO : O.jQ.PRESET_VIDEO
+        e = t ? v.jQ.PRESET_AUTO : v.jQ.PRESET_VIDEO
       }
-      let [n] = await (0, u.A)(t, {
+      let [n] = await (0, c.A)(t, {
         preset: e
       });
       if (n) {
@@ -100,10 +100,10 @@ async function S(e) {
         return
       }
     }
-    if (null == l) return void(0, a.showToast)((0, a.createToast)(E.intl.string(E.t.OKnWyb), a.ToastType.FAILURE, {
+    if (null == l) return void(0, a.showToast)((0, a.createToast)(b.intl.string(b.t.OKnWyb), a.ToastType.FAILURE, {
       appContext: A.BRT.OVERLAY
     }));
-    null == h || h(), (0, a.mMO)(async () => {
+    null == p || p(), (0, a.mMO)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
@@ -141,7 +141,7 @@ async function S(e) {
         }), r))
       }
     }, {
-      contextKey: null != m ? (0, a.TId)(m) : true
+      contextKey: null != g ? (0, a.TId)(g) : true
     })
   }
 }

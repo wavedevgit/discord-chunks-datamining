@@ -1,4 +1,4 @@
-/** Chunk was on 31748 **/
+/** Chunk was on 61344 **/
 /** chunk id: 167155, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => u
@@ -15,21 +15,21 @@ let u = function(e) {
   let {
     className: t,
     hasVideo: n,
-    text: l,
+    text: r,
     hasConnectedChannel: u,
     textVariant: d = "text-md/medium"
-  } = e, f = n ? s.intl.string(s.t.IlHdW8) : s.intl.string(s.t.WsOisp);
-  return (0, r.jsx)(o.A, {
+  } = e, h = n ? o.intl.string(o.t.IlHdW8) : o.intl.string(o.t.WsOisp);
+  return (0, l.jsx)(s.A, {
     className: i()(t, c.H),
-    hoverText: u ? (0, r.jsx)(a.Text, {
+    hoverText: u ? (0, l.jsx)(a.Text, {
       variant: d,
       color: "currentColor",
-      children: f
+      children: h
     }) : null,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, l.jsx)(a.Text, {
       variant: d,
       color: "currentColor",
-      children: l
+      children: r
     })
   })
 }

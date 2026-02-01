@@ -1,1 +1,1 @@
-{"id":"440976","type":"store","data":{"name":"TransientKeyStore","functions":[{"name":"getUsers","args":[]},{"name":"isKeyVerified","args":["e","t"]}],"events":["CONNECTION_OPEN","SECURE_FRAMES_TRANSIENT_KEY_CREATE","SECURE_FRAMES_TRANSIENT_KEY_DELETE"]},"fromModule":{"id":"31748"}}
+{"id":"440976","type":"store","data":{"name":"TransientKeyStore","functions":[{"name":"getUsers","args":[]},{"name":"isKeyVerified","args":["e","t"]}],"events":["CONNECTION_OPEN","SECURE_FRAMES_TRANSIENT_KEY_CREATE","SECURE_FRAMES_TRANSIENT_KEY_DELETE"]},"fromModule":{"id":"61344"}}

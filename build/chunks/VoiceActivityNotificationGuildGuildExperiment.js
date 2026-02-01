@@ -1,7 +1,7 @@
-/** Chunk was on 49107 **/
-/** chunk id: 718194, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 21420 **/
+/** chunk id: 718194, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  YK: () => s
+  YK: () => a
 });
 var Chunk600975 = require("./600975.js"),
   Chunk652215 = require("./652215.js");
@@ -26,7 +26,7 @@ let l = (0, Chunk600975.C)({
       }
     }]
   }),
-  a = (0, Chunk600975.C)({
+  s = (0, Chunk600975.C)({
     kind: "guild",
     id: "2023-11_voice_activity_notification_guild",
     label: "General Voice Channel Notifications for Guild",
@@ -42,23 +42,23 @@ let l = (0, Chunk600975.C)({
     }]
   });
 
-function s(t) {
-  var e;
+function a(t) {
+  var i;
   let {
     voiceChannelActivityNotifsEnabled: n
-  } = a.useExperiment({
+  } = s.useExperiment({
     location: "useVoiceActivityNotificationSettingsExperiment",
-    guildId: null != (e = null == t ? true : t.getGuildId()) ? e : r.dJq
+    guildId: null != (i = null == t ? true : t.getGuildId()) ? i : r.dJq
   }, {
     disable: (null == t ? true : t.type) !== r.rbe.GUILD_VOICE,
     autoTrackExposure: false
   }), {
-    enabled: i
+    enabled: e
   } = l.useExperiment({
     location: "useVoiceActivityNotificationSettingsExperiment"
   }, {
     disable: (null == t ? true : t.type) !== r.rbe.GUILD_VOICE || !n,
     autoTrackExposure: true
   });
-  return (null == t ? true : t.type) === r.rbe.GUILD_VOICE && n && i
+  return (null == t ? true : t.type) === r.rbe.GUILD_VOICE && n && e
 }

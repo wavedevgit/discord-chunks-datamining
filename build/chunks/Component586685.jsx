@@ -1,9 +1,9 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 586685, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => A,
-  SB: () => p,
-  VD: () => x,
+  Ay: () => b,
+  SB: () => f,
+  VD: () => g,
   b0: () => m
 });
 var Chunk627968 = require("./627968.js");
@@ -19,20 +19,20 @@ var Chunk820284 = require("./820284.jsx"),
   Chunk531525 = require("./531525.js"),
   Chunk652215 = require("./652215.js");
 
-function x() {
-  return (0, i.jsx)(l.A, {
-    section: g.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
-    children: (0, i.jsx)(d.A, {})
+function g() {
+  return (0, r.jsx)(l.A, {
+    section: h.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
+    children: (0, r.jsx)(u.A, {})
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     inOldSettings: t = false
   } = e;
-  return (0, i.jsx)(l.A, {
-    section: g.JJy.QUESTS,
-    children: (0, i.jsx)(o.A, {
+  return (0, r.jsx)(l.A, {
+    section: h.JJy.QUESTS,
+    children: (0, r.jsx)(o.A, {
       inOldSettings: t
     })
   })
@@ -42,36 +42,36 @@ function m(e) {
   let {
     inOldSettings: t = false
   } = e;
-  return (0, i.jsx)(l.A, {
-    section: g.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
-    children: (0, i.jsx)(u.A, {
+  return (0, r.jsx)(l.A, {
+    section: h.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
+    children: (0, r.jsx)(d.A, {
       inOldSettings: t
     })
   })
 }
 
-function A() {
+function b() {
   let {
     analyticsLocations: e
-  } = (0, r.Ay)(s.A.USER_SETTINGS_GIFT_INVENTORY);
-  return (0, i.jsxs)(r.f5, {
+  } = (0, s.Ay)(i.A.USER_SETTINGS_GIFT_INVENTORY);
+  return (0, r.jsxs)(s.f5, {
     value: e,
-    children: [(0, i.jsx)(c.x, {
-      setting: h.H.GIFT_CODE_REDEMPTION,
-      children: (0, i.jsx)(x, {})
-    }), (0, i.jsx)(c.x, {
-      setting: h.H.GIFT_INVENTORY_QUESTS,
-      children: (0, i.jsx)(p, {
+    children: [(0, r.jsx)(c.x, {
+      setting: p.H.GIFT_CODE_REDEMPTION,
+      children: (0, r.jsx)(g, {})
+    }), (0, r.jsx)(c.x, {
+      setting: p.H.GIFT_INVENTORY_QUESTS,
+      children: (0, r.jsx)(f, {
         inOldSettings: true
       })
-    }), (0, i.jsx)(c.x, {
-      setting: h.H.GIFT_INVENTORY_LIST,
-      children: (0, i.jsx)(m, {
+    }), (0, r.jsx)(c.x, {
+      setting: p.H.GIFT_INVENTORY_LIST,
+      children: (0, r.jsx)(m, {
         inOldSettings: true
       })
-    }), (0, i.jsx)(c.x, {
-      setting: h.H.GIFT_BLOCKED_PAYMENTS,
-      children: (0, i.jsx)(a.uK, {})
+    }), (0, r.jsx)(c.x, {
+      setting: p.H.GIFT_BLOCKED_PAYMENTS,
+      children: (0, r.jsx)(a.uK, {})
     })]
   })
 }

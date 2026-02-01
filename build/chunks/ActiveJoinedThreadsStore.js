@@ -161,18 +161,18 @@ function G(e) {
     channels: t
   } = e;
   for (let e of t)
-    if ((0, l.qR)(e) !== V(e.guild_id, e.parent_id)) return void P();
+    if ((0, l.qR)(e) !== F(e.guild_id, e.parent_id)) return void P();
   returnfalse
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t
   } = e, n = u.A.getChannel(t);
   return !!(null != n && n.isThread()) && k(n.guild_id, n.parent_id, n.id)
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == t) returnfalse;
   let n = A[e],
     r = null == n ? null : n[t];
@@ -446,7 +446,7 @@ let ed = new eu(Chunk73153.h, {
   CHANNEL_SELECT: Z,
   PASSIVE_UPDATE_V2: K,
   WINDOW_FOCUS: W,
-  UPDATE_CHANNEL_DIMENSIONS: F,
+  UPDATE_CHANNEL_DIMENSIONS: V,
   TRY_ACK: W,
   BULK_ACK: W
 })

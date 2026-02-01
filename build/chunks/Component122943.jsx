@@ -29,12 +29,12 @@ let y = Chunk64700.memo(function(e) {
     loaded: n,
     error: l,
     message: y
-  } = (0, m.I)(t), {
+  } = (0, f.I)(t), {
     isBlocked: I,
     isIgnored: v
-  } = (0, s.cf)([f.A], () => ({
-    isBlocked: null != y && f.A.isBlockedForMessage(y),
-    isIgnored: null != y && f.A.isIgnoredForMessage(y)
+  } = (0, s.cf)([m.A], () => ({
+    isBlocked: null != y && m.A.isBlockedForMessage(y),
+    isIgnored: null != y && m.A.isIgnoredForMessage(y)
   }), [y]), S = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
     content: N
   } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, u.Ay)(y, {

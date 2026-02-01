@@ -85,16 +85,16 @@ function L(e) {
   }), k = (0, E.A)(a), U = null != k.text && "" !== k.text, {
     largeImage: G
   } = (0, d.XN)(a), {
-    analyticsLocations: F
-  } = (0, u.Ay)(c.A.USER_PROFILE_LIVE_ACTIVITY_CARD), V = (0, m.A)({
+    analyticsLocations: V
+  } = (0, u.Ay)(c.A.USER_PROFILE_LIVE_ACTIVITY_CARD), F = (0, m.A)({
     display: "live",
     user: t,
     activity: a,
     entry: j,
-    analyticsLocations: F
+    analyticsLocations: V
   }), B = (0, g.A)({
     userId: t.id,
-    onAction: V
+    onAction: F
   });
   if (!(0, l.A)(a)) return null;
   let H = () => {
@@ -109,7 +109,7 @@ function L(e) {
           children: [(0, r.jsx)(s.DUT, {
             className: o()(N.sd, N.mG),
             onClick: e => {
-              e.stopPropagation(), V({
+              e.stopPropagation(), F({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, h.mN)(a, t.id, n)
             },
@@ -137,15 +137,15 @@ function L(e) {
       children: (0, r.jsx)(S.A, {
         user: t,
         activity: a,
-        onAction: V
+        onAction: F
       })
     });
   return (0, r.jsx)(u.f5, {
-    value: F,
+    value: V,
     children: (0, r.jsxs)(O.A, {
       ref: B,
       className: o()(N.Nr, w),
-      onAction: V,
+      onAction: F,
       onClose: P,
       "aria-labelledby": U ? "".concat(x, " ").concat(L) : L,
       children: [(0, r.jsx)(v.A, D(R({
@@ -167,7 +167,7 @@ function L(e) {
             size: M === C.d.MODAL_V2 ? f.w.SIZE_100 : f.w.SIZE_60,
             className: N.mM,
             onClick: e => {
-              e.stopPropagation(), V({
+              e.stopPropagation(), F({
                 action: "OPEN_SPOTIFY_ALBUM"
               }), (0, h.QX)(a, t.id)
             }
@@ -178,7 +178,7 @@ function L(e) {
                 variant: "heading-sm/semibold",
                 text: a.details,
                 onClick: () => {
-                  V({
+                  F({
                     action: "OPEN_SPOTIFY_TRACK"
                   }), (0, h.Mp)(a)
                 },

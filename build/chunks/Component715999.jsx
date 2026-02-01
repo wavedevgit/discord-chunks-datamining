@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 715999, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 715999, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   q: () => T
 });
@@ -13,21 +13,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk895431 = require("./895431.js");
 let T = () => {
   let {
-    isWeb: e,
-    installationStatus: t,
+    isWeb: t,
+    installationStatus: e,
     connectionStatus: i,
     perkAvailableToUser: T
-  } = (0, u.lV)(), c = (0, l.useMemo)(() => {
+  } = (0, a.lV)(), A = (0, l.useMemo)(() => {
     switch (i) {
-      case a.l7.CONNECTED:
+      case u.l7.CONNECTED:
         return o.intl.format(d.default.EVQZqy, {
           helpdeskArticle: r.V
         });
-      case a.l7.DISCONNECTED:
+      case u.l7.DISCONNECTED:
         return o.intl.format(d.default.zOCRv9, {
           helpdeskArticle: r.V
         });
-      case a.l7.ERROR:
+      case u.l7.ERROR:
         return o.intl.format(d.default.e9MkUw, {
           helpdeskArticle: r.V
         });
@@ -36,50 +36,50 @@ let T = () => {
           helpdeskArticle: r.V
         })
     }
-  }, [i]), A = (0, l.useMemo)(() => {
-    if (e) return o.intl.format(d.default.z6v0w5, {
+  }, [i]), S = (0, l.useMemo)(() => {
+    if (t) return o.intl.format(d.default.z6v0w5, {
       helpdeskArticle: r.V
     });
     if (!T) return o.intl.format(d.default.yL6mvx, {
       helpdeskArticle: r.V
     });
-    switch (t) {
-      case a.Lk.ERROR:
+    switch (e) {
+      case u.Lk.ERROR:
         return o.intl.format(d.default.vjIpaK, {
           helpdeskArticle: r.V
         });
-      case a.Lk.INSTALLING_TIMEOUT:
+      case u.Lk.INSTALLING_TIMEOUT:
         return o.intl.format(d.default.QWyvkt, {
           helpdeskArticle: r.V
         });
-      case a.Lk.INSTALLING:
+      case u.Lk.INSTALLING:
         return o.intl.format(d.default.ZLrDvb, {
           helpdeskArticle: r.V
         });
-      case a.Lk.WAITING_FOR_TERMS:
-      case a.Lk.READY_FOR_LICENSE:
+      case u.Lk.WAITING_FOR_TERMS:
+      case u.Lk.READY_FOR_LICENSE:
         return o.intl.format(d.default.rX9Z5g, {
           helpdeskArticle: r.V
         });
-      case a.Lk.EXISTING_INSTALLATION:
+      case u.Lk.EXISTING_INSTALLATION:
         return o.intl.format(d.default.gOBU3K, {
           helpdeskArticle: r.V
         });
-      case a.Lk.ZERO_TRUST:
+      case u.Lk.ZERO_TRUST:
         return o.intl.string(d.default.KVSUDs);
-      case a.Lk.INSTALLED:
-        return c;
-      case a.Lk.NOT_INSTALLED:
-      case a.Lk.UNKNOWN:
+      case u.Lk.INSTALLED:
+        return A;
+      case u.Lk.NOT_INSTALLED:
+      case u.Lk.UNKNOWN:
       default:
         return o.intl.format(d.default.yL6mvx, {
           helpdeskArticle: r.V
         })
     }
-  }, [e, t, c, T]);
+  }, [t, e, A, T]);
   return (0, n.jsx)(s.EYj, {
     variant: "text-sm/normal",
     color: "text-subtle",
-    children: A
+    children: S
   })
 }

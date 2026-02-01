@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 787331, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,12 +17,12 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk276991 = require("./276991.js");
 
-function f(e) {
+function m(e) {
   let {
     user: t,
     nickname: n,
-    status: f,
-    isFocused: m
+    status: m,
+    isFocused: f
   } = e, {
     analyticsLocations: A
   } = (0, a.Ay)(), _ = e => {
@@ -36,9 +36,9 @@ function f(e) {
     })
   }, b = e => {
     null == e || e.stopPropagation(), s.A.ignore(t.id)
-  }, E = f === p.clD.OFFLINE ? p.clD.UNKNOWN : f;
+  }, E = m === p.clD.OFFLINE ? p.clD.UNKNOWN : m;
   return (0, r.jsx)(u.A, {
-    isFocused: m,
+    isFocused: f,
     user: t,
     onClick: () => (0, o.openUserProfileModal)({
       userId: t.id,

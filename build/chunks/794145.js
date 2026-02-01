@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 794145, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 794145, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  V: () => N
+  V: () => C
 });
 var Chunk421380 = require("./421380.js"),
   Chunk171316 = require("./171316.js"),
@@ -20,53 +20,53 @@ var Chunk421380 = require("./421380.js"),
   Chunk355097 = require("./355097.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let C = (e, t) => {
-    a.default.track(I.HAw.GUILD_DEFAULT_DMS_UPDATED, {
-      default_guilds_restricted: e,
-      applied_to_existing_guilds: t
+let N = (t, e) => {
+    u.default.track(I.HAw.GUILD_DEFAULT_DMS_UPDATED, {
+      default_guilds_restricted: t,
+      applied_to_existing_guilds: e
     })
   },
-  N = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
-    useTitle: () => (0, A.e)() ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN),
+  C = (0, Chunk419954.zD)(Chunk780964.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
+    useTitle: () => (0, S.e)() ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN),
     useSubtitle: () => {
-      let e = (0, S.Tx)(),
-        t = (0, S.q9)(),
-        i = (0, A.e)();
-      return e === c.YG ? i ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT) : t ? O.intl.string(O.t.V0ka0Q) : i ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo)
+      let t = (0, c.Tx)(),
+        e = (0, c.q9)(),
+        i = (0, S.e)();
+      return t === A.YG ? i ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT) : e ? O.intl.string(O.t.V0ka0Q) : i ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo)
     },
     useValue: () => {
-      let e = (0, S.Tx)(),
-        t = d.$s.useSetting().includes(e),
+      let t = (0, c.Tx)(),
+        e = d.$s.useSetting().includes(t),
         i = (0, o.K)();
-      return e === c.YG ? !i : !t
+      return t === A.YG ? !i : !e
     },
     useDisabled: () => {
-      let e = (0, l.uM)();
-      return (0, S.Tx)() === c.YG && e
+      let t = (0, l.uM)();
+      return (0, c.Tx)() === A.YG && t
     },
-    setValue: e => {
-      let t = c.xk.getState().selectedGuildId;
-      if (t === c.YG) {
+    setValue: t => {
+      let e = A.xk.getState().selectedGuildId;
+      if (e === A.YG) {
         var i;
-        i = !e, (0, _.O)({
+        i = !t, (0, E.O)({
           header: O.intl.string(O.t["uUr+GR"]),
           body: O.intl.string(O.t.hjGJBp),
           confirmText: O.intl.string(O.t.gm1Vej),
           cancelText: O.intl.string(O.t.p89ACt),
           confirmButtonColor: n.$n.Colors.BRAND,
           onConfirm: () => {
-            d.n6.updateSetting(i), C(i, false)
+            d.n6.updateSetting(i), N(i, false)
           },
           onCancel: () => {
-            d.n6.updateSetting(i), d.$s.updateSetting(i ? r.A.getGuildIds() : []), C(i, true)
+            d.n6.updateSetting(i), d.$s.updateSetting(i ? r.A.getGuildIds() : []), N(i, true)
           }
         })
       } else {
-        let i = (0, u.Tb)();
-        e ? i.delete(t) : i.add(t), d.$s.updateSetting(Array.from(i)), a.default.track(I.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-          action: E.m.DIRECT_MESSAGES_TOGGLE,
-          ingress: g.bf.USER_SETTINGS_PRIVACY_SAFETY,
-          guild_id: t
+        let i = (0, a.Tb)();
+        t ? i.delete(e) : i.add(e), d.$s.updateSetting(Array.from(i)), u.default.track(I.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+          action: g.m.DIRECT_MESSAGES_TOGGLE,
+          ingress: _.bf.USER_SETTINGS_PRIVACY_SAFETY,
+          guild_id: e
         })
       }
     }

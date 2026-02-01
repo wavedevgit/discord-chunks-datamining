@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 926262, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,109 +16,109 @@ var Chunk627968 = require("./627968.js"),
   Chunk887008 = require("./887008.js"),
   Chunk206314 = require("./206314.js");
 
-function f(e) {
+function m(e) {
   let {
     onClose: t,
-    onConfirm: f,
-    onCancel: m,
-    channel: b,
-    analyticsType: A,
-    popoutText: y,
-    animation: O
+    onConfirm: m,
+    onCancel: g,
+    channel: A,
+    analyticsType: b,
+    popoutText: _,
+    animation: y
   } = e;
-  l.useEffect(() => {
+  r.useEffect(() => {
     u.default.track(d.HAw.OPEN_POPOUT, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = l
         })
       }
       return e
     }({
-      type: A
-    }, (0, o.dI)(b)))
-  }, [A, b]);
-  let _ = l.useCallback(() => {
-      null == f || f(), t()
-    }, [f, t]),
-    j = l.useCallback(() => {
+      type: b
+    }, (0, o.dI)(A)))
+  }, [b, A]);
+  let v = r.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
-    x = l.useRef(null);
-  return l.useEffect(() => {
+    E = r.useCallback(() => {
+      null == g || g(), t()
+    }, [g, t]),
+    O = r.useRef(null);
+  return r.useEffect(() => {
     let e, t = c.A.theme,
-      r = false;
-    return null != O && (async () => {
+      l = false;
+    return null != y && (async () => {
       let [{
-        default: l
-      }, i] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, s.Mw)(t) ? O.dark() : O.light()]);
-      r || null == x.current || (e = l.loadAnimation({
-        container: x.current,
+        default: r
+      }, i] = await Promise.all([Promise.resolve().then(n.t.bind(n, 883885, 23)), (0, a.Mw)(t) ? y.dark() : y.light()]);
+      l || null == O.current || (e = r.loadAnimation({
+        container: O.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
         animationData: i
       }))
     })(), () => {
-      r = true, null != e && (e.destroy(), e = true)
+      l = true, null != e && (e.destroy(), e = true)
     }
-  }, [O]), (0, r.jsx)(a.lGe, {
+  }, [y]), (0, l.jsx)(s.lGe, {
     "aria-labelledby": "content-warning-popout-label",
-    children: (0, r.jsxs)("form", {
+    children: (0, l.jsxs)("form", {
       className: p.$,
-      onSubmit: _,
-      children: [(0, r.jsxs)("div", {
+      onSubmit: v,
+      children: [(0, l.jsxs)("div", {
         className: p.rf,
-        children: [null != O && (0, r.jsx)("div", {
+        children: [null != y && (0, l.jsx)("div", {
           className: p.lY,
-          ref: x
-        }), (0, r.jsxs)("div", {
+          ref: O
+        }), (0, l.jsxs)("div", {
           className: p.Qs,
-          children: [(0, r.jsx)("div", {
+          children: [(0, l.jsx)("div", {
             className: p.wx,
             children: h.intl.string(h.t.mY3Y38)
-          }), (0, r.jsx)(a.Text, {
+          }), (0, l.jsx)(s.Text, {
             id: "content-warning-popout-label",
-            className: g.PT,
+            className: f.PT,
             variant: "text-sm/normal",
-            children: y.body
-          }), (0, r.jsxs)("div", {
+            children: _.body
+          }), (0, l.jsxs)("div", {
             className: p._o,
-            children: [(0, r.jsxs)("div", {
+            children: [(0, l.jsxs)("div", {
               className: p.UD,
-              children: [(0, r.jsx)("div", {
+              children: [(0, l.jsx)("div", {
                 className: p.x6,
-                children: (0, r.jsx)(a.Button, {
+                children: (0, l.jsx)(s.Button, {
                   variant: "secondary",
-                  onClick: j,
+                  onClick: E,
                   text: h.intl.string(h.t.fsBWmS)
                 })
-              }), (0, r.jsx)(a.Text, {
+              }), (0, l.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 className: p.uK,
                 children: h.intl.format(h.t["0LzVPZ"], {})
               })]
-            }), (0, r.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
               className: p.UD,
-              children: [(0, r.jsx)("div", {
+              children: [(0, l.jsx)("div", {
                 className: p.x6,
-                children: (0, r.jsx)(a.Button, {
+                children: (0, l.jsx)(s.Button, {
                   variant: "primary",
-                  onClick: _,
+                  onClick: v,
                   text: h.intl.string(h.t.KJnHq3),
                   autoFocus: true
                 })
-              }), (0, r.jsx)(a.Text, {
+              }), (0, l.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 className: p.uK,
                 children: h.intl.format(h.t.khjqdH, {})
@@ -126,15 +126,15 @@ function f(e) {
             })]
           })]
         })]
-      }), null != y.footer && "" !== y.footer ? (0, r.jsxs)("div", {
+      }), null != _.footer && "" !== _.footer ? (0, l.jsxs)("div", {
         className: p.qr,
-        children: [(0, r.jsx)(a.mir, {
+        children: [(0, l.jsx)(s.mir, {
           size: "xs",
           color: i.A.unsafe_rawColors.PRIMARY_400.css,
           className: p.Kk
-        }), (0, r.jsx)(a.Text, {
+        }), (0, l.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: y.footer
+          children: _.footer
         })]
       }) : null]
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 193699, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,7 +17,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk786983 = require("./786983.js");
 
-function f(e) {
+function m(e) {
   let {
     className: t,
     markAsDismissed: n

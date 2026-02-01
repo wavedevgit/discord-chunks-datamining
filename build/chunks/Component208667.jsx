@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 208667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,11 +14,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk456425 = require("./456425.jsx"),
   Chunk1347 = require("./1347.js");
 
-function p(e) {
+function h(e) {
   let {
     initialized: t,
     items: n,
-    loading: p,
+    loading: h,
     loadMore: g
   } = e, f = l.useRef(null), m = (0, o.A)("for-you", f);
   (0, c.A)({
@@ -77,7 +77,7 @@ function p(e) {
           }
           return e
         }({
-          className: h.kL,
+          className: p.kL,
           ref: e => {
             var t;
             f.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -86,8 +86,8 @@ function p(e) {
           onScroll: b,
           children: [(0, r.jsx)(d.$, {
             items: n
-          }), p ? (0, r.jsx)(a.y$y, {
-            className: h.u1
+          }), h ? (0, r.jsx)(a.y$y, {
+            className: p.u1
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -102,6 +102,6 @@ function p(e) {
       }
     })
   }) : (0, r.jsx)(a.y$y, {
-    className: h.k$
+    className: p.k$
   })
 }

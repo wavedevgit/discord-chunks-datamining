@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 497140, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk550591 = require("./550591.jsx"),
   Chunk794398 = require("./794398.js");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,8 +32,8 @@ function h(e) {
   return e
 }
 
-function p(e) {
-  let [t, p] = l.useState(false), g = (0, i.Vd)("guild-".concat(e.id));
+function h(e) {
+  let [t, h] = l.useState(false), g = (0, i.Vd)("guild-".concat(e.id));
   return (0, r.jsx)(c.c, {
     children: (0, r.jsx)(u.A, {
       text: e.name,
@@ -45,20 +45,20 @@ function p(e) {
           disableColor: true,
           className: d._
         }),
-        children: (0, r.jsx)(s.jlP, h({
+        children: (0, r.jsx)(s.jlP, p({
           name: e.name,
           onMouseEnter: () => {
-            p(true)
+            h(true)
           },
           onMouseLeave: () => {
-            p(false)
+            h(false)
           },
           onClick: () => {
             (0, s.mMO)(async () => {
               let {
                 default: t
               } = await n.e("42945").then(n.bind(n, 537560));
-              return n => (0, r.jsx)(t, h({
+              return n => (0, r.jsx)(t, p({
                 name: e.name,
                 guildId: e.id
               }, n))

@@ -29,7 +29,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function O(e) {
   let {
     closePopout: t
   } = e;
@@ -37,25 +37,25 @@ function A(e) {
     onClose: t
   })
 }
-class O extends(i = Chunk64700.PureComponent) {
+class _ extends(i = Chunk64700.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
       locked: t,
       contained: n,
       className: i
-    } = this.props, s = null != e ? (0, r.jsx)(h.A, {
+    } = this.props, s = null != e ? (0, r.jsx)(p.A, {
       guildId: e,
       onDragStart: this.onDragStart
     }, e) : (0, r.jsx)(y.A, {
-      title: m.intl.string(m.t.YUU0RF),
-      renderSettings: A,
+      title: A.intl.string(A.t.YUU0RF),
+      renderSettings: O,
       onDragStart: this.onDragStart,
       children: (0, r.jsx)(g.A, {})
-    }), l = n ? "div" : p.Ay;
+    }), l = n ? "div" : h.Ay;
     return (0, r.jsxs)(l, {
-      className: o()(_.E, {
-        [_.H]: !n
+      className: o()(m.E, {
+        [m.H]: !n
       }, i),
       children: [(0, r.jsx)(d.A, {
         isOverlay: true,
@@ -73,9 +73,9 @@ class O extends(i = Chunk64700.PureComponent) {
     })
   }
 }
-b(O, "defaultProps", {
+b(_, "defaultProps", {
   contained: false
 });
 let v = Chunk311907.Ay.connectStores([Chunk967198.A], () => ({
   selectedGuildId: u.A.getGuildId()
-}))(O)
+}))(_)

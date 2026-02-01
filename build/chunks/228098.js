@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 228098, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => c
@@ -12,9 +12,9 @@ var Chunk311907 = require("./311907.js"),
 
 function c(e) {
   var t;
-  let n = (0, s.jN)((null == e ? true : e.getGuildId()) != null ? e.guild_id : a.eGj),
-    c = (0, r.bG)([i.Ay], () => null != e && i.Ay.isChannelRecordOrParentOptedIn(e)),
-    u = (0, l.d)(null != (t = null == e ? true : e.guild_id) ? t : a.eGj);
+  let n = (0, a.jN)((null == e ? true : e.getGuildId()) != null ? e.guild_id : s.eGj),
+    c = (0, l.bG)([i.Ay], () => null != e && i.Ay.isChannelRecordOrParentOptedIn(e)),
+    u = (0, r.d)(null != (t = null == e ? true : e.guild_id) ? t : s.eGj);
   if (null == e) returnfalse;
   let d = u && e.hasFlag(o.lx.IS_GUILD_RESOURCE_CHANNEL);
   return n && !d && !c && !e.isThread()

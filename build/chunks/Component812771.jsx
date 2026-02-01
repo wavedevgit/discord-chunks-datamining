@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 812771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A,
@@ -25,13 +25,13 @@ function b(e) {
     onResizeEnd: r,
     maxWidth: i,
     minWidth: s
-  } = e, a = (0, h.A)({
+  } = e, a = (0, p.A)({
     minDimension: s,
     maxDimension: i,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
-    orientation: h.R.HORIZONTAL_LEFT,
+    orientation: p.R.HORIZONTAL_LEFT,
     throttleDuration: 16
   });
   return (0, l.jsx)("div", {
@@ -46,7 +46,7 @@ function A(e) {
     maxWidth: n,
     onWidthChange: r,
     children: s,
-    floatingLayer: h
+    floatingLayer: p
   } = e, m = i.useRef(null), A = function(e) {
     switch (e) {
       case 0:
@@ -62,20 +62,20 @@ function A(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, O] = i.useState(p.Ay[A]), _ = i.useCallback(e => {
+  }(t), [y, O] = i.useState(h.Ay[A]), j = i.useCallback(e => {
     d.Ay.updatedUnsyncedSettings({
       [A]: e
     })
-  }, [A]), j = 5 === t ? 360 : 450, x = (0, g.P)({
+  }, [A]), x = 5 === t ? 360 : 450, _ = (0, g.P)({
     maxWidth: n,
-    minWidth: j
-  }), v = (0, u.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, o.clamp)(y, j, n), C = x ? E : E + v;
+    minWidth: x
+  }), v = (0, u.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, o.clamp)(y, x, n), C = _ ? E : E + v;
   i.useEffect(() => {
-    null == r || r(E, x)
-  }, [E, r, x]);
-  let S = null != h ? h : i.Fragment;
+    null == r || r(E, _)
+  }, [E, r, _]);
+  let S = null != p ? p : i.Fragment;
   return (0, l.jsxs)(l.Fragment, {
-    children: [!x && (0, l.jsx)("div", {
+    children: [!_ && (0, l.jsx)("div", {
       style: {
         minWidth: C
       }
@@ -86,22 +86,22 @@ function A(e) {
         }),
         children: [(0, l.jsx)("div", {
           className: a()(f.Uc, {
-            [f.DU]: x,
-            [f.iK]: !x
+            [f.DU]: _,
+            [f.iK]: !_
           }),
           style: {
             width: C
           }
-        }), !x && (0, l.jsx)(b, {
-          minWidth: j,
+        }), !_ && (0, l.jsx)(b, {
+          minWidth: x,
           maxWidth: n,
           resizableNode: m,
           onResize: O,
-          onResizeEnd: _
+          onResizeEnd: j
         }), (0, l.jsx)("div", {
           ref: m,
           className: a()(f.kL, {
-            [f.DU]: x
+            [f.DU]: _
           }),
           style: {
             width: E

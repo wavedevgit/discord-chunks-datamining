@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 898642, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,13 +16,13 @@ var Chunk311907 = require("./311907.js"),
   Chunk58736 = require("./58736.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let f = new Set(["ko", "ja"]);
+let m = new Set(["ko", "ja"]);
 
-function m(e) {
+function f(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, m = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = (0, i.bG)([s.default], () => s.default.locale), _ = (0, d.mv)(m);
+  } = e, f = (0, i.bG)([o.default], () => o.default.getCurrentUser()), A = (0, i.bG)([s.default], () => s.default.locale), _ = (0, d.mv)(f);
   return (0, r.jsx)(a.MzZ, {
     href: u.C,
     target: "_blank",
@@ -51,7 +51,7 @@ function m(e) {
         highlighted: _
       }),
       icon: a.cBN,
-      tooltipPosition: f.has(A) ? "left" : true,
+      tooltipPosition: m.has(A) ? "left" : true,
       tooltip: g.intl.string(g.t["cqEoj/"])
     }, n))
   })

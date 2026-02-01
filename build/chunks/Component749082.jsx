@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 749082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -39,8 +39,8 @@ let p = {
       blurAmount: b = 30,
       hueRotate: h = 0,
       isReducedMotion: E
-    } = e, O = i.useRef(null), C = i.useRef(null), {
-      status: x,
+    } = e, O = i.useRef(null), x = i.useRef(null), {
+      status: C,
       buffer: S
     } = (0, d.CE)(a.A), T = i.useContext(o.C), I = null != E ? E : T.reducedMotion.enabled;
     return (0, r.jsxs)("div", {
@@ -51,13 +51,13 @@ let p = {
         "--custom-blur-amount": "".concat(b, "px"),
         "--custom-hue-rotate": "".concat(h, "deg")
       },
-      children: [x !== d.BW.Loading && (0, r.jsx)(c.w, {
+      children: [C !== d.BW.Loading && (0, r.jsx)(c.w, {
         buffer: S,
         artboard: g,
         artboardProperties: p,
         eventTargetRef: O,
         className: _.Q_,
-        ref: C,
+        ref: x,
         fit: A,
         withReducedMotion: I ? "halt" : "play"
       }), (0, r.jsx)(u.ZpM, {

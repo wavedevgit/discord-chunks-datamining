@@ -14,7 +14,7 @@ require.r(exports), require.d(exports, {
   getAnalyticsEventsRecording: () => en,
   getNewAnalyticsLoadId: () => ec,
   isGameApplicationType: () => es,
-  launchSignature: () => F,
+  launchSignature: () => V,
   setUTMContext: () => Z,
   startRecordingAnalyticsEvents: () => ee,
   stopRecordingAnalyticsEvents: () => et,
@@ -112,14 +112,14 @@ let C = {
   k = 864e5,
   U = .001,
   G = performance.now(),
-  F = (0, Chunk306173.xd)() ? (0, Chunk306173.xy)((0, Chunk613345.V)()) : null;
+  V = (0, Chunk306173.xd)() ? (0, Chunk306173.xy)((0, Chunk613345.V)()) : null;
 Chunk110259.extendSuperProperties({
-  launch_signature: F
+  launch_signature: V
 });
-let V = [];
+let F = [];
 
 function B(e) {
-  V.push(e)
+  F.push(e)
 }
 let H = {
   [Chunk652215.HAw.APP_OPENED]: {
@@ -430,7 +430,7 @@ function Q(e) {
     utmCampaign: c,
     utmContent: u
   } = w;
-  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = F, V.forEach(e => e(a)), a
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = V, F.forEach(e => e(a)), a
 }
 
 function X(e, t) {

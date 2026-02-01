@@ -1,7 +1,7 @@
-/** Chunk was on 38985 **/
+/** Chunk was on 49438 **/
 /** chunk id: 686378, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,52 +21,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk438536 = require("./438536.js");
 
-function m(e) {
+function N(e) {
   let {
     member: t
-  } = e, n = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), a = (0, s.bG)([_.A], () => _.A.getSortedRoles(t.guildId)), m = r.useMemo(() => a.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, a]), N = (0, s.bG)([c.A], () => c.A.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, E.YH)(N), p = (0, E.Cy)(t), S = (0, s.bG)([A.A], () => A.A.can(h.xBc.MANAGE_ROLES, n), [n]);
+  } = e, n = (0, s.bG)([g.A], () => g.A.getGuild(t.guildId)), a = (0, s.bG)([d.A], () => d.A.getSortedRoles(t.guildId)), N = r.useMemo(() => a.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, a]), m = (0, s.bG)([c.A], () => c.A.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, E.YH)(m), S = (0, E.Cy)(t), p = (0, s.bG)([A.A], () => A.A.can(I.xBc.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, l.jsx)(u.D0$, {
-    label: I.intl.string(I.t["LPJmL/"]),
+    label: O.intl.string(O.t["LPJmL/"]),
     children: (0, l.jsx)(T.SQ, {
       children: (0, l.jsx)(T.RU, {
-        description: t.roles.length > 0 || S ? (0, l.jsxs)("div", {
-          className: O.yk,
+        description: t.roles.length > 0 || p ? (0, l.jsxs)("div", {
+          className: h.yk,
           children: [(0, l.jsx)(o.m, {
             asContainer: true,
-            "aria-label": I.intl.string(I.t["0g8Xd/"]),
-            text: I.intl.string(I.t["93S+lG"]),
+            "aria-label": O.intl.string(O.t["0g8Xd/"]),
+            text: O.intl.string(O.t["93S+lG"]),
             children: (0, l.jsx)(u.DUT, {
-              children: (0, l.jsx)(d.A, {
-                className: i()(O.Zf, O.Lc),
+              children: (0, l.jsx)(_.A, {
+                className: i()(h.Zf, h.Lc),
                 role: f,
                 guildId: t.guildId
               })
             })
-          }), m.map(e => (0, l.jsx)(d.A, {
-            className: O.Zf,
+          }), N.map(e => (0, l.jsx)(_.A, {
+            className: h.Zf,
             role: e,
             guildId: t.guildId
-          }, e.id)), S && (0, l.jsx)(o.m, {
+          }, e.id)), p && (0, l.jsx)(o.m, {
             asContainer: true,
-            "aria-label": I.intl.string(I.t.ljnBlo),
-            text: I.intl.string(I.t.ljnBlo),
+            "aria-label": O.intl.string(O.t.ljnBlo),
+            text: O.intl.string(O.t.ljnBlo),
             children: (0, l.jsx)(u.DUT, {
-              onClick: p,
-              className: O.$g,
+              onClick: S,
+              className: h.$g,
               children: (0, l.jsx)(u.U1e, {
                 size: "custom",
                 color: "currentColor",
-                className: O.fd,
+                className: h.fd,
                 width: 20,
                 height: 20
               })
             })
           })]
         }) : (0, l.jsx)("div", {
-          className: O.pl,
+          className: h.pl,
           children: (0, l.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: I.intl.string(I.t.nZfHsf)
+            children: O.intl.string(O.t.nZfHsf)
           })
         })
       })

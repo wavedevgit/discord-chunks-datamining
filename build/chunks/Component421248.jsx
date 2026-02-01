@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 421248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -47,8 +47,8 @@ function E() {
     E = (0, d.G)(),
     {
       explicitContentGuilds: O,
-      explicitContentFriendDm: C,
-      explicitContentNonFriendDm: x
+      explicitContentFriendDm: x,
+      explicitContentNonFriendDm: C
     } = (0, c.R)(),
     S = e => {
       let t = Object.values(e);
@@ -67,12 +67,12 @@ function E() {
       value: i.TO.BLUR,
       label: f.intl.string(f.t.S49Uad)
     }],
-    y = {
+    N = {
       value: i.TO.SHOW,
       label: f.intl.string(f.t["5k5OFp"])
     };
-  t && (T.unshift(y), I.unshift(y));
-  let N = {
+  t && (T.unshift(N), I.unshift(N));
+  let y = {
     isDisabled: E,
     tooltipText: n ? f.intl.string(b.default["6Af/cw"]) : true
   };
@@ -82,19 +82,19 @@ function E() {
     description: f.intl.string(f.t.Wnojv1),
     children: [(0, r.jsx)(m.A, h({
       title: f.intl.string(f.t["+uI23H"]),
-      value: C,
+      value: x,
       onChange: e => S({
         explicitContentFriendDm: e
       }),
       options: T
-    }, N)), (0, r.jsx)(m.A, h({
+    }, y)), (0, r.jsx)(m.A, h({
       title: f.intl.string(f.t["Yh+HX1"]),
-      value: x,
+      value: C,
       onChange: e => S({
         explicitContentNonFriendDm: e
       }),
       options: T
-    }, N)), (0, r.jsx)(m.A, {
+    }, y)), (0, r.jsx)(m.A, {
       title: f.intl.string(f.t["FP+a42"]),
       value: O,
       onChange: e => S({

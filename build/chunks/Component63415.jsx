@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 63415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => y
@@ -137,8 +137,8 @@ let _ = e => {
       finishSetup: async () => true,
       perkAvailableToUser: w
     })), {
-      installationStatus: P,
-      setInstallationStatus: k,
+      installationStatus: k,
+      setInstallationStatus: P,
       connectionStatus: R,
       setConnectionStatus: D,
       setConnect: M,
@@ -165,21 +165,21 @@ let _ = e => {
     }, [W, q]);
     let Q = l.useCallback(async () => (clearTimeout(e), D(m.l7.DISCONNECTED), true), [e, D]),
       Y = l.useCallback(() => new Promise((e, t) => {
-        k(m.Lk.INSTALLING), s(setTimeout(() => {
+        P(m.Lk.INSTALLING), s(setTimeout(() => {
           y ? t(Error("Installation failed")) : e()
         }, C))
-      }), [y, C, k, s]);
+      }), [y, C, P, s]);
     return (l.useEffect(() => {
-      F && P !== m.Lk.UNKNOWN && k(m.Lk.UNKNOWN)
-    }, [F, k, P]), l.useEffect(() => {
+      F && k !== m.Lk.UNKNOWN && P(m.Lk.UNKNOWN)
+    }, [F, P, k]), l.useEffect(() => {
       L(Q)
     }, [Q, L]), l.useEffect(() => {
       U(Y)
     }, [Y, U]), l.useEffect(() => {
-      P !== m.Lk.INSTALLING && clearTimeout(n)
-    }, [n, P]), l.useEffect(() => {
-      if (P !== m.Lk.INSTALLED && R !== m.l7.INITIALIZING) return void D(m.l7.INITIALIZING)
-    }, [P, R, D]), (0, p.lM)("private_browsing_perk_settings_page")) ? (0, a.jsxs)("div", {
+      k !== m.Lk.INSTALLING && clearTimeout(n)
+    }, [n, k]), l.useEffect(() => {
+      if (k !== m.Lk.INSTALLED && R !== m.l7.INITIALIZING) return void D(m.l7.INITIALIZING)
+    }, [k, R, D]), (0, p.lM)("private_browsing_perk_settings_page")) ? (0, a.jsxs)("div", {
       children: [(0, a.jsx)(o.DZT, {
         variant: "heading-xl/semibold",
         style: {
@@ -235,8 +235,8 @@ let _ = e => {
           }), (0, a.jsx)(g.MG, {
             children: (0, a.jsx)(c.l6P, {
               label: "Installation Status",
-              onSelectionChange: k,
-              value: P,
+              onSelectionChange: P,
+              value: k,
               disabled: F,
               options: [{
                 id: "unknown",
@@ -278,7 +278,7 @@ let _ = e => {
               selectionMode: "single",
               fullWidth: true
             })
-          }), P === m.Lk.INSTALLED && (0, a.jsx)(g.MG, {
+          }), k === m.Lk.INSTALLED && (0, a.jsx)(g.MG, {
             children: (0, a.jsx)(c.l6P, {
               label: "Connection Status",
               onSelectionChange: D,
@@ -304,7 +304,7 @@ let _ = e => {
               fullWidth: true
             })
           })]
-        }), P === m.Lk.NOT_INSTALLED && (0, a.jsxs)(g.LB, {
+        }), k === m.Lk.NOT_INSTALLED && (0, a.jsxs)(g.LB, {
           children: [(0, a.jsxs)(g.MG, {
             children: [(0, a.jsx)(o.EYj, {
               variant: "text-md/semibold",

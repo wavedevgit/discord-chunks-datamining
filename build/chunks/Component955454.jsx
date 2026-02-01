@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 955454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -26,7 +26,7 @@ function O(e) {
     channel: t,
     channelRecord: n,
     deleteChannel: i
-  } = e, O = (0, a.yK)([h.A, g.A], () => s()(h.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, O = (0, a.yK)([p.A, g.A], () => s()(p.A.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -36,8 +36,8 @@ function O(e) {
       id: t
     } = e;
     return g.A.getChannel(t)
-  }).filter(f.Vq).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), _ = l.useCallback((e, t) => {
-    (0, p.JA)(e, t, A.H9.INBOX)
+  }).filter(f.Vq).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), j = l.useCallback((e, t) => {
+    (0, h.JA)(e, t, A.H9.INBOX)
   }, []);
   return l.useEffect(() => {
     null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== O.length || o.h.wait(() => {
@@ -54,7 +54,7 @@ function O(e) {
       children: (0, r.jsx)(u.Ay, {
         className: y.u,
         threadId: e.id,
-        goToThread: _
+        goToThread: j
       })
     }, e.id))
   })

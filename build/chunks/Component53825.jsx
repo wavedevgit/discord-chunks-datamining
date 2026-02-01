@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 53825, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 53825, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   N: () => I
 });
@@ -19,52 +19,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk280973 = require("./280973.js");
 let I = (0, Chunk419954.E2)(Chunk780964.X.CLIPS_SCREENSHOT_KEYBIND, {
-  useSearchTerms: () => [E.intl.string(E.t["0U/hj7"]), E.intl.string(E.t["5zxkdo"])],
+  useSearchTerms: () => [g.intl.string(g.t["0U/hj7"]), g.intl.string(g.t["5zxkdo"])],
   usePredicate: Chunk734066.BW,
   Component: () => {
-    let e = (0, a.bG)([A.Ay], () => A.Ay.getKeybindForAction(_.hCu.SAVE_CLIP, true)),
-      t = (0, a.bG)([A.Ay], () => A.Ay.getKeybindForAction(_.hCu.SAVE_SCREENSHOT, true));
-    r()(null != e, "Save clip keybind unset"), r()(null != t, "Save screenshot keybind unset");
-    let i = l.useCallback(e => {
+    let t = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(E.hCu.SAVE_CLIP, true)),
+      e = (0, u.bG)([S.Ay], () => S.Ay.getKeybindForAction(E.hCu.SAVE_SCREENSHOT, true));
+    r()(null != t, "Save clip keybind unset"), r()(null != e, "Save screenshot keybind unset");
+    let i = l.useCallback(t => {
       var i, n;
-      o.A.setKeybind((i = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var i = null != arguments[t] ? arguments[t] : {},
+      o.A.setKeybind((i = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var i = null != arguments[e] ? arguments[e] : {},
             n = Object.keys(i);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(i, e).enumerable
-          }))), n.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(i, t).enumerable
+          }))), n.forEach(function(e) {
             var n;
-            n = i[t], t in e ? Object.defineProperty(e, t, {
+            n = i[e], e in t ? Object.defineProperty(t, e, {
               value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : t[e] = n
           })
         }
-        return e
-      }({}, t), n = n = {
-        shortcut: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var i = Object.keys(e);
+        return t
+      }({}, e), n = n = {
+        shortcut: t
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
+        var i = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
+          var n = Object.getOwnPropertySymbols(t);
           i.push.apply(i, n)
         }
         return i
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(n, e))
+      })(Object(n)).forEach(function(t) {
+        Object.defineProperty(i, t, Object.getOwnPropertyDescriptor(n, t))
       }), i))
-    }, [t]);
-    return (0, n.jsx)(u.D0$, {
-      label: E.intl.string(E.t["0U/hj7"]),
-      description: E.intl.string(E.t["5zxkdo"]),
+    }, [e]);
+    return (0, n.jsx)(a.D0$, {
+      label: g.intl.string(g.t["0U/hj7"]),
+      description: g.intl.string(g.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, n.jsx)("div", {
-        className: g.g,
+        className: _.g,
         children: (0, n.jsx)(d.A, {
-          defaultValue: t.shortcut,
+          defaultValue: e.shortcut,
           onChange: i
         })
       })

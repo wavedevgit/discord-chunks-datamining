@@ -217,14 +217,14 @@ function G(e) {
   w(t.user)
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t
   } = e;
   w(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     user: t
   } = e;
@@ -722,12 +722,12 @@ class ej extends Chunk536802.A {
     super({
       CONNECTION_OPEN: x,
       CONNECTION_OPEN_SUPPLEMENTAL: M,
-      UPDATE_CLIENT_PREMIUM_TYPE: V,
+      UPDATE_CLIENT_PREMIUM_TYPE: F,
       OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: U,
       USER_PROFILE_FETCH_SUCCESS: G,
-      CURRENT_USER_UPDATE: F,
+      CURRENT_USER_UPDATE: V,
       PRESENCE_UPDATES: en,
       SEARCH_MESSAGES_SUCCESS: W,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,

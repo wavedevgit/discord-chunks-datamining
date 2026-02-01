@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 632130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js"), require("./321073.js");
 var Chunk339048 = require("./339048.js"),
   Chunk830382 = require("./830382.js"),
@@ -63,7 +63,7 @@ async function g(e) {
   return [...r.filter(e => e.sku.type !== p.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
 }
 
-function f(e) {
+function m(e) {
   let {
     socket: t
   } = e;
@@ -74,14 +74,14 @@ function f(e) {
   }, "No application.");
   return r.LM(n)
 }
-let m = {
+let f = {
   [Chunk652215.e$_.GET_SKUS]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
     handler: g
   },
   [Chunk652215.e$_.GET_ENTITLEMENTS]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
-    handler: f
+    handler: m
   },
   [Chunk652215.e$_.GET_SKUS_EMBEDDED]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
@@ -92,7 +92,7 @@ let m = {
   [Chunk652215.e$_.GET_ENTITLEMENTS_EMBEDDED]: {
     [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.hj],
     handler: async e => ({
-      entitlements: await f(e)
+      entitlements: await m(e)
     })
   }
 }

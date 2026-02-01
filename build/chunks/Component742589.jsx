@@ -1,8 +1,8 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 46673 **/
 /** chunk id: 742589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _,
-  I: () => C
+  A: () => D,
+  I: () => m
 }), require("./747238.js");
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -25,153 +25,153 @@ var Chunk607399 = require("./607399.js"),
   Chunk746080 = require("./746080.js"),
   Chunk892513 = require("./892513.js");
 
-function S(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function f(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function C(e) {
-  if (!e && (0, m.isMac)() && m.isPlatformEmbedded) {
-    var t, n, i;
-    let e = null != (t = await (null == (n = (i = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? true : n.call(i))) ? t : "Maximize";
-    "Minimize" === e ? A.Ay.minimize() : "Maximize" === e && A.Ay.maximize()
+async function m(e) {
+  if (!e && (0, I.isMac)() && I.isPlatformEmbedded) {
+    var t, n, r;
+    let e = null != (t = await (null == (n = (r = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? true : n.call(r))) ? t : "Maximize";
+    "Minimize" === e ? O.Ay.minimize() : "Maximize" === e && O.Ay.maximize()
   }
 }
 
-function v(e) {
+function f(e) {
   let {
     children: t,
     className: n,
-    channelId: a,
-    channelType: o,
-    guildId: m,
-    innerClassname: A,
-    transparent: S = false,
-    hidden: f = false,
-    toolbar: v,
-    mobileToolbar: y,
-    "aria-label": T,
-    "aria-labelledby": _,
-    scrollable: N,
-    role: I,
-    hideSearch: P,
-    showDivider: R,
-    disableDoubleClick: L
-  } = e, G = null == a || (0, O.jq)(a) ? null : a, D = (0, s.bG)([p.A], () => p.A.isInChannel(G) || false), k = (0, s.bG)([c.A], () => null != G && c.A.getParticipantsListOpen(G)), {
-    enabled: w,
-    inInbox: V
-  } = u.A.useExperiment({
+    channelId: o,
+    channelType: s,
+    guildId: I,
+    innerClassname: O,
+    transparent: P = false,
+    hidden: y = false,
+    toolbar: f,
+    mobileToolbar: C,
+    "aria-label": g,
+    "aria-labelledby": D,
+    scrollable: h,
+    role: b,
+    hideSearch: U,
+    showDivider: M,
+    disableDoubleClick: j
+  } = e, v = null == o || (0, R.jq)(o) ? null : o, k = (0, l.bG)([T.A], () => T.A.isInChannel(v) || false), L = (0, l.bG)([c.A], () => null != v && c.A.getParticipantsListOpen(v)), {
+    enabled: x,
+    inInbox: G
+  } = E.A.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: M
-  } = (0, d.A)({
+    hasParticipantsPanel: w
+  } = (0, u.A)({
     location: "HeaderBar"
   });
-  return (0, i.jsx)(b.Ay, {
+  return (0, r.jsx)(N.Ay, {
     className: n,
-    innerClassName: A,
+    innerClassName: O,
     toolbar: function() {
-      if (null == v) return null;
-      let e = null != a && !P;
-      return l.Fr ? y : (0, i.jsxs)(i.Fragment, {
-        children: [v, e && !(0, O.jq)(a) ? (0, i.jsx)(g.Ay, {
-          guildId: m,
-          channelId: a,
-          className: E.$P
-        }, null != m ? m : a) : null, R && (0, i.jsx)(b.Ay.Divider, {}), w && !V ? (0, i.jsx)(h.A, {}) : null, M && D && null != G && !k && o === j.rbe.GROUP_DM && (0, i.jsxs)("div", {
-          className: E.pc,
-          children: [(0, i.jsx)(b.Ay.Divider, {}), (0, i.jsx)(x.A, {
-            onClick: () => r.A.toggleParticipantsList(G, !k)
+      if (null == f) return null;
+      let e = null != o && !U;
+      return i.Fr ? C : (0, r.jsxs)(r.Fragment, {
+        children: [f, e && !(0, R.jq)(o) ? (0, r.jsx)(_.Ay, {
+          guildId: I,
+          channelId: o,
+          className: S.$P
+        }, null != I ? I : o) : null, M && (0, r.jsx)(N.Ay.Divider, {}), x && !G ? (0, r.jsx)(d.A, {}) : null, w && k && null != v && !L && s === p.rbe.GROUP_DM && (0, r.jsxs)("div", {
+          className: S.pc,
+          children: [(0, r.jsx)(N.Ay.Divider, {}), (0, r.jsx)(A.A, {
+            onClick: () => a.A.toggleParticipantsList(v, !L)
           })]
         })]
       })
     }(),
-    transparent: S,
-    hidden: f,
-    onDoubleClick: () => C(L),
-    "aria-label": T,
-    "aria-labelledby": _,
-    role: I,
-    scrollable: N,
+    transparent: P,
+    hidden: y,
+    onDoubleClick: () => m(j),
+    "aria-label": g,
+    "aria-labelledby": D,
+    role: b,
+    scrollable: h,
     children: t
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     children: t,
     className: n,
-    "aria-label": l,
-    "aria-labelledby": s,
-    role: r,
-    disableDoubleClick: a
+    "aria-label": i,
+    "aria-labelledby": l,
+    role: a,
+    disableDoubleClick: o
   } = e;
-  return (0, i.jsx)(b.Ay, {
+  return (0, r.jsx)(N.Ay, {
     className: n,
-    onDoubleClick: () => C(a),
-    "aria-label": l,
-    "aria-labelledby": s,
-    role: r,
+    onDoubleClick: () => m(o),
+    "aria-label": i,
+    "aria-labelledby": l,
+    role: a,
     children: t
   })
 }
 
-function T(e) {
+function g(e) {
   let {
     isAuthenticated: t = true
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, i, l, s = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
-      return s
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (s = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, i, l = {},
-          s = Object.getOwnPropertyNames(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
-    return s
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
   }(e, ["isAuthenticated"]), {
-    analyticsLocations: l
-  } = (0, o.Ay)(a.A.HEADER_BAR);
-  return (0, i.jsx)(o.f5, {
-    value: l,
-    children: t ? (0, i.jsx)(v, f(S({}, n), {
+    analyticsLocations: i
+  } = (0, s.Ay)(o.A.HEADER_BAR);
+  return (0, r.jsx)(s.f5, {
+    value: i,
+    children: t ? (0, r.jsx)(f, y(P({}, n), {
       className: n.className
-    })) : (0, i.jsx)(y, f(S({}, n), {
+    })) : (0, r.jsx)(C, y(P({}, n), {
       className: n.className
     }))
   })
 }
-T.Title = Chunk58736.Ay.Title, T.Icon = Chunk58736.Ay.Icon, T.ChannelIcon = Chunk58736.Ay.ChannelIcon, T.Divider = Chunk58736.Ay.Divider, T.Caret = Chunk58736.Ay.Caret;
-let _ = T
+g.Title = Chunk58736.Ay.Title, g.Icon = Chunk58736.Ay.Icon, g.ChannelIcon = Chunk58736.Ay.ChannelIcon, g.Divider = Chunk58736.Ay.Divider, g.Caret = Chunk58736.Ay.Caret;
+let D = g

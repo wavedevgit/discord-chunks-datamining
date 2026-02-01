@@ -1,21 +1,21 @@
-/** Chunk was on 59461 **/
-/** chunk id: 823508, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 71020 **/
+/** chunk id: 823508, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk397927 = require("./397927.js"),
   Chunk267102 = require("./267102.jsx"),
   Chunk70456 = require("./70456.js"),
   Chunk652215 = require("./652215.js");
-let a = "guild-event-modal",
-  o = () => {
-    let e = (0, l.Us)() === u.BRT.POPOUT ? i.KX8 : i.SYi;
+let o = "guild-event-modal",
+  s = () => {
+    let e = (0, r.Us)() === a.BRT.POPOUT ? i.KX8 : i.SYi;
     return {
-      modalKey: a,
+      modalKey: o,
       contextKey: e,
       onCloseRequest: () => {
-        r.N.getState().canCloseModal && (0, i.OoC)(a, e)
+        l.N.getState().canCloseModal && (0, i.OoC)(o, e)
       }
     }
   }

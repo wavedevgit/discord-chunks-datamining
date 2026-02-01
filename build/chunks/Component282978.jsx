@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 282978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -88,7 +88,7 @@ class C {
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(c.m, {
       asContainer: true,
       tag: "span",
-      text: x.intl.string(x.t["UTjRE/"]),
+      text: _.intl.string(_.t["UTjRE/"]),
       position: "bottom",
       children: (0, r.jsx)(u.DUT, {
         className: v.OZ,
@@ -104,7 +104,7 @@ class C {
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        tabSection: j.RP.MUTUAL_GUILDS
+        tabSection: x.RP.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
   }
@@ -115,7 +115,7 @@ function S(e) {
     channel: t
   } = e, n = t.getRecipientId(), i = (0, g.EI)(n), s = Array(i.length).fill(null), {
     analyticsLocations: f
-  } = (0, p.Ay)(h.A.AKA), m = function(e) {
+  } = (0, h.Ay)(p.A.AKA), m = function(e) {
     let {
       userId: t,
       channelId: n,
@@ -136,19 +136,19 @@ function S(e) {
     userId: n,
     analyticsLocations: f,
     channelId: t.id
-  }), [y, O] = l.useState(false), j = l.useCallback(() => {
+  }), [y, O] = l.useState(false), x = l.useCallback(() => {
     O(true)
   }, [O]), E = l.useCallback(() => {
     O(false)
   }, [O]);
   return 0 === m.getNicknameGuildPairs().length && 0 === i.length ? (0, r.jsx)("div", {
     className: v.jH
-  }) : (0, r.jsxs)(p.f5, {
+  }) : (0, r.jsxs)(h.f5, {
     value: f,
-    children: [(0, r.jsx)(_.cG, {
+    children: [(0, r.jsx)(j.cG, {
       className: v.yF
     }), (0, r.jsx)(u.LpS, {
-      text: x.intl.string(x.t.l1QVfj),
+      text: _.intl.string(_.t.l1QVfj),
       disableColor: true,
       className: v.RV
     }), i.length > 0 ? (0, r.jsx)(d.Ay, {
@@ -180,7 +180,7 @@ function S(e) {
       position: "bottom",
       className: v.wm,
       delay: 0,
-      onTooltipShow: j,
+      onTooltipShow: x,
       onTooltipHide: E,
       children: m.renderNicknamePairs(!y)
     }) : null]

@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 556499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => T
@@ -188,7 +188,7 @@ function T(e) {
       subscription: w,
       onUpdated: I
     } = e,
-    [P, k] = l.useState(false),
+    [k, P] = l.useState(false),
     [R, D] = l.useState(false),
     [M, L] = l.useState(false),
     [U, B] = l.useState(false),
@@ -253,7 +253,7 @@ function T(e) {
         var e;
         F((null == (e = t.body) ? true : e.message) || t.message || "Failed to remove user from group")
       }
-    }, Y = (null == (t = v.hd[w.planIdFromItems]) ? true : t.premiumType) === v.PremiumTypes.TIER_0, J = null == (n = w.metadata) ? true : n.ended_at, X = null != J ? new Date(J).toISOString().substring(0, 10) : "", Z = [{
+    }, Y = (null == (t = v.hd[w.planIdFromItems]) ? true : t.premiumType) === v.PremiumTypes.TIER_0, J = null == (n = w.metadata) ? true : n.ended_at, X = null != J ? new Date(J).toISOString().substring(0, 10) : "", $ = [{
       id: "id",
       label: "ID: ".concat(w.id),
       isDisabled: false
@@ -261,20 +261,20 @@ function T(e) {
       id: "status",
       label: "Status: ".concat((null == E && (E = w.status), E in A) ? A[E] : "Unknown status ".concat(E)),
       isDisabled: false
-    }], $ = w.hasActiveTrial, ee = (null == (r = w.metadata) ? true : r.active_discount_id) != null;
-  return $ && Z.push({
+    }], Z = w.hasActiveTrial, ee = (null == (r = w.metadata) ? true : r.active_discount_id) != null;
+  return Z && $.push({
     id: "trial",
     label: "Has Trial",
     isDisabled: false
-  }), ee && Z.push({
+  }), ee && $.push({
     id: "active-discount",
     label: "Has Active Discount",
     isDisabled: false
-  }), w.status !== f.Dmq.ACTIVE && Z.push({
+  }), w.status !== f.Dmq.ACTIVE && $.push({
     id: "dates",
     label: "Dates: ".concat((0, p.i$)(w.createdAt, "LL"), " - ").concat((0, p.i$)(w.currentPeriodEnd, "LL")),
     isDisabled: false
-  }), w.status === f.Dmq.PAUSED && Z.push({
+  }), w.status === f.Dmq.PAUSED && $.push({
     id: "pause-reason",
     label: "Pause Reason: ".concat(w.pauseReason in C ? C[w.pauseReason] : "Unknown pause reason ".concat(w.pauseReason)),
     isDisabled: false
@@ -284,12 +284,12 @@ function T(e) {
       label: "Type: ".concat(null == (N = w.planIdFromItems) ? "No plan id" : N in v.hd ? v.hd[N].name : "Unknown plan id ".concat(N)),
       className: _.lI,
       children: [(0, a.jsx)(u.CR_, {
-        items: Z,
+        items: $,
         label: "Tags",
         selectionMode: "none",
         selectionBehavior: "replace",
         disabledKeys: new Set
-      }), $ && (0, a.jsxs)("div", {
+      }), Z && (0, a.jsxs)("div", {
         className: _.VK,
         children: [(0, a.jsxs)(u.DUT, {
           onClick: () => {
@@ -363,7 +363,7 @@ function T(e) {
         className: _.VK,
         children: [(0, a.jsxs)(u.DUT, {
           onClick: () => {
-            k(!P)
+            P(!k)
           },
           className: _.Eh,
           children: [(0, a.jsx)("div", {
@@ -372,9 +372,9 @@ function T(e) {
               children: "Metadata"
             })
           }), (0, a.jsx)(m.A, {
-            direction: P ? m.A.Directions.UP : m.A.Directions.DOWN
+            direction: k ? m.A.Directions.UP : m.A.Directions.DOWN
           })]
-        }), P && (0, a.jsx)("ul", {
+        }), k && (0, a.jsx)("ul", {
           className: _.j3,
           children: Object.entries(w.metadata).map(e => {
             let [t, n] = e;

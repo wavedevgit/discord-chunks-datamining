@@ -48,8 +48,8 @@ let P = "seenQSTutorial",
   k = 0,
   U = false,
   G = false,
-  F = null,
-  V = [],
+  V = null,
+  F = [],
   B = null,
   H = 0,
   Y = [],
@@ -80,14 +80,14 @@ function q(e) {
 
 function Z(e) {
   let t = (0, d.A)(e);
-  return null == t || null != F && F !== t.type ? null : t
+  return null == t || null != V && V !== t.type ? null : t
 }
 
 function Q() {
   var e, t;
   let n = null != (e = I.A.getGuildId()) ? e : true,
     r = null != (t = A.A.getChannelId()) ? t : true;
-  switch (F) {
+  switch (V) {
     case u.rD.USER: {
       let e = h.default.getId();
       return T.Ay.getRecentlyTalked(r, 100).filter(t => {
@@ -158,33 +158,33 @@ function Q() {
 }
 
 function X(e, t) {
-  switch (F) {
+  switch (V) {
     case u.rD.USER: {
       let t = b.A.getGuild(I.A.getGuildId());
       e.unshift((0, u.jF)(null != t ? w.intl.formatToPlainString(w.t.FREzQs, {
         name: t.name
-      }) : w.intl.string(w.t.XFYW1o))), V = e;
+      }) : w.intl.string(w.t.XFYW1o))), F = e;
       break
     }
     case u.rD.TEXT_CHANNEL:
-      e.unshift((0, u.jF)(w.intl.string(w.t.W26k4V))), V = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.W26k4V))), F = e;
       break;
     case u.rD.VOICE_CHANNEL:
-      e.unshift((0, u.jF)(w.intl.string(w.t.zUoI5C))), V = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.zUoI5C))), F = e;
       break;
     case u.rD.GUILD:
-      e.unshift((0, u.jF)(w.intl.string(w.t.olADPs))), V = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.olADPs))), F = e;
       break;
     case u.rD.APPLICATION:
-      e.unshift((0, u.jF)(w.intl.string(w.t.VwK1ld))), V = e;
+      e.unshift((0, u.jF)(w.intl.string(w.t.VwK1ld))), F = e;
       break;
     default:
-      V = e
+      F = e
   }
-  if (t !== B) B = t, H = Math.max(t.length, H), k = (0, u.Vv)(u.vB.DOWN, false, V);
+  if (t !== B) B = t, H = Math.max(t.length, H), k = (0, u.Vv)(u.vB.DOWN, false, F);
   else {
-    let e = V[k];
-    null != e && e.type === u.rD.HEADER && (k = (0, u.Vv)(u.vB.DOWN, k, V))
+    let e = F[k];
+    null != e && e.type === u.rD.HEADER && (k = (0, u.Vv)(u.vB.DOWN, k, F))
   }
   es.emitChange()
 }
@@ -199,7 +199,7 @@ function J(e) {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
-  }, M), B = null, H = a.length, F = i, r.search(a)
+  }, M), B = null, H = a.length, V = i, r.search(a)
 }
 
 function $(e) {
@@ -235,7 +235,7 @@ function er(e) {
     queryMode: a
   } = e, o = i.trim();
   if (null == r) returnfalse;
-  if (F !== a) {
+  if (V !== a) {
     r.setResultTypes(null != a ? [a] : j), r.setLimit(null != a ? M : D);
     let e = null != (t = I.A.getGuildId()) ? t : true;
     a === u.rD.USER && null != e ? r.setOptions({
@@ -250,7 +250,7 @@ function er(e) {
       voiceChannelGuildFilter: true
     }, true)
   }
-  if ((F = a) === u.rD.USER) {
+  if ((V = a) === u.rD.USER) {
     let e = null != (n = I.A.getGuildId()) ? n : null;
     r.search(o, e)
   } else r.search(o, true)
@@ -300,8 +300,8 @@ class eo extends(i = Chunk311907.Ay.PersistedStore) {
     return {
       theme: _.A.theme,
       query: null != r ? r.query : "",
-      queryMode: F,
-      results: V,
+      queryMode: V,
+      results: F,
       selectedIndex: k,
       seenTutorial: U,
       maxQueryLength: H

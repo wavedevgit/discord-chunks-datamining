@@ -1,10 +1,10 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 42402 **/
 /** chunk id: 782844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => H,
-  D: () => M
+  A: () => B,
+  D: () => U
 });
-var i, Chunk627968 = require("./627968.js"),
+var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk284009 = require("./284009.js"),
   a = require.n(Chunk284009),
@@ -39,104 +39,104 @@ var i, Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk139674 = require("./139674.js");
 
-function V() {
-  let e = (0, o.bG)([E.default], () => {
-      let e = E.default.getCurrentUser();
+function k() {
+  let e = (0, o.bG)([j.default], () => {
+      let e = j.default.getCurrentUser();
       return a()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
     }),
-    t = (0, o.bG)([b.A], () => b.A.getBackupCodes()),
-    n = (0, g.g)(),
+    t = (0, o.bG)([A.A], () => A.A.getBackupCodes()),
+    n = (0, h.g)(),
     {
-      teams: i,
-      loading: s
+      teams: r,
+      loading: i
     } = (0, m.A)({
       refreshOnDepChange: true
     });
   return (0, l.jsxs)(c.lVW, {
-    children: [(0, l.jsxs)(p.x, {
-      setting: G.H.ACCOUNT_PROFILE,
-      children: [n && (0, l.jsx)(I.A, {}), (0, l.jsx)(R.A, {
+    children: [(0, l.jsxs)(f.x, {
+      setting: D.H.ACCOUNT_PROFILE,
+      children: [n && (0, l.jsx)(T.A, {}), (0, l.jsx)(w.A, {
         currentUser: e
-      }), (0, l.jsx)(L.A, {})]
-    }), (0, l.jsx)(p.x, {
-      setting: G.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
+      }), (0, l.jsx)(R.A, {})]
+    }), (0, l.jsx)(f.x, {
+      setting: D.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
       children: (0, l.jsxs)(c.nVY, {
-        className: w.PN,
-        label: k.intl.string(k.t.pKSjEj),
-        children: [e.mfaEnabled ? (0, l.jsx)(_.A, {}) : null, (0, l.jsx)(p.x, {
-          setting: G.H.ACCOUNT_CHANGE_PASSWORD,
+        className: G.PN,
+        label: M.intl.string(M.t.pKSjEj),
+        children: [e.mfaEnabled ? (0, l.jsx)(I.A, {}) : null, (0, l.jsx)(f.x, {
+          setting: D.H.ACCOUNT_CHANGE_PASSWORD,
           children: (0, l.jsx)(N.A, {})
-        }), (0, l.jsx)(p.x, {
-          setting: G.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-          children: (0, l.jsx)(T.A, {
+        }), (0, l.jsx)(f.x, {
+          setting: D.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
+          children: (0, l.jsx)(S.A, {
             backupCodes: t
           })
         })]
       })
-    }), (0, l.jsxs)(p.x, {
-      setting: G.H.ACCOUNT_REMOVAL,
+    }), (0, l.jsxs)(f.x, {
+      setting: D.H.ACCOUNT_REMOVAL,
       children: [(0, l.jsx)(c.cGx, {}), (0, l.jsx)(P.A, {
         currentUser: e,
-        userTeamsLoading: s,
-        userTeams: i
+        userTeamsLoading: i,
+        userTeams: r
       })]
     })]
   })
 }
-var M = ((i = {}).SECURITY = "SECURITY", i.STANDING = "STANDING", i);
-class U extends Chunk64700.PureComponent {
+var U = ((r = {}).SECURITY = "SECURITY", r.STANDING = "STANDING", r);
+class V extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       currentUser: e
     } = this.props;
-    (0, A.A)(e.id, e.getAvatarURL(true, 80))
+    (0, b.A)(e.id, e.getAvatarURL(true, 80))
   }
   componentWillUnmount() {
-    d.A.clearBackupCodes(), (0, u.Uo)()
+    u.A.clearBackupCodes(), (0, d.Uo)()
   }
   renderUnhidden() {
     let {
       subsection: e
     } = this.props;
-    return (0, l.jsx)(v.R, {
-      header: k.intl.string(k.t["JAIM/m"]),
-      children: (0, l.jsx)(y.A, {
-        parentSetting: G.H.ACCOUNT,
-        settingsSection: D.nc_.ACCOUNT,
-        panelClassName: w.SZ,
+    return (0, l.jsx)(E.R, {
+      header: M.intl.string(M.t["JAIM/m"]),
+      children: (0, l.jsx)(C.A, {
+        parentSetting: D.H.ACCOUNT,
+        settingsSection: L.nc_.ACCOUNT,
+        panelClassName: G.SZ,
         onTabChange: e => {
-          S.default.track(D.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-            target_tab_name: e === G.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
+          x.default.track(L.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+            target_tab_name: e === D.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
         defaultTabIndex: "ACCOUNT_STANDING" === e ? 1 : true,
         tabs: [{
-          title: k.intl.string(k.t.Am9YHi),
-          component: V,
-          setting: G.H.ACCOUNT_SECURITY_TAB
+          title: M.intl.string(M.t.Am9YHi),
+          component: k,
+          setting: D.H.ACCOUNT_SECURITY_TAB
         }, {
-          title: k.intl.string(k.t["Vov/9o"]),
-          component: x.A,
-          setting: G.H.PRIVACY_AND_SAFETY_STANDING
+          title: M.intl.string(M.t["Vov/9o"]),
+          component: g.A,
+          setting: D.H.PRIVACY_AND_SAFETY_STANDING
         }]
       })
     })
   }
   render() {
-    return this.props.hide ? (0, l.jsx)(h.A, {}) : this.renderUnhidden()
+    return this.props.hide ? (0, l.jsx)(p.A, {}) : this.renderUnhidden()
   }
 }
-let H = () => {
-  let e = (0, o.bG)([E.default], () => E.default.getCurrentUser()),
-    t = (0, o.bG)([j.A], () => j.A.hidePersonalInformation),
-    n = (0, o.bG)([C.A], () => C.A.theme),
-    i = (0, o.bG)([f.default], () => f.default.locale),
-    s = (0, o.bG)([O.A], () => O.A.getSubsection());
-  return null == e ? null : (0, l.jsx)(U, {
+let B = () => {
+  let e = (0, o.bG)([j.default], () => j.default.getCurrentUser()),
+    t = (0, o.bG)([y.A], () => y.A.hidePersonalInformation),
+    n = (0, o.bG)([v.A], () => v.A.theme),
+    r = (0, o.bG)([_.default], () => _.default.locale),
+    i = (0, o.bG)([O.A], () => O.A.getSubsection());
+  return null == e ? null : (0, l.jsx)(V, {
     theme: n,
     currentUser: e,
     hide: t,
-    locale: i,
-    subsection: s
+    locale: r,
+    subsection: i
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 60200 **/
+/** Chunk was on 77927 **/
 /** chunk id: 605691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => s
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,21 +12,21 @@ var Chunk627968 = require("./627968.js"),
   Chunk47167 = require("./47167.js"),
   Chunk985018 = require("./985018.jsx");
 
-function d(e, t) {
-  let d = i.useCallback(() => {
-    let i = (0, s.m1)(e, c.default, o.A),
-      d = u.intl.formatToPlainString(u.t.hJ5Ap4, {
+function s(e, t) {
+  let s = i.useCallback(() => {
+    let i = (0, c.m1)(e, o.default, u.A),
+      s = d.intl.formatToPlainString(d.t.hJ5Ap4, {
         name: i
       }),
-      b = u.intl.format(u.t.SSIVOu, {
+      f = d.intl.format(d.t.SSIVOu, {
         name: i
       });
-    e.isManaged() && (d = u.intl.formatToPlainString(u.t.hVGjEW, {
+    e.isManaged() && (s = d.intl.formatToPlainString(d.t.hVGjEW, {
       name: i
-    }), b = u.intl.format(u.t.IK1Qvs, {
+    }), f = d.intl.format(d.t.IK1Qvs, {
       name: i
     }));
-    let f = function(n) {
+    let A = function(n) {
       let r = arguments.length > 1 && true !== arguments[1] && arguments[1];
       a.A.closePrivateChannel(e.id, t, r)
     };
@@ -52,16 +52,16 @@ function d(e, t) {
         }
         return e
       }({
-        title: d,
-        body: b,
-        onSubmit: f
+        title: s,
+        body: f,
+        onSubmit: A
       }, t))
     })
   }, [e, t]);
   return (0, r.jsx)(l.Drp, {
     id: "leave-channel",
-    label: u.intl.string(u.t["26C4oi"]),
-    action: d,
+    label: d.intl.string(d.t["26C4oi"]),
+    action: s,
     color: "danger"
   })
 }

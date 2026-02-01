@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 475061, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 475061, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  p: () => C
+  p: () => N
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,44 +20,44 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 let I = Chunk723702.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function O(e) {
+function O(t) {
   let {
-    inputAndOutputAreBluetooth: t,
+    inputAndOutputAreBluetooth: e,
     canPromptSystemServiceInstallForVoice: i
-  } = e;
+  } = t;
   return (0, n.jsxs)(s.BJc, {
     children: [i && (0, n.jsx)(o.A, {
       sourcePage: "voice"
-    }), t && (0, n.jsx)(c.A, {
-      look: c.k.WARNING,
-      children: g.intl.string(g.t.Ioz3gx)
+    }), e && (0, n.jsx)(A.A, {
+      look: A.k.WARNING,
+      children: _.intl.string(_.t.Ioz3gx)
     })]
   })
 }
-let C = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_CATEGORY, {
-  useTitle: () => g.intl.string(g.t.K3lovD),
+let N = (0, Chunk419954.zZ)(Chunk780964.X.VOICE_CATEGORY, {
+  useTitle: () => _.intl.string(_.t.K3lovD),
   useInlineNotice: function() {
-    let e = (0, o.I)("voice"),
-      t = (0, r.x5)(E.oh.AUDIO_INPUT),
-      i = (0, r.x5)(E.oh.AUDIO_OUTPUT),
+    let t = (0, o.I)("voice"),
+      e = (0, r.x5)(g.oh.AUDIO_INPUT),
+      i = (0, r.x5)(g.oh.AUDIO_OUTPUT),
       s = l.useMemo(() => {
-        let e = I.some(e => {
+        let t = I.some(t => {
             var i;
-            return null == t || null == (i = t.hardwareId) ? true : i.startsWith(e)
+            return null == e || null == (i = e.hardwareId) ? true : i.startsWith(t)
           }),
-          n = I.some(e => {
-            var t;
-            return null == i || null == (t = i.hardwareId) ? true : t.startsWith(e)
+          n = I.some(t => {
+            var e;
+            return null == i || null == (e = i.hardwareId) ? true : e.startsWith(t)
           });
-        return e && n && (null == t ? true : t.containerId) != null && t.containerId === (null == i ? true : i.containerId)
-      }, [t, i]);
-    return l.useMemo(() => e.canPrompt || s ? {
-      type: u.W.STRONGLY_DISCOURAGED_CUSTOM,
+        return t && n && (null == e ? true : e.containerId) != null && e.containerId === (null == i ? true : i.containerId)
+      }, [e, i]);
+    return l.useMemo(() => t.canPrompt || s ? {
+      type: a.W.STRONGLY_DISCOURAGED_CUSTOM,
       notice: () => (0, n.jsx)(O, {
         inputAndOutputAreBluetooth: s,
-        canPromptSystemServiceInstallForVoice: e.canPrompt
+        canPromptSystemServiceInstallForVoice: t.canPrompt
       })
-    } : null, [e.canPrompt, s])
+    } : null, [t.canPrompt, s])
   },
-  buildLayout: () => [A.a, S.d, _.L]
+  buildLayout: () => [S.a, c.d, E.L]
 })

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 634686, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 634686, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   i: () => T
 });
@@ -13,5 +13,5 @@ var Chunk419954 = require("./419954.js"),
   Chunk985018 = require("./985018.jsx");
 let T = (0, Chunk419954.WI)(Chunk780964.X.BILLING_SECTION, {
   useTitle: () => d.intl.string(d.t["4uOdGr"]),
-  buildLayout: () => [a.y, u.w, o.i, r.Q, s.b]
+  buildLayout: () => [u.y, a.w, o.i, r.Q, s.b]
 })

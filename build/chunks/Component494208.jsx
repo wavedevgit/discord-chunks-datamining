@@ -1,7 +1,7 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 494208, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => h
+  A: () => p
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,16 +13,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk498654 = require("./498654.js");
 
-function h(e) {
+function p(e) {
   let {
     channel: t
-  } = e, [n, h] = l.useState(false), p = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
-    h(false)
+  } = e, [n, p] = l.useState(false), h = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
+    p(false)
   }, []), m = l.useCallback(() => {
-    n || (0, o.D3)("Popout"), h(!n)
+    n || (0, o.D3)("Popout"), p(!n)
   }, [n]);
   return (0, r.jsx)(i.YNO, {
-    targetElementRef: p,
+    targetElementRef: h,
     animation: i.YNO.Animation.NONE,
     position: "bottom",
     align: "right",
@@ -63,7 +63,7 @@ function h(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: p,
+        ref: h,
         className: d.Kk,
         onClick: m,
         icon: i.ysw,

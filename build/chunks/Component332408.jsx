@@ -2,7 +2,7 @@
 /** chunk id: 332408, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => V
+  A: () => F
 }), require("./896048.js"), require("./801541.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -104,7 +104,7 @@ let k = () => (0, r.jsx)("div", {
       fullWidth: true
     })
   },
-  F = e => {
+  V = e => {
     let {
       markAsDismissed: t,
       isCoachmark: n
@@ -148,7 +148,7 @@ let k = () => (0, r.jsx)("div", {
     })
   };
 
-function V(e) {
+function F(e) {
   let {
     markAsDismissed: t,
     showClientThemesCoachmark: n
@@ -191,7 +191,7 @@ function V(e) {
               isCoachmark: n
             })]
           })
-        }), (0, r.jsx)(F, {
+        }), (0, r.jsx)(V, {
           markAsDismissed: t,
           isCoachmark: n
         })]

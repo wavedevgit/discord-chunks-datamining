@@ -104,7 +104,7 @@ function G(e, t, n) {
   }).first()
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
   if ('"' !== t[1]) return G(e, t, n, r);
@@ -136,7 +136,7 @@ function F(e, t, n) {
   }).first()
 }
 
-function V(e) {
+function F(e) {
   return {
     order: e.order,
     match: e.match,
@@ -166,11 +166,11 @@ let H = Chunk542664.A.RULES,
   Q = /(@everyone|@here|@Clyde)\b/,
   X = /^[^\s]+@[^\s]+\.[^\s.]+/,
   J = {
-    link: V(o().defaultRules.link),
-    autolink: V(o().defaultRules.autolink),
-    url: V(o().defaultRules.url),
-    inlineCode: V(H.inlineCode),
-    codeBlock: V(H.codeBlock),
+    link: F(o().defaultRules.link),
+    autolink: F(o().defaultRules.autolink),
+    url: F(o().defaultRules.url),
+    inlineCode: F(H.inlineCode),
+    codeBlock: F(H.codeBlock),
     rawUserMention: B(W),
     rawRoleMention: B(K),
     rawChannelMention: B(q),
@@ -201,7 +201,7 @@ let H = Chunk542664.A.RULES,
       }
     },
     channel: {
-      match: (e, t) => F("#", e, t.channels),
+      match: (e, t) => V("#", e, t.channels),
       parse: e => ({
         type: "text",
         content: "<#".concat(e[1], ">")
@@ -264,8 +264,8 @@ let H = Chunk542664.A.RULES,
     })
   },
   $ = {
-    inlineCode: V(H.inlineCode),
-    codeBlock: V(H.codeBlock),
+    inlineCode: F(H.inlineCode),
+    codeBlock: F(H.codeBlock),
     mention: {
       match: o().anyScopeRegex(W),
       parse(e, t, n) {

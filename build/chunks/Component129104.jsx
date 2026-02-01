@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 129104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => b
@@ -25,11 +25,11 @@ function b(e) {
     selectedDefaultStatus: b,
     setIsEmojiPickerOpen: A,
     defaultStatusVariant: y
-  } = e, O = l.useRef(null), _ = (0, i.bG)([h.A, d.A], () => d.A.getChannel(h.A.getVoiceChannelId())), j = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
+  } = e, O = l.useRef(null), j = (0, i.bG)([p.A, d.A], () => d.A.getChannel(p.A.getVoiceChannelId())), x = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
     emojiId: t.id,
     emojiName: t.name,
     animated: !!t.animated
-  }) : null != b ? (0, r.jsx)(p.A, {
+  }) : null != b ? (0, r.jsx)(h.A, {
     className: m.Kk,
     userId: u.default.getId(),
     size: 20,
@@ -49,8 +49,8 @@ function b(e) {
         closePopout: l
       } = e;
       return (0, r.jsx)(c.A, {
-        channel: _,
-        guildId: null != (t = null == _ ? true : _.guild_id) ? t : true,
+        channel: j,
+        guildId: null != (t = null == j ? true : j.guild_id) ? t : true,
         closePopout: l,
         onSelectEmoji: e => {
           var t;
@@ -100,7 +100,7 @@ function b(e) {
         ref: O,
         active: s,
         tabIndex: 0,
-        renderButtonContents: null == t && null == b ? null : j
+        renderButtonContents: null == t && null == b ? null : x
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

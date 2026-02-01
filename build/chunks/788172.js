@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 788172, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 788172, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   m: () => d
 });
@@ -13,18 +13,18 @@ var Chunk171316 = require("./171316.js"),
 let d = (0, Chunk419954.zD)(Chunk780964.X.DATA_USAGE_QUESTS_3P_SETTING, {
   useTitle: () => o.intl.string(o.t.CyLYKZ),
   useSubtitle: () => o.intl.format(o.t["2QFDU/"], {
-    helpdeskArticle: s.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
+    helpdeskArticle: s.A.getArticleURL(a.MVz.QUESTS_PRIVACY_CONTROLS)
   }),
   useValue: function() {
     return !r.vf.useSetting()
   },
-  setValue: function(e) {
-    r.vf.updateSetting(!e)
+  setValue: function(t) {
+    r.vf.updateSetting(!t)
   },
   useDisabled: function() {
-    let e = r.H1.useSetting(),
-      t = (0, n.uM)();
-    return e || t
+    let t = r.H1.useSetting(),
+      e = (0, n.uM)();
+    return t || e
   },
   useSearchTerms: () => [o.intl.string(o.t.CyLYKZ)]
 })

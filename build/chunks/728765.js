@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 728765, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 728765, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   F: () => d
 }), require("./896048.js");
@@ -14,9 +14,9 @@ let d = (0, Chunk419954.zZ)(Chunk780964.X.NOTIFICATIONS_EMAIL_CATEGORY, {
   useTitle: () => o.intl.string(o.t["w/qqKK"]),
   initialize: function() {
     let {
-      initialized: e
+      initialized: t
     } = s.A.getEmailSettings();
-    e || (0, l.cR)()
+    t || (0, l.cR)()
   },
-  buildLayout: () => [...a.P, u.Q]
+  buildLayout: () => [...u.P, a.Q]
 })

@@ -1,21 +1,21 @@
-/** Chunk was on 78376 **/
-/** chunk id: 562519, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 56795 **/
+/** chunk id: 562519, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => n
 }), require("./896048.js");
 var Chunk362474 = require("./362474.js");
 
-function i(e, t, n) {
+function r(e, t, s) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: s,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : e[t] = s, e
 }
-class l {
+class n {
   _load() {
-    let e = r.u.get(this._key);
+    let e = i.u.get(this._key);
     null != e && (this._set = new Set(e))
   }
   values() {
@@ -31,7 +31,7 @@ class l {
   }
   _persist() {
     let e = Array.from(this._set.values());
-    r.u.set(this._key, e)
+    i.u.set(this._key, e)
   }
   add(e) {
     this._set.add(e), requestIdleCallback(() => {
@@ -42,6 +42,6 @@ class l {
     return this._set.has(e)
   }
   constructor(e) {
-    i(this, "_key", true), i(this, "_set", true), this._key = "$persisted-set-".concat(e), this._set = new Set, this._load()
+    r(this, "_key", true), r(this, "_set", true), this._key = "$persisted-set-".concat(e), this._set = new Set, this._load()
   }
 }

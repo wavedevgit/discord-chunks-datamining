@@ -1,17 +1,17 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 61344 **/
 /** chunk id: 420819, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => l
+  A: () => r
 });
 var Chunk621466 = require("./621466.js");
 
-function l(e, t) {
+function r(e, t) {
   let n = e.offsetTop,
-    l = e.offsetParent;
-  for (; null != l;) {
+    r = e.offsetParent;
+  for (; null != r;) {
     var i;
-    if (l === t || !(0, r.vq)(l, HTMLElement)) break;
-    n += null != (i = l.offsetTop) ? i : 0, l = l.offsetParent
+    if (r === t || !(0, l.vq)(r, HTMLElement)) break;
+    n += null != (i = r.offsetTop) ? i : 0, r = r.offsetParent
   }
   return n
 }

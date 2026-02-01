@@ -1,7 +1,7 @@
-/** Chunk was on 4670 **/
-/** chunk id: 211639, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 211639, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  TC: () => C
+  TC: () => N
 });
 var Chunk934551 = require("./934551.js"),
   Chunk824552 = require("./824552.js"),
@@ -16,31 +16,31 @@ var Chunk934551 = require("./934551.js"),
   Chunk570874 = require("./570874.js"),
   Chunk531525 = require("./531525.js"),
   Chunk985018 = require("./985018.jsx");
-let E = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
+let g = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
+    useTitle: () => E.intl.string(E.t["+o1pDZ"]),
     StronglyDiscouragedCustomComponent: Chunk130066.A,
-    usePredicate: () => !(0, a.dk)("ContentAndSocialPanel"),
+    usePredicate: () => !(0, u.dk)("ContentAndSocialPanel"),
     buildLayout: () => []
   }),
-  g = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
-    getTitle: () => _.intl.string(_.t["/7xJCF"]),
-    buildLayout: () => [d.e, A.q, T.N, c.Y]
+  _ = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
+    getTitle: () => E.intl.string(E.t["/7xJCF"]),
+    buildLayout: () => [d.e, S.q, T.N, A.Y]
   }),
   I = (0, Chunk419954.dT)(Chunk780964.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
     initialize: () => {
       l.A.fetch()
     },
-    getTitle: () => _.intl.string(_.t.YpCiMt),
+    getTitle: () => E.intl.string(E.t.YpCiMt),
     buildLayout: () => [o.j]
   }),
   O = (0, Chunk419954.t_)(Chunk780964.X.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
-    usePredicate: () => (0, a.dk)("ContentAndSocialPanel"),
-    buildLayout: () => [g, I]
+    useTitle: () => E.intl.string(E.t["+o1pDZ"]),
+    usePredicate: () => (0, u.dk)("ContentAndSocialPanel"),
+    buildLayout: () => [_, I]
   }),
-  C = (0, Chunk419954.i4)(Chunk780964.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
-    useTitle: () => _.intl.string(_.t["+o1pDZ"]),
-    getLegacySearchKey: () => (0, a.WJ)("ContentAndSocialPanel") ? true : S.H.CONTENT_SOCIAL,
+  N = (0, Chunk419954.i4)(Chunk780964.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
+    useTitle: () => E.intl.string(E.t["+o1pDZ"]),
+    getLegacySearchKey: () => (0, u.WJ)("ContentAndSocialPanel") ? true : c.H.CONTENT_SOCIAL,
     icon: Chunk934551.ShieldUserIcon,
-    buildLayout: () => (0, a.WJ)("ContentAndSocialPanel") ? [O] : [E]
+    buildLayout: () => (0, u.WJ)("ContentAndSocialPanel") ? [O] : [g]
   })

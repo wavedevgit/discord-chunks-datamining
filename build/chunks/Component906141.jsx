@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 906141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => B
@@ -80,13 +80,13 @@ let B = Chunk64700.memo(function e(t) {
       className: G,
       onContextMenu: B,
       onClick: F,
-      disableInteraction: K = false,
-      hasThread: Y,
+      disableInteraction: Y = false,
+      hasThread: K,
       treatSpam: W
     } = t,
     z = L.sl8.has(o.type) ? o.messageReference : true,
-    q = (0, a.bG)([p.A], () => p.A.getMessageByReference(z)),
-    X = (0, a.bG)([f.A], () => o.type === L.lAJ.THREAD_STARTER_MESSAGE && q.state === p.a.LOADED ? f.A.getChannel(q.message.channel_id) : null),
+    X = (0, a.bG)([h.A], () => h.A.getMessageByReference(z)),
+    q = (0, a.bG)([f.A], () => o.type === L.lAJ.THREAD_STARTER_MESSAGE && X.state === h.a.LOADED ? f.A.getChannel(X.message.channel_id) : null),
     J = g.X6.useSetting(),
     Q = g.hD.useSetting(),
     Z = g.rs.useSetting(),
@@ -95,7 +95,7 @@ let B = Chunk64700.memo(function e(t) {
     et = (0, d.A)(null == i ? true : i.id),
     {
       disableReactionCreates: en
-    } = (0, x.A)(i),
+    } = (0, _.A)(i),
     {
       content: er,
       hasSpoilerEmbeds: el,
@@ -107,9 +107,9 @@ let B = Chunk64700.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    es = (0, j.Ay)(o),
+    es = (0, x.Ay)(o),
     ea = (0, a.bG)([f.A], () => o.hasFlag(L.pr7.HAS_THREAD) && f.A.getChannel(b.default.castMessageIdAsChannelId(o.id))),
-    eo = o.type === L.lAJ.THREAD_STARTER_MESSAGE && q.state === p.a.LOADED && null != X,
+    eo = o.type === L.lAJ.THREAD_STARTER_MESSAGE && X.state === h.a.LOADED && null != q,
     ec = !eo && true === l,
     eu = (0, I.A)({
       message: o,
@@ -117,12 +117,12 @@ let B = Chunk64700.memo(function e(t) {
       enabled: ec
     }),
     ed = (0, c.P)(o),
-    eh = (0, A._f)(o.id, o.channel_id),
-    ep = (0, h.A)(o),
+    ep = (0, A._f)(o.id, o.channel_id),
+    eh = (0, p.A)(o),
     eg = (0, E.fF)(o);
   return eo ? (0, r.jsx)(e, V(U({}, t), {
-    message: q.message,
-    channel: X,
+    message: X.message,
+    channel: q,
     hasThread: false
   })) : (m.A.isBlockedForMessage(o) ? l = M.t["+FcYM/"] : m.A.isIgnoredForMessage(o) ? l = M.t["VFWjc+"] : (0, O.kf)(o) && W && (l = M.t.xfkfTK), true !== l) ? (0, r.jsx)(H, {
     className: G,
@@ -133,10 +133,10 @@ let B = Chunk64700.memo(function e(t) {
     compact: D,
     className: s()(G, {
       [k.M1]: (0, y.ec)(o),
-      [k.XN]: K,
+      [k.XN]: Y,
       [k._A]: t.isGroupStart
     }),
-    childrenRepliedMessage: (0, R.A)(o, i, z, q, D),
+    childrenRepliedMessage: (0, R.A)(o, i, z, X, D),
     childrenHeader: (0, T.A)(V(U({}, t), {
       author: es,
       guildId: i.guild_id
@@ -153,26 +153,26 @@ let B = Chunk64700.memo(function e(t) {
       disableReactionCreates: en,
       disableComponentInteractivity: true,
       disableReactionUpdates: false,
-      renderThreadAccessory: Y,
+      renderThreadAccessory: K,
       inlineAttachmentMedia: J,
       inlineEmbedMedia: Q,
       renderEmbeds: Z,
       gifAutoPlay: $,
-      poll: ep,
+      poll: eh,
       showListsAndHeaders: ee,
       showMaskedLinks: ee,
       shouldHideMediaOptions: et,
       enabledContentHarmTypeFlags: ed,
-      ctaButtonType: eh
+      ctaButtonType: ep
     }),
     childrenExecutedCommand: (0, w.A)(o, i, D),
     childrenMessageContent: (0, N.A)(t, er),
     childrenSystemMessage: (0, P.A)(t),
     onContextMenu: B,
     onClick: F,
-    hasThread: false !== Y && null != ea && o.hasFlag(L.pr7.HAS_THREAD),
+    hasThread: false !== K && null != ea && o.hasFlag(L.pr7.HAS_THREAD),
     hasReply: o.type === L.lAJ.REPLY,
-    isSystemMessage: (0, _.A)(o),
+    isSystemMessage: (0, j.A)(o),
     messageRef: eu,
     author: es,
     "aria-labelledby": eg,

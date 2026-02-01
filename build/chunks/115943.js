@@ -797,13 +797,13 @@ var t = function() {
       var w = v[m],
         M = (w.rect.x, w.rect.y, w.rect.width),
         G = w.rect.height,
-        F = w.img;
-      new Uint32Array(F.buffer);
-      var V = 4 * M,
+        V = w.img;
+      new Uint32Array(V.buffer);
+      var F = 4 * M,
         B = 4;
       if (U <= 256 && false == u) {
-        for (var H = new Uint8Array((V = Math.ceil(_ * M / 8)) * G), Y = S[m], W = 0; W < G; W++) {
-          var b = W * V,
+        for (var H = new Uint8Array((F = Math.ceil(_ * M / 8)) * G), Y = S[m], W = 0; W < G; W++) {
+          var b = W * F,
             K = W * M;
           if (8 == _)
             for (var z = 0; z < M; z++) H[b + z] = Y[K + z];
@@ -814,16 +814,16 @@ var t = function() {
           else if (1 == _)
             for (var z = 0; z < M; z++) H[b + (z >> 3)] |= Y[K + z] << 7 - (7 & z) * 1
         }
-        F = H, f = 3, B = 1
+        V = H, f = 3, B = 1
       } else if (false == O && 1 == v.length) {
         for (var H = new Uint8Array(M * G * 3), q = M * G, b = 0; b < q; b++) {
           var Z = 3 * b,
             Q = 4 * b;
-          H[Z] = F[Q], H[Z + 1] = F[Q + 1], H[Z + 2] = F[Q + 2]
+          H[Z] = V[Q], H[Z + 1] = V[Q + 1], H[Z + 2] = V[Q + 2]
         }
-        F = H, f = 2, B = 3, V = 3 * M
+        V = H, f = 2, B = 3, F = 3 * M
       }
-      w.img = F, w.bpl = V, w.bpp = B
+      w.img = V, w.bpl = F, w.bpp = B
     }
     return {
       ctype: f,
@@ -883,20 +883,20 @@ var t = function() {
             k = Math.min(x.y, M.y),
             U = Math.max(x.x + x.width, M.x + M.width),
             G = Math.max(x.y + x.height, M.y + M.height),
-            F = {
+            V = {
               x: j,
               y: k,
               width: U - j,
               height: G - k
             };
-          s[l - 1].dispose = 1, l - 1 != 0 && _(t, n, r, s, l - 1, F, a), _(t, n, r, s, l, F, a)
+          s[l - 1].dispose = 1, l - 1 != 0 && _(t, n, r, s, l - 1, V, a), _(t, n, r, s, l, V, a)
         }
       }
-    var V = 0;
+    var F = 0;
     if (1 != t.length)
       for (var P = 0; P < s.length; P++) {
         var L = s[P];
-        V += L.rect.width * L.rect.height
+        F += L.rect.width * L.rect.height
       }
     return s
   }

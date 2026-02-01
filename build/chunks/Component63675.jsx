@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 63675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -30,8 +30,8 @@ function b(e) {
     guildId: h,
     className: E,
     showPremiumIcon: O = true,
-    showResetThemeButton: C = false,
-    forcedDivider: x
+    showResetThemeButton: x = false,
+    forcedDivider: C
   } = e, S = (0, u.Ay)(t.id, h), {
     primaryColor: T,
     secondaryColor: I
@@ -40,17 +40,17 @@ function b(e) {
     displayProfile: S,
     pendingThemeColors: i,
     isPreview: true
-  }), y = p.Ay.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(h, 80), j = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(N, j, false);
+  }), N = p.Ay.canUsePremiumProfileCustomization(t), y = null != n ? n : t.getAvatarURL(h, 80), j = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(y, j, false);
   if (null == T || null == I) return null;
   let P = e => {
     s(a()(e, null == S ? true : S.themeColors) ? true : e)
   };
   return (0, r.jsx)(g.A, {
     title: A.intl.string(A.t.DMeO2X),
-    disabled: !y && !b,
+    disabled: !N && !b,
     className: l()(f.__invalid_profileThemesSection, E),
     showPremiumIcon: O,
-    forcedDivider: x,
+    forcedDivider: C,
     children: (0, r.jsxs)("div", {
       className: f.hd,
       children: [(0, r.jsx)("div", {
@@ -83,7 +83,7 @@ function b(e) {
             children: A.intl.string(A.t["8elvy6"])
           })
         })
-      }), C && null != h && (0, r.jsx)("div", {
+      }), x && null != h && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: f.WA,
         children: (0, r.jsx)(c.Button, {

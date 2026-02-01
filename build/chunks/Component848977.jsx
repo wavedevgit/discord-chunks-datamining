@@ -1,4 +1,4 @@
-/** Chunk was on 86901 **/
+/** Chunk was on 93169 **/
 /** chunk id: 848977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -18,35 +18,35 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 
 function b(e) {
-  let t, n, b = (t = (0, o.ed)(e.guild_id, e.id), n = (0, i.bG)([f.Ay, d.A, c.A, s.A], () => {
-    if (e.isForumPost()) return f.Ay.isForumPostUnread(e.id);
-    if (e.type !== A.rbe.GUILD_CATEGORY) return f.Ay.hasUnreadOrMentions(e.id);
+  let t, n, b = (t = (0, s.ed)(e.guild_id, e.id), n = (0, r.bG)([A.Ay, c.A, o.A, d.A], () => {
+    if (e.isForumPost()) return A.Ay.isForumPostUnread(e.id);
+    if (e.type !== f.rbe.GUILD_CATEGORY) return A.Ay.hasUnreadOrMentions(e.id);
     {
-      let t = d.A.getCategories(e.getGuildId());
+      let t = c.A.getCategories(e.getGuildId());
       if (null == t[e.id]) returnfalse;
       if (t[e.id].some(e => {
           let {
             channel: t
           } = e;
-          return (0, u.Z_)(t.type) && f.Ay.hasUnreadOrMentions(t.id)
+          return (0, u.Z_)(t.type) && A.Ay.hasUnreadOrMentions(t.id)
         })) returntrue;
       let n = new Set(t[e.id].map(e => e.channel.id)),
-        r = c.A.getThreadsForGuild(e.guild_id);
-      for (let e in r)
+        i = o.A.getThreadsForGuild(e.guild_id);
+      for (let e in i)
         if (n.has(e)) {
-          for (let t in r[e])
-            if (s.A.hasJoined(t) && !s.A.isMuted(t) && f.Ay.hasUnreadOrMentions(t)) returntrue
+          for (let t in i[e])
+            if (d.A.hasJoined(t) && !d.A.isMuted(t) && A.Ay.hasUnreadOrMentions(t)) returntrue
         } returnfalse
     }
   }, [e]), e.isForumLikeChannel() ? t > 0 : n);
-  return (0, r.jsx)(l.Drp, {
+  return (0, i.jsx)(l.Drp, {
     id: "mark-channel-read",
-    label: p.intl.string(p.t.e6RscS),
+    label: g.intl.string(g.t.e6RscS),
     action: function() {
       (0, a.hS)(e, {
-        section: A.JJy.CHANNEL_CONTEXT_MENU,
-        object: A.ZSU.MARK_CHANNEL_AS_READ_BUTTON,
-        objectType: A.AnalyticsObjectTypes.ACK_MANUAL
+        section: f.JJy.CHANNEL_CONTEXT_MENU,
+        object: f.ZSU.MARK_CHANNEL_AS_READ_BUTTON,
+        objectType: f.AnalyticsObjectTypes.ACK_MANUAL
       })
     },
     disabled: !b

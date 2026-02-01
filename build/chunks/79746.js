@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 79746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => f
 }), require("./896048.js");
 var Chunk451988 = require("./451988.js"),
   Chunk73153 = require("./73153.js"),
@@ -23,7 +23,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 let g = Chunk961350.default.getToken();
-class f extends Chunk272355.A {
+class m extends Chunk272355.A {
   _initialize() {
     this.focusedOrForegrounded = (0, d.R)(), a.default.addChangeListener(this.handleAuthenticationChange), i.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.h.subscribe("LOGIN_SUCCESS", this.handleLogin), i.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
@@ -93,4 +93,4 @@ class f extends Chunk272355.A {
     })
   }
 }
-let m = new f
+let f = new m

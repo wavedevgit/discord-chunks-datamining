@@ -1,4 +1,4 @@
-/** Chunk was on 87557 **/
+/** Chunk was on 90228 **/
 /** chunk id: 988436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => T,
@@ -37,7 +37,7 @@ function T(e) {
     transitionState: y,
     onClose: T,
     sourceQuestContent: N
-  } = e, [w, I] = (0, l.useState)(r), P = (0, x.UX)(), k = (0, f.Ut)(), R = null == (t = (0, v.vU)()) ? true : t.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, A.Xf)({
+  } = e, [w, I] = (0, l.useState)(r), k = (0, x.UX)(), P = (0, f.Ut)(), R = null == (t = (0, v.vU)()) ? true : t.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, A.Xf)({
     useReducedMotion: D,
     className: O.Zf
   }), L = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), U = (0, _.YL)(n), B = (0, o.bG)([p.A], () => p.A.getState().theme), G = (0, d.Mw)(B) ? C.NJ.DARK : C.NJ.LIGHT, {
@@ -46,7 +46,7 @@ function T(e) {
   } = (0, x.Wj)({
     questId: n.id,
     beforeRequest: () => {
-      M.startAnimation(), k({
+      M.startAnimation(), P({
         questId: n.id,
         questContent: h.uF.CONNECTIONS_MODAL,
         questContentCTA: b.Cy.DEFIBRILLATOR,
@@ -61,7 +61,7 @@ function T(e) {
     transitionState: y,
     onClose: T,
     title: S.intl.string(S.t.W5lmKt),
-    subtitle: P.message,
+    subtitle: k.message,
     actions: [{
       variant: "secondary",
       onClick: () => void(T(), (0, j.b6)({

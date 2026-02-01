@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 976966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk620168 = require("./620168.js");
 
-function x(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,45 +63,45 @@ function E(e) {
     onSearchModeChange: i,
     totalResults: o,
     isIndexing: c,
-    isSearching: h,
-    documentsIndexed: p,
+    isSearching: p,
+    documentsIndexed: h,
     selectedChannelId: b
-  } = e, x = (0, m.H)(t), {
+  } = e, _ = (0, m.H)(t), {
     totalFilters: v
-  } = (0, A.vj)(x, t), E = l.useMemo(() => {
+  } = (0, A.vj)(_, t), E = l.useMemo(() => {
     if (t.type === y.I4_.DMS) {
       var e, n;
-      let t = null != (e = null == (n = (0, g.Zf)(x).channel_id) ? true : n.length) ? e : 0;
-      return t > 0 ? _.intl.format(_.t.A2dqWG, {
+      let t = null != (e = null == (n = (0, g.Zf)(_).channel_id) ? true : n.length) ? e : 0;
+      return t > 0 ? j.intl.format(j.t.A2dqWG, {
         filterCount: t
-      }) : _.intl.string(_.t.tc619d)
+      }) : j.intl.string(j.t.tc619d)
     }
     return null
-  }, [t.type, x]), [S, I] = l.useState(null), N = l.useMemo(() => h ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [T, R] = (0, d.kn)(N), D = T === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, L = l.useCallback(e => {
+  }, [t.type, _]), [S, I] = l.useState(null), N = l.useMemo(() => p ? [] : [a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [T, R] = (0, d.kn)(N), D = T === a.M.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, L = l.useCallback(e => {
     null != e && D && R(O.i.USER_DISMISS), I(e)
   }, [D, R, I]), M = l.useCallback(e => {
     R("user:explicit" === e ? O.i.USER_DISMISS : O.i.AUTO_DISMISS)
   }, [R]), G = l.useCallback(() => {
     L(null), f.A.openSearchFiltersModal(t)
-  }, [L, t]), k = l.useMemo(() => v > 0 ? _.intl.format(_.t.uaR4sI, {
+  }, [L, t]), k = l.useMemo(() => v > 0 ? j.intl.format(j.t.uaR4sI, {
     filterCount: v
-  }) : _.intl.string(_.t.UdhTtk), [v]), U = t.type === y.I4_.DMS || t.type === y.I4_.CHANNEL;
+  }) : j.intl.string(j.t.UdhTtk), [v]), U = t.type === y.I4_.DMS || t.type === y.I4_.CHANNEL;
   return (0, r.jsxs)("header", {
-    className: s()(j.wL, {
-      [j.g$]: null != E
+    className: s()(x.wL, {
+      [x.g$]: null != E
     }),
     children: [(0, r.jsx)("div", {
-      className: j.TN,
+      className: x.TN,
       role: "status",
       children: (0, r.jsx)(C, {
         totalResults: o,
         subtitle: E,
         isIndexing: c,
-        isSearching: h,
-        documentsIndexed: p
+        isSearching: p,
+        documentsIndexed: h
       })
     }), (0, r.jsxs)("div", {
-      className: j.vd,
+      className: x.vd,
       children: [(0, r.jsx)(u.Button, {
         variant: "secondary",
         onClick: G,
@@ -143,11 +143,11 @@ function C(e) {
 
 function S() {
   return (0, r.jsx)("div", {
-    className: j.zp,
+    className: x.zp,
     children: (0, r.jsx)(u.y$y, {
       type: u.y$y.Type.SPINNING_CIRCLE,
-      className: j.u1,
-      itemClassName: j.pu
+      className: x.u1,
+      itemClassName: x.pu
     })
   })
 }
@@ -158,18 +158,18 @@ function I(e) {
   } = e;
   return (0, r.jsx)(c.m, {
     asContainer: true,
-    text: _.intl.formatToPlainString(_.t["4Y3O+O"], {
+    text: j.intl.formatToPlainString(j.t["4Y3O+O"], {
       count: null != t ? t : ""
     }),
     children: (0, r.jsxs)("div", {
-      className: j.q_,
+      className: x.q_,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: (0, r.jsx)(u.MzZ, {
-          className: j.Zd,
-          href: p.A.getArticleURL(y.MVz.SEARCH_INDEXING),
-          children: _.intl.string(_.t["G3EA+4"])
+          className: x.Zd,
+          href: h.A.getArticleURL(y.MVz.SEARCH_INDEXING),
+          children: j.intl.string(j.t["G3EA+4"])
         })
       }), (0, r.jsx)(S, {})]
     })
@@ -181,7 +181,7 @@ function N() {
     children: [(0, r.jsx)(u.Text, {
       variant: "text-md/medium",
       color: "text-default",
-      children: _.intl.string(_.t.uixzLf)
+      children: j.intl.string(j.t.uixzLf)
     }), (0, r.jsx)(S, {})]
   })
 }
@@ -193,12 +193,12 @@ function T(e) {
   } = e, l = (0, r.jsx)(u.Text, {
     variant: "text-md/medium",
     color: "text-strong",
-    children: _.intl.format(_.t.ZGVL3g, {
+    children: j.intl.format(j.t.ZGVL3g, {
       count: t
     })
   });
   return null != n ? (0, r.jsxs)("div", {
-    className: j.hy,
+    className: x.hy,
     children: [l, (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
       color: "text-subtle",
@@ -215,11 +215,11 @@ function P(e) {
     setOpenPopout: s,
     onPopoverRequestClose: a,
     isPopoverVisible: c
-  } = e, d = l.useRef(null), p = h.Hu.useSetting(), g = l.useCallback(e => {
-    if (p !== e) {
+  } = e, d = l.useRef(null), h = p.Hu.useSetting(), g = l.useCallback(e => {
+    if (h !== e) {
       if ((0, b._k)({
           searchContext: t,
-          prevIsCrossDMSettingEnabled: h.Hu.getSetting(),
+          prevIsCrossDMSettingEnabled: p.Hu.getSetting(),
           isCrossDMSettingEnabled: e,
           location: b.vy.SEARCH_HEADER
         }), e) {
@@ -234,9 +234,9 @@ function P(e) {
         };
         f.A.transitionStateToSearchContext(t, e)
       }
-      s(null), h.Hu.updateSetting(e)
+      s(null), p.Hu.updateSetting(e)
     }
-  }, [p, s, t, n]), [m, A] = l.useMemo(() => [p ? _.intl.string(_.t["8lklch"]) : _.intl.string(_.t.ji3jTF), p ? _.intl.string(_.t.RMQZCa) : _.intl.string(_.t["v/PagC"])], [p]), O = l.useMemo(() => ({
+  }, [h, s, t, n]), [m, A] = l.useMemo(() => [h ? j.intl.string(j.t["8lklch"]) : j.intl.string(j.t.ji3jTF), h ? j.intl.string(j.t.RMQZCa) : j.intl.string(j.t["v/PagC"])], [h]), O = l.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -255,34 +255,34 @@ function P(e) {
           "data-menu-migrated-auto": true,
           navId: "search-settings-cog",
           onClose: t,
-          "aria-label": _.intl.string(_.t.fb59v0),
+          "aria-label": j.intl.string(j.t.fb59v0),
           onSelect: () => s(null),
           children: (0, r.jsxs)(u.rXV, {
-            label: _.intl.string(_.t["/tMwrA"]),
+            label: j.intl.string(j.t["/tMwrA"]),
             children: [(0, r.jsx)(u.iDA, {
               id: "xdm-search-disabled",
               group: "xdm-search-items",
-              label: _.intl.string(_.t.jRkYAh),
-              checked: !p,
+              label: j.intl.string(j.t.jRkYAh),
+              checked: !h,
               action: () => g(false)
             }), (0, r.jsx)(u.iDA, {
               id: "xdm-search-enabled",
               group: "xdm-search-items",
-              label: _.intl.string(_.t["lWpJ/t"]),
-              checked: p,
+              label: j.intl.string(j.t["lWpJ/t"]),
+              checked: h,
               action: () => g(true)
             })]
           }, "xdm-search-items")
         })
       },
-      children: e => (0, r.jsx)(u.K0, v(x({}, e), {
+      children: e => (0, r.jsx)(u.K0, v(_({}, e), {
         buttonRef: d,
         variant: "secondary",
         icon: u.Zes,
         onClick: () => {
           s(i ? null : "settings")
         },
-        "aria-label": _.intl.string(_.t["3D5yo/"]),
+        "aria-label": j.intl.string(j.t["3D5yo/"]),
         size: "sm"
       }))
     }), (0, r.jsx)(o.AM, {
@@ -304,13 +304,13 @@ function w(e) {
     isPopoutOpen: i,
     setOpenPopout: s
   } = e, a = l.useRef(null), o = l.useMemo(() => [{
-    label: _.intl.string(_.t.CbaapP),
+    label: j.intl.string(j.t.CbaapP),
     value: y.BBH.NEWEST
   }, {
-    label: _.intl.string(_.t.OukXZj),
+    label: j.intl.string(j.t.OukXZj),
     value: y.BBH.OLDEST
   }, {
-    label: _.intl.string(_.t.q8gB52),
+    label: j.intl.string(j.t.q8gB52),
     value: y.BBH.MOST_RELEVANT
   }], []), c = l.useCallback(e => {
     s(null), n(e)
@@ -330,7 +330,7 @@ function w(e) {
         "data-menu-migrated-auto": true,
         navId: "search-result-sort-menu",
         onClose: n,
-        "aria-label": _.intl.string(_.t.utp2hS),
+        "aria-label": j.intl.string(j.t.utp2hS),
         onSelect: () => s(null),
         children: (0, r.jsx)(u.rXV, {
           children: o.map(e => {
@@ -349,15 +349,15 @@ function w(e) {
         }, "sort-by")
       })
     },
-    children: e => (0, r.jsx)(u.Button, v(x({}, e), {
+    children: e => (0, r.jsx)(u.Button, v(_({}, e), {
       buttonRef: a,
       variant: "secondary",
       icon: u.JNJ,
       onClick: () => {
         s(i ? null : "sort")
       },
-      text: _.intl.string(_.t.XvNMNk),
-      "aria-label": _.intl.string(_.t.XvNMNk),
+      text: j.intl.string(j.t.XvNMNk),
+      "aria-label": j.intl.string(j.t.XvNMNk),
       size: "sm"
     }))
   })

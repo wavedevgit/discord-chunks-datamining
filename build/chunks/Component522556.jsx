@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 522556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -69,7 +69,7 @@ function m(e) {
   }, []), O = (t = f({}, m), n = n = {
     guildId: null == i ? true : i.id,
     channelId: s,
-    disagreement: p.intl.string(p.t["/g10LC"])
+    disagreement: h.intl.string(h.t["/g10LC"])
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,13 +83,13 @@ function m(e) {
   switch (g) {
     case u.A5.NSFW_CHANNEL_AGE_VERIFY:
     case u.A5.GUILD_LARGE_SERVER:
-      return (0, r.jsx)(h.A, f({
+      return (0, r.jsx)(p.A, f({
         onAgree: y,
         onDisagree: b,
         modalType: g
       }, O));
     default:
-      return (0, r.jsx)(h.A, f({
+      return (0, r.jsx)(p.A, f({
         onAgree: A,
         onDisagree: b,
         modalType: g

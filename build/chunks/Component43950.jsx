@@ -1,4 +1,4 @@
-/** Chunk was on 47995 **/
+/** Chunk was on 88474 **/
 /** chunk id: 43950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk403362 = require("./403362.js"),
   Chunk427262 = require("./427262.js"),
   Chunk6676 = require("./6676.js");
-let h = Chunk104171.DN.SIZE_24;
+let A = Chunk104171.DN.SIZE_24;
 
 function v(e) {
   var t, n;
@@ -44,19 +44,19 @@ function v(e) {
         children: (0, r.jsx)("img", {
           alt: t,
           src: e,
-          className: A.P3
+          className: h.P3
         })
       })
     } let f = null != (t = d.large_image) ? t : d.small_image,
     m = (0, u.A)(l),
-    b = m ? A.RC : A.P3,
+    b = m ? h.RC : h.P3,
     _ = null != f ? (0, r.jsx)("img", {
       alt: null != (n = d.large_text) ? n : "",
       src: (0, g.uD)(p, f, [128, 128]),
       className: b
     }) : null;
   return m && null != s ? (_ = (0, r.jsx)(c.DUT, {
-    className: A.vk,
+    className: h.vk,
     onClick: () => {
       s(l, i.id)
     },
@@ -78,7 +78,7 @@ function O(e) {
   else {
     if (!(null != t && (0, u.A)(t)) || null == t.sync_id || null == i || null == l) return null;
     a = i, s = (0, r.jsx)(c.DUT, {
-      className: A.wp,
+      className: h.wp,
       onClick: () => {
         l(t)
       },
@@ -88,7 +88,7 @@ function O(e) {
   return (0, r.jsx)(c.Heading, {
     variant: "heading-sm/semibold",
     color: "text-strong",
-    className: A.wx,
+    className: h.wx,
     children: s
   })
 }
@@ -101,13 +101,13 @@ function S(e) {
   } = e, i = null == t ? true : t.details, s = null == t ? true : t.state, o = i;
   return (null != t && (0, u.A)(t) && null != s && (o = [(0, r.jsx)(f.A, {
     artists: s,
-    linkClassName: A.hw,
+    linkClassName: h.hw,
     canOpen: null != t.sync_id,
     onOpenSpotifyArtist: e => {
       null == l || l(t, n.id, e)
     }
   }, s)]), null == o || "" === o) ? null : (0, r.jsx)("div", {
-    className: a()(A.Mo, A.Tf, A.p9),
+    className: a()(h.Mo, h.Tf, h.p9),
     children: o
   })
 }
@@ -117,7 +117,7 @@ function j(e) {
     activity: t
   } = e, n = null == t ? true : t.state;
   return null == n || "" === n || (0, u.A)(t) ? null : (0, r.jsx)("div", {
-    className: a()(A.Mo, A.Tf, A.p9, A.__invalid_activity),
+    className: a()(h.Mo, h.Tf, h.p9, h.__invalid_activity),
     children: n
   })
 }
@@ -138,7 +138,7 @@ function x(e) {
   return (0, r.jsx)(d.A, {
     start: l,
     end: i,
-    className: A.Jq,
+    className: h.Jq,
     themed: true,
     singleLine: true
   })
@@ -157,25 +157,25 @@ function I(e) {
   } = e, y = [];
   null != n ? y = Array.from(n.embeddedActivity.userIds) : (0, u.A)(t) && null != c && (y = c.map(e => e.user.id));
   let I = (0, s.yK)([m.default], () => y.map(e => m.default.getUser(e)).filter(b.Vq)),
-    P = null != n || (0, u.A)(t),
-    E = l.useMemo(() => {
+    E = null != n || (0, u.A)(t),
+    C = l.useMemo(() => {
       let e = new Map;
-      return P && null != c && c.forEach(t => {
+      return E && null != c && c.forEach(t => {
         let n = t.member;
         null != n && e.set(t.user.id, n)
       }), e
-    }, [c, P]);
-  return P ? (0, r.jsxs)("div", {
-    className: A.ec,
+    }, [c, E]);
+  return E ? (0, r.jsxs)("div", {
+    className: h.ec,
     children: [(0, r.jsxs)("div", {
-      className: A.Wh,
+      className: h.Wh,
       children: [(0, r.jsx)(v, {
         activity: t,
         user: i,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
-        className: A.X0,
+        className: h.X0,
         children: [(0, r.jsx)(O, {
           activity: t,
           embeddedApp: n,
@@ -187,24 +187,24 @@ function I(e) {
         }), (0, r.jsx)(j, {
           activity: t
         }), y.length > 0 && (0, r.jsx)(p.Ay, {
-          className: A.TN,
+          className: h.TN,
           guildId: a.guild_id,
           users: I,
-          size: h,
+          size: A,
           max: 7,
           renderUser: e => {
             var t;
             if (null == e || e === p.mt) return null;
-            let n = E.get(e.id),
+            let n = C.get(e.id),
               l = null != (t = null == n ? true : n.nick) ? t : _.Ay.getName(e);
             return (0, r.jsx)(o.m, {
               asContainer: true,
               text: l,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(a.guild_id, h),
+                src: e.getAvatarURL(a.guild_id, A),
                 alt: l,
-                className: A.my
+                className: h.my
               }, e.id)
             }, e.id)
           }

@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 131494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => E
@@ -27,26 +27,26 @@ var Chunk478437 = require("./478437.js"),
 
 function v(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : b.A;
-  return null != e && e.type !== r.r.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(x.hVb.VIEW_CHANNEL, e)
+  return null != e && e.type !== r.r.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(_.hVb.VIEW_CHANNEL, e)
 }
 
 function E(e) {
   var t;
   let n = (0, l.bG)([O.Ay], () => O.Ay.isMuted(e)),
     r = (0, c.BP)(e),
-    x = (0, l.yK)([s.Ay, A.A], () => s.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], A.A.getBlockedOrIgnoredIDs()))),
-    E = (0, a.H)(null == (t = x[0]) ? true : t.location),
+    _ = (0, l.yK)([s.Ay, A.A], () => s.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], A.A.getBlockedOrIgnoredIDs()))),
+    E = (0, a.H)(null == (t = _[0]) ? true : t.location),
     C = (0, i.Gp)(E),
     {
       guildHasVoice: S,
       guildHasVideo: I,
       selectedVoiceChannelHasVideo: N
-    } = (0, l.cf)([y.A, _.A, m.A, b.A, f.A], () => {
+    } = (0, l.cf)([y.A, j.A, m.A, b.A, f.A], () => {
       var t;
       let r = y.A.getVoiceChannelId(),
         l = null == (t = m.A.getGuild(e)) ? true : t.afkChannelId,
-        i = _.A.getUsersWithVideo(e),
-        s = (0, o.hs)(_.A.getVoiceStates(e));
+        i = j.A.getUsersWithVideo(e),
+        s = (0, o.hs)(j.A.getVoiceStates(e));
       return {
         guildHasVoice: (() => {
           if (n) returnfalse;
@@ -62,54 +62,54 @@ function E(e) {
           }
           returnfalse
         })(),
-        selectedVoiceChannelHasVideo: null != r && _.A.hasVideo(r)
+        selectedVoiceChannelHasVideo: null != r && j.A.hasVideo(r)
       }
     }, [e, n]),
     T = g.default.getId();
-  return (0, l.cf)([y.A, f.A, s.Ay, d.A, p.A, b.A], () => {
+  return (0, l.cf)([y.A, f.A, s.Ay, d.A, h.A, b.A], () => {
     var t, l, i;
     let c = y.A.getVoiceChannelId(),
       g = (null == (l = f.A.getChannel(c)) ? true : l.guild_id) === e,
       m = false,
       A = false,
       O = false,
-      _ = false,
+      j = false,
       v = false,
       E = false;
     if (!g && n) return {
       audio: m,
-      video: _,
+      video: j,
       screenshare: v,
       liveStage: O,
       activeEvent: A,
       activity: E,
       isCurrentUserConnected: false
     };
-    let P = j.default.keys(d.A.getStageInstancesByGuild(e)).some(e => {
+    let P = x.default.keys(d.A.getStageInstancesByGuild(e)).some(e => {
         let t = f.A.getChannel(e);
         return null != t && b.A.can(u.Gk, t)
       }),
       w = g && null != (t = null == (i = f.A.getChannel(c)) ? true : i.isGuildStageVoice()) && t,
-      R = !!g && null != p.A.getActiveStreamForUser(T, e),
-      D = (0, o.Mt)(p.A.getAllApplicationStreams()).some(t => t.guildId === e),
+      R = !!g && null != h.A.getActiveStreamForUser(T, e),
+      D = (0, o.Mt)(h.A.getAllApplicationStreams()).some(t => t.guildId === e),
       L = g && N,
       M = (() => {
-        if (C) return x.length > 0;
-        for (let e of x) {
+        if (C) return _.length > 0;
+        for (let e of _) {
           let t = f.A.getChannel((0, a.H)(e.location));
-          if (null != t && (0, h.gV)(t.type)) returntrue
+          if (null != t && (0, p.gV)(t.type)) returntrue
         }
         returnfalse
       })(),
       G = s.Ay.getEmbeddedActivitiesForGuild(e).length > 0;
-    return g ? (m = true, A = (null == r ? true : r.channel_id) === c, O = w, _ = L, v = R, E = G) : (m = S, A = null != r, O = P, _ = I, v = D, E = M), {
+    return g ? (m = true, A = (null == r ? true : r.channel_id) === c, O = w, j = L, v = R, E = G) : (m = S, A = null != r, O = P, j = I, v = D, E = M), {
       audio: m,
-      video: _,
+      video: j,
       screenshare: v,
       liveStage: O,
       activeEvent: A,
       activity: E,
       isCurrentUserConnected: g || w
     }
-  }, [e, n, N, T, C, x, r, S, I])
+  }, [e, n, N, T, C, _, r, S, I])
 }

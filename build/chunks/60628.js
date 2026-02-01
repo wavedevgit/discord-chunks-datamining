@@ -43,12 +43,12 @@ let v = (0, Chunk64700.createContext)(null),
       calendarProps: k,
       descriptionProps: U,
       errorMessageProps: G,
-      ...F
+      ...V
     } = (0, h.Q)({
       ...(0, a.SK)(e),
       label: P,
       validationBehavior: C
-    }, N, w), [V, B] = (0, O.useState)(null), H = (0, O.useCallback)(() => {
+    }, N, w), [F, B] = (0, O.useState)(null), H = (0, O.useCallback)(() => {
       w.current && B(w.current.offsetWidth + "px")
     }, []);
     (0, E.w)({
@@ -101,7 +101,7 @@ let v = (0, Chunk64700.createContext)(null),
           triggerRef: w,
           placement: "bottom start",
           style: {
-            "--trigger-width": V
+            "--trigger-width": F
           },
           clearContexts: I
         }],
@@ -112,7 +112,7 @@ let v = (0, Chunk64700.createContext)(null),
             errorMessage: G
           }
         }],
-        [l.C, F]
+        [l.C, V]
       ]
     }, O.createElement("div", {
       ...(0, b.v)(q, z, Y),

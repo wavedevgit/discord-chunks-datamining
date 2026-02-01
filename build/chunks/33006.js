@@ -139,7 +139,7 @@ class P extends Chunk143236.EventEmitter {
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
         o = new x(!l ? s : N.bind(null, e, t), !l ? s : T.bind(null, e, t, 400), Number(n.get("v")), i);
-      if (l)(0, m.j7)(o, S(e.headers).origin, n.get("client_id")).then(() => {
+      if (l)(0, f.j7)(o, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => T(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(o, n))
       }).catch(e => {
@@ -169,7 +169,7 @@ class P extends Chunk143236.EventEmitter {
     }
     I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
       I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(v, e => e === r), this.emit("disconnect", r)
-    }), (0, m.j7)(r, l, i.get("client_id")).then(() => {
+    }), (0, f.j7)(r, l, i.get("client_id")).then(() => {
       v.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
       let {

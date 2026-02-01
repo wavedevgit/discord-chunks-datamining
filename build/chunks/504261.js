@@ -1,18 +1,18 @@
-/** Chunk was on 48898 **/
-/** chunk id: 504261, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 7602 **/
+/** chunk id: 504261, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => n
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js");
-let s = e => {
-  let [t, n] = i.useState(false);
+let n = e => {
+  let [t, s] = i.useState(false);
   return {
     isFocused: t,
     handleFocus: i.useCallback(t => {
-      e(t), n(true)
-    }, [e, n]),
+      e(t), s(true)
+    }, [e, s]),
     handleBlur: () => {
-      n(false)
+      s(false)
     }
   }
 }

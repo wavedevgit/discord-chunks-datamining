@@ -17,17 +17,17 @@ var Chunk311907 = require("./311907.js"),
   Chunk32160 = require("./32160.js");
 
 function f() {
-  let [e, t] = (0, r.yK)([l.A], () => [l.A.enabled, l.A.keepOpen]), n = (0, r.bG)([c.A], () => c.A.getVoiceChannelId()), f = (0, r.bG)([s.A], () => s.A.getChannel(n), [n]), m = null == f ? true : f.getGuildId();
+  let [e, t] = (0, r.yK)([l.A], () => [l.A.enabled, l.A.keepOpen]), n = (0, r.bG)([u.A], () => u.A.getVoiceChannelId()), f = (0, r.bG)([o.A], () => o.A.getChannel(n), [n]), g = null == f ? true : f.getGuildId();
   return e && null != f ? (0, i.jsx)(d.A, {
-    className: h.k,
-    children: (0, i.jsx)(o.A, {
-      width: p.ed.width,
-      height: p.ed.height,
-      guildId: m,
+    className: p.k,
+    children: (0, i.jsx)(s.A, {
+      width: h.ed.width,
+      height: h.ed.height,
+      guildId: g,
       channel: f,
       keepOpen: t,
       onClose: function() {
-        let e = (0, u.A)();
+        let e = (0, c.A)();
         null != e && (0, a.Lk)(e)
       },
       analyticsSource: "overlay"

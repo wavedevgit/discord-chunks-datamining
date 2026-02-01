@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 955872, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => B
@@ -77,7 +77,7 @@ function B() {
       let e = j.default.getCurrentUser();
       return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    n = (0, a.bG)([N.A], () => N.A.hidePersonalInformation),
+    n = (0, a.bG)([y.A], () => y.A.hidePersonalInformation),
     l = (0, a.cf)([I.A], () => k(U({}, I.A.getPendingChanges()), {
       showNotice: I.A.showNotice()
     })),
@@ -112,7 +112,7 @@ function B() {
       pendingValue: V,
       userValue: null == t || null == (e = t.collectibles) ? true : e.nameplate
     }),
-    z = (0, y.A)() && null != B ? A.Ay.parse(true, B).content : B,
+    z = (0, N.A)() && null != B ? A.Ay.parse(true, B).content : B,
     Z = P.Ay.canUsePremiumProfileCustomization(t),
     {
       analyticsLocations: X,
@@ -127,7 +127,7 @@ function B() {
   return n ? (0, r.jsx)(_.A, {}) : (0, r.jsxs)(m.f5, {
     value: X,
     children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(O.A, {
-      profilePreview: (0, r.jsx)(C.A, k(U({
+      profilePreview: (0, r.jsx)(x.A, k(U({
         user: t,
         canUsePremiumCustomization: Z,
         onUpsellClick: D.A,
@@ -143,7 +143,7 @@ function B() {
         isHighlighted: true
       })),
       children: (0, r.jsx)(L.A, {})
-    }), $ && (0, r.jsx)(x.A, {}), (0, r.jsx)(o.L, {
+    }), $ && (0, r.jsx)(C.A, {}), (0, r.jsx)(o.L, {
       innerRef: et,
       onChange: e => Q(e),
       threshold: .25,

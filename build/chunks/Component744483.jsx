@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 744483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -20,10 +20,10 @@ function g(e) {
   let {
     channel: t,
     showCallOrActivityPanel: n
-  } = e, g = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? true : t.isDM())), f = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = g === h.YvQ.PROFILE && m;
+  } = e, g = (0, l.bG)([u.Ay], () => u.Ay.getSection(t.id, null == t ? true : t.isDM())), f = (0, o.Ay)(t.getRecipientId()), m = (0, c.A)(), b = g === p.YvQ.PROFILE && m;
   return (0, r.jsx)(d.In, {
     disabled: !m || n,
-    tooltip: !m || n ? p.intl.string(p.t.YneDgF) : b ? p.intl.string(p.t.niD64e) : p.intl.string(p.t["+FAsHq"]),
+    tooltip: !m || n ? h.intl.string(h.t.YneDgF) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHq"]),
     icon: i.nRI,
     onClick: () => {
       (0, a.am)({

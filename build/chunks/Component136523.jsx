@@ -84,8 +84,8 @@ function I(e) {
         }
         P(false)
       }
-    }, [G, F] = i.useState((0, f.x7)(N)), V = (e, t, n) => {
-      w(t), F(n)
+    }, [G, V] = i.useState((0, f.x7)(N)), F = (e, t, n) => {
+      w(t), V(n)
     }, B = async () => (M || R || await U(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
@@ -101,7 +101,7 @@ function I(e) {
         }),
         focused: true,
         channel: t,
-        onChange: V,
+        onChange: F,
         onSubmit: B,
         type: d.oU.VOICE_CHANNEL_STATUS,
         canMentionRoles: false,

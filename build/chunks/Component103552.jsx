@@ -119,8 +119,8 @@ function I(e) {
     })
   }, [M]);
   let G = n(P),
-    F = 0 === G.length,
-    V = null != w ? w : d.intl.string(d.t["4o4z3e"]),
+    V = 0 === G.length,
+    F = null != w ? w : d.intl.string(d.t["4o4z3e"]),
     B = i.useId(),
     H = i.useCallback(() => new Promise(e => {
       let t = U.current;
@@ -186,11 +186,11 @@ function I(e) {
               }
             })
           }), (0, r.jsx)("div", {
-            children: x && (F ? (0, r.jsxs)("div", {
+            children: x && (V ? (0, r.jsxs)("div", {
               className: f.Ie,
               children: [(0, r.jsx)(u.Heading, {
                 variant: "heading-md/semibold",
-                children: V
+                children: F
               }), (0, r.jsx)(u.Text, {
                 color: "text-muted",
                 variant: "text-md/normal",

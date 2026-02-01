@@ -1,4 +1,4 @@
-/** Chunk was on 17534 **/
+/** Chunk was on 42402 **/
 /** chunk id: 535111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => b
@@ -22,7 +22,7 @@ function m(e) {
   let {
     name: t,
     applicationId: n
-  } = e, l = (0, h.A)({
+  } = e, l = (0, p.A)({
     location: "ActivityPanelGameCard",
     applicationId: n,
     source: d.Ob.RtcPanel,
@@ -31,7 +31,7 @@ function m(e) {
   return (0, r.jsx)(s.DUT, {
     onClick: l,
     className: i()(null != l && f.On),
-    children: (0, r.jsx)(p.A, {
+    children: (0, r.jsx)(h.A, {
       className: f.mO,
       children: t
     })
@@ -45,8 +45,8 @@ function b(e) {
     game: l,
     onClickNotSharing: i,
     isForceShowSharingPopout: d,
-    setIsForceShowSharingPopout: h,
-    ref: p,
+    setIsForceShowSharingPopout: p,
+    ref: h,
     popoutTargetRef: b
   } = e, A = null != n ? n.name : null != l ? l.name : g.intl.string(g.t["UQMV/E"]);
   return (0, c.z)(), (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function b(e) {
         className: f.Gt,
         game: n,
         pid: null == l ? true : l.pid,
-        ref: p
+        ref: h
       }), t ? (0, r.jsx)(s.npA, {
         size: "md",
         color: "currentColor",
@@ -66,7 +66,7 @@ function b(e) {
     }), (0, r.jsx)(o.M, {
       popoutTargetRef: b,
       isForceShowSharingPopout: d,
-      setIsForceShowSharingPopout: h,
+      setIsForceShowSharingPopout: p,
       children: (0, r.jsxs)("div", {
         className: f.pq,
         children: [null != A ? (0, r.jsx)(m, {

@@ -74,7 +74,7 @@ function j(e) {
     });
     return n || !i ? null : (0, r.jsx)(a.Drp, {
       id: "xbox-connect",
-      action: () => (0, m.openUserSettings)(f.X.CONNECTIONS_PANEL, {
+      action: () => (0, f.openUserSettings)(m.X.CONNECTIONS_PANEL, {
         section: v.nc_.CONNECTIONS
       }),
       label: S.intl.formatToPlainString(S.t.XWSHTb, {

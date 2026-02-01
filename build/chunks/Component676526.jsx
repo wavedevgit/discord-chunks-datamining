@@ -1,4 +1,4 @@
-/** Chunk was on 94682 **/
+/** Chunk was on 60118 **/
 /** chunk id: 676526, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => h
@@ -74,11 +74,11 @@ function h(e) {
     isLoading: w
   } = (0, g.A)(t.applicationId), {
     registerDragHandleRef: P
-  } = (0, u.r)(), E = (0, m.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), T = (null == S ? true : S.id) === n, N = !h && T, {
-    isDragging: C
+  } = (0, u.r)(), E = (0, m.A)(t.applicationId).length > 0, S = o.default.getCurrentUser(), T = (null == S ? true : S.id) === n, C = !h && T, {
+    isDragging: N
   } = (0, a.V)(e => ({
     isDragging: e.isDragging()
-  })), k = () => (0, r.jsxs)(r.Fragment, {
+  })), R = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.A, {
       imageSrc: I,
       gameName: A,
@@ -86,9 +86,9 @@ function h(e) {
       userId: n,
       disableInteraction: h,
       className: i()(E ? O.kO : true, null == I || h ? true : y.iL),
-      hideTooltip: C,
+      hideTooltip: N,
       coverRef: _
-    }), N && (0, r.jsx)(c.jV, {
+    }), C && (0, r.jsx)(c.jV, {
       buttonRef: P(t.applicationId),
       className: O.BU
     }), !h && (0, r.jsx)(p.d, {
@@ -97,7 +97,7 @@ function h(e) {
       guildId: s,
       channelId: b,
       className: O.Ez
-    }), N && (0, r.jsx)(f.A, {
+    }), C && (0, r.jsx)(f.A, {
       game: t,
       widgetType: l,
       className: O.vS,
@@ -107,15 +107,15 @@ function h(e) {
   });
   return w ? (0, r.jsx)("div", {
     className: y.mD
-  }) : N ? (0, r.jsx)(j, {
+  }) : C ? (0, r.jsx)(j, {
     widgetType: l,
     index: null != x ? x : 0,
     game: t,
     coverImageUrl: I,
     gameName: A,
-    children: k()
+    children: R()
   }) : (0, r.jsx)("div", {
     className: O.kL,
-    children: k()
+    children: R()
   })
 }

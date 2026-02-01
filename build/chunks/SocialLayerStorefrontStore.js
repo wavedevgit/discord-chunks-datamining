@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./65821.js"), require("./896048.js");
 var i, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -293,7 +293,7 @@ class G extends(i = Chunk311907.Ay.Store) {
   }
 }
 c(G, "displayName", "SocialLayerStorefrontStore");
-let F = new G(Chunk73153.h, {
+let V = new G(Chunk73153.h, {
   LOGOUT: b,
   POST_CONNECTION_OPEN: N,
   ENTITLEMENT_CREATE: S,

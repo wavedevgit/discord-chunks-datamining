@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 960755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => W
@@ -32,8 +32,8 @@ let j = null,
   P = new Chunk32603.Ay;
 
 function R() {
-  let e = x.A.getChannelId(),
-    t = x.A.getVoiceChannelId();
+  let e = C.A.getChannelId(),
+    t = C.A.getVoiceChannelId();
   return j = e, v = t, P.clear()
 }
 
@@ -84,8 +84,8 @@ function U(e) {
 }
 
 function k() {
-  let e = x.A.getChannelId(),
-    t = x.A.getVoiceChannelId(),
+  let e = C.A.getChannelId(),
+    t = C.A.getVoiceChannelId(),
     n = j !== e || v !== t;
   return !!n && (s()([j, v, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
@@ -118,7 +118,7 @@ function F(e) {
 }
 class Y extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(p.A, A.default, f.A, b.A, h.A, c.Ay, E.A, u.A, _.Ay, m.A, O.A, C.Ay, x.A, S.Ay, g.A)
+    this.waitFor(p.A, A.default, f.A, b.A, h.A, c.Ay, E.A, u.A, _.Ay, m.A, O.A, x.Ay, C.A, S.Ay, g.A)
   }
   getGuild(e, t) {
     var n, r;
@@ -316,7 +316,7 @@ let W = new Y(Chunk73153.h, {
     let {
       settings: n
     } = e;
-    if (n.type !== N.oD.PRELOADED_USER_SETTINGS) returnfalse;
+    if (n.type !== y.oD.PRELOADED_USER_SETTINGS) returnfalse;
     let r = null == (t = n.proto.guilds) ? true : t.guilds,
       i = false;
     return null != r && I.default.keys(r).forEach(e => {

@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 790147, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 790147, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   z: () => T
 });
@@ -17,13 +17,13 @@ let T = (0, Chunk419954.zD)(Chunk780964.X.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
   useValue: function() {
     return (0, n.bG)([r.default], () => r.default.isStreamInfoOverlayEnabled)
   },
-  setValue: function(e) {
-    let t = r.default.isStreamInfoOverlayEnabled;
-    (0, o.A)("stream_info_overlay_enabled", e, t), (0, l.x)({
-      isStreamInfoOverlayEnabled: e
+  setValue: function(t) {
+    let e = r.default.isStreamInfoOverlayEnabled;
+    (0, o.A)("stream_info_overlay_enabled", t, e), (0, l.x)({
+      isStreamInfoOverlayEnabled: t
     })
   },
   usePredicate: function() {
-    return a.Q_.useSetting()
+    return u.Q_.useSetting()
   }
 })

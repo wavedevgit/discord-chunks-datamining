@@ -9,28 +9,28 @@ var r, i, l, a, Chunk735438 = require("./735438.js"),
   Chunk967198 = require("./967198.js"),
   Chunk661191 = require("./661191.js"),
   Chunk746080 = require("./746080.js");
-let f = {},
-  m = {},
+let m = {},
+  f = {},
   A = {},
   _ = {};
 
 function b(e) {
-  let t = m[e];
+  let t = f[e];
   if (null == t) return;
   let n = h.default.fromTimestamp(Date.now() - 9e5),
     r = o().findIndex(t, e => h.default.compare(e.id, n) > 0);
-  if (false === r) m[e] = [];
+  if (false === r) f[e] = [];
   else {
     let n = Math.max(r, t.length - 26);
-    m[e] = o().slice(t, n)
+    f[e] = o().slice(t, n)
   }
   A[e] = Date.now()
 }
 
 function E(e, t, n, r) {
-  f[e].add(t);
+  m[e].add(t);
   let i = A[t];
-  (null == i || i + 3e5 > Date.now()) && b(t), null == m[t] && (m[t] = []), m[t].push({
+  (null == i || i + 3e5 > Date.now()) && b(t), null == f[t] && (f[t] = []), f[t].push({
     id: n,
     userId: r
   })
@@ -40,7 +40,7 @@ function O(e) {
   let {
     channel: t
   } = e;
-  delete m[t.id], delete A[t.id]
+  delete f[t.id], delete A[t.id]
 }
 class y extends(a = Chunk311907.Ay.Store) {
   initialize() {
@@ -50,14 +50,14 @@ class y extends(a = Chunk311907.Ay.Store) {
     return _[e]
   }
   getActiveChannelIds(e) {
-    return f[e]
+    return m[e]
   }
   getChannelMessageData(e) {
-    return m[e]
+    return f[e]
   }
   shouldFetch(e) {
     var t;
-    return null == f[e] && !(null == (t = _[e]) ? true : t.loading)
+    return null == m[e] && !(null == (t = _[e]) ? true : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
@@ -72,17 +72,17 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: n
     } = e;
     if (!(0, g.mP)(t) || null == n) returnfalse;
-    let r = f[n];
+    let r = m[n];
     if (null == r) returnfalse;
     r.forEach(e => {
       var t;
-      b(e), (null == (t = m[e]) ? true : t.length) === 0 && delete m[e]
+      b(e), (null == (t = f[e]) ? true : t.length) === 0 && delete f[e]
     });
-    let i = o().chain(Array.from(r)).filter(e => e in m).sortBy(e => {
+    let i = o().chain(Array.from(r)).filter(e => e in f).sortBy(e => {
       var t, n;
-      return -(null != (t = null == (n = m[e]) ? true : n.length) ? t : 0)
+      return -(null != (t = null == (n = f[e]) ? true : n.length) ? t : 0)
     }).value();
-    f[n] = new Set(i)
+    m[n] = new Set(i)
   },
   MESSAGE_CREATE: function(e) {
     var t;
@@ -96,14 +96,14 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let a = d.A.getChannel(n);
     if (null == a) returnfalse;
     let s = a.guild_id;
-    if (null == s || null == f[s]) returnfalse;
+    if (null == s || null == m[s]) returnfalse;
     E(s, n, r.id, null == (t = r.author) ? true : t.id)
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    delete f[t.id]
+    delete m[t.id]
   },
   CHANNEL_DELETE: O,
   THREAD_DELETE: O,
@@ -126,7 +126,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       loading: false,
       error: null,
       fetchedAt: Date.now()
-    }, f[t] = new Set, n.forEach(e => {
+    }, m[t] = new Set, n.forEach(e => {
       let {
         channel_id: n,
         messages: r

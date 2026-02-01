@@ -76,7 +76,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = (0, Chunk600975.C)({
+let V = (0, Chunk600975.C)({
   kind: "user",
   id: "2021-07_role_popout",
   label: "Role Popout",
@@ -92,7 +92,7 @@ let F = (0, Chunk600975.C)({
   }]
 });
 
-function V(e) {
+function F(e) {
   let {
     member: t,
     guildId: a,
@@ -129,7 +129,7 @@ function V(e) {
           (0, d.L3)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("29534"), n.e("97283"), n.e("33818"), n.e("55296"), n.e("84841"), n.e("2016")]).then(n.bind(n, 107632));
+            } = await Promise.all([n.e("54809"), n.e("97262"), n.e("3795"), n.e("29534"), n.e("97283"), n.e("55296"), n.e("84841"), n.e("51444")]).then(n.bind(n, 107632));
             return t => (0, r.jsx)(e, G(k({}, t), {
               user: p,
               guildId: a,
@@ -175,7 +175,7 @@ function B(e) {
       return null == e ? null : w.A.getRole(a, e)
     }, [a, n, _]),
     y = null == n ? null : null == f ? true : f[n],
-    O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(V, {
+    O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(F, {
       member: e,
       guildId: a,
       channelId: s,
@@ -231,7 +231,7 @@ function H(e) {
     }), c]
   })), {
     enabled: R
-  } = F.getCurrentConfig({
+  } = V.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: false

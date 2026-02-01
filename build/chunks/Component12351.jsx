@@ -1,48 +1,48 @@
-/** Chunk was on 32502 **/
+/** Chunk was on 46673 **/
 /** chunk id: 12351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => A
 });
-var i, l, Chunk627968 = require("./627968.js"),
+var r, i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  o = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk228763 = require("./228763.js");
-let h = {
+let d = {
   BLOCK: Chunk228763.om,
   INLINE: Chunk228763.mG
 };
-class g extends(l = Chunk64700.PureComponent) {
+class _ extends(i = Chunk64700.PureComponent) {
   render() {
     let {
       children: e,
       className: t,
       textClassName: n,
-      type: i = h.BLOCK,
-      style: l
+      type: r = d.BLOCK,
+      style: i
     } = this.props;
-    return (0, s.jsxs)("div", {
-      className: o()(t, i),
-      style: l,
-      children: [(0, s.jsxs)(c.Text, {
+    return (0, l.jsxs)("div", {
+      className: s()(t, r),
+      style: i,
+      children: [(0, l.jsxs)(c.Text, {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
-        className: u.AD,
-        children: [d.intl.string(d.t["8tvIiN"]), ":"]
-      }), (0, s.jsx)(c.Text, {
-        className: o()(u.uN, n),
+        className: E.AD,
+        children: [u.intl.string(u.t["8tvIiN"]), ":"]
+      }), (0, l.jsx)(c.Text, {
+        className: s()(E.uN, n),
         variant: "text-sm/normal",
         children: e
       })]
     })
   }
-}(i = "Types") in g ? Object.defineProperty(g, i, {
-  value: h,
+}(r = "Types") in _ ? Object.defineProperty(_, r, {
+  value: d,
   enumerable: true,
   configurable: true,
   writable: true
-}) : g[i] = h;
-let x = g
+}) : _[r] = d;
+let A = _

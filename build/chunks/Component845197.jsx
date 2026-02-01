@@ -1,4 +1,4 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 9207 **/
 /** chunk id: 845197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => E
@@ -54,7 +54,7 @@ function h(e, t) {
 function E(e) {
   let {
     user: t
-  } = e, l = (0, d.A)(), E = (0, u.xr)(), O = (0, a.bG)([c.default], () => c.default.getCurrentUser()), C = i.useCallback(() => {
+  } = e, l = (0, d.A)(), E = (0, u.xr)(), O = (0, a.bG)([c.default], () => c.default.getCurrentUser()), x = i.useCallback(() => {
     s()(true !== O, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
       let {
         default: e
@@ -64,7 +64,7 @@ function E(e) {
         otherUser: t
       }))
     })
-  }, [O, t]), x = i.useCallback(() => {
+  }, [O, t]), C = i.useCallback(() => {
     s()(true !== O, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
       let {
         default: e
@@ -103,11 +103,11 @@ function E(e) {
         children: [E ? null : (0, r.jsx)(_.A, {
           icon: o.A9s,
           tooltip: A.intl.string(g.default.krWQZK),
-          onClick: C
+          onClick: x
         }), (0, r.jsx)(_.A, {
           icon: o.PGe,
           tooltip: A.intl.string(g.default.bBDeNI),
-          onClick: x
+          onClick: C
         })]
       })
     })]

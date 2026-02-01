@@ -125,8 +125,8 @@ function P(e) {
     onNudgeChange: k,
     scrollBehavior: U = "sticky",
     modal: G = false,
-    returnRef: F,
-    experimental_ignoreModalClicks: V = true,
+    returnRef: V,
+    experimental_ignoreModalClicks: F = true,
     closeOnClickOutside: B = false
   } = e, [H, Y] = i.useState(h), [W, K] = i.useState(y), z = i.useRef(y), q = i.useRef(0), {
     ref: Z,
@@ -191,7 +191,7 @@ function P(e) {
           className: o()(null != x ? m.popoverContentWithGradient : m.popover, {
             [m["popover--video"]]: L
           }),
-          returnRef: F,
+          returnRef: V,
           children: (0, r.jsx)(A.Provider, {
             value: es,
             children: n
@@ -230,7 +230,7 @@ function P(e) {
     autoInvert: true,
     nudgeAlignIntoViewport: "top" === W || "bottom" === W,
     closeOnClickOutside: B,
-    ignoreModalClicks: V,
+    ignoreModalClicks: F,
     scrollBehavior: U,
     renderPopout: el,
     children: w

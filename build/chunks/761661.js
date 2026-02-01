@@ -1,18 +1,18 @@
 /** Chunk was on 71447 **/
 /** chunk id: 761661, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CZ: () => h,
-  Qp: () => p,
+  CZ: () => p,
+  Qp: () => h,
   XG: () => f,
   dh: () => d,
-  f4: () => u
+  f4: () => c
 });
 var Chunk812729 = require("./812729.js"),
   r = require.n(Chunk812729),
   Chunk839214 = require("./839214.js"),
   Chunk652896 = require("./652896.js");
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -31,7 +31,7 @@ function o(e) {
   return e
 }
 
-function s(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,26 +43,26 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, Chunk839214.D)(() => ({
+let u = (0, Chunk839214.D)(() => ({
   streams: {}
 }));
 
-function u(e) {
+function c(e) {
   var t, n;
   let i = (0, a._z)(e);
-  return null != (t = null == (n = c.useState(e => e.streams, r())[i]) ? true : n.zoom) ? t : 100
+  return null != (t = null == (n = u.useState(e => e.streams, r())[i]) ? true : n.zoom) ? t : 100
 }
 
 function d(e) {
-  return u(e) / 100
+  return c(e) / 100
 }
 
-function p(e, t) {
+function h(e, t) {
   let n = (0, a._z)(e);
-  c.setState(e => {
+  u.setState(e => {
     var i;
-    return s(o({}, e), {
-      streams: s(o({}, e.streams), {
+    return o(s({}, e), {
+      streams: o(s({}, e.streams), {
         [n]: {
           zoom: t,
           fitOverride: null == (i = e.streams[n]) ? true : i.fitOverride
@@ -72,12 +72,12 @@ function p(e, t) {
   }, true)
 }
 
-function h(e, t) {
+function p(e, t) {
   let n = (0, a._z)(e);
-  c.setState(e => {
+  u.setState(e => {
     var i;
-    return s(o({}, e), {
-      streams: s(o({}, e.streams), {
+    return o(s({}, e), {
+      streams: o(s({}, e.streams), {
         [n]: {
           zoom: null == (i = e.streams[n]) ? true : i.zoom,
           fitOverride: t
@@ -90,5 +90,5 @@ function h(e, t) {
 function f(e) {
   var t;
   let n = (0, a._z)(e);
-  return null == (t = c.useState(e => e.streams, r())[n]) ? true : t.fitOverride
+  return null == (t = u.useState(e => e.streams, r())[n]) ? true : t.fitOverride
 }

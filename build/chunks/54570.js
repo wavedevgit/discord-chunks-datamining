@@ -1,26 +1,26 @@
-/** Chunk was on 78376 **/
+/** Chunk was on 88474 **/
 /** chunk id: 54570, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  AU: () => i,
-  kC: () => s,
-  kP: () => l,
-  pr: () => a,
+  AU: () => l,
+  kC: () => a,
+  kP: () => i,
+  pr: () => s,
   zU: () => o
 });
 var Chunk73153 = require("./73153.js");
 
-function i(e, t, n, i, l) {
+function l(e, t, n, l, i) {
   r.h.dispatch({
     type: "SPEAK_TEXT",
     text: e,
     interrupt: t,
     maxLength: n,
-    onStart: i,
-    onEnd: l
+    onStart: l,
+    onEnd: i
   })
 }
 
-function l(e, t) {
+function i(e, t) {
   r.h.dispatch({
     type: "SPEAK_MESSAGE",
     channel: e,
@@ -28,7 +28,7 @@ function l(e, t) {
   })
 }
 
-function s(e, t) {
+function a(e, t) {
   r.h.dispatch({
     type: "SPEAKING_MESSAGE",
     channelId: e,
@@ -36,7 +36,7 @@ function s(e, t) {
   })
 }
 
-function a() {
+function s() {
   r.h.dispatch({
     type: "STOP_SPEAKING"
   })

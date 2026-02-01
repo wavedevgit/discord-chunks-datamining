@@ -118,8 +118,8 @@ function b(e) {
     reference: v
   });
   let {
-    refs: F,
-    floatingStyles: V,
+    refs: V,
+    floatingStyles: F,
     placement: B,
     middlewareData: H,
     update: Y,
@@ -148,7 +148,7 @@ function b(e) {
   } = (0, o.bv)([K, z]), Q = (null == (t = H.hide) ? true : t.referenceHidden) ? "hidden" : "visible", X = R ? d.sM : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [D({
-      ref: F.setReference,
+      ref: V.setReference,
       props: q()
     }), p && (0, r.jsxs)(X, {
       ownerDocument: l,
@@ -156,10 +156,10 @@ function b(e) {
         id: b,
         className: c()(O, f.q),
         [y]: true,
-        style: m(_({}, V), {
+        style: m(_({}, F), {
           visibility: Q
         }),
-        ref: F.setFloating
+        ref: V.setFloating
       }, Z()), {
         children: (0, r.jsx)(u.xp, {
           containerRef: U,

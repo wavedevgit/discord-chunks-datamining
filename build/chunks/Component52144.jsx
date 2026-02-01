@@ -26,7 +26,7 @@ function E(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, E = (0, s.bG)([f.default], () => f.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([g.Ay], () => (null == E ? true : E.id) != null && g.Ay.getMentionCount(E.id, A.P.NOTIFICATION_CENTER) > 0), {
+  } = e, E = (0, s.bG)([m.default], () => m.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([g.Ay], () => (null == E ? true : E.id) != null && g.Ay.getMentionCount(E.id, A.P.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: v
   } = (0, p.p)({
@@ -35,7 +35,7 @@ function E(e) {
     size: S,
     color: "currentColor"
   }), [S]);
-  return (0, r.jsx)(m.C, {
+  return (0, r.jsx)(f.C, {
     targetElementRef: O,
     onOpen: t,
     onClose: n,

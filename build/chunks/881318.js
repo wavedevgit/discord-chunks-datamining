@@ -1,5 +1,5 @@
-/** Chunk was on 4670 **/
-/** chunk id: 881318, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 30485 **/
+/** chunk id: 881318, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   $: () => d
 });
@@ -16,22 +16,22 @@ let d = (0, Chunk419954.zD)(Chunk780964.X.ADVANCED_VOICE_ACTIVITY_PROCESSING_SET
   useValue: function() {
     return (0, n.bG)([r.A], () => {
       let {
-        vadUseKrisp: e
+        vadUseKrisp: t
       } = r.A.getModeOptions();
-      return e
+      return t
     })
   },
-  setValue: function(e) {
-    let t = r.A.getMode();
-    l.A.setMode(t, {
-      vadUseKrisp: e
+  setValue: function(t) {
+    let e = r.A.getMode();
+    l.A.setMode(e, {
+      vadUseKrisp: t
     })
   },
   useDisabled: function() {
     return (0, n.bG)([r.A], () => {
-      let e = r.A.getMode(),
-        t = r.A.getModeOptions().autoThreshold;
-      return e === u.TBI.VOICE_ACTIVITY && t
+      let t = r.A.getMode(),
+        e = r.A.getModeOptions().autoThreshold;
+      return t === a.TBI.VOICE_ACTIVITY && e
     })
   },
   usePredicate: function() {
