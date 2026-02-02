@@ -86,12 +86,13 @@ let T = e => {
       product: a,
       onVariantEnter: c,
       onVariantExit: u,
-      isCollapsed: d
-    } = e, _ = (0, p.Q)(a), h = null != (t = null == (n = a.variants) ? true : n.length) ? t : 0, m = i.useCallback((e, t) => {
+      isCollapsed: d,
+      wrap: _
+    } = e, h = (0, p.Q)(a), m = null != (t = null == (n = a.variants) ? true : n.length) ? t : 0, g = i.useCallback((e, t) => {
       e.stopPropagation(), (0, p.n)(a, t)
-    }, [a]), g = (0, f.A)("shop-variants-group-".concat(a.storeListingId), l.Gl.HORIZONTAL);
-    return 0 === h ? null : (0, r.jsx)(s.hD, {
-      navigator: g,
+    }, [a]), E = (0, f.A)("shop-variants-group-".concat(a.storeListingId), l.Gl.HORIZONTAL);
+    return 0 === m ? null : (0, r.jsx)(s.hD, {
+      navigator: E,
       children: (0, r.jsx)(s.PR, {
         children: e => {
           var t;
@@ -101,17 +102,18 @@ let T = e => {
           return (0, r.jsx)("div", A(O({
             className: o()({
               [y.yZ]: d,
-              [y.sz]: !d
+              [y.sz]: !d,
+              [y.LV]: _
             }, y.lO),
             ref: n
           }, i), {
             children: null == (t = a.variants) ? true : t.map((e, t) => (0, r.jsx)(C, {
               variant: e,
-              isSelected: t === _,
+              isSelected: t === h,
               onVariantEnter: () => c(t),
               onVariantExit: u,
-              zIndex: h - Math.abs(_ - t),
-              onClick: e => m(e, t)
+              zIndex: m - Math.abs(h - t),
+              onClick: e => g(e, t)
             }, e.variantValue))
           }))
         }
@@ -170,13 +172,15 @@ let T = e => {
     let {
       skuId: t,
       isCollapsed: n = false,
-      onVariantEnter: i,
-      onVariantExit: a
-    } = e, o = (0, g.Vm)(t);
-    return null != o && (0, m.B1)(o) ? (0, r.jsx)(T, {
-      product: o,
-      onVariantEnter: i,
-      onVariantExit: a,
-      isCollapsed: n
+      wrap: i = false,
+      onVariantEnter: a,
+      onVariantExit: o
+    } = e, s = (0, g.Vm)(t);
+    return null != s && (0, m.B1)(s) ? (0, r.jsx)(T, {
+      product: s,
+      onVariantEnter: a,
+      onVariantExit: o,
+      isCollapsed: n,
+      wrap: i
     }) : null
   }

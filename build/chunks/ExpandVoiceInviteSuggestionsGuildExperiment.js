@@ -15,13 +15,13 @@ let a = (0, Chunk600975.C)({
     totalSuggestions: 5
   },
   treatments: [{
-    id: 1,
+    id: 0,
     label: "Control",
     config: {
       totalSuggestions: 5
     }
   }, {
-    id: 2,
+    id: 1,
     label: "More Suggestions (10)",
     config: {
       totalSuggestions: 10

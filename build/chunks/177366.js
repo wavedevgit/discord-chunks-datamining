@@ -19,14 +19,14 @@ var Chunk64700 = require("./64700.js"),
   Chunk159439 = require("./159439.js"),
   Chunk57020 = require("./57020.js"),
   Chunk652215 = require("./652215.js");
-let v = "".concat("#").concat("itemSkuId", "="),
-  g = new RegExp("^".concat(v, "(\\d+)$")),
+let h = "".concat("#").concat("itemSkuId", "="),
+  g = new RegExp("^".concat(h, "(\\d+)$")),
   b = [Chunk652215.BVt.COLLECTIBLES_SHOP],
   j = e => {
     let t = (0, l.zy)();
     r.useEffect(() => {
       if (null != e && b.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(v) && window.location.replace("#")
+        window.location.hash.startsWith(h) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
@@ -34,9 +34,9 @@ let v = "".concat("#").concat("itemSkuId", "="),
     let e = (0, f.U)(),
       t = r.useRef(null),
       n = (0, l.zy)(),
-      a = n.pathname === h.BVt.COLLECTIBLES_SHOP ? s.A.HOME_PAGE_SHOP_TAB : s.A.COLLECTIBLES_SHOP,
+      a = n.pathname === v.BVt.COLLECTIBLES_SHOP ? s.A.HOME_PAGE_SHOP_TAB : s.A.COLLECTIBLES_SHOP,
       {
-        analyticsLocations: v
+        analyticsLocations: h
       } = (0, o.Ay)(a),
       b = (0, m.A)();
     r.useEffect(() => {
@@ -81,14 +81,14 @@ let v = "".concat("#").concat("itemSkuId", "="),
             }
           })({
             productSkuId: n,
-            analyticsLocations: v,
+            analyticsLocations: h,
             analyticsSource: a,
             tab: b
           })
         }, 250);
         return () => clearTimeout(e)
       }
-    }, [v, a, e, j, b])
+    }, [h, a, e, j, b])
   },
   _ = e => {
     let t = r.useRef({}),

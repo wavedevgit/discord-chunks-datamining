@@ -45,6 +45,8 @@ module.exports = {
   v7: "headingWithItemTypePill_c50f62",
   H$: "disabledReason_c50f62",
   Oj: "variantsContainer_c50f62",
+  OJ: "nameOnTop_c50f62",
+  L$: "variantName_c50f62",
   Ms: "externalProductProfilePreview_c50f62",
   ij: "wishlistButton_c50f62",
   fN: "orbIconAligned_c50f62",

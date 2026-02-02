@@ -22,13 +22,13 @@ let u = e => {
       days: p,
       hours: f,
       minutes: x,
-      seconds: h
+      seconds: v
     } = (0, s.A)(l),
-    v = (n = [(t = e => "".concat(e.toString().padStart(2, "0")))(p), t(f), t(x)], m && n.push(t(h)), n.join(":"));
+    h = (n = [(t = e => "".concat(e.toString().padStart(2, "0")))(p), t(f), t(x)], m && n.push(t(v)), n.join(":"));
   return (0, r.jsxs)("div", {
     className: i()(c.kL, d),
     role: "timer",
-    children: [v.split("").map((e, t) => ":" === e ? (0, r.jsx)(a.Text, {
+    children: [h.split("").map((e, t) => ":" === e ? (0, r.jsx)(a.Text, {
       color: "none",
       variant: "md" === u ? "heading-lg/extrabold" : "heading-xxl/extrabold",
       className: c.eC,
