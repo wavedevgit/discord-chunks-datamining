@@ -132,8 +132,7 @@ function K(e) {
     gameMetadata: e.gameMetadata,
     windowHandle: null != (s = e.windowHandle) ? s : null,
     fullscreenType: null != (l = e.fullscreenType) ? l : p.aI.UNKNOWN,
-    isLauncher: null != (c = e.isLauncher) && c,
-    executableFingerprint: e.executableFingerprint
+    isLauncher: null != (c = e.isLauncher) && c
   }
 }
 
@@ -185,20 +184,18 @@ let Z = {
     setFocused(e) {
       this.getDiscordUtils().inputSetFocused(e)
     },
-    setObservedGamesCallback(e, t, n, r) {
+    setObservedGamesCallback(e, t, n) {
       try {
         P = {};
-        let i = 0,
-          a = this.getDiscordUtils(),
-          o = e.map(e => {
-            let t = ++i;
-            return null != e.id && (P[t] = e.id), v(b({}, e), {
-              cmdline: e.cmdLine,
-              id: t
-            })
-          }),
-          s = e => n(e.map(K));
-        null != r && null != a.setProcessObserverUserId && a.setProcessObserverUserId(r), t && null != a.setObservedGamesCallback2 ? a.setObservedGamesCallback2(o, s) : a.setObservedGamesCallback(o, s)
+        let r = 0,
+          i = this.getDiscordUtils();
+        (t && null != i.setObservedGamesCallback2 ? i.setObservedGamesCallback2 : i.setObservedGamesCallback)(e.map(e => {
+          let t = ++r;
+          return null != e.id && (P[t] = e.id), v(b({}, e), {
+            cmdline: e.cmdLine,
+            id: t
+          })
+        }), e => n(e.map(K)))
       } catch (e) {}
     },
     setGameDetectionCallback(e) {

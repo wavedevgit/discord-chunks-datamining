@@ -123,8 +123,7 @@ async function er(e) {
     voice_channel_guild_id: A,
     distributor_game_id: a.sku,
     hidden_by_distributor: a.hidden,
-    game_metadata: (0, L.MT)(a),
-    executable_fingerprint: a.executableFingerprint
+    game_metadata: (0, L.MT)(a)
   }), null != O && I.Ay.addExecutableTrackedByAnalytics(O)
 }
 class ei extends Chunk64700.PureComponent {
@@ -240,8 +239,7 @@ class ei extends Chunk64700.PureComponent {
         voice_channel_id: f,
         voice_channel_type: S,
         voice_channel_bitrate: N,
-        voice_channel_guild_id: v,
-        executable_fingerprint: U.executableFingerprint
+        voice_channel_guild_id: v
       })
     }
     if ((e.videoEnabled !== T || e.isScreenSharing !== j) && null != f) {
