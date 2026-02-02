@@ -3,18 +3,15 @@
 require.d(exports, {
   A: () => i
 });
-let i = (0, require("./600975.js").C)({
+let i = (0, require("./945810.js").mj)({
+  name: "2026-01-friends-in-server",
   kind: "user",
-  id: "2024-09_friends_in_server",
-  label: "Friends in Server",
   defaultConfig: {
     guildFriendsEnabled: false
   },
-  treatments: [{
-    id: 1,
-    label: "Enabled",
-    config: {
+  variations: {
+    1: {
       guildFriendsEnabled: true
     }
-  }]
+  }
 })

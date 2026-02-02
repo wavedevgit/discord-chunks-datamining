@@ -8,7 +8,7 @@ require.d(exports, {
 });
 var r, Chunk64700 = require("./64700.js"),
   Chunk989349 = require("./989349.js"),
-  s = require.n(Chunk989349),
+  i = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
   Chunk308528 = require("./308528.js"),
   Chunk22007 = require("./22007.js"),
@@ -30,17 +30,17 @@ function h(e) {
   };
   let l = 0 === r ? f.t.TjNWNF : f.t.H4gnX9,
     a = 0 === r ? f.t.haia16 : f.t["Uq7Y+7"],
-    i = n > t;
+    s = n > t;
   return {
-    dueInText: f.intl.formatToPlainString(i ? a : l, {
-      duration: s().duration(t.getTime() - n.getTime(), "millisecond").humanize()
+    dueInText: f.intl.formatToPlainString(s ? a : l, {
+      duration: i().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
-    isOverdue: i
+    isOverdue: s
   }
 }
 
 function O(e) {
-  let t = (0, i.bG)([p.A], () => p.A.getChannel(e.saveData.channelId));
+  let t = (0, s.bG)([p.A], () => p.A.getChannel(e.saveData.channelId));
   return l.useMemo(() => null != t ? t : null != e.message ? new u.jb({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,

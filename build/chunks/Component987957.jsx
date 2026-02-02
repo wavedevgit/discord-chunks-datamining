@@ -30,8 +30,8 @@ let O = function(e) {
     actionIndex: N,
     onChange: S,
     onDelete: I,
-    onDragStart: T,
-    onDragComplete: C,
+    onDragStart: C,
+    onDragComplete: T,
     onDragReset: P
   } = e, w = (0, a.bG)([f.A], () => f.A.getChannel(E.channelId)), R = (0, a.bG)([h.A], () => h.A.getGuild(A)), D = (0, a.bG)([x.A], () => x.A.getPendingData()[E.channelId]), {
     customEmoji: G,
@@ -50,8 +50,8 @@ let O = function(e) {
     type: "NEW_MEMBER_ACTION",
     index: N,
     optionId: E.channelId,
-    onDragStart: T,
-    onDragComplete: C,
+    onDragStart: C,
+    onDragComplete: T,
     onDragReset: P
   }), z = i.useCallback(() => {
     if (null != A) return (0, c.mMO)(async () => {

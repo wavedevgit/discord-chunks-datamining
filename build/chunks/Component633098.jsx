@@ -1,4 +1,4 @@
-/** Chunk was on 60118 **/
+/** Chunk was on 51693 **/
 /** chunk id: 633098, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -30,7 +30,7 @@ function x(e) {
   } = (0, f.NJ)(), [i, x] = l.useState(false), v = (0, s.yK)([m.A], () => {
     var e;
     return null != (e = m.A.getSaveablePendingWidgets()) ? e : []
-  }), _ = (0, s.yK)([m.A], () => m.A.getChangedWidgets()), I = (0, s.yK)([m.A], () => m.A.getRemovedWidgets()), A = (0, s.bG)([m.A], () => m.A.hasUnsavedChanges()), w = (0, s.bG)([m.A], () => m.A.canSaveChanges()), P = (0, s.bG)([m.A], () => m.A.isSubmitting), E = (0, s.bG)([u.A], () => u.A.useReducedMotion), S = (0, c.pnh)(A, {
+  }), _ = (0, s.yK)([m.A], () => m.A.getChangedWidgets()), I = (0, s.yK)([m.A], () => m.A.getRemovedWidgets()), w = (0, s.bG)([m.A], () => m.A.hasUnsavedChanges()), A = (0, s.bG)([m.A], () => m.A.canSaveChanges()), P = (0, s.bG)([m.A], () => m.A.isSubmitting), E = (0, s.bG)([u.A], () => u.A.useReducedMotion), S = (0, c.pnh)(w, {
     from: {
       opacity: 0,
       y: 80 * !E
@@ -54,8 +54,8 @@ function x(e) {
       d._.unsubscribe(O.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), l.useEffect(() => {
-    A && c.ORC.announce(j.intl.string(j.t["0Y/qkL"]))
-  }, [A]);
+    w && c.ORC.announce(j.intl.string(j.t["0Y/qkL"]))
+  }, [w]);
   let T = l.useCallback(async () => {
       if (m.A.canSaveChanges()) {
         try {
@@ -106,14 +106,14 @@ function x(e) {
           variant: "secondary",
           text: j.intl.string(j.t.yBZMsQ),
           onClick: C,
-          disabled: !A || P
+          disabled: !w || P
         }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
           text: j.intl.string(j.t["R3BPH+"]),
           onClick: T,
           loading: P,
-          disabled: !w || !A || P
+          disabled: !A || !w || P
         })]
       })]
     })

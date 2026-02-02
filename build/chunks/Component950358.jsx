@@ -126,11 +126,11 @@ let y = Chunk64700.memo(function() {
       isFirstChannel: m,
       isLastChannel: v,
       tooltipDirection: E = "right"
-    } = e, N = (0, f.Rg)(t.id, i.id), S = (0, f.eK)(t.id, i.id), I = (0, f.v)(t.id, i.id), T = (0, f.fS)(l.id, i.id), C = null != (0, h.A)(l).find(e => e.id === t.id);
+    } = e, N = (0, f.Rg)(t.id, i.id), S = (0, f.eK)(t.id, i.id), I = (0, f.v)(t.id, i.id), C = (0, f.fS)(l.id, i.id), T = null != (0, h.A)(l).find(e => e.id === t.id);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.m, {
         asContainer: true,
-        __unsupportedReactNodeAsText: null != I ? I : T,
+        __unsupportedReactNodeAsText: null != I ? I : C,
         delay: 500,
         position: E,
         children: (0, r.jsxs)(c.DUT, {
@@ -185,7 +185,7 @@ let y = Chunk64700.memo(function() {
                   color: S ? "text-muted" : "text-default",
                   children: t.name
                 })
-              }), C ? (0, r.jsxs)(r.Fragment, {
+              }), T ? (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(A, {
                   index: 0
                 }), (0, r.jsx)(c.Text, {

@@ -3,18 +3,15 @@
 require.d(exports, {
   A: () => r
 });
-let r = (0, require("./600975.js").C)({
+let r = (0, require("./945810.js").mj)({
+  name: "2026-01-bug-reporter",
   kind: "user",
-  id: "2024-09_bug_reporter",
-  label: "Bug Reporter",
   defaultConfig: {
     hasBugReporterAccess: false
   },
-  treatments: [{
-    id: 1,
-    label: "\uD83D\uDC1B",
-    config: {
+  variations: {
+    1: {
       hasBugReporterAccess: true
     }
-  }]
+  }
 })

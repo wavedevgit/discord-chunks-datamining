@@ -110,12 +110,12 @@ function M(e) {
     } = e,
     s = (0, i.bG)([d.A], () => d.A.getProps().subsection),
     a = null != l && n.features.has(P.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
-  return (0, o.T)(n), t = a ? s === P.nd0.ROLE_SUBSCRIPTION_EMOJI ? T.Oi.EMOJIS : T.Oi.TIERS : T.Oi.PAYMENT, (0, r.jsx)(j.H, {
+  return (0, o.T)(n), t = a ? s === P.nd0.ROLE_SUBSCRIPTION_EMOJI ? C.Oi.EMOJIS : C.Oi.TIERS : C.Oi.PAYMENT, (0, r.jsx)(j.H, {
     guildId: n.id,
     refetchOnMount: true,
     children: (0, r.jsx)(O.p6, {
       guildId: n.id,
-      children: (0, r.jsx)(T.ZM, {
+      children: (0, r.jsx)(C.ZM, {
         initialTab: t,
         children: (0, r.jsx)(U, {
           guild: n,
@@ -135,30 +135,30 @@ function U(e) {
     {
       currentTab: p,
       setCurrentTab: _
-    } = (0, T.Tj)(),
+    } = (0, C.Tj)(),
     O = (0, j.X)(),
     S = (0, i.bG)([b.default], () => b.default.getCurrentUser()),
     R = (0, y.A)(n.id),
     M = null != n && (0, f.bM)(n, S);
   if (!O) return (0, r.jsx)(s.y$y, {});
   switch (p) {
-    case T.Oi.BASIC_INFO:
+    case C.Oi.BASIC_INFO:
       t = (0, r.jsx)(N.A, {
         guild: n
       });
       break;
-    case T.Oi.TIERS:
+    case C.Oi.TIERS:
       t = (0, r.jsx)(I.A, {
         guildId: n.id
       });
       break;
-    case T.Oi.PAYMENT:
+    case C.Oi.PAYMENT:
       t = (0, r.jsx)(E.A, {
         guild: n
       });
       break;
-    case T.Oi.EMOJIS:
-      t = (0, r.jsx)(C.A, {
+    case C.Oi.EMOJIS:
+      t = (0, r.jsx)(T.A, {
         guild: n
       });
       break;
@@ -192,23 +192,23 @@ function U(e) {
           look: "brand",
           onItemSelect: _,
           children: [(0, r.jsx)(a.A, {
-            id: T.Oi.BASIC_INFO,
+            id: C.Oi.BASIC_INFO,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
             disabled: !d,
             children: D.intl.string(D.t["/CfKoD"])
           }), (0, r.jsx)(a.A, {
-            id: T.Oi.TIERS,
+            id: C.Oi.TIERS,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
             disabled: !d,
             children: D.intl.string(D.t.pXbGYc)
           }), (0, r.jsx)(a.A, {
-            id: T.Oi.EMOJIS,
+            id: C.Oi.EMOJIS,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
             disabled: !d,
             children: D.intl.string(D.t.XBkDoA)
           }), M ? (0, r.jsx)(s.VQ0.Item, {
             className: G.__invalid_tabBarItem,
-            id: T.Oi.PAYMENT,
+            id: C.Oi.PAYMENT,
             children: D.intl.string(D.t.p2Rsdl)
           }) : null]
         }), d && (0, r.jsx)("div", {

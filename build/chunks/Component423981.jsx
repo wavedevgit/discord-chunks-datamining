@@ -2,7 +2,7 @@
 /** chunk id: 423981, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => T
+  A: () => C
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -102,7 +102,7 @@ let N = function(e, t, n) {
       })
     })
   },
-  T = () => {
+  C = () => {
     let e = (0, a.bG)([b.A], () => b.A.getGuildId()),
       t = (0, a.bG)([m.A], () => m.A.getMemberCount(e)),
       n = (0, a.bG)([p.A], () => p.A.getGuild(e)),
@@ -115,13 +115,13 @@ let N = function(e, t, n) {
         errorCode: j.A.getError()
       })),
       h = (0, a.bG)([f.A], () => f.A.getSettings().enabled),
-      T = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(O.GuildFeatures.PARTNERED) && !n.features.has(O.GuildFeatures.VERIFIED);
+      C = null == t || null == n || null != t && t < 500 && null != n && !n.features.has(O.GuildFeatures.PARTNERED) && !n.features.has(O.GuildFeatures.VERIFIED);
     i.useEffect(() => {
-      null == e || T || ((0, x.p9)(e), (0, x.fe)(e), (0, x._z)(e))
-    }, [e, T]), i.useEffect(() => {
+      null == e || C || ((0, x.p9)(e), (0, x.fe)(e), (0, x._z)(e))
+    }, [e, C]), i.useEffect(() => {
       (0, u.sF)(v._.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
-    let C = null != s ? (0, r.jsx)("div", {
+    let T = null != s ? (0, r.jsx)("div", {
       className: A.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, r.jsxs)("div", {
         className: A.SJ,
@@ -146,7 +146,7 @@ let N = function(e, t, n) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         children: y.intl.format(y.t.NIZ60a, {})
-      }), S(o, T), (0, r.jsxs)("div", {
+      }), S(o, C), (0, r.jsxs)("div", {
         className: A.Pg,
         children: [(0, r.jsx)("div", {
           className: A.jM
@@ -158,6 +158,6 @@ let N = function(e, t, n) {
       }), h ? (0, r.jsx)("div", {
         className: A.Rc,
         children: (0, r.jsx)(d.A, {})
-      }) : C]
+      }) : T]
     })
   }

@@ -88,7 +88,7 @@ let v = e => {
       children: [(0, r.jsx)(s.m, {
         text: h.intl.string(h.t.Br1ls3),
         shouldShow: g,
-        "aria-label": !!g && true,
+        ariaHidden: !g,
         children: (0, r.jsx)("span", {
           className: a()(m.__invalid_username, p),
           children: null != E ? (0, r.jsx)(d.A, {

@@ -96,8 +96,8 @@ function f(e) {
     label: u.intl.string(u.t["5tbTdV"])
   }), N.push(g(d.BEX.SAFETY, E)), N.push(g(d.BEX.MODERATION, E)), N.push(g(d.BEX.AUDIT_LOG, E)), N.push(g(d.BEX.BANS, E)), N.push(g(d.BEX.GUILD_AUTOMOD, E)));
   let I = c.features.has(d.GuildFeatures.COMMUNITY) && _,
-    T = A();
-  return (f || I || T) && (N.push({
+    C = A();
+  return (f || I || C) && (N.push({
     section: p
   }), N.push(g(d.BEX.COMMUNITY, E)), N.push(g(d.BEX.ONBOARDING, E)), N.push(g(d.BEX.ANALYTICS, E)), N.push(g(d.BEX.COMMUNITY_WELCOME, E)), N.push(g(d.BEX.DISCOVERY_LANDING_PAGE, E)), N.push(g(d.BEX.ROLE_SUBSCRIPTIONS, E)), N.push(g(d.BEX.GUILD_PRODUCTS, E)), N.push(g(d.BEX.ROLE_SUBSCRIPTIONS_STORE_PAGE, E))), N.push({
     section: p

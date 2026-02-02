@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk306769 = require("./306769.js");
 
-function T(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = (0, Chunk240248.xI)(Chunk319060.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+let T = (0, Chunk240248.xI)(Chunk319060.A.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
 class P extends Chunk64700.Component {
   componentDidMount() {
     this.measure();
@@ -154,10 +154,10 @@ class P extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "tierRefs", {}), T(this, "defaultTierRef", i.createRef()), T(this, "subscribersPopoutTargetRef", i.createRef()), T(this, "state", {
+    super(...e), C(this, "tierRefs", {}), C(this, "defaultTierRef", i.createRef()), C(this, "subscribersPopoutTargetRef", i.createRef()), C(this, "state", {
       tierPositions: null,
       animatedTier: N.TVA.NONE
-    }), T(this, "measure", () => {
+    }), C(this, "measure", () => {
       let {
         uniqueSubscriberCount: e
       } = this.props, t = this.defaultTierRef.current;
@@ -169,19 +169,19 @@ class P extends Chunk64700.Component {
         if (null == i) return;
         let {
           top: l
-        } = i.getBoundingClientRect(), s = e > 0 ? C : 0;
+        } = i.getBoundingClientRect(), s = e > 0 ? T : 0;
         r[t] = l - n + 32 - s
       }
       this.setState({
         tierPositions: r
       })
-    }), T(this, "setTierRef", (e, t) => {
+    }), C(this, "setTierRef", (e, t) => {
       this.tierRefs[t.tier] = e
-    }), T(this, "handleAnimatedTier", e => {
+    }), C(this, "handleAnimatedTier", e => {
       this.setState({
         animatedTier: e.key
       })
-    }), T(this, "renderSubscriber", (e, t, n) => {
+    }), C(this, "renderSubscriber", (e, t, n) => {
       var i;
       return null == e ? null : (0, r.jsx)(d.m, {
         __unsupportedReactNodeAsText: (0, r.jsx)(p.A, {
@@ -197,7 +197,7 @@ class P extends Chunk64700.Component {
           size: g._3J.SIZE_32
         })
       }, n)
-    }), T(this, "renderSubscribersPopout", () => (0, r.jsx)(g.HOs, {
+    }), C(this, "renderSubscribersPopout", () => (0, r.jsx)(g.HOs, {
       className: I.xM,
       children: this.props.subscribers.map(e => (0, r.jsxs)("div", {
         className: I.c4,
@@ -214,7 +214,7 @@ class P extends Chunk64700.Component {
           })
         })]
       }, e.user.id))
-    })), T(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(g.YNO, {
+    })), C(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(g.YNO, {
       targetElementRef: this.subscribersPopoutTargetRef,
       renderPopout: this.renderSubscribersPopout,
       position: "bottom",
@@ -228,7 +228,7 @@ class P extends Chunk64700.Component {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              T(e, t, n[t])
+              C(e, t, n[t])
             })
           }
           return e

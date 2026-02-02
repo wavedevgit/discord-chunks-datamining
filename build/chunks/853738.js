@@ -18,7 +18,7 @@ function c(e) {
     videoAssetType: u
   } = e, {
     questConfig: d
-  } = r.useContext(s.VideoQuestConfigContext), f = r.useRef(null);
+  } = r.useContext(s.VideoQuestConfigContext), p = r.useRef(null);
   r.useEffect(() => {
     var e, r;
     if (null == t || null == n.current || u === i.fY.VIDEO_PLAYER_VIDEO_HLS && null == c.current || !(0, o._o)({
@@ -39,8 +39,8 @@ function c(e) {
         gameName: d.messages.gameTitle
       }
     };
-    return f.current = new o.Gb(s), f.current.initialize(), () => {
-      null != f.current && (f.current.endSession(), f.current.destroy(), f.current = null)
+    return p.current = new o.Gb(s), p.current.initialize(), () => {
+      null != p.current && (p.current.endSession(), p.current.destroy(), p.current = null)
     }
   }, [u, c, t, n, d])
 }

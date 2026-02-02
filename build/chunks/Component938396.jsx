@@ -68,17 +68,9 @@ function D(e) {
     ctaOnClick: T
   } = e, C = (0, o.bG)([u.A], () => u.A.useReducedMotion), D = (0, o.bG)([f.A], () => f.A.getRewardForProgram(p.W.NITRO)), L = (0, o.bG)([m.default], () => m.default.getCurrentUser()), {
     balance: x
-  } = (0, h.W)(), M = i.useMemo(() => {
-    let e = (0, E.YE)(L, b.PremiumTypes.TIER_2),
-      t = !(0, E.ki)(L);
-    if (!f.A.passesGeneralUIInvariant(p.W.NITRO)) return null;
-    if (t) return (0, r.jsx)(c.EYj, {
-      variant: "text-xs/normal",
-      color: "text-default",
-      children: I.intl.format(A.default.cjEl8a, {
-        deepLinkToNitroOrbs: P
-      })
-    });
+  } = (0, h.W)(), M = !(0, E.ki)(L), j = i.useMemo(() => {
+    let e = (0, E.YE)(L, b.PremiumTypes.TIER_2);
+    if (!f.A.passesGeneralUIInvariant(p.W.NITRO) || M) return null;
     if (e && null != D) {
       let e = (0, a.default)(new Date(D.next_reward_date), new Date);
       return (0, r.jsxs)(r.Fragment, {
@@ -93,7 +85,7 @@ function D(e) {
       })
     }
     return null
-  }, [L, D]);
+  }, [L, M, D]);
   return (0, r.jsxs)(s.x, {
     targetElementRef: t,
     shouldShow: n,
@@ -129,7 +121,7 @@ function D(e) {
               color: "text-muted",
               children: I.intl.string(A.default.KclK9z)
             })]
-          }), M]
+          }), j]
         }), (0, r.jsx)(c.$nd, {
           text: v,
           variant: "primary",
@@ -138,9 +130,11 @@ function D(e) {
           fullWidth: true
         }), (0, r.jsx)(c.EYj, {
           variant: "text-xs/normal",
-          color: "text-muted",
+          color: M ? "text-default" : "text-muted",
           className: S.CU,
-          children: I.intl.format(A.default.fhAVek, {
+          children: M ? I.intl.format(A.default.juvXqj, {
+            deepLinkToNitroOrbs: P
+          }) : I.intl.format(A.default.fhAVek, {
             helpdeskArticle: g.A.getArticleURL(O.MVz.ORBS_FAQ)
           })
         })]

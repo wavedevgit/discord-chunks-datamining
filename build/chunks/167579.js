@@ -9,15 +9,15 @@ var Chunk311907 = require("./311907.js"),
   Chunk977997 = require("./977997.js");
 
 function r(e) {
-  return (0, o.cf)([c.A, n.A, a.default], () => (function(e) {
+  return (0, n.cf)([c.A, o.A, a.default], () => (function(e) {
     var t;
     let _ = arguments.length > 1 && true !== arguments[1] ? arguments[1] : c.A,
-      o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : n.A,
+      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : o.A,
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : a.default,
       i = null != e ? _.getVoiceState(e.getGuildId(), r.getId()) : null;
     return {
-      selfDeaf: o.isSelfDeaf(),
+      selfDeaf: n.isSelfDeaf(),
       deaf: null != (t = null == i ? true : i.deaf) && t
     }
-  })(e, c.A, n.A, a.default), [e])
+  })(e, c.A, o.A, a.default), [e])
 }

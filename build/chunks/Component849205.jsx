@@ -24,12 +24,13 @@ function m(e) {
     m = (0, l.bG)([d.default], () => d.default.getUser(t)),
     b = (0, l.bG)([c.A], () => c.A.getStatus(t)),
     A = (0, l.bG)([c.A], () => c.A.isMobileOnline(t)),
-    y = (0, l.bG)([u.A], () => u.A.getNickname(t)),
-    O = p.Ay.useUserTag(m),
-    j = (0, a.a)({
+    y = (0, l.bG)([c.A], () => c.A.isVROnline(t)),
+    O = (0, l.bG)([u.A], () => u.A.getNickname(t)),
+    j = p.Ay.useUserTag(m),
+    x = (0, a.a)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    x = (0, o.bG)({
+    _ = (0, o.bG)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -39,6 +40,7 @@ function m(e) {
       children: (0, r.jsx)(s.euF, {
         status: b,
         isMobile: A,
+        isVR: y,
         className: f.my,
         size: s._3J.SIZE_20,
         "aria-label": p.Ay.getName(m),
@@ -51,13 +53,13 @@ function m(e) {
       className: null != e.handleClick ? f.or : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(i.m, {
-          text: O,
+          text: j,
           position: "bottom",
           children: (0, r.jsx)("span", {
-            className: j,
-            children: null != y ? y : p.Ay.getName(m)
+            className: x,
+            children: null != O ? O : p.Ay.getName(m)
           })
-        }), x && (0, r.jsx)(i.m, {
+        }), _ && (0, r.jsx)(i.m, {
           text: g.intl.string(g.t.QyZ4Td),
           children: (0, r.jsx)(s.m5V, {
             size: "xs",

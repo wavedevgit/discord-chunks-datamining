@@ -86,8 +86,8 @@ function h(e) {
     handleRemoveTag: N,
     handleTagChangeEvent: S,
     handleSelectTag: I,
-    handleUnselectTag: T,
-    handleResetTagSelections: C,
+    handleUnselectTag: C,
+    handleResetTagSelections: T,
     handleInputBlurEvent: P
   } = (0, g.d)(O, {
     scrollerRef: _,
@@ -102,10 +102,10 @@ function h(e) {
     }
   } = O, L = (0, o.A)(R), [k, M] = i.useState(false), U = i.useCallback(() => {
     var e;
-    M(false), C(), null == (e = x.current) || e.focus({
+    M(false), T(), null == (e = x.current) || e.focus({
       preventScroll: true
     })
-  }, [C]);
+  }, [T]);
   i.useEffect(() => {
     L !== R && l(R)
   }, [l, L, R]), i.useEffect(() => {
@@ -119,15 +119,15 @@ function h(e) {
       if (t) {
         var n;
         let t = D.includes(R[e]);
-        null == (n = x.current) || n.focus(), t ? T(e) : (I(e), setImmediate(() => {
+        null == (n = x.current) || n.focus(), t ? C(e) : (I(e), setImmediate(() => {
           var e;
           null == (e = x.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? true : e.focus()
           }, 16)
         }))
-      } else T(e, true), M(true)
-    }, [I, T, D, R]);
+      } else C(e, true), M(true)
+    }, [I, C, D, R]);
   return (0, r.jsxs)("div", {
     className: s()(m.rs, h),
     ref: j,

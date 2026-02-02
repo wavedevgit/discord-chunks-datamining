@@ -56,32 +56,32 @@ function w(e) {
   return (0, r.jsxs)(d.f5, {
     value: l,
     children: [(0, r.jsx)("div", {
-      className: s()(P.customColumn, C.$Z, C.ed),
+      className: s()(P.customColumn, T.$Z, T.ed),
       children: (0, r.jsx)("div", {
         className: P.customContainer,
         children: (0, r.jsx)(o.ArX, {
-          className: s()(P.customScroller, C.cj),
+          className: s()(P.customScroller, T.cj),
           orientation: "auto",
           children: (0, r.jsx)(o.ArX, {
-            className: C.mh,
+            className: T.mh,
             orientation: "auto",
             children: (0, r.jsxs)("main", {
-              className: s()(P.customColumn, P.contentColumnDefault, C.$Z, C.ed, C.z1),
+              className: s()(P.customColumn, P.contentColumnDefault, T.$Z, T.ed, T.z1),
               children: [(0, r.jsx)("div", {
-                className: C.wx,
+                className: T.wx,
                 children: (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/semibold",
-                  children: T.intl.string(T.t.S40K66)
+                  children: C.intl.string(C.t.S40K66)
                 })
               }, "header"), (0, r.jsx)("div", {
                 children: (0, r.jsxs)("div", {
-                  className: C.CZ,
+                  className: T.CZ,
                   children: [(0, r.jsx)(O.A, {
                     guild: n
                   }), (0, r.jsx)(_.A, {
                     guild: n
                   }), G ? (0, r.jsxs)("div", {
-                    className: C.FV,
+                    className: T.FV,
                     children: [(0, r.jsx)(N.A, {
                       guild: n,
                       ref: M
@@ -95,15 +95,15 @@ function w(e) {
                       guildId: n.id
                     })]
                   }) : (0, r.jsx)("div", {
-                    className: C.qQ,
+                    className: T.qQ,
                     children: (0, r.jsxs)("div", {
-                      className: C.pb,
+                      className: T.pb,
                       children: [(0, r.jsx)("div", {
                         children: (0, r.jsx)(S.A, {})
                       }), (0, r.jsx)(o.Text, {
                         variant: "text-md/normal",
                         color: "text-muted",
-                        children: T.intl.format(T.t.Bf6yxB, {
+                        children: C.intl.format(C.t.Bf6yxB, {
                           onClick: e => {
                             null != n && (e.preventDefault(), m.A.close(), (0, j.aZ)(n.id))
                           }
@@ -124,7 +124,7 @@ function w(e) {
         isVisible: true,
         onClick: D
       }), (0, r.jsx)("div", {
-        className: C.zd,
+        className: T.zd,
         style: {
           width: I.da6
         },

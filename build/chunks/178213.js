@@ -1,9 +1,9 @@
-/** Chunk was on 60118 **/
-/** chunk id: 178213, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 65442 **/
+/** chunk id: 178213, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  G: () => l
+  G: () => i
 });
-let r = (0, require("./945810.js").mj)({
+let n = (0, require("./945810.js").mj)({
   name: "2026-01-wishlist-sku-preview",
   kind: "user",
   defaultConfig: {
@@ -19,8 +19,8 @@ let r = (0, require("./945810.js").mj)({
   }
 });
 
-function l(e) {
-  return r.useConfig({
+function i(e) {
+  return n.useConfig({
     location: e
   }).enabled
 }

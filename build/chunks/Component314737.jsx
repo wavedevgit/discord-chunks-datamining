@@ -279,7 +279,7 @@ let W = d().throttle(Chunk554375.dZ, 1e3),
       newlyAddedEmojiIds: a
     } = e, o = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: c
-    } = (0, T.ie)(n), d = (0, m.bG)([C.A], () => C.A.theme);
+    } = (0, C.ie)(n), d = (0, m.bG)([T.A], () => T.A.theme);
     return 0 === t.length ? (0, r.jsx)(f.ppr, {
       theme: d,
       children: (0, r.jsx)(f.SGT, {
@@ -367,7 +367,7 @@ let W = d().throttle(Chunk554375.dZ, 1e3),
       l = (0, m.bG)([M.A], () => M.A.getGuild()),
       [s, a] = i.useState("");
     o()(null != l, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
-    let c = (0, m.bG)([C.A], () => C.A.theme),
+    let c = (0, m.bG)([T.A], () => T.A.theme),
       {
         revision: u,
         emojis: p
@@ -378,7 +378,7 @@ let W = d().throttle(Chunk554375.dZ, 1e3),
       h = (0, _.A)(u),
       [b, x] = i.useState(false),
       [v, S] = i.useState(false),
-      T = i.useRef(null),
+      C = i.useRef(null),
       {
         maxEmojiSlots: w,
         availableEmojiSlots: R,
@@ -443,9 +443,9 @@ let W = d().throttle(Chunk554375.dZ, 1e3),
           upload_id: s
         }), await (0, I.UD)(e, $), x(true)
       }, et = () => {
-        null !== T.current && ((0, f.OoC)(T.current), T.current = null)
+        null !== C.current && ((0, f.OoC)(C.current), C.current = null)
       }, en = async e => {
-        T.current = await (0, f.mMO)(async () => {
+        C.current = await (0, f.mMO)(async () => {
           let {
             default: t
           } = await n.e("17259").then(n.bind(n, 897126));

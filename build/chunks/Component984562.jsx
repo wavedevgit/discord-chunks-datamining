@@ -32,30 +32,30 @@ let S = function() {
   var e, t, n, S;
   (0, E.useSyncMessages)(A.messagesLoader);
   let I = (0, s.bG)([f.A], () => f.A.getGuild()),
-    T = (0, s.bG)([f.A], () => f.A.getGuildProfile()),
+    C = (0, s.bG)([f.A], () => f.A.getGuildProfile()),
     {
-      fetchGuildProfile: C,
+      fetchGuildProfile: T,
       fetchStatus: P
     } = (0, d.u)(null == I ? true : I.id);
   if (i.useEffect(() => {
-      P === c.X.NOT_FETCHED && C()
-    }, [C, P]), P !== c.X.FETCHED) return (0, r.jsx)("div", {
+      P === c.X.NOT_FETCHED && T()
+    }, [T, P]), P !== c.X.FETCHED) return (0, r.jsx)("div", {
     className: N.dc,
     children: (0, r.jsx)(a.y$y, {})
   });
-  if (null == I || null == T) return null;
-  let w = l.i.VISIBLE.has(T.visibility),
+  if (null == I || null == C) return null;
+  let w = l.i.VISIBLE.has(C.visibility),
     R = (0, u.Rg)(I),
-    D = !R || (null == T ? true : T.tag) == null,
-    G = null != (e = T.badge) ? e : y.hc["0"],
-    L = null != (t = T.badgeColorPrimary) ? t : y.Ub["0"].primary,
-    k = null != (n = T.badgeColorSecondary) ? n : y.Ub["0"].secondary,
+    D = !R || (null == C ? true : C.tag) == null,
+    G = null != (e = C.badge) ? e : y.hc["0"],
+    L = null != (t = C.badgeColorPrimary) ? t : y.Ub["0"].primary,
+    k = null != (n = C.badgeColorSecondary) ? n : y.Ub["0"].secondary,
     M = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.A, {
         className: N.uW,
         guildId: I.id,
         isDisabled: D,
-        tag: null != (S = T.tag) ? S : "",
+        tag: null != (S = C.tag) ? S : "",
         badge: G,
         primaryColor: L,
         secondaryColor: k
@@ -118,7 +118,7 @@ let S = function() {
               if (D) {
                 var e;
                 p.A.updateGuildProfile(I.id, {
-                  tag: null != (e = T.tag) ? e : "",
+                  tag: null != (e = C.tag) ? e : "",
                   badge: G,
                   badgeColorPrimary: L,
                   badgeColorSecondary: k
@@ -145,7 +145,7 @@ let S = function() {
         className: N.so,
         children: [(0, r.jsx)(O.A, {
           guildId: I.id,
-          tag: T.tag,
+          tag: C.tag,
           badge: G,
           primaryColor: L,
           secondaryColor: k

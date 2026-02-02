@@ -134,7 +134,7 @@ function z(e) {
           })
         },
         tabIndex: false,
-        children: (0, r.jsx)(T.A, {})
+        children: (0, r.jsx)(C.A, {})
       })
     }), M.intl.format(M.t.HHCdvU, {
       slots: n,
@@ -325,7 +325,7 @@ function J(e) {
     analyticsLocations: y
   } = (0, x.Ay)(), A = (0, c.bG)([I.default], () => null != h ? h : I.default.getUser(b), [b, h]), {
     canManageGuildExpression: S
-  } = (0, _.nr)(o), T = i.useMemo(() => S(t), [t, S]), P = null != j || null != v, [w, D] = i.useState(false), G = (0, E.v)(t, o.id);
+  } = (0, _.nr)(o), C = i.useMemo(() => S(t), [t, S]), P = null != j || null != v, [w, D] = i.useState(false), G = (0, E.v)(t, o.id);
   async function L() {
     if (!w) {
       D(true);
@@ -384,13 +384,13 @@ function J(e) {
         "aria-label": H,
         size: m._3J.SIZE_24,
         className: U.Cp,
-        src: (0, C.ku)(A, false, 24)
+        src: (0, T.ku)(A, false, 24)
       }), (0, r.jsx)(m.Text, {
         variant: "text-sm/normal",
         lineClamp: 1,
         children: H
       })]
-    }), T ? (0, r.jsxs)("div", {
+    }), C ? (0, r.jsxs)("div", {
       className: U.vO,
       children: [(0, r.jsx)(m.DUT, {
         className: U.Bw,

@@ -17,18 +17,18 @@ function c(e) {
     questContent: c,
     sourceQuestContent: u,
     onCloseModal: d,
-    shouldShowShopIfAlreadyClaimed: f
-  } = e, m = (0, s.ix)({
+    shouldShowShopIfAlreadyClaimed: p
+  } = e, f = (0, s.ix)({
     quest: n,
     questContent: c,
     sourceQuestContent: u
   });
   return r.useCallback(e => {
     var t;
-    (0, i.ks)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null && f ? (null == d || d(e), (0, o.Cz)({
+    (0, i.ks)(n.config) && (null == (t = n.userStatus) ? true : t.claimedAt) != null && p ? (null == d || d(e), (0, o.Cz)({
       tab: a.G2.ORBS,
       analyticsLocations: [],
       analyticsSource: l.A.QUEST_HOME_PAGE
-    })) : ((0, i.K9)(n.config) && (null == d || d(e)), m())
-  }, [n.config, null == (t = n.userStatus) ? true : t.claimedAt, m, f, d])
+    })) : ((0, i.K9)(n.config) && (null == d || d(e)), f())
+  }, [n.config, null == (t = n.userStatus) ? true : t.claimedAt, f, p, d])
 }

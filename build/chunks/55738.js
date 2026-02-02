@@ -1,9 +1,9 @@
 /** Chunk was on 97246 **/
 /** chunk id: 55738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => r
+  Y: () => l
 });
-let r = (0, require("./945810.js").mj)({
+let l = (0, require("./945810.js").mj)({
   name: "2025-12-earned-impression-api-call-experiment",
   kind: "user",
   defaultConfig: {

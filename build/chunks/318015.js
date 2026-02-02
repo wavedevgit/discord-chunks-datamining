@@ -6,41 +6,35 @@ require.d(exports, {
   RK: () => o,
   sK: () => s
 });
-var Chunk600975 = require("./600975.js"),
+var Chunk945810 = require("./945810.js"),
   Chunk766005 = require("./766005.js");
-let a = (0, Chunk600975.C)({
+let a = (0, Chunk945810.mj)({
+  name: "2026-02-private-channel-hiding",
   kind: "user",
-  id: "2024-08_private_channel_hiding",
-  label: "Private Channel Hiding",
   defaultConfig: {
     enableObfuscation: false,
     enableIntegrityCheck: false
   },
-  treatments: [{
-    id: 1,
-    label: "Obfuscation Enabled",
-    config: {
+  variations: {
+    1: {
       enableObfuscation: true,
       enableIntegrityCheck: false
-    }
-  }, {
-    id: 2,
-    label: "Obfuscation + Integrity Check Enabled",
-    config: {
+    },
+    2: {
       enableObfuscation: true,
       enableIntegrityCheck: true
     }
-  }]
+  }
 });
 
 function o(e) {
-  return a.getCurrentConfig({
+  return a.getConfig({
     location: e
   }).enableObfuscation
 }
 
 function s(e) {
-  return a.useExperiment({
+  return a.useConfig({
     location: e
   }).enableObfuscation
 }

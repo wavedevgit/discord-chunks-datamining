@@ -92,19 +92,19 @@ function T(e) {
     disabled: c,
     onPressDestination: f,
     "aria-setsize": h,
-    "aria-posinset": d,
-    className: b
+    "aria-posinset": b,
+    className: d
   } = e, _ = (0, o.rm)(t.id), p = l.useCallback(() => {
     null == f || f(t)
   }, [f, t]);
   return (0, n.jsxs)(A.DUT, D(v({
-    className: i()(S.HP, b, {
+    className: i()(S.HP, d, {
       [S.r9]: c
     }),
     onClick: c ? true : p,
     "aria-selected": u,
     "aria-setsize": h,
-    "aria-posinset": d
+    "aria-posinset": b
   }, _), {
     children: [(0, n.jsxs)("div", {
       className: S.D_,
@@ -158,9 +158,9 @@ function w(e) {
   let {
     channel: t,
     subLabel: r
-  } = e, l = G(e, ["channel", "subLabel"]), s = (0, d.Ay)(t), i = (0, p.i)(t);
+  } = e, l = G(e, ["channel", "subLabel"]), s = (0, b.Ay)(t), i = (0, p.i)(t);
   return (0, n.jsx)(T, D(v({}, l), {
-    icon: (0, n.jsx)(b.A, {
+    icon: (0, n.jsx)(d.A, {
       "aria-hidden": true,
       size: A._3J.SIZE_32,
       channel: t
@@ -174,9 +174,9 @@ function W(e) {
   let {
     channel: t,
     subLabel: r
-  } = e, l = G(e, ["channel", "subLabel"]), s = (0, c.bG)([E.A], () => E.A.getGuild(null == t ? true : t.guild_id)), i = (0, d.Ay)(t), a = (0, c.bG)([O.A, m.default, g.A], () => {
+  } = e, l = G(e, ["channel", "subLabel"]), s = (0, c.bG)([E.A], () => E.A.getGuild(null == t ? true : t.guild_id)), i = (0, b.Ay)(t), a = (0, c.bG)([O.A, m.default, g.A], () => {
     let e = O.A.getChannel(t.parent_id);
-    return null == e ? null : (0, d.m1)(e, m.default, g.A, false)
+    return null == e ? null : (0, b.m1)(e, m.default, g.A, false)
   }), o = (0, c.bG)([L.Ay], () => L.Ay.lastMessageTimestamp(t.id, x.P.CHANNEL)), f = null == s ? true : s.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? A.bSJ : A.N$i;
@@ -236,23 +236,23 @@ function k(e) {
     if (l > 0) return;
     let {
       type: f,
-      record: d
+      record: b
     } = t[i];
     if (f === h.rD.HEADER) return;
-    let b = f === h.rD.USER ? {
+    let d = f === h.rD.USER ? {
         type: "user",
-        id: d.id
+        id: b.id
       } : {
         type: "channel",
-        id: d.id
+        id: b.id
       },
-      _ = (0, y.I)(b),
-      p = (0, C.pE)(r, s, d, c),
+      _ = (0, y.I)(d),
+      p = (0, C.pE)(r, s, b, c),
       O = A.includes(_),
       E = {
         key: _,
         message: r,
-        destination: b,
+        destination: d,
         subLabel: null != p ? p.label : true,
         disabled: u && !O || null != p,
         selected: O,
@@ -262,11 +262,11 @@ function k(e) {
         className: o
       };
     return f === h.rD.USER ? (0, n.jsx)(F, v({
-      user: d
+      user: b
     }, E)) : f === h.rD.GROUP_DM ? (0, n.jsx)(w, v({
-      channel: d
+      channel: b
     }, E)) : f === h.rD.TEXT_CHANNEL || f === h.rD.VOICE_CHANNEL ? (0, n.jsx)(W, v({
-      channel: d
+      channel: b
     }, E)) : void(0, N.xb)(f)
   }, [u, a, r, s, t, A, o, c]);
   return {

@@ -35,13 +35,13 @@ function v(e) {
   } = (0, p.U)(), {
     guild: N,
     subsection: S
-  } = (0, l.cf)([a.A], () => a.A.getProps()), I = null != (t = null != (n = null == N ? true : N.id) ? n : v) ? t : j.dJq, T = null != A, [C] = (0, u.qv)(I), {
+  } = (0, l.cf)([a.A], () => a.A.getProps()), I = null != (t = null != (n = null == N ? true : N.id) ? n : v) ? t : j.dJq, C = null != A, [T] = (0, u.qv)(I), {
     rulesByTriggerType: P
   } = (0, u.wP)(I), w = {
     [g.yT.MEMBERS]: _.intl.string(_.t.sx4E5v),
     [g.yT.CONTENT]: _.intl.string(_.t.fphZb0)
   }, R = i.useMemo(() => Object.values(null != P ? P : {}).flat().filter(c.Vq), [P]), D = {
-    isInEditMode: T,
+    isInEditMode: C,
     setEditingRule: E
   }, G = i.useRef(D);
   i.useEffect(() => {
@@ -70,8 +70,8 @@ function v(e) {
       return L(null != (e = null == A ? true : A.id) ? e : null, null != (t = null == A ? true : A.triggerType) ? t : null)
     }, [L, A]);
   i.useEffect(() => {
-    y(T, (0, b.cT)(k))
-  }, [y, T, k]);
+    y(C, (0, b.cT)(k))
+  }, [y, C, k]);
   let M = (0, g.ws)(I);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Heading, {
@@ -94,7 +94,7 @@ function v(e) {
           })
         })]
       })
-    }), C ? (0, r.jsx)(m.A, {}) : Object.entries(M).map(e => {
+    }), T ? (0, r.jsx)(m.A, {}) : Object.entries(M).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != w[t] ? (0, r.jsx)("div", {
@@ -126,7 +126,7 @@ function v(e) {
     }), (0, r.jsx)(f.A, {
       guildId: I,
       existingRules: R
-    }), T && (0, r.jsx)("div", {
+    }), C && (0, r.jsx)("div", {
       className: O.OL
     })]
   })

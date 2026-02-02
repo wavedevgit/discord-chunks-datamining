@@ -21,7 +21,7 @@ let g = () => {
       isPurchased: n
     } = (0, d.o)(i.A, e);
     if (!(0, o.aw)(e) || (0, o.tt)(e) || n) returntrue;
-    if (!(0, u.u)(e)) returnfalse;
+    if (!(0, u.uh)(e)) returnfalse;
     if ((0, c.Ab)(e)) return null != (0, c.CW)({
       product: e,
       isPremiumUser: t

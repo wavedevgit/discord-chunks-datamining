@@ -15,12 +15,12 @@ let u = function(e) {
     hasVideoAsset: t,
     playerState: n,
     pauseReason: u
-  } = e, d = (0, i.bG)([s.A], () => s.A.getState().theme), f = (0, a.oK)({
+  } = e, d = (0, i.bG)([s.A], () => s.A.getState().theme), p = (0, a.oK)({
     hasVideoAsset: t,
     playerState: n,
     pauseReason: u
   });
-  return null == f ? null : (0, r.jsxs)(r.Fragment, {
+  return null == p ? null : (0, r.jsxs)(r.Fragment, {
     children: [!t && (0, r.jsx)("div", {
       className: c.MM
     }), (0, r.jsx)("div", {
@@ -31,7 +31,7 @@ let u = function(e) {
       children: (0, r.jsx)(o.EYj, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: f
+        children: p
       })
     })]
   })

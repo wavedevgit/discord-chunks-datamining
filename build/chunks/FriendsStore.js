@@ -3,7 +3,7 @@
 require.d(exports, {
   Ay: () => V
 }), require("./321073.js"), require("./896048.js");
-var n, Chunk735438 = require("./735438.js"),
+var s, Chunk735438 = require("./735438.js"),
   r = require.n(Chunk735438),
   Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
@@ -35,10 +35,10 @@ function E(e, t, i) {
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var i = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(i);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
+      s = Object.keys(i);
+    "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
       return Object.getOwnPropertyDescriptor(i, e).enumerable
-    }))), n.forEach(function(t) {
+    }))), s.forEach(function(t) {
       E(e, t, i[t])
     })
   }
@@ -49,8 +49,8 @@ function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var i = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      i.push.apply(i, n)
+      var s = Object.getOwnPropertySymbols(e);
+      i.push.apply(i, s)
     }
     return i
   })(Object(t)).forEach(function(i) {
@@ -70,6 +70,7 @@ function D(e) {
   return {
     status: f.A.getStatus(e),
     isMobile: f.A.isMobileOnline(e),
+    isVR: f.A.isVROnline(e),
     activities: f.A.getActivities(e),
     applicationStream: A.A.getAnyStreamForUser(e)
   }
@@ -86,59 +87,59 @@ function S(e) {
 }
 class C extends Chunk315069.A {
   get comparator() {
-    var e, t, i, n, s;
-    return [this.type, null != (e = null != (t = null == (i = this.nickname) ? true : i.toLowerCase()) ? t : null == (s = this.user) || null == (n = s.globalName) ? true : n.toLowerCase()) ? e : this.usernameLower]
+    var e, t, i, s, n;
+    return [this.type, null != (e = null != (t = null == (i = this.nickname) ? true : i.toLowerCase()) ? t : null == (n = this.user) || null == (s = n.globalName) ? true : s.toLowerCase()) ? e : this.usernameLower]
   }
   constructor(e) {
     var t;
-    super(), E(this, "key", true), E(this, "userId", true), E(this, "type", true), E(this, "status", true), E(this, "isMobile", true), E(this, "activities", true), E(this, "applicationStream", true), E(this, "user", true), E(this, "usernameLower", true), E(this, "mutualGuildsLength", true), E(this, "mutualGuilds", true), E(this, "nickname", true), E(this, "spam", true), E(this, "giftIntentType", true), E(this, "ignoredUser", true), E(this, "applicationId", true), E(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
+    super(), E(this, "key", true), E(this, "userId", true), E(this, "type", true), E(this, "status", true), E(this, "isMobile", true), E(this, "isVR", true), E(this, "activities", true), E(this, "applicationStream", true), E(this, "user", true), E(this, "usernameLower", true), E(this, "mutualGuildsLength", true), E(this, "mutualGuilds", true), E(this, "nickname", true), E(this, "spam", true), E(this, "giftIntentType", true), E(this, "ignoredUser", true), E(this, "applicationId", true), E(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.isVR = e.isVR, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
   }
 }
 class j {
   reset() {
     let e = new Set,
       t = Array.from(g.A.getMutableRelationships().entries()).map(t => {
-        let [i, n] = t;
-        return n === I.eA$.FRIEND && e.add(i), new C(w(b({
+        let [i, s] = t;
+        return s === v.eA$.FRIEND && e.add(i), new C(w(b({
           key: i,
-          type: n,
+          type: s,
           userId: i,
           nickname: g.A.getNickname(i)
         }, P(i), D(i), S(i)), {
           spam: g.A.isSpam(i),
           ignoredUser: g.A.isIgnored(i),
-          giftIntentType: n === I.eA$.FRIEND && m.Ay.getFriendAnniversaries().includes(i) ? v.np.FRIEND_ANNIVERSARY : true,
+          giftIntentType: s === v.eA$.FRIEND && m.Ay.getFriendAnniversaries().includes(i) ? I.np.FRIEND_ANNIVERSARY : true,
           applicationId: g.A.getOriginApplicationId(i)
         }))
       }),
       i = [],
-      n = d.A.getGameRelationships().values(),
-      s = new Set;
-    n.forEach(t => {
+      s = d.A.getGameRelationships().values(),
+      n = new Set;
+    s.forEach(t => {
       let {
-        id: n,
+        id: s,
         applicationId: r,
-        type: a
+        type: o
       } = t;
-      a === I.eA$.FRIEND && e.has(n) || a === I.eA$.FRIEND && s.has(n) || (a === I.eA$.FRIEND && s.add(n), i.push(new C(w(b({
-        key: "".concat(n, "-").concat(r),
-        type: a,
-        userId: n,
+      o === v.eA$.FRIEND && e.has(s) || o === v.eA$.FRIEND && n.has(s) || (o === v.eA$.FRIEND && n.add(s), i.push(new C(w(b({
+        key: "".concat(s, "-").concat(r),
+        type: o,
+        userId: s,
         applicationId: r,
-        nickname: g.A.getNickname(n)
-      }, P(n), D(n), S(n)), {
-        spam: g.A.isSpam(n),
-        ignoredUser: g.A.isIgnored(n),
+        nickname: g.A.getNickname(s)
+      }, P(s), D(s), S(s)), {
+        spam: g.A.isSpam(s),
+        ignoredUser: g.A.isIgnored(s),
         isGameRelationship: true
       }))))
     });
-    let a = r().map(p.A.getSuggestions(), e => new C(b({
+    let o = r().map(p.A.getSuggestions(), e => new C(b({
       key: e.key,
       userId: e.key,
       type: 99,
       nickname: e.name
     }, P(e.key), D(e.key), S(e.key))));
-    return new j(r().concat(t, i, a))
+    return new j(r().concat(t, i, o))
   }
   clone() {
     return new j(this._rows)
@@ -146,9 +147,9 @@ class j {
   update(e) {
     let t = false;
     for (let i = 0; i < this._rows.length; i++) {
-      let n = this._rows[i],
-        s = n.merge(e(n.userId));
-      t = t || s !== n, this._rows[i] = s
+      let s = this._rows[i],
+        n = s.merge(e(s.userId));
+      t = t || n !== s, this._rows[i] = n
     }
     return t
   }
@@ -162,29 +163,29 @@ class j {
       returntrue
     }).filter(t => {
       switch (e) {
-        case I.m3P.ONLINE:
-          return t.type === I.eA$.FRIEND && t.status !== I.clD.OFFLINE;
-        case I.m3P.PENDING:
-          return t.type === I.eA$.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === I.eA$.PENDING_OUTGOING;
-        case I.m3P.SPAM:
-          return t.type === I.eA$.PENDING_INCOMING && t.spam;
-        case I.m3P.PENDING_IGNORED:
-          return t.type === I.eA$.PENDING_INCOMING && t.ignoredUser;
-        case I.m3P.SUGGESTIONS:
+        case v.m3P.ONLINE:
+          return t.type === v.eA$.FRIEND && t.status !== v.clD.OFFLINE;
+        case v.m3P.PENDING:
+          return t.type === v.eA$.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === v.eA$.PENDING_OUTGOING;
+        case v.m3P.SPAM:
+          return t.type === v.eA$.PENDING_INCOMING && t.spam;
+        case v.m3P.PENDING_IGNORED:
+          return t.type === v.eA$.PENDING_INCOMING && t.ignoredUser;
+        case v.m3P.SUGGESTIONS:
           return 99 === t.type;
-        case I.m3P.ALL:
+        case v.m3P.ALL:
         default:
-          return t.type === I.eA$.FRIEND
+          return t.type === v.eA$.FRIEND
       }
     }).sortBy(e => e.comparator).value()
   }
   getRelationshipCounts() {
     let e = {
-      [I.eA$.FRIEND]: 0,
-      [I.eA$.PENDING_INCOMING]: 0,
-      [I.eA$.PENDING_OUTGOING]: 0,
+      [v.eA$.FRIEND]: 0,
+      [v.eA$.PENDING_INCOMING]: 0,
+      [v.eA$.PENDING_OUTGOING]: 0,
       99: 0,
-      [I.eA$.BLOCKED]: 0
+      [v.eA$.BLOCKED]: 0
     };
     return this._rows.forEach(t => {
       null != t.user && null != e[t.type] && e[t.type]++
@@ -196,40 +197,40 @@ class j {
 }
 let L = true,
   G = false,
-  k = Chunk652215.m3P.ONLINE,
-  _ = new j,
-  R = true,
+  R = Chunk652215.m3P.ONLINE,
+  k = new j,
+  _ = true,
   M = false;
 
 function F() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  L && (e || k !== I.m3P.ONLINE && k !== I.m3P.ADD_FRIEND) && !G && (L = false, G = true, l.A.fetchRelationships())
+  L && (e || R !== v.m3P.ONLINE && R !== v.m3P.ADD_FRIEND) && !G && (L = false, G = true, l.A.fetchRelationships())
 }
 
 function x() {
-  if (L = true, R ? G = false : F(), _ = _.reset(), M) return;
-  let e = _.getRelationshipCounts();
-  k = 0 === e[I.eA$.FRIEND] ? 0 !== e[I.eA$.PENDING_INCOMING] ? I.m3P.PENDING : I.m3P.ADD_FRIEND : I.m3P.ONLINE
+  if (L = true, _ ? G = false : F(), k = k.reset(), M) return;
+  let e = k.getRelationshipCounts();
+  R = 0 === e[v.eA$.FRIEND] ? 0 !== e[v.eA$.PENDING_INCOMING] ? v.m3P.PENDING : v.m3P.ADD_FRIEND : v.m3P.ONLINE
 }
 
 function T() {
-  _ = R ? new j : _.reset()
+  k = _ ? new j : k.reset()
 }
 
 function U(e) {
   return function() {
-    return !R && !!_.update(e) && (_ = _.clone(), true)
+    return !_ && !!k.update(e) && (k = k.clone(), true)
   }
 }
-class $ extends(n = Chunk311907.Ay.Store) {
+class $ extends(s = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(h.A, A.A, c.A, p.A, d.A, y.Ay, N.A, m.Ay, f.A, g.A, O.default), this.syncWith([g.A], T), this.syncWith([d.A], T), this.syncWith([p.A], T), this.syncWith([m.Ay], T), this.syncWith([O.default], U(P)), this.syncWith([f.A, A.A], U(D)), x()
   }
   getState() {
     return {
       fetching: G,
-      section: k,
-      rows: _
+      section: R,
+      rows: k
     }
   }
 }
@@ -239,13 +240,13 @@ let V = new $(Chunk73153.h, {
     x()
   },
   FRIENDS_SET_SECTION: function(e) {
-    k = e.section, F()
+    R = e.section, F()
   },
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
-    return R = null != t, T(), !R
+    return _ = null != t, T(), !_
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
     G = false
@@ -254,6 +255,6 @@ let V = new $(Chunk73153.h, {
     L = true, G = true
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    k = e.section, M = true
+    R = e.section, M = true
   }
 })

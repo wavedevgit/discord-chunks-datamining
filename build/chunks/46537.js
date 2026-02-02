@@ -1,8 +1,8 @@
-/** Chunk was on 13696 **/
+/** Chunk was on 65442 **/
 /** chunk id: 46537, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   b: () => f,
-  u: () => m
+  u: () => h
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -43,7 +43,7 @@ function f(e, t) {
         }
       }(r);
     return i || s ? r.map(e => !i && s ? {
-      title: e.source === a.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+      title: e.source === o.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
       }) : d.intl.string(d.t.Ig6VDH),
       renderIcon: e.productLine !== c.EZt.COLLECTIBLES ? e.renderIcon : true,
@@ -54,7 +54,7 @@ function f(e, t) {
       shouldShow: true
     } : {
       title: e.productLine === c.EZt.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-      body: e.source === a.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+      body: e.source === o.uS.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
       }) : d.intl.string(d.t.Ig6VDH),
       renderIcon: e.renderIcon,
@@ -65,14 +65,14 @@ function f(e, t) {
   }, [e, t])
 }
 
-function m(e, t) {
-  let r = (0, i.yK)([s.default], () => e.map(e => s.default.getUser(e.gifterUserId)).filter(o.Vq), [e]),
-    a = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
+function h(e, t) {
+  let r = (0, i.yK)([s.default], () => e.map(e => s.default.getUser(e.gifterUserId)).filter(a.Vq), [e]),
+    o = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
   return n.useMemo(() => {
     let r = new Set(e.map(e => e.skuProductLine)).size > 1;
     return e.map(e => {
-      let n = t && e.isOwned && null != e.gifterUserId && null != a[e.gifterUserId],
-        i = null != e.gifterUserId && null != a[e.gifterUserId] ? u.Ay.getName(a[e.gifterUserId]) : null;
+      let n = t && e.isOwned && null != e.gifterUserId && null != o[e.gifterUserId],
+        i = null != e.gifterUserId && null != o[e.gifterUserId] ? u.Ay.getName(o[e.gifterUserId]) : null;
       return r || n ? {
         title: n ? d.intl.formatToPlainString(d.t.TL4ktE, {
           username: i
@@ -84,5 +84,5 @@ function m(e, t) {
         shouldShow: false
       }
     })
-  }, [e, t, a])
+  }, [e, t, o])
 }

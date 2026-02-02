@@ -168,14 +168,14 @@ function v(e) {
       className: x.gF,
       children: c
     }),
-    T = i.useId();
+    C = i.useId();
   return (0, r.jsxs)("tr", {
     className: x.cm,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(u.AC4, {
         children: (0, r.jsx)("label", {
-          htmlFor: T,
+          htmlFor: C,
           children: o
         })
       })
@@ -217,7 +217,7 @@ function v(e) {
       })
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)(u.dOG, {
-        id: T,
+        id: C,
         checked: v,
         onChange: e => {
           var t, n;
@@ -464,7 +464,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function C(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -516,7 +516,7 @@ function T(e) {
   })
 }
 
-function C(e) {
+function T(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -670,10 +670,10 @@ function w(e) {
       h = (0, r.jsx)(I, j({}, g));
       break;
     case f.fg2.EBAY:
-      h = (0, r.jsx)(T, j({}, g));
+      h = (0, r.jsx)(C, j({}, g));
       break;
     case f.fg2.TIKTOK:
-      h = (0, r.jsx)(C, j({}, g));
+      h = (0, r.jsx)(T, j({}, g));
       break;
     default:
       var b, O;

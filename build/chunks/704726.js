@@ -5,8 +5,8 @@ require.d(exports, {
   Ay: () => c,
   VC: () => l
 }), require("./591487.js"), require("./727858.js"), require("./747238.js");
-var Chunk280230 = require("./280230.js"),
-  i = require.n(Chunk280230);
+var Chunk791332 = require("./791332.js"),
+  i = require.n(Chunk791332);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,5 +45,5 @@ let s = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)
     }
     return e
   }({}, i().defaultRules.text), {
-    match: (0, Chunk280230.anyScopeRegex)(s)
+    match: (0, Chunk791332.anyScopeRegex)(s)
   })

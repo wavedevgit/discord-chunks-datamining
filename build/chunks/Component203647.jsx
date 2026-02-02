@@ -1,7 +1,7 @@
-/** Chunk was on 60118 **/
+/** Chunk was on 51693 **/
 /** chunk id: 203647, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => w
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -126,7 +126,7 @@ let I = Chunk64700.memo(function(e) {
   })
 });
 
-function A(e) {
+function w(e) {
   let {
     items: t,
     profileOwner: n,

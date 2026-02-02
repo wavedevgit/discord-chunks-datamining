@@ -128,28 +128,28 @@ let eO = {
       case ef.BEX.PROFILE:
         return {
           section: ef.BEX.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: eb.intl.string(eb.t.txdaxf), ariaLabel: eb.intl.string(eb.t.txdaxf), element: em.A, type: c.Py.SCROLLABLE_CUSTOM, notice: {
-            stores: [T.A],
+            stores: [C.A],
             element: ep.A
           }
         };
       case ef.BEX.TAG:
         return {
           section: ef.BEX.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eb.intl.string(eb.t["2QmKZ2"]), ariaLabel: eb.intl.string(eb.t["2QmKZ2"]), element: et.A, predicate: () => t.canManageGuild, notice: {
-            stores: [T.A],
+            stores: [C.A],
             element: en.A
           }
         };
       case ef.BEX.ENGAGEMENT:
         return {
           section: ef.BEX.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eb.intl.string(eb.t["6TAHbx"]), ariaLabel: eb.intl.string(eb.t["6TAHbx"]), element: ea.A, notice: {
-            stores: [T.A],
+            stores: [C.A],
             element: eo.y
           }
         };
       case ef.BEX.BOOST_PERKS:
         return {
           section: ef.BEX.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: eb.intl.string(eb.t.UKgg5N), ariaLabel: eb.intl.string(eb.t.UKgg5N), element: Q.H, notice: {
-            stores: [T.A, Z.A],
+            stores: [C.A, Z.A],
             element: q.l
           }
         };
@@ -197,14 +197,14 @@ let eO = {
       case ef.BEX.INTEGRATIONS:
         return {
           section: ef.BEX.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eb.intl.string(eb.t.CIsNZw), ariaLabel: eb.intl.string(eb.t.CIsNZw), element: k.A, notice: {
-            stores: [L.default, T.A],
+            stores: [L.default, C.A],
             element: k.K
           }, predicate: () => t.canManageGuild || t.canManageWebhooks || t.canUnlinkChannels
         };
       case ef.BEX.APP_DIRECTORY:
         return {
-          section: ef.BEX.APP_DIRECTORY, label: (0, r.jsx)(C.L, {}), ariaLabel: eb.intl.string(eb.t.AKcFUj), onClick: () => {
-            (0, C.N)({
+          section: ef.BEX.APP_DIRECTORY, label: (0, r.jsx)(T.L, {}), ariaLabel: eb.intl.string(eb.t.AKcFUj), onClick: () => {
+            (0, T.N)({
               guildId: t.guild.id,
               section: e
             })
@@ -243,7 +243,7 @@ let eO = {
           ariaLabel: eE,
           newIndicator: !t.guild.features.has(ef.GuildFeatures.COMMUNITY) && null != t.memberCount && t.memberCount >= eh.dH && v.HP.hasHotspot(v._2.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
-            stores: [T.A],
+            stores: [C.A],
             element: R.L
           }
         };
@@ -273,7 +273,7 @@ let eO = {
             className: ex.o2,
             children: [eb.intl.string(eb.t.kGlQGF), " ", (0, r.jsx)(u.A, {})]
           }), ariaLabel: eb.intl.string(eb.t.kGlQGF), element: G.A, notice: {
-            stores: [T.A],
+            stores: [C.A],
             element: G.j
           }, type: c.Py.CUSTOM, predicate() {
             var e;

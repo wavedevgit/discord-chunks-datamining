@@ -2,7 +2,7 @@
 /** chunk id: 614164, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => T
+  A: () => C
 }), require("./896048.js"), require("./321073.js"), require("./864466.js"), require("./443073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -81,7 +81,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function C(e) {
   let {
     guild: t,
     role: n,
@@ -89,8 +89,8 @@ function T(e) {
     setSelectedSection: a,
     integrations: o
   } = e, {
-    headerHeight: T,
-    headerRef: C
+    headerHeight: C,
+    headerRef: T
   } = (0, b.A)(0), {
     scrolledToTop: P,
     handleScroll: w
@@ -240,7 +240,7 @@ function T(e) {
   return (0, r.jsx)(d.GtU, {
     className: A.XG,
     style: {
-      scrollPaddingTop: T
+      scrollPaddingTop: C
     },
     onScroll: w,
     children: (0, r.jsxs)("div", {
@@ -249,7 +249,7 @@ function T(e) {
         className: s()(E.wx, E.ln, {
           [E.l6]: !P
         }),
-        ref: C,
+        ref: T,
         children: (0, r.jsx)(j.A, {
           guild: t,
           role: n,

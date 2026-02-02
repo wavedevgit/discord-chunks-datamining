@@ -39,8 +39,8 @@ let b = function(e) {
     }),
     {
       drag: I,
-      dragSourcePosition: T,
-      drop: C,
+      dragSourcePosition: C,
+      drop: T,
       setIsDraggable: P
     } = (0, c.A)({
       type: "RESOURCE_CHANNEL",
@@ -104,12 +104,12 @@ let b = function(e) {
     className: h.l5,
     children: [(0, r.jsxs)("div", {
       className: s()(h.Km, {
-        [h.A]: null != T && b < T,
-        [h.Ze]: null != T && b > T,
+        [h.A]: null != C && b < C,
+        [h.Ze]: null != C && b > C,
         [h._t]: null != E
       }),
       ref: e => {
-        I(C(e))
+        I(T(e))
       },
       children: [(0, r.jsx)("div", {
         className: h.cK,

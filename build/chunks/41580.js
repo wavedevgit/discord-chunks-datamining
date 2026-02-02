@@ -1,7 +1,7 @@
 /** Chunk was on 31294 **/
 /** chunk id: 41580, original params: e,t,_ (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => b
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -13,37 +13,37 @@ var Chunk64700 = require("./64700.js"),
   Chunk340913 = require("./340913.js"),
   Chunk731854 = require("./731854.js");
 let u = 2.5 * Chunk927813.A.Millis.SECOND,
-  p = +Chunk927813.A.Millis.HOUR;
+  f = +Chunk927813.A.Millis.HOUR;
 
-function f() {
-  let [e, t] = o.useState(false), _ = (0, a.bG)([r.A], () => r.A.getMode() === l.TB.PUSH_TO_TALK), s = (0, a.bG)([i.A], () => {
+function b() {
+  let [e, t] = n.useState(false), _ = (0, a.bG)([r.A], () => r.A.getMode() === d.TB.PUSH_TO_TALK), l = (0, a.bG)([i.A], () => {
     var e;
     return null != i.A.getChannelId() && (null != (e = i.A.getDuration()) ? e : Number.MAX_VALUE) < u
-  }), [f, b] = o.useState(false), {
+  }), [b, p] = n.useState(false), {
     showPTTJoinTooltip: m
-  } = d.A.useConfig({
+  } = s.A.useConfig({
     location: "usePTTJoinTooltip"
-  }), A = o.useRef(new n.Ep), C = o.useRef(new n.Ep);
-  o.useEffect(() => {
-    if (s && _ && !e) {
-      if (d.A.getConfig({
+  }), A = n.useRef(new o.Ep), C = n.useRef(new o.Ep);
+  n.useEffect(() => {
+    if (l && _ && !e) {
+      if (s.A.getConfig({
           location: "usePTTJoinTooltip:couldDisplayTooltip"
         }), !m) return;
-      b(true), t(true), C.current.start(p, () => {
+      p(true), t(true), C.current.start(f, () => {
         t(false)
       }), A.current.start(u, () => {
-        b(false)
+        p(false)
       })
     }
-    s || b(false)
-  }, [s, _, m, e]);
-  let g = o.useCallback(() => {
-    b(false), A.current.stop()
+    l || p(false)
+  }, [l, _, m, e]);
+  let g = n.useCallback(() => {
+    p(false), A.current.stop()
   }, []);
   return (0, c.l0)(() => {
     A.current.stop(), C.current.stop()
   }), {
-    shouldShowTooltip: f,
+    shouldShowTooltip: b,
     dismissTooltip: g
   }
 }

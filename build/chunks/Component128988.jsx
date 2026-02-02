@@ -1,4 +1,4 @@
-/** Chunk was on 60118 **/
+/** Chunk was on 51693 **/
 /** chunk id: 128988, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -108,11 +108,11 @@ function g(e) {
   } = null != (t = h.current) ? t : {
     x: 0,
     y: 0
-  }, I = b.x - v - 60 * !!O, A = b.y - _;
+  }, I = b.x - v - 60 * !!O, w = b.y - _;
   return (0, r.jsx)("div", {
     className: p.kL,
     style: {
-      transform: "translate3d(".concat(I, "px, ").concat(A, "px, 0)")
+      transform: "translate3d(".concat(I, "px, ").concat(w, "px, 0)")
     },
     children: j
   })

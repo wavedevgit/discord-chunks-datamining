@@ -41,47 +41,47 @@ function P(e) {
   return (i.useEffect(() => {
     f || s || (0, m.A)(t.id)
   }, [t.id, f, s]), O || 0 === x.length) ? null : (0, r.jsxs)("div", {
-    className: T.Jl,
+    className: C.Jl,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-strong",
       children: I.intl.string(I.t.NN7rD3)
     }), (0, r.jsxs)("div", {
-      className: T.j7,
+      className: C.j7,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: I.intl.string(I.t["3Uuql+"])
       }), (0, r.jsxs)(o.DUT, {
-        className: T.AC,
+        className: C.AC,
         onClick: () => v(true),
         children: [(0, r.jsx)(o.A9s, {
           size: "xxs",
           color: "currentColor",
-          className: T.AI
+          className: C.AI
         }), (0, r.jsx)(o.Text, {
-          className: T.fx,
+          className: C.fx,
           variant: "text-xs/medium",
           color: "text-brand",
           children: I.intl.string(I.t.ZC3PJ2)
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: T.IF,
+      className: C.IF,
       children: x.map((e, i) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: T.WG,
+          className: C.WG,
           children: [(0, r.jsxs)("div", {
-            className: T.yW,
+            className: C.yW,
             children: [(0, r.jsxs)("div", {
-              className: T.HA,
+              className: C.HA,
               children: [(0, r.jsx)(u.gm, {
                 channel: e,
                 guild: t
               }), (0, r.jsx)(a.A, {
-                className: T.__invalid_name,
+                className: C.__invalid_name,
                 children: (0, r.jsx)(o.Text, {
-                  className: T.__invalid_channelText,
+                  className: C.__invalid_channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
                   color: "text-default",
@@ -89,9 +89,9 @@ function P(e) {
                 })
               })]
             }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(a.A, {
-              className: C.PT,
+              className: T.PT,
               children: (0, r.jsx)(o.Text, {
-                className: T.At,
+                className: C.At,
                 variant: "text-xs/normal",
                 children: g.A.parseTopic(e.topic, true, {
                   channelId: e.id
@@ -152,11 +152,11 @@ function P(e) {
             }
           })]
         }), i < x.length - 1 ? (0, r.jsx)("div", {
-          className: T.me
+          className: C.me
         }) : null]
       }))
     }), (0, r.jsx)("div", {
-      className: T.FZ
+      className: C.FZ
     })]
   })
 }
@@ -181,11 +181,11 @@ function w(e) {
       }
     }
   }, [t, u]), null == n) ? null : s ? (0, r.jsx)(o.y$y, {}) : (0, r.jsxs)("div", {
-    className: T.YB,
+    className: C.YB,
     children: [(0, r.jsxs)("div", {
-      className: T.U5,
+      className: C.U5,
       children: [(0, r.jsx)(o.DUT, {
-        className: T.cS,
+        className: C.cS,
         onClick: () => p(e => !e),
         children: (0, r.jsx)(b.A, {
           direction: m ? b.A.Directions.DOWN : b.A.Directions.UP,
@@ -193,7 +193,7 @@ function w(e) {
           width: 16
         })
       }), (0, r.jsx)(o.Heading, {
-        className: T.wx,
+        className: C.wx,
         variant: "heading-lg/extrabold",
         children: I.intl.string(I.t["4GSygh"])
       }), (0, r.jsx)(o.Text, {
@@ -201,13 +201,13 @@ function w(e) {
         color: "text-default",
         children: I.intl.string(I.t.Kq7FAS)
       }), (0, r.jsx)(A.mU, {
-        className: T.kr,
+        className: C.kr,
         guildId: n.id
       }), m ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P, {
           guild: n
         }), (0, r.jsx)(E.A, {
-          className: T.bE,
+          className: C.bE,
           guild: n,
           categories: c,
           channels: a,
@@ -215,19 +215,19 @@ function w(e) {
         })]
       }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: T.FZ
+          className: C.FZ
         }), (0, r.jsx)(o.Heading, {
-          className: T.RH,
+          className: C.RH,
           variant: "heading-lg/extrabold",
           children: I.intl.string(I.t.g2RnpV)
         }), (0, r.jsx)(o.Text, {
-          className: T.nd,
+          className: C.nd,
           variant: "text-sm/normal",
           color: "text-default",
           children: I.intl.string(I.t.bLDQ1Q)
         }), (0, r.jsx)("div", {
           ref: g,
-          className: T.di,
+          className: C.di,
           children: (0, r.jsx)(S.A, {
             guildId: n.id,
             prejoinOnly: true,

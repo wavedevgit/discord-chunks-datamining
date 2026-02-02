@@ -17,7 +17,7 @@ var Chunk158954 = require("./158954.js"),
 
 function d(e) {
   let t = null != e.gifterUserId ? u.default.getUser(e.gifterUserId) : null;
-  return null == t ? null : (0, r.jsx)(i.euF, {
+  return null == t ? null : (0, l.jsx)(i.euF, {
     src: t.getAvatarURL(true, 48),
     size: i._3J.SIZE_48,
     "aria-label": t.username
@@ -25,7 +25,7 @@ function d(e) {
 }
 
 function _(e) {
-  return (0, r.jsx)(b, {
+  return (0, l.jsx)(b, {
     wishlistItem: e
   })
 }
@@ -34,10 +34,10 @@ function p(e) {
   let {
     application: t
   } = e, n = null != t ? t.getIconURL(c.iu.SMALL) : true;
-  return null != n ? (0, r.jsx)("img", {
+  return null != n ? (0, l.jsx)("img", {
     src: n,
     alt: null == t ? true : t.name
-  }) : (0, r.jsx)(l.U1X, {
+  }) : (0, l.jsx)(r.U1X, {
     color: "currentColor",
     size: "xs"
   })
@@ -47,7 +47,7 @@ function b(e) {
   let {
     wishlistItem: t
   } = e, n = (0, o.bG)([a.A], () => (0, s.$)(t) ? a.A.getApplication(t.sku.applicationId) : true);
-  return (0, r.jsx)(p, {
+  return (0, l.jsx)(p, {
     application: n
   })
 }

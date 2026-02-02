@@ -32,7 +32,7 @@ function l(e) {
 }
 let c = Symbol("version"),
   u = Object.freeze({}),
-  d = "kvPartition",
+  d = "0",
   f = new Chunk626584.A("LibdiscoreStore"),
   p = e => e;
 class _ {

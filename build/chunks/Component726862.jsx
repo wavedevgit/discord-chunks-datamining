@@ -38,8 +38,8 @@ function y(e) {
     includeCount: N,
     singleColumn: S,
     onPromptDragComplete: I,
-    onPromptDragStart: T,
-    onPromptDragReset: C
+    onPromptDragStart: C,
+    onPromptDragReset: T
   } = e, P = (0, a.bG)([f.A], () => f.A.editedDefaultChannelIds), {
     drag: w,
     dragSourcePosition: R,
@@ -49,9 +49,9 @@ function y(e) {
     type: "ONBOARDING_PROMPT_CARD",
     index: y,
     optionId: l.id,
-    onDragStart: T,
+    onDragStart: C,
     onDragComplete: I,
-    onDragReset: C
+    onDragReset: T
   }), L = (0, a.cf)([b.A], () => {
     var e;
     return null != (e = b.A.errors[x]) ? e : v

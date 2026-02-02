@@ -80,7 +80,7 @@ function J(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: a
-  } = e, o = (0, C.$)(B.intl.string(B.t.Mi9Kbe)), d = (0, f.Ay)(), h = (0, _.qE)(n, t), x = {
+  } = e, o = (0, T.$)(B.intl.string(B.t.Mi9Kbe)), d = (0, f.Ay)(), h = (0, _.qE)(n, t), x = {
     dark: {
       src: K,
       name: t.name
@@ -114,7 +114,7 @@ function J(e) {
             return (0, r.jsxs)("button", {
               className: s()(H.ZQ, {
                 [H.wH]: i === u,
-                [H.r9]: l || a && [T.y.HOLOGRAPHIC, T.y.GRADIENT].includes(u)
+                [H.r9]: l || a && [C.y.HOLOGRAPHIC, C.y.GRADIENT].includes(u)
               }),
               onClick: () => {
                 (0, I.C5)(t.id, u)
@@ -225,22 +225,22 @@ function Q(e) {
       required: true,
       children: (0, r.jsx)(W, {
         defaultColor: M.TGz,
-        colors: s === T.y.GRADIENT && a ? U.Oz : M._tK,
+        colors: s === C.y.GRADIENT && a ? U.Oz : M._tK,
         value: i.color,
         disabled: l,
         onChange: e => {
           var t;
           return t = e, void(i.color !== t && (t !== M.TGz || 0 !== i.color) && (t === M.TGz && (t = 0), (0, I.ZH)(i.id, t)))
         },
-        secondaryValue: s === T.y.GRADIENT && a && (null == (t = i.colors) ? true : t.secondary_color) != null ? null == (n = i.colors) ? true : n.secondary_color : true,
+        secondaryValue: s === C.y.GRADIENT && a && (null == (t = i.colors) ? true : t.secondary_color) != null ? null == (n = i.colors) ? true : n.secondary_color : true,
         onChangeGradientColors: e => {
           (0, I.uc)(i.id, {
             primary_color: e[0],
             secondary_color: e[1],
             tertiary_color: null
-          }, T.y.GRADIENT)
+          }, C.y.GRADIENT)
         },
-        isGradient: s === T.y.GRADIENT,
+        isGradient: s === C.y.GRADIENT,
         customPickerPosition: "right"
       })
     })
@@ -253,7 +253,7 @@ function q(e) {
     guildId: n,
     selectedStyle: i,
     disableInteraction: l
-  } = e, a = (0, C.$)(B.intl.string(B.t.Mi9Kbe)), o = {
+  } = e, a = (0, T.$)(B.intl.string(B.t.Mi9Kbe)), o = {
     nick: a.author.username,
     guildId: n,
     authorId: a.author.id,
@@ -287,7 +287,7 @@ function q(e) {
               previewGuildId: n,
               isGroupStart: true
             })
-          }), e === M.NJ8.LIGHT && i !== T.y.SOLID && (0, r.jsx)(m.Text, {
+          }), e === M.NJ8.LIGHT && i !== C.y.SOLID && (0, r.jsx)(m.Text, {
             variant: "text-xs/medium",
             color: "text-subtle",
             className: H.W_,
@@ -328,7 +328,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, a = (0, y.jV)(t.id, n), o = (0, d.bG)([T.A], () => T.A.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.y.SOLID, g = (0, N.Oy)(n), p = i || g, f = (0, d.bG)([S.A], () => S.A.canImpersonateRole(t, n)), {
+  } = e, a = (0, y.jV)(t.id, n), o = (0, d.bG)([C.A], () => C.A.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : C.y.SOLID, g = (0, N.Oy)(n), p = i || g, f = (0, d.bG)([S.A], () => S.A.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: b
   } = (0, P.A)(0), {
@@ -370,12 +370,12 @@ function ee(e) {
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.y.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
+      }), u !== C.y.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
         role: n,
         disabled: p,
         currentStyle: u,
         hasEnhancedRoleColors: a
-      }), u === T.y.HOLOGRAPHIC && (0, r.jsx)(E.A, {
+      }), u === C.y.HOLOGRAPHIC && (0, r.jsx)(E.A, {
         className: H.u,
         children: (0, r.jsx)(m.Text, {
           variant: "text-xs/medium",

@@ -1,1 +1,1 @@
-{"id":"394577","type":"unknown","data":{},"fromModule":{"id":"42402"}}
+{"id":"394577","type":"experiment","data":{"id":"2026-02_expand_voice_invite_suggestions","kind":"guild","label":"Expand Voice Invite Suggestions","commonTriggerPoint":"Chunk688151.$G.VOICE_CALL","defaultConfig":{"totalSuggestions":5},"treatments":[{"id":1,"label":"Control","config":{"totalSuggestions":5}},{"id":2,"label":"More Suggestions (10)","config":{"totalSuggestions":10}}]},"fromModule":{"id":"web.js"}}

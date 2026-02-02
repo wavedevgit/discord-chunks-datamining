@@ -16,43 +16,43 @@ let d = function(e) {
   let {
     className: t,
     color: n = i.A.colors.WHITE,
-    quest: l,
+    quest: r,
     isInventory: d
   } = e, _ = (0, s.aC)(e.quest), {
     percentComplete: p,
     completedRatioDisplay: b
-  } = (0, s.O9)(l);
-  return !d && _.length > 0 ? (0, r.jsx)(u.A, {
+  } = (0, s.O9)(r);
+  return !d && _.length > 0 ? (0, l.jsx)(u.A, {
     children: _.at(0)
-  }) : (0, r.jsxs)("div", {
+  }) : (0, l.jsxs)("div", {
     className: o()(c.iE, t),
     style: {
       color: n.css
     },
-    children: [(0, r.jsxs)("div", {
+    children: [(0, l.jsxs)("div", {
       className: c.O,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, l.jsx)(a.Text, {
         variant: "text-xs/semibold",
         className: c.Df,
         color: "none",
         children: b
-      }), (0, r.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: c.Cj,
         style: {
           width: "".concat(100 - p, "%")
         }
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, l.jsx)("div", {
       className: c.hr,
       role: "progressbar",
       "aria-valuenow": p,
-      children: (0, r.jsx)("div", {
+      children: (0, l.jsx)("div", {
         className: c.SX,
         style: {
           width: "".concat(p, "%")
         }
       })
-    }), _.length > 0 && (0, r.jsx)(u.A, {
+    }), _.length > 0 && (0, l.jsx)(u.A, {
       isInventory: d,
       children: _.at(0)
     })]

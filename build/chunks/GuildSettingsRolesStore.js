@@ -47,8 +47,8 @@ function N(e) {
 }
 var S = ((a = {}).SOLID = "solid", a.GRADIENT = "gradient", a.HOLOGRAPHIC = "holographic", a);
 let I = new Set,
-  T = Chunk652215.XlH.CLOSED,
-  C = false,
+  C = Chunk652215.XlH.CLOSED,
+  T = false,
   P = false,
   w = [],
   R = [],
@@ -78,7 +78,7 @@ function B(e) {
 
 function F() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = v.A.getProps().guild, C = false, P = false, l = true, I.clear(), M.clear(), T = y.XlH.OPEN, R = [...w = null != r ? [...x.A.getSortedRoles(r.id)] : []], H(null == r ? true : r.id, R), D = false, e && (k.clear(), L.forEach((e, t) => {
+  r = v.A.getProps().guild, T = false, P = false, l = true, I.clear(), M.clear(), C = y.XlH.OPEN, R = [...w = null != r ? [...x.A.getSortedRoles(r.id)] : []], H(null == r ? true : r.id, R), D = false, e && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
@@ -129,7 +129,7 @@ let V = c().debounce(() => {
       } = e;
       return t === n
     }))) && (I.delete(t), e = true)
-  }), 0 === I.size && (C = false), D && c().isEqual(L, k) && (e = true, D = false), e && X.emitChange()
+  }), 0 === I.size && (T = false), D && c().isEqual(L, k) && (e = true, D = false), e && X.emitChange()
 }, 500);
 
 function K(e, t) {
@@ -137,7 +137,7 @@ function K(e, t) {
   if (n < 0) returnfalse;
   let r = N({}, e, t),
     i = [...w];
-  i[n] = r, w = i, C = true, I.add(r.id), V()
+  i[n] = r, w = i, T = true, I.add(r.id), V()
 }
 
 function z(e) {
@@ -153,7 +153,7 @@ function W(e) {
   let {
     guildId: t
   } = e;
-  if (null == (r = v.A.getProps().guild) || t !== r.id || T === y.XlH.SUBMITTING) returnfalse;
+  if (null == (r = v.A.getProps().guild) || t !== r.id || C === y.XlH.SUBMITTING) returnfalse;
   let n = [...x.A.getSortedRoles(r.id)];
   I.forEach(e => {
     let t = z(e),
@@ -164,7 +164,7 @@ function W(e) {
       } = t;
       if (i === e) return r = n, true
     }) || null == t ? I.delete(e) : n[r] = t
-  }), 0 === I.size && (C = false);
+  }), 0 === I.size && (T = false);
   let i = new Map;
   I.forEach(e => {
     let t = M.get(e);
@@ -178,7 +178,7 @@ class Y extends(s = Chunk311907.Ay.Store) {
     this.waitFor(v.A, f.A, x.A)
   }
   hasChanges() {
-    return C || P || D
+    return T || P || D
   }
   getRoleStyleData(e) {
     return M.get(e)
@@ -205,7 +205,7 @@ class Y extends(s = Chunk311907.Ay.Store) {
     return w
   }
   get formState() {
-    return T
+    return C
   }
   getSortDeltas() {
     return U()
@@ -399,7 +399,7 @@ let X = new Y(Chunk73153.h, __OVERLAY__ ? {} : {
       D = true, G.add(r.id), k.set(r.id, n), V()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, R = w = [], L.clear(), I.clear(), M.clear(), k.clear(), G = new Set, C = false, P = false, D = false, T = y.XlH.CLOSED
+      r = null, R = w = [], L.clear(), I.clear(), M.clear(), k.clear(), G = new Set, T = false, P = false, D = false, C = y.XlH.CLOSED
     },
     GUILD_ROLE_CREATE: W,
     GUILD_ROLE_UPDATE: W,
@@ -407,13 +407,13 @@ let X = new Y(Chunk73153.h, __OVERLAY__ ? {} : {
       return G.has(e.roleId) && (G.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), W(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
-      T = y.XlH.SUBMITTING
+      C = y.XlH.SUBMITTING
     },
     GUILD_SETTINGS_ROLES_SAVE_FAIL: function(e) {
       let {
         message: t
       } = e;
-      T = y.XlH.OPEN, l = t
+      C = y.XlH.OPEN, l = t
     },
     GUILD_SETTINGS_ROLES_SAVE_SUCCESS: function() {
       F(false)

@@ -1,5 +1,5 @@
-/** Chunk was on 60118 **/
-/** chunk id: 223555, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 62694 **/
+/** chunk id: 223555, original params: e,t,i (module,exports,require) **/
 module.exports = {
   P3: "socialLayerCardHover__517e1",
   m1: "socialLayerCardBackgroundImage__517e1",

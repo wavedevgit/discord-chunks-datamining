@@ -1,5 +1,5 @@
 /** Chunk was on 80307 **/
-/** chunk id: 486318, original params: t,i,a (module,exports,require) **/
+/** chunk id: 486318, original params: t,a,i (module,exports,require) **/
 require.d(exports, {
   N: () => r,
   e: () => l
@@ -9,8 +9,8 @@ var Chunk397927 = require("./397927.js"),
 
 function l(t) {
   let {
-    imageUrl: i,
-    backgroundImageUrl: a,
+    imageUrl: a,
+    backgroundImageUrl: i,
     altText: e,
     customClassNames: l
   } = t;
@@ -19,8 +19,8 @@ function l(t) {
     component: n.Oz7.SOCIAL_LAYER_SKU_PREVIEW,
     aspectRatio: "16/9",
     props: {
-      imageUrl: i,
-      backgroundImageUrl: a,
+      imageUrl: a,
+      backgroundImageUrl: i,
       altText: e,
       customClassNames: l
     }

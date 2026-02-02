@@ -1,0 +1,3 @@
+/** Chunk was on 68532 **/
+/** chunk id: 877375, original params: s (module,exports,require) **/
+module.exports = JSON.parse('{"d3yO98":["ดำเนินอยู่"],"HGimIS":["ผลการค้นหา"],"GKTlS6":["สิ่งที่ชอบ"],"OskevP":["สิ่งที่ชอบ"],"DUIbKP":["ผลการค้นหา"],"uhJexs":["แชท"]}')

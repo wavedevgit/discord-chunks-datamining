@@ -58,7 +58,7 @@ function R(e) {
   let C = (0, u.Ay)(h),
     S = Array.from((0, u.Rz)(C).values()),
     w = null != (t = null == j ? true : j.filter(x.Vq)) ? t : [],
-    R = () => e => [I.$pd.PLAYING, I.$pd.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) || e.type === I.$pd.LISTENING,
+    R = () => e => [I.$pd.PLAYING, I.$pd.WATCHING].includes(e.type) && (null != e.name || null != e.application_id || null != e.assets || null != e.state || null != e.details || null != e.party) || e.type === I.$pd.LISTENING,
     L = (0, a.bG)([O.A, y.A, m.default], () => {
       let e = {};
       return w.forEach(t => {

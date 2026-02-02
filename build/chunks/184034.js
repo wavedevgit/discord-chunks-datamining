@@ -8,7 +8,7 @@ var Chunk284009 = require("./284009.js"),
   i = require.n(Chunk284009),
   Chunk635377 = require("./635377.js"),
   o = require.n(Chunk635377),
-  Chunk280230 = require("./280230.js"),
+  Chunk791332 = require("./791332.js"),
   Chunk436857 = require("./436857.js"),
   Chunk626584 = require("./626584.js"),
   Chunk694403 = require("./694403.js"),
@@ -279,7 +279,7 @@ let R = {
       parse: w
     },
     codeBlockSyntax: {
-      order: Chunk280230.defaultRules.inlineCode.order - .1,
+      order: Chunk791332.defaultRules.inlineCode.order - .1,
       match: e => /^(```)([a-z0-9_+\-.#]+$)?/.exec(e),
       parse: e => null != e[2] && "" !== e[2] && h.default.isKnownLanguage(e[2]) ? [{
         type: "codeBlockSyntax",

@@ -51,7 +51,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function T(e, t) {
   }), e
 }
 
-function C(e) {
+function T(e) {
   let {
     guild: t
   } = e, n = (0, o.bG)([f.A], () => null != t && f.A.can(E.xBc.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
@@ -81,7 +81,7 @@ function C(e) {
       (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t]), s = i.useMemo(() => {
-    let e = (0, j.vd)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(I({}, e), {
+    let e = (0, j.vd)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => C(I({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.w3)(e)
@@ -128,7 +128,7 @@ function P(e) {
       (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
-    let e = (0, j.QL)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(I({}, e), {
+    let e = (0, j.QL)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => C(I({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.w3)(e)
@@ -255,7 +255,7 @@ function G() {
       guild: e
     }), (0, r.jsx)(R, {
       guild: e
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(T, {
       guild: e
     }), (0, r.jsx)(D, {
       guild: e,

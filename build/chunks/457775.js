@@ -2,9 +2,7 @@
 /** chunk id: 457775, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ce: () => c,
-  f7: () => f,
-  gx: () => m,
-  rB: () => u
+  f7: () => d
 }), require("./896048.js"), require("./64700.js");
 var Chunk846293 = require("./846293.js"),
   Chunk167189 = require("./167189.js"),
@@ -13,15 +11,7 @@ var Chunk846293 = require("./846293.js"),
   Chunk711014 = require("./711014.js"),
   Chunk998218 = require("./998218.js");
 let c = e => null != e.text;
-
-function u(e) {
-  let t = 0 | e,
-    n = Math.floor(t / 3600),
-    r = Math.floor(t % 3600 / 60),
-    l = t % 60;
-  return n > 0 ? "".concat(n, ":").concat(String(r).padStart(2, "0"), ":").concat(String(l).padStart(2, "0")) : "".concat(r, ":").concat(String(l).padStart(2, "0"))
-}
-async function d(e) {
+async function u(e) {
   try {
     var t;
     let n = (0, o.br)(e);
@@ -41,15 +31,11 @@ async function d(e) {
     returnfalse
   }
 }
-async function f(e) {
+async function d(e) {
   try {
     if (a.A.isDiscordUrl(e)) returntrue;
-    return await d(e)
+    return await u(e)
   } catch (e) {
     returnfalse
   }
-}
-
-function m(e, t, n) {
-  return e ? t.timestampSec >= t.duration ? 0 : t.timestampSec : Math.max(t.timestampSec, n.progressSeconds)
 }

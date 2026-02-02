@@ -36,7 +36,7 @@ function y(e) {
     groupListingId: N,
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: I
-  } = e, [T, C] = i.useState(a), P = (0, c.bG)([f.A], () => f.A.getSubscriptionListing(T)), w = null == P, [R, D] = i.useState(w), G = null == P ? true : P.subscription_plans[0], L = null != (t = null == P ? true : P.published) && t, k = null != (n = null == P ? true : P.archived) && n, M = !k && !L && true !== P, U = true === P, B = (0, h.gN)(), [F] = x.tx(T), [H] = x.bL(T), [V] = x.I8(T), [K] = x.lK(T, 1024), z = "" !== F ? F : O.intl.string(O.t.QWhe9G), W = "" !== F && null != K && "" !== V && null != H && !B, Y = x.rf(T), {
+  } = e, [C, T] = i.useState(a), P = (0, c.bG)([f.A], () => f.A.getSubscriptionListing(C)), w = null == P, [R, D] = i.useState(w), G = null == P ? true : P.subscription_plans[0], L = null != (t = null == P ? true : P.published) && t, k = null != (n = null == P ? true : P.archived) && n, M = !k && !L && true !== P, U = true === P, B = (0, h.gN)(), [F] = x.tx(C), [H] = x.bL(C), [V] = x.I8(C), [K] = x.lK(C, 1024), z = "" !== F ? F : O.intl.string(O.t.QWhe9G), W = "" !== F && null != K && "" !== V && null != H && !B, Y = x.rf(C), {
     loading: X,
     error: J,
     handleCreateOrUpdateFromEditState: Z
@@ -94,18 +94,18 @@ function y(e) {
         children: [(0, r.jsx)(u.QWc, {
           variant: "secondary",
           onClick: () => {
-            x.Ts(T), w ? null == E || E() : D(false)
+            x.Ts(C), w ? null == E || E() : D(false)
           },
           text: O.intl.string(O.t["ETE/oC"])
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           onClick: () => Z({
             guildId: l,
-            editStateId: T,
+            editStateId: C,
             groupListingId: N,
             onBeforeDispatchNewListing: S,
             onAfterDispatchNewListing: e => {
-              C(e.id), null == I || I(e)
+              T(e.id), null == I || I(e)
             }
           }),
           disabled: !W || !Y,
@@ -122,7 +122,7 @@ function y(e) {
         })
       })]
     }), R && (0, r.jsx)(b.A, {
-      editStateId: T,
+      editStateId: C,
       guildId: l,
       groupListingId: N,
       children: (0, r.jsx)(_.A, {

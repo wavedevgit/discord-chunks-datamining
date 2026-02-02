@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => P,
-  j: () => T
+  j: () => C
 }), require("./228524.js"), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js"), require("./812715.js"), require("./866193.js"), require("./591487.js"), require("./727858.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js");
@@ -32,7 +32,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk628080 = require("./628080.js");
 let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
-  T = () => {
+  C = () => {
     let {
       guild: e,
       guildMetadata: t,
@@ -66,14 +66,14 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       }
     })
   },
-  C = () => {
+  T = () => {
     var e;
     let t = i.useRef(null),
       s = (0, l.bG)([_.A], () => _.A.getGuild()),
-      [T, C] = i.useState(false);
+      [C, T] = i.useState(false);
     i.useEffect(() => {
-      T || null == s || ((0, g.Mu)(), (0, g.mo)(s.id), (0, g.ax)(s.id), C(true))
-    }, [s, T]);
+      C || null == s || ((0, g.Mu)(), (0, g.mo)(s.id), (0, g.ax)(s.id), T(true))
+    }, [s, C]);
     let {
       canManageGuild: P
     } = (0, l.cf)([h.A], () => ({
@@ -425,4 +425,4 @@ let I = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       })
     })
   },
-  P = () => null == (0, l.bG)([_.A], () => _.A.getGuild()) ? null : (0, r.jsx)(C, {})
+  P = () => null == (0, l.bG)([_.A], () => _.A.getGuild()) ? null : (0, r.jsx)(T, {})

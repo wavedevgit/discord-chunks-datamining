@@ -4,7 +4,7 @@
 require.d(exports, {
   a: () => E
 });
-var Chunk280230 = require("./280230.js");
+var Chunk791332 = require("./791332.js");
 
 function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ let {
   em: h,
   image: m,
   text: g
-} = Chunk280230.defaultRules, E = {
+} = Chunk791332.defaultRules, E = {
   newline: l,
   paragraph: c,
   url: u,
@@ -72,7 +72,7 @@ let {
   image: m,
   hook: {
     order: g.order,
-    match: (0, Chunk280230.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),
+    match: (0, Chunk791332.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),
     parse(e, t, n) {
       let {
         context: r
@@ -86,7 +86,7 @@ let {
   },
   noparse: {
     order: g.order,
-    match: (0, Chunk280230.inlineRegex)(/^!!(\d+?)!!/),
+    match: (0, Chunk791332.inlineRegex)(/^!!(\d+?)!!/),
     parse(e, t, n) {
       let {
         unsafeContext: r

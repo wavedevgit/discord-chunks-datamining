@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk971525 = require("./971525.js");
-let C = "DRAGGABLE_ROLE";
+let T = "DRAGGABLE_ROLE";
 
 function P(e) {
   var t, i;
@@ -53,7 +53,7 @@ function P(e) {
     P = (null == (i = d.tags) ? true : i.guild_connections) !== true,
     w = (0, x.X_)(c.id, d, d.colorStrings),
     [, R] = (0, a.i)({
-      type: C,
+      type: T,
       item: () => (_(d.id), {
         id: d.id,
         position: b
@@ -67,7 +67,7 @@ function P(e) {
     [{
       dragSourcePosition: D
     }, G] = (0, o.H)({
-      accept: C,
+      accept: T,
       canDrop: () => I,
       collect: e => {
         let t = e.getItem();
@@ -85,7 +85,7 @@ function P(e) {
   return l = P ? (0, r.jsx)(h.A, {
     size: 12,
     color: d.colorString,
-    className: T.Ev
+    className: C.Ev
   }) : "dot" === A ? (0, r.jsx)(u.WYI, {
     color: L,
     colors: w,
@@ -95,9 +95,9 @@ function P(e) {
     color: L,
     colors: w
   }), (0, r.jsxs)(u.VQ0.Item, {
-    className: s()(T.nM, {
-      [T.qo]: null !== D && b < D,
-      [T.BP]: null !== D && b > D
+    className: s()(C.nM, {
+      [C.qo]: null !== D && b < D,
+      [C.BP]: null !== D && b > D
     }),
     id: d.id,
     selectedItem: p,
@@ -149,7 +149,7 @@ function P(e) {
       R(G(null != (t = null == e ? true : e.ref) ? t : null))
     },
     children: [l, null != E ? (0, r.jsx)(y.A, {
-      className: T.s2,
+      className: C.s2,
       tooltipText: E
     }) : null, (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
@@ -170,7 +170,7 @@ function w(e) {
     scrolledToTop: y,
     handleScroll: S
   } = (0, E.u)(), {
-    handleDragStart: C,
+    handleDragStart: T,
     handleDragReset: w,
     handleDragComplete: R
   } = (0, A.A)(o), D = i.useRef(null), G = i.useCallback(e => {
@@ -185,20 +185,20 @@ function w(e) {
   }), i.useEffect(() => {
     o.length > x && G(n), o.length !== x && j(o.length)
   }, [o.length, x, j, G, n]), (0, r.jsx)(b.Ay.Sidebar, {
-    className: T.pz,
+    className: C.pz,
     children: (0, r.jsxs)("div", {
-      className: T.kL,
+      className: C.kL,
       children: [(0, r.jsxs)("div", {
-        className: s()(T.gn, {
-          [T.P6]: !y
+        className: s()(C.gn, {
+          [C.P6]: !y
         }),
         children: [(0, r.jsxs)(u.DUT, {
-          className: T.DD,
+          className: C.DD,
           onClick: () => l(null),
           children: [(0, r.jsx)(O.A, {
             direction: O.A.Directions.LEFT
           }), (0, r.jsx)(u.Text, {
-            className: T.Qw,
+            className: C.Qw,
             variant: "text-md/semibold",
             color: "none",
             children: I.intl.string(I.t["13/7kX"])
@@ -207,12 +207,12 @@ function w(e) {
           position: "top",
           "aria-label": I.intl.string(I.t.AbxKtv),
           __unsupportedReactNodeAsText: (0, r.jsx)(u.Text, {
-            className: T.YL,
+            className: C.YL,
             variant: "text-sm/normal",
             children: I.intl.string(I.t.AbxKtv)
           }),
           children: (0, r.jsx)(u.DUT, {
-            className: T.Cm,
+            className: C.Cm,
             onClick: () => {
               m.A.createRole(t.id), a(N.T$.DISPLAY)
             },
@@ -225,7 +225,7 @@ function w(e) {
           })
         })]
       }), (0, r.jsx)(u.T7Y, {
-        className: T.p_,
+        className: C.p_,
         ref: D,
         onScroll: S,
         children: (0, r.jsx)(u.VQ0, {
@@ -239,7 +239,7 @@ function w(e) {
             selectedItem: n,
             onClick: () => l(e.id),
             currentPosition: i,
-            onDragStart: C,
+            onDragStart: T,
             onDragReset: w,
             onDragComplete: R,
             roleStyle: h

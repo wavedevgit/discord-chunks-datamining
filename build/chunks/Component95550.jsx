@@ -639,7 +639,8 @@ class ed extends(l = Chunk64700.PureComponent) {
         "aria-setsize": o.length,
         numSelected: c.size,
         showFriendButton: i && a,
-        staffOverride: null != (t = (p || null == f) && b.isStaff() && (null == m ? true : m.isStaff())) && t
+        staffOverride: null != (t = (p || null == f) && b.isStaff() && (null == m ? true : m.isStaff())) && t,
+        handleTrackAction: this.handleTrackUserRowInteraction
       }, b.id)
     }), er(this, "renderImprovedDMSection", e => {
       var t;
@@ -838,6 +839,19 @@ class ed extends(l = Chunk64700.PureComponent) {
       var t, n;
       let l = null == (n = this.scrollerRef.current) || null == (t = n.getScrollerNode) ? true : t.call(n);
       null != l && (l.scrollTop = Math.max(0, l.scrollTop + e))
+    }), er(this, "handleTrackUserRowInteraction", (e, t, n) => {
+      var l, r;
+      let {
+        inImprovedDMExperiment: i,
+        sections: a,
+        results: s
+      } = this.props, o = i ? a[e][t] : s[t];
+      null != o && V.default.track(ee.HAw.CREATE_DM_USER_ROW_INTERACTED, {
+        section: e,
+        row: t,
+        interaction_type: n,
+        affinity_score: null != (l = null == (r = R.A.getUserAffinity(o.user.id)) ? true : r.communicationProbability) ? l : false
+      })
     })
   }
 }

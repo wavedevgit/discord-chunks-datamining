@@ -16,7 +16,7 @@ var Chunk657323 = require("./657323.js");
 let f = {},
   h = 1 / 4;
 
-function d(e) {
+function b(e) {
   let {
     height: t,
     fillColor: r
@@ -38,7 +38,7 @@ function d(e) {
   })
 }
 
-function b(e) {
+function d(e) {
   let {
     isTyping: t,
     statusCoords: r,
@@ -50,7 +50,7 @@ function b(e) {
       top: r.y,
       left: r.x
     },
-    children: (0, n.jsx)(d, {
+    children: (0, n.jsx)(b, {
       height: r.height,
       fillColor: s
     })
@@ -153,7 +153,7 @@ let p = {
       frontSrc: s,
       size: u,
       isTyping: h,
-      status: d,
+      status: b,
       style: y,
       className: O
     } = e, E = function(e, t) {
@@ -183,13 +183,17 @@ let p = {
       var e;
       let t, r, n, l, s, i = "".concat(I, "-").concat(h);
       return null != (e = f[i]) ? e : (n = +(r = (t = o.vCh[u]).size / 1.5), l = .5 * r, s = {
-        statusCoords: (0, a.Rb)(t, o.clD.ONLINE, false, h),
+        statusCoords: (0, a.Rb)(t, o.clD.ONLINE, {
+          isTyping: h,
+          isMobile: false,
+          isVR: false
+        }),
         frontAvatarSizePx: n,
         backAvatarSizePx: r,
         frontAvatarOffsetPx: l,
         frontAvatarCenter: l + n / 2
       }, f[i] = s, s)
-    }, [I, h, u]), N = (t = null != d, h ? p[u].typing : t ? p[u].status : p[u].default), j = p[u].back;
+    }, [I, h, u]), N = (t = null != b, h ? p[u].typing : t ? p[u].status : p[u].default), j = p[u].back;
     return (0, n.jsxs)("div", {
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -239,12 +243,12 @@ let p = {
             src: s,
             size: m,
             isTyping: h,
-            status: d
+            status: b
           })
         })]
-      }), (0, n.jsx)(b, {
+      }), (0, n.jsx)(d, {
         statusCoords: L,
-        status: d,
+        status: b,
         isTyping: h
       })]
     })

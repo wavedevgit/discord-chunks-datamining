@@ -245,7 +245,7 @@ let L = e => {
     };
     return (0, r.jsx)(o.Button, {
       variant: "primary",
-      text: null != l ? l : P.intl.format(P.t.kAgx5L, {
+      text: null != l ? l : P.intl.format(P.t.lOtBOI, {
         orbPrice: n[0].amount,
         orbIconHook: () => (0, r.jsx)(f.A, {
           className: D.f
@@ -254,7 +254,7 @@ let L = e => {
       onClick: e => {
         e.stopPropagation(), u()
       },
-      "aria-label": P.intl.formatToPlainString(P.t["fNG/05"], {
+      "aria-label": P.intl.formatToPlainString(P.t.yi41qQ, {
         orbPrice: n[0].amount
       }),
       fullWidth: true

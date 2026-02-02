@@ -81,7 +81,7 @@ function x(e) {
         }), i))
       }
     })
-  }, [t, l]), T = t.connection_type === f.wZ.APPLICATION, C = t.application_id, P = (0, a.bG)([g.A], () => T && null != C ? g.A.getApplication(C) : null, [T, C]), w = i.useMemo(() => (function(e, t, n) {
+  }, [t, l]), C = t.connection_type === f.wZ.APPLICATION, T = t.application_id, P = (0, a.bG)([g.A], () => C && null != T ? g.A.getApplication(T) : null, [C, T]), w = i.useMemo(() => (function(e, t, n) {
     var r, i, l;
     if (e.connection_type === f.wZ.APPLICATION && null != e.application_id) {
       if (null != n) return {

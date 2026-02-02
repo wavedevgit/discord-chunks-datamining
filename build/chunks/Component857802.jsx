@@ -2,7 +2,7 @@
 /** chunk id: 857802, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => C
+  A: () => T
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -46,7 +46,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function C(e) {
   let {
     guild: t,
     eligibleTeams: n,
@@ -92,7 +92,7 @@ function T(e) {
     })]
   })
 }
-let C = e => {
+let T = e => {
   let {
     guild: t
   } = e, n = (0, l.bG)([h.default], () => h.default.getCurrentUser()), s = (0, f.bM)(t, n), d = (0, c.ME)(t), j = (0, l.bG)([b.A], () => b.A.isFocused()), {
@@ -103,16 +103,16 @@ let C = e => {
   }), A = i.useMemo(() => _.filter(e => {
     var t;
     return e.payout_account_status !== E.y.BLOCKED && (0, m.y)(null != (t = null == n ? true : n.id) ? t : y.dJq, e)
-  }), [_, n]), C = A.length > 0, P = i.useCallback(async () => {
+  }), [_, n]), T = A.length > 0, P = i.useCallback(async () => {
     x.default.track(y.HAw.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
-      has_eligible_team: C,
+      has_eligible_team: T,
       guild_id: t.id,
       is_owner: s
     });
     let e = await (0, u.a)(y.dSh.DEVELOPER_PORTAL_TEAMS);
     (0, o.A)(e)
-  }, [t, s, d, C]), w = i.useCallback(e => s ? (0, r.jsx)(g.A, {
+  }, [t, s, d, T]), w = i.useCallback(e => s ? (0, r.jsx)(g.A, {
     onClick: P,
     children: e
   }) : e, [P, s]);
@@ -130,7 +130,7 @@ let C = e => {
       description: N.intl.format(N.t["5mfqpW"], {
         onCreateTeamHook: w
       }),
-      children: C ? (0, r.jsx)(T, {
+      children: T ? (0, r.jsx)(C, {
         guild: t,
         eligibleTeams: A,
         isGuildOwner: s

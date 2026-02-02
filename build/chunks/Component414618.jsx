@@ -195,11 +195,11 @@ function F(e) {
       } = e;
       switch (t) {
         case D.oO.ROLES:
-          return (0, l.jsx)(Y, {
+          return (0, l.jsx)(Z, {
             title: B.intl.string(B.t["LPJmL/"])
           }, "roles-title");
         case D.oO.MEMBERS:
-          return (0, l.jsx)(Y, {
+          return (0, l.jsx)(Z, {
             title: B.intl.string(B.t["9Oq93m"])
           }, "members-title")
       }
@@ -267,7 +267,7 @@ function W(e) {
   })
 }
 
-function Z(e) {
+function Y(e) {
   let {
     guild: t,
     channel: i,
@@ -368,7 +368,7 @@ function Z(e) {
   })
 }
 
-function Y(e) {
+function Z(e) {
   let {
     title: t
   } = e;
@@ -471,7 +471,7 @@ let J = Chunk311907.Ay.connectStores([Chunk176360.A, Chunk576705.A, Chunk696451.
       guild: u,
       channel: s,
       permissionUpdates: m
-    }) : null, (0, l.jsx)(Z, {
+    }) : null, (0, l.jsx)(Y, {
       channel: s,
       guild: u,
       isPrivateGuildChannel: d,

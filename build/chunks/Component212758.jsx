@@ -21,12 +21,12 @@ function _(e) {
     onDismissAndStay: _,
     onDismissAndLeave: I,
     leaveButtonText: f,
-    stayButtonText: E,
-    transitionState: p,
+    stayButtonText: p,
+    transitionState: E,
     impression: h
   } = e;
   return (0, n.jsx)(i.ExpressiveModal, {
-    transitionState: p,
+    transitionState: E,
     onClose: () => (_(), Promise.resolve()),
     trackingProps: {
       impression: h
@@ -38,7 +38,7 @@ function _(e) {
     title: t,
     subtitle: null != r ? r : true,
     actions: [{
-      text: E,
+      text: p,
       onClick: _,
       variant: "secondary"
     }, {

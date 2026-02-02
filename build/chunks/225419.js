@@ -3,15 +3,15 @@
 require.d(exports, {
   BK: () => _,
   LZ: () => a,
-  Nk: () => c,
+  Nk: () => d,
   Si: () => x,
   eD: () => o,
-  iG: () => B,
-  k6: () => N,
+  iG: () => N,
+  k6: () => B,
   m6: () => g,
   mL: () => A,
   od: () => T,
-  qI: () => d,
+  qI: () => c,
   x3: () => M,
   xd: () => p
 }), require("./321073.js"), require("./733351.js");
@@ -309,7 +309,7 @@ function a(t) {
     })), (n = [E.xB.CREATE_INSTANT_INVITE, E.xB.CHANGE_NICKNAME, E.xB.MANAGE_NICKNAMES, E.xB.KICK_MEMBERS, E.xB.BAN_MEMBERS, E.xB.MODERATE_MEMBERS], l({
       title: s.intl.string(s.t.Ny49TN),
       permissions: S(n, A)
-    })), (e = [E.xB.SEND_MESSAGES, E.xB.SEND_MESSAGES_IN_THREADS, E.xB.CREATE_PUBLIC_THREADS, E.xB.CREATE_PRIVATE_THREADS, E.xB.EMBED_LINKS, E.xB.ATTACH_FILES, E.xB.ADD_REACTIONS, E.xB.USE_EXTERNAL_EMOJIS, E.xB.USE_EXTERNAL_STICKERS, E.xB.USE_EXTERNAL_SOUNDS, E.xB.MENTION_EVERYONE, E.xB.MANAGE_MESSAGES, E.xB.PIN_MESSAGES, E.xB.BYPASS_SLOWMODE, E.xB.MANAGE_THREADS, E.xB.READ_MESSAGE_HISTORY, E.xB.SEND_TTS_MESSAGES, E.xB.SEND_VOICE_MESSAGES, E.xB.SEND_POLLS], t.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), t.inBypassSlowmodePermissionExperiment || (e = e.filter(t => t !== E.xB.BYPASS_SLOWMODE)), l({
+    })), (e = [E.xB.SEND_MESSAGES, E.xB.SEND_MESSAGES_IN_THREADS, E.xB.CREATE_PUBLIC_THREADS, E.xB.CREATE_PRIVATE_THREADS, E.xB.EMBED_LINKS, E.xB.ATTACH_FILES, E.xB.ADD_REACTIONS, E.xB.USE_EXTERNAL_EMOJIS, E.xB.USE_EXTERNAL_STICKERS, E.xB.USE_EXTERNAL_SOUNDS, E.xB.MENTION_EVERYONE, E.xB.MANAGE_MESSAGES, E.xB.PIN_MESSAGES, E.xB.BYPASS_SLOWMODE, E.xB.MANAGE_THREADS, E.xB.READ_MESSAGE_HISTORY, E.xB.SEND_TTS_MESSAGES, E.xB.SEND_VOICE_MESSAGES, E.xB.SEND_POLLS], t.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), l({
       title: s.intl.string(s.t.cKobO5),
       permissions: S(e, A)
     })), (r = [E.xB.CONNECT, E.xB.SPEAK, E.xB.STREAM, E.xB.USE_SOUNDBOARD, E.xB.USE_EXTERNAL_SOUNDS, E.xB.USE_VAD, E.xB.PRIORITY_SPEAKER, E.xB.MUTE_MEMBERS, E.xB.DEAFEN_MEMBERS, E.xB.MOVE_MEMBERS, E.xB.SET_VOICE_CHANNEL_STATUS], l({
@@ -350,23 +350,23 @@ function g(t, i) {
 
 function _(t, i, n) {
   let e = [E.xB.SEND_MESSAGES, E.xB.SEND_MESSAGES_IN_THREADS, E.xB.CREATE_PUBLIC_THREADS, E.xB.CREATE_PRIVATE_THREADS, E.xB.EMBED_LINKS, E.xB.ATTACH_FILES, E.xB.ADD_REACTIONS, E.xB.USE_EXTERNAL_EMOJIS, E.xB.USE_EXTERNAL_STICKERS, E.xB.USE_EXTERNAL_SOUNDS, E.xB.MENTION_EVERYONE, E.xB.MANAGE_MESSAGES, E.xB.PIN_MESSAGES, E.xB.BYPASS_SLOWMODE, E.xB.MANAGE_THREADS, E.xB.READ_MESSAGE_HISTORY, E.xB.SEND_TTS_MESSAGES, E.xB.SEND_VOICE_MESSAGES, E.xB.SEND_POLLS];
-  return n.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (e = e.filter(t => t !== E.xB.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (e = e.filter(t => t !== E.xB.CREATE_PUBLIC_THREADS)), n.inBypassSlowmodePermissionExperiment || (e = e.filter(t => t !== E.xB.BYPASS_SLOWMODE)), {
+  return n.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (e = e.filter(t => t !== E.xB.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (e = e.filter(t => t !== E.xB.CREATE_PUBLIC_THREADS)), {
     title: i,
     description: n.sectionDescription,
     permissions: S(e, t)
   }
 }
 
-function B(t, i) {
+function N(t, i) {
   return {
     title: i,
     permissions: S([E.xB.CONNECT, E.xB.SPEAK, E.xB.STREAM, E.xB.USE_SOUNDBOARD, E.xB.USE_EXTERNAL_SOUNDS, E.xB.USE_VAD, E.xB.PRIORITY_SPEAKER, E.xB.MUTE_MEMBERS, E.xB.DEAFEN_MEMBERS, E.xB.MOVE_MEMBERS, E.xB.SET_VOICE_CHANNEL_STATUS], t)
   }
 }
 
-function N(t, i, n) {
+function B(t, i, n) {
   let e = [E.xB.SEND_MESSAGES, E.xB.EMBED_LINKS, E.xB.ATTACH_FILES, E.xB.ADD_REACTIONS, E.xB.USE_EXTERNAL_EMOJIS, E.xB.USE_EXTERNAL_STICKERS, E.xB.USE_EXTERNAL_SOUNDS, E.xB.MENTION_EVERYONE, E.xB.MANAGE_MESSAGES, E.xB.BYPASS_SLOWMODE, E.xB.READ_MESSAGE_HISTORY, E.xB.SEND_TTS_MESSAGES, E.xB.SEND_VOICE_MESSAGES, E.xB.SEND_POLLS];
-  return n.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), n.inBypassSlowmodePermissionExperiment || (e = e.filter(t => t !== E.xB.BYPASS_SLOWMODE)), {
+  return n.inSoundmojiExperiment || (e = e.filter(t => t !== E.xB.USE_EXTERNAL_SOUNDS)), {
     title: i,
     description: n.sectionDescription,
     permissions: S(e, t)
@@ -390,7 +390,7 @@ function T(t, i, n) {
   }
 }
 
-function d(t, i) {
+function c(t, i) {
   return {
     title: i,
     permissions: S([E.xB.REQUEST_TO_SPEAK, E.xB.MENTION_EVERYONE], t)
@@ -404,14 +404,13 @@ function p(t, i) {
   }
 }
 
-function c(t) {
+function d(t) {
   return null == t ? t : "string" == typeof t ? t.trim() : "function" == typeof t ? s.intl.format(t, {}) : t
 }
 
-function M(t, i, n) {
-  if (r.A.getCurrentConfig({
-      guildId: n,
-      location: "getMigrationWarning"
-    }).enabled) return i ? t === E.xB.MANAGE_CHANNELS || t === E.xB.MANAGE_THREADS ? s.intl.string(s.t.JD3HnA) : t === E.xB.MANAGE_MESSAGES ? s.intl.string(s.t["62sGhW"]) : null : t === E.xB.MANAGE_MESSAGES ? s.intl.string(s.t.bU1J1V) : null;
-  return i ? t === E.xB.MANAGE_CHANNELS || t === E.xB.MANAGE_THREADS ? s.intl.string(s.t.Han3PH) : t === E.xB.MANAGE_MESSAGES ? s.intl.string(s.t.zSc2tb) : null : t === E.xB.MANAGE_MESSAGES ? s.intl.string(s.t["2XIdPp"]) : null
+function M(t, i) {
+  return r.A.getCurrentConfig({
+    guildId: i,
+    location: "getMigrationWarning"
+  }).enabled ? t === E.xB.MANAGE_CHANNELS || t === E.xB.MANAGE_THREADS ? s.intl.string(s.t.JD3HnA) : t === E.xB.MANAGE_MESSAGES ? s.intl.string(s.t["62sGhW"]) : null : t === E.xB.MANAGE_CHANNELS || t === E.xB.MANAGE_THREADS ? s.intl.string(s.t.Han3PH) : t === E.xB.MANAGE_MESSAGES ? s.intl.string(s.t.zSc2tb) : null
 }

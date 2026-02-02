@@ -8,8 +8,8 @@ require.d(exports, {
   G$: () => b,
   J4: () => x,
   Rp: () => j,
-  UP: () => C,
-  W5: () => T,
+  UP: () => T,
+  W5: () => C,
   WA: () => S,
   Wh: () => y,
   XD: () => N,
@@ -171,7 +171,7 @@ async function I(e, t, n) {
   }
 }
 
-function T(e, t) {
+function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return n || m.A.hasChanges() ? o.h.getEnabled(e) && !(0, c.Ic)(t) ? (a.A.show({
     title: f.intl.string(f.t["6nCZyG"]),
@@ -181,7 +181,7 @@ function T(e, t) {
   }), Promise.reject()) : P(e, t) : Promise.resolve()
 }
 
-function C(e, t) {
+function T(e, t) {
   var n, r;
   let i = o.h.getSettings(e);
   return t && !(0, c.Ic)(i) ? void a.A.show({

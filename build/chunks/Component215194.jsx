@@ -34,7 +34,7 @@ let S = function() {
   } = (0, c.Ay)(o.A.GUILD_SETTINGS_PROFILE_PAGE), t = (0, l.bG)([f.A], () => f.A.getGuild(), []), n = null == t ? true : t.id, {
     fetchGuildProfile: S,
     fetchStatus: I
-  } = (0, u.u)(null == t ? true : t.id), T = (0, l.bG)([f.A], () => f.A.getGuildProfile(), []), C = (0, l.bG)([m.A], () => m.A.can(A.xBc.MANAGE_GUILD, t)), P = i.useCallback(e => {
+  } = (0, u.u)(null == t ? true : t.id), C = (0, l.bG)([f.A], () => f.A.getGuildProfile(), []), T = (0, l.bG)([m.A], () => m.A.can(A.xBc.MANAGE_GUILD, t)), P = i.useCallback(e => {
     null != n && (p.A.updateGuild({
       icon: e
     }), p.A.updateGuildProfile(n, {
@@ -53,12 +53,12 @@ let S = function() {
   }, [S]);
   return (i.useEffect(() => {
     a.A.getDetectableGames()
-  }, []), I === d.X.FETCHED && null == T) ? (0, r.jsx)(O.g, {
+  }, []), I === d.X.FETCHED && null == C) ? (0, r.jsx)(O.g, {
     forceFetchGuildProfile: R
   }) : I === d.X.NOT_FETCHED || I === d.X.FETCHING ? (0, r.jsx)("main", {
     className: N.u1,
     children: (0, r.jsx)(s.y$y, {})
-  }) : null == t || null == T ? null : (0, r.jsx)(c.f5, {
+  }) : null == t || null == C ? null : (0, r.jsx)(c.f5, {
     value: e,
     children: (0, r.jsxs)("main", {
       className: N.Qs,
@@ -76,40 +76,40 @@ let S = function() {
             children: E.intl.string(E.t["5PGZWS"])
           })]
         }), (0, r.jsx)(_.A, {
-          profile: T,
-          canManageGuild: C
+          profile: C,
+          canManageGuild: T
         }), (0, r.jsx)("div", {
           className: N.yF
         }), (0, r.jsx)(j.A, {
-          profile: T,
-          canManageGuild: C,
+          profile: C,
+          canManageGuild: T,
           onIconChange: P
         }), (0, r.jsx)("div", {
           className: N.yF
         }), (0, r.jsx)(h.A, {
-          profile: T,
+          profile: C,
           onCustomBannerChange: w,
-          canManageGuild: C
+          canManageGuild: T
         }), (0, r.jsx)("div", {
           className: N.yF
         }), (0, r.jsx)(v.A, {
-          profile: T,
-          canManageGuild: C
+          profile: C,
+          canManageGuild: T
         }), (0, r.jsx)("div", {
           className: N.yF
         }), (0, r.jsx)(b.A, {
-          profile: T,
-          canManageGuild: C
+          profile: C,
+          canManageGuild: T
         }), (0, r.jsx)("div", {
           className: N.yF
         }), (0, r.jsx)(x.A, {
-          profile: T,
-          canManageGuild: C
+          profile: C,
+          canManageGuild: T
         }), (0, r.jsx)("div", {
           className: N.yF
         }), (0, r.jsx)(y.A, {
-          profile: T,
-          canManageGuild: C
+          profile: C,
+          canManageGuild: T
         })]
       }), (0, r.jsx)("div", {
         className: N.DK,
@@ -117,9 +117,9 @@ let S = function() {
           className: N.ti,
           children: (0, r.jsx)(g.Ay, {
             className: N.q5,
-            profile: T,
+            profile: C,
             disableCTA: true,
-            onIconChange: C ? P : true,
+            onIconChange: T ? P : true,
             disableGuildNameClick: true
           })
         })

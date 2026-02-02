@@ -1,12 +1,12 @@
-/** Chunk was on 60118 **/
-/** chunk id: 146423, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 65442 **/
+/** chunk id: 146423, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  a = require.n(Chunk503698),
+  s = require.n(Chunk503698),
   Chunk158954 = require("./158954.js"),
   Chunk713517 = require("./713517.js"),
   Chunk607123 = require("./607123.jsx"),
@@ -15,36 +15,38 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     sku: t,
-    user: n,
-    children: i,
+    user: r,
+    children: l,
     cardStyle: d,
     skuPreviewStyle: f,
-    disableHoverOrFocus: p,
-    onHoverOrFocusChange: g,
-    onClick: m
-  } = e, b = l.useRef(null), {
-    isHoveringOrFocusing: y
-  } = (0, s.A)(b), O = l.useRef(g);
-  return l.useEffect(() => {
-    O.current = g
-  }, [g]), l.useEffect(() => {
+    disableHoverOrFocus: h,
+    onHoverOrFocusChange: m,
+    onClick: g,
+    options: I
+  } = e, p = i.useRef(null), {
+    isHoveringOrFocusing: S
+  } = (0, u.A)(p), O = i.useRef(m);
+  return i.useEffect(() => {
+    O.current = m
+  }, [m]), i.useEffect(() => {
     var e;
-    null == (e = O.current) || e.call(O, y)
-  }, [y]), (0, r.jsxs)(o.DUT, {
-    innerRef: b,
-    className: a()(u.N, d),
-    onClick: m,
-    children: [(0, r.jsx)(o.AC4, {
-      children: (0, r.jsx)(o.H, {
+    null == (e = O.current) || e.call(O, S)
+  }, [S]), (0, n.jsxs)(a.DUT, {
+    innerRef: p,
+    className: s()(c.N, d),
+    onClick: g,
+    children: [(0, n.jsx)(a.AC4, {
+      children: (0, n.jsx)(a.H, {
         children: t.name
       })
-    }), (0, r.jsx)("div", {
-      className: a()(u.e, f),
-      children: (0, r.jsx)(c.Ay, {
+    }), (0, n.jsx)("div", {
+      className: s()(c.e, f),
+      children: (0, n.jsx)(o.Ay, {
         sku: t,
-        isFocused: !p && y,
-        user: n
+        isFocused: !h && S,
+        user: r,
+        options: I
       })
-    }), i]
+    }), l]
   })
 }

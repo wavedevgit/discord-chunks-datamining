@@ -62,10 +62,10 @@ function P(e) {
   let U = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: T.intl.string(T.t.X6h2gz)
+        children: C.intl.string(C.t.X6h2gz)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: T.intl.format(T.t.xiYuDt, {
+        children: C.intl.format(C.t.xiYuDt, {
           monetizationPolicyLink: v.A.getArticleURL(S.MVz.CREATOR_POLICY),
           serverProductsSupportLink: v.A.getCreatorSupportArticleURL(S.MVz.SERVER_PRODUCTS)
         })
@@ -74,28 +74,28 @@ function P(e) {
     B = (0, r.jsxs)(o.VQ0, {
       type: "top",
       look: "brand",
-      className: C.$H,
-      "aria-label": T.intl.string(T.t.X6h2gz),
+      className: T.$H,
+      "aria-label": C.intl.string(C.t.X6h2gz),
       selectedItem: L,
       onItemSelect: k,
       children: [(0, r.jsx)(u.A, {
         id: "basic_info",
-        disabledTooltip: T.intl.string(T.t.NVDuUX),
+        disabledTooltip: C.intl.string(C.t.NVDuUX),
         disabled: !n,
-        children: T.intl.string(T.t.w27QAR)
+        children: C.intl.string(C.t.w27QAR)
       }), (0, r.jsx)(u.A, {
         id: "manage_listings",
-        disabledTooltip: T.intl.string(T.t.NVDuUX),
+        disabledTooltip: C.intl.string(C.t.NVDuUX),
         disabled: !n,
-        children: T.intl.string(T.t.wlZ1mh)
+        children: C.intl.string(C.t.wlZ1mh)
       }), D ? (0, r.jsx)(o.VQ0.Item, {
         id: "payment",
-        className: C.YU,
-        children: T.intl.string(T.t.YBrFe6)
+        className: T.YU,
+        children: C.intl.string(C.t.YBrFe6)
       }) : null, n ? (0, r.jsx)("div", {
-        className: C.jc,
+        className: T.jc,
         children: (0, r.jsx)(a.$nd, {
-          text: T.intl.string(T.t.vM81yY),
+          text: C.intl.string(C.t.vM81yY),
           variant: "secondary",
           onClick: M,
           size: "sm"
@@ -118,7 +118,7 @@ function P(e) {
     children: [U, (0, r.jsx)(m.A, {
       guild: w
     }), (0, r.jsx)("div", {
-      className: C.Mv,
+      className: T.Mv,
       children: B
     }), H]
   })

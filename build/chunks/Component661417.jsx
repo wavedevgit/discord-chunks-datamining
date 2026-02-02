@@ -1,7 +1,7 @@
 /** Chunk was on 23628 **/
 /** chunk id: 661417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => p
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,31 +15,31 @@ var Chunk627968 = require("./627968.js"),
   Chunk717415 = require("./717415.jsx"),
   Chunk985018 = require("./985018.jsx");
 
-function p(e) {
+function m(e) {
   let {
     floatRight: t
   } = e, {
     quest: n,
-    sourceQuestContent: p
-  } = l.useContext(f.VideoQuestModalContext), v = (0, c.go)(), E = (0, d.E0)(n.config), g = l.useCallback(() => {
-    E && ((0, u.Xm)(n.id, {
+    sourceQuestContent: m
+  } = l.useContext(p.VideoQuestModalContext), v = (0, c.go)(), b = (0, d.E0)(n.config), E = l.useCallback(() => {
+    b && ((0, u.Xm)(n.id, {
       content: s.uF.VIDEO_MODAL,
       ctaContent: a.Cy.COPY_QUEST_URL,
       impressionId: v,
-      sourceQuestContent: p
-    }), (0, i.showToast)((0, i.createToast)(m.intl.string(m.t["+5kSoW"]), i.ToastType.SUCCESS)))
-  }, [v, E, n.id, p]);
-  return E ? (0, r.jsx)("div", {
+      sourceQuestContent: m
+    }), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["+5kSoW"]), i.ToastType.SUCCESS)))
+  }, [v, b, n.id, m]);
+  return b ? (0, r.jsx)("div", {
     style: {
       marginLeft: t ? "auto" : true
     },
     children: (0, r.jsx)(o.m_, {
-      text: m.intl.string(m.t.WmfZHZ),
+      text: f.intl.string(f.t.WmfZHZ),
       children: (0, r.jsx)(i.K0, {
         variant: "overlay-secondary",
         icon: i.qYV,
-        "aria-label": m.intl.string(m.t.RDE0Sc),
-        onClick: g
+        "aria-label": f.intl.string(f.t.RDE0Sc),
+        onClick: E
       })
     })
   }) : null

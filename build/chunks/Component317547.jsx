@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => R,
   Kh: () => E,
-  MD: () => T,
+  MD: () => C,
   fh: () => A
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -74,7 +74,7 @@ let A = e => {
       children: l
     })
   },
-  T = e => {
+  C = e => {
     let {
       children: t
     } = e;
@@ -88,7 +88,7 @@ let A = e => {
       })]
     })
   },
-  C = () => {
+  T = () => {
     let e = (0, r.jsx)(d.m, {
       text: v.intl.string(v.t.q3PkL5),
       children: (0, r.jsx)(u.mir, {
@@ -154,7 +154,7 @@ let A = e => {
   }, {
     key: "amount",
     cellClassName: s()(Chunk921503.Fh, Chunk921503.WI),
-    renderHeader: () => (0, r.jsx)(C, {}),
+    renderHeader: () => (0, r.jsx)(T, {}),
     render(e, t) {
       let {
         expandedRows: n

@@ -17,27 +17,29 @@ let h = function(e) {
   let {
     user: t,
     hovered: i,
-    subText: s,
+    subText: n,
     showAccountIdentifier: h,
     status: p,
     isMobile: d,
-    className: m
-  } = e, A = (0, a.bG)([u.A], () => u.A.getNickname(t.id));
-  return (0, n.jsxs)("div", {
-    className: r()(c.eF, m, {
+    isVR: m,
+    className: A
+  } = e, y = (0, o.bG)([u.A], () => u.A.getNickname(t.id));
+  return (0, s.jsxs)("div", {
+    className: r()(c.eF, A, {
       [c.yo]: i
     }),
-    children: [(0, n.jsx)(l.A, {
+    children: [(0, s.jsx)(l.A, {
       user: t,
       className: c.my,
       animate: i,
       status: p,
-      isMobile: d
-    }), (0, n.jsxs)("div", {
+      isMobile: d,
+      isVR: m
+    }), (0, s.jsxs)("div", {
       className: c.Qq,
-      children: [(0, n.jsx)(o.A, {
+      children: [(0, s.jsx)(a.A, {
         user: t,
-        nick: A,
+        nick: y,
         botClass: c.AO,
         className: r()(c.xK, {
           [c.ID]: t.hasUniqueUsername()
@@ -45,9 +47,9 @@ let h = function(e) {
         usernameClass: c.Xh,
         discriminatorClass: c.D2,
         showAccountIdentifier: h
-      }), (0, n.jsx)("div", {
+      }), (0, s.jsx)("div", {
         className: c.W$,
-        children: s
+        children: n
       })]
     })]
   })

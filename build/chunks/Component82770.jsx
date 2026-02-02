@@ -14,7 +14,7 @@ var Chunk397927 = require("./397927.js"),
 function d(e) {
   return (0, i.jsx)(r.Drp, {
     id: "application-directory",
-    label: c.intl.string(c.t.AKcFUj),
+    label: o.intl.string(o.t.AKcFUj),
     icon: r.k9F,
     leadingAccessory: {
       type: "icon",
@@ -22,7 +22,7 @@ function d(e) {
     },
     action: () => {
       (0, l.transitionToGlobalDiscovery)({
-        tab: o.GlobalDiscoveryTab.APPS,
+        tab: c.GlobalDiscoveryTab.APPS,
         newSessionState: {
           entrypoint: {
             name: a.sW.GUILD_HEADER_POPOUT

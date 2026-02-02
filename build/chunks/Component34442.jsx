@@ -1,4 +1,4 @@
-/** Chunk was on 60118 **/
+/** Chunk was on 51693 **/
 /** chunk id: 34442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   IU: () => y,
@@ -75,9 +75,9 @@ function b(e) {
     trackUserProfileEditAction: h
   } = (0, s.NJ)(), [x, v] = l.useState(""), _ = l.useRef(""), {
     options: I,
-    matchSorterOptions: A
+    matchSorterOptions: w
   } = (0, o.R)(), {
-    applicationIds: w,
+    applicationIds: A,
     onAddGame: P
   } = (0, u.S)(t), E = l.useCallback(e => {
     (0, c.ew)({
@@ -89,21 +89,21 @@ function b(e) {
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
-    }), w.includes(e) && P(e), null == b || b()
-  }, [t, h, b, w, P]), S = l.useMemo(() => {
+    }), A.includes(e) && P(e), null == b || b()
+  }, [t, h, b, A, P]), S = l.useMemo(() => {
     let e = new Map(I.map(e => [String(e.value), {
         id: String(e.value),
         value: String(e.value),
         label: e.label,
         disabled: j.has(e.value)
       }])),
-      t = w.map(t => e.get(t)).filter(e => null != e && !e.disabled),
+      t = A.map(t => e.get(t)).filter(e => null != e && !e.disabled),
       n = [...e.values()].filter(e => !t.includes(e));
     return [...t, ...n]
-  }, [I, j, w]), T = l.useMemo(() => g(p({}, A), {
+  }, [I, j, A]), T = l.useMemo(() => g(p({}, w), {
     threshold: i.Ht.rankings.CONTAINS,
     keys: ["label"]
-  }), [A]), C = l.useCallback(e => "" === e.trim() ? S.length : (0, i.Ht)(S, e, T).length, [S, T]), N = l.useCallback(e => {
+  }), [w]), C = l.useCallback(e => "" === e.trim() ? S.length : (0, i.Ht)(S, e, T).length, [S, T]), N = l.useCallback(e => {
     let n = e.target.value;
     "" === x.trim() && "" !== n.trim() && h({
       action: "GAME_SEARCH_SESSION_STARTED",

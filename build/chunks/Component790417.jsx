@@ -1,7 +1,7 @@
-/** Chunk was on 60118 **/
+/** Chunk was on 51693 **/
 /** chunk id: 790417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => w
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -27,12 +27,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk897757 = require("./897757.js");
 
-function A(e) {
+function w(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: A,
-    guildId: w,
+    displayProfile: w,
+    guildId: A,
     channelId: P,
     onClose: E
   } = e, {
@@ -44,15 +44,15 @@ function A(e) {
     recent: C,
     stream: N
   } = (0, f.A)(t.id), {
-    voiceChannel: R,
-    voiceActivity: k
+    voiceChannel: k,
+    voiceActivity: R
   } = (0, p.A)({
     userId: t.id,
-    guildId: w
+    guildId: A
   }), D = (0, l.bG)([o.A], () => o.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, G = (0, l.bG)([u.A, c.A], () => {
     let e = L ? u.A.getStatus() : c.A.getStatus(t.id);
     return e === i.clD.OFFLINE || e === i.clD.INVISIBLE
-  }), M = T.length > 0 || null != N, U = S && null == N && null == k && null != R, F = !G && (M || U), W = C.length > 0;
+  }), M = T.length > 0 || null != N, U = S && null == N && null == R && null != k, F = !G && (M || U), W = C.length > 0;
   if (!F && !W && D) return (0, r.jsx)("div", {
     className: I.kR,
     children: Array.from({
@@ -69,12 +69,12 @@ function A(e) {
     }, t))
   });
   if (!F && !W && !D) {
-    var H;
+    var B;
     return L ? (0, r.jsx)(O.qv, {
       onClose: E
     }) : (0, r.jsx)(O.zf, {
       user: t,
-      guildId: null != (H = null == A ? true : A.guildId) ? H : w,
+      guildId: null != (B = null == w ? true : w.guildId) ? B : A,
       channelId: P,
       onClose: E
     })
@@ -104,7 +104,7 @@ function A(e) {
           children: (0, r.jsx)(y.A, {
             user: t,
             currentUser: n,
-            voiceChannel: R,
+            voiceChannel: k,
             onClose: E
           })
         })]

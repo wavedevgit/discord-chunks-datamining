@@ -17,29 +17,29 @@ function d(e, t, n) {
   let {
     quest: d
   } = r.useContext(a.VideoQuestModalContext), {
-    questConfig: f
-  } = r.useContext(a.VideoQuestConfigContext), m = r.useRef(false), p = r.useRef(null), v = null == (c = f.taskConfigV2.tasks[o.n.WATCH_VIDEO]) ? true : c.assets, E = r.useMemo(() => f.features.includes(i.L.FULL_EPISODE_VIDEO_QUEST), [f.features]), g = r.useMemo(() => null != v ? l.Ay.isSupported() && null != v.videoHls ? s.fY.VIDEO_PLAYER_VIDEO_HLS : E ? null : u.has(t) || null == v.videoLowRes ? s.fY.VIDEO_PLAYER_VIDEO : s.fY.VIDEO_PLAYER_VIDEO_LOW_RES : null, [v, t, E]), h = r.useMemo(() => null != g ? (0, s.tW)(d, g, true, false) : null, [d, g]), b = () => {
-    null != p.current && 8e5 !== p.current.config.minAutoBitrate && (p.current.config.minAutoBitrate = 8e5)
+    questConfig: p
+  } = r.useContext(a.VideoQuestConfigContext), f = r.useRef(false), m = r.useRef(null), v = null == (c = p.taskConfigV2.tasks[o.n.WATCH_VIDEO]) ? true : c.assets, b = r.useMemo(() => p.features.includes(i.L.FULL_EPISODE_VIDEO_QUEST), [p.features]), E = r.useMemo(() => null != v ? l.Ay.isSupported() && null != v.videoHls ? s.fY.VIDEO_PLAYER_VIDEO_HLS : b ? null : u.has(t) || null == v.videoLowRes ? s.fY.VIDEO_PLAYER_VIDEO : s.fY.VIDEO_PLAYER_VIDEO_LOW_RES : null, [v, t, b]), g = r.useMemo(() => null != E ? (0, s.tW)(d, E, true, false) : null, [d, E]), h = () => {
+    null != m.current && 8e5 !== m.current.config.minAutoBitrate && (m.current.config.minAutoBitrate = 8e5)
   }, y = r.useCallback(() => {
-    null != p.current && (p.current.config.minAutoBitrate = 8e5)
+    null != m.current && (m.current.config.minAutoBitrate = 8e5)
   }, []);
   return r.useEffect(() => {
-    if (g !== s.fY.VIDEO_PLAYER_VIDEO_HLS || null == h || null == e.current || m.current) return;
-    p.current = new l.Ay({
+    if (E !== s.fY.VIDEO_PLAYER_VIDEO_HLS || null == g || null == e.current || f.current) return;
+    m.current = new l.Ay({
       backBufferLength: 20,
       maxBufferLength: 30,
       startPosition: n,
       startFragPrefetch: true,
       startLevel: false
-    }), p.current.on(l.Ay.Events.FRAG_LOADING, b), p.current.loadSource(h.url), p.current.attachMedia(e.current), m.current = true;
-    let t = p.current;
+    }), m.current.on(l.Ay.Events.FRAG_LOADING, h), m.current.loadSource(g.url), m.current.attachMedia(e.current), f.current = true;
+    let t = m.current;
     return () => {
-      null != t && t.off(l.Ay.Events.FRAG_LOADING, b)
+      null != t && t.off(l.Ay.Events.FRAG_LOADING, h)
     }
-  }, [h, g, e, n]), {
-    videoAssetType: g,
-    videoAsset: h,
-    hlsRef: p,
+  }, [g, E, e, n]), {
+    videoAssetType: E,
+    videoAsset: g,
+    hlsRef: m,
     onFirstChunkLoaded: y
   }
 }

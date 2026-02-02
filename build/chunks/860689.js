@@ -95,6 +95,7 @@ function _(e, t, n) {
     vanityURLCode: null != (y = e.vanity_url_code) ? y : null,
     premiumTier: null != (b = e.premium_tier) ? b : s.do.premiumTier,
     premiumProgressBarEnabled: e.premium_progress_bar_enabled || s.do.premiumProgressBarEnabled,
+    premiumProgressBarEnabledUserUpdatedAt: null != e.premium_progress_bar_enabled_user_updated_at ? new Date(e.premium_progress_bar_enabled_user_updated_at) : null,
     systemChannelFlags: e.system_channel_flags,
     discoverySplash: null != (O = e.discovery_splash) ? O : null,
     rulesChannelId: null != (v = e.rules_channel_id) ? v : null,
@@ -129,6 +130,7 @@ function h(e, t) {
 function m(e, t, n) {
   return f(u({}, e), {
     joinedAt: null != e.joinedAt ? e.joinedAt.toISOString() : null,
+    premiumProgressBarEnabledUserUpdatedAt: null != e.premiumProgressBarEnabledUserUpdatedAt ? e.premiumProgressBarEnabledUserUpdatedAt.toISOString() : null,
     features: Array.from(e.features),
     roles: t,
     member: null != n ? {
@@ -257,6 +259,7 @@ function S(e) {
     premiumTier: e.premiumTier || s.do.premiumTier,
     premiumSubscriberCount: e.premiumSubscriberCount || s.do.premiumSubscriberCount,
     premiumProgressBarEnabled: e.premiumProgressBarEnabled || s.do.premiumProgressBarEnabled,
+    premiumProgressBarEnabledUserUpdatedAt: e.premiumProgressBarEnabledUserUpdatedAt instanceof Date ? e.premiumProgressBarEnabledUserUpdatedAt : null != e.premiumProgressBarEnabledUserUpdatedAt ? new Date(e.premiumProgressBarEnabledUserUpdatedAt) : null,
     systemChannelFlags: e.systemChannelFlags,
     discoverySplash: e.discoverySplash || null,
     rulesChannelId: e.rulesChannelId || null,
@@ -276,7 +279,7 @@ function S(e) {
 }
 
 function T(e) {
-  var t;
+  var t, n, r;
   return {
     id: e.id,
     name: e.name,
@@ -299,6 +302,7 @@ function T(e) {
     vanity_url_code: null != (t = e.vanityURLCode) ? t : null,
     premium_tier: e.premiumTier,
     premium_progress_bar_enabled: e.premiumProgressBarEnabled,
+    premium_progress_bar_enabled_user_updated_at: null != (n = null == (r = e.premiumProgressBarEnabledUserUpdatedAt) ? true : r.toISOString()) ? n : null,
     premium_features: null != e.premiumFeatures ? P(e.premiumFeatures) : null,
     system_channel_flags: e.systemChannelFlags,
     discovery_splash: e.discoverySplash,
@@ -322,7 +326,8 @@ function T(e) {
 function C(e) {
   let t = f(u({}, e), {
     features: (0, a.y)(e.features),
-    joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null
+    joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null,
+    premiumProgressBarEnabledUserUpdatedAt: null != e.premiumProgressBarEnabledUserUpdatedAt ? new Date(e.premiumProgressBarEnabledUserUpdatedAt) : null
   });
   return delete t.roles, delete t.member, w(t)
 }

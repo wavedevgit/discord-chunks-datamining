@@ -81,24 +81,24 @@ function L(e) {
     transitionState: o,
     onClose: s,
     quest: u,
-    autoplay: p,
+    autoplay: m,
     videoSessionId: v,
     impressionRef: y,
     parentModalOpenStartClockTime: A,
     sourceQuestContent: I
-  } = e, L = (0, h.Yh)(u), R = (0, E.LS)(u), M = (0, g.go)(), [k, V] = l.useState(L.progressSeconds), [Q, U] = l.useState(142), F = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.n.WATCH_VIDEO];
+  } = e, L = (0, g.Yh)(u), R = (0, b.LS)(u), k = (0, E.go)(), [M, V] = l.useState(L.progressSeconds), [Q, U] = l.useState(142), F = null == (n = u.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.n.WATCH_VIDEO];
   a()(null != F, "VideoQuestModal: videoTask must not be null");
-  let B = (0, b.eG)(F),
+  let B = (0, h.eG)(F),
     K = "portrait" === B,
-    G = (0, m.A)(e => {
+    G = (0, f.A)(e => {
       U(e.target.offsetHeight)
     }),
-    H = (0, f.w)(G),
+    H = (0, p.w)(G),
     Y = (0, j.H)({
       quest: u,
       onClose: s,
       sourceQuestContent: I,
-      impressionId: M
+      impressionId: k
     }),
     W = l.useMemo(() => ({
       quest: u,
@@ -146,7 +146,7 @@ function L(e) {
               videoTask: F,
               parentTransitionState: o,
               onOptimisticProgressUpdate: V,
-              autoplay: p,
+              autoplay: m,
               performanceClockStartTime: A,
               orientation: B
             }), K ? (0, r.jsxs)("div", {
@@ -212,11 +212,11 @@ function R(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
     return o
-  }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]), a = (0, u.bG)([p.A], () => p.A.getQuest(t)), c = (0, u.bG)([p.A], () => p.A.getQuestConfig(t)), d = null != n ? n : a, f = null != n ? n.config : c, m = l.useMemo(() => null != f ? {
-    questConfig: f
-  } : null, [f]);
-  return null != d && null != f && null != m ? (0, r.jsx)(I.Provider, {
-    value: m,
+  }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]), a = (0, u.bG)([m.A], () => m.A.getQuest(t)), c = (0, u.bG)([m.A], () => m.A.getQuestConfig(t)), d = null != n ? n : a, p = null != n ? n.config : c, f = l.useMemo(() => null != p ? {
+    questConfig: p
+  } : null, [p]);
+  return null != d && null != p && null != f ? (0, r.jsx)(I.Provider, {
+    value: f,
     children: (0, r.jsx)(y.R, {
       questOrQuests: d,
       questContent: v.uF.VIDEO_MODAL,

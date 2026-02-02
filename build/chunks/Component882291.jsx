@@ -1,7 +1,7 @@
 /** Chunk was on 23628 **/
 /** chunk id: 882291, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,129 +11,123 @@ var Chunk627968 = require("./627968.js"),
   Chunk770178 = require("./770178.js"),
   Chunk765548 = require("./765548.js"),
   Chunk261331 = require("./261331.js"),
-  Chunk457775 = require("./457775.js"),
+  Chunk894307 = require("./894307.js"),
   Chunk650583 = require("./650583.js"),
   Chunk790191 = require("./790191.js");
 
-function p(e, t, n) {
-  return n * (Math.max(e - t.left, 0) / t.width)
-}
-
-function v(e, t, n) {
-  return n.left + e / t * n.width
-}
-
-function E(e) {
+function m(e) {
   let {
     isFullyVisible: t,
     percent: n,
     animate: o,
-    interactionEnabled: E,
-    backgroundColor: g,
-    playerState: h,
-    preloadedBuffers: b,
-    duration: y,
-    maxSeekableTime: O,
-    onClick: S,
-    onScrubBack: _,
-    onScrubForward: C
-  } = e, [x, A] = l.useState(null), [j, T] = l.useState(null), [D, w] = l.useState(null), [N, P] = l.useState(false), I = l.useRef(null), L = e => {
-    I.current = e, A(e)
+    interactionEnabled: m,
+    backgroundColor: v,
+    playerState: b,
+    preloadedBuffers: E,
+    duration: g,
+    maxSeekableTime: h,
+    onClick: y,
+    onScrubBack: O,
+    onScrubForward: S,
+    "data-testid": _
+  } = e, [C, x] = l.useState(null), [A, j] = l.useState(null), [T, D] = l.useState(null), [w, N] = l.useState(false), P = l.useRef(null), I = e => {
+    P.current = e, x(e)
   };
   l.useEffect(() => {
-    null != x && (null == O ? w(null) : w(v(O, y, x)))
-  }, [x, O, y]);
-  let R = (0, c.A)(e => {
-      L(e.contentRect)
+    null != C && (null == h ? D(null) : D((0, d.DX)(h, g, C)))
+  }, [C, h, g]);
+  let L = (0, c.A)(e => {
+      I(e.contentRect)
     }),
-    M = (0, a.w)(R);
+    R = (0, a.w)(L);
   l.useLayoutEffect(() => {
-    null != M.current && L(M.current.getBoundingClientRect())
-  }, [M]), l.useEffect(() => {
+    null != R.current && I(R.current.getBoundingClientRect())
+  }, [R]), l.useEffect(() => {
     let e = () => {
-      null != M.current && L(M.current.getBoundingClientRect())
+      null != R.current && I(R.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [M]);
+  }, [R]);
   let k = e => {
-      T(e.clientX)
+      j(e.clientX)
     },
-    V = l.useCallback(e => {
+    M = l.useCallback(e => {
       let {
         key: t
       } = e;
-      t === f.N$.ArrowLeft && null != _ ? (e.preventDefault(), e.stopPropagation(), _()) : t === f.N$.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
-    }, [_, C]),
-    Q = null != j && null != x ? p(j, x, y) : 0,
-    U = (0, d.rB)(Q),
-    F = null != x ? x.right - v(n / 100 * y, y, x) : null,
-    B = null != j && null != x ? x.right - j : null,
-    K = null != D && null != x ? x.right - D : null;
+      t === p.N$.ArrowLeft && null != O ? (e.preventDefault(), e.stopPropagation(), O()) : t === p.N$.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
+    }, [O, S]),
+    V = null != A && null != C ? (0, d.hc)(A, C, g) : 0,
+    Q = (0, d.rB)(V),
+    U = null != C ? C.right - (0, d.DX)(n / 100 * g, g, C) : null,
+    F = null != A && null != C ? C.right - A : null,
+    B = null != T && null != C ? C.right - T : null;
   return (0, r.jsxs)("div", {
-    className: m.jD,
-    ref: M,
+    className: f.jD,
+    ref: R,
+    "data-testid": _,
     children: [(0, r.jsxs)(s.DUT, {
-      className: i()(m.KF, {
-        [m.uc]: E
+      className: i()(f.KF, {
+        [f.uc]: m
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        E && null != S && S(p(e.clientX, e.currentTarget.getBoundingClientRect(), y))
+        m && null != y && y((0, d.hc)(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        E && (null != M.current && L(M.current.getBoundingClientRect()), P(true), k(e))
+        m && (null != R.current && I(R.current.getBoundingClientRect()), N(true), k(e))
       },
       onMouseLeave: e => {
-        E && (P(false), T(null))
+        m && (N(false), j(null))
       },
       onMouseMove: e => {
-        E && N && k(e)
+        m && w && k(e)
       },
-      onKeyDown: V,
-      tabIndex: E ? true : false,
+      onKeyDown: M,
+      tabIndex: m ? true : false,
       focusProps: {
         offset: {
           top: 12,
           bottom: 12
         }
       },
-      children: [null == b ? true : b.map(e => (0, r.jsx)("div", {
-        className: i()(m.r, m.Wf, {
-          [m.yz]: N
+      children: [null == E ? true : E.map(e => (0, r.jsx)("div", {
+        className: i()(f.r, f.Wf, {
+          [f.yz]: w
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
           left: "".concat(100 * e.start, "%")
         }
-      }, "".concat(e.start, ":").concat(e.size))), !E && null != K && K > 0 && (0, r.jsx)("div", {
-        className: i()(m.YK, m.Wf),
+      }, "".concat(e.start, ":").concat(e.size))), !m && null != B && B > 0 && (0, r.jsx)("div", {
+        className: i()(f.YK, f.Wf),
         style: {
-          right: null != K ? "".concat(K, "px") : "auto",
-          opacity: +(null != K)
+          right: null != B ? "".concat(B, "px") : "auto",
+          opacity: +(null != B)
         }
       }), (0, r.jsx)(s.iCB, {
-        className: i()(m.qB, m.Wf),
+        className: i()(f.qB, f.Wf),
         percent: n,
         foregroundColor: "#FFFFFF",
-        backgroundColor: null != g ? g : true,
-        size: N ? s.iCB.Sizes.XSMALL : s.iCB.Sizes.XXSMALL,
+        backgroundColor: null != v ? v : true,
+        size: w ? s.iCB.Sizes.XSMALL : s.iCB.Sizes.XXSMALL,
         animate: o
-      }), N && null != U && t && (0, r.jsx)(s.Text, {
-        className: m.Ey,
+      }), w && null != Q && t && (0, r.jsx)(s.Text, {
+        className: f.Ey,
         variant: "text-xs/normal",
         style: {
-          right: null != B ? "".concat(B - 10, "px") : "auto",
+          right: null != F ? "".concat(F - 10, "px") : "auto",
           color: "#FFFFFF"
         },
-        children: U
-      }), N && E && null != F && (0, r.jsx)("div", {
-        className: m.Ub,
+        children: Q
+      }), w && m && null != U && (0, r.jsx)("div", {
+        className: f.Ub,
         style: {
-          right: "".concat(F - 6, "px")
+          right: "".concat(U - 6, "px")
         }
       })]
-    }), h !== u.Q6.ENDED && (0, r.jsx)("div", {
-      className: m.pN,
+    }), b !== u.Q6.ENDED && (0, r.jsx)("div", {
+      className: f.pN,
       style: {
         width: "".concat(n, "%")
       }

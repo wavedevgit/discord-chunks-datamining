@@ -20,20 +20,23 @@ var Chunk64700 = require("./64700.js"),
 function g(e) {
   let {
     channel: t
-  } = e, {
-    totalSuggestions: n
-  } = s.A.useConfig({
+  } = e, n = null == t ? true : t.guild_id, {
+    totalSuggestions: i
+  } = s.A.useExperiment({
+    guildId: n,
     location: "useVoiceInviteSuggestions"
-  }), i = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), p = null == t ? true : t.guild_id, h = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), g = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(p).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !h.has(e.id)), [p, h]);
+  }, {
+    autoTrackExposure: false
+  }), p = (0, l.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), h = new Set((0, l.bG)([u.Ay], () => null == t ? [] : u.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), g = (0, l.yK)([o.Ay, c.default], () => o.Ay.getMembers(n).map(e => c.default.getUser(e.userId)).filter(d.Vq).filter(e => !h.has(e.id)), [n, h]);
   return r.useMemo(() => g.toSorted((e, t) => {
-    var n, r, l, s;
+    var n, r, l, i;
     let {
-      id: a
+      id: s
     } = e, {
-      id: o
+      id: a
     } = t;
-    return (null != (n = null == (l = i.get(o)) ? true : l.vcProbability) ? n : 0) - (null != (r = null == (s = i.get(a)) ? true : s.vcProbability) ? r : 0)
-  }), [g, i]).slice(0, n)
+    return (null != (n = null == (l = p.get(a)) ? true : l.vcProbability) ? n : 0) - (null != (r = null == (i = p.get(s)) ? true : i.vcProbability) ? r : 0)
+  }), [g, p]).slice(0, i)
 }
 
 function f(e) {

@@ -1,66 +1,66 @@
-/** Chunk was on 49438 **/
+/** Chunk was on 39289 **/
 /** chunk id: 570209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wG: () => E
+  wG: () => b
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./321073.js");
 var Chunk735438 = require("./735438.js"),
-  r = require.n(Chunk735438);
+  o = require.n(Chunk735438);
 require("./309613.js");
 var Chunk289732 = require("./289732.js");
-let i = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+let r = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function s(e) {
+function c(e) {
   return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function o(e) {
+function l(e) {
   return e.toLowerCase()
 }
 
-function u(e) {
-  return i.has(e)
+function s(e) {
+  return r.has(e)
 }
 
-function c(e) {
+function _(e) {
   return 0 === e.length
 }
 
-function E(e) {
+function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.length >= 3 && e.length <= 12 && t,
-    l = new Set(r()(e.split(/\W+/)).map(s).reject(c).map(o).reject(u).map(a.U).value());
-  return e => (function e(t, n, l) {
-    if (Array.isArray(t)) t.forEach(t => e(t, n, l));
-    else if ("list" === t.type) t.items.forEach(t => e(t, n, l));
+    a = new Set(o()(e.split(/\W+/)).map(c).reject(_).map(l).reject(s).map(i.U).value());
+  return e => (function e(t, n, a) {
+    if (Array.isArray(t)) t.forEach(t => e(t, n, a));
+    else if ("list" === t.type) t.items.forEach(t => e(t, n, a));
     else if ("string" == typeof t.content && "codeBlock" !== t.type) {
       let e = [],
-        r = "";
+        o = "";
       t.content.split(/(\W+)/g).forEach(t => {
         ! function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          if (c(e = o(s(e))) || u(e)) returnfalse;
-          let l = (0, a.U)(e);
+          if (_(e = l(c(e))) || s(e)) returnfalse;
+          let a = (0, i.U)(e);
           if (n) {
             for (let e of t.values())
-              if (l.includes(e)) returntrue;
+              if (a.includes(e)) returntrue;
             returnfalse
           }
-          return t.has(l)
-        }(t, n, l) ? r += t: (r.length > 0 && e.push({
+          return t.has(a)
+        }(t, n, a) ? o += t: (o.length > 0 && e.push({
           type: "text",
-          content: r
+          content: o
         }), e.push({
           type: "highlight",
           content: t
-        }), r = "")
-      }), e.length > 0 && (r.length > 0 && e.push({
+        }), o = "")
+      }), e.length > 0 && (o.length > 0 && e.push({
         type: "text",
-        content: r
+        content: o
       }), "text" === t.type ? t.content = e : t.content = [{
         type: "text",
         content: e
       }])
-    } else null != t.content && e(t.content, n, l);
+    } else null != t.content && e(t.content, n, a);
     return t
-  })(e, l, n)
+  })(e, a, n)
 }

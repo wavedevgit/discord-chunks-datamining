@@ -59,38 +59,39 @@ function S(e, t) {
 }
 let j = e => {
   let {
-    user: t
-  } = e, n = (0, o.bG)([y.A], () => y.A.getRelationshipType(t.id)), [i, a] = r.useState(false), s = (0, g.A)({
+    user: t,
+    handleTrackAction: n
+  } = e, i = (0, o.bG)([y.A], () => y.A.getRelationshipType(t.id)), [a, s] = r.useState(false), h = (0, g.A)({
     user: t,
     location: f.A.NEW_GROUP_DM_INVITE_MODAL,
-    setLoading: a
-  }), h = r.useRef(null), p = r.useCallback(async () => {
-    a(true), await d.A.addRelationship({
+    setLoading: s
+  }), p = r.useRef(null), m = r.useCallback(async () => {
+    n(), s(true), await d.A.addRelationship({
       userId: t.id,
       context: {
         location: f.A.NEW_GROUP_DM_INVITE_MODAL
       }
-    }), a(false)
-  }, [t.id]);
+    }), s(false)
+  }, [n, t.id]);
   if (t.bot) return null;
-  switch (n) {
+  switch (i) {
     case E.eA$.FRIEND:
       return null;
     case E.eA$.PENDING_INCOMING:
       return (0, l.jsx)(A.A, {
-        targetElementRef: h,
-        menuItems: [s],
+        targetElementRef: p,
+        menuItems: [h],
         children: e => (0, l.jsx)(c.m_, {
           asContainer: true,
           text: O.intl.string(O.t["6QQCQ+"]),
           ariaHidden: true,
           children: (0, l.jsx)(u.K0, S(x({}, e), {
-            buttonRef: h,
+            buttonRef: p,
             size: "sm",
             variant: "icon-only",
             "aria-label": O.intl.string(O.t["6QQCQ+"]),
             icon: u.lI8,
-            loading: i
+            loading: a
           }))
         })
       });
@@ -114,11 +115,11 @@ let j = e => {
         ariaHidden: true,
         children: (0, l.jsx)(u.K0, {
           size: "sm",
-          onClick: p,
+          onClick: m,
           variant: "icon-only",
           "aria-label": O.intl.string(O.t.w5uwoI),
           icon: u.Rvf,
-          loading: i
+          loading: a
         })
       })
   }
@@ -141,10 +142,11 @@ function I(e) {
       "aria-posinset": P,
       numSelected: w,
       staffOverride: R,
-      showFriendButton: D = false
+      handleTrackAction: D,
+      showFriendButton: M = false
     } = e,
-    M = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
-    L = (0, s.rm)(String(n.id));
+    L = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
+    k = (0, s.rm)(String(n.id));
   return t = R ? (0, l.jsx)(u.P7L, {
     checked: A,
     disabled: y
@@ -153,7 +155,7 @@ function I(e) {
     text: O.intl.string(O.t["g33r/P"]),
     size: "sm",
     onClick: () => {
-      null != T && T(n.id)
+      D(r, i, "message"), null != T && T(n.id)
     }
   }) : (0, l.jsx)(c.m_, {
     asContainer: true,
@@ -168,12 +170,12 @@ function I(e) {
       [C.r9]: y
     }),
     onClick: r === _.A.FRIENDS || R ? () => {
-      null != E && E(n.id)
+      D(r, i, "select"), null != E && E(n.id)
     } : true,
     onMouseEnter: () => {
       null != I && I(r, i)
     }
-  }, L), {
+  }, k), {
     role: "option",
     "aria-selected": A,
     "aria-disabled": y,
@@ -186,7 +188,7 @@ function I(e) {
       }),
       children: [(0, l.jsx)(p.A, {
         user: n,
-        status: M,
+        status: L,
         className: C.my
       }), (0, l.jsxs)("div", {
         className: C.YW,
@@ -208,8 +210,9 @@ function I(e) {
             forceUsername: true
           })
         })]
-      }), r !== _.A.FRIENDS && D ? (0, l.jsx)(j, {
-        user: n
+      }), r !== _.A.FRIENDS && M ? (0, l.jsx)(j, {
+        user: n,
+        handleTrackAction: () => D(r, i, "friend")
       }) : null, r === _.A.FRIENDS ? (0, l.jsx)(u.P7L, {
         checked: A,
         disabled: y

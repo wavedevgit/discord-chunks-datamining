@@ -2,7 +2,7 @@
 /** chunk id: 541285, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Ay: () => w
+  Ay: () => P
 }), require("./65821.js"), require("./896048.js"), require("./867070.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,7 +12,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
-  Chunk386849 = require("./386849.js"),
   Chunk942234 = require("./942234.jsx"),
   Chunk576705 = require("./576705.js"),
   Chunk287809 = require("./287809.js"),
@@ -30,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk276317 = require("./276317.js"),
   Chunk261223 = require("./261223.js");
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +48,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,31 +66,76 @@ function C(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), u = i.useMemo(() => b.cc({
+  } = e, s = (0, o.bG)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => h.cc({
     user: s,
     context: t
   }), [s, t]), g = i.useMemo(() => ({
-    [n.id]: T(I({}, n), {
-      permissions: b.x3
+    [n.id]: I(S({}, n), {
+      permissions: h.x3
     })
-  }), [n]), m = i.useMemo(() => b.cc({
+  }), [n]), p = i.useMemo(() => h.cc({
     user: s,
     context: t,
     roles: g
-  }), [s, t, g]), f = !a.aI(u, m);
+  }), [s, t, g]), f = !a.aI(u, p);
   return (0, r.jsx)(c.m, {
-    text: f ? E.intl.string(E.t["IQ/6Sg"]) : null,
+    text: f ? A.intl.string(A.t["IQ/6Sg"]) : null,
     position: "top",
     children: (0, r.jsx)("div", {
-      className: N.FS,
+      className: E.FS,
       children: (0, r.jsx)(d.QWc, {
         variant: "primary",
         textVariant: "text-sm/semibold",
-        onClick: () => (0, x.Y_)(n.id),
-        disabled: a.aI(n.permissions, b.x3) || f || l,
-        text: E.intl.string(E.t["UYq7+O"])
+        onClick: () => (0, b.Y_)(n.id),
+        disabled: a.aI(n.permissions, h.x3) || f || l,
+        text: A.intl.string(A.t["UYq7+O"])
       })
     })
+  })
+}
+
+function T(e) {
+  let {
+    guild: t,
+    role: n,
+    specs: i,
+    locked: l
+  } = e;
+  if (0 === i.length) return (0, r.jsxs)("div", {
+    className: E.pb,
+    children: [(0, r.jsx)(x.A, {
+      className: E.wV
+    }), (0, r.jsx)(d.Text, {
+      variant: "text-sm/normal",
+      children: A.intl.string(A.t.DEBGqA)
+    })]
+  });
+
+  function s(e) {
+    return g.A.can(e, t) ? !g.A.can(e, t, null, {
+      [n.id]: I(S({}, n), {
+        permissions: a.TF(n.permissions, e)
+      })
+    }) && A.intl.string(A.t["K+D+GF"]) : A.intl.string(A.t.nOtPMM)
+  }
+  return (0, r.jsxs)("div", {
+    className: E.eZ,
+    children: [(0, r.jsx)(C, {
+      guild: t,
+      role: n,
+      locked: l
+    }), i.map((e, i) => (0, r.jsx)(u.A, {
+      className: E.p2,
+      spec: e,
+      permissions: n.permissions,
+      locked: l,
+      onChange: (e, t) => {
+        if ("string" == typeof t) throw Error("Unexpected string `allow`");
+        (0, b.Ul)(n.id, e, t)
+      },
+      permissionRender: s,
+      guildId: t.id
+    }, i))]
   })
 }
 
@@ -99,110 +143,59 @@ function P(e) {
   let {
     guild: t,
     role: n,
-    specs: i,
-    locked: l
-  } = e, {
-    enabled: s
-  } = u.A.useExperiment({
-    location: "PermissionsList",
-    guildId: t.id
-  });
-  if (0 === i.length) return (0, r.jsxs)("div", {
-    className: N.pb,
-    children: [(0, r.jsx)(j.A, {
-      className: N.wV
-    }), (0, r.jsx)(d.Text, {
-      variant: "text-sm/normal",
-      children: E.intl.string(E.t.DEBGqA)
-    })]
-  });
-
-  function o(e) {
-    return m.A.can(e, t) ? !m.A.can(e, t, null, {
-      [n.id]: T(I({}, n), {
-        permissions: a.TF(n.permissions, e)
-      })
-    }) && E.intl.string(E.t["K+D+GF"]) : E.intl.string(E.t.nOtPMM)
-  }
-  return (0, r.jsxs)("div", {
-    className: N.eZ,
-    children: [(0, r.jsx)(C, {
-      guild: t,
-      role: n,
-      locked: l
-    }), i.map((e, i) => (0, r.jsx)(g.A, {
-      className: N.p2,
-      spec: e,
-      permissions: n.permissions,
-      locked: l,
-      onChange: (e, t) => {
-        if ("string" == typeof t) throw Error("Unexpected string `allow`");
-        (0, x.Ul)(n.id, e, t)
-      },
-      permissionRender: o,
-      hasBypassSlowmodePermission: s,
-      guildId: t.id
-    }, i))]
-  })
-}
-
-function w(e) {
-  let {
-    guild: t,
-    role: n,
     locked: l,
     setSelectedSection: a,
     initialSearchQuery: o
-  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => h.A.generateGuildPermissionSpec(t), [t]).map(e => T(I({}, e), {
+  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => f.A.generateGuildPermissionSpec(t), [t]).map(e => I(S({}, e), {
     permissions: e.permissions.filter(e => {
       let t = c.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
     headerHeight: m,
-    headerRef: p
-  } = (0, _.A)(0), {
+    headerRef: h
+  } = (0, j.A)(0), {
     scrolledToTop: b,
     handleScroll: x
-  } = (0, O.u)(), j = i.useRef(false);
+  } = (0, _.u)(), C = i.useRef(false);
   return i.useEffect(() => {
-    j.current || "" === c.trimStart() || (f.default.track(A.HAw.SEARCH_STARTED, {
+    C.current || "" === c.trimStart() || (p.default.track(y.HAw.SEARCH_STARTED, {
       search_type: "Permissions"
-    }), j.current = true)
+    }), C.current = true)
   }, [c]), (0, r.jsx)(d.GtU, {
-    className: N.XG,
+    className: E.XG,
     style: {
       scrollPaddingTop: m
     },
     onScroll: x,
     children: (0, r.jsxs)("div", {
-      className: S.Q,
+      className: N.Q,
       children: [(0, r.jsxs)("div", {
-        className: s()(S.wx, S.ln, {
-          [S.l6]: !b
+        className: s()(N.wx, N.ln, {
+          [N.l6]: !b
         }),
-        ref: p,
-        children: [(0, r.jsx)(O.A, {
+        ref: h,
+        children: [(0, r.jsx)(_.A, {
           guild: t,
           role: n,
-          selectedSection: y.T$.PERMISSIONS,
+          selectedSection: v.T$.PERMISSIONS,
           setSelectedSection: a
         }), (0, r.jsx)("div", {
-          className: N.U9,
-          children: (0, r.jsx)(v.A, {
+          className: E.U9,
+          children: (0, r.jsx)(O.A, {
             role: n
           })
         }), (0, r.jsx)("div", {
-          className: N.MT,
+          className: E.MT,
           children: (0, r.jsx)(d.IWV, {
             query: c,
             onChange: u,
             onClear: () => u(""),
-            placeholder: E.intl.string(E.t.OLJAk3),
-            "aria-label": E.intl.string(E.t.OLJAk3)
+            placeholder: A.intl.string(A.t.OLJAk3),
+            "aria-label": A.intl.string(A.t.OLJAk3)
           })
         })]
-      }), (0, r.jsx)(P, {
+      }), (0, r.jsx)(T, {
         guild: t,
         role: n,
         specs: g,

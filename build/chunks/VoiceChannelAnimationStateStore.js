@@ -1,7 +1,7 @@
 /** Chunk was on 17537 **/
 /** chunk id: 25639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => N,
+  A: () => E,
   s: () => h
 }), require("./896048.js");
 var l, r, Chunk311907 = require("./311907.js"),
@@ -48,16 +48,16 @@ let f = {},
   g = {},
   p = null;
 
-function m(e) {
+function b(e) {
   null != g[e] && (clearTimeout(g[e]), delete g[e])
 }
 
-function b(e) {
-  m(e), g[e] = setTimeout(() => {
+function m(e) {
+  b(e), g[e] = setTimeout(() => {
     let t = f[e];
     null != t && (f[e] = d(c({}, t), {
       style: "GENTLE_AMBIENT"
-    }), E.emitChange()), delete g[e]
+    }), j.emitChange()), delete g[e]
   }, 2e3)
 }
 
@@ -71,7 +71,7 @@ function v() {
 }
 class O extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(o.A, s.A)
+    this.waitFor(s.A, o.A)
   }
   getAnimationStyle(e) {
     var t, n;
@@ -83,11 +83,11 @@ class O extends(l = Chunk311907.Ay.Store) {
   }
 }
 u(O, "displayName", "VoiceChannelAnimationStateStore");
-let E = new O(Chunk73153.h, {
+let j = new O(Chunk73153.h, {
     VOICE_STATE_UPDATES: function(e) {
       let {
         voiceStates: t
-      } = e, n = s.A.getGuildId();
+      } = e, n = o.A.getGuildId();
       n !== p && null != n && (p = n);
       let l = {};
       for (let e of t) {
@@ -103,10 +103,10 @@ let E = new O(Chunk73153.h, {
         return 0 === r && i > 0 ? (f[e] = {
           style: "GENTLE_AMBIENT_WITH_INTRO",
           userCount: i
-        }, b(e), true) : r > 0 && i > r ? (f[e] = {
+        }, m(e), true) : r > 0 && i > r ? (f[e] = {
           style: "HIGH_CONTRAST",
           userCount: i
-        }, b(e), true) : 0 === i ? (m(e), delete f[e], true) : null != l && i !== r && (f[e] = d(c({}, l), {
+        }, m(e), true) : 0 === i ? (b(e), delete f[e], true) : null != l && i !== r && (f[e] = d(c({}, l), {
           userCount: i
         }), true)
       })(e, t) && (a = true);
@@ -118,7 +118,7 @@ let E = new O(Chunk73153.h, {
       } = e;
       if (t === p || null == t) returnfalse;
       p = t, y();
-      let n = o.A.getVoiceStates(t),
+      let n = s.A.getVoiceStates(t),
         l = {};
       for (let e of Object.values(n))
         if (null != e.channelId) {
@@ -133,4 +133,4 @@ let E = new O(Chunk73153.h, {
     CONNECTION_OPEN: v,
     LOGOUT: v
   }),
-  N = E
+  E = j

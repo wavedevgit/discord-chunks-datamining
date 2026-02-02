@@ -29,8 +29,8 @@ function C(e) {
   let {
     quest: t,
     sourceQuestContent: n
-  } = e, o = l.useMemo(() => (0, m.tW)(t, m.fY.VIDEO_PLAYER_THUMBNAIL, true, false), [t]);
-  return null == o ? null : (0, r.jsx)(g.R, {
+  } = e, o = l.useMemo(() => (0, f.tW)(t, f.fY.VIDEO_PLAYER_THUMBNAIL, true, false), [t]);
+  return null == o ? null : (0, r.jsx)(E.R, {
     questOrQuests: t,
     questContent: u.uF.VIDEO_MODAL_END_CARD,
     sourceQuestContent: n,
@@ -52,17 +52,17 @@ function x(e) {
     icon: o,
     onClick: a,
     className: c
-  } = e, [u, d] = l.useState(false), f = () => {
+  } = e, [u, d] = l.useState(false), p = () => {
     d(true)
-  }, m = () => {
+  }, f = () => {
     d(false)
   };
   return (0, r.jsx)(s.DUT, {
     className: i()(_.Mr, _.iM, c),
-    onMouseEnter: f,
-    onMouseLeave: m,
-    onFocus: f,
-    onBlur: m,
+    onMouseEnter: p,
+    onMouseLeave: f,
+    onFocus: p,
+    onBlur: f,
     onClick: a,
     children: (0, r.jsxs)("div", {
       className: _.ee,
@@ -77,7 +77,7 @@ function x(e) {
           className: _.Hk,
           children: n
         })]
-      }), (0, r.jsx)(b.A, {
+      }), (0, r.jsx)(h.A, {
         color: "#747783"
       }), (0, r.jsx)(o, {
         size: "md",
@@ -106,7 +106,7 @@ function j(e) {
     sourceQuestContent: l,
     orientation: o
   } = e;
-  return null == n ? null : (0, r.jsx)(g.R, {
+  return null == n ? null : (0, r.jsx)(E.R, {
     questOrQuests: t,
     questContent: u.uF.VIDEO_MODAL_END_CARD,
     sourceQuestContent: l,
@@ -171,17 +171,17 @@ function w(e) {
     icon: n,
     onClick: o,
     className: c
-  } = e, [u, d] = l.useState(false), f = () => {
+  } = e, [u, d] = l.useState(false), p = () => {
     d(true)
-  }, m = () => {
+  }, f = () => {
     d(false)
   };
   return (0, r.jsxs)(s.DUT, {
     className: i()(_.uU, _.iM, c),
-    onMouseEnter: f,
-    onMouseLeave: m,
-    onFocus: f,
-    onBlur: m,
+    onMouseEnter: p,
+    onMouseLeave: f,
+    onFocus: p,
+    onBlur: f,
     onClick: o,
     children: [(0, r.jsx)(s.DZT, {
       variant: "heading-md/semibold",
@@ -201,55 +201,56 @@ function N(e) {
     videoRef: n,
     onExitFullScreen: o,
     onTrackQuestVideoFullscreenChanged: a,
-    onTrackQuestContentClick: g,
-    orientation: b
+    onTrackQuestContentClick: E,
+    orientation: h
   } = e, {
     onClose: D,
     sourceQuestContent: w,
     quest: N
-  } = l.useContext(h.VideoQuestModalContext), P = (0, d.Ay)(e => e.fullScreenEnabled), I = (0, d.Ay)(e => e.setFullScreenEnabled), L = (0, v.go)(), R = (0, y.H)({
+  } = l.useContext(g.VideoQuestModalContext), P = (0, d.Ay)(e => e.fullScreenEnabled), I = (0, d.Ay)(e => e.setFullScreenEnabled), L = (0, v.go)(), R = (0, y.H)({
     quest: N,
     onClose: D,
     sourceQuestContent: w,
     impressionId: L
-  }), M = l.useCallback(e => {
+  }), k = l.useCallback(e => {
     if (P) {
       var t;
       let e = (0, c.qf)(null == (t = n.current) ? true : t.parentNode, n.current);
       null != e && (e.removeEventListener(c.Wb, o), (0, c.sP)(e), I(false), a(false))
     }
-    g(e, p.Cy.LEARN_MORE), R(e, p.Cy.OPEN_GAME_LINK)
-  }, [P, n, o, I, a, R, g]), {
-    title: k,
+    E(e, m.Cy.LEARN_MORE), R(e, m.Cy.OPEN_GAME_LINK)
+  }, [P, n, o, I, a, R, E]), {
+    title: M,
     subtitle: V
   } = {
-    title: (0, E.wr)(N),
+    title: (0, b.wr)(N),
     subtitle: null != (t = N.config.ctaConfig.subtitle) ? t : S.intl.string(S.t.mxaHfx)
   }, {
     enabled: Q
-  } = f.uK.useConfig({
+  } = p.uK.useConfig({
     location: O.rE.VIDEO_MODAL
-  }), U = l.useMemo(() => (0, m.tW)(N, m.fY.VIDEO_PLAYER_THUMBNAIL, true, false), [N]);
+  }), U = l.useMemo(() => (0, f.tW)(N, f.fY.VIDEO_PLAYER_THUMBNAIL, true, false), [N]);
   return Q ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(A, {
       asset: U
     }), (0, r.jsx)("div", {
-      className: _.MM
+      className: _.MM,
+      "data-testid": "discord-web-video-player-end-screen"
     }), (0, r.jsxs)("div", {
       className: i()(_.Pb, {
-        [_.II]: "portrait" === b
+        [_.II]: "portrait" === h
       }),
       children: [(0, r.jsx)(j, {
         quest: N,
         asset: U,
         sourceQuestContent: w,
-        orientation: b
+        orientation: h
       }), (0, r.jsx)(T, {
-        title: k,
+        title: M,
         subtitle: V,
         ctaBtnLabel: N.config.ctaConfig.buttonLabel,
-        onCTAClick: () => M(u.uF.VIDEO_MODAL),
-        orientation: b
+        onCTAClick: () => k(u.uF.VIDEO_MODAL),
+        orientation: h
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -257,13 +258,14 @@ function N(e) {
       quest: N,
       sourceQuestContent: w
     }), (0, r.jsx)("div", {
-      className: _.MT
+      className: _.MT,
+      "data-testid": "discord-web-video-player-end-screen"
     }), (0, r.jsx)(x, {
-      title: k,
+      title: M,
       subtitle: V,
       icon: s.KS6,
       className: _.mT,
-      onClick: () => M(u.uF.VIDEO_MODAL)
+      onClick: () => k(u.uF.VIDEO_MODAL)
     })]
   })
 }

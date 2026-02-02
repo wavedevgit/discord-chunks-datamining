@@ -1,4 +1,4 @@
-/** Chunk was on 60118 **/
+/** Chunk was on 51693 **/
 /** chunk id: 795755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -94,14 +94,14 @@ function h(e) {
     handleDismissSuggestions: g
   } = (0, s.q)(t), h = (0, i.bG)([a.default], () => a.default.getId() === n.id), x = h && !l && p, v = (0, o.L)(t), _ = (0, o.FM)(t, {
     isCurrentUser: h
-  }), I = (0, o.uA)(t), A = 1 === (0, o.cv)(t.type);
+  }), I = (0, o.uA)(t), w = 1 === (0, o.cv)(t.type);
   return (0, r.jsx)(j, y({
     widget: t,
     user: n,
     disableInteraction: l,
     headerTitle: v,
     headerSubtitle: _,
-    headerActionButtons: h && !A ? [(0, r.jsx)(c.IU, {
+    headerActionButtons: h && !w ? [(0, r.jsx)(c.IU, {
       disabled: I,
       widgetType: t.type,
       widget: t,

@@ -236,8 +236,12 @@ function C(e, t, n) {
 }
 
 function N(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  if (n) return u.Ay.Masks.STATUS_TYPING;
+  let {
+    isMobile: n,
+    isTyping: r,
+    isVR: i
+  } = t;
+  if (r) return u.Ay.Masks.STATUS_TYPING;
   switch (e) {
     case d.clD.IDLE:
       return u.Ay.Masks.STATUS_IDLE;
@@ -251,18 +255,26 @@ function N(e, t) {
       return u.Ay.Masks.STATUS_OFFLINE;
     case d.clD.ONLINE:
     default:
-      if (t) return u.Ay.Masks.STATUS_ONLINE_MOBILE;
+      if (i) return u.Ay.Masks.STATUS_ONLINE_VR;
+      if (n) return u.Ay.Masks.STATUS_ONLINE_MOBILE;
       return u.Ay.Masks.STATUS_ONLINE
   }
 }
 
 function w(e, t, n) {
-  let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return t === d.clD.ONLINE && n && !r ? {
+  let {
+    isMobile: r,
+    isTyping: i,
+    isVR: a
+  } = n;
+  return i ? {
+    width: e * f.x,
+    height: e
+  } : t === d.clD.ONLINE && r && !a ? {
     width: e,
     height: e * f.jo
   } : {
-    width: r ? e * f.x : e,
+    width: e,
     height: e
   }
 }
@@ -271,19 +283,28 @@ function R(e) {
   let {
     status: t,
     isMobile: n = false,
-    size: i = E,
-    className: o,
-    style: s,
-    color: l
-  } = e, c = t === d.clD.ONLINE && n, f = b(t, l);
+    isVR: i = false,
+    size: o = E,
+    className: s,
+    style: l,
+    color: c
+  } = e, f = t === d.clD.ONLINE && n, _ = t === d.clD.ONLINE && i, m = b(t, c);
   return (0, r.jsx)(u.Ay, g(h({
-    mask: N(t, c),
-    className: a()(p.d, o),
-    style: s
-  }, w(i, t, c)), {
+    mask: N(t, {
+      isMobile: f,
+      isTyping: false,
+      isVR: _
+    }),
+    className: a()(p.d, s),
+    style: l
+  }, w(o, t, {
+    isMobile: f,
+    isTyping: false,
+    isVR: _
+  })), {
     children: (0, r.jsx)("div", {
       style: {
-        backgroundColor: f
+        backgroundColor: m
       },
       className: p.h
     })

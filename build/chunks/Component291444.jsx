@@ -59,7 +59,7 @@ function L(e) {
       (0, g.Dr)(o.M.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case A.Hy.LANDING:
-      t = v ? (0, r.jsx)(T.A, {
+      t = v ? (0, r.jsx)(C.A, {
         completed: true,
         guildId: n
       }) : (0, r.jsx)(P.A, {});
@@ -73,7 +73,7 @@ function L(e) {
       });
       break;
     case A.Hy.CUSTOMIZATION_QUESTIONS:
-      t = (0, r.jsx)(C.Ay, {
+      t = (0, r.jsx)(T.Ay, {
         saveOnClose: !v
       });
       break;
@@ -88,7 +88,7 @@ function L(e) {
       });
       break;
     case A.Hy.REVIEW:
-      t = (0, r.jsx)(T.A, {
+      t = (0, r.jsx)(C.A, {
         completed: v,
         guildId: n
       })

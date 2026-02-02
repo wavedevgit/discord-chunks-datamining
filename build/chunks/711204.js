@@ -55,8 +55,8 @@ class m {
         branch_name: this.mode.branchName,
         commit_date: this.mode.commitDate,
         timestamp: new Date().toISOString(),
-        build_number: "492116",
-        built_at: "1770057191383",
+        build_number: "492373",
+        built_at: "1770072694119",
         release_channel: null !== s.y && true !== s.y ? s.y : "unknown",
         tags: r,
         metrics: {
@@ -65,7 +65,10 @@ class m {
           used_js_heap_size: e.usedJSHeapSize,
           peak_memory: this.peakMemory,
           delta_from_baseline: null != this.mode.baselineUsedMemory ? e.usedJSHeapSize - this.mode.baselineUsedMemory : true,
-          baseline_memory: this.mode.baselineUsedMemory
+          baseline_memory: this.mode.baselineUsedMemory,
+          timing: {
+            collected_at: this.mode.performanceNow()
+          }
         }
       };
     this.mode.sendToIngest(i)

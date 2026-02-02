@@ -4,7 +4,7 @@
 require.d(exports, {
   Ay: () => P,
   Jx: () => I,
-  lz: () => T
+  lz: () => C
 }), require("./733351.js"), require("./228524.js"), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -73,7 +73,7 @@ class S extends(r = Chunk311907.Ay.Store) {
 N(S, "displayName", "GuildSettingsTemplateMetadataStore_");
 let I = new S(Chunk73153.h);
 
-function T() {
+function C() {
   let [e, t] = l.useState(false), n = async () => {
     t(true), await I.save(), t(false)
   };
@@ -81,11 +81,11 @@ function T() {
     submitting: e,
     onReset: I.reset,
     onSave: n,
-    disabled: !C(I.name)
+    disabled: !T(I.name)
   })
 }
 
-function C(e) {
+function T(e) {
   return null != e && e.trim().length >= 2
 }
 
@@ -265,7 +265,7 @@ function G() {
       s(true)
     }, []),
     c = l.useMemo(() => {
-      if (!(r || e.length < 1 || C(e))) return y.intl.string(y.t.IHAlh1)
+      if (!(r || e.length < 1 || T(e))) return y.intl.string(y.t.IHAlh1)
     }, [e, r]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.ksK, {
@@ -349,7 +349,7 @@ function k(e) {
     variant: "primary",
     text: y.intl.string(y.t.Wxdi8A),
     loading: r,
-    disabled: !C(n),
+    disabled: !T(n),
     onClick: a
   })
 }

@@ -61,8 +61,8 @@ class p {
       branch_name: this.mode.branchName,
       commit_date: this.mode.commitDate,
       timestamp: new Date().toISOString(),
-      build_number: "492116",
-      built_at: "1770057191383",
+      build_number: "492373",
+      built_at: "1770072694119",
       release_channel: null !== a.y && true !== a.y ? a.y : "unknown",
       tags: this.getTags(),
       metrics: {
@@ -151,11 +151,13 @@ class p {
         p = null == (i = h.detail) ? true : i.memory,
         f = null == (n = e.detail) ? true : n.memory,
         S = null == (s = this.mode) ? true : s.baselineUsedMemory,
-        y = (null == f ? true : f.usedJSHeapSize) != null && null != S ? f.usedJSHeapSize - S : true;
+        y = (null == f ? true : f.usedJSHeapSize) != null && null != S ? f.usedJSHeapSize - S : true,
+        v = null != this.mode ? this.mode.performanceNow() : 0;
       this.collectedEntries.push({
         name: a,
         start_time: h.startTime,
         end_time: e.startTime,
+        collected_at: v,
         start_memory: null != p ? (0, o.c)(p) : true,
         end_memory: null != f ? (0, o.c)(f) : true,
         memory_delta_from_baseline: y

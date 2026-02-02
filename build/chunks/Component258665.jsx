@@ -49,7 +49,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class C extends Chunk64700.PureComponent {
+class T extends Chunk64700.PureComponent {
   render() {
     let {
       user: e,
@@ -123,7 +123,7 @@ let P = Chunk64700.forwardRef((e, t) => {
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: s()(S.auditLog, o),
-      children: [(0, r.jsxs)(d.DUT, T(I({
+      children: [(0, r.jsxs)(d.DUT, C(I({
         className: B,
         "aria-expanded": f,
         onClick: V
@@ -147,7 +147,7 @@ let P = Chunk64700.forwardRef((e, t) => {
             newAnalyticsLocations: [g.A.AVATAR],
             children: e => {
               var t;
-              return (0, r.jsx)(d.euF, T(I({}, e), {
+              return (0, r.jsx)(d.euF, C(I({}, e), {
                 ref: M,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
@@ -191,7 +191,7 @@ let P = Chunk64700.forwardRef((e, t) => {
                   user: n,
                   target: t,
                   userHook: (e, t) => {
-                    if (null != l.user) return (0, r.jsx)(C, {
+                    if (null != l.user) return (0, r.jsx)(T, {
                       user: l.user,
                       onContextMenu: L
                     }, t);
@@ -202,7 +202,7 @@ let P = Chunk64700.forwardRef((e, t) => {
                     }
                     return N.intl.string(N.t["30mdIx"])
                   },
-                  targetHook: (e, t) => l.targetType === E.GaG.USER && l.target instanceof h.A ? (0, r.jsx)(C, {
+                  targetHook: (e, t) => l.targetType === E.GaG.USER && l.target instanceof h.A ? (0, r.jsx)(T, {
                     user: l.target,
                     onContextMenu: G
                   }, t) : (0, r.jsx)("span", {

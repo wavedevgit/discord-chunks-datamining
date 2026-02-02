@@ -216,26 +216,28 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eventHandlers: o,
       avatarSrc: s,
       isMobile: l,
-      isTyping: d,
-      avatarDecorationSrc: f,
-      handleSetTypingRef: p,
-      typingRef: _,
-      currentUser: h
-    } = e, m = a === P.clD.OFFLINE, g = n ? c.JsQ : c.euF, E = (0, u.A)(i) ? P.clD.STREAMING : a;
-    return E = m ? true : E, (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g, G(k({}, o), {
+      isVR: d,
+      isTyping: f,
+      avatarDecorationSrc: p,
+      handleSetTypingRef: _,
+      typingRef: h,
+      currentUser: m
+    } = e, g = a === P.clD.OFFLINE, E = n ? c.JsQ : c.euF, y = (0, u.A)(i) ? P.clD.STREAMING : a;
+    return y = g ? true : y, (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(E, G(k({}, o), {
         size: c._3J.SIZE_32,
         src: s,
         isMobile: l,
-        isTyping: d,
-        status: E,
+        isVR: d,
+        isTyping: f,
+        status: y,
         "aria-label": t.username,
         statusTooltip: true,
-        avatarDecoration: f,
-        typingIndicatorRef: p
+        avatarDecoration: p,
+        typingIndicatorRef: _
       })), (0, r.jsx)(I.A, {
-        confettiSpawnRef: _,
-        shouldFire: d && null != h && t.id !== h.id,
+        confettiSpawnRef: h,
+        shouldFire: f && null != m && t.id !== m.id,
         confettiLocation: L.k.MEMBER_USER
       })]
     })
@@ -296,115 +298,116 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       status: A,
       shouldAnimateStatus: I = false,
       isMobile: w,
-      premiumSince: D,
-      channel: L,
-      guildId: x,
-      className: j,
-      nameplate: U,
-      hideClanTag: F = false,
-      hideSubtext: B = false,
-      hideTooltip: Y = false,
-      onMouseDown: W,
-      onKeyDown: K,
-      onClick: X,
-      onContextMenu: J,
-      onClickPremiumGuildIcon: $,
-      "aria-controls": ee,
-      "aria-expanded": et,
-      "aria-posinset": en,
-      "aria-setsize": er,
-      id: ei,
-      tabIndex: ea,
-      itemProps: eo,
-      ref: es
-    } = e, el = null == y ? true : y.id, ec = R.Ay.useName(y), eu = i.useRef(null), ed = null != es ? es : eu, [ef, ep] = i.useState(false), [e_, eh] = i.useState(false), [em, eg] = i.useState(null), {
-      voiceChannel: eE
+      isVR: D,
+      premiumSince: L,
+      channel: x,
+      guildId: j,
+      className: U,
+      nameplate: F,
+      hideClanTag: B = false,
+      hideSubtext: Y = false,
+      hideTooltip: W = false,
+      onMouseDown: K,
+      onKeyDown: X,
+      onClick: J,
+      onContextMenu: $,
+      onClickPremiumGuildIcon: ee,
+      "aria-controls": et,
+      "aria-expanded": en,
+      "aria-posinset": er,
+      "aria-setsize": ei,
+      id: ea,
+      tabIndex: eo,
+      itemProps: es,
+      ref: el
+    } = e, ec = null == y ? true : y.id, eu = R.Ay.useName(y), ed = i.useRef(null), ef = null != el ? el : ed, [ep, e_] = i.useState(false), [eh, em] = i.useState(false), [eg, eE] = i.useState(null), {
+      voiceChannel: ey
     } = (0, p.A)({
-      userId: el,
-      guildId: x
+      userId: ec,
+      guildId: j
     }), {
-      voiceActivityStatusEnabled: ey
+      voiceActivityStatusEnabled: eb
     } = (0, d.G)({
       location: "MemberListItem"
-    }), eb = ey ? eE : true, {
-      avatarDecorationSrc: eO,
-      avatarSrc: ev,
-      eventHandlers: eA
+    }), eO = eb ? ey : true, {
+      avatarDecorationSrc: ev,
+      avatarSrc: eA,
+      eventHandlers: eI
     } = (0, N.A)({
-      userId: el,
+      userId: ec,
       size: c._3J.SIZE_32,
-      animateOnHover: !(t || ef),
-      guildId: x
-    }), eI = null != eo ? eo : {}, {
-      onFocus: eS
-    } = eI, eT = V(eI, ["onFocus"]), eC = (0, S.gn)(x, el, null != a ? a : null), [eN, ew] = i.useState(false);
+      animateOnHover: !(t || ep),
+      guildId: j
+    }), eS = null != es ? es : {}, {
+      onFocus: eT
+    } = eS, eC = V(eS, ["onFocus"]), eN = (0, S.gn)(j, ec, null != a ? a : null), [ew, eR] = i.useState(false);
     i.useEffect(() => {
-      t && ew(false)
+      t && eR(false)
     }, [t]);
-    let eR = (0, T.YW)(O),
-      eP = (0, T.Yl)(eR, v, el) && t && !eN,
-      eD = i.useCallback(() => {
-        ep(true)
-      }, []),
+    let eP = (0, T.YW)(O),
+      eD = (0, T.Yl)(eP, v, ec) && t && !ew,
       eL = i.useCallback(() => {
-        ep(false)
+        e_(true)
       }, []),
       ex = i.useCallback(() => {
-        eh(true), null == eS || eS()
-      }, [eS]),
+        e_(false)
+      }, []),
       eM = i.useCallback(() => {
-        eh(false)
+        em(true), null == eT || eT()
+      }, [eT]),
+      ej = i.useCallback(() => {
+        em(false)
       }, []),
-      ej = i.useCallback(e => {
-        eg(e)
+      ek = i.useCallback(e => {
+        eE(e)
       }, []),
-      ek = i.useCallback(e => null == eR ? null : (0, r.jsx)(C.A, G(k({
-        name: null != E ? E : ec,
-        quest: eR,
-        memberListItemRef: ed,
+      eU = i.useCallback(e => null == eP ? null : (0, r.jsx)(C.A, G(k({
+        name: null != E ? E : eu,
+        quest: eP,
+        memberListItemRef: ef,
         applicationStream: v
       }, e), {
-        closePopout: () => ew(true)
-      })), [eR, ed, v, E, ec]);
+        closePopout: () => eR(true)
+      })), [eP, ef, v, E, eu]);
     return null == y ? (0, r.jsx)(m.A, {
       avatarSize: c._3J.SIZE_32,
       className: M.qf
     }) : (0, r.jsx)(c.YNO, {
-      targetElementRef: ed,
-      renderPopout: ek,
+      targetElementRef: ef,
+      renderPopout: eU,
       position: "bottom",
-      shouldShow: eP,
+      shouldShow: eD,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.YNO.Animation.NONE,
       spacing: -H,
       children: () => (0, r.jsx)(g.A, k({
-        ref: ed,
+        ref: ef,
         selected: t,
-        className: o()(M.Dc, j, {
+        className: o()(M.Dc, U, {
           [M.WK]: A === P.clD.OFFLINE && !t,
-          [M.PJ]: eP
+          [M.PJ]: eD
         }),
         innerClassName: M.Hz,
-        onClick: X,
-        onKeyDown: K,
-        onMouseDown: W,
-        onContextMenu: J,
-        onMouseEnter: eD,
-        onMouseLeave: eL,
-        onBlur: eM,
-        hovered: ef,
+        onClick: J,
+        onKeyDown: X,
+        onMouseDown: K,
+        onContextMenu: $,
+        onMouseEnter: eL,
+        onMouseLeave: ex,
+        onBlur: ej,
+        hovered: ep,
         name: null == _ ? (0, r.jsx)("span", {
           className: M.Xh,
           children: (0, r.jsx)(q, {
             colorRoleName: l,
             colorString: null != n ? n : null,
-            name: null != E ? E : ec,
-            colorStrings: eC,
-            hideClanTag: F,
+            name: null != E ? E : eu,
+            colorStrings: eN,
+            hideClanTag: B,
             user: y,
-            guildId: x,
-            isHovering: ef
+            guildId: j,
+            isHovering: ep
           })
         }) : (0, r.jsx)(s.m, {
           text: _,
@@ -413,12 +416,12 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             children: (0, r.jsx)(q, {
               colorRoleName: l,
               colorString: null != n ? n : null,
-              name: null != E ? E : ec,
-              colorStrings: eC,
-              hideClanTag: F,
+              name: null != E ? E : eu,
+              colorStrings: eN,
+              hideClanTag: B,
               user: y,
-              guildId: x,
-              isHovering: ef
+              guildId: j,
+              isHovering: ep
             })
           })
         }),
@@ -427,43 +430,44 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           shouldAnimateStatus: I,
           activities: O,
           status: A,
-          eventHandlers: eA,
-          avatarSrc: ev,
+          eventHandlers: eI,
+          avatarSrc: eA,
           isMobile: w,
+          isVR: D,
           isTyping: h,
-          avatarDecorationSrc: eO,
-          handleSetTypingRef: ej,
-          typingRef: em,
+          avatarDecorationSrc: ev,
+          handleSetTypingRef: ek,
+          typingRef: eg,
           currentUser: b
         }),
-        nameplate: U,
+        nameplate: F,
         subText: (0, r.jsx)(Q, {
-          hideSubtext: B,
+          hideSubtext: Y,
           activities: O,
           status: A,
           applicationStream: v,
-          voiceStatusChannel: eb,
+          voiceStatusChannel: eO,
           user: y,
-          channel: L,
-          isHoveringOrFocusing: ef || e_,
-          quest: eR,
-          hideTooltip: Y
+          channel: x,
+          isHoveringOrFocusing: ep || eh,
+          quest: eP,
+          hideTooltip: W
         }),
         decorators: (0, r.jsx)(z, {
           user: y,
           isOwner: u,
           lostPermissionTooltipText: _,
           ownerTooltipText: f,
-          premiumSince: D,
-          onClickPremiumGuildIcon: $
+          premiumSince: L,
+          onClickPremiumGuildIcon: ee
         }),
-        "aria-controls": ee,
-        "aria-expanded": et,
-        "aria-setsize": er,
-        "aria-posinset": en,
-        id: ei,
-        tabIndex: ea,
-        onFocus: ex,
+        "aria-controls": et,
+        "aria-expanded": en,
+        "aria-setsize": ei,
+        "aria-posinset": er,
+        id: ea,
+        tabIndex: eo,
+        onFocus: eM,
         focusProps: {
           offset: {
             top: 4,
@@ -472,6 +476,6 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             right: 4
           }
         }
-      }, eT))
+      }, eC))
     })
   })

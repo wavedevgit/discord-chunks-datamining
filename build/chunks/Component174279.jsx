@@ -115,32 +115,34 @@ class w extends Chunk64700.PureComponent {
       applicationStream: i,
       status: l,
       isMobile: a,
-      isGameRelationship: s,
-      giftIntentType: c,
-      hasFriendAnniversarySection: u,
-      sectionIndex: m
+      isVR: s,
+      isGameRelationship: c,
+      giftIntentType: u,
+      hasFriendAnniversarySection: m,
+      sectionIndex: f
     } = this.props, {
-      isActiveRow: f
+      isActiveRow: A
     } = this.state;
-    return (0, h.p)(p.A.FRIENDS_LIST) && c === C.np.FRIEND_ANNIVERSARY && u && 0 === m ? (0, r.jsx)(g.A, {
+    return (0, h.p)(p.A.FRIENDS_LIST) && u === C.np.FRIEND_ANNIVERSARY && m && 0 === f ? (0, r.jsx)(g.A, {
       ref: this.peopleListItemRef,
       isFocused: t,
-      isActive: f,
+      isActive: A,
       recipientUser: e,
-      onOtherHover: () => f ? null : (0, d.Z_)(),
+      onOtherHover: () => A ? null : (0, d.Z_)(),
       onClick: this.handleOpenPrivateChannel,
-      giftIntentType: c,
+      giftIntentType: u,
       status: l,
       activities: n,
       applicationStream: i,
       isMobile: a,
-      isGameRelationship: s
+      isVR: s,
+      isGameRelationship: c
     }) : (0, r.jsx)(y.A, {
       ref: this.peopleListItemRef,
       isFocused: t,
-      isActive: f,
+      isActive: A,
       user: e,
-      onOtherHover: () => f ? null : (0, d.Z_)(),
+      onOtherHover: () => A ? null : (0, d.Z_)(),
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: j.a4,
@@ -148,6 +150,7 @@ class w extends Chunk64700.PureComponent {
           user: e,
           status: l,
           isMobile: a,
+          isVR: s,
           subText: (0, r.jsx)(I.A, {
             hovered: t,
             activities: n,
@@ -157,7 +160,7 @@ class w extends Chunk64700.PureComponent {
             userIgnored: _.A.isIgnored(e.id)
           }),
           hovered: t,
-          showAccountIdentifier: !s && !e.isProvisional
+          showAccountIdentifier: !c && !e.isProvisional
         }), (0, r.jsxs)("div", {
           className: j.o1,
           children: [(0, r.jsx)(O.A, {

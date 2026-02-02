@@ -144,12 +144,12 @@ function E(e) {
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: v.Qs,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(C, {
         guildId: t,
         handleOnboardingToggle: u,
         handlePreview: f
       }), x]
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(T, {
       guildId: t
     })]
   })
@@ -243,7 +243,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function C(e) {
   let {
     guildId: t,
     handleOnboardingToggle: n,
@@ -278,7 +278,7 @@ function T(e) {
   })
 }
 
-function C(e) {
+function T(e) {
   let {
     guildId: t
   } = e, n = (0, i.bG)([u.A], () => u.A.getGuild(t));

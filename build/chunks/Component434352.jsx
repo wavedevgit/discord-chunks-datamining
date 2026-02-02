@@ -1,7 +1,7 @@
 /** Chunk was on 19418 **/
 /** chunk id: 434352, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => c
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,13 +9,11 @@ var Chunk397927 = require("./397927.js"),
   Chunk494713 = require("./494713.js"),
   Chunk985018 = require("./985018.jsx");
 
-function o(e) {
+function c(e) {
   let {
     guildFriendsEnabled: n
-  } = l.A.useExperiment({
+  } = l.A.useConfig({
     location: "useFriendsItem"
-  }, {
-    autoTrackExposure: false
   });
   return n ? (0, i.jsx)(r.Drp, {
     id: "friends",

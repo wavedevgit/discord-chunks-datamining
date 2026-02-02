@@ -33,7 +33,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk944620 = require("./944620.js"),
   Chunk597306 = require("./597306.js");
-let C = "dismissedCommunityFeaturesUpsell",
+let T = "dismissedCommunityFeaturesUpsell",
   P = () => {
     let e, {
         guild: t,
@@ -69,7 +69,7 @@ let C = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: o
-    } = e, [c, d] = i.useState(true === a.w.get(C)), p = (0, l.bG)([b.A], () => {
+    } = e, [c, d] = i.useState(true === a.w.get(T)), p = (0, l.bG)([b.A], () => {
       var e;
       return null != (e = b.A.getMemberCount(o.id)) ? e : 0
     }), [h, j] = i.useState(false);
@@ -99,7 +99,7 @@ let C = "dismissedCommunityFeaturesUpsell",
       children: [(0, r.jsxs)("div", {
         className: I.xw,
         children: [(0, r.jsx)("img", {
-          src: T,
+          src: C,
           alt: "",
           width: 60,
           className: I.Tn
@@ -119,7 +119,7 @@ let C = "dismissedCommunityFeaturesUpsell",
         size: u.$n.Sizes.NONE,
         className: I.kz,
         onClick: () => {
-          a.w.set(C, true), d(true)
+          a.w.set(T, true), d(true)
         },
         children: (0, r.jsx)(g.PGe, {
           size: "md",
@@ -185,7 +185,7 @@ let C = "dismissedCommunityFeaturesUpsell",
       })),
       m = (0, l.bG)([h.Ay], () => null != s ? h.Ay.getChannels(s.id) : null),
       f = i.useMemo(E.fr, []),
-      b = true !== a.w.get(C);
+      b = true !== a.w.get(T);
     if (null == s) return null;
     let x = [];
     null != m && m[h.I6].forEach(e => {

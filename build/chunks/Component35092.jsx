@@ -110,7 +110,7 @@ function N(e) {
           cardStyle: s()(C.Nr, C.Q1, c),
           skuPreviewStyle: s()(C.ho, g),
           onClick: N,
-          children: _ > 0 && (0, r.jsx)(O.B, {
+          children: _ > 0 && (0, r.jsx)(O.BF, {
             count: _
           })
         })

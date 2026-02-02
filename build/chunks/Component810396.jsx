@@ -38,10 +38,9 @@ function E(e) {
     onOpenProfile: C,
     onClose: N,
     nicknameVariant: w = "heading-lg/bold"
-  } = e, R = e => null == C ? e : (0, r.jsx)(s.sqX, {
+  } = e, R = e => null == C ? e : (0, r.jsx)(s.DUT, {
     onClick: C,
     className: g.pt,
-    "aria-label": m.intl.string(m.t["+Xp3hq"]),
     children: e
   }), P = null != v && v.length > 0, D = (0, c.r)(t), L = (0, d.A)({
     userId: t.id,
@@ -99,11 +98,20 @@ function E(e) {
           asContainer: true,
           text: m.intl.string(m.t.GI2A8C),
           delay: h.In,
-          children: (0, r.jsx)(s.Text, {
+          ariaHidden: true,
+          children: (0, r.jsxs)(s.Text, {
             className: a()(g.kc, S),
             variant: "text-sm/medium",
             color: "text-strong",
-            children: v
+            children: [(0, r.jsx)(s.AC4, {
+              tag: "span",
+              children: m.intl.formatToPlainString(m.t["DRI+T7"], {
+                pronouns: v
+              })
+            }), (0, r.jsx)("span", {
+              "aria-hidden": "true",
+              children: v
+            })]
           })
         })]
       }), (0, r.jsx)(_.Ay, {

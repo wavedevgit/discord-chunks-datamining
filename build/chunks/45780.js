@@ -22,23 +22,23 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return (0, r.bG)([i.A], () => _(e, t))
+  return (0, l.bG)([i.A], () => _(e, t))
 }
 
-function b(e, t, n, r, i) {
-  (0, o.TG)(n, r => {
-    let l = _(t, n);
-    if (e && l || !e && !l) returnfalse;
-    r.dismissedGuildContent = (e ? s.Vf : s.We)(r.dismissedGuildContent, t)
-  }, e ? d.Sb.INFREQUENT_USER_ACTION : d.Sb.FREQUENT_USER_ACTION), r && a.default.track(u.HAw.DISMISSIBLE_CONTENT_DISMISSED, {
-    type: l.V[t],
+function b(e, t, n, l, i) {
+  (0, o.TG)(n, l => {
+    let r = _(t, n);
+    if (e && r || !e && !r) returnfalse;
+    l.dismissedGuildContent = (e ? s.Vf : s.We)(l.dismissedGuildContent, t)
+  }, e ? d.Sb.INFREQUENT_USER_ACTION : d.Sb.FREQUENT_USER_ACTION), l && a.default.track(u.HAw.DISMISSIBLE_CONTENT_DISMISSED, {
+    type: r.V[t],
     guild_id: n,
     action: null != i ? i : c.i.UNKNOWN
   })
 }
 
-function m(e, t, n, r) {
-  b(true, e, t, n, r)
+function m(e, t, n, l) {
+  b(true, e, t, n, l)
 }
 
 function f(e, t) {

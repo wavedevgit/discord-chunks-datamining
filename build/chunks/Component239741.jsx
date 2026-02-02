@@ -104,8 +104,8 @@ function L(e) {
         delay: 1e3
       })
     }
-    return p._.subscribe(C.jej.EMPHASIZE_NOTICE, e), () => {
-      p._.unsubscribe(C.jej.EMPHASIZE_NOTICE, e)
+    return p._.subscribe(T.jej.EMPHASIZE_NOTICE, e), () => {
+      p._.unsubscribe(T.jej.EMPHASIZE_NOTICE, e)
     }
   }, [K]);
   let z = (0, d.rdh)(a.A.colors.BACKGROUND_SURFACE_HIGH).hex(),
@@ -118,9 +118,9 @@ function L(e) {
   if (L) {
     if (G === y.Hy.DEFAULT_CHANNELS) return (0, r.jsx)(N.G, {});
     else if (G === y.Hy.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(I.fO, {});
-    else if (G === y.Hy.HOME_SETTINGS) return (0, r.jsx)(T.A, {});
+    else if (G === y.Hy.HOME_SETTINGS) return (0, r.jsx)(C.A, {});
     else if (G === y.Hy.CONNECTIONS) return (0, r.jsx)(S.R, {});
-    else if ((G === y.Hy.LANDING || G === y.Hy.REVIEW) && j.A.hasChanges()) return (0, r.jsx)(T.A, {})
+    else if ((G === y.Hy.LANDING || G === y.Hy.REVIEW) && j.A.hasChanges()) return (0, r.jsx)(C.A, {})
   }
   let J = G === y.kd[y.kd.length - 1],
     Z = async () => {
@@ -141,13 +141,13 @@ function L(e) {
       }
       returntrue
     }, Q = async () => {
-      m.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
+      m.default.track(T.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
         step: y.Hy[G],
         back: false,
         skip: !k
       })), (0, b.Ay)((0, y.ql)(G)), await Z() && (0, b._k)(f, G)
     }, q = async () => {
-      m.default.track(C.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
+      m.default.track(T.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.H$)(f)), {
         step: y.Hy[G],
         back: true,
         skip: false

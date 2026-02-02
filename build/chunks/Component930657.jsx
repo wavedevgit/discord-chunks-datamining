@@ -31,8 +31,8 @@ function _(e) {
     var e;
     return null == (e = u.A.getSubscriptionListing(n)) ? true : e.image_asset
   }), [O, v] = p.tx(n), [y, A] = p.bL(n), [E, N] = p.I8(n), [S, I] = p.lK(n, 1024), {
-    imageCTA: T,
-    imageAriaLabel: C,
+    imageCTA: C,
+    imageAriaLabel: T,
     setFilename: P
   } = (0, f.A)(_), w = i.useMemo(() => {
     var e;
@@ -96,22 +96,22 @@ function _(e) {
           description: x.intl.string(x.t["0iUofN"]),
           children: (0, r.jsx)(o.A, {
             onChange: R,
-            "aria-label": C,
+            "aria-label": T,
             disabled: D,
-            text: T,
+            text: C,
             size: "md",
             variant: "secondary"
           })
         }), (0, r.jsx)(c.A, {
           image: S,
-          hint: T,
+          hint: C,
           showIcon: true,
           showRemoveButton: false,
           hideSize: true,
           className: j.KN,
           imageClassName: j.NW,
           onChange: R,
-          "aria-label": C,
+          "aria-label": T,
           disabled: D
         })]
       })]

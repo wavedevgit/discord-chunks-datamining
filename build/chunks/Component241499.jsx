@@ -75,8 +75,8 @@ function S(e) {
     isDragEnabled: A,
     disabled: E
   } = e, S = i.useRef(null), I = i.useRef(null), [{
-    textValue: T,
-    richValue: C
+    textValue: C,
+    richValue: T
   }, P] = i.useState((0, p.ur)(t.value)), [, w, R] = (0, c.i)({
     type: N,
     item: {
@@ -105,8 +105,8 @@ function S(e) {
   if (i.useLayoutEffect(() => (w(I), R(D(S)), () => {
       w(null), D(null)
     }), [w, D, R]), i.useEffect(() => {
-      "" !== t.value && "" === T && P((0, p.ur)(t.value))
-    }, [t.value, T]), null == n) return null;
+      "" !== t.value && "" === C && P((0, p.ur)(t.value))
+    }, [t.value, C]), null == n) return null;
   let G = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
     ref: S,
@@ -121,8 +121,8 @@ function S(e) {
         children: (0, r.jsx)(f.Ay, {
           innerClassName: y.oQ,
           type: m.oU.RULES_INPUT,
-          textValue: T,
-          richValue: C,
+          textValue: C,
+          richValue: T,
           channel: n,
           placeholder: v.intl.string(v.t.BRkD41),
           focused: x,
@@ -171,7 +171,7 @@ function I(e) {
     setRules: n,
     guild: l,
     disabled: s
-  } = e, a = l.rulesChannelId, c = l.features.has(O.GuildFeatures.PREVIEW_ENABLED), d = (0, u.bG)([h.A], () => null != a ? h.A.getChannel(a) : null), m = (0, u.bG)([b.Ay], () => b.Ay.getDefaultChannel(l.id)), [p, f] = i.useState(null), [N, I] = i.useState(null), T = i.useCallback(e => {
+  } = e, a = l.rulesChannelId, c = l.features.has(O.GuildFeatures.PREVIEW_ENABLED), d = (0, u.bG)([h.A], () => null != a ? h.A.getChannel(a) : null), m = (0, u.bG)([b.Ay], () => b.Ay.getDefaultChannel(l.id)), [p, f] = i.useState(null), [N, I] = i.useState(null), C = i.useCallback(e => {
     if (!s && t.length !== _.yN)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -182,9 +182,9 @@ function I(e) {
         id: o()(),
         value: null != e ? e : ""
       }]), I(t.length)
-  }, [s, t, n]), C = i.useCallback(() => {
-    s || T(true)
-  }, [T, s]), P = i.useCallback((e, r) => {
+  }, [s, t, n]), T = i.useCallback(() => {
+    s || C(true)
+  }, [C, s]), P = i.useCallback((e, r) => {
     if (s) return;
     let i = [...t];
     i[r] = E(A({}, i[r]), {
@@ -204,26 +204,26 @@ function I(e) {
     }) : true;
     return [{
       text: v.intl.string(v.t.DXq2od),
-      onClick: () => T(v.intl.string(v.t.XudkSq)),
+      onClick: () => C(v.intl.string(v.t.XudkSq)),
       disabled: R || s,
       tooltipText: e
     }, {
       text: v.intl.string(v.t.nSqTjM),
-      onClick: () => T(v.intl.string(v.t.np91jA)),
+      onClick: () => C(v.intl.string(v.t.np91jA)),
       disabled: R || s,
       tooltipText: e
     }, {
       text: v.intl.string(v.t.AtRxsO),
-      onClick: () => T(v.intl.string(v.t.PNIDDJ)),
+      onClick: () => C(v.intl.string(v.t.PNIDDJ)),
       disabled: R || s,
       tooltipText: e
     }, {
       text: v.intl.string(v.t["0K5NJt"]),
-      onClick: () => T(v.intl.string(v.t.HolIDy)),
+      onClick: () => C(v.intl.string(v.t.HolIDy)),
       disabled: R || s,
       tooltipText: e
     }]
-  }, [T, s, R]);
+  }, [C, s, R]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: y.$W,
@@ -250,7 +250,7 @@ function I(e) {
       }, e.id))
     }), !R && (0, r.jsx)(x.d, {
       text: v.intl.string(v.t.Cq5JuR),
-      onClick: C,
+      onClick: T,
       disabled: s
     }), (0, r.jsx)(g.Heading, {
       variant: "text-xs/bold",

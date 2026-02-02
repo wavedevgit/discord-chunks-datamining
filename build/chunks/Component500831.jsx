@@ -78,10 +78,8 @@ let V = Chunk64700.memo(function() {
     location: "AppTitleBar"
   }), {
     hasBugReporterAccess: v
-  } = h.A.useExperiment({
+  } = h.A.useConfig({
     location: "HeaderBar"
-  }, {
-    autoTrackExposure: false
   }), U = (0, o.bG)([P.A], () => P.A.isDeveloper), V = (0, o.bG)([w.A, d.A], () => x.Q_.getSetting() && null != w.A.testModeApplicationId && null != d.A.getApplication(w.A.testModeApplicationId) && (0, p.A)(d.A.getApplication(w.A.testModeApplicationId))), B = null !== e && t === S.RK.TITLE_BAR_LEFT, H = null === e;
   i.useLayoutEffect(() => {
     R.Ay.setMinimumSize(800, 500)
@@ -159,17 +157,15 @@ let V = Chunk64700.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), v ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(y.w, {
-                focusSectionProps: "HELP" === K ? e : true,
-                className: W
-              }), U ? (0, r.jsx)(E.R, {
-                className: W
-              }) : null]
+            }), i)), v ? (0, r.jsx)(y.w, {
+              focusSectionProps: "HELP" === K ? e : true,
+              className: W
             }) : (0, r.jsx)(O.A, {
               focusSectionProps: "HELP" === K ? e : true,
               className: W
-            }), V && (0, r.jsx)(u.A, {
+            }), U ? (0, r.jsx)(E.R, {
+              className: W
+            }) : null, V && (0, r.jsx)(u.A, {
               className: W
             }), (0, r.jsx)(I.A, {
               className: W

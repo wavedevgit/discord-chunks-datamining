@@ -217,12 +217,15 @@ function q(e) {
     variant: l
   } = e, a = (0, d.bG)([L.default], () => L.default.getUser(t.author_id)), s = (0, d.bG)([P.A], () => null != a ? P.A.getAnyStreamForUser(a.id) : null, [a]), {
     isMobileOnline: o,
-    status: u
+    isVROnline: u,
+    status: c
   } = (0, d.cf)([k.A], () => null == a ? {
     isMobileOnline: true,
+    isVROnline: true,
     status: true
   } : {
     isMobileOnline: k.A.isMobileOnline(a.id),
+    isVROnline: k.A.isVROnline(a.id),
     status: k.A.getStatus(a.id)
   }, [a]);
   return null == a ? null : (0, i.jsxs)("div", {
@@ -231,7 +234,8 @@ function q(e) {
       className: B.my,
       user: a,
       isMobile: o,
-      status: u
+      isVR: u,
+      status: c
     }), (0, i.jsxs)("div", {
       className: B.zH,
       children: [(0, i.jsxs)("div", {

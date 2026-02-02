@@ -1,4 +1,4 @@
-/** Chunk was on 49438 **/
+/** Chunk was on 2155 **/
 /** chunk id: 745483, original params: e,t,n (module,exports,require) **/
 module.exports = {
   B$: "inviteContainer__23437",

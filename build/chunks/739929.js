@@ -42,16 +42,16 @@ function h(e) {
       isApplicationRejected: S,
       requestCooldownDuration: I
     } = (0, g.A)(N),
-    T = (null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
+    C = (null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
     {
-      isMonetizationReapplicationDisabled: C
+      isMonetizationReapplicationDisabled: T
     } = (0, l.YG)(null == e ? true : e.id),
     P = v || (null == N ? true : N.isApplicationPending) === true,
     w = (null == N ? true : N.canApply) === true,
     R = f.intl.format(f.t.aJUdOi, {
       faqUrl: o.A.getArticleURL(p.MVz.CREATOR_FAQ)
     });
-  S && C ? t = true === h ? f.intl.format(f.t["0o1Q+t"], {
+  S && T ? t = true === h ? f.intl.format(f.t["0o1Q+t"], {
     communityGuidelineUrl: p.X7G.GUIDELINES
   }) : f.intl.format(f.t.b6h59n, {
     communityGuidelineUrl: p.X7G.GUIDELINES
@@ -81,7 +81,7 @@ function h(e) {
     requestRejectedNoticeText: t,
     reapplyNoticeText: k,
     showAcceptTermsFlow: G,
-    wasRejectedInV1: G && (T || S),
+    wasRejectedInV1: G && (C || S),
     requirementsFinePrintText: R,
     acceptTermsCheckboxText: L
   }

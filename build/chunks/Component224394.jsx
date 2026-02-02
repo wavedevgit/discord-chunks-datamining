@@ -138,10 +138,10 @@ let E = [{
   I = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [s, O] = i.useState(0), [v, y] = i.useState(), I = (0, a.bG)([m.A], () => m.A.can(f.xBc.ADMINISTRATOR, t)), T = null == v ? true : v.offsetWidth, C = null == v ? true : v.offsetHeight;
+    } = e, [n, l] = i.useState(0), [s, O] = i.useState(0), [v, y] = i.useState(), I = (0, a.bG)([m.A], () => m.A.can(f.xBc.ADMINISTRATOR, t)), C = null == v ? true : v.offsetWidth, T = null == v ? true : v.offsetHeight;
     return i.useEffect(() => {
-      null != T && l(T / 2), null != C && O(C / 2)
-    }, [T, C, l, O]), i.useEffect(() => {
+      null != C && l(C / 2), null != T && O(T / 2)
+    }, [C, T, l, O]), i.useEffect(() => {
       (0, u.sF)(h._.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []), (0, r.jsxs)("div", {
       className: x.kL,
