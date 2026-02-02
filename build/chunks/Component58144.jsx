@@ -1,7 +1,7 @@
 /** Chunk was on 31385 **/
 /** chunk id: 58144, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,53 +10,54 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk427262 = require("./427262.js"),
   Chunk10005 = require("./10005.js"),
+  Chunk534654 = require("./534654.js"),
   Chunk208993 = require("./208993.jsx"),
   Chunk299628 = require("./299628.jsx"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk319530 = require("./319530.js");
-let j = e => {
+let x = e => {
   let {
     currentUser: t,
     otherUser: r,
     transitionState: o,
-    onClose: j
-  } = e, x = l.useCallback(() => {
-    j()
-  }, [j]), y = t.nsfwAllowed, [m, h] = l.useState(false), O = l.useCallback(() => {
-    h(true)
+    onClose: x
+  } = e, y = l.useCallback(() => {
+    x()
+  }, [x]), m = (0, d.A)(), [h, O] = l.useState(false), g = l.useCallback(() => {
+    O(true)
   }, []), {
-    acceptLinkRequest: g,
-    isAcceptLoading: w
+    acceptLinkRequest: w,
+    isAcceptLoading: v
   } = (0, c.A)({
-    onError: O,
-    onSuccess: x
+    onError: g,
+    onSuccess: y
   });
-  return a()(!y, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(s.dWK, {
+  return a()(m, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(s.dWK, {
     transitionState: o,
-    onClose: j,
-    "aria-label": f.intl.string(p.default.rlNJwZ),
-    children: [m && (0, n.jsx)(s.wx6, {
+    onClose: x,
+    "aria-label": b.intl.string(f.default.rlNJwZ),
+    children: [h && (0, n.jsx)(s.wx6, {
       type: "critical",
-      children: f.intl.string(p.default.pegSM5)
+      children: b.intl.string(f.default.pegSM5)
     }), (0, n.jsxs)(s.cwr, {
-      children: [(0, n.jsx)(d.A.Header, {
+      children: [(0, n.jsx)(u.A.Header, {
         currentUser: t,
         otherUser: r,
-        header: f.intl.string(p.default.rlNJwZ),
+        header: b.intl.string(f.default.rlNJwZ),
         icon: (0, n.jsx)(s.qYV, {
           size: "md",
           color: "currentColor",
-          className: b.wP
+          className: j.wP
         })
-      }), (0, n.jsxs)(d.A.Content, {
-        children: [(0, n.jsx)(u.A, {
+      }), (0, n.jsxs)(u.A.Content, {
+        children: [(0, n.jsx)(p.A, {
           inModal: true
         }), (0, n.jsx)(s.Text, {
-          className: b.ed,
+          className: j.ed,
           variant: "text-xs/normal",
           color: "text-default",
-          children: f.intl.format(p.default.snlFqR, {
+          children: b.intl.format(f.default.snlFqR, {
             username: i.Ay.getName(r)
           })
         })]
@@ -65,17 +66,17 @@ let j = e => {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: f.intl.string(f.t["ETE/oC"]),
-        onClick: j,
-        disabled: w
+        text: b.intl.string(b.t["ETE/oC"]),
+        onClick: x,
+        disabled: v
       }, {
         variant: "primary",
-        text: f.intl.string(p.default["wI/jo3"]),
+        text: b.intl.string(f.default["wI/jo3"]),
         onClick: () => {
-          h(false), g(r.id)
+          O(false), w(r.id)
         },
-        disabled: w,
-        loading: w
+        disabled: v,
+        loading: v
       }]
     })]
   })

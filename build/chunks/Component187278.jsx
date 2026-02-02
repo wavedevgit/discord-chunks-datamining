@@ -1,7 +1,7 @@
 /** Chunk was on 17219 **/
 /** chunk id: 187278, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -9,59 +9,60 @@ var Chunk627968 = require("./627968.js"),
   c = require.n(Chunk284009),
   Chunk397927 = require("./397927.js"),
   Chunk10005 = require("./10005.js"),
+  Chunk438732 = require("./438732.js"),
   Chunk208993 = require("./208993.jsx"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk528427 = require("./528427.js");
-let b = e => {
+let f = e => {
   let {
     currentUser: t,
     otherUser: r,
     transitionState: o,
-    onClose: b
-  } = e, [f, y] = l.useState(false), j = l.useCallback(() => {
-    y(true)
-  }, []), O = l.useCallback(() => {
-    b()
-  }, [b]), h = t.nsfwAllowed, {
-    cancelLinkRequest: m,
-    isCancelLoading: x
-  } = (0, i.A)({
-    onError: j,
-    onSuccess: O
+    onClose: f
+  } = e, [y, j] = l.useState(false), O = l.useCallback(() => {
+    j(true)
+  }, []), h = l.useCallback(() => {
+    f()
+  }, [f]), m = (0, i.A)(), {
+    cancelLinkRequest: x,
+    isCancelLoading: g
+  } = (0, a.A)({
+    onError: O,
+    onSuccess: h
   });
-  return c()(h, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsxs)(s.dWK, {
+  return c()(m, "FamilyCenterCancelLinkModal should only be rendered for parents."), (0, n.jsxs)(s.dWK, {
     transitionState: o,
-    onClose: b,
-    children: [f && (0, n.jsx)(s.wx6, {
+    onClose: f,
+    children: [y && (0, n.jsx)(s.wx6, {
       type: "critical",
-      children: u.intl.string(d.default["6gyAQZ"])
+      children: p.intl.string(u.default["6gyAQZ"])
     }), (0, n.jsx)(s.cwr, {
-      children: (0, n.jsx)(a.A.Header, {
+      children: (0, n.jsx)(d.A.Header, {
         currentUser: t,
         otherUser: r,
-        header: u.intl.string(d.default.HynllX),
+        header: p.intl.string(u.default.HynllX),
         icon: (0, n.jsx)(s.PGe, {
           size: "md",
           color: "currentColor",
-          className: p.u
+          className: b.u
         })
       })
     }), (0, n.jsx)(s.H7u, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: u.intl.string(d.default.czincX),
-        onClick: b,
-        disabled: x
+        text: p.intl.string(u.default.czincX),
+        onClick: f,
+        disabled: g
       }, {
         variant: "critical-primary",
-        text: u.intl.string(d.default.mK40bk),
+        text: p.intl.string(u.default.mK40bk),
         onClick: () => {
-          y(false), m(r.id)
+          j(false), x(r.id)
         },
-        disabled: x || f,
-        loading: x
+        disabled: g || y,
+        loading: g
       }]
     })]
   })

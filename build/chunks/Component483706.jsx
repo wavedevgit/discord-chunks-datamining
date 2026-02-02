@@ -9,13 +9,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk397927 = require("./397927.js"),
   Chunk308528 = require("./308528.js"),
   Chunk922529 = require("./922529.jsx"),
-  Chunk840387 = require("./840387.js"),
   Chunk780964 = require("./780964.js"),
   Chunk12901 = require("./12901.js"),
   Chunk840065 = require("./840065.jsx"),
   Chunk899847 = require("./899847.js"),
   Chunk809697 = require("./809697.js"),
   Chunk153739 = require("./153739.js"),
+  Chunk534654 = require("./534654.js"),
   Chunk834981 = require("./834981.js"),
   Chunk191627 = require("./191627.js"),
   Chunk652215 = require("./652215.js"),
@@ -51,7 +51,7 @@ let x = e => {
   C = () => {
     let e = (0, A.vx)(),
       t = () => {
-        (0, _.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
+        (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
           section: b.nc_.CONTENT_AND_SOCIAL
         })
       };
@@ -81,7 +81,7 @@ let x = e => {
           count: e.length
         }),
         onClick: () => {
-          (0, u.default)(), a.A.openPrivateChannel({
+          (0, d.default)(), a.A.openPrivateChannel({
             recipientIds: e
           })
         },
@@ -91,13 +91,13 @@ let x = e => {
     })
   },
   S = () => {
-    let e = (0, g.y3)(),
-      t = (0, g.tl)(),
+    let e = (0, m.y3)(),
+      t = (0, m.tl)(),
       {
         handleTabChange: n
-      } = (0, m.A)();
+      } = (0, p.A)();
     i.useEffect(() => {
-      (null == e ? true : e.id) != null && t && p.Ay.fetchTeenSettingsAndConsents(null == e ? true : e.id)
+      (null == e ? true : e.id) != null && t && _.Ay.fetchTeenSettingsAndConsents(null == e ? true : e.id)
     }, [null == e ? true : e.id, t]);
     let s = e => {
       n(e)
@@ -128,7 +128,7 @@ let x = e => {
     })
   },
   T = () => {
-    let e = (0, c.Z)();
+    let e = (0, g.A)();
     return 0 === (0, A.vx)().length ? null : (0, r.jsx)("div", {
       className: O.kL,
       children: e ? (0, r.jsx)(C, {}) : (0, r.jsx)(S, {})

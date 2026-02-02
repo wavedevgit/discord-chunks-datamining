@@ -16,7 +16,7 @@ let d = e => {
   let {
     children: o,
     className: i
-  } = e, s = function(e, t) {
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var r, n, l, o = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -53,7 +53,7 @@ let d = e => {
   }({
     "data-migration-pending": true,
     className: i
-  }, s), r = r = {
+  }, c), r = r = {
     parentComponent: "FamilyCenterCommonModal",
     children: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -79,22 +79,22 @@ d.ButtonFooter = e => {
   let {
     icon: t,
     currentUser: r,
-    otherUser: s,
-    header: c
+    otherUser: c,
+    header: s
   } = e;
   return (0, n.jsxs)("div", {
     className: a.wx,
     children: [(0, n.jsx)(o.A, {
       currentUser: r,
-      otherUser: s,
+      otherUser: c,
       children: t
     }), (0, n.jsxs)("div", {
       className: a.R_,
       children: [(0, n.jsx)(l.Heading, {
         variant: "text-lg/bold",
-        children: c
+        children: s
       }), (0, n.jsx)(i.A, {
-        user: s
+        user: c
       })]
     })]
   })
@@ -115,7 +115,7 @@ d.ButtonFooter = e => {
     children: [(0, n.jsx)(l.Text, {
       variant: "eyebrow",
       color: "text-strong",
-      children: c.intl.string(s.default.cXgKMD)
+      children: s.intl.string(c.default.cXgKMD)
     }), (0, n.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-default",
