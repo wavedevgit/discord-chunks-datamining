@@ -83,6 +83,22 @@ class g extends Chunk439372.A {
           messageId: null
         })
       }, 0)
+    }), h(this, "handleOverlayTextChatSetVoiceChatMinimized", e => {
+      let {
+        minimized: t
+      } = e;
+      t && setTimeout(() => {
+        var e, t, n;
+        let r = p.A.getSelectedChannelId();
+        if (null == r) return;
+        let i = o.A.getChannel(r),
+          a = null != (e = null != (t = null == i || null == (n = i.getGuildId) ? true : n.call(i)) ? t : null == i ? true : i.guild_id) ? e : null;
+        this.scheduleFetchMessages({
+          channelId: r,
+          guildId: a,
+          messageId: null
+        })
+      }, 0)
     }), h(this, "handleChannelSelect", e => {
       let {
         channelId: t
@@ -105,7 +121,8 @@ class g extends Chunk439372.A {
       SIDEBAR_VIEW_CHANNEL: this.handleChannelSelect,
       OVERLAY_TEXT_CHAT_ADD_OR_UPDATE_CHANNEL: this.handleOverlayTextChatAddOrUpdateChannel,
       OVERLAY_TEXT_CHAT_SELECT_CHANNEL: this.handleOverlayTextChatSelectChannel,
-      OVERLAY_TEXT_CHAT_REMOVE_CHANNEL: this.handleOverlayTextChatRemoveChannel
+      OVERLAY_TEXT_CHAT_REMOVE_CHANNEL: this.handleOverlayTextChatRemoveChannel,
+      OVERLAY_TEXT_CHAT_SET_VOICE_CHAT_MINIMIZED: this.handleOverlayTextChatSetVoiceChatMinimized
     })
   }
 }

@@ -272,9 +272,10 @@ function z(e) {
     } = e,
     [D, R] = r.useState(false),
     k = (0, s.bG)([A.A], () => A.A.getChannelId(), []) === (null == n ? true : n.id),
-    L = (0, s.bG)([y.A], () => (null == n ? true : n.isThread()) && null != n.parent_id ? y.A.getChannel(n.parent_id) : null, [n]),
-    U = (0, s.bG)([E.default, v.A], () => null != L ? (0, h.m1)(L, E.default, v.A) : null, [L]),
-    z = (0, s.bG)([], () => {
+    L = w.intl.string(N.default.tYPfF2),
+    U = (0, s.bG)([y.A], () => (null == n ? true : n.isThread()) && null != n.parent_id ? y.A.getChannel(n.parent_id) : null, [n]),
+    z = (0, s.bG)([E.default, v.A], () => null != U ? (0, h.m1)(U, E.default, v.A) : null, [U]),
+    F = (0, s.bG)([], () => {
       var e, t;
       return e = n, t = l, null == e ? null : e.isDM() && null != t ? v.A.isFriend(t.id) ? {
         tab: x.x.FRIENDS,
@@ -287,14 +288,14 @@ function z(e) {
         targetId: e.id
       } : null
     }, [n, l]),
-    F = r.useCallback(e => {
+    H = r.useCallback(e => {
       M(n) && ((0, O.YX)(C.uss.TEXT_CHAT_V3, {
         type: O.Z5.CALL_BUTTON,
         value: O.IP.ENABLED,
         secondaryValue: e ? "video" : "voice"
       }), c.A.call(n.id, e, true, n.isDM() ? n.getRecipientId() : null))
     }, [n]),
-    H = r.useCallback(() => {
+    Y = r.useCallback(() => {
       (null == n ? true : n.id) != null && R(e => {
         let t = !e;
         return t && (0, O.YX)(C.uss.TEXT_CHAT_V3, {
@@ -324,16 +325,16 @@ function z(e) {
         size: "sm"
       }) : null, (0, i.jsxs)("div", {
         className: P.G1,
-        children: [null != L && null != U ? (0, i.jsxs)(i.Fragment, {
+        children: [null != U && null != z ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(u.DUT, {
             className: P.oH,
             onMouseDown: e => e.stopPropagation(),
             onClick: e => {
               var t, n, i;
               e.stopPropagation(), (0, I.D$)({
-                channelId: L.id,
+                channelId: U.id,
                 source: T.B.MANUAL,
-                guildId: null != (t = null != (n = null == (i = L.getGuildId) ? true : i.call(L)) ? n : L.guild_id) ? t : null,
+                guildId: null != (t = null != (n = null == (i = U.getGuildId) ? true : i.call(U)) ? n : U.guild_id) ? t : null,
                 messageId: null,
                 widgetType: C.uss.TEXT_CHAT_V3
               })
@@ -341,7 +342,7 @@ function z(e) {
             children: (0, i.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "text-muted",
-              children: U
+              children: z
             })
           }), (0, i.jsx)(u._BQ, {
             className: P.ln,
@@ -363,30 +364,39 @@ function z(e) {
       children: [(0, i.jsx)(G, {
         channel: n,
         isConnectedToVoiceChannel: k,
-        onStartPrivateCall: F,
+        onStartPrivateCall: H,
         pinsOpen: D,
-        onTogglePinsPopout: H,
+        onTogglePinsPopout: Y,
         onRequestClosePinsPopout: () => R(false)
       }), (0, i.jsx)(V, {
         channel: n,
         pinsOpen: D,
-        onTogglePinsPopout: H,
+        onTogglePinsPopout: Y,
         onRequestClosePinsPopout: () => R(false)
-      }), null != z && (0, i.jsx)(S.j, {
-        tab: z.tab,
-        targetId: z.targetId,
+      }), null != F && (0, i.jsx)(S.j, {
+        tab: F.tab,
+        targetId: F.targetId,
         widgetType: C.uss.TEXT_CHAT_V3,
         shouldStopPropagation: false
       }), (null == n ? true : n.id) != null && (0, i.jsx)(o.m, {
-        text: w.intl.string(N.default.ERApc4),
-        "aria-label": w.intl.string(N.default.ERApc4),
+        text: k ? L : w.intl.string(N.default.ERApc4),
+        "aria-label": k ? L : w.intl.string(N.default.ERApc4),
         children: (0, i.jsx)(u.K0, {
-          icon: u.PGe,
-          "aria-label": w.intl.string(N.default.ERApc4),
+          icon: k ? u.gR : u.PGe,
+          "aria-label": k ? L : w.intl.string(N.default.ERApc4),
           size: "sm",
           variant: "icon-only",
           onClick: () => {
-            (0, I.lu)({
+            if (k) {
+              (0, O.YX)(C.uss.TEXT_CHAT_V3, {
+                type: O.Z5.TEXT_CHAT,
+                value: O.IP.CLOSED_TEXT_CHAT,
+                secondaryValue: "minimize_voice"
+              }), (0, I.S$)({
+                minimized: true
+              });
+              return
+            }(0, I.lu)({
               channelId: n.id,
               widgetType: C.uss.TEXT_CHAT_V3,
               secondaryValue: "close_button"

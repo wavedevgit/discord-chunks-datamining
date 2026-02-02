@@ -4,6 +4,7 @@
 require.d(exports, {
   D$: () => s,
   Ml: () => o,
+  S$: () => c,
   lu: () => l
 });
 var Chunk73153 = require("./73153.js"),
@@ -64,5 +65,15 @@ function l(e) {
   }), r.h.dispatch({
     type: "OVERLAY_TEXT_CHAT_REMOVE_CHANNEL",
     channelId: t
+  })
+}
+
+function c(e) {
+  let {
+    minimized: t
+  } = e;
+  return r.h.dispatch({
+    type: "OVERLAY_TEXT_CHAT_SET_VOICE_CHAT_MINIMIZED",
+    minimized: t
   })
 }

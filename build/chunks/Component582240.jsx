@@ -1,8 +1,8 @@
 /** Chunk was on 71447 **/
 /** chunk id: 582240, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
-});
+  A: () => I
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -10,6 +10,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk391973 = require("./391973.js"),
   Chunk684013 = require("./684013.js"),
+  Chunk964486 = require("./964486.js"),
   Chunk555528 = require("./555528.js"),
   Chunk531685 = require("./531685.js"),
   Chunk5463 = require("./5463.js"),
@@ -23,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk121834 = require("./121834.js");
 
-function O(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -42,7 +43,7 @@ function O(e) {
   return e
 }
 
-function x(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,98 +55,129 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = Chunk64700.memo(function(e) {
-  let {
-    widget: t,
-    renderWidget: n,
-    renderTitle: l,
-    renderButtons: _,
-    resizeValidation: S,
-    className: I,
-    dragContainerClassName: j
-  } = e, T = (0, s.bG)([c.A], () => c.A.getWidgetConfig(t.type), [t.type]), C = (0, y.RE)(t.id, y.X1), N = (0, A.A)(), w = (0, v.A)(), P = (0, s.bG)([d.A], () => d.A.windowSize((0, p.Q2)(w))), D = r.useCallback((e, t, n, i, r) => {
-    let l = d.A.windowSize((0, p.Q2)((0, v.b)())),
-      a = (0, h.NO)(n, l),
-      s = (0, h.R9)(i, l);
-    (0, o.uD)(t), (0, o.Ju)({
-      widgetId: t,
-      anchor: a,
-      size: s
+let S = [],
+  I = Chunk64700.memo(function(e) {
+    let {
+      widget: t,
+      renderWidget: n,
+      renderTitle: l,
+      renderButtons: I,
+      resizeValidation: j,
+      containerRenderGate: T,
+      className: C,
+      dragContainerClassName: N
+    } = e, w = (0, s.bG)([d.A], () => d.A.getWidgetConfig(t.type), [t.type]), P = (0, A.RE)(t.id, A.X1), D = (0, v.A)(), [R, k] = r.useState(() => {
+      var e;
+      return null != (e = null == T ? true : T.stores) ? e : S
     });
-    let f = e === g.P.MOVE,
-      m = (0, h.Ly)(n, l.width, l.height, r.width, r.height);
-    u.A.track(b.HAw.OVERLAY_LAYOUT_UPDATED, {
-      was_resized: !f,
-      was_dragged: f,
-      widget_type: c.A.getWidgetType(t),
-      window_width: l.width,
-      window_height: l.height,
-      widget_width: r.width,
-      widget_height: r.height,
-      widget_left: m.left,
-      widget_top: m.top
-    })
-  }, []), R = r.useCallback(e => {
-    (0, o.uD)(e)
-  }, []), {
-    id: k,
-    pinned: M,
-    zIndex: L,
-    size: U,
-    anchor: G,
-    minSize: V
-  } = t, z = r.useMemo(() => (0, h.fd)(U, P), [U, P]), F = (0, h.Nv)(G, P), {
-    resizeX: H,
-    resizeY: Y,
-    dragAnywhere: K,
-    constrainAutoSizeToExplicitResizeEvents: W
-  } = null != T ? T : {}, B = M || !N, Z = r.useMemo(() => ({
-    minX: 0,
-    minY: 0,
-    maxX: P.width,
-    maxY: P.height
-  }), [P]), X = r.useCallback(e => n(x(O({}, e), {
-    widget: t,
-    dragging: null != e.dragOperation,
-    className: I
-  })), [t, n, I]), J = r.useCallback(e => null != l || null != _ ? (0, i.jsxs)("div", {
-    className: a()(E.vJ, C && E.vw),
-    children: [null == l ? true : l(t), null == _ ? true : _(t, e)]
-  }) : null, [t, l, C, _]), Q = (0, s.bG)([m.A], () => m.A.hasRenderDebugMode(f.x7.WidgetAreas)), q = r.useMemo(() => {
-    if (null != S) return e => S(x(O({}, e), {
-      widget: t
-    }))
-  }, [S, t]);
-  return (0, i.jsx)(g.A, {
-    className: a()({
-      [E.Yz]: Q,
-      [E.xu]: Q && !M,
-      [E.E]: Q && M
-    }, j),
-    id: k,
-    size: z,
-    anchor: F,
-    container: Z,
-    minSize: null != V ? V : {
-      width: 0,
-      height: 0
-    },
-    hidden: !B,
-    locked: N,
-    resizeX: null != H && H,
-    resizeY: null != Y && Y,
-    style: {
-      zIndex: L
-    },
-    dragAnywhere: null != K && K,
-    constrainAutoSizeToExplicitResizeEvents: null != W && W,
-    active: !N,
-    onUpdate: D,
-    onClick: R,
-    targetWindow: w,
-    forceShowExtras: C,
-    renderExtras: J,
-    resizeValidation: q,
-    children: X
+    (0, c.Ay)(() => {
+      var e;
+      k(null != (e = null == T ? true : T.stores) ? e : S)
+    });
+    let M = (0, s.bG)(R, () => {
+        var e;
+        return null == (e = null == T ? true : T.shouldRender({
+          widget: t,
+          locked: D
+        })) || e
+      }, [T, D, t]),
+      L = (0, b.A)(),
+      U = (0, s.bG)([h.A], () => h.A.windowSize((0, f.Q2)(L))),
+      G = r.useCallback((e, t, n, i, r) => {
+        let l = h.A.windowSize((0, f.Q2)((0, b.b)())),
+          a = (0, p.NO)(n, l),
+          s = (0, p.R9)(i, l);
+        (0, o.uD)(t), (0, o.Ju)({
+          widgetId: t,
+          anchor: a,
+          size: s
+        });
+        let c = e === m.P.MOVE,
+          g = (0, p.Ly)(n, l.width, l.height, r.width, r.height);
+        u.A.track(E.HAw.OVERLAY_LAYOUT_UPDATED, {
+          was_resized: !c,
+          was_dragged: c,
+          widget_type: d.A.getWidgetType(t),
+          window_width: l.width,
+          window_height: l.height,
+          widget_width: r.width,
+          widget_height: r.height,
+          widget_left: g.left,
+          widget_top: g.top
+        })
+      }, []),
+      V = r.useCallback(e => {
+        (0, o.uD)(e)
+      }, []),
+      {
+        id: z,
+        pinned: F,
+        zIndex: H,
+        size: Y,
+        anchor: K,
+        minSize: W
+      } = t,
+      B = r.useMemo(() => (0, p.fd)(Y, U), [Y, U]),
+      Z = (0, p.Nv)(K, U),
+      {
+        resizeX: X,
+        resizeY: J,
+        dragAnywhere: Q,
+        constrainAutoSizeToExplicitResizeEvents: q
+      } = null != w ? w : {},
+      $ = !D,
+      ee = F || !D,
+      et = r.useMemo(() => ({
+        minX: 0,
+        minY: 0,
+        maxX: U.width,
+        maxY: U.height
+      }), [U]),
+      en = r.useCallback(e => n(_(x({}, e), {
+        widget: t,
+        dragging: null != e.dragOperation,
+        className: C
+      })), [t, n, C]),
+      ei = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
+        className: a()(O.vJ, P && O.vw),
+        children: [null == l ? true : l(t), null == I ? true : I(t, e)]
+      }) : null, [t, l, P, I]),
+      er = (0, s.bG)([y.A], () => y.A.hasRenderDebugMode(g.x7.WidgetAreas)),
+      el = r.useMemo(() => {
+        if (null != j) return e => j(_(x({}, e), {
+          widget: t
+        }))
+      }, [j, t]);
+    return M ? (0, i.jsx)(m.A, {
+      className: a()({
+        [O.Yz]: er,
+        [O.xu]: er && !F,
+        [O.E]: er && F
+      }, N),
+      id: z,
+      size: B,
+      anchor: Z,
+      container: et,
+      minSize: null != W ? W : {
+        width: 0,
+        height: 0
+      },
+      hidden: !ee,
+      locked: D,
+      resizeX: null != X && X,
+      resizeY: null != J && J,
+      style: {
+        zIndex: H
+      },
+      dragAnywhere: null != Q && Q,
+      constrainAutoSizeToExplicitResizeEvents: null != q && q,
+      active: $,
+      onUpdate: G,
+      onClick: V,
+      targetWindow: L,
+      forceShowExtras: P,
+      renderExtras: ei,
+      resizeValidation: el,
+      children: en
+    }) : null
   })
-})
