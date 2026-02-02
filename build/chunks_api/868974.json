@@ -1,1 +1,1 @@
-{"id":"868974","type":"experiment","data":{"kind":"user","id":"2025-05_search_results_feedback","label":"Search Results Feedback","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Eligible to see search results feedback","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"868974","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

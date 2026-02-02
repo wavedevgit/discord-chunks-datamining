@@ -32,9 +32,12 @@ function s(e) {
 
 function l(e, t, n, r, i) {
   let o;
-  return n || (t += "\n\n"), o = e(t, s({
+  n || (t += "\n\n"), o = e(t, s({
     inline: n
-  }, r)), o = (0, a.rI)(r, o), o = (0, a.Ae)(o), null != i && (o = i(o, n)), o
+  }, r)), o = (0, a.rI)(r, o);
+  let l = (0, a.Ae)(o),
+    c = l.hasBailedAst;
+  return o = l.ast, null != i && (o = i(o, n, c)), o
 }
 let c = {
   reactParserFor(e) {
