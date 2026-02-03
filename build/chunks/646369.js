@@ -516,13 +516,14 @@ class D extends Chunk904986.A {
           videoHookStaleFrameTimeoutMs: u,
           graphicsCaptureStaleFrameTimeoutMs: d,
           hdrCaptureMode: f,
-          enableGlobalFramePoolLock: p
+          enableGlobalFramePoolLock: p,
+          useGraphicsCaptureDirtyRegions: _
         } = e.desktopDescription;
         this.setSoundshareSource(n, r);
-        let [_, h] = null != t ? t.split(":") : ["", ""];
-        null != t ? this.logger.info("capturing desktop (type: ".concat(_, ", handle: ").concat(h, ", use-video-hook: ").concat(i.toString(), ", use-graphics-capture: ").concat(null == s ? true : s.toString(), ", use-graphics-capture-api-level: ").concat(null == a ? true : a.toString(), ", use-capture-device-for-encode: ").concat(null == o ? true : o.toString(), ").")) : this.logger.info("capturing desktop (type: <stop>)."), null != this.conn.setDesktopSourceWithOptions ? null != t ? this.conn.setDesktopSourceWithOptions({
-          type: _,
-          sourceId: h,
+        let [h, m] = null != t ? t.split(":") : ["", ""];
+        null != t ? this.logger.info("capturing desktop (type: ".concat(h, ", handle: ").concat(m, ", use-video-hook: ").concat(i.toString(), ", use-graphics-capture: ").concat(null == s ? true : s.toString(), ", use-graphics-capture-api-level: ").concat(null == a ? true : a.toString(), ", use-capture-device-for-encode: ").concat(null == o ? true : o.toString(), ").")) : this.logger.info("capturing desktop (type: <stop>)."), null != this.conn.setDesktopSourceWithOptions ? null != t ? this.conn.setDesktopSourceWithOptions({
+          type: h,
+          sourceId: m,
           useVideoHook: i,
           useGraphicsCapture: s,
           useGraphicsCaptureApiLevel: a,
@@ -532,8 +533,9 @@ class D extends Chunk904986.A {
           videoHookStaleFrameTimeoutMs: u,
           graphicsCaptureStaleFrameTimeoutMs: d,
           hdrCaptureMode: f,
-          enableGlobalFramePoolLock: p
-        }) : this.conn.clearDesktopSource() : this.conn.setDesktopSource("wumpus-".concat(h), i, _)
+          enableGlobalFramePoolLock: p,
+          useGraphicsCaptureDirtyRegions: _
+        }) : this.conn.clearDesktopSource() : this.conn.setDesktopSource("wumpus-".concat(m), i, h)
       } else if (null != e.cameraDescription) {
         let {
           videoDeviceGuid: t,
