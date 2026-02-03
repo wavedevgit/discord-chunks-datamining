@@ -76,7 +76,7 @@ function K(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, a.x), eW = (0, g.Kr)(e => e.setVideoProgress), eq = (0, g.Kr)(e => e.muted), ez = (0, g.Kr)(e => e.volume), eX = (0, c.bG)([p.A], () => p.A.useReducedMotion), eZ = (0, l.useRef)(null), eJ = (0, l.useRef)(null), e$ = l.useRef(true), e0 = (null == (K = ee.userStatus) ? true : K.completedAt) != null, e1 = l.useMemo(() => ee.config.features.includes(Q.Li.FULL_EPISODE_VIDEO_QUEST), [ee.config.features]), e6 = l.useRef(false), [e2, e4] = l.useState(null), [e7, e9] = l.useState(false), [e8, e3] = l.useState(false), [e5, te] = l.useState(null), tt = e0 ? null != (t = null == (G = eZ.current) ? true : G.duration) ? t : 0 : Math.max(eY.maxTimestampSec, eh.progressSeconds), tn = l.useMemo(() => (0, h.L)({
+  }, a.x), eW = (0, g.Kr)(e => e.setVideoProgress), eq = (0, g.Kr)(e => e.muted), ez = (0, g.Kr)(e => e.volume), eX = (0, c.bG)([p.A], () => p.A.useReducedMotion), eZ = (0, l.useRef)(null), eJ = (0, l.useRef)(null), e$ = l.useRef(true), e0 = (null == (K = ee.userStatus) ? true : K.completedAt) != null, e1 = l.useMemo(() => ee.config.features.includes(Q.Li.FULL_EPISODE_VIDEO_QUEST), [ee.config.features]), e6 = l.useRef(false), [e2, e7] = l.useState(null), [e4, e8] = l.useState(false), [e9, e3] = l.useState(false), [e5, te] = l.useState(null), tt = e0 ? null != (t = null == (G = eZ.current) ? true : G.duration) ? t : 0 : Math.max(eY.maxTimestampSec, eh.progressSeconds), tn = l.useMemo(() => (0, h.L)({
     quest: ee,
     location: Q.rE.VIDEO_MODAL
   }), [ee]), tr = (0, V.g)(e0, eY, eh), [tl, to] = l.useState(N.oA.MD), ti = {
@@ -132,8 +132,8 @@ function K(e) {
     } = (0, y.A)({
       getCurrentVideoTime: tx,
       isPlaying: ef === N.Q6.PLAYING,
-      isMetadataLoaded: e7,
-      isInitialSeekComplete: e8,
+      isMetadataLoaded: e4,
+      isInitialSeekComplete: e9,
       onAnalytics: ty,
       emitIntervalMs: 4e3,
       minSegmentDurationMs: 2e3
@@ -141,7 +141,7 @@ function K(e) {
     tj = l.useCallback(e => {
       if (tn.info("[QV] | updatePlayerState | playerState: ".concat(e)), em(e), null != eZ.current) switch (e) {
         case N.Q6.PLAYING:
-          eZ.current.paused && tm(e2), e4(null), eZ.current.play();
+          eZ.current.paused && tm(e2), e7(null), eZ.current.play();
           break;
         case N.Q6.PAUSED:
           eZ.current.paused || tA(), eZ.current.pause(), eK.current = false;
@@ -160,7 +160,7 @@ function K(e) {
     e0 || (null == (t = ee.userStatus) ? true : t.enrolledAt) == null || (tn.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, C.zv)(ee, e)), tf()
   }, [e0, ee, tn, tf]);
   l.useEffect(() => {
-    X !== u.ip4.HIDDEN && X !== u.ip4.EXITING && X !== u.ip4.EXITED && (null == X || !ed || eu || e0) && (!ec || ea || e0) || null == eZ.current || ef !== N.Q6.PLAYING || (tn.info("[QV] | Pausing video | playerState: ".concat(ef, ", parentTransitionState: ").concat(X, ", visible: ").concat(eu, ", focused: ").concat(ea, ", isQuestCompleted: ").concat(e0)), tj(N.Q6.PAUSED), e0 || e4(E.Yg.LOST_FOCUS))
+    X !== u.ip4.HIDDEN && X !== u.ip4.EXITING && X !== u.ip4.EXITED && (null == X || !ed || eu || e0) && (!ec || ea || e0) || null == eZ.current || ef !== N.Q6.PLAYING || (tn.info("[QV] | Pausing video | playerState: ".concat(ef, ", parentTransitionState: ").concat(X, ", visible: ").concat(eu, ", focused: ").concat(ea, ", isQuestCompleted: ").concat(e0)), tj(N.Q6.PAUSED), e0 || e7(E.Yg.LOST_FOCUS))
   }, [X, ea, ec, eu, ed, ef, e0, tj, tT, tn]);
   let [tD, tw] = l.useState(false), tN = l.useRef(null), tP = l.useRef(performance.now()), tI = l.useCallback(() => {
     null != tN.current && clearTimeout(tN.current), ef !== N.Q6.PLAYING || (tN.current = setTimeout(() => {
@@ -212,7 +212,7 @@ function K(e) {
           tQ(0), tj(N.Q6.PLAYING);
           break;
         case N.Q6.PLAYING:
-          tj(N.Q6.PAUSED), e4(E.Yg.PAUSE_BUTTON);
+          tj(N.Q6.PAUSED), e7(E.Yg.PAUSE_BUTTON);
           break;
         default:
           tj(N.Q6.PLAYING)
@@ -353,7 +353,7 @@ function K(e) {
           tn.info("[QV] | handleLoadedData: loadingFirstChunk: ".concat(ex)), ex && (tp(null != eG.current ? performance.now() - eG.current : null), eA(false), tu())
         },
         onLoadedMetadata: e => {
-          null != eZ.current && (tn.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(ta)), e9(true), ta !== O.fY.VIDEO_PLAYER_VIDEO_HLS && tQ(tr), eq ? eZ.current.volume = 0 : eZ.current.volume = ez)
+          null != eZ.current && (tn.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(ta)), e8(true), ta !== O.fY.VIDEO_PLAYER_VIDEO_HLS && tQ(tr), eq ? eZ.current.volume = 0 : eZ.current.volume = ez)
         },
         onLoadStart: () => {
           eG.current = performance.now(), td(eN), tn.info("[QV] | handleLoadStart | loadingStartTime: ".concat(eG.current))

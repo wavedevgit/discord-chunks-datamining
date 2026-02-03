@@ -54,7 +54,7 @@ function A(e) {
   var t, n, l, s, A;
   let {
     compact: y = false
-  } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, x = "492569", _ = "dba95b5f1bcc8544e074394e2ac356c67f233f55".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), E = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), C = null === c.A || true === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? true : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? true : A.discord_web, I = function() {
+  } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, x = "492587", _ = "209ed374e46fe2a8e46763e16b716fbecd830bd7".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), E = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), C = null === c.A || true === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? true : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? true : A.discord_web, I = function() {
     var e;
     let t = null === a() || true === a() || null == (e = a().os) ? true : e.toString();
     if (null == t || null == c.A) return null;

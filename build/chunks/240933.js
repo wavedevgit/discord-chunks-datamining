@@ -12,9 +12,9 @@ var Chunk544420 = require("./544420.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(e, t, n, c, d) {
-  if (a.A.isNotificationDisabled(o.KS.ActivityInvite) || null == t.activity || null == c.id) return null;
+  if (a.A.isNotificationDisabled(o.KS.ActivityInvite) || null == t.activity) return null;
   let h = t.activity.type,
-    p = d.session_id;
+    p = c.session_id;
   if (null == p) return null;
   let {
     icon: f,
@@ -32,7 +32,7 @@ function c(e, t, n, c, d) {
     channel_id: e.id,
     channel_type: e.type,
     activity_type: h,
-    activity_name: d.name
+    activity_name: c.name
   });
   return {
     icon: f,
@@ -43,11 +43,10 @@ function c(e, t, n, c, d) {
     },
     confirmText: u.intl.string(u.t.VJlc0S),
     onConfirmClick: (l, a) => {
-      var s;
       i.A.join({
         userId: n.id,
         sessionId: p,
-        applicationId: null != (s = c.altId) ? s : c.id,
+        applicationId: d,
         channelId: e.id,
         messageId: t.id
       }), r.A.updateNotificationStatus(a), A("join")
