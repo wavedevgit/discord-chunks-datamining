@@ -21,12 +21,12 @@ function b(e, t) {
     let l = u.A.can(d.xBc.SEND_MESSAGES, r),
       b = a.Ay.getMember(r.guild_id, e),
       f = i().keyBy(c.A.getManyRoles(r.guild_id, null != (n = null == b ? true : b.roles) ? n : []), "id"),
-      h = s.$3({
+      p = s.$3({
         permission: d.xBc.STREAM,
         user: e,
         context: r,
         roles: f
       });
-    return l && h
+    return l && p
   })
 }

@@ -105,16 +105,16 @@ function R(e) {
 
 function D(e) {
   let t, i, h, v, D, M, {
-      channel: L
+      channel: k
     } = e,
-    k = (0, o.bG)([_.A], () => null != L ? _.A.getGuild(L.getGuildId()) : null, [L]),
-    U = null != k && S.default.extractTimestamp(k.id) < Date.now() - j.NOr,
-    G = (0, o.bG)([b.default], () => (null == k ? true : k.ownerId) === b.default.getId(), [k]),
+    L = (0, o.bG)([_.A], () => null != k ? _.A.getGuild(k.getGuildId()) : null, [k]),
+    U = null != L && S.default.extractTimestamp(L.id) < Date.now() - j.NOr,
+    G = (0, o.bG)([b.default], () => (null == L ? true : L.ownerId) === b.default.getId(), [L]),
     {
       canInvite: F,
       canManageGuild: H,
       canMessage: B
-    } = (0, f.Sk)(L, k),
+    } = (0, f.Sk)(k, L),
     V = (0, o.bG)([y.default], () => {
       var e, t;
       return (null == (e = y.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = y.default.getCurrentUser()) ? true : t.mobile) === true
@@ -123,7 +123,7 @@ function D(e) {
       guildPopulated: K,
       guildMessaged: W,
       guildPersonalized: z
-    } = (0, f.lF)(k),
+    } = (0, f.lF)(L),
     {
       handleInvite: Y,
       handleMessage: q,
@@ -134,19 +134,19 @@ function D(e) {
       p.Ay.trackWithMetadata(j.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.INVITE
-      }), null != k && (0, u.mMO)(async () => {
+      }), null != L && (0, u.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("92779")]).then(n.bind(n, 234355));
         return t => (0, l.jsx)(e, w(P({}, t), {
-          guild: k,
+          guild: L,
           source: j.PE1.CHANNEL_WELCOME,
           analyticsLocation: {
             section: j.JJy.CHANNEL_WELCOME_CTA
           }
         }))
       })
-    }, [k]), i = r.useCallback(() => {
+    }, [L]), i = r.useCallback(() => {
       p.Ay.trackWithMetadata(j.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.SEND_MESSAGE
@@ -158,10 +158,10 @@ function D(e) {
       p.Ay.trackWithMetadata(j.HAw.SERVER_SETUP_CTA_CLICKED, {
         setup_type: I.XT.CHANNEL_WELCOME,
         action: I.AG.PERSONALIZE_SERVER
-      }), null != k && m.A.open(k.id, (0, A.x)(), {
+      }), null != L && m.A.open(L.id, (0, A.x)(), {
         section: j.JJy.CHANNEL_WELCOME_CTA
       })
-    }, [k]), {
+    }, [L]), {
       handleInvite: t,
       handleMessage: i,
       handlePersonalize: h,
@@ -179,7 +179,7 @@ function D(e) {
         })
       }, []),
       handleAddApplication: r.useCallback(() => {
-        null != k && (p.Ay.trackWithMetadata(j.HAw.SERVER_SETUP_CTA_CLICKED, {
+        null != L && (p.Ay.trackWithMetadata(j.HAw.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.XT.CHANNEL_WELCOME,
           action: I.AG.ADD_APP
         }), (0, u.mMO)(async () => {
@@ -189,13 +189,13 @@ function D(e) {
           return t => {
             var n;
             return (0, l.jsx)(e, w(P({
-              guildId: null != (n = k.id) ? n : ""
+              guildId: null != (n = L.id) ? n : ""
             }, t), {
               analyticsType: c.M.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
             }))
           }
         }))
-      }, [k])
+      }, [L])
     }),
     Q = !(V || K || W || z),
     {
@@ -239,11 +239,11 @@ function D(e) {
       (async () => {
         try {
           var e;
-          let t = await (0, g.c)(null != (e = null == k ? true : k.id) ? e : j.dJq);
+          let t = await (0, g.c)(null != (e = null == L ? true : L.id) ? e : j.dJq);
           en(t.map(e => e.id))
         } catch (e) {}
       })()
-    }, [null == k ? true : k.id]), null == k) return null;
+    }, [null == L ? true : L.id]), null == L) return null;
   let er = [];
   U || (F && er.push((0, l.jsx)(s.A.div, {
     className: N.cW,
@@ -305,7 +305,7 @@ function D(e) {
   U && (ei = T.intl.string(T.t["gwyU/J"]));
   let ea = "".concat(O.A.getArticleURL(j.MVz.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, l.jsx)(x.Ay, {
-    channelId: L.id,
+    channelId: k.id,
     children: (0, l.jsx)("div", {
       className: N.kL,
       children: (0, l.jsxs)("div", {
@@ -316,7 +316,7 @@ function D(e) {
             className: N.ud,
             variant: "heading-xxl/medium",
             children: T.intl.format(T.t.rkHVKf, {
-              guildName: k.name
+              guildName: L.name
             })
           }), (0, l.jsxs)(u.Text, {
             color: "text-default",

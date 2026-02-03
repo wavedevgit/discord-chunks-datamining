@@ -13,8 +13,8 @@ function c(e, n) {
   let t = (0, i.Lc)({
       location: n
     }),
-    c = (0, a.L)(),
-    o = (0, s.Y)(e),
+    c = (0, s.L)(),
+    o = (0, a.Y)(e),
     d = (0, r.F)(e, l._j.INAPPROPRIATE_CONVERSATION_TIER_2);
   if (t && c && 0 !== o.length && !o.some(e => e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return d
 }

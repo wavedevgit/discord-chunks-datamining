@@ -54,7 +54,7 @@ function B(e) {
   return a ? (0, l.jsx)(u.Button, {
     size: "sm",
     variant: "secondary",
-    text: i ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
+    text: i ? L.intl.string(U.default["2Y4vkk"]) : L.intl.string(U.default.YIbR4r),
     onClick: () => {
       true === o.w.get(x.f) ? d() : (0, u.mMO)(async () => {
         let {
@@ -122,7 +122,7 @@ function V(e) {
       (0, M.jC)({
         postId: Y.id,
         location: {
-          section: L.JJy.CHANNEL_HEADER
+          section: k.JJy.CHANNEL_HEADER
         }
       }), (0, w.C)((0, P.af)(Y, et), () => z(true))
     },
@@ -180,40 +180,40 @@ function V(e) {
             [G.w$]: !es
           }),
           isForumToolbar: true,
-          children: !es && k.intl.string(k.t.xpOyTO)
+          children: !es && L.intl.string(L.t.xpOyTO)
         })]
       }), (0, l.jsxs)("div", {
         className: G.Uo,
         children: [ee ? (0, l.jsx)(B, {
           channel: Y
         }) : !Q && (0, l.jsx)(c.m, {
-          text: k.intl.string(k.t.F7oeDv),
+          text: L.intl.string(L.t.F7oeDv),
           children: (0, l.jsx)(u.Button, {
             icon: ec,
             size: "sm",
             variant: "secondary",
-            text: J ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
+            text: J ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+h"]),
             onClick: () => {
               J ? T.A.leaveThread(Y, "Forum Toolbar") : T.A.joinThread(Y, "Forum Toolbar")
             }
           })
         }), (0, l.jsx)(c.m, {
-          text: k.intl.string(k.t.WqhZss),
+          text: L.intl.string(L.t.WqhZss),
           children: W ? (0, l.jsx)(u.Button, {
             icon: u.A9s,
             size: "sm",
             variant: "secondary",
             onClick: eo,
-            text: k.intl.string(k.t.t5VZ88)
+            text: L.intl.string(L.t.t5VZ88)
           }) : (0, l.jsx)(u.K0, {
             icon: u.qYV,
             size: "sm",
             variant: "secondary",
             onClick: eo,
-            "aria-label": k.intl.string(k.t.WqhZss)
+            "aria-label": L.intl.string(L.t.WqhZss)
           })
         }), !n && (0, l.jsx)(c.m, {
-          text: k.intl.string(k.t.nFP4oa),
+          text: L.intl.string(L.t.nFP4oa),
           children: (0, l.jsx)(u.K0, {
             icon: u.Dl6,
             size: "sm",
@@ -226,7 +226,7 @@ function V(e) {
                 jumpType: h.US.INSTANT
               })
             },
-            "aria-label": k.intl.string(k.t.nFP4oa)
+            "aria-label": L.intl.string(L.t.nFP4oa)
           })
         })]
       })]

@@ -113,20 +113,20 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
         fontSize: w,
         keyboardModeEnabled: D,
         filterAfterTimestamp: M,
-        showingQuarantineBanner: k,
+        showingQuarantineBanner: L,
         hideSummaries: q = false,
         jumpBarClassName: J,
         typingGradient: Z
       } = e,
       [X, Q] = r.useState(null != (t = S.A.isAtBottom(y.id)) && t),
-      $ = r.useMemo(() => x ? (0, L.bW)({
+      $ = r.useMemo(() => x ? (0, k.bW)({
         compact: true,
         messageGroups: 30,
         groupRange: 4,
         attachments: 8,
         fontSize: w,
         groupSpacing: A
-      }) : (0, L.bW)({
+      }) : (0, k.bW)({
         compact: false,
         messageGroups: 26,
         groupRange: 4,
@@ -171,7 +171,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
         scrollManager: ee,
         specs: $,
         filterAfterTimestamp: null != M ? M : en,
-        showingQuarantineBanner: k,
+        showingQuarantineBanner: L,
         hideSummaries: q,
         jumpToPresent: () => {
           if (v.hasPresent()) {
@@ -254,7 +254,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
               children: B.intl.string(B.t["Spb3s/"])
             }), el, (0, l.jsx)("div", {
               className: a()({
-                [V.lB]: !k,
+                [V.lB]: !L,
                 [V.Ie]: 0 === v.length && !v.loadingMore,
                 [V.Fb]: 1 === v.length && !v.loadingMore && y.isForumPost() && (null == (n = v.first()) ? true : n.isFirstMessageInForumPost(y))
               })
@@ -297,7 +297,7 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
       messageGroupSpacing: O,
       fontSize: S,
       messageDisplayCompact: R,
-      renderSpoilers: L,
+      renderSpoilers: k,
       keyboardModeEnabled: U
     } = function() {
       let e = E.hH.useSetting(),
@@ -378,8 +378,8 @@ let Y = (0, Chunk353709.animated)(Chunk397927.fKU),
       }
     }(t);
     return (0, l.jsx)(y.Bs.Provider, {
-      value: (0, D.A)(L, d),
-      children: (0, l.jsx)(k.t, {
+      value: (0, D.A)(k, d),
+      children: (0, l.jsx)(L.t, {
         children: (0, l.jsx)(q, W(K({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,

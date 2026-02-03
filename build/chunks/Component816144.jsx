@@ -94,7 +94,7 @@ function H(e) {
       (null == y ? true : y.bot) && B === _.FetchState.NOT_FETCHED && o.A.fetch()
     }, [null == y ? true : y.bot, B]), n.isSystemDM()) return (0, l.jsx)(N.A, {
     channel: n,
-    children: k.intl.string(k.t.Rzvnig)
+    children: L.intl.string(L.t.Rzvnig)
   });
   if (b === M.rbe.DM) {
     let e;
@@ -126,7 +126,7 @@ function H(e) {
         variant: "heading-xl/medium",
         className: G.SX,
         children: x
-      }), k.intl.format(k.t["Qvg+6+"], {
+      }), L.intl.format(L.t["Qvg+6+"], {
         username: p
       }), (null == y ? true : y.isProvisional) && (0, l.jsx)(m.Y, {
         userId: y.id
@@ -137,19 +137,19 @@ function H(e) {
     if (n.isManaged()) return (0, l.jsxs)(S.Ay, {
       channelId: n.id,
       children: [(0, l.jsx)(S.cr, {
-        children: k.intl.format(k.t.I3R7Vn, {
+        children: L.intl.format(L.t.I3R7Vn, {
           channelName: p
         })
       }), (0, l.jsx)(S.j1, {
-        children: k.intl.string(k.t.M8Ao6I)
+        children: L.intl.string(L.t.M8Ao6I)
       })]
     });
-    else if (n.hasFlag(L.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, l.jsx)(j.A, {
+    else if (n.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, l.jsx)(j.A, {
     channel: n
   });
   else return (0, l.jsx)(N.A, {
     channel: n,
-    children: k.intl.format(k.t.MFwcqO, {
+    children: L.intl.format(L.t.MFwcqO, {
       name: p
     })
   });
@@ -159,7 +159,7 @@ function H(e) {
   }) : (0, l.jsx)(S.Ay, {
     channelId: n.id,
     children: (0, l.jsx)(S.j1, {
-      children: k.intl.format(k.t.hPVEQG, {
+      children: L.intl.format(L.t.hPVEQG, {
         channelName: p
       })
     })

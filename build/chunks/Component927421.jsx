@@ -70,14 +70,14 @@ function E(e) {
   }, {
     disableTrack: !S
   });
-  let L = r.useCallback(e => {
+  let k = r.useCallback(e => {
       N.current = e, w(null == e ? true : e.soundId)
     }, []),
-    k = r.useCallback(e => {
-      if (null == e) return void L(null);
+    L = r.useCallback(e => {
+      if (null == e) return void k(null);
       let t = I[e];
-      null != t && L(t)
-    }, [L, I]),
+      null != t && k(t)
+    }, [k, I]),
     U = r.useCallback(e => {
       if (null == e) return;
       let t = I[e];
@@ -99,7 +99,7 @@ function E(e) {
       itemHeight: 52,
       showDeadZoneIndicator: !C,
       activeItem: P,
-      onItemSelect: k,
+      onItemSelect: L,
       onItemAction: U,
       onClose: j,
       interactive: S,

@@ -1,8 +1,8 @@
 /** Chunk was on 61344 **/
 /** chunk id: 83982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => k,
-  s: () => L
+  A: () => L,
+  s: () => k
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
 let D = Chunk397927._3J.SIZE_80,
   M = Chunk397927._3J.SIZE_40;
 
-function L(e) {
+function k(e) {
   let {
     channelId: t,
     participant: n
@@ -57,7 +57,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     participant: t,
     channel: n,
@@ -66,8 +66,8 @@ function k(e) {
     selected: c,
     popoutType: v,
     fit: T,
-    onVideoResize: L,
-    blocked: k,
+    onVideoResize: k,
+    blocked: L,
     ignored: U,
     noVideoRender: G = false,
     pulseSpeakingIndicator: F = false,
@@ -104,7 +104,7 @@ function k(e) {
     width: o,
     selected: c
   }) : (0, l.jsx)(b.A, {
-    onResize: L,
+    onResize: k,
     wrapperClassName: v !== f.N.CALL_TILE ? R.tN : true,
     className: R.Qs,
     mirror: Y,
@@ -116,7 +116,7 @@ function k(e) {
     userId: K.id
   }, W) : (0, l.jsx)("div", {
     className: a()(R.Qs, {
-      [R.Kx]: k || U
+      [R.Kx]: L || U
     }),
     children: (0, l.jsx)(A.A, {
       "aria-label": $,

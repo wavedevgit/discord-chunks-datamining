@@ -85,10 +85,10 @@ function C(e) {
     roles: R,
     members: D,
     getRichTag: M
-  } = (0, g.K)(a, d, d.accessPermissions, C), L = m.A.useSections({
+  } = (0, g.K)(a, d, d.accessPermissions, C), k = m.A.useSections({
     roles: R,
     members: D
-  }), k = p && 0 === Object.keys(x).length;
+  }), L = p && 0 === Object.keys(x).length;
   async function U() {
     if (null == d || 0 === Object.keys(x).length) return void h();
     T(true);
@@ -153,9 +153,9 @@ function C(e) {
         renderSection: m.A.renderSection,
         rowHeight: m.A.ROW_HEIGHT,
         renderRow: m.A.renderRow,
-        sections: L
+        sections: k
       },
-      actions: k ? [{
+      actions: L ? [{
         variant: "secondary",
         text: _.intl.string(_.t.u46sxe),
         onClick: h

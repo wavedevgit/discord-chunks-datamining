@@ -329,7 +329,7 @@ class ed extends(l = Chunk64700.PureComponent) {
         e.preventDefault(), e.stopPropagation(), s ? (--u < 0 && (d - 1 < 0 ? d = false !== o[t.length - 1] ? t.length - 1 : d : false !== o[d - 1] && (d -= 1), u = t[d].length - 1), this.handleSelectionChange(d, u)) : (--u < 0 && (u = i.length - 1), this.handleSelectionChange(0, u));
         break;
       case et.dh.ENTER:
-        e.preventDefault(), e.stopPropagation(), d === k.A.FRIENDS && i.length > u && this.handleSelect(0, u)
+        e.preventDefault(), e.stopPropagation(), d === L.A.FRIENDS && i.length > u && this.handleSelect(0, u)
     }
   }
   renderSearchBar() {
@@ -415,7 +415,7 @@ class ed extends(l = Chunk64700.PureComponent) {
     if (l) {
       var s, o, c;
       return ei({
-        sections: "" === e ? [null == (s = i[k.A.FRIENDS]) ? true : s.length] : [null == (o = i[k.A.FRIENDS]) ? true : o.length, null == (c = i[k.A.GUILD_MEMBERS]) ? true : c.length],
+        sections: "" === e ? [null == (s = i[L.A.FRIENDS]) ? true : s.length] : [null == (o = i[L.A.FRIENDS]) ? true : o.length, null == (c = i[L.A.GUILD_MEMBERS]) ? true : c.length],
         rowHeight: this.getImprovedDMRowHeight,
         renderSection: this.renderImprovedDMSection,
         sectionHeight: e => 0 === e ? 24 : 36
@@ -622,7 +622,7 @@ class ed extends(l = Chunk64700.PureComponent) {
       let {
         user: b,
         comparator: _
-      } = A, y = c.has(b.id), v = n === k.A.FRIENDS && !y && 0 >= this.getRemaining();
+      } = A, y = c.has(b.id), v = n === L.A.FRIENDS && !y && 0 >= this.getRemaining();
       return (0, r.jsx)($.A, {
         section: n,
         row: l,
@@ -651,10 +651,10 @@ class ed extends(l = Chunk64700.PureComponent) {
       } = this.state;
       return (0, r.jsx)(ey, {
         section: n,
-        heading: n === k.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs),
+        heading: n === L.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs),
         onToggleVisibility: this.handleToggleSectionVisibility,
         isOpen: null == (t = l[n]) || t
-      }, n === k.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs))
+      }, n === L.A.FRIENDS ? en.intl.string(en.t.TdEu5X) : en.intl.string(en.t.y29JXs))
     }), er(this, "handleToggleSectionVisibility", e => {
       var t;
       let {
@@ -897,14 +897,14 @@ function ep(e) {
   let {
     channel: t,
     onComplete: n
-  } = e, l = es(e, ["channel", "onComplete"]), i = (0, u.cf)([k.h, L.A, H.A], () => {
+  } = e, l = es(e, ["channel", "onComplete"]), i = (0, u.cf)([L.h, k.A, H.A], () => {
     let e;
-    return null != t && null != (e = L.A.getInvite(t.id)) && e.isExpired() && (e = null), ea(ei({}, k.h.getState()), {
+    return null != t && null != (e = k.A.getInvite(t.id)) && e.isExpired() && (e = null), ea(ei({}, L.h.getState()), {
       invite: e,
       hideDiscriminator: H.A.hidePersonalInformation,
       hideInstantInvites: H.A.hideInstantInvites
     })
-  }), a = (0, u.yK)([k.h], () => k.h.getSections()), {
+  }), a = (0, u.yK)([L.h], () => L.h.getSections()), {
     enabled: s,
     showFriendButton: o
   } = Z.A.useConfig({

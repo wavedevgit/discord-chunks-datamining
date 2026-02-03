@@ -253,7 +253,7 @@ class e2 extends Chunk64700.PureComponent {
       announcementComposerEnabled: g
     } = this.props, {
       contentWarningProps: A
-    } = this.state, b = e.type === eW.rbe.GUILD_ANNOUNCEMENT && g ? (0, l.jsx)(L.A, {
+    } = this.state, b = e.type === eW.rbe.GUILD_ANNOUNCEMENT && g ? (0, l.jsx)(k.A, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -272,7 +272,7 @@ class e2 extends Chunk64700.PureComponent {
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: eL.R,
+      promptToUpload: ek.R,
       highlighted: a,
       setEditorRef: e => this.editorRef = e
     }) : (0, l.jsx)(G.Ay, {
@@ -294,7 +294,7 @@ class e2 extends Chunk64700.PureComponent {
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: eL.R,
+      promptToUpload: ek.R,
       highlighted: a,
       setEditorRef: e => this.editorRef = e,
       pendingScheduledMessage: m
@@ -538,8 +538,8 @@ class e2 extends Chunk64700.PureComponent {
           shouldRefocus: true
         };
         if (null != n && n.length > 0) {
-          let e = (0, ek.LJ)(n);
-          if ((0, ek.fJ)(e, null == c ? true : c.id)) return (0, eL.V)(u, e), {
+          let e = (0, eL.LJ)(n);
+          if ((0, eL.fJ)(e, null == c ? true : c.id)) return (0, ek.V)(u, e), {
             shouldClear: false,
             shouldRefocus: false
           };
@@ -602,7 +602,7 @@ class e2 extends Chunk64700.PureComponent {
       editorTextContent: this.state.textValue,
       setValue: this.handleSetValue,
       canOnlyUseTextCommands: e
-    })), eJ(this, "renderApplicationCommandIcon", (e, t, n) => (0, l.jsx)(k.A, {
+    })), eJ(this, "renderApplicationCommandIcon", (e, t, n) => (0, l.jsx)(L.A, {
       className: n,
       command: e,
       section: t,

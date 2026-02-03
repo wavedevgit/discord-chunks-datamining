@@ -2,7 +2,7 @@
 /** chunk id: 804980, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => U,
-  LN: () => L
+  LN: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk677406 = require("./677406.js");
 let M = ["embedded_background"];
 
-function L(e) {
+function k(e) {
   let {
     avatarSize: t,
     guildId: n,
@@ -65,7 +65,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   var t, n;
   let {
     participants: i,
@@ -81,19 +81,19 @@ function k(e) {
     userId: null == (n = N.default.getCurrentUser()) ? true : n.id,
     channelId: f.id,
     application: o
-  }) === m.Gy.CAN_JOIN, j = null != (t = f.getGuildId()) ? t : true, T = r.useId(), M = o.id, k = r.useMemo(() => ({
+  }) === m.Gy.CAN_JOIN, j = null != (t = f.getGuildId()) ? t : true, T = r.useId(), M = o.id, L = r.useMemo(() => ({
     channel: f,
     type: "channel"
   }), [f]), {
     submitting: U
   } = (0, S.A)({
     applicationId: M,
-    context: k,
+    context: L,
     launchingComponentId: T
   });
   return (0, l.jsxs)("div", {
     className: D.Yi,
-    children: [(0, l.jsx)(L, {
+    children: [(0, l.jsx)(k, {
       avatarSize: b,
       guildId: j,
       channelId: f.id,
@@ -175,7 +175,7 @@ function U(e) {
         className: D.j0,
         alt: p.name,
         src: m
-      }) : null, I && null != p && (0, l.jsx)(k, {
+      }) : null, I && null != p && (0, l.jsx)(L, {
         width: n,
         channel: o,
         participants: t.participants,

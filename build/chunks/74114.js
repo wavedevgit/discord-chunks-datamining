@@ -13,12 +13,12 @@ var Chunk311907 = require("./311907.js"),
   Chunk168447 = require("./168447.js");
 
 function u(e) {
-  let n = (0, l.bG)([s.default], () => s.default.getCurrentUser()),
+  let n = (0, l.bG)([a.default], () => a.default.getCurrentUser()),
     t = (0, i.z)(e),
     u = (0, r.O)(e),
-    p = (0, c.F)(e, a._j.STRANGER_DANGER),
+    p = (0, c.F)(e, s._j.STRANGER_DANGER),
     m = (0, o.Z)(),
-    f = (null == n ? true : n.isStaff()) !== true,
-    h = (0, d.Y)(e).length > 0;
-  if (!(!m && f) && !t && !u && !h) return p
+    h = (null == n ? true : n.isStaff()) !== true,
+    f = (0, d.Y)(e).length > 0;
+  if (!(!m && h) && !t && !u && !f) return p
 }

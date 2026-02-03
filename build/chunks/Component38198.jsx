@@ -41,9 +41,9 @@ function j(e) {
     openClips: D
   } = e, {
     analyticsLocations: M
-  } = (0, c.Ay)(), L = (0, d.s)({
+  } = (0, c.Ay)(), k = (0, d.s)({
     channel: t
-  }), k = (0, i.bG)([p.A], () => p.A.isInProgress());
+  }), L = (0, i.bG)([p.A], () => p.A.isInProgress());
 
   function U() {
     (0, f.Tv)(t, true, "Plus Button")
@@ -266,7 +266,7 @@ function j(e) {
             action: () => (0, d.e0)({
               channel: t
             }),
-            children: L
+            children: k
           }, "scheduled_message");
         case y.v.SUMMARIZE_THREAD:
           return (0, l.jsx)(s.Drp, {
@@ -278,9 +278,9 @@ function j(e) {
               icon: e.icon
             },
             action: () => h.A.summarizeThread(t),
-            loading: k,
-            disabled: k,
-            children: k ? null : (0, l.jsxs)(l.Fragment, {
+            loading: L,
+            disabled: L,
+            children: L ? null : (0, l.jsxs)(l.Fragment, {
               children: [(0, l.jsx)(s.Drp, {
                 id: "summarize_thread_for_everyone",
                 label: C.intl.string(C.t.eCzSdd),

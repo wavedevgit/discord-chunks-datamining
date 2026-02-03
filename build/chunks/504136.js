@@ -57,6 +57,7 @@ function d(e) {
     _ = _ || T;
     let N = function(e, t, n) {
       if (l.M.NON_COLLAPSIBLE.has(t.type));
+      else if (t.hasFlag(u.pr7.HIDDEN_SUSPENDED_USER)) return u.TZK.MESSAGE_GROUP_SUSPENDED_USER;
       else if (t.blocked) return u.TZK.MESSAGE_GROUP_BLOCKED;
       else if (t.ignored) return u.TZK.MESSAGE_GROUP_IGNORED;
       else if ((0, o.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
@@ -93,9 +94,9 @@ function d(e) {
     let {
       jumpSequenceId: D,
       jumpFlash: M,
-      jumpTargetId: L
+      jumpTargetId: k
     } = p;
-    M && e.id === L && null != D && (R.flashKey = D), p.jumpTargetId === e.id && (R.jumpTarget = true), null != A && e.id === A.startId && A.count > 1 && b.push({
+    M && e.id === k && null != D && (R.flashKey = D), p.jumpTargetId === e.id && (R.jumpTarget = true), null != A && e.id === A.startId && A.count > 1 && b.push({
       type: u.TZK.DIVIDER,
       content: A.topic,
       contentKey: A.startId,

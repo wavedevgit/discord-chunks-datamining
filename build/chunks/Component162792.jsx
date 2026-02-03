@@ -69,7 +69,7 @@ let S = Chunk64700.memo(function(e) {
     showReplySpine: w
   } = e, R = S.state === p.a.LOADED ? S.message : true, D = (0, A.X4)(R), M = o.m.useExperiment({
     location: "repliedMessage"
-  }).enabled, L = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = r.useMemo(() => {
+  }).enabled, k = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = r.useMemo(() => {
     if (null == R) return null;
     let e = (0, s.A)(R);
     if (e.type === v.lAJ.USER_JOIN) return (0, a.$)(E.intl.formatToParts(m.A.getSystemMessageUserJoin(e.id), {
@@ -106,14 +106,14 @@ let S = Chunk64700.memo(function(e) {
           allowGameMentions: M
         }) : C(O({}, t), {
           formatInline: true,
-          allowHeading: L,
-          allowList: L,
+          allowHeading: k,
+          allowList: k,
           allowGameMentions: M
         });
       return (0, g.Ay)(e, n).content
     }
     return null
-  }, [R, D, x, L, M]), {
+  }, [R, D, x, k, M]), {
     isReplyAuthorBlocked: U,
     isReplyAuthorIgnored: G
   } = (0, i.cf)([f.A], () => ({
@@ -131,7 +131,7 @@ let S = Chunk64700.memo(function(e) {
     channel: x,
     baseAuthor: W,
     referencedMessage: S,
-    content: k,
+    content: L,
     compact: j,
     isReplyAuthorBlocked: U,
     isReplyAuthorIgnored: G,

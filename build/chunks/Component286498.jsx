@@ -145,8 +145,8 @@ function I(e) {
       handleTrackAction: D,
       showFriendButton: M = false
     } = e,
-    L = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
-    k = (0, s.rm)(String(n.id));
+    k = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
+    L = (0, s.rm)(String(n.id));
   return t = R ? (0, l.jsx)(u.P7L, {
     checked: A,
     disabled: y
@@ -175,7 +175,7 @@ function I(e) {
     onMouseEnter: () => {
       null != I && I(r, i)
     }
-  }, k), {
+  }, L), {
     role: "option",
     "aria-selected": A,
     "aria-disabled": y,
@@ -188,7 +188,7 @@ function I(e) {
       }),
       children: [(0, l.jsx)(p.A, {
         user: n,
-        status: L,
+        status: k,
         className: C.my
       }), (0, l.jsxs)("div", {
         className: C.YW,

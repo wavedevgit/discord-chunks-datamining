@@ -199,7 +199,7 @@ function K(e) {
             children: (0, l.jsx)(b.d, {
               showUpsell: true,
               text: F.intl.format(F.t.XMDm8z, {
-                nitroTierName: (0, C.Dd)(k.PremiumTypes.TIER_2),
+                nitroTierName: (0, C.Dd)(L.PremiumTypes.TIER_2),
                 onClick: () => (0, _.n)()
               }),
               button: F.intl.string(F.t.cRCCJ3),
@@ -241,7 +241,7 @@ function K(e) {
             renderOutputVolume: i,
             onClose: t,
             onInteraction: (0, m.s)("AudioDeviceMenu", q, {
-              entrypoint: L.GK.THREE_DOT
+              entrypoint: k.GK.THREE_DOT
             }),
             minimal: true
           }),

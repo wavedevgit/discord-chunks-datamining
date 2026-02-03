@@ -184,12 +184,12 @@ function ee(e) {
     groupId: O,
     viewingChannelId: S
   } = e, I = s.type === W.lAJ.REPLY ? s.messageReference : true, M = (0, c.rm)(null != (t = e.id) ? t : ""), {
-    onFocus: k
+    onFocus: L
   } = M, U = X(M, ["onFocus"]), {
     isFocused: H,
     handleFocus: q,
     handleBlur: Q
-  } = (0, P.G8)(k), {
+  } = (0, P.G8)(L), {
     popouts: $,
     selected: ee,
     setPopout: et
@@ -259,7 +259,7 @@ function ee(e) {
         repliedMessage: er,
         roleIcon: eE
       }),
-      childrenAccessories: (0, L.A)({
+      childrenAccessories: (0, k.A)({
         channelMessageProps: e,
         hasSpoilerEmbeds: ef,
         hasBailedAst: em,
@@ -347,8 +347,8 @@ let et = Chunk64700.memo(function(e) {
     eD = (0, u.bG)([v.A], () => v.A.isDeveloper),
     {
       content: eM,
-      hasSpoilerEmbeds: eL,
-      hasBailedAst: ek
+      hasSpoilerEmbeds: ek,
+      hasBailedAst: eL
     } = (0, D.A)(S, {
       hideSimpleEmbedContent: ec && eu,
       isInteracting: eN,
@@ -378,7 +378,7 @@ let et = Chunk64700.memo(function(e) {
     }),
     eY = r.useRef(window),
     eq = null != eW;
-  s = S.type === W.lAJ.CUSTOM_GIFT ? "" : !ej && eq ? (0, k.A)(e, eM) : (0, F.A)(e, eM, ej);
+  s = S.type === W.lAJ.CUSTOM_GIFT ? "" : !ej && eq ? (0, L.A)(e, eM) : (0, F.A)(e, eM, ej);
   let eJ = S.id === el,
     eZ = (0, l.jsx)(d.vN3, {
       offset: {
@@ -433,10 +433,10 @@ let et = Chunk64700.memo(function(e) {
             repliedMessage: ed,
             roleIcon: eB
           }),
-          childrenAccessories: (0, L.A)({
+          childrenAccessories: (0, k.A)({
             channelMessageProps: e,
-            hasSpoilerEmbeds: eL,
-            hasBailedAst: ek,
+            hasSpoilerEmbeds: ek,
+            hasBailedAst: eL,
             handleContextMenu: em,
             isInteracting: eN,
             isAutomodBlockedMessage: eq,

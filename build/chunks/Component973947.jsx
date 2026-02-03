@@ -64,15 +64,15 @@ let x = e => {
       autoTrackExposure: true,
       disable: !f.Ay.canCheckVoiceFilterFilesExist()
     }),
-    L = (0, s.bG)([b.A], () => b.A.isVoiceFilterDownloaded(t.id), [t]),
-    k = null == I ? true : I.previewSoundURLs,
+    k = (0, s.bG)([b.A], () => b.A.isVoiceFilterDownloaded(t.id), [t]),
+    L = null == I ? true : I.previewSoundURLs,
     [U, G] = r.useState(0),
     {
       isPlaying: F,
       playSound: H,
       stopSound: B,
       preloadSound: V
-    } = (0, h.A)(null != k ? k[U] : null, {
+    } = (0, h.A)(null != L ? L[U] : null, {
       soundId: t.id
     }),
     K = C[t.styleKey],
@@ -87,8 +87,8 @@ let x = e => {
       }, (0, g.A)(i))), H({
         volume: .5,
         outputChannel: E.a.VOICE
-      }), (.25 > Math.random() || U > 0) && null != k && G(e => (e + 1) % k.length)
-    }, [i, H, U, k, t.id]),
+      }), (.25 > Math.random() || U > 0) && null != L && G(e => (e + 1) % L.length)
+    }, [i, H, U, L, t.id]),
     Y = null != I ? O.intl.string(I.name) : "";
   return (0, l.jsxs)("div", {
     className: a()(C.filter, K, {
@@ -97,7 +97,7 @@ let x = e => {
     }),
     children: [(0, l.jsx)(c.m, {
       asContainer: true,
-      shouldShow: M && !L,
+      shouldShow: M && !k,
       "aria-label": O.intl.string(O.t.SQ7qMG),
       __unsupportedReactNodeAsText: (0, l.jsxs)("div", {
         className: C.downloadRequiredContent,
@@ -174,12 +174,12 @@ let x = e => {
             variant: "text-xs/medium",
             color: t.underDevelopment ? "text-muted" : "text-strong",
             children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", Y]
-          }), M && !L ? (0, l.jsx)(u.s3U, {
+          }), M && !k ? (0, l.jsx)(u.s3U, {
             size: "xxs"
           }) : null]
         })]
       })
-    }), null != k && (0, l.jsx)(c.m, {
+    }), null != L && (0, l.jsx)(c.m, {
       asContainer: true,
       text: O.intl.string(F ? O.t.ItuPbp : O.t["0gtbE8"]),
       children: (0, l.jsx)(u.DUT, {

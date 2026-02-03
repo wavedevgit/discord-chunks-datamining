@@ -112,11 +112,11 @@ let m = Chunk64700.memo(function(e) {
     null == S.current[I] ? S.current[I] = [] : S.current[I][t] = e
   }, [I]), M = r.useCallback((e, t) => {
     j.current = t, _(p * e + t)
-  }, [_]), L = r.useCallback(() => {
+  }, [_]), k = r.useCallback(() => {
     j.current = null, _(null)
-  }, [_]), k = r.useCallback(e => {
-    L(), x.current = e
-  }, [L]), U = r.useCallback((e, t, n) => {
+  }, [_]), L = r.useCallback(e => {
+    k(), x.current = e
+  }, [k]), U = r.useCallback((e, t, n) => {
     let l, r, i;
     if (x.current) return void P({
       x: 0,
@@ -150,7 +150,7 @@ let m = Chunk64700.memo(function(e) {
         y: e.clientY
       };
     if (U(i, r, Math.max(t, n)), x.current) {
-      null != b && L();
+      null != b && k();
       return
     }
     let a = (0, o.wf)(r, i, Math.max(t, n));
@@ -160,12 +160,12 @@ let m = Chunk64700.memo(function(e) {
       let n = t.getBoundingClientRect();
       if ((0, o.lw)(r, a, n)) return void M(I, e)
     }
-    L()
-  }, 16), [b, U, L, M, I, n, t]), H = r.useCallback(e => {
+    k()
+  }, 16), [b, U, k, M, I, n, t]), H = r.useCallback(e => {
     if (!v) return;
     let t = I + (e.deltaY > 0 ? 1 : false);
-    t >= 0 && t < R.length && (null != j.current && (R[t].length > j.current ? M(t, j.current) : L()), T(t))
-  }, [v, I, R, M, L]), B = r.useMemo(() => R[I].map((e, r) => {
+    t >= 0 && t < R.length && (null != j.current && (R[t].length > j.current ? M(t, j.current) : k()), T(t))
+  }, [v, I, R, M, k]), B = r.useMemo(() => R[I].map((e, r) => {
     let i = h[r];
     if (null == i) throw Error("Too many items supplied ".concat(O.length, " expected max of ").concat(h.length));
     let a = f(i.x, t, m),
@@ -237,8 +237,8 @@ let m = Chunk64700.memo(function(e) {
             strokeWidth: "40.32"
           }), A && (0, l.jsx)("circle", {
             className: u.u1,
-            onMouseEnter: () => k(true),
-            onMouseLeave: () => k(false),
+            onMouseEnter: () => L(true),
+            onMouseLeave: () => L(false),
             cx: 144,
             cy: 144,
             r: 28.8
@@ -250,8 +250,8 @@ let m = Chunk64700.memo(function(e) {
           })]
         }), A && (0, l.jsx)("circle", {
           className: u.u1,
-          onMouseEnter: () => k(true),
-          onMouseLeave: () => k(false),
+          onMouseEnter: () => L(true),
+          onMouseLeave: () => L(false),
           cx: 144,
           cy: 144,
           r: 28.8,

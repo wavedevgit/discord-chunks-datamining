@@ -77,7 +77,7 @@ function M() {
         user: n,
         comparator: g.Ay.getName(n)
       }), e
-    }, []).sort(k)
+    }, []).sort(L)
   }(e), true;
   let t = null != e ? e.recipients : [];
   if (null != l) {
@@ -112,13 +112,13 @@ function M() {
   returnfalse
 }
 
-function L() {
+function k() {
   if (!C) returnfalse;
   let e = T;
   return (T = y.A.getFriendCount() > 0) !== e
 }
 
-function k(e, t) {
+function L(e, t) {
   if (b.A.hasConsented(E.YAq.PERSONALIZATION)) {
     var n, l, r, i;
     let a = null != (n = null == (r = p.A.getUserAffinity(e.user.id)) ? true : r.communicationProbability) ? n : 0,
@@ -157,7 +157,7 @@ function G() {
 
 function F(e) {
   if (e.key !== E.TLS) returnfalse;
-  C = true, L(), l = G(), P = null, D("")
+  C = true, k(), l = G(), P = null, D("")
 }
 
 function H(e) {
@@ -170,7 +170,7 @@ function B() {
 }
 class V extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(A.A, b.A, d.A, _.A, y.A, p.A, v.default), this.syncWith([v.default, A.A], M), this.syncWith([y.A], L)
+    this.waitFor(A.A, b.A, d.A, _.A, y.A, p.A, v.default), this.syncWith([v.default, A.A], M), this.syncWith([y.A], k)
   }
   getResults() {
     return I
@@ -220,7 +220,7 @@ let K = new V(Chunk73153.h, {
     MODAL_PUSH: F,
     SHOW_ACTION_SHEET: F,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      C = true, L(), l = G(), P = e.channelId, D("")
+      C = true, k(), l = G(), P = e.channelId, D("")
     },
     MODAL_POP: H,
     HIDE_ACTION_SHEET: H,

@@ -9,16 +9,24 @@ let s = (0, require("./945810.js").mj)({
   kind: "user",
   defaultConfig: {
     newUIEnabled: false,
-    searchEnabled: false
+    searchEnabled: false,
+    desktopSendIconEnabled: false
   },
   variations: {
     1: {
       newUIEnabled: true,
-      searchEnabled: false
+      searchEnabled: false,
+      desktopSendIconEnabled: true
     },
     2: {
       newUIEnabled: true,
-      searchEnabled: true
+      searchEnabled: true,
+      desktopSendIconEnabled: true
+    },
+    3: {
+      newUIEnabled: true,
+      searchEnabled: true,
+      desktopSendIconEnabled: false
     }
   }
 })

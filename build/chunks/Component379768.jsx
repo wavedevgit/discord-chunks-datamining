@@ -40,7 +40,7 @@ function R(e) {
   } = e, [n, i] = r.useState(false), s = (0, m.Ay)(t, true), R = t.guild_id, D = (0, u.bG)([v.A], () => null != R ? v.A.getSortedRoles(R) : true), M = (0, u.bG)([C.default, E.A], () => {
     var e;
     return C.default.getUser(null == (e = E.A.getGuild(R)) ? true : e.ownerId)
-  }), L = r.useMemo(() => null != D ? D.filter(e => !(0, y.Oy)(e)) : [], [D]), k = r.useMemo(() => o()(L).filter(e => {
+  }), k = r.useMemo(() => null != D ? D.filter(e => !(0, y.Oy)(e)) : [], [D]), L = r.useMemo(() => o()(k).filter(e => {
     if (null == R) returnfalse;
     let n = S.aH({
       forceRoles: {
@@ -49,7 +49,7 @@ function R(e) {
       context: t
     });
     return c.X8(n, c.kg(T.xBc.ADMINISTRATOR, T.xBc.VIEW_CHANNEL))
-  }).value(), [t, R, L]), U = (0, u.yK)([C.default], () => {
+  }).value(), [t, R, k]), U = (0, u.yK)([C.default], () => {
     let e = {};
     for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.r2.MEMBER || null != e[n.id]) continue;
@@ -105,7 +105,7 @@ function R(e) {
     }) : null, (0, l.jsxs)("div", {
       className: P.ol,
       children: [function() {
-        if (1 !== U.length || k.length > 0) return (0, l.jsx)(d.A, {
+        if (1 !== U.length || L.length > 0) return (0, l.jsx)(d.A, {
           guildId: t.guild_id,
           className: P.HD,
           maxUsers: 5,
@@ -131,13 +131,13 @@ function R(e) {
             children: N.intl.string(N.t.rt0ERW)
           })]
         })
-      }(), k.map((e, n) => {
+      }(), L.map((e, n) => {
         var r, i;
         let s = null != (r = e.colorString) ? r : T.TpD,
           o = (null == (i = e.tags) ? true : i.guild_connections) !== true;
         return G ? (0, l.jsx)(I.A, {
           className: a()(P.JC, {
-            [P.HV]: n === k.length - 1
+            [P.HV]: n === L.length - 1
           }),
           roleName: e.name,
           roleColor: s,
@@ -148,7 +148,7 @@ function R(e) {
           }
         }, e.id) : (0, l.jsx)(A.A, {
           className: a()(P.JC, {
-            [P.HV]: n === k.length - 1
+            [P.HV]: n === L.length - 1
           }),
           roleName: e.name,
           roleColor: s,
