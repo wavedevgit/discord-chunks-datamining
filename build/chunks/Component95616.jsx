@@ -27,31 +27,31 @@ let O = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   var n, t;
   let {
     channel: a,
-    widgetType: u,
-    onSelect: o
-  } = e, g = (0, d.A)(a), O = (0, c.A)(a), I = (0, b.A)({
+    widgetType: o,
+    onSelect: u
+  } = e, h = (0, s.A)(a), O = (0, c.A)(a), I = (0, b.A)({
     kind: "CHANNEL",
     channel: a,
     guildId: null != (n = null == (t = a.getGuildId) ? true : t.call(a)) ? n : null
-  }, u), {
+  }, o), {
     toggleFavoriteItem: S
-  } = (0, h.$X)(y.x.MESSAGES, a, u), _ = (0, s.Ay)(a), j = (0, E.A)({
+  } = (0, g.$X)(y.x.MESSAGES, a, o), _ = (0, d.Ay)(a), M = (0, E.A)({
     id: a.id,
     label: p.intl.string(p.t.gFHI3k)
-  }), C = (0, A.A)(a), M = (0, f.Ay)(a), D = (0, v.os)("ReportToModChannelContextMenu");
+  }), C = (0, A.A)(a), j = (0, f.Ay)(a), D = (0, v.os)("ReportToModChannelContextMenu");
   return (0, r.jsxs)(i.W1t, {
     navId: "overlay-report-to-mod-channel-context",
     onClose: l.Z_,
     "aria-label": p.intl.string(N.default["zp+z/E"]),
-    onSelect: o,
+    onSelect: u,
     children: [(0, r.jsxs)(i.rXV, {
-      children: [g, I, S]
+      children: [h, I, S]
     }, "mark-as-read-or-favorite"), (0, r.jsx)(i.rXV, {
       children: O
     }, "channel-actions"), (0, r.jsxs)(i.rXV, {
-      children: [_, D ? M : C]
+      children: [_, D ? j : C]
     }, "notifications"), (0, r.jsx)(i.rXV, {
-      children: j
+      children: M
     }, "developer-actions")]
   })
 }, {

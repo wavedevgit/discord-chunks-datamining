@@ -51,8 +51,8 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     channel: r,
     channelSelected: o = false,
     showMute: a = true,
-    showMediaItems: s = false,
-    showChannelCallItems: G = false,
+    showMediaItems: d = false,
+    showChannelCallItems: X = false,
     showModalItems: B = true,
     targetIsUser: Y = false,
     context: Z,
@@ -60,39 +60,39 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onHeightUpdate: K,
     onInteraction: $,
     widgetType: z
-  } = e, q = (0, X.A)({
+  } = e, q = (0, G.A)({
     kind: "DM_USER",
     userId: t.id
-  }, z), J = (0, V.A)({
+  }, z), J = (0, F.A)({
     userId: t.id,
     guildId: null
   }), Q = (0, D.A)({
     user: t,
     context: Z
-  }), ee = (0, S.A)({
+  }), ee = (0, m.A)({
     user: t,
     channelId: r.id,
     context: Z
   }), et = (0, j.A)({
     user: t
-  }), er = (0, U.A)(t.id), en = (0, w.A)(r.id, o), ei = (0, _.A)({
+  }), er = (0, U.A)(t.id), en = (0, M.A)(r.id, o), ei = (0, _.A)({
     user: t
-  }), el = (0, d.A)(null, t), eo = (0, F.A)(t.id), ea = (0, C.g)(r.id, "OverlayDMUserContextMenu"), ec = (0, C.A)(t, ea), ed = (0, h.A)({
+  }), el = (0, c.A)(null, t), eo = (0, V.A)(t.id), ea = (0, C.g)(r.id, "OverlayDMUserContextMenu"), es = (0, C.A)(t, ea), ec = (0, h.A)({
     user: t
-  }), es = (0, I.A)({
+  }), ed = (0, I.A)({
     user: t
-  }), eu = (0, k.A)({
+  }), eu = (0, P.A)({
     user: t
-  }), eA = (0, L.A)({
+  }), eA = (0, T.A)({
     user: t
-  }), ef = (0, R.A)(t.id), ep = (0, b.u)({
+  }), ef = (0, R.A)(t.id), eb = (0, p.u)({
     userId: t.id,
     channelId: r.id,
     guildId: r.getGuildId()
-  }), eb = (0, P.A)(t.id, r.id), eg = (0, x.A)({
+  }), ep = (0, N.A)(t.id, r.id), eg = (0, S.A)({
     user: t,
     location: "OverlayDMUserContextMenu"
-  }), ey = (0, N.A)({
+  }), ey = (0, k.A)({
     user: t,
     location: "OverlayDMUserContextMenu"
   }), eO = (0, O.Ay)(r), ev = (0, v.A)({
@@ -101,17 +101,17 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   }), eE = (0, v.A)({
     id: r.id,
     label: H.intl.string(H.t.gFHI3k)
-  }), eh = (0, y.A)(r), ej = (0, f.A)(t.id), eI = (0, A.A)(r.id), eS = (0, E.A)(t), em = (0, p.A)(t.id), ex = (0, u.A)(r.id, t.id), eD = (0, m.A)({
-    commandType: c.kc.USER,
+  }), eh = (0, y.A)(r), ej = (0, f.A)(t.id), eI = (0, A.A)(r.id), em = (0, E.A)(t), ex = (0, b.A)(t.id), eS = (0, u.A)(r.id, t.id), eD = (0, x.A)({
+    commandType: s.kc.USER,
     commandTargetId: t.id,
     channel: r,
     guildId: true,
     onHeightUpdate: K
   }), {
-    toggleFavoriteItem: ew
-  } = (0, T.As)(t.id, z), eM = (0, M.A)({
+    toggleFavoriteItem: eM
+  } = (0, L.As)(t.id, z), ew = (0, w.A)({
     channel: r
-  }), eP = r.isManaged(), eN = t.isNonUserBot();
+  }), eN = r.isManaged(), ek = t.isNonUserBot();
   return (0, n.jsxs)(i.W1t, {
     navId: "overlay-user-context",
     onClose: l.Z_,
@@ -119,29 +119,29 @@ let B = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     onSelect: W,
     onInteraction: $,
     children: [(0, n.jsxs)(i.rXV, {
-      children: [!(eN && !(0, g.A)(r.id)) && eh, q, ew]
+      children: [!(ek && !(0, g.A)(r.id)) && eh, q, eM]
     }), (0, n.jsx)(i.rXV, {
-      children: !eN && eS
+      children: !ek && em
     }), (0, n.jsxs)(i.rXV, {
-      children: [!eN && (0, n.jsxs)(n.Fragment, {
-        children: [B && J, Q, !eP && ec, B && ee, B && et, eA, er]
+      children: [!ek && (0, n.jsxs)(n.Fragment, {
+        children: [B && J, Q, !eN && es, B && ee, B && et, eA, er]
       }), en]
-    }), !eN && (0, n.jsxs)(n.Fragment, {
+    }), !ek && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(i.rXV, {
-        children: s && eo
+        children: d && eo
       }), (0, n.jsx)(i.rXV, {
         children: B && el
       }), (0, n.jsxs)(i.rXV, {
-        children: [s && ef, B && ep, s && eb, eD, B && ei, ed, es, eu, B && ey, B && eg, s && em]
+        children: [d && ef, B && eb, d && ep, eD, B && ei, ec, ed, eu, B && ey, B && eg, d && ex]
       }), (0, n.jsx)(i.rXV, {
         children: a && eO
-      }), G && (0, n.jsxs)(i.rXV, {
-        children: [ex, eI, ej]
+      }), X && (0, n.jsxs)(i.rXV, {
+        children: [eS, eI, ej]
       })]
     }), (0, g.A)(r.id) && (0, n.jsx)(i.rXV, {
       children: a && eO
     }), (0, n.jsx)(i.rXV, {
-      children: eM
+      children: ew
     }), (0, n.jsxs)(i.rXV, {
       children: [ev, !Y && eE]
     })]

@@ -9,5 +9,6 @@ module.exports = {
   ln: "parentChannelSeparator__31961",
   IE: "headerRight__31961",
   DD: "title__31961",
+  X7: "currentlyPlaying__31961",
   gr: "titleIcon__31961"
 }

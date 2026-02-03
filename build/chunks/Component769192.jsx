@@ -1,5 +1,5 @@
 /** Chunk was on 21905 **/
-/** chunk id: 769192, original params: e,n,t (module,exports,require) **/
+/** chunk id: 769192, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => S
 });
@@ -30,33 +30,33 @@ var Chunk311907 = require("./311907.js"),
   Chunk985018 = require("./985018.jsx");
 let S = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
-    channel: n,
-    guild: t,
+    channel: t,
+    guild: n,
     onSelect: o,
     widgetType: c
-  } = e, u = n.isGuildStageVoice(), N = (0, i.bG)([h.A], () => u ? h.A.getStageInstanceByChannel(n.id) : true, [u, n.id]), S = (0, A.A)(n), _ = (0, s.A)(n), {
+  } = e, u = t.isGuildStageVoice(), N = (0, i.bG)([h.A], () => u ? h.A.getStageInstanceByChannel(t.id) : true, [u, t.id]), S = (0, A.A)(t), _ = (0, s.A)(t), {
     toggleFavoriteItem: m
-  } = (0, D.Ay)(j.x.VOICE, n, c), x = (0, f.Ay)(n), P = (0, b.A)(n), M = (0, d.A)(n, t, N), w = (0, I.A)({
+  } = (0, D.Ay)(j.x.VOICE, t, c), x = (0, f.Ay)(t), M = (0, b.A)(t), P = (0, d.A)(t, n, N), w = (0, I.A)({
     kind: "CHANNEL",
-    channel: n,
-    guildId: t.id
-  }, c), G = (0, g.A)({
-    id: n.id,
+    channel: t,
+    guildId: n.id
+  }, c), U = (0, v.A)({
+    id: t.id,
     label: C.intl.string(C.t.gFHI3k)
-  }), U = (0, E.A)(n), L = (0, p.A)(n, t), k = (0, v.A)(n, t.id), R = (0, O.os)("OverlayChannelListVoiceChannelContextMenu"), T = (0, y.Ay)(n);
+  }), k = (0, E.A)(t), G = (0, p.A)(t, n), L = (0, g.A)(t, n.id), T = (0, O.os)("OverlayChannelListVoiceChannelContextMenu"), R = (0, y.Ay)(t);
   return (0, r.jsxs)(l.W1t, {
     navId: "overlay-channel-context",
     onClose: a.Z_,
     "aria-label": C.intl.string(C.t.Xm41aV),
     onSelect: o,
     children: [(0, r.jsxs)(l.rXV, {
-      children: [w, m, M, _]
+      children: [w, m, P, _]
     }, "primary-actions"), (0, r.jsxs)(l.rXV, {
-      children: [k, S, L, U]
+      children: [L, S, G, k]
     }, "voice-actions"), (0, r.jsxs)(l.rXV, {
-      children: [x, R ? T : P]
+      children: [x, T ? R : M]
     }, "notifications"), (0, r.jsx)(l.rXV, {
-      children: G
+      children: U
     }, "developer-actions")]
   })
 }, {

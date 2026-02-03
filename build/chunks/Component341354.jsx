@@ -1,7 +1,7 @@
 /** Chunk was on 77687 **/
 /** chunk id: 341354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => M
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -31,43 +31,43 @@ var Chunk397927 = require("./397927.js"),
   Chunk297460 = require("./297460.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let P = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
+let M = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
-    showMediaItems: a = false,
-    mediaEngineContext: d,
-    onSelect: P,
-    onInteraction: w,
-    appContext: k = _.BRT.OVERLAY,
-    friendGroupId: M,
+    channelId: a,
+    showMediaItems: o = false,
+    mediaEngineContext: s,
+    onSelect: M,
+    onInteraction: P,
+    appContext: w = _.BRT.OVERLAY,
+    friendGroupId: k,
     showManageFriendGroupsItems: C = false,
     onMessageUser: L,
     widgetType: U
-  } = e, V = (0, h.A)({
+  } = e, R = (0, h.A)({
     userId: t.id,
     guildId: n,
-    channelId: o
-  }), R = (0, S.A)({
+    channelId: a
+  }), V = (0, S.A)({
     kind: "DM_USER",
     userId: t.id,
     onOpenOverride: L
   }, U), {
-    toggleFavoriteItem: G
-  } = (0, x.As)(t.id, U), T = (0, v.A)({
+    toggleFavoriteItem: T
+  } = (0, x.As)(t.id, U), G = (0, v.A)({
     user: t
   }), F = (0, g.A)({
     user: t,
     guildId: n,
-    channelId: o,
-    context: k
+    channelId: a,
+    context: w
   }), B = (0, f.A)({
     user: t
-  }), H = (0, I.A)({
+  }), H = (0, D.A)({
     user: t,
-    groupId: M
-  }), X = (0, D.A)(t.id), Y = (0, j.A)(t.id), W = (0, m.A)(t.id, d), K = (0, y.A)({
+    groupId: k
+  }), X = (0, I.A)(t.id), Y = (0, j.A)(t.id), W = (0, m.A)(t.id, s), K = (0, y.A)({
     user: t
   }), Z = (0, u.A)(null, t), J = (0, A.A)({
     user: t
@@ -79,29 +79,29 @@ let P = (0, Chunk358367.A)((0, Chunk847767.A)(function(e) {
     user: t
   }), Q = (0, O.A)({
     user: t
-  }), ee = (0, s.A)({
+  }), ee = (0, d.A)({
     id: t.id,
     label: N.intl.string(N.t["/AXYnE"])
   }), et = (0, c.A)(t), en = t.isNonUserBot();
-  return (0, r.jsxs)(l.W1t, {
+  return (0, r.jsxs)(i.W1t, {
     navId: "overlay-user-context",
-    onClose: i.Z_,
+    onClose: l.Z_,
     "aria-label": N.intl.string(N.t.liqwPJ),
-    onSelect: P,
-    onInteraction: w,
+    onSelect: M,
+    onInteraction: P,
     children: [!en && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.rXV, {
+      children: [(0, r.jsx)(i.rXV, {
         children: et
-      }), (0, r.jsxs)(l.rXV, {
-        children: [V, R, G, T, F, B, C ? H : null, X]
-      }), a && (0, r.jsx)(l.rXV, {
+      }), (0, r.jsxs)(i.rXV, {
+        children: [R, V, T, G, F, B, C ? H : null, X]
+      }), o && (0, r.jsx)(i.rXV, {
         children: Y
-      }), (0, r.jsx)(l.rXV, {
+      }), (0, r.jsx)(i.rXV, {
         children: Z
-      }), (0, r.jsxs)(l.rXV, {
-        children: [a && W, K, J, q, $, Q, z]
+      }), (0, r.jsxs)(i.rXV, {
+        children: [o && W, K, J, q, $, Q, z]
       })]
-    }), (0, r.jsx)(l.rXV, {
+    }), (0, r.jsx)(i.rXV, {
       children: ee
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 77927 **/
 /** chunk id: 605691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => d
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -12,18 +12,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk47167 = require("./47167.js"),
   Chunk985018 = require("./985018.jsx");
 
-function s(e, t) {
-  let s = i.useCallback(() => {
+function d(e, t) {
+  let d = i.useCallback(() => {
     let i = (0, c.m1)(e, o.default, u.A),
-      s = d.intl.formatToPlainString(d.t.hJ5Ap4, {
+      d = s.intl.formatToPlainString(s.t.hJ5Ap4, {
         name: i
       }),
-      f = d.intl.format(d.t.SSIVOu, {
+      f = s.intl.format(s.t.SSIVOu, {
         name: i
       });
-    e.isManaged() && (s = d.intl.formatToPlainString(d.t.hVGjEW, {
+    e.isManaged() && (d = s.intl.formatToPlainString(s.t.hVGjEW, {
       name: i
-    }), f = d.intl.format(d.t.IK1Qvs, {
+    }), f = s.intl.format(s.t.IK1Qvs, {
       name: i
     }));
     let A = function(n) {
@@ -52,7 +52,7 @@ function s(e, t) {
         }
         return e
       }({
-        title: s,
+        title: d,
         body: f,
         onSubmit: A
       }, t))
@@ -60,8 +60,8 @@ function s(e, t) {
   }, [e, t]);
   return (0, r.jsx)(l.Drp, {
     id: "leave-channel",
-    label: d.intl.string(d.t["26C4oi"]),
-    action: s,
+    label: s.intl.string(s.t["26C4oi"]),
+    action: d,
     color: "danger"
   })
 }

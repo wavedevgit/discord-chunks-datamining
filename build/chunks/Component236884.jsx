@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 236884, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ea
+  Z: () => el
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -11,7 +11,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
   Chunk49229 = require("./49229.js"),
-  Chunk833349 = require("./833349.js"),
   Chunk960076 = require("./960076.js"),
   Chunk566903 = require("./566903.js"),
   Chunk397244 = require("./397244.js"),
@@ -53,7 +52,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk783346 = require("./783346.js");
 
-function q(e) {
+function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -72,7 +71,7 @@ function q(e) {
   return e
 }
 
-function $(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,24 +83,24 @@ function $(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ee = Chunk397927._3J.SIZE_32,
-  et = [Chunk506326.iq, Chunk506326.tR, Chunk506326.K7, Chunk506326.sp, Chunk506326.MK];
+let $ = Chunk397927._3J.SIZE_32,
+  ee = [Chunk506326.iq, Chunk506326.tR, Chunk506326.K7, Chunk506326.sp, Chunk506326.MK];
 
-function en(e) {
+function et(e) {
   let t, {
       channel: n,
       textVariant: a,
       activities: o,
       applicationStream: c
     } = e,
-    d = (0, s.bG)([G.default], () => G.default.getCurrentUser()),
-    h = (0, u.S31)(X.clD.ONLINE),
-    f = (0, b.Ay)(n),
-    g = (0, s.bG)([k.A], () => k.A.getGuild(n.getGuildId())),
-    m = null == g ? true : g.name;
-  (0, v.A)(null == d ? true : d.id);
+    d = (0, s.bG)([U.default], () => U.default.getCurrentUser()),
+    p = (0, u.S31)(Z.clD.ONLINE),
+    f = (0, v.Ay)(n),
+    g = (0, s.bG)([R.A], () => R.A.getGuild(n.getGuildId())),
+    b = null == g ? true : g.name;
+  (0, A.A)(null == d ? true : d.id);
   let E = (null == c ? true : c.discoverable) !== false ? c : null,
-    O = (0, j.AO)(E),
+    O = (0, I.AO)(E),
     x = n.isDM() || n.isGroupDM(),
     _ = r.useMemo(() => {
       var e;
@@ -110,51 +109,51 @@ function en(e) {
           type: t,
           name: n
         } = e;
-        return t !== X.$pd.CUSTOM_STATUS && t !== X.$pd.HANG_STATUS && n !== (null == O ? true : O.name)
+        return t !== Z.$pd.CUSTOM_STATUS && t !== Z.$pd.HANG_STATUS && n !== (null == O ? true : O.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
     }, [o, null == O ? true : O.name]),
     S = null == _ ? true : _[0];
   return (0, i.jsxs)("div", {
-    className: Q.fE,
+    className: J.fE,
     children: [(t = (null == _ ? true : _.length) > 0, (0, i.jsxs)("div", {
-      className: Q._9,
+      className: J._9,
       children: [!t && !x && null != g && (0, i.jsxs)("div", {
-        className: Q.j1,
-        children: [(0, i.jsx)(T.Ay, {
+        className: J.j1,
+        children: [(0, i.jsx)(j.Ay, {
           guild: g,
           iconSize: 14
         }), (0, i.jsx)(u.Text, {
-          className: Q.J5,
+          className: J.J5,
           variant: a,
           color: "currentColor",
           lineClamp: 1,
-          children: m
+          children: b
         }), (0, i.jsx)(u._BQ, {
           size: "xxs",
           color: "currentColor"
         })]
-      }), (0, i.jsx)(P.A, {
+      }), (0, i.jsx)(w.A, {
         size: "custom",
-        color: h,
+        color: p,
         channel: n,
-        className: Q.WT
+        className: J.WT
       }), (0, i.jsx)(u.Text, {
         variant: a,
         color: "currentColor",
         lineClamp: 1,
-        className: Q.Qo,
+        className: J.Qo,
         children: f
       })]
     })), (() => {
       if (null == S) return null;
       let {
         text: e
-      } = (0, p.A)(S, false), t = (0, A.f)(S);
+      } = (0, h.A)(S, false), t = (0, y.f)(S);
       return null == e && null == t ? null : (0, i.jsxs)("div", {
-        className: Q._9,
-        children: [null != t ? (0, i.jsx)(y.A, {
+        className: J._9,
+        children: [null != t ? (0, i.jsx)(m.A, {
           icon: t,
-          className: Q.WT
+          className: J.WT
         }) : true, null != e ? (0, i.jsx)(u.Text, {
           variant: a,
           color: "text-status-online",
@@ -166,7 +165,7 @@ function en(e) {
   })
 }
 
-function ei(e) {
+function en(e) {
   let {
     user: t,
     activities: n,
@@ -174,70 +173,70 @@ function ei(e) {
     relationshipType: o,
     isSuggestion: u,
     appContext: c,
-    onAction: p,
-    onFriendVisible: y,
-    friendGroupId: A
-  } = e, v = t.id, {
-    avatarDecorationSrc: b,
-    avatarSrc: x,
-    eventHandlers: _
-  } = (0, N.A)({
-    userId: v,
-    size: ee,
+    onAction: h,
+    onFriendVisible: m,
+    friendGroupId: y
+  } = e, A = t.id, {
+    avatarDecorationSrc: v,
+    avatarSrc: O,
+    eventHandlers: x
+  } = (0, C.A)({
+    userId: A,
+    size: $,
     animateOnHover: true,
     guildId: null
-  }), S = r.useMemo(() => {
-    let e = null != A ? A : "no-group",
+  }), _ = r.useMemo(() => {
+    let e = null != y ? y : "no-group",
       t = null != o ? o : "no-relationship";
-    return "friends-widget-friend-row:".concat(v, ":").concat(e, ":").concat(t, ":").concat(u ? "suggestion" : "not-suggestion")
-  }, [A, u, o, v]), I = (0, s.yK)([U.A], () => U.A.getActivities().filter(e => e.type === X.$pd.PLAYING && (0, d.A)(e, X.jUm.JOIN))), {
-    voiceChannel: j
-  } = (0, g.A)({
+    return "friends-widget-friend-row:".concat(A, ":").concat(e, ":").concat(t, ":").concat(u ? "suggestion" : "not-suggestion")
+  }, [y, u, o, A]), S = (0, s.yK)([L.A], () => L.A.getActivities().filter(e => e.type === Z.$pd.PLAYING && null != e.application_id)), {
+    voiceChannel: I
+  } = (0, f.A)({
     userId: t.id
   }), {
-    status: T,
-    applicationStream: C,
-    isMobile: w,
-    newStatus: P
-  } = (0, s.cf)([M.A, D.A], () => {
-    let e = M.A.getStatus(t.id),
-      i = D.A.getAnyStreamForUser(t.id),
-      r = M.A.isMobileOnline(t.id),
-      l = (0, h.A)(null != n ? n : []) ? X.clD.STREAMING : e;
+    status: j,
+    applicationStream: T,
+    isMobile: N,
+    newStatus: w
+  } = (0, s.cf)([k.A, P.A], () => {
+    let e = k.A.getStatus(t.id),
+      i = P.A.getAnyStreamForUser(t.id),
+      r = k.A.isMobileOnline(t.id),
+      l = (0, d.A)(null != n ? n : []) ? Z.clD.STREAMING : e;
     return {
       status: e,
       applicationStream: i,
       isMobile: r,
       newStatus: l
     }
-  }, [t.id, n]), R = I.length > 0, k = r.useCallback(e => {
-    null == y || y(v, e, R)
-  }, [y, v, R]), L = (0, a.K)(k), G = r.useCallback(() => {
+  }, [t.id, n]), D = S.length > 0, R = r.useCallback(e => {
+    null == m || m(A, e, D)
+  }, [m, A, D]), M = (0, a.K)(R), U = r.useCallback(() => {
     if (null != l) {
       let e = l.traits,
-        t = $(q({}, l), {
+        t = q(Q({}, l), {
           traits: e.slice(0, 3)
         });
-      return (0, i.jsx)(E.mG, {
-        location: E.N5.FRIENDS_POPOUT,
-        className: Q.cV,
-        children: et.map((e, n) => (0, i.jsx)(e, {
+      return (0, i.jsx)(b.mG, {
+        location: b.N5.FRIENDS_POPOUT,
+        className: J.cV,
+        children: ee.map((e, n) => (0, i.jsx)(e, {
           entry: t
         }, n))
       })
     }
-    if ((0, f.A)({
+    if ((0, p.A)({
         activities: n,
-        status: T,
-        applicationStream: C,
-        voiceChannel: j
+        status: j,
+        applicationStream: T,
+        voiceChannel: I
       })) {
-      let e = !(0, O.A)({
+      let e = !(0, E.A)({
         activity: null == n ? true : n.find(e => {
           let {
             type: t
           } = e;
-          return t === X.$pd.CUSTOM_STATUS
+          return t === Z.$pd.CUSTOM_STATUS
         }),
         user: t
       });
@@ -245,48 +244,48 @@ function ei(e) {
         let {
           type: t
         } = e;
-        return t === X.$pd.PLAYING
-      })) == null && null != j ? (0, i.jsx)(en, {
-        channel: j,
+        return t === Z.$pd.PLAYING
+      })) == null && null != I ? (0, i.jsx)(et, {
+        channel: I,
         textVariant: "text-xs/medium",
         activities: null != n ? n : [],
-        applicationStream: C
-      }) : (0, i.jsx)(m.A, {
+        applicationStream: T
+      }) : (0, i.jsx)(g.A, {
         user: t,
         activities: n,
-        applicationStream: C,
-        voiceChannel: j,
+        applicationStream: T,
+        voiceChannel: I,
         animateEmoji: false,
         hideEmoji: e,
         hasQuest: false
       })
     }
     return null
-  }, [t, n, T, C, j, l]);
+  }, [t, n, j, T, I, l]);
   return {
-    avatarDecorationSrc: b,
-    avatarSrc: x,
-    eventHandlers: _,
-    listItemId: S,
-    intersectionRef: L,
-    isMobile: w,
-    newStatus: P,
-    status: T,
-    renderSubtext: G,
-    renderUserContextMenu: (0, Z.l2)({
+    avatarDecorationSrc: v,
+    avatarSrc: O,
+    eventHandlers: x,
+    listItemId: _,
+    intersectionRef: M,
+    isMobile: N,
+    newStatus: w,
+    status: j,
+    renderSubtext: U,
+    renderUserContextMenu: (0, B.l2)({
       user: t,
       appContext: c,
-      friendGroupId: A,
+      friendGroupId: y,
       onUserContextMenuOpened: () => {
-        null == p || p(K.x.USER_CONTEXT_MENU, t.id)
+        null == h || h(Y.x.USER_CONTEXT_MENU, t.id)
       },
       onMessageUser: () => {
-        null == p || p(K.x.OPEN_DIRECT_MESSAGE, t.id)
+        null == h || h(Y.x.OPEN_DIRECT_MESSAGE, t.id)
       }
     })
   }
 }
-let er = Chunk64700.memo(e => {
+let ei = Chunk64700.memo(e => {
   let {
     user: t,
     activities: n = [],
@@ -305,13 +304,13 @@ let er = Chunk64700.memo(e => {
     avatarSrc: v,
     eventHandlers: b,
     listItemId: E,
-    intersectionRef: O,
+    intersectionRef: I,
     isMobile: j,
-    newStatus: T,
-    status: N,
+    newStatus: C,
+    status: w,
     renderSubtext: P,
-    renderUserContextMenu: D
-  } = ei({
+    renderUserContextMenu: R
+  } = en({
     user: t,
     activities: n,
     gameProfileEntry: l,
@@ -323,18 +322,18 @@ let er = Chunk64700.memo(e => {
     friendGroupId: f
   }), {
     guildId: k,
-    channelId: M
-  } = (0, s.cf)([L.A, R.A], () => {
+    channelId: L
+  } = (0, s.cf)([M.A, D.A], () => {
     var e, t;
-    let n = null != (e = L.A.getVoiceChannelId()) ? e : L.A.getChannelId();
+    let n = null != (e = M.A.getVoiceChannelId()) ? e : M.A.getChannelId();
     return {
-      guildId: null != n ? null == (t = R.A.getChannel(n)) ? true : t.guild_id : null,
+      guildId: null != n ? null == (t = D.A.getChannel(n)) ? true : t.guild_id : null,
       channelId: n
     }
-  }), U = (0, x.A)({
+  }), U = (0, O.A)({
     userId: t.id,
     guildId: k
-  }), G = V.Ay.useName(k, M, t), Z = (0, W.ZD)({
+  }), B = G.Ay.useName(k, L, t), ee = (0, W.ZD)({
     userId: t.id,
     onAction: h,
     closeParentPopout: a
@@ -342,41 +341,41 @@ let er = Chunk64700.memo(e => {
     let {
       type: t
     } = e;
-    return t === X.$pd.PLAYING
-  }), en = N !== X.clD.ONLINE && N !== X.clD.IDLE && N !== X.clD.DND, er = (0, B.A2)(t.id), el = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == h || h(K.x.OPEN_FRIEND_MODAL, t.id), (0, w.openUserProfileModal)({
+    return t === Z.$pd.PLAYING
+  }), ei = w !== Z.clD.ONLINE && w !== Z.clD.IDLE && w !== Z.clD.DND, er = (0, K.A2)(t.id), el = r.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == h || h(Y.x.OPEN_FRIEND_MODAL, t.id), (0, N.openUserProfileModal)({
       userId: t.id,
       guildId: k,
-      channelId: M,
+      channelId: L,
       appContext: c
     })
-  }, [c, M, k, h, t.id]);
-  return (0, i.jsx)(F.D, {
+  }, [c, L, k, h, t.id]);
+  return (0, i.jsx)(z.D, {
     listItemId: E,
-    outerRef: O,
-    isVisuallyOffline: en,
+    outerRef: I,
+    isVisuallyOffline: ei,
     recentlyAddedTimestampMs: g ? er : null,
-    onClick: Z,
-    onContextMenu: D,
-    avatar: (0, i.jsx)(u.euF, $(q({}, b), {
-      size: ee,
+    onClick: ee,
+    onContextMenu: R,
+    avatar: (0, i.jsx)(u.euF, q(Q({}, b), {
+      size: $,
       src: v,
       isMobile: j,
       isTyping: false,
-      status: T,
-      className: Q.my,
+      status: C,
+      className: J.my,
       "aria-label": t.username,
       statusTooltip: true,
       avatarDecoration: A
     })),
     primaryText: (0, i.jsxs)("div", {
-      className: Q.QV,
-      children: [(0, i.jsx)(S.A, {
-        userName: G,
+      className: J.QV,
+      children: [(0, i.jsx)(_.A, {
+        userName: B,
         displayNameStyles: U,
-        effectDisplayType: _.G.STATIC,
-        textClassName: Q.Xh
-      }), (0, i.jsx)(C.Ay, {
+        effectDisplayType: x.G.STATIC,
+        textClassName: J.Xh
+      }), (0, i.jsx)(T.Ay, {
         userId: t.id,
         disableGuildProfile: true
       })]
@@ -384,32 +383,32 @@ let er = Chunk64700.memo(e => {
     secondaryText: P(),
     rightActions: e => e ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(o.m_, {
-        text: J.intl.string(J.t.iXAna6),
-        "aria-label": J.intl.string(J.t.iXAna6),
+        text: X.intl.string(X.t.iXAna6),
+        "aria-label": X.intl.string(X.t.iXAna6),
         children: (0, i.jsx)(u.K0, {
           icon: u.rMq,
-          "aria-label": J.intl.string(J.t.iXAna6),
+          "aria-label": X.intl.string(X.t.iXAna6),
           size: "sm",
           variant: "icon-only",
           onClick: el
         })
-      }), (0, i.jsx)(H.j, {
-        tab: z.x.FRIENDS,
+      }), (0, i.jsx)(F.j, {
+        tab: V.x.FRIENDS,
         targetId: t.id
       })]
     }) : et ? (0, i.jsx)("div", {
-      className: Q.im,
-      children: (0, i.jsx)(Y.B, {
+      className: J.im,
+      children: (0, i.jsx)(H.B, {
         activities: n,
         gameProfileEntry: l,
-        gameIconSize: I.M.SMALL,
+        gameIconSize: S.M.SMALL,
         platformIconSizePx: 24
       })
     }) : null
   })
 });
-er.displayName = "FriendListRow";
-let el = Chunk64700.memo(e => {
+ei.displayName = "FriendListRow";
+let er = Chunk64700.memo(e => {
   let {
     user: t,
     activities: n = [],
@@ -425,14 +424,14 @@ let el = Chunk64700.memo(e => {
     avatarDecorationSrc: v,
     avatarSrc: b,
     eventHandlers: E,
-    listItemId: O,
+    listItemId: I,
     intersectionRef: j,
     isMobile: T,
     newStatus: C,
     status: N,
     renderSubtext: w,
     renderUserContextMenu: P
-  } = ei({
+  } = en({
     user: t,
     activities: n,
     gameProfileEntry: l,
@@ -442,10 +441,10 @@ let el = Chunk64700.memo(e => {
     onAction: p,
     onFriendVisible: f,
     friendGroupId: g
-  }), D = (0, x.A)({
+  }), D = (0, O.A)({
     userId: t.id,
     guildId: null
-  }), R = V.Ay.useName(null, null, t), k = r.useCallback(async (e, t) => {
+  }), R = G.Ay.useName(null, null, t), k = r.useCallback(async (e, t) => {
     if (!A.current) {
       A.current = true, y(e);
       try {
@@ -458,73 +457,73 @@ let el = Chunk64700.memo(e => {
     userId: t.id,
     onAction: p
   }), L = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(K.x.ACCEPT_FRIEND_REQUEST, t.id), k("accept", () => c.A.addRelationship({
+    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.ACCEPT_FRIEND_REQUEST, t.id), k("accept", () => c.A.addRelationship({
       userId: t.id,
       context: {
         location: "friends-popout"
       }
     }))
   }, [t.id, p, k]), U = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(K.x.DECLINE_FRIEND_REQUEST, t.id), k("decline", () => c.A.removeRelationship(t.id, {
+    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.DECLINE_FRIEND_REQUEST, t.id), k("decline", () => c.A.removeRelationship(t.id, {
       location: "friends-popout"
     }))
-  }, [t.id, p, k]), G = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(K.x.CANCEL_FRIEND_REQUEST, t.id), k("cancel", () => c.A.cancelFriendRequest(t.id, {
+  }, [t.id, p, k]), V = r.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.CANCEL_FRIEND_REQUEST, t.id), k("cancel", () => c.A.cancelFriendRequest(t.id, {
       location: "friends-popout"
     }))
-  }, [t.id, p, k]), z = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(K.x.SEND_FRIEND_REQUEST, t.id), k("send", () => c.A.addRelationship({
+  }, [t.id, p, k]), F = r.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.SEND_FRIEND_REQUEST, t.id), k("send", () => c.A.addRelationship({
       userId: t.id,
       context: {
         location: "friends-popout"
       }
     }))
-  }, [t.id, p, k]), H = n.some(e => {
+  }, [t.id, p, k]), K = n.some(e => {
     let {
       type: t
     } = e;
-    return t === X.$pd.PLAYING
-  }), B = N !== X.clD.ONLINE && N !== X.clD.IDLE && N !== X.clD.DND;
-  return (0, i.jsx)(F.D, {
-    listItemId: O,
+    return t === Z.$pd.PLAYING
+  }), B = N !== Z.clD.ONLINE && N !== Z.clD.IDLE && N !== Z.clD.DND;
+  return (0, i.jsx)(z.D, {
+    listItemId: I,
     outerRef: j,
     isVisuallyOffline: B,
     onClick: M,
     onContextMenu: P,
-    avatar: (0, i.jsx)(u.euF, $(q({}, E), {
-      size: ee,
+    avatar: (0, i.jsx)(u.euF, q(Q({}, E), {
+      size: $,
       src: b,
       isMobile: T,
       isTyping: false,
       status: C,
-      className: Q.my,
+      className: J.my,
       "aria-label": t.username,
       statusTooltip: true,
       avatarDecoration: v
     })),
-    primaryText: (0, i.jsx)(S.A, {
+    primaryText: (0, i.jsx)(_.A, {
       userName: R,
       displayNameStyles: D,
-      effectDisplayType: _.G.PLAIN,
-      textClassName: Q.Xh
+      effectDisplayType: x.G.PLAIN,
+      textClassName: J.Xh
     }),
     secondaryText: w(),
     rightActions: () => {
       let e;
       return (0, i.jsxs)(i.Fragment, {
-        children: [H ? (0, i.jsx)("div", {
-          className: Q.im,
-          children: (0, i.jsx)(Y.B, {
+        children: [K ? (0, i.jsx)("div", {
+          className: J.im,
+          children: (0, i.jsx)(H.B, {
             activities: n,
             gameProfileEntry: l,
-            gameIconSize: I.M.XSMALL,
+            gameIconSize: S.M.XSMALL,
             platformIconSizePx: 20
           })
-        }) : null, (e = null != m, a === X.eA$.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
+        }) : null, (e = null != m, a === Z.eA$.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(o.m_, {
-            text: J.intl.string(J.t.MMlhsr),
+            text: X.intl.string(X.t.MMlhsr),
             children: (0, i.jsx)(u.K0, {
-              "aria-label": J.intl.string(J.t.MMlhsr),
+              "aria-label": X.intl.string(X.t.MMlhsr),
               size: "sm",
               variant: "secondary",
               icon: u.A9s,
@@ -532,9 +531,9 @@ let el = Chunk64700.memo(e => {
               disabled: e
             })
           }), (0, i.jsx)(o.m_, {
-            text: J.intl.string(J.t.ytCpKs),
+            text: X.intl.string(X.t.ytCpKs),
             children: (0, i.jsx)(u.K0, {
-              "aria-label": J.intl.string(J.t.ytCpKs),
+              "aria-label": X.intl.string(X.t.ytCpKs),
               size: "sm",
               variant: "secondary",
               icon: u.PGe,
@@ -542,24 +541,24 @@ let el = Chunk64700.memo(e => {
               disabled: e
             })
           })]
-        }) : a === X.eA$.PENDING_OUTGOING ? (0, i.jsx)(o.m_, {
-          text: J.intl.string(J.t["bTfA//"]),
+        }) : a === Z.eA$.PENDING_OUTGOING ? (0, i.jsx)(o.m_, {
+          text: X.intl.string(X.t["bTfA//"]),
           children: (0, i.jsx)(u.K0, {
-            "aria-label": J.intl.string(J.t["bTfA//"]),
+            "aria-label": X.intl.string(X.t["bTfA//"]),
             size: "sm",
             variant: "secondary",
             icon: u.lI8,
-            onClick: G,
+            onClick: V,
             disabled: e
           })
         }) : s ? (0, i.jsx)(o.m_, {
-          text: J.intl.string(J.t.w5uwoI),
+          text: X.intl.string(X.t.w5uwoI),
           children: (0, i.jsx)(u.K0, {
-            "aria-label": J.intl.string(J.t.w5uwoI),
+            "aria-label": X.intl.string(X.t.w5uwoI),
             size: "sm",
             variant: "secondary",
             icon: u.Rvf,
-            onClick: z,
+            onClick: F,
             disabled: e
           })
         }) : null)]
@@ -567,12 +566,12 @@ let el = Chunk64700.memo(e => {
     }
   })
 });
-el.displayName = "FriendRequestRow";
-let ea = Chunk64700.memo(e => "friend_request" === function(e) {
+er.displayName = "FriendRequestRow";
+let el = Chunk64700.memo(e => "friend_request" === function(e) {
   let {
     relationshipType: t,
     isSuggestion: n
   } = e;
-  return t === X.eA$.PENDING_INCOMING || t === X.eA$.PENDING_OUTGOING || n ? "friend_request" : "friend"
-}(e) ? (0, i.jsx)(el, q({}, e)) : (0, i.jsx)(er, q({}, e)));
-ea.displayName = "FriendRow"
+  return t === Z.eA$.PENDING_INCOMING || t === Z.eA$.PENDING_OUTGOING || n ? "friend_request" : "friend"
+}(e) ? (0, i.jsx)(er, Q({}, e)) : (0, i.jsx)(ei, Q({}, e)));
+el.displayName = "FriendRow"

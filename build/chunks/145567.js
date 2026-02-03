@@ -2,16 +2,19 @@
 /** chunk id: 145567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D$: () => s,
-  Ml: () => o,
-  S$: () => c,
-  lu: () => l
+  D$: () => d,
+  Ml: () => l,
+  S$: () => p,
+  bB: () => c,
+  lu: () => f
 });
 var Chunk73153 = require("./73153.js"),
+  Chunk308528 = require("./308528.js"),
+  Chunk734057 = require("./734057.js"),
   Chunk810412 = require("./810412.js"),
   Chunk187667 = require("./187667.js");
 
-function o(e) {
+function l(e) {
   let {
     channelId: t,
     source: n,
@@ -26,49 +29,67 @@ function o(e) {
     lastMessageId: a
   })
 }
-
-function s(e) {
+var c = function(e) {
+  return e.CHANNEL = "CHANNEL", e.DM_USER = "DM_USER", e
+}({});
+async function u(e) {
+  var t;
   let {
-    channelId: t,
-    source: n,
-    guildId: o,
-    messageId: s,
-    widgetType: l
-  } = e, c = a.A.getSelectedChannelId();
-  return null == c ? (0, i.YX)(l, {
-    type: i.Z5.TEXT_CHAT,
-    value: i.IP.OPENED_TEXT_CHAT,
-    secondaryValue: n
-  }) : c !== t && (0, i.YX)(l, {
-    type: i.Z5.TEXT_CHAT,
-    value: i.IP.CHANNEL_SELECTED,
-    secondaryValue: n
-  }), r.h.dispatch({
+    userId: n,
+    existingChannelId: r
+  } = e, o = null != (t = null != r ? r : a.A.getDMFromUserId(n)) ? t : null;
+  if (null != o) return o;
+  try {
+    return await i.A.getDMChannel(n)
+  } catch (e) {
+    return null
+  }
+}
+async function d(e) {
+  var t;
+  let {
+    target: n,
+    source: i,
+    widgetType: a
+  } = e, l = "CHANNEL" === n.kind ? n.channelId : await u(n);
+  if (null == l) return null;
+  let c = "CHANNEL" === n.kind ? n.guildId : null,
+    d = null != (t = n.messageId) ? t : null,
+    f = s.A.getSelectedChannelId();
+  return null != a && (null == f ? (0, o.YX)(a, {
+    type: o.Z5.TEXT_CHAT,
+    value: o.IP.OPENED_TEXT_CHAT,
+    secondaryValue: i
+  }) : f !== l && (0, o.YX)(a, {
+    type: o.Z5.TEXT_CHAT,
+    value: o.IP.CHANNEL_SELECTED,
+    secondaryValue: i
+  })), await r.h.dispatch({
     type: "OVERLAY_TEXT_CHAT_SELECT_CHANNEL",
-    channelId: t,
-    source: n,
-    guildId: o,
-    messageId: s
-  })
+    channelId: l,
+    source: i,
+    guildId: c,
+    messageId: d
+  }), l
 }
 
-function l(e) {
+function f(e) {
   let {
     channelId: t,
     widgetType: n,
-    secondaryValue: a = "remove_channel"
+    secondaryValue: i = "remove_channel"
   } = e;
-  return (0, i.YX)(n, {
-    type: i.Z5.TEXT_CHAT,
-    value: i.IP.CLOSED_TEXT_CHAT,
-    secondaryValue: a
+  return (0, o.YX)(n, {
+    type: o.Z5.TEXT_CHAT,
+    value: o.IP.CLOSED_TEXT_CHAT,
+    secondaryValue: i
   }), r.h.dispatch({
     type: "OVERLAY_TEXT_CHAT_REMOVE_CHANNEL",
     channelId: t
   })
 }
 
-function c(e) {
+function p(e) {
   let {
     minimized: t
   } = e;

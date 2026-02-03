@@ -45,29 +45,29 @@ function I(e) {
     } = e,
     H = U ? O.IV.HORIZONTAL : O.IV.VERTICAL,
     Y = H === O.IV.VERTICAL,
-    K = (0, l.bG)([g.A], () => {
+    W = (0, l.bG)([g.A], () => {
       var e;
       let t = g.A.getWidget(w);
       return !!(0, O.dO)(t) && !R && (null == (e = t.meta.showAllStreams) || e)
     }, [w, R]),
-    W = (0, l.bG)([m.A], () => m.A.getVoiceChannelId()),
-    B = (0, l.bG)([f.A], () => f.A.getChannel(W)),
+    K = (0, l.bG)([m.A], () => m.A.getVoiceChannelId()),
+    B = (0, l.bG)([f.A], () => f.A.getChannel(K)),
     Z = (0, l.bG)([p.default], () => p.default.getId()),
     {
       streamParticipants: X,
       activeStreams: J,
       participantsVersion: Q
-    } = (I = V && Y || z && U, j = !V && Y || !z && U, T = (0, l.yK)([h.A], () => null == W ? [] : h.A.getAllActiveStreamsForChannel(W)), C = r.useMemo(() => new Set(T.map(e => (0, c._z)(e))), [T]), N = (0, l.bG)([u.A], () => null == W ? false : u.A.getParticipantsVersion(W)), {
+    } = (I = V && Y || z && U, j = !V && Y || !z && U, T = (0, l.yK)([h.A], () => null == K ? [] : h.A.getAllActiveStreamsForChannel(K)), C = r.useMemo(() => new Set(T.map(e => (0, c._z)(e))), [T]), N = (0, l.bG)([u.A], () => null == K ? false : u.A.getParticipantsVersion(K)), {
       streamParticipants: (0, l.yK)([u.A, h.A], () => {
-        if (null == W) return [];
+        if (null == K) return [];
 
         function e(e) {
           return C.has((0, c._z)(e.stream))
         }
-        let t = u.A.getStreamParticipants(W).filter(t => {
+        let t = u.A.getStreamParticipants(K).filter(t => {
           if (t.user.id === Z) returnfalse;
           let n = h.A.getActiveStreamForUser(t.user.id, t.stream.guildId);
-          return !(null != n && b.O.has(n.state)) && (!!K || e(t))
+          return !(null != n && b.O.has(n.state)) && (!!W || e(t))
         });
         return t.sort((t, n) => {
           if (I) {
@@ -79,7 +79,7 @@ function I(e) {
           }
           return t.user.username.localeCompare(n.user.username)
         }), t
-      }, [W, C, Z, K, I, j]),
+      }, [K, C, Z, W, I, j]),
       activeStreams: C,
       participantsVersion: N
     }),

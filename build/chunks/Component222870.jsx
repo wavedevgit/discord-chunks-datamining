@@ -198,7 +198,7 @@ function L() {
     })
   }, [F, H]);
   let Y = r.useCallback(e => L[e], [L]),
-    K = r.useCallback(e => {
+    W = r.useCallback(e => {
       let {
         section: t
       } = e, n = Y(t);
@@ -210,7 +210,7 @@ function L() {
         })]
       })
     }, [Y]),
-    W = r.useCallback(e => {
+    K = r.useCallback(e => {
       let t = Y(e.section);
       if (null == t) return null;
       let n = "".concat(t.key, ":").concat(e.row);
@@ -328,8 +328,8 @@ function L() {
               sectionHeight: B,
               rowHeight: Z,
               sidebarHeight: 0,
-              renderSection: K,
-              renderRow: W,
+              renderSection: W,
+              renderRow: K,
               sections: U,
               paddingBottom: 8
             }, r, e))

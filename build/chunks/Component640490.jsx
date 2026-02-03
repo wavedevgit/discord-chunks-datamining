@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 640490, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => K
+  F: () => W
 }), require("./638769.js"), require("./896048.js"), require("./733351.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -178,7 +178,7 @@ let H = (0, Chunk735438.throttle)(e => {
 
 function Y() {}
 
-function K(e) {
+function W(e) {
   let {
     onAction: t,
     onFriendVisible: n
@@ -210,18 +210,18 @@ function K(e) {
     })
   }, [N, R]);
   let G = (0, C.b)(),
-    K = (0, C.n)(G),
+    W = (0, C.n)(G),
     {
-      searchQuery: W,
+      searchQuery: K,
       setSearchQuery: B,
       clearSearch: Z
-    } = K,
-    X = U(K, ["searchQuery", "setSearchQuery", "clearSearch"]),
+    } = W,
+    X = U(W, ["searchQuery", "setSearchQuery", "clearSearch"]),
     {
       showSuggestions: J,
       setShowSuggestions: Q
     } = (0, S.A)(),
-    q = W.trim().length > 0,
+    q = K.trim().length > 0,
     $ = r.useMemo(() => X.groups.filter(e => e.users.length > 0), [X.groups]),
     ee = r.useMemo(() => G.groups.map(e => e.id), [G.groups]),
     {
@@ -254,7 +254,7 @@ function K(e) {
     })))
   }, [el]);
   let eu = r.useMemo(() => {
-      let e = W.trim().toLowerCase();
+      let e = K.trim().toLowerCase();
       return "" === e ? es : es.filter(t => {
         let {
           user: n,
@@ -263,7 +263,7 @@ function K(e) {
         } = t;
         return [n.username, n.globalName, r, ...i.map(e => e.name)].filter(e => null != e && "" !== e.trim()).some(t => t.toLowerCase().includes(e))
       })
-    }, [es, W]),
+    }, [es, K]),
     ec = ea > 0 && eu.length > 0,
     ed = !ec && 0 === $.length && 0 === X.friendRequests.length && (!J || 0 === X.suggestions.length) && 0 === X.sameActivity.length && 0 === X.inGame.length && 0 === X.activities.length && 0 === X.online.length && 0 === X.offline.length,
     [eh, ep] = r.useState(["FRIEND_REQUESTS", "OFFLINE"]),
@@ -510,7 +510,7 @@ function K(e) {
     children: [(0, i.jsx)("div", {
       className: k.MT,
       children: (0, i.jsx)(d.IWV, {
-        query: W,
+        query: K,
         onChange: ev,
         onClear: eb,
         placeholder: D.intl.string(D.t.lLDtTK),

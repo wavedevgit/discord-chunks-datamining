@@ -82,8 +82,8 @@ function R() {
       friendVoiceChannelIds: H,
       recentVoiceChannelIds: Y
     } = (0, p.S4)(),
-    K = r.useMemo(() => H.filter(e => k.has(e)), [H, k]),
-    W = r.useMemo(() => Y.filter(e => k.has(e)), [Y, k]),
+    W = r.useMemo(() => H.filter(e => k.has(e)), [H, k]),
+    K = r.useMemo(() => Y.filter(e => k.has(e)), [Y, k]),
     B = (0, s.bG)([A.A], () => A.A.getVoiceChannelId(), []),
     Z = (0, s.bG)([m.A], () => m.A.affinities.filter(e => {
       var t;
@@ -94,8 +94,8 @@ function R() {
       return t = String((e = new Date).getDate()).padStart(2, "0"), n = String(e.getMonth() + 1).padStart(2, "0"), i = String(e.getFullYear() % 100).padStart(2, "0"), P("".concat(t).concat(n).concat(i))
     }, []),
     J = r.useMemo(() => new Set(V), [V]),
-    Q = r.useMemo(() => K.filter(e => !J.has(e)), [K, J]),
-    q = r.useMemo(() => W.filter(e => !J.has(e)), [W, J]),
+    Q = r.useMemo(() => W.filter(e => !J.has(e)), [W, J]),
+    q = r.useMemo(() => K.filter(e => !J.has(e)), [K, J]),
     $ = r.useMemo(() => {
       var e, t;
       let n = [],

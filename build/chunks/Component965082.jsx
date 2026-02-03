@@ -68,32 +68,31 @@ function I(e, t, n, I) {
     onNotificationShow: () => {
       I && (0, u.Ak)(c.cH, c.pD), w()
     },
-    onNotificationClick: () => {
-      let n = y.A.getTargetPID();
+    onNotificationClick: (n, i) => {
+      let a = y.A.getTargetPID();
       if ((0, l.ack)(e.id, {
           section: _.JJy.OVERLAY,
           object: _.ZSU.ACK_TEXT_CHAT_NOTIFICATION,
           objectType: _.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
         }, true, true, t.id), D) {
-        var i;
-        (0, v.Ml)({
-          channelId: e.id,
+        var s;
+        (0, v.D$)({
+          target: {
+            kind: v.bB.CHANNEL,
+            channelId: e.id,
+            guildId: null != (s = e.guild_id) ? s : null,
+            messageId: t.id
+          },
           source: f.B9.NOTIFICATION_CLICK,
-          lastMessageId: t.id
-        }), (0, v.D$)({
-          channelId: e.id,
-          source: f.B9.NOTIFICATION_CLICK,
-          guildId: null != (i = e.guild_id) ? i : null,
-          messageId: t.id,
           widgetType: _.uss.NOTIFICATIONS
-        }), A.A.isInputLocked(n) ? (P("unlock"), r.A.setInputLocked(false, n)) : P("jump"), requestAnimationFrame(() => {
+        }), A.A.isInputLocked(a) ? (P("unlock"), r.A.setInputLocked(false, a)) : P("jump"), requestAnimationFrame(() => {
           d._.dispatchToLastSubscribed(_.jej.TEXTAREA_FOCUS, {
             channelId: e.id
           })
-        });
+        }), r.A.updateNotificationStatus(i, _.yFH.DISMISSED);
         return
       }
-      A.A.isInputLocked(n) ? (P("unlock"), r.A.setInputLocked(false, n)) : (P("jump"), (0, o.pX)(_.BVt.CHANNEL(e.guild_id, e.id, t.id)), h.isPlatformEmbedded && p.Ay.focus())
+      A.A.isInputLocked(a) ? (P("unlock"), r.A.setInputLocked(false, a)) : (P("jump"), (0, o.pX)(_.BVt.CHANNEL(e.guild_id, e.id, t.id)), h.isPlatformEmbedded && p.Ay.focus())
     },
     onDismissClick: () => {
       P("dismiss")

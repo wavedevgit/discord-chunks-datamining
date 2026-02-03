@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 594831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ay: () => W,
+  Ay: () => K,
   Dz: () => G,
   MV: () => R,
   S4: () => L,
@@ -316,11 +316,11 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function W(e) {
   e.stopPropagation()
 }
 
-function W(e) {
+function K(e) {
   var t, n;
   let {
     currentVoiceChannel: l,
@@ -344,11 +344,11 @@ function W(e) {
       count: y ? 20 : h.length
     },
     b = r.useMemo(() => ({
-      onMouseDown: K,
-      onMouseMove: K,
-      onMouseUp: K,
-      onMouseEnter: K,
-      onMouseLeave: K
+      onMouseDown: W,
+      onMouseMove: W,
+      onMouseUp: W,
+      onMouseEnter: W,
+      onMouseLeave: W
     }), []);
   return (0, i.jsxs)("div", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {

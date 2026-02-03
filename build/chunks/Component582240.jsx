@@ -114,11 +114,11 @@ let S = [],
         pinned: F,
         zIndex: H,
         size: Y,
-        anchor: K,
-        minSize: W
+        anchor: W,
+        minSize: K
       } = t,
       B = r.useMemo(() => (0, p.fd)(Y, U), [Y, U]),
-      Z = (0, p.Nv)(K, U),
+      Z = (0, p.Nv)(W, U),
       {
         resizeX: X,
         resizeY: J,
@@ -158,7 +158,7 @@ let S = [],
       size: B,
       anchor: Z,
       container: et,
-      minSize: null != W ? W : {
+      minSize: null != K ? K : {
         width: 0,
         height: 0
       },
