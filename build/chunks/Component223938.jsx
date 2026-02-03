@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   a = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   o = require.n(Chunk284009),
-  Chunk353709 = require("./353709.js"),
+  Chunk92674 = require("./92674.js"),
   Chunk835245 = require("./835245.js"),
   Chunk311907 = require("./311907.js"),
   Chunk827734 = require("./827734.js"),
@@ -254,8 +254,8 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
       return !!(!eF && (null == (t = eT.current) ? true : t.onMoveSelection(e))) || (null == (n = eZ.current) ? true : n.onMoveSelection(e)) || false
     }, [eF])
   }), {
-    expressionPickerView: e5,
-    shouldHideExpressionPicker: e6,
+    expressionPickerView: e6,
+    shouldHideExpressionPicker: e5,
     handleOuterClick: e9
   } = (0, V.MD)(K, eN, U.id), e8 = (0, V.BX)(p), {
     currentAutocompleteType: e4,
@@ -477,7 +477,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
           textValue: p,
           focused: Y,
           isEditorIdle: e8,
-          expressionPickerView: e5,
+          expressionPickerView: e6,
           type: K,
           editorRef: eN,
           onSendMessage: eq,
@@ -487,7 +487,7 @@ let ee = Chunk64700.memo(Chunk64700.forwardRef(function(e, t) {
           setValue: (e, t) => null == ee ? true : ee(null, e, t),
           position: eb
         })]
-      }), e6 ? null : (0, l.jsx)(x.A, {
+      }), e5 ? null : (0, l.jsx)(x.A, {
         positionTargetRef: eI,
         type: K,
         onSelectGIF: tn,

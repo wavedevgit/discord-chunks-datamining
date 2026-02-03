@@ -69,7 +69,7 @@ function L(e) {
         return "Linux"
     }
     return ""
-  }((0, O.getOS)())), [el, er] = l.useState(""), [ea, eo] = l.useState(""), [es, eu] = l.useState(""), [ec, ed] = l.useState(""), [em, ev] = l.useState(false), [ep, eh] = l.useState(false), [ef, ex] = l.useState(false), [eg, eb] = l.useState(null);
+  }((0, O.getOS)())), [el, er] = l.useState(""), [ea, eo] = l.useState(""), [es, eu] = l.useState(""), [ec, ed] = l.useState(""), [em, ev] = l.useState(false), [ep, ef] = l.useState(false), [eh, ex] = l.useState(false), [eg, eb] = l.useState(null);
   l.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.Bo.get({
@@ -79,8 +79,8 @@ function L(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "efb5880740e8fedbba6edbd2c7dd9eaef77c041d" !== e.body.hash) {
-        let e = new Date("1770158474034"),
+      if (null != e.body && "065f966a4c4f41bbf37734ff2d092fd07d3f4944" !== e.body.hash) {
+        let e = new Date("1770160326194"),
           t = new Date,
           n = (0, w.Tf)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -114,7 +114,7 @@ function L(e) {
     var e, t;
     if (ex(false), "" === z || "" === M || null == Y) return void ev(true);
     let l = null == q || null == (t = q.features) ? true : t.find(e => (0, S.wY)(e) === J);
-    eh(true), ev(false);
+    ef(true), ev(false);
     let r = (0, k.B)(U.map(e => {
         let {
           item: t
@@ -140,7 +140,7 @@ function L(e) {
       } : {
         overridePlatformInformation: Q
       }, r).catch(() => ex(true));
-    eh(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), I(), (0, c.mMO)(async () => {
+    ef(false), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), I(), (0, c.mMO)(async () => {
       let {
         default: e
       } = await n.e("71256").then(n.bind(n, 369323));
@@ -402,8 +402,8 @@ function L(e) {
             children: U.length > 0 && U.map(e => (0, i.jsxs)("div", {
               className: E.oh,
               children: [(0, i.jsxs)("div", {
-                children: [(0, i.jsx)(f.J, {
-                  size: h.L.SMALL,
+                children: [(0, i.jsx)(h.J, {
+                  size: f.L.SMALL,
                   upload: e
                 }), (0, i.jsx)("div", {
                   className: E.eA,
@@ -429,7 +429,7 @@ function L(e) {
               })]
             }, e.id))
           })
-        }) : null, ef ? (0, i.jsx)(c.Text, {
+        }) : null, eh ? (0, i.jsx)(c.Text, {
           color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: "Something went wrong, try again!"
