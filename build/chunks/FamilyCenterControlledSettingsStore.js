@@ -1,7 +1,7 @@
 /** Chunk was on 43549 **/
 /** chunk id: 842144, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => c
 });
 var i, l, Chunk311907 = require("./311907.js"),
   Chunk873298 = require("./873298.js"),
@@ -10,7 +10,7 @@ var i, l, Chunk311907 = require("./311907.js"),
 let s = false,
   d = {},
   E = {};
-class c extends(l = Chunk311907.Ay.Store) {
+class _ extends(l = Chunk311907.Ay.Store) {
   getSettings(t) {
     return d[t]
   }
@@ -31,13 +31,13 @@ class c extends(l = Chunk311907.Ay.Store) {
   get isLoading() {
     return s
   }
-}(i = "displayName") in c ? Object.defineProperty(c, i, {
+}(i = "displayName") in _ ? Object.defineProperty(_, i, {
   value: "FamilyCenterControlledSettingsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : c[i] = "FamilyCenterControlledSettingsStore";
-let _ = new c(Chunk73153.h, {
+}) : _[i] = "FamilyCenterControlledSettingsStore";
+let c = new _(Chunk73153.h, {
   FAMILY_CENTER_TEEN_SETTINGS_FETCH_START: function() {
     s = true
   },

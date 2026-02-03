@@ -4,32 +4,32 @@ require.d(exports, {
   EC: () => y,
   Ef: () => L,
   Gg: () => I,
-  MH: () => U,
+  MH: () => m,
   NV: () => v,
   PH: () => p,
   QM: () => R,
-  Y7: () => f,
+  Y7: () => A,
   dI: () => Y,
   fD: () => S,
   h4: () => C,
   he: () => h,
   iN: () => b,
   jZ: () => N,
-  kp: () => A,
+  kp: () => f,
   lu: () => F,
   ly: () => M,
   nz: () => g,
   qb: () => O,
   u9: () => D,
-  zu: () => m
+  zu: () => U
 }), require("./896048.js");
 var i, l, r, a, o, u, s, d, Chunk323125 = require("./323125.js"),
   Chunk927813 = require("./927813.js"),
   Chunk842130 = require("./842130.js"),
   Chunk985018 = require("./985018.jsx");
 let S = 30 * Chunk927813.A.Millis.SECOND,
-  f = 8,
-  A = 3,
+  A = 8,
+  f = 3,
   C = 26,
   I = 64,
   N = (t, e) => "https://discord.com/feature/family-center/my-family/".concat(t, "/").concat(e),
@@ -44,103 +44,103 @@ var R = ((i = {})[i.PARENT = 1] = "PARENT", i[i.CHILD = 2] = "CHILD", i),
   L = ((l = {})[l.PENDING = 1] = "PENDING", l[l.ACTIVE = 2] = "ACTIVE", l[l.INACTIVE = 3] = "INACTIVE", l[l.DECLINED = 4] = "DECLINED", l[l.EXPIRED = 5] = "EXPIRED", l),
   v = ((r = {})[r.USER_ADD = 1] = "USER_ADD", r[r.GUILD_ADD = 2] = "GUILD_ADD", r[r.USER_INTERACTION = 3] = "USER_INTERACTION", r[r.GUILD_INTERACTION = 4] = "GUILD_INTERACTION", r[r.USER_CALLED = 5] = "USER_CALLED", r[r.TOTAL_VOICE_MINUTES = 6] = "TOTAL_VOICE_MINUTES", r[r.PURCHASES = 7] = "PURCHASES", r),
   D = ((a = {}).ACTIVITY = "ACTIVITY", a.REQUESTS = "REQUESTS", a.SETTINGS = "SETTINGS", a.CONTENT_AND_SOCIAL = "CONTENT_AND_SOCIAL", a.DATA_AND_PRIVACY = "DATA_AND_PRIVACY", a),
-  m = ((o = {})[o.ACTIVITY = 0] = "ACTIVITY", o[o.REQUESTS = 1] = "REQUESTS", o[o.SETTINGS = 2] = "SETTINGS", o[o.CONTENT_AND_SOCIAL = 3] = "CONTENT_AND_SOCIAL", o[o.DATA_AND_PRIVACY = 4] = "DATA_AND_PRIVACY", o),
-  U = ((u = {}).SIDENAV = "SIDENAV", u.SETTINGS = "SETTINGS", u),
+  U = ((o = {})[o.ACTIVITY = 0] = "ACTIVITY", o[o.REQUESTS = 1] = "REQUESTS", o[o.SETTINGS = 2] = "SETTINGS", o[o.CONTENT_AND_SOCIAL = 3] = "CONTENT_AND_SOCIAL", o[o.DATA_AND_PRIVACY = 4] = "DATA_AND_PRIVACY", o),
+  m = ((u = {}).SIDENAV = "SIDENAV", u.SETTINGS = "SETTINGS", u),
   b = ((s = {})[s.SIDENAV = 0] = "SIDENAV", s[s.SETTINGS = 1] = "SETTINGS", s),
   O = ((d = {})[d.TabChange = 0] = "TabChange", d[d.ShowQRCodeModal = 1] = "ShowQRCodeModal", d[d.RevealQRCode = 2] = "RevealQRCode", d[d.ScanQRCodeButton = 3] = "ScanQRCodeButton", d[d.ScanQRCode = 4] = "ScanQRCode", d[d.LoadMore = 5] = "LoadMore", d[d.SelectTeen = 6] = "SelectTeen", d[d.HideQRCode = 7] = "HideQRCode", d);
 let M = new Map([
     [3, {
       priority: 100,
-      tooltipHeader: () => T.intl.string(_.default.kvTgWP),
-      tooltipDescription: t => t ? T.intl.string(_.default.w4wmnb) : T.intl.string(_.default.foTzbd),
-      sectionHeader: t => T.intl.formatToPlainString(_.default["4T3zWT"], {
+      tooltipHeader: () => T.intl.string(c.default.kvTgWP),
+      tooltipDescription: t => t ? T.intl.string(c.default.w4wmnb) : T.intl.string(c.default.foTzbd),
+      sectionHeader: t => T.intl.formatToPlainString(c.default["4T3zWT"], {
         count: t
       }),
-      sectionDescription: t => t ? T.intl.string(_.default.w4wmnb) : T.intl.string(_.default.foTzbd),
+      sectionDescription: t => t ? T.intl.string(c.default.w4wmnb) : T.intl.string(c.default.foTzbd),
       timestampFormatter: () => ({
-        today: T.intl.string(_.default.fLBUx7),
-        yesterday: T.intl.string(_.default.cHHgxI),
-        days: _.default.qvKjp8
+        today: T.intl.string(c.default.fLBUx7),
+        yesterday: T.intl.string(c.default.cHHgxI),
+        days: c.default.qvKjp8
       })
     }],
     [5, {
       priority: 200,
-      tooltipHeader: () => T.intl.string(_.default.D7Sngz),
-      tooltipDescription: t => t ? T.intl.string(_.default.aiAhnQ) : T.intl.string(_.default["4ufgdz"]),
-      sectionHeader: t => T.intl.formatToPlainString(_.default["0GE4Ni"], {
+      tooltipHeader: () => T.intl.string(c.default.D7Sngz),
+      tooltipDescription: t => t ? T.intl.string(c.default.aiAhnQ) : T.intl.string(c.default["4ufgdz"]),
+      sectionHeader: t => T.intl.formatToPlainString(c.default["0GE4Ni"], {
         count: t
       }),
-      sectionDescription: t => t ? T.intl.string(_.default.aiAhnQ) : T.intl.string(_.default["4ufgdz"]),
+      sectionDescription: t => t ? T.intl.string(c.default.aiAhnQ) : T.intl.string(c.default["4ufgdz"]),
       timestampFormatter: () => ({
-        today: T.intl.string(_.default.IHd5cZ),
-        yesterday: T.intl.string(_.default.wOsfxv),
-        days: _.default.oCk8c4
+        today: T.intl.string(c.default.IHd5cZ),
+        yesterday: T.intl.string(c.default.wOsfxv),
+        days: c.default.oCk8c4
       })
     }],
     [1, {
       priority: 300,
-      tooltipHeader: () => T.intl.string(_.default.kIcKAj),
-      tooltipDescription: t => t ? T.intl.string(_.default.BkVb1X) : T.intl.string(_.default.mpHHfa),
-      sectionHeader: t => T.intl.formatToPlainString(_.default["TEvo+H"], {
+      tooltipHeader: () => T.intl.string(c.default.kIcKAj),
+      tooltipDescription: t => t ? T.intl.string(c.default.BkVb1X) : T.intl.string(c.default.mpHHfa),
+      sectionHeader: t => T.intl.formatToPlainString(c.default["TEvo+H"], {
         count: t
       }),
-      sectionDescription: t => t ? T.intl.string(_.default.BkVb1X) : T.intl.string(_.default.mpHHfa),
+      sectionDescription: t => t ? T.intl.string(c.default.BkVb1X) : T.intl.string(c.default.mpHHfa),
       timestampFormatter: () => ({
-        today: T.intl.string(_.default.JUHIYZ),
-        yesterday: T.intl.string(_.default.GiswUW),
-        days: _.default["fwQgE/"]
+        today: T.intl.string(c.default.JUHIYZ),
+        yesterday: T.intl.string(c.default.GiswUW),
+        days: c.default["fwQgE/"]
       })
     }],
     [2, {
       priority: 400,
-      tooltipHeader: () => T.intl.string(_.default.uav9Bh),
-      tooltipDescription: t => t ? T.intl.string(_.default.LVNgTD) : T.intl.string(_.default.TA8GFt),
-      sectionHeader: t => T.intl.formatToPlainString(_.default["7feG7T"], {
+      tooltipHeader: () => T.intl.string(c.default.uav9Bh),
+      tooltipDescription: t => t ? T.intl.string(c.default.LVNgTD) : T.intl.string(c.default.TA8GFt),
+      sectionHeader: t => T.intl.formatToPlainString(c.default["7feG7T"], {
         count: t
       }),
-      sectionDescription: t => t ? T.intl.string(_.default.LVNgTD) : T.intl.string(_.default.TA8GFt)
+      sectionDescription: t => t ? T.intl.string(c.default.LVNgTD) : T.intl.string(c.default.TA8GFt)
     }],
     [4, {
       priority: 500,
-      tooltipHeader: () => T.intl.string(_.default.CcrbCw),
-      tooltipDescription: t => t ? T.intl.string(_.default.BLgIrk) : T.intl.string(_.default.sSJauZ),
-      sectionHeader: t => T.intl.formatToPlainString(_.default.rcPInc, {
+      tooltipHeader: () => T.intl.string(c.default.CcrbCw),
+      tooltipDescription: t => t ? T.intl.string(c.default.BLgIrk) : T.intl.string(c.default.sSJauZ),
+      sectionHeader: t => T.intl.formatToPlainString(c.default.rcPInc, {
         count: t
       }),
-      sectionDescription: t => t ? T.intl.string(_.default.BLgIrk) : T.intl.string(_.default.sSJauZ)
+      sectionDescription: t => t ? T.intl.string(c.default.BLgIrk) : T.intl.string(c.default.sSJauZ)
     }],
     [6, {
       priority: 175,
-      tooltipHeader: () => T.intl.string(_.default.eo4Fxh),
-      tooltipDescription: () => T.intl.string(_.default["O/AElu"]),
-      sectionHeader: t => T.intl.formatToPlainString(_.default.eGFWUd, {
+      tooltipHeader: () => T.intl.string(c.default.eo4Fxh),
+      tooltipDescription: () => T.intl.string(c.default["O/AElu"]),
+      sectionHeader: t => T.intl.formatToPlainString(c.default.eGFWUd, {
         count: t
       }),
-      sectionDescription: () => T.intl.string(_.default["O/AElu"])
+      sectionDescription: () => T.intl.string(c.default["O/AElu"])
     }],
     [7, {
       priority: 150,
-      tooltipHeader: () => T.intl.string(_.default.NMYKsh),
-      tooltipDescription: t => t ? T.intl.string(_.default.cqIdqZ) : T.intl.string(_.default["85PtWu"]),
-      sectionHeader: t => T.intl.formatToPlainString(_.default.FPViWL, {
+      tooltipHeader: () => T.intl.string(c.default.NMYKsh),
+      tooltipDescription: t => t ? T.intl.string(c.default.cqIdqZ) : T.intl.string(c.default["85PtWu"]),
+      sectionHeader: t => T.intl.formatToPlainString(c.default.FPViWL, {
         amount: t
       }),
-      sectionDescription: t => t ? T.intl.string(_.default.cqIdqZ) : T.intl.string(_.default["85PtWu"])
+      sectionDescription: t => t ? T.intl.string(c.default.cqIdqZ) : T.intl.string(c.default["85PtWu"])
     }]
   ]),
   F = () => ({
-    seconds: T.intl.string(_.default.CJdoee),
-    minutes: _.default.InzMn3,
-    hours: _.default.ErkYCI,
-    yesterday: T.intl.string(_.default.GvfssA),
-    days: _.default.pWig18,
-    date: _.default.MP3khg
+    seconds: T.intl.string(c.default.CJdoee),
+    minutes: c.default.InzMn3,
+    hours: c.default.ErkYCI,
+    yesterday: T.intl.string(c.default.GvfssA),
+    days: c.default.pWig18,
+    date: c.default.MP3khg
   }),
   Y = () => ({
-    seconds: T.intl.string(_.default.Bqsamd),
-    minutes: _.default.kX3wJg,
-    hours: _.default.J18GbG,
-    yesterday: T.intl.string(_.default.Ln9zMn),
-    days: _.default.WRtySz,
-    date: _.default.Y3ZYtM
+    seconds: T.intl.string(c.default.Bqsamd),
+    minutes: c.default.kX3wJg,
+    hours: c.default.J18GbG,
+    yesterday: T.intl.string(c.default.Ln9zMn),
+    days: c.default.WRtySz,
+    date: c.default.Y3ZYtM
   })

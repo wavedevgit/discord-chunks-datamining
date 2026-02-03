@@ -159,6 +159,13 @@ let y = (0, Chunk265690.h)()((0, Chunk499867.Zr)((e, t) => ({
         })
       })
     },
+    clearAllVideoProgress: () => {
+      (0, a.r)(() => {
+        e({
+          videoProgress: {}
+        })
+      })
+    },
     setTranscriptAsset: t => {
       (0, a.r)(() => {
         e({

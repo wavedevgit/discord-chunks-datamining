@@ -549,6 +549,10 @@ let i = {
   HavenManager: {
     actions: ["HAVEN_DISCONNECT"],
     inlineRequire: () => n(63446).A
+  },
+  RestrictedHoursManager: {
+    inlineRequire: () => n(425116).A,
+    hasStoreChangeListeners: true
   }
 };
 (0, Chunk928439.n)(i)

@@ -1,9 +1,10 @@
-/** Chunk was on 43549 **/
-/** chunk id: 936926, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 936926, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Eq: () => l
+  Eq: () => i
 });
-let i = (0, require("./945810.js").mj)({
+let r = (0, require("./945810.js").mj)({
   kind: "user",
   name: "2026-01-family-center-v3",
   defaultConfig: {
@@ -19,11 +20,11 @@ let i = (0, require("./945810.js").mj)({
   }
 });
 
-function l(t) {
+function i(e) {
   let {
-    location: e
-  } = t;
-  return i.getConfig({
-    location: e
+    location: t
+  } = e;
+  return r.getConfig({
+    location: t
   }).enabled
 }

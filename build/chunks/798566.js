@@ -247,7 +247,7 @@ j(function() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("492783", 10);
+  let i = parseInt("492822", 10);
   isNaN(i) || (n.client_build_number = i);
   let a = null == b || null == (e = (t = b.remoteApp).getBuildNumber) ? true : e.call(t);
   return isNaN(a) || (n.native_build_number = a), n.client_event_source = N(), n.has_client_mods = (0, l.b)(), n.client_launch_id = f.C, n
