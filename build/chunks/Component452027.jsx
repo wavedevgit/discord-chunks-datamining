@@ -148,7 +148,8 @@ function g(e) {
     }), null != O ? (0, r.jsx)("span", {
       className: f.fC,
       children: (0, r.jsx)(o.E, {
-        type: O
+        type: O,
+        variant: "brand"
       })
     }) : null]
   }) : null, B = (0, r.jsx)(E, {

@@ -601,6 +601,25 @@ let {
         opacity: 1
       }
     },
+    BADGE_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: .16
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_400",
+        opacity: .16
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_11",
+        opacity: .2
+      },
+      [r.DARKER]: {
+        raw: "PLUM_11",
+        opacity: .16
+      }
+    },
     BADGE_NOTIFICATION_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -617,6 +636,25 @@ let {
       },
       [r.DARKER]: {
         raw: "RED_400",
+        opacity: 1
+      }
+    },
+    BADGE_TEXT_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_230",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_600",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_4",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_6",
         opacity: 1
       }
     },

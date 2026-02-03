@@ -77,7 +77,9 @@ function p(e) {
   let n = (0, o.U)(t);
   return (0, r.jsx)("div", {
     className: c.badgeContainer,
-    children: (0, r.jsx)(o.E, d({}, n))
+    children: (0, r.jsx)(o.E, d({
+      variant: "brand"
+    }, n))
   })
 }
 

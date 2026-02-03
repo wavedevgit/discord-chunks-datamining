@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 549794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => T
+  A: () => S
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk420970 = require("./420970.js"),
@@ -23,25 +23,9 @@ var Chunk665260 = require("./665260.js"),
   Chunk629471 = require("./629471.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js"),
-  Chunk360469 = require("./360469.js"),
-  Chunk705751 = require("./705751.js");
-let S = new Set([Chunk360469.AM, Chunk360469.eK]),
-  C = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
-  N = new Map([
-    [Chunk705751.aw, {
-      trustedHosts: C,
-      trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
-    }],
-    [Chunk705751.v4, {
-      trustedHosts: C,
-      trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
-    }],
-    [Chunk705751.Yl, {
-      trustedHosts: C,
-      trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
-    }]
-  ]),
-  T = {
+  Chunk360469 = require("./360469.js");
+let v = new Set([Chunk360469.AM, Chunk360469.eK]),
+  S = {
     [Chunk652215.e$_.OPEN_EXTERNAL_LINK]: {
       scope: {
         [Chunk613057.sm.ANY]: [Chunk613057.VH, Chunk613057.W_]
@@ -59,56 +43,47 @@ let S = new Set([Chunk360469.AM, Chunk360469.eK]),
         (0, b.lG)(t.transport);
         let r = s.Ay.getCurrentEmbeddedActivity();
         try {
-          var i, c, h;
-          let e = new URL(n),
-            s = e.toString();
+          var i, c;
+          let e = new URL(n).toString();
           if (A.isPlatformEmbedded) {
             let e = (0, a.f)() ? y.MLl.ACTIVITY_POPOUT : null;
             m.A.focus(e, true)
           }
-          let _ = p.A.getApplication(null == (i = t.application) ? true : i.id),
-            b = (0, u.H)(null == r ? true : r.location);
-          if (await (0, d.u)(null == _ ? true : _.id, s)) return (0, l.A)(s), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+          let s = p.A.getApplication(null == (i = t.application) ? true : i.id),
+            h = (0, u.H)(null == r ? true : r.location);
+          if (await (0, d.u)(null == s ? true : s.id, e)) return (0, l.A)(e), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (c = t.application) ? true : c.id,
-            url: s,
+            url: e,
             opened: true
           }), Promise.resolve({
             opened: true
           });
-          let E = (null == _ ? true : _.id) !== true ? N.get(_.id) : true;
-          if (true !== E && E.trustedUntilEpochMs >= Date.now() && E.trustedHosts.has(e.host)) return (0, l.A)(s), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
-            application_id: null == (h = t.application) ? true : h.id,
-            url: s,
-            opened: true
-          }), Promise.resolve({
-            opened: true
-          });
-          return new Promise(e => (0, f.h)({
-            href: s,
+          return new Promise(n => (0, f.h)({
+            href: e,
             shouldConfirm: true,
             onConfirm: () => {
-              var n;
-              (0, l.A)(s), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
-                application_id: null == (n = t.application) ? true : n.id,
-                url: s,
+              var r;
+              (0, l.A)(e), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                application_id: null == (r = t.application) ? true : r.id,
+                url: e,
                 opened: true
-              }), e({
+              }), n({
                 opened: true
               })
             },
             onCancel: () => {
-              var n;
+              var r;
               g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
-                application_id: null == (n = t.application) ? true : n.id,
-                url: s,
+                application_id: null == (r = t.application) ? true : r.id,
+                url: e,
                 opened: false
-              }), e({
+              }), n({
                 opened: false
               })
             }
           }, true, true, (0, o.j)({
-            application: _,
-            channelId: b
+            application: s,
+            channelId: h
           })))
         } catch (e) {
           throw new _.A({
@@ -128,7 +103,7 @@ let S = new Set([Chunk360469.AM, Chunk360469.eK]),
         } = e;
         (0, b.lG)(t.transport);
         let r = (0, b.D2)(t.application);
-        if (!S.has(r)) throw new _.A({
+        if (!v.has(r)) throw new _.A({
           errorCode: y.Lw6.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {

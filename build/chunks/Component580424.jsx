@@ -183,7 +183,8 @@ class K extends W {
       children: [(0, i.jsx)(P.oC, {
         children: (0, i.jsxs)(P.dB, {
           children: [e, " ", null != n && (0, i.jsx)(d.E, {
-            type: n
+            type: n,
+            variant: "brand"
           })]
         })
       }), null != t ? (0, i.jsx)(P.Aq, {

@@ -268,7 +268,9 @@ function R(e) {
   return (0, r.jsx)("div", {
     className: E.headerBadge,
     "data-position": n,
-    children: (0, r.jsx)(l.E, b({}, i))
+    children: (0, r.jsx)(l.E, b({
+      variant: "brand"
+    }, i))
   })
 }
 

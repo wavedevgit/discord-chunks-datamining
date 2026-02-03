@@ -107,7 +107,8 @@ function j(e) {
             }), null != X && (0, r.jsx)(s.E, {
               type: {
                 text: X
-              }
+              },
+              variant: "brand"
             }), (0, r.jsx)(u.Heading, {
               className: o()(N.DD, {
                 [N.GU]: null != X
