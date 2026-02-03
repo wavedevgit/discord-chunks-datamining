@@ -79,13 +79,18 @@ let l = e => e,
       padding: 0,
       children: [{
         block: "Grid",
-        columns: 6,
+        columns: 3,
         children: [{
           block: "ShopProductCard",
           skuId: l("1458472704167379109")
         }, {
-          block: "ShopProductCard",
-          skuId: l("1458472704079434020")
+          block: "GridItem",
+          columns: 2,
+          rows: 2,
+          children: [{
+            block: "ShopProductCard",
+            skuId: l("1458472704079434020")
+          }]
         }, {
           block: "ShopProductCard",
           skuId: l("1458472704251396148")
@@ -97,10 +102,15 @@ let l = e => e,
           skuId: l("1447654090439004170")
         }, {
           block: "ShopProductCard",
-          skuId: l("1428438925021548544")
-        }, {
-          block: "ShopProductCard",
           skuId: l("1458472704435945653")
+        }, {
+          block: "GridItem",
+          columns: 2,
+          rows: 1,
+          children: [{
+            block: "ShopProductCard",
+            skuId: l("1428438925021548544")
+          }]
         }, {
           block: "ShopProductCard",
           skuId: l("1428438924564631663")

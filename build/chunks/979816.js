@@ -1,37 +1,38 @@
-/** Chunk was on 59541 **/
-/** chunk id: 979816, original params: t,i,n (module,exports,require) **/
+/** Chunk was on 92869 **/
+/** chunk id: 979816, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  XO: () => A,
+  XO: () => p,
   hX: () => o,
-  iI: () => a,
-  i_: () => S
+  iI: () => u,
+  i_: () => c
 });
 var Chunk311907 = require("./311907.js"),
   Chunk71393 = require("./71393.js"),
   Chunk576705 = require("./576705.js"),
   Chunk652215 = require("./652215.js");
-let l = function(t) {
-  let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.A,
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : E.A,
-    e = i.getGuild(t);
-  return null != e && n.can(s.xBc.MANAGE_GUILD, e)
+let l = function(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.A,
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a.A,
+    s = t.getGuild(e);
+  return null != s && n.can(i.xBc.MANAGE_GUILD, s)
 };
 
-function S(t) {
-  return null != t && l(t)
+function c(e) {
+  return null != e && l(e)
 }
 
-function o(t) {
-  return l(t)
+function o(e) {
+  return l(e)
 }
 
-function a(t) {
-  return (0, e.bG)([r.A, E.A], () => l(t, r.A, E.A), [t])
+function u(e) {
+  return (0, s.bG)([r.A, a.A], () => l(e, r.A, a.A), [e])
 }
 
-function A(t) {
-  return (0, e.bG)([r.A], () => {
-    let i = r.A.getGuild(t);
-    return (null == i ? true : i.features.has(s.GuildFeatures.COMMUNITY)) || false
-  }, [t])
+function p(e) {
+  return (0, s.bG)([r.A], () => {
+    let t = r.A.getGuild(e);
+    return (null == t ? true : t.features.has(i.GuildFeatures.COMMUNITY)) || false
+  }, [e])
 }

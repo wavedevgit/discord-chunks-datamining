@@ -21,7 +21,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk649032 = require("./649032.js"),
   Chunk26508 = require("./26508.js"),
   Chunk622543 = require("./622543.js"),
-  Chunk94343 = require("./94343.js"),
   Chunk576622 = require("./576622.js"),
   Chunk166403 = require("./166403.js"),
   Chunk954571 = require("./954571.js"),
@@ -36,6 +35,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk891858 = require("./891858.jsx"),
   Chunk807676 = require("./807676.jsx"),
   Chunk322631 = require("./322631.js"),
+  Chunk994763 = require("./994763.js"),
   Chunk788868 = require("./788868.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
@@ -48,14 +48,14 @@ let H = e => {
   i.useEffect(() => {
     u.h.wait(async () => {
       let e = [(0, A.Ay)()];
-      null != t && e.push((0, x.A)(t)), await Promise.all(e)
+      null != t && e.push((0, O.A)(t)), await Promise.all(e)
     })
   }, [t]), i.useEffect(() => {
-    Z(true)
+    X(true)
   }, []), (0, g.P)(m.b);
   let H = i.useRef(null),
     V = i.useRef(null),
-    F = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
+    F = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
     {
       isReady: Y,
       programReward: W
@@ -63,54 +63,55 @@ let H = e => {
       isReady: f.A.isReady(),
       programReward: f.A.getRewardForProgram(b.W.NITRO)
     })),
-    K = i.useMemo(() => !!Y && "orbs" === new URLSearchParams(n.search).get("section"), [n.search, Y]);
-  (0, O.A)(l, K);
-  let [z, Z] = i.useState(false), X = (0, I.p)(), q = i.useRef(null), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = null != X && null != F && F.status === G.Dmq.CANCELED, en = (0, N.iU)(M.gD.PREMIUM_MONTH_TIER_2, X, F), er = !$ && et, {
-    analyticsLocations: ei
-  } = (0, p.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [el, es] = i.useState(false), ea = (0, o.bG)([E.A], () => null != t ? E.A.getUserProfile(t) : null), eo = (0, T.A)({
+    K = (0, h.Qs)("PremiumSubscriberHome"),
+    z = i.useMemo(() => !!Y && null != W && !!K && "orbs" === new URLSearchParams(n.search).get("section"), [n.search, Y, W, K]);
+  (0, w.A)(l, z);
+  let [Z, X] = i.useState(false), q = (0, T.p)(), J = i.useRef(null), [Q, $] = i.useState(false), [ee, et] = i.useState(false), en = null != q && null != F && F.status === G.Dmq.CANCELED, er = (0, I.iU)(M.gD.PREMIUM_MONTH_TIER_2, q, F), ei = !ee && en, {
+    analyticsLocations: el
+  } = (0, p.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [es, ea] = i.useState(false), eo = (0, o.bG)([E.A], () => null != t ? E.A.getUserProfile(t) : null), ec = (0, S.A)({
     location: "PremiumSubscriberHome"
   });
-  return null != ea && (Y || null != W) ? (0, r.jsxs)(r.Fragment, {
+  return null != eo && (Y || null != W) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.GtU, {
       className: k.xW,
       ref: H,
       children: [(0, r.jsx)(d.hLv, {
         color: "nitro-pink",
         className: s()(k.kL, k.Gd, {
-          [k.fv]: !eo
+          [k.fv]: !ec
         }),
         children: (0, r.jsxs)(p.f5, {
-          value: ei,
+          value: el,
           children: [(0, r.jsx)(c.L, {
-            innerRef: q,
-            onChange: e => ee(e),
+            innerRef: J,
+            onChange: e => et(e),
             threshold: .1,
             active: true,
-            children: (0, r.jsx)(P.A, {
-              buttonVisibilityRef: q,
+            children: (0, r.jsx)(v.A, {
+              buttonVisibilityRef: J,
               className: k.v1,
-              enablePremiumBrandRefresh: eo,
-              userDiscountOffer: X,
-              discountedPrice: en
+              enablePremiumBrandRefresh: ec,
+              userDiscountOffer: q,
+              discountedPrice: er
             })
-          }), (0, r.jsx)(y.A, {
-            variant: w.cJ.WHATS_NEW,
+          }), (0, r.jsx)(j.A, {
+            variant: L.cJ.WHATS_NEW,
             className: k.Iw,
             noBackground: true,
             leftAlignHeaders: true
-          }), (0, r.jsx)(y.A, {
-            className: k.xU,
-            variant: w.cJ.PERKS_DISCOVERABILITY,
-            noBackground: true,
-            leftAlignHeaders: true,
-            showAllPerksButton: (0, r.jsx)(L.A, {
-              setIsAllPerksVisible: Q,
-              previousComponent: w.A2.HOME
-            })
-          }), null != W && (0, h.T0)("PremiumSubscriberHome") && (0, r.jsx)(R.A, {
+          }), null != W && K && (0, r.jsx)(P.A, {
             location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION,
             sectionRef: l
-          }), (0, r.jsx)(v.A, {
+          }), (0, r.jsx)(j.A, {
+            className: k.xU,
+            variant: L.cJ.PERKS_DISCOVERABILITY,
+            noBackground: true,
+            leftAlignHeaders: true,
+            showAllPerksButton: (0, r.jsx)(D.A, {
+              setIsAllPerksVisible: $,
+              previousComponent: L.A2.HOME
+            })
+          }), (0, r.jsx)(y.A, {
             className: k.Zy,
             location: _.A.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
@@ -122,9 +123,9 @@ let H = e => {
           }), (0, r.jsx)(c.L, {
             innerRef: V,
             onChange: e => {
-              e && !el && (S.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: ei
-              }), es(true))
+              e && !es && (C.default.track(G.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                location_stack: el
+              }), ea(true))
             },
             children: (0, r.jsx)("div", {
               ref: V,
@@ -138,17 +139,17 @@ let H = e => {
             alt: U.intl.string(U.t.X4IxWL)
           })]
         })
-      }), et && null != en && (0, r.jsx)(j.A, {
-        isVisible: er && z,
+      }), en && null != er && (0, r.jsx)(N.A, {
+        isVisible: ei && Z,
         premiumSubscription: F,
-        churnDiscountOffer: X,
-        discountedPrice: en
+        churnDiscountOffer: q,
+        discountedPrice: er
       })]
-    }), (0, r.jsx)(D.A, {
-      isAllPerksVisible: J,
-      setIsAllPerksVisible: Q,
-      previousComponent: w.A2.HOME,
-      enablePremiumBrandRefresh: eo
+    }), (0, r.jsx)(R.A, {
+      isAllPerksVisible: Q,
+      setIsAllPerksVisible: $,
+      previousComponent: L.A2.HOME,
+      enablePremiumBrandRefresh: ec
     })]
   }) : (0, r.jsx)("div", {
     className: s()(k.kL, k.Lq),

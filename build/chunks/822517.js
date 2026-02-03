@@ -1,9 +1,10 @@
-/** Chunk was on 55150 **/
-/** chunk id: 822517, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 92869 **/
+/** chunk id: 822517, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  A: () => l
+  A: () => s
 });
-let l = (0, require("./945810.js").mj)({
+let s = (0, require("./945810.js").mj)({
   name: "2025-09-cmc-refresh",
   kind: "user",
   defaultConfig: {

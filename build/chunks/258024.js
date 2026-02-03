@@ -136,10 +136,17 @@ class C {
       if (this.isLoading()) return;
       let n = E(e.messages);
       if (null == n || this.isJumping() || e.messages.jumpSequenceId === t.jumpSequenceId) {
-        if (this.isJumping()) return void(null != n ? this.scrollToMessage(n, true) : this.jumping = false)
+        if (this.isJumping()) return void(null != n ? this.scrollToMessage({
+          jumpTargetId: n,
+          animate: true
+        }) : this.jumping = false)
       } else {
         let l, r = t.first();
-        null != r && e.messages.last() !== t.last() && e.messages.first() !== t.first() && (l = m.default.extractTimestamp(r.id)), this.scrollToMessage(n, true, l);
+        null != r && e.messages.last() !== t.last() && e.messages.first() !== t.first() && (l = m.default.extractTimestamp(r.id)), this.scrollToMessage({
+          jumpTargetId: n,
+          animate: true,
+          fromTimestamp: l
+        });
         return
       }
     }
@@ -384,7 +391,17 @@ class C {
     } = this;
     this.initialScrollTop = true;
     let t = E(this.props.messages);
-    null != t ? this.scrollToMessage(t, false) : this.props.hasUnreads && this.props.channel.type !== y.rbe.GUILD_VOICE && this.props.channel.type !== y.rbe.GUILD_STAGE_VOICE ? ((0, g.x)(this.props.channel, this.props.messages), this.scrollToNewMessages()) : null != e ? this.scrollTo(e + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
+    if (null != t) this.scrollToMessage({
+      jumpTargetId: t,
+      animate: false
+    });
+    else if (this.props.hasUnreads && this.props.channel.type !== y.rbe.GUILD_VOICE && this.props.channel.type !== y.rbe.GUILD_STAGE_VOICE) {
+      let e = (0, g.i)(this.props.channel, this.props.messages);
+      null != e ? this.scrollToMessage({
+        jumpTargetId: e,
+        animate: false
+      }) : this.scrollToNewMessages()
+    } else null != e ? this.scrollTo(e + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
   }
   scrollTo(e) {
     var t;
@@ -449,18 +466,21 @@ class C {
     })
   }
   scrollToMessage(e) {
-    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = arguments.length > 2 ? arguments[2] : true;
+    let {
+      jumpTargetId: t,
+      animate: n = false,
+      fromTimestamp: l
+    } = e;
     if (null == this.ref.current) return;
-    if (e === this.props.channel.id) return void this.scrollTo(0);
-    let l = this.getElementFromMessageId(e);
-    this.isJumping() || !t || null == n || u.A.useReducedMotion || (m.default.extractTimestamp(e) > n ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = false, this.jumping = true;
-    let r = () => {
-      this.jumping = false, (0, a.vq)(l) && (l.tabIndex = false, l.focus({
+    if (t === this.props.channel.id) return void this.scrollTo(0);
+    let r = this.getElementFromMessageId(t);
+    this.isJumping() || !n || null == l || u.A.useReducedMotion || (m.default.extractTimestamp(t) > l ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = false, this.jumping = true;
+    let i = () => {
+      this.jumping = false, (0, a.vq)(r) && (r.tabIndex = false, r.focus({
         preventScroll: true
       })), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
     };
-    (0, a.vq)(l) ? this.scrollTo(this.getOffsetOrientationFromNode(l, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : _.mZ), t, r): this.scrollToNewMessages(t, "middle", r)
+    (0, a.vq)(r) ? this.scrollTo(this.getOffsetOrientationFromNode(r, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : _.mZ), n, i): this.scrollToNewMessages(n, "middle", i)
   }
   getOffsetToTriggerLoading(e, t) {
     let {

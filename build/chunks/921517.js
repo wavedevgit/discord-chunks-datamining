@@ -1,13 +1,13 @@
 /** Chunk was on 31294 **/
 /** chunk id: 921517, original params: e,t,_ (module,exports,require) **/
 require.d(exports, {
-  RL: () => r,
+  RL: () => c,
   sH: () => i
 });
 var Chunk933681 = require("./933681.js"),
   Chunk945810 = require("./945810.js"),
   Chunk654487 = require("./654487.js");
-let c = (0, Chunk945810.mj)({
+let r = (0, Chunk945810.mj)({
   name: "2026-01-quest-bar-unfurl",
   kind: "user",
   defaultConfig: {
@@ -26,7 +26,7 @@ let c = (0, Chunk945810.mj)({
   }
 });
 
-function r(e) {
+function c(e) {
   return e.features.includes(o.Li.QUEST_BAR_UNFURL)
 }
 
@@ -34,7 +34,7 @@ function i() {
   let {
     enabled: e,
     variant: t
-  } = c.useConfig({
+  } = r.useConfig({
     location: o.rE.QUESTS_BAR
   });
   return {

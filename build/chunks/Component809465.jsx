@@ -1,4 +1,4 @@
-/** Chunk was on 42402 **/
+/** Chunk was on 44669 **/
 /** chunk id: 809465, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -54,7 +54,7 @@ function A(e) {
   var t, n, l, s, A;
   let {
     compact: y = false
-  } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, x = "492642", _ = "f833c9fb1731dcd4cb5c4e1be541316fe26996c0".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), E = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), C = null === c.A || true === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? true : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? true : A.discord_web, I = function() {
+  } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, x = "492696", _ = "2cfdddd3312a85ab898a432de3ba3597ab28b7fe".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), E = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), C = null === c.A || true === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? true : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? true : A.discord_web, I = function() {
     var e;
     let t = null === a() || true === a() || null == (e = a().os) ? true : e.toString();
     if (null == t || null == c.A) return null;

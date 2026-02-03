@@ -1,33 +1,34 @@
 /** Chunk was on 9207 **/
 /** chunk id: 39043, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => u
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
+  Chunk735438 = require("./735438.js"),
   Chunk942381 = require("./942381.js"),
+  Chunk770178 = require("./770178.js"),
   Chunk894858 = require("./894858.js"),
   Chunk641324 = require("./641324.jsx"),
   Chunk78837 = require("./78837.jsx");
-let c = Chunk64700.memo(function(e) {
+let u = Chunk64700.memo(function(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
-    layout: c,
-    useCollapsedSubtitle: d
-  } = t, [u, _] = i.useState(false), [p, m] = i.useState(true);
-  i.useEffect(() => s.A.subscribe(e => {
+    layout: u,
+    useCollapsedSubtitle: _
+  } = t, [p, m] = i.useState(false), [g, A] = i.useState(true), f = i.useRef(p);
+  i.useEffect(() => o.A.subscribe(e => {
     let {
       navTransition: t
     } = e;
     return t
   }, e => {
-    if (null == e) return;
     let n = (null == e ? true : e.targetAccordionKey) === t.key;
-    if (n && !u && (_(true), m(false)), n && u) {
+    if (n && !p && (f.current = true, m(true), A(false)), n && p) {
       var r, i;
-      s.A.setState({
+      o.A.setState({
         navTransition: (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -57,32 +58,34 @@ let c = Chunk64700.memo(function(e) {
         })(Object(i)).forEach(function(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r)
-      }), m(true)
+      }), A(true)
     }
   }, {
-    equalityFn: l.x,
+    equalityFn: s.x,
     fireImmediately: true
-  }), [u, t.key]);
-  let g = null == n ? true : n(u),
-    A = null == d ? true : d(),
-    f = i.useCallback(e => {
-      e && s.A.setState({
+  }), [p, t.key]);
+  let b = i.useCallback(e => {
+      null == e.target || f.current === p || (f.current = p, p && o.A.setState({
         navTransition: {
           targetKey: t.key,
           targetAccordionKey: t.key,
           animateScroll: true,
           scrollBlock: "nearest"
         }
-      })
-    }, [t.key]);
-  return (0, r.jsx)(o.f, {
-    title: g,
-    collapsedSubtitle: A,
-    isExpanded: u,
-    onExpandedChange: _,
-    onExpandedChangeComplete: f,
-    animate: p,
-    children: c.map(e => (0, r.jsx)(a.A, {
+      }))
+    }, [p, t.key]),
+    h = i.useMemo(() => (0, l.debounce)(b, 50), [b]),
+    E = (0, a.w)(h),
+    O = null == n ? true : n(p),
+    x = null == _ ? true : _();
+  return (0, r.jsx)(d.f, {
+    ref: E,
+    title: O,
+    collapsedSubtitle: x,
+    isExpanded: p,
+    onExpandedChange: m,
+    animate: g,
+    children: u.map(e => (0, r.jsx)(c.A, {
       node: e
     }, e.key))
   })

@@ -28,7 +28,7 @@ let g = e => {
     value: g,
     children: (0, r.jsxs)("div", {
       ref: i,
-      className: l()(m.uW, m.Uv, t),
+      className: l()(m.uW, m.Uv, m.qr, t),
       children: [(0, r.jsx)(a.DZT, {
         variant: "heading-xxl/extrabold",
         className: m.R_,

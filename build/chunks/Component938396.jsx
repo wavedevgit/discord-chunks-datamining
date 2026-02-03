@@ -110,13 +110,13 @@ function D(e) {
         className: S.hQ,
         children: [(0, r.jsx)(w, {}), (0, r.jsxs)("div", {
           className: S.y$,
-          children: [(0, r.jsxs)("div", {
+          children: [(null != x ? x : 0) > 0 && (0, r.jsxs)("div", {
             className: S.E2,
             children: [(0, r.jsx)(c.EYj, {
               variant: "display-lg",
               className: S.K,
               children: null != x ? x : 0
-            }), (null != x ? x : 0) > 0 && (0, r.jsx)(c.EYj, {
+            }), (0, r.jsx)(c.EYj, {
               variant: "text-xs/normal",
               color: "text-muted",
               children: I.intl.string(A.default.KclK9z)

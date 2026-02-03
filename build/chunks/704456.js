@@ -1,12 +1,13 @@
-/** Chunk was on 84127 **/
+/** Chunk was on 92869 **/
 /** chunk id: 704456, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Ce: () => h,
-  kh: () => A,
-  le: () => y,
-  vr: () => O
+  Ce: () => b,
+  kh: () => f,
+  le: () => m,
+  vr: () => h
 });
-var r, Chunk64700 = require("./64700.js"),
+var s, Chunk64700 = require("./64700.js"),
   Chunk989349 = require("./989349.js"),
   i = require.n(Chunk989349),
   Chunk311907 = require("./311907.js"),
@@ -16,44 +17,44 @@ var r, Chunk64700 = require("./64700.js"),
   Chunk734057 = require("./734057.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
-  A = ((r = {})[r.LONG = 0] = "LONG", r[r.SHORT = 1] = "SHORT", r);
+  f = ((s = {})[s.LONG = 0] = "LONG", s[s.SHORT = 1] = "SHORT", s);
 
-function h(e) {
+function b(e) {
   let {
     dueAt: t,
     now: n,
-    type: r
+    type: s
   } = e;
   if (null == t) return {
     string: "",
     isOverdue: false
   };
-  let l = 0 === r ? f.t.TjNWNF : f.t.H4gnX9,
-    a = 0 === r ? f.t.haia16 : f.t["Uq7Y+7"],
-    s = n > t;
+  let r = 0 === s ? g.t.TjNWNF : g.t.H4gnX9,
+    a = 0 === s ? g.t.haia16 : g.t["Uq7Y+7"],
+    l = n > t;
   return {
-    dueInText: f.intl.formatToPlainString(s ? a : l, {
+    dueInText: g.intl.formatToPlainString(l ? a : r, {
       duration: i().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
-    isOverdue: s
+    isOverdue: l
   }
 }
 
-function O(e) {
-  let t = (0, s.bG)([p.A], () => p.A.getChannel(e.saveData.channelId));
-  return l.useMemo(() => null != t ? t : null != e.message ? new u.jb({
+function h(e) {
+  let t = (0, l.bG)([p.A], () => p.A.getChannel(e.saveData.channelId));
+  return r.useMemo(() => null != t ? t : null != e.message ? new u.jb({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,
     type: d.rbe.UNKNOWN,
-    name: f.intl.string(f.t.J90oLW)
+    name: g.intl.string(g.t.J90oLW)
   }) : true, [t, e])
 }
-async function y(e, t) {
+async function m(e, t) {
   if ((null == t ? true : t.type) === d.rbe.UNKNOWN && null == e.saveData.guildId) try {
-    let t = await o.A.fetchChannel(e.saveData.channelId);
+    let t = await c.A.fetchChannel(e.saveData.channelId);
     if (null == t.recipients || t.recipients.length > 1) return;
-    await o.A.ensurePrivateChannel(t.recipients.map(e => e.id))
-  } catch (e) {}(0, c.A)(d.BVt.CHANNEL(null == t ? true : t.getGuildId(), e.saveData.channelId, e.saveData.messageId), {
+    await c.A.ensurePrivateChannel(t.recipients.map(e => e.id))
+  } catch (e) {}(0, o.A)(d.BVt.CHANNEL(null == t ? true : t.getGuildId(), e.saveData.channelId, e.saveData.messageId), {
     openChannel: true
   })
 }

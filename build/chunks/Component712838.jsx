@@ -107,7 +107,7 @@ class A extends Chunk64700.PureComponent {
       null != r && (e.stopPropagation(), (0, s.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("6502"), n.e("27687"), n.e("95336")]).then(n.bind(n, 847342));
+        } = await Promise.all([n.e("6502"), n.e("27687"), n.e("43174")]).then(n.bind(n, 847342));
         return n => (0, l.jsx)(e, g(d({}, n), {
           message: t,
           channel: r

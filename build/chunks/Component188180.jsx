@@ -1,4 +1,4 @@
-/** Chunk was on 47147 **/
+/** Chunk was on 13914 **/
 /** chunk id: 188180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => f
@@ -30,8 +30,8 @@ function p(e) {
     icon: y,
     StronglyDiscouragedCustomComponent: g,
     trailing: m,
-    useTitle: O
-  } = s, h = null == O ? true : O();
+    useTitle: h
+  } = s, O = null == h ? true : h();
   return (0, r.jsxs)(o, {
     "data-settings-sidebar-item": _,
     className: b.DB,
@@ -66,7 +66,7 @@ function p(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "currentColor",
-          children: h
+          children: O
         })]
       }), null != m && (0, r.jsx)("div", {
         className: b.Ly,
