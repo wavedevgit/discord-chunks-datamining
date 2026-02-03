@@ -187,7 +187,7 @@ let M = Chunk64700.forwardRef(function(e, t) {
       trackUserProfileAction: N
     } = (0, b.NJ)(), w = (0, m.h)({
       location: "CustomStatusBubble"
-    }), R = 1.25 * (null != p), P = 36 + R, D = 144 + R, L = i.useRef(null), M = i.useRef(null), j = i.useRef(null), k = i.useRef(P), U = i.useRef(D), G = null != p && null == _, [V, F] = i.useState(false), [B, H] = i.useState(true), [Y, W] = i.useState(!G && A), K = A && V, z = (0, l.bG)([d.A], () => d.A.useReducedMotion), [q] = i.useState(() => new c.Ep);
+    }), R = 1.25 * (null != p), P = 36 + R, D = 144 + R, L = i.useRef(null), M = i.useRef(null), j = i.useRef(null), k = i.useRef(P), U = i.useRef(D), G = null != p && null == _, [F, V] = i.useState(false), [B, H] = i.useState(true), [Y, W] = i.useState(!G && A), K = A && F, z = (0, l.bG)([d.A], () => d.A.useReducedMotion), [q] = i.useState(() => new c.Ep);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == I || I.onInteractionPopoutTargetRefChange(L)
     }, [I]);
@@ -199,7 +199,7 @@ let M = Chunk64700.forwardRef(function(e, t) {
       }
     }));
     i.useLayoutEffect(() => {
-      if (F(true), null == M.current || null == j.current || !K) return;
+      if (V(true), null == M.current || null == j.current || !K) return;
       let e = M.current.getBoundingClientRect().height,
         t = j.current.getBoundingClientRect().height;
       W(t > e), k.current = e, U.current = t, Q({

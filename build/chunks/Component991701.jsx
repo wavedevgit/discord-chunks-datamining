@@ -106,21 +106,21 @@ let S = function(e) {
         dispatchWait: true
       })
     }, [G, N, w]), null == T) return null;
-  let V = (0, r.jsx)(l.euF, b({
+  let F = (0, r.jsx)(l.euF, b({
       className: E.R,
       src: T
     }, D)),
-    F = v(b({}, S), {
+    V = v(b({}, S), {
       backgroundColor: x
     });
   return (0, r.jsx)("div", {
-    style: G ? b({}, S, k) : b({}, F),
+    style: G ? b({}, S, k) : b({}, V),
     className: o()(E.T, {
       [U]: G
     }),
     children: R ? (0, r.jsx)(u.A, {
       shouldAnimate: P,
-      children: V
-    }) : V
+      children: F
+    }) : F
   })
 }

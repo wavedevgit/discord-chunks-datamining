@@ -198,7 +198,7 @@ function eI(e) {
     channel: "#".concat(t.name)
   }) : ep.intl.formatToPlainString(ep.t["4c+CAx"], {
     channel: "@".concat(U)
-  }), F = g ? ep.intl.string(ep.t.Z2CUgn) : ep.intl.string(ep.t.XLGiTG), H = async e => {
+  }), V = g ? ep.intl.string(ep.t.Z2CUgn) : ep.intl.string(ep.t.XLGiTG), H = async e => {
     let r, {
       emoji: i
     } = e;
@@ -211,7 +211,7 @@ function eI(e) {
       else {
         var o;
         let e = await h.A.getOrEnsurePrivateChannel(n.id);
-        r = null != (o = V.A.getChannel(e)) ? o : null
+        r = null != (o = F.A.getChannel(e)) ? o : null
       }
       return l()(null != r, "Send channel must be defined"), W({
         reply: ":".concat(i.name, ":"),
@@ -232,7 +232,7 @@ function eI(e) {
       let e = await h.A.openPrivateChannel({
           recipientIds: n.id
         }),
-        t = V.A.getChannel(e);
+        t = F.A.getChannel(e);
       l()(null != t, "DM channel must be defined"), r = t
     }
     let i = r.type === eu.rbe.DM ? ec.PA.DM_REACTION_MESSAGE_SENT : ec.PA.CHANNEL_REACTION_MESSAGE_SENT;
@@ -297,7 +297,7 @@ function eI(e) {
             className: e_.N8,
             autoFocus: false,
             renderAttachButton: A ? () => (0, r.jsx)(p.m, {
-              text: F,
+              text: V,
               children: (0, r.jsx)(_.DUT, {
                 className: e_.wD,
                 onClick: z,
@@ -574,7 +574,7 @@ function ew(e) {
     onClickSubtitle: p,
     onUserPopoutClosed: h,
     trackRankingItemInteraction: m
-  } = e, y = ey(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]), b = (0, c.bG)([V.A], () => V.A.getChannel(null == u ? true : u.channelId)), [O] = i.useMemo(() => (0, w.eo)(b, K.A, F.A, B.A, T.default), [b]), {
+  } = e, y = ey(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]), b = (0, c.bG)([F.A], () => F.A.getChannel(null == u ? true : u.channelId)), [O] = i.useMemo(() => (0, w.eo)(b, K.A, V.A, B.A, T.default), [b]), {
     entry: v
   } = y, A = (0, J.zD)(v), I = A ? null == (t = v.extra) ? true : t.application_id : true, S = (0, N.A)({
     location: "ContentPopout",
@@ -668,8 +668,8 @@ function ew(e) {
 }
 
 function eR(e) {
-  let t = (0, c.bG)([F.A], () => F.A.getGuild((0, b.D)(null == e ? true : e.location))),
-    n = (0, c.bG)([V.A], () => V.A.getChannel((0, b.H)(null == e ? true : e.location))),
+  let t = (0, c.bG)([V.A], () => V.A.getGuild((0, b.D)(null == e ? true : e.location))),
+    n = (0, c.bG)([F.A], () => F.A.getChannel((0, b.H)(null == e ? true : e.location))),
     i = (0, c.yK)([W.default], () => {
       var t, n;
       return null != (t = null == e || null == (n = e.participants) ? true : n.map(e => W.default.getUser(e.userId))) ? t : []
@@ -733,9 +733,9 @@ function eP(e) {
     channel: s
   } = (0, ei.A)(n), {
     needSubscriptionToAccess: l
-  } = (0, D.A)(null == t ? true : t.id), u = (0, c.bG)([F.A], () => null != s ? F.A.getGuild(s.guild_id) : true), f = (0, c.yK)([z.Ay], () => null != s ? z.Ay.getVoiceStatesForChannel(s) : [], [s]), h = (0, c.bG)([K.A], () => K.A.isInChannel(null == s ? true : s.id)), g = i.useMemo(() => {
+  } = (0, D.A)(null == t ? true : t.id), u = (0, c.bG)([V.A], () => null != s ? V.A.getGuild(s.guild_id) : true), f = (0, c.yK)([z.Ay], () => null != s ? z.Ay.getVoiceStatesForChannel(s) : [], [s]), h = (0, c.bG)([K.A], () => K.A.isInChannel(null == s ? true : s.id)), g = i.useMemo(() => {
     for (let e of f) {
-      let t = V.A.getDMFromUserId(e.user.id),
+      let t = F.A.getDMFromUserId(e.user.id),
         n = null != t && Y.Ay.isChannelMuted(null, t),
         r = H.A.isBlockedOrIgnored(e.user.id);
       if (n || r) returntrue

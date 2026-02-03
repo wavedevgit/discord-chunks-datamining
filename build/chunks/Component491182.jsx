@@ -103,16 +103,16 @@ let O = function(e) {
     author: L,
     onMouseEnter: x,
     onMouseLeave: M
-  } = e, j = y(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]), k = (0, s.bG)([p.A], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : p.A.getRole(L.guildId, L.colorRoleId)), U = (0, f.jV)(null == L ? true : L.guildId, k) && (0, d.kz)(L), [G, V] = i.useState(false), F = i.useCallback(e => {
-    V(true), null == x || x(e)
+  } = e, j = y(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]), k = (0, s.bG)([p.A], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : p.A.getRole(L.guildId, L.colorRoleId)), U = (0, f.jV)(null == L ? true : L.guildId, k) && (0, d.kz)(L), [G, F] = i.useState(false), V = i.useCallback(e => {
+    F(true), null == x || x(e)
   }, [x]), B = i.useCallback(e => {
-    V(false), null == M || M(e)
+    F(false), null == M || M(e)
   }, [M]), H = (0, u.W)({
     location: "BaseMessage"
   }), Y = (0, r.jsx)(l.C.Provider, {
     value: {
       animate: G,
-      setAnimate: V
+      setAnimate: F
     },
     children: (0, r.jsx)(c.vN3, E(m({}, w), {
       children: (0, r.jsxs)("div", E(m({
@@ -132,7 +132,7 @@ let O = function(e) {
         ref: N
       }, j), {
         role: "article",
-        onMouseEnter: F,
+        onMouseEnter: V,
         onMouseLeave: B,
         children: [O, v, (0, r.jsxs)("div", {
           className: _.PG,

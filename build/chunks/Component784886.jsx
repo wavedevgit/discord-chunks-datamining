@@ -84,8 +84,8 @@ function R(e) {
   } = (0, u.Ay)(), {
     trackUserProfileAction: D
   } = (0, E.NJ)(), [L, x] = i.useState(""), [M, j] = i.useState((0, f.x7)(L)), k = i.useRef(false), U = i.useRef(null), G = i.useRef(null), {
-    Component: V
-  } = (0, s.V)(), F = i.useMemo(() => N(T({}, d.oU.USER_PROFILE), {
+    Component: F
+  } = (0, s.V)(), V = i.useMemo(() => N(T({}, d.oU.USER_PROFILE), {
     disableAutoFocus: S
   }), [S]), B = i.useCallback(async () => {
     (0, h.xs)(t.id), await c.A.openPrivateChannel({
@@ -104,20 +104,20 @@ function R(e) {
     children: [(0, r.jsx)(l.K0, {
       size: "sm",
       variant: "icon-only",
-      icon: V,
+      icon: F,
       "aria-label": A.intl.string(A.t.I61IsE),
       onClick: B
     }), (0, r.jsx)(b.A, {
       user: t,
       analyticsLocations: P
     })]
-  }), [V, B, t, P]);
+  }), [F, B, t, P]);
   return (0, r.jsx)(p.Ay, {
     className: o()(I.kL, {
       [I.UX]: C
     }),
     editorClassName: I.EN,
-    type: F,
+    type: V,
     placeholder: A.intl.formatToPlainString(A.t["0ZQw/X"], {
       name: g.Ay.getName(a, m, t)
     }),

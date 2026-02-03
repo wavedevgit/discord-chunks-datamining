@@ -13,7 +13,7 @@ require.d(exports, {
   Lt: () => ek,
   MK: () => k,
   OU: () => R,
-  OY: () => eV,
+  OY: () => eF,
   QE: () => D,
   TA: () => e_,
   UE: () => eG,
@@ -25,7 +25,7 @@ require.d(exports, {
   cq: () => ex,
   createChannelRecord: () => eH,
   fT: () => z,
-  gV: () => F,
+  gV: () => V,
   ig: () => H,
   jb: () => eb,
   k: () => ei,
@@ -141,10 +141,10 @@ let U = new Set([Chunk652215.rbe.DM, Chunk652215.rbe.GROUP_DM, Chunk652215.rbe.G
 function G(e) {
   return U.has(e)
 }
-let V = new Set([Chunk652215.rbe.DM, Chunk652215.rbe.GROUP_DM, Chunk652215.rbe.GUILD_VOICE, Chunk652215.rbe.GUILD_STAGE_VOICE, Chunk652215.rbe.PUBLIC_THREAD, Chunk652215.rbe.PRIVATE_THREAD]);
+let F = new Set([Chunk652215.rbe.DM, Chunk652215.rbe.GROUP_DM, Chunk652215.rbe.GUILD_VOICE, Chunk652215.rbe.GUILD_STAGE_VOICE, Chunk652215.rbe.PUBLIC_THREAD, Chunk652215.rbe.PRIVATE_THREAD]);
 
-function F(e) {
-  return V.has(e)
+function V(e) {
+  return F.has(e)
 }
 let B = new Set([Chunk652215.rbe.GUILD_TEXT, Chunk652215.rbe.GUILD_ANNOUNCEMENT, Chunk652215.rbe.ANNOUNCEMENT_THREAD, Chunk652215.rbe.PUBLIC_THREAD, Chunk652215.rbe.PRIVATE_THREAD, Chunk652215.rbe.GUILD_DIRECTORY, Chunk652215.rbe.GUILD_FORUM, Chunk652215.rbe.GUILD_MEDIA, Chunk652215.rbe.DM, Chunk652215.rbe.GROUP_DM]);
 
@@ -330,7 +330,7 @@ class ey extends em {
     return this.type === m.rbe.GUILD_CATEGORY
   }
   isVocal() {
-    return F(this.type)
+    return V(this.type)
   }
   isGuildVocal() {
     return P(this.type)
@@ -755,10 +755,10 @@ function eG(e, t) {
   return (null != (n = eU[null != (r = e.type) ? r : m.rbe.GUILD_TEXT]) ? n : eb.fromServer)(e, t)
 }
 
-function eV(e) {
+function eF(e) {
   return eH(e)
 }
-let eF = {
+let eV = {
   [Chunk652215.rbe.DM]: eM,
   [Chunk652215.rbe.GROUP_DM]: ej,
   [Chunk652215.rbe.GUILD_TEXT]: eN,
@@ -777,11 +777,11 @@ let eF = {
 
 function eB(e) {
   var t, n;
-  let r = null != (t = eF[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb;
+  let r = null != (t = eV[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb;
   return (0, f.pp)(e, r)
 }
 
 function eH(e) {
   var t, n;
-  return new(null != (t = eF[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb)(eg(e))
+  return new(null != (t = eV[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb)(eg(e))
 }

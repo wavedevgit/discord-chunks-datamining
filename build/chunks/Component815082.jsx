@@ -75,8 +75,8 @@ let R = e => {
       default:
         t = null
     }
-    let V = (0, a.bG)([g.A], () => null !== t && t.type === u.i.GUILD ? g.A.getGuild(t.guildId) : null, [t]),
-      F = (0, a.bG)([E.A], () => E.A.isFocused()),
+    let F = (0, a.bG)([g.A], () => null !== t && t.type === u.i.GUILD ? g.A.getGuild(t.guildId) : null, [t]),
+      V = (0, a.bG)([E.A], () => E.A.isFocused()),
       B = (0, a.bG)([l.A], () => l.A.useReducedMotion, []),
       H = m.Sf.useSetting(),
       Y = (0, O.O7)(M, w(t) ? t : null),
@@ -128,10 +128,10 @@ let R = e => {
         alt: ""
       })
     }
-    let Q = null != V ? (0, r.jsx)(A.A, {
+    let Q = null != F ? (0, r.jsx)(A.A, {
       className: C.__invalid_guildIcon,
-      guild: V,
-      shouldAnimate: !B && F
+      guild: F,
+      shouldAnimate: !B && V
     }) : null;
     D = "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? W.has(t.guildId) ? T.intl.string(T.t["/K2RDH"]) : T.intl.string(T.t.NZI2Zk) : (0, b.N)(t);
     let X = R({
@@ -139,7 +139,7 @@ let R = e => {
       channel: k,
       guildId: M,
       intention: j,
-      guild: V
+      guild: F
     });
     return (0, r.jsx)(_.A, {
       className: L,

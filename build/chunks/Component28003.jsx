@@ -113,9 +113,9 @@ let T = (e, t) => t ? (0, h.DP)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
           n = e.id === c.pn.ADD_PAYMENT_STEPS && !j.current;
         return !y || y && (t || n)
       })).find(e => e.id === x),
-      V = null != (t = null == G || null == (i = G.sectionHeaderText) ? true : i.call(G)) ? t : null == G ? true : G.label,
-      F = !D && null != V && null != x,
-      B = w && F && x === c.pn.REVIEW,
+      F = null != (t = null == G || null == (i = G.sectionHeaderText) ? true : i.call(G)) ? t : null == G ? true : G.label,
+      V = !D && null != F && null != x,
+      B = w && V && x === c.pn.REVIEW,
       H = N ? "nitro-pink" : "nitro-green",
       Y = T(N, C);
     return k ? (0, r.jsx)("div", {
@@ -129,7 +129,7 @@ let T = (e, t) => t ? (0, h.DP)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       children: [(0, r.jsxs)(o.hLv, {
         color: H,
         className: a()(g.N1, {
-          [g.s1]: !F
+          [g.s1]: !V
         }),
         children: [(0, r.jsx)(S, {
           isTier2: N
@@ -159,9 +159,9 @@ let T = (e, t) => t ? (0, h.DP)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
         })]
       }), (b || O) && (0, r.jsx)(p.A, {
         discountAmount: P
-      }), F && (0, r.jsx)(I, {
+      }), V && (0, r.jsx)(I, {
         isOneStepCheckout: w,
-        headerText: V,
+        headerText: F,
         step: x,
         filteredBreadcrumbs: U
       }), B && (0, r.jsx)("div", {

@@ -104,8 +104,8 @@ function T(e) {
     } = e,
     U = i.useId(),
     G = null != n ? n : U,
-    V = i.useRef(null),
-    F = i.useMemo(() => y.map((e, t) => v(b({}, e), {
+    F = i.useRef(null),
+    V = i.useMemo(() => y.map((e, t) => v(b({}, e), {
       index: t
     })), [y]),
     [B, H] = i.useState(null != O ? O : []),
@@ -124,7 +124,7 @@ function T(e) {
     requestAnimationFrame(() => {
       if (null != w) {
         var e;
-        null == (e = V.current) || e.scrollToIndex({
+        null == (e = F.current) || e.scrollToIndex({
           section: 0,
           row: w
         })
@@ -134,14 +134,14 @@ function T(e) {
   let {
     activeIndex: z,
     handleKeyDown: q
-  } = N(k, F);
+  } = N(k, V);
   i.useEffect(() => {
     if (null != z && k) {
       let e = (0, l.t$)(G, (0, g.ZN)(G, z)),
         t = document.querySelector((0, l.Mz)(e));
       null == t || t.focus()
     }
-  }, [z, F, k, G]);
+  }, [z, V, k, G]);
   let Z = i.useCallback(e => {
       if (true === u && 1 === W.length && W.includes(e)) return;
       let t = (0, g.qH)(f, W, e);
@@ -165,22 +165,22 @@ function T(e) {
       itemClassName: E.Ci
     })
   });
-  else if (F.length > 0) t = (0, r.jsx)(p.Ei, {
-    ref: V,
+  else if (V.length > 0) t = (0, r.jsx)(p.Ei, {
+    ref: F,
     style: {
-      height: null != L ? "".concat(Math.min(F.length, L) * S, "px") : "100%"
+      height: null != L ? "".concat(Math.min(V.length, L) * S, "px") : "100%"
     },
     role: true,
     tabIndex: a,
     rowHeight: S,
-    sections: [F.length],
+    sections: [V.length],
     sectionHeight: 0,
     renderSection: () => null,
     renderRow: e => {
       var t;
       let {
         row: n
-      } = e, i = F[n], o = (0, g.ZN)(G, n), s = 0 !== W.length && null != W.find(e => e.id === i.id);
+      } = e, i = V[n], o = (0, g.ZN)(G, n), s = 0 !== W.length && null != W.find(e => e.id === i.id);
       return (0, r.jsx)(C, v(b({}, i), {
         id: o,
         tabIndex: a,
@@ -220,7 +220,7 @@ function T(e) {
           tabIndex: a,
           "aria-multiselectable": "multiple" === f,
           className: o()(E.cu, {
-            [E.E1]: F.length > L
+            [E.E1]: V.length > L
           }),
           "data-mana-component": "listbox",
           children: t

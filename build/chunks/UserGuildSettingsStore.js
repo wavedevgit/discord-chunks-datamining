@@ -99,9 +99,9 @@ let S = {},
   k = new Set,
   U = new Set,
   G = {},
-  V = {};
+  F = {};
 
-function F(e, t) {
+function V(e, t) {
   var n;
   let r = S[e],
     i = null != (n = null == r ? true : r.channel_overrides) ? n : {},
@@ -149,13 +149,13 @@ function H(e) {
     let t = r[e];
     o.Lt(t.flags, b.vv.OPT_IN_ENABLED) ? n.add(e) : n.delete(e)
   }
-  Object.keys(r).length > 0 ? V[e] = n : delete V[e]
+  Object.keys(r).length > 0 ? F[e] = n : delete F[e]
 }
 
 function Y(e, t) {
   var n;
   let r = S[e];
-  F(e, v({
+  V(e, v({
     channel_overrides: null != (n = null == r ? true : r.channel_overrides) ? n : {}
   }, t))
 }
@@ -184,7 +184,7 @@ function z(e, t) {
   var n;
   let r = S[e],
     i = null != (n = null == r ? true : r.channel_overrides) ? n : {};
-  F(e, {
+  V(e, {
     channel_overrides: null == r ? t : v({}, i, t)
   })
 }
@@ -233,7 +233,7 @@ function $(e) {
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
-      "channel_overrides" in n || (n.channel_overrides = {}), F(e.guild_id, n), null != e.guild_id && t.add(e.guild_id)
+      "channel_overrides" in n || (n.channel_overrides = {}), V(e.guild_id, n), null != e.guild_id && t.add(e.guild_id)
     }), S) t.has(n) || B(n, S[n])
 }
 
@@ -268,7 +268,7 @@ function er(e) {
     userGuildSettings: t
   } = e;
   t.forEach(e => {
-    F(e.guild_id, v({
+    V(e.guild_id, v({
       channel_overrides: {}
     }, e))
   })
@@ -308,7 +308,7 @@ function es(e) {
     guildId: t
   } = e;
   if (null == t) returnfalse;
-  delete G[t], delete V[t]
+  delete G[t], delete F[t]
 }
 
 function el(e) {
@@ -497,7 +497,7 @@ class e_ extends(r = Chunk311907.Ay.PersistedStore) {
     let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
     if (null == e) returnfalse;
     if (u.A.isFullServerPreview(e)) return u.A.isChannelOptedIn(e, t);
-    if (i && null != V[e]) return V[e].has(t);
+    if (i && null != F[e]) return F[e].has(t);
     let a = null != (n = null == (r = this.getChannelOverrides(e)[t]) ? true : r.flags) ? n : 0;
     return o.Lt(a, b.vv.OPT_IN_ENABLED)
   }
@@ -506,7 +506,7 @@ class e_ extends(r = Chunk311907.Ay.PersistedStore) {
     return u.A.isFullServerPreview(e) ? null != (n = u.A.getViewingChannels(e)) ? n : U : null != (t = M[e]) ? t : U
   }
   getOptedInChannelsWithPendingUpdates(e) {
-    return V[e]
+    return F[e]
   }
   getPendingChannelUpdates(e) {
     return G[e]

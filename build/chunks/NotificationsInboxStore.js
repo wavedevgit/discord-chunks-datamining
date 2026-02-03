@@ -48,8 +48,8 @@ let P = {},
   k = false,
   U = false,
   G = Chunk661191.default.fromTimestamp(Date.now()),
-  V = true,
-  F = null,
+  F = true,
+  V = null,
   B = null,
   H = true;
 
@@ -128,7 +128,7 @@ function z() {
 }
 
 function q() {
-  P = {}, D = null, L = [], x = new T.A, M = false, j = false, k = false, G = A.default.fromTimestamp(Date.now()), V = true, U = false, B = null, F = null
+  P = {}, D = null, L = [], x = new T.A, M = false, j = false, k = false, G = A.default.fromTimestamp(Date.now()), F = true, U = false, B = null, V = null
 }
 
 function Z() {
@@ -243,7 +243,7 @@ function ea(e) {
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  M = false, t ? U = true : (null != n && (V = n), k = true), B = null != r ? r : null
+  M = false, t ? U = true : (null != n && (F = n), k = true), B = null != r ? r : null
 }
 
 function eo(e) {
@@ -254,7 +254,7 @@ function eo(e) {
   return null != (null == (t = (0, I.GE)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
-  })) ? true : t.notificationCenterVariant) && null != D && !M && !j && (!n || !U) && V
+  })) ? true : t.notificationCenterVariant) && null != D && !M && !j && (!n || !U) && F
 }
 
 function es() {
@@ -269,7 +269,7 @@ function el(e) {
   } = e, i = (0, I.GE)({
     location: "handleInboxItemClick"
   }).notificationCenterVariant;
-  F = r && i === I.U5.SIDEBAR ? {
+  V = r && i === I.U5.SIDEBAR ? {
     channelId: n,
     messageId: t
   } : null
@@ -283,7 +283,7 @@ function ec(e) {
   (0, S.zo)({
     channelId: t,
     id: n
-  }, F) && (F = null)
+  }, V) && (V = null)
 }
 
 function eu() {
@@ -291,7 +291,7 @@ function eu() {
 }
 
 function ed() {
-  F = null
+  V = null
 }
 
 function ef(e) {
@@ -373,7 +373,7 @@ class eE extends(r = Chunk311907.Ay.Store) {
     return G
   }
   get hasMoreToLoad() {
-    return V
+    return F
   }
   get isLoading() {
     return M
@@ -385,10 +385,10 @@ class eE extends(r = Chunk311907.Ay.Store) {
     return U
   }
   get isLoadingComplete() {
-    return !M && !V
+    return !M && !F
   }
   get selectedItemInfo() {
-    return F
+    return V
   }
   get currentRequestAnalyticsPayload() {
     return B

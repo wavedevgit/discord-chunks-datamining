@@ -102,24 +102,24 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
       stickerClassName: k,
       stickerDescriptors: U,
       stickerPadding: G = R,
-      stickerSize: V = w,
-      ownedStickerPacks: F,
+      stickerSize: F = w,
+      ownedStickerPacks: V,
       enlargeOnInteraction: B = false,
       channel: H,
       currentUser: Y,
       checkSendability: W = true
     } = e, {
       location: K
-    } = (0, d.p)(), z = V + 2 * G, q = i.useMemo(() => ({
+    } = (0, d.p)(), z = F + 2 * G, q = i.useMemo(() => ({
       gridColumnGap: S,
       gridTemplateColumns: "repeat(auto-fill, ".concat(z, "px)"),
       height: z,
       paddingRight: t ? true : z
     }), [t, S, z]), Z = i.useMemo(() => ({
-      width: V,
-      height: V,
+      width: F,
+      height: F,
       padding: G
-    }), [G, V]), [Q, X] = (0, f.A)(null, 300);
+    }), [G, F]), [Q, X] = (0, f.A)(null, 300);
     return (0, r.jsx)("div", T(I({
       className: v.nM,
       style: q
@@ -187,7 +187,7 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
               })
             }), e.guild_id);
           case m.op.STICKER: {
-            let s = t && null != F && (0, g.FD)(e.sticker) && !F.has(e.sticker.pack_id),
+            let s = t && null != V && (0, g.FD)(e.sticker) && !V.has(e.sticker.pack_id),
               l = e => {
                 (0, u.L3)(e, async () => {
                   let {
@@ -231,7 +231,7 @@ let w = (0, Chunk23339.xI)(Chunk664445.__invalid_stickerPickerPreviewDimensions)
                   isInteracting: f,
                   maskAsset: f,
                   sticker: e.sticker,
-                  size: V
+                  size: F
                 }), s ? (0, r.jsx)(y.A, {
                   size: 20
                 }) : null]

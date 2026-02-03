@@ -145,8 +145,8 @@ function L(e, t, n) {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != R[e], "Missing user in compressed ready payload"), R[e]))), delete e.recipient_ids
   });
-  let E = null != (r = null == f ? true : f.map((e, t) => true === e.unavailable ? e : (e.members = k(R, null == d ? true : d[t]), F(e)))) ? r : [],
-    y = x(_, f, e => F(e));
+  let E = null != (r = null == f ? true : f.map((e, t) => true === e.unavailable ? e : (e.members = k(R, null == d ? true : d[t]), V(e)))) ? r : [],
+    y = x(_, f, e => V(e));
   return null != y && E.push(y), I(v({}, p), {
     users: l,
     presences: [],
@@ -209,7 +209,7 @@ function G(e) {
   }
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   null != t || (t = []), null != n || (n = []);
   let r = new Set(n);
   for (let {
@@ -225,7 +225,7 @@ function V(e, t, n) {
   }
 }
 
-function F(e) {
+function V(e) {
   var t, n, r, i, a, o, s, l;
   let c = U(e.id);
   if ("partial" !== e.data_mode) return {
@@ -267,7 +267,7 @@ function F(e) {
       deletes: null != (n = e.partial_updates.deleted_channel_ids) ? n : []
     },
     channelTimestampUpdates: e.channel_updates,
-    emojis: V(c.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+    emojis: F(c.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
     guild_scheduled_events: e.guild_scheduled_events,
     joined_at: e.joined_at,
     lastMessages: e.last_messages,
@@ -277,7 +277,7 @@ function F(e) {
     properties: null != (r = e.properties) ? r : null,
     roles: (0, b.ly)(e.id, c.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
-    stickers: V(c.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+    stickers: F(c.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
     threads: null != (i = null == (o = e.threads) ? true : o.map(t => (0, m.UE)(t, e.id))) ? i : [],
     threadMessages: H(e.threads),
@@ -329,7 +329,7 @@ function B(e, t) {
     },
     channelTimestampUpdates: e.channel_updates,
     activity_instances: e.activity_instances,
-    emojis: V(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+    emojis: F(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
     guild_scheduled_events: e.guild_scheduled_events,
     joined_at: e.joined_at,
     lastMessages: e.last_messages,
@@ -340,7 +340,7 @@ function B(e, t) {
     properties: null != (i = e.properties) ? i : t.properties,
     roles: (0, b.ly)(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
-    stickers: V(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+    stickers: F(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     unableToSyncDeletes: e.unable_to_sync_deletes,
     threads: null != (a = null == (s = e.threads) ? true : s.map(t => (0, m.UE)(t, e.id))) ? a : [],
     threadMessages: H(e.threads),

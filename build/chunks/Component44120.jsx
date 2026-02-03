@@ -140,9 +140,9 @@ function C(e) {
     }), (0, s.ET)(), (0, l.z)(), null == R || R(L), L && (0, d.gB)({
       variantsReturnStyle: D
     })
-  }, V = () => {
+  }, F = () => {
     null != t && T.has(t) && (0, a.OoC)(j)
-  }, F = {
+  }, V = {
     loadId: x,
     skuId: u,
     analyticsLocations: _,
@@ -154,12 +154,12 @@ function C(e) {
     giftRecipient: C,
     onClose: R,
     onCloseCallback: G,
-    onCloseRequest: V,
+    onCloseRequest: F,
     onComplete: () => {
       L = true, null == P || P()
     }
   };
-  U ? N(F) : w(F)
+  U ? N(V) : w(V)
 }
 let N = e => {
     let {

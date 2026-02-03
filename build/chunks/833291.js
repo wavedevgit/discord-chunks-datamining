@@ -6,7 +6,7 @@ require.d(exports, {
   br: () => eu,
   l7: () => ec,
   rL: () => eo,
-  st: () => F,
+  st: () => V,
   tl: () => er,
   ts: () => el
 }), require("./591487.js"), require("./727858.js"), require("./747238.js"), require("./812715.js"), require("./866193.js"), require("./896048.js"), require("./321073.js");
@@ -40,8 +40,8 @@ let C = 10,
   k = /^\/channels\/([0-9]+)\/shop$/,
   U = /^\/quests\/([0-9-]+)\/?$/,
   G = /^\/oauth2\/authorize/,
-  V = /^#itemSkuId=([0-9]+)$/,
-  F = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
+  F = /^#itemSkuId=([0-9]+)$/,
+  V = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = X(window.GLOBAL_ENV.INVITE_HOST),
   H = X(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
   Y = X(null != (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? r : "//canary.".concat(Chunk652215.U2_)),
@@ -142,7 +142,7 @@ function es(e) {
   let t = new Set,
     n = [],
     r = J(e = e.replace(Q, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.A.URL_REGEX),
-    i = e.match(F);
+    i = e.match(V);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
     var a, o, s, l;
@@ -209,7 +209,7 @@ function es(e) {
     let P = el(e);
     if (null != P && d(S.I.QUESTS_EMBED, P), "/shop" === u) {
       let e = null != r.query ? (0, _.parse)(r.query).tab : null,
-        t = null == (l = r.hash) ? true : l.match(V);
+        t = null == (l = r.hash) ? true : l.match(F);
       d(S.I.COLLECTIBLES_SHOP, "".concat(null != e ? e : "", "-").concat(null != (s = null == t ? true : t[1]) ? s : ""))
     }
   }

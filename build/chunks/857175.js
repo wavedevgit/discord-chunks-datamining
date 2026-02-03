@@ -63,22 +63,22 @@ function u(e) {
     P(e = (0, r.X8)(e, g, E))
   }
 
-  function V(t) {
+  function F(t) {
     if (!e.isDisabled && !e.isReadOnly) {
       let e = t;
       if (null === e) return void S(null);
       e = (0, r.X8)(e, g, E), (e = (0, r.Nf)(e, D, b)) && (e = (0, a.yP)(e, (null == I ? true : I.calendar) || new(0, s.FG)), I && "hour" in I ? S(I.set(e)) : S(e))
     }
   }(0, r.If)(R, g, E) ? P((0, r.X8)(R, g, E)): 0 > R.compare(D) ? L((0, r.ZT)(R, m, _, g, E)) : R.compare(j) > 0 && L((0, r.CT)(R, m, _, g, E));
-  let F = (0, c.useMemo)(() => !!T && (!!(b && b(T)) || (0, r.If)(T, g, E)), [T, b, g, E]),
-    B = e.isInvalid || "invalid" === e.validationState || F,
+  let V = (0, c.useMemo)(() => !!T && (!!(b && b(T)) || (0, r.If)(T, g, E)), [T, b, g, E]),
+    B = e.isInvalid || "invalid" === e.validationState || V,
     H = B ? "invalid" : null,
     Y = (0, c.useMemo)(() => "visible" === O ? m : d(m), [O, m]);
   return {
     isDisabled: null != (n = e.isDisabled) && n,
     isReadOnly: null != (u = e.isReadOnly) && u,
     value: T,
-    setValue: V,
+    setValue: F,
     visibleRange: {
       start: D,
       end: j
@@ -141,10 +141,10 @@ function u(e) {
       })) : G(R.subtract(d(m)))
     },
     selectFocusedDate() {
-      b && b(R) || V(R)
+      b && b(R) || F(R)
     },
     selectDate(e) {
-      V(e)
+      F(e)
     },
     isFocused: x,
     setFocused: M,

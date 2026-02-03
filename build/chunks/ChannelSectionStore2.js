@@ -120,14 +120,14 @@ function G(e) {
   }, true)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t
   } = e;
   return null != R[t] && (delete R[t], true)
 }
 
-function F(e) {
+function V(e) {
   let {
     sidebarType: t,
     baseChannelId: n,
@@ -281,11 +281,11 @@ let J = new X(Chunk73153.h, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: j,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: U,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: k,
-  SIDEBAR_VIEW_CHANNEL: F,
+  SIDEBAR_VIEW_CHANNEL: V,
   SIDEBAR_VIEW_GUILD: G,
   SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: z,
-  SIDEBAR_CLOSE_GUILD: V,
+  SIDEBAR_CLOSE_GUILD: F,
   CHANNEL_DELETE: H,
   CHANNEL_SELECT: Z,
   THREAD_CREATE: W,

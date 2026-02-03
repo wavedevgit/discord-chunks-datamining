@@ -7,7 +7,7 @@ require.d(exports, {
   Oz: () => er,
   QA: () => J,
   Zc: () => W,
-  cf: () => F,
+  cf: () => V,
   d5: () => Q,
   e0: () => en,
   hJ: () => H,
@@ -15,7 +15,7 @@ require.d(exports, {
   m6: () => Y,
   navigateToQuestHome: () => K,
   q$: () => ee,
-  rx: () => V,
+  rx: () => F,
   z6: () => q
 });
 var Chunk627968 = require("./627968.js");
@@ -92,7 +92,7 @@ function k(e, t) {
 let U = "in-app",
   G = "Discord Widget";
 
-function V(e) {
+function F(e) {
   let {
     quest: t,
     sourceQuestContent: i
@@ -108,7 +108,7 @@ function V(e) {
   })
 }
 
-function F(e, t, i) {
+function V(e, t, i) {
   (0, s.mMO)(async () => {
     let {
       default: a

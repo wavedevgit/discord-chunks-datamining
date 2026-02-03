@@ -10,7 +10,7 @@ require.d(exports, {
   _$: () => I,
   dI: () => U,
   pi: () => j,
-  sg: () => V
+  sg: () => F
 }), require("./896048.js"), require("./747238.js"), require("./812715.js"), require("./65821.js"), require("./321073.js"), require("./733351.js");
 var Chunk695497 = require("./695497.js"),
   i = require.n(Chunk695497),
@@ -271,6 +271,6 @@ function G(e, t) {
   })
 }
 
-function V(e) {
+function F(e) {
   return null != e && "object" == typeof e && "nativeEvent" in e && 0 === e.nativeEvent.clientX && 0 === e.nativeEvent.clientY
 }

@@ -79,11 +79,11 @@ function G(e) {
   }
 }
 
-function V() {
-  P = true, T = S, F()
+function F() {
+  P = true, T = S, V()
 }
 
-function F() {
+function V() {
   var e;
   if (C = null != (e = g.A.getIdleSince()) ? e : 0, R = g.A.isAFK(), P) S = T;
   else if (I) S = v.clD.INVISIBLE;
@@ -102,15 +102,15 @@ function F() {
 }
 
 function B(e) {
-  return I = e.invisible, F()
+  return I = e.invisible, V()
 }
 
 function H() {
-  return I = false, F()
+  return I = false, V()
 }
 
 function Y() {
-  P = false, T = v.clD.UNKNOWN, F(), b.A.setCurrentUserOnConnectionOpen(S, x)
+  P = false, T = v.clD.UNKNOWN, V(), b.A.setCurrentUserOnConnectionOpen(S, x)
 }
 
 function W() {
@@ -118,7 +118,7 @@ function W() {
 }
 class K extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], F)
+    this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], V)
   }
   getLocalPresence() {
     return {
@@ -157,25 +157,25 @@ class K extends(r = Chunk311907.Ay.Store) {
 }
 A(K, "displayName", "SelfPresenceStore");
 let z = new K(Chunk73153.h, {
-  START_SESSION: F,
+  START_SESSION: V,
   CONNECTION_OPEN: W,
   CONNECTION_OPEN_SUPPLEMENTAL: Y,
   OVERLAY_INITIALIZE: Y,
-  CONNECTION_CLOSED: F,
-  IDLE: F,
-  AFK: F,
-  RUNNING_GAMES_CHANGE: F,
-  STREAMING_UPDATE: F,
-  USER_SETTINGS_PROTO_UPDATE: F,
-  LOCAL_ACTIVITY_UPDATE: F,
-  SPOTIFY_PLAYER_STATE: F,
-  SPOTIFY_PLAYER_PLAY: F,
-  USER_CONNECTIONS_UPDATE: F,
-  SESSIONS_REPLACE: F,
-  RPC_APP_DISCONNECTED: F,
-  LIBRARY_FETCH_SUCCESS: F,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: F,
-  LOGOUT: V,
+  CONNECTION_CLOSED: V,
+  IDLE: V,
+  AFK: V,
+  RUNNING_GAMES_CHANGE: V,
+  STREAMING_UPDATE: V,
+  USER_SETTINGS_PROTO_UPDATE: V,
+  LOCAL_ACTIVITY_UPDATE: V,
+  SPOTIFY_PLAYER_STATE: V,
+  SPOTIFY_PLAYER_PLAY: V,
+  USER_CONNECTIONS_UPDATE: V,
+  SESSIONS_REPLACE: V,
+  RPC_APP_DISCONNECTED: V,
+  LIBRARY_FETCH_SUCCESS: V,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: V,
+  LOGOUT: F,
   FORCE_INVISIBLE: B,
   WINDOW_FOCUS: H
 })

@@ -206,8 +206,8 @@ var M = function e(t) {
   Chunk94867 = require("./94867.js"),
   Chunk353841 = require("./353841.js"),
   G = Chunk94867.call(Chunk357522, Array.prototype.concat),
-  V = Chunk94867.call(Chunk343920, Array.prototype.splice),
-  F = Chunk94867.call(Chunk357522, String.prototype.replace),
+  F = Chunk94867.call(Chunk343920, Array.prototype.splice),
+  V = Chunk94867.call(Chunk357522, String.prototype.replace),
   B = Chunk94867.call(Chunk357522, String.prototype.slice),
   H = Chunk94867.call(Chunk357522, RegExp.prototype.exec),
   Y = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -218,8 +218,8 @@ var M = function e(t) {
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return F(e, Y, function(e, t, n, i) {
-      r[r.length] = n ? F(i, W, "$1") : t || e
+    return V(e, Y, function(e, t, n, i) {
+      r[r.length] = n ? V(i, W, "$1") : t || e
     }), r
   },
   z = function(e, t) {
@@ -246,7 +246,7 @@ module.exports = function(e, t) {
     o = i.value,
     s = false,
     l = i.alias;
-  l && (r = l[0], V(n, G([0, 1], l)));
+  l && (r = l[0], F(n, G([0, 1], l)));
   for (var d = 1, f = true; d < n.length; d += 1) {
     var p = n[d],
       _ = B(p, 0, 1),

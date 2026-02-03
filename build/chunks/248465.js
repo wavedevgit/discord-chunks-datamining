@@ -141,8 +141,8 @@ let eb = new Chunk626584.A("AutocompleteUtils"),
   ek = .1,
   eU = 50,
   eG = () => true,
-  eV = /(\t|\s)/,
-  eF = [],
+  eF = /(\t|\s)/,
+  eV = [],
   eB = (r = require("./966382.js").A).MENTION_EVERYONE,
   eH = r.MENTION_HERE,
   eY = r.MENTION_GAME,
@@ -157,11 +157,11 @@ function ez() {
 
 function eq(e) {
   var t, n;
-  let r = V.A.getFrequentlyWithoutFetchingLatest(),
+  let r = F.A.getFrequentlyWithoutFetchingLatest(),
     i = r.reduce((e, t) => {
       let {
         id: n
-      } = t, r = V.A.getScoreWithoutFetchingLatest(n);
+      } = t, r = F.A.getScoreWithoutFetchingLatest(n);
       return r > e ? r : e
     }, 0),
     a = [];
@@ -185,7 +185,7 @@ function eq(e) {
   for (let t of a) {
     let {
       id: n
-    } = t, r = V.A.getScoreWithoutFetchingLatest(n);
+    } = t, r = F.A.getScoreWithoutFetchingLatest(n);
     if (e === eu.rD.USER && t instanceof x.cq) {
       if (t.type === ec.rbe.DM) o[n = t.getRecipientId()] = 1 + r / i;
       else if (t.type === ec.rbe.GROUP_DM) {
@@ -297,15 +297,15 @@ function e1(e) {
 }
 
 function e2(e) {
-  return e === F.I6 || e !== F.vM && !!(0, x.fT)(e)
+  return e === V.I6 || e !== V.vM && !!(0, x.fT)(e)
 }
 
 function e3(e, t, n) {
-  return e === t || (!!n || !!(0, x.zy)(t)) && (e === F.I6 ? (0, x.tr)(t) || (0, x.ay)(t) : e === F.vM && (0, x.ay)(t))
+  return e === t || (!!n || !!(0, x.zy)(t)) && (e === V.I6 ? (0, x.tr)(t) || (0, x.ay)(t) : e === V.vM && (0, x.ay)(t))
 }
 
 function e6(e, t) {
-  return e === F.I6 && (0, x.ay)(t)
+  return e === V.I6 && (0, x.ay)(t)
 }
 
 function e4(e) {
@@ -538,7 +538,7 @@ let te = (0, Chunk583613.L_)((e, t, n) => {
           limit: i = ec.rs7,
           fuzzy: a = true,
           filter: o = eG,
-          type: l = F.I6,
+          type: l = V.I6,
           allowEmptyQueries: c = false,
           requireVocalConnectAccess: u = true,
           boosters: d = {},
@@ -547,10 +547,10 @@ let te = (0, Chunk583613.L_)((e, t, n) => {
         } = e,
         m = e4(n, c),
         g = e2(l);
-      t = null != r ? s()(F.Ay.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? U.A.getAllThreadsForGuild(r) : R.A.computeAllActiveJoinedThreads(r) : []).value() : s()(U.A.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? R.A.computeAllActiveJoinedThreads() : []).value();
+      t = null != r ? s()(V.Ay.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? U.A.getAllThreadsForGuild(r) : R.A.computeAllActiveJoinedThreads(r) : []).value() : s()(U.A.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? R.A.computeAllActiveJoinedThreads() : []).value();
       let E = {},
         y = [],
-        b = V.A.getMaxScore();
+        b = F.A.getMaxScore();
       for (let e of t) {
         var O;
         if (!e3(l, e.type, null != r) || (0, x.zy)(e.type) && !K.A.can(u ? e.accessPermissions : ec.xBc.VIEW_CHANNEL, e) || !o(e)) continue;
@@ -567,7 +567,7 @@ let te = (0, Chunk583613.L_)((e, t, n) => {
             }
             c = Math.min(eA - eT, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e6(l, e.type) && (c = Math.max(c - eC, eT / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), P.A.hasJoined(e.id) || (c -= ew)), c = Math.min(c + Math.min(null != (O = V.A.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / b, 1) * eR, c >= eA ? eO : eA), y.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e6(l, e.type) && (c = Math.max(c - eC, eT / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), P.A.hasJoined(e.id) || (c -= ew)), c = Math.min(c + Math.min(null != (O = F.A.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / b, 1) * eR, c >= eA ? eO : eA), y.push({
             type: (0, x.ay)(e.type) ? eu.rD.VOICE_CHANNEL : eu.rD.TEXT_CHANNEL,
             record: e,
             score: ez(c, d[e.id]),
@@ -944,7 +944,7 @@ let te = (0, Chunk583613.L_)((e, t, n) => {
       let {
         query: t,
         channel: n,
-        type: r = F.I6,
+        type: r = V.I6,
         channelTypes: i
       } = e;
       return {
@@ -1059,7 +1059,7 @@ let te = (0, Chunk583613.L_)((e, t, n) => {
           })
         })
       }
-      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eF), o
+      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eV), o
     },
     querySoundmoji(e, t) {
       let n = X.default.getCurrentUser();
@@ -1181,7 +1181,7 @@ let te = (0, Chunk583613.L_)((e, t, n) => {
       }
       return p.sort(f.A), p
     },
-    matchSentinel: (e, t, n) => !eV.test(t) && e === n,
+    matchSentinel: (e, t, n) => !eF.test(t) && e === n,
     hasSameRoleAsUsername(e, t) {
       if (!t.hasUniqueUsername()) returnfalse;
       let n = Y.A.getGuild(e.getGuildId());

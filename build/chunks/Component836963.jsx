@@ -83,8 +83,8 @@ function _(e) {
     gridNotice: k,
     renderHeader: U,
     renderUpsell: G
-  } = e, V = i.useRef(null), F = i.useRef(null), B = i.useRef(null), H = 0 === t.length, Y = (0, a.RQ)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), K = (0, o.oV)({
-    gridWrapperRef: V,
+  } = e, F = i.useRef(null), V = i.useRef(null), B = i.useRef(null), H = 0 === t.length, Y = (0, a.RQ)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), K = (0, o.oV)({
+    gridWrapperRef: F,
     containerWidth: u,
     showingEmptyState: H
   }), {
@@ -108,7 +108,7 @@ function _(e) {
     isUsingKeyboardNavigation: en
   } = (0, o.JZ)({
     columnCounts: Q,
-    expressionsListRef: F,
+    expressionsListRef: V,
     expressionsGrid: z,
     onSelectItem: _,
     store: f,
@@ -127,7 +127,7 @@ function _(e) {
     h(Y)
   }, [h, Y]), i.useEffect(() => {
     var e, t;
-    f.setBottomPosition(null != (e = null == (t = V.current) ? true : t.getBoundingClientRect().bottom) ? e : null)
+    f.setBottomPosition(null != (e = null == (t = F.current) ? true : t.getBoundingClientRect().bottom) ? e : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
     null == (e = B.current) || e.focus()
@@ -138,7 +138,7 @@ function _(e) {
       store: f,
       hasSendableExpressions: true,
       onKeyDown: et,
-      expressionsListRef: F,
+      expressionsListRef: V,
       gridNavigatorId: j,
       defaultSearchPlaceholder: E,
       emptySearchPlaceholder: y
@@ -149,17 +149,17 @@ function _(e) {
       className: c.wx,
       children: [" ", es, " "]
     }), H && null != b ? b(c.p$) : (0, r.jsxs)(r.Fragment, {
-      children: [C(F), null != k && (0, r.jsx)("div", {
+      children: [C(V), null != k && (0, r.jsx)("div", {
         className: c.Eb,
         children: k
       }), (0, r.jsx)("div", p(d({
-        ref: V,
+        ref: F,
         className: c.AD,
         id: j
       }, ee), {
         children: null != K ? (0, r.jsx)(s.A, {
           categories: t,
-          ref: F,
+          ref: V,
           store: f,
           hasSearchResults: g,
           listPadding: M,

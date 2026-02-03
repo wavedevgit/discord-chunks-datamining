@@ -44,7 +44,7 @@ var Chunk961350 = require("./961350.js"),
   Chunk652215 = require("./652215.js");
 require("./758836.js");
 var Chunk654487 = require("./654487.js");
-async function F(e, t) {
+async function V(e, t) {
   await a.h.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
@@ -62,7 +62,7 @@ async function B(e) {
     r = t
   }
   if (null == r) return;
-  if (r.state === G.elq.EXPIRED || r.state === G.elq.BANNED || r.state === G.elq.ERROR) return void await F(r, e.code);
+  if (r.state === G.elq.EXPIRED || r.state === G.elq.BANNED || r.state === G.elq.ERROR) return void await V(r, e.code);
   let i = x.Ay.getFlattenedGuildIds(),
     a = null == r || null == (t = r.guild) ? true : t.id,
     o = null != a && i.includes(a),
@@ -73,7 +73,7 @@ async function B(e) {
       i = new Set(null != (n = null == t ? true : t.roles) ? n : []);
     l = r.roles.some(e => !i.has(e.id))
   }
-  o && !l ? s.Ay.transitionToInviteSync(r) : await F(r, e.code)
+  o && !l ? s.Ay.transitionToInviteSync(r) : await V(r, e.code)
 }
 let H = {
   skipExtensionCheck: true,
@@ -191,7 +191,7 @@ function Y(e) {
     }), true
   };
   if (null != w && w.type === m.I.QUESTS_EMBED && (0, A.s)({
-      location: V.rE.EMBED_MOBILE
+      location: F.rE.EMBED_MOBILE
     }) && !(0, j.I)()) return e => {
     var t, r, a;
     let o, s;
@@ -217,7 +217,7 @@ function Y(e) {
     host: R,
     hostname: P,
     pathname: x,
-    search: F,
+    search: V,
     hash: Y
   } = null != (t = k.A.toURLSafe(e)) ? t : {}, W = k.A.isDiscordHostname(null != P ? P : null) || k.A.isDiscordLocalhost(null != R ? R : null, null != P ? P : null);
   if (W && ((null == x ? true : x.startsWith("/application-directory")) || (null == x ? true : x.startsWith("/discovery/applications")))) {
@@ -230,7 +230,7 @@ function Y(e) {
       let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(F);
+        let e = new URLSearchParams(V);
         r = null != (l = e.get("q")) ? l : true, o = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
       } else a && (o = e[4]);
       return n.e("38042").then(n.bind(n, 837057)).then(e => {
@@ -253,7 +253,7 @@ function Y(e) {
       navigationReplace: false,
       openChannel: true
     };
-    return null != F && (e.search = F), null != Y && (e.hash = Y), t => (null == t || t.preventDefault(), (0, v.A)(x, e), true)
+    return null != V && (e.search = V), null != Y && (e.hash = Y), t => (null == t || t.preventDefault(), (0, v.A)(x, e), true)
   }
   if (null != x && W) {
     let {
@@ -279,7 +279,7 @@ function Y(e) {
       default: e
     } = n(849823), {
       openUserSettingsFromParsedUrl: t
-    } = n(840065), r = e(x, F);
+    } = n(840065), r = e(x, V);
     if (null != r) return e => (null == e || e.preventDefault(), t({
       match: r,
       analyticsLocations: s,
@@ -299,9 +299,9 @@ function Y(e) {
   }
   return W && (null == x ? true : x.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
     fromContent: i.u.QUEST_BADGE
-  }), true) : W && (null == x ? true : x.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, T.pX)(G.BVt.QUEST_HOME_V2 + (null != F ? F : "")), true) : W && (null == x ? true : x.startsWith("/quest-preview")) ? e => {
+  }), true) : W && (null == x ? true : x.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, T.pX)(G.BVt.QUEST_HOME_V2 + (null != V ? V : "")), true) : W && (null == x ? true : x.startsWith("/quest-preview")) ? e => {
     if (null == e || e.preventDefault(), (0, I.U)({
-        location: V.rE.NAVIGATE_TO_QUEST_HOME_UTIL
+        location: F.rE.NAVIGATE_TO_QUEST_HOME_UTIL
       })) return (0, T.pX)(G.BVt.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(x.split("/").at(false))), true
   } : W && (null == x ? true : x.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), n.e("38042").then(n.bind(n, 837057)).then(e => {
     let {

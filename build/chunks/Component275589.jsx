@@ -43,7 +43,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk780465 = require("./780465.js"),
   Chunk911385 = require("./911385.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,7 +59,7 @@ function B(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -180,7 +180,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       onSelectSticker: a,
       channel: S,
       currentUser: C
-    }), [V, F] = i.useState(false), B = i.useCallback(e => {
+    }), [F, V] = i.useState(false), B = i.useCallback(e => {
       b.tP.updateSetting(Array.from(e))
     }, []), H = i.useCallback(e => {
       let t = m[e];
@@ -328,10 +328,10 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           className: G.Ij,
           guildId: n.id,
           channel: S,
-          shouldTrackUpsellViewed: !V,
-          setTrackedUpsellViewed: F
+          shouldTrackUpsellViewed: !F,
+          setTrackedUpsellViewed: V
         }, "sticker-picker-empty-guild-inline-upsell-".concat(n.id))
-      }, [g, t, E, S, V]),
+      }, [g, t, E, S, F]),
       sectionFooterHeight: i.useCallback(e => {
         let n = g[e],
           r = t.has(n.id);
@@ -360,7 +360,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       renderRow: M,
       renderSection: j,
       renderSectionFooter: k,
-      sectionFooterHeight: F,
+      sectionFooterHeight: V,
       renderSectionHeader: B,
       sectionHeaderHeight: H
     } = e_({
@@ -433,7 +433,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         children: [null != l && 0 === l.sendable.length && 0 === l.sendableWithPremium.length ? (0, r.jsx)(c.A, {
           message: U.intl.string(U.t["zc+LQd"]),
           className: G.__invalid_noSearchResultsContainer,
-          noResultsImageURL: V,
+          noResultsImageURL: F,
           suggestions: (0, r.jsx)(ef, {
             onSuggestionClick: e => (0, m.Ri)(e, true)
           })
@@ -449,7 +449,7 @@ let W = (0, Chunk240248.xI)(Chunk319060.A.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           rowCountBySection: v,
           rowHeight: s > W ? ei : ea,
           sectionHeaderHeight: H,
-          sectionFooterHeight: F,
+          sectionFooterHeight: V,
           stickyHeaders: true,
           ref: C
         }), (0, r.jsx)(x.A, {

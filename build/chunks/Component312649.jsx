@@ -128,8 +128,8 @@ function k(e) {
     planError: k,
     onPurchaseError: U,
     baseAnalyticsData: G,
-    flowStartTime: V,
-    trialId: F,
+    flowStartTime: F,
+    trialId: V,
     planGroup: B,
     analyticsLocation: H,
     purchaseTokenAuthState: Y,
@@ -166,7 +166,7 @@ function k(e) {
   } = (0, A.Pv)(), ey = (0, h.Mq)(X), eb = (0, O.lo)(eg), eO = {};
   eO.gift_style = ep, eO.reward_sku_ids = ey && null != eE ? [eE] : [], eb === O.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != eg, "Gift recipient must be set at purchase review step for these gift options."), eO.recipient_id = eg.id, eO.custom_message = e_, eO.emoji_id = null == eh ? true : eh.id, eO.emoji_name = (null == eh ? true : eh.id) == null ? null == eh ? true : eh.surrogates : true, eO.sound_id = null == em ? true : em.soundId);
   let ev = null == X ? true : X.id,
-    eA = (0, T.$o)(F, J.paymentSourceId, ev),
+    eA = (0, T.$o)(V, J.paymentSourceId, ev),
     {
       analyticsLocations: eI
     } = (0, d.Ay)(),
@@ -201,10 +201,10 @@ function k(e) {
       baseAnalyticsData: G,
       analyticsLocation: H,
       analyticsLocations: eI,
-      flowStartTime: V,
+      flowStartTime: F,
       subscriptionPlan: X,
       planGroup: B,
-      trialId: F,
+      trialId: V,
       priceOptions: J,
       paymentSource: eS,
       isPrepaidPaymentPastDue: eL,
@@ -221,9 +221,9 @@ function k(e) {
       invoicePreview: ec,
       orderId: ex
     })
-  }, eV = {
+  }, eF = {
     baseAnalyticsData: G,
-    flowStartTime: V,
+    flowStartTime: F,
     makePurchase: eG,
     onNext: s,
     onPurchaseError: U,
@@ -231,13 +231,13 @@ function k(e) {
     paymentSourceId: en,
     purchaseTokenAuthState: Y,
     setPurchaseState: n
-  }, eF = i.useRef(eV);
+  }, eV = i.useRef(eF);
   i.useEffect(() => {
-    eF.current = eV
+    eV.current = eF
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = eF.current;
+    } = eV.current;
     eA && !ef && null == t && e()
   }, [eA, ef, t]);
   let {

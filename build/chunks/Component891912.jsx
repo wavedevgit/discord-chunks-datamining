@@ -251,7 +251,7 @@ let ec = e => {
     }, [y]), L = S.v.useExperiment({
       location: "oauth2_authorize"
     }), M = a.bot, U = (0, h.bG)([x.A], () => x.A.getDMFromUserId(null == M ? true : M.id)), {
-      appDMChannelMuteConfig: F,
+      appDMChannelMuteConfig: V,
       dmChannelMuted: B
     } = (0, h.cf)([j.Ay], () => null == U ? {
       appDMChannelMuteConfig: null,
@@ -376,7 +376,7 @@ let ec = e => {
             alt: ""
           })
         }) : null,
-        n = new Date(V.default.extractTimestamp(m)).toLocaleDateString(_);
+        n = new Date(F.default.extractTimestamp(m)).toLocaleDateString(_);
       return (0, r.jsxs)("div", {
         className: ee.ie,
         children: [t, (0, r.jsxs)("div", {
@@ -437,8 +437,8 @@ let ec = e => {
         gap: 20,
         children: [null != M ? (0, r.jsx)(E.dOG, {
           label: $.intl.string($.t.NkwaBs),
-          description: (null == F ? true : F.end_time) != null ? $.intl.format($.t.j7h4AJ, {
-            endTime: new Date(F.end_time).toLocaleString($.intl.currentLocale, {
+          description: (null == V ? true : V.end_time) != null ? $.intl.format($.t.j7h4AJ, {
+            endTime: new Date(V.end_time).toLocaleString($.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
               hour: "numeric",
@@ -501,7 +501,7 @@ let ec = e => {
     } = (0, h.cf)([L.default], () => ({
       fetchState: L.default.getFetchState(),
       appAuthTokens: L.default.getNewestTokensForNonChildrenApplications()
-    })), n = (0, h.bG)([F.default], () => F.default.locale), a = (0, h.bG)([v.Ay], () => v.Ay.getSelfEmbeddedActivities()), o = (0, h.bG)([x.A, M.A], () => x.A.getChannel(M.A.getChannelId())), s = null == o ? true : o.getGuildId(), c = e => {
+    })), n = (0, h.bG)([V.default], () => V.default.locale), a = (0, h.bG)([v.Ay], () => v.Ay.getSelfEmbeddedActivities()), o = (0, h.bG)([x.A, M.A], () => x.A.getChannel(M.A.getChannelId())), s = null == o ? true : o.getGuildId(), c = e => {
       let {
         id: t,
         application: n

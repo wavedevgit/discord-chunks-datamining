@@ -141,8 +141,8 @@ exports.default = function() {
           value: t
         }
       },
-      V = "offset:",
-      F = {
+      F = "offset:",
+      V = {
         type: "literal",
         value: "offset:",
         description: '"offset:"'
@@ -362,7 +362,7 @@ exports.default = function() {
 
     function eU() {
       var e;
-      return (e = eG()) === i && (e = eV()) === i && (e = eF()) === i && (e = eB()), e
+      return (e = eG()) === i && (e = eF()) === i && (e = eV()) === i && (e = eB()), e
     }
 
     function eG() {
@@ -370,12 +370,12 @@ exports.default = function() {
       return e = eO, t.substr(eO, 6) === O ? (n = O, eO += 6) : (n = i, 0 === eC && ew(v)), n === i && (t.substr(eO, 4) === A ? (n = A, eO += 4) : (n = i, 0 === eC && ew(I)), n === i && (t.substr(eO, 4) === S ? (n = S, eO += 4) : (n = i, 0 === eC && ew(T)))), n !== i && eq() !== i ? (r = eO, 44 === t.charCodeAt(eO) ? (a = m, eO++) : (a = i, 0 === eC && ew(g)), a !== i && (o = eq()) !== i && (s = e$()) !== i ? r = a = [a, o, s] : (eO = r, r = l), r === i && (r = h), r !== i ? (ev = e, e = n = C(n, r)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
-    function eV() {
+    function eF() {
       var e, n, r, a;
       return e = eO, t.substr(eO, 6) === N ? (n = N, eO += 6) : (n = i, 0 === eC && ew(w)), n !== i && eq() !== i ? (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && ew(g)), r !== i && eq() !== i && (a = eK()) !== i ? (ev = e, e = n = R(a)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
-    function eF() {
+    function eV() {
       var e, n, r, a;
       return e = eO, t.substr(eO, 13) === P ? (n = P, eO += 13) : (n = i, 0 === eC && ew(D)), n !== i && eq() !== i ? (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && ew(g)), r !== i && eq() !== i && (a = eK()) !== i ? (ev = e, e = n = L(a)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
@@ -409,7 +409,7 @@ exports.default = function() {
 
     function eW() {
       var e, n, r;
-      return e = eO, t.substr(eO, 7) === V ? (n = V, eO += 7) : (n = i, 0 === eC && ew(F)), n !== i && eq() !== i && (r = eX()) !== i ? (ev = e, e = n = B(r)) : (eO = e, e = l), e
+      return e = eO, t.substr(eO, 7) === F ? (n = F, eO += 7) : (n = i, 0 === eC && ew(V)), n !== i && eq() !== i && (r = eX()) !== i ? (ev = e, e = n = B(r)) : (eO = e, e = l), e
     }
 
     function eK() {

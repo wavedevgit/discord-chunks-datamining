@@ -76,7 +76,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = (0, Chunk600975.C)({
+let F = (0, Chunk600975.C)({
   kind: "user",
   id: "2021-07_role_popout",
   label: "Role Popout",
@@ -92,7 +92,7 @@ let V = (0, Chunk600975.C)({
   }]
 });
 
-function F(e) {
+function V(e) {
   let {
     member: t,
     guildId: a,
@@ -175,7 +175,7 @@ function B(e) {
       return null == e ? null : w.A.getRole(a, e)
     }, [a, n, _]),
     y = null == n ? null : null == f ? true : f[n],
-    O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(F, {
+    O = i.useMemo(() => null != m ? h.map(e => (0, r.jsx)(V, {
       member: e,
       guildId: a,
       channelId: s,
@@ -231,7 +231,7 @@ function H(e) {
     }), c]
   })), {
     enabled: R
-  } = V.getCurrentConfig({
+  } = F.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: false

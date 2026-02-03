@@ -215,7 +215,7 @@ function G(e) {
   R(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     userProfile: t
   } = e;
@@ -223,7 +223,7 @@ function V(e) {
   R(t.user)
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t
   } = e;
@@ -732,8 +732,8 @@ class ek extends Chunk536802.A {
       OVERLAY_INITIALIZE: U,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: G,
-      USER_PROFILE_FETCH_SUCCESS: V,
-      CURRENT_USER_UPDATE: F,
+      USER_PROFILE_FETCH_SUCCESS: F,
+      CURRENT_USER_UPDATE: V,
       PRESENCE_UPDATES: er,
       SEARCH_MESSAGES_SUCCESS: K,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: K,

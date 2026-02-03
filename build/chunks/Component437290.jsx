@@ -25,18 +25,23 @@ function u(e) {
     eventHandlers: _
   } = (0, o.A)({
     userId: null == r ? true : r.id,
-    size: c._3J.SIZE_32
+    size: i._3J.SIZE_32
   }), f = null != (t = r.globalName) ? t : r.username;
-  return (0, n.jsx)(i.m, {
+  return (0, n.jsx)(c.m, {
     text: (null == x ? true : x.isActive(r, b)) ? x.text(r) : null,
     position: "top",
     anchorRef: m,
     asContainer: true,
-    children: (0, n.jsxs)("div", {
-      className: d.kL,
+    children: (0, n.jsxs)(i.DUT, {
+      className: l()(d.kL, {
+        [d.vk]: !b
+      }),
+      onClick: () => {
+        b || u(r, !s)
+      },
       children: [(0, n.jsx)("div", {
         className: d.dj,
-        children: (0, n.jsx)(c.euF, function(e) {
+        children: (0, n.jsx)(i.euF, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -59,16 +64,16 @@ function u(e) {
           }),
           src: h,
           "aria-label": f,
-          size: c._3J.SIZE_32
+          size: i._3J.SIZE_32
         }, _))
       }), (0, n.jsxs)("div", {
         className: d.QV,
-        children: [(0, n.jsx)(c.Text, {
+        children: [(0, n.jsx)(i.Text, {
           className: d.nT,
           color: b ? "text-muted" : "text-default",
           variant: "text-md/semibold",
           children: f
-        }), (0, n.jsx)(c.Text, {
+        }), (0, n.jsx)(i.Text, {
           className: d.nT,
           color: b ? "text-muted" : "text-subtle",
           variant: "text-xs/normal",
@@ -77,10 +82,9 @@ function u(e) {
       }), (0, n.jsx)("div", {
         ref: m,
         className: d.kv,
-        children: (0, n.jsx)(c.Checkbox, {
+        children: (0, n.jsx)(i.Checkbox, {
           disabled: b,
           checked: s,
-          onChange: e => u(r, e),
           label: ""
         })
       })]

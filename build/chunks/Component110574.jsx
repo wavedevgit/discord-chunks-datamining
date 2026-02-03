@@ -78,19 +78,19 @@ function G(e, t) {
   }), e
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = F(e, t), Object.getOwnPropertySymbols)
+  if (a = V(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
@@ -303,7 +303,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       channel: x,
       guildId: j,
       className: U,
-      nameplate: F,
+      nameplate: V,
       hideClanTag: B = false,
       hideSubtext: Y = false,
       hideTooltip: W = false,
@@ -340,7 +340,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: j
     }), eS = null != es ? es : {}, {
       onFocus: eT
-    } = eS, eC = V(eS, ["onFocus"]), eN = (0, S.gn)(j, ec, null != a ? a : null), [ew, eR] = i.useState(false);
+    } = eS, eC = F(eS, ["onFocus"]), eN = (0, S.gn)(j, ec, null != a ? a : null), [ew, eR] = i.useState(false);
     i.useEffect(() => {
       t && eR(false)
     }, [t]);
@@ -440,7 +440,7 @@ let B = (0, Chunk240248.xI)(Chunk319060.A.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           typingRef: eg,
           currentUser: b
         }),
-        nameplate: F,
+        nameplate: V,
         subText: (0, r.jsx)(Q, {
           hideSubtext: Y,
           activities: O,

@@ -256,7 +256,7 @@ let ea = [Chunk806931.lp.ACTIVITY],
         spreadDirection: b.O.INSET_ONLY,
         maxInnerSpreadRadius: 4
       }),
-      tc = $.type === en.lp.STREAM ? d.kN9 : d.npA;
+      tc = (0, en.Ay)($) ? d.kN9 : eJ ? d.npA : d.EsG;
     return (0, r.jsx)(h.A, {
       section: et.JJy.VOICE_CHANNEL_TILE,
       children: (0, r.jsx)("div", {

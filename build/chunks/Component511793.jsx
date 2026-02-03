@@ -103,12 +103,12 @@ let x = (0, Chunk268218.Fe)({
     webpackId: 885338,
     name: "VerifyConnectedAccountError"
   }),
-  V = (0, Chunk268218.Fe)({
+  F = (0, Chunk268218.Fe)({
     createPromise: () => Promise.all([n.e("34917"), n.e("52986")]).then(n.bind(n, 97649)),
     webpackId: 97649,
     name: "LinkConnectedAccount"
   }),
-  F = (0, Chunk268218.Fe)({
+  V = (0, Chunk268218.Fe)({
     createPromise: () => n.e("65893").then(n.bind(n, 599128)),
     webpackId: 599128,
     name: "LinkAuthorize"
@@ -277,10 +277,10 @@ class ei extends Chunk64700.Component {
         component: z
       }), (0, r.jsx)(_.A, {
         path: N.BVt.CONNECTION_LINK(":type"),
-        component: V
+        component: F
       }), (0, r.jsx)(_.A, {
         path: N.BVt.CONNECTION_LINK_AUTHORIZE(":type"),
-        component: F
+        component: V
       }), (0, r.jsx)(_.A, {
         path: N.BVt.ACTIVATE,
         component: B

@@ -236,7 +236,7 @@ function w(e) {
     "aria-label": P,
     "aria-labelledby": D,
     "aria-hidden": L
-  } = e, [x, M] = i.useState(false), j = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !L, V = () => (0, r.jsx)(u.lGe, {
+  } = e, [x, M] = i.useState(false), j = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !L, F = () => (0, r.jsx)(u.lGe, {
     className: m.XM,
     "aria-label": P,
     "aria-labelledby": D,
@@ -266,9 +266,9 @@ function w(e) {
         })
       }, e.id))
     })
-  }), F = () => G ? (0, r.jsx)(u.YNO, {
+  }), V = () => G ? (0, r.jsx)(u.YNO, {
     targetElementRef: j,
-    renderPopout: V,
+    renderPopout: F,
     shouldShow: x,
     position: "bottom",
     onRequestClose: () => M(false),
@@ -305,6 +305,6 @@ function w(e) {
       size: _,
       shouldShowOverflowCount: G,
       disableUsernameTooltip: A
-    }), F()]
+    }), V()]
   })
 }

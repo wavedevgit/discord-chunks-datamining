@@ -85,8 +85,8 @@ function k(e, t) {
 }
 let U = new Map,
   G = new Set,
-  V = new Map,
   F = new Map,
+  V = new Map,
   B = new Map,
   H = new Map,
   Y = new Map,
@@ -123,8 +123,8 @@ function J(e) {
     P = null == (a = _.find(e => e.userId === N)) ? true : a.sessionId,
     M = _.some(e => (0, g.S)(e)),
     G = D.get(d),
-    V = U.get(k(null != b ? b : null, d)),
-    F = null == V ? true : V.launchParams,
+    F = U.get(k(null != b ? b : null, d)),
+    V = null == F ? true : F.launchParams,
     B = {
       applicationId: d,
       location: u,
@@ -133,8 +133,8 @@ function J(e) {
       url: y,
       userIds: new Set(T),
       participants: _,
-      referrerId: null != (r = null == G ? true : G.referrerId) ? r : null == F ? true : F.referrerId,
-      customId: null != (i = null == G ? true : G.customId) ? i : null == F ? true : F.customId,
+      referrerId: null != (r = null == G ? true : G.referrerId) ? r : null == V ? true : V.referrerId,
+      customId: null != (i = null == G ? true : G.customId) ? i : null == V ? true : V.customId,
       proxyTicket: h
     };
   R && null != G && D.set(G.applicationId, C(S({}, G, B), {
@@ -151,7 +151,7 @@ function J(e) {
     isStart: null == I,
     referrerId: B.referrerId,
     customId: B.customId,
-    inviterUserId: null == V ? true : V.inviterUserId,
+    inviterUserId: null == F ? true : F.inviterUserId,
     proxyTicket: B.proxyTicket
   }), eO({
     channelId: null != b ? b : null,
@@ -332,8 +332,8 @@ function ec(e) {
 function eu(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = F.get(n);
-  F.set(n, {
+  } = e, n = X(t), r = V.get(n);
+  V.set(n, {
     isFetching: true,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   }), N.lastCheckedForBadgeableActivities = new Date(Date.now()).toISOString()
@@ -342,8 +342,8 @@ function eu(e) {
 function ed(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = F.get(n);
-  F.set(n, {
+  } = e, n = X(t), r = V.get(n);
+  V.set(n, {
     isFetching: false,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   })
@@ -375,12 +375,12 @@ function ep(e) {
     guildId: t,
     activities: n
   } = e, r = X(t);
-  V.set(r, n);
+  F.set(r, n);
   let i = Date.now();
   ef({
     activities: n,
     now: i
-  }), F.set(r, {
+  }), V.set(r, {
     isFetching: false,
     lastFetchTimestampMs: i
   })
@@ -573,16 +573,16 @@ class ew extends(i = Chunk311907.Ay.PersistedStore) {
   getShelfActivities(e) {
     var t;
     let n = X(e);
-    return null != (t = V.get(n)) ? t : R
+    return null != (t = F.get(n)) ? t : R
   }
   getShelfFetchStatus(e) {
     let t = X(e);
-    return F.get(t)
+    return V.get(t)
   }
   shouldFetchShelf(e) {
     var t, n;
     let r = X(e),
-      i = null != (t = F.get(r)) ? t : {
+      i = null != (t = V.get(r)) ? t : {
         isFetching: false
       },
       a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > K;

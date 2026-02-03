@@ -95,8 +95,8 @@ let N = Chunk64700.memo(function(e) {
     M = i.useMemo(() => null != L ? d.Ay.getPlaybackPosition(L) : 0, [L]),
     j = (0, s.bG)([d.Ay], () => d.Ay.getPlaybackRate(d.k0.VOICE_MESSAGE)),
     [k, U] = i.useState(M > 0),
-    [G, V] = i.useState(M),
-    [F, B] = i.useState(b),
+    [G, F] = i.useState(M),
+    [V, B] = i.useState(b),
     [H, Y] = i.useState(false),
     [W, K] = i.useState(false),
     [z, q] = i.useState(false),
@@ -127,7 +127,7 @@ let N = Chunk64700.memo(function(e) {
     }, [eo, z, ea]),
     el = i.useCallback(e => {
       let t = x.current;
-      null != t && (V(e), t.currentTime = e, U(true))
+      null != t && (F(e), t.currentTime = e, U(true))
     }, []),
     ec = i.useCallback(() => {
       let e = x.current;
@@ -146,12 +146,12 @@ let N = Chunk64700.memo(function(e) {
       q(true)
     }, []),
     ep = i.useCallback(() => {
-      q(false), G === F && eo(), ea(G)
-    }, [G, F, eo, ea]),
+      q(false), G === V && eo(), ea(G)
+    }, [G, V, eo, ea]),
     e_ = i.useCallback(e => {
       let t = x.current;
-      null == F || null == t || (el(e * F), clearTimeout(et.current), et.current = true)
-    }, [F, el]);
+      null == V || null == t || (el(e * V), clearTimeout(et.current), et.current = true)
+    }, [V, el]);
   i.useEffect(() => {
     !k && W && U(true)
   }, [W, k]);
@@ -192,7 +192,7 @@ let N = Chunk64700.memo(function(e) {
           i = null != r ? (e - r) / 1e3 : 0;
         null == n || n(t, i), ea(t), eh.current = null
       }
-  }, [W, n, F, ea]), T(x, W, V), C(n, W, K);
+  }, [W, n, V, ea]), T(x, W, F), C(n, W, K);
   let eE = W ? l.E$n : l.udU,
     ey = W ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
     eb = O.intl.formatToPlainString(O.t.LgCPMt, {
@@ -255,7 +255,7 @@ let N = Chunk64700.memo(function(e) {
       className: v.ou,
       waveform: y,
       currentTime: G,
-      duration: null != F ? F : 1,
+      duration: null != V ? V : 1,
       playing: W,
       played: k,
       onDrag: e_,
@@ -264,7 +264,7 @@ let N = Chunk64700.memo(function(e) {
     }), (0, r.jsx)(S, {
       played: k,
       currentTime: G,
-      duration: F
+      duration: V
     }), (0, r.jsx)(l.DUT, {
       className: v.LJ,
       onClick: () => I(j),

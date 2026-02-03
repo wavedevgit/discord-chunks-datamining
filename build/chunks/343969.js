@@ -245,7 +245,7 @@ function G(e, t) {
   return Math.floor(Math.max(e - 1, 0) / t)
 }
 
-function V(e) {
+function F(e) {
   let t = (0, p.n4)(e),
     n = e.pageSize * (e.currentPage - 1),
     r = e.pageSize * e.currentPage,
@@ -257,13 +257,13 @@ function V(e) {
   }
 }
 
-function F(e, t) {
+function V(e, t) {
   var n;
   let {
     currentPageChunkNumber: r,
     previousPageChunkNumber: i,
     nextPageChunkNumber: a
-  } = V(t), {
+  } = F(t), {
     previousPagination: o
   } = w(I(e)), s = t.currentPage, l = null != (n = null == o ? true : o.currentPage) ? n : 0, c = g.A.getElasticSearchPaginationByGuildId(e);
   switch (true) {
@@ -284,7 +284,7 @@ function F(e, t) {
 
 function B(e, t, n) {
   var r, i, a, o, s, l;
-  let c = F(e, n),
+  let c = V(e, n),
     u = g.A.getElasticSearchPaginationByGuildId(e),
     f = (0, p.n4)(n);
   switch (c) {

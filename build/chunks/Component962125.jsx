@@ -58,11 +58,11 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
       let t = "function" == typeof O ? O(e) : O;
       return null == t ? 0 : t
     }, [O]),
-    V = i.useCallback(e => {
+    F = i.useCallback(e => {
       let t = "function" == typeof v ? v(e) : v;
       return null == t ? 0 : t
     }, [v]),
-    F = i.useCallback(e => {
+    V = i.useCallback(e => {
       let t = "function" == typeof b ? b(e) : b;
       return null == t ? 0 : t
     }, [b]),
@@ -101,14 +101,14 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
             offset: a
           }, r = n, e++
         }
-        r += V(o) + F(o), a[o].offset.bottom = r
+        r += F(o) + V(o), a[o].offset.bottom = r
       }
       return {
         totalHeight: r += d[2],
         rowDescriptors: i,
         sectionDescriptors: a
       }
-    }, [U, V, G, F, d, g, E, k]);
+    }, [U, F, G, V, d, g, E, k]);
   B.current = K, H.current = W;
   let z = i.useCallback(() => {
     var e;
@@ -248,8 +248,8 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
       } = K[a], c = l - s;
       if (0 === c) continue;
       let u = G(a),
-        d = V(a),
-        m = F(a);
+        d = F(a),
+        m = V(a);
       if (l <= e) r = l;
       else if (l > e && s < t) {
         n = o;
@@ -279,7 +279,7 @@ let d = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, V, G, F, d, f, p, h, _, R, K, I, m, k, D]), X = i.useMemo(() => {
+  }, [U, F, G, V, d, f, p, h, _, R, K, I, m, k, D]), X = i.useMemo(() => {
     var e, t, n;
     return {
       top: Q,

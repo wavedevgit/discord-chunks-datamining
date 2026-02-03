@@ -94,7 +94,7 @@ function C(e) {
   i.useEffect(() => {
     null == p || p(null == U ? true : U.current)
   }, [U, p]);
-  let V = async e => {
+  let F = async e => {
     if (null == e) return;
     s === b.dS.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
@@ -121,7 +121,7 @@ function C(e) {
       })
     } catch (e) {}
     P(b.AQ.REPLY)
-  }, F = {
+  }, V = {
     [A.h5]: s === b.dS.STATUS,
     [A.my]: s === b.dS.AVATAR,
     [A.Eb]: s === b.dS.ACTIVITY
@@ -130,7 +130,7 @@ function C(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(A.kL, F, {
+      className: o()(A.kL, V, {
         [A.GE]: null != D
       }),
       children: (0, r.jsx)(d.Ay, {
@@ -162,7 +162,7 @@ function C(e) {
             shouldRefocus: false
           };
           try {
-            return await V(n), R(), null == N || N(), {
+            return await F(n), R(), null == N || N(), {
               shouldClear: true,
               shouldRefocus: false
             }

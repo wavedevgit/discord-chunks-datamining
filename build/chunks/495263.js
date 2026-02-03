@@ -83,8 +83,8 @@ async function b(e) {
     skuPricePreview: k,
     purchaseType: U,
     referralCode: G,
-    loadId: V,
-    giftInfoOptions: F,
+    loadId: F,
+    giftInfoOptions: V,
     invoicePreview: B,
     orderId: H
   } = e;
@@ -103,8 +103,8 @@ async function b(e) {
       expectedCurrency: k.currency,
       isGift: O,
       paymentSource: R,
-      loadId: V,
-      giftInfoOptions: F,
+      loadId: F,
+      giftInfoOptions: V,
       orderId: H
     });
     else {
@@ -127,21 +127,21 @@ async function b(e) {
           paymentSource: R,
           subscriptionPlanId: T.id,
           isGift: true,
-          loadId: V,
-          giftInfoOptions: F,
+          loadId: F,
+          giftInfoOptions: V,
           orderId: H
         })
       } else if (P && null != D && null != R && null != L) e = _.AD1.has(R.type) ? await (0, o.LD)(L, D, R, w.currency) : await (0, o.nV)(L, {
         paymentSource: R,
         currency: w.currency
-      }, t, n, I, A, V);
+      }, t, n, I, A, F);
       else if (null != L) {
         let r = (0, f.Pg)(L, T.id, 1, new Set(C)),
           i = {
             paymentSource: R,
             currency: w.currency
           };
-        L.status === _.Dmq.PAUSED && (i.status = _.Dmq.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.nV)(L, i, t, n, I, A, V)
+        L.status === _.Dmq.PAUSED && (i.status = _.Dmq.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.nV)(L, i, t, n, I, A, F)
       } else e = await (0, l.B1)({
         planId: T.id,
         currency: w.currency,
@@ -149,7 +149,7 @@ async function b(e) {
         trialId: N,
         metadata: M,
         referralCode: G,
-        loadId: V,
+        loadId: F,
         expectedInvoicePrice: t,
         expectedRenewalPrice: n
       })

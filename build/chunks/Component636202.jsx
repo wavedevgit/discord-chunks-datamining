@@ -57,8 +57,8 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
       entry: b,
       disableGameProfileLinks: R,
       onReaction: G,
-      onVoiceChannelPreview: V,
-      onUserPopoutClosed: F,
+      onVoiceChannelPreview: F,
+      onUserPopoutClosed: V,
       trackRankingItemInteraction: B
     } = e, {
       largeImage: H
@@ -121,7 +121,7 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
         badges: ef,
         entry: b,
         disableGameProfileLinks: R,
-        onUserPopoutClosed: F,
+        onUserPopoutClosed: V,
         trackRankingItemInteraction: B
       }) : (0, r.jsx)(D.Fl, {
         channel: y,
@@ -131,7 +131,7 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
         userDescription: j.t["6oWFUN"],
         entry: b,
         stream: $,
-        onUserPopoutClosed: F,
+        onUserPopoutClosed: V,
         trackRankingItemInteraction: B
       }),
       e_ = !eu && ec ? (0, r.jsx)(f.A, {
@@ -154,7 +154,7 @@ let k = [...Chunk322789.n, Chunk506326.Yq],
       children: [ep, (0, r.jsx)(D.Eh, {
         children: (0, r.jsx)(D.fD, {
           onReaction: G,
-          onVoiceChannelPreview: V,
+          onVoiceChannelPreview: F,
           user: Y,
           channel: y,
           generateReactionImage: ed,

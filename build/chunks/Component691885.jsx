@@ -105,8 +105,8 @@ function x(e) {
     form: k,
     autoComplete: U,
     maxOptionsVisible: G = 5,
-    options: V,
-    formatOption: F,
+    options: F,
+    formatOption: V,
     onSelectionChange: B,
     value: H,
     wrapTags: Y = false
@@ -130,8 +130,8 @@ function x(e) {
     loading: es
   } = (0, v.K)({
     active: J,
-    options: V,
-    renderOption: F
+    options: F,
+    renderOption: V
   }), el = i.useRef(null), ec = i.useRef(null), eu = null != T ? T : "multiple" !== n, ed = Array.isArray(H) ? H.length > 0 : null != H, ef = X || a, {
     measuredWidth: ep,
     itemsForMeasurement: e_

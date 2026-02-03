@@ -73,7 +73,7 @@ function N(e) {
       onAction: D,
       onClose: w
     })
-  }), V = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["9FaEzi"]) : i.isGuildStageVoice() ? T.intl.string(T.t.QygGCN) : T.intl.string(T.t.msxteM);
+  }), F = i.isDM() || i.isGroupDM() ? T.intl.string(T.t["9FaEzi"]) : i.isGuildStageVoice() ? T.intl.string(T.t.QygGCN) : T.intl.string(T.t.msxteM);
   return (0, r.jsx)(u.f5, {
     value: P,
     children: (0, r.jsxs)(E.A, {
@@ -81,9 +81,9 @@ function N(e) {
       className: a()(C.Nr, N),
       onAction: D,
       onClose: w,
-      "aria-label": "".concat(V, ", ").concat(j),
+      "aria-label": "".concat(F, ", ").concat(j),
       children: [(0, r.jsx)(y.A, {
-        text: V,
+        text: F,
         tags: U(),
         contextMenu: (0, r.jsx)(I.A, {
           display: "voice",

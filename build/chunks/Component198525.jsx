@@ -2,7 +2,7 @@
 /** chunk id: 198525, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -62,8 +62,8 @@ let k = "8px",
   U = "11px",
   G = 222;
 
-function V(e) {
-  var t, S, M, V, F;
+function F(e) {
+  var t, S, M, F, V;
   let {
     quest: B,
     memberListItemRef: H,
@@ -80,7 +80,7 @@ function V(e) {
     quest: B,
     questContent: E.uF.MEMBERS_LIST,
     sourceQuestContent: E.uF.MEMBERS_LIST
-  }), J = (null == B || null == (S = B.userStatus) ? true : S.claimedAt) != null, $ = (null == B || null == (M = B.userStatus) ? true : M.enrolledAt) != null, ee = (null == B || null == (V = B.userStatus) ? true : V.completedAt) != null, et = (0, s.bG)([m.A], () => m.A.getState().theme), en = (0, c.Mw)(et) ? D.NJ.DARK : D.NJ.LIGHT, er = (0, s.bG)([_.A], () => _.A.useReducedMotion), {
+  }), J = (null == B || null == (S = B.userStatus) ? true : S.claimedAt) != null, $ = (null == B || null == (M = B.userStatus) ? true : M.enrolledAt) != null, ee = (null == B || null == (F = B.userStatus) ? true : F.completedAt) != null, et = (0, s.bG)([m.A], () => m.A.getState().theme), en = (0, c.Mw)(et) ? D.NJ.DARK : D.NJ.LIGHT, er = (0, s.bG)([_.A], () => _.A.useReducedMotion), {
     ref: ei,
     height: ea
   } = (0, p.Ay)(), [eo, es] = i.useState(er), el = (0, h.aL)(), ec = (0, o.KF)();
@@ -214,7 +214,7 @@ function V(e) {
     "aria-expanded": eo,
     className: x.iE,
     style: {
-      width: null != (t = null == (F = H.current) ? true : F.clientWidth) ? t : G,
+      width: null != (t = null == (V = H.current) ? true : V.clientWidth) ? t : G,
       height: eu.height,
       overflow: eo ? "visible" : "hidden",
       borderRadius: ep
@@ -293,13 +293,13 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   return (0, r.jsx)(S.R, {
     questOrQuests: e.quest,
     questContent: E.uF.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: E.uF.MEMBERS_LIST,
-    children: t => (0, r.jsx)(V, j({
+    children: t => (0, r.jsx)(F, j({
       impressionRef: t
     }, e))
   })

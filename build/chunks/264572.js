@@ -447,22 +447,22 @@ function G(e, t, n) {
   if (e + t > n) throw RangeError("Trying to access beyond buffer length")
 }
 
-function V(e, t, n, r, i, a) {
+function F(e, t, n, r, i, a) {
   if (!c.isBuffer(e)) throw TypeError('"buffer" argument must be a Buffer instance');
   if (t > i || t < a) throw RangeError('"value" argument is out of bounds');
   if (n + r > e.length) throw RangeError("Index out of range")
 }
 
-function F(e, t, n, r, i, a) {
+function V(e, t, n, r, i, a) {
   if (n + r > e.length || n < 0) throw RangeError("Index out of range")
 }
 
 function B(e, t, n, r, a) {
-  return t *= 1, n >>>= 0, a || F(e, t, n, 4, 34028234663852886e22, false), i.write(e, t, n, r, 23, 4), n + 4
+  return t *= 1, n >>>= 0, a || V(e, t, n, 4, 34028234663852886e22, false), i.write(e, t, n, r, 23, 4), n + 4
 }
 
 function H(e, t, n, r, a) {
-  return t *= 1, n >>>= 0, a || F(e, t, n, 8, 17976931348623157e292, false), i.write(e, t, n, r, 52, 8), n + 8
+  return t *= 1, n >>>= 0, a || V(e, t, n, 8, 17976931348623157e292, false), i.write(e, t, n, r, 52, 8), n + 8
 }
 c.prototype.slice = function(e, t) {
   var n = this.length;
@@ -520,7 +520,7 @@ c.prototype.slice = function(e, t) {
 }, c.prototype.writeUIntLE = function(e, t, n, r) {
   if (e *= 1, t >>>= 0, n >>>= 0, !r) {
     var i = Math.pow(2, 8 * n) - 1;
-    V(this, e, t, n, i, 0)
+    F(this, e, t, n, i, 0)
   }
   var a = 1,
     o = 0;
@@ -529,26 +529,26 @@ c.prototype.slice = function(e, t) {
 }, c.prototype.writeUIntBE = function(e, t, n, r) {
   if (e *= 1, t >>>= 0, n >>>= 0, !r) {
     var i = Math.pow(2, 8 * n) - 1;
-    V(this, e, t, n, i, 0)
+    F(this, e, t, n, i, 0)
   }
   var a = n - 1,
     o = 1;
   for (this[t + a] = 255 & e; --a >= 0 && (o *= 256);) this[t + a] = e / o & 255;
   return t + n
 }, c.prototype.writeUInt8 = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 1, 255, 0), this[t] = 255 & e, t + 1
+  return e *= 1, t >>>= 0, n || F(this, e, t, 1, 255, 0), this[t] = 255 & e, t + 1
 }, c.prototype.writeUInt16LE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 2, 65535, 0), this[t] = 255 & e, this[t + 1] = e >>> 8, t + 2
+  return e *= 1, t >>>= 0, n || F(this, e, t, 2, 65535, 0), this[t] = 255 & e, this[t + 1] = e >>> 8, t + 2
 }, c.prototype.writeUInt16BE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 2, 65535, 0), this[t] = e >>> 8, this[t + 1] = 255 & e, t + 2
+  return e *= 1, t >>>= 0, n || F(this, e, t, 2, 65535, 0), this[t] = e >>> 8, this[t + 1] = 255 & e, t + 2
 }, c.prototype.writeUInt32LE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 4, 0xffffffff, 0), this[t + 3] = e >>> 24, this[t + 2] = e >>> 16, this[t + 1] = e >>> 8, this[t] = 255 & e, t + 4
+  return e *= 1, t >>>= 0, n || F(this, e, t, 4, 0xffffffff, 0), this[t + 3] = e >>> 24, this[t + 2] = e >>> 16, this[t + 1] = e >>> 8, this[t] = 255 & e, t + 4
 }, c.prototype.writeUInt32BE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 4, 0xffffffff, 0), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
+  return e *= 1, t >>>= 0, n || F(this, e, t, 4, 0xffffffff, 0), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
 }, c.prototype.writeIntLE = function(e, t, n, r) {
   if (e *= 1, t >>>= 0, !r) {
     var i = Math.pow(2, 8 * n - 1);
-    V(this, e, t, n, i - 1, -i)
+    F(this, e, t, n, i - 1, -i)
   }
   var a = 0,
     o = 1,
@@ -558,7 +558,7 @@ c.prototype.slice = function(e, t) {
 }, c.prototype.writeIntBE = function(e, t, n, r) {
   if (e *= 1, t >>>= 0, !r) {
     var i = Math.pow(2, 8 * n - 1);
-    V(this, e, t, n, i - 1, -i)
+    F(this, e, t, n, i - 1, -i)
   }
   var a = n - 1,
     o = 1,
@@ -566,15 +566,15 @@ c.prototype.slice = function(e, t) {
   for (this[t + a] = 255 & e; --a >= 0 && (o *= 256);) e < 0 && 0 === s && 0 !== this[t + a + 1] && (s = 1), this[t + a] = (e / o | 0) - s & 255;
   return t + n
 }, c.prototype.writeInt8 = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 1, 127, false), e < 0 && (e = 255 + e + 1), this[t] = 255 & e, t + 1
+  return e *= 1, t >>>= 0, n || F(this, e, t, 1, 127, false), e < 0 && (e = 255 + e + 1), this[t] = 255 & e, t + 1
 }, c.prototype.writeInt16LE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 2, 32767, false), this[t] = 255 & e, this[t + 1] = e >>> 8, t + 2
+  return e *= 1, t >>>= 0, n || F(this, e, t, 2, 32767, false), this[t] = 255 & e, this[t + 1] = e >>> 8, t + 2
 }, c.prototype.writeInt16BE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 2, 32767, false), this[t] = e >>> 8, this[t + 1] = 255 & e, t + 2
+  return e *= 1, t >>>= 0, n || F(this, e, t, 2, 32767, false), this[t] = e >>> 8, this[t + 1] = 255 & e, t + 2
 }, c.prototype.writeInt32LE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 4, 0x7fffffff, false), this[t] = 255 & e, this[t + 1] = e >>> 8, this[t + 2] = e >>> 16, this[t + 3] = e >>> 24, t + 4
+  return e *= 1, t >>>= 0, n || F(this, e, t, 4, 0x7fffffff, false), this[t] = 255 & e, this[t + 1] = e >>> 8, this[t + 2] = e >>> 16, this[t + 3] = e >>> 24, t + 4
 }, c.prototype.writeInt32BE = function(e, t, n) {
-  return e *= 1, t >>>= 0, n || V(this, e, t, 4, 0x7fffffff, false), e < 0 && (e = 0xffffffff + e + 1), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
+  return e *= 1, t >>>= 0, n || F(this, e, t, 4, 0x7fffffff, false), e < 0 && (e = 0xffffffff + e + 1), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
 }, c.prototype.writeFloatLE = function(e, t, n) {
   return B(this, e, t, true, n)
 }, c.prototype.writeFloatBE = function(e, t, n) {

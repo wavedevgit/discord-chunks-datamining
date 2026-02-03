@@ -103,8 +103,8 @@ function C(e) {
     subscriptionTier: k,
     trialId: U,
     postSuccessGuild: G,
-    openInvoiceId: V,
-    applicationId: F,
+    openInvoiceId: F,
+    applicationId: V,
     referralTrialOfferId: B,
     giftRecipient: H,
     returnRef: Y,
@@ -155,8 +155,8 @@ function C(e) {
         trialId: U,
         postSuccessGuild: G,
         planGroup: b.LE,
-        openInvoiceId: V,
-        applicationId: F,
+        openInvoiceId: F,
+        applicationId: V,
         referralTrialOfferId: B,
         returnRef: Y,
         subscription: W,
@@ -181,7 +181,7 @@ function C(e) {
         is_gift: L,
         sku_id: J,
         eligible_for_trial: null != U,
-        application_id: F,
+        application_id: V,
         location_stack: N
       }), (0, u.ET)(), (0, c.ET)(), (0, d.z)(), null == A || A(z), z && (null == C || C())
     }

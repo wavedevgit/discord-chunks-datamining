@@ -96,7 +96,7 @@ let ee = (0, Chunk268218.Fe)({
       X ? d.w.set(R.Vz, true) : d.w.remove(R.Vz)
     }, [X]), i.useEffect(() => {
       en ? d.w.set(D.AL, true) : d.w.remove(D.AL)
-    }, [en]), (0, r.jsx)(F.e, {
+    }, [en]), (0, r.jsx)(V.e, {
       children: (0, r.jsxs)(y.A, {
         children: [(0, r.jsx)(z.A, {
           skipsSettingDefaultPageTitle: n
@@ -124,7 +124,7 @@ let ee = (0, Chunk268218.Fe)({
                                   children: t
                                 }), (0, r.jsx)(_.A, {}), (0, r.jsx)(A.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(p.bM6, {}), (0, r.jsx)(B.A, {}), (0, r.jsx)(M.up, {}), (0, r.jsx)(l.P, {}), (0, r.jsx)(x.C8, {}), (0, r.jsx)(j.ok, {}), (0, r.jsx)(p.N9M, {
                                   appContext: J.BRT.APP
-                                }), (0, r.jsx)(v.A, {}), (0, r.jsx)(U.A, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(V.A, {})]
+                                }), (0, r.jsx)(v.A, {}), (0, r.jsx)(U.A, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(F.A, {})]
                               })
                             })
                           })

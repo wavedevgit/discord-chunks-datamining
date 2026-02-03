@@ -47,8 +47,8 @@ function I(e) {
     pendingLegacyUsernameDisabled: k,
     pendingDisplayNameStyles: U,
     pendingPrimaryGuildId: G,
-    avatarClassName: V,
-    containerClassName: F,
+    avatarClassName: F,
+    containerClassName: V,
     isTryItOut: B = false,
     disabledInputs: H = false,
     hideCustomStatus: Y = false,
@@ -91,7 +91,7 @@ function I(e) {
     displayProfile: X,
     themeType: O.d.POPOUT,
     pendingThemeColors: M,
-    className: a()(A.k, F),
+    className: a()(A.k, V),
     forceShowPremium: S,
     children: [(0, r.jsxs)("div", {
       className: A.w,
@@ -116,7 +116,7 @@ function I(e) {
         previewAvatarDecorationSrc: et,
         previewTheme: er,
         previewPrimaryColor: ei,
-        className: V,
+        className: F,
         disabledInputs: H,
         isTryItOut: B,
         onUpsellClick: () => null == T ? true : T({

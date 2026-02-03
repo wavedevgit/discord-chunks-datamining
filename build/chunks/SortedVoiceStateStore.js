@@ -203,7 +203,7 @@ function P() {
 }
 
 function D() {
-  V()
+  F()
 }
 
 function L(e) {
@@ -263,7 +263,7 @@ function G(e) {
   delete A[t.id]
 }
 
-function V() {
+function F() {
   A = {};
   let e = _.A.getAllVoiceStates();
   h.default.keys(e).forEach(t => {
@@ -272,9 +272,9 @@ function V() {
     })
   })
 }
-class F extends(r = Chunk311907.Ay.Store) {
+class V extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    V(), this.waitFor(u.default, d.A, f.Ay, p.default, _.A), this.syncWith([p.default], j)
+    F(), this.waitFor(u.default, d.A, f.Ay, p.default, _.A), this.syncWith([p.default], j)
   }
   getVoiceStates(e) {
     return I(null != e ? e : g.ME).getVoiceStates()
@@ -300,8 +300,8 @@ class F extends(r = Chunk311907.Ay.Store) {
     return I(null != e ? e : g.ME).getVersion()
   }
 }
-E(F, "displayName", "SortedVoiceStateStore");
-let B = new F(Chunk73153.h, {
+E(V, "displayName", "SortedVoiceStateStore");
+let B = new V(Chunk73153.h, {
   CONNECTION_OPEN: P,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: M,

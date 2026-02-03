@@ -107,7 +107,7 @@ let _ = 200,
           if (t.contains(document.activeElement)) returntrue;
         returnfalse
       }, []),
-      V = i.useCallback(() => {
+      F = i.useCallback(() => {
         setTimeout(() => {
           if (!G()) {
             let e = j.current;
@@ -121,12 +121,12 @@ let _ = 200,
     i.useEffect(() => {
       x()
     }, [A, x]);
-    let F = {
+    let V = {
       "--custom-edge-fade-width": h(a)
     };
     return (0, r.jsxs)("div", {
       ref: M,
-      style: F,
+      style: V,
       className: p.kL,
       children: [S && (0, r.jsxs)("div", {
         className: p.o1,
@@ -177,7 +177,7 @@ let _ = 200,
           }
         },
         onBlur: e => {
-          e.preventDefault(), V()
+          e.preventDefault(), F()
         },
         onKeyDown: e => {
           var t;

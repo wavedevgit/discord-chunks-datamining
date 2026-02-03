@@ -76,8 +76,8 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       primaryColor: k,
       secondaryColor: U
     } = (0, O.A)(null == D ? true : D.src), G = (0, a.bG)([_.default], () => _.default.locale), {
-      displayParticipants: V,
-      participant1: F,
+      displayParticipants: F,
+      participant1: V,
       participant2: B,
       numOtherParticipants: H
     } = (0, E.A)(n, 3), Y = () => {
@@ -87,19 +87,19 @@ let C = (e, t) => T.intl.formatToPlainString(T.t.tAwI1k, {
       let r = H > 0 ? w({
         entry: n,
         channel: t,
-        users: [F, B],
+        users: [V, B],
         countOthers: H
       }) : N(n, t, L);
       return (0, b.Vq)({
         entry: n,
         applicationImageSrc: null == D ? true : D.src,
-        avatarSrcs: V.map(e => e.getAvatarURL(t.guild_id, 128)),
+        avatarSrcs: F.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, y.As)(n, G),
         colors: [k, U],
         channelId: e
       })
-    }, [null == D ? true : D.src, t, V, n, G, H, F, B, k, U, L]), {
+    }, [null == D ? true : D.src, t, F, n, G, H, V, B, k, U, L]), {
       data: K
     } = (0, p.YY)(n.extra.application_id), z = (0, c.A)({
       application: K,

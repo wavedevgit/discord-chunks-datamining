@@ -319,7 +319,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -352,7 +352,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -366,7 +366,7 @@ function F(e) {
     onGameSheetClosed: u,
     onGameTitleClick: f
   } = e, p = (0, d.ki)(s, A.PremiumTypes.TIER_2), _ = (0, g.k5)(t.config), h = (0, E.g5)(t) && (0, E.xZ)(t);
-  if ((0, y.ui)(t)) return V({
+  if ((0, y.ui)(t)) return F({
     quest: t,
     taskDetails: n,
     sourceQuestContent: a,
@@ -426,7 +426,7 @@ function F(e) {
 
 function B(e) {
   var t;
-  return F(N(T({}, e), {
+  return V(N(T({}, e), {
     currentUser: null != (t = e.currentUser) ? t : l.default.getCurrentUser(),
     popoutTargetElementRef: e.popoutTargetElementRef,
     onGameSheetOpened: e.onGameSheetOpened,

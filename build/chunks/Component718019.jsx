@@ -87,15 +87,15 @@ function P(e) {
     trackUserProfileAction: j
   } = (0, m.NJ)(), k = _.Ay.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), U = i.useMemo(() => t.isNonUserBot() || (0, f.c)(t, h), [t, h]), {
     live: G
-  } = (0, g.A)(t.id), [V] = G, {
-    status: F,
+  } = (0, g.A)(t.id), [F] = G, {
+    status: V,
     isMobileOnline: B,
     isVROnline: H
   } = (0, s.cf)([p.A], () => ({
-    status: (0, c.A)(V) ? O.clD.STREAMING : p.A.getStatus(t.id),
+    status: (0, c.A)(F) ? O.clD.STREAMING : p.A.getStatus(t.id),
     isMobileOnline: p.A.isMobileOnline(t.id),
     isVROnline: p.A.isVROnline(t.id)
-  })), Y = true !== L ? L : F, W = [A.d.MODAL, A.d.MODAL_V2].includes(T) ? l._3J.SIZE_120 : l._3J.SIZE_80, K = o()(S.my, D), {
+  })), Y = true !== L ? L : V, W = [A.d.MODAL, A.d.MODAL_V2].includes(T) ? l._3J.SIZE_120 : l._3J.SIZE_80, K = o()(S.my, D), {
     avatarDecorationSrc: z,
     avatarSrc: q,
     eventHandlers: Z

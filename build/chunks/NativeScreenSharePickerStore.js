@@ -139,13 +139,13 @@ function G(e) {
   }
 }
 
-function V() {
+function F() {
   N = {
     lastPickerAction: 2
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     error: t
   } = e;
@@ -171,8 +171,8 @@ function H() {
 v(U, "displayName", "NativeScreenSharePickerStore");
 let Y = new U(Chunk73153.h, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
-  NATIVE_SCREEN_SHARE_PICKER_CANCEL: V,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: F,
+  NATIVE_SCREEN_SHARE_PICKER_CANCEL: F,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: V,
   NATIVE_SCREEN_SHARE_PICKER_PRESENT: B,
   NATIVE_SCREEN_SHARE_PICKER_RELEASE: H
 })

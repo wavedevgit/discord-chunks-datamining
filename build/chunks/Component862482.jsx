@@ -158,14 +158,14 @@ function v(e) {
     focusProps: k,
     "aria-label": U,
     submittingStartedLabel: G,
-    submittingFinishedLabel: V
-  } = e, F = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]), B = p || m, H = B && (null != P || null != D), Y = H ? null : I, W = b(k, t), K = i.useRef(false);
+    submittingFinishedLabel: F
+  } = e, V = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]), B = p || m, H = B && (null != P || null != D), Y = H ? null : I, W = b(k, t), K = i.useRef(false);
   i.useEffect(() => {
-    true === m && (K.current = true, l.ORC.announce(null != G ? G : c.intl.string(c.t.pfChQr))), false === m && true === K.current && l.ORC.announce(null != V ? V : c.intl.string(c.t.SVParY))
-  }, [m, G, V]);
+    true === m && (K.current = true, l.ORC.announce(null != G ? G : c.intl.string(c.t.pfChQr))), false === m && true === K.current && l.ORC.announce(null != F ? F : c.intl.string(c.t.SVParY))
+  }, [m, G, F]);
   let z = (0, r.jsx)(l.vN3, _(f({}, k), {
     offset: W,
-    children: (0, r.jsxs)("button", _(f({}, B ? null : F), {
+    children: (0, r.jsxs)("button", _(f({}, B ? null : V), {
       "aria-label": U,
       "aria-busy": !!m || true,
       ref: j,

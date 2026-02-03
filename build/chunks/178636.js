@@ -239,11 +239,11 @@ function G(e, t, n) {
   return w(e, t, n) >= 0
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   return 0 >= w(e, t, n)
 }
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
   switch (t) {
     case "===":
       return "object" == typeof e && (e = e.version), "object" == typeof n && (n = n.version), e === n;
@@ -262,7 +262,7 @@ function F(e, t, n, r) {
     case "<":
       return j(e, n, r);
     case "<=":
-      return V(e, n, r);
+      return F(e, n, r);
     default:
       throw TypeError("Invalid operator: " + t)
   }
@@ -278,7 +278,7 @@ function B(e, t) {
   if (!(this instanceof B)) return new B(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === H ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = S, exports.major = T, exports.minor = C, exports.patch = N, exports.compare = w, exports.compareLoose = R, exports.compareBuild = P, exports.rcompare = D, exports.sort = L, exports.rsort = x, exports.gt = M, exports.lt = j, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = V, exports.cmp = F, exports.Comparator = B;
+exports.rcompareIdentifiers = S, exports.major = T, exports.minor = C, exports.patch = N, exports.compare = w, exports.compareLoose = R, exports.compareBuild = P, exports.rcompare = D, exports.sort = L, exports.rsort = x, exports.gt = M, exports.lt = j, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = F, exports.cmp = V, exports.Comparator = B;
 var H = {};
 
 function Y(e, t) {
@@ -468,7 +468,7 @@ function eu(e, t, n) {
 function ed(e, t, n, r) {
   switch (e = new b(e, r), t = new Y(t, r), n) {
     case ">":
-      i = M, a = V, o = j, s = ">", l = ">=";
+      i = M, a = F, o = j, s = ">", l = ">=";
       break;
     case "<":
       i = j, a = G, o = M, s = "<", l = "<=";
@@ -522,7 +522,7 @@ B.prototype.parse = function(e) {
   } catch (e) {
     returnfalse
   }
-  return F(e, this.operator, this.semver, this.options)
+  return V(e, this.operator, this.semver, this.options)
 }, B.prototype.intersects = function(e, t) {
   if (!(e instanceof B)) throw TypeError("a Comparator is required");
   if (t && "object" == typeof t || (t = {
@@ -534,8 +534,8 @@ B.prototype.parse = function(e) {
     i = ("<=" === this.operator || "<" === this.operator) && ("<=" === e.operator || "<" === e.operator),
     a = this.semver.version === e.semver.version,
     o = (">=" === this.operator || "<=" === this.operator) && (">=" === e.operator || "<=" === e.operator),
-    s = F(this.semver, "<", e.semver, t) && (">=" === this.operator || ">" === this.operator) && ("<=" === e.operator || "<" === e.operator),
-    l = F(this.semver, ">", e.semver, t) && ("<=" === this.operator || "<" === this.operator) && (">=" === e.operator || ">" === e.operator);
+    s = V(this.semver, "<", e.semver, t) && (">=" === this.operator || ">" === this.operator) && ("<=" === e.operator || "<" === e.operator),
+    l = V(this.semver, ">", e.semver, t) && ("<=" === this.operator || "<" === this.operator) && (">=" === e.operator || ">" === e.operator);
   return r || i || a && o || s || l
 }, exports.Range = Y, Y.prototype.format = function() {
   return this.range = this.set.map(function(e) {

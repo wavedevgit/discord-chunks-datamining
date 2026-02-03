@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 447784, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  k: () => j
+  k: () => P
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,52 +17,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk761365 = require("./761365.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk836314 = require("./836314.js");
-let j = e => {
+let P = e => {
   var n;
   let t, i, {
-      skuId: j,
-      user: h,
-      claimed: x,
-      onSelect: P,
-      selectedSkuId: T
+      skuId: P,
+      user: j,
+      claimed: h,
+      onSelect: _,
+      selectedSkuId: x
     } = e,
-    [S, A] = r.useState(null),
+    [T, A] = r.useState(null),
     O = r.useCallback(e => {
       A(e)
     }, []),
-    b = r.useMemo(() => ({
-      current: S
-    }), [S]),
+    S = r.useMemo(() => ({
+      current: T
+    }), [T]),
     {
-      isHoveringOrFocusing: y
-    } = (0, u.A)(b),
-    I = !x && y,
+      isHoveringOrFocusing: I
+    } = (0, u.A)(S),
+    b = !h && I,
     {
-      product: _
-    } = (0, c.q)(j);
-  if (null == _) return null;
-  let v = _.items[0];
+      product: y
+    } = (0, c.q)(P);
+  if (null == y) return null;
+  let v = y.items[0];
   return null == v ? null : ((0, d.T)(v) ? (i = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
     item: v,
-    user: h,
-    isHighlighted: I,
+    user: j,
+    isHighlighted: b,
     avatarSize: o._3J.SIZE_96
-  })) : (0, p.F)(v) && (i = a.R.NAMEPLATE, t = (0, l.jsx)(g.A, {
+  })) : (0, p.F)(v) && (i = a.R.NAMEPLATE, t = (0, l.jsx)(E.A, {
     nameplate: v,
-    user: h,
-    isHighlighted: I,
+    user: j,
+    isHighlighted: b,
     size: "small"
   })), (0, l.jsx)(o.vN3, {
     children: (0, l.jsxs)(o.sqX, {
       ref: O,
-      "aria-label": null != (n = _.name) ? n : "",
+      "aria-label": null != (n = y.name) ? n : "",
       onClick: () => {
-        null == j || null == P || x || P(j)
+        null == P || null == _ || h || _(P)
       },
       className: s()(f._x, {
-        [f.Vp]: !x,
-        [f.mr]: I,
-        [f.md]: T === j
+        [f.Vp]: !h,
+        [f.mr]: b,
+        [f.md]: x === P
       }),
       children: [(0, l.jsx)("div", {
         className: s()(f.VH, {
@@ -72,10 +72,10 @@ let j = e => {
         children: null != t ? (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)("div", {
             className: s()(f.i1, {
-              [f.Sf]: x
+              [f.Sf]: h
             }),
             children: t
-          }), x && (0, l.jsx)(o.rOg, {
+          }), h && (0, l.jsx)(o.rOg, {
             size: "custom",
             width: 48,
             height: 48,
@@ -87,10 +87,10 @@ let j = e => {
         className: f.tZ,
         children: [(0, l.jsx)(o.Heading, {
           variant: "heading-md/extrabold",
-          children: _.name
+          children: y.name
         }), (0, l.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: x ? E.intl.string(E.t["6cfuDj"]) : E.intl.string(E.t.QQsaCc)
+          children: h ? g.intl.string(g.t["6cfuDj"]) : g.intl.string(g.t.QQsaCc)
         })]
       })]
     })

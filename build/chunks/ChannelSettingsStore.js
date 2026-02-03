@@ -116,14 +116,14 @@ function G() {
   a = o, C = v.XlH.OPEN
 }
 
-function V(e) {
+function F(e) {
   var t;
   C = v.XlH.OPEN, N = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
     let r = e.errors[n];
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
 }
-let F = d().debounce(() => {
+let V = d().debounce(() => {
   if (null == o || null == a) returnfalse;
   let e = o.toJS(),
     t = a.toJS();
@@ -163,7 +163,7 @@ function B(e) {
     locked: f
   }))), null != p && (o = o.set("threadMetadata", T(I({}, o.threadMetadata), {
     invitable: p
-  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != y && (o = o.set("availableTags", y)), null != b && (o = o.set("defaultSortOrder", b)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== A && (o = o.set("iconEmoji", A)), null != S && (o = o.set("themeColor", S)), F()
+  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != y && (o = o.set("availableTags", y)), null != b && (o = o.set("defaultSortOrder", b)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== A && (o = o.set("iconEmoji", A)), null != S && (o = o.set("themeColor", S)), V()
 }
 
 function H(e) {
@@ -285,7 +285,7 @@ let $ = new J(Chunk73153.h, {
     CHANNEL_SETTINGS_INIT: M,
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
-    CHANNEL_SETTINGS_SUBMIT_FAILURE: V,
+    CHANNEL_SETTINGS_SUBMIT_FAILURE: F,
     CHANNEL_SETTINGS_CLOSE: k,
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: Z,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: Z,

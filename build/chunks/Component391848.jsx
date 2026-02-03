@@ -2,7 +2,7 @@
 /** chunk id: 391848, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -41,14 +41,14 @@ let D = 512,
   k = 20,
   U = 420,
   G = [8, 8, 0, 8],
-  V = l().debounce(() => {
+  F = l().debounce(() => {
     (0, d.zV)(N.HAw.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  F = Chunk64700.forwardRef(function(e, t) {
+  V = Chunk64700.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(false), l = i.useRef(0), [F, H] = i.useState(0), Y = i.useRef(null), [W, K] = i.useState(false), z = m.LS.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(false), l = i.useRef(0), [V, H] = i.useState(0), Y = i.useRef(null), [W, K] = i.useState(false), z = m.LS.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.zV)(N.HAw.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -92,7 +92,7 @@ let D = 512,
       searchQuery: ""
     }), er = e => {
       let t = Z.length * (j + M) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? L : 0)) * x - D;
-      X && e + U > t && ee(), en(e), V(), l.current = e
+      X && e + U > t && ee(), en(e), F(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
       ei.current = er
@@ -102,8 +102,8 @@ let D = 512,
     let ea = i.useCallback(e => e !== Z.length - 1 || X ? M : 0, [Z.length, X]),
       eo = Q.map(e => e.data.length);
     i.useEffect(() => {
-      null != Y.current && W && null != F && Y.current.scrollRowIntoView(F)
-    }, [W, F]), i.useLayoutEffect(() => {
+      null != Y.current && W && null != V && Y.current.scrollRowIntoView(V)
+    }, [W, V]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = Y.current) || e.scrollToSectionTop(0)
@@ -126,13 +126,13 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == F) return !e && (H(0), true);
-        if (null == F) returnfalse;
+        if (null == V) return !e && (H(0), true);
+        if (null == V) returnfalse;
         let t = 0,
           n = 0;
         for (let e of Q)
-          if (t = n, F < (n += e.data.length)) {
-            let n = e.data[F - t],
+          if (t = n, V < (n += e.data.length)) {
+            let n = e.data[V - t],
               r = q.find(e => e.id === n.applicationId);
             el(n, r, (0, A.$S)(e.section));
             break
@@ -142,10 +142,10 @@ let D = 512,
         if (0 === J.length) returntrue;
         let t = X ? L : 0,
           n = J.length + t,
-          r = null == F ? 0 : F + e;
+          r = null == V ? 0 : V + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), H(r), K(true), true
       }
-    }), [J.length, Q, X, q, el, F]);
+    }), [J.length, Q, X, q, el, V]);
     let ec = i.useCallback(e => {
         let t = Z[e];
         if (null == t) return null;
@@ -196,7 +196,7 @@ let D = 512,
           command: o,
           channel: n,
           className: R.D5,
-          selected: F === e,
+          selected: V === e,
           showImage: a.section.id !== o.applicationId,
           section: l,
           onClick: () => el(o, l, (0, A.$S)(a.section)),
@@ -204,9 +204,9 @@ let D = 512,
             H(null), K(false)
           }
         }, s)
-      }, [n, Q, el, q, F]),
+      }, [n, Q, el, q, V]),
       ef = (0, h.GV)();
-    return (0, p.gf)(ef, true, (0, f.aI)(F)), i.useEffect(() => () => {
+    return (0, p.gf)(ef, true, (0, f.aI)(V)), i.useEffect(() => () => {
       (0, p.nQ)()
     }, []), (0, r.jsxs)(f.Ay, {
       id: ef,

@@ -36,8 +36,8 @@ var r, i, Chunk549412 = require("./549412.js"),
   k = 14,
   U = 15,
   G = 16,
-  V = 17,
-  F = 18,
+  F = 17,
+  V = 18,
   B = 19,
   H = 20,
   Y = 21,
@@ -244,7 +244,7 @@ function e_(e, t) {
           }
           break;
         case 2:
-          n.mode = V;
+          n.mode = F;
           break;
         case 3:
           e.msg = "invalid block type", n.mode = $
@@ -271,7 +271,7 @@ function e_(e, t) {
       }
       n.mode = M;
       break;
-    case V:
+    case F:
       for (; es < 14;) {
         if (0 === er) break i;
         er--, eo += r[et++] << es, es += 8
@@ -280,8 +280,8 @@ function e_(e, t) {
         e.msg = "too many length or distance symbols", n.mode = $;
         break
       }
-      n.have = 0, n.mode = F;
-    case F:
+      n.have = 0, n.mode = V;
+    case V:
       for (; n.have < n.ncode;) {
         for (; es < 3;) {
           if (0 === er) break i;

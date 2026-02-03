@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 957489, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  F: () => x
+  F: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk503698 = require("./503698.js"),
@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk113437 = require("./113437.js");
 
-function x(e) {
+function h(e) {
   let {
     handleStepChange: n,
     handleClose: t,
@@ -30,14 +30,14 @@ function x(e) {
     activeSubscription: s,
     startedPaymentFlowWithPaymentSourcesRef: o,
     setSelectedPlanId: u,
-    priceOptions: j,
-    defaultPlanId: h,
-    hasPaymentSources: x
+    priceOptions: P,
+    defaultPlanId: j,
+    hasPaymentSources: h
   } = (0, p.P5)(), {
-    isGift: T,
-    claimableRewards: S
-  } = (0, d.Pv)(), A = T && null != S && S.length > 0, O = (0, a.V)(r);
-  return (0, l.jsx)(P, {
+    isGift: x,
+    claimableRewards: T
+  } = (0, d.Pv)(), A = x && null != T && T.length > 0, O = (0, a.V)(r);
+  return (0, l.jsx)(_, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: n,
@@ -54,18 +54,18 @@ function x(e) {
       let d = m.pn.PLAN_SELECT,
         p = (0, c.aZ)(n);
       p !== f.pe.TIER_1 && p !== f.pe.TIER_2 || t !== f.pe.TIER_0 || i || (d = m.pn.WHAT_YOU_LOSE);
-      let j = (0, E.t)({
+      let P = (0, g.t)({
           userTrialOffer: s,
           isGift: i,
           skuId: t
         }),
-        h = (0, g.vT)({
-          isTrial: j,
+        j = (0, E.vT)({
+          isTrial: P,
           isGift: i,
           selectedSkuId: t,
           startedPaymentFlowWithPaymentSources: o
         });
-      d !== m.pn.WHAT_YOU_LOSE && h && (d = m.pn.REVIEW, a((0, g.xT)(t, n, u))), r(d, {
+      d !== m.pn.WHAT_YOU_LOSE && j && (d = m.pn.REVIEW, a((0, E.xT)(t, n, u))), r(d, {
         analyticsDataOverride: {
           sku_id: t
         }
@@ -75,11 +75,11 @@ function x(e) {
       newSkuId: e,
       setSelectedSkuId: i,
       handleStepChange: n,
-      isGift: T,
+      isGift: x,
       userTrialOffer: O,
       startedPaymentFlowWithPaymentSources: o.current,
       setSelectedPlanId: u,
-      defaultPlanId: h
+      defaultPlanId: j
     }),
     onSelectPremiumGroup: () => (function(e) {
       let {
@@ -96,17 +96,17 @@ function x(e) {
     })({
       setSelectedPlanId: u,
       handleStepChange: n,
-      hasPaymentSources: x,
+      hasPaymentSources: h,
       setSelectedSkuId: i
     }),
     onClose: t,
-    isGift: T,
-    priceOptions: j,
+    isGift: x,
+    priceOptions: P,
     showPromotionalGiftBanner: A
   })
 }
 
-function P(e) {
+function _(e) {
   let {
     selectSku: n,
     onClose: t,
@@ -118,24 +118,24 @@ function P(e) {
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(s.rQ0, {
       "data-migration-pending": true,
-      className: i()(h.wC, h.LG),
+      className: i()(j.wC, j.LG),
       separator: false,
       children: (0, l.jsxs)(s.BJc, {
         direction: "horizontal",
         justify: "space-between",
         children: [(0, l.jsx)(s.Heading, {
           variant: "heading-lg/bold",
-          children: j.intl.string(j.t["r+SebU"])
+          children: P.intl.string(P.t["r+SebU"])
         }), (0, l.jsx)(s.s_y, {
           "data-migration-pending": true,
-          className: h.VN,
-          innerClassName: h.to,
+          className: j.VN,
+          innerClassName: j.to,
           onClick: t
         })]
       })
     }), m ? (0, l.jsx)(s.$mQ, {
       "data-migration-pending": true,
-      className: h.eE,
+      className: j.eE,
       children: (0, l.jsx)(u.yS, {
         onSelectSku: e => n((0, c.mH)(e)),
         onSelectPremiumGroup: p,
@@ -144,7 +144,7 @@ function P(e) {
       })
     }) : (0, l.jsx)(s.$mQ, {
       "data-migration-pending": true,
-      className: i()(h.a2, h.dt),
+      className: i()(j.a2, j.dt),
       children: (0, l.jsx)(u.Ay, {
         onSelectSku: e => n((0, c.mH)(e)),
         isGift: r,

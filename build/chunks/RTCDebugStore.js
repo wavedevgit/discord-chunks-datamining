@@ -237,11 +237,11 @@ function G(e) {
   }), o.h.wait(() => s.ho()))
 }
 
-function V(e) {
+function F(e) {
   A = A.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function F(e) {
+function V(e) {
   let {
     value: t
   } = e;
@@ -308,8 +308,8 @@ let Y = new H(Chunk73153.h, {
   RTC_DEBUG_MODAL_SET_SECTION: x,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
-  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: V,
-  RTC_DEBUG_SET_RECORDING_FLAG: F,
+  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: F,
+  RTC_DEBUG_SET_RECORDING_FLAG: V,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: B,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,

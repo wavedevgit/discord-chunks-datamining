@@ -1,7 +1,7 @@
 /** Chunk was on 37997 **/
 /** chunk id: 761546, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A: () => c
+  A: () => i
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -10,11 +10,11 @@ var Chunk172218 = require("./172218.js"),
   Chunk437290 = require("./437290.jsx"),
   Chunk892448 = require("./892448.js");
 
-function c(e) {
+function i(e) {
   let {
     users: t,
     isUserSelected: r,
-    onSelectionChange: c,
+    onSelectionChange: i,
     isFetching: o,
     onFetchMore: d,
     isUserDisabled: u,
@@ -26,7 +26,7 @@ function c(e) {
     e && !o && (null == d || d())
   });
   return b.length > 0 && 0 === t.length && null != x ? (0, n.jsxs)("div", {
-    className: i.t,
+    className: c.t,
     children: [(0, n.jsx)(s.Heading, {
       variant: "heading-md/semibold",
       color: "text-strong",
@@ -42,7 +42,7 @@ function c(e) {
       user: e,
       checked: r(e),
       disabled: !!(null == u ? true : u(e)),
-      onChange: c,
+      onChange: i,
       tooltipConfig: h
     }, e.id)), o && (0, n.jsx)(s.y$y, {}), (0, n.jsx)("div", {
       ref: _

@@ -82,11 +82,11 @@ function G(e) {
   e[I].sort(U), e[S].sort(U), e[v.rbe.GUILD_CATEGORY].sort(U)
 }
 
-function V(e) {
+function F(e) {
   return (0, p.tr)(e) ? I : (0, p.ay)(e) ? S : e
 }
 
-function F() {
+function V() {
   let e = {},
     t = d.A.getFavoriteChannels();
   for (let n in t) {
@@ -103,7 +103,7 @@ function F() {
 }
 
 function B(e) {
-  if (e === v.YYv) return F();
+  if (e === v.YYv) return V();
   let t = {},
     n = m.A.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
@@ -120,7 +120,7 @@ function H(e) {
   return a().forEach(n, n => {
     let r = n.channel;
     if (e.count += 1, p.JT.has(r.type) && !y.A.can(v.xBc.VIEW_CHANNEL, r) && !c.A.isChannelGated(r.guild_id, r.id) && r.id !== R) return;
-    let i = V(r.type);
+    let i = F(r.type);
     r.type === v.rbe.GUILD_DIRECTORY && (null == P[t] && (P[t] = []), P[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }

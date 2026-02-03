@@ -196,13 +196,13 @@ function x(e) {
     className: d,
     participantType: s.type
   });
-  let V = l()(j).take(A).map(e => (0, r.jsx)(f.euF, {
+  let F = l()(j).take(A).map(e => (0, r.jsx)(f.euF, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: f._3J.SIZE_24,
     className: I.lJ
   }, e.id)).value();
-  return j.length > A && (V[V.length - 1] = (0, r.jsxs)("div", {
+  return j.length > A && (F[F.length - 1] = (0, r.jsxs)("div", {
     className: I.ju,
     children: ["+", j.length - A + 1]
   }, "overflow")), (0, r.jsx)(_.A, {
@@ -225,7 +225,7 @@ function x(e) {
         children: () => (0, r.jsx)("div", {
           ref: S,
           className: o()(I.Mj, d),
-          children: V
+          children: F
         })
       })
     })

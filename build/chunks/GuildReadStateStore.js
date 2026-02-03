@@ -117,20 +117,20 @@ function G(e, t) {
   return n.mentionCounts = S({}, t.mentionCounts), n.unreadByType = S({}, t.unreadByType), n
 }
 
-function V(e) {
+function F(e) {
   return e.unread = Object.values(e.unreadByType).some(e => e), e
 }
 
-function F(e, t) {}
+function V(e, t) {}
 
 function B(e, t, n) {
-  return V(t), t.lowImportanceMentionCount = 0, t.highImportanceMentionCount = 0, d.default.forEach(t.mentionCounts, e => {
+  return F(t), t.lowImportanceMentionCount = 0, t.highImportanceMentionCount = 0, d.default.forEach(t.mentionCounts, e => {
     let {
       count: n,
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : T] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), w++, D(null != e ? e : T), F(t, n), true)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : T] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), w++, D(null != e ? e : T), V(t, n), true)
 }
 
 function H(e, t) {
@@ -211,9 +211,9 @@ function W(e, t) {
         })
       }!r.unreadByType[A.P.GUILD_EVENT] && U(n, A.P.GUILD_EVENT) && (r.unreadByType[A.P.GUILD_EVENT] = true)
   }
-  V(r);
+  F(r);
   let i = P(n);
-  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (C[null != n ? n : T] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), w++, D(null != n ? n : T), F(r, i), true)
+  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (C[null != n ? n : T] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), w++, D(null != n ? n : T), V(r, i), true)
 }
 
 function K(e) {

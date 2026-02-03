@@ -334,7 +334,7 @@ class P extends(r = Chunk64700.Component) {
       readyState: L,
       hasMouseOver: x,
       hasFocus: M
-    } = this.state, j = null != n, k = this.getRatio(), U = (0, o.clamp)(Math.round(h * k), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, o.clamp)(Math.round(m * k), null != E ? E : 0, null != O ? O : 1 / 0), V = {
+    } = this.state, j = null != n, k = this.getRatio(), U = (0, o.clamp)(Math.round(h * k), null != g ? g : 0, null != b ? b : 1 / 0), G = (0, o.clamp)(Math.round(m * k), null != E ? E : 0, null != O ? O : 1 / 0), F = {
       alt: e,
       readyState: L,
       onContextMenu: null != a ? a : true,
@@ -373,16 +373,16 @@ class P extends(r = Chunk64700.Component) {
       onFocus: this.onFocus,
       onBlur: this.onBlur
     };
-    if (1 === V.width && 1 === V.height) return null;
-    switch ((j || null != A) && (V.onClick = this.onClick), r && (V.original = null != l && "" !== l ? l : V.src), L) {
+    if (1 === F.width && 1 === F.height) return null;
+    switch ((j || null != A) && (F.onClick = this.onClick), r && (F.original = null != l && "" !== l ? l : F.src), L) {
       case y.Rv1.LOADING:
-        null != t && (V.src = t);
+        null != t && (F.src = t);
         break;
       case y.Rv1.READY:
         if (P.isAnimated(this.props)) {
-          V.onMouseLeave = this.onMouseLeave;
+          F.onMouseLeave = this.onMouseLeave;
           let e = (s || x || M) && (null == _ || _) && P.visibilityObserver.isVisible(this);
-          e ? (V.src = this.getSrc(k), V.renderAccessory = I) : (V.src = this.getSrc(k, !p || !s), V.renderAccessory = this.renderAccessory), null != f && (V.children = t => {
+          e ? (F.src = this.getSrc(k), F.renderAccessory = I) : (F.src = this.getSrc(k, !p || !s), F.renderAccessory = this.renderAccessory), null != f && (F.children = t => {
             let {
               src: n,
               size: r,
@@ -397,11 +397,11 @@ class P extends(r = Chunk64700.Component) {
               mediaLayoutType: a
             })
           })
-        } else V.src = this.getSrc(k)
+        } else F.src = this.getSrc(k)
     }
     return (0, i.jsx)(c._, v({
       ref: this._imageRef
-    }, V))
+    }, F))
   }
   constructor(e) {
     super(e), O(this, "state", {

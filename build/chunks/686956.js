@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A: () => B,
-  k: () => V
+  k: () => F
 }), require("./65821.js"), require("./142703.js"), require("./733351.js");
 var Chunk110259 = require("./110259.js"),
   Chunk136722 = require("./136722.js"),
@@ -115,14 +115,14 @@ let k = e => {
     })
   };
 
-function V(e) {
+function F(e) {
   return new Promise(t => y.A.addConditionalChangeListener(() => {
     let n = y.A.getGuild(e);
     return null == n || (t(n), false)
   }))
 }
 
-function F(e, t) {
+function V(e, t) {
   return null != t ? t : (0, _.W)(e)
 }
 let B = {
@@ -193,9 +193,9 @@ let B = {
       throw (null == (c = t.body) ? true : c.code) === N.t02.GUILD_AT_CAPACITY && G(), E && (null == (u = t.body) ? true : u.code) === N.t02.UNKNOWN_GUILD && U(e), t
     }
   },
-  waitForGuild: V,
+  waitForGuild: F,
   async transitionToGuildSync(e, t, n, r) {
-    let i = F((await V(e)).id, n),
+    let i = V((await F(e)).id, n),
       a = t;
     (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = x(D({}, t), {
       welcomeModalChannelId: null != i ? i : true

@@ -134,15 +134,15 @@ function P(e) {
       previousUploadOptions: j,
       uploadOptions: M
     },
-    V = i.useRef(G);
+    F = i.useRef(G);
   i.useEffect(() => {
-    V.current = G
+    F.current = G
   }), i.useEffect(() => {
     let {
       isApplicationCommand: e,
       previousUploadOptions: r,
       uploadOptions: i
-    } = V.current;
+    } = F.current;
     if (e) {
       let e = [];
       r.forEach(t => {
@@ -152,8 +152,8 @@ function P(e) {
       }), k(i)
     }
   }, [t, M.length, n]);
-  let F = P.filter(e => e.filename !== a);
-  return !D && 0 === F.length || D && 0 === M.length ? null : (0, r.jsx)(s.hD, {
+  let V = P.filter(e => e.filename !== a);
+  return !D && 0 === V.length || D && 0 === M.length ? null : (0, r.jsx)(s.hD, {
     navigator: w,
     children: (0, r.jsx)(s.PR, {
       children: e => {
@@ -168,7 +168,7 @@ function P(e) {
             channelId: t,
             keyboardModeEnabled: T,
             option: e
-          }, e.name)) : F.map(e => (0, r.jsx)(b.A, {
+          }, e.name)) : V.map(e => (0, r.jsx)(b.A, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,

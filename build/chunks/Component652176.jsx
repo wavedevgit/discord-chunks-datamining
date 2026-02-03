@@ -151,17 +151,17 @@ function J(e) {
       altText: t
     } = e;
     return (0, r.jsxs)(d.lGe, {
-      "aria-label": F.intl.string(F.t.fSiQ3A),
+      "aria-label": V.intl.string(V.t.fSiQ3A),
       className: B.ob,
       onKeyDown: e => {
-        e.key === V.N$.Escape && setTimeout(() => {
+        e.key === F.N$.Escape && setTimeout(() => {
           var e;
           return null == (e = w.current) ? true : e.focus()
         }, 0)
       },
       children: [(0, r.jsx)("span", {
         className: B.k_,
-        children: F.intl.string(F.t.fSiQ3A)
+        children: V.intl.string(V.t.fSiQ3A)
       }), (0, r.jsx)("span", {
         className: B.a7,
         children: t
@@ -193,14 +193,14 @@ function J(e) {
           children: (0, r.jsx)("button", K(Y({}, e), {
             type: "button",
             ref: w,
-            "aria-label": F.intl.string(F.t.fSiQ3A),
+            "aria-label": V.intl.string(V.t.fSiQ3A),
             onMouseEnter: () => I(true),
             onMouseLeave: () => I(false),
             className: o()(B.DV, {
               [B.yZ]: true,
               [B.I5]: m
             }),
-            children: F.intl.string(F.t.jCV1Tz)
+            children: V.intl.string(V.t.jCV1Tz)
           }))
         })
       })
@@ -269,17 +269,17 @@ function en(e) {
       altText: t
     } = e;
     return (0, r.jsxs)(d.lGe, {
-      "aria-label": F.intl.string(F.t.fSiQ3A),
+      "aria-label": V.intl.string(V.t.fSiQ3A),
       className: B.ob,
       onKeyDown: e => {
-        e.key === V.N$.Escape && setTimeout(() => {
+        e.key === F.N$.Escape && setTimeout(() => {
           var e;
           return null == (e = y.current) ? true : e.focus()
         }, 0)
       },
       children: [(0, r.jsx)("span", {
         className: B.k_,
-        children: F.intl.string(F.t.fSiQ3A)
+        children: V.intl.string(V.t.fSiQ3A)
       }), (0, r.jsx)("span", {
         className: B.a7,
         children: t
@@ -305,11 +305,11 @@ function en(e) {
           children: (0, r.jsx)("button", K(Y({}, e), {
             type: "button",
             ref: y,
-            "aria-label": F.intl.string(F.t.fSiQ3A),
+            "aria-label": V.intl.string(V.t.fSiQ3A),
             className: o()(B.DV, {
               [B.I5]: u
             }),
-            children: F.intl.string(F.t.jCV1Tz)
+            children: V.intl.string(V.t.jCV1Tz)
           }))
         })
       })
@@ -343,9 +343,9 @@ var eo = function(e) {
 function es(e) {
   switch (e) {
     case 0:
-      return F.intl.string(F.t["4EvBbw"]);
+      return V.intl.string(V.t["4EvBbw"]);
     case 1:
-      return F.intl.string(F.t["1J6Xq7"]);
+      return V.intl.string(V.t["1J6Xq7"]);
     default:
       return (0, x.xb)(e)
   }
@@ -354,9 +354,9 @@ function es(e) {
 function el(e) {
   switch (e) {
     case 0:
-      return F.intl.string(F.t.gpoQsB);
+      return V.intl.string(V.t.gpoQsB);
     case 1:
-      return F.intl.string(F.t.k3RM8z);
+      return V.intl.string(V.t.k3RM8z);
     default:
       return (0, x.xb)(e)
   }
@@ -410,14 +410,14 @@ let ec = e => {
         },
         children: [(0, r.jsx)("div", {
           className: B.$I,
-          children: F.intl.string(F.t["1zUvlw"])
+          children: V.intl.string(V.t["1zUvlw"])
         }), n ? (0, r.jsx)(d.y$y, {
           type: d.y$y.Type.PULSING_ELLIPSIS,
           className: B.u1,
           itemClassName: B.$N
         }) : (0, r.jsx)("div", {
           className: B.hQ,
-          children: F.intl.string(F.t.TdQXA8)
+          children: V.intl.string(V.t.TdQXA8)
         })]
       })
     })
@@ -459,7 +459,7 @@ function ed(e) {
         type: "button",
         className: B.$I,
         onClick: s,
-        "aria-label": F.intl.string(F.t.z0Mkp3),
+        "aria-label": V.intl.string(V.t.z0Mkp3),
         "aria-describedby": a,
         children: (0, r.jsx)("span", {
           id: a,
@@ -473,7 +473,7 @@ function ed(e) {
         type: "button",
         onClick: l,
         className: B.hQ,
-        children: [F.intl.string(F.t.e6RscS), (0, r.jsx)(d.MBj, {
+        children: [V.intl.string(V.t.e6RscS), (0, r.jsx)(d.MBj, {
           size: "md",
           color: "currentColor",
           className: B.t3
@@ -507,7 +507,7 @@ function ef(e) {
       channel_type: s.type
     })
   }, [M, k, s.guild_id, s.id, s.type]);
-  let V = (0, u.bG)([P.default], () => {
+  let F = (0, u.bG)([P.default], () => {
       var e;
       return null != (e = null == M ? true : M.map(e => {
         var t;
@@ -609,10 +609,10 @@ function ef(e) {
   let ee = i.useMemo(() => (0, r.jsx)(C.A, {
       channel: s,
       summaries: M,
-      summariesMembers: V,
+      summariesMembers: F,
       selectTopic: X,
       setOpen: J
-    }), [M, V, X, J, s]),
+    }), [M, F, X, J, s]),
     et = i.useCallback(() => {
       let e = R.Ay.ackMessageId(s.id);
       null != e ? f.A.jumpToMessage({
@@ -634,15 +634,15 @@ function ef(e) {
         objectType: U.AnalyticsObjectTypes.ACK_MANUAL
       })
     }, [s.id]),
-    er = F.intl.string(F.t["38qwgO"]);
-  return M.length > 0 && (er = "" === Y || null == Y ? F.intl.string(F.t.DwnFuG) : Y), E ? null : (0, r.jsxs)("div", {
+    er = V.intl.string(V.t["38qwgO"]);
+  return M.length > 0 && (er = "" === Y || null == Y ? V.intl.string(V.t.DwnFuG) : Y), E ? null : (0, r.jsxs)("div", {
     ref: A,
     className: o()(B.dw, B.jh),
     children: [(0, r.jsx)("div", {
       className: B.qm,
       children: (0, r.jsx)(d.DUT, {
         className: B.TQ,
-        "aria-label": F.intl.string(F.t.RT3MPz),
+        "aria-label": V.intl.string(V.t.RT3MPz),
         onClick: Q,
         children: (0, r.jsxs)("div", {
           className: o()({
@@ -674,7 +674,7 @@ function ef(e) {
       className: o()(B.hQ, B.NX),
       children: [(0, r.jsx)("div", {
         className: B.$U,
-        children: F.intl.string(F.t.e6RscS)
+        children: V.intl.string(V.t.e6RscS)
       }), (0, r.jsx)(d.MBj, {
         size: "md",
         color: "currentColor",
@@ -696,12 +696,12 @@ function ef(e) {
             variant: "heading-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: F.intl.string(F.t.q21fUr)
+            children: V.intl.string(V.t.q21fUr)
           }), (0, r.jsx)(O.A, {
             className: B.Zx
           })]
         }), (0, r.jsx)(d.DUT, {
-          "aria-label": F.intl.string(F.t.cpT0Cq),
+          "aria-label": V.intl.string(V.t.cpT0Cq),
           onClick: Q,
           className: B.oX,
           children: (0, r.jsx)(d.PGe, {
@@ -764,7 +764,7 @@ function eh(e) {
     j = null == N || null == (n = N[M]) ? true : n.topic;
   null == j && null == h && (null == N ? true : N.length) >= 1 && (j = null == (a = N[0]) ? true : a.topic);
   let k = i.useMemo(() => l().get(N, M - 1), [M, N]),
-    V = i.useMemo(() => l().get(N, M + 1), [M, N]),
+    F = i.useMemo(() => l().get(N, M + 1), [M, N]),
     H = i.useMemo(() => l().debounce(e => {
       var t;
       E(null != (t = null == e ? true : e.id) ? t : null)
@@ -865,15 +865,15 @@ function eh(e) {
     setOpen: J
   }), [N, R, Z, J, s]);
   if (!(0, u.bG)([T.A], () => T.A.shouldShowTopicsBar())) return null;
-  let et = F.intl.string(F.t["38qwgO"]);
-  return N.length > 0 && (et = "" === j || null == j ? F.intl.string(F.t.DwnFuG) : j), _ ? null : (0, r.jsxs)("div", {
+  let et = V.intl.string(V.t["38qwgO"]);
+  return N.length > 0 && (et = "" === j || null == j ? V.intl.string(V.t.DwnFuG) : j), _ ? null : (0, r.jsxs)("div", {
     ref: b,
     className: o()(B.$T, B.jh),
     children: [(0, r.jsxs)("div", {
       className: B.sE,
       children: [(0, r.jsx)(d.DUT, {
         className: B.LP,
-        "aria-label": F.intl.string(F.t.RT3MPz),
+        "aria-label": V.intl.string(V.t.RT3MPz),
         onClick: q,
         children: (0, r.jsxs)("div", {
           className: o()({
@@ -898,10 +898,10 @@ function eh(e) {
       }), (0, r.jsxs)("div", {
         className: B.Yk,
         children: [(0, r.jsx)(d.DUT, {
-          "aria-label": F.intl.string(F.t["4huCnC"]),
+          "aria-label": V.intl.string(V.t["4huCnC"]),
           onClick: X,
           className: o()(B.ZM, B.vz, {
-            [B.jf]: null == V
+            [B.jf]: null == F
           }),
           children: (0, r.jsx)(D.A, {
             width: 16,
@@ -909,7 +909,7 @@ function eh(e) {
             direction: D.A.Directions.UP
           })
         }), (0, r.jsx)(d.DUT, {
-          "aria-label": F.intl.string(F.t["58KOoF"]),
+          "aria-label": V.intl.string(V.t["58KOoF"]),
           onClick: Q,
           className: o()(B.ZM, B.mt, {
             [B.jf]: null == k
@@ -937,12 +937,12 @@ function eh(e) {
             variant: "heading-md/bold",
             color: "text-strong",
             lineClamp: 1,
-            children: F.intl.string(F.t.q21fUr)
+            children: V.intl.string(V.t.q21fUr)
           }), (0, r.jsx)(O.A, {
             className: B.Zx
           })]
         }), (0, r.jsx)(d.DUT, {
-          "aria-label": F.intl.string(F.t.cpT0Cq),
+          "aria-label": V.intl.string(V.t.cpT0Cq),
           onClick: q,
           className: B.oX,
           children: (0, r.jsx)(d.PGe, {
@@ -973,7 +973,7 @@ let em = function(e) {
         className: B.$o,
         color: "text-muted",
         variant: "text-sm/normal",
-        children: F.intl.string(F.t["515vjG"])
+        children: V.intl.string(V.t["515vjG"])
       })]
     })
   },

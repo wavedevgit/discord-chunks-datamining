@@ -98,8 +98,8 @@ function O(e) {
       containerTag: v,
       ariaHidden: P
     }, D)),
-    V = null != n && ("string" != typeof n || "" !== n),
-    F = null != g && !i.isValidElement(g),
+    F = null != n && ("string" != typeof n || "" !== n),
+    V = null != g && !i.isValidElement(g),
     B = i.useMemo(() => (0, r.jsxs)("div", {
       className: o()(m.jk, {
         [m.eb]: null == g
@@ -109,19 +109,19 @@ function O(e) {
         style: {
           width: b
         },
-        children: F ? (0, r.jsx)(l.vYh, E({}, g)) : g
+        children: V ? (0, r.jsx)(l.vYh, E({}, g)) : g
       }), (0, r.jsxs)("div", {
         className: m.P_,
-        children: [V && (0, r.jsx)(c.Text, {
+        children: [F && (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           children: n
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          color: V ? "text-subtle" : "text-default",
+          color: F ? "text-subtle" : "text-default",
           children: a
         })]
       })]
-    }), [g, b, n, a, V, F]),
+    }), [g, b, n, a, F, V]),
     H = null != R ? R : "".concat((0, p.Xj)(null != n ? n : ""), "|").concat((0, p.Xj)(a)),
     Y = (0, _.j)({
       shouldShow: k

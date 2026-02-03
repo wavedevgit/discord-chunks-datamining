@@ -245,8 +245,8 @@
   try {
     RegExp("(?<=a)"), RegExp("(?<!a)"), G = false
   } catch (e) {}
-  var V = 0,
-    F = {
+  var F = 0,
+    V = {
       Array: {
         react: function(e, t, n) {
           for (var r = n.key, i = [], a = 0, o = 0; a < e.length; a++, o++) {
@@ -275,7 +275,7 @@
         }
       },
       heading: {
-        order: V++,
+        order: F++,
         match: l(/^ *(#{1,6})([^\n]+?)#* *(?:\n *)+\n/),
         parse: function(e, t, n) {
           return {
@@ -293,14 +293,14 @@
         }
       },
       nptable: {
-        order: V++,
+        order: F++,
         match: l(x.NPTABLE_REGEX),
         parse: x.parseNpTable,
         react: null,
         html: null
       },
       lheading: {
-        order: V++,
+        order: F++,
         match: l(/^([^\n]+)\n *(=|-){3,} *(?:\n *)+\n/),
         parse: function(e, t, n) {
           return {
@@ -313,7 +313,7 @@
         html: null
       },
       hr: {
-        order: V++,
+        order: F++,
         match: l(/^( *[-*_]){3,} *(?:\n *)+\n/),
         parse: A,
         react: function(e, t, n) {
@@ -324,7 +324,7 @@
         }
       },
       codeBlock: {
-        order: V++,
+        order: F++,
         match: l(/^(?:    [^\n]+\n*)+(?:\n *)+\n/),
         parse: function(e, t, n) {
           return {
@@ -350,7 +350,7 @@
         }
       },
       fence: {
-        order: V++,
+        order: F++,
         match: l(/^ *(`{3,}|~{3,}) *(?:(\S+) *)?\n([\s\S]+?)\n?\1 *(?:\n *)+\n/),
         parse: function(e, t, n) {
           return {
@@ -363,7 +363,7 @@
         html: null
       },
       blockQuote: {
-        order: V++,
+        order: F++,
         match: l(/^( *>[^\n]+(\n[^\n]+)*\n*)+\n{2,}/),
         parse: function(e, t, n) {
           return {
@@ -380,7 +380,7 @@
         }
       },
       list: {
-        order: V++,
+        order: F++,
         match: function(e, t) {
           var n = null == t.prevCapture ? "" : t.prevCapture[0],
             r = L.exec(n),
@@ -431,7 +431,7 @@
         }
       },
       def: {
-        order: V++,
+        order: F++,
         match: l(/^ *\[([^\]]+)\]: *<?([^\s>]*)>?(?: +["(]([^\n]+)[")])? *\n(?: *\n)*/),
         parse: function(e, t, n) {
           var r = e[1].replace(/\s+/g, " ").toLowerCase(),
@@ -456,7 +456,7 @@
         }
       },
       table: {
-        order: V++,
+        order: F++,
         match: l(x.TABLE_REGEX),
         parse: x.parseTable,
         react: function(e, t, n) {
@@ -516,7 +516,7 @@
         }
       },
       newline: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["\n"],
         match: l(/^(?:\n *)*\n/),
         parse: A,
@@ -528,7 +528,7 @@
         }
       },
       paragraph: {
-        order: V++,
+        order: F++,
         match: l(/^((?:[^\n]|\n(?! *\n))+)(?:\n *)+\n/),
         parse: v,
         react: function(e, t, n) {
@@ -545,7 +545,7 @@
         }
       },
       escape: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["\\"],
         match: s(/^\\([^0-9A-Za-z\s])/),
         parse: function(e, t, n) {
@@ -558,7 +558,7 @@
         html: null
       },
       tableSeparator: {
-        order: V++,
+        order: F++,
         match: function(e, t) {
           return t.inTable ? /^ *\| */.exec(e) : null
         },
@@ -575,7 +575,7 @@
         }
       },
       autolink: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["<"],
         match: s(/^<([^: >]+:\/[^ >]+)>/),
         parse: function(e, t, n) {
@@ -592,7 +592,7 @@
         html: null
       },
       mailto: {
-        order: V++,
+        order: F++,
         match: s(/^<([^ >]+@[^ >]+)>/),
         parse: function(e, t, n) {
           var r = e[1],
@@ -610,7 +610,7 @@
         html: null
       },
       url: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["h"],
         match: s(/^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/),
         parse: function(e, t, n) {
@@ -628,7 +628,7 @@
         html: null
       },
       link: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["["],
         match: s(RegExp("^\\[(" + M + ")\\]\\(" + j + "\\)")),
         parse: function(e, t, n) {
@@ -654,7 +654,7 @@
         }
       },
       image: {
-        order: V++,
+        order: F++,
         match: s(RegExp("^!\\[(" + M + ")\\]\\(" + j + "\\)")),
         parse: function(e, t, n) {
           return {
@@ -679,7 +679,7 @@
         }
       },
       reflink: {
-        order: V++,
+        order: F++,
         match: s(RegExp("^\\[(" + M + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
           return U(e, n, {
@@ -691,7 +691,7 @@
         html: null
       },
       refimage: {
-        order: V++,
+        order: F++,
         match: s(RegExp("^!\\[(" + M + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
           return U(e, n, {
@@ -703,7 +703,7 @@
         html: null
       },
       em: {
-        order: V,
+        order: F,
         match: s(RegExp((G ? "^\\b_((?:_[_(]|\\\\[\\s\\S]|(?<!_)\\B_\\B|[^\\\\_])+?)_(?![(])\\b" : "^\\b_((?:__|\\\\[\\s\\S]|[^\\\\_])+?)_\\b") + "|^\\*(?=\\S)((?:\\*\\*|\\\\[\\s\\S]|\\s+(?:\\\\[\\s\\S]|[^\\s\\*\\\\]|\\*\\*)|[^\\s\\*\\\\])+?)\\*(?!\\*)")),
         quality: function(e) {
           return e[0].length + .2
@@ -723,7 +723,7 @@
         }
       },
       strong: {
-        order: V,
+        order: F,
         requiredFirstCharacters: ["*"],
         match: s(/^\*\*((?:\\[\s\S]|[^\\])+?)\*\*(?!\*)/),
         quality: function(e) {
@@ -740,7 +740,7 @@
         }
       },
       u: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["_"],
         match: s(/^__((?:\\[\s\S]|[^\\])+?)__(?!_)/),
         quality: function(e) {
@@ -757,7 +757,7 @@
         }
       },
       del: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["~"],
         match: s(/^~~(?=\S)((?:\\[\s\S]|~(?!~)|[^\s~]|\s(?!~~))+?)~~/),
         parse: v,
@@ -771,7 +771,7 @@
         }
       },
       inlineCode: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: ["`"],
         match: s(/^(`+)([\s\S]*?[^`])\1(?!`)/),
         parse: function(e, t, n) {
@@ -789,7 +789,7 @@
         }
       },
       br: {
-        order: V++,
+        order: F++,
         requiredFirstCharacters: [" "],
         match: c(/^ {2,}\n/),
         parse: A,
@@ -801,7 +801,7 @@
         }
       },
       text: {
-        order: V++,
+        order: F++,
         match: c(/^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|$)/),
         parse: function(e, t, n) {
           return {
@@ -844,7 +844,7 @@
     },
     W = function(e, t, n) {
       if (!t) throw Error("simple-markdown: outputFor: `property` must be defined. if you just upgraded, you probably need to replace `outputFor` with `reactFor`");
-      var r, a = (e.Array || F.Array)[t];
+      var r, a = (e.Array || V.Array)[t];
       if (!a) throw Error("simple-markdown: outputFor: to join nodes of type `" + t + "` you must provide an `Array:` joiner rule with that type, Please see the docs for details on specifying an Array rule.");
       var o = a,
         s = function(n, i) {
@@ -854,7 +854,7 @@
         return s(e, r = i(t, n))
       }
     },
-    K = o(F),
+    K = o(V),
     z = function(e, t) {
       return (t = t || {}).inline = false, K(e, t)
     },
@@ -865,8 +865,8 @@
       var n = N.test(e);
       return (t = t || {}).inline = !n, K(e, t)
     },
-    Q = W(F, "react"),
-    X = W(F, "html"),
+    Q = W(V, "react"),
+    X = W(V, "html"),
     J = function(e, t) {
       return Q(z(e, t), t)
     },
@@ -876,7 +876,7 @@
       return t.children = J(e.source), d("div", null, t)
     };
   return {
-    defaultRules: F,
+    defaultRules: V,
     parserFor: o,
     outputFor: W,
     inlineRegex: s,

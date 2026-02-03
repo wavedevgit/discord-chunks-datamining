@@ -126,7 +126,7 @@ function g(e) {
     children: (0, r.jsx)(s.A, {
       children: t
     })
-  }) : null, G = null != t && "" !== t, V = null != l && "" !== l, F = G ? (0, r.jsxs)(u.E, {
+  }) : null, G = null != t && "" !== t, F = null != l && "" !== l, V = G ? (0, r.jsxs)(u.E, {
     "aria-hidden": M,
     "data-interactive": A,
     id: N,
@@ -174,10 +174,10 @@ function g(e) {
       "aria-describedby": M ? P : true,
       disabled: M ? a : true,
       children: [U, G && n ? (0, r.jsx)(s.A, {
-        children: F
-      }) : null, G && !n || V ? (0, r.jsxs)("div", {
+        children: V
+      }) : null, G && !n || F ? (0, r.jsxs)("div", {
         className: f._A,
-        children: [n ? null : F, V && (0, r.jsx)(u.E, {
+        children: [n ? null : V, F && (0, r.jsx)(u.E, {
           variant: "text-sm/normal",
           color: "text-subtle",
           className: f.h_,

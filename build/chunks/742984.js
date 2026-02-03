@@ -4,9 +4,9 @@
 require.d(exports, {
   TB: () => W,
   Wv: () => U,
-  kY: () => V,
+  kY: () => F,
   lx: () => G,
-  q1: () => F
+  q1: () => V
 }), require("./938796.js"), require("./228524.js"), require("./65821.js"), require("./896048.js");
 var Chunk665260 = require("./665260.js"),
   Chunk155718 = require("./155718.js"),
@@ -97,7 +97,7 @@ function G(e, t) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   var n;
   if (S.A.getChannelId(T.A.getGuildId()) !== t) returnfalse;
   let r = O.A.getChannel(t);
@@ -107,7 +107,7 @@ function V(e, t) {
   return !(null == r || null == i || null == a || r.isManaged() || a.hasFlag(x.nhx.SPAMMER) || I.A.isBlockedOrIgnoredForMessage(e) || a.id === i.id || C.A.getStatus() === x.clD.DND || E.NO.getSetting() || N.Ay.allowNoMessages(r))
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = w.default.getCurrentUser(),

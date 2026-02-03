@@ -120,7 +120,7 @@ function J(e) {
   }), ec = (0, C.A)(i), eu = null != ec.text && "" !== ec.text, {
     largeImage: ed,
     smallImage: ef
-  } = (0, h.XN)(i, q), ep = (0, F.A)({
+  } = (0, h.XN)(i, q), ep = (0, V.A)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -333,7 +333,7 @@ function J(e) {
         textId: er,
         tags: e_()
       }, ec), {
-        contextMenu: (0, r.jsx)(V.A, {
+        contextMenu: (0, r.jsx)(F.A, {
           display: "live",
           user: t,
           activity: i,

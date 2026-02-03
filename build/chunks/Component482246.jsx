@@ -83,7 +83,7 @@ let P = e => {
   } = (0, E.q)(t, true), {
     giftRecipient: M,
     giftRecipientError: j
-  } = (0, f.Pv)(), k = (0, u.bG)([h.default], () => h.default.getCurrentUser()), U = (0, y.o7)(x), G = i.useRef(null), V = m.Ay.canUseCollectibles(k), F = i.useMemo(() => (0, g.fT)(x, V), [x, V]), B = (0, I.V_)(x);
+  } = (0, f.Pv)(), k = (0, u.bG)([h.default], () => h.default.getCurrentUser()), U = (0, y.o7)(x), G = i.useRef(null), F = m.Ay.canUseCollectibles(k), V = i.useMemo(() => (0, g.fT)(x, F), [x, F]), B = (0, I.V_)(x);
   if (null == x) return null;
   let [H] = x.items;
   l()(null != H, "Product item should not be empty");
@@ -160,7 +160,7 @@ let P = e => {
         }), (0, r.jsx)(A.x, {
           priceAmount: a,
           priceCurrency: s,
-          discount: F,
+          discount: V,
           discountOfferAmount: B,
           variant: "text-md/bold"
         })]

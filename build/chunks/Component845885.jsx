@@ -47,7 +47,7 @@ function b(e) {
     (null == C ? true : C.startsWith("prepicked:")) ? f.A.getMediaEngine().eachConnection(e => {
       e.context === E.x.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
-  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, V = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (b = null == N ? true : N.applications.length) ? b : 0) > 0, F = G ? y.intl.string(y.t.qDK8gQ) : V ? y.intl.string(y.t["3m8w+Q"]) : S ? y.intl.string(y.t.eAktHv) : y.intl.string(y.t.qntSal), B = i.useCallback(() => {
+  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, F = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (b = null == N ? true : N.applications.length) ? b : 0) > 0, V = G ? y.intl.string(y.t.qDK8gQ) : F ? y.intl.string(y.t["3m8w+Q"]) : S ? y.intl.string(y.t.eAktHv) : y.intl.string(y.t.qntSal), B = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -93,7 +93,7 @@ function b(e) {
     }) : null,
     W = !R || I || j ? null : (0, r.jsx)(o.Drp, {
       id: "change-windows",
-      label: F,
+      label: V,
       icon: o.Fzq,
       leadingAccessory: {
         type: "icon",

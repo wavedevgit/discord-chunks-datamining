@@ -611,9 +611,9 @@
           }
           var U = 0,
             G = null,
-            V = null;
+            F = null;
 
-          function F(e) {
+          function V(e) {
             throw a.onAbort?.(e), O(e = "Aborted(" + e + ")"), D = true, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
           }
           var B, H = e => e.startsWith("data:application/octet-stream;base64,"),
@@ -639,7 +639,7 @@
 
           function z(e, t, n) {
             return K(e).then(e => WebAssembly.instantiate(e, t)).then(n, e => {
-              O(`failed to asynchronously prepare wasm: ${e}`), F(e)
+              O(`failed to asynchronously prepare wasm: ${e}`), V(e)
             })
           }
 
@@ -776,7 +776,7 @@
             },
             ei = () => {
               if ("object" == typeof crypto && "function" == typeof crypto.getRandomValues) return e => crypto.getRandomValues(e);
-              F("initRandomDevice")
+              V("initRandomDevice")
             },
             ea = e => (ea = ei())(e),
             eo = (...e) => {
@@ -1065,7 +1065,7 @@
                 },
                 kb(e, t, n, r, i) {
                   if (32768 != (61440 & e.node.mode)) throw new eC(43);
-                  if (e = e.node.l, 2 & i || e.buffer !== I.buffer) throw (0 < n || n + t < e.length) && (e = e.subarray ? e.subarray(n, n + t) : Array.prototype.slice.call(e, n, n + t)), n = true, F(), t = true, new eC(48);
+                  if (e = e.node.l, 2 & i || e.buffer !== I.buffer) throw (0 < n || n + t < e.length) && (e = e.subarray ? e.subarray(n, n + t) : Array.prototype.slice.call(e, n, n + t)), n = true, V(), t = true, new eC(48);
                   return n = false, t = e.byteOffset, {
                     o: t,
                     uc: n
@@ -1198,7 +1198,7 @@
             return e
           }
 
-          function eV(e, t = false) {
+          function eF(e, t = false) {
             if (e = Object.assign(new ew, e), false == t) e: {
               for (t = 0; 4096 >= t; t++)
                 if (!eA[t]) break e;
@@ -1207,8 +1207,8 @@
             return e.W = t, eA[t] = e
           }
 
-          function eF(e, t = false) {
-            return e = eV(e, t), e.m?.Ec?.(e), e
+          function eV(e, t = false) {
+            return e = eF(e, t), e.m?.Ec?.(e), e
           }
           var eB = {
             open(e) {
@@ -1322,7 +1322,7 @@
                 timestamp: Date.now()
               })
             }
-            return t &= false, (i = eV({
+            return t &= false, (i = eF({
               node: i,
               path: eD(i),
               flags: t,
@@ -1606,7 +1606,7 @@
           function tU(e, t, n, r, i, a, o, s, l, c, u) {
             this.name = e, this.i = t, this.La = n, this.ra = r, this.sa = i, this.hc = a, this.mc = o, this.qb = s, this.Na = l, this.ic = c, this.O = u, i || true !== t.C ? this.toWireType = tj : (this.toWireType = r ? tM : tk, this.L = null)
           }
-          var tG, tV, tF = (e, t, n) => {
+          var tG, tF, tV = (e, t, n) => {
               if (!a.hasOwnProperty(e)) throw new e5("Replacing nonexistent public symbol");
               true !== a[e].A && true !== n ? a[e].A[n] = t : (a[e] = t, a[e].da = n)
             },
@@ -1628,7 +1628,7 @@
               }
               var r = [],
                 i = {};
-              throw t.forEach(n), new tV(`${e}: ` + r.map(td).join([", "]))
+              throw t.forEach(n), new tF(`${e}: ` + r.map(td).join([", "]))
             };
 
           function tq(e) {
@@ -2110,7 +2110,7 @@
                 o: i
               })
             }
-          }), tV = a.UnboundTypeError = ti("UnboundTypeError");
+          }), tF = a.UnboundTypeError = ti("UnboundTypeError");
           var ny = {
               __syscall_fcntl64: function(e, t, n) {
                 e8 = n;
@@ -2121,7 +2121,7 @@
                       var i = $();
                       if (0 > i) break;
                       for (; eA[i];) i++;
-                      return eF(r, i).W;
+                      return eV(r, i).W;
                     case 1:
                     case 2:
                     case 13:
@@ -2205,7 +2205,7 @@
                 }
               },
               _abort_js: () => {
-                F("")
+                V("")
               },
               _embind_create_inheriting_constructor: (e, t, n) => {
                 e = ta(e), t = tf(t, "wrapper"), n = tn(n);
@@ -2321,7 +2321,7 @@
                   return d.C && ((n = d.C).na ?? (n.na = []), d.C.na.push(d)), i = new tU(u, d, true, false, false), n = new tU(u + "*", d, false, false, false), o = new tU(u + " const*", d, false, true, false), tm[e] = {
                     pointerType: n,
                     Hb: o
-                  }, tF(p, t), [i, n, o]
+                  }, tV(p, t), [i, n, o]
                 })
               },
               _embind_register_class_class_function: (e, t, n, r, i, a, o) => {
@@ -2469,7 +2469,7 @@
                 var o = tX(t, n);
                 e = tJ(e = ta(e)), i = tK(r, i), tP(e, function() {
                   tz(`Cannot call ${e} due to unbound types`, o)
-                }, t - 1), tS([], o, n => (tF(e, tZ(e, [n[0], null].concat(n.slice(1)), null, i, a), t - 1), []))
+                }, t - 1), tS([], o, n => (tV(e, tZ(e, [n[0], null].concat(n.slice(1)), null, i, a), t - 1), []))
               },
               _embind_register_integer: (e, t, n, r, i) => {
                 if (t = ta(t), false === i && (i = 0xffffffff), i = e => e, 0 === r) {
@@ -2792,7 +2792,7 @@
             },
             nb = function() {
               function e(e) {
-                return A = (nb = e.exports).memory, L(), tG = nb.__indirect_function_table, M.unshift(nb.__wasm_call_ctors), U--, a.monitorRunDependencies?.(U), 0 == U && (null !== G && (clearInterval(G), G = null), V && (e = V, V = null, e())), nb
+                return A = (nb = e.exports).memory, L(), tG = nb.__indirect_function_table, M.unshift(nb.__wasm_call_ctors), U--, a.monitorRunDependencies?.(U), 0 == U && (null !== G && (clearInterval(G), G = null), F && (e = F, F = null, e())), nb
               }
               var t = {
                 env: ny,
@@ -2836,8 +2836,8 @@
               }, 1)) : e())
             }
           }
-          if (a.dynCall_iiji = (e, t, n, r, i) => (a.dynCall_iiji = nb.dynCall_iiji)(e, t, n, r, i), a.dynCall_jiji = (e, t, n, r, i) => (a.dynCall_jiji = nb.dynCall_jiji)(e, t, n, r, i), a.dynCall_iiiji = (e, t, n, r, i, o) => (a.dynCall_iiiji = nb.dynCall_iiiji)(e, t, n, r, i, o), a.dynCall_iij = (e, t, n, r) => (a.dynCall_iij = nb.dynCall_iij)(e, t, n, r), a.dynCall_jii = (e, t, n) => (a.dynCall_jii = nb.dynCall_jii)(e, t, n), a.dynCall_viijii = (e, t, n, r, i, o, s) => (a.dynCall_viijii = nb.dynCall_viijii)(e, t, n, r, i, o, s), a.dynCall_iiiiij = (e, t, n, r, i, o, s) => (a.dynCall_iiiiij = nb.dynCall_iiiiij)(e, t, n, r, i, o, s), a.dynCall_iiiiijj = (e, t, n, r, i, o, s, l, c) => (a.dynCall_iiiiijj = nb.dynCall_iiiiijj)(e, t, n, r, i, o, s, l, c), a.dynCall_iiiiiijj = (e, t, n, r, i, o, s, l, c, u) => (a.dynCall_iiiiiijj = nb.dynCall_iiiiiijj)(e, t, n, r, i, o, s, l, c, u), V = function e() {
-              n || nC(), n || (V = e)
+          if (a.dynCall_iiji = (e, t, n, r, i) => (a.dynCall_iiji = nb.dynCall_iiji)(e, t, n, r, i), a.dynCall_jiji = (e, t, n, r, i) => (a.dynCall_jiji = nb.dynCall_jiji)(e, t, n, r, i), a.dynCall_iiiji = (e, t, n, r, i, o) => (a.dynCall_iiiji = nb.dynCall_iiiji)(e, t, n, r, i, o), a.dynCall_iij = (e, t, n, r) => (a.dynCall_iij = nb.dynCall_iij)(e, t, n, r), a.dynCall_jii = (e, t, n) => (a.dynCall_jii = nb.dynCall_jii)(e, t, n), a.dynCall_viijii = (e, t, n, r, i, o, s) => (a.dynCall_viijii = nb.dynCall_viijii)(e, t, n, r, i, o, s), a.dynCall_iiiiij = (e, t, n, r, i, o, s) => (a.dynCall_iiiiij = nb.dynCall_iiiiij)(e, t, n, r, i, o, s), a.dynCall_iiiiijj = (e, t, n, r, i, o, s, l, c) => (a.dynCall_iiiiijj = nb.dynCall_iiiiijj)(e, t, n, r, i, o, s, l, c), a.dynCall_iiiiiijj = (e, t, n, r, i, o, s, l, c, u) => (a.dynCall_iiiiiijj = nb.dynCall_iiiiiijj)(e, t, n, r, i, o, s, l, c, u), F = function e() {
+              n || nC(), n || (F = e)
             }, a.preInit)
             for ("function" == typeof a.preInit && (a.preInit = [a.preInit]); 0 < a.preInit.length;) a.preInit.pop()();
           return nC(), o
@@ -3357,9 +3357,9 @@
       ViewModelInstanceEnum: () => W,
       ViewModelInstanceList: () => K,
       ViewModelInstanceNumber: () => B,
-      ViewModelInstanceString: () => F,
+      ViewModelInstanceString: () => V,
       ViewModelInstanceTrigger: () => Y,
-      ViewModelInstanceValue: () => V,
+      ViewModelInstanceValue: () => F,
       decodeAudio: () => $,
       decodeFont: () => et,
       decodeImage: () => ee
@@ -4916,7 +4916,7 @@
               if (null !== (A = null != (i = null == (r = this._runtimeInstance) ? true : r.number(e[t])) ? i : null)) return new B(A, this);
               break;
             case c.String:
-              if (null !== (A = null != (o = null == (a = this._runtimeInstance) ? true : a.string(e[t])) ? o : null)) return new F(A, this);
+              if (null !== (A = null != (o = null == (a = this._runtimeInstance) ? true : a.string(e[t])) ? o : null)) return new V(A, this);
               break;
             case c.Boolean:
               if (null !== (A = null != (l = null == (s = this._runtimeInstance) ? true : s.boolean(e[t])) ? l : null)) return new H(A, this);
@@ -5022,7 +5022,7 @@
           }
         }, e
       }(),
-      V = function() {
+      F = function() {
         function e(e, t) {
           this.callbacks = [], this._viewModelInstanceValue = e, this._parentViewModel = t
         }
@@ -5049,7 +5049,7 @@
           configurable: true
         }), e
       }(),
-      F = function(e) {
+      V = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
         }
@@ -5065,7 +5065,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(V),
+      }(F),
       B = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5082,7 +5082,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(V),
+      }(F),
       H = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5099,7 +5099,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(V),
+      }(F),
       Y = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5109,7 +5109,7 @@
         }, t.prototype.internalHandleCallback = function(e) {
           e()
         }, t
-      }(V),
+      }(F),
       W = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5141,7 +5141,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(V),
+      }(F),
       K = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5172,7 +5172,7 @@
         }, t.prototype.internalHandleCallback = function(e) {
           e()
         }, t
-      }(V),
+      }(F),
       z = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5199,7 +5199,7 @@
         }, t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(V),
+      }(F),
       q = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5214,7 +5214,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e()
         }, t
-      }(V),
+      }(F),
       Z = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -5229,7 +5229,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e()
         }, t
-      }(V),
+      }(F),
       Q = function(e) {
         return m(true, true, true, function() {
           return g(this, function(t) {

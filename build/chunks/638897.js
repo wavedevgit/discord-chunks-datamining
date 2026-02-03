@@ -76,11 +76,11 @@ function v(e, t, n) {
     hidePersonalInformation: f.A.hidePersonalInformation
   }), [P, D, j]), {
     activeCommand: G,
-    activeCommandOption: V
+    activeCommandOption: F
   } = (0, a.cf)([s.A], () => ({
     activeCommand: s.A.getActiveCommand(P.id),
     activeCommandOption: s.A.getActiveOption(P.id)
-  })), F = (0, h.A)({
+  })), V = (0, h.A)({
     navId: "channel-autocomplete",
     scrollerRef: n,
     state: L,
@@ -88,9 +88,9 @@ function v(e, t, n) {
   }), B = null == (I = e.editorRef.current) ? true : I.getCurrentWord(), H = null == (S = e.editorRef.current) ? true : S.getSlateEditor(), Y = null;
   null != H && (Y = null != (w = null == (R = c.VW.getSelectedParentOfType(H, _.mk)) ? true : R[0]) ? w : null);
   let W = O(y({}, e), {
-      navigator: F,
+      navigator: V,
       activeCommand: G,
-      activeCommandOption: V,
+      activeCommandOption: F,
       activeInlineAutocompleteInput: Y,
       canMentionUsers: null != (E = null == (T = D.users) ? true : T.allowMentioning) && E,
       canMentionEveryone: k,
@@ -100,9 +100,9 @@ function v(e, t, n) {
       currentWord: null != (b = null == B ? true : B.word) ? b : "",
       currentWordIsAtStart: (null == B ? true : B.isAtStart) === true,
       currentFullWord: null != (v = null == B ? true : B.fullWord) ? v : "",
-      optionText: null != V ? (0, o.AA)({
-        [V.name]: null != (A = null == (C = e.editorRef.current) ? true : C.getCurrentCommandOptionValue()) ? A : []
-      }, V.name) : ""
+      optionText: null != F ? (0, o.AA)({
+        [F.name]: null != (A = null == (C = e.editorRef.current) ? true : C.getCurrentCommandOptionValue()) ? A : []
+      }, F.name) : ""
     }),
     [K] = r.useState(() => new _.Ay(W));
   return r.useEffect(() => {
@@ -122,5 +122,5 @@ function v(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [K, null == (N = L.query) ? true : N.typeInfo]), [L, K, F]
+  }, [K, null == (N = L.query) ? true : N.typeInfo]), [L, K, V]
 }

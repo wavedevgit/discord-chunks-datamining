@@ -116,8 +116,8 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
     j = null != x && !(0, u.A)(M, I.A, T.A),
     U = s.Ay.getActivityPanelMode(),
     G = j && U === R.Gd.PANEL,
-    V = null != x && null != M && (null == (n = f.A.getSelectedParticipant(M)) ? true : n.type) === P.lp.ACTIVITY,
-    F = _.A.getConnectedFrame(),
+    F = null != x && null != M && (null == (n = f.A.getSelectedParticipant(M)) ? true : n.type) === P.lp.ACTIVITY,
+    V = _.A.getConnectedFrame(),
     B = _.A.getFrameLayoutMode() === D.y.FOCUSED,
     H = null != g,
     Y = H ? b.A.getWindow(g) : null,
@@ -134,7 +134,7 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
     }) ? e - (0, p.LI)({
       isPopoutWindow: H
     }) : e;
-  m = null != x && L || H && j || H && null != F ? null : H || !A || j || null != F ? null != x && G ? null != (r = S.A.pipActivityWindow) ? r : S.A.pipVideoWindow : null != F && B ? null != (i = null != (a = S.A.pipFrameWindow) ? a : S.A.pipVideoWindow) ? i : S.A.pipActivityWindow : null != (o = null != (d = null != (h = S.A.pipHavenWindow) ? h : S.A.pipVideoWindow) ? d : S.A.pipActivityWindow) ? o : S.A.pipFrameWindow : null;
+  m = null != x && L || H && j || H && null != V ? null : H || !A || j || null != V ? null != x && G ? null != (r = S.A.pipActivityWindow) ? r : S.A.pipVideoWindow : null != V && B ? null != (i = null != (a = S.A.pipFrameWindow) ? a : S.A.pipVideoWindow) ? i : S.A.pipActivityWindow : null != (o = null != (d = null != (h = S.A.pipHavenWindow) ? h : S.A.pipVideoWindow) ? d : S.A.pipActivityWindow) ? o : S.A.pipFrameWindow : null;
   let Z = Array.from(S.A.pipWindows.values()),
     Q = S.A.pipWidth(P.R8.VIDEO),
     X = Z.find(e => e.component === w.o1q.VIDEO),
@@ -145,7 +145,7 @@ let G = Chunk311907.Ay.connectStores([Chunk869146.A, Chunk933958.Ay, Chunk531685
     en = T.A.getVoiceChannelId(),
     er = T.A.getChannelId() === en,
     ei = null != en && f.A.getChatOpen(en),
-    ea = G || V,
+    ea = G || F,
     eo = ea && null != x && (0, l.q)(x.applicationId),
     es = !ea && null != m && er && ei;
   return {

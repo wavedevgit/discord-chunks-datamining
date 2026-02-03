@@ -148,7 +148,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     role: t,
     canRemove: n,
@@ -191,7 +191,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     roleCount: t,
     children: n
@@ -355,9 +355,9 @@ function K(e) {
     children: E()
   }) : null : (0, r.jsx)("div", {
     className: o()(P.MR, a),
-    children: h ? (0, r.jsxs)(F, {
+    children: h ? (0, r.jsxs)(V, {
       roleCount: i.length,
-      children: [i.map(e => (0, r.jsx)(V, {
+      children: [i.map(e => (0, r.jsx)(F, {
         role: e,
         guildId: n.id,
         canRemove: _(e.id),
@@ -490,9 +490,9 @@ function J(e) {
     children: k()
   }) : null : (0, r.jsx)("div", {
     className: o()(P.MR, s),
-    children: E ? (0, r.jsxs)(F, {
+    children: E ? (0, r.jsxs)(V, {
       roleCount: a.length,
-      children: [x.map((e, t) => (0, r.jsx)(V, {
+      children: [x.map((e, t) => (0, r.jsx)(F, {
         role: e,
         guildId: n.id,
         canRemove: g(e.id),

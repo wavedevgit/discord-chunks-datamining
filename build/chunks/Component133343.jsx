@@ -312,10 +312,10 @@ function eR(e) {
 function eP(e, t, n, r) {
   let i = e.getGuildId(),
     a = (0, p.bG)([D.A], () => null != i && D.A.isLurking(i), [i]),
-    o = (0, p.bG)([F.Ay, K.default], () => {
+    o = (0, p.bG)([V.Ay, K.default], () => {
       var e, t;
       let n = K.default.getCurrentUser();
-      return null != (e = null != i && null != n ? null == (t = F.Ay.getMember(i, n.id)) ? true : t.isPending : null) && e
+      return null != (e = null != i && null != n ? null == (t = V.Ay.getMember(i, n.id)) ? true : t.isPending : null) && e
     }),
     s = (0, p.cf)([B.A], () => {
       var i, a;
@@ -432,7 +432,7 @@ function ek(e, t) {
     accessibilityLabel: k,
     channel: U,
     type: G,
-    focused: F,
+    focused: V,
     error: B,
     renderAttachButton: H,
     renderApplicationCommandIcon: W,
@@ -453,8 +453,8 @@ function ek(e, t) {
     allowNewLines: ek = true,
     characterCountClassName: eU,
     "aria-describedby": eG,
-    "aria-labelledby": eV,
-    setEditorRef: eF,
+    "aria-labelledby": eF,
+    setEditorRef: eV,
     autoCompletePosition: eB,
     children: eH,
     disableThemedBackground: eY = false,
@@ -467,7 +467,7 @@ function ek(e, t) {
   let {
     analyticsLocations: eZ
   } = (0, y.Ay)(E.A.CHANNEL_TEXT_AREA), eQ = ew(t), eX = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
-  null == eF || eF(e$.current);
+  null == eV || eV(e$.current);
   let e2 = (0, b.A)(U),
     [e3, e6] = i.useState(!e2);
   (0, m.i4)(eQ, e => {
@@ -492,7 +492,7 @@ function ek(e, t) {
     canAttachFiles: te,
     canCreateThreads: tt,
     canEveryoneSendMessages: tn
-  } = eP(U, G, e4, L), tr = G.toolbarType === J.O1.STATIC, ti = !V.D_.useSetting() && !(0, Q.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !F || "/" !== f, to = (0, x.A)(), {
+  } = eP(U, G, e4, L), tr = G.toolbarType === J.O1.STATIC, ti = !F.D_.useSetting() && !(0, Q.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !V || "/" !== f, to = (0, x.A)(), {
     fontSize: ts
   } = (0, p.cf)([g.A], () => ({
     fontSize: g.A.fontSize
@@ -564,9 +564,9 @@ function ek(e, t) {
     }, [tc]);
   (0, X.R)(tc, U.guild_id, U.id);
   let tG = null != z,
-    tV = e9 && !((e7 || e8) && tn) || tp && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
-    tF = null;
-  null != e4 ? tF = null == W ? true : W(e4, e5, ef.g$) : (!e9 || tt) && (tF = null == H ? true : H(tG, ef.g$));
+    tF = e9 && !((e7 || e8) && tn) || tp && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
+    tV = null;
+  null != e4 ? tV = null == W ? true : W(e4, e5, ef.g$) : (!e9 || tt) && (tV = null == H ? true : H(tG, ef.g$));
   let tB = ti && null != h && !e9 && G.showCharacterCount && null == e4,
     tH = ti && !__OVERLAY__ && null != h && null == e4 && G.toolbarType !== J.O1.NONE && !e9,
     tY = (0, en.Y)({
@@ -622,7 +622,7 @@ function ek(e, t) {
         ref: eQ,
         className: o()(O, {
           [ef.gM]: true,
-          [ef.h9]: tV,
+          [ef.h9]: tF,
           [ef.mr]: eh,
           [ef.Wn]: d.Fr,
           [ef.Ls]: tK,
@@ -648,20 +648,20 @@ function ek(e, t) {
             canAttachFiles: te
           }), (0, r.jsxs)("div", {
             className: o()(ef.vW, {
-              [ef.BF]: tV,
-              [ef.RL]: G !== J.oU.EDIT && (null != tF || tV && null == tF || e7),
+              [ef.BF]: tF,
+              [ef.RL]: G !== J.oU.EDIT && (null != tV || tF && null == tV || e7),
               [ef.fk]: G === J.oU.THREAD_CREATION,
               [ef.TZ]: G === J.oU.CREATE_FORUM_POST || G === J.oU.FORWARD_MESSAGE_INPUT,
               [ef.$i]: G === J.oU.USER_PROFILE_REPLY
             }),
             onMouseDown: tP,
-            children: [tZ, tF, (0, r.jsx)(_.vN3, {
+            children: [tZ, tV, (0, r.jsx)(_.vN3, {
               ringTarget: eQ,
               ringClassName: ef.Rg,
               children: (0, r.jsx)($.A, {
                 ref: e$,
                 id: P,
-                focused: F,
+                focused: V,
                 useSlate: ti,
                 textValue: f,
                 richValue: h,
@@ -701,7 +701,7 @@ function ek(e, t) {
                   [ef.AV]: G === J.oU.PROFILE_BIO_INPUT,
                   [ef.GR]: G === J.oU.OVERLAY_INLINE_REPLY
                 }, w),
-                "aria-labelledby": eV,
+                "aria-labelledby": eF,
                 showValueWhenDisabled: eq
               })
             }), tQ, tq]
@@ -724,7 +724,7 @@ function ek(e, t) {
           canSendStickers: null == (l = G.stickers) ? true : l.allowSending,
           canSendSoundmoji: null == (u = G.soundmoji) ? true : u.allowSending,
           textValue: f,
-          focused: F,
+          focused: V,
           isEditorIdle: tx,
           expressionPickerView: tw,
           type: G,

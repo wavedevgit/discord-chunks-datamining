@@ -52,14 +52,14 @@ require.d(exports, {
   _3: () => k,
   _6: () => eb,
   _8: () => eQ,
-  _Z: () => eV,
+  _Z: () => eF,
   _z: () => j,
   b0: () => M,
   bm: () => U,
   cU: () => ec,
   cj: () => e_,
   dG: () => ei,
-  dm: () => eF,
+  dm: () => eV,
   e: () => W,
   eK: () => b,
   eh: () => eP,
@@ -90,8 +90,8 @@ require.d(exports, {
   uh: () => G,
   vL: () => et,
   vf: () => el,
-  wv: () => V,
-  xM: () => F
+  wv: () => F,
+  xM: () => V
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   Chunk311907 = require("./311907.js"),
@@ -219,11 +219,11 @@ let I = (0, Chunk646769.c$)("notifications", "enableVoiceActivityNotifications",
   G = (0, Chunk646769.c$)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o._t.create({
     value: e
   })),
-  V = (0, Chunk646769.c$)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o._t.create({
+  F = (0, Chunk646769.c$)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o._t.create({
     value: e
   })),
-  F = "0",
-  B = (0, Chunk646769.c$)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : F, e => e),
+  V = "0",
+  B = (0, Chunk646769.c$)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : V, e => e),
   H = (0, Chunk646769.c$)("gameLibrary", "installShortcutDesktop", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
@@ -552,14 +552,14 @@ let eR = (0, Chunk646769.Mt)((0, Chunk646769.c$)("appearance", "developerMode", 
   ineligibleDefault: Chunk873298.AN.OFF,
   eligibleDefault: () => a.AN.ON_FOR_LARGE_GUILDS
 });
-let eV = (0, Chunk646769.c6)({
+let eF = (0, Chunk646769.c6)({
     baseSetting: (0, Chunk646769.c$)("privacy", "defaultGuildsActivityRestrictedV2", e => e === a.Qd.ACTIVITY_STATUS_UNSET ? null : e, e => null != e ? e : a.Qd.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, c.oK)("user_settings"),
     useIsEligible: () => (0, c.ty)("user_settings"),
     ineligibleDefault: Chunk873298.Qd.ACTIVITY_STATUS_OFF,
     eligibleDefault: () => a.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
   }),
-  eF = (0, Chunk646769.c$)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => o._t.create({
+  eV = (0, Chunk646769.c$)("privacy", "familyCenterEnabledV2", e => null == e ? true : e.value, e => o._t.create({
     value: e
   })),
   eB = (0, Chunk646769.c$)("privacy", "hideLegacyUsername", e => {

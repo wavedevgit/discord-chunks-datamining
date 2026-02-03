@@ -45,8 +45,8 @@ let k = Chunk64700.forwardRef(function(e, t) {
     channel: k,
     className: U,
     id: G,
-    disabled: V,
-    submitting: F,
+    disabled: F,
+    submitting: V,
     placeholder: B,
     required: H,
     textAreaPaddingClassName: Y,
@@ -81,7 +81,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
     "aria-describedby": ey,
     "aria-labelledby": eb,
     "aria-autocomplete": eO
-  } = e, ev = i.useRef(null), eA = i.useRef(null), eI = i.useRef(true), eS = i.useRef(true), eT = V || F, eC = i.useCallback((e, t, n) => {
+  } = e, ev = i.useRef(null), eA = i.useRef(null), eI = i.useRef(true), eS = i.useRef(true), eT = F || V, eC = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -222,11 +222,11 @@ let k = Chunk64700.forwardRef(function(e, t) {
       isIdle: ed,
       currentAutocompleteType: ef
     })], [eR, k, ed, ef]),
-    eV = i.useCallback(e => {
+    eF = i.useCallback(e => {
       let t = (0, P.A)(eR, e, k.id);
       return null == t && (t = (0, L.A)(eR, e)), null == t && (t = (0, x.A)(eR, e)), t
     }, [k.id, eR]),
-    eF = i.useCallback(e => (0, D.A)(e), []);
+    eV = i.useCallback(e => (0, D.A)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.EG, {
       event: M.jej.GLOBAL_CLIPBOARD_PASTE,
@@ -244,7 +244,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
         readOnly: eT,
         spellCheck: ea,
         autoFocus: !el,
-        canFocus: !V,
+        canFocus: !F,
         onChange: eU,
         onFocus: q,
         onBlur: Z,
@@ -253,8 +253,8 @@ let k = Chunk64700.forwardRef(function(e, t) {
         onKeyDown: eL,
         onKeyUp: ex,
         decorate: eG,
-        renderExtraElement: eV,
-        renderExtraLeaf: eF,
+        renderExtraElement: eF,
+        renderExtraLeaf: eV,
         "aria-owns": ep,
         "aria-haspopup": eh,
         "aria-expanded": e_,

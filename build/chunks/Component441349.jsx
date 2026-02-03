@@ -111,8 +111,8 @@ function I(e) {
     matchReferenceWidth: false,
     placement: "bottom-start"
   }), {
-    isMounted: V,
-    styles: F
+    isMounted: F,
+    styles: V
   } = (0, d.D)(k, {
     common: e => {
       let {
@@ -170,12 +170,12 @@ function I(e) {
               color: "currentColor"
             })
           })]
-        }), M && V && (0, r.jsx)("div", O(y({}, U()), {
+        }), M && F && (0, r.jsx)("div", O(y({}, U()), {
           ref: L.setFloating,
           style: x,
           className: g.oO,
           children: (0, r.jsx)(u.lG, {
-            style: F,
+            style: V,
             className: g.r3,
             children: (0, r.jsx)(f.V, {
               value: t,

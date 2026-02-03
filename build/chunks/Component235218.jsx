@@ -99,8 +99,8 @@ function R(e) {
     isOwner: x,
     giftingOrigin: M = y.vQ.USER_PROFILE_WISHLIST
   } = D, j = L.sku, k = j.applicationId, U = (0, c.h)(k), G = i.useRef(null), {
-    analyticsLocations: V
-  } = (0, l.Ay)(...null != P ? P : [], s.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), F = (0, a.bG)([f.A], () => null != t && f.A.hasSentGift(L.skuId, t.id), [L.skuId, t]), B = F || true === L.isOwned, H = L.skuName, {
+    analyticsLocations: F
+  } = (0, l.Ay)(...null != P ? P : [], s.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), V = (0, a.bG)([f.A], () => null != t && f.A.hasSentGift(L.skuId, t.id), [L.skuId, t]), B = V || true === L.isOwned, H = L.skuName, {
     buttonCTALabel: Y,
     buttonIcon: W,
     handleCardClick: K
@@ -119,24 +119,24 @@ function R(e) {
           applicationId: U.id,
           guildId: U.guildId,
           isStorefront: false,
-          analyticsLocations: V
+          analyticsLocations: F
         }))
       }
     } : {
       buttonCTALabel: S ? (0, _.$g)(null != (e = null == (i = j.price) ? true : i.amount) ? e : 0, null != (r = null == (a = j.price) ? true : a.currency) ? r : b.Yr.USD) : O.intl.string(O.t.ilhtIa),
       buttonIcon: A ? true : o.okO,
       handleCardClick: () => {
-        F || (0, g.a)(j, {
+        V || (0, g.a)(j, {
           isGift: true,
           giftRecipient: t,
           additionalUserIds: n,
           giftingOrigin: M
         }, {
-          analyticsLocations: [...V, s.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+          analyticsLocations: [...F, s.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
         })
       }
     }
-  }, [x, B, S, j, A, U, F, t, n, M, V]), z = i.useCallback(() => N ? R === p.uS.WISHLIST ? (0, r.jsx)("div", {
+  }, [x, B, S, j, A, U, V, t, n, M, F]), z = i.useCallback(() => N ? R === p.uS.WISHLIST ? (0, r.jsx)("div", {
     className: v.Fx,
     children: (0, r.jsx)(o.C3E, {
       size: "custom",

@@ -6,7 +6,7 @@ require.d(exports, {
   K7: () => Y,
   MK: () => B,
   N5: () => D,
-  R_: () => V,
+  R_: () => F,
   Rq: () => Q,
   Xr: () => W,
   Xy: () => k,
@@ -20,7 +20,7 @@ require.d(exports, {
   iq: () => U,
   mG: () => J,
   sp: () => H,
-  tR: () => F,
+  tR: () => V,
   zi: () => Z
 });
 var Chunk627968 = require("./627968.js"),
@@ -107,7 +107,7 @@ function R(e, t) {
 }
 let P = {
   [Chunk681154.ContentInventoryEntryType.TOP_ARTIST]: [K],
-  [Chunk681154.ContentInventoryEntryType.PLAYED_GAME]: [U, G, k, q, F, Y, z, H, B],
+  [Chunk681154.ContentInventoryEntryType.PLAYED_GAME]: [U, G, k, q, V, Y, z, H, B],
   [Chunk681154.ContentInventoryEntryType.TOP_GAME]: [W],
   [Chunk681154.ContentInventoryEntryType.WATCHED_MEDIA]: [Z, Q],
   [Chunk681154.ContentInventoryEntryType.LAUNCHED_ACTIVITY]: [U, G, k, q, z, B]
@@ -224,7 +224,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     entry: t,
     hovered: n
@@ -247,7 +247,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     entry: t
   } = e, {

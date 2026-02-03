@@ -101,8 +101,8 @@ let P = e => {
     allowAnimatedEmoji: k,
     showEmojiFavoriteTooltip: U,
     channelGuildId: G,
-    category: V,
-    selectedItemClassName: F,
+    category: F,
+    selectedItemClassName: V,
     channelId: B,
     messageId: H,
     isBurstReaction: Y,
@@ -145,7 +145,7 @@ let P = e => {
                 [I.lG]: el,
                 [I.Lh]: ec,
                 [I.Bx]: b && !f,
-                [null != F ? F : ""]: b,
+                [null != V ? V : ""]: b,
                 [I.TV]: ea === t
               }),
               onFocus: null != E ? E : O,
@@ -198,7 +198,7 @@ let P = e => {
             isUsingKeyboardNavigation: M,
             surrogateCodePoint: P,
             allowAnimatedEmoji: k,
-            selectedItemClassName: F,
+            selectedItemClassName: V,
             onSelect: S,
             onInspect: R,
             channelGuildId: G,
@@ -226,7 +226,7 @@ let P = e => {
       ref: es,
       children: e.map(eu)
     }));
-  if (V === O.R2.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (F === O.R2.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: I.ND,
     ref: es,
     children: (0, r.jsx)(h.A, {
@@ -234,7 +234,7 @@ let P = e => {
       onSelectSoundmoji: C
     })
   });
-  if (V !== O.s.TOP_GUILD_EMOJI) return ed(t);
+  if (F !== O.s.TOP_GUILD_EMOJI) return ed(t);
   let ef = t.filter(e => {
       let t = e;
       return t.subCategory === O.tm.TOP_GUILD_EMOJI || t.subCategory === O.tm.NEWLY_ADDED_EMOJI && t.emoji.type === f.i.GUILD && !p.A.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)

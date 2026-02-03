@@ -2,7 +2,7 @@
 /** chunk id: 544420, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => V
+  A: () => F
 }), require("./896048.js"), require("./747238.js"), require("./65821.js");
 var Chunk488428 = require("./488428.js"),
   Chunk110259 = require("./110259.js"),
@@ -191,7 +191,7 @@ async function G(e) {
     error: f
   }), Promise.reject(f))
 }
-let V = {
+let F = {
   addGame(e, t) {
     c.h.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",

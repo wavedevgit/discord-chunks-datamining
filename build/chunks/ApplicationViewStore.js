@@ -54,10 +54,10 @@ function G(e, t) {
   })
 }
 
-function V(e, t) {
+function F(e, t) {
   return null != e && c()(e.createdAt).isAfter(M) && 0 === t
 }
-let F = {
+let V = {
     [Chunk652215.DpB.NAME]: G,
     [Chunk652215.DpB.PLATFORM]: (e, t, n) => {
       let r = e.libraryApplication.getDistributor(),
@@ -71,7 +71,7 @@ let F = {
   H = (0, Chunk583613.L_)(e => e.filter(e => null != e.libraryApplication && v.A.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   Y = (0, Chunk583613.L_)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
   W = (0, Chunk583613.L_)((e, t, n, r) => {
-    let i = F[t];
+    let i = V[t];
     if (null == i) return e;
     let a = [...e].sort(i);
     return n === D.tSW.DESCENDING ? a.reverse() : a
@@ -103,7 +103,7 @@ function Z(e, t, n, r, i) {
     libraryApplication: e,
     lastPlayed: o,
     supportsCloudSync: null != e && v.A.supportsCloudSync(e.id, e.branchId),
-    isNew: V(e, o),
+    isNew: F(e, o),
     isLaunching: _.A.launchingGames.has(e.id),
     isRunning: r.has(e.id),
     isLaunchable: (0, R.A)({

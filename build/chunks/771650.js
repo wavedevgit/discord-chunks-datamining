@@ -113,9 +113,9 @@ function k() {
 }
 let U = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
   G = "\\d{4}",
-  V = "([0-9]{4})-([0-9]{1,2})",
-  F = "([^\\d\\s]+)",
-  B = RegExp("(?:\\s*(".concat(U, "|").concat(V, "|").concat(G, "|").concat(F, "))"), "i"),
+  F = "([0-9]{4})-([0-9]{1,2})",
+  V = "([^\\d\\s]+)",
+  B = RegExp("(?:\\s*(".concat(U, "|").concat(F, "|").concat(G, "|").concat(V, "))"), "i"),
   H = RegExp("\\s*(true|false)", "i");
 
 function Y(e) {

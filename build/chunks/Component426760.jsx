@@ -54,7 +54,7 @@ function C(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - D
     })
-  }, [C, t, L, D, n.id]), V = i.useCallback(e => {
+  }, [C, t, L, D, n.id]), F = i.useCallback(e => {
     e && !P.current && (_.default.track(I.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: L,
@@ -79,11 +79,11 @@ function C(e) {
       window.removeEventListener("keydown", e)
     }
   }, [G]);
-  let F = (0, d.C$)(n.id, "GuildBoostingMarketingRefresh"),
+  let V = (0, d.C$)(n.id, "GuildBoostingMarketingRefresh"),
     B = (0, a.bG)([f.A], () => f.A.hasFetchedCatalog(n.id));
   i.useEffect(() => {
-    F && !B && (0, u.z9)(n.id)
-  }, [n.id, F, B]);
+    V && !B && (0, u.z9)(n.id)
+  }, [n.id, V, B]);
   let H = (0, a.bG)([p.A], () => p.A.hasFetchedPowerupCatalog(n.id));
   return i.useEffect(() => {
     if (N && H) {
@@ -142,7 +142,7 @@ function C(e) {
         })
       }), (0, r.jsx)(o.L, {
         innerRef: x,
-        onChange: V,
+        onChange: F,
         children: (0, r.jsx)("div", {
           ref: x,
           className: T.mR

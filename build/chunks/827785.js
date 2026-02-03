@@ -2,7 +2,7 @@
 /** chunk id: 827785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ez: () => V,
+  Ez: () => F,
   gZ: () => j
 }), require("./896048.js"), require("./733351.js"), require("./65821.js");
 var Chunk284009 = require("./284009.js"),
@@ -693,7 +693,7 @@ let x = require("./743361.js").A,
     }
   }],
   G = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
-  V = (e, t, n) => {
+  F = (e, t, n) => {
     let r = t ? k : G;
     return r.filter(t => e.includes(t.type) && (!n || t.inputType === I.y$.BUILT_IN_TEXT || t.inputType === I.y$.BUILT_IN_INTEGRATION))
   }

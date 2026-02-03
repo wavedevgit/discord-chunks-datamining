@@ -76,8 +76,8 @@ let N = new Chunk626584.A("ChannelStore"),
   k = 0,
   U = {},
   G = {},
-  V = new Set,
-  F = {},
+  F = new Set,
+  V = {},
   B = 0,
   H = {},
   Y = 0,
@@ -85,7 +85,7 @@ let N = new Chunk626584.A("ChannelStore"),
   K = false;
 class z {
   static loadAllMissingChannels() {
-    let e = O.A.getGuildIds().filter(e => !V.has(e));
+    let e = O.A.getGuildIds().filter(e => !F.has(e));
     return this.loadGuildIds(e)
   }
   static loadGuildFromChannelId(e) {
@@ -96,17 +96,17 @@ class z {
     let t = e.filter(E.Vq);
     if (0 === t.length) return null;
     let n = c.A.database();
-    if (null == n || !t.some(e => !V.has(e))) return null;
+    if (null == n || !t.some(e => !F.has(e))) return null;
     let r = B;
     return (0, u.ES)("loadChannels", async () => {
       let e = t.map(e => {
-          if (V.has(e)) return null;
-          if (null != F[e]) return N.fileOnly("Skipping loading ".concat(e, " because a load is pending")), null;
+          if (F.has(e)) return null;
+          if (null != V[e]) return N.fileOnly("Skipping loading ".concat(e, " because a load is pending")), null;
           let t = d.A.getAsync(n, e).then(t => (N.fileOnly("Lazy loaded channels for ".concat(e, " #:").concat(t.length)), {
             guildId: e,
             channels: t
           }));
-          return F[e] = t, {
+          return V[e] = t, {
             guildId: e,
             promise: t
           }
@@ -115,13 +115,13 @@ class z {
       try {
         let t = await Promise.all(i);
         if (B !== r) return N.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
-        let n = t.filter(e => !V.has(e.guildId));
+        let n = t.filter(e => !F.has(e.guildId));
         await l.h.dispatch({
           type: "LOAD_CHANNELS",
           channels: n
         })
       } catch (t) {
-        for (let n of (N.error("Failed to load channels from disk for " + e.map(e => e.guildId), t), e)) delete F[n.guildId];
+        for (let n of (N.error("Failed to load channels from disk for " + e.map(e => e.guildId), t), e)) delete V[n.guildId];
         throw t
       }
       return null
@@ -130,17 +130,17 @@ class z {
 }
 
 function q(e, t, n) {
-  if (null == e || "null" === e || V.has(e) || 0 === t && f.A.hasGuild(e)) return;
+  if (null == e || "null" === e || F.has(e) || 0 === t && f.A.hasGuild(e)) return;
   let r = c.A.database();
   if (null == r) return;
   N.verbose("hydrating guild (guild: ".concat(e, ", trace: ").concat(n, ")"));
   let i = (0, u.Ek)("ensureGuildLoaded(".concat(e, ")"), () => d.A.getSync(r, e), "ensureGuildLoaded");
   if (null == i) {
-    V.add(e), f.A.restored(e), N.log("load returned null; early returning (guild: ".concat(e, ", database: ").concat(r, ")"));
+    F.add(e), f.A.restored(e), N.log("load returned null; early returning (guild: ".concat(e, ", database: ").concat(r, ")"));
     return
   }
   let [a, s] = i;
-  for (let n of ((0, p.Ay)(a), 0 !== t && (W += 1), V.add(e), f.A.restored(e), o.A.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(R, n.id) || en((0, g.oh)(n));
+  for (let n of ((0, p.Ay)(a), 0 !== t && (W += 1), F.add(e), f.A.restored(e), o.A.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), s), a)) Object.hasOwn(R, n.id) || en((0, g.oh)(n));
   N.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(a.length, ", guilds_loaded: ").concat(W, ")"))
 }
 
@@ -212,7 +212,7 @@ function ei(e) {
 
 function ea(e) {
   let t = P;
-  for (let n of (j = {}, R = {}, P = {}, M = {}, x = {}, U = {}, H = {}, F = {}, B = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(ex(n.id)))), eo(n);
+  for (let n of (j = {}, R = {}, P = {}, M = {}, x = {}, U = {}, H = {}, V = {}, B = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(ex(n.id)))), eo(n);
   eP()
 }
 
@@ -224,7 +224,7 @@ function eo(e) {
   } = e;
   switch (n.op) {
     case "full_sync":
-      for (let e of (N.fileOnly("ConnectionOpen contained full channels for ".concat(t, " #:").concat(n.items.length)), Q(t), V.add(t), f.A.restored(t), n.items)) en(e);
+      for (let e of (N.fileOnly("ConnectionOpen contained full channels for ".concat(t, " #:").concat(n.items.length)), Q(t), F.add(t), f.A.restored(t), n.items)) en(e);
       break;
     case "update":
       for (let e of ((n.writes.length > 0 || n.deletes.length > 0) && f.A.invalidate(t), n.deletes)) ev(R[e]);
@@ -252,7 +252,7 @@ function el(e) {
       N.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(ex(e.id))), a().forEach(n[e.id], en);
       let i = null != (t = e.partial_updates.deleted_channel_ids) ? t : [];
       i.length > 0 && (q(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(R[e]))), null == (r = e.partial_updates.channels) || r.forEach(t => en((0, g.UE)(t, e.id)))
-    } else N.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Q(e.id), V.add(e.id), f.A.restored(e.id), e.channels.forEach(t => en((0, g.UE)(t, e.id)))
+    } else N.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Q(e.id), F.add(e.id), f.A.restored(e.id), e.channels.forEach(t => en((0, g.UE)(t, e.id)))
   })
 }
 
@@ -262,12 +262,12 @@ function ec(e) {
       channels: n
     }
     of e.channels)
-    for (let e of (N.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, p.Ay)(n), V.add(t), f.A.restored(t), n)) Object.hasOwn(R, e.id) || en((0, g.oh)(e));
+    for (let e of (N.fileOnly("Lazy loaded guild channels for ".concat(t)), (0, p.Ay)(n), F.add(t), f.A.restored(t), n)) Object.hasOwn(R, e.id) || en((0, g.oh)(e));
   returnfalse
 }
 
 function eu() {
-  N.fileOnly("initializeClear()"), j = {}, R = {}, P = {}, U = {}, M = {}, D = {}, H = {}, x = {}, V = new Set, F = {}, B = Date.now()
+  N.fileOnly("initializeClear()"), j = {}, R = {}, P = {}, U = {}, M = {}, D = {}, H = {}, x = {}, F = new Set, V = {}, B = Date.now()
 }
 
 function ed(e) {
@@ -280,7 +280,7 @@ function ed(e) {
   for (let e of [n, r])
     for (let t of e) $((0, p.n2)((0, g.oh)(t)));
   let i = null == (t = r[0]) ? true : t.guild_id;
-  null != i && (N.fileOnly("Early cache contained full guild channels for ".concat(i)), V.add(i))
+  null != i && (N.fileOnly("Early cache contained full guild channels for ".concat(i)), F.add(i))
 }
 
 function ef(e) {
@@ -289,7 +289,7 @@ function ef(e) {
 
 function ep(e) {
   for (let [t, n] of(K = true, e.guildChannels))
-    for (let e of (N.fileOnly("Lazy cache contained full guild channels for ".concat(t, " #:").concat(n.length)), V.add(t), n)) $((0, g.oh)(e))
+    for (let e of (N.fileOnly("Lazy cache contained full guild channels for ".concat(t, " #:").concat(n.length)), F.add(t), n)) $((0, g.oh)(e))
 }
 
 function e_(e) {
@@ -384,7 +384,7 @@ function eI(e) {
 }
 
 function eS(e) {
-  N.fileOnly("GuildDelete of ".concat(e.guild.id)), Q(e.guild.id), V.delete(e.guild.id), f.A.invalidate(e.guild.id)
+  N.fileOnly("GuildDelete of ".concat(e.guild.id)), Q(e.guild.id), F.delete(e.guild.id), f.A.invalidate(e.guild.id)
 }
 
 function eT(e) {
@@ -511,8 +511,8 @@ class eL extends(r = Chunk311907.Ay.Store) {
   }
   getDebugInfo() {
     return {
-      loadedGuildIds: Array.from(V).sort(y.default.compare),
-      pendingGuildLoads: Object.keys(F).sort(y.default.compare),
+      loadedGuildIds: Array.from(F).sort(y.default.compare),
+      pendingGuildLoads: Object.keys(V).sort(y.default.compare),
       guildSizes: Object.keys(P).sort(y.default.compare).map(e => "".concat(e, ": ").concat(ex(e)))
     }
   }

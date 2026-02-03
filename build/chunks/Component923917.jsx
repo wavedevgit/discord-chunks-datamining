@@ -98,7 +98,7 @@ class Q extends(r = Chunk64700.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, V.M)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, false) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, false), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, F.M)(e), e.addEventListener("blur", this.handleBlur), k.isPlatformEmbedded ? t.addEventListener("contextmenu", U.contextMenuCallbackNative, false) : t.addEventListener("contextmenu", U.contextMenuCallbackWeb, false), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -210,7 +210,7 @@ class Q extends(r = Chunk64700.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        F.A.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.Ay.close(this.props.windowKey)
+        V.A.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.Ay.close(this.props.windowKey)
       };
       null != t ? t({
         e,
@@ -253,9 +253,9 @@ let X = Chunk64700.forwardRef(function(e, t) {
     let {
       guestWindow: r,
       isFullScreen: a
-    } = (0, _.cf)([F.A], () => ({
-      guestWindow: F.A.getWindow(e.windowKey),
-      isFullScreen: F.A.isWindowFullScreen(e.windowKey)
+    } = (0, _.cf)([V.A], () => ({
+      guestWindow: V.A.getWindow(e.windowKey),
+      isFullScreen: V.A.isWindowFullScreen(e.windowKey)
     }));
     c()(null != r, "Missing guestWindow reference");
     let {

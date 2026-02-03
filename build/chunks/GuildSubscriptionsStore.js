@@ -151,7 +151,7 @@ function G(e) {
   return S.subscribeToGuild(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n,
@@ -160,7 +160,7 @@ function V(e) {
   return N(t, n, r)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n
@@ -256,9 +256,9 @@ let Z = new q(Chunk73153.h, {
   GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: j,
   GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: k,
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
-  GUILD_SUBSCRIPTIONS_CHANNEL: V,
+  GUILD_SUBSCRIPTIONS_CHANNEL: F,
   GUILD_SUBSCRIPTIONS: G,
-  CHANNEL_PRELOAD: F,
+  CHANNEL_PRELOAD: V,
   INBOX_OPEN: z,
   THREAD_UPDATE: Y,
   THREAD_DELETE: W,

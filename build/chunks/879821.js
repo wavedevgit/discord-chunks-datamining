@@ -122,23 +122,23 @@ function f(e) {
       setReference: T,
       setFloating: C
     }), [T, C]),
-    V = i.useMemo(() => ({
+    F = i.useMemo(() => ({
       reference: N,
       floating: w
     }), [N, w]),
-    F = i.useMemo(() => {
+    V = i.useMemo(() => {
       let e = {
         position: n,
         left: 0,
         top: 0
       };
-      if (!V.floating) return e;
-      let t = u(V.floating, E.x),
-        r = u(V.floating, E.y);
+      if (!F.floating) return e;
+      let t = u(F.floating, E.x),
+        r = u(F.floating, E.y);
       return h ? {
         ...e,
         transform: "translate(" + t + "px, " + r + "px)",
-        ...c(V.floating) >= 1.5 && {
+        ...c(F.floating) >= 1.5 && {
           willChange: "transform"
         }
       } : {
@@ -146,14 +146,14 @@ function f(e) {
         left: t,
         top: r
       }
-    }, [n, h, V.floating, E.x, E.y]);
+    }, [n, h, F.floating, E.x, E.y]);
   return i.useMemo(() => ({
     ...E,
     update: k,
     refs: G,
-    elements: V,
-    floatingStyles: F
-  }), [E, k, G, V, F])
+    elements: F,
+    floatingStyles: V
+  }), [E, k, G, F, V])
 }
 let p = (e, t) => ({
     ...(0, r.cY)(e),

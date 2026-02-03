@@ -5,9 +5,9 @@ require.d(exports, {
   Fb: () => et,
   GS: () => B,
   H1: () => ei,
-  HU: () => F,
+  HU: () => V,
   MI: () => Q,
-  Mt: () => V,
+  Mt: () => F,
   PW: () => eo,
   Su: () => ee,
   Ts: () => ec,
@@ -148,7 +148,7 @@ function G(e) {
   }))
 }
 
-function V(e) {
+function F(e) {
   a.h.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {
@@ -159,7 +159,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   a.h.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {

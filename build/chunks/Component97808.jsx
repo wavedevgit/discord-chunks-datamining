@@ -498,7 +498,7 @@ function G(e, t, n, i) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     status: t,
     isMobile: n,
@@ -519,7 +519,7 @@ function V(e) {
   }))
 }
 
-function F(e) {
+function V(e) {
   let {
     children: t,
     size: n,
@@ -641,11 +641,11 @@ function H(e) {
     imageClassName: L,
     ref: M,
     CutoutIcon: j,
-    avatarTooltipAsset: V,
+    avatarTooltipAsset: F,
     avatarTooltipText: H,
     avatarTooltipTitle: Y
   } = e, W = n !== h.clD.UNKNOWN ? n : null, K = (0, g.Kj)(a), z = null != W ? Math.ceil((K.status * g.x - K.status) / 2) : 0, q = K.size + z, Z = (0, u.S3)(W, s), Q = i.useId();
-  return (0, r.jsx)(F, A(O({}, e), {
+  return (0, r.jsx)(V, A(O({}, e), {
     ariaLabel: R,
     ariaHidden: w,
     status: W,
@@ -658,16 +658,16 @@ function H(e) {
       viewBox: "0 0 ".concat(q, " ").concat(q),
       className: o()(y.dK, y.JW),
       "aria-hidden": true,
-      children: [null != V && k(Q, K, W, {
+      children: [null != F && k(Q, K, W, {
         isMobile: l,
         isTyping: p,
         isVR: f
-      }, V), (0, r.jsx)("foreignObject", {
+      }, F), (0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
         width: K.size,
         height: K.size,
-        mask: null != V ? "url(#".concat(Q, ")") : "url(#".concat(P(W, a, l, p, f), ")"),
+        mask: null != F ? "url(#".concat(Q, ")") : "url(#".concat(P(W, a, l, p, f), ")"),
         children: (0, r.jsx)(B, {
           ref: E,
           src: t,
@@ -714,7 +714,7 @@ function H(e) {
       }, {
         avatarTooltipTitle: Y,
         avatarTooltipText: H
-      }, V)]
+      }, F)]
     })
   }))
 }
@@ -764,14 +764,14 @@ function K(e) {
     avatarTooltipTitle: X
   } = e, J = (0, u.S3)(R, P), $ = i.useId(), ee = i.useId(), [et] = i.useState(() => O({
     fill: a
-  }, V({
+  }, F({
     size: S,
     status: n,
     isMobile: t,
     isTyping: false
   }))), en = i.useMemo(() => O({
     fill: J
-  }, V({
+  }, F({
     size: S,
     status: R,
     isMobile: f,
@@ -804,7 +804,7 @@ function K(e) {
       scale: 1
     }] : []
   }, C() ? "animate-always" : "animate-never", [z, R]);
-  return (0, r.jsx)(F, A(O({}, e), {
+  return (0, r.jsx)(V, A(O({}, e), {
     ariaLabel: H,
     ariaHidden: k,
     typingOffset: eh,

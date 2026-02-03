@@ -5,7 +5,7 @@ require.d(exports, {
   A0: () => W,
   BF: () => X,
   VP: () => q,
-  XI: () => V,
+  XI: () => F,
   fI: () => $,
   fh: () => et
 });
@@ -123,7 +123,7 @@ let j = (0, Chunk64700.createContext)(null),
   k = (0, Chunk64700.createContext)(null),
   U = (0, Chunk64700.createContext)(null),
   G = (0, Chunk64700.createContext)(null),
-  V = (0, Chunk64700.forwardRef)(function(e, t) {
+  F = (0, Chunk64700.forwardRef)(function(e, t) {
     var n;
     [e, t] = (0, o.JT)(e, t, k);
     let r = (0, _.R)(e),
@@ -145,7 +145,7 @@ let j = (0, Chunk64700.createContext)(null),
     return x.createElement(d.GQ, {
       content: u,
       createCollection: () => new M
-    }, n => x.createElement(F, {
+    }, n => x.createElement(V, {
       props: e,
       forwardedRef: t,
       selectionState: r,
@@ -153,7 +153,7 @@ let j = (0, Chunk64700.createContext)(null),
     }))
   });
 
-function F({
+function V({
   props: e,
   forwardedRef: t,
   selectionState: n,
@@ -193,13 +193,13 @@ function F({
       isVirtualized: T
     }, S, t),
     k = S.selectionManager,
-    V = !!(null == L ? true : L.useDraggableCollectionState),
-    F = !!(null == L ? true : L.useDroppableCollectionState);
-  (0, x.useRef)(V), (0, x.useRef)(F), (0, x.useEffect)(() => {}, [V, F]);
+    F = !!(null == L ? true : L.useDraggableCollectionState),
+    V = !!(null == L ? true : L.useDroppableCollectionState);
+  (0, x.useRef)(F), (0, x.useRef)(V), (0, x.useEffect)(() => {}, [F, V]);
   let H = false,
     Y = null,
     W = (0, x.useRef)(null);
-  if (V && L) {
+  if (F && L) {
     u = L.useDraggableCollectionState({
       collection: S.collection,
       selectionManager: k,
@@ -210,7 +210,7 @@ function F({
       ref: W
     }, L.renderDragPreview) : null
   }
-  if (F && L) {
+  if (V && L) {
     d = L.useDroppableCollectionState({
       collection: S.collection,
       selectionManager: k
@@ -244,7 +244,7 @@ function F({
       isFocusVisible: q,
       state: S
     }
-  }), Q = !!(V && !(null == u ? true : u.isDisabled)), X = Z.style, J = null;
+  }), Q = !!(F && !(null == u ? true : u.isDisabled)), X = Z.style, J = null;
   A && (J = A.useTableColumnResizeState({
     tableWidth: A.tableWidth
   }, S), T || (X = {
@@ -591,11 +591,11 @@ let $ = (0, Chunk59845.yq)(J, (e, t, n) => {
       dropPosition: "on"
     }
   }, h, k));
-  let V = (0, x.useRef)(null);
+  let F = (0, x.useRef)(null);
   (0, x.useEffect)(() => {
-    _ && V.current
+    _ && F.current
   }, []);
-  let F = _ && _.isDragging(n.key),
+  let V = _ && _.isDragging(n.key),
     {
       children: H,
       ...Y
@@ -611,7 +611,7 @@ let $ = (0, Chunk59845.yq)(J, (e, t, n) => {
         isFocusVisible: S,
         selectionMode: f.selectionManager.selectionMode,
         selectionBehavior: f.selectionManager.selectionBehavior,
-        isDragging: F,
+        isDragging: V,
         isDropTarget: null == u ? true : u.isDropTarget,
         isFocusVisibleWithin: R,
         id: n.key
@@ -647,7 +647,7 @@ let $ = (0, Chunk59845.yq)(J, (e, t, n) => {
     "data-focused": O.isFocused || true,
     "data-focus-visible": S || true,
     "data-pressed": O.isPressed || true,
-    "data-dragging": F || true,
+    "data-dragging": V || true,
     "data-drop-target": (null == u ? true : u.isDropTarget) || true,
     "data-selection-mode": "none" === f.selectionManager.selectionMode ? true : f.selectionManager.selectionMode,
     "data-focus-visible-within": R || true
@@ -664,7 +664,7 @@ let $ = (0, Chunk59845.yq)(J, (e, t, n) => {
           [o.P_]: {},
           drag: {
             ...null == c ? true : c.dragButtonProps,
-            ref: V,
+            ref: F,
             style: {
               pointerEvents: "none"
             }

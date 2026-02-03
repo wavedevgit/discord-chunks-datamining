@@ -84,19 +84,19 @@ function G(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = V(e, t), Object.getOwnPropertySymbols)
+  if (a = F(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let F = new Chunk626584.A("ConnectionStore");
+let V = new Chunk626584.A("ConnectionStore");
 
 function B(e) {
   return e.map(e => {
@@ -316,7 +316,7 @@ Z(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : A.D.loadGuildIds([e.id
             discoverable: null == (r = e.discoverable) || r
           }
         })
-      }), F.log("Dispatched INITIAL_GUILD ".concat(e.id)))
+      }), V.log("Dispatched INITIAL_GUILD ".concat(e.id)))
     })
   })
 }), q(["READY_SUPPLEMENTAL"], e => {

@@ -118,10 +118,10 @@ function G(e) {
   return C(e.entitlement)
 }
 
-function V(e) {
+function F(e) {
   return w(e.entitlement)
 }
-class F extends(r = Chunk311907.il) {
+class V extends(r = Chunk311907.il) {
   initialize() {
     this.syncWith([u.A], () => true)
   }
@@ -228,8 +228,8 @@ class F extends(r = Chunk311907.il) {
     }), t
   }
 }
-h(F, "displayName", "EntitlementStore");
-let B = new F(Chunk73153.h, {
+h(V, "displayName", "EntitlementStore");
+let B = new V(Chunk73153.h, {
   ENTITLEMENT_FETCH_APPLICATION_START: R,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: P,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
@@ -239,7 +239,7 @@ let B = new F(Chunk73153.h, {
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
-  ENTITLEMENT_DELETE: V,
+  ENTITLEMENT_DELETE: F,
   LOGOUT: T,
   ENTITLEMENTS_FETCH_FOR_USER_START: x,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,

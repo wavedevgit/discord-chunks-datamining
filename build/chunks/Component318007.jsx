@@ -97,9 +97,9 @@ let T = e => {
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, M = I(L, ["ref"]), j = (0, d.lo)(b, t), k = j === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.tB.DEFAULT, G = (0, _._)(), V = (0, p.A)({
+  } = L, M = I(L, ["ref"]), j = (0, d.lo)(b, t), k = j === d.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.tB.DEFAULT, G = (0, _._)(), F = (0, p.A)({
     location: "GiftAnimationOptions"
-  }), F = e => {
+  }), V = e => {
     null != w && w(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
@@ -114,10 +114,10 @@ let T = e => {
       }) : (0, r.jsx)(l.y$y, {
         className: y.u1
       }), k && (0, r.jsxs)("div", {
-        className: o()(y.b7, V && y.Ow),
+        className: o()(y.b7, F && y.Ow),
         children: [(0, r.jsx)(u.A, {
           sound: C,
-          onSelect: F
+          onSelect: V
         }), (0, r.jsx)(m.A, {
           setEmojiConfetti: N,
           emojiConfetti: null == T ? true : T
@@ -133,7 +133,7 @@ let T = e => {
       "aria-label": E.intl.string(E.t.v54NrN),
       ref: x
     }, M), {
-      children: null != G && !V && G.map((e, t) => (0, r.jsx)(g.A, {
+      children: null != G && !F && G.map((e, t) => (0, r.jsx)(g.A, {
         isSelected: v === e,
         giftStyle: e,
         setSelectedGiftStyle: S,

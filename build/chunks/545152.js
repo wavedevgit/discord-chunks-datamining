@@ -63,7 +63,7 @@ function G(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,8 +88,8 @@ async function B(e) {
     commandTargetId: k,
     maxSizeCallback: U,
     commandOrigin: G = L.iw.CHAT,
-    sectionName: V,
-    interactionLifecycleOptionsFactory: F = z,
+    sectionName: F,
+    interactionLifecycleOptionsFactory: V = z,
     source: B
   } = e;
   if (null == j.channel) return;
@@ -244,9 +244,9 @@ async function B(e) {
     maxSizeCallback: U,
     onMessageSuccess: $,
     analytics_location: q(K),
-    sectionName: V,
+    sectionName: F,
     source: Y,
-    interactionLifecycleOptions: await F(C, j, J)
+    interactionLifecycleOptions: await V(C, j, J)
   }))
 }
 let H = e => {
@@ -339,7 +339,7 @@ async function z(e, t, n) {
   if (null == s && null != i.botId) try {
     await l.wz(i.botId)
   } catch (e) {}
-  let u = F(G({}, (0, E.Ay)({
+  let u = V(G({}, (0, E.Ay)({
     channelId: t.channel.id,
     content: "",
     type: n.type === c.kc.CHAT ? M.lAJ.CHAT_INPUT_COMMAND : M.lAJ.CONTEXT_MENU_COMMAND,

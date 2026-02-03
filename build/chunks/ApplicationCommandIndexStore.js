@@ -7,7 +7,7 @@ require.d(exports, {
   ON: () => eE,
   RF: () => eG,
   SD: () => eg,
-  Sx: () => eV,
+  Sx: () => eF,
   XC: () => eA,
   ZA: () => eS,
   Zn: () => en
@@ -83,8 +83,8 @@ function k(e, t) {
 }
 let U = new Chunk626584.A("ApplicationCommandIndexStore"),
   G = Symbol("currentUser"),
-  V = Symbol("stale"),
-  F = Symbol("current"),
+  F = Symbol("stale"),
+  V = Symbol("current"),
   B = Object.freeze({
     descriptors: [],
     commands: [],
@@ -92,18 +92,18 @@ let U = new Chunk626584.A("ApplicationCommandIndexStore"),
     loading: true
   }),
   H = Object.freeze({
-    serverVersion: F,
+    serverVersion: V,
     fetchState: {
       fetching: false
     },
     result: {
       sections: {},
       sectionIdsByBotId: {},
-      version: F
+      version: V
     }
   }),
   Y = Object.freeze({
-    serverVersion: V,
+    serverVersion: F,
     fetchState: {
       fetching: false
     }
@@ -134,7 +134,7 @@ function Q(e, t) {
     i = Z(e),
     a = eh.indices[i];
   return null != a ? ("fetchState" in t && a.fetchState.fetching && a.fetchState.abort.abort(), n = M({}, a, t)) : r && (n = M({
-    serverVersion: V,
+    serverVersion: F,
     fetchState: {
       fetching: false
     }
@@ -158,7 +158,7 @@ function $() {
 }
 
 function ee() {
-  for (let e of Object.values(eh.indices)) e.serverVersion = V;
+  for (let e of Object.values(eh.indices)) e.serverVersion = F;
   $(), z = true
 }
 
@@ -229,7 +229,7 @@ function ei(e) {
     }
     t.commands[e.id] = e
   }
-  let d = null != (t = a.version) ? t : F;
+  let d = null != (t = a.version) ? t : V;
   Q(i, {
     serverVersion: d,
     result: {
@@ -264,7 +264,7 @@ function eo(e) {
     type: "guild",
     guildId: n
   }, {
-    serverVersion: null != r ? r : V
+    serverVersion: null != r ? r : F
   }), a = null == i || null == (t = i.result) ? true : t.sectionIdsByBotId;
   if (null != a)
     for (let e in a) {
@@ -273,7 +273,7 @@ function eo(e) {
         type: "channel",
         channelId: t
       }, {
-        serverVersion: V
+        serverVersion: F
       })
     }
 }
@@ -321,16 +321,16 @@ function el(e) {
     type: "channel",
     channelId: n
   }, {
-    serverVersion: V
+    serverVersion: F
   }), eh.hasUserStateApplication(t) && Q({
     type: "user"
   }, {
-    serverVersion: V
+    serverVersion: F
   }), eh.hasApplicationState(t) && Q({
     type: "application",
     applicationId: t
   }, {
-    serverVersion: V
+    serverVersion: F
   })
 }
 
@@ -358,7 +358,7 @@ function ed() {
   Q({
     type: "user"
   }, {
-    serverVersion: V
+    serverVersion: F
   })
 }
 
@@ -674,16 +674,16 @@ function eT(e) {
       (null == E || t.descriptor.id === E) && G.add(e)
     }
   }
-  let V = new Map;
+  let F = new Map;
   for (let [e, t] of p)
     if (null == E || e === E) {
       let e = null == (s = t.result) ? true : s.sections;
       if (null != e)
-        for (let t of Object.keys(e)) G.add(t), V.set(t, e[t])
+        for (let t of Object.keys(e)) G.add(t), F.set(t, e[t])
     } for (let e of Array.from(G)) {
     let t, n, r = j[e],
       i = U[e],
-      a = V.get(e),
+      a = F.get(e),
       s = null != r,
       l = null != i;
     if (null != r && null != i) {
@@ -718,7 +718,7 @@ function eT(e) {
     let e = eC(A.gZ[D.Ik.BUILT_IN], P, true, true, x);
     null != e && L.push(e)
   }
-  let F = L.flatMap(e => e.data.map(t => k(M({}, t), {
+  let V = L.flatMap(e => e.data.map(t => k(M({}, t), {
     section: e.section
   })));
   if (O === C.M.COMMAND_ONLY || O === C.M.COMMAND_OR_APPLICATION) {
@@ -729,7 +729,7 @@ function eT(e) {
       channel: e,
       guild: t
     } : true;
-    F.sort((e, t) => {
+    V.sort((e, t) => {
       if (v.commands.useScore) {
         var r, i;
         let n = null != (r = e.score) ? r : 0,
@@ -745,7 +745,7 @@ function eT(e) {
     })
   }
   return {
-    commands: F,
+    commands: V,
     descriptors: L.map(e => e.section),
     sectionedCommands: L,
     loading: (null == u ? true : u.fetchState.fetching) === true || (null == d ? true : d.fetchState.fetching) === true || null != E && (null == (a = p.get(E)) ? true : a.fetchState.fetching) === true
@@ -913,7 +913,7 @@ function eG(e, t) {
   return eU(e, t)
 }
 
-function eV(e, t) {
+function eF(e, t) {
   var n, r, i, a, o, s;
   let l, c;
   if (t === D.Ik.BUILT_IN) return {

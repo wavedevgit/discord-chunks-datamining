@@ -76,8 +76,8 @@ let T = Symbol("NO GUILD ID"),
   k = new Map,
   U = new Map,
   G = [],
-  V = [],
-  F = null,
+  F = [],
+  V = null,
   B = new Map;
 
 function H(e) {
@@ -177,7 +177,7 @@ function J(e) {
 }
 
 function $(e) {
-  var t, n, r, i, o, c, u, d, f, _, h, y, b, v, I, P, V, F, B, Y, q, Z;
+  var t, n, r, i, o, c, u, d, f, _, h, y, b, v, I, P, F, V, B, Y, q, Z;
   let Q, {
       userProfile: J,
       fetchStartedAt: $
@@ -271,7 +271,7 @@ function $(e) {
       badges: ea,
       widgets: null == (P = J.widgets) ? true : P.map(H).filter(g.Vq),
       wishlistSettings: J.wishlist_settings,
-      collectibles: null == (F = J.user_profile) || null == (V = F.collectibles) ? true : V.map(e => {
+      collectibles: null == (V = J.user_profile) || null == (F = V.collectibles) ? true : F.map(e => {
         let {
           sku_id: t,
           type: n,
@@ -383,7 +383,7 @@ function en(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, D.set(r, s), (null == a ? true : a.status) === 404 && (k.set(r, 0), j.set(r, G), U.set(r, V))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, D.set(r, s), (null == a ? true : a.status) === 404 && (k.set(r, 0), j.set(r, G), U.set(r, F))
 }
 
 function er(e) {
@@ -527,7 +527,7 @@ function eh(e) {
 }
 
 function em(e) {
-  for (let t of (F = e.applicationConfigs.map(e => new c.V(e)), B.clear(), F)) B.set(t.applicationId, t)
+  for (let t of (V = e.applicationConfigs.map(e => new c.V(e)), B.clear(), V)) B.set(t.applicationId, t)
 }
 class eg extends Chunk536802.A {
   initialize() {
@@ -592,7 +592,7 @@ class eg extends Chunk536802.A {
     }
   }
   get applicationWidgetConfigs() {
-    return F
+    return V
   }
   getApplicationWidgetConfig(e) {
     return B.get(e)

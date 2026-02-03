@@ -28,19 +28,19 @@ function y(e, t, n) {
     U = null != (m = null != (g = null == n ? true : n.locale) ? g : k.locale) ? m : p.A,
     G = (0, u.A)(null != (y = null != (O = null != (v = null != (A = null == n ? true : n.firstWeekContainsDate) ? A : null == n || null == (I = n.locale) || null == (S = I.options) ? true : S.firstWeekContainsDate) ? v : k.firstWeekContainsDate) ? O : null == (T = k.locale) || null == (C = T.options) ? true : C.firstWeekContainsDate) ? y : 1);
   if (!(G >= 1 && G <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var V = (0, u.A)(null != (N = null != (w = null != (R = null != (P = null == n ? true : n.weekStartsOn) ? P : null == n || null == (D = n.locale) || null == (L = D.options) ? true : L.weekStartsOn) ? R : k.weekStartsOn) ? w : null == (x = k.locale) || null == (M = x.options) ? true : M.weekStartsOn) ? N : 0);
-  if (!(V >= 0 && V <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
+  var F = (0, u.A)(null != (N = null != (w = null != (R = null != (P = null == n ? true : n.weekStartsOn) ? P : null == n || null == (D = n.locale) || null == (L = D.options) ? true : L.weekStartsOn) ? R : k.weekStartsOn) ? w : null == (x = k.locale) || null == (M = x.options) ? true : M.weekStartsOn) ? N : 0);
+  if (!(F >= 0 && F <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if (!U.localize) throw RangeError("locale must contain localize property");
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");
-  var F = (0, a.default)(e);
-  if (!(0, r.default)(F)) throw RangeError("Invalid time value");
-  var B = (0, l.A)(F),
-    H = (0, i.A)(F, B),
+  var V = (0, a.default)(e);
+  if (!(0, r.default)(V)) throw RangeError("Invalid time value");
+  var B = (0, l.A)(V),
+    H = (0, i.A)(V, B),
     Y = {
       firstWeekContainsDate: G,
-      weekStartsOn: V,
+      weekStartsOn: F,
       locale: U,
-      _originalDate: F
+      _originalDate: V
     };
   return j.match(h).map(function(e) {
     var t = e[0];

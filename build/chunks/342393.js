@@ -328,9 +328,9 @@
   G.propTypes = {
     children: O.func.isRequired
   };
-  var V = ["on", "session"],
-    F = t.createContext(null);
-  F.displayName = "CheckoutSdkContext";
+  var F = ["on", "session"],
+    V = t.createContext(null);
+  V.displayName = "CheckoutSdkContext";
   var B = function(e, t) {
       if (!e) throw Error("Could not find CheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CheckoutProvider> provider."));
       return e
@@ -340,7 +340,7 @@
   var Y = function(e, t) {
       if (!e) return null;
       e.on, e.session;
-      var n = s(e, V);
+      var n = s(e, F);
       return t ? Object.assign(t, n) : Object.assign(e.session(), n)
     },
     W = "Invalid prop `stripe` supplied to `CheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
@@ -404,7 +404,7 @@
       var E = t.useMemo(function() {
         return Y(d.checkoutSdk, s)
       }, [d.checkoutSdk, s]);
-      return d.checkoutSdk ? t.createElement(F.Provider, {
+      return d.checkoutSdk ? t.createElement(V.Provider, {
         value: d
       }, t.createElement(H.Provider, {
         value: E
@@ -418,10 +418,10 @@
     }).isRequired
   };
   var z = function(e) {
-      return B(t.useContext(F), e)
+      return B(t.useContext(V), e)
     },
     q = function(e) {
-      var n = t.useContext(F),
+      var n = t.useContext(V),
         r = t.useContext(x);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
       return n ? B(n, e) : M(r, e)

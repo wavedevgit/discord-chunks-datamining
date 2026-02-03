@@ -23,10 +23,10 @@ require.d(exports, {
   jr: () => v,
   pO: () => C,
   py: () => S,
-  rH: () => V,
+  rH: () => F,
   ri: () => k,
   sB: () => A,
-  zd: () => F
+  zd: () => V
 }), require("./733351.js");
 var Chunk58149 = require("./58149.js"),
   Chunk332456 = require("./332456.js"),
@@ -375,7 +375,7 @@ function G() {
   r.Ay.trackWithMetadata(p.HAw.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
 }
 
-function V(e) {
+function F(e) {
   r.Ay.trackWithMetadata(p.HAw.CHANNEL_OPENED, g(h({}, (0, r.H$)(e.guild_id), (0, r.dI)(e), (0, i.C)(e, true), (0, r.qL)(e.id)), {
     channel_view: "Split View",
     platform: (0, c.getPlatform)()
@@ -384,7 +384,7 @@ function V(e) {
   })
 }
 
-function F() {
+function V() {
   r.Ay.trackWithMetadata(p.HAw.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {

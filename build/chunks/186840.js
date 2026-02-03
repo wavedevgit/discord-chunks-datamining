@@ -42,7 +42,7 @@ var Chunk284009 = require("./284009.js"),
   Chunk751124 = require("./751124.js"),
   Chunk652215 = require("./652215.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,14 +51,14 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -130,10 +130,10 @@ function z(e) {
     if (t = l.ws, l.state.gateway !== n) Y.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
     else {
       var p;
-      let e = F({}, l.state);
-      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? H(F({}, e), {
+      let e = V({}, l.state);
+      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? H(V({}, e), {
         data: e.data.substring(0, 100)
-      }) : e)), Y.log("[FAST CONNECT] successfully took over websocket, state:", H(F({}, e), {
+      }) : e)), Y.log("[FAST CONNECT] successfully took over websocket, state:", H(V({}, e), {
         messages: null == (p = e.messages) ? true : p.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
     } null == t && ((t = (0, U.A)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
@@ -181,7 +181,7 @@ class ea extends Chunk969091.A {
     Y.verbose("Setting connection state to ".concat(e)), this.connectionState_ = e
   }
   addAnalytics(e) {
-    this.analytics = F({}, this.analytics, e)
+    this.analytics = V({}, this.analytics, e)
   }
   setResumeUrl(e) {
     null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && Y.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
@@ -514,7 +514,7 @@ class ea extends Chunk969091.A {
   }
   resetSocketOnDispatchError(e) {
     let t = null != e.error.message && e.error.message.indexOf("Guild data was missing from store") >= 0;
-    this.resetSocketOnError(H(F({}, e), {
+    this.resetSocketOnError(H(V({}, e), {
       sentry: !t,
       clearCache: t
     }))
@@ -555,10 +555,10 @@ class ea extends Chunk969091.A {
     Y.verbose("Connection has reset backoff".concat(null != e && "" !== e ? " for reason: " + e : "")), this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.nextReconnectIsImmediate = true, this.willReconnect() ? this._connect(e) : t && this.connectionState !== C.A.SESSION_ESTABLISHED && this._handleClose(true, 0, e)
   }
   constructor() {
-    super(), V(this, "gatewayBackoff", true), V(this, "handleIdentify", true), V(this, "dispatchExceptionBackoff", new s.A(1e3, et)), V(this, "dispatchSuccessTimer", 0), V(this, "connectionState_", true), V(this, "webSocket", true), V(this, "seq", true), V(this, "sessionId", true), V(this, "token", true), V(this, "initialHeartbeatTimeout", true), V(this, "expeditedHeartbeatTimeout", true), V(this, "heartbeatInterval", true), V(this, "helloTimeout", true), V(this, "heartbeater", true), V(this, "lastHeartbeatTime", true), V(this, "lastHeartbeatAckTime", true), V(this, "heartbeatAck", true), V(this, "connectionStartTime", true), V(this, "identifyStartTime", true), V(this, "nextReconnectIsImmediate", true), V(this, "compressionHandler", true), V(this, "hasConnectedOnce", true), V(this, "isFastConnect", true), V(this, "didForceClearGuildHashes", false), V(this, "identifyUncompressedByteSize", 0), V(this, "identifyCompressedByteSize", 0), V(this, "analytics", {}), V(this, "identifyCount", 0), V(this, "resumeUrl", null), V(this, "iosGoingAwayEventCount", 0), V(this, "dispatcher", true), V(this, "heartbeatQOSState", {
+    super(), F(this, "gatewayBackoff", true), F(this, "handleIdentify", true), F(this, "dispatchExceptionBackoff", new s.A(1e3, et)), F(this, "dispatchSuccessTimer", 0), F(this, "connectionState_", true), F(this, "webSocket", true), F(this, "seq", true), F(this, "sessionId", true), F(this, "token", true), F(this, "initialHeartbeatTimeout", true), F(this, "expeditedHeartbeatTimeout", true), F(this, "heartbeatInterval", true), F(this, "helloTimeout", true), F(this, "heartbeater", true), F(this, "lastHeartbeatTime", true), F(this, "lastHeartbeatAckTime", true), F(this, "heartbeatAck", true), F(this, "connectionStartTime", true), F(this, "identifyStartTime", true), F(this, "nextReconnectIsImmediate", true), F(this, "compressionHandler", true), F(this, "hasConnectedOnce", true), F(this, "isFastConnect", true), F(this, "didForceClearGuildHashes", false), F(this, "identifyUncompressedByteSize", 0), F(this, "identifyCompressedByteSize", 0), F(this, "analytics", {}), F(this, "identifyCount", 0), F(this, "resumeUrl", null), F(this, "iosGoingAwayEventCount", 0), F(this, "dispatcher", true), F(this, "heartbeatQOSState", {
       currentPayload: null,
       upcomingState: null
-    }), V(this, "send", (e, t, n) => {
+    }), F(this, "send", (e, t, n) => {
       O.default.isLoggingGatewayEvents && Y.verboseDangerously("~>", e, t);
       let r = W.pack({
         op: e,

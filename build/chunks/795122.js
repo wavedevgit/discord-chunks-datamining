@@ -70,7 +70,7 @@ function E(e, t, n) {
     onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.c)(null == (b = S.props) ? true : b.onAction, N ? () => N(S.key) : true) : true,
     focus: x,
     linkBehavior: w
-  }), V = e => {
+  }), F = e => {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.N$)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
@@ -126,7 +126,7 @@ function E(e, t, n) {
           e.stopPropagation(), e.preventDefault(), null == (i = n.current.parentElement) || i.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent))
         }
     }
-  }, F = e => {
+  }, V = e => {
     if (L.current = S.key, e.target !== n.current) {
       (0, p.pP)() || t.selectionManager.setFocusedKey(S.key);
       return
@@ -140,9 +140,9 @@ function E(e, t, n) {
     }
   }, H = (0, l.HI)(S.props), Y = G.hasAction ? H : {}, W = (0, c.v)(U, Y, {
     role: "row",
-    onKeyDownCapture: V,
+    onKeyDownCapture: F,
     onKeyDown: B,
-    onFocus: F,
+    onFocus: V,
     "aria-label": S.textValue || true,
     "aria-selected": t.selectionManager.canSelectItem(S.key) ? t.selectionManager.isSelected(S.key) : true,
     "aria-disabled": t.selectionManager.isDisabled(S.key) || true,

@@ -102,10 +102,10 @@ function O(e, t, n) {
   }), G = (0, E.i)({
     hour: "numeric",
     hour12: true
-  }), V = (0, m.useMemo)(() => {
+  }), F = (0, m.useMemo)(() => {
     let e = new Date;
     return e.setHours(0), G.formatToParts(e).find(e => "dayPeriod" === e.type).value
-  }, [G]), F = (0, m.useMemo)(() => {
+  }, [G]), V = (0, m.useMemo)(() => {
     let e = new Date;
     return e.setHours(12), G.formatToParts(e).find(e => "dayPeriod" === e.type).value
   }, [G]), B = (0, E.i)({
@@ -136,8 +136,8 @@ function O(e, t, n) {
     let r = O.current + n;
     switch (e.type) {
       case "dayPeriod":
-        if (U(V, n)) t.setSegment("dayPeriod", 0);
-        else if (U(F, n)) t.setSegment("dayPeriod", 12);
+        if (U(F, n)) t.setSegment("dayPeriod", 0);
+        else if (U(V, n)) t.setSegment("dayPeriod", 12);
         else break;
         w.focusNext();
         break;
@@ -201,7 +201,7 @@ function O(e, t, n) {
       inputType: t,
       data: r
     } = e;
-    "insertCompositionText" === t && (n.current && (n.current.textContent = z.current), null != r && (U(V, r) || U(F, r)) && Y(r))
+    "insertCompositionText" === t && (n.current && (n.current.textContent = z.current), null != r && (U(F, r) || U(V, r)) && Y(r))
   }), (0, d.N)(() => {
     let e = n.current;
     return () => {

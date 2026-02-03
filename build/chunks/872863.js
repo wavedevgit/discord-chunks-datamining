@@ -35,7 +35,7 @@ function g(e, t) {
   if (m === f) return L(e, t, h, _);
   if (m === p) return x(e, h, _);
   let g = e.getUint8(h);
-  return m === l ? j(e, t, h + i, _) : m === c ? (0, a.N)(e, g, h + i, _) : m === u ? U(e, t, g, h + i, _) : m === d ? V(e, t, g, h + i, _) : {
+  return m === l ? j(e, t, h + i, _) : m === c ? (0, a.N)(e, g, h + i, _) : m === u ? U(e, t, g, h + i, _) : m === d ? F(e, t, g, h + i, _) : {
     type: true,
     length: _
   }
@@ -228,7 +228,7 @@ function G(e, t) {
   }
 }
 
-function V(e, t, n, r, a) {
+function F(e, t, n, r, a) {
   r += 3;
   let o = {
     type: "infe",

@@ -135,7 +135,7 @@ function er(e) {
     paymentSourceId: eA,
     isGift: ei,
     excludeSubscriptionPlansBySKU: ed
-  }), eD = (0, V.A)(), [eL, ex] = i.useState(false), {
+  }), eD = (0, F.A)(), [eL, ex] = i.useState(false), {
     step: eM,
     setStep: ej,
     steps: ek,
@@ -144,7 +144,7 @@ function er(e) {
   } = (0, B.A)({
     stepConfigs: et,
     breadcrumbs: en
-  }), [eV, eF] = (0, G.A)(eM), {
+  }), [eF, eV] = (0, G.A)(eM), {
     paymentError: eB,
     paymentAuthenticationState: eH
   } = (0, k.A)(), {
@@ -190,7 +190,7 @@ function er(e) {
     hasFetchedSkus: tE,
     skuPricePreviewsById: ty,
     previewErrorsById: tb
-  } = (0, F.A)({
+  } = (0, V.A)({
     applicationId: null != el ? el : q.tv,
     skuIDs: er,
     currentPaymentSourceId: eA,
@@ -227,9 +227,9 @@ function er(e) {
     } = (0, u.cf)([y.A], () => ({
       isDisplayingWowMomentConfirmation: y.A.isDisplayingWowMomentConfirmation
     })),
-    tV = tU ? Z.Ot : true,
+    tF = tU ? Z.Ot : true,
     {
-      enabled: tF
+      enabled: tV
     } = (0, E.Y)({
       location: "PaymentContext"
     }),
@@ -248,7 +248,7 @@ function er(e) {
   return (0, r.jsx)(ee.Provider, {
     value: $(X({
       stripe: eh,
-      paymentElementsEnabled: tF,
+      paymentElementsEnabled: tV,
       contextMetadata: ez,
       blockedPayments: em,
       activeSubscription: J,
@@ -276,8 +276,8 @@ function er(e) {
       stepConfigs: et,
       breadcrumbs: eU,
       previousStepRef: eG,
-      purchaseState: eV,
-      setPurchaseState: eF,
+      purchaseState: eF,
+      setPurchaseState: eV,
       paymentAuthenticationState: eH,
       paymentError: eB,
       purchaseError: eY,
@@ -334,7 +334,7 @@ function er(e) {
       inReverseTrial: tk,
       enablePremiumBrandRefresh: tU,
       isDisplayingWowMomentConfirmation: tG,
-      premiumBrandRefreshBackgroundClassName: tV,
+      premiumBrandRefreshBackgroundClassName: tF,
       wasTier2PremiumBeforePurchase: ep,
       customCheckoutFlow: tH,
       isPremiumGroupPurchase: tY,

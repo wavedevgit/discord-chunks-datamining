@@ -162,8 +162,8 @@ function D(e) {
     setPulseItemKey: k,
     messageId: U,
     isBurstReaction: G,
-    rowPosition: V,
-    inNitroLockedSection: F
+    rowPosition: F,
+    inNitroLockedSection: V
   } = e, [B, H] = i.useState(""), Y = (0, s.bG)([d.A], () => d.A.useReducedMotion), W = (0, s.bG)([f.Ay], () => f.Ay.getDisambiguatedEmojiContext(h), [h]), K = i.useRef(null), {
     emoji: z,
     size: q,
@@ -202,10 +202,10 @@ function D(e) {
     onFocus: null != er ? er : J,
     onMouseMove: J,
     onClick: e => {
-      if (null != K.current && null != V && null != U && !e.shiftKey && null != z.name && G && !Y && j) {
+      if (null != K.current && null != F && null != U && !e.shiftKey && null != z.name && G && !Y && j) {
         let e = null == z.id ? _.Ay.convertNameToSurrogate(z.name) : z.name,
           t = K.current.getBoundingClientRect();
-        t.x = V.x + (Q + 1) * q, H(R(Q, p)), (0, g.h)(U, e, z.id, t)
+        t.x = F.x + (Q + 1) * q, H(R(Q, p)), (0, g.h)(U, e, z.id, t)
       }
       X(e)
     },
@@ -216,7 +216,7 @@ function D(e) {
     size: q,
     surrogateCodePoint: T,
     selectedItemClassName: w,
-    inNitroLockedSection: F
+    inNitroLockedSection: V
   }) : null;
   return (0, i.createElement)("li", C(S({}, ei), {
     key: o,

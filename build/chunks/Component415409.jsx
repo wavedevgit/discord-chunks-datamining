@@ -232,8 +232,8 @@ class k extends Chunk64700.Component {
       isEditorIdle: k,
       currentAutocompleteType: U,
       "aria-describedby": G,
-      "aria-labelledby": V,
-      accessibilityLabel: F,
+      "aria-labelledby": F,
+      accessibilityLabel: V,
       showValueWhenDisabled: B
     } = this.props, {
       submitting: H,
@@ -247,7 +247,7 @@ class k extends Chunk64700.Component {
       id: P,
       placeholder: this.getPlaceholder(),
       required: L,
-      accessibilityLabel: F,
+      accessibilityLabel: V,
       disabled: d || false,
       submitting: H,
       isEdit: y === O.oU.EDIT,
@@ -282,7 +282,7 @@ class k extends Chunk64700.Component {
       "aria-activedescendant": null != (i = Y.activeDescendant) ? i : true,
       "aria-invalid": l.length > M,
       "aria-describedby": G,
-      "aria-labelledby": V,
+      "aria-labelledby": F,
       "aria-autocomplete": "list"
     }, K = b ? (0, r.jsx)(T.A, x(D({
       ref: this.ref

@@ -51,7 +51,7 @@ function M(e) {
     isSendingMessage: y
   } = e, [b, v] = i.useState(f.e2O.Modes.DEFAULT), I = (0, c.bG)([A.A], () => A.A.enabled), M = p || null != l && null != _, k = (null == a ? true : a.productLine) === R.EZt.COLLECTIBLES, {
     selectedGiftingPromotionReward: U
-  } = (0, w.Pv)(), G = (0, E.Mq)(s) && null != U, V = () => null != s ? s.skuId : null != a ? a.id : null, F = () => {
+  } = (0, w.Pv)(), G = (0, E.Mq)(s) && null != U, F = () => null != s ? s.skuId : null != a ? a.id : null, V = () => {
     let e;
     return null != g ? D.intl.string(D.t.qB8aya) : null == s ? null : (e = s.interval === P.WT.MONTH ? M ? D.t["4ZJ+7Z"] : D.t["P+z55d"] : M ? D.t.p0pZXP : D.t.bXqk3o, D.intl.format(e, {
       skuName: (0, C.RH)(s.id),
@@ -100,7 +100,7 @@ function M(e) {
   }, W = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: L.I0,
-      children: F()
+      children: V()
     }), null == g && (0, r.jsx)(j, {
       giftCode: t,
       onClose: u
@@ -125,7 +125,7 @@ function M(e) {
       })]
     }), (0, r.jsx)("div", {
       className: L._c,
-      children: F()
+      children: V()
     })]
   });
   return y ? (0, r.jsxs)("div", {
@@ -134,7 +134,7 @@ function M(e) {
       game: n,
       className: L.__invalid_icon,
       size: m.M.LARGE,
-      skuId: V()
+      skuId: F()
     }) : null, (0, r.jsx)(f.y$y, {
       type: f.tVU.PULSING_ELLIPSIS
     })]
@@ -146,7 +146,7 @@ function M(e) {
       game: n,
       className: L.__invalid_icon,
       size: m.M.LARGE,
-      skuId: V()
+      skuId: F()
     }) : null, (0, r.jsx)(f.Heading, {
       variant: "heading-lg/semibold",
       className: o()({

@@ -86,7 +86,7 @@ function G(e) {
   r.delete(e)
 }
 
-function V() {
+function F() {
   let e = [];
   for (let t in i) {
     let n = i[t];
@@ -95,7 +95,7 @@ function V() {
   return e
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationStreamState: t
   } = e;
@@ -433,10 +433,10 @@ class ea extends(c = Chunk311907.Ay.PersistedStore) {
     return (0, m.A)(v.A) && null != (t = a[e]) ? t : null
   }
   getAllApplicationStreams() {
-    return (0, m.A)(v.A) ? V().filter(e => null != e && er(e.streamType, e.channelId)) : []
+    return (0, m.A)(v.A) ? F().filter(e => null != e && er(e.streamType, e.channelId)) : []
   }
   getAllApplicationStreamsForChannel(e) {
-    return (0, m.A)(v.A) ? V().filter(t => null != t && t.channelId === e && er(t.streamType, t.channelId)) : []
+    return (0, m.A)(v.A) ? F().filter(t => null != t && t.channelId === e && er(t.streamType, t.channelId)) : []
   }
   getViewerIds(e) {
     if (!(0, m.A)(v.A)) return [];
@@ -465,7 +465,7 @@ w(ea, "displayName", "ApplicationStreamingStore"), w(ea, "persistKey", "Applicat
 let eo = new ea(Chunk73153.h, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: K,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: z,
-  OVERLAY_INITIALIZE: F,
+  OVERLAY_INITIALIZE: V,
   VOICE_STATE_UPDATES: B,
   STREAM_WATCH: H,
   STREAM_START: Y,

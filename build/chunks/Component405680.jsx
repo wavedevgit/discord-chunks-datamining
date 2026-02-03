@@ -43,9 +43,9 @@ let w = function(e) {
       to: U.current.offsetTop,
       animate: true
     })
-  }, []), V = i.useCallback(() => {
+  }, []), F = i.useCallback(() => {
     G()
-  }, [G]), F = i.useCallback(() => {
+  }, [G]), V = i.useCallback(() => {
     null == w || w(), g.default.track(T.HAw.MODAL_DISMISSED, {
       type: T.liQ.PREMIUM_GUILD_USER_MODAL,
       location_stack: M,
@@ -73,12 +73,12 @@ let w = function(e) {
     })
   }, [n.id, t, M]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && F()
+      "Escape" === e.key && V()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [F]);
+  }, [V]);
   let H = (0, f.C$)(n.id, "GuildBoostingMarketing"),
     Y = (0, a.bG)([p.A], () => p.A.hasFetchedCatalog(n.id)),
     W = (0, a.bG)([_.A], () => _.A.hasFetchedPowerupCatalog(n.id));
@@ -96,7 +96,7 @@ let w = function(e) {
       className: N.bn,
       children: (0, r.jsx)(l.A, {
         className: N.ut,
-        closeAction: F,
+        closeAction: V,
         keybind: "ESC",
         variant: l.A.Variants.BOLD
       })
@@ -110,7 +110,7 @@ let w = function(e) {
           children: [(0, r.jsx)(h.A, {
             guild: e.guild,
             themeResponsive: false,
-            onButtonClick: V
+            onButtonClick: F
           }), (0, r.jsx)(s.Heading, {
             className: N.R_,
             color: "always-white",
@@ -118,7 +118,7 @@ let w = function(e) {
             children: C.intl.string(C.t.N4sqzL)
           }), (0, r.jsx)(y.A, {
             guild: n,
-            closeLayer: F,
+            closeLayer: V,
             onCtaVisibilityChange: D
           }), (0, r.jsx)(v.A, {
             guild: n
@@ -131,7 +131,7 @@ let w = function(e) {
         children: (0, r.jsx)(m.A, {
           ref: U,
           guild: e.guild,
-          onClose: F
+          onClose: V
         })
       }), (0, r.jsxs)("div", {
         className: N.o6,
@@ -155,7 +155,7 @@ let w = function(e) {
     }), (0, r.jsx)(O.A, {
       guild: n,
       isVisible: !P,
-      closeLayer: F
+      closeLayer: V
     })]
   })
 }

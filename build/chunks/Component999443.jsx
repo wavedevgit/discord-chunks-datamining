@@ -62,7 +62,7 @@ function G(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,7 +120,7 @@ function H(e) {
       } = a, d = f.Ay.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = F(G({}, e), {
+        e = V(G({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -378,7 +378,7 @@ let K = {
 };
 
 function z(e) {
-  return F(G({}, K), {
+  return V(G({}, K), {
     link: (0, L.A)(e),
     devLink: (0, P.A)(e),
     emoji: B(e),

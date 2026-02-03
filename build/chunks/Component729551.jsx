@@ -2,7 +2,7 @@
 /** chunk id: 729551, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./321073.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -116,7 +116,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     textVariant: t,
     className: n
@@ -128,7 +128,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     user: t,
     activities: n,
@@ -144,7 +144,7 @@ function F(e) {
   } = e;
   (0, f.A)(null == t ? true : t.id);
   let k = (null == a ? true : a.discoverable) !== false ? a : null,
-    F = (0, _.AO)(k),
+    V = (0, _.AO)(k),
     B = (0, m.v)("ActivityStatus", l),
     H = i.useMemo(() => {
       var e, t;
@@ -169,10 +169,10 @@ function F(e) {
           type: t,
           name: n
         } = e;
-        return t !== w.$pd.CUSTOM_STATUS && t !== w.$pd.HANG_STATUS && n !== (null == F ? true : F.name)
+        return t !== w.$pd.CUSTOM_STATUS && t !== w.$pd.HANG_STATUS && n !== (null == V ? true : V.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == F ? true : F.name]),
-    Z = null == n ? true : n.find(e => e.name === (null == F ? true : F.name)),
+    }, [n, null == V ? true : V.name]),
+    Z = null == n ? true : n.find(e => e.name === (null == V ? true : V.name)),
     Q = (null == t ? true : t.bot) === true,
     X = (0, c.bG)([O.A], () => O.A.isBlockedOrIgnored(null == t ? true : t.id)),
     J = (null == H ? true : H.state) != null,
@@ -292,13 +292,13 @@ function F(e) {
     });
   return null != W ? (0, r.jsxs)("div", {
     className: ec,
-    children: [ed(), et > 0 && (0, r.jsx)(V, {
+    children: [ed(), et > 0 && (0, r.jsx)(F, {
       textVariant: "text-".concat(A, "/normal"),
       className: p
     }), el(), D && (0, r.jsx)(I.A, {})]
   }) : (0, r.jsxs)("div", {
     className: ec,
-    children: [el(), (null != H || null != z) && et > 0 && (0, r.jsx)(V, {
+    children: [el(), (null != H || null != z) && et > 0 && (0, r.jsx)(F, {
       textVariant: "text-".concat(A, "/normal"),
       className: p
     }), eu(), D && (0, r.jsx)(I.A, {})]

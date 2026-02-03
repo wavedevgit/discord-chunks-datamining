@@ -119,14 +119,14 @@ function G(e) {
   v.delete(t), I.add(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     buildId: t
   } = e;
   S.hasOwnProperty(t) || (S[t] = null)
 }
 
-function F(e) {
+function V(e) {
   let {
     buildId: t,
     sizeKB: n
@@ -213,8 +213,8 @@ let q = new z(Chunk73153.h, {
   APPLICATION_BUILD_FETCH_START: k,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
-  APPLICATION_BUILD_SIZE_FETCH_START: V,
-  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: F,
+  APPLICATION_BUILD_SIZE_FETCH_START: F,
+  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: V,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
   APPLICATION_BRANCHES_FETCH_SUCCESS: H,
   APPLICATION_BRANCHES_FETCH_FAIL: Y,

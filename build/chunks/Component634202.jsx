@@ -72,13 +72,13 @@ function G(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : G(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e) {
+function V(e) {
   let t, {
     connectionType: n,
     connectionMetadataField: i,
@@ -166,7 +166,7 @@ function B(e) {
             value: a,
             description: s
           } = e;
-          return o()(null != n, "connectionMetadataField is null"), o()(null != i, "operator is null"), o()(null != a, "value is null"), (0, r.jsx)(F, {
+          return o()(null != n, "connectionMetadataField is null"), o()(null != i, "operator is null"), o()(null != a, "value is null"), (0, r.jsx)(V, {
             connectionType: t,
             connectionMetadataField: n,
             operator: i,
@@ -280,7 +280,7 @@ function Y(e) {
     nudgeAlignIntoViewport: true,
     children: e => (0, r.jsx)(d.m, {
       text: M.intl.string(M.t.Wpsnar),
-      children: (0, r.jsxs)("div", V(U({
+      children: (0, r.jsxs)("div", F(U({
         ref: g,
         className: j.qS
       }, e), {

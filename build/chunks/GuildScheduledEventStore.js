@@ -184,14 +184,14 @@ function G(e, t) {
   b.values(g.GUILD_EVENT(e)).forEach(e => C(e.id, t))
 }
 
-function V(e) {
+function F(e) {
   let {
     guildScheduledEvent: t
   } = e;
   return T(t), true
 }
 
-function F(e) {
+function V(e) {
   let {
     guildScheduledEvent: t
   } = e;
@@ -381,9 +381,9 @@ let er = new en(Chunk73153.h, {
   GUILD_DELETE: U,
   FETCH_GUILD_EVENT: M,
   FETCH_GUILD_EVENTS_FOR_GUILD: j,
-  GUILD_SCHEDULED_EVENT_CREATE: V,
-  GUILD_SCHEDULED_EVENT_UPDATE: V,
-  GUILD_SCHEDULED_EVENT_DELETE: F,
+  GUILD_SCHEDULED_EVENT_CREATE: F,
+  GUILD_SCHEDULED_EVENT_UPDATE: F,
+  GUILD_SCHEDULED_EVENT_DELETE: V,
   GUILD_SCHEDULED_EVENT_USER_ADD: z,
   GUILD_SCHEDULED_EVENT_USER_REMOVE: q,
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: W,

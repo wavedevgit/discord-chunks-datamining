@@ -204,8 +204,8 @@ function U(e, t) {
   s()(n.id === e.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id."), n.expanded = t, I.replaceNode(e, n)
 }
 let G = (0, Chunk583613.L_)((e, t) => e.sortedGuildNodes().map(e => e.id)),
-  V = (0, Chunk583613.L_)((e, t) => e.getRoots().map(T)),
-  F = (0, Chunk583613.L_)((e, t) => {
+  F = (0, Chunk583613.L_)((e, t) => e.getRoots().map(T)),
+  V = (0, Chunk583613.L_)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -227,7 +227,7 @@ class H extends Chunk536802.A {
     return I
   }
   getGuildFolders() {
-    return V(I, I.version)
+    return F(I, I.version)
   }
   getGuildFolderById(e) {
     return this.getGuildFolders().find(t => t.folderId === e)
@@ -236,7 +236,7 @@ class H extends Chunk536802.A {
     return G(I, I.version)
   }
   getFlattenedGuildFolderList() {
-    return F(I, I.version)
+    return V(I, I.version)
   }
   getCompatibleGuildFolders() {
     return B(I, I.version)

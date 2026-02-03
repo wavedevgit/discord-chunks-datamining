@@ -115,8 +115,8 @@ function M(e) {
     }),
     {
       activity: G,
-      currentEntry: V,
-      artist: F,
+      currentEntry: F,
+      artist: V,
       title: B,
       user: H
     } = (0, v.u7)(R),
@@ -137,9 +137,9 @@ function M(e) {
         user: H,
         channel: T,
         mediaImageSrc: null == U ? true : U.src,
-        artist: F,
+        artist: V,
         description: L({
-          artist: F,
+          artist: V,
           media: B
         }, T, H),
         colors: [Y, W],
@@ -147,11 +147,11 @@ function M(e) {
           timestamp: n
         })
       })
-    }, [G, F, T, R, null == U ? true : U.src, Y, W, B, H]);
-  if (null == G || null == V) return null;
-  let Z = F,
+    }, [G, V, T, R, null == U ? true : U.src, Y, W, B, H]);
+  if (null == G || null == F) return null;
+  let Z = V,
     Q = [];
-  if (V.media.provider === a.X.SPOTIFY) {
+  if (F.media.provider === a.X.SPOTIFY) {
     m = () => {
       (0, c.Mp)(G)
     }, I = () => {
@@ -164,7 +164,7 @@ function M(e) {
       (0, c.mN)(G, H.id, e)
     };
     if (Z = (0, r.jsx)(d.A, {
-        artists: F,
+        artists: V,
         canOpen: null != G.sync_id,
         linkClassName: P.zA,
         onOpenSpotifyArtist: e
@@ -186,7 +186,7 @@ function M(e) {
     onClickThumbnail: I,
     channel: T,
     entry: R,
-    headerIcons: V.media.provider === a.X.SPOTIFY ? (0, r.jsx)(S.A, {
+    headerIcons: F.media.provider === a.X.SPOTIFY ? (0, r.jsx)(S.A, {
       onClick: n,
       "aria-label": w.intl.string(w.t.rRffNz),
       Icon: h.A
@@ -208,7 +208,7 @@ function M(e) {
         user: H,
         channel: T,
         generateReactionImage: q,
-        reactionImageAltText: D(F, H),
+        reactionImageAltText: D(V, H),
         entry: R,
         buttons: Q
       })

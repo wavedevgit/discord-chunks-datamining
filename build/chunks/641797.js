@@ -84,10 +84,10 @@ var Chunk788409 = require("./788409.js"),
         U = "object" == typeof k && k && true !== k.value ? k.value : C[k];
       if (!d || null !== U) {
         var G = y && f ? String(k).replace(/\./g, "%2E") : String(k),
-          V = l(C) ? "function" == typeof a ? a(M, G) : M : M + (y ? "." + G : "[" + G + "]");
+          F = l(C) ? "function" == typeof a ? a(M, G) : M : M + (y ? "." + G : "[" + G + "]");
         S.set(t, w);
-        var F = r();
-        F.set(h, S), u(D, e(U, V, a, o, s, c, d, f, "comma" === a && A && l(C) ? null : m, g, E, y, b, O, v, A, I, F))
+        var V = r();
+        V.set(h, S), u(D, e(U, F, a, o, s, c, d, f, "comma" === a && A && l(C) ? null : m, g, E, y, b, O, v, A, I, V))
       }
     }
     return D

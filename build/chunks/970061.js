@@ -80,8 +80,8 @@ if (j && !k) {
   U = parseInt(module) > 10 || parseInt(exports) >= 15063
 }
 let G = new Chunk626584.A("NotificationUtils"),
-  V = j && U || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
-async function F() {
+  F = j && U || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+async function V() {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) try {
     return await R.Ay.invoke("NOTIFICATIONS_GET_SETTINGS")
   } catch (e) {
@@ -102,7 +102,7 @@ function H(e) {
   return null
 }
 async function Y() {
-  let e = await F();
+  let e = await V();
   return (null == e ? true : e.authorizationStatus) === "authorized" && (null == e ? true : e.sound) === true
 }
 
@@ -200,7 +200,7 @@ function X(e) {
 }
 async function J() {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) {
-    let e = await F();
+    let e = await V();
     return (null == e ? true : e.authorizationStatus) === "authorized" || (null == e ? true : e.authorizationStatus) === "provisional"
   }
   return null != Z && "granted" === Z.permission
@@ -208,7 +208,7 @@ async function J() {
 async function $() {
   if (null === c.A || true === c.A ? true : c.A.features.supports("notifications")) {
     var e;
-    return (null == (e = await F()) ? true : e.authorizationStatus) !== "undetermined"
+    return (null == (e = await V()) ? true : e.authorizationStatus) !== "undetermined"
   }
   return null != Z && "default" !== Z.permission
 }
@@ -220,7 +220,7 @@ function ee(e) {
 }
 async function et(e, t, n, r, i) {
   var a, o, s, c, d, f, g;
-  let E, y = await F(),
+  let E, y = await V(),
     D = (null == y ? true : y.authorizationStatus) === "authorized" || (null == y ? true : y.authorizationStatus) === "provisional",
     x = null != y ? D : await J(),
     k = D,
@@ -248,7 +248,7 @@ async function et(e, t, n, r, i) {
       var n;
       null == (n = i.onShown) || n.call(i), i.omitViewTracking || (T.default.track(P.HAw.NOTIFICATION_ACTION, L({
         action: "VIEW"
-      }, t)), T.default.track(P.HAw.NOTIFICATION_VIEWED, q)), V && setTimeout(() => e.close(), 5e3)
+      }, t)), T.default.track(P.HAw.NOTIFICATION_VIEWED, q)), F && setTimeout(() => e.close(), 5e3)
     };
   if (null == i.sound || $ || (ee(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, m.w)(e)), j && v.A.taskbarFlash && R.Ay.flashFrame(true), k) {
     let a = {

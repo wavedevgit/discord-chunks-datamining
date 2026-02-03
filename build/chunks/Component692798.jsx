@@ -74,13 +74,13 @@ function G(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : G(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e) return {};
   var n, r, i, a = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -406,13 +406,13 @@ let Y = Object.freeze({
       labelledBy: a
     }), {
       ref: s
-    } = o, c = F(o, ["ref"]), u = i.useMemo(() => ({
+    } = o, c = V(o, ["ref"]), u = i.useMemo(() => ({
       type: t,
       delay: Y[t]
     }), [t]);
     return (0, r.jsx)(W.Provider, {
       value: u,
-      children: (0, r.jsx)("div", V(U({
+      children: (0, r.jsx)("div", F(U({
         ref: s
       }, c), {
         className: j.__invalid_container,

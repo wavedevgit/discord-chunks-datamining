@@ -107,8 +107,8 @@ function g(e, t, n) {
       fade: k = false,
       className: U,
       style: G,
-      maxContentWidth: V,
-      renderAccessory: F,
+      maxContentWidth: F,
+      renderAccessory: V,
       onItemVisibilityChange: B
     } = E, H = h(E, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]), [Y] = y, W = i.useRef(null), K = i.useRef(null), z = i.useRef({}), [q, Z] = i.useState(false), {
       scrollerRef: Q,
@@ -145,7 +145,7 @@ function g(e, t, n) {
       paddingHorizontal: j,
       getScrollerState: J,
       dir: O,
-      maxBufferWidth: V
+      maxBufferWidth: F
     });
     i.useEffect(() => {
       null != B && (0, l.EL)(en, z.current, B), z.current = en
@@ -187,7 +187,7 @@ function g(e, t, n) {
       }),
       style: (0, s.Ze)(G)
     }, H), {
-      children: [null != (g = null == F ? true : F(er)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(c.xpW, {
+      children: [null != (g = null == V ? true : V(er)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(c.xpW, {
         containerRef: K,
         children: (0, r.jsx)("div", {
           style: {

@@ -285,13 +285,13 @@ function G(e) {
   }
 }
 
-function V() {
+function F() {
   if (r === s.default.locale) returnfalse;
   r = s.default.locale, _ = {}, h = {}, m = {}
 }
-class F extends(i = Chunk311907.Ay.Store) {
+class V extends(i = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(l.default, s.default), this.syncWith([s.default], V), r = s.default.locale
+    this.waitFor(l.default, s.default), this.syncWith([s.default], F), r = s.default.locale
   }
   getStorefrontData(e) {
     return h[e]
@@ -313,8 +313,8 @@ class F extends(i = Chunk311907.Ay.Store) {
     return "ineligible" !== E[e]
   }
 }
-c(F, "displayName", "SocialLayerStorefrontStore");
-let B = new F(Chunk73153.h, {
+c(V, "displayName", "SocialLayerStorefrontStore");
+let B = new V(Chunk73153.h, {
   LOGOUT: b,
   POST_CONNECTION_OPEN: N,
   ENTITLEMENT_CREATE: S,

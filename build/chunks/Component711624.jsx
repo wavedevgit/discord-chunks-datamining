@@ -107,7 +107,7 @@ let S = {
         tension: 360,
         friction: 12
       }
-    }), V = (0, r.jsxs)(r.Fragment, {
+    }), F = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.animated.div, {
         className: y.sO,
         style: {
@@ -124,7 +124,7 @@ let S = {
       }) : true]
     });
 
-    function F() {
+    function V() {
       !x || U || (0, p.g)({
         analyticsLocations: R,
         analyticsLocation: {
@@ -140,7 +140,7 @@ let S = {
     let B = !M && P.fractionalState === m.xc.NONE,
       H = B ? l.DUT : "div",
       Y = B ? {
-        onClick: F
+        onClick: V
       } : {},
       W = M ? g.intl.formatToPlainString(g.t["1o48ki"], {
         tierName: (0, f.gb)(C, {
@@ -173,8 +173,8 @@ let S = {
           confettiTriggerRef: n,
           setConfettiCount: v,
           setShouldFireConfetti: T,
-          children: V
-        }) : V, (0, r.jsxs)(l.Text, {
+          children: F
+        }) : F, (0, r.jsxs)(l.Text, {
           className: y.Td,
           variant: "text-md/normal",
           children: [M && C !== h.TVA.NONE && (0, r.jsx)(l.A9s, {

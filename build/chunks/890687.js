@@ -18,7 +18,7 @@ require.d(exports, {
   Nb: () => eJ,
   O9: () => eG,
   Qh: () => eg,
-  Qo: () => eF,
+  Qo: () => eV,
   RR: () => eM,
   S5: () => eO,
   UX: () => ej,
@@ -208,11 +208,11 @@ function ei(e, t) {
 function ea(e, t) {
   switch (t) {
     case W.BQ.VIRTUAL_CURRENCY:
-      return (0, F.ks)(e.config);
+      return (0, V.ks)(e.config);
     case W.BQ.COLLECTIBLE:
-      return (0, F.tU)(e.config);
+      return (0, V.tU)(e.config);
     case W.BQ.IN_GAME:
-      return (0, F.HG)(e.config) || (0, F.r7)(e.config);
+      return (0, V.HG)(e.config) || (0, V.r7)(e.config);
     default:
       returnfalse
   }
@@ -422,14 +422,14 @@ let ew = e => {
     quest: t
   }), a = (0, j.vU)();
   return () => {
-    i ? (0, V.se)({
+    i ? (0, F.se)({
       quest: t
     }, {
       content: n,
       ctaContent: M.Cy.CONNECT_CONSOLE_LINK,
       impressionId: null == a ? true : a.getId(),
       sourceQuestContent: r
-    }) : (0, V.b6)({
+    }) : (0, F.b6)({
       quest: t
     }, {
       content: n,
@@ -581,12 +581,12 @@ function eG(e) {
   }
 }
 
-function eV(e) {
+function eF(e) {
   return [(0, c.bG)([C.A], () => C.A.selectedTaskPlatform(e)), r.useCallback(t => (0, T.lx)(e, t), [e])]
 }
 
-function eF(e, t) {
-  let [n, i] = eV(e.id), s = r.useMemo(() => (0, V.UR)(e), [e]), l = s.includes(W.fO.DESKTOP), c = s.includes(W.fO.CONSOLE), u = ev(e), d = eA(e), f = r.useMemo(() => (0, a.YW)(t).with({
+function eV(e, t) {
+  let [n, i] = eF(e.id), s = r.useMemo(() => (0, F.UR)(e), [e]), l = s.includes(W.fO.DESKTOP), c = s.includes(W.fO.CONSOLE), u = ev(e), d = eA(e), f = r.useMemo(() => (0, a.YW)(t).with({
     percentComplete: 0
   }, () => null).with({
     taskType: o.n.PLAY_ON_DESKTOP
@@ -642,7 +642,7 @@ function eB(e) {
   var t, n;
   let r = eN(e),
     i = eC(e),
-    [a] = eF(e, i),
+    [a] = eV(e, i),
     s = ey(e),
     l = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     c = (null == (n = e.userStatus) ? true : n.completedAt) != null,
@@ -650,7 +650,7 @@ function eB(e) {
     d = o.o.DESKTOP.has(i.taskType) && i.percentComplete > 0,
     f = 0 === i.percentComplete,
     p = l && !c && !s && u && (d || f && a === N.X0.DESKTOP),
-    _ = (0, I.isWeb)() && p && !(0, V.W1)(e),
+    _ = (0, I.isWeb)() && p && !(0, F.W1)(e),
     h = (0, I.isMac)() && i.taskType === o.n.STREAM_ON_DESKTOP && p,
     m = [];
   return h && m.push(q.intl.string(q.t.MFGxFM)), _ && m.push(q.intl.string(q.t.BV6xDm)), m
@@ -700,11 +700,11 @@ function eW(e, t) {
 }
 
 function eK(e) {
-  let t = (0, F.mq)(e),
-    n = (0, F.k5)(e),
-    r = (0, F.$5)(e),
-    i = (0, F.Y7)(e),
-    a = (0, F.JX)(e),
+  let t = (0, V.mq)(e),
+    n = (0, V.k5)(e),
+    r = (0, V.$5)(e),
+    i = (0, V.Y7)(e),
+    a = (0, V.JX)(e),
     o = (0, c.bG)([g.default], () => g.default.getCurrentUser()),
     s = (0, S.TW)(o, z.PremiumTypes.TIER_2);
   if (null == n) return q.intl.formatToPlainString(q.t.l9uXL8, {

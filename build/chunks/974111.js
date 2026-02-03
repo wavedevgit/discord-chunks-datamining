@@ -93,15 +93,15 @@ function y(e, t, n) {
       k.focusFirst()
     }
   }, t, e.inputRef);
-  let V = {
+  let F = {
     type: "hidden",
     name: e.name,
     form: e.form,
     value: (null == (y = t.value) ? true : y.toString()) || "",
     disabled: e.isDisabled
   };
-  "native" === e.validationBehavior && (V.type = "text", V.hidden = true, V.required = e.isRequired, V.onChange = () => {});
-  let F = (0, c.$)(e);
+  "native" === e.validationBehavior && (F.type = "text", F.hidden = true, F.required = e.isRequired, F.onChange = () => {});
+  let V = (0, c.$)(e);
   return {
     labelProps: {
       ...I,
@@ -109,7 +109,7 @@ function y(e, t, n) {
         k.focusFirst()
       }
     },
-    fieldProps: (0, s.v)(F, b, U, w, {
+    fieldProps: (0, s.v)(V, b, U, w, {
       onKeyDown(t) {
         e.onKeyDown && e.onKeyDown(t)
       },
@@ -120,7 +120,7 @@ function y(e, t, n) {
         unicodeBidi: "isolate"
       }
     }),
-    inputProps: V,
+    inputProps: F,
     descriptionProps: T,
     errorMessageProps: C,
     isInvalid: O,

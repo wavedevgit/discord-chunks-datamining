@@ -2,7 +2,7 @@
 /** chunk id: 85109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F
+  A: () => V
 }), require("./65821.js"), require("./896048.js");
 var r, Chunk311907 = require("./311907.js"),
   Chunk713402 = require("./713402.js"),
@@ -221,7 +221,7 @@ function G(e) {
   } = e;
   E.add(t.saveData.messageId)
 }
-class V extends(r = Chunk311907.Ay.Store) {
+class F extends(r = Chunk311907.Ay.Store) {
   initialize() {
     this.waitFor(l.default)
   }
@@ -270,8 +270,8 @@ class V extends(r = Chunk311907.Ay.Store) {
     return null != n && null != n.saveData.dueAt
   }
 }
-u(V, "displayName", "SavedMessagesStore");
-let F = new V(Chunk73153.h, {
+u(F, "displayName", "SavedMessagesStore");
+let V = new F(Chunk73153.h, {
   POST_CONNECTION_OPEN: S,
   LOGOUT: T,
   SAVED_MESSAGES_UPDATE: C,

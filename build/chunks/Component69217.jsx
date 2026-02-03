@@ -84,19 +84,19 @@ function G(e, t) {
     for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
   }
-  if (a = V(e, t), Object.getOwnPropertySymbols)
+  if (a = F(e, t), Object.getOwnPropertySymbols)
     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
   return a
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.getOwnPropertyNames(e);
   for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
   return i
 }
-let F = "1",
+let V = "1",
   B = .01,
   H = .1,
   Y = .01,
@@ -193,7 +193,7 @@ function q(e) {
 
 function Z(e, t) {
   return i.useMemo(() => {
-    if (null == t || e !== F) return {
+    if (null == t || e !== V) return {
       x: 0,
       y: 0
     };
@@ -210,7 +210,7 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     sound: R,
     channel: M,
     containerClassName: k,
-    className: V,
+    className: F,
     focused: K,
     forceSecondaryActions: Q = false,
     interactive: X = true,
@@ -237,20 +237,20 @@ let Q = Chunk64700.forwardRef(function(e, t) {
     isPlayingSound: eb
   } = (0, N.A)(R, null != (n = null == M ? true : M.id) ? n : null, null != (a = el ? b.HO.getSetting() : null == (O = b.dG.getSetting()) ? true : O.volume) ? a : 100, !el && (null == M ? true : M.isVocal()) ? D.a.VOICE : D.a.DEFAULT), {
     createMultipleConfettiAt: eO
-  } = i.useContext(m.x), ev = i.useRef(null), eA = Z(R.soundId, ev.current), eI = (0, l.bG)([_.A], () => _.A.useReducedMotion), eS = i.useRef(B), eT = i.useRef(new c.IX), eC = R.soundId === F, eN = "sound-".concat(R.soundId), ew = (0, s.rm)(eN), eR = null != e_ || null != eh, eP = !(0, C.Ir)(em, R, M) && !el, eD = Q || J && !eP, eL = null != (u = g.LW.useStore().bottomPosition) ? u : 0, ex = (null != (h = null == (A = ev.current) ? true : A.getBoundingClientRect().bottom) ? h : 0) + 50 > eL ? "top" : "bottom", [eM, ej] = i.useState(false), ek = i.useCallback(() => {
+  } = i.useContext(m.x), ev = i.useRef(null), eA = Z(R.soundId, ev.current), eI = (0, l.bG)([_.A], () => _.A.useReducedMotion), eS = i.useRef(B), eT = i.useRef(new c.IX), eC = R.soundId === V, eN = "sound-".concat(R.soundId), ew = (0, s.rm)(eN), eR = null != e_ || null != eh, eP = !(0, C.Ir)(em, R, M) && !el, eD = Q || J && !eP, eL = null != (u = g.LW.useStore().bottomPosition) ? u : 0, ex = (null != (h = null == (A = ev.current) ? true : A.getBoundingClientRect().bottom) ? h : 0) + 50 > eL ? "top" : "bottom", [eM, ej] = i.useState(false), ek = i.useCallback(() => {
     ej(true)
   }, []), eU = i.useCallback(() => {
     ej(false)
   }, []), eG = eP && ei;
 
-  function eV() {
+  function eF() {
     $ || eE(en)
   }
 
-  function eF(e) {
+  function eV(e) {
     (eC && !eI && (eS.current = Math.min(eS.current + Y, H), Math.random() < eS.current && eO(eA.x, eA.y, true, true, {
       sprite: P.dR
-    })), null != et) ? et(e): eV()
+    })), null != et) ? et(e): eF()
   }
   let eB = (0, r.jsx)("div", {
       onMouseEnter: ek,
@@ -374,9 +374,9 @@ let Q = Chunk64700.forwardRef(function(e, t) {
           [x.Au]: eP && !Q,
           [x.fx]: !X && Q,
           [x.in]: X && K
-        }, V),
+        }, F),
         onClick: e => {
-          null == eF || eF(e)
+          null == eV || eV(e)
         },
         onContextMenu: J && !eP ? eg : true,
         children: [(0, r.jsxs)("div", {

@@ -77,7 +77,7 @@ function G(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     activeStatus: n,
@@ -91,8 +91,8 @@ function V(e) {
     onClose: j,
     onHover: U
   } = e, {
-    analyticsLocations: V
-  } = (0, _.Ay)(), F = n !== w.b_.INACTIVE, B = (0, A.A)(t), H = (0, u.bG)([E.default], () => E.default.getCurrentUser()), Y = i.useRef(null), [W, K] = i.useState(false), [z, q] = i.useState(false), Z = z, Q = i.useCallback(() => {
+    analyticsLocations: F
+  } = (0, _.Ay)(), V = n !== w.b_.INACTIVE, B = (0, A.A)(t), H = (0, u.bG)([E.default], () => E.default.getCurrentUser()), Y = i.useRef(null), [W, K] = i.useState(false), [z, q] = i.useState(false), Z = z, Q = i.useCallback(() => {
     let e = g.A.getGuild(t);
     null != e && (0, h.g)({
       analyticsLocation: {
@@ -100,10 +100,10 @@ function V(e) {
         section: R.JJy.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: V,
+      analyticsLocations: F,
       guild: e
     })
-  }, [t, V]), X = i.useCallback(() => {
+  }, [t, F]), X = i.useCallback(() => {
     j(), (0, T.A)(t, p.A.GUILD_POWERUPS_MARKETING, I)
   }, [t, I, j]), J = {
     tension: 400,
@@ -171,7 +171,7 @@ function V(e) {
           quantity: b,
           decorator: null != O ? O : ""
         }),
-        isEnabled: F
+        isEnabled: V
       }), (0, r.jsxs)(s.animated.div, {
         style: en,
         className: M.NC,
@@ -209,7 +209,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     powerup: n,
@@ -217,7 +217,7 @@ function F(e) {
     isNew: o,
     onClose: s
   } = e, [l, c] = i.useState(false), u = (0, S.Ay)(t, n).type, d = (0, v.A)(n, l);
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     guildId: t,
     activeStatus: u,
     title: n.title,
@@ -259,7 +259,7 @@ let B = 3,
         })
       }), (0, r.jsx)("div", {
         className: x.DO,
-        children: s.map(e => (0, r.jsx)(F, {
+        children: s.map(e => (0, r.jsx)(V, {
           guildId: n.id,
           powerup: e,
           costDecorator: Y.get(e.skuId),

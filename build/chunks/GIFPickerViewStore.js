@@ -133,7 +133,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     query: t
   } = e;
@@ -141,7 +141,7 @@ function V(e) {
   w = t, R = []
 }
 
-function F(e) {
+function V(e) {
   let t = e.trendingCategories;
   P = [...null != e.trendingGIFPreview ? [{
     type: s.dD.TRENDING_GIFS,
@@ -199,8 +199,8 @@ let W = new Y(Chunk73153.h, {
   GIF_PICKER_INITIALIZE: x,
   GIF_PICKER_QUERY: M,
   GIF_PICKER_QUERY_SUCCESS: G,
-  GIF_PICKER_QUERY_FAILURE: V,
-  GIF_PICKER_TRENDING_FETCH_SUCCESS: F,
+  GIF_PICKER_QUERY_FAILURE: F,
+  GIF_PICKER_TRENDING_FETCH_SUCCESS: V,
   GIF_PICKER_SUGGESTIONS_SUCCESS: B,
   GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: H
 })

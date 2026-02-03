@@ -77,11 +77,11 @@ let m = "x-science-test",
   U = null,
   G = null;
 
-function V() {
+function F() {
   C = 0, N = 0, w = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, P = Date.now(), R = T
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
@@ -135,17 +135,17 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function $() {
       if (K = null, !X()) return Promise.resolve();
       let e = W.slice();
-      W = [], D = F(D);
+      W = [], D = V(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = F(M, t);
+      L = Math.min(L, t), x = Math.max(x, t), M = V(M, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
-        }), N = F(N)
+        }), N = V(N)
       }, t => {
-        W.unshift(...e), w = F(w);
+        W.unshift(...e), w = V(w);
         let {
           message: n
         } = t.body || t;
@@ -201,7 +201,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           launch_signature: Z()
         }
       };
-      return V(), ee([e], d.mX.CLIENT_TELEMETRY)
+      return F(), ee([e], d.mX.CLIENT_TELEMETRY)
     }
 
     function en() {
@@ -276,7 +276,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         }, l = Q(s);
         if (null != l && (s.properties.client_uuid = H.generate(l)), W.push(s), W.length > E) {
           let e = W.length - E;
-          C = F(C, e), W = W.slice(-E)
+          C = V(C, e), W = W.slice(-E)
         }
         r ? J({
           shouldFlushOnNextTick: true

@@ -116,8 +116,8 @@ let T = Chunk64700.forwardRef((e, t) => {
           style: w(n, o)
         })
       },
-      renderAccessory: V,
-      onClick: F,
+      renderAccessory: F,
+      onClick: V,
       tabIndex: B,
       dataSafeSrc: H,
       useFullWidth: Y = false,
@@ -155,7 +155,7 @@ let T = Chunk64700.forwardRef((e, t) => {
     placeholderStyle: w(Q, x),
     children: n
   });
-  let J = null != V ? V() : null;
+  let J = null != F ? F() : null;
   return J = null != J ? J : j, (0, r.jsx)(l.vN3, {
     ringTarget: q,
     focusTarget: Z,
@@ -164,23 +164,23 @@ let T = Chunk64700.forwardRef((e, t) => {
       className: o()("imageWrapper", g.h4, {
         [g.j3]: k,
         [g.LF]: h !== _.Rv1.READY,
-        [g.vk]: null != F
+        [g.vk]: null != V
       }, c),
       style: N(Q, M, Y, x)
     }, K), {
       children: [null != U && (0, r.jsx)("a", {
         tabIndex: false,
-        onClick: F,
+        onClick: V,
         "aria-hidden": true,
         className: g.mt,
         href: U,
         ref: q,
         "data-role": "img",
         "data-safe-src": null != H ? H : E
-      }), null != F ? (0, r.jsx)(l.DUT, {
+      }), null != V ? (0, r.jsx)(l.DUT, {
         className: g.w8,
         tabIndex: null != B ? B : 0,
-        onClick: F,
+        onClick: V,
         "aria-label": null != v ? v : m.intl.string(m.t.X4IxWL),
         "aria-describedby": u.l2,
         innerRef: Z,

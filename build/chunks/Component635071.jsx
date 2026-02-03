@@ -107,8 +107,8 @@ function j(e) {
     hideGuildTag: k = false,
     hideSystemTag: U = false,
     className: G,
-    onClick: V,
-    onContextMenu: F,
+    onClick: F,
+    onContextMenu: V,
     onPopoutRequestClose: B,
     renderPopout: H,
     decorations: Y,
@@ -156,14 +156,14 @@ function j(e) {
       [N.IW]: "username" === er && null != $
     }),
     style: eg(),
-    onClick: V,
-    onContextMenu: F,
+    onClick: F,
+    onContextMenu: V,
     children: e_ ? (0, r.jsx)(m.A, {
       userName: eE,
       displayNameStyles: en,
       effectDisplayType: ed ? h.G.ANIMATED : h.G.PLAIN,
       loop: true,
-      shouldUnderlineOnHover: null != V
+      shouldUnderlineOnHover: null != F
     }) : eE,
     "data-text": X + J
   }, eb = i.useMemo(() => x && !k ? (0, r.jsx)(y.Ay, {

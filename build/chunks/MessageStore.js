@@ -75,7 +75,7 @@ function G() {
   returntrue
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t,
     truncateBottom: n,
@@ -86,7 +86,7 @@ function V(e) {
   i = i.truncate(n, r), u.A.commit(i)
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t
   } = e;
@@ -450,8 +450,8 @@ let em = new eh(Chunk73153.h, {
   LOAD_MESSAGES_SUCCESS_CACHED: B,
   LOCAL_MESSAGES_LOADED: ep,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
-  TRUNCATE_MESSAGES: V,
-  CLEAR_MESSAGES: F,
+  TRUNCATE_MESSAGES: F,
+  CLEAR_MESSAGES: V,
   MESSAGE_CREATE: z,
   MESSAGE_SEND_FAILED: q,
   MESSAGE_SEND_FAILED_AUTOMOD: el,

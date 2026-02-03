@@ -49,7 +49,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function V(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,7 +74,7 @@ function F(e, t) {
 }
 
 function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ function en(e) {
 }
 
 function er(e) {
-  return null == X[e] && (X = B(V({}, X), {
+  return null == X[e] && (X = B(F({}, X), {
     [e]: new T.A({
       name: e
     })
@@ -109,7 +109,7 @@ function er(e) {
 }
 
 function ei(e) {
-  return null == J[e] && (J = B(V({}, J), {
+  return null == J[e] && (J = B(F({}, J), {
     [e]: new S.A({
       url: e
     })
@@ -223,14 +223,14 @@ function ef(e, t, n) {
   }
   let U = 1 === f.length,
     G = [],
-    V = new Set,
-    F = new Set;
+    F = new Set,
+    V = new Set;
   for (let e of s) {
     let t = el(e.id),
       n = N.A.getChannel(t),
       i = null != n ? n.getGuildId() : null,
       o = P.A.getGuild(i);
-    if (F.has(i) && V.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
+    if (V.has(i) && F.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
       let e = j.A.getVoiceStatesForChannel(n.id),
         l = (0, v.Y1)("NowPlayingViewStore - voiceMembers"),
@@ -246,7 +246,7 @@ function ef(e, t, n) {
         } = e;
         return M.default.getUser(t)
       }).filter(k.Vq).orderBy([c], ["desc"]).value();
-      u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? F.has(i) || (r = null) : (r = o, U = true), F.add(i), V.add(t), G.push({
+      u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? V.has(i) || (r = null) : (r = o, U = true), V.add(i), F.add(t), G.push({
         channel: n,
         guild: o,
         members: u,

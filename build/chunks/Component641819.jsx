@@ -32,45 +32,45 @@ function A(e) {
     selectedPlan: i,
     selectedSkuId: A,
     step: O
-  } = (0, j.P5)(), {
-    setSelectedGiftingPromotionReward: b,
-    selectedGiftingPromotionReward: y,
-    claimableRewards: I
-  } = (0, f.Pv)(), _ = (0, a.bG)([g.default], () => g.default.getCurrentUser()), v = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), C = (0, d.UY)(I, y), [N, M] = r.useState(C), [R, k] = r.useState(false);
+  } = (0, P.P5)(), {
+    setSelectedGiftingPromotionReward: S,
+    selectedGiftingPromotionReward: I,
+    claimableRewards: b
+  } = (0, f.Pv)(), y = (0, a.bG)([E.default], () => E.default.getCurrentUser()), v = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, d.UY)(b, I), [C, M] = r.useState(R), [N, k] = r.useState(false);
   r.useEffect(() => {
-    R || null != y || null == C || (b(C), M(C))
-  }, [C, R, y, b]), s()(null != i, "Expected plan to selected"), s()(null != A, "Expected selectedSkuId"), s()(null != O, "Step should be set");
-  let w = r.useMemo(() => null != N && (null != I ? I : []).includes(N), [N, I]),
-    D = r.useMemo(() => 0 === v.length || null == N || !w, [v, N, w]);
+    N || null != I || null == R || (S(R), M(R))
+  }, [R, N, I, S]), s()(null != i, "Expected plan to selected"), s()(null != A, "Expected selectedSkuId"), s()(null != O, "Step should be set");
+  let w = r.useMemo(() => null != C && (null != b ? b : []).includes(C), [C, b]),
+    D = r.useMemo(() => 0 === v.length || null == C || !w, [v, C, w]);
   r.useEffect(() => {
     if (0 === v.length) {
-      M(true), b(true);
+      M(true), S(true);
       return
     }
-    null != N && w && v.includes(N) || null == N || (M(true), b(true))
-  }, [v, w, N, b]);
-  let L = e => {
-      b(e), M(e), k(true)
+    null != C && w && v.includes(C) || null == C || (M(true), S(true))
+  }, [v, w, C, S]);
+  let U = e => {
+      S(e), M(e), k(true)
     },
-    G = v.map(e => (0, l.jsx)(u.k, {
+    L = v.map(e => (0, l.jsx)(u.k, {
       skuId: e,
-      claimed: null != I && !I.includes(e),
-      user: _,
-      onSelect: L,
-      selectedSkuId: N
+      claimed: null != b && !b.includes(e),
+      user: y,
+      onSelect: U,
+      selectedSkuId: C
     }, e)),
-    U = (0, l.jsx)(x.UX, {
+    G = (0, l.jsx)(h.UX, {
       children: (0, l.jsx)(o.jlY, {
         "data-migration-pending": true,
-        className: S.Hx,
+        className: T.Hx,
         children: (0, l.jsx)(m.Z3, {
           onStepChange: e => {
-            null != _ && null != y && E.default.track(P.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: _.id,
-              reward_sku_id: y
+            null != y && null != I && g.default.track(_.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: y.id,
+              reward_sku_id: I
             }), n(e)
           },
-          onBackClick: () => n(h.pn.PLAN_SELECT),
+          onBackClick: () => n(j.pn.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [i.id],
@@ -82,22 +82,22 @@ function A(e) {
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(o.rQ0, {
       "data-migration-pending": true,
-      className: S.Hc,
+      className: T.Hc,
       direction: c.A.Direction.VERTICAL,
       align: c.A.Align.START,
       separator: false,
       children: [(0, l.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: T.intl.string(T.t.OEtqpm)
+        children: x.intl.string(x.t.OEtqpm)
       }), (0, l.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
-        className: S.GQ,
-        children: T.intl.string(T.t.h2nMp0)
+        className: T.GQ,
+        children: x.intl.string(x.t.h2nMp0)
       }), (0, l.jsx)(o.s_y, {
         "data-migration-pending": true,
-        className: S.b,
+        className: T.b,
         onClick: t
       })]
     }), (0, l.jsx)(o.$mQ, {
@@ -107,10 +107,10 @@ function A(e) {
         justify: "center",
         align: "center",
         children: (0, l.jsx)("div", {
-          className: S.Dq,
-          children: G
+          className: T.Dq,
+          children: L
         })
       })
-    }), U]
+    }), G]
   })
 }

@@ -1019,25 +1019,25 @@ class U extends Chunk324281.G {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.iosVersion = F.internalBinaryRead(e, e.uint32(), n, a.iosVersion);
+          a.iosVersion = V.internalBinaryRead(e, e.uint32(), n, a.iosVersion);
           break;
         case 2:
-          a.androidVersion = F.internalBinaryRead(e, e.uint32(), n, a.androidVersion);
+          a.androidVersion = V.internalBinaryRead(e, e.uint32(), n, a.androidVersion);
           break;
         case 3:
-          a.macosVersion = F.internalBinaryRead(e, e.uint32(), n, a.macosVersion);
+          a.macosVersion = V.internalBinaryRead(e, e.uint32(), n, a.macosVersion);
           break;
         case 4:
-          a.windowsVersion = F.internalBinaryRead(e, e.uint32(), n, a.windowsVersion);
+          a.windowsVersion = V.internalBinaryRead(e, e.uint32(), n, a.windowsVersion);
           break;
         case 5:
-          a.playstationVersion = F.internalBinaryRead(e, e.uint32(), n, a.playstationVersion);
+          a.playstationVersion = V.internalBinaryRead(e, e.uint32(), n, a.playstationVersion);
           break;
         case 6:
-          a.xboxVersion = F.internalBinaryRead(e, e.uint32(), n, a.xboxVersion);
+          a.xboxVersion = V.internalBinaryRead(e, e.uint32(), n, a.xboxVersion);
           break;
         case 7:
-          a.linuxVersion = F.internalBinaryRead(e, e.uint32(), n, a.linuxVersion);
+          a.linuxVersion = V.internalBinaryRead(e, e.uint32(), n, a.linuxVersion);
           break;
         default:
           let o = n.readUnknownField;
@@ -1049,7 +1049,7 @@ class U extends Chunk324281.G {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.iosVersion && F.internalBinaryWrite(e.iosVersion, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.androidVersion && F.internalBinaryWrite(e.androidVersion, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.macosVersion && F.internalBinaryWrite(e.macosVersion, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), e.windowsVersion && F.internalBinaryWrite(e.windowsVersion, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.playstationVersion && F.internalBinaryWrite(e.playstationVersion, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.xboxVersion && F.internalBinaryWrite(e.xboxVersion, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.linuxVersion && F.internalBinaryWrite(e.linuxVersion, t.tag(7, r.O0.LengthDelimited).fork(), n).join();
+    e.iosVersion && V.internalBinaryWrite(e.iosVersion, t.tag(1, r.O0.LengthDelimited).fork(), n).join(), e.androidVersion && V.internalBinaryWrite(e.androidVersion, t.tag(2, r.O0.LengthDelimited).fork(), n).join(), e.macosVersion && V.internalBinaryWrite(e.macosVersion, t.tag(3, r.O0.LengthDelimited).fork(), n).join(), e.windowsVersion && V.internalBinaryWrite(e.windowsVersion, t.tag(4, r.O0.LengthDelimited).fork(), n).join(), e.playstationVersion && V.internalBinaryWrite(e.playstationVersion, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), e.xboxVersion && V.internalBinaryWrite(e.xboxVersion, t.tag(6, r.O0.LengthDelimited).fork(), n).join(), e.linuxVersion && V.internalBinaryWrite(e.linuxVersion, t.tag(7, r.O0.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.f$.onWrite : i)(this.typeName, e, t), t
   }
@@ -1058,44 +1058,44 @@ class U extends Chunk324281.G {
       no: 1,
       name: "ios_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }, {
       no: 2,
       name: "android_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }, {
       no: 3,
       name: "macos_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }, {
       no: 4,
       name: "windows_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }, {
       no: 5,
       name: "playstation_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }, {
       no: 6,
       name: "xbox_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }, {
       no: 7,
       name: "linux_version",
       kind: "message",
-      T: () => F
+      T: () => V
     }], {
       "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
     })
   }
 }
 let G = new U;
-class V extends Chunk324281.G {
+class F extends Chunk324281.G {
   create(e) {
     let t = {
       ranges: [],
@@ -1148,7 +1148,7 @@ class V extends Chunk324281.G {
     }])
   }
 }
-let F = new V;
+let V = new F;
 class B extends Chunk324281.G {
   create(e) {
     let t = {};

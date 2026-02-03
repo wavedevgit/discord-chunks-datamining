@@ -153,7 +153,7 @@ let j = {
       }))
     }
   }),
-  V = e => ({
+  F = e => ({
     name: "line1",
     id: w,
     title: () => p.intl.string(p.t.x0beVT),
@@ -162,7 +162,7 @@ let j = {
     getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? _.c6 : _.bt,
     renderInput: e => (0, i.jsx)(c.ksK, m({}, e))
   }),
-  F = e => ({
+  V = e => ({
     name: "line2",
     id: R,
     title: () => p.intl.string(p.t.i2Z0gI),
@@ -308,15 +308,15 @@ let j = {
   W = {
     modalUS: [
       [G],
-      [V],
       [F],
+      [V],
       [B],
       [Y, H]
     ],
     modalInternational: [
       [G],
-      [V],
       [F],
+      [V],
       [B],
       [Y],
       [H]
@@ -324,30 +324,30 @@ let j = {
     modalUSWithName: [
       [G],
       [U],
-      [V],
       [F],
+      [V],
       [B],
       [Y, H]
     ],
     modalInternationalWithName: [
       [G],
       [U],
-      [V],
       [F],
+      [V],
       [B],
       [Y],
       [H]
     ],
     settingsUS: [
       [U],
-      [V, F],
+      [F, V],
       [B, Y, H],
       [G]
     ],
     settingsUSMobile: [
       [U],
-      [V],
       [F],
+      [V],
       [B],
       [Y],
       [H],
@@ -355,29 +355,29 @@ let j = {
     ],
     settingsInternational: [
       [U],
-      [V, F],
+      [F, V],
       [B],
       [Y, H],
       [G]
     ],
     settingsInternationalMobile: [
       [U],
-      [V],
       [F],
+      [V],
       [B],
       [Y],
       [H],
       [G]
     ],
     settingsInternationalWithoutName: [
-      [V, F],
+      [F, V],
       [B],
       [Y, H],
       [G]
     ],
     settingsInternationalWithoutNameMobile: [
-      [V],
       [F],
+      [V],
       [B],
       [Y],
       [H],

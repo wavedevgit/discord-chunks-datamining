@@ -40,7 +40,7 @@ function I(e) {
     requestId: N,
     entries: w,
     impressionCappedEntryIds: R
-  } = (0, h.A)(I), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), L = (0, i.bG)([s.A], () => s.A.getChannel(I)), x = (0, i.bG)([l.A], () => l.A.getGuild(S), [S]), M = (0, p.T)(x), j = null != M && M && (null == L ? true : L.isForumChannel()) === false, [k, U, G, V] = r.useMemo(() => {
+  } = (0, h.A)(I), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), L = (0, i.bG)([s.A], () => s.A.getChannel(I)), x = (0, i.bG)([l.A], () => l.A.getGuild(S), [S]), M = (0, p.T)(x), j = null != M && M && (null == L ? true : L.isForumChannel()) === false, [k, U, G, F] = r.useMemo(() => {
     let e;
     if (null == w || 0 === w.length || null == N || !j) return [t, n, v];
     let r = O,
@@ -79,25 +79,25 @@ function I(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [I, w, T, t, S, N, n, v, P, j]), F = r.useRef(0), B = r.useRef(w), H = r.useRef(true), Y = r.useRef({
+  }, [I, w, T, t, S, N, n, v, P, j]), V = r.useRef(0), B = r.useRef(w), H = r.useRef(true), Y = r.useRef({
     impressionCappedEntryIds: R
   }), W = r.useCallback(e => {
     var t;
     let n = Math.floor(e / m.bG),
-      r = Math.min(null != (t = null == V ? true : V.length) ? t : 0, n);
-    F.current = Math.max(F.current, r)
-  }, [V]);
+      r = Math.min(null != (t = null == F ? true : F.length) ? t : 0, n);
+    V.current = Math.max(V.current, r)
+  }, [F]);
   return r.useEffect(() => {
     B.current = w
   }, [w]), r.useEffect(() => {
     Y.current = {
       impressionCappedEntryIds: R
     }
-  }, [R]), r.useEffect(() => (F.current = 0, H.current = Date.now(), () => {
+  }, [R]), r.useEffect(() => (V.current = 0, H.current = Date.now(), () => {
     var e, t;
     if (null == N || null == H.current || Date.now() - H.current < A) return;
     let n = null != (e = null == (t = B.current) ? true : t.map(e => e.id)) ? e : [],
-      r = n.slice(0, F.current);
+      r = n.slice(0, V.current);
     !P && D && j && ((0, _.D)(y.HAw.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: N,
       first_shown_at: H.current,

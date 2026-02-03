@@ -124,11 +124,11 @@ function G() {
   }
 }
 
-function V(e) {
+function F(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
-function F() {
+function V() {
   return Array.from(P).some(e => !N.lastShownFriendsListGiftIntents.includes(e))
 }
 
@@ -277,11 +277,11 @@ class el extends(r = Chunk311907.Ay.PersistedStore) {
     return e.filter(e => t - e <= b).length >= A
   }
   canShowFriendsTabBadge() {
-    return F()
+    return V()
   }
   getFriendAnniversaryYears(e) {
     let t = D[e];
-    return null == t ? 0 : V(t.friendsSince)
+    return null == t ? 0 : F(t.friendsSince)
   }
   canShowProfilePopoutGiftIntents(e) {
     return null == N.profilePopoutGiftIntentsDismissMap[e] && null != D[e]

@@ -39,7 +39,7 @@ let C = {
   N = Chunk306827.A;
 
 function w(e, t = {}) {
-  return R(e) ? (t.async = true, P(e, t).then(e => V(e, t))) : U(e) ? (t.async = true, G(e).then(e => V(e, t))) : V(e, t)
+  return R(e) ? (t.async = true, P(e, t).then(e => F(e, t))) : U(e) ? (t.async = true, G(e).then(e => F(e, t))) : F(e, t)
 }
 
 function R(e) {
@@ -130,11 +130,11 @@ function G(e) {
   })
 }
 
-function V(e, t) {
-  return F(e) && (e = new Uint8Array(e).buffer), H(B(e), t)
+function F(e, t) {
+  return V(e) && (e = new Uint8Array(e).buffer), H(B(e), t)
 }
 
-function F(e) {
+function V(e) {
   try {
     return T.isBuffer(e)
   } catch (e) {
@@ -176,8 +176,8 @@ function H(e, {
       pngHeaderOffset: k,
       pngTextChunks: U,
       pngChunkOffsets: G,
-      vp8xChunkOffset: V,
-      gifHeaderOffset: F
+      vp8xChunkOffset: F,
+      gifHeaderOffset: V
     } = s.A.parseAppMarkers(e, n);
   if (a.A.USE_JPEG && a.A.USE_FILE && Y(R)) {
     T = true;
@@ -265,14 +265,14 @@ function H(e, {
     let n = b.A.read(e, G);
     t ? C.png = C.png ? (0, r.dP)({}, C.png, n) : n : C = (0, r.dP)({}, C, n)
   }
-  if (a.A.USE_WEBP && er(V)) {
+  if (a.A.USE_WEBP && er(F)) {
     T = true;
-    let n = O.A.read(e, V);
+    let n = O.A.read(e, F);
     t ? C.riff = C.riff ? (0, r.dP)({}, C.riff, n) : n : C = (0, r.dP)({}, C, n)
   }
-  if (a.A.USE_GIF && ei(F)) {
+  if (a.A.USE_GIF && ei(V)) {
     T = true;
-    let n = v.A.read(e, F);
+    let n = v.A.read(e, V);
     t ? C.gif = C.gif ? (0, r.dP)({}, C.gif, n) : n : C = (0, r.dP)({}, C, n)
   }
   let B = I.A.get(C, t);

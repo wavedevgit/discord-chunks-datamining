@@ -47,8 +47,8 @@ let R = new Chunk626584.A("AuthenticationStore"),
   k = null,
   U = null,
   G = null,
-  V = null,
   F = null,
+  V = null,
   B = Chunk652215.aUe.NONE,
   H = false,
   Y = [],
@@ -75,7 +75,7 @@ function et(e) {
 function en() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  if (U = u.w.get(P), V = null != (e = u.w.get(D)) ? e : null, null != Q) return Q;
+  if (U = u.w.get(P), F = null != (e = u.w.get(D)) ? e : null, null != Q) return Q;
   let n = null != U ? U : o.getToken();
   !(0, y.m)() || !t && null != n || S.A.isHandoffAvailable() || er({
     withGuildExperiments: true
@@ -86,7 +86,7 @@ function er(e) {
   let {
     withGuildExperiments: t
   } = e, n = {}, r = v.default.getSuperPropertiesBase64();
-  null != r && (n["X-Super-Properties"] = r), null != U && (n["X-Fingerprint"] = U), null != V && (n["X-Installation-ID"] = V), Q = c.Bo.get({
+  null != r && (n["X-Super-Properties"] = r), null != U && (n["X-Fingerprint"] = U), null != F && (n["X-Installation-ID"] = F), Q = c.Bo.get({
     url: C.Rsh.EXPERIMENTS,
     query: {
       with_guild_experiments: t
@@ -129,7 +129,7 @@ function ea(e, t) {
 }
 
 function eo(e) {
-  F = e, o.setAnalyticsToken(e)
+  V = e, o.setAnalyticsToken(e)
 }
 
 function es() {
@@ -240,8 +240,8 @@ function eA(e) {
   let {
     installation: t
   } = e;
-  if (null != V && V.length > 0) returnfalse;
-  V = t, b.A.canUseInstallationId() && u.w.set(D, t)
+  if (null != F && F.length > 0) returnfalse;
+  F = t, b.A.canUseInstallationId() && u.w.set(D, t)
 }
 
 function eI(e) {
@@ -276,7 +276,7 @@ function eT(e) {
     analyticsToken: i,
     token: a
   } = e;
-  I.A.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, O.A)(n)), M = r, F = i, ea(a, n.id), null != i && eo(i), ei(), x = n.id, u.w.set(L, n.id)
+  I.A.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, O.A)(n)), M = r, V = i, ea(a, n.id), null != i && eo(i), ei(), x = n.id, u.w.set(L, n.id)
 }
 
 function eC(e) {
@@ -352,7 +352,7 @@ function ej() {
 class ek extends(a = Chunk311907.Ay.Store) {
   initialize() {
     var e;
-    x = u.w.get(L), V = null != (e = u.w.get(D)) ? e : null, null == o.getToken() && (en(), (null == V || 0 === V.length) && (0, E.Tv)(null)), this.addChangeListener(() => (0, h.f)(x))
+    x = u.w.get(L), F = null != (e = u.w.get(D)) ? e : null, null == o.getToken() && (en(), (null == F || 0 === F.length) && (0, E.Tv)(null)), this.addChangeListener(() => (0, h.f)(x))
   }
   getLoginStatus() {
     return B
@@ -379,10 +379,10 @@ class ek extends(a = Chunk311907.Ay.Store) {
     return U
   }
   getInstallationForTracking() {
-    return b.A.canUseInstallationId() ? V : null
+    return b.A.canUseInstallationId() ? F : null
   }
   getAnalyticsToken() {
-    return null != F ? F : o.getAnalyticsToken()
+    return null != V ? V : o.getAnalyticsToken()
   }
   getMFATicket() {
     return W
