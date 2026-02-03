@@ -497,7 +497,9 @@ class m extends Chunk324281.G {
       name: "personal_accounts",
       kind: "scalar",
       T: 8
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let g = new m;
@@ -545,7 +547,9 @@ class E extends Chunk324281.G {
       kind: "scalar",
       repeat: 1,
       T: 6
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let y = new E;
@@ -593,7 +597,9 @@ class b extends Chunk324281.G {
       kind: "scalar",
       repeat: 1,
       T: 6
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let O = new b;
@@ -634,7 +640,9 @@ class v extends Chunk324281.G {
       kind: "scalar",
       repeat: 2,
       T: 9
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let A = new v;
@@ -675,7 +683,9 @@ class I extends Chunk324281.G {
       kind: "scalar",
       repeat: 2,
       T: 9
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let S = new I;
@@ -716,7 +726,9 @@ class T extends Chunk324281.G {
       kind: "scalar",
       repeat: 2,
       T: 9
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let C = new T;
@@ -757,7 +769,9 @@ class N extends Chunk324281.G {
       kind: "message",
       repeat: 1,
       T: () => M
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let w = new N;
@@ -984,7 +998,9 @@ class j extends Chunk324281.G {
       kind: "scalar",
       repeat: 2,
       T: 9
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let k = new j;
@@ -1073,7 +1089,9 @@ class U extends Chunk324281.G {
       name: "linux_version",
       kind: "message",
       T: () => F
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let G = new U;
@@ -1350,7 +1368,9 @@ class q extends Chunk324281.G {
       name: "client_required_changes",
       kind: "message",
       T: () => ea
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let Z = new q;
@@ -1664,7 +1684,9 @@ class eo extends Chunk324281.G {
       name: "is_bot",
       kind: "scalar",
       T: 8
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let es = new eo;
@@ -1713,7 +1735,9 @@ class el extends Chunk324281.G {
       name: "max_age_years",
       kind: "message",
       T: () => s.ZQ
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let ec = new el;
@@ -1802,7 +1826,9 @@ class ef extends Chunk324281.G {
       name: "max_id",
       kind: "message",
       T: () => ed
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let ep = new ef;
@@ -1842,7 +1868,9 @@ class e_ extends Chunk324281.G {
       name: "mask",
       kind: "scalar",
       T: 6
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let eh = new e_;
@@ -1903,7 +1931,9 @@ class em extends Chunk324281.G {
       name: "start_ring_position",
       kind: "scalar",
       T: 13
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY"
+    })
   }
 }
 let eg = new em;
@@ -1944,7 +1974,9 @@ class eE extends Chunk324281.G {
       kind: "scalar",
       repeat: 2,
       T: 9
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT"
+    })
   }
 }
 let ey = new eE;
@@ -1984,7 +2016,9 @@ class eb extends Chunk324281.G {
       name: "value",
       kind: "scalar",
       T: 8
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY"
+    })
   }
 }
 let eO = new eb;
@@ -2043,7 +2077,9 @@ class ev extends Chunk324281.G {
       kind: "scalar",
       repeat: 1,
       T: 5
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY"
+    })
   }
 }
 let eA = new ev;
@@ -2091,7 +2127,9 @@ class eI extends Chunk324281.G {
       kind: "scalar",
       repeat: 1,
       T: 5
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER"
+    })
   }
 }
 let eS = new eI;
@@ -2150,7 +2188,9 @@ class eT extends Chunk324281.G {
       kind: "scalar",
       repeat: 1,
       T: 6
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY"
+    })
   }
 }
 let eC = new eT;
@@ -2198,7 +2238,9 @@ class eN extends Chunk324281.G {
       kind: "scalar",
       repeat: 1,
       T: 6
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD"
+    })
   }
 }
 let ew = new eN;
@@ -2247,7 +2289,9 @@ class eR extends Chunk324281.G {
       name: "max_count",
       kind: "message",
       T: () => s.ZQ
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD"
+    })
   }
 }
 let eP = new eR;
@@ -2288,7 +2332,9 @@ class eD extends Chunk324281.G {
       kind: "scalar",
       repeat: 2,
       T: 9
-    }])
+    }], {
+      "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD"
+    })
   }
 }
 let eL = new eD
