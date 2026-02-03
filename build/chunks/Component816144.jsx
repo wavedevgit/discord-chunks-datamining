@@ -47,7 +47,7 @@ function F(e) {
     channel: n
   } = e, r = t && (0, h.Ae)(n), a = (0, i.bG)([y.Ay], () => null != n.guild_id && n === y.Ay.getDefaultChannel(n.guild_id), [n]);
   if ((0, p.A)(n.id)) return null;
-  if (n.isForumPost()) return (0, l.jsx)(S.A, {
+  if (n.isForumPost()) return (0, l.jsx)(x.A, {
     channel: n
   });
   if (b.Le.has(n.type)) return (0, l.jsx)(R.A, {
@@ -71,7 +71,7 @@ function H(e) {
     showingBanner: h
   } = e, p = (0, d.Ay)(n), {
     type: b
-  } = n, y = (0, i.bG)([E.default], () => n.isPrivate() ? E.default.getUser(n.getRecipientId()) : null), S = O.Ay.useUserTag(y), {
+  } = n, y = (0, i.bG)([E.default], () => n.isPrivate() ? E.default.getUser(n.getRecipientId()) : null), x = O.Ay.useUserTag(y), {
     canManageRoles: P,
     canReadMessageHistory: w
   } = (0, i.cf)([v.A], () => ({
@@ -125,7 +125,7 @@ function H(e) {
       children: [null != y && !y.isProvisional && (0, l.jsx)(a.Heading, {
         variant: "heading-xl/medium",
         className: G.SX,
-        children: S
+        children: x
       }), k.intl.format(k.t["Qvg+6+"], {
         username: p
       }), (null == y ? true : y.isProvisional) && (0, l.jsx)(m.Y, {
@@ -134,13 +134,13 @@ function H(e) {
     })
   }
   if (n.isMultiUserDM())
-    if (n.isManaged()) return (0, l.jsxs)(x.Ay, {
+    if (n.isManaged()) return (0, l.jsxs)(S.Ay, {
       channelId: n.id,
-      children: [(0, l.jsx)(x.cr, {
+      children: [(0, l.jsx)(S.cr, {
         children: k.intl.format(k.t.I3R7Vn, {
           channelName: p
         })
-      }), (0, l.jsx)(x.j1, {
+      }), (0, l.jsx)(S.j1, {
         children: k.intl.string(k.t.M8Ao6I)
       })]
     });
@@ -156,9 +156,9 @@ function H(e) {
   return w ? (0, l.jsx)(F, {
     channel: n,
     canManageRoles: P
-  }) : (0, l.jsx)(x.Ay, {
+  }) : (0, l.jsx)(S.Ay, {
     channelId: n.id,
-    children: (0, l.jsx)(x.j1, {
+    children: (0, l.jsx)(S.j1, {
       children: k.intl.format(k.t.hPVEQG, {
         channelName: p
       })

@@ -58,14 +58,14 @@ function v(e) {
     popoutType: n
   } = e, {
     reducedMotion: v
-  } = r.useContext(s.CZ), E = (0, r.useRef)(null), O = h.K.getState().clipsButtonRef, C = (0, p._z)(t), x = (0, a.bG)([u.A], () => u.A.getActiveAnimation()), S = (0, a.yK)([u.A], () => u.A.getStreamClipAnimations(C)), j = (0, r.useRef)(true);
+  } = r.useContext(s.CZ), E = (0, r.useRef)(null), O = h.K.getState().clipsButtonRef, C = (0, p._z)(t), S = (0, a.bG)([u.A], () => u.A.getActiveAnimation()), x = (0, a.yK)([u.A], () => u.A.getStreamClipAnimations(C)), j = (0, r.useRef)(true);
   r.useEffect(() => () => {
     (0, d.MI)(C)
   }, [C]);
   let I = e => {
       if (n !== c.N.NO_POPOUT) return A;
       let t = null == O ? true : O.getBoundingClientRect();
-      if (j.current = t, e.timestamp !== x || null == t) return A;
+      if (j.current = t, e.timestamp !== S || null == t) return A;
       let {
         top: l,
         left: r
@@ -78,7 +78,7 @@ function v(e) {
       }
     },
     T = (0, r.useRef)(null),
-    N = (0, o.pnh)(S, {
+    N = (0, o.pnh)(x, {
       keys: e => e.timestamp,
       ref: T,
       from: {
@@ -90,7 +90,7 @@ function v(e) {
       config: b
     }, "animate-always"),
     P = (0, r.useRef)(null),
-    w = (0, o.pnh)(S, {
+    w = (0, o.pnh)(x, {
       ref: P,
       keys: e => e.timestamp,
       from: e => g({
@@ -125,7 +125,7 @@ function v(e) {
       })())),
       config: v.enabled ? y : _,
       onRest: (e, t) => {
-        null != t.item && null != S.find(e => e.timestamp === t.item.timestamp) && (0, d.MI)(C, t.item.timestamp)
+        null != t.item && null != x.find(e => e.timestamp === t.item.timestamp) && (0, d.MI)(C, t.item.timestamp)
       }
     }, "animate-always");
   return (0, i.useChain)([T, P], [0, .1], 3e3), (0, l.jsxs)(l.Fragment, {

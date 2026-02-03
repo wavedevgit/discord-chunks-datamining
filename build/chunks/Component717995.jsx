@@ -2,8 +2,8 @@
 /** chunk id: 717995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => y
-});
+  R: () => b
+}), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
@@ -17,43 +17,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk112317 = require("./112317.jsx"),
   Chunk348275 = require("./348275.js"),
   Chunk894524 = require("./894524.js");
-let m = 11,
-  g = ["left", "center", "right"],
-  E = ["top", "center", "bottom"];
 
-function y(e) {
+function m(e, t, n) {
+  var r, i;
+  return null != (r = null != (i = null == e ? true : e.ownerDocument) ? i : null == t ? true : t.ownerDocument) ? r : null == n ? true : n.ownerDocument
+}
+let g = 11,
+  E = ["left", "center", "right"],
+  y = ["top", "center", "bottom"];
+
+function b(e) {
   let {
     isVisible: t,
     isRendered: n = t,
     targetElementRef: a,
-    targetElement: y,
-    anchorRef: b,
-    id: O,
-    content: v,
-    position: A = "top",
-    align: I = "center",
-    spacing: S = m,
-    caretConfig: T,
-    layerContext: C,
-    animationStyle: N,
-    positionKey: w
+    targetElement: b,
+    anchorRef: O,
+    id: v,
+    content: A,
+    position: I = "top",
+    align: S = "center",
+    spacing: T = g,
+    caretConfig: C,
+    layerContext: N,
+    animationStyle: w,
+    positionKey: R
   } = e, {
-    isRichTooltip: R
-  } = (0, p.w6)(), P = (0, u.D)("Tooltip"), D = i.useMemo(() => ("left" === A || "right" === A ? E : g).includes(I) ? I : "center", [A, I]);
+    isRichTooltip: P
+  } = (0, p.w6)(), D = (0, u.D)("Tooltip"), [L, x] = i.useState(null == b ? true : b.ownerDocument);
+  i.useLayoutEffect(() => {
+    x(m(null == O ? true : O.current, b, a.current))
+  }, [O, b, a]);
+  let M = i.useMemo(() => ("left" === I || "right" === I ? y : E).includes(S) ? S : "center", [I, S]);
   if (!n) return null;
-  let L = e => {
+  let j = e => {
     var t, n, i, a;
     let {
       position: l,
       nudge: c
-    } = e, u = null != l ? l : A, p = null != (t = null == T ? true : T.align) ? t : null != c && 0 !== c ? "custom" : "center", m = null != (n = null != (i = null == T ? true : T.customOffset) ? i : c) ? n : 0, g = {
-      position: null != (a = null == T ? true : T.position) ? a : (0, _.l8)(u),
+    } = e, u = null != l ? l : I, p = null != (t = null == C ? true : C.align) ? t : null != c && 0 !== c ? "custom" : "center", m = null != (n = null != (i = null == C ? true : C.customOffset) ? i : c) ? n : 0, g = {
+      position: null != (a = null == C ? true : C.position) ? a : (0, _.l8)(u),
       align: p,
       customOffset: "custom" === p ? m : true
     }, E = (0, r.jsxs)("div", {
-      id: O,
+      id: v,
       className: o()(h.YL, {
-        [h.mj]: R
+        [h.mj]: P
       }),
       role: "tooltip",
       "data-position": u,
@@ -62,33 +71,34 @@ function y(e) {
         caretConfig: g
       }), (0, r.jsx)("div", {
         className: h.rv,
-        children: "string" == typeof v ? (0, r.jsx)(d.Text, {
+        children: "string" == typeof A ? (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
-          children: v
-        }) : v
+          children: A
+        }) : A
       })]
     });
-    return N ? (0, r.jsx)(s.animated.div, {
-      style: N,
+    return w ? (0, r.jsx)(s.animated.div, {
+      style: w,
       children: E
     }) : E
   };
-  if (P) {
-    let e = (0, l.Pv)(A, I),
-      t = null != y ? y : a.current;
+  if (D) {
+    let e = (0, l.Pv)(I, S),
+      t = null != b ? b : a.current;
     return (0, r.jsx)(l.Ow, {
       className: h.BM,
       open: n,
-      spacing: S,
+      spacing: T,
       placement: e,
       reference: t,
+      ownerDocument: L,
       renderLayer: e => {
         var t;
         let {
           placement: n,
           shift: r
         } = e, i = -(null != (t = null == r ? true : r.x) ? t : 0);
-        return L({
+        return j({
           position: (0, l.$Y)(n),
           nudge: i
         })
@@ -96,18 +106,18 @@ function y(e) {
       children: () => null
     })
   }
-  let x = (0, r.jsx)(d.QCO, {
-    targetRef: null != b ? b : a,
-    position: A,
-    align: D,
-    spacing: S,
-    positionKey: w,
+  let k = (0, r.jsx)(d.QCO, {
+    targetRef: null != O ? O : a,
+    position: I,
+    align: M,
+    spacing: T,
+    positionKey: R,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
-    children: L
+    children: j
   });
-  return null != C ? (0, r.jsx)(c.Wdr, {
-    layerContext: C,
-    children: x
-  }) : x
+  return null != N ? (0, r.jsx)(c.Wdr, {
+    layerContext: N,
+    children: k
+  }) : k
 }

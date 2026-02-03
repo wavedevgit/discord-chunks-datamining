@@ -48,11 +48,11 @@ function g(e) {
     }
   }(i);
   A = null != b ? "".concat(t, " ").concat(b) : t;
-  let [y] = r.useState(new s.Ep), [v, E] = r.useState(false), [O, C] = r.useState(false), x = r.useCallback(() => {
+  let [y] = r.useState(new s.Ep), [v, E] = r.useState(false), [O, C] = r.useState(false), S = r.useCallback(() => {
     y.start(250, () => {
       E(false)
     }, false)
-  }, [y, E]), S = r.useCallback(() => {
+  }, [y, E]), x = r.useCallback(() => {
     y.stop(), E(true)
   }, [y, E]), j = r.useCallback(() => {
     C(true)
@@ -63,8 +63,8 @@ function g(e) {
     renderPopout: () => (0, l.jsx)(h.A, {
       children: (0, l.jsxs)("div", {
         className: m.SW,
-        onMouseEnter: S,
-        onMouseLeave: x,
+        onMouseEnter: x,
+        onMouseLeave: S,
         children: [t, null != _ && (0, l.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
@@ -100,8 +100,8 @@ function g(e) {
           }({
             ref: g,
             tabIndex: 0,
-            onMouseEnter: S,
-            onMouseLeave: x,
+            onMouseEnter: x,
+            onMouseLeave: S,
             onFocus: j,
             onBlur: I,
             className: a()(n, m.zr),

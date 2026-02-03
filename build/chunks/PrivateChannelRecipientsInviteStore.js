@@ -23,8 +23,8 @@ var r, i, a, Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   O = ((i = {})[i.FRIENDS = 0] = "FRIENDS", i[i.GUILD_MEMBERS = 1] = "GUILD_MEMBERS", i);
 let C = false,
-  x = "",
-  S = 0,
+  S = "",
+  x = 0,
   j = 0,
   I = [],
   T = false,
@@ -43,17 +43,17 @@ let C = false,
   });
 
 function R() {
-  x = "", S = 0, j = 0, I = [], N = new Set, C = false, P = null, w.clear()
+  S = "", x = 0, j = 0, I = [], N = new Set, C = false, P = null, w.clear()
 }
 
 function D(e) {
-  x = e, j = 0, M()
+  S = e, j = 0, M()
 }
 
 function M() {
   if (!C) returnfalse;
   let e = A.A.getChannel(P);
-  if (0 === x.trim().length) return null != l && l.clearQuery(), I = function(e) {
+  if (0 === S.trim().length) return null != l && l.clearQuery(), I = function(e) {
     let t = y.A.getFriendIDs(),
       n = h.A.getConfig({
         location: "PrivateChannelRecipientsInviteStore"
@@ -88,7 +88,7 @@ function M() {
         location: "PrivateChannelRecipientsInviteStore"
       }).enabled;
     l.setQuery({
-      query: x,
+      query: S,
       filters: o ? true : {
         friends: true,
         staff: s,
@@ -132,7 +132,7 @@ function U(e) {
   let {
     results: t
   } = e;
-  if (!C || "" === x) return;
+  if (!C || "" === S) return;
   let n = [];
   for (let {
       id: e,
@@ -182,13 +182,13 @@ class V extends(r = Chunk311907.Ay.Store) {
     return N
   }
   getQuery() {
-    return x
+    return S
   }
   getState() {
     return {
-      query: x,
+      query: S,
       selectedRow: j,
-      selectedSection: S,
+      selectedSection: x,
       selectedUsers: N,
       results: I,
       hasFriends: T
@@ -229,7 +229,7 @@ let K = new V(Chunk73153.h, {
       P = e.channelId, D(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      S = e.section, j = e.row
+      x = e.section, j = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {

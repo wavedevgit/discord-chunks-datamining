@@ -94,7 +94,7 @@ let N = e => {
       u.A.addRelationship({
         userId: r,
         context: {
-          location: S.liQ.DM_CHANNEL
+          location: x.liQ.DM_CHANNEL
         }
       })
     }, o = (0, l.jsx)(c.Button, {
@@ -102,13 +102,13 @@ let N = e => {
       variant: "secondary",
       onClick: () => {
         u.A.blockUser(r, {
-          location: S.liQ.DM_CHANNEL
+          location: x.liQ.DM_CHANNEL
         })
       },
       text: I.intl.string(I.t.l4Emac)
     }), d = (0, p.D)(r);
     switch (n) {
-      case S.eA$.NONE:
+      case x.eA$.NONE:
         return (0, l.jsxs)(l.Fragment, {
           children: [!a && !i && (0, l.jsx)(c.Button, {
             size: "sm",
@@ -117,31 +117,31 @@ let N = e => {
             text: d
           }), o]
         });
-      case S.eA$.FRIEND:
+      case x.eA$.FRIEND:
         return (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
               u.A.removeFriend(r, {
-                location: S.liQ.DM_CHANNEL
+                location: x.liQ.DM_CHANNEL
               })
             },
             text: I.intl.string(I.t.cvSt1J)
           }), o]
         });
-      case S.eA$.BLOCKED:
+      case x.eA$.BLOCKED:
         return (0, l.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
           onClick: () => {
             u.A.unblockUser(r, {
-              location: S.liQ.DM_CHANNEL
+              location: x.liQ.DM_CHANNEL
             })
           },
           text: I.intl.string(I.t.XyHpKH)
         });
-      case S.eA$.PENDING_INCOMING:
+      case x.eA$.PENDING_INCOMING:
         return (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)(c.Button, {
             size: "sm",
@@ -153,13 +153,13 @@ let N = e => {
             variant: "secondary",
             onClick: () => {
               u.A.cancelFriendRequest(r, {
-                location: S.liQ.DM_CHANNEL
+                location: x.liQ.DM_CHANNEL
               })
             },
             text: I.intl.string(I.t.rQSndv)
           }), o]
         });
-      case S.eA$.PENDING_OUTGOING:
+      case x.eA$.PENDING_OUTGOING:
         return (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)(c.Button, {
             size: "sm",
@@ -234,12 +234,12 @@ let N = e => {
         relationshipType: d,
         userId: t,
         showingBanner: r
-      }), !r && (0, l.jsx)(x.A, {
+      }), !r && (0, l.jsx)(S.A, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: p
       })]
-    }), _ = d !== S.eA$.PENDING_INCOMING || u || h ? null : (0, l.jsx)(c.Text, {
+    }), _ = d !== x.eA$.PENDING_INCOMING || u || h ? null : (0, l.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       children: I.intl.string(I.t.c2v5nO)

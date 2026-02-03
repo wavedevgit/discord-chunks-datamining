@@ -50,19 +50,19 @@ let _ = [{
   },
   O = new Set,
   C = null,
-  x = 0,
-  S = 0;
+  S = 0,
+  x = 0;
 
 function j() {
   if (null == C || !N(C)) returnfalse;
   let e = T(C);
   if (e.lastActionTime > Date.now() - h.A.Millis.DAY && e.viewDuration > y) returnfalse;
   let t = Date.now();
-  e.lastActionTime = t, e.viewDuration += t - x, x = t
+  e.lastActionTime = t, e.viewDuration += t - S, S = t
 }
 
 function I() {
-  return 0 !== S && (clearInterval(S), S = 0), d.Ay.useNewNotifications && (S = setInterval(() => {
+  return 0 !== x && (clearInterval(x), x = 0), d.Ay.useNewNotifications && (x = setInterval(() => {
     j() && R.emitChange()
   }, 15 * h.A.Millis.SECOND)), false
 }
@@ -119,10 +119,10 @@ b(w, "displayName", "UnreadSettingNoticeStore2"), b(w, "persistKey", "UnreadSett
 let R = new w(Chunk73153.h, {
     CHANNEL_SELECT: function() {
       let e = j();
-      return C = u.A.getChannelId(), x = Date.now(), e
+      return C = u.A.getChannelId(), S = Date.now(), e
     },
     CONNECTION_OPEN: function() {
-      C = u.A.getChannelId(), x = Date.now(), I();
+      C = u.A.getChannelId(), S = Date.now(), I();
       let e = Date.now() - v;
       p.default.forEach(E.channels, (t, n) => {
         let {

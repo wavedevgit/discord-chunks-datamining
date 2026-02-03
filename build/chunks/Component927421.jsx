@@ -30,8 +30,8 @@ function E(e) {
     width: E,
     height: O,
     keepOpen: C,
-    interactive: x = true,
-    analyticsSource: S,
+    interactive: S = true,
+    analyticsSource: x,
     onClose: j
   } = e, I = function(e) {
     let [t, n] = (0, a.yK)([f.A], () => [f.A.getSounds(), f.A.getFavorites()]);
@@ -63,12 +63,12 @@ function E(e) {
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
-      source: S,
+      source: x,
       guild_id: t,
       media_session_id: R
     }
   }, {
-    disableTrack: !x
+    disableTrack: !S
   });
   let L = r.useCallback(e => {
       N.current = e, w(null == e ? true : e.soundId)
@@ -84,12 +84,12 @@ function E(e) {
       null != t && M(t)
     }, [I, M]),
     G = r.useMemo(() => I.map(e => (0, l.jsx)(_.Ay, {
-      interactive: x,
+      interactive: S,
       className: v.a,
       sound: e,
       focused: P === e.soundId,
       channel: n
-    }, e.soundId)), [P, n, x, I]);
+    }, e.soundId)), [P, n, S, I]);
   return 0 === I.length ? null : (0, l.jsx)(o.f5, {
     value: D,
     children: (0, l.jsx)(b.A, {
@@ -102,7 +102,7 @@ function E(e) {
       onItemSelect: k,
       onItemAction: U,
       onClose: j,
-      interactive: x,
+      interactive: S,
       children: G
     })
   })

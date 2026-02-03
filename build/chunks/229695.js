@@ -22,6 +22,7 @@ let o = e => ({
     hero: e.assets.hero,
     heroVideo: e.assets.hero_video,
     questBarHero: e.assets.quest_bar_hero,
+    questBarHeroBlurhash: e.assets.quest_bar_hero_blurhash,
     questBarHeroVideo: e.assets.quest_bar_hero_video,
     gameTile: e.assets.game_tile,
     logotype: e.assets.logotype,

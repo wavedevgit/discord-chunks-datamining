@@ -82,8 +82,8 @@ function K(e) {
     showOutputDevices: i = false,
     showSearchBar: K = true
   } = e, [W, z] = r.useState(""), {
-    analyticsLocations: q,
-    newestAnalyticsLocation: Y
+    analyticsLocations: Y,
+    newestAnalyticsLocation: q
   } = (0, p.Ay)(h.A.VOICE_FILTER_POPOUT), J = r.useRef(null), Z = (0, d.A)({
     minDimension: 400,
     maxDimension: 600,
@@ -100,8 +100,8 @@ function K(e) {
     {
       activeVoice: el
     } = (0, I.f)(),
-    er = (0, S.dz)({
-      location: q[0],
+    er = (0, x.dz)({
+      location: Y[0],
       autoTrackExposure: true
     }),
     ei = (0, c.zhh)({
@@ -135,7 +135,7 @@ function K(e) {
     }),
     eo = r.useRef(null);
   (0, u.Ay)(() => {
-    (0, T.md)(), er && (0, x.tB)(), E.default.track(M.HAw.VOICE_FILTER_PICKER_OPENED, {
+    (0, T.md)(), er && (0, S.tB)(), E.default.track(M.HAw.VOICE_FILTER_PICKER_OPENED, {
       active_voice_filter_id: null != el ? el : null
     })
   });
@@ -143,7 +143,7 @@ function K(e) {
     eu = r.useRef(null),
     ed = (0, g.Us)() !== M.BRT.OVERLAY;
   return (0, l.jsx)(p.f5, {
-    value: q,
+    value: Y,
     children: (0, l.jsxs)("div", {
       ref: J,
       className: a()(H.ZO, {
@@ -240,7 +240,7 @@ function K(e) {
             renderOutputDevices: i,
             renderOutputVolume: i,
             onClose: t,
-            onInteraction: (0, m.s)("AudioDeviceMenu", Y, {
+            onInteraction: (0, m.s)("AudioDeviceMenu", q, {
               entrypoint: L.GK.THREE_DOT
             }),
             minimal: true

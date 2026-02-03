@@ -1,7 +1,7 @@
 /** Chunk was on 61344 **/
 /** chunk id: 802085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk397405 = require("./397405.js"),
   Chunk679740 = require("./679740.js"),
   Chunk206314 = require("./206314.js");
-let x = Chunk64700.memo(function(e) {
+let S = Chunk64700.memo(function(e) {
     let {
       message: t,
       notice: n,
@@ -72,7 +72,7 @@ let x = Chunk64700.memo(function(e) {
       })]
     })
   }),
-  S = Chunk64700.memo(function(e) {
+  x = Chunk64700.memo(function(e) {
     var t, n;
     let {
       className: i,
@@ -81,11 +81,11 @@ let x = Chunk64700.memo(function(e) {
       children: f,
       content: m,
       onUpdate: g
-    } = e, y = null == (n = u.editedTimestamp) ? true : n.toString(), S = r.useRef(false), j = (0, c.bG)([p.A], () => p.A.getMessage(u.id), [u.id]), I = r.useCallback(() => {
+    } = e, y = null == (n = u.editedTimestamp) ? true : n.toString(), x = r.useRef(false), j = (0, c.bG)([p.A], () => p.A.getMessage(u.id), [u.id]), I = r.useCallback(() => {
       (null == j ? true : j.isBlockedEdit) ? (0, h.j)(u.id) : d.A.deleteMessage(u.channel_id, u.id, true)
     }, [u, j]);
     return r.useLayoutEffect(() => {
-      S.current ? null != g && g() : S.current = true
+      x.current ? null != g && g() : x.current = true
     }, [g, u.content, m, y, f]), (0, l.jsxs)("div", {
       id: (0, A.CJ)(u),
       className: a()(i, C.PT, {
@@ -104,7 +104,7 @@ let x = Chunk64700.memo(function(e) {
             children: ["(", v.intl.string(v.t.Z7eEx9), ")"]
           })
         })]
-      }), (0, l.jsx)(x, {
+      }), (0, l.jsx)(S, {
         notice: null != (t = null == j ? true : j.errorMessage) ? t : v.intl.string(v.t.zQ69pv),
         message: u,
         compact: s,

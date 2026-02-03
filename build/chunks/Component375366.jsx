@@ -105,20 +105,20 @@ let m = Chunk64700.memo(function(e) {
     interactive: v = true,
     onClose: E,
     children: O
-  } = e, C = r.useRef(null), x = r.useRef([]), S = r.useRef(false), j = r.useRef(null), [I, T] = r.useState(0), [N, P] = r.useState({
+  } = e, C = r.useRef(null), S = r.useRef([]), x = r.useRef(false), j = r.useRef(null), [I, T] = r.useState(0), [N, P] = r.useState({
     x: 0,
     y: 0
   }), w = Math.abs(N.x) + Math.abs(N.y) > 0, R = r.useMemo(() => a().chunk(O, p), [O]), D = r.useCallback((e, t) => {
-    null == x.current[I] ? x.current[I] = [] : x.current[I][t] = e
+    null == S.current[I] ? S.current[I] = [] : S.current[I][t] = e
   }, [I]), M = r.useCallback((e, t) => {
     j.current = t, _(p * e + t)
   }, [_]), L = r.useCallback(() => {
     j.current = null, _(null)
   }, [_]), k = r.useCallback(e => {
-    L(), S.current = e
+    L(), x.current = e
   }, [L]), U = r.useCallback((e, t, n) => {
     let l, r, i;
-    if (S.current) return void P({
+    if (x.current) return void P({
       x: 0,
       y: 0
     });
@@ -149,13 +149,13 @@ let m = Chunk64700.memo(function(e) {
         x: e.clientX,
         y: e.clientY
       };
-    if (U(i, r, Math.max(t, n)), S.current) {
+    if (U(i, r, Math.max(t, n)), x.current) {
       null != b && L();
       return
     }
     let a = (0, o.wf)(r, i, Math.max(t, n));
-    for (let e = 0; e < x.current[I].length; e++) {
-      let t = x.current[I][e];
+    for (let e = 0; e < S.current[I].length; e++) {
+      let t = S.current[I][e];
       if (null == t) continue;
       let n = t.getBoundingClientRect();
       if ((0, o.lw)(r, a, n)) return void M(I, e)

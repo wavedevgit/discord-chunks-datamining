@@ -123,13 +123,13 @@ let E = Chunk64700.memo(function(e) {
     } = e, n = (0, o.bG)([h.default], () => h.default.getId()), i = (0, o.bG)([p.A], () => p.A.isTyping(t, n), [t, n]), a = (0, o.bG)([g.A], () => g.A.isEnabled()), d = (0, o.bG)([A.Ay], () => A.Ay.isComboing(n, t), [t, n]), {
       ref: f,
       width: m = 0
-    } = (0, u.Ay)(), [b, y] = r.useState(false), C = (0, _.A)(t), x = a && d && i;
+    } = (0, u.Ay)(), [b, y] = r.useState(false), C = (0, _.A)(t), S = a && d && i;
     r.useEffect(() => {
-      x && y(true);
-      let e = setTimeout(() => y(x), 1e3);
+      S && y(true);
+      let e = setTimeout(() => y(S), 1e3);
       return () => clearTimeout(e)
-    }, [x]);
-    let S = (0, c.zhh)({
+    }, [S]);
+    let x = (0, c.zhh)({
         opacity: +!!b,
         transform: b ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
@@ -147,9 +147,9 @@ let E = Chunk64700.memo(function(e) {
       multiplier: T,
       value: N
     } = r.useMemo(() => ({
-      value: x ? j.value : I.current.value,
-      multiplier: x ? j.multiplier : I.current.multiplier
-    }), [x, j, I]);
+      value: S ? j.value : I.current.value,
+      multiplier: S ? j.multiplier : I.current.multiplier
+    }), [S, j, I]);
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(E, {
         channelId: t,
@@ -157,7 +157,7 @@ let E = Chunk64700.memo(function(e) {
       }), (0, l.jsx)(s.animated.div, {
         ref: f,
         className: v.p_,
-        style: S,
+        style: x,
         children: (0, l.jsx)(O, {
           value: N,
           multiplier: T

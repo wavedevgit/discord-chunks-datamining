@@ -127,7 +127,7 @@ function et(e) {
     em = (0, U.r)(G),
     eg = et.length > 0 && (null == (n = et.first()) ? true : n.isFirstMessageInForumPost(G)),
     eA = (0, o.cI)(G),
-    eb = (0, i.bG)([x.A], () => x.A.shouldShowTopicsBar() && !ed),
+    eb = (0, i.bG)([S.A], () => S.A.shouldShowTopicsBar() && !ed),
     e_ = (0, O.l)(G.id),
     ey = (0, v.j)(G.id, Z.Rx),
     ev = (0, d.E)(G.id),
@@ -154,8 +154,8 @@ function et(e) {
     eC = G.isForumPost() && !eg ? (0, l.jsx)(m.A, {
       postId: G.id
     }) : null,
-    ex = (0, A.A)(G.id),
-    eS = (0, b.W1)(G);
+    eS = (0, A.A)(G.id),
+    ex = (0, b.W1)(G);
   (0, z.A)();
   let ej = null,
     eI = [],
@@ -171,7 +171,7 @@ function et(e) {
         }) : (0, l.jsx)(B.A, {
           isUnread: i,
           isBeforeGroup: null == e.content && $(ei[t + 1]),
-          id: i ? Y.q4 : true,
+          id: i ? q.q4 : true,
           children: e.content
         }, "divider-".concat(null != (n = null != (r = e.contentKey) ? r : e.unreadId) ? n : t))
       }
@@ -184,7 +184,7 @@ function et(e) {
       if (e.type === J.TZK.MESSAGE_GROUP_BLOCKED || e.type === J.TZK.MESSAGE_GROUP_IGNORED || e.type === J.TZK.MESSAGE_GROUP_SPAMMER) {
         let t;
         return t = e.type === J.TZK.MESSAGE_GROUP_BLOCKED ? X.t["+FcYM/"] : e.type === J.TZK.MESSAGE_GROUP_IGNORED ? X.t["VFWjc+"] : X.t.xfkfTK, (0, l.jsx)(H.A, {
-          unreadId: Y.q4,
+          unreadId: q.q4,
           messages: e,
           channel: G,
           compact: er,
@@ -194,7 +194,7 @@ function et(e) {
       if (null != ec && ec > e.content.timestamp.getTime() * R.A.Millis.SECOND) return;
       e.type === J.TZK.MESSAGE && null == ej && (ej = e);
       let i = e.groupId === (null == ej ? true : ej.groupId) ? ej.content.id : e.groupId,
-        a = eS && e.content.isFirstMessageInForumPost(G),
+        a = ex && e.content.isFirstMessageInForumPost(G),
         s = e.type === J.TZK.THREAD_STARTER_MESSAGE ? F.VO : F.Ay;
       return (0, l.jsx)(s, {
         compact: er && !a,
@@ -204,7 +204,7 @@ function et(e) {
         flashKey: e.flashKey,
         id: (0, M.j)(G.id, e.content.id),
         isLastItem: t >= ei.length - 1,
-        renderContentOnly: ex || a
+        renderContentOnly: eS || a
       }, e.content.id)
     });
   eI.push(...eT);
@@ -224,7 +224,7 @@ function et(e) {
     }), et.hasMoreBefore && null == ec) {
     et.length > 0 && eI.unshift((0, l.jsx)("div", {
       style: {
-        height: Y.N0,
+        height: q.N0,
         flex: "0 0 auto"
       }
     }, "buffer"));
@@ -246,9 +246,9 @@ function et(e) {
     let e, t, n = T.Ay.getOldestUnreadTimestamp(G.id),
       i = 0 !== n ? n : D.default.extractTimestamp(G.id),
       s = (0, w.ro)(new Date, new Date(i));
-    if (T.Ay.isEstimated(G.id) ? (e = s ? X.t.wvtbbG : X.t.tHqbtg, t = X.t.vaPWFe) : (e = s ? X.t["BctFH/"] : X.t["3wXb9P"], t = X.t["4H8ldG"]), eA && (0, o.Kc)(G) && eE.includes(q.i.SUMMARIES)) {
+    if (T.Ay.isEstimated(G.id) ? (e = s ? X.t.wvtbbG : X.t.tHqbtg, t = X.t.vaPWFe) : (e = s ? X.t["BctFH/"] : X.t["3wXb9P"], t = X.t["4H8ldG"]), eA && (0, o.Kc)(G) && eE.includes(Y.i.SUMMARIES)) {
       let n = T.Ay.ackMessageId(G.id),
-        s = (0, S.L)(G.id, T.Ay.getOldestUnreadMessageId(G.id));
+        s = (0, x.L)(G.id, T.Ay.getOldestUnreadMessageId(G.id));
       if ((0, u.zV)(J.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
           num_unread_summaries: s,
           num_unread_messages: en,
@@ -334,7 +334,7 @@ function et(e) {
           })
         }
       }
-    } else eE.includes(q.i.NEW_MESSAGES) && (r = (0, l.jsx)(V.GN, {
+    } else eE.includes(Y.i.NEW_MESSAGES) && (r = (0, l.jsx)(V.GN, {
       content: X.intl.format(e, {
         count: en,
         timestamp: i
@@ -342,7 +342,7 @@ function et(e) {
       channelId: G.id
     }))
   }
-  if (null == r && (0, o.pk)(G) && eb && eE.includes(q.i.SUMMARIES) && (r = (0, l.jsx)(V.UK, {
+  if (null == r && (0, o.pk)(G) && eb && eE.includes(Y.i.SUMMARIES) && (r = (0, l.jsx)(V.UK, {
       channel: G,
       scrollManager: es
     })), et.error) p = (0, l.jsx)(V.Ez, {

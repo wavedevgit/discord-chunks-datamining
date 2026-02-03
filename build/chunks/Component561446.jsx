@@ -40,7 +40,7 @@ function _(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), x = (0, r.bG)([c.A], () => null != O ? c.A.getMemberCount(O) : 0), S = null != C && (null != x ? x : 0) >= C, {
+  }), S = (0, r.bG)([c.A], () => null != O ? c.A.getMemberCount(O) : 0), x = null != C && (null != S ? S : 0) >= C, {
     approveRequest: j,
     rejectRequest: I,
     submitting: T
@@ -49,14 +49,14 @@ function _(e) {
     className: b.U,
     children: [(0, l.jsx)(i.m, {
       text: A.intl.string(A.t.cdPGbE),
-      shouldShow: S,
+      shouldShow: x,
       children: (0, l.jsx)(a.Button, {
         variant: "active",
         size: "sm",
         text: A.intl.string(A.t.BzjDQJ),
         loading: T,
         onClick: j,
-        disabled: S
+        disabled: x
       })
     }), (0, l.jsx)(a.Button, {
       variant: "critical-primary",

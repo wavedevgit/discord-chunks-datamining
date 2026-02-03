@@ -24,11 +24,11 @@ function A(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: A
-  } = e, b = (0, f.A)(), [_, y] = l.useState(false), [v, E] = l.useState(false), [O, C] = l.useState(false), [x, S] = l.useState(false), [j, I] = l.useState(false), T = _ || v || O, N = l.useCallback(async e => {
+  } = e, b = (0, f.A)(), [_, y] = l.useState(false), [v, E] = l.useState(false), [O, C] = l.useState(false), [S, x] = l.useState(false), [j, I] = l.useState(false), T = _ || v || O, N = l.useCallback(async e => {
     if (!T) {
       y(true);
       try {
-        await (0, h.RK)(e), S(true), null == n || n()
+        await (0, h.RK)(e), x(true), null == n || n()
       } catch (t) {
         let e = new a.LG(t);
         null == A || A(e)
@@ -127,7 +127,7 @@ function A(e) {
     isAcceptLoading: _,
     isRejectLoading: v,
     isUserProfileLoading: O,
-    isOptimisticAccepted: x,
+    isOptimisticAccepted: S,
     isOptimisticRejected: j
   }
 }

@@ -30,8 +30,8 @@ function E(e) {
       children: O,
       user: C
     } = e,
-    x = (0, i.bG)([o.A], () => o.A.useReducedMotion),
-    S = null != (t = (0, d.Ay)(E)) ? t : "",
+    S = (0, i.bG)([o.A], () => o.A.useReducedMotion),
+    x = null != (t = (0, d.Ay)(E)) ? t : "",
     {
       avatarDecorationSrc: j,
       eventHandlers: I,
@@ -53,7 +53,7 @@ function E(e) {
     channelId: E.id,
     onMouseEnter: w,
     onMouseLeave: R,
-    children: [(n = !x && T, E.isMultiUserDM() ? (0, l.jsx)(m.Q, {
+    children: [(n = !S && T, E.isMultiUserDM() ? (0, l.jsx)(m.Q, {
       channel: E,
       editable: true,
       location: c.A.EMPTY_GROUP_DM,
@@ -61,20 +61,20 @@ function E(e) {
         channel: E,
         size: s._3J.SIZE_80,
         animated: n,
-        "aria-label": S
+        "aria-label": x
       })
     }) : (0, l.jsx)(s.euF, {
-      "aria-label": S,
+      "aria-label": x,
       size: s._3J.SIZE_80,
       src: (0, u.Y)(E, 80, n),
       avatarDecoration: j
     })), (0, l.jsx)(_.cr, {
       children: D ? (0, l.jsx)(p.A, {
-        userName: S,
+        userName: x,
         displayNameStyles: null == C ? true : C.displayNameStyles,
         effectDisplayType: N ? h.G.ANIMATED : h.G.STATIC,
         loop: true
-      }) : S
+      }) : x
     }), (0, l.jsx)(_.j1, {
       children: O
     }), E.isMultiUserDM() && (0, l.jsxs)(a.e2v, {

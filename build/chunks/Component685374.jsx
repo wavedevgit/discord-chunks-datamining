@@ -81,21 +81,21 @@ function C(e) {
     onClose: h,
     newChannel: p,
     inSettings: b
-  } = e, O = E(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [C, x] = r.useState(""), [S, j] = r.useState({}), [I, T] = r.useState(false), [N, P] = r.useState(null), w = r.useRef(null), {
+  } = e, O = E(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [C, S] = r.useState(""), [x, j] = r.useState({}), [I, T] = r.useState(false), [N, P] = r.useState(null), w = r.useRef(null), {
     roles: R,
     members: D,
     getRichTag: M
   } = (0, g.K)(a, d, d.accessPermissions, C), L = m.A.useSections({
     roles: R,
     members: D
-  }), k = p && 0 === Object.keys(S).length;
+  }), k = p && 0 === Object.keys(x).length;
   async function U() {
-    if (null == d || 0 === Object.keys(S).length) return void h();
+    if (null == d || 0 === Object.keys(x).length) return void h();
     T(true);
     try {
       var e, t, n;
       let l;
-      await (e = d, t = S, n = b, l = [], Object.values(t).forEach(t => {
+      await (e = d, t = x, n = b, l = [], Object.values(t).forEach(t => {
         let {
           row: n
         } = t;
@@ -110,8 +110,8 @@ function C(e) {
   return (0, l.jsx)(m.A.Provider, {
     listRef: w,
     query: C,
-    setQuery: x,
-    pendingAdditions: S,
+    setQuery: S,
+    pendingAdditions: x,
     setPendingAdditions: j,
     roles: R,
     members: D,

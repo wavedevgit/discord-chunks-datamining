@@ -91,8 +91,8 @@ function v(e) {
     channelId: E,
     childrenAsSubtitle: O,
     connectionStatusTextVariant: C,
-    hasVideo: x
-  } = e, S = r.useRef(null), j = i === f.S7L.RTC_CONNECTED, I = r.useCallback(e => {
+    hasVideo: S
+  } = e, x = r.useRef(null), j = i === f.S7L.RTC_CONNECTED, I = r.useCallback(e => {
     var t, n;
     return (0, l.jsx)(h.A, (t = g({}, e), n = n = {
       channelId: E
@@ -109,14 +109,14 @@ function v(e) {
   }, [E]), {
     connectionStatus: T,
     connectionStatusText: N
-  } = d.A.getStatus(i, x);
+  } = d.A.getStatus(i, S);
   return (0, l.jsxs)("div", {
     className: m.pe,
     children: [(0, l.jsx)("div", {
       className: a()(m.yH, b[t], _),
-      ref: S,
+      ref: x,
       children: (0, l.jsx)(o.YNO, {
-        targetElementRef: S,
+        targetElementRef: x,
         renderPopout: I,
         position: "top",
         children: e => {
@@ -145,7 +145,7 @@ function v(e) {
                 children: (0, l.jsx)(p.A, {
                   text: N,
                   textVariant: C,
-                  hasVideo: x,
+                  hasVideo: S,
                   className: A[T],
                   hasConnectedChannel: null != E
                 })

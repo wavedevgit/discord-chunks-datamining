@@ -42,7 +42,7 @@ function R(e) {
     return C.default.getUser(null == (e = E.A.getGuild(R)) ? true : e.ownerId)
   }), L = r.useMemo(() => null != D ? D.filter(e => !(0, y.Oy)(e)) : [], [D]), k = r.useMemo(() => o()(L).filter(e => {
     if (null == R) returnfalse;
-    let n = x.aH({
+    let n = S.aH({
       forceRoles: {
         [e.id]: e
       },
@@ -58,12 +58,12 @@ function R(e) {
     }
     return o()(e).filter(e => {
       var n;
-      let l = x.$3({
+      let l = S.$3({
           permission: T.xBc.ADMINISTRATOR,
           user: e,
           context: t
         }),
-        r = null != (n = t.permissionOverwrites[e.id]) ? n : x.x3,
+        r = null != (n = t.permissionOverwrites[e.id]) ? n : S.x3,
         i = c.zy(r.allow, T.xBc.VIEW_CHANNEL);
       return l || i
     }).value()
@@ -112,7 +112,7 @@ function R(e) {
           users: U
         });
         let e = U[0],
-          n = S.Ay.getName(e);
+          n = x.Ay.getName(e);
         return (0, l.jsxs)("div", {
           className: P.HD,
           children: [(0, l.jsx)(h.euF, {

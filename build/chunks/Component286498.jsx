@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk318880 = require("./318880.js");
 
-function x(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -45,7 +45,7 @@ function x(e) {
   return e
 }
 
-function S(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ let j = e => {
           asContainer: true,
           text: O.intl.string(O.t["6QQCQ+"]),
           ariaHidden: true,
-          children: (0, l.jsx)(u.K0, S(x({}, e), {
+          children: (0, l.jsx)(u.K0, x(S({}, e), {
             buttonRef: p,
             size: "sm",
             variant: "icon-only",
@@ -164,7 +164,7 @@ function I(e) {
       checked: A,
       disabled: true
     })
-  }), (0, l.jsx)(u.DUT, S(x({
+  }), (0, l.jsx)(u.DUT, x(S({
     id: "user-row-".concat(i),
     className: a()(C.Se, {
       [C.r9]: y

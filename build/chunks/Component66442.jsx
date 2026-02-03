@@ -2,7 +2,7 @@
 /** chunk id: 66442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => C,
-  default: () => x
+  default: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -108,23 +108,23 @@ function C(e) {
     }) : null]
   })
 }
-let x = function(e) {
+let S = function(e) {
   let {
     channelId: t,
     onClose: n,
     transitionState: i,
     setHasPendingChanges: a,
     closeOrShowDiscardChangesAlert: f,
-    location: x
-  } = e, S = (0, o.bG)([g.A], () => g.A.getChannel(t)), j = null == S ? true : S.name, I = (0, m.e5)(S), [T, N] = r.useState(null != j ? j : ""), [P, w] = r.useState(true), R = true !== P, {
+    location: S
+  } = e, x = (0, o.bG)([g.A], () => g.A.getChannel(t)), j = null == x ? true : x.name, I = (0, m.e5)(x), [T, N] = r.useState(null != j ? j : ""), [P, w] = r.useState(true), R = true !== P, {
     analyticsLocations: D
-  } = (0, p.Ay)(x, h.A.GROUP_DM_EDIT_MODAL), M = {
+  } = (0, p.Ay)(S, h.A.GROUP_DM_EDIT_MODAL), M = {
     channel_id: t,
-    channel_type: null == S ? true : S.type,
-    location: x,
+    channel_type: null == x ? true : x.type,
+    location: S,
     location_stack: D,
     old_name_set: "" !== j,
-    old_icon_set: (null == S ? true : S.icon) != null
+    old_icon_set: (null == x ? true : x.icon) != null
   };
   return (r.useEffect(() => {
     a(T !== j || R)
@@ -134,7 +134,7 @@ let x = function(e) {
     A.default.track(_.HAw.GDM_EDIT_INTERACTED, O(E({}, M), {
       action: "dismissed"
     }))
-  })), null == S) ? null : (0, l.jsx)(p.f5, {
+  })), null == x) ? null : (0, l.jsx)(p.f5, {
     value: D,
     children: (0, l.jsx)("form", {
       onSubmit: e => {
@@ -144,12 +144,12 @@ let x = function(e) {
         if (A.default.track(_.HAw.GDM_EDIT_INTERACTED, O(E({}, M), {
             action: "saved",
             new_name_set: "" !== T,
-            new_icon_set: (r ? P : null == S ? true : S.icon) != null,
+            new_icon_set: (r ? P : null == x ? true : x.icon) != null,
             name_changed: l,
             icon_changed: r
           })), l || r) {
           let e = {};
-          l && (e.name = T), r && (e.icon = P), u.A.updateChannel(t, e, x).catch(b.XA)
+          l && (e.name = T), r && (e.icon = P), u.A.updateChannel(t, e, S).catch(b.XA)
         }
         n()
       },
@@ -170,7 +170,7 @@ let x = function(e) {
         children: (0, l.jsxs)("div", {
           className: v.jE,
           children: [(0, l.jsx)(C, {
-            channel: S,
+            channel: x,
             previewIcon: P,
             onIconChange: e => w(e.imageUri),
             onIconRemove: () => w(null),

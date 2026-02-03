@@ -78,7 +78,7 @@ let G = Chunk64700.memo(function(e) {
     editorTextContent: B,
     setValue: V,
     canOnlyUseTextCommands: K
-  } = e, W = (0, b.Us)(), z = r.useRef(null), q = r.useRef(null), Y = (0, s.bG)([S.A], () => S.A.getActivities()), J = (0, f.Et)(), Z = (0, s.bG)([p.A], () => p.A.getLastClipsSession()), X = (0, s.yK)([p.A], () => p.A.getNewClipIds()), Q = (0, s.bG)([O.Ay], () => null == O.Ay.getCurrentSidebarChannelId(F.id)), {
+  } = e, W = (0, b.Us)(), z = r.useRef(null), Y = r.useRef(null), q = (0, s.bG)([x.A], () => x.A.getActivities()), J = (0, f.Et)(), Z = (0, s.bG)([p.A], () => p.A.getLastClipsSession()), X = (0, s.yK)([p.A], () => p.A.getNewClipIds()), Q = (0, s.bG)([O.Ay], () => null == O.Ay.getCurrentSidebarChannelId(F.id)), {
     showClipsHeaderEntrypoint: $
   } = h.L_.useExperiment({
     location: "ChannelAttachButton"
@@ -86,7 +86,7 @@ let G = Chunk64700.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: ee
-  } = (0, g.A)(F.id), et = (0, s.bG)([A.HP], () => A.HP.hasHotspot(A._2.CLIPS_CHANNEL_ATTACH_REMINDER)), en = (0, o.red)(e => (0, o.fDT)(e, D.nm)), el = (0, s.bG)([C.A], () => C.A.hasLayers()), er = (0, s.bG)([p.A], () => p.A.hasClips()), [ei, ea] = r.useState(null), es = (0, h.sw)() && (J || er), eo = F.isPrivate(), ec = (0, s.bG)([x.A], () => eo || x.A.can(R.xBc.ATTACH_FILES, F) && x.A.can(R.xBc.SEND_MESSAGES, F)), eu = (0, u.A)(Z);
+  } = (0, g.A)(F.id), et = (0, s.bG)([A.HP], () => A.HP.hasHotspot(A._2.CLIPS_CHANNEL_ATTACH_REMINDER)), en = (0, o.red)(e => (0, o.fDT)(e, D.nm)), el = (0, s.bG)([C.A], () => C.A.hasLayers()), er = (0, s.bG)([p.A], () => p.A.hasClips()), [ei, ea] = r.useState(null), es = (0, h.sw)() && (J || er), eo = F.isPrivate(), ec = (0, s.bG)([S.A], () => eo || S.A.can(R.xBc.ATTACH_FILES, F) && S.A.can(R.xBc.SEND_MESSAGES, F)), eu = (0, u.A)(Z);
 
   function ed() {
     (0, o.mMO)(async () => {
@@ -132,7 +132,7 @@ let G = Chunk64700.memo(function(e) {
       hasClips: es,
       canUseApplicationCommands: !K,
       channel: F,
-      activities: Y,
+      activities: q,
       newClipsCount: eb,
       canPostPolls: em,
       appContext: W,
@@ -146,7 +146,7 @@ let G = Chunk64700.memo(function(e) {
       colorClass: L.dW
     }),
     ev = (0, l.jsx)(o.YNO, {
-      targetElementRef: q,
+      targetElementRef: Y,
       shouldShow: null != ei,
       animation: o.YNO.Animation.NONE,
       align: "recentClips" === ei ? "center" : "left",
@@ -184,7 +184,7 @@ let G = Chunk64700.memo(function(e) {
         }
       },
       children: e => (0, l.jsx)(N.A, U(k({
-        ref: q,
+        ref: Y,
         className: a()(L.g$, G),
         childClassName: L.wh,
         isActive: false,

@@ -33,8 +33,8 @@ function O(e) {
     (0, u.zk)("847199849233514549", true)
   }, []);
   let C = (0, s.bG)([f.A, p.default], () => !!a()(f.A.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== p.default.getId() && e.state === _.cmJ.SENT && !(0, b.A)(e))),
-    x = (0, s.bG)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    S = null != (t = A.Ay.useName(x)) ? t : y.intl.string(y.t.y1Wu2f),
+    S = (0, s.bG)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+    x = null != (t = A.Ay.useName(S)) ? t : y.intl.string(y.t.y1Wu2f),
     j = (0, s.bG)([d.A], () => d.A.getStickerById(E)),
     I = r.useCallback(async () => {
       if (null == i || "" === i) try {
@@ -49,7 +49,7 @@ function O(e) {
       }
     }, [n.id, n.type, i]),
     T = y.intl.formatToPlainString(y.t.m0zYbV, {
-      username: S
+      username: x
     }),
     N = null != i && "" !== i ? (0, l.jsx)(o.Text, {
       className: v.z3,

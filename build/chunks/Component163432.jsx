@@ -79,22 +79,22 @@ function A(e, t) {
         E = Math.min((y - o) / v - o, l),
         O = Math.max(0, v - f.length),
         C = f.slice(0, v),
-        x = p.slice(0, O),
-        S = Array(O);
+        S = p.slice(0, O),
+        x = Array(O);
       if (O > 0) {
         let e = [];
-        for (let t of x) {
+        for (let t of S) {
           let n = _.current[t.id];
-          null != n && n < O ? S[n] = t : e.push(t)
+          null != n && n < O ? x[n] = t : e.push(t)
         }
-        for (let t = 0; t < S.length; t++) {
-          if (null != S[t]) continue;
+        for (let t = 0; t < x.length; t++) {
+          if (null != x[t]) continue;
           let n = e.shift();
           if (null == n) break;
-          S[t] = n
+          x[t] = n
         }
       }
-      let j = S.filter(c.Vq);
+      let j = x.filter(c.Vq);
       _.current = (0, i.keyBy)((0, i.range)(j.length), e => j[e].id);
       let I = [...C, ...j];
       return null != b && (h && I.length >= v ? I[Math.max(0, I.length - 1)] = b : I.push(b)), {

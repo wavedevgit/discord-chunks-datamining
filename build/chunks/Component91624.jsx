@@ -1,7 +1,7 @@
 /** Chunk was on 61344 **/
 /** chunk id: 91624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => S
 }), require("./938796.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -46,8 +46,8 @@ function O(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), g = (0, a.bG)([p.A], () => p.A.getGuild(m), [m]), b = t.type === y.rbe.GUILD_ANNOUNCEMENT, O = null != g && g.features.has(y.GuildFeatures.NEWS), x = b && O, {
-    editingMessage: S,
+  } = n, m = t.getGuildId(), g = (0, a.bG)([p.A], () => p.A.getGuild(m), [m]), b = t.type === y.rbe.GUILD_ANNOUNCEMENT, O = null != g && g.features.has(y.GuildFeatures.NEWS), S = b && O, {
+    editingMessage: x,
     editingTextValue: j,
     editingRichValue: I
   } = (0, a.cf)([h.A], () => ({
@@ -57,7 +57,7 @@ function O(e) {
   }), [c]), T = (0, a.bG)([d.default], () => d.default.getId()), N = r.useCallback((e, l, r) => {
     let {
       content: a
-    } = r, c = f.A.can(y.xBc.MANAGE_MESSAGES, t), u = null != S && null != S.author ? S.author.id : null, d = x && (u === T || c), h = {
+    } = r, c = f.A.can(y.xBc.MANAGE_MESSAGES, t), u = null != x && null != x.author ? x.author.id : null, d = S && (u === T || c), h = {
       content: a,
       components: true
     };
@@ -71,8 +71,8 @@ function O(e) {
         id: "".concat(82744)
       }), h.content = "", h.components = t
     }
-    return d && null != S && (0, i.Lt)(S.flags, y.pr7.CROSSPOSTED) ? A.A.confirmEdit(e, l, h) : s.A.editMessage(e, l, h), Promise.resolve()
-  }, [S, x, T, t, n]), P = r.useCallback(e => {
+    return d && null != x && (0, i.Lt)(x.flags, y.pr7.CROSSPOSTED) ? A.A.confirmEdit(e, l, h) : s.A.editMessage(e, l, h), Promise.resolve()
+  }, [x, S, T, t, n]), P = r.useCallback(e => {
     var t, n;
     return (0, r.createElement)(C, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -154,7 +154,7 @@ function C(e) {
   }, i.id)
 }
 
-function x(e, t, n) {
+function S(e, t, n) {
   let {
     message: r,
     channel: i,

@@ -27,7 +27,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk176273 = require("./176273.js");
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -122,7 +122,7 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
           let {
             default: e
           } = await n.e("18630").then(n.bind(n, 826789));
-          return t => (0, l.jsx)(e, j(S({}, t), {
+          return t => (0, l.jsx)(e, j(x({}, t), {
             analyticsSource: k
           }))
         })
@@ -140,15 +140,15 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
       position: "bottom",
       children: (0, l.jsxs)(p.DUT, {
         onClick: F,
-        className: a()(x.t5, I, g.u1[h], M ? x.Y5 : x.Lc, {
-          [x.vk]: G && L
+        className: a()(S.t5, I, g.u1[h], M ? S.Y5 : S.Lc, {
+          [S.vk]: G && L
         }),
         children: [L ? (0, l.jsx)(p.tvc, {
           size: "md",
           color: "currentColor",
-          className: x.fY
+          className: S.fY
         }) : null, (0, l.jsx)("span", {
-          className: x.UD,
+          className: S.UD,
           children: (0, y.ME)(R.maxResolution)
         }), (0, l.jsx)("span", {
           children: (0, y.Bs)(R.maxFrameRate)
@@ -157,8 +157,8 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, l.jsx)(p.LpS, {
       text: H,
-      className: a()(P, x.AA, {
-        [x.Dc]: L && w
+      className: a()(P, S.AA, {
+        [S.Dc]: L && w
       }),
       color: u.A.unsafe_rawColors.PRIMARY_500.css,
       shape: g.u1[h]
@@ -190,13 +190,13 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: r
       } = e;
-      return (0, l.jsxs)("div", j(S({
-        className: a()(x.dr, n)
+      return (0, l.jsxs)("div", j(x({
+        className: a()(S.dr, n)
       }, r), {
         children: [b((e, n) => n ? (0, l.jsx)(s.animated.div, {
           style: e,
           children: (0, l.jsx)(L, {
-            className: x.LZ,
+            className: S.LZ,
             participant: t,
             size: o,
             shape: p.EGs.ROUND_LEFT,
@@ -208,7 +208,7 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
           })
         }) : null), (0, l.jsx)(s.animated.div, {
           style: _,
-          className: x.Ok,
+          className: S.Ok,
           children: (0, l.jsx)(g.Ay, {
             look: g.gv.RED,
             size: o,

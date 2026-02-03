@@ -77,7 +77,7 @@ function k(e) {
     return null != (e = d.Ay.getEmbeddedActivitiesForChannel(f.id).find(e => e.applicationId === o.id)) ? e : d.Ay.getEmbeddedActivitiesForStartingChannel(f.id).find(e => e.applicationId === o.id)
   }), {
     analyticsLocations: v
-  } = (0, C.Ay)(), E = (0, u.p)(), O = w.Ay.getName(f.getGuildId(), f.id, null == _ ? true : _[0]), S = (0, m.vG)({
+  } = (0, C.Ay)(), E = (0, u.p)(), O = w.Ay.getName(f.getGuildId(), f.id, null == _ ? true : _[0]), x = (0, m.vG)({
     userId: null == (n = N.default.getCurrentUser()) ? true : n.id,
     channelId: f.id,
     application: o
@@ -86,7 +86,7 @@ function k(e) {
     type: "channel"
   }), [f]), {
     submitting: U
-  } = (0, x.A)({
+  } = (0, S.A)({
     applicationId: M,
     context: k,
     launchingComponentId: T
@@ -119,7 +119,7 @@ function k(e) {
       children: o.name
     }), (0, l.jsx)("div", {
       className: D.Uo,
-      children: S ? (0, l.jsx)(c.Button, {
+      children: x ? (0, l.jsx)(c.Button, {
         text: R.intl.string(R.t["4i2vj+"]),
         onClick: function(e) {
           e.stopPropagation(), null != y && (0, h.A)({
@@ -149,13 +149,13 @@ function U(e) {
     analyticsLocations: c
   } = (0, C.Ay)(O.A.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, g.A)(), h = null != d && (0, f.H)(d.location) === o.id && d.applicationId === u, [p] = (0, S.A)([u]), {
+  } = t, d = (0, g.A)(), h = null != d && (0, f.H)(d.location) === o.id && d.applicationId === u, [p] = (0, x.A)([u]), {
     url: m
   } = (0, A.A)({
     applicationId: u,
     names: M,
     size: 1024
-  }), y = !i && h, x = !h, I = !h && !i, N = (0, s.bG)([T.A, j.A], () => (0, E.A)({
+  }), y = !i && h, S = !h, I = !h && !i, N = (0, s.bG)([T.A, j.A], () => (0, E.A)({
     LayerStore: T.A,
     PopoutWindowStore: j.A
   }));
@@ -171,7 +171,7 @@ function U(e) {
       children: [y && null != d && (0, l.jsx)(b.A, {
         className: D.pU,
         embedId: (0, v.A)(d.location.id, u)
-      }), x && null != p && null != m && "" !== m ? (0, l.jsx)("img", {
+      }), S && null != p && null != m && "" !== m ? (0, l.jsx)("img", {
         className: D.j0,
         alt: p.name,
         src: m
@@ -180,7 +180,7 @@ function U(e) {
         channel: o,
         participants: t.participants,
         application: p
-      }), a || x ? null : (0, l.jsx)("div", {
+      }), a || S ? null : (0, l.jsx)("div", {
         className: D.OB
       })]
     })

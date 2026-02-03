@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk412136 = require("./412136.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk545156 = require("./545156.js");
-let S = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
+let x = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function j(e) {
   let {
@@ -105,7 +105,7 @@ function j(e) {
     let e = w,
       n = "txt",
       l = "",
-      r = w.match(S);
+      r = w.match(x);
     null != r && (l = r[1], n = r[2], e = r[3], l += r[4]), (0, b.R)([(0, A.VE)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, P), g._.dispatchToLastSubscribed(v.jej.CLEAR_TEXT), "" !== l && g._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
@@ -124,7 +124,7 @@ function j(e) {
     navId: "channel-attach",
     onClose: T,
     "aria-label": C.intl.string(C.t.Xm41aV),
-    className: x.MK,
+    className: S.MK,
     children: j.map(function(e) {
       switch (e.type) {
         case y.v.UPLOAD_A_FILE:

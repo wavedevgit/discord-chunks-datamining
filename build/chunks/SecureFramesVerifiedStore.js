@@ -1,7 +1,7 @@
 /** Chunk was on 61344 **/
 /** chunk id: 707890, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => S
 }), require("./896048.js"), require("./927092.js"), require("./212978.js"), require("./201528.js"), require("./393431.js"), require("./752391.js"), require("./532706.js"), require("./42231.js"), require("./232424.js"), require("./757074.js"), require("./949626.js"), require("./767709.js"), require("./65162.js");
 var l, r, Chunk311907 = require("./311907.js"),
   Chunk205693 = require("./205693.js"),
@@ -83,7 +83,7 @@ class C extends(l = Chunk311907.Ay.Store) {
   configurable: true,
   writable: true
 }) : C[r] = "SecureFramesVerifiedStore";
-let x = new C(Chunk73153.h, {
+let S = new C(Chunk73153.h, {
   CONNECTION_OPEN: O,
   VOICE_CHANNEL_SELECT: function(e) {
     let {

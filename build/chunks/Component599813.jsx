@@ -30,7 +30,7 @@ function E(e) {
     voiceListRef: r,
     showSectionHeaders: i = false,
     query: a
-  } = e, s = C(), E = (0, o.bG)([h.default], () => (0, p.ki)(h.default.getCurrentUser())), S = x(a, E), j = Math.ceil(S.length / t), {
+  } = e, s = C(), E = (0, o.bG)([h.default], () => (0, p.ki)(h.default.getCurrentUser())), x = S(a, E), j = Math.ceil(x.length / t), {
     isNativeModuleLoaded: I,
     isNativeModuleLoading: T,
     catalogLastFetchTime: N
@@ -39,7 +39,7 @@ function E(e) {
     isNativeModuleLoading: m.A.isNativeModuleLoading(),
     catalogLastFetchTime: m.A.getCatalogLastFetchTime()
   }));
-  return a && 0 === S.length ? (0, l.jsxs)("div", {
+  return a && 0 === x.length ? (0, l.jsxs)("div", {
     className: _.nm,
     children: [(0, l.jsx)(u.$p$, {
       width: 40,
@@ -80,7 +80,7 @@ function E(e) {
     className: _.kL,
     renderRow: e => {
       let n = e * t,
-        r = S.slice(n, n + t);
+        r = x.slice(n, n + t);
       return (0, l.jsx)(O, {
         children: r.map((n, r) => (0, l.jsx)(A.I, {
           voiceFilter: n,
@@ -127,7 +127,7 @@ let C = () => (0, o.bG)([m.A], () => {
     var e;
     return !Object.keys(null != (e = m.A.getVoiceFilterModels()) ? e : {}).length && (m.A.getCatalogFetchFailed() || m.A.hasNativeModuleFailed())
   }),
-  x = (e, t) => (0, o.yK)([m.A], () => {
+  S = (e, t) => (0, o.yK)([m.A], () => {
     var n;
     let l, r = m.A.getVoiceFilters(),
       i = m.A.getSortedVoiceFilters();

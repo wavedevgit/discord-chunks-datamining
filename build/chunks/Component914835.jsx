@@ -1,7 +1,7 @@
 /** Chunk was on 61344 **/
 /** chunk id: 914835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S
+  A: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -62,34 +62,34 @@ function C(e) {
     channel: _
   } = e, y = r.useRef(null), {
     analyticsLocations: C
-  } = (0, d.Ay)(u.A.USERNAME), x = (0, s.bG)([g.default], () => g.default.getUser(b)), S = (0, s.bG)([m.Ay], () => null != b ? m.Ay.getMember(_.guild_id, b) : null), j = (0, p.gn)(_.guild_id, null != b ? b : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
+  } = (0, d.Ay)(u.A.USERNAME), S = (0, s.bG)([g.default], () => g.default.getUser(b)), x = (0, s.bG)([m.Ay], () => null != b ? m.Ay.getMember(_.guild_id, b) : null), j = (0, p.gn)(_.guild_id, null != b ? b : true, null != (t = null == x ? true : x.colorStrings) ? t : null);
 
   function I(e) {
-    if (null == x) return null;
+    if (null == S) return null;
     (0, c.L3)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("97262"), n.e("29534"), n.e("67447"), n.e("10905")]).then(n.bind(n, 708202));
       return t => (0, l.jsx)(e, O(E({}, t), {
-        user: x,
+        user: S,
         guildId: _.guild_id,
         channel: _
       }))
     })
   }
-  let T = null != (i = null != (h = null == S ? true : S.nick) ? h : A.Ay.getName(x)) ? i : "???",
-    N = null == S ? true : S.colorString;
-  return null == x ? (0, l.jsx)("span", {
+  let T = null != (i = null != (h = null == x ? true : x.nick) ? h : A.Ay.getName(S)) ? i : "???",
+    N = null == x ? true : x.colorString;
+  return null == S ? (0, l.jsx)("span", {
     className: a()(v.eM, v.sL),
     children: T
   }) : (0, l.jsx)(d.f5, {
     value: C,
     children: (0, l.jsx)(f.A, {
       targetElementRef: y,
-      user: x,
+      user: S,
       guildId: _.guild_id,
       channelId: _.id,
-      roleId: null == S ? true : S.colorRoleId,
+      roleId: null == x ? true : x.colorRoleId,
       clickTrap: true,
       children: e => (0, l.jsx)(o.DUT, O(E({}, e), {
         innerRef: y,
@@ -106,7 +106,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     channel: t
   } = e, {
@@ -137,7 +137,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   var t;
   let {
     channel: n
@@ -151,7 +151,7 @@ function S(e) {
       })
     }), (0, l.jsx)(b.cr, {
       children: n.name
-    }), (0, l.jsx)(x, {
+    }), (0, l.jsx)(S, {
       channel: n
     })]
   })

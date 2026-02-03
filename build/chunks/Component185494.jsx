@@ -43,8 +43,8 @@ function C(e) {
   let {} = e, {
     activeVoice: n
   } = (0, A.f)(), i = (0, h.A)(n), C = (0, g.e)(n), {
-    toggleLoopback: x,
-    isLoopbackEnabled: S
+    toggleLoopback: S,
+    isLoopbackEnabled: x
   } = function() {
     let {
       activeVoice: e
@@ -57,7 +57,7 @@ function C(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), j = S ? u.GOW : u.uik, I = r.useCallback(() => (0, m.OR)(null), []), T = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, u.rdh)(u.LU0.colors.WHITE).hex(), P = r.useRef(0), w = n !== i ? P.current + 1 : P.current;
+  }(), j = x ? u.GOW : u.uik, I = r.useCallback(() => (0, m.OR)(null), []), T = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, u.rdh)(u.LU0.colors.WHITE).hex(), P = r.useRef(0), w = n !== i ? P.current + 1 : P.current;
   r.useEffect(() => {
     P.current = w
   }, [w]);
@@ -169,7 +169,7 @@ function C(e) {
         } : M ? v : E
       }
     }, "respect-motion-settings"),
-    B = b.intl.string(S ? b.t.esVyo6 : b.t.UQqFCF);
+    B = b.intl.string(x ? b.t.esVyo6 : b.t.UQqFCF);
   return (0, l.jsxs)(s.animated.div, {
     className: _.TC,
     "aria-hidden": D,
@@ -215,7 +215,7 @@ function C(e) {
           }), (0, l.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: b.intl.string(S ? b.t.Sg6cfm : b.t.ZKhtw0)
+            children: b.intl.string(x ? b.t.Sg6cfm : b.t.ZKhtw0)
           })]
         }),
         shouldShow: R,
@@ -225,7 +225,7 @@ function C(e) {
           style: G[0],
           children: (0, l.jsx)(u.DUT, {
             className: a()(_.x6, {
-              [_.v3]: S
+              [_.v3]: x
             }),
             "aria-label": B,
             "aria-hidden": D,
@@ -233,7 +233,7 @@ function C(e) {
               enabled: R
             },
             tabIndex: R ? 0 : false,
-            onClick: () => x(),
+            onClick: () => S(),
             children: (0, l.jsx)(j, {
               size: "custom",
               width: 20,

@@ -56,7 +56,7 @@ function B(e) {
     variant: "secondary",
     text: i ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
     onClick: () => {
-      true === o.w.get(S.f) ? d() : (0, u.mMO)(async () => {
+      true === o.w.get(x.f) ? d() : (0, u.mMO)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 390897));
@@ -88,14 +88,14 @@ function V(e) {
   } = e, {
     ref: O,
     width: C
-  } = (0, p.Ay)(), [S, U] = r.useState(3), [V, K] = r.useState(!n), [W, z] = (0, f.A)(false, 2e3), q = (0, s.bG)([N.A], () => N.A.getChannel(t), [t]), {
-    firstMessage: Y
-  } = (0, D.OA)(q), J = (0, s.bG)([I.A], () => I.A.hasJoined(t)), {
+  } = (0, p.Ay)(), [x, U] = r.useState(3), [V, K] = r.useState(!n), [W, z] = (0, f.A)(false, 2e3), Y = (0, s.bG)([N.A], () => N.A.getChannel(t), [t]), {
+    firstMessage: q
+  } = (0, D.OA)(Y), J = (0, s.bG)([I.A], () => I.A.hasJoined(t)), {
     disableReactionUpdates: Z,
     disableReactionCreates: X,
     isLurking: Q,
     isPendingMember: $
-  } = (0, b.A)(q), ee = (0, x.W1)(q), et = (0, s.bG)([N.A], () => N.A.getChannel(o)), en = (0, R.Ck)(et), el = (0, s.bG)([m.A], () => m.A.shouldDisplayPrompt(t) && true === n, [t, n]), er = r.useCallback(e => {
+  } = (0, b.A)(Y), ee = (0, S.W1)(Y), et = (0, s.bG)([N.A], () => N.A.getChannel(o)), en = (0, R.Ck)(et), el = (0, s.bG)([m.A], () => m.A.shouldDisplayPrompt(t) && true === n, [t, n]), er = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -116,15 +116,15 @@ function V(e) {
   let [ei, ea] = r.useState(true);
   if (r.useEffect(() => {
       null == C || (U(Math.floor((C - 280) / 58)), ea(false))
-    }, [C]), null == q || null == Y) return null;
-  let es = Y.reactions.length > 0,
+    }, [C]), null == Y || null == q) return null;
+  let es = q.reactions.length > 0,
     eo = () => {
       (0, M.jC)({
-        postId: q.id,
+        postId: Y.id,
         location: {
           section: L.JJy.CHANNEL_HEADER
         }
-      }), (0, w.C)((0, P.af)(q, et), () => z(true))
+      }), (0, w.C)((0, P.af)(Y, et), () => z(true))
     },
     ec = J ? u.A9s : u.XFE;
   return (0, l.jsxs)(l.Fragment, {
@@ -136,8 +136,8 @@ function V(e) {
       children: [ee ? (0, l.jsx)("div", {
         className: G.kX,
         children: (0, l.jsx)(j.A, {
-          message: Y,
-          channel: q
+          message: q,
+          channel: Y
         })
       }) : (0, l.jsxs)("div", {
         className: a()(G.hY, {
@@ -146,7 +146,7 @@ function V(e) {
         children: [!es && !X && null != en && (0, l.jsx)("div", {
           className: F.reactions,
           children: (0, l.jsx)(E.qT, {
-            message: Y,
+            message: q,
             readOnly: false,
             useChatFontScaling: false,
             isLurking: Q,
@@ -161,20 +161,20 @@ function V(e) {
             emojiSize: "reaction"
           })
         }), (0, l.jsx)(v.A, {
-          message: Y,
-          channel: q,
+          message: q,
+          channel: Y,
           disableReactionCreates: true,
           disableReactionUpdates: Z,
           isLurking: Q,
           isPendingMember: $,
-          maxReactions: S,
+          maxReactions: x,
           className: G.Br,
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
         }), !X && (0, l.jsx)(_.t, {
-          message: Y,
-          channel: q,
+          message: q,
+          channel: Y,
           useChatFontScaling: false,
           className: a()(H.secondary, G.vU, {
             [G.w$]: !es
@@ -185,7 +185,7 @@ function V(e) {
       }), (0, l.jsxs)("div", {
         className: G.Uo,
         children: [ee ? (0, l.jsx)(B, {
-          channel: q
+          channel: Y
         }) : !Q && (0, l.jsx)(c.m, {
           text: k.intl.string(k.t.F7oeDv),
           children: (0, l.jsx)(u.Button, {
@@ -194,7 +194,7 @@ function V(e) {
             variant: "secondary",
             text: J ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
             onClick: () => {
-              J ? T.A.leaveThread(q, "Forum Toolbar") : T.A.joinThread(q, "Forum Toolbar")
+              J ? T.A.leaveThread(Y, "Forum Toolbar") : T.A.joinThread(Y, "Forum Toolbar")
             }
           })
         }), (0, l.jsx)(c.m, {
@@ -220,8 +220,8 @@ function V(e) {
             variant: "secondary",
             onClick: () => {
               d.A.jumpToMessage({
-                channelId: q.id,
-                messageId: q.id,
+                channelId: Y.id,
+                messageId: Y.id,
                 flash: true,
                 jumpType: h.US.INSTANT
               })
@@ -233,7 +233,7 @@ function V(e) {
     }), el && (0, l.jsx)(g.A, {
       threadId: t
     }), (0, l.jsx)(y.A, {
-      channel: q,
+      channel: Y,
       isLastItem: i
     })]
   })
