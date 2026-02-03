@@ -6,8 +6,8 @@ require.d(exports, {
 }), require("./747238.js"), require("./896048.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js");
 var Chunk64700 = require("./64700.js"),
   Chunk960488 = require("./960488.js"),
-  Chunk398590 = require("./398590.js"),
   Chunk976860 = require("./976860.js"),
+  Chunk840065 = require("./840065.jsx"),
   Chunk652215 = require("./652215.js");
 
 function o() {
@@ -34,9 +34,9 @@ function o() {
   }({
     onClose: r.useCallback(() => {
       if (0 === o) {
-        (0, a.aX)(), (0, s.id)(i.zgK.USER_SETTINGS);
+        (0, s.aX)(), (0, a.openUserSettings)();
         return
-      }(0, a.EL)() ? (0, a.aX)() : (0, a.pX)(i.BVt.APP)
+      }(0, s.EL)() ? (0, s.aX)() : (0, s.pX)(i.BVt.APP)
     }, [o]),
     source: o
   }, t)

@@ -37,8 +37,8 @@ function E(e) {
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingProfileEffect: y,
-    errors: j
+    pendingProfileEffect: j,
+    errors: y
   } = (0, p.nZ)(null == n ? true : n.id);
   i.useEffect(() => {
     I && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
@@ -53,7 +53,7 @@ function E(e) {
     hasBackground: true,
     title: O,
     showBorder: S,
-    errors: j,
+    errors: y,
     className: E,
     children: (0, r.jsxs)("div", {
       className: h.NC,
@@ -70,7 +70,7 @@ function E(e) {
           [h.yj]: C
         }),
         children: b.intl.string(b.t["/dRfCf"])
-      }), (true === y ? null != N : null != y) && (0, r.jsx)("div", {
+      }), (true === j ? null != N : null != j) && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: h.DT,
         children: (0, r.jsx)(o.Button, {

@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 530240, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y,
+  A: () => j,
   N: () => N
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
@@ -272,7 +272,7 @@ function N(e) {
   })
 }
 
-function y(e) {
+function j(e) {
   let {
     guildBoostSlots: t,
     premiumSubscription: n

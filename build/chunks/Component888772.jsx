@@ -30,7 +30,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk473169 = require("./473169.js"),
   Chunk525351 = require("./525351.js");
 
-function j(e) {
+function y(e) {
   let {
     header: t,
     description: n,
@@ -82,20 +82,20 @@ function v() {
         })]
       }), (0, r.jsx)("img", {
         className: I._u,
-        src: y,
+        src: j,
         alt: S.intl.string(C.default["r+PDmu"])
       })]
     }), (0, r.jsxs)("div", {
       className: I.Ci,
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(y, {
         header: S.intl.string(C.default["7xxAni"]),
         description: S.intl.string(C.default["1M9So2"]),
         stepNumber: 1
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(y, {
         header: S.intl.string(C.default["AXgx+a"]),
         description: S.intl.string(C.default.GzMFnb),
         stepNumber: 2
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(y, {
         header: S.intl.string(C.default.MZn1tG),
         description: S.intl.string(C.default["8rLBxD"]),
         stepNumber: 3
@@ -125,7 +125,7 @@ function P() {
       }), e ? null : (0, r.jsx)(f.A, {})]
     }), (0, r.jsx)("img", {
       className: I._u,
-      src: y,
+      src: j,
       alt: S.intl.string(C.default["r+PDmu"])
     })]
   })

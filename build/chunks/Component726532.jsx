@@ -117,7 +117,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
       } = o,
       {
         title: N,
-        description: y
+        description: j
       } = (() => {
         switch (l.subscriptionStatus) {
           case f.Dmq.CANCELED:
@@ -161,7 +161,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
         className: E.wS,
         children: [(0, r.jsx)(S, {
           title: N,
-          description: y,
+          description: j,
           button: (0, r.jsx)(s.Button, {
             variant: "secondary",
             text: h.intl.string(b.default.NCu2JD),
@@ -273,12 +273,12 @@ let C = () => (0, r.jsxs)(s.BJc, {
     } = (0, p.A)(t.id), {
       numAvailableInvites: T,
       numTotalSeats: N,
-      numUsedSeats: y
+      numUsedSeats: j
     } = (0, l.cf)([_.A], () => ({
       numAvailableInvites: _.A.getNumAvailableInvites(),
       numTotalSeats: _.A.getNumTotalSeats(),
       numUsedSeats: _.A.getNumUsedSeats()
-    })), [j, v] = i.useState(false), {
+    })), [y, v] = i.useState(false), {
       status: P
     } = t, R = i.useCallback(() => {
       (0, s.mMO)(async () => {
@@ -355,7 +355,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
             size: "md",
             text: h.intl.string(b.default.EFTJMQ),
             onClick: D,
-            loading: j
+            loading: y
           }) : (0, r.jsxs)(s.BJc, {
             direction: "vertical",
             gap: 12,
@@ -412,7 +412,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
             })
           },
           numTotalSeats: N,
-          numUsedSeats: y,
+          numUsedSeats: j,
           numAvailableInvites: T
         })]
       })]

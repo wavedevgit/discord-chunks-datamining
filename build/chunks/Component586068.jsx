@@ -1,12 +1,12 @@
 /** Chunk was on 9207 **/
 /** chunk id: 586068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KJ: () => y,
+  KJ: () => j,
   N_: () => P,
   OS: () => T,
   Y9: () => v,
   c3: () => I,
-  lg: () => j,
+  lg: () => y,
   nG: () => N,
   vw: () => R
 }), require("./896048.js"), require("./747238.js");
@@ -370,7 +370,7 @@ class N extends Chunk64700.Component {
     })
   }
 }
-class y extends Chunk64700.Component {
+class j extends Chunk64700.Component {
   renderIcon() {
     let {
       user: e,
@@ -466,7 +466,7 @@ class y extends Chunk64700.Component {
     })
   }
 }
-class j extends Chunk64700.Component {
+class y extends Chunk64700.Component {
   renderContent() {
     let {
       children: e,

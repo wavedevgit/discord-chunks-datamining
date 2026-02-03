@@ -43,7 +43,7 @@ let k = e => {
     let {
       inOfferExperience: t
     } = e;
-    return t ? (0, r.jsx)(y.A, {
+    return t ? (0, r.jsx)(j.A, {
       lifted: t
     }) : null
   },
@@ -53,8 +53,8 @@ let k = e => {
     let t = i.useRef(null),
       n = i.useRef(null),
       l = i.useRef(null),
-      y = (0, _.Ay)(),
-      B = (0, d.Mw)(y),
+      j = (0, _.Ay)(),
+      B = (0, d.Mw)(j),
       [H, V] = i.useState(false),
       [F, Y] = i.useState(false),
       [W, K] = i.useState(false),
@@ -138,7 +138,7 @@ let k = e => {
           onChange: e => V(e),
           threshold: 0,
           active: true,
-          children: (0, r.jsx)(j.Ay, {
+          children: (0, r.jsx)(y.Ay, {
             ref: n,
             subscriptionTier: Q,
             className: s()({

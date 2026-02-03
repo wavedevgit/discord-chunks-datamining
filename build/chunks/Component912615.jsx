@@ -45,17 +45,17 @@ function f(e) {
     null != await c.q1(E, e) && t()
   }
   i.useEffect(() => () => o.h.wait(() => c.SH()), []);
-  let y = null != f && f === E,
-    j = y ? function() {
+  let j = null != f && f === E,
+    y = j ? function() {
       c.cL(), O(""), T(null)
     } : N,
     v = i.useMemo(() => [{
       loading: h,
       disabled: !I || 0 === E.length || "localhost" === S && 0 === x.length,
-      variant: y ? "critical-primary" : "active",
-      text: y ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
-      onClick: j
-    }], [E.length, h, y, I, x.length, j, S]);
+      variant: j ? "critical-primary" : "active",
+      text: j ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
+      onClick: y
+    }], [E.length, h, j, I, x.length, y, S]);
   return (0, r.jsxs)(l.Modal, {
     title: p.intl.string(p.t.f8fzky),
     subtitle: p.intl.string(p.t.a6Vill),

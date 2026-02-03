@@ -25,7 +25,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk438166 = require("./438166.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk695865 = require("./695865.js");
-let x = {
+let S = {
   flattenProductVariants: true
 };
 
@@ -93,14 +93,14 @@ function O(e) {
     }), F((e - 1) * z)
   }, [y, z, F]);
   return (0, r.jsxs)(h.v3.Provider, {
-    value: x,
+    value: S,
     children: [(0, r.jsxs)("div", {
       className: a()({
-        [S.oE]: Y
+        [x.oE]: Y
       }),
       children: [Y && (0, r.jsx)(C.A, {}), (0, r.jsxs)("div", {
-        className: a()(S.ZE, {
-          [S.Kp]: V
+        className: a()(x.ZE, {
+          [x.Kp]: V
         }),
         ref: G,
         children: [W && [...Array(z)].map((e, t) => (0, r.jsx)(E.A, {}, t)), !W && H.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.R9, {
@@ -114,7 +114,7 @@ function O(e) {
         }, e.skuId))]
       })]
     }), R > z && (0, r.jsx)("div", {
-      className: S.Ej,
+      className: x.Ej,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.mgR, {
           currentPage: N,

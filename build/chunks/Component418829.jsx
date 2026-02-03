@@ -27,38 +27,37 @@ function p(e) {
     emptyState: O,
     searchQuery: h,
     onSearchChange: j
-  } = e, x = d.A.useField("currentPanelKey"), {
+  } = e, x = _.A.useField("currentPanelKey"), {
     node: v,
     visibleDirectory: S,
     accessibleDirectory: C
-  } = (0, _.Ay)(n, null != h ? h : ""), P = null != p && (null == (t = S.entry(p)) ? true : t.parentPanelKey) != null ? p : f, w = o.useMemo(() => {
+  } = (0, d.Ay)(n, null != h ? h : ""), P = null != p && (null == (t = S.entry(p)) ? true : t.parentPanelKey) != null ? p : f, w = o.useMemo(() => {
     var e;
     let t = null == (e = C.entry(null != x ? x : P)) ? true : e.parentPanelKey;
     if (null != t) return C.getPanelOrThrow(t)
   }, [x, C, P]), {
     navigateWithValidation: k
   } = (0, s.L_)();
-  (0, i.Ay)(() => {
+  (0, l.Ay)(() => {
     var e, t, n;
     let r = S.entry(P).parentPanelKey,
       o = null == (e = S.entry(P)) ? true : e.parentTabKey,
       a = null == (t = S.entry(P)) ? true : t.parentCategoryKey,
-      i = null == (n = S.entry(P)) ? true : n.parentAccordionKey;
-    return d.A.setState({
+      l = null == (n = S.entry(P)) ? true : n.parentAccordionKey;
+    return _.A.setState({
       currentPanelKey: r,
       currentTabKeys: null != o ? new Map([
         [r, o]
       ]) : new Map,
       currentCategoryKey: a,
-      disableSidebarCategoryAutoSelect: true,
       navTransition: {
         targetKey: P,
-        targetAccordionKey: i,
+        targetAccordionKey: l,
         animateScroll: false
       },
       showNavigationMobile: null == p
-    }), () => d.A.resetState()
-  }), o.useEffect(() => d.A.subscribe(e => ({
+    }), () => _.A.resetState()
+  }), o.useEffect(() => _.A.subscribe(e => ({
     requestedTargetKey: e.requestedTargetKey,
     currentPanelKey: e.currentPanelKey
   }), e => {
@@ -73,23 +72,22 @@ function p(e) {
       return
     }
     let o = r.parentPanelKey;
-    if (null == o) return void d.A.setState({
+    if (null == o) return void _.A.setState({
       requestedTargetKey: true
     });
-    let a = d.A.getField("currentTabKeys"),
-      i = null != r.parentTabKey ? new Map(a).set(o, r.parentTabKey) : a,
-      l = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === a.get(o)),
+    let a = _.A.getField("currentTabKeys"),
+      l = null != r.parentTabKey ? new Map(a).set(o, r.parentTabKey) : a,
+      i = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === a.get(o)),
       c = () => {
-        d.A.setState({
+        _.A.setState({
           requestedTargetKey: true,
           currentPanelKey: r.parentPanelKey,
-          currentTabKeys: i,
+          currentTabKeys: l,
           currentCategoryKey: r.parentCategoryKey,
-          disableSidebarCategoryAutoSelect: true,
           navTransition: {
             targetKey: t,
             targetAccordionKey: r.parentAccordionKey,
-            animateScroll: l
+            animateScroll: i
           }
         })
       };
@@ -104,7 +102,7 @@ function p(e) {
       accessibleDirectory: C
     }), [S, C]),
     A = o.useMemo(() => () => k(y), [k, y]),
-    N = null != x ? S.get(x) : true;
+    E = null != x ? S.get(x) : true;
   return (0, r.jsx)(u.x.Provider, {
     value: T,
     children: (0, r.jsxs)("div", {
@@ -116,9 +114,9 @@ function p(e) {
         emptyState: O,
         searchQuery: h,
         onSearchChange: j
-      }), (0, r.jsx)(l.A, {
+      }), (0, r.jsx)(i.A, {
         onClose: A,
-        setting: null != N ? N : w
+        setting: null != E ? E : w
       })]
     })
   })

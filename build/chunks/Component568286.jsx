@@ -47,7 +47,7 @@ let f = e => {
       }
     })(E), S = async () => {
       await O(f.id) && b()
-    }, T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), N = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), y = g.intl.formatToPlainString(g.t.KsMRP5, {
+    }, T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), N = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), j = g.intl.formatToPlainString(g.t.KsMRP5, {
       numChannels: T.length,
       numAdditionalBenefits: I.length,
       subscriptionEndDate: N
@@ -66,7 +66,7 @@ let f = e => {
         loading: C
       }],
       title: g.intl.string(g.t.O6l5tM),
-      subtitle: y,
+      subtitle: j,
       onClose: b,
       children: (0, r.jsxs)(o.BJc, {
         gap: 8,

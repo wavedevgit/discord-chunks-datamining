@@ -184,9 +184,9 @@ let K = () => {
         }), (0, r.jsx)("div", {
           className: eT.planComparisonTableContainer,
           ref: eS.ref,
-          children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(j.A, {})
+          children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(y.A, {})
         })]
-      }), !eg && (0, r.jsx)(y.A, {
+      }), !eg && (0, r.jsx)(j.A, {
         isVisible: eA && es,
         subscriptionTier: eu,
         isApplicationHome: true,

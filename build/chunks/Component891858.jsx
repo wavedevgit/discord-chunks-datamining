@@ -31,9 +31,9 @@ let I = e => {
       isAllPerksVisible: l,
       setIsAllPerksVisible: I,
       previousComponent: N,
-      enablePremiumBrandRefresh: y
+      enablePremiumBrandRefresh: j
     } = e,
-    j = i.useRef(null),
+    y = i.useRef(null),
     v = i.useRef(null),
     P = Object.entries((0, h.A)()).reduce((e, t) => {
       let [n, r] = t;
@@ -62,22 +62,22 @@ let I = e => {
       [S.ho]: l,
       [S.LM]: w
     }),
-    ref: j,
+    ref: y,
     children: (0, r.jsx)(c.hLv, {
       color: "nitro-pink",
       className: s()(S.kL, S.Gd, {
-        [S.fv]: !y
+        [S.fv]: !j
       }),
       children: (0, r.jsxs)(_.f5, {
         value: R,
-        children: [y ? (0, r.jsx)(f.A, {
+        children: [j ? (0, r.jsx)(f.A, {
           onBackClick: k
         }) : (0, r.jsx)(A.A, {
           className: S.v1,
           onBackClick: k
         }), (0, r.jsxs)("div", {
           className: s()(S.fi, {
-            [S._9]: y
+            [S._9]: j
           }),
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",

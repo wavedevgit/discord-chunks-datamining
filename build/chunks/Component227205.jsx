@@ -51,7 +51,7 @@ let I = {
       onVisibilityChange: P
     } = e, B = (0, i.K)(e => {
       null == P || P(e)
-    }, .1, null != P), w = l.useRef(null), D = (0, S.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
+    }, .1, null != P), w = l.useRef(null), D = (0, x.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
       var e;
       return null != N ? N : null == k ? I : {
         rankedSkuIds: null != (e = k.heroRanking) ? e : [],
@@ -116,7 +116,7 @@ let I = {
         style: null != Z ? {
           background: Z
         } : true,
-        children: null != K && (0, r.jsx)(x.A, {
+        children: null != K && (0, r.jsx)(S.A, {
           bannerStatic: K,
           bannerAnimated: W,
           bannerRive: Y,

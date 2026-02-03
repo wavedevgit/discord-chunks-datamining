@@ -93,12 +93,12 @@ let H = e => {
               userDiscountOffer: X,
               discountedPrice: en
             })
-          }), (0, r.jsx)(j.A, {
+          }), (0, r.jsx)(y.A, {
             variant: w.cJ.WHATS_NEW,
             className: k.Iw,
             noBackground: true,
             leftAlignHeaders: true
-          }), (0, r.jsx)(j.A, {
+          }), (0, r.jsx)(y.A, {
             className: k.xU,
             variant: w.cJ.PERKS_DISCOVERABILITY,
             noBackground: true,
@@ -138,7 +138,7 @@ let H = e => {
             alt: U.intl.string(U.t.X4IxWL)
           })]
         })
-      }), et && null != en && (0, r.jsx)(y.A, {
+      }), et && null != en && (0, r.jsx)(j.A, {
         isVisible: er && z,
         premiumSubscription: F,
         churnDiscountOffer: X,

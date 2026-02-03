@@ -97,14 +97,14 @@ let I = Chunk64700.forwardRef((e, t) => {
     isDarkMode: _
   } = e, {
     analyticsLocations: b
-  } = (0, u.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), E = (0, A.QQ)(), I = (0, g.ar)(), N = (0, m.cg)(), y = (0, a.bG)([p.A], () => p.A.affinities).length > 0, j = O.intl.string(O.t.YCZldK);
+  } = (0, u.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), E = (0, A.QQ)(), I = (0, g.ar)(), N = (0, m.cg)(), j = (0, a.bG)([p.A], () => p.A.affinities).length > 0, y = O.intl.string(O.t.YCZldK);
   return (0, r.jsx)(u.f5, {
     value: b,
     children: (0, r.jsxs)("div", {
       ref: t,
       className: s()(x.kL, n, {
         [x.V1]: !I,
-        [x.Q4]: !I && y
+        [x.Q4]: !I && j
       }),
       "data-testid": "v2-marketing-page-hero-header",
       children: [(0, r.jsxs)("div", {
@@ -112,8 +112,8 @@ let I = Chunk64700.forwardRef((e, t) => {
         children: [(0, r.jsx)(c.Heading, {
           variant: I ? "display-lg" : "display-md",
           color: "always-white",
-          children: j
-        }), y ? (0, r.jsx)("div", {
+          children: y
+        }), j ? (0, r.jsx)("div", {
           className: x.DF,
           children: (0, r.jsx)(h.A, {
             textColor: "always-white",
@@ -130,7 +130,7 @@ let I = Chunk64700.forwardRef((e, t) => {
           inOfferExperience: I,
           buttonClassName: i,
           isDarkMode: _
-        }), y && (0, r.jsx)(T, {
+        }), j && (0, r.jsx)(T, {
           variant: "text-md/normal",
           withBottomMargin: false
         })]

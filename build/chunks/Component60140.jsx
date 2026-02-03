@@ -77,11 +77,11 @@ let A = e => {
       }), t))
     })
   },
-  S = e => (0, r.jsx)("div", {
+  x = e => (0, r.jsx)("div", {
     className: v.hm,
     children: (0, r.jsx)(O, C({}, e))
   }),
-  x = e => (0, r.jsx)(o.A, {
+  S = e => (0, r.jsx)(o.A, {
     gap: "xl",
     children: (0, r.jsx)(O, C({}, e))
   }),
@@ -145,14 +145,14 @@ let A = e => {
           tab: c
         });
       case "feed":
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(x, {
           heroBlockRecord: i,
           isLoading: b,
           products: p,
           tab: c
         });
       case "hscroll":
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(S, {
           heroBlockRecord: i,
           isLoading: b,
           products: p,

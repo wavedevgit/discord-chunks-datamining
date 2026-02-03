@@ -15,8 +15,8 @@ var Chunk835245 = require("./835245.js"),
   Chunk861638 = require("./861638.js"),
   Chunk58149 = require("./58149.js"),
   Chunk69114 = require("./69114.js"),
+  Chunk265059 = require("./265059.js"),
   Chunk111162 = require("./111162.js"),
-  Chunk186111 = require("./186111.js"),
   Chunk954571 = require("./954571.js"),
   Chunk723702 = require("./723702.js"),
   Chunk859703 = require("./859703.js"),
@@ -108,7 +108,7 @@ function P(e, t) {
     r = arguments.length > 3 ? arguments[3] : true;
   if ((0, h.Q)({
       location: b.rE.QUEST_PREVIEW_TOOL
-    }) && u.A.getLayers().includes(O.zgK.USER_SETTINGS) || (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", e, t), r)) return;
+    }) && c.A.displayTools && "quest_preview" === c.A.lastOpenTabId || (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", e, t), r)) return;
   let i = T.has(e);
   if (n) return s.Ay.trackWithMetadata(e, t, i);
   d.default.track(e, t, {

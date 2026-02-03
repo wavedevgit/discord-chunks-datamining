@@ -57,7 +57,7 @@ let G = function(e) {
     [W, K] = i.useState(true),
     z = i.useRef(0),
     Z = (0, I.YE)(B, L.PremiumTypes.TIER_2),
-    X = (0, j.A)({
+    X = (0, y.A)({
       location: "PremiumHomePage"
     }),
     q = (0, a.bG)([N.A], () => N.A.hasFetched);
@@ -74,7 +74,7 @@ let G = function(e) {
       load_duration_ms: z.current
     })
   }, [l, W]), i.useEffect(() => {
-    n && (null != V || null != F) && (0, y.u1)(V, F)
+    n && (null != V || null != F) && (0, j.u1)(V, F)
   }, [n, V, F]);
   let J = (0, a.bG)([O.A], () => O.A.enabled),
     Q = t === L.Mf.ApplicationStoreHome,

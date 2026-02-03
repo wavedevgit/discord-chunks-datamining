@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk775602 = require("./775602.js"),
   Chunk379848 = require("./379848.jsx"),
   Chunk832248 = require("./832248.js"),
-  Chunk186111 = require("./186111.js"),
+  Chunk995377 = require("./995377.js"),
   Chunk203982 = require("./203982.js"),
   Chunk764231 = require("./764231.js"),
   Chunk881141 = require("./881141.js"),
@@ -25,7 +25,7 @@ function j(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, l = (0, h.A)(), s = (0, r.bG)([o.A], () => o.A.useReducedMotion), m = (0, d.A)(e => e.isOpen), p = (0, r.bG)([u.A], () => u.A.getLayers().includes(f.zgK.USER_SETTINGS));
+  } = e, l = (0, h.A)(), s = (0, r.bG)([o.A], () => o.A.useReducedMotion), m = (0, d.A)(e => e.isOpen), p = (0, u.G)();
   return s || null == l || m || p ? null : (0, a.jsx)(c.zJ, {
     contentType: i.M.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {

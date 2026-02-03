@@ -144,7 +144,7 @@ function M(e) {
               variant: "text-sm/normal",
               children: L.intl.string(L.t.xeEC20)
             })]
-          }), (0, r.jsx)(j.A, {
+          }), (0, r.jsx)(y.A, {
             className: w.fz,
             user: M,
             pendingAvatarSrc: (0, b.V7)({
@@ -155,7 +155,7 @@ function M(e) {
             onThemeColorsChange: h.a,
             showPremiumIcon: false,
             preventDisabled: true
-          }), (0, r.jsx)(y.A, {
+          }), (0, r.jsx)(j.A, {
             className: w.fz,
             isTryItOut: true,
             showRemoveBannerButton: null != W,

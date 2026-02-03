@@ -40,7 +40,7 @@ function b(e) {
     displayProfile: S,
     pendingThemeColors: i,
     isPreview: true
-  }), N = p.Ay.canUsePremiumProfileCustomization(t), y = null != n ? n : t.getAvatarURL(h, 80), j = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(y, j, false);
+  }), N = p.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(h, 80), y = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(j, y, false);
   if (null == T || null == I) return null;
   let P = e => {
     s(a()(e, null == S ? true : S.themeColors) ? true : e)

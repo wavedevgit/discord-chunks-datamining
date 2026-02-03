@@ -34,12 +34,12 @@ function O(e) {
     guildDisplayNameStyles: T,
     pendingDisplayNameStyles: I,
     pendingErrors: N
-  } = (0, m.B0)(t, n), [y, j] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), v = y === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
-    j(f.i.TAKE_ACTION), _.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
+  } = (0, m.B0)(t, n), [j, y] = (0, c.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), v = j === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, P = (0, i.useCallback)(() => {
+    y(f.i.TAKE_ACTION), _.default.track(A.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.L)({
       analyticsLocations: C,
       guildId: n
     })
-  }, [C, j, n]), R = (0, i.useCallback)(() => {
+  }, [C, y, n]), R = (0, i.useCallback)(() => {
     (0, a.dM)(null), _.default.track(A.HAw.DISPLAY_NAME_STYLES_REMOVED)
   }, []), D = (0, i.useCallback)(() => {
     (0, u.mZ)(null)

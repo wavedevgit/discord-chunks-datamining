@@ -1,7 +1,7 @@
 /** Chunk was on 90228 **/
 /** chunk id: 223352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,31 +13,32 @@ var Chunk627968 = require("./627968.js"),
   Chunk775602 = require("./775602.js"),
   Chunk341915 = require("./341915.js"),
   Chunk646764 = require("./646764.jsx"),
+  Chunk398025 = require("./398025.js"),
   Chunk568329 = require("./568329.jsx"),
   Chunk963713 = require("./963713.jsx"),
   Chunk772244 = require("./772244.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk355862 = require("./355862.js");
-let b = e => {
+let v = e => {
   let {
     isFullyExpanded: t,
     partnerBranding: n
-  } = e, r = (0, x.qV)().label, b = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
-    quest: v
-  } = l.useContext(h.T), {
-    expansionSpring: j
-  } = l.useContext(p.PW), _ = r ? false : 6;
+  } = e, r = (0, g.qV)().label, v = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
+    quest: j
+  } = l.useContext(x.T), {
+    expansionSpring: _
+  } = l.useContext(h.PW), y = r ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
-      className: f.tE,
+      className: b.tE,
       style: {
-        transform: (0, s.to)([j.to({
+        transform: (0, s.to)([_.to({
           range: [0, 1],
           output: [0, 0]
-        }), j.to({
+        }), _.to({
           range: [0, 1],
           output: [0, 82]
-        }), j.to({
+        }), _.to({
           range: [0, 1],
           output: [1, 64 / 48]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
@@ -45,9 +46,9 @@ let b = e => {
       children: (0, a.jsx)(m.A, {
         learnMoreStyle: "text",
         learnMoreFontSize: t ? 9 : true,
-        quest: v,
+        quest: j,
         questContent: u.uF.QUEST_BAR_V2,
-        autoplay: t && !b,
+        autoplay: t && !v,
         sourceQuestContent: u.uF.QUEST_BAR_V2,
         style: {
           width: 48,
@@ -57,38 +58,38 @@ let b = e => {
         }
       })
     }), (0, a.jsxs)(s.animated.div, {
-      className: i()(f.pm, {
-        [f.nd]: r
+      className: i()(b.pm, {
+        [b.nd]: r
       }),
       style: {
-        transform: (0, s.to)([j.to({
+        transform: (0, s.to)([_.to({
           range: [0, 1],
           output: [0, false]
-        }), j.to({
+        }), _.to({
           range: [0, 1],
-          output: [0, _]
+          output: [0, y]
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {
         className: i()({
-          [f.Iu]: !r
+          [b.Iu]: !r
         }),
         children: n
       }), (0, a.jsx)(s.animated.div, {
-        className: i()(f.ol, {
-          [f.yZ]: r
+        className: i()(b.ol, {
+          [b.yZ]: r
         }),
         style: {
-          opacity: j.to({
+          opacity: (0, p.a)(_.to({
             range: [0, 1],
             output: [r ? 1 : .7, 0]
-          })
+          }))
         },
         children: (0, a.jsx)(c.Text, {
           color: "always-white",
           lineClamp: 1,
           variant: "text-xs/medium",
-          children: g.intl.string(g.t["3mgEQf"])
+          children: f.intl.string(f.t["3mgEQf"])
         })
       })]
     })]

@@ -130,7 +130,7 @@ let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
       subheaderText: H
     } = M;
     return (0, r.jsx)("div", {
-      className: s()(y.Hc, l),
+      className: s()(j.Hc, l),
       children: (0, r.jsxs)(O.A, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -150,59 +150,59 @@ let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
         return e
       }({
         cardType: u.sl2.CUSTOM,
-        cardClassName: y.Nr
+        cardClassName: j.Nr
       }, w), n = n = {
         children: [(0, r.jsx)(m.A, {
           muted: true,
           autoPlay: true,
           playsInline: true,
           loop: true,
-          className: y.Ki,
-          src: j.A
+          className: j.Ki,
+          src: y.A
         }), (0, r.jsxs)("div", {
-          className: y.zK,
+          className: j.zK,
           children: [(0, r.jsx)("img", {
             src: v.A,
-            className: y._e,
+            className: j._e,
             alt: "",
             "aria-hidden": true
           }), (0, r.jsx)("div", {
-            className: y.mR
+            className: j.mR
           })]
         }), (0, r.jsxs)("div", {
-          className: y.FS,
+          className: j.FS,
           children: [(0, r.jsx)("div", {
-            className: y.aZ,
+            className: j.aZ,
             children: (0, r.jsx)(c.Exy, {
               type: "beta",
               variant: "expressive"
             })
           }), (0, r.jsx)(c.DZT, {
             variant: "heading-xl/bold",
-            className: y.R_,
+            className: j.R_,
             children: B
           }), (0, r.jsx)(c.EYj, {
             variant: "text-md/medium",
-            className: y.G3,
+            className: j.G3,
             children: H
           }), U && (0, r.jsx)(x.A, {
-            className: y.L$
+            className: j.L$
           }), G && (0, r.jsxs)("div", {
-            className: y.fB,
+            className: j.fB,
             children: [(0, r.jsx)(c.EYj, {
               variant: "text-md/medium",
-              className: y.G3,
+              className: j.G3,
               children: N.intl.string(I.default["/1mWUn"])
             }), (0, r.jsx)(c.Cp8, {
               size: "sm",
               color: "currentColor"
             }), (0, r.jsx)(c.EYj, {
               variant: "text-md/medium",
-              className: y.G3,
+              className: j.G3,
               children: R.total_rewarded_from_program
             })]
           }), (0, r.jsx)("div", {
-            className: y.WT,
+            className: j.WT,
             children: (0, r.jsx)(c.e2v, {
               children: k
             })

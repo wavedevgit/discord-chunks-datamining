@@ -47,7 +47,7 @@ function N(e) {
   return e
 }
 
-function y(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = () => (0, r.jsx)("div", {
+let y = () => (0, r.jsx)("div", {
     className: x.Zr,
     children: (0, r.jsx)(c.Heading, {
       className: x.uC,
@@ -166,7 +166,7 @@ let j = () => (0, r.jsx)("div", {
             variant: "text-lg/bold"
           })
         }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {})]
-      }), n.map((e, t) => (0, r.jsx)(D, y(N({}, e), {
+      }), n.map((e, t) => (0, r.jsx)(D, j(N({}, e), {
         withBottomMargin: t === n.length - 1
       }), e.id))]
     })
@@ -262,7 +262,7 @@ let j = () => (0, r.jsx)("div", {
       k = (0, g.JM)(E.gD.PREMIUM_MONTH_TIER_2),
       B = (0, h.g)();
     if (!C || !S) return null;
-    n = o ? null : null != T ? (0, r.jsx)(v, {}) : (0, r.jsx)(j, {});
+    n = o ? null : null != T ? (0, r.jsx)(v, {}) : (0, r.jsx)(y, {});
     let H = I === E.pe.TIER_0 || d === E.PremiumTypes.TIER_0;
     return (0, r.jsx)(_.f5, {
       value: O,
@@ -290,7 +290,7 @@ let j = () => (0, r.jsx)("div", {
                 tier2MonthlyPrice: k,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: w
-              }), B.map(e => (0, i.createElement)(L, y(N({}, e), {
+              }), B.map(e => (0, i.createElement)(L, j(N({}, e), {
                 key: e.id
               })))]
             })]

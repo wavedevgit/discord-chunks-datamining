@@ -2,25 +2,24 @@
 /** chunk id: 710969, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gp: () => D,
-  HN: () => S,
-  Ic: () => b,
-  Kc: () => N,
-  L4: () => R,
-  Li: () => w,
-  RF: () => x,
-  ZA: () => y,
-  ZG: () => A,
+  Gp: () => P,
+  HN: () => I,
+  Ic: () => y,
+  Kc: () => C,
+  L4: () => w,
+  Li: () => N,
+  RF: () => L,
+  ZG: () => v,
   gO: () => E,
-  if: () => O,
-  r$: () => M,
-  t6: () => I,
-  v1: () => v,
-  vZ: () => L,
+  if: () => b,
+  r$: () => x,
+  t6: () => A,
+  v1: () => O,
+  vZ: () => D,
   vc: () => m,
   vy: () => g,
-  xn: () => T,
-  yI: () => P
+  xn: () => S,
+  yI: () => R
 }), require("./896048.js");
 var Chunk665260 = require("./665260.js"),
   Chunk773669 = require("./773669.js"),
@@ -91,22 +90,18 @@ function E(e, t) {
   return (0, r.Lt)(e.dismissedQuestContent, c.TY[n])
 }
 
-function y(e, t) {
-  return e.targetedContent.includes(t)
-}
-
-function b(e) {
+function y(e) {
   return new Date(e.config.expiresAt).valueOf() <= Date.now()
 }
 
-function O(e) {
-  if (!b(e)) returnfalse;
+function b(e) {
+  if (!y(e)) returnfalse;
   let t = Date.now() - h,
     n = new Date(e.config.expiresAt).valueOf();
   return null != e.config.expiresAt && !(n <= t)
 }
 
-function v(e) {
+function O(e) {
   let t = null,
     n = Date.now();
   for (let r of e) {
@@ -116,21 +111,21 @@ function v(e) {
   return t
 }
 
-function A(e) {
+function v(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
     dateStyle: "short"
   };
   return null == e ? "" : new Date(e).toLocaleDateString(i.default.locale, t)
 }
 
-function I(e, t, n) {
+function A(e, t, n) {
   let r = t.get(n);
   if (null == r) return;
   let i = e.get(r.quest.id);
-  if (null != i && !b(i)) return i
+  if (null != i && !y(i)) return i
 }
 
-function S(e) {
+function I(e) {
   return ({
     [s.uF.QUEST_BAR]: s.yW.DESKTOP_ACCOUNT_PANEL_AREA,
     [s.uF.QUEST_BAR_V2]: s.yW.DESKTOP_ACCOUNT_PANEL_AREA,
@@ -138,12 +133,12 @@ function S(e) {
   })[e]
 }
 
-function T(e) {
-  let t = S(e);
+function S(e) {
+  let t = I(e);
   return null != t && c.J6.has(t)
 }
 
-function C(e) {
+function T(e) {
   let {
     enableNewRequestBehavior: t
   } = l.A.getConfig({
@@ -174,37 +169,37 @@ function C(e) {
   }
 }
 
-function N(e, t) {
+function C(e, t) {
   var n;
-  let r = S(t);
+  let r = I(t);
   if (null == r) return c.K3;
   let {
     adDecisionData: i,
     questId: a
-  } = null != (n = C(r)) ? n : {};
+  } = null != (n = T(r)) ? n : {};
   return null != i && a === e ? i : c.K3
+}
+
+function N(e) {
+  var t;
+  let n = I(e);
+  if (null != n) return null == (t = T(n)) ? true : t.metadataRaw
 }
 
 function w(e) {
   var t;
-  let n = S(e);
-  if (null != n) return null == (t = C(n)) ? true : t.metadataRaw
+  let n = I(e);
+  if (null != n) return null == (t = T(n)) ? true : t.metadataSealed
 }
 
-function R(e) {
-  var t;
-  let n = S(e);
-  if (null != n) return null == (t = C(n)) ? true : t.metadataSealed
-}
-
-function P(e, t) {
+function R(e, t) {
   var n;
-  let r = S(e);
+  let r = I(e);
   if (null == r) return;
   let {
     trafficMetadataRaw: i,
     questId: a
-  } = null != (n = C(r)) ? n : {};
+  } = null != (n = T(r)) ? n : {};
   if (null != i && a === t) return i;
   if (null != t) {
     let e = o.A.getQuest(t);
@@ -212,14 +207,14 @@ function P(e, t) {
   }
 }
 
-function D(e, t) {
+function P(e, t) {
   var n;
-  let r = S(e);
+  let r = I(e);
   if (null == r) return;
   let {
     trafficMetadataSealed: i,
     questId: a
-  } = null != (n = C(r)) ? n : {};
+  } = null != (n = T(r)) ? n : {};
   if (null != i && a === t) return i;
   if (null != t) {
     let e = o.A.getQuest(t);
@@ -227,13 +222,13 @@ function D(e, t) {
   }
 }
 
-function L(e) {
+function D(e) {
   var t;
-  let n = S(e);
-  if (null != n) return null == (t = C(n)) ? true : t.adContext
+  let n = I(e);
+  if (null != n) return null == (t = T(n)) ? true : t.adContext
 }
 
-function x(e, t) {
+function L(e, t) {
   a.A.captureException(e, _(f({}, t), {
     tags: _(f({}, null == t ? true : t.tags), {
       app_context: "quests"
@@ -241,6 +236,6 @@ function x(e, t) {
   }))
 }
 
-function M() {
+function x() {
   return window.location.pathname.startsWith(u.BVt.QUEST_HOME)
 }

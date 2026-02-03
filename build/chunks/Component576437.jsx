@@ -11,7 +11,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk832248 = require("./832248.js"),
   Chunk201805 = require("./201805.jsx"),
   Chunk253932 = require("./253932.js"),
-  Chunk186111 = require("./186111.js"),
+  Chunk995377 = require("./995377.js"),
   Chunk461213 = require("./461213.js"),
   Chunk954571 = require("./954571.js"),
   Chunk130802 = require("./130802.jsx"),
@@ -32,7 +32,7 @@ let A = e => {
       hasLoadedQuestBar: r
     } = (0, c.c9)({
       location: b.rE.CONFLICT_CHECKS
-    }), l = u.tz.useSetting(), s = (0, i.bG)([d.A], () => d.A.getLayers().includes(f.zgK.USER_SETTINGS)), a = (0, i.bG)([p.A], () => p.A.getStatus()), {
+    }), l = u.tz.useSetting(), s = (0, d.G)(), a = (0, i.bG)([p.A], () => p.A.getStatus()), {
       isOpen: h
     } = (0, o.A)();
     if ((n && r || t) && !s && !h && !__OVERLAY__) {

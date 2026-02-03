@@ -39,7 +39,7 @@ let L = () => {
     (0, f.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: v.i.PRIMARY,
       forceTrack: true
-    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, y.default)()
+    }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, j.default)()
   },
   w = () => {
     var e, t;
@@ -52,7 +52,7 @@ let L = () => {
       A = (0, O.U9)(d, P.pe.TIER_2),
       f = (0, N.dk)("UserSettingsAppearanceClientThemes");
     i.useEffect(() => {
-      a && S.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
+      a && S.default.track(y.HAw.PREMIUM_UPSELL_VIEWED, {
         type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: s
       })
@@ -91,8 +91,8 @@ let L = () => {
                 subscriptionTier: P.pe.TIER_2,
                 defaultTextOverride: e,
                 premiumModalAnalyticsLocation: {
-                  object: j.ZSU.BUTTON_CTA,
-                  objectType: j.AnalyticsObjectTypes.BUY
+                  object: y.ZSU.BUTTON_CTA,
+                  objectType: y.AnalyticsObjectTypes.BUY
                 },
                 fullWidth: true
               })]
@@ -127,13 +127,13 @@ function M() {
       gradientPreset: p.A.gradientPreset
     })),
     s = null != I.eh.useSetting().customUserThemeSettings;
-  return t !== j.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
+  return t !== y.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.cGx, {
       gap: 24
     }), (0, r.jsx)(o.dOG, {
       label: R.intl.string(R.t.yF54Ks),
       checked: e && (0, a.qB)(t) && !n,
-      disabled: t !== j.NJ8.LIGHT || n || null != i || s,
+      disabled: t !== y.NJ8.LIGHT || n || null != i || s,
       onChange: c.LO
     }), (0, r.jsx)(o.cGx, {
       gap: 24

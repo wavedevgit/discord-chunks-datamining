@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 994020, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => y,
+  g: () => j,
   x: () => N
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
@@ -30,14 +30,14 @@ var Chunk64700 = require("./64700.js"),
 let I = 21552 == require.j ? [Chunk933958.Ay, Chunk181079.A, Chunk698441.Ay, Chunk863005.A, Chunk152007.A, Chunk924985.A, Chunk734057.A, Chunk760751.A, Chunk576705.A, Chunk222823.Ay, Chunk309010.A, Chunk543465.Ay] : null;
 
 function N() {
-  let [e, t] = r.useState(() => y());
+  let [e, t] = r.useState(() => j());
   return r.useEffect(() => {
-    let e = l().throttle(() => t(y()), 100);
+    let e = l().throttle(() => t(j()), 100);
     return I.forEach(t => t.addChangeListener(e)), () => I.forEach(t => t.removeChangeListener(e))
   }, []), e
 }
 
-function y() {
+function j() {
   let e = o.A.getFavoriteChannels(),
     t = O.Ay.isGuildCollapsed(S.V),
     n = E.A.getChannelId(),
@@ -125,12 +125,12 @@ function y() {
         }
       }
     }).value(),
-    y = {
+    j = {
       isEmpty: () => true,
       getRows: () => [],
       getRow: () => null
     },
-    j = {
+    y = {
       isEmpty: () => true,
       getRows: () => [],
       getRow: () => null
@@ -157,8 +157,8 @@ function y() {
         channel: n.channelList[t]
       }
     },
-    getGuildActionSection: () => y,
-    getChannelNoticeSection: () => j,
+    getGuildActionSection: () => j,
+    getChannelNoticeSection: () => y,
     getFirstVoiceChannel: () => null,
     getSectionRowsFromChannel(e) {
       let t = [I, ...N];

@@ -49,11 +49,11 @@ let b = e => {
       isReducedMotion: T,
       onClick: I,
       badgeText: N,
-      badgeVariant: y = "gradient",
-      size: j,
+      badgeVariant: j = "gradient",
+      size: y,
       backgroundVideoUrl: v,
       previewImageStyle: P = m.Tb.CONTAINED
-    } = e, R = (0, p.TM)(), D = i.useRef(null), L = i.useRef(0), w = (0, d.A)("(min-width: ".concat(1140, "px)")), M = P === m.Tb.OVERLAY && (j !== m.A0.LARGE || !w), G = j === m.A0.LARGE && w && P === m.Tb.OVERLAY, U = null != v && w && j === m.A0.LARGE, k = i.useMemo(() => (0, a.debounce)(() => {
+    } = e, R = (0, p.TM)(), D = i.useRef(null), L = i.useRef(0), w = (0, d.A)("(min-width: ".concat(1140, "px)")), M = P === m.Tb.OVERLAY && (y !== m.A0.LARGE || !w), G = y === m.A0.LARGE && w && P === m.Tb.OVERLAY, U = null != v && w && y === m.A0.LARGE, k = i.useMemo(() => (0, a.debounce)(() => {
       _.default.track(g.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
         box_type: (0, a.snakeCase)(t)
       })
@@ -61,10 +61,10 @@ let b = e => {
       null == D.current || T || (D.current.currentTime = L.current, D.current.play())
     }, H = () => {
       null == D.current || T || (L.current = D.current.currentTime, D.current.pause())
-    }, V = j === m.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", F = () => (0, r.jsxs)("div", {
-      className: s()(f.textBox, f["".concat(j)], G && f.overlayTextBox),
+    }, V = y === m.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", F = () => (0, r.jsxs)("div", {
+      className: s()(f.textBox, f["".concat(y)], G && f.overlayTextBox),
       children: [(0, r.jsxs)("div", {
-        children: [null == N ? null : "gradient" === y ? (0, r.jsx)("div", {
+        children: [null == N ? null : "gradient" === j ? (0, r.jsx)("div", {
           className: f.badgeContainer,
           children: (0, r.jsx)("div", {
             className: f.badge,
@@ -80,7 +80,7 @@ let b = e => {
             type: {
               text: N
             },
-            variant: y
+            variant: j
           })
         }), (0, r.jsx)(c.Heading, {
           variant: V,
@@ -99,7 +99,7 @@ let b = e => {
         debouncedOnClickAnalytics: k
       })]
     }), Y = () => (0, r.jsx)("div", {
-      className: s()(f.boxArtContainer, f["".concat(j)]),
+      className: s()(f.boxArtContainer, f["".concat(y)]),
       children: (0, r.jsx)(u.A, {
         playsInline: true,
         preload: x ? "auto" : "none",
@@ -118,7 +118,7 @@ let b = e => {
     }), W = C % 2 != 0;
     return (0, r.jsxs)(c.hLv, {
       id: t,
-      className: s()(f.backgroundColor, f.boxContainer, f["".concat(j)], f.gradientBackground, M && f.overlayImageMode, G && f.overlayMode),
+      className: s()(f.backgroundColor, f.boxContainer, f["".concat(y)], f.gradientBackground, M && f.overlayImageMode, G && f.overlayMode),
       onMouseEnter: B,
       onFocus: B,
       onBlur: H,

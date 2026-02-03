@@ -27,14 +27,14 @@ var r, i, Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk32603 = require("./32603.js"),
   Chunk355097 = require("./355097.js");
-let j = null,
+let y = null,
   v = null,
   P = new Chunk32603.Ay;
 
 function R() {
   let e = C.A.getChannelId(),
     t = C.A.getVoiceChannelId();
-  return j = e, v = t, P.clear()
+  return y = e, v = t, P.clear()
 }
 
 function D(e) {
@@ -86,10 +86,10 @@ function U(e) {
 function k() {
   let e = C.A.getChannelId(),
     t = C.A.getVoiceChannelId(),
-    n = j !== e || v !== t;
-  return !!n && (s()([j, v, e, t]).uniq().forEach(e => {
+    n = y !== e || v !== t;
+  return !!n && (s()([y, v, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
-  }), j = e, v = t, true)
+  }), y = e, v = t, true)
 }
 
 function B(e) {
@@ -316,7 +316,7 @@ let W = new Y(Chunk73153.h, {
     let {
       settings: n
     } = e;
-    if (n.type !== y.oD.PRELOADED_USER_SETTINGS) returnfalse;
+    if (n.type !== j.oD.PRELOADED_USER_SETTINGS) returnfalse;
     let r = null == (t = n.proto.guilds) ? true : t.guilds,
       i = false;
     return null != r && I.default.keys(r).forEach(e => {
@@ -341,6 +341,6 @@ let W = new Y(Chunk73153.h, {
     return n
   },
   WINDOW_FOCUS: function() {
-    return null != j && P.nonPositionalChannelIdUpdate(j)
+    return null != y && P.nonPositionalChannelIdUpdate(y)
   }
 })

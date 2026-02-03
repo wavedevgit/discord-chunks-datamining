@@ -58,8 +58,8 @@ let E = e => {
     i.useEffect(() => {
       T && N()
     }, [N, T]);
-    let y = (0, f.G4)(T),
-      j = (0, g.A)(),
+    let j = (0, f.G4)(T),
+      y = (0, g.A)(),
       v = (0, f.LQ)(),
       {
         fractionalState: P
@@ -70,7 +70,7 @@ let E = e => {
       }).enabled,
       L = (0, p.O9)(),
       w = (0, f.vx)({
-        perksCards: j,
+        perksCards: y,
         variant: n,
         hideCardsOnNarrowScreen: false,
         isPremiumSubscriber: v,
@@ -90,7 +90,7 @@ let E = e => {
       children: [(0, r.jsx)(E, {
         showAllPerksButton: x,
         leftAlignHeaders: O,
-        title: y.title,
+        title: j.title,
         headerClassname: C
       }), (0, r.jsx)(o.Text, {
         variant: "text-lg/normal",
@@ -103,7 +103,7 @@ let E = e => {
           [h.dO]: O,
           [h.br]: !O
         }),
-        children: y.subtitle
+        children: j.subtitle
       }), !O && null != x && (0, r.jsx)("div", {
         className: h.xk,
         children: x

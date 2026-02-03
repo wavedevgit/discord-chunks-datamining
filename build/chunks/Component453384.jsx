@@ -1,7 +1,7 @@
 /** Chunk was on 90228 **/
 /** chunk id: 453384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => p
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -9,55 +9,56 @@ var Chunk627968 = require("./627968.js"),
   i = require.n(Chunk503698),
   Chunk353709 = require("./353709.js"),
   Chunk397927 = require("./397927.js"),
+  Chunk398025 = require("./398025.js"),
   Chunk772244 = require("./772244.js"),
   Chunk419367 = require("./419367.js"),
   Chunk638322 = require("./638322.js");
-let m = Chunk64700.forwardRef((e, t) => {
+let p = Chunk64700.forwardRef((e, t) => {
   let {
     quest: n,
     percentComplete: l,
     size: r = 42,
-    strokeWidth: m = 3,
-    glowBlur: p = .4,
-    percentCompleteText: h,
-    percentCompleteTextVariant: x = "text-lg/medium",
-    children: g
-  } = e, f = (0, c.OY)(n, l > 0), b = r / 2, v = r / 2 - m / 2, j = 2 * Math.PI * v, _ = j - l * j, y = {
-    strokeDasharray: "".concat(j, " ").concat(j),
-    strokeDashoffset: _
-  }, A = {
-    strokeDasharray: "".concat(j, " ").concat(j),
-    strokeDashoffset: -l * j
+    strokeWidth: p = 3,
+    glowBlur: h = .4,
+    percentCompleteText: x,
+    percentCompleteTextVariant: g = "text-lg/medium",
+    children: f
+  } = e, b = (0, d.OY)(n, l > 0), v = r / 2, j = r / 2 - p / 2, _ = 2 * Math.PI * j, y = _ - l * _, A = {
+    strokeDasharray: "".concat(_, " ").concat(_),
+    strokeDashoffset: y
   }, C = {
-    boxShadow: "0 0 20px 0px ".concat(f.glow)
+    strokeDasharray: "".concat(_, " ").concat(_),
+    strokeDashoffset: -l * _
+  }, S = {
+    boxShadow: "0 0 20px 0px ".concat(b.glow)
   }, {
-    progressTextAnimation: S
+    progressTextAnimation: O
   } = (0, o.zhh)({
-    progressTextAnimation: +(null != h && 1 !== l),
-    config: d.N
+    progressTextAnimation: +(null != x && 1 !== l),
+    config: u.N
   });
   return (0, a.jsxs)("div", {
-    className: u.A7,
+    className: m.A7,
     ref: t,
     children: [(0, a.jsxs)("div", {
-      className: u.vW,
-      style: C,
-      children: [g, (0, a.jsxs)(s.animated.div, {
+      className: m.vW,
+      style: S,
+      children: [f, (0, a.jsxs)(s.animated.div, {
         style: {
-          opacity: S
+          opacity: (0, c.a)(O)
         },
-        className: i()(u.rD, u.qk),
+        className: i()(m.rD, m.qk),
         children: [(0, a.jsx)("div", {
-          className: i()(u.rD, u.LU)
+          className: i()(m.rD, m.LU)
         }), (0, a.jsx)(o.Text, {
-          variant: x,
+          variant: g,
           color: "text-strong",
-          className: u.l_,
-          children: h
+          className: m.l_,
+          children: x
         })]
       })]
     }), (0, a.jsxs)("svg", {
-      className: u.hr,
+      className: m.hr,
       height: r,
       width: r,
       children: [(0, a.jsxs)("defs", {
@@ -65,7 +66,7 @@ let m = Chunk64700.forwardRef((e, t) => {
           id: "glow",
           children: [(0, a.jsx)("feGaussianBlur", {
             result: "coloredBlur",
-            stdDeviation: p
+            stdDeviation: h
           }), (0, a.jsxs)("feMerge", {
             children: [(0, a.jsx)("feMergeNode", {
               in: "coloredBlur"
@@ -85,30 +86,30 @@ let m = Chunk64700.forwardRef((e, t) => {
           y2: "0%",
           children: [(0, a.jsx)("stop", {
             offset: "0%",
-            stopColor: f.backgroundTop
+            stopColor: b.backgroundTop
           }), (0, a.jsx)("stop", {
             offset: "100%",
-            stopColor: f.backgroundBottom
+            stopColor: b.backgroundBottom
           })]
         })]
       }), (0, a.jsx)("circle", {
-        className: u.qB,
-        strokeWidth: m,
+        className: m.qB,
+        strokeWidth: p,
         fill: "transparent",
-        r: v,
-        cx: b,
-        cy: b,
+        r: j,
+        cx: v,
+        cy: v,
         stroke: "url(#linear)",
-        style: A
+        style: C
       }), (0, a.jsx)("circle", {
-        className: u.qB,
-        strokeWidth: m,
+        className: m.qB,
+        strokeWidth: p,
         fill: "transparent",
-        r: v,
-        cx: b,
-        cy: b,
-        stroke: f.foreground,
-        style: y
+        r: j,
+        cx: v,
+        cy: v,
+        stroke: b.foreground,
+        style: A
       })]
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 90228 **/
 /** chunk id: 139210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => A
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,51 +15,52 @@ var Chunk627968 = require("./627968.js"),
   Chunk901406 = require("./901406.js"),
   Chunk270045 = require("./270045.jsx"),
   Chunk57718 = require("./57718.jsx"),
+  Chunk398025 = require("./398025.js"),
   Chunk545986 = require("./545986.jsx"),
   Chunk568329 = require("./568329.jsx"),
   Chunk963713 = require("./963713.jsx"),
   Chunk223352 = require("./223352.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk116224 = require("./116224.js");
-let _ = (0, Chunk353709.animated)(Chunk57718.Ay),
-  y = () => {
+let y = (0, Chunk353709.animated)(Chunk57718.Ay),
+  A = () => {
     let e = (0, u.go)(),
       {
         expansionSpring: t
-      } = l.useContext(g.PW),
+      } = l.useContext(f.PW),
       {
         onCtxMenuOpen: n,
         onCtxMenuClose: r,
         onCtxMenuSelect: h,
-        isExpanded: y,
-        isExpansionAnimationComplete: A,
-        quest: C
-      } = l.useContext(f.T),
-      S = l.useCallback(() => {
-        (0, x.Zc)(C, {
+        isExpanded: A,
+        isExpansionAnimationComplete: C,
+        quest: S
+      } = l.useContext(b.T),
+      O = l.useCallback(() => {
+        (0, g.Zc)(S, {
           content: c.uF.QUEST_BAR_V2,
           ctaContent: d.Cy.OPEN_DISCLOSURE,
           sourceQuestContent: c.uF.QUEST_BAR_V2
         })
-      }, [C]),
-      O = l.useCallback(() => {
-        (0, m.pu)(C, {
+      }, [S]),
+      T = l.useCallback(() => {
+        (0, m.pu)(S, {
           content: c.uF.QUEST_BAR_V2,
           ctaContent: d.Cy.OPEN_GAME_LINK,
           impressionId: e,
           sourceQuestContent: c.uF.QUEST_BAR_V2
         })
-      }, [e, C]),
-      T = y && A,
-      E = (0, a.jsx)(o.DUT, {
-        onClick: O,
-        className: i()(j.vk, {
-          [j.wm]: T
+      }, [e, S]),
+      E = A && C,
+      N = (0, a.jsx)(o.DUT, {
+        onClick: T,
+        className: i()(_.vk, {
+          [_.wm]: E
         }),
-        children: (0, a.jsx)(_, {
-          quest: C,
+        children: (0, a.jsx)(y, {
+          quest: S,
           withGameTile: false,
-          logotypeClassName: j.Iu,
+          logotypeClassName: _.Iu,
           logotypeStyle: {
             height: 24,
             maxWidth: 92,
@@ -71,8 +72,8 @@ let _ = (0, Chunk353709.animated)(Chunk57718.Ay),
         })
       });
     return (0, a.jsxs)(s.animated.div, {
-      className: i()(j.iE, j.Ht, {
-        [j.tT]: T
+      className: i()(_.iE, _.Ht, {
+        [_.tT]: E
       }),
       style: {
         transform: (0, s.to)([t.to({
@@ -81,41 +82,41 @@ let _ = (0, Chunk353709.animated)(Chunk57718.Ay),
         })], e => "translateY(".concat(e, "px)"))
       },
       children: [(0, a.jsx)(s.animated.div, {
-        className: j.Tu,
+        className: _.Tu,
         style: {
-          opacity: t.to({
+          opacity: (0, x.a)(t.to({
             range: [0, 1],
             output: [0, 1]
-          })
+          }))
         }
-      }), (0, a.jsx)(b.A, {
-        isFullyExpanded: T,
-        partnerBranding: E
+      }), (0, a.jsx)(v.A, {
+        isFullyExpanded: E,
+        partnerBranding: N
       }), (0, a.jsxs)(s.animated.div, {
-        className: j.P0,
+        className: _.P0,
         style: {
-          opacity: t.to({
+          opacity: (0, x.a)(t.to({
             range: [0, 1],
             output: [0, 1]
-          })
+          }))
         },
         children: [(0, a.jsxs)(o.DUT, {
-          className: j.y8,
-          onClick: S,
+          className: _.y8,
+          onClick: O,
           children: [(0, a.jsx)(o.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: v.intl.string(v.t.o6FLcF)
+            children: j.intl.string(j.t.o6FLcF)
           }), (0, a.jsx)(o.cBN, {
             color: o.LU0.colors.WHITE,
-            className: j.P$
+            className: _.P$
           })]
         }), (0, a.jsx)(p.C, {
           onOpen: n,
           onClose: r,
           onSelect: h,
           questContent: c.uF.QUEST_BAR_V2,
-          quest: C,
+          quest: S,
           shouldShowDisclosure: true,
           showShareLink: true,
           sourceQuestContent: c.uF.QUEST_BAR_V2,
@@ -139,12 +140,12 @@ let _ = (0, Chunk353709.animated)(Chunk57718.Ay),
               }
               return e
             }({}, e), n = n = {
-              className: j.rb,
-              "aria-label": v.intl.string(v.t.DEoVWZ),
+              className: _.rb,
+              "aria-label": j.intl.string(j.t.DEoVWZ),
               children: (0, a.jsx)(o.jNK, {
                 size: "md",
                 color: "currentColor",
-                className: i()(j.Bx, j.ON)
+                className: i()(_.Bx, _.ON)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  i = require.n(Chunk503698),
+  l = require.n(Chunk503698),
   Chunk284009 = require("./284009.js"),
   c = require.n(Chunk284009),
   Chunk353709 = require("./353709.js"),
@@ -24,14 +24,14 @@ function y(e) {
     active: o
   } = e, {
     useTitle: a,
-    useSubnavLabel: l,
+    useSubnavLabel: i,
     key: s
-  } = t, d = null == a ? true : a(), b = null == l ? true : l(), p = null != b ? b : d;
+  } = t, _ = null == a ? true : a(), b = null == i ? true : i(), p = null != b ? b : _;
   return c()(null != p, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.tG, {
     id: s,
     children: e => {
       var t, a;
-      return (0, r.jsx)(_.DUT, (t = function(e) {
+      return (0, r.jsx)(d.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -50,7 +50,7 @@ function y(e) {
         return e
       }({
         onClick: n,
-        className: i()(f.AS, {
+        className: l()(f.AS, {
           [f.vu]: o
         })
       }, e), a = a = {
@@ -73,15 +73,15 @@ function g(e) {
   let {
     categories: t
   } = e, n = b.A.useField("currentCategoryKey");
-  (0, d.Ay)(() => {
+  (0, _.Ay)(() => {
     t.some(e => e.key === n) || b.A.setState({
       currentCategoryKey: t[0].key
     })
   });
   let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
     {
-      thumbRef: i,
-      trackRef: l,
+      thumbRef: l,
+      trackRef: i,
       thumbAnchorRef: c,
       springs: u
     } = function(e) {
@@ -89,7 +89,7 @@ function g(e) {
         n = o.useRef(null),
         r = o.useRef(null),
         a = o.useRef(true),
-        [i, l] = (0, _.zhh)(() => ({
+        [l, i] = (0, d.zhh)(() => ({
           y: 0,
           height: 0,
           config: {
@@ -102,21 +102,21 @@ function g(e) {
         if (null == t.current || null == n.current || null == r.current) return;
         let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
         if (a.current) {
-          a.current = false, i.y.set(o.y - e.y), i.height.set(o.height);
+          a.current = false, l.y.set(o.y - e.y), l.height.set(o.height);
           return
         }
-        l({
+        i({
           y: o.y - e.y,
           height: o.height
         })
-      }, [e, l, i.y, i.height]), {
+      }, [e, i, l.y, l.height]), {
         thumbRef: n,
         trackRef: t,
         thumbAnchorRef: r,
-        springs: i
+        springs: l
       }
     }(a);
-  return (0, p.o)(), (0, r.jsxs)("div", {
+  return (0, p.u)(t), (0, r.jsxs)("div", {
     className: f.o8,
     role: "list",
     style: {
@@ -126,11 +126,11 @@ function g(e) {
     children: [(0, r.jsx)("div", {
       className: f.u4,
       "aria-hidden": "true",
-      ref: l,
+      ref: i,
       children: (0, r.jsx)(s.animated.div, {
         className: f.FF,
         style: u,
-        ref: i
+        ref: l
       })
     }), (0, r.jsx)("div", {
       className: f.gu,

@@ -31,7 +31,7 @@ function h(e) {
     navigateToHome: h,
     subscriptionGroup: O,
     renewalSkuId: x
-  } = e, C = (0, a.A)(n, 100), S = (0, p.PJ)(O.flags), T = S ? s.RR9 : s.nys, I = S ? f.intl.string(f.t["46YF2D"]) : f.intl.string(f.t.fFyGiA), N = null == (t = l.metadata) ? true : t.application_subscription_guild_id, y = (0, i.bG)([u.A], () => S && null != N ? u.A.getGuild(N) : true, [N, S]), j = (0, i.bG)([_.A], () => {
+  } = e, C = (0, a.A)(n, 100), S = (0, p.PJ)(O.flags), T = S ? s.RR9 : s.nys, I = S ? f.intl.string(f.t["46YF2D"]) : f.intl.string(f.t.fFyGiA), N = null == (t = l.metadata) ? true : t.application_subscription_guild_id, j = (0, i.bG)([u.A], () => S && null != N ? u.A.getGuild(N) : true, [N, S]), y = (0, i.bG)([_.A], () => {
     if (null != x) return _.A.get(x)
   }, [x]), v = (0, g.Y)(l.currentPeriodEnd);
   return (0, r.jsxs)("div", {
@@ -55,20 +55,20 @@ function h(e) {
               size: "xs",
               color: "currentColor"
             }), " ", I]
-          }), null != y && (0, r.jsxs)(r.Fragment, {
+          }), null != j && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               children: "•"
             }), (0, r.jsxs)("span", {
               className: b.vP,
               children: [(0, r.jsx)(d.A, {
-                guild: y,
+                guild: j,
                 size: d.A.Sizes.SMOL
               }), (0, r.jsx)(s.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-muted",
                 children: f.intl.format(f.t["7ZD8p1"], {
-                  guildName: y.name
+                  guildName: j.name
                 })
               })]
             })]
@@ -104,7 +104,7 @@ function h(e) {
             variant: "eyebrow",
             color: "text-brand",
             children: f.intl.string(f.t.fHIpOY)
-          }), null != j && (0, r.jsx)(s.Text, {
+          }), null != y && (0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-subtle",
             children: f.intl.format(f.t["OQk+jr"], {

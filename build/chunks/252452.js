@@ -2,17 +2,16 @@
 /** chunk id: 252452, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => f
-}), require("./65821.js");
+  A: () => d
+});
 var Chunk562465 = require("./562465.js"),
   Chunk506774 = require("./506774.js"),
   Chunk73153 = require("./73153.js"),
   Chunk624826 = require("./624826.js"),
-  Chunk398590 = require("./398590.js"),
   Chunk652215 = require("./652215.js"),
   Chunk516780 = require("./516780.js");
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,29 +20,19 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
-let f = {
-  open() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
-      t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
-      n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-    a.h.dispatch(d({
-      type: "USER_SETTINGS_MODAL_OPEN",
-      section: e,
-      subsection: t
-    }, n)), (0, s.id)(l.zgK.USER_SETTINGS)
-  },
+let d = {
   close() {
     a.h.dispatch({
       type: "USER_SETTINGS_MODAL_CLOSE"
@@ -52,7 +41,7 @@ let f = {
   setSection(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-    a.h.dispatch(d({
+    a.h.dispatch(u({
       type: "USER_SETTINGS_MODAL_SET_SECTION",
       section: e,
       subsection: t
@@ -92,7 +81,7 @@ let f = {
     });
     let {
       username: n,
-      email: s,
+      email: c,
       emailToken: u,
       password: d,
       avatar: f,
@@ -102,17 +91,17 @@ let f = {
       close: h
     } = t, m = {
       username: n,
-      email: s,
+      email: c,
       email_token: u,
       password: d,
       avatar: f,
       new_password: p,
       discriminator: null != _ && "" !== _ ? _ : true
-    }, g = i.w.get(l.Xlh), E = (0, c.oH)();
+    }, g = i.w.get(s.Xlh), E = (0, l.oH)();
     null != E && null != g && (m.push_provider = E, m.push_token = g);
-    let y = i.w.get(l.Ahp);
-    return null != c.vz && null != y && (m.push_voip_provider = c.vz, m.push_voip_token = y), r.Bo.patch({
-      url: l.Rsh.ME,
+    let y = i.w.get(s.Ahp);
+    return null != l.vz && null != y && (m.push_voip_provider = l.vz, m.push_voip_token = y), r.Bo.patch({
+      url: s.Rsh.ME,
       oldFormErrors: true,
       body: m,
       rejectWithError: false

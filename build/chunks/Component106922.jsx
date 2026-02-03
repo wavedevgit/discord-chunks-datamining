@@ -191,7 +191,7 @@ function em() {
             G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
               cta_type: ec,
               target: ed
-            }), (0, P.default)(), (0, j.pX)(ei.BVt.APPLICATION_STORE)
+            }), (0, P.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
           },
           variant: "overlay-secondary",
           fullWidth: true,
@@ -208,7 +208,7 @@ function em() {
             G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
               cta_type: ec,
               target: ed
-            }), (0, P.default)(), (0, j.pX)(ei.BVt.APPLICATION_STORE)
+            }), (0, P.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
           },
           text: el.intl.string(el.t.VR2iVB),
           size: "md"
@@ -344,22 +344,22 @@ let ef = function() {
       return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
     }),
     O = !(c.Fr || c.v1) && null != g,
-    j = (0, u.bG)([D.A], () => D.A.enabled),
+    y = (0, u.bG)([D.A], () => D.A.enabled),
     v = i.useRef(null);
   (0, z.i)();
   let P = (0, K.m)();
   i.useEffect(() => {
     f.h.wait(async () => {
-      j || e || await Promise.all([b.hP(), b.$o(), (0, h.zS)(null, null, ei.tF5.DISCOVERY)]), p(false)
+      y || e || await Promise.all([b.hP(), b.$o(), (0, h.zS)(null, null, ei.tF5.DISCOVERY)]), p(false)
     })
-  }, [j, e]);
+  }, [y, e]);
   let [R, M] = i.useState(false);
-  if (j) return (0, r.jsx)(E.A, {});
+  if (y) return (0, r.jsx)(E.A, {});
   if (e) return (0, r.jsx)(N.uK, {});
   let U = s && null !== l && a,
     k = m.fetched && m.isFractionalPremiumActive,
     B = null == n ? true : n.isPremiumWithPremiumGroup();
-  if (!U && !k && !o && !B) return (0, r.jsx)(y.A, {
+  if (!U && !k && !o && !B) return (0, r.jsx)(j.A, {
     title: el.intl.string(el.t.dyq9TR),
     note: null
   });

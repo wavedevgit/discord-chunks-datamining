@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 533808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => y
 }), require("./896048.js"), require("./747238.js");
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -59,7 +59,7 @@ function I(e, t) {
   }), e
 }
 let N = "isDefault";
-class y extends(r = Chunk64700.PureComponent) {
+class j extends(r = Chunk64700.PureComponent) {
   componentWillUnmount() {
     p.h.wait(() => {
       (0, m.ey)(), (0, m.tc)()
@@ -299,12 +299,12 @@ class y extends(r = Chunk64700.PureComponent) {
     }
   }
 }
-S(y, "defaultProps", {
+S(j, "defaultProps", {
   onDelete: () => {},
   onSubmit: () => {},
   onCancel: () => {}
 });
-let j = Chunk311907.Ay.connectStores([Chunk615405.A], () => ({
+let y = Chunk311907.Ay.connectStores([Chunk615405.A], () => ({
   updateError: f.A.editSourceError,
   removeError: f.A.removeSourceError
-}))(y)
+}))(j)
