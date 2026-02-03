@@ -183,13 +183,13 @@ function k(e) {
     eM = null,
     ej = null;
   if (et === R.VVm.ONE_TIME) {
-    var ek;
+    var ek, eU;
     l()(null != ei, "SKU must be selected for one-time purchases"), eM = null != (ek = ea[ei]) ? ek : null, l()(null != eM, "SKU must exist and be fetched.");
     let e = eo[ei],
       t = null != en ? en : b.B;
-    ej = null != e ? e[t] : null
+    ej = null != e ? null != (eU = e[t]) ? eU : e[b.B] : null
   }
-  let eU = async () => {
+  let eG = async () => {
     await (0, S.l)({
       setPurchaseState: n,
       setHasAcceptedTerms: $,
@@ -221,34 +221,34 @@ function k(e) {
       invoicePreview: ec,
       orderId: ex
     })
-  }, eG = {
+  }, eV = {
     baseAnalyticsData: G,
     flowStartTime: V,
-    makePurchase: eU,
+    makePurchase: eG,
     onNext: s,
     onPurchaseError: U,
     paymentSource: eS,
     paymentSourceId: en,
     purchaseTokenAuthState: Y,
     setPurchaseState: n
-  }, eV = i.useRef(eG);
+  }, eF = i.useRef(eV);
   i.useEffect(() => {
-    eV.current = eG
+    eF.current = eV
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = eV.current;
+    } = eF.current;
     eA && !ef && null == t && e()
   }, [eA, ef, t]);
   let {
-    enabled: eF
+    enabled: eB
   } = (0, f.T0)({
     location: "PaymentModalReviewStepFooter"
   });
   if (eA) return null;
-  let eB = null != W || et === R.VVm.ONE_TIME && !ef,
-    eH = z && !eB,
-    eY = {
+  let eH = null != W || et === R.VVm.ONE_TIME && !ef,
+    eY = z && !eH,
+    eW = {
       legalTermsNodeRef: p,
       invoiceError: x,
       planError: k,
@@ -260,21 +260,21 @@ function k(e) {
       planGroup: B,
       isPrepaid: eP,
       isTrial: Z,
-      makePurchase: eU,
+      makePurchase: eG,
       needsPaymentSource: null == eS && !eD,
       onNext: s,
       inReverseTrial: eu,
       onPaymentSourceAdd: Q
     };
-  return eF ? (0, r.jsx)(j, M(L({}, eY), {
+  return eB ? (0, r.jsx)(j, M(L({}, eW), {
     selectedSkuId: ei,
-    showBackButton: eH,
+    showBackButton: eY,
     onBackClick: a
   })) : (0, r.jsxs)(u.jlY, {
     "data-migration-pending": true,
     align: _.A.Align.CENTER,
     className: o()(ed, P.H),
-    children: [(0, r.jsx)(y.Ay, L({}, eY)), (0, r.jsx)(w.A, {}), eH ? (0, r.jsx)("div", {
+    children: [(0, r.jsx)(y.Ay, L({}, eW)), (0, r.jsx)(w.A, {}), eY ? (0, r.jsx)("div", {
       className: P.a,
       children: (0, r.jsx)(g.A, {
         onClick: a

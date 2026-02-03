@@ -75,32 +75,39 @@ function U() {
     invoicePreview: u,
     inReverseTrial: d,
     isEligibleForTrial: p,
-    userTrialOffer: _
+    userTrialOffer: _,
+    checkoutPaymentSources: h,
+    hasCheckoutContextLoaded: y
   } = (0, E.P5)(), {
-    isGift: h
-  } = (0, g.Pv)(), y = (0, C.W)(r, n), b = i.useMemo(() => {
+    isGift: b
+  } = (0, g.Pv)(), O = (0, C.W)(r, n), v = i.useMemo(() => {
+    if (null == n) returnfalse;
+    if (!y) returntrue;
+    let e = h.find(e => e.id === n);
+    return null != e && !e.enabled
+  }, [h, y, n]), A = i.useMemo(() => {
     if (null != o) {
       if ((0, m.xq)(o.id)) return P.LE;
       if ((0, m.z4)(o.id)) return P.DA
     }
     return []
-  }, [o]), O = i.useMemo(() => c === D.VV.ONE_TIME ? null == s && null != n || null != l : null == u || !h && null != y && c === D.VV.SUBSCRIPTION && p && !y.canRedeemTrial(), [c, s, n, l, u, h, y, p]), v = (0, m.J$)(a.paymentSourceId), A = c === D.VV.SUBSCRIPTION && null == o ? L.intl.string(L.t.YScQSF) : (0, f.Ro)({
+  }, [o]), I = i.useMemo(() => c === D.VV.ONE_TIME ? null == n || v || null == s || null != l : null == u || !b && null != O && c === D.VV.SUBSCRIPTION && p && !O.canRedeemTrial(), [c, s, n, l, u, b, O, p, v]), S = (0, m.J$)(a.paymentSourceId), T = c === D.VV.SUBSCRIPTION && null == o ? L.intl.string(L.t.YScQSF) : (0, f.Ro)({
     purchaseType: c,
     plan: o,
     premiumSubscription: e,
-    isGift: h,
-    planGroup: b,
-    isPrepaidPaymentSource: v,
+    isGift: b,
+    planGroup: A,
+    isPrepaidPaymentSource: S,
     inReverseTrial: d,
     paymentSourceId: n,
     hasPaymentSources: t
   });
   return {
-    paymentSource: y,
+    paymentSource: O,
     isEligibleForTrial: p,
-    planGroup: b,
-    disablePurchase: O,
-    buttonText: A,
+    planGroup: A,
+    disablePurchase: I,
+    buttonText: T,
     userTrialOffer: _
   }
 }
