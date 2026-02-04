@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 345485, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -18,11 +18,11 @@ var Chunk110259 = require("./110259.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk330766 = require("./330766.js");
 
-function f(e) {
+function m(e) {
   let {
     guildId: t,
     markAsDismissed: n,
-    targetElementRef: f
+    targetElementRef: m
   } = e, A = (0, l.bG)([u.A, d.default], () => {
     let e = d.default.getCurrentUser(),
       n = u.A.getGuild(t);
@@ -36,15 +36,15 @@ function f(e) {
       is_owner: A
     }
   }), (0, r.jsx)(a.AM, {
-    targetElementRef: f,
-    title: g.intl.string(g.t.C0m4rQ),
-    body: g.intl.string(g.t.zOHfEX),
+    targetElementRef: m,
+    title: f.intl.string(f.t.C0m4rQ),
+    body: f.intl.string(f.t.zOHfEX),
     graphic: {
       type: "image",
-      src: m
+      src: g
     },
     actions: [{
-      text: g.intl.string(g.t.OgQQbG),
+      text: f.intl.string(f.t.OgQQbG),
       variant: "primary",
       onClick: () => {
         o.A.open(t, p.BEX.ROLE_SUBSCRIPTIONS)

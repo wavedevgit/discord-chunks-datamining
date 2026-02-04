@@ -308,7 +308,7 @@ class eo extends(r = Chunk311907.Ay.Store) {
   }
 }
 O(eo, "displayName", "Overlay-v3-Text-Chat-Store");
-let es = e => (0, E.U)(e, "OverlayTextChatStore"),
+let es = e => (0, E.U5)(e, "OverlayTextChatStore"),
   el = new eo(Chunk73153.h, __OVERLAY__ || !Chunk672396.OX && !Chunk672396.ed ? {} : {
     OVERLAY_MOUNTED: es(Z),
     MESSAGE_ACK: es(er),

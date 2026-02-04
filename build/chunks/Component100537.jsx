@@ -90,7 +90,7 @@ function L(e) {
     Y ? ((t = V.width / j.B5) > V.height && (e = (t = V.height) * j.B5), W = (V.height - t) / 2) : ((e = Math.min(V.height * j.B5, V.width)) > V.width && (t = (e = V.width) / j.B5), K = (V.width - e) / 2)
   }
   let z = j.E8.NO_CHAT,
-    Q = (0, m.G)();
+    Q = (0, g.G)();
   if (null == n) return null;
   let X = (null != M ? M : T.da6) + k,
     Z = (0, C.YY)(t);
@@ -153,7 +153,7 @@ function L(e) {
         }), Q ? (0, r.jsx)(y.A, {
           popoutOpen: false,
           onOpenPopout: () => {
-            (0, f.zV)(T.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, g.A)({
+            (0, m.zV)(T.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, f.A)({
               onConfirm: async () => {
                 (null == n ? true : n.id) != null && await v.A.refreshProxyTicket({
                   applicationId: n.id

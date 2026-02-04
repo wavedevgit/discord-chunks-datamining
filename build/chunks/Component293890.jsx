@@ -24,7 +24,7 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
   E = {
     [Chunk652215.e$_.SET_OVERLAY_LOCKED]: {
       scope: Chunk613057.hj,
-      validation: e => (0, m.A)(e).required().keys({
+      validation: e => (0, g.A)(e).required().keys({
         locked: e.boolean().required(),
         pid: e.number().min(0).required()
       }),
@@ -49,7 +49,7 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
     },
     [Chunk652215.e$_.OPEN_OVERLAY_ACTIVITY_INVITE]: {
       scope: Chunk613057.hj,
-      validation: e => (0, m.A)(e).required().keys({
+      validation: e => (0, g.A)(e).required().keys({
         type: e.number().required().valid([_.xL.JOIN]),
         pid: e.number().min(0).required()
       }),
@@ -65,13 +65,13 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
           errorCode: _.Lw6.INVALID_COMMAND
         }, "No application.");
         let l = d.A.getApplicationActivity(i);
-        if (null == l || null == l.secrets || !(0, g.px)(n, l.party, l.secrets)) throw new h.A({
+        if (null == l || null == l.secrets || !(0, f.px)(n, l.party, l.secrets)) throw new h.A({
           errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
           lock: s,
           context: o
-        } = (0, f.d5)(r), u = (0, c.A)(l, p.A);
+        } = (0, m.d5)(r), u = (0, c.A)(l, p.A);
         return (0, a.qf)(l, u, o).then(() => {
           if (s(), u) throw new h.A({
             errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
@@ -81,7 +81,7 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
     },
     [Chunk652215.e$_.OPEN_OVERLAY_GUILD_INVITE]: {
       scope: Chunk613057.hj,
-      validation: e => (0, m.A)(e).required().keys({
+      validation: e => (0, g.A)(e).required().keys({
         code: e.string().required(),
         pid: e.number().min(0).required()
       }),
@@ -107,7 +107,7 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
           let {
             context: i,
             lock: a
-          } = (0, f.d5)(n);
+          } = (0, m.d5)(n);
           return new Promise(e => {
             l.h.dispatch({
               type: "INVITE_MODAL_OPEN",
@@ -122,7 +122,7 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
     },
     [Chunk652215.e$_.OPEN_OVERLAY_VOICE_SETTINGS]: {
       scope: Chunk613057.hj,
-      validation: e => (0, m.A)(e).required().keys({
+      validation: e => (0, g.A)(e).required().keys({
         pid: e.number().min(0).required()
       }),
       handler(e) {
@@ -138,7 +138,7 @@ let b = new Chunk626584.A("RPCCommandsOverlay"),
         let {
           lock: s,
           context: o
-        } = (0, f.d5)(t);
+        } = (0, m.d5)(t);
         return new Promise(e => {
           (0, i.mMO)(async () => {
             let {

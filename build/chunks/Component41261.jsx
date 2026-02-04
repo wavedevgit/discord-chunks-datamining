@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 41261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,18 +17,18 @@ var Chunk503698 = require("./503698.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk839549 = require("./839549.js");
 
-function m(e) {
+function g(e) {
   let {
     platform: t
   } = e;
   return t === p.f$.XBOX ? (0, r.jsx)(u.A, {
-    className: g.Kk
+    className: f.Kk
   }) : t === p.f$.PLAYSTATION ? (0, r.jsx)(c.A, {
-    className: g.Kk
+    className: f.Kk
   }) : null
 }
 
-function f(e) {
+function m(e) {
   let {
     voiceState: t,
     awaitingRemoteSessionInfo: n
@@ -37,14 +37,14 @@ function f(e) {
     return null == (n = o.A.getSessionById(null != (e = null == t ? true : t.sessionId) ? e : "")) ? true : n.clientInfo.os
   }), u = null != i ? i : c;
   if (null == u || !p.hv.has(u)) return null;
-  let f = null != n,
-    A = f ? u === p.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : u === p.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
+  let m = null != n,
+    A = m ? u === p.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : u === p.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
   return (0, r.jsxs)("div", {
-    className: l()(g.zr, f ? g.jI : g.aW),
-    children: [(0, r.jsx)(m, {
+    className: l()(f.zr, m ? f.jI : f.aW),
+    children: [(0, r.jsx)(g, {
       platform: u
     }), (0, r.jsx)(s.Text, {
-      color: f ? "text-strong" : "always-white",
+      color: m ? "text-strong" : "always-white",
       variant: "text-xs/medium",
       children: A
     })]

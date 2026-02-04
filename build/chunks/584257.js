@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 584257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js");
 var Chunk73153 = require("./73153.js"),
   Chunk272355 = require("./272355.js"),
@@ -47,18 +47,18 @@ class h extends Chunk272355.A {
       if (!c.A.isEnabled()) returnfalse;
       let h = l.default.getId();
       if ((null == d ? true : d.find(e => e.id === h)) != null ? (0, a._)(o.sn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === h && (0, a._)(o.sn.PING_SOMEONE), !(0, u.gN)(null == r ? true : r.id, h, i, p)) returnfalse;
-      let g = u.Ay.getMostRecentMessageCombo(n),
+      let f = u.Ay.getMostRecentMessageCombo(n),
         {
-          combo: m
-        } = null != g ? g : {};
-      if (null == m) returnfalse;
+          combo: g
+        } = null != f ? f : {};
+      if (null == g) returnfalse;
       Object.values(o.sn).forEach(e => {
         if (null != s.A.getUnlocked(e)) return;
         let t = (0, o.vM)(e),
           n = null == t ? true : t.checkUnlock;
-        null == n || false !== n(m) && (0, a._)(e)
+        null == n || false !== n(g) && (0, a._)(e)
       })
     })
   }
 }
-let g = new h
+let f = new h

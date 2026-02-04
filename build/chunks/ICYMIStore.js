@@ -100,7 +100,7 @@ let M = +Chunk927813.A.Millis.DAY,
   ep = 0,
   eh = 0;
 
-function eg(e, t) {
+function ef(e, t) {
   if (Date.now() - V > 6 * y.A.Millis.HOUR) {
     let n = new Set(e.map(e => e.id));
     return t.slice(0, 20).filter(e => n.has(e.id)).length >= 3
@@ -108,17 +108,17 @@ function eg(e, t) {
   returnfalse
 }
 
-function em(e) {
+function eg(e) {
   if (!N.A.filterStaffContent()) returntrue;
   if ((0, x.xj)(e)) {
     if (e.data.guild_id === T.VL) returntrue;
-    let t = f.A.getGuild(e.data.guild_id);
+    let t = m.A.getGuild(e.data.guild_id);
     if (null == t || t.features.has(P.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
   returntrue
 }
 
-function ef(e, t, n, r) {
+function em(e, t, n, r) {
   let i = e.filter(e => e.type !== n);
   return t.forEach((e, t) => {
     (t + 1) * r < i.length ? i.splice((t + 1) * r, 0, e) : i.push(e)
@@ -128,7 +128,7 @@ function ef(e, t, n, r) {
 function eA() {
   if (en = en.filter(e => e.type !== T.Mm.RECOMMENDED_GUILDS), er = er.filter(e => e.type !== T.Mm.RECOMMENDED_GUILDS), 0 === el.length) return;
   let e = "recommendedGuilds",
-    t = f.A.getGuildsArray().filter(e => e.features.has(P.GuildFeatures.COMMUNITY)).length >= 5,
+    t = m.A.getGuildsArray().filter(e => e.features.has(P.GuildFeatures.COMMUNITY)).length >= 5,
     n = j.A.getReadTimestamp(e);
   if (t && null != n && Date.now() - ea > M && Date.now() - n < k) return;
   let r = {
@@ -169,7 +169,7 @@ function eb(e) {
     en = e, er = t
   }
   if (N.A.onlyShowRecentGeneratedCandidates() || (function() {
-      let e = f.A.getGuildIds(),
+      let e = m.A.getGuildIds(),
         t = [];
       for (let r of e) {
         if (null != q[r] && q[r] < 0) continue;
@@ -178,7 +178,7 @@ function eb(e) {
         for (let r of e)
           if (!(0, d.AZ)(r)) {
             if (null != r.channel_id) {
-              let e = g.A.getChannel(r.channel_id);
+              let e = f.A.getChannel(r.channel_id);
               if (!_.A.can(P.xBc.VIEW_CHANNEL, e)) continue
             }
             if ((0, d.W$)(r, 2 * y.A.Seconds.DAY) || (0, d.Fd)(r)) {
@@ -202,15 +202,15 @@ function eb(e) {
           }
       }
       t.sort((e, t) => {
-        let n = m.A.getGuildAffinity(e.data.guild_id),
-          r = m.A.getGuildAffinity(t.data.guild_id);
+        let n = g.A.getGuildAffinity(e.data.guild_id),
+          r = g.A.getGuildAffinity(t.data.guild_id);
         return (null != r ? r.score : 0) - (null != n ? n.score : 0)
       });
       let r = [],
         i = [];
       t.forEach(e => {
         Y[e.id] = e, null != j.A.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
-      }), en = ef(en, r, T.Mm.GUILD_EVENT, 7), er = ef(er, i, T.Mm.GUILD_EVENT, 7)
+      }), en = em(en, r, T.Mm.GUILD_EVENT, 7), er = em(er, i, T.Mm.GUILD_EVENT, 7)
     }(), l = new Set, a = {}, u = [], p = [], (h = null != (t = null == (n = s.A.getFeed(w.X1.GLOBAL_FEED)) ? true : n.entries) ? t : []).sort((e, t) => e.rank - t.rank).slice(0, 5), h.forEach(e => {
       if (l.has(e.content.id) || e.content.content_type !== i.ContentInventoryEntryType.PLAYED_GAME && e.content.content_type !== i.ContentInventoryEntryType.CUSTOM_STATUS && e.content.content_type !== i.ContentInventoryEntryType.TOP_GAME || (0, c.I5)(e.content)) return;
       if ((0, o.zD)(e.content)) {
@@ -233,7 +233,7 @@ function eb(e) {
         }
       };
       l.add(e.content.id), Y[t.id] = t, null != j.A.getReadTimestamp(t.id) ? p.push(t) : u.push(t)
-    }), en = ef(en, u, T.Mm.ACTIVITY, 5), er = ef(er, p, T.Mm.ACTIVITY, 5), eA()), null != F.load_id && G !== F.load_id) {
+    }), en = em(en, u, T.Mm.ACTIVITY, 5), er = em(er, p, T.Mm.ACTIVITY, 5), eA()), null != F.load_id && G !== F.load_id) {
     S.k.trackFeedLoaded({
       newTrackingProps: F,
       hasNewContent: Z,
@@ -306,12 +306,12 @@ function eN(e) {
   });
   let i = Z,
     [l, a] = eE(B);
-  if (H = eO(l, t), Z = J ? i && H.length >= T.$P : i && eg(r, B), 0 === n.length && i === Z) returnfalse;
+  if (H = eO(l, t), Z = J ? i && H.length >= T.$P : i && ef(r, B), 0 === n.length && i === Z) returnfalse;
   0 !== n.length && (en = r, er = [...er, ...n])
 }
 class eT extends(r = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(h.default, g.A, s.A, u.A, m.A, d.Ay, f.A, N.A, j.A, A.A, _.A, b.Ay, E.A, O.Ay), null != e) {
+    if (this.waitFor(h.default, f.A, s.A, u.A, g.A, d.Ay, m.A, N.A, j.A, A.A, _.A, b.Ay, E.A, O.Ay), null != e) {
       var t, n, r, i, l, a, o;
       (U = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         Y[e.id] = e
@@ -473,7 +473,7 @@ let ej = new eT(Chunk73153.h, {
         contentGenerationEnabled: t
       } = (0, C.o$)("processRawItems", false), n = N.A.onlyShowRecentGeneratedCandidates(), r = new Set(T.H8);
       n ? r = new Set([T.Mm.GENERATED_CANDIDATE]) : t && r.add(T.Mm.GENERATED_CANDIDATE);
-      let i = e.filter(e => r.has(e.type)).filter(em);
+      let i = e.filter(e => r.has(e.type)).filter(eg);
       return n && i.sort((e, t) => v.default.extractTimestamp(t.id) - v.default.extractTimestamp(e.id)), i.map(e => {
         if (e.type === T.Mm.MESSAGE && null != e.data.message_context) {
           let t = {};
@@ -487,7 +487,7 @@ let ej = new eT(Chunk73153.h, {
       feed_item_ids: B.map(e => e.id)
     };
     let [a, s] = eE(B);
-    if (H = eO(a), !J || 0 === Q || i) Q = 0, !eu && eg(a, B) ? (Z = true, X = true) : Z = false, eb({
+    if (H = eO(a), !J || 0 === Q || i) Q = 0, !eu && ef(a, B) ? (Z = true, X = true) : Z = false, eb({
       newUnread: a,
       newRead: s
     });

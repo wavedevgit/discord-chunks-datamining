@@ -57,7 +57,7 @@ function v(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, f = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, i.bG)([g.A], () => null == l ? null : g.A.getNickname(l.id)), v = !f && u, S = (0, A.j)(n), {
+  } = e, m = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, i.bG)([f.A], () => null == l ? null : f.A.getNickname(l.id)), v = !m && u, S = (0, A.j)(n), {
     avatarDecorationSrc: C
   } = (0, p.A)({
     user: l,
@@ -81,7 +81,7 @@ function v(e) {
           showAccountIdentifier: true,
           className: O.I8,
           usernameClass: O.Xh,
-          discriminatorClass: null != m.Ay.getGlobalName(l) ? O.vl : O.D2
+          discriminatorClass: null != g.Ay.getGlobalName(l) ? O.vl : O.D2
         }), (0, r.jsx)(a.Text, {
           className: O.L7,
           color: "text-muted",

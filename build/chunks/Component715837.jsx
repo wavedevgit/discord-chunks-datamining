@@ -26,7 +26,7 @@ let A = e => {
   (0, o.A)({
     guildId: A.id,
     groupListingId: null == _ ? true : _.id,
-    location: g.ThZ.ROLE_SUBSCRIPTIONS_TAB,
+    location: f.ThZ.ROLE_SUBSCRIPTIONS_TAB,
     relevantSubscriptionListingIds: null == _ ? true : _.subscription_listings_ids
   });
   let {
@@ -36,14 +36,14 @@ let A = e => {
   } = a.d0(null != (t = null == _ ? true : _.id) ? t : null, A.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(h.A, {
-      title: m.intl.format(m.t["rm+ojA"], {
+      title: g.intl.format(g.t["rm+ojA"], {
         serverName: A.name
       }),
       description: null != O ? O : null,
       coverImageAsset: null != (n = null == E ? true : E.cover_image_asset) ? n : null,
       guild: A,
       children: [null != _ ? (0, r.jsx)(c.A, {
-        className: f.Ds,
+        className: m.Ds,
         groupListingId: _.id,
         subscription: b
       }) : null, (0, r.jsx)(u.A, {
@@ -58,7 +58,7 @@ let A = e => {
             guildId: A.id,
             groupListingId: null != (t = null == _ ? true : _.id) ? t : "",
             listingId: e,
-            analyticsLocation: g.ThZ.ROLE_SUBSCRIPTIONS_TAB
+            analyticsLocation: f.ThZ.ROLE_SUBSCRIPTIONS_TAB
           }, e)
         })
       })

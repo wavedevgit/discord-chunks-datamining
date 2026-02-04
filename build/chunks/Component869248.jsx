@@ -28,8 +28,8 @@ function I(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, I = (0, _.Ay)(t), v = (0, p.k)(), S = (0, p.r)(), C = (0, l.bG)([u.A], () => u.A.isMessageRequest(t.id)), N = (0, l.bG)([d.A], () => d.A.isSpam(t.id)), T = (0, g.D)(t.id, t.getRecipientId()), j = i.useCallback(() => {
-    f.A.closeChannelSidebar(A.fe), C && v && (0, m.iN)(t.id), N && S && (0, m.iN)(t.id)
+  } = e, I = (0, _.Ay)(t), v = (0, p.k)(), S = (0, p.r)(), C = (0, l.bG)([u.A], () => u.A.isMessageRequest(t.id)), N = (0, l.bG)([d.A], () => d.A.isSpam(t.id)), T = (0, f.D)(t.id, t.getRecipientId()), j = i.useCallback(() => {
+    m.A.closeChannelSidebar(A.fe), C && v && (0, g.iN)(t.id), N && S && (0, g.iN)(t.id)
   }, [t.id, N, S, C, v]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(E.intl.string(E.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
@@ -42,7 +42,7 @@ function I(e) {
   let w = [(0, r.jsx)(o.Ay.Icon, {
     icon: a.PGe,
     tooltip: E.intl.string(E.t.cpT0Cq),
-    onClick: () => f.A.closeChannelSidebar(n)
+    onClick: () => m.A.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Ay, {

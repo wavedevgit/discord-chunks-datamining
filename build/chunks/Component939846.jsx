@@ -95,7 +95,7 @@ function el() {
     t = (0, Y.W)(),
     n = (0, K.A)(),
     l = (0, B.k)(),
-    c = (0, m.w)(),
+    c = (0, g.w)(),
     u = i.useCallback(() => {
       (0, p.showToast)((0, p.createToast)(ee.intl.string(ee.t["EDYbS+"]), p.ToastType.FAILURE))
     }, []),
@@ -106,9 +106,9 @@ function el() {
     }),
     h = (0, A.A)("message-requests-list"),
     {
-      channelId: g
+      channelId: f
     } = (0, F.N)(),
-    f = i.useCallback(() => {
+    m = i.useCallback(() => {
       d(n.map(e => e.channel.id))
     }, [n, d]),
     _ = i.useCallback(e => {
@@ -119,14 +119,14 @@ function el() {
       return (0, r.jsx)(z.A, {
         index: s,
         className: a()({
-          [et.wH]: null != g && g === u,
-          [et.wZ]: null != g && g === c
+          [et.wH]: null != f && f === u,
+          [et.wZ]: null != f && f === c
         }),
         channel: o.channel,
         user: o.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [l, n, g]),
+    }, [l, n, f]),
     b = i.useCallback(() => (0, r.jsxs)(E.A, {
       className: et.Gf,
       children: [t > 0 ? ee.intl.formatToPlainString(ee.t.rA4iWY, {
@@ -139,13 +139,13 @@ function el() {
           tag: "span",
           children: "•"
         }), (0, r.jsx)(p.QWc, {
-          onClick: f,
+          onClick: m,
           textVariant: "text-sm/normal",
           text: ee.intl.string(ee.t.p6t7RC),
           "aria-label": ee.intl.string(ee.t.p6t7RC)
         })]
       }) : null]
-    }, "title"), [t, f, c]);
+    }, "title"), [t, m, c]);
   return (n.length !== t && S.A.increment({
     name: o.K.MESSAGE_REQUEST_COUNT_DRIFT
   }), 0 === n.length) ? (0, r.jsx)(q.A, {
@@ -276,7 +276,7 @@ let ec = (0, Chunk456412.A)(function(e) {
   let {
     width: t
   } = e, n = (0, Y.W)();
-  (0, f.Ay)(() => {
+  (0, m.Ay)(() => {
     h.I(Z.BVt.MESSAGE_REQUESTS), (0, j.d)("message-requests"), k.default.track(Z.HAw.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.A.increment({
@@ -286,18 +286,18 @@ let ec = (0, Chunk456412.A)(function(e) {
   let l = (0, c.bG)([x.A], () => x.A.theme),
     s = (0, W.I)(),
     [u, d] = i.useState(false),
-    g = (0, c.bG)([R.Ay], () => {
+    f = (0, c.bG)([R.Ay], () => {
       let e = R.Ay.getSidebarState(R.fe);
       return null != e && e.type === T.PE.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    m = null == g ? true : g.channelId,
-    A = null != g,
-    _ = (0, G.c)(m),
-    b = (0, U.A)(m),
+    g = null == f ? true : f.channelId,
+    A = null != f,
+    _ = (0, G.c)(g),
+    b = (0, U.A)(g),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != m && !_ && b && A && ((0, C.iN)(m), N.A.closeChannelSidebar(R.fe))
-  }, [m, b, A, _]);
+    null != g && !_ && b && A && ((0, C.iN)(g), N.A.closeChannelSidebar(R.fe))
+  }, [g, b, A, _]);
   let [y, I] = i.useState(X.zz.REQUESTS), P = e => {
     I(e)
   };

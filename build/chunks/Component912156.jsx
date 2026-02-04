@@ -1,13 +1,13 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 912156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => S,
-  Q: () => g
+  A: () => N,
+  Q: () => p
 }), require("./747238.js"), require("./812715.js");
-var i, Chunk627968 = require("./627968.js"),
+var l, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  a = require.n(Chunk503698),
   Chunk863610 = require("./863610.jsx"),
   Chunk935154 = require("./935154.jsx"),
   Chunk573435 = require("./573435.jsx"),
@@ -15,54 +15,54 @@ var i, Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk778712 = require("./778712.js"),
   Chunk624510 = require("./624510.js"),
-  g = ((i = {}).TINY_24 = "TINY_24", i.SMALL_32 = "SMALL_32", i.MEDIUM_40 = "MEDIUM_40", i);
-let m = {
+  p = ((l = {}).TINY_24 = "TINY_24", l.SMALL_32 = "SMALL_32", l.MEDIUM_40 = "MEDIUM_40", l);
+let I = {
     TINY_24: 24,
     SMALL_32: 32,
     MEDIUM_40: 40
   },
-  y = {
+  m = {
     TINY_24: 24,
     SMALL_32: 26,
     MEDIUM_40: 34
   },
-  A = {
+  E = {
     TINY_24: [13, 11, 10],
     SMALL_32: [13, 11, 10],
     MEDIUM_40: [24, 20, 16]
   },
-  v = {
+  A = {
     TINY_24: [9, 8, 7],
     SMALL_32: [10, 9, 8],
     MEDIUM_40: [14, 12, 8]
   },
-  b = {
+  y = {
     TINY_24: Chunk624510.d7,
     SMALL_32: Chunk624510.OI,
     MEDIUM_40: Chunk624510.H5
   },
-  E = {
+  S = {
     TINY_24: 12,
     SMALL_32: 16,
     MEDIUM_40: 20
   };
 
-function O(e, t) {
+function v(e, t) {
   var n;
   return 0 === e.length ? 0 : t.length <= 0 ? e[0] : t.length > e.length ? e[e.length - 1] : null != (n = e[t.length - 1]) ? n : e[e.length - 1]
 }
 
-function x(e) {
+function O(e) {
   let {
     size: t
-  } = e, n = (0, p.Kj)(t), i = n.status * p.x, r = (i - n.status) / 2, l = n.status, a = n.size - i + r - n.stroke - n.offset, s = n.size - l - n.stroke - n.offset, o = i + 2 * n.stroke, u = l + 2 * n.stroke, c = (n.status + 2 * n.stroke) / 2, d = n.size - i + r - n.offset, h = n.size - l;
+  } = e, n = (0, g.Kj)(t), l = n.status * g.x, r = (l - n.status) / 2, i = n.status, s = n.size - l + r - n.stroke - n.offset, a = n.size - i - n.stroke - n.offset, o = l + 2 * n.stroke, u = i + 2 * n.stroke, c = (n.status + 2 * n.stroke) / 2, d = n.size - l + r - n.offset, h = n.size - i;
   return {
     iconSize: n.size,
-    statusWidth: i,
-    statusHeight: l,
+    statusWidth: l,
+    statusHeight: i,
     dotRadius: n.status / 4,
-    avatarCutoutX: a,
-    avatarCutoutY: s,
+    avatarCutoutX: s,
+    avatarCutoutY: a,
     avatarCutoutWidth: o,
     avatarCutoutHeight: u,
     avatarCutoutRadius: c,
@@ -70,20 +70,20 @@ function x(e) {
     indicatorY: h
   }
 }
-let _ = Chunk64700.memo(function(e) {
+let b = Chunk64700.memo(function(e) {
     let {
       avatarSize: t
     } = e, n = (0, u.S3)(h.clD.ONLINE, null), {
-      statusWidth: i,
-      statusHeight: l,
-      dotRadius: a
-    } = x({
+      statusWidth: l,
+      statusHeight: i,
+      dotRadius: s
+    } = O({
       size: t
     });
     return (0, r.jsx)(c.Ay, {
       mask: c.hW.STATUS_TYPING,
-      width: i,
-      height: l,
+      width: l,
+      height: i,
       "aria-hidden": true,
       children: (0, r.jsx)("div", {
         className: f.WQ,
@@ -91,155 +91,155 @@ let _ = Chunk64700.memo(function(e) {
           backgroundColor: n
         },
         children: (0, r.jsx)(o.n, {
-          dotRadius: a
+          dotRadius: s
         })
       })
     })
   }),
-  S = function(e) {
+  N = function(e) {
     var t, n;
-    let i, {
-        className: a,
+    let l, {
+        className: s,
         iconClassName: o,
         size: u,
         channel: h,
-        guild: g,
-        locked: S,
-        hasActiveThreads: I,
-        isTyping: j = false
+        guild: p,
+        locked: N,
+        hasActiveThreads: T,
+        isTyping: _ = false
       } = e,
-      T = l.useId();
-    if (null == g) return null;
-    let C = A[u],
-      N = y[u],
-      w = m[u],
-      P = (0, d.Iv)(g, 48),
-      D = E[u],
-      R = (() => {
+      C = i.useId();
+    if (null == p) return null;
+    let x = E[u],
+      D = m[u],
+      M = I[u],
+      j = (0, d.Iv)(p, 48),
+      w = S[u],
+      P = (() => {
         switch (u) {
           case "TINY_24":
-            return p._3.SIZE_24;
+            return g._3.SIZE_24;
           case "SMALL_32":
-            return p._3.SIZE_32;
+            return g._3.SIZE_32;
           case "MEDIUM_40":
-            return p._3.SIZE_40;
+            return g._3.SIZE_40;
           default:
             return u
         }
       })(),
-      k = (i = null != (n = null != (t = null == h ? true : h.name) ? t : "") ? n.replace(/[-_]+/g, " ").replace(/'s /g, " ").replace(/\w+/g, e => e[0]).replace(/\s/g, "") : "").length > 0 ? i : "?",
-      M = (0, d.Rb)(g),
-      L = (0, r.jsxs)("div", {
-        className: s()(f.zr, a),
+      R = (l = null != (n = null != (t = null == h ? true : h.name) ? t : "") ? n.replace(/[-_]+/g, " ").replace(/'s /g, " ").replace(/\w+/g, e => e[0]).replace(/\s/g, "") : "").length > 0 ? l : "?",
+      U = (0, d.Rb)(p),
+      G = (0, r.jsxs)("div", {
+        className: a()(f.zr, s),
         role: "img",
         style: {
-          width: w,
-          height: w
+          width: M,
+          height: M
         },
         children: [(0, r.jsx)(c.Ay, {
           mask: c.hW.CHANNEL_ICON_WITH_GUILD_ICON,
-          width: N,
-          height: N,
-          children: null != P ? (0, r.jsx)("img", {
-            alt: g.name,
-            src: P,
+          width: D,
+          height: D,
+          children: null != j ? (0, r.jsx)("img", {
+            alt: p.name,
+            src: j,
             className: f.es,
             style: {
-              width: N,
-              height: N
+              width: D,
+              height: D
             }
           }) : (0, r.jsx)("div", {
-            className: s()(f.TT, f.q9),
+            className: a()(f.TT, f.q9),
             style: {
-              fontSize: O(C, M),
-              width: N,
-              height: N
+              fontSize: v(x, U),
+              width: D,
+              height: D
             },
-            children: M
+            children: U
           })
         }), (0, r.jsx)("div", {
-          className: s()(f._C, b[u], o),
+          className: a()(f._C, y[u], o),
           "aria-hidden": true,
           children: (0, r.jsx)(c.Ay, {
             mask: c.hW.SQUIRCLE,
-            width: D,
-            height: D,
+            width: w,
+            height: w,
             children: (0, r.jsx)("div", {
-              className: s()(b[u], f.q9),
+              className: a()(y[u], f.q9),
               style: {
-                fontSize: O(v[u], k)
+                fontSize: v(A[u], R)
               },
-              children: k
+              children: R
             })
           })
         })]
       }),
       {
-        iconSize: U,
-        avatarCutoutX: G,
-        avatarCutoutY: V,
-        avatarCutoutWidth: z,
-        avatarCutoutHeight: F,
-        avatarCutoutRadius: H,
-        indicatorX: Y,
-        indicatorY: W
-      } = x({
-        size: R
+        iconSize: L,
+        avatarCutoutX: k,
+        avatarCutoutY: F,
+        avatarCutoutWidth: V,
+        avatarCutoutHeight: H,
+        avatarCutoutRadius: Y,
+        indicatorX: W,
+        indicatorY: z
+      } = O({
+        size: P
       });
-    return j ? (0, r.jsxs)("div", {
+    return _ ? (0, r.jsxs)("div", {
       className: f.J4,
       "aria-hidden": true,
       style: {
-        width: w,
-        height: w
+        width: M,
+        height: M
       },
       children: [(0, r.jsxs)("svg", {
-        width: U,
-        height: U,
-        viewBox: "0 0 ".concat(U, " ").concat(U),
+        width: L,
+        height: L,
+        viewBox: "0 0 ".concat(L, " ").concat(L),
         className: f._S,
         "aria-hidden": true,
         children: [(0, r.jsx)("defs", {
           children: (0, r.jsxs)("mask", {
-            id: T,
-            width: U,
-            height: U,
+            id: C,
+            width: L,
+            height: L,
             children: [(0, r.jsx)("rect", {
               x: 0,
               y: 0,
-              width: U,
-              height: U,
-              rx: Math.round(.3 * U),
-              ry: Math.round(.3 * U),
+              width: L,
+              height: L,
+              rx: Math.round(.3 * L),
+              ry: Math.round(.3 * L),
               fill: "white"
             }), (0, r.jsx)("rect", {
-              x: G,
-              y: V,
-              width: z,
-              height: F,
-              rx: H,
-              ry: H,
+              x: k,
+              y: F,
+              width: V,
+              height: H,
+              rx: Y,
+              ry: Y,
               fill: "black"
             })]
           })
         }), (0, r.jsx)("foreignObject", {
           x: 0,
           y: 0,
-          width: U,
-          height: U,
+          width: L,
+          height: L,
           overflow: "visible",
-          mask: "url(#".concat(T, ")"),
-          children: L
+          mask: "url(#".concat(C, ")"),
+          children: G
         })]
       }), (0, r.jsx)("div", {
         className: f.RL,
         style: {
-          left: Y,
-          top: W
+          left: W,
+          top: z
         },
-        children: (0, r.jsx)(_, {
-          avatarSize: R
+        children: (0, r.jsx)(b, {
+          avatarSize: P
         })
       })]
-    }) : L
+    }) : G
   }

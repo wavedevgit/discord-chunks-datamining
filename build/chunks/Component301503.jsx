@@ -45,10 +45,10 @@ function v() {
       onClearSearch: w,
       onSearchSubmit: L,
       isSearchVisible: R
-    } = (0, f.X)({
+    } = (0, m.X)({
       loadId: e.current
     }),
-    D = g.A.useField("searchBarState"),
+    D = f.A.useField("searchBarState"),
     {
       onTabsAvailableWidthChange: M,
       onCollapsedSearchBarClick: k,
@@ -58,7 +58,7 @@ function v() {
       isSearchBarVisible: j,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: D,
-      setSearchBarState: e => g.A.setState({
+      setSearchBarState: e => f.A.setState({
         searchBarState: e
       })
     }),
@@ -76,7 +76,7 @@ function v() {
     {
       onGuildCardSeen: Y,
       onGuildCardClick: K
-    } = (0, m.p)({
+    } = (0, g.p)({
       guildDiscoveryCardSeenManager: F.current,
       loadId: e.current
     });

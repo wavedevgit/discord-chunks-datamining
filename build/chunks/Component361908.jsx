@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 361908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -33,15 +33,15 @@ function h(e) {
   return e
 }
 
-function g(e) {
+function f(e) {
   let {
     guildId: t,
-    markAsDismissed: g,
-    renderTargetElement: m
-  } = e, f = {
+    markAsDismissed: f,
+    renderTargetElement: g
+  } = e, m = {
     text: p.intl.string(p.t.JzJpg4),
     onClick: () => {
-      o.default.track(u.HAw.MEDIA_CHANNEL_UPSELL_CLICKED, h({}, (0, s.H$)(t))), g(d.i.PRIMARY), (0, a.mMO)(async () => {
+      o.default.track(u.HAw.MEDIA_CHANNEL_UPSELL_CLICKED, h({}, (0, s.H$)(t))), f(d.i.PRIMARY), (0, a.mMO)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("64233"), n.e("9743")]).then(n.bind(n, 409200));
@@ -68,7 +68,7 @@ function g(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: A,
-      children: m()
+      children: g()
     }), (0, r.jsx)(l.HZ, {
       title: p.intl.string(p.t.fW7UqM),
       body: p.intl.string(p.t["yQ0X+T"]),
@@ -77,13 +77,13 @@ function g(e) {
         align: "center"
       },
       assetUrl: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",
-      action: f,
+      action: m,
       textLink: {
         link: c.A.getCreatorSupportArticleURL(u.MVz.MEDIA_CHANNEL),
         text: p.intl.string(p.t.w4DutA)
       },
       targetElementRef: A,
-      onRequestClose: () => g(d.i.DISMISS)
+      onRequestClose: () => f(d.i.DISMISS)
     })]
   })
 }

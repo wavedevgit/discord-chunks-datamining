@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 285545, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => m
+  i: () => g
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -16,11 +16,11 @@ var Chunk64700 = require("./64700.js"),
   Chunk567061 = require("./567061.js"),
   Chunk118972 = require("./118972.js");
 
-function m(e) {
+function g(e) {
   let {
     showDot: t,
     notificationItem: n
-  } = e, [m, f] = r.useState(false), {
+  } = e, [g, m] = r.useState(false), {
     unreadItems: A,
     readItems: _,
     allUnreadItemsHydrated: b
@@ -55,13 +55,13 @@ function m(e) {
   r.useEffect(() => {
     if (y || O || null == j || null == T || T === j) return;
     let e = Date.now();
-    e - N > g.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+    e - N > f.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
   }, [y, N, j, T, C, O]);
   let x = r.useCallback(e => {
       let {
         viewableItems: t
       } = e;
-      if (t.some(e => "end" === e.item.data.kind) && f(true), 0 === t.length) return;
+      if (t.some(e => "end" === e.item.data.kind) && m(true), 0 === t.length) return;
       S(t);
       let n = [],
         r = (0, d.P0)(t),
@@ -78,7 +78,7 @@ function m(e) {
         id: e.id,
         type: (0, u.xG)(e)
       })), E)
-    }, [E, f]),
+    }, [E, m]),
     P = r.useCallback(e => {
       let {
         viewableItems: t
@@ -211,7 +211,7 @@ function m(e) {
     loading: O,
     version: E,
     visibleItemIds: v,
-    endVisible: m,
+    endVisible: g,
     isRefreshing: y,
     handleOnRefresh: R,
     stickyHeaderIndices: M,

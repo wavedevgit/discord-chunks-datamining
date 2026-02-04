@@ -44,11 +44,11 @@ function M(e) {
   } = e, l = (0, _.V)(t.id), d = (0, b.BP)(t.id), T = (0, s.bG)([C.A], () => C.A.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: M,
     isEventNoticeHidden: U
-  } = (0, s.cf)([f.A], () => ({
-    isStageNoticeHidden: f.A.isLiveChannelNoticeHidden({
+  } = (0, s.cf)([m.A], () => ({
+    isStageNoticeHidden: m.A.isLiveChannelNoticeHidden({
       stageId: null == T ? true : T.id
     }),
-    isEventNoticeHidden: f.A.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: m.A.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
   }), [T, d]), G = null == l ? true : l.id, V = (0, s.yK)([v.A], () => [...new Set(v.A.getMutableParticipants(G, S.ip.SPEAKER).map(e => e.user))], [G]), B = (0, s.bG)([v.A], () => null != G ? v.A.getParticipantCount(G, S.ip.AUDIENCE) : 0, [G]), H = (0, s.bG)([j.A], () => j.A.can(w.xBc.CONNECT, l)), F = (0, N.A)(null == l ? true : l.id), Y = null == d ? true : d.creator_id, K = (0, s.bG)([x.default], () => x.default.getUser(Y), [Y]);
@@ -77,9 +77,9 @@ function M(e) {
       listenerCount: u,
       isEventNoticeHidden: d,
       isStageNoticeHidden: h,
-      isStudyRoomNotice: f
+      isStudyRoomNotice: m
     } = e, _ = null != n && null != i && !h, b = null != t ? (0, O.G3)(t) : null;
-    if (f && null != i) {
+    if (m && null != i) {
       let e = (0, p.gU)(i);
       return {
         noticeType: 3,
@@ -112,7 +112,7 @@ function M(e) {
           }),
           canListenIn: l,
           buttonText: e,
-          onClose: () => (0, m.iF)({
+          onClose: () => (0, g.iF)({
             stageId: null == n ? true : n.id
           }),
           users: o.length > 5 ? o.slice(0, 5) : o,
@@ -148,7 +148,7 @@ function M(e) {
         }),
         canListenIn: l,
         buttonText: e,
-        onClose: () => (0, m.iF)({
+        onClose: () => (0, g.iF)({
           stageId: null == n ? true : n.id
         }),
         users: o.length > 5 ? o.slice(0, 5) : o,
@@ -173,7 +173,7 @@ function M(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = g.Ay.getUserCount(t.id, b);
+      let n = f.Ay.getUserCount(t.id, b);
       return {
         noticeType: 1,
         title: t.name,
@@ -187,7 +187,7 @@ function M(e) {
         }),
         canListenIn: false,
         buttonText: R.intl.string(R.t.iW6Xuo),
-        onClose: () => (0, m.iF)({
+        onClose: () => (0, g.iF)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],
@@ -209,7 +209,7 @@ function M(e) {
       }
     } else if (t.entity_type === L.Ps.VOICE && null != i) {
       let e = (0, p.gU)(i),
-        n = g.Ay.getUserCount(t.id, b);
+        n = f.Ay.getUserCount(t.id, b);
       return {
         noticeType: 2,
         title: t.name,
@@ -221,7 +221,7 @@ function M(e) {
         }) : null,
         canListenIn: l,
         buttonText: R.intl.string(R.t.nxUtoQ),
-        onClose: () => (0, m.iF)({
+        onClose: () => (0, g.iF)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],

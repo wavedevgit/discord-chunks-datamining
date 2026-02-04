@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk388756 = require("./388756.js");
-let m = [{
+let g = [{
     feature: Chunk652215.x0t.SINGLE_PLAYER,
     getText: () => h.intl.string(h.t["V+/FjO"]),
     getTooltip: () => h.intl.string(h.t["w+X9sT"]),
@@ -81,26 +81,26 @@ let m = [{
     getTooltip: () => h.intl.string(h.t.VudViJ),
     IconComponent: Chunk69175.A
   }],
-  f = e => {
+  m = e => {
     let {
       IconComponent: t,
       text: n,
       tooltip: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: g.nM,
+      className: f.nM,
       children: [(0, r.jsx)(l.m, {
         text: i,
         children: (0, r.jsx)(t, {
-          className: g.AD
+          className: f.AD
         })
       }), (0, r.jsx)("span", {
-        className: g.oo,
+        className: f.oo,
         children: n
       }), (0, r.jsx)(a.A9s, {
         size: "md",
         color: "currentColor",
-        className: g.$8
+        className: f.$8
       })]
     })
   };
@@ -108,7 +108,7 @@ class A extends Chunk64700.PureComponent {
   render() {
     let {
       sku: e
-    } = this.props, t = m.filter(t => {
+    } = this.props, t = g.filter(t => {
       let {
         feature: n
       } = t;
@@ -120,14 +120,14 @@ class A extends Chunk64700.PureComponent {
         getText: i,
         getTooltip: l
       } = e;
-      return (0, r.jsx)(f, {
+      return (0, r.jsx)(m, {
         IconComponent: n,
         text: i(),
         tooltip: l()
       }, t)
     });
     return 0 === t.length ? null : (0, r.jsxs)("div", {
-      className: g.qT,
+      className: f.qT,
       children: [(0, r.jsx)(s.A, {
         children: h.intl.string(h.t.XXENra)
       }), t]

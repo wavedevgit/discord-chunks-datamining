@@ -1,5 +1,5 @@
-/** Chunk was on 96126 **/
-/** chunk id: 836314, original params: e,r,a (module,exports,require) **/
+/** Chunk was on 54711 **/
+/** chunk id: 836314, original params: e,t,r (module,exports,require) **/
 module.exports = {
   _x: "shopCard_bab2bc",
   mr: "highlighted_bab2bc",

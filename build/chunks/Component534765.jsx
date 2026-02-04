@@ -9,7 +9,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk95701 = require("./95701.js"),
   Chunk652215 = require("./652215.js");
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -53,30 +53,30 @@ function c(e) {
         let {
           default: e
         } = await n.e("77927").then(n.bind(n, 320442));
-        return n => (0, i.jsx)(e, u(o({}, n), {
+        return n => (0, i.jsx)(e, u(s({}, n), {
           channel: t,
           selected: false,
-          widgetType: s.uss.TEXT_CHAT_V3
+          widgetType: o.uss.TEXT_CHAT_V3
         }))
       });
       if (t.isDM() && null != d) return void(0, l.L3)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("29534"), n.e("93169"), n.e("25339")]).then(n.bind(n, 92016));
-        return n => (0, i.jsx)(e, u(o({}, n), {
+        return n => (0, i.jsx)(e, u(s({}, n), {
           user: d,
           channel: t,
           showModalItems: false,
-          widgetType: s.uss.TEXT_CHAT_V3
+          widgetType: o.uss.TEXT_CHAT_V3
         }))
       });
       if (t.isModeratorReportChannel()) return void(0, l.L3)(e, async () => {
         let {
           default: e
         } = await n.e("56985").then(n.bind(n, 95616));
-        return n => (0, i.jsx)(e, u(o({}, n), {
+        return n => (0, i.jsx)(e, u(s({}, n), {
           channel: t,
-          widgetType: s.uss.TEXT_CHAT_V3
+          widgetType: o.uss.TEXT_CHAT_V3
         }))
       });
       if ((0, a.ay)(t.type)) {
@@ -85,10 +85,10 @@ function c(e) {
           let {
             default: e
           } = await n.e("21905").then(n.bind(n, 769192));
-          return n => (0, i.jsx)(e, u(o({}, n), {
+          return n => (0, i.jsx)(e, u(s({}, n), {
             channel: t,
             guild: c,
-            widgetType: s.uss.TEXT_CHAT_V3
+            widgetType: o.uss.TEXT_CHAT_V3
           }))
         });
         return
@@ -97,10 +97,10 @@ function c(e) {
         let {
           default: e
         } = await Promise.all([n.e("97262"), n.e("54036")]).then(n.bind(n, 813407));
-        return n => (0, i.jsx)(e, u(o({}, n), {
+        return n => (0, i.jsx)(e, u(s({}, n), {
           channel: t,
           guild: c,
-          widgetType: s.uss.TEXT_CHAT_V3
+          widgetType: o.uss.TEXT_CHAT_V3
         }))
       })
     }

@@ -2,7 +2,7 @@
 /** chunk id: 845187, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => h,
-  default: () => g
+  default: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,13 +16,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx");
 let h = "Activity Encourages Hardware Acceleration";
 
-function g(e) {
+function f(e) {
   var t;
   let {
     applicationId: n,
-    transitionState: g,
-    onClose: m
-  } = e, [f, A] = i.useState(false), [_] = (0, o.A)([n]), b = null != (t = null == _ ? true : _.name) ? t : "This Activity";
+    transitionState: f,
+    onClose: g
+  } = e, [m, A] = i.useState(false), [_] = (0, o.A)([n]), b = null != (t = null == _ ? true : _.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.HAw.OPEN_MODAL, {
       type: h
@@ -30,12 +30,12 @@ function g(e) {
   }, []);
   let E = async () => {
     let e = "temporary";
-    f && (e = "permanent", s.Ay.updatedUnsyncedSettings({
+    m && (e = "permanent", s.Ay.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: true
     })), c.default.track(d.HAw.MODAL_DISMISSED, {
       type: h,
       dismiss_type: e
-    }), await m()
+    }), await g()
   }, O = async () => {
     c.default.track(d.HAw.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
@@ -43,13 +43,13 @@ function g(e) {
   };
   return (0, r.jsx)(l.Modal, {
     size: "md",
-    transitionState: g,
+    transitionState: f,
     onClose: E,
     "aria-label": p.intl.string(p.t.NQkK4l),
     title: p.intl.string(p.t.NQkK4l),
     actionBarInput: (0, r.jsx)(a.Checkbox, {
-      checked: f,
-      onChange: () => A(!f),
+      checked: m,
+      onChange: () => A(!m),
       label: p.intl.string(p.t["5E9SB9"]),
       labelType: "secondary"
     }),

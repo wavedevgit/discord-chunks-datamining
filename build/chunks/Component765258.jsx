@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 765258, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,11 +14,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk436292 = require("./436292.js");
 let h = (0, Chunk144914.S)() || false,
-  g = Chunk64700.memo(function(e) {
+  f = Chunk64700.memo(function(e) {
     let {
       currentRoute: t,
       renderToolbar: n
-    } = e, c = i.useContext(o.AnalyticsContext), g = h || t === u.BVt.APPLICATION_LIBRARY_SETTINGS;
+    } = e, c = i.useContext(o.AnalyticsContext), f = h || t === u.BVt.APPLICATION_LIBRARY_SETTINGS;
     return (0, r.jsxs)(a.A, {
       className: p.$,
       toolbar: null == n ? true : n(),
@@ -70,7 +70,7 @@ let h = (0, Chunk144914.S)() || false,
         children: [(0, r.jsx)(l.VQ0.Item, {
           id: u.BVt.APPLICATION_LIBRARY,
           children: d.intl.string(d.t.p7ARTB)
-        }), g ? (0, r.jsx)(l.VQ0.Item, {
+        }), f ? (0, r.jsx)(l.VQ0.Item, {
           id: u.BVt.APPLICATION_LIBRARY_SETTINGS,
           children: d.intl.string(d.t["3D5yo/"])
         }) : null]

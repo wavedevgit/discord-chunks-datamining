@@ -14,17 +14,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk379103 = require("./379103.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let g = (0, Chunk397927.kHD)(Chunk186975.A),
-  m = (0, Chunk397927.kHD)(Chunk379103.A),
-  f = new Set([Chunk652215.VX0.PUSHING, Chunk652215.VX0.PULLING]),
+let f = (0, Chunk397927.kHD)(Chunk186975.A),
+  g = (0, Chunk397927.kHD)(Chunk379103.A),
+  m = new Set([Chunk652215.VX0.PUSHING, Chunk652215.VX0.PULLING]),
   A = Object.freeze({
-    [Chunk652215.VX0.DONE]: g,
-    [Chunk652215.VX0.PLANNING]: g,
-    [Chunk652215.VX0.PREPARING]: g,
+    [Chunk652215.VX0.DONE]: f,
+    [Chunk652215.VX0.PLANNING]: f,
+    [Chunk652215.VX0.PREPARING]: f,
     [Chunk652215.VX0.PUSHING]: Chunk397927.JMY,
     [Chunk652215.VX0.PULLING]: Chunk397927.s3U,
-    [Chunk652215.VX0.CONFLICT]: g,
-    [Chunk652215.VX0.ERROR]: g
+    [Chunk652215.VX0.CONFLICT]: f,
+    [Chunk652215.VX0.ERROR]: f
   });
 class _ extends Chunk64700.PureComponent {
   componentDidMount() {
@@ -88,8 +88,8 @@ class _ extends Chunk64700.PureComponent {
     } = this.props, i = null == e ? {
       type: p.VX0.DONE
     } : e, l = this.getIsRecentlySynced();
-    (f.has(i.type) || l) && (t.id, this.getStop(i, l));
-    let a = l ? m : A[i.type];
+    (m.has(i.type) || l) && (t.id, this.getStop(i, l));
+    let a = l ? g : A[i.type];
     return (0, r.jsx)(s.m, {
       text: this.getTooltip(i, l),
       children: (0, r.jsx)(a, {

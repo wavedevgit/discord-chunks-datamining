@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 718996, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk791295 = require("./791295.jsx"),
   Chunk49999 = require("./49999.js");
 
-function m(e) {
+function g(e) {
   let {
     renderPopout: t,
     renderGuildHeaderDropdownButton: n
@@ -37,69 +37,69 @@ function m(e) {
     })
   })
 }
-let f = Chunk64700.memo(function(e) {
+let m = Chunk64700.memo(function(e) {
   let {
     contentTypes: t,
     guild: n,
     renderGuildHeaderDropdownButton: i
-  } = e, [a, f] = (0, s.kn)(t, g.m.GUILD_HEADER_TOOLTIPS);
+  } = e, [a, m] = (0, s.kn)(t, f.m.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (a) {
         case l.M.GUILD_POWERUP_PERKS_COACHMARK:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             renderPopout: e => (0, r.jsx)(p.UB, {
               guildId: n.id,
-              markAsDismissed: f,
+              markAsDismissed: m,
               channelRowRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             renderPopout: e => (0, r.jsx)(p.K8, {
               guildId: n.id,
-              markAsDismissed: f,
+              markAsDismissed: m,
               channelRowRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             renderPopout: e => (0, r.jsx)(o.A, {
               guildId: n.id,
-              markAsDismissed: f,
+              markAsDismissed: m,
               targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             renderPopout: e => (0, r.jsx)(h.A, {
               guild: n,
-              markAsDismissed: f,
+              markAsDismissed: m,
               targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             renderPopout: (0, r.jsx)(u.A, {
-              markAsDismissed: f
+              markAsDismissed: m
             }),
             renderGuildHeaderDropdownButton: i
           });
         case l.M.MEDIA_CHANNEL_UPSELL:
           return (0, r.jsx)(d.A, {
             guildId: n.id,
-            markAsDismissed: f,
+            markAsDismissed: m,
             renderTargetElement: i
           });
         case l.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(g, {
             renderPopout: e => (0, r.jsx)(c.A, {
               guildId: n.id,
-              markAsDismissed: f,
+              markAsDismissed: m,
               targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: i

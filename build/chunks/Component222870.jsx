@@ -1,7 +1,7 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 222870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => L
+  t: () => U
 }), require("./638769.js"), require("./896048.js"), require("./321073.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -33,12 +33,12 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk416001 = require("./416001.js");
 
-function P(e) {
+function j(e) {
   return Array.from(e).sort()
 }
-let D = (0, Chunk735438.throttle)(e => {
-    (0, x.Y)(T.uss.FRIENDS, {
-      locked: b.default.isInstanceLocked(),
+let w = (0, Chunk735438.throttle)(e => {
+    (0, O.Y)(C.uss.FRIENDS, {
+      locked: y.default.isInstanceLocked(),
       shownUserIds: e.shownUserIds,
       liveUserIds: [],
       contentInventoryIds: e.contentInventoryIds
@@ -47,59 +47,52 @@ let D = (0, Chunk735438.throttle)(e => {
     leading: true,
     trailing: false
   }),
-  R = {
+  P = {
     searchType: Chunk379078.n.REGEX,
     sortType: Chunk379078.r.JARO_WINKLER,
     searchStringGenerator: e => {
-      var t, n, i;
+      var t, n, l;
       let {
         channel: r
-      } = e, l = [(0, c.m1)(r, A.default, y.A), r.name, r.id];
+      } = e, i = [(0, c.m1)(r, E.default, m.A), r.name, r.id];
       if (r.isDM()) {
         let e = r.getRecipientId(),
-          t = A.default.getUser(e),
-          n = y.A.getNickname(e);
-        l.push(null == t ? true : t.username, null == t ? true : t.globalName, n)
+          t = E.default.getUser(e),
+          n = m.A.getNickname(e);
+        i.push(null == t ? true : t.username, null == t ? true : t.globalName, n)
       } else if (r.isMultiUserDM())
-        for (let e of null != (i = r.recipients) ? i : []) {
-          let t = A.default.getUser(e),
-            n = y.A.getNickname(e);
-          l.push(null == t ? true : t.username, null == t ? true : t.globalName, n)
+        for (let e of null != (l = r.recipients) ? l : []) {
+          let t = E.default.getUser(e),
+            n = m.A.getNickname(e);
+          i.push(null == t ? true : t.username, null == t ? true : t.globalName, n)
         }
-      let a = null != r.guild_id && null != (t = null == (n = m.A.getGuild(r.guild_id)) ? true : n.name) ? t : null;
-      return null != a && l.push(a), l.filter(E.Vq)
+      let s = null != r.guild_id && null != (t = null == (n = I.A.getGuild(r.guild_id)) ? true : n.name) ? t : null;
+      return null != s && i.push(s), i.filter(S.Vq)
     },
     throttleMs: 100
   };
 
-function k(e) {
+function R(e) {
   let {
     title: t
   } = e;
-  return (0, i.jsx)(d.A, {
-    className: w.uW,
+  return (0, l.jsx)(d.A, {
+    className: M.uW,
     children: t
   })
 }
 
-function M(e) {
-  let {
-    channelId: t,
-    listItemId: n
-  } = e;
-  return (0, i.jsx)(S.V, {
-    channelId: t,
-    listItemId: n
-  })
-}
-
-function L() {
-  let e, [t, n] = r.useState(""),
-    l = t.trim().toLowerCase(),
-    c = (e = (0, f.Dz)(), (0, s.yK)([v.A, g.A], () => {
+function U() {
+  let e, {
+      onPrimaryAction: t,
+      onContextMenu: n
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
+    [i, c] = r.useState(""),
+    d = i.trim().toLowerCase(),
+    h = (e = (0, f.Dz)(), (0, a.yK)([A.A, p.A], () => {
       let t = [];
-      for (let e of v.A.getPrivateChannelIds()) {
-        let n = g.A.getChannel(e);
+      for (let e of A.A.getPrivateChannelIds()) {
+        let n = p.A.getChannel(e);
         null != n && t.push({
           channel: n,
           voiceStates: []
@@ -108,55 +101,55 @@ function L() {
       for (let n of e) t.push(n);
       return t
     }, [e])),
-    [d, h] = r.useState([]);
-  (0, p.RT)(t, c, h, R);
-  let m = r.useRef(null),
-    y = (0, u.A)("friends-widget-messages", m),
-    [A, b] = (0, s.bG)([j.A], () => j.A.getFavoriteTargetIdsForTab(_.x.MESSAGES), [], O.D),
-    [E, T] = (0, s.bG)([I.A], () => {
-      let [e, t] = I.A.getRows(I.Y.ACTIVE_NOW), [n] = I.A.getRows(I.Y.DMS), [i] = I.A.getRows(I.Y.RECENT_TEXT), r = n.slice(0, 5), l = i.slice(0, 8);
+    [I, m] = r.useState([]);
+  (0, g.RT)(i, h, m, P);
+  let E = r.useRef(null),
+    y = (0, u.A)("friends-widget-messages", E),
+    [S, C] = (0, a.bG)([_.A], () => _.A.getFavoriteTargetIdsForTab(b.x.MESSAGES), [], v.D),
+    [U, G] = (0, a.bG)([T.A], () => {
+      let [e, t] = T.A.getRows(T.Y.ACTIVE_NOW), [n] = T.A.getRows(T.Y.DMS), [l] = T.A.getRows(T.Y.RECENT_TEXT), r = n.slice(0, 5), i = l.slice(0, 8);
       return [{
         activeNowRows: e.slice(0, 10),
         dmRows: r,
-        recentTextRows: l
+        recentTextRows: i
       }, t]
-    }, [], O.D),
+    }, [], v.D),
     L = r.useMemo(() => {
       let e = [];
-      return 0 === T ? [] : ("" !== l ? e.push({
+      return 0 === G ? [] : ("" !== d ? e.push({
         kind: "SEARCH_RESULTS",
         key: "SEARCH_RESULTS",
-        title: N.intl.string(C.default.HGimIS),
-        channelIds: d.map(e => e.channel.id),
-        length: d.length
-      }) : (A.length > 0 && b > 0 && e.push({
+        title: D.intl.string(x.default.HGimIS),
+        channelIds: I.map(e => e.channel.id),
+        length: I.length
+      }) : (S.length > 0 && C > 0 && e.push({
         kind: "FAVORITES",
         key: "FAVORITES",
-        title: N.intl.string(C.default.GKTlS6),
-        channelIds: A,
-        length: A.length
-      }), E.dmRows.length > 0 && e.push({
+        title: D.intl.string(x.default.GKTlS6),
+        channelIds: S,
+        length: S.length
+      }), U.dmRows.length > 0 && e.push({
         kind: "DMS",
         key: "DMS",
-        title: N.intl.string(N.t.YUU0RF),
-        channelIds: E.dmRows.map(e => e.channelId),
-        length: E.dmRows.length
-      }), E.activeNowRows.length > 0 && e.push({
+        title: D.intl.string(D.t.YUU0RF),
+        channelIds: U.dmRows.map(e => e.channelId),
+        length: U.dmRows.length
+      }), U.activeNowRows.length > 0 && e.push({
         kind: "ACTIVE_NOW",
         key: "ACTIVE_NOW",
-        title: N.intl.string(C.default.d3yO98),
-        channelIds: E.activeNowRows.map(e => e.channelId),
-        length: E.activeNowRows.length
-      }), E.recentTextRows.length > 0 && e.push({
+        title: D.intl.string(x.default.d3yO98),
+        channelIds: U.activeNowRows.map(e => e.channelId),
+        length: U.activeNowRows.length
+      }), U.recentTextRows.length > 0 && e.push({
         kind: "TEXT_CHANNELS",
         key: "TEXT_CHANNELS",
-        title: N.intl.string(C.default.uC6Lhg),
-        channelIds: E.recentTextRows.map(e => e.channelId),
-        length: E.recentTextRows.length
+        title: D.intl.string(x.default.uC6Lhg),
+        channelIds: U.recentTextRows.map(e => e.channelId),
+        length: U.recentTextRows.length
       })), e)
-    }, [l, A, E.activeNowRows, E.dmRows, E.recentTextRows, b, d, T]),
-    U = r.useMemo(() => L.map(e => e.length), [L]),
-    G = (0, x.Dk)(() => {
+    }, [d, S, U.activeNowRows, U.dmRows, U.recentTextRows, C, I, G]),
+    k = r.useMemo(() => L.map(e => e.length), [L]),
+    F = (0, O.Dk)(() => {
       let e = new Set;
       for (let t of L)
         for (let n of t.channelIds) e.add(n);
@@ -164,173 +157,183 @@ function L() {
     }, [L]),
     {
       shownUserIds: V,
-      contentInventoryIds: z
-    } = (0, s.bG)([], () => (function(e) {
+      contentInventoryIds: H
+    } = (0, a.bG)([], () => (function(e) {
       let t = new Set,
         n = new Set;
-      for (let a of e) {
-        var i, r, l;
-        let e = g.A.getChannel(a);
+      for (let s of e) {
+        var l, r, i;
+        let e = p.A.getChannel(s);
         if (null != e) {
           if (e.isDM()) {
-            let n = null != (i = null == (r = e.getRecipientId) ? true : r.call(e)) ? i : null;
+            let n = null != (l = null == (r = e.getRecipientId) ? true : r.call(e)) ? l : null;
             null != n && t.add(n);
             continue
           }
           if (e.isMultiUserDM()) {
-            for (let n of null != (l = e.recipients) ? l : []) t.add(n);
+            for (let n of null != (i = e.recipients) ? i : []) t.add(n);
             continue
           }
-          n.add(a)
+          n.add(s)
         }
       }
       return {
         shownUserIds: t,
         contentInventoryIds: n
       }
-    })(G), [G]),
-    F = (0, x.Dk)(() => V, [V]),
-    H = (0, x.Dk)(() => z, [z]);
+    })(F), [F]),
+    Y = (0, O.Dk)(() => V, [V]),
+    W = (0, O.Dk)(() => H, [H]);
   r.useEffect(() => {
-    (0 !== F.size || 0 !== H.size) && D({
-      shownUserIds: P(F),
-      contentInventoryIds: P(H)
+    (0 !== Y.size || 0 !== W.size) && w({
+      shownUserIds: j(Y),
+      contentInventoryIds: j(W)
     })
-  }, [F, H]);
-  let Y = r.useCallback(e => L[e], [L]),
-    W = r.useCallback(e => {
+  }, [Y, W]);
+  let z = r.useCallback(e => L[e], [L]),
+    B = r.useCallback(e => {
       let {
         section: t
-      } = e, n = Y(t);
-      return null == n ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(o.AC4, {
+      } = e, n = z(t);
+      return null == n ? null : (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(o.AC4, {
           children: n.title
-        }), (0, i.jsx)(k, {
+        }), (0, l.jsx)(R, {
           title: n.title
         })]
       })
-    }, [Y]),
+    }, [z]),
     K = r.useCallback(e => {
-      let t = Y(e.section);
-      if (null == t) return null;
-      let n = "".concat(t.key, ":").concat(e.row);
-      switch (t.kind) {
+      let r = z(e.section);
+      if (null == r) return null;
+      let i = "".concat(r.key, ":").concat(e.row);
+      switch (r.kind) {
         case "SEARCH_RESULTS": {
-          let t = d[e.row].channel;
-          if (null == t) return null;
-          return (0, i.jsx)(S.V, {
-            channelId: t.id,
-            listItemId: n
-          }, n)
+          let r = I[e.row].channel;
+          if (null == r) return null;
+          return (0, l.jsx)(N.V, {
+            channelId: r.id,
+            listItemId: i,
+            onPrimaryAction: t,
+            onContextMenu: n
+          }, i)
         }
         case "FAVORITES": {
-          let r = t.channelIds[e.row];
-          if (null == r) return null;
-          return (0, i.jsx)(S.V, {
-            channelId: r,
-            listItemId: n,
-            shouldHighlightIfRecentlyAdded: true
-          }, n)
+          let s = r.channelIds[e.row];
+          if (null == s) return null;
+          return (0, l.jsx)(N.V, {
+            channelId: s,
+            listItemId: i,
+            shouldHighlightIfRecentlyAdded: true,
+            onPrimaryAction: t,
+            onContextMenu: n
+          }, i)
         }
         case "ACTIVE_NOW": {
-          let r = t.channelIds[e.row];
-          if (null == r) return null;
-          return (0, i.jsx)(M, {
-            channelId: r,
-            listItemId: n
-          }, n)
+          let s = r.channelIds[e.row];
+          if (null == s) return null;
+          return (0, l.jsx)(N.V, {
+            channelId: s,
+            listItemId: i,
+            onPrimaryAction: t,
+            onContextMenu: n
+          }, i)
         }
         case "DMS":
-          let r;
-          return null == (r = t.channelIds[e.row]) ? null : (0, i.jsx)(S.V, {
-            channelId: r,
-            listItemId: n
-          }, n);
+          let s;
+          return null == (s = r.channelIds[e.row]) ? null : (0, l.jsx)(N.V, {
+            channelId: s,
+            listItemId: i,
+            onPrimaryAction: t,
+            onContextMenu: n
+          }, i);
         case "TEXT_CHANNELS": {
-          let r = t.channelIds[e.row];
-          if (null == r) return null;
-          return (0, i.jsx)(S.V, {
-            channelId: r,
-            listItemId: n
-          }, n)
+          let s = r.channelIds[e.row];
+          if (null == s) return null;
+          return (0, l.jsx)(N.V, {
+            channelId: s,
+            listItemId: i,
+            onPrimaryAction: t,
+            onContextMenu: n
+          }, i)
         }
         default:
-          return t.kind, null
+          return r.kind, null
       }
-    }, [Y, d]),
-    B = r.useCallback(() => 40, []),
-    Z = r.useCallback(() => 50, []),
-    X = r.useCallback(e => {
+    }, [z, n, t, I]),
+    X = r.useCallback(() => 40, []),
+    Q = r.useCallback(() => 50, []),
+    Z = r.useCallback(e => {
       var t;
-      n(e), null == (t = m.current) || t.scrollToTop()
+      c(e), null == (t = E.current) || t.scrollToTop()
     }, []);
-  return (0, i.jsxs)("div", {
-    className: w.kL,
-    children: [(0, i.jsx)("div", {
-      className: w.MT,
-      children: (0, i.jsx)(o.IWV, {
-        query: t,
-        onChange: X,
-        onClear: () => n(""),
-        placeholder: N.intl.string(C.default["xB/0Z9"]),
+  return (0, l.jsxs)("div", {
+    className: M.kL,
+    children: [(0, l.jsx)("div", {
+      className: M.MT,
+      children: (0, l.jsx)(o.IWV, {
+        query: i,
+        onChange: Z,
+        onClear: () => c(""),
+        placeholder: D.intl.string(x.default["xB/0Z9"]),
         size: "md"
       })
-    }), (0, i.jsx)(a.hD, {
+    }), (0, l.jsx)(s.hD, {
       navigator: y,
-      children: (0, i.jsx)(a.PR, {
+      children: (0, l.jsx)(s.PR, {
         children: e => {
           let {
             ref: t,
             role: n
           } = e, r = function(e, t) {
             if (null == e) return {};
-            var n, i, r, l = {};
+            var n, l, r, i = {};
             if ("u" > typeof Reflect && Reflect.ownKeys) {
-              for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-              return l
+              for (r = 0, n = Reflect.ownKeys(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+              return i
             }
-            if (l = function(e, t) {
+            if (i = function(e, t) {
                 if (null == e) return {};
-                var n, i, r = {},
-                  l = Object.getOwnPropertyNames(e);
-                for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
+                var n, l, r = {},
+                  i = Object.getOwnPropertyNames(e);
+                for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n]);
                 return r
               }(e, t), Object.getOwnPropertySymbols)
-              for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-            return l
+              for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
+            return i
           }(e, ["ref", "role"]);
-          return (0, i.jsx)(o.skg, {
-            children: e => (0, i.jsx)(o.B8B, function(e) {
+          return (0, l.jsx)(o.skg, {
+            children: e => (0, l.jsx)(o.B8B, function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                  i = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  l = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), i.forEach(function(t) {
-                  var i;
-                  i = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: i,
+                }))), l.forEach(function(t) {
+                  var l;
+                  l = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: l,
                     enumerable: true,
                     configurable: true,
                     writable: true
-                  }) : e[t] = i
+                  }) : e[t] = l
                 })
               }
               return e
             }({
               innerRole: n,
-              innerAriaLabel: N.intl.string(N.t.OIgYlQ),
+              innerAriaLabel: D.intl.string(D.t.OIgYlQ),
               ref: e => {
                 var n;
-                m.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
+                E.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
               },
-              className: w.p_,
-              sectionHeight: B,
-              rowHeight: Z,
+              className: M.p_,
+              sectionHeight: X,
+              rowHeight: Q,
               sidebarHeight: 0,
-              renderSection: W,
+              renderSection: B,
               renderRow: K,
-              sections: U,
+              sections: k,
               paddingBottom: 8
             }, r, e))
           })

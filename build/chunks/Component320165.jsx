@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 320165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => Y
+  A: () => F
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -37,7 +37,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk532165 = require("./532165.js");
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -56,7 +56,7 @@ function M(e) {
   return e
 }
 
-function L(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function L(e, t) {
   }), e
 }
 
-function U(e, t) {
+function z(e, t) {
   if (null == e) return {};
   var n, i, r, l = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -87,19 +87,19 @@ function U(e, t) {
   return l
 }
 
-function G(e) {
+function V(e) {
   return null != e && (e.isDM() || e.isMultiUserDM())
 }
 
-function V(e) {
+function U(e) {
   let {
     channel: t,
     pinsOpen: n,
     onTogglePinsPopout: l,
     onRequestClosePinsPopout: a
-  } = e, s = r.useRef(null);
+  } = e, o = r.useRef(null);
   return (null == t ? true : t.id) == null ? null : (0, i.jsx)(u.YNO, {
-    targetElementRef: s,
+    targetElementRef: o,
     shouldShow: n,
     animation: u.YNO.Animation.NONE,
     position: "bottom",
@@ -107,7 +107,7 @@ function V(e) {
     autoInvert: false,
     ignoreModalClicks: true,
     onRequestClose: a,
-    renderPopout: e => (0, i.jsx)(d.A, L(M({}, e), {
+    renderPopout: e => (0, i.jsx)(d.A, M(k({}, e), {
       channel: t,
       onJump: () => {}
     })),
@@ -115,13 +115,13 @@ function V(e) {
     children: e => {
       let {
         onClick: t
-      } = e, n = U(e, ["onClick"]);
+      } = e, n = z(e, ["onClick"]);
       return (0, i.jsx)("div", {
-        ref: s,
-        children: (0, i.jsx)(o.m, {
+        ref: o,
+        children: (0, i.jsx)(s.m, {
           text: R.intl.string(R.t["mp1N/2"]),
           "aria-label": R.intl.string(R.t["mp1N/2"]),
-          children: (0, i.jsx)(u.K0, L(M({}, n), {
+          children: (0, i.jsx)(u.K0, M(k({}, n), {
             icon: u.tsw,
             "aria-label": R.intl.string(R.t["mp1N/2"]),
             size: "sm",
@@ -134,13 +134,13 @@ function V(e) {
   })
 }
 
-function z(e) {
+function G(e) {
   var t;
   let {
     channel: n
-  } = e, l = r.useRef(null), a = null != (t = null == n ? true : n.id) ? t : null, c = (null == n ? true : n.guild_id) != null, [d, h] = (0, s.yK)([b.Ay], () => c && null != a && null != n ? [b.Ay.isChannelMuted(n.getGuildId(), n.id), b.Ay.resolvedMessageNotifications(n)] : [false, P.orn.ALL_MESSAGES], [n, a, c]), [p, g] = r.useState(false), m = r.useCallback(() => {
+  } = e, l = r.useRef(null), a = null != (t = null == n ? true : n.id) ? t : null, c = (null == n ? true : n.guild_id) != null, [d, h] = (0, o.yK)([v.Ay], () => c && null != a && null != n ? [v.Ay.isChannelMuted(n.getGuildId(), n.id), v.Ay.resolvedMessageNotifications(n)] : [false, P.orn.ALL_MESSAGES], [n, a, c]), [p, g] = r.useState(false), m = r.useCallback(() => {
     g(e => !e)
-  }, []), y = R.intl.string(R.t.h850Ss), A = d || h !== P.orn.ALL_MESSAGES ? u.a_I : u.XFE;
+  }, []), A = R.intl.string(R.t.h850Ss), y = d || h !== P.orn.ALL_MESSAGES ? u.a_I : u.XFE;
   return c && null != n ? (0, i.jsx)(u.YNO, {
     targetElementRef: l,
     shouldShow: p,
@@ -149,7 +149,7 @@ function z(e) {
     align: "right",
     autoInvert: false,
     onRequestClose: () => g(false),
-    renderPopout: e => (0, i.jsx)(f.A, L(M({}, e), {
+    renderPopout: e => (0, i.jsx)(f.A, M(k({}, e), {
       channel: n,
       navId: "overlay-channel-context",
       label: R.intl.string(R.t.Xm41aV)
@@ -158,15 +158,15 @@ function z(e) {
     children: e => {
       let {
         onClick: t
-      } = e, n = U(e, ["onClick"]);
+      } = e, n = z(e, ["onClick"]);
       return (0, i.jsx)("div", {
         ref: l,
-        children: (0, i.jsx)(o.m, {
-          text: y,
-          "aria-label": y,
-          children: (0, i.jsx)(u.K0, L(M({}, n), {
-            icon: A,
-            "aria-label": y,
+        children: (0, i.jsx)(s.m, {
+          text: A,
+          "aria-label": A,
+          children: (0, i.jsx)(u.K0, M(k({}, n), {
+            icon: y,
+            "aria-label": A,
             size: "sm",
             variant: "icon-only",
             onClick: m
@@ -177,7 +177,7 @@ function z(e) {
   }) : null
 }
 
-function F(e) {
+function H(e) {
   let {
     channel: t,
     onStartPrivateCall: n,
@@ -185,8 +185,8 @@ function F(e) {
     onTogglePinsPopout: l,
     onRequestClosePinsPopout: a
   } = e;
-  return G(t) ? (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(o.m, {
+  return V(t) ? (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(s.m, {
       text: R.intl.string(R.t.JJogjm),
       "aria-label": R.intl.string(R.t.JJogjm),
       children: (0, i.jsx)(u.K0, {
@@ -196,12 +196,12 @@ function F(e) {
         variant: "icon-only",
         onClick: () => n(false)
       })
-    }), (0, i.jsx)(V, {
+    }), (0, i.jsx)(U, {
       channel: t,
       pinsOpen: r,
       onTogglePinsPopout: l,
       onRequestClosePinsPopout: a
-    }), t.isMultiUserDM() ? (0, i.jsx)(o.m, {
+    }), t.isMultiUserDM() ? (0, i.jsx)(s.m, {
       text: R.intl.string(R.t["LR+Ptf"]),
       "aria-label": R.intl.string(R.t["LR+Ptf"]),
       children: (0, i.jsx)(u.K0, {
@@ -210,9 +210,9 @@ function F(e) {
         size: "sm",
         variant: "icon-only",
         onClick: () => {
-          (0, O.YX)(P.uss.TEXT_CHAT_V3, {
-            type: O.Z5.INVITE,
-            value: O.IP.PANEL_OPENED,
+          (0, E.YX)(P.uss.TEXT_CHAT_V3, {
+            type: E.Z5.INVITE,
+            value: E.IP.PANEL_OPENED,
             secondaryValue: "add_members"
           }), (0, g.Jz)({
             channel: t,
@@ -224,7 +224,7 @@ function F(e) {
                   guildId: null,
                   messageId: null
                 },
-                source: w.B.MANUAL,
+                source: N.B.MANUAL,
                 widgetType: P.uss.TEXT_CHAT_V3
               })
             }
@@ -235,7 +235,7 @@ function F(e) {
   }) : null
 }
 
-function H(e) {
+function Y(e) {
   let {
     channel: t,
     pinsOpen: n,
@@ -243,9 +243,9 @@ function H(e) {
     onRequestClosePinsPopout: l
   } = e;
   return null == t || t.isPrivate() ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(z, {
+    children: [(0, i.jsx)(G, {
       channel: t
-    }), (0, i.jsx)(V, {
+    }), (0, i.jsx)(U, {
       channel: t,
       pinsOpen: n,
       onTogglePinsPopout: r,
@@ -254,7 +254,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function F(e) {
   var t;
   let {
     channel: n,
@@ -262,128 +262,128 @@ function Y(e) {
     guild: d,
     title: f,
     dragStart: g,
-    dragging: b
+    dragging: v
   } = e, {
-    hasFriendList: M
-  } = (0, _.M8)("TextChatHeader"), [L, U] = r.useState(false), V = (0, s.bG)([A.A], () => A.A.getChannelId(), []), z = (null == n ? true : n.isDM()) && null != (t = null == l ? true : l.id) ? t : null, Y = (0, N.p)(z), W = V === (null == n ? true : n.id), K = R.intl.string(D.default.tYPfF2), B = (0, s.bG)([y.A], () => (null == n ? true : n.isThread()) && null != n.parent_id ? y.A.getChannel(n.parent_id) : null, [n]), Z = (0, s.bG)([E.default, v.A], () => null != B ? (0, h.m1)(B, E.default, v.A) : null, [B]), X = (0, s.bG)([], () => {
+    hasFriendList: k
+  } = (0, S.M8)("TextChatHeader"), [M, z] = r.useState(false), U = (0, o.bG)([y.A], () => y.A.getChannelId(), []), G = (null == n ? true : n.isDM()) && null != (t = null == l ? true : l.id) ? t : null, F = (0, w.p)(G), W = U === (null == n ? true : n.id), K = R.intl.string(D.default.tYPfF2), Z = (0, o.bG)([A.A], () => (null == n ? true : n.isThread()) && null != n.parent_id ? A.A.getChannel(n.parent_id) : null, [n]), B = (0, o.bG)([b.default, O.A], () => null != Z ? (0, h.m1)(Z, b.default, O.A) : null, [Z]), X = (0, o.bG)([], () => {
     var e, t;
-    return e = n, t = l, null == e ? null : e.isDM() && null != t ? v.A.isFriend(t.id) ? {
-      tab: x.x.FRIENDS,
+    return e = n, t = l, null == e ? null : e.isDM() && null != t ? O.A.isFriend(t.id) ? {
+      tab: _.x.FRIENDS,
       targetId: t.id
     } : null : (0, m.ke)(e.type) ? {
-      tab: x.x.MESSAGES,
+      tab: _.x.MESSAGES,
       targetId: e.id
     } : (0, m.ay)(e.type) ? {
-      tab: x.x.VOICE,
+      tab: _.x.VOICE,
       targetId: e.id
     } : null
   }, [n, l]), J = r.useCallback(e => {
-    G(n) && ((0, O.YX)(P.uss.TEXT_CHAT_V3, {
-      type: O.Z5.CALL_BUTTON,
-      value: O.IP.ENABLED,
+    V(n) && ((0, E.YX)(P.uss.TEXT_CHAT_V3, {
+      type: E.Z5.CALL_BUTTON,
+      value: E.IP.ENABLED,
       secondaryValue: e ? "video" : "voice"
     }), c.A.call(n.id, e, true, n.isDM() ? n.getRecipientId() : null))
   }, [n]), Q = r.useCallback(() => {
-    (null == n ? true : n.id) != null && U(e => {
+    (null == n ? true : n.id) != null && z(e => {
       let t = !e;
-      return t && (0, O.YX)(P.uss.TEXT_CHAT_V3, {
-        type: O.Z5.TEXT_CHAT,
-        value: O.IP.PANEL_OPENED,
+      return t && (0, E.YX)(P.uss.TEXT_CHAT_V3, {
+        type: E.Z5.TEXT_CHAT,
+        value: E.IP.PANEL_OPENED,
         secondaryValue: "pins"
       }), t
     })
   }, [null == n ? true : n.id]);
   return (0, i.jsxs)("div", {
-    className: a()(k.XV, b && k.cB),
+    className: a()(L.XV, v && L.cB),
     onMouseDown: e => {
-      0 === e.button && g(S.P.MOVE, e.clientX, e.clientY)
+      0 === e.button && g(x.P.MOVE, e.clientX, e.clientY)
     },
     children: [(0, i.jsxs)("div", {
-      className: k.LD,
+      className: L.LD,
       children: [(0, i.jsx)("div", {
-        className: k.gr,
-        children: (0, i.jsx)(C.J, {
-          application: Y,
-          fallback: (0, i.jsx)(T.g, {
+        className: L.gr,
+        children: (0, i.jsx)(T.J, {
+          application: F,
+          fallback: (0, i.jsx)(C.g, {
             channel: null,
             user: l,
             guild: d,
-            size: T.c.SIZE_24
+            size: C.c.SIZE_24
           })
         })
       }), (0, i.jsxs)("div", {
-        className: k.G1,
+        className: L.G1,
         children: [(() => {
-          if (null != z) return null;
+          if (null != G) return null;
           let e = (0, p.gU)(n, d);
           return null != e ? (0, i.jsx)(e, {
-            className: k.gr,
+            className: L.gr,
             size: "xs"
           }) : null
-        })(), null != B && null != Z ? (0, i.jsxs)(i.Fragment, {
+        })(), null != Z && null != B ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(u.DUT, {
-            className: k.oH,
+            className: L.oH,
             onMouseDown: e => e.stopPropagation(),
             onClick: e => {
               var t, n, i;
               e.stopPropagation(), (0, j.D$)({
                 target: {
                   kind: j.bB.CHANNEL,
-                  channelId: B.id,
-                  guildId: null != (t = null != (n = null == (i = B.getGuildId) ? true : i.call(B)) ? n : B.guild_id) ? t : null,
+                  channelId: Z.id,
+                  guildId: null != (t = null != (n = null == (i = Z.getGuildId) ? true : i.call(Z)) ? n : Z.guild_id) ? t : null,
                   messageId: null
                 },
-                source: w.B.MANUAL,
+                source: N.B.MANUAL,
                 widgetType: P.uss.TEXT_CHAT_V3
               })
             },
             children: (0, i.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "text-muted",
-              children: Z
+              children: B
             })
           }), (0, i.jsx)(u._BQ, {
-            className: k.ln,
+            className: L.ln,
             size: "xs",
             color: u.LU0.colors.TEXT_MUTED
           })]
         }) : null, (0, i.jsxs)(u.Text, {
-          className: k.DD,
+          className: L.DD,
           variant: "text-sm/medium",
           color: "text-strong",
-          children: [f, (null == Y ? true : Y.name) != null && "" !== Y.name ? (0, i.jsx)(u.Text, {
+          children: [f, (null == F ? true : F.name) != null && "" !== F.name ? (0, i.jsx)(u.Text, {
             tag: "span",
-            className: k.X7,
+            className: L.X7,
             variant: "text-xs/medium",
             color: "text-muted",
             children: R.intl.formatToPlainString(D.default.x1k3cO, {
-              gameName: Y.name
+              gameName: F.name
             })
           }) : null]
         })]
       })]
     }), (0, i.jsxs)("div", {
-      className: k.IE,
+      className: L.IE,
       onMouseDown: e => {
         e.stopPropagation()
       },
-      children: [(0, i.jsx)(F, {
+      children: [(0, i.jsx)(H, {
         channel: n,
         onStartPrivateCall: J,
-        pinsOpen: L,
+        pinsOpen: M,
         onTogglePinsPopout: Q,
-        onRequestClosePinsPopout: () => U(false)
-      }), (0, i.jsx)(H, {
+        onRequestClosePinsPopout: () => z(false)
+      }), (0, i.jsx)(Y, {
         channel: n,
-        pinsOpen: L,
+        pinsOpen: M,
         onTogglePinsPopout: Q,
-        onRequestClosePinsPopout: () => U(false)
-      }), M && null != X && (0, i.jsx)(I.j, {
+        onRequestClosePinsPopout: () => z(false)
+      }), k && null != X && (0, i.jsx)(I.j, {
         tab: X.tab,
         targetId: X.targetId,
         widgetType: P.uss.TEXT_CHAT_V3,
         shouldStopPropagation: false
-      }), (null == n ? true : n.id) != null && (0, i.jsx)(o.m, {
+      }), (null == n ? true : n.id) != null && (0, i.jsx)(s.m, {
         text: W ? K : R.intl.string(D.default.ERApc4),
         "aria-label": W ? K : R.intl.string(D.default.ERApc4),
         children: (0, i.jsx)(u.K0, {
@@ -393,9 +393,9 @@ function Y(e) {
           variant: "icon-only",
           onClick: () => {
             if (W) {
-              (0, O.YX)(P.uss.TEXT_CHAT_V3, {
-                type: O.Z5.TEXT_CHAT,
-                value: O.IP.CLOSED_TEXT_CHAT,
+              (0, E.YX)(P.uss.TEXT_CHAT_V3, {
+                type: E.Z5.TEXT_CHAT,
+                value: E.IP.CLOSED_TEXT_CHAT,
                 secondaryValue: "minimize_voice"
               }), (0, j.S$)({
                 minimized: true

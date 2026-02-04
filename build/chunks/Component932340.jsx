@@ -39,7 +39,7 @@ function _(e) {
     lastClipsSession: p.A.getLastClipsSession(),
     remindersEnabled: p.A.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.A.hasAnyClipAnimations()
-  })), S = null != y && y.newClipIds.length > 0, C = (0, g.K)(e => e.clipsButtonRef), N = (0, g.K)(e => e.setClipsButtonRef), T = (0, l.bG)([c.A], () => c.A.hasLayers()), {
+  })), S = null != y && y.newClipIds.length > 0, C = (0, f.K)(e => e.clipsButtonRef), N = (0, f.K)(e => e.setClipsButtonRef), T = (0, l.bG)([c.A], () => c.A.hasLayers()), {
     preventIdle: j,
     allowIdle: x
   } = (0, o.o)("animation");
@@ -68,11 +68,11 @@ function _(e) {
         return e
       }({}, t))
     }, {
-      modalKey: f.nm
+      modalKey: m.nm
     })
   }
   return (i.useEffect(() => (v ? j() : x(), () => x()), [v, j, x]), E && b) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != C && t && I && S && !(0, a.ueM)() && !T && (0, r.jsx)(m.A, {
+    children: [null != C && t && I && S && !(0, a.ueM)() && !T && (0, r.jsx)(g.A, {
       clipIconRef: C,
       lastClipsSession: y,
       onOpenClipsGallery: P

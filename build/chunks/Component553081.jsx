@@ -28,13 +28,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk131168 = require("./131168.js"),
   Chunk511484 = require("./511484.js"),
   Chunk703982 = require("./703982.jsx"),
-  Chunk326736 = require("./326736.jsx"),
-  Chunk810036 = require("./810036.jsx"),
-  Chunk160116 = require("./160116.jsx"),
-  Chunk530060 = require("./530060.jsx"),
   Chunk891858 = require("./891858.jsx"),
   Chunk807676 = require("./807676.jsx"),
   Chunk322631 = require("./322631.js"),
+  Chunk568031 = require("./568031.jsx"),
+  Chunk518491 = require("./518491.jsx"),
+  Chunk157839 = require("./157839.jsx"),
+  Chunk235365 = require("./235365.jsx"),
   Chunk994763 = require("./994763.js"),
   Chunk788868 = require("./788868.js"),
   Chunk652215 = require("./652215.js"),
@@ -87,31 +87,31 @@ let H = e => {
             onChange: e => et(e),
             threshold: .1,
             active: true,
-            children: (0, r.jsx)(v.A, {
+            children: (0, r.jsx)(R.A, {
               buttonVisibilityRef: J,
               className: k.v1,
               enablePremiumBrandRefresh: ec,
               userDiscountOffer: q,
               discountedPrice: er
             })
-          }), (0, r.jsx)(j.A, {
-            variant: L.cJ.WHATS_NEW,
+          }), (0, r.jsx)(D.A, {
+            variant: v.cJ.WHATS_NEW,
             className: k.Iw,
             noBackground: true,
             leftAlignHeaders: true
-          }), null != W && K && (0, r.jsx)(P.A, {
+          }), null != W && K && (0, r.jsx)(L.A, {
             location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION,
             sectionRef: l
-          }), (0, r.jsx)(j.A, {
+          }), (0, r.jsx)(D.A, {
             className: k.xU,
-            variant: L.cJ.PERKS_DISCOVERABILITY,
+            variant: v.cJ.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
-            showAllPerksButton: (0, r.jsx)(D.A, {
+            showAllPerksButton: (0, r.jsx)(y.A, {
               setIsAllPerksVisible: $,
-              previousComponent: L.A2.HOME
+              previousComponent: v.A2.HOME
             })
-          }), (0, r.jsx)(y.A, {
+          }), (0, r.jsx)(P.A, {
             className: k.Zy,
             location: _.A.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
@@ -145,10 +145,10 @@ let H = e => {
         churnDiscountOffer: q,
         discountedPrice: er
       })]
-    }), (0, r.jsx)(R.A, {
+    }), (0, r.jsx)(j.A, {
       isAllPerksVisible: Q,
       setIsAllPerksVisible: $,
-      previousComponent: L.A2.HOME,
+      previousComponent: v.A2.HOME,
       enablePremiumBrandRefresh: ec
     })]
   }) : (0, r.jsx)("div", {

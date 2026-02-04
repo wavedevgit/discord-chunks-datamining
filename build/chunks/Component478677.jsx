@@ -60,18 +60,18 @@ let A = function(e) {
     }), n))
   }, [t, E, b]);
   return (0, r.jsx)("div", {
-    className: m.x3,
+    className: g.x3,
     children: (0, r.jsxs)("div", {
-      className: m.B0,
+      className: g.B0,
       children: [(0, r.jsx)(o.Heading, {
-        className: f.R_,
+        className: m.R_,
         variant: "heading-md/semibold",
-        children: g.intl.string(g.t.jY7Zxg)
+        children: f.intl.string(f.t.jY7Zxg)
       }), (0, r.jsx)("div", {
-        className: f.$Q,
-        children: g.intl.string(g.t.q3hbne)
+        className: m.$Q,
+        children: f.intl.string(f.t.q3hbne)
       }), (0, r.jsx)("div", {
-        className: f.k0,
+        className: m.k0,
         children: (0, r.jsx)(o.YNO, {
           targetElementRef: A,
           renderPopout: O,
@@ -86,21 +86,21 @@ let A = function(e) {
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
             ref: A,
-            className: a()(f.Tn, {
-              [f.wH]: n
+            className: a()(m.Tn, {
+              [m.wH]: n
             }),
             children: (0, r.jsx)(o.DUT, {
               onClick: () => l(!n),
               tabIndex: 0,
               children: (0, r.jsxs)("div", {
-                className: f.lm,
+                className: m.lm,
                 children: [(0, r.jsx)(o.euF, {
                   size: o._3J.SIZE_32,
                   src: null == _ ? true : _.getAvatarURL(true, 32),
                   status: h.clD.ONLINE,
                   "aria-label": null == _ ? true : _.username
                 }), (0, r.jsxs)("div", {
-                  className: f.Fj,
+                  className: m.Fj,
                   children: [(0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
@@ -108,7 +108,7 @@ let A = function(e) {
                   }), (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: g.intl.string(g.t.b9w3bO)
+                    children: f.intl.string(f.t.b9w3bO)
                   })]
                 })]
               })

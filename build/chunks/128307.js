@@ -23,8 +23,8 @@ function h(e, t, n, h) {
     g = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: m,
-      trackClick: y
-    } = (0, o.Y9)(u.KS.ActivityInvite, {
+      trackClick: A
+    } = (0, s.Y9)(u.KS.ActivityInvite, {
       notif_type: u.KS.ActivityInvite,
       notif_user_id: t.id,
       activity_type: c.xL.JOIN_REQUEST,
@@ -44,18 +44,18 @@ function h(e, t, n, h) {
         channelId: e.id,
         type: c.xL.JOIN,
         activity: h,
-        location: (0, s.y)() ? c.ThZ.LOCKED_OVERLAY : c.ThZ.UNLOCKED_OVERLAY
-      }), y("join"), r.A.updateNotificationStatus(n)
+        location: (0, o.y)() ? c.ThZ.LOCKED_OVERLAY : c.ThZ.UNLOCKED_OVERLAY
+      }), A("join"), r.A.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
       (0, l.ack)(e.id, {
         section: c.JJy.OVERLAY,
         object: c.ZSU.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), r.A.updateNotificationStatus(n), y("decline")
+      }, true, true), r.A.updateNotificationStatus(n), A("decline")
     },
     onDismissClick: () => {
-      y("dismiss")
+      A("dismiss")
     }
   }
 }

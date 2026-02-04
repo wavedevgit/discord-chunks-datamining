@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 192380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js"), require("./492834.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,19 +14,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk673310 = require("./673310.jsx"),
   Chunk884801 = require("./884801.js"),
   Chunk739954 = require("./739954.js");
-let g = function(e) {
+let f = function(e) {
   let {
     scrollContainerRef: t
   } = e, n = (0, l.bG)([a.A], () => a.A.notificationItem(), []), {
-    showDot: g
-  } = (0, c.A)(), m = i.useRef(null), [f, A] = i.useState(false), {
+    showDot: f
+  } = (0, c.A)(), g = i.useRef(null), [m, A] = i.useState(false), {
     data: _,
     loading: b,
     isRefreshing: E,
     handleOnRefresh: O,
     viewabilityConfigCallbackPairs: y
   } = (0, u.i)({
-    showDot: g,
+    showDot: f,
     notificationItem: n
   }), I = (0, o.E)();
   i.useEffect(() => () => {
@@ -42,12 +42,12 @@ let g = function(e) {
     j = i.useCallback(() => {
       if (T) return;
       let e = t.current;
-      null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || f || b || S || (A(true), (0, s._x)().finally(() => {
+      null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || m || b || S || (A(true), (0, s._x)().finally(() => {
         setTimeout(() => {
           A(false)
         }, 300)
       }))
-    }, [b, f, S, T, t]);
+    }, [b, m, S, T, t]);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("scroll", j), () => {
@@ -129,9 +129,9 @@ let g = function(e) {
         children: "New content available"
       })
     }), (0, r.jsxs)("div", {
-      ref: m,
+      ref: g,
       className: h.j,
-      children: [_.map(e => w(e)), !T && (f || S) && (0, r.jsx)("div", {
+      children: [_.map(e => w(e)), !T && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

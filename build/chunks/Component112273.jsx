@@ -120,7 +120,7 @@ function O(e) {
       title: w.name
     }, "xbox-".concat(null != (p = P.session_id) ? p : t))) : x((0, r.jsx)(_.A.RichPresenceSection, {
       activity: P,
-      getAssetImage: f.uD,
+      getAssetImage: m.uD,
       user: R
     }, "rich-presence-".concat(null != (A = P.session_id) ? A : t, "-").concat(R.id)));
     else if ((0, u.A)(P)) {
@@ -130,7 +130,7 @@ function O(e) {
         guildId: null == N ? true : N.id,
         activity: P,
         user: e || n ? R : null,
-        getAssetImage: f.uD
+        getAssetImage: m.uD
       }, "streaming-".concat(null != (b = P.session_id) ? b : t)))
     } else P.type === E.$pd.LISTENING && ((0, o.A)(P) ? x((0, r.jsx)(_.A.SpotifySection, {
       activity: P,
@@ -140,14 +140,14 @@ function O(e) {
         unknownSize: 0,
         totalSize: L.length
       },
-      getAssetImage: f.uD,
+      getAssetImage: m.uD,
       members: L
     }, "spotify-".concat(null != (y = P.session_id) ? y : t, "-").concat(R.id))) : (null != P.assets || (0, a.A)(P)) && x((0, r.jsx)(_.A.RichPresenceSection, {
       activity: P,
-      getAssetImage: f.uD,
+      getAssetImage: m.uD,
       user: R
     }, "rich-presence-".concat(null != (C = P.session_id) ? C : t, "-").concat(R.id))));
-    T && null != O && null != w && (0, g.zS)(P, O) && (null == O.userStatus || !(0, h.gO)(O.userStatus, d.uF.ACTIVITY_PANEL)) && x((0, r.jsx)(m.A, {
+    T && null != O && null != w && (0, f.zS)(P, O) && (null == O.userStatus || !(0, h.gO)(O.userStatus, d.uF.ACTIVITY_PANEL)) && x((0, r.jsx)(g.A, {
       quest: O
     }, "quest-".concat(O.id, "-").concat(null != (j = P.session_id) ? j : t)))
   }), j.length > 0 ? (0, r.jsx)(_.A.Body, {

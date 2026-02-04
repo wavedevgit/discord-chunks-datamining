@@ -20,21 +20,21 @@ function p(e) {
     className: n,
     channel: p,
     user: h,
-    hasSingleMessageRequest: g
+    hasSingleMessageRequest: f
   } = e, {
-    channelId: m
+    channelId: g
   } = (0, o.N)();
   return (0, r.jsx)(c.A, {
     index: t,
     className: n,
-    isFocused: m === p.id,
+    isFocused: g === p.id,
     channel: p,
     user: h,
     onClick: e => {
       e.stopPropagation(), i.A.openPrivateChannelAsSidebar({
         channelId: p.id,
         baseChannelId: l.fe,
-        hasSingleMessageRequest: g
+        hasSingleMessageRequest: f
       }), a.default.track(d.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
         is_spam: false,
         channel_id: p.id,

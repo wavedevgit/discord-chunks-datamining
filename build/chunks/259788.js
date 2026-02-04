@@ -3,9 +3,9 @@
 require.d(exports, {
   Ay: () => h,
   GI: () => u,
-  J5: () => s,
+  J5: () => o,
   g_: () => d,
-  jc: () => o,
+  jc: () => s,
   nj: () => c,
   nl: () => a
 });
@@ -16,8 +16,8 @@ let r = {
   },
   l = (0, Chunk839214.D)(() => r),
   a = 1e4,
-  s = 2e4,
-  o = 500,
+  o = 2e4,
+  s = 500,
   u = 1e3;
 
 function c(e) {

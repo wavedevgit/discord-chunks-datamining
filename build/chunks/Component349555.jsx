@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 349555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,13 +16,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk142011 = require("./142011.js");
 
-function m(e) {
+function g(e) {
   let {
     quests: t,
     excludedQuests: n,
     isFetching: l,
-    hasFetched: m,
-    hasFiltersApplied: f = false,
+    hasFetched: g,
+    hasFiltersApplied: m = false,
     onClearFilters: A
   } = e, _ = i.useRef(false), b = (0, o.zy)(), E = i.useMemo(() => {
     if (b.hash.length > 0) {
@@ -35,13 +35,13 @@ function m(e) {
   i.useEffect(() => {
     _.current = false
   }, [b.hash]), i.useEffect(() => {
-    if (null == E || _.current || l || !m) return;
+    if (null == E || _.current || l || !g) return;
     let e = document.getElementById("quest-tile-".concat(E));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
     }), _.current = true
-  }, [t, E, b, l, m]);
+  }, [t, E, b, l, g]);
   let O = null != E,
     [y, I] = i.useState(window.innerWidth);
   i.useEffect(() => {
@@ -54,21 +54,21 @@ function m(e) {
   }, []);
   let v = y >= 1610 ? 3 : y >= 1340 ? 2 : 1;
   return l && 0 === t.length ? (0, r.jsx)(c.y$y, {
-    className: g.u1
+    className: f.u1
   }) : 0 === t.length ? (0, r.jsxs)("div", {
-    className: g.y7,
+    className: f.y7,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
-      children: h.intl.string(f ? h.t.PBfFnx : h.t.NqFP6z)
+      children: h.intl.string(m ? h.t.PBfFnx : h.t.NqFP6z)
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
-      children: f ? h.intl.format(h.t.LdYS1H, {
+      children: m ? h.intl.format(h.t.LdYS1H, {
         onClick: A
       }) : h.intl.string(h.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {
-    className: g.kL,
+    className: f.kL,
     children: t.map((e, t) => {
       let n = Math.floor(t / v);
       return (0, r.jsx)(p.A, {
@@ -76,9 +76,9 @@ function m(e) {
         questContent: u.uF.QUEST_HOME_DESKTOP,
         contentPosition: t,
         rowIndex: n,
-        className: a()(g.d, {
-          [g.wH]: O && e.id === E,
-          [g.tP]: O && e.id !== E
+        className: a()(f.d, {
+          [f.wH]: O && e.id === E,
+          [f.tP]: O && e.id !== E
         }),
         sourceQuestContent: u.uF.QUEST_HOME_DESKTOP
       }, e.id)

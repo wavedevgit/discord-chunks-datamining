@@ -33,12 +33,12 @@ function y(e) {
   } = e, u = (null == (t = h.default.getCurrentUser()) ? true : t.isStaff()) && (null == n ? true : n.isStaff()), {
     acceptFriendRequest: d,
     cancelFriendRequest: p
-  } = (0, m.I)({
+  } = (0, g.I)({
     userId: n.id,
     applicationId: l,
     isGameRelationship: o,
     location: "Friends"
-  }), g = i.useCallback(e => {
+  }), f = i.useCallback(e => {
     e.stopPropagation(), d()
   }, [d]), A = i.useCallback(e => {
     e.stopPropagation(), p()
@@ -50,15 +50,15 @@ function y(e) {
         color: a.A.unsafe_rawColors.BRAND_500.css,
         text: E.intl.string(E.t.oMx98L)
       })
-    }), (0, r.jsx)(f.A, {
+    }), (0, r.jsx)(m.A, {
       icon: s.A9s,
-      actionType: f.A.ActionTypes.ACCEPT,
+      actionType: m.A.ActionTypes.ACCEPT,
       tooltip: E.intl.string(E.t.Zcibdf),
-      onClick: g,
+      onClick: f,
       shouldHighlight: c
-    }), (0, r.jsx)(f.A, {
+    }), (0, r.jsx)(m.A, {
       icon: s.PGe,
-      actionType: f.A.ActionTypes.DENY,
+      actionType: m.A.ActionTypes.DENY,
       tooltip: E.intl.string(E.t.xuio0C),
       onClick: A,
       shouldHighlight: c
@@ -74,7 +74,7 @@ function I(e) {
     active: a
   } = e, {
     cancelFriendRequest: o
-  } = (0, m.I)({
+  } = (0, g.I)({
     userId: t,
     applicationId: n,
     isGameRelationship: l,
@@ -82,9 +82,9 @@ function I(e) {
   }), c = i.useCallback(e => {
     e.stopPropagation(), o()
   }, [o]);
-  return (0, r.jsx)(f.A, {
+  return (0, r.jsx)(m.A, {
     icon: s.PGe,
-    actionType: f.A.ActionTypes.DENY,
+    actionType: m.A.ActionTypes.DENY,
     tooltip: E.intl.string(E.t.eaq81S),
     onClick: c,
     shouldHighlight: a
@@ -127,7 +127,7 @@ function S(e) {
     status: i,
     isGameRelationship: l,
     applicationId: a
-  } = e, s = g.Ay.useUserTag(t);
+  } = e, s = f.Ay.useUserTag(t);
   return (0, r.jsx)(_.A, {
     user: t,
     hovered: n,

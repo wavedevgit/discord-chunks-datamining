@@ -64,11 +64,11 @@ class E extends Chunk64700.PureComponent {
             children: null != i ? i : p.A.getLabelFromPath(n)
           }), a ? (0, r.jsx)("span", {
             className: A.Zn,
-            children: f.intl.string(f.t.bBvAEH)
+            children: m.intl.string(m.t.bBvAEH)
           }) : null]
         }), null != o && null != e && null != t ? (0, r.jsx)(c.A, {
           className: A.fw,
-          hoverText: f.intl.formatToPlainString(f.t["Fxo9e+"], {
+          hoverText: m.intl.formatToPlainString(m.t["Fxo9e+"], {
             available: e,
             total: t
           }),
@@ -81,7 +81,7 @@ class E extends Chunk64700.PureComponent {
       }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        text: f.intl.string(f.t.bt75uw),
+        text: m.intl.string(m.t.bt75uw),
         disabled: null != l,
         onClick: this.handleStartEditing
       })]
@@ -101,14 +101,14 @@ class E extends Chunk64700.PureComponent {
       children: (0, r.jsxs)(u.A, {
         children: [this.renderDiskUsageCircle(), (0, r.jsxs)(u.A.Child, {
           children: [(0, r.jsx)(s.ksK, {
-            label: f.intl.string(f.t.AJkKCB),
+            label: m.intl.string(m.t.AJkKCB),
             value: n,
             placeholder: p.A.getLabelFromPath(e),
             onChange: this.handleLabelChange
           }), (0, r.jsx)("div", {
             className: _.QX,
             children: (0, r.jsx)(s.ksK, {
-              label: f.intl.string(f.t.lnUCwX),
+              label: m.intl.string(m.t.lnUCwX),
               disabled: true,
               value: e
             })
@@ -118,7 +118,7 @@ class E extends Chunk64700.PureComponent {
               checked: null != i ? i : this.props.isDefault,
               disabled: this.props.isDefault,
               onChange: this.handleToggleDefault,
-              label: f.intl.string(f.t.Z2MWuH)
+              label: m.intl.string(m.t.Z2MWuH)
             })
           }), (0, r.jsx)(s.cGx, {
             className: A.me
@@ -126,7 +126,7 @@ class E extends Chunk64700.PureComponent {
             children: [(0, r.jsx)(s.Button, {
               variant: "critical-secondary",
               size: "sm",
-              text: f.intl.string(f.t.iBUzS5),
+              text: m.intl.string(m.t.iBUzS5),
               disabled: t || this.props.isDefault,
               onClick: this.handleRemoveLocation
             }), (0, r.jsx)(u.A, {
@@ -135,12 +135,12 @@ class E extends Chunk64700.PureComponent {
                 children: [(0, r.jsx)(s.Button, {
                   variant: "secondary",
                   size: "sm",
-                  text: f.intl.string(f.t["ETE/oC"]),
+                  text: m.intl.string(m.t["ETE/oC"]),
                   onClick: this.handleStopEditing
                 }), (0, r.jsx)(s.Button, {
                   variant: "active",
                   size: "sm",
-                  text: f.intl.string(f.t["R3BPH+"]),
+                  text: m.intl.string(m.t["R3BPH+"]),
                   disabled: e === this.props.path && n === this.props.label && i === this.props.isDefault,
                   onClick: this.handleSaveChanges
                 })]
@@ -179,9 +179,9 @@ class E extends Chunk64700.PureComponent {
       })
     }), b(this, "handleRemoveLocation", () => {
       (0, a.A)({
-        title: f.intl.string(f.t.iBUzS5),
-        subtitle: f.intl.string(f.t["1XqeW2"]),
-        confirmText: f.intl.string(f.t.iBUzS5),
+        title: m.intl.string(m.t.iBUzS5),
+        subtitle: m.intl.string(m.t["1XqeW2"]),
+        confirmText: m.intl.string(m.t.iBUzS5),
         onConfirm: () => {
           this.handleStopEditing(), (0, o.JN)(this.props.path)
         }
@@ -222,7 +222,7 @@ class O extends Chunk64700.PureComponent {
     return (0, r.jsx)("div", {
       className: A.iE,
       children: (0, r.jsxs)(s.D0$, {
-        label: f.intl.string(f.t.aLszkC),
+        label: m.intl.string(m.t.aLszkC),
         children: [e.map(e => {
           let {
             path: l,
@@ -242,8 +242,8 @@ class O extends Chunk64700.PureComponent {
           children: (0, r.jsx)(s.Button, {
             variant: "primary",
             size: "sm",
-            text: f.intl.string(f.t.pnZ2uk),
-            disabled: !g.isPlatformEmbedded,
+            text: m.intl.string(m.t.pnZ2uk),
+            disabled: !f.isPlatformEmbedded,
             onClick: this.handleAddInstallationLocation
           })
         })]
@@ -254,7 +254,7 @@ class O extends Chunk64700.PureComponent {
     super(...e), b(this, "state", {
       editingPath: null
     }), b(this, "handleAddInstallationLocation", () => {
-      m.Ay.showOpenDialog(["openDirectory"]).then(e => {
+      g.Ay.showOpenDialog(["openDirectory"]).then(e => {
         null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.SA)(e[0])
       })
     }), b(this, "handleToggleEditing", e => {

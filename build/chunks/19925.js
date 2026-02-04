@@ -2,7 +2,7 @@
 /** chunk id: 19925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => h,
-  X: () => g
+  X: () => f
 }), require("./733351.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -28,7 +28,7 @@ function h(e) {
   }), h = (0, i.bG)([o.A], () => {
     var e;
     return null != (e = o.A.getIsFetching(u)) && e
-  }), g = c.A.useField("resultsQuery"), m = g !== n, f = r.useCallback(() => {
+  }), f = c.A.useField("resultsQuery"), g = f !== n, m = r.useCallback(() => {
     let e = o.A.getGuildIds(u),
       n = o.A.getTotal(u);
     if (null == e || null == n) return;
@@ -44,14 +44,14 @@ function h(e) {
   }, [t, u]);
   return r.useMemo(() => ({
     guildIds: d,
-    loading: m || h,
-    searchResultsQuery: g,
-    loadMore: f,
+    loading: g || h,
+    searchResultsQuery: f,
+    loadMore: m,
     searchCategoryId: l
-  }), [d, m, h, g, f, l])
+  }), [d, g, h, f, m, l])
 }
 
-function g(e) {
+function f(e) {
   let {
     loadId: t
   } = e, n = d.A.useField("isSearchVisible"), i = c.A.useField("query");

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 796111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./896048.js"), require("./938796.js");
 var Chunk665260 = require("./665260.js"),
   Chunk562465 = require("./562465.js"),
@@ -16,7 +16,7 @@ var Chunk665260 = require("./665260.js"),
   Chunk569475 = require("./569475.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js");
-let f = {
+let m = {
   [Chunk652215.e$_.SEND_ANALYTICS_EVENT]: {
     validation: e => (0, p.A)(e).required().keys({
       event_name: e.string().required(),
@@ -34,16 +34,16 @@ let f = {
       (0, d.lG)(n.transport), (0, d.D2)(n.application);
       let o = n.application.id,
         p = (0, h.A)(),
-        g = null == p ? true : p.getGuildId(),
-        f = s.A.getApplication(o);
-      if (!(0, r.Lt)(null != (t = null == f ? true : f.flags) ? t : 0, m.gfo.EMBEDDED_FIRST_PARTY)) throw new u.A({
-        errorCode: m.Lw6.INVALID_COMMAND
+        f = null == p ? true : p.getGuildId(),
+        m = s.A.getApplication(o);
+      if (!(0, r.Lt)(null != (t = null == m ? true : m.flags) ? t : 0, g.gfo.EMBEDDED_FIRST_PARTY)) throw new u.A({
+        errorCode: g.Lw6.INVALID_COMMAND
       }, "This application cannot access this API");
       let A = (0, a.D)(o),
         _ = {
           activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
-          activity_guild_id: g,
+          activity_guild_id: f,
           activity_user_session_id: null == A ? true : A.activityUserSessionId
         };
       c.default.track(i, function(e) {
@@ -73,10 +73,10 @@ let f = {
         socket: t
       } = e, n = t.application.id;
       if (null == n) throw new u.A({
-        errorCode: m.Lw6.INVALID_COMMAND
+        errorCode: g.Lw6.INVALID_COMMAND
       }, "No application.");
       return i.Bo.post({
-        url: m.Rsh.APPLICATION_TICKET(n),
+        url: g.Rsh.APPLICATION_TICKET(n),
         body: {
           test_mode: o.A.inTestModeForApplication(n) || l.A.inDevModeForApplication(n)
         },

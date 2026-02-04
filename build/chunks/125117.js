@@ -1,8 +1,8 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 125117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => f,
-  n: () => A
+  n: () => E
 }), require("./896048.js"), require("./733351.js");
 var Chunk64700 = require("./64700.js"),
   Chunk311907 = require("./311907.js"),
@@ -27,24 +27,24 @@ function h(e) {
   return e.map(d)
 }
 
-function p(e, t) {
-  let [, n] = e, [, i] = t;
-  return n === i
+function g(e, t) {
+  let [, n] = e, [, l] = t;
+  return n === l
 }
 
 function f() {
-  let [e] = (0, r.bG)([c.A, l.A, o.A], () => {
+  let [e] = (0, r.bG)([c.A, i.A, o.A], () => {
     var e, t;
-    let n = l.A.getGroups(),
-      [i, r] = c.A.getRows(c.j.FRIEND_REQUESTS),
-      a = h(i),
-      s = h(c.A.getRows(c.j.SUGGESTIONS)[0]),
+    let n = i.A.getGroups(),
+      [l, r] = c.A.getRows(c.j.FRIEND_REQUESTS),
+      s = h(l),
+      a = h(c.A.getRows(c.j.SUGGESTIONS)[0]),
       u = h(c.A.getRows(c.j.SAME_ACTIVITY)[0]),
       d = h(c.A.getRows(c.j.ACTIVITIES)[0]),
-      p = h(c.A.getRows(c.j.IN_GAME)[0]),
+      g = h(c.A.getRows(c.j.IN_GAME)[0]),
       f = h(c.A.getRows(c.j.ONLINE)[0]),
-      g = h(c.A.getRows(c.j.OFFLINE)[0]),
-      m = n.map(e => {
+      p = h(c.A.getRows(c.j.OFFLINE)[0]),
+      I = n.map(e => {
         let [t] = c.A.getRows("GROUP:".concat(e.id));
         return {
           id: e.id,
@@ -52,96 +52,96 @@ function f() {
           users: h(t)
         }
       }),
-      y = null != (e = null == (t = o.A.getPrimaryActivity()) ? true : t.name) ? e : "",
-      A = n.map(e => "".concat(e.id, "\0").concat(e.name, "\0").concat(e.userIds.length)).join("|"),
-      v = "".concat(r, "\0").concat(A, "\0").concat(y);
+      m = null != (e = null == (t = o.A.getPrimaryActivity()) ? true : t.name) ? e : "",
+      E = n.map(e => "".concat(e.id, "\0").concat(e.name, "\0").concat(e.userIds.length)).join("|"),
+      A = "".concat(r, "\0").concat(E, "\0").concat(m);
     return [{
-      groups: m,
-      friendRequests: a,
-      suggestions: s,
-      inGame: p,
+      groups: I,
+      friendRequests: s,
+      suggestions: a,
+      inGame: g,
       activities: d,
       sameActivity: u,
       online: f,
-      offline: g,
-      currentActivityName: y
-    }, v]
-  }, [], p);
+      offline: p,
+      currentActivityName: m
+    }, A]
+  }, [], g);
   return e
 }
 
-function g(e) {
+function p(e) {
   let {
     user: t,
     activities: n,
-    nickname: i
+    nickname: l
   } = e;
-  return [t.username, t.globalName, i, ...n.map(e => e.name)].filter(u.Vq)
+  return [t.username, t.globalName, l, ...n.map(e => e.name)].filter(u.Vq)
 }
-let m = {
+let I = {
   searchType: Chunk379078.n.FUZZY,
-  searchStringGenerator: g,
+  searchStringGenerator: p,
   sortType: Chunk379078.r.JARO_WINKLER,
   throttleMs: 100
 };
 
-function y(e, t) {
-  let [n, r] = i.useState(t), l = i.useCallback(() => r(t), [t]);
-  return (0, s.RT)(e, t, r, m), [n, l]
+function m(e, t) {
+  let [n, r] = l.useState(t), i = l.useCallback(() => r(t), [t]);
+  return (0, a.RT)(e, t, r, I), [n, i]
 }
 
-function A(e) {
-  let [t, n] = i.useState(""), [r, l] = y(t, e.friendRequests), [a, s] = y(t, e.suggestions), [o, u] = y(t, e.sameActivity), [c, d] = y(t, e.activities), [h, p] = y(t, e.inGame), [f, m] = y(t, e.online), [A, v] = y(t, e.offline), b = i.useMemo(() => {
+function E(e) {
+  let [t, n] = l.useState(""), [r, i] = m(t, e.friendRequests), [s, a] = m(t, e.suggestions), [o, u] = m(t, e.sameActivity), [c, d] = m(t, e.activities), [h, g] = m(t, e.inGame), [f, I] = m(t, e.online), [E, A] = m(t, e.offline), y = l.useMemo(() => {
     if ("" === t.trim()) return e.groups;
     let n = t.toLowerCase();
     return e.groups.map(e => {
-      var t, i;
-      let r = e.users.filter(e => g(e).some(e => null != e && e.toLowerCase().includes(n)));
+      var t, l;
+      let r = e.users.filter(e => p(e).some(e => null != e && e.toLowerCase().includes(n)));
       return t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = l
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), l = l = {
         users: r
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
       }), t
     }).filter(e => e.users.length > 0)
-  }, [t, e.groups]), E = i.useCallback(() => {
-    n(""), l(), s(), u(), d(), p(), m(), v()
-  }, [l, s, u, d, p, m, v]);
+  }, [t, e.groups]), S = l.useCallback(() => {
+    n(""), i(), a(), u(), d(), g(), I(), A()
+  }, [i, a, u, d, g, I, A]);
   return {
-    groups: b,
+    groups: y,
     friendRequests: r,
-    suggestions: a,
+    suggestions: s,
     sameActivity: o,
     inGame: h,
     activities: c,
     online: f,
-    offline: A,
+    offline: E,
     currentActivityName: e.currentActivityName,
     searchQuery: t,
     setSearchQuery: n,
-    clearSearch: E
+    clearSearch: S
   }
 }

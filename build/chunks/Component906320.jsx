@@ -263,9 +263,9 @@ class W extends Chunk64700.PureComponent {
     } = e;
     return (0, r.jsxs)(y.A, {
       direction: y.A.Direction.VERTICAL,
-      children: [(0, r.jsx)(g.iCB, {
+      children: [(0, r.jsx)(f.iCB, {
         percent: t,
-        size: g.iCB.Sizes.SMALL,
+        size: f.iCB.Sizes.SMALL,
         foregroundColor: n,
         foregroundGradientColor: null != i ? [i[0], i[1]] : true,
         animate: this.isFocused
@@ -282,9 +282,9 @@ class W extends Chunk64700.PureComponent {
     } = e;
     return (0, r.jsxs)(y.A, {
       direction: y.A.Direction.VERTICAL,
-      children: [(0, r.jsx)(g.LvI, {
+      children: [(0, r.jsx)(f.LvI, {
         percents: t,
-        size: g.LvI.Sizes.SMALL,
+        size: f.LvI.Sizes.SMALL,
         foregroundColors: V,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -458,12 +458,12 @@ class W extends Chunk64700.PureComponent {
   }
 }
 let q = () => (0, r.jsx)(B, {
-    icon: g.udU,
+    icon: f.udU,
     tooltip: M.intl.string(M.t.YGm6SZ),
     onClick: () => A.U()
   }),
   z = () => (0, r.jsx)(B, {
-    icon: g.E$n,
+    icon: f.E$n,
     tooltip: M.intl.string(M.t.TVAd5J),
     onClick: () => A.v7()
   }),
@@ -472,7 +472,7 @@ let q = () => (0, r.jsx)(B, {
       item: t
     } = e;
     return (0, r.jsx)(B, {
-      icon: g.z$m,
+      icon: f.z$m,
       tooltip: M.intl.string(M.t["Eqb+LN"]),
       onClick: () => A.BO(t.applicationId, t.branchId)
     })
@@ -482,7 +482,7 @@ let q = () => (0, r.jsx)(B, {
       item: t
     } = e;
     return (0, r.jsx)(B, {
-      icon: g.PGe,
+      icon: f.PGe,
       tooltip: M.intl.string(M.t["0lFmC9"]),
       onClick: () => A.ZT(t.applicationId, t.branchId)
     })
@@ -545,7 +545,7 @@ class J extends Chunk64700.PureComponent {
       applications: e
     } = this.props;
     e.forEach(e => {
-      e.finished && m.h.wait(() => {
+      e.finished && g.h.wait(() => {
         A.Vt(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true
@@ -593,7 +593,7 @@ class J extends Chunk64700.PureComponent {
         },
         rowProps: {
           onContextMenu: (e, t) => {
-            f.L3(e, async () => {
+            m.L3(e, async () => {
               let {
                 default: e
               } = await n.e("881").then(n.bind(n, 163368));

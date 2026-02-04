@@ -32,7 +32,7 @@ let T = (0, Chunk64700.memo)(function(e) {
   var t, n, l, T, j, x;
   let {
     quest: P
-  } = e, [w, L] = (0, i.useState)(false), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(false), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([f.default], () => f.default.getCurrentUser()), {
+  } = e, [w, L] = (0, i.useState)(false), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(false), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([m.default], () => m.default.getCurrentUser()), {
     ref: H,
     height: F = 0
   } = (0, p.Ay)(), Y = (0, h.Ay)(), K = (0, b.S5)(null == (l = P.userStatus) ? true : l.claimedAt, {
@@ -124,7 +124,7 @@ let T = (0, Chunk64700.memo)(function(e) {
         style: {
           top: R
         },
-        children: (0, r.jsx)(g.A, {
+        children: (0, r.jsx)(f.A, {
           avatarDecorationOverride: J,
           user: B,
           guildId: null,
@@ -136,7 +136,7 @@ let T = (0, Chunk64700.memo)(function(e) {
         className: N.Sl,
         isAnimated: w,
         questName: P.config.messages.questName
-      }) : et.isAnimated ? (0, r.jsx)(m.A, {
+      }) : et.isAnimated ? (0, r.jsx)(g.A, {
         className: N.JU,
         autoPlay: false,
         children: (0, r.jsx)("source", {

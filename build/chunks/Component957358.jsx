@@ -71,20 +71,20 @@ class d extends(r = Chunk64700.PureComponent) {
       if (i.length < 2) return;
       let p = Math.max(Math.min((e - this.dataChangedAt) / l, 1), 0),
         h = r.getContext("2d"),
-        g = this.maxValue;
+        f = this.maxValue;
       h.strokeStyle = a, h.lineWidth = c;
-      let m = r.height - h.lineWidth,
-        f = h.createLinearGradient(0, 0, 0, m);
-      if (null != d) f.addColorStop(0, d);
+      let g = r.height - h.lineWidth,
+        m = h.createLinearGradient(0, 0, 0, g);
+      if (null != d) m.addColorStop(0, d);
       else {
         let {
           r: e,
           g: t,
           b: n
         } = o.E2(a);
-        f.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
+        m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
-      f.addColorStop(1, this.fillColor), h.fillStyle = f;
+      m.addColorStop(1, this.fillColor), h.fillStyle = m;
       let A = i.length >= s ? s : i.length;
       h.setTransform(1, 0, 0, false, 0, r.height), h.clearRect(0, 0, r.width, r.height), h.translate(0, .5 * h.lineWidth);
       let _ = Math.floor(r.width / (A - 3)),
@@ -94,7 +94,7 @@ class d extends(r = Chunk64700.PureComponent) {
       i.forEach((e, r) => {
         t = {
           x: E,
-          y: m * e / g
+          y: g * e / f
         }, 0 === r ? h.moveTo(t.x, t.y) : h.bezierCurveTo(n.x + b, n.y, t.x - b, t.y, t.x, t.y), n = t, E += _
       }), h.stroke(), h.lineTo(E - _, 0), h.lineTo(0, 0), h.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })

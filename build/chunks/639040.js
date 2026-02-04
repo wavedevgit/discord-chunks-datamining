@@ -97,29 +97,29 @@ function c() {
     }), true))
   }, [c]);
   let h = [],
-    g = [],
-    m = 0;
-  for (let t = 0; t < n.length && !(m >= u); t++) {
+    f = [],
+    g = 0;
+  for (let t = 0; t < n.length && !(g >= u); t++) {
     let r = n[t];
-    if (m++, p[r.id]) continue;
+    if (g++, p[r.id]) continue;
     let i = d[r.id];
     if (null == i && r.type === s.Mm.MESSAGE && (null == (e = r.data.message_context) ? true : e.reference_message_id) != null && (i = d[r.data.message_id]), null != i) {
       let e = o(r, i, true);
       null != e && h.push(e)
     }
   }
-  for (let e = 0; e < c.length && !(m >= u); e++) {
+  for (let e = 0; e < c.length && !(g >= u); e++) {
     let n = c[e];
-    if (m++, p[n.id]) continue;
+    if (g++, p[n.id]) continue;
     let r = d[n.id];
     if (null == r && n.type === s.Mm.MESSAGE && (null == (t = n.data.message_context) ? true : t.reference_message_id) != null && (r = d[n.data.message_id]), null != r) {
       let e = o(n, r, false);
-      null != e && g.push(e)
+      null != e && f.push(e)
     }
   }
   return {
     unreadItems: h,
-    readItems: g,
+    readItems: f,
     allUnreadItemsHydrated: u >= n.length
   }
 }

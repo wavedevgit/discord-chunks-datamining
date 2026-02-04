@@ -106,7 +106,7 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [P.rbe.GUILD_CATEGORY, ...m.OU].includes(e.type) || n.push(new Promise(t => {
+  return [P.rbe.GUILD_CATEGORY, ...g.OU].includes(e.type) || n.push(new Promise(t => {
     E.A.whenReady(e.id, () => t()), c.A.fetchMessages({
       channelId: e.id,
       limit: P.EMb
@@ -135,7 +135,7 @@ function F(e) {
       channelId: e.channel_id
     }).map(G),
     n = A.A.getChannel(e.channel_id),
-    r = null != e.author ? new f.A(e.author) : true,
+    r = null != e.author ? new m.A(e.author) : true,
     i = null != e.author ? (0, h.FT)(r, n) : true;
   return {
     id: e.id,
@@ -265,10 +265,10 @@ async function J(e, t, n) {
       }, "Invalid Origin")
     } else {
       let e = await Z(t);
-      if (r = g.Ay.createFromServer(e), !B(n, e.rpc_origins)) throw new T.A({
+      if (r = f.Ay.createFromServer(e), !B(n, e.rpc_origins)) throw new T.A({
         closeCode: P.YI$.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = g.Ay.createFromServer(await Z(t)));
+    } null == r && (r = f.Ay.createFromServer(await Z(t)));
   let {
     id: i,
     name: l,

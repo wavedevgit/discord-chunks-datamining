@@ -1,7 +1,7 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 190012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BC: () => m
+  BC: () => I
 });
 var Chunk735438 = require("./735438.js"),
   Chunk448761 = require("./448761.js"),
@@ -17,27 +17,27 @@ var Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e, t) {
+function I(e, t) {
   let {
     isBlocked: n,
-    isIgnored: m
-  } = (0, l.cf)([d.A], () => ({
+    isIgnored: I
+  } = (0, i.cf)([d.A], () => ({
     isBlocked: d.A.isBlocked(e.author.id),
     isIgnored: d.A.isIgnored(e.author.id)
-  }), [e.author.id]), y = (0, a.Ay)(t.id, e.id), A = (0, l.bG)([c.default], () => c.default.getId()), v = (0, u.Ay)(e).nick, b = e.author.id === A ? g.intl.string(g.t.LuZzxn) : v, E = (0, l.bG)([h.default], () => e.mentions.length > 0 ? h.default.getUser(e.mentions[0]) : true), O = (0, u.d8)(E, t).nick;
+  }), [e.author.id]), m = (0, s.Ay)(t.id, e.id), E = (0, i.bG)([c.default], () => c.default.getId()), A = (0, u.Ay)(e).nick, y = e.author.id === E ? p.intl.string(p.t.LuZzxn) : A, S = (0, i.bG)([h.default], () => e.mentions.length > 0 ? h.default.getUser(e.mentions[0]) : true), v = (0, u.d8)(S, t).nick;
   return function(e, t) {
     let {
       isBlocked: n,
-      isIgnored: l,
-      authorNick: a
+      isIgnored: i,
+      authorNick: s
     } = t;
     if (n) return {
       type: "text",
-      text: g.intl.string(g.t.XAkOo2)
+      text: p.intl.string(p.t.XAkOo2)
     };
-    if (l) return {
+    if (i) return {
       type: "text",
-      text: g.intl.string(g.t["G7p6v/"])
+      text: p.intl.string(p.t["G7p6v/"])
     };
     if (function(e) {
         switch (e.type) {
@@ -64,33 +64,33 @@ function m(e, t) {
         };
         if (e.hasFlag(f.pr7.IS_VOICE_MESSAGE)) return {
           type: "text",
-          text: g.intl.string(g.t.slFYgi)
+          text: p.intl.string(p.t.slFYgi)
         };
         if (e.attachments.length > 0) {
           let t = e.attachments.every(e => (0, o.u)(e.filename)),
             n = !t && e.attachments.every(e => (0, o.AE)(e.filename)),
-            i = !t && !n && e.attachments.every(e => (0, o.L8)(e.filename));
+            l = !t && !n && e.attachments.every(e => (0, o.L8)(e.filename));
           return t ? {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.h4pFfU, {
+            text: p.intl.formatToPlainString(p.t.h4pFfU, {
               count: e.attachments.length
             }),
             trailingIcon: "image"
           } : n ? {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.SJ6pPX, {
+            text: p.intl.formatToPlainString(p.t.SJ6pPX, {
               count: e.attachments.length
             }),
             trailingIcon: "video"
-          } : i ? {
+          } : l ? {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.fnO3hK, {
+            text: p.intl.formatToPlainString(p.t.fnO3hK, {
               count: e.attachments.length
             }),
             trailingIcon: "audio"
           } : {
             type: "text",
-            text: g.intl.formatToPlainString(g.t["89ihS8"], {
+            text: p.intl.formatToPlainString(p.t["89ihS8"], {
               count: e.attachments.length
             }),
             trailingIcon: "attachment"
@@ -99,24 +99,24 @@ function m(e, t) {
         if (e.embeds.length > 0) {
           let t = e.embeds.every(e => null != e.url && (0, o.Zj)(e.url)),
             n = !t && e.embeds.every(e => null != e.url && (0, o.r1)(e.url)),
-            i = !t && !n && e.embeds.every(e => null != e.url && (0, o.L8)(e.url));
+            l = !t && !n && e.embeds.every(e => null != e.url && (0, o.L8)(e.url));
           if (t) return {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.h4pFfU, {
+            text: p.intl.formatToPlainString(p.t.h4pFfU, {
               count: e.embeds.length
             }),
             trailingIcon: "image"
           };
           if (n) return {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.SJ6pPX, {
+            text: p.intl.formatToPlainString(p.t.SJ6pPX, {
               count: e.embeds.length
             }),
             trailingIcon: "video"
           };
-          if (i) return {
+          if (l) return {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.fnO3hK, {
+            text: p.intl.formatToPlainString(p.t.fnO3hK, {
               count: e.embeds.length
             }),
             trailingIcon: "audio"
@@ -131,7 +131,7 @@ function m(e, t) {
           };
           else return {
             type: "text",
-            text: g.intl.formatToPlainString(g.t["9XuYjs"], {
+            text: p.intl.formatToPlainString(p.t["9XuYjs"], {
               count: e.embeds.length
             }),
             trailingIcon: "link"
@@ -146,14 +146,14 @@ function m(e, t) {
           var t;
           return {
             type: "text",
-            text: g.intl.formatToPlainString(g.t.ImizdM, {
+            text: p.intl.formatToPlainString(p.t.ImizdM, {
               question: null == (t = e.poll) ? true : t.question.text
             })
           }
         }
-        if ((0, s.A)(e)) return {
+        if ((0, a.A)(e)) return {
           type: "text",
-          text: g.intl.string(g.t["9ddYKt"])
+          text: p.intl.string(p.t["9ddYKt"])
         }
       }(e);
       if (null != t) {
@@ -161,27 +161,27 @@ function m(e, t) {
         return u = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              l = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), l.forEach(function(t) {
+              var l;
+              l = n[t], t in e ? Object.defineProperty(e, t, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[t] = l
             })
           }
           return e
         }({}, t), c = c = {
-          authorLabel: a
+          authorLabel: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var l = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, l)
           }
           return n
         })(Object(c)).forEach(function(e) {
@@ -192,72 +192,72 @@ function m(e, t) {
     let d = function(e, t) {
       let {
         currentUserId: n,
-        authorNick: l,
-        otherUser: a,
-        otherUserNick: s,
+        authorNick: i,
+        otherUser: s,
+        otherUserNick: a,
         isCallActive: o
       } = t;
-      return e.type === r.l.RECIPIENT_ADD && null != s ? {
+      return e.type === r.l.RECIPIENT_ADD && null != a ? {
         type: "text",
-        text: g.intl.formatToPlainString(g.t.MMN2Jq, {
-          username: l,
-          usernameHook: i.identity,
-          otherUsername: s,
-          otherUsernameHook: i.identity
+        text: p.intl.formatToPlainString(p.t.MMN2Jq, {
+          username: i,
+          usernameHook: l.identity,
+          otherUsername: a,
+          otherUsernameHook: l.identity
         })
-      } : e.type === r.l.RECIPIENT_REMOVE && null != s ? {
+      } : e.type === r.l.RECIPIENT_REMOVE && null != a ? {
         type: "text",
-        text: e.author.id === (null == a ? true : a.id) ? g.intl.formatToPlainString(g.t["5v2xa8"], {
-          username: l,
-          usernameHook: i.identity
-        }) : g.intl.formatToPlainString(g.t.L2FyVq, {
-          username: l,
-          usernameHook: i.identity,
-          otherUsername: s,
-          otherUsernameHook: i.identity
+        text: e.author.id === (null == s ? true : s.id) ? p.intl.formatToPlainString(p.t["5v2xa8"], {
+          username: i,
+          usernameHook: l.identity
+        }) : p.intl.formatToPlainString(p.t.L2FyVq, {
+          username: i,
+          usernameHook: l.identity,
+          otherUsername: a,
+          otherUsernameHook: l.identity
         })
       } : e.type === r.l.CALL ? {
         type: "text",
-        text: o ? g.intl.string(g.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? g.intl.string(g.t.v05Xd6) : g.intl.string(g.t["2CnhoI"]),
+        text: o ? p.intl.string(p.t["NGg/fm"]) : null == e.call || e.call.participants.includes(n) ? p.intl.string(p.t.v05Xd6) : p.intl.string(p.t["2CnhoI"]),
         color: o ? "text-feedback-positive" : true,
         trailingIcon: o ? "call-active" : "call-ended"
       } : e.type === r.l.CHANNEL_NAME_CHANGE ? {
         type: "text",
-        text: g.intl.formatToPlainString(g.t.oItgEw, {
-          username: l,
-          usernameHook: i.identity,
+        text: p.intl.formatToPlainString(p.t.oItgEw, {
+          username: i,
+          usernameHook: l.identity,
           channelName: e.content
         })
       } : e.type === r.l.CHANNEL_ICON_CHANGE ? {
         type: "text",
-        text: g.intl.formatToPlainString(g.t.OEdU6X, {
-          username: l,
-          usernameHook: i.identity
+        text: p.intl.formatToPlainString(p.t.OEdU6X, {
+          username: i,
+          usernameHook: l.identity
         })
       } : e.type === r.l.CHANNEL_PINNED_MESSAGE ? {
         type: "text",
-        text: g.intl.formatToPlainString(g.t.vfkjqx, {
-          username: l,
-          usernameHook: i.identity
+        text: p.intl.formatToPlainString(p.t.vfkjqx, {
+          username: i,
+          usernameHook: l.identity
         })
       } : e.type === r.l.USER_JOIN ? {
         type: "text",
-        text: g.intl.formatToPlainString(p.A.getSystemMessageUserJoin(e.id), {
-          username: l,
-          usernameHook: i.identity
+        text: p.intl.formatToPlainString(g.A.getSystemMessageUserJoin(e.id), {
+          username: i,
+          usernameHook: l.identity
         })
       } : e.type === r.l.THREAD_CREATED ? {
         type: "text",
-        text: g.intl.formatToPlainString(g.t.SGaUAU, {
-          actorName: l,
-          actorHook: i.identity,
+        text: p.intl.formatToPlainString(p.t.SGaUAU, {
+          actorName: i,
+          actorHook: l.identity,
           threadName: e.content,
-          threadOnClick: i.identity
+          threadOnClick: l.identity
         })
       } : e.type === r.l.PREMIUM_REFERRAL ? {
         type: "text",
-        text: g.intl.formatToPlainString(g.t.lieTqU, {
-          username: l
+        text: p.intl.formatToPlainString(p.t.lieTqU, {
+          username: i
         })
       } : true
     }(e, t);
@@ -265,12 +265,12 @@ function m(e, t) {
   }(e, {
     message: e,
     channel: t,
-    currentUserId: A,
-    authorNick: b,
-    otherUser: E,
-    otherUserNick: O,
+    currentUserId: E,
+    authorNick: y,
+    otherUser: S,
+    otherUserNick: v,
     isBlocked: n,
-    isIgnored: m,
-    isCallActive: y
+    isIgnored: I,
+    isCallActive: m
   })
 }

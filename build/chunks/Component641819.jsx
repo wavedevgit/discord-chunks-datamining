@@ -1,7 +1,7 @@
 /** Chunk was on 2824 **/
 /** chunk id: 641819, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  j: () => A
+  j: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -13,7 +13,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk235986 = require("./235986.jsx"),
   Chunk68545 = require("./68545.js"),
   Chunk412260 = require("./412260.js"),
-  Chunk446929 = require("./446929.jsx"),
+  Chunk91053 = require("./91053.jsx"),
   Chunk287809 = require("./287809.js"),
   Chunk954571 = require("./954571.js"),
   Chunk937008 = require("./937008.jsx"),
@@ -24,50 +24,50 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk907 = require("./907.js");
 
-function A(e) {
+function S(e) {
   let {
     handleStepChange: n,
     handleClose: t
   } = e, {
     selectedPlan: i,
-    selectedSkuId: A,
-    step: O
+    selectedSkuId: S,
+    step: b
   } = (0, P.P5)(), {
-    setSelectedGiftingPromotionReward: S,
-    selectedGiftingPromotionReward: I,
-    claimableRewards: b
-  } = (0, f.Pv)(), y = (0, a.bG)([E.default], () => E.default.getCurrentUser()), v = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, d.UY)(b, I), [C, M] = r.useState(R), [N, k] = r.useState(false);
-  r.useEffect(() => {
-    N || null != I || null == R || (S(R), M(R))
-  }, [R, N, I, S]), s()(null != i, "Expected plan to selected"), s()(null != A, "Expected selectedSkuId"), s()(null != O, "Step should be set");
-  let w = r.useMemo(() => null != C && (null != b ? b : []).includes(C), [C, b]),
-    D = r.useMemo(() => 0 === v.length || null == C || !w, [v, C, w]);
-  r.useEffect(() => {
+    setSelectedGiftingPromotionReward: O,
+    selectedGiftingPromotionReward: y,
+    claimableRewards: A
+  } = (0, f.Pv)(), I = (0, a.bG)([E.default], () => E.default.getCurrentUser()), v = (0, a.bG)([p.A], () => p.A.getGiftPromotionRewardSkuIds()), R = (0, d.UY)(A, y), [C, M] = l.useState(R), [N, k] = l.useState(false);
+  l.useEffect(() => {
+    N || null != y || null == R || (O(R), M(R))
+  }, [R, N, y, O]), s()(null != i, "Expected plan to selected"), s()(null != S, "Expected selectedSkuId"), s()(null != b, "Step should be set");
+  let w = l.useMemo(() => null != C && (null != A ? A : []).includes(C), [C, A]),
+    D = l.useMemo(() => 0 === v.length || null == C || !w, [v, C, w]);
+  l.useEffect(() => {
     if (0 === v.length) {
-      M(true), S(true);
+      M(true), O(true);
       return
     }
-    null != C && w && v.includes(C) || null == C || (M(true), S(true))
-  }, [v, w, C, S]);
+    null != C && w && v.includes(C) || null == C || (M(true), O(true))
+  }, [v, w, C, O]);
   let U = e => {
-      S(e), M(e), k(true)
+      O(e), M(e), k(true)
     },
-    L = v.map(e => (0, l.jsx)(u.k, {
+    L = v.map(e => (0, r.jsx)(u.k, {
       skuId: e,
-      claimed: null != b && !b.includes(e),
-      user: y,
+      claimed: null != A && !A.includes(e),
+      user: I,
       onSelect: U,
       selectedSkuId: C
     }, e)),
-    G = (0, l.jsx)(h.UX, {
-      children: (0, l.jsx)(o.jlY, {
+    G = (0, r.jsx)(h.UX, {
+      children: (0, r.jsx)(o.jlY, {
         "data-migration-pending": true,
         className: T.Hx,
-        children: (0, l.jsx)(m.Z3, {
+        children: (0, r.jsx)(m.Z, {
           onStepChange: e => {
-            null != y && null != I && g.default.track(_.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: y.id,
-              reward_sku_id: I
+            null != I && null != y && g.default.track(_.HAw.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: I.id,
+              reward_sku_id: y
             }), n(e)
           },
           onBackClick: () => n(j.pn.PLAN_SELECT),
@@ -79,34 +79,34 @@ function A(e) {
         })
       })
     });
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)(o.rQ0, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)(o.rQ0, {
       "data-migration-pending": true,
       className: T.Hc,
       direction: c.A.Direction.VERTICAL,
       align: c.A.Align.START,
       separator: false,
-      children: [(0, l.jsx)(o.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: x.intl.string(x.t.OEtqpm)
-      }), (0, l.jsx)(o.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
         className: T.GQ,
         children: x.intl.string(x.t.h2nMp0)
-      }), (0, l.jsx)(o.s_y, {
+      }), (0, r.jsx)(o.s_y, {
         "data-migration-pending": true,
         className: T.b,
         onClick: t
       })]
-    }), (0, l.jsx)(o.$mQ, {
+    }), (0, r.jsx)(o.$mQ, {
       "data-migration-pending": true,
-      children: (0, l.jsx)(o.BJc, {
+      children: (0, r.jsx)(o.BJc, {
         direction: "vertical",
         justify: "center",
         align: "center",
-        children: (0, l.jsx)("div", {
+        children: (0, r.jsx)("div", {
           className: T.Dq,
           children: L
         })

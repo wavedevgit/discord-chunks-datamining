@@ -12,7 +12,7 @@ var Chunk544420 = require("./544420.js"),
   Chunk985018 = require("./985018.jsx");
 
 function c(e, t, n, c, d) {
-  if (a.A.isNotificationDisabled(o.KS.ActivityInvite) || null == t.activity) return null;
+  if (a.A.isNotificationDisabled(s.KS.ActivityInvite) || null == t.activity) return null;
   let h = t.activity.type,
     p = c.session_id;
   if (null == p) return null;
@@ -21,10 +21,10 @@ function c(e, t, n, c, d) {
     title: g,
     body: m
   } = (0, l.TB)(e, t, n), {
-    trackView: y,
-    trackClick: A
-  } = (0, s.Y9)(o.KS.ActivityInvite, {
-    notif_type: o.KS.ActivityInvite,
+    trackView: A,
+    trackClick: y
+  } = (0, o.Y9)(s.KS.ActivityInvite, {
+    notif_type: s.KS.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
     message_type: t.type,
@@ -39,7 +39,7 @@ function c(e, t, n, c, d) {
     title: g,
     body: m,
     onNotificationShow: () => {
-      y()
+      A()
     },
     confirmText: u.intl.string(u.t.VJlc0S),
     onConfirmClick: (l, a) => {
@@ -49,10 +49,10 @@ function c(e, t, n, c, d) {
         applicationId: d,
         channelId: e.id,
         messageId: t.id
-      }), r.A.updateNotificationStatus(a), A("join")
+      }), r.A.updateNotificationStatus(a), y("join")
     },
     onDismissClick: () => {
-      A("dismiss")
+      y("dismiss")
     }
   }
 }

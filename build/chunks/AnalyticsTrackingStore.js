@@ -91,7 +91,8 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     handleConnectionOpen: () => {},
     handleConnectionClosed: () => {},
     handleFingerprint: () => {},
-    handleTrack: () => {}
+    handleTrack: () => {},
+    handleSetAnalyticsToken: () => {}
   },
   W = [],
   K = null,
@@ -284,6 +285,14 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           shouldFlushOnNextTick: false
         })
       }), false
+    }, Y.handleSetAnalyticsToken = function(e) {
+      let {
+        analyticsToken: t,
+        userId: n
+      } = e;
+      return null == r && null != t && (r = t, i = n, J({
+        shouldFlushOnNextTick: false
+      })), false
     };
     class ea extends(t = l.Ay.Store) {
       initialize() {

@@ -62,28 +62,28 @@ let E = 10 * Chunk927813.A.Millis.SECOND,
         try {
           var o;
           let e;
-          if (null == i) throw new m.A({
+          if (null == i) throw new g.A({
             errorCode: A.Lw6.INVALID_COMMAND
           }, "No application.");
           let t = c.A.getApplication(i);
-          if (null == t) throw new m.A({
+          if (null == t) throw new g.A({
             errorCode: A.Lw6.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let n = t.primarySkuId;
-          if (null == n) throw new m.A({
+          if (null == n) throw new g.A({
             errorCode: A.Lw6.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(o = t.id, e = d.A.isEntitledToSku(u.default.getCurrentUser(), n, o), null != e ? Promise.resolve(e) : (0, s.LM)(o).then(() => true === d.A.isEntitledToSku(u.default.getCurrentUser(), n, o))).then(e => {
-            if (!e) throw new m.A({
+            if (!e) throw new g.A({
               errorCode: A.Lw6.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.BK)(E).then(() => {
-            throw new m.A({
+            throw new g.A({
               errorCode: A.Lw6.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
         } catch (e) {
-          throw e.code === A.Lw6.INVALID_ENTITLEMENT && (g.Ay.focus(null, true), (0, a.mMO)(async () => {
+          throw e.code === A.Lw6.INVALID_ENTITLEMENT && (f.Ay.focus(null, true), (0, a.mMO)(async () => {
             let {
               default: e
             } = await n.e("26766").then(n.bind(n, 448701));
@@ -100,7 +100,7 @@ let E = 10 * Chunk927813.A.Millis.SECOND,
         let {
           socket: t
         } = e, l = t.application.id;
-        if (null == l) throw new m.A({
+        if (null == l) throw new g.A({
           errorCode: A.Lw6.INVALID_COMMAND
         }, "No application.");
         return i.Bo.post({
@@ -117,7 +117,7 @@ let E = 10 * Chunk927813.A.Millis.SECOND,
           } = e;
           return t
         }).catch(e => {
-          throw g.Ay.focus(null, true), (0, a.mMO)(async () => {
+          throw f.Ay.focus(null, true), (0, a.mMO)(async () => {
             let {
               default: e
             } = await n.e("26766").then(n.bind(n, 448701));

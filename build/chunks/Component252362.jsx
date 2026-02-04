@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 252362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,16 +14,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk979286 = require("./979286.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
-let g = e => {
+let f = e => {
   let {
     displayOptions: t,
     targetElementRef: n,
-    onRequestClose: g,
-    onClick: m
+    onRequestClose: f,
+    onClick: g
   } = e, {
-    analyticsLocations: f
-  } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), A = (0, s.Ay)(), _ = (0, a.Mw)(A) ? t.assetDark : t.assetLight, b = i.useRef(g);
-  return b.current = g, i.useEffect(() => () => {
+    analyticsLocations: m
+  } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), A = (0, s.Ay)(), _ = (0, a.Mw)(A) ? t.assetDark : t.assetLight, b = i.useRef(f);
+  return b.current = f, i.useEffect(() => () => {
     var e;
     null == (e = b.current) || e.call(b)
   }, []), (0, r.jsx)(l.AM, {
@@ -44,12 +44,12 @@ let g = e => {
       text: h.intl.string(h.t.fYfGgK),
       variant: "primary",
       onClick: () => {
-        null == m || m(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
-          analyticsLocations: f,
+        null == g || g(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
+          analyticsLocations: m,
           analyticsSource: o.A.HOME_PAGE_SHOP_TAB
         })
       }
     }],
-    onRequestClose: g
+    onRequestClose: f
   })
 }

@@ -18,16 +18,16 @@ let h = function(e) {
     rows: t,
     renderRow: n,
     renderSection: h,
-    hasSearchQuery: g,
-    sectionFilter: m,
-    footer: f,
+    hasSearchQuery: f,
+    sectionFilter: g,
+    footer: m,
     renderSectionFooter: A
   } = e, _ = (0, s.bG)([u.A], () => u.A.keyboardModeEnabled), b = (0, s.bG)([u.A], () => u.A.useReducedMotion), E = (0, l.Ay)({
     id: "people",
     isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = m !== d.m3P.ONLINE && m !== d.m3P.ALL, y = b || g || O, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+  }), O = g !== d.m3P.ONLINE && g !== d.m3P.ALL, y = b || f || O, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [h(t), e.map(e => n(e, t)), null == A ? true : A(t)]
   }, t) : (0, r.jsxs)(o.F, {
     transitionAppear: false,
@@ -79,7 +79,7 @@ let h = function(e) {
           ref: i,
           className: p.e3
         }, l), n = n = {
-          children: [I, f]
+          children: [I, m]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

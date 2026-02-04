@@ -1,4 +1,4 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 74395, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => o
@@ -16,18 +16,18 @@ function o(e) {
     shouldStopPropagation: o,
     widgetType: u
   } = e;
-  return i.useCallback(e => {
+  return l.useCallback(e => {
     o && (null == e || e.preventDefault(), null == e || e.stopPropagation());
-    let [i] = s.A.isFavorite(t, n);
-    (0, a.k)({
+    let [l] = a.A.isFavorite(t, n);
+    (0, s.k)({
       tab: t,
       targetId: n,
-      isFavorite: !i
+      isFavorite: !l
     }), (0, r.YX)(u, {
       type: r.Z5.FAVORITE,
-      value: i ? r.IP.REMOVED_FROM_FAVORITES : r.IP.ADDED_TO_FAVORITES,
+      value: l ? r.IP.REMOVED_FROM_FAVORITES : r.IP.ADDED_TO_FAVORITES,
       secondaryValue: t,
-      userId: t === l.x.FRIENDS ? n : true
+      userId: t === i.x.FRIENDS ? n : true
     })
   }, [o, t, n, u])
 }

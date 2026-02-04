@@ -41,7 +41,7 @@ class j extends Chunk64700.PureComponent {
   createSound() {
     let {
       soundpack: e
-    } = this.props, t = (0, f.aN)("discodo", e);
+    } = this.props, t = (0, m.aN)("discodo", e);
     return t.volume = 1, t
   }
   componentDidMount() {
@@ -202,7 +202,7 @@ class j extends Chunk64700.PureComponent {
       })];
       return b.default.locale.startsWith("en-") && e.push(C.intl.string(C.t.dQ9Wqk)), e[o().random(e.length - 1)]
     }()), T(this, "_eventLoadingText", function() {
-      let e = m.A.getLoadingTips();
+      let e = g.A.getLoadingTips();
       if (null != e && e.length > 0) return e[o().random(e.length - 1)]
     }()), T(this, "handleReady", () => {
       this.setState({
@@ -229,8 +229,8 @@ class j extends Chunk64700.PureComponent {
   }
 }
 let x = Chunk311907.Ay.connectStores([Chunk142120.A, Chunk437959.A, Chunk312671.A, Chunk775602.A], () => ({
-  isTryingToConnect: g.A.isTryingToConnect(),
-  connected: g.A.isConnected(),
+  isTryingToConnect: f.A.isTryingToConnect(),
+  connected: f.A.isConnected(),
   incident: E.A.getIncident(),
   soundpack: A.A.getSoundpack(),
   reducedMotion: h.A.useReducedMotion

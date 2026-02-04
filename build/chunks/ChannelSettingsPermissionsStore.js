@@ -15,7 +15,7 @@ var l, Chunk735438 = require("./735438.js"),
   Chunk652215 = require("./652215.js"),
   Chunk737045 = require("./737045.js");
 
-function f(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function j(e) {
 function x() {
   if (v = p.A.getChannel(), S = p.A.getCategory(), null == v) returnfalse;
   let e = v.getGuildId();
-  I = y = j(v), null == y[C] && (C = e), i = null != S, r = d.r(v, S), N = null, O = false, E = g.XlH.CLOSED, b.clear()
+  I = y = j(v), null == y[C] && (C = e), i = null != S, r = d.r(v, S), N = null, O = false, E = f.XlH.CLOSED, b.clear()
 }
 class P extends(l = Chunk311907.Ay.Store) {
   initialize() {
@@ -112,13 +112,13 @@ class P extends(l = Chunk311907.Ay.Store) {
     return T
   }
 }
-f(P, "displayName", "ChannelSettingsPermissionsStore");
+m(P, "displayName", "ChannelSettingsPermissionsStore");
 let w = new P(Chunk73153.h, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
       section: t
     } = e;
-    if (null != v || t !== g.p_A.PERMISSIONS) returnfalse;
+    if (null != v || t !== f.p_A.PERMISSIONS) returnfalse;
     x()
   },
   CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
@@ -134,7 +134,7 @@ let w = new P(Chunk73153.h, {
       deny: i
     }), y = _(A({}, y), {
       [t]: l
-    }), b.add(t), E = g.XlH.OPEN, O = !s().isEqual(y, I), r = d.r(v, S)
+    }), b.add(t), E = f.XlH.OPEN, O = !s().isEqual(y, I), r = d.r(v, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {
@@ -147,10 +147,10 @@ let w = new P(Chunk73153.h, {
     }
   },
   CHANNEL_SETTINGS_INIT: function() {
-    p.A.getSection() === g.p_A.PERMISSIONS && x()
+    p.A.getSection() === f.p_A.PERMISSIONS && x()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
-    E = g.XlH.CLOSED, y = null, I = null, v = null, S = null, O = false, b.clear(), C = null, N = null
+    E = f.XlH.CLOSED, y = null, I = null, v = null, S = null, O = false, b.clear(), C = null, N = null
   },
   CHANNEL_UPDATES: function(e) {
     let {
@@ -172,18 +172,18 @@ let w = new P(Chunk73153.h, {
     return n
   },
   CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING: function() {
-    E = g.XlH.SUBMITTING
+    E = f.XlH.SUBMITTING
   },
   CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS: function(e) {
     let {
       silent: t
     } = e;
-    t ? E = g.XlH.OPEN : (E = g.XlH.CLOSED, x())
+    t ? E = f.XlH.OPEN : (E = f.XlH.CLOSED, x())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {
       advancedMode: t
     } = e;
-    T = t, c.w.set(m.t0, t)
+    T = t, c.w.set(g.t0, t)
   }
 })

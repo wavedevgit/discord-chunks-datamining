@@ -191,7 +191,7 @@ let U = {
   [Chunk652215.hCu.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
       let e = I.A.getCurrentUserActiveStream();
-      if (null != e) return (0, s.vN)((0, f._z)(e));
+      if (null != e) return (0, s.vN)((0, m._z)(e));
       (0, A.A)(true, [d.A.GO_LIVE_KEYBIND])
     },
     keyEvents: {
@@ -209,7 +209,7 @@ let U = {
     }
   },
   [Chunk652215.hCu.NAVIGATE_BACK]: {
-    onTrigger: () => (0, m.OE)("global_keybind"),
+    onTrigger: () => (0, g.OE)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -218,7 +218,7 @@ let U = {
     }
   },
   [Chunk652215.hCu.NAVIGATE_FORWARD]: {
-    onTrigger: () => (0, m.Qb)("global_keybind"),
+    onTrigger: () => (0, g.Qb)("global_keybind"),
     keyEvents: {
       keyup: true,
       keydown: false,
@@ -259,7 +259,7 @@ let U = {
   },
   [Chunk652215.hCu.SAVE_CLIP]: {
     onTrigger: () => {
-      (0, h.TD)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, g.l0)())
+      (0, h.TD)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, f.l0)())
     },
     keyEvents: {
       keyup: false,
@@ -268,7 +268,7 @@ let U = {
   },
   [Chunk652215.hCu.SAVE_SCREENSHOT]: {
     onTrigger: () => {
-      !(0, h.TD)() || (0, p.cx)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, g.yT)())
+      !(0, h.TD)() || (0, p.cx)() && (x.default.track(L.HAw.CLIP_SAVE_KEYBIND_PRESSED), (0, f.yT)())
     },
     keyEvents: {
       keyup: false,

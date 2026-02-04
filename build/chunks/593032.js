@@ -1,9 +1,9 @@
-/** Chunk was on 96126 **/
-/** chunk id: 593032, original params: e,r,a (module,exports,require) **/
+/** Chunk was on 62694 **/
+/** chunk id: 593032, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => r
 });
-let t = (0, require("./945810.js").mj)({
+let n = (0, require("./945810.js").mj)({
   name: "2025-12-katsudon",
   kind: "user",
   defaultConfig: {
@@ -19,13 +19,13 @@ let t = (0, require("./945810.js").mj)({
   }
 });
 
-function i(e) {
+function r(e) {
   let {
-    location: r
+    location: t
   } = e, {
-    enabled: a
-  } = t.useConfig({
-    location: r
+    enabled: i
+  } = n.useConfig({
+    location: t
   });
-  return a
+  return i
 }

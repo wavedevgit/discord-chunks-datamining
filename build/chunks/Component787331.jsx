@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 787331, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -17,12 +17,12 @@ var Chunk397927 = require("./397927.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk276991 = require("./276991.js");
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     nickname: n,
-    status: m,
-    isFocused: f
+    status: g,
+    isFocused: m
   } = e, {
     analyticsLocations: A
   } = (0, a.Ay)(), _ = e => {
@@ -36,9 +36,9 @@ function m(e) {
     })
   }, b = e => {
     null == e || e.stopPropagation(), s.A.ignore(t.id)
-  }, E = m === p.clD.OFFLINE ? p.clD.UNKNOWN : m;
+  }, E = g === p.clD.OFFLINE ? p.clD.UNKNOWN : g;
   return (0, r.jsx)(u.A, {
-    isFocused: f,
+    isFocused: m,
     user: t,
     onClick: () => (0, o.openUserProfileModal)({
       userId: t.id,
@@ -61,15 +61,15 @@ function m(e) {
         })]
       });
       return (0, r.jsxs)("div", {
-        className: g.a,
+        className: f.a,
         children: [(0, r.jsx)(d.A, {
           user: t,
           hovered: e,
           status: E,
           subText: n,
-          className: g.__invalid_userInfo
+          className: f.__invalid_userInfo
         }), (0, r.jsx)("div", {
-          className: g.o,
+          className: f.o,
           children: l
         })]
       })

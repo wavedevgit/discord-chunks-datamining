@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 389405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./747238.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -17,10 +17,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk742249 = require("./742249.js");
 
-function f(e) {
+function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [f, A] = i.useState(false), _ = i.useRef(false), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !f, y = i.useMemo(() => (0, l.A)(), []);
+  } = e.match.params, [m, A] = i.useState(false), _ = i.useRef(false), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !m, y = i.useMemo(() => (0, l.A)(), []);
   return (i.useEffect(() => {
     O && true !== _.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
       let {
@@ -51,23 +51,23 @@ function f(e) {
       }).then(() => n.disconnect())
     }), _.current = true)
   }, [t, O, y]), O && false !== b) ? true === b ? (0, r.jsxs)("div", {
-    className: m.k,
+    className: g.k,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
-      children: g.intl.string(g.t.csrAMJ)
+      children: f.intl.string(f.t.csrAMJ)
     }), (0, r.jsx)(o.Text, {
       variant: "text-xs/semibold",
-      children: g.intl.string(g.t["m1+IBn"])
+      children: f.intl.string(f.t["m1+IBn"])
     }), (0, r.jsx)(s.$nd, {
       variant: "primary",
-      text: g.intl.string(g.t.fIv16B),
+      text: f.intl.string(f.t.fIv16B),
       onClick: () => A(true)
     })]
   }) : (0, r.jsxs)("div", {
-    className: m.k,
+    className: g.k,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
-      children: g.intl.string(g.t["Z+hCVU"])
+      children: f.intl.string(f.t["Z+hCVU"])
     }), (0, r.jsx)(o.y$y, {})]
   }) : (0, r.jsx)(d.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {

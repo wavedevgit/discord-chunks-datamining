@@ -540,12 +540,6 @@ let i = {
     neverLoadBeforeConnectionOpen: true,
     hasStoreChangeListeners: true
   },
-  SocialLayerStorefrontAnnouncementManager: {
-    actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire: () => n(889979).A,
-    neverLoadBeforeConnectionOpen: true,
-    hasStoreChangeListeners: true
-  },
   HavenManager: {
     actions: ["HAVEN_DISCONNECT"],
     inlineRequire: () => n(63446).A

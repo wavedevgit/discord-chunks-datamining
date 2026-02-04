@@ -16,7 +16,8 @@ var Chunk110259 = require("./110259.js"),
     CURRENT_USER_UPDATE: e => r.AnalyticsActionHandlers.handleConnectionOpen(e),
     CONNECTION_CLOSED: () => r.AnalyticsActionHandlers.handleConnectionClosed(),
     FINGERPRINT: () => r.AnalyticsActionHandlers.handleFingerprint(),
-    TRACK: e => r.AnalyticsActionHandlers.handleTrack(e)
+    TRACK: e => r.AnalyticsActionHandlers.handleTrack(e),
+    SET_ANALYTICS_TOKEN: e => r.AnalyticsActionHandlers.handleSetAnalyticsToken(e)
   },
   TRACKING_URL: Chunk652215.Rsh.TRACK,
   waitFor: [Chunk961350.default],

@@ -19,9 +19,9 @@ function h(e) {
     targetElementRef: t,
     dismissPopover: n,
     children: h
-  } = e, g = i.useCallback(() => {
+  } = e, f = i.useCallback(() => {
     n(u.i.TAKE_ACTION), (0, o.pX)("".concat(c.BVt.NITRO_HOME, "?section=orbs"))
-  }, [n]), m = (0, r.jsx)(a.AM, {
+  }, [n]), g = (0, r.jsx)(a.AM, {
     targetElementRef: t,
     onRequestClose: () => n(u.i.USER_DISMISS),
     graphic: {
@@ -43,7 +43,7 @@ function h(e) {
     body: p.intl.string(d.default.XNHr3C),
     actions: [{
       text: p.intl.string(p.t.hvVgAZ),
-      onClick: g
+      onClick: f
     }],
     gradientColor: {
       type: "custom",
@@ -54,6 +54,6 @@ function h(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: h
-    }), m]
+    }), g]
   })
 }

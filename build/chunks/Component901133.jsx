@@ -65,11 +65,11 @@ class I extends Chunk64700.PureComponent {
   }
   renderTitle() {
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(f.A, {
+      children: [(0, r.jsx)(m.A, {
         children: this.isHost() ? _.intl.formatToPlainString(_.t["6UJ7mh"], {
           count: this.props.party.length
         }) : _.intl.string(_.t.RZufbH)
-      }), (0, r.jsx)(m.A, {
+      }), (0, r.jsx)(g.A, {
         children: _.intl.string(_.t["0ZHLIi"])
       })]
     })
@@ -78,14 +78,14 @@ class I extends Chunk64700.PureComponent {
     let {
       onStopListening: e
     } = this.props;
-    return this.isHost() ? null : (0, r.jsx)(g.A, {
+    return this.isHost() ? null : (0, r.jsx)(f.A, {
       tooltipText: _.intl.string(_.t.LeZSpz),
       onClick: e,
       icon: o.PGe
     })
   }
   renderHelpIcon() {
-    return this.isHost() ? (0, r.jsx)(g.A, {
+    return this.isHost() ? (0, r.jsx)(f.A, {
       tooltipText: _.intl.string(_.t.U7N2Hs),
       onClick: () => {
         window.open(h.A.getArticleURL(A.MVz.SPOTIFY_CONNECTION), "_blank")

@@ -23,11 +23,11 @@ function s(e) {
     }) ? i.KX8 : i.SYi,
     h = false;
 
-  function g(e) {
+  function f(e) {
     u(e, h)
   }
 
-  function m() {
+  function g() {
     h = true
   }(0, i.mMO)(async () => {
     let {
@@ -55,8 +55,8 @@ function s(e) {
       customId: s,
       linkId: o,
       message: c,
-      onCopyLink: m,
-      onShare: g
+      onCopyLink: g,
+      onShare: f
     }, n))
   }, {
     modalKey: "activity-share-moment-modal",

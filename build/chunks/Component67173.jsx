@@ -36,13 +36,13 @@ let v = Math.ceil(Math.sqrt(115200)),
       dismissContent: x
     } = function() {
       let e = (0, u.useHasAnyModalOpen)(),
-        [t, n] = (0, m.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.m.PRIVATE_CHANNELS_LIST, true),
+        [t, n] = (0, g.kn)(e ? [] : [c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.m.PRIVATE_CHANNELS_LIST, true),
         r = i.useCallback(() => {
           n(O.i.TAKE_ACTION)
         }, [n]);
       return {
         shouldShowPopover: t === c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
-        shouldShowGradientAndBadge: !(0, g.JZ)(c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING),
+        shouldShowGradientAndBadge: !(0, f.JZ)(c.M.QUEST_HOME_ENTRYPOINT_ONBOARDING),
         dismissContent: r
       }
     }(), P = i.useCallback(() => {
@@ -95,7 +95,7 @@ let v = Math.ceil(Math.sqrt(115200)),
       }), L({
         glowSpring: 1,
         delay: 700
-      }), f.default.track(E.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(E.HAw.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [D, L]), [G, V] = i.useState(false), B = i.useCallback(e => {
       V(e.contentRect.width)
     }, []), H = (0, h.w)(B, [], {

@@ -16,7 +16,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk573879 = require("./573879.js");
 
-function m(e, t) {
+function g(e, t) {
   let n = false;
   return null == e.userContent && (e.userContent = {
     dismissedContents: new Uint8Array,
@@ -25,8 +25,8 @@ function m(e, t) {
   }), null == e.userContent.dismissedContents && (e.userContent.dismissedContents = new Uint8Array), (0, d.c0)(e.userContent.dismissedContents, t) || (e.userContent.dismissedContents = (0, d.Vf)(e.userContent.dismissedContents, t), n = true), n
 }
 
-function f(e, t, n) {
-  return !!c.HP.hasHiddenHotspot(t) && m(e, n)
+function m(e, t, n) {
+  return !!c.HP.hasHiddenHotspot(t) && g(e, n)
 }
 let A = [{
   version: 2,
@@ -68,7 +68,7 @@ let A = [{
   version: 4,
   run(e) {
     let t = false;
-    return (true === s.w.get("HAS_SEEN_HUB_UPSELL") || c.HP.hasHiddenHotspot(c._2.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = m(e, i.M.HUB_WAITLIST_UPSELL)), t
+    return (true === s.w.get("HAS_SEEN_HUB_UPSELL") || c.HP.hasHiddenHotspot(c._2.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = g(e, i.M.HUB_WAITLIST_UPSELL)), t
   },
   cleanup() {
     s.w.remove("HAS_SEEN_HUB_UPSELL")
@@ -111,23 +111,23 @@ let A = [{
   cleanup() {}
 }, {
   version: 7,
-  run: e => f(e, c._2.APPLICATION_COMMAND_TOOLTIP, i.M.APPLICATION_COMMAND_TOOLTIP),
+  run: e => m(e, c._2.APPLICATION_COMMAND_TOOLTIP, i.M.APPLICATION_COMMAND_TOOLTIP),
   cleanup() {}
 }, {
   version: 8,
-  run: e => f(e, c._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, i.M.CHANNELINFO_CHANNELBANNER_NOTICE),
+  run: e => m(e, c._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, i.M.CHANNELINFO_CHANNELBANNER_NOTICE),
   cleanup() {}
 }, {
   version: 9,
-  run: e => (c.HP.hasHiddenHotspot(c._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(g.JE, "true"), f(e, c._2.MULTI_ACCOUNT_TOOLTIP, i.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
+  run: e => (c.HP.hasHiddenHotspot(c._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(f.JE, "true"), m(e, c._2.MULTI_ACCOUNT_TOOLTIP, i.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
   cleanup() {}
 }, {
   version: 10,
   run(e) {
     var t;
-    let n = f(e, c._2.HUB_LINK_CHANNEL_NOTICE, i.M.CHANNEL_NOTICE_HUBLINK),
+    let n = m(e, c._2.HUB_LINK_CHANNEL_NOTICE, i.M.CHANNEL_NOTICE_HUBLINK),
       r = null != (t = s.w.get("channelNotices")) ? t : {};
-    returnfalse === r[h.n5X.INVITE] && m(e, i.M.CHANNEL_NOTICE_INVITE) && (n = true), false === r[h.n5X.QUICKSWITCHER] && m(e, i.M.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[h.n5X.GUILD_BOOSTING] && m(e, i.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
+    returnfalse === r[h.n5X.INVITE] && g(e, i.M.CHANNEL_NOTICE_INVITE) && (n = true), false === r[h.n5X.QUICKSWITCHER] && g(e, i.M.CHANNEL_NOTICE_QUICKSWITCHER) && (n = true), false === r[h.n5X.GUILD_BOOSTING] && g(e, i.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (n = true), n
   },
   cleanup() {
     s.w.remove("channelNotices")
@@ -136,14 +136,14 @@ let A = [{
   version: 11,
   run(e) {
     let t = false;
-    return f(e, c._2.GUILD_EVENT_UPSELL, i.M.GUILD_HEADER_EVENT_UPSELL) && (t = true), f(e, c._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, i.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = true), t
+    return m(e, c._2.GUILD_EVENT_UPSELL, i.M.GUILD_HEADER_EVENT_UPSELL) && (t = true), m(e, c._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, i.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = true), t
   },
   cleanup() {}
 }, {
   version: 12,
   run(e) {
     let t = false;
-    return s.w.get("hideNag") && m(e, i.M.NAGBAR_NOTICE_DOWNLOAD) && (t = true), s.w.get("hideConnectSpotify") && m(e, i.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), s.w.get("hideConnectPlayStation") && m(e, i.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
+    return s.w.get("hideNag") && g(e, i.M.NAGBAR_NOTICE_DOWNLOAD) && (t = true), s.w.get("hideConnectSpotify") && g(e, i.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = true), s.w.get("hideConnectPlayStation") && g(e, i.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = true), t
   },
   cleanup() {
     s.w.remove("hideNag"), s.w.remove("hideConnectSpotify"), s.w.remove("hideConnectPlayStation")
@@ -152,18 +152,18 @@ let A = [{
   version: 13,
   run(e) {
     let t = false;
-    return s.w.get("hidePremiumPromo") && m(e, i.M.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), s.w.get("hidePremiumTier2TrialEnding") && m(e, i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), s.w.get("hidePremiumReactivateNotice") && m(e, i.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
+    return s.w.get("hidePremiumPromo") && g(e, i.M.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = true), s.w.get("hidePremiumTier2TrialEnding") && g(e, i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = true), s.w.get("hidePremiumReactivateNotice") && g(e, i.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = true), t
   },
   cleanup() {
     s.w.remove("hidePremiumPromo"), s.w.remove("hidePremiumTier2TrialEnding"), s.w.remove("hidePremiumReactivateNotice")
   }
 }, {
   version: 14,
-  run: e => f(e, c._2.ACTIVITY_BEB_TUTORIAL, i.M.ACTIVITIES_TUTORIAL_COACH_MARK),
+  run: e => m(e, c._2.ACTIVITY_BEB_TUTORIAL, i.M.ACTIVITIES_TUTORIAL_COACH_MARK),
   cleanup() {}
 }, {
   version: 15,
-  run: e => f(e, c._2.NOW_PLAYING_CONSENT_CARD, i.M.NOW_PLAYING_CONSENT_CARD),
+  run: e => m(e, c._2.NOW_PLAYING_CONSENT_CARD, i.M.NOW_PLAYING_CONSENT_CARD),
   cleanup() {}
 }, {
   version: 16,
@@ -195,7 +195,7 @@ let A = [{
   version: 18,
   run(e) {
     let t = false;
-    return f(e, c._2.GUILD_DELETE_FEEDBACK, i.M.GUILD_DELETE_FEEDBACK) && (t = true), f(e, c._2.GUILD_LEAVE_FEEDBACK, i.M.GUILD_LEAVE_FEEDBACK) && (t = true), t
+    return m(e, c._2.GUILD_DELETE_FEEDBACK, i.M.GUILD_DELETE_FEEDBACK) && (t = true), m(e, c._2.GUILD_LEAVE_FEEDBACK, i.M.GUILD_LEAVE_FEEDBACK) && (t = true), t
   },
   cleanup() {}
 }, {
@@ -203,7 +203,7 @@ let A = [{
   run(e) {
     var t;
     let n = false;
-    return null != (t = s.w.get("forumHelperCardStorageKey")) && t && (n = m(e, i.M.FORUM_CHANNEL_HELPER_CARD)), n
+    return null != (t = s.w.get("forumHelperCardStorageKey")) && t && (n = g(e, i.M.FORUM_CHANNEL_HELPER_CARD)), n
   },
   cleanup() {
     s.w.remove("forumHelperCardStorageKey")

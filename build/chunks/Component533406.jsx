@@ -2,7 +2,6 @@
 /** chunk id: 533406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => A,
   a: () => b
 });
 var Chunk627968 = require("./627968.js"),
@@ -182,15 +181,4 @@ let O = e => {
       onCloseCallback: f,
       modalKey: _
     })
-  };
-
-function A() {
-  (0, a.mMO)(async () => {
-    let {
-      default: e
-    } = await n.e("1218").then(n.bind(n, 839225));
-    return t => (0, r.jsx)(e, m({}, t))
-  }, {
-    modalKey: "slayer-storefront-announcement-modal"
-  })
-}
+  }

@@ -29,13 +29,13 @@ let y = Chunk64700.memo(function(e) {
     loaded: n,
     error: l,
     message: y
-  } = (0, f.I)(t), {
+  } = (0, m.I)(t), {
     isBlocked: I,
     isIgnored: v
-  } = (0, s.cf)([m.A], () => ({
-    isBlocked: null != y && m.A.isBlockedForMessage(y),
-    isIgnored: null != y && m.A.isIgnoredForMessage(y)
-  }), [y]), S = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
+  } = (0, s.cf)([g.A], () => ({
+    isBlocked: null != y && g.A.isBlockedForMessage(y),
+    isIgnored: null != y && g.A.isIgnoredForMessage(y)
+  }), [y]), S = (0, s.bG)([f.A], () => f.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
     content: N
   } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, u.Ay)(y, {
     formatInline: true,

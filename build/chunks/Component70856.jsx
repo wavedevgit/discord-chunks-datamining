@@ -51,12 +51,12 @@ function p(e) {
     activity: a,
     guildId: p,
     sourceAnalyticsLocations: h
-  } = e, g = [];
+  } = e, f = [];
   for (let {
       user: e,
       status: n
     }
-    of t) g.push((0, r.jsx)(l.Drp, {
+    of t) f.push((0, r.jsx)(l.Drp, {
     id: e.id,
     keepItemStyles: true,
     render: t => (0, r.jsx)(o.A, d(u({}, t), {
@@ -70,7 +70,7 @@ function p(e) {
       sourceAnalyticsLocations: h
     })
   }));
-  for (let e of n) g.push((0, r.jsx)(l.Drp, {
+  for (let e of n) f.push((0, r.jsx)(l.Drp, {
     id: e.id,
     keepItemStyles: true,
     render: t => (0, r.jsx)(o.A, d(u({}, t), {
@@ -83,15 +83,15 @@ function p(e) {
       sourceAnalyticsLocations: h
     })
   }));
-  let m = i - g.length;
-  return m > 0 && g.push((0, r.jsx)(l.Drp, {
+  let g = i - f.length;
+  return g > 0 && f.push((0, r.jsx)(l.Drp, {
     id: "unknown-members-".concat(null == a ? true : a.session_id),
     render: e => (0, r.jsx)(o.x, d(u({}, e), {
       label: c.intl.formatToPlainString(c.t["6Kqn9M"], {
-        count: m
+        count: g
       })
     }))
-  })), g
+  })), f
 }
 
 function h(e) {
@@ -107,7 +107,7 @@ function h(e) {
     return t.id
   })), d = n.filter(e => !u.has(e.id)), {
     analyticsLocations: h
-  } = (0, a.Ay)(), g = i.useMemo(() => {
+  } = (0, a.Ay)(), f = i.useMemo(() => {
     let e = s.flatMap(e => {
       let {
         playingMembers: t
@@ -116,8 +116,8 @@ function h(e) {
     }).map(e => e.id);
     return n.filter(t => !e.includes(t.id))
   }, [n, s]);
-  if (s.length <= 1 && 0 === g.length) {
-    var m, f;
+  if (s.length <= 1 && 0 === f.length) {
+    var g, m;
     return (0, r.jsx)(l.rXV, {
       label: n.length > 1 ? c.intl.formatToPlainString(c.t.C4WXvc, {
         memberCount: n.length
@@ -126,7 +126,7 @@ function h(e) {
         priorityMembers: t,
         otherMembers: d,
         totalMembers: n.length,
-        activity: null != (m = null == (f = s[0]) ? true : f.activity) ? m : true,
+        activity: null != (g = null == (m = s[0]) ? true : m.activity) ? g : true,
         guildId: null == o ? true : o.id,
         sourceAnalyticsLocations: h
       })
@@ -155,9 +155,9 @@ function h(e) {
         })
       }, n)
     }),
-    _ = g.map(e => e.id);
+    _ = f.map(e => e.id);
   return [...A, (0, r.jsx)(l.rXV, {
-    label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(g.length),
+    label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(f.length),
     children: p({
       priorityMembers: t.filter(e => {
         let {
@@ -165,8 +165,8 @@ function h(e) {
         } = e;
         return _.includes(t.id)
       }),
-      otherMembers: g.filter(e => !u.has(e.id)),
-      totalMembers: g.length,
+      otherMembers: f.filter(e => !u.has(e.id)),
+      totalMembers: f.length,
       guildId: null == o ? true : o.id,
       sourceAnalyticsLocations: h
     })

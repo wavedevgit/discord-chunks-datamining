@@ -18,7 +18,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk461349 = require("./461349.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,11 +41,11 @@ function A(e) {
   let {
     imageSrc: t,
     gameName: n
-  } = e, [l, a] = i.useState(false), s = null != n ? n : g.intl.string(g.t.GIWFlF);
+  } = e, [l, a] = i.useState(false), s = null != n ? n : f.intl.string(f.t.GIWFlF);
   return l || null == t ? (0, r.jsx)("div", {
     role: "img",
     "aria-label": s,
-    className: m.Np,
+    className: g.Np,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xxs/medium",
       lineClamp: 3,
@@ -55,7 +55,7 @@ function A(e) {
   }) : (0, r.jsx)("img", {
     src: t,
     alt: s,
-    className: m.$_,
+    className: g.$_,
     onError: () => a(true),
     onLoad: () => a(false)
   })
@@ -66,7 +66,7 @@ function _(e) {
     imageSrc: t,
     gameName: n,
     applicationId: l,
-    userId: f,
+    userId: m,
     className: _,
     hideTooltip: b = false,
     coverRef: E
@@ -74,9 +74,9 @@ function _(e) {
     location: "GameCover",
     applicationId: l,
     source: u.Ob.UserProfile,
-    sourceUserId: f,
+    sourceUserId: m,
     trackEntryPointImpression: true
-  }), I = null != n ? n : g.intl.string(g.t.GIWFlF), v = g.intl.formatToPlainString(g.t["8QLQB+"], {
+  }), I = null != n ? n : f.intl.string(f.t.GIWFlF), v = f.intl.formatToPlainString(f.t["8QLQB+"], {
     gameName: I
   }), S = i.useCallback(e => {
     if (O) {
@@ -103,7 +103,7 @@ function _(e) {
     innerRef: E,
     onClick: S,
     "aria-label": v,
-    className: a()(m.vk, _),
+    className: a()(g.vk, _),
     children: (0, r.jsx)(A, {
       imageSrc: t,
       gameName: n
@@ -135,15 +135,15 @@ function b(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]), d = a()(m.PY, i);
+  }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]), d = a()(g.PY, i);
   return l ? (0, r.jsx)(c.vN3, {
     children: (0, r.jsx)("div", {
       ref: o,
       className: d,
       tabIndex: false,
-      children: (0, r.jsx)(A, f({}, u))
+      children: (0, r.jsx)(A, m({}, u))
     })
-  }) : (0, r.jsx)(_, f({
+  }) : (0, r.jsx)(_, m({
     className: d,
     applicationId: t,
     userId: n,

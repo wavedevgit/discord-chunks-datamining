@@ -16,7 +16,7 @@ let h = Chunk927813.A.Millis.WEEK;
 
 function p(e) {
   let t = (0, a.s)(e),
-    n = (0, l.cf)([s.A], () => s.A.getUserAffinitiesMap());
+    n = (0, l.cf)([o.A], () => o.A.getUserAffinitiesMap());
   return i.useMemo(() => null == t ? [] : t.filter(t => (0, c.zD)(t) && (0, c.P)(t) && t.extra.application_id === e && u.default.age(t.id) < h).sort((e, t) => g(n, t) - g(n, e)), [t, e, n])
 }
 let f = 30 * Chunk927813.A.Seconds.MINUTE;
@@ -31,6 +31,6 @@ function g(e, t) {
     })),
     l = Math.exp(-(u.default.age(t.id) / 1e3 / f * .01)),
     a = t.traits.some(e => e.type !== r.K.DURATION_SECONDS),
-    s = (0, d.I5)(t);
-  return i * l * (1 + .6 * (a && !s ? 1 : 0))
+    o = (0, d.I5)(t);
+  return i * l * (1 + .6 * (a && !o ? 1 : 0))
 }

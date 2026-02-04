@@ -1,25 +1,25 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 483392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => l
+  C: () => i
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk397927 = require("./397927.js");
 
-function l(e) {
+function i(e) {
   let {
     isCollapsed: t,
     size: n = "md",
-    className: l
+    className: i
   } = e;
-  return t ? (0, i.jsx)(r._BQ, {
+  return t ? (0, l.jsx)(r._BQ, {
     size: n,
     color: "currentColor",
-    className: l
-  }) : (0, i.jsx)(r.abt, {
+    className: i
+  }) : (0, l.jsx)(r.abt, {
     size: n,
     color: "currentColor",
-    className: l
+    className: i
   })
 }

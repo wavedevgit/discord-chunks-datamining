@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 844358, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,10 +16,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk742249 = require("./742249.js");
 
-function m(e) {
+function g(e) {
   let {
     applicationId: t
-  } = e, [m, f] = i.useState(null), [A, _] = i.useState(false), b = i.useRef(false), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
+  } = e, [g, m] = i.useState(null), [A, _] = i.useState(false), b = i.useRef(false), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
   if (i.useEffect(() => {
       E && true !== b.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
         let {
@@ -34,15 +34,15 @@ function m(e) {
           }
         }).then(e => {
           let t = null != e && e;
-          f(t), t || _(true)
+          m(t), t || _(true)
         }).catch(() => {
-          f(false), _(true)
+          m(false), _(true)
         }).then(() => n.disconnect())
       }), b.current = true) : E || _(true)
     }, [t, E, O]), A) return (0, r.jsx)(c.A, {});
-  if (E && false !== m)
-    if (true === m) return (0, r.jsxs)("div", {
-      className: g.k,
+  if (E && false !== g)
+    if (true === g) return (0, r.jsxs)("div", {
+      className: f.k,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
         children: h.intl.string(h.t.csrAMJ)
@@ -56,7 +56,7 @@ function m(e) {
       })]
     });
     else return (0, r.jsxs)("div", {
-      className: g.k,
+      className: f.k,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
         children: h.intl.string(h.t["Z+hCVU"])

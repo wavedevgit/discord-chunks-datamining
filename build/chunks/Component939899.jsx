@@ -23,41 +23,41 @@ function A(e) {
   let {
     applicationId: t,
     size: n = "default"
-  } = e, i = (0, o.bG)([g.A], () => g.A.getApplicationWidgetConfig(t));
+  } = e, i = (0, o.bG)([f.A], () => f.A.getApplicationWidgetConfig(t));
   return (0, r.jsxs)("div", {
-    className: a()(f.kL, {
-      [f.PG]: "small" === n
+    className: a()(m.kL, {
+      [m.PG]: "small" === n
     }),
     children: [(0, r.jsxs)("div", {
-      className: f.Qs,
+      className: m.Qs,
       children: [(0, r.jsx)("div", {
-        className: f.wx
+        className: m.wx
       }), (0, r.jsx)("div", {
-        className: f.yF
+        className: m.yF
       }), (0, r.jsxs)("div", {
-        className: f.M1,
+        className: m.M1,
         children: [(0, r.jsx)("div", {
-          className: f.dJ
+          className: m.dJ
         }), (0, r.jsx)("div", {
-          className: f.dJ
+          className: m.dJ
         }), (0, r.jsx)("div", {
-          className: f.dJ
+          className: m.dJ
         }), (0, r.jsx)("div", {
-          className: f.dJ
+          className: m.dJ
         }), (0, r.jsx)("div", {
-          className: f.dJ
+          className: m.dJ
         }), (0, r.jsx)("div", {
-          className: f.dJ
+          className: m.dJ
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: f.ZS,
+      className: m.ZS,
       children: (null == i ? true : i.miniPreviewImage) != null ? (0, r.jsx)("img", {
         src: i.miniPreviewImage,
         alt: "",
-        className: f.oz
+        className: m.oz
       }) : (0, r.jsx)("div", {
-        className: f.FQ
+        className: m.FQ
       })
     })]
   })
@@ -71,32 +71,32 @@ function _(e) {
     trackUserProfileAction: l
   } = (0, h.NJ)(), a = (0, p.h)(t), {
     hasAlreadyLinked: o,
-    canStartAuthorization: g,
+    canStartAuthorization: f,
     startAuthorization: A,
     fetched: _
   } = (0, d.RD)(a), {
     analyticsLocations: b
   } = (0, u.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), E = i.useCallback(() => {
-    g && (l({
+    f && (l({
       action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
       applicationId: t
     }), A({
       analyticsLocations: b
     }))
-  }, [g, l, t, A, b]);
+  }, [f, l, t, A, b]);
   return "default" !== n || null == a ? null : (0, r.jsxs)("div", {
-    className: f.qr,
+    className: m.qr,
     children: [(0, r.jsx)(s.A5T, {
       size: "xs"
     }), (0, r.jsx)(s.EYj, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: _ ? o ? m.intl.format(m.t.wiyuG9, {
+      children: _ ? o ? g.intl.format(g.t.wiyuG9, {
         applicationName: a.name
-      }) : g ? m.intl.format(m.t.RNWFOQ, {
+      }) : f ? g.intl.format(g.t.RNWFOQ, {
         onConnect: E
-      }) : m.intl.string(m.t["9TX4UT"]) : (0, r.jsx)("div", {
-        className: f.bg
+      }) : g.intl.string(g.t["9TX4UT"]) : (0, r.jsx)("div", {
+        className: m.bg
       })
     })]
   })

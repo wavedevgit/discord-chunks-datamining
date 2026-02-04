@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 328717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,16 +16,16 @@ var Chunk43105 = require("./43105.jsx"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk398932 = require("./398932.js");
-let m = e => {
+let g = e => {
   let {
     targetElementRef: t,
-    discountOffer: m,
-    premiumSubscription: f,
+    discountOffer: g,
+    premiumSubscription: m,
     dismissCoachmark: A,
     children: _
   } = e, {
     analyticsLocations: b
-  } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, m, f), O = (0, r.jsx)(i.h, {
+  } = (0, s.Ay)(a.A.CHURN_DISCOUNT_POPOVER), E = (0, c.iU)(d.gD.PREMIUM_MONTH_TIER_2, g, m), O = (0, r.jsx)(i.h, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -34,16 +34,16 @@ let m = e => {
       align: "start"
     },
     title: h.intl.format(h.t["3yZP0G"], {
-      percent: m.discount.amount
+      percent: g.discount.amount
     }).toString(),
     body: h.intl.format(h.t["3Q4wCy"], {
       discountedPrice: E,
-      billingPeriod: (0, o.Ke)(m.discount.user_usage_limit_interval),
-      numMonths: m.discount.user_usage_limit
+      billingPeriod: (0, o.Ke)(g.discount.user_usage_limit_interval),
+      numMonths: g.discount.user_usage_limit
     }),
     graphic: {
       type: "image",
-      src: g.A
+      src: f.A
     },
     gradientColor: "nitro-pink",
     actions: [{
@@ -74,7 +74,7 @@ let m = e => {
               }
               return e
             }({}, t), i = i = {
-              premiumSubscription: f,
+              premiumSubscription: m,
               analyticsLocations: b,
               initialStep: u.g.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

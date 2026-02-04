@@ -50,7 +50,7 @@ function w(e) {
     return null != e && v.A.isTyping(e, i.id)
   }, [i]), {
     avatarSrc: h,
-    eventHandlers: g
+    eventHandlers: f
   } = (0, b.A)({
     userId: i.id,
     size: u._3J.SIZE_32,
@@ -59,10 +59,10 @@ function w(e) {
     var e, t;
     await p.A.openPrivateChannel({
       recipientIds: [i.id],
-      location: m.A.FREQUENT_FRIENDS_ROW
+      location: g.A.FREQUENT_FRIENDS_ROW
     });
     let n = E.A.getDMFromUserId(i.id);
-    null != n && (0, f.zV)(j.HAw.CHANNEL_OPENED, (e = function(e) {
+    null != n && (0, m.zV)(j.HAw.CHANNEL_OPENED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -79,8 +79,8 @@ function w(e) {
         })
       }
       return e
-    }({}, (0, f.qL)(n)), t = t = {
-      location: "".concat(m.A.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
+    }({}, (0, m.qL)(n)), t = t = {
+      location: "".concat(g.A.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -95,8 +95,8 @@ function w(e) {
   return (0, r.jsx)(u.DUT, {
     className: P.it,
     onClick: A,
-    onMouseEnter: g.onMouseEnter,
-    onMouseLeave: g.onMouseLeave,
+    onMouseEnter: f.onMouseEnter,
+    onMouseLeave: f.onMouseLeave,
     "aria-label": x.intl.formatToPlainString(x.t.M5FjCr, {
       username: i.username
     }),
@@ -139,8 +139,8 @@ function L() {
       frequentFriends: t,
       showCompetitiveSpot: n
     }),
-    m = (0, o.bG)([O.A], () => O.A.hasConsented(j.YAq.PERSONALIZATION)),
-    f = (0, o.bG)([S.default], () => {
+    g = (0, o.bG)([O.A], () => O.A.hasConsented(j.YAq.PERSONALIZATION)),
+    m = (0, o.bG)([S.default], () => {
       var e, t;
       return null != (e = null == (t = S.default.getCurrentUser()) ? true : t.nsfwAllowed) && e
     }),
@@ -151,7 +151,7 @@ function L() {
     }),
     y = i.useRef(null),
     v = (0, o.bG)([C.A], () => C.A.ipCountryCode),
-    L = (0, g.uE)(),
+    L = (0, f.uE)(),
     R = i.useCallback(() => {
       var e;
       let t = null == (e = y.current) ? true : e.getScrollerNode();
@@ -175,11 +175,11 @@ function L() {
     }, [E]);
   if (i.useEffect(() => {
       (0, d.xe)()
-    }, []), !l || null == p || !m) return null;
+    }, []), !l || null == p || !g) return null;
   let {
     frequentFriends: k,
     showCompetitiveSpot: U
-  } = p, G = (v === s.d.AU || v === s.d.GB) && !L, V = null != v && s.M.EU_COUNTRIES.has(v) && !f, B = !G && !V && null != v && U, H = b.scrollWidth > b.clientWidth, F = b.scrollLeft > 0, Y = b.scrollLeft < b.scrollWidth - b.clientWidth - 2;
+  } = p, G = (v === s.d.AU || v === s.d.GB) && !L, V = null != v && s.M.EU_COUNTRIES.has(v) && !m, B = !G && !V && null != v && U, H = b.scrollWidth > b.clientWidth, F = b.scrollLeft > 0, Y = b.scrollLeft < b.scrollWidth - b.clientWidth - 2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: P.mk,

@@ -21,34 +21,34 @@ function E(e) {
     handleStepChange: n,
     handleClose: t
   } = e, {
-    activeSubscription: r,
+    activeSubscription: l,
     selectedSkuId: E,
     setSelectedPlanId: g,
     startedPaymentFlowWithPaymentSourcesRef: f
   } = (0, c.P5)(), {
     isGift: P
-  } = (0, u.Pv)(), j = null != r ? (0, o.EL)(r) : null, h = null != j ? (0, o.RH)(j.planId) : null, _ = null != j ? (0, o.m6)(j.planId) : null, x = (0, p.vT)({
+  } = (0, u.Pv)(), j = null != l ? (0, o.EL)(l) : null, h = null != j ? (0, o.RH)(j.planId) : null, _ = null != j ? (0, o.m6)(j.planId) : null, x = (0, p.vT)({
     isTrial: false,
     isGift: P,
     selectedSkuId: E,
     startedPaymentFlowWithPaymentSources: f.current
   });
-  return i()(null != _, "Expected premium type"), (0, l.jsx)(a.A, {
+  return i()(null != _, "Expected premium type"), (0, r.jsx)(a.A, {
     premiumType: _,
     titleText: m.intl.string(m.t["7VcWW0"]),
     subtitleText: m.intl.format(m.t.Qk34Ik, {
       subscriptionName: h
     }),
-    footer: (0, l.jsxs)(s.ButtonGroup, {
+    footer: (0, r.jsxs)(s.ButtonGroup, {
       direction: "horizontal-reverse",
       align: "center",
-      children: [(0, l.jsx)(s.Button, {
+      children: [(0, r.jsx)(s.Button, {
         variant: "primary",
         text: m.intl.string(m.t["3PatSz"]),
         onClick: () => {
-          x ? (g((0, p.xT)(E, r)), n(d.pn.REVIEW)) : n(d.pn.PLAN_SELECT)
+          x ? (g((0, p.xT)(E, l)), n(d.pn.REVIEW)) : n(d.pn.PLAN_SELECT)
         }
-      }), (0, l.jsx)(s.Button, {
+      }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         onClick: t,
         text: m.intl.string(m.t.h9tkAK)

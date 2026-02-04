@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 305498, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,13 +15,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk49370 = require("./49370.js"),
   Chunk985018 = require("./985018.jsx");
 
-function g(e) {
+function f(e) {
   let {
     targetElementRef: t,
     dismissPopover: n,
-    lastGrantedRewardAmount: g,
-    children: m
-  } = e, f = i.useCallback(() => {
+    lastGrantedRewardAmount: f,
+    children: g
+  } = e, m = i.useCallback(() => {
     n(d.i.TAKE_ACTION), (0, c.pX)("".concat(u.BVt.NITRO_HOME, "?section=orbs"))
   }, [n]), A = (0, r.jsx)(a.AM, {
     targetElementRef: t,
@@ -43,12 +43,12 @@ function g(e) {
     size: "md",
     title: h.intl.string(p.default["78+gLr"]),
     body: h.intl.formatToPlainString(p.default.Ry1TXC, {
-      orbsCount: g
+      orbsCount: f
     }),
     actions: [{
       text: h.intl.string(h.t.RzWDqY),
       icon: s.tvc,
-      onClick: f
+      onClick: m
     }],
     gradientColor: {
       type: "custom",
@@ -58,7 +58,7 @@ function g(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: m
+      children: g
     }), A]
   })
 }

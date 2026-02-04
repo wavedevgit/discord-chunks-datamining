@@ -309,7 +309,8 @@ let x = require("./743361.js").A,
       },
       get displayDescription() {
         return w.intl.string(w.t.WTSzVu)
-      }
+      },
+      maxLength: Chunk652215.zzC
     }],
     predicate: e => {
       let {

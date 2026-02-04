@@ -42,21 +42,21 @@ function T(e) {
     R = null != P ? P : null == L ? true : L.guild_id,
     D = (0, o.bG)([b.A], () => b.A.getGuild(R), [R]),
     M = (0, h.A)(),
-    k = (0, f.lI)(),
+    k = (0, m.lI)(),
     {
       guildTitleIconSize: U,
       guildIconSize: G
-    } = (0, p.p)({
+    } = (0, p.pz)({
       location: "GuildTitle"
     }),
     {
       application: V,
       isFrameInFocusedMode: B
-    } = (0, o.cf)([d.A, g.A], () => {
-      let e = g.A.getConnectedFrame();
+    } = (0, o.cf)([d.A, f.A], () => {
+      let e = f.A.getConnectedFrame();
       return {
         application: d.A.getApplication(null == e ? true : e.applicationId),
-        isFrameInFocusedMode: g.A.getFrameLayoutMode() === v.y.FOCUSED
+        isFrameInFocusedMode: f.A.getFrameLayoutMode() === v.y.FOCUSED
       }
     }),
     H = null != V ? y.Ay.getApplicationIconURL({
@@ -75,7 +75,7 @@ function T(e) {
     size: U
   })) : null != D ? (F = M ? (0, r.jsx)(u.Gg5, {
     size: U
-  }) : (0, r.jsx)(m.A, {
+  }) : (0, r.jsx)(g.A, {
     guild: D,
     size: G,
     active: true,

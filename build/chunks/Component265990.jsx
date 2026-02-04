@@ -187,7 +187,7 @@ let k = function(e) {
             let e = [];
             return Q.forEach(t => {
               t.giftIntentType === T.np.FRIEND_ANNIVERSARY && e.push(t)
-            }), e.sort((e, t) => f.A.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, m.ZD), Q]
+            }), e.sort((e, t) => m.A.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, g.ZD), Q]
           }
         default:
           return [Q]
@@ -255,7 +255,7 @@ let k = function(e) {
         })
       }, i)
     }, [$, R, t, et, en]),
-    el = i.useCallback(e => R === N.m3P.ALL && 0 === e && H && J > m.ZD ? (0, r.jsx)("div", {
+    el = i.useCallback(e => R === N.m3P.ALL && 0 === e && H && J > g.ZD ? (0, r.jsx)("div", {
       className: x.Nf,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.tN5 : a.abt,
@@ -267,7 +267,7 @@ let k = function(e) {
       })
     }) : null, [R, J, F, er, H]);
   if (i.useEffect(() => {
-      R === N.m3P.ALL && (0, g.Ad)()
+      R === N.m3P.ALL && (0, f.Ad)()
     }, [R]), i.useEffect(() => {
       Y(false)
     }, [R, J]), 0 === Q.length && "" === V[R]) return (0, r.jsx)(M, {

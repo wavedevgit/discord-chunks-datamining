@@ -47,23 +47,23 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
           let e = new URL(n).toString();
           if (A.isPlatformEmbedded) {
             let e = (0, a.f)() ? y.MLl.ACTIVITY_POPOUT : null;
-            m.A.focus(e, true)
+            g.A.focus(e, true)
           }
           let s = p.A.getApplication(null == (i = t.application) ? true : i.id),
             h = (0, u.H)(null == r ? true : r.location);
-          if (await (0, d.u)(null == s ? true : s.id, e)) return (0, l.A)(e), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+          if (await (0, d.u)(null == s ? true : s.id, e)) return (0, l.A)(e), f.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (c = t.application) ? true : c.id,
             url: e,
             opened: true
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(n => (0, f.h)({
+          return new Promise(n => (0, m.h)({
             href: e,
             shouldConfirm: true,
             onConfirm: () => {
               var r;
-              (0, l.A)(e), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, l.A)(e), f.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (r = t.application) ? true : r.id,
                 url: e,
                 opened: true
@@ -73,7 +73,7 @@ let v = new Set([Chunk360469.AM, Chunk360469.eK]),
             },
             onCancel: () => {
               var r;
-              g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              f.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (r = t.application) ? true : r.id,
                 url: e,
                 opened: false

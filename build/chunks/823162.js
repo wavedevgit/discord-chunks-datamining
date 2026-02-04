@@ -42,12 +42,12 @@ function D(e, t, n, r) {
     a = e.replace(R, j.intl.string(j.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = v.default.getUser(t);
-      return null == i ? e : null != (r = f.Ay.getNick(n, i.id)) ? r : S.Ay.getName(i)
+      return null == i ? e : null != (r = m.Ay.getNick(n, i.id)) ? r : S.Ay.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
       let n = null != l ? A.A.getRole(l.id, t) : null;
       return null != n && null != n.name ? n.name : j.intl.string(j.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
-      let n = m.A.getChannel(t);
+      let n = g.A.getChannel(t);
       return null == n ? e : (0, o.m1)(n, v.default, O.A)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(j.intl.string(j.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.kx[n],
@@ -106,7 +106,7 @@ function B(e) {
   let {
     message: i,
     channel: l
-  } = e, a = i.type === T.lAJ.REPLY ? u.A.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.a.LOADED ? null == a || null == (r = a.message) ? true : r.author : null, o = null != s ? null != (t = f.Ay.getNick(l.guild_id, null == s ? true : s.id)) ? t : S.Ay.getName(s) : null, c = l.getGuildId(), d = null != (n = f.Ay.getNick(c, i.author.id)) ? n : S.Ay.getName(i.author);
+  } = e, a = i.type === T.lAJ.REPLY ? u.A.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.a.LOADED ? null == a || null == (r = a.message) ? true : r.author : null, o = null != s ? null != (t = m.Ay.getNick(l.guild_id, null == s ? true : s.id)) ? t : S.Ay.getName(s) : null, c = l.getGuildId(), d = null != (n = m.Ay.getNick(c, i.author.id)) ? n : S.Ay.getName(i.author);
   return U(D(i.content, d, c, o), true, l.id, i.id), true
 }
 
@@ -118,10 +118,10 @@ function H(e) {
     optimistic: c
   } = e;
   if (c || b.A.isSelfDeaf()) returnfalse;
-  let u = m.A.getChannel(s);
+  let u = g.A.getChannel(s);
   if (null == u) returnfalse;
   let d = y.A.getChannelId(),
-    A = g.Ay.getCurrentSidebarChannelId(d),
+    A = f.Ay.getCurrentSidebarChannelId(d),
     _ = s === d || s === A,
     v = p.on.getSetting() && o.tts && _,
     C = E.A.getTTSType(),
@@ -131,9 +131,9 @@ function H(e) {
     x.unshift(o.id) > 10 && x.pop();
     let e = u.getGuildId();
     if (null != e && I.Ay.getMutedChannels(e).has(s)) returnfalse;
-    let t = null != (n = null != (r = f.Ay.getNick(e, null == (l = o.author) ? true : l.id)) ? r : S.Ay.getName(o.author)) ? n : "",
+    let t = null != (n = null != (r = m.Ay.getNick(e, null == (l = o.author) ? true : l.id)) ? r : S.Ay.getName(o.author)) ? n : "",
       c = o.type === T.lAJ.REPLY ? null == (a = o.referenced_message) ? true : a.author : null,
-      d = null != c ? null != (i = f.Ay.getNick(e, null == c ? true : c.id)) ? i : S.Ay.getName(c) : null;
+      d = null != c ? null != (i = m.Ay.getNick(e, null == c ? true : c.id)) ? i : S.Ay.getName(c) : null;
     U(D(o.content, t, e, d), false, u.id, o.id, 200)
   }
   returnfalse

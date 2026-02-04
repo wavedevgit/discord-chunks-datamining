@@ -55,7 +55,7 @@ async function S(e, t, n) {
   let r = A.A.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  g.A.loadHydratedAttempt(O(t, n));
+  f.A.loadHydratedAttempt(O(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === _.Mm.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
@@ -87,7 +87,7 @@ async function S(e, t, n) {
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id
     }));
-  await g.A.fetchHydrated(t, n, {
+  await f.A.fetchHydrated(t, n, {
     messageItems: [...a, ...s],
     activityItems: o,
     generatedCandidateItems: c
@@ -168,7 +168,7 @@ function j(e, t) {
 }
 
 function x(e) {
-  return (0, m.HF)(e)
+  return (0, g.HF)(e)
 }
 
 function P(e) {
@@ -209,7 +209,7 @@ function L(e) {
     n = null;
   for (let t = e.length - 1; t >= 0; t--) {
     let r = e[t];
-    if (null != r && !f.P.has(r.item.data.kind)) {
+    if (null != r && !m.P.has(r.item.data.kind)) {
       n = r.item.id;
       break
     }
@@ -285,8 +285,8 @@ async function M(e) {
       object: e,
       objectType: r.ACK_SEMI_AUTOMATIC
     }, true, true, h.default.atPreviousMillisecond(n.data.message_id))
-  }), await g.A.clearReadStates(), await g.A.fetchDehydrated({
+  }), await f.A.clearReadStates(), await f.A.fetchDehydrated({
     isReloading: true,
     forceRefresh: true
-  }), await g.A.reloadICYMITab(), await g.A.getGuildChannelScores(), g.A.getRecommendedGuilds()
+  }), await f.A.reloadICYMITab(), await f.A.getGuildChannelScores(), f.A.getRecommendedGuilds()
 }

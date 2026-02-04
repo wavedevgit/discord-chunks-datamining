@@ -71,10 +71,10 @@ let C = e => {
   i.useEffect(() => {
     null != N && (0, u.pX)(O.BVt.CHANNEL(t))
   }, [N, t]), i.useEffect(() => {
-    T || g.A.fetchRequestToJoinGuilds()
+    T || f.A.fetchRequestToJoinGuilds()
   }, [T]);
   let x = i.useCallback(() => {
-      h(Math.max(p, y.go.FILLING)), g.A.removeGuildJoinRequest(t), (0, u.pX)(O.BVt.ME)
+      h(Math.max(p, y.go.FILLING)), f.A.removeGuildJoinRequest(t), (0, u.pX)(O.BVt.ME)
     }, [t, p]),
     P = (e, t) => () => {
       (0, a.A)({
@@ -86,7 +86,7 @@ let C = e => {
       })
     },
     w = async () => {
-      await g.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
+      await f.A.resetGuildJoinRequest(t), (0, g.Ze)(t)
     }, L = e => {
       e ? P(I.intl.format(I.t["9ZezpN"], {
         name: null == j ? true : j.name
@@ -106,12 +106,12 @@ let C = e => {
       children: (() => {
         if (null == C) return null;
         switch (C.applicationStatus) {
-          case f.B5.SUBMITTED:
+          case m.B5.SUBMITTED:
             return (0, r.jsx)(E.A, {
               onWithdrawApplication: () => L(true),
               guild: j
             });
-          case f.B5.REJECTED:
+          case m.B5.REJECTED:
             return (0, r.jsx)(b.A, {
               reapplyText: I.intl.string(I.t.I1LYVk),
               onReapply: w,
@@ -123,7 +123,7 @@ let C = e => {
           default:
             return (0, r.jsx)(_.K, {
               onDiscardApplication: R,
-              onContinueApplication: () => (0, m.Ze)(t),
+              onContinueApplication: () => (0, g.Ze)(t),
               guild: j
             })
         }

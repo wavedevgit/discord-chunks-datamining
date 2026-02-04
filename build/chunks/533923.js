@@ -18,16 +18,16 @@ var Chunk684013 = require("./684013.js"),
   Chunk426127 = require("./426127.js");
 
 function m(e, t, n, m) {
-  if (o.A.isNotificationDisabled(d.KS.RequestToStream)) return null;
-  let y = t.username,
-    A = f.intl.format(g.default.jTbTAF, {
+  if (s.A.isNotificationDisabled(d.KS.RequestToStream)) return null;
+  let A = t.username,
+    y = f.intl.format(g.default.jTbTAF, {
       username: "",
       game: n.name
     }),
-    v = t.getAvatarURL(e.guild_id, 80),
+    O = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: b,
-      trackClick: E
+      trackView: v,
+      trackClick: b
     } = (0, c.Y9)(d.KS.RequestToStream, {
       notif_type: d.KS.RequestToStream,
       notif_user_id: t.id,
@@ -35,16 +35,16 @@ function m(e, t, n, m) {
       activity_name: m.name
     });
   return {
-    icon: v,
-    title: y,
-    body: A,
+    icon: O,
+    title: A,
+    body: y,
     confirmText: f.intl.string(g.default.UGbmBp),
     cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
-      b()
+      v()
     },
     onConfirmClick: (e, t) => {
-      let n = s.A.getState().preset;
+      let n = o.A.getState().preset;
       if (n === p.jQ.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
@@ -54,17 +54,17 @@ function m(e, t, n, m) {
         n = e ? p.jQ.PRESET_AUTO : p.jQ.PRESET_VIDEO
       }(0, a.A)(u.A.getTargetPID(), {
         preset: n
-      }), E("request-to-stream"), i.A.updateNotificationStatus(t)
+      }), b("request-to-stream"), i.A.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.ack)(e.id, {
         section: h.JJy.OVERLAY,
         object: h.ZSU.ACK_DECLINE_REQUEST_TO_STREAM,
         objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), i.A.updateNotificationStatus(n), E("decline")
+      }, true, true), i.A.updateNotificationStatus(n), b("decline")
     },
     onDismissClick: () => {
-      E("dismiss")
+      b("dismiss")
     }
   }
 }

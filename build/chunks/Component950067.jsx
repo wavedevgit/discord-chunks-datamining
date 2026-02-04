@@ -91,9 +91,9 @@ class P extends Chunk272355.A {
       x = _.A.getGuildId();
     if (a === v.zY.INVITE_UNCLAIMED) {
       let e = A.A.getGuild(x);
-      null != e && (0, d.Qd)(e) && (s = true, (0, g.Fy)(e.id))
+      null != e && (0, d.Qd)(e) && (s = true, (0, f.Fy)(e.id))
     }
-    let P = () => 0 === f.A.totalGuilds && !O.isPlatformEmbedded,
+    let P = () => 0 === m.A.totalGuilds && !O.isPlatformEmbedded,
       w = o.xq();
     e = [{
       key: "Unified NUF Modal",
@@ -171,7 +171,7 @@ class P extends Chunk272355.A {
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != x && null != m.A.get(x) && m.A.get(x) !== m.E
+      predicate: () => null != x && null != g.A.get(x) && g.A.get(x) !== g.E
     }], t = () => {
       y.D(), h.A.flowStep(N.do.ANY, N.ju.NUF_COMPLETE, true)
     }, [...e].reverse().forEach(e => {

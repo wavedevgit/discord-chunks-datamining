@@ -15,9 +15,9 @@ let o = "1",
   d = "4",
   p = "5",
   h = "6",
-  g = "1",
-  m = "2",
-  f = "3",
+  f = "1",
+  g = "2",
+  m = "3",
   A = "4",
   _ = "5",
   b = {
@@ -30,9 +30,9 @@ let o = "1",
       [h]: Chunk252153.Jd
     },
     [Chunk652215.eMA.PEGI]: {
-      [g]: Chunk252153.k8,
-      [m]: Chunk252153.Do,
-      [f]: Chunk252153.$w,
+      [f]: Chunk252153.k8,
+      [g]: Chunk252153.Do,
+      [m]: Chunk252153.$w,
       [A]: Chunk252153.yx,
       [_]: Chunk252153.pr
     }

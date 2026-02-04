@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 541041, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -55,7 +55,7 @@ class h extends Chunk64700.PureComponent {
       })
   }
 }
-let g = Chunk311907.Ay.connectStores([Chunk498642.A], e => {
+let f = Chunk311907.Ay.connectStores([Chunk498642.A], e => {
   let {
     guild: t
   } = e;

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 804052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -46,7 +46,7 @@ let p = e => {
       })]
     })
   };
-class g extends Chunk64700.Component {
+class f extends Chunk64700.Component {
   render() {
     let {
       reason: e,

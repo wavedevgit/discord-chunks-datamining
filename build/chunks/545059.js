@@ -1,14 +1,14 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 545059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => a
+  A: () => s
 });
 var Chunk835245 = require("./835245.js"),
   Chunk73153 = require("./73153.js"),
   Chunk870391 = require("./870391.js");
-let a = {
+let s = {
   createGroup(e) {
-    let t = (0, i.A)();
+    let t = (0, l.A)();
     return r.h.dispatch({
       type: "CREATE_FRIEND_GROUP",
       groupId: t,
@@ -51,7 +51,7 @@ let a = {
     })
   },
   toggleUserInGroup(e, t) {
-    let n = l.A.getGroup(e);
+    let n = i.A.getGroup(e);
     null != n && (n.userIds.includes(t) ? this.removeUsersFromGroup(e, t) : this.addUsersToGroup(e, t))
   }
 }

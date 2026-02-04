@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 857179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => g,
+  G: () => f,
   o: () => h
 }), require("./896048.js"), require("./65821.js");
 var Chunk284009 = require("./284009.js"),
@@ -39,7 +39,7 @@ function h(e) {
   })
 }
 
-function g(e, t) {
+function f(e, t) {
   let {
     soundKey: n,
     soundURL: r,

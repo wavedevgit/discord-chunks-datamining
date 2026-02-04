@@ -104,7 +104,7 @@ function O(e) {
       return D ? y.intl.format(F, {
         price: (0, g.$g)(U.amount, U.currency)
       }) : j.interval === E.WT.YEAR ? y.intl.formatToPlainString(y.t.rtLTJP, {
-        percent: k
+        percent: null != k ? k : ""
       }) : null
     },
     Z = () => {

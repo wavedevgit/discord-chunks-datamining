@@ -15,7 +15,7 @@ var Chunk143236 = require("./143236.js"),
   Chunk613057 = require("./613057.js"),
   Chunk652215 = require("./652215.js");
 
-function g(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,8 +23,8 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 10 * Chunk927813.A.Millis.SECOND,
-  f = new Map,
+let g = 10 * Chunk927813.A.Millis.SECOND,
+  m = new Map,
   A = new Set,
   _ = (e, t, n) => {
     n([u.A.CLOSE, t], e)
@@ -57,16 +57,16 @@ class b extends Chunk143236.EventEmitter {
   }
   constructor(e, t, r, o) {
     var u;
-    super(), u = this, g(this, "validateSocketClient", true), g(this, "logger", true), g(this, "createPostMessageProxySocket", true), g(this, "onFrameHandled", true), g(this, "handshakeFailureTimeoutId", true), g(this, "disconnectSocket", function(e, t) {
+    super(), u = this, f(this, "validateSocketClient", true), f(this, "logger", true), f(this, "createPostMessageProxySocket", true), f(this, "onFrameHandled", true), f(this, "handshakeFailureTimeoutId", true), f(this, "disconnectSocket", function(e, t) {
       var n, r;
       let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
       u.emit("disconnect", e, i ? true : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
-      let [l] = null != (r = Array.from(f.entries()).find(t => {
+      let [l] = null != (r = Array.from(m.entries()).find(t => {
         let [n, r] = t;
         return r === e
       })) ? r : [null, null];
-      null != l && f.delete(l)
-    }), g(this, "handleIFrameMount", e => {
+      null != l && m.delete(l)
+    }), f(this, "handleIFrameMount", e => {
       let {
         id: t
       } = e;
@@ -77,26 +77,26 @@ class b extends Chunk143236.EventEmitter {
             application_id: t,
             channel_id: (0, l.H)(n.location),
             guild_id: (0, l.D)(n.location),
-            timeout_ms: m
+            timeout_ms: g
           })
         })
-      }, m)
-    }), g(this, "handleIFrameUnmount", e => {
+      }, g)
+    }), f(this, "handleIFrameUnmount", e => {
       var t;
       let {
         id: n
       } = e;
       A.delete(n);
-      let [r, i] = null != (t = Array.from(f.entries()).find(e => {
+      let [r, i] = null != (t = Array.from(m.entries()).find(e => {
         let [t, r] = e;
         return r.frameId === n
       })) ? t : [null, null];
       null != i && null != r && (this.disconnectSocket(i, {
         code: h.YI$.CLOSE_NORMAL,
         message: "iFrame gone"
-      }, true), f.delete(r))
-    }), g(this, "handleMessage", (e, t, n) => {
-      let r = f.get(t);
+      }, true), m.delete(r))
+    }), f(this, "handleMessage", (e, t, n) => {
+      let r = m.get(t);
       try {
         this.routeEvent(r, t, e, n)
       } catch (e) {
@@ -109,7 +109,7 @@ class b extends Chunk143236.EventEmitter {
           message: e.message
         }, n)
       }
-    }), g(this, "handleFrame", (e, t, n) => {
+    }), f(this, "handleFrame", (e, t, n) => {
       var r;
       let i;
       if (e !== t.origin) throw new c.A({
@@ -123,7 +123,7 @@ class b extends Chunk143236.EventEmitter {
         }, "Payload not recognized encoding")
       }
       null == (r = this.onFrameHandled) || r.call(this, i, this.logger, t), this.emit("request", t, i)
-    }), g(this, "handleHandshake", async (e, t, r) => {
+    }), f(this, "handleHandshake", async (e, t, r) => {
       let i;
       null != this.handshakeFailureTimeoutId && clearTimeout(this.handshakeFailureTimeoutId);
       let l = (await n.e("34188").then(n.t.bind(n, 88137, 23))).default;
@@ -167,11 +167,11 @@ class b extends Chunk143236.EventEmitter {
         if (await this.validateSocketClient(i, e, t.client_id), !A.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.A({
           closeCode: h.YI$.CLOSE_UNSUPPORTED
         }, "Unrecognized frame ID ".concat(s));
-        f.set(e, i), A.delete(s), i.authorization.scopes.push(p.W_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        m.set(e, i), A.delete(s), i.authorization.scopes.push(p.W_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
-    }), g(this, "handleClose", async (e, t) => {
+    }), f(this, "handleClose", async (e, t) => {
       let r = (await n.e("34188").then(n.t.bind(n, 88137, 23))).default;
       try {
         r.assert(t, (0, d.A)(r).required().keys({

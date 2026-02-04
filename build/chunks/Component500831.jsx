@@ -20,7 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk420936 = require("./420936.js"),
   Chunk733738 = require("./733738.jsx"),
   Chunk27169 = require("./27169.jsx"),
-  Chunk871432 = require("./871432.js"),
+  Chunk871432 = require("./871432.jsx"),
   Chunk540177 = require("./540177.jsx"),
   Chunk898642 = require("./898642.jsx"),
   Chunk558416 = require("./558416.jsx"),
@@ -71,12 +71,12 @@ let H = Chunk64700.memo(function() {
   }), {
     titlebarFastTravel: n,
     quickSwitcherInsteadOfTitle: l
-  } = (0, f.t)({
+  } = (0, m.t)({
     location: "AppTitleBar"
   }), {
     backForwardButtons: s,
     titlebarIconSize: _
-  } = (0, m.p)({
+  } = (0, g.pz)({
     location: "AppTitleBar"
   }), {
     hasBugReporterAccess: v
@@ -128,7 +128,7 @@ let H = Chunk64700.memo(function() {
           trailing: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(b.A, {
               className: Q
-            }), H ? (0, r.jsx)(w.A, {}) : null, (0, r.jsx)(g.A, {
+            }), H ? (0, r.jsx)(w.A, {}) : null, (0, r.jsx)(f.A, {
               canShowReminder: true,
               className: Q
             }), K && (0, r.jsx)(T.A, (i = function(e) {

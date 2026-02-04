@@ -16,15 +16,15 @@ var Chunk503698 = require("./503698.js"),
   Chunk963169 = require("./963169.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk88808 = require("./88808.js");
-let m = Chunk430086.GY.binds["0"],
-  f = Chunk430086.M$.binds["0"],
+let g = Chunk430086.GY.binds["0"],
+  m = Chunk430086.M$.binds["0"],
   A = e => {
     var t, n;
     let {
       firstElementFocusJumpSectionProps: i = {}
     } = e, {
       titlebarIconSize: c
-    } = (0, u.p)({
+    } = (0, u.pz)({
       location: "BackForwardButtons"
     }), {
       canGoBack: A,
@@ -34,12 +34,12 @@ let m = Chunk430086.GY.binds["0"],
       canGoForward: d.A.canGoForward
     }));
     return (0, r.jsxs)("div", {
-      className: g.y_,
+      className: f.y_,
       children: [(0, r.jsx)(s.m_, {
         ariaHidden: true,
         shouldShow: A,
         text: h.intl.string(h.t.B9vzIP),
-        keyboardShortcut: m,
+        keyboardShortcut: g,
         children: (0, r.jsx)(o.DUT, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -60,8 +60,8 @@ let m = Chunk430086.GY.binds["0"],
         }({
           "aria-label": h.intl.string(h.t.B9vzIP),
           "aria-disabled": !A,
-          className: l()(g.x6, g.aX, {
-            [g.r9]: !A
+          className: l()(f.x6, f.aX, {
+            [f.r9]: !A
           }),
           onClick: () => (0, p.OE)("nav_button")
         }, i), n = n = {
@@ -83,12 +83,12 @@ let m = Chunk430086.GY.binds["0"],
         ariaHidden: true,
         shouldShow: _,
         text: h.intl.string(h.t["9KJ29e"]),
-        keyboardShortcut: f,
+        keyboardShortcut: m,
         children: (0, r.jsx)(o.DUT, {
           "aria-label": h.intl.string(h.t["9KJ29e"]),
           "aria-disabled": !_,
-          className: l()(g.x6, g.sY, {
-            [g.r9]: !_
+          className: l()(f.x6, f.sY, {
+            [f.r9]: !_
           }),
           onClick: () => (0, p.Qb)("nav_button"),
           children: (0, r.jsx)(o.EdP, {

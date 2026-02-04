@@ -113,7 +113,7 @@ let eD = (0, Chunk156828.Fe)({
   }),
   eM = () => (0, r.jsx)("div", {
     className: eL.wG,
-    children: (0, r.jsx)(g.y$y, {})
+    children: (0, r.jsx)(f.y$y, {})
   }),
   ek = (0, Chunk156828.Fe)({
     createPromise: () => n.e("78870").then(n.bind(n, 256467)),
@@ -183,10 +183,10 @@ let eD = (0, Chunk156828.Fe)({
       threadId: d
     } = i.params, h = null != c ? c : true;
     null == h && null != i.params.gameShopPageIndex && (h = ej.VV.GAME_SHOP);
-    let g = (0, p.bG)([eO.A], () => eO.A.getGuild(s)),
-      m = (0, p.bG)([eE.Ay], () => null == s ? null : eE.Ay.getSelfMember(s)),
+    let f = (0, p.bG)([eO.A], () => eO.A.getGuild(s)),
+      g = (0, p.bG)([eE.Ay], () => null == s ? null : eE.Ay.getSelfMember(s)),
       A = (0, es.C$)(s, "ChannelRenderer"),
-      _ = (null == g || null == (t = g.features) ? true : t.has(eT.GuildFeatures.GAME_SERVERS)) === true,
+      _ = (null == f || null == (t = f.features) ? true : t.has(eT.GuildFeatures.GAME_SERVERS)) === true,
       b = (0, p.bG)([Q.A], () => {
         if (null == s) return;
         let e = Q.A.getData(s);
@@ -199,7 +199,7 @@ let eD = (0, Chunk156828.Fe)({
             return
         }
       });
-    (0, ed.C$)(h) && (0, ed.C$)(d) || (null != g && (0, ef.pX)(eT.BVt.CHANNEL(g.id, (0, ep.A)(g))), (0, Z.E)());
+    (0, ed.C$)(h) && (0, ed.C$)(d) || (null != f && (0, em.pX)(eT.BVt.CHANNEL(f.id, (0, ep.A)(f))), (0, Z.E)());
     let E = (0, L.p9)(s, "channel_renderer");
     if (null != s && null != h && (0, ej.jq)(h)) switch (h) {
       case ej.VV.ROLE_SUBSCRIPTIONS:
@@ -264,13 +264,13 @@ let eD = (0, Chunk156828.Fe)({
       default:
         (0, eS.xb)(h)
     }
-    if ((0, H.$Y)(g, m)) return (0, r.jsx)(F.A, {
+    if ((0, H.$Y)(f, g)) return (0, r.jsx)(F.A, {
       guildId: s,
       channelId: h
     });
     if ((null == a ? true : a.type) === eT.rbe.GUILD_STORE) {
       let e = eC.default.cast(i.params.messageId);
-      return (0, r.jsx)(f.A, {
+      return (0, r.jsx)(m.A, {
         channel: a,
         inputSkuId: e
       }, a.id)
@@ -286,7 +286,7 @@ let eD = (0, Chunk156828.Fe)({
     } = (0, en.X8)({
       location: "Sidebar"
     }), i = (0, p.bG)([ey.A], () => null != t ? t : ey.A.getChannelId(e));
-    return window.location.pathname.startsWith(eT.BVt.CHANNEL(eT.gNP)) ? ("sidebar" !== n && (0, ef.bG)(eb.A.defaultRoute), (0, r.jsx)(ei.A, {
+    return window.location.pathname.startsWith(eT.BVt.CHANNEL(eT.gNP)) ? ("sidebar" !== n && (0, em.bG)(eb.A.defaultRoute), (0, r.jsx)(ei.A, {
       includePanelSpacing: true
     })) : window.location.pathname.startsWith(eT.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eT.BVt.GUILD_DISCOVERY) || (0, ec.r$)() ? (0, r.jsx)(G.A, {}) : null != e ? (0, r.jsx)(K.A, {
       selectedChannelId: i,
@@ -302,7 +302,7 @@ let eD = (0, Chunk156828.Fe)({
       messageId: n
     } = e.match.params;
     return (i.useEffect(() => {
-      null != t && null != n && m.A.jumpToMessage({
+      null != t && null != n && g.A.jumpToMessage({
         channelId: t,
         messageId: n,
         flash: true,
@@ -322,7 +322,7 @@ let eD = (0, Chunk156828.Fe)({
     let {
       match: t
     } = e;
-    return (0, ef.pX)(eT.BVt.ME), (0, q.A)(t.params.inviteCode), null
+    return (0, em.pX)(eT.BVt.ME), (0, q.A)(t.params.inviteCode), null
   },
   e0 = () => (0, r.jsx)(_.A, {}),
   e1 = () => (0, r.jsx)(b.A, {}),
@@ -457,13 +457,13 @@ function tt(e) {
     location: c
   });
   let u = (0, p.bG)([T.A], () => T.A.isFullscreenInContext()),
-    m = (0, D.D)("ChannelSidebar"),
-    f = (0, w.useAppSidebarState)(e => !e.isOpen) && m;
+    g = (0, D.D)("ChannelSidebar"),
+    m = (0, w.useAppSidebarState)(e => !e.isOpen) && g;
   i.useLayoutEffect(() => {
-    if (m) {
+    if (g) {
       var e;
       let t = parseInt(null != (e = h.w.get(A.o)) ? e : "");
-      Number.isNaN(t) && (t = 375), t = Math.min(Math.max(t, 264), 432), !m && t <= 76 && (t = 375), te(t);
+      Number.isNaN(t) && (t = 375), t = Math.min(Math.max(t, 264), 432), !g && t <= 76 && (t = 375), te(t);
       let n = e => {
         e.metaKey && "b" === e.key && w.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -473,14 +473,14 @@ function tt(e) {
         document.removeEventListener("keydown", n)
       }
     }
-  }, [m]), i.useLayoutEffect(() => {
-    if (f) te(76);
+  }, [g]), i.useLayoutEffect(() => {
+    if (m) te(76);
     else {
       var e;
       let t = parseInt(null != (e = h.w.get(A.o)) ? e : "");
       Number.isNaN(t) && (t = 375), te(t)
     }
-  }, [f]);
+  }, [m]);
   let _ = i.useRef(null),
     b = i.useCallback((e, t) => {
       var n;
@@ -488,10 +488,10 @@ function tt(e) {
       let r = t < 88;
       t <= 264 ? document.body.classList.add(eL._A) : document.body.classList.remove(eL._A), t >= 432 ? document.body.classList.add(eL.uN) : document.body.classList.remove(eL.uN);
       let i = t - e;
-      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / 76), .25))), m && (w.useAppSidebarState.setState({
+      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / 76), .25))), g && (w.useAppSidebarState.setState({
         isOpen: !r
       }), r && te(76))
-    }, [m]),
+    }, [g]),
     E = i.useCallback(() => {
       document.body.classList.add(eL.cB)
     }, []),
@@ -517,20 +517,20 @@ function tt(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      f && te(76)
-    }, [f]), l) return null;
+      m && te(76)
+    }, [m]), l) return null;
   let N = {
     className: a()(eL.th, {
       [eL.Qd]: !t
     })
   };
-  return (0, r.jsx)(g.NPJ, {
+  return (0, r.jsx)(f.NPJ, {
     theme: n,
     children: e => {
       var t, i;
       return (0, r.jsxs)("div", {
         ref: _,
-        "data-collapsed": f,
+        "data-collapsed": m,
         className: a()(eL.pz, e, {
           [eL.Ij]: d.Fr,
           [eL.R]: u,
@@ -551,7 +551,7 @@ function tt(e) {
             return n
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-          }), t)), (0, r.jsx)(g.DUT, {
+          }), t)), (0, r.jsx)(f.DUT, {
             onClick: C,
             "aria-label": "Resize Sidebar",
             className: eL.tq,
@@ -569,21 +569,21 @@ function tn() {
     a = (0, eA.NC)(),
     s = function() {
       let [e, t] = i.useState(() => window.location.pathname.startsWith(eT.BVt.GUILD_MEMBER_VERIFICATION("")));
-      return i.useEffect(() => eg.A.addRouteChangeListener(e => {
+      return i.useEffect(() => ef.A.addRouteChangeListener(e => {
         t(e.pathname.startsWith(eT.BVt.GUILD_MEMBER_VERIFICATION("")))
       }), []), e
     }(),
-    u = (n = (0, o.zy)(), (null == (t = (0, o.B6)(n.pathname, eT.BVt.GUILD_BOOSTING_MARKETING(em.pv.guildId()))) ? true : t.isExact) === true),
+    u = (n = (0, o.zy)(), (null == (t = (0, o.B6)(n.pathname, eT.BVt.GUILD_BOOSTING_MARKETING(eg.pv.guildId()))) ? true : t.isExact) === true),
     h = (0, p.bG)([ee.A], () => ee.A.getIsOpen()),
     {
-      notificationCenterVariant: g
+      notificationCenterVariant: f
     } = (0, en.X8)({
       location: "Sidebar"
     }),
-    m = (0, o.W5)([eT.BVt.CHANNEL(eT.ME, em.pv.channelId()), eT.BVt.CHANNEL(em.pv.guildId(), em.pv.channelId({
+    g = (0, o.W5)([eT.BVt.CHANNEL(eT.ME, eg.pv.channelId()), eT.BVt.CHANNEL(eg.pv.guildId(), eg.pv.channelId({
       optional: true
     }), ":messageId?")]),
-    f = (null == m || null == (e = m.params) ? true : e.channelId) === ej.VV.GUILD_ONBOARDING,
+    m = (null == g || null == (e = g.params) ? true : e.channelId) === ej.VV.GUILD_ONBOARDING,
     A = i.useCallback(() => $.A.openSidebar(), []),
     _ = (0, D.D)("AppView"),
     b = (0, w.useAppSidebarState)(e => !e.isOpen),
@@ -592,7 +592,7 @@ function tn() {
   return (0, r.jsx)("div", {
     className: eL.kL,
     children: (0, r.jsx)(V.A.Provider, {
-      value: (null == m ? true : m.params.guildId) === eT.ME || null == m ? true : m.params.guildId,
+      value: (null == g ? true : g.params.guildId) === eT.ME || null == g ? true : g.params.guildId,
       children: (0, r.jsxs)("div", {
         className: eL.E3,
         "data-fullscreen": E,
@@ -602,7 +602,7 @@ function tn() {
             isSidebarOpen: h,
             hasNotice: l,
             sidebarTheme: a,
-            hideChannelList: s || u || f,
+            hideChannelList: s || u || m,
             hideSidebar: !h
           }), (0, r.jsx)("div", {
             className: eL.MY,
@@ -668,14 +668,14 @@ function tn() {
                   render: e5,
                   impressionName: c.ImpressionNames.FRIENDS,
                   disableTrack: true
-                }), g === en.U5.SIDEBAR && (0, r.jsx)(N.A, {
-                  path: eT.BVt.CHANNEL(eT.gNP, em.pv.channelId({
+                }), f === en.U5.SIDEBAR && (0, r.jsx)(N.A, {
+                  path: eT.BVt.CHANNEL(eT.gNP, eg.pv.channelId({
                     optional: true
                   }), ":messageId?"),
                   render: eX,
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
-                  path: [eT.BVt.CHANNEL_THREAD_VIEW(em.pv.guildId(), em.pv.channelId(), ":threadId", ":messageId?"), eT.BVt.CHANNELS_GAME_SHOP(em.pv.guildId(), ":gameShopPageIndex", ":gameShopSkuId?", ":gameShopSlug?"), eT.BVt.CHANNEL(eT.ME, em.pv.channelId()), eT.BVt.CHANNEL(em.pv.guildId(), em.pv.channelId({
+                  path: [eT.BVt.CHANNEL_THREAD_VIEW(eg.pv.guildId(), eg.pv.channelId(), ":threadId", ":messageId?"), eT.BVt.CHANNELS_GAME_SHOP(eg.pv.guildId(), ":gameShopPageIndex", ":gameShopSkuId?", ":gameShopSlug?"), eT.BVt.CHANNEL(eT.ME, eg.pv.channelId()), eT.BVt.CHANNEL(eg.pv.guildId(), eg.pv.channelId({
                     optional: true
                   }), ":messageId?")],
                   render: ez,
@@ -713,15 +713,15 @@ function tn() {
                   impressionName: c.ImpressionNames.GUILD_DISCOVERY,
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
-                  path: eT.BVt.GUILD_MEMBER_VERIFICATION(em.pv.guildId()),
+                  path: eT.BVt.GUILD_MEMBER_VERIFICATION(eg.pv.guildId()),
                   render: eJ,
                   impressionName: c.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                   disableTrack: true
                 }), (0, r.jsx)(N.A, {
-                  path: eT.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(em.pv.guildId(), ":inviteCode?"),
+                  path: eT.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(eg.pv.guildId(), ":inviteCode?"),
                   render: e$
                 }), (0, r.jsx)(N.A, {
-                  path: eT.BVt.GUILD_FEATURE(":feature", em.pv.guildId()),
+                  path: eT.BVt.GUILD_FEATURE(":feature", eg.pv.guildId()),
                   exact: true,
                   render: e3,
                   disableTrack: true

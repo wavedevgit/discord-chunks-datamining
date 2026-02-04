@@ -87,9 +87,9 @@ async function ei(e) {
     overlayStatus: c,
     overlayMethod: p,
     sharedGuildIds: h,
-    voiceChannelId: g,
-    voiceChannelType: m,
-    voiceChannelBitrate: f,
+    voiceChannelId: f,
+    voiceChannelType: g,
+    voiceChannelBitrate: m,
     voiceChannelGuildId: A
   } = e, _ = await (0, L.E1)(a.pid), {
     gameName: b,
@@ -118,9 +118,9 @@ async function ei(e) {
     current_user_status: W.A.getStatus(),
     game_detection_enabled: (0, I.Xr)(a),
     executable_path: O,
-    voice_channel_id: g,
-    voice_channel_type: m,
-    voice_channel_bitrate: f,
+    voice_channel_id: f,
+    voice_channel_type: g,
+    voice_channel_bitrate: m,
     voice_channel_guild_id: A,
     distributor_game_id: a.sku,
     hidden_by_distributor: a.hidden,
@@ -129,9 +129,9 @@ async function ei(e) {
 }
 class el extends Chunk64700.PureComponent {
   componentDidUpdate(e) {
-    var t, n, r, i, l, a, o, u, d, p, g;
+    var t, n, r, i, l, a, o, u, d, p, f;
     let {
-      voiceChannelId: f,
+      voiceChannelId: m,
       voiceChannelGuildId: v,
       voiceChannelType: S,
       voiceChannelBitrate: C,
@@ -144,7 +144,7 @@ class el extends Chunk64700.PureComponent {
       selectedGuildId: B,
       connected: Y
     } = this.props;
-    if (e.voiceChannelId !== f && null != e.voiceChannelId) {
+    if (e.voiceChannelId !== m && null != e.voiceChannelId) {
       let t = I.Ay.getCurrentGameForAnalytics(),
         n = null != t ? t.name : "",
         r = D.A.getStageInstanceByChannel(e.voiceChannelId),
@@ -165,19 +165,19 @@ class el extends Chunk64700.PureComponent {
         guild_scheduled_event_id: null == i ? true : i.id
       }, (0, h.JK)(e.voiceChannelGuildId, e.voiceChannelId, e.videoEnabled), null == a || null == (l = a.voiceStateAnalytics) ? true : l.getStats(), b.A.getSelectedParticipantStats(e.voiceChannelId)))
     }
-    if (e.voiceChannelId !== f && null != f) {
+    if (e.voiceChannelId !== m && null != m) {
       let e = I.Ay.getCurrentGameForAnalytics(),
         t = null != e ? e.name : "",
-        n = D.A.getStageInstanceByChannel(f),
-        r = N.Ay.getActiveEventByChannel(f);
-      (0, h.zV)(ee.HAw.CHANNEL_OPENED, er({}, (0, h.qL)(f))), (0, m.k)(ee.HAw.CHANNEL_OPENED_CLICKSTREAM, {
-        channelId: f
+        n = D.A.getStageInstanceByChannel(m),
+        r = N.Ay.getActiveEventByChannel(m);
+      (0, h.zV)(ee.HAw.CHANNEL_OPENED, er({}, (0, h.qL)(m))), (0, g.k)(ee.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+        channelId: m
       });
       let i = null,
         l = Z.default.getFocusedPID();
       null != l && w.default.getOverlayMethod(l) !== P.Ue.Disabled && (Z.default.isInstanceLocked() ? i = ee.Xmn.OVERLAY_LOCKED_ACTIVATED : Z.default.isInstanceLocked() || (i = Z.default.isPinned(ee.uss.TEXT) ? ee.Xmn.OVERLAY_UNLOCKED_PINNED : ee.Xmn.OVERLAY_UNLOCKED)), J.default.track(ee.HAw.JOIN_VOICE_CHANNEL, er({
         location: i,
-        channel_id: f,
+        channel_id: m,
         channel_type: S,
         channel_bitrate: C,
         guild_id: v,
@@ -188,7 +188,7 @@ class el extends Chunk64700.PureComponent {
         guild_scheduled_event_id: null == r ? true : r.id,
         was_moved: F.A.getWasMoved(),
         join_voice_id: F.A.getJoinVoiceId()
-      }, (0, h.dL)(v, f), (0, h.JK)(v, f, T)))
+      }, (0, h.dL)(v, m), (0, h.JK)(v, m, T)))
     }
     let K = (null == x ? true : x.distributor) === (null == (t = e.runningGame) ? true : t.distributor) && (null == x ? true : x.sku) === (null == (n = e.runningGame) ? true : n.sku) && (null == x ? true : x.name) === (null == (r = e.runningGame) ? true : r.name),
       q = null != e.runningGame && null != x && e.runningGame.isLauncher !== x.isLauncher;
@@ -198,24 +198,24 @@ class el extends Chunk64700.PureComponent {
       } = (0, y.wH)(x), t = true !== e ? U.A.getDetectableGame(e) : null, n = I.Ay.getOverrideForGame(x), r = V.A.getGuildIds(), i = M.JG.getSetting(), l = r.filter(e => !i.includes(e)).slice(0, 200), s = null;
       s = null != n ? "custom_override" : null != t ? "verified_game" : "launcher";
       let h = w.default.getTrackedGameByPid(x.pid),
-        g = (0, I.hw)(x),
-        m = {
-          enabledOOP: null != (a = null == h ? true : h.oopEnabled) ? a : g.enabledOOP,
-          enabledLegacy: null != (o = null == h ? true : h.legacyEnabled) ? o : g.enabledLegacy,
-          overlayMethod: null != (u = null == h ? true : h.overlayMethod) ? u : g.overlayMethod,
-          source: null != (d = null == h ? true : h.source) ? d : g.source,
+        f = (0, I.hw)(x),
+        g = {
+          enabledOOP: null != (a = null == h ? true : h.oopEnabled) ? a : f.enabledOOP,
+          enabledLegacy: null != (o = null == h ? true : h.legacyEnabled) ? o : f.enabledLegacy,
+          overlayMethod: null != (u = null == h ? true : h.overlayMethod) ? u : f.overlayMethod,
+          source: null != (d = null == h ? true : h.source) ? d : f.source,
           reason: "ChatAutoAnalytics"
         },
-        A = null != (p = w.default.getOverlayMethod(x.pid)) ? p : m.overlayMethod;
+        A = null != (p = w.default.getOverlayMethod(x.pid)) ? p : g.overlayMethod;
       if (setTimeout(() => {
           (x.distributor === ee.d3x.ROBLOX ? this.debouncedRobloxAnalytics : ei)({
             runningGame: x,
             game: t,
             detectionMethod: s,
-            overlayStatus: m,
+            overlayStatus: g,
             overlayMethod: A,
             sharedGuildIds: l,
-            voiceChannelId: f,
+            voiceChannelId: m,
             voiceChannelType: S,
             voiceChannelBitrate: C,
             voiceChannelGuildId: v
@@ -237,13 +237,13 @@ class el extends Chunk64700.PureComponent {
         detection_method: "verified_non_game_application",
         current_user_status: W.A.getStatus(),
         executable_path: (0, y.Ic)(R.exePath),
-        voice_channel_id: f,
+        voice_channel_id: m,
         voice_channel_type: S,
         voice_channel_bitrate: C,
         voice_channel_guild_id: v
       })
     }
-    if ((e.videoEnabled !== T || e.isScreenSharing !== j) && null != f) {
+    if ((e.videoEnabled !== T || e.isScreenSharing !== j) && null != m) {
       let e = "none",
         t = [j ? "screen" : null, T ? "camera" : null].filter($.Vq),
         n = null;
@@ -252,7 +252,7 @@ class el extends Chunk64700.PureComponent {
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
         preview_enabled: M.bm.getSetting()
-      }, n, this.getGameMetadata(), (0, h.QS)(f)))
+      }, n, this.getGameMetadata(), (0, h.QS)(m)))
     }
     if (Y && null != G && (!e.connected || G !== e.selectedChannelId || B !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
@@ -266,7 +266,7 @@ class el extends Chunk64700.PureComponent {
           });
         J.default.track(ee.HAw.ACK_COMMUNITY_MESSAGES, er({
           last_message_id: null == i ? true : i.id,
-          last_message_reference_message_id: null == i || null == (g = i.messageReference) ? true : g.message_id,
+          last_message_reference_message_id: null == i || null == (f = i.messageReference) ? true : f.message_id,
           messages_loaded: e.hasFetched
         }, (0, h.dI)(n), (0, h.H$)(r.id)))
       }
@@ -346,15 +346,15 @@ function ea() {
     } = e;
     i.useEffect(() => {
       if (n && null != s) {
-        let e = (0, g.C)(k.A.getChannel(s), true);
-        (0, h.zV)(ee.HAw.CHANNEL_OPENED, er({}, e, (0, h.qL)(s))), (0, m.k)(ee.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+        let e = (0, f.C)(k.A.getChannel(s), true);
+        (0, h.zV)(ee.HAw.CHANNEL_OPENED, er({}, e, (0, h.qL)(s))), (0, g.k)(ee.HAw.CHANNEL_OPENED_CLICKSTREAM, {
           channelId: s
         }), t.current.isTextInVoice && (0, h.zV)(ee.HAw.TEXT_IN_VOICE_OPENED, {
           channel_is_nsfw: t.current.isNSFWChannel
         })
       }
     }, [n, s]), i.useEffect(() => {
-      n && null == o && l === ee.BVt.FRIENDS && (0, f.A)({
+      n && null == o && l === ee.BVt.FRIENDS && (0, m.A)({
         tab_opened: r
       })
     }, [n, r, l, o]), i.useEffect(() => {
@@ -382,7 +382,7 @@ function ea() {
           })(Object(r)).forEach(function(t) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
           }), e);
-        (0, h.zV)(ee.HAw.GUILD_VIEWED, l), (0, m.k)(ee.HAw.GUILD_VIEWED_CLICKSTREAM, {
+        (0, h.zV)(ee.HAw.GUILD_VIEWED, l), (0, g.k)(ee.HAw.GUILD_VIEWED_CLICKSTREAM, {
           guildId: o
         })
       }

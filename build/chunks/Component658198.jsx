@@ -1,15 +1,15 @@
 /** Chunk was on 71447 **/
 /** chunk id: 658198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => s
+  b: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk827734 = require("./827734.js"),
   Chunk260612 = require("./260612.js"),
   Chunk953727 = require("./953727.js");
-let s = e => {
-  var t, n, s, o;
+let o = e => {
+  var t, n, o, s;
   let {
     size: u = "md",
     width: c,
@@ -32,8 +32,8 @@ let s = e => {
       }(e, t), Object.getOwnPropertySymbols)
       for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) i = n[r], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
     return l
-  }(e, ["size", "width", "height", "color", "colorClass"]), g = (0, l.J)(u), m = null != (t = null == g ? true : g.width) ? t : c, y = null != (n = null == g ? true : g.height) ? n : d;
-  return (0, i.jsxs)("svg", (s = function(e) {
+  }(e, ["size", "width", "height", "color", "colorClass"]), g = (0, l.J)(u), m = null != (t = null == g ? true : g.width) ? t : c, A = null != (n = null == g ? true : g.height) ? n : d;
+  return (0, i.jsxs)("svg", (o = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -50,10 +50,10 @@ let s = e => {
       })
     }
     return e
-  }({}, (0, a.A)(f)), o = o = {
+  }({}, (0, a.A)(f)), s = s = {
     xmlns: "http://www.w3.org/2000/svg",
     width: m,
-    height: y,
+    height: A,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, i.jsx)("path", {
@@ -87,14 +87,14 @@ let s = e => {
       fill: "string" == typeof h ? h : h.css,
       className: p
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
       n.push.apply(n, i)
     }
     return n
-  })(Object(o)).forEach(function(e) {
-    Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
-  }), s))
+  })(Object(s)).forEach(function(e) {
+    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+  }), o))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 38894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk166641 = require("./166641.jsx"),
   Chunk324580 = require("./324580.js");
 
-function g(e) {
+function f(e) {
   let {
     onScroll: t,
     onGuildCardSeen: n,
@@ -43,18 +43,18 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     tab: t,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
-  } = e, p = (0, u.Ub)(t), g = (0, l.bG)([c.A], () => {
+  } = e, p = (0, u.Ub)(t), f = (0, l.bG)([c.A], () => {
     var e;
     return null != (e = c.A.getGuildIds({
       categoryId: p
     })) ? e : h.VX
-  }), m = (0, l.bG)([c.A], () => {
+  }), g = (0, l.bG)([c.A], () => {
     var e;
     return null == (e = c.A.getIsFetching({
       categoryId: p
@@ -66,15 +66,15 @@ function m(e) {
     })
   }, [p]), (0, r.jsx)(d.A, {
     tab: t,
-    guildIds: g,
-    loading: m,
+    guildIds: f,
+    loading: g,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     selectedTab: t,
     onScroll: n,
@@ -88,7 +88,7 @@ function f(e) {
       })
     }, [t]), t) {
     case h.o.FEATURED:
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(f, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,
@@ -99,7 +99,7 @@ function f(e) {
     case h.o.ENTERTAINMENT:
     case h.o.TECH:
     case h.o.EDUCATION:
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(g, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,

@@ -136,9 +136,7 @@ let d = {
       button: true,
       allowSending: true
     },
-    gifts: {
-      button: true
-    },
+    gifts: true,
     permissions: {
       requireSendMessages: true
     },

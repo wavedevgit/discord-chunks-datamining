@@ -40,7 +40,7 @@ class b extends Chunk64700.PureComponent {
       host: t,
       party: n
     } = this.props;
-    return this.hasParty(n) && null != e ? (0, r.jsx)(m.A, {
+    return this.hasParty(n) && null != e ? (0, r.jsx)(g.A, {
       currentUser: e,
       host: t,
       party: n,
@@ -86,7 +86,7 @@ class b extends Chunk64700.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(f.A, {
+      return (0, r.jsx)(m.A, {
         party: e,
         header: A.intl.formatToPlainString(A.t.I9et1z, {
           count: e.length
@@ -102,7 +102,7 @@ let E = Chunk311907.Ay.connectStores([Chunk655116.A, Chunk287809.default, Chunk9
     l = [];
   if (null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
     var s;
-    l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => h.default.getUser(e)).filter(g.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
+    l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => h.default.getUser(e)).filter(f.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: i,

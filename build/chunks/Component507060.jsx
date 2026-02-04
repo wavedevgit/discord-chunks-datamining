@@ -91,7 +91,7 @@ let C = (0, Chunk268218.Fe)({
   };
 
 function R() {
-  return l.useEffect(() => (g.A.enable(), g.A.enableTemp(h.w), () => g.A.disableTemp()), []), null
+  return l.useEffect(() => (f.A.enable(), f.A.enableTemp(h.w), () => f.A.disableTemp()), []), null
 }
 class D extends(r = Chunk64700.PureComponent) {
   static getDerivedStateFromProps(e, t) {
@@ -192,7 +192,7 @@ class D extends(r = Chunk64700.PureComponent) {
         }(e, t), Object.getOwnPropertySymbols)
         for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
       return l
-    }(t, ["name", "mode", "children", "baseLayer"]), u = r === w, p = e || u ? this.getAnimatedStyle() : null, h = !u && !a, g = (0, i.jsx)(o.A.div, S(v({
+    }(t, ["name", "mode", "children", "baseLayer"]), u = r === w, p = e || u ? this.getAnimatedStyle() : null, h = !u && !a, f = (0, i.jsx)(o.A.div, S(v({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != n ? n : "base",
       "aria-hidden": u,
@@ -219,9 +219,9 @@ class D extends(r = Chunk64700.PureComponent) {
     }, c), {
       children: l
     }));
-    return a ? g : (0, i.jsx)(d.Oky, {
+    return a ? f : (0, i.jsx)(d.Oky, {
       containerRef: this.containerRef,
-      children: g
+      children: f
     })
   }
   getAnimatedStyle() {
@@ -308,7 +308,7 @@ class M extends Chunk64700.PureComponent {
 function k(e) {
   let t = (0, A.NC)(),
     n = (0, c.bG)([_.A], () => _.A.getLayers()),
-    r = (0, f.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
+    r = (0, m.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
   return (0, i.jsx)(M, S(v({}, e), {
     sidebarTheme: t,
     layers: n,

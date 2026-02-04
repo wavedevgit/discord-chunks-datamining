@@ -30,16 +30,16 @@ var Chunk684013 = require("./684013.js"),
 
 function I(e, t, n, I) {
   var j;
-  if (m.A.isNotificationDisabled(x.KS.TextChat)) return (0, u.Ak)(c.cH, c.pD), null;
+  if (m.A.isNotificationDisabled(_.KS.TextChat)) return (0, u.Ak)(c.cH, c.pD), null;
   let {
-    icon: T,
-    title: C,
-    body: N
-  } = (0, s.TB)(e, t, n), {
-    trackView: w,
+    icon: C,
+    title: T,
+    body: w
+  } = (0, o.TB)(e, t, n), {
+    trackView: N,
     trackClick: P
-  } = (0, O.Y9)(x.KS.TextChat, {
-    notif_type: x.KS.TextChat,
+  } = (0, E.Y9)(_.KS.TextChat, {
+    notif_type: _.KS.TextChat,
     notif_user_id: null == (j = t.author) ? true : j.id,
     message_id: t.id,
     message_type: t.type,
@@ -50,49 +50,49 @@ function I(e, t, n, I) {
     hasChat: D
   } = (0, g.NI)("textChatNotification");
   return {
-    icon: T,
-    title: C,
+    icon: C,
+    title: T,
     body: t.content.length > 0 ? (0, a.Ay)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
-    }).content : N,
-    hint: (e, t) => e || !t ? null : (0, E.sI)((0, O.Jn)(), S.t.ykjOAJ, S.intl.string(S.t.jZkzVJ)),
+    }).content : w,
+    hint: (e, t) => e || !t ? null : (0, b.sI)((0, E.Jn)(), x.t.ykjOAJ, x.intl.string(x.t.jZkzVJ)),
     maxBodyLines: 2,
-    renderFooter: (n, r, l) => D ? null : n && !l ? (0, i.jsx)(b.A, {
+    renderFooter: (n, r, l) => D ? null : n && !l ? (0, i.jsx)(v.A, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
       onSend: () => P("send")
     }) : null,
     onNotificationShow: () => {
-      I && (0, u.Ak)(c.cH, c.pD), w()
+      I && (0, u.Ak)(c.cH, c.pD), N()
     },
     onNotificationClick: (n, i) => {
-      let a = y.A.getTargetPID();
+      let a = A.A.getTargetPID();
       if ((0, l.ack)(e.id, {
-          section: _.JJy.OVERLAY,
-          object: _.ZSU.ACK_TEXT_CHAT_NOTIFICATION,
-          objectType: _.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
+          section: S.JJy.OVERLAY,
+          object: S.ZSU.ACK_TEXT_CHAT_NOTIFICATION,
+          objectType: S.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
         }, true, true, t.id), D) {
-        var s;
-        (0, v.D$)({
+        var o;
+        (0, O.D$)({
           target: {
-            kind: v.bB.CHANNEL,
+            kind: O.bB.CHANNEL,
             channelId: e.id,
-            guildId: null != (s = e.guild_id) ? s : null,
+            guildId: null != (o = e.guild_id) ? o : null,
             messageId: t.id
           },
           source: f.B9.NOTIFICATION_CLICK,
-          widgetType: _.uss.NOTIFICATIONS
-        }), A.A.isInputLocked(a) ? (P("unlock"), r.A.setInputLocked(false, a)) : P("jump"), requestAnimationFrame(() => {
-          d._.dispatchToLastSubscribed(_.jej.TEXTAREA_FOCUS, {
+          widgetType: S.uss.NOTIFICATIONS
+        }), y.A.isInputLocked(a) ? (P("unlock"), r.A.setInputLocked(false, a)) : P("jump"), requestAnimationFrame(() => {
+          d._.dispatchToLastSubscribed(S.jej.TEXTAREA_FOCUS, {
             channelId: e.id
           })
-        }), r.A.updateNotificationStatus(i, _.yFH.DISMISSED);
+        }), r.A.updateNotificationStatus(i, S.yFH.DISMISSED);
         return
       }
-      A.A.isInputLocked(a) ? (P("unlock"), r.A.setInputLocked(false, a)) : (P("jump"), (0, o.pX)(_.BVt.CHANNEL(e.guild_id, e.id, t.id)), h.isPlatformEmbedded && p.Ay.focus())
+      y.A.isInputLocked(a) ? (P("unlock"), r.A.setInputLocked(false, a)) : (P("jump"), (0, s.pX)(S.BVt.CHANNEL(e.guild_id, e.id, t.id)), h.isPlatformEmbedded && p.Ay.focus())
     },
     onDismissClick: () => {
       P("dismiss")

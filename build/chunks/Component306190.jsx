@@ -70,14 +70,14 @@ let A = function(e) {
     (0, o.uJ)(e) || null == b || b(e)
   }, [b]);
   return (0, r.jsxs)("div", {
-    className: f.Fr,
+    className: m.Fr,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
-        className: f.Br,
+        className: m.Br,
         children: (0, r.jsxs)("div", {
-          className: f.bo,
+          className: m.bo,
           children: [(0, r.jsx)(h.A, {}), (0, r.jsxs)("div", {
-            className: f.b8,
+            className: m.b8,
             children: [(0, r.jsx)(a.ZiE, {
               selectionMode: "single",
               label: "Quest ID",
@@ -85,7 +85,7 @@ let A = function(e) {
               options: x,
               value: _,
               onSelectionChange: R,
-              placeholder: m.intl.string(m.t.Zw8jxn),
+              placeholder: g.intl.string(g.t.Zw8jxn),
               clearable: true,
               customMatchSorter: (e, t) => {
                 if ((0, o.uJ)(null == t ? true : t.trim())) return e;
@@ -97,7 +97,7 @@ let A = function(e) {
               }
             }, "".concat(_, "-").concat(null != (t = null == E || null == (A = E.config) || null == (n = A.messages) ? true : n.questName) ? t : "")), (0, r.jsx)(a.K0, {
               onClick: O,
-              "aria-label": m.intl.string(m.t.wzzjk9),
+              "aria-label": g.intl.string(g.t.wzzjk9),
               icon: a.fNY,
               loading: j
             })]
@@ -105,27 +105,27 @@ let A = function(e) {
         })
       })
     }), null != _ && null != E && (0, r.jsx)("div", {
-      className: f.in,
+      className: m.in,
       children: (0, r.jsxs)(a.ButtonGroup, {
-        className: f.xv,
+        className: m.xv,
         children: [(0, r.jsx)(a.Button, {
           onClick: P,
           disabled: y,
           loading: y,
           variant: "secondary",
-          text: m.intl.string(m.t.jQEfRT)
+          text: g.intl.string(g.t.jQEfRT)
         }), (0, r.jsx)(a.Button, {
           onClick: w,
           disabled: y,
           loading: y,
           variant: "secondary",
-          text: m.intl.string(m.t.taqkwK)
+          text: g.intl.string(g.t.taqkwK)
         }), (0, r.jsx)(a.Button, {
           onClick: L,
           disabled: y,
           loading: y,
           variant: "secondary",
-          text: m.intl.string(m.t.cKSLr4)
+          text: g.intl.string(g.t.cKSLr4)
         }), (0, r.jsx)(a.YNO, {
           targetElementRef: C,
           shouldShow: v,
@@ -133,19 +133,19 @@ let A = function(e) {
           position: "bottom",
           align: "center",
           renderPopout: () => (0, r.jsx)("div", {
-            className: f.PP,
+            className: m.PP,
             children: (0, r.jsx)("div", {
-              className: f.sH,
+              className: m.sH,
               children: (0, r.jsx)(s.A, {
-                value: g.Sb.QUEST_PREVIEW_TOOL_2(_),
-                text: m.intl.string(m.t.WqhZss)
+                value: f.Sb.QUEST_PREVIEW_TOOL_2(_),
+                text: g.intl.string(g.t.WqhZss)
               })
             })
           }),
           children: () => (0, r.jsx)(a.K0, {
             buttonRef: C,
             onClick: () => S(!v),
-            "aria-label": m.intl.string(m.t.rNGQfD),
+            "aria-label": g.intl.string(g.t.rNGQfD),
             icon: a.TdU,
             variant: "secondary"
           })

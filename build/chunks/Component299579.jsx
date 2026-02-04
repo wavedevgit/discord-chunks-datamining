@@ -60,7 +60,7 @@ function j(e) {
     searchCategoryId: x
   } = (0, A.I)({
     loadId: t
-  }), P = 0 === o.length && !h, w = i.useContext(d.AnalyticsContext), [L, R] = i.useState((0, f.YP)()), [D, M] = i.useState(true), k = i.useRef(D), [U, G] = i.useState(3), V = i.useRef(U), B = i.useRef(null), H = i.useCallback(e => {
+  }), P = 0 === o.length && !h, w = i.useContext(d.AnalyticsContext), [L, R] = i.useState((0, m.YP)()), [D, M] = i.useState(true), k = i.useRef(D), [U, G] = i.useState(3), V = i.useRef(U), B = i.useRef(null), H = i.useCallback(e => {
     null == e || P || h || 336 * (o.length / U) <= e.height && j()
   }, [P, h, o.length, U, j]), F = i.useCallback(e => {
     let t = e.contentRect;
@@ -72,13 +72,13 @@ function j(e) {
     r !== V.current && (V.current = r, G(r)), H(t)
   }, [D, H]), Y = (0, u.w)(F, [D, H]);
   i.useEffect(() => {
-    R((0, f.YP)())
+    R((0, m.YP)())
   }, [I]), i.useEffect(() => {
     T({
       loadId: t,
       searchId: L,
       query: I,
-      guildResults: o.map(g.A.getGuild).filter(p.Vq),
+      guildResults: o.map(f.A.getGuild).filter(p.Vq),
       analyticsContext: w,
       categoryId: x
     })
@@ -150,7 +150,7 @@ function j(e) {
       var i, a;
       await l(e, t, n, r);
       let s = null == (a = B.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
-      null != s && m.A.setState({
+      null != s && g.A.setState({
         scrollPosition: s
       })
     }, [l]),
@@ -173,19 +173,19 @@ function j(e) {
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? true : t.scrollTop;
-      null != n && m.A.setState({
+      null != n && g.A.setState({
         scrollPosition: n
       })
     }
   }, []), i.useLayoutEffect(() => {
-    let e = m.A.getField("scrollPosition");
+    let e = g.A.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
       null == (t = B.current) || t.scrollTo({
         to: e,
         animate: false,
         callback: () => {
-          m.A.setState({
+          g.A.setState({
             scrollPosition: null
           })
         }

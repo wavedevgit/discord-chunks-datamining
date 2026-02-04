@@ -1,7 +1,7 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 195435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => O
+  a: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,101 +19,105 @@ var Chunk627968 = require("./627968.js"),
   Chunk403362 = require("./403362.js"),
   Chunk562153 = require("./562153.js"),
   Chunk996439 = require("./996439.js"),
-  Chunk876891 = require("./876891.jsx"),
+  Chunk67103 = require("./67103.js"),
   Chunk652215 = require("./652215.js"),
   Chunk905777 = require("./905777.js");
-let O = Chunk64700.memo(function(e) {
+let v = Chunk64700.memo(function(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: O,
-    onDoubleClick: x
-  } = e, _ = r.useRef(null), [S, I] = r.useState(false), j = (0, l.bG)([f.default], () => f.default.getUser(O), [O]), T = function(e, t) {
-    let [n] = (0, l.bG)([g.A], () => {
+    userId: v,
+    onDoubleClick: O,
+    onContextMenu: b
+  } = e, N = r.useRef(null), [T, _] = r.useState(false), C = (0, i.bG)([f.default], () => f.default.getUser(v), [v]), x = function(e, t) {
+    let [n] = (0, i.bG)([p.A], () => {
       var n;
-      return [null != (n = g.A.getVoiceStateForChannel(e, t)) ? n : null, g.A.getVoiceStateVersion()]
-    }, [e, t], A.D);
+      return [null != (n = p.A.getVoiceStateForChannel(e, t)) ? n : null, p.A.getVoiceStateVersion()]
+    }, [e, t], E.D);
     return n
-  }(t, O), C = (0, s.A)({
-    userId: O,
+  }(t, v), D = (0, a.A)({
+    userId: v,
     guildId: n
-  }), N = (0, l.bG)([p.A], () => null != n && null != p.A.getStreamForUser(O, n), [n, O]), w = (0, y.tx)(null != n ? n : true, t, j), P = (0, v.Pe)({
-    user: null != j ? j : null,
-    guildId: n,
-    channelId: t
-  }), D = r.useCallback(e => {
-    (0, m.Vq)(j) && null != T && P(e)
-  }, [P, j, T]);
-  return (0, m.Vq)(j) && null != T ? (0, i.jsx)(d.A, {
-    targetElementRef: _,
-    user: j,
+  }), M = (0, i.bG)([g.A], () => null != n && null != g.A.getStreamForUser(v, n), [n, v]), j = (0, m.tx)(null != n ? n : true, t, C), w = r.useCallback(e => {
+    (0, I.Vq)(C) && null != x && (null == b || b({
+      type: A.K.VOICE_USER,
+      event: e,
+      user: C,
+      channelId: t
+    }))
+  }, [t, b, C, x]);
+  return (0, I.Vq)(C) && null != x ? (0, l.jsx)(d.A, {
+    targetElementRef: N,
+    user: C,
     guildId: null != n ? n : true,
     channelId: t,
-    appContext: b.BRT.OVERLAY,
-    shouldShow: S,
-    onRequestClose: () => I(false),
+    appContext: y.BRT.OVERLAY,
+    shouldShow: T,
+    onRequestClose: () => _(false),
     spacing: 24,
     children: e => {
       var t, r;
-      return (0, i.jsx)(a.DUT, (t = function(e) {
+      return (0, l.jsx)(s.DUT, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = l
           })
         }
         return e
       }({}, e), r = r = {
-        innerRef: _,
-        className: E.gD,
-        onDoubleClick: x,
-        onContextMenu: D,
+        innerRef: N,
+        className: S.gD,
+        onDoubleClick: O,
+        onContextMenu: w,
         onClick: e => {
-          e.preventDefault(), e.stopPropagation(), I(true)
+          e.preventDefault(), e.stopPropagation(), _(true)
         },
-        children: (0, i.jsxs)("div", {
-          className: E.h6,
-          children: [(0, i.jsx)(a.euF, {
-            src: j.getAvatarURL(null != n ? n : true, 24),
-            size: a._3J.SIZE_24,
-            "aria-label": w
-          }), (0, i.jsxs)("div", {
-            className: E.rg,
-            children: [(0, i.jsx)(u.A, {
-              userName: w,
-              displayNameStyles: C,
+        children: (0, l.jsxs)("div", {
+          className: S.h6,
+          children: [(0, l.jsx)(s.euF, {
+            src: C.getAvatarURL(null != n ? n : true, 24),
+            size: s._3J.SIZE_24,
+            "aria-label": j
+          }), (0, l.jsxs)(s.Text, {
+            className: S.rg,
+            variant: "text-sm/medium",
+            color: "text-subtle",
+            children: [(0, l.jsx)(u.A, {
+              userName: j,
+              displayNameStyles: D,
               effectDisplayType: o.G.STATIC,
-              textClassName: E.m2
-            }), (0, i.jsx)(c.Ay, {
-              userId: O,
+              textClassName: S.m2
+            }), (0, l.jsx)(c.Ay, {
+              userId: v,
               disableGuildProfile: true
             })]
-          }), (0, i.jsx)("div", {
-            className: E.ZA,
-            onDoubleClick: x,
-            children: (0, i.jsx)(h.Kc, {
+          }), (0, l.jsx)("div", {
+            className: S.ZA,
+            onDoubleClick: O,
+            children: (0, l.jsx)(h.Kc, {
               guildId: null != n ? n : true,
-              user: j,
-              video: T.selfVideo,
-              isStreaming: N,
-              className: E.ZA,
-              iconClassName: E.Ow,
+              user: C,
+              video: x.selfVideo,
+              isStreaming: M,
+              className: S.ZA,
+              iconClassName: S.Ow,
               isWatching: false,
               localMute: false,
               localVideoDisabled: false,
-              mute: T.isVoiceMuted(),
-              deaf: T.isVoiceDeafened(),
-              serverMute: T.mute || T.suppress,
-              serverDeaf: T.deaf,
+              mute: x.isVoiceMuted(),
+              deaf: x.isVoiceDeafened(),
+              serverMute: x.mute || x.suppress,
+              serverDeaf: x.deaf,
               disabled: false
             })
           })]
@@ -121,8 +125,8 @@ let O = Chunk64700.memo(function(e) {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(r)).forEach(function(e) {

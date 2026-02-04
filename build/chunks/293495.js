@@ -19,7 +19,7 @@ function h(e) {
   return "framepip:".concat(e.applicationId)
 }
 
-function g() {
+function f() {
   let e = u.A.getConnectedFrame();
   if (null == e) {
     let e;
@@ -34,7 +34,7 @@ function g() {
   return r.h.wait(() => i.ho(t, d.o1q.FRAME, {})), void(p = t)
 }
 
-function m() {
+function g() {
   let e;
   if ((0, a.A)({
       LayerStore: o.A,
@@ -45,12 +45,12 @@ function m() {
   }
   null != (e = p) && c.A.isOpen(e) && r.h.wait(() => i.WU(e))
 }
-class f extends Chunk272355.A {
+class m extends Chunk272355.A {
   _initialize() {
-    u.A.addChangeListener(g), o.A.addChangeListener(m)
+    u.A.addChangeListener(f), o.A.addChangeListener(g)
   }
   _terminate() {
-    u.A.removeChangeListener(g), o.A.removeChangeListener(m)
+    u.A.removeChangeListener(f), o.A.removeChangeListener(g)
   }
 }
-let A = new f
+let A = new m

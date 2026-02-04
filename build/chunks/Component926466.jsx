@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 926466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,14 +15,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk861968 = require("./861968.js");
-let m = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
-  f = function(e) {
+let g = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
+  m = function(e) {
     let {
       guild: t,
       title: n,
       message: l,
       image: s,
-      type: f,
+      type: m,
       imageStyles: A,
       imageMarginX: _,
       imageMarginTop: b,
@@ -36,21 +36,21 @@ let m = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
       className: N
     } = e;
     i.useEffect(() => {
-      m(p.HAw.CHANNEL_NOTICE_VIEWED, {
-        notice_type: f,
+      g(p.HAw.CHANNEL_NOTICE_VIEWED, {
+        notice_type: m,
         guild_id: t.id
       })
-    }, [t.id, f]);
+    }, [t.id, m]);
     let T = null;
     "function" == typeof v ? T = v() : null != v && (T = (0, r.jsx)(o.$n, {
       "data-migration-pending": true,
-      className: g.x6,
+      className: f.x6,
       size: o.$n.Sizes.SMALL,
       onClick: () => {
-        null != f && d.default.track(p.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+        null != m && d.default.track(p.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
           source: E,
           guild_id: t.id,
-          notice_type: f
+          notice_type: m
         }), null == I || I()
       },
       fullWidth: true,
@@ -61,17 +61,17 @@ let m = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
     "function" == typeof n ? j = n() : null != n && (j = (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "text-strong",
-      className: a()(g.DD, {
-        [g.vG]: null == s
+      className: a()(f.DD, {
+        [f.vG]: null == s
       }, {
-        [g.gX]: C
+        [f.gX]: C
       }),
       children: n
     }));
     let x = null;
     "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
       className: a()({
-        [g.gX]: C
+        [f.gX]: C
       }),
       variant: "text-sm/normal",
       color: "text-muted",
@@ -79,35 +79,35 @@ let m = (0, Chunk735438.debounce)(Chunk58149.Ay.trackWithMetadata, 500),
     }));
     let P = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: a()(g.kL, N),
+      className: a()(f.kL, N),
       children: [true === O ? null : (0, r.jsx)(c.DUT, {
         onClick: () => {
           u.Ay.trackWithMetadata(p.HAw.CHANNEL_NOTICE_CLOSED, {
-            notice_type: f
+            notice_type: m
           }), null == y || y()
         },
-        className: g.VN,
+        className: f.VN,
         "aria-label": h.intl.string(h.t.WAI6xu),
         children: (0, r.jsx)(c.PGe, {
           size: "md",
           color: "currentColor",
-          className: g.ut
+          className: f.ut
         })
       }), null != s && (0, r.jsx)("div", {
-        className: g.ZS,
+        className: f.ZS,
         style: {
           marginTop: "".concat(b, "px"),
           marginLeft: P,
           marginRight: P
         },
         children: (0, r.jsx)("img", {
-          className: g.Sl,
+          className: f.Sl,
           style: A,
           src: s,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: g.iU,
+        className: f.iU,
         children: [j, x, T]
       })]
     })

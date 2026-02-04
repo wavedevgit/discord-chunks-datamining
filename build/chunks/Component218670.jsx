@@ -16,7 +16,7 @@ var Chunk503698 = require("./503698.js"),
 function d(e) {
   let {
     locked: t
-  } = e, n = (0, a.bG)([o.A], () => o.A.getVoiceChannelId()), r = (0, a.bG)([s.A], () => s.A.getChannel(n)), d = null != r;
+  } = e, n = (0, a.bG)([s.A], () => s.A.getVoiceChannelId()), r = (0, a.bG)([o.A], () => o.A.getChannel(n)), d = null != r;
   return (0, i.jsxs)("div", {
     className: l()({
       [c.KE]: true,

@@ -19,10 +19,10 @@ let p = e => {
     onClick: p
   } = e, {
     analyticsLocations: h
-  } = (0, s.Ay)(a.A.HOME_PAGE_SHOP_TAB), g = i.useRef(n);
-  return g.current = n, i.useEffect(() => () => {
+  } = (0, s.Ay)(a.A.HOME_PAGE_SHOP_TAB), f = i.useRef(n);
+  return f.current = n, i.useEffect(() => () => {
     var e;
-    null == (e = g.current) || e.call(g)
+    null == (e = f.current) || e.call(f)
   }, []), (0, r.jsx)(l.AM, {
     targetElementRef: t,
     position: "right",

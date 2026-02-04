@@ -82,7 +82,7 @@ function T(e) {
         object: S.ZSU.BUTTON_CTA,
         objectType: S.AnalyticsObjectTypes.GIFT
       }
-    }) : (0, g.A)({
+    }) : (0, f.A)({
       isGift: true,
       initialPlanId: null,
       giftRecipient: k,
@@ -96,7 +96,7 @@ function T(e) {
       }
     })
   };
-  return (0, r.jsx)(m.A, {
+  return (0, r.jsx)(g.A, {
     ref: t,
     isFocused: l,
     isActive: T,
@@ -113,7 +113,7 @@ function T(e) {
         isMobile: L,
         isVR: R,
         subText: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(f.A, {
+          children: [(0, r.jsx)(m.A, {
             hovered: e,
             activities: x,
             applicationStream: P,

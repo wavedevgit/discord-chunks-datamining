@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 79746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => f
+  A: () => m
 }), require("./896048.js");
 var Chunk451988 = require("./451988.js"),
   Chunk73153 = require("./73153.js"),
@@ -22,8 +22,8 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = Chunk961350.default.getToken();
-class m extends Chunk272355.A {
+let f = Chunk961350.default.getToken();
+class g extends Chunk272355.A {
   _initialize() {
     this.focusedOrForegrounded = (0, d.R)(), a.default.addChangeListener(this.handleAuthenticationChange), i.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.h.subscribe("LOGIN_SUCCESS", this.handleLogin), i.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
@@ -66,7 +66,7 @@ class m extends Chunk272355.A {
       }), t.heartbeatInterval.stop())
     }), h(this, "scheduleHeartbeatTracking", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
-      if (t.focusedOrForegrounded && null != g) try {
+      if (t.focusedOrForegrounded && null != f) try {
         t.startAnalyticHeartbeat()
       } catch (e) {
         c.A.captureException(e)
@@ -89,8 +89,8 @@ class m extends Chunk272355.A {
       this.focusedOrForegrounded = t === p.g6G.ACTIVE, this.scheduleHeartbeatTracking("APP_STATE_UPDATE")
     }), h(this, "handleAuthenticationChange", () => {
       let e = a.default.getToken();
-      g !== e && (g = e, (0, u.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
+      f !== e && (f = e, (0, u.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
     })
   }
 }
-let f = new m
+let m = new g

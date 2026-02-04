@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 636781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -16,7 +16,7 @@ var Chunk92674 = require("./92674.js"),
   Chunk48686 = require("./48686.js"),
   Chunk652215 = require("./652215.js");
 
-function g(e) {
+function f(e) {
   let {
     channel: t,
     guild: n
@@ -36,11 +36,11 @@ function g(e) {
     })
   })
 }
-let m = function(e) {
+let g = function(e) {
   let {
     guild: t
   } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getChannels(t.id)[o.vM][0]), i = (0, l.bG)([c.A], () => null != n && c.A.can(h.xBc.CONNECT, n.channel));
-  return t.features.has(h.GuildFeatures.HUB) && null != n && i ? (0, r.jsx)(g, {
+  return t.features.has(h.GuildFeatures.HUB) && null != n && i ? (0, r.jsx)(f, {
     channel: n.channel,
     guild: t
   }) : null

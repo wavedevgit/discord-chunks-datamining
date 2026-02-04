@@ -15,30 +15,30 @@ var Chunk451988 = require("./451988.js"),
   Chunk927813 = require("./927813.js"),
   Chunk723702 = require("./723702.js"),
   Chunk652215 = require("./652215.js");
-let m = new Chunk451988.Ep,
-  f = new Chunk451988.Ep;
+let g = new Chunk451988.Ep,
+  m = new Chunk451988.Ep;
 class A extends Chunk272355.A {
   _initialize() {
     i.h.subscribe("IDLE", this.handleIdleUpdate)
   }
   _terminate() {
-    m.stop(), f.stop(), i.h.unsubscribe("IDLE", this.handleIdleUpdate)
+    g.stop(), m.stop(), i.h.unsubscribe("IDLE", this.handleIdleUpdate)
   }
   handleIdleUpdate() {
     let e = u.A.getIdleSince();
     if (!h.isPlatformEmbedded) return;
-    for (let e of (m.stop(), f.stop(), s.A.getAllActiveStreams()))
-      if (e.state !== g.XYD.ENDED) return;
+    for (let e of (g.stop(), m.stop(), s.A.getAllActiveStreams()))
+      if (e.state !== f.XYD.ENDED) return;
     if (null == e) return;
     let t = d.A.getChannelId();
     if (null == t) return;
-    f.start(18e6, () => {
+    m.start(18e6, () => {
       l.default.selectVoiceChannel(null)
     });
     let n = c.A.getGuild(d.A.getGuildId());
     if (null == n || null == n.afkChannelId || n.afkChannelId === t || null == n.afkTimeout) return;
     let r = o.A.getChannel(t);
-    null == r || r.isGuildStageVoice() || m.start(e + n.afkTimeout * p.A.Millis.SECOND - Date.now(), () => {
+    null == r || r.isGuildStageVoice() || g.start(e + n.afkTimeout * p.A.Millis.SECOND - Date.now(), () => {
       null != (n = c.A.getGuild(d.A.getGuildId())) && null != n.afkChannelId && l.default.selectVoiceChannel(n.afkChannelId, false, false, {
         bypassIdleUpdate: true
       })

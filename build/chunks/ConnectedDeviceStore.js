@@ -15,7 +15,7 @@ var r, Chunk735438 = require("./735438.js"),
   Chunk792205 = require("./792205.js"),
   Chunk731854 = require("./731854.js");
 
-function g(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,10 +23,10 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = {
+let g = {
     ignoredDevices: {}
   },
-  f = m,
+  m = g,
   A = false,
   _ = {},
   b = {},
@@ -60,10 +60,10 @@ function S(e, t, n) {
 }
 class C extends(r = Chunk311907.Ay.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.A, c.A), f = null != e ? e : m
+    this.waitFor(u.A, c.A), m = null != e ? e : g
   }
   getUserAgnosticState() {
-    return f
+    return m
   }
   get initialized() {
     return A
@@ -84,7 +84,7 @@ class C extends(r = Chunk311907.Ay.DeviceSettingsStore) {
     return y
   }
 }
-g(C, "displayName", "ConnectedDeviceStore"), g(C, "persistKey", "ConnectedDeviceStore"), g(C, "migrations", [e => {
+f(C, "displayName", "ConnectedDeviceStore"), f(C, "persistKey", "ConnectedDeviceStore"), f(C, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -94,7 +94,7 @@ g(C, "displayName", "ConnectedDeviceStore"), g(C, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          g(e, t, n[t])
+          f(e, t, n[t])
         })
       }
       return e
@@ -179,9 +179,9 @@ let N = new C(Chunk73153.h, {
     let {
       displayName: t
     } = e;
-    f.ignoredDevices[t] = true, delete E[t]
+    m.ignoredDevices[t] = true, delete E[t]
   },
   CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-    E = {}, f.neverShowModal = true
+    E = {}, m.neverShowModal = true
   }
 })

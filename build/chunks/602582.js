@@ -1,7 +1,7 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 602582, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => A
 }), require("./896048.js");
 var Chunk735438 = require("./735438.js"),
   r = require.n(Chunk735438),
@@ -18,7 +18,7 @@ var Chunk961350 = require("./961350.js"),
   Chunk937136 = require("./937136.js"),
   Chunk652215 = require("./652215.js");
 
-function m(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,47 +26,47 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = new Chunk626584.A("MessagePreviewManager");
-class A extends Chunk439372.A {
+let m = new Chunk626584.A("MessagePreviewManager");
+class E extends Chunk439372.A {
   addWant(e) {
     h.A.getBasicChannel(e)
   }
   async fetchLocal(e) {
-    if (!(!p.A.isLocalFetchNeeded(e) || this.localFetching.has(e))) try {
+    if (!(!g.A.isLocalFetchNeeded(e) || this.localFetching.has(e))) try {
       var t;
-      y.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
+      m.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
       let n = d.default.getId(),
-        i = await (null == (t = o.A.messages()) ? true : t.getMostRecents(e));
-      null != i && n === d.default.getId() && a.h.dispatch({
+        l = await (null == (t = o.A.messages()) ? true : t.getMostRecents(e));
+      null != l && n === d.default.getId() && s.h.dispatch({
         type: "MESSAGE_PREVIEWS_LOCALLY_LOADED",
         guildId: e,
-        messages: i.map(e => {
+        messages: l.map(e => {
           let [t, n] = e;
           return [t, n.message]
         })
       })
     } catch (e) {
-      y.log("couldn't fetch local previews (error: ".concat(e, ")"))
+      m.log("couldn't fetch local previews (error: ".concat(e, ")"))
     } finally {
       this.localFetching.delete(e)
     }
   }
   fetchGuilds(e, t) {
     let n = t.nextWants(1e3);
-    return 0 === n.length ? Promise.resolve() : t.try(n, () => (y.verbose("fetching guild previews (via: gateway, guild_id: ".concat(e, ", channel_ids: ").concat(n.join(", "), ")")), c.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
+    return 0 === n.length ? Promise.resolve() : t.try(n, () => (m.verbose("fetching guild previews (via: gateway, guild_id: ".concat(e, ", channel_ids: ").concat(n.join(", "), ")")), c.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
   }
   fetchDms(e) {
     let t = e.nextWants(30);
     return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
-      y.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
-      let e = (await l.Bo.post({
-        url: g.Rsh.MESSAGE_PREVIEWS,
+      m.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
+      let e = (await i.Bo.post({
+        url: p.Rsh.MESSAGE_PREVIEWS,
         body: {
           channel_ids: t
         },
         rejectWithError: false
       })).body;
-      a.h.dispatch({
+      s.h.dispatch({
         type: "MESSAGE_PREVIEWS_LOADED",
         guildId: null,
         messages: e
@@ -75,7 +75,7 @@ class A extends Chunk439372.A {
   }
   syncChannel(e, t) {
     let n = this.remote.get(e);
-    null != n && p.A.isLatest(e, t) && n.removeWant(t)
+    null != n && g.A.isLatest(e, t) && n.removeWant(t)
   }
   getOrCreate(e) {
     return this.remote.has(e) || this.remote.set(e, new f.p), this.remote.get(e)
@@ -115,21 +115,21 @@ class A extends Chunk439372.A {
   }
   handleMessagesLoaded(e) {
     var t, n;
-    let i = h.A.getBasicChannel(e.channelId),
-      r = null != (t = null == i ? true : i.guild_id) ? t : null;
-    if (null != i)
+    let l = h.A.getBasicChannel(e.channelId),
+      r = null != (t = null == l ? true : l.guild_id) ? t : null;
+    if (null != l)
       for (let t of null != (n = e.messages) ? n : []) this.syncChannel(r, t.channel_id)
   }
   handleThreadListSync(e) {
     let t = this.remote.get(e.guildId);
     if (null != t) {
       var n;
-      for (let i of null != (n = e.mostRecentMessages) ? n : []) t.removeWant(i.channel_id)
+      for (let l of null != (n = e.mostRecentMessages) ? n : []) t.removeWant(l.channel_id)
     }
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, m(this, "remote", new Map), m(this, "remoteTicking", false), m(this, "tickQueued", false), m(this, "localFetching", new Set), m(this, "actions", {
+    super(...e), t = this, I(this, "remote", new Map), I(this, "remoteTicking", false), I(this, "tickQueued", false), I(this, "localFetching", new Set), I(this, "actions", {
       CONNECTION_OPEN_SUPPLEMENTAL: () => this.handleConnectionOpenSupplemental(),
       CONNECTION_RESUMED: () => this.handleConnectionResumed(),
       GUILD_CREATE: e => this.handleGuildCreate(e),
@@ -141,7 +141,7 @@ class A extends Chunk439372.A {
       MESSAGE_DELETE: e => this.handleMessageDelete(e),
       MESSAGE_UPDATE: e => this.handleMessageUpdate(e),
       THREAD_LIST_SYNC: e => this.handleThreadListSync(e)
-    }), m(this, "remoteTick", r().debounce(async function() {
+    }), I(this, "remoteTick", r().debounce(async function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
       if (!c.A.isConnected()) {
         t.tickQueued = true;
@@ -153,10 +153,10 @@ class A extends Chunk439372.A {
           for (let [e, n] of(t.remoteTicking = true, t.remote)) await (null == e ? t.fetchDms(n) : t.fetchGuilds(e, n));
           t.cleanup(), t.remoteTicking = false
         } catch (n) {
-          y.log("couldn't fetch message previews (attempt: ".concat(e, ", error: ").concat(n, ")")), t.remoteTicking = false, t.remoteTick(e + 1)
+          m.log("couldn't fetch message previews (attempt: ".concat(e, ", error: ").concat(n, ")")), t.remoteTicking = false, t.remoteTick(e + 1)
         }
       }
     }, 100))
   }
 }
-let v = new A
+let A = new E

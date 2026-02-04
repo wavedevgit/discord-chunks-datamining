@@ -17,7 +17,7 @@ var Chunk554146 = require("./554146.js"),
   Chunk853742 = require("./853742.js"),
   Chunk652215 = require("./652215.js"),
   Chunk49999 = require("./49999.js");
-class f extends Chunk272355.A {
+class m extends Chunk272355.A {
   _initialize() {
     a.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
   }
@@ -26,13 +26,13 @@ class f extends Chunk272355.A {
   }
   handleChannelSelect(e) {
     var t;
-    let a, s, f, A, _, {
+    let a, s, m, A, _, {
       guildId: b
     } = e;
-    if (null == b || (s = !!(null == (a = d.A.getGuild(b)) ? true : a.features.has(g.GuildFeatures.COMMUNITY)), f = p.A.can(g.xBc.MANAGE_CHANNELS, a), A = (0, o.k8)(i.M.FORUM_CHANNEL_UPSELL_MODAL), _ = null != (t = u.A.getMemberCount(b)) ? t : 0, !s || !f || A || !(_ >= 200))) return;
+    if (null == b || (s = !!(null == (a = d.A.getGuild(b)) ? true : a.features.has(f.GuildFeatures.COMMUNITY)), m = p.A.can(f.xBc.MANAGE_CHANNELS, a), A = (0, o.k8)(i.M.FORUM_CHANNEL_UPSELL_MODAL), _ = null != (t = u.A.getMemberCount(b)) ? t : 0, !s || !m || A || !(_ >= 200))) return;
     (0, h.zd)(), (0, c.Vh)(i.M.FORUM_CHANNEL_UPSELL_MODAL);
     let E = function() {
-      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : m.i.DISMISS;
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : g.i.DISMISS;
       (0, o.Dr)(i.M.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: e
       })
@@ -79,10 +79,10 @@ class f extends Chunk272355.A {
       }
     }, {
       onCloseCallback: () => (0, o.Dr)(i.M.FORUM_CHANNEL_UPSELL_MODAL, {
-        dismissAction: m.i.DISMISS
+        dismissAction: g.i.DISMISS
       }),
-      onCloseRequest: g.FXj
+      onCloseRequest: f.FXj
     })
   }
 }
-let A = new f
+let A = new m

@@ -1,7 +1,7 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 236884, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => el
+  Z: () => et
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,7 +10,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk435371 = require("./435371.js"),
   Chunk397927 = require("./397927.js"),
-  Chunk49229 = require("./49229.js"),
   Chunk960076 = require("./960076.js"),
   Chunk566903 = require("./566903.js"),
   Chunk397244 = require("./397244.js"),
@@ -30,7 +29,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk145497 = require("./145497.jsx"),
   Chunk534400 = require("./534400.jsx"),
   Chunk854627 = require("./854627.js"),
-  Chunk657331 = require("./657331.js"),
   Chunk10862 = require("./10862.jsx"),
   Chunk616356 = require("./616356.js"),
   Chunk734057 = require("./734057.js"),
@@ -45,117 +43,115 @@ var Chunk627968 = require("./627968.js"),
   Chunk578093 = require("./578093.jsx"),
   Chunk20796 = require("./20796.jsx"),
   Chunk67103 = require("./67103.js"),
-  Chunk472204 = require("./472204.js"),
   Chunk576420 = require("./576420.js"),
-  Chunk876891 = require("./876891.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk783346 = require("./783346.js");
 
-function Q(e) {
+function K(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function q(e, t) {
+function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let $ = Chunk397927._3J.SIZE_32,
-  ee = [Chunk506326.iq, Chunk506326.tR, Chunk506326.K7, Chunk506326.sp, Chunk506326.MK];
+let Q = Chunk397927._3J.SIZE_32,
+  Z = [Chunk506326.iq, Chunk506326.tR, Chunk506326.K7, Chunk506326.sp, Chunk506326.MK];
 
-function et(e) {
+function q(e) {
   let t, {
       channel: n,
-      textVariant: a,
+      textVariant: s,
       activities: o,
       applicationStream: c
     } = e,
-    d = (0, s.bG)([U.default], () => U.default.getCurrentUser()),
-    p = (0, u.S31)(Z.clD.ONLINE),
-    f = (0, v.Ay)(n),
-    g = (0, s.bG)([R.A], () => R.A.getGuild(n.getGuildId())),
-    b = null == g ? true : g.name;
-  (0, A.A)(null == d ? true : d.id);
-  let E = (null == c ? true : c.discoverable) !== false ? c : null,
-    O = (0, I.AO)(E),
-    x = n.isDM() || n.isGroupDM(),
-    _ = r.useMemo(() => {
+    h = (0, a.bG)([U.default], () => U.default.getCurrentUser()),
+    g = (0, u.S31)(W.clD.ONLINE),
+    f = (0, E.Ay)(n),
+    A = (0, a.bG)([j.A], () => j.A.getGuild(n.getGuildId())),
+    y = null == A ? true : A.name;
+  (0, m.A)(null == h ? true : h.id);
+  let S = (null == c ? true : c.discoverable) !== false ? c : null,
+    v = (0, N.AO)(S),
+    O = n.isDM() || n.isGroupDM(),
+    b = r.useMemo(() => {
       var e;
-      return (0, l.uniqWith)(null != (e = null == o ? true : o.filter(e => {
+      return (0, i.uniqWith)(null != (e = null == o ? true : o.filter(e => {
         let {
           type: t,
           name: n
         } = e;
-        return t !== Z.$pd.CUSTOM_STATUS && t !== Z.$pd.HANG_STATUS && n !== (null == O ? true : O.name)
+        return t !== W.$pd.CUSTOM_STATUS && t !== W.$pd.HANG_STATUS && n !== (null == v ? true : v.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [o, null == O ? true : O.name]),
-    S = null == _ ? true : _[0];
-  return (0, i.jsxs)("div", {
-    className: J.fE,
-    children: [(t = (null == _ ? true : _.length) > 0, (0, i.jsxs)("div", {
-      className: J._9,
-      children: [!t && !x && null != g && (0, i.jsxs)("div", {
-        className: J.j1,
-        children: [(0, i.jsx)(j.Ay, {
-          guild: g,
+    }, [o, null == v ? true : v.name]),
+    _ = null == b ? true : b[0];
+  return (0, l.jsxs)("div", {
+    className: B.fE,
+    children: [(t = (null == b ? true : b.length) > 0, (0, l.jsxs)("div", {
+      className: B._9,
+      children: [!t && !O && null != A && (0, l.jsxs)("div", {
+        className: B.j1,
+        children: [(0, l.jsx)(T.Ay, {
+          guild: A,
           iconSize: 14
-        }), (0, i.jsx)(u.Text, {
-          className: J.J5,
-          variant: a,
+        }), (0, l.jsx)(u.Text, {
+          className: B.J5,
+          variant: s,
           color: "currentColor",
           lineClamp: 1,
-          children: b
-        }), (0, i.jsx)(u._BQ, {
+          children: y
+        }), (0, l.jsx)(u._BQ, {
           size: "xxs",
           color: "currentColor"
         })]
-      }), (0, i.jsx)(w.A, {
+      }), (0, l.jsx)(x.A, {
         size: "custom",
-        color: p,
+        color: g,
         channel: n,
-        className: J.WT
-      }), (0, i.jsx)(u.Text, {
-        variant: a,
+        className: B.WT
+      }), (0, l.jsx)(u.Text, {
+        variant: s,
         color: "currentColor",
         lineClamp: 1,
-        className: J.Qo,
+        className: B.Qo,
         children: f
       })]
     })), (() => {
-      if (null == S) return null;
+      if (null == _) return null;
       let {
         text: e
-      } = (0, h.A)(S, false), t = (0, y.f)(S);
-      return null == e && null == t ? null : (0, i.jsxs)("div", {
-        className: J._9,
-        children: [null != t ? (0, i.jsx)(m.A, {
+      } = (0, d.A)(_, false), t = (0, I.f)(_);
+      return null == e && null == t ? null : (0, l.jsxs)("div", {
+        className: B._9,
+        children: [null != t ? (0, l.jsx)(p.A, {
           icon: t,
-          className: J.WT
-        }) : true, null != e ? (0, i.jsx)(u.Text, {
-          variant: a,
+          className: B.WT
+        }) : true, null != e ? (0, l.jsx)(u.Text, {
+          variant: s,
           color: "text-status-online",
           lineClamp: 1,
           children: e
@@ -165,78 +161,79 @@ function et(e) {
   })
 }
 
-function en(e) {
+function J(e) {
   let {
     user: t,
     activities: n,
-    gameProfileEntry: l,
+    gameProfileEntry: i,
     relationshipType: o,
     isSuggestion: u,
-    appContext: c,
-    onAction: h,
+    appContext: d,
+    onPrimaryAction: p,
+    onContextMenu: I,
     onFriendVisible: m,
-    friendGroupId: y
-  } = e, A = t.id, {
+    friendGroupId: E
+  } = e, S = t.id, {
     avatarDecorationSrc: v,
     avatarSrc: O,
-    eventHandlers: x
+    eventHandlers: b
   } = (0, C.A)({
-    userId: A,
-    size: $,
+    userId: S,
+    size: Q,
     animateOnHover: true,
     guildId: null
-  }), _ = r.useMemo(() => {
-    let e = null != y ? y : "no-group",
+  }), N = r.useMemo(() => {
+    let e = null != E ? E : "no-group",
       t = null != o ? o : "no-relationship";
-    return "friends-widget-friend-row:".concat(A, ":").concat(e, ":").concat(t, ":").concat(u ? "suggestion" : "not-suggestion")
-  }, [y, u, o, A]), S = (0, s.yK)([L.A], () => L.A.getActivities().filter(e => e.type === Z.$pd.PLAYING && null != e.application_id)), {
-    voiceChannel: I
-  } = (0, f.A)({
+    return "friends-widget-friend-row:".concat(S, ":").concat(e, ":").concat(t, ":").concat(u ? "suggestion" : "not-suggestion")
+  }, [E, u, o, S]), T = (0, a.yK)([R.A], () => R.A.getActivities().filter(e => e.type === W.$pd.PLAYING && null != e.application_id)), {
+    voiceChannel: _
+  } = (0, g.A)({
     userId: t.id
   }), {
-    status: j,
-    applicationStream: T,
-    isMobile: N,
-    newStatus: w
-  } = (0, s.cf)([k.A, P.A], () => {
-    let e = k.A.getStatus(t.id),
-      i = P.A.getAnyStreamForUser(t.id),
-      r = k.A.isMobileOnline(t.id),
-      l = (0, d.A)(null != n ? n : []) ? Z.clD.STREAMING : e;
+    status: x,
+    applicationStream: M,
+    isMobile: j,
+    newStatus: P
+  } = (0, a.cf)([w.A, D.A], () => {
+    let e = w.A.getStatus(t.id),
+      l = D.A.getAnyStreamForUser(t.id),
+      r = w.A.isMobileOnline(t.id),
+      i = (0, c.A)(null != n ? n : []) ? W.clD.STREAMING : e;
     return {
       status: e,
-      applicationStream: i,
+      applicationStream: l,
       isMobile: r,
-      newStatus: l
+      newStatus: i
     }
-  }, [t.id, n]), D = S.length > 0, R = r.useCallback(e => {
-    null == m || m(A, e, D)
-  }, [m, A, D]), M = (0, a.K)(R), U = r.useCallback(() => {
-    if (null != l) {
-      let e = l.traits,
-        t = q(Q({}, l), {
+  }, [t.id, n]), U = T.length > 0, G = r.useCallback(e => {
+    null == m || m(S, e, U)
+  }, [m, S, U]), L = (0, s.K)(G), k = r.useCallback(() => {
+    if (null != i) {
+      let e = i.traits,
+        t = X(K({}, i), {
           traits: e.slice(0, 3)
         });
-      return (0, i.jsx)(b.mG, {
-        location: b.N5.FRIENDS_POPOUT,
-        className: J.cV,
-        children: ee.map((e, n) => (0, i.jsx)(e, {
+      return (0, l.jsx)(A.mG, {
+        location: A.N5.FRIENDS_POPOUT,
+        className: B.cV,
+        children: Z.map((e, n) => (0, l.jsx)(e, {
           entry: t
         }, n))
       })
     }
-    if ((0, p.A)({
+    if ((0, h.A)({
         activities: n,
-        status: j,
-        applicationStream: T,
-        voiceChannel: I
+        status: x,
+        applicationStream: M,
+        voiceChannel: _
       })) {
-      let e = !(0, E.A)({
+      let e = !(0, y.A)({
         activity: null == n ? true : n.find(e => {
           let {
             type: t
           } = e;
-          return t === Z.$pd.CUSTOM_STATUS
+          return t === W.$pd.CUSTOM_STATUS
         }),
         user: t
       });
@@ -244,334 +241,338 @@ function en(e) {
         let {
           type: t
         } = e;
-        return t === Z.$pd.PLAYING
-      })) == null && null != I ? (0, i.jsx)(et, {
-        channel: I,
+        return t === W.$pd.PLAYING
+      })) == null && null != _ ? (0, l.jsx)(q, {
+        channel: _,
         textVariant: "text-xs/medium",
         activities: null != n ? n : [],
-        applicationStream: T
-      }) : (0, i.jsx)(g.A, {
+        applicationStream: M
+      }) : (0, l.jsx)(f.A, {
         user: t,
         activities: n,
-        applicationStream: T,
-        voiceChannel: I,
+        applicationStream: M,
+        voiceChannel: _,
         animateEmoji: false,
         hideEmoji: e,
         hasQuest: false
       })
     }
     return null
-  }, [t, n, j, T, I, l]);
+  }, [t, n, x, M, _, i]);
   return {
     avatarDecorationSrc: v,
     avatarSrc: O,
-    eventHandlers: x,
-    listItemId: _,
-    intersectionRef: M,
-    isMobile: N,
-    newStatus: w,
-    status: j,
-    renderSubtext: U,
-    renderUserContextMenu: (0, B.l2)({
-      user: t,
-      appContext: c,
-      friendGroupId: y,
-      onUserContextMenuOpened: () => {
-        null == h || h(Y.x.USER_CONTEXT_MENU, t.id)
-      },
-      onMessageUser: () => {
-        null == h || h(Y.x.OPEN_DIRECT_MESSAGE, t.id)
-      }
-    })
+    eventHandlers: b,
+    listItemId: N,
+    intersectionRef: L,
+    isMobile: j,
+    newStatus: P,
+    status: x,
+    renderSubtext: k,
+    renderUserContextMenu: r.useCallback(e => {
+      null == I || I({
+        type: H.K.FRIEND_ROW,
+        event: e,
+        user: t,
+        friendGroupId: E
+      })
+    }, [E, I, t])
   }
 }
-let ei = Chunk64700.memo(e => {
+let $ = Chunk64700.memo(e => {
   let {
     user: t,
     activities: n = [],
-    gameProfileEntry: l,
-    closeParentPopout: a,
+    gameProfileEntry: i,
+    closeParentPopout: s,
     appContext: c,
     nickname: d,
-    onAction: h,
-    onFriendVisible: p,
-    friendGroupId: f,
-    shouldHighlightIfRecentlyAdded: g,
+    onPrimaryAction: h,
+    onContextMenu: g,
+    onFriendVisible: f,
+    friendGroupId: p,
+    shouldHighlightIfRecentlyAdded: I,
     relationshipType: m,
-    isSuggestion: y
+    isSuggestion: E
   } = e, {
     avatarDecorationSrc: A,
-    avatarSrc: v,
-    eventHandlers: b,
-    listItemId: E,
-    intersectionRef: I,
-    isMobile: j,
-    newStatus: C,
-    status: w,
-    renderSubtext: P,
+    avatarSrc: y,
+    eventHandlers: N,
+    listItemId: T,
+    intersectionRef: C,
+    isMobile: x,
+    newStatus: D,
+    status: j,
+    renderSubtext: w,
     renderUserContextMenu: R
-  } = en({
+  } = J({
     user: t,
     activities: n,
-    gameProfileEntry: l,
+    gameProfileEntry: i,
     relationshipType: m,
-    isSuggestion: y,
+    isSuggestion: E,
     appContext: c,
-    onAction: h,
-    onFriendVisible: p,
-    friendGroupId: f
+    onPrimaryAction: h,
+    onContextMenu: g,
+    onFriendVisible: f,
+    friendGroupId: p
   }), {
-    guildId: k,
-    channelId: L
-  } = (0, s.cf)([M.A, D.A], () => {
+    guildId: U,
+    channelId: Z
+  } = (0, a.cf)([P.A, M.A], () => {
     var e, t;
-    let n = null != (e = M.A.getVoiceChannelId()) ? e : M.A.getChannelId();
+    let n = null != (e = P.A.getVoiceChannelId()) ? e : P.A.getChannelId();
     return {
-      guildId: null != n ? null == (t = D.A.getChannel(n)) ? true : t.guild_id : null,
+      guildId: null != n ? null == (t = M.A.getChannel(n)) ? true : t.guild_id : null,
       channelId: n
     }
-  }), U = (0, O.A)({
+  }), q = (0, S.A)({
     userId: t.id,
-    guildId: k
-  }), B = G.Ay.useName(k, L, t), ee = (0, W.ZD)({
-    userId: t.id,
-    onAction: h,
-    closeParentPopout: a
-  }), et = n.some(e => {
+    guildId: U
+  }), $ = G.Ay.useName(U, Z, t), ee = r.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == h || h({
+      type: H.c.OPEN_DIRECT_MESSAGE,
+      userId: t.id
+    }), null == s || s()
+  }, [s, h, t.id]), et = n.some(e => {
     let {
       type: t
     } = e;
-    return t === Z.$pd.PLAYING
-  }), ei = w !== Z.clD.ONLINE && w !== Z.clD.IDLE && w !== Z.clD.DND, er = (0, K.A2)(t.id), el = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == h || h(Y.x.OPEN_FRIEND_MODAL, t.id), (0, N.openUserProfileModal)({
+    return t === W.$pd.PLAYING
+  }), en = j !== W.clD.ONLINE && j !== W.clD.IDLE && j !== W.clD.DND, el = (0, Y.A2)(t.id), er = r.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == h || h({
+      type: H.c.OPEN_FRIEND_MODAL,
       userId: t.id,
-      guildId: k,
-      channelId: L,
-      appContext: c
+      guildId: null != U ? U : true,
+      channelId: null != Z ? Z : true
     })
-  }, [c, L, k, h, t.id]);
-  return (0, i.jsx)(z.D, {
-    listItemId: E,
-    outerRef: I,
-    isVisuallyOffline: ei,
-    recentlyAddedTimestampMs: g ? er : null,
+  }, [Z, U, h, t.id]);
+  return (0, l.jsx)(k.D, {
+    listItemId: T,
+    outerRef: C,
+    isVisuallyOffline: en,
+    recentlyAddedTimestampMs: I ? el : null,
     onClick: ee,
     onContextMenu: R,
-    avatar: (0, i.jsx)(u.euF, q(Q({}, b), {
-      size: $,
-      src: v,
-      isMobile: j,
+    avatar: (0, l.jsx)(u.euF, X(K({}, N), {
+      size: Q,
+      src: y,
+      isMobile: x,
       isTyping: false,
-      status: C,
-      className: J.my,
+      status: D,
+      className: B.my,
       "aria-label": t.username,
       statusTooltip: true,
       avatarDecoration: A
     })),
-    primaryText: (0, i.jsxs)("div", {
-      className: J.QV,
-      children: [(0, i.jsx)(_.A, {
-        userName: B,
-        displayNameStyles: U,
-        effectDisplayType: x.G.STATIC,
-        textClassName: J.Xh
-      }), (0, i.jsx)(T.Ay, {
+    primaryText: (0, l.jsxs)("div", {
+      className: B.QV,
+      children: [(0, l.jsx)(O.A, {
+        userName: $,
+        displayNameStyles: q,
+        effectDisplayType: v.G.STATIC,
+        textClassName: B.Xh
+      }), (0, l.jsx)(_.Ay, {
         userId: t.id,
         disableGuildProfile: true
       })]
     }),
-    secondaryText: P(),
-    rightActions: e => e ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(o.m_, {
-        text: X.intl.string(X.t.iXAna6),
-        "aria-label": X.intl.string(X.t.iXAna6),
-        children: (0, i.jsx)(u.K0, {
+    secondaryText: w(),
+    rightActions: e => e ? (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(o.m_, {
+        text: z.intl.string(z.t.iXAna6),
+        "aria-label": z.intl.string(z.t.iXAna6),
+        children: (0, l.jsx)(u.K0, {
           icon: u.rMq,
-          "aria-label": X.intl.string(X.t.iXAna6),
+          "aria-label": z.intl.string(z.t.iXAna6),
           size: "sm",
           variant: "icon-only",
-          onClick: el
+          onClick: er
         })
-      }), (0, i.jsx)(F.j, {
-        tab: V.x.FRIENDS,
+      }), (0, l.jsx)(F.j, {
+        tab: L.x.FRIENDS,
         targetId: t.id
       })]
-    }) : et ? (0, i.jsx)("div", {
-      className: J.im,
-      children: (0, i.jsx)(H.B, {
+    }) : et ? (0, l.jsx)("div", {
+      className: B.im,
+      children: (0, l.jsx)(V.B, {
         activities: n,
-        gameProfileEntry: l,
-        gameIconSize: S.M.SMALL,
+        gameProfileEntry: i,
+        gameIconSize: b.M.SMALL,
         platformIconSizePx: 24
       })
     }) : null
   })
 });
-ei.displayName = "FriendListRow";
-let er = Chunk64700.memo(e => {
+$.displayName = "FriendListRow";
+let ee = Chunk64700.memo(e => {
   let {
     user: t,
     activities: n = [],
-    gameProfileEntry: l,
-    relationshipType: a,
-    isSuggestion: s,
-    appContext: d,
-    nickname: h,
-    onAction: p,
+    gameProfileEntry: i,
+    relationshipType: s,
+    isSuggestion: a,
+    appContext: c,
+    nickname: d,
+    onPrimaryAction: h,
+    onContextMenu: g,
     onFriendVisible: f,
-    friendGroupId: g
-  } = e, [m, y] = r.useState(null), A = r.useRef(false), {
-    avatarDecorationSrc: v,
-    avatarSrc: b,
+    friendGroupId: p
+  } = e, {
+    avatarDecorationSrc: I,
+    avatarSrc: m,
     eventHandlers: E,
-    listItemId: I,
-    intersectionRef: j,
-    isMobile: T,
-    newStatus: C,
-    status: N,
-    renderSubtext: w,
-    renderUserContextMenu: P
-  } = en({
+    listItemId: A,
+    intersectionRef: y,
+    isMobile: N,
+    newStatus: T,
+    status: _,
+    renderSubtext: C,
+    renderUserContextMenu: x
+  } = J({
     user: t,
     activities: n,
-    gameProfileEntry: l,
-    relationshipType: a,
-    isSuggestion: s,
-    appContext: d,
-    onAction: p,
+    gameProfileEntry: i,
+    relationshipType: s,
+    isSuggestion: a,
+    appContext: c,
+    onPrimaryAction: h,
+    onContextMenu: g,
     onFriendVisible: f,
-    friendGroupId: g
-  }), D = (0, O.A)({
+    friendGroupId: p
+  }), D = (0, S.A)({
     userId: t.id,
     guildId: null
-  }), R = G.Ay.useName(null, null, t), k = r.useCallback(async (e, t) => {
-    if (!A.current) {
-      A.current = true, y(e);
-      try {
-        await t()
-      } finally {
-        A.current = false, y(null)
-      }
-    }
-  }, []), M = (0, W.ZD)({
-    userId: t.id,
-    onAction: p
-  }), L = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.ACCEPT_FRIEND_REQUEST, t.id), k("accept", () => c.A.addRelationship({
-      userId: t.id,
-      context: {
-        location: "friends-popout"
-      }
-    }))
-  }, [t.id, p, k]), U = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.DECLINE_FRIEND_REQUEST, t.id), k("decline", () => c.A.removeRelationship(t.id, {
-      location: "friends-popout"
-    }))
-  }, [t.id, p, k]), V = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.CANCEL_FRIEND_REQUEST, t.id), k("cancel", () => c.A.cancelFriendRequest(t.id, {
-      location: "friends-popout"
-    }))
-  }, [t.id, p, k]), F = r.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == p || p(Y.x.SEND_FRIEND_REQUEST, t.id), k("send", () => c.A.addRelationship({
-      userId: t.id,
-      context: {
-        location: "friends-popout"
-      }
-    }))
-  }, [t.id, p, k]), K = n.some(e => {
-    let {
-      type: t
-    } = e;
-    return t === Z.$pd.PLAYING
-  }), B = N !== Z.clD.ONLINE && N !== Z.clD.IDLE && N !== Z.clD.DND;
-  return (0, i.jsx)(z.D, {
-    listItemId: I,
-    outerRef: j,
-    isVisuallyOffline: B,
-    onClick: M,
-    onContextMenu: P,
-    avatar: (0, i.jsx)(u.euF, q(Q({}, E), {
-      size: $,
-      src: b,
-      isMobile: T,
+  }), M = G.Ay.useName(null, null, t), [j, w] = r.useState(false), P = r.useRef(null), R = r.useCallback(() => {
+    w(true), null != P.current && clearTimeout(P.current), P.current = setTimeout(() => {
+      w(false), P.current = null
+    }, 2e3)
+  }, []);
+  r.useEffect(() => () => {
+    null != P.current && clearTimeout(P.current)
+  }, []);
+  let U = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), null == h || h({
+        type: H.c.OPEN_DIRECT_MESSAGE,
+        userId: t.id
+      })
+    }, [h, t.id]),
+    L = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), j || (R(), null == h || h({
+        type: H.c.ACCEPT_FRIEND_REQUEST,
+        userId: t.id
+      }))
+    }, [t.id, h, j, R]),
+    F = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), j || (R(), null == h || h({
+        type: H.c.DECLINE_FRIEND_REQUEST,
+        userId: t.id
+      }))
+    }, [t.id, h, j, R]),
+    Y = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), j || (R(), null == h || h({
+        type: H.c.CANCEL_FRIEND_REQUEST,
+        userId: t.id
+      }))
+    }, [t.id, h, j, R]),
+    Z = r.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), j || (R(), null == h || h({
+        type: H.c.SEND_FRIEND_REQUEST,
+        userId: t.id
+      }))
+    }, [t.id, h, j, R]),
+    q = n.some(e => {
+      let {
+        type: t
+      } = e;
+      return t === W.$pd.PLAYING
+    }),
+    $ = _ !== W.clD.ONLINE && _ !== W.clD.IDLE && _ !== W.clD.DND;
+  return (0, l.jsx)(k.D, {
+    listItemId: A,
+    outerRef: y,
+    isVisuallyOffline: $,
+    onClick: U,
+    onContextMenu: x,
+    avatar: (0, l.jsx)(u.euF, X(K({}, E), {
+      size: Q,
+      src: m,
+      isMobile: N,
       isTyping: false,
-      status: C,
-      className: J.my,
+      status: T,
+      className: B.my,
       "aria-label": t.username,
       statusTooltip: true,
-      avatarDecoration: v
+      avatarDecoration: I
     })),
-    primaryText: (0, i.jsx)(_.A, {
-      userName: R,
+    primaryText: (0, l.jsx)(O.A, {
+      userName: M,
       displayNameStyles: D,
-      effectDisplayType: x.G.PLAIN,
-      textClassName: J.Xh
+      effectDisplayType: v.G.PLAIN,
+      textClassName: B.Xh
     }),
-    secondaryText: w(),
-    rightActions: () => {
-      let e;
-      return (0, i.jsxs)(i.Fragment, {
-        children: [K ? (0, i.jsx)("div", {
-          className: J.im,
-          children: (0, i.jsx)(H.B, {
-            activities: n,
-            gameProfileEntry: l,
-            gameIconSize: S.M.XSMALL,
-            platformIconSizePx: 20
-          })
-        }) : null, (e = null != m, a === Z.eA$.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(o.m_, {
-            text: X.intl.string(X.t.MMlhsr),
-            children: (0, i.jsx)(u.K0, {
-              "aria-label": X.intl.string(X.t.MMlhsr),
-              size: "sm",
-              variant: "secondary",
-              icon: u.A9s,
-              onClick: L,
-              disabled: e
-            })
-          }), (0, i.jsx)(o.m_, {
-            text: X.intl.string(X.t.ytCpKs),
-            children: (0, i.jsx)(u.K0, {
-              "aria-label": X.intl.string(X.t.ytCpKs),
-              size: "sm",
-              variant: "secondary",
-              icon: u.PGe,
-              onClick: U,
-              disabled: e
-            })
-          })]
-        }) : a === Z.eA$.PENDING_OUTGOING ? (0, i.jsx)(o.m_, {
-          text: X.intl.string(X.t["bTfA//"]),
-          children: (0, i.jsx)(u.K0, {
-            "aria-label": X.intl.string(X.t["bTfA//"]),
+    secondaryText: C(),
+    rightActions: () => (0, l.jsxs)(l.Fragment, {
+      children: [q ? (0, l.jsx)("div", {
+        className: B.im,
+        children: (0, l.jsx)(V.B, {
+          activities: n,
+          gameProfileEntry: i,
+          gameIconSize: b.M.XSMALL,
+          platformIconSizePx: 20
+        })
+      }) : null, s === W.eA$.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(o.m_, {
+          text: z.intl.string(z.t.MMlhsr),
+          children: (0, l.jsx)(u.K0, {
+            "aria-label": z.intl.string(z.t.MMlhsr),
             size: "sm",
             variant: "secondary",
-            icon: u.lI8,
-            onClick: V,
-            disabled: e
+            icon: u.A9s,
+            onClick: L,
+            disabled: j
           })
-        }) : s ? (0, i.jsx)(o.m_, {
-          text: X.intl.string(X.t.w5uwoI),
-          children: (0, i.jsx)(u.K0, {
-            "aria-label": X.intl.string(X.t.w5uwoI),
+        }), (0, l.jsx)(o.m_, {
+          text: z.intl.string(z.t.ytCpKs),
+          children: (0, l.jsx)(u.K0, {
+            "aria-label": z.intl.string(z.t.ytCpKs),
             size: "sm",
             variant: "secondary",
-            icon: u.Rvf,
+            icon: u.PGe,
             onClick: F,
-            disabled: e
+            disabled: j
           })
-        }) : null)]
-      })
-    }
+        })]
+      }) : s === W.eA$.PENDING_OUTGOING ? (0, l.jsx)(o.m_, {
+        text: z.intl.string(z.t["bTfA//"]),
+        children: (0, l.jsx)(u.K0, {
+          "aria-label": z.intl.string(z.t["bTfA//"]),
+          size: "sm",
+          variant: "secondary",
+          icon: u.lI8,
+          onClick: Y,
+          disabled: j
+        })
+      }) : a ? (0, l.jsx)(o.m_, {
+        text: z.intl.string(z.t.w5uwoI),
+        children: (0, l.jsx)(u.K0, {
+          "aria-label": z.intl.string(z.t.w5uwoI),
+          size: "sm",
+          variant: "secondary",
+          icon: u.Rvf,
+          onClick: Z,
+          disabled: j
+        })
+      }) : null]
+    })
   })
 });
-er.displayName = "FriendRequestRow";
-let el = Chunk64700.memo(e => "friend_request" === function(e) {
+ee.displayName = "FriendRequestRow";
+let et = Chunk64700.memo(e => "friend_request" === function(e) {
   let {
     relationshipType: t,
     isSuggestion: n
   } = e;
-  return t === Z.eA$.PENDING_INCOMING || t === Z.eA$.PENDING_OUTGOING || n ? "friend_request" : "friend"
-}(e) ? (0, i.jsx)(er, Q({}, e)) : (0, i.jsx)(ei, Q({}, e)));
-el.displayName = "FriendRow"
+  return t === W.eA$.PENDING_INCOMING || t === W.eA$.PENDING_OUTGOING || n ? "friend_request" : "friend"
+}(e) ? (0, l.jsx)(ee, K({}, e)) : (0, l.jsx)($, K({}, e)));
+et.displayName = "FriendRow"

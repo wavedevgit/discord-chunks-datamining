@@ -18,9 +18,9 @@ function p(e, t) {
   switch (t) {
     case "user":
     case "groupDm":
-      return 24 === e ? s._3J.SIZE_24 : s._3J.SIZE_40;
+      return 24 === e ? o._3J.SIZE_24 : o._3J.SIZE_40;
     case "guild":
-      return 24 === e ? o.A.Sizes.SMALLER : o.A.Sizes.MEDIUM;
+      return 24 === e ? s.A.Sizes.SMALLER : s.A.Sizes.MEDIUM;
     case "default":
       return 24 === e ? "sm" : "md";
     default:
@@ -36,26 +36,26 @@ let f = Chunk64700.memo(function(e) {
     isSelected: f = false,
     size: g = 24,
     isTyping: m = false,
-    mentionCount: y = 0,
-    isMentionLowImportance: A = false
-  } = e, v = null != (t = null == i ? true : i.isPrivate()) && t, b = null != (n = null == i ? true : i.isMultiUserDM()) && n, E = null == l ? true : l.id, O = (0, a.bG)([u.A], () => null != E ? u.A.getStatus(E) : null, [E]), x = (0, a.bG)([u.A], () => null != E && u.A.isMobileOnline(E), [E]);
-  if (v || b) return (0, r.jsx)(c.h, {
+    mentionCount: A = 0,
+    isMentionLowImportance: y = false
+  } = e, O = null != (t = null == i ? true : i.isPrivate()) && t, v = null != (n = null == i ? true : i.isMultiUserDM()) && n, b = null == l ? true : l.id, E = (0, a.bG)([u.A], () => null != b ? u.A.getStatus(b) : null, [b]), _ = (0, a.bG)([u.A], () => null != b && u.A.isMobileOnline(b), [b]);
+  if (O || v) return (0, r.jsx)(c.h, {
     channel: null != i ? i : null,
     user: l,
     "aria-hidden": true,
     size: p(g, "user"),
-    status: O,
-    isMobile: x,
+    status: E,
+    isMobile: _,
     isTyping: m,
-    mentionCount: y,
-    isMentionLowImportance: A
+    mentionCount: A,
+    isMentionLowImportance: y
   });
-  if (null == h) return (0, r.jsx)(s.oyn, {
+  if (null == h) return (0, r.jsx)(o.oyn, {
     size: p(g, "default"),
-    color: s.LU0.colors.INTERACTIVE_ICON_DEFAULT
+    color: o.LU0.colors.INTERACTIVE_ICON_DEFAULT
   });
   {
-    if (null == i) return (0, r.jsx)(o.A, {
+    if (null == i) return (0, r.jsx)(s.A, {
       guild: h,
       size: p(g, "guild"),
       active: true,

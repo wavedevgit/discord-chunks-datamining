@@ -17,11 +17,11 @@ function u(e) {
     keybind: n,
     className: r,
     IconComponent: u
-  } = e, c = (0, s.F)();
+  } = e, c = (0, o.F)();
   return (0, i.jsxs)("div", {
-    className: l()(o.UD, r),
+    className: l()(s.UD, r),
     children: [(0, i.jsx)(a.DUT, {
-      className: o.x6,
+      className: s.x6,
       onClick: t,
       "aria-hidden": true,
       children: (0, i.jsx)(u, {
@@ -30,7 +30,7 @@ function u(e) {
         "aria-hidden": true
       })
     }), null != n && c ? (0, i.jsx)(a.Text, {
-      className: o.P,
+      className: s.P,
       "aria-hidden": true,
       variant: "text-xxs/bold",
       color: "interactive-text-default",

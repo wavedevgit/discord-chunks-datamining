@@ -1,7 +1,7 @@
 /** Chunk was on 71447 **/
 /** chunk id: 196295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => O
+  A: () => E
 }), require("./321073.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,42 +18,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk288507 = require("./288507.js");
-let A = [];
+let y = [];
 
-function v(e) {
+function O(e) {
   return e.notification.id
 }
 
-function b(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: l,
     notification: a,
-    locked: s,
-    pinned: o
+    locked: o,
+    pinned: s
   } = t;
   return (0, i.jsx)(d.A, {
     index: l,
     notification: a,
-    locked: s,
-    pinned: o,
+    locked: o,
+    pinned: s,
     transitionState: n,
     cleanUp: r
   }, e)
 }
 
-function E(e) {
+function b(e) {
   return (0, i.jsx)("div", {
-    className: y.k,
+    className: A.k,
     children: e
   })
 }
-let O = Chunk64700.memo(function(e) {
+let E = Chunk64700.memo(function(e) {
   let {
     locked: t,
     pinned: n,
     showEmpty: d = true
-  } = e, y = (0, l.bG)([p.A, o.A], () => {
-    if (o.A.isNotificationDisabled(f.KS.TextChat)) return A;
+  } = e, A = (0, l.bG)([p.A, s.A], () => {
+    if (s.A.isNotificationDisabled(f.KS.TextChat)) return y;
     let e = [],
       i = 0;
     for (let r of p.A.getNotifications()) {
@@ -66,16 +66,16 @@ let O = Chunk64700.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], u.oQ), O = r.useState(() => new h.Fn(t))[0];
-  return (r.useLayoutEffect(() => O.updateState(y, t)), r.useLayoutEffect(() => (O.initialize((0, c.b)()), () => O.cleanUp()), [O]), 0 !== y.length || t) ? (0, i.jsx)(h.Gt.Provider, {
-    value: O,
+  }, [t, n], u.oQ), E = r.useState(() => new h.Fn(t))[0];
+  return (r.useLayoutEffect(() => E.updateState(A, t)), r.useLayoutEffect(() => (E.initialize((0, c.b)()), () => E.cleanUp()), [E]), 0 !== A.length || t) ? (0, i.jsx)(h.Gt.Provider, {
+    value: E,
     children: (0, i.jsx)(a.Fai, {
-      items: y,
-      renderItem: b,
-      getItemKey: v,
-      wrapChildren: E
+      items: A,
+      renderItem: v,
+      getItemKey: O,
+      wrapChildren: b
     })
-  }) : d ? t ? null : (0, i.jsx)(s.g, {
+  }) : d ? t ? null : (0, i.jsx)(o.g, {
     emptyText: m.intl.string(m.t.O1Nbjq),
     icon: a.XFE,
     absolute: true

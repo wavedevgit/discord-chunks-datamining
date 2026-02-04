@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 860768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => g
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -22,7 +22,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class g extends Chunk64700.PureComponent {
+class f extends Chunk64700.PureComponent {
   render() {
     let e = "".concat(d.intl.string(d.t.VWqWZQ), "\n").concat(d.intl.string(d.t["0Lgb/K"]));
     return (0, r.jsx)(o.A, {
@@ -83,4 +83,4 @@ class g extends Chunk64700.PureComponent {
     })
   }
 }
-let m = g
+let g = f

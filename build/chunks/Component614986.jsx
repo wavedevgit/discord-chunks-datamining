@@ -2,13 +2,14 @@
 /** chunk id: 614986, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => k
+  A: () => L
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk92674 = require("./92674.js"),
   Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
+  Chunk73153 = require("./73153.js"),
   Chunk846293 = require("./846293.js"),
   Chunk900662 = require("./900662.jsx"),
   Chunk765671 = require("./765671.js"),
@@ -27,7 +28,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk446160 = require("./446160.js");
 
-function O(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +47,7 @@ function O(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,52 +60,52 @@ function I(e, t) {
   }), e
 }
 
-function S() {
+function N() {
   return (0, r.jsx)("div", {
-    className: j.$k,
+    className: O.$k,
     children: (0, r.jsx)(a.y$y, {})
   })
 }
-let N = e => {
+let C = e => {
   let t = (null == e ? true : e.state) == null && (null == e ? true : e.channel) == null;
   if (null == e || null == e.state || t) return 0;
   let n = e.state;
   switch (n) {
-    case y.elq.RESOLVED:
-    case y.elq.ACCEPTED:
-    case y.elq.APP_NOT_OPENED:
-    case y.elq.APP_OPENED:
-    case y.elq.ACCEPTING:
-    case y.elq.APP_OPENING:
+    case b.elq.RESOLVED:
+    case b.elq.ACCEPTED:
+    case b.elq.APP_NOT_OPENED:
+    case b.elq.APP_OPENED:
+    case b.elq.ACCEPTING:
+    case b.elq.APP_OPENING:
       return 1;
-    case y.elq.EXPIRED:
-    case y.elq.BANNED:
-    case y.elq.ERROR:
+    case b.elq.EXPIRED:
+    case b.elq.BANNED:
+    case b.elq.ERROR:
       return 2;
-    case y.elq.RESOLVING:
+    case b.elq.RESOLVING:
       return 0;
     default:
-      (0, m.xb)(n)
+      (0, A.xb)(n)
   }
 };
 
-function C(e) {
+function T(e) {
   let {
     invite: t,
     onAcceptInvite: n
   } = e;
-  return (null == t ? true : t.state) === y.elq.BANNED ? (0, r.jsx)(c.N, {
-    text: b.intl.string(b.t["5AkWAd"]),
-    buttonCta: b.intl.string(b.t["8osdkn"]),
+  return (null == t ? true : t.state) === b.elq.BANNED ? (0, r.jsx)(u.N, {
+    text: j.intl.string(j.t["5AkWAd"]),
+    buttonCta: j.intl.string(j.t["8osdkn"]),
     onClick: n
-  }) : (0, r.jsx)(c.N, {
-    text: b.intl.string(b.t["usP+Mb"]),
-    buttonCta: b.intl.string(b.t["8osdkn"]),
+  }) : (0, r.jsx)(u.N, {
+    text: j.intl.string(j.t["usP+Mb"]),
+    buttonCta: j.intl.string(j.t["8osdkn"]),
     onClick: n
   })
 }
 
-function T(e) {
+function R(e) {
   let {
     children: t,
     cardChildren: n,
@@ -128,76 +129,76 @@ function T(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r]);
     return s
-  }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(N(c)), {
+  }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [u, h] = i.useState(C(c)), {
     ref: p,
     height: g
-  } = (0, u.Ay)(), f = (0, a.zhh)({
+  } = (0, d.Ay)(), f = (0, a.zhh)({
     height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(l, "px"),
     config: s.config.stiff
   });
   return i.useEffect(() => {
-    let e = N(c);
-    e !== d && h(e)
-  }, [c, d]), (0, r.jsxs)(s.animated.div, {
-    className: j.qF,
+    let e = C(c);
+    e !== u && h(e)
+  }, [c, u]), (0, r.jsxs)(s.animated.div, {
+    className: O.qF,
     style: f,
     children: [(0, r.jsx)(s.animated.div, {
-      className: j.NS,
+      className: O.NS,
       style: f,
       children: (0, r.jsx)("section", {
         ref: p,
-        className: null == o ? true : o(d),
-        children: t(d)
+        className: null == o ? true : o(u),
+        children: t(u)
       })
     }), n]
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, x.Fk)(t) ? (0, r.jsx)(T, I(O({
+  return null != t && (0, E.Fk)(t) ? (0, r.jsx)(R, S(I({
     startAnimHeightPx: 0,
-    innerStyle: () => j.ui
+    innerStyle: () => O.ui
   }, e), {
-    children: e => null == t ? null : 1 === e ? (0, r.jsx)(v.s, {
+    children: e => null == t ? null : 1 === e ? (0, r.jsx)(y.s, {
       invite: t
     }) : null
   })) : null
 }
 
-function w(e) {
+function P(e) {
   let {
     invite: t
   } = e, n = {
-    1: j._r,
-    2: j.Gm,
-    0: j.Kt
+    1: O._r,
+    2: O.Gm,
+    0: O.Kt
   };
-  return (0, r.jsx)(T, I(O({
+  return (0, r.jsx)(R, S(I({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
     children: n => (n => {
-      if (null == t) return (0, r.jsx)(S, {});
+      if (null == t) return (0, r.jsx)(N, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(E.A, I(O({}, e), {
+          return (0, r.jsx)(v.A, S(I({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(C, I(O({}, e), {
+          return (0, r.jsx)(T, S(I({}, e), {
             invite: t
           }));
         default:
-          return (0, r.jsx)(S, {})
+          return (0, r.jsx)(N, {})
       }
     })(n)
   }))
 }
 
-function P(e) {
+function k(e) {
   let {
     invite: t,
     onAcceptInvite: n
@@ -205,45 +206,50 @@ function P(e) {
     guild: i
   } = null != t ? t : {}, s = {};
   if ((null == i ? true : i.splash) != null) {
-    let e = _.Ay.getGuildSplashURL({
+    let e = m.Ay.getGuildSplashURL({
       id: i.id,
       splash: i.splash
     });
     null != e && (s.backgroundImage = "url(".concat(e, ")"), s.backgroundSize = "cover")
   }
-  return (0, r.jsxs)(d.Ay, {
-    theme: y.NJ8.DARK,
-    className: j.G3,
+  return (0, r.jsxs)(h.Ay, {
+    theme: b.NJ8.DARK,
+    className: O.G3,
     style: s,
-    contentClassName: j.__,
-    children: [(0, r.jsx)(w, I(O({}, e), {
+    contentClassName: O.__,
+    children: [(0, r.jsx)(P, S(I({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(R, O({}, e))]
+    })), (0, r.jsx)(w, I({}, e))]
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     inviteKey: t,
     transitionTo: n
-  } = e, s = (0, l.bG)([g.A], () => g.A.getInvite(t));
+  } = e, s = (0, l.bG)([f.A], () => f.A.getInvite(t));
   return i.useEffect(() => {
-    (0, h.d)("invite_mobile"), f.default.track(y.HAw.INVITE_VIEWED, {
+    let e = g.default.getAnalyticsToken();
+    null != e && o.h.dispatch({
+      type: "SET_ANALYTICS_TOKEN",
+      analyticsToken: e,
+      userId: g.default.getId()
+    }), (0, p.d)("invite_mobile"), _.default.track(b.HAw.INVITE_VIEWED, {
       invite_code: t
     }, {
       flush: true
     })
-  }, []), (0, r.jsx)(P, {
+  }, []), (0, r.jsx)(k, {
     invite: s,
     onAcceptInvite: e => {
       var n, r, i;
-      let l, a, c, u;
-      null == e || e.preventDefault(), f.default.track(y.HAw.INVITE_APP_OPENED, {
-        invite_code: (0, A.m0)(t),
+      let l, a, o, u;
+      null == e || e.preventDefault(), _.default.track(b.HAw.INVITE_APP_OPENED, {
+        invite_code: (0, x.m0)(t),
         guild_id: null == s || null == (n = s.guild) ? true : n.id,
         channel_id: null == s || null == (r = s.channel) ? true : r.id,
         inviter_id: null == s || null == (i = s.inviter) ? true : i.id
-      }), l = null != s && s.state !== y.elq.EXPIRED && s.state !== y.elq.BANNED ? t : true, c = null != (a = p.default.getFingerprint()) ? a : p.default.getId(), u = null != s && (null == s ? true : s.type) != null ? Number(null == s ? true : s.type) : true, o.Ay.openApp(l, true, c, true, u)
+      }), l = null != s && s.state !== b.elq.EXPIRED && s.state !== b.elq.BANNED ? t : true, o = null != (a = g.default.getFingerprint()) ? a : g.default.getId(), u = null != s && (null == s ? true : s.type) != null ? Number(null == s ? true : s.type) : true, c.Ay.openApp(l, true, o, true, u)
     },
     transitionTo: n
   })

@@ -38,8 +38,8 @@ function T(e) {
   } = e, o = i.useRef(null), {
     analyticsLocations: p
   } = (0, d.Ay)(null != a ? a : []), {
-    isHoveringOrFocusing: f
-  } = (0, g.A)(o), [b, E] = i.useState(false), O = i.useCallback(async e => {
+    isHoveringOrFocusing: m
+  } = (0, f.A)(o), [b, E] = i.useState(false), O = i.useCallback(async e => {
     if (e.stopPropagation(), !b) {
       E(true);
       try {
@@ -71,12 +71,12 @@ function T(e) {
         foregroundImageClassName: N.wP,
         backgroundImageClassName: N.GC,
         sku: n
-      }, n.id), (f || b) && (0, r.jsxs)(r.Fragment, {
+      }, n.id), (m || b) && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: N.p0
         }), (0, r.jsx)("div", {
           className: N.R$,
-          children: b ? (0, r.jsx)(m.k, {}) : (0, r.jsx)(s.pa$, {
+          children: b ? (0, r.jsx)(g.k, {}) : (0, r.jsx)(s.pa$, {
             size: "lg",
             color: u.LU0.unsafe_rawColors.WHITE_500
           })
@@ -94,7 +94,7 @@ function j(e) {
     numWishlistItemsToRecommend: s,
     maxWishlistItemsToShow: c = s,
     className: u
-  } = e, d = (0, p.h)(v.XR), h = (0, o.bG)([b.default], () => b.default.getCurrentUser()), g = (0, o.bG)([b.default], () => b.default.getUser(null == t ? true : t.userId)), A = null == t || null != h && null != t && t.userId === h.id, _ = i.useMemo(() => null == t ? null != h ? [h.id] : true : [t.userId], [t, h]), y = (0, O.A)({
+  } = e, d = (0, p.h)(v.XR), h = (0, o.bG)([b.default], () => b.default.getCurrentUser()), f = (0, o.bG)([b.default], () => b.default.getUser(null == t ? true : t.userId)), A = null == t || null != h && null != t && t.userId === h.id, _ = i.useMemo(() => null == t ? null != h ? [h.id] : true : [t.userId], [t, h]), y = (0, O.A)({
     guildId: (0, E.zf)(),
     numWishlistItems: s,
     location: "SocialLayerAddToWishlistGrid",
@@ -107,7 +107,7 @@ function j(e) {
   }, [t]), C = y.recommendations.filter(e => !S.has(e.skuId)).slice(0, c);
   return "success" !== y.state ? (0, r.jsx)("div", {
     className: N.g4,
-    children: (0, r.jsx)(m.k, {})
+    children: (0, r.jsx)(g.k, {})
   }) : 0 === C.length ? null : (0, r.jsx)("ul", {
     className: a()(N.Vg, u),
     children: C.map(e => A ? (0, r.jsx)(T, {
@@ -119,8 +119,8 @@ function j(e) {
       item: e,
       wishlistId: t.id,
       isOwner: false,
-      profileOwner: g,
-      cardSize: f.Y.FLEX,
+      profileOwner: f,
+      cardSize: m.Y.FLEX,
       showOverlayButton: true,
       hideButtonIcon: true,
       isDragging: false

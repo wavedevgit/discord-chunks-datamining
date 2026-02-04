@@ -42,9 +42,9 @@ let u = {
         i = t.body.guilds.map(s.uk),
         a = t.body.total_count;
       if (h) {
-        var g;
+        var f;
         let n = [];
-        null == (g = t.body.categories) || g.slice(0, 8).forEach(e => {
+        null == (f = t.body.categories) || f.slice(0, 8).forEach(e => {
           let {
             id: t,
             count: r

@@ -85,7 +85,7 @@ function C(e, t) {
 
 function N(e) {
   let {
-    placeholder: t = f.intl.string(f.t["Rn/sLl"])
+    placeholder: t = m.intl.string(m.t["Rn/sLl"])
   } = e, n = i.useRef(null), l = i.useRef(null), [s, p] = i.useReducer(C, y), {
     canSend: b,
     hint: E,
@@ -110,7 +110,7 @@ function N(e) {
         }
       }).then(() => p({
         type: "SUCCESS",
-        text: f.intl.format(f.t.Rtl1Ep, {
+        text: m.intl.format(m.t.Rtl1Ep, {
           discordTag: t
         })
       }), e => {
@@ -127,7 +127,7 @@ function N(e) {
       children: [(0, r.jsx)(u.Text, {
         tag: "div",
         variant: "heading-md/normal",
-        children: f.intl.string(f.t["Rn/sLl"])
+        children: m.intl.string(m.t["Rn/sLl"])
       }), (0, r.jsx)("img", {
         src: O,
         alt: "Wumpus Waving"
@@ -149,11 +149,11 @@ function N(e) {
           inputClassName: A.hF,
           onKeyPress: e => {
             let t = e.currentTarget.value;
-            if (e.key !== m.N$.Enter && t.includes("#")) {
+            if (e.key !== g.N$.Enter && t.includes("#")) {
               o()(null != n.current, "Input is handling keypress when not mounted");
               let r = t.indexOf("#"),
                 i = n.current.selectionStart,
-                l = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                l = e.key === g.N$.Backspace || e.key === g.N$.ArrowRight || e.key === g.N$.ArrowLeft,
                 a = e.which >= 48 && e.which <= 57;
               null != i && i > r && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == i || !(i > r) || a || l || e.preventDefault()
             }
@@ -164,7 +164,7 @@ function N(e) {
             });
             let t = "",
               [, n] = e.split("#");
-            null != n && (t = e + g.RoK.slice(null != n ? n.length + 1 : 0)), p({
+            null != n && (t = e + f.RoK.slice(null != n ? n.length + 1 : 0)), p({
               type: "HINT",
               text: t
             })
@@ -187,7 +187,7 @@ function N(e) {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
-          text: f.intl.string(f.t["PMsq/b"]),
+          text: m.intl.string(m.t["PMsq/b"]),
           disabled: !b,
           type: "submit"
         })]

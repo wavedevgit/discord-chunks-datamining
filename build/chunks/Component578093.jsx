@@ -1,4 +1,4 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 578093, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => f
@@ -21,23 +21,23 @@ function f(e) {
     tab: t,
     targetId: n,
     widgetType: f = d.uss.FRIENDS,
-    showTooltip: g = true,
-    shouldStopPropagation: m = true,
-    className: y
-  } = e, [A] = (0, r.bG)([u.A], () => u.A.isFavorite(t, n), [t, n], a.D), v = (0, c.t)({
+    showTooltip: p = true,
+    shouldStopPropagation: I = true,
+    className: m
+  } = e, [E] = (0, r.bG)([u.A], () => u.A.isFavorite(t, n), [t, n], s.D), A = (0, c.t)({
     tab: t,
     targetId: n,
-    shouldStopPropagation: m,
+    shouldStopPropagation: I,
     widgetType: f
-  }), b = A ? l.Gg5 : l.yA2, E = (0, l.rdh)(l.LU0.colors.ICON_FEEDBACK_WARNING), O = (0, l.rdh)(l.LU0.colors.ICON_DEFAULT), x = t === s.x.FRIENDS ? A ? p.intl.string(h.default.Xr8XHk) : p.intl.string(h.default.w1MU8Y) : A ? p.intl.string(h.default.dvUElD) : p.intl.string(h.default.iK1QsY);
-  return (0, i.jsx)(o.S, {
-    tooltipText: x,
-    showTooltip: g,
-    className: y,
-    onClick: v,
-    children: (0, i.jsx)(b, {
+  }), y = E ? i.Gg5 : i.yA2, S = (0, i.rdh)(i.LU0.colors.ICON_FEEDBACK_WARNING), v = (0, i.rdh)(i.LU0.colors.ICON_DEFAULT), O = t === a.x.FRIENDS ? E ? g.intl.string(h.default.Xr8XHk) : g.intl.string(h.default.w1MU8Y) : E ? g.intl.string(h.default.dvUElD) : g.intl.string(h.default.iK1QsY);
+  return (0, l.jsx)(o.S, {
+    tooltipText: O,
+    showTooltip: p,
+    className: m,
+    onClick: A,
+    children: (0, l.jsx)(y, {
       size: "sm",
-      color: A ? E.hex() : O.hex()
+      color: E ? S.hex() : v.hex()
     })
   })
 }

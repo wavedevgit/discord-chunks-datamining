@@ -16,21 +16,21 @@ var Chunk681154 = require("./681154.js"),
 function d(e) {
   let {
     item: t
-  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, h = null == n ? true : n.content_type, g = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, m = (0, s.h)(g), f = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.ContentInventoryEntryType.TOP_GAME, _ = null == m ? true : m.getIconURL(240);
-  return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == m || null == f || null == _ ? null : (0, r.jsx)("div", {
+  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, h = null == n ? true : n.content_type, f = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, g = (0, s.h)(f), m = (0, l.bG)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), A = h === i.ContentInventoryEntryType.TOP_GAME, _ = null == g ? true : g.getIconURL(240);
+  return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == g || null == m || null == _ ? null : (0, r.jsx)("div", {
     className: u.kL,
     children: (0, r.jsxs)("div", {
       className: u.Nr,
       children: [(0, r.jsx)("img", {
         src: _,
-        alt: m.name,
+        alt: g.name,
         className: u.Gt
       }), (0, r.jsxs)("div", {
         className: u.Vx,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: m.name
+          children: g.name
         }), A && (0, r.jsx)("div", {
           className: u.qS,
           children: (0, r.jsx)(a.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86819 **/
+/** Chunk was on 54711 **/
 /** chunk id: 46292, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   PremiumResubscribeModal: () => C
@@ -79,11 +79,11 @@ let C = e => {
     value: r,
     children: (0, n.jsx)(c.PaymentContextProvider, {
       activeSubscription: o,
-      stepConfigs: (0, u.E)(),
+      stepConfigs: (0, p.E)(),
       skuIDs: [],
       breadcrumbs: [d.pn.CONFIRM],
       children: (0, n.jsx)(s.Mq, {
-        children: (0, n.jsx)(p.A, {
+        children: (0, n.jsx)(u.A, {
           isConfirmationStep: O === _.g.SUCCESS,
           isEligibleForWowMoment: !h,
           shouldPrefetchWowMoment: !h,

@@ -20,14 +20,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk34352 = require("./34352.js");
 let _ = function() {
   let e = (0, a.bG)([o.A], () => o.A.hasLoadedExperiments),
-    t = g.A.useField("selectedTab"),
+    t = f.A.useField("selectedTab"),
     n = function(e) {
       switch (e) {
-        case f.GlobalDiscoveryTab.SERVERS:
+        case m.GlobalDiscoveryTab.SERVERS:
           return (0, r.jsx)(u.A, {});
-        case f.GlobalDiscoveryTab.APPS:
+        case m.GlobalDiscoveryTab.APPS:
           return (0, r.jsx)(c.default, {});
-        case f.GlobalDiscoveryTab.QUESTS:
+        case m.GlobalDiscoveryTab.QUESTS:
           return (0, r.jsx)(d.A, {
             topLevelRoute: false
           });
@@ -38,8 +38,8 @@ let _ = function() {
     _ = (0, l.zy)();
   return i.useEffect(() => {
     let e = _.pathname,
-      t = (0, m.j)(e);
-    t !== g.A.getField("selectedTab") && g.A.setState({
+      t = (0, g.j)(e);
+    t !== f.A.getField("selectedTab") && f.A.setState({
       selectedTab: t
     })
   }, [_.pathname]), i.useEffect(() => {
@@ -49,7 +49,7 @@ let _ = function() {
   }, [t, e]), (0, r.jsxs)("section", {
     className: A.k,
     children: [(0, r.jsx)(s.HI, {
-      location: (0, m.t)(t)
+      location: (0, g.t)(t)
     }), (0, r.jsx)("div", {
       className: A.T
     }), n]

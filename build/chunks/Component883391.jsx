@@ -41,9 +41,9 @@ class N extends Chunk64700.PureComponent {
       approximateMemberCount: e,
       approximatePresenceCount: t
     } = this.props.guild;
-    return null == e || null == t ? null : (0, r.jsxs)(m.A, {
+    return null == e || null == t ? null : (0, r.jsxs)(g.A, {
       className: S.Fj,
-      align: m.A.Align.CENTER,
+      align: g.A.Align.CENTER,
       children: [(0, r.jsx)("div", {
         className: S.JX
       }), (0, r.jsx)("span", {
@@ -77,8 +77,8 @@ class N extends Chunk64700.PureComponent {
       h = this.handleJoinOrView,
       A = c.$n.Looks.FILLED,
       _ = c.$n.Colors.PRIMARY;
-    return l ? n ? (A = c.$n.Looks.OUTLINED, _ = S.yh, p = (0, r.jsxs)(m.A, {
-      align: m.A.Align.CENTER,
+    return l ? n ? (A = c.$n.Looks.OUTLINED, _ = S.yh, p = (0, r.jsxs)(g.A, {
+      align: g.A.Align.CENTER,
       children: [(0, r.jsx)("div", {
         children: v.intl.string(v.t.cEnaWx)
       }), (0, r.jsx)(u.A9s, {
@@ -88,16 +88,16 @@ class N extends Chunk64700.PureComponent {
       })]
     })) : i && t && (p = v.intl.string(v.t.XpeFYr)) : (p = v.intl.string(v.t.dKhVQN), h = this.handleLogin), (0, r.jsxs)("div", {
       className: a()(s, o === y.q.SMALL ? S.T8 : S.vm),
-      children: [(0, r.jsx)(g.A, {
+      children: [(0, r.jsx)(f.A, {
         children: v.intl.string(v.t.s1KcLo)
       }), (0, r.jsxs)("div", {
         className: S.Qs,
         children: [(0, r.jsxs)("div", {
           className: S.pq,
-          children: [(0, r.jsx)(f.A, {
+          children: [(0, r.jsx)(m.A, {
             guild: d,
             active: true,
-            size: f.A.Sizes.LARGE,
+            size: m.A.Sizes.LARGE,
             className: S.$f
           }), (0, r.jsxs)("div", {
             className: S.aV,

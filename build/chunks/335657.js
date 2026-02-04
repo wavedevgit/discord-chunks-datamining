@@ -17,9 +17,9 @@ function p(e, t, n) {
   let p = arguments.length > 3 && true !== arguments[3] && arguments[3],
     h = (0, l.bG)([a.A], () => a.A.hasLoadedExperiments);
   (0, u.n)("useMaybeFetchCollectiblesShopHome");
-  let g = i.g.VARIANTS_GROUP,
-    m = (0, l.bG)([o.A], () => o.A.skipNumCategories),
-    [f, A, _, b, E, O, y, I] = (0, l.yK)([c.A], () => {
+  let f = i.g.VARIANTS_GROUP,
+    g = (0, l.bG)([o.A], () => o.A.skipNumCategories),
+    [m, A, _, b, E, O, y, I] = (0, l.yK)([c.A], () => {
       var t, n;
       return [c.A.getShopBlocks(e), null != (t = c.A.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.A.getLastErrorTimestamp(e)) ? n : 0, c.A.getLastFetchOptions(e), c.A.getFetchShopHomeError(e), c.A.getIsFetchingShopHome(e), c.A.getHasKnownStaleData(e), c.A.getShopHomeConfigOverride()]
     }),
@@ -43,10 +43,10 @@ function p(e, t, n) {
         }
         return e
       }({}, t), n = n = {
-        variantsReturnStyle: g,
+        variantsReturnStyle: f,
         includeDynamicBlocks: true,
         shopHomeConfig: I,
-        skipNumCategories: m
+        skipNumCategories: g
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -57,9 +57,9 @@ function p(e, t, n) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
-    }, [t, I, m, g]),
+    }, [t, I, g, f]),
     S = (0, r.useMemo)(() => !(0, s.gn)(b, v), [b, v]),
-    C = (0, d.n)(f, null != O && O, p),
+    C = (0, d.n)(m, null != O && O, p),
     N = (0, r.useMemo)(() => !C && Date.now() - A < 6e5, [A, C]);
   return (0, r.useEffect)(() => {
     if (!h || O) return;
@@ -68,7 +68,7 @@ function p(e, t, n) {
   }, [h, O, E, _, N, y, S, v, e, n]), {
     isFetchingShopHome: O,
     fetchShopHomeError: E,
-    shopBlocks: f,
+    shopBlocks: m,
     refreshShopHome: (0, r.useCallback)(() => {
       (0, s.h$)(e, v, n)
     }, [e, v, n])

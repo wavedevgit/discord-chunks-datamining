@@ -1,4 +1,4 @@
-/** Chunk was on 71447 **/
+/** Chunk was on 7685 **/
 /** chunk id: 102983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -17,75 +17,75 @@ let d = Chunk64700.memo(function(e) {
     user: n,
     mentionCount: d = 0,
     isMentionLowImportance: h,
-    size: p = l._3J.SIZE_32,
+    size: g = i._3J.SIZE_32,
     status: f,
-    isMobile: g,
-    isTyping: m = false,
-    "aria-hidden": y = false
-  } = e, A = (0, l.FT9)(p), v = r.useMemo(() => {
-    if ((null == t ? true : t.isDM()) && null != n) return (0, i.jsx)(l.euF, {
-      src: n.getAvatarURL(null == t ? true : t.getGuildId(), (0, l.FT9)(p), false),
-      size: p,
-      "aria-hidden": y,
-      "aria-label": y ? true : n.username,
+    isMobile: p,
+    isTyping: I = false,
+    "aria-hidden": m = false
+  } = e, E = (0, i.FT9)(g), A = r.useMemo(() => {
+    if ((null == t ? true : t.isDM()) && null != n) return (0, l.jsx)(i.euF, {
+      src: n.getAvatarURL(null == t ? true : t.getGuildId(), (0, i.FT9)(g), false),
+      size: g,
+      "aria-hidden": m,
+      "aria-label": m ? true : n.username,
       status: f,
-      isMobile: !(d > 0) && g,
-      isTyping: m
+      isMobile: !(d > 0) && p,
+      isTyping: I
     });
     if (null == t ? true : t.isMultiUserDM()) {
       var e;
-      return (null == t ? true : t.recipients.length) >= 2 && null == t.icon ? (0, i.jsx)(s.A, {
-        "aria-hidden": y,
+      return (null == t ? true : t.recipients.length) >= 2 && null == t.icon ? (0, l.jsx)(a.A, {
+        "aria-hidden": m,
         recipients: t.recipients,
         size: function(e) {
           switch (e) {
-            case l._3J.SIZE_16:
-            case l._3J.SIZE_20:
-            case l._3J.SIZE_24:
-            case l._3J.SIZE_32:
+            case i._3J.SIZE_16:
+            case i._3J.SIZE_20:
+            case i._3J.SIZE_24:
+            case i._3J.SIZE_32:
               return e;
-            case l._3J.SIZE_40:
-            case l._3J.SIZE_48:
-              return l._3J.SIZE_40;
-            case l._3J.SIZE_56:
-            case l._3J.SIZE_80:
-            case l._3J.SIZE_96:
-            case l._3J.SIZE_120:
+            case i._3J.SIZE_40:
+            case i._3J.SIZE_48:
+              return i._3J.SIZE_40;
+            case i._3J.SIZE_56:
+            case i._3J.SIZE_80:
+            case i._3J.SIZE_96:
+            case i._3J.SIZE_120:
               return e;
             default:
-              return l._3J.SIZE_32
+              return i._3J.SIZE_32
           }
-        }(p),
-        isTyping: m,
-        status: m ? u.clD.ONLINE : null
-      }) : (0, i.jsx)(l.euF, {
-        src: null != (e = (0, a.Y)(t)) ? e : true,
-        "aria-hidden": y,
-        size: p,
-        status: m ? u.clD.ONLINE : null,
-        isTyping: m
+        }(g),
+        isTyping: I,
+        status: I ? u.clD.ONLINE : null
+      }) : (0, l.jsx)(i.euF, {
+        src: null != (e = (0, s.Y)(t)) ? e : true,
+        "aria-hidden": m,
+        size: g,
+        status: I ? u.clD.ONLINE : null,
+        isTyping: I
       })
     }
-    return (0, i.jsx)(l.euF, {
+    return (0, l.jsx)(i.euF, {
       src: true,
-      "aria-hidden": y,
-      size: p
+      "aria-hidden": m,
+      size: g
     })
-  }, [y, t, g, m, d, p, f, n]);
-  return d <= 0 ? v : (0, i.jsx)(o.i, {
-    size: A,
+  }, [m, t, p, I, d, g, f, n]);
+  return d <= 0 ? A : (0, l.jsx)(o.i, {
+    size: E,
     rounded: null == t || !t.isMultiUserDM(),
-    lowerBadge: (0, i.jsx)(l.hVq, {
+    lowerBadge: (0, l.jsx)(i.hVq, {
       count: d,
-      color: h ? l.LU0.colors.BACKGROUND_ACCENT.css : l.LU0.colors.STATUS_DANGER.css,
+      color: h ? i.LU0.colors.BACKGROUND_ACCENT.css : i.LU0.colors.STATUS_DANGER.css,
       "aria-hidden": true
     }),
     lowerBadgeSize: {
-      width: (0, l.o6S)(d)
+      width: (0, i.o6S)(d)
     },
-    children: (0, i.jsx)("div", {
+    children: (0, l.jsx)("div", {
       className: c.R,
-      children: v
+      children: A
     })
   })
 })

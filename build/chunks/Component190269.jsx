@@ -1,4 +1,4 @@
-/** Chunk was on 86819 **/
+/** Chunk was on 54711 **/
 /** chunk id: 190269, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   B: () => S
@@ -26,7 +26,7 @@ function g(e) {
     variant: "text-md/normal",
     children: _.intl.string(_.t.FCsTCk)
   });
-  return (0, n.jsx)(p.A, {
+  return (0, n.jsx)(u.A, {
     type: d.Ay.Types.PREMIUM_ACTIVATED,
     text: r,
     buttonText: _.intl.string(_.t.TkTvBz),
@@ -39,7 +39,7 @@ function f(e) {
   let {
     onClose: t
   } = e;
-  return (0, n.jsx)(u.Ay, {
+  return (0, n.jsx)(p.Ay, {
     planId: b.gD.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
@@ -49,7 +49,7 @@ let S = e => {
     transitionState: t,
     onClose: r,
     premiumType: d
-  } = e, p = d === b.PremiumTypes.TIER_0, u = a.useCallback(() => {
+  } = e, u = d === b.PremiumTypes.TIER_0, p = a.useCallback(() => {
     l._.dispatch(m.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), s.A.isDisplayingWowMomentConfirmation && s.A.isAnimated ? setTimeout(() => {
       r()
     }, i.K) : r()
@@ -60,12 +60,12 @@ let S = e => {
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
     children: [(0, n.jsx)(c.A, {
-      onClose: u,
+      onClose: p,
       upgradeToPremiumType: d
     }), (0, n.jsx)(o.$mQ, {
       "data-migration-pending": true,
-      children: (0, n.jsx)(p ? f : g, {
-        onClose: u
+      children: (0, n.jsx)(u ? f : g, {
+        onClose: p
       })
     })]
   })

@@ -135,7 +135,7 @@ function w(e) {
       r = ea.current;
     return es.current && (Z(n += t), eo.current || $(r += t)), Q(e), [n, r]
   }
-  return (0, g.A)({
+  return (0, f.A)({
     type: s.ImpressionTypes.MODAL,
     name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
@@ -246,13 +246,13 @@ function w(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === w.type ? (0, r.jsx)(m.rr, {
+        }) : "embed" === w.type ? (0, r.jsx)(g.rr, {
           className: a()(C.Ki, L),
           allowFullScreen: false,
           href: w.href,
           thumbnail: w.thumbnail,
           video: w.embed,
-          provider: f.mt.YOUTUBE,
+          provider: m.mt.YOUTUBE,
           maxWidth: w.embed.width,
           maxHeight: w.embed.height,
           renderVideoComponent: E.$o,

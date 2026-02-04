@@ -30,7 +30,7 @@ let _ = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
   } = (0, u.Ay)(c.A.HOME_PAGE_PREMIUM_TAB);
   return t ? (0, r.jsxs)("div", {
     className: A.ql,
-    children: [null == n && (0, r.jsx)(g.A, {}), (0, r.jsx)(u.f5, {
+    children: [null == n && (0, r.jsx)(f.A, {}), (0, r.jsx)(u.f5, {
       value: l,
       children: null == n ? (0, r.jsx)(d.A, {
         align: d.A.Align.CENTER,
@@ -39,10 +39,10 @@ let _ = Chunk311907.Ay.connectStores([Chunk287809.default], () => ({
           className: A.u1
         })
       }) : (0, r.jsx)(p.A, {
-        entrypoint: f.Mf.ApplicationStoreHome
+        entrypoint: m.Mf.ApplicationStoreHome
       })
     })]
   }) : (0, r.jsx)(i.rd, {
-    to: m.BVt.LOGIN
+    to: g.BVt.LOGIN
   })
 })))

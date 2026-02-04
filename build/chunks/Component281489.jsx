@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 281489, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -74,7 +74,7 @@ let h = e => {
       })
     })
   },
-  g = e => {
+  f = e => {
     let {
       partySize: t,
       members: n,
@@ -87,22 +87,22 @@ let h = e => {
       knownSize: u
     } = t;
     if (c < i) return null;
-    let g = a()(n).filter(d.Vq).take(l).map(e => (0, r.jsx)(h, {
+    let f = a()(n).filter(d.Vq).take(l).map(e => (0, r.jsx)(h, {
       member: e,
       guildId: s
     }, e.id)).value();
-    for (let e = 0; e < o && g.length < l; e++) g.push((0, r.jsx)(h, {
+    for (let e = 0; e < o && f.length < l; e++) f.push((0, r.jsx)(h, {
       guildId: s
     }, "unknown-member-".concat(e)));
-    let m = c - u - o;
-    for (let e = 0; e < m && g.length < l; e++) g.push((0, r.jsx)(h, {
+    let g = c - u - o;
+    for (let e = 0; e < g && f.length < l; e++) f.push((0, r.jsx)(h, {
       empty: true,
       guildId: s
     }, "empty-member-".concat(e)));
-    let f = Math.max(Math.min(c - g.length, 99), 0);
-    if (1 === f) {
+    let m = Math.max(Math.min(c - f.length, 99), 0);
+    if (1 === m) {
       let e = n[l];
-      g.push((0, r.jsx)(h, {
+      f.push((0, r.jsx)(h, {
         member: e,
         guildId: s
       }, e.id))
@@ -111,9 +111,9 @@ let h = e => {
       className: p.iE,
       children: (0, r.jsxs)("div", {
         className: p.S3,
-        children: [g, f > 1 ? (0, r.jsxs)("div", {
+        children: [f, m > 1 ? (0, r.jsxs)("div", {
           className: p.Hi,
-          children: ["+", f]
+          children: ["+", m]
         }) : null]
       })
     })

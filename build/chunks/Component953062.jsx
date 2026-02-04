@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 953062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -14,14 +14,14 @@ var Chunk627968 = require("./627968.js"),
   Chunk49999 = require("./49999.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk318012 = require("./318012.js");
-let g = e => {
+let f = e => {
   let {
     isSelected: t,
     discountOffer: n
-  } = e, [l, g] = (0, c.kn)([s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], true, true);
+  } = e, [l, f] = (0, c.kn)([s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], true, true);
   return (i.useEffect(() => {
-    t && l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && g(d.i.TAKE_ACTION)
-  }, [t, g, l]), l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u.MA, {
+    t && l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && f(d.i.TAKE_ACTION)
+  }, [t, f, l]), l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u.MA, {
     badgeCopy: p.intl.format(p.t.AYcXGW, {
       discountOfferAmount: n.discount.amount
     }).toString(),

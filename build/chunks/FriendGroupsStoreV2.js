@@ -1,16 +1,16 @@
-/** Chunk was on 57010 **/
+/** Chunk was on 7685 **/
 /** chunk id: 870391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => A
+  A: () => I
 }), require("./321073.js"), require("./896048.js");
-var r, Chunk311907 = require("./311907.js"),
+var l, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk21119 = require("./21119.js"),
   Chunk153488 = require("./153488.js"),
   Chunk994500 = require("./994500.js"),
   Chunk287809 = require("./287809.js");
 
-function d(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,14 +19,14 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
+    }))), l.forEach(function(t) {
+      c(e, t, n[t])
     })
   }
   return e
@@ -36,62 +36,62 @@ function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [],
-  g = false;
-class I extends(r = Chunk311907.Ay.PersistedStore) {
+let g = [],
+  f = false;
+class p extends(l = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(a.A, u.A, s.A, o.default), null != e) {
+    if (this.waitFor(a.A, o.A, s.A, u.default), null != e) {
       var t, n;
-      f = null != (t = e.groups) ? t : [], g = null != (n = e.isInitialized) && n
+      g = null != (t = e.groups) ? t : [], f = null != (n = e.isInitialized) && n
     }
   }
   getGroups() {
-    return f
+    return g
   }
   getGroup(e) {
     var t;
-    return null != (t = f.find(t => t.id === e)) ? t : null
+    return null != (t = g.find(t => t.id === e)) ? t : null
   }
   getGroupIds() {
-    return f.map(e => e.id)
+    return g.map(e => e.id)
   }
   getUserGroups(e) {
-    return f.filter(t => t.userIds.includes(e))
+    return g.filter(t => t.userIds.includes(e))
   }
   isGroupEmpty(e) {
     let t = this.getGroup(e);
     return null == t || 0 === t.userIds.length
   }
   isInitialized() {
-    return g
+    return f
   }
   getState() {
     return {
-      groups: f,
-      isInitialized: g
+      groups: g,
+      isInitialized: f
     }
   }
 }
-d(I, "displayName", "FriendGroupsStore"), d(I, "persistKey", "FriendGroupsStoreV2");
-let A = new I(Chunk73153.h, {
+c(p, "displayName", "FriendGroupsStore"), c(p, "persistKey", "FriendGroupsStoreV2");
+let I = new p(Chunk73153.h, {
   POST_CONNECTION_OPEN: function() {
-    if (g || f.length > 0) returnfalse;
-    f = [], g = true
+    if (f || g.length > 0) returnfalse;
+    g = [], f = true
   },
   CREATE_FRIEND_GROUP: function(e) {
     let {
       groupId: t,
       name: n
     } = e;
-    return !f.some(e => e.id === t) && (f.push({
+    return !g.some(e => e.id === t) && (g.push({
       id: t,
       name: n,
       userIds: []
@@ -101,50 +101,50 @@ let A = new I(Chunk73153.h, {
     let {
       groupId: t,
       name: n
-    } = e, r = f.findIndex(e => e.id === t);
-    return false !== r && (f[r] = h(c({}, f[r]), {
+    } = e, l = g.findIndex(e => e.id === t);
+    return false !== l && (g[l] = h(d({}, g[l]), {
       name: n
     }), true)
   },
   DELETE_FRIEND_GROUP: function(e) {
     let {
       groupId: t
-    } = e, n = f.length;
-    return (f = f.filter(e => e.id !== t)).length !== n
+    } = e, n = g.length;
+    return (g = g.filter(e => e.id !== t)).length !== n
   },
   REORDER_FRIEND_GROUPS: function(e) {
     let {
       groupIds: t
-    } = e, n = [], r = new Map(f.map(e => [e.id, e]));
+    } = e, n = [], l = new Map(g.map(e => [e.id, e]));
     for (let e of t) {
-      let t = r.get(e);
+      let t = l.get(e);
       null != t && n.push(t)
     }
-    return n.length === f.length && (f = n, true)
+    return n.length === g.length && (g = n, true)
   },
   ADD_USERS_TO_GROUP: function(e) {
     let {
       groupId: t,
       userIds: n
-    } = e, r = f.findIndex(e => e.id === t);
-    if (false === r) returnfalse;
-    let i = f[r],
-      l = new Set(i.userIds),
-      s = n.filter(e => !l.has(e));
-    return 0 !== s.length && (f[r] = h(c({}, i), {
-      userIds: [...i.userIds, ...s]
+    } = e, l = g.findIndex(e => e.id === t);
+    if (false === l) returnfalse;
+    let r = g[l],
+      i = new Set(r.userIds),
+      s = n.filter(e => !i.has(e));
+    return 0 !== s.length && (g[l] = h(d({}, r), {
+      userIds: [...r.userIds, ...s]
     }), true)
   },
   REMOVE_USERS_FROM_GROUP: function(e) {
     let {
       groupId: t,
       userIds: n
-    } = e, r = f.findIndex(e => e.id === t);
-    if (false === r) returnfalse;
-    let i = f[r],
-      l = new Set(n),
-      s = i.userIds.filter(e => !l.has(e));
-    return s.length !== i.userIds.length && (f[r] = h(c({}, i), {
+    } = e, l = g.findIndex(e => e.id === t);
+    if (false === l) returnfalse;
+    let r = g[l],
+      i = new Set(n),
+      s = r.userIds.filter(e => !i.has(e));
+    return s.length !== r.userIds.length && (g[l] = h(d({}, r), {
       userIds: s
     }), true)
   }

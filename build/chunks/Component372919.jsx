@@ -46,7 +46,7 @@ async function G(e, t, n, r) {
   if (null == l || null == l.secrets || !(0, P.px)(r, l.party, l.secrets)) throw new x.A({
     errorCode: k.Lw6.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, f.A)(l, v.A);
+  let a = (0, m.A)(l, v.A);
   if (a) {
     let {
       lock: t
@@ -183,7 +183,7 @@ let V = {
         channel: l,
         guild: a,
         frame: o
-      } = (0, R.W)(), u = (0, m.Ay)({
+      } = (0, R.W)(), u = (0, g.Ay)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? E.A.getWindow(u) : true;
@@ -281,7 +281,7 @@ let V = {
             l()
           }), n.document.body.addEventListener("focus", l, true), n.document.body.appendChild(i), i.click()
         }(async n => {
-          let l = await (0, g.CS)(r, i, n);
+          let l = await (0, f.CS)(r, i, n);
           (0, C.Vq)(l) && (0, C.Vq)(l.url) && !(l instanceof p.A) ? e({
             image_url: l.url
           }): t(l)
@@ -353,8 +353,8 @@ let V = {
       if (!(0, l.Lt)(null != (t = r.application.flags) ? t : 0, k.gfo.EMBEDDED)) throw new x.A({
         errorCode: k.Lw6.INVALID_COMMAND
       }, "This application cannot access this API");
-      let g = (0, L.A)();
-      if (null == g && c) throw new x.A({
+      let f = (0, L.A)();
+      if (null == f && c) throw new x.A({
         errorCode: k.Lw6.INVALID_COMMAND
       }, "No channel found");
       if (null !== a || null !== o || null !== u) {
@@ -381,7 +381,7 @@ let V = {
           l = s.SYi;
         (E.A.getWindowOpen(k.MLl.ACTIVITY_POPOUT) || r.context === k.BRT.POPOUT) && (l = s.KX8), (0, _.m)({
           applicationId: h,
-          channel: g,
+          channel: f,
           command: {
             name: i,
             options: d

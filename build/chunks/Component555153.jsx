@@ -15,10 +15,10 @@ var Chunk627968 = require("./627968.js"),
 function d(e) {
   let {
     locked: t
-  } = e, [n, d] = (0, s.kn)(t ? [] : [l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], true, true);
+  } = e, [n, d] = (0, o.kn)(t ? [] : [l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], true, true);
   return (r.useEffect(() => {
     if (!t && n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) return () => {
-      n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(o.i.AUTO_DISMISS)
+      n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(s.i.AUTO_DISMISS)
     }
   }, [t, d, n]), t || n !== l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) ? null : (0, i.jsx)("div", {
     className: c.A,

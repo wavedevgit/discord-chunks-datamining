@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 673310, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk277716 = require("./277716.js");
 
-function g(e) {
+function f(e) {
   let {
     item: t
   } = e, n = i.useCallback(e => {
