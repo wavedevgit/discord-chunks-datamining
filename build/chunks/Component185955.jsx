@@ -74,12 +74,12 @@ let E = (0, Chunk915089.Ld)(),
         textColor: "interactive-text-default",
         textVariant: "text-sm/semibold"
       })
-    }, [O]), j = i.useCallback(e => {
+    }, [O]), y = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: T(t)
       })
-    }, [T]), y = i.useCallback(e => {
+    }, [T]), j = i.useCallback(e => {
       null == o || o(e)
     }, [o]), v = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
       null == o || o(null)
@@ -97,10 +97,10 @@ let E = (0, Chunk915089.Ld)(),
         optionClassName: h.S0,
         isSelected: v,
         options: S,
-        select: y,
+        select: j,
         renderLeading: I,
         renderTrailing: N,
-        renderOptionValue: j,
+        renderOptionValue: y,
         serialize: P,
         clear: R,
         clearable: null != C,

@@ -32,7 +32,7 @@ function I(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, I = (0, A.q9)(), N = (0, m.K)(), j = g.$s.useSetting().includes(n), y = (0, o.uM)(), v = g.YX.useSetting(), P = g.Zr.useSetting().includes(n), R = i.useCallback(e => {
+  } = e, I = (0, A.q9)(), N = (0, m.K)(), y = g.$s.useSetting().includes(n), j = (0, o.uM)(), v = g.YX.useSetting(), P = g.Zr.useSetting().includes(n), R = i.useCallback(e => {
     let r = (0, _.xo)();
     e ? r.delete(n) : r.add(n), g.Zr.updateSetting(Array.from(r)), d.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: E.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -73,16 +73,16 @@ function I(e) {
       title: S.intl.string(S.t["3o2ojh"]),
       value: !N && !v,
       onChange: e => L(e, false),
-      disabled: N || y,
-      tooltipText: y ? S.intl.string(T.default["6Af/cw"]) : true,
+      disabled: N || j,
+      tooltipText: j ? S.intl.string(T.default["6Af/cw"]) : true,
       note: S.intl.format(S.t.wkm9a3, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(b.Ay, {
       title: S.intl.string(S.t["3o2ojh"]),
-      value: !j && !P,
+      value: !y && !P,
       onChange: e => L(e, true),
-      disabled: j,
+      disabled: y,
       note: I ? S.intl.format(S.t.WpnWLc, {
         helpdeskArticle: u.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
       }) : S.intl.format(S.t.wkm9a3, {

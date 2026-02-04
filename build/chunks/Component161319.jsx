@@ -31,7 +31,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk870378 = require("./870378.js"),
   Chunk8496 = require("./8496.js");
 
-function j(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function j(e) {
   }
   return e
 }
-let y = {
+let j = {
     [Chunk852218.KS]: {
       title: Chunk985018.t.sfGgOG,
       body: Chunk985018.t.igiSKe,
@@ -112,7 +112,7 @@ let y = {
       })
     })
   },
-  P = () => Object.entries(y).map(e => {
+  P = () => Object.entries(j).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
       className: T.lA,
@@ -161,7 +161,7 @@ let y = {
     i.useEffect(() => {
       f([d.sort((e, t) => t.startDate > e.startDate ? 1 : false)[0]])
     }, [d]);
-    let E = (t = d[0].partnerId, n = (0, s.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (c = y[t]) ? null : n ? c.logos.dark : c.logos.light),
+    let E = (t = d[0].partnerId, n = (0, s.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (c = j[t]) ? null : n ? c.logos.dark : c.logos.light),
       O = (0, r.jsx)(a._V3, {
         src: d[0].asset,
         className: T.Ys,
@@ -211,7 +211,7 @@ let y = {
                     analyticsLocations: []
                   }).then(n => {
                     var r, i;
-                    f([...A.slice(0, t), (r = j({}, e), i = i = {
+                    f([...A.slice(0, t), (r = y({}, e), i = i = {
                       code: n.code
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                       var n = Object.keys(e);
@@ -306,13 +306,13 @@ let y = {
             let {
               promotion: n
             } = e, r = L(n);
-            return null == r ? null : null != (t = y[r]) ? t : null
+            return null == r ? null : null != (t = j[r]) ? t : null
           })({
             promotion: e
           });
         if (null == i || null == l) return;
         i in r || (r[i] = []);
-        let s = j({
+        let s = y({
           id: e.id,
           partnerId: i,
           startDate: e.startDate,
@@ -388,6 +388,6 @@ let y = {
       let {
         Recurring3PModal: e
       } = await Promise.resolve().then(n.bind(n, 161319));
-      return t => (0, r.jsx)(e, j({}, t))
+      return t => (0, r.jsx)(e, y({}, t))
     })
   }

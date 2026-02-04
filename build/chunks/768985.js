@@ -34,7 +34,7 @@ function E(e) {
   })), S = (0, m.k)(), {
     selectedTab: T,
     handleTabChange: I
-  } = (0, p.A)(), N = d.default.getCurrentUser(), j = null != E, y = x && null != N && !j;
+  } = (0, p.A)(), N = d.default.getCurrentUser(), y = null != E, j = x && null != N && !y;
   (0, s.Ay)(() => {
     (0, c.d)("family-center"), null != n && n()
   });
@@ -48,7 +48,7 @@ function E(e) {
   return r.useEffect(() => {
     P.current = v
   }), r.useEffect(() => {
-    if (x && j) {
+    if (x && y) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
@@ -65,12 +65,12 @@ function E(e) {
         name: i.K.FAMILY_CENTER_VIEW
       })
     }
-  }, [x, j, t]), r.useEffect(() => {
-    y && (0, a.yO)(h.w_.FAMILY_CENTER)
-  }, [y]), {
+  }, [x, y, t]), r.useEffect(() => {
+    j && (0, a.yO)(h.w_.FAMILY_CENTER)
+  }, [j]), {
     isLoading: C,
     selectedTab: T,
     handleTabChange: I,
-    showAgeGateModal: y
+    showAgeGateModal: j
   }
 }

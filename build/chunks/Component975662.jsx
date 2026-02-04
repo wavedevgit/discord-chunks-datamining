@@ -94,14 +94,14 @@ let eA = () => {
       section: w.nc_.APPEARANCE,
       scrollPosition: e ? true : G.kq.CUSTOM_APP_ICONS
     })
-  }, ej = l.useCallback(() => {
+  }, ey = l.useCallback(() => {
     (0, E.openUserSettings)(b.X.PROFILE_PANEL, {
       section: w.nc_.PROFILE_CUSTOMIZATION,
       analyticsLocations: e
     }, () => (0, g.L)({
       analyticsLocations: e
     }))
-  }, [e]), ey = new Date, ev = new Date(ey.getFullYear(), ey.getMonth() + 1, 0).getDate(), eP = ey.getDate() / ev * 100, eR = {
+  }, [e]), ej = new Date, ev = new Date(ej.getFullYear(), ej.getMonth() + 1, 0).getDate(), eP = ej.getDate() / ev * 100, eR = {
     clientThemes: {
       name: "clientThemes",
       title: U.intl.string(U.t.kWM48G),
@@ -396,7 +396,7 @@ let eA = () => {
       title: U.intl.string(B.default.ABtBDQ),
       subtitle: U.intl.string(B.default.jhmU5E),
       descriptionCta: U.intl.string(U.t.jVcuVY),
-      onCtaClick: ej,
+      onCtaClick: ey,
       dismissibleContentType: a.M.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,
       perkImage: ed.A,
       pillText: U.intl.string(U.t.y2b7CA).toLocaleUpperCase()
@@ -405,16 +405,16 @@ let eA = () => {
       name: "recurring3PPromotions",
       title: U.intl.string(U.t.m7PucM),
       subtitle: (null == ef ? true : ef.isFractionalPremiumWithNoStandardSub()) ? U.intl.string(U.t.E1ONHQ) : U.intl.format(U.t["43kZKL"], {
-        days: ev - ey.getDate()
+        days: ev - ej.getDate()
       }),
-      onCtaClick: () => (0, j.uE)({
+      onCtaClick: () => (0, y.uE)({
         analyticsLocations: e
       }),
       pillText: U.intl.string(U.t.oW0eUd).toLocaleUpperCase(),
       description: U.intl.format(U.t.zh1X7u, {}),
       descriptionCta: U.intl.string(U.t.w7s5Qr),
       cardVariant: R.PJ.RECURRING_3P_PROMOTIONS,
-      customContent: (0, i.jsx)(y.U, {
+      customContent: (0, i.jsx)(j.U, {
         percentage: eP,
         isFNUserWithNoStandardSub: !!(null == ef ? true : ef.isFractionalPremiumWithNoStandardSub())
       })

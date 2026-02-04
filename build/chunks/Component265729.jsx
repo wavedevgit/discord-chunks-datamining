@@ -200,7 +200,7 @@ let M = function(e) {
             className: L.Qw,
             children: D.intl.format(D.t.G4fwxK, {
               onClick: () => {
-                (0, y.default)(), (0, x.pX)(P.BVt.APPLICATION_STORE)
+                (0, j.default)(), (0, x.pX)(P.BVt.APPLICATION_STORE)
               }
             })
           }), (0, r.jsx)(E.A, {
@@ -241,19 +241,19 @@ let M = function(e) {
               code: U[e.id],
               addClaimedOutboundPromotionCode: k,
               disabled: !p
-            }, e.id)), null != n ? (0, r.jsx)(j.A, {
+            }, e.id)), null != n ? (0, r.jsx)(y.A, {
               className: L.uI,
               skuId: n.skuId,
               subscriptionPlanId: n.subscriptionPlanId,
               entitlements: [n],
               giftCodeBatchId: R.FB
-            }, (0, T.Kx)(n.skuId, n.subscriptionPlanId)) : null, l.length > 0 ? (0, r.jsx)(j.A, {
+            }, (0, T.Kx)(n.skuId, n.subscriptionPlanId)) : null, l.length > 0 ? (0, r.jsx)(y.A, {
               className: L.uI,
               skuId: l[0].skuId,
               subscriptionPlanId: l[0].subscriptionPlanId,
               entitlements: l,
               giftCodeBatchId: R.Bu
-            }, (0, T.Kx)(l[0].skuId, l[0].subscriptionPlanId)) : null, c.length > 0 ? (0, r.jsx)(j.A, {
+            }, (0, T.Kx)(l[0].skuId, l[0].subscriptionPlanId)) : null, c.length > 0 ? (0, r.jsx)(y.A, {
               className: L.uI,
               skuId: c[0].skuId,
               subscriptionPlanId: c[0].subscriptionPlanId,
@@ -295,7 +295,7 @@ let M = function(e) {
             subscriptionPlanId: n,
             giftStyle: i
           } = (0, T.X6)(e);
-          return (0, r.jsx)(j.A, {
+          return (0, r.jsx)(y.A, {
             className: L.uI,
             skuId: t,
             subscriptionPlanId: n,

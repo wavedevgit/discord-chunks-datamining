@@ -490,9 +490,9 @@ function ea() {
       return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
     n = (0, v.Ay)(t.id),
-    i = (0, y.A)(n),
+    i = (0, j.A)(n),
     l = B.jP.useSetting(),
-    s = (0, c.bG)([j.A], () => j.A.getErrors()),
+    s = (0, c.bG)([y.A], () => y.A.getErrors()),
     a = null == s || null == (e = s.avatar) ? true : e[0],
     {
       avatarSrc: d,

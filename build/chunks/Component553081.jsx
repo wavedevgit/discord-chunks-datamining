@@ -107,7 +107,7 @@ let H = e => {
             variant: v.cJ.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
-            showAllPerksButton: (0, r.jsx)(y.A, {
+            showAllPerksButton: (0, r.jsx)(j.A, {
               setIsAllPerksVisible: $,
               previousComponent: v.A2.HOME
             })
@@ -145,7 +145,7 @@ let H = e => {
         churnDiscountOffer: q,
         discountedPrice: er
       })]
-    }), (0, r.jsx)(j.A, {
+    }), (0, r.jsx)(y.A, {
       isAllPerksVisible: Q,
       setIsAllPerksVisible: $,
       previousComponent: v.A2.HOME,

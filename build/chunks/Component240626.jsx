@@ -29,7 +29,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk652804 = require("./652804.js");
 
-function j(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function j(e) {
   return e
 }
 
-function y(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -102,7 +102,7 @@ function v(e) {
         "aria-label": A.toString(),
         children: e => (0, r.jsx)("div", {
           className: N.LB,
-          children: (0, r.jsx)(c.QWc, y(j({}, e), {
+          children: (0, r.jsx)(c.QWc, j(y({}, e), {
             variant: "primary",
             text: I.intl.string(I.t.twFU3R),
             onClick: () => l(t),
@@ -116,7 +116,7 @@ function v(e) {
         "aria-label": A.toString(),
         children: e => (0, r.jsx)("div", {
           className: N.LB,
-          children: (0, r.jsx)(c.QWc, y(j({}, e), {
+          children: (0, r.jsx)(c.QWc, j(y({}, e), {
             variant: "primary",
             text: I.intl.string(I.t["2glQNp"]),
             onClick: () => s(t),
@@ -130,13 +130,13 @@ function v(e) {
 }
 
 function P(e) {
-  (0, d.mMO)(async () => t => (0, r.jsx)(m.default, y(j({}, t), {
+  (0, d.mMO)(async () => t => (0, r.jsx)(m.default, j(y({}, t), {
     guildBoostSlot: e
   })))
 }
 
 function R(e) {
-  (0, d.mMO)(async () => t => (0, r.jsx)(g.default, y(j({}, t), {
+  (0, d.mMO)(async () => t => (0, r.jsx)(g.default, j(y({}, t), {
     guildBoostSlotId: e.id
   })))
 }
@@ -243,13 +243,13 @@ let D = function(e) {
             shouldShow: null == z || w,
             text: l,
             "aria-label": l.toString(),
-            children: e => (0, r.jsx)(d.Button, y(j({
+            children: e => (0, r.jsx)(d.Button, j(y({
               variant: "primary",
               text: I.intl.string(I.t.BMx1iy)
             }, e), {
               disabled: null == z || w,
               onClick: null != z ? () => {
-                (0, d.mMO)(async () => e => (0, r.jsx)(p.default, y(j({}, e), {
+                (0, d.mMO)(async () => e => (0, r.jsx)(p.default, j(y({}, e), {
                   guildBoostSlots: [z],
                   locationSection: S.JJy.SETTINGS_PREMIUM
                 })))

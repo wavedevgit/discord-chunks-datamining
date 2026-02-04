@@ -49,7 +49,7 @@ function o(e) {
         p(false)
       }
     }
-  }, [S, t, n]), j = r.useCallback(async e => {
+  }, [S, t, n]), y = r.useCallback(async e => {
     if (!S) {
       g(true);
       try {
@@ -61,7 +61,7 @@ function o(e) {
         g(false)
       }
     }
-  }, [S, t, n]), y = r.useCallback(async () => {
+  }, [S, t, n]), j = r.useCallback(async () => {
     if (!A) {
       f(true);
       try {
@@ -90,9 +90,9 @@ function o(e) {
     acceptLinkRequest: T,
     declineLinkRequest: I,
     disconnectLinkRequest: N,
-    cancelLinkRequest: j,
+    cancelLinkRequest: y,
     selectTeenUser: v,
-    getLinkCode: y,
+    getLinkCode: j,
     requestLink: r.useCallback(async (e, r) => {
       if (!b) {
         h(true);

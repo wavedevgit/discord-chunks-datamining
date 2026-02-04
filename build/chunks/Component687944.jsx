@@ -105,10 +105,10 @@ let T = function(e) {
       analyticsLocation: T,
       discountInfo: I,
       renewalChurnDiscountInfo: N,
-      discountOffer: j
+      discountOffer: y
     } = e,
     {
-      analyticsLocations: y
+      analyticsLocations: j
     } = (0, a.Ay)(s.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
     v = e => {
       (0, l.mMO)(async () => {
@@ -137,7 +137,7 @@ let T = function(e) {
           }({}, n), l = l = {
             premiumSubscription: p,
             analyticsLocation: T,
-            analyticsLocations: y,
+            analyticsLocations: j,
             initialStep: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -153,7 +153,7 @@ let T = function(e) {
       })
     },
     P = _.Ay.getPlanIdFromInvoice(p, m),
-    R = (0, g.ux)(null == j ? true : j.expires_at);
+    R = (0, g.ux)(null == y ? true : y.expires_at);
   return (0, c.m1)(P) ? null : (0, r.jsx)("div", {
     className: E.S6,
     children: (0, r.jsx)(l.hLv, {
@@ -171,7 +171,7 @@ let T = function(e) {
             className: E.tD,
             variant: "text-sm/medium",
             color: "text-strong",
-            children: null != j && R
+            children: null != y && R
           })]
         }), (0, r.jsx)("div", {
           className: E.T
@@ -179,8 +179,8 @@ let T = function(e) {
           className: E.ly,
           children: [(0, r.jsxs)("div", {
             className: E.Yc,
-            children: [null != j ? (0, r.jsx)(S, {
-              discountOffer: j,
+            children: [null != y ? (0, r.jsx)(S, {
+              discountOffer: y,
               premiumSubscription: p
             }) : (0, r.jsx)(C, {
               premiumSubscription: p,
@@ -209,7 +209,7 @@ let T = function(e) {
                     size: "md",
                     onClick: () => {
                       (0, o.A)({
-                        analyticsLocations: y,
+                        analyticsLocations: j,
                         analyticsLocation: T,
                         analyticsObject: x,
                         subscription: p

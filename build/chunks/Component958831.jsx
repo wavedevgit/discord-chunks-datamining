@@ -134,7 +134,7 @@ function I(e) {
       autocompleterResultTypes: x,
       autocompleterBeforeCreateSearchContext: C
     }),
-    j = (t = "" !== T, n = (0, s.yK)([p.Ay, _.A, g.A], () => {
+    y = (t = "" !== T, n = (0, s.yK)([p.Ay, _.A, g.A], () => {
       let e = g.A.getGuildId();
       if (t || null == e) return [];
       let n = [];
@@ -145,7 +145,7 @@ function I(e) {
       return n
     }, [t]), t ? null : n),
     {
-      focusedIndex: y,
+      focusedIndex: j,
       setFocusedIndex: v
     } = function(e) {
       let [t, n] = i.useState(0), r = i.useRef(e);
@@ -160,18 +160,18 @@ function I(e) {
     let {
       current: e
     } = O;
-    null == e || e.isItemVisible(0, y, true) || e.scrollToIndex({
+    null == e || e.isItemVisible(0, j, true) || e.scrollToIndex({
       section: 0,
-      row: y
+      row: j
     })
-  }, [y]);
-  let P = null != j ? j.length : N.length,
+  }, [j]);
+  let P = null != y ? y.length : N.length,
     R = (() => {
-      if (null != j) {
+      if (null != y) {
         var e;
-        return null == (e = j[y]) ? true : e.id
+        return null == (e = y[j]) ? true : e.id
       }
-      let t = N[y];
+      let t = N[j];
       if ((null == t ? true : t.type) === A.rD.VOICE_CHANNEL) return t.record.id
     })(),
     D = P > 0 || "" === T ? {
@@ -184,7 +184,7 @@ function I(e) {
         let {
           row: t
         } = e, n = (() => {
-          if (null != j) return j[t];
+          if (null != y) return y[t];
           let e = N[t];
           if ((null == e ? true : e.type) === A.rD.VOICE_CHANNEL) return e.record
         })();
@@ -195,7 +195,7 @@ function I(e) {
           id: n.id,
           channel: n,
           category: i,
-          focused: y === t,
+          focused: j === t,
           onMouseEnter: () => v(t),
           onClick: () => {
             h(n.id), d()
@@ -232,18 +232,18 @@ function I(e) {
             break;
           case "enter": {
             let e = (() => {
-              if (null != j) return j[y];
-              let e = N[y];
+              if (null != y) return y[j];
+              let e = N[j];
               if ((null == e ? true : e.type) === A.rD.VOICE_CHANNEL) return e.record
             })();
             null == e ? h(true) : h(e.id), d();
             break
           }
           case "arrowup":
-            0 === y ? v(P - 1) : v(y - 1);
+            0 === j ? v(P - 1) : v(j - 1);
             break;
           case "arrowdown":
-            y >= P - 1 ? v(0) : v(y + 1)
+            j >= P - 1 ? v(0) : v(j + 1)
         }
       },
       placeholder: f.intl.string(f.t.tG0r7g),

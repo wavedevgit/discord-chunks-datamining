@@ -109,7 +109,7 @@ function L(e) {
           return l
         }(e, ["ref"]);
         return (0, i.jsx)(h.A, D(R({
-          className: y.GD,
+          className: j.GD,
           currentPageIndex: c,
           onChangePage: b,
           numPages: s,
@@ -117,11 +117,11 @@ function L(e) {
           ref: t
         }, l), {
           children: (0, i.jsx)(_.T7Y, {
-            className: y.Bd,
+            className: j.Bd,
             ref: o,
             overflow: "auto",
             children: A.map((e, t) => (0, i.jsx)(S.A, {
-              className: a()(y.Nj, y.Bd),
+              className: a()(j.Nj, j.Bd),
               payment: e,
               locale: n,
               compactMode: r
@@ -143,15 +143,15 @@ class w extends(r = Chunk64700.PureComponent) {
   }
   renderPremiumExternalSubscription(e) {
     return c()(null != e.paymentGateway, "Expected payment gateway when rendering for external subscription"), (0, i.jsxs)(_.ZpM, {
-      className: y.K1,
+      className: j.K1,
       children: [(0, i.jsx)("div", {
-        className: y.BF,
-        children: j.intl.format(j.t["6mIX6s"], {
+        className: j.BF,
+        children: y.intl.format(y.t["6mIX6s"], {
           paymentGatewayName: N.qm[e.paymentGateway]
         })
       }), (0, i.jsx)("div", {
-        className: y.Q2,
-        children: j.intl.format(j.t.eG0uZB, {
+        className: j.Q2,
+        children: y.intl.format(y.t.eG0uZB, {
           paymentGatewayName: N.qm[e.paymentGateway],
           billingHistoryLink: (0, C.tW)(e.paymentGateway, "BILLING_HISTORY")
         })
@@ -166,22 +166,22 @@ class w extends(r = Chunk64700.PureComponent) {
       locale: r
     } = this.props, l = null != n && n.isPurchasedExternally;
     return 0 !== t.length || l ? (0, i.jsxs)("div", {
-      className: y.GD,
+      className: j.GD,
       children: [null != n && l ? this.renderPremiumExternalSubscription(n) : null, t.length > 0 ? (0, i.jsxs)("div", {
-        className: a()(y.PQ, y.GD),
+        className: a()(j.PQ, j.GD),
         children: [e ? null : (0, i.jsx)("div", {
-          className: a()(y.Nj, y.Bd),
+          className: a()(j.Nj, j.Bd),
           children: (0, i.jsxs)(b.A, {
-            className: y.Yi,
+            className: j.Yi,
             children: [(0, i.jsx)("div", {
               className: v.p6,
-              children: j.intl.string(j.t["5t11BV"])
+              children: y.intl.string(y.t["5t11BV"])
             }), (0, i.jsx)("div", {
-              className: y.Ir,
-              children: j.intl.string(j.t.yAAPb2)
+              className: j.Ir,
+              children: y.intl.string(y.t.yAAPb2)
             }), (0, i.jsx)("div", {
               className: v.vj,
-              children: j.intl.string(j.t["6MqHXV"])
+              children: y.intl.string(y.t["6MqHXV"])
             })]
           })
         }), (0, i.jsx)(L, {

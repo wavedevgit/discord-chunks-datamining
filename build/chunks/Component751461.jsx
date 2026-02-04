@@ -38,17 +38,17 @@ function C(e) {
     })
   }, [n, t]);
 
-  function j(e, t) {
+  function y(e, t) {
     o.default.track(E.HAw.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
   }
-  let y = T ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN);
+  let j = T ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSN);
   return (0, r.jsx)(m.h, {
     setting: h.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: "0" === n ? (0, r.jsx)(g.Ay, {
-      title: y,
+      title: j,
       note: T ? O.intl.string(O.t.XXGmuB) : O.intl.string(O.t.wbYDfT),
       value: !S,
       onChange: e => {
@@ -60,17 +60,17 @@ function C(e) {
           cancelText: O.intl.string(O.t.p89ACt),
           confirmButtonColor: l.$n.Colors.BRAND,
           onConfirm: () => {
-            u.n6.updateSetting(t), j(t, false)
+            u.n6.updateSetting(t), y(t, false)
           },
           onCancel: () => {
-            u.n6.updateSetting(t), u.$s.updateSetting(t ? a.A.getGuildIds() : []), j(t, true)
+            u.n6.updateSetting(t), u.$s.updateSetting(t ? a.A.getGuildIds() : []), y(t, true)
           }
         })
       },
       disabled: I,
       tooltipText: I ? O.intl.string(x.default["6Af/cw"]) : true
     }) : (0, r.jsx)(g.Ay, {
-      title: y,
+      title: j,
       note: b ? O.intl.string(O.t.V0ka0Q) : T ? O.intl.string(O.t.F9WY3f) : O.intl.string(O.t.G7c3Xo),
       value: !C,
       onChange: N

@@ -95,12 +95,12 @@ let v = Chunk64700.forwardRef((e, t) => {
           autoPlay: !F,
           playsInline: true,
           preload: F ? "none" : "auto",
-          poster: j.A,
+          poster: y.A,
           loop: true,
           className: I.gm,
           ref: R,
           children: (0, r.jsx)("source", {
-            src: V ? N.A : y.A,
+            src: V ? N.A : j.A,
             type: V ? S.a.MP4 : S.a.WEBM
           })
         })

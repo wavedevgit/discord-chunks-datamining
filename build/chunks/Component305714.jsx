@@ -29,7 +29,7 @@ let E = Chunk64700.forwardRef((e, t) => {
     subscriptionTier: x
   } = e, {
     analyticsLocations: C
-  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [N, j] = i.useState(false);
+  } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [N, y] = i.useState(false);
   return i.useEffect(() => {
     !l || O || N || null == I.current || I.current.play()
   }, [l, O, N]), (0, r.jsx)(c.f5, {
@@ -57,7 +57,7 @@ let E = Chunk64700.forwardRef((e, t) => {
           poster: b.A,
           className: A.dV,
           onEnded: () => {
-            j(true)
+            y(true)
           },
           ref: I,
           children: (0, r.jsx)("source", {

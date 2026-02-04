@@ -93,7 +93,7 @@ function U(e) {
   }, [t, _]);
   o()(E, "No text for action type: ".concat(t));
   let N = t === P.NV.PURCHASES && null != d ? E.sectionHeader(d) : E.sectionHeader(c),
-    j = i.useCallback(e => {
+    y = i.useCallback(e => {
       let {
         row: t
       } = e, n = a[t];
@@ -119,7 +119,7 @@ function U(e) {
       }
       return null
     }, [a, E.timestampFormatter]),
-    y = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
+    j = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {
         className: w.bV,
         variant: "text-md/semibold",
@@ -135,12 +135,12 @@ function U(e) {
   let v = a.slice(0, O);
   return (0, r.jsxs)("div", {
     className: w.A2,
-    children: [y(), (0, r.jsx)("div", {
+    children: [j(), (0, r.jsx)("div", {
       className: w.o1,
       style: {
         maxHeight: 65 * v.length
       },
-      children: v.map((e, t) => j({
+      children: v.map((e, t) => y({
         row: t
       }))
     }), v.length < c ? (0, r.jsx)(u.DUT, {
@@ -199,7 +199,7 @@ let k = () => {
         avatarSize: i
       }), (0, r.jsxs)("div", {
         className: w.TK,
-        children: [(0, r.jsx)(j.A, {
+        children: [(0, r.jsx)(y.A, {
           user: s,
           hideUserTag: l
         }), true !== n ? (0, r.jsx)(u.Text, {
@@ -289,7 +289,7 @@ let H = () => {
               return (0, r.jsx)(U, {
                 displayType: t
               }, "".concat(t, "-list"))
-            }) : (0, r.jsx)(y.A, {
+            }) : (0, r.jsx)(j.A, {
               className: w.RL,
               text: null != i ? i : ""
             })]

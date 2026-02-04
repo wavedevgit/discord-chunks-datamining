@@ -135,7 +135,7 @@ function M(e) {
         helpCenterLink: C.A.getArticleURL(v.MVz.GUILD_PROFILES)
       })
     }), null != l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(y.A, {
+      children: [(0, r.jsx)(j.A, {
         guildId: l.id,
         onChange: e => {
           null != e && (0, T.JJ)(e)
@@ -164,7 +164,7 @@ function M(e) {
           className: null == z ? R.t : true,
           isHighlighted: true
         })),
-        children: (0, r.jsx)(j.A, {})
+        children: (0, r.jsx)(y.A, {})
       })]
     }) : (0, r.jsx)(N.A, {})]
   }) : (0, r.jsx)(o.y$y, {})

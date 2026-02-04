@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 128620, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => R
+  A: () => D
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -20,6 +20,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk976860 = require("./976860.js"),
   Chunk780964 = require("./780964.js"),
   Chunk840065 = require("./840065.jsx"),
+  Chunk954571 = require("./954571.js"),
   Chunk975571 = require("./975571.js"),
   Chunk308541 = require("./308541.jsx"),
   Chunk94264 = require("./94264.jsx"),
@@ -31,24 +32,24 @@ var Chunk627968 = require("./627968.js"),
   Chunk970466 = require("./970466.js"),
   Chunk909340 = require("./909340.js"),
   Chunk455482 = require("./455482.js");
-let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
-  R = e => {
+let R = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
+  D = e => {
     var t, n;
     let {
       className: l
     } = e, {
-      passesGeneralUIInvariant: E,
-      programReward: R
+      passesGeneralUIInvariant: O,
+      programReward: D
     } = (0, o.cf)([g.A], () => ({
       passesGeneralUIInvariant: g.A.passesGeneralUIInvariant(A.W.NITRO),
       programReward: g.A.getRewardForProgram(A.W.NITRO)
-    })), D = (0, _.A)("(min-width: ".concat(720, "px)")), L = (0, p.DP)(), w = i.useMemo(() => ({
+    })), L = (0, _.A)("(min-width: ".concat(720, "px)")), w = (0, p.DP)(), M = i.useMemo(() => ({
       hueRotate: 25,
-      glowAmount: (0, d.M)(L) ? 2 : 8,
+      glowAmount: (0, d.M)(w) ? 2 : 8,
       blurAmount: 20
-    }), [L]);
-    if (!E || null == R) return null;
-    let M = function(e, t) {
+    }), [w]);
+    if (!O || null == D) return null;
+    let G = function(e, t) {
       let n = e.program_current_state,
         i = null != e.next_reward_date && "" !== e.next_reward_date ? (0, a.default)(new Date(e.next_reward_date), new Date) : null,
         l = null == e ? true : e.total_rewarded_from_program;
@@ -57,26 +58,36 @@ let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
           if (null == i || i < 0) return null;
           return {
             displayTotalLifetimeRewards: null != l, displayProgressBar: true, actionButton: (0, r.jsx)(c.$nd, {
-              text: N.intl.string(I.default.BxjHiu),
+              text: y.intl.string(N.default.BxjHiu),
               variant: t ? "overlay-primary" : "secondary",
-              onClick: () => (0, f.pX)(T.BV.COLLECTIBLES_SHOP_WITH_TAB(S.G2.ORBS))
-            }), headerText: N.intl.format(I.default.BxLJQL, {
+              onClick: () => {
+                E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+                  cta_type: "shop_orbs",
+                  program_state: n
+                }), (0, f.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(T.G2.ORBS))
+              }
+            }), headerText: y.intl.format(N.default.BxLJQL, {
               days: Math.max(1, i),
               orbsCount: e.reward_amount
-            }), subheaderText: N.intl.format(I.default.tUV1vV, {
-              helpdeskArticle: P
+            }), subheaderText: y.intl.format(N.default.tUV1vV, {
+              helpdeskArticle: R
             })
           };
         case A.L.PAYMENT_PROCESSING:
           return {
             displayTotalLifetimeRewards: false, displayProgressBar: false, actionButton: (0, r.jsx)(c.$nd, {
-              text: N.intl.string(I.default.KVCfnE),
+              text: y.intl.string(N.default.KVCfnE),
               variant: t ? "overlay-primary" : "secondary",
-              onClick: () => (0, h.openUserSettings)(b.X.BILLING_PANEL, {
-                section: C.nc_.BILLING
-              })
-            }), headerText: N.intl.string(I.default.uuZJXR), subheaderText: N.intl.format(I.default.dkeEV7, {
-              helpdeskArticle: P
+              onClick: () => {
+                E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+                  cta_type: "view_billing",
+                  program_state: n
+                }), (0, h.openUserSettings)(b.X.BILLING_PANEL, {
+                  section: S.nc_.BILLING
+                })
+              }
+            }), headerText: y.intl.string(N.default.uuZJXR), subheaderText: y.intl.format(N.default.dkeEV7, {
+              helpdeskArticle: R
             })
           };
         case A.L.PAYMENT_ERROR:
@@ -84,54 +95,69 @@ let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
             displayTotalLifetimeRewards: null != l, displayProgressBar: false, actionButton: (0, r.jsx)("span", {
               className: t ? "theme-dark" : true,
               children: (0, r.jsx)(c.$nd, {
-                text: N.intl.string(I.default.KVCfnE),
+                text: y.intl.string(N.default.KVCfnE),
                 variant: "critical-secondary",
-                onClick: () => (0, h.openUserSettings)(b.X.BILLING_PANEL, {
-                  section: C.nc_.BILLING
-                })
+                onClick: () => {
+                  E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+                    cta_type: "update_billing",
+                    program_state: n
+                  }), (0, h.openUserSettings)(b.X.BILLING_PANEL, {
+                    section: S.nc_.BILLING
+                  })
+                }
               })
-            }), headerText: N.intl.string(I.default["+O9Asn"]), subheaderText: N.intl.format(I.default.nWKEBZ, {
-              helpdeskArticle: P
+            }), headerText: y.intl.string(N.default["+O9Asn"]), subheaderText: y.intl.format(N.default.nWKEBZ, {
+              helpdeskArticle: R
             })
           };
         case A.L.PROGRAM_ROLLBACK:
           return {
             displayTotalLifetimeRewards: null != l, displayProgressBar: null != i, actionButton: (0, r.jsx)(c.$nd, {
-              text: N.intl.string(I.default["wLAd/+"]),
+              text: y.intl.string(N.default["wLAd/+"]),
               variant: t ? "overlay-primary" : "secondary",
-              onClick: () => (0, f.pX)(T.BV.COLLECTIBLES_SHOP_WITH_TAB(S.G2.ORBS))
-            }), headerText: N.intl.string(I.default.zF0HnJ), subheaderText: N.intl.format(I.default["5tzNTa"], {
-              helpdeskArticle: P
+              onClick: () => {
+                E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+                  cta_type: "shop_orbs",
+                  program_state: n
+                }), (0, f.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(T.G2.ORBS))
+              }
+            }), headerText: y.intl.string(N.default.zF0HnJ), subheaderText: y.intl.format(N.default["5tzNTa"], {
+              helpdeskArticle: R
             })
           };
         case A.L.PREMIUM_CHURNING:
           return {
             displayTotalLifetimeRewards: null != l, displayProgressBar: null != i, actionButton: (0, r.jsx)(c.$nd, {
-              text: N.intl.string(I.default.FToh6D),
+              text: y.intl.string(N.default.FToh6D),
               variant: t ? "overlay-primary" : "secondary",
               icon: c.tvc,
-              onClick: () => (0, h.openUserSettings)(b.X.BILLING_PANEL, {
-                section: C.nc_.BILLING
-              })
-            }), headerText: N.intl.string(I.default.ISnOet), subheaderText: N.intl.format(I.default["vjaRZ/"], {
-              helpdeskArticle: P
+              onClick: () => {
+                E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+                  cta_type: "resubscribe",
+                  program_state: n
+                }), (0, h.openUserSettings)(b.X.BILLING_PANEL, {
+                  section: S.nc_.BILLING
+                })
+              }
+            }), headerText: y.intl.string(N.default.ISnOet), subheaderText: y.intl.format(N.default["vjaRZ/"], {
+              helpdeskArticle: R
             })
           };
         default:
           return null
       }
-    }(R, D);
-    if (null == M) return null;
+    }(D, L);
+    if (null == G) return null;
     let {
-      displayTotalLifetimeRewards: G,
-      displayProgressBar: U,
-      actionButton: k,
-      headerText: B,
-      subheaderText: H
-    } = M;
+      displayTotalLifetimeRewards: U,
+      displayProgressBar: k,
+      actionButton: B,
+      headerText: H,
+      subheaderText: V
+    } = G;
     return (0, r.jsx)("div", {
       className: s()(j.Hc, l),
-      children: (0, r.jsxs)(O.A, (t = function(e) {
+      children: (0, r.jsxs)(x.A, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -151,18 +177,18 @@ let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
       }({
         cardType: u.sl2.CUSTOM,
         cardClassName: j.Nr
-      }, w), n = n = {
+      }, M), n = n = {
         children: [(0, r.jsx)(m.A, {
           muted: true,
           autoPlay: true,
           playsInline: true,
           loop: true,
           className: j.Ki,
-          src: y.A
+          src: v.A
         }), (0, r.jsxs)("div", {
           className: j.zK,
           children: [(0, r.jsx)("img", {
-            src: v.A,
+            src: P.A,
             className: j._e,
             alt: "",
             "aria-hidden": true
@@ -180,31 +206,31 @@ let P = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
           }), (0, r.jsx)(c.DZT, {
             variant: "heading-xl/bold",
             className: j.R_,
-            children: B
+            children: H
           }), (0, r.jsx)(c.EYj, {
             variant: "text-md/medium",
             className: j.G3,
-            children: H
-          }), U && (0, r.jsx)(x.A, {
+            children: V
+          }), k && (0, r.jsx)(C.A, {
             className: j.L$
-          }), G && R.total_rewarded_from_program > 0 && (0, r.jsxs)("div", {
+          }), U && D.total_rewarded_from_program > 0 && (0, r.jsxs)("div", {
             className: j.fB,
             children: [(0, r.jsx)(c.EYj, {
               variant: "text-md/medium",
               className: j.G3,
-              children: N.intl.string(I.default["/1mWUn"])
+              children: y.intl.string(N.default["/1mWUn"])
             }), (0, r.jsx)(c.Cp8, {
               size: "sm",
               color: "currentColor"
             }), (0, r.jsx)(c.EYj, {
               variant: "text-md/medium",
               className: j.G3,
-              children: R.total_rewarded_from_program
+              children: D.total_rewarded_from_program
             })]
           }), (0, r.jsx)("div", {
             className: j.WT,
             children: (0, r.jsx)(c.e2v, {
-              children: k
+              children: B
             })
           })]
         })]

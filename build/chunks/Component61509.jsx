@@ -179,7 +179,7 @@ function eA(e) {
     guildProductListingId: l
   } = e, s = (0, T.Qi)(r, l, {
     requireCurrentGuild: false
-  }), a = (0, p.bG)([I.A], () => I.A.getGuildProductFetchState(l) === I.e.FETCHING), o = null == s ? true : s.role_id, c = (0, p.bG)([H.A], () => null != o ? H.A.getRole(r, o) : true, [r, o]), d = (0, y.A)({
+  }), a = (0, p.bG)([I.A], () => I.A.getGuildProductFetchState(l) === I.e.FETCHING), o = null == s ? true : s.role_id, c = (0, p.bG)([H.A], () => null != o ? H.A.getRole(r, o) : true, [r, o]), d = (0, j.A)({
     guildId: r,
     productId: l
   }), u = (null != (t = null == s || null == (n = s.attachments) ? true : n.length) ? t : 0) > 0, _ = null != c;
@@ -203,7 +203,7 @@ function eA(e) {
         color: "text-default",
         className: el.yE,
         children: ei.intl.string(ei.t.gWBNet)
-      }), (0, i.jsx)(j.A, {
+      }), (0, i.jsx)(y.A, {
         role: c
       })]
     })]
@@ -852,12 +852,12 @@ function eb(e) {
       return null == l ? null : null != (e = F.default.getUser(null != (t = null == (i = l.user) ? true : i.id) ? t : null)) ? e : null == l ? true : l.user
     }, [r]),
     {
-      analyticsLocations: j
+      analyticsLocations: y
     } = (0, h.Ay)(b.A.BILLING_SETTINGS_BILLING);
   return (0, i.jsx)(ef, {
     applicationStatistics: m,
     application: _ ? x : S,
-    analyticsLocations: j,
+    analyticsLocations: y,
     guild: C,
     stickerPack: null,
     paymentSources: A,

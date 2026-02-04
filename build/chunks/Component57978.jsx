@@ -73,11 +73,11 @@ let ei = () => {
     }))
   }, [e]), l = (0, A.TM)(), et = f.A.getArticleURL(O.MVz.REFERRAL_PROGRAM), en = {
     premiumGroup: {
-      thumbnail: j,
-      assetUrl: j
+      thumbnail: y,
+      assetUrl: y
     },
     serverProfiles: {
-      thumbnail: y,
+      thumbnail: j,
       assetUrl: l ? $.Ay : ee.Ay
     },
     customThemes: {

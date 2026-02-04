@@ -64,7 +64,7 @@ function w() {
     }),
     H = (0, i.bG)([O.A], () => O.A.hasLibraryApplication()),
     V = (0, i.bG)([h.default], () => h.default.hasTOTPEnabled()),
-    F = j.Q_.useSetting(),
+    F = y.Q_.useSetting(),
     Y = (0, c.A)(),
     W = null == (t = (0, d.A)()) || t,
     K = (null == (l = (0, A.G)()) ? true : l.length) > 0,
@@ -84,7 +84,7 @@ function w() {
       autoTrackExposure: false
     }),
     $ = (0, s.i)("useGenerateUserSettingsSections");
-  return r.useMemo(() => (0, y.zj)({
+  return r.useMemo(() => (0, j.zj)({
     unseenGiftCount: E,
     showPrepaidPaymentPastDueWarning: N,
     searchParams: P,

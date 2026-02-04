@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 420139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => y
+  A: () => j
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,20 +30,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk752375 = require("./752375.js"),
   Chunk20976 = require("./20976.js");
 
-function y(e) {
+function j(e) {
   let {
     subscription: t,
     onPaymentSourceAdded: n,
     highlightAddPaymentMethodButton: l,
     dropdownClassName: a,
-    analyticsLocation: y,
+    analyticsLocation: j,
     currentInvoicePreview: P,
     disabled: R = false
   } = e, D = (0, c.bG)([b.A], () => b.A.hidePersonalInformation), [L, w] = (0, c.yK)([h.A], () => [h.A.paymentSources, h.A.hasFetchedPaymentSources]), M = (0, f.Y)((0, C.MP)(t)), {
     analyticsLocations: G
   } = (0, A.Ay)(), U = i.useMemo(() => Object.values(L).filter(e => !e.invalid), [L]), [k, B] = i.useState(false), [H, V] = i.useState(t.currency), F = async (e, n, r) => {
     if (null == t) throw Error("missing subscription and paymentSource");
-    null == e ? await _.r6(t, n, r, G, y) : await _.uK(t, e, n, r, G, y), B(false), V(n)
+    null == e ? await _.r6(t, n, r, G, j) : await _.uK(t, e, n, r, G, j), B(false), V(n)
   }, Y = async (e, n, r) => {
     B(true);
     let i = await (0, S.OQ)({
@@ -52,7 +52,7 @@ function y(e) {
         renewal: true,
         currency: n,
         analyticsLocations: G,
-        analyticsLocation: y
+        analyticsLocation: j
       }),
       l = {
         amount: i.subtotal,
@@ -94,7 +94,7 @@ function y(e) {
         return e
       }({}, e), n = n = {
         onAddPaymentSource: K,
-        analyticsLocation: y
+        analyticsLocation: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -156,7 +156,7 @@ function y(e) {
       })), null != t.paymentSourceId ? (0, r.jsx)(m.f, {
         currencies: i,
         children: (0, r.jsx)("div", {
-          className: s()(N.Gl, j.Uu, j.Hu),
+          className: s()(N.Gl, y.Uu, y.Hu),
           children: (0, r.jsx)(m.A, {
             label: I.intl.string(I.t["0YjaXf"]),
             selectedCurrency: H,

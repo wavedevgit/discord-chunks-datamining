@@ -58,11 +58,11 @@ function U(e) {
   return e
 }
 let k = () => {
-    let e = (0, j._)();
-    return (0, r.jsx)(y.ir, {
+    let e = (0, y._)();
+    return (0, r.jsx)(j.ir, {
       text: e,
       className: D.QR,
-      colorOptions: y.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+      colorOptions: j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   B = () => (0, r.jsx)("div", {
@@ -163,7 +163,7 @@ let k = () => {
     var t;
     let n, {
         className: l,
-        hideCTAs: j = false,
+        hideCTAs: y = false,
         headingOverride: L,
         hidePill: w = false,
         selectedPlanColumnClassName: M,
@@ -213,7 +213,7 @@ let k = () => {
           isPremiumGroup: q
         })
       };
-    j ? eo.push({
+    y ? eo.push({
       label: null,
       column1: null,
       column2: null,
@@ -259,10 +259,10 @@ let k = () => {
       withBottomBorder: false,
       withBottomBorderRadius: true,
       buttonsRow: null == $
-    }), n = w ? null : null != $ || null != ee ? (0, r.jsx)(y.ir, {
+    }), n = w ? null : null != $ || null != ee ? (0, r.jsx)(j.ir, {
       text: null != $ ? R.intl.string(R.t.IBYG5U) : R.intl.string(R.t.ce1v3V),
       className: D.ls,
-      colorOptions: $ === P.pe.TIER_0 ? Z ? y.at.PREMIUM_TIER_0_GRADIENT_FILL : y.at.PREMIUM_TIER_0_WHITE_FILL : Z ? J ? y.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : y.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : y.at.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: $ === P.pe.TIER_0 ? Z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : Z ? J ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
     }) : ec ? (0, r.jsx)(k, {}) : (0, r.jsx)(B, {});
     let ep = $ === P.pe.TIER_0 || ee === P.PremiumTypes.TIER_0 || G === P.PremiumTypes.TIER_0;
     return (0, r.jsx)(p.f5, {

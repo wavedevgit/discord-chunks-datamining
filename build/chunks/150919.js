@@ -5,6 +5,8 @@ require("./321073.js"), require("./896048.js"), require("./457529.js"), require(
 var Chunk73153 = require("./73153.js"),
   Chunk626584 = require("./626584.js"),
   Chunk865116 = require("./865116.js"),
+  Chunk608960 = require("./608960.js"),
+  Chunk41237 = require("./41237.js"),
   Chunk279263 = require("./279263.js"),
   Chunk961350 = require("./961350.js"),
   Chunk317525 = require("./317525.js"),
@@ -15,7 +17,7 @@ var Chunk73153 = require("./73153.js"),
   Chunk548965 = require("./548965.js"),
   Chunk652215 = require("./652215.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +26,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,16 +50,16 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = new Chunk626584.A("DispatcherBridge"),
-  b = [Chunk279263.A, Chunk71393.A, Chunk317525.A],
-  O = {
-    GUILD_MEMBER_ADD: e => E(m({}, e), {
-      currentUserId: s.default.getId()
+let O = new Chunk626584.A("DispatcherBridge"),
+  v = [Chunk279263.A, Chunk71393.A, Chunk317525.A, Chunk608960.A, Chunk41237.A],
+  A = {
+    GUILD_MEMBER_ADD: e => b(E({}, e), {
+      currentUserId: c.default.getId()
     }),
     CONNECTION_OPEN: e => ({
       guilds: e.guilds
@@ -72,10 +74,10 @@ let y = new Chunk626584.A("DispatcherBridge"),
       guilds: e.guilds
     })
   };
-class v {
+class I {
   withStoreToken(e, t, n) {
     let r = this.tokenToStore.get(e);
-    null == r ? y.warn("When dispatching action", t, "we got a store token", e, "that is unknown") : n(r)
+    null == r ? O.warn("When dispatching action", t, "we got a store token", e, "that is unknown") : n(r)
   }
   filterAuthorativeStores(e) {
     let t = [];
@@ -86,9 +88,9 @@ class v {
     return t
   }
   constructor(e) {
-    if (h(this, "tokenToStore", new Map), 0 === e.length) return;
-    const t = f.V;
-    if (null == t) return void y.info("Not initializing DispatcherBridge, because kvStoreApi is unavailable.");
+    if (g(this, "tokenToStore", new Map), 0 === e.length) return;
+    const t = _.V;
+    if (null == t) return void O.info("Not initializing DispatcherBridge, because kvStoreApi is unavailable.");
     try {
       const n = [];
       for (const r of e) {
@@ -96,26 +98,26 @@ class v {
           i = r.connectWithLibdiscore(t);
         this.tokenToStore.set(i, r), n.push("".concat(e, " => [token: ").concat(i, ", mode: ").concat(r.getMode(), "]"))
       }
-      y.info("Connected ".concat(e.length, " store(s), mapping: ").concat(n.join(", "), "."));
+      O.info("Connected ".concat(e.length, " store(s), mapping: ").concat(n.join(", "), "."));
       const i = t.getRegisteredActionTypes();
-      y.info("Registering ".concat(i.length, " bridged action(s): ").concat(i.join(", "), "."));
+      O.info("Registering ".concat(i.length, " bridged action(s): ").concat(i.join(", "), "."));
       const o = e => {
-        let n, r = O[e.type],
+        let n, r = A[e.type],
           i = performance.now();
-        n = null != r ? JSON.stringify(m({
+        n = null != r ? JSON.stringify(E({
           type: e.type
         }, r(e))) : JSON.stringify(e);
         let o = {
             kind: "json_stringify_action",
             durationMillis: performance.now() - i
           },
-          s = p.pd.shouldCollectMetrics(),
+          s = h.pd.shouldCollectMetrics(),
           l = t.dispatchAction(n, s);
         if (!l.ok) {
           let n = Error(l.error),
             r = t.findStoresThatCanHandleActionType(e.type),
             i = this.filterAuthorativeStores(r).map(e => e.getName());
-          if (y.error("Failed to dispatch action", e.type, "authorative stores", i, "error:", n), d.A.captureException(n, {
+          if (O.error("Failed to dispatch action", e.type, "authorative stores", i, "error:", n), p.A.captureException(n, {
               extra: {
                 authorativeStores: i.join(", ")
               },
@@ -127,17 +129,17 @@ class v {
         }
         let c = performance.now() - i,
           {
-            metrics: f,
-            changes: h
+            metrics: u,
+            changes: d
           } = l.value;
-        for (let t of h) this.withStoreToken(t.storeToken, e.type, e => {
+        for (let t of d) this.withStoreToken(t.storeToken, e.type, e => {
           e.applyChanges(t.databaseChanges)
         });
-        for (let t of h) this.withStoreToken(t.storeToken, e.type, t => {
+        for (let t of d) this.withStoreToken(t.storeToken, e.type, t => {
           t.doEmitChanges(e)
         });
-        if (null != f && s) {
-          let t = [o, ...f.timings];
+        if (null != u && s) {
+          let t = [o, ...u.timings];
           if (a.Ay.get("libdiscore_verbose_telemetry_logging")) {
             let n = t.map(e => {
                 let {
@@ -146,7 +148,7 @@ class v {
                 } = e;
                 return " - ".concat(t, ": ").concat(n, "ms")
               }).join("\n"),
-              r = f.mutations.map(e => {
+              r = u.mutations.map(e => {
                 let {
                   recordType: t,
                   metrics: n
@@ -159,7 +161,7 @@ class v {
                 }).join("\n");
                 return " * Record Type: ".concat(t, "\n").concat(r)
               }).join("\n"),
-              i = f.memory.map(e => {
+              i = u.memory.map(e => {
                 let {
                   recordType: t,
                   statistics: n
@@ -180,24 +182,24 @@ class v {
                 let [t, n] = e;
                 return "".concat(t, ":\n").concat(n)
               }).join("\n\n");
-            y.info("Handling action ".concat(e.type, " took ").concat(c, "ms\n").concat(a))
+            O.info("Handling action ".concat(e.type, " took ").concat(c, "ms\n").concat(a))
           }
-          u.default.track(_.HAw.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY, {
+          f.default.track(m.HAw.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY, {
             action_type: e.type,
             total_duration_millis: c,
             timings: JSON.stringify(t),
-            mutations: JSON.stringify(f.mutations),
-            memory_usage: JSON.stringify(f.memory)
-          }), p.pd.didEmit()
+            mutations: JSON.stringify(u.mutations),
+            memory_usage: JSON.stringify(u.memory)
+          }), h.pd.didEmit()
         }
       };
       r.h.register("LibDiscoreDispatcherBridge", Object.fromEntries(i.map(e => [e, o])), () => {}, r.A.Database)
     } catch (e) {
-      y.error("Failed to initialize the dispatcher bridge", e)
+      O.error("Failed to initialize the dispatcher bridge", e)
     }
   }
 }
-let A = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
-new v(function(e) {
-  return __OVERLAY__ ? (y.verbose("Not enabling rust implementation because we're in the legacy overlay"), []) : e.filter(e => A.has(e.getMode()))
-}(b))
+let S = new Set(["libdiscore", "typescript-libdiscore-dual-read"]);
+new I(function(e) {
+  return __OVERLAY__ ? (O.verbose("Not enabling rust implementation because we're in the legacy overlay"), []) : e.filter(e => S.has(e.getMode()))
+}(v))

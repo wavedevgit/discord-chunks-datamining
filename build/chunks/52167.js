@@ -64,13 +64,13 @@ let G = (e, t, n) => (0, i.Mw)(e) ? t : n,
         title: p.intl.string(p.t["/xvEMy"]),
         description: p.intl.string(p.t.HKWdjj),
         className: t.clientThemesCard,
-        imageSource: j,
+        imageSource: y,
         imageClassName: t.clientThemesImage
       },
       customAppIcons: {
         title: p.intl.string(p.t.OuItFi),
         description: p.intl.string(p.t.mPyrE6),
-        imageSource: y,
+        imageSource: j,
         imageClassName: t.customAppIconImage
       },
       emoji: {

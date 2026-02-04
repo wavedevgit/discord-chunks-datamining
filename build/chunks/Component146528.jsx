@@ -218,7 +218,7 @@ let M = e => {
         id: k,
         children: [(0, r.jsx)("div", {
           className: w.yF
-        }), (0, r.jsx)(j.A, {
+        }), (0, r.jsx)(y.A, {
           groupListingId: l.id,
           subscription: t,
           className: w.kE
@@ -249,7 +249,7 @@ let M = e => {
           isResubscribing: E,
           shouldHideRoleSubscriptionEntryPoints: H,
           onCancelSubscriptionClick: () => {
-            null != a && (0, y.q)({
+            null != a && (0, j.q)({
               groupListing: l,
               listing: n,
               subscription: t
