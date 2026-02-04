@@ -62,8 +62,8 @@ function f(e) {
     avatarDecoration: A,
     specs: O,
     cornerIconUrl: j,
-    cornerIconOffsetX: x,
-    cornerIconOffsetY: _,
+    cornerIconOffsetX: _,
+    cornerIconOffsetY: x,
     ariaLabel: v
   } = e, E = {
     width: (0, o.FT9)(n),
@@ -113,7 +113,7 @@ function f(e) {
           rx: e.stroke,
           fill: "black"
         })
-      }(O, S, x, _)]
+      }(O, S, _, x)]
     }), (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
@@ -163,19 +163,19 @@ function m(e) {
     cornerIconUrl: m,
     cornerIconOffsetX: b = 0,
     cornerIconOffsetY: O = 0
-  } = e, j = (0, d.Kj)(n), x = j.size, _ = (0, l.useId)();
+  } = e, j = (0, d.Kj)(n), _ = j.size, x = (0, l.useId)();
   return (0, r.jsx)(f, g(h({}, e), {
     ariaLabel: o,
     ariaHidden: i,
     specs: j,
     children: (0, r.jsxs)("svg", {
-      width: x + b,
-      height: x + O,
-      viewBox: "0 0 ".concat(x + b, " ").concat(x + O),
+      width: _ + b,
+      height: _ + O,
+      viewBox: "0 0 ".concat(_ + b, " ").concat(_ + O),
       className: s()(p.dK, p.JW),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: _,
+        id: x,
         children: [(0, r.jsx)("circle", {
           cx: j.size / 2,
           cy: j.size / 2,
@@ -202,7 +202,7 @@ function m(e) {
         y: 0,
         width: j.size,
         height: j.size,
-        mask: "url(#".concat(_, ")"),
+        mask: "url(#".concat(x, ")"),
         children: (0, r.jsx)(a.d9, {
           src: t,
           className: u,
@@ -230,15 +230,15 @@ function b(e) {
     cornerIconUrl: o,
     cornerIconOffsetX: u = 0,
     cornerIconOffsetY: m = 0
-  } = e, b = (0, l.useId)(), O = (0, l.useId)(), j = (0, d.Kj)(n), x = j.size + u, _ = j.size + m, v = y(j, u, m), E = A(j, u, m);
+  } = e, b = (0, l.useId)(), O = (0, l.useId)(), j = (0, d.Kj)(n), _ = j.size + u, x = j.size + m, v = y(j, u, m), E = A(j, u, m);
   return (0, r.jsx)(f, g(h({}, e), {
     ariaLabel: a,
     ariaHidden: i,
     specs: j,
     children: (0, r.jsxs)("svg", {
-      width: x,
-      height: _,
-      viewBox: "0 0 ".concat(x, " ").concat(_),
+      width: _,
+      height: x,
+      viewBox: "0 0 ".concat(_, " ").concat(x),
       className: s()(p.dK, p.JW),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {

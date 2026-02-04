@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 920437, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => q
@@ -118,8 +118,8 @@ class Y extends Chunk64700.PureComponent {
       useReducedMotion: A,
       isStaff: b,
       guildJoinRequest: y,
-      showLinkedLobbyApplicationLoadingIndicator: v,
-      requiredLinkedLobbyApplication: E
+      showLinkedLobbyApplicationLoadingIndicator: E,
+      requiredLinkedLobbyApplication: v
     } = this.props, {
       shouldShowLurkerModeUpsellPopout: O,
       shouldShowLurkerModeSuccessPopout: C
@@ -145,17 +145,17 @@ class Y extends Chunk64700.PureComponent {
           break;
         default:
           S.message = B.intl.string(B.t.rEBKvg), S.buttonText = B.intl.string(B.t["r8/DT+"]), S.buttonVariant = "primary", S.onButtonClick = this.handleShowMemberVerification
-      } else if (v || null == E) r && !b ? (S.message = B.intl.string(B.t["2dThMM"]), S.buttonText = B.intl.string(B.t["50gfOv"]), S.onButtonClick = this.handleVerifyPhone) : i ? (S.message = B.intl.string(B.t.FkGPS5), S.buttonText = B.intl.string(B.t.lm1UKt), S.onButtonClick = this.handleResendVerification) : a ? (S.message = B.intl.formatToPlainString(B.t.IH7RMF, {
+      } else if (E || null == v) r && !b ? (S.message = B.intl.string(B.t["2dThMM"]), S.buttonText = B.intl.string(B.t["50gfOv"]), S.onButtonClick = this.handleVerifyPhone) : i ? (S.message = B.intl.string(B.t.FkGPS5), S.buttonText = B.intl.string(B.t.lm1UKt), S.onButtonClick = this.handleResendVerification) : a ? (S.message = B.intl.formatToPlainString(B.t.IH7RMF, {
         min: G.$8o.MEMBER_AGE
       }), S.countdown = s) : o && (S.message = B.intl.formatToPlainString(B.t["2JA2GH"], {
         min: G.$8o.ACCOUNT_AGE
       }), S.countdown = c);
       else {
         var x;
-        S.imageSrc = null != (x = E.getIconURL(F.iu.SMALL)) ? x : true, S.message = B.intl.format(B.t.EvDn1D, {
-          name: E.name
-        }), null != E.connectionEntrypointUrl && (S.buttonText = B.intl.string(B.t.S0W8Z5), S.onButtonClick = () => {
-          window.open(E.connectionEntrypointUrl, "_blank")
+        S.imageSrc = null != (x = v.getIconURL(F.iu.SMALL)) ? x : true, S.message = B.intl.format(B.t.EvDn1D, {
+          name: v.name
+        }), null != v.connectionEntrypointUrl && (S.buttonText = B.intl.string(B.t.S0W8Z5), S.onButtonClick = () => {
+          window.open(v.connectionEntrypointUrl, "_blank")
         })
       } return (0, l.jsx)(u.YNO, {
       targetElementRef: this.textAreaContainerRef,
@@ -312,7 +312,7 @@ class Y extends Chunk64700.PureComponent {
         g.A.ackUserGuildJoinRequest(e.id, t.joinRequestId)
       };
       return (0, l.jsx)(u.aFV, {
-        renderModal: t => (0, l.jsx)(E.A, z(W({}, t), {
+        renderModal: t => (0, l.jsx)(v.A, z(W({}, t), {
           onAccept: r,
           guildName: e.name
         })),
@@ -330,17 +330,17 @@ function q(e) {
   } = e, a = r.getGuildId(), o = (0, s.bG)([w.A], () => w.A.getGuild(a)), c = (0, s.bG)([R.A], () => R.A.getCheck(a)), u = r.type === G.rbe.GUILD_ANNOUNCEMENT && null != o && o.features.has(G.GuildFeatures.NEWS), d = (0, s.bG)([N.A], () => u ? N.A.getFollowerStatsForChannel(r.id) : null), h = (0, s.bG)([C.A], () => C.A.isLurking(a)), p = (0, s.bG)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == p ? true : p.isStaff()) && t, g = (0, s.bG)([P.Ay], () => {
     var e, t;
     return null != p && null != (e = null == (t = P.Ay.getMember(a, p.id)) ? true : t.isPending) && e
-  }), A = !!(0, y.Qd)(o), b = (0, s.bG)([O.A], () => O.A.shouldShowPopout(a)), E = (0, s.bG)([D.A], () => D.A.can(G.xBc.SEND_MESSAGES, r)), S = (0, s.bG)([v.A], () => v.A.getRequest(a)), {
+  }), A = !!(0, y.Qd)(o), b = (0, s.bG)([O.A], () => O.A.shouldShowPopout(a)), v = (0, s.bG)([D.A], () => D.A.can(G.xBc.SEND_MESSAGES, r)), S = (0, s.bG)([E.A], () => E.A.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: x,
     requiredLinkedLobbyApplication: j
-  } = (0, L.A)(r.linkedLobby), I = z(W({}, c), {
+  } = (0, k.A)(r.linkedLobby), I = z(W({}, c), {
     guild: o,
     isLurking: h,
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: b,
-    showLurkerModeUpsellPopout: h && null != o && k.MJ(G.xBc.SEND_MESSAGES, r),
+    showLurkerModeUpsellPopout: h && null != o && L.MJ(G.xBc.SEND_MESSAGES, r),
     theme: T.A.theme,
-    canSendMessages: E,
+    canSendMessages: v,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: A,
     showMemberVerificationModal: g && A,

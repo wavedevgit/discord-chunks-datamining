@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 914835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk790687 = require("./790687.js");
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -70,7 +70,7 @@ function C(e) {
       let {
         default: e
       } = await Promise.all([n.e("97262"), n.e("29534"), n.e("67447"), n.e("10905")]).then(n.bind(n, 708202));
-      return t => (0, l.jsx)(e, O(E({}, t), {
+      return t => (0, l.jsx)(e, O(v({}, t), {
         user: S,
         guildId: _.guild_id,
         channel: _
@@ -80,7 +80,7 @@ function C(e) {
   let T = null != (i = null != (h = null == x ? true : x.nick) ? h : A.Ay.getName(S)) ? i : "???",
     N = null == x ? true : x.colorString;
   return null == S ? (0, l.jsx)("span", {
-    className: a()(v.eM, v.sL),
+    className: a()(E.eM, E.sL),
     children: T
   }) : (0, l.jsx)(d.f5, {
     value: C,
@@ -91,10 +91,10 @@ function C(e) {
       channelId: _.id,
       roleId: null == x ? true : x.colorRoleId,
       clickTrap: true,
-      children: e => (0, l.jsx)(o.DUT, O(E({}, e), {
+      children: e => (0, l.jsx)(o.DUT, O(v({}, e), {
         innerRef: y,
         tag: "span",
-        className: v.eM,
+        className: E.eM,
         onContextMenu: I,
         children: (0, l.jsx)(o.gyj, {
           name: T,
@@ -121,7 +121,7 @@ function S(e) {
       variant: "text-md/normal",
       color: "text-default",
       children: (0, l.jsx)("div", {
-        className: v.VA,
+        className: E.VA,
         children: y.intl.format(y.t.imPXd5, {
           usernameHook: (e, n) => (0, l.jsx)(C, {
             userId: t.ownerId,
@@ -145,9 +145,9 @@ function x(e) {
   return (0, l.jsxs)(b.Ay, {
     channelId: n.id,
     children: [(0, l.jsx)("div", {
-      className: v.P0,
+      className: E.P0,
       children: (0, l.jsx)(r, {
-        className: v.Kk
+        className: E.Kk
       })
     }), (0, l.jsx)(b.cr, {
       children: n.name

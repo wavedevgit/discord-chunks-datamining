@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 241874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -25,7 +25,7 @@ let h = Chunk64700.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: A
-    } = e, b = (0, u.r4)(t.author.id, n.id), _ = (0, u.m)(t, n, h, f), y = (0, u.Jo)(p, f), v = r.useCallback(() => {
+    } = e, b = (0, u.r4)(t.author.id, n.id), _ = (0, u.m)(t, n, h, f), y = (0, u.Jo)(p, f), E = r.useCallback(() => {
       f({
         usernameProfile: false,
         avatarProfile: false,
@@ -47,7 +47,7 @@ let h = Chunk64700.memo(function(e) {
       onClickAvatar: y,
       onClickUsername: _,
       onContextMenu: b,
-      onPopoutRequestClose: v,
+      onPopoutRequestClose: E,
       roleIcon: A
     })
   }),

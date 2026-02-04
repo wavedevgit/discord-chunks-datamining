@@ -115,10 +115,10 @@ function C(e) {
     }
     null != I.current && clearTimeout(I.current), null != N.current && clearTimeout(N.current), S(true)
   }, [H, W, z]);
-  let X = l.useCallback(() => {
+  let q = l.useCallback(() => {
       S(true)
     }, []),
-    q = l.useCallback(() => {
+    X = l.useCallback(() => {
       S(false), B(false)
     }, []);
   return R ? (0, r.jsx)(d.YNO, {
@@ -132,70 +132,70 @@ function C(e) {
       channel: t,
       onHoverOrFocus: B
     }, e)),
-    onRequestOpen: X,
-    onRequestClose: q,
+    onRequestOpen: q,
+    onRequestClose: X,
     children: e => {
       var t, n;
       return (0, r.jsx)(a.animated.div, {
-        className: x.lY,
+        className: _.lY,
         style: Y,
         children: (0, r.jsx)(d.DUT, (t = v({
           innerRef: i,
           className: s()({
-            [x.vk]: !D
-          }, _.q7, _.L9, _.vk),
+            [_.vk]: !D
+          }, x.q7, x.L9, x.vk),
           "aria-disabled": D,
           "aria-label": j.intl.string(j.t.F3qiJr)
         }, e), n = n = {
           children: (0, r.jsxs)("div", {
-            className: s()(x.Qs, _.Qs),
+            className: s()(_.Qs, x.Qs),
             children: [(0, r.jsxs)("div", {
-              className: x.R4,
+              className: _.R4,
               style: {
                 "--custom-voice-invite-suggestions-timer-size": 24
               },
               children: [(0, r.jsxs)("svg", {
-                className: s()(x.O1, {
-                  [x.Ft]: H
+                className: s()(_.O1, {
+                  [_.Ft]: H
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {
                   "--custom-voice-invite-suggestions-timer-duration": 1e4
                 },
                 children: [(0, r.jsx)("circle", {
-                  className: x.qB
+                  className: _.qB
                 }), (0, r.jsx)("circle", {
-                  className: x.hN
+                  className: _.hN
                 })]
               }, "voice-invite-suggestions-timer-".concat(T)), (0, r.jsx)(d.Rvf, {
                 size: "custom",
                 width: 14,
                 height: 14,
                 color: "currentColor",
-                className: s()(x.Hk, x.Kk)
+                className: s()(_.Hk, _.Kk)
               })]
             }), (0, r.jsx)(u.m_, {
               text: j.intl.string(j.t["EE+P0H"]),
               overflowOnly: true,
               children: (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                className: x.Pf,
+                className: _.Pf,
                 lineClamp: 1,
                 children: j.intl.string(j.t["EE+P0H"])
               })
             }), U ? (0, r.jsx)(d.DUT, {
-              className: x.VN,
+              className: _.VN,
               onClick: () => K("user_explicit"),
               "aria-label": j.intl.string(j.t.cpT0Cq),
               children: (0, r.jsx)(d.PGe, {
                 size: "xs",
                 color: "currentColor",
-                className: x.Kk
+                className: _.Kk
               })
             }) : (0, r.jsx)(d._BQ, {
               size: "xs",
               color: "currentColor",
-              className: x.Kk
+              className: _.Kk
             })]
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

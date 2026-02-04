@@ -39,7 +39,7 @@ let I = () => (0, r.jsxs)(f.A, {
     children: [(0, r.jsx)(i.x, {
       setting: v.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
       children: (0, r.jsx)(g.A, {})
-    }), (0, r.jsx)(j.A, {}), (0, r.jsx)(x.A, {}), (0, r.jsx)(O.A, {}), (0, r.jsx)(y.A, {})]
+    }), (0, r.jsx)(j.A, {}), (0, r.jsx)(_.A, {}), (0, r.jsx)(O.A, {}), (0, r.jsx)(y.A, {})]
   }),
   T = () => (0, r.jsxs)(f.A, {
     title: S.intl.string(S.t["1Qn8iV"]),
@@ -63,8 +63,8 @@ function w() {
     }];
   return (0, r.jsx)(a.R, {
     header: S.intl.string(S.t["+o1pDZ"]),
-    notice: (0, r.jsx)(_.A, {
-      page: _.R.CONTENT_AND_SOCIAL
+    notice: (0, r.jsx)(x.A, {
+      page: x.R.CONTENT_AND_SOCIAL
     }),
     children: (0, r.jsx)(o.A, {
       parentSetting: v.H.CONTENT_SOCIAL,

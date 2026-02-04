@@ -28,7 +28,7 @@ function g(e, t) {
     y = null == m ? true : m.storeRemovalDate,
     O = null != (n = null == g ? true : g.has(d.GuildFeatures.PARTNERED)) && n,
     j = A && null != y && !O && b.type === u.b_.POWERUP_ACTIVATED,
-    x = j ? {
+    _ = j ? {
       title: h.intl.formatToPlainString(p.default.mgoPkU, {
         perkName: null == m ? true : m.title
       }),
@@ -38,6 +38,6 @@ function g(e, t) {
     } : null;
   return {
     shouldShow: j,
-    notificationConfig: x
+    notificationConfig: _
   }
 }

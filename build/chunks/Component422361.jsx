@@ -124,10 +124,10 @@ class er extends Chunk557534.Ay {
       channel: t,
       connected: n,
       showEmptyChannelTopic: l
-    } = this.props, i = null == (e = (0, _.M)(this.props.subtitle)) ? true : e.subtitle, {
+    } = this.props, i = null == (e = (0, x.M)(this.props.subtitle)) ? true : e.subtitle, {
       hovered: s
     } = this.state;
-    return (0, r.jsx)(X.A, {
+    return (0, r.jsx)(q.A, {
       onClick: this.handleVoiceStatusClick,
       channel: t,
       connected: n,
@@ -144,7 +144,7 @@ class er extends Chunk557534.Ay {
       withGuildIcon: l,
       tabIndex: i
     } = this.props;
-    return (0, r.jsx)(q.A, {
+    return (0, r.jsx)(X.A, {
       channel: e,
       collapsed: n,
       collapsedMax: 6,
@@ -181,8 +181,8 @@ class er extends Chunk557534.Ay {
       canReorderChannel: b,
       canMoveMembers: A,
       showTutorial: j,
-      hasActiveEvent: x,
-      embeddedApps: _,
+      hasActiveEvent: _,
+      embeddedApps: x,
       isSubscriptionGated: v,
       isFavoriteSuggestion: E,
       withGuildIcon: C,
@@ -224,9 +224,9 @@ class er extends Chunk557534.Ay {
               ref: this.channelItemRef,
               className: $.Ki,
               iconClassName: s()({
-                [$.Gj]: x || S || w
+                [$.Gj]: _ || S || w
               }),
-              hasActiveEvent: x,
+              hasActiveEvent: _,
               channel: e,
               selected: !E && t,
               connected: n,
@@ -248,12 +248,12 @@ class er extends Chunk557534.Ay {
                 unread: l,
                 mentionCount: a,
                 userCount: D,
-                embeddedActivitiesCount: _.length,
+                embeddedActivitiesCount: x.length,
                 isSubscriptionGated: v
               }),
               "aria-describedby": (0, O.A)({
                 channel: e,
-                embeddedApps: _
+                embeddedApps: x
               }),
               withGuildIcon: C,
               children: [E && (0, r.jsxs)(r.Fragment, {
@@ -297,7 +297,7 @@ class er extends Chunk557534.Ay {
         shouldShowGuildVerificationPopout: true
       });
       let a = i && s > 0;
-      a && d.A.updateChatOpen(n.id, true), x.A.handleVoiceConnect({
+      a && d.A.updateChatOpen(n.id, true), _.A.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: l,
@@ -450,8 +450,8 @@ function ei(e) {
       unverifiedAccount: !r.canChat
     }
   }), h = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), g = (0, f.Ay)(n), m = (0, j.Ay)(n), y = (0, I.Qs)(n.id), O = (0, a.bG)([A.A], () => null != A.A.getStartTime(n), [n]), {
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: _
+    isSubscriptionGated: _,
+    needSubscriptionToAccess: x
   } = (0, S.A)(n.id), E = (0, v.A)(), C = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), N = e.connected || (null == E ? true : E.channelId) === n.id, {
     enableHangStatus: w,
     showEmptyChannelTopic: R
@@ -473,23 +473,23 @@ function ei(e) {
     isChannelSelected: s,
     isChannelCollapsed: o,
     voiceStates: c,
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: _,
+    isSubscriptionGated: _,
+    needSubscriptionToAccess: x,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), X = N && null == z;
+  }), q = N && null == z;
   return (0, r.jsx)(el, en(et({
     channelName: m,
     embeddedApps: g,
     embeddedActivityType: J.$pd.PLAYING,
     video: h,
     hasActiveEvent: null != y,
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: _
+    isSubscriptionGated: _,
+    needSubscriptionToAccess: x
   }, u, p, e), {
     connected: N,
     isFavoriteSuggestion: i && !C,
-    forceShowButtons: X,
+    forceShowButtons: q,
     channelInfo: z,
     resolvedUnreadSetting: d,
     enableHangStatus: w,

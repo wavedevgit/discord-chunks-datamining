@@ -1,4 +1,4 @@
-/** Chunk was on 51693 **/
+/** Chunk was on 59569 **/
 /** chunk id: 503062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -39,13 +39,13 @@ function x(e) {
     activities: g.A.getActivities(t.id),
     isMobileOnline: g.A.isMobileOnline(t.id)
   })), T = (0, p.A)(t.id), {
-    voiceActivityStatusEnabled: C
+    voiceActivityStatusEnabled: N
   } = (0, c.g)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: N
+    voiceChannel: C
   } = (0, u.A)({
-    userId: C ? t.id : true,
+    userId: N ? t.id : true,
     guildId: v
   });
   return (0, r.jsxs)(a.DUT, {
@@ -119,7 +119,7 @@ function x(e) {
         user: t,
         activities: E,
         applicationStream: T,
-        voiceChannel: N
+        voiceChannel: C
       })]
     })]
   })

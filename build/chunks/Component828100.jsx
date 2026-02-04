@@ -421,7 +421,7 @@ let B = e => {
     let e = P.A.getPrivateChannelIds();
     return (0, C.eh)(e, [E.A, S.A])
   });
-  (0, _.P)(x._);
+  (0, x.P)(_._);
   let {
     analyticsLocations: y
   } = (0, b.Ay)(f.A.CONTACTS_LIST), O = (0, I.NC)(), {

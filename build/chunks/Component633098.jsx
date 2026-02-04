@@ -1,4 +1,4 @@
-/** Chunk was on 51693 **/
+/** Chunk was on 59569 **/
 /** chunk id: 633098, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -83,7 +83,7 @@ function x(e) {
         })
       }
     }, [v, _, I, n]),
-    C = l.useCallback(() => {
+    N = l.useCallback(() => {
       g.A.clearPendingWidgets()
     }, []);
   return S((e, n) => n ? (0, r.jsx)(o.animated.div, {
@@ -105,7 +105,7 @@ function x(e) {
           size: "sm",
           variant: "secondary",
           text: j.intl.string(j.t.yBZMsQ),
-          onClick: C,
+          onClick: N,
           disabled: !w || P
         }), (0, r.jsx)(c.Button, {
           size: "sm",

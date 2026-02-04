@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 274146, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 }), require("./896048.js"), require("./733351.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,10 +23,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk650583 = require("./650583.js"),
   Chunk10544 = require("./10544.js");
-let _ = e => {
+let x = e => {
   let {
     channel: t,
-    guild: _
+    guild: x
   } = e, {
     currentCategoryId: v,
     directoryEntries: E,
@@ -86,10 +86,10 @@ let _ = e => {
   }, [t.id]), l.useEffect(() => {
     u.default.track(O.HAw.GUILD_DIRECTORY_CHANNEL_VIEWED, {
       directory_channel_id: t.id,
-      directory_guild_id: _.id,
+      directory_guild_id: x.id,
       primary_category_id: v
     })
-  }, [t.id, _.id, v]);
+  }, [t.id, x.id, v]);
   let k = (0, g.b)(t),
     U = l.useMemo(() => k ? () => {
       (0, s.mMO)(async () => {
@@ -116,8 +116,8 @@ let _ = e => {
             }
             return e
           }({}, n), i = i = {
-            directoryGuildName: _.name,
-            directoryGuildId: _.id,
+            directoryGuildName: x.name,
+            directoryGuildId: x.id,
             directoryChannelId: t.id,
             currentCategoryId: v === y.mU.ALL ? null : v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -132,11 +132,11 @@ let _ = e => {
           }), l))
         }
       })
-    } : true, [k, _.name, _.id, t.id, v]),
+    } : true, [k, x.name, x.id, t.id, v]),
     V = e => {
       0 !== R.trim().length && e.key === j.dh.ENTER && (d.Se(t.id, R), u.default.track(O.HAw.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: t.id,
-        directory_guild_id: _.id
+        directory_guild_id: x.id
       }))
     },
     B = () => {
@@ -152,14 +152,14 @@ let _ = e => {
     searchResults: w,
     searchFetching: P
   }) : null == N && null == v ? (0, r.jsx)("div", {
-    className: x.$$,
+    className: _.$$,
     children: (0, r.jsx)(s.y$y, {
-      className: x.u1
+      className: _.u1
     })
   }) : (null == N ? true : N.length) === 0 && null == v ? (0, r.jsx)("div", {
-    className: x.$$,
+    className: _.$$,
     children: (0, r.jsx)(f.A, {
-      guild: _,
+      guild: x,
       onAddGuild: U
     })
   }) : (0, r.jsx)(m.A, {

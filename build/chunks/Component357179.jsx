@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 357179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => b
@@ -56,24 +56,24 @@ function b(e) {
     senderId: _
   } = e, y = r.useCallback(() => {
     (0, u.xi)(t, [b])
-  }, [t, b]), v = (0, a.bG)([c.A], () => c.A.isBlocked(_)), E = r.useMemo(() => ({
+  }, [t, b]), E = (0, a.bG)([c.A], () => c.A.isBlocked(_)), v = r.useMemo(() => ({
     channelId: t,
     warningId: b,
     senderId: _,
     warningType: d._j.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, b, _]);
   r.useEffect(() => {
-    (0, h.QF)(A(g({}, E), {
+    (0, h.QF)(A(g({}, v), {
       viewName: h.gN.SAFETY_WARNING_BANNER
     })), o.A.increment({
       name: i.K.SAFETY_WARNING_VIEW
     })
-  }, [E]);
+  }, [v]);
   let O = r.useCallback(e => {
-      (0, h._$)(A(g({}, E), {
+      (0, h._$)(A(g({}, v), {
         cta: e
       }))
-    }, [E]),
+    }, [v]),
     C = r.useCallback(() => {
       (0, s.mMO)(async () => {
         let {
@@ -139,7 +139,7 @@ function b(e) {
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
       onClick: C
-    }, ...v ? [] : [{
+    }, ...E ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",
       onClick: j

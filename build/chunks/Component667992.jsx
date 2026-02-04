@@ -58,15 +58,15 @@ function O(e) {
     className: f
   } = e, O = l.useRef(null), {
     newestAnalyticsLocation: j
-  } = (0, d.Ay)(), x = (0, h.Us)(), {
-    reducedMotion: _
+  } = (0, d.Ay)(), _ = (0, h.Us)(), {
+    reducedMotion: x
   } = l.useContext(o.CZY), v = (0, u.A)({
     userId: i.id
   }), E = null != i.member ? (0, m.xT)(i.member) : null, C = e => {
     (0, c.L3)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
+      } = await Promise.all([n.e("97262"), n.e("29534"), n.e("48469"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
       return n => (0, r.jsx)(e, y(A({}, n), {
         user: i.user,
         guildId: t.guild_id,
@@ -77,7 +77,7 @@ function O(e) {
         onInteraction: (0, p.s)("GuildChannelUserContextMenu", j)
       }))
     }, {
-      context: x
+      context: _
     })
   };
   return (0, r.jsx)(g.A, {
@@ -101,7 +101,7 @@ function O(e) {
           size: o._3J.SIZE_24,
           className: s()(b.my, f),
           "aria-label": i.userNick,
-          isSpeaking: v && !_.enabled
+          isSpeaking: v && !x.enabled
         })
       }))
     })

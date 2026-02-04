@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 139831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => i
@@ -42,7 +42,7 @@ function i(e) {
       outlineColor: _
     } = (0, l.yO)(t.userId, o, c, s),
     y = A(_, 9),
-    v = null != y && m(y);
-  v && (0, r.y)(n, y.x, y.y, _, 3), A(b, 6), v && (0, r.k)(n, y.x, y.y, t.userId)
+    E = null != y && m(y);
+  E && (0, r.y)(n, y.x, y.y, _, 3), A(b, 6), E && (0, r.k)(n, y.x, y.y, t.userId)
 }
 require("./824217.js")

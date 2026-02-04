@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 427160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -23,8 +23,8 @@ function g(e, t, n, g) {
     b = (0, a.rdh)(i.A.unsafe_rawColors.BLACK).hex(),
     _ = (0, a.rdh)(i.A.unsafe_rawColors.WHITE).hex(),
     y = l.useRef({}),
-    v = l.useRef(new r.IX),
-    E = l.useCallback(t => {
+    E = l.useRef(new r.IX),
+    v = l.useCallback(t => {
       let n = u.A.getDrawables(t);
       (0, h.iV)(e),
       function(e) {
@@ -119,18 +119,18 @@ function g(e, t, n, g) {
         width: l,
         height: r
       } = t.getBoundingClientRect();
-      t.width = l * window.devicePixelRatio, t.height = r * window.devicePixelRatio, E(n)
+      t.width = l * window.devicePixelRatio, t.height = r * window.devicePixelRatio, v(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
-  }, [e, E, n]);
+  }, [e, v, n]);
   let O = l.useCallback(() => {
     let t = u.A.getDrawables(n),
       l = p.m.getState().particles,
       r = t.length > 0 || Object.keys(l).length > 0;
-    r && null == v.current._ref && (null == v.current._ref ? (E(n), v.current.start(m, () => E(n))) : r || null == v.current._ref || (v.current.stop(), (0, h.iV)(e)))
-  }, [e, E, n]);
+    r && null == E.current._ref && (null == E.current._ref ? (v(n), E.current.start(m, () => v(n))) : r || null == E.current._ref || (E.current.stop(), (0, h.iV)(e)))
+  }, [e, v, n]);
   l.useEffect(() => {
-    let e = v.current;
+    let e = E.current;
     return u.A.addChangeListener(O), O(), (0, s.l0)(t.getAvatarURL(null, 80)), () => {
       u.A.removeChangeListener(O), e.stop()
     }

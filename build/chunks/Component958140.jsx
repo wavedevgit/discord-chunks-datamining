@@ -80,13 +80,13 @@ function U(e) {
     setPopoutRef: H
   } = e, F = l.useRef(null), Y = (0, u.bG)([O.A], () => O.A.getCustomHangStatus()), K = (0, E.A)(), W = (0, u.bG)([O.A], () => O.A.getFavoritedStatuses()), {
     defaultStatusVariant: z,
-    allowPermanentClear: X
+    allowPermanentClear: q
   } = (0, y.$j)({
     guildId: U.guild_id,
     location: "HangStatusPicker"
-  }), q = (0, j.hy)(z), J = l.useRef(null), [Q, Z] = l.useState(null != (t = null == Y ? true : Y.status) ? t : ""), [$, ee] = l.useState(null != (n = null == Y ? true : Y.emoji) ? n : null), [et, en] = l.useState(false), er = (0, u.bG)([O.A], () => O.A.getCurrentHangStatus()), el = q[er], ei = W.length > 0, es = null == Q || "" === Q.trim(), ea = (0, v.A)(U), eo = Q.trim().length > 0 && Q.trim() !== (null == Y || null == (a = Y.status) ? true : a.trim()) || null != $ && !o()($, null == Y ? true : Y.emoji), [ec, eu] = l.useState(false), ed = (0, u.bG)([O.A], () => O.A.getFavoritedStatuses().length >= O.x), ep = Q.length > 0 || null != $, [eh, eg] = (0, f.kn)([d.M.HANG_STATUS_POPOVER_NUX]);
+  }), X = (0, j.hy)(z), J = l.useRef(null), [Q, Z] = l.useState(null != (t = null == Y ? true : Y.status) ? t : ""), [$, ee] = l.useState(null != (n = null == Y ? true : Y.emoji) ? n : null), [et, en] = l.useState(false), er = (0, u.bG)([O.A], () => O.A.getCurrentHangStatus()), el = X[er], ei = W.length > 0, es = null == Q || "" === Q.trim(), ea = (0, v.A)(U), eo = Q.trim().length > 0 && Q.trim() !== (null == Y || null == (a = Y.status) ? true : a.trim()) || null != $ && !o()($, null == Y ? true : Y.emoji), [ec, eu] = l.useState(false), ed = (0, u.bG)([O.A], () => O.A.getFavoritedStatuses().length >= O.x), ep = Q.length > 0 || null != $, [eh, eg] = (0, f.kn)([d.M.HANG_STATUS_POPOVER_NUX]);
   l.useEffect(() => {
-    b.default.track(P.HAw.HANG_STATUS_PICKER_OPENED, k(G({}, (0, x.A)(U.id)), {
+    b.default.track(P.HAw.HANG_STATUS_PICKER_OPENED, k(G({}, (0, _.A)(U.id)), {
       num_favorites: W.length,
       num_recents: K.length
     }))
@@ -136,24 +136,24 @@ function U(e) {
             name: null != (t = null == n ? true : n.optionallyDiverseSequence) ? t : "",
             animated: false
           }, 1 === ea.length)) break; while (null == n || (null == n ? true : n.name) == null || o()($, r));
-      null != r && (null == n ? true : n.name) != null && (ee(r), Z(n.name), en(true), null == (e = F.current) || e.focus(), b.default.track(P.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, x.A)(U.id)))
+      null != r && (null == n ? true : n.name) != null && (ee(r), Z(n.name), en(true), null == (e = F.current) || e.focus(), b.default.track(P.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, _.A)(U.id)))
     }, [ea, $, U.id]),
     eO = l.useCallback((e, t) => {
-      let n = (0, _.A)(t);
-      (!ed || e) && ((0, A.My)(n ? t : t.status, n ? null : t.emoji), b.default.track(P.HAw.HANG_STATUS_FAVORITE_CLICKED, k(G({}, (0, x.A)(U.id)), {
+      let n = (0, x.A)(t);
+      (!ed || e) && ((0, A.My)(n ? t : t.status, n ? null : t.emoji), b.default.track(P.HAw.HANG_STATUS_FAVORITE_CLICKED, k(G({}, (0, _.A)(U.id)), {
         favorited: !e
       })))
     }, [U.id, ed]),
     ej = l.useCallback(() => {
       V(false)
     }, [V]),
-    ex = l.useCallback(() => {
+    e_ = l.useCallback(() => {
       V(true)
     }, [V]),
-    e_ = l.useCallback((e, t, n) => {
+    ex = l.useCallback((e, t, n) => {
       var l;
-      let i = (0, _.A)(e),
-        s = i ? q[e] : null,
+      let i = (0, x.A)(e),
+        s = i ? X[e] : null,
         a = O.A.isFavorited(e),
         o = i ? (0, r.jsx)(I.A, {
           userId: m.default.getId(),
@@ -178,10 +178,10 @@ function U(e) {
         isFavorited: a,
         onFavoriteClick: () => eO(a, e)
       }, "".concat(n, "-").concat(t))
-    }, [z, eb, ef, q, eO]),
+    }, [z, eb, ef, X, eO]),
     ev = l.useCallback(() => {
-      (0, A.eK)(true, X), ee(null), Z(""), en(false)
-    }, [X]),
+      (0, A.eK)(true, q), ee(null), Z(""), en(false)
+    }, [q]),
     eE = l.useCallback(e => {
       en(true), Z(e.substring(0, 60))
     }, []);
@@ -214,7 +214,7 @@ function U(e) {
             inputRef: F,
             value: et || ep ? Q : null != (i = null == el ? true : el.title) ? i : "",
             onBlur: ej,
-            onFocus: ex,
+            onFocus: e_,
             onChange: eE,
             placeholder: R.intl.string(R.t.KPop4s),
             leading: {
@@ -267,7 +267,7 @@ function U(e) {
           }), (0, r.jsx)(h.Gg5, {
             size: "xxs"
           })]
-        }), W.map((e, t) => e_(e, t, "favorite"))]
+        }), W.map((e, t) => ex(e, t, "favorite"))]
       }), K.length > 0 && ei && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           role: "separator",
@@ -282,7 +282,7 @@ function U(e) {
             size: "xxs"
           })]
         })]
-      }), K.map((e, t) => e_(e, t, "recent"))]
+      }), K.map((e, t) => ex(e, t, "recent"))]
     })]
   })
 }

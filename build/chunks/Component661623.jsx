@@ -36,10 +36,10 @@ let y = Chunk64700.memo(function(e) {
   } = (0, b.Z)(n), y = l.useRef(null), {
     isHoveringOrFocusing: j
   } = (0, g.A)(y), {
-    readyToClaim: T,
-    collectibleProductSkuIds: L,
+    readyToClaim: L,
+    collectibleProductSkuIds: T,
     collectedSkuIds: I
-  } = (0, E.K)(t, n), k = (0, o.bG)([_.A], () => _.A.isClaiming === n);
+  } = (0, E.K)(t, n), k = (0, o.bG)([h.A], () => h.A.isClaiming === n);
   return (0, r.jsx)(c.L, {
     onChange: s,
     threshold: 0,
@@ -78,8 +78,8 @@ let y = Chunk64700.memo(function(e) {
                 className: C.tZ,
                 children: v.intl.string(v.t["0mDmg/"])
               }), (0, r.jsx)(u.m, {
-                text: T ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
-                  totalCount: L.length
+                text: L ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
+                  totalCount: T.length
                 }),
                 align: "right",
                 caretConfig: {
@@ -102,12 +102,12 @@ let y = Chunk64700.memo(function(e) {
                 children: [(0, r.jsx)(f.Ay, {
                   variant: f.qP.BLUE,
                   progress: I.length,
-                  maximum: L.length
+                  maximum: T.length
                 }), (0, r.jsxs)("div", {
                   className: a()(A.__, {
-                    [A.gF]: T
+                    [A.gF]: L
                   }),
-                  children: [T ? (0, r.jsx)(i.Uzd, {
+                  children: [L ? (0, r.jsx)(i.Uzd, {
                     size: "xs",
                     color: "currentColor"
                   }) : null, (0, r.jsx)(i.EYj, {
@@ -115,7 +115,7 @@ let y = Chunk64700.memo(function(e) {
                     color: "currentColor",
                     children: v.intl.formatToPlainString(v.t["5TwASM"], {
                       collectedCount: I.length,
-                      totalCount: L.length
+                      totalCount: T.length
                     })
                   })]
                 })]
@@ -130,15 +130,15 @@ let y = Chunk64700.memo(function(e) {
               children: (0, r.jsx)(i.$nd, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), T && (0, m.BX)(t.skuId, n).then(() => {
+                  e.stopPropagation(), L && (0, m.BX)(t.skuId, n).then(() => {
                     let e = p.A.getProduct(n);
-                    null != e && (0, h.A)({
+                    null != e && (0, _.A)({
                       product: e,
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: S.A,
-                        fallbackImageSrc: x.A,
+                        src: x.A,
+                        fallbackImageSrc: S.A,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"
@@ -163,7 +163,7 @@ let y = Chunk64700.memo(function(e) {
                 },
                 text: v.intl.string(v.t.VnVTNc),
                 fullWidth: true,
-                disabled: !T,
+                disabled: !L,
                 loading: k
               })
             })

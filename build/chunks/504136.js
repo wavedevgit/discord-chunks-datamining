@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 504136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -24,9 +24,9 @@ function d(e) {
     b = [],
     _ = false,
     y = null != f ? a.default.extractTimestamp(f) : null,
-    v = null;
+    E = null;
   return p.forEach(e => {
-    var r, E, O;
+    var r, v, O;
     let C, S;
     if (null != g && g.length > 0) {
       let t = a.default.extractTimestamp(e.id);
@@ -35,18 +35,18 @@ function d(e) {
         let n = a.default.extractTimestamp(g[e].startId),
           l = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= l) {
-          if (v === g[e].id) break;
+          if (E === g[e].id) break;
           b.push({
             type: u.TZK.DIVIDER,
             content: g[e].topic,
             contentKey: g[e].id
-          }), v = g[e].id;
+          }), E = g[e].id;
           break
         }
       }
     }
     let x = (0, i.i$)(e.timestamp, "LL");
-    x !== t && null == v && (b.push({
+    x !== t && null == E && (b.push({
       type: u.TZK.DIVIDER,
       content: x,
       contentKey: x
@@ -63,11 +63,11 @@ function d(e) {
       else if ((0, o.iJ)(e) && n) return u.TZK.MESSAGE_GROUP_SPAMMER;
       return null
     }(h, e, T && m);
-    (null !== N && ([I, j] = (S = E = j, null == E || E.type !== N ? (C = {
+    (null !== N && ([I, j] = (S = v = j, null == v || v.type !== N ? (C = {
       type: N,
       content: [],
       key: e.id
-    }, b.push(C)) : S = (C = E).content[C.content.length - 1], [C, S])), f === e.id && null != y) ? (null != j && j.type === u.TZK.DIVIDER ? j.unreadId = e.id : null !== I ? (O = I, e.isFirstMessageInForumPost(h) || O.content.push({
+    }, b.push(C)) : S = (C = v).content[C.content.length - 1], [C, S])), f === e.id && null != y) ? (null != j && j.type === u.TZK.DIVIDER ? j.unreadId = e.id : null !== I ? (O = I, e.isFirstMessageInForumPost(h) || O.content.push({
       type: u.TZK.DIVIDER,
       unreadId: e.id
     }), O.hasUnread = true) : e.isFirstMessageInForumPost(h) || b.push({
@@ -94,9 +94,9 @@ function d(e) {
     let {
       jumpSequenceId: D,
       jumpFlash: M,
-      jumpTargetId: k
+      jumpTargetId: L
     } = p;
-    M && e.id === k && null != D && (R.flashKey = D), p.jumpTargetId === e.id && (R.jumpTarget = true), null != A && e.id === A.startId && A.count > 1 && b.push({
+    M && e.id === L && null != D && (R.flashKey = D), p.jumpTargetId === e.id && (R.jumpTarget = true), null != A && e.id === A.startId && A.count > 1 && b.push({
       type: u.TZK.DIVIDER,
       content: A.topic,
       contentKey: A.startId,

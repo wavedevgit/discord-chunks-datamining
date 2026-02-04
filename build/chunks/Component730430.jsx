@@ -15,7 +15,7 @@ var Chunk311907 = require("./311907.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,30 +43,30 @@ function m(e) {
     userId: y
   } = e, b = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (i = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
-  }(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]), _ = (0, l.bG)([c.A], () => c.A.getChannelId() === m.id);
-  return (0, r.jsx)(i.Button, f({
-    text: _ ? p.intl.string(p.t.BXxdl7) : p.intl.string(p.t["9C444m"]),
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
+  }(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]), h = (0, i.bG)([c.A], () => c.A.getChannelId() === m.id);
+  return (0, r.jsx)(l.Button, p({
+    text: h ? f.intl.string(f.t.BXxdl7) : f.intl.string(f.t["9C444m"]),
     onClick: () => {
       var e, t;
-      null == g || g(), a.default.selectVoiceChannel(m.id), (0, o.iN)(m.id), u.default.track(d.HAw.HANG_STATUS_CTA_CLICKED, (e = f({
+      null == g || g(), a.default.selectVoiceChannel(m.id), (0, s.iN)(m.id), u.default.track(d.HAw.HANG_STATUS_CTA_CLICKED, (e = p({
         source: "UserProfilePopout"
-      }, (0, s.A)(m.id)), t = t = {
+      }, (0, o.A)(m.id)), t = t = {
         other_user_id: y,
-        cta_type: _ ? "open" : "join"
+        cta_type: h ? "open" : "join"
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

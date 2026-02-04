@@ -234,9 +234,9 @@ class K extends Chunk143236.EventEmitter {
         collapsedChannels: l,
         loadState: i
       } = this.state, s = u().findIndex(r, e => e.channelId === t), a = r[s], o = !a.collapsed;
-      l[t] = o, (0, _.ji)(n, t, e => {
+      l[t] = o, (0, x.ji)(n, t, e => {
         e.collapsedInInbox = o
-      }, _.Sb.FREQUENT_USER_ACTION), this.setState({
+      }, x.Sb.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: s,
         collapsedChannels: l,
         loadState: "done" !== i || o || a.isFullyLoaded ? i : "loaded",
@@ -304,15 +304,15 @@ function z() {
         }
       return n
     }(),
-    r = (e = n, t = [], C.A.getSortedPrivateChannels().forEach(n => X(e, t, null, n.id)), w.Ay.getFlattenedGuildIds().forEach(n => {
+    r = (e = n, t = [], C.A.getSortedPrivateChannels().forEach(n => q(e, t, null, n.id)), w.Ay.getFlattenedGuildIds().forEach(n => {
       if (null == n) return;
       let r = S.Ay.getSelectableChannelIds(n),
         l = y.A.getActiveJoinedUnreadThreadsForGuild(n);
       r.forEach(r => {
         var i;
-        X(e, t, n, r);
+        q(e, t, n, r);
         let s = null != (i = l[r]) ? i : {};
-        for (let r in s) X(e, t, n, r)
+        for (let r in s) q(e, t, n, r)
       })
     }), u().sortBy(t, e => e.sortOrder)),
     l = u().uniq(r.map(e => e.guildId)).filter(L.Vq);
@@ -327,7 +327,7 @@ function z() {
   }
 }
 
-function X(e, t, n, r) {
+function q(e, t, n, r) {
   if (null == r) return;
   let l = C.A.getChannel(r);
   if (null == l || !E.Le.has(l.type) && R.Ay.isGuildOrCategoryOrChannelMuted(n, l.id)) return;
@@ -367,10 +367,10 @@ function X(e, t, n, r) {
       if (null != n) {
         let e = M.default.extractTimestamp(n);
         if (Date.now() - e > J) return 8;
-        if (Date.now() - e > q) return 6
+        if (Date.now() - e > X) return 6
       }
       if (r.isThread()) {
-        let e = (0, x.l)(r);
+        let e = (0, _.l)(r);
         return e === k.CP.ALL_MESSAGES ? 4 : e === k.CP.NO_MESSAGES ? 7 : 5
       } {
         let n = R.Ay.getChannelMessageNotifications(e, t),
@@ -389,7 +389,7 @@ function X(e, t, n, r) {
     messages: []
   }))
 }
-let q = 2 * Chunk927813.A.Millis.DAY,
+let X = 2 * Chunk927813.A.Millis.DAY,
   J = 10 * Chunk927813.A.Millis.DAY;
 
 function Q(e) {

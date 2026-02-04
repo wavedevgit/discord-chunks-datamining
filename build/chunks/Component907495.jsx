@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 907495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => ec
@@ -174,8 +174,8 @@ function ei(e) {
     canPublish: m,
     canReact: g,
     canConfigureJoin: A,
-    canReply: v,
-    canStartThread: E,
+    canReply: E,
+    canStartThread: v,
     canViewThread: C,
     canForward: S,
     isExpanded: x,
@@ -200,13 +200,13 @@ function ei(e) {
       author: d
     } = n, h = (0, u.bG)([D.A], () => D.A.getGuild(t.guild_id), [t.guild_id]), m = (0, u.bG)([w.default], () => w.default.getId()), g = (0, N.Id)(t), A = (0, N.s5)(t), {
       firstMessage: y
-    } = (0, u.bG)([b.A], () => b.A.getMessage(t.id), [t.id]), v = P.jW.useSetting(), E = P.Q_.useSetting(), C = (0, u.bG)([M.A], () => null == t.guild_id || M.A.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.bG)([b.A], () => b.A.getMessage(t.id), [t.id]), E = P.jW.useSetting(), v = P.Q_.useSetting(), C = (0, u.bG)([M.A], () => null == t.guild_id || M.A.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: S,
       canAddNewReactions: x
-    } = (0, u.cf)([k.A], () => ({
-      canAddNewReactions: C && k.A.can(Z.xBc.ADD_REACTIONS, t),
-      canManageMessages: k.A.can(Z.xBc.MANAGE_MESSAGES, t)
-    }), [t, C]), R = (0, j.u)(t, n), L = (0, N.n)(t, n), G = (0, N.R)(n), F = (0, u.bG)([O.A], () => null != t.guild_id && O.A.isLurking(t.guild_id), [t]), z = d.id === m, Y = (S || n.canDeleteOwnMessage(m)) && g && !Z.MRS.UNDELETABLE.has(n.type);
+    } = (0, u.cf)([L.A], () => ({
+      canAddNewReactions: C && L.A.can(Z.xBc.ADD_REACTIONS, t),
+      canManageMessages: L.A.can(Z.xBc.MANAGE_MESSAGES, t)
+    }), [t, C]), R = (0, j.u)(t, n), k = (0, N.n)(t, n), G = (0, N.R)(n), F = (0, u.bG)([O.A], () => null != t.guild_id && O.A.isLurking(t.guild_id), [t]), z = d.id === m, Y = (S || n.canDeleteOwnMessage(m)) && g && !Z.MRS.UNDELETABLE.has(n.type);
     n.type === Z.lAJ.AUTO_MODERATION_ACTION && (Y = Y && S), t.isModeratorReportChannel() && (Y = Y && n.id !== (null == y ? true : y.id) && !(0, K.A)(n));
     let q = (0, H.ul)(n),
       J = (0, V.A)(n, t),
@@ -216,14 +216,14 @@ function ei(e) {
       } = (0, W.A)({
         channel: t,
         canChat: C,
-        renderReactions: v,
+        renderReactions: E,
         canAddNewReactions: x,
         isLurking: F,
         isActiveChannelOrUnarchivableThread: g
       }),
       $ = t.type === Z.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has(Z.GuildFeatures.NEWS) && (z || S) && (0, f.A)(n),
       ee = t.getGuildId(),
-      et = null != ee && n.type === Z.lAJ.USER_JOIN && k.A.canWithPartialContext(Z.xBc.MANAGE_GUILD, {
+      et = null != ee && n.type === Z.lAJ.USER_JOIN && L.A.canWithPartialContext(Z.xBc.MANAGE_GUILD, {
         guildId: ee
       }),
       en = (0, _.m)(n),
@@ -243,12 +243,12 @@ function ei(e) {
       canDelete: Y,
       canReport: q,
       canReply: R,
-      canStartThread: L,
+      canStartThread: k,
       canViewThread: G,
       canForward: en,
       canCopy: U.p5,
-      hasDeveloperMode: E,
-      canReact: !Q && v,
+      hasDeveloperMode: v,
+      canReact: !Q && E,
       canPublish: $,
       canConfigureJoin: et,
       isExpanded: ei && !ea && !l && !r && !i,
@@ -261,7 +261,7 @@ function ei(e) {
       isFocused: o
     }
   }(e), en = r.useRef(null), ei = r.useCallback(() => {
-    R || L.default.track(Z.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    R || k.default.track(Z.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id,
       location: "expanding_buttons"
@@ -299,11 +299,11 @@ function ei(e) {
         label: n.pinned ? Q.intl.string(Q.t["Bse+F/"]) : Q.intl.string(Q.t.CvQ18w),
         icon: d.tsw,
         onClick: e => (0, Y.rS)(t, n, e)
-      }, "pin") : null, E && S ? (0, l.jsx)(z.qv, {
+      }, "pin") : null, v && S ? (0, l.jsx)(z.qv, {
         label: Q.intl.string(Q.t.rBIGBL),
         icon: d.ysw,
         onClick: () => (0, Y.Nw)(t, n)
-      }, "thread") : null, v && h ? (0, l.jsx)(z.qv, {
+      }, "thread") : null, E && h ? (0, l.jsx)(z.qv, {
         label: Q.intl.string(Q.t["5IEsGx"]),
         icon: d.W4J,
         onClick: e => (0, Y.$b)(t, n, e)
@@ -322,7 +322,7 @@ function ei(e) {
         channel: t,
         message: n
       })]
-    }) : null, v && !h ? (0, l.jsx)(z.qv, {
+    }) : null, E && !h ? (0, l.jsx)(z.qv, {
       label: Q.intl.string(Q.t["5IEsGx"]),
       icon: d.W4J,
       onClick: e => (0, Y.$b)(t, n, e)
@@ -334,11 +334,11 @@ function ei(e) {
       label: Q.intl.string(Q.t.I3ltXO),
       icon: y.A,
       onClick: () => (0, Y.Z4)(t, n)
-    }, "forward") : null, E && !S ? (0, l.jsx)(z.qv, {
+    }, "forward") : null, v && !S ? (0, l.jsx)(z.qv, {
       label: Q.intl.string(Q.t.rBIGBL),
       icon: d.ysw,
       onClick: () => (0, Y.Nw)(t, n)
-    }, "thread") : null, !E && C ? (0, l.jsx)(z.qv, {
+    }, "thread") : null, !v && C ? (0, l.jsx)(z.qv, {
       label: Q.intl.string(Q.t["39d0Wj"]),
       icon: d.ysw,
       onClick: () => (0, Y.mF)(t, n)
@@ -411,7 +411,7 @@ function ea(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, u.bG)([v.A], () => null != v.A.getMessage(n.id), [n.id]), i = null == n.interaction || null != n.interactionData && (0, E.Bl)(n.interactionData);
+  } = e, r = (0, u.bG)([E.A], () => null != E.A.getMessage(n.id), [n.id]), i = null == n.interaction || null != n.interactionData && (0, v.Bl)(n.interactionData);
   return (0, l.jsxs)(l.Fragment, {
     children: [!r && i && (0, l.jsx)(z.qv, {
       label: Q.intl.string(Q.t["5911Lb"]),

@@ -52,7 +52,7 @@ function M(e) {
     markAsDismissed: s
   } = e;
   return (0, r.jsx)(F, {
-    asset: (0, r.jsx)(x.b, {
+    asset: (0, r.jsx)(_.b, {
       className: i()(w.Sl, w.SV)
     }),
     title: P.intl.formatToPlainString(T.default["Zg/m9K"], {
@@ -114,7 +114,7 @@ function k(e) {
     onActivate: c,
     isLoading: u,
     error: d
-  } = (0, _.A)(t, n[0]), h = (0, A.A)(n[0], true);
+  } = (0, x.A)(t, n[0]), h = (0, A.A)(n[0], true);
   if ((0, v.A)(d), 0 === n.length) return;
   let g = n.length >= 3 ? P.intl.formatToPlainString(T.default["6Sv+3M"], {
       perk: n[0].title,
@@ -128,7 +128,7 @@ function k(e) {
     m = 1 === n.length;
   return (0, r.jsx)(F, {
     size: 1 === n.length ? "video" : "lg",
-    asset: n.length > 1 ? (0, r.jsx)(x.b, {
+    asset: n.length > 1 ? (0, r.jsx)(_.b, {
       className: i()(w.Sl, w.SV)
     }) : (0, r.jsx)("img", {
       alt: "",

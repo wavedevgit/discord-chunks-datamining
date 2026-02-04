@@ -85,8 +85,8 @@ let B = Chunk64700.memo(function e(t) {
       treatSpam: W
     } = t,
     z = L.sl8.has(o.type) ? o.messageReference : true,
-    X = (0, a.bG)([h.A], () => h.A.getMessageByReference(z)),
-    q = (0, a.bG)([f.A], () => o.type === L.lAJ.THREAD_STARTER_MESSAGE && X.state === h.a.LOADED ? f.A.getChannel(X.message.channel_id) : null),
+    q = (0, a.bG)([h.A], () => h.A.getMessageByReference(z)),
+    X = (0, a.bG)([f.A], () => o.type === L.lAJ.THREAD_STARTER_MESSAGE && q.state === h.a.LOADED ? f.A.getChannel(q.message.channel_id) : null),
     J = g.X6.useSetting(),
     Q = g.hD.useSetting(),
     Z = g.rs.useSetting(),
@@ -95,7 +95,7 @@ let B = Chunk64700.memo(function e(t) {
     et = (0, d.A)(null == i ? true : i.id),
     {
       disableReactionCreates: en
-    } = (0, _.A)(i),
+    } = (0, x.A)(i),
     {
       content: er,
       hasSpoilerEmbeds: el,
@@ -107,9 +107,9 @@ let B = Chunk64700.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    es = (0, x.Ay)(o),
+    es = (0, _.Ay)(o),
     ea = (0, a.bG)([f.A], () => o.hasFlag(L.pr7.HAS_THREAD) && f.A.getChannel(b.default.castMessageIdAsChannelId(o.id))),
-    eo = o.type === L.lAJ.THREAD_STARTER_MESSAGE && X.state === h.a.LOADED && null != q,
+    eo = o.type === L.lAJ.THREAD_STARTER_MESSAGE && q.state === h.a.LOADED && null != X,
     ec = !eo && true === l,
     eu = (0, I.A)({
       message: o,
@@ -121,8 +121,8 @@ let B = Chunk64700.memo(function e(t) {
     eh = (0, p.A)(o),
     eg = (0, E.fF)(o);
   return eo ? (0, r.jsx)(e, V(U({}, t), {
-    message: X.message,
-    channel: q,
+    message: q.message,
+    channel: X,
     hasThread: false
   })) : (m.A.isBlockedForMessage(o) ? l = M.t["+FcYM/"] : m.A.isIgnoredForMessage(o) ? l = M.t["VFWjc+"] : (0, O.kf)(o) && W && (l = M.t.xfkfTK), true !== l) ? (0, r.jsx)(H, {
     className: G,
@@ -136,7 +136,7 @@ let B = Chunk64700.memo(function e(t) {
       [k.XN]: Y,
       [k._A]: t.isGroupStart
     }),
-    childrenRepliedMessage: (0, R.A)(o, i, z, X, D),
+    childrenRepliedMessage: (0, R.A)(o, i, z, q, D),
     childrenHeader: (0, T.A)(V(U({}, t), {
       author: es,
       guildId: i.guild_id

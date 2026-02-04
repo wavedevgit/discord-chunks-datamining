@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 928764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => V
@@ -54,7 +54,7 @@ function B(e) {
   return a ? (0, l.jsx)(u.Button, {
     size: "sm",
     variant: "secondary",
-    text: i ? L.intl.string(U.default["2Y4vkk"]) : L.intl.string(U.default.YIbR4r),
+    text: i ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
     onClick: () => {
       true === o.w.get(x.f) ? d() : (0, u.mMO)(async () => {
         let {
@@ -122,7 +122,7 @@ function V(e) {
       (0, M.jC)({
         postId: Y.id,
         location: {
-          section: k.JJy.CHANNEL_HEADER
+          section: L.JJy.CHANNEL_HEADER
         }
       }), (0, w.C)((0, P.af)(Y, et), () => z(true))
     },
@@ -145,7 +145,7 @@ function V(e) {
         }),
         children: [!es && !X && null != en && (0, l.jsx)("div", {
           className: F.reactions,
-          children: (0, l.jsx)(E.qT, {
+          children: (0, l.jsx)(v.qT, {
             message: q,
             readOnly: false,
             useChatFontScaling: false,
@@ -160,7 +160,7 @@ function V(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, l.jsx)(v.A, {
+        }), (0, l.jsx)(E.A, {
           message: q,
           channel: Y,
           disableReactionCreates: true,
@@ -180,40 +180,40 @@ function V(e) {
             [G.w$]: !es
           }),
           isForumToolbar: true,
-          children: !es && L.intl.string(L.t.xpOyTO)
+          children: !es && k.intl.string(k.t.xpOyTO)
         })]
       }), (0, l.jsxs)("div", {
         className: G.Uo,
         children: [ee ? (0, l.jsx)(B, {
           channel: Y
         }) : !Q && (0, l.jsx)(c.m, {
-          text: L.intl.string(L.t.F7oeDv),
+          text: k.intl.string(k.t.F7oeDv),
           children: (0, l.jsx)(u.Button, {
             icon: ec,
             size: "sm",
             variant: "secondary",
-            text: J ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+h"]),
+            text: J ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
             onClick: () => {
               J ? T.A.leaveThread(Y, "Forum Toolbar") : T.A.joinThread(Y, "Forum Toolbar")
             }
           })
         }), (0, l.jsx)(c.m, {
-          text: L.intl.string(L.t.WqhZss),
+          text: k.intl.string(k.t.WqhZss),
           children: W ? (0, l.jsx)(u.Button, {
             icon: u.A9s,
             size: "sm",
             variant: "secondary",
             onClick: eo,
-            text: L.intl.string(L.t.t5VZ88)
+            text: k.intl.string(k.t.t5VZ88)
           }) : (0, l.jsx)(u.K0, {
             icon: u.qYV,
             size: "sm",
             variant: "secondary",
             onClick: eo,
-            "aria-label": L.intl.string(L.t.WqhZss)
+            "aria-label": k.intl.string(k.t.WqhZss)
           })
         }), !n && (0, l.jsx)(c.m, {
-          text: L.intl.string(L.t.nFP4oa),
+          text: k.intl.string(k.t.nFP4oa),
           children: (0, l.jsx)(u.K0, {
             icon: u.Dl6,
             size: "sm",
@@ -226,7 +226,7 @@ function V(e) {
                 jumpType: h.US.INSTANT
               })
             },
-            "aria-label": L.intl.string(L.t.nFP4oa)
+            "aria-label": k.intl.string(k.t.nFP4oa)
           })
         })]
       })]

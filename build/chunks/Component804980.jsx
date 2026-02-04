@@ -1,8 +1,8 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 804980, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => U,
-  LN: () => k
+  LN: () => L
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk677406 = require("./677406.js");
 let M = ["embedded_background"];
 
-function k(e) {
+function L(e) {
   let {
     avatarSize: t,
     guildId: n,
@@ -65,7 +65,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   var t, n;
   let {
     participants: i,
@@ -76,24 +76,24 @@ function L(e) {
     var e;
     return null != (e = d.Ay.getEmbeddedActivitiesForChannel(f.id).find(e => e.applicationId === o.id)) ? e : d.Ay.getEmbeddedActivitiesForStartingChannel(f.id).find(e => e.applicationId === o.id)
   }), {
-    analyticsLocations: v
-  } = (0, C.Ay)(), E = (0, u.p)(), O = w.Ay.getName(f.getGuildId(), f.id, null == _ ? true : _[0]), x = (0, m.vG)({
+    analyticsLocations: E
+  } = (0, C.Ay)(), v = (0, u.p)(), O = w.Ay.getName(f.getGuildId(), f.id, null == _ ? true : _[0]), x = (0, m.vG)({
     userId: null == (n = N.default.getCurrentUser()) ? true : n.id,
     channelId: f.id,
     application: o
-  }) === m.Gy.CAN_JOIN, j = null != (t = f.getGuildId()) ? t : true, T = r.useId(), M = o.id, L = r.useMemo(() => ({
+  }) === m.Gy.CAN_JOIN, j = null != (t = f.getGuildId()) ? t : true, T = r.useId(), M = o.id, k = r.useMemo(() => ({
     channel: f,
     type: "channel"
   }), [f]), {
     submitting: U
   } = (0, S.A)({
     applicationId: M,
-    context: L,
+    context: k,
     launchingComponentId: T
   });
   return (0, l.jsxs)("div", {
     className: D.Yi,
-    children: [(0, l.jsx)(k, {
+    children: [(0, l.jsx)(L, {
       avatarSize: b,
       guildId: j,
       channelId: f.id,
@@ -125,8 +125,8 @@ function L(e) {
           e.stopPropagation(), null != y && (0, h.A)({
             applicationId: y.applicationId,
             activityChannelId: f.id,
-            locationObject: E.location,
-            analyticsLocations: v,
+            locationObject: v.location,
+            analyticsLocations: E,
             componentId: T
           })
         },
@@ -155,13 +155,13 @@ function U(e) {
     applicationId: u,
     names: M,
     size: 1024
-  }), y = !i && h, S = !h, I = !h && !i, N = (0, s.bG)([T.A, j.A], () => (0, E.A)({
+  }), y = !i && h, S = !h, I = !h && !i, N = (0, s.bG)([T.A, j.A], () => (0, v.A)({
     LayerStore: T.A,
     PopoutWindowStore: j.A
   }));
   return r.useEffect(() => {
     if (y && null != d && !N) {
-      let e = (0, v.A)(d.location.id, d.applicationId);
+      let e = (0, E.A)(d.location.id, d.applicationId);
       (0, _.cK)(e)
     }
   }, [y, d, N]), (0, l.jsx)(C.f5, {
@@ -170,12 +170,12 @@ function U(e) {
       className: D.kL,
       children: [y && null != d && (0, l.jsx)(b.A, {
         className: D.pU,
-        embedId: (0, v.A)(d.location.id, u)
+        embedId: (0, E.A)(d.location.id, u)
       }), S && null != p && null != m && "" !== m ? (0, l.jsx)("img", {
         className: D.j0,
         alt: p.name,
         src: m
-      }) : null, I && null != p && (0, l.jsx)(L, {
+      }) : null, I && null != p && (0, l.jsx)(k, {
         width: n,
         channel: o,
         participants: t.participants,

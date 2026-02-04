@@ -73,7 +73,7 @@ function S(e) {
       className: v.zr,
       children: [(0, r.jsx)(c.m, {
         asContainer: true,
-        text: _.intl.string(_.t.qJvTKQ),
+        text: x.intl.string(x.t.qJvTKQ),
         children: (0, r.jsx)(u.DUT, {
           onClick: () => {
             (0, m.A)({
@@ -99,7 +99,7 @@ function S(e) {
           })
         })
       }), (0, r.jsx)(u.NPJ, {
-        theme: x.NJ8.DARK,
+        theme: _.NJ8.DARK,
         children: e => (0, r.jsx)(u.DUT, {
           onClick: l,
           className: s()(e, v.lg),
@@ -122,7 +122,7 @@ function I(e) {
     inPopout: a
   } = e;
   l.useEffect(() => {
-    O.default.track(x.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    O.default.track(_.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -159,7 +159,7 @@ function I(e) {
         }({}, n), s = s = {
           guild: i,
           channel: t,
-          source: x.PE1.ACTIVITY_ENTRY_POINT_TILE
+          source: _.PE1.ACTIVITY_ENTRY_POINT_TILE
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -192,7 +192,7 @@ function I(e) {
     value: o,
     children: (0, r.jsx)(u.NPJ, {
       disableAdaptiveTheme: true,
-      theme: x.NJ8.MIDNIGHT,
+      theme: _.NJ8.MIDNIGHT,
       children: e => (0, r.jsxs)(j.A, {
         className: s()(v.zr, v.co, e),
         children: [(0, r.jsx)("img", {
@@ -205,12 +205,12 @@ function I(e) {
           children: [(0, r.jsx)(u.Button, {
             variant: "secondary",
             icon: u.Rvf,
-            text: _.intl.string(_.t["EE+P0H"]),
+            text: x.intl.string(x.t["EE+P0H"]),
             onClick: d
           }), (0, r.jsx)(u.Button, {
             variant: "secondary",
             icon: u.k9F,
-            text: _.intl.string(_.t.qnFavR),
+            text: x.intl.string(x.t.qnFavR),
             onClick: p
           })]
         })]
@@ -228,7 +228,7 @@ function N(e) {
     userParticipantCount: c
   } = e;
   (0, d.Ay)(() => {
-    O.default.track(x.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    O.default.track(_.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -250,7 +250,7 @@ function N(e) {
       children: [o > 300 ? (0, r.jsx)(u.Text, {
         className: v.R_,
         variant: o > 550 ? "text-md/semibold" : "text-sm/semibold",
-        children: _.intl.string(_.t["7BKMcG"])
+        children: x.intl.string(x.t["7BKMcG"])
       }) : null, (0, r.jsx)("div", {
         className: s()(v.Di, {
           [v.qy]: o <= 300
@@ -265,7 +265,7 @@ function N(e) {
       }), (0, r.jsxs)(u.DUT, {
         className: v.HI,
         onClick: function() {
-          O.default.track(x.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          O.default.track(_.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
@@ -273,12 +273,12 @@ function N(e) {
         },
         children: [(0, r.jsx)(y.A, {}), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
-          children: _.intl.string(_.t["5E9SB9"])
+          children: x.intl.string(x.t["5E9SB9"])
         })]
       }), (0, r.jsx)(u.DUT, {
         className: v.cG,
         onClick: function() {
-          O.default.track(x.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          O.default.track(_.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c

@@ -89,7 +89,7 @@ function A(e) {
     analyticsLocation: y,
     className: O,
     size: j = "sm"
-  } = e, x = null == l ? true : l.getGuildId(), _ = null == l ? true : l.id, v = (0, o.bG)([p.A], () => null != x ? p.A.getGuild(x) : null, [x]), E = (0, o.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(_), [_]);
+  } = e, _ = null == l ? true : l.getGuildId(), x = null == l ? true : l.id, v = (0, o.bG)([p.A], () => null != _ ? p.A.getGuild(_) : null, [_]), E = (0, o.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(x), [x]);
   if (!(null != v && null != l && h.A.can(g.xBc.CREATE_INSTANT_INVITE, l))) return null;
   let C = f.intl.string(f.t.VINpSK);
   return null != t ? C = f.intl.string(f.t["6VQaqd"]) : null != n && (C = f.intl.string(f.t["OzOM/q"])), (0, r.jsxs)(r.Fragment, {

@@ -31,12 +31,12 @@ let g = (0, Chunk400492.aN)("poggermode_applause", Chunk312671.A.getSoundpack())
     if (0 === b.length || !O() || m) return;
     m = true;
     let [e, t] = b[b.length - 1];
-    (0, i.Ak)(e, t), A = setTimeout(x, 1e3)
+    (0, i.Ak)(e, t), A = setTimeout(_, 1e3)
   },
-  x = () => {
+  _ = () => {
     b.pop(), m = false, j()
   },
-  _ = function(e) {
+  x = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
       n = o.A.isConnected();
     b.push([e, t * (n ? .1 : 1)]), j()
@@ -75,7 +75,7 @@ class v extends Chunk272355.A {
     r && i >= 7 ? f || (g.loop(), f = true) : y()
   }
   playAchievementUnlockSound() {
-    O() && _("poggermode_achievement_unlock")
+    O() && x("poggermode_achievement_unlock")
   }
 }
 let E = new v

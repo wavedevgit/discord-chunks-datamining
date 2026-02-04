@@ -27,8 +27,8 @@ function y(e) {
     powerup: y,
     compact: O,
     iconSize: j,
-    size: x,
-    grow: _,
+    size: _,
+    grow: x,
     className: v,
     onError: E
   } = e, {
@@ -71,8 +71,8 @@ function y(e) {
     "aria-label": null != L ? L : R ? b.intl.string(m.default.TZsu1U) : true,
     children: (0, r.jsx)("div", {
       className: s()(A.zr, {
-        [A._o]: _,
-        [A.nB]: !_
+        [A._o]: x,
+        [A.nB]: !x
       }, v),
       children: (() => {
         let {
@@ -133,8 +133,8 @@ function y(e) {
             e.stopPropagation(), R ? P() : C()
           },
           loading: S || N,
-          fullWidth: _,
-          size: null != x ? x : O ? "md" : true,
+          fullWidth: x,
+          size: null != _ ? _ : O ? "md" : true,
           text: e,
           minWidth: 0
         }, O ? {

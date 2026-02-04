@@ -41,7 +41,7 @@ function N(e) {
   } = (0, c.cf)([j.A], () => ({
     isBlocked: j.A.isBlockedForMessage(n),
     isIgnored: j.A.isIgnoredForMessage(n)
-  }), [n]), o = (0, m.X4)(n), d = l.useContext(g.A), [O, _] = l.useState(false), v = l.useCallback(e => {
+  }), [n]), o = (0, m.X4)(n), d = l.useContext(g.A), [O, x] = l.useState(false), v = l.useCallback(e => {
     "A" !== e.target.nodeName && (p.A.updateChatOpen(n.channel_id, true), h.A.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
@@ -67,10 +67,10 @@ function N(e) {
   return (0, r.jsxs)(u.DUT, {
     className: S.oR,
     onMouseEnter: () => {
-      _(true)
+      x(true)
     },
     onMouseLeave: () => {
-      _(false)
+      x(false)
     },
     onClick: v,
     children: [(0, r.jsxs)("div", {
@@ -82,7 +82,7 @@ function N(e) {
       }), null != R ? null : T]
     }), (0, r.jsx)("img", {
       alt: "",
-      src: (null == o ? true : o.guildMemberAvatar) != null && null != d ? (0, x.s7)({
+      src: (null == o ? true : o.guildMemberAvatar) != null && null != d ? (0, _.s7)({
         guildId: d,
         userId: n.author.id,
         avatar: o.guildMemberAvatar
@@ -158,7 +158,7 @@ function T(e) {
       height: f.current[e.id],
       y: m[e.id]
     })),
-    x = (0, u.pnh)(j, {
+    _ = (0, u.pnh)(j, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -202,7 +202,7 @@ function T(e) {
       onMouseLeave: () => {
         p(false)
       },
-      children: x((e, t) => (0, r.jsx)(o.animated.div, {
+      children: _((e, t) => (0, r.jsx)(o.animated.div, {
         ref: e => A(t.message.id, null != e ? e.offsetHeight : null),
         className: S.T_,
         style: e,

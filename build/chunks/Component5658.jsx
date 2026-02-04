@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 5658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk391900 = require("./391900.js");
 
-function x(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
   }
   return e
 }
-let _ = Chunk64700.memo(function(e) {
+let x = Chunk64700.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -79,7 +79,7 @@ let _ = Chunk64700.memo(function(e) {
     return (0, r.jsx)(i.animated.div, {
       ref: s,
       style: g,
-      children: (0, r.jsx)(v, x({}, e))
+      children: (0, r.jsx)(v, _({}, e))
     })
   }),
   v = Chunk64700.memo(function(e) {
@@ -122,7 +122,7 @@ let _ = Chunk64700.memo(function(e) {
             className: j.GC,
             children: [(0, r.jsx)(f.A, {
               channel: o
-            }), (0, r.jsx)(E, x({}, e))]
+            }), (0, r.jsx)(E, _({}, e))]
           })
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(A.A, {

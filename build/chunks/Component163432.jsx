@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 163432, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => b,
@@ -53,7 +53,7 @@ function A(e, t) {
   let _ = r.useRef({}),
     {
       visibleParticipants: y,
-      participantTileWidth: v
+      participantTileWidth: E
     } = r.useMemo(() => {
       let n = Date.now(),
         r = (0, i.sortBy)(t, e => (function(e) {
@@ -75,10 +75,10 @@ function A(e, t) {
         b = null;
       false !== A && (b = p[A], p.splice(A, 1));
       let y = null == b || h ? e : e - l - o,
-        v = Math.max(0, Math.min(Math.floor((y - o) / (s + o)), u, t.length)),
-        E = Math.min((y - o) / v - o, l),
-        O = Math.max(0, v - f.length),
-        C = f.slice(0, v),
+        E = Math.max(0, Math.min(Math.floor((y - o) / (s + o)), u, t.length)),
+        v = Math.min((y - o) / E - o, l),
+        O = Math.max(0, E - f.length),
+        C = f.slice(0, E),
         S = p.slice(0, O),
         x = Array(O);
       if (O > 0) {
@@ -97,14 +97,14 @@ function A(e, t) {
       let j = x.filter(c.Vq);
       _.current = (0, i.keyBy)((0, i.range)(j.length), e => j[e].id);
       let I = [...C, ...j];
-      return null != b && (h && I.length >= v ? I[Math.max(0, I.length - 1)] = b : I.push(b)), {
+      return null != b && (h && I.length >= E ? I[Math.max(0, I.length - 1)] = b : I.push(b)), {
         visibleParticipants: I,
-        participantTileWidth: E
+        participantTileWidth: v
       }
     }, [e, t, A, p, h, u, o, s, l]);
   return {
     visibleParticipants: y,
-    participantTileWidth: v
+    participantTileWidth: E
   }
 }
 

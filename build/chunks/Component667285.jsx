@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 667285, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -26,10 +26,10 @@ function g(e) {
   } = e, _ = (0, r.bG)([c.A], () => c.A.isBlocked(A.getRecipientId()));
   (0, s.A)(A.id);
   let y = (0, o.A)(A.id),
-    v = A.isSystemDM(),
-    E = _ && !v && !A.isMultiUserDM(),
+    E = A.isSystemDM(),
+    v = _ && !E && !A.isMultiUserDM(),
     O = {};
-  if (v) {
+  if (E) {
     let e = y ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
     O.message = m.intl.string(m.t.Bt2N7D), O.subtitle = m.intl.string(m.t["n/Vzkw"]), O.buttonText = e, O.buttonIcon = y ? i.tfB : true, O.onButtonClick = () => {
       if (y) {
@@ -41,7 +41,7 @@ function g(e) {
       }
       open(d.A.getArticleURL(p.MVz.SYSTEM_DMS))
     }, O.imageSrc = n(388668)
-  } else E && (O.message = m.intl.string(m.t["9T6N5/"]), O.buttonText = m.intl.string(m.t.XyHpKH), O.onButtonClick = () => {
+  } else v && (O.message = m.intl.string(m.t["9T6N5/"]), O.buttonText = m.intl.string(m.t.XyHpKH), O.onButtonClick = () => {
     a.A.unblockUser(A.getRecipientId())
   });
   return (0, l.jsx)(h.A, (t = function(e) {

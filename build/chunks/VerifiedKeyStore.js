@@ -8,7 +8,7 @@ var r, Chunk311907 = require("./311907.js"),
   Chunk73153 = require("./73153.js"),
   Chunk661191 = require("./661191.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,30 +29,30 @@ class u extends(r = Chunk311907.Ay.PersistedStore) {
   }
   getKeyTrustedAt(e, t) {
     var n;
-    let r = (0, i.uo)(t);
+    let r = (0, l.uo)(t);
     return null == (n = c[e]) ? true : n[r]
   }
   isKeyVerified(e, t) {
     return null != this.getKeyTrustedAt(e, t)
   }
   getUserIds() {
-    return s.default.keys(c)
+    return o.default.keys(c)
   }
   getUserVerifiedKeys(e) {
     return c[e]
   }
 }
-o(u, "displayName", "VerifiedKeyStore"), o(u, "persistKey", "VerifiedKeyStore");
+s(u, "displayName", "VerifiedKeyStore"), s(u, "persistKey", "VerifiedKeyStore");
 let d = new u(Chunk73153.h, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function(e) {
     var t;
     let n, {
         userId: r,
-        key: l
+        key: i
       } = e,
       a = (n = null != (t = c[r]) ? t : {}, c[r] = n, n),
-      s = new Uint8Array(l);
-    a[(0, i.uo)(s)] = Date.now()
+      o = new Uint8Array(i);
+    a[(0, l.uo)(o)] = Date.now()
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function(e) {
     let {
@@ -60,9 +60,9 @@ let d = new u(Chunk73153.h, {
       serializedKey: n
     } = e, r = c[t];
     if (null == r) returnfalse;
-    let l = delete r[n],
-      i = false;
-    return 0 === Object.keys(r).length && (delete c[t], i = true), l || i
+    let i = delete r[n],
+      l = false;
+    return 0 === Object.keys(r).length && (delete c[t], l = true), i || l
   },
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function(e) {
     let {

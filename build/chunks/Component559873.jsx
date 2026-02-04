@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk471135 = require("./471135.js");
 
-function x(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function x(e) {
   return e
 }
 
-function _(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -145,7 +145,7 @@ function C(e) {
             viewId: p
           }), e.stopPropagation(), A(t = !m), t ? O(n.id, d) : v(n.id, d)
         },
-        children: (0, r.jsx)(o, _(x({}, e), {
+        children: (0, r.jsx)(o, x(_({}, e), {
           message: n,
           "aria-label": i,
           className: j.gE,
@@ -175,7 +175,7 @@ let S = {
   [Chunk849077.kR.BOOKMARK]: {
     type: "menu",
     label: Chunk985018.intl.string(Chunk985018.t["9p3D9p"]),
-    Icon: e => null != h.A.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.cFy, x({}, e)) : (0, r.jsx)(a.c$8, x({}, e)),
+    Icon: e => null != h.A.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.cFy, _({}, e)) : (0, r.jsx)(a.c$8, _({}, e)),
     interactionType: Chunk932883.X8.BOOKMARK,
     Menu: e => {
       let {
@@ -185,7 +185,7 @@ let S = {
         message: t,
         savedMessage: l
       });
-      return (0, r.jsxs)(a.W1t, _(x({
+      return (0, r.jsxs)(a.W1t, x(_({
         "data-menu-migrated-auto": true
       }, n), {
         navId: "message-reminder-create",
@@ -233,11 +233,11 @@ let S = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(g.A, _(x({}, n), {
+      return t.isThread() ? (0, r.jsx)(g.A, x(_({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqb"])
-      })) : (0, r.jsx)(u.A, _(x({}, n), {
+      })) : (0, r.jsx)(u.A, x(_({}, n), {
         channel: t,
         navId: "channel-context",
         label: O.intl.string(O.t.Xm41aV)
@@ -267,12 +267,12 @@ function I(e) {
       let t = S[e];
       switch (t.type) {
         case "standard":
-          return (0, r.jsx)(E, _(x({}, t), {
+          return (0, r.jsx)(E, x(_({}, t), {
             actionType: e,
             message: n
           }), e);
         case "menu":
-          return (0, r.jsx)(C, _(x({}, t), {
+          return (0, r.jsx)(C, x(_({}, t), {
             actionType: e,
             channel: i,
             message: n

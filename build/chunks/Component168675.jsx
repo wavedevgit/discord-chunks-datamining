@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 168675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => X
+  A: () => q
 }), require("./733351.js"), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -67,7 +67,7 @@ function W(e) {
 }
 let z = Chunk355622.oU.THREAD_CREATION;
 
-function X(e) {
+function q(e) {
   let {
     parentChannelId: t,
     parentMessageId: n,
@@ -84,7 +84,7 @@ function X(e) {
         children: [(0, r.jsx)(h.A, {
           channel: i,
           draftType: N.C.FirstThreadMessage
-        }), (0, r.jsx)(q, {
+        }), (0, r.jsx)(X, {
           parentChannelId: t
         }), (0, r.jsx)(J, {
           parentChannel: i,
@@ -96,7 +96,7 @@ function X(e) {
   })
 }
 
-function q(e) {
+function X(e) {
   let {
     parentChannelId: t
   } = e, n = l.useCallback(() => {
@@ -114,17 +114,17 @@ function q(e) {
       }
     }) : (0, U.bA)(t)
   }, [t]);
-  return (0, r.jsxs)(_.Ay, {
-    toolbar: (0, r.jsx)(_.Ay.Icon, {
+  return (0, r.jsxs)(x.Ay, {
+    toolbar: (0, r.jsx)(x.Ay.Icon, {
       icon: o.PGe,
       tooltip: F.intl.string(F.t.cpT0Cq),
       onClick: n
     }),
-    children: [(0, r.jsx)(_.Ay.Icon, {
+    children: [(0, r.jsx)(x.Ay.Icon, {
       icon: o.ysw,
       disabled: true,
       "aria-label": F.intl.string(F.t["7Xm5QI"])
-    }), (0, r.jsx)(_.Ay.Title, {
+    }), (0, r.jsx)(x.Ay.Title, {
       children: F.intl.string(F.t["4WNcpu"])
     })]
   })
@@ -192,7 +192,7 @@ function J(e) {
     }(n, m),
     j = (0, G.EN)(n),
     {
-      isGeneratingAI: _,
+      isGeneratingAI: x,
       enableAIFeatures: v,
       getThreadNameInputAccessory: S
     } = (0, V.C)({
@@ -296,7 +296,7 @@ function J(e) {
           fade: true,
           children: (0, r.jsxs)("div", {
             className: Y.bv,
-            children: [(0, r.jsxs)(x.Ay, {
+            children: [(0, r.jsxs)(_.Ay, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: s()(K.P0, Y.P0),
@@ -311,7 +311,7 @@ function J(e) {
                   updateThreadSettings: b,
                   error: I,
                   disabled: L,
-                  isGeneratingAI: _,
+                  isGeneratingAI: x,
                   enableAIFeatures: v,
                   getThreadNameInputAccessory: S
                 }), n.type === H.rbe.GUILD_TEXT ? (0, r.jsx)(Q, {
@@ -433,7 +433,7 @@ function $(e) {
     handler: m
   });
   let j = (0, a.bG)([P.A], () => P.A.can(H.xBc.ATTACH_FILES, t)),
-    x = (0, M.vr)(p, {
+    _ = (0, M.vr)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -444,7 +444,7 @@ function $(e) {
     }), (0, r.jsx)("div", {
       className: Y.xN,
       children: (0, r.jsx)(o.dzK, {
-        error: x
+        error: _
       })
     }), (0, r.jsx)(y.Ay, {
       type: z,
@@ -455,7 +455,7 @@ function $(e) {
       focused: h,
       className: s()(Y.gM, Y.Yy),
       innerClassName: s()(Y.SL, {
-        [Y.cr]: null != x
+        [Y.cr]: null != _
       }),
       onFocus: f,
       onBlur: m,

@@ -72,15 +72,15 @@ let N = Chunk64700.memo(function(e) {
         connectChannelDragSource: d,
         connectChannelDropTarget: f,
         disableManageChannels: j,
-        position: x,
+        position: _,
         sortingPosition: N,
         hideIcon: T,
         children: P
       } = e,
       w = (0, o.bG)([O.Ay], () => O.Ay.isChannelMuted(i.getGuildId(), i.id)),
       R = (0, o.bG)([b.A], () => b.A.isCollapsed(i.id)),
-      D = (0, o.bG)([y.A], () => y.A.can(_.xBc.MANAGE_CHANNELS, i));
-    t = null != N ? x > N ? E.mU : E.TR : E.fx;
+      D = (0, o.bG)([y.A], () => y.A.can(x.xBc.MANAGE_CHANNELS, i));
+    t = null != N ? _ > N ? E.mU : E.TR : E.fx;
     let L = l.useCallback(() => {
         R ? (0, h.fh)(i.id) : (0, h.Gv)(i.id)
       }, [i.id, R]),
@@ -99,7 +99,7 @@ let N = Chunk64700.memo(function(e) {
         }
       }, [i]),
       G = l.useCallback(() => {
-        let e = i.type === _.rbe.GUILD_CATEGORY ? null : i.type,
+        let e = i.type === x.rbe.GUILD_CATEGORY ? null : i.type,
           t = i.getGuildId();
         null != t && (0, p.mMO)(async () => {
           let {
@@ -240,7 +240,7 @@ let N = Chunk64700.memo(function(e) {
     let {
       category: t
     } = e, n = (0, o.bG)([j.A], () => j.A.isVoiceCategoryCollapsed(t.guild.id)), i = l.useCallback(() => {
-      n ? (0, x.T)(t.guild.id) : (0, x.E)(t.guild.id)
+      n ? (0, _.T)(t.guild.id) : (0, _.E)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsx)("div", {
       className: E.oA,
@@ -258,7 +258,7 @@ let N = Chunk64700.memo(function(e) {
       category: t,
       channel: n
     } = e, l = (0, o.bG)([j.A], () => j.A.isVoiceCategoryCollapsed(t.guild.id));
-    return l || null == n || n.record.type === _.rbe.GUILD_CATEGORY ? l ? (0, r.jsx)("li", {
+    return l || null == n || n.record.type === x.rbe.GUILD_CATEGORY ? l ? (0, r.jsx)("li", {
       className: E.fx,
       children: (0, r.jsx)("div", {
         className: s()(E.Ki, E._V),

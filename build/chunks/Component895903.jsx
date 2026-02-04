@@ -24,19 +24,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk529471 = require("./529471.js");
 
-function _(e) {
+function x(e) {
   let {
     onClick: t,
     className: n
   } = e, l = c.cNw;
   return (0, r.jsx)(d.A, {
     iconContainerClassName: s()({
-      [x.q8]: false
+      [_.q8]: false
     }),
     icon: (0, r.jsx)(l, {
       size: "custom",
       color: "currentColor",
-      className: x.Pz,
+      className: _.Pz,
       height: 20,
       width: 20
     }),
@@ -56,9 +56,9 @@ function v(e) {
     usersInSummary: l
   } = (0, y.A)(t.id);
   return (0, r.jsxs)("div", {
-    className: x.P1,
+    className: _.P1,
     children: [(0, r.jsx)(u.Ay, {
-      className: x.Ip,
+      className: _.Ip,
       guildId: t.guild_id,
       users: l,
       size: u.DN.SIZE_16
@@ -93,21 +93,21 @@ function E(e) {
     canCreateGuildEvent: u
   } = (0, f.nr)(t), d = (0, O.A)(t.id), y = l.useRef(null);
   return (0, r.jsxs)("div", {
-    className: x.kL,
+    className: _.kL,
     ref: y,
     children: [(0, r.jsx)(m.A, {
       eventTargetRef: y
     }), (0, r.jsxs)("div", {
-      className: x.Qs,
+      className: _.Qs,
       children: [(0, r.jsxs)("div", {
-        className: x.N1,
+        className: _.N1,
         children: [(0, r.jsx)(c.Heading, {
-          className: x.__invalid_title,
+          className: _.__invalid_title,
           variant: "heading-xxl/normal",
           children: j.intl.string(j.t.QGnDLs)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
-          className: x.VA,
+          className: _.VA,
           variant: "heading-lg/normal",
           children: j.intl.string(j.t.djfK36)
         })]
@@ -115,14 +115,14 @@ function E(e) {
         channelId: t.id,
         showDismiss: false
       }), i ? (0, r.jsx)(g.A, {
-        className: x.fN,
+        className: _.fN,
         channel: t
       }) : null, u ? (0, r.jsx)(p.A, {
-        className: x.fN,
+        className: _.fN,
         guildId: o
-      }) : null, i ? (0, r.jsx)(_, {
+      }) : null, i ? (0, r.jsx)(x, {
         className: s()({
-          [x.fN]: true
+          [_.fN]: true
         }),
         onClick: n
       }) : null, (0, r.jsx)(v, {

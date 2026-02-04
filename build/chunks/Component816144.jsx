@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 816144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => H
@@ -71,12 +71,12 @@ function H(e) {
     showingBanner: h
   } = e, p = (0, d.Ay)(n), {
     type: b
-  } = n, y = (0, i.bG)([E.default], () => n.isPrivate() ? E.default.getUser(n.getRecipientId()) : null), x = O.Ay.useUserTag(y), {
+  } = n, y = (0, i.bG)([v.default], () => n.isPrivate() ? v.default.getUser(n.getRecipientId()) : null), x = O.Ay.useUserTag(y), {
     canManageRoles: P,
     canReadMessageHistory: w
-  } = (0, i.cf)([v.A], () => ({
-    canManageRoles: v.A.can(M.xBc.MANAGE_ROLES, n),
-    canReadMessageHistory: v.A.can(M.xBc.READ_MESSAGE_HISTORY, n)
+  } = (0, i.cf)([E.A], () => ({
+    canManageRoles: E.A.can(M.xBc.MANAGE_ROLES, n),
+    canReadMessageHistory: E.A.can(M.xBc.READ_MESSAGE_HISTORY, n)
   })), R = (0, i.bG)([g.A], () => b === M.rbe.DM ? g.A.getMutualGuilds(n.getRecipientId()) : null, [n, b]), D = (0, u.A)(null != (t = null == y ? true : y.id) ? t : M.dJq), {
     authorizedAppToken: H,
     authorizedAppsFetchState: B
@@ -94,7 +94,7 @@ function H(e) {
       (null == y ? true : y.bot) && B === _.FetchState.NOT_FETCHED && o.A.fetch()
     }, [null == y ? true : y.bot, B]), n.isSystemDM()) return (0, l.jsx)(N.A, {
     channel: n,
-    children: L.intl.string(L.t.Rzvnig)
+    children: k.intl.string(k.t.Rzvnig)
   });
   if (b === M.rbe.DM) {
     let e;
@@ -126,7 +126,7 @@ function H(e) {
         variant: "heading-xl/medium",
         className: G.SX,
         children: x
-      }), L.intl.format(L.t["Qvg+6+"], {
+      }), k.intl.format(k.t["Qvg+6+"], {
         username: p
       }), (null == y ? true : y.isProvisional) && (0, l.jsx)(m.Y, {
         userId: y.id
@@ -137,19 +137,19 @@ function H(e) {
     if (n.isManaged()) return (0, l.jsxs)(S.Ay, {
       channelId: n.id,
       children: [(0, l.jsx)(S.cr, {
-        children: L.intl.format(L.t.I3R7Vn, {
+        children: k.intl.format(k.t.I3R7Vn, {
           channelName: p
         })
       }), (0, l.jsx)(S.j1, {
-        children: L.intl.string(L.t.M8Ao6I)
+        children: k.intl.string(k.t.M8Ao6I)
       })]
     });
-    else if (n.hasFlag(k.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, l.jsx)(j.A, {
+    else if (n.hasFlag(L.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, l.jsx)(j.A, {
     channel: n
   });
   else return (0, l.jsx)(N.A, {
     channel: n,
-    children: L.intl.format(L.t.MFwcqO, {
+    children: k.intl.format(k.t.MFwcqO, {
       name: p
     })
   });
@@ -159,7 +159,7 @@ function H(e) {
   }) : (0, l.jsx)(S.Ay, {
     channelId: n.id,
     children: (0, l.jsx)(S.j1, {
-      children: L.intl.format(L.t.hPVEQG, {
+      children: k.intl.format(k.t.hPVEQG, {
         channelName: p
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 51693 **/
+/** Chunk was on 59569 **/
 /** chunk id: 463259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => W,
@@ -87,14 +87,14 @@ function G(e) {
 
 function M() {
   return (0, r.jsxs)("div", {
-    className: R.mJ,
+    className: k.mJ,
     children: [(0, r.jsx)(s.mir, {
       size: "xs"
     }), (0, r.jsx)(s.Text, {
-      "aria-label": k.intl.string(k.t["7blcz6"]),
+      "aria-label": R.intl.string(R.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",
-      children: k.intl.string(k.t["7blcz6"])
+      children: R.intl.string(R.t["7blcz6"])
     })]
   })
 }
@@ -151,7 +151,7 @@ function F(e) {
   let P = () => (0, r.jsxs)(r.Fragment, {
     children: [s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(w.A, {
-        className: R.cG
+        className: k.cG
       }), d && (0, r.jsx)(M, {}), p && (0, r.jsx)(U, {})]
     }), a.map((e, l) => (0, r.jsx)(G, {
       widget: e,
@@ -163,7 +163,7 @@ function F(e) {
   });
   if (x)
     if (p) return (0, r.jsx)(S.A, {});
-    else return (0, r.jsx)(N.A, {});
+    else return (0, r.jsx)(C.A, {});
   return s ? (0, r.jsx)(A.D, {
     children: P()
   }) : P()
@@ -177,11 +177,11 @@ function W(e) {
     containerRef: i
   });
   let o = (0, T.k)(t.id);
-  return (0, r.jsxs)(C.K, {
+  return (0, r.jsxs)(N.K, {
     "data-scroller": true,
     scrollerRef: i,
-    className: a()(R.XG, {
-      [R.az]: o
+    className: a()(k.XG, {
+      [k.az]: o
     }),
     fade: true,
     children: [(0, r.jsx)(P.A, {

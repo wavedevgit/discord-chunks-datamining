@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 635157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => v
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,15 +23,15 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk82842 = require("./82842.js");
 
-function E(e) {
+function v(e) {
   var t;
   let n, {
-      channel: E,
+      channel: v,
       children: O,
       user: C
     } = e,
     S = (0, i.bG)([o.A], () => o.A.useReducedMotion),
-    x = null != (t = (0, d.Ay)(E)) ? t : "",
+    x = null != (t = (0, d.Ay)(v)) ? t : "",
     {
       avatarDecorationSrc: j,
       eventHandlers: I,
@@ -48,17 +48,17 @@ function E(e) {
     R = r.useCallback(() => {
       I.onMouseLeave(), P(false)
     }, [I]),
-    D = !E.isMultiUserDM() && (null == C ? true : C.displayNameStyles) != null;
+    D = !v.isMultiUserDM() && (null == C ? true : C.displayNameStyles) != null;
   return (0, l.jsxs)(_.Ay, {
-    channelId: E.id,
+    channelId: v.id,
     onMouseEnter: w,
     onMouseLeave: R,
-    children: [(n = !S && T, E.isMultiUserDM() ? (0, l.jsx)(m.Q, {
-      channel: E,
+    children: [(n = !S && T, v.isMultiUserDM() ? (0, l.jsx)(m.Q, {
+      channel: v,
       editable: true,
       location: c.A.EMPTY_GROUP_DM,
       children: (0, l.jsx)(f.A, {
-        channel: E,
+        channel: v,
         size: s._3J.SIZE_80,
         animated: n,
         "aria-label": x
@@ -66,7 +66,7 @@ function E(e) {
     }) : (0, l.jsx)(s.euF, {
       "aria-label": x,
       size: s._3J.SIZE_80,
-      src: (0, u.Y)(E, 80, n),
+      src: (0, u.Y)(v, 80, n),
       avatarDecoration: j
     })), (0, l.jsx)(_.cr, {
       children: D ? (0, l.jsx)(p.A, {
@@ -77,10 +77,10 @@ function E(e) {
       }) : x
     }), (0, l.jsx)(_.j1, {
       children: O
-    }), E.isMultiUserDM() && (0, l.jsxs)(a.e2v, {
-      className: v.U,
+    }), v.isMultiUserDM() && (0, l.jsxs)(a.e2v, {
+      className: E.U,
       children: [(0, l.jsx)(A.NE, {
-        channel: E,
+        channel: v,
         text: y.intl.string(y.t["6Qgrev"]),
         icon: s.DpX
       }), (0, l.jsx)(a.$nd, {
@@ -88,7 +88,7 @@ function E(e) {
         variant: "secondary",
         text: y.intl.string(y.t["5Q9+/L"]),
         "aria-label": y.intl.string(y.t["5Q9+/L"]),
-        onClick: () => (0, g.U)(E.id, c.A.EMPTY_GROUP_DM)
+        onClick: () => (0, g.U)(v.id, c.A.EMPTY_GROUP_DM)
       })]
     })]
   })

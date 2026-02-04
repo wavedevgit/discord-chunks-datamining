@@ -91,7 +91,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
     onClick: A
   } = e, y = 3 === i ? a - 4 : 0, O = 1 === a, {
     trackUserProfileWishlistAction: j
-  } = (0, x.NJ)(), _ = l.useCallback(() => {
+  } = (0, _.NJ)(), x = l.useCallback(() => {
     (j({
       action: y > 0 ? w.Mq.PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD : w.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
       skuId: y > 0 ? null : n.id,
@@ -118,7 +118,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
           user: o,
           cardStyle: s()(D.Nr, D.Q1, u),
           skuPreviewStyle: s()(D.ho, f),
-          onClick: _,
+          onClick: x,
           children: y > 0 && (0, r.jsx)(C.BF, {
             count: y
           })
@@ -127,7 +127,7 @@ let k = Chunk64700.forwardRef(function(e, t) {
     }), O && (0, r.jsx)(S.A, {
       title: m.title,
       description: m.description,
-      onClick: _
+      onClick: x
     })]
   })
 });
@@ -174,7 +174,7 @@ function V(e) {
     analyticsLocations: h
   } = (0, f.Ay)(...null != a ? a : [], g.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), y = (0, O.Jw)({
     location: "dm-side-panel-social-layer-storefront-wishlist-item-card"
-  }), x = (0, d.useHasAnyModalOpen)(), v = (0, c.bG)([_.A], () => _.A.hasLayers()), [E, C] = (0, A.kn)(!y || 0 !== i || t.applicationId !== P.XR || x || v ? [] : [u.M.GAME_SHOP_WISHLIST_POPOVER], N.m.SIDEBAR, true), S = l.useRef(null), I = l.useCallback(() => {
+  }), _ = (0, d.useHasAnyModalOpen)(), v = (0, c.bG)([x.A], () => x.A.hasLayers()), [E, C] = (0, A.kn)(!y || 0 !== i || t.applicationId !== P.XR || _ || v ? [] : [u.M.GAME_SHOP_WISHLIST_POPOVER], N.m.SIDEBAR, true), S = l.useRef(null), I = l.useCallback(() => {
     C(N.i.USER_DISMISS), (0, j.a)(t, {
       isGift: true,
       giftRecipient: n,

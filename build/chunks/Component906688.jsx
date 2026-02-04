@@ -59,11 +59,11 @@ function g(e) {
       color: O
     } = (0, c.ag)(y),
     j = (0, i.Mw)(f) ? p : h,
-    x = (b.size - b.offset - 2 * b.stroke) * .8,
-    _ = b.size - b.stroke,
+    _ = (b.size - b.offset - 2 * b.stroke) * .8,
+    x = b.size - b.stroke,
     v = {
-      width: .4 * x,
-      height: .4 * x
+      width: .4 * _,
+      height: .4 * _
     },
     E = {
       width: v.width + 1,
@@ -75,8 +75,8 @@ function g(e) {
   return (0, r.jsxs)("div", {
     className: u.kL,
     style: {
-      width: _,
-      height: _,
+      width: x,
+      height: x,
       padding: b.stroke
     },
     "aria-label": "".concat(null != (t = A()) ? t : ""),
@@ -85,8 +85,8 @@ function g(e) {
       children: (0, r.jsx)(s.OR, {
         size: "custom",
         color: l ? O : j.trophy,
-        width: x,
-        height: x
+        width: _,
+        height: _
       })
     }), !l && (0, r.jsx)("div", {
       className: u.dq,

@@ -66,7 +66,7 @@ function K(e) {
 }
 let W = Chunk837921.Ay.getEnableHardwareAcceleration(),
   z = 44 + Chunk110574.b,
-  X = Chunk64700.memo(function(e) {
+  q = Chunk64700.memo(function(e) {
     let {
       channel: t,
       sectionId: i,
@@ -75,7 +75,7 @@ let W = Chunk837921.Ay.getEnableHardwareAcceleration(),
     } = e, o = l.useRef(null), u = (0, p.bG)([w.A], () => w.A.isTyping(t.id, s)), h = (0, p.bG)([I.Ay], () => I.Ay.getMember(t.guild_id, s)), m = (0, p.bG)([N.A], () => {
       var e;
       return (null == h ? true : h.colorRoleId) != null ? null == (e = N.A.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.bG)([R.default], () => R.default.getUser(s)), A = (0, p.bG)([R.default], () => R.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == A ? true : A.id), j = (0, p.bG)([T.A, P.A], () => y ? P.A.getStatus() : T.A.getStatus(s, t.guild_id)), _ = (0, p.bG)([T.A], () => T.A.isMobileOnline(s)), v = (0, p.bG)([T.A, P.A], () => y ? P.A.getActivities() : T.A.getActivities(s, t.guild_id)), D = (0, p.bG)([S.A], () => S.A.getAnyStreamForUser(s)), L = (0, c.rm)(s), G = (0, p.bG)([E.A], () => E.A.canUserViewChannel(t.id, i, s)), U = (null == b ? true : b.id) != null && b.id === a, F = l.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.bG)([R.default], () => R.default.getUser(s)), A = (0, p.bG)([R.default], () => R.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == A ? true : A.id), j = (0, p.bG)([T.A, P.A], () => y ? P.A.getStatus() : T.A.getStatus(s, t.guild_id)), x = (0, p.bG)([T.A], () => T.A.isMobileOnline(s)), v = (0, p.bG)([T.A, P.A], () => y ? P.A.getActivities() : T.A.getActivities(s, t.guild_id)), D = (0, p.bG)([S.A], () => S.A.getAnyStreamForUser(s)), L = (0, c.rm)(s), G = (0, p.bG)([E.A], () => E.A.canUserViewChannel(t.id, i, s)), U = (null == b ? true : b.id) != null && b.id === a, F = l.useCallback(e => {
       null != b && (0, g.L3)(e, async () => {
         let {
           default: e
@@ -118,10 +118,10 @@ let W = Chunk837921.Ay.getEnableHardwareAcceleration(),
           object: B.ZSU.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), X = (0, x.r)({
+    }, [t.guild_id]), q = (0, _.r)({
       user: b,
       guildId: t.guild_id
-    }), [q, J] = l.useState(false);
+    }), [X, J] = l.useState(false);
     if (null == b) return null;
     let Q = null == h ? true : h.premiumSince;
     return (0, r.jsx)(C.A, {
@@ -132,7 +132,7 @@ let W = Chunk837921.Ay.getEnableHardwareAcceleration(),
       position: d.Fr ? "window_center" : "left",
       spacing: 16,
       onShiftClick: Y,
-      shouldShow: q,
+      shouldShow: X,
       onRequestClose: () => J(false),
       children: e => {
         let {
@@ -170,26 +170,26 @@ let W = Chunk837921.Ay.getEnableHardwareAcceleration(),
           isTyping: u,
           channel: t,
           guildId: t.guild_id,
-          isMobile: _,
-          selected: q,
+          isMobile: x,
+          selected: X,
           applicationStream: D,
           premiumSince: null == Q ? null : new Date(Q),
           onClickPremiumGuildIcon: z,
           itemProps: L,
           lostPermissionTooltipText: G ? true : H.intl.string(H.t["/QcoTz"]),
           isOwner: U,
-          nameplate: X,
+          nameplate: q,
           onClick: e => {
             e.shiftKey ? null == Y || Y() : J(e => !e)
           },
           onMouseDown: e => {
-            q ? e.stopPropagation() : null == l || l(e)
+            X ? e.stopPropagation() : null == l || l(e)
           }
         }, i))
       }
     })
   }),
-  q = Chunk64700.memo(function(e) {
+  X = Chunk64700.memo(function(e) {
     let {
       id: t,
       label: n,
@@ -211,7 +211,7 @@ let W = Chunk837921.Ay.getEnableHardwareAcceleration(),
         title: n,
         count: l
       }),
-      children: [null != s ? (0, r.jsx)(_.A, K({
+      children: [null != s ? (0, r.jsx)(x.A, K({
         className: Y.UT
       }, s)) : null, (0, r.jsxs)("span", {
         "aria-hidden": true,
@@ -251,10 +251,10 @@ function Q(e) {
     } = e,
     j = "members-".concat(y.id),
     {
-      analyticsLocations: x
+      analyticsLocations: _
     } = (0, A.Ay)(b.A.MEMBER_LIST),
-    _ = (0, v.q)(y.id, O),
-    E = _.filter(e => e.userIds.length > 0).reverse()[0],
+    x = (0, v.q)(y.id, O),
+    E = x.filter(e => e.userIds.length > 0).reverse()[0],
     {
       navigator: C,
       listRef: S
@@ -301,7 +301,7 @@ function Q(e) {
       }),
       listRef: a
     }),
-    I = 0 === _.length || _.every(e => 0 === e.userIds.length);
+    I = 0 === x.length || x.every(e => 0 === e.userIds.length);
   if (l.useEffect(() => {
       L.default.track(B.HAw.MEMBER_LIST_VIEWED, {
         channel_id: y.id,
@@ -314,7 +314,7 @@ function Q(e) {
   let N = o().omit(C.containerProps, ["ref"]),
     T = G.wT(O);
   return (0, r.jsx)(A.f5, {
-    value: x,
+    value: _,
     children: (0, r.jsx)(c.hD, {
       navigator: C,
       children: (0, r.jsx)(h.skg, {
@@ -328,8 +328,8 @@ function Q(e) {
             renderSection: e => {
               let {
                 section: t
-              } = e, n = _[t];
-              return (0, r.jsx)(q, {
+              } = e, n = x[t];
+              return (0, r.jsx)(X, {
                 id: n.id,
                 label: n.label,
                 count: n.userIds.length,
@@ -344,21 +344,21 @@ function Q(e) {
               } = e, {
                 userIds: l,
                 id: i
-              } = _[t];
-              return (0, r.jsx)(X, {
+              } = x[t];
+              return (0, r.jsx)(q, {
                 channel: y,
                 sectionId: i,
                 userId: l[n],
                 guildOwnerId: T
               }, l[n])
             },
-            footerHeight: e => 80 * (_[e] === E && y.type === B.rbe.PRIVATE_THREAD),
-            renderFooter: e => _[e.section] === E ? (0, r.jsx)(J, {
+            footerHeight: e => 80 * (x[e] === E && y.type === B.rbe.PRIVATE_THREAD),
+            renderFooter: e => x[e.section] === E ? (0, r.jsx)(J, {
               channel: y
             }, "footer") : null,
             innerAriaLabel: H.intl.string(H.t["9Oq93m"]),
             innerTag: "ul",
-            sections: _.map(e => e.userIds.length),
+            sections: x.map(e => e.userIds.length),
             fade: true
           }, N, e), j)
         })

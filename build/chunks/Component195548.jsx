@@ -27,29 +27,29 @@ var Chunk627968 = require("./627968.js"),
 
 function v() {
   return (0, r.jsxs)(y.A, {
-    title: _.intl.string(_.t.WWaFn5),
-    description: _.intl.format(_.t["/6sFWa"], {
+    title: x.intl.string(x.t.WWaFn5),
+    description: x.intl.format(x.t["/6sFWa"], {
       helpArticle: (0, o.aW)()
     }),
-    webSetting: x.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
+    webSetting: _.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
     children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(j.A, {})]
   })
 }
 
 function E() {
   return (0, r.jsx)(y.A, {
-    title: _.intl.string(_.t.BG7QsQ),
-    webSetting: x.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
+    title: x.intl.string(x.t.BG7QsQ),
+    webSetting: _.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, r.jsx)(d.A, {})
   })
 }
 
 function C() {
   return (0, r.jsxs)(y.A, {
-    title: _.intl.string(_.t.SRZyHg),
-    webSetting: x.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+    title: x.intl.string(x.t.SRZyHg),
+    webSetting: _.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
     children: [(0, r.jsx)(m.A, {}), (0, r.jsx)(f.A, {}), (0, r.jsx)(g.A, {}), (0, r.jsx)(h.A, {}), (0, r.jsx)(A.h, {
-      setting: x.H.PRIVACY_DATA_CLIPS,
+      setting: _.H.PRIVACY_DATA_CLIPS,
       children: (0, r.jsx)(a.A, {})
     }), (0, r.jsx)(p.z, {})]
   })
@@ -59,7 +59,7 @@ function S() {
   return (0, s.Ay)(() => {
     (0, i.Q)(), (0, c.s)()
   }), (0, r.jsx)(u.R, {
-    header: _.intl.string(_.t.OAuOHD),
+    header: x.intl.string(x.t.OAuOHD),
     notice: (0, r.jsx)(O.A, {
       page: O.R.DATA_AND_PRIVACY
     }),

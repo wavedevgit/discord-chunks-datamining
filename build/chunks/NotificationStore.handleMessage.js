@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 845618, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   cH: () => ee,
@@ -122,7 +122,7 @@ function eu(e) {
 }
 class ed extends(l = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(f.A, P.A, w.A, _.A, R.A, D.A, M.A, L.A, U.A, G.A, j.A, F.A, H.default, B.A)
+    this.waitFor(f.A, P.A, w.A, _.A, R.A, D.A, M.A, k.A, U.A, G.A, j.A, F.A, H.default, B.A)
   }
 }
 Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {} : {
@@ -170,8 +170,8 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
       h = H.default.getUser(null == (l = a.author) ? true : l.id),
       p = H.default.getCurrentUser();
     if (null == u || null == h || null == p) returnfalse;
-    let m = (0, E.lx)(a, i, !er),
-      g = D.A.getNotifyMessagesInSelectedChannel() && (0, E.kY)(a, i);
+    let m = (0, v.lx)(a, i, !er),
+      g = D.A.getNotifyMessagesInSelectedChannel() && (0, v.kY)(a, i);
     if (!m && !g || a.type === q.lAJ.CHANGELOG && (null == a.changelog_id || f.A.latestChangelogId() !== a.changelog_id)) returnfalse;
     let A = !D.A.isSoundDisabled(ee);
     if (g && (A && Y.A.playNotificationSound("message3", .4), !er) || !m) returnfalse;
@@ -183,7 +183,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
       title: x,
       body: j,
       emoji: I
-    } = (0, E.TB)(u, a, h), T = !(0, O.Z)("NotificationStore.handleMessage", null == p ? true : p.id);
+    } = (0, v.TB)(u, a, h), T = !(0, O.Z)("NotificationStore.handleMessage", null == p ? true : p.id);
     if (s.h.dispatch({
         type: "RPC_NOTIFICATION_CREATE",
         channelId: u.id,
@@ -191,7 +191,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
         icon: C,
         title: x,
         body: j
-      }), (0, v.n)(a, u.guild_id), D.A.getDesktopType() === q.nRU.NEVER) return A && Y.A.playNotificationSound(ee, et), false;
+      }), (0, E.n)(a, u.guild_id), D.A.getDesktopType() === q.nRU.NEVER) return A && Y.A.playNotificationSound(ee, et), false;
     let N = null != (t = R.A.getMessage(i, a.id)) ? t : (0, y.rh)(a);
     Y.A.showNotification(C, x, j, {
       notif_type: "MESSAGE_CREATE",
@@ -201,7 +201,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
       channel_id: u.id,
       channel_type: u.type,
       guild_id: u.guild_id,
-      badge: (0, k.Wm)(N, p)
+      badge: (0, L.Wm)(N, p)
     }, {
       omitViewTracking: T,
       tag: a.id,
@@ -285,7 +285,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
       c = P.A.getChannel(r),
       u = j.A.getStageInstanceByChannel(r);
     null != o && null != c && null != u && Y.A.showNotification((0, N.Iv)(o, 128), c.name, X.intl.formatToPlainString(X.t.sqnsSP, {
-      channelName: (0, m.m1)(c, H.default, L.A),
+      channelName: (0, m.m1)(c, H.default, k.A),
       channelTopic: null == u ? true : u.topic
     }), {
       notif_type: "Stage Speak Invite"
@@ -302,7 +302,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
       l = w.A.getGuild(t.guild_id),
       i = P.A.getChannel(t.channel_id),
       a = H.default.getUser(t.host_id);
-    if (null == n || null == i || null == l || null == a || !(0, E.Wv)(n, a, i) || !M.A.can(r.kg(q.xBc.CONNECT, q.xBc.VIEW_CHANNEL), i) || ea.has(t.id)) returnfalse;
+    if (null == n || null == i || null == l || null == a || !(0, v.Wv)(n, a, i) || !M.A.can(r.kg(q.xBc.CONNECT, q.xBc.VIEW_CHANNEL), i) || ea.has(t.id)) returnfalse;
     ea.add(t.id), Y.A.showNotification((0, N.Iv)(l, 128), X.intl.formatToPlainString(X.t.bZ4Okd, {
       guildName: l.name
     }), X.intl.formatToPlainString(X.t.qTelnO, {
@@ -382,7 +382,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
     } = e;
     if (ec()) returnfalse;
     let r = P.A.getChannel(n.parent_id);
-    if (null == r || !q.kvI.GUILD_THREADS_ONLY.has(r.type) || !l || !(0, E.q1)(n, r, !er)) returnfalse;
+    if (null == r || !q.kvI.GUILD_THREADS_ONLY.has(r.type) || !l || !(0, v.q1)(n, r, !er)) returnfalse;
     let {
       author: i,
       user: a
@@ -494,7 +494,7 @@ Q(ed, "displayName", "NotificationStore"), new ed(Chunk73153.h, __OVERLAY__ ? {}
     let {
       icon: r,
       body: i
-    } = (0, E.TB)(l, n, n.author);
+    } = (0, v.TB)(l, n, n.author);
     Y.A.showNotification(r, X.intl.string(X.t.IjZJB5), i, {
       notif_type: "MESSAGE_REMINDER_DUE"
     }, {

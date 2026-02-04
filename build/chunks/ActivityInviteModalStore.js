@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 921955, original params: e,t,n (module,exports,require) **/
 let l;
 require.d(exports, {
@@ -28,12 +28,12 @@ function b(e, t, n) {
 }
 let _ = [Chunk629357.rD.TEXT_CHANNEL, Chunk629357.rD.GROUP_DM, Chunk629357.rD.USER],
   y = null,
-  v = null,
-  E = [],
+  E = null,
+  v = [],
   O = [];
 
 function C(e) {
-  E = [...E, e], O = O.map(e => {
+  v = [...v, e], O = O.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -47,7 +47,7 @@ function C(e) {
       }
       return e
     }({}, e), n = n = {
-      sent: E.includes(e.data.record.id)
+      sent: v.includes(e.data.record.id)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function C(e) {
 }
 
 function S() {
-  y = null, null != l && (l.destroy(), l = null), null != v && v()
+  y = null, null != l && (l.destroy(), l = null), null != E && E()
 }
 
 function x() {
@@ -87,7 +87,7 @@ class j extends(r = Chunk311907.Ay.Store) {
 b(j, "displayName", "ActivityInviteModalStore");
 let I = new j(Chunk73153.h, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      y = e.activity, v = e.resolve, E = [], null == l && (l = new o.Ay((e, t) => {
+      y = e.activity, E = e.resolve, v = [], null == l && (l = new o.Ay((e, t) => {
         let n;
         O = ("" === t.trim() ? (n = [], g.A.getPrivateChannelIds().forEach(e => {
           let t = u.A.getChannel(e);
@@ -113,7 +113,7 @@ let I = new j(Chunk73153.h, {
               } = e;
               return {
                 type: o.rD.USER,
-                sent: E.includes(t.id),
+                sent: v.includes(t.id),
                 status: p.A.getStatus(t.id),
                 data: e
               }
@@ -125,7 +125,7 @@ let I = new j(Chunk73153.h, {
               } = e, l = u.A.getChannel(n.parent_id), r = d.A.getGuild(n.guild_id);
               return {
                 type: o.rD.TEXT_CHANNEL,
-                sent: E.includes(n.id),
+                sent: v.includes(n.id),
                 categoryName: null != l ? (0, c.m1)(l, m.default, f.A) : "",
                 guildName: null != (t = null == r ? true : r.name) ? t : "",
                 data: e
@@ -137,7 +137,7 @@ let I = new j(Chunk73153.h, {
               } = e;
               return {
                 type: o.rD.GROUP_DM,
-                sent: E.includes(t.id),
+                sent: v.includes(t.id),
                 data: e
               }
             }

@@ -8,15 +8,15 @@ var Chunk64700 = require("./64700.js"),
   Chunk287809 = require("./287809.js"),
   Chunk966107 = require("./966107.js"),
   Chunk380335 = require("./380335.js");
-let o = new Set(["GB"]);
+let s = new Set(["GB"]);
 
 function c() {
-  let e = (0, l.bG)([s.A], () => s.A.getUserCountryCode()),
-    t = false === (0, l.bG)([i.default], () => {
+  let e = (0, i.bG)([o.A], () => o.A.getUserCountryCode()),
+    t = false === (0, i.bG)([l.default], () => {
       var e;
-      return null == (e = i.default.getCurrentUser()) ? true : e.nsfwAllowed
+      return null == (e = l.default.getCurrentUser()) ? true : e.nsfwAllowed
     });
   return r.useEffect(() => {
     null == e && (0, a.xf)()
-  }, [e]), null != e && !!o.has(e.alpha2) && !!t
+  }, [e]), null != e && !!s.has(e.alpha2) && !!t
 }

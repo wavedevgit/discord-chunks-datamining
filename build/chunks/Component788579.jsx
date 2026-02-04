@@ -24,7 +24,7 @@ let y = Chunk64700.memo(function(e) {
     channel: t
   } = e, n = (0, u.A)(), i = (0, a.bG)([g.A], () => g.A.isInChannel(t.id)), y = (0, a.bG)([g.A], () => !s().isEmpty(g.A.getVoiceStatesForChannel(t.id))), O = (0, a.bG)([h.A], () => h.A.can(b.xBc.CONNECT, t)), {
     needSubscriptionToAccess: j
-  } = (0, d.A)(t.id), x = (0, p.Id)(t), _ = l.useCallback(() => {
+  } = (0, d.A)(t.id), _ = (0, p.Id)(t), x = l.useCallback(() => {
     c.A.handleVoiceConnect({
       channel: t,
       connected: i,
@@ -32,16 +32,16 @@ let y = Chunk64700.memo(function(e) {
       locked: false
     })
   }, [t, i, j]);
-  return (l.useEffect(() => (f._.subscribe(b.jej.CALL_START, _), () => {
-    f._.unsubscribe(b.jej.CALL_START, _)
-  }), [_]), p.io.useExperiment({
+  return (l.useEffect(() => (f._.subscribe(b.jej.CALL_START, x), () => {
+    f._.unsubscribe(b.jej.CALL_START, x)
+  }), [x]), p.io.useExperiment({
     guildId: t.guild_id,
     location: "63250c_1"
   }, {
     autoTrackExposure: false
-  }).enabled && !n && !i && O && x && t.isVocalThread()) ? (0, r.jsx)(m.Ay.Icon, {
+  }).enabled && !n && !i && O && _ && t.isVocalThread()) ? (0, r.jsx)(m.Ay.Icon, {
     icon: o._jp,
-    onClick: _,
+    onClick: x,
     tooltip: y ? A.intl.string(A.t.fdEeb5) : A.intl.string(A.t.focH1t)
   }) : null
 })

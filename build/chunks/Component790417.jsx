@@ -1,4 +1,4 @@
-/** Chunk was on 51693 **/
+/** Chunk was on 59569 **/
 /** chunk id: 790417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => w
@@ -41,18 +41,18 @@ function w(e) {
     location: "UserProfileModalV2Activity"
   }), {
     live: T,
-    recent: C,
-    stream: N
+    recent: N,
+    stream: C
   } = (0, f.A)(t.id), {
-    voiceChannel: k,
-    voiceActivity: R
+    voiceChannel: R,
+    voiceActivity: k
   } = (0, p.A)({
     userId: t.id,
     guildId: A
   }), D = (0, l.bG)([o.A], () => o.A.isFetchingUserOutbox(t.id)), L = t.id === n.id, G = (0, l.bG)([u.A, c.A], () => {
     let e = L ? u.A.getStatus() : c.A.getStatus(t.id);
     return e === i.clD.OFFLINE || e === i.clD.INVISIBLE
-  }), M = T.length > 0 || null != N, U = S && null == N && null == R && null != k, F = !G && (M || U), W = C.length > 0;
+  }), M = T.length > 0 || null != C, U = S && null == C && null == k && null != R, F = !G && (M || U), W = N.length > 0;
   if (!F && !W && D) return (0, r.jsx)("div", {
     className: I.kR,
     children: Array.from({
@@ -69,12 +69,12 @@ function w(e) {
     }, t))
   });
   if (!F && !W && !D) {
-    var B;
+    var H;
     return L ? (0, r.jsx)(O.qv, {
       onClose: E
     }) : (0, r.jsx)(O.zf, {
       user: t,
-      guildId: null != (B = null == w ? true : w.guildId) ? B : A,
+      guildId: null != (H = null == w ? true : w.guildId) ? H : A,
       channelId: P,
       onClose: E
     })
@@ -86,11 +86,11 @@ function w(e) {
       heading: _.intl.string(_.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: I.kR,
-        children: [null != N && (0, r.jsx)("li", {
+        children: [null != C && (0, r.jsx)("li", {
           children: (0, r.jsx)(b.A, {
             user: t,
             currentUser: n,
-            stream: N,
+            stream: C,
             onClose: E
           })
         }), T.map((e, l) => (0, r.jsx)("li", {
@@ -104,7 +104,7 @@ function w(e) {
           children: (0, r.jsx)(y.A, {
             user: t,
             currentUser: n,
-            voiceChannel: k,
+            voiceChannel: R,
             onClose: E
           })
         })]
@@ -120,7 +120,7 @@ function w(e) {
       scrollTargetId: x.bk.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: I.kR,
-        children: C.map(e => (0, r.jsx)("li", {
+        children: N.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.A, {
             user: t,
             entry: e,

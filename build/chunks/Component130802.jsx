@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 130802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u5: () => _,
+  u5: () => x,
   zd: () => v
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -144,7 +144,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function _(e) {
   let {
     closePopout: t
   } = e, n = u.tz.useSetting();
@@ -163,7 +163,7 @@ function x(e) {
     })]
   })
 }
-var _ = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var x = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
 function v(e) {
   let {
@@ -222,14 +222,14 @@ function v(e) {
         };
       case 5:
         return {
-          type: "popout", children: x
+          type: "popout", children: _
         };
       default:
         return null
     }
-  }(f), _ = (0, i.useRef)(t);
+  }(f), x = (0, i.useRef)(t);
   if ((0, i.useEffect)(() => {
-      t && !_.current && b(n), t !== _.current && (_.current = t)
+      t && !x.current && b(n), t !== x.current && (x.current = t)
     }, [n, t]), null == y || !t) return d;
   if ("popover" === y.type) {
     var v, E;

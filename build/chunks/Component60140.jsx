@@ -77,11 +77,11 @@ let A = e => {
       }), t))
     })
   },
-  x = e => (0, r.jsx)("div", {
+  S = e => (0, r.jsx)("div", {
     className: v.hm,
     children: (0, r.jsx)(O, C({}, e))
   }),
-  S = e => (0, r.jsx)(o.A, {
+  x = e => (0, r.jsx)(o.A, {
     gap: "xl",
     children: (0, r.jsx)(O, C({}, e))
   }),
@@ -97,7 +97,7 @@ let A = e => {
       children: [...Array(null != a ? a : 4)].map((e, t) => (0, r.jsx)(b.A, {}, t))
     });
     let f = null != a ? l.slice(0, a) : l;
-    return (0, r.jsx)(_.v3.Provider, {
+    return (0, r.jsx)(h.v3.Provider, {
       value: {
         rentalDuration: o ? g : true,
         flattenProductVariants: o
@@ -112,8 +112,8 @@ let A = e => {
           },
           children: (0, r.jsx)(p.A, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: s === E.G2.ORBS ? _.Hi.ORBS : true,
-            onClickAnalytics: (0, _.UU)(e, s, i)
+            prioritizedCurrency: s === E.G2.ORBS ? h.Hi.ORBS : true,
+            onClickAnalytics: (0, h.UU)(e, s, i)
           }, e.skuId)
         }, e.skuId)
       })
@@ -129,13 +129,13 @@ let A = e => {
       {
         products: p
       } = (t = (0, f.A)(), n = l.useMemo(() => d ? [] : t(i.rankedSkuIds), [d, t, i.rankedSkuIds]), s = (0, g.p)()(n), a = (0, m.X)(s), {
-        products: (0, h.od)(a)
+        products: (0, _.od)(a)
       }),
-      _ = l.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(p.length > 0) && i.rankedSkuIds.every(e => {
+      h = l.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(p.length > 0) && i.rankedSkuIds.every(e => {
         var t;
         return (null == (t = u.A.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
       }), [d, i.rankedSkuIds, p.length]),
-      b = d || _;
+      b = d || h;
     switch (o) {
       case "row":
         return (0, r.jsx)(A, {
@@ -145,14 +145,14 @@ let A = e => {
           tab: c
         });
       case "feed":
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(S, {
           heroBlockRecord: i,
           isLoading: b,
           products: p,
           tab: c
         });
       case "hscroll":
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(x, {
           heroBlockRecord: i,
           isLoading: b,
           products: p,

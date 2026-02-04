@@ -27,10 +27,10 @@ function m(e) {
     y = (0, l.bG)([c.A], () => c.A.isVROnline(t)),
     O = (0, l.bG)([u.A], () => u.A.getNickname(t)),
     j = p.Ay.useUserTag(m),
-    x = (0, a.a)({
+    _ = (0, a.a)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    _ = (0, o.bG)({
+    x = (0, o.bG)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -56,10 +56,10 @@ function m(e) {
           text: j,
           position: "bottom",
           children: (0, r.jsx)("span", {
-            className: x,
+            className: _,
             children: null != O ? O : p.Ay.getName(m)
           })
-        }), _ && (0, r.jsx)(i.m, {
+        }), x && (0, r.jsx)(i.m, {
           text: g.intl.string(g.t.QyZ4Td),
           children: (0, r.jsx)(s.m5V, {
             size: "xs",

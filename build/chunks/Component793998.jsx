@@ -172,8 +172,8 @@ function U() {
   } = (0, p.Ay)(d.A.FAMILY_CENTER), t = (0, O.A)(), n = (0, o.bG)([y.A], () => y.A.getIsInitialized()), i = (0, o.bG)([m.A], () => m.A.theme), a = (0, g.GV)(), {
     isLoading: f,
     selectedTab: j,
-    handleTabChange: x,
-    showAgeGateModal: _
+    handleTabChange: _,
+    showAgeGateModal: x
   } = (0, S.j)({
     location: I.MH.SIDENAV,
     onMountEffect: () => {
@@ -183,7 +183,7 @@ function U() {
   if (l.useEffect(() => {
       let e = b.dm.getSetting();
       n && t && true === e && b.dm.updateSetting(true)
-    }, [n, t]), _) return null;
+    }, [n, t]), x) return null;
   let v = j !== I.u9.SETTINGS ? j : I.u9.ACTIVITY,
     E = D[v];
   return (0, r.jsx)(p.f5, {
@@ -197,7 +197,7 @@ function U() {
         theme: i,
         section: v,
         handleItemSelect: e => {
-          x(e)
+          _(e)
         }
       }), (0, r.jsx)(c.VQ0.Panel, {
         id: v,

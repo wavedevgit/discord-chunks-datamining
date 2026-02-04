@@ -2,7 +2,7 @@
 /** chunk id: 4196, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => _
 }), require("./896048.js"), require("./667532.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -20,40 +20,40 @@ var Chunk64700 = require("./64700.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx");
 
-function h(e) {
+function _(e) {
   let {
     sortedSkuIds: t,
     isPremiumUser: n,
     prioritizeUserDiscounts: l,
-    orbsSupportedOnly: h
-  } = e, E = (0, i.bG)([o.A], () => o.A.hasConsented(_.YAq.PERSONALIZATION)), v = r.useMemo(() => {
+    orbsSupportedOnly: _
+  } = e, E = (0, i.bG)([o.A], () => o.A.hasConsented(h.YAq.PERSONALIZATION)), v = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.i.RECOMMENDED]) ? e : []
   }, [t]), C = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.i.POPULAR]) ? e : []
-  }, [t]), A = v.length > 0 && E, [x, S] = r.useState(A ? a.i.RECOMMENDED : a.i.POPULAR), O = (0, i.bG)([c.A], () => c.A.productsWithVariantsAsGroup), y = r.useMemo(() => (0, d.CE)(O), [O]), j = (0, i.bG)([u.A], () => u.A.getUserDiscounts()), T = (0, f.A)(), L = (0, g.p)(), [I, k] = r.useState([]), N = r.useCallback(() => {
-    S(a.i.RANDOM), k(s().shuffle(y))
+  }, [t]), A = v.length > 0 && E, [S, x] = r.useState(A ? a.i.RECOMMENDED : a.i.POPULAR), O = (0, i.bG)([c.A], () => c.A.productsWithVariantsAsGroup), y = r.useMemo(() => (0, d.CE)(O), [O]), j = (0, i.bG)([u.A], () => u.A.getUserDiscounts()), L = (0, f.A)(), T = (0, g.p)(), [I, k] = r.useState([]), N = r.useCallback(() => {
+    x(a.i.RANDOM), k(s().shuffle(y))
   }, [y]);
   r.useEffect(() => {
     k(s().shuffle(y))
   }, [y]);
   let R = r.useMemo(() => {
     let e = [];
-    if (x === a.i.RECENT) e = y;
-    else if (x === a.i.PRICE_LOW_TO_HIGH) e = (0, d.bf)([...y], n, h);
-    else if (x === a.i.RECOMMENDED) {
-      let t = T(v);
+    if (S === a.i.RECENT) e = y;
+    else if (S === a.i.PRICE_LOW_TO_HIGH) e = (0, d.bf)([...y], n, _);
+    else if (S === a.i.RECOMMENDED) {
+      let t = L(v);
       e = l ? (0, d.Bs)(t, j) : t
-    } else if (x === a.i.POPULAR) {
-      let t = T(C);
+    } else if (S === a.i.POPULAR) {
+      let t = L(C);
       e = l ? (0, d.Bs)(t, j) : t
-    } else x === a.i.RANDOM && (e = I);
-    return h ? (0, p.ex)(L(e)) : L(e)
-  }, [x, h, L, n, y, T, v, l, j, C, I]);
+    } else S === a.i.RANDOM && (e = I);
+    return _ ? (0, p.ex)(T(e)) : T(e)
+  }, [S, _, T, n, y, L, v, l, j, C, I]);
   return {
-    sortType: x,
-    setSortType: S,
+    sortType: S,
+    setSortType: x,
     sortedItems: (0, m.X)(R),
     sortOptions: r.useMemo(() => {
       let e = [{

@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk819638 = require("./819638.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk283237 = require("./283237.js");
-let x = {
+let _ = {
   origin: {
     x: false,
     y: 0
@@ -35,7 +35,7 @@ let x = {
   }
 };
 
-function _(e) {
+function x(e) {
   (0, a.L3)(e, async () => {
     let {
       default: e
@@ -85,7 +85,7 @@ function v(e) {
       })
     },
     selected: C,
-    onContextMenu: _,
+    onContextMenu: x,
     tooltip: O.intl.string(O.t.l5WIbf),
     icon: s.U1e
   });
@@ -93,7 +93,7 @@ function v(e) {
     className: j.Uq,
     children: (0, r.jsxs)(p.A, {
       tutorialId: E ? "create-more-servers" : "create-first-server",
-      inlineSpecs: x,
+      inlineSpecs: _,
       position: "right",
       children: [I, null != n && (0, r.jsx)(m.Ay, {
         name: O.intl.string(O.t["45xjM5"]),

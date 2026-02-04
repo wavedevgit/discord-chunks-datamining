@@ -62,7 +62,7 @@ let U = e => {
     } = e;
     (0, p.P)(m.a), (0, y.g)();
     let n = (0, g.A)((0, i.A)()),
-      s = (0, o.bG)([h.default], () => h.default.getCurrentUser());
+      s = (0, o.bG)([_.default], () => _.default.getCurrentUser());
     (0, b.pE)();
     let c = (0, B.y)("CollectiblesShop"),
       {
@@ -70,17 +70,17 @@ let U = e => {
       } = (0, N.tR)(),
       {
         currentTab: F,
-        hasFilters: z
-      } = (0, T.v)(),
-      V = l.useMemo(() => t === w.G2.HOME && F && z() ? F : t, [t, F, z]),
+        hasFilters: V
+      } = (0, L.v)(),
+      z = l.useMemo(() => t === w.G2.HOME && F && V() ? F : t, [t, F, V]),
       {
         categories: K,
         refreshCategories: W
-      } = (0, S.Ay)({
+      } = (0, x.Ay)({
         logPerf: true
       }, {
         sessionId: n,
-        tab: V
+        tab: z
       }),
       Y = (0, O.x)(K),
       [q, Z] = l.useState(),
@@ -97,7 +97,7 @@ let U = e => {
         selectedTab: ee,
         transitionState: et,
         transitionToTab: en
-      } = (0, j.o)(V);
+      } = (0, j.o)(z);
     (0, A.uS)(n, ee, X, et, J), (0, A.N0)(ee, s);
     let {
       dismissShopButtonDC: er
@@ -106,7 +106,7 @@ let U = e => {
       er()
     }, [er]), l.useEffect(() => {
       (0, d.I)(D.BVt.COLLECTIBLES_SHOP)
-    }, []), (0, _.A)({
+    }, []), (0, h.A)({
       ignoreCacheTTL: true
     });
     let el = l.useRef(null),
@@ -117,7 +117,7 @@ let U = e => {
     }, []);
     let {
       analyticsLocations: ea
-    } = (0, A.lC)(ee), ei = (0, x.V)(ee, "collectibles_shop");
+    } = (0, A.lC)(ee), ei = (0, S.V)(ee, "collectibles_shop");
     return (0, r.jsx)(f.f5, {
       value: ea,
       children: (0, r.jsx)(E.R9, {
@@ -140,7 +140,7 @@ let U = e => {
               children: [(0, r.jsx)(k.G, {
                 handleTransition: en,
                 selectedTab: ee
-              }), null != ei && ei.type === x.Z.COUNTDOWN && (0, r.jsx)(R.k, {
+              }), null != ei && ei.type === S.Z.COUNTDOWN && (0, r.jsx)(R.k, {
                 message: ei.message,
                 onClick: () => en(w.G2.HOME),
                 variant: "pink",
@@ -151,7 +151,7 @@ let U = e => {
                   [H.in]: et === w.Pf.IN,
                   [H.FD]: et === w.Pf.OUT
                 }),
-                children: (0, r.jsx)(L.A, {
+                children: (0, r.jsx)(T.A, {
                   tab: ee,
                   refreshCategories: W,
                   transitionToTab: en,

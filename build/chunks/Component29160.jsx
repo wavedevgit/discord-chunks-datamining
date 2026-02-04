@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk842642 = require("./842642.js");
 
 function c(e, t, n) {
@@ -23,29 +23,29 @@ class u extends(r = Chunk64700.PureComponent) {
     let n = this.props,
       {
         tag: r,
-        children: i,
+        children: l,
         hoverText: a,
         className: u,
         forceHover: d
       } = n,
-      p = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
-        var n, r, l, i = {};
+        var n, r, i, l = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
-          for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-          return i
+          for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+          return l
         }
-        if (i = function(e, t) {
+        if (l = function(e, t) {
             if (null == e) return {};
-            var n, r, l = {},
-              i = Object.getOwnPropertyNames(e);
-            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-            return l
+            var n, r, i = {},
+              l = Object.getOwnPropertyNames(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+            return i
           }(e, t), Object.getOwnPropertySymbols)
-          for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-        return i
+          for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+        return l
       }(n, ["tag", "children", "hoverText", "className", "forceHover"]);
-    return (0, l.jsxs)("div", (e = function(e) {
+    return (0, i.jsxs)("div", (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -56,17 +56,17 @@ class u extends(r = Chunk64700.PureComponent) {
         })
       }
       return e
-    }({}, p), t = t = {
-      className: s()(u, o.oM, {
-        [o.r9]: null == a,
-        [o.EE]: d
+    }({}, f), t = t = {
+      className: o()(u, s.oM, {
+        [s.r9]: null == a,
+        [s.EE]: d
       }),
-      children: [(0, l.jsx)(r, {
-        className: o.yo,
+      children: [(0, i.jsx)(r, {
+        className: s.yo,
         children: a
-      }), (0, l.jsx)(r, {
-        className: o.Ay,
-        children: i
+      }), (0, i.jsx)(r, {
+        className: s.Ay,
+        children: l
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);

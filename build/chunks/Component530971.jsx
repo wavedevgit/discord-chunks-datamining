@@ -19,7 +19,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk231209 = require("./231209.jsx"),
   Chunk781724 = require("./781724.jsx"),
   Chunk758836 = require("./758836.js");
-let h = [Chunk758836.G2.HOME, Chunk758836.G2.ORBS];
+let _ = [Chunk758836.G2.HOME, Chunk758836.G2.ORBS];
 
 function E(e) {
   let {
@@ -32,8 +32,8 @@ function E(e) {
   } = e, m = v();
   C(m);
   let E = (0, s.bG)([a.A], () => a.A.useReducedMotion),
-    [A, x] = l.useState(true),
-    [S, O] = l.useState(true),
+    [A, S] = l.useState(true),
+    [x, O] = l.useState(true),
     y = l.useMemo(() => n.filter(e => !b.MS.some(t => {
       let {
         categorySkuId: n
@@ -51,16 +51,16 @@ function E(e) {
       c(t, n);
       let a = r && !E,
         o = s ? b.G2.ORBS : b.G2.CATALOG;
-      x(n), O(!l), i(o, a)
+      S(n), O(!l), i(o, a)
     }, [E, i, c]),
     {
-      searchError: T
+      searchError: L
     } = (0, d.S)();
-  return null != T ? (0, r.jsx)(_.A, {}) : null != m ? (0, r.jsx)(f.h, {
+  return null != L ? (0, r.jsx)(h.A, {}) : null != m ? (0, r.jsx)(f.h, {
     onRetry: u,
     errorMessage: m,
     errorOrigin: f.A.SHOP_PAGE
-  }) : h.includes(t) ? (0, r.jsx)(p.A, {
+  }) : _.includes(t) ? (0, r.jsx)(p.A, {
     handleTransition: j,
     tab: t,
     transitionState: o
@@ -68,9 +68,9 @@ function E(e) {
     tab: t,
     sortedCategories: y,
     initialCategoryId: A,
-    showFilterInitially: S,
+    showFilterInitially: x,
     onUnmount: () => {
-      x(true), O(true)
+      S(true), O(true)
     }
   })
 }

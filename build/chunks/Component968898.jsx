@@ -1,13 +1,13 @@
 /** Chunk was on 88474 **/
 /** chunk id: 968898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CS: () => P,
-  GQ: () => N,
-  O0: () => T,
+  CS: () => C,
+  GQ: () => T,
+  O0: () => N,
   Pl: () => S,
-  RE: () => x,
+  RE: () => I,
   X1: () => j,
-  we: () => C
+  we: () => P
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -45,43 +45,43 @@ function S(e) {
 }
 let j = 7e3;
 
-function x(e, t) {
-  return I((0, s.bG)([m.A], () => m.A.getWidget(e), [e]), t)
+function I(e, t) {
+  return x((0, o.bG)([m.A], () => m.A.getWidget(e), [e]), t)
 }
 
-function I(e, t) {
-  let n = l.useRef(null == e ? true : e.showExtrasHintTimestamp),
-    [r, i] = l.useState(false),
-    a = (0, A.A)(),
-    s = l.useRef(true);
-  return l.useEffect(() => {
+function x(e, t) {
+  let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
+    [r, l] = i.useState(false),
+    a = (0, _.A)(),
+    o = i.useRef(true);
+  return i.useEffect(() => {
     let r = null == e ? true : e.showExtrasHintTimestamp;
-    r !== n.current && (n.current = r, i(true), s.current = setTimeout(() => {
-      i(false)
+    r !== n.current && (n.current = r, l(true), o.current = setTimeout(() => {
+      l(false)
     }, t))
-  }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, f.Ay)(() => {
+  }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, p.Ay)(() => {
     let n = null == e ? true : e.showExtrasHintTimestamp;
-    return null != n && Date.now() - n < t && (i(true), s.current = setTimeout(() => {
-      i(false)
+    return null != n && Date.now() - n < t && (l(true), o.current = setTimeout(() => {
+      l(false)
     }, t)), () => {
-      null != s.current && clearTimeout(s.current)
+      null != o.current && clearTimeout(o.current)
     }
   }), r && a
 }
 let E = 8e3;
 
-function C(e) {
+function P(e) {
   let {
     children: t,
     widgetId: n
-  } = e, l = (0, s.bG)([m.A], () => m.A.getWidget(n), [n]);
-  return I(l, E) ? (0, r.jsxs)(r.Fragment, {
+  } = e, i = (0, o.bG)([m.A], () => m.A.getWidget(n), [n]);
+  return x(i, E) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.A, {
       className: O.Z,
       children: (0, r.jsx)(u.DUT, {
         className: O.SM,
         onClick: () => {
-          null != l && (p.A.setInputLocked(false, b.A.getTargetPID()), (0, g.YX)(l.type, {
+          null != i && (f.A.setInputLocked(false, b.A.getTargetPID()), (0, g.YX)(i.type, {
             type: g.Z5.KEYBIND_HINT,
             value: g.IP.OVERLAY_UNLOCKED
           }))
@@ -89,7 +89,7 @@ function C(e) {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/semibold",
           color: "text-strong",
-          children: (0, _.sI)((0, h.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
+          children: (0, h.sI)((0, A.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
             useFlexboxLayout: true,
             highlightAdminWarningIfElevated: false,
             keybindClassName: O.P
@@ -109,11 +109,11 @@ function C(e) {
   })
 }
 
-function P(e) {
+function C(e) {
   let {
     onClick: t
   } = e;
-  if ((0, A.A)()) return null;
+  if ((0, _.A)()) return null;
   let n = v.intl.string(v.t["3D5yo/"]);
   return (0, r.jsx)(c.m, {
     text: n,
@@ -123,20 +123,20 @@ function P(e) {
       onClick: t,
       children: (0, r.jsx)(u.Zes, {
         size: "xxs",
-        color: o.A.colors.INTERACTIVE_TEXT_ACTIVE
+        color: s.A.colors.INTERACTIVE_TEXT_ACTIVE
       })
     })
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, l = n ? v.intl.string(v.t.q2B3rh) : v.intl.string(v.t.JKGi6o);
-  return (0, A.A)() ? null : (0, r.jsx)(c.m, {
-    text: l,
-    "aria-label": l,
+  } = e, i = n ? v.intl.string(v.t.q2B3rh) : v.intl.string(v.t.JKGi6o);
+  return (0, _.A)() ? null : (0, r.jsx)(c.m, {
+    text: i,
+    "aria-label": i,
     children: (0, r.jsx)(u.DUT, {
       className: a()(O.x6, n && O.vu),
       onClick: () => {
@@ -146,29 +146,29 @@ function N(e) {
       },
       children: (0, r.jsx)(u.kN9, {
         size: "xxs",
-        color: n ? o.A.colors.BACKGROUND_BRAND : o.A.colors.INTERACTIVE_TEXT_ACTIVE
+        color: n ? s.A.colors.BACKGROUND_BRAND : s.A.colors.INTERACTIVE_TEXT_ACTIVE
       })
     })
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     id: t,
     pinned: n
-  } = e, l = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm), i = (0, A.A)();
+  } = e, i = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm), l = (0, _.A)();
   return (0, r.jsx)(c.m, {
-    text: l,
-    "aria-label": l,
+    text: i,
+    "aria-label": i,
     asContainer: true,
     children: (0, r.jsx)(u.DUT, {
       className: a()(O.x6, n && O.vu),
       onClick: () => {
-        i || (0, d.v0)(t)
+        l || (0, d.v0)(t)
       },
       children: (0, r.jsx)(u.qgw, {
         size: "xxs",
-        color: n ? o.A.colors.BACKGROUND_BRAND : o.A.colors.INTERACTIVE_TEXT_ACTIVE
+        color: n ? s.A.colors.BACKGROUND_BRAND : s.A.colors.INTERACTIVE_TEXT_ACTIVE
       })
     })
   })

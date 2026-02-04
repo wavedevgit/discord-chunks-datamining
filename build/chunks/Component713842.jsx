@@ -25,10 +25,10 @@ var Chunk627968 = require("./627968.js"),
 function j(e) {
   let {
     channelId: t
-  } = e, j = (0, i.bG)([f.A], () => f.A.getChannel(t)), x = (0, i.bG)([f.A], () => f.A.getChannel(null == j ? true : j.parent_id)), _ = (0, i.bG)([b.A], () => b.A.getGuild(null == j ? true : j.getGuildId())), v = (0, o.Ay)(j), E = l.useRef(false);
+  } = e, j = (0, i.bG)([f.A], () => f.A.getChannel(t)), _ = (0, i.bG)([f.A], () => f.A.getChannel(null == j ? true : j.parent_id)), x = (0, i.bG)([b.A], () => b.A.getGuild(null == j ? true : j.getGuildId())), v = (0, o.Ay)(j), E = l.useRef(false);
   if (l.useEffect(() => {
       null == j || E.current || (E.current = true, (0, A.rH)(j))
-    }, [j]), null == j || null == _) return null;
+    }, [j]), null == j || null == x) return null;
   let C = (0, r.jsx)(g.A, {
     channel: j
   });
@@ -41,9 +41,9 @@ function j(e) {
       "aria-label": y.intl.string(y.t.Pwe8tN),
       children: (0, p.zF)({
         channel: j,
-        parentChannel: x,
+        parentChannel: _,
         channelName: v,
-        guild: _,
+        guild: x,
         inSidebar: true,
         handleContextMenu: function(e) {
           (0, s.L3)(e, async () => {
@@ -92,7 +92,7 @@ function j(e) {
       className: O.T,
       children: (0, r.jsx)(c.A, {
         channel: j,
-        guild: _,
+        guild: x,
         chatInputType: u.oU.SIDEBAR
       }, t)
     })]

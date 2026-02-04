@@ -38,7 +38,7 @@ function E() {
 
 function C() {
   (0, O.openUserSettings)(y.X.GIFT_PANEL, {
-    section: x.nc_.INVENTORY
+    section: _.nc_.INVENTORY
   })
 }
 
@@ -52,7 +52,7 @@ function S(e) {
     showHeader: t,
     paymentSources: s,
     defaultPaymentSourceId: o,
-    premiumSubscriptionPaymentSourceId: null != d && d.status !== x.Dmq.CANCELED ? d.paymentSourceId : null,
+    premiumSubscriptionPaymentSourceId: null != d && d.status !== _.Dmq.CANCELED ? d.paymentSourceId : null,
     locale: c,
     removing: p,
     submitting: h
@@ -66,7 +66,7 @@ function I(e) {
   return (0, r.jsx)(s.po8, {
     messageType: s.YCn.INFO,
     className: t,
-    children: _.intl.format(_.t["8b+FXG"], {
+    children: x.intl.format(x.t["8b+FXG"], {
       onClick: C
     })
   })
@@ -96,7 +96,7 @@ function T() {
           gap: 16,
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
-            children: _.intl.string(_.t.obLrcK)
+            children: x.intl.string(x.t.obLrcK)
           }), (0, r.jsx)(N, {})]
         })
       })

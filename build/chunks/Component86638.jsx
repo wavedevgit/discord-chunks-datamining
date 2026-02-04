@@ -1,7 +1,7 @@
-/** Chunk was on 51693 **/
+/** Chunk was on 59569 **/
 /** chunk id: 86638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => C
+  A: () => N
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -94,19 +94,19 @@ function E(e) {
     }
   }, []);
   let {
-    trackUserProfileWishlistAction: C
-  } = (0, p.NJ)(), N = l.useCallback(() => {
-    null != t.sku && (C({
+    trackUserProfileWishlistAction: N
+  } = (0, p.NJ)(), C = l.useCallback(() => {
+    null != t.sku && (N({
       wishlistId: v,
       action: I.Mq.WISHLIST_ITEM_CLICKED,
       skuId: t.sku.id,
       productLines: new Set([t.sku.productLine])
     }), x())
-  }, [x, t.sku, v, C]), k = null != u ? (0, r.jsx)("div", {
+  }, [x, t.sku, v, N]), R = null != u ? (0, r.jsx)("div", {
     ref: P,
     className: w.BU,
     children: u
-  }) : null, R = l.useMemo(() => {
+  }) : null, k = l.useMemo(() => {
     if (null == t.sku) return null;
     let e = (0, r.jsxs)(y.A, {
         sku: t.sku,
@@ -117,9 +117,9 @@ function E(e) {
         }, f),
         disableHoverOrFocus: s,
         onHoverOrFocusChange: m,
-        onClick: N,
+        onClick: C,
         children: [(0, r.jsx)(h.A, {
-          onClick: N,
+          onClick: C,
           isHoveringOrFocusing: g,
           currentUser: i,
           wishlistOwner: n,
@@ -150,13 +150,13 @@ function E(e) {
           children: e
         })
       } return l
-  }, [d, t, s, g, A, N, m, f, o, n, i]);
+  }, [d, t, s, g, A, C, m, f, o, n, i]);
   return null == t.sku ? null : (0, r.jsxs)("div", {
     className: w.kL,
     children: [(0, r.jsx)("div", {
       className: S ? w.B8 : true,
-      children: R
-    }), k, n.id === i.id && (0, r.jsx)(O.A, {
+      children: k
+    }), R, n.id === i.id && (0, r.jsx)(O.A, {
       wishlistId: v,
       sku: t.sku,
       analyticsLocations: _,
@@ -233,7 +233,7 @@ function T(e) {
   }, u))
 }
 
-function C(e) {
+function N(e) {
   var t;
   let {
     item: n,

@@ -92,10 +92,10 @@ let R = Chunk64700.memo(function(e) {
       channel: i,
       participant: s,
       tempDisableOnInit: a = false
-    } = e, m = l.useRef(null), [O, _] = l.useState(a);
+    } = e, m = l.useRef(null), [O, x] = l.useState(a);
     (0, g.Ay)(() => {
       if (!O) return;
-      let e = setTimeout(() => _(false), 1e3);
+      let e = setTimeout(() => x(false), 1e3);
       return () => clearTimeout(e)
     });
     let C = i.getGuildId();
@@ -115,7 +115,7 @@ let R = Chunk64700.memo(function(e) {
         (0, p.L3)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
+          } = await Promise.all([n.e("97262"), n.e("29534"), n.e("48469"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
           return t => (0, r.jsx)(e, w(P({}, t), {
             user: s.user,
             guildId: C,
@@ -169,7 +169,7 @@ let R = Chunk64700.memo(function(e) {
           asContainer: true,
           children: (0, r.jsx)(d.K0, {
             onClick: function() {
-              (0, x.lL)(i, s.user.id, false)
+              (0, _.lL)(i, s.user.id, false)
             },
             disabled: M || O,
             icon: d.LvC,
@@ -182,7 +182,7 @@ let R = Chunk64700.memo(function(e) {
           children: (0, r.jsx)(d.K0, {
             "aria-label": N.intl.string(N.t.moABMy),
             onClick: function() {
-              (0, x.lL)(i, s.user.id, true)
+              (0, _.lL)(i, s.user.id, true)
             },
             icon: d.PGe,
             variant: "secondary"
@@ -223,7 +223,7 @@ function G(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: l
-  } = e, i = (0, _.J2)(t.id), a = [+!!(0, c.bG)([O.A], () => O.A.can(I.xB.MANAGE_CHANNELS, t) || O.A.can(I.xB.MANAGE_ROLES, t)), Math.max(1, i.length)];
+  } = e, i = (0, x.J2)(t.id), a = [+!!(0, c.bG)([O.A], () => O.A.can(I.xB.MANAGE_CHANNELS, t) || O.A.can(I.xB.MANAGE_ROLES, t)), Math.max(1, i.length)];
   return (0, r.jsxs)("div", {
     className: s()(T.kL, {
       [T.X_]: l

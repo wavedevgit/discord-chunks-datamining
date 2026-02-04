@@ -125,8 +125,8 @@ let W = (0, Chunk296216.J)(function(e) {
     mute: K,
     localMute: W,
     localVideoDisabled: z,
-    deaf: X,
-    video: q,
+    deaf: q,
+    video: X,
     embeddedApplication: J,
     serverMute: Q,
     serverDeaf: Z,
@@ -153,14 +153,14 @@ let W = (0, Chunk296216.J)(function(e) {
     isSelf: ey,
     application: eO,
     hangStatusActivity: ej,
-    requestToStreamActivity: ex,
-    showHangStatus: e_
+    requestToStreamActivity: e_,
+    showHangStatus: ex
   } = e, {
     enableUserHoverActivities: ev
   } = (0, M.fC)({
     guildId: Y.guild_id,
     location: "VoiceUser"
-  }), eE = l.useRef(null), [eC, eS] = l.useState(false), eI = l.useRef(null), [eN, eT] = l.useState(false), [eP, ew] = l.useState(false), [eR, eD] = l.useState(false), [eL, eM] = l.useState(false), eG = eP || eL || eR, ek = eN || eG, eU = (null == ex ? true : ex.session_id) != null, eV = (0, a.bG)([T.A], () => T.A.hasVoiceDareForUserId(g.id), [g.id]), eB = (0, N.Uk)("VoiceUser") && eV, eH = () => {
+  }), eE = l.useRef(null), [eC, eS] = l.useState(false), eI = l.useRef(null), [eN, eT] = l.useState(false), [eP, ew] = l.useState(false), [eR, eD] = l.useState(false), [eL, eM] = l.useState(false), eG = eP || eL || eR, ek = eN || eG, eU = (null == e_ ? true : e_.session_id) != null, eV = (0, a.bG)([T.A], () => T.A.hasVoiceDareForUserId(g.id), [g.id]), eB = (0, N.Uk)("VoiceUser") && eV, eH = () => {
     eS(!eC)
   }, eF = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -184,13 +184,13 @@ let W = (0, Chunk296216.J)(function(e) {
         channelId: Y.id,
         guildId: Y.guild_id
       };
-      P.default.getId() !== g.id && p.default.selectVoiceChannel(Y.id), ea ? ((0, x.A)(e), u.A.selectParticipant(e.channelId, (0, O._z)(e))) : (0, h.Nl)(e), null == ed || ed(g.id)
+      P.default.getId() !== g.id && p.default.selectVoiceChannel(Y.id), ea ? ((0, _.A)(e), u.A.selectParticipant(e.channelId, (0, O._z)(e))) : (0, h.Nl)(e), null == ed || ed(g.id)
     },
-    eX = e => {
+    eq = e => {
       (0, d.L3)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
+        } = await Promise.all([n.e("97262"), n.e("29534"), n.e("48469"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
         return t => (0, r.jsx)(e, F(H({}, t), {
           user: g,
           guildId: Y.guild_id,
@@ -203,7 +203,7 @@ let W = (0, Chunk296216.J)(function(e) {
         }))
       })
     },
-    eq = e => ey ? (0, r.jsx)(v.h, F(H({}, e), {
+    eX = e => ey ? (0, r.jsx)(v.h, F(H({}, e), {
       channel: Y,
       setIsHangStatusInputFocused: ew,
       setIsEmojiPickerOpen: eM
@@ -216,7 +216,7 @@ let W = (0, Chunk296216.J)(function(e) {
       userId: g.id,
       channel: Y
     }),
-    eQ = () => (0, f.r9)() && (0, f.UK)(Y.id) ? null : (0, r.jsx)(_.A, {
+    eQ = () => (0, f.r9)() && (0, f.UK)(Y.id) ? null : (0, r.jsx)(x.A, {
       user: g,
       channel: Y,
       onWatch: ez,
@@ -227,7 +227,7 @@ let W = (0, Chunk296216.J)(function(e) {
       className: B.kZ,
       "data-dnd-name": Y.name,
       onMouseEnter: em ? true : () => {
-        ev ? (ey && e_ && !eC && !ek && eT(true), eC || null == eu || eu(g.id)) : (es || e_ || eU || eB) && !eC && (null == eu || eu(g.id))
+        ev ? (ey && ex && !eC && !ek && eT(true), eC || null == eu || eu(g.id)) : (es || ex || eU || eB) && !eC && (null == eu || eu(g.id))
       },
       onMouseLeave: em ? true : eY,
       children: (0, r.jsx)(S.A, {
@@ -251,10 +251,10 @@ let W = (0, Chunk296216.J)(function(e) {
               localVideoDisabled: z,
               isStreaming: es,
               isGuest: eo,
-              video: q,
+              video: X,
               priority: ec,
               ringing: ee,
-              deaf: X,
+              deaf: q,
               nick: $,
               collapsed: i,
               overlap: i,
@@ -271,13 +271,13 @@ let W = (0, Chunk296216.J)(function(e) {
               selected: eC,
               onClick: t ? true : eH,
               onDoubleClick: ez,
-              onContextMenu: eX,
+              onContextMenu: eq,
               guildId: Y.guild_id,
               isSelf: ey,
               application: eO,
               channelId: Y.id,
               hangStatusActivity: ej,
-              showHangStatus: e_
+              showHangStatus: ex
             };
           if (em) {
             var l;
@@ -289,21 +289,20 @@ let W = (0, Chunk296216.J)(function(e) {
             })
           }
           let a = () => null;
-          return e_ && ek && (!ev || ey) ? a = eq : ev ? a = ey && e_ ? eq : () => (0, r.jsx)(G.A, {
+          return ex && ek && (!ev || ey) ? a = eX : ev ? a = ey && ex ? eX : () => (0, r.jsx)(G.A, {
             channel: Y,
             user: g,
             onAction: eY,
             onWatchStream: es ? ez : true,
-            previewIsOpen: eh,
             hangStatusActivity: ej
-          }) : es ? a = eQ : eU && g.id !== P.default.getId() ? a = eJ : e_ && (a = eq), (0, r.jsx)(c.YNO, {
+          }) : es ? a = eQ : eU && g.id !== P.default.getId() ? a = eJ : ex && (a = eX), (0, r.jsx)(c.YNO, {
             targetElementRef: eE,
             position: "right",
             renderPopout: a,
-            shouldShow: (ep || e_ && eG && (!ev || ey)) && !eC,
+            shouldShow: (ep || ex && eG && (!ev || ey)) && !eC,
             onRequestClose: eF,
-            align: e_ && ek && !ey && !ev ? "center" : true,
-            spacing: e_ && ek && (!ev || ey) ? 8 : 0,
+            align: ex && ek && !ey && !ev ? "center" : true,
+            spacing: ex && ek && (!ev || ey) ? 8 : 0,
             children: () => (0, r.jsx)(I.Ay, F(H({}, n), {
               ref: eE,
               onMouseDown: e.onMouseDown,

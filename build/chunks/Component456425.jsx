@@ -111,7 +111,7 @@ let U = Chunk64700.memo(function(e) {
     } = e, {
       analyticsLocations: u
     } = (0, c.Ay)(), h = (0, C.t)(i, o), f = l.useCallback(async () => {
-      if (h || (0, j.R7)(i), null != i.item_enum && i.item_enum === x.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
+      if (h || (0, j.R7)(i), null != i.item_enum && i.item_enum === _.r_.FIND_FRIENDS) return void(0, s.mMO)(async () => {
         let {
           default: e
         } = await n.e("67248").then(n.bind(n, 911539));
@@ -154,16 +154,16 @@ let U = Chunk64700.memo(function(e) {
           } else await (0, d.A)(r)
         }
         A.default.track(T.HAw.NOTIFICATION_CENTER_ACTION, {
-          action_type: x.e1.CLICKED,
+          action_type: _.e1.CLICKED,
           notification_center_id: i.id,
           item_type: i.type,
           acked: h
         })
       }
     }, [i, h, u]), m = null;
-    i.type === x.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
+    i.type === _.Uo.INCOMING_FRIEND_REQUESTS && null != i.other_user ? m = (0, r.jsx)(I.A, {
       userId: i.other_user.id
-    }) : i.type === x.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
+    }) : i.type === _.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != i.other_user && (m = (0, r.jsx)(I.A, {
       userId: i.other_user.id,
       applicationId: i.applicationId
     }));
@@ -211,7 +211,7 @@ let U = Chunk64700.memo(function(e) {
           }) : null, (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: h ? "text-muted" : "text-default",
-            children: (0, _.jb)(y.default.extractTimestamp(i.id))
+            children: (0, x.jb)(y.default.extractTimestamp(i.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.e, {

@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 178442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -81,21 +81,21 @@ function y(e) {
   }, r))
 }
 
-function v(e) {
+function E(e) {
   let {
     quality: t,
     lastPing: n,
     state: i,
     className: _,
-    children: v,
-    channelId: E,
+    children: E,
+    channelId: v,
     childrenAsSubtitle: O,
     connectionStatusTextVariant: C,
     hasVideo: S
   } = e, x = r.useRef(null), j = i === f.S7L.RTC_CONNECTED, I = r.useCallback(e => {
     var t, n;
     return (0, l.jsx)(h.A, (t = g({}, e), n = n = {
-      channelId: E
+      channelId: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -106,7 +106,7 @@ function v(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [E]), {
+  }, [v]), {
     connectionStatus: T,
     connectionStatusText: N
   } = d.A.getStatus(i, S);
@@ -147,13 +147,13 @@ function v(e) {
                   textVariant: C,
                   hasVideo: S,
                   className: A[T],
-                  hasConnectedChannel: null != E
+                  hasConnectedChannel: null != v
                 })
-              }), O ? v : null]
+              }), O ? E : null]
             })]
           })
         }
       })
-    }), O ? null : v]
+    }), O ? null : E]
   })
 }

@@ -74,7 +74,7 @@ let M = [],
 function k(e) {
   let {
     includePanelSpacing: t
-  } = e, n = (0, _.op)(), {
+  } = e, n = (0, x.op)(), {
     selectedFilter: i
   } = (0, v.A)(), a = (0, o.bG)([E.A], () => E.A.oldestDisplayedMessageId), c = (0, o.yK)([E.A], () => E.A.getInboxMessages()), S = (0, o.yK)([y.Ay, b.A, E.A], () => c.filter(e => !(0, C.EJ)({
     messageId: e.id,
@@ -89,7 +89,7 @@ function k(e) {
     ReadStateStore_: y.Ay,
     GuildStore_: b.A
   }) || (0, C.zo)(e, E.A.selectedItemInfo))), N = l.useCallback(e => {
-    i !== P.Io.BOOKMARKS && x.A.loadMoreInbox({
+    i !== P.Io.BOOKMARKS && _.A.loadMoreInbox({
       viewId: n,
       loadingTrigger: e
     })
@@ -178,7 +178,7 @@ function k(e) {
         isUnread: null != (n = y.Ay.hasUnread(c)) && n
       }
     }(K, W);
-    null != l && x.A.inboxItemClick({
+    null != l && _.A.inboxItemClick({
       message: l,
       channel: {
         id: l.channel_id
@@ -198,7 +198,7 @@ function k(e) {
     filterStyle: z
   } = (0, j.X8)({
     location: "NotificationsInboxSidebar"
-  }), X = z === j.yF.DROPDOWN && i !== P.Io.ALL, q = (0, P.Yw)(i);
+  }), q = z === j.yF.DROPDOWN && i !== P.Io.ALL, X = (0, P.Yw)(i);
   return (0, r.jsx)("nav", {
     className: s()(D.kL, {
       [D.Yu]: t
@@ -207,11 +207,11 @@ function k(e) {
       forceLevel: 1,
       component: (0, r.jsx)(g.Ay, L({
         hasSubheader: true,
-        guild: q
+        guild: X
       }, G)),
       children: [i === P.Io.ALL && (0, r.jsx)(F, {
         hideBanner: !R || i !== P.Io.ALL
-      }), X && (0, r.jsx)(u.hKd, {
+      }), q && (0, r.jsx)(u.hKd, {
         size: 8
       }), (0, r.jsx)(T.A, {
         className: D.cl,
@@ -228,7 +228,7 @@ function k(e) {
 }
 
 function U(e) {
-  return (0, r.jsx)(_.GM, {
+  return (0, r.jsx)(x.GM, {
     children: (0, r.jsx)(k, L({}, e))
   })
 }

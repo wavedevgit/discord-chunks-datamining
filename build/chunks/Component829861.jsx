@@ -54,7 +54,7 @@ function Y(e) {
     maxHeight: Y,
     connectedLocation: K,
     renderExternalHeader: W
-  } = e, z = (0, P.A)(), X = (0, a.yK)([S.Ay], () => S.Ay.getEmbeddedActivitiesForLocation(K), [K]), q = (0, T.H)(K), J = (0, a.bG)([O.A], () => O.A.getChannel(q)), Q = (0, I.IQ)(X), Z = (0, I.Rz)(Q), $ = l.useCallback(() => {
+  } = e, z = (0, P.A)(), q = (0, a.yK)([S.Ay], () => S.Ay.getEmbeddedActivitiesForLocation(K), [K]), X = (0, T.H)(K), J = (0, a.bG)([O.A], () => O.A.getChannel(X)), Q = (0, I.IQ)(q), Z = (0, I.Rz)(Q), $ = l.useCallback(() => {
     (0, C.gk)(k.Gd.PIP)
   }, []), ee = l.useRef(null), et = (0, a.bG)([S.Ay], () => S.Ay.getFocusedLayout()), en = et !== k.E8.NO_CHAT, [er, el] = l.useState(null != (t = null != (n = m.Ay.activityPanelHeight) ? n : Y) ? t : null), ei = l.useCallback(e => {
     d.Ay.updatedUnsyncedSettings({
@@ -85,7 +85,7 @@ function Y(e) {
     ec ? ((t = ea.width / k.B5) > ea.height && (e = (t = ea.height) * k.B5), ed = (ea.height - t) / 2) : ((e = Math.min(ea.height * k.B5)) > ea.width && (t = (e = ea.width) / k.B5), eu = (ea.width - e) / 2)
   }
   let eh = Z.get(null != (i = null == z ? true : z.id) ? i : ""),
-    eg = (0, a.bG)([x.A], () => x.A.getChannelId()),
+    eg = (0, a.bG)([_.A], () => _.A.getChannelId()),
     ef = (0, a.yK)([j.Ay], () => {
       var e;
       return null == J ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => j.Ay.getMember(J.guild_id, e))
@@ -149,7 +149,7 @@ function Y(e) {
     eA = (0, M.G)();
   if (null == z) return null;
   let ey = [];
-  null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => _.default.getUser(e)).filter(e => null != e && true !== e));
+  null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && true !== e));
   let eO = e => {
     var t;
     if (null == e || true === e || e === R.mt) return null;
@@ -232,7 +232,7 @@ function Y(e) {
             onOpenPopout: () => {
               (0, g.zV)(U.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, D.A)({
                 onConfirm: async () => {
-                  (null == z ? true : z.id) != null && null != q && await (0, C.od)(z.id, q), (0, C.jp)()
+                  (null == z ? true : z.id) != null && null != X && await (0, C.od)(z.id, X), (0, C.jp)()
                 }
               })
             },

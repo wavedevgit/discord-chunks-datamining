@@ -96,8 +96,8 @@ let U = Chunk64700.memo(function(e) {
     guild: K,
     animatable: W,
     selected: z = false,
-    unread: X = false,
-    mediaState: q,
+    unread: q = false,
+    mediaState: X,
     unavailable: J = false,
     badge: Q = 0,
     isMentionLowImportance: Z,
@@ -112,7 +112,7 @@ let U = Chunk64700.memo(function(e) {
   } = e, {
     id: ea,
     parentId: eo
-  } = V, ec = null != (t = e.upperBadge) ? t : J ? (0, P.em)() : null != q ? (0, P.oi)(q) : true, eu = null != (n = e.lowerBadge) ? n : true;
+  } = V, ec = null != (t = e.upperBadge) ? t : J ? (0, P.em)() : null != X ? (0, P.oi)(X) : true, eu = null != (n = e.lowerBadge) ? n : true;
   null == eu && Q > 0 ? eu = null != (f = (0, P.wN)(Q, Z ? h.LU0.colors.BACKGROUND_MOD_STRONG.css : h.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css)) ? f : true : null == eu && null != er && (eu = null != (U = (0, P.eW)({
     guildJoinRequestStatus: er
   })) ? U : true);
@@ -130,7 +130,7 @@ let U = Chunk64700.memo(function(e) {
         nodeId: V.id
       }),
       end() {
-        null == F || F(), (0, m.um)(x.Ay.getCompatibleGuildFolders())
+        null == F || F(), (0, m.um)(_.Ay.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -141,9 +141,9 @@ let U = Chunk64700.memo(function(e) {
     eb = !et && ef,
     [eA, ey] = l.useState(false),
     [eO, ej] = l.useState(false),
-    [ex] = l.useState(() => new p.J_(70, () => ej(true))),
-    e_ = (0, _.nr)() && !u.Fr;
-  l.useEffect(() => () => ex.cancel(), [ex]);
+    [e_] = l.useState(() => new p.J_(70, () => ej(true))),
+    ex = (0, x.nr)() && !u.Fr;
+  l.useEffect(() => () => e_.cancel(), [e_]);
   let ev = l.useCallback(() => {
       null != Y ? (0, A.pX)(Y, {
         state: G
@@ -167,8 +167,8 @@ let U = Chunk64700.memo(function(e) {
       }
     }, [eo]),
     eN = l.useCallback(e => {
-      e ? ex.delay() : (ex.cancel(), ej(false))
-    }, [ex]);
+      e ? e_.delay() : (e_.cancel(), ej(false))
+    }, [e_]);
 
   function eT() {
     et || em(true)
@@ -193,7 +193,7 @@ let U = Chunk64700.memo(function(e) {
         eO || ey(false)
       }
     }),
-    eL = e_ ? (0, r.jsx)(h.jlP, M(L({
+    eL = ex ? (0, r.jsx)(h.jlP, M(L({
       ariaLabel: R.intl.formatToPlainString(R.t["/uzRss"], {
         guildName: K.name,
         mentions: Q
@@ -244,7 +244,7 @@ let U = Chunk64700.memo(function(e) {
     eG = (0, r.jsx)(S.g4, {
       children: (0, r.jsx)(N.A, {})
     }),
-    ek = e_ ? (0, r.jsx)(o.animated.div, {
+    ek = ex ? (0, r.jsx)(o.animated.div, {
       ref: ee ? e => {
         eh(e)
       } : true,
@@ -288,7 +288,7 @@ let U = Chunk64700.memo(function(e) {
     children: [(0, r.jsx)(E.A, {
       hovered: !ep && eb,
       selected: !ep && z,
-      unread: !ep && X,
+      unread: !ep && q,
       className: D.Io
     }), (0, r.jsx)(I.A, {
       guild: K,

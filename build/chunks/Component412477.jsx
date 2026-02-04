@@ -14,16 +14,16 @@ let u = Chunk64700.memo(function(e) {
   let {
     emptyText: t,
     icon: n,
-    absolute: l = false
+    absolute: i = false
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(c.TP, l && c.ys),
-    children: (0, r.jsx)(s.m, {
+    className: a()(c.TP, i && c.ys),
+    children: (0, r.jsx)(o.m, {
       text: t,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(n, {
           size: "md",
-          color: o.LU0.colors.WHITE,
+          color: s.LU0.colors.WHITE,
           className: c.dx
         })
       })

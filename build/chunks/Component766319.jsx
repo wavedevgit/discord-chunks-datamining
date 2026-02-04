@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 766319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,7 +23,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk281783 = require("./281783.js");
 
-function x(e) {
+function _(e) {
   let t, {
       activity: n,
       channel: i,
@@ -33,7 +33,7 @@ function x(e) {
     [p, h] = l.useState(false),
     [f, m] = l.useState(0),
     b = (0, a.bG)([g.A], () => g.A.getChannelId() !== i.id);
-  async function x() {
+  async function _() {
     m(1);
     try {
       await c.A.sendActivityInvite({
@@ -80,7 +80,7 @@ function x(e) {
         fullWidth: true,
         size: "sm",
         text: 2 === f ? O.intl.string(y.default["8HU1M2"]) : O.intl.string(y.default.DKHhec),
-        onClick: x
+        onClick: _
       }), null != t && (0, r.jsx)(o.Text, {
         className: j.H$,
         variant: "text-xs/normal",
@@ -91,7 +91,7 @@ function x(e) {
   }
 }
 
-function _(e) {
+function x(e) {
   let {
     userId: t,
     channel: n
@@ -113,7 +113,7 @@ function _(e) {
       className: j.zr,
       children: (0, r.jsx)("div", {
         className: j.Ci,
-        children: g.map(e => (0, r.jsx)(x, {
+        children: g.map(e => (0, r.jsx)(_, {
           activity: e,
           channel: n,
           userId: t

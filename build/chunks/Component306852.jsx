@@ -28,7 +28,7 @@ function y(e) {
     channel: y,
     participants: O,
     onSelectParticipant: j
-  } = e, [x, _] = function() {
+  } = e, [_, x] = function() {
     let [e, t] = l.useState(() => o.w.get(A, g.CUs.BOTTOM_RIGHT));
     return [e, l.useCallback(e => {
       o.w.set(A, e), t(e)
@@ -46,12 +46,12 @@ function y(e) {
       c.EB(t, f.R8.CAMERA_PREVIEW)
     }, [S]),
     P = l.useCallback((e, t) => {
-      _(t)
-    }, [_]);
+      x(t)
+    }, [x]);
   return (0, r.jsx)("div", {
     className: m.kL,
     children: (0, r.jsx)(d.S, {
-      position: x,
+      position: _,
       id: 0,
       width: I,
       ref: v,

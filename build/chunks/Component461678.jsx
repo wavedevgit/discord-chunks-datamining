@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 461678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p
@@ -24,7 +24,7 @@ function p(e) {
     label: m,
     location: g,
     includeGuildMute: A
-  } = e, b = (0, s.b)(t), _ = (0, o.A0)(t), y = (0, r.bG)([h.A], () => h.A.getGuild(t.guild_id)), v = (0, c.A)(y), E = (0, u.os)("ChannelNotificationSettingsPopoutMenu") && d.B4.has(t.type);
+  } = e, b = (0, s.b)(t), _ = (0, o.A0)(t), y = (0, r.bG)([h.A], () => h.A.getGuild(t.guild_id)), E = (0, c.A)(y), v = (0, u.os)("ChannelNotificationSettingsPopoutMenu") && d.B4.has(t.type);
   return (0, l.jsxs)(i.W1t, {
     "data-menu-migrated": true,
     navId: f,
@@ -34,8 +34,8 @@ function p(e) {
     children: [(0, l.jsx)(i.rXV, {
       children: (0, a.Ay)(t, g)
     }), A ? (0, l.jsx)(i.rXV, {
-      children: v
-    }) : null, E ? _ : (0, l.jsx)(i.rXV, {
+      children: E
+    }) : null, v ? _ : (0, l.jsx)(i.rXV, {
       children: b
     })]
   })

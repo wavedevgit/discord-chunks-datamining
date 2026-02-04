@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 872363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L
+  A: () => k
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -85,7 +85,7 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
     friction: 18,
     clamp: true
   },
-  k = e => {
+  L = e => {
     let t, i, {
         participant: s,
         isUpsellEnabled: o,
@@ -100,7 +100,7 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
       {
         analyticsLocations: D
       } = (0, m.Ay)(),
-      M = null != (0, v.A)(s);
+      M = null != (0, E.A)(s);
     try {
       t = (0, y.HB)(R)
     } catch (e) {
@@ -111,39 +111,39 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
     } catch (e) {
       i = false
     }
-    let k = t || i,
+    let L = t || i,
       {
-        location: L
+        location: k
       } = (0, f.p)(),
       U = (0, c.bG)([A.default], () => A.default.getCurrentUser()),
       G = o && !_.Ay.isPremium(U, O.PremiumTypes.TIER_1) && !_.Ay.canStreamQuality(_.Ay.StreamQuality.MID, U),
       F = r.useCallback(() => {
-        G && k && (0, p.mMO)(async () => {
+        G && L && (0, p.mMO)(async () => {
           let {
             default: e
           } = await n.e("18630").then(n.bind(n, 826789));
           return t => (0, l.jsx)(e, j(x({}, t), {
-            analyticsSource: L
+            analyticsSource: k
           }))
         })
-      }, [G, k, L]);
+      }, [G, L, k]);
     if (r.useEffect(() => {
-        !T && k && (b.default.track(E.HAw.PREMIUM_UPSELL_VIEWED, {
+        !T && L && (b.default.track(v.HAw.PREMIUM_UPSELL_VIEWED, {
           type: O.e.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
           location_stack: D
         }), N(true))
-      }, [t, i, k, T, N, D]), null == R) return null;
+      }, [t, i, L, T, N, D]), null == R) return null;
     let H = (0, l.jsx)(d.m, {
-      text: M ? C.intl.string(C.t.q8TiVt) : k ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
+      text: M ? C.intl.string(C.t.q8TiVt) : L ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
       position: "bottom",
       children: (0, l.jsxs)(p.DUT, {
         onClick: F,
         className: a()(S.t5, I, g.u1[h], M ? S.Y5 : S.Lc, {
-          [S.vk]: G && k
+          [S.vk]: G && L
         }),
-        children: [k ? (0, l.jsx)(p.tvc, {
+        children: [L ? (0, l.jsx)(p.tvc, {
           size: "md",
           color: "currentColor",
           className: S.fY
@@ -158,13 +158,13 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
     return (0, l.jsx)(p.LpS, {
       text: H,
       className: a()(P, S.AA, {
-        [S.Dc]: k && w
+        [S.Dc]: L && w
       }),
       color: u.A.unsafe_rawColors.PRIMARY_500.css,
       shape: g.u1[h]
     })
   },
-  L = e => {
+  k = e => {
     let {
       participant: t,
       showQuality: n,
@@ -195,7 +195,7 @@ let I = (0, Chunk23339.xI)(Chunk319060.A.LIVE_INDICATOR_BORDER_RADIUS),
       }, r), {
         children: [b((e, n) => n ? (0, l.jsx)(s.animated.div, {
           style: e,
-          children: (0, l.jsx)(k, {
+          children: (0, l.jsx)(L, {
             className: S.LZ,
             participant: t,
             size: o,

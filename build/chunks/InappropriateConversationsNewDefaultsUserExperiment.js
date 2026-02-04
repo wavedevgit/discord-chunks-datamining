@@ -1,7 +1,7 @@
 /** Chunk was on 88474 **/
 /** chunk id: 639555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Rv: () => l
+  Rv: () => i
 });
 let r = (0, require("./600975.js").C)({
   kind: "user",
@@ -19,7 +19,7 @@ let r = (0, require("./600975.js").C)({
   }]
 });
 
-function l(e) {
+function i(e) {
   let {
     location: t
   } = e, {

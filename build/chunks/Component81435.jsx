@@ -86,7 +86,7 @@ function F(e) {
     nick: y,
     colorString: O
   } = (0, A.Ay)(t), {
-    avatarSrc: _,
+    avatarSrc: x,
     eventHandlers: v
   } = (0, E.A)({
     userId: t.author.id,
@@ -102,7 +102,7 @@ function F(e) {
   }), P = (0, r.jsx)("div", {
     className: V.Ys,
     inert: true,
-    children: (0, r.jsx)(x.A, {
+    children: (0, r.jsx)(_.A, {
       channel: n,
       message: t,
       hideGuildTag: true,
@@ -127,7 +127,7 @@ function F(e) {
         },
         children: C ? (0, r.jsx)(M.e, {
           "aria-label": "User Avatar",
-          src: _,
+          src: x,
           size: d._3J.SIZE_32,
           cornerIconUrl: null != b ? (0, S.Iv)(b, 24) : true,
           cornerIconOffsetX: 4,
@@ -284,7 +284,7 @@ function W(e) {
       isSelected: i
     } = e, {
       content: a
-    } = (0, _.A)(t, {
+    } = (0, x.A)(t, {
       hideSimpleEmbedContent: true,
       allowList: false,
       allowHeading: true,
@@ -306,13 +306,13 @@ function W(e) {
         O = t.type === G.lAJ.USER_JOIN,
         j = null;
       1 === u ? j = d.xfq : u > 1 ? j = d.sYc : p ? j = b.A : g || f ? j = d.YRe : h ? j = d.tEP : A && (j = d.HKD);
-      let x = true,
-        _ = null;
-      return o ? p ? _ = U.intl.string(U.t["9ddYKt"]) : g ? (x = false, _ = null == (e = t.poll) ? true : e.question.text) : _ = f ? U.intl.string(U.t.sad2PH) : c ? U.intl.string(U.t.p0oZmy) : u > 1 ? U.intl.formatToPlainString(U.t.rtfTKp, {
+      let _ = true,
+        x = null;
+      return o ? p ? x = U.intl.string(U.t["9ddYKt"]) : g ? (_ = false, x = null == (e = t.poll) ? true : e.question.text) : x = f ? U.intl.string(U.t.sad2PH) : c ? U.intl.string(U.t.p0oZmy) : u > 1 ? U.intl.formatToPlainString(U.t.rtfTKp, {
         count: u
       }) : 1 === u ? U.intl.string(U.t.tCcq5p) : h ? U.intl.format(U.t.zY4v1B, {
         stickerName: t.stickerItems[0].name
-      }) : A ? U.intl.string(U.t.slFYgi) : O ? U.intl.string(U.t.Yvvfw9) : U.intl.string(U.t.sDqZHL) : (x = false, _ = (0, r.jsx)(y.Ay, {
+      }) : A ? U.intl.string(U.t.slFYgi) : O ? U.intl.string(U.t.Yvvfw9) : U.intl.string(U.t.sDqZHL) : (_ = false, x = (0, r.jsx)(y.Ay, {
         content: a,
         message: t,
         compact: false,
@@ -320,15 +320,15 @@ function W(e) {
           [V.gy]: n,
           [V.wH]: i
         })
-      })), o && (_ = (0, r.jsx)("div", {
+      })), o && (x = (0, r.jsx)("div", {
         className: s()(V.iU, {
           [V.gy]: n,
           [V.wH]: i,
-          [V.QP]: x
+          [V.QP]: _
         }),
-        children: _
+        children: x
       })), {
-        previewContent: _,
+        previewContent: x,
         Icon: j
       }
     }, [t, a, n, i])

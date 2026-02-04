@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 286498, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => I
@@ -75,9 +75,9 @@ let j = e => {
   }, [n, t.id]);
   if (t.bot) return null;
   switch (i) {
-    case E.eA$.FRIEND:
+    case v.eA$.FRIEND:
       return null;
-    case E.eA$.PENDING_INCOMING:
+    case v.eA$.PENDING_INCOMING:
       return (0, l.jsx)(A.A, {
         targetElementRef: p,
         menuItems: [h],
@@ -95,7 +95,7 @@ let j = e => {
           }))
         })
       });
-    case E.eA$.PENDING_OUTGOING:
+    case v.eA$.PENDING_OUTGOING:
       return (0, l.jsx)(c.m_, {
         asContainer: true,
         text: O.intl.string(O.t["s/+byI"]),
@@ -135,7 +135,7 @@ function I(e) {
       selected: g,
       checked: A,
       disabled: y = false,
-      onClick: E,
+      onClick: v,
       onMouseEnter: I,
       onMessageClick: T,
       "aria-setsize": N,
@@ -145,8 +145,8 @@ function I(e) {
       handleTrackAction: D,
       showFriendButton: M = false
     } = e,
-    k = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
-    L = (0, s.rm)(String(n.id));
+    L = (0, o.bG)([b.A], () => b.A.getStatus(n.id)),
+    k = (0, s.rm)(String(n.id));
   return t = R ? (0, l.jsx)(u.P7L, {
     checked: A,
     disabled: y
@@ -170,12 +170,12 @@ function I(e) {
       [C.r9]: y
     }),
     onClick: r === _.A.FRIENDS || R ? () => {
-      D(r, i, "select"), null != E && E(n.id)
+      D(r, i, "select"), null != v && v(n.id)
     } : true,
     onMouseEnter: () => {
       null != I && I(r, i)
     }
-  }, L), {
+  }, k), {
     role: "option",
     "aria-selected": A,
     "aria-disabled": y,
@@ -188,7 +188,7 @@ function I(e) {
       }),
       children: [(0, l.jsx)(p.A, {
         user: n,
-        status: k,
+        status: L,
         className: C.my
       }), (0, l.jsxs)("div", {
         className: C.YW,
@@ -197,7 +197,7 @@ function I(e) {
           className: C.$R,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != f && f === n.tag ? v.Ay.getName(n) : null != f && "" !== f ? f : v.Ay.getName(n)
+          children: null != f && f === n.tag ? E.Ay.getName(n) : null != f && "" !== f ? f : E.Ay.getName(n)
         }), (0, l.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "text-muted",

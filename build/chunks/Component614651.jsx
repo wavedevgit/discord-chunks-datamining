@@ -88,35 +88,35 @@ let K = {
   },
   W = (0, Chunk915089.Ld)(),
   z = (0, Chunk915089.Ld)(),
-  X = "1337",
-  q = e => {
+  q = "1337",
+  X = e => {
     let t = 0;
     return [(0, O.rh)(Y(F({}, (0, j.Ay)({
-      channelId: X,
+      channelId: q,
       content: U.intl.string(U.t.oZxkEq)
     })), {
       state: G.cmJ.SENT,
       id: "".concat(t++)
     })), (0, O.rh)(Y(F({}, (0, j.Ay)({
-      channelId: X,
+      channelId: q,
       content: (0, c.Mw)(e) ? U.intl.string(U.t["WGb/v7"]) : U.intl.string(U.t["62m4mz"])
     })), {
       state: G.cmJ.SENT,
       id: "".concat(t++)
     })), (0, O.rh)(Y(F({}, (0, j.Ay)({
-      channelId: X,
+      channelId: q,
       content: U.intl.string(U.t.a0Byo5)
     })), {
       state: G.cmJ.SENT,
       id: "".concat(t++)
     })), (0, O.rh)(Y(F({}, (0, j.Ay)({
-      channelId: X,
+      channelId: q,
       content: U.intl.string(U.t.bmwEWJ)
     })), {
       state: G.cmJ.SENT,
       id: "".concat(t++)
     })), (0, O.rh)(Y(F({}, (0, j.Ay)({
-      channelId: X,
+      channelId: q,
       content: U.intl.string(U.t["hK9QW/"])
     })), {
       state: G.cmJ.SENT,
@@ -162,8 +162,8 @@ let K = {
         theme: I.A.theme,
         messageGroupSpacing: f.A.messageGroupSpacing
       })),
-      [d] = l.useState(() => q(G.NJ8.DARK)),
-      [p] = l.useState(() => q(G.NJ8.LIGHT)),
+      [d] = l.useState(() => X(G.NJ8.DARK)),
+      [p] = l.useState(() => X(G.NJ8.LIGHT)),
       h = t && n,
       g = (0, c.Mw)(i) ? d : p;
     return (0, r.jsx)(u.M1G, {
@@ -171,8 +171,8 @@ let K = {
         className: s()(V.VH, B.C2, e ? V.Me : true, "group-spacing-".concat(null != o ? o : e ? k.y5 : k.ES)),
         outline: true,
         "aria-hidden": true,
-        children: g.map((t, n) => (0, r.jsx)(_.A, {
-          author: (0, x.p_)(t),
+        children: g.map((t, n) => (0, r.jsx)(x.A, {
+          author: (0, _.p_)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
@@ -356,7 +356,7 @@ class ee extends Chunk64700.Component {
     })
   }
   constructor(...e) {
-    super(...e), H(this, "darkMessages", q(G.NJ8.DARK)), H(this, "lightMessages", q(G.NJ8.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), H(this, "darkMessages", X(G.NJ8.DARK)), H(this, "lightMessages", X(G.NJ8.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
       d.Ay.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })

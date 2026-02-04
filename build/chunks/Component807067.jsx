@@ -43,7 +43,7 @@ function w(e) {
     {
       fetchState: O,
       voiceBannerCollection: j
-    } = (n = (0, c.bG)([x.default], () => x.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
+    } = (n = (0, c.bG)([_.default], () => _.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
       (0, b.An)({
         surface: T,
         activeState: n
@@ -58,7 +58,7 @@ function w(e) {
         activeState: n
       }))[0]
     }),
-    _ = O === A.e.FETCHING,
+    x = O === A.e.FETCHING,
     v = l.useMemo(() => {
       let e = null == j ? true : j.application_directory_collection_items[0];
       return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
@@ -73,7 +73,7 @@ function w(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != v ? (0, h.Ii)(v.application) : true
     });
-  return null == v || null == j || _ ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
+  return null == v || null == j || x ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
     itemId: v.id,
     hash: v.image_hash,
     containerWidth: 584
@@ -117,7 +117,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
     guild_id: A
   } = i;
   l.useEffect(() => {
-    _.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+    x.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: b,
       guild_id: A
     })
@@ -126,7 +126,7 @@ let R = Chunk64700.forwardRef(function(e, t) {
   }, [a, s]);
   let y = (0, O.Us)(),
     {
-      analyticsLocations: x,
+      analyticsLocations: _,
       newestAnalyticsLocation: T
     } = (0, p.Ay)(d.A.ACTIVITIES_MINI_SHELF),
     R = y === S.BRT.POPOUT,
@@ -150,13 +150,13 @@ let R = Chunk64700.forwardRef(function(e, t) {
       }), c(), h()
     }, [i, T, h, c, R]),
     M = l.useCallback(e => {
-      o(), _.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+      o(), x.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: i.id,
         guild_id: i.getGuildId()
       })
     }, [o, i]);
   return (0, r.jsx)(p.f5, {
-    value: x,
+    value: _,
     children: (0, r.jsx)(j.A, {
       children: (0, r.jsxs)(u.lGe, {
         ref: t,

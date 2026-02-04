@@ -71,16 +71,16 @@ function E(e) {
         themeOverride: S,
         children: (0, r.jsx)(i.d_W, {
           children: (0, r.jsxs)("div", {
-            className: x.kL,
+            className: _.kL,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: _,
-              className: x.VH,
+              src: x,
+              className: _.VH,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: x.rf,
+              className: _.rf,
               children: [(0, r.jsxs)("div", {
-                className: x.N1,
+                className: _.N1,
                 children: [(0, r.jsx)(m.A, {
                   user: t
                 }), (0, r.jsx)(a.Heading, {

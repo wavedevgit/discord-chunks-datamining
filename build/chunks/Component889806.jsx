@@ -106,8 +106,8 @@ class U extends Chunk557534.Ay {
       subtitle: y,
       forceTopLevelThread: O,
       embeddedApps: j,
-      resolvedUnreadSetting: x,
-      withGuildIcon: _,
+      resolvedUnreadSetting: _,
+      withGuildIcon: x,
       enableActivities: v
     } = this.props, E = v && null != j && j.length > 0, C = (0, m.M)(y), S = (0, r.jsx)("li", {
       className: s()(this.getClassName(), {
@@ -140,8 +140,8 @@ class U extends Chunk557534.Ay {
           connectDragPreview: g ? h : null,
           isFavoriteSuggestion: A,
           channelTypeOverride: O ? R.rbe.GUILD_TEXT : true,
-          resolvedUnreadSetting: x,
-          withGuildIcon: _,
+          resolvedUnreadSetting: _,
+          withGuildIcon: x,
           "aria-label": (0, f.Ay)({
             channel: e,
             unread: i,
@@ -244,7 +244,7 @@ class U extends Chunk557534.Ay {
           channel: t
         }))
       });
-      let l = x.A.getGuild(t.getGuildId());
+      let l = _.A.getGuild(t.getGuildId());
       null != l && (0, u.L3)(e, async () => {
         let {
           default: e
@@ -274,13 +274,13 @@ function B(e) {
     unread: E.Ay.hasUnread(t.id),
     ackMessageId: E.Ay.ackMessageId(t.id),
     isLowImportanceMention: E.Ay.getIsMentionLowImportance(t.id)
-  })), f = (0, a.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([O.A, _.A], () => {
+  })), f = (0, a.bG)([C.Ay], () => C.Ay.resolveUnreadSetting(t)), m = (0, a.cf)([O.A, x.A], () => {
     let e = O.A.getChannel(t.parent_id);
     return {
-      canManageChannel: _.A.can(R.xBc.MANAGE_CHANNELS, t),
-      canReorderChannel: true !== l && (n.id === D.V || (null != e ? _.A.can(R.xBc.MANAGE_CHANNELS, e) : _.A.can(R.xBc.MANAGE_CHANNELS, n)))
+      canManageChannel: x.A.can(R.xBc.MANAGE_CHANNELS, t),
+      canReorderChannel: true !== l && (n.id === D.V || (null != e ? x.A.can(R.xBc.MANAGE_CHANNELS, e) : x.A.can(R.xBc.MANAGE_CHANNELS, n)))
     }
-  }), x = (0, a.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
+  }), _ = (0, a.bG)([A.A], () => A.A.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: S,
     isSubscriptionGated: I
   } = (0, b.A)(t.id), N = (0, a.bG)([C.Ay], () => C.Ay.isFavorite(n.id, t.id)), P = (0, g.vL)(t), w = (0, p.Gp)(t.id), L = (0, T.A)({
@@ -289,7 +289,7 @@ function B(e) {
     isChannelSelected: o,
     isSubscriptionGated: I,
     needSubscriptionToAccess: S,
-    isNewChannel: x,
+    isNewChannel: _,
     muted: s,
     enableActivities: w,
     resolvedUnreadSetting: f
@@ -299,7 +299,7 @@ function B(e) {
     hasMoreActiveThreads: u,
     isSubscriptionGated: I,
     needSubscriptionToAccess: S,
-    isNewChannel: x && e.canBeNewChannel,
+    isNewChannel: _ && e.canBeNewChannel,
     isFavoriteSuggestion: i && !N,
     channelIsContentGated: P,
     channelInfo: L,

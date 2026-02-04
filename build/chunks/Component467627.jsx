@@ -179,7 +179,7 @@ function es(e) {
     hideDms: t,
     scrollToTop: n,
     lurkingGuildIds: l
-  } = e, i = (0, _.A)(), s = (0, p.yK)([R.A, w.Ay], () => R.A.getGuildIds().filter(e => w.Ay.isCurrentUserGuest(e))), a = l.concat(s), {
+  } = e, i = (0, x.A)(), s = (0, p.yK)([R.A, w.Ay], () => R.A.getGuildIds().filter(e => w.Ay.isCurrentUserGuest(e))), a = l.concat(s), {
     entrypoint: o
   } = (0, S.X8)({
     location: "GuildsBar"
@@ -230,7 +230,7 @@ function eo(e) {
   } = e, [o] = (0, p.yK)([D.Ay], () => {
     let e = D.Ay.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.bG)([C.A], () => C.A.lurkingGuildIds()), h = l.useMemo(() => n ? [] : d, [d, n]), b = (0, p.bG)([x.A], () => x.A.isFullscreenInContext()), {
+  }), d = (0, p.bG)([C.A], () => C.A.lurkingGuildIds()), h = l.useMemo(() => n ? [] : d, [d, n]), b = (0, p.bG)([_.A], () => _.A.isFullscreenInContext()), {
     isSorting: y,
     startSorting: v,
     stopSorting: E
@@ -252,7 +252,7 @@ function eo(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(B, ["ref"]), K = (0, m.R7z)(), [z, J] = l.useState(false), Q = (0, m.rdh)(f.A.modules.guildbar.AVATAR_SIZE), et = (0, m.rdh)(f.A.space.SPACE_XS), eo = (0, _.A)(), {
+  }(B, ["ref"]), K = (0, m.R7z)(), [z, J] = l.useState(false), Q = (0, m.rdh)(f.A.modules.guildbar.AVATAR_SIZE), et = (0, m.rdh)(f.A.space.SPACE_XS), eo = (0, x.A)(), {
     pathname: ec
   } = (0, c.zy)(), {
     entrypoint: eu
@@ -313,7 +313,7 @@ function eo(e) {
   let em = l.useCallback(function e(t, n, l) {
       switch (t.type) {
         case G.PJ.FOLDER:
-          return (0, r.jsx)(X.A, {
+          return (0, r.jsx)(q.A, {
             folderNode: t,
             setNodeRef: ep.setNodeRef,
             draggable: true,
@@ -325,7 +325,7 @@ function eo(e) {
             "aria-posinset": true !== n ? n + 1 : true
           }, t.id);
         case G.PJ.GUILD:
-          return (0, r.jsx)(q.A, {
+          return (0, r.jsx)(X.A, {
             guildNode: t,
             setRef: ep.setNodeRef,
             draggable: true,

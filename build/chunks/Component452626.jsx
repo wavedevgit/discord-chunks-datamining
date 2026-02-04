@@ -1,7 +1,7 @@
 /** Chunk was on 88474 **/
 /** chunk id: 452626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => s
+  A: () => o
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -9,41 +9,41 @@ var Chunk990078 = require("./990078.jsx"),
   Chunk397927 = require("./397927.js"),
   Chunk353411 = require("./353411.js");
 
-function s(e) {
+function o(e) {
   let {
     activity: t,
     user: n,
-    source: s,
-    size: o = "sm",
+    source: o,
+    size: s = "sm",
     variant: c = "secondary",
     fullWidth: u,
     onAction: d
-  } = e, p = function(e, t) {
+  } = e, f = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (i = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
   }(e, ["activity", "user", "source", "size", "variant", "fullWidth", "onAction"]), {
-    label: f,
+    label: p,
     tooltip: m,
     loading: g,
     disabled: y,
     onClick: b
-  } = (0, a._B)(t, n, s);
-  return (0, r.jsx)(l.m, {
+  } = (0, a._B)(t, n, o);
+  return (0, r.jsx)(i.m, {
     text: m,
-    children: (0, r.jsx)(i.Button, function(e) {
+    children: (0, r.jsx)(l.Button, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -62,15 +62,15 @@ function s(e) {
       return e
     }({
       variant: c,
-      size: o,
-      icon: i.L5T,
-      text: f,
+      size: s,
+      icon: l.L5T,
+      text: p,
       fullWidth: u,
       onClick: () => {
         null == d || d(), b()
       },
       disabled: y,
       loading: g
-    }, p))
+    }, f))
   })
 }

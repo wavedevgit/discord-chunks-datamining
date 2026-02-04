@@ -71,8 +71,8 @@ function U(e) {
     userId: n.id,
     channelId: U.id
   }), z = l.useRef(null), {
-    isHoveringOrFocusing: X,
-    isHovering: q
+    isHoveringOrFocusing: q,
+    isHovering: X
   } = (0, p.A)(z), J = (0, y.fC)(), Q = (0, o.zhh)({
     opacity: +(null != J.interactionType),
     config: {
@@ -124,13 +124,13 @@ function U(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: G.wx,
-              children: [(0, r.jsx)(x.A, {
+              children: [(0, r.jsx)(_.A, {
                 user: n,
                 displayProfile: H,
                 themeType: L.d.SIDEBAR,
-                animateOnHoverOrFocusOnly: !X,
+                animateOnHoverOrFocusOnly: !q,
                 className: G.vK
-              }), (0, r.jsx)(_.A, {
+              }), (0, r.jsx)(x.A, {
                 userId: n.id,
                 className: G.oR
               }), (0, r.jsx)(j.A, {
@@ -150,7 +150,7 @@ function U(e) {
               currentUser: m,
               displayProfile: H,
               channel: U,
-              isHoveringOrFocusing: null == J.interactionType && X,
+              isHoveringOrFocusing: null == J.interactionType && q,
               onOpenProfile: B ? true : Z
             }), $ && (0, r.jsx)("div", {
               className: G.sJ,
@@ -182,7 +182,7 @@ function U(e) {
             context: W
           }), (null == H ? true : H.profileEffect) != null && (0, r.jsx)(h.A, {
             skuId: null == H || null == (t = H.profileEffect) ? true : t.skuId,
-            isHovering: q
+            isHovering: X
           })]
         })
       })

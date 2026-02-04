@@ -2,7 +2,7 @@
 /** chunk id: 976742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => S
+  A: () => x
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -37,13 +37,13 @@ function A(e) {
       children: (0, r.jsx)(p.A, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, _.UU)(e, v.G2.CATALOG, g)
+        onClickAnalytics: (0, h.UU)(e, v.G2.CATALOG, g)
       }, e.skuId)
     }, e.skuId))
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     category: t
   } = e, [n, a] = l.useState(false), i = (0, s.K)(e => {
@@ -60,7 +60,7 @@ function x(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   var t;
   let {
     sortedCategories: n,
@@ -69,24 +69,24 @@ function S(e) {
     handlePageChange: o,
     initialCategoryId: u
   } = e, d = (0, c.uM)(), f = (0, b.U)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
-    noCache: _,
+    noCache: h,
     includeUnpublished: E
-  } = (0, h.A)(), A = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, _.A)(), A = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), S = l.useRef(true);
+  }), [n]), x = l.useRef(true);
   l.useEffect(() => {
     if (null == u || 0 === A.length) {
-      S.current = true;
+      x.current = true;
       return
     }
-    if (u === S.current) return;
+    if (u === x.current) return;
     let e = A.findIndex(e => e.skuId === u);
     if (false === e) return;
     let t = Math.floor(e / v.l5) + 1;
-    t !== a && o(t), S.current = u
+    t !== a && o(t), x.current = u
   }, [u, A, o, a]);
   let O = l.useMemo(() => {
     let e = (a - 1) * v.l5;
@@ -98,7 +98,7 @@ function S(e) {
       checkpoint: g.t.SHOP_MOUNTED,
       tab: v.G2.CATALOG,
       unpublishedCategoriesShown: E,
-      cacheDisabled: _
+      cacheDisabled: h
     })
   }, []), l.useEffect(() => {
     f || 0 === O.length || (0, g.z)({
@@ -106,9 +106,9 @@ function S(e) {
       checkpoint: g.t.SHOP_RENDERED,
       tab: v.G2.CATALOG,
       unpublishedCategoriesShown: E,
-      cacheDisabled: _
+      cacheDisabled: h
     })
-  }, [p, E, _, f, O.length]), f) ? (0, r.jsx)(m.A, {}) : (0, r.jsxs)("div", {
+  }, [p, E, h, f, O.length]), f) ? (0, r.jsx)(m.A, {}) : (0, r.jsxs)("div", {
     className: C.LZ,
     children: [O.map((e, t) => (0, r.jsx)("div", {
       ref: t => s(e.skuId, t),
@@ -116,7 +116,7 @@ function S(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(x, {
+        children: (0, r.jsx)(S, {
           category: e
         })
       })

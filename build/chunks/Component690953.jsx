@@ -56,9 +56,9 @@ function A(e) {
     y = (null == A ? true : A.channelId) === e.id,
     O = (0, a.J)(e) && !e.isPrivate(),
     j = (0, a.A)(e),
-    x = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && j || O,
-    _ = (0, p.A)();
-  if (!y && 0 === _.length) return null;
+    _ = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && j || O,
+    x = (0, p.A)();
+  if (!y && 0 === x.length) return null;
   let v = (0, h.A)(true);
   return y ? (0, r.jsx)(i.Drp, {
     label: f.intl.string(f.t.PlwgdU),
@@ -71,8 +71,8 @@ function A(e) {
       type: "icon",
       icon: v
     },
-    disabled: x
-  }) : _.map(l => {
+    disabled: _
+  }) : x.map(l => {
     var a, o;
     let c = (0, h.A)(l.type);
     return (0, r.jsx)(i.Drp, {
@@ -104,7 +104,7 @@ function A(e) {
         type: "icon",
         icon: c
       },
-      disabled: x
+      disabled: _
     }, l.id)
   })
 }

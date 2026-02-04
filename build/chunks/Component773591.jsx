@@ -44,18 +44,18 @@ function R(e) {
   } = e, B = (0, g.uM)(), w = null != (t = null == B ? true : B.sessionId) ? t : "", {
     noCache: D,
     includeUnpublished: M
-  } = (0, v.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([f.A], () => f.A.productsWithVariantsAsGroup), [U, F] = l.useState(1), z = (0, c.DP)(), V = (0, i.qB)(z), [K, W, Y] = l.useMemo(() => {
+  } = (0, v.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([f.A], () => f.A.productsWithVariantsAsGroup), [U, F] = l.useState(1), V = (0, c.DP)(), z = (0, i.qB)(V), [K, W, Y] = l.useMemo(() => {
     switch (P) {
       case C.G2.AVATAR_DECORATIONS:
-        return [x.intl.string(x.t.dRZYNE), V ? T.A : j.A, s.R.AVATAR_DECORATION];
+        return [S.intl.string(S.t.dRZYNE), z ? L.A : j.A, s.R.AVATAR_DECORATION];
       case C.G2.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjtx"]), V ? N.A : k.A, s.R.PROFILE_EFFECT];
+        return [S.intl.string(S.t["1cNjtx"]), z ? N.A : k.A, s.R.PROFILE_EFFECT];
       case C.G2.NAMEPLATES:
-        return [x.intl.string(x.t.V68Fqz), V ? I.A : L.A, s.R.NAMEPLATE];
+        return [S.intl.string(S.t.V68Fqz), z ? I.A : T.A, s.R.NAMEPLATE];
       case C.G2.BUNDLES:
-        return [x.intl.string(x.t.FYFpps), V ? y.A : O.A, s.R.BUNDLE]
+        return [S.intl.string(S.t.FYFpps), z ? y.A : O.A, s.R.BUNDLE]
     }
-  }, [P, V]), q = (0, m.p)(), Z = l.useMemo(() => q(G.filter(e => {
+  }, [P, z]), q = (0, m.p)(), Z = l.useMemo(() => q(G.filter(e => {
     var t;
     return (e.type === Y || e.type === s.R.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true) && !C.MS.some(t => {
       let {
@@ -65,17 +65,17 @@ function R(e) {
     })
   })), [G, Y, q]), X = (0, p.X)(Z);
   return (l.useEffect(() => {
-    (0, _.z)({
+    (0, h.z)({
       sessionId: w,
-      checkpoint: _.t.SHOP_MOUNTED,
+      checkpoint: h.t.SHOP_MOUNTED,
       tab: P,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
-    n || (0, _.z)({
+    n || (0, h.z)({
       sessionId: w,
-      checkpoint: _.t.SHOP_RENDERED,
+      checkpoint: h.t.SHOP_RENDERED,
       tab: P,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
@@ -85,24 +85,24 @@ function R(e) {
       style: {
         backgroundImage: "url(".concat(W, ")")
       },
-      className: S.cI,
+      className: x.cI,
       children: (0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
-      className: S.ZE,
+      className: x.ZE,
       children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == f.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(g.R9, {
         newValue: {
           tilePosition: t
         },
-        children: (0, r.jsx)(h.A, {
+        children: (0, r.jsx)(_.A, {
           skuId: e.skuId,
           onClickAnalytics: (0, E.UU)(e, P, B)
         }, e.skuId)
       }, e.skuId))
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: S.Ej,
+      className: x.Ej,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.mgR, {
           currentPage: U,

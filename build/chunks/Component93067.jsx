@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 93067, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -48,13 +48,13 @@ function g(e) {
     }
   }(i);
   A = null != b ? "".concat(t, " ").concat(b) : t;
-  let [y] = r.useState(new s.Ep), [v, E] = r.useState(false), [O, C] = r.useState(false), S = r.useCallback(() => {
+  let [y] = r.useState(new s.Ep), [E, v] = r.useState(false), [O, C] = r.useState(false), S = r.useCallback(() => {
     y.start(250, () => {
-      E(false)
+      v(false)
     }, false)
-  }, [y, E]), x = r.useCallback(() => {
-    y.stop(), E(true)
-  }, [y, E]), j = r.useCallback(() => {
+  }, [y, v]), x = r.useCallback(() => {
+    y.stop(), v(true)
+  }, [y, v]), j = r.useCallback(() => {
     C(true)
   }, []), I = r.useCallback(() => {
     C(false)
@@ -74,7 +74,7 @@ function g(e) {
       })
     }),
     targetElementRef: g,
-    shouldShow: O || v,
+    shouldShow: O || E,
     position: "bottom",
     children: e => {
       var t, r;

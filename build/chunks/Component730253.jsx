@@ -66,7 +66,7 @@ function D() {
       favoriteAdded: W,
       clearFavoriteAdded: z
     } = (0, E.CJ)(),
-    [X, q] = l.useState(false),
+    [q, X] = l.useState(false),
     {
       favoriteServerMuted: J,
       favoriteChannels: Q
@@ -85,7 +85,7 @@ function D() {
       if (!D) returnfalse;
       let e = y.A.getCurrentUserActiveStream();
       return null != e && null != Q[e.channelId]
-    }), M = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), G = (0, o.bG)([x.A], () => D && null != i && x.A.hasVideo(i), [D, i]), k = (0, o.yK)([p.Ay], () => _.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
+    }), M = (0, o.bG)([y.A], () => y.A.getAllApplicationStreams().some(e => null != Q[e.channelId])), G = (0, o.bG)([_.A], () => D && null != i && _.A.hasVideo(i), [D, i]), k = (0, o.yK)([p.Ay], () => x.default.keys(Q).reduce((e, t) => (e.push(...p.Ay.getEmbeddedActivitiesForChannel(t)), e), [])), U = (0, o.bG)([p.Ay], () => Array.from(p.Ay.getSelfEmbeddedActivities().values()).some(e => {
       let {
         location: t
       } = e, n = (0, h.H)(t);
@@ -105,7 +105,7 @@ function D() {
   return (0, r.jsxs)(f.c, {
     children: [(0, r.jsx)(g.A, {
       selected: ee,
-      hovered: X,
+      hovered: q,
       unread: en && !J,
       className: P.Io
     }), (0, r.jsx)(I.A, {
@@ -125,9 +125,9 @@ function D() {
               pathname: N.BVt.CHANNEL(N.YYv, Z),
               state: R
             },
-            selected: ee || X,
-            onMouseEnter: () => q(true),
-            onMouseLeave: () => q(false),
+            selected: ee || q,
+            onMouseEnter: () => X(true),
+            onMouseLeave: () => X(false),
             onMouseDown: function() {
               null != $ && u.A.preload($.guild_id, $.id)
             },

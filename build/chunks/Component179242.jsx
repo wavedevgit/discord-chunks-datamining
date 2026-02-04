@@ -30,10 +30,10 @@ function y(e) {
   } = (0, i.Ay)(), {
     context: O
   } = (0, o.NJ)(), j = (0, l.A)(), {
-    mutualFriendsCount: x,
-    mutualFriends: _,
+    mutualFriendsCount: _,
+    mutualFriends: x,
     mutualGuilds: v
-  } = (0, c.A)(t), E = !t.bot && null != x && x > 0, C = null != v && v.length > 0;
+  } = (0, c.A)(t), E = !t.bot && null != _ && _ > 0, C = null != v && v.length > 0;
   return E || C ? (0, r.jsxs)(f.A.Overlay, {
     className: A.Lw,
     children: [C && (0, r.jsx)(m.A, {
@@ -59,8 +59,8 @@ function y(e) {
       header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: A.p_,
       onExpand: () => (0, u.A)(t.id, j),
-      items: null == _ ? Array.from({
-        length: x
+      items: null == x ? Array.from({
+        length: _
       }).map((e, t) => (0, r.jsxs)("div", {
         className: A.nC,
         children: [(0, r.jsx)(s.FQ, {
@@ -70,7 +70,7 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : _.map(e => {
+      }, t)) : x.map(e => {
         let {
           key: t,
           user: l,

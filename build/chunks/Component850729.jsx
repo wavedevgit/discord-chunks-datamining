@@ -55,8 +55,8 @@ function L(e) {
     badge: h,
     link: g,
     showProgressBadge: b
-  } = e, [A, y] = l.useState(false), [O, j] = l.useState(false), [x, _] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, p.fy)().activePanel === p.HP.APP_ICON, G = () => {
-    _(null), T(0), clearTimeout(x)
+  } = e, [A, y] = l.useState(false), [O, j] = l.useState(false), [_, x] = l.useState(null), [v, T] = l.useState(0), L = (0, i.Vd)("home"), M = (0, p.fy)().activePanel === p.HP.APP_ICON, G = () => {
+    x(null), T(0), clearTimeout(_)
   };
   if (null == d) return null;
   let k = w.intl.string(w.t.YUU0RF);
@@ -95,7 +95,7 @@ function L(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != x && clearTimeout(x), _(setTimeout(G, 500)), T(v + 1), 15 === v)) {
+          if (!__OVERLAY__ && (null != _ && clearTimeout(_), x(setTimeout(G, 500)), T(v + 1), 15 === v)) {
             G();
             let e = !a.w.get(N.wqg);
             a.w.set(N.wqg, e), e && a.w.set(P.L, true), e ? (0, f.Ak)("discodo") : (0, f.Ak)("user_leave"), j(true), setTimeout(() => {
@@ -154,13 +154,13 @@ function L(e) {
 
 function M() {
   let e = (0, v.q)(),
-    t = (0, s.bG)([x.A, j.A], () => {
-      let e = (0, c.v)(x.A.activeItems, j.A),
+    t = (0, s.bG)([_.A, j.A], () => {
+      let e = (0, c.v)(_.A.activeItems, j.A),
         {
           total: t,
           progress: n
-        } = _.zY(e),
-        r = _.uA(n, t);
+        } = x.zY(e),
+        r = x.uA(n, t);
       return r > 0 && r < 100
     }),
     n = (0, g.kX)(),

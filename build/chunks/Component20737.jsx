@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 20737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => G
@@ -38,7 +38,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk275825 = require("./275825.js");
 
-function L(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -93,7 +93,7 @@ let G = Chunk64700.memo(function(e) {
       let {
         default: e
       } = await Promise.all([n.e("4918"), n.e("98184")]).then(n.bind(n, 543428));
-      return t => (0, l.jsx)(e, U(L({}, t), {
+      return t => (0, l.jsx)(e, U(k({}, t), {
         channelId: F.id,
         onClipClick: e => ee({
           clips: [e]
@@ -116,9 +116,9 @@ let G = Chunk64700.memo(function(e) {
       j._.unsubscribe(R.jej.UPLOAD_FILE, e)
     }
   });
-  let eh = (0, v.n)(F),
-    ep = (0, v.Tb)(F),
-    ef = !E.D_.useSetting() && !(0, I.isAndroidWeb)() && null != window.ResizeObserver,
+  let eh = (0, E.n)(F),
+    ep = (0, E.Tb)(F),
+    ef = !v.D_.useSetting() && !(0, I.isAndroidWeb)() && null != window.ResizeObserver,
     em = (0, _.I7)(null != F ? F : true),
     eg = (0, y.Sc)({
       location: "ChannelAttachButton"
@@ -143,9 +143,9 @@ let G = Chunk64700.memo(function(e) {
   let ey = (0, l.jsx)(o.pa$, {
       size: "refresh_sm",
       color: "currentColor",
-      colorClass: k.dW
+      colorClass: L.dW
     }),
-    ev = (0, l.jsx)(o.YNO, {
+    eE = (0, l.jsx)(o.YNO, {
       targetElementRef: Y,
       shouldShow: null != ei,
       animation: o.YNO.Animation.NONE,
@@ -161,12 +161,12 @@ let G = Chunk64700.memo(function(e) {
       renderPopout: e => {
         switch (ei) {
           case "recentClips":
-            return (0, l.jsx)(m.A, U(L({}, e), {
+            return (0, l.jsx)(m.A, U(k({}, e), {
               onOpenClips: ed,
               lastClipsSession: Z
             }));
           case "attachMenu":
-            return (0, l.jsx)(P.A, U(L({}, e), {
+            return (0, l.jsx)(P.A, U(k({}, e), {
               onClose: () => ea(null),
               options: e_,
               channel: F,
@@ -183,10 +183,10 @@ let G = Chunk64700.memo(function(e) {
             throw Error("Invalid popout type provided")
         }
       },
-      children: e => (0, l.jsx)(N.A, U(L({
+      children: e => (0, l.jsx)(N.A, U(k({
         ref: Y,
-        className: a()(k.g$, G),
-        childClassName: k.wh,
+        className: a()(L.g$, G),
+        childClassName: L.wh,
         isActive: false,
         "aria-label": M.intl.string(M.t.d56gCa),
         onDoubleClick: ec ? () => {
@@ -200,7 +200,7 @@ let G = Chunk64700.memo(function(e) {
     });
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
-      className: k.EJ,
+      className: L.EJ,
       children: (0, l.jsx)(c.A, {
         ref: z,
         onChange: e => {
@@ -215,8 +215,8 @@ let G = Chunk64700.memo(function(e) {
         "aria-hidden": true
       })
     }), (0, l.jsx)("div", {
-      className: k.Jd,
-      children: ev
+      className: L.Jd,
+      children: eE
     })]
   })
 })

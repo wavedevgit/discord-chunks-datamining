@@ -89,7 +89,7 @@ let F = () => (0, l.jsxs)("div", {
 });
 class Y extends(r = Chunk64700.Component) {
   render() {
-    let e = _.A.getGuild(this.props.channel.guild_id);
+    let e = x.A.getGuild(this.props.channel.guild_id);
     return (0, l.jsx)(D.c3, H(B({}, this.props), {
       children: (0, l.jsx)("div", {
         className: U.MD,
@@ -126,10 +126,10 @@ let K = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
       guild: t
     } = e;
     return {
-      unread: x.default.hasUnread(t.id)
+      unread: _.default.hasUnread(t.id)
     }
   })(Chunk586068.OS),
-  X = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk290863.A], e => {
+  q = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk290863.A], e => {
     var t;
     let {
       channel: n
@@ -139,7 +139,7 @@ let K = Chunk311907.Ay.connectStores([Chunk222823.Ay, Chunk734057.A], e => {
       status: r
     }
   })(Chunk586068.nG),
-  q = Chunk311907.Ay.connectStores([Chunk734057.A, Chunk222823.Ay, Chunk290863.A], e => {
+  X = Chunk311907.Ay.connectStores([Chunk734057.A, Chunk222823.Ay, Chunk290863.A], e => {
     let {
       user: t
     } = e, n = j.A.getDMFromUserId(t.id);
@@ -336,7 +336,7 @@ class Q extends Chunk64700.PureComponent {
         case f.rD.TEXT_CHANNEL:
         case f.rD.VOICE_CHANNEL:
           let r = t.record,
-            i = _.A.getGuild(r.getGuildId());
+            i = x.A.getGuild(r.getGuildId());
           if (null == i) return;
           switch (r.type) {
             case G.rbe.GUILD_TEXT:
@@ -524,7 +524,7 @@ class Q extends Chunk64700.PureComponent {
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.rD.USER:
-          return (0, l.jsx)(q, {
+          return (0, l.jsx)(X, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -536,7 +536,7 @@ class Q extends Chunk64700.PureComponent {
             score: i ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.rD.GROUP_DM:
-          return (0, l.jsx)(X, {
+          return (0, l.jsx)(q, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

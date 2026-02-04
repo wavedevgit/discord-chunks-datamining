@@ -26,23 +26,23 @@ function b(e) {
     isNarrow: s,
     hasText: b
   } = e, {
-    searchQuery: h,
+    searchQuery: _,
     onSetSearchQuery: E
-  } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), x = (0, i.bG)([c.default], () => c.default.locale), S = l.useRef(null), [O, y] = l.useState(false);
+  } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), S = (0, i.bG)([c.default], () => c.default.locale), x = l.useRef(null), [O, y] = l.useState(false);
   l.useEffect(() => {
     let e = setTimeout(() => {
       E(v)
     }, 250);
     return () => clearTimeout(e)
   }, [v, E]), l.useEffect(() => {
-    C(h)
-  }, [h]), l.useEffect(() => {
+    C(_)
+  }, [_]), l.useEffect(() => {
     y(s && b)
   }, [s, b]);
   let j = l.useCallback(e => {
       "Enter" === e.key && E(v)
     }, [v, E]),
-    T = l.useCallback(e => {
+    L = l.useCallback(e => {
       u.default.track(m.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == A ? true : A.sessionId,
         page_section: null == A ? true : A.pageSection,
@@ -53,25 +53,25 @@ function b(e) {
         page_type: n
       })
     }, [n, A]),
-    L = l.useCallback(() => {
-      n !== f.G2.CATALOG && t(f.G2.CATALOG), T(f.uY.SEARCH_ICON), y(true), setTimeout(() => {
+    T = l.useCallback(() => {
+      n !== f.G2.CATALOG && t(f.G2.CATALOG), L(f.uY.SEARCH_ICON), y(true), setTimeout(() => {
         var e;
-        return null == (e = S.current) ? true : e.focus()
+        return null == (e = x.current) ? true : e.focus()
       })
-    }, [n, t, T]),
+    }, [n, t, L]),
     I = l.useCallback(() => {
-      n !== f.G2.CATALOG && t(f.G2.CATALOG), T(f.uY.SEARCH_BAR)
-    }, [n, t, T]),
+      n !== f.G2.CATALOG && t(f.G2.CATALOG), L(f.uY.SEARCH_BAR)
+    }, [n, t, L]),
     k = l.useCallback(() => {
-      C(""), E(""), T(f.uY.SEARCH_BAR_CLEAR), s && y(false)
-    }, [E, T, s]),
+      C(""), E(""), L(f.uY.SEARCH_BAR_CLEAR), s && y(false)
+    }, [E, L, s]),
     N = l.useCallback(() => {
       s && "" === v && y(false)
     }, [s, v]),
     R = s && !O,
     P = (0, r.jsx)(o.DUT, {
-      className: _.qc,
-      onClick: L,
+      className: h.qc,
+      onClick: T,
       children: (0, r.jsx)(o.$p$, {
         size: "sm",
         color: o.LU0.colors.INTERACTIVE_ICON_DEFAULT
@@ -79,13 +79,13 @@ function b(e) {
     }),
     B = (0, r.jsx)(o.IWV, {
       size: "sm",
-      ref: S,
+      ref: x,
       onKeyDown: j,
       query: v,
       onChange: C,
       onClear: k,
       onBlur: N,
-      placeholder: "en-US" === x ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
+      placeholder: "en-US" === S ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
     }),
     w = {
       "--custom-search-bar-width": "".concat(f.rr, "px"),
@@ -95,12 +95,12 @@ function b(e) {
     style: w,
     children: P
   });
-  let D = a()(_.ON, {
-    [_.Nz]: O
+  let D = a()(h.ON, {
+    [h.Nz]: O
   });
   return O ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.j8,
+      className: h.j8,
       style: w,
       children: P
     }), (0, r.jsx)(o.DUT, {

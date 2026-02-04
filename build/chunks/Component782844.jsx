@@ -105,7 +105,7 @@ class V extends Chunk64700.PureComponent {
         settingsSection: L.nc_.ACCOUNT,
         panelClassName: G.SZ,
         onTabChange: e => {
-          x.default.track(L.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+          _.default.track(L.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === D.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
@@ -130,7 +130,7 @@ let B = () => {
   let e = (0, o.bG)([j.default], () => j.default.getCurrentUser()),
     t = (0, o.bG)([y.A], () => y.A.hidePersonalInformation),
     n = (0, o.bG)([v.A], () => v.A.theme),
-    r = (0, o.bG)([_.default], () => _.default.locale),
+    r = (0, o.bG)([x.default], () => x.default.locale),
     i = (0, o.bG)([O.A], () => O.A.getSubsection());
   return null == e ? null : (0, l.jsx)(V, {
     theme: n,

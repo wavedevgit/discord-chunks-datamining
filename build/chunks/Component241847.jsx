@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 241847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -52,7 +52,7 @@ function y(e, t) {
   }), e
 }
 
-function v(e) {
+function E(e) {
   let {
     lobbyId: t,
     connectionTypeText: n,
@@ -71,7 +71,7 @@ function v(e) {
   }))
 }
 
-function E(e) {
+function v(e) {
   let {
     closePopout: t,
     connectionTypeText: n
@@ -98,11 +98,11 @@ function O(e) {
   } = e, a = (0, p.k)({
     channelId: t
   }) ? A.intl.string(A.t["3BogKe"]) : A.intl.string(A.t.ETIVvg);
-  return n ? (0, l.jsx)(v, {
+  return n ? (0, l.jsx)(E, {
     lobbyId: r,
     closePopout: i,
     connectionTypeText: a
-  }) : (0, l.jsx)(E, {
+  }) : (0, l.jsx)(v, {
     closePopout: i,
     connectionTypeText: a
   })

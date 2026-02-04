@@ -1,8 +1,8 @@
-/** Chunk was on 65442 **/
+/** Chunk was on 95320 **/
 /** chunk id: 479026, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   T: () => I,
-  _: () => g
+  _: () => h
 }), require("./896048.js");
 var Chunk635358 = require("./635358.js"),
   Chunk793574 = require("./793574.js"),
@@ -17,14 +17,14 @@ var Chunk635358 = require("./635358.js"),
   Chunk657331 = require("./657331.js"),
   Chunk901123 = require("./901123.js");
 
-function g(e) {
+function h(e) {
   let {
     isOwner: t,
     isItemOwned: r,
     onWishlistItemClick: c,
     profileOwner: d,
     sku: f,
-    analyticsLocations: g,
+    analyticsLocations: h,
     giftingOrigin: I
   } = e, p = location.pathname.startsWith(m.BV.COLLECTIBLES_SHOP);
   if (t || r) {
@@ -33,13 +33,13 @@ function g(e) {
       let t = l.A.getProduct(f.id),
         r = l.A.getCategoryForProduct(f.id);
       if (null != t && null != r) {
-        e || (0, h.closeUserProfileModal)(), (0, s.t)({
+        e || (0, g.closeUserProfileModal)(), (0, s.t)({
           product: t,
           category: r,
-          shouldCheckoutWithOrbs: (0, a.Ak)({
+          shouldCheckoutWithOrbs: (0, o.Ak)({
             product: t
           }),
-          analyticsLocations: g,
+          analyticsLocations: h,
           analyticsSource: i.A.USER_PROFILE_WISHLIST,
           returnRef: true,
           tab: true
@@ -47,12 +47,12 @@ function g(e) {
         return
       }
     }
-    e || (0, h.closeUserProfileModal)(), (0, o.pX)("".concat(m.BV.COLLECTIBLES_SHOP, "#itemSkuId=").concat(f.id))
+    e || (0, g.closeUserProfileModal)(), (0, a.pX)("".concat(m.BV.COLLECTIBLES_SHOP, "#itemSkuId=").concat(f.id))
   } else null == c || c(), (0, u.A)({
     skuId: f.id,
     isGift: true,
     giftingOrigin: I,
-    analyticsLocations: g,
+    analyticsLocations: h,
     giftRecipient: d,
     variantsReturnStyle: n.g.VARIANTS_GROUP
   })
@@ -65,24 +65,24 @@ function I(e) {
     profileOwner: n,
     isItemOwned: l,
     application: s,
-    sku: a,
+    sku: o,
     analyticsLocations: u,
-    additionalUserIds: o
+    additionalUserIds: a
   } = e;
-  t || l ? (null == s ? true : s.guildId) != null && (t ? ((0, h.closeUserProfileModal)(), (0, c.default)({
+  t || l ? (null == s ? true : s.guildId) != null && (t ? ((0, g.closeUserProfileModal)(), (0, c.default)({
     guildId: s.guildId,
-    skuId: a.id,
-    slug: a.slug
+    skuId: o.id,
+    slug: o.slug
   })) : (0, d.R)({
-    skuId: a.id,
+    skuId: o.id,
     applicationId: s.id,
     guildId: s.guildId,
     isStorefront: false,
     analyticsLocations: u
-  })) : (0, f.a)(a, {
+  })) : (0, f.a)(o, {
     isGift: true,
     giftRecipient: n,
-    additionalUserIds: o,
+    additionalUserIds: a,
     giftingOrigin: r
   }, {
     analyticsLocations: [...u, i.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]

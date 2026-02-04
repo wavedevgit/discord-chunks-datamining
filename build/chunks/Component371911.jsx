@@ -84,10 +84,10 @@ function I(e) {
   l.useEffect(() => {
     U !== c.Y2.BOOKMARKS || K || W || V(c.Y2.MENTIONS), U === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
   });
-  let X = l.useCallback(e => {
+  let q = l.useCallback(e => {
       e.shiftKey || F()
     }, [F]),
-    q = (0, m.Sc)({
+    X = (0, m.Sc)({
       location: "ForYou"
     });
   return (0, r.jsx)(p.f5, {
@@ -106,23 +106,23 @@ function I(e) {
           className: L,
           children: (0, r.jsx)("div", {
             className: s()(S.k, {
-              [S.q]: q
+              [S.q]: X
             }),
             children: (0, r.jsx)(u.Fmo, {
-              component: (0, r.jsx)(x.A, {
+              component: (0, r.jsx)(_.A, {
                 tab: U,
                 setTab: V,
                 badgeState: T,
                 closePopout: F
               }),
               children: U === c.Y2.FOR_YOU ? (0, r.jsx)(O.Ay, {}) : U === c.Y2.MENTIONS ? (0, r.jsx)(j.A, {
-                onJump: X
+                onJump: q
               }) : K && W && U === c.Y2.BOOKMARKS ? (0, r.jsx)(f.J, {
                 closePopout: F
-              }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(_.w, {}) : (0, r.jsx)(a.tH, {
+              }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(x.w, {}) : (0, r.jsx)(a.tH, {
                 fallback: (0, r.jsx)(v.T, {}),
                 children: (0, r.jsx)(v.Ay, {
-                  onJump: X,
+                  onJump: q,
                   showTutorial: B,
                   setSeenTutorial: H,
                   closePopout: F

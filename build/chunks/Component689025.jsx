@@ -80,7 +80,7 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class X extends Chunk557534.Ay {
+class q extends Chunk557534.Ay {
   getVoiceStatesCount() {
     var e;
     let {
@@ -146,8 +146,8 @@ class X extends Chunk557534.Ay {
       mentionCount: O,
       isFavoriteSuggestion: j
     } = this.props, {
-      shouldShowGuildVerificationPopout: x
-    } = this.state, _ = this.getVoiceStatesCount(), v = (0, r.jsxs)("li", {
+      shouldShowGuildVerificationPopout: _
+    } = this.state, x = this.getVoiceStatesCount(), v = (0, r.jsxs)("li", {
       className: s()(this.getModeClass(), {
         [F.r9]: this.isDisabled()
       }),
@@ -157,7 +157,7 @@ class X extends Chunk557534.Ay {
         position: "right",
         renderPopout: this.renderPopout,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: x,
+        shouldShow: _,
         children: () => (0, r.jsx)(c.m, {
           text: this.getTooltipText(),
           children: (0, r.jsxs)(k.Ay, {
@@ -186,7 +186,7 @@ class X extends Chunk557534.Ay {
               channel: e,
               unread: A,
               mentionCount: O,
-              userCount: _,
+              userCount: x,
               isSubscriptionGated: m,
               needSubscriptionToAccess: b
             }),
@@ -281,7 +281,7 @@ class X extends Chunk557534.Ay {
     })
   }
 }
-let q = (0, Chunk676002.a)((0, Chunk296216.F)(X));
+let X = (0, Chunk676002.a)((0, Chunk296216.F)(q));
 
 function J(e) {
   let {
@@ -305,7 +305,7 @@ function J(e) {
       bypassLimit: P.A.can(V.xBc.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.bG)([S.A], () => S.A.isCollapsed(n.parent_id)), h = (0, C.Ay)(n.id), g = (0, a.bG)([v.A], () => v.A.getStageInstanceByChannel(n.id), [n.id]), f = (0, x.zy)(n.id, _.ip.AUDIENCE), {
+  }), p = (0, a.bG)([S.A], () => S.A.isCollapsed(n.parent_id)), h = (0, C.Ay)(n.id), g = (0, a.bG)([v.A], () => v.A.getStageInstanceByChannel(n.id), [n.id]), f = (0, _.zy)(n.id, x.ip.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   } = (0, A.A)(n.id), y = (0, a.bG)([R.Ay], () => R.Ay.isFavorite(t.id, n.id)), O = (0, E.xn)(n.id), j = (0, G.A)({
@@ -317,7 +317,7 @@ function J(e) {
     needSubscriptionToAccess: b,
     enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < V.RCc
   }), N = e.connected && null == j;
-  return (0, r.jsx)(q, z(W({
+  return (0, r.jsx)(X, z(W({
     categoryCollapsed: p,
     connectAction: h,
     numAudience: f,

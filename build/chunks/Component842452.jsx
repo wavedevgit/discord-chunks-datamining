@@ -55,8 +55,8 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
         "aria-posinset": z
       } = e,
       {
-        id: X,
-        name: q,
+        id: q,
+        name: X,
         children: J
       } = d,
       [Q, Z] = l.useState(false),
@@ -84,7 +84,7 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
       ee(e)
     }, []), es = l.useCallback(e => {
       ("ArrowRight" === e.key && !P || "ArrowLeft" === e.key && P) && B()
-    }, [B, P]), ea = null != q && "" !== q ? q : null != M && "" !== M ? M : E.intl.string(E.t.xV9hVh), eo = (0, c.Vd)("".concat(X)), ec = "folder-items-".concat(X), eu = (t = J.length, n = (0, p.rdh)(p.LU0.modules.guildbar.FOLDER_SIZE), i = (0, p.rdh)(p.LU0.modules.guildbar.AVATAR_SIZE), t * (i + (o = (0, p.rdh)(p.LU0.space.SPACE_XS))) - o + (o - (n - i) / 2) + (0, p.rdh)(p.LU0.space.SPACE_4)), ed = (0, p.pnh)(!er && P, {
+    }, [B, P]), ea = null != X && "" !== X ? X : null != M && "" !== M ? M : E.intl.string(E.t.xV9hVh), eo = (0, c.Vd)("".concat(q)), ec = "folder-items-".concat(q), eu = (t = J.length, n = (0, p.rdh)(p.LU0.modules.guildbar.FOLDER_SIZE), i = (0, p.rdh)(p.LU0.modules.guildbar.AVATAR_SIZE), t * (i + (o = (0, p.rdh)(p.LU0.space.SPACE_XS))) - o + (o - (n - i) / 2) + (0, p.rdh)(p.LU0.space.SPACE_4)), ed = (0, p.pnh)(!er && P, {
       from: {
         height: 0
       },
@@ -97,14 +97,14 @@ let I = (0, Chunk240248.xI)(Chunk319060.A.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: I
       }
-    }), ep = l.useCallback(e => null == m ? true : m(X, e), [m, X]), eh = (0, r.jsxs)(x.c, {
+    }), ep = l.useCallback(e => null == m ? true : m(q, e), [m, q]), eh = (0, r.jsxs)(_.c, {
       children: [(0, r.jsx)(A.A, {
         disabled: er || P,
         hovered: Q,
         selected: T,
         unread: L,
         className: S.Io
-      }), (0, r.jsx)(_.A, {
+      }), (0, r.jsx)(x.A, {
         text: ea,
         disabled: k,
         selected: T,

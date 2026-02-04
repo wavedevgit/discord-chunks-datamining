@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 653008, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => f
@@ -24,38 +24,38 @@ let p = Chunk64700.memo(function(e) {
     interactionData: b,
     referencedUsernameProfile: _,
     referencedAvatarProfile: y,
-    setPopout: v
+    setPopout: E
   } = e, {
-    isInteractionUserBlocked: E,
+    isInteractionUserBlocked: v,
     isInteractionUserIgnored: O
   } = (0, i.cf)([c.A], () => ({
     isInteractionUserBlocked: c.A.isBlockedForMessage(p),
     isInteractionUserIgnored: c.A.isIgnoredForMessage(p)
-  }), [p]), C = (0, i.bG)([o.A], () => o.A.getMessageByReference(null == p ? true : p.messageReference)), S = (0, d.r4)(null == (t = p.interaction) ? true : t.user.id, f.id), x = (0, d.T0)(p.interaction, f, g, v), j = (0, d.Yq)(A, v), I = (0, s.Am)(p), T = (null == I ? true : I.type) === a.G4.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, N = (0, d.r4)(T, f.id), P = (0, d.I)(T, f, _, v), w = (0, d.Ge)(y, v), R = (0, d.U_)(b, v), D = r.useCallback(() => {
-    v({
+  }), [p]), C = (0, i.bG)([o.A], () => o.A.getMessageByReference(null == p ? true : p.messageReference)), S = (0, d.r4)(null == (t = p.interaction) ? true : t.user.id, f.id), x = (0, d.T0)(p.interaction, f, g, E), j = (0, d.Yq)(A, E), I = (0, s.Am)(p), T = (null == I ? true : I.type) === a.G4.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, N = (0, d.r4)(T, f.id), P = (0, d.I)(T, f, _, E), w = (0, d.Ge)(y, E), R = (0, d.U_)(b, E), D = r.useCallback(() => {
+    E({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
       interactionData: false,
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [v]), M = r.useCallback(() => (0, h.A)({
+  }, [E]), M = r.useCallback(() => (0, h.A)({
     message: p,
     channel: f,
     compact: m,
-    setPopout: v,
+    setPopout: E,
     referencedAvatarProfile: y,
     referencedUsernameProfile: _,
     replyReference: p.messageReference,
     replyMessage: C,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, p, y, C, _, v]);
+  }), [f, m, p, y, C, _, E]);
   return (0, l.jsx)(u.A, {
     message: p,
     channel: f,
     compact: m,
-    isInteractionUserBlocked: E,
+    isInteractionUserBlocked: v,
     isInteractionUserIgnored: O,
     showAvatarPopout: A,
     showUsernamePopout: g,

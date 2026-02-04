@@ -56,7 +56,7 @@ function G(e) {
     hasParticipantsPanel: O
   } = (0, g.A)({
     location: "StageChannelCallHeader"
-  }), _ = O && m;
+  }), x = O && m;
   return (0, r.jsxs)(p.f5, {
     value: i,
     children: [(0, r.jsx)(b.A, {
@@ -70,7 +70,7 @@ function G(e) {
         showRequestToSpeakSidebar: l,
         numRequestToSpeak: y
       })
-    }) : null, !m && O && (0, r.jsx)(x.A, {
+    }) : null, !m && O && (0, r.jsx)(_.A, {
       className: s()(M.x6, {
         [M.vc]: c
       }),
@@ -79,7 +79,7 @@ function G(e) {
       }
     }, "participants-list-button"), !c && (0, r.jsx)("div", {
       className: s()(M.x6, {
-        [M.vc]: _ || l
+        [M.vc]: x || l
       }),
       children: (0, r.jsx)(j.V, {
         channelId: t.id,
@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: i,
     showRequestToSpeakSidebar: d
-  } = e, p = (0, m.Ay)(n), h = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), g = (0, C.uy)(n.id), f = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([_.A], () => _.A.getGuild(n.guild_id), [n.guild_id]), j = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? j < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && j <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([v.A], () => v.A.can(N.QY, n)), k = () => {
+  } = e, p = (0, m.Ay)(n), h = (0, a.bG)([T.A], () => T.A.getStageInstanceByChannel(n.id)), g = (0, C.uy)(n.id), f = (0, C.zy)(n.id, S.ip.AUDIENCE), b = (0, a.bG)([x.A], () => x.A.getGuild(n.guild_id), [n.guild_id]), j = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, _ = null != b && b.features.has(R.GuildFeatures.COMMUNITY) ? j < R.p2C : (null == b ? true : b.premiumTier) !== R.TVA.TIER_3 && j <= R.nyz, I = (0, w.A)(n), P = (0, a.bG)([v.A], () => v.A.can(N.QY, n)), k = () => {
     u.A.updateStageVideoLimitBoostUpsellDismissed(n.id, true), E.default.track(R.HAw.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: D.e.VIDEO_STAGE_LIMIT,
@@ -186,15 +186,15 @@ function k(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-strong",
-          children: x ? L.intl.string(L.t["T+zF9M"]) : L.intl.string(L.t["IZ+SVv"])
+          children: _ ? L.intl.string(L.t["T+zF9M"]) : L.intl.string(L.t["IZ+SVv"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: x ? L.intl.string(L.t.Izgpmv) : L.intl.string(L.t["7FHbPG"])
+          children: _ ? L.intl.string(L.t.Izgpmv) : L.intl.string(L.t["7FHbPG"])
         })]
       }), (0, r.jsx)("div", {
         className: M.Uo,
-        children: x ? (0, r.jsxs)(r.Fragment, {
+        children: _ ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Button, {
             onClick: k,
             size: "sm",

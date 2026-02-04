@@ -118,21 +118,21 @@ function k(e) {
     nowPlaying: i = false,
     isOverride: f,
     subgames: b,
-    isSubgame: x = false,
-    parentGame: _
+    isSubgame: _ = false,
+    parentGame: x
   } = e, v = (0, a.cf)([g.Ay, y.A, O.A], () => (0, g.xU)(t, g.Ay, y.A, O.A)), {
     canToggleDetection: E,
     isCurrentGameDetectionEnabled: T
   } = (0, a.cf)([g.Ay], () => ({
-    canToggleDetection: null == _ || g.Ay.isDetectionEnabled(_),
+    canToggleDetection: null == x || g.Ay.isDetectionEnabled(x),
     isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(v)
-  })), w = (0, a.bG)([g.Ay], () => g.Ay.getVisibleGame()), [L, G] = l.useState(false), U = l.useMemo(() => (0, A.n1)(v) ? x ? v.gameName : I.intl.formatToPlainString(I.t.G6BGdx, {
+  })), w = (0, a.bG)([g.Ay], () => g.Ay.getVisibleGame()), [L, G] = l.useState(false), U = l.useMemo(() => (0, A.n1)(v) ? _ ? v.gameName : I.intl.formatToPlainString(I.t.G6BGdx, {
     subgameName: v.gameName
-  }) : v.name, [v, x]), [V, B] = l.useState(null != U ? U : "???"), H = s()(P.tR, {
+  }) : v.name, [v, _]), [V, B] = l.useState(null != U ? U : "???"), H = s()(P.tR, {
     [N.LO]: !i,
     [N.Rw]: i,
     [N.FB]: null != v && i,
-    [N.xL]: x,
+    [N.xL]: _,
     [N.fG]: null != b && b.length > 0
   });
 
@@ -163,7 +163,7 @@ function k(e) {
     }) : d.A.toggleDetection(v)
   }
   let Y = null != w && (0, g.Es)(v) === (0, g.Es)(w),
-    K = null != _ && _.id === (null == w ? true : w.id) || Y || null != b && b.some(e => e.id === (null == w ? true : w.id));
+    K = null != x && x.id === (null == w ? true : w.id) || Y || null != b && b.some(e => e.id === (null == w ? true : w.id));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: H,
@@ -280,7 +280,7 @@ function k(e) {
           })
         })
       }(), function() {
-        if (!M || null != _) return null;
+        if (!M || null != x) return null;
         let {
           overlay: e,
           overlayWarn: t

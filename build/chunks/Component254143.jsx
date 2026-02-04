@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 254143, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => g
@@ -22,10 +22,10 @@ function g(e) {
     channel: t,
     user: g,
     guild: A
-  } = e, b = (0, i.bG)([h.A], () => null != g && h.A.isUserBanned(g.id)), _ = null != g && null == b, [y, v] = r.useState(_), E = (0, i.bG)([d.A], () => null != g && null != A && (0, u.fJ)(g, A, [d.A]));
+  } = e, b = (0, i.bG)([h.A], () => null != g && h.A.isUserBanned(g.id)), _ = null != g && null == b, [y, E] = r.useState(_), v = (0, i.bG)([d.A], () => null != g && null != A && (0, u.fJ)(g, A, [d.A]));
   if ((0, c.Ay)(() => {
-      _ && o.A.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => v(false))
-    }), !E) return null;
+      _ && o.A.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => E(false))
+    }), !v) return null;
   let O = true === b ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
     C = "ban-user-".concat(null == g ? true : g.id);
   return (0, l.jsx)(p.A, {

@@ -54,14 +54,14 @@ function A(e) {
   var t, n, l, s, A;
   let {
     compact: y = false
-  } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, x = "493112", _ = "47ab315f577c57ed6d4dce69915cca2364123530".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), E = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), C = null === c.A || true === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? true : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? true : A.discord_web, I = function() {
+  } = e, O = (0, d.GV)(), j = window.GLOBAL_ENV.RELEASE_CHANNEL, _ = "493164", x = "348968636a5ab313540e80d7692b5e7a7d188524".substring(0, 7), v = null === c.A || true === c.A ? true : c.A.remoteApp.getVersion(), E = null === c.A || true === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? true : t.call(n), C = null === c.A || true === c.A || null == (l = (s = c.A.remoteApp).getAppArch) ? true : l.call(s), S = null == (A = u.A.getCurrentBuildOverride().overrides) ? true : A.discord_web, I = function() {
     var e;
     let t = null === a() || true === a() || null == (e = a().os) ? true : e.toString();
     if (null == t || null == c.A) return null;
     let n = c.A.os.release,
       [r, l, i] = h.Ay.parsedOSRelease;
     return t.includes("Windows 10") && true !== i && i >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && true !== r && r >= 20 && (t = "macOS ".concat(r >= 25 ? r + 1 : r - 9)), "".concat(t, " (").concat(n, ")")
-  }(), N = [j, x, "(".concat(_, ")")];
+  }(), N = [j, _, "(".concat(x, ")")];
   return (null != v && (N.push("Host ".concat(v)), null != C && N.push(C.toLowerCase()), null != E && N.push("(".concat(E, ")"))), N.push("Build Override: ".concat(null != S ? S.id : "N/A")), null != I && N.push(I), y) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.A, {
       copyValue: N.join(" "),
@@ -78,9 +78,9 @@ function A(e) {
             tag: "span",
             variant: "text-xxs/normal",
             color: "text-muted",
-            children: [j, " ", x, " ", (0, r.jsxs)("span", {
+            children: [j, " ", _, " ", (0, r.jsxs)("span", {
               className: f.Pc,
-              children: ["(", _, ")"]
+              children: ["(", x, ")"]
             })]
           }), null != v && (0, r.jsxs)(o.Text, {
             tag: "span",
@@ -124,9 +124,9 @@ function A(e) {
             className: f.n8,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [j, " ", x, " ", (0, r.jsxs)("span", {
+            children: [j, " ", _, " ", (0, r.jsxs)("span", {
               className: f.Pc,
-              children: ["(", _, ")"]
+              children: ["(", x, ")"]
             })]
           }), " ", null != S && (0, r.jsx)(o.Text, {
             tag: "span",

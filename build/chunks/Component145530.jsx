@@ -78,19 +78,19 @@ class I extends Chunk64700.PureComponent {
           for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
       }(i, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
-      m = s.type === x.rbe.GUILD_ANNOUNCEMENT && (0, a.Lt)(c.flags, x.pr7.CROSSPOSTED);
+      m = s.type === _.rbe.GUILD_ANNOUNCEMENT && (0, a.Lt)(c.flags, _.pr7.CROSSPOSTED);
     d && (e = (0, r.jsx)(g.A, {
       className: E.Vc,
-      children: _.intl.format(_.t.IxY7E6, {})
+      children: x.intl.format(x.t.IxY7E6, {})
     })), (0, O.AR)(c) && (t = (0, r.jsx)("div", {
       className: E.Vc,
       children: (0, r.jsx)(u.dOG, {
-        label: _.intl.string(_.t.x0jzo9),
+        label: x.intl.string(x.t.x0jzo9),
         checked: n,
         onChange: this.handleToggleReport
       })
     }));
-    let b = m ? _.intl.string(_.t["2kHABX"]) : _.intl.string(_.t.AMvpS4),
+    let b = m ? x.intl.string(x.t["2kHABX"]) : x.intl.string(x.t.AMvpS4),
       A = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: E.iU,
@@ -109,16 +109,16 @@ class I extends Chunk64700.PureComponent {
       return (0, r.jsx)(f.A.Provider, {
         value: s.guild_id,
         children: (0, r.jsx)(o.Modal, (y = S({
-          title: _.intl.string(_.t.MWMcg7),
+          title: x.intl.string(x.t.MWMcg7),
           subtitle: b,
           actions: [{
             variant: "critical-primary",
-            text: _.intl.string(_.t.oyYWHE),
+            text: x.intl.string(x.t.oyYWHE),
             onClick: this.handleDelete
           }],
           actionBarInput: e ? true : (0, r.jsx)(u.Checkbox, {
             checked: l,
-            label: _.intl.string(v.default["8yIKem"]),
+            label: x.intl.string(v.default["8yIKem"]),
             onChange: e => this.handleToggleResolveFlag(e)
           })
         }, h), C = C = {
@@ -138,14 +138,14 @@ class I extends Chunk64700.PureComponent {
     return (0, r.jsx)(f.A.Provider, {
       value: s.guild_id,
       children: (0, r.jsx)(o.Modal, {
-        title: m ? _.intl.string(_.t.aIz1oV) : _.intl.string(_.t.MWMcg7),
+        title: m ? x.intl.string(x.t.aIz1oV) : x.intl.string(x.t.MWMcg7),
         subtitle: b,
         actions: [{
-          text: _.intl.string(_.t["ETE/oC"]),
+          text: x.intl.string(x.t["ETE/oC"]),
           onClick: h.onClose,
           variant: "secondary"
         }, {
-          text: _.intl.string(_.t.oyYWHE),
+          text: x.intl.string(x.t.oyYWHE),
           onClick: this.handleDeleteMana,
           variant: "critical-primary"
         }],
@@ -199,17 +199,17 @@ class I extends Chunk64700.PureComponent {
 let N = {
   confirmPin: function(e, t) {
     let n, l = (0, h.m1)(e, y.default, A.A);
-    n = e.isPrivate() ? _.intl.string(_.t.hMRngA) : _.intl.formatToPlainString(_.t["3IRluI"], {
+    n = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
       channelName: l
     }), (0, c.A)({
-      title: _.intl.string(_.t.bKMaZX),
+      title: x.intl.string(x.t.bKMaZX),
       subtitle: n,
-      confirmText: _.intl.string(_.t.rOQ5BX),
+      confirmText: x.intl.string(x.t.rOQ5BX),
       variant: "primary",
       onConfirm: () => {
         d.A.pinMessage(e, t.id)
       },
-      cancelText: _.intl.string(_.t["ETE/oC"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       children: (0, r.jsx)("div", {
         className: E.iU,
         children: (0, r.jsx)(j.A, {
@@ -223,14 +223,14 @@ let N = {
   },
   confirmUnpin: function(e, t) {
     (0, c.A)({
-      title: _.intl.string(_.t.CFF2vL),
-      subtitle: _.intl.string(_.t.NjEPp7),
-      confirmText: _.intl.string(_.t.lAU5jB),
+      title: x.intl.string(x.t.CFF2vL),
+      subtitle: x.intl.string(x.t.NjEPp7),
+      confirmText: x.intl.string(x.t.lAU5jB),
       variant: "critical",
       onConfirm: () => {
         d.A.unpinMessage(e, t.id)
       },
-      cancelText: _.intl.string(_.t["ETE/oC"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: s()(E.iU, E.YK),
@@ -240,7 +240,7 @@ let N = {
             disableInteraction: true
           })
         }), (0, r.jsx)(g.A, {
-          children: _.intl.format(_.t.oCVB3Y, {})
+          children: x.intl.format(x.t.oCVB3Y, {})
         })]
       })
     })
@@ -257,14 +257,14 @@ let N = {
   },
   confirmEdit: function(e, t, n) {
     (0, c.A)({
-      title: _.intl.string(_.t.aIz1oV),
-      subtitle: _.intl.string(_.t.grBcM8),
-      confirmText: _.intl.string(_.t["cY+Oob"]),
+      title: x.intl.string(x.t.aIz1oV),
+      subtitle: x.intl.string(x.t.grBcM8),
+      confirmText: x.intl.string(x.t["cY+Oob"]),
       variant: "primary",
       onConfirm: () => {
         p.A.editMessage(e, t, n)
       },
-      cancelText: _.intl.string(_.t["ETE/oC"])
+      cancelText: x.intl.string(x.t["ETE/oC"])
     })
   }
 }

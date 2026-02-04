@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 802085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -34,18 +34,18 @@ let S = Chunk64700.memo(function(e) {
     } = e;
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)("div", {
-        className: a()(E.K1, {
-          [E.oE]: r
+        className: a()(v.K1, {
+          [v.oE]: r
         }),
         children: [(0, l.jsx)("div", {
-          className: E.Oz,
+          className: v.Oz,
           children: (0, l.jsx)(u.lmn, {
             size: "xs",
             color: "currentColor",
-            className: E.F_
+            className: v.F_
           })
         }), (0, l.jsx)("div", {
-          className: E.jC,
+          className: v.jC,
           children: (0, l.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-text-default",
@@ -53,8 +53,8 @@ let S = Chunk64700.memo(function(e) {
           })
         })]
       }), (0, l.jsx)("div", {
-        className: a()(E.ah, {
-          [E.oE]: r
+        className: a()(v.ah, {
+          [v.oE]: r
         }),
         children: (0, l.jsx)(g.A, {
           message: t,
@@ -63,8 +63,8 @@ let S = Chunk64700.memo(function(e) {
             variant: "text-xs/normal",
             color: "interactive-text-default",
             tag: "span",
-            className: E.C2,
-            children: v.intl.format(v.t["Nd3Gh+"], {
+            className: v.C2,
+            children: E.intl.format(E.t["Nd3Gh+"], {
               helpUrl: f.A.getArticleURL(y.MVz.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
@@ -91,8 +91,8 @@ let S = Chunk64700.memo(function(e) {
       className: a()(i, C.PT, {
         [O.BK]: true,
         [O.nB]: "rtl" === o()(u.content),
-        [E.Dy]: null == j ? true : j.isBlockedEdit,
-        [E.bv]: !(null == j ? true : j.isBlockedEdit)
+        [v.Dy]: null == j ? true : j.isBlockedEdit,
+        [v.bv]: !(null == j ? true : j.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b._A)(u, m), (null == j ? true : j.isBlockedEdit) && null != u.timestamp && (0, l.jsxs)(l.Fragment, {
         children: [" ", (0, l.jsx)(_.A, {
@@ -101,11 +101,11 @@ let S = Chunk64700.memo(function(e) {
           isInline: false,
           children: (0, l.jsxs)("span", {
             className: O.oh,
-            children: ["(", v.intl.string(v.t.Z7eEx9), ")"]
+            children: ["(", E.intl.string(E.t.Z7eEx9), ")"]
           })
         })]
       }), (0, l.jsx)(S, {
-        notice: null != (t = null == j ? true : j.errorMessage) ? t : v.intl.string(v.t.zQ69pv),
+        notice: null != (t = null == j ? true : j.errorMessage) ? t : E.intl.string(E.t.zQ69pv),
         message: u,
         compact: s,
         onDismiss: I

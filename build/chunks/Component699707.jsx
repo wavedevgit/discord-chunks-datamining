@@ -82,8 +82,8 @@ function I(e) {
     F = p.default.getId(),
     [Y, K] = l.useState(null),
     W = (0, c.A)(Y),
-    [z, X] = l.useState(true),
-    [q, J] = l.useState(false),
+    [z, q] = l.useState(true),
+    [X, J] = l.useState(false),
     Q = L.type === j.lp.ACTIVITY,
     Z = (0, u.A)(Q ? L.applicationId : true),
     $ = !Q && null != L.streamId,
@@ -105,7 +105,7 @@ function I(e) {
   let eh = 8 + Math.max(0, 72 - (U - ed) / 2);
   l.useEffect(() => {
     let e = setTimeout(() => {
-      X(false)
+      q(false)
     }, 250);
     return () => {
       clearTimeout(e)
@@ -160,22 +160,22 @@ function I(e) {
       }
     }, ef),
     ej = l.useCallback(e => {
-      K(e), X(false)
+      K(e), q(false)
     }, []),
-    ex = et ? [] : (0, A.Cf)(T, L, F),
+    e_ = et ? [] : (0, A.Cf)(T, L, F),
     {
-      visibleParticipants: e_,
+      visibleParticipants: ex,
       participantTileWidth: ev
     } = (0, y.i4)(k, P);
   return (0, r.jsxs)("div", {
-    className: s()(_.zr, x.tR, G),
+    className: s()(x.zr, _.tR, G),
     children: [(0, r.jsxs)("div", {
-      className: _.QX,
+      className: x.QX,
       style: {
         opacity: $ && z ? 0 : 1
       },
       children: [(0, r.jsxs)(a.animated.div, {
-        className: _.pc,
+        className: x.pc,
         style: {
           top: eb.value.to(e => -e * S / 2)
         },
@@ -183,9 +183,9 @@ function I(e) {
           style: {
             width: eA.value
           },
-          className: _.tN,
+          className: x.tN,
           children: (0, r.jsx)("div", {
-            className: x.xS,
+            className: _.xS,
             style: {
               aspectRatio: eo
             },
@@ -194,13 +194,13 @@ function I(e) {
                 key: l
               } = n;
               return null != t ? (0, r.jsx)(a.animated.div, {
-                className: x.qX,
+                className: _.qX,
                 style: e,
                 children: (0, r.jsx)(m.Ay, {
                   focused: true,
                   noBorder: eu >= k || ec >= U,
                   channel: D,
-                  className: x.JS,
+                  className: _.JS,
                   videoComponent: H,
                   width: k,
                   participant: t,
@@ -216,8 +216,8 @@ function I(e) {
             })
           })
         }), el ? (0, r.jsx)(a.animated.div, {
-          className: s()(_.$l, {
-            [_.N7]: B
+          className: s()(x.$l, {
+            [x.N7]: B
           }),
           style: {
             bottom: ey.value
@@ -229,7 +229,7 @@ function I(e) {
           })
         }) : null]
       }), (0, r.jsx)(a.animated.div, {
-        className: _.Vx,
+        className: x.Vx,
         style: {
           translateY: em.value.to(e => e * S / 2),
           opacity: em.value,
@@ -240,20 +240,20 @@ function I(e) {
           onClick: i,
           onContextMenu: I,
           onDoubleClick: N,
-          participants: e_,
+          participants: ex,
           participantTileWidth: ev,
           selectedParticipantId: L.id,
           inCall: R,
           popoutType: w,
-          paused: q || !M
+          paused: X || !M
         })
       })]
-    }), ex.length > 0 ? (0, r.jsx)(b.A, {
+    }), e_.length > 0 ? (0, r.jsx)(b.A, {
       onContextMenuParticipant: I,
       width: k,
       height: U,
       channel: D,
-      participants: ex,
+      participants: e_,
       onSelectParticipant: i
     }) : null]
   })

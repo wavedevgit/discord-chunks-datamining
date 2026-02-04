@@ -1,12 +1,13 @@
-/** Chunk was on 65442 **/
-/** chunk id: 607123, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 607123, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Ay: () => E
+  Ay: () => O
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk503698 = require("./503698.js"),
-  s = require.n(Chunk503698),
+  o = require.n(Chunk503698),
   Chunk575593 = require("./575593.js"),
   Chunk474012 = require("./474012.js"),
   Chunk929283 = require("./929283.jsx"),
@@ -18,66 +19,67 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk778712 = require("./778712.js"),
   Chunk223555 = require("./223555.js");
+let E = 200;
 
-function S(e) {
+function y(e) {
   let {
     sku: t,
-    isFocused: r,
-    user: l,
-    options: s
-  } = e, h = i.useMemo(() => (0, u.T)(t), [t]);
-  if (null == h) return null;
-  if ("bundle" === h.type) return (0, n.jsx)("div", {
-    className: p.hT,
-    children: (0, n.jsx)(c.X, {
-      product: h,
-      isHighlighted: r,
-      user: l
+    isFocused: n,
+    user: a,
+    options: o
+  } = e, p = i.useMemo(() => (0, l.T)(t), [t]);
+  if (null == p) return null;
+  if ("bundle" === p.type) return (0, r.jsx)("div", {
+    className: g.hT,
+    children: (0, r.jsx)(u.X, {
+      product: p,
+      isHighlighted: n,
+      user: a
     })
   });
-  switch (h.item.type) {
-    case a.R.AVATAR_DECORATION:
-      return (0, n.jsx)(o.i, {
-        user: l,
-        avatarSize: I._3.SIZE_80,
-        item: h.item,
-        isHighlighted: r
+  switch (p.item.type) {
+    case s.R.AVATAR_DECORATION:
+      return (0, r.jsx)(c.i, {
+        user: a,
+        avatarSize: m._3.SIZE_80,
+        item: p.item,
+        isHighlighted: n
       });
-    case a.R.PROFILE_EFFECT:
-      return (0, n.jsx)("div", {
-        className: p.xC,
-        children: (0, n.jsx)(f.A, {
-          skuId: h.item.skuId,
-          isHighlighted: r,
+    case s.R.PROFILE_EFFECT:
+      return (0, r.jsx)("div", {
+        className: g.xC,
+        children: (0, r.jsx)(f.A, {
+          skuId: p.item.skuId,
+          isHighlighted: n,
           removeSetHeight: true
         })
       });
-    case a.R.NAMEPLATE:
-      var m, g, S, O, E, j;
-      return (0, n.jsxs)("div", {
-        className: p.M4,
-        children: [(0, n.jsx)("div", {
-          className: p.Qt,
-          children: (0, n.jsx)(d.A, {
-            user: l,
-            nameplate: h.item,
-            isHighlighted: r,
+    case s.R.NAMEPLATE:
+      var _, h, y, b, O, v;
+      return (0, r.jsxs)("div", {
+        className: g.M4,
+        children: [(0, r.jsx)("div", {
+          className: g.Qt,
+          children: (0, r.jsx)(d.A, {
+            user: a,
+            nameplate: p.item,
+            isHighlighted: n,
             showPlaceholderUser: true,
             showStatus: true,
             nameplatePreviewSize: "default",
-            width: null != (m = null == s || null == (O = s.collectibles) || null == (S = O.nameplate) ? true : S.width) ? m : 200
+            width: null != (_ = null == o || null == (b = o.collectibles) || null == (y = b.nameplate) ? true : y.width) ? _ : E
           })
-        }), (0, n.jsx)("div", {
-          className: p.BM,
+        }), (0, r.jsx)("div", {
+          className: g.BM,
           "aria-hidden": true,
-          children: (0, n.jsx)(d.A, {
-            user: l,
-            nameplate: h.item,
-            isHighlighted: r,
+          children: (0, r.jsx)(d.A, {
+            user: a,
+            nameplate: p.item,
+            isHighlighted: n,
             showPlaceholderUser: true,
             showStatus: true,
             nameplatePreviewSize: "default",
-            width: null != (g = null == s || null == (j = s.collectibles) || null == (E = j.nameplate) ? true : E.width) ? g : 200
+            width: null != (h = null == o || null == (v = o.collectibles) || null == (O = v.nameplate) ? true : O.width) ? h : E
           })
         })]
       });
@@ -86,47 +88,47 @@ function S(e) {
   }
 }
 
-function O(e) {
+function b(e) {
   let {
     sku: t,
-    isFocused: r
+    isFocused: n
   } = e;
-  return (0, n.jsx)(h.e, {
+  return (0, r.jsx)(p.e, {
     shape: "custom",
-    containerClassName: s()(p.JS, r && p.P3),
-    backgroundImageClassName: p.m1,
-    foregroundImageClassName: p.aF,
+    containerClassName: o()(g.JS, n && g.P3),
+    backgroundImageClassName: g.m1,
+    foregroundImageClassName: g.aF,
     sku: t
   })
 }
 
-function E(e) {
+function O(e) {
   let {
     sku: t,
-    isFocused: r,
+    isFocused: n,
     user: i,
-    options: l
+    options: a
   } = e;
   switch (t.productLine) {
-    case g.EZt.COLLECTIBLES:
-      return (0, n.jsx)(S, {
+    case h.EZt.COLLECTIBLES:
+      return (0, r.jsx)(y, {
         sku: t,
-        isFocused: r,
+        isFocused: n,
         user: i,
-        options: l
+        options: a
       });
-    case g.EZt.SOCIAL_LAYER_GAME_ITEM:
-      return (0, n.jsx)(O, {
+    case h.EZt.SOCIAL_LAYER_GAME_ITEM:
+      return (0, r.jsx)(b, {
         sku: t,
-        isFocused: r
+        isFocused: n
       });
-    case g.EZt.APPLICATION:
-    case g.EZt.BOOST:
-    case g.EZt.GUILD_ROLE:
-    case g.EZt.PREMIUM:
-    case g.EZt.GUILD_PRODUCT:
+    case h.EZt.APPLICATION:
+    case h.EZt.BOOST:
+    case h.EZt.GUILD_ROLE:
+    case h.EZt.PREMIUM:
+    case h.EZt.GUILD_PRODUCT:
       return null;
     default:
-      (0, m.xb)(t.productLine)
+      (0, _.xb)(t.productLine)
   }
 }

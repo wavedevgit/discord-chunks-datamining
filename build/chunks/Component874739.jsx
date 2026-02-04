@@ -27,8 +27,8 @@ let j = (0, Chunk456412.A)(e => {
     filteredParticipants: n,
     selectedParticipant: s,
     participantsVersion: j,
-    layout: x,
-    onSelectParticipant: _,
+    layout: _,
+    onSelectParticipant: x,
     onContextMenuParticipant: v,
     onFullscreenParticipant: E,
     channel: C,
@@ -57,7 +57,7 @@ let j = (0, Chunk456412.A)(e => {
     participants: t,
     hasConnectPermission: S
   });
-  if (n = N ? n : t, x === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
+  if (n = N ? n : t, _ === A.DUB.HAVEN) return (0, r.jsx)(d.A, {
     participants: n,
     channel: C,
     idle: R
@@ -86,7 +86,7 @@ let j = (0, Chunk456412.A)(e => {
         className: O.g9,
         participants: k,
         totalNumberOfParticipants: t.length,
-        onClick: _,
+        onClick: x,
         onDoubleClick: E,
         onContextMenu: v,
         inCall: N,
@@ -97,7 +97,7 @@ let j = (0, Chunk456412.A)(e => {
   return (0, r.jsx)(m.A, {
     onFullscreenParticipant: E,
     onContextMenuParticipant: v,
-    onSelectParticipant: _,
+    onSelectParticipant: x,
     selectedParticipant: s,
     filteredParticipants: k,
     participants: t,
@@ -106,7 +106,7 @@ let j = (0, Chunk456412.A)(e => {
     idle: R,
     height: w,
     width: P,
-    layout: x,
+    layout: _,
     inCall: N,
     channel: C,
     showParticipants: T

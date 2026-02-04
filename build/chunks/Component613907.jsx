@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 613907, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => O
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk455683 = require("./455683.js");
-let E = "749054660769218631";
+let v = "749054660769218631";
 
 function O(e) {
   var t;
@@ -35,10 +35,10 @@ function O(e) {
   let C = (0, s.bG)([f.A, p.default], () => !!a()(f.A.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== p.default.getId() && e.state === _.cmJ.SENT && !(0, b.A)(e))),
     S = (0, s.bG)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     x = null != (t = A.Ay.useName(S)) ? t : y.intl.string(y.t.y1Wu2f),
-    j = (0, s.bG)([d.A], () => d.A.getStickerById(E)),
+    j = (0, s.bG)([d.A], () => d.A.getStickerById(v)),
     I = r.useCallback(async () => {
       if (null == i || "" === i) try {
-        await c.A.sendGreetMessage(n.id, E), g.default.track(_.HAw.DM_EMPTY_ACTION, {
+        await c.A.sendGreetMessage(n.id, v), g.default.track(_.HAw.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
@@ -52,32 +52,32 @@ function O(e) {
       username: x
     }),
     N = null != i && "" !== i ? (0, l.jsx)(o.Text, {
-      className: v.z3,
+      className: E.z3,
       color: "text-feedback-critical",
       variant: "text-sm/normal",
       children: i
     }) : null;
   return C ? (0, l.jsxs)("div", {
-    className: v.ft,
+    className: E.ft,
     children: [(0, l.jsxs)(o.DUT, {
-      className: null != i && "" !== i ? v.AO : v.Iq,
+      className: null != i && "" !== i ? E.AO : E.Iq,
       "aria-label": y.intl.string(y.t.pJObYI),
       onClick: I,
       children: [(0, l.jsx)(h.A, {
         sticker: j,
         size: 24
       }), (0, l.jsx)(o.Text, {
-        className: v.Qq,
+        className: E.Qq,
         variant: "text-md/medium",
         children: T
       })]
     }), N]
   }) : (0, l.jsxs)("div", {
-    className: v.nj,
+    className: E.nj,
     children: [(0, l.jsx)(h.A, {
       sticker: j,
       size: 160,
-      className: v.Xr
+      className: E.Xr
     }), (0, l.jsx)(o.Button, {
       fullWidth: true,
       variant: "primary",

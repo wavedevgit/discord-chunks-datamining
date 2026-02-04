@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 401901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => p,
@@ -28,13 +28,13 @@ let f = Chunk64700.memo(function(e) {
     videoSpinnerContext: b,
     userId: _,
     streamKey: y
-  } = e, [v, E] = i.useState(true);
+  } = e, [E, v] = i.useState(true);
   (0, u.A)({
     location: "VideoStream",
     videoSpinnerContext: b,
     userId: _,
     streamId: t,
-    loading: v,
+    loading: E,
     paused: g
   });
   let {
@@ -42,12 +42,12 @@ let f = Chunk64700.memo(function(e) {
   } = (0, c.A)({
     streamId: t,
     userId: _,
-    loading: v,
+    loading: E,
     videoSpinnerContext: b,
     streamKey: y,
     paused: g
   }), C = i.useCallback(() => {
-    E(false), O()
+    v(false), O()
   }, [O]);
   return (0, r.jsxs)("div", {
     className: s()(h.wrapper, l),
@@ -61,9 +61,9 @@ let f = Chunk64700.memo(function(e) {
       paused: g
     }), g ? null : (0, r.jsx)("div", {
       className: s()(h.previewWrapper, {
-        [h.loading]: v
+        [h.loading]: E
       }),
-      children: v && (0, r.jsxs)(i.Fragment, {
+      children: E && (0, r.jsxs)(i.Fragment, {
         children: [null != A ? (0, r.jsx)("img", {
           src: A,
           alt: "",

@@ -107,7 +107,7 @@ function ej(e) {
   return e
 }
 
-function ex(e, t) {
+function e_(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -119,7 +119,7 @@ function ex(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let e_ = eS(null),
+let ex = eS(null),
   ev = 1,
   eE = 25,
   eC = [0, 5, 10, 15, 20, 25];
@@ -228,7 +228,7 @@ function eN(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(eI, ex(ej({}, a), {
+      return (0, r.jsx)(eI, e_(ej({}, a), {
         onClick: e => {
           var n;
           c(n = !o), null == i || i(n), null == t || t(e)
@@ -316,8 +316,8 @@ function ew() {
     K = (null == c ? true : c.state) != null && eT.has(c.state) && !F,
     W = (null == c ? true : c.overlayMethod) === L.Ue.OutOfProcess,
     z = (null == c ? true : c.overlayMethod) === L.Ue.OutOfProcessLimitedInteraction,
-    X = (null == c ? true : c.overlayMethod) === L.Ue.Hook,
-    q = (null == c ? true : c.state) === L.AR.OVERLAY_CRASHED || (null == c ? true : c.state) === L.AR.OVERLAY_CRASHED_DISABLED,
+    q = (null == c ? true : c.overlayMethod) === L.Ue.Hook,
+    X = (null == c ? true : c.state) === L.AR.OVERLAY_CRASHED || (null == c ? true : c.state) === L.AR.OVERLAY_CRASHED_DISABLED,
     Q = !g && !y,
     [Z, $] = (() => {
       switch (true) {
@@ -345,7 +345,7 @@ function ew() {
               }, t)
             }
           }), null];
-        case Y && X:
+        case Y && q:
           return [eb.intl.format(eb.t.hFVBIg, {
             overlayMethod: eb.intl.string(eb.t.bvlpDR),
             overlayMethodHook: function(e, t) {
@@ -359,7 +359,7 @@ function ew() {
           }), function() {
             var e, t;
             switch (true) {
-              case (null == c ? true : c.fullscreenType) !== x.aI.BORDERLESS_FULLSCREEN:
+              case (null == c ? true : c.fullscreenType) !== _.aI.BORDERLESS_FULLSCREEN:
                 return eb.intl.string(eb.t.mJmbeC);
               case S:
                 return eb.intl.string(eb.t.C7bLTQ);
@@ -373,7 +373,7 @@ function ew() {
                 return eb.intl.string(eb.t.bJXH2v)
             }
           }()];
-        case q:
+        case X:
           return [eb.intl.string(eb.t.OFC2aw), null];
         case G:
           return [eb.intl.string(eb.t.m7X4az), null];
@@ -386,23 +386,23 @@ function ew() {
           return [eb.intl.string(eb.t.VWUn0a), null];
         case K:
           if (W) return [eb.intl.string(eb.t["s8+CFq"]), null];
-          if (X) return [eb.intl.string(eb.t.JEEdqt), null];
+          if (q) return [eb.intl.string(eb.t.JEEdqt), null];
           if (z) return [eb.intl.string(eb.t.pzBMwY), null];
           return [eb.intl.string(eb.t["2Xhy9k"]), null];
         case null == c:
           return [eb.intl.string(eb.t.vwHPRi), null];
         case F: {
-          let e = (null == c ? true : c.fullscreenType) === x.aI.FULLSCREEN ? eb.intl.string(eb.t.mJmbeC) : null;
+          let e = (null == c ? true : c.fullscreenType) === _.aI.FULLSCREEN ? eb.intl.string(eb.t.mJmbeC) : null;
           return [eb.intl.string(eb.t.VPW4XY), e]
         }
         default:
           return [eb.intl.string(eb.t.ONovP5), null]
       }
     })();
-  (0, _.Ay)(() => {
+  (0, x.Ay)(() => {
     b.A.getDetectableGames()
   });
-  let [et, er] = l.useMemo(() => K ? ["text-muted", m.LU0.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", m.LU0.colors.TEXT_FEEDBACK_WARNING.css] : Y && W ? ["text-feedback-positive", m.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && X ? ["text-strong", m.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", m.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [K, Y, z, W, X]);
+  let [et, er] = l.useMemo(() => K ? ["text-muted", m.LU0.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", m.LU0.colors.TEXT_FEEDBACK_WARNING.css] : Y && W ? ["text-feedback-positive", m.LU0.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && q ? ["text-strong", m.LU0.colors.TEXT_STRONG.css] : ["interactive-text-default", m.LU0.colors.INTERACTIVE_TEXT_DEFAULT.css], [K, Y, z, W, q]);
   return null == i ? null : (0, r.jsxs)(eN, {
     onExpand: E,
     className: v ? eA.tx : true,
@@ -577,7 +577,7 @@ function eL() {
   let [e, t] = l.useState(false), {
     legacyEnabled: n,
     oopEnabled: i
-  } = (0, h.cf)([k.default], () => k.default.getGlobalEnabledStatus()), s = (0, h.yK)([I.Ay], () => I.Ay.getGamesSeen(true)).filter(e => !(0, X.n1)(e)), a = (0, C.A)(s.map(e => e.id)), o = !(0, ed.supportsLegacy)(), c = e => {
+  } = (0, h.cf)([k.default], () => k.default.getGlobalEnabledStatus()), s = (0, h.yK)([I.Ay], () => I.Ay.getGamesSeen(true)).filter(e => !(0, q.n1)(e)), a = (0, C.A)(s.map(e => e.id)), o = !(0, ed.supportsLegacy)(), c = e => {
     var t, r;
     O.A.setEnabled(e, i);
     let l = null != (t = null == (r = I.Ay.getCurrentGameForAnalytics()) ? true : r.id) ? t : null;
@@ -649,7 +649,7 @@ function eM() {
   let [e, t] = l.useState(false), {
     oopEnabled: n,
     legacyEnabled: i
-  } = (0, h.cf)([k.default], () => k.default.getGlobalEnabledStatus()), s = !(0, ed.supportsOutOfProcess)(), a = (0, h.yK)([I.Ay], () => I.Ay.getGamesSeen(true)).filter(e => !(0, X.n1)(e)), o = (0, C.A)(a.map(e => e.id)), c = e => {
+  } = (0, h.cf)([k.default], () => k.default.getGlobalEnabledStatus()), s = !(0, ed.supportsOutOfProcess)(), a = (0, h.yK)([I.Ay], () => I.Ay.getGamesSeen(true)).filter(e => !(0, q.n1)(e)), o = (0, C.A)(a.map(e => e.id)), c = e => {
     var t, r;
     let l = !e && n;
     O.A.setEnabled(i, e);
@@ -737,7 +737,7 @@ function ek(e) {
   var t;
   let {
     isLegacySettings: n = false
-  } = e, l = (0, h.bG)([el.Ay], () => el.Ay.getOverlayKeybind()), i = !(0, ed.supportsLegacy)(), s = !(0, ed.supportsOutOfProcess)(), [a, o] = (0, h.yK)([I.Ay], () => [I.Ay.canShowAdminWarning, I.Ay.getVisibleGame()], []), c = (0, q.NP)(), d = null != o && o.elevated && a && !c, p = !(0, el.DV)(null != (t = null == l ? true : l.shortcut) ? t : []);
+  } = e, l = (0, h.bG)([el.Ay], () => el.Ay.getOverlayKeybind()), i = !(0, ed.supportsLegacy)(), s = !(0, ed.supportsOutOfProcess)(), [a, o] = (0, h.yK)([I.Ay], () => [I.Ay.canShowAdminWarning, I.Ay.getVisibleGame()], []), c = (0, X.NP)(), d = null != o && o.elevated && a && !c, p = !(0, el.DV)(null != (t = null == l ? true : l.shortcut) ? t : []);
   return (0, r.jsx)("div", {
     className: eA.hc,
     children: (0, r.jsxs)("div", {
@@ -765,7 +765,7 @@ function ek(e) {
           disabled: i && s,
           defaultValue: null != l ? l.shortcut : [],
           onChange: function(e) {
-            u()(null != l, "Keybind should never be undefined"), A.A.setKeybind(ex(ej({}, l), {
+            u()(null != l, "Keybind should never be undefined"), A.A.setKeybind(e_(ej({}, l), {
               shortcut: e
             }))
           }
@@ -1071,7 +1071,7 @@ function eY(e) {
   let {
     showDivider: t = false
   } = e, [n, l] = (0, S.kn)([g.M.OVERLAY_OOP_SETTINGS_NUX], true, true);
-  return ((0, _.Ay)(() => () => {
+  return ((0, x.Ay)(() => () => {
     l(ef.i.AUTO_DISMISS)
   }), n !== g.M.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, r.jsxs)("div", {
     className: eA.xC,
@@ -1182,9 +1182,9 @@ function eW() {
       runningGameApplication: n
     } = (0, N.A)(),
     l = (0, h.bG)([er.default], () => er.default.getCurrentUser());
-  return (0, _.Ay)(() => {
+  return (0, x.Ay)(() => {
     if (ec.isPlatformEmbedded) return (0, T.a2)(), T.e0
-  }), (e = eS(e_), p().isEqual(e, e_) || (ea.default.track(eg.HAw.OVERLAY_SETTINGS_UPDATED, e), e_ = e), null == l) ? null : (0, r.jsxs)(r.Fragment, {
+  }), (e = eS(ex), p().isEqual(e, ex) || (ea.default.track(eg.HAw.OVERLAY_SETTINGS_UPDATED, e), ex = e), null == l) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(eh.A, {
       title: eb.intl.string(eb.t["9cb1Uz"]),
       children: [(0, r.jsx)(eY, {

@@ -49,7 +49,7 @@ function I(e) {
     locked: B,
     video: (F || Y) && null == H,
     selected: I
-  }), W = (0, l.bG)([h.A], () => h.A.getNewThreadCount(n.guild_id, n.id)), z = (0, u.ed)(n.guild_id, n.id), X = (0, l.bG)([g.A], () => {
+  }), W = (0, l.bG)([h.A], () => h.A.getNewThreadCount(n.guild_id, n.id)), z = (0, u.ed)(n.guild_id, n.id), q = (0, l.bG)([g.A], () => {
     var e, t;
     return null != (e = null == (t = g.A.getGuild(n.guild_id)) ? true : t.features.has(E.GuildFeatures.COMMUNITY)) && e
   });
@@ -76,12 +76,12 @@ function I(e) {
     color: "text-muted",
     children: (0, s.Gub)(z)
   });
-  let q = null != (t = null == T ? true : T.length) ? t : 0;
-  return null != P && P && K ? (0, r.jsx)(_.A, {
-    userCount: q,
+  let X = null != (t = null == T ? true : T.length) ? t : 0;
+  return null != P && P && K ? (0, r.jsx)(x.A, {
+    userCount: X,
     video: F || Y,
     channel: n
-  }) : N && (0, A.t)(T) && X ? (0, r.jsx)(s.LpS, {
+  }) : N && (0, A.t)(T) && q ? (0, r.jsx)(s.LpS, {
     text: S.intl.string(S.t.dI3q4h),
     color: i.A.unsafe_rawColors.RED_400.css
   }) : null != H ? (0, r.jsx)(c.z, {
@@ -89,7 +89,7 @@ function I(e) {
     entry: {
       start: H
     }
-  }) : null != w && w && (0, y.X)(V) ? (0, r.jsx)(x.A, {
+  }) : null != w && w && (0, y.X)(V) ? (0, r.jsx)(_.A, {
     embeddedApps: V,
     muted: M
   }) : null

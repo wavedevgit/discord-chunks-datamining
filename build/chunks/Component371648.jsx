@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 371648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => J
@@ -102,8 +102,8 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         messageGroupSpacing: A,
         scrollerClassName: b,
         channel: y,
-        messages: v,
-        unreadCount: E,
+        messages: E,
+        unreadCount: v,
         showNewMessagesBar: C,
         messageDisplayCompact: x,
         channelStream: j,
@@ -113,20 +113,20 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         fontSize: w,
         keyboardModeEnabled: D,
         filterAfterTimestamp: M,
-        showingQuarantineBanner: L,
+        showingQuarantineBanner: k,
         hideSummaries: q = false,
         jumpBarClassName: J,
         typingGradient: Z
       } = e,
       [X, Q] = r.useState(null != (t = S.A.isAtBottom(y.id)) && t),
-      $ = r.useMemo(() => x ? (0, k.bW)({
+      $ = r.useMemo(() => x ? (0, L.bW)({
         compact: true,
         messageGroups: 30,
         groupRange: 4,
         attachments: 8,
         fontSize: w,
         groupSpacing: A
-      }) : (0, k.bW)({
+      }) : (0, L.bW)({
         compact: false,
         messageGroups: 26,
         groupRange: 4,
@@ -135,7 +135,7 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         groupSpacing: A
       }), [x, w, A]),
       ee = (0, G.Ay)({
-        messages: v,
+        messages: E,
         channel: y,
         compact: x,
         hasUnreads: N,
@@ -150,7 +150,7 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         scrollerRef: ee.ref,
         isEditing: null != P,
         keyboardModeEnabled: D,
-        hasMoreAfter: v.hasMoreAfter
+        hasMoreAfter: E.hasMoreAfter
       }),
       en = (0, c.bG)([_.A], () => T.A.can(H.xBc.READ_MESSAGE_HISTORY, y) ? null : _.A.getViewingRolesTimestamp(y.getGuildId())),
       {
@@ -161,8 +161,8 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         safetyWarningBanner: es
       } = (0, F.A)({
         channel: y,
-        messages: v,
-        unreadCount: E,
+        messages: E,
+        unreadCount: v,
         showNewMessagesBar: C,
         messageDisplayCompact: x,
         channelStream: j,
@@ -171,10 +171,10 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         scrollManager: ee,
         specs: $,
         filterAfterTimestamp: null != M ? M : en,
-        showingQuarantineBanner: L,
+        showingQuarantineBanner: k,
         hideSummaries: q,
         jumpToPresent: () => {
-          if (v.hasPresent()) {
+          if (E.hasPresent()) {
             var e;
             null == (e = ee.ref.current) || e.scrollToBottom({
               animate: !f.A.useReducedMotion
@@ -254,9 +254,9 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
               children: B.intl.string(B.t["Spb3s/"])
             }), el, (0, l.jsx)("div", {
               className: a()({
-                [V.lB]: !L,
-                [V.Ie]: 0 === v.length && !v.loadingMore,
-                [V.Fb]: 1 === v.length && !v.loadingMore && y.isForumPost() && (null == (n = v.first()) ? true : n.isFirstMessageInForumPost(y))
+                [V.lB]: !k,
+                [V.Ie]: 0 === E.length && !E.loadingMore,
+                [V.Fb]: 1 === E.length && !E.loadingMore && y.isForumPost() && (null == (n = E.first()) ? true : n.isFirstMessageInForumPost(y))
               })
             })]
           }))]
@@ -297,11 +297,11 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
       messageGroupSpacing: O,
       fontSize: S,
       messageDisplayCompact: R,
-      renderSpoilers: k,
+      renderSpoilers: L,
       keyboardModeEnabled: U
     } = function() {
-      let e = E.hH.useSetting(),
-        t = E.gs.useSetting(),
+      let e = v.hH.useSetting(),
+        t = v.gs.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: l,
@@ -347,11 +347,11 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
         u = null != (t = null == (n = w.default.getUser(C.default.getId())) ? true : n.hasFlag(H.nhx.SPAMMER)) && t,
         d = (0, h.cI)(e),
         p = (0, A.A)("use_topic_dividers_in_chat"),
-        f = (0, c.yK)([v.A], () => {
+        f = (0, c.yK)([E.A], () => {
           var t;
-          return d && p && null != (t = v.A.summaries(e.id)) ? t : []
+          return d && p && null != (t = E.A.summaries(e.id)) ? t : []
         }, [d, e.id, p]),
-        _ = (0, c.bG)([v.A], () => d ? v.A.selectedSummary(e.id) : null, [d, e.id]),
+        _ = (0, c.bG)([E.A], () => d ? E.A.selectedSummary(e.id) : null, [d, e.id]),
         y = (l = a, i = r.useMemo(() => {
           let e = new Set;
           return l.forEach(t => {
@@ -359,7 +359,7 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
           }), Array.from(e)
         }, [l]), (0, g.A)(i));
       (0, m.A)(a, e);
-      let E = r.useMemo(() => (0, M.A)({
+      let v = r.useMemo(() => (0, M.A)({
         channel: e,
         messages: a,
         oldestUnreadMessageId: s,
@@ -369,7 +369,7 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
       }), [a, e, s, o, f, _, y, u]);
       return {
         messages: a,
-        channelStream: E,
+        channelStream: v,
         oldestUnreadMessageId: s,
         editingMessageId: (0, c.bG)([x.A], () => {
           var t;
@@ -378,8 +378,8 @@ let Y = (0, Chunk92674.animated)(Chunk397927.fKU),
       }
     }(t);
     return (0, l.jsx)(y.Bs.Provider, {
-      value: (0, D.A)(k, d),
-      children: (0, l.jsx)(L.t, {
+      value: (0, D.A)(L, d),
+      children: (0, l.jsx)(k.t, {
         children: (0, l.jsx)(q, W(K({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,

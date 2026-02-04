@@ -67,8 +67,8 @@ let U = e => {
     className: k.iA,
     children: [(0, r.jsxs)("div", {
       className: k.XX,
-      children: [(0, r.jsx)(x.A, {
-        size: x.A.Sizes.SMALL,
+      children: [(0, r.jsx)(_.A, {
+        size: _.A.Sizes.SMALL,
         guild: i.guild,
         className: k.$f
       }), (0, r.jsxs)("div", {
@@ -97,7 +97,7 @@ let U = e => {
 
 function V(e) {
   var t, n;
-  let i, s, o, h, f, m, x, {
+  let i, s, o, h, f, m, _, {
       onDisconnect: v,
       account: E,
       theme: C,
@@ -108,7 +108,7 @@ function V(e) {
     [H, F] = l.useState(E.metadataVisibility),
     [Y, K] = l.useState(E.showActivity),
     [W, z] = l.useState(null),
-    [X, q] = l.useState(null),
+    [q, X] = l.useState(null),
     [J, Q] = l.useState(false),
     [Z, $] = l.useState([]),
     ee = (0, A.ML)(E.type),
@@ -118,7 +118,7 @@ function V(e) {
   }, [E]);
   let en = {
       inProgressVisibility: W,
-      inProgressMetadataVisibility: X
+      inProgressMetadataVisibility: q
     },
     er = l.useRef(en);
   return l.useEffect(() => {
@@ -129,12 +129,12 @@ function V(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = er.current;
-    null != e && (B(e), g.A.setVisibility(E.type, E.id, e), z(null)), null != t && (F(t), g.A.setMetadataVisibility(E.type, E.id, t), q(null))
+    null != e && (B(e), g.A.setVisibility(E.type, E.id, e), z(null)), null != t && (F(t), g.A.setMetadataVisibility(E.type, E.id, t), X(null))
   }, [E]), (0, r.jsxs)("div", {
     className: k.FI,
     children: [(i = b.A.get(E.type), s = b.A.get(ee), o = "1" === (null != (t = E.metadata) ? t : {})[M.pK.TWITTER_VERIFIED], h = null, i.type === L.fg2.TWITTER && o && (h = (0, r.jsx)(u.m, {
       text: G.intl.string(G.t.Jebrww),
-      children: (0, r.jsx)(_.A, {
+      children: (0, r.jsx)(x.A, {
         color: c.A.unsafe_rawColors.TWITTER.css,
         children: (0, r.jsx)(p.Uzd, {
           size: "xs",
@@ -320,7 +320,7 @@ function V(e) {
       onChange: function(e) {
         K(e), g.A.setShowActivity(E.type, E.id, e)
       }
-    })), (null == (n = b.A.get(E.type)) ? true : n.hasMetadata) === true && (x = (0, r.jsx)(p.dOG, {
+    })), (null == (n = b.A.get(E.type)) ? true : n.hasMetadata) === true && (_ = (0, r.jsx)(p.dOG, {
       label: G.intl.string(G.t.FYKGsL),
       checked: 1 === H,
       onChange: function(e) {
@@ -328,7 +328,7 @@ function V(e) {
           verified: t
         } = E, n = +!!e;
         if (e && !t) {
-          q(n), (0, O.A)({
+          X(n), (0, O.A)({
             platformType: E.type,
             location: "User Settings"
           });
@@ -355,7 +355,7 @@ function V(e) {
           }
           B(n), g.A.setVisibility(E.type, E.id, n)
         }
-      }), x, m, f]
+      }), _, m, f]
     })), function() {
       if (E.revoked || E.integrations.length > 0) return (0, r.jsx)(p.cGx, {})
     }(), E.revoked ? (0, r.jsx)(a.po8, {

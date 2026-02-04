@@ -119,7 +119,7 @@ function R(e) {
               })
             }), (0, r.jsxs)(v.A.Overlay, {
               className: P.Lw,
-              children: [(0, r.jsx)(_.A, {
+              children: [(0, r.jsx)(x.A, {
                 heading: N.intl.string(N.t["61W33d"]),
                 headingColor: "text-strong",
                 children: (0, r.jsx)(j.A, {
@@ -128,10 +128,10 @@ function R(e) {
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: B
                 })
-              }), (0, r.jsx)(_.A, {
+              }), (0, r.jsx)(x.A, {
                 heading: N.intl.string(N.t["A//N4k"]),
                 headingColor: "text-strong",
-                children: (0, r.jsx)(x.A, {
+                children: (0, r.jsx)(_.A, {
                   userId: n.id
                 })
               })]

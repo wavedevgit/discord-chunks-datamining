@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 584777, original params: e,t,n (module,exports,require) **/
 let l;
 require.d(exports, {
@@ -32,10 +32,10 @@ let C = false,
   P = null,
   w = new Chunk713402.J(function(e) {
     let t = [],
-      n = v.default.getCurrentUser();
+      n = E.default.getCurrentUser();
     return y.A.isFriend(e.user.id) ? t.push("FRIENDS") : e.user.id !== (null == n ? true : n.id) && t.push("GUILD_MEMBERS"), t
   }, function(e) {
-    if (b.A.hasConsented(E.YAq.PERSONALIZATION)) {
+    if (b.A.hasConsented(v.YAq.PERSONALIZATION)) {
       var t, n;
       return -(null != (t = null == (n = p.A.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? t : 0)
     }
@@ -58,13 +58,13 @@ function M() {
       n = h.A.getConfig({
         location: "PrivateChannelRecipientsInviteStore"
       }).enabled,
-      l = v.default.getCurrentUser();
-    if ((null == l ? true : l.isStaff()) && (t = Array.from(new Set([...t, ...v.default.filter(e => e.isStaff() && e.id !== l.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), n)
+      l = E.default.getCurrentUser();
+    if ((null == l ? true : l.isStaff()) && (t = Array.from(new Set([...t, ...E.default.filter(e => e.isStaff() && e.id !== l.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), n)
       for (let n of ((null == e ? true : e.isPrivate()) && e.recipients.forEach(e => {
           w.delete(e)
         }), t)) ! function(e) {
-        if (y.A.getRelationshipType(e) === E.eA$.BLOCKED) return w.delete(e);
-        let t = v.default.getUser(e);
+        if (y.A.getRelationshipType(e) === v.eA$.BLOCKED) return w.delete(e);
+        let t = E.default.getUser(e);
         if (null == t) return w.delete(e);
         w.set(e, {
           user: t,
@@ -72,17 +72,17 @@ function M() {
         })
       }(n);
     return t.reduce((e, t) => {
-      let n = v.default.getUser(t);
+      let n = E.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: g.Ay.getName(n)
       }), e
-    }, []).sort(L)
+    }, []).sort(k)
   }(e), true;
   let t = null != e ? e.recipients : [];
   if (null != l) {
     var n;
-    let e, r, i, a = v.default.getCurrentUser(),
+    let e, r, i, a = E.default.getCurrentUser(),
       s = null != (n = null == a ? true : a.isStaff()) && n,
       o = h.A.getConfig({
         location: "PrivateChannelRecipientsInviteStore"
@@ -112,14 +112,14 @@ function M() {
   returnfalse
 }
 
-function k() {
+function L() {
   if (!C) returnfalse;
   let e = T;
   return (T = y.A.getFriendCount() > 0) !== e
 }
 
-function L(e, t) {
-  if (b.A.hasConsented(E.YAq.PERSONALIZATION)) {
+function k(e, t) {
+  if (b.A.hasConsented(v.YAq.PERSONALIZATION)) {
     var n, l, r, i;
     let a = null != (n = null == (r = p.A.getUserAffinity(e.user.id)) ? true : r.communicationProbability) ? n : 0,
       s = null != (l = null == (i = p.A.getUserAffinity(t.user.id)) ? true : i.communicationProbability) ? l : 0;
@@ -139,7 +139,7 @@ function U(e) {
       comparator: l
     }
     of(w.clear(), t)) {
-    let t = v.default.getUser(e);
+    let t = E.default.getUser(e);
     null == t || t.isProvisional || (n.push({
       user: t,
       comparator: l
@@ -156,12 +156,12 @@ function G() {
 }
 
 function F(e) {
-  if (e.key !== E.TLS) returnfalse;
-  C = true, k(), l = G(), P = null, D("")
+  if (e.key !== v.TLS) returnfalse;
+  C = true, L(), l = G(), P = null, D("")
 }
 
 function H(e) {
-  if (e.key !== E.TLS) returnfalse;
+  if (e.key !== v.TLS) returnfalse;
   B()
 }
 
@@ -170,7 +170,7 @@ function B() {
 }
 class V extends(r = Chunk311907.Ay.Store) {
   initialize() {
-    this.waitFor(A.A, b.A, d.A, _.A, y.A, p.A, v.default), this.syncWith([v.default, A.A], M), this.syncWith([y.A], k)
+    this.waitFor(A.A, b.A, d.A, _.A, y.A, p.A, E.default), this.syncWith([E.default, A.A], M), this.syncWith([y.A], L)
   }
   getResults() {
     return I
@@ -220,7 +220,7 @@ let K = new V(Chunk73153.h, {
     MODAL_PUSH: F,
     SHOW_ACTION_SHEET: F,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      C = true, k(), l = G(), P = e.channelId, D("")
+      C = true, L(), l = G(), P = e.channelId, D("")
     },
     MODAL_POP: H,
     HIDE_ACTION_SHEET: H,

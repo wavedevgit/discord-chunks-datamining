@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 803622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => R
@@ -179,9 +179,9 @@ let N = e => {
     } = e, i = r.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
-      b.A.closeChannelSidebar(v.fe)
+      b.A.closeChannelSidebar(E.fe)
     }, []), s = r.useCallback(() => {
-      b.A.closeChannelSidebar(v.fe)
+      b.A.closeChannelSidebar(E.fe)
     }, []), {
       acceptMessageRequest: o,
       rejectMessageRequest: u,
@@ -220,7 +220,7 @@ let N = e => {
       showingBanner: r
     } = e, {
       channelId: i
-    } = (0, g.N)(), u = (0, o.bG)([f.A], () => null != i && f.A.isSpam(i), [i]), d = (0, o.bG)([E.A], () => E.A.getRelationshipType(t), [t]), h = n.id === i, p = !s.Fr && !h, m = !!s.Fr || h || u, b = u || h ? (0, l.jsxs)("div", {
+    } = (0, g.N)(), u = (0, o.bG)([f.A], () => null != i && f.A.isSpam(i), [i]), d = (0, o.bG)([v.A], () => v.A.getRelationshipType(t), [t]), h = n.id === i, p = !s.Fr && !h, m = !!s.Fr || h || u, b = u || h ? (0, l.jsxs)("div", {
       className: T.mG,
       children: [(0, l.jsx)(w, {
         channelId: n.id,

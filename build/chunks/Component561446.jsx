@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 561446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -27,8 +27,8 @@ function _(e) {
     showProfile: n = false,
     showTrailingDivider: _ = false
   } = e, y = h.default.cast(t), {
-    joinRequest: v,
-    isModmin: E,
+    joinRequest: E,
+    isModmin: v,
     guildId: O,
     maxMembers: C
   } = (0, r.cf)([p.A, u.A, d.A], () => {
@@ -44,8 +44,8 @@ function _(e) {
     approveRequest: j,
     rejectRequest: I,
     submitting: T
-  } = (0, m.W)(null == v ? true : v.guildId, null == v ? true : v.userId, null == v ? true : v.joinRequestId);
-  return null != v && v.applicationStatus === f.B5.SUBMITTED && E ? (0, l.jsxs)("div", {
+  } = (0, m.W)(null == E ? true : E.guildId, null == E ? true : E.userId, null == E ? true : E.joinRequestId);
+  return null != E && E.applicationStatus === f.B5.SUBMITTED && v ? (0, l.jsxs)("div", {
     className: b.U,
     children: [(0, l.jsx)(i.m, {
       text: A.intl.string(A.t.cdPGbE),
@@ -63,12 +63,12 @@ function _(e) {
       size: "sm",
       text: A.intl.string(A.t.hDtbsz),
       onClick: I,
-      disabled: T || v.applicationStatus !== f.B5.SUBMITTED
+      disabled: T || E.applicationStatus !== f.B5.SUBMITTED
     }), n && (0, l.jsx)(a.Button, {
       onClick: () => {
         (0, o.openUserProfileModal)({
-          userId: v.userId,
-          guildId: v.guildId
+          userId: E.userId,
+          guildId: E.guildId
         })
       },
       variant: "secondary",

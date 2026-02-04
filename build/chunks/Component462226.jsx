@@ -19,22 +19,22 @@ function c(e) {
     onAction: u
   } = e, d = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (i = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
   }(e, ["activity", "user", "variant", "onAction"]);
-  return (0, a.A)(t, s.jUm.INSTANCE) ? (0, r.jsx)(l.Button, function(e) {
+  return (0, a.A)(t, o.jUm.INSTANCE) ? (0, r.jsx)(i.Button, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -52,11 +52,11 @@ function c(e) {
     }
     return e
   }({
-    text: o.intl.string(o.t.vwl1PK),
+    text: s.intl.string(s.t.vwl1PK),
     variant: c,
     size: "sm",
     onClick: () => {
-      null == u || u(), new i.A("UserActivityActions").log("notify", n.id, t)
+      null == u || u(), new l.A("UserActivityActions").log("notify", n.id, t)
     },
     fullWidth: true
   }, d)) : null

@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 964918, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => _
+  A: () => x
 }), require("./896048.js"), require("./638769.js"), require("./264879.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk533848 = require("./533848.js");
 
-function _(e) {
+function x(e) {
   let {
     channel: t
   } = e, i = (0, a.yK)([d.A, f.Ay, g.A], () => {
@@ -38,16 +38,16 @@ function _(e) {
   return l.useEffect(() => {
     (0, p.TE)()
   }, []), (0, r.jsxs)("div", {
-    className: x.SW,
+    className: _.SW,
     children: [(0, r.jsx)(o.Text, {
-      className: x.DD,
+      className: _.DD,
       variant: "text-xs/bold",
       color: "text-default",
       children: t.isForumLikeChannel() ? j.intl.string(j.t.ioVdO2) : j.intl.string(j.t.VNYs2v)
     }), i.slice(0, t.isForumLikeChannel() ? i.length : c).map(e => (0, r.jsx)(v, {
       thread: e
     }, e.id)).filter(e => l.isValidElement(e)).slice(0, c), (0, r.jsx)(o.DUT, {
-      className: x.OS,
+      className: _.OS,
       onClick: () => {
         t.isForumLikeChannel() ? (0, u.iN)(t.id) : (0, o.mMO)(async () => {
           let {
@@ -89,29 +89,29 @@ function v(e) {
     thread: t
   } = e, n = (0, a.bG)([m.default], () => m.default.getUser(t.ownerId)), l = (0, p.JO)(t);
   return (0, r.jsxs)(o.DUT, {
-    className: x.nM,
+    className: _.nM,
     onClick: e => {
       (0, h.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.H9.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: x.my,
+      className: _.my,
       src: b.Ay.getDefaultAvatarURL(true, true),
       alt: ""
     }) : (0, r.jsx)(c.A, {
-      className: x.my,
+      className: _.my,
       user: n,
       size: o._3J.SIZE_16
     }), (0, r.jsx)(o.Text, {
-      className: x.UU,
+      className: _.UU,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
     }), (0, r.jsxs)(o.Text, {
-      className: x.vE,
+      className: _.vE,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: x.xE,
+        className: _.xE,
         children: "•"
       }), (0, p.aK)(l)]
     })]

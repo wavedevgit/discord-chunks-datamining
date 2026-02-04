@@ -51,7 +51,7 @@ let D = Chunk64700.memo(function(e) {
       canGoLive: o,
       isStreaming: h,
       channel: y,
-      canStream: _,
+      canStream: x,
       runningGame: v,
       embeddedActivity: T,
       frame: D,
@@ -67,7 +67,7 @@ let D = Chunk64700.memo(function(e) {
     } = e, {
       parentAnalyticsLocation: W,
       analyticsLocations: z
-    } = (0, f.Ay)(), X = (0, x.A)(k, "rtc-activity-panel"), q = R(k, G, T), J = l.useCallback(() => {
+    } = (0, f.Ay)(), q = (0, _.A)(k, "rtc-activity-panel"), X = R(k, G, T), J = l.useCallback(() => {
       var e;
       s()(null != G, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
         action_type: "invite_to_game",
@@ -136,9 +136,9 @@ let D = Chunk64700.memo(function(e) {
     }, []), l.useEffect(() => {
       Y && (er(false), null != et.current && (clearTimeout(et.current), et.current = null))
     }, [Y]);
-    let el = (null == X ? true : X.guildId) == null || null == k ? null : (0, r.jsx)(M, {
-        guildId: X.guildId,
-        applicationId: X.id
+    let el = (null == q ? true : q.guildId) == null || null == k ? null : (0, r.jsx)(M, {
+        guildId: q.guildId,
+        applicationId: q.id
       }),
       ei = function() {
         let e, t, n;
@@ -146,7 +146,7 @@ let D = Chunk64700.memo(function(e) {
         let l = null;
         return h ? (e = false, t = () => {
           $(), (0, b.X)(W, b.O.STREAM, false)
-        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : _ ? (e = false, t = () => {
+        }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : x ? (e = false, t = () => {
           ee(), (0, b.X)(W, b.O.STREAM, true)
         }, n = u.Fzq, l = null != v ? P.intl.formatToPlainString(P.t.AB5gTy, {
           game: v.name
@@ -160,7 +160,7 @@ let D = Chunk64700.memo(function(e) {
           })
         })
       }(),
-      es = q && null == T ? (0, r.jsx)(I.A, {
+      es = X && null == T ? (0, r.jsx)(I.A, {
         ref: V,
         tooltipText: P.intl.string(P.t["hC/Zey"]),
         onClick: J,
@@ -240,11 +240,11 @@ function M(e) {
     })
   }, [t]);
   let [s, a] = (0, y.kn)([o.M.GAME_SHOP_RTC_POPOVER], T.m.ACCOUNT_NAME_ZONE, true), c = l.useCallback(() => {
-    (0, _.X)({
+    (0, x.X)({
       guildId: n
     })
   }, [n]), d = l.useCallback(() => {
-    (0, _.default)({
+    (0, x.default)({
       guildId: n
     }), a(T.i.USER_DISMISS)
   }, [n, a]), p = l.useCallback(() => {

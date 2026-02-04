@@ -51,7 +51,7 @@ let I = {
       onVisibilityChange: P
     } = e, B = (0, i.K)(e => {
       null == P || P(e)
-    }, .1, null != P), w = l.useRef(null), D = (0, x.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
+    }, .1, null != P), w = l.useRef(null), D = (0, S.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
       var e;
       return null != N ? N : null == k ? I : {
         rankedSkuIds: null != (e = k.heroRanking) ? e : [],
@@ -69,13 +69,13 @@ let I = {
       }
     }, [N, k]), U = (0, E.rR)("HeroBlock") && G.categorySkuId === y.op, {
       bannerDisplayConfig: F,
-      logoDisplayConfig: z,
-      heroLogo: V,
+      logoDisplayConfig: V,
+      heroLogo: z,
       heroBannerStatic: K,
       heroBannerAnimated: W,
       heroBannerRive: Y
-    } = (0, v.Kk)(G), q = null != (t = null == F ? true : F.responsive) && t, Z = null == F ? true : F.backgroundStyle, X = null != Y, J = R === y.G2.ORBS, Q = null != k && k.isOrbsExclusive, $ = J ? T.intl.string(T.t["1CdL8d"]) : T.intl.string(T.t.xYKa1T);
-    J && U && ($ = T.intl.string(T.t.dVz4hi));
+    } = (0, v.Kk)(G), q = null != (t = null == F ? true : F.responsive) && t, Z = null == F ? true : F.backgroundStyle, X = null != Y, J = R === y.G2.ORBS, Q = null != k && k.isOrbsExclusive, $ = J ? L.intl.string(L.t["1CdL8d"]) : L.intl.string(L.t.xYKa1T);
+    J && U && ($ = L.intl.string(L.t.dVz4hi));
     let {
       analyticsLocations: ee
     } = (0, g.Ay)(), et = () => {
@@ -92,7 +92,7 @@ let I = {
         categorySkuId: Q ? G.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: Q
-      }), _.default.track(j.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), h.default.track(j.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == H ? true : H.sessionId,
         sku_id: G.categorySkuId,
         page_type: R,
@@ -103,20 +103,20 @@ let I = {
     };
     return null != M && (n || G !== I) ? (0, r.jsxs)("div", {
       ref: B,
-      className: L.os,
+      className: T.os,
       children: [X ? (0, A.VA)({
         isCustomCursorEnabled: D,
-        className: L.Xt,
+        className: T.Xt,
         riveEventTargetRef: w
       }) : null, (0, r.jsx)("div", {
-        className: a()(L.vK, {
-          [L.cN]: X,
-          [L.no]: q
+        className: a()(T.vK, {
+          [T.cN]: X,
+          [T.no]: q
         }),
         style: null != Z ? {
           background: Z
         } : true,
-        children: null != K && (0, r.jsx)(S.A, {
+        children: null != K && (0, r.jsx)(x.A, {
           bannerStatic: K,
           bannerAnimated: W,
           bannerRive: Y,
@@ -124,41 +124,41 @@ let I = {
           eventTargetRef: w
         })
       }), (0, r.jsxs)("div", {
-        className: L.xX,
+        className: T.xX,
         children: [X ? (0, r.jsx)("div", {
-          className: L.fy,
+          className: T.fy,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
             onClick: et,
             text: $
           })
         }) : (0, r.jsxs)("div", {
-          className: a()(L.bC, {
-            [L.no]: q
+          className: a()(T.bC, {
+            [T.no]: q
           }),
           children: [n ? (0, r.jsx)("div", {
-            className: L.Hw
+            className: T.Hw
           }) : (0, r.jsxs)("div", {
-            className: L.Hw,
-            children: [(0, h.HF)(G.unpublishedAt) && (0, r.jsx)(d.LpS, {
+            className: T.Hw,
+            children: [(0, _.HF)(G.unpublishedAt) && (0, r.jsx)(d.LpS, {
               disableColor: true,
-              text: T.intl.string(T.t["h/uBCR"]),
-              className: L.v0
+              text: L.intl.string(L.t["h/uBCR"]),
+              className: T.v0
             }), (0, r.jsxs)("div", {
-              className: L.Wq,
-              children: [null != V && (0, r.jsx)("img", {
-                className: L.rm,
-                src: V,
+              className: T.Wq,
+              children: [null != z && (0, r.jsx)("img", {
+                className: T.rm,
+                src: z,
                 alt: G.name,
-                style: null == z ? true : z.toDesktopStyles()
+                style: null == V ? true : V.toDesktopStyles()
               }), null != G.title && (0, r.jsx)(d.Heading, {
                 variant: "heading-xxl/bold",
-                className: L.DD,
+                className: T.DD,
                 color: "text-strong",
                 children: G.title
               }), null != G.summary && "" !== G.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
-                className: J ? L.h4 : L.Tm,
+                className: J ? T.h4 : T.Tm,
                 style: null != G.bannerTextColor ? {
                   color: G.bannerTextColor
                 } : true,
@@ -166,7 +166,7 @@ let I = {
               })]
             })]
           }), !n && (0, r.jsx)("div", {
-            className: L.IS,
+            className: T.IS,
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
               onClick: et,

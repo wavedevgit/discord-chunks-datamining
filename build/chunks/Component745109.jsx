@@ -34,14 +34,14 @@ var Chunk627968 = require("./627968.js"),
 function T() {
   let e = (0, f.dk)("ProfileCustomizationSettingsPage"),
     t = (0, a.bG)([d.A], () => d.A.getGuild()),
-    n = (0, x.A)(),
+    n = (0, _.A)(),
     i = (0, a.bG)([d.A, h.A], () => d.A.showNotice() || h.A.showNotice()),
     T = null != t ? t : n,
     P = (0, a.bG)([y.default], () => y.default.getCurrentUser()),
     {
       subsection: w,
       setSubsection: R
-    } = (0, _.A)(),
+    } = (0, x.A)(),
     D = A.a.useField("hasSearchResults"),
     L = A.a.useField("searchResults");
 

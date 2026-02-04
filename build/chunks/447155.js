@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 447155, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => p,
@@ -28,35 +28,35 @@ function p(e) {
     appContext: b,
     canSendScheduledMessages: _,
     canSummarizeThreads: y
-  } = e, v = [];
-  return t && (v.push({
+  } = e, E = [];
+  return t && (E.push({
     type: "UPLOAD_A_FILE",
     icon: i.H8$,
     display: d.intl.string(d.t["d3+iYs"])
-  }), v.push({
+  }), E.push({
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.H8$,
     display: d.intl.string(d.t["G9s+EM"])
-  })), p && t && b !== u.BRT.POPOUT && v.push({
+  })), p && t && b !== u.BRT.POPOUT && E.push({
     type: "CLIPS",
     icon: i.xgA,
     display: d.intl.string(d.t.o034cv),
     badgeVal: g,
     badgeColor: r.A.colors.BACKGROUND_BRAND.css
-  }), n && v.push({
+  }), n && E.push({
     type: "CREATE_THREAD",
     icon: i.G_k,
     display: d.intl.string(d.t.rBIGBL)
-  }), A && v.push({
+  }), A && E.push({
     type: "POLL",
     icon: i.YRe,
     display: d.intl.string(d.t.Flr51u)
-  }), l && h && v.push({
+  }), l && h && E.push({
     type: "SLASH_COMMAND",
     icon: i.k9F,
     display: d.intl.string(d.t.Bbvp6G)
   }), m.forEach(e => {
-    !(0, a.A)(e, u.jUm.EMBEDDED) && (e.type === u.$pd.PLAYING && (0, a.A)(e, u.jUm.JOIN) && v.push({
+    !(0, a.A)(e, u.jUm.EMBEDDED) && (e.type === u.$pd.PLAYING && (0, a.A)(e, u.jUm.JOIN) && E.push({
       type: "INVITE_TO_GAME",
       icon: i.LVO,
       display: d.intl.formatToPlainString(d.t["KHLo+F"], {
@@ -64,7 +64,7 @@ function p(e) {
         game: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === u.$pd.LISTENING && (0, a.A)(e, u.jUm.SYNC) && v.push({
+    }), e.type === u.$pd.LISTENING && (0, a.A)(e, u.jUm.SYNC) && E.push({
       type: "INVITE_TO_LISTEN",
       icon: i.J2m,
       display: d.intl.formatToPlainString(d.t.I479px, {
@@ -72,7 +72,7 @@ function p(e) {
         name: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === u.$pd.WATCHING && (0, a.A)(e, u.jUm.SYNC) && v.push({
+    }), e.type === u.$pd.WATCHING && (0, a.A)(e, u.jUm.SYNC) && E.push({
       type: "INVITE_TO_WATCH",
       icon: i.bMW,
       display: d.intl.formatToPlainString(d.t["EvCP/g"], {
@@ -81,13 +81,13 @@ function p(e) {
       }),
       activity: e
     }))
-  }), _ && v.push({
+  }), _ && E.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.O4,
     display: d.intl.string(d.t["3+ii4F"])
-  }), f.isThread() && y && v.push({
+  }), f.isThread() && y && E.push({
     type: "SUMMARIZE_THREAD",
     icon: i.Dud,
     display: d.intl.string(d.t.EXfguE)
-  }), v
+  }), E
 }

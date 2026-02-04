@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 371741, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Av: () => Q,
@@ -180,16 +180,16 @@ function ee(e) {
       guild_id: g
     },
     compact: y = false,
-    className: E,
+    className: v,
     groupId: O,
     viewingChannelId: S
   } = e, I = s.type === W.lAJ.REPLY ? s.messageReference : true, M = (0, c.rm)(null != (t = e.id) ? t : ""), {
-    onFocus: L
+    onFocus: k
   } = M, U = X(M, ["onFocus"]), {
     isFocused: H,
     handleFocus: q,
     handleBlur: Q
-  } = (0, P.G8)(L), {
+  } = (0, P.G8)(k), {
     popouts: $,
     selected: ee,
     setPopout: et
@@ -201,7 +201,7 @@ function ee(e) {
     groupId: O,
     message: s,
     defaultValue: ee
-  }), ec = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled), eu = ee || ec && H, ed = eu || eo, eh = (0, u.bG)([v.A], () => v.A.isDeveloper), {
+  }), ec = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled), eu = ee || ec && H, ed = eu || eo, eh = (0, u.bG)([E.A], () => E.A.isDeveloper), {
     content: ep,
     hasSpoilerEmbeds: ef,
     hasBailedAst: em
@@ -215,7 +215,7 @@ function ee(e) {
     allowDevLinks: eh,
     previewLinkTarget: true,
     viewingChannelId: S
-  }), eg = (0, w.A)(o, p, ec), eA = (0, j.Ay)(s), eb = (0, N.fF)(s, O), e_ = (0, N.ZD)(s), ey = (0, F.A)(e, ep, false), ev = r.useCallback(() => (0, b.uh)(g, p, o), [g, p, o]), eE = (0, f.$7)({
+  }), eg = (0, w.A)(o, p, ec), eA = (0, j.Ay)(s), eb = (0, N.fF)(s, O), e_ = (0, N.ZD)(s), ey = (0, F.A)(e, ep, false), eE = r.useCallback(() => (0, b.uh)(g, p, o), [g, p, o]), ev = (0, f.$7)({
     guildId: g,
     roleId: eA.iconRoleId
   });
@@ -223,13 +223,13 @@ function ee(e) {
     className: Y.m5,
     children: [(0, l.jsx)(d.DUT, {
       className: Y.lA,
-      onClick: ev,
+      onClick: eE,
       "aria-label": z.intl.string(z.t.k5WiPf),
       children: z.intl.string(z.t.k5WiPf)
     }), (0, l.jsx)(T.A, Z(J({}, U), {
       id: i,
       compact: y,
-      className: a()(E, {
+      className: a()(v, {
         [Y.iU]: true,
         [Y.HJ]: !y,
         [Y.mK]: s.mentioned,
@@ -257,9 +257,9 @@ function ee(e) {
         replyReference: I,
         author: eA,
         repliedMessage: er,
-        roleIcon: eE
+        roleIcon: ev
       }),
-      childrenAccessories: (0, k.A)({
+      childrenAccessories: (0, L.A)({
         channelMessageProps: e,
         hasSpoilerEmbeds: ef,
         hasBailedAst: em,
@@ -326,8 +326,8 @@ let et = Chunk64700.memo(function(e) {
       defaultValue: ep
     }),
     {
-      isFocused: ev,
-      hasFocused: eE,
+      isFocused: eE,
+      hasFocused: ev,
       handleFocus: eO,
       handleBlur: eC
     } = (0, P.G8)(es),
@@ -337,18 +337,18 @@ let et = Chunk64700.memo(function(e) {
     ex = r.useCallback(e => {
       eC(e), eb()
     }, [eC, eb]),
-    ej = (0, u.bG)([E.A], () => E.A.isEditing($, q), [$, q]),
+    ej = (0, u.bG)([v.A], () => v.A.isEditing($, q), [$, q]),
     eI = (0, u.bG)([h.A], () => h.A.keyboardModeEnabled),
-    eT = ep || ej || eI && ev,
+    eT = ep || ej || eI && eE,
     eN = eT || ey,
     eP = (0, u.bG)([y.A], () => S.hasFlag(W.pr7.HAS_THREAD) && y.A.getChannel(O.default.castMessageIdAsChannelId(S.id))),
     ew = S.isFirstMessageInForumPost(Q),
     eR = (0, m.S)((null != (n = S.editedTimestamp) ? n : S.timestamp).valueOf()),
-    eD = (0, u.bG)([v.A], () => v.A.isDeveloper),
+    eD = (0, u.bG)([E.A], () => E.A.isDeveloper),
     {
       content: eM,
-      hasSpoilerEmbeds: ek,
-      hasBailedAst: eL
+      hasSpoilerEmbeds: eL,
+      hasBailedAst: ek
     } = (0, D.A)(S, {
       hideSimpleEmbedContent: ec && eu,
       isInteracting: eN,
@@ -378,7 +378,7 @@ let et = Chunk64700.memo(function(e) {
     }),
     eY = r.useRef(window),
     eq = null != eW;
-  s = S.type === W.lAJ.CUSTOM_GIFT ? "" : !ej && eq ? (0, L.A)(e, eM) : (0, F.A)(e, eM, ej);
+  s = S.type === W.lAJ.CUSTOM_GIFT ? "" : !ej && eq ? (0, k.A)(e, eM) : (0, F.A)(e, eM, ej);
   let eJ = S.id === el,
     eZ = (0, l.jsx)(d.vN3, {
       offset: {
@@ -433,20 +433,20 @@ let et = Chunk64700.memo(function(e) {
             repliedMessage: ed,
             roleIcon: eB
           }),
-          childrenAccessories: (0, k.A)({
+          childrenAccessories: (0, L.A)({
             channelMessageProps: e,
-            hasSpoilerEmbeds: ek,
-            hasBailedAst: eL,
+            hasSpoilerEmbeds: eL,
+            hasBailedAst: ek,
             handleContextMenu: em,
             isInteracting: eN,
             isAutomodBlockedMessage: eq,
             forceAddReactions: S.type === W.lAJ.EMOJI_ADDED
           }),
-          childrenButtons: e_ || eE ? (0, U.A)({
+          childrenButtons: e_ || ev ? (0, U.A)({
             buttonProps: e,
             setPopout: ef,
             messagePopouts: eh,
-            isFocused: ey || ev,
+            isFocused: ey || eE,
             messageWindow: eY.current
           }) : true,
           childrenSystemMessage: (0, V.A)(e),

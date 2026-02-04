@@ -43,7 +43,7 @@ let g = e => {
     bannerAnimatedUrl: m
   } = (0, i.qY)(t), p = null != t.textColor ? {
     color: t.textColor
-  } : true, _ = null != t.body && "" !== t.body, b = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, h = null != t.body && "" !== t.body, b = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
     ref: g,
     className: u.BX,
@@ -66,10 +66,10 @@ let g = e => {
           color: "text-strong",
           style: d({}, p),
           children: t.title
-        }), _ || b ? (0, r.jsxs)(s.Text, {
+        }), h || b ? (0, r.jsxs)(s.Text, {
           variant: "text-md/medium",
           style: d({}, p),
-          children: [_ && t.body, _ && b && " ", b && (0, r.jsx)(s.MzZ, {
+          children: [h && t.body, h && b && " ", b && (0, r.jsx)(s.MzZ, {
             href: t.helpCenterUrl,
             className: u.CU,
             style: d({}, p),

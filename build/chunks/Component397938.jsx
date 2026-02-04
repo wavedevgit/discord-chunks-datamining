@@ -25,7 +25,7 @@ var Chunk652215 = require("./652215.js"),
   Chunk790782 = require("./790782.js"),
   Chunk626600 = require("./626600.js");
 
-function _() {
+function x() {
   let e = (0, s.bG)([g.default], () => g.default.getCurrentUser());
   return (0, s.bG)([p.Ay], () => (null == e ? true : e.id) != null && p.Ay.getMentionCount(e.id, j.P.NOTIFICATION_CENTER) > 0)
 }
@@ -52,7 +52,7 @@ function v(e) {
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
-    } = (0, m.U4)(), l = _(), {
+    } = (0, m.U4)(), l = x(), {
       badge: i,
       dimensions: s
     } = (0, b.ux)({
@@ -86,7 +86,7 @@ function v(e) {
       selected: S && I === f.U5.SIDEBAR,
       hovered: v && I === f.U5.SIDEBAR,
       unread: P > 0,
-      className: x.Io,
+      className: _.Io,
       disabled: I === f.U5.LEGACY
     }), (0, r.jsx)(y.A, {
       children: (0, r.jsx)(o.Qk9, {
@@ -119,7 +119,7 @@ function v(e) {
           children: (0, r.jsx)(w, {
             size: "custom",
             color: "currentColor",
-            className: x.iZ,
+            className: _.iZ,
             width: 20,
             height: 20
           })
@@ -145,7 +145,7 @@ function E() {
     } = (0, f.X8)({
       location: "NotificationsInboxButton"
     }),
-    n = _(),
+    n = x(),
     i = (0, b.HN)();
   return t === f.U5.SIDEBAR ? (0, r.jsx)(v, {
     onClick: i

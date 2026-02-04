@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 786051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -25,8 +25,8 @@ let d = function(e) {
     secondaryButtonText: b,
     onSecondaryButtonClick: _,
     children: y,
-    useReducedMotion: v = false,
-    buttonVariant: E
+    useReducedMotion: E = false,
+    buttonVariant: v
   } = e, O = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
   if (i.Fr && O) return null;
   if (null == t) return (0, l.jsx)(l.Fragment, {
@@ -39,7 +39,7 @@ let d = function(e) {
     className: u.Sl
   }) : null != A && (C = (0, l.jsx)(s.akl, {
     importData: A,
-    shouldAnimate: !v,
+    shouldAnimate: !E,
     className: u.lY
   })), (0, l.jsxs)("div", {
     className: u.iE,
@@ -71,7 +71,7 @@ let d = function(e) {
         children: (0, l.jsx)(s.Button, {
           text: h,
           size: "sm",
-          variant: null != E ? E : "secondary",
+          variant: null != v ? v : "secondary",
           onClick: m,
           loading: f,
           icon: p

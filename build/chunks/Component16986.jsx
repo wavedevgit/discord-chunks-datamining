@@ -27,8 +27,8 @@ function A() {
     y = h.SY.useSetting(),
     O = h._z.useSetting(),
     j = h.j7.useSetting(),
-    x = h.X6.useSetting(),
-    _ = h.hD.useSetting(),
+    _ = h.X6.useSetting(),
+    x = h.hD.useSetting(),
     v = h.rs.useSetting(),
     E = h.jW.useSetting(),
     C = h.ng.useSetting(),
@@ -58,14 +58,14 @@ function A() {
           children: [(0, r.jsx)(d.x, {
             setting: f.H.CHAT_INLINE_MEDIA_LINKS,
             children: (0, r.jsx)(i.dOG, {
-              checked: _,
+              checked: x,
               onChange: h.hD.updateSetting,
               label: b.intl.string(b.t.U47N1p)
             })
           }), (0, r.jsx)(d.x, {
             setting: f.H.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, r.jsx)(i.dOG, {
-              checked: x,
+              checked: _,
               description: b.intl.formatToPlainString(b.t.qjjvqO, {
                 maxSize: 10
               }),

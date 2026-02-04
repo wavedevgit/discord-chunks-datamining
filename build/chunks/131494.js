@@ -27,15 +27,15 @@ var Chunk478437 = require("./478437.js"),
 
 function v(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : b.A;
-  return null != e && e.type !== r.r.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(_.hVb.VIEW_CHANNEL, e)
+  return null != e && e.type !== r.r.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(x.hVb.VIEW_CHANNEL, e)
 }
 
 function E(e) {
   var t;
   let n = (0, l.bG)([O.Ay], () => O.Ay.isMuted(e)),
     r = (0, c.BP)(e),
-    _ = (0, l.yK)([s.Ay, A.A], () => s.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], A.A.getBlockedOrIgnoredIDs()))),
-    E = (0, a.H)(null == (t = _[0]) ? true : t.location),
+    x = (0, l.yK)([s.Ay, A.A], () => s.Ay.getEmbeddedActivitiesForGuild(e).filter(e => !(0, o.PH)([...e.userIds], A.A.getBlockedOrIgnoredIDs()))),
+    E = (0, a.H)(null == (t = x[0]) ? true : t.location),
     C = (0, i.Gp)(E),
     {
       guildHasVoice: S,
@@ -85,7 +85,7 @@ function E(e) {
       activity: E,
       isCurrentUserConnected: false
     };
-    let P = x.default.keys(d.A.getStageInstancesByGuild(e)).some(e => {
+    let P = _.default.keys(d.A.getStageInstancesByGuild(e)).some(e => {
         let t = f.A.getChannel(e);
         return null != t && b.A.can(u.Gk, t)
       }),
@@ -94,8 +94,8 @@ function E(e) {
       D = (0, o.Mt)(h.A.getAllApplicationStreams()).some(t => t.guildId === e),
       L = g && N,
       M = (() => {
-        if (C) return _.length > 0;
-        for (let e of _) {
+        if (C) return x.length > 0;
+        for (let e of x) {
           let t = f.A.getChannel((0, a.H)(e.location));
           if (null != t && (0, p.gV)(t.type)) returntrue
         }
@@ -111,5 +111,5 @@ function E(e) {
       activity: E,
       isCurrentUserConnected: g || w
     }
-  }, [e, n, N, T, C, _, r, S, I])
+  }, [e, n, N, T, C, x, r, S, I])
 }

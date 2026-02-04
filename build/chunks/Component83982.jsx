@@ -1,8 +1,8 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 83982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => L,
-  s: () => k
+  A: () => k,
+  s: () => L
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -38,12 +38,12 @@ var Chunk627968 = require("./627968.js"),
 let D = Chunk397927._3J.SIZE_80,
   M = Chunk397927._3J.SIZE_40;
 
-function k(e) {
+function L(e) {
   let {
     channelId: t,
     participant: n
   } = e;
-  return (0, v.uy)(t, n.id) ? (0, l.jsx)(o.m, {
+  return (0, E.uy)(t, n.id) ? (0, l.jsx)(o.m, {
     text: w.intl.string(w.t.HFwRpk),
     position: "bottom",
     children: (0, l.jsx)("div", {
@@ -57,22 +57,22 @@ function k(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     participant: t,
     channel: n,
     inCall: i,
     width: o,
     selected: c,
-    popoutType: v,
+    popoutType: E,
     fit: T,
-    onVideoResize: k,
-    blocked: L,
+    onVideoResize: L,
+    blocked: k,
     ignored: U,
     noVideoRender: G = false,
     pulseSpeakingIndicator: F = false,
     paused: H = false
-  } = e, B = C.A.getVideoComponent(), V = (0, s.bG)([E.default], () => E.default.getId()), {
+  } = e, B = C.A.getVideoComponent(), V = (0, s.bG)([v.default], () => v.default.getId()), {
     user: K,
     streamId: W,
     speaking: z
@@ -104,8 +104,8 @@ function L(e) {
     width: o,
     selected: c
   }) : (0, l.jsx)(b.A, {
-    onResize: k,
-    wrapperClassName: v !== f.N.CALL_TILE ? R.tN : true,
+    onResize: L,
+    wrapperClassName: E !== f.N.CALL_TILE ? R.tN : true,
     className: R.Qs,
     mirror: Y,
     streamId: W,
@@ -116,7 +116,7 @@ function L(e) {
     userId: K.id
   }, W) : (0, l.jsx)("div", {
     className: a()(R.Qs, {
-      [R.Kx]: L || U
+      [R.Kx]: k || U
     }),
     children: (0, l.jsx)(A.A, {
       "aria-label": $,

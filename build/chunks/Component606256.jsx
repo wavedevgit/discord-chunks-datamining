@@ -25,8 +25,8 @@ let h = Chunk64700.forwardRef(function(e, t) {
     upperBadge: y,
     lowerBadge: O,
     lowerBadgeSize: j,
-    showPill: x = true,
-    className: _,
+    showPill: _ = true,
+    className: x,
     "aria-label": v,
     children: E,
     onMouseEnter: C,
@@ -34,7 +34,7 @@ let h = Chunk64700.forwardRef(function(e, t) {
     onMouseDown: I
   } = e, N = (0, a.Vd)(h), [T, P] = l.useState(false);
   return (0, r.jsxs)(u.c, {
-    children: [x ? (0, r.jsx)("div", {
+    children: [_ ? (0, r.jsx)("div", {
       className: p.Io,
       children: (0, r.jsx)(c.A, {
         hovered: T,
@@ -74,7 +74,7 @@ let h = Chunk64700.forwardRef(function(e, t) {
             null == S || S(), P(false)
           },
           onMouseDown: I,
-          className: s()(p.oZ, _, {
+          className: s()(p.oZ, x, {
             [p.wH]: b || T
           }),
           onClick: g,

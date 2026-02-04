@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 707890, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -28,7 +28,7 @@ function y() {
   }, false)
 }
 
-function v() {
+function E() {
   var e;
   let t = null != (e = u.A.getUserIds()) ? e : new Set,
     n = c.default.getId(),
@@ -41,7 +41,7 @@ function v() {
   return b = l, r
 }
 
-function E(e) {
+function v(e) {
   let {
     userId: t
   } = e;
@@ -57,7 +57,7 @@ function E(e) {
       return g.set(e, i), a
     }(t),
     l = y(),
-    r = v();
+    r = E();
   return n || l || r
 }
 
@@ -102,7 +102,7 @@ let S = new C(Chunk73153.h, {
     switch (l) {
       case a.x.STREAM:
         if (null == t) returnfalse;
-        return A.delete(t), v();
+        return A.delete(t), E();
       case a.x.DEFAULT:
         O()
     }
@@ -110,14 +110,14 @@ let S = new C(Chunk73153.h, {
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = c.default.getId(), l = t.reduce((e, t) => n === t ? e : !!E({
+    } = e, n = c.default.getId(), l = t.reduce((e, t) => n === t ? e : !!v({
       userId: t
-    }) || e, false), r = y(), i = v();
+    }) || e, false), r = y(), i = E();
     return l || r || i
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: E,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: E,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: E,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: E,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: E
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: v,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: v,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: v,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: v,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: v
 })

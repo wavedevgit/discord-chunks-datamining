@@ -236,7 +236,7 @@ function H(e) {
           })
         }) : (0, r.jsx)(R.o, {
           allowPopups: (0, N.b)(Y),
-          referrerPolicy: D.$J.has(F.applicationId) ? "no-referrer" : "origin",
+          referrerPolicy: "origin",
           url: F.url,
           queryParams: eu,
           className: o()(j.pU, {

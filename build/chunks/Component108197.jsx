@@ -172,7 +172,7 @@ let w = Chunk64700.memo(function(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
     return i
-  }(Y, ["role"]), z = l.useRef(null), X = G > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
+  }(Y, ["role"]), z = l.useRef(null), q = G > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
     channelName: t.name,
     mentionCount: G
   }) : M ? E.intl.formatToPlainString(E.t.YlVvmc, {
@@ -216,7 +216,7 @@ let w = Chunk64700.memo(function(e) {
           innerRef: z,
           className: S.nf,
           onClick: V,
-          "aria-label": X,
+          "aria-label": q,
           focusProps: {
             enabled: false
           },
@@ -240,12 +240,12 @@ let w = Chunk64700.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(x.A, {
+    }), (0, r.jsx)(_.A, {
       channel: t,
       collapsed: !I && 1 !== D.length,
       collapsedMax: 6,
       voiceStates: D,
-      location: _.ThZ.GUILD_CHANNEL_LIST,
+      location: x.ThZ.GUILD_CHANNEL_LIST,
       isThread: true
     })]
   })

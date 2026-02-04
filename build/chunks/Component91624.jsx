@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 91624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => S
@@ -24,7 +24,7 @@ var Chunk627968 = require("./627968.js"),
 require("./294920.js");
 var Chunk119907 = require("./119907.js");
 
-function E(e) {
+function v(e) {
   let {
     value: t,
     channel: n
@@ -92,7 +92,7 @@ function O(e) {
       }
       return e
     }({}, e), n = n = {
-      className: v.gM,
+      className: E.gM,
       key: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -115,7 +115,7 @@ function O(e) {
     onChange: s.A.updateEditMessage,
     onConfirmDelete: A.A.confirmDelete,
     saveMessage: N,
-    validateEdit: E,
+    validateEdit: v,
     children: P
   }) : null
 }
@@ -134,7 +134,7 @@ function C(e) {
   return r.useEffect(() => (m._.subscribe(y.jej.TEXTAREA_FOCUS, g), m._.subscribe(y.jej.TEXTAREA_BLUR, A), () => {
     m._.unsubscribe(y.jej.TEXTAREA_FOCUS, g), m._.unsubscribe(y.jej.TEXTAREA_BLUR, A)
   }), [g, A]), (0, l.jsx)(u.Ay, {
-    className: v.gM,
+    className: E.gM,
     textValue: t,
     richValue: n,
     channel: a,

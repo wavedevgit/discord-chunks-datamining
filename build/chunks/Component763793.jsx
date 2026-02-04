@@ -130,24 +130,24 @@ let k = 16 / 9,
       id: f,
       blocked: b,
       ignored: j
-    } = t, _ = (0, o.yK)([E.A], () => E.A.getAllActiveStreams(), []), {
+    } = t, x = (0, o.yK)([E.A], () => E.A.getAllActiveStreams(), []), {
       selectedParticipant: v,
       largeStream: C
     } = (0, o.cf)([m.A], () => ({
       selectedParticipant: null != i ? m.A.getSelectedParticipant(i.id) : null,
       largeStream: null != i && m.A.getStageStreamSize(i.id)
     })), T = l.useCallback((e, t) => {
-      if (e.type === D.lp.STREAM && 0 === _.filter(t => (0, y._z)(t) === e.id && t.state !== R.XYD.ENDED).length) {
+      if (e.type === D.lp.STREAM && 0 === x.filter(t => (0, y._z)(t) === e.id && t.state !== R.XYD.ENDED).length) {
         if (!(0, O.eo)(i, N.A, S.A, I.A, A.default)[0]) return;
         (0, p.A9)((0, y.Iy)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == v ? true : v.id) === e.id ? C ? (u.A.selectParticipant(i.id, null), u.A.updateStageStreamSize(i.id, false)) : u.A.updateStageStreamSize(i.id, true) : (u.A.updateStageStreamSize(i.id, false), u.A.selectParticipant(i.id, e.id))
-    }, [_, i, v, C]);
+    }, [x, i, v, C]);
     return (0, r.jsx)(P.A, {
       participant: n,
       aspectRatio: k,
-      fit: n.type === D.lp.USER ? x.$.COVER : true,
+      fit: n.type === D.lp.USER ? _.$.COVER : true,
       blocked: b,
       ignored: j,
       channel: i,
@@ -173,8 +173,8 @@ let k = 16 / 9,
     } = (0, g.Ay)(h.A.STAGE_TILE), A = (0, j.Us)(), y = i.getGuildId(), O = C.default.getId();
     s()(null != y, "Channel cannot be guildless");
     let {
-      user: x
-    } = l, v = (0, o.bG)([m.A], () => m.A.getParticipant(i.id, l.id), [i.id, l.id]), E = (0, o.bG)([T.Ay], () => T.Ay.isModerator(x.id, i.id), [i.id, x.id]);
+      user: _
+    } = l, v = (0, o.bG)([m.A], () => m.A.getParticipant(i.id, l.id), [i.id, l.id]), E = (0, o.bG)([T.Ay], () => T.Ay.isModerator(_.id, i.id), [i.id, _.id]);
     if (null == v || v.type === D.lp.ACTIVITY) return null;
     let S = e => {
         (0, f.x)({
@@ -182,7 +182,7 @@ let k = 16 / 9,
           name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: x.id === O,
+            is_tile_owner: _.id === O,
             tile_type: e
           }
         })
@@ -201,7 +201,7 @@ let k = 16 / 9,
                 exitFullscreen: () => {},
                 onInteraction: (0, b.s)("StreamContextMenu", p, {
                   entrypoint: s,
-                  targetUserId: x.id,
+                  targetUserId: _.id,
                   tileType: D.qs.STREAM
                 })
               }))
@@ -211,29 +211,29 @@ let k = 16 / 9,
             return;
           case D.lp.USER:
           default:
-            if (S(D.qs.USER), l) return (0, _.r)(t, x, i, {
+            if (S(D.qs.USER), l) return (0, x.r)(t, _, i, {
               context: A
             }, (e, t) => (0, b.Y)({
               menuName: e,
               menuItemProps: t,
               entrypoint: D.GK.THREE_DOT,
-              targetUserId: x.id,
+              targetUserId: _.id,
               location: p,
               tileType: D.qs.USER
             }));
             (0, d.L3)(t, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
+              } = await Promise.all([n.e("97262"), n.e("29534"), n.e("48469"), n.e("84841"), n.e("31885")]).then(n.bind(n, 107632));
               return t => (0, r.jsx)(e, G(M({}, t), {
-                user: x,
+                user: _,
                 guildId: y,
                 channel: i,
                 showMediaItems: true,
                 showStageChannelItems: true,
                 showChatItems: false,
                 onInteraction: (0, b.s)("GuildChannelUserContextMenu", p, {
-                  targetUserId: x.id,
+                  targetUserId: _.id,
                   tileType: D.qs.USER
                 })
               }))
@@ -247,7 +247,7 @@ let k = 16 / 9,
       rtcParticipant: v,
       channel: i,
       guildId: y,
-      user: x,
+      user: _,
       width: c,
       isModerator: E,
       onContextMenu: I,
@@ -257,7 +257,7 @@ let k = 16 / 9,
       rtcParticipant: v,
       channel: i,
       guildId: y,
-      user: x,
+      user: _,
       width: c,
       isModerator: E,
       onContextMenu: I,

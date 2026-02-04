@@ -63,7 +63,7 @@ class D extends Chunk64700.PureComponent {
     let u = s.isManaged(),
       d = null,
       p = false;
-    return c ? (p = true, d = w.intl.string(w.t.izMR7o)) : x.A.supports(P.O5.VIDEO) ? i ? (d = w.intl.string(w.t.PHzjvX), p = true) : n && a === I._Of.VIDEO ? (e = this.handleJoinVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.W68MhH)) : (e = this.handleStartVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.oCqlGG)) : (p = true, e = this.handleBrowserNotSupported, d = w.intl.string(w.t.UVpg3U)), (0, r.jsx)(S.Ay.Icon, {
+    return c ? (p = true, d = w.intl.string(w.t.izMR7o)) : _.A.supports(P.O5.VIDEO) ? i ? (d = w.intl.string(w.t.PHzjvX), p = true) : n && a === I._Of.VIDEO ? (e = this.handleJoinVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.W68MhH)) : (e = this.handleStartVideoCall, d = u ? w.intl.string(w.t.S0W8Z5) : w.intl.string(w.t.oCqlGG)) : (p = true, e = this.handleBrowserNotSupported, d = w.intl.string(w.t.UVpg3U)), (0, r.jsx)(S.Ay.Icon, {
       icon: o.npA,
       onClick: e,
       disabled: p || l,
@@ -168,16 +168,16 @@ function L(e) {
   })), f = n.getRecipientId(), {
     notFriend: A,
     isBlocked: y
-  } = (0, i.cf)([_.A], () => ({
-    notFriend: n.type === I.rbe.DM && null != f && !_.A.isFriend(f),
-    isBlocked: n.type === I.rbe.DM && null != f && _.A.isBlocked(f)
-  })), x = (0, i.bG)([v.default], () => v.default.getUser(f)), C = (0, b.Us)(), S = [], N = (0, p.A)(n.id), T = (0, i.bG)([j.A], () => j.A.hasLayers());
-  return (N && !T && S.push(s.M.ACTIVITY_GDM_CALL_TOOLTIP), l || (null == x ? true : x.bot)) ? null : (0, r.jsx)(D, {
+  } = (0, i.cf)([x.A], () => ({
+    notFriend: n.type === I.rbe.DM && null != f && !x.A.isFriend(f),
+    isBlocked: n.type === I.rbe.DM && null != f && x.A.isBlocked(f)
+  })), _ = (0, i.bG)([v.default], () => v.default.getUser(f)), C = (0, b.Us)(), S = [], N = (0, p.A)(n.id), T = (0, i.bG)([j.A], () => j.A.hasLayers());
+  return (N && !T && S.push(s.M.ACTIVITY_GDM_CALL_TOOLTIP), l || (null == _ ? true : _.bot)) ? null : (0, r.jsx)(D, {
     channel: n,
     mode: a,
     inCall: o,
     callActive: u,
-    isProvisional: null != (t = null == x ? true : x.isProvisional) && t,
+    isProvisional: null != (t = null == _ ? true : _.isProvisional) && t,
     callUnavailable: g,
     notFriend: A,
     isBlocked: y,

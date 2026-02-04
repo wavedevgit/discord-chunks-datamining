@@ -1,34 +1,34 @@
 /** Chunk was on 88474 **/
 /** chunk id: 682174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => l
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
 var Chunk953727 = require("./953727.js");
 
-function i(e) {
+function l(e) {
   var t, n;
   let {
-    width: i = 20,
+    width: l = 20,
     height: a = 20,
-    className: s
-  } = e, o = function(e, t) {
+    className: o
+  } = e, s = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (i = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
   }(e, ["width", "height", "className"]);
   return (0, r.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -48,10 +48,10 @@ function i(e) {
     }
     return e
   }({
-    width: i,
+    width: l,
     height: a,
-    className: s
-  }, (0, l.A)(o)), n = n = {
+    className: o
+  }, (0, i.A)(s)), n = n = {
     viewBox: "0 0 20 20",
     children: (0, r.jsxs)("g", {
       clipPath: "url(#clip0_198_5469)",

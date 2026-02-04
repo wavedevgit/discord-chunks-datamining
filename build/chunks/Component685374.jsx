@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 685374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk695244 = require("./695244.js");
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function E(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, l, r, i = {};
   if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -62,12 +62,12 @@ function E(e, t) {
 function O(e) {
   let {
     channelId: t
-  } = e, n = E(e, ["channelId"]), i = (0, a.bG)([d.A], () => d.A.getChannel(t), [t]), s = (0, a.bG)([h.A], () => h.A.getGuild(null == i ? true : i.getGuildId()));
+  } = e, n = v(e, ["channelId"]), i = (0, a.bG)([d.A], () => d.A.getChannel(t), [t]), s = (0, a.bG)([h.A], () => h.A.getGuild(null == i ? true : i.getGuildId()));
   return (r.useEffect(() => {
     p.default.track(b.HAw.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == i || null == s) ? null : (0, l.jsx)(C, v({
+  }, []), null == i || null == s) ? null : (0, l.jsx)(C, E({
     guild: s,
     channel: i
   }, n))
@@ -81,14 +81,14 @@ function C(e) {
     onClose: h,
     newChannel: p,
     inSettings: b
-  } = e, O = E(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [C, S] = r.useState(""), [x, j] = r.useState({}), [I, T] = r.useState(false), [N, P] = r.useState(null), w = r.useRef(null), {
+  } = e, O = v(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]), [C, S] = r.useState(""), [x, j] = r.useState({}), [I, T] = r.useState(false), [N, P] = r.useState(null), w = r.useRef(null), {
     roles: R,
     members: D,
     getRichTag: M
-  } = (0, g.K)(a, d, d.accessPermissions, C), k = m.A.useSections({
+  } = (0, g.K)(a, d, d.accessPermissions, C), L = m.A.useSections({
     roles: R,
     members: D
-  }), L = p && 0 === Object.keys(x).length;
+  }), k = p && 0 === Object.keys(x).length;
   async function U() {
     if (null == d || 0 === Object.keys(x).length) return void h();
     T(true);
@@ -116,7 +116,7 @@ function C(e) {
     roles: R,
     members: D,
     getRichTag: M,
-    children: (0, l.jsx)(i.Modal, (t = v({}, O), n = n = {
+    children: (0, l.jsx)(i.Modal, (t = E({}, O), n = n = {
       title: _.intl.string(_.t.dMJ3Y6),
       onClose: h,
       input: (0, l.jsxs)("div", {
@@ -153,9 +153,9 @@ function C(e) {
         renderSection: m.A.renderSection,
         rowHeight: m.A.ROW_HEIGHT,
         renderRow: m.A.renderRow,
-        sections: k
+        sections: L
       },
-      actions: L ? [{
+      actions: k ? [{
         variant: "secondary",
         text: _.intl.string(_.t.u46sxe),
         onClick: h

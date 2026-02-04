@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 599813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => E
+  c: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,16 +21,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk32425 = require("./32425.js");
 let y = [51],
-  v = [Chunk985018.t.OpqAok];
+  E = [Chunk985018.t.OpqAok];
 
-function E(e) {
+function v(e) {
   let {
     columns: t,
     handleScroll: n,
     voiceListRef: r,
     showSectionHeaders: i = false,
     query: a
-  } = e, s = C(), E = (0, o.bG)([h.default], () => (0, p.ki)(h.default.getCurrentUser())), x = S(a, E), j = Math.ceil(x.length / t), {
+  } = e, s = C(), v = (0, o.bG)([h.default], () => (0, p.ki)(h.default.getCurrentUser())), x = S(a, v), j = Math.ceil(x.length / t), {
     isNativeModuleLoaded: I,
     isNativeModuleLoading: T,
     catalogLastFetchTime: N
@@ -84,7 +84,7 @@ function E(e) {
       return (0, l.jsx)(O, {
         children: r.map((n, r) => (0, l.jsx)(A.I, {
           voiceFilter: n,
-          hasNitro: E,
+          hasNitro: v,
           analyticsContext: {
             reason: f.O.USER_SELECTION,
             gridRows: j,
@@ -99,14 +99,14 @@ function E(e) {
       variant: "text-sm/medium",
       color: "text-muted",
       className: _.wx,
-      children: b.intl.string(v[e])
+      children: b.intl.string(E[e])
     }),
     sectionHeaderHeight: false === i ? true : e => y[e],
     rowCount: j,
     rowHeight: 130,
     onScroll: n,
     ref: r,
-    sectionFooterHeight: 40 * !E
+    sectionFooterHeight: 40 * !v
   })
 }
 

@@ -60,10 +60,10 @@ function q(e) {
       isRichPresenceInvite: H,
       onConfirmClosePopout: Z
     } = e,
-    J = (0, a.bG)([A.A], () => A.A.getApplication(L)),
-    X = (0, a.bG)([_.A], () => _.A.getChannel(D)),
+    X = (0, a.bG)([A.A], () => A.A.getApplication(L)),
+    J = (0, a.bG)([_.A], () => _.A.getChannel(D)),
     Q = O.Q_.useSetting(),
-    ee = (0, a.yK)([T.Ay], () => null == X || null == q ? [] : Array.from(null != q ? q : []).map(e => T.Ay.getMember(X.guild_id, e)), [X, q]),
+    ee = (0, a.yK)([T.Ay], () => null == J || null == q ? [] : Array.from(null != q ? q : []).map(e => T.Ay.getMember(J.guild_id, e)), [J, q]),
     et = r.useMemo(() => {
       let e = new Map;
       return ee.forEach(t => {
@@ -129,9 +129,9 @@ function q(e) {
       }
     }(),
     ef = r.useRef(null);
-  if (null == J || !i) return null;
+  if (null == X || !i) return null;
   let em = (0, l.jsx)(m.A, {
-    application: J,
+    application: X,
     size: 24,
     className: z.Z2
   });
@@ -151,7 +151,7 @@ function q(e) {
           color: "text-strong",
           className: z.SX,
           children: (0, l.jsx)(c.A, {
-            children: J.name
+            children: X.name
           })
         }), el.length > 0 ? (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)("div", {
@@ -166,7 +166,7 @@ function q(e) {
             users: el,
             size: $,
             max: 6,
-            renderUser: e => en(e, X)
+            renderUser: e => en(e, J)
           })]
         }) : null]
       }), (0, l.jsxs)("div", {
@@ -178,7 +178,7 @@ function q(e) {
           children: [(0, l.jsx)(I.A, {
             appContext: B.BRT.POPOUT,
             applicationId: L,
-            channel: X,
+            channel: J,
             shouldPrioritizeGroupPlusIcon: true,
             isRichPresenceInvite: H,
             iconClassName: z.NS,
@@ -214,7 +214,7 @@ function q(e) {
               } = e;
               return (0, l.jsx)(j.A, {
                 children: (0, l.jsx)(W.default, {
-                  application: J,
+                  application: X,
                   channelId: D,
                   onClose: t
                 })

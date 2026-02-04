@@ -212,7 +212,7 @@ class M extends(r = Chunk64700.PureComponent) {
     return (0, l.jsx)(s.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, l.jsxs)(E.c, {
-        children: [(0, l.jsx)(_.A, {
+        children: [(0, l.jsx)(x.A, {
           hovered: !m && f,
           selected: !m && n,
           unread: !m && d,
@@ -272,14 +272,14 @@ let G = Chunk64700.forwardRef(function(e, t) {
     y = (0, o.bG)([A.A], () => A.A.getChannelId(), []),
     j = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
     {
-      enabled: _
-    } = (0, x.r)({
+      enabled: x
+    } = (0, _.r)({
       location: "DirectMessage"
     }),
     v = s === n,
     E = false,
     C = false;
-  (v || _ && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
+  (v || x && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
   let S = (0, c.rdh)(c.LU0.modules.guildbar.AVATAR_SIZE);
   return (0, l.jsx)(M, R(w({}, e), {
     ref: t,
@@ -293,6 +293,6 @@ let G = Chunk64700.forwardRef(function(e, t) {
     isCurrentUserInThisDMCall: v,
     size: S,
     treeItemProps: i,
-    statusIndicatorsEnabled: _
+    statusIndicatorsEnabled: x
   }))
 })

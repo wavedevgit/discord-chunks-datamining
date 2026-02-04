@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 732637, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => A
@@ -35,30 +35,30 @@ function A(e) {
     var y;
     t = null != (y = null == A ? true : A.window) ? y : window
   } else t = window;
-  let v = r.useRef(null),
-    E = r.useMemo(() => {
+  let E = r.useRef(null),
+    v = r.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, l;
-          g(n, null != (t = null == (l = v.current) ? true : l.getBoundingClientRect()) ? t : null), e = null
+          g(n, null != (t = null == (l = E.current) ? true : l.getBoundingClientRect()) ? t : null), e = null
         }))
       }
     }, [n, t]);
-  return r.useEffect(() => (t.addEventListener("resize", E), c._.subscribe(m.jej.REMEASURE_TARGET, E), () => {
-    t.removeEventListener("resize", E), c._.unsubscribe(m.jej.REMEASURE_TARGET, E)
-  }), [E, t]), r.useLayoutEffect(() => {
-    let e = v.current;
+  return r.useEffect(() => (t.addEventListener("resize", v), c._.subscribe(m.jej.REMEASURE_TARGET, v), () => {
+    t.removeEventListener("resize", v), c._.unsubscribe(m.jej.REMEASURE_TARGET, v)
+  }), [v, t]), r.useLayoutEffect(() => {
+    let e = E.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    E();
-    let l = new t.ResizeObserver(E);
+    v();
+    let l = new t.ResizeObserver(v);
     return l.observe(e), () => {
       l.disconnect(), g(n, null)
     }
-  }, [n, E]), (0, l.jsx)("div", {
-    ref: v,
+  }, [n, v]), (0, l.jsx)("div", {
+    ref: E,
     style: s,
     className: a
   })

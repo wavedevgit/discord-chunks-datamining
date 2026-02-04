@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 329449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => C
@@ -22,7 +22,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk924177 = require("./924177.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk733313 = require("./733313.js");
-let E = Chunk64700.memo(function(e) {
+let v = Chunk64700.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -46,10 +46,10 @@ let E = Chunk64700.memo(function(e) {
         config: i ? s.config.stiff : s.config.slow
       }, "animate-always");
     return null != a && (0, l.jsx)(s.animated.div, {
-      className: v.Gi,
+      className: E.Gi,
       style: f,
       children: (0, l.jsx)(c.Text, {
-        className: v.fX,
+        className: E.fX,
         variant: "text-sm/bold",
         children: (0, b.RL)(a.combo)
       })
@@ -66,16 +66,16 @@ let E = Chunk64700.memo(function(e) {
     } = r.useMemo(() => (0, b.HN)(n), [n]);
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(c.Text, {
-        className: v.iR,
+        className: E.iR,
         variant: "text-sm/bold",
         children: t
       }), (0, l.jsxs)("div", {
-        className: v._Z,
+        className: E._Z,
         style: {
           color: i
         },
         children: [(0, l.jsx)(c.Text, {
-          className: v.On,
+          className: E.On,
           style: {
             color: i
           },
@@ -85,32 +85,32 @@ let E = Chunk64700.memo(function(e) {
           })
         }), s && (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)("div", {
-            className: a()(v.QA, v.kb),
+            className: a()(E.QA, E.kb),
             style: {
               backgroundColor: i
             }
           }), (0, l.jsx)("div", {
-            className: a()(v.QA, v.pG),
+            className: a()(E.QA, E.pG),
             style: {
               backgroundColor: i
             }
           })]
         }), o && (0, l.jsxs)(l.Fragment, {
           children: [(0, l.jsx)("div", {
-            className: a()(v.ox, v.kb),
+            className: a()(E.ox, E.kb),
             children: (0, l.jsx)(f.A, {
               width: 24,
               height: 24
             })
           }), (0, l.jsx)("div", {
-            className: a()(v.ox, v.pG),
+            className: a()(E.ox, E.pG),
             children: (0, l.jsx)(f.A, {
               width: 24,
               height: 24
             })
           })]
         }), 1 === n && (0, l.jsx)(c.Text, {
-          className: v.uN,
+          className: E.uN,
           variant: "text-sm/bold",
           children: y.intl.string(y.t.b5Cpof)
         })]
@@ -151,12 +151,12 @@ let E = Chunk64700.memo(function(e) {
       multiplier: S ? j.multiplier : I.current.multiplier
     }), [S, j, I]);
     return (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(E, {
+      children: [(0, l.jsx)(v, {
         channelId: t,
         width: m
       }), (0, l.jsx)(s.animated.div, {
         ref: f,
-        className: v.p_,
+        className: E.p_,
         style: x,
         children: (0, l.jsx)(O, {
           value: N,

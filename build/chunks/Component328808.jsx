@@ -105,7 +105,7 @@ function N(e) {
   } = e, i = (0, c.A)(t), j = (0, g.A)(t), C = (0, A.A)(t.id), S = (0, b.A)(t), I = (0, O.A)({
     id: t.id,
     label: E.intl.string(E.t.DQ797g)
-  }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, p.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, h.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = x.SY.useSetting(), G = (0, a.bG)([_.A], () => !s().isEmpty(_.A.getVoiceStatesForChannel(t.id)));
+  }), N = (0, u.A)(t), T = (0, d.A)(t), P = (0, p.A)(t, "Toolbar Overflow"), w = (0, f.A)(t), R = (0, h.A)(t), D = (0, y.A)(t), L = (0, m.A)(t), M = _.SY.useSetting(), G = (0, a.bG)([x.A], () => !s().isEmpty(x.A.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.W1t, {
     "data-menu-migrated": true,
     navId: "thread-context",

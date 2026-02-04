@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 672341, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => et
@@ -129,9 +129,9 @@ function et(e) {
     eA = (0, o.cI)(G),
     eb = (0, i.bG)([S.A], () => S.A.shouldShowTopicsBar() && !ed),
     e_ = (0, O.l)(G.id),
-    ey = (0, v.j)(G.id, Z.Rx),
-    ev = (0, d.E)(G.id),
-    eE = (0, L.A)(),
+    ey = (0, E.j)(G.id, Z.Rx),
+    eE = (0, d.E)(G.id),
+    ev = (0, k.A)(),
     eO = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === y._j.STRANGER_DANGER) return (0, l.jsx)(C.e, {
@@ -144,13 +144,13 @@ function et(e) {
         warningId: t.id,
         senderId: e.getRecipientId()
       });
-      else return (0, l.jsx)(E._, {
+      else return (0, l.jsx)(v._, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
       });
       return null
-    }(G, null != (t = null != e_ ? e_ : ey) ? t : ev),
+    }(G, null != (t = null != e_ ? e_ : ey) ? t : eE),
     eC = G.isForumPost() && !eg ? (0, l.jsx)(m.A, {
       postId: G.id
     }) : null,
@@ -211,7 +211,7 @@ function et(e) {
   eI.push(...eT);
   let eN = ei[ei.length - 1];
   if (null != ep && ea.forEach((e, t) => {
-      let n = 0 === t && (0, k.l)(G, eN, new I.Ay({
+      let n = 0 === t && (0, L.l)(G, eN, new I.Ay({
         type: J.lAJ.DEFAULT,
         author: ep
       }));
@@ -247,7 +247,7 @@ function et(e) {
     let e, t, n = T.Ay.getOldestUnreadTimestamp(G.id),
       i = 0 !== n ? n : D.default.extractTimestamp(G.id),
       s = (0, w.ro)(new Date, new Date(i));
-    if (T.Ay.isEstimated(G.id) ? (e = s ? X.t.wvtbbG : X.t.tHqbtg, t = X.t.vaPWFe) : (e = s ? X.t["BctFH/"] : X.t["3wXb9P"], t = X.t["4H8ldG"]), eA && (0, o.Kc)(G) && eE.includes(Y.i.SUMMARIES)) {
+    if (T.Ay.isEstimated(G.id) ? (e = s ? X.t.wvtbbG : X.t.tHqbtg, t = X.t.vaPWFe) : (e = s ? X.t["BctFH/"] : X.t["3wXb9P"], t = X.t["4H8ldG"]), eA && (0, o.Kc)(G) && ev.includes(Y.i.SUMMARIES)) {
       let n = T.Ay.ackMessageId(G.id),
         s = (0, x.L)(G.id, T.Ay.getOldestUnreadMessageId(G.id));
       if ((0, u.zV)(J.HAw.SUMMARIES_UNREAD_BAR_VIEWED, {
@@ -335,7 +335,7 @@ function et(e) {
           })
         }
       }
-    } else eE.includes(Y.i.NEW_MESSAGES) && (r = (0, l.jsx)(V.GN, {
+    } else ev.includes(Y.i.NEW_MESSAGES) && (r = (0, l.jsx)(V.GN, {
       content: X.intl.format(e, {
         count: en,
         timestamp: i
@@ -343,7 +343,7 @@ function et(e) {
       channelId: G.id
     }))
   }
-  if (null == r && (0, o.pk)(G) && eb && eE.includes(Y.i.SUMMARIES) && (r = (0, l.jsx)(V.UK, {
+  if (null == r && (0, o.pk)(G) && eb && ev.includes(Y.i.SUMMARIES) && (r = (0, l.jsx)(V.UK, {
       channel: G,
       scrollManager: es
     })), et.error) p = (0, l.jsx)(V.Ez, {

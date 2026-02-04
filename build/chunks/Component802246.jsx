@@ -1,4 +1,4 @@
-/** Chunk was on 62694 **/
+/** Chunk was on 83782 **/
 /** chunk id: 802246, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   A: () => F
@@ -172,7 +172,7 @@ function D(e) {
       } = e;
       return null == i || null == i.sku ? null : (0, n.jsx)("li", {
         className: H.XI,
-        children: (0, n.jsx)(v.A, {
+        children: (0, n.jsx)(A.A, {
           index: t,
           sku: i.sku,
           wishlistId: d,
@@ -265,7 +265,7 @@ let F = function(e) {
     user: t,
     displayProfile: o
   }), {
-    profileThemeStyle: v,
+    profileThemeStyle: A,
     profileThemeClassName: P
   } = (0, h.A)({
     theme: b,
@@ -286,7 +286,7 @@ let F = function(e) {
   }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [p, u])], F = null == o ? true : o.getBannerURL({
     canAnimate: false,
     size: 713
-  }), U = p > y.pl, Y = r.useMemo(() => U ? u.slice(0, y.pl - 1) : u, [u, U]), z = (0, k.b)(Y, t), X = U ? u[y.pl - 1] : null, Q = p - y.pl + 1, [J, K] = r.useState(false), Z = r.useCallback(e => {
+  }), U = p > y.pl, Y = r.useMemo(() => U ? u.slice(0, y.pl - 1) : u, [u, U]), z = (0, v.b)(Y, t), X = U ? u[y.pl - 1] : null, Q = p - y.pl + 1, [J, K] = r.useState(false), Z = r.useCallback(e => {
     if (e && !x && u.length > 0) {
       let e = u.map(e => {
         let {
@@ -294,7 +294,7 @@ let F = function(e) {
         } = e;
         return t.skuId
       });
-      A.default.track(M.HAw.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED, {
+      k.default.track(M.HAw.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED, {
         gift_recipient_id: t.id,
         sku_ids: e,
         location_stack: l,
@@ -326,7 +326,7 @@ let F = function(e) {
   return "error" === I.status ? null : (0, n.jsxs)("div", {
     ref: q,
     className: s()(H.A1, P),
-    style: v,
+    style: A,
     children: [null != F && (0, n.jsx)("div", {
       className: H.iL,
       style: {

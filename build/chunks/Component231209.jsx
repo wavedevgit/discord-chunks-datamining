@@ -43,7 +43,7 @@ let P = e => {
       isFetchingCategories: g,
       tab: E
     } = e, {
-      noCache: T,
+      noCache: L,
       includeUnpublished: k
     } = (0, v.A)(), P = (0, p.rR)("CollectiblesFeedShop") && E === I.G2.ORBS, B = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -80,40 +80,40 @@ let P = e => {
         checkpoint: b.t.SHOP_MOUNTED,
         tab: E,
         unpublishedCategoriesShown: k,
-        cacheDisabled: T
+        cacheDisabled: L
       })
     }, [E]);
     let {
       isFetchingShopHome: G,
       fetchShopHomeError: U,
       shopBlocks: F,
-      refreshShopHome: z
-    } = (0, _.y)(E, {
-      noCache: T,
+      refreshShopHome: V
+    } = (0, h.y)(E, {
+      noCache: L,
       includeUnpublished: k,
       includeBundles: true,
       logPerf: true
     }, {
       sessionId: H,
       tab: E
-    }), V = l.useCallback(() => {
-      z()
-    }, [z]);
+    }), z = l.useCallback(() => {
+      V()
+    }, [V]);
     return (l.useEffect(() => {
       null != U || G || 0 === F.length || (0, b.z)({
         sessionId: H,
         checkpoint: b.t.SHOP_RENDERED,
         tab: E,
         unpublishedCategoriesShown: k,
-        cacheDisabled: T
+        cacheDisabled: L
       })
-    }, [U, G, F.length, k, T, H, E]), null != U) ? (0, r.jsx)(h.h, {
-      onRetry: V,
-      errorOrigin: h.A.SHOP_PAGE,
+    }, [U, G, F.length, k, L, H, E]), null != U) ? (0, r.jsx)(_.h, {
+      onRetry: z,
+      errorOrigin: _.A.SHOP_PAGE,
       errorMessage: U.message
     }) : G || 0 === F.length ? (0, r.jsxs)("div", {
       className: a()(R.g4, R.Of),
-      children: [(0, r.jsx)(S.A, {
+      children: [(0, r.jsx)(x.A, {
         isLoading: G,
         handleTransition: c,
         tab: E
@@ -121,7 +121,7 @@ let P = e => {
         isLoading: G,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(x.A, {
+      }), (0, r.jsx)(S.A, {
         isLoading: G,
         title: E === I.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -134,7 +134,7 @@ let P = e => {
           s = false;
         switch (e.type) {
           case i.g.HERO:
-            l = (0, r.jsx)(S.A, {
+            l = (0, r.jsx)(x.A, {
               isLoading: G,
               handleTransition: c,
               heroBlock: P ? B : e,
@@ -150,7 +150,7 @@ let P = e => {
             break;
           case i.g.FEED:
             let f = e.sortedSkuIds;
-            l = (0, r.jsx)(x.A, {
+            l = (0, r.jsx)(S.A, {
               title: E === I.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: G || g,
               numVisibleItems: u,
@@ -170,7 +170,7 @@ let P = e => {
                 } = (0, d.En)(o.M.COLLECTIBLES_SHOP_WIDE_BANNER, t);
               if (n) return null
             }
-            l = (0, r.jsx)(L.A, {
+            l = (0, r.jsx)(T.A, {
               wideBannerBlock: e,
               tab: E
             }, n);
@@ -224,7 +224,7 @@ let P = e => {
       transitionState: s
     } = e, a = l.useRef(null), {
       handleScroll: i
-    } = (0, u.X)(a, n), o = (0, E.U)(), d = (0, f.uM)(), [m, p] = l.useState(I.md), [_, b] = l.useState(false);
+    } = (0, u.X)(a, n), o = (0, E.U)(), d = (0, f.uM)(), [m, p] = l.useState(I.md), [h, b] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
@@ -272,14 +272,8 @@ let P = e => {
               fullWidth: true
             })]
           })]
-        }), (0, r.jsx)(T.A, {
-          peaking: _,
-          transitioning: s === I.Pf.OUT
-        }), (0, r.jsx)(T.A, {
-          style: {
-            left: 1850
-          },
-          peaking: _,
+        }), (0, r.jsx)(L.A, {
+          peaking: h,
           transitioning: s === I.Pf.OUT
         })]
       })

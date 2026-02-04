@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 517092, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => D
@@ -44,8 +44,8 @@ let _ = [{
     viewTime: 30 * Chunk927813.A.Millis.MINUTE
   }],
   y = 5 * _[_.length - 1].viewTime,
-  v = Chunk927813.A.Millis.WEEK,
-  E = {
+  E = Chunk927813.A.Millis.WEEK,
+  v = {
     channels: {}
   },
   O = new Set,
@@ -68,11 +68,11 @@ function I() {
 }
 
 function T(e) {
-  return e in E.channels || (E.channels[e] = {
+  return e in v.channels || (v.channels[e] = {
     lastActionTime: 0,
     viewDuration: 0,
     numSends: 0
-  }), E.channels[e]
+  }), v.channels[e]
 }
 
 function N(e) {
@@ -90,14 +90,14 @@ function P(e, t) {
 }
 class w extends(l = Chunk311907.Ay.PersistedStore) {
   initialize(e) {
-    null != e && (E.channels = e.channels), this.syncWith([d.Ay], I), this.waitFor(s.default, o.A, c.A, u.A, d.Ay)
+    null != e && (v.channels = e.channels), this.syncWith([d.Ay], I), this.waitFor(s.default, o.A, c.A, u.A, d.Ay)
   }
   getState() {
-    return E
+    return v
   }
   getLastActionTime(e) {
     var t, n;
-    return null != (t = null == (n = E.channels[e]) ? true : n.lastActionTime) ? t : 0
+    return null != (t = null == (n = v.channels[e]) ? true : n.lastActionTime) ? t : 0
   }
   maybeAutoUpgradeChannel(e) {
     if (!N(e)) returnfalse;
@@ -107,12 +107,12 @@ class w extends(l = Chunk311907.Ay.PersistedStore) {
       let n = c.A.getGuild(e.guild_id),
         l = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
         r = Math.min(p.default.age(e.id), Date.now() - l.getTime()),
-        i = E.channels[e.id];
-      if (null == i || i.lastActionTime < Date.now() - v) returnfalse;
+        i = v.channels[e.id];
+      if (null == i || i.lastActionTime < Date.now() - E) returnfalse;
       for (let e of _)
         if (r < e.timeSinceJoin && (i.numSends >= e.sends || i.viewDuration >= e.viewTime)) returntrue;
       returnfalse
-    }(t) && (delete E.channels[e], O.add(e), (0, f.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), true)
+    }(t) && (delete v.channels[e], O.add(e), (0, f.mA)(t.guild_id, t.id, g.e.ALL_MESSAGES), true)
   }
 }
 b(w, "displayName", "UnreadSettingNoticeStore2"), b(w, "persistKey", "UnreadSettingNoticeStore2");
@@ -123,12 +123,12 @@ let R = new w(Chunk73153.h, {
     },
     CONNECTION_OPEN: function() {
       C = u.A.getChannelId(), S = Date.now(), I();
-      let e = Date.now() - v;
-      p.default.forEach(E.channels, (t, n) => {
+      let e = Date.now() - E;
+      p.default.forEach(v.channels, (t, n) => {
         let {
           lastActionTime: l
         } = t;
-        l < e && delete E.channels[n]
+        l < e && delete v.channels[n]
       })
     },
     MESSAGE_CREATE: function(e) {

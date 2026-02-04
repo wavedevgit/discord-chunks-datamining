@@ -92,7 +92,7 @@ function R() {
         })]
       }), (0, r.jsx)(d.Button, {
         variant: "secondary",
-        onClick: () => (0, x.tZ)(e),
+        onClick: () => (0, _.tZ)(e),
         text: I.intl.string(S.default.klSpfs)
       })]
     })
@@ -164,14 +164,14 @@ function D(e) {
       m._.unsubscribe(C.jej.SCROLL_PAGE_DOWN, t), m._.unsubscribe(C.jej.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let X = l.useCallback(() => {
+  let q = l.useCallback(() => {
       var e;
       let t = null == (e = G.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
       t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == a || a(E.VA.USER_SCROLL))
     }, [a]),
-    q = l.useMemo(() => {
+    X = l.useMemo(() => {
       let e = {
           [E.Ur.UNREAD]: [],
           [E.Ur.TODAY]: [],
@@ -193,7 +193,7 @@ function D(e) {
       return (n.length > 0 || i.length > 0) && (o().each(i, e => {
         e.kind === E.yL.MENTION ? t[E.Ur.UNREAD].push(e) : e.channelId in r[E.Ur.UNREAD] ? r[E.Ur.UNREAD][e.channelId].push(e) : r[E.Ur.UNREAD][e.channelId] = [e]
       }), o().each(n, e => {
-        let n = (0, x.i7)(e);
+        let n = (0, _.i7)(e);
         e.kind === E.yL.MENTION ? t[n].push(e) : e.channelId in r[n] ? r[n][e.channelId].push(e) : r[n][e.channelId] = [e]
       }), o().each(w, n => {
         [...Object.values(r[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => b.default.compare(t[0].id, e[0].id)).forEach(t => {
@@ -206,7 +206,7 @@ function D(e) {
     Z = l.useMemo(() => {
       let e = [];
       return Q ? e.push(h()) : J ? e.push((0, r.jsx)(R, {}, "empty-state")) : L ? (e.push(...i.map(e => g([e], true))), e.push(...n.map(e => g([e], false)))) : o().each(w, t => {
-        0 !== q[t].length && (e.push((0, r.jsx)(P, {
+        0 !== X[t].length && (e.push((0, r.jsx)(P, {
           group: t,
           isOpen: K[t],
           toggleOpenedState: () => {
@@ -217,15 +217,15 @@ function D(e) {
               viewId: M
             })
           }
-        }, t)), K[t] && e.push(...q[t].map(e => g(e, t === E.Ur.UNREAD))))
+        }, t)), K[t] && e.push(...X[t].map(e => g(e, t === E.Ur.UNREAD))))
       }), e
-    }, [n, i, h, K, W, q, L, g, J, Q, M]),
+    }, [n, i, h, K, W, X, L, g, J, Q, M]),
     $ = Z[Z.length - 1],
     ee = l.isValidElement($) && $.type === P,
-    et = (0, _.S)(e => e.setInboxReadState);
+    et = (0, x.S)(e => e.setInboxReadState);
   l.useEffect(() => {
-    Q || et(0 === q.UNREAD.length)
-  }, [q, Q, et]);
+    Q || et(0 === X.UNREAD.length)
+  }, [X, Q, et]);
   let en = (n.length > 0 || i.length > 0) && null != a && B;
   ! function(e) {
     let {
@@ -238,15 +238,15 @@ function D(e) {
       t || r.current || (s(i), r.current = true)
     }, [s, i, t])
   }({
-    messagesByCategory: q,
+    messagesByCategory: X,
     loadingInitial: Y
   });
   let er = l.useCallback(() => {
     var e;
-    let t = w.filter(e => K[e]).reduce((e, t) => e + q[t].length, 0),
+    let t = w.filter(e => K[e]).reduce((e, t) => e + X[t].length, 0),
       n = null == (e = G.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
-  }, [K, q]);
+  }, [K, X]);
   l.useEffect(() => {
     Q || B || 0 >= er() || (!ee || z) && (null == a || a(E.VA.FILL_SCROLLER))
   }, [er, a, Q, B, ee, z]);
@@ -262,7 +262,7 @@ function D(e) {
     entrypoint: U,
     messages: n,
     unreadMessages: i,
-    messagesByCategory: q,
+    messagesByCategory: X,
     viewId: M
   }), (0, r.jsx)("div", {
     className: s()(I, N.KQ),
@@ -316,7 +316,7 @@ function D(e) {
               G.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             className: s()(N.m4, S),
-            onScroll: X,
+            onScroll: q,
             fade: true
           }, i), n = n = {
             children: [Z, en && !ee ? el : null]

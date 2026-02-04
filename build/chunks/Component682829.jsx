@@ -49,7 +49,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk547605 = require("./547605.js");
 
-function X() {
+function q() {
   return (0, r.jsx)(o.ZpM, {
     className: z.wb,
     type: o.ZpM.Types.CUSTOM,
@@ -67,7 +67,7 @@ function X() {
   })
 }
 
-function q() {
+function X() {
   let e = (0, a.bG)([R.A], () => R.A.getForApplication(H.tv));
   return l.useEffect(() => {
     (0, p.LM)(H.tv)
@@ -77,7 +77,7 @@ function q() {
     children: null != e && M.Ay.hasAccountCredit(e) ? (0, r.jsx)(U.A, {
       className: z.fX,
       entitlements: e
-    }) : (0, r.jsx)(X, {})
+    }) : (0, r.jsx)(q, {})
   })
 }
 
@@ -105,17 +105,17 @@ let Q = function() {
       var e;
       return Object.values(null != (e = w.A.getSubscriptions()) ? e : {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length
     }),
-    X = (0, m.A)({
+    q = (0, m.A)({
       forceFetch: true
     }),
     Q = (0, G.d)(),
     Z = null !== e ? e.currentPeriodEnd : true,
-    $ = !(Q && !(X.unactivatedUnits.length > 0)) && (X.fractionalState !== H.xc.NONE || X.unactivatedUnits.length > 0);
+    $ = !(Q && !(q.unactivatedUnits.length > 0)) && (q.fractionalState !== H.xc.NONE || q.unactivatedUnits.length > 0);
   return (l.useEffect(() => (c.h.wait(() => {
     (0, h.zS)(), u.hP(), (0, d.CD)(), u.$o()
   }), function() {
     g.A.clearSubsection()
-  }), []), I.A.enabled) ? (0, r.jsx)(f.A, {}) : p && O ? R === Y.nR ? (0, r.jsx)(x.A, {
+  }), []), I.A.enabled) ? (0, r.jsx)(f.A, {}) : p && O ? R === Y.nR ? (0, r.jsx)(_.A, {
     onGoBack: () => g.A.clearSubsection()
   }) : R === Y.PZ ? (0, r.jsx)(v.A, {
     onGoBack: () => g.A.clearSubsection()
@@ -141,12 +141,12 @@ let Q = function() {
           })
         }), (0, r.jsx)(k.A, {
           className: z.fX,
-          fractionalPremiumInfo: X,
+          fractionalPremiumInfo: q,
           activationDate: Z
         })]
       }), (0, r.jsx)(E.x, {
         setting: K.H.SUBSCRIPTIONS_CREDITS,
-        children: (0, r.jsx)(q, {})
+        children: (0, r.jsx)(X, {})
       }), U > 0 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(J, {}), (0, r.jsx)(j.A, {
           count: U,
@@ -156,7 +156,7 @@ let Q = function() {
           })
         })]
       }), M > 0 && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(J, {}), (0, r.jsx)(_.A, {
+        children: [(0, r.jsx)(J, {}), (0, r.jsx)(x.A, {
           count: M,
           onClickManageSubscription: () => {
             (0, S.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {

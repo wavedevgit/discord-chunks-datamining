@@ -2,27 +2,26 @@
 /** chunk id: 360469, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $J: () => C,
   $W: () => s,
   AM: () => m,
   CS: () => v,
   D4: () => l,
   DY: () => g,
-  Gl: () => R,
-  H5: () => D,
+  Gl: () => w,
+  H5: () => P,
   I4: () => _,
   Ig: () => a,
-  M1: () => x,
+  M1: () => L,
   N7: () => S,
   W9: () => A,
   _J: () => T,
-  bN: () => N,
-  dm: () => M,
+  bN: () => C,
+  dm: () => x,
   eK: () => h,
   gq: () => p,
-  i6: () => L,
+  i6: () => D,
   iu: () => E,
-  lk: () => P,
+  lk: () => R,
   mO: () => O,
   qA: () => c,
   qG: () => y,
@@ -64,19 +63,18 @@ var v = function(e) {
   S = function(e) {
     return e[e.UNLOCKED = 1] = "UNLOCKED", e[e.PORTRAIT = 2] = "PORTRAIT", e[e.LANDSCAPE = 3] = "LANDSCAPE", e
   }({});
-let T = new Set([u, d, f, p]),
-  C = new Set([d, f, p]);
-var N = function(e) {
+let T = new Set([u, d, f, p]);
+var C = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
-let w = {
+let N = {
     label_type: Chunk155718.Hr.NONE,
     release_phase: "",
     label_from: null,
     label_until: null,
     omit_badge_from_surfaces: []
   },
-  R = {
+  w = {
     application_id: "",
     requires_age_gate: false,
     legacy_responsive_aspect_ratio: false,
@@ -84,19 +82,19 @@ let w = {
     tablet_default_orientation_lock_state: 1,
     supported_platforms: [Chunk155718.Yl.WEB],
     client_platform_config: {
-      [Chunk155718.Yl.WEB]: w,
-      [Chunk155718.Yl.IOS]: w,
-      [Chunk155718.Yl.ANDROID]: w
+      [Chunk155718.Yl.WEB]: N,
+      [Chunk155718.Yl.IOS]: N,
+      [Chunk155718.Yl.ANDROID]: N
     },
     has_csp_exception: false,
     displays_advertisements: false,
     blocked_locales: [],
     supported_locales: []
   },
-  P = [Chunk652215.rbe.GUILD_TEXT, Chunk652215.rbe.DM, Chunk652215.rbe.GROUP_DM],
-  D = [...P, Chunk652215.rbe.GUILD_VOICE],
-  L = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
-var x = function(e) {
+  R = [Chunk652215.rbe.GUILD_TEXT, Chunk652215.rbe.DM, Chunk652215.rbe.GROUP_DM],
+  P = [...R, Chunk652215.rbe.GUILD_VOICE],
+  D = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
+var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});
-let M = 216e5
+let x = 216e5

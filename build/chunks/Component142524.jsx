@@ -1,7 +1,7 @@
 /** Chunk was on 88474 **/
 /** chunk id: 142524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => x
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -10,8 +10,6 @@ var Chunk627968 = require("./627968.js"),
   Chunk311907 = require("./311907.js"),
   Chunk80682 = require("./80682.js"),
   Chunk643501 = require("./643501.js"),
-  Chunk338234 = require("./338234.js"),
-  Chunk376696 = require("./376696.jsx"),
   Chunk616356 = require("./616356.js"),
   Chunk961350 = require("./961350.js"),
   Chunk71393 = require("./71393.js"),
@@ -24,13 +22,13 @@ var Chunk627968 = require("./627968.js"),
   Chunk727353 = require("./727353.jsx"),
   Chunk652215 = require("./652215.js"),
   Chunk945354 = require("./945354.js");
-class j extends Chunk64700.PureComponent {
+class O extends Chunk64700.PureComponent {
   componentDidMount() {
     let {
       user: e,
       streamApplication: t
     } = this.props;
-    _.default.track(O.HAw.OPEN_POPOUT, {
+    y.default.track(_.HAw.OPEN_POPOUT, {
       type: "Stream Preview",
       other_user_id: e.id,
       application_id: null != t ? t.id : null,
@@ -44,76 +42,63 @@ class j extends Chunk64700.PureComponent {
       activity: e,
       user: t,
       stream: n,
-      previewIsOpen: l,
-      onAction: i,
-      hideTip: s,
-      channel: o,
-      onWatch: c,
-      activeStream: p,
-      currentUserId: f,
-      canWatch: m,
-      unavailableReason: g,
-      streamApplication: y
+      previewIsOpen: i,
+      onAction: l,
+      hideTip: o,
+      onWatch: s,
+      activeStream: c,
+      currentUserId: u,
+      canWatch: d,
+      unavailableReason: f,
+      streamApplication: p
     } = this.props;
-    if (null == n) return null;
-    let {
-      enableUserHoverActivities: b
-    } = (0, u.Uw)({
-      guildId: null == o ? true : o.guild_id,
-      location: "StreamPreviewPopout"
-    });
-    return (0, r.jsxs)("div", {
-      className: a()(S.yt, {
-        [S.P0]: l
+    return null == n ? null : (0, r.jsx)("div", {
+      className: a()(v.yt, {
+        [v.P0]: i
       }),
-      children: [(0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(A.Z, {
         stream: n,
-        activeStream: p,
+        activeStream: c,
         streamActivity: e,
-        streamApplication: y,
+        streamApplication: p,
         user: t,
-        currentUserId: f,
-        canWatch: null != m && m,
-        unavailableReason: g,
-        onWatchStream: c,
-        onAction: i,
-        hideTip: s,
-        className: S.Rh,
-        wrapperClassName: true
-      }), b && null != o && (0, r.jsx)(d.A, {
-        channel: o,
-        user: t,
-        onAction: i
-      })]
+        currentUserId: u,
+        canWatch: null != d && d,
+        unavailableReason: f,
+        onWatchStream: s,
+        onAction: l,
+        hideTip: o,
+        className: v.Rh
+      })
     })
   }
 }
 
-function x(e) {
+function S(e) {
   var t, n;
   let {
-    user: i,
+    user: l,
     channel: a
-  } = e, u = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
-    var n, r, l, i = {};
+    var n, r, i, l = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
-      for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-      return i
+      for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+      return l
     }
-    if (i = function(e, t) {
+    if (l = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.getOwnPropertyNames(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.getOwnPropertyNames(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+        return i
       }(e, t), Object.getOwnPropertySymbols)
-      for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-    return i
-  }(e, ["user", "channel"]), [d, _] = (0, s.yK)([b.A, m.A, g.A, c.default], () => (0, h.eo)(a, b.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(i.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), S = (0, s.bG)([f.default], () => f.default.getId()), x = (0, A.AO)(v), I = (0, s.bG)([y.A], () => (0, A.nr)(v, y.A)), E = l.useMemo(() => ({
-    [a.guild_id]: [i.id]
-  }), [a.guild_id, i.id]);
-  return (0, o.E)(E, "StreamPreviewPopout"), (0, r.jsx)(j, (t = function(e) {
+      for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+    return l
+  }(e, ["user", "channel"]), [A, _] = (0, o.yK)([g.A, f.A, p.A, c.default], () => (0, b.eo)(a, g.A, f.A, p.A, c.default)), v = (0, o.bG)([u.A], () => u.A.getStreamForUser(l.id, a.getGuildId())), S = (0, o.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(v)), j = (0, o.bG)([d.default], () => d.default.getId()), I = (0, h.AO)(v), x = (0, o.bG)([m.A], () => (0, h.nr)(v, m.A)), E = i.useMemo(() => ({
+    [a.guild_id]: [l.id]
+  }), [a.guild_id, l.id]);
+  return (0, s.E)(E, "StreamPreviewPopout"), (0, r.jsx)(O, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -130,15 +115,15 @@ function x(e) {
       })
     }
     return e
-  }({}, u), n = n = {
-    canWatch: d,
+  }({}, y), n = n = {
+    canWatch: A,
     unavailableReason: _,
-    user: i,
-    streamApplication: x,
+    user: l,
+    streamApplication: I,
     stream: v,
-    activeStream: O,
-    currentUserId: S,
-    activity: I,
+    activeStream: S,
+    currentUserId: j,
+    activity: x,
     channel: a
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

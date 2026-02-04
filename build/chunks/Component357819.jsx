@@ -27,8 +27,8 @@ let O = (0, Chunk456412.A)(e => {
   var t, n;
   let s, O, {
       channel: j,
-      width: x,
-      onScroll: _,
+      width: _,
+      onScroll: x,
       popoutType: v
     } = e,
     {
@@ -46,8 +46,8 @@ let O = (0, Chunk456412.A)(e => {
     P = (0, c.E5)(j.id, u.ip.SPEAKER),
     w = P.filter(y),
     R = null != P.find(e => e.type === u.wY.STREAM),
-    D = Math.floor((x - 32) / 102),
-    L = x < 424 ? 1 : x < 624 ? 2 : x < 824 || S ? 3 : 4,
+    D = Math.floor((_ - 32) / 102),
+    L = _ < 424 ? 1 : _ < 624 ? 2 : _ < 824 || S ? 3 : 4,
     M = {
       [u.ip.SPEAKER]: L,
       [u.ip.AUDIENCE]: D,
@@ -59,14 +59,14 @@ let O = (0, Chunk456412.A)(e => {
     {
       speakerTileWidth: B,
       speakerTileHeight: H
-    } = (O = Math.floor((s = Math.floor(x / L - 8)) / m.i), {
+    } = (O = Math.floor((s = Math.floor(_ / L - 8)) / m.i), {
       speakerTileWidth: s,
       speakerTileHeight: O
     }),
-    F = C ? x - 32 : Math.min(x - 64, 3 * B + 8),
+    F = C ? _ - 32 : Math.min(_ - 64, 3 * B + 8),
     Y = e => e === k.length - 1 || 0 === N && 1 === e,
     [K, W] = l.useState(false),
-    [z, X] = l.useState(false);
+    [z, q] = l.useState(false);
   return (0, r.jsx)(h.A, {
     sections: V,
     renderSection: e => {
@@ -86,7 +86,7 @@ let O = (0, Chunk456412.A)(e => {
         participantCount: N,
         label: b.intl.string(b.t["3foUu5"]),
         className: A.wx,
-        onClick: () => X(!z),
+        onClick: () => q(!z),
         collapsed: z,
         channel: j
       }, "audience-header-".concat(t)) : null
@@ -144,6 +144,6 @@ let O = (0, Chunk456412.A)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!Y(e),
     className: A.XG,
     chunkSize: 60,
-    onScroll: _
+    onScroll: x
   })
 })

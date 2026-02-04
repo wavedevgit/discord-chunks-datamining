@@ -169,7 +169,7 @@ function M(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, l = (0, a.bG)([_.A], () => _.A.getGuild(t.guild_id));
+  } = e, l = (0, a.bG)([x.A], () => x.A.getGuild(t.guild_id));
   return null == l ? null : (0, r.jsx)(O.A, {
     "aria-hidden": true,
     className: T.$f,
@@ -186,7 +186,7 @@ function G(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: l
-  } = e, s = (0, a.bG)([_.A], () => _.A.getGuild(t.guild_id)), c = (0, a.bG)([x.A], () => x.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), p = (0, A.gU)(t, s), h = (0, b.Ay)(t, false), g = null == c ? null == s ? true : s.name : "".concat(null == s ? true : s.name, " › ").concat(c.name), f = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
+  } = e, s = (0, a.bG)([x.A], () => x.A.getGuild(t.guild_id)), c = (0, a.bG)([_.A], () => _.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), p = (0, A.gU)(t, s), h = (0, b.Ay)(t, false), g = null == c ? null == s ? true : s.name : "".concat(null == s ? true : s.name, " › ").concat(c.name), f = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(k, {
     channel: t

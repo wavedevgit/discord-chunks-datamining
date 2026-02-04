@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 927421, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => v
 }), require("./896048.js"), require("./638769.js"), require("./321073.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -23,11 +23,11 @@ var Chunk627968 = require("./627968.js"),
   Chunk980504 = require("./980504.js"),
   Chunk342129 = require("./342129.js");
 
-function E(e) {
+function v(e) {
   let {
     guildId: t,
     channel: n,
-    width: E,
+    width: v,
     height: O,
     keepOpen: C,
     interactive: S = true,
@@ -70,14 +70,14 @@ function E(e) {
   }, {
     disableTrack: !S
   });
-  let k = r.useCallback(e => {
+  let L = r.useCallback(e => {
       N.current = e, w(null == e ? true : e.soundId)
     }, []),
-    L = r.useCallback(e => {
-      if (null == e) return void k(null);
+    k = r.useCallback(e => {
+      if (null == e) return void L(null);
       let t = I[e];
-      null != t && k(t)
-    }, [k, I]),
+      null != t && L(t)
+    }, [L, I]),
     U = r.useCallback(e => {
       if (null == e) return;
       let t = I[e];
@@ -85,7 +85,7 @@ function E(e) {
     }, [I, M]),
     G = r.useMemo(() => I.map(e => (0, l.jsx)(_.Ay, {
       interactive: S,
-      className: v.a,
+      className: E.a,
       sound: e,
       focused: P === e.soundId,
       channel: n
@@ -93,13 +93,13 @@ function E(e) {
   return 0 === I.length ? null : (0, l.jsx)(o.f5, {
     value: D,
     children: (0, l.jsx)(b.A, {
-      wheelWidth: E,
+      wheelWidth: v,
       wheelHeight: O,
       itemWidth: 96,
       itemHeight: 52,
       showDeadZoneIndicator: !C,
       activeItem: P,
-      onItemSelect: L,
+      onItemSelect: k,
       onItemAction: U,
       onClose: j,
       interactive: S,

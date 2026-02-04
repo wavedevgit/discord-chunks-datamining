@@ -36,7 +36,7 @@ let P = Chunk64700.memo(function(e) {
   let {
     guild: i,
     selected: P
-  } = e, w = l.useRef(null), R = l.useRef(null), D = (0, u.useHasAnyModalOpen)(), L = (0, a.bG)([_.A], () => _.A.hasLayers()), M = (0, A.n)({
+  } = e, w = l.useRef(null), R = l.useRef(null), D = (0, u.useHasAnyModalOpen)(), L = (0, a.bG)([x.A], () => x.A.hasLayers()), M = (0, A.n)({
     location: "game_shop_channel_row"
   });
   l.useEffect(() => {
@@ -54,13 +54,13 @@ let P = Chunk64700.memo(function(e) {
   l.useEffect(() => {
     P && W && z(I.i.INDIRECT_ACTION)
   }, [z, P, W]);
-  let X = l.useCallback(() => {
+  let q = l.useCallback(() => {
       var e, t;
       z(I.i.TAKE_ACTION);
       let n = null != (e = null == (t = b.A.getStorefrontState(i.id)) ? true : t.activePage) ? e : 0;
       (0, g.pX)(S.BVt.CHANNELS_GAME_SHOP(i.id, n))
     }, [i.id, z]),
-    q = l.useCallback(() => {
+    X = l.useCallback(() => {
       (0, y.X)({
         guildId: i.id,
         forceFetch: B
@@ -129,8 +129,8 @@ let P = Chunk64700.memo(function(e) {
         children: (null == i ? true : i.id) === (0, f.zf)() ? N.intl.string(N.t.xFQAPs) : N.intl.string(N.t.vyaWs7)
       }),
       selected: P,
-      onMouseDown: q,
-      onClick: X,
+      onMouseDown: X,
+      onClick: q,
       onContextMenu: Q,
       trailing: (0, r.jsxs)(r.Fragment, {
         children: [B && (0, r.jsx)(d.LpS, {
@@ -138,7 +138,7 @@ let P = Chunk64700.memo(function(e) {
           color: c.A.colors.BACKGROUND_BRAND.css
         }), l]
       })
-    }), [i.id, P, q, X, Q, B]),
+    }), [i.id, P, X, q, Q, B]),
     ee = l.useMemo(() => {
       if (null == k) return;
       let e = null != k.assetId ? E.A.toURLSafe((0, v.YE)(k.applicationId, k.assetId, 128, "webp")) : true,
@@ -149,8 +149,8 @@ let P = Chunk64700.memo(function(e) {
       }
     }, [k]),
     et = l.useCallback(() => B ? (0, r.jsx)(O.A, {
-      onActionClick: X,
-      onActionMouseDown: q,
+      onActionClick: q,
+      onActionMouseDown: X,
       onRender: Z,
       onRequestClose: J,
       targetElementRef: R,
@@ -160,14 +160,14 @@ let P = Chunk64700.memo(function(e) {
         applicationName: k.applicationName
       })
     }) : K ? (0, r.jsx)(j.A, {
-      onActionClick: X,
-      onActionMouseDown: q,
+      onActionClick: q,
+      onActionMouseDown: X,
       onRender: Z,
       onRequestClose: J,
       targetElementRef: R
-    }) : null, [B, k, X, q, Z, J, ee, K]);
+    }) : null, [B, k, q, X, Z, J, ee, K]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(x.A, {
+    children: [(0, r.jsx)(_.A, {
       ref: w,
       children: $
     }), !D && !L && et()]

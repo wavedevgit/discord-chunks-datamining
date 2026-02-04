@@ -36,10 +36,10 @@ function S(e) {
       indicator: g,
       showUnread: C
     } = function(e, t, n) {
-      let l = (0, x.A)(e).available,
+      let l = (0, _.A)(e).available,
         {
           shouldShow: o
-        } = (0, _.A)(e, "useGuildPowerupsNotificationIndicator"),
+        } = (0, x.A)(e, "useGuildPowerupsNotificationIndicator"),
         c = (0, a.cN)(s.M.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
         u = o && !c,
         d = (0, i.bG)([h.A], () => h.A.getStateForGuild(e));
@@ -73,8 +73,8 @@ function S(e) {
       let n, a, g, [f, m] = (0, O.ty)(null != t),
         y = f === s.M.GUILD_POWERUP_PERKS_COACHMARK,
         {
-          available: _
-        } = (0, x.A)(e),
+          available: x
+        } = (0, _.A)(e),
         C = (0, i.bG)([c.A], () => {
           var t, n;
           return null != (t = null == (n = c.A.getGuild(e)) ? true : n.features.has(E.GuildFeatures.GAME_SERVERS)) && t
@@ -151,7 +151,7 @@ function S(e) {
                 }
               }
             }
-          }(e, t, _);
+          }(e, t, x);
           if (null != r) return r;
           let l = function(e, t, n, r) {
             if ((0, p.TS)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, o.zs)(s.V.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
@@ -160,9 +160,9 @@ function S(e) {
                 (0, o._$)(s.V.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
               }
             }
-          }(e, C, _, S);
+          }(e, C, x, S);
           if (null != l) return l
-        }, [e, t, y, P, _, C, S]),
+        }, [e, t, y, P, x, C, S]),
         [R, D] = (0, O.ru)(null != w);
       return r.useMemo(() => {
         if (null != t) {

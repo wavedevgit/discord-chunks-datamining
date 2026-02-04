@@ -70,9 +70,9 @@ function P(e) {
       channelViewSource: R = "Split View"
     } = e,
     D = (0, a.bG)([O.A], () => O.A.getChannel(P)),
-    L = (0, a.bG)([x.A], () => x.A.getGuild(null == D ? true : D.getGuildId())),
+    L = (0, a.bG)([_.A], () => _.A.getGuild(null == D ? true : D.getGuildId())),
     M = (0, g.Ay)(D);
-  t = D, i = (0, a.bG)([_.A], () => null != t && !s().isEmpty(_.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
+  t = D, i = (0, a.bG)([x.A], () => null != t && !s().isEmpty(x.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
     i && null != t && (o.h.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: t.parent_id

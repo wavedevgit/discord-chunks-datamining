@@ -21,57 +21,57 @@ function m(e) {
     guildId: n,
     userId: m,
     containerDimensions: g
-  } = e, y = (0, a.bG)([o.A], () => o.A.useReducedMotion), [b, _] = l.useState([]), h = b.length < 50;
-  l.useEffect(() => {
+  } = e, y = (0, a.bG)([s.A], () => s.A.useReducedMotion), [b, h] = i.useState([]), A = b.length < 50;
+  i.useEffect(() => {
     function e(e) {
       let {
         channelId: r,
-        userId: l,
+        userId: i,
         emoji: a,
-        animationType: s,
-        animationId: o
+        animationType: o,
+        animationId: s
       } = e;
-      if (null != m && m !== l) return;
-      let d = null != a && null != s && null != o;
-      if (r === t && !y && h && d) {
+      if (null != m && m !== i) return;
+      let d = null != a && null != o && null != s;
+      if (r === t && !y && A && d) {
         let e = (0, u.Br)(a),
           r = null != a.id && !a.animated,
           d = {
-            id: (0, i.A)(),
-            animationType: s,
-            animationId: o,
+            id: (0, l.A)(),
+            animationType: o,
+            animationId: s,
             shouldResize: r,
             url: e,
-            userId: l
+            userId: i
           };
-        _(e => [...e, d]), c.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+        h(e => [...e, d]), c.Ay.trackWithMetadata(f.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
       }
     }
-    return s.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
-      s.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
+    return o.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
+      o.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, m, y, h]);
-  let A = l.useCallback(e => {
-    _(t => {
+  }, [t, n, m, y, A]);
+  let _ = i.useCallback(e => {
+    h(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
   return y ? null : (0, r.jsx)("div", {
-    className: f.Y,
+    className: p.Y,
     style: {
       width: g.width
     },
     children: (0, r.jsx)("div", {
-      className: f.z,
+      className: p.z,
       children: b.map(e => (0, r.jsx)(d.A, {
         containerDimensions: g,
         effect: e,
-        onComplete: A
+        onComplete: _
       }, e.id))
     })
   })

@@ -31,27 +31,27 @@ let E = () => {
       sortDirection: n
     } = e;
     return t === o.$.RECENCY ? {
-      label: _.intl.string(_.t["51Bhiz"]),
+      label: h.intl.string(h.t["51Bhiz"]),
       value: "recent",
       id: "recent"
     } : t === o.$.PRICE ? n === i.A.ASC ? {
-      label: _.intl.string(_.t.m8RVU2),
+      label: h.intl.string(h.t.m8RVU2),
       value: "price-asc",
       id: "price-asc"
     } : {
-      label: _.intl.string(_.t.zBwQJO),
+      label: h.intl.string(h.t.zBwQJO),
       value: "price-desc",
       id: "price-desc"
     } : t === o.$.RELEVANCE ? {
-      label: _.intl.string(_.t["XoeT/z"]),
+      label: h.intl.string(h.t["XoeT/z"]),
       value: "relevance",
       id: "relevance"
     } : {
-      label: _.intl.string(_.t.Y68e5p),
+      label: h.intl.string(h.t.Y68e5p),
       value: "popularity",
       id: "popularity"
     }
-  }, []), x = l.useCallback(e => ({
+  }, []), S = l.useCallback(e => ({
     recent: {
       sortType: o.$.RECENCY,
       sortDirection: i.A.DESC
@@ -72,8 +72,8 @@ let E = () => {
       sortType: o.$.RELEVANCE,
       sortDirection: i.A.DESC
     }
-  })[e], []), S = l.useCallback(e => {
-    let n = A(x(e));
+  })[e], []), x = l.useCallback(e => {
+    let n = A(S(e));
     u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == s ? true : s.sessionId,
       page_section: null == s ? true : s.pageSection,
@@ -82,17 +82,17 @@ let E = () => {
       page_size: null == s ? true : s.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(x(e))
-  }, [s, A, x, t]), O = A(e);
+    }), t(S(e))
+  }, [s, A, S, t]), O = A(e);
   return (0, r.jsx)("div", {
     className: a()(b.k, {
-      [h.T3]: E
+      [_.T3]: E
     }),
     children: (0, r.jsx)(c.l6P, {
-      label: _.intl.string(_.t.uaX705),
+      label: h.intl.string(h.t.uaX705),
       hideLabel: true,
       options: C.map(A),
-      onSelectionChange: S,
+      onSelectionChange: x,
       value: O.value,
       selectionMode: "single",
       fullWidth: true

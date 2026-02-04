@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 471271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => A
@@ -24,7 +24,7 @@ function A(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: A
-  } = e, b = (0, f.A)(), [_, y] = l.useState(false), [v, E] = l.useState(false), [O, C] = l.useState(false), [S, x] = l.useState(false), [j, I] = l.useState(false), T = _ || v || O, N = l.useCallback(async e => {
+  } = e, b = (0, f.A)(), [_, y] = l.useState(false), [E, v] = l.useState(false), [O, C] = l.useState(false), [S, x] = l.useState(false), [j, I] = l.useState(false), T = _ || E || O, N = l.useCallback(async e => {
     if (!T) {
       y(true);
       try {
@@ -38,19 +38,19 @@ function A(e) {
     }
   }, [T, n, A]), P = l.useCallback(async e => {
     if (!T) {
-      E(true);
+      v(true);
       try {
         await (0, h.UK)(e), I(true), null == r || r()
       } catch (t) {
         let e = new a.LG(t);
         null == A || A(e)
       } finally {
-        E(false)
+        v(false)
       }
     }
   }, [T, r, A]), w = l.useCallback(async e => {
     if (T) return;
-    E(true);
+    v(true);
     let t = i()(e, 50);
     try {
       for (let e of t) await (0, h.ST)(e);
@@ -59,7 +59,7 @@ function A(e) {
       let e = new a.LG(t);
       null == A || A(e)
     } finally {
-      E(false)
+      v(false)
     }
   }, [T, r, A]), R = l.useCallback(async e => {
     if (T) return;
@@ -125,7 +125,7 @@ function A(e) {
     rejectAll: w,
     markAsNotSpam: D,
     isAcceptLoading: _,
-    isRejectLoading: v,
+    isRejectLoading: E,
     isUserProfileLoading: O,
     isOptimisticAccepted: S,
     isOptimisticRejected: j

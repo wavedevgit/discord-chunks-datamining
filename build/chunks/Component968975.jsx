@@ -28,9 +28,9 @@ function y(e) {
     onClick: y,
     wishlistId: O,
     cardSize: j,
-    title: x
+    title: _
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: x
   } = (0, s.Ay)(), {
     trackUserProfileWishlistAction: v
   } = (0, h.NJ)(), E = (0, c.G)("user_profile_sidebar_wishlist_breadcrumb"), C = (0, l.useCallback)(e => {
@@ -74,7 +74,7 @@ function y(e) {
         index: r,
         moreCount: s ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: _,
+        analyticsLocations: x,
         onViewWishlist: y,
         wishlistId: O,
         showTypeTooltip: I,
@@ -83,7 +83,7 @@ function y(e) {
         index: r,
         moreCount: s ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: _,
+        analyticsLocations: x,
         onViewWishlist: y,
         wishlistId: O,
         showTypeTooltip: I,
@@ -95,7 +95,7 @@ function y(e) {
       singleItem: r,
       productLines: l
     }
-  }, [t, n, _, y, O, j, S, I]), w = (0, g.A)({
+  }, [t, n, x, y, O, j, S, I]), w = (0, g.A)({
     wishlistId: null != O ? O : null,
     onAction: C,
     productLines: P
@@ -105,20 +105,20 @@ function y(e) {
     totalUnownedWishlistItems: t.length,
     wishlistOwner: n,
     wishlistId: O,
-    analyticsLocations: _,
+    analyticsLocations: x,
     onViewWishlist: y,
     showTypeTooltip: I
-  }, e.skuId)) : null, [_, E, y, n, I, t.length, S, O]);
+  }, e.skuId)) : null, [x, E, y, n, I, t.length, S, O]);
   if (0 === N.length) return null;
   let D = N;
   return null != T && ((0, u.L)(T) ? D = (0, m.z)(T, {
     profileOwner: n,
-    analyticsLocations: _,
+    analyticsLocations: x,
     wishlistId: O,
     onViewWishlist: y
   }) : (0, d.$)(T) && (D = (0, o.A)(T, {
     profileOwner: n,
-    analyticsLocations: _,
+    analyticsLocations: x,
     wishlistId: O,
     onViewWishlist: y
   }))), (0, r.jsxs)(f.A.Overlay, {
@@ -128,7 +128,7 @@ function y(e) {
       className: A.wx,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
-        children: null != x ? x : b.intl.string(b.t["7lZ31J"])
+        children: null != _ ? _ : b.intl.string(b.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
       className: A.vY,

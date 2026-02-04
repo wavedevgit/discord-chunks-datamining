@@ -1,4 +1,4 @@
-/** Chunk was on 51693 **/
+/** Chunk was on 59569 **/
 /** chunk id: 605694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => $
@@ -260,7 +260,7 @@ function F(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return B(t);
+  if (Array.isArray(t)) return H(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -282,12 +282,12 @@ function F(e) {
           for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(H, G(L({}, l), {
-        body: B(n)
+      return (0, r.jsx)(B, G(L({}, l), {
+        body: H(n)
       }));
     case "GRID":
       return (0, r.jsx)(X, {
-        children: B(t.children)
+        children: H(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(K, {
@@ -309,11 +309,11 @@ function W(e, t) {
   }, t)
 }
 
-function B(e) {
+function H(e) {
   return e.map((e, t) => W(e, t))
 }
 
-function H(e) {
+function B(e) {
   let {
     title: t,
     body: n,
@@ -494,7 +494,7 @@ function Q(e) {
       children: [e.showSuggestedForYou && (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: R.intl.string(R.t.zMUr6Z)
+        children: k.intl.string(k.t.zMUr6Z)
       }), (0, r.jsx)(u.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
@@ -518,7 +518,7 @@ let $ = Object.assign(function(e) {
   var t, n;
   let i, o, d, b, h, {
       trackUserProfileAction: x
-    } = (0, C.NJ)(),
+    } = (0, N.NJ)(),
     {
       user: v,
       widget: _,
@@ -527,11 +527,11 @@ let $ = Object.assign(function(e) {
     } = e,
     M = (0, c.bG)([E.default], () => E.default.getId()) === v.id,
     W = (0, y.h)(_.applicationId),
-    B = null == W ? true : W.getIconURL(16),
-    H = (0, c.bG)([S.A], () => null != W ? S.A.getGameByApplication(W) : null),
+    H = null == W ? true : W.getIconURL(16),
+    B = (0, c.bG)([S.A], () => null != W ? S.A.getGameByApplication(W) : null),
     X = (0, j.A)({
       location: "UserProfileApplicationWidget",
-      applicationId: null == H ? true : H.id,
+      applicationId: null == B ? true : B.id,
       source: O.Ob.UserProfile,
       sourceUserId: v.id,
       trackEntryPointImpression: true
@@ -555,9 +555,9 @@ let $ = Object.assign(function(e) {
     }, [V, Y, x, _.applicationId, $]),
     et = null == I && K && !z && V,
     en = (0, r.jsxs)(r.Fragment, {
-      children: [null != B ? (0, r.jsx)("img", {
+      children: [null != H ? (0, r.jsx)("img", {
         className: D.Z2,
-        src: B,
+        src: H,
         width: 16,
         height: 16,
         alt: ""
@@ -570,7 +570,7 @@ let $ = Object.assign(function(e) {
         })
       })]
     }),
-    er = null == H ? (0, r.jsx)("div", {
+    er = null == B ? (0, r.jsx)("div", {
       className: D.qd,
       children: en
     }) : (0, r.jsx)(u.DUT, {
@@ -582,7 +582,7 @@ let $ = Object.assign(function(e) {
       isLoading: el,
       hasData: ei,
       components: ea
-    } = (t = v.id, n = _.applicationId, i = (0, m.A)(), o = (0, c.bG)([P.A], () => P.A.getUserIdentityByApplication(t, n)), d = (0, c.bG)([N.A], () => N.A.getApplicationWidgetConfig(n)), b = (0, c.bG)([P.A, N.A], () => null == P.A.getUserIdentities(t) || null == N.A.applicationWidgetConfigs), h = l.useMemo(() => {
+    } = (t = v.id, n = _.applicationId, i = (0, m.A)(), o = (0, c.bG)([P.A], () => P.A.getUserIdentityByApplication(t, n)), d = (0, c.bG)([C.A], () => C.A.getApplicationWidgetConfig(n)), b = (0, c.bG)([P.A, C.A], () => null == P.A.getUserIdentities(t) || null == C.A.applicationWidgetConfigs), h = l.useMemo(() => {
       var e, t, n, r, l, a, c, u, f;
       if (null == d) return null;
       let p = U[d.widgetTemplateId];
@@ -656,13 +656,13 @@ let $ = Object.assign(function(e) {
       hasData: null != o,
       components: h
     });
-  return null == ea ? null : (0, r.jsxs)(k.A, G(L({}, e), {
+  return null == ea ? null : (0, r.jsxs)(R.A, G(L({}, e), {
     userId: v.id,
     widget: _,
     className: a()(D.Y5, A && D.aK),
     headerTitle: er,
     headerClassName: D.wx,
-    additionalManageWidgetMenuItems: null != H ? (0, r.jsx)(u.Drp, {
+    additionalManageWidgetMenuItems: null != B ? (0, r.jsx)(u.Drp, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: u._xR,
@@ -682,13 +682,13 @@ let $ = Object.assign(function(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: R.intl.string(R.t.z5K4Uv)
+          children: k.intl.string(k.t.z5K4Uv)
         })]
       }), et ? (0, r.jsx)(Q, {
-        heading: R.intl.string(R.t.UDPRLO),
-        content: R.intl.string(R.t["OW/2al"]),
+        heading: k.intl.string(k.t.UDPRLO),
+        content: k.intl.string(k.t["OW/2al"]),
         buttons: (0, r.jsx)(u.Button, {
-          text: R.intl.string(R.t.S0W8Z5),
+          text: k.intl.string(k.t.S0W8Z5),
           onClick: ee
         })
       }) : I]

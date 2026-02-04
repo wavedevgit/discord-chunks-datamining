@@ -3,7 +3,7 @@
 require.d(exports, {
   A: () => y
 }), require("./65821.js"), require("./896048.js");
-var r, l, Chunk627968 = require("./627968.js"),
+var r, i, Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk499979 = require("./499979.js"),
   Chunk451988 = require("./451988.js"),
@@ -30,8 +30,8 @@ function d(e) {
   }
   return e
 }
-var p = ((r = p || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
-  f = ((l = f || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
+var f = ((r = f || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
+  p = ((i = p || {}).START = "START", i.END = "END", i.TIME = "TIME", i);
 let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     time: t
   }, n)),
@@ -95,26 +95,37 @@ let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     },
     USER_ACTIVITY: {
       START: {
-        [Chunk499979.pJ.SECONDS]: () => c.intl.string(c.t["ahzZr+"]),
+        [Chunk499979.pJ.SECONDS]: function(e, t) {
+          return arguments.length > 2 && true !== arguments[2] && arguments[2], c.intl.string(c.t["ahzZr+"])
+        },
         [Chunk499979.pJ.MINUTES]: function(e, t) {
-          let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+          let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+            r = arguments.length > 3 && true !== arguments[3] && arguments[3];
           return n ? c.intl.formatToPlainString(c.t["03mIHW"], {
+            time: e
+          }) : r ? c.intl.formatToPlainString(c.t.w5w79N, {
             time: e
           }) : c.intl.formatToPlainString(c.t["vQml+P"], {
             time: e
           })
         },
         [Chunk499979.pJ.HOURS]: function(e, t) {
-          let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+          let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+            r = arguments.length > 3 && true !== arguments[3] && arguments[3];
           return n ? c.intl.formatToPlainString(c.t.eNoooU, {
+            time: e
+          }) : r ? c.intl.formatToPlainString(c.t.EPkGyE, {
             time: e
           }) : c.intl.formatToPlainString(c.t["4Wq+6x"], {
             time: e
           })
         },
         [Chunk499979.pJ.DAYS]: function(e, t) {
-          let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+          let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+            r = arguments.length > 3 && true !== arguments[3] && arguments[3];
           return n ? c.intl.formatToPlainString(c.t["2rUo/p"], {
+            time: e
+          }) : r ? c.intl.formatToPlainString(c.t.V3g3dS, {
             time: e
           }) : c.intl.formatToPlainString(c.t["jN3/fR"], {
             time: e
@@ -187,11 +198,11 @@ function y(e) {
       } = this.props;
       if (null != n) return n / 1e3 / 60;
       let r = Date.now(),
-        l = 0;
-      return null != e ? l = r - e : null != t && (l = r - t), Math.abs(l) / 1e3 / 60
+        i = 0;
+      return null != e ? i = r - e : null != t && (i = r - t), Math.abs(i) / 1e3 / 60
     }
     getTimeUnit(e, t, n) {
-      let r = (0, s.Ul)(e, e => (function(e, t, n) {
+      let r = (0, o.Ul)(e, e => (function(e, t, n) {
         let r = g[n];
         if (null != r) {
           let n = r[t];
@@ -214,39 +225,40 @@ function y(e) {
       var t, n;
       let r = this.props,
         {
-          location: l,
+          location: i,
           messageProps: a,
-          isApplicationStreaming: o
+          isApplicationStreaming: s,
+          enableUserHoverActivities: c
         } = r,
-        c = function(e, t) {
+        u = function(e, t) {
           if (null == e) return {};
-          var n, r, l, i = {};
+          var n, r, i, l = {};
           if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-            return i
+            for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+            return l
           }
-          if (i = function(e, t) {
+          if (l = function(e, t) {
               if (null == e) return {};
-              var n, r, l = {},
-                i = Object.getOwnPropertyNames(e);
-              for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
-              return l
+              var n, r, i = {},
+                l = Object.getOwnPropertyNames(e);
+              for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
+              return i
             }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
-          return i
-        }(r, ["location", "messageProps", "isApplicationStreaming"]),
+            for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+          return l
+        }(r, ["location", "messageProps", "isApplicationStreaming", "enableUserHoverActivities"]),
         {
-          time: u
+          time: f
         } = this.state,
         p = this.getType();
       if (null == p) return null;
-      let f = this.getTimeUnit(u, l, p),
-        m = g[l][p];
-      if (null == m) return null;
-      let y = m[f],
-        b = Math.floor((0, s.eZ)(u, f));
-      return (0, i.jsx)(e, (t = d({}, c), n = n = {
-        children: null == y ? true : y(b, a, o)
+      let m = this.getTimeUnit(f, i, p),
+        y = g[i][p];
+      if (null == y) return null;
+      let b = y[m],
+        h = Math.floor((0, o.eZ)(f, m));
+      return (0, l.jsx)(e, (t = d({}, u), n = n = {
+        children: null == b ? true : b(h, a, s, c)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -259,7 +271,7 @@ function y(e) {
       }), t))
     }
     constructor(...e) {
-      super(...e), u(this, "timer", new o.IX), u(this, "state", {
+      super(...e), u(this, "timer", new s.IX), u(this, "state", {
         time: this.getDiff()
       }), u(this, "update", () => {
         this.setState({
@@ -267,5 +279,5 @@ function y(e) {
         })
       })
     }
-  }, u(n, "Locations", p), u(n, "Types", f), n
+  }, u(n, "Locations", f), u(n, "Types", p), n
 }

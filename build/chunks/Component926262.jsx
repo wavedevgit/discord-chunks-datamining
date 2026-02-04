@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 926262, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => m
@@ -48,10 +48,10 @@ function m(e) {
       type: b
     }, (0, o.dI)(A)))
   }, [b, A]);
-  let v = r.useCallback(() => {
+  let E = r.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
-    E = r.useCallback(() => {
+    v = r.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
     O = r.useRef(null);
@@ -76,7 +76,7 @@ function m(e) {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, l.jsxs)("form", {
       className: p.$,
-      onSubmit: v,
+      onSubmit: E,
       children: [(0, l.jsxs)("div", {
         className: p.rf,
         children: [null != y && (0, l.jsx)("div", {
@@ -100,7 +100,7 @@ function m(e) {
                 className: p.x6,
                 children: (0, l.jsx)(s.Button, {
                   variant: "secondary",
-                  onClick: E,
+                  onClick: v,
                   text: h.intl.string(h.t.fsBWmS)
                 })
               }), (0, l.jsx)(s.Text, {
@@ -114,7 +114,7 @@ function m(e) {
                 className: p.x6,
                 children: (0, l.jsx)(s.Button, {
                   variant: "primary",
-                  onClick: v,
+                  onClick: E,
                   text: h.intl.string(h.t.KJnHq3),
                   autoFocus: true
                 })

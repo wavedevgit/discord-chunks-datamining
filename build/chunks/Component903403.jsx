@@ -25,15 +25,15 @@ function b(e) {
   } = e, n = (0, i.bG)([c.A], () => c.A.useReducedMotion), s = (0, i.bG)([d.A], () => d.A.isFocused()), {
     catalogBannerStatic: g,
     catalogBannerAnimated: b,
-    catalogBannerRive: h
-  } = (0, m.MV)(t), E = l.useRef(null), v = null != h;
+    catalogBannerRive: _
+  } = (0, m.MV)(t), E = l.useRef(null), v = null != _;
   return (0, r.jsxs)("div", {
     ref: E,
-    className: a()(_.sW, {
-      [_.by]: v
+    className: a()(h.sW, {
+      [h.by]: v
     }),
     children: [v ? (0, r.jsx)(o._, {
-      src: h,
+      src: _,
       fit: "cover",
       alignment: "center-left",
       style: {
@@ -44,18 +44,18 @@ function b(e) {
       autoplay: true
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("img", {
-        className: _.ze,
+        className: h.ze,
         src: g,
         alt: t.name
       }), null != b && !n && s && (0, r.jsx)(u.A, {
         src: b,
-        className: _.tr,
+        className: h.tr,
         autoPlay: true,
         loop: true
       })]
     }), (0, r.jsx)(f.A, {
       category: t,
-      className: _.v0,
+      className: h.v0,
       daysRemainingText: p.t["8gsP5M"]
     })]
   })

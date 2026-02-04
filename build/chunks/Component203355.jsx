@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 203355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => z,
@@ -37,7 +37,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk566331 = require("./566331.jsx"),
   Chunk768088 = require("./768088.jsx"),
   Chunk256195 = require("./256195.jsx"),
-  k = (require("./729365.jsx"), require("./399849.jsx")),
+  L = (require("./729365.jsx"), require("./399849.jsx")),
   Chunk275731 = require("./275731.jsx"),
   Chunk345812 = require("./345812.js"),
   Chunk652215 = require("./652215.js"),
@@ -57,9 +57,9 @@ function W(e) {
     premiumIndicator: o
   } = e, c = (0, s.bG)([x.A], () => x.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, U.V)(a);
   return (0, l.jsxs)(l.Fragment, {
-    children: [n || r ? null : (0, l.jsx)(L.A, {
+    children: [n || r ? null : (0, l.jsx)(k.A, {
       participant: t
-    }), r || null == c || c.state === G.XYD.ENDED || c.state === G.XYD.FAILED ? null : (0, l.jsx)(E.A, {
+    }), r || null == c || c.state === G.XYD.ENDED || c.state === G.XYD.FAILED ? null : (0, l.jsx)(v.A, {
       size: m.Ay.Sizes.SMALL,
       className: V.Ok,
       participant: t,
@@ -77,8 +77,8 @@ function z(e) {
     onVideoResize: i,
     fit: m,
     popoutType: g,
-    width: E,
-    focused: L,
+    width: v,
+    focused: k,
     wrapperClassName: U,
     paused: W = false,
     idle: z = false,
@@ -91,14 +91,14 @@ function z(e) {
     defaultWatchMultipleStreams: en
   } = (0, _.W)({
     location: "StreamTile"
-  }), el = (0, s.bG)([x.A], () => x.A.getAllActiveStreams().length > 0), er = (0, s.bG)([N.A], () => N.A.isFocused()), ei = (null == et ? true : et.ownerId) === J, ea = ei && !er && g === f.N.NO_POPOUT, es = null != et ? (0, y.A)(et, Q, Q.id === J, ea) : null, eo = E < 195;
+  }), el = (0, s.bG)([x.A], () => x.A.getAllActiveStreams().length > 0), er = (0, s.bG)([N.A], () => N.A.isFocused()), ei = (null == et ? true : et.ownerId) === J, ea = ei && !er && g === f.N.NO_POPOUT, es = null != et ? (0, y.A)(et, Q, Q.id === J, ea) : null, eo = v < 195;
   (0, h.Ay)(() => {
     !el && (null == ee ? true : ee.isGuildStageVoice()) && !ei && ((0, d.A9)(X), u.A.updateStageStreamSize(X.channelId, false))
   });
   let ec = (0, A.u)(H.x.STREAM, t.user.id);
   if (r.useEffect(() => {
       K.info("Stream Tile State - activeStream: ".concat(null != et, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(T.A.supports(H.O5.VIDEO)))
-    }, [q, et, n]), Z) return (0, l.jsx)(k.A, {
+    }, [q, et, n]), Z) return (0, l.jsx)(L.A, {
     stream: t.stream,
     isSmall: eo,
     selected: n,
@@ -107,25 +107,25 @@ function z(e) {
   if ((null == et ? true : et.state) === G.XYD.ENDED) return (0, l.jsx)(R.A, {
     selected: n,
     stream: et,
-    width: E
+    width: v
   });
   if (null != ec || (null == et ? true : et.state) === G.XYD.FAILED) return (0, l.jsx)(D.A, {
     avError: null == ec ? true : ec.type,
     avErrorContext: ec,
     selected: n,
     stream: t.stream,
-    width: E
+    width: v
   });
   if (t.type === F.lp.HIDDEN_STREAM) return (0, l.jsx)(M.A, {
     selected: n,
     participant: t,
-    width: E
+    width: v
   });
   if (!(null != et && !n && null != q && T.A.supports(H.O5.VIDEO))) return (0, l.jsxs)("div", {
     className: a()(V.Qs, V.Rh, {
       [V.EX]: eo
     }),
-    children: [(0, l.jsx)(v.A, {
+    children: [(0, l.jsx)(E.A, {
       noImage: true,
       noText: true,
       className: a()(V.HL, {
@@ -138,7 +138,7 @@ function z(e) {
         children: (0, l.jsx)(c.Button, {
           variant: "secondary",
           size: eo ? "sm" : "md",
-          text: E < 175 ? B.intl.string(B.t.I6JG46) : B.intl.string(B.t["7Xq/nV"])
+          text: v < 175 ? B.intl.string(B.t.I6JG46) : B.intl.string(B.t["7Xq/nV"])
         })
       }), el && !en ? (0, l.jsx)("div", {
         className: a()(V.lO, V.EU),
@@ -161,14 +161,14 @@ function z(e) {
   });
   else return (0, l.jsxs)(l.Fragment, {
     children: [null != ee ? (0, l.jsx)(C.A, {
-      focused: L,
+      focused: k,
       channelId: ee.id,
       guildId: ee.guild_id,
       streamerId: Q.id,
       hasScreenMessage: null != es,
       stream: X
     }) : null, (0, l.jsx)(O.A, {
-      enableZoom: L,
+      enableZoom: k,
       onResize: i,
       wrapperClassName: a()(g !== f.N.CALL_TILE ? V.tN : true, U),
       className: V.Qs,
@@ -199,7 +199,7 @@ function z(e) {
       }
       return e
     }({
-      size: (0, P.J)(E)
+      size: (0, P.J)(v)
     }, es)) : null, (0, l.jsx)(w.A, {
       stream: X,
       popoutType: g

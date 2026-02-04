@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 66149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => _
@@ -85,12 +85,12 @@ let _ = Chunk64700.memo(function(e) {
     canUncollapse: p = true
   } = e, {
     hasJumpTarget: m = false
-  } = n, [_, y] = r.useState(m && p), [v, E] = r.useState(false), O = r.useCallback(() => {
-    p ? y(e => !e) : E(true)
+  } = n, [_, y] = r.useState(m && p), [E, v] = r.useState(false), O = r.useCallback(() => {
+    p ? y(e => !e) : v(true)
   }, [p]);
   if (r.useEffect(() => {
       m && p && y(true)
-    }, [m, p]), v) return null;
+    }, [m, p]), E) return null;
   let C = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, l.jsxs)("div", {
     className: a()({

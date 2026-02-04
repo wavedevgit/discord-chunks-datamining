@@ -27,7 +27,7 @@ let d = {
       setItemTypeFilter: n,
       reset: s,
       setCurrentTab: g
-    } = (0, i.v)(), f = r.useMemo(() => e !== c.G2.ORBS || t ? (0, c.dF)(e) ? c.G2.CATALOG : e : c.G2.HOME, [e, t]), [m, p] = r.useState(f), [_, b] = r.useState(c.Pf.VISIBLE);
+    } = (0, i.v)(), f = r.useMemo(() => e !== c.G2.ORBS || t ? (0, c.dF)(e) ? c.G2.CATALOG : e : c.G2.HOME, [e, t]), [m, p] = r.useState(f), [h, b] = r.useState(c.Pf.VISIBLE);
     r.useEffect(() => {
       g(m)
     }, [m, g]), r.useEffect(() => {
@@ -38,9 +38,9 @@ let d = {
       }
     }, [f, e, n, s]);
     let {
-      clearError: h
+      clearError: _
     } = (0, o.S)(), E = (0, l.W6)(), v = r.useCallback(async (e, t) => {
-      if (h(), e === c.G2.CATALOG) s();
+      if (_(), e === c.G2.CATALOG) s();
       else if ((0, c.dF)(e) && e !== m) {
         let t = d[e];
         null != t ? n(t) : s()
@@ -54,10 +54,10 @@ let d = {
           shallow: true
         }), b(c.Pf.VISIBLE)
       }
-    }, [E, n, s, m, h]);
+    }, [E, n, s, m, _]);
     return {
       selectedTab: m,
-      transitionState: _,
+      transitionState: h,
       transitionToTab: v
     }
   }

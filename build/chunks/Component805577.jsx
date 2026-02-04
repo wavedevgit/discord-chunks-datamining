@@ -52,7 +52,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk630765 = require("./630765.js"),
   Chunk513653 = require("./513653.js");
 
-function q(e) {
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -175,7 +175,7 @@ function en(e) {
 function er() {
   let e = D.hH.useSetting(),
     [t] = l.useState(() => {
-      let e = (0, _.rh)(J(q({}, (0, v.Ay)({
+      let e = (0, x.rh)(J(X({}, (0, v.Ay)({
         channelId: "1337",
         content: K.intl.formatToPlainString(K.t.bB80LC, {
           previewLink: "https://discord.com/accessibility"
@@ -200,7 +200,7 @@ function er() {
           className: z.hD,
           children: [H.clD.ONLINE, H.clD.DND, H.clD.IDLE].map(e => (0, r.jsx)(c.JsQ, {
             "aria-label": K.intl.string(K.t.lqaIxI),
-            src: X,
+            src: q,
             size: c._3J.SIZE_32,
             status: e
           }, e))
@@ -209,7 +209,7 @@ function er() {
         className: z.QS,
         children: (0, r.jsx)(C.A, {
           compact: e,
-          author: J(q({}, (0, E.p_)(t)), {
+          author: J(X({}, (0, E.p_)(t)), {
             colorString: "#DD80F4"
           }),
           message: t
@@ -369,7 +369,7 @@ function ed() {
     label: K.intl.string(W.default["2gFUEw"]),
     description: K.intl.format(W.default.L8U56h, {
       onClickOpenModal() {
-        (0, x.L)({
+        (0, _.L)({
           analyticsLocations: t
         })
       }

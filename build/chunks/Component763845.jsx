@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 763845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => E
+  A: () => v
 }), require("./896048.js"), require("./457529.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -21,7 +21,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk731854 = require("./731854.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk101937 = require("./101937.js");
-let v = () => {
+let E = () => {
     h.A.getMediaEngine().once(s.bg.ConnectionStats, e => {
       let t = JSON.stringify(Object.values(b.x).map(t => {
         let n = e.filter(e => {
@@ -42,7 +42,7 @@ let v = () => {
       (0, f.C)(t, () => (0, o.showToast)((0, o.createToast)(_.intl.string(_.t.t5VZ88), o.ToastType.SUCCESS)))
     })
   },
-  E = function(e) {
+  v = function(e) {
     (0, r.useEffect)(() => {
       p.default.track(A.HAw.OPEN_POPOUT, {
         type: "RTC Connection"
@@ -107,7 +107,7 @@ let v = () => {
         connectionTypeText: s
       } = e,
       f = d.Q_.getSetting(),
-      E = {
+      v = {
         [A.S7L.AWAITING_ENDPOINT]: _.intl.format(_.t.Eu2vUR, {
           url: A.qF7.STATUS
         }),
@@ -128,9 +128,9 @@ let v = () => {
         [A.S7L.RTC_DISCONNECTED]: _.intl.string(_.t.fOX25I)
       } [i];
     return (0, l.jsxs)(l.Fragment, {
-      children: ["function" == typeof E ? E() : (0, l.jsx)("p", {
+      children: ["function" == typeof v ? v() : (0, l.jsx)("p", {
         className: a()(y.xB, y.xJ),
-        children: E
+        children: v
       }), (0, l.jsx)("hr", {
         className: y.me
       }), (0, l.jsxs)("div", {
@@ -153,7 +153,7 @@ let v = () => {
             })]
           }), (0, l.jsxs)(o.MzZ, {
             className: a()(y.d3, y.ro),
-            onClick: v,
+            onClick: E,
             title: "Copy to clipboard",
             children: [_.intl.string(_.t["XEb+Sj"]), (0, l.jsx)(o.TdU, {
               size: "xxs",

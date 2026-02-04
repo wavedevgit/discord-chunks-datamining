@@ -1,10 +1,12 @@
-/** Chunk was on 55296 **/
+/** Chunk was on 88474 **/
 /** chunk id: 235052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => m
+  A: () => b,
+  u: () => y
 });
-var Chunk627968 = require("./627968.js"),
-  Chunk311907 = require("./311907.js"),
+var Chunk627968 = require("./627968.js");
+require("./64700.js");
+var Chunk311907 = require("./311907.js"),
   Chunk397927 = require("./397927.js"),
   Chunk308368 = require("./308368.js"),
   Chunk627363 = require("./627363.js"),
@@ -17,34 +19,42 @@ var Chunk627968 = require("./627968.js"),
   Chunk426127 = require("./426127.js"),
   Chunk985018 = require("./985018.jsx");
 
-function m(e, t) {
+function y(e, t, n) {
   let {
-    enableRequestToStream: n
-  } = d.m.useExperiment({
+    enableRequestToStream: r
+  } = u.m.useExperiment({
     guildId: t.guild_id,
-    location: "useRequestToStreamItem"
+    location: n
   }, {
     autoTrackExposure: false
-  }), m = (0, i.bG)([u.default], () => u.default.getId()), p = (0, A.A)(e, t.guild_id)[0], v = (0, i.bG)([s.A], () => null != s.A.getStreamForUser(e, t.getGuildId())), y = (0, o.YY)(null == p ? true : p.application_id).data, E = (0, c.A)(e, t.id);
-  return m !== e && null != p && null != y && n && E && !v ? (0, l.jsx)(r.Drp, {
-    id: "request-to-stream",
-    label: f.intl.format(b.default["8qq+H7"], {
-      applicationName: y.name
-    }),
-    action: function() {
+  }), l = (0, i.bG)([c.default], () => c.default.getId()), m = (0, f.A)(e, t.guild_id)[0], g = (0, i.bG)([s.A], () => null != s.A.getStreamForUser(e, t.getGuildId())), y = (0, o.YY)(null == m ? true : m.application_id).data, b = (0, d.A)(e, t.id);
+  return l !== e && null != m && null != y && r && b && !g ? {
+    playingApplication: y,
+    handleRequestToStream: function(n) {
       a.A.sendActivityInvite({
-        type: g.xL.STREAM_REQUEST,
+        type: p.xL.STREAM_REQUEST,
         channelId: t.id,
-        activity: p,
+        activity: m,
         content: "<@".concat(e, ">"),
-        location: "request to stream item",
+        location: n,
         targetUserId: e
       })
-    },
-    icon: r.ofK,
+    }
+  } : null
+}
+
+function b(e, t) {
+  let n = y(e, t, "useRequestToStreamItem");
+  return null == n ? null : (0, r.jsx)(l.Drp, {
+    id: "request-to-stream",
+    label: g.intl.format(m.default["8qq+H7"], {
+      applicationName: n.playingApplication.name
+    }),
+    action: () => n.handleRequestToStream("request to stream item"),
+    icon: l.ofK,
     leadingAccessory: {
       type: "icon",
-      icon: r.ofK
+      icon: l.ofK
     }
-  }, "request-to-stream") : null
+  }, "request-to-stream")
 }

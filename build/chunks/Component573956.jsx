@@ -1,7 +1,7 @@
 /** Chunk was on 44669 **/
 /** chunk id: 573956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => _
+  G: () => x
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -24,10 +24,10 @@ var Chunk627968 = require("./627968.js"),
   Chunk790782 = require("./790782.js"),
   Chunk985018 = require("./985018.jsx");
 
-function _(e) {
+function x(e) {
   let {
     guild: t,
-    selected: _
+    selected: x
   } = e, v = (0, p.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([h.A], () => Array.from(h.A.getNewChannelIds(t.id)).filter(e => h.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([f.Ay], () => f.Ay.hasUnread(t.id, j.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, f.Ay], () => {
     let e = d.A.lastFetchedAt(t.id),
       n = f.Ay.lastMessageId(t.id, j.P.GUILD_ONBOARDING_QUESTION);
@@ -75,9 +75,9 @@ function _(e) {
       }
     })
   }, [t]), w = null;
-  return E && !S && !I || _ || N || (w = (0, r.jsx)(o.LpS, {
+  return E && !S && !I || x || N || (w = (0, r.jsx)(o.LpS, {
     color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
-    text: x.intl.string(x.t.y2b7CA)
+    text: _.intl.string(_.t.y2b7CA)
   })), (0, r.jsx)(A.G, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.kiI, {
@@ -85,8 +85,8 @@ function _(e) {
       color: "currentColor",
       className: e
     }),
-    text: v ? x.intl.string(x.t.h9mGOP) : x.intl.string(x.t.et6wav),
-    selected: _,
+    text: v ? _.intl.string(_.t.h9mGOP) : _.intl.string(_.t.et6wav),
+    selected: x,
     onClick: T,
     onContextMenu: P,
     trailing: w

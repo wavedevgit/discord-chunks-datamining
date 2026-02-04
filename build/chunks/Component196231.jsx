@@ -18,28 +18,28 @@ var Chunk627968 = require("./627968.js"),
   Chunk201073 = require("./201073.js");
 let p = e => {
   var t, n, p;
-  let _, {
+  let h, {
     category: b,
-    subblock: h,
+    subblock: _,
     badgeText: E,
     handleTransition: v
   } = e;
-  null != h && (_ = null == (p = c.A.getCategoryByStoreListingId(null == h ? true : h.categoryStoreListingId)) ? true : p.skuId);
-  let C = null != (t = null != _ ? _ : null == b ? true : b.skuId) ? t : "",
+  null != _ && (h = null == (p = c.A.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : p.skuId);
+  let C = null != (t = null != h ? h : null == b ? true : b.skuId) ? t : "",
     {
       handleCardVisibilityChange: A
     } = (0, u.Z)(C, "home", "marketing featured block"),
-    x = (0, d.s4)(b, h),
-    S = l.useRef(null),
-    O = null == h ? true : h.bodyText,
+    S = (0, d.s4)(b, _),
+    x = l.useRef(null),
+    O = null == _ ? true : _.bodyText,
     y = (0, o.uM)();
   return (0, r.jsx)(s.L, {
-    innerRef: S,
+    innerRef: x,
     onChange: A,
     threshold: 0,
     children: (0, r.jsxs)(a.DUT, {
       className: m.oT,
-      innerRef: S,
+      innerRef: x,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,8 +57,8 @@ let p = e => {
           })
         }
         return e
-      }({}, null != x && {
-        backgroundImage: "url(".concat(x, ")")
+      }({}, null != S && {
+        backgroundImage: "url(".concat(S, ")")
       }),
       onClick: () => {
         v({
@@ -87,7 +87,7 @@ let p = e => {
           lineClamp: 4,
           className: m.BN,
           style: {
-            color: null != (n = null == h ? true : h.bannerTextColor) ? n : "white"
+            color: null != (n = null == _ ? true : _.bannerTextColor) ? n : "white"
           },
           variant: "heading-md/medium",
           children: O

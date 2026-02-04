@@ -48,52 +48,52 @@ function E(e) {
 }
 let C = {
   [Chunk652215.WTw.INSTALLING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
+    [Chunk290987.pJ.NONE]: (e, t) => _.intl.formatToPlainString(_.t["p+2sE+"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => _.intl.formatToPlainString(_.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => _.intl.formatToPlainString(_.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
+    [Chunk290987.pJ.HOURS]: (e, t) => _.intl.formatToPlainString(_.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk652215.WTw.UPDATING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["6F9QzC"], {
+    [Chunk290987.pJ.NONE]: (e, t) => _.intl.formatToPlainString(_.t["6F9QzC"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["2OVgVq"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => _.intl.formatToPlainString(_.t["2OVgVq"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.mgQg1L, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => _.intl.formatToPlainString(_.t.mgQg1L, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t.aTdq44, {
+    [Chunk290987.pJ.HOURS]: (e, t) => _.intl.formatToPlainString(_.t.aTdq44, {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk652215.WTw.REPAIRING]: {
-    [Chunk290987.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
+    [Chunk290987.pJ.NONE]: (e, t) => _.intl.formatToPlainString(_.t["p+2sE+"], {
       name: e
     }),
-    [Chunk290987.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
+    [Chunk290987.pJ.SECONDS]: (e, t) => _.intl.formatToPlainString(_.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
+    [Chunk290987.pJ.MINUTES]: (e, t) => _.intl.formatToPlainString(_.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk290987.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
+    [Chunk290987.pJ.HOURS]: (e, t) => _.intl.formatToPlainString(_.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
@@ -106,7 +106,7 @@ class S extends Chunk64700.PureComponent {
       isPaused: t
     } = this.props;
     if (e.type === j.WTw.UPDATING || e.type === j.WTw.REPAIRING || e.type === j.WTw.INSTALLING) {
-      if (t) return x.intl.string(x.t["5oxtFS"]);
+      if (t) return _.intl.string(_.t["5oxtFS"]);
       else if (e.stage === j.OQC.PATCHING || e.stage === j.OQC.REPAIRING) return (0, l.jsx)(O.A, {
         getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
@@ -117,7 +117,7 @@ class S extends Chunk64700.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != e ? e : x.intl.string(x.t.cw57ar)
+    return null != e ? e : _.intl.string(_.t.cw57ar)
   }
   constructor(...e) {
     super(...e), v(this, "renderProgressBody", (e, t) => {
@@ -169,7 +169,7 @@ class I extends(r = Chunk64700.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? x.intl.string(x.t.cw57ar) : (0, l.jsx)(S, {
+    return null == e || null == t ? _.intl.string(_.t.cw57ar) : (0, l.jsx)(S, {
       application: e,
       state: t,
       isPaused: n
@@ -187,7 +187,7 @@ class I extends(r = Chunk64700.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(n, _.L),
+      className: a()(n, x.L),
       onClick: this.handleOnClick,
       children: (0, l.jsx)(p.m, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
@@ -200,7 +200,7 @@ class I extends(r = Chunk64700.PureComponent) {
             children: (0, l.jsx)(h.s3U, {
               size: "md",
               color: "currentColor",
-              className: _.k
+              className: x.k
             })
           })
         })

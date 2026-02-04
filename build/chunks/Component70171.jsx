@@ -1,7 +1,7 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 70171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => E
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -52,13 +52,13 @@ let A = {
     duration: 1e3
   };
 
-function v(e) {
+function E(e) {
   let {
     stream: t,
     popoutType: n
   } = e, {
-    reducedMotion: v
-  } = r.useContext(s.CZ), E = (0, r.useRef)(null), O = h.K.getState().clipsButtonRef, C = (0, p._z)(t), S = (0, a.bG)([u.A], () => u.A.getActiveAnimation()), x = (0, a.yK)([u.A], () => u.A.getStreamClipAnimations(C)), j = (0, r.useRef)(true);
+    reducedMotion: E
+  } = r.useContext(s.CZ), v = (0, r.useRef)(null), O = h.K.getState().clipsButtonRef, C = (0, p._z)(t), S = (0, a.bG)([u.A], () => u.A.getActiveAnimation()), x = (0, a.yK)([u.A], () => u.A.getStreamClipAnimations(C)), j = (0, r.useRef)(true);
   r.useEffect(() => () => {
     (0, d.MI)(C)
   }, [C]);
@@ -97,10 +97,10 @@ function v(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, v.enabled ? I(e) : (() => {
+      }, E.enabled ? I(e) : (() => {
         var e;
         if (n !== c.N.NO_POPOUT) return A;
-        let t = null == (e = E.current) ? true : e.getBoundingClientRect();
+        let t = null == (e = v.current) ? true : e.getBoundingClientRect();
         return null == t ? A : {
           width: t.width,
           height: t.height,
@@ -114,7 +114,7 @@ function v(e) {
       }, I(e))],
       leave: g({
         opacity: 0
-      }, !v.enabled && g({
+      }, !E.enabled && g({
         height: 0,
         width: 0
       }, (() => {
@@ -123,7 +123,7 @@ function v(e) {
           left: j.current.left + 12
         }
       })())),
-      config: v.enabled ? y : _,
+      config: E.enabled ? y : _,
       onRest: (e, t) => {
         null != t.item && null != x.find(e => e.timestamp === t.item.timestamp) && (0, d.MI)(C, t.item.timestamp)
       }
@@ -131,7 +131,7 @@ function v(e) {
   return (0, i.useChain)([T, P], [0, .1], 3e3), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
       className: m.R,
-      ref: E
+      ref: v
     }), N((e, t) => null != t && (0, l.jsx)(i.animated.div, {
       className: m.w5,
       style: e

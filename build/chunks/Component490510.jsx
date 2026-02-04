@@ -236,7 +236,7 @@ class U extends Chunk64700.PureComponent {
       id: "activate-overlay-region-text-widget",
       value: N.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: P.intl.string(P.t.hurHWo)
-    })), t && ((0, E.isWindows)() || x.A.getUseSystemScreensharePicker()) && s.push({
+    })), t && ((0, E.isWindows)() || _.A.getUseSystemScreensharePicker()) && s.push({
       id: "toggle-go-live-streaming",
       value: N.hCu.TOGGLE_GO_LIVE_STREAMING,
       label: P.intl.string(P.t.ybdjJD)
@@ -417,8 +417,8 @@ function V() {
   l.useEffect(() => (d.A.enableAll(false), () => {
     d.A.enableAll(true)
   }), []);
-  let e = (0, a.bG)([_.Ay], () => _.Ay.getState()),
-    t = (0, a.bG)([x.A], () => (0, b.A)(x.A)),
+  let e = (0, a.bG)([x.Ay], () => x.Ay.getState()),
+    t = (0, a.bG)([_.A], () => (0, b.A)(_.A)),
     n = (0, a.bG)([O.A], () => O.A.isSupported),
     i = (0, m.sw)(),
     s = (0, m.BW)();

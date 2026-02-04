@@ -31,9 +31,9 @@ function v(e) {
     users: n
   } = e;
   return 0 === n.length ? null : (0, r.jsxs)("div", {
-    className: _.nM,
+    className: x.nM,
     children: [(0, r.jsx)(t, {
-      className: _.RI,
+      className: x.RI,
       color: "currentColor"
     }), (0, r.jsx)(d.Ay, {
       users: n,
@@ -51,7 +51,7 @@ function E(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: x.intl.string(x.t.fpKdS1)
+    children: _.intl.string(_.t.fpKdS1)
   }) : (0, r.jsx)(g.A, {
     muteConfig: t,
     className: n
@@ -59,7 +59,7 @@ function E(e) {
 }
 
 function C(e) {
-  let t, n, i, o, d, h, g, x, C, S, I, N, T, {
+  let t, n, i, o, d, h, g, _, C, S, I, N, T, {
       channel: P
     } = e,
     w = P.id,
@@ -70,7 +70,7 @@ function C(e) {
     } = (t = P.id, n = (0, a.yK)([A.A], () => A.A.getBlockedOrIgnoredIDs()), i = (0, a.bG)([f.A], () => f.A.getUserAffinitiesMap(), []), o = (0, a.yK)([u.Ay, O.default], () => u.Ay.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => O.default.getUser(e)), [t]), d = l.useMemo(() => (0, p.aw)(o, n), [o, n]), h = l.useMemo(() => (0, m.L)(d, i, "DirectMessageTooltip - activityUsers"), [d, i]), g = (0, a.yK)([b.A, O.default], () => {
       let e = b.A.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => O.default.getUser(e));
       return (0, p.aw)(e, n)
-    }, [t, n]), x = l.useMemo(() => (0, p.aw)(g, n), [g, n]), C = l.useMemo(() => (0, m.L)(x, i, "DirectMessageTooltip - activityUsers"), [x, i]), S = l.useMemo(() => C.filter(e => !h.some(t => t.id === e.id)), [C, h]), I = (0, a.yK)([j.Ay], () => {
+    }, [t, n]), _ = l.useMemo(() => (0, p.aw)(g, n), [g, n]), C = l.useMemo(() => (0, m.L)(_, i, "DirectMessageTooltip - activityUsers"), [_, i]), S = l.useMemo(() => C.filter(e => !h.some(t => t.id === e.id)), [C, h]), I = (0, a.yK)([j.Ay], () => {
       let e = j.Ay.getVoiceStatesForChannel(P).map(e => {
         let {
           user: t
@@ -105,8 +105,8 @@ function C(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [M, G, k, U ? (0, r.jsx)(E, {
       muteConfig: V,
-      className: s()(_.LM, {
-        [_.Sx]: null != M || null != G
+      className: s()(x.LM, {
+        [x.Sx]: null != M || null != G
       })
     }) : null]
   })
@@ -118,9 +118,9 @@ function S(e) {
   } = e, n = (0, h.Ay)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: s()(_.nM, _.Dl),
+      className: s()(x.nM, x.Dl),
       children: (0, r.jsx)("span", {
-        className: s()(_.cN, _.NT),
+        className: s()(x.cN, x.NT),
         children: n
       })
     }), (0, r.jsx)(C, {
@@ -134,7 +134,7 @@ function I(e) {
     channel: t,
     children: n
   } = e, i = (0, h.Ay)(t), s = l.useMemo(() => (0, r.jsx)("div", {
-    className: _.A_,
+    className: x.A_,
     children: (0, r.jsx)(S, {
       channel: t
     })

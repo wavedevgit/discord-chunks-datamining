@@ -2,11 +2,11 @@
 /** chunk id: 508654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ay: () => A,
-  BP: () => x,
+  BP: () => _,
   Qs: () => y,
   RO: () => E,
   WG: () => j,
-  ob: () => _,
+  ob: () => x,
   r2: () => v,
   vj: () => O
 }), require("./896048.js");
@@ -117,7 +117,7 @@ function j(e) {
     }
 }
 
-function x(e) {
+function _(e) {
   return (0, l.bG)([c.Ay, i.A, a.A], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.GUILD_EVENT_ACTIVE(e)).find(e => {
     if (e.entity_type === g.Ps.NONE || !(0, c.Fd)(e)) returnfalse;
     if (null == e.channel_id) returntrue;
@@ -126,7 +126,7 @@ function x(e) {
   }), [e])
 }
 
-function _(e) {
+function x(e) {
   return (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEventsByIndex(c.ej.CHANNEL_EVENT_UPCOMING(e)), [e])
 }
 

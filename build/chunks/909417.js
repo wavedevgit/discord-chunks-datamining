@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 909417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => d
@@ -34,9 +34,9 @@ function d(e) {
     }
   }, [f, A, b]), y = l.useCallback(e => {
     p && null != g && (e.stopPropagation(), m.current = true, _("handleMouseDown", g, e))
-  }, [_, g, p]), v = l.useCallback(e => {
-    p && null != g && (e.stopPropagation(), m.current && _("handleMouseMove", g, e))
   }, [_, g, p]), E = l.useCallback(e => {
+    p && null != g && (e.stopPropagation(), m.current && _("handleMouseMove", g, e))
+  }, [_, g, p]), v = l.useCallback(e => {
     p && null != g && (e.stopPropagation(), m.current = false, _("handleMouseUp", g, e))
   }, [_, g, p]), O = l.useCallback(e => {
     m.current && null != g && _("handleMouseEnter", g, e)
@@ -52,7 +52,7 @@ function d(e) {
     }, [g, p]),
     handleMouseDown: y,
     handleMouseEnter: O,
-    handleMouseMove: v,
-    handleMouseUp: E
+    handleMouseMove: E,
+    handleMouseUp: v
   }
 }

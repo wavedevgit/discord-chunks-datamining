@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 162792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => x
@@ -69,31 +69,31 @@ let S = Chunk64700.memo(function(e) {
     showReplySpine: w
   } = e, R = S.state === p.a.LOADED ? S.message : true, D = (0, A.X4)(R), M = o.m.useExperiment({
     location: "repliedMessage"
-  }).enabled, k = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = r.useMemo(() => {
+  }).enabled, L = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = r.useMemo(() => {
     if (null == R) return null;
     let e = (0, s.A)(R);
-    if (e.type === v.lAJ.USER_JOIN) return (0, a.$)(E.intl.formatToParts(m.A.getSystemMessageUserJoin(e.id), {
+    if (e.type === E.lAJ.USER_JOIN) return (0, a.$)(v.intl.formatToParts(m.A.getSystemMessageUserJoin(e.id), {
       username: null != D ? D.nick : e.author.username,
       usernameHook: e => e
     }));
-    if (e.type === v.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.$)((0, c.WC)({
+    if (e.type === E.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.$)((0, c.WC)({
       username: null != D ? D.nick : e.author.username,
       guildId: null == x ? true : x.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === v.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.$)((0, d.P)({
+    if (e.type === E.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.$)((0, d.P)({
       application: null == e ? true : e.application,
       username: null == D ? true : D.nick
     }));
-    if (e.type === v.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.$)((0, h.g6)({
+    if (e.type === E.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.$)((0, h.g6)({
       application: null == e ? true : e.application,
       username: null == D ? true : D.nick
     }));
-    if (e.type === v.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.$)((0, h.uk)({
+    if (e.type === E.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.$)((0, h.uk)({
       application: null == e ? true : e.application,
       username: null == D ? true : D.nick
     }));
-    else if (e.type === v.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : E.intl.string(E.t.wnn1Dc);
+    else if (e.type === E.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : v.intl.string(v.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
@@ -106,14 +106,14 @@ let S = Chunk64700.memo(function(e) {
           allowGameMentions: M
         }) : C(O({}, t), {
           formatInline: true,
-          allowHeading: k,
-          allowList: k,
+          allowHeading: L,
+          allowList: L,
           allowGameMentions: M
         });
       return (0, g.Ay)(e, n).content
     }
     return null
-  }, [R, D, x, k, M]), {
+  }, [R, D, x, L, M]), {
     isReplyAuthorBlocked: U,
     isReplyAuthorIgnored: G
   } = (0, i.cf)([f.A], () => ({
@@ -131,7 +131,7 @@ let S = Chunk64700.memo(function(e) {
     channel: x,
     baseAuthor: W,
     referencedMessage: S,
-    content: L,
+    content: k,
     compact: j,
     isReplyAuthorBlocked: U,
     isReplyAuthorIgnored: G,

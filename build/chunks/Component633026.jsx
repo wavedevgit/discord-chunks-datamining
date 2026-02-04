@@ -19,7 +19,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk695413 = require("./695413.jsx"),
   Chunk201073 = require("./201073.js");
 (0, Chunk993408.$b)(90);
-let _ = {
+let h = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -38,33 +38,33 @@ let _ = {
       onVisibilityChange: d
     } = e, b = (0, a.K)(e => {
       null == d || d(e)
-    }, .1, null != d), h = (0, o.bG)([u.default], () => u.default.getCurrentUser()), {
+    }, .1, null != d), _ = (0, o.bG)([u.default], () => u.default.getCurrentUser()), {
       bannerDisplayConfig: E,
       logoDisplayConfig: v,
       heroLogo: C,
       heroBannerStatic: A,
-      heroBannerAnimated: x
-    } = (0, g.Kk)(l), S = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
-    return null != h && (n || l !== _) ? (0, r.jsxs)("div", {
+      heroBannerAnimated: S
+    } = (0, g.Kk)(l), x = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
+    return null != _ && (n || l !== h) ? (0, r.jsxs)("div", {
       ref: b,
       className: p.os,
       children: [(0, r.jsx)("div", {
         className: s()(p.vK, {
-          [p.no]: S
+          [p.no]: x
         }),
         style: null != O ? {
           background: O
         } : true,
         children: null != A && (0, r.jsx)(f.A, {
           bannerStatic: A,
-          bannerAnimated: x,
-          isResponsive: S
+          bannerAnimated: S,
+          isResponsive: x
         })
       }), (0, r.jsxs)("div", {
         className: p.xX,
         children: [(0, r.jsx)("div", {
           className: s()(p.bC, {
-            [p.no]: S
+            [p.no]: x
           }),
           children: n ? (0, r.jsx)("div", {
             className: p.Hw

@@ -73,7 +73,7 @@ function ed(e) {
     parentAnalyticsLocation: n
   } = (0, h.Ay)(), i = (0, er.A)(t.id), [o, p] = (0, es.A)(t), g = (0, en.L)(t), f = (0, el.Vv)(), m = (0, el.tp)(), b = l.useRef(null), [y, O] = (0, c.V)("age-verification-stage-popover-dismissed", false), j = l.useContext(D.vG);
   if (i) return null;
-  let x = m && !y;
+  let _ = m && !y;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(M.l, {
       ref: b,
@@ -91,7 +91,7 @@ function ed(e) {
       },
       color: o ? "green" : true,
       disabled: !g && !o
-    }), x && (0, r.jsx)(s.AM, {
+    }), _ && (0, r.jsx)(s.AM, {
       targetElementRef: b,
       graphic: {
         type: "image",
@@ -158,10 +158,10 @@ function eg(e) {
     onSelect: n
   } = e, s = (0, E.Us)(), {
     canManageGuildEvent: c
-  } = (0, C.nr)(t), u = (0, i.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), d = (0, i.bG)([x.Ay], () => x.Ay.getGuildScheduledEvent(null == u ? true : u.guild_scheduled_event_id)), {
+  } = (0, C.nr)(t), u = (0, i.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), d = (0, i.bG)([_.Ay], () => _.Ay.getGuildScheduledEvent(null == u ? true : u.guild_scheduled_event_id)), {
     suppress: g
-  } = (0, T.A)(t), f = V.default.getId(), [m] = (0, es.A)(t), b = q.Ay.isModerator(f, t.id), O = (0, z.Ni)(t.id), j = c(d), {
-    parentAnalyticsLocation: _
+  } = (0, T.A)(t), f = V.default.getId(), [m] = (0, es.A)(t), b = X.Ay.isModerator(f, t.id), O = (0, z.Ni)(t.id), j = c(d), {
+    parentAnalyticsLocation: x
   } = (0, h.Ay)(), v = l.useRef(null), S = () => (function(e) {
     let {
       channel: t,
@@ -185,7 +185,7 @@ function eg(e) {
           "aria-label": eo.intl.string(eo.t["3Uj+2p"]),
           onClose: l,
           onSelect: n,
-          onInteraction: (0, y.s)("End Stage", _, {
+          onInteraction: (0, y.s)("End Stage", x, {
             entrypoint: ea.GK.CARET
           }),
           children: (0, r.jsx)(a.Drp, {
@@ -282,16 +282,16 @@ let eb = Chunk64700.memo(function(e) {
     mute: c
   } = (0, T.A)(t), u = (0, z.Ni)(t.id), d = (0, er.A)(t.id), p = (0, i.bG)([O.default], () => null != O.default.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: A,
-    enabled: x
-  } = (0, S.A)(), _ = (0, N.A)(t), {
+    enabled: _
+  } = (0, S.A)(), x = (0, N.A)(t), {
     limit: v,
     reachedLimit: E
   } = (0, I.A)(t), C = (0, i.bG)([Y.default], () => Y.default.getCurrentUser()), D = (0, i.bG)([B.A], () => (0, j.A)(B.A)), M = (0, i.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), G = (0, i.bG)([g.A], () => g.A.getStreamParticipants(t.id)[0], [t.id]), V = (0, Q.qT)(t.id), H = v > 0, K = E && !V || null != G && G.user.id !== (null == C ? true : C.id), W = (0, y.s)("AudioDeviceMenu", n, {
     entrypoint: ea.GK.CARET
-  }), X = l.useRef(null), q = l.useRef(null);
+  }), q = l.useRef(null), X = l.useRef(null);
   if (null == C) return null;
   let J = (0, r.jsx)(a.YNO, {
-    targetElementRef: X,
+    targetElementRef: q,
     renderPopout: e => {
       let {
         closePopout: t
@@ -317,10 +317,10 @@ let eb = Chunk64700.memo(function(e) {
         isShown: l
       } = t;
       return (0, r.jsx)(U.A, {
-        ref: X,
+        ref: q,
         centerButton: true,
-        hasPermission: _,
-        enabled: x,
+        hasPermission: x,
+        enabled: _,
         cameraUnavailable: A,
         onChange: P.SZ,
         onCameraUnavailable: R.A,
@@ -336,7 +336,7 @@ let eb = Chunk64700.memo(function(e) {
     children: [M && !s ? (0, r.jsxs)("div", {
       className: ec.qi,
       children: [(0, r.jsx)(a.YNO, {
-        targetElementRef: q,
+        targetElementRef: X,
         renderPopout: e => {
           let {
             closePopout: t
@@ -366,7 +366,7 @@ let eb = Chunk64700.memo(function(e) {
             isShown: l
           } = t;
           return (0, r.jsx)(k.A, {
-            ref: q,
+            ref: X,
             centerButton: true,
             onPopoutClick: n,
             selfMute: o,
@@ -385,7 +385,7 @@ let eb = Chunk64700.memo(function(e) {
         currentUser: C,
         exitFullScreen: () => null,
         canGoLive: D,
-        hasPermission: _,
+        hasPermission: x,
         disabled: K
       }) : null, (0, r.jsx)(em, {
         channelId: t.id
@@ -424,14 +424,14 @@ let ey = Chunk64700.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, l = (0, er.A)(t.id), s = (0, z.Ni)(t.id), a = (0, i.bG)([H.A], () => H.A.can(X.QY, t), [t]), o = (0, el.zU)(), c = (0, ei.A)(t.id), u = (0, i.bG)([g.A], () => null != t ? g.A.getSelectedParticipant(t.id) : null), d = !c && null == u;
+  } = e, l = (0, er.A)(t.id), s = (0, z.Ni)(t.id), a = (0, i.bG)([H.A], () => H.A.can(q.QY, t), [t]), o = (0, el.zU)(), c = (0, ei.A)(t.id), u = (0, i.bG)([g.A], () => null != t ? g.A.getSelectedParticipant(t.id) : null), d = !c && null == u;
   return n ? (0, r.jsx)(eA, {
     channel: t
   }) : l || s ? (0, r.jsxs)("div", {
     className: ec.My,
     children: [(0, r.jsxs)("div", {
       className: ec.Ac,
-      children: [d ? (0, r.jsx)(_.A, {
+      children: [d ? (0, r.jsx)(x.A, {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: ec.me

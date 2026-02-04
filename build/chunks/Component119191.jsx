@@ -21,23 +21,23 @@ var Chunk311907 = require("./311907.js"),
 
 function y(e, t, n) {
   let {
-    highlightAdminWarningIfElevated: l,
-    useFlexboxLayout: i,
+    highlightAdminWarningIfElevated: i,
+    useFlexboxLayout: l,
     keybindClassName: a
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-  return (0, r.jsx)(_, {
+  return (0, r.jsx)(h, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
-    highlightAdminWarningIfElevated: l,
-    useFlexboxLayout: i,
+    highlightAdminWarningIfElevated: i,
+    useFlexboxLayout: l,
     keybindClassName: a
   })
 }
 let b = (e, t) => (0, r.jsx)(r.Fragment, {
   children: m.intl.format(t, {
     keybind: e,
-    keybindHook: (t, n) => (0, r.jsx)(i.e7I, {
+    keybindHook: (t, n) => (0, r.jsx)(l.e7I, {
       shortcut: e,
       className: g.w,
       keyClassName: g.bx
@@ -45,41 +45,41 @@ let b = (e, t) => (0, r.jsx)(r.Fragment, {
   })
 });
 
-function _(e) {
+function h(e) {
   let {
     keybind: t,
     message: n,
     messageWithoutKeybind: y,
     highlightAdminWarningIfElevated: b = false,
-    useFlexboxLayout: _ = false,
-    keybindClassName: h
-  } = e, A = (0, d.F)(), v = (0, l.bG)([a.Ay], () => {
+    useFlexboxLayout: h = false,
+    keybindClassName: A
+  } = e, _ = (0, d.F)(), v = (0, i.bG)([a.Ay], () => {
     let e = a.Ay.getVisibleGame();
     return null != e && e.elevated && a.Ay.canShowAdminWarning
-  }), O = (0, o.NP)();
-  return v ? (0, r.jsx)(i.Text, {
+  }), O = (0, s.NP)();
+  return v ? (0, r.jsx)(l.Text, {
     variant: "text-xxs/semibold",
     color: b ? "text-feedback-warning" : "text-muted",
     children: O ? m.intl.format(m.t.MVS9pV, {
       onSettingsClick: e => {
-        e.stopPropagation(), (0, s.A)(true, true), (0, u.openUserSettings)(c.X.OVERLAY_PANEL, {
-          section: f.nc_.OVERLAY
+        e.stopPropagation(), (0, o.A)(true, true), (0, u.openUserSettings)(c.X.OVERLAY_PANEL, {
+          section: p.nc_.OVERLAY
         })
       }
     }) : m.intl.string(m.t.PIeSHF)
-  }) : A ? _ ? (0, r.jsx)("div", {
+  }) : _ ? h ? (0, r.jsx)("div", {
     className: g.FH,
     children: m.intl.format(n, {
       keybind: t,
-      keybindHook: e => (0, r.jsx)(p.G, {
+      keybindHook: e => (0, r.jsx)(f.G, {
         keybind: t,
-        className: h
+        className: A
       }, t.join("+"))
     })
   }) : (0, r.jsx)(r.Fragment, {
     children: m.intl.format(n, {
       keybind: t,
-      keybindHook: e => (0, r.jsx)(p.b, {
+      keybindHook: e => (0, r.jsx)(f.b, {
         keybind: t
       }, t.join("+"))
     })

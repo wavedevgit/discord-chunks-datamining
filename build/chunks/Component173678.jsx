@@ -39,8 +39,8 @@ function b(e, t) {
     wishlistId: f,
     showTypeTooltip: b = false,
     cardSize: A
-  } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, j = b && !O, x = O ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), _ = {
-    title: j ? h.intl.string(h.t.HFhcqh) : x,
+  } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, j = b && !O, _ = O ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), x = {
+    title: j ? h.intl.string(h.t.HFhcqh) : _,
     body: j ? h.intl.string(h.t.ilhtIa) : true,
     renderIcon: j ? a.GM : true,
     shouldShow: true
@@ -49,7 +49,7 @@ function b(e, t) {
     onCardClick: () => {
       O ? c() : m(e, i, s)
     },
-    tooltipConfig: _,
+    tooltipConfig: x,
     shouldScalePreview: y || !v,
     renderPreview: () => {
       if (y) {

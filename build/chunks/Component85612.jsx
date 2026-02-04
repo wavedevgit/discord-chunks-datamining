@@ -1,4 +1,4 @@
-/** Chunk was on 61344 **/
+/** Chunk was on 17869 **/
 /** chunk id: 85612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => K
@@ -93,7 +93,7 @@ function K(e) {
     orientation: d.R.VERTICAL_TOP
   });
   (0, F.useSyncMessages)(G.messagesLoader);
-  let X = (0, o.bG)([v.default], () => (0, O.ki)(v.default.getCurrentUser())),
+  let X = (0, o.bG)([E.default], () => (0, O.ki)(E.default.getCurrentUser())),
     Q = (0, o.bG)([j.A], () => j.A.getCatalogUpdateTime()),
     [$, ee] = r.useState(false),
     [et, en] = r.useState(false),
@@ -135,7 +135,7 @@ function K(e) {
     }),
     eo = r.useRef(null);
   (0, u.Ay)(() => {
-    (0, T.md)(), er && (0, S.tB)(), E.default.track(M.HAw.VOICE_FILTER_PICKER_OPENED, {
+    (0, T.md)(), er && (0, S.tB)(), v.default.track(M.HAw.VOICE_FILTER_PICKER_OPENED, {
       active_voice_filter_id: null != el ? el : null
     })
   });
@@ -175,7 +175,7 @@ function K(e) {
             height: n,
             totalHeight: l
           } = t.getListDimensions();
-          e < l - n || (en(true), E.default.track(M.HAw.VOICE_FILTER_PICKER_SCROLLED))
+          e < l - n || (en(true), v.default.track(M.HAw.VOICE_FILTER_PICKER_SCROLLED))
         },
         voiceListRef: eo
       }), !X && (0, l.jsxs)(s.animated.div, {
@@ -199,7 +199,7 @@ function K(e) {
             children: (0, l.jsx)(b.d, {
               showUpsell: true,
               text: F.intl.format(F.t.XMDm8z, {
-                nitroTierName: (0, C.Dd)(L.PremiumTypes.TIER_2),
+                nitroTierName: (0, C.Dd)(k.PremiumTypes.TIER_2),
                 onClick: () => (0, _.n)()
               }),
               button: F.intl.string(F.t.cRCCJ3),
@@ -220,7 +220,7 @@ function K(e) {
           location: "VoiceFiltersPopout",
           onOpen: () => {
             var e;
-            E.default.track(M.HAw.VOICE_FILTER_MIC_SELECTOR_OPENED, {
+            v.default.track(M.HAw.VOICE_FILTER_MIC_SELECTOR_OPENED, {
               active_voice_filter_id: null != (e = y.A.getActiveVoiceFilter()) ? e : null
             })
           },
@@ -241,7 +241,7 @@ function K(e) {
             renderOutputVolume: i,
             onClose: t,
             onInteraction: (0, m.s)("AudioDeviceMenu", q, {
-              entrypoint: k.GK.THREE_DOT
+              entrypoint: L.GK.THREE_DOT
             }),
             minimal: true
           }),
@@ -252,7 +252,7 @@ function K(e) {
             icon: c.FHP,
             onClick: t => {
               var n;
-              E.default.track(M.HAw.VOICE_FILTER_VOICE_SETTINGS_CLICKED, {
+              v.default.track(M.HAw.VOICE_FILTER_VOICE_SETTINGS_CLICKED, {
                 active_voice_filter_id: null != el ? el : null
               }), null == (n = e.onClick) || n.call(e, t)
             },
