@@ -43,7 +43,6 @@ function b(e) {
     recommendations: N,
     skuIdToUserIdsReasons: w
   } = (0, _.A)({
-    guildId: null == S ? true : S.guildId,
     applicationId: null == S ? true : S.id,
     numWishlistItems: 2,
     location: O,
