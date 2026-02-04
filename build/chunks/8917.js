@@ -135,7 +135,7 @@ function k(e, t) {
       }
     };
     n.getNextVideoOutputFrame(e).then(o, t => {
-      if (r === e) throw t
+      r === e && a(t)
     })
   })
 }
