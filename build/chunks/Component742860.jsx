@@ -142,7 +142,7 @@ function X(e) {
   })
 }
 
-function $(e) {
+function Z(e) {
   let {
     isInteractable: t,
     containerRef: n,
@@ -251,7 +251,7 @@ function $(e) {
   })
 }
 
-function Z(e) {
+function $(e) {
   var t;
   let {
     overlayRef: n,
@@ -384,10 +384,10 @@ let et = Chunk64700.forwardRef(function(e, t) {
       style: {
         opacity: 1
       },
-      children: b ? (0, a.jsx)(Z, {
+      children: b ? (0, a.jsx)($, {
         overlayRef: c,
         containerRef: t
-      }) : (0, a.jsx)($, {
+      }) : (0, a.jsx)(Z, {
         isInteractable: j,
         containerRef: t,
         onAcceptQuest: f

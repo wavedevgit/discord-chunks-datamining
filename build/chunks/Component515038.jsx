@@ -79,8 +79,8 @@ function E(e) {
       Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(w, e))
     }), E)
   }), Q = (null == (n = I.userStatus) ? true : n.completedAt) != null, Y = (null == (r = I.userStatus) ? true : r.claimedAt) != null, J = (0, f.ks)(I.config), X = (0, f._Z)(I.config), {
-    completedRatio: $,
-    completedRatioDisplay: Z
+    completedRatio: Z,
+    completedRatioDisplay: $
   } = (0, x.O9)(I), ee = (0, h.gj)(I, U, m.Ob.QuestHome, B), et = l.useMemo(() => Y && J ? S.intl.format(S.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: I.id,
@@ -142,8 +142,8 @@ function E(e) {
             }), (0, a.jsx)(b.A, {
               quest: I,
               size: 76,
-              percentComplete: $,
-              percentCompleteText: P && !(0, g.Ic)(I) ? Z : true,
+              percentComplete: Z,
+              percentCompleteText: P && !(0, g.Ic)(I) ? $ : true,
               children: (0, a.jsx)("div", {
                 className: O.yv,
                 children: (0, a.jsx)(v.A, {

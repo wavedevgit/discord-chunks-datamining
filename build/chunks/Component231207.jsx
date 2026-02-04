@@ -89,8 +89,8 @@ let M = function() {
   }), H = "true" !== V.gift && null != M, [K, z] = l.useState(L.length > 0 ? L[0].value : null), {
     analyticsLocations: q
   } = (0, g.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [Q, Y] = l.useState(""), [J, X] = l.useState(w.dJq), {
-    balance: $,
-    isFetching: Z,
+    balance: Z,
+    isFetching: $,
     error: ee
   } = (0, O.W)(), {
     isSubmitting: et,
@@ -281,7 +281,7 @@ let M = function() {
             children: [(0, a.jsx)(u.Text, {
               variant: "text-sm/normal",
               children: "Virtual Currency Balance:"
-            }), Z ? (0, a.jsx)("div", {
+            }), $ ? (0, a.jsx)("div", {
               className: k.wG,
               children: (0, a.jsx)(u.y$y, {
                 type: u.tVU.SPINNING_CIRCLE
@@ -292,7 +292,7 @@ let M = function() {
                 variant: "text-sm/normal",
                 children: ["Error fetching Virtual Currency Balance: ", ee.message]
               }), (0, a.jsx)(T.Gy, {
-                balance: null != $ ? $ : 0,
+                balance: null != Z ? Z : 0,
                 balanceWidgetMode: T.k7.SELECTED
               })]
             })]

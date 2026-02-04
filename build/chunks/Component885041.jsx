@@ -223,14 +223,6 @@ let ta = (0, Chunk159084.z)(e => {
     defaultRouteFallback: eX.A.fallbackRoute,
     token: eq.default.getToken()
   }))(class extends Chunk64700.Component {
-    componentDidMount() {
-      let {
-        match: e
-      } = this.props;
-      null != e && null != e.params.inviteCode && (0, J.q)({
-        code: e.params.inviteCode
-      })
-    }
     render() {
       let {
         isConnected: e,
@@ -283,12 +275,18 @@ let th = [{
   }
 }, {
   path: [Chunk652215.BVt.APP_WITH_INVITE_AND_GUILD_ONBOARDING(":inviteCode")],
-  render(e) {
+  render: function(e) {
     let {
       match: t
-    } = e;
-    return (0, r.jsx)(to, {
-      match: t
+    } = e, {
+      inviteCode: n
+    } = t.params;
+    return (0, X.B)(() => {
+      (0, J.q)({
+        code: n
+      })
+    }), (0, r.jsx)(a.rd, {
+      to: eX.A.defaultRoute
     })
   }
 }, {

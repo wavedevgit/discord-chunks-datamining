@@ -140,7 +140,7 @@ function el(e) {
     [eD, eM] = (0, f.kn)(eR),
     eL = eD === o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eU = l.useCallback(() => {
-      eM($.i.USER_DISMISS), n()
+      eM(Z.i.USER_DISMISS), n()
     }, [eM, n]),
     eB = l.useCallback(() => {
       eA(), eU()
@@ -172,22 +172,22 @@ function el(e) {
           className: et.BK,
           user: t,
           displayProfile: eo,
-          themeType: Z.d.POPOUT,
+          themeType: $.d.POPOUT,
           children: [(0, a.jsxs)("div", {
             className: en.wx,
             children: [(0, a.jsx)(T.A, {
               user: t,
               displayProfile: eo,
-              themeType: Z.d.POPOUT
+              themeType: $.d.POPOUT
             }), (0, a.jsx)(S.A, {
               user: t,
               displayProfile: eo,
-              themeType: Z.d.POPOUT,
+              themeType: $.d.POPOUT,
               onOpenProfile: es ? true : ek
             }), (0, a.jsx)(D.A, {
               ref: eO,
               user: t,
-              themeType: Z.d.POPOUT,
+              themeType: $.d.POPOUT,
               onCloseProfile: n,
               prompt: eS ? eN : null
             })]
@@ -206,7 +206,7 @@ function el(e) {
               pronouns: null == eo ? true : eo.pronouns,
               tags: (0, a.jsx)(O.A, {
                 displayProfile: eo,
-                themeType: Z.d.POPOUT,
+                themeType: $.d.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != er ? e => e === er : true,
                 shouldGlowTenureBadge: eE.current

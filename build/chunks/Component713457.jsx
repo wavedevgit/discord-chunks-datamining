@@ -103,7 +103,7 @@ function k(e) {
     isClaiming: m.A.isClaimingReward(R.id) || m.A.isFetchingRewardCode(R.id),
     isEnrolling: m.A.isEnrolling(R.id),
     isQuestEnrollmentBlocked: null != m.A.questEnrollmentBlockedUntil
-  })), Y = (null == (t = R.userStatus) ? true : t.enrolledAt) != null, J = (null == (n = R.userStatus) ? true : n.completedAt) != null, X = J && (null == (k = R.userStatus) ? true : k.claimedAt) == null, $ = (0, v.if)(R), Z = !(0, v.Ic)(R), ee = (0, g.In)(R), et = (0, j.IO)(R), en = (0, j.BS)(R), ea = (0, j.Cr)(R), el = (0, g.fc)(R), [er, ei, es] = (0, g.Qo)(R, el), eo = Z && ee === g.F3.ACCEPTED, ec = eo && er === p.X0.SELECT, ed = eo && !ec && ei.length > 1, eu = h.t.useConfig({
+  })), Y = (null == (t = R.userStatus) ? true : t.enrolledAt) != null, J = (null == (n = R.userStatus) ? true : n.completedAt) != null, X = J && (null == (k = R.userStatus) ? true : k.claimedAt) == null, Z = (0, v.if)(R), $ = !(0, v.Ic)(R), ee = (0, g.In)(R), et = (0, j.IO)(R), en = (0, j.BS)(R), ea = (0, j.Cr)(R), el = (0, g.fc)(R), [er, ei, es] = (0, g.Qo)(R, el), eo = $ && ee === g.F3.ACCEPTED, ec = eo && er === p.X0.SELECT, ed = eo && !ec && ei.length > 1, eu = h.t.useConfig({
     location: O.rE.QUEST_HOME_DESKTOP
   }), em = (0, C.P)(R), ep = l.useCallback(e => {
     es(e), e === O.fO.DESKTOP && M([])
@@ -144,7 +144,7 @@ function k(e) {
     quest: R,
     shortText: true
   }), e_ = null;
-  return ($ && X ? e_ = (0, a.jsx)("div", {
+  return (Z && X ? e_ = (0, a.jsx)("div", {
     className: E.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -199,7 +199,7 @@ function k(e) {
       text: eh,
       fullWidth: true
     })
-  }) : Z ? Z && X ? e_ = (0, a.jsx)("div", {
+  }) : $ ? $ && X ? e_ = (0, a.jsx)("div", {
     className: E.x6,
     children: (0, a.jsx)(s.$nd, {
       variant: "primary",
@@ -225,7 +225,7 @@ function k(e) {
       text: eh,
       fullWidth: true
     })
-  }) : Z && Y && !eb ? e_ = ec ? (0, a.jsx)(i.Pw, {
+  }) : $ && Y && !eb ? e_ = ec ? (0, a.jsx)(i.Pw, {
     className: E.dd,
     isSelected: () => false,
     options: N,
@@ -288,7 +288,7 @@ function k(e) {
       text: T.intl.string(T.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : Z && !Y && (e_ = Q ? (0, a.jsxs)(s.e2v, {
+  }) : $ && !Y && (e_ = Q ? (0, a.jsxs)(s.e2v, {
     direction: "horizontal",
     fullWidth: true,
     wrap: false,
