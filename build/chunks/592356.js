@@ -31,7 +31,7 @@ function p(e) {
     userIds: a,
     isEligible: o,
     includeWishlists: c
-  } = e, u = null == a ? true : a.slice(0, s.g9), d = (0, i.bG)([l.A], () => null != t ? l.A.recommendationsByApplicationsAndUsers(t, u) : true), p = r.useMemo(() => !o || null == t || null == u || 0 === u.length || 0 === n, [o, t, u, n]);
+  } = e, u = r.useMemo(() => null == a ? true : a.slice(0, s.g9), [a]), d = (0, i.bG)([l.A], () => null != t ? l.A.recommendationsByApplicationsAndUsers(t, u) : true), p = !o || null == t || null == u || 0 === u.length || 0 === n;
   return r.useEffect(() => {
     p || (0, s.Xg)({
       applicationId: t,

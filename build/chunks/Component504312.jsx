@@ -2,7 +2,7 @@
 /** chunk id: 504312, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => w
+  Y: () => L
 }), require("./321073.js"), require("./896048.js"), require("./228524.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -501,79 +501,147 @@ let N = Chunk96337.A.map(e => ({
     label: e.name
   })),
   w = {
+    name: "Modal: Unified Checkout Stateless Modal",
+    id: "unified-checkout-stateless-modal",
+    component: C,
+    controls: {
+      title: {
+        label: "Title",
+        type: "text",
+        defaultValue: "Checkout"
+      },
+      primaryButtonText: {
+        label: "Primary Button Text",
+        type: "text",
+        defaultValue: "Get Nitro Yearly"
+      },
+      primaryButtonIcon: {
+        label: "Primary Button Icon",
+        type: "select",
+        defaultValue: "nitro-wheel",
+        options: [{
+          label: "Nitro Wheel",
+          value: "nitro-wheel"
+        }, {
+          label: "Gift",
+          value: "gift"
+        }, {
+          label: "Orbs",
+          value: "orbs"
+        }, {
+          label: "None",
+          value: "none"
+        }]
+      },
+      countryCode: {
+        label: "Country Code",
+        type: "select",
+        defaultValue: Chunk997101.d.US,
+        options: N
+      },
+      headerBadgeText: {
+        label: "Header Pill Text",
+        type: "text",
+        defaultValue: "PROMO"
+      },
+      headerBadgeHasIcon: {
+        label: "Header Badge Has Icon",
+        type: "boolean",
+        defaultValue: false
+      },
+      gradientColor: {
+        label: "Gradient Color",
+        type: "select",
+        defaultValue: "nitro-pink",
+        options: [{
+          label: "Nitro Pink",
+          value: "nitro-pink"
+        }, {
+          label: "Nitro Green",
+          value: "nitro-green"
+        }, {
+          label: "Purple",
+          value: "purple"
+        }, {
+          label: "Blue",
+          value: "blue"
+        }]
+      },
+      dismissable: {
+        label: "Dismissable",
+        type: "boolean",
+        defaultValue: true
+      }
+    }
+  };
+
+function R(e) {
+  let {
+    variant: t,
+    immediateDelivery: n
+  } = e, [a, o] = i.useState(false);
+  return (0, r.jsx)(u._P, E(m({}, t), {
+    immediateDelivery: n ? {
+      value: a,
+      onChange: o
+    } : true
+  }))
+}
+let P = {
+    purchaseButtonText: "Subscribe",
+    totalDue: 999,
+    renewalPrice: 1099,
+    currency: Chunk652215.Yri.USD,
+    period: "month",
+    startDate: new Date
+  },
+  D = {
+    type: Chunk93159.I0.Subscription,
+    props: P
+  },
+  L = {
     title: "Unified Checkout",
-    stories: [{
-      name: "Modal: Unified Checkout Stateless Modal",
-      id: "unified-checkout-stateless-modal",
-      component: C,
+    stories: [w, O, v, A, I, S, {
+      name: "Primitive: Legal Copy",
+      id: "unified-checkout-legal-copy",
+      component: R,
       controls: {
-        title: {
-          label: "Title",
-          type: "text",
-          defaultValue: "Checkout"
-        },
-        primaryButtonText: {
-          label: "Primary Button Text",
-          type: "text",
-          defaultValue: "Get Nitro Yearly"
-        },
-        primaryButtonIcon: {
-          label: "Primary Button Icon",
+        variant: {
+          label: "Variant",
           type: "select",
-          defaultValue: "nitro-wheel",
+          defaultValue: D,
           options: [{
-            label: "Nitro Wheel",
-            value: "nitro-wheel"
+            label: "Subscription",
+            value: D
           }, {
-            label: "Gift",
-            value: "gift"
+            label: "Subscription Trial",
+            value: {
+              type: Chunk93159.I0.SubscriptionTrial,
+              props: P
+            }
           }, {
-            label: "Orbs",
-            value: "orbs"
+            label: "Orbs Redemption",
+            value: {
+              type: Chunk93159.I0.OrbsRedemption,
+              props: {
+                purchaseButtonText: "Redeem"
+              }
+            }
           }, {
-            label: "None",
-            value: "none"
+            label: "One-time Purchase",
+            value: {
+              type: Chunk93159.I0.OTP,
+              props: {
+                purchaseButtonText: "Purchase"
+              }
+            }
           }]
         },
-        countryCode: {
-          label: "Country Code",
-          type: "select",
-          defaultValue: Chunk997101.d.US,
-          options: N
-        },
-        headerBadgeText: {
-          label: "Header Pill Text",
-          type: "text",
-          defaultValue: "PROMO"
-        },
-        headerBadgeHasIcon: {
-          label: "Header Badge Has Icon",
+        immediateDelivery: {
+          label: "Immediate Delivery",
           type: "boolean",
           defaultValue: false
-        },
-        gradientColor: {
-          label: "Gradient Color",
-          type: "select",
-          defaultValue: "nitro-pink",
-          options: [{
-            label: "Nitro Pink",
-            value: "nitro-pink"
-          }, {
-            label: "Nitro Green",
-            value: "nitro-green"
-          }, {
-            label: "Purple",
-            value: "purple"
-          }, {
-            label: "Blue",
-            value: "blue"
-          }]
-        },
-        dismissable: {
-          label: "Dismissable",
-          type: "boolean",
-          defaultValue: true
         }
       }
-    }, O, v, A, I, S]
+    }]
   }

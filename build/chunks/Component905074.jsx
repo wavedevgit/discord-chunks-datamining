@@ -1,20 +1,22 @@
 /** Chunk was on 12236 **/
 /** chunk id: 905074, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => g
+  A: () => h
 }), require("./896048.js"), require("./693327.js"), require("./554719.js"), require("./680155.js"), require("./323874.js"), require("./14289.js"), require("./35956.js"), require("./747238.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
   Chunk397927 = require("./397927.js"),
   Chunk46054 = require("./46054.js"),
+  Chunk403362 = require("./403362.js"),
   Chunk861662 = require("./861662.jsx"),
   Chunk985018 = require("./985018.jsx"),
   Chunk322367 = require("./322367.js"),
   Chunk473169 = require("./473169.js");
-let u = ["cdn.discord.com", "cdn.discordapp.com", "media.discordapp.net"],
-  m = /^https:\/\/(?:ptb\.|canary\.)?discord(?:app)?\.com\/channels\/(?:@me|\d+)\/\d+\/\d+$/;
+let m = ["cdn.discordapp.com", "media.discordapp.net", "media.discordapp.com"],
+  p = /^(?:localhost|127\.0\.0\.1|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})$/,
+  b = (0, Chunk403362.m6)() ? /^https?:\/\/(?:(?:ptb\.|canary\.)?discord(?:app)?\.com|localhost(?::\d+)?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?::\d+)?)\/channels\/(?:@me|\d+)\/\d+\/\d+$/ : /^https:\/\/(?:ptb\.|canary\.)?discord(?:app)?\.com\/channels\/(?:@me|\d+)\/\d+\/\d+$/;
 
-function p(e) {
+function _(e) {
   try {
     return new URL(e), true
   } catch (e) {
@@ -22,24 +24,25 @@ function p(e) {
   }
 }
 
-function b(e) {
-  return "" !== e && !!p(e) && ! function(e) {
+function g(e) {
+  return "" !== e && !!_(e) && ! function(e) {
     try {
       let t = new URL(e);
-      return u.some(e => t.hostname === e)
+      if (m.some(e => t.hostname === e) || (0, s.m6)() && p.test(t.hostname)) returntrue;
+      returnfalse
     } catch (e) {
       returnfalse
     }
   }(e)
 }
-let _ = e => {
+let x = e => {
     let {
       data: {
         title: t,
         subtitle: n,
-        placeholder: u,
-        message_link_title: _,
-        message_link_placeholder: g
+        placeholder: s,
+        message_link_title: m,
+        message_link_placeholder: p
       },
       onChange: x,
       initialContentUrl: h,
@@ -65,7 +68,7 @@ let _ = e => {
         }
         return e
       }({}, a.A.defaultRules), t = t = {
-        link: s.B
+        link: o.B
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -79,7 +82,7 @@ let _ = e => {
     }, []), [A, y] = r.useState(""), [O, S] = r.useState(""), [T, N] = r.useState(null), [k, w] = r.useState(null), [C, I] = r.useState(false);
     r.useEffect(() => {
       var e, t;
-      y(null != (e = null == h ? true : h.value) ? e : ""), S(null != (t = null == v ? true : v.value) ? t : ""), (null == h ? true : h.value) != null && "" !== h.value && I(b(h.value))
+      y(null != (e = null == h ? true : h.value) ? e : ""), S(null != (t = null == v ? true : v.value) ? t : ""), (null == h ? true : h.value) != null && "" !== h.value && I(g(h.value))
     }, [h, v]);
     let P = r.useCallback(e => {
         if (y(e), "" === e) {
@@ -89,18 +92,18 @@ let _ = e => {
           });
           return
         }
-        if (!p(e)) {
-          N(o.intl.string(o.t["24xrGb"])), I(false), S(""), w(null), x({
+        if (!_(e)) {
+          N(d.intl.string(d.t["24xrGb"])), I(false), S(""), w(null), x({
             value: e,
             isValid: false
           });
           return
         }
-        let t = b(e);
+        let t = g(e);
         I(t), N(null), t ? "" === O ? x({
           value: e,
           isValid: false
-        }) : m.test(O) ? x({
+        }) : b.test(O) ? x({
           value: e,
           isValid: true
         }, {
@@ -118,8 +121,8 @@ let _ = e => {
         }))
       }, [x, O]),
       E = r.useCallback(e => {
-        if (S(e), "" === e || !m.test(e)) {
-          w(o.intl.string(o.t["24xrGb"])), x({
+        if (S(e), "" === e || !b.test(e)) {
+          w(d.intl.string(d.t["24xrGb"])), x({
             value: A,
             isValid: false
           }, {
@@ -140,13 +143,13 @@ let _ = e => {
       children: [(0, l.jsxs)(i.BJc, {
         gap: 16,
         children: [(0, l.jsxs)("div", {
-          className: c.QB,
+          className: u.QB,
           children: [null != t && (0, l.jsx)("div", {
-            className: c.QB,
+            className: u.QB,
             children: (0, l.jsxs)(i.Text, {
               variant: "text-sm/bold",
               children: [t, f && (0, l.jsx)("span", {
-                className: d.m,
+                className: c.m,
                 children: "*"
               })]
             })
@@ -154,17 +157,17 @@ let _ = e => {
             onChange: P,
             value: A,
             error: T,
-            placeholder: u,
+            placeholder: s,
             autoFocus: true
           })]
-        }), C && null != _ && (0, l.jsxs)("div", {
-          className: c.QB,
+        }), C && null != m && (0, l.jsxs)("div", {
+          className: u.QB,
           children: [(0, l.jsx)("div", {
-            className: c.QB,
+            className: u.QB,
             children: (0, l.jsxs)(i.Text, {
               variant: "text-sm/bold",
-              children: [_, f && (0, l.jsx)("span", {
-                className: d.m,
+              children: [m, f && (0, l.jsx)("span", {
+                className: c.m,
                 children: "*"
               })]
             })
@@ -172,7 +175,7 @@ let _ = e => {
             onChange: E,
             value: O,
             error: k,
-            placeholder: g
+            placeholder: p
           })]
         })]
       }), null != n && (0, l.jsx)(i.Text, {
@@ -181,7 +184,7 @@ let _ = e => {
       })]
     })
   },
-  g = e => {
+  h = e => {
     let {
       element: t,
       onChange: n,
@@ -189,7 +192,7 @@ let _ = e => {
     } = e, a = t.name, s = "".concat(t.name, "_message_link"), o = r.useCallback((e, t) => {
       null != t ? n(a, e.value, e.isValid && t.isValid, s, t.value) : n(a, e.value, e.isValid, s, true)
     }, [n, a, s]);
-    return (0, l.jsx)(_, {
+    return (0, l.jsx)(x, {
       data: t.data,
       onChange: o,
       initialContentUrl: null == i ? true : i[a],

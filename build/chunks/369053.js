@@ -374,6 +374,10 @@ let M = (e, t, n) => {
       user_id: t.user_id,
       widget_id: t.widget_id
     });
+    else if (t.name === f.tY.MEDIA_TAKEDOWN) return E(m({}, l, s), {
+      name: t.name,
+      email_token: r
+    });
     return null
   };
 
