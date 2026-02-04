@@ -74,11 +74,11 @@ function B(e, t) {
 
 function H() {
   var e;
-  let t = (0, a.bG)([v.default], () => {
-      let e = v.default.getCurrentUser();
+  let t = (0, a.bG)([j.default], () => {
+      let e = j.default.getCurrentUser();
       return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
     }),
-    n = (0, a.bG)([j.A], () => j.A.hidePersonalInformation),
+    n = (0, a.bG)([v.A], () => v.A.hidePersonalInformation),
     l = (0, a.cf)([I.A], () => B(k({}, I.A.getPendingChanges()), {
       showNotice: I.A.showNotice()
     })),

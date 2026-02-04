@@ -2,7 +2,7 @@
 /** chunk id: 338769, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  V: () => f,
+  V: () => p,
   Z: () => g
 });
 var r, Chunk64700 = require("./64700.js"),
@@ -15,7 +15,7 @@ var r, Chunk64700 = require("./64700.js"),
   Chunk985018 = require("./985018.jsx"),
   g = ((r = {})[r.COUNTDOWN = 0] = "COUNTDOWN", r);
 
-function f(e, t) {
+function p(e, t) {
   let n = (0, s.bG)([i.A], () => i.A.getUserDiscount(u.tU)),
     r = (0, s.bG)([a.default], () => a.default.locale),
     g = (0, o.$)(t);

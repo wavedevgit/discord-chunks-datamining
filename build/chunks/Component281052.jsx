@@ -83,7 +83,7 @@ function w(e) {
     Q = T.Ay.canUsePremiumProfileCustomization(G),
     $ = (0, u.z5)(k, null == q ? true : q.avatar),
     ee = (0, u.Ac)(H, null == J ? true : J.banner),
-    et = (0, j.lS)(Y, null == J ? true : J.themeColors),
+    et = (0, v.lS)(Y, null == J ? true : J.themeColors),
     en = null != (t = null == J ? true : J.bio) ? t : "",
     er = null != (n = null == J ? true : J.pronouns) ? n : "",
     ei = (e, t, n) => {
@@ -91,7 +91,7 @@ function w(e) {
     };
   return (0, r.jsxs)("div", {
     className: L.Q,
-    children: [(0, r.jsx)(v.A, {
+    children: [(0, r.jsx)(j.A, {
       errors: null != (i = null == W ? true : W.nick) ? i : null == X ? true : X.nick,
       username: I.Ay.getName(G),
       pendingNick: B,
@@ -102,7 +102,7 @@ function w(e) {
       sectionTitle: D.intl.string(D.t["+T3RI/"]),
       errors: null == W ? true : W.pronouns,
       onPronounsChange: e => {
-        (0, j.d7)(e, er)
+        (0, v.d7)(e, er)
       },
       pendingPronouns: F,
       currentPronouns: er
@@ -176,7 +176,7 @@ function w(e) {
         pendingAvatarSrc: z,
         pendingColors: Y,
         onThemeColorsChange: e => {
-          (0, j.wx)(e, null == J ? true : J.themeColors)
+          (0, v.wx)(e, null == J ? true : J.themeColors)
         },
         guildId: null == Z ? true : Z.id,
         showResetThemeButton: et
@@ -192,7 +192,7 @@ function w(e) {
             })
           })]
         }),
-        onBioChange: e => (0, j.Rn)(e, en),
+        onBioChange: e => (0, v.Rn)(e, en),
         errors: null != (w = null == W ? true : W.bio) ? w : null == X ? true : X.bio,
         pendingBio: V,
         currentBio: en,

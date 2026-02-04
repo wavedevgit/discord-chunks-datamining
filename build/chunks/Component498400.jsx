@@ -57,7 +57,7 @@ let G = function(e) {
     [W, K] = i.useState(true),
     z = i.useRef(0),
     Z = (0, I.YE)(B, L.PremiumTypes.TIER_2),
-    X = (0, j.A)({
+    X = (0, v.A)({
       location: "PremiumHomePage"
     }),
     q = (0, a.bG)([N.A], () => N.A.hasFetched);
@@ -80,7 +80,7 @@ let G = function(e) {
     Q = t === L.Mf.ApplicationStoreHome,
     $ = J ? (0, r.jsx)(_.A, {}) : n ? (0, r.jsx)(b.uK, {}) : Q && Z ? (0, r.jsx)(g.f5, {
       value: G,
-      children: (0, r.jsx)(v.A, {
+      children: (0, r.jsx)(j.A, {
         userId: H
       })
     }) : U && Y && k ? null : (0, r.jsx)("div", {

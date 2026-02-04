@@ -109,7 +109,7 @@ function L(e) {
           return l
         }(e, ["ref"]);
         return (0, i.jsx)(h.A, D(R({
-          className: j.GD,
+          className: v.GD,
           currentPageIndex: c,
           onChangePage: b,
           numPages: s,
@@ -117,11 +117,11 @@ function L(e) {
           ref: t
         }, l), {
           children: (0, i.jsx)(_.T7Y, {
-            className: j.Bd,
+            className: v.Bd,
             ref: o,
             overflow: "auto",
             children: A.map((e, t) => (0, i.jsx)(S.A, {
-              className: a()(j.Nj, j.Bd),
+              className: a()(v.Nj, v.Bd),
               payment: e,
               locale: n,
               compactMode: r
@@ -143,14 +143,14 @@ class w extends(r = Chunk64700.PureComponent) {
   }
   renderPremiumExternalSubscription(e) {
     return c()(null != e.paymentGateway, "Expected payment gateway when rendering for external subscription"), (0, i.jsxs)(_.ZpM, {
-      className: j.K1,
+      className: v.K1,
       children: [(0, i.jsx)("div", {
-        className: j.BF,
+        className: v.BF,
         children: y.intl.format(y.t["6mIX6s"], {
           paymentGatewayName: N.qm[e.paymentGateway]
         })
       }), (0, i.jsx)("div", {
-        className: j.Q2,
+        className: v.Q2,
         children: y.intl.format(y.t.eG0uZB, {
           paymentGatewayName: N.qm[e.paymentGateway],
           billingHistoryLink: (0, C.tW)(e.paymentGateway, "BILLING_HISTORY")
@@ -166,21 +166,21 @@ class w extends(r = Chunk64700.PureComponent) {
       locale: r
     } = this.props, l = null != n && n.isPurchasedExternally;
     return 0 !== t.length || l ? (0, i.jsxs)("div", {
-      className: j.GD,
+      className: v.GD,
       children: [null != n && l ? this.renderPremiumExternalSubscription(n) : null, t.length > 0 ? (0, i.jsxs)("div", {
-        className: a()(j.PQ, j.GD),
+        className: a()(v.PQ, v.GD),
         children: [e ? null : (0, i.jsx)("div", {
-          className: a()(j.Nj, j.Bd),
+          className: a()(v.Nj, v.Bd),
           children: (0, i.jsxs)(b.A, {
-            className: j.Yi,
+            className: v.Yi,
             children: [(0, i.jsx)("div", {
-              className: v.p6,
+              className: j.p6,
               children: y.intl.string(y.t["5t11BV"])
             }), (0, i.jsx)("div", {
-              className: j.Ir,
+              className: v.Ir,
               children: y.intl.string(y.t.yAAPb2)
             }), (0, i.jsx)("div", {
-              className: v.vj,
+              className: j.vj,
               children: y.intl.string(y.t["6MqHXV"])
             })]
           })

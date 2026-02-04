@@ -39,8 +39,8 @@ function s(e) {
   }(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]), {
     tooltip: g,
     loading: y,
-    disabled: b,
-    onClick: h
+    disabled: h,
+    onClick: b
   } = (0, o.J$)(t, n, u, a.Ay.getNickname(c, s, n));
   return (0, r.jsx)(i.m, {
     text: g,
@@ -66,9 +66,9 @@ function s(e) {
       size: d,
       variant: f,
       onClick: () => {
-        null == p || p(), h()
+        null == p || p(), b()
       },
-      disabled: b,
+      disabled: h,
       loading: y,
       "aria-label": null != g ? g : t.name
     }, m))

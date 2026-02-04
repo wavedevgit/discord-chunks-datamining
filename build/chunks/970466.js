@@ -4,7 +4,6 @@ module.exports = {
   Hc: "baseContainer__40d5b",
   Nr: "card__40d5b",
   Ki: "video__40d5b",
-  aZ: "betaBadge__40d5b",
   L$: "progressContainer__40d5b",
   zK: "bannerImageContainer__40d5b",
   _e: "bannerImage__40d5b",

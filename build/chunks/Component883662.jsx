@@ -23,8 +23,8 @@ function b(e) {
     onPanelChange: y,
     sidebarFooter: g,
     emptyState: m,
-    searchQuery: h,
-    onSearchChange: O
+    searchQuery: O,
+    onSearchChange: h
   } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, o, a = {};
@@ -41,19 +41,19 @@ function b(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
-  }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [x, v] = o.useState(false), [S, C] = o.useState(1.4), P = o.useRef(null), w = (0, a.bG)([c.A], () => c.A.useReducedMotion), k = (0, a.bG)([s.A], () => s.A.isFocused());
+  }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [x, v] = o.useState(false), [S, C] = o.useState(1.4), w = o.useRef(null), P = (0, a.bG)([c.A], () => c.A.useReducedMotion), k = (0, a.bG)([s.A], () => s.A.isFocused());
   return o.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !w && k && (v(true), C(null != t ? t : 1.4), clearTimeout(P.current), P.current = setTimeout(() => v(false), null != n ? n : 1e3))
+      !P && k && (v(true), C(null != t ? t : 1.4), clearTimeout(w.current), w.current = setTimeout(() => v(false), null != n ? n : 1e3))
     };
     return u._.subscribe(_.jej.SHAKE_SETTINGS_MODAL, e), () => {
-      u._.unsubscribe(_.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(P.current)
+      u._.unsubscribe(_.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(w.current)
     }
-  }, [w, k]), (0, r.jsx)(i.bfh, {
+  }, [P, k]), (0, r.jsx)(i.bfh, {
     isShaking: x,
     intensity: S,
     children: (0, r.jsx)(l.N, (t = function(e) {
@@ -82,8 +82,8 @@ function b(e) {
         onPanelChange: y,
         emptyState: m,
         sidebarFooter: g,
-        searchQuery: h,
-        onSearchChange: O
+        searchQuery: O,
+        onSearchChange: h
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

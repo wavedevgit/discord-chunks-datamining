@@ -2,7 +2,7 @@
 /** chunk id: 903403, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,18 +19,18 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk68763 = require("./68763.js");
 
-function b(e) {
+function h(e) {
   let {
     category: t
   } = e, n = (0, i.bG)([c.A], () => c.A.useReducedMotion), s = (0, i.bG)([d.A], () => d.A.isFocused()), {
     catalogBannerStatic: g,
-    catalogBannerAnimated: b,
+    catalogBannerAnimated: h,
     catalogBannerRive: _
   } = (0, m.MV)(t), E = l.useRef(null), v = null != _;
   return (0, r.jsxs)("div", {
     ref: E,
-    className: a()(h.sW, {
-      [h.by]: v
+    className: a()(b.sW, {
+      [b.by]: v
     }),
     children: [v ? (0, r.jsx)(o._, {
       src: _,
@@ -44,19 +44,19 @@ function b(e) {
       autoplay: true
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("img", {
-        className: h.ze,
+        className: b.ze,
         src: g,
         alt: t.name
-      }), null != b && !n && s && (0, r.jsx)(u.A, {
-        src: b,
-        className: h.tr,
+      }), null != h && !n && s && (0, r.jsx)(u.A, {
+        src: h,
+        className: b.tr,
         autoPlay: true,
         loop: true
       })]
-    }), (0, r.jsx)(f.A, {
+    }), (0, r.jsx)(p.A, {
       category: t,
-      className: h.v0,
-      daysRemainingText: p.t["8gsP5M"]
+      className: b.v0,
+      daysRemainingText: f.t["8gsP5M"]
     })]
   })
 }(0, Chunk993408.$b)(90)

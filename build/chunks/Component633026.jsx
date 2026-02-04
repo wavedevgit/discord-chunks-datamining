@@ -2,7 +2,7 @@
 /** chunk id: 633026, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 });
 var Chunk627968 = require("./627968.js");
 require("./64700.js");
@@ -19,7 +19,7 @@ var Chunk503698 = require("./503698.js"),
   Chunk695413 = require("./695413.jsx"),
   Chunk201073 = require("./201073.js");
 (0, Chunk993408.$b)(90);
-let h = {
+let b = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -29,62 +29,62 @@ let h = {
     categoryStoreListingId: "",
     rewardSkuId: true
   },
-  b = e => {
+  h = e => {
     var t;
     let {
       isLoading: n = false,
       heroBlock: l,
       tab: i,
       onVisibilityChange: d
-    } = e, b = (0, a.K)(e => {
+    } = e, h = (0, a.K)(e => {
       null == d || d(e)
     }, .1, null != d), _ = (0, o.bG)([u.default], () => u.default.getCurrentUser()), {
       bannerDisplayConfig: E,
       logoDisplayConfig: v,
       heroLogo: C,
       heroBannerStatic: A,
-      heroBannerAnimated: S
-    } = (0, g.Kk)(l), x = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
-    return null != _ && (n || l !== h) ? (0, r.jsxs)("div", {
-      ref: b,
-      className: p.os,
+      heroBannerAnimated: x
+    } = (0, g.Kk)(l), S = null != (t = null == E ? true : E.responsive) && t, O = null == E ? true : E.backgroundStyle;
+    return null != _ && (n || l !== b) ? (0, r.jsxs)("div", {
+      ref: h,
+      className: f.os,
       children: [(0, r.jsx)("div", {
-        className: s()(p.vK, {
-          [p.no]: x
+        className: s()(f.vK, {
+          [f.no]: S
         }),
         style: null != O ? {
           background: O
         } : true,
-        children: null != A && (0, r.jsx)(f.A, {
+        children: null != A && (0, r.jsx)(p.A, {
           bannerStatic: A,
-          bannerAnimated: S,
-          isResponsive: x
+          bannerAnimated: x,
+          isResponsive: S
         })
       }), (0, r.jsxs)("div", {
-        className: p.xX,
+        className: f.xX,
         children: [(0, r.jsx)("div", {
-          className: s()(p.bC, {
-            [p.no]: x
+          className: s()(f.bC, {
+            [f.no]: S
           }),
           children: n ? (0, r.jsx)("div", {
-            className: p.Hw
+            className: f.Hw
           }) : (0, r.jsx)("div", {
-            className: p.Hw,
+            className: f.Hw,
             children: (0, r.jsxs)("div", {
-              className: p.Wq,
+              className: f.Wq,
               children: [null != C && (0, r.jsx)("img", {
-                className: p.rm,
+                className: f.rm,
                 src: C,
                 alt: l.name,
                 style: null == v ? true : v.toDesktopStyles()
               }), null != l.title && (0, r.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
-                className: p.DD,
+                className: f.DD,
                 color: "text-strong",
                 children: l.title
               }), "" !== l.summary && (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                className: p.Tm,
+                className: f.Tm,
                 style: null != l.bannerTextColor ? {
                   color: l.bannerTextColor
                 } : true,

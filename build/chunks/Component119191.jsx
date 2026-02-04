@@ -1,7 +1,7 @@
 /** Chunk was on 88474 **/
 /** chunk id: 119191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  bi: () => b,
+  bi: () => h,
   sI: () => y
 });
 var Chunk627968 = require("./627968.js");
@@ -25,7 +25,7 @@ function y(e, t, n) {
     useFlexboxLayout: l,
     keybindClassName: a
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(b, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
@@ -34,7 +34,7 @@ function y(e, t, n) {
     keybindClassName: a
   })
 }
-let b = (e, t) => (0, r.jsx)(r.Fragment, {
+let h = (e, t) => (0, r.jsx)(r.Fragment, {
   children: m.intl.format(t, {
     keybind: e,
     keybindHook: (t, n) => (0, r.jsx)(l.e7I, {
@@ -45,13 +45,13 @@ let b = (e, t) => (0, r.jsx)(r.Fragment, {
   })
 });
 
-function h(e) {
+function b(e) {
   let {
     keybind: t,
     message: n,
     messageWithoutKeybind: y,
-    highlightAdminWarningIfElevated: b = false,
-    useFlexboxLayout: h = false,
+    highlightAdminWarningIfElevated: h = false,
+    useFlexboxLayout: b = false,
     keybindClassName: A
   } = e, _ = (0, d.F)(), v = (0, i.bG)([a.Ay], () => {
     let e = a.Ay.getVisibleGame();
@@ -59,7 +59,7 @@ function h(e) {
   }), O = (0, s.NP)();
   return v ? (0, r.jsx)(l.Text, {
     variant: "text-xxs/semibold",
-    color: b ? "text-feedback-warning" : "text-muted",
+    color: h ? "text-feedback-warning" : "text-muted",
     children: O ? m.intl.format(m.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, o.A)(true, true), (0, u.openUserSettings)(c.X.OVERLAY_PANEL, {
@@ -67,7 +67,7 @@ function h(e) {
         })
       }
     }) : m.intl.string(m.t.PIeSHF)
-  }) : _ ? h ? (0, r.jsx)("div", {
+  }) : _ ? b ? (0, r.jsx)("div", {
     className: g.FH,
     children: m.intl.format(n, {
       keybind: t,

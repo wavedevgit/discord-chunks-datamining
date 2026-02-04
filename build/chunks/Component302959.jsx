@@ -67,7 +67,7 @@ function S(e) {
     onAction: u
   } = e;
   return (0, r.jsx)(s.A, {
-    className: (0, h.t)(_, "actions", t),
+    className: (0, b.t)(_, "actions", t),
     type: t,
     source: n,
     activity: i,
@@ -85,7 +85,7 @@ let j = Chunk153331.A.Types,
       activity: t,
       user: n,
       useStoreStream: s = true,
-      showActions: h = true,
+      showActions: b = true,
       hideHeader: _ = false,
       showChannelDetails: j = false
     } = e, I = function(e, t) {
@@ -117,7 +117,7 @@ let j = Chunk153331.A.Types,
       return null
     });
     return (i.useEffect(() => {
-      (null == t ? true : t.type) === A.$pd.HANG_STATUS && E && b.default.track(A.HAw.VIEW_HANG_STATUS, v({
+      (null == t ? true : t.type) === A.$pd.HANG_STATUS && E && h.default.track(A.HAw.VIEW_HANG_STATUS, v({
         source: "UserActivity",
         other_user_id: n.id
       }, (0, u.A)(null == C ? true : C.id)))
@@ -130,7 +130,7 @@ let j = Chunk153331.A.Types,
       showChannelDetails: j,
       channel: j ? x : true,
       enableUserHoverActivities: I.enableUserHoverActivities,
-      renderActions: h ? () => (0, r.jsx)(S, O(v({}, I), {
+      renderActions: b ? () => (0, r.jsx)(S, O(v({}, I), {
         applicationStream: P,
         activity: t,
         user: n

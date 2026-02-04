@@ -2,7 +2,7 @@
 /** chunk id: 196231, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  S: () => p
+  S: () => f
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -16,30 +16,30 @@ var Chunk627968 = require("./627968.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk201073 = require("./201073.js");
-let p = e => {
-  var t, n, p;
-  let h, {
-    category: b,
+let f = e => {
+  var t, n, f;
+  let b, {
+    category: h,
     subblock: _,
     badgeText: E,
     handleTransition: v
   } = e;
-  null != _ && (h = null == (p = c.A.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : p.skuId);
-  let C = null != (t = null != h ? h : null == b ? true : b.skuId) ? t : "",
+  null != _ && (b = null == (f = c.A.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : f.skuId);
+  let C = null != (t = null != b ? b : null == h ? true : h.skuId) ? t : "",
     {
       handleCardVisibilityChange: A
     } = (0, u.Z)(C, "home", "marketing featured block"),
-    S = (0, d.s4)(b, _),
-    x = l.useRef(null),
+    x = (0, d.s4)(h, _),
+    S = l.useRef(null),
     O = null == _ ? true : _.bodyText,
     y = (0, o.uM)();
   return (0, r.jsx)(s.L, {
-    innerRef: x,
+    innerRef: S,
     onChange: A,
     threshold: 0,
     children: (0, r.jsxs)(a.DUT, {
       className: m.oT,
-      innerRef: x,
+      innerRef: S,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,15 +57,15 @@ let p = e => {
           })
         }
         return e
-      }({}, null != S && {
-        backgroundImage: "url(".concat(S, ")")
+      }({}, null != x && {
+        backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
         v({
           sourceButton: "shop marketing tile",
           categorySkuId: C,
           isInternalShopDeeplink: true,
-          isOrbsExclusive: null == b ? true : b.isOrbsExclusive
+          isOrbsExclusive: null == h ? true : h.isOrbsExclusive
         }), i.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == y ? true : y.sessionId,
           sku_id: C,
@@ -96,13 +96,13 @@ let p = e => {
         className: m.b2,
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
-          text: f.intl.string(f.t.jVcuVY),
+          text: p.intl.string(p.t.jVcuVY),
           onClick: e => {
             v({
               sourceButton: "shop marketing take me there button",
               categorySkuId: C,
               isInternalShopDeeplink: true,
-              isOrbsExclusive: null == b ? true : b.isOrbsExclusive
+              isOrbsExclusive: null == h ? true : h.isOrbsExclusive
             }), e.stopPropagation(), i.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == y ? true : y.sessionId,
               sku_id: C,

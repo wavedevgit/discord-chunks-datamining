@@ -81,7 +81,7 @@ function P(e) {
       children: (0, r.jsx)(u.DUT, {
         className: O.SM,
         onClick: () => {
-          null != i && (f.A.setInputLocked(false, b.A.getTargetPID()), (0, g.YX)(i.type, {
+          null != i && (f.A.setInputLocked(false, h.A.getTargetPID()), (0, g.YX)(i.type, {
             type: g.Z5.KEYBIND_HINT,
             value: g.IP.OVERLAY_UNLOCKED
           }))
@@ -89,7 +89,7 @@ function P(e) {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/semibold",
           color: "text-strong",
-          children: (0, h.sI)((0, A.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
+          children: (0, b.sI)((0, A.Jn)(), v.t["1XA04X"], v.intl.string(v.t.uZZGzf), {
             useFlexboxLayout: true,
             highlightAdminWarningIfElevated: false,
             keybindClassName: O.P

@@ -77,11 +77,11 @@ let A = e => {
       }), t))
     })
   },
-  S = e => (0, r.jsx)("div", {
+  x = e => (0, r.jsx)("div", {
     className: v.hm,
     children: (0, r.jsx)(O, C({}, e))
   }),
-  x = e => (0, r.jsx)(o.A, {
+  S = e => (0, r.jsx)(o.A, {
     gap: "xl",
     children: (0, r.jsx)(O, C({}, e))
   }),
@@ -94,15 +94,15 @@ let A = e => {
       totalCards: a
     } = e, i = (0, c.uM)(), o = (0, d.rR)("HeroBlockCards") && t.categorySkuId === E.op, g = (0, d.eJ)("HeroBlockCards");
     if (n) return (0, r.jsx)(r.Fragment, {
-      children: [...Array(null != a ? a : 4)].map((e, t) => (0, r.jsx)(b.A, {}, t))
+      children: [...Array(null != a ? a : 4)].map((e, t) => (0, r.jsx)(h.A, {}, t))
     });
-    let f = null != a ? l.slice(0, a) : l;
-    return (0, r.jsx)(h.v3.Provider, {
+    let p = null != a ? l.slice(0, a) : l;
+    return (0, r.jsx)(b.v3.Provider, {
       value: {
         rentalDuration: o ? g : true,
         flattenProductVariants: o
       },
-      children: f.map((e, t) => {
+      children: p.map((e, t) => {
         let n = u.A.getCategoryForProduct(e.skuId);
         return null == e || null == n ? null : (0, r.jsx)(c.R9, {
           newValue: {
@@ -110,10 +110,10 @@ let A = e => {
             pageSection: "top 4",
             categoryPosition: 0
           },
-          children: (0, r.jsx)(p.A, {
+          children: (0, r.jsx)(f.A, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: s === E.G2.ORBS ? h.Hi.ORBS : true,
-            onClickAnalytics: (0, h.UU)(e, s, i)
+            prioritizedCurrency: s === E.G2.ORBS ? b.Hi.ORBS : true,
+            onClickAnalytics: (0, b.UU)(e, s, i)
           }, e.skuId)
         }, e.skuId)
       })
@@ -127,35 +127,35 @@ let A = e => {
         isBlockLoading: d = false
       } = e,
       {
-        products: p
-      } = (t = (0, f.A)(), n = l.useMemo(() => d ? [] : t(i.rankedSkuIds), [d, t, i.rankedSkuIds]), s = (0, g.p)()(n), a = (0, m.X)(s), {
+        products: f
+      } = (t = (0, p.A)(), n = l.useMemo(() => d ? [] : t(i.rankedSkuIds), [d, t, i.rankedSkuIds]), s = (0, g.p)()(n), a = (0, m.X)(s), {
         products: (0, _.od)(a)
       }),
-      h = l.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(p.length > 0) && i.rankedSkuIds.every(e => {
+      b = l.useMemo(() => !d && 0 !== i.rankedSkuIds.length && !(f.length > 0) && i.rankedSkuIds.every(e => {
         var t;
         return (null == (t = u.A.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-      }), [d, i.rankedSkuIds, p.length]),
-      b = d || h;
+      }), [d, i.rankedSkuIds, f.length]),
+      h = d || b;
     switch (o) {
       case "row":
         return (0, r.jsx)(A, {
           heroBlockRecord: i,
-          isLoading: b,
-          products: p,
+          isLoading: h,
+          products: f,
           tab: c
         });
       case "feed":
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(x, {
           heroBlockRecord: i,
-          isLoading: b,
-          products: p,
+          isLoading: h,
+          products: f,
           tab: c
         });
       case "hscroll":
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(S, {
           heroBlockRecord: i,
-          isLoading: b,
-          products: p,
+          isLoading: h,
+          products: f,
           tab: c
         })
     }

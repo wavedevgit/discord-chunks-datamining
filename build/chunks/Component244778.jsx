@@ -59,10 +59,10 @@ function U(e) {
 }
 let k = () => {
     let e = (0, y._)();
-    return (0, r.jsx)(j.ir, {
+    return (0, r.jsx)(v.ir, {
       text: e,
       className: D.QR,
-      colorOptions: j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+      colorOptions: v.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   B = () => (0, r.jsx)("div", {
@@ -189,7 +189,7 @@ let k = () => {
       el = (0, b.JM)(P.gD.PREMIUM_MONTH_TIER_0),
       es = (0, b.JM)(P.gD.PREMIUM_MONTH_TIER_2),
       ea = (0, m.A)(),
-      eo = (0, v.R)(el, es, en, ei, ea.fractionalState),
+      eo = (0, j.R)(el, es, en, ei, ea.fractionalState),
       ec = (0, h.cg)(),
       {
         enabled: ed
@@ -259,10 +259,10 @@ let k = () => {
       withBottomBorder: false,
       withBottomBorderRadius: true,
       buttonsRow: null == $
-    }), n = w ? null : null != $ || null != ee ? (0, r.jsx)(j.ir, {
+    }), n = w ? null : null != $ || null != ee ? (0, r.jsx)(v.ir, {
       text: null != $ ? R.intl.string(R.t.IBYG5U) : R.intl.string(R.t.ce1v3V),
       className: D.ls,
-      colorOptions: $ === P.pe.TIER_0 ? Z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : Z ? J ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: $ === P.pe.TIER_0 ? Z ? v.at.PREMIUM_TIER_0_GRADIENT_FILL : v.at.PREMIUM_TIER_0_WHITE_FILL : Z ? J ? v.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : v.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : v.at.PREMIUM_TIER_2_WHITE_FILL
     }) : ec ? (0, r.jsx)(k, {}) : (0, r.jsx)(B, {});
     let ep = $ === P.pe.TIER_0 || ee === P.PremiumTypes.TIER_0 || G === P.PremiumTypes.TIER_0;
     return (0, r.jsx)(p.f5, {

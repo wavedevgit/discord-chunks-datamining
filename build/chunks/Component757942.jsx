@@ -42,9 +42,9 @@ let b = l().throttle(function(e, t) {
     I = (a = S, A = (_ = [g.ME, ...u.Ay.getFlattenedGuildIds()]).indexOf(a), e > 0 ? _.slice(A).concat(_.slice(0, A), a) : (_.splice(A, 0, a), _.slice(A + 1).concat(_.slice(0, A + 1)))),
     N = e > 0 ? 0 : I.length - 1,
     y = f(S, C),
-    j = y.indexOf(T) + e;
+    v = y.indexOf(T) + e;
   for (; null != S && "" !== S;) {
-    if (b = y[j], E(S))
+    if (b = y[v], E(S))
       for (; null != b && "" !== b;) {
         if ("string" == typeof b) {
           if (h(S, b)) return (0, m.i)(S, b, false, x(S, b))
@@ -84,10 +84,10 @@ let b = l().throttle(function(e, t) {
             guildId: S
           }))
         });
-        j += e, b = y[j]
+        v += e, b = y[v]
       }
     if (N += e, null == (S = I[N]) || "" === S) break;
-    y = f(S, C), j = e < 0 ? y.length - 1 : 0
+    y = f(S, C), v = e < 0 ? y.length - 1 : 0
   }
   p._.dispatch(g.jej.SHAKE_APP, {
     duration: 200,

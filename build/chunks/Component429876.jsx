@@ -2,7 +2,7 @@
 /** chunk id: 429876, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -26,7 +26,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk356365 = require("./356365.js");
 
-function x(e) {
+function S(e) {
   let {
     tab: t,
     sortedCategories: n,
@@ -40,14 +40,14 @@ function x(e) {
       handleScroll: g
     } = (0, o.X)(u, t),
     {
-      setCategoryRef: f,
-      handleScrollToCategory: p
+      setCategoryRef: p,
+      handleScrollToCategory: f
     } = (0, m.k0)(u.current),
-    [b, _] = l.useState(a),
+    [h, _] = l.useState(a),
     [E, v] = l.useState(false);
   return l.useEffect(() => {
-    null != s && p(s)
-  }, [s, p]), l.useEffect(() => () => {
+    null != s && f(s)
+  }, [s, f]), l.useEffect(() => () => {
     null != c && c()
   }, []), l.useEffect(() => {
     let e = () => {
@@ -55,28 +55,28 @@ function x(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), (0, r.jsx)("div", {
-    className: S.VM,
+    className: x.VM,
     children: (0, r.jsxs)("main", {
-      className: S.MY,
+      className: x.MY,
       children: [(0, r.jsx)(i.GtU, {
-        className: S.OW,
+        className: x.OW,
         ref: u,
         onScroll: g,
         children: (0, r.jsx)(O, {
           isSmallScreen: E,
-          filterBarOpen: b,
+          filterBarOpen: h,
           setFilterBarOpen: _,
           tab: t,
           scrollerRef: u,
           sortedCategories: n,
-          setCategoryRef: f,
+          setCategoryRef: p,
           initialCategoryId: s
         })
-      }), b && !E && (0, r.jsx)("div", {
-        className: S.yF
-      }), b && !E && (0, r.jsx)(i.HOs, {
-        className: S.kT,
-        children: (0, r.jsx)(h.A, {})
+      }), h && !E && (0, r.jsx)("div", {
+        className: x.yF
+      }), h && !E && (0, r.jsx)(i.HOs, {
+        className: x.kT,
+        children: (0, r.jsx)(b.A, {})
       })]
     })
   })
@@ -88,13 +88,13 @@ let O = e => {
     setFilterBarOpen: s,
     tab: o,
     scrollerRef: m,
-    sortedCategories: x,
+    sortedCategories: S,
     setCategoryRef: O,
     initialCategoryId: y
   } = e, j = l.useRef(null), L = (0, d.v)(e => e.hasDefaultFilters()), T = (0, u.uM)(), {
     handlePageChange: I,
     currentPage: k
-  } = (0, b.Z)(m), N = l.useCallback(e => {
+  } = (0, h.Z)(m), N = l.useCallback(e => {
     c.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == T ? true : T.sessionId,
       page_section: null == T ? true : T.pageSection,
@@ -121,24 +121,24 @@ let O = e => {
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
   }, [t, n, s, T]), (0, r.jsx)("div", {
-    className: S.en,
+    className: x.en,
     children: (0, r.jsxs)("div", {
-      className: S.pf,
+      className: x.pf,
       children: [(0, r.jsxs)("div", {
-        className: S.ne,
+        className: x.ne,
         children: [(0, r.jsx)("div", {
-          className: S.lQ,
+          className: x.lQ,
           children: (0, r.jsx)(g.A, {})
         }), (0, r.jsxs)("div", {
-          className: a()(S.wR, {
-            [S.Im]: t
+          className: a()(x.wR, {
+            [x.Im]: t
           }),
           children: [(0, r.jsxs)("div", {
-            className: S.Ul,
+            className: x.Ul,
             children: [(0, r.jsx)(i.Text, {
               variant: "text-md/semibold",
               children: A.intl.string(A.t.uaX705)
-            }), (0, r.jsx)(p.A, {})]
+            }), (0, r.jsx)(f.A, {})]
           }), (0, r.jsx)("div", {
             ref: R,
             children: (0, r.jsx)(i.Button, {
@@ -161,11 +161,11 @@ let O = e => {
             })
           })]
         }), n && t && (0, r.jsx)("div", {
-          className: S.Dh,
+          className: x.Dh,
           ref: j,
           children: (0, r.jsx)(i.T7Y, {
-            className: S.Qo,
-            children: (0, r.jsx)(h.A, {})
+            className: x.Qo,
+            children: (0, r.jsx)(b.A, {})
           })
         })]
       }), L ? (0, v.dF)(o) ? (0, r.jsx)(E.A, {
@@ -175,8 +175,8 @@ let O = e => {
         newValue: {
           pageIndex: k
         },
-        children: (0, r.jsx)(f.A, {
-          sortedCategories: x,
+        children: (0, r.jsx)(p.A, {
+          sortedCategories: S,
           setCategoryRef: O,
           currentPage: k,
           handlePageChange: N,

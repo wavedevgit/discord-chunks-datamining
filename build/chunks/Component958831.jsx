@@ -145,8 +145,8 @@ function I(e) {
       return n
     }, [t]), t ? null : n),
     {
-      focusedIndex: j,
-      setFocusedIndex: v
+      focusedIndex: v,
+      setFocusedIndex: j
     } = function(e) {
       let [t, n] = i.useState(0), r = i.useRef(e);
       return e !== r.current && 0 !== t && n(0), i.useEffect(() => {
@@ -160,18 +160,18 @@ function I(e) {
     let {
       current: e
     } = O;
-    null == e || e.isItemVisible(0, j, true) || e.scrollToIndex({
+    null == e || e.isItemVisible(0, v, true) || e.scrollToIndex({
       section: 0,
-      row: j
+      row: v
     })
-  }, [j]);
+  }, [v]);
   let P = null != y ? y.length : N.length,
     R = (() => {
       if (null != y) {
         var e;
-        return null == (e = y[j]) ? true : e.id
+        return null == (e = y[v]) ? true : e.id
       }
-      let t = N[j];
+      let t = N[v];
       if ((null == t ? true : t.type) === A.rD.VOICE_CHANNEL) return t.record.id
     })(),
     D = P > 0 || "" === T ? {
@@ -195,12 +195,12 @@ function I(e) {
           id: n.id,
           channel: n,
           category: i,
-          focused: j === t,
-          onMouseEnter: () => v(t),
+          focused: v === t,
+          onMouseEnter: () => j(t),
           onClick: () => {
             h(n.id), d()
           },
-          onFocus: () => v(t),
+          onFocus: () => j(t),
           children: null != l ? (0, r.jsx)("div", {
             className: b.J5,
             children: l.name
@@ -232,18 +232,18 @@ function I(e) {
             break;
           case "enter": {
             let e = (() => {
-              if (null != y) return y[j];
-              let e = N[j];
+              if (null != y) return y[v];
+              let e = N[v];
               if ((null == e ? true : e.type) === A.rD.VOICE_CHANNEL) return e.record
             })();
             null == e ? h(true) : h(e.id), d();
             break
           }
           case "arrowup":
-            0 === j ? v(P - 1) : v(j - 1);
+            0 === v ? j(P - 1) : j(v - 1);
             break;
           case "arrowdown":
-            j >= P - 1 ? v(0) : v(j + 1)
+            v >= P - 1 ? j(0) : j(v + 1)
         }
       },
       placeholder: f.intl.string(f.t.tG0r7g),

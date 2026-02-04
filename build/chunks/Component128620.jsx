@@ -92,19 +92,22 @@ let R = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
           };
         case A.L.PAYMENT_ERROR:
           return {
-            displayTotalLifetimeRewards: null != l, displayProgressBar: false, actionButton: (0, r.jsx)("span", {
-              className: t ? "theme-dark" : true,
-              children: (0, r.jsx)(c.$nd, {
-                text: y.intl.string(N.default.KVCfnE),
-                variant: "critical-secondary",
-                onClick: () => {
-                  E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
-                    cta_type: "update_billing",
-                    program_state: n
-                  }), (0, h.openUserSettings)(b.X.BILLING_PANEL, {
-                    section: S.nc_.BILLING
-                  })
-                }
+            displayTotalLifetimeRewards: null != l, displayProgressBar: false, actionButton: (0, r.jsx)(c.NPJ, {
+              theme: t ? S.NJ8.DARKER : true,
+              children: e => (0, r.jsx)("span", {
+                className: e,
+                children: (0, r.jsx)(c.$nd, {
+                  text: y.intl.string(N.default.KVCfnE),
+                  variant: "critical-secondary",
+                  onClick: () => {
+                    E.default.track(S.HAw.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED, {
+                      cta_type: "update_billing",
+                      program_state: n
+                    }), (0, h.openUserSettings)(b.X.BILLING_PANEL, {
+                      section: S.nc_.BILLING
+                    })
+                  }
+                })
               })
             }), headerText: y.intl.string(N.default["+O9Asn"]), subheaderText: y.intl.format(N.default.nWKEBZ, {
               helpdeskArticle: R
@@ -156,7 +159,7 @@ let R = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
       subheaderText: V
     } = G;
     return (0, r.jsx)("div", {
-      className: s()(j.Hc, l),
+      className: s()(v.Hc, l),
       children: (0, r.jsxs)(x.A, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -176,59 +179,62 @@ let R = Chunk975571.A.getArticleURL(Chunk652215.MVz.ORBS_REWARDS_FAQ),
         return e
       }({
         cardType: u.sl2.CUSTOM,
-        cardClassName: j.Nr
+        cardClassName: v.Nr
       }, M), n = n = {
         children: [(0, r.jsx)(m.A, {
           muted: true,
           autoPlay: true,
           playsInline: true,
           loop: true,
-          className: j.Ki,
-          src: v.A
+          className: v.Ki,
+          src: j.A
         }), (0, r.jsxs)("div", {
-          className: j.zK,
+          className: v.zK,
           children: [(0, r.jsx)("img", {
             src: P.A,
-            className: j._e,
+            className: v._e,
             alt: "",
             "aria-hidden": true
           }), (0, r.jsx)("div", {
-            className: j.mR
+            className: v.mR
           })]
         }), (0, r.jsxs)("div", {
-          className: j.FS,
-          children: [(0, r.jsx)("div", {
-            className: j.aZ,
-            children: (0, r.jsx)(c.Exy, {
-              type: "beta",
-              variant: "expressive"
+          className: v.FS,
+          children: [(0, r.jsx)(c.NPJ, {
+            theme: L ? S.NJ8.DARKER : true,
+            children: e => (0, r.jsx)("div", {
+              className: e,
+              children: (0, r.jsx)(c.Exy, {
+                type: "beta",
+                variant: "expressive"
+              })
             })
           }), (0, r.jsx)(c.DZT, {
             variant: "heading-xl/bold",
-            className: j.R_,
+            className: v.R_,
             children: H
           }), (0, r.jsx)(c.EYj, {
             variant: "text-md/medium",
-            className: j.G3,
+            className: v.G3,
             children: V
           }), k && (0, r.jsx)(C.A, {
-            className: j.L$
+            className: v.L$
           }), U && D.total_rewarded_from_program > 0 && (0, r.jsxs)("div", {
-            className: j.fB,
+            className: v.fB,
             children: [(0, r.jsx)(c.EYj, {
               variant: "text-md/medium",
-              className: j.G3,
+              className: v.G3,
               children: y.intl.string(N.default["/1mWUn"])
             }), (0, r.jsx)(c.Cp8, {
               size: "sm",
               color: "currentColor"
             }), (0, r.jsx)(c.EYj, {
               variant: "text-md/medium",
-              className: j.G3,
+              className: v.G3,
               children: D.total_rewarded_from_program
             })]
           }), (0, r.jsx)("div", {
-            className: j.WT,
+            className: v.WT,
             children: (0, r.jsx)(c.e2v, {
               children: B
             })

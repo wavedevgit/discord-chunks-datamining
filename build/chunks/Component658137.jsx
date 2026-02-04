@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 658137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => j
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,17 +30,17 @@ var Chunk627968 = require("./627968.js"),
   Chunk182514 = require("./182514.js"),
   Chunk619947 = require("./619947.js"),
   Chunk733907 = require("./733907.js");
-let v = Chunk64700.forwardRef((e, t) => {
+let j = Chunk64700.forwardRef((e, t) => {
   let {
     className: n,
     buttonClassName: i,
     subscriptionTier: l,
-    isDarkMode: v,
+    isDarkMode: j,
     isEligibleForBogoPromotion: P,
     videoRef: R
   } = e, {
     analyticsLocations: D
-  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), L = (0, f.QQ)(), w = (0, A.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), G = (0, b.A)(), U = null != G, k = v ? o.XD.WHITE : o.XD.BRAND, B = M.length > 0, H = T.intl.string(T.t.YCZldK), V = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
+  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), L = (0, f.QQ)(), w = (0, A.ar)(), M = (0, a.bG)([g.A], () => g.A.affinities), G = (0, b.A)(), U = null != G, k = j ? o.XD.WHITE : o.XD.BRAND, B = M.length > 0, H = T.intl.string(T.t.YCZldK), V = (0, m.TM)(), F = (0, a.bG)([d.A], () => d.A.useReducedMotion);
   return (0, r.jsx)(_.f5, {
     value: D,
     children: (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ let v = Chunk64700.forwardRef((e, t) => {
             }),
             buttonClassName: i,
             isApplicationHome: true,
-            isDarkMode: v,
+            isDarkMode: j,
             isEligibleForBogoPromotion: P
           }), (0, r.jsx)(x.U9, {
             variant: "text-sm/normal",
@@ -100,7 +100,7 @@ let v = Chunk64700.forwardRef((e, t) => {
           className: I.gm,
           ref: R,
           children: (0, r.jsx)("source", {
-            src: V ? N.A : j.A,
+            src: V ? N.A : v.A,
             type: V ? S.a.MP4 : S.a.WEBM
           })
         })

@@ -62,7 +62,8 @@ let O = new Chunk626584.A("DispatcherBridge"),
       currentUserId: c.default.getId()
     }),
     CONNECTION_OPEN: e => ({
-      guilds: e.guilds
+      guilds: e.guilds,
+      unavailableGuilds: e.unavailableGuilds
     }),
     CACHE_LOADED: e => ({
       guilds: e.guilds

@@ -46,20 +46,20 @@ function f(e) {
   }
   i.useEffect(() => () => o.h.wait(() => c.SH()), []);
   let y = null != f && f === E,
-    j = y ? function() {
+    v = y ? function() {
       c.cL(), O(""), T(null)
     } : N,
-    v = i.useMemo(() => [{
+    j = i.useMemo(() => [{
       loading: h,
       disabled: !I || 0 === E.length || "localhost" === S && 0 === x.length,
       variant: y ? "critical-primary" : "active",
       text: y ? p.intl.string(p.t.d6TR3I) : p.intl.string(p.t.qwuK5I),
-      onClick: j
-    }], [E.length, h, y, I, x.length, j, S]);
+      onClick: v
+    }], [E.length, h, y, I, x.length, v, S]);
   return (0, r.jsxs)(l.Modal, {
     title: p.intl.string(p.t.f8fzky),
     subtitle: p.intl.string(p.t.a6Vill),
-    actions: v,
+    actions: j,
     onClose: t,
     transitionState: n,
     children: [null == b ? null : (0, r.jsx)("div", {

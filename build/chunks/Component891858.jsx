@@ -33,8 +33,8 @@ let I = e => {
       previousComponent: N,
       enablePremiumBrandRefresh: y
     } = e,
-    j = i.useRef(null),
     v = i.useRef(null),
+    j = i.useRef(null),
     P = Object.entries((0, h.A)()).reduce((e, t) => {
       let [n, r] = t;
       returnfalse !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
@@ -62,7 +62,7 @@ let I = e => {
       [S.ho]: l,
       [S.LM]: w
     }),
-    ref: j,
+    ref: v,
     children: (0, r.jsx)(c.hLv, {
       color: "nitro-pink",
       className: s()(S.kL, S.Gd, {
@@ -131,14 +131,14 @@ let I = e => {
         }), (0, r.jsx)("div", {
           className: S.hz
         }), (0, r.jsx)(o.L, {
-          innerRef: v,
+          innerRef: j,
           onChange: e => {
             e && !D && (m.default.track(x.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: R
             }), L(true))
           },
           children: (0, r.jsx)("div", {
-            ref: v,
+            ref: j,
             className: S._Z
           })
         }), (0, r.jsx)("img", {

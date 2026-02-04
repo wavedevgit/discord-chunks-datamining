@@ -77,7 +77,7 @@ let ei = () => {
       assetUrl: y
     },
     serverProfiles: {
-      thumbnail: j,
+      thumbnail: v,
       assetUrl: l ? $.Ay : ee.Ay
     },
     customThemes: {
@@ -86,7 +86,7 @@ let ei = () => {
     },
     displayNameStyles: {
       thumbnail: P.A,
-      assetUrl: l ? v.A : R.A
+      assetUrl: l ? j.A : R.A
     },
     referralProgram: {
       thumbnail: B.A,

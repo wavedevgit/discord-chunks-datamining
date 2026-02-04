@@ -2,7 +2,7 @@
 /** chunk id: 212602, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => E
+  A: () => _
 }), require("./638769.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -18,40 +18,39 @@ var Chunk627968 = require("./627968.js"),
   Chunk758836 = require("./758836.js"),
   Chunk652215 = require("./652215.js"),
   Chunk985018 = require("./985018.jsx"),
-  Chunk785244 = require("./785244.js"),
-  Chunk816917 = require("./816917.js");
-let E = () => {
+  Chunk785244 = require("./785244.js");
+let _ = () => {
   let {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, g.v)(), s = (0, d.uM)(), E = (0, f.y)("CollectiblesSortSelect"), v = n(), C = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || v), [v]), A = l.useCallback(e => {
+  } = (0, g.v)(), s = (0, d.uM)(), _ = (0, p.yB)("CollectiblesSortSelect"), E = n(), v = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), C = l.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
     } = e;
     return t === o.$.RECENCY ? {
-      label: h.intl.string(h.t["51Bhiz"]),
+      label: b.intl.string(b.t["51Bhiz"]),
       value: "recent",
       id: "recent"
     } : t === o.$.PRICE ? n === i.A.ASC ? {
-      label: h.intl.string(h.t.m8RVU2),
+      label: b.intl.string(b.t.m8RVU2),
       value: "price-asc",
       id: "price-asc"
     } : {
-      label: h.intl.string(h.t.zBwQJO),
+      label: b.intl.string(b.t.zBwQJO),
       value: "price-desc",
       id: "price-desc"
     } : t === o.$.RELEVANCE ? {
-      label: h.intl.string(h.t["XoeT/z"]),
+      label: b.intl.string(b.t["XoeT/z"]),
       value: "relevance",
       id: "relevance"
     } : {
-      label: h.intl.string(h.t.Y68e5p),
+      label: b.intl.string(b.t.Y68e5p),
       value: "popularity",
       id: "popularity"
     }
-  }, []), S = l.useCallback(e => ({
+  }, []), A = l.useCallback(e => ({
     recent: {
       sortType: o.$.RECENCY,
       sortDirection: i.A.DESC
@@ -73,8 +72,8 @@ let E = () => {
       sortDirection: i.A.DESC
     }
   })[e], []), x = l.useCallback(e => {
-    let n = A(S(e));
-    u.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    let n = C(A(e));
+    u.default.track(f.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == s ? true : s.sessionId,
       page_section: null == s ? true : s.pageSection,
       page_category: null == s ? true : s.pageCategory,
@@ -82,18 +81,18 @@ let E = () => {
       page_size: null == s ? true : s.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(S(e))
-  }, [s, A, S, t]), O = A(e);
+    }), t(A(e))
+  }, [s, C, A, t]), S = C(e);
   return (0, r.jsx)("div", {
-    className: a()(b.k, {
-      [_.T3]: E
+    className: a()(h.k, {
+      [p.jP]: _
     }),
     children: (0, r.jsx)(c.l6P, {
-      label: h.intl.string(h.t.uaX705),
+      label: b.intl.string(b.t.uaX705),
       hideLabel: true,
-      options: C.map(A),
+      options: v.map(C),
       onSelectionChange: x,
-      value: O.value,
+      value: S.value,
       selectionMode: "single",
       fullWidth: true
     })

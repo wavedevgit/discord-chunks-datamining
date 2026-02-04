@@ -101,10 +101,10 @@ let b = Chunk64700.memo(function(e) {
     allowHeading: X || V,
     allowLinks: true,
     previewLinkTarget: true
-  }), K = i.type === C.lAJ.REPLY ? i.messageReference : true, Y = (0, s.bG)([E.A], () => E.A.getMessageByReference(K)), $ = (0, o.rm)(i.id), z = (0, T.Ay)(i), J = (0, s.bG)([d.A], () => i.hasFlag(C.pr7.HAS_THREAD) && d.A.getChannel(_.default.castMessageIdAsChannelId(i.id))), Z = (0, c.$7)({
+  }), K = i.type === C.lAJ.REPLY ? i.messageReference : true, Y = (0, s.bG)([E.A], () => E.A.getMessageByReference(K)), $ = (0, o.rm)(i.id), z = (0, T.Ay)(i), Q = (0, s.bG)([d.A], () => i.hasFlag(C.pr7.HAS_THREAD) && d.A.getChannel(_.default.castMessageIdAsChannelId(i.id))), J = (0, c.$7)({
     guildId: v.guild_id,
     roleId: z.iconRoleId
-  }), Q = (0, p.A)({
+  }), Z = (0, p.A)({
     message: i,
     channel: v,
     enabled: w
@@ -121,7 +121,7 @@ let b = Chunk64700.memo(function(e) {
     childrenHeader: (0, P.A)(h(D({}, e), {
       guildId: v.guild_id,
       author: z,
-      roleIcon: Z
+      roleIcon: J
     })),
     childrenAccessories: e.hideAccessories ? true : (0, R.J)(e, H, W),
     childrenMessageContent: (0, S.A)(e, F),
@@ -130,11 +130,11 @@ let b = Chunk64700.memo(function(e) {
     })),
     onContextMenu: U,
     onClick: M,
-    hasThread: G && null != J && i.hasFlag(C.pr7.HAS_THREAD),
+    hasThread: G && null != Q && i.hasFlag(C.pr7.HAS_THREAD),
     hasReply: i.type === C.lAJ.REPLY,
     "aria-labelledby": ee,
     "aria-describedby": et,
-    messageRef: Q,
+    messageRef: Z,
     author: z
   }, $, B))
 })

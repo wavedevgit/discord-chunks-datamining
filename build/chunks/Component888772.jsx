@@ -30,7 +30,7 @@ var Chunk627968 = require("./627968.js"),
   Chunk473169 = require("./473169.js"),
   Chunk525351 = require("./525351.js");
 
-function j(e) {
+function v(e) {
   let {
     header: t,
     description: n,
@@ -62,7 +62,7 @@ function j(e) {
   })
 }
 
-function v() {
+function j() {
   return (0, r.jsxs)("div", {
     className: s()(I.aP, T.a, I.dO, I.p2),
     children: [(0, r.jsxs)("div", {
@@ -87,15 +87,15 @@ function v() {
       })]
     }), (0, r.jsxs)("div", {
       className: I.Ci,
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(v, {
         header: S.intl.string(C.default["7xxAni"]),
         description: S.intl.string(C.default["1M9So2"]),
         stepNumber: 1
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(v, {
         header: S.intl.string(C.default["AXgx+a"]),
         description: S.intl.string(C.default.GzMFnb),
         stepNumber: 2
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(v, {
         header: S.intl.string(C.default.MZn1tG),
         description: S.intl.string(C.default["8rLBxD"]),
         stepNumber: 3
@@ -313,6 +313,6 @@ let D = () => {
     let e = (0, m.A)();
     return (0, r.jsxs)("div", {
       className: I.kL,
-      children: [e ? (0, r.jsx)(v, {}) : (0, r.jsx)(P, {}), (0, r.jsx)(D, {}), (0, r.jsx)(M, {}), (0, r.jsx)(L, {}), (0, r.jsx)(w, {})]
+      children: [e ? (0, r.jsx)(j, {}) : (0, r.jsx)(P, {}), (0, r.jsx)(D, {}), (0, r.jsx)(M, {}), (0, r.jsx)(L, {}), (0, r.jsx)(w, {})]
     })
   }

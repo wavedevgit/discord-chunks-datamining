@@ -49,7 +49,7 @@ function y(e) {
   }
   return e
 }
-let j = {
+let v = {
     [Chunk852218.KS]: {
       title: Chunk985018.t.sfGgOG,
       body: Chunk985018.t.igiSKe,
@@ -73,7 +73,7 @@ let j = {
       asset: Chunk870378.A
     }
   },
-  v = e => {
+  j = e => {
     let {
       recurrence: t
     } = e, n = (0, r.jsx)(l.rOg, {
@@ -112,7 +112,7 @@ let j = {
       })
     })
   },
-  P = () => Object.entries(j).map(e => {
+  P = () => Object.entries(v).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
       className: T.lA,
@@ -161,7 +161,7 @@ let j = {
     i.useEffect(() => {
       f([d.sort((e, t) => t.startDate > e.startDate ? 1 : false)[0]])
     }, [d]);
-    let E = (t = d[0].partnerId, n = (0, s.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (c = j[t]) ? null : n ? c.logos.dark : c.logos.light),
+    let E = (t = d[0].partnerId, n = (0, s.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (c = v[t]) ? null : n ? c.logos.dark : c.logos.light),
       O = (0, r.jsx)(a._V3, {
         src: d[0].asset,
         className: T.Ys,
@@ -232,7 +232,7 @@ let j = {
               className: T.R4,
               children: O
             })]
-          }), null != e.code && (0, r.jsx)(v, {
+          }), null != e.code && (0, r.jsx)(j, {
             recurrence: e
           })]
         }, e.id)
@@ -306,7 +306,7 @@ let j = {
             let {
               promotion: n
             } = e, r = L(n);
-            return null == r ? null : null != (t = j[r]) ? t : null
+            return null == r ? null : null != (t = v[r]) ? t : null
           })({
             promotion: e
           });

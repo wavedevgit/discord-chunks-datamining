@@ -20,13 +20,13 @@ let g = e => {
     bannerAnimated: n,
     bannerRive: l,
     isResponsive: g = false,
-    eventTargetRef: f
-  } = e, m = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = (0, a.bG)([u.A], () => u.A.isFocused()), h = null != n && !m && p;
+    eventTargetRef: p
+  } = e, m = (0, a.bG)([o.A], () => o.A.useReducedMotion), f = (0, a.bG)([u.A], () => u.A.isFocused()), b = null != n && !m && f;
   return null != l ? (0, r.jsx)(i._, {
     src: l,
     fit: "fit-width",
-    eventTargetRef: f
-  }) : h ? (0, r.jsx)(c.A, {
+    eventTargetRef: p
+  }) : b ? (0, r.jsx)(c.A, {
     className: s()({
       [d.no]: g
     }, d.BW, d.ud),

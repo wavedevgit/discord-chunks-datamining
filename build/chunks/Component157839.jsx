@@ -59,8 +59,8 @@ let E = e => {
       T && N()
     }, [N, T]);
     let y = (0, b.G4)(T),
-      j = (0, A.A)(),
-      v = (0, b.LQ)(),
+      v = (0, A.A)(),
+      j = (0, b.LQ)(),
       {
         fractionalState: P
       } = (0, c.A)(),
@@ -70,10 +70,10 @@ let E = e => {
       }).enabled,
       L = (0, p.O9)(),
       w = (0, b.vx)({
-        perksCards: j,
+        perksCards: v,
         variant: n,
         hideCardsOnNarrowScreen: false,
-        isPremiumSubscriber: v,
+        isPremiumSubscriber: j,
         fractionalState: P,
         isInReverseTrial: R,
         recurring3PPromotionExperiment: D,

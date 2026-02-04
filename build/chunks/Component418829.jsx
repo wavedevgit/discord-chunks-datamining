@@ -24,26 +24,26 @@ function p(e) {
     onClose: y,
     sidebarFooter: g,
     onPanelChange: m,
-    emptyState: h,
-    searchQuery: O,
+    emptyState: O,
+    searchQuery: h,
     onSearchChange: j
   } = e, x = _.A.useField("currentPanelKey"), {
     node: v,
     visibleDirectory: S,
     accessibleDirectory: C
-  } = (0, d.Ay)(n, null != O ? O : ""), P = null != p && (null == (t = S.entry(p)) ? true : t.parentPanelKey) != null ? p : f, w = o.useMemo(() => {
+  } = (0, d.Ay)(n, null != h ? h : ""), w = null != p && (null == (t = S.entry(p)) ? true : t.parentPanelKey) != null ? p : f, P = o.useMemo(() => {
     var e;
-    let t = null == (e = C.entry(null != x ? x : P)) ? true : e.parentPanelKey;
+    let t = null == (e = C.entry(null != x ? x : w)) ? true : e.parentPanelKey;
     if (null != t) return C.getPanelOrThrow(t)
-  }, [x, C, P]), {
+  }, [x, C, w]), {
     navigateWithValidation: k
   } = (0, s.L_)();
   (0, l.Ay)(() => {
     var e, t, n;
-    let r = S.entry(P).parentPanelKey,
-      o = null == (e = S.entry(P)) ? true : e.parentTabKey,
-      a = null == (t = S.entry(P)) ? true : t.parentCategoryKey,
-      l = null == (n = S.entry(P)) ? true : n.parentAccordionKey;
+    let r = S.entry(w).parentPanelKey,
+      o = null == (e = S.entry(w)) ? true : e.parentTabKey,
+      a = null == (t = S.entry(w)) ? true : t.parentCategoryKey,
+      l = null == (n = S.entry(w)) ? true : n.parentAccordionKey;
     return _.A.setState({
       currentPanelKey: r,
       currentTabKeys: null != o ? new Map([
@@ -51,7 +51,7 @@ function p(e) {
       ]) : new Map,
       currentCategoryKey: a,
       navTransition: {
-        targetKey: P,
+        targetKey: w,
         targetAccordionKey: l,
         animateScroll: false
       },
@@ -111,12 +111,12 @@ function p(e) {
         root: v,
         footer: g,
         onClose: A,
-        emptyState: h,
-        searchQuery: O,
+        emptyState: O,
+        searchQuery: h,
         onSearchChange: j
       }), (0, r.jsx)(i.A, {
         onClose: A,
-        setting: null != E ? E : w
+        setting: null != E ? E : P
       })]
     })
   })

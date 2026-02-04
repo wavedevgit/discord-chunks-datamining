@@ -108,9 +108,9 @@ let T = function(e) {
       discountOffer: y
     } = e,
     {
-      analyticsLocations: j
+      analyticsLocations: v
     } = (0, a.Ay)(s.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
-    v = e => {
+    j = e => {
       (0, l.mMO)(async () => {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
@@ -137,7 +137,7 @@ let T = function(e) {
           }({}, n), l = l = {
             premiumSubscription: p,
             analyticsLocation: T,
-            analyticsLocations: j,
+            analyticsLocations: v,
             initialStep: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -195,7 +195,7 @@ let T = function(e) {
                 size: "md",
                 text: h.intl.string(h.t.zrCzVB),
                 loading: f,
-                onClick: () => v(A.g.CONFIRM_DISCOUNT)
+                onClick: () => j(A.g.CONFIRM_DISCOUNT)
               }) : (0, r.jsxs)("div", {
                 className: E.qK,
                 children: [(0, r.jsx)(i.m, {
@@ -209,7 +209,7 @@ let T = function(e) {
                     size: "md",
                     onClick: () => {
                       (0, o.A)({
-                        analyticsLocations: j,
+                        analyticsLocations: v,
                         analyticsLocation: T,
                         analyticsObject: x,
                         subscription: p
@@ -222,7 +222,7 @@ let T = function(e) {
                   text: h.intl.string(h.t["ETE/oC"]),
                   loading: f,
                   onClick: () => {
-                    p.status !== b.Dmq.CANCELED && v()
+                    p.status !== b.Dmq.CANCELED && j()
                   }
                 })]
               }))

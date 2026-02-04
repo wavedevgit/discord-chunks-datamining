@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 659533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => v
+  A: () => j
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -91,7 +91,7 @@ let N = e => {
       })]
     })
   },
-  j = e => {
+  v = e => {
     let {
       userRecords: t
     } = e, n = t.length, i = n < 1 ? null : t[0], l = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
@@ -115,7 +115,7 @@ let N = e => {
       })]
     })
   },
-  v = e => {
+  j = e => {
     let {
       isInSettings: t = false
     } = e, l = (0, a.bG)([b.A], () => b.A.getRecipientStatus()), {
@@ -129,7 +129,7 @@ let N = e => {
       e === f.aK.REDEEMED && N.redeemed++, e === f.aK.CONVERTED && (N.redeemed++, N.converted++)
     });
     let y = N.sent === h.Z,
-      v = A.A.getArticleURL(x.MVz.REFERRAL_PROGRAM),
+      j = A.A.getArticleURL(x.MVz.REFERRAL_PROGRAM),
       {
         analyticsLocations: P
       } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -152,12 +152,12 @@ let N = e => {
             children: (0, O.X8)({
               hasSentAll: y
             })
-          }), (0, r.jsx)(j, {
+          }), (0, r.jsx)(v, {
             userRecords: p
           }), (0, r.jsx)(d.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, O.dB)({
-              helpdeskArticle: v,
+              helpdeskArticle: j,
               referralsStatuses: N
             })
           }), (0, r.jsx)("div", {

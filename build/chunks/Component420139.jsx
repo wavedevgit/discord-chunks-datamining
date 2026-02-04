@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 420139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => v
 }), require("./896048.js"), require("./65821.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -30,20 +30,20 @@ var Chunk627968 = require("./627968.js"),
   Chunk752375 = require("./752375.js"),
   Chunk20976 = require("./20976.js");
 
-function j(e) {
+function v(e) {
   let {
     subscription: t,
     onPaymentSourceAdded: n,
     highlightAddPaymentMethodButton: l,
     dropdownClassName: a,
-    analyticsLocation: j,
+    analyticsLocation: v,
     currentInvoicePreview: P,
     disabled: R = false
   } = e, D = (0, c.bG)([b.A], () => b.A.hidePersonalInformation), [L, w] = (0, c.yK)([h.A], () => [h.A.paymentSources, h.A.hasFetchedPaymentSources]), M = (0, f.Y)((0, C.MP)(t)), {
     analyticsLocations: G
   } = (0, A.Ay)(), U = i.useMemo(() => Object.values(L).filter(e => !e.invalid), [L]), [k, B] = i.useState(false), [H, V] = i.useState(t.currency), F = async (e, n, r) => {
     if (null == t) throw Error("missing subscription and paymentSource");
-    null == e ? await _.r6(t, n, r, G, j) : await _.uK(t, e, n, r, G, j), B(false), V(n)
+    null == e ? await _.r6(t, n, r, G, v) : await _.uK(t, e, n, r, G, v), B(false), V(n)
   }, Y = async (e, n, r) => {
     B(true);
     let i = await (0, S.OQ)({
@@ -52,13 +52,13 @@ function j(e) {
         renewal: true,
         currency: n,
         analyticsLocations: G,
-        analyticsLocation: j
+        analyticsLocation: v
       }),
       l = {
         amount: i.subtotal,
         currency: i.currency
       };
-    P.currency !== i.currency || P.currency === i.currency && P.total !== i.total ? await v(i, () => {
+    P.currency !== i.currency || P.currency === i.currency && P.total !== i.total ? await j(i, () => {
       r(e, n, l)
     }, () => {
       B(false)
@@ -94,7 +94,7 @@ function j(e) {
         return e
       }({}, e), n = n = {
         onAddPaymentSource: K,
-        analyticsLocation: j
+        analyticsLocation: v
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -170,7 +170,7 @@ function j(e) {
     })
   }
 }
-let v = async (e, t, i) => {
+let j = async (e, t, i) => {
   let l = await (0, d.mMO)(async () => {
     let {
       default: l

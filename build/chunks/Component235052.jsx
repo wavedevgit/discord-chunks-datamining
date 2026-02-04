@@ -1,7 +1,7 @@
 /** Chunk was on 88474 **/
 /** chunk id: 235052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b,
+  A: () => h,
   u: () => y
 });
 var Chunk627968 = require("./627968.js");
@@ -27,8 +27,8 @@ function y(e, t, n) {
     location: n
   }, {
     autoTrackExposure: false
-  }), l = (0, i.bG)([c.default], () => c.default.getId()), m = (0, f.A)(e, t.guild_id)[0], g = (0, i.bG)([s.A], () => null != s.A.getStreamForUser(e, t.getGuildId())), y = (0, o.YY)(null == m ? true : m.application_id).data, b = (0, d.A)(e, t.id);
-  return l !== e && null != m && null != y && r && b && !g ? {
+  }), l = (0, i.bG)([c.default], () => c.default.getId()), m = (0, f.A)(e, t.guild_id)[0], g = (0, i.bG)([s.A], () => null != s.A.getStreamForUser(e, t.getGuildId())), y = (0, o.YY)(null == m ? true : m.application_id).data, h = (0, d.A)(e, t.id);
+  return l !== e && null != m && null != y && r && h && !g ? {
     playingApplication: y,
     handleRequestToStream: function(n) {
       a.A.sendActivityInvite({
@@ -43,7 +43,7 @@ function y(e, t, n) {
   } : null
 }
 
-function b(e, t) {
+function h(e, t) {
   let n = y(e, t, "useRequestToStreamItem");
   return null == n ? null : (0, r.jsx)(l.Drp, {
     id: "request-to-stream",

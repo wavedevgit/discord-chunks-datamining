@@ -97,7 +97,7 @@ let I = Chunk64700.forwardRef((e, t) => {
     isDarkMode: _
   } = e, {
     analyticsLocations: b
-  } = (0, u.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), E = (0, A.QQ)(), I = (0, g.ar)(), N = (0, m.cg)(), y = (0, a.bG)([p.A], () => p.A.affinities).length > 0, j = O.intl.string(O.t.YCZldK);
+  } = (0, u.Ay)(d.A.PREMIUM_MARKETING_HERO_CTA), E = (0, A.QQ)(), I = (0, g.ar)(), N = (0, m.cg)(), y = (0, a.bG)([p.A], () => p.A.affinities).length > 0, v = O.intl.string(O.t.YCZldK);
   return (0, r.jsx)(u.f5, {
     value: b,
     children: (0, r.jsxs)("div", {
@@ -112,7 +112,7 @@ let I = Chunk64700.forwardRef((e, t) => {
         children: [(0, r.jsx)(c.Heading, {
           variant: I ? "display-lg" : "display-md",
           color: "always-white",
-          children: j
+          children: v
         }), y ? (0, r.jsx)("div", {
           className: x.DF,
           children: (0, r.jsx)(h.A, {

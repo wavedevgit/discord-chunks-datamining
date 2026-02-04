@@ -48,12 +48,12 @@ let D = (0, Chunk707606.A)(e => {
     buttonVariant: U,
     type: M,
     onAction: V
-  } = e, G = (0, s.bG)([b.default], () => {
-    let e = b.default.getCurrentUser();
+  } = e, G = (0, s.bG)([h.default], () => {
+    let e = h.default.getCurrentUser();
     return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), F = M === v.O.STREAM_PREVIEW || null != a, H = (0, A.A)(t), W = H || F ? f.A.Direction.HORIZONTAL : f.A.Direction.VERTICAL, B = (null == t ? true : t.type) === w.$pd.HANG_STATUS, z = (0, s.bG)([h.A, y.A], () => {
+  }), F = M === v.O.STREAM_PREVIEW || null != a, H = (0, A.A)(t), W = H || F ? f.A.Direction.HORIZONTAL : f.A.Direction.VERTICAL, B = (null == t ? true : t.type) === w.$pd.HANG_STATUS, z = (0, s.bG)([b.A, y.A], () => {
     var e;
-    return B ? y.A.getChannel(null == (e = h.A.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
+    return B ? y.A.getChannel(null == (e = b.A.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), K = (0, s.bG)([y.A], () => null != R ? y.A.getChannel(R) : null, [R]), {
     enableUserHoverActivities: Y
   } = (0, p.fC)({

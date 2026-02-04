@@ -79,9 +79,9 @@ let E = (0, Chunk915089.Ld)(),
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: T(t)
       })
-    }, [T]), j = i.useCallback(e => {
+    }, [T]), v = i.useCallback(e => {
       null == o || o(e)
-    }, [o]), v = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
+    }, [o]), j = i.useCallback(e => e === C, [C]), P = i.useCallback(e => e, []), R = i.useCallback(() => {
       null == o || o(null)
     }, [o]), D = i.useRef(null);
     return (0, p.A)(D, f._F.GUILD_TAG), (0, r.jsxs)(_.A, {
@@ -95,9 +95,9 @@ let E = (0, Chunk915089.Ld)(),
       }), (0, r.jsx)(s.Pw, {
         className: h.Lt,
         optionClassName: h.S0,
-        isSelected: v,
+        isSelected: j,
         options: S,
-        select: j,
+        select: v,
         renderLeading: I,
         renderTrailing: N,
         renderOptionValue: y,

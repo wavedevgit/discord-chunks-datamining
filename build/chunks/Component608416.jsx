@@ -68,7 +68,7 @@ let g = e => {
     onRest: () => x(e => false * e)
   } : {
     blur: 0
-  }), S = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [T, I] = (0, s.useState)(0), [N, y] = (0, s.useState)(1), j = (0, o.zhh)({
+  }), S = (0, s.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * m), [m]), [T, I] = (0, s.useState)(0), [N, y] = (0, s.useState)(1), v = (0, o.zhh)({
     xOffset: T,
     config: {
       tension: 10,
@@ -90,7 +90,7 @@ let g = e => {
         }
         return "translateY(".concat(t + n, "px)")
       }),
-      translateX: _ ? j.xOffset.to(e => "".concat(e, "px")) : 0,
+      translateX: _ ? v.xOffset.to(e => "".concat(e, "px")) : 0,
       scale: E.scale,
       filter: null == (n = C.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
       opacity: null != u && u.changeOpacity ? u.containerVisibilityPercentage : 1

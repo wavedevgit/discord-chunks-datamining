@@ -21,7 +21,7 @@ function m(e) {
     guildId: n,
     userId: m,
     containerDimensions: g
-  } = e, y = (0, a.bG)([s.A], () => s.A.useReducedMotion), [b, h] = i.useState([]), A = b.length < 50;
+  } = e, y = (0, a.bG)([s.A], () => s.A.useReducedMotion), [h, b] = i.useState([]), A = h.length < 50;
   i.useEffect(() => {
     function e(e) {
       let {
@@ -44,7 +44,7 @@ function m(e) {
             url: e,
             userId: i
           };
-        h(e => [...e, d]), c.Ay.trackWithMetadata(f.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+        b(e => [...e, d]), c.Ay.trackWithMetadata(f.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
@@ -55,7 +55,7 @@ function m(e) {
     }
   }, [t, n, m, y, A]);
   let _ = i.useCallback(e => {
-    h(t => {
+    b(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
@@ -68,7 +68,7 @@ function m(e) {
     },
     children: (0, r.jsx)("div", {
       className: p.z,
-      children: b.map(e => (0, r.jsx)(d.A, {
+      children: h.map(e => (0, r.jsx)(d.A, {
         containerDimensions: g,
         effect: e,
         onComplete: _

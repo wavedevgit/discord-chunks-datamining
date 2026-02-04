@@ -200,7 +200,7 @@ let M = function(e) {
             className: L.Qw,
             children: D.intl.format(D.t.G4fwxK, {
               onClick: () => {
-                (0, j.default)(), (0, x.pX)(P.BVt.APPLICATION_STORE)
+                (0, v.default)(), (0, x.pX)(P.BVt.APPLICATION_STORE)
               }
             })
           }), (0, r.jsx)(E.A, {
@@ -283,7 +283,7 @@ let M = function(e) {
             className: L.WO,
             children: D.intl.format(D.t.HezvJ8, {
               onClick: function() {
-                (0, v.openUserSettings)(N.X.NITRO_PANEL, {
+                (0, j.openUserSettings)(N.X.NITRO_PANEL, {
                   section: P.nc_.PREMIUM
                 })
               }

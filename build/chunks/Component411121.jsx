@@ -167,10 +167,10 @@ class w extends Chunk64700.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = i === v.FB ? P.intl.string(P.t.odsU6W) : i === v.Bu && null != n ? P.intl.formatToPlainString(n.interval === v.WT.MONTH ? P.t.uZjpiJ : P.t.bJW1EA, {
+    return e = i === j.FB ? P.intl.string(P.t.odsU6W) : i === j.Bu && null != n ? P.intl.formatToPlainString(n.interval === j.WT.MONTH ? P.t.uZjpiJ : P.t.bJW1EA, {
       skuName: t.name,
       intervalCount: n.intervalCount
-    }) : null == n ? t.name : P.intl.formatToPlainString(n.interval === v.WT.MONTH ? P.t.rCJvqo : P.t.Vd3Iu8, {
+    }) : null == n ? t.name : P.intl.formatToPlainString(n.interval === j.WT.MONTH ? P.t.rCJvqo : P.t.Vd3Iu8, {
       skuName: t.name,
       intervalCount: n.intervalCount
     }), (0, r.jsx)("div", {
@@ -292,7 +292,7 @@ let M = Chunk311907.Ay.connectStores([Chunk67480.A, Chunk351906.A, Chunk30793.A,
     isFetching: x.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: x.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: g.A.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, j.c9)(n) : null,
+    subscriptionPlan: null != n ? (0, v.c9)(n) : null,
     giftCodes: l
   }
 })(w)

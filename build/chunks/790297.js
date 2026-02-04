@@ -2,8 +2,8 @@
 /** chunk id: 790297, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  N0: () => p,
-  lC: () => f,
+  N0: () => f,
+  lC: () => p,
   uS: () => m
 }), require("./896048.js");
 var Chunk64700 = require("./64700.js"),
@@ -16,7 +16,7 @@ var Chunk64700 = require("./64700.js"),
   Chunk758836 = require("./758836.js"),
   Chunk652215 = require("./652215.js"),
   Chunk788868 = require("./788868.js");
-let f = e => {
+let p = e => {
     let {
       analyticsSource: t,
       analyticsLocations: n
@@ -54,7 +54,7 @@ let f = e => {
       analyticsSource: o,
       currentTabLocation: c,
       newestAnalyticsLocation: g
-    } = f(t);
+    } = p(t);
     r.useEffect(() => {
       if (l !== u.Pf.VISIBLE || g !== c) return;
       let r = t === u.G2.CATALOG ? s : o;
@@ -67,10 +67,10 @@ let f = e => {
       })
     }, [a, e, t, n, c, l, s, o, g])
   },
-  p = (e, t) => {
+  f = (e, t) => {
     let {
       analyticsLocations: n
-    } = f(e);
+    } = p(e);
     r.useEffect(() => {
       null == t || o.Ay.canUseCollectibles(t) || i.default.track(d.HAw.PREMIUM_UPSELL_VIEWED, {
         type: g.e.COLLECTIBLES_SHOP,

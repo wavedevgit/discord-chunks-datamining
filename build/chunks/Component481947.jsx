@@ -107,7 +107,7 @@ function U(e) {
     serverDeaf: m,
     collapsed: g,
     video: y,
-    isStreaming: h,
+    isStreaming: b,
     disabled: A,
     isWatching: _,
     iconClassName: v,
@@ -216,8 +216,8 @@ function U(e) {
       color: "currentColor",
       className: a()(L.Kk, v)
     })
-  }, "watch")), h && z.push((0, r.jsx)(b.Ay, {
-    size: b.Ay.Sizes.SMALL
+  }, "watch")), b && z.push((0, r.jsx)(h.Ay, {
+    size: h.Ay.Sizes.SMALL
   }, "stream"));
   let Y = null != I && !(0, s.Lt)(I.flags, C.gfo.EMBEDDED),
     J = null == M && Y;
@@ -253,7 +253,7 @@ let M = /^(14256|21552)$/.test(require.j) ? function(e) {
   let l, o, s, c, {
       avatarContainerClass: p = L.H,
       userNameClassName: m = L.gr,
-      size: b = C.OSZ.SMALL,
+      size: h = C.OSZ.SMALL,
       selected: _ = false,
       disabled: O = false,
       isOverlay: x = false,
@@ -299,7 +299,7 @@ let M = /^(14256|21552)$/.test(require.j) ? function(e) {
       ringing: ee,
       user: et
     } = T,
-    en = (0, h.A)({
+    en = (0, b.A)({
       userId: et.id,
       guildId: Y
     }),
@@ -321,8 +321,8 @@ let M = /^(14256|21552)$/.test(require.j) ? function(e) {
       [L.EF]: $,
       [L.wH]: _,
       [L.vk]: null != N,
-      [L.L9]: b === C.OSZ.SMALL,
-      [L.p8]: b === C.OSZ.LARGE,
+      [L.L9]: h === C.OSZ.SMALL,
+      [L.p8]: h === C.OSZ.LARGE,
       [L.r9]: !_ && O,
       [L.DF]: ee
     }),
@@ -360,10 +360,10 @@ let M = /^(14256|21552)$/.test(require.j) ? function(e) {
           })
         })
       }) : null, (l = a()(L.my, {
-        [L.Jb]: b === C.OSZ.LARGE,
-        [L.dT]: b === C.OSZ.SMALL
+        [L.Jb]: h === C.OSZ.LARGE,
+        [L.dT]: h === C.OSZ.SMALL
       }), o = D({
-        backgroundImage: "url(".concat(et.getAvatarURL(Y, b === C.OSZ.LARGE ? 38 : 24), ")")
+        backgroundImage: "url(".concat(et.getAvatarURL(Y, h === C.OSZ.LARGE ? 38 : 24), ")")
       }, el), eo ? (0, r.jsx)(I.A, {
         userId: et.id,
         wrapperClassName: p,

@@ -44,16 +44,16 @@ function R(e) {
   } = e, B = (0, g.uM)(), w = null != (t = null == B ? true : B.sessionId) ? t : "", {
     noCache: D,
     includeUnpublished: M
-  } = (0, v.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([f.A], () => f.A.productsWithVariantsAsGroup), [U, F] = l.useState(1), V = (0, c.DP)(), z = (0, i.qB)(V), [K, W, Y] = l.useMemo(() => {
+  } = (0, v.A)(), H = (0, a.bG)([u.default], () => u.default.getCurrentUser()), G = (0, a.bG)([p.A], () => p.A.productsWithVariantsAsGroup), [U, F] = l.useState(1), V = (0, c.DP)(), z = (0, i.qB)(V), [K, W, Y] = l.useMemo(() => {
     switch (P) {
       case C.G2.AVATAR_DECORATIONS:
-        return [S.intl.string(S.t.dRZYNE), z ? L.A : j.A, s.R.AVATAR_DECORATION];
+        return [x.intl.string(x.t.dRZYNE), z ? L.A : j.A, s.R.AVATAR_DECORATION];
       case C.G2.PROFILE_EFFECTS:
-        return [S.intl.string(S.t["1cNjtx"]), z ? N.A : k.A, s.R.PROFILE_EFFECT];
+        return [x.intl.string(x.t["1cNjtx"]), z ? N.A : k.A, s.R.PROFILE_EFFECT];
       case C.G2.NAMEPLATES:
-        return [S.intl.string(S.t.V68Fqz), z ? I.A : T.A, s.R.NAMEPLATE];
+        return [x.intl.string(x.t.V68Fqz), z ? I.A : T.A, s.R.NAMEPLATE];
       case C.G2.BUNDLES:
-        return [S.intl.string(S.t.FYFpps), z ? y.A : O.A, s.R.BUNDLE]
+        return [x.intl.string(x.t.FYFpps), z ? y.A : O.A, s.R.BUNDLE]
     }
   }, [P, z]), q = (0, m.p)(), Z = l.useMemo(() => q(G.filter(e => {
     var t;
@@ -63,36 +63,36 @@ function R(e) {
       } = t;
       return n === e.categorySkuId
     })
-  })), [G, Y, q]), X = (0, p.X)(Z);
+  })), [G, Y, q]), X = (0, f.X)(Z);
   return (l.useEffect(() => {
-    (0, h.z)({
+    (0, b.z)({
       sessionId: w,
-      checkpoint: h.t.SHOP_MOUNTED,
+      checkpoint: b.t.SHOP_MOUNTED,
       tab: P,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
-    n || (0, h.z)({
+    n || (0, b.z)({
       sessionId: w,
-      checkpoint: h.t.SHOP_RENDERED,
+      checkpoint: b.t.SHOP_RENDERED,
       tab: P,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
-  }, [w, M, D, n, P]), n || null == H) ? (0, r.jsx)(b.A, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [w, M, D, n, P]), n || null == H) ? (0, r.jsx)(h.A, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(W, ")")
       },
-      className: x.cI,
+      className: S.cI,
       children: (0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
-      className: x.ZE,
-      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == f.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(g.R9, {
+      className: S.ZE,
+      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => null == p.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(g.R9, {
         newValue: {
           tilePosition: t
         },
@@ -102,7 +102,7 @@ function R(e) {
         }, e.skuId)
       }, e.skuId))
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: x.Ej,
+      className: S.Ej,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.mgR, {
           currentPage: U,

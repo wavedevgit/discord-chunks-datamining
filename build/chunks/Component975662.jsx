@@ -101,7 +101,7 @@ let eA = () => {
     }, () => (0, g.L)({
       analyticsLocations: e
     }))
-  }, [e]), ej = new Date, ev = new Date(ej.getFullYear(), ej.getMonth() + 1, 0).getDate(), eP = ej.getDate() / ev * 100, eR = {
+  }, [e]), ev = new Date, ej = new Date(ev.getFullYear(), ev.getMonth() + 1, 0).getDate(), eP = ev.getDate() / ej * 100, eR = {
     clientThemes: {
       name: "clientThemes",
       title: U.intl.string(U.t.kWM48G),
@@ -405,7 +405,7 @@ let eA = () => {
       name: "recurring3PPromotions",
       title: U.intl.string(U.t.m7PucM),
       subtitle: (null == ef ? true : ef.isFractionalPremiumWithNoStandardSub()) ? U.intl.string(U.t.E1ONHQ) : U.intl.format(U.t["43kZKL"], {
-        days: ev - ej.getDate()
+        days: ej - ev.getDate()
       }),
       onCtaClick: () => (0, y.uE)({
         analyticsLocations: e
@@ -414,7 +414,7 @@ let eA = () => {
       description: U.intl.format(U.t.zh1X7u, {}),
       descriptionCta: U.intl.string(U.t.w7s5Qr),
       cardVariant: R.PJ.RECURRING_3P_PROMOTIONS,
-      customContent: (0, i.jsx)(j.U, {
+      customContent: (0, i.jsx)(v.U, {
         percentage: eP,
         isFNUserWithNoStandardSub: !!(null == ef ? true : ef.isFractionalPremiumWithNoStandardSub())
       })
@@ -425,7 +425,7 @@ let eA = () => {
     name: "tenureBadge",
     title: U.intl.string(U.t.rnsqpa),
     pillText: U.intl.string(U.t["jyYgZ+"]).toLocaleUpperCase(),
-    perkComponent: (0, i.jsx)(v.A, {}),
+    perkComponent: (0, i.jsx)(j.A, {}),
     cardVariant: R.PJ.NITRO_GRADIENT_HOVER_BORDER,
     onClick: () => (0, P.D)({
       analyticsLocations: e

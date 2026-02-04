@@ -489,8 +489,8 @@ function ea() {
       let e = w.default.getCurrentUser();
       return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
-    n = (0, v.Ay)(t.id),
-    i = (0, j.A)(n),
+    n = (0, j.Ay)(t.id),
+    i = (0, v.A)(n),
     l = B.jP.useSetting(),
     s = (0, c.bG)([y.A], () => y.A.getErrors()),
     a = null == s || null == (e = s.avatar) ? true : e[0],

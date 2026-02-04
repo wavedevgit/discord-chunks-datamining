@@ -41,25 +41,25 @@ function R(e) {
     onNext: l,
     onClose: s,
     transitionState: o
-  } = e, c = v.intl.format(v.t.otHdfR, {
+  } = e, c = j.intl.format(j.t.otHdfR, {
     endDate: t.currentPeriodEnd
   });
-  t.isPurchasedExternally && null != t.paymentGateway ? c = v.intl.format(v.t.HbpFLg, {
-    paymentGatewayName: j.qm[t.paymentGateway],
+  t.isPurchasedExternally && null != t.paymentGateway ? c = j.intl.format(j.t.HbpFLg, {
+    paymentGatewayName: v.qm[t.paymentGateway],
     subscriptionManagementLink: (0, T.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
-  }) : t.isPausedForFractionalPremium ? c = v.intl.format(v.t.Hzqe6y, {
+  }) : t.isPausedForFractionalPremium ? c = j.intl.format(j.t.Hzqe6y, {
     expirationDate: n.endsAt.toDate()
-  }) : i && (c = v.intl.format(v.t.gXSnul, {
+  }) : i && (c = j.intl.format(j.t.gXSnul, {
     endDate: t.currentPeriodEnd
   }));
-  let d = i ? v.intl.string(v.t.iIoSd6) : v.intl.string(v.t.Skzv0u),
+  let d = i ? j.intl.string(j.t.iIoSd6) : j.intl.string(j.t.Skzv0u),
     u = t.isPurchasedExternally ? [] : [{
       variant: "secondary",
-      text: v.intl.string(v.t["ETE/oC"]),
+      text: j.intl.string(j.t["ETE/oC"]),
       onClick: s
     }, {
       variant: "primary",
-      text: v.intl.string(v.t.PDTjLN),
+      text: j.intl.string(j.t.PDTjLN),
       onClick: l
     }];
   return (0, r.jsx)(a.Modal, {
@@ -99,7 +99,7 @@ function L(e) {
     onBack: u,
     onNext: m,
     onClose: O
-  } = e, [C, S] = i.useState(false), [j, R] = i.useState(null), [L, w] = i.useMemo(() => {
+  } = e, [C, S] = i.useState(false), [v, R] = i.useState(null), [L, w] = i.useMemo(() => {
     try {
       return [(0, f.v)(s, false), false]
     } catch (e) {
@@ -161,10 +161,10 @@ function L(e) {
       interval: K,
       intervalCount: z
     } = G,
-    Z = v.intl.format(v.t["0W23cu"], {
+    Z = j.intl.format(j.t["0W23cu"], {
       endDate: V.subscriptionPeriodStart
     });
-  return s.isPausedForFractionalPremium && d.fetched && (Z = v.intl.format(v.t.eb0xgS, {
+  return s.isPausedForFractionalPremium && d.fetched && (Z = j.intl.format(j.t.eb0xgS, {
     expirationDate: d.endsAt.toDate()
   })), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N.A, {
@@ -173,20 +173,20 @@ function L(e) {
     }), (0, r.jsxs)(c.$mQ, {
       "data-migration-pending": true,
       className: P.rf,
-      children: [null !== j && (0, r.jsx)("div", {
+      children: [null !== v && (0, r.jsx)("div", {
         className: P.z3,
         children: (0, r.jsx)(c.wx6, {
           type: "critical",
-          children: j
+          children: v
         })
       }), (0, r.jsx)("div", {
         children: Z
       }), (0, r.jsxs)(b.Yx, {
         className: P.S,
         children: [(0, r.jsx)(b.Xd, {
-          children: v.intl.string(v.t.iqhIp4)
+          children: j.intl.string(j.t.iqhIp4)
         }), (0, r.jsx)(b.oR, {
-          label: v.intl.format(v.t["Vg+LRr"], {
+          label: j.intl.format(j.t["Vg+LRr"], {
             subscriptionCount: 1
           }),
           value: (0, I.CE)((0, I.$g)(W, s.currency), K, z),
@@ -205,13 +205,13 @@ function L(e) {
       justify: g.A.Justify.BETWEEN,
       children: [(0, r.jsx)(c.Button, {
         variant: "critical-primary",
-        text: v.intl.string(v.t["/AS/gM"]),
+        text: j.intl.string(j.t["/AS/gM"]),
         disabled: C,
         onClick: async () => {
           try {
             S(true), R(null), await D(s, L, k, a), m()
           } catch (e) {
-            R(v.intl.string(v.t["5mlOCW"])), S(false)
+            R(j.intl.string(j.t["5mlOCW"])), S(false)
           }
         }
       }), (0, r.jsx)(h.A, {
@@ -231,21 +231,21 @@ function w(e) {
   t.isPausedForFractionalPremium && (s = n.endsAt.toDate());
   let o = [{
     variant: "primary",
-    text: v.intl.string(v.t.BddRzS),
+    text: j.intl.string(j.t.BddRzS),
     onClick: i
   }];
   return (0, r.jsx)(a.Modal, {
     transitionState: l,
     onClose: i,
     size: "sm",
-    title: v.intl.string(v.t["fZzV/B"]),
+    title: j.intl.string(j.t["fZzV/B"]),
     actions: o,
     children: (0, r.jsxs)("div", {
       className: P.rf,
       children: [(0, r.jsx)("div", {
         className: P.OC
       }), (0, r.jsx)("div", {
-        children: v.intl.format(v.t["H+z0ns"], {
+        children: j.intl.format(j.t["H+z0ns"], {
           endDate: s
         })
       })]

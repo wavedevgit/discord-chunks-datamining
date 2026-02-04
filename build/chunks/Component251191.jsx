@@ -26,15 +26,15 @@ let _ = e => {
     tab: s
   } = e, _ = (0, i.bG)([c.default], () => c.default.getCurrentUser()), E = (0, i.bG)([d.A], () => d.A.getCategory(t.categorySkuId)), v = (0, u.uM)(), C = l.useMemo(() => t.rankedSkuIds.map(e => d.A.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), A = (0, g.X)(C).slice(0, 4);
   return null == _ ? null : (0, r.jsxs)("div", {
-    className: a()(b.Vp, b.YB),
+    className: a()(h.Vp, h.YB),
     children: [(0, r.jsxs)("div", {
-      className: b.$6,
+      className: h.$6,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
       }), (0, r.jsx)(o.Button, {
         variant: "secondary",
-        text: h.intl.formatToPlainString(h.t.bc9RBE, {
+        text: b.intl.formatToPlainString(b.t.bc9RBE, {
           category_name: t.name
         }),
         onClick: () => {
@@ -42,12 +42,12 @@ let _ = e => {
             sourceButton: "shelf block see all",
             categorySkuId: t.categorySkuId,
             isInternalShopDeeplink: true,
-            isOrbsExclusive: (null == E ? true : E.isOrbsExclusive) && s !== p.G2.ORBS
+            isOrbsExclusive: (null == E ? true : E.isOrbsExclusive) && s !== f.G2.ORBS
           })
         }
       })]
     }), (0, r.jsx)("div", {
-      className: b.hm,
+      className: h.hm,
       children: (0, r.jsx)(r.Fragment, {
         children: A.map((e, n) => {
           if (null == d.A.getCategoryForProduct(e.skuId) || null == e) return null;
@@ -58,9 +58,9 @@ let _ = e => {
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: (0, r.jsx)(f.A, {
+            children: (0, r.jsx)(p.A, {
               skuId: l,
-              prioritizedCurrency: s === p.G2.ORBS ? m.Hi.ORBS : true,
+              prioritizedCurrency: s === f.G2.ORBS ? m.Hi.ORBS : true,
               onClickAnalytics: (0, m.UU)(e, s, v)
             }, l)
           }, l)

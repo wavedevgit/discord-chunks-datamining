@@ -73,7 +73,7 @@ function w(e) {
     } = await n.e("65281").then(n.bind(n, 547352));
     return n => (0, r.jsx)(t, D({
       source: L(D({}, e), {
-        page: v.liQ.GUILD_MEMBER_PROFILE_SETTINGS
+        page: j.liQ.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
   })
@@ -122,9 +122,9 @@ function M(e) {
     pendingDisplayNameStyles: Z
   } = (0, g.B0)(G, null == l ? true : l.id);
   return (i.useEffect(() => () => c.h.wait(T.IM), []), i.useEffect(() => {
-    null != V && _.Ay.trackWithMetadata(v.HAw.SETTINGS_PANE_VIEWED, {
+    null != V && _.Ay.trackWithMetadata(j.HAw.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
-      destination_pane: v.JJy.SETTINGS_CUSTOMIZE_PROFILE,
+      destination_pane: j.JJy.SETTINGS_CUSTOMIZE_PROFILE,
       source: V
     })
   }, [V]), B) ? (0, r.jsx)(d.A, {}) : k ? (0, r.jsxs)(p.f5, {
@@ -132,10 +132,10 @@ function M(e) {
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: P.intl.format(P.t["/PTB2E"], {
-        helpCenterLink: C.A.getArticleURL(v.MVz.GUILD_PROFILES)
+        helpCenterLink: C.A.getArticleURL(j.MVz.GUILD_PROFILES)
       })
     }), null != l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(j.A, {
+      children: [(0, r.jsx)(v.A, {
         guildId: l.id,
         onChange: e => {
           null != e && (0, T.JJ)(e)

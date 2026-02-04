@@ -126,13 +126,13 @@ let W = Chunk64700.memo(function(e) {
     showEmpty: m = true,
     isPreviewingInGame: g,
     isSettingsPreview: y = false,
-    anchorLeft: b,
+    anchorLeft: h,
     avatarSizeMode: A,
     maxDisplayedVoiceStates: _ = 8
   } = e, v = (0, T.Dk)(() => (function(e) {
     let [t, n] = e;
     return new Set(n)
-  })(a), [a]), [O, S] = a, j = S.length > 0 && null != n && null != l && (!d || f), I = (0, o.yK)([h.A], () => Array.from(v).map(e => h.A.getStreamForUser(e, p)).filter(E.Vq).map(e => e.ownerId), [p, v]);
+  })(a), [a]), [O, S] = a, j = S.length > 0 && null != n && null != l && (!d || f), I = (0, o.yK)([b.A], () => Array.from(v).map(e => b.A.getStreamForUser(e, p)).filter(E.Vq).map(e => e.ownerId), [p, v]);
   i.useEffect(() => {
     j && (0, T.Y)(R.uss.VOICE_V3, {
       locked: x.default.isInstanceLocked(),
@@ -153,7 +153,7 @@ let W = Chunk64700.memo(function(e) {
         sortedVoiceState: i,
         channel: l,
         widgetId: t,
-        flipped: !b,
+        flipped: !h,
         isPreviewingInGame: g,
         isSettingsPreview: y,
         context: n,
@@ -166,7 +166,7 @@ let W = Chunk64700.memo(function(e) {
       sortedVoiceState: w,
       channel: l,
       widgetId: t,
-      flipped: !b,
+      flipped: !h,
       isPreviewingInGame: g,
       isSettingsPreview: y,
       context: n,
@@ -179,7 +179,7 @@ let W = Chunk64700.memo(function(e) {
       voiceStateMap: O,
       size: (0, D.FT)(A),
       locked: d,
-      flipped: !b
+      flipped: !h
     })]
   }) : d || !m ? null : (0, r.jsx)(N.g, {
     emptyText: U.intl.string(U.t.hEh0l1),
@@ -199,7 +199,7 @@ function B(e) {
           [], false
         ] : e.isGuildStageVoice() ? [g.A.getMutableParticipants(e.id, y.ip.SPEAKER), g.A.getParticipantsVersion(e.id)] : [I.Ay.getVoiceStatesForChannel(e), I.Ay.getVoiceStateVersion(e.getGuildId())]
       }, [], P.D),
-      l = (0, b.$n)(null == n ? true : n.id, r),
+      l = (0, h.$n)(null == n ? true : n.id, r),
       a = i.useMemo(() => new Map(l.map(e => [e.user.id, e])), [l]),
       s = (0, o.bG)([A.default], () => A.default.getId());
     return [a, (0, o.yK)([j.A, v.A, O.A, m.A], () => {
@@ -240,8 +240,8 @@ function B(e) {
       }
       return n
     }, [l, e, s, t])]
-  }(k.x.DEFAULT, e.maxDisplayedVoiceStates), d = (0, o.bG)([h.A], () => h.A.getStreamerActiveStreamMetadata()), S = (0, L.b4)(), E = (0, u.h)(null == S ? true : S.id), C = (0, o.cf)([h.A, x.default, w.A], () => {
-    let e = h.A.getCurrentUserActiveStream();
+  }(k.x.DEFAULT, e.maxDisplayedVoiceStates), d = (0, o.bG)([b.A], () => b.A.getStreamerActiveStreamMetadata()), S = (0, L.b4)(), E = (0, u.h)(null == S ? true : S.id), C = (0, o.cf)([b.A, x.default, w.A], () => {
+    let e = b.A.getCurrentUserActiveStream();
     return {
       displayUserMode: x.default.getDisplayUserMode(),
       displayNameMode: x.default.getDisplayNameMode(),

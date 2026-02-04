@@ -129,7 +129,7 @@ function M(e) {
           children: [(0, r.jsx)(p.A, {
             preset: K,
             onShuffle: z
-          }), (0, r.jsx)(v.A, {
+          }), (0, r.jsx)(j.A, {
             user: M
           })]
         }),
@@ -144,7 +144,7 @@ function M(e) {
               variant: "text-sm/normal",
               children: L.intl.string(L.t.xeEC20)
             })]
-          }), (0, r.jsx)(j.A, {
+          }), (0, r.jsx)(v.A, {
             className: w.fz,
             user: M,
             pendingAvatarSrc: (0, b.V7)({

@@ -33,13 +33,13 @@ let y = Chunk64700.memo(function(e) {
     rewardSkuId: n
   } = e, {
     handleCardVisibilityChange: s
-  } = (0, b.Z)(n), y = l.useRef(null), {
+  } = (0, h.Z)(n), y = l.useRef(null), {
     isHoveringOrFocusing: j
   } = (0, g.A)(y), {
     readyToClaim: L,
     collectibleProductSkuIds: T,
     collectedSkuIds: I
-  } = (0, E.K)(t, n), k = (0, o.bG)([h.A], () => h.A.isClaiming === n);
+  } = (0, E.K)(t, n), k = (0, o.bG)([b.A], () => b.A.isClaiming === n);
   return (0, r.jsx)(c.L, {
     onChange: s,
     threshold: 0,
@@ -99,8 +99,8 @@ let y = Chunk64700.memo(function(e) {
               "aria-hidden": true,
               children: (0, r.jsxs)("div", {
                 className: A.L$,
-                children: [(0, r.jsx)(f.Ay, {
-                  variant: f.qP.BLUE,
+                children: [(0, r.jsx)(p.Ay, {
+                  variant: p.qP.BLUE,
                   progress: I.length,
                   maximum: T.length
                 }), (0, r.jsxs)("div", {
@@ -131,14 +131,14 @@ let y = Chunk64700.memo(function(e) {
                 variant: "primary",
                 onClick: e => {
                   e.stopPropagation(), L && (0, m.BX)(t.skuId, n).then(() => {
-                    let e = p.A.getProduct(n);
+                    let e = f.A.getProduct(n);
                     null != e && (0, _.A)({
                       product: e,
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: x.A,
-                        fallbackImageSrc: S.A,
+                        src: S.A,
+                        fallbackImageSrc: x.A,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"

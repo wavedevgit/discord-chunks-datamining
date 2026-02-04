@@ -45,7 +45,7 @@ function w() {
     N = (0, _.l)(),
     P = (0, i.bG)([C.A], () => C.A.getSearchParams()),
     R = (0, u.VT)(),
-    L = (0, v.b_)(),
+    L = (0, j.b_)(),
     {
       shouldMergeGameSettings: w
     } = T.X.useExperiment({
@@ -84,7 +84,7 @@ function w() {
       autoTrackExposure: false
     }),
     $ = (0, s.i)("useGenerateUserSettingsSections");
-  return r.useMemo(() => (0, j.zj)({
+  return r.useMemo(() => (0, v.zj)({
     unseenGiftCount: E,
     showPrepaidPaymentPastDueWarning: N,
     searchParams: P,

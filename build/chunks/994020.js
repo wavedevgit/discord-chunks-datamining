@@ -130,7 +130,7 @@ function y() {
       getRows: () => [],
       getRow: () => null
     },
-    j = {
+    v = {
       isEmpty: () => true,
       getRows: () => [],
       getRow: () => null
@@ -158,7 +158,7 @@ function y() {
       }
     },
     getGuildActionSection: () => y,
-    getChannelNoticeSection: () => j,
+    getChannelNoticeSection: () => v,
     getFirstVoiceChannel: () => null,
     getSectionRowsFromChannel(e) {
       let t = [I, ...N];

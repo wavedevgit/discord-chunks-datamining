@@ -45,7 +45,7 @@ let P = e => {
     } = e, {
       noCache: L,
       includeUnpublished: k
-    } = (0, v.A)(), P = (0, p.rR)("CollectiblesFeedShop") && E === I.G2.ORBS, B = (n = function(e) {
+    } = (0, v.A)(), P = (0, f.rR)("CollectiblesFeedShop") && E === I.G2.ORBS, B = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -73,11 +73,11 @@ let P = e => {
       return n
     })(Object(s)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
-    }), n), [w, D] = l.useState(false), M = (0, f.uM)(), H = null != (t = null == M ? true : M.sessionId) ? t : "";
+    }), n), [w, D] = l.useState(false), M = (0, p.uM)(), H = null != (t = null == M ? true : M.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, b.z)({
+      (0, h.z)({
         sessionId: H,
-        checkpoint: b.t.SHOP_MOUNTED,
+        checkpoint: h.t.SHOP_MOUNTED,
         tab: E,
         unpublishedCategoriesShown: k,
         cacheDisabled: L
@@ -88,7 +88,7 @@ let P = e => {
       fetchShopHomeError: U,
       shopBlocks: F,
       refreshShopHome: V
-    } = (0, h.y)(E, {
+    } = (0, b.y)(E, {
       noCache: L,
       includeUnpublished: k,
       includeBundles: true,
@@ -100,9 +100,9 @@ let P = e => {
       V()
     }, [V]);
     return (l.useEffect(() => {
-      null != U || G || 0 === F.length || (0, b.z)({
+      null != U || G || 0 === F.length || (0, h.z)({
         sessionId: H,
-        checkpoint: b.t.SHOP_RENDERED,
+        checkpoint: h.t.SHOP_RENDERED,
         tab: E,
         unpublishedCategoriesShown: k,
         cacheDisabled: L
@@ -113,7 +113,7 @@ let P = e => {
       errorMessage: U.message
     }) : G || 0 === F.length ? (0, r.jsxs)("div", {
       className: a()(R.g4, R.Of),
-      children: [(0, r.jsx)(x.A, {
+      children: [(0, r.jsx)(S.A, {
         isLoading: G,
         handleTransition: c,
         tab: E
@@ -121,7 +121,7 @@ let P = e => {
         isLoading: G,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(S.A, {
+      }), (0, r.jsx)(x.A, {
         isLoading: G,
         title: E === I.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -134,7 +134,7 @@ let P = e => {
           s = false;
         switch (e.type) {
           case i.g.HERO:
-            l = (0, r.jsx)(x.A, {
+            l = (0, r.jsx)(S.A, {
               isLoading: G,
               handleTransition: c,
               heroBlock: P ? B : e,
@@ -149,12 +149,12 @@ let P = e => {
             }, n);
             break;
           case i.g.FEED:
-            let f = e.sortedSkuIds;
-            l = (0, r.jsx)(S.A, {
+            let p = e.sortedSkuIds;
+            l = (0, r.jsx)(x.A, {
               title: E === I.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: G || g,
               numVisibleItems: u,
-              sortedSkuIds: f,
+              sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === i.g.IMMERSIVE_BANNER ? R.w : true,
               prioritizeUserDiscounts: E === I.G2.HOME,
               tab: E,
@@ -163,8 +163,8 @@ let P = e => {
             break;
           case i.g.WIDE_BANNER:
             if (e.isDismissible) {
-              var p;
-              let t = null != (p = e.dismissibleContentVersion) ? p : 0,
+              var f;
+              let t = null != (f = e.dismissibleContentVersion) ? f : 0,
                 {
                   isDismissed: n
                 } = (0, d.En)(o.M.COLLECTIBLES_SHOP_WIDE_BANNER, t);
@@ -224,20 +224,20 @@ let P = e => {
       transitionState: s
     } = e, a = l.useRef(null), {
       handleScroll: i
-    } = (0, u.X)(a, n), o = (0, E.U)(), d = (0, f.uM)(), [m, p] = l.useState(I.md), [h, b] = l.useState(false);
+    } = (0, u.X)(a, n), o = (0, E.U)(), d = (0, p.uM)(), [m, f] = l.useState(I.md), [b, h] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
         let e = () => {
             if (null == a.current) return;
             let e = a.current.getDistanceFromBottom();
-            m >= 36 ? b(e < 20) : e <= 200 && p(e => e + I.md)
+            m >= 36 ? h(e < 20) : e <= 200 && f(e => e + I.md)
           },
           t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, m, p, b]), (0, r.jsx)(c.T7Y, {
+    }, [a, m, f, h]), (0, r.jsx)(c.T7Y, {
       className: R.OW,
       ref: a,
       onScroll: i,
@@ -273,7 +273,7 @@ let P = e => {
             })]
           })]
         }), (0, r.jsx)(L.A, {
-          peaking: h,
+          peaking: b,
           transitioning: s === I.Pf.OUT
         })]
       })

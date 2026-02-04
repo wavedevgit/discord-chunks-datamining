@@ -2,7 +2,7 @@
 /** chunk id: 976742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => x
+  A: () => S
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -34,16 +34,16 @@ function A(e) {
       newValue: {
         tilePosition: t
       },
-      children: (0, r.jsx)(p.A, {
+      children: (0, r.jsx)(f.A, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, h.UU)(e, v.G2.CATALOG, g)
+        onClickAnalytics: (0, b.UU)(e, v.G2.CATALOG, g)
       }, e.skuId)
     }, e.skuId))
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     category: t
   } = e, [n, a] = l.useState(false), i = (0, s.K)(e => {
@@ -52,7 +52,7 @@ function S(e) {
   return (0, r.jsxs)("div", {
     className: C.EF,
     ref: i,
-    children: [(0, r.jsx)(f.A, {
+    children: [(0, r.jsx)(p.A, {
       category: t
     }), (0, r.jsx)(A, {
       category: t
@@ -60,7 +60,7 @@ function S(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   var t;
   let {
     sortedCategories: n,
@@ -68,25 +68,25 @@ function x(e) {
     currentPage: a,
     handlePageChange: o,
     initialCategoryId: u
-  } = e, d = (0, c.uM)(), f = (0, b.U)(), p = null != (t = null == d ? true : d.sessionId) ? t : "", {
-    noCache: h,
+  } = e, d = (0, c.uM)(), p = (0, h.U)(), f = null != (t = null == d ? true : d.sessionId) ? t : "", {
+    noCache: b,
     includeUnpublished: E
   } = (0, _.A)(), A = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), x = l.useRef(true);
+  }), [n]), S = l.useRef(true);
   l.useEffect(() => {
     if (null == u || 0 === A.length) {
-      x.current = true;
+      S.current = true;
       return
     }
-    if (u === x.current) return;
+    if (u === S.current) return;
     let e = A.findIndex(e => e.skuId === u);
     if (false === e) return;
     let t = Math.floor(e / v.l5) + 1;
-    t !== a && o(t), x.current = u
+    t !== a && o(t), S.current = u
   }, [u, A, o, a]);
   let O = l.useMemo(() => {
     let e = (a - 1) * v.l5;
@@ -94,21 +94,21 @@ function x(e) {
   }, [A, a]);
   return (l.useEffect(() => {
     (0, g.z)({
-      sessionId: p,
+      sessionId: f,
       checkpoint: g.t.SHOP_MOUNTED,
       tab: v.G2.CATALOG,
       unpublishedCategoriesShown: E,
-      cacheDisabled: h
+      cacheDisabled: b
     })
   }, []), l.useEffect(() => {
-    f || 0 === O.length || (0, g.z)({
-      sessionId: p,
+    p || 0 === O.length || (0, g.z)({
+      sessionId: f,
       checkpoint: g.t.SHOP_RENDERED,
       tab: v.G2.CATALOG,
       unpublishedCategoriesShown: E,
-      cacheDisabled: h
+      cacheDisabled: b
     })
-  }, [p, E, h, f, O.length]), f) ? (0, r.jsx)(m.A, {}) : (0, r.jsxs)("div", {
+  }, [f, E, b, p, O.length]), p) ? (0, r.jsx)(m.A, {}) : (0, r.jsxs)("div", {
     className: C.LZ,
     children: [O.map((e, t) => (0, r.jsx)("div", {
       ref: t => s(e.skuId, t),
@@ -116,7 +116,7 @@ function x(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(S, {
+        children: (0, r.jsx)(x, {
           category: e
         })
       })

@@ -39,18 +39,18 @@ let g = e => {
   } = e, g = (0, l.K)(e => {
     null == n || n(e)
   }, .33, null != n), {
-    bannerUrl: f,
+    bannerUrl: p,
     bannerAnimatedUrl: m
-  } = (0, i.qY)(t), p = null != t.textColor ? {
+  } = (0, i.qY)(t), f = null != t.textColor ? {
     color: t.textColor
-  } : true, h = null != t.body && "" !== t.body, b = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, b = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
     ref: g,
     className: u.BX,
     children: [(0, r.jsx)("div", {
       className: u.vK,
-      children: null != f && (0, r.jsx)(o.A, {
-        bannerStatic: f,
+      children: null != p && (0, r.jsx)(o.A, {
+        bannerStatic: p,
         bannerAnimated: m
       })
     }), (0, r.jsx)("div", {
@@ -64,15 +64,15 @@ let g = e => {
           variant: "heading-xxl/bold",
           className: u.DD,
           color: "text-strong",
-          style: d({}, p),
+          style: d({}, f),
           children: t.title
-        }), h || b ? (0, r.jsxs)(s.Text, {
+        }), b || h ? (0, r.jsxs)(s.Text, {
           variant: "text-md/medium",
-          style: d({}, p),
-          children: [h && t.body, h && b && " ", b && (0, r.jsx)(s.MzZ, {
+          style: d({}, f),
+          children: [b && t.body, b && h && " ", h && (0, r.jsx)(s.MzZ, {
             href: t.helpCenterUrl,
             className: u.CU,
-            style: d({}, p),
+            style: d({}, f),
             children: c.intl.string(c.t.O7ADgv)
           })]
         }) : null]

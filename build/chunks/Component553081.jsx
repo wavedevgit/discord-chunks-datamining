@@ -95,7 +95,7 @@ let H = e => {
               discountedPrice: er
             })
           }), (0, r.jsx)(D.A, {
-            variant: v.cJ.WHATS_NEW,
+            variant: j.cJ.WHATS_NEW,
             className: k.Iw,
             noBackground: true,
             leftAlignHeaders: true
@@ -104,12 +104,12 @@ let H = e => {
             sectionRef: l
           }), (0, r.jsx)(D.A, {
             className: k.xU,
-            variant: v.cJ.PERKS_DISCOVERABILITY,
+            variant: j.cJ.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
-            showAllPerksButton: (0, r.jsx)(j.A, {
+            showAllPerksButton: (0, r.jsx)(v.A, {
               setIsAllPerksVisible: $,
-              previousComponent: v.A2.HOME
+              previousComponent: j.A2.HOME
             })
           }), (0, r.jsx)(P.A, {
             className: k.Zy,
@@ -148,7 +148,7 @@ let H = e => {
     }), (0, r.jsx)(y.A, {
       isAllPerksVisible: Q,
       setIsAllPerksVisible: $,
-      previousComponent: v.A2.HOME,
+      previousComponent: j.A2.HOME,
       enablePremiumBrandRefresh: ec
     })]
   }) : (0, r.jsx)("div", {

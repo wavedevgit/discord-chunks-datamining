@@ -37,8 +37,8 @@ var Chunk284009 = require("./284009.js"),
 
 function D() {
   var e, t, n, i, D, L, w, M;
-  let G = (0, s.bG)([j.default], () => {
-      let e = j.default.getCurrentUser();
+  let G = (0, s.bG)([v.default], () => {
+      let e = v.default.getCurrentUser();
       return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
     }),
     U = (0, s.bG)([N.A], () => N.A.getUserProfile(G.id)),
@@ -92,7 +92,7 @@ function D() {
       image: k
     }),
     q = (0, o.EC)(),
-    J = v.Ay.canUsePremiumProfileCustomization(G),
+    J = j.Ay.canUsePremiumProfileCustomization(G),
     Q = (0, u.z5)(k, G.avatar),
     $ = (0, u.Ac)(H, null == U ? true : U.banner),
     ee = (0, y.Ay)(G.id),

@@ -47,7 +47,7 @@ function j(e) {
         }
       })
     }), e
-  }, [t.layout]), [P, w] = o.useMemo(() => {
+  }, [t.layout]), [w, P] = o.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -74,23 +74,23 @@ function j(e) {
           visibleContent: o
         } = t;
         return (0, r.jsxs)("div", {
-          className: l()(O.pz, e, {
-            [O.Hw]: c.Fr,
-            [O.n7]: j
+          className: l()(h.pz, e, {
+            [h.Hw]: c.Fr,
+            [h.n7]: j
           }),
           children: [(0, r.jsxs)("div", {
-            className: O.gM,
+            className: h.gM,
             children: [c.Fr && (0, r.jsx)("div", {
-              className: O.hg,
+              className: h.hg,
               children: (0, r.jsx)(u.K0, {
                 icon: u.d$L,
                 onClick: a,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": h.intl.string(h.t.cpT0Cq)
+                "aria-label": O.intl.string(O.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: P.map(e => (0, r.jsx)(x, {
+              children: w.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: o,
                 hoisted: true
@@ -98,7 +98,7 @@ function j(e) {
             }), null != g && null != m && (0, r.jsx)(v, {
               searchQuery: g,
               onSearchChange: m
-            }), null != s && 0 === w.length && (0, r.jsx)(s, {})]
+            }), null != s && 0 === P.length && (0, r.jsx)(s, {})]
           }), (0, r.jsx)(i.hD, {
             navigator: T,
             children: (0, r.jsx)(i.PR, {
@@ -145,12 +145,12 @@ function j(e) {
                     var t;
                     S.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: O.Mt,
+                  className: h.Mt,
                   fade: true
                 }, i), a = a = {
                   children: [(0, r.jsx)("nav", {
-                    className: O.C$,
-                    children: w.map(e => (0, r.jsx)(x, {
+                    className: h.C$,
+                    children: P.map(e => (0, r.jsx)(x, {
                       section: e,
                       visibleContent: o
                     }, e.key))
@@ -182,12 +182,12 @@ function x(e) {
     hoisted: a = false
   } = e, l = null == (t = n.useTitle) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: O.uW,
+    className: h.uW,
     "aria-label": l,
     children: [null != l && (0, r.jsx)("div", {
-      className: O.a9,
+      className: h.a9,
       children: (0, r.jsx)(u.Heading, {
-        className: O.Pf,
+        className: h.Pf,
         variant: "heading-sm/medium",
         color: "text-muted",
         children: l
@@ -207,22 +207,22 @@ function v(e) {
   } = e, a = o.useRef(null), [l, i] = (0, b.kn)([s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = o.useCallback(() => {
     n("")
   }, [n]), d = o.useMemo(() => ({
-    title: h.intl.string(h.t.Kv519a),
-    body: h.intl.string(h.t.cTGJBZ),
+    title: O.intl.string(O.t.Kv519a),
+    body: O.intl.string(O.t.cTGJBZ),
     badge: "new",
     position: "right",
     align: "center",
     scrollBehavior: "sticky"
   }), []);
   return (0, r.jsxs)("div", {
-    className: O.PP,
+    className: h.PP,
     children: [(0, r.jsx)(u.IWV, {
       size: "md",
       query: t,
       onChange: n,
       onClear: c
     }), (0, r.jsx)("div", {
-      className: O.To,
+      className: h.To,
       ref: a
     }), (0, r.jsx)(g.A, {
       dismissibleContentType: s.M.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,

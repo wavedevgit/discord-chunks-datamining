@@ -36,7 +36,7 @@ let g = e => {
       }, e.categoryStoreListingId) : null)
     })
   },
-  f = e => {
+  p = e => {
     let {
       handleTransition: t,
       categories: n
@@ -88,7 +88,7 @@ let g = e => {
       featuredBlockRecord: a,
       handleTransition: n,
       isLoading: false
-    }) : (0, r.jsx)(f, {
+    }) : (0, r.jsx)(p, {
       categories: l,
       handleTransition: n,
       isLoading: false

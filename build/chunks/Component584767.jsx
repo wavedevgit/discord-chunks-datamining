@@ -59,7 +59,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = () => (0, r.jsx)("div", {
+let v = () => (0, r.jsx)("div", {
     className: x.Zr,
     children: (0, r.jsx)(c.Heading, {
       className: x.uC,
@@ -67,7 +67,7 @@ let j = () => (0, r.jsx)("div", {
       children: O.intl.string(O.t.TR2B4T)
     })
   }),
-  v = () => (0, r.jsx)("div", {
+  j = () => (0, r.jsx)("div", {
     className: x.Zr,
     children: (0, r.jsx)(c.Heading, {
       className: x.uC,
@@ -262,7 +262,7 @@ let j = () => (0, r.jsx)("div", {
       k = (0, g.JM)(E.gD.PREMIUM_MONTH_TIER_2),
       B = (0, h.g)();
     if (!C || !S) return null;
-    n = o ? null : null != T ? (0, r.jsx)(v, {}) : (0, r.jsx)(j, {});
+    n = o ? null : null != T ? (0, r.jsx)(j, {}) : (0, r.jsx)(v, {});
     let H = I === E.pe.TIER_0 || d === E.PremiumTypes.TIER_0;
     return (0, r.jsx)(_.f5, {
       value: O,

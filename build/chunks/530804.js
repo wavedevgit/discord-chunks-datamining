@@ -1,9 +1,9 @@
 /** Chunk was on 88474 **/
 /** chunk id: 530804, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $n: () => b,
+  $n: () => h,
   uy: () => A,
-  vp: () => h
+  vp: () => b
 }), require("./896048.js"), require("./321073.js");
 var Chunk64700 = require("./64700.js"),
   Chunk735438 = require("./735438.js"),
@@ -20,12 +20,12 @@ var Chunk64700 = require("./64700.js"),
   Chunk977997 = require("./977997.js"),
   Chunk403362 = require("./403362.js");
 
-function b(e, t) {
+function h(e, t) {
   let n = (0, l.bG)([f.A, p.A], () => e === p.A.getChannelId() ? f.A.getDesyncedVoiceStates() : null),
     a = (0, l.yK)([o.A], () => null == e ? [] : [...o.A.getGuildRingingUsers(e)]),
     c = (0, l.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(y.Vq)),
     g = (0, l.bG)([u.A], () => u.A.getBasicChannel(e)),
-    b = r.useMemo(() => c.map(e => ({
+    h = r.useMemo(() => c.map(e => ({
       voiceState: new s.A(e.id),
       user: e,
       member: (null == g ? true : g.guild_id) != null ? d.Ay.getMember(null == g ? true : g.guild_id, e.id) : null,
@@ -53,10 +53,10 @@ function b(e, t) {
         return t
       }), 0, e)
     }), r
-  })(n, t, b), [n, t, b])
+  })(n, t, h), [n, t, h])
 }
 
-function h(e, t) {
+function b(e, t) {
   let n = (0, l.bG)([f.A, p.A], () => e === p.A.getChannelId() ? f.A.getDesyncedParticipants() : null);
   return r.useMemo(() => (function(e, t) {
     if (null == e || 0 === e.length) return t;

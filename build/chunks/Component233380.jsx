@@ -182,6 +182,9 @@ function q(e) {
         defaultValue: 0,
         minValue: 0,
         maxValue: 360,
+        fillStyles: {
+          display: "none"
+        },
         onValueChange: e => {
           (0, R.PT)();
           let t = z(e);

@@ -138,7 +138,7 @@ let k = e => {
           onChange: e => V(e),
           threshold: 0,
           active: true,
-          children: (0, r.jsx)(j.Ay, {
+          children: (0, r.jsx)(v.Ay, {
             ref: n,
             subscriptionTier: Q,
             className: s()({
@@ -150,7 +150,7 @@ let k = e => {
             isDarkMode: B
           })
         })]
-      }), es, (0, r.jsx)(v.A, {
+      }), es, (0, r.jsx)(j.A, {
         className: G.B_
       }), (0, r.jsx)("div", {
         className: G.aC,

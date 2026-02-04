@@ -74,15 +74,15 @@ function S(e) {
   let E = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
     [S, T] = i.useState(1),
     [I, N] = i.useState(false),
-    [y, j] = i.useState(null),
-    v = i.useCallback(async () => {
+    [y, v] = i.useState(null),
+    j = i.useCallback(async () => {
       if (null != E) try {
-        N(true), j(null);
+        N(true), v(null);
         let e = (0, A.v)(E, 1);
         s()((0, b.bx)(e) <= (0, b.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(E, e, t, u), T(2)
       } catch (t) {
         let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
-        j(h.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? h.t.dq4vq7 : h.t["5mlOCW"])), N(false)
+        v(h.intl.string(e.code === p.tG.BILLING_PAUSE_INVALID_UPDATE ? h.t.dq4vq7 : h.t["5mlOCW"])), N(false)
       }
     }, [E, t, u]);
   return (0, r.jsx)(g.f5, {
@@ -113,7 +113,7 @@ function S(e) {
               variant: "primary",
               text: h.intl.string(h.t.etZP4B),
               loading: I,
-              onClick: v
+              onClick: j
             }];
           case 2:
             return [{

@@ -27,14 +27,14 @@ var r, i, Chunk735438 = require("./735438.js"),
   Chunk661191 = require("./661191.js"),
   Chunk32603 = require("./32603.js"),
   Chunk355097 = require("./355097.js");
-let j = null,
-  v = null,
+let v = null,
+  j = null,
   P = new Chunk32603.Ay;
 
 function R() {
   let e = C.A.getChannelId(),
     t = C.A.getVoiceChannelId();
-  return j = e, v = t, P.clear()
+  return v = e, j = t, P.clear()
 }
 
 function D(e) {
@@ -86,10 +86,10 @@ function U(e) {
 function k() {
   let e = C.A.getChannelId(),
     t = C.A.getVoiceChannelId(),
-    n = j !== e || v !== t;
-  return !!n && (s()([j, v, e, t]).uniq().forEach(e => {
+    n = v !== e || j !== t;
+  return !!n && (s()([v, j, e, t]).uniq().forEach(e => {
     null != e && P.nonPositionalChannelIdUpdate(e) && (n = true)
-  }), j = e, v = t, true)
+  }), v = e, j = t, true)
 }
 
 function B(e) {
@@ -341,6 +341,6 @@ let W = new Y(Chunk73153.h, {
     return n
   },
   WINDOW_FOCUS: function() {
-    return null != j && P.nonPositionalChannelIdUpdate(j)
+    return null != v && P.nonPositionalChannelIdUpdate(v)
   }
 })

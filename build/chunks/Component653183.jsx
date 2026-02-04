@@ -30,7 +30,7 @@ var Chunk627968 = require("./627968.js"),
 function I(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), I = i.useMemo(() => Object.values(n), [n]), N = (0, l.bG)([g.default], () => g.default.getCurrentUser()), y = f.Ay.isPremium(N, S.PremiumTypes.TIER_2), j = (0, l.bG)([p.A], () => p.A.affinities), v = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), P = j.length > 0 || v.length > 0, R = I.length > 0, D = i.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), L = D.length > 0, w = I.length > D.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, l.bG)([A.A], () => A.A.boostSlots), I = i.useMemo(() => Object.values(n), [n]), N = (0, l.bG)([g.default], () => g.default.getCurrentUser()), y = f.Ay.isPremium(N, S.PremiumTypes.TIER_2), v = (0, l.bG)([p.A], () => p.A.affinities), j = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), P = v.length > 0 || j.length > 0, R = I.length > 0, D = i.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), L = D.length > 0, w = I.length > D.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
     fractionalState: G
   } = (0, s.A)({
     forceFetch: true

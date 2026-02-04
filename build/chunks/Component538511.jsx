@@ -179,7 +179,7 @@ function Y() {
       className: w.MS,
       children: L.intl.string(L.t.R0GJL2)
     }),
-    buttons: (0, r.jsx)(j.A, {
+    buttons: (0, r.jsx)(v.A, {
       className: w.au,
       onClick: () => (0, g.A)({
         subscriptionTier: P.pe.TIER_1,
@@ -220,13 +220,13 @@ let W = function(e) {
     ee = (0, S.nf)(),
     et = (0, T.d)(),
     en = () => {
-      (i.status === R.Dmq.ACTIVE || i.status === R.Dmq.PAST_DUE || i.status === R.Dmq.PAUSED) && el(v.g.PAUSE_SELECT)
+      (i.status === R.Dmq.ACTIVE || i.status === R.Dmq.PAST_DUE || i.status === R.Dmq.PAUSED) && el(j.g.PAUSE_SELECT)
     },
     er = () => {
       (i.status === R.Dmq.ACTIVE || i.status === R.Dmq.PAST_DUE || i.status === R.Dmq.PAUSE_PENDING || X) && el()
     },
     ei = () => {
-      i.status === R.Dmq.BILLING_RETRY && el(v.g.CONFIRM)
+      i.status === R.Dmq.BILLING_RETRY && el(j.g.CONFIRM)
     },
     el = e => {
       (0, c.mMO)(async () => {
@@ -285,10 +285,10 @@ let W = function(e) {
       })
     },
     eo = () => {
-      i.status === R.Dmq.PAUSED && el(v.g.PAUSE_SELECT)
+      i.status === R.Dmq.PAUSED && el(j.g.PAUSE_SELECT)
     },
     ec = () => {
-      el(v.g.WHAT_YOU_LOSE)
+      el(j.g.WHAT_YOU_LOSE)
     },
     ed = O.Ay.getPlanIdFromInvoice(i, s);
   if ((0, A.m1)(ed)) return null;
@@ -385,7 +385,7 @@ let W = function(e) {
           }), (0, r.jsx)(o.m_, {
             text: t,
             asContainer: true,
-            children: (0, r.jsx)(j.A, {
+            children: (0, r.jsx)(v.A, {
               className: l()(w.au, w.lB),
               disabled: e,
               onClick: () => {

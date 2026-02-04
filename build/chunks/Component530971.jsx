@@ -32,9 +32,9 @@ function E(e) {
   } = e, m = v();
   C(m);
   let E = (0, s.bG)([a.A], () => a.A.useReducedMotion),
-    [A, S] = l.useState(true),
-    [x, O] = l.useState(true),
-    y = l.useMemo(() => n.filter(e => !b.MS.some(t => {
+    [A, x] = l.useState(true),
+    [S, O] = l.useState(true),
+    y = l.useMemo(() => n.filter(e => !h.MS.some(t => {
       let {
         categorySkuId: n
       } = t;
@@ -50,17 +50,17 @@ function E(e) {
       } = e;
       c(t, n);
       let a = r && !E,
-        o = s ? b.G2.ORBS : b.G2.CATALOG;
-      S(n), O(!l), i(o, a)
+        o = s ? h.G2.ORBS : h.G2.CATALOG;
+      x(n), O(!l), i(o, a)
     }, [E, i, c]),
     {
       searchError: L
     } = (0, d.S)();
-  return null != L ? (0, r.jsx)(h.A, {}) : null != m ? (0, r.jsx)(f.h, {
+  return null != L ? (0, r.jsx)(b.A, {}) : null != m ? (0, r.jsx)(p.h, {
     onRetry: u,
     errorMessage: m,
-    errorOrigin: f.A.SHOP_PAGE
-  }) : _.includes(t) ? (0, r.jsx)(p.A, {
+    errorOrigin: p.A.SHOP_PAGE
+  }) : _.includes(t) ? (0, r.jsx)(f.A, {
     handleTransition: j,
     tab: t,
     transitionState: o
@@ -68,9 +68,9 @@ function E(e) {
     tab: t,
     sortedCategories: y,
     initialCategoryId: A,
-    showFilterInitially: x,
+    showFilterInitially: S,
     onUnmount: () => {
-      S(true), O(true)
+      x(true), O(true)
     }
   })
 }

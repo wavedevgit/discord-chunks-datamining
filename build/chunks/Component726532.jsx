@@ -278,7 +278,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
       numAvailableInvites: _.A.getNumAvailableInvites(),
       numTotalSeats: _.A.getNumTotalSeats(),
       numUsedSeats: _.A.getNumUsedSeats()
-    })), [j, v] = i.useState(false), {
+    })), [v, j] = i.useState(false), {
       status: P
     } = t, R = i.useCallback(() => {
       (0, s.mMO)(async () => {
@@ -291,7 +291,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
         }))
       })
     }, [t, d]), D = i.useCallback(async () => {
-      v(true), await (0, a.Ir)(t, d), v(false)
+      j(true), await (0, a.Ir)(t, d), j(false)
     }, [t, d]), L = () => {
       o.default.track(f.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
         subscription_id: t.id
@@ -355,7 +355,7 @@ let C = () => (0, r.jsxs)(s.BJc, {
             size: "md",
             text: h.intl.string(b.default.EFTJMQ),
             onClick: D,
-            loading: j
+            loading: v
           }) : (0, r.jsxs)(s.BJc, {
             direction: "vertical",
             gap: 12,

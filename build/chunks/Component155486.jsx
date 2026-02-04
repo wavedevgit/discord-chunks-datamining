@@ -50,7 +50,7 @@ function k(e) {
   }, []));
   let D = (0, C.rR)("CollectiblesShopHeaderBar"),
     M = D ? [c.M.ORB_RENTAL_NEW_BADGE] : [],
-    [H, G] = (0, f.kn)(M),
+    [H, G] = (0, p.kn)(M),
     U = D && H === c.M.ORB_RENTAL_NEW_BADGE;
   l.useEffect(() => () => {
     U && G(j.i.USER_DISMISS)
@@ -68,16 +68,16 @@ function k(e) {
     }] : []], [N]),
     V = t === O.G2.ORBS ? y.liQ.SHOP_ORBS_TAB : y.liQ.COLLECTIBLES_SHOP,
     z = l.useCallback(() => {
-      (0, b.Y)({
+      (0, h.Y)({
         pageType: V,
         sectionType: y.JJy.ORBS_BALANCE_MENU,
         ctaObject: y.ZSU.CTA_TO_QUEST_HOME
-      }), (0, p.navigateToQuestHome)({
+      }), (0, f.navigateToQuestHome)({
         fromContent: i.u.ORBS_BALANCE_MENU
       })
     }, [V]),
     K = l.useCallback(() => {
-      (null == k ? true : k.id) != null && (0, h.openUserProfileModal)({
+      (null == k ? true : k.id) != null && (0, b.openUserProfileModal)({
         userId: k.id,
         tabSection: L.RP.WISHLIST,
         showGuildProfile: false
@@ -102,14 +102,14 @@ function k(e) {
             size: "md",
             color: u.LU0.colors.TEXT_DEFAULT
           })
-        }), (0, r.jsx)(x.A, {
+        }), (0, r.jsx)(S.A, {
           tabs: F,
           selectedTab: t,
           onTabSelect: W,
           showOrbRentalNewBadge: U
         }), (0, r.jsxs)("div", {
           className: I.sZ,
-          children: [(0, r.jsx)(S.A, {
+          children: [(0, r.jsx)(x.A, {
             handleTransition: n,
             selectedTab: t,
             isNarrow: B,

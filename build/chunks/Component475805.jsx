@@ -1,7 +1,7 @@
 /** Chunk was on 9207 **/
 /** chunk id: 475805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => j
+  A: () => v
 });
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -29,19 +29,19 @@ var Chunk627968 = require("./627968.js"),
   Chunk788868 = require("./788868.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk232285 = require("./232285.js");
-let j = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
+let v = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
   let {
     className: n,
     subscriptionTier: i,
     isEligibleForBogoPromotion: l
   } = e, {
-    analyticsLocations: j
-  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), v = (0, O.N)(), P = (0, g.A)(), R = null != P, D = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
+    analyticsLocations: v
+  } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), j = (0, O.N)(), P = (0, g.A)(), R = null != P, D = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
     visibilityPercentageRef: L,
     visibilityPercentage: w
   } = (0, C.U)(!D), M = (0, o.bG)([p.A], () => p.A.affinities), G = !R && M.length > 0, U = (0, A.c)(a.C.MARKETING_PAGE_BANNER), k = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, B = (0, m.ar)() && !k;
   return (0, r.jsx)(_.f5, {
-    value: j,
+    value: v,
     children: (0, r.jsx)("div", {
       ref: t,
       className: s()(y.kL, n),
@@ -99,7 +99,7 @@ let j = Chunk64700.memo(Chunk64700.forwardRef((e, t) => {
                 color: "text-muted",
                 variant: "text-xs/medium",
                 children: N.intl.format(N.t.kt9wxs, {
-                  cheapestMonthlyPrice: v
+                  cheapestMonthlyPrice: j
                 })
               })
             }), null != U && "marketingPageBanner" === U.properties.properties.oneofKind && (0, r.jsx)(f.x, {

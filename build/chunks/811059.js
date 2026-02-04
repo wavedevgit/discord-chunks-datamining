@@ -105,9 +105,9 @@ require.a(module, async function(_, c) {
       __wbindgen_bigint_from_u64: () => a.Qg,
       __wbindgen_boolean_get: () => a.eF,
       __wbindgen_cb_drop: () => a.LC,
-      __wbindgen_closure_wrapper1630: () => a.$T,
-      __wbindgen_closure_wrapper1695: () => a.c$,
-      __wbindgen_closure_wrapper2536: () => a.Vo,
+      __wbindgen_closure_wrapper1654: () => a.bO,
+      __wbindgen_closure_wrapper1719: () => a.nS,
+      __wbindgen_closure_wrapper2560: () => a.ge,
       __wbindgen_debug_string: () => a.rl,
       __wbindgen_error_new: () => a.Rj,
       __wbindgen_in: () => a.zE,
@@ -131,8 +131,8 @@ require.a(module, async function(_, c) {
       rustMultiply: () => a.t7
     });
     var a = b(78815),
-      w = _([a]);
-    a = (w.then ? (await w)() : w)[0], c()
+      n = _([a]);
+    a = (n.then ? (await n)() : n)[0], c()
   } catch (_) {
     c(_)
   }

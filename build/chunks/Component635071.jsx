@@ -165,7 +165,8 @@ function j(e) {
       loop: true,
       shouldUnderlineOnHover: null != F
     }) : eE,
-    "data-text": X + J
+    "data-text": X + J,
+    "data-username-has-gradient": !!ef || true
   }, eb = i.useMemo(() => x && !k ? (0, r.jsx)(y.Ay, {
     primaryGuild: n.primaryGuild,
     userId: a.author.id,

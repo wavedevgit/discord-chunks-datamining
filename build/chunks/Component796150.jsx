@@ -64,7 +64,7 @@ function v(e) {
       originPanel: null
     }), _.current = e)
   });
-  let O = o.useCallback(e => {
+  let h = o.useCallback(e => {
       b.A.setState({
         query: e
       })
@@ -78,8 +78,8 @@ function v(e) {
         i.A.logout("settings")
       })
     };
-    return d._.subscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
-      d._.unsubscribe(h.jej.SETTINGS_TRIGGER_LOGOUT, e)
+    return d._.subscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e), () => {
+      d._.unsubscribe(O.jej.SETTINGS_TRIGGER_LOGOUT, e)
     }
   }, []), j) ? null : (0, r.jsx)(s.A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -112,7 +112,7 @@ function v(e) {
     target: t,
     defaultTarget: p.X.ACCOUNT_PANEL,
     searchQuery: l,
-    onSearchChange: O
+    onSearchChange: h
   }, n))
 }
 
@@ -122,11 +122,11 @@ function S() {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: O.intl.string(O.t.zihbmv)
+      children: h.intl.string(h.t.zihbmv)
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: O.intl.string(O.t.XclvsB)
+      children: h.intl.string(h.t.XclvsB)
     })]
   })
 }

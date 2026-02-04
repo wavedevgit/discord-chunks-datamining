@@ -48,7 +48,7 @@ function y(e) {
   return e
 }
 
-function j(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function j(e, t) {
   }), e
 }
 
-function v(e) {
+function j(e) {
   let {
     guildBoostSlot: t,
     isCancellable: n,
@@ -102,7 +102,7 @@ function v(e) {
         "aria-label": A.toString(),
         children: e => (0, r.jsx)("div", {
           className: N.LB,
-          children: (0, r.jsx)(c.QWc, j(y({}, e), {
+          children: (0, r.jsx)(c.QWc, v(y({}, e), {
             variant: "primary",
             text: I.intl.string(I.t.twFU3R),
             onClick: () => l(t),
@@ -116,7 +116,7 @@ function v(e) {
         "aria-label": A.toString(),
         children: e => (0, r.jsx)("div", {
           className: N.LB,
-          children: (0, r.jsx)(c.QWc, j(y({}, e), {
+          children: (0, r.jsx)(c.QWc, v(y({}, e), {
             variant: "primary",
             text: I.intl.string(I.t["2glQNp"]),
             onClick: () => s(t),
@@ -130,13 +130,13 @@ function v(e) {
 }
 
 function P(e) {
-  (0, d.mMO)(async () => t => (0, r.jsx)(m.default, j(y({}, t), {
+  (0, d.mMO)(async () => t => (0, r.jsx)(m.default, v(y({}, t), {
     guildBoostSlot: e
   })))
 }
 
 function R(e) {
-  (0, d.mMO)(async () => t => (0, r.jsx)(g.default, j(y({}, t), {
+  (0, d.mMO)(async () => t => (0, r.jsx)(g.default, v(y({}, t), {
     guildBoostSlotId: e.id
   })))
 }
@@ -243,13 +243,13 @@ let D = function(e) {
             shouldShow: null == z || w,
             text: l,
             "aria-label": l.toString(),
-            children: e => (0, r.jsx)(d.Button, j(y({
+            children: e => (0, r.jsx)(d.Button, v(y({
               variant: "primary",
               text: I.intl.string(I.t.BMx1iy)
             }, e), {
               disabled: null == z || w,
               onClick: null != z ? () => {
-                (0, d.mMO)(async () => e => (0, r.jsx)(p.default, j(y({}, e), {
+                (0, d.mMO)(async () => e => (0, r.jsx)(p.default, v(y({}, e), {
                   guildBoostSlots: [z],
                   locationSection: S.JJy.SETTINGS_PREMIUM
                 })))
@@ -259,7 +259,7 @@ let D = function(e) {
         })]
       }), (!Y || k) && (0, r.jsx)("ul", {
         className: N.LU,
-        children: G.map(e => (0, r.jsx)(v, {
+        children: G.map(e => (0, r.jsx)(j, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: P,

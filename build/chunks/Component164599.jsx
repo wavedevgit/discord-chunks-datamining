@@ -38,7 +38,7 @@ function E(e) {
     guildId: null == n ? true : n.id
   }), {
     pendingProfileEffect: y,
-    errors: j
+    errors: v
   } = (0, p.nZ)(null == n ? true : n.id);
   i.useEffect(() => {
     I && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
@@ -46,18 +46,18 @@ function E(e) {
       location_stack: T
     })
   }, [I, T]);
-  let v = C ? o.wLn : a.$n;
+  let j = C ? o.wLn : a.$n;
   return (0, r.jsx)(m.A, {
     forcedDivider: x,
     borderType: g.i.PREMIUM,
     hasBackground: true,
     title: O,
     showBorder: S,
-    errors: j,
+    errors: v,
     className: E,
     children: (0, r.jsxs)("div", {
       className: h.NC,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(j, {
         size: a.$n.Sizes.SMALL,
         onClick: () => {
           (0, d.W)({

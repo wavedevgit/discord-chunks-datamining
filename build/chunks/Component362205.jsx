@@ -101,16 +101,12 @@ function m(e) {
         }));
       return o.useLayoutEffect(() => {
         if (null == t.current || null == n.current || null == r.current) return;
-        let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()];
-        if (a.current) {
-          a.current = false, l.y.set(o.y - e.y), l.height.set(o.height);
-          return
-        }
+        let [e, o] = [t.current.getBoundingClientRect(), r.current.getBoundingClientRect()], l = e.width / 2;
         i({
-          y: o.y - e.y,
-          height: o.height,
-          immediate: b.A.useReducedMotion
-        })
+          y: (o.y - e.y) / l,
+          height: o.height / l,
+          immediate: b.A.useReducedMotion || a.current
+        }), a.current = false
       }, [e, i, l.y, l.height]), {
         thumbRef: n,
         trackRef: t,
@@ -123,7 +119,8 @@ function m(e) {
     role: "list",
     style: {
       "--custom-nav-count": t.length,
-      "--custom-nav-index": a
+      "--custom-nav-index": a,
+      "--custom-nav-width": "".concat(2, "px")
     },
     children: [(0, r.jsx)("div", {
       className: y.u4,

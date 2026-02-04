@@ -60,7 +60,7 @@ function b(e) {
     colorPickerMiddle: O,
     colorPickerFooter: x,
     showEyeDropper: C
-  } = e, S = i.useRef(null), T = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), I = c.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), y = (0, o.Hl)(l), j = y === T ? I : y, v = N ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(O), R = (0, u.A)(x), [D, L] = i.useState((0, a.A)());
+  } = e, S = i.useRef(null), T = (0, d.rdh)(c.A.colors.BACKGROUND_BASE_LOW).hex(), I = c.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), y = (0, o.Hl)(l), v = y === T ? I : y, j = N ? c.A.unsafe_rawColors.WHITE.css : c.A.unsafe_rawColors.PRIMARY_530.css, P = (0, u.A)(O), R = (0, u.A)(x), [D, L] = i.useState((0, a.A)());
   return i.useEffect(() => {
     (P !== O || R !== x) && L((0, a.A)())
   }, [x, O, R, P]), (0, r.jsx)(d.YNO, {
@@ -105,7 +105,7 @@ function b(e) {
           onClick: h ? p.tEg : t,
           style: {
             backgroundColor: y,
-            borderColor: j
+            borderColor: v
           },
           className: g.nf,
           "aria-label": m.intl.string(m.t.Qp04hK),
@@ -117,7 +117,7 @@ function b(e) {
             className: g.BW,
             width: 14,
             height: 14,
-            color: v
+            color: j
           })
         })), E]
       })

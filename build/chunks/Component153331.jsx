@@ -92,7 +92,7 @@ function Z(e) {
     activity: t
   });
   if (null == r) return null;
-  let i = b.A.get(r);
+  let i = h.A.get(r);
   return (0, l.jsx)("img", {
     alt: "",
     src: (0, p.qB)(n) ? i.icon.lightSVG : i.icon.darkSVG,
@@ -134,7 +134,7 @@ class q extends(r = Chunk64700.PureComponent) {
     switch (o.type) {
       case F.$pd.STREAMING:
         t = H.intl.formatToPlainString(H.t.Dzgz4u, {
-          platform: [F.fg2.TWITCH, F.fg2.YOUTUBE].includes(c.toLowerCase()) ? c : b.A.get(F.fg2.TWITCH).name
+          platform: [F.fg2.TWITCH, F.fg2.YOUTUBE].includes(c.toLowerCase()) ? c : h.A.get(F.fg2.TWITCH).name
         });
         break;
       case F.$pd.LISTENING:
@@ -184,7 +184,7 @@ class q extends(r = Chunk64700.PureComponent) {
       className: W.assets,
       children: (0, l.jsx)("img", {
         alt: "",
-        src: b.A.get(F.fg2.XBOX).icon.customPNG,
+        src: h.A.get(F.fg2.XBOX).icon.customPNG,
         className: s()(this.getTypeClass("assetsLargeImage", "Xbox"))
       })
     })
@@ -507,25 +507,25 @@ class q extends(r = Chunk64700.PureComponent) {
     let p = this.renderName(c),
       g = this.renderDetails(c),
       y = this.renderState(c, i),
-      b = this.renderTimePlayed(c),
+      h = this.renderTimePlayed(c),
       A = this.renderChannelDetails(c),
       _ = null != n ? n() : null,
       v = this.renderTimeBar(c),
-      O = ![e, p, g, y, b, v, _].some(e => null != e);
+      O = ![e, p, g, y, h, v, _].some(e => null != e);
     return (0, l.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(O), (0, l.jsx)("div", {
         className: s()(f ? W.bodyAlignCenter : W.bodyNormal),
         children: (0, l.jsxs)("div", {
           className: W.activityDetails,
-          children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, l.jsxs)(h.A.Child, {
+          children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, l.jsxs)(b.A.Child, {
             className: s()((0, w.t)(W, "content", f ? "GameImage" : null != e ? "Images" : "NoImages", t)),
             children: [(0, l.jsxs)(m.DUT, {
               className: s()(null != o && W.openGameProfile, this.props.enableUserHoverActivities && W.activityVoiceChannelUserHover),
               onClick: null != o ? e => {
                 o(e), null == a || a()
               } : true,
-              children: [p, g, y, b]
+              children: [p, g, y, h]
             }), A, d ? null : v, u ? _ : null]
           })]
         })

@@ -26,49 +26,49 @@ function _(e) {
     isPremiumUser: n,
     prioritizeUserDiscounts: l,
     orbsSupportedOnly: _
-  } = e, E = (0, i.bG)([o.A], () => o.A.hasConsented(h.YAq.PERSONALIZATION)), v = r.useMemo(() => {
+  } = e, E = (0, i.bG)([o.A], () => o.A.hasConsented(b.YAq.PERSONALIZATION)), v = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.i.RECOMMENDED]) ? e : []
   }, [t]), C = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[a.i.POPULAR]) ? e : []
-  }, [t]), A = v.length > 0 && E, [S, x] = r.useState(A ? a.i.RECOMMENDED : a.i.POPULAR), O = (0, i.bG)([c.A], () => c.A.productsWithVariantsAsGroup), y = r.useMemo(() => (0, d.CE)(O), [O]), j = (0, i.bG)([u.A], () => u.A.getUserDiscounts()), L = (0, f.A)(), T = (0, g.p)(), [I, k] = r.useState([]), N = r.useCallback(() => {
-    x(a.i.RANDOM), k(s().shuffle(y))
+  }, [t]), A = v.length > 0 && E, [x, S] = r.useState(A ? a.i.RECOMMENDED : a.i.POPULAR), O = (0, i.bG)([c.A], () => c.A.productsWithVariantsAsGroup), y = r.useMemo(() => (0, d.CE)(O), [O]), j = (0, i.bG)([u.A], () => u.A.getUserDiscounts()), L = (0, p.A)(), T = (0, g.p)(), [I, k] = r.useState([]), N = r.useCallback(() => {
+    S(a.i.RANDOM), k(s().shuffle(y))
   }, [y]);
   r.useEffect(() => {
     k(s().shuffle(y))
   }, [y]);
   let R = r.useMemo(() => {
     let e = [];
-    if (S === a.i.RECENT) e = y;
-    else if (S === a.i.PRICE_LOW_TO_HIGH) e = (0, d.bf)([...y], n, _);
-    else if (S === a.i.RECOMMENDED) {
+    if (x === a.i.RECENT) e = y;
+    else if (x === a.i.PRICE_LOW_TO_HIGH) e = (0, d.bf)([...y], n, _);
+    else if (x === a.i.RECOMMENDED) {
       let t = L(v);
       e = l ? (0, d.Bs)(t, j) : t
-    } else if (S === a.i.POPULAR) {
+    } else if (x === a.i.POPULAR) {
       let t = L(C);
       e = l ? (0, d.Bs)(t, j) : t
-    } else S === a.i.RANDOM && (e = I);
-    return _ ? (0, p.ex)(T(e)) : T(e)
-  }, [S, _, T, n, y, L, v, l, j, C, I]);
+    } else x === a.i.RANDOM && (e = I);
+    return _ ? (0, f.ex)(T(e)) : T(e)
+  }, [x, _, T, n, y, L, v, l, j, C, I]);
   return {
-    sortType: S,
-    setSortType: x,
+    sortType: x,
+    setSortType: S,
     sortedItems: (0, m.X)(R),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: a.i.POPULAR,
-        label: b.intl.string(b.t.Y68e5p)
+        label: h.intl.string(h.t.Y68e5p)
       }, {
         value: a.i.RECENT,
-        label: b.intl.string(b.t["51Bhiz"])
+        label: h.intl.string(h.t["51Bhiz"])
       }, {
         value: a.i.PRICE_LOW_TO_HIGH,
-        label: b.intl.string(b.t.m8RVU2)
+        label: h.intl.string(h.t.m8RVU2)
       }];
       return A && e.unshift({
         value: a.i.RECOMMENDED,
-        label: b.intl.string(b.t.zPWgFG)
+        label: h.intl.string(h.t.zPWgFG)
       }), e
     }, [A]),
     showRecommendationOption: A,

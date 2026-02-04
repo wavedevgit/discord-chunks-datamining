@@ -110,14 +110,14 @@ let Q = (e, t, i) => {
       discountedPrice: x,
       buttonVisibilityRef: y
     } = ei(), {
-      analyticsLocations: v
+      analyticsLocations: j
     } = (0, p.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), P = (0, T.c)(s.C.MARKETING_PAGE_BANNER), M = null;
     null != P && "marketingPageBanner" === P.properties.properties.oneofKind ? M = (0, r.jsx)(I.x, {
       componentId: P.id,
       promotionBannerMarketingComponentFields: P.properties.properties.marketingPageBanner
     }) : o ? M = (0, r.jsx)(N.A, {
       variant: N.c.SUBSCRIBER_HOME
-    }) : c ? M = (0, r.jsx)(B.A, {}) : m && (M = (0, r.jsx)(j.S, {}));
+    }) : c ? M = (0, r.jsx)(B.A, {}) : m && (M = (0, r.jsx)(v.S, {}));
     let U = (0, a.bG)([A.A], () => A.A.getPremiumTypeSubscription()),
       Z = null != U && U.status === Y.Dmq.CANCELED && null != O,
       X = (0, S.V)(),
@@ -169,7 +169,7 @@ let Q = (e, t, i) => {
             icon: d.tvc,
             size: "md",
             text: W.intl.string(W.t.zrCzVB),
-            onClick: () => Q(v, U, G.g.CONFIRM_DISCOUNT)
+            onClick: () => Q(j, U, G.g.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(R.A, {
             variant: ee || Z ? "secondary" : "expressive",
             size: "md",
@@ -244,7 +244,7 @@ let Q = (e, t, i) => {
             })]
           }), !O && (0, r.jsx)("div", {
             className: K.UO,
-            children: (0, r.jsx)(v.A, {
+            children: (0, r.jsx)(j.A, {
               look: c.pR.FILLED,
               color: c.XD.BRAND,
               textOptions: {
@@ -279,7 +279,7 @@ let Q = (e, t, i) => {
             children: e
           }), (0, r.jsx)("div", {
             className: K.UO,
-            children: (0, r.jsx)(v.A, {
+            children: (0, r.jsx)(j.A, {
               look: c.pR.FILLED,
               color: c.XD.BRAND,
               textOptions: {
@@ -287,7 +287,7 @@ let Q = (e, t, i) => {
               },
               className: K.x6
             })
-          }), (0, r.jsx)(j.S, {
+          }), (0, r.jsx)(v.S, {
             className: K.Qq
           })]
         })
@@ -319,7 +319,7 @@ let Q = (e, t, i) => {
           })]
         }), (0, r.jsx)("div", {
           className: K.UO,
-          children: (0, r.jsx)(v.A, {
+          children: (0, r.jsx)(j.A, {
             look: c.pR.FILLED,
             color: c.XD.BRAND,
             textOptions: {
@@ -348,12 +348,12 @@ let Q = (e, t, i) => {
     }), T = W.intl.string(W.t.ifwQZb), {
       fractionalState: I,
       endsAt: N
-    } = (0, g.A)(), j = (0, m.Ay)(N, m.yE.CREDITS_ENDS_IN);
+    } = (0, g.A)(), v = (0, m.Ay)(N, m.yE.CREDITS_ENDS_IN);
     u || A ? S = (0, r.jsx)(en, {
       isEligibleForBogoPromotion: A
     }) : C && (h = W.intl.string(W.t.qYKftX), S = (0, r.jsx)(et, {}));
-    let v = null;
-    if (I === F.xc.NONE || u) v = n ? (0, r.jsx)(U.A, {
+    let j = null;
+    if (I === F.xc.NONE || u) j = n ? (0, r.jsx)(U.A, {
       enablePremiumBrandRefresh: true,
       text: h
     }) : (0, r.jsx)(M.ir, {
@@ -375,7 +375,7 @@ let Q = (e, t, i) => {
         t = W.intl.format(W.t["yR+oDD"], {
           helpCenterLink: b.A.getArticleURL(Y.MVz.FRACTIONAL_PREMIUM_ABOUT)
         });
-      v = (0, r.jsx)(o.A, {
+      j = (0, r.jsx)(o.A, {
         text: t,
         "aria-label": t.toString(),
         tooltipClassName: K.YL,
@@ -386,12 +386,12 @@ let Q = (e, t, i) => {
             className: K.eL,
             children: n ? (0, r.jsx)(U.A, {
               enablePremiumBrandRefresh: true,
-              text: j
+              text: v
             }) : (0, r.jsx)(M.R, {
               className: l()(K.Av, {
                 [K.R]: !f
               }),
-              text: j,
+              text: v,
               colorOptions: M.at.PREMIUM_TIER_2_WHITE_FILL,
               icon: e,
               gap: false
@@ -405,7 +405,7 @@ let Q = (e, t, i) => {
       children: (0, r.jsx)(er.Provider, {
         value: {
           headingText: T,
-          headingTop: v,
+          headingTop: j,
           showPill: f,
           userDiscountOffer: s,
           discountedPrice: a,

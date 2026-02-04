@@ -95,7 +95,7 @@ function S(e) {
       }(e, t), Object.getOwnPropertySymbols)
       for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
     return l
-  }(e, ["user", "channel"]), [A, _] = (0, o.yK)([g.A, f.A, p.A, c.default], () => (0, b.eo)(a, g.A, f.A, p.A, c.default)), v = (0, o.bG)([u.A], () => u.A.getStreamForUser(l.id, a.getGuildId())), S = (0, o.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(v)), j = (0, o.bG)([d.default], () => d.default.getId()), I = (0, h.AO)(v), x = (0, o.bG)([m.A], () => (0, h.nr)(v, m.A)), E = i.useMemo(() => ({
+  }(e, ["user", "channel"]), [A, _] = (0, o.yK)([g.A, f.A, p.A, c.default], () => (0, h.eo)(a, g.A, f.A, p.A, c.default)), v = (0, o.bG)([u.A], () => u.A.getStreamForUser(l.id, a.getGuildId())), S = (0, o.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(v)), j = (0, o.bG)([d.default], () => d.default.getId()), I = (0, b.AO)(v), x = (0, o.bG)([m.A], () => (0, b.nr)(v, m.A)), E = i.useMemo(() => ({
     [a.guild_id]: [l.id]
   }), [a.guild_id, l.id]);
   return (0, s.E)(E, "StreamPreviewPopout"), (0, r.jsx)(O, (t = function(e) {

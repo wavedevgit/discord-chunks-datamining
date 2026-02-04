@@ -40,7 +40,7 @@ function b(e) {
     displayProfile: S,
     pendingThemeColors: i,
     isPreview: true
-  }), N = p.Ay.canUsePremiumProfileCustomization(t), y = null != n ? n : t.getAvatarURL(h, 80), j = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(y, j, false);
+  }), N = p.Ay.canUsePremiumProfileCustomization(t), y = null != n ? n : t.getAvatarURL(h, 80), v = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), j = (0, d.rh)(y, v, false);
   if (null == T || null == I) return null;
   let P = e => {
     s(a()(e, null == S ? true : S.themeColors) ? true : e)
@@ -58,7 +58,7 @@ function b(e) {
         children: (0, r.jsx)(m.A, {
           onChange: e => P([e, I]),
           color: T,
-          suggestedColors: v,
+          suggestedColors: j,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
             className: f.yz,
@@ -73,7 +73,7 @@ function b(e) {
         children: (0, r.jsx)(m.A, {
           onChange: e => P([T, e]),
           color: I,
-          suggestedColors: v,
+          suggestedColors: j,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
             className: f.yz,

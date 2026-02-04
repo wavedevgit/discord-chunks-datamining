@@ -51,7 +51,7 @@ let I = {
       onVisibilityChange: P
     } = e, B = (0, i.K)(e => {
       null == P || P(e)
-    }, .1, null != P), w = l.useRef(null), D = (0, S.y)("HeroBlock"), M = (0, u.bG)([p.default], () => p.default.getCurrentUser()), H = (0, b.uM)(), G = l.useMemo(() => {
+    }, .1, null != P), w = l.useRef(null), D = (0, x.yB)("HeroBlock"), M = (0, u.bG)([f.default], () => f.default.getCurrentUser()), H = (0, h.uM)(), G = l.useMemo(() => {
       var e;
       return null != N ? N : null == k ? I : {
         rankedSkuIds: null != (e = k.heroRanking) ? e : [],
@@ -85,14 +85,14 @@ let I = {
         ctaObject: j.ZSU.CTA_TO_QUEST_HOME
       }), U ? (0, C.A)({
         analyticsLocations: ee
-      }) : (0, f.navigateToQuestHome)({
+      }) : (0, p.navigateToQuestHome)({
         fromContent: o.u.ORBS_SHOP_HERO_CTA
       })) : (s({
         sourceButton: "shop latest category hero",
         categorySkuId: Q ? G.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: Q
-      }), h.default.track(j.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), b.default.track(j.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == H ? true : H.sessionId,
         sku_id: G.categorySkuId,
         page_type: R,
@@ -116,7 +116,7 @@ let I = {
         style: null != Z ? {
           background: Z
         } : true,
-        children: null != K && (0, r.jsx)(x.A, {
+        children: null != K && (0, r.jsx)(S.A, {
           bannerStatic: K,
           bannerAnimated: W,
           bannerRive: Y,

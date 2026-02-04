@@ -2,7 +2,7 @@
 /** chunk id: 628979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => b
+  A: () => h
 }), require("./896048.js");
 var Chunk627968 = require("./627968.js"),
   Chunk64700 = require("./64700.js"),
@@ -19,16 +19,16 @@ var Chunk627968 = require("./627968.js"),
   Chunk985018 = require("./985018.jsx"),
   Chunk450331 = require("./450331.js");
 
-function b(e) {
+function h(e) {
   let {
     handleTransition: t,
     selectedTab: n,
     isNarrow: s,
-    hasText: b
+    hasText: h
   } = e, {
     searchQuery: _,
     onSetSearchQuery: E
-  } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), S = (0, i.bG)([c.default], () => c.default.locale), x = l.useRef(null), [O, y] = l.useState(false);
+  } = (0, g.v)(), [v, C] = l.useState(""), A = (0, d.uM)(), x = (0, i.bG)([c.default], () => c.default.locale), S = l.useRef(null), [O, y] = l.useState(false);
   l.useEffect(() => {
     let e = setTimeout(() => {
       E(v)
@@ -37,8 +37,8 @@ function b(e) {
   }, [v, E]), l.useEffect(() => {
     C(_)
   }, [_]), l.useEffect(() => {
-    y(s && b)
-  }, [s, b]);
+    y(s && h)
+  }, [s, h]);
   let j = l.useCallback(e => {
       "Enter" === e.key && E(v)
     }, [v, E]),
@@ -54,23 +54,23 @@ function b(e) {
       })
     }, [n, A]),
     T = l.useCallback(() => {
-      n !== f.G2.CATALOG && t(f.G2.CATALOG), L(f.uY.SEARCH_ICON), y(true), setTimeout(() => {
+      n !== p.G2.CATALOG && t(p.G2.CATALOG), L(p.uY.SEARCH_ICON), y(true), setTimeout(() => {
         var e;
-        return null == (e = x.current) ? true : e.focus()
+        return null == (e = S.current) ? true : e.focus()
       })
     }, [n, t, L]),
     I = l.useCallback(() => {
-      n !== f.G2.CATALOG && t(f.G2.CATALOG), L(f.uY.SEARCH_BAR)
+      n !== p.G2.CATALOG && t(p.G2.CATALOG), L(p.uY.SEARCH_BAR)
     }, [n, t, L]),
     k = l.useCallback(() => {
-      C(""), E(""), L(f.uY.SEARCH_BAR_CLEAR), s && y(false)
+      C(""), E(""), L(p.uY.SEARCH_BAR_CLEAR), s && y(false)
     }, [E, L, s]),
     N = l.useCallback(() => {
       s && "" === v && y(false)
     }, [s, v]),
     R = s && !O,
     P = (0, r.jsx)(o.DUT, {
-      className: h.qc,
+      className: b.qc,
       onClick: T,
       children: (0, r.jsx)(o.$p$, {
         size: "sm",
@@ -79,28 +79,28 @@ function b(e) {
     }),
     B = (0, r.jsx)(o.IWV, {
       size: "sm",
-      ref: x,
+      ref: S,
       onKeyDown: j,
       query: v,
       onChange: C,
       onClear: k,
       onBlur: N,
-      placeholder: "en-US" === S ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
+      placeholder: "en-US" === x ? f.intl.string(f.t.arz34K) : f.intl.string(f.t["hIt/Nm"])
     }),
     w = {
-      "--custom-search-bar-width": "".concat(f.rr, "px"),
-      "--custom-search-bar-icon-width": "".concat(f.Dy, "px")
+      "--custom-search-bar-width": "".concat(p.rr, "px"),
+      "--custom-search-bar-icon-width": "".concat(p.Dy, "px")
     };
   if (R) return (0, r.jsx)("div", {
     style: w,
     children: P
   });
-  let D = a()(h.ON, {
-    [h.Nz]: O
+  let D = a()(b.ON, {
+    [b.Nz]: O
   });
   return O ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: h.j8,
+      className: b.j8,
       style: w,
       children: P
     }), (0, r.jsx)(o.DUT, {

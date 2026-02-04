@@ -26,10 +26,10 @@ function O(e, t, n) {
       userId: e.id,
       channelId: n
     }),
-    i = (0, y.RQ)(r, null != t ? t : b.ME, e.id);
+    i = (0, y.RQ)(r, null != t ? t : h.ME, e.id);
   A.set(e.id, i);
   let l = {
-    type: h.lp.USER,
+    type: b.lp.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -103,7 +103,7 @@ let E = new x(Chunk73153.h, {
       state: t,
       context: n
     } = e;
-    if (n !== a.x.DEFAULT || t !== b.S7L.DISCONNECTED) returnfalse;
+    if (n !== a.x.DEFAULT || t !== h.S7L.DISCONNECTED) returnfalse;
     I()
   },
   VOICE_STATE_UPDATES: function(e) {

@@ -41,7 +41,7 @@ let D = new Set([Chunk56562.aI.BORDERLESS_FULLSCREEN, Chunk56562.aI.FULLSCREEN, 
   M = {
     HandleFocusChanged: (e, t) => {
       var n;
-      if (!(0, N.$8)(e, "HandleFocusChanged")) returntrue;
+      if (!(0, A.$8)(e, "HandleFocusChanged")) returntrue;
       let l = null != t && null != (n = G.A.getKnownWindowHandlesForPID(t)) ? n : new Set,
         {
           focusedPid: r,
@@ -51,7 +51,7 @@ let D = new Set([Chunk56562.aI.BORDERLESS_FULLSCREEN, Chunk56562.aI.FULLSCREEN, 
     },
     EventHook: (e, t) => {
       var n;
-      if (!(0, N.$8)(e, "EventHook")) returntrue;
+      if (!(0, A.$8)(e, "EventHook")) returntrue;
       let l = null != t && null != (n = G.A.getKnownWindowHandlesForPID(t)) ? n : new Set;
       try {
         let {
@@ -124,7 +124,7 @@ function R(e) {
       g = G.A.getPopoutInitializationStages(),
       x = (null == c ? true : c.overlayMethod) != null ? I.Ue[c.overlayMethod] : null,
       E = null != (t = null == c ? true : c.fullscreenType) ? t : m.aI.UNKNOWN,
-      w = (0, N.tn)(er, e => {
+      w = (0, A.tn)(er, e => {
         for (let t of Object.values(M)) try {
           if (!t(e, o)) returnfalse
         } catch (e) {
@@ -132,7 +132,7 @@ function R(e) {
         }
         returntrue
       }),
-      k = A.A.getRecentActions(10),
+      k = N.A.getRecentActions(10),
       P = _.A.getRecentExperimentBuckets(v.A.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
       T = (null == c ? true : c.fullscreenHistory) == null ? null : Object.entries(c.fullscreenHistory).sort((e, t) => {
         let [n] = e, [l] = t;

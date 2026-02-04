@@ -41,10 +41,10 @@ function g(e) {
     selectedTab: n,
     onTabSelect: s,
     onClose: g,
-    showOrbRentalNewBadge: f
+    showOrbRentalNewBadge: p
   } = e, {
     itemTypeFilters: m
-  } = (0, i.v)(), p = l.useMemo(() => {
+  } = (0, i.v)(), f = l.useMemo(() => {
     if (n === o.G2.CATALOG && m.size > 0) {
       let e = d[Array.from(m)[0]];
       if (null != e) return e
@@ -80,7 +80,7 @@ function g(e) {
               let {
                 tab: t,
                 labelKey: n
-              } = e, l = t === p;
+              } = e, l = t === f;
               return (0, r.jsx)(a.Drp, {
                 id: t,
                 label: c.intl.string(n),
@@ -96,7 +96,7 @@ function g(e) {
             })
           }, t)
         }
-        let d = t === o.G2.ORBS && f;
+        let d = t === o.G2.ORBS && p;
         return (0, r.jsx)(a.Drp, {
           id: t,
           label: l,

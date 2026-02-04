@@ -39,7 +39,7 @@ function o(e) {
     tooltip: m,
     loading: g,
     disabled: y,
-    onClick: b
+    onClick: h
   } = (0, a._B)(t, n, o);
   return (0, r.jsx)(i.m, {
     text: m,
@@ -67,7 +67,7 @@ function o(e) {
       text: p,
       fullWidth: u,
       onClick: () => {
-        null == d || d(), b()
+        null == d || d(), h()
       },
       disabled: y,
       loading: g

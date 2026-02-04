@@ -31,9 +31,9 @@ function h(e) {
     navigateToHome: h,
     subscriptionGroup: O,
     renewalSkuId: x
-  } = e, C = (0, a.A)(n, 100), S = (0, p.PJ)(O.flags), T = S ? s.RR9 : s.nys, I = S ? f.intl.string(f.t["46YF2D"]) : f.intl.string(f.t.fFyGiA), N = null == (t = l.metadata) ? true : t.application_subscription_guild_id, y = (0, i.bG)([u.A], () => S && null != N ? u.A.getGuild(N) : true, [N, S]), j = (0, i.bG)([_.A], () => {
+  } = e, C = (0, a.A)(n, 100), S = (0, p.PJ)(O.flags), T = S ? s.RR9 : s.nys, I = S ? f.intl.string(f.t["46YF2D"]) : f.intl.string(f.t.fFyGiA), N = null == (t = l.metadata) ? true : t.application_subscription_guild_id, y = (0, i.bG)([u.A], () => S && null != N ? u.A.getGuild(N) : true, [N, S]), v = (0, i.bG)([_.A], () => {
     if (null != x) return _.A.get(x)
-  }, [x]), v = (0, g.Y)(l.currentPeriodEnd);
+  }, [x]), j = (0, g.Y)(l.currentPeriodEnd);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: b.wx,
@@ -104,11 +104,11 @@ function h(e) {
             variant: "eyebrow",
             color: "text-brand",
             children: f.intl.string(f.t.fHIpOY)
-          }), null != j && (0, r.jsx)(s.Text, {
+          }), null != v && (0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-subtle",
             children: f.intl.format(f.t["OQk+jr"], {
-              endDate: v
+              endDate: j
             })
           })]
         })
@@ -118,7 +118,7 @@ function h(e) {
           variant: "text-sm/semibold",
           color: "text-subtle",
           children: f.intl.format(f.t.nn88hB, {
-            startDate: v
+            startDate: j
           })
         })
       }, e.id) : (0, r.jsx)(E, {

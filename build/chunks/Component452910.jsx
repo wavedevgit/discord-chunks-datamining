@@ -41,12 +41,12 @@ let f = e => {
     onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
       percent: null == I ? true : I.discount.amount
     })
-  }), j = (0, _.Q)(C);
+  }), v = (0, _.Q)(C);
   return (0, r.jsxs)("div", {
-    className: l()(A.L_, null == j || null == (t = j.overlayContainer) ? true : t.className),
+    className: l()(A.L_, null == v || null == (t = v.overlayContainer) ? true : t.className),
     children: [(0, r.jsx)(p.A, {
       title: n,
-      cardVariantStyleInfo: j,
+      cardVariantStyleInfo: v,
       titleClassName: i,
       subtitle: b,
       description: h,

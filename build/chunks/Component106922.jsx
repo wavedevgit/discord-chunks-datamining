@@ -191,7 +191,7 @@ function em() {
             G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
               cta_type: ec,
               target: ed
-            }), (0, P.default)(), (0, j.pX)(ei.BVt.APPLICATION_STORE)
+            }), (0, P.default)(), (0, v.pX)(ei.BVt.APPLICATION_STORE)
           },
           variant: "overlay-secondary",
           fullWidth: true,
@@ -208,7 +208,7 @@ function em() {
             G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
               cta_type: ec,
               target: ed
-            }), (0, P.default)(), (0, j.pX)(ei.BVt.APPLICATION_STORE)
+            }), (0, P.default)(), (0, v.pX)(ei.BVt.APPLICATION_STORE)
           },
           text: el.intl.string(el.t.VR2iVB),
           size: "md"
@@ -218,7 +218,7 @@ function em() {
             G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
               cta_type: "to_subscriptions_button",
               target: "subscriptions settings"
-            }), (0, R.openUserSettings)(v.X.SUBSCRIPTIONS_PANEL, {
+            }), (0, R.openUserSettings)(j.X.SUBSCRIPTIONS_PANEL, {
               section: ei.nc_.SUBSCRIPTIONS
             })
           },
@@ -344,17 +344,17 @@ let ef = function() {
       return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
     }),
     O = !(c.Fr || c.v1) && null != g,
-    j = (0, u.bG)([D.A], () => D.A.enabled),
-    v = i.useRef(null);
+    v = (0, u.bG)([D.A], () => D.A.enabled),
+    j = i.useRef(null);
   (0, z.i)();
   let P = (0, K.m)();
   i.useEffect(() => {
     f.h.wait(async () => {
-      j || e || await Promise.all([b.hP(), b.$o(), (0, h.zS)(null, null, ei.tF5.DISCOVERY)]), p(false)
+      v || e || await Promise.all([b.hP(), b.$o(), (0, h.zS)(null, null, ei.tF5.DISCOVERY)]), p(false)
     })
-  }, [j, e]);
+  }, [v, e]);
   let [R, M] = i.useState(false);
-  if (j) return (0, r.jsx)(E.A, {});
+  if (v) return (0, r.jsx)(E.A, {});
   if (e) return (0, r.jsx)(N.uK, {});
   let U = s && null !== l && a,
     k = m.fetched && m.isFractionalPremiumActive,
@@ -381,14 +381,14 @@ let ef = function() {
           selectedPlanTier: en.PremiumTypes.TIER_2
         })]
       }), (0, r.jsx)(_.L, {
-        innerRef: v,
+        innerRef: j,
         onChange: e => {
           e && !R && (G.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: t
           }), M(true))
         },
         children: (0, r.jsx)("div", {
-          ref: v,
+          ref: j,
           className: es._Z
         })
       })]
