@@ -223,8 +223,8 @@ function F(e) {
     K = (null == z ? true : z.type) === m.G4.APPLICATION_COMMAND && null != l.messageReference && null != e.renderTargetMessage,
     Y = (0, S.d8)(null == (t = l.interaction) ? true : t.user, s),
     q = (0, S.d8)(W, s),
-    J = i.useMemo(() => e.compact ? (0, P.A)((0, I.i$)(u()(), "LT")) : null, [e.compact]),
-    Q = (0, f.Gp)(s.id),
+    Q = i.useMemo(() => e.compact ? (0, P.A)((0, I.i$)(u()(), "LT")) : null, [e.compact]),
+    J = (0, f.Gp)(s.id),
     X = l.interaction;
   if (null == X || null == Y) return null;
   let Z = () => {
@@ -349,7 +349,7 @@ function F(e) {
         guildId: s.guild_id
       })
     };
-    n = Q ? R.intl.format(R.t.kfV8WM, {
+    n = J ? R.intl.format(R.t.kfV8WM, {
       userHook: Z,
       activityHook: () => (0, r.jsx)(p.DUT, {
         tag: "span",
@@ -366,7 +366,7 @@ function F(e) {
   return (0, r.jsx)(h.f5, {
     value: c,
     children: (0, r.jsx)("div", {
-      className: a()(D.JZ, D.NB, D.JE, J),
+      className: a()(D.JZ, D.NB, D.JE, Q),
       "aria-hidden": !e.compact,
       children: n
     })

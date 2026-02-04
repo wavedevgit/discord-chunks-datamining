@@ -51,13 +51,13 @@ async function x(e, t) {
     [W, K] = null != (x = (0, h.A)(z, w, M)) ? x : [],
     Y = null != (E = null != W ? W : null == t ? true : t.resolution) ? E : G,
     q = null != (j = null != K ? K : null == t ? true : t.fps) ? j : B,
-    J = null != (C = null == t ? true : t.previewDisabled) ? C : s.uh.getSetting(),
-    Q = null != (I = null == t ? true : t.soundshareEnabled) ? I : F;
+    Q = null != (C = null == t ? true : t.previewDisabled) ? C : s.uh.getSetting(),
+    J = null != (I = null == t ? true : t.soundshareEnabled) ? I : F;
   return (0, _.A)(z, Y, q, w, M, D) || (H = A.jQ.PRESET_VIDEO, Y = A.on.RESOLUTION_720, q = A.kn.FPS_30), (0, i.Xd)({
     preset: H,
     resolution: Y,
     frameRate: q,
-    soundshareEnabled: Q
+    soundshareEnabled: J
   }), (0, i.XI)(L, R, (N = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -94,8 +94,8 @@ async function x(e, t) {
     }
   }(k)), P = P = {
     audioSourceId: (null == (T = k.id) ? true : T.startsWith(r.fS.CAMERA)) ? null == t ? true : t.audioSourceId : true,
-    sound: Q,
-    previewDisabled: J,
+    sound: J,
+    previewDisabled: Q,
     goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,
     analyticsLocations: null == t ? true : t.analyticsLocations
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(N, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {

@@ -120,8 +120,8 @@ function k(e) {
     currentUserPresenceActivity: K,
     hideParty: Y,
     partyStatusElement: q,
-    analyticsLocations: J,
-    showAuthButton: Q,
+    analyticsLocations: Q,
+    showAuthButton: J,
     startAuthorization: X,
     accountLinkButtonRef: Z,
     renderAccountLinkUpsell: $
@@ -188,7 +188,7 @@ function k(e) {
           channelId: T.id,
           messageId: s.id,
           source: w.ThZ.MESSAGE_EMBED,
-          analyticsLocations: J,
+          analyticsLocations: Q,
           embedded: (0, I.A)(W, w.jUm.EMBEDDED),
           remotePartyId: null != ec ? null == (e = W.party) ? true : e.id : true
         }), (0, S.A)({
@@ -200,7 +200,7 @@ function k(e) {
           applicationId: W.application_id,
           partyId: null == (t = W.party) ? true : t.id,
           messageId: s.id,
-          analyticsLocations: J,
+          analyticsLocations: Q,
           remoteJoinPlatform: ec
         })
       }
@@ -230,12 +230,12 @@ function k(e) {
       disabled: true
     } : null != B && (e = B, t = false);
     let r = [];
-    return null != e && (r.push(e), Q && t && (r.push({
+    return null != e && (r.push(e), J && t && (r.push({
       label: D.intl.string(D.t.lw71Nf),
       trackingArea: f.kY.CONNECT_ACCOUNT,
       onClick: () => {
         X({
-          analyticsLocations: J
+          analyticsLocations: Q
         })
       },
       icon: c.A5T,
@@ -245,8 +245,8 @@ function k(e) {
       actions: r,
       hasAccountLinkButton: n
     }
-  }, [eo, eu, ed, ep, B, s.author.id, s.id, W, T.id, T.guild_id, J, ec, k, em, Q, X, Z]), e_ = ef.some(e => e.trackingArea === f.kY.CLOUD_PLAY);
-  (0, P.A)(e_, J);
+  }, [eo, eu, ed, ep, B, s.author.id, s.id, W, T.id, T.guild_id, Q, ec, k, em, J, X, Z]), e_ = ef.some(e => e.trackingArea === f.kY.CLOUD_PLAY);
+  (0, P.A)(e_, Q);
   let eh = i.useMemo(() => ep ? null : (0, r.jsx)(M, {
     presenceActivity: W,
     remoteJoinPlatform: ec

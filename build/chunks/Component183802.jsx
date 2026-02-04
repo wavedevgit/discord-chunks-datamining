@@ -1,7 +1,7 @@
 /** Chunk was on 9753 **/
 /** chunk id: 183802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => J,
+  A: () => Q,
   s: () => Y
 }), require("./896048.js");
 var r, Chunk627968 = require("./627968.js"),
@@ -95,25 +95,25 @@ function q(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   var t, n, r, a, o, u, A, O, R, D;
   let {
     positionInSection: Y,
-    applicationId: J,
-    skuId: Q,
+    applicationId: Q,
+    skuId: J,
     variant: X = 0,
     guildId: Z,
     onClick: $,
     className: ee,
     analyticsLocations: et
-  } = e, en = l.useRef(null), er = (0, m.bG)([E.A], () => E.A.get(Q)), ei = (0, m.bG)([x.A], () => (0, p.Mwr)(x.A.theme)), el = (0, m.bG)([_.A], () => _.A.useReducedMotion), {
+  } = e, en = l.useRef(null), er = (0, m.bG)([E.A], () => E.A.get(J)), ei = (0, m.bG)([x.A], () => (0, p.Mwr)(x.A.theme)), el = (0, m.bG)([_.A], () => _.A.useReducedMotion), {
     isHoveringOrFocusing: ea
   } = (0, v.A)(en), es = (0, S.jM)(), {
     analyticsLocations: eo
   } = (0, b.Ay)(null != et ? et : []), ec = l.useRef({
     positionInSection: Y,
     analyticsLocations: eo
-  }), [eu, ed] = l.useState(false), ep = (0, m.bG)([T.A], () => null != Q ? T.A.getNormalizedSKUEligibility(Q) : true, [Q]), em = (0, P.A)(Q, eu), ef = l.useCallback(e => {
+  }), [eu, ed] = l.useState(false), ep = (0, m.bG)([T.A], () => null != J ? T.A.getNormalizedSKUEligibility(J) : true, [J]), em = (0, P.A)(J, eu), ef = l.useCallback(e => {
     ed(e)
   }, []), eg = l.useMemo(() => c()(W.Nr, {
     [W.ax]: 0 === X,
@@ -122,9 +122,9 @@ function J(e) {
   }), [X]), {
     handleCardHover: e_,
     handleCardUnhover: eh
-  } = (0, G.Z)(Q, es, Y, eo), {
+  } = (0, G.Z)(J, es, Y, eo), {
     handleCardVisibilityChange: eb
-  } = (0, B.a)(Q, es, Y, eo);
+  } = (0, B.a)(J, es, Y, eo);
   l.useEffect(() => {
     eb(eu)
   }, [eu]);
@@ -144,7 +144,7 @@ function J(e) {
       } = es;
       j.default.track(H.HAw.SLAYER_STOREFRONT_CARD_ELEMENT_CLICKED, {
         slayer_storefront_session_id: r,
-        sku_id: Q,
+        sku_id: J,
         guild_id: i,
         page_index: l,
         page_title: a,
@@ -156,11 +156,11 @@ function J(e) {
         cta_type: e,
         location_stack: t
       })
-    }, [Q, es]),
+    }, [J, es]),
     {
       primaryIconAsset: eA,
       primaryIconLabel: ev
-    } = l.useMemo(() => (0, I.Cv)(er, J), [er, J]),
+    } = l.useMemo(() => (0, I.Cv)(er, Q), [er, Q]),
     eO = (0, m.bG)([T.A], () => {
       var e, t;
       return null != Z && null != (e = null == (t = T.A.getStorefrontState(Z)) ? true : t.activePage) ? e : 0
@@ -191,10 +191,10 @@ function J(e) {
       (ey(F.bB.CARD), null != $) ? $(e): null != Z && (0, N.A)({
         guildId: Z,
         pageIndex: eO,
-        skuId: Q,
+        skuId: J,
         slug: null == er ? true : er.slug
       })
-    }, [ey, Z, Q, $, eO, null == er ? true : er.slug]);
+    }, [ey, Z, J, $, eO, null == er ? true : er.slug]);
   if (null == er) return null;
   let eN = (0, I.fq)(er);
   return (0, i.jsx)(f.L, {

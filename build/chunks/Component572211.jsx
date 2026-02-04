@@ -99,7 +99,7 @@ function O(e) {
         isDeadEnd: w.isDeadEnd
       })
     }
-  }, [R, w]), J = l.useMemo(() => {
+  }, [R, w]), Q = l.useMemo(() => {
     if (null != D) return e => {
       D(e), (0, _.gx)({
         applicationId: w.id,
@@ -115,7 +115,7 @@ function O(e) {
     ref: B,
     className: y.E6,
     children: [V && (0, i.jsxs)(v, {
-      onClick: J,
+      onClick: Q,
       className: s()(y.cy, z, {
         [y.wk]: H
       }),

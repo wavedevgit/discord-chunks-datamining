@@ -132,7 +132,7 @@ function q(e, t, n) {
   }, [e, t, n])
 }
 
-function J(e) {
+function Q(e) {
   let {
     children: t,
     className: n,
@@ -146,7 +146,7 @@ function J(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     children: t,
     className: n
@@ -441,7 +441,7 @@ function et(e) {
                     })
                   })]
                 })]
-              }), eA ? (0, r.jsx)(Q, {
+              }), eA ? (0, r.jsx)(J, {
                 children: (0, r.jsx)(m.Text, {
                   variant: "text-xs/medium",
                   color: "text-default",
@@ -456,7 +456,7 @@ function et(e) {
             onBlur: L,
             onClick: e_
           }))
-        }), (0, r.jsx)(J, {
+        }), (0, r.jsx)(Q, {
           compact: l,
           children: (0, r.jsxs)("div", {
             className: a()(V.Y4, V.UD, {

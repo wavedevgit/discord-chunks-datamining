@@ -700,7 +700,7 @@ let eD = Object.freeze({
         message: t,
         channel: n
       } = e, i = t.giftingPrompt, a = (0, l.bG)([V.default], () => V.default.getUser(null == i ? true : i.recipientUserId));
-      return null == i || null == a ? null : (0, r.jsx)(Q.A, {
+      return null == i || null == a ? null : (0, r.jsx)(J.A, {
         giftIntentType: i.giftIntentType,
         recipientUser: a,
         channel: n
@@ -798,7 +798,7 @@ let eD = Object.freeze({
     }
     return (0, r.jsx)(X.Ay, {
       message: t,
-      content: (0, J.Ay)(t).content,
+      content: (0, Q.Ay)(t).content,
       compact: null != i && i,
       children: (0, r.jsx)(s, {
         message: t,

@@ -76,16 +76,16 @@ let F = Chunk64700.memo(function(e) {
       currentEmbeddedActivity: p.Ay.getCurrentEmbeddedActivity(),
       activityLaunchState: p.Ay.getLaunchState(d.id, null != z ? z : true)
     }), [z, d.id]),
-    J = null == K ? true : K.userIds,
-    Q = (0, s.yK)([S.default], () => Array.from(null != J ? J : []).map(e => S.default.getUser(e)).filter(w.Vq), [J]),
+    Q = null == K ? true : K.userIds,
+    J = (0, s.yK)([S.default], () => Array.from(null != Q ? Q : []).map(e => S.default.getUser(e)).filter(w.Vq), [Q]),
     X = (0, s.bG)([I.A], () => {
-      if (null == J) return null;
-      for (let e of J) {
+      if (null == Q) return null;
+      for (let e of Q) {
         let t = I.A.findActivity(e, e => e.application_id === d.id);
         if (null != t) return t
       }
       return null
-    }, [d.id, J]),
+    }, [d.id, Q]),
     Z = null == X ? true : X.details,
     $ = i.useMemo(() => {
       let e = new E.Ay(d);
@@ -139,7 +139,7 @@ let F = Chunk64700.memo(function(e) {
       bot: d.bot
     });
   en.disabled && (o = en.tooltip);
-  let ec = Q.length,
+  let ec = J.length,
     eu = null != (t = null == X || null == (l = X.timestamps) ? true : l.start) ? t : null == X ? true : X.created_at,
     ed = (0, A.y)({
       activity: X,
@@ -196,7 +196,7 @@ let F = Chunk64700.memo(function(e) {
             })]
           })]
         }), ec > 0 && (0, r.jsx)(A.$, {
-          activityUsers: Q,
+          activityUsers: J,
           guildId: P,
           activityText: ed.text
         })]

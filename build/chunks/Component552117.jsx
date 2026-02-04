@@ -189,17 +189,17 @@ let G = e => {
       } = i.useRef(M({
         guild_id: l.getGuildId()
       }, (0, f.dI)(l))),
-      J = {
+      Q = {
         stickerSourceGuild: F,
         refreshPositionKey: A
       },
-      Q = i.useRef(J);
+      J = i.useRef(Q);
     i.useEffect(() => {
-      Q.current = J
+      J.current = Q
     }), i.useEffect(() => {
       let {
         stickerSourceGuild: e
-      } = Q.current;
+      } = J.current;
       (async () => {
         (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && I(await (0, h.A)(n.id)), N(true)
       })()
@@ -217,7 +217,7 @@ let G = e => {
     if (i.useEffect(() => {
         let {
           refreshPositionKey: e
-        } = Q.current;
+        } = J.current;
         e()
       }, [S, C]), (0, m.Ay)(() => {
         E.default.track(P.HAw.OPEN_POPOUT, M({

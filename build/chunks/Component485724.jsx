@@ -73,9 +73,9 @@ function U(e) {
     },
     applicationId: n.id,
     botUserId: null == x ? true : x.id
-  }), q = null != E && j && Y, J = W && j, Q = (0, b.e)(n), X = (0, D.F)(n), Z = (0, D.t)(n), $ = i.useMemo(() => {
+  }), q = null != E && j && Y, Q = W && j, J = (0, b.e)(n), X = (0, D.F)(n), Z = (0, D.t)(n), $ = i.useMemo(() => {
     let e = [];
-    return j ? Q ? e.push({
+    return j ? J ? e.push({
       label: M.intl.string(M.t.RscU7I),
       trackingArea: P.kY.PLAY,
       onClick() {
@@ -83,7 +83,7 @@ function U(e) {
           applicationId: n.id
         })
       }
-    }) : (J && e.push({
+    }) : (Q && e.push({
       label: null == V ? M.intl.string(M.t.RscU7I) : z ? M.intl.string(M.t.DPfdsq) : M.intl.string(M.t.sqe0hj),
       trackingArea: P.kY.PLAY,
       onClick() {
@@ -98,7 +98,7 @@ function U(e) {
         })
       },
       disabled: z
-    }), !J && q && e.push({
+    }), !Q && q && e.push({
       label: M.intl.string(M.t.JeK1Wg),
       trackingArea: P.kY.PLAY,
       onClick() {
@@ -111,7 +111,7 @@ function U(e) {
         })
       }
     })) : null != Z && e.push(Z), e
-  }, [j, Z, Q, n.id, J, q, V, z, H, K, a, U, F, E]), ee = j ? (0, r.jsx)(B, {
+  }, [j, Z, J, n.id, Q, q, V, z, H, K, a, U, F, E]), ee = j ? (0, r.jsx)(B, {
     app: n
   }) : (0, r.jsx)(G, {
     app: n

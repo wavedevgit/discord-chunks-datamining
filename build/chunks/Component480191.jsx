@@ -76,7 +76,7 @@ function k(e) {
     channel: B
   } = e, F = i.useRef(null), H = i.useRef(null), V = (0, T.D)(U, G), {
     setPopout: z
-  } = (0, y.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, true), K = O.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), Z = (0, o.bG)([x.Ay, E.default], () => {
+  } = (0, y.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, true), K = O.kt.useSetting(), Y = (0, I.j)(), [q, Q] = i.useState(false), [J, X] = i.useState((null == V ? true : V.coverImage) == null), Z = (0, o.bG)([x.Ay, E.default], () => {
     var e;
     return x.Ay.isMember(null == V ? true : V.guildId, null == (e = E.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, o.bG)([x.Ay], () => (null == V ? true : V.authorId) != null ? x.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (l = V.user) ? true : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -85,10 +85,10 @@ function k(e) {
   }, [$]), ei = (0, A.gn)(null == $ ? true : $.guildId, null != (t = null == V ? true : V.authorId) ? t : true, en), {
     reducedMotion: el
   } = i.useContext(u.CZY), [ea, es] = i.useState(false), eo = i.useCallback(() => {
-    J(true)
-  }, [J]), ec = i.useCallback(() => {
-    J(false)
-  }, [J]), eu = i.useCallback(async () => {
+    Q(true)
+  }, [Q]), ec = i.useCallback(() => {
+    Q(false)
+  }, [Q]), eu = i.useCallback(async () => {
     null != V && ((0, p.zV)(N.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: V.threadId,
       channel_id: B.id,
@@ -116,7 +116,7 @@ function k(e) {
       className: R.iT,
       onMouseEnter: eo,
       onMouseLeave: ec,
-      children: [!Q && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
+      children: [!J && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: D,
         alt: w.intl.string(w.t.rIbh8H),
         className: a()(R.xn, {

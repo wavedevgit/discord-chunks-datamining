@@ -51,7 +51,7 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
     } = (0, d.Ay)(), [H, V] = i.useState(null), [z, W] = i.useState(null), K = (0, m.A)(e => {
       let t = e.target;
       V(t.offsetWidth), W(t.scrollWidth)
-    }), Y = (0, p.w)(K), q = (0, j.a3)(P), J = P === f.uF.QUESTS_EMBED, Q = (0, g.wT)(l, C.rE.QUESTS_CARD, P, G), X = (null == (t = l.userStatus) ? true : t.completedAt) != null, Z = (0, h.Ut)(), $ = (0, _.S5)(l.config.expiresAt), ee = (0, _.S5)(l.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != l.config.cosponsorMetadata, [l]), en = e => {
+    }), Y = (0, p.w)(K), q = (0, j.a3)(P), Q = P === f.uF.QUESTS_EMBED, J = (0, g.wT)(l, C.rE.QUESTS_CARD, P, G), X = (null == (t = l.userStatus) ? true : t.completedAt) != null, Z = (0, h.Ut)(), $ = (0, _.S5)(l.config.expiresAt), ee = (0, _.S5)(l.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != l.config.cosponsorMetadata, [l]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), Z({
         questId: l.id,
         questContent: P,
@@ -66,12 +66,12 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
       quest: l,
       separatorSpacing: v.C8.MEDIUM,
       theme: I.NJ.DARK,
-      withGameTile: !J || null == l.config.cosponsorMetadata
+      withGameTile: !Q || null == l.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
       className: a()(T.nw, {
         [T.fu]: q,
-        [T.Gg]: J,
+        [T.Gg]: Q,
         [T.e5]: "xs" === w
       }),
       "aria-label": S.intl.string(S.t.dcl9MQ),
@@ -92,7 +92,7 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
         "aria-expanded": L,
         children: [(0, r.jsxs)(s.animated.div, {
           className: a()(T.VW, {
-            [T.eX]: J
+            [T.eX]: Q
           }),
           style: {
             y: q ? R.to({
@@ -131,7 +131,7 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
                   })]
                 }), (0, r.jsx)(u.Text, {
                   variant: "text-xs/medium",
-                  children: Q
+                  children: J
                 })]
               })]
             })
@@ -141,7 +141,7 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
             },
             className: a()(T.Yu, {
               [T.fu]: q,
-              [T.Gg]: J
+              [T.Gg]: Q
             }),
             style: {
               opacity: (0, E.a)(R.to({
@@ -155,7 +155,7 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
               className: T.uA,
               children: [(0, r.jsxs)("div", {
                 className: T._V,
-                children: [er, J ? null : (0, r.jsx)(O.A, {
+                children: [er, Q ? null : (0, r.jsx)(O.A, {
                   color: "always-white"
                 })]
               }), (0, r.jsxs)("div", {
@@ -200,7 +200,7 @@ let N = (0, Chunk92674.animated)(Chunk397927.abt),
             questContentPosition: k,
             shouldShowDisclosure: true,
             hideLearnMore: q,
-            showShareLink: !n && J,
+            showShareLink: !n && Q,
             sourceQuestContent: G,
             children: e => {
               var t, n;
