@@ -2,6 +2,7 @@ import * as acorn from "acorn";
 import * as walk from "acorn-walk";
 import generate from "escodegen";
 function parseValue(node) {
+  if (node.type === "SpreadElement") return null; 
   if (node.type === "ArrayExpression")
     return node.elements.map((el) => parseValue(el));
   if (node.type === "Literal") return node.value;
@@ -36,8 +37,8 @@ function getRawExperiment(code) {
       ];
       if (
         !node.properties
-          .map((prop) => prop.key.name)
-          .some((key) => keys.includes(key))
+          .map((prop) => prop?.key?.name)
+          .some((key) => keys?.includes?.(key))
       )
         return;
       result = parseValue(node);
