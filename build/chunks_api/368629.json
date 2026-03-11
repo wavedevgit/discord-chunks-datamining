@@ -1,1 +1,0 @@
-{"id":"368629","type":"experiment","data":{"kind":"user","id":"2025-07_user_profile_holdout_h2","label":"User Profile Holdout H2 Experiment","defaultConfig":{"isInHoldout":false},"treatments":[{"id":1,"label":"Is in holdout","config":{"isInHoldout":true}}]},"fromModule":{"id":"95814"}}
