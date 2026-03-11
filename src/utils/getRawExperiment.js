@@ -10,7 +10,7 @@ function parseValue(node) {
   if (node.type === "ObjectExpression") {
     let result = {};
     for (let prop of node.properties) {
-      result[prop.key.name] = parseValue(prop.value);
+      if (prop?.key?.name) result[prop?.key?.name] = parseValue(prop.value);
     }
     return result;
   }
