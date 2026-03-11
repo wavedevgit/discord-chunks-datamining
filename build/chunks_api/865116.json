@@ -1,1 +1,0 @@
-{"id":"865116","type":"store","data":{"name":"DevToolsDevSettingsStore","functions":[{"name":"getUserAgnosticState","args":[]},{"name":"initialize","args":["e"]},{"name":"get","args":["e"]},{"name":"enabled","args":[]},{"name":"allByCategory","args":["e"]}],"events":["DEV_TOOLS_DEV_SETTING_SET"]},"fromModule":{"id":"web.js"}}

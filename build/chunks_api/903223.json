@@ -1,1 +1,0 @@
-{"id":"903223","type":"experiment","data":{"kind":"guild","id":"2026-01_boost_progress_bar_default_on","label":"Boost Progress Bar Default On","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Progress bar default-on","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

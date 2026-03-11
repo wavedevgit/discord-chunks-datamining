@@ -1,1 +1,1 @@
-{"id":"181079","type":"store","data":{"name":"FavoriteStore","functions":[{"name":"initialize","args":[]},{"name":"getFavoriteChannels","args":[]},{"name":"favoriteServerMuted","args":[]},{"name":"isFavorite","args":["e"]},{"name":"getFavorite","args":["e"]},{"name":"getCategoryRecord","args":["e"]},{"name":"getNickname","args":["e"]}],"events":[]},"fromModule":{"id":"web.js"}}
+{"id":"181079","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

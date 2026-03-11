@@ -1,1 +1,1 @@
-{"id":"346835","type":"store","data":{"name":"CustomActivityLinksStore","functions":[{"name":"getOne","args":["e","t"]}],"events":["CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS","LOGOUT"]},"fromModule":{"id":"web.js"}}
+{"id":"346835","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

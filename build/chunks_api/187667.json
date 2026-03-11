@@ -1,1 +1,0 @@
-{"id":"187667","type":"store","data":{"name":"OverlayTextChatStore","functions":[{"name":"initialize","args":[]},{"name":"getSessionEntries","args":["e"]},{"name":"getSelectedChannelId","args":[]},{"name":"getVoiceChatMinimized","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}

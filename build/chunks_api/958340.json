@@ -1,1 +1,0 @@
-{"id":"958340","type":"store","data":{"name":"BasicGuildStore","functions":[{"name":"getGuild","args":["e"]},{"name":"isGuildFetching","args":["e"]},{"name":"getGuildOrStatus","args":["e"]},{"name":"getVersion","args":[]}],"events":["BASIC_GUILD_FETCH","BASIC_GUILD_FETCH_SUCCESS","BASIC_GUILD_FETCH_FAILURE"]},"fromModule":{"id":"web.js"}}

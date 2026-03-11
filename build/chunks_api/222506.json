@@ -1,1 +1,1 @@
-{"id":"222506","type":"store","data":{"name":"Overlay-v3-Native-Input-Lock-Store","functions":[{"name":"initialize","args":[]},{"name":"isInputLocked","args":["e"]}],"events":[]},"fromModule":{"id":"web.js"}}
+{"id":"222506","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

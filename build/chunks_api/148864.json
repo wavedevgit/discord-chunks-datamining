@@ -1,1 +1,1 @@
-{"id":"148864","type":"store","data":{"name":"PhoneStore","functions":[{"name":"initialize","args":["e"]},{"name":"getUserAgnosticState","args":[]},{"name":"getCountryCode","args":[]}],"events":["PHONE_SET_COUNTRY_CODE","CONNECTION_OPEN","SET_LOCATION_METADATA"]},"fromModule":{"id":"34078"}}
+{"id":"148864","type":"unknown","data":{},"fromModule":{"id":"34078"}}

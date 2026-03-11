@@ -1,1 +1,1 @@
-{"id":"216184","type":"store","data":{"name":"MessageActivityInviteCoverImageStore","functions":[{"name":"getCoverImageURL","args":["e"]}],"events":["SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL"]},"fromModule":{"id":"9753"}}
+{"id":"216184","type":"unknown","data":{},"fromModule":{"id":"2245"}}

@@ -1,1 +1,0 @@
-{"id":"574520","type":"store","data":{"name":"ContentInventoryActivityStore","functions":[{"name":"initialize","args":[]},{"name":"getMatchingActivity","args":["e"]},{"name":"constructor","args":["e"]}],"events":["CONNECTION_OPEN","CONTENT_INVENTORY_SET_FEED"]},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"439547","type":"experiment","data":{"kind":"user","id":"2025-02_voice_activity_status_mobile","label":"Voice Activity Status (Mobile)","defaultConfig":{"voiceActivityStatusEnabled":false},"treatments":[{"id":1,"label":"Voice Activity Status Enabled","config":{"voiceActivityStatusEnabled":true}}]},"fromModule":{"id":"59569"}}

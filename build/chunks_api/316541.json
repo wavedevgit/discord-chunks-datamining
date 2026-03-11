@@ -1,1 +1,1 @@
-{"id":"316541","type":"store","data":{"name":"OverlayActiveNowStore","functions":[{"name":"initialize","args":[]},{"name":"getActiveNowChannelByChannelId","args":["e","t"]},{"name":"getActiveNowChannels","args":["e"]},{"name":"getActiveNowChannelIds","args":["e"]},{"name":"hasActiveNowChannelId","args":["e"]},{"name":"getScoreForChannelId","args":["e"]},{"name":"getScoreBreakdownForChannelId","args":["e"]}],"events":[]},"fromModule":{"id":"7685"}}
+{"id":"316541","type":"unknown","data":{},"fromModule":{"id":"27482"}}

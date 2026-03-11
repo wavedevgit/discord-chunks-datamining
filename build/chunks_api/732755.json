@@ -1,1 +1,0 @@
-{"id":"732755","type":"store","data":{"name":"StageChannelSelfRichPresenceStore","functions":[{"name":"initialize","args":[]},{"name":"getActivity","args":[]}],"events":["CONNECTION_OPEN","STAGE_INSTANCE_CREATE","STAGE_INSTANCE_UPDATE","STAGE_INSTANCE_DELETE","VOICE_CHANNEL_SELECT","RTC_CONNECTION_STATE","VOICE_STATE_UPDATES"]},"fromModule":{"id":"web.js"}}

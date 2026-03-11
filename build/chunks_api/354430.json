@@ -1,1 +1,1 @@
-{"id":"354430","type":"store","data":{"name":"TopEmojiStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getTopEmojiIdsByGuildId","args":["e"]},{"name":"getIsFetching","args":["e"]}],"events":["LOGOUT","TOP_EMOJIS_FETCH","TOP_EMOJIS_FETCH_SUCCESS"]},"fromModule":{"id":"web.js"}}
+{"id":"354430","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

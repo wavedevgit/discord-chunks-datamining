@@ -1,1 +1,0 @@
-{"id":"545167","type":"experiment","data":{"name":"2026-02-bf-browser","kind":"user","defaultConfig":{"allowEnhancedNav":true},"variations":{"undefined":{"allowEnhancedNav":false}}},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"448564","type":"store","data":{"name":"CreatorMonetizationPersistedStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"hasSeenCreatorOnboardingForGuild","args":["e"]}],"events":["CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD"]},"fromModule":{"id":"39048"}}

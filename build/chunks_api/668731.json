@@ -1,1 +1,0 @@
-{"id":"668731","type":"store","data":{"name":"FirstPartyRichPresenceStore","functions":[{"name":"initialize","args":[]},{"name":"getActivities","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}

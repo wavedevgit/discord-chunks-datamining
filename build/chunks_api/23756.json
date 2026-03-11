@@ -1,1 +1,0 @@
-{"id":"23756","type":"experiment","data":{"id":"2025-07_apex_cluster_randomization_aa","kind":"user","label":"Apex Cluster Randomization AA","defaultConfig":{"isEnabled":false},"treatments":[{"id":1,"label":"AA test enabled. Noop on UI effect.","config":{"isEnabled":true}}],"commonTriggerPoint":"Chunk688151.$G.CONNECTION_OPEN"},"fromModule":{"id":"21738"}}

@@ -1,3 +1,0 @@
-/** Chunk was on 95704 **/
-/** chunk id: 64811, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"/cp93l":["N\xe4sta m\xe5nad"],"raS6yf":["F\xf6rra m\xe5naden"],"JA5C7L":["Rensa"],"I8kUqR":["\xd6ppna kalendern"],"db85vU":["Inga f\xf6rem\xe5l att visa"],"bPKiId":["Inga resultat f\xf6r ”",[1,"query"],"”"],"WfH9in":["St\xe4ng"],"m3Vfcs":["Visa inte igen"],"cgdAs2":["(Kommer att \xf6ppnas i en ny flik)"],"/Y7vRd":["Tryck p\xe5 ”X” f\xf6r att ta bort."],"VMNfsY":["Valda"],"A+pfVR":["V\xe4lj\xa0..."],"v2YSk/":["Steg ",[1,"stepNumber"]," av ",[1,"stepCount"]],"YpT3kk":["F\xf6rstora och spela video"]}')

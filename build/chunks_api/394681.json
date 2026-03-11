@@ -1,0 +1,1 @@
+{"id":"394681","type":"experiment","data":{"id":"2026-01_invite_app_launched_context","kind":"guild","label":"Invite App Launched Context","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Invite App Launched Context","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

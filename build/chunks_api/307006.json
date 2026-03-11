@@ -1,1 +1,1 @@
-{"id":"307006","type":"store","data":{"name":"GenericIAPStore","functions":[{"name":"isGenericIapConnected","args":[]},{"name":"hasGenericSubscription","args":[]},{"name":"getProducts","args":[]},{"name":"getStoreFront","args":[]}],"events":["IAP_LOAD_GENERIC_PRODUCTS","GENERIC_IAP_INIT_CONNECTION","GENERIC_IAP_INIT_CONNECTION_FAILED","GENERIC_IAP_END_CONNECTION","GENERIC_IAP_SET_STORE_FRONT"]},"fromModule":{"id":"web.js"}}
+{"id":"307006","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

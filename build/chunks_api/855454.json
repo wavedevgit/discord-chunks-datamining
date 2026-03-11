@@ -1,1 +1,0 @@
-{"id":"855454","type":"experiment","data":{"kind":"user","id":"2025-06_krisp_stats_collection","label":"Krisp Stats Collection Experiment","defaultConfig":"l","treatments":[{"id":1,"label":"Enable Krisp Stats Collection","config":"s(a({}, l), { enableStats: true })"}]},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"204912","type":"experiment","data":{"kind":"user","id":"2025-04_network_aware_sockets","label":"Network aware sockets","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

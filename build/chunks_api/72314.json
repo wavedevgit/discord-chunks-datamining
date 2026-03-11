@@ -1,1 +1,1 @@
-{"id":"72314","type":"store","data":{"name":"DimensionStore","functions":[{"name":"percentageScrolled","args":["e"]},{"name":"getChannelDimensions","args":["e"]},{"name":"getGuildDimensions","args":["e"]},{"name":"getGuildListDimensions","args":[]},{"name":"isAtBottom","args":["e"]}],"events":["UPDATE_CHANNEL_DIMENSIONS","UPDATE_CHANNEL_LIST_DIMENSIONS","UPDATE_GUILD_LIST_DIMENSIONS","CALL_CREATE"]},"fromModule":{"id":"web.js"}}
+{"id":"72314","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

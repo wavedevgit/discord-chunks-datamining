@@ -1,1 +1,1 @@
-{"id":"60175","type":"store","data":{"name":"MemberVerificationFormStore","functions":[{"name":"get","args":["e"]},{"name":"getRulesPrompt","args":["e"]}],"events":["INVITE_ACCEPT_SUCCESS","MEMBER_VERIFICATION_FORM_UPDATE","MEMBER_VERIFICATION_FORM_FETCH_FAIL","GUILD_DELETE"]},"fromModule":{"id":"39579"}}
+{"id":"60175","type":"unknown","data":{},"fromModule":{"id":"39579"}}

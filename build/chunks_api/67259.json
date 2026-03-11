@@ -1,1 +1,1 @@
-{"id":"67259","type":"store","data":{"name":"ThreadsAlsoSendToChannelStore","functions":[{"name":"getAlsoSendToChannel","args":["e"]}],"events":["SET_THREADS_ALSO_SEND_TO_CHANNEL","CREATE_PENDING_SCHEDULED_MESSAGE"]},"fromModule":{"id":"web.js"}}
+{"id":"67259","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

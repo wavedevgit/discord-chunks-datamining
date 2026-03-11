@@ -1,1 +1,1 @@
-{"id":"321090","type":"store","data":{"name":"Overlay-v3-Native-GPU-Boost-Store","functions":[{"name":"initialize","args":[]},{"name":"getGPUBoostRequests","args":[]},{"name":"isGPUBoosted","args":[]},{"name":"getIsDisabledGPUBoost","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}
+{"id":"321090","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

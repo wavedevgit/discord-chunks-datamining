@@ -1,1 +1,1 @@
-{"id":"127242","type":"store","data":{"name":"Overlay-v3-Native-Debug-Module-Store","functions":[{"name":"initialize","args":[]},{"name":"getDebuggingState","args":[]},{"name":"hasRenderDebugMode","args":["e"]},{"name":"getRenderDebugModes","args":[]},{"name":"getOverlayLoggingBreadcrumbs","args":["e"]},{"name":"isModuleLoggingEnabled","args":[]},{"name":"isStateDebuggingEnabled","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}
+{"id":"127242","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

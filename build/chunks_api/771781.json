@@ -1,1 +1,0 @@
-{"id":"771781","type":"store","data":{"name":"DismissibleContentShownStateStore","functions":[{"name":"initialize","args":[]},{"name":"setHasRequiredAction","args":[]}],"events":["CONNECTION_OPEN","LOGOUT"]},"fromModule":{"id":"web.js"}}

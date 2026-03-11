@@ -1,1 +1,1 @@
-{"id":"383394","type":"store","data":{"name":"ExpandedGuildFolderStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getExpandedFolders","args":[]},{"name":"isFolderExpanded","args":["e"]}],"events":["TOGGLE_GUILD_FOLDER_EXPAND","SET_GUILD_FOLDER_EXPANDED","USER_SETTINGS_PROTO_UPDATE","GUILD_FOLDER_COLLAPSE"]},"fromModule":{"id":"web.js"}}
+{"id":"383394","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

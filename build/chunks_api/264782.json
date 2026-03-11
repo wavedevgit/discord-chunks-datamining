@@ -1,1 +1,1 @@
-{"id":"264782","type":"store","data":{"name":"ApplicationAssetsStore","functions":[{"name":"getApplicationAssetFetchState","args":["e"]},{"name":"getFetchingIds","args":[]},{"name":"getApplicationAssets","args":["e"]}],"events":["APPLICATION_ASSETS_FETCH","APPLICATION_ASSETS_FETCH_SUCCESS","APPLICATION_ASSETS_UPDATE","EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS","DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS"]},"fromModule":{"id":"web.js"}}
+{"id":"264782","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

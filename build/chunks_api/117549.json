@@ -1,1 +1,1 @@
-{"id":"117549","type":"store","data":{"name":"VideoQualityModeStore","functions":[{"name":"mode","args":[]}],"events":["SET_CHANNEL_VIDEO_QUALITY_MODE"]},"fromModule":{"id":"web.js"}}
+{"id":"117549","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

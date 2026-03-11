@@ -1,1 +1,0 @@
-{"id":"931664","type":"store","data":{"name":"StickerMessagePreviewStore","functions":[{"name":"getStickerPreview","args":["e","t"]}],"events":["ADD_STICKER_PREVIEW","CLEAR_STICKER_PREVIEW","LOGOUT"]},"fromModule":{"id":"web.js"}}

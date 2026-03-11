@@ -1,1 +1,1 @@
-{"id":"101392","type":"store","data":{"name":"SlowmodeStore","functions":[{"name":"initialize","args":[]},{"name":"getSlowmodeCooldownGuess","args":["e","t"]},{"name":"isChannelOnCooldown","args":["e","t"]}],"events":["SLOWMODE_RESET_COOLDOWN","SLOWMODE_SET_COOLDOWN","UPLOAD_START","UPLOAD_FAIL","UPLOAD_CANCEL_REQUEST","CHANNEL_UPDATES","LOGOUT"]},"fromModule":{"id":"web.js"}}
+{"id":"101392","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

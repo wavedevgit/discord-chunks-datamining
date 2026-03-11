@@ -1,1 +1,1 @@
-{"id":"31455","type":"store","data":{"name":"ApplicationStoreDirectoryStore","functions":[{"name":"initialize","args":[]},{"name":"hasStorefront","args":["e"]},{"name":"getStoreLayout","args":["e"]},{"name":"getFetchStatus","args":["e"]}],"events":["APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_SUCCESS","APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_FAILED","APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING"]},"fromModule":{"id":"web.js"}}
+{"id":"31455","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"956703","type":"store","data":{"name":"MessageReactionsStore","functions":[{"name":"initialize","args":[]},{"name":"getReactions","args":["e","t","n","r","i"]}],"events":["CONNECTION_OPEN","MESSAGE_REACTION_ADD","MESSAGE_REACTION_REMOVE","MESSAGE_REACTION_ADD_USERS"]},"fromModule":{"id":"web.js"}}

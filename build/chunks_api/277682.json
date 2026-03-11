@@ -1,1 +1,1 @@
-{"id":"277682","type":"store","data":{"name":"NativePermissionsStore","functions":[{"name":"initialize","args":["e"]},{"name":"getUserAgnosticState","args":[]},{"name":"hasPermission","args":["e"]},{"name":"handleSetNativePermission","args":["e"]},{"name":"constructor","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}
+{"id":"277682","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

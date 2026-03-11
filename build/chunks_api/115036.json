@@ -1,1 +1,1 @@
-{"id":"115036","type":"store","data":{"name":"BrowserHandoffStore","functions":[{"name":"initialize","args":[]},{"name":"isHandoffAvailable","args":[]},{"name":"user","args":[]},{"name":"key","args":[]}],"events":["RPC_SERVER_READY","BROWSER_HANDOFF_BEGIN","BROWSER_HANDOFF_FROM_APP","BROWSER_HANDOFF_UNAVAILABLE","BROWSER_HANDOFF_SET_USER","LOGIN","LOGIN_SUCCESS","LOGOUT","REGISTER"]},"fromModule":{"id":"web.js"}}
+{"id":"115036","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

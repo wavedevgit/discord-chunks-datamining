@@ -1,1 +1,1 @@
-{"id":"303622","type":"store","data":{"name":"LabFeatureStore","functions":[{"name":"getUserAgnosticState","args":[]},{"name":"initialize","args":["e"]},{"name":"get","args":["e"]},{"name":"set","args":["e","t"]}],"events":["LAB_FEATURE_TOGGLE"]},"fromModule":{"id":"web.js"}}
+{"id":"303622","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

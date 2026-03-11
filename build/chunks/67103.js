@@ -1,8 +1,0 @@
-/** Chunk was on 7685 **/
-/** chunk id: 67103, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  K: () => s,
-  c: () => i
-});
-var l, r, i = ((l = {}).USER_CONTEXT_MENU = "user_context_menu", l.OPEN_DIRECT_MESSAGE = "open_direct_message", l.SEND_FRIEND_REQUEST = "send_friend_request", l.ACCEPT_FRIEND_REQUEST = "accept_friend_request", l.DECLINE_FRIEND_REQUEST = "decline_friend_request", l.CANCEL_FRIEND_REQUEST = "cancel_friend_request", l.SEND_ACTIVITY_INVITE = "send_activity_invite", l.ASK_TO_JOIN = "ask_to_join", l.OPEN_FRIEND_MODAL = "open_friend_modal", l.OPEN_SETTINGS_MODAL = "open_settings_modal", l.SEARCH_FRIENDS = "search_friends", l.CONNECT_VOICE_CHANNEL = "connect_voice_channel", l.DISCONNECT_VOICE_CHANNEL = "disconnect_voice_channel", l.OPEN_TEXT_CHAT_CHANNEL = "open_text_chat_channel", l.TAB_CHANGE = "tab_change", l),
-  s = ((r = {}).FRIEND_ROW = "friend_row", r.FRIEND_GROUP = "friend_group", r.DM_CHANNEL = "dm_channel", r.GROUP_DM_CHANNEL = "group_dm_channel", r.GUILD_TEXT_CHANNEL = "guild_text_channel", r.VOICE_CHANNEL = "voice_channel", r.VOICE_USER = "voice_user", r)

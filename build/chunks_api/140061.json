@@ -1,1 +1,1 @@
-{"id":"140061","type":"store","data":{"name":"ActivityTrackingStore","functions":[{"name":"initialize","args":[]},{"name":"getActivities","args":[]}],"events":["RUNNING_GAMES_CHANGE","CONNECTION_OPEN","CONNECTION_CLOSED","LOGOUT","ACTIVITY_UPDATE_SUCCESS","ACTIVITY_UPDATE_FAIL"]},"fromModule":{"id":"21738"}}
+{"id":"140061","type":"unknown","data":{},"fromModule":{"id":"21738"}}

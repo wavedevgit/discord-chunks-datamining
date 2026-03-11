@@ -1,1 +1,1 @@
-{"id":"426620","type":"store","data":{"name":"NewUserStore","functions":[{"name":"initialize","args":["e"]},{"name":"getType","args":[]},{"name":"getState","args":[]}],"events":["NUF_NEW_USER","NUF_COMPLETE"]},"fromModule":{"id":"web.js"}}
+{"id":"426620","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

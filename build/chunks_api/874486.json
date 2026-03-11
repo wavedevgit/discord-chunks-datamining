@@ -1,1 +1,0 @@
-{"id":"874486","type":"store","data":{"name":"PoggermodeAchievementStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getAllUnlockedAchievements","args":[]},{"name":"getUnlocked","args":["e"]}],"events":["POGGERMODE_ACHIEVEMENT_UNLOCK"]},"fromModule":{"id":"9207"}}

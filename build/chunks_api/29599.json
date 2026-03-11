@@ -1,1 +1,1 @@
-{"id":"29599","type":"store","data":{"name":"IntegrationQueryStore","functions":[{"name":"getResults","args":["e","t"]},{"name":"getQuery","args":[]}],"events":["INTEGRATION_QUERY","INTEGRATION_QUERY_SUCCESS","INTEGRATION_QUERY_FAILURE"]},"fromModule":{"id":"web.js"}}
+{"id":"29599","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

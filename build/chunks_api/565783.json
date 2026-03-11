@@ -1,1 +1,0 @@
-{"id":"565783","type":"experiment","data":{"kind":"user","id":"2025-06_client_heartbeat_skipped","label":"Client Heartbeat Skipped Tracking","defaultConfig":{"logHeartbeatSkipped":false},"treatments":[{"id":1,"label":"Logging enabled","config":{"logHeartbeatSkipped":true}}]},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"788866","type":"store","data":{"name":"EnablePublicGuildUpsellNoticeStore","functions":[{"name":"initialize","args":[]},{"name":"isVisible","args":["e"]}],"events":["PUBLIC_UPSELL_NOTICE_DISMISS"]},"fromModule":{"id":"21738"}}

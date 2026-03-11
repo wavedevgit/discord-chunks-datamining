@@ -1,1 +1,0 @@
-{"id":"747233","type":"experiment","data":{"kind":"user","id":"2025-12_winter_holiday","label":"Winter 2025 Holiday","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

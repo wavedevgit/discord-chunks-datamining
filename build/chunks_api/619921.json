@@ -1,1 +1,0 @@
-{"id":"619921","type":"store","data":{"name":"AppViewStore","functions":[{"name":"initialize","args":[]},{"name":"getHomeLink","args":[]}],"events":["OVERLAY_INITIALIZE","APP_VIEW_SET_HOME_LINK","APPLICATION_STORE_LOCATION_CHANGE","APPLICATION_STORE_RESET_NAVIGATION","CHANNEL_SELECT","CHANNEL_DELETE"]},"fromModule":{"id":"9207"}}

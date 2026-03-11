@@ -1,1 +1,0 @@
-{"id":"904560","type":"store","data":{"name":"GuildPowerupsNotificationStore","functions":[{"name":"getState","args":[]},{"name":"initialize","args":["e"]},{"name":"getNotificationStateForGuild","args":["e"]}],"events":["GUILD_POWERUPS_ACK_NOTIFICATION","GUILD_POWERUPS_RESET_NOTIFICATIONS"]},"fromModule":{"id":"44669"}}

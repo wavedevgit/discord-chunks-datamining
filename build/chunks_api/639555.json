@@ -1,1 +1,0 @@
-{"id":"639555","type":"experiment","data":{"kind":"user","id":"2025-01_inappropriate_conversations_new_defaults","label":"Inappropriate Conversation Warning Default On","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Inappropriate Conversation Warnings On","config":{"enabled":true}}]},"fromModule":{"id":"88474"}}

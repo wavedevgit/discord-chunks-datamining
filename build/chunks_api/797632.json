@@ -1,1 +1,0 @@
-{"id":"797632","type":"store","data":{"name":"QualtricsStore","functions":[{"name":"getSurvey","args":["e"]}],"events":["QUALTRICS_SURVEY_FETCH_SUCCESS"]},"fromModule":{"id":"web.js"}}

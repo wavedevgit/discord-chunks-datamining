@@ -1,1 +1,0 @@
-{"id":"589051","type":"experiment","data":{"name":"2025-11-overlay-chat","kind":"user","defaultConfig":{"hasChat":false,"hasFriendList":false},"variations":{"undefined":{"hasChat":true,"hasFriendList":true}}},"fromModule":{"id":"web.js"}}

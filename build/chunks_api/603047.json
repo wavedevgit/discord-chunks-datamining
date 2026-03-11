@@ -1,1 +1,0 @@
-{"id":"603047","type":"store","data":{"name":"ContentInventoryDevToolsStore","functions":[{"name":"getFakeGameToShow","args":[]},{"name":"getFakeGameData","args":[]}],"events":["CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING"]},"fromModule":{"id":"97246"}}

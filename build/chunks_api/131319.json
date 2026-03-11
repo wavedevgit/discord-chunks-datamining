@@ -1,1 +1,1 @@
-{"id":"131319","type":"store","data":{"name":"BitRateStore","functions":[{"name":"bitrate","args":[]}],"events":["SET_CHANNEL_BITRATE"]},"fromModule":{"id":"web.js"}}
+{"id":"131319","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

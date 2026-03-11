@@ -1,1 +1,0 @@
-{"id":"935434","type":"experiment","data":{"id":"2025-06_turtle","kind":"user","label":"Turtle","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"not_in_treatment","config":{"enabled":false}},{"id":1,"label":"in_treatment","config":{"enabled":true}},{"id":2,"label":"in_treatment","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

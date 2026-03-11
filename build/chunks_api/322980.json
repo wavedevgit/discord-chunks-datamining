@@ -1,1 +1,1 @@
-{"id":"322980","type":"store","data":{"name":"LocalInteractionComponentStateStore","functions":[{"name":"getInteractionComponentStates","args":[]},{"name":"getInteractionComponentStateVersion","args":[]},{"name":"getInteractionComponentState","args":["e","t"]}],"events":["LOGOUT","QUEUE_INTERACTION_COMPONENT_STATE","SET_INTERACTION_COMPONENT_STATE","MESSAGE_DELETE","MESSAGE_UPDATE","INTERACTION_SUCCESS","INTERACTION_FAILURE","CLEAR_INTERACTION_MODAL_STATE"]},"fromModule":{"id":"28936"}}
+{"id":"322980","type":"unknown","data":{},"fromModule":{"id":"28936"}}

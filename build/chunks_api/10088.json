@@ -1,1 +1,1 @@
-{"id":"10088","type":"store","data":{"name":"CodedLinkNativeAppStateStore","functions":[{"name":"getState","args":["e"]},{"name":"getHighestState","args":[]}],"events":["NATIVE_APP_MODAL_OPENING","NATIVE_APP_MODAL_OPENED","NATIVE_APP_MODAL_OPEN_FAILED"]},"fromModule":{"id":"94531"}}
+{"id":"10088","type":"unknown","data":{},"fromModule":{"id":"91227"}}

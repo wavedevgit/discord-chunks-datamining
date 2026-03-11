@@ -1,1 +1,0 @@
-{"id":"528772","type":"store","data":{"name":"SoundboardOverlayStore","functions":[{"name":"keepOpen","args":[]},{"name":"enabled","args":[]}],"events":["SOUNDBOARD_SET_OVERLAY_ENABLED"]},"fromModule":{"id":"30819"}}

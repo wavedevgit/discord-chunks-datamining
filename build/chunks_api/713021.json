@@ -1,1 +1,0 @@
-{"id":"713021","type":"store","data":{"name":"MediaPlaybackStore","functions":[{"name":"initialize","args":["e"]},{"name":"getUserAgnosticState","args":[]},{"name":"getPlaybackRate","args":["e"]},{"name":"getPlaybackPosition","args":["e"]}],"events":["MEDIA_PLAYBACK_RATE_UPDATE","MEDIA_PLAYBACK_POSITION_UPDATE"]},"fromModule":{"id":"web.js"}}

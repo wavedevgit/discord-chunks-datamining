@@ -1,1 +1,0 @@
-{"id":"651753","type":"store","data":{"name":"ApplicationDirectorySearchStore","functions":[{"name":"getSearchResults","args":["e"]},{"name":"getFetchState","args":["e"]}],"events":["APPLICATION_DIRECTORY_FETCH_SEARCH","APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS","APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE"]},"fromModule":{"id":"web.js"}}

@@ -1,1 +1,0 @@
-{"id":"526162","type":"store","data":{"name":"AppIconPersistedStoreState","functions":[{"name":"initialize","args":["e"]},{"name":"isUpsellPreview","args":[]},{"name":"getState","args":[]},{"name":"getCurrentDesktopIcon","args":[]}],"events":["APP_ICON_UPDATED","APP_ICON_EDITOR_RESET","APP_ICON_TRACK_IMPRESSION","LOGOUT"]},"fromModule":{"id":"web.js"}}

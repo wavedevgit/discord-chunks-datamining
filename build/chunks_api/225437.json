@@ -1,1 +1,1 @@
-{"id":"225437","type":"store","data":{"name":"GuildTemplateTooltipStore","functions":[{"name":"shouldShowGuildTemplateDirtyTooltip","args":["e"]},{"name":"shouldShowGuildTemplatePromotionTooltip","args":[]}],"events":["GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH","GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE","GUILD_TEMPLATE_SYNC_SUCCESS","GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE","GUILD_TEMPLATE_DELETE_SUCCESS"]},"fromModule":{"id":"21738"}}
+{"id":"225437","type":"unknown","data":{},"fromModule":{"id":"21738"}}

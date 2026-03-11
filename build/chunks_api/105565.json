@@ -1,1 +1,1 @@
-{"id":"105565","type":"store","data":{"name":"DCFEventStore","functions":[{"name":"getDCFEvents","args":[]}],"events":["LOGOUT","DCF_EVENT_LOGGED","DCF_HANDLE_DC_DISMISSED","DCF_HANDLE_DC_SHOWN"]},"fromModule":{"id":"web.js"}}
+{"id":"105565","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

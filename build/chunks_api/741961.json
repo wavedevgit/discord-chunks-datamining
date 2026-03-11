@@ -1,1 +1,0 @@
-{"id":"741961","type":"store","data":{"name":"TypingStore","functions":[{"name":"initialize","args":[]},{"name":"getTypingUsers","args":["e"]},{"name":"isTyping","args":["e","t"]}],"events":["TYPING_START","TYPING_STOP","TYPING_START_LOCAL","TYPING_STOP_LOCAL","CONNECTION_OPEN","OVERLAY_INITIALIZE","MESSAGE_CREATE"]},"fromModule":{"id":"web.js"}}

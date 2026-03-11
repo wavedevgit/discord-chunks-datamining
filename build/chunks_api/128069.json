@@ -1,0 +1,1 @@
+{"id":"128069","type":"experiment","data":{"kind":"guild","id":"2026-01_guild_tag_badge_packs_wave_2","label":"Guild Tag Badge Packs Wave 2","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Guild Tag Badge Packs Wave 2","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

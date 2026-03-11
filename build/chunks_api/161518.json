@@ -1,1 +1,1 @@
-{"id":"161518","type":"store","data":{"name":"AVErrorStore","functions":[{"name":"hasActiveErrorOfType","args":["e"]},{"name":"getActiveErrors","args":[]},{"name":"getActiveErrorsOfType","args":["e"]}],"events":["ACTIVE_AV_ERRORS_CHANGED"]},"fromModule":{"id":"web.js"}}
+{"id":"161518","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

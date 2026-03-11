@@ -1,1 +1,0 @@
-{"id":"499118","type":"store","data":{"name":"GlobalDiscoveryServersSearchLayoutStore","functions":[{"name":"initialize","args":[]},{"name":"getVisibleTabs","args":[]}],"events":["CONNECTION_OPEN","GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET","GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS"]},"fromModule":{"id":"21738"}}

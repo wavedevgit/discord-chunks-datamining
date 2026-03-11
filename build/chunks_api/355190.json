@@ -1,1 +1,1 @@
-{"id":"355190","type":"store","data":{"name":"EULAStore","functions":[{"name":"getEULA","args":["e"]}],"events":["EULA_FETCH_SUCCESS"]},"fromModule":{"id":"35641"}}
+{"id":"355190","type":"unknown","data":{},"fromModule":{"id":"35641"}}

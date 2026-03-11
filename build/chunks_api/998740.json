@@ -1,1 +1,0 @@
-{"id":"998740","type":"store","data":{"name":"HavenStore","functions":[{"name":"initialize","args":[]},{"name":"state","args":[]},{"name":"getRoom","args":["e"]},{"name":"isUserConnected","args":["e"]},{"name":"assets","args":[]},{"name":"getSongs","args":["e"]}],"events":["HAVEN_CONNECT","HAVEN_DISCONNECT","HAVEN_UPDATE","HAVEN_GOT_ASSETS"]},"fromModule":{"id":"web.js"}}

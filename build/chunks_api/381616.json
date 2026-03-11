@@ -1,1 +1,1 @@
-{"id":"381616","type":"store","data":{"name":"CommandsMigrationStore","functions":[{"name":"initialize","args":[]},{"name":"getState","args":[]},{"name":"shouldShowChannelNotice","args":["e"]},{"name":"canShowOverviewTooltip","args":["e","t"]},{"name":"canShowToggleTooltip","args":["e"]}],"events":["COMMANDS_MIGRATION_UPDATE_SUCCESS","COMMANDS_MIGRATION_NOTICE_DISMISSED","COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED","COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED"]},"fromModule":{"id":"36290"}}
+{"id":"381616","type":"unknown","data":{},"fromModule":{"id":"56475"}}

@@ -1,1 +1,1 @@
-{"id":"210528","type":"store","data":{"name":"SpotifyProtocolStore","functions":[{"name":"isProtocolRegistered","args":[]}],"events":["SPOTIFY_SET_PROTOCOL_REGISTERED"]},"fromModule":{"id":"web.js"}}
+{"id":"210528","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

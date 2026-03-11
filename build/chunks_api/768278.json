@@ -1,1 +1,0 @@
-{"id":"768278","type":"experiment","data":{"kind":"user","id":"2025-07_message_search_thread_filter","label":"Message Search Thread Filter","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

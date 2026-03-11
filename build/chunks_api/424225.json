@@ -1,1 +1,0 @@
-{"id":"424225","type":"experiment","data":{"kind":"user","id":"2025-04_guild_profile_to_game_profile","label":"Enables opening game profile from guild profile","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"On","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

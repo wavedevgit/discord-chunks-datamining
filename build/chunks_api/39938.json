@@ -1,1 +1,1 @@
-{"id":"39938","type":"store","data":{"name":"StageMusicStore","functions":[{"name":"initialize","args":["e"]},{"name":"isMuted","args":[]},{"name":"shouldPlay","args":[]},{"name":"getUserAgnosticState","args":[]}],"events":["STAGE_MUSIC_MUTE","STAGE_MUSIC_PLAY","VOICE_CHANNEL_SELECT"]},"fromModule":{"id":"web.js"}}
+{"id":"39938","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

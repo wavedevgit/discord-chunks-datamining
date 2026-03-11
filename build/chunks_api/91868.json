@@ -1,1 +1,1 @@
-{"id":"91868","type":"store","data":{"name":"FriendsWidgetMessagesStore","functions":[{"name":"initialize","args":[]},{"name":"getRows","args":["e"]},{"name":"getChannel","args":["e"]}],"events":[]},"fromModule":{"id":"7685"}}
+{"id":"91868","type":"unknown","data":{},"fromModule":{"id":"27482"}}

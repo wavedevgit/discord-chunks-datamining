@@ -1,1 +1,0 @@
-{"id":"788318","type":"store","data":{"name":"VideoSpeakerStore","functions":[{"name":"initialize","args":[]},{"name":"getSpeaker","args":["e"]}],"events":["AUDIO_SET_LOCAL_VIDEO_DISABLED"]},"fromModule":{"id":"web.js"}}

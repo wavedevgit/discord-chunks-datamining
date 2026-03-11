@@ -1,1 +1,0 @@
-{"id":"502633","type":"experiment","data":{"kind":"guild","id":"2023-01_shared_canvas","label":"Shared Canvas","defaultConfig":{"isSharedCanvasEnabled":false},"treatments":[{"id":1,"label":"Enable Shared Canvas","config":{"isSharedCanvasEnabled":true}}]},"fromModule":{"id":"17869"}}

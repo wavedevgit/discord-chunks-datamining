@@ -1,1 +1,0 @@
-{"id":"840907","type":"experiment","data":{"kind":"user","id":"2024-12_user_profile_modal_recent_activity","label":"User Profile Modal Recent Activity","defaultConfig":{"recentActivityTabEnabled":false},"treatments":[{"id":1,"label":"Recent Activity Tab Enabled","config":{"recentActivityTabEnabled":true}}]},"fromModule":{"id":"web.js"}}

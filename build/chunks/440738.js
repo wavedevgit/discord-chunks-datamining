@@ -1,7 +1,0 @@
-/** Chunk was on 45082 **/
-/** chunk id: 440738, original params: t,n,r (module,exports,require) **/
-require("./888420.js")("Int16", function(t) {
-  return function(n, r, e) {
-    return t(this, n, r, e)
-  }
-})

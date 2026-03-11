@@ -1,1 +1,0 @@
-{"id":"842716","type":"store","data":{"name":"","functions":[{"name":"initialize","args":[]},{"name":"isTokenized","args":[]},{"name":"getHistory","args":["e"]}],"events":["SEARCH_HISTORY_WEB_CLEAR_ITEMS","SEARCH_HISTORY_WEB_REMOVE_ITEM","SEARCH_HISTORY_WEB_ADD_ITEM","LOGOUT"]},"fromModule":{"id":"web.js"}}

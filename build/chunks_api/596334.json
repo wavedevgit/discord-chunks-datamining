@@ -1,1 +1,0 @@
-{"id":"596334","type":"experiment","data":{"id":"2023-11_adyen_auth_without_capture","label":"Adyen auth without capture rollout","kind":"user","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

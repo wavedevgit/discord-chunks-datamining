@@ -1,1 +1,0 @@
-{"id":"598384","type":"store","data":{"name":"AutoUpdateStore","functions":[{"name":"getState","args":[]}],"events":["CHECKING_FOR_UPDATES","UPDATE_NOT_AVAILABLE","UPDATE_AVAILABLE","UPDATE_MANUALLY","UPDATE_ERROR","UPDATE_DOWNLOADED"]},"fromModule":{"id":"21738"}}
