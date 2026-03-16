@@ -1,1 +1,1 @@
-{"id":"196042","type":"experiment","data":{"kind":"user","id":"2023-06_bogo_promotion_gate","label":"BOGO Promotion Manager","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable BOGO Promotion Manager","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"196042","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
