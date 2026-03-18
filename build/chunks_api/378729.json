@@ -1,1 +1,1 @@
-{"id":"378729","type":"experiment","data":{"id":"2025-11_game_update_notification","kind":"user","label":"Game Update Notification","defaultConfig":{"showToggle":false},"treatments":[{"id":1,"label":"User can receive game update notifications. Show settings toggle.","config":{"showToggle":true}}]},"fromModule":{"id":"27160"}}
+{"id":"378729","type":"unknown","data":{},"fromModule":{"id":"27160"}}
