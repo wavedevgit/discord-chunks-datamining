@@ -1,1 +1,1 @@
-{"id":"165120","type":"experiment","data":{"kind":"user","id":"2022-08_churro_experiment","label":"PS5 Voice Experiment","defaultConfig":{"allowPlayStationStaging":false},"treatments":[{"id":3,"label":"PS Experiment + upsells + Staging","config":{"allowPlayStationStaging":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"165120","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
