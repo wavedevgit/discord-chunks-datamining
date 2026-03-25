@@ -1,1 +1,1 @@
-{"id":"335934","type":"experiment","data":{"name":"2026-03-icymi-desktop","kind":"user","defaultConfig":{"icymiDesktopEnabled":false},"variations":{}},"fromModule":{"id":"web.js"}}
+{"id":"335934","type":"experiment","data":{"name":"2026-03-icymi-sunset-banner","kind":"user","defaultConfig":{"enabled":false},"variations":{}},"fromModule":{"id":"web.js"}}
