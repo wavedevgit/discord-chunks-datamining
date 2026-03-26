@@ -1,1 +1,0 @@
-{"id":"175650","type":"experiment","data":{"kind":"user","id":"2023-04_server_subscriptions_tier_templates_user","label":"Server Subscriptions Tier Templates","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable tier templates for user","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
