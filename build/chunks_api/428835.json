@@ -1,1 +1,0 @@
-{"id":"428835","type":"experiment","data":{"kind":"user","id":"2025-07_notifications_platform_holdout_h2","label":"NotificationsPlatform Holdout H2","defaultConfig":{"inHoldout":false},"treatments":[{"id":0,"label":"In Holdout","config":{"inHoldout":true}},{"id":1,"label":"Treatment for comparison to holdout","config":{"inHoldout":false}}]},"fromModule":{"id":"web.js"}}
