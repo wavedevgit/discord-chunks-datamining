@@ -1,0 +1,1 @@
+{"id":"383272","type":"experiment","data":{"kind":"guild","id":"2026-04_server_theme","label":"Server Theme","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Server Theme","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
